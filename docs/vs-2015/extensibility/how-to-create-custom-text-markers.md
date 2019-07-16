@@ -34,7 +34,7 @@ Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisier
   
 1. Erstellen Sie einen Registrierungseintrag wie folgt:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>ist eine `GUID` zum Identifizieren des Markers, der hinzugefügt wird  
   
@@ -43,9 +43,9 @@ Wenn Sie einen benutzerdefinierten Text-Marker, um hervorzuheben oder Organisier
     *\<PackageGUID >* ist die GUID des VSPackage das Automatisierungsobjekt implementieren.  
   
    > [!NOTE]
-   > Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann mit einem alternativen Stamm überschrieben werden, wenn die Visual Studio-Shell, können Sie auch weitere Informationen finden Sie unter initialisiert wird [Befehlszeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* kann mit einem alternativen Stamm überschrieben werden, wenn die Visual Studio-Shell, können Sie auch weitere Informationen finden Sie unter initialisiert wird [Befehlszeilenschalter](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Erstellen Sie vier Werte unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External Marker\\*\<MarkerGUID >*  
+2. Erstellen Sie vier Werte unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* \Text Editor\External Marker\\ *\<MarkerGUID >*  
   
    - (Standard)  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ebe8c65748ba0380a7c4f171d940c3d78f52a577
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443371"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698083"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Arbeiten mit Visual C++-Code (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 ### <a name="type-resolution-issues"></a>Probleme bei der Typauflösung  
  Klassen-Designer kann aus den folgenden Gründen Typen möglicherweise nicht auflösen:  
   
-- Der Typ ist in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Der Typ ist in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Der Typ ist nicht im richtigen Bereich, sodass Klassen-Designer ihn nicht finden kann. Stellen Sie sicher, dass dem Code nicht eine Anweisung `using`, `imports`, oder `#include` fehlt. Stellen Sie außerdem sicher, dass Sie den Typ (oder einen zugehörigen Typ) nicht aus dem Namespace verschoben haben, in dem er sich ursprünglich befand.  
   
@@ -77,7 +77,7 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
   
 - Stellen Sie sicher, dass Klassen-Designer den von Ihnen eingegebenen Typ unterstützt. Siehe [Einschränkungen für C++-Codeelemente](#limitations).  
   
-- Versuchen Sie, den Typ aufzulösen. Der Typ befindet sich möglicherweise in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Versuchen Sie, den Typ aufzulösen. Der Typ befindet sich möglicherweise in einem Projekt oder einer Assembly, auf das/die nicht aus dem Projekt mit dem Klassendiagramm verwiesen wird. Um diesen Fehler zu beheben, fügen Sie einen Verweis auf das Projekt oder die Assembly mit dem Typ hinzu. Weitere Informationen finden Sie unter [NIB How to: Add or Remove References By Using the Add Reference Dialog Box (Vorgehensweise: Hinzufügen und Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“)](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 - Stellen Sie sicher, dass sich der Typ im richtigen Bereich befindet, sodass Klassen-Designer ihn finden kann. Stellen Sie sicher, dass dem Code nicht eine Anweisung `using`, `imports`, oder `#include` fehlt. Stellen Sie außerdem sicher, dass Sie den Typ (oder einen zugehörigen Typ) nicht aus dem Namespace verschoben haben, in dem er sich ursprünglich befand.  
   

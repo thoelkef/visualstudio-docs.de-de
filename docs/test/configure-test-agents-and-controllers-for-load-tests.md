@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783942"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461620"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurieren von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Übersicht von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
 Visual Studio kann eine simulierte Auslastung für Ihre App mithilfe von physischen oder virtuellen Computern generieren. Diese Computer müssen als einzelne Testcontroller und Test-Agents eingerichtet werden. Mithilfe des Testcontrollers und der Test-Agents können Sie eine größere Auslastung generieren als mit nur einem Computer.
 

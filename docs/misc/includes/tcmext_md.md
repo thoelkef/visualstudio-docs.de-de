@@ -1,10 +1,10 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 384a2b25ea5434abcee7fbcaecd3e6f5b65f6ed4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907280"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258826"
 ---
 Microsoft Test Manager

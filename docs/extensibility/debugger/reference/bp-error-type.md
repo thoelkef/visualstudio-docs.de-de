@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2964c833abfa25b57678680f8b821f992cb31de8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689186"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319300"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Gibt den Fehlertyp eines Haltepunkts an.
@@ -57,28 +60,39 @@ public enum enum_BP_ERROR_TYPE {
 };
 ```
 
-## <a name="members"></a>Member
-BPET_NONE gibt kein haltepunktfehler an.
+## <a name="fields"></a>Felder
+`BPET_NONE`\
+Gibt keine haltepunktfehler an.
 
-BPET_TYPE_WARNING gibt eine Warnung-Stil haltepunktfehler an.
+`BPET_TYPE_WARNING`\
+Gibt eine Warnung-Stil haltepunktfehler an.
 
-BPET_TYPE_ERROR gibt Fehler Haltepunkt Error-Format an.
+`BPET_TYPE_ERROR`\
+Gibt Fehler Haltepunkt Error-Format an.
 
-BPET_SEV_HIGH gibt einen mit hohem Schweregrad haltepunktfehler an.
+`BPET_SEV_HIGH`\
+Gibt einen mit hohem Schweregrad haltepunktfehler an.
 
-BPET_SEV_GENERAL gibt einen mit mittleren Schweregrad haltepunktfehler an.
+`BPET_SEV_GENERAL`\
+Gibt einen mit mittleren Schweregrad haltepunktfehler an.
 
-BPET_SEV_LOW gibt einen haltepunktfehler mit niedriger Schweregrad an.
+`BPET_SEV_LOW`\
+Gibt einen haltepunktfehler mit niedriger Schweregrad an.
 
-BPET_TYPE_MASK gibt ein Maske-Stil haltepunktfehler an.
+`BPET_TYPE_MASK`\
+Gibt eine Maske-Stil haltepunktfehler an.
 
-BPET_SEV_MASK gibt einen haltepunktfehler für Schweregrad-Maske-Style.
+`BPET_SEV_MASK`\
+Gibt einen haltepunktfehler für Schweregrad-Maske-Style.
 
-BPET_GENERAL_WARNING gibt einen haltepunktfehler für die allgemeine-Warnung-Style.
+`BPET_GENERAL_WARNING`\
+Gibt einen für allgemeine-Warnung-Style-haltepunktfehler.
 
-BPET_GENERAL_ERROR gibt eine allgemeine-Error-Format haltepunktfehler an.
+`BPET_GENERAL_ERROR`\
+Gibt eine allgemeine-Error-Format haltepunktfehler an.
 
-BPET_ALL gibt alle Haltepunkttypen Fehler an.
+`BPET_ALL`\
+Gibt alle Haltepunkttypen Fehler an.
 
 ## <a name="remarks"></a>Hinweise
 Diese Werte können kombiniert werden, mit einer bitweisen `OR` und wird verwendet, für die `dwType` Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur. Übergeben als Parameter an die [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) Methode.

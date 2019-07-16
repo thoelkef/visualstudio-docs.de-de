@@ -71,7 +71,7 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
    > [!NOTE]
    > Sie können mehrere Befehls- oder Gestenhandlerklassen in einer Klassenbibliothek definieren, jedoch sollten Sie Ebenenvalidierungsklassen in einer separaten Klassenbibliothek definieren.
 
-2. Hinzufügen oder ein VSIX-Projekt in der Projektmappe zu erstellen. Ein VSIX-Projekt enthält eine Datei mit dem Namen **"Source.Extension.vsixmanifest"**.
+2. Hinzufügen oder ein VSIX-Projekt in der Projektmappe zu erstellen. Ein VSIX-Projekt enthält eine Datei mit dem Namen **"Source.Extension.vsixmanifest"** .
 
 3. In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen**.
 

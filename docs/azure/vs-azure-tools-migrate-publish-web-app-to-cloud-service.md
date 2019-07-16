@@ -1,22 +1,20 @@
 ---
-title: 'Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-Clouddienst'
+title: Migrieren und Veröffentlichen der Webanwendung in Azure Cloud Service
 description: Sie erfahren, wie Sie Ihre Webanwendung mit Visual Studio zu einem Azure-Clouddienst migrieren und veröffentlichen.
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c3bc28131a6e8f341e5fac52ed10725e6a7a40c
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551382"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624127"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-Clouddienst über Visual Studio
 
@@ -58,9 +56,9 @@ Wenn Sie über eine Verbindungszeichenfolge für Ihre Webanwendung verfügen, di
 
 1. Erstellen Sie die erforderlichen Clouddienst- und Speicherkonten im Azure-Abonnement wie in [Vorbereiten der Veröffentlichung und Bereitstellung einer Azure-Anwendung in Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md) beschrieben.
 1. Klicken Sie in Visual Studio mit der rechten Maustaste auf das Anwendungsprojekt, und wählen Sie **In Microsoft Azure veröffentlichen...** (anderer Befehl als „Veröffentlichen…“).
-1. Melden Sie sich im angezeigten Fenster **Azure-Anwendung veröffentlichen** mit dem Konto Ihres Azure-Abonnements an, und wählen Sie **Weiter >**.
+1. Melden Sie sich im angezeigten Fenster **Azure-Anwendung veröffentlichen** mit dem Konto Ihres Azure-Abonnements an, und wählen Sie **Weiter >** .
 1. Wählen Sie auf der Registerkarte **Einstellungen > Allgemeine Einstellungen** in der Dropdownliste **Clouddienst** den Zielclouddienst zusammen mit der gewünschten Umgebung und den gewünschten Konfigurationen aus.
-1. Wählen Sie in **Einstellungen > Erweiterte Einstellungen** das zu verwendende Speicherkonto aus, und wählen Sie dann **Weiter >**.
+1. Wählen Sie in **Einstellungen > Erweiterte Einstellungen** das zu verwendende Speicherkonto aus, und wählen Sie dann **Weiter >** .
 1. Legen Sie **Diagnose** fest, ob Informationen an Application Insights gesendet werden.
 1. Wählen Sie **Weiter >** um eine Zusammenfassung anzuzeigen, und wählen Sie dann **Veröffentlichen**, um die Bereitstellung zu starten.
 1. Visual Studio öffnet ein Aktivitätsprotokollfenster, in dem Sie den Fortschritt verfolgen können:
@@ -77,13 +75,13 @@ Alle Anwendungstypen können in einem Browser gestartet werden, der mit dem Visu
 
 Die folgende Tabelle enthält Details zum Starten der Anwendung in Azure:
 
-   | Webanwendungstyp | Ausführen in Azure |
-   | --- | --- | --- |
-   | ASP.NET-Webanwendung<br/>(einschließlich MVC 2, MVC 3, MVC 4) | Wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. |
-   | Leere ASP.NET-Webanwendung | Wenn in Ihrer Anwendung eine `.aspx`-Standardseite vorhanden ist, wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. Um zu einer anderen Seite zu navigieren, geben Sie eine URL im folgenden Format in einen Browser ein: `<deployment_url>/<page_name>.aspx` |
-   | Silverlight-Anwendung<br/>Silverlight-Geschäftsanwendung<br/>Silverlight-Navigationsanwendung | Navigieren Sie zur speziellen Seite für Ihre Anwendung, indem Sie das folgende URL-Format verwenden: `<deployment_url>/<page_name>.aspx` |
-    WCF-Dienstanwendung<br/>WCF-Workflowdienstanwendung | Legen Sie die `.svc`-Datei als Startseite für Ihr WCF-Dienstprojekt fest. Navigieren Sie dann zu `<deployment_url>/<service_file>.svc`. |
-   | ASP.NET Dynamic Entities<br/>ASP.NET Dynamic Data-LINQ to SQL | Aktualisieren Sie die Verbindungszeichenfolge wie im nächsten Abschnitt beschrieben. Navigieren Sie dann zu `<deployment_url>/<page_name>.aspx`. Für Linq to SQL müssen Sie eine Azure SQL-Datenbank verwenden. |
+| Webanwendungstyp | Ausführen in Azure |
+| --- | --- |
+| ASP.NET-Webanwendung<br/>(einschließlich MVC 2, MVC 3, MVC 4) | Wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. |
+| Leere ASP.NET-Webanwendung | Wenn in Ihrer Anwendung eine `.aspx`-Standardseite vorhanden ist, wählen Sie die URL auf der Registerkarte **Bereitstellung** für das **Azure-Aktivitätsprotokoll**. Um zu einer anderen Seite zu navigieren, geben Sie eine URL im folgenden Format in einen Browser ein: `<deployment_url>/<page_name>.aspx` |
+| Silverlight-Anwendung<br/>Silverlight-Geschäftsanwendung<br/>Silverlight-Navigationsanwendung | Navigieren Sie zur speziellen Seite für Ihre Anwendung, indem Sie das folgende URL-Format verwenden: `<deployment_url>/<page_name>.aspx` |
+| WCF-Dienstanwendung<br/>WCF-Workflowdienstanwendung | Legen Sie die `.svc`-Datei als Startseite für Ihr WCF-Dienstprojekt fest. Navigieren Sie dann zu `<deployment_url>/<service_file>.svc`. |
+| ASP.NET Dynamic Entities<br/>ASP.NET Dynamic Data-LINQ to SQL | Aktualisieren Sie die Verbindungszeichenfolge wie im nächsten Abschnitt beschrieben. Navigieren Sie dann zu `<deployment_url>/<page_name>.aspx`. Für Linq to SQL müssen Sie eine Azure SQL-Datenbank verwenden. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Aktualisieren einer Verbindungszeichenfolge für ASP.NET Dynamic Entities
 
@@ -92,13 +90,17 @@ Die folgende Tabelle enthält Details zum Starten der Anwendung in Azure:
 1. Geben Sie in der `web.config`-Datei eine Verbindungszeichenfolge im folgenden Format an, und speichern Sie die Datei:
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     Aktualisieren Sie den Wert *connectionString* mit der ADO.NET-Verbindungszeichenfolge wie folgt für Ihre SQL Azure-Datenbank:
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>Unterstützte Projektvorlagen

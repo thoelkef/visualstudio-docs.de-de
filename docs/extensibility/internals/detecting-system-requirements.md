@@ -6,17 +6,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420704"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351642"
 ---
 # <a name="detect-system-requirements"></a>Ermitteln von Systemanforderungen
 Eine VSPackage funktioniert nicht, es sei denn, die Visual Studio installiert ist. Wenn Sie Microsoft Windows Installer, zum Verwalten der Installation von einem VSPackage verwenden, können Sie das Installationsprogramm aus, um festzustellen, ob die Installation von Visual Studio konfigurieren. Sie können auch damit das System für andere Anforderungen, z. B. überprüfen, eine bestimmte Version von Windows oder einer bestimmten Menge an RAM konfigurieren.
@@ -33,7 +33,7 @@ Eine VSPackage funktioniert nicht, es sei denn, die Visual Studio installiert is
 Wenn eine neuere Version installiert ist, werden die Registrierungsschlüssel für diese Edition ebenfalls wie bei früheren Versionen hinzugefügt. D. h., wenn die Enterprise Edition installiert ist, die **installieren** Schlüssel nastaven NA hodnotu *1* für Unternehmen sowie für die Editionen Professional und Community. Aus diesem Grund müssen Sie nur auf der aktuellsten Version zu überprüfen, die Sie benötigen.
 
 > [!NOTE]
-> 32-Bit-Schlüssel werden in der 64-Bit-Version des Registrierungs-Editor unter angezeigt **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Die Visual Studio-Schlüssel befinden sich unter **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> 32-Bit-Schlüssel werden in der 64-Bit-Version des Registrierungs-Editor unter angezeigt **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . Die Visual Studio-Schlüssel befinden sich unter **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
 
 |Produkt|Key|
 |-------------|---------|

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c27f9ce239d5d82dc972186912266cea0d4f1ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a4ddbdeeaecdb832b2601992272de9d76f4bdcb
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432277"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160009"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent-Element (Visual Studio-Vorlagen)
 
@@ -81,7 +81,7 @@ Hierarchie der Elemente:
     </TemplateData>
     <TemplateContent>
         <Project File="MyStarterKit.csproj">
-            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.cs</ProjectItem>
             <ProjectItem>Form1.Designer.cs</ProjectItem>
             <ProjectItem>Program.cs</ProjectItem>
             <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>

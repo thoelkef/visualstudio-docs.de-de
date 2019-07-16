@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056718"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700238"
 ---
 # <a name="troubleshooting-service-references"></a>Problembehandlung bei Dienstverweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Dieses Thema führt häufige Probleme, die auftreten können, bei der Arbeit mit
 
 3. Stellen Sie sicher, dass die **Erweiterte Buildkonfigurationen anzeigen** Kontrollkästchen ausgewählt ist, und klicken Sie dann auf **OK**.
 
-4. Laden Sie das WCF-Dienstprojekt. Weitere Informationen finden Sie unter [NIB How to: Erstellen von Projektmappen mit mehreren Projekten](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Laden Sie das WCF-Dienstprojekt. Weitere Informationen finden Sie unter [NIB How to: Erstellen von Projektmappen mit mehreren Projekten](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
 5. In der **Configuration Manager** (Dialogfeld), legen die **aktive Projektmappenkonfiguration** zu **Debuggen**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 

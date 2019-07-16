@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847914"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342381"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
@@ -61,7 +61,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Andere** aus, und wählen Sie dann im mittleren Bereich **Leeres Projekt** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
     ::: moniker-end
 
-    Wenn die Projektvorlage **Leeres Projekt** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
+    Wenn die Projektvorlage **Leeres Projekt** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++** , und klicken Sie dann auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
@@ -73,7 +73,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 1. Wählen Sie im **Projektmappen-Explorer** **Quelldateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Quelldateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus.
 
-1. Klicken Sie im Dialogfeld **Neues Element** auf **C++-Datei (.cpp)**. Geben Sie im Feld **Name** **Mixed_Mode.cpp** ein, und klicken Sie dann auf **Hinzufügen**.
+1. Klicken Sie im Dialogfeld **Neues Element** auf **C++-Datei (.cpp)** . Geben Sie im Feld **Name** **Mixed_Mode.cpp** ein, und klicken Sie dann auf **Hinzufügen**.
 
     Visual Studio fügt eine neue C++-Datei im **Projektmappen-Explorer** hinzu.
 
@@ -85,7 +85,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 1. Wählen Sie im **Projektmappen-Explorer** **Headerdateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Headerdateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus.
 
-1. Klicken Sie im Dialogfeld **Neues Element** auf **Headerdatei (.h)**. Geben Sie im Feld **Name** **Mixed_Mode.h** ein, und klicken Sie dann auf **Hinzufügen**.
+1. Klicken Sie im Dialogfeld **Neues Element** auf **Headerdatei (.h)** . Geben Sie im Feld **Name** **Mixed_Mode.h** ein, und klicken Sie dann auf **Hinzufügen**.
 
    Visual Studio fügt eine neue Headerdatei im **Projektmappen-Explorer** hinzu.
 
@@ -200,7 +200,7 @@ In den meisten Visual Studio Versionen ab Visual Studio 2017 müssen Sie die Dat
    >[!NOTE]
    >Standardmäßig befindet sich *launchSettings.json* unter *C:\Benutzer\Benutzername\source\repos\Mixed_Mode_Calling_App\Properties*. Wählen Sie das Projekt **Mixed_Mode_Calling_App** aus, und klicken Sie auf im **Projektmappen-Explorer** auf das **Eigenschaftensymbol**, wenn *launchSettings.json* nicht vorhanden ist. Klicken Sie alternativ mit der rechten Maustaste auf das Projekt und dann auf **Eigenschaften**. Nehmen Sie eine vorrübergehende Änderung auf der Registerkarte **Debuggen** vor, und erstellen Sie das Projekt. Dadurch wird die Datei *launchSettings.json* erstellt. Machen Sie die auf der Registerkarte **Debuggen** vorgenommene Änderung rückgängig.
 
-1. Fügen Sie die folgende Codezeile in der Datei *launchSettings.json* hinzu:
+1. Fügen Sie in der Datei *launchsettings.json* die folgende Codezeile hinzu:
 
     ```csharp
     "nativeDebugging": true

@@ -37,7 +37,7 @@ Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden:
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++** ), wählen Sie **Vorlagen**, und klicken Sie dann:
 
     - Für C#, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** für C#. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     - Für C++, wählen Sie **neues Konsolen-App-Projekt erstellen**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
@@ -46,13 +46,13 @@ Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden:
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Im linken Bereich die **neues Projekt** Dialogfeld Wählen Sie die folgenden:
-    - Für eine C# app unter **Visual C#** , wählen Sie **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Framework)**.
+    - Für eine C# app unter **Visual C#** , wählen Sie **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Framework)** .
     - Für eine C++ app unter **Visual C++** , wählen Sie **Windows Desktop**, und wählen Sie dann **Windows-Konsolenanwendung**.
 
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **OK**.
     ::: moniker-end
 
-    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
 
     Das neue Projekt wird im **Projektmappen-Explorer**, und eine Quelldatei namens *"Program.cs"* oder *MyThreadWalkthroughApp.cpp* wird im Quellcodefenster geöffnet.
 

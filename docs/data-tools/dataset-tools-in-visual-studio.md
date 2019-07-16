@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567105"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821367"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 
@@ -61,7 +61,7 @@ ms.locfileid: "62567105"
 
 Ein `DataSet` Objekt ist ein in-Memory-Objekt, das im Wesentlichen eine Mini-Datenbank ist. Es enthält `DataTable`, `DataColumn`, und `DataRow` Objekte in der Sie speichern und Ändern von Daten aus einer oder mehreren Datenbanken ohne eine geöffnete Verbindung verwalten zu müssen. Das Dataset enthält Informationen zu Änderungen an Daten, damit Updates zurück an die Datenbank gesendet werden, wenn Ihre Anwendung die Verbindung wiederhergestellt wird und nachverfolgt werden können.
 
-Datasets und verknüpften Klassen sind in definiert die <xref:System.Data?displayProperty=fullName> Namespace in der .NET Framework-Klassenbibliothek. Sie können erstellen und ändern die Datasets dynamisch im Code mithilfe von ADO.NET. Die Dokumentation in diesem Abschnitt wird das Arbeiten mit Datasets mithilfe von Visual Studio-Designer veranschaulicht. Datasets, die mithilfe von Designern erstellt werden **TableAdapter** Objekte für die Interaktion mit der Datenbank. Verwenden Sie die Datasets, die programmgesteuert erstellt werden **DataAdapter** Objekte. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter ["DataAdapters" und "DataReaders"](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Datasets und verknüpften Klassen sind in definiert die <xref:System.Data?displayProperty=fullName> Namespace in der .NET-API. Sie können erstellen und ändern die Datasets dynamisch im Code mithilfe von ADO.NET. Die Dokumentation in diesem Abschnitt wird das Arbeiten mit Datasets mithilfe von Visual Studio-Designer veranschaulicht. Datasets, die mithilfe von Designern erstellt werden **TableAdapter** Objekte für die Interaktion mit der Datenbank. Verwenden Sie die Datasets, die programmgesteuert erstellt werden **DataAdapter** Objekte. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter ["DataAdapters" und "DataReaders"](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Wenn Ihre Anwendung muss nur das Lesen von Daten aus einer Datenbank und nicht ausgeführt werden, Updates, hinzufügt oder löscht, in der Regel erhalten Sie eine bessere Leistung mit einem `DataReader` Objekt zum Abrufen von Daten in eine generische `List` Objekt oder ein anderes Auflistungsobjekt. Wenn Sie die Daten anzeigen, Sie können die Benutzeroberfläche der Auflistung Datenbindung.
 
@@ -75,13 +75,13 @@ Visual Studio bietet Tools zum Arbeiten mit Datasets zu vereinfachen. Der grundl
 
 - Verwenden der **TableAdapter-Konfigurations-Assistenten** an die Abfrage oder gespeicherte Prozedur, die das Dataset füllt und welche Datenbankvorgänge (Update, Delete usw.) zu implementieren. Weitere Informationen finden Sie in den folgenden Themen:
 
-    - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Bearbeiten von Daten in Datasets](../data-tools/edit-data-in-datasets.md)
+  - [Bearbeiten von Daten in Datasets](../data-tools/edit-data-in-datasets.md)
 
-    - [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)
+  - [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)
 
-    - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
+  - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
 
 - Fragen Sie ab aus, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] ermöglicht [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) für Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

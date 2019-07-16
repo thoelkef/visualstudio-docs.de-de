@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Suchen Sie programmgesteuert eine e-Mail-Adresse in den Kontakten'
+title: Suchen Sie programmgesteuert eine e-Mail-Adresse in den Kontakten
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26e32314db68ae064edac5537222447625cb051d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962294"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328975"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Vorgehensweise: Suchen Sie programmgesteuert eine e-Mail-Adresse in den Kontakten
   In diesem Beispiel wird ein Kontaktordner nach Kontakten durchsucht, die den Domänennamen **example.com** in ihren E-Mail-Adressen aufweisen.

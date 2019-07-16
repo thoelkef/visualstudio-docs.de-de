@@ -12,12 +12,12 @@ ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d8178adfc1a54d74d758bcfae8272353d5a0c7bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca0b6b7e9753b346b8a995ffd8ddcb6cc53fe7c0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697516"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugDefaultPort2 : IDebugPort2
  Visual Studio implementiert diese Schnittstelle, um das Debuggen Port für den Zugriff auf Programme darstellen. Ein benutzerdefinierter Port Lieferant kann auch diese Schnittstelle implementieren, wenn die Methode behandelt das Remotedebuggen.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Ein Argument auf Methoden in der [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle stellt diese Schnittstelle. Aufrufen von [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf eine [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle kann auch abrufen, diese Schnittstelle.  
+ Ein Argument auf Methoden in der [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle stellt diese Schnittstelle. Aufrufen von [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf eine [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle kann auch abrufen, diese Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Zusätzlich zu den Methoden, die in definierten [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), diese Schnittstelle implementiert die folgenden Methoden:  

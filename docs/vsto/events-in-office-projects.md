@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441824"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826057"
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.
@@ -56,13 +56,13 @@ ms.locfileid: "63441824"
 
 - Für Microsoft Office Excel-Projekte haben die Ereignishandler die folgenden Namen:
 
-    - `Sheet1_Startup`
+  - `Sheet1_Startup`
 
-    - `Sheet2_Startup`
+  - `Sheet2_Startup`
 
-    - `Sheet3_Startup`
+  - `Sheet3_Startup`
 
-    - `ThisWorkbook_Startup`
+  - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown-Ereignis
  Das **Shutdown** -Ereignis wird für jedes Hostelement (Dokument oder Arbeitsblatt) ausgelöst, wenn die Anwendungsdomäne, in der Ihr Code geladen wurde, entladen werden soll. Dies ist das letzte Element, das beim Entladen in der Klasse aufgerufen wird.
@@ -73,13 +73,13 @@ ms.locfileid: "63441824"
 
 - Für Microsoft Office Excel-Projekte haben die Ereignishandler die folgenden Namen:
 
-    - `Sheet1_Shutdown`
+  - `Sheet1_Shutdown`
 
-    - `Sheet2_Shutdown`
+  - `Sheet2_Shutdown`
 
-    - `Sheet3_Shutdown`
+  - `Sheet3_Shutdown`
 
-    - `ThisWorkbook_Shutdown`
+  - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 > Vermeiden Sie es, Steuerelemente während des **Shutdown** -Ereignishandlerzeitraums des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das **Shutdown** -Ereignis eintritt. Wenn Sie Steuerelemente vor dem Schließen der Anwendung entfernen möchten, können Sie Ihren Code einem anderen Ereignishandler hinzufügen, z. B. **BeforeClose** oder **BeforeSave**.

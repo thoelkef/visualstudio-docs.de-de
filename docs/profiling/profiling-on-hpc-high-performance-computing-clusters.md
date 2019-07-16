@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d93071aa62c4d2305b0104ec17e8242bacefa6d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994989"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745321"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern (High Performance Computing)
 
@@ -36,9 +36,9 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 
 - Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie Visual Studio. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.
 
-- Installieren Sie das [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und den eigenständigen Profiler stehen auf den Visual Studio-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und vor der Installation der Profilerstellungstools neu starten.
+- Installieren Sie das .NET Framework 4 und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für .NET Framework und den eigenständigen Profiler stehen auf den Visual Studio-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von .NET Framework und vor der Installation der Profilerstellungstools neu starten.
 
-  So installieren Sie die [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:
+  So installieren Sie .NET Framework 4 und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:
 
 1. Öffnen Sie das Eingabeaufforderungsfenster, das im HPC Pack installiert ist.
 
@@ -53,7 +53,7 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 | | |
 |------------------| - |
 | *%HeadNode%* | Der Name des Hauptknotens für den Cluster. |
-| *%FxPath%* | Pfad zum [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]-Installationsprogramm. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | Pfad zum .NET Framework 4-Installer. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil auf einem HPC-Berechnungsknoten
@@ -139,7 +139,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 |---------------------------------------| - |
 | **Projektname** | Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung. |
 | **Bereinigen beim Beenden des Profilers** | Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden. |
-| **Zusätzliche bereitzustellende Dateien** | Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken (**...** ), um mithilfe des Dialogfelds mehrere Dateien auszuwählen. |
+| **Zusätzliche bereitzustellende Dateien** | Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken ( **...** ), um mithilfe des Dialogfelds mehrere Dateien auszuwählen. |
 | **Mpiexec-Befehl** | Gibt die Anwendung an, die die MPI-Anwendung startet. Der Standardwert lautet **mpiexec.exe** |
 | **Mpiexec-Argumente** | Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen. |
 | **Angeforderte Knoten im Cluster** | Gibt die Anzahl der Knoten im Cluster an, auf denen die Anwendung ausgeführt wird. |

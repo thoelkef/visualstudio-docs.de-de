@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080864"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695584"
 ---
 # <a name="display-data-in-blend"></a>Anzeigen von Daten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Sie können Beispieldaten im Designer anzeigen, um das Layout der Seiten anzupas
  **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [erstellen Sie eine XML-Datenquelle](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ## <a name="LiveStore"></a> Anzeigen von Live-Daten in einem Store oder einer Telefonanwendung  
- Weitere Informationen finden Sie unter [Arbeiten mit Daten und Dateien (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
+ Weitere Informationen finden Sie unter [Arbeiten mit Daten und Dateien (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

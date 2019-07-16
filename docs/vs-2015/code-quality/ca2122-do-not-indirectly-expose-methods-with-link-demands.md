@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 637fa666dbaba539b39fb3537df49fbd12baef3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0b173378194c099b2014093104f814f3454843d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947027"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687261"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Methoden mit Linkaufrufen nicht indirekt verfügbar machen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "58947027"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Member wurde ein [Verknüpfungsaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) und wird aufgerufen, indem Sie ein Element, das keine sicherheitsüberprüfungen ausführt.
+ Ein öffentlicher oder geschützter Member wurde ein [Verknüpfungsaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) und wird aufgerufen, indem Sie ein Element, das keine sicherheitsüberprüfungen ausführt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Ein Linkaufruf überprüft nur die Berechtigungen des unmittelbaren Aufrufers. Wenn ein Member `X` macht keine sicherheitsanforderungen der Aufrufer Code geschützt durch einen Linkaufruf, einen Aufrufer ohne die erforderliche Berechtigung verwenden, kann Aufrufe `X` auf den geschützten Member zuzugreifen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Fügen Sie einen [Daten und Modellierung](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) oder bei Bedarf in das Element verknüpfen, sodass es nicht mehr ungesicherten Zugriff auf den Link bei Bedarf geschützte Member bereitstellt.
+ Fügen Sie einen [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) oder bei Bedarf in das Element verknüpfen, sodass es nicht mehr ungesicherten Zugriff auf den Link bei Bedarf geschützte Member bereitstellt.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Um problemlos eine Warnung dieser Regel zu unterdrücken, müssen Sie sicherstellen, dass Ihr Code seinen Aufrufern keinen Zugriff auf Vorgänge oder Ressourcen, die auf schädigende Weise verwendet werden können.
@@ -58,4 +58,4 @@ ms.locfileid: "58947027"
 
  **Wert von unsicheren Member: "Seattle.corp.contoso.com"**
 ## <a name="see-also"></a>Siehe auch
- [Sichern Sie die Richtlinien für das Codieren](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Linkaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Sichern Sie die Richtlinien für das Codieren](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Linkaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

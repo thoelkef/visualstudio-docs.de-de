@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetBreakpoint
 ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 510ffebfd1bbff116b4899663baac7cf6f1087d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db0042e3c7d6f4c8ce7eabeef6e488d18cd0ad27
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352812"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 Ruft ab, die nicht gebundene Haltepunkt.
@@ -36,10 +39,9 @@ int GetBreakpoint(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ppBP`
-
- [out] Gibt eine [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Objekt, das den Haltepunkt darstellt, die aufgehoben wurden.
+## <a name="parameters"></a>Parameter
+`ppBP`\
+[out] Gibt eine [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Objekt, das den Haltepunkt darstellt, die aufgehoben wurden.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

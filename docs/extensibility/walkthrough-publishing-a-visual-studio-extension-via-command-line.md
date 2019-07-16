@@ -1,22 +1,22 @@
 ---
-title: 'Exemplarische Vorgehensweise: Veröffentlichen eine Visual Studio-Erweiterung über die Befehlszeile | Microsoft-Dokumentation'
+title: Veröffentlichen Sie die Erweiterung, die mithilfe der Befehlszeile
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
 - extension, publishing
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a6b5531bc5dc138f2f90a0a67da39f9583bc4b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966265"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320647"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
 

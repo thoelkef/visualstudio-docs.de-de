@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993546"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747539"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in Visual Studio bieten eine gute Möglichkeit für das Generieren von Text beliebiger Art. Sie können Textvorlagen verwenden, um Text zu generieren, zur Laufzeit als Teil Ihrer Anwendung und zur Entwurfszeit aus, um einige der Projektcode zu generieren. Dieses Thema fasst zusammen, die am häufigsten gestellte "Gewusst...?" Fragen.
@@ -45,13 +45,14 @@ Textvorlagen in Visual Studio bieten eine gute Möglichkeit für das Generieren 
      Verwenden Sie in Ihrem Code `this.Host.ResolvePath(filename)` zum Abrufen des vollständigen Pfads der Datei.
 
 ### <a name="invoke-methods-from-a-template"></a>Aufrufen von Methoden aus einer Vorlage
- Wenn die Methoden, z. B. im Standard vorhanden [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Klassen:
+
+Wenn die Methoden, z. B. in .NET-Klassen vorhanden:
 
 - Verwenden der \<#@assembly#> Richtlinie zum Laden der Assembly, und verwenden Sie \<#@import#> um den Namespacekontext einzurichten. Weitere Informationen finden Sie unter [T4-Import-Direktive](../modeling/t4-import-directive.md).
 
    Wenn Sie häufig der gleichen Assembly mithilfe und-Direktiven Import, sollten Sie einen anweisungsprozessor schreiben. In den einzelnen Vorlagen können Sie des anweisungsprozessors komplizierter, aufrufen, die die Assemblys und der Model-Dateien laden und Festlegen des Kontexts des Namespace können. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Wenn Sie die Methoden selbst schreiben:
+Wenn Sie die Methoden selbst schreiben:
 
 - Wenn Sie eine Laufzeit-Textvorlage schreiben, Schreiben Sie eine partielle Klassendefinition, die den gleichen Namen wie die Laufzeit-Textvorlage. Fügen Sie die zusätzlichen Methoden in dieser Klasse hinzu.
 

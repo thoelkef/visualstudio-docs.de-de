@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953672"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258130"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – FAQ (Häufig gestellte Fragen)
 
@@ -33,7 +33,7 @@ Live Unit Testing kann mit den drei gängigen Frameworks für Komponententests v
 |Testframework  |Mindestversion des Visual Studio-Adapters  |Mindestversion des Frameworks  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio, Version 2.2.0-beta3-build1187 |xUnit 1.9.2 |
-|NUnit |NUnit3TestAdapter, Version 3.5.1 |NUnit, Version 3.5.0 |
+|NUnit |NUnit3TestAdapter, Version 3.7.0 |NUnit, Version 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Wenn Sie ältere auf MSTest-basierende Testprojekte haben, die sich auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` beziehen, und Sie nicht auf die neueren MSTest-NuGet-Pakete umsteigen möchten, sollten Sie auf Visual Studio 2017 Version 15.4 oder höher upgraden.
@@ -197,15 +197,6 @@ Tests, die auf diesen Werten basieren, können fehlschlagen, wenn sie von Live U
 Ihre Projektmappe kann sogar erstellt werden, wenn Sie keine Änderungen vornehmen, wenn der Buildvorgang der Projektmappe Quellcode generiert, der Teil der Projektmappe selbst ist, und in den Zieldateien des Builds keine entsprechenden Eingaben und Ausgaben angegeben sind. Zielen sollte eine Liste von Eingaben und Ausgaben bereitgestellt werden, damit MSBuild die entsprechenden aktuellen Überprüfungen vornehmen kann und bestimmen kann, ob ein neuer Build erforderlich ist.
 
 Live Unit Testing startet einen Buildvorgang, wenn erkannt wird, dass Quelldateien geändert wurden. Da der Buildvorgang Ihrer Projektmappe Quelldateien generiert, gerät Live Unit Testing in eine unendliche Buildschleife. Wenn die Eingaben und Ausgaben des Ziels jedoch überprüft werden, wenn Live Unit Testing den zweiten Buildvorgang startet (nach der Ermittlung neu generierter Quelldateien aus dem vorherigen Build), wird die Buildschleife unterbrochen, da die Überprüfungen der Eingaben und Ausgaben darauf hinweisen, dass alles auf dem neuesten Stand ist.  
-
-## <a name="lightweight-solution-load"></a>Einfaches Laden von Projektmappen
-
-**Wie funktioniert Live Unit Testing mit der Funktion „Lightweight-Ladevorgang für Projektmappen“?**
-
-Live Unit Testing funktioniert derzeit nicht richtig mit dem Lightweight-Ladefeature für Projektmappen. Dies funktioniert erst, nachdem mindestens eines der Testprojekte geladen wurde. Andernfalls funktioniert es nicht, da Live Unit Testing von mindestens einem der Testprojekte abhängt, das auf einen Testadapter verweist (MSTest, xUnit oder NUnit), der geladen wird.
-
-> [!NOTE]
-> Der Lightweight-Ladevorgang für Projektmappen ist in Visual Studio 2017 Version 15.5 und höher nicht mehr enthalten. In Visual Studio Version 2017 Version 15.5 und höher laden große Projektmappen, die verwalteten Code enthalten, auch ohne den Lightweight-Ladevorgang für Projektmappen viel schneller als zuvor.
 
 ## <a name="new-process-coverage"></a>Coverage für neue Prozesse
 

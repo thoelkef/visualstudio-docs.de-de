@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryContext
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f439928d253aa5e8b500a489ca1a2d184ecbd507
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f4178b14ca128fb7b0e5511f18fd2c9a5fdb3661
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457699"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329835"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 Ruft einen Speicherkontext eines Verweises ab. Für zukünftige Verwendung reserviert.
@@ -40,9 +40,8 @@ int GetMemoryContext ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `ppMemory`\
-
- [out] Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Objekt, das den Arbeitsspeicher, die Verbindung mit dem Wert des Verweises darstellt.
+`ppMemory`\
+[out] Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Objekt, das den Arbeitsspeicher, die Verbindung mit dem Wert des Verweises darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.

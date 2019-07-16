@@ -11,29 +11,29 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705812"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrieren der Befehlshandler von Interop-Assemblys
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Eine VSPackage muss zaregistrovat [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , damit die integrierte Entwicklungsumgebung (IDE) seine Befehle ordnungsgemäß weiterleitet.  
   
- Die Registrierung kann entweder durch die manuelle Bearbeitung oder über eine Registrierungsstelle (.rgs)-Datei aktualisiert werden. Weitere Informationen finden Sie unter [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Die Registrierung kann entweder durch die manuelle Bearbeitung oder über eine Registrierungsstelle (.rgs)-Datei aktualisiert werden. Weitere Informationen finden Sie unter [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Das Managed Package Framework (MPF) stellt diese Funktionalität über die <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Klasse.  
   
- [Tabelle Formatreferenz für Blobüberwachungsprotokolle Befehl](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) Ressourcen befinden sich im nicht verwalteten Satelliten-UI-Dlls.  
+ [Tabelle Formatreferenz für Blobüberwachungsprotokolle Befehl](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) Ressourcen befinden sich im nicht verwalteten Satelliten-UI-Dlls.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Befehl Registrierung von VSPackages  
- Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle erfordert einen Registrierungseintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei an. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >* \Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], z. B. 9.0.  
+ Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle erfordert einen Registrierungseintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei an. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version >* \Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], z. B. 9.0.  
   
 > [!NOTE]
-> Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Shell initialisiert wird. Weitere Informationen zu den Stammpfad, finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+> Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Shell initialisiert wird. Weitere Informationen zu den Stammpfad, finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>Der Registrierungseintrag für CTMENU-Ressource  
  Die Struktur des Registrierungseintrags lautet:  

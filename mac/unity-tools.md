@@ -3,14 +3,14 @@ title: Visual Studio für Mac-Tools für Unity
 description: Einführung in Visual Studio-Tools für Unity-Erweiterung
 author: therealjohn
 ms.author: johmil
-ms.date: 05/25/2018
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98a34df9960ca95edbaf6b9c5ae91d7cd4e06568
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971386"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691860"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio für Mac-Tools für Unity
 
@@ -19,6 +19,9 @@ ms.locfileid: "62971386"
 Visual Studio für Mac Tools für Unity ist eine kostenlose Erweiterung, die Visual Studio für Mac zu einem leistungsstarken Tool zur Entwicklung plattformübergreifender Spiele mit der Unity-Plattform macht.
 
 Unity ist standardmäßig in Visual Studio für Mac integriert. Ab Unity 2018.1 ist Visual Studio für Mac die C#-Standard-IDE für Unity-Projekte.
+
+> [!NOTE]
+> Diese Informationen gelten für die Visual Studio für Mac-IDE. Informationen zu Visual Studio Code finden Sie in diesem [Leitfaden](https://code.visualstudio.com/docs/other/unity) (in englischer Sprache).
 
 ## <a name="overview"></a>Übersicht
 

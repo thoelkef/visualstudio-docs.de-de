@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetTypeFromAddress
 - GetTypeFromAddress
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48e1e90c69688cf1ef5388e74060e38087d50920
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7cc1a0e5bb25edcbfae047a088c20884330e81ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922660"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336702"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Ruft ab, um ein Symboltyp, wenn die debugadresse.
@@ -37,14 +40,12 @@ int GetTypeFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pAddress`
+## <a name="parameters"></a>Parameter
+`pAddress`\
+[in] Die debugadresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
 
- [in] Die debugadresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
-
-`ppField`
-
- [out] Gibt den Arraytyp zurück, dargestellt durch ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Schnittstelle.
+`ppField`\
+[out] Gibt den Arraytyp zurück, dargestellt durch ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Schnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

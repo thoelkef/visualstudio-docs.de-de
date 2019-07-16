@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b22559af26a0a5f6c8af68726a5ba336e1bcfb4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689628"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324494"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Gibt die Modifizierer für ein Feld an.
@@ -101,58 +104,84 @@ public enum enum_FIELD_MODIFIERS {
 };
 ```
 
-## <a name="members"></a>Member
-FIELD_MOD_ACCESS_TYPE gibt an, dass das Feld nicht zugegriffen werden kann.
+## <a name="fields"></a>Felder
+`FIELD_MOD_ACCESS_TYPE`\
+Gibt an, dass das Feld nicht zugegriffen werden kann.
 
-FIELD_MOD_ACCESS_PUBLIC gibt an, dass das Feld über öffentlichen Zugriff hat.
+`FIELD_MOD_ACCESS_PUBLIC`\
+Gibt an, dass das Feld über öffentlichen Zugriff hat.
 
-FIELD_MOD_ACCESS_PROTECTED gibt an, dass das Feld Zugriff geschützt ist.
+`FIELD_MOD_ACCESS_PROTECTED`\
+Gibt an, dass das Feld Zugriff geschützt ist.
 
-FIELD_MOD_ACCESS_PRIVATE gibt an, dass das Feld privaten Zugriff hat.
+`FIELD_MOD_ACCESS_PRIVATE`\
+Gibt an, dass das Feld privaten Zugriff hat.
 
-FIELD_MOD_NOMODIFIERS gibt an, dass das Feld keine Modifizierer verfügt.
+`FIELD_MOD_NOMODIFIERS`\
+Gibt an, dass das Feld keine Modifizierer verfügt.
 
-FIELD_MOD_STATIC gibt an, dass das Feld statisch ist.
+`FIELD_MOD_STATIC`\
+Gibt an, dass das Feld statisch ist.
 
-FIELD_MOD_CONSTANT gibt an, dass das Feld eine Konstante ist.
+`FIELD_MOD_CONSTANT`\
+Gibt an, dass das Feld eine Konstante ist.
 
-FIELD_MOD_TRANSIENT gibt an, dass das Feld vorübergehend ist.
+`FIELD_MOD_TRANSIENT`\
+Gibt an, dass das Feld vorübergehend ist.
 
-FIELD_MOD_VOLATILE gibt an, dass das Feld "volatile" ist.
+`FIELD_MOD_VOLATILE`\
+Gibt an, dass das Feld "volatile" ist.
 
-FIELD_MOD_ABSTRACT gibt an, dass das Feld abstrakt ist.
+`FIELD_MOD_ABSTRACT`\
+Gibt an, dass das Feld abstrakt ist.
 
-FIELD_MOD_NATIVE gibt an, dass das Feld native.
+`FIELD_MOD_NATIVE`\
+Gibt an, dass das Feld native.
 
-FIELD_MOD_SYNCHRONIZED gibt an, dass das Feld synchronisiert wird.
+`FIELD_MOD_SYNCHRONIZED`\
+Gibt an, dass das Feld synchronisiert wird.
 
-FIELD_MOD_VIRTUAL gibt an, dass das Feld virtuell ist.
+`FIELD_MOD_VIRTUAL`\
+Gibt an, dass das Feld virtuell ist.
 
-FIELD_MOD_INTERFACE gibt an, dass das Feld eine Schnittstelle.
+`FIELD_MOD_INTERFACE`\
+Gibt an, dass das Feld eine Schnittstelle.
 
-FIELD_MOD_FINAL gibt an, dass das Feld Ihrem endgültigen Zustand vorliegt.
+`FIELD_MOD_FINAL`\
+Gibt an, dass das Feld Ihrem endgültigen Zustand vorliegt.
 
-FIELD_MOD_SENTINEL gibt an, dass das Feld Sentinel.
+`FIELD_MOD_SENTINEL`\
+Gibt an, dass das Feld Sentinel.
 
-FIELD_MOD_INNERCLASS gibt an, dass das Feld einer inneren Klasse.
+`FIELD_MOD_INNERCLASS`\
+Gibt an, dass das Feld einer inneren Klasse.
 
-FIELD_TYPE_OPTIONAL gibt an, dass das Feld optional ist.
+`FIELD_TYPE_OPTIONAL`\
+Gibt an, dass das Feld optional ist.
 
-FIELD_MOD_BYREF gibt an, dass das Feld mit einem Verweisargument ist. Dies ist insbesondere für Methodenargumente.
+`FIELD_MOD_BYREF`\
+Gibt an, dass das Feld mit einem Verweisargument ist. Dies ist insbesondere für Methodenargumente.
 
-FIELD_MOD_HIDDEN gibt an, dass das Feld in einem anderen Kontext angezeigt oder ausgeblendet werden muss. z. B. [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statischen lokalen Variablen.
+`FIELD_MOD_HIDDEN`\
+Gibt an, dass das Feld in einem anderen Kontext angezeigt oder ausgeblendet werden muss. z. B. [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statischen lokalen Variablen.
 
-FIELD_MOD_MARSHALASOBJECT gibt an, dass das Feld repräsentiert den ein Objekt mit einer `IUnknown` Schnittstelle.
+`FIELD_MOD_MARSHALASOBJECT`\
+Gibt an, dass das Feld repräsentiert den ein Objekt mit einer `IUnknown` Schnittstelle.
 
-FIELD_MOD_SPECIAL_NAME gibt an, dass das Feld einen speziellen Namen, z. B. `.ctor` für einen Konstruktor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).
+`FIELD_MOD_SPECIAL_NAME`\
+Gibt an, dass das Feld einen speziellen Namen, z. B. `.ctor` für einen Konstruktor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).
 
-FIELD_MOD_HIDEBYSIG gibt an, die das Feld enthält den `Overloads` Schlüsselwort angewendet wird ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).
+`FIELD_MOD_HIDEBYSIG`\
+Gibt an, dass das Feld enthält den `Overloads` Schlüsselwort angewendet wird ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] nur).
 
-FIELD_MOD_WRITEONLY gibt an, dass das Feld schreibgeschützt ist. Dieser Wert befindet sich nicht im `FIELD_MOD_ALL`, da nur mit diesen Feldern nur Schreibzugriff für die funktionsauswertung ist. Ein Benutzer muss explizit anfordern `FIELD_MOD_WRITEONLY` Felder.
+`FIELD_MOD_WRITEONLY`\
+Gibt an, dass das Feld schreibgeschützt ist. Dieser Wert befindet sich nicht im `FIELD_MOD_ALL`, da nur mit diesen Feldern nur Schreibzugriff für die funktionsauswertung ist. Ein Benutzer muss explizit anfordern `FIELD_MOD_WRITEONLY` Felder.
 
-Eine Maske für den Feldzugriff gibt FIELD_MOD_ACCESS_MASK an.
+`FIELD_MOD_ACCESS_MASK`\
+Gibt eine Maske für den Feldzugriff an.
 
-FIELD_MOD_MASK gibt eine Maske für feldmodifizierern an.
+`FIELD_MOD_MASK`\
+Gibt eine Maske für feldmodifizierern an.
 
 ## <a name="remarks"></a>Hinweise
 Verwendet für die `dwModifiers` Mitglied der [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.

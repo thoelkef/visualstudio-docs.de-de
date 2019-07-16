@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetName
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee4c292bdd80a8209d9136bac0cbc6775a2c33ac
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3d50fc1b711c673d8582be0d1208bc1d56e0f38b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458530"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352103"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 Ruft den Namen des Stapelrahmens.
@@ -40,9 +40,8 @@ int GetName ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pbstrName`\
-
- [out] Gibt den Namen des Stapelrahmens zurück.
+`pbstrName`\
+[out] Gibt den Namen des Stapelrahmens zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

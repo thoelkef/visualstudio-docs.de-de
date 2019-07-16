@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650299"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683012"
 ---
 # <a name="msbuild-reference"></a>MSBuild-Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650299"
  Listet Zeichen auf, die möglicherweise mit Escapezeichen versehen werden müssen, damit sie richtig interpretiert werden können. Eine Escapesequenz besteht aus einer Reihe von Zeichen, die angibt, dass eine alternative Interpretation folgt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Übersicht über MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) bietet eine Einführung in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] und enthält Links zu Artikeln, in denen erläutert wird, wie Sie damit Projekte erstellen können.  
+ [Übersicht über MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) bietet eine Einführung in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] und enthält Links zu Artikeln, in denen erläutert wird, wie Sie damit Projekte erstellen können.  
   
  <xref:Microsoft.Build.Conversion>  
  Enthält die Namespace-Referenz für die Konvertierung.  

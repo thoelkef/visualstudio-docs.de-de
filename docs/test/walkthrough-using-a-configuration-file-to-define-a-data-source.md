@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle'
+title: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976207"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746760"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
@@ -62,16 +62,16 @@ Sehen Sie sich die Datei *app.config* an. Sie enthält mindestens die XML-Deklar
 
 2. Erstellen Sie innerhalb des **configSections**-Elements ein **section**-Element.
 
-3. Fügen Sie im **section**-Element ein Attribut mit dem Namen `name` hinzu, und weisen Sie ihm den Wert `microsoft.visualstudio.testtools` zu. Fügen Sie ein weiteres Attribut mit dem Namen `type` hinzu, und weisen Sie ihm den Wert `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` zu.
+3. Fügen Sie im **section**-Element ein Attribut mit dem Namen `name` hinzu, und weisen Sie ihm den Wert `microsoft.visualstudio.testtools` zu. Fügen Sie ein weiteres Attribut mit dem Namen `type` hinzu, und weisen Sie ihm den Wert `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions` zu.
 
 Das **section**-Element sollte wie folgt aussehen:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Der Assemblyname muss mit dem verwendeten Microsoft Visual Studio .NET-Frameworkbuild übereinstimmen. Legen Sie die Version auf 9.0.0.0 fest, wenn Sie Visual Studio .NET Framework 3.5 verwenden. Wenn Sie Visual Studio .NET Framework 2.0 verwenden, legen Sie die Version auf 8.0.0.0 fest.
+> Der Name der Assembly muss der von Ihnen verwendeten Version entsprechen.
 
 ## <a name="define-connection-strings"></a>Definieren von Verbindungszeichenfolgen
 

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b3904a9fcb2e15190018dbc4caabe925690e023f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001526"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263708"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Fehler: Der Webserver konnte die angeforderte Ressource nicht finden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ Aufgrund von Sicherheitsüberlegungen wurde von IIS ein generischer Fehler zurü
  Weitere Informationen über die Problembehandlung bei IIS finden Sie unter [IIS-Verwaltung](http://go.microsoft.com/fwlink/?LinkId=255872).  
   
 ## <a name="see-also"></a>Siehe auch  
- [UrlScan-Sicherheitstool](https://www.iis.net/downloads/microsoft/urlscan)   
+ [UrlScan-Sicherheitstool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

@@ -40,7 +40,7 @@ Mögliche Ursachen für diese Fehlermeldung
 - Versucht, Code zu bearbeiten, während des Debuggens einer Notfallwiederherstellung. Watson-Sicherungskopie.
 - Versucht, Code zu bearbeiten, nachdem eine unbehandelte Ausnahme auftritt und die Option **Aufrufliste für Ausnahmefehler entladen** nicht ausgewählt ist.
 - Versucht, Code zu bearbeiten, während des Debuggens einer eingebetteten Laufzeitanwendung.
-- Möchten verwalteten Code verwenden eine Version von .NET Framework 4.5.1 vor mit einer 64-Bit-Anwendung zu bearbeiten. Zum Bearbeiten und Fortfahren für .NET Framework 4.5.1 vor verwenden, legen Sie das Ziel auf **X86** in die  **\<Projektname >** > **Eigenschaften**  >  **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.
+- Möchten verwalteten Code verwenden eine Version von .NET Framework 4.5.1 vor mit einer 64-Bit-Anwendung zu bearbeiten. Zum Bearbeiten und Fortfahren für .NET Framework 4.5.1 vor verwenden, legen Sie das Ziel auf **X86** in die  **\<Projektname >**  > **Eigenschaften**  >  **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.
 - Versucht, Code in einer Assembly zu bearbeiten, die während des Debuggens geändert wurde und erneut geladen wurde.
 - Versucht, Code in einer Assembly zu bearbeiten, die nicht geladen wurde.
 - Da die neueste Version Buildfehler enthält zum Debuggen einer alten Version einer app wird gestartet.

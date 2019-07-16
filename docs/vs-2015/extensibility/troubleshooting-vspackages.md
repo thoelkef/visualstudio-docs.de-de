@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430127"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695506"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
   
    2. Wählen Sie die **Verweise** Registerkarte die **Eigenschaftenseiten** im Dialogfeld, und stellen Sie sicher, dass für alle Pfade richtig sind. Alternativ können Sie die **Objektkatalog** um die referenzierten Objekte zu suchen.  
   
-        Für verwalteten Code können Sie die [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) zum Anzeigen der Details der fehlgeschlagene Assembly lädt.  
+        Für verwalteten Code können Sie die [Fuslogvw.exe (Assembly Binding Log Viewer)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) zum Anzeigen der Details der fehlgeschlagene Assembly lädt.  
   
 2. Suchen Sie für nicht verwalteten Code, die CLSID des VSPackage in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Knoten der CLSID-Registrierung:  
   

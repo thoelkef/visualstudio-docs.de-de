@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001297"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686663"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrieren von Apps in die universelle Windows-Plattform (UWP)
 Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projektdateien für Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps vor, damit sie mit Visual Studio 2015 RTM verwendet werden können. (Wenn Sie über eine universelle Windows 8.1-App mit einem Windows-Anwendungsprojekt und einem Windows Phone-Projekt verfügen, müssen Sie die Schritte befolgen, um jedes Projekt zu migrieren).  
@@ -29,7 +29,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 - [Erforderliche Änderungen für vorhandene Komponententestprojekte für mit Visual Studio 2015 RC erstellte universelle Windows-Apps](#MigrateUnitTest).  
   
-  Wenn Sie diese Änderungen nicht alle vornehmen möchten, erfahren Sie hier mehr über das [Portieren Ihrer vorhandenen Apps](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) in ein neues universelles Windows-Projekt.  
+  Wenn Sie diese Änderungen nicht alle vornehmen möchten, erfahren Sie hier mehr über das [Portieren Ihrer vorhandenen Apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) in ein neues universelles Windows-Projekt.  
   
 ## <a name="MigrateCSharp"></a> Migrieren Sie Ihrer C#/VB Windows Store 8.1 oder Windows Phone 8.1-apps zur Verwendung der universellen Windows-Plattform  
   
@@ -110,7 +110,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
     6. Hinzufügen einer \<EnableDotNetNativeCompatibleProfile >-Element und dessen Wert auf: **"true"**.  
   
-    7. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Wenn Ihr Projekt nicht bei 200 skaliert Objekte enthält, müssen Sie Hinzufügen einer \<UapDefaultAssetScale >-Element mit dem Wert der Skala Ihrer Assets zu diesem PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Wenn Ihr Projekt nicht bei 200 skaliert Objekte enthält, müssen Sie Hinzufügen einer \<UapDefaultAssetScale >-Element mit dem Wert der Skala Ihrer Assets zu diesem PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Jetzt Ihre \<PropertyGroup >-Element sollte etwa wie folgt aussehen:  
   
@@ -272,7 +272,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
     4. Hinzufügen einer \<EnableDotNetNativeCompatibleProfile >-Element und dessen Wert auf: "true".  
   
-    5. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Wenn Ihr Projekt nicht bei 200 skaliert Objekte enthält, müssen Sie Hinzufügen einer \<UapDefaultAssetScale >-Element mit dem Wert der Skala Ihrer Assets zu diesem PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Wenn Ihr Projekt nicht bei 200 skaliert Objekte enthält, müssen Sie Hinzufügen einer \<UapDefaultAssetScale >-Element mit dem Wert der Skala Ihrer Assets zu diesem PropertyGroup. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Für Windows Phone-Projekte ändern, den Wert der \<ApplicationType > von Windows Phone, Windows Store.  
   
@@ -651,7 +651,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 4. Suchen der \<PropertyGroup >-Element mit den \<TargetPlatformVersion > und \<TargetPlatformMinVersion > Elemente. Ändern Sie den vorhandenen Wert von der \<TargetPlatformVersion > und \<TargetPlatformMinVersion > Elementen, die die gleiche Version der universellen Windows-Plattform sein, die Sie installiert haben.  
   
-    Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Mit Visual Studio 2015 RC enthaltenen Ressourcen, die bei 100 skalierte erstellte Projekte, müssen Sie die Hinzufügen einer \<UapDefaultAssetScale >-Element mit einem Wert von 100 in dieser Eigenschaftengruppe. Erfahren Sie mehr mehr über [Objekte und Skalierungen](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Mit Visual Studio 2015 RC enthaltenen Ressourcen, die bei 100 skalierte erstellte Projekte, müssen Sie die Hinzufügen einer \<UapDefaultAssetScale >-Element mit einem Wert von 100 in dieser Eigenschaftengruppe. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. Wenn Sie Verweise zu den SDKs für die UWP-Erweiterung (wie das Windows Mobile SDK) hinzugefügt haben, müssen Sie die SDK-Version aktualisieren. Zum Beispiel dies \<SDKReference >-Element:  
   
@@ -761,7 +761,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
      Hinzufügen einer \<EnableDotNetNativeCompatibleProfile >-Element und dessen Wert auf "true", wenn das Element nicht bereits vorhanden ist.  
   
-     Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Mit Visual Studio 2015 RC enthaltenen Ressourcen, die bei 100 skalierte erstellte Projekte, müssen Sie die Hinzufügen einer \<UapDefaultAssetScale >-Element mit einem Wert von 100 in dieser Eigenschaftengruppe. Erfahren Sie mehr mehr über [Objekte und Skalierungen](http://msdn.microsoft.com/library/jj679352.aspx).  
+     Die standardmäßige Objektskalierung für universelle Windows-Apps liegt bei 200. Mit Visual Studio 2015 RC enthaltenen Ressourcen, die bei 100 skalierte erstellte Projekte, müssen Sie die Hinzufügen einer \<UapDefaultAssetScale >-Element mit einem Wert von 100 in dieser Eigenschaftengruppe. Erfahren Sie mehr mehr über [Objekte und Skalierungen](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Also das \<PropertyGroup >-Element werden jetzt etwa wie folgt:  
   

@@ -298,7 +298,7 @@ ms.locfileid: "63430043"
 
  Wenn die kurze nur mit den Auslassungszeichen-Schaltfläche verwenden:
 
-- Wenn es mehr als eine lange **[durchsuchen...]**  Schaltfläche in einem Dialogfeld an, wie z. B., wenn mehrere Felder für das Durchsuchen von zulässt. Verwenden Sie die kurzfristige **[...]**  klicken, die verwirrend Zugriffsschlüssel erstellt diese Situation zu vermeiden (**& Durchsuchen** und **du & rchsuchen** im gleichen Dialogfeld "").
+- Wenn es mehr als eine lange **[durchsuchen...]**  Schaltfläche in einem Dialogfeld an, wie z. B., wenn mehrere Felder für das Durchsuchen von zulässt. Verwenden Sie die kurzfristige **[...]**  klicken, die verwirrend Zugriffsschlüssel erstellt diese Situation zu vermeiden ( **& Durchsuchen** und **du & rchsuchen** im gleichen Dialogfeld "").
 
 - In einem engen Dialogfeld, oder wenn besteht keine angemessene Möglichkeit, auf die Schaltfläche "lange" abgelegt.
 
@@ -348,7 +348,7 @@ ms.locfileid: "63430043"
  Hyperlinks eignen sich gut für die Navigation-basierten Aktionen, z. B. Öffnen eines Hilfethemas, modales Dialogfeld, oder -Assistenten. Wenn ein Link für einen Befehl verwendet wird, sollten sie immer eine sichtbare und merkliche Änderung an der Benutzeroberfläche anzeigen. Aktionen, die auf eine Aktion (z. B. speichern, auf "Abbrechen", und löschen) werden im Allgemeinen besser kommuniziert mithilfe einer Schaltfläche.
 
 #### <a name="writing-style"></a>Schreibstil
- Führen Sie die [Windows-Desktop-Leitfaden für den Text der Benutzeroberfläche](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Verwenden Sie nicht "Erfahren Sie mehr über," "Erzählen mir Weitere Informationen zu" oder "Get-Help dabei"-Ausdruck. Stattdessen einen Ausdruck Link Hilfetext in Bezug auf die primäre Frage beantwortet, indem der Inhalt der Hilfe. Z. B. "**wie füge ich einen Server zum Server-Explorer?**"
+ Führen Sie die [Windows-Desktop-Leitfaden für den Text der Benutzeroberfläche](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Verwenden Sie nicht "Erfahren Sie mehr über," "Erzählen mir Weitere Informationen zu" oder "Get-Help dabei"-Ausdruck. Stattdessen einen Ausdruck Link Hilfetext in Bezug auf die primäre Frage beantwortet, indem der Inhalt der Hilfe. Z. B. "**wie füge ich einen Server zum Server-Explorer?** "
 
 #### <a name="visual-style"></a>Visuellen Stil
 

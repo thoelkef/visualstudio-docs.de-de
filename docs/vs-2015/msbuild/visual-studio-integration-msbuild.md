@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445639"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825427"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] werden zu diesem Zweck die Bedingungen für `PropertyGroup`, `ItemGroup` und `Import` sowie für die Eigenschaft und die Elemente überprüft.  
   
 ## <a name="additional-build-actions"></a>Zusätzliche Buildvorgänge  
- Mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie den Elementtypnamen einer Datei in einem Projekt über die Eigenschaft **Buildvorgang** im Fenster [Dateieigenschaften](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) ändern. In diesem Menü werden`Compile`, `EmbeddedResource`, `Content`und `None` sowie alle anderen bereits im Projekt vorhandenen Elementtypnamen aufgeführt. Um sicherzustellen, dass alle benutzerdefinierten Elementtypnamen in diesem Menü immer verfügbar sind, können Sie dem Elementtyp `AvailableItemName`die entsprechenden Namen hinzufügen. Durch Hinzufügen des folgenden Elements zur Projektdatei wird beispielsweise in diesem Menü der benutzerdefinierte Typ `JScript` für alle Projekte eingefügt, die diesen Typ importieren:  
+ Mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie den Elementtypnamen einer Datei in einem Projekt über die Eigenschaft **Buildvorgang** im Fenster [Dateieigenschaften](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) ändern. In diesem Menü werden`Compile`, `EmbeddedResource`, `Content`und `None` sowie alle anderen bereits im Projekt vorhandenen Elementtypnamen aufgeführt. Um sicherzustellen, dass alle benutzerdefinierten Elementtypnamen in diesem Menü immer verfügbar sind, können Sie dem Elementtyp `AvailableItemName`die entsprechenden Namen hinzufügen. Durch Hinzufügen des folgenden Elements zur Projektdatei wird beispielsweise in diesem Menü der benutzerdefinierte Typ `JScript` für alle Projekte eingefügt, die diesen Typ importieren:  
   
 ```  
 <ItemGroup>  
@@ -145,7 +145,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense und Validierung  
- Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter „*\<Visual Studio-Installationsverzeichnis>* \Xml\Schemas\1033\MSBuild“ befindet.  
+ Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter „ *\<Visual Studio-Installationsverzeichnis>* \Xml\Schemas\1033\MSBuild“ befindet.  
   
  Die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Kerntypen werden in Microsoft.Build.Core.xsd und allgemeine Typen, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet werden, wird in Microsoft.Build.CommonTypes.xsd definiert. Zum Anpassen der Schemas für die Bereitstellung von IntelliSense und zur Validierung benutzerdefinierter Elementtypnamen, Eigenschaften und Aufgaben können Sie entweder "Microsoft.Build.xsd" bearbeiten oder ein benutzerdefiniertes Schema erstellen, das das CommonTypes-Schema oder das Core-Schema enthält. Beim Erstellen eines benutzerdefinierten Schemas müssen Sie den XML-Editor so einrichten, dass das **Eigenschaftenfenster** verwendet wird.  
   
@@ -160,13 +160,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 - Assemblyverweise:  
   
-     Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveAssemblyReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ReferencePath`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation (Wert des `Include` -Attributs eines Elements) mit dem vollständigen Pfad zum entsprechenden Verweis verfügen. Die Elemente sollten über alle Metadaten der übergebenen Eingabeelemente sowie über die folgenden neuen Metadaten verfügen:  
-  
-    - `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
-  
-    - `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
-  
-    - `ResolvedFrom` wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aufgelöst wurde.  
+  Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveAssemblyReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ReferencePath`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation (Wert des `Include` -Attributs eines Elements) mit dem vollständigen Pfad zum entsprechenden Verweis verfügen. Die Elemente sollten über alle Metadaten der übergebenen Eingabeelemente sowie über die folgenden neuen Metadaten verfügen:  
+
+  - `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
+
+  - `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
+
+  - `ResolvedFrom` wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aufgelöst wurde.  
   
 - COM-Verweise:  
   

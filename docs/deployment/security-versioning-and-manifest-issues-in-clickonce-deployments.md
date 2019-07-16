@@ -1,5 +1,5 @@
 ---
-title: Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen | Microsoft-Dokumentation
+title: Sicherheit/versionsverwaltung/Manifest Probleme in ClickOnce-Bereitstellung
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226409"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745605"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 
@@ -59,7 +59,7 @@ Dieser Fehler kann auftreten, nur, wenn Sie Bearbeiten Ihrer [!INCLUDE[ndpteccli
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Geben Sie die einzelnen .NET Framework-Assemblys im manifest
 
-Ihre Anwendung kann nicht geladen werden, wenn Sie manuell bearbeitet haben eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung in einer älteren Version von Verweisen auf eine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Assembly. Z. B., wenn Sie einen Verweis auf die Assembly System.Net für eine Version von hinzugefügt haben die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] vor der Version, die im Manifest angegeben wird, klicken Sie dann ein Fehler würde auftreten. Sie sollten im Allgemeinen nicht versuchen, geben Sie die Verweise auf einzelne [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Assemblys der Version, die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] für die die Anwendung ausgeführt wird als eine Abhängigkeit im Anwendungsmanifest angegeben ist.
+Ihre Anwendung kann nicht geladen werden, wenn Sie manuell bearbeitet haben eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung auf eine ältere Version von .NET Framework-Assembly verweisen. Z. B. Wenn Sie einen Verweis auf eine Version von .NET Framework vor der Version, die im Manifest angegebenen Assembly System.Net hinzugefügt haben, würde ein Fehler auftreten. Sie sollten im Allgemeinen nicht versuchen, die Verweise auf die einzelnen .NET Framework-Assemblys angeben, wie die Version von .NET Framework für die die Anwendung ausgeführt wird als eine Abhängigkeit im Anwendungsmanifest angegeben ist.
 
 ## <a name="manifest-parsing-issues"></a>Problemen bei der Manifestanalyse
 

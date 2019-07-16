@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081397"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820879"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60081397"
 
   Verstoß gegen eine der folgenden Muster wird diese Warnung ausgelöst.
 
-  Jeder unversiegelte "IDisposable"-Typ muss es sich um eine eigene geschützte virtuelle "void" Dispose(bool)"-Methode bereitstellen. Dispose() muss Dipose(true) und Finalize Dispose(false) sollten aufrufen kann. Wenn Sie einen unversiegelte "IDisposable"-Typ erstellen, müssen Sie Dispose(bool) definieren und aufrufen. Weitere Informationen finden Sie unter [Bereinigen von nicht verwalteten Ressourcen](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) in die [Framework-Entwurfsrichtlinien](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) Abschnitt der .NET Framework-Dokumentation.
+  Jeder unversiegelte "IDisposable"-Typ muss es sich um eine eigene geschützte virtuelle "void" Dispose(bool)"-Methode bereitstellen. Dispose() sollten Dispose(true) aufrufen und Finalize Dispose(false) sollten aufrufen kann. Wenn Sie einen unversiegelte "IDisposable"-Typ erstellen, müssen Sie Dispose(bool) definieren und aufrufen. Weitere Informationen finden Sie unter [Bereinigen von nicht verwalteten Ressourcen](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) in die [Framework-Entwurfsrichtlinien](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) Abschnitt der .NET Framework-Dokumentation.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren.

@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Office 365-Vorteile für Entwickler, die in Ihrem Visual Studio-Abonnement enthalten sind.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947190"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032722"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Die Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements
 
-Abonnenten mit ausgewählten Visual Studio Enterprise-Abonnements erhalten die Office 365-Abonnementvorteile für Entwickler.  Mit dem Office 365-Entwicklerabonnement können Sie Add-Ins für Microsoft Office und Microsoft SharePoint entwickeln, testen und bereitstellen.  Dieser Vorteil gilt für einen Mandanten und bis zu 25 Benutzer.
+Abonnenten mit ausgewählten Visual Studio-Abonnements erhalten die Office 365-Abonnementvorteile für Entwickler.  Mit dem Office 365-Entwicklerabonnement können Sie Add-Ins für Microsoft Office und Microsoft SharePoint entwickeln, testen und bereitstellen.  Dieser Vorteil gilt für einen Mandanten und bis zu 25 Benutzer.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
@@ -67,11 +67,11 @@ Weitere Informationen zum Office 365-Entwicklerabonnement finden Sie unter [FAQ:
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included      |  Ja          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |NA         |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Included                                                            |Ja         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  NA         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              | NA         |
-| Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
+||
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services (Developer), MCT Software & Services.  Umfasst nicht:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 
@@ -82,6 +82,6 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="support-resources"></a>Supportressourcen
 
-- Benötigen Sie Hilfe bei Ihrem Office Developer-Abonnement? Sehen Sie sich die [Supportressourcen](https://developer.microsoft.com/office/support) im [Office Dev Center](https://developer.microsoft.com/office) an.
+- Benötigen Sie Hilfe bei Ihrem Office Developer-Abonnement? Sehen Sie sich die [Supportressourcen](https://developer.microsoft.com/office/docs#officecommunity) im [Office Dev Center](https://developer.microsoft.com/office) an.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

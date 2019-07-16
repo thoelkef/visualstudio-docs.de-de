@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971354"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824538"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -66,8 +66,8 @@ Abhängigkeit von Überprüfungen in Echtzeit und Fehler werden sofort angezeigt
 
 * Öffnen Sie die optionseinstellungen aus der goldenen Leiste, die in angezeigt, um vollständige projektmappenanalyse aktivieren bei Verwendung von live-abhängigkeitsüberprüfung der **Fehlerliste**.
 
-   - Sie können die goldenen Leiste dauerhaft schließen, wenn Sie nicht alle Architektur Probleme, die in der Projektmappe interessiert sind.
-   - Wenn Sie nicht vollständige projektmappenanalyse aktivieren, erfolgt die Analyse nur für die Dateien, die bearbeitet wird.
+  - Sie können die goldenen Leiste dauerhaft schließen, wenn Sie nicht alle Architektur Probleme, die in der Projektmappe interessiert sind.
+  - Wenn Sie nicht vollständige projektmappenanalyse aktivieren, erfolgt die Analyse nur für die Dateien, die bearbeitet wird.
 
 * Wenn Sie Projekte zum Aktivieren von live-Überprüfung zu aktualisieren, zeigt ein Dialogfeld den Status der Konvertierung.
 
@@ -93,7 +93,7 @@ Beim Ziehen von Elementen zum Abhängigkeitsdiagramm werden automatisch Verweise
 
 ## <a name="validate-code-manually"></a>Code manuell überprüfen
 
-Wenn Sie ein Abhängigkeitsdiagramm öffnen-, das mit Projektmappenelementen verknüpft ist verfügen, können Sie Ausführen den **überprüfen** Kurzbefehl aus dem Diagramm. Sie können auch die Eingabeaufforderung verwenden, zum Ausführen der **Msbuild** -Befehl mit der **ValidateArchitecture** benutzerdefinierte Eigenschaft, die auf **"true"**. Bei Codeänderungen sollten Sie beispielsweise regelmäßig eine Ebenenvalidierung durchführen, um Abhängigkeitskonflikte frühzeitig lösen zu können.
+Wenn Sie ein Abhängigkeitsdiagramm öffnen-, das mit Projektmappenelementen verknüpft ist verfügen, können Sie Ausführen den **überprüfen** Kurzbefehl aus dem Diagramm. Sie können auch die Eingabeaufforderung verwenden, zum Ausführen der **Msbuild** -Befehl mit der **ValidateArchitecture** benutzerdefinierte Eigenschaft, die auf **"true"** . Bei Codeänderungen sollten Sie beispielsweise regelmäßig eine Ebenenvalidierung durchführen, um Abhängigkeitskonflikte frühzeitig lösen zu können.
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Überprüfen von Code aus einem Abhängigkeitsdiagramm öffnen
 
@@ -185,7 +185,7 @@ Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds du
 
 1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, das Abhängigkeitsdiagramm oder Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.
 
-2. In der **Eigenschaften** legen des Modellierungsprojekts **Architektur überprüfen** Eigenschaft **"true"**.
+2. In der **Eigenschaften** legen des Modellierungsprojekts **Architektur überprüfen** Eigenschaft **"true"** .
 
     Dadurch wird das Modellierungsprojekt in den Validierungsprozess eingeschlossen.
 
@@ -222,7 +222,7 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* ist ein Artefakt, das einer Ebene im Diagramm für die Abhängigkeitseigenschaft zugeordnet ist.<br /><br /> *ArtifactTypeN* ist der Typ des *ArtifactN*, z. B. eine **Klasse** oder **Methode**, z.B.:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Der Name eines Namespace.|
 |*LayerNameN*|Der Name einer Ebene im Diagramm der Abhängigkeit.|
-|*DependencyType*|Der Typ der abhängigkeitsbeziehung zwischen *"Element1"* und *"Element2"*. Z. B. *"Element1"* verfügt über eine **Aufrufe** Beziehung mit *"Element2"*.|
+|*DependencyType*|Der Typ der abhängigkeitsbeziehung zwischen *"Element1"* und *"Element2"* . Z. B. *"Element1"* verfügt über eine **Aufrufe** Beziehung mit *"Element2"* .|
 
 | **Fehlersyntax** | **Fehlerbeschreibung** |
 |-|-|

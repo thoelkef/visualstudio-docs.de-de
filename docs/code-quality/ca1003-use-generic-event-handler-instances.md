@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eff7b4b880526909c293e16aa32ae7045bcdf297
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62780033"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714379"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Generische Ereignishandlerinstanzen verwenden.
 
@@ -41,7 +41,7 @@ Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Vor, um benutzerdefinierte Informationen an den Ereignishandler übergeben ein neuer Delegat musste deklariert werden, die eine Klasse, die von abgeleitet wurde angegeben, die <xref:System.EventArgs?displayProperty=fullName> Klasse. Dies gilt nicht mehr in .NET. .NET Framework eingeführt, die <xref:System.EventHandler%601?displayProperty=fullName> Delegat, der einen generischen Delegaten, die jede Klasse ermöglicht, das von abgeleitet ist <xref:System.EventArgs> , zusammen mit der Ereignishandler verwendet werden soll.
+Vor, um benutzerdefinierte Informationen an den Ereignishandler übergeben ein neuer Delegat musste deklariert werden, die eine Klasse, die von abgeleitet wurde angegeben, die <xref:System.EventArgs?displayProperty=fullName> Klasse. In .NET ist die generische <xref:System.EventHandler%601?displayProperty=fullName> -Delegat ermöglicht es, jede Klasse, die abgeleitet wird <xref:System.EventArgs> , zusammen mit der Ereignishandler verwendet werden soll.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -57,7 +57,7 @@ Unterdrücken Sie keine Warnung dieser Regel.
 
 Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
 
-```
+```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 

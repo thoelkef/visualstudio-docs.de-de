@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437583"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701144"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437583"
 Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anwendung erforderlich sind. Wenn Sie ein Projekt erstellen, indem Sie über das Hauptmenü den Befehl **Datei &#124; Neu &#124; Projekt** auswählen, erstellt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Projektmappe, die das Projekt enthält. Danach können Sie der Projektmappe nach Bedarf weitere neue oder vorhandene Projekte hinzufügen. Sie können Projekte aus vorhandenen Codedateien erstellen, und Sie können temporäre Projekte erstellen (nur .NET), die gelöscht werden, wenn Sie diese nicht mehr benötigen.  
   
 > [!NOTE]
-> Die Beschreibungen in diesem Thema basieren auf der Visual Studio Community-Edition. Die Dialogfelder und Menübefehle können von den hier beschriebenen abweichen (je nach Ihren aktiven Einstellungen oder der Visual Studio-Edition). Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die Beschreibungen in diesem Thema basieren auf der Visual Studio Community-Edition. Die Dialogfelder und Menübefehle können von den hier beschriebenen abweichen (je nach Ihren aktiven Einstellungen oder der Visual Studio-Edition). Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Erstellen eines Projekts aus einer installierten-Projektvorlage  
  Wählen Sie im Hauptmenü den Befehl **Datei &#124; Neu &#124; Projekt** aus, um das Dialogfeld „Neues Projekt“ anzuzeigen. Wählen Sie im linken Bereich unter **Installiert &#124; Vorlagen** die Programmiersprache und Plattform oder Technologie aus, und wählen Sie dann im mittleren Bereich eine der verfügbaren Vorlagen aus.  
@@ -95,4 +95,4 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB Gewusst wie: Erstellen von Projektmappen mit mehreren Projekten](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [NIB Gewusst wie: Erstellen von Projektmappen mit mehreren Projekten](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

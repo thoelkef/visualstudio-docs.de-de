@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7e8de7cf7cbdc58e14cfc72c5317a765f46e67ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674809"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "63441105"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] enthält integrierte Barrierefreiheitsfeatures, sodass Sie problemlos über die Tastatur arbeiten und Bildschirmsprachausgaben sowie andere technische Hilfsmittel verwenden können. Dieses Thema enthält einige Vorschläge zum Optimieren der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] für Barrierefreiheit sowie nützliche Tastenkombinationen.  
   
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>Speichern Ihrer IDE-Einstellungen  
- Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnungsschema und andere Einstellungen speichern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnungsschema und andere Einstellungen speichern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>Häufig verwendete Windows-Tastenkombinationen  
  Sie können viele standardmäßige Windows-Tastenkombinationen für Aufgaben in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verwenden. Dazu zählen folgende Tastenkombinationen:  

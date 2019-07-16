@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::EnumFrameInfo
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 466d50f81fe73e0d67e01142568d20cd757ebeea
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fad77ca1d649e7ffdda02c7145dc11666619f232
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320320"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Ruft eine Liste der Stapelrahmen für diesen Thread.
@@ -44,17 +44,14 @@ int EnumFrameInfo ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder von der [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen sind ausgefüllt werden müssen. Geben Sie die `FIF_FUNCNAME_FORMAT` Flag, um den Namen der Funktion in einer einzelnen Zeichenfolge formatieren.
 
- [in] Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder von der [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen sind ausgefüllt werden müssen. Geben Sie die `FIF_FUNCNAME_FORMAT` Flag, um den Namen der Funktion in einer einzelnen Zeichenfolge formatieren.
+`nRadix`\
+[in] Die Basis, die in die numerische Formatierungsinformationen im Enumerator verwendet.
 
- `nRadix`\
-
- [in] Die Basis, die in die numerische Formatierungsinformationen im Enumerator verwendet.
-
- `ppEnum`\
-
- [out] Gibt eine [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Objekt, das eine Liste der enthält [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen, die den Stapelrahmen beschreibt.
+`ppEnum`\
+[out] Gibt eine [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Objekt, das eine Liste der enthält [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen, die den Stapelrahmen beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

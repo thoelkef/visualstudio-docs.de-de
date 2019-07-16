@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960629"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033144"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
@@ -43,7 +43,7 @@ Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  kostenlos herunterladen.
     ::: moniker-end
 
-    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
 * Zum Erstellen des ASP.NET Core-Projekts müssen die Workloads „ASP.NET und Webentwicklung“ und „Plattformübergreifende .NET Core-Entwicklung“ installiert sein.
 
@@ -71,10 +71,10 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, den Namen **client-app** ein, und wählen Sie dann **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#**, und wählen Sie dann **Web** aus. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Webanwendung** und anschließend auf **OK**.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** , und wählen Sie dann **Web** aus. Wählen Sie im mittleren Bereich **ASP.NET Core-Webanwendung** aus, geben Sie den Namen **client-app** ein, und wählen Sie dann **OK** aus.
     ::: moniker-end
 
     Wenn die Projektvorlage **ASP.NET Core-Webanwendung** nicht vorhanden ist, installieren Sie zunächst die Workload **ASP.NET und Webentwicklung** und die Entwicklungsworkload .**NET Core**. Klicken Sie zum Installieren der Workloads auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt** (wählen Sie **Datei** > **Neu** > **Projekt** aus). Der Visual Studio-Installer wird gestartet. Wählen Sie die erforderlichen Workloads aus.
@@ -100,14 +100,14 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
 
 1. Wechseln Sie zur Eingabeaufforderung, und geben Sie als aktuelles Verzeichnis das Stammverzeichnis Ihres Projekts ein.
 
-1. Geben Sie `vue init webpack ClientApp` ein, und führen Sie die entsprechenden Schritte aus, wenn Sie aufgefordert werden, weitere Fragen zu beantworten.
+1. Geben Sie `vue init webpack client-app` ein, und führen Sie die entsprechenden Schritte aus, wenn Sie aufgefordert werden, weitere Fragen zu beantworten.
 
     > [!NOTE]
     > Bei *.vue*-Dateien müssen Sie WebPack oder ein ähnliches Framework mit einem Ladeprogramm für die Konvertierung verwenden. TypeScript und Visual Studio ist nicht bekannt, wie *.vue*-Dateien kompiliert werden. Das Gleiche gilt für die Bündelung. TypeScript ist nicht bekannt, wie ES2015-Module (d. h. `import`- und `export`-Anweisungen) in eine einzige endgültige *.js*-Datei zum Laden im Browser konvertiert werden. Auch in diesem Fall ist WebPack die beste Wahl. Damit dieser Vorgang innerhalb von Visual Studio mithilfe von MSBuild ausgeführt werden kann, müssen Sie mit einer Visual Studio-Vorlage beginnen. Derzeit ist keine ASP.NET-Vorlage für die Vue.js-Entwicklung im Lieferumfang enthalten.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Ändern der Webpack-Konfiguration, sodass die kompilierten Dateien in wwwroot ausgegeben werden
 
-* Öffnen Sie die Datei *./ClientApp/config/index.js*, und ändern Sie `build.index` und `build.assetsRoot` in den wwwroot-Pfad:
+* Öffnen Sie die Datei *./client-app/config/index.js*, und ändern Sie `build.index` und `build.assetsRoot` in den wwwroot-Pfad:
 
     ```js
     // Template for index.html
@@ -117,15 +117,15 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-clientapp-each-time-that-a-build-is-triggered"></a>Angeben des Projekts, um die ClientApp bei jedem Auslösen eines Builds zu erstellen
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Angeben des Projekts, um die Client-App bei jedem Auslösen eines Builds zu erstellen
 
 1. Wechseln Sie in Visual Studio zu **Projekt** > **Eigenschaften** > **Buildereignisse**.
 
-1. Geben Sie `npm --prefix ./ClientApp run build` in der **Befehlszeile für Präbuildereignis** ein.
+1. Geben Sie `npm --prefix ./client-app run build` in der **Befehlszeile für Präbuildereignis** ein.
 
 #### <a name="configure-webpacks-output-module-names"></a>Konfigurieren von Namen für Webpack-Ausgabemodule
 
-* Öffnen Sie die Datei *./ClientApp/build/webpack.base.conf.js*, und fügen Sie der Ausgabeeigenschaft folgende Eigenschaften hinzu:
+* Öffnen Sie die Datei *./client-app/build/webpack.base.conf.js*, und fügen Sie der Ausgabeeigenschaft folgende Eigenschaften hinzu:
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -138,7 +138,7 @@ Für diese Schritte ist vue-cli 3.0 erforderlich, das derzeit als Betaversion vo
 
 1. Wechseln Sie zur Eingabeaufforderung, und geben Sie als aktuelles Verzeichnis das Stammverzeichnis des Projekts ein.
 
-1. Geben Sie `vue create ClientApp` ein, und wählen Sie anschließend **Manually select features** (Features manuell auswählen) aus.
+1. Geben Sie `vue create client-app` ein, und wählen Sie anschließend **Manually select features** (Features manuell auswählen) aus.
 
 1. Wählen Sie zunächst **Typescript** und anschließend weitere gewünschte Optionen aus.
 
@@ -146,11 +146,11 @@ Für diese Schritte ist vue-cli 3.0 erforderlich, das derzeit als Betaversion vo
 
 #### <a name="configure-a-vuejs-project-for-typescript"></a>Konfigurieren eines Vue.js-Projekts für TypeScript
 
-1. Öffnen Sie die Datei *./ClientApp/tsconfig.json*, und fügen Sie `noEmit:true` den Compileroptionen hinzu.
+1. Öffnen Sie die Datei *./client-app/tsconfig.json*, und fügen Sie `noEmit:true` den Compileroptionen hinzu.
 
     Durch Festlegen dieser Option verhindern Sie, dass Ihr Projekt mit jedem Kompilieren in Visual Studio überladen wird.
 
-1. Erstellen Sie als Nächstes die Datei *vue.config.js* file in *./ClientApp/*, und fügen Sie folgenden Code hinzu.
+1. Erstellen Sie als Nächstes die Datei *vue.config.js* file in *./client-app/* , und fügen Sie folgenden Code hinzu.
 
     ```js
     module.exports = {
@@ -169,7 +169,15 @@ Für diese Schritte ist vue-cli 3.0 erforderlich, das derzeit als Betaversion vo
 
 #### <a name="build-with-vue-cli-30"></a>Kompilieren mit vue-cli 3.0
 
-Die Automatisierung des Buildprozesses wird durch einen unbekannten Fehler bei vue-cli 3.0 verhindert. Jedes Mal, wenn Sie den Ordner „wwwroot“ aktualisieren, müssen Sie für den Ordner „ClientApp“ den Befehl `npm run build` ausführen.
+Die Automatisierung des Buildprozesses wird ggf. durch einen unbekannten Fehler bei vue-cli 3.0 verhindert. Jedes Mal, wenn Sie den Ordner „wwwroot“ aktualisieren, müssen Sie für den Ordner „client-app“ den Befehl `npm run build` ausführen.
+
+Alternativ können Sie das vue-cli 3.0-Projekt mithilfe der ASP.NET-Projekteigenschaften als Präbuildereignis erstellen. Klicken Sie mit der rechten Maustaste auf das Projekt. Wählen Sie **Eigenschaften**, und fügen Sie die folgenden Befehle auf der Registerkarte **Build** im Textfeld **Befehlszeile für Präbuildereignis** ein.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -179,7 +187,7 @@ Die Automatisierung des Buildprozesses wird durch einen unbekannten Fehler bei v
 * TypeScript erkennt *VUE*-Dateien nicht als Module. Sie benötigen eine Datei, die Code wie etwa den folgenden enthält, um TypeScript mitzuteilen, wie *VUE*-Dateien aussehen (diese Datei ist in der vue-cli 3.0-Vorlage bereits enthalten).
 
     ```js
-    // ./ClientApp/vue-shims.d.ts
+    // ./client-app/vue-shims.d.ts
     declare module "*.vue" {
         import Vue from "vue";
         export default Vue;

@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a09f32f90ffca081fb8bf405f5d661160e8d4adf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427113"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686366"
 ---
 # <a name="trusted-application-deployment-overview"></a>Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
   
 - Der <xref:System.Security.Cryptography?displayProperty=fullName> -Namespace.  
   
-- CertMgr.exe, eine Komponente von Internet Explorer und daher unter Windows 98 und allen späteren Versionen vorhanden. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, eine Komponente von Internet Explorer und daher unter Windows 98 und allen späteren Versionen vorhanden. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Erstellen einer ClickOnce-Anwendung  
  Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung ist eine [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] -Clientanwendung kombiniert mit Manifestdateien, die die Anwendung beschreiben und Installationsparameter angegeben. Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]enthalten sind, generieren. Weitere Informationen zum [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
@@ -88,12 +88,12 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
  Die Bereitstellung einer vertrauenswürdigen Anwendung gilt für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]und kann nur mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen verwendet werden.  
   
 ### <a name="sign-the-deployment"></a>Signieren der Bereitstellung  
- Nachdem Sie das Zertifikat erhalten haben, müssen Sie damit Ihre Bereitstellung signieren. Bei der Bereitstellung der Anwendung mithilfe des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Webpublishing-Assistenten generiert der Assistent automatisch ein Testzertifikat für Sie, wenn Sie kein Zertifikat selbst angegeben haben. Sie können auch das [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektdesignerfenster verwenden, allerdings um ein von einer Zertifizierungsstelle ausgestelltes Zertifikat bereitzustellen.  Weitere Informationen hierzu finden Sie auch unter [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) oder [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
+ Nachdem Sie das Zertifikat erhalten haben, müssen Sie damit Ihre Bereitstellung signieren. Bei der Bereitstellung der Anwendung mithilfe des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Webpublishing-Assistenten generiert der Assistent automatisch ein Testzertifikat für Sie, wenn Sie kein Zertifikat selbst angegeben haben. Sie können auch das [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektdesignerfenster verwenden, allerdings um ein von einer Zertifizierungsstelle ausgestelltes Zertifikat bereitzustellen.  Weitere Informationen hierzu finden Sie auch unter [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) oder [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
   
 > [!CAUTION]
 > Es wird davon abgeraten, die Anwendung mit einem Testzertifikat bereitzustellen.  
   
- Sie können die Anwendung auch mit den SDK-Tools "Mage.exe" oder "MageUI.exe" signieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Eine vollständige Liste der Befehlszeilenoptionen zur bereitstellungssignierung finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+ Sie können die Anwendung auch mit den SDK-Tools "Mage.exe" oder "MageUI.exe" signieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Eine vollständige Liste der Befehlszeilenoptionen zur bereitstellungssignierung finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ### <a name="publish-the-application"></a>Veröffentlichen der Anwendung  
  Sobald Sie Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Manifeste signiert haben, kann die Anwendung am Installationsspeicherort veröffentlichen. Der Installationsspeicherort kann ein Webserver, eine Dateifreigabe oder die lokale Festplatte sein. Wenn ein Client zum ersten Mal auf das Bereitstellungsmanifest zugreift, muss der Trust-Manager auswählen, ob der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung durch einen installierten vertrauenswürdigen Herausgeber die Berechtigung erteilt wurde, auf einer höheren Vertrauensebene ausgeführt zu werden. Der Trust-Manager trifft diese Auswahl durch Vergleichen des Zertifikats zum Signieren der Bereitstellung mit den Zertifikaten im Speicher des vertrauenswürdigen Herausgebers des Clients. Wenn der Trust-Manager eine Übereinstimmung findet, wird die Anwendung mit hoher Vertrauenswürdigkeit ausgeführt.  
@@ -105,5 +105,5 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
  Sie können die Bereitstellung einer vertrauenswürdigen Anwendung verwenden, um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen, die über das Internet oder über eine unternehmensweite Dateifreigabe bereitgestellt werden, eine erhöhte Vertrauensstellung zu gewähren. Sie müssen keine Bereitstellung einer vertrauenswürdigen Anwendung für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen verwenden, die auf einer CD verteilt werden, da diese Anwendungen standardmäßig die volle Vertrauenswürdigkeit erhalten haben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

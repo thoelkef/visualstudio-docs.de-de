@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861692"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342174"
 ---
 # <a name="command-design"></a>Befehlsentwurf
 Wenn Sie einen Befehl für ein VSPackage hinzufügen, müssen Sie angeben, in dem es angezeigt werden, wenn es verfügbar ist, und wie sie behandelt werden.

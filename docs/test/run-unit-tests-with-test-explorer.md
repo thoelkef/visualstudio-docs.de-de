@@ -1,6 +1,6 @@
 ---
 title: Ausführen und Debuggen von Komponententests mit dem Test-Explorer
-description: Erfahren Sie, wie Sie Tests mit dem Test-Explorer in Visual Studio ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
+description: Erfahren Sie, wie Sie mit dem Test-Explorer in Visual Studio Tests ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946086"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747776"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -23,7 +23,7 @@ Verwenden Sie den **Test-Explorer** zum Ausführen von Komponententests von Visu
 
 Visual Studio enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch systemeigenen Code. Im **Test-Explorer** kann jedoch auch jedes Komponententest-Framework mit implementiertem Test-Explorer-Adapter ausgeführt werden. Weitere Informationen zum Installieren von Komponententest-Frameworks von Drittanbietern finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
 
-Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Für Testprojekte können verschiedene Komponententest-Frameworks verwendet werden. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder ebenfalls auf .NET Framework abzielenden Sprache geschrieben werden, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ ](writing-unit-tests-for-c-cpp.md).
+Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Für Testprojekte können verschiedene Komponententest-Frameworks verwendet werden. Wenn der zu testende Code für .NET geschrieben wird, kann das Testprojekt in jeder Sprache geschrieben werden, die ebenfalls auf .NET abzielt, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ ](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Ausführen von Tests im Test-Explorer
 
@@ -58,7 +58,7 @@ Während der Testausführung wird die oben im Fenster **Test-Explorer** angezeig
 |![Nach Build ausführen](../test/media/ute_runafterbuild_btn.png)|Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü auf **Test** und anschließend in der Symbolleiste **Test-Explorer** auf **Nach dem Buildvorgang Tests ausführen**.|
 
 > [!NOTE]
-> Das Ausführen von Komponententests nach jedem Buildvorgang erfordert Visual Studio Enterprise Edition.
+> Zum Ausführen von Komponententests nach jedem Buildvorgang benötigen Sie Visual Studio 2017 Enterprise oder Visual Studio 2019. In Visual Studio-2019 ist die Lösung in Community und Professional sowie Enterprise enthalten.
 
 ## <a name="view-test-results"></a>Testergebnisse anzeigen
 
@@ -200,7 +200,7 @@ MIthilfe des Codeabdeckungstools von Visual Studio können Sie die Menge des Pro
 
 Ausführen des Codeabdeckungstools für Testmethoden in einer Projektmappe:
 
-1. Wählen Sie im Visual Studio-Menü **Tests** und anschließend **Codeabdeckung analysieren**aus.
+1. Wählen Sie in der obersten Menüleiste **Tests** und anschließend **Code Coverage analysieren**aus.
 
 2. Wählen Sie in Untermenü einen der folgenden Befehle aus:
 

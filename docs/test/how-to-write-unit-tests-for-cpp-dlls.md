@@ -1,18 +1,18 @@
 ---
 title: Schreiben von Komponententests für C++-DLLs
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821047"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132166"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
@@ -56,17 +56,25 @@ ms.locfileid: "62821047"
 
   1. Erstellen Sie ein natives Komponententestprojekt.
 
-      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt**.
+      ::: moniker range="vs-2019"
 
-  2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Testprojekt, und klicken Sie auf **Verweise**. Das Projektfenster **Eigenschaften** wird geöffnet.
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
 
-  3. Klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise** und anschließend auf die Schaltfläche **Neuen Verweis hinzufügen**.
+      ::: moniker-end
 
-  4. Wählen Sie **Projekte** und dann das zu testende Projekt aus.
+      ::: moniker range="vs-2017"
+
+      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+
+      ::: moniker-end
+
+  1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Testprojekt, und wählen Sie anschließend **Hinzufügen** > **Verweis** aus.
+
+  1. Wählen Sie **Projekte** und dann das zu testende Projekt aus.
 
        Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
-  5. Fügen Sie in den Eigenschaften des Testprojekts den Speicherort des zu testenden Projekts den Includeverzeichnissen hinzu.
+  1. Fügen Sie in den Eigenschaften des Testprojekts den Speicherort des zu testenden Projekts den Includeverzeichnissen hinzu.
 
        Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse** > **Includeverzeichnisse**.
 
@@ -80,7 +88,17 @@ ms.locfileid: "62821047"
 
   1. Erstellen Sie ein natives Komponententestprojekt.
 
-      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **Natives Komponententestprojekt**.
+      ::: moniker range="vs-2019"
+
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+
+      ::: moniker-end
 
   2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Testprojekts, und klicken Sie auf **Eigenschaften**.
 

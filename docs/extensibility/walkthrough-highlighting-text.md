@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7ae97c500ced1da67013fd6f12307edc0828dbf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445002"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312469"
 ---
 # <a name="walkthrough-highlight-text"></a>Exemplarische Vorgehensweise: Hervorheben von text
 Sie können unterschiedliche optische Effekte auf den Editor hinzufügen, durch das Erstellen von Komponenten des Managed Extensibility Framework (MEF). Diese exemplarische Vorgehensweise veranschaulicht das jedes Vorkommen des aktuellen Worts in einer Textdatei zu markieren. Wenn ein Wort mehr als einmal in eine Textdatei tritt, und Sie die Einfügemarke in einem Vorkommen positionieren, wird jedes Vorkommen hervorgehoben.

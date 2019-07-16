@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricString
 - GetMetricString
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3fdfd604f28f6657b27ef0e81ca4ce5855d97df
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 119fa1ac0f90cd6ebef22633130a3683c039a204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457290"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321970"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Ruft den Wert der Metrik anhand des Namens ab.
@@ -45,21 +45,17 @@ private int GetMetricString(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszType`\
+`pszType`\
+[in] Der Typ der Metrik.
 
- [in] Der Typ der Metrik.
+`guidSection`\
+[in] Eindeutiger Bezeichner des Abschnitts.
 
- `guidSection`\
+`pszMetric`\
+[in] Der Name der Metrik.
 
- [in] Eindeutiger Bezeichner des Abschnitts.
-
- `pszMetric`\
-
- [in] Der Name der Metrik.
-
- `pbstrValue`\
-
- [out] Gibt die Zeichenfolge den Wert der Metrik zurück.
+`pbstrValue`\
+[out] Gibt die Zeichenfolge den Wert der Metrik zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

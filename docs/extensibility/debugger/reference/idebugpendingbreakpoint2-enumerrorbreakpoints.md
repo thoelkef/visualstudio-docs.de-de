@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints method
 - EnumErrorBreakpoints method
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3030eb1a272b7142d942c05d3320c67c51f2bd90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba93cf1e254f428261c2eaf2e144ad5dff4780ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872181"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333734"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 Ruft eine Liste aller Fehler Haltepunkte, die von diesem ausstehender Haltepunkt geführt haben.
@@ -39,14 +42,12 @@ int EnumErrorBreakpoints( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `bpErrorType`
+## <a name="parameters"></a>Parameter
+`bpErrorType`\
+[in] Eine Kombination von Werten aus der [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) -Enumeration, die wählt den Typ von Fehlern, die aufgelistet werden.
 
- [in] Eine Kombination von Werten aus der [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) -Enumeration, die wählt den Typ von Fehlern, die aufgelistet werden.
-
- `ppEnum`
-
- [out] Gibt eine [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) -Objekt, das eine Liste der enthält [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekte.
+`ppEnum`\
+[out] Gibt eine [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) -Objekt, das eine Liste der enthält [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Objekte.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.

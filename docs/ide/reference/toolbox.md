@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945458"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747681"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 
@@ -33,7 +33,7 @@ Toolbox wird in Verbindung mit Entwurfsansichten angezeigt, wie der Designansich
 > [!NOTE]
 > Bei einigen Projekttypen werden in **Toolbox** möglicherweise keine Elemente angezeigt.
 
-Die in Ihrem Projekt verwendete .NET Framework-Version wirkt sich auch auf die Gruppe von Steuerelementen aus, die in Toolbox angezeigt wird. Für Ihr Projekt können Sie eine andere .NET Framework-Version als Zielversion über die Eigenschaftenseiten des Projekts festlegen. Wählen Sie den Projektknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Projektname-Eigenschaften**. Verwenden Sie auf der Registerkarte **Anwendung** die Dropdownliste **Zielframework**.
+Die .NET-Version, auf die Ihr Projekt ausgerichtet ist, wirkt sich auch auf die Gruppe der Steuerelemente aus, die in Toolbox angezeigt wird. Sie können die Frameworkzielversion bei Bedarf über die Eigenschaftenseite des Projekts ändern. Wählen Sie den Projektknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Projektname-Eigenschaften**. Verwenden Sie auf der Registerkarte **Anwendung** die Dropdownliste **Zielframework**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Verwalten des Toolbox-Fensters und dessen Steuerelemente
 

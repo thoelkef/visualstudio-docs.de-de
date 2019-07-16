@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428270"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825656"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronisierte Einstellungen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ Wenn Sie dasselbe Personalisierungskonto verwenden, um sich auf mehreren Compute
 ## <a name="synchronized-settings"></a>Synchronisierte Einstellungen
  Standardmäßig werden die folgenden Einstellungen synchronisiert:
 
-- Entwicklungseinstellungen (Sie müssen eine Reihe von Einstellungen auswählen, wenn Sie Visual Studio zum ersten Mal ausführen; die Auswahl kann jedoch jederzeit geändert werden. Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio (Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Entwicklungseinstellungen (Sie müssen eine Reihe von Einstellungen auswählen, wenn Sie Visual Studio zum ersten Mal ausführen; die Auswahl kann jedoch jederzeit geändert werden. Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio (Anpassen der Entwicklungseinstellungen in Visual Studio)](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
 - Im Folgenden finden Sie die Optionen auf den Seiten **Tools &#124; Optionen**:
 
-    - **Design** und Menüleisten-Schreibweiseneinstellungen auf der Optionsseite **Umgebung** > **Allgemein**
+  - **Design** und Menüleisten-Schreibweiseneinstellungen auf der Optionsseite **Umgebung** > **Allgemein**
 
-    - Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**
+  - Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**
 
-    - Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**
+  - Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**
 
-    - Alle Einstellungen auf der Optionsseite **Umgebung, Registerkarten und Fenster**
+  - Alle Einstellungen auf der Optionsseite **Umgebung, Registerkarten und Fenster**
 
-    - Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**
+  - Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**
 
-    - Alle Einstellungen auf den Optionsseiten des **Text-Editors**
+  - Alle Einstellungen auf den Optionsseiten des **Text-Editors**
 
 - Alle Einstellungen auf den Optionsseiten für den XAML-Designer
 

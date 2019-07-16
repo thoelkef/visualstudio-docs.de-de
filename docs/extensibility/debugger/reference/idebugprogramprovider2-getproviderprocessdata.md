@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProcessData
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: bee54c3876c2de1be0754a74b429e6d24b80b738
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459007"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325025"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Ruft eine Liste von gerade ausgeführten Programmen von einem angegebenen Prozess.
@@ -48,9 +48,8 @@ int GetProviderProcessData(
 ```
 
 ## <a name="parameters"></a>Parameter
- `Flags`\
-
- [in] Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
+`Flags`\
+[in] Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
 
 |Flag|Beschreibung|
 |----------|-----------------|
@@ -59,21 +58,17 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Aufrufer wurde angefügt, aber nicht vom Debugger gestartet.|
 |`PFLAG_GET_PROGRAM_NODES`|Aufrufer werden eine Liste der programmknoten gefragt, zurückgegeben werden.|
 
- `pPort`\
+`pPort`\
+[in] Der Port der aufrufende Prozess ausgeführt wird.
 
- [in] Der Port der aufrufende Prozess ausgeführt wird.
+`processId`\
+[in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der betreffenden die ID des Prozesses, der das Programm enthält.
 
- `processId`\
+`EngineFilter`\
+[in] Ein Array von GUIDs für die Debug-Engines, die diesen Prozess zu debuggen (diese werden verwendet, Filtern die Programme, die tatsächlich zurückgegeben werden, basierend auf was die angegebenen Module unterstützen; Wenn keine Module angegeben werden, und klicken Sie dann alle Programme zurückgegeben werden) zugewiesen werden soll.
 
- [in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der betreffenden die ID des Prozesses, der das Programm enthält.
-
- `EngineFilter`\
-
- [in] Ein Array von GUIDs für die Debug-Engines, die diesen Prozess zu debuggen (diese werden verwendet, Filtern die Programme, die tatsächlich zurückgegeben werden, basierend auf was die angegebenen Module unterstützen; Wenn keine Module angegeben werden, und klicken Sie dann alle Programme zurückgegeben werden) zugewiesen werden soll.
-
- `pProcess`\
-
- [out] Ein [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) -Struktur, die mit den geforderten Informationen gefüllt wird.
+`pProcess`\
+[out] Ein [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) -Struktur, die mit den geforderten Informationen gefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842703"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308867"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Ruft den Wert als eine Reihe von aufeinander folgenden Bytes gezeigt wird.
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `dwStart`
+## <a name="parameters"></a>Parameter
+`dwStart`\
+[in] Ein Offset in Bytes vom Beginn des Objekts auf den verwiesen wird.
 
- [in] Ein Offset in Bytes vom Beginn des Objekts auf den verwiesen wird.
+`dwCount`\
+[in] Die Anzahl der abzurufenden Bytes.
 
- `dwCount`
+`pBytes`\
+[in, out] Ein Array, das mit dem Wert als eine Reihe von aufeinander folgenden Bytes gefüllt ist, auf die am angegebenen Offset aus dem Objekt ab.
 
- [in] Die Anzahl der abzurufenden Bytes.
-
- `pBytes`
-
- [in, out] Ein Array, das mit dem Wert als eine Reihe von aufeinander folgenden Bytes gefüllt ist, auf die am angegebenen Offset aus dem Objekt ab.
-
- `pdwBytes`
-
- [out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
+`pdwBytes`\
+[out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

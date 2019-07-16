@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über den in Ihrem Visual Studio-Abonnement enthaltenen Enterprise Mobility + Security-Vorteil.
 searchscope: VS Subscription
-ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 053e7463bbbe3649eaed20fa42b80f91c745b8cb
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948881"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032152"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) in Visual Studio-Abonnements
 
@@ -58,7 +58,6 @@ Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereit
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
-| Visual Studio Dev Essentials | Nicht zutreffend  | Nicht verfügbar |Nicht zutreffend |
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services (Developer), BizSpark.  Umfasst nicht: Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
 

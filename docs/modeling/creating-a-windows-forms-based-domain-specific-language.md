@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438181"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821391"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
-Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form an einer DSL, die mit dem Visual Studio-Visualisierungs und Modellierungs-SDK.
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Erstellen Sie eine Windows Forms-basierten domänenspezifischen Sprache
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) ein DSL-Instanz, eine Windows-Formular-Benutzeroberfläche und den Modell-Explorer angezeigt.
+Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form auf eine DSL mithilfe der Visual Studio-Visualisierungs und Modellierungs-SDK.
 
-## <a name="creating-a-windows-forms-dsl"></a>Erstellen einer Windows Forms-DSL
- Die **minimaler WinForm-Designer** DSL-Vorlage erstellt eine minimale DSL, die Sie ändern können, um Ihre eigenen Anforderungen anpassen.
+Die folgende Abbildung zeigt eine Windows-Formular-Benutzeroberfläche und den Modell-Explorer für eine DSL-Instanz:
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>Um eine minimale WinForms-DSL erstellen
+![DSL-Instanz in Visual Studio](../modeling/media/dsl-wpf-2.png)
+
+## <a name="create-a-windows-forms-dsl"></a>Erstellen einer Windows Forms-DSL
+
+Die **minimaler WinForm-Designer** DSL-Vorlage erstellt eine minimale DSL, die Sie ändern können, um Ihre eigenen Anforderungen anpassen.
 
 1. Erstellen Sie eine DSL aus der **minimaler WinForm-Designer** Vorlage.
 
@@ -37,7 +39,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
    1. Transformieren Sie alle Vorlagen.
 
-   2. Erstellen und Ausführen des Beispiels (**STRG + F5**).
+   2. Erstellen und Ausführen des Beispiels (**STRG**+**F5**).
 
    3. Öffnen Sie in der experimentellen Instanz von Visual Studio die `Sample` Datei im Projekt debuggen.
 
@@ -57,19 +59,19 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 - Die `UI` -Projekt enthält ein funktionstüchtiges Beispiel ein Formularsteuerelement gebunden an die DSL. Es funktioniert jedoch nicht, wenn Sie der DSL-Definition geändert haben. Die `UI` -Projekt enthält:
 
-    - Eine Windows Forms-Klasse, die mit dem Namen `ModelViewControl`.
+  - Eine Windows Forms-Klasse, die mit dem Namen `ModelViewControl`.
 
-    - Eine Datei namens `DataBinding.cs` , enthält eine weitere partielle Definition der `ModelViewControl`. Um seinen Inhalt anzuzeigen **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei, und wählen Sie **Ansichtscode**.
+  - Eine Datei namens `DataBinding.cs` , enthält eine weitere partielle Definition der `ModelViewControl`. Um seinen Inhalt anzuzeigen **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei, und wählen Sie **Ansichtscode**.
 
 ### <a name="about-the-ui-project"></a>Über das UI-Projekt
- Wenn Sie die DSL-Definitionsdatei definieren Ihrer eigenen DSL aktualisieren, müssen beim Aktualisieren des Steuerelements in der `UI` Projekts, der Ihre DSL angezeigt. Im Gegensatz zu den `Dsl` und `DslPackage` -Projekten, das Beispiel `UI` Projekt wird nicht von generiert `DslDefinitionl.dsl`. Sie können die TT-Dateien, um den Code generieren, wenn Sie möchten, obwohl, die in dieser exemplarischen Vorgehensweise nicht behandelt wird hinzufügen.
 
-## <a name="updating-the-dsl-definition"></a>Aktualisieren der DSL-Definition
- Die folgenden, die die DSL-Definition in dieser exemplarischen Vorgehensweise verwendet wird.
+Wenn Sie die DSL-Definitionsdatei definieren Ihrer eigenen DSL aktualisieren, müssen beim Aktualisieren des Steuerelements in der `UI` Projekts, der Ihre DSL angezeigt. Im Gegensatz zu den `Dsl` und `DslPackage` -Projekten, das Beispiel `UI` Projekt wird nicht von generiert `DslDefinitionl.dsl`. Sie können die TT-Dateien, um den Code generieren, wenn Sie möchten, obwohl, die in dieser exemplarischen Vorgehensweise nicht behandelt wird hinzufügen.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>Aktualisieren der DSL-definition
 
-#### <a name="to-update-the-dsl-definition"></a>Die DSL-Definition aktualisieren
+Die folgenden, die die DSL-Definition in dieser exemplarischen Vorgehensweise verwendet wird.
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Öffnen Sie "DslDefinition.DSL" in der DSL-Designer an.
 
@@ -107,10 +109,11 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
     > [!NOTE]
     > In dieser Phase werden die anderen Projekte nicht fehlerfrei erstellt. Allerdings möchten wir die Dsl-Projekt erstellen, damit die Assembly für die Datenquellen-Assistenten verfügbar ist.
 
-## <a name="updating-the-ui-project"></a>Aktualisieren das UI-Projekt
- Jetzt können Sie ein neues Benutzersteuerelement erstellen, das die Informationen angezeigt werden, die in das DSL-Modell gespeichert ist. Die einfachste Möglichkeit, die das Benutzersteuerelement mit dem Modell hergestellt wird, über datenbindungen. Die Adaptertyp mit dem Namen für die Datenbindung **ModelingBindingSource** wurde speziell für die Verbindung nicht VMSDK-Schnittstellen mit DSLs.
+## <a name="update-the-ui-project"></a>Aktualisieren Sie das UI-Projekt
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>Definieren Sie Ihre DSL-Modell als Datenquelle
+Jetzt können Sie ein neues Benutzersteuerelement erstellen, das die Informationen angezeigt werden, die in das DSL-Modell gespeichert ist. Die einfachste Möglichkeit, die das Benutzersteuerelement mit dem Modell hergestellt wird, über datenbindungen. Die Adaptertyp mit dem Namen für die Datenbindung **ModelingBindingSource** wurde speziell für die Verbindung nicht VMSDK-Schnittstellen mit DSLs.
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>Definieren Sie Ihre DSL-Modell als Datenquelle
 
 1. Auf der **Daten** Menü wählen **Datenquellen anzeigen**.
 
@@ -128,7 +131,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>Um Ihr Modell zu einem Formular verbinden
+### <a name="connect-your-model-to-a-form"></a>Verbinden Sie Ihr Modell zu einem Formular
 
 1. In der **UI** Projekt, löschen Sie alle vorhandenen cs-Dateien.
 
@@ -151,7 +154,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
    > [!NOTE]
    > Ein alternativer Schritt werden die Tiere und Felder Elemente aus dem Fenster Datenquellen auf das Steuerelement ziehen. Dadurch wird automatisch erstellt, Datenraster und Bindungen zwischen der Rasteransicht und der Datenquelle. Allerdings funktioniert diese Bindung nicht für DSLs ordnungsgemäß. Aus diesem Grund ist es besser, erstellen Sie das Datenraster und Bindungen manuell.
 
-7. Wenn keine die Toolbox enthält die **ModelingBindingSource** tool, fügen Sie es hinzu. Im Kontextmenü von der **Daten** Registerkarte **Elemente auswählen**. In der **Toolboxelemente** wählen Sie im Dialogfeld **ModelingBindingSource** aus der **Registerkarte ".NET Framework"**.
+7. Wenn keine die Toolbox enthält die **ModelingBindingSource** tool, fügen Sie es hinzu. Im Kontextmenü von der **Daten** Registerkarte **Elemente auswählen**. In der **Toolboxelemente** wählen Sie im Dialogfeld **ModelingBindingSource** aus der **.NET Framework** Registerkarte.
 
 8. Verwenden der Toolbox, erstellen Sie zwei Instanzen von **ModelingBindingSource**, und nennen Sie diese `AnimalBinding` und `FieldBinding`.
 
@@ -173,7 +176,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
   ![DslWpf4](../modeling/media/dslwpf4.png) Schema von Links zwischen Datenquellen und Ansichten.
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>Die Bindungen für die DSL abgeschlossen
+### <a name="complete-the-bindings-to-the-dsl"></a>Führen Sie die Bindungen für die DSL
 
 1. Fügen Sie den folgenden Code in einer separaten Codedatei in die **UI** Projekt:
 
@@ -207,10 +210,9 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>Testen die DSL
- Die DSL-Projektmappe kann nun erstellen und ausführen, auch wenn Sie weitere Verbesserungen später hinzufügen möchten.
+## <a name="test-the-dsl"></a>Testen der DSL
 
-#### <a name="to-test-the-dsl"></a>So testen Sie die DSL
+Die DSL-Projektmappe kann nun erstellen und ausführen, auch wenn Sie weitere Verbesserungen später hinzufügen möchten.
 
 1. Erstellen Sie die Projektmappe, und führen Sie sie aus.
 
@@ -229,13 +231,13 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
      Wenn Sie jedes Feld in der Form, die entsprechenden eigenschaftenänderungen im Eigenschaftenfenster verlassen.
 
-## <a name="enhancing-the-dsl"></a>Erweitern die DSL
+## <a name="enhance-the-dsl"></a>Verbessern Sie die DSL
 
-#### <a name="to-make-the-properties-update-immediately"></a>Zu den Eigenschaften, die sofort zu aktualisieren
+### <a name="make-the-properties-update-immediately"></a>Stellen Sie die Eigenschaften, die sofort zu aktualisieren
 
 1. Wählen Sie in der Entwurfsansicht des FarmControl.cs z. B. Name, Größe oder IsOrganic ein einfaches Feld.
 
-2. Erweitern Sie im Eigenschaftenfenster **DataBindings** , und öffnen Sie **(Erweitert)**.
+2. Erweitern Sie im Eigenschaftenfenster **DataBindings** , und öffnen Sie **(Erweitert)** .
 
      In der **Formatierung und erweiterte Bindung** Dialogfeld unter **Datenquellen-Aktualisierungsmodus**, wählen Sie **OnPropertyChanged**.
 
@@ -243,7 +245,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
      Überprüfen Sie, wenn Sie den Inhalt des Felds, die entsprechende Eigenschaft von der Farm modelländerungen sofort ändern.
 
-#### <a name="to-provide-add-buttons"></a>Bereitstellen von Schaltflächen
+### <a name="provide-add-buttons"></a>Geben Sie Schaltflächen
 
 1. Verwenden Sie in der Entwurfsansicht des FarmControl.cs die Toolbox zum Erstellen einer Schaltfläche auf dem Formular ein.
 
@@ -301,7 +303,8 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Über den Code für ein Element hinzufügen
- Für das neue Element-Schaltflächen ist die folgende alternative Code etwas einfacher.
+
+Für das neue Element-Schaltflächen ist die folgende alternative Code etwas einfacher.
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,12 +317,12 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- Dieser Code ist jedoch kein Standardname für das neue Element festlegen. Er wird nicht ausgeführt, jeder benutzerdefinierten zusammenführen, die Sie möglicherweise im definiert haben die **Elementmerge-Anweisungen** der DSL, und es wird nicht ausgeführt, jeder benutzerdefinierten Merge-Code, der möglicherweise definiert wurden.
+Dieser Code ist jedoch kein Standardname für das neue Element festlegen. Er wird nicht ausgeführt, jeder benutzerdefinierten zusammenführen, die Sie möglicherweise im definiert haben die **Elementmerge-Anweisungen** der DSL, und es wird nicht ausgeführt, jeder benutzerdefinierten Merge-Code, der möglicherweise definiert wurden.
 
- Aus diesem Grund empfehlen wir die Verwendung <xref:Microsoft.VisualStudio.Modeling.ElementOperations> neue Elemente erstellen. Weitere Informationen finden Sie unter [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md).
+Aus diesem Grund empfehlen wir die Verwendung <xref:Microsoft.VisualStudio.Modeling.ElementOperations> neue Elemente erstellen. Weitere Informationen finden Sie unter [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
+- [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

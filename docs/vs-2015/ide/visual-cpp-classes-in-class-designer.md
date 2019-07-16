@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696402"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.  
   
- Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [(NOTINBUILD) Mehrfachvererbung](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) und [Mehrere Basisklassen](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [(NOTINBUILD) Mehrfachvererbung](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) und [Mehrere Basisklassen](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Abstrakte Klassen  
  Der Klassen-Designer unterstützt abstrakte Klassen (auch als „abstrakte Basisklassen“ bezeichnet). Dies sind Klassen, die nicht instanziiert, aber von denen andere Klassen abgeleitet werden können. Wenn Sie ein Beispiel aus „Mehrfachvererbungs“ weiter oben in diesem Dokument verwenden, können Sie womöglich die `Bird`-Klasse als einzelne Objekte wie folgt instanziieren:  
@@ -121,7 +121,7 @@ typedef struct
   
  Strukturen können auch anonym sein. Der Klassen-Designer werden anonyme Klassen und Strukturen auf die gleiche Weise wie der entsprechende Typ angezeigt. Obwohl Sie anonyme Klassen und Strukturen deklarieren und anzeigen können, verwendet der Klassen-Designer nicht den von Ihnen angegebenen Tagnamen. Es wird der Name verwendet, der von der Klassenansicht generiert wird. Die Klasse oder Struktur wird in der Klassenansicht und im Klassen-Designer als ein Element namens **__unnamed** angezeigt.  
   
- Weitere Informationen zu anonymen Klassen finden Sie unter [Anonyme Klassentypen](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Weitere Informationen zu anonymen Klassen finden Sie unter [Anonyme Klassentypen](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Vorlagenklassen  
  Der Klassen-Designer unterstützt die Visualisierung von Vorlagenklassen. Geschachtelte Deklarationen werden unterstützt. Die folgende Tabelle zeigt einige Standarddeklarationen.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Visual C++-Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Klassen und Strukturen](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Anonyme Klassentypen](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Mehrfache Vererbung](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Mehrere Basisklassen](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Vorlagen](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Klassen und Strukturen](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Anonyme Klassentypen](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) Mehrfache Vererbung](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Mehrere Basisklassen](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Vorlagen](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

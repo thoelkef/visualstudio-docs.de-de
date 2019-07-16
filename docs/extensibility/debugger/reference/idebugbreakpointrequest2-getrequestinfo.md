@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90e813bd12a5dbdbe98f2cd0032e6c79ada37159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876828"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352899"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Ruft ab, der diese Anforderung Breakpoint beschreibt Informationen zu den Haltepunkt.
@@ -38,14 +41,12 @@ int GetRequestInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `dwFields`
+## <a name="parameters"></a>Parameter
+`dwFields`\
+[in] Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) -Enumeration, der bestimmt, welche Felder in der `pBPRequestInfo` sind, dass Parameter ausgefüllt werden müssen.
 
- [in] Eine Kombination von Flags aus der [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) -Enumeration, der bestimmt, welche Felder in der `pBPRequestInfo` sind, dass Parameter ausgefüllt werden müssen.
-
- `pBPRequestInfo`
-
- [out] Gibt an, die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur, die sich mit der Beschreibung der Haltepunkt Anforderung gefüllt werden.
+`pBPRequestInfo`\
+[out] Gibt an, die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur, die sich mit der Beschreibung der Haltepunkt Anforderung gefüllt werden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

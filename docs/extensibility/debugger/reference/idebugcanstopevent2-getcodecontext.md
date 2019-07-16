@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::GetCodeContext
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d11a8a5bf3a0fc66487b8a0e58cd98aefdbd255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f5b43a685bcaadccdac1d12ffce2df578a842ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922977"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350083"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 Ruft ab, der Codekontext, der den Speicherort der dieses Ereignis beschreibt.
@@ -36,10 +39,9 @@ int GetCodeContext( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppCodeContext`
-
- [out] Gibt die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das den aktuellen Speicherort darstellt.
+## <a name="parameters"></a>Parameter
+`ppCodeContext`\
+[out] Gibt die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das den aktuellen Speicherort darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -27,7 +27,7 @@ Die **Gehe zu**-Befehle von Visual Studio führen eine zielgerichtete Suche in I
 
 Eingabe | Funktion
 ------------ | ---
-**Tastatur** | Drücken Sie **STRG**+**T** oder **STRG**+**,**
+**Tastatur** | Drücken Sie **STRG**+**T** oder **STRG**+ **,**
 **Maus** | Klicken Sie auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen**.
 
 Ein kleines Fenster wird oben rechts in Ihrem Code-Editor angezeigt.
@@ -38,7 +38,7 @@ Während der Eingabe in das Textfeld werden die Ergebnisse in einer Dropdownlist
 
 ![Fenster "Navigieren zu"](../ide/media/vside_navigatetowindow.png)
 
-Sie können auch ein Fragezeichen (**?**) eingeben, um weitere Hilfe anzufordern.
+Sie können auch ein Fragezeichen ( **?** ) eingeben, um weitere Hilfe anzufordern.
 
 ![Gehe zu allen: Hilfe](media/go-to-all-help.png)
 

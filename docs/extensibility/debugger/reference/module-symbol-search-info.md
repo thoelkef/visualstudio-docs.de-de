@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e374860bcd80f0a199e5dc55b4b556d94d99aba6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c521ebe321813013b83a951d4d2aa5f60fd1646d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460929"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346616"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -46,11 +46,9 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>Member
 
 `dwValidFields`\
-
 Eine Kombination von Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) -Enumeration, die die Art der Suche Informationen, die in dieser Struktur beschriebenen angibt.
 
 `bstrVerboseSearchInfo`\
-
 Suchpfad und Ergebnisse in einer einzelnen Zeichenfolge verkettet.
 
 ## <a name="remarks"></a>Hinweise

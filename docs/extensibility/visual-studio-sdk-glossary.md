@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838905"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322407"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK-Glossar
 In diesem Glossar enthält Definitionen für Begriffe, die in dienen der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Dokumentation.
@@ -73,7 +73,7 @@ In diesem Glossar enthält Definitionen für Begriffe, die in dienen der [!INCLU
 
   unabhängige auf oberster Ebene eine Komponente, die ein nicht modales Fenster der obersten Ebene verwendet und kann als eigenständige Anwendungsfenster effektiv eingesetzt, aber als in-Process-Objekt implementiert wird. Aus diesem Grund muss eine unabhängige auf oberster Ebene Komponente modalitäts- und nachrichtenschleifendienste mit der IDE koordinieren. In-Process-Objekte haben keine eigene Meldungsschleife.
 
-  Informationsanbieter der Informationsanbieter ist ein Modul, kann nach Schlüsselwörtern suchen und zurückgeben eine Liste der Themen, in Form von `IVsUserContextItem` Objekte. Zu **F1** und Nachschlage-Schlüsselwort Elemente, für den Informationsanbieter, registrieren Sie Ihre kompilierte Hilfedatei (*. HxS*) mit dem System. Geben Sie die Liste der Themen im dynamischen Hilfefenster angezeigt, und, ob ein Benutzer drückt die Hilfethemen in diesen Dateien **F1**.
+  Informationsanbieter der Informationsanbieter ist ein Modul, kann nach Schlüsselwörtern suchen und zurückgeben eine Liste der Themen, in Form von `IVsUserContextItem` Objekte. Zu **F1** und Nachschlage-Schlüsselwort Elemente, für den Informationsanbieter, registrieren Sie Ihre kompilierte Hilfedatei ( *. HxS*) mit dem System. Geben Sie die Liste der Themen im dynamischen Hilfefenster angezeigt, und, ob ein Benutzer drückt die Hilfethemen in diesen Dateien **F1**.
 
   in-Place-Komponente eine VSPackage-Objekt, das implementiert die `IOleInPlaceComponent` Schnittstelle, um ein Fenster zu verwalten, die visuell in einem Dokumentfenster der IDE im Besitz befindet. Direktes Komponenten einbezogen nicht in der standard OLE-das Zusammenführen von Menüs; Stattdessen können sie die Elemente der Benutzeroberfläche in der IDE integrieren.
 

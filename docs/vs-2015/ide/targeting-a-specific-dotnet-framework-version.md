@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429235"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679151"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Festlegen einer bestimmten .NET-Framework-Zielversion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ In Visual Studio können Sie die Version oder das Profil von .NET Framework ange
  Enthält Informationen zum Angeben eines bestimmten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] für das Visual Basic-, Visual C#- oder Visual F#-Projekt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [.NET Framework Multi-Targeting for ASP.NET Web Projects (.NET-Framework-Zielversionen für ASP.NET-Webprojekte)](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [.NET Framework Multi-Targeting for ASP.NET Web Projects (.NET-Framework-Zielversionen für ASP.NET-Webprojekte)](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Erläutert, wie Sie diese Version von Visual Studio verwenden, um Internetanwendungen zu entwickeln, die unter früheren Versionen von .NET Framework ausgeführt werden.  
   
  [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ In Visual Studio können Sie die Version oder das Profil von .NET Framework ange
  [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Beschreibt das **Zielframework**-Steuerelement im Projekt-Designer für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Projekte.  
   
- [Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  Beschreibt, wie Einstellungen für Visual C++-Projekte geändert werden, damit andere Versionen von .NET Framework als Ziel verwendet werden, und verschiedene Plattformtoolsets verwendet werden können.

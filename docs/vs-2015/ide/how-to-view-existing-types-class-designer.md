@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c33ae053a605e50aa8d1940fc97f3c0f687b48fa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695334"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Vorgehensweise: Anzeigen von vorhandenen Typen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Um einen vorhandenen Typ und die zugehörigen Member anzuzeigen, fügen Sie sein
    Sie können im Projekt enthaltene Typen auch anzeigen, indem Sie einen oder mehrere Typen vom Projektknoten in der Klassenansicht in das Klassendiagramm ziehen.  
   
 > [!TIP]
-> Wenn die Klassenansicht nicht geöffnet ist, rufen Sie sie über das Menü **Ansicht** auf. Weitere Informationen über die Klassenansicht finden Sie unter [Anzeigen von Klassen und deren Membern](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Wenn die Klassenansicht nicht geöffnet ist, rufen Sie sie über das Menü **Ansicht** auf. Weitere Informationen über die Klassenansicht finden Sie unter [Anzeigen von Klassen und deren Membern](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Wählen Sie in der Klassenansicht einen oder mehrere Typen aus, klicken Sie mit der rechten Maustaste auf die ausgewählten Typen und wählen **Klassendiagramm anzeigen** aus, um Typen im Diagramm an den Standardorten anzuzeigen.  
   

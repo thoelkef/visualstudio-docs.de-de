@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071771"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684298"
 ---
 # <a name="using-dump-files"></a>Speichern von Dumpdateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
 - Visual Studio kann Dumpdateien systemeigener Anwendungen von ARM-Geräten debuggen. Visual Studio kann auch Dumpdateien verwalteter Anwendungen von ARM-Geräten debuggen, jedoch nur im systemeigenen Debugger.  
   
-- So debuggen Sie [im Kernelmodus](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) Dumpdateien in Visual Studio 2013, laden Sie die [Windows 8.1-Version von Debugging-Tools für Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Finden Sie unter [Kernel-Debugging in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- So debuggen Sie [im Kernelmodus](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) Dumpdateien in Visual Studio 2013, laden Sie die [Windows 8.1-Version von Debugging-Tools für Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Finden Sie unter [Kernel-Debugging in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio kann nicht die debugdumpdateien gespeichert, in der älteren dumpformat bekannt als eine [vollständiger benutzermodusdump](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Beachten Sie, dass ein vollständiger Benutzermodusdump nicht mit einer Dumpdatei mit Heapinformationen identisch ist.  
   
-- So debuggen Sie mit der [SOS.dll (SOS-Debugerweiterung)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) in Visual Studio müssen Sie das Debugging-Tools für Windows, die Teil des Windows Driver Kit (WDK) installieren. Finden Sie unter [Windows 8.1 Preview: Herunterladen von Kits,-Bits und Tools](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- So debuggen Sie mit der [SOS.dll (SOS-Debugerweiterung)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) in Visual Studio müssen Sie das Debugging-Tools für Windows, die Teil des Windows Driver Kit (WDK) installieren. Finden Sie unter [Windows 8.1 Preview: Herunterladen von Kits,-Bits und Tools](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
 - Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) aktiviert, Sie können das Anfügen des Debuggers an einen abgestürzten Prozess, der außerhalb des Debuggers ausgeführt wird und dann eine Dumpdatei speichern. Finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  Dumpdateien können auch mit jedem Programm erstellt werden, das das Windows-Minidumpformat unterstützt. Z. B. die **Procdump** Befehlszeilen-Hilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) können Dumpdateien zu Prozessabstürzen anhand von Triggern oder bei Bedarf erstellen. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in dieses Thema enthält zusätzliche Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.  
+  Dumpdateien können auch mit jedem Programm erstellt werden, das das Windows-Minidumpformat unterstützt. Z. B. die **Procdump** Befehlszeilen-Hilfsprogramm von [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) können Dumpdateien zu Prozessabstürzen anhand von Triggern oder bei Bedarf erstellen. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in dieses Thema enthält zusätzliche Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.  
   
   ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   

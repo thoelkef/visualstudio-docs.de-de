@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425402"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825892"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
 5. Hinzufügen von Code zum Anzeigen des XML-Schemas auf Grundlage der XML-Datei in eine <xref:System.Windows.Forms.TextBox> Steuerelement  
   
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle, die Sie sehen, die je nach Ihren aktiven Einstellungen oder die Edition in der Hilfe beschriebenen unterscheiden kann, das Sie verwenden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü**Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Menübefehle, die Sie sehen, die je nach Ihren aktiven Einstellungen oder die Edition in der Hilfe beschriebenen unterscheiden kann, das Sie verwenden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü**Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
  In diesem Schritt erstellen Sie ein Visual Basic oder Visual C#-Projekt, das in dieser exemplarischen Vorgehensweise enthält.  
@@ -59,7 +59,7 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
   
 2. Benennen Sie das Projekt mit `ReadingXML`.  
   
-3. Wählen Sie **Windows-Anwendung**, und wählen Sie dann **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wählen Sie **Windows-Anwendung**, und wählen Sie dann **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Die **ReadingXML** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
   
@@ -147,9 +147,9 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
   
 - Zwei <xref:System.Windows.Forms.Button> Steuerelemente.  
   
-    - Eine Schaltfläche liest die XML-Datei in das Dataset, und zeigt ihn in das <xref:System.Windows.Forms.DataGridView> Steuerelement.  
-  
-    - Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt sie in der <xref:System.Windows.Forms.TextBox> Steuerelement.  
+  - Eine Schaltfläche liest die XML-Datei in das Dataset, und zeigt ihn in das <xref:System.Windows.Forms.DataGridView> Steuerelement.  
+
+  - Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt sie in der <xref:System.Windows.Forms.TextBox> Steuerelement.  
   
 #### <a name="to-add-controls-to-the-form"></a>So fügen Sie dem Formular Steuerelemente hinzu  
   
@@ -246,7 +246,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, die Grundlagen der Einlese
 - Bearbeiten Sie die Daten im Dataset und schreibt sie in einer Datenbank.
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweisen zur Arbeit mit Daten](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Exemplarische Vorgehensweisen zur Arbeit mit Daten](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Vorbereiten der Anwendung auf den Empfang von Daten](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Vorbereiten der Anwendung auf den Empfang von Daten](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

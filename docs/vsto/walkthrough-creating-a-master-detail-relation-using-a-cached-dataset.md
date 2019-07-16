@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets'
+title: Erstellen der master-Detail-Beziehung, die mithilfe von zwischengespeicherten Datasets
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438555"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328357"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets
   In dieser exemplarischen Vorgehensweise veranschaulicht das Erstellen einer Master/Detail-Beziehung in einem Arbeitsblatt und Zwischenspeichern von Daten, damit die Projektmappe offline verwendet werden kann.
@@ -36,7 +36,7 @@ ms.locfileid: "63438555"
 - Testen Sie das Projekt ein.
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
@@ -127,7 +127,7 @@ ms.locfileid: "63438555"
 
     Datasets müssen öffentlich sein, bevor Sie das Zwischenspeichern aktiviert ist.
 
-3. Ändern der **CacheInDocument** Eigenschaft **"true"**.
+3. Ändern der **CacheInDocument** Eigenschaft **"true"** .
 
    Der nächste Schritt ist zum Hinzufügen von Text auf Schaltflächen, und fügen Sie im C#-Code, um die Ereignishandler einzubinden.
 
@@ -177,7 +177,7 @@ ms.locfileid: "63438555"
 
 5. Deaktivieren Sie die Verbindung mit der Datenbank. Trennen Sie das Netzwerkkabel von Ihrem Computer aus, wenn die Datenbank auf einem Server befindet, oder beenden Sie den SQL Server-Dienst aus, wenn die Datenbank auf dem Entwicklungscomputer gespeichert ist.
 
-6. Öffnen Sie Excel, und öffnen Sie **Meine Master-Detail.xlsx** aus der *\bin* Verzeichnis (*\My Master-Detail\bin* in Visual Basic oder *\My Master-Detail\bin\ Debuggen von* in c#).
+6. Öffnen Sie Excel, und öffnen Sie **Meine Master-Detail.xlsx** aus der *\bin* Verzeichnis ( *\My Master-Detail\bin* in Visual Basic oder *\My Master-Detail\bin\ Debuggen von* in c#).
 
 7. Scrollen Sie durch einige der Einträge zu erkennen, dass das Arbeitsblatt normal ausgeführt wird, die Verbindung getrennt.
 

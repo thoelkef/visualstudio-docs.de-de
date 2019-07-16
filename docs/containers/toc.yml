@@ -7,14 +7,16 @@
     - name: Schnellstart
       expanded: true
       items:
-        - name: Containertools in Visual Studio
+        - name: ASP.NET Core-App in einem Container
           href: container-tools.md
+        - name: React.js-Single-Page-App in einem Container
+          href: container-tools-react.md
     - name: Tutorials
       expanded: true
       items:
-        - name: 'Tutorial: Multicontainer-App mit Docker Compose'
+        - name: Multicontainer-App mit Docker Compose
           href: tutorial-multicontainer.md
-        - name: 'Tutorial: Kubernetes in Visual Studio'
+        - name: Kubernetes in Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Gewusst wie
       items:
@@ -24,7 +26,17 @@
           href: hosting-web-apps-in-docker.md
         - name: Bereitstellen in Azure App Service
           href: deploy-app-service.md
+        - name: Anzeigen und Diagnostizieren von Containern
+          href: view-and-diagnose-containers.md
         - name: Konfigurieren von Containertools
           href: container-tools-configure.md
+    - name: Konzepte
+      items:
+        - name: Erstellen von Container-Apps
+          href: container-build.md
     - name: Problembehandlung
       href: troubleshooting-docker-errors.md
+    - name: Referenz
+      items:
+        - name: MSBuild-Eigenschaften für Containerprojekte
+          href: container-msbuild-properties.md

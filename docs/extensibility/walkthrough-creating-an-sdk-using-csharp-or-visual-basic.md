@@ -3,20 +3,20 @@ title: 'Exemplarische Vorgehensweise: Erstellen einer SDK mit C# oder Visual Bas
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 6bb9ae53dfb2e849c35c05fe5187cddcf301622c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226108"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312641"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen Sie eine SDK mit C# oder Visual Basic
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erstellen eines einfachen Math-Bibliothek-SDK und klicken Sie dann das SDK als ein Visual Studio-Erweiterung (VSIX)-Paket. Sie müssen die folgenden Schritte auszuführen:
@@ -81,7 +81,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
 
 10. In der **Namen** geben `SDKManifest.xml`, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
-11. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für `SDKManifest.xml`, wählen Sie **Eigenschaften**, und ändern Sie den Wert, der die **Include in VSIX-Datei** Eigenschaft **"True"**.
+11. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für `SDKManifest.xml`, wählen Sie **Eigenschaften**, und ändern Sie den Wert, der die **Include in VSIX-Datei** Eigenschaft **"True"** .
 
 12. Ersetzen Sie den Inhalt der Datei durch folgendes XML:
 
@@ -140,7 +140,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
 
 23. Wählen Sie auf der Menüleiste **Ansicht** > **Eigenschaften** (Tastatur: Wählen Sie die **F4** Schlüssel).
 
-24. In der **Eigenschaften** Ändern der **Buildvorgang** Eigenschaft **Content**, und ändern Sie dann die **Include in VSIX-Datei** Eigenschaft  **"True"**.
+24. In der **Eigenschaften** Ändern der **Buildvorgang** Eigenschaft **Content**, und ändern Sie dann die **Include in VSIX-Datei** Eigenschaft  **"True"** .
 
 25. In **Projektmappen-Explorer**, wiederholen Sie diesen Vorgang für **SimpleMath.pri**.
 
@@ -178,7 +178,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mit Visual C#-Erst
 
      Sie können nun untersuchen, was im SDK ist.
 
-10. In **Projektmappen-Explorer**öffnen **"MainPage.xaml"**, und Ersetzen Sie den Inhalt mit den folgenden XAML:
+10. In **Projektmappen-Explorer**öffnen **"MainPage.xaml"** , und Ersetzen Sie den Inhalt mit den folgenden XAML:
 
     **C#**
 

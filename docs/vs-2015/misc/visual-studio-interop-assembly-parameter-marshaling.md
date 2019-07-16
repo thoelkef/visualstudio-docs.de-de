@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436526"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686924"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parameter-Marshalling für Visual Studio-Interopassemblys
-VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen oder von nicht verwalteten COM-Code aufgerufen werden. In der Regel Methodenargumente umgewandelt oder gemarshallt werden, automatisch von der interop-Marshaller. Allerdings können keine Argumente manchmal nicht in einer unkomplizierten Weise transformiert werden. In diesen Fällen werden die interop-Assembly-Methode Prototyp-Parameter verwendet, um die COM-Funktionsparameter so weit wie möglich entsprechen. Weitere Informationen finden Sie unter [Interop-Marshalling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen oder von nicht verwalteten COM-Code aufgerufen werden. In der Regel Methodenargumente umgewandelt oder gemarshallt werden, automatisch von der interop-Marshaller. Allerdings können keine Argumente manchmal nicht in einer unkomplizierten Weise transformiert werden. In diesen Fällen werden die interop-Assembly-Methode Prototyp-Parameter verwendet, um die COM-Funktionsparameter so weit wie möglich entsprechen. Weitere Informationen finden Sie unter [Interop-Marshalling](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Allgemeine Empfehlungen  
   
@@ -123,7 +123,7 @@ else
  Verwaltete Methoden, die Schnittstellen dieses Typs aufrufen sollten das erste Element aus dem [Out] Array extrahieren. Dieses Element behandelt werden kann, als wäre er ein `retval` Wert aus der entsprechenden COM-Schnittstelle zurückzugeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Interop-Marshalling](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Interop-Marshalling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Problembehandlung bei der Interoperabilität](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Interop-Marshalling](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Interop-Marshalling](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Problembehandlung bei der Interoperabilität](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Verwaltete VSPackages](../misc/managed-vspackages.md)

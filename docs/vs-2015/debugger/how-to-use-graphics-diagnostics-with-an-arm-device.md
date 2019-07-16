@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384005"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685872"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Vorgehensweise: Verwenden der Grafikdiagnose mit einem ARM-Gerät
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,12 +28,12 @@ Die Grafikdiagnose unterstützt Remotedebugging von Direct3D-Apps auf ARM-basier
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>So aktivieren Sie Remotedebugging auf Ihrem ARM-basierten Gerät  
   
-1. Installieren Sie die [ARM Kits Policy](http://msdn.microsoft.com/windows/desktop/dn469188) auf Ihrem ARM-basierten Gerät.  
+1. Installieren Sie die [ARM Kits Policy](https://msdn.microsoft.com/windows/desktop/dn469188) auf Ihrem ARM-basierten Gerät.  
   
 2. Installieren Sie die [Remotedebugging-Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) auf Ihrem ARM-basierten Gerät.  
   
 > [!IMPORTANT]
-> Im Falle von Windows Phone 8.1-Geräten müssen Sie Ihr Gerät eventuell für die Entwicklung registrieren. Dafür müssen Sie ein registrierter Entwickler sein. Weitere Informationen finden Sie unter [wie bereitstellen und Ausführen einer app für Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> Im Falle von Windows Phone 8.1-Geräten müssen Sie Ihr Gerät eventuell für die Entwicklung registrieren. Dafür müssen Sie ein registrierter Entwickler sein. Weitere Informationen finden Sie unter [wie bereitstellen und Ausführen einer app für Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Wenn Sie Remotedebugging auf Ihrem Gerät aktiviert haben, machen Sie dieses zu Ihrem Debugging-Ziel, und starten Sie die Grafikdiagnose.  
   

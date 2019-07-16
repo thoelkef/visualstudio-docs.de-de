@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974162"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744727"
 ---
 # <a name="how-to-choose-collection-methods"></a>Vorgehensweise: Auswählen von Sammlungsmethoden
 
@@ -34,7 +34,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 |----------------------------| - |
 | **CPU-Sampling** | Sammelt Anwendungsstatistiken, die für die erste Analyse und zum Analysieren von CPU-Auslastungsproblemen nützlich sind. |
 | **Instrumentation** | Sammelt ausführliche Zeitsteuerungsdaten, die zur gezielten Analyse und zur Analyse von Eingabe/Ausgabe-Leistungsproblemen nützlich sind. |
-| **.NET-Speicherbelegung** | Sammelt [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Speicherbelegungsdaten mithilfe der Sampling-Profilerstellungsmethode. |
+| **.NET-Speicherbelegung** | Sammelt .NET Framework-Speicherbelegungsdaten mithilfe der Sampling-Profilerstellungsmethode. |
 | **Parallelität** | Sammelt numerischen Ressourcenkonfliktdaten. |
 
 ## <a name="performance-explorer"></a>Leistungs-Explorer
@@ -75,7 +75,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 4. Klicken Sie auf **Sampling** oder **Instrumentation**.
 
-5. Klicken Sie zum Sammeln von der Größe und Anzahl von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Objektzuweisungen auf **.NET-Objektzuweisungsinformationen auflisten**.
+5. Klicken Sie zum Sammeln von der Größe und Anzahl von .NET Framework-Objektzuweisungen auf **.NET-Objektzuweisungsinformationen auflisten**.
 
 6. (Optional) Klicken Sie auf **Lebensdauerinformation für .NET-Objekte auflisten** zum Sammeln von Daten über die Generierung der automatische Speicherbereinigung, in dem der Objektspeicher freigegeben wurde.
 

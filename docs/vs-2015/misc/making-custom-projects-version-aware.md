@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422727"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825686"
 ---
 # <a name="making-custom-projects-version-aware"></a>Bewirken, dass benutzerdefinierte Projekte versionsfähig werden
 In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte dieses Typs in mehreren Versionen von Visual Studio geladen werden. Sie können aber auch verhindern, dass Projekte dieses Typs in einer früheren Version von Visual Studio geladen werden. Außerdem können Sie für dieses Projekt ermöglichen, sich selbst für eine neuere Version zu identifizieren für den Fall, dass das Projekt repariert, konvertiert oder als veraltet deklariert werden muss.  
@@ -120,7 +120,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Wird `pUpgradeRequired` von dieser Methode auf TRUE festgelegt, und gibt die Methode den Wert `S_OK`zurück, wird das Ergebnis als „Upgrade“ behandelt, weshalb die Methode ein Upgradeflag auf den Wert `VSPUVF_PROJECT_ONEWAYUPGRADE`festgelegt, der weiter unten in diesem Thema beschrieben wird. Der folgende Rückgabewerte werden unterstützt, wenn diese ältere Methode verwendet wird, allerdings nur, wenn `pUpgradeRequired` auf TRUE festgelegt ist:  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED` Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
 2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_UNSAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - Die LogMessage-Funktion hat die folgenden Fehlerstufen (ErrorLevels):  
   
-    - 0 steht für irgendeine Information, die Sie verfolgen möchten.  
-  
-    - 1 steht für eine Warnung.  
-  
-    - 2 steht für einen Fehler.  
-  
-    - 3 steht für das Berichts-Formatierungsprogramm. Wenn für Ihr Projekt das Upgrade durchgeführt wurde, protokollieren Sie das Wort „Converted“ einmal, und lokalisieren Sie dieses Wort nicht.  
+  - 0 steht für irgendeine Information, die Sie verfolgen möchten.  
+
+  - 1 steht für eine Warnung.  
+
+  - 2 steht für einen Fehler.  
+
+  - 3 steht für das Berichts-Formatierungsprogramm. Wenn für Ihr Projekt das Upgrade durchgeführt wurde, protokollieren Sie das Wort „Converted“ einmal, und lokalisieren Sie dieses Wort nicht.  
   
 - Erfordert ein Projekt weder eine Reparatur noch ein Upgrade, generiert Visual Studio die Protokolldatei nur, wenn das Projektsystem während der Methode „UpgradeProject_CheckOnly“ oder „UpgradeProjectFlavor_CheckOnly“ eine Warnung oder einen Fehler protokolliert hat.

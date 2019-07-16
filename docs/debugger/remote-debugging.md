@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407758"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043317"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -93,7 +93,7 @@ Sie können einige Aspekte der Konfiguration des Remotedebuggers ändern, nachde
      > [!IMPORTANT]
      > Sie können den Remotedebugger unter einem Benutzerkonto, das unterscheidet sich über das Benutzerkonto auf dem Visual Studio-Computer verwendeten ausführen, jedoch müssen Sie das andere Benutzerkonto die Berechtigungen des Remotedebuggers hinzufügen.
 
-     Alternativ können Sie den Remotedebugger starten, über die Befehlszeile mit der **/ allow \<Benutzername >** Parameter: **Msvsmon / allow \< username@computer>**.
+     Alternativ können Sie den Remotedebugger starten, über die Befehlszeile mit der **/ allow \<Benutzername >** Parameter: **Msvsmon / allow \< username@computer>** .
 
 - Wenn Sie den Authentifizierungsmodus oder die Portnummer ändern, oder geben Sie einen Timeoutwert für den Remoteserver-Verwaltungstools müssen: Wählen Sie **Tools > Optionen**.
 
@@ -127,7 +127,7 @@ Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remot
 
    Sie können den Remotedebugger-Dienst über **Systemsteuerung > Dienste** beenden und starten.
 
-## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen
+## <a name="set-up-debugging-with-remote-symbols"></a>Richten Sie Debuggings mit remotesymbolen
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 

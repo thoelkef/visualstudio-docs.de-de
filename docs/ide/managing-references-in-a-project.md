@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535572"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747053"
 ---
 # <a name="manage-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
@@ -38,7 +38,7 @@ Um einen Verweis hinzuzufügen, klicken Sie im **Projektmappen-Explorer** mit de
 
 Sie können einen Verweis zu folgenden Komponenten- und Diensttypen hinzufügen:
 
-- .NET Framework-Klassenbibliotheken oder -Assemblys
+- .NET-Klassenbibliotheken oder -Assemblys
 
 - UWP-Apps
 
@@ -101,11 +101,11 @@ Wenn Sie eine Anwendung bereitstellen, die einen Verweis auf eine im GAC registr
 
 Wenn sich die Assembly bzw. Komponente im globalen Assemblycache befindet oder eine .NET Framework-Komponente ist, wird die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft standardmäßig auf **False** festgelegt. Andernfalls wird der Wert auf **True**festgelegt. Verweise zwischen Projekten werden immer auf **True**festgelegt.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Verweisen auf ein Projekt oder eine Assembly, die eine andere Version von .NET Framework anzielt
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Verweisen auf ein Projekt oder eine Assembly, das/die auf eine andere .NET-Version ausgerichtet ist
 
-Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET Framework abzielen. Sie können z.B. eine Anwendung für .NET Framework 4.6 erstellen, die auf eine Assembly verweist, die wiederum .NET Framework 4.5 anzielt. Wenn Sie ein Projekt für eine frühere Version von .NET Framework erstellen, können Sie in diesem Projekt nicht auf Projekte oder Assemblys verweisen, die eine neuere Version anzielen.
+Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET ausgerichtet sind. Sie können z.B. eine Anwendung für .NET Framework 4.6 erstellen, die auf eine Assembly verweist, die wiederum .NET Framework 4.5 anzielt. Wenn Sie ein Projekt für eine frühere Version von .NET erstellen, können Sie in diesem Projekt nicht auf Projekte oder Assemblys verweisen, die auf eine neuere Version ausgerichtet sind.
 
-Weitere Informationen finden Sie unter [Übersicht über die Festlegung von mehreren Zielversionen](../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Projekt-zu-Projekt-Verweise
 

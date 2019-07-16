@@ -3,17 +3,17 @@ title: Analysetools für Visual Studio | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11856141a6c3f5ca186428d67edf10fdbd35787b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798382"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824567"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Analysetools für Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Checkliste für handwerkliches können für Visual Studio
@@ -49,11 +49,11 @@ ms.locfileid: "62798382"
 
 - Stellen Sie sicher, dass für Schaltflächen, Befehle und Befehlslinks, die die Benutzeroberfläche zum Erfassen von Benutzereingaben starten ein Auslassungszeichen aufgetreten **[...]** .
 
-     Beispiele:
+  Beispiele:
 
-    - Ein **[Erweitert]**  Schaltfläche in einem Dialogfeld.
+  - Ein **[Erweitert]**  Schaltfläche in einem Dialogfeld.
 
-    - Die Befehlsoptionen an, unter dem Menü "Extras" (**Tools > Optionen**) Auslassungspunkte sollte nicht abgerufen werden, da starten das Dialogfeld selbst die Absicht des Befehls ist.
+  - Die Befehlsoptionen an, unter dem Menü "Extras" (**Tools > Optionen**) Auslassungspunkte sollte nicht abgerufen werden, da starten das Dialogfeld selbst die Absicht des Befehls ist.
 
 - Stellen Sie sicher, dass die Benutzeroberfläche keine Abkürzungen, mit Ausnahme der Branche zum Standard-Begriffe enthält. Z. B. müssen weder die HTML-als auch die TCP/IP, geschrieben werden, obwohl OOM-Bedingungen (nicht genügend Arbeitsspeicher) und personenbezogene Informationen (persönlich identifizierbare Informationen) sollten.
 
@@ -145,9 +145,9 @@ ms.locfileid: "62798382"
 
 - Wenn das Feld ein Pflichtfeld, die als solche gekennzeichnet werden müssen ist, stellen Sie Folgendes sicher:
 
-    - das der Hintergrund nastaven NA hodnotu `Environment.ControlEditRequiredBackground` und auf der Vordergrund festgelegt ist `Environment.ControlEditRequiredHintText`
+  - das der Hintergrund nastaven NA hodnotu `Environment.ControlEditRequiredBackground` und auf der Vordergrund festgelegt ist `Environment.ControlEditRequiredHintText`
 
-    - es der Hinweistext im Steuerelement, das wird als angezeigt wird **"\<erforderlichen >"**
+  - es der Hinweistext im Steuerelement, das wird als angezeigt wird **"\<erforderlichen >"**
 
 #### <a name="button-controls"></a>Schaltflächen-Steuerelemente
 
@@ -169,11 +169,11 @@ ms.locfileid: "62798382"
 
 - Stellen Sie sicher, dass die VS-Farben, die verwendet werden:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Stellen Sie sicher, dass die Hyperlinks werden blau nicht zu unterstreichen, es sei denn, die in einem Absatz eingebettet angezeigt.
 

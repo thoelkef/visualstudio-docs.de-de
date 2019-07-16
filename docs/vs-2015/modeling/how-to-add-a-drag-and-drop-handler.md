@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d0f53e589f34fafd2514aa71efdaa16cfe3bc21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117667"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825395"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Sie können Ihrer DSL Handler für Drag &amp; Drop-Ereignisse hinzufügen, sodas
   
 - In den ersten beiden Abschnitten werden zwei alternative Methoden beschrieben, einen Gestenhandler zu definieren:  
   
-    - [Definieren von Gestenhandlern durch Überschreiben von ShapeElement-Methoden](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver` und andere Methoden können überschrieben werden.  
-  
-    - [Definieren von Gestenhandlern mit MEF](#MEF). Nutzen Sie diese Methoden, wenn Entwickler von Drittanbietern in der Lage sein sollen, eigene Handler für Ihre DSL zu definieren. Die Benutzer könnten Erweiterungen von Drittanbietern installieren, nachdem sie Ihre DSL installiert haben.  
+  - [Definieren von Gestenhandlern durch Überschreiben von ShapeElement-Methoden](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver` und andere Methoden können überschrieben werden.  
+
+  - [Definieren von Gestenhandlern mit MEF](#MEF). Nutzen Sie diese Methoden, wenn Entwickler von Drittanbietern in der Lage sein sollen, eigene Handler für Ihre DSL zu definieren. Die Benutzer könnten Erweiterungen von Drittanbietern installieren, nachdem sie Ihre DSL installiert haben.  
   
 - [Wie Sie Decodieren des gezogenen Elements](#extracting). Elemente können aus einem beliebigen Fenster, vom Desktop oder aus einer DSL gezogen werden.  
   
@@ -89,7 +89,7 @@ using System.Linq;
   Definieren Sie `IsAcceptableDropItem(e)`, um zu bestimmen, ob das gezogene Element akzeptiert werden kann, und "ProcessDragDropItem(e)", um das Modell zu aktualisieren, wenn das Element abgelegt wird. Diese Methoden müssen das Element zuerst aus den Ereignisargumenten extrahieren. Informationen dazu, wie Sie dies tun, finden Sie unter [Gewusst wie: Abrufen eines Verweises auf das gezogene Element](#extracting).  
   
 ## <a name="MEF"></a> Definieren von Gestenhandlern mit MEF  
- Mit MEF (Managed Extensibility Framework) können Sie Komponenten definieren, die mit minimaler Konfiguration installiert werden können. Weitere Informationen finden Sie unter [Übersicht über das Managed Extensibility Framework](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Mit MEF (Managed Extensibility Framework) können Sie Komponenten definieren, die mit minimaler Konfiguration installiert werden können. Weitere Informationen finden Sie unter [Übersicht über das Managed Extensibility Framework](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-define-a-mef-gesture-handler"></a>So definieren Sie einen MEF-Gestenhandler  
   
@@ -140,7 +140,7 @@ using System.Linq;
   
   - diagramEventArgs.Data.GetDataFormats() – Listet die Formate auf, in die Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).  
   
-  - `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt in das angegebene Format. Wandeln Sie das Objekt in den geeigneten Typ um. Zum Beispiel:  
+  - `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt in das angegebene Format. Wandeln Sie das Objekt in den geeigneten Typ um. Beispiel:  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   

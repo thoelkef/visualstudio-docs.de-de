@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988958"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501013"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Vorgehensweise: Melden eines Problems mit Visual Studio für Mac
 
@@ -58,7 +58,7 @@ Um ein Problem mit Visual Studio für Mac zu melden, klicken Sie in der Menülei
 
 1. Klicken Sie auf **Absenden**, um den Bericht zusammen mit allen Bildern und Protokolldateien zu senden.
 
-   Informationen zu den erfassten Daten finden Sie unter [Data we collect (Daten, die wir erfassen)](/visualstudio/ide/developer-community-privacy.md#data-we-collect).
+   Informationen zu den erfassten Daten finden Sie unter [Data we collect (Daten, die wir erfassen)](/visualstudio/ide/developer-community-privacy#data-we-collect).
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Suchen nach Lösungen oder Geben von Feedback
 

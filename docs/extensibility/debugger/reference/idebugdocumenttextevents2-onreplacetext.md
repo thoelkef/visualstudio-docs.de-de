@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onReplaceText
 ms.assetid: cb39f025-66d8-4dc0-bef6-1bdc8e07db92
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68c1097e622da25717a4bd3b2893dfe118b4c588
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1913bf42be298f6a4e8dd96c3116b49d8fb0abbe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875423"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330593"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 Benachrichtigt dem debugpaket, dass im Dokument Text ersetzt wurde.
@@ -38,14 +41,12 @@ int onReplaceText( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pos`
+## <a name="parameters"></a>Parameter
+`pos`\
+[in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) gibt an, in dem der Text ersetzt wurde.
 
- [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) gibt an, in dem der Text ersetzt wurde.
-
- `dwNumToReplace`
-
- [in] Gibt die Anzahl der Zeichen des Texts, die ersetzt wurden.
+`dwNumToReplace`\
+[in] Gibt die Anzahl der Zeichen des Texts, die ersetzt wurden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

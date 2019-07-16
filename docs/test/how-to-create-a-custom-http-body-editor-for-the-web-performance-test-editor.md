@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950266"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745824"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -43,7 +43,7 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
 
 1. Wählen Sie unter **Eigenschaften** die Registerkarte **Anwendung** aus.
 
-1. Wählen Sie in der Dropdownliste **Zielframework** den Eintrag **.NET Framework 4** aus.
+1. Wählen Sie in der Dropdownliste **Zielframework** .NET Framework 4 (oder höher) aus.
 
 1. Das Dialogfeld **Änderung des Zielframeworks** wird angezeigt.
 

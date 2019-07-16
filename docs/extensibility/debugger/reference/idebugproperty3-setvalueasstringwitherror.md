@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c71691befc9c0521c935dade9ebdacbb9921173e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458815"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348816"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Legt den Wert dieser Eigenschaft fest, und gibt eine Fehlermeldung zurück, bei Bedarf.
@@ -47,20 +47,16 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Parameter
 `pszValue`\
-
- [in] Der festzulegende Wert.
+[in] Der festzulegende Wert.
 
 `dwRadix`\
-
- [in] Die Basis des Werts, der festgelegt wird.
+[in] Die Basis des Werts, der festgelegt wird.
 
 `dwTimeout`\
-
- [in] Die Länge der Wartezeit für den Wert festgelegt werden (`INFINITE` bedeutet unbegrenzte Wartezeit).
+[in] Die Länge der Wartezeit für den Wert festgelegt werden (`INFINITE` bedeutet unbegrenzte Wartezeit).
 
 `errorString`\
-
- [out] Fehler beim Festlegen des Werts aufgetreten ist, enthält dies die Ursache des Fehlers.
+[out] Fehler beim Festlegen des Werts aufgetreten ist, enthält dies die Ursache des Fehlers.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407766"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824438"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Remotedebuggen von ASP.NET Core auf IIS in Azure in Visual Studio
 
@@ -42,7 +42,7 @@ Die empfohlene Methode zum Remotedebuggen in Azure hängt vom Szenario ab:
 > [!WARNING]
 > Achten Sie darauf, dass Sie die Azure-Ressourcen zu löschen, die Sie erstellen, wenn Sie die Schritte in diesem Lernprogramm abgeschlossen haben. Auf diese Weise vermeiden Sie unnötige Kosten.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 ::: moniker range=">=vs-2019"
 Visual Studio-2019 ist erforderlich, die in diesem Artikel gezeigten Schritte.
@@ -60,10 +60,10 @@ Debuggen zwischen zwei Computern über einen Proxy verbunden sind, wird nicht un
 1. Erstellen Sie eine neue ASP.NET Core-Anwendung.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in Visual Studio-2019, **STRG + Q** Geben Sie zum Öffnen des Suchfelds **asp.net**, wählen Sie **Vorlagen**, wählen Sie dann **neue ASP.NET Core-Webanwendung erstellen** . Klicken Sie im Dialogfeld, das angezeigt wird, geben Sie dem Projekt **MyASPApp**, und wählen Sie dann **erstellen**. Wählen Sie als Nächstes **Webanwendung (Model-View-Controller)**, und wählen Sie dann **erstellen**.
+    Geben Sie in Visual Studio-2019, **STRG + Q** Geben Sie zum Öffnen des Suchfelds **asp.net**, wählen Sie **Vorlagen**, wählen Sie dann **neue ASP.NET Core-Webanwendung erstellen** . Klicken Sie im Dialogfeld, das angezeigt wird, geben Sie dem Projekt **MyASPApp**, und wählen Sie dann **erstellen**. Wählen Sie als Nächstes **Webanwendung (Model-View-Controller)** , und wählen Sie dann **erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Wählen Sie in Visual Studio 2017 **Datei > Neu > Projekt**, und wählen Sie dann **Visual C# > Web > ASP.NET Core-Webanwendung**. Wählen Sie im Abschnitt ASP.NET Core-Vorlagen **Webanwendung (Model-View-Controller)**. Stellen Sie sicher, dass ASP.NET Core 2.1 ausgewählt ist, **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierung** nastaven NA hodnotu **keine Authentifizierung**. Nennen Sie das Projekt **MyASPApp**.
+    Wählen Sie in Visual Studio 2017 **Datei > Neu > Projekt**, und wählen Sie dann **Visual C# > Web > ASP.NET Core-Webanwendung**. Wählen Sie im Abschnitt ASP.NET Core-Vorlagen **Webanwendung (Model-View-Controller)** . Stellen Sie sicher, dass ASP.NET Core 2.1 ausgewählt ist, **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierung** nastaven NA hodnotu **keine Authentifizierung**. Nennen Sie das Projekt **MyASPApp**.
     ::: moniker-end
 
 1. Öffnen Sie die Datei About.cshtml.cs und Festlegen eines Haltepunkts in der `OnGet` Methode (in älteren Vorlagen, stattdessen "HomeController.cs" öffnen, und legen Sie den Haltepunkt der `About()` Methode).
@@ -108,9 +108,9 @@ Dieser Artikel enthält Schritte zum Einrichten einer Standardkonfiguration von 
 
 * Wenn Sie Hilfe, um sicherzustellen, dass Ihre app bereitgestellt eingerichtet wurde, anzeigen möchten und ordnungsgemäß in IIS ausgeführt, damit Sie debuggen können, befolgen alle Schritte in diesem Thema.
 
-    * Bevor Sie beginnen, befolgen Sie die Schritte unter [installieren und Ausführen von IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Bevor Sie beginnen, befolgen Sie die Schritte unter [installieren und Ausführen von IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Beim Öffnen von Port 80 in der Netzwerksicherheitsgruppe auch öffnen, die [korrigieren Port](#bkmk_openports) für den Remotedebugger (4024 oder 4022). Auf diese Weise müssen Sie es später noch Mal zu öffnen.
+  * Beim Öffnen von Port 80 in der Netzwerksicherheitsgruppe auch öffnen, die [korrigieren Port](#bkmk_openports) für den Remotedebugger (4024 oder 4022). Auf diese Weise müssen Sie es später noch Mal zu öffnen.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Browser-Sicherheitseinstellungen auf Windows Server aktualisieren
 
@@ -128,7 +128,7 @@ Wenn Sie die Software herunterladen, erhalten Sie möglicherweise Anforderungen 
 1. Installieren Sie das Paket [.NET Core Windows Server Hosting](https://aka.ms/dotnetcore-2-windowshosting) auf dem Hostsystem. Das Paket installiert die .NET Core-Runtime, die .NET Core-Bibliothek und das ASP.NET Core-Modul. Weitere ausführlichen Anweisungen finden Sie [Publishing to IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Wenn das System nicht über eine Internetverbindung verfügt, beziehen und installieren Sie *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*, bevor Sie das Paket „.NET Core Windows Server Hosting“ installieren.
+    > Wenn das System nicht über eine Internetverbindung verfügt, beziehen und installieren Sie *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* , bevor Sie das Paket „.NET Core Windows Server Hosting“ installieren.
 
 3. Starten Sie das System neu, oder führen Sie über eine Eingabeaufforderung **net stop was /y** gefolgt von **net start w3svc** aus, um eine Änderung am Systempfad zu übernehmen.
 
@@ -251,7 +251,7 @@ Laden Sie die Version der Remotetools, die Ihrer Version von Visual Studio entsp
 
 7. Klicken Sie auf **Anfügen**aus.
 
-8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>**.
+8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>** .
 
     Es sollte die ASP.NET-Webseite angezeigt werden.
 9. Klicken Sie in der laufenden Anwendung ASP.NET auf den Link, um die **zu** Seite.

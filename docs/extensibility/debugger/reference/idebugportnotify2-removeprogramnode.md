@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::RemoveProgramNode
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c09c7ccfcfee13f667091e96a638c17be2c9616d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05565005838fb47c3ad798464ee9382ae1168905
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871653"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314241"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 Hebt die Registrierung für ein Programm, das vom Port debuggt werden kann, die es ausgeführt wird.
@@ -36,10 +39,9 @@ int RemoveProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pProgramNode`
-
- [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das das Programm an, deren Registrierung aufgehoben werden darstellt.
+## <a name="parameters"></a>Parameter
+`pProgramNode`\
+[in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das das Programm an, deren Registrierung aufgehoben werden darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

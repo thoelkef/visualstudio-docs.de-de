@@ -6,20 +6,20 @@ helpviewer_keywords:
 - CreatePointerToType
 - IDebugTypeFieldBuilder::CreatePointerToType
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aae81d575585c9a960b3405a35047853e5fe1f4e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b8947090c56376b03da83cfd81296604b6bd642a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226004"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319909"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Erstellt einen Zeiger auf den angegebenen Typ.
@@ -41,13 +41,11 @@ int CreatePointerToType(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pTypeField`\
+`pTypeField`\
+[in] Typ, um zu zeigen. Es wird dargestellt, durch die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle.
 
- [in] Typ, um zu zeigen. Es wird dargestellt, durch die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle.
-
- `pPtrToTypeField`\
-
- [out] Gibt zurück, den Zeiger von einem neuen dargestellt **IDebugField** Objekt.
+`pPtrToTypeField`\
+[out] Gibt zurück, den Zeiger von einem neuen dargestellt **IDebugField** Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

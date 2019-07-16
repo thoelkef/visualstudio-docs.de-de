@@ -1,24 +1,27 @@
 ---
 title: Installieren von Visual Studio 2019 für Mac
 description: Anweisungen zum Installieren von Visual Studio 2019 für Mac und zusätzlicher erforderlichen Komponenten für die plattformübergreifende Entwicklung
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2086532f0602b4a2509358cbb6d57178a9a1a0d4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983006"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691467"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installieren von Visual Studio 2019 für Mac
 
 Installieren Sie Visual Studio 2019 für Mac, indem Sie die folgenden Schritte ausführen, um native, plattformübergreifende .NET-Apps unter macOS entwickeln zu können.
 
-## <a name="requirements"></a>Anforderungen
+ > [!div class="button"]
+ > [Visual Studio für Mac herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 - Ein Mac mit macOS High Sierra 10.12 oder höher.
 
@@ -43,9 +46,21 @@ Darüber hinaus benötigen Sie zum Erstellen von Xamarin-Apps für iOS oder macO
 
     [![Klicken Sie auf die Links zu den Datenschutz- und Lizenzbedingungen, und fahren Sie fort, wenn Sie diese akzeptieren](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
-6. Die Liste der verfügbaren Workloads wird angezeigt. Wählen Sie die Workloads aus, die Sie verwenden möchten:
+6. Die Liste der verfügbaren Workloads wird angezeigt. Wählen Sie die Komponenten aus, die Sie verwenden möchten:
 
-    [![Wählen Sie aus, welche optionalen Workload-Features Sie gerne installieren würden](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Wählen Sie aus, welche optionalen Workload-Features Sie gerne installieren würden](media/install-selection.png)](media/install-selection.png#lightbox)
+
+   Wenn Sie nicht alle Plattformen installieren möchten, lesen Sie den nachfolgenden Leitfaden, um die zu installierenden Plattformen festzulegen:
+
+   * **Apps mit Xamarin**:
+      - Xamarin.Forms: Wählen Sie die Plattformen **Android** und **iOS** aus.
+      - Nur iOS: Wählen Sie die **iOS**-Plattform aus. (Hinweis: Sie müssen [**Xcode**](https://developer.apple.com/xcode/) installieren.)
+      - Nur Android: Wählen Sie die **Android**-Plattform aus. (Hinweis: Sie sollten darüber hinaus die entsprechenden Abhängigkeiten auswählen.)
+      - Nur Mac: Wählen Sie die **macOS**-Plattform aus. (Hinweis: Sie müssen [**Xcode**](https://developer.apple.com/xcode/) installieren.)
+      - Vollständig plattformübergreifende Xamarin-Apps: Wählen Sie die Plattformen **Android**, **iOS** und **macOS** aus.
+   * **.NET Core-Anwendungen**: Wählen Sie die **.NET Core**-Plattform aus.
+   * **ASP.NET Core-Webanwendungen**: Wählen Sie die **.NET Core**-Plattform aus.
+   * **Entwicklung von plattformübergreifenden Unity-Spielen**: Neben Visual Studio für Mac müssen keine zusätzlichen Plattformen installiert werden. Weitere Informationen zur Installation der Unity-Erweiterung finden Sie im [Leitfaden zur Einrichtung von Unity](/visualstudio/mac/setup-vsmac-tools-unity).
 
 7. Klicken Sie auf die Schaltfläche **Installieren**, nachdem Sie Ihre Auswahl getroffen haben.
 8. Das Installationsprogramm zeigt während des Downloads den Fortschritt an und installiert Visual Studio für Mac sowie die ausgewählten Workloads. Möglicherweise werden Sie dazu aufgefordert, Ihr Kennwort einzugeben, um die für die Installation erforderlichen Berechtigungen zu erteilen.
@@ -82,7 +97,7 @@ Die Installation von Visual Studio für Mac ermöglicht Ihnen das Schreiben von 
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Entwicklung von .NET Core-Apps, ASP.NET Core-Web-Apps und Unity-Spielen
 
-Informationen zu anderen Workloads finden Sie auf der Seite zu den [Workloads](/visualstudio/mac/workloads).
+Informationen zu anderen Workloads finden Sie auf der Seite zu den [Workloads](workloads.md).
 
 ## <a name="related-video"></a>Zugehörige Videos
 

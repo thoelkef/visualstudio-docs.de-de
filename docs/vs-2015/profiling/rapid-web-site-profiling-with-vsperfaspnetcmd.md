@@ -61,14 +61,14 @@ Mit dem Befehlszeilentool **VSPerfASPNETCmd** können Sie problemlos Profile fü
   
  Sie können auch die **/Trace**-Option verwenden, um ausführliche Zeitsteuerungsinformationen in die .NET-Speicherdaten einzuschließen:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Erfassen von Ebeneninteraktionsdaten  
   
 > [!WARNING]
 > Profilerstellungsdaten für die Ebeneninteraktion (TIP) können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]angezeigt werden.  
 >   
-> Sie müssen zum Erfassen von TIP-Daten auf Windows 8 oder Windows Server 2012 die Instrumentierungsoption (**/trace**) verwenden.  
+> Sie müssen zum Erfassen von TIP-Daten auf Windows 8 oder Windows Server 2012 die Instrumentierungsoption ( **/trace**) verwenden.  
   
  Erfassen von Ebeneninteraktionsdaten mit Samplingdaten:  
   
@@ -80,14 +80,14 @@ Mit dem Befehlszeilentool **VSPerfASPNETCmd** können Sie problemlos Profile fü
   
  Sammeln von Ebeneninteraktionsdaten mit .NET-Speicherdaten:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> Verwenden der /NoWait-Option  
  In der Standardeinstellung wird die Eingabeaufforderung nach einem **vsperfaspnetcmd**-Befehl nicht zurückgeben. Sie können die folgende Syntaxoption verwenden, um die Rückgabe des Befehls zu erzwingen. Sie können dann andere Vorgänge im Eingabeaufforderungsfenster ausführen. Verwenden Sie zum Beenden der Profilerstellung die **/shutdown**-Option in einem separaten **vsperfaspnetcmd**-Befehl.  
   
  So beginnen Sie mit der Profilerstellung:  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  So beenden Sie die Profilerstellung:  
   

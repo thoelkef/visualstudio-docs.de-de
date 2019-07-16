@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 170183924c31933f77903a89851c15c463c326e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325913"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analysiert einen Ausdruck im Text-Format für die spätere Auswertung an.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pszCode`
+## <a name="parameters"></a>Parameter
+`pszCode`\
+[in] Der Ausdruck analysiert werden.
 
- [in] Der Ausdruck analysiert werden.
+`dwFlags`\
+[in] Eine Kombination von Flags aus der [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) -Enumeration, der steuert, analysieren.
 
-`dwFlags`
+`nRadix`\
+[in] Die Basis verwendet werden, bei der Analyse keine numerische Informationen im `pszCode`.
 
- [in] Eine Kombination von Flags aus der [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) -Enumeration, der steuert, analysieren.
+`ppExpr`\
+[out] Gibt die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Objekt, das den analysierten Ausdruck darstellt, die für die Bindung und die Auswertung kann.
 
-`nRadix`
+`pbstrError`\
+[out] Gibt die Fehlermeldung zurück, wenn der Ausdruck einen Fehler enthält.
 
- [in] Die Basis verwendet werden, bei der Analyse keine numerische Informationen im `pszCode`.
-
-`ppExpr`
-
- [out] Gibt die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Objekt, das den analysierten Ausdruck darstellt, die für die Bindung und die Auswertung kann.
-
-`pbstrError`
-
- [out] Gibt die Fehlermeldung zurück, wenn der Ausdruck einen Fehler enthält.
-
-`pichError`
-
- [out] Gibt den Zeichenindex des Fehlers im `pszCode` , wenn der Ausdruck einen Fehler enthält.
+`pichError`\
+[out] Gibt den Zeichenindex des Fehlers im `pszCode` , wenn der Ausdruck einen Fehler enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

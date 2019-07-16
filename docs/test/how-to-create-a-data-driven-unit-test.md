@@ -1,6 +1,6 @@
 ---
 title: Erstellen von datengesteuerten Komponententests
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979239"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745866"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Vorgehensweise: Erstellen eines datengesteuerten Komponententests
 
-Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Code eine Komponententestmethode erstellen, um Werte zu abzurufen, die in einer Testmethode von einer Datenquelle verwendet wird. Die Methode wird nacheinander für jede Zeile in der Datenquelle ausgeführt, die mithilfe einer einzelnen Methode das Testen von einer Vielzahl von Eingaben vereinfacht.
+Sie können das Microsoft Komponententestframework für verwaltenden Code verwenden, um eine Komponententestmethode zu erstellen, die Werte aus einer Datenquelle abruft. Die Methode wird nacheinander für jede Zeile in der Datenquelle ausgeführt, die mithilfe einer einzelnen Methode das Testen von einer Vielzahl von Eingaben vereinfacht.
 
 Das Erstellen eines datengesteuerten Komponententests umfasst die folgenden Schritte:
 
@@ -43,13 +43,13 @@ Nehmen wir zum Beispiel an, dass Sie über Folgendes verfügen:
 
 2. Ein Projekt mit dem Namen `BankDb` in `MyBank`, das die Transaktionen für Konten verwaltet.
 
-3. Eine Klasse mit dem Namen `Maths` im Projekt `DbBank`, die die mathematische Funktionen ausführt, um sicherzustellen, dass jede Transaktion für die Bank vorteilhaft ist.
+3. Eine Klasse mit dem Namen `Maths` im Projekt `BankDb`, die die mathematische Funktionen ausführt, um sicherzustellen, dass jede Transaktion für die Bank vorteilhaft ist.
 
 4. Ein Komponententestprojekt mit dem Namen `BankDbTests`, um das Verhalten der Komponente `BankDb` zu testen.
 
 5. Eine Komponentententestklasse mit dem Namen `MathsTests`, um das Verhalten von Klasse `Maths` zu testen.
 
-Eine Methode in `Maths`, die zwei ganze Zahlen mithilfe einer Schleife hinzufügt, wird getestet:
+Wir testen in `Maths` eine Methode, die mithilfe einer Schleife zwei ganze Zahlen hinzufügt:
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -88,6 +88,9 @@ public TestContext TestContext
 
 In Ihrer Testmethode greifen Sie auf die Daten durch die Indexereigenschaft `DataRow` des `TestContext` zu.
 
+> [!NOTE]
+> .NET Core unterstützt das [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute)-Attribut nicht. Wenn Sie versuchen, in einem .NET Core- oder UWP-Komponententestprojekt in dieser Weise auf Testdaten zuzugreifen, wird ein Fehler in der Art von **"'TestContext' enthält keine Definition für 'DataRow', und es konnte keine zugängliche Erweiterungsmethode 'DataRow' gefunden werden, die ein erstes Argument vom Typ 'TestContext' akzeptiert (fehlt möglicherweise eine using-Anweisung oder ein Assemblyverweis?)"** .
+
 ## <a name="write-the-test-method"></a>Schreiben der Testmethode
 
 Die Testmethode für `AddIntegers` ist recht einfach. Rufen Sie für jede Zeile in der Datenquelle `AddIntegers` mit den Spaltenwerten **FirstNumber** und **SecondNumber** als Parameter auf, und vergleichen Sie den Rückgabewert mit dem Spaltenwert **Summe**:
@@ -110,7 +113,7 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-Die Methode `Assert` enthält eine Nachricht, die die Werte `x` und `y` einer fehlerhaften Iteration anzeigt. Die bestätigen Werte `expected` und `actual` sind bereits standardmäßig in den Details eines fehlgeschlagenen Tests enthalten.
+Die Methode `Assert` enthält eine Nachricht, die die Werte `x` und `y` einer fehlerhaften Iteration anzeigt. Die bestätigten Werte `expected` und `actual` sind bereits in den Details eines fehlgeschlagenen Tests enthalten.
 
 ### <a name="specify-the-datasourceattribute"></a>Angeben des DataSourceAttribute
 
@@ -176,4 +179,4 @@ Wenn die zu testende Methode korrigiert und den Test erneut ausgeführt wird, wi
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
-- [Schreiben von Komponententests für .NET Framework mit dem Microsoft-Komponententestframework für verwalteten Code](../test/unit-test-your-code.md)
+- [Schreiben von Komponententests für .NET mit dem Microsoft-Komponententest-Framework](../test/unit-test-your-code.md)

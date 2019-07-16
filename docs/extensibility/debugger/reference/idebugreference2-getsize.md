@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetSize
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b414983121454a7e3fb7c1e631815bc830f51be
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5512a9d07c859dc548f91611bfc8d0c05621c0ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458691"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329782"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 Ruft die Größe in Bytes, der den Wert des Verweises an. Für zukünftige Verwendung reserviert.
@@ -40,9 +40,8 @@ int GetSize ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pdwSize`\
-
- [out] Gibt die Größe in Bytes, der den Wert des Verweises zurück.
+`pdwSize`\
+[out] Gibt die Größe in Bytes, der den Wert des Verweises zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.

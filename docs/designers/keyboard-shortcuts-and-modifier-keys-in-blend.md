@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2689f0d96189b496e147a074a38313c164b453d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bcada6718501594e0dc33880aa0fbbd8c575631
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844715"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457170"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tastenkombinationen und Zusatztasten in Blend
 
@@ -31,7 +31,7 @@ Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion
 
    ![Beispieltastenkombinationen](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png)
 
-Weitere Informationen zur Barrierefreiheit finden Sie unter [Accessibility at Microsoft (Barrierefreiheit bei Microsoft)](http://go.microsoft.com/fwlink/?LinkId=75069).
+Weitere Informationen zur Barrierefreiheit finden Sie unter [Accessibility at Microsoft (Barrierefreiheit bei Microsoft)](https://www.microsoft.com/accessibility/).
 
 ## <a name="modifier-keys"></a>Zusatztasten
 

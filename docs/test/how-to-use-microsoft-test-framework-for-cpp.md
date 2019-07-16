@@ -1,18 +1,18 @@
 ---
 title: Verwenden des Microsoft-Komponententest-Frameworks für C++
-ms.date: 11/15/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970349"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132131"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -30,16 +30,16 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
    1. Klicken Sie im **Projektmappen-Explorer** erst mit der rechten Maustaste auf den Projektknoten für das Programm, das Sie testen, und klicken Sie dann auf **Eigenschaften** > **Konfigurationseigenschaften** > **VC++-Verzeichnisse**.
 
-   2. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Bearbeiten>** aus:
+   2. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Bearbeiten>** aus. Fügen Sie diese Pfade ein:
 
       | Verzeichnis | Eigenschaft |
       |-| - |
-      | **Includeverzeichnisse** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **Bibliotheksverzeichnisse** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **Includeverzeichnisse** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+      | **Bibliotheksverzeichnisse** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
 2. Fügen Sie eine C++-Komponententestdatei hinzu:
 
-   - Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und dann mit der Linken auf **Hinzufügen** > **Neues Element** > **C++-Komponententest**.
+   - Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und wählen Sie **Hinzufügen** > **Neues Element** > **C++-Datei (cpp)** aus.
 
 ## <a name="write-the-tests"></a>Schreiben der Tests
 
@@ -52,10 +52,12 @@ Verwenden Sie die statischen Methoden der [Assert](microsoft-visualstudio-testto
 ## <a name="run-the-tests"></a>Tests ausführen
 
 1. Klicken Sie im Menü **Test** auf **Windows** > **Test-Explorer**.
-2. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
 
-3. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
-4. Wählen Sie **Tests** aus dem Dropdownmenü im **Ausgabefenster** aus, um die von der `Logger`-Klasse geschriebenen Meldungen anzuzeigen.
+1. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
+
+1. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
+
+1. Wählen Sie **Tests** aus dem Dropdownmenü im **Ausgabefenster** aus, um die von der `Logger`-Klasse geschriebenen Meldungen anzuzeigen.
 
    ![Testmeldungen im C++-Ausgabefenster](media/cpp-test-output-window.png)
 
@@ -87,7 +89,7 @@ TEST_METHOD(Method1)
 
 Die folgenden vordefinierten Merkmale befinden sich in `CppUnitTest.h`. Weitere Informationen finden Sie unter [Referenz für die C++-API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Makro|Beschreibung|
+|Makro|BESCHREIBUNG|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Verwenden Sie zum Definieren eines Merkmals das TEST_METHOD_ATTRIBUTE-Makro.|
 |`TEST_OWNER(ownerAlias)`|Verwenden Sie das vordefinierte Merkmal "Besitzer", um einen Besitzer der Testmethode anzugeben.|

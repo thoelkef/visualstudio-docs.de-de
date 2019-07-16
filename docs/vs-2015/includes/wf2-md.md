@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 8889cb801c81f83e3f5246cb1f7cef0e19a52fc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855700"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261176"
 ---
 Windows Workflow Foundation

@@ -7,22 +7,22 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705fe42cf158992bb041ac9b75348f7b25945631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892270"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747794"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Wählen Sie zwischen freigegebenen und mit versionsverwaltung durch das VSPackages
 Verschiedene Versionen von Visual Studio können auf demselben Computer gleichzeitig vorhanden sein. VSPackages kann eine beliebige Kombination von unterstützen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Versionen.
 
- Sie können die Seite-an-Seite-Installationen von VSPackages durch eine von zwei Strategien, die gemeinsam genutzten Strategie oder die Strategie mit versionsverwaltung durch das aktivieren. Sowohl das Vorhandensein mehrerer Versionen von aufzunehmen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und die zugehörigen Versionen der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Sie können die Seite-an-Seite-Installationen von VSPackages durch eine von zwei Strategien, die gemeinsam genutzten Strategie oder die Strategie mit versionsverwaltung durch das aktivieren. Sowohl das Vorhandensein mehrerer Versionen von aufzunehmen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und die zugehörigen Versionen von .NET Framework.
 
  In der freigegebenen Strategie ist registriert ein VSPackage für die Verwendung in mehreren Versionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bei der Strategie mit versionsverwaltung durch das mehrere VSPackage-DLLs installiert sind, eine für jede Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , die Sie unterstützen.
 

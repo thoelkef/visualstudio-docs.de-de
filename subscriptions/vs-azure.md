@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948459"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032205"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 
@@ -30,7 +30,6 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 |              Visual Studio Professional – Monatsabonnement              |        Nicht verfügbar        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD monatliches Guthaben      |                             Ja                             |
 |                        MSDN Platforms                        |     100 USD monatliches Guthaben     |                             Ja                             |
-|                 Visual Studio Dev Essentials                 | Kostenlose Dienste + 200 USD Guthaben | Kostenlose Dienste sind unbefristet.  Das Guthaben über 200 USD ist ein einmaliger Betrag. |
 |               Visual Studio Enterprise – NFR\*               |     150 USD monatliches Guthaben     |                             Ja                             |
 |                Visual Studio Enterprise – FTE                |     150 USD monatliches Guthaben     |                             Ja                             |
 |     Visual Studio Enterprise – Microsoft Partner Network     |     150 USD monatliches Guthaben     |                             Ja                             |
@@ -102,7 +101,7 @@ Wenn Sie ein weiteres aktives Visual Studio-Abonnement auf einer **anderen** Abo
 
 Wenn Ihr Abonnement ein Ausgabenlimit hat und Sie keine Maßnahmen ergreifen, bevor es abläuft, wird Ihr Azure-Abonnement deaktiviert. Um es in ein Angebot mit nutzungsbasierter Bezahlung umzuwandeln und weiter zu nutzen, fügen Sie ein Zahlungsmittel hinzu und [entfernen Sie Ihr Ausgabenlimit](/azure/billing/billing-spending-limit/).
 
-Wenn Sie dieses Visual Studio-Azure-Abonnement nicht fortsetzen möchten, können Sie Ihre Ressourcen wie virtuelle Computer und Datenbanken auf ein anderes Azure-Abonnement übertragen und dieses jederzeit [kündigen](http://azure.microsoft.com/support/cancel-account/).
+Wenn Sie dieses Visual Studio-Azure-Abonnement nicht fortsetzen möchten, können Sie Ihre Ressourcen wie virtuelle Computer und Datenbanken auf ein anderes Azure-Abonnement übertragen und dieses jederzeit [kündigen](https://azure.microsoft.com/support/cancel-account/).
 
 Wenn Sie der Meinung sind, dass Sie diese E-Mail irrtümlich erhalten haben, wenden Sie sich an den [Azure-Kundendienst](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 

@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695129"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Komponententests für generische Methoden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Generieren von Komponententests für generische Methoden genau wie bei anderen Methoden, wie in beschrieben [Vorgehensweise: Erstellen und Ausführen eines Komponententests](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Die folgenden Abschnitte enthalten Informationen und Beispiele zum Erstellen von Komponententests für generische Methoden.  
+Sie können Generieren von Komponententests für generische Methoden genau wie bei anderen Methoden, wie in beschrieben [Vorgehensweise: Erstellen und Ausführen eines Komponententests](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Die folgenden Abschnitte enthalten Informationen und Beispiele zum Erstellen von Komponententests für generische Methoden.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Typargumente und Typeinschränkungen  
  Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] einen Komponententest für eine generische Klasse generiert, z. B. `MyList<T>`, werden zwei Methoden generiert: eine generische Hilfsmethode und eine Testmethode. Wenn `MyList<T>` über eine oder mehrere Typeinschränkungen verfügt, muss das Typargument alle Typeinschränkungen erfüllen. Um sicherzustellen, dass der zu testende generische Code bei allen zulässigen Eingaben erwartungsgemäß funktioniert, ruft die Testmethode die generische Hilfsmethode mit allen zu testenden Einschränkungen auf.  
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
-> Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung  
  In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet, die nicht erfüllt wird. Der erste Abschnitt enthält Code aus dem Code-unter-Test-Projekt. Die Typeinschränkung ist hervorgehoben.  
@@ -198,5 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufbau eines Komponententests](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Aufbau eines Komponententests](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Komponententest für Code](../test/unit-test-your-code.md)

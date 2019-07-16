@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07be583099627bbff4f67a4c040f4c44ddbc6224
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: c8e1ffe6d6f32cfad137d5890715a5a0032a29d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58956030"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696685"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce und Anwendungseinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Anwendungseinstellungen für Windows Forms erleichtert das Erstellen, speichern und Verwalten von benutzerdefinierten Anwendungs- und benutzereinstellungen auf dem Client. Das folgende Dokument beschreibt die Funktionsweise der Anwendung-Dateien für konformitätseinstellungen in eine ClickOnce-Anwendung und wie ClickOnce Einstellungen migriert, wenn der Benutzer ein Upgrade auf die nächste Version.  
   
- Die folgenden Informationen gelten nur für der Application Settings-Standardanbieter der <xref:System.Configuration.LocalFileSettingsProvider> Klasse. Wenn Sie einen benutzerdefinierten Anbieter angeben, wird dieses Anbieters bestimmen, wie die Daten gespeichert und wie sie die Einstellungen zwischen den Versionen aktualisiert. Weitere Informationen zum Anbieter von Anwendungseinstellungen, finden Sie unter [Architektur der Anwendungseinstellungen](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ Die folgenden Informationen gelten nur für der Application Settings-Standardanbieter der <xref:System.Configuration.LocalFileSettingsProvider> Klasse. Wenn Sie einen benutzerdefinierten Anbieter angeben, wird dieses Anbieters bestimmen, wie die Daten gespeichert und wie sie die Einstellungen zwischen den Versionen aktualisiert. Weitere Informationen zum Anbieter von Anwendungseinstellungen, finden Sie unter [Architektur der Anwendungseinstellungen](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="application-settings-files"></a>Anwendungseinstellungen-Dateien  
  Anwendungseinstellungen verwendet zwei Dateien: *app*. exe.config "und" user.config, wobei *app* ist der Name Ihrer Windows Forms-Anwendung. User.config wird auf die Zeit des Clients die erste erstellt die Anwendung benutzerspezifische Einstellungen speichert. *App*. exe.config, im Gegensatz dazu befindet sich vor der Bereitstellung, wenn Sie Standardwerte für Einstellungen definieren. Visual Studio berücksichtigt diese Datei automatisch bei der Verwendung der **veröffentlichen** Befehl. Bei der Erstellung der ClickOnce-Anwendung mit Mage.exe oder MageUI.exe, Sie müssen sicherstellen, diese Datei ist im Lieferumfang Ihrer Anwendung des andere Dateien, wenn Sie sich das Anwendungsmanifest auffüllen.  
@@ -53,10 +53,10 @@ Anwendungseinstellungen für Windows Forms erleichtert das Erstellen, speichern 
  Wenn Sie Ihre eigenen Anwendungseinstellungen Wrapperklasse erstellt haben und Aktualisierungslogik anpassen möchten, können Sie überschreiben die <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> Methode.  
   
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce und Roaming-Einstellungen  
- ClickOnce funktioniert nicht mit dem roaming-Einstellungen, dadurch kann die Einstellungsdatei, die Sie über Computer hinweg in einem Netzwerk ausführen. Wenn Sie das roaming von Einstellungen benötigen, müssen Sie entweder ein Anwendungsanbieter für die Einstellungen, die Einstellungen über das Netzwerk speichert implementieren oder entwickeln Ihre eigenen benutzerdefinierten Einstellungenklassen zum Speichern von Einstellungen auf einem Remotecomputer befindet. Weitere Informationen im Anbieter von Anwendungseinstellungen finden Sie unter [Architektur der Anwendungseinstellungen](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ ClickOnce funktioniert nicht mit dem roaming-Einstellungen, dadurch kann die Einstellungsdatei, die Sie über Computer hinweg in einem Netzwerk ausführen. Wenn Sie das roaming von Einstellungen benötigen, müssen Sie entweder ein Anwendungsanbieter für die Einstellungen, die Einstellungen über das Netzwerk speichert implementieren oder entwickeln Ihre eigenen benutzerdefinierten Einstellungenklassen zum Speichern von Einstellungen auf einem Remotecomputer befindet. Weitere Informationen im Anbieter von Anwendungseinstellungen finden Sie unter [Architektur der Anwendungseinstellungen](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
- [Übersicht über Anwendungseinstellungen](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
+ [Übersicht über Anwendungseinstellungen](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
  [Übersicht über die ClickOnce-Cache](../deployment/clickonce-cache-overview.md)   
  [Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

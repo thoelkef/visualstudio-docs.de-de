@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetInfo
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c23e399a2debac06df239fe69ced6589d00f7774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a80ee7bfa6e9e17135683fede9de24f110b7ca6c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317900"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 Ruft eine Beschreibung des Computers, auf der Server Core ausgeführt wird.
@@ -38,12 +41,11 @@ int GetMachineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `Fields`
+## <a name="parameters"></a>Parameter
+`Fields`\
+[in] Eine Kombination von Flags aus der [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) Enumeration, die angeben, welche Felder der `pMachineInfo` ausgefüllt werden müssen.
 
- [in] Eine Kombination von Flags aus der [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) Enumeration, die angeben, welche Felder der `pMachineInfo` ausgefüllt werden müssen.
-
- `pMachineInfo`
+ `pMachineInfo`\
 
  [in, out] Ein [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) -Struktur, die mit einer Beschreibung des Computers gefüllt wird.
 

@@ -2,64 +2,45 @@
 title: Neuerungen in Visual Studio-Abonnements
 description: Hier erfahren Sie, welche neuen und aktualisierten Features Sie für die Verwaltung von Visual Studio-Abonnements verwenden können.
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 06/27/2019
 searchscope: VS Subscription
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969394"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465119"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Neuerungen in Visual Studio-Abonnements
 
-Das Abonnement-Vorteilspaket wird häufig aktualisiert, um es für Sie zu optimieren. Im Folgenden erhalten Sie weitere Informationen zu den neuesten Features, vierteljährlich sortiert.
+Das Abonnement-Vorteilspaket wird häufig aktualisiert, um es für Sie zu optimieren. Wir nehmen außerdem Verbesserungen an unseren Abonnenten- und Abonnementverwaltungsportalen vor, um Ihnen die bestmögliche Oberfläche zu bieten.  Im Folgenden erhalten Sie weitere Informationen zu den neuesten Features und Updates, nach Quartalen sortiert.
 
-## <a name="2018-q2-april-june"></a>2018 Q2 (April–Juni)
+## <a name="2019-q1-january-march"></a>Q1 2019 (Januar–März)
 
-Hier finden Sie eine kurze Zusammenfassung der Neuerungen im 2. Quartal.
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Maximale Nutzung zum [Abonnementverwaltungsportal](https://manage.visualstuido.com) hinzugefügt
+Mithilfe eines neuen Features im Verwaltungsportal für Visual Studio-Abonnements haben Sie immer im Blick, wie viele Abonnements Sie erworben und zugewiesen haben, und wissen, wie viele Abonnements auf jeder Stufe Sie sowohl während des vergangenen Jahres als auch über die gesamte Dauer Ihrer Vereinbarung hinweg maximal zugewiesen hatten. Dadurch können Sie Ihre aktuelle Abonnementnutzung nachvollziehen und zukünftige Käufe planen. 
 
-### <a name="cloud-administrators"></a>Cloudadministratoren
+  > [!div class="mx-imgBorder"]
+  > ![Screenshot: Menü „Maximum Usage“ (Maximale Auslastung)](_img/maximum-usage/maximum-usage-menu.png)
 
-Wir haben neue Funktionen für Cloudadministratoren hinzugefügt, durch welche die Verwaltung von Cloudabonnements vereinfacht wird:
+Sie können auch einen ständig aktualisierten Verlauf Ihrer Zuweisungen anzeigen, einschließlich Ihrer Käufe und Zuweisungen.   
 
-* [**Massenzuweisungen:**](/visualstudio/subscriptions/assign-license#bulk-assignments) Fügen Sie mehrere Abonnenten gleichzeitig hinzu und laden Sie diese hoch.
+Weitere Informationen finden Sie unserem Artikel zur [maximalen Nutzung](maximum-usage.md). 
 
-  ![Mehrere Benutzer über die Schaltfläche „Massenhinzufügen“ hinzufügen](media/bulk-add-multiple-subscribers.png)
+## <a name="2019-q2-april-june"></a>2019 Q2 (April – Juni)
 
-* [**Exportieren:**](/visualstudio/subscriptions/exporting-subscriptions) Exportieren Sie eine Liste Ihrer Benutzer sowie Details zu deren Zuweisungen. Eine Liste wie diese kann sich als nützlich erweisen, wenn Sie die Zuweisungen und Ablaufdaten nachverfolgen möchten.
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio mit GitHub Enterprise-Abonnements
+Auf der //build-Konferenz im Mai kündigte Microsoft an, dass Enterprise Agreement-Kunden jetzt Visual Studio-Abonnements erwerben können, in denen GitHub Enterprise enthalten ist.  So bietet sich eine einfache Möglichkeit, sowohl Visual Studio-Abonnements als auch GitHub Enterprise zu einem einzigen niedrigeren Preis zu erwerben.  
 
-   ![Abonnentenliste in Excel über die Schaltfläche „Exportieren“ exportieren](media/export-subscriber-list-to-csv.png)
+GitHub Enterprise ist mit Visual Studio Enterprise- und Visual Studio Professional-Abonnements verfügbar, die über Enterprise Agreements erworben wurden. Es gibt auch ein „Step-Up-Angebot“, mit dem Sie GitHub Enterprise auch dann hinzufügen können, wenn Ihr Enterprise Agreement nicht zur Verlängerung ansteht.
 
-* [**Massenbearbeitung:**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit) Bearbeiten Sie die Abonnementinformationen mehrerer Abonnenten gleichzeitig.
+Weitere Informationen zu Vorteilen, Optionen und Preise finden Sie unter https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
-  ![Mehrere Benutzer über die Schaltfläche „Massenbearbeitung“ bearbeiten](media/bulk-edit-multiple-subscribers.png)
-
-* Erkunden Sie die neuen Felder, die in der Benutzeroberfläche [**Abonnement hinzufügen**](assign-license.md) verfügbar sind:
-
-  * **E-Mail-Adresse für Benachrichtigungen:** Wenn Ihre Organisation Azure AD nicht verwendet und Sie für Benachrichtigungen eine andere E-Mail-Adresse als die E-Mail-Adresse für die Anmeldung verwenden möchten, können Sie diese hinzufügen.
-
-    ![Neue E-Mail-Adresse für Benachrichtigungen hinzufügen](media/add-new-subscriber-notification-email.png)
-
-  * **Kommunikationseinstellungen:** Wählen Sie die Sprache aus, die Sie zum Senden von Zuweisungs-E-Mails verwenden möchten.
-
-    ![Für das Senden von Benachrichtigungs-E-Mails zu verwendende Sprache ändern](media/change-subscriber-communication-preference.png)
-
-  * **Verweis hinzufügen:** Fügen Sie Verweise zu den von Ihnen verwalteten Abonnements hinzu.
-
-    ![Eigene Verweise zu den einzelnen Abonnements hinzufügen](media/add-subscriber-reference-notes.png)
-
-* [**Erneutes Senden von Zuweisungs-E-Mails:**](resend-assignment-email.md) Senden Sie eine Benachrichtigungs-E-Mail erneut an alle Benutzer in Ihrer Abonnentenliste, und zwar so oft wie gewünscht.
-
-  ![Aktivierungs-E-Mail nach Wunsch erneut an einen beliebigen Benutzer oder mehrere Benutzer senden](media/resend-subscriber-activation-emails.png)
-
-* [**Filtern:**](search-license.md) Organisieren und filtern Sie Ihre Abonnentendaten Ihren Anforderungen entsprechend.
-
-  ![Abonnentendaten basierend auf verfügbaren Feldern filtern](media/filter-subscriber-data.png)
+Wenn Ihre Organisation bereits über Visual Studio mit GitHub Enterprise-Abonnements verfügt, erhalten Sie weitere Informationen zum [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)-Abonnements in unserer Dokumentation.  
 
 Und das ist schon alles!
 

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44d877f7ff6774e8e52428f4a44acab99816c480
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d73f24287c4acc38440767d84ae72e862a5e5c75
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434424"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823913"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den
   
 - Konfigurieren der Pipeline für Bildinhalte zur Generierung einer Textur, die in einer Direct2D- oder JavaScript-App verwenden werden kann.  
   
-    - Generieren einer blockkomprimierten DDS-Datei.  
-  
-    - Generieren eines prämultiplizierten Alphas.  
-  
-    - Generieren von Mipmaps deaktivieren.  
+  - Generieren einer blockkomprimierten DDS-Datei.  
+
+  - Generieren eines prämultiplizierten Alphas.  
+
+  - Generieren von Mipmaps deaktivieren.  
   
 ## <a name="rendering-conventions-in-direct2d"></a>Renderingkonventionen in Direct2D  
  Texturen, die im Direct2D-Kontext verwendet werden, müssen diesen internen Direct2D-Renderingkonventionen entsprechen:  
@@ -40,11 +40,11 @@ Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den
   
 - Die Textur muss in DDS-Format angegeben werden, indem eines dieser Blockkomprimierungsformate verwendet wird:  
   
-    - BC1_UNORM-Komprimierung  
-  
-    - BC2_UNORM-Komprimierung  
-  
-    - BC3_UNORM-Komprimierung  
+  - BC1_UNORM-Komprimierung  
+
+  - BC2_UNORM-Komprimierung  
+
+  - BC3_UNORM-Komprimierung  
   
 - Mipmaps werden nicht unterstützt.  
   
@@ -54,7 +54,7 @@ Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den
   
 2. Konfigurieren Sie die Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die soeben erstellte Texturdatei, und wählen Sie dann **Eigenschaften** aus. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften**, **Allgemein** auf **Pipeline für Bildinhalte** fest. Stellen Sie sicher, dass die Eigenschaft **Inhalt** auf **JA** und die Option **Aus Build ausschließen** auf **NEIN** festgelegt ist. Wählen Sie dann die Schaltfläche **Übernehmen** aus. Die Eigenschaftenseite für die Konfiguration der **Pipeline für Bildinhalte** wird angezeigt.  
   
-3. Legen Sie das Ausgabeformat auf eines der blockkomprimierten Formate fest. Legen Sie die Eigenschaft **Komprimieren** auf der Seite **Konfigurationseigenschaften**, **Pipeline für Bildinhalte**, **Allgemein** auf **BC3_UNORM-Komprimierung (/compress:BC3_UNORM)** fest. Sie können abhängig von Ihren Anforderungen eines der anderen BC1-, BC2- oder BC3-Formate auswählen. Von Direct2D werden aktuell die Texturen "BC4", "BC5", "BC6" bzw. "BC7" nicht unterstützt. Weitere Informationen zu den verschiedenen BC-Formate finden Sie unter [Blockkomprimierung (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
+3. Legen Sie das Ausgabeformat auf eines der blockkomprimierten Formate fest. Legen Sie die Eigenschaft **Komprimieren** auf der Seite **Konfigurationseigenschaften**, **Pipeline für Bildinhalte**, **Allgemein** auf **BC3_UNORM-Komprimierung (/compress:BC3_UNORM)** fest. Sie können abhängig von Ihren Anforderungen eines der anderen BC1-, BC2- oder BC3-Formate auswählen. Von Direct2D werden aktuell die Texturen "BC4", "BC5", "BC6" bzw. "BC7" nicht unterstützt. Weitere Informationen zu den verschiedenen BC-Formate finden Sie unter [Blockkomprimierung (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
   
    > [!NOTE]
    > Das Format der Datei, die von der Pipeline für Bildinhalte erzeugt wird, legt das angegebene Komprimierungsformat fest. Dieses unterscheidet sich von der Eigenschaft **Format** des Quellbilds in der Bildbearbeitung, mit dem das Format der auf dem Datenträger gespeicherten Quellbilddatei festgelegt wird – und zwar als *Arbeitsformat*. Normalerweise möchten Sie nicht, dass ein Arbeitsformat komprimiert wird.  

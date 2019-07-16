@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977404"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531707"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
@@ -46,6 +46,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 |---------------|-----------------|
 |`Project`|Erforderliches Attribut.<br /><br /> Der Pfad der zu importierenden Projektdatei. Der Pfad kann Platzhalter enthalten. Die entsprechenden Dateien werden in sortierter Reihenfolge importiert. Mit dieser Funktion können Sie Code einem Projekt hinzufügen, indem Sie einfach die Codedatei einem Verzeichnis hinzufügen.|
 |`Condition`|Optionales Attribut.<br /><br /> Eine auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
+|`Sdk`| Optionales Attribut.<br /><br /> Verweist auf ein Projekt-SDK.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keiner

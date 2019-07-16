@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981675"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692341"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der komplexe Datenbindung in einem Projekt auf Dokumentebene. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server-Datenbank binden.
@@ -154,7 +154,7 @@ ms.locfileid: "62981675"
 
 ### <a name="to-modify-a-column-header"></a>So ändern Sie eine Spaltenüberschrift
 
-1. Klicken Sie auf die Zelle, die den Spaltenkopf enthält **"LastName"**.
+1. Klicken Sie auf die Zelle, die den Spaltenkopf enthält **"LastName"** .
 
 2. Typ **Nachname**, mit einem Leerzeichen zwischen den beiden Wörtern, und drücken Sie dann die **EINGABETASTE**.
 
@@ -174,7 +174,7 @@ ms.locfileid: "62981675"
 
 1. Wählen Sie eine Zelle innerhalb des List-Objekts.
 
-    Es wird eine neue Zeile am unteren Rand der Liste mit einem Sternchen (**\\***) in der ersten Zelle der neuen Zeile.
+    Es wird eine neue Zeile am unteren Rand der Liste mit einem Sternchen ( **\*** ) in der ersten Zelle der neuen Zeile.
 
 2. Fügen Sie die folgenden Informationen in der leeren Zeile.
 
@@ -210,7 +210,7 @@ ms.locfileid: "62981675"
 
 4. Klicken Sie auf den Pfeil in der **Titel** erneut die Kopfzeile der Spalte.
 
-5. Klicken Sie auf **(alle)**.
+5. Klicken Sie auf **(alle)** .
 
      Der Filter wird entfernt, und alle Zeilen angezeigt werden.
 

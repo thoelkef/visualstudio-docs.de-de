@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457277"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347715"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Ruft eine Darstellung abhängig vom Computer des Bereichs von physischen Adressen, die einen Stapelrahmen zugeordnet.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `paddrMin`\
+`paddrMin`\
+[out] Gibt die niedrigste physische Adresse, die diesen Stapelrahmen zugeordnet.
 
- [out] Gibt die niedrigste physische Adresse, die diesen Stapelrahmen zugeordnet.
-
- `paddrMax`\
-
- [out] Gibt die höchste physische Adresse, die diesen Stapelrahmen zugeordnet.
+`paddrMax`\
+[out] Gibt die höchste physische Adresse, die diesen Stapelrahmen zugeordnet.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

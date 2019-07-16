@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565159"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821660"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
 
@@ -79,7 +79,7 @@ Vor dem upgrade einer Datenbank sollten Sie der folgenden Kriterien:
 
     Die Datenbank aktualisiert wird, wird der LocalDB-Datenbank-Engine angefügt und ist nicht mehr kompatibel mit einer älteren Version von LocalDB.
 
-Sie können auch eine SQL Server Express-Verbindung, um LocalDB zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen, und wählen Sie dann ändern **Verbindung ändern**. In der **Verbindung ändern** Dialogfeld ändern den Namen des `(LocalDB)\MSSQLLocalDB`. In der **erweiterte Eigenschaften** Dialogfeld Feld, stellen Sie sicher, dass **Benutzerinstanz** nastaven NA hodnotu **"false"**.
+Sie können auch eine SQL Server Express-Verbindung, um LocalDB zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen, und wählen Sie dann ändern **Verbindung ändern**. In der **Verbindung ändern** Dialogfeld ändern den Namen des `(LocalDB)\MSSQLLocalDB`. In der **erweiterte Eigenschaften** Dialogfeld Feld, stellen Sie sicher, dass **Benutzerinstanz** nastaven NA hodnotu **"false"** .
 
 ### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>So aktualisieren eine Datei zum Verwenden der SQL Server Express-version
 
@@ -95,9 +95,9 @@ Sie können auch eine SQL Server Express-Verbindung, um LocalDB zu verwenden, in
 
 - Öffnen Sie in Visual Studio das Projekt, ohne dass eine Aktualisierung.
 
-    - Wählen Sie zum Ausführen des Projekts die **F5** Schlüssel.
+  - Wählen Sie zum Ausführen des Projekts die **F5** Schlüssel.
 
-    - Öffnen Sie zum Bearbeiten der Datenbank die *mdf* Datei **Projektmappen-Explorer**, und erweitern Sie im Knoten **Server-Explorer** zum Arbeiten mit Ihrer Datenbank.
+  - Öffnen Sie zum Bearbeiten der Datenbank die *mdf* Datei **Projektmappen-Explorer**, und erweitern Sie im Knoten **Server-Explorer** zum Arbeiten mit Ihrer Datenbank.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Um SQL Server Express, die Standard-Datenbank-Engine zu machen.
 

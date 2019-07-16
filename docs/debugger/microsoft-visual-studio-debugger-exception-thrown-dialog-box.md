@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408527"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261338"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (Ausnahmeverweis) (Dialogfeld)
 Im Programm ist eine Ausnahme aufgetreten. In diesem Dialogfeld wird die Art der ausgelösten Ausnahme angezeigt. Die Ausnahme muss durch den Code behandelt werden. Folgende Optionen stehen für das Behandeln der Ausnahme zur Verfügung:
@@ -44,4 +44,4 @@ Im Programm ist eine Ausnahme aufgetreten. In diesem Dialogfeld wird die Art der
 ## <a name="see-also"></a>Siehe auch
 - [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)
 - [Bewährte Methoden für Ausnahmen](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Ausnahmebehandlung](/cpp/windows/exception-handling-cpp-component-extensions)
+- [Ausnahmebehandlung](/cpp/extensions/exception-handling-cpp-component-extensions)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e7329acb3cdbff5c2f84fbd035867791012b2e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680502"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344465"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Beschreibt einen Stapelrahmen.
@@ -61,31 +64,44 @@ public struct FRAMEINFO {
 ```
 
 ## <a name="members"></a>Member
-M_dwValidFields eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder ausgefüllt werden.
+`m_dwValidFields`\
+Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder ausgefüllt werden.
 
-M_bstrFuncName den Namen der Funktion, die dem Stapelrahmen zugeordnet ist.
+`m_bstrFuncName`\
+Der Funktionsname, die dem Stapelrahmen zugeordnet wird.
 
-M_bstrReturnType der Rückgabetyp, die dem Stapelrahmen zugeordnet.
+`m_bstrReturnType`\
+Der Rückgabetyp, die dem Stapelrahmen zugeordnet.
 
-M_bstrArgs die Argumente der Funktion, die dem Stapelrahmen zugeordnet ist.
+`m_bstrArgs`\
+Die Argumente der Funktion, die dem Stapelrahmen zugeordnet werden soll.
 
-M_bstrLanguage die Sprache in dem die Funktion implementiert wird.
+`m_bstrLanguage`\
+Die Sprache, in der die Funktion implementiert wird.
 
-M_bstrModule der Modulnamen, die dem Stapelrahmen zugeordnet ist.
+`m_bstrModule`\
+Der Modulname, die dem Stapelrahmen zugeordnet wird.
 
-M_addrMin die minimale physischen Stapel-Adresse.
+`m_addrMin`\
+Die minimale physischen Stapel-Adresse.
 
-M_addrMAX die maximalen physischen Stapel-Adresse.
+`m_addrMAX`\
+Die maximale physischen Stapel-Adresse.
 
-M_pFrame der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt, das diesen Stapelrahmen darstellt.
+`m_pFrame`\
+Die [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt, das diesen Stapelrahmen darstellt.
 
-M_pFrame der [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt, das Modul darstellt, die diesen Stapelrahmen enthält.
+`m_pFrame`\
+Die [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) -Objekt, das Modul darstellt, die diesen Stapelrahmen enthält.
 
-M_fHasDebugInfo ungleich 0 (`TRUE`) ob Debuginformationen im angegebenen Bereich vorhanden ist.
+`m_fHasDebugInfo`\
+Ungleich 0 (`TRUE`) ob Debuginformationen im angegebenen Bereich vorhanden ist.
 
-M_fHasDebugInfo ungleich 0 (`TRUE`) Wenn der Stapelrahmen Code zugeordnet ist, die nicht mehr gültig ist.
+`m_fHasDebugInfo`\
+Ungleich 0 (`TRUE`) Wenn der Stapelrahmen Code zugeordnet ist, die nicht mehr gültig ist.
 
-M_fHasDebugInfo ungleich 0 (`TRUE`), wenn die Stapelrahmen von sitzungsbasierter Debug-Manager (SDM) versehen ist.
+`m_fHasDebugInfo`\
+Ungleich 0 (`TRUE`), wenn die Stapelrahmen von sitzungsbasierter Debug-Manager (SDM) versehen ist.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) Methode gefüllt werden soll. Diese Struktur befindet sich in einer Liste, der in enthalten ist auch die [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Schnittstelle, die wiederum von einem Aufruf zurückgegeben wird das [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) Methode.

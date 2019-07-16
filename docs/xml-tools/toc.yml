@@ -1,16 +1,21 @@
 - name: XML-Tools in Visual Studio
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: Übersicht
+      href: xml-tools-in-visual-studio.md
     - name: XML-Editor
-      href: xml-editor.md
       items:
+        - name: Übersicht
+          displayName: XML editor
+          href: xml-editor.md
         - name: Validierung von XML-Dokumenten
           href: xml-document-validation.md
         - name: IntelliSense-Features des XML-Editors
           href: xml-editor-intellisense-features.md
         - name: XML-Ausschnitte
-          href: xml-snippets.md
           items:
+            - name: Übersicht
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: Verwenden von XML-Ausschnitten
               href: how-to-use-xml-snippets.md
             - name: Generieren eines Ausschnitts aus einem XML-Schema
@@ -44,11 +49,14 @@
         - name: XML-Schemas (Dialogfeld)
           href: xml-schemas-dialog-box.md
     - name: XML-Schema-Designer
-      href: xml-schema-designer.md
       items:
+        - name: Übersicht
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: XML-Schema-Explorer
-          href: xml-schema-explorer.md
           items:
+            - name: XML-Schema-Explorer
+              href: xml-schema-explorer.md
             - name: Durchsuchen des Schemasets
               href: searching-the-schema-set.md
             - name: 'Sortieren, Filtern und Gruppieren'
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: Integration von XML-Literalen
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: Arbeitsbereich des XML-Schema-Designers
-          href: xml-schema-designer-workspace.md
+        - name: Arbeitsbereich
           items:
+            - name: Übersicht über Ansichten
+              href: xml-schema-designer-workspace.md
             - name: Ausgangsansicht
               href: start-view.md
             - name: Inhaltsmodellansicht
@@ -91,17 +100,19 @@
             - name: Ausgeben von Diagrammen
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: XSD-Beispieldateien
-              href: sample-xsd-files.md
               items:
                 - name: Einfaches Schema
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: Bestellungsschema
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: Beziehungen
                   href: sample-xsd-file-relationships.md
     - name: Debuggen von XSLT-Code
-      href: debugging-xslt.md
       items:
+        - name: Übersicht
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: 'Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets'
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: Auswerten eines XPath-Ausdrucks

@@ -1,25 +1,25 @@
 ---
 title: Installieren und Verwenden von Visual Studio für Mac hinter einer Firewall oder einem Proxyserver
-description: In diesem Dokument wird eine Liste der Hosts bereitgestellt, die in der Whitelist Ihrer Firewall enthalten sein müssen, damit Visual Studio für Mac (und die zugehörigen Workloads, einschließlich Xamarin) in einer Unternehmensumgebung funktioniert.
+description: In diesem Dokument wird eine Liste der Hosts bereitgestellt, die von Ihrer Firewall zugelassen sein müssen, damit Visual Studio für Mac (und die zugehörigen Workloads, einschließlich Xamarin) in einer Unternehmensumgebung funktioniert.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e7e8c3cd5f3ffded3387deb896df18d5b2ec705
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982872"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586886"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio für Mac hinter einer Firewall oder einem Proxyserver
 
-Wenn Ihre Organisation Sicherheitsmechanismen wie eine Firewall oder einen Proxyserver verwendet, dann sollten Sie einige Domänen-URLs in die Whitelist aufnehmen und verschiedene Ports und Protokolle öffnen bzw. deren Verwendung zulassen, um eine optimale Installation und Verwendung von Visual Studio für Mac und Azure-Diensten zu gewährleisten.
+Wenn Ihre Organisation Sicherheitsmechanismen wie eine Firewall oder einen Proxyserver verwendet, dann sollten Sie einige Domänen in die Zulassungsliste aufnehmen und verschiedene Ports und Protokolle öffnen bzw. deren Verwendung zulassen, um eine optimale Installation und Verwendung von Visual Studio für Mac und Azure-Diensten zu gewährleisten.
 
-- [**Installieren von Visual Studio für Mac:**](#install-visual-studio-for-mac) Diese Tabellen enthalten die URLs zur Whitelist, sodass Sie Zugriff auf alle Features und Workloads von Visual Studio für Mac haben.
+- [**Installieren von Visual Studio für Mac:** ](#install-visual-studio-for-mac) Diese Tabellen enthalten die Domänen, die Konnektivität zulassen müssen, damit Sie Zugriff auf alle Features und Workloads von Visual Studio für Mac haben.
 
-- [**Verwenden von Visual Studio für Mac:**](#use-visual-studio-for-mac) Diese Tabellen enthalten URLs zur Whitelist, sodass Sie Zugriff auf alle gewünschten Dienste und Features haben.
+- [**Verwenden von Visual Studio für Mac:** ](#use-visual-studio-for-mac) Diese Tabellen enthalten Domänen, die Konnektivität zulassen müssen, damit Sie Zugriff auf die entsprechenden Funktionen haben.
 
 ## <a name="install-visual-studio-for-mac"></a>Installieren von Visual Studio für Mac
 
@@ -38,6 +38,8 @@ Da der Visual Studio für Mac-Installer Dateien von verschiedenen Domänen und D
 | download.visualstudio.microsoft.com | Installer-Pakete|
 | xamarin.azureedge.net | Installer-Pakete|
 | developer.xamarin.com | Installer-Pakete|
+| static.xamarin.com | Installer-Pakete|
+| dl.xamarin.com | Installer-Pakete|
 | dc.services.visualstudio.com| Absturzberichte |
 
 ### <a name="third-party-domains"></a>Drittanbieterdomänen
@@ -50,7 +52,7 @@ Da der Visual Studio für Mac-Installer Dateien von verschiedenen Domänen und D
 
 ## <a name="use-visual-studio-for-mac"></a>Verwenden Sie Visual Studio für Mac
 
-Um sicherzustellen, dass Sie Zugriff auf alle Funktionen haben, die Sie in Visual Studio für Mac benötigen, während Sie sich hinter einem Proxy oder einer Firewall befinden, empfehlen wir, die folgenden Domänen und Ports in die Whitelist aufzunehmen.
+Um sicherzustellen, dass Sie Zugriff auf alle Funktionen haben, die Sie in Visual Studio für Mac benötigen, während Sie sich hinter einem Proxy oder einer Firewall befinden, empfehlen wir, die folgenden Domänen und Ports in die Zulassungsliste für den Zugriff aufzunehmen.
 
 ### <a name="general"></a>Allgemein
 

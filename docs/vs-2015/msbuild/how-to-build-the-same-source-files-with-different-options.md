@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045602"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821681"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +55,13 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest  
   
-- Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
+- Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Beispiel:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - ODER  
+     \- oder –  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -69,13 +69,13 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an  
   
-- Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Zum Beispiel:  
+- Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Beispiel:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - oder –  
+   \- oder:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  

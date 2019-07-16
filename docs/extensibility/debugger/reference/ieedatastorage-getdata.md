@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319648"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Ruft die angegebene Anzahl von Bytes aus dem Objekt ab.
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>Parameter
- `dataSize`\
+`dataSize`\
+[in] Die Anzahl der abzurufenden Bytes (der `data` Array muss mindestens diese Anzahl von Bytes enthalten).
 
- [in] Die Anzahl der abzurufenden Bytes (der `data` Array muss mindestens diese Anzahl von Bytes enthalten).
+`sizeGotten`\
+[out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
 
- `sizeGotten`\
-
- [out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
-
- `data`\
-
- [in, out] Ein Array mit den angeforderten Daten gefüllt werden soll.
+`data`\
+[in, out] Ein Array mit den angeforderten Daten gefüllt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

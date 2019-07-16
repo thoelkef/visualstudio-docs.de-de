@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c800ddd7221a1adfbc54198363e356eb5260c7cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436827"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674913"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
  [Debuggen und Testen der Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
-> Diese exemplarische Vorgehensweise basiert auf Visual Studio Professional, da diese Version die WPF-Anwendungsvorlage enthält, mit deren Hilfe Sie das Projekt für diese exemplarische Vorgehensweise erstellen. Visual Studio Express für Windows Desktop enthält diese Vorlage ebenfalls, nicht aber Visual Studio Express für Windows und Visual Studio Express für das Web. Einführende Informationen zur Verwendung von Visual Studio Express für Windows finden Sie unter [Developer Center für Windows Store-Apps](http://msdn.microsoft.com/windows/apps/br229519). Einführende Informationen zur Verwendung von Visual Studio Express für das Web finden Sie unter [Erste Schritte mit ASP.NET](http://www.asp.net/get-started). Außerdem bestimmen die Edition von Visual Studio und Einstellungen, die Sie verwenden, die Namen und Positionen einiger Elemente der Benutzeroberfläche. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> Diese exemplarische Vorgehensweise basiert auf Visual Studio Professional, da diese Version die WPF-Anwendungsvorlage enthält, mit deren Hilfe Sie das Projekt für diese exemplarische Vorgehensweise erstellen. Visual Studio Express für Windows Desktop enthält diese Vorlage ebenfalls, nicht aber Visual Studio Express für Windows und Visual Studio Express für das Web. Einführende Informationen zur Verwendung von Visual Studio Express für Windows finden Sie unter [Developer Center für Windows Store-Apps](https://msdn.microsoft.com/windows/apps/br229519). Einführende Informationen zur Verwendung von Visual Studio Express für das Web finden Sie unter [Erste Schritte mit ASP.NET](http://www.asp.net/get-started). Außerdem bestimmen die Edition von Visual Studio und Einstellungen, die Sie verwenden, die Namen und Positionen einiger Elemente der Benutzeroberfläche. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="BKMK_ConfigureIDE"></a> Konfigurieren der IDE  
  Wenn Sie Visual Studio zum ersten Mal starten, werden Sie aufgefordert, sich mit einem Microsoft Dienstkonto (Microsoft Service Account; MSA) anzumelden, [Anmelden bei Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Sie müssen sich nicht jetzt anmelden, sondern können dies auch später machen.  
   
  Beim Start von Visual Studio müssen Sie als Nächstes eine Einstellungskombination auswählen, die einen Satz an vordefinierten Anpassungen auf die IDE anwendet. Jede Einstellungskombination wurde entwickelt, um Ihnen die Entwicklung von Anwendungen zu vereinfachen.  
   
- Grundlage dieser exemplarischen Vorgehensweise sind die **Allgemeinen Entwicklungseinstellungen**, bei denen nur ein Mindestmaß an Anpassungen auf die IDE angewendet wird. Wenn Sie bereits C# oder Visual Basic (beides sind gute Optionen) ausgewählt haben, müssen Sie die Einstellungen nicht ändern.  Wenn Sie Ihre Einstellungen ändern möchten, können Sie den **Assistenten zum Importieren und Exportieren von Einstellungen**verwenden. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ Grundlage dieser exemplarischen Vorgehensweise sind die **Allgemeinen Entwicklungseinstellungen**, bei denen nur ein Mindestmaß an Anpassungen auf die IDE angewendet wird. Wenn Sie bereits C# oder Visual Basic (beides sind gute Optionen) ausgewählt haben, müssen Sie die Einstellungen nicht ändern.  Wenn Sie Ihre Einstellungen ändern möchten, können Sie den **Assistenten zum Importieren und Exportieren von Einstellungen**verwenden. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  Wenn Sie Visual Studio geöffnet haben, können Sie die Toolfenster, die Menüs und Symbolleisten und den Hauptfensterbereich erkennen. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.  
   
@@ -67,7 +67,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
    ![IDE mit dunklem Farbschema übernommen](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
-   Das im weiteren Verlauf dieser exemplarischen Vorgehensweise für Bilder verwendete Farbschema ist das helle Design. Weitere Informationen zum Anpassen der IDE finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Das im weiteren Verlauf dieser exemplarischen Vorgehensweise für Bilder verwendete Farbschema ist das helle Design. Weitere Informationen zum Anpassen der IDE finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_CreateApp"></a> Erstellen einer einfachen Anwendung  
   
@@ -92,7 +92,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
     ![Visual C#-WPF-Projekt „HelloWPFApp“ erstellen](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio erstellt das HelloWPFApp-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei "MainWindow.xaml" in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Weitere Informationen finden Sie unter [WPF Designer für Windows Forms-Entwickler](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
+   Visual Studio erstellt das HelloWPFApp-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der WPF-Designer zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei "MainWindow.xaml" in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen.  Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Weitere Informationen finden Sie unter [WPF Designer für Windows Forms-Entwickler](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:  
   
    Abbildung 5: Projektelemente  
   
@@ -150,7 +150,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 3. Speichern Sie die Änderungen durch Drücken von STRG + S oder mithilfe des Menüelements **Datei** .  
   
-   Anschließend fügen Sie dem Formular zwei [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b)-Steuerelemente hinzu.  
+   Anschließend fügen Sie dem Formular zwei [RadioButton](https://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b)-Steuerelemente hinzu.  
   
 ##### <a name="to-add-radio-buttons"></a>Hinzufügen von Optionsfeldern  
   
@@ -178,7 +178,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 2. Öffnen Sie das Kontextmenü für RadioButton2, indem Sie mit der rechten Maustaste bei ausgewähltem RadioButton2 klicken, wählen Sie **Text bearbeiten**, und geben Sie dann `Goodbye`ein.  
   
-   Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098)-Steuerelement.  
+   Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](https://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098)-Steuerelement.  
   
 ##### <a name="to-add-the-button-control"></a>Hinzufügen eines Button-Steuerelements  
   
@@ -248,7 +248,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 3. Speichern Sie die Anwendung.  
   
 ## <a name="BKMK_DebugTest"></a> Debuggen und Testen der Anwendung  
- Als Nächstes debuggen Sie die Anwendung, um nach Fehlern zu suchen und zu testen, ob beide Meldungsfelder ordnungsgemäß angezeigt werden. Die folgenden Anweisungen beschreiben, wie Sie den Debugger erstellen und starten. Lesen Sie jedoch später für weitere Informationen [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) und [Debuggen von WPF](../debugger/debugging-wpf.md).  
+ Als Nächstes debuggen Sie die Anwendung, um nach Fehlern zu suchen und zu testen, ob beide Meldungsfelder ordnungsgemäß angezeigt werden. Die folgenden Anweisungen beschreiben, wie Sie den Debugger erstellen und starten. Lesen Sie jedoch später für weitere Informationen [Erstellen einer WPF-Anwendung (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) und [Debuggen von WPF](../debugger/debugging-wpf.md).  
   
 ### <a name="find-and-fix-errors"></a>Suchen und Beheben von Fehlern  
  In diesem Schritt suchen Sie den Fehler, den wir zuvor verursacht haben, indem wir den Namen der Hauptfensters der XAML-Datei geändert haben.  

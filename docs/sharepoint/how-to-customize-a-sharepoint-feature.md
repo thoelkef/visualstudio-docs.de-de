@@ -36,7 +36,7 @@ ms.locfileid: "63429212"
 2. Doppelklicken Sie auf die *Feature1* Element, oder öffnen Sie das Kontextmenü für die *Feature1* Element aus, und wählen Sie dann **Ansicht-Designer**.
 
 ## <a name="view-the-packaged-manifest-file"></a>Die Manifestdatei für gepackte anzeigen
- Können Sie die Funktions-Designer ändern, und Generieren der Manifestdatei für gepackten für das Feature (*"Feature.xml"*). Anschließend können Sie den XML-Code für diese Datei in Visual Studio anzeigen.
+ Können Sie die Funktions-Designer ändern, und Generieren der Manifestdatei für gepackten für das Feature ( *"Feature.xml"* ). Anschließend können Sie den XML-Code für diese Datei in Visual Studio anzeigen.
 
 #### <a name="to-view-the-packaged-manifest-file"></a>Die Manifestdatei für gepackte anzeigen
 

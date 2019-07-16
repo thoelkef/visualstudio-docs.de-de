@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c02246b6e036046fb8d49f356c31d59f2403b8b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778572"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256350"
 ---
 Windows 8.x Store

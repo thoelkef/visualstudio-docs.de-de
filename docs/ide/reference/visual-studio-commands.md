@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789369"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043584"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 
-Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , das Fenster **Direkt** oder das Feld **Suchen/Befehl** aufrufen. In jedem Fall wird das Größer-als-Zeichen (`>`) verwendet, um anzugeben, dass ein Befehl folgt und kein Such- oder Debugvorgang.
+Sie können Visual Studio-Befehle im Fenster **Befehl**, im Fenster **Direkt** oder im Feld **Suchen/Befehl** eingeben. In jedem Fall gibt das Größer-als-Zeichen (`>`) an, dass ein Befehl und kein Such- oder Debugvorgang folgt.
 
-Eine vollständige Liste von Befehlen und ihrer Syntax finden Sie im Dialogfeld **Tastatur, Umgebungsoptionen** .
+Eine vollständige Liste von Befehlen und ihrer Syntax finden Sie auf der Seite **Tastatur** unter **Extras** > **Optionen** > **Umgebung**.
 
-Das Escapezeichen für Visual Studio-Befehle ist das Caretzeichen (^). Das direkt darauf folgende Zeichen wird also wörtlich interpretiert und nicht als Steuerzeichen. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter
+In lokalisierten Versionen der IDE können Befehlsnamen sowohl in der jeweiligen Landessprache der IDE als auch in Englisch eingegeben werden. So können Sie z. B. entweder `File.NewFile` oder `Fichier.NouveauFichier` in der französischen IDE zum Ausführen desselben Befehls eingeben.
+
+Für viele Befehle sind Aliase verfügbar. Eine Liste der Aliase für Befehle finden Sie unter [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md). Tastenkombinationen für Befehle finden Sie unter [Standardtastenkombinationen in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Escapezeichen
+
+Das Escapezeichen für Visual Studio-Befehle ist ein Caretzeichen (^). Das Escapezeichen bedeutet, dass das unmittelbar darauf folgende Zeichen wörtlich und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:
 
 ```
 >Edit.Find ^^t /regex
@@ -33,13 +39,11 @@ Das Escapezeichen für Visual Studio-Befehle ist das Caretzeichen (^). Das direk
 
 Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert.
 
-In lokalisierten Versionen der IDE können Befehlsnamen sowohl in der jeweiligen Landessprache der IDE als auch in Englisch eingegeben werden. So können Sie z. B. entweder `File.NewFile` oder `Fichier.NouveauFichier` in der französischen IDE zum Ausführen desselben Befehls eingeben.
+## <a name="commands-with-arguments"></a>Befehle mit Argumenten
 
-Für viele Befehle sind Aliase verfügbar. Eine Liste der Aliase für Befehle finden Sie unter [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
+Die folgenden Befehle verwenden Argumente oder Schalter:
 
-Die folgenden Befehle verwenden Argumente und/oder Schalter.
-
-| Befehlsname | Beschreibung |
+| Befehlsname | BESCHREIBUNG |
 | - | - |
 | [Vorhandenes Element hinzufügen](../../ide/reference/add-existing-item-command.md) | Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese. |
 | [Vorhandenes Projekt hinzufügen](../../ide/reference/add-existing-project-command.md) | Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu. |
@@ -78,4 +82,4 @@ Die folgenden Befehle verwenden Argumente und/oder Schalter.
 
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

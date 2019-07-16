@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811476"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032808"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -91,6 +91,9 @@ Wenn Sie einen Incident online einreichen, werden Sie zunächst aufgefordert, si
    > [!div class="mx-imgBorder"]
    > Screenshot: ![Technischer Support-Vorteil-Einreichung: Plan auswählen](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
+   > [!NOTE]
+   > Wenn Ihr Supportplan nicht angezeigt wird, kehren Sie zur vorherigen Seite zurück, und klicken Sie erneut auf **Weiter**.  Wenn der Supportplan weiterhin nicht angezeigt wird, kopieren Sie den Text Ihres Supportproblems in die Zwischenablage, aktualisieren Sie die Seite, und erstellen Sie das Supportproblem erneut.
+
 6. Befolgen Sie die verbleibenden Schritte (Schweregrad, Kontaktinformationen, Review).   Nachdem Sie Ihren Incident eingereicht haben, erhalten Sie eine Bestätigung, dass Ihr Incident erfolgreich eingereicht wurde, und dass Sie Dateien zum Fall hochladen können. Daraufhin wird dem Incident ein Supportmitarbeiter zugewiesen, der Sie über die von Ihnen gewählte Kontaktmethode zum Lösen des Problems kontaktieren wird.
 
 #### <a name="submit-an-incident-by-phone"></a>Übermitteln eines Incidents (per Telefon)
@@ -113,8 +116,8 @@ Sie müssen Ihre Vertrags-ID und Ihre Zugriffs-ID mit Ihrem Azure-Abonnement ver
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR ausgewählt<sup>2</sup>                                        | 2 Vorfälle                                                          |Ja         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 Vorfälle                                             |  Ja         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 Vorfälle                                               | Ja         |
-| Visual Studio Dev Essentials | NA | Nicht verfügbar |NA|
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
+||
 
 <sup>1</sup> *Umfasst: Imagine Premium, BizSpark. Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::ResumeProcess
 ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6656ab3c8fc164a114e624aa5a7449bef3cc10e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 52eabc3732dc1d91dca7d0ed84f2b3e00bb8e17f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351680"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 Prozess wird fortgesetzt.
@@ -36,10 +39,9 @@ int ResumeProcess ( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pProcess`
-
- [in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess, bis die Wiederaufnahme erfolgt darstellt.
+## <a name="parameters"></a>Parameter
+`pProcess`\
+[in] Ein [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Objekt, das den Prozess, bis die Wiederaufnahme erfolgt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück.

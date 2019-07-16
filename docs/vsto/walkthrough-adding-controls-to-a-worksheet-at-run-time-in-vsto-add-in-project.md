@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt'
+title: Hinzufügen von Steuerelementen zum Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04de1e652aae1de91695029c9af66c4ad331f789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbea2eaa226b590131f66003f37dfa52d7649270
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982111"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328412"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt
   Sie können einem beliebigen geöffneten Arbeitblatt Steuerelemente mithilfe eines Excel-VSTO-Add-In hinzufügen. Diese exemplarische Vorgehensweise veranschaulicht, wie Benutzer einem Arbeitsblatt mithilfe des Menübands ein <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> und <xref:Microsoft.Office.Tools.Excel.ListObject> hinzufügen können. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -49,7 +49,7 @@ ms.locfileid: "62982111"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>So erstellen Sie ein neues Excel-VSTO-Add-In-Projekt
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], erstellen Sie ein Excel-VSTO-Add-in-Projekt mit dem Namen **"ExcelDynamicControls"**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], erstellen Sie ein Excel-VSTO-Add-in-Projekt mit dem Namen **"ExcelDynamicControls"** . Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. Hinzufügen eines Verweises auf die **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** Assembly. Dieser Verweis ist erforderlich, um einem Arbeitsblatt ein Windows Forms-Steuerelement in dieser exemplarischen Vorgehensweise später programmgesteuert hinzuzufügen.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62982111"
 
 1. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (visueller Designer)**, und klicken Sie dann auf **hinzufügen**.
+2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (visueller Designer)** , und klicken Sie dann auf **hinzufügen**.
 
      Eine Datei namens **Ribbon1.cs** oder **Datei "Ribbon1.vb"** im Menüband-Designer wird geöffnet und zeigt eine standardmäßige Registerkarte und Gruppe.
 
@@ -105,7 +105,7 @@ ms.locfileid: "62982111"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. In **Projektmappen-Explorer**Option *Ribbon1.cs* oder *Datei "Ribbon1.vb"*.
+3. In **Projektmappen-Explorer**Option *Ribbon1.cs* oder *Datei "Ribbon1.vb"* .
 
 4. Auf der **Ansicht** Menü klicken Sie auf **Designer**.
 
@@ -137,7 +137,7 @@ ms.locfileid: "62982111"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>So entfernen Sie Steuerelemente aus dem Arbeitsblatt
 
-1. In **Projektmappen-Explorer**Option *"ThisAddIn.cs"* oder *"ThisAddIn.vb"*.
+1. In **Projektmappen-Explorer**Option *"ThisAddIn.cs"* oder *"ThisAddIn.vb"* .
 
 2. Auf der **Ansicht** Menü klicken Sie auf **Code**.
 

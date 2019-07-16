@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440997"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823704"
 ---
 # <a name="layer-diagrams-guidelines"></a>Ebenendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
  Eine Abhängigkeit ist überall dort vorhanden, wo ein Artefakt, das einer Ebene zugeordnet ist, einen Verweis auf ein Artefakt enthält, das einer anderen Ebene zugeordnet ist. Beispiel: Eine Klasse in einer Ebene deklariert eine Variable, deren Klasse sich auf einer anderen Ebene befindet. Vorhandene Abhängigkeiten können mittels Reverse Engineering (Zurückentwicklung) ermittelt werden.  
   
 > [!NOTE]
-> Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. Um anzuzeigen, welche Elemente über Abhängigkeiten verfügen, können Sie die Reverse-Engineering, mit der rechten Maustaste in eine oder mehrere Ebenen aus, und klicken Sie dann auf **Links anzeigen**. In **Ebenen-Explorer**, überprüfen Sie die **unterstützt die Validierung** Spalte. Abhängigkeiten werden nicht für Elemente, die für die in dieser Spalte wird Reverse Engineering **"false"**.  
+> Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. Um anzuzeigen, welche Elemente über Abhängigkeiten verfügen, können Sie die Reverse-Engineering, mit der rechten Maustaste in eine oder mehrere Ebenen aus, und klicken Sie dann auf **Links anzeigen**. In **Ebenen-Explorer**, überprüfen Sie die **unterstützt die Validierung** Spalte. Abhängigkeiten werden nicht für Elemente, die für die in dieser Spalte wird Reverse Engineering **"false"** .  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>So entwickeln Sie vorhandene Abhängigkeiten zwischen Ebenen zurück  
   
@@ -101,9 +101,9 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
 |Löschen einer unerwünschten Abhängigkeit|Klicken Sie auf die Abhängigkeit, und drücken Sie dann die **löschen**.|  
 |Ändern oder Einschränken der Richtung einer Abhängigkeit|Legen Sie dessen **Richtung** Eigenschaft.|  
 |Erstellen von neuen Abhängigkeiten|Verwenden der **Abhängigkeit** und **bidirektionale Abhängigkeit** Tools.<br /><br /> Doppelklicken Sie zum Zeichnen mehrerer Abhängigkeiten auf das Tool. Wenn Sie fertig sind, klicken Sie auf die **Zeiger** Tool, oder drücken Sie die **ESC** Schlüssel.|  
-|Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Geben Sie die Namespaces in der Ebene des **verboten Namespace Dependencies** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
-|Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in der Ebene des **Unzulässige Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
-|Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in der Ebene des **erforderliche Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
+|Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Geben Sie die Namespaces in der Ebene des **verboten Namespace Dependencies** Eigenschaft. Verwenden Sie ein Semikolon ( **;** ) trennen Sie die Namespaces.|  
+|Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in der Ebene des **Unzulässige Namespaces** Eigenschaft. Verwenden Sie ein Semikolon ( **;** ) trennen Sie die Namespaces.|  
+|Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in der Ebene des **erforderliche Namespaces** Eigenschaft. Verwenden Sie ein Semikolon ( **;** ) trennen Sie die Namespaces.|  
   
 ### <a name="Improving"></a> Verbessern der Struktur des Codes  
  Umgestaltungsänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Der Entwurf von gut strukturiertem Code lässt sich leicht in einem Ebenendiagramm abstrakt darstellen.  
@@ -134,7 +134,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
   
 - Ändern der Farben von Ebenen und Abhängigkeiten  
   
-    - Wählen Sie eine oder mehrere Ebenen oder Abhängigkeiten, mit der rechten Maustaste und klicken Sie dann auf **Eigenschaften**. In der **Eigenschaften** Fenster Bearbeiten der **Farbe** Eigenschaft.  
+  - Wählen Sie eine oder mehrere Ebenen oder Abhängigkeiten, mit der rechten Maustaste und klicken Sie dann auf **Eigenschaften**. In der **Eigenschaften** Fenster Bearbeiten der **Farbe** Eigenschaft.  
   
 ## <a name="Validate"></a> Überprüfen Sie den Code anhand des Diagramms  
  Wenn Sie das Diagramm bearbeitet haben, können Sie es jederzeit manuell oder automatisch beim Ausführen eines lokalen Builds oder von [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] anhand des Codes überprüfen.  

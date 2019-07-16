@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411103"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322830"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX-Manifest-Designer
 Ändert eine VSIX-Paket-manifest-Datei, die legt das Verhalten bei der Installation für Visual Studio-Erweiterung.
@@ -66,9 +66,9 @@ ms.locfileid: "63411103"
 
   **Tags** fügt die für suchhinweise verwendet werden soll.
 
-  **Anmerkungen zu dieser Version** gibt eine Datei (*.txt*, *RTF*), die Anmerkungen zu dieser Version enthält. Es kann sich dabei auch um die URL einer Website handeln, auf der die Anmerkungen zu diesem Release enthalten sind.
+  **Anmerkungen zu dieser Version** gibt eine Datei ( *.txt*, *RTF*), die Anmerkungen zu dieser Version enthält. Es kann sich dabei auch um die URL einer Website handeln, auf der die Anmerkungen zu diesem Release enthalten sind.
 
-  **Leitfaden für erste Schritte** gibt eine Datei (*.txt*, *RTF*), die Informationen zur Verwendung der Erweiterung oder den Inhalt im VSIX-Paket enthält. Dieses Handbuch wird angezeigt, wenn die Erweiterungsinstallation abgeschlossen ist. Nimmt auch die URL einer Website, die im Handbuch anzeigt.
+  **Leitfaden für erste Schritte** gibt eine Datei ( *.txt*, *RTF*), die Informationen zur Verwendung der Erweiterung oder den Inhalt im VSIX-Paket enthält. Dieses Handbuch wird angezeigt, wenn die Erweiterungsinstallation abgeschlossen ist. Nimmt auch die URL einer Website, die im Handbuch anzeigt.
 
   **URL mit weiteren Informationen** gibt die URL einer Website, die zusätzliche Informationen über das Produkt enthält.
 

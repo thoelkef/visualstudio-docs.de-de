@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446107"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687550"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,7 +283,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
  Weitere Informationen finden Sie in der Hilfe zum Remotedebugging (drücken Sie die **F1** im Remotedebugger-Fenster, oder klicken Sie auf **Hilfe / Verwendung**). Weitere Informationen finden Sie unter [.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013 (Änderungen beim Laden von Symbolen in der .NET-Remoteinstanz in Visual Studio 2012 und 2013)](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
 ## <a name="bkmk_winstoreAzure"></a> Remotedebugging in Windows Store und Azure-apps  
- Informationen zum Remotedebuggen mit Windows Store-apps finden Sie unter [Debuggen und Testen von Windows Store-apps auf einem Remotegerät in Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
+ Informationen zum Remotedebuggen mit Windows Store-apps finden Sie unter [Debuggen und Testen von Windows Store-apps auf einem Remotegerät in Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Informationen zum Debuggen in Azure finden Sie in den folgenden Themen:  
   
@@ -291,7 +291,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
   
 - [Debuggen des .NET-Backends in Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
-- Einführung in das Remotedebuggen auf Azure-Websites ([Teil 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [Teil 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [Teil 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Einführung in das Remotedebuggen auf Azure-Websites ([Teil 1](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [Teil 2](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [Teil 3](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   

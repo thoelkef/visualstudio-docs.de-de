@@ -32,15 +32,15 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
  Dateien für eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung verwaltet werden, der **Anwendungsdateien** klicken Sie im Dialogfeld aus zugegriffen werden kann die **veröffentlichen** auf der Seite die **Projekt-Designer**.  
   
- Es ist zunächst eine einzelne Dateigruppe mit dem Namen **(erforderlich)**. Sie können weitere Dateigruppen erstellen und Dateien zuweisen. Sie können nicht geändert werden die **Downloadgruppe** für Dateien, die für die Ausführung der Anwendung erforderlich sind. Z. B. die oder der Anwendung .exe-Dateien als markiert Datendateien zu gehören, müssen die **(erforderlich)** Gruppe.  
+ Es ist zunächst eine einzelne Dateigruppe mit dem Namen **(erforderlich)** . Sie können weitere Dateigruppen erstellen und Dateien zuweisen. Sie können nicht geändert werden die **Downloadgruppe** für Dateien, die für die Ausführung der Anwendung erforderlich sind. Z. B. die oder der Anwendung .exe-Dateien als markiert Datendateien zu gehören, müssen die **(erforderlich)** Gruppe.  
   
- Veröffentlichen Sie den Status einer Datei wird mit markiert **(Auto)**. Beispielsweise weist der Anwendung .exe Veröffentlichungsstatus **einschließen (Auto)** standardmäßig.  
+ Veröffentlichen Sie den Status einer Datei wird mit markiert **(Auto)** . Beispielsweise weist der Anwendung .exe Veröffentlichungsstatus **einschließen (Auto)** standardmäßig.  
   
  Dateien mit der **Buildvorgang** -Eigenschaftensatz auf **Content** werden als Dateien der Anwendung bestimmt und wird als Standardeinstellung markiert. Sie können enthalten, ausgeschlossen oder als Datendateien markiert werden. Die Ausnahmen sind wie folgt aus:  
   
 - Datendateien, z. B. SQL-Datenbank (MDF- und MDB) und XML-Dateien werden standardmäßig als Datendateien gekennzeichnet.  
   
-- Verweise auf Assemblys (DLL-Dateien) werden wie folgt gekennzeichnet, wenn Sie den Verweis hinzufügen: Wenn **lokale Kopie** ist **"false"**, er ist standardmäßig als erforderliche Assembly gekennzeichnet (**Voraussetzung (Auto)**), die muss im GAC vorhanden sein, bevor die Anwendung installiert wird. Wenn **lokale Kopie** ist **"true"**, die Assembly ist standardmäßig als eine Anwendungsassembly gekennzeichnet (**einschließen (Auto)**) und in den Ordner der Anwendung, bei der Installation kopiert werden. Ein COM-Verweis wird angezeigt, der **Anwendungsdateien** Dialogfeld Feld (als OCX-Datei) nur, wenn die **isoliert** -Eigenschaftensatz auf **"true"**. Standardmäßig werden sie berücksichtigt.  
+- Verweise auf Assemblys (DLL-Dateien) werden wie folgt gekennzeichnet, wenn Sie den Verweis hinzufügen: Wenn **lokale Kopie** ist **"false"** , er ist standardmäßig als erforderliche Assembly gekennzeichnet (**Voraussetzung (Auto)** ), die muss im GAC vorhanden sein, bevor die Anwendung installiert wird. Wenn **lokale Kopie** ist **"true"** , die Assembly ist standardmäßig als eine Anwendungsassembly gekennzeichnet (**einschließen (Auto)** ) und in den Ordner der Anwendung, bei der Installation kopiert werden. Ein COM-Verweis wird angezeigt, der **Anwendungsdateien** Dialogfeld Feld (als OCX-Datei) nur, wenn die **isoliert** -Eigenschaftensatz auf **"true"** . Standardmäßig werden sie berücksichtigt.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Dateien im Dialogfeld für die Dateien der Anwendung hinzufügen  
   

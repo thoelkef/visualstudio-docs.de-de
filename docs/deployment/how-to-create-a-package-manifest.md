@@ -38,7 +38,7 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
 
 2. Erstellen Sie ein Unterverzeichnis mit dem Namen des Gebietsschemas, z. B. *En* für Englisch.
 
-3. In Visual Studio, erstellen Sie eine XML-Datei mit dem Namen *"Package.xml"*, und speichern sie die *C:\package\en* Ordner.
+3. In Visual Studio, erstellen Sie eine XML-Datei mit dem Namen *"Package.xml"* , und speichern sie die *C:\package\en* Ordner.
 
 4. Fügen Sie XML-Code, zum Auflisten der Name der Bootstrapper-Pakets, die Kultur für dieses lokalisierte Paketmanifest und die optionale Lizenzvertrag. Die folgende XML-Code verwendet die Variablen `DisplayName` und `Culture`, die in einem späteren Element definiert sind.
 

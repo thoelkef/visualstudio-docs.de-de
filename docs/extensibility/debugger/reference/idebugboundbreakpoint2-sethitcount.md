@@ -8,17 +8,20 @@ helpviewer_keywords:
 - SetHitCount method
 - IDebugBoundBreakpoint2::SetHitCount method
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac7cbfa337bfdcf54d213b299badc9ca56d8dcba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b8e59fadb019124cca111f23e99220b77df2a88d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877288"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314472"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Legt die Trefferanzahl für den gebundenen Haltepunkt fest.
@@ -37,10 +40,9 @@ int SetHitCount( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `dwHitCount`
-
- [in] Die Trefferanzahl festgelegt.
+## <a name="parameters"></a>Parameter
+`dwHitCount`\
+[in] Die Trefferanzahl festgelegt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).

@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778656"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531923"
 ---
 # <a name="options-text-editor-general"></a>Optionen, Text-Editor, Allgemein
 
@@ -96,5 +96,5 @@ Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die si
 - [Optionen, Text-Editor, Alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Optionen, Text-Editor, Dateierweiterung](../../ide/reference/options-text-editor-file-extension.md)
 - [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Anpassen des Editors](../../ide/customizing-the-editor.md)
+- [Anpassen des Editors](../how-to-change-text-case-in-the-editor.md)
 - [Verwenden von IntelliSense](../../ide/using-intellisense.md)

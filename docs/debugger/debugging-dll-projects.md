@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ec10f226ad139ffbeb46badc6ef3dd6c384af91
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852492"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714939"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debuggen von DLLs in Visual Studio (C#, C++, Visual Basic F#)
 
@@ -76,7 +76,7 @@ Bei C/C++-Projekten können Sie in den Eigenschaftenseiten des Projekts, anstatt
 
 1. Am oberen Rand der **Eigenschaften** Bereich unter **Konfiguration**Option **alle Konfigurationen**.
 
-1. Klicken Sie unter **C/C++-** > **allgemeine** > **Additional Include Directories**, geben Sie den Ordner, die Header-Dateien verfügt.
+1. Klicken Sie unter **C/C++-**  > **allgemeine** > **Additional Include Directories**, geben Sie den Ordner, die Header-Dateien verfügt.
 
 1. Klicken Sie unter **Linker** > **allgemeine** > **zusätzliche Bibliotheken Verzeichnisse**, geben Sie den Ordner, die LIB-Dateien enthält.
 
@@ -84,7 +84,7 @@ Bei C/C++-Projekten können Sie in den Eigenschaftenseiten des Projekts, anstatt
 
 1. Klicken Sie auf **OK**.
 
-Weitere Informationen zu C++-projekteinstellungen, finden Sie unter [Eigenschaftenseiten (Visual C++)](/cpp/ide/property-pages-visual-cpp).
+Weitere Informationen zu C++-projekteinstellungen, finden Sie unter [Eigenschaftenseiten (Visual C++)](/cpp/build/reference/property-pages-visual-cpp).
 
 ## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Erstellen einer Debugversion
 

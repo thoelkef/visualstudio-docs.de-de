@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675341"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Bereitstellen von Rückgängig-Unterstützung für Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
   
 - Geben Persistenz und CodeDOM-Unterstützung durch die Implementierung der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> und <xref:System.ComponentModel.Design.IComponentChangeService> Klassen.  
   
-  Weitere Informationen zum Schreiben von Designern, die mit [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], finden Sie unter [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Weitere Informationen zum Schreiben von Designern, die mit [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], finden Sie unter [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
   Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet eine standardmäßige rückgängig-Infrastruktur durch:  
   
@@ -45,7 +45,7 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
   
 - Nutzt standard CodeDOM-basierten Code-Generierung und Analysesystem für die codegenerierung und Persistenz.  
   
-     Weitere Informationen zum Arbeiten mit Visual Studio CodeDOM-Unterstützung finden Sie unter [dynamische Quelle-Codegenerierung und-Kompilierung](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Weitere Informationen zum Arbeiten mit Visual Studio CodeDOM-Unterstützung finden Sie unter [dynamische Quelle-Codegenerierung und-Kompilierung](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Verwenden Sie explizite Designer Rückgängig-Unterstützung  
  Designer müssen eigene rückgängig-Verwaltung angeben, wenn sie eine grafische Benutzeroberfläche, bezeichnet als Adapter anzeigen, als die vom verwenden <xref:System.Windows.Forms.Control>.  
@@ -105,4 +105,4 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Erweitern der Entwurfszeitunterstützung](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Erweitern der Entwurfszeitunterstützung](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

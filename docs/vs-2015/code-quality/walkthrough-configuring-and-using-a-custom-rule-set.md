@@ -49,7 +49,7 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
 1. Klicken Sie im Menü **Datei** auf **Neu** und anschließend auf **Projekt**.  
   
-2. In der **neues Projekt** Dialogfeld **Projekttypen**, klicken Sie auf **Visual C#-**.  
+2. In der **neues Projekt** Dialogfeld **Projekttypen**, klicken Sie auf **Visual C#-** .  
   
 3. Klicken Sie unter **Visual C#-** Option **Klassenbibliothek**.  
   
@@ -130,7 +130,7 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
 5. Klicken Sie auf das Menü "Ansicht" Fenster "Eigenschaften" aus. Typ **Meine benutzerdefinierten Regelsatz** im Feld Name, der das Toolfenster "Eigenschaften". Dies ändert den Anzeigenamen der neuen Regel legen Sie in der [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE.  
   
-6. Auf der **Datei** Menü klicken Sie auf **alle Microsoft-Regeln.ruleSet** legen Sie die benutzerdefinierte Regel zu speichern. Navigieren Sie in den Stammordner des Projekts. In **Dateinamen** Textfeld **"MyCustomRuleSet"**. Der benutzerdefinierte Regelsatz kann nun für die Verwendung mit Ihrem Projekt ausgewählt werden.  
+6. Auf der **Datei** Menü klicken Sie auf **alle Microsoft-Regeln.ruleSet** legen Sie die benutzerdefinierte Regel zu speichern. Navigieren Sie in den Stammordner des Projekts. In **Dateinamen** Textfeld **"MyCustomRuleSet"** . Der benutzerdefinierte Regelsatz kann nun für die Verwendung mit Ihrem Projekt ausgewählt werden.  
   
    Mit der neue Regelsatz, der erstellt wird müssen Sie jetzt so konfigurieren Sie die projekteinstellungen, um anzugeben, dass Sie die neue Regel festlegen, damit verwenden möchten.  
   
@@ -140,7 +140,7 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
 2. In der **Eigenschaften** auf **Codeanalyse**.  
   
-    In der **diesen Regelsatz ausführen** Dropdown-Liste, klicken Sie auf  **\<durchsuchen... >**. Navigieren Sie in den Stammordner des Codeprojekts aus, und wählen Sie dann **"MyCustomRuleSet.RuleSet" aus**. Dies ist der neue Regelsatz, den Sie im vorherigen Verfahren erstellt haben.  
+    In der **diesen Regelsatz ausführen** Dropdown-Liste, klicken Sie auf  **\<durchsuchen... >** . Navigieren Sie in den Stammordner des Codeprojekts aus, und wählen Sie dann **"MyCustomRuleSet.RuleSet" aus**. Dies ist der neue Regelsatz, den Sie im vorherigen Verfahren erstellt haben.  
   
 3. Auf der **Datei** Menü klicken Sie auf **speichern** auf die Projektkonfiguration zu speichern. Der benutzerdefinierte Regelsatz kann jetzt mit Ihrem Projekt verwendet werden.  
   

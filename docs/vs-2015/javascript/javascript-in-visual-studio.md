@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433484"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705788"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben von JavaScript-Code in der Visual Studio-IDE können Sie die meisten oder alle Standardbearbeitungshilfen (Codeausschnitte, IntelliSense, usw.) verwenden. Sie können JavaScript-Code für viele Arten von Anwendungen und Dienste schreiben.
 
- Eine Dokumentation zur JavaScript-Sprachreferenz finden Sie unter [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
+ Eine Dokumentation zur JavaScript-Sprachreferenz finden Sie unter [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
 
  Unter Umständen sind bestimmte Versionen von Visual Studio oder bestimmte Visual Studio-Erweiterungen erforderlich, um bestimmte Anwendungstypen und Dienste mit HTML und JavaScript zu entwickeln. Die folgende Liste enthält Links für weitere Informationen.
 
@@ -29,7 +29,7 @@ JavaScript ist eine der Hauptprogrammiersprachen in Visual Studio. Zum Schreiben
 
 - Um [Windows Store](http://dev.windows.com/develop)-, [Windows Phone](http://dev.windows.com/develop)- und universelle Apps (die beide Plattformen unterstützen) zu erstellen, [laden Sie die Tools herunter](https://developer.microsoft.com/windows/downloads).
 
-- Weitere Informationen zum Erstellen von cloudbasierten Diensten finden Sie auf der [Microsoft Azure-Website](http://azure.microsoft.com/documentation/).
+- Weitere Informationen zum Erstellen von cloudbasierten Diensten finden Sie auf der [Microsoft Azure-Website](https://azure.microsoft.com/documentation/).
 
 - Weitere Informationen zum Erstellen von Websites und Web-Apps [finden Sie auf der ASP.NET-Website](http://www.asp.net/get-started/websites).
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetRegistryRoot
 ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761a8509958c60746f7e5312fa5f5e13631acc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f30a2fe4a239b76d9eb984cdc4cea6485b8dd5d5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875426"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352506"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 Legt den Registrierungsstamm für die Debug-Engine (DE) fest.
@@ -36,10 +39,9 @@ int SetRegistryRoot( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pszRegistryRoot`
-
- [in] Der Registrierungsstamm verwenden.
+## <a name="parameters"></a>Parameter
+`pszRegistryRoot`\
+[in] Der Registrierungsstamm verwenden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

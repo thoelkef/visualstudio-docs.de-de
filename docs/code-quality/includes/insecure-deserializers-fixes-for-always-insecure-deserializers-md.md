@@ -4,11 +4,11 @@ ms.author: paulming
 ms.date: 05/01/2019
 ms.topic: include
 ms.openlocfilehash: bc423f10cfbae0b7a0cdaedb72f6891a0e12d228
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135418"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67254369"
 ---
 - Wenn möglich, verwenden Sie stattdessen einen sicheren Serialisierer und **nicht es Angreifern ermöglichen, geben Sie einen beliebigen Typ zum Deserialisieren**. Einige Serialisierungsprogramme sicherer gehören:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>

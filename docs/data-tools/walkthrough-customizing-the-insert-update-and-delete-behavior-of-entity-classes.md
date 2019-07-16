@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anpassen des Einfüge-, Update- und Löschverhaltens in Entitätsklassen'
+title: Einfügen/Aktualisieren/löschen-Verhalten von Entitätsklassen anpassen
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565406"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262906"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Anpassen des Einfüge-, Update- und Löschverhaltens in Entitätsklassen
 
@@ -195,7 +195,7 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 
 5. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft **Einfügen** aus.
 
-6. Klicken Sie auf die Auslassungszeichen (**...**) neben **Laufzeit verwenden**, um das Dialogfeld **Verhalten konfigurieren** zu öffnen.
+6. Klicken Sie auf die Auslassungszeichen ( **...** ) neben **Laufzeit verwenden**, um das Dialogfeld **Verhalten konfigurieren** zu öffnen.
 
 7. Wählen Sie **Anpassen** aus.
 

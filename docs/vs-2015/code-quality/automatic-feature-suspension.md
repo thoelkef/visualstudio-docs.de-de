@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704017"
 ---
 # <a name="automatic-feature-suspension"></a>Automatisches Anhalten von Features
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Wenn Ihre verfügbaren Arbeitsspeicher des Systems auf 200 MB oder weniger fäll
 
 - Vollständige projektmappenanalyse für Visual C# und Visual Basic ist deaktiviert.
 
-- [Die automatische Speicherbereinigung](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) mit niedriger Latenz im Modus für Visual c# und Visual Basic sind deaktiviert.
+- [Die automatische Speicherbereinigung](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) mit niedriger Latenz im Modus für Visual c# und Visual Basic sind deaktiviert.
 
 - Visual Studio-Caches werden geleert.
 
@@ -62,5 +62,5 @@ Darüber hinaus sind für interne Visual Studio-Vorgänge verwendeten Caches ebe
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Aktivieren und Deaktivieren der vollständigen Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Grundlagen der Garbage Collection](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Grundlagen der Garbage Collection](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Überlegungen zur Leistung bei großen Projektmappen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - PROGRAM_DESTROY_FLAGS enumeration
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4958a1ee7b53fc975e126174fa6bd3f02daaa9ab
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d6bd8a309612ce2681649bb4602014dc3c627e9d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460873"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309290"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 Listet die gültigen Werte des Programms zerstört Flags.
@@ -41,7 +41,8 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 ```
 
 ## <a name="fields"></a>Felder
- Zerstören von PROGRAM_DESTROY_CONTINUE_DEBUGGING programmieren, aber mit dem Debuggen fortfahren.
+ `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
+ Programm löschen, jedoch mit dem Debuggen fortfahren.
 
 ## <a name="remarks"></a>Hinweise
  Die Enumeration zurückgegeben wird, durch die [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) Methode.

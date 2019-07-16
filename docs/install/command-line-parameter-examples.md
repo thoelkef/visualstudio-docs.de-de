@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f35348e6704ffa822ba5dee93ad930f209004e1
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974234"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586866"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Beispiele für Befehlszeilenparameter für die Installation von Visual Studio
 
@@ -67,7 +67,24 @@ Listen der Workloads und Komponenten, die Sie über die Befehlszeile installiere
 * Verwenden Sie diesen Befehlszeilenparameter in Dateien oder Skripts, um den Anschluss des Visual Studio-Installers abzuwarten, bevor der nächste Befehl ausgeführt wird. Für Batchdateien enthält die `%ERRORLEVEL%`-Umgebungsvariable den Rückgabewert des Befehls, so wie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md) dokumentiert. Bei einigen Befehlszeilen-Hilfsprogrammen sind zusätzliche Parameter erforderlich, damit der Abschluss abgewartet und der Rückgabewert des Installers abgerufen wird. Nachfolgend sehen Sie ein Beispiel der zusätzlichen Parameter, die mit dem PowerShell-Skriptbefehl „Start-Process“ verwendet werden:
 
    ```cmd
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
+   echo %errorlevel%
+   ```
+
+   ```powershell
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   ```
+
+   oder
+
+   ```powershell
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = "vs_enterprise.exe"
+    $startInfo.Arguments = "--all --quiet --wait"
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    $process.Start()
+    $process.WaitForExit()
    ```
 
 * Der erste Parameter „--wait“ wird vom Visual Studio-Installer und der zweite Parameter „-Wait“ von „Start-Process“ verwendet, um den Abschluss abzuwarten. Der Parameter „-PassThru“ wird von „Start-Process“ verwendet, um den Exitcode des Installers für seinen Rückgabewert zu verwenden.

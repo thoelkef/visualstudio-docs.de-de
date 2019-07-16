@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875313"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330159"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Fügt eine Debug-Engine (DE) an ein Programm oder Programme. Aufgerufen von der Sitzungs-Manager (SDM) ein, wenn die DE ausgeführten in-Process an das SDM befindet.
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pProgram`
+## <a name="parameters"></a>Parameter
+`pProgram`\
+[in] Ein Array von [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Programme anzufügenden darstellende – Objekte. Hierbei handelt es sich um Anschluss-Programme.
 
- [in] Ein Array von [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Programme anzufügenden darstellende – Objekte. Hierbei handelt es sich um Anschluss-Programme.
+`rgpProgramNodes`\
+[in] Ein Array von [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekte, die programmknoten, einen für jedes Programm darstellen. Die programmknoten in diesem Array darstellen derselben Programme wie in `pProgram`. Die programmknoten erhalten, damit die DE die Programme zum Anfügen an identifizieren kann.
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in] Anzahl der Programme und/oder programmknoten in der `pProgram` und `rgpProgramNodes` Arrays.
 
- [in] Ein Array von [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekte, die programmknoten, einen für jedes Programm darstellen. Die programmknoten in diesem Array darstellen derselben Programme wie in `pProgram`. Die programmknoten erhalten, damit die DE die Programme zum Anfügen an identifizieren kann.
+`pCallback`\
+[in] Die [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Objekt, das verwendet werden, das SDM-Debug-Ereignissen an.
 
- `celtPrograms`
-
- [in] Anzahl der Programme und/oder programmknoten in der `pProgram` und `rgpProgramNodes` Arrays.
-
- `pCallback`
-
- [in] Die [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Objekt, das verwendet werden, das SDM-Debug-Ereignissen an.
-
- `dwReason`
-
- [in] Ein Wert aus der [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) -Enumeration, die den Grund für das Anfügen von diesen Programmen angibt. Weitere Informationen finden Sie im Abschnitt "Hinweise".
+`dwReason`\
+[in] Ein Wert aus der [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) -Enumeration, die den Grund für das Anfügen von diesen Programmen angibt. Weitere Informationen finden Sie im Abschnitt "Hinweise".
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

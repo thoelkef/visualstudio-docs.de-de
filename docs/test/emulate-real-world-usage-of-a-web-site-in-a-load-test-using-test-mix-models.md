@@ -9,14 +9,14 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785735"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461583"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells
+# <a name="test-mix-models-overview"></a>Testmischungsmodelle – Übersicht
 
 Sie können Auslastungsmodelloptionen verwenden, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen. Dies ist wichtig, da ein Auslastungstest, der nicht auf einem genauen Auslastungsmodell basiert, irreführende Ergebnisse generieren kann.
 
@@ -40,7 +40,8 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 - **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequenzielle Reihenfolge](#SequentialOrder).
 
 ### <a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
- Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den bestimmt wird, wie häufig der Test als nächster Test zur Ausführung ausgewählt wird. Beispielsweise können die folgenden Prozentsatzwerte drei Tests zugewiesen werden:
+
+Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den bestimmt wird, wie häufig der Test als nächster Test zur Ausführung ausgewählt wird. Beispielsweise können die folgenden Prozentsatzwerte drei Tests zugewiesen werden:
 
 - TestA (50 %)
 
@@ -48,13 +49,14 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 - TestC (15 %)
 
-  Wenn Sie diese Einstellung verwenden, basiert der nächste zu startende Test auf den zugewiesenen Prozentsätzen. Dabei wird die Anzahl der virtuellen Benutzer, die die einzelnen Tests gerade ausführen, nicht berücksichtigt.
+Wenn Sie diese Einstellung verwenden, basiert der nächste zu startende Test auf den zugewiesenen Prozentsätzen. Dabei wird die Anzahl der virtuellen Benutzer, die die einzelnen Tests gerade ausführen, nicht berücksichtigt.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Prozentsatz nach virtuellen Benutzern
  Dieses Testmischungsmodell bestimmt den Prozentsatz virtueller Benutzer, die einen bestimmten Test ausführen. Wenn Sie dieses Testmischungsmodell verwenden, basiert der nächste zu startende Test nicht nur auf den zugewiesenen Prozentsätzen, sondern auch auf dem Prozentsatz der virtuellen Benutzer, die derzeit einen bestimmten Test ausführen. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, so genau wie möglich mit der zugewiesenen Verteilung überein.
 
 ### <a name="PacingTestMix"></a> Bestimmen der Geschwindigkeit bei der Testmischung
- Wenn Sie eine Geschwindigkeit für die Testmischung angeben, legen Sie für jeden Test in der Testmischung und für jeden virtuellen Benutzer eine Testausführungsgeschwindigkeit fest. Diese Geschwindigkeit wird für jeden Test durch die Anzahl von Tests ausgedrückt, die pro Stunde von jedem virtuellen Benutzer ausgeführt werden. Beispielsweise können Sie diesen Tests folgende Geschwindigkeiten bei der Testmischung zuweisen:
+
+Wenn Sie eine Geschwindigkeit für die Testmischung angeben, legen Sie für jeden Test in der Testmischung und für jeden virtuellen Benutzer eine Testausführungsgeschwindigkeit fest. Diese Geschwindigkeit wird für jeden Test durch die Anzahl von Tests ausgedrückt, die pro Stunde von jedem virtuellen Benutzer ausgeführt werden. Beispielsweise können Sie diesen Tests folgende Geschwindigkeiten bei der Testmischung zuweisen:
 
 - Test A: 4 Tests pro Benutzer und Stunde
 
@@ -62,9 +64,9 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
 - Test C: 0,125 Tests pro Benutzer und Stunde
 
-  Wenn Sie das Testmischungsmodell mit Geschwindigkeitsangabe verwenden, wird durch die Auslastungstestruntime-Engine sichergestellt, dass die tatsächliche Geschwindigkeit, mit der Tests gestartet werden, kleiner oder gleich der festgelegten Geschwindigkeit ist. Wenn die Tests angesichts der zugewiesenen Anzahl abzuschließender Tests zu lange dauern, wird ein Fehler zurückgegeben.
+Wenn Sie das Testmischungsmodell mit Geschwindigkeitsangabe verwenden, wird durch die Auslastungstestruntime-Engine sichergestellt, dass die tatsächliche Geschwindigkeit, mit der Tests gestartet werden, kleiner oder gleich der festgelegten Geschwindigkeit ist. Wenn die Tests angesichts der zugewiesenen Anzahl abzuschließender Tests zu lange dauern, wird ein Fehler zurückgegeben.
 
-  Die Einstellung **Reaktionszeit zwischen Testiterationen** gilt nicht, wenn Sie eine Geschwindigkeit für die Testmischung angeben.
+Die Einstellung **Reaktionszeit zwischen Testiterationen** gilt nicht, wenn Sie eine Geschwindigkeit für die Testmischung angeben.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Anwenden der Verteilung auf die Geschwindigkeitsverzögerung
  Der Wert für die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** in einem Auslastungstestszenario kann auf TRUE oder FALSE festgelegt werden:

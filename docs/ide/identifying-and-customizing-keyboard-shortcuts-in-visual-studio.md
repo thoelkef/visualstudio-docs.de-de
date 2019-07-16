@@ -17,29 +17,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e166e28af02e3e9497b94cdf75a05bd9bf534629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 140a11e7d118b6ceae98dba4290eba89a500ac5e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428654"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043379"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 
 Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese Tastenkombinationen anpassen und sie dann exportieren, damit andere Benutzer sie verwenden können. Viele Tastenkombinationen rufen immer dieselben Befehle auf, aber das Verhalten einer Tastenkombination kann auf der Grundlage von Bedingungen unterschiedlich sein, die von folgenden Fragen abhängen:
 
-- Welche Standardumgebungseinstellungen wurde bei der erstmaligen Ausführung von Visual Studio ausgewählt (beispielsweise "Allgemeine Entwicklungseinstellungen" oder Visual C#)?
+- Welche Standardumgebungseinstellungen wurde beim erstmaligen Öffnen von Visual Studio ausgewählt (beispielsweise „Allgemeine Entwicklung“ oder Visual C#)? (Weitere Informationen zum Ändern oder Zurücksetzen Ihrer Einstellungen finden Sie unter [Umgebungseinstellungen](environment-settings.md).)
 
 - Wurde das Verhalten der Tastenkombination angepasst?
 
 - In welchem Kontext wird die Tastenkombination angewendet? Beispielsweise ruft die Taste **F2** den Befehl `Edit.EditCell` auf, wenn Sie den **Einstellungs-Designer** verwenden, aber den Befehl `File.Rename`, wenn Sie mit **Team Explorer** arbeiten.
 
-Unabhängig von Einstellungen, Anpassungen und Kontext können Sie eine Tastenkombination im Dialogfeld **Optionen** immer nachschlagen und ändern. Sie finden unter [Standardtastenkombinationen für häufig verwendete Befehle](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) die Standardtastenkombinationen für viele Befehle, und unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md) die vollständige Liste aller Standardtastenkombinationen für **Allgemeine Entwicklungseinstellungen**.
+Unabhängig von Einstellungen, Anpassungen und Kontext können Sie eine Tastenkombination im Dialogfeld **Optionen** immer nachschlagen und ändern. Sie können in [Beliebte Tastenkombinationen](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) auch die Standardtastenkombinationen für mehrere Dutzend Befehle nachschlagen. Eine vollständige Liste aller Standardtastenkombinationen (basierend auf den Einstellungen in **Allgemeine Entwicklung**) finden Sie unter [Alle Tastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem anderen zugewiesen ist, ruft diese Tastenkombination immer diesen Befehl auf. Aber eine Tastenkombination kann einem Befehl im globalen Kontext und einem anderen Befehl in einem speziellen Kontext zugewiesen werden. Wenn Sie eine solche Tastenkombination in dem speziellen Kontext verwenden, ruft sie den Befehl für diesen Kontext auf und nicht den Befehl für den globalen Kontext.
+Wenn eine Tastenkombinationen einem Befehl im *globalen* Kontext und in keinem anderen zugewiesen ist, ruft diese Tastenkombination immer diesen Befehl auf. Aber eine Tastenkombination kann einem Befehl im globalen Kontext und einem anderen Befehl in einem speziellen Kontext zugewiesen werden. Wenn Sie eine solche Tastenkombination in dem speziellen Kontext verwenden, ruft sie den Befehl für diesen Kontext auf und nicht den Befehl für den globalen Kontext.
 
 > [!NOTE]
-> Je nach Ihren Einstellungen und der Edition von Visual Studio ändern sich möglicherweise auch die Namen und Positionen von Menübefehlen oder die Optionen in Dialogfeldern. Dieses Thema bezieht sich auf **Allgemeine Entwicklungseinstellungen**.
+> Je nach Ihren Einstellungen und der Edition von Visual Studio ändern sich möglicherweise auch die Namen und Positionen von Menübefehlen oder die Optionen in Dialogfeldern. Diese Seite basiert auf den Einstellungen des Profils **Allgemeine Entwicklung**.
 
 ## <a name="identify-a-keyboard-shortcut"></a>Nachschlagen einer Tastenkombination
 
@@ -65,18 +65,25 @@ Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem and
 
 1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
 
-2. Erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Tastatur**.
+2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
 3. Optional: Filtern Sie die Liste mit Befehlen, indem Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen oder Teile des Befehlsnamens ohne Leerzeichen eingeben.
 
 4. Wählen Sie in der Liste den Befehl aus, dem Sie eine Tastenkombination zuweisen möchten.
 
-    Wählen Sie in der Liste **Use new shortcut in** (Neue Tastenkombination verwenden in) den Funktionsbereich aus, in dem die Tastenkombination verwendet werden soll.
+   Wählen Sie in der Liste **Use new shortcut in** (Neue Tastenkombination verwenden in) den Funktionsbereich aus, in dem die Tastenkombination verwendet werden soll.
 
-    Wählen Sie beispielsweise **Global** aus, wenn die Tastenkombination in allen Zusammenhängen funktionieren soll. Sie können jede Tastenkombination verwenden, die in keinem anderen Editor (als Global) zugeordnet ist. Andernfalls wird die Tastenkombination vom Editor überschrieben.
+   Wählen Sie beispielsweise **Global** aus, wenn die Tastenkombination in allen Zusammenhängen funktionieren soll. Sie können jede Tastenkombination verwenden, die in keinem anderen Editor (als Global) zugeordnet ist. Andernfalls wird die Tastenkombination vom Editor überschrieben.
 
-    > [!NOTE]
-    > Die folgenden Tasten können Sie nicht als Teil einer **globalen** Tastenkombination zuweisen: DRUCK/S-ABF, ROLLEN, PAUSE/UNTBR, TAB, FESTSTELLTASTE, EINFG, POS1, ENDE, BILD-AUF, BILD-AB, die WINDOWS-TASTE, die ANWENDUNGSTASTE, alle PFEILTASTEN sowie die EINGABETASTE, NUM, ENTF bzw. ENTF im Tastenblock oder die Tastenkombination STRG+ALT+ENTF.
+   > [!NOTE]
+   > Die folgenden Tasten können Sie nicht als Teil einer **globalen** Tastenkombination zuweisen:
+   >
+   > - EINGABETASTE, TAB-TASTE, FESTSTELLTASTE
+   > - DRUCK-TASTE, S-ABF-TASTE, ROLLEN-TASTE, PAUSE/UNTERBRECHEN-TASTE
+   > - EINFG-TASTE, POS1-TASTE, BILD-AUF-TASTE, BILD-AB-TASTE
+   > - WINDOWS-LOGO-TASTE, ANWENDUNGSTASTE, beliebige der PFEILTASTEN
+   > - NUM-TASTE oder ENTF-TASTE auf der Zehnertastatur
+   > - Die Tastenkombination STRG+ALT+ENTF
 
 6. Geben Sie in das Feld **Press shortcut key(s)** (Tastenkombination drücken) die Tastenkombination ein, die Sie verwenden möchten.
 
@@ -90,7 +97,7 @@ Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem and
 7. Klicken Sie auf **Zuweisen**.
 
     > [!NOTE]
-    > Wenn Sie eine andere Tastenkombination für einen Befehl angeben, klicken Sie auf die Schaltfläche **Zuweisen** und dann auf **Abbrechen**. Damit wird das Dialogfeld geschlossen, aber die Änderung bleibt bestehen.
+    > Wenn Sie eine andere Tastenkombination für einen Befehl angeben, klicken Sie auf **Zuweisen** und dann auf **Abbrechen**, um das Dialogfeld zu schließen. Die von Ihnen zugewiesene Tastenkombination wird nicht zurückgesetzt.
 
 ## <a name="share-custom-keyboard-shortcuts"></a>Freigeben benutzerdefinierter Tastenkombinationen
 
@@ -108,7 +115,7 @@ Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie 
 
    ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png)
 
-5. Übernehmen Sie in den Feldern **What do you want to name your settings file** (Geben Sie den Namen der Einstellungsdatei ein) und **Store my settings file in this directory** (Einstellungsdatei in folgendem Verzeichnis speichern) entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf die Schaltfläche **Fertigstellen**.
+5. Übernehmen Sie in den Feldern **Geben Sie den Namen der Einstellungsdatei ein** und **Einstellungsdatei in folgendem Verzeichnis speichern** entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf die Schaltfläche **Fertigstellen**.
 
 ::: moniker range="vs-2017"
 
@@ -132,13 +139,13 @@ Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner *%USERPR
 
 4. Wählen Sie unter **Meine Einstellungen** die Datei mit den Tastenkombinationen aus, die Sie importieren möchten, oder klicken Sie auf **Durchsuchen**, um die gewünschte Datei zu suchen.
 
-5. Klicken Sie auf **Weiter**.
+5. Wählen Sie **Weiter** aus.
 
 6. Deaktivieren Sie unter **Welche Einstellungen sollen importiert werden?** das Kontrollkästchen **Alle Einstellungen**, und erweitern Sie dann **Optionen** sowie **Umgebung**.
 
-7. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertigstellen**.
+7. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertig stellen**.
 
-    ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png)
+   ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Siehe auch
 

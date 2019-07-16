@@ -1,5 +1,5 @@
 ---
-title: Anfügen des Profilers an eine eigenständige .NET Framework-App und Sammeln von App-Statistiken
+title: Anfügen eines Profilers an eine eigenständige .NET Framework-App, Abrufen der App-Statistiken
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a667c259c6cd924c0ff698a47858c08d0f7cf42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431561"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261608"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung und Sammeln von Anwendungsdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie Sie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwenden, um den Profiler an eine aktive eigenständige .NET Framework-(Client-)Anwendung anzufügen und mithilfe der Samplingmethode Leistungsstatistiken zu sammeln.
@@ -38,7 +38,7 @@ In diesem Artikel wird beschrieben, wie Sie die Befehlszeilentools der [!INCLUDE
 
 2. Initialisieren Sie die Umgebungsvariablen für die Profilerstellung. Typ:
 
-    **VSPerfClrEnv /sampleon** [**/samplelineoff**]
+    **VSPerfClrEnv /sampleon** [ **/samplelineoff**]
 
    - Die Option **/samplelineoff** deaktiviert die Erfassung der Quellcode-Zeilennummerdaten.
 
@@ -46,15 +46,15 @@ In diesem Artikel wird beschrieben, wie Sie die Befehlszeilentools der [!INCLUDE
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - Mit der Option [/start](../profiling/start.md)**:sample** wird der Profiler initialisiert.
+   - Mit der Option [/start](../profiling/start.md) **:sample** wird der Profiler initialisiert.
 
-   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
+   - Die Option [/output](../profiling/output.md) **:** `OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.
 
    | Option | Beschreibung |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Gibt die optionale Domäne und den Benutzernamen des Kontos an, das den profilierten Prozess besitzt. Diese Option ist nur erforderlich, wenn die profilierte Anwendung mit einem anderen Benutzer als dem angemeldeten Benutzer gestartet wurde. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Gibt die optionale Domäne und den Benutzernamen des Kontos an, das den profilierten Prozess besitzt. Diese Option ist nur erforderlich, wenn die profilierte Anwendung mit einem anderen Benutzer als dem angemeldeten Benutzer gestartet wurde. |
    | [/crosssession](../profiling/crosssession.md) | Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. Diese Option ist erforderlich, wenn die Anwendung in einer anderen Sitzung ausgeführt wird. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
@@ -64,20 +64,20 @@ In diesem Artikel wird beschrieben, wie Sie die Befehlszeilentools der [!INCLUDE
 
 5. Fügen Sie den Profiler an die Zielanwendung an. Typ:
 
-    **VSPerfCmd /attach:**{`PID`&#124;`ProcessName`} [`Sample Event`] [**/targetclr:**`Version`]
+    **VSPerfCmd /attach:** {`PID`&#124;`ProcessName`} [`Sample Event`] [ **/targetclr:** `Version`]
 
    - `PID` gibt die Prozess-ID der Zielanwendung an. `ProcessName` gibt den Namen des Prozesses an. Beachten Sie, dass unvorhersehbare Ergebnissen ausgegeben werden können, wenn Sie `ProcessName` angeben und mehrere Prozesse mit dem gleichen Namen ausgeführt werden. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
 
    - [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
 
-   - Standardmäßig wird alle 10.000.000 nicht angehaltene Prozessortaktzyklen ein Sampling der Leistungsdaten durchgeführt. Dies entspricht bei einem 1-GHz-Prozessor etwa einem Mal alle 10 Sekunden. Sie können eine der folgenden Optionen angeben, um das Taktzyklusintervall zu ändern oder um ein anderes Samplingereignis anzugeben. [/targetclr](../profiling/targetclr.md)**:**`Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
+   - Standardmäßig wird alle 10.000.000 nicht angehaltene Prozessortaktzyklen ein Sampling der Leistungsdaten durchgeführt. Dies entspricht bei einem 1-GHz-Prozessor etwa einem Mal alle 10 Sekunden. Sie können eine der folgenden Optionen angeben, um das Taktzyklusintervall zu ändern oder um ein anderes Samplingereignis anzugeben. [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
 
    |||
    |-|-|
    |Samplingereignis|Beschreibung|
    |[/timer](../profiling/timer.md) **:** `Interval`|Ändert das Samplingintervall auf die Anzahl der mit `Interval` angegebenen nicht angehaltenen Taktzyklen.|
-   |[/pf](../profiling/pf.md) [**:**`Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|
-   |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|
+   |[/pf](../profiling/pf.md) [ **:** `Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Ändert das Samplingereignis auf den Prozessorleistungsindikator und das Samplingintervall in das in `Config` angegebene Intervall.|
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
@@ -89,9 +89,9 @@ In diesem Artikel wird beschrieben, wie Sie die Befehlszeilentools der [!INCLUDE
 
     |Option|Beschreibung|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den Prozess, der von `PID` angegeben wird, gestartet (**/processon**) oder beendet (**/processoff**).|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der `PID` oder des Prozessnamens (ProcName) angegeben wurde. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist) beendet.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den Prozess, der von `PID` angegeben wird, gestartet ( **/processon**) oder beendet ( **/processoff**).|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der `PID` oder des Prozessnamens (ProcName) angegeben wurde. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist) beendet.|
 
 ## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
  Um eine Profilerstellungssitzung zu beenden, muss der Profiler von allen profilierten Prozessen getrennt und explizit beendet werden. Den Profiler können Sie von einer Anwendung trennen, für die ein Profil mit der Samplingmethode erstellt wurde, indem Sie die Anwendung schließen oder die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die Option **VSPerfCmd /shutdown** auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Mit dem Befehl **VSPerfClrEnv /off** werden die Umgebungsvariablen für die Profilerstellung gelöscht.
@@ -102,7 +102,7 @@ In diesem Artikel wird beschrieben, wie Sie die Befehlszeilentools der [!INCLUDE
 
     - Geben Sie **VSPerfCmd /detach** ein.
 
-         - oder - 
+         - oder -
 
     - Schließen Sie die Zielanwendung.
 

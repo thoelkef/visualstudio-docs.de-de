@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049736"
@@ -116,7 +116,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü Ihres Projekts **Ordner in Windows Explorer öffnen**aus.  
   
-    2. Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
+    2. Suchen Sie die Datei **Bin\\\*\\** _IhrProjekt_**VSIX**  
   
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   

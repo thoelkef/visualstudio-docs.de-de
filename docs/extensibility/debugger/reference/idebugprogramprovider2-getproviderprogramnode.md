@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProgramNode
 ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7629a60f3393f996a456c907ec150be202a0bb94
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459017"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349816"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Ruft die Programm-Knoten für ein bestimmtes Programm ab.
@@ -50,9 +50,8 @@ int GetProviderProgramNode(
 ```
 
 ## <a name="parameters"></a>Parameter
- `Flags`\
-
- [in] Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
+`Flags`\
+[in] Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
 
 |Flag|Beschreibung|
 |----------|-----------------|
@@ -60,25 +59,20 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Aufrufer ist aktuell im Debugmodus befindlichen (Weitere Informationen über das marshalling von werden für jeden Knoten zurückgegeben werden).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Aufrufer wurde angefügt, aber nicht vom Debugger gestartet.|
 
- `pPort`\
+`pPort`\
+[in] Der Port der aufrufende Prozess ausgeführt wird.
 
- [in] Der Port der aufrufende Prozess ausgeführt wird.
+`processId`\
+[in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der betreffenden die ID des Prozesses, der das Programm enthält.
 
- `processId`\
+`guidEngine`\
+[in] GUID der Debug-Engine, der das Programm an (sofern vorhanden) angefügt ist.
 
- [in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der betreffenden die ID des Prozesses, der das Programm enthält.
+`programId`\
+[in] Die ID des Programms für das Programm Knotens abgerufen.
 
- `guidEngine`\
-
- [in] GUID der Debug-Engine, der das Programm an (sofern vorhanden) angefügt ist.
-
- `programId`\
-
- [in] Die ID des Programms für das Programm Knotens abgerufen.
-
- `ppProgramNode`\
-
- [out] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das den angeforderten Programms-Knoten darstellt.
+`ppProgramNode`\
+[out] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das den angeforderten Programms-Knoten darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

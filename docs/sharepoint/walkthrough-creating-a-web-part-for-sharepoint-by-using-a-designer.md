@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen ein Webpart für SharePoint mithilfe eines Designers | Microsoft-Dokumentation'
+title: Erstellen Sie Webpart für SharePoint, die mit dem designer
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965296"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401147"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint mithilfe eines Designers
 
@@ -81,7 +81,7 @@ Entwerfen des Webparts durch Hinzufügen von Steuerelementen aus der **Toolbox**
 
 5. Wählen Sie im Designer die **"Button1"** Schaltfläche.
 
-6. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
+6. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"** .
 
      Die **Eigenschaften** Fenster wird geöffnet.
 

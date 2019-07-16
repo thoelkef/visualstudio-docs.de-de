@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca57c279ceabd03f48ffaa564d42f7d023b39887
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b4487020232b897d62711bb9053f43ad2ef2694f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434187"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338107"
 ---
 # <a name="using-the-settings-store"></a>Verwenden des Einstellungsspeichers
 Es gibt zwei Arten von Einstellungen speichern:
@@ -71,7 +71,7 @@ Es gibt zwei Arten von Einstellungen speichern:
 
 5. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen SettingsStoreCommand**.
 
-    Daraufhin sollte eine Meldung für das Feld **Microsoft Windows Phone-Entwicklertools:** gefolgt von **"true"** oder **"false"**.
+    Daraufhin sollte eine Meldung für das Feld **Microsoft Windows Phone-Entwicklertools:** gefolgt von **"true"** oder **"false"** .
 
    Visual Studio behält den einstellungsspeicher in der Registrierung des Systems.
 
@@ -84,4 +84,4 @@ Es gibt zwei Arten von Einstellungen speichern:
     > [!NOTE]
     > Stellen Sie sicher, dass Sie den Schlüssel anzeigen, die \14.0Exp_Config\ und nicht \14.0_Config enthält\\. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, sind Konfigurationseinstellungen in der Registrierungsstruktur "14.0Exp_Config" ein.
 
-3. Erweitern Sie den \Installed Products\-Knoten. Wenn die Nachricht in den vorherigen Schritten **Microsoft Windows Phone Developer Tools installiert: "True"**, \Installed Products\ einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll. Wenn die Nachricht **Microsoft Windows Phone Developer Tools installiert: "False"**, dann \Installed Products\ nicht auf einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll.
+3. Erweitern Sie den \Installed Products\-Knoten. Wenn die Nachricht in den vorherigen Schritten **Microsoft Windows Phone Developer Tools installiert: "True"** , \Installed Products\ einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll. Wenn die Nachricht **Microsoft Windows Phone Developer Tools installiert: "False"** , dann \Installed Products\ nicht auf einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll.

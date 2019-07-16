@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d077c50c19a64eed7fc904a8f7986f95a75d1d1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 01cf70b473d2c430741df2021d27b3047e782b79
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460750"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309482"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -44,7 +44,6 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>Felder
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-
 Wenn ausgewählt, wird das Symbol "Warnung" in der Benutzeroberfläche angezeigt werden.
 
 ## <a name="remarks"></a>Hinweise

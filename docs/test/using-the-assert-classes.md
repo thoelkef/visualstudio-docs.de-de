@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962007"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820311"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Verwenden von Assert-Klassen für Komponententests
 
@@ -45,7 +45,7 @@ Die Ausnahme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedExce
 
 Wenn Sie eine neue Assert-Ausnahmeklasse schreiben, kann die Ausnahme leichter als Assert-Fehler erkannt werden, wenn die Klasse von der Basisklasse <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> erbt. Andernfalls lassen sich Assert-Ausnahmen nicht eindeutig von unerwarteten Ausnahmen unterscheiden, die ggf. durch den Test- oder Produktionscode ausgelöst werden.
 
-Ergänzen Sie eine Testmethode durch das Attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>, wenn die Testmethode überprüfen soll, ob eine Ausnahme tatsächlich wie erwartet durch eine Methode in Ihrem Anwendungscode ausgelöst wird.
+Um zu überprüfen, ob eine Ausnahme tatsächlich wie erwartet durch eine Methode in Ihrem Anwendungscode ausgelöst wird, verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>-Methode.
 
 ## <a name="see-also"></a>Siehe auch
 

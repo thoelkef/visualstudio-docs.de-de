@@ -8,17 +8,20 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dcec65b22c728384fb199eecf461ec61317e348
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923448"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337443"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Legt fest oder ändert die Bedingung, die dieser gebundene Haltepunkt zugeordnet.
@@ -37,10 +40,9 @@ int SetCondition( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `bpCondition`
-
- [in] Ein Wert aus der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Enumeration, die die Bedingung beschreibt.
+## <a name="parameters"></a>Parameter
+`bpCondition`\
+[in] Ein Wert aus der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Enumeration, die die Bedingung beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundene Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).

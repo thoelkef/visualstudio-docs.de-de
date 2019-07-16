@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569970"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501072"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
 
@@ -26,7 +26,19 @@ Sie können Visual Studio zum Erstellen und Aktualisieren einer lokalen Datenban
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
-Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optionale **datenspeicherung und-Verarbeitung** arbeitsauslastung in Visual Studio installiert. Öffnen Sie sie zur Installation **Visual Studio-Installer** , und wählen Sie **weitere** > **ändern** neben der Version von Visual Studio, die Sie ändern möchten (Wenn Sie haben mehr als eine Version installiert). Auf der **Workloads** Registerkarte **Web und Cloud**, wählen Sie **datenspeicherung und-Verarbeitung**, und klicken Sie dann auf **ändern** die Workload hinzufügen Visual Studio.
+Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optionale **datenspeicherung und-Verarbeitung** arbeitsauslastung in Visual Studio installiert. Öffnen Sie sie zur Installation **Visual Studio-Installer** , und wählen Sie **ändern** oder **weitere** > **ändern** neben der Version von Visual Studio, die Sie ändern möchten.
+
+::: moniker range=">=vs-2019"
+
+Auf der **Workloads** Registerkarte **andere Toolsets**, wählen Sie **datenspeicherung und-Verarbeitung**, und klicken Sie dann auf **ändern** die Workload hinzufügen Visual Studio.
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+Auf der **Workloads** Registerkarte **Web und Cloud**, wählen Sie **datenspeicherung und-Verarbeitung**, und klicken Sie dann auf **ändern** die Workload hinzufügen Visual Studio.
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Erstellen eines Projekts und einer lokalen Datenbankdatei
 
@@ -38,7 +50,7 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optiona
 
      ![Dialogfeld "Elementvorlagen"](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Nennen Sie die Datenbank **"SampleDatabase"**, und klicken Sie dann auf **hinzufügen**.
+4. Nennen Sie die Datenbank **"SampleDatabase"** , und klicken Sie dann auf **hinzufügen**.
 
 ### <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
 

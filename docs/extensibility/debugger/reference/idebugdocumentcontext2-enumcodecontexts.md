@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dffee73c9412bd9732ca3dd80aef8b9cb6fdabfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: caa6be915fad9e64fb065babbf218f33f2848200
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921491"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349972"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 Ruft eine Liste aller Code Kontexte, die mit diesem Dokumentenkontext verknüpft ist.
@@ -36,10 +39,8 @@ int EnumCodeContexts(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ppEnumCodeCxts`
-
- [out] Gibt eine [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) -Objekt, das eine Liste von Kontexten, Code enthält.
+## <a name="parameters"></a>Parameter
+`ppEnumCodeCxts`\
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

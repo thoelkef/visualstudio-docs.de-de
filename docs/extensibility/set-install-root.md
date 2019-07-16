@@ -3,21 +3,21 @@ title: Installieren von außerhalb des Ordners für Erweiterungen mit VSIX v3 | 
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b3b23a89450bb1abac4f8ebb10d00396a251b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433145"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852202"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Installieren von außerhalb des Ordners für Erweiterungen
+# <a name="install-outside-the-extensions-folder"></a>Installieren außerhalb des Ordners für Erweiterungen
 
-Beginnend mit Visual Studio 2017 und VSIX v3 (Version 3), unterstützt jetzt für die Installation der Erweiterung Ressourcen außerhalb der Ordner "Extensions". Derzeit werden die folgenden Speicherorte als gültige Installationsorte aktiviert (wobei die [INSTALLDIR] zum Installationsverzeichnis von Visual Studio-Instanz zugeordnet ist):
+Ab Visual Studio 2017 und VSIX v3 (Version 3), Erweiterung Assets kann außerhalb der Ordner "Extensions" installiert werden. Derzeit werden die folgenden Speicherorte als gültige Installationsorte aktiviert (wobei die [INSTALLDIR] zum Installationsverzeichnis von Visual Studio-Instanz zugeordnet ist):
 
 * [INSTALLDIR] \MSBuild
 * [INSTALLDIR]\Xml\Schemas
@@ -25,9 +25,10 @@ Beginnend mit Visual Studio 2017 und VSIX v3 (Version 3), unterstützt jetzt fü
 * [INSTALLDIR] \Licenses
 * [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets (nur für Visual Studio 2017; veraltete Elemente für Visual Studio-2019 und höher unterstützt)
 
->**Hinweis**: Das VSIX-Format lässt nicht zu, dass Sie außerhalb der Ordnerstruktur des Visual Studio-Installation installieren.
+> [!NOTE]
+> Das VSIX-Format kann nicht außerhalb der Ordnerstruktur des Visual Studio-Installation installieren. 
 
 Um auf diese Verzeichnisse installieren zu unterstützen, muss die VSIX-Datei installiert sein "pro pro-Computer-Instanz". Dies kann durch Aktivieren des Kontrollkästchens "alle Benutzer" im Designer "Extension.vsixmanifest" aktiviert werden:
 
@@ -49,7 +50,8 @@ Dadurch werden einige Metadaten hinzugefügt, mit der entsprechenden `ProjectRef
  </ProjectReference>
 ```
 
->**Hinweis**: Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
+> [!NOTE]
+> Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Wie Sie einen Unterpfad unter dem InstallRoot festlegen
 

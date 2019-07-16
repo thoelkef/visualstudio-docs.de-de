@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e92dd0c3bf56710b387535f8b5e3984bff930186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b307fb7b4a25fc5a84b30eefd65e72b4f387a07d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313765"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 Rufen Sie den Prozess, den dieses Programm ausgeführt wird.
@@ -36,10 +39,9 @@ int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppProcess`
-
- [out] Gibt die [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, die den Prozess darstellt.
+## <a name="parameters"></a>Parameter
+`ppProcess`\
+[out] Gibt die [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, die den Prozess darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

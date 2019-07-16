@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveDynamicType method
 ms.assetid: 2c36ef92-5b44-4cfd-988e-54a2e5a6710c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 116a08025f70c2cd1e4c87f775511bd20ac0e4ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6f07643c836bd2ca1cea35659bd1b38cf72dbe45
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923629"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313185"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 Diese Methode gibt den genauen Typ einer Variablen.
@@ -38,14 +41,12 @@ int ResolveDynamicType(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pDynamic`
+## <a name="parameters"></a>Parameter
+`pDynamic`\
+[in] Ein [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) einen Typ einer Variablen darstellt.
 
- [in] Ein [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) einen Typ einer Variablen darstellt.
-
- `ppResolved`
-
- [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bietet spezifische Informationen über den Typ der Variablen.
+`ppResolved`\
+[out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bietet spezifische Informationen über den Typ der Variablen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

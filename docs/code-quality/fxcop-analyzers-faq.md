@@ -1,7 +1,7 @@
 ---
 title: FxCop-Codeanalyse und FxCop-Analysetools
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816422"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037263"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Häufig gestellte Fragen zu FxCop und FxCop-Analysetools
 
@@ -48,6 +48,10 @@ Wenn Sie FxCop-Analysetools installiert haben, aber weiterhin eine Warnung erhal
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Welche Regeln auf die FxCop-Analysetools portiert haben?
+
+Informationen darüber, welche wurden Regeln für die statische Codeanalyse zu portiert [FxCop-Analysetools](install-fxcop-analyzers.md), finden Sie unter [Fxcop-Regel-Portstatus](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Siehe auch
 

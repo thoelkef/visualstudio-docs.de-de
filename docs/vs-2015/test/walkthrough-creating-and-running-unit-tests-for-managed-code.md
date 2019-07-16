@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e120499893a5b2a85d9a40a57e078f3d8f6586d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408489"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695048"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
 > In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Test-Explorer kann außerdem Tests von Drittanbieter-Komponententest-Frameworks ausführen, die über Adapter für Test-Explorer verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).  
   
 > [!NOTE]
-> Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
   
@@ -64,7 +64,7 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
   
     Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-3. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**.  
+3. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#** .  
   
 4. Klicken Sie in der Liste der Anwendungstypen auf **Klassenbibliothek**.  
   
@@ -112,9 +112,9 @@ public void Debit(double amount)
   
 #### <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt  
   
-1. Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...**.  
+1. Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...** .  
   
-2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#**, und wählen Sie dann **Test**aus.  
+2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#** , und wählen Sie dann **Test**aus.  
   
 3. Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.  
   
@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Den Code korrigieren und die Tests erneut ausführen  
  **Analysieren der Testergebnisse**  
   
- Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter <strong>Expected\<*XXX*></strong>) und was tatsächlich gefunden wurde (Parameter **Actual\<*YYY*>**). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.  
+ Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter <strong>Expected\<*XXX*></strong>) und was tatsächlich gefunden wurde (Parameter **Actual\<*YYY*>** ). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.  
   
  Eine erneute Prüfung des Debit-Codes zeigt, dass der Komponententest einen Fehler gefunden hat. Der Abbuchungsbetrag wird dem Kontoguthaben hinzugerechnet, anstatt davon abgezogen zu werden.  
   

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b148c884b7844595d02549f6ef46dad46748234
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 798a0caca394a21d6ee12a99efeacb2f27f6969c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870140"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343601"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Führt das Debugger-Programm. Der Thread wird zurückgegeben, den Debuggerinformationen geben, in welchem, die Thread dem Benutzer angezeigt wird, wenn das Programm ausgeführt, wird.
@@ -33,10 +36,9 @@ int ExecuteOnThread(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pThread`
-
- [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt.
+## <a name="parameters"></a>Parameter
+`pThread`\
+[in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

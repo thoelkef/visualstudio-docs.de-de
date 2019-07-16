@@ -1,20 +1,21 @@
 ---
-title: Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 2017 | Microsoft-Dokumentation
+title: Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434213"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559762"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 2017
 
@@ -26,7 +27,7 @@ Wenn Sie eine Projekt- oder Elementvorlage während der VSIX-Erweiterung erstell
 
 ## <a name="template-scanning"></a>Vorlage überprüfen
 
-In früheren Versionen von Visual Studio **Devenv/Setup** oder **Devenv/installvstemplates** durchsucht den lokalen Datenträger aus, um die Projekt- und Elementvorlagen zu suchen. Ab Visual Studio 2017, Überprüfung nur für den Speicherort auf Benutzerebene erfolgt. Der Standardspeicherort für die Benutzerebene ist **%USERPROFILE%\Documents\\< Visual Studio-Version\>\Templates\\**. Dieser Speicherort wird für Vorlagen, die vom verwendet die **Projekt** > **Vorlagen exportieren...**  Befehl, wenn die **Vorlage automatisch in Visual Studio importieren** Option im Assistenten ausgewählt ist.
+In früheren Versionen von Visual Studio **Devenv/Setup** oder **Devenv/installvstemplates** durchsucht den lokalen Datenträger aus, um die Projekt- und Elementvorlagen zu suchen. Ab Visual Studio 2017, Überprüfung nur für den Speicherort auf Benutzerebene erfolgt. Der Standardspeicherort für die Benutzerebene ist **%USERPROFILE%\Documents\\< Visual Studio-Version\>\Templates\\** . Dieser Speicherort wird für Vorlagen, die vom verwendet die **Projekt** > **Vorlagen exportieren...**  Befehl, wenn die **Vorlage automatisch in Visual Studio importieren** Option im Assistenten ausgewählt ist.
 
 Für andere Speicherorte (nicht-Benutzer) müssen Sie eine Datei manifest(.vstman) einschließen, die den Speicherort und andere Merkmale der Vorlage angibt. Die vstman-Datei wird zusammen mit der Vorlagen zum VSTEMPLATE-Datei generiert. Wenn Sie die Erweiterung VSIX mit installieren, können Sie dies erreichen, durch das erneute Kompilieren der Erweiterungs in Visual Studio 2017. Aber wenn Sie eine MSI-Datei verwenden, müssen Sie die Änderungen manuell vornehmen. Eine Übersicht darüber, was Sie tun, um diese Änderungen vornehmen müssen, finden Sie unter **Upgrades für die Erweiterungen installiert, mit ein. MSI** weiter unten auf dieser Seite.
 
@@ -34,7 +35,7 @@ Für andere Speicherorte (nicht-Benutzer) müssen Sie eine Datei manifest(.vstma
 
 1. Öffnen Sie die Projektmappe in Visual Studio 2017. Sie werden aufgefordert, den Code aktualisieren. Klicken Sie auf **OK**.
 
-2. Nachdem das Upgrade abgeschlossen ist, müssen Sie die Version von des installationsziels ändern. Klicken Sie im VSIX-Projekt, öffnen Sie die Datei "Source.Extension.vsixmanifest", und wählen die **Ziele installieren** Registerkarte. Wenn die **Versionsbereich** Feld **[14.0]**, klicken Sie auf **bearbeiten** und ändern Sie diese Visual Studio 2017 enthalten. Angenommen, Sie können sie festlegen **[14.0,15.0]** zum Installieren der Erweiterung, um entweder Visual Studio 2015 oder Visual Studio 2017 oder **[15.0]** nur Visual Studio 2017 installieren.
+2. Nachdem das Upgrade abgeschlossen ist, müssen Sie die Version von des installationsziels ändern. Klicken Sie im VSIX-Projekt, öffnen Sie die Datei "Source.Extension.vsixmanifest", und wählen die **Ziele installieren** Registerkarte. Wenn die **Versionsbereich** Feld **[14.0]** , klicken Sie auf **bearbeiten** und ändern Sie diese Visual Studio 2017 enthalten. Angenommen, Sie können sie festlegen **[14.0,15.0]** zum Installieren der Erweiterung, um entweder Visual Studio 2015 oder Visual Studio 2017 oder **[15.0]** nur Visual Studio 2017 installieren.
 
 3. Kompilieren Sie der Code neu.
 
@@ -179,9 +180,9 @@ Wir zeigen die Punkte der Unterschied zwischen dem Visual Studio 2015 und Visual
 
 Einige MSI-basierte Erweiterungen Bereitstellen von Vorlagen in allgemeine Vorlage Speicherorte wie z. B. den folgenden Verzeichnissen:
 
-- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\\< ProjectTemplates / "ItemTemplates" >**
+- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\\< ProjectTemplates / "ItemTemplates"\>**
 
-- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project / "ItemTemplates" >**
+- **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project / "ItemTemplates"\>**
 
 Wenn die Erweiterung eine MSI-basierte Bereitstellung ausgeführt wird, müssen Sie das Vorlagemanifest manuell zu generieren, und stellen Sie sicher, dass sie in der Erweiterung-Setup enthalten ist. Vergleichen Sie die oben aufgeführten vstman-Beispiele und die [Visual Studio-Manifest Schemareferenz zu Vorlagen](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

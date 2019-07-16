@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790927"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744979"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Toolboxelemente auswählen, WPF-Komponenten
 
@@ -31,7 +31,7 @@ Auf dieser Registerkarte des Dialogfelds **Toolboxelemente auswählen** wird ein
 - Wenn das Kontrollkästchen neben einer Komponente deaktiviert wird, wird das zugehörige Symbol aus **Toolbox** entfernt.
 
     > [!NOTE]
-    > Die auf dem Computer installierten .NET Framework-Komponenten bleiben verfügbar, und zwar unabhängig davon, ob für sie Symbole in der **Toolbox** angezeigt werden.
+    > Die auf dem Computer installierten .NET-Komponenten bleiben verfügbar, und zwar unabhängig davon, ob für sie Symbole in der **Toolbox** angezeigt werden.
 
 Die Spalten auf der Registerkarte **WPF-Komponenten** enthalten die folgenden Informationen:
 
@@ -41,15 +41,15 @@ Listet die Namen der WPF-Steuerelemente auf, für die Einträge in der Registrie
 
 **Namespace**
 
-Zeigt die Hierarchie des [.NET Framework Class API](/dotnet/api/?view=netframework-4.7)-Namespaces an, der die Struktur der Komponente definiert. Wenn Sie nach dieser Spalte sortieren, werden die verfügbaren Komponenten innerhalb der einzelnen auf dem Computer installierten .NET Framework-Namespaces aufgeführt.
+Zeigt die Hierarchie des [.NET-API](/dotnet/api/?view=netframework-4.7)-Namespaces an, der die Struktur der Komponente definiert. Wenn Sie nach dieser Spalte sortieren, werden die verfügbaren Komponenten innerhalb der einzelnen auf dem Computer installierten .NET-Namespaces aufgeführt.
 
 **Assemblyname**
 
-Zeigt den Namen der .NET Framework-Assembly an, die den Namespace der einzelnen Komponenten enthält. Wenn Sie nach dieser Spalte sortieren, werden die Namespaces innerhalb der einzelnen auf dem Computer installierten .NET Framework-Assemblys aufgeführt.
+Zeigt den Namen der .NET-Assembly an, die den Namespace der einzelnen Komponenten enthält. Wenn Sie nach dieser Spalte sortieren, werden die Namespaces innerhalb der einzelnen auf dem Computer installierten .NET-Assemblys aufgeführt.
 
 **Verzeichnis**
 
-Zeigt den Speicherort der .NET Framework-Assembly an. Der Standardspeicherort für alle Assemblys ist der globale Assemblycache. Weitere Informationen über den globalen Assemblycache finden Sie unter [Arbeiten mit Assemblys und dem globalen Assemblycache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Zeigt den Speicherort der .NET-Assembly an. Der Standardspeicherort für alle Assemblys ist der globale Assemblycache. Weitere Informationen über den globalen Assemblycache finden Sie unter [Arbeiten mit Assemblys und dem globalen Assemblycache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>UIElement-Liste
 

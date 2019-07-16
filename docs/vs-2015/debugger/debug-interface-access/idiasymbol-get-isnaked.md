@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48a168d30cacc82f049624b22e829a9660538043
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64989ca10416ab2ad9606c94b3f3bc977f60c5ee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421851"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "65702347"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob die Funktion verfügt über die [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) Attribut (d. h. für die Funktion hat keinen Prolog oder Epilog Code, der vom Compiler hinzugefügt).  
+Ruft ein Flag, das angibt, ob die Funktion verfügt über die [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) Attribut (d. h. für die Funktion hat keinen Prolog oder Epilog Code, der vom Compiler hinzugefügt).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,4 +52,4 @@ HRESULT get_isNaked(
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Naked-Funktionsaufrufe](http://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)
+ [Naked-Funktionsaufrufe](https://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)

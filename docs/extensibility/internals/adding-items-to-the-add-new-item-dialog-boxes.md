@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418692"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328054"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Fügen Sie Elemente hinzu, um das Dialogfeld "Neues Element hinzufügen"
 Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dialogfeld beginnt mit dem Registrierungsschlüssel. Siehe die folgenden Registrierungseinträge, die **AddItemTemplates** Abschnitt enthält den Pfad und Name des Verzeichnisses in der die Elemente zur Verfügung gestellt der **neues Element hinzufügen** Dialogfeld abgelegt werden.
@@ -46,7 +46,7 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Das Verzeichnis für aufgeführt **TemplatesDir**, d.h. *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, ist der Knoten auf der linken Seite von der **hinzufügen Neues Element** Dialogfeld im Feld-Struktur. Zusätzliche Elemente in der Struktur basieren auf das Unterverzeichnis innerhalb dieses Stammverzeichnis. Die Dateien zum Projekt hinzugefügt werden sind die Elemente im Bereich rechts von der **neues Element hinzufügen** Dialogfeld.
+ Das Verzeichnis für aufgeführt **TemplatesDir**, d.h. *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , ist der Knoten auf der linken Seite von der **hinzufügen Neues Element** Dialogfeld im Feld-Struktur. Zusätzliche Elemente in der Struktur basieren auf das Unterverzeichnis innerhalb dieses Stammverzeichnis. Die Dateien zum Projekt hinzugefügt werden sind die Elemente im Bereich rechts von der **neues Element hinzufügen** Dialogfeld.
 
  Dieser Ordner enthält in der Regel die Vorlagendateien für Ihr Projekt wie z. B. einer HTML-Vorlage oder *cpp* -Datei, und alle *VSZ* Dateien zum Starten des Assistenten. Sie können auch einschließen, um zu steuern, wie die Elemente angezeigt werden, *VSDIR* Dateien zum Lokalisieren von Verzeichnisnamen und Symbole. Die lokalisierte Zeichenfolge wird die Beschriftung im Dialogfeld angezeigt wird, die diesem Knoten in dargestellt die **neues Element hinzufügen** Dialogfeld im Feld-Struktur.
 

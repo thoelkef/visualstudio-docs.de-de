@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetState method
 - IDebugBoundBreakpoint2::GetState method
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 716721a94b5fa31bfff6dfcae647e1de2f45a995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d930b1a68b97548c02edd35fa48ef8f3a1935181
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314489"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Ruft den Zustand dieser gebundene Haltepunkt ab.
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pState`
-
- [out] Gibt einen Wert aus der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) -Enumeration, die den Zustand des Haltepunkts beschreibt.
+## <a name="parameters"></a>Parameter
+`pState`\
+[out] Gibt einen Wert aus der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) -Enumeration, die den Zustand des Haltepunkts beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

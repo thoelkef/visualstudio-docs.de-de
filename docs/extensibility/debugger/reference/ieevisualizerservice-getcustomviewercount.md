@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerCount method
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 750094cef6e207ef1a77196dab53b28ebdc7838b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 82c4699c987d94f5fffad87d26f845facff3180c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223658"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350151"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 Diese Methode ruft die Anzahl der verfügbaren Typ-Schnellansichten von diesem Dienst.
@@ -40,9 +40,8 @@ int GetCustomViewerCount(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pcelt`\
-
- [out] Gibt die Anzahl der Typ-Schnellansichten verfügbar.
+`pcelt`\
+[out] Gibt die Anzahl der Typ-Schnellansichten verfügbar.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte | Microsoft-Dokumentation'
+title: Erstellen von benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430430"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825636"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte
   Wenn Sie ein SharePoint-Projekt bereitstellen, führt Visual Studio eine Reihe von Schritten zur Bereitstellung in einer bestimmten Reihenfolge. Visual Studio enthält viele integrierte Bereitstellungsschritte, aber Sie können auch eigene erstellen.
@@ -29,9 +29,9 @@ ms.locfileid: "63430430"
 
 - Erstellen einer Visual Studio-Erweiterung, die zwei Hauptaufgaben ausführt:
 
-    - Die Erweiterung definiert ein benutzerdefinierten Bereitstellungsschritts um SharePoint-Lösungen zu aktualisieren.
+  - Die Erweiterung definiert ein benutzerdefinierten Bereitstellungsschritts um SharePoint-Lösungen zu aktualisieren.
 
-    - Die Erweiterung erstellt eine projekterweiterung, die eine neue Bereitstellungskonfiguration definiert, der eine Reihe von Bereitstellungsschritten, die für ein bestimmtes Projekt ausgeführt werden. Die neue Bereitstellungskonfiguration enthält die benutzerdefinierten Bereitstellungsschritts und mehrere integrierte Bereitstellungsschritte.
+  - Die Erweiterung erstellt eine projekterweiterung, die eine neue Bereitstellungskonfiguration definiert, der eine Reihe von Bereitstellungsschritten, die für ein bestimmtes Projekt ausgeführt werden. Die neue Bereitstellungskonfiguration enthält die benutzerdefinierten Bereitstellungsschritts und mehrere integrierte Bereitstellungsschritte.
 
 - Erstellen Sie zwei benutzerdefinierte SharePoint-Befehle, die die Erweiterungsassembly aufruft. SharePoint-Befehle sind Methoden, die von Erweiterungsassemblys APIs im Server-Objektmodell für SharePoint verwenden aufgerufen werden können. Weitere Informationen finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).
 

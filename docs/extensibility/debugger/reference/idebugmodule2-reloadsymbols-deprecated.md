@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5651a85ccc89a8a084c608e3fc698aa326e07c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 635e305c0dd88d72017048da6353f813fcc46406
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918825"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323962"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 VERALTET. VERWENDEN SIE NICHT. Lädt die Symbole für dieses Modul erneut.
@@ -38,14 +41,12 @@ int ReloadSymbols( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pszUrlToSymbols`
+## <a name="parameters"></a>Parameter
+`pszUrlToSymbols`\
+[in] Der Pfad zu den Symbolspeicher.
 
- [in] Der Pfad zu den Symbolspeicher.
-
- `pbstrDebugMessage`
-
- [out] Gibt eine informationsmeldung, z. B. eine Status- oder Fehlerinformationen Nachricht, die rechts neben den Namen des Moduls in das Fenster "Module" angezeigt wird.
+`pbstrDebugMessage`\
+[out] Gibt eine informationsmeldung, z. B. eine Status- oder Fehlerinformationen Nachricht, die rechts neben den Namen des Moduls in das Fenster "Module" angezeigt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Eine Debug-Engine sollte immer zurückgeben `E_FAIL`.

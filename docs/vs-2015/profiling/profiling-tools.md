@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780843"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686269"
 ---
 # <a name="profiling-tools"></a>Profilerstellungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 ## <a name="memory-usage"></a>Speicherauslastung  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem **Speicherauslastungstool** . Mit dem Tool können Sie Momentaufnahmen des verwalteten und nativen Speicherheaps machen. Sie können dieses Tool mit Desktop-Apps, universellen Windows-Apps und ASP.NET-Apps verwenden. Das Tool **Speicherauslastung** kann entweder während des Debuggens über das Fenster **Diagnosetools** ausgeführt werden (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**) oder außerhalb des Debuggers über (**Debuggen &gt; Leistungsanalyse...**). Unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Speicherauslastung) und [Memory Usage without the Debugger](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Speicherauslastung ohne Debugger) finden Sie weitere Informationen.  
+ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem **Speicherauslastungstool** . Mit dem Tool können Sie Momentaufnahmen des verwalteten und nativen Speicherheaps machen. Sie können dieses Tool mit Desktop-Apps, universellen Windows-Apps und ASP.NET-Apps verwenden. Das Tool **Speicherauslastung** kann entweder während des Debuggens über das Fenster **Diagnosetools** ausgeführt werden (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**) oder außerhalb des Debuggers über (**Debuggen &gt; Leistungsanalyse...**). Unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Speicherauslastung) und [Memory Usage without the Debugger](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Speicherauslastung ohne Debugger) finden Sie weitere Informationen.  
   
 ## <a name="cpu-usage"></a>CPU-Auslastung  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

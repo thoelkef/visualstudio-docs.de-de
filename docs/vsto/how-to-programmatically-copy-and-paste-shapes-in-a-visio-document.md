@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten'
+title: Kopieren und Einfügen von Shapes in Visio-Dokument programmgesteuert
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 074a276fe37ef713d38078f60c4bee95145c4d8b
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575207"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402228"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Vorgehensweise: Programmgesteuertes kopieren und Einfügen von Shapes in Visio-Dokumenten
   Sie können programmgesteuert Shapes auf einer Seite eines Dokuments kopieren und in eine neue Seite im selben Dokument einfügen. Sie können die Shapes wahlweise an der Standardposition (in der Mitte des aktiven Fensters) oder an der gleichen Koordinatenpositionen wie auf der ursprünglichen Seite einfügen.

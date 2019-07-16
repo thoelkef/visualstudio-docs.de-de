@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570293"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745885"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
 
- Projektdateien in Visual Studio (*CSPROJ-*, *VBPROJ-*, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).
+ Projektdateien in Visual Studio (*CSPROJ-* , *VBPROJ-* , *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter
 
@@ -68,7 +68,8 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | FileAlignment | Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter. |
 | FrameworkPathOverride | Gibt den Speicherort von *mscorlib.dll* und *microsoft.visualbasic.dll* an. Dieser Parameter entspricht der `/sdkpath`-Option des Compilers *vbc.exe*. |
 | GenerateDocumentation | (Nur Visual Basic ) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer *XML*-Datei gespeichert. |
-| IntermediateOutputPath | Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: *\obj\debug\\*. |
+| GenerateSerializationAssemblies | Gibt an, ob das XML-Serialisierungsassemblys durch *SGen.exe* generiert werden soll. Die Ausführung kann automatisiert, aktiviert oder deaktiviert werden. Diese Eigenschaft wird für Assemblys verwendet, deren Ziel nur das .NET Framework ist. Zum Generieren von XML-Serialisierungsassemblys für .NET Standard oder .NET Core-Assemblys verweisen Sie auf das NuGet-Paket *Microsoft.XmlSerializer.Generator*. |
+| IntermediateOutputPath | Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: *\obj\debug\\* . |
 | KeyContainerName | Der Name des Containers mit dem Schlüssel für einen starken Namen. |
 | KeyOriginatorFile | Der Name der Datei mit dem Schlüssel für einen starken Namen. |
 | MSBuildProjectExtensionsPath | Gibt den Pfad an, unter dem Projekterweiterungen gespeichert sind. Standardmäßig entspricht dies dem Wert von `BaseIntermediateOutputPath`. |
@@ -91,8 +92,8 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | ProduceReferenceAssembly | Ein boolescher Wert, der auf `true` festgelegt wurde, ermöglicht die Produktion von [Verweisassemblys](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) für die aktuelle Assembly. `Deterministic` sollte beim Verwenden dieser Funktion `true` entsprechen. Diese Eigenschaft entspricht der `/refout`-Option der Compiler *vbc.exe* und *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Ein boolescher Wert, der den Compiler anweist, nur eine Verweisassembly und keinen kompilierten Code ausgegeben. Kann nicht in Verbindung mit `ProduceReferenceAssembly` verwendet werden.  Diese Eigenschaft entspricht der `/refonly`-Option der Compiler *vbc.exe* und *csc.exe*. |
 | RemoveIntegerChecks | Ein boolescher Wert, der angibt, ob Überprüfungen auf Ganzzahlüberlauf-Fehler deaktiviert werden sollen. Der Standardwert ist `false`sein. Diese Eigenschaft entspricht der `/removeintchecks`-Option des Compilers *vbc.exe*. |
-| SGenUseProxyTypes | Ein boolescher Wert, der angibt, ob Proxytypen von *SGen.exe* generiert werden sollen.<br /><br /> Das SGen-Ziel verwendet diese Eigenschaft, um das "UseProxyTypes"-Flag festzulegen. Diese Eigenschaft wird standardmäßig auf "true" festgelegt. Es ist keine Benutzeroberfläche verfügbar, um diesen Wert zu ändern. Fügen Sie diese Eigenschaft der Projektdatei hinzu, und legen Sie sie auf FALSE fest, bevor Sie *Microsoft.Common.Targets* oder *C#/VB.targets* importieren, um die Serialisierungsassembly für nicht webdienstbezogene Typen zu generieren. |
-| SGenToolPath | Ein optionaler Toolpfad, der angibt, von wo *SGen.exe* abgerufen werden kann, wenn die aktuelle Version von *SGen.exe* überschrieben wurde. |
+| SGenUseProxyTypes | Ein boolescher Wert, der angibt, ob Proxytypen von *SGen.exe* generiert werden sollen. Dies gilt nur, wenn *GenerateSerializationAssemblies* ausschließlich für .NET Framework aktiviert ist.<br /><br /> Das SGen-Ziel verwendet diese Eigenschaft, um das "UseProxyTypes"-Flag festzulegen. Diese Eigenschaft wird standardmäßig auf "true" festgelegt. Es ist keine Benutzeroberfläche verfügbar, um diesen Wert zu ändern. Fügen Sie diese Eigenschaft der Projektdatei hinzu, und legen Sie sie auf FALSE fest, bevor Sie *Microsoft.Common.Targets* oder *C#/VB.targets* importieren, um die Serialisierungsassembly für nicht webdienstbezogene Typen zu generieren. |
+| SGenToolPath | Ein optionaler Toolpfad, der angibt, von wo *SGen.exe* abgerufen werden kann, wenn die aktuelle Version von *SGen.exe* überschrieben wurde. Diese Eigenschaft wird nur für .NET Framework verwendet.|
 | StartupObject | Gibt die Klasse oder das Modul an, die bzw. das die "Main"-Methode oder die "Sub Main"-Prozedur enthält. Diese Eigenschaft entspricht dem `/main`-Compilerschalter. |
 | ProcessorArchitecture | Die Prozessorarchitektur, die zum Auflösen von Assemblyverweisen verwendet wird. Gültige Werte sind "msil", "x86", "amd64" und "ia64". |
 | RootNamespace | Der zu verwendende Stammnamespace, wenn Sie eine eingebettete Ressource benennen. Dieser Namespace ist Teil des Manifestnamens der eingebetteten Ressource. |
@@ -117,7 +118,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | Satellite_Win32Resource | Fügt eine Win32-Ressource (*RES*-Datei) in die Satellitenassembly ein. |
 | SubsystemVersion | Gibt die mindestens erforderliche Version des Subsystems an, die die generierte ausführbare Datei verwenden kann. Diese Eigenschaft entspricht dem `/subsystemversion`-Compilerschalter. Informationen zum Standardwert dieser Eigenschaft finden Sie unter [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) oder [/subsystemversion (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Die Version von .NET Compact Framework, die zur Ausführung der zu erstellenden Anwendung erforderlich ist. Durch diese Angabe können Sie auf bestimmte Frameworkassemblys verweisen, auf die andernfalls möglicherweise nicht verwiesen werden kann. |
-| TargetFrameworkVersion | Die Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die zum Ausführen der zu erstellenden Anwendung erforderlich ist. Durch diese Angabe können Sie auf bestimmte Frameworkassemblys verweisen, auf die andernfalls möglicherweise nicht verwiesen werden kann. |
+| TargetFrameworkVersion | Die Version von .NET Framework, die zur Ausführung der zu erstellenden Anwendung erforderlich ist. Durch diese Angabe können Sie auf bestimmte Frameworkassemblys verweisen, auf die andernfalls möglicherweise nicht verwiesen werden kann. |
 | TreatWarningsAsErrors | Ein boolescher Parameter. Wenn sein Wert `true` lautet, werden alle Warnungen als Fehler behandelt. Dieser Parameter entspricht dem `/nowarn`-Compilerschalter. |
 | UseHostCompilerIfAvailable | Ein boolescher Parameter. Wenn sein Wert `true` lautet, verwendet die Buildaufgabe das prozessinterne Compilerobjekt, falls es verfügbar ist. Dieser Parameter wird nur von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet. |
 | Utf8Output | Ein boolescher Parameter. Wenn sein Wert `true` lautet, wird die Compilerausgabe mithilfe der UTF-8-Codierung protokolliert. Dieser Parameter entspricht dem `/utf8Output`-Compilerschalter. |

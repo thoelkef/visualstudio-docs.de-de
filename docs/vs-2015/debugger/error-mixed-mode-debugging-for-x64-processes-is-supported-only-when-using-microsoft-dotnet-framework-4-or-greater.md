@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56ae0260b73d41e953fa25b74eae9b012604258a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190a6e890ce31ce2aa66ff474bb9e4b1976a6c46
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535488"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824000"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Fehler: Debuggen im gemischten Modus für x64-Prozess wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Um gemischten systemeigenen und verwalteten Code in einem 64-Bit-Prozess zu debu
   
 - Führen Sie einen der folgenden Schritte aus:  
   
-    - Aktualisieren Sie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] auf Version 4.  
-  
-    - Erstellen Sie eine 32-Bit-Version der Anwendung zum Debuggen.  
+  - Aktualisieren Sie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] auf Version 4.  
+
+  - Erstellen Sie eine 32-Bit-Version der Anwendung zum Debuggen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Einrichten der Remotetools auf dem Gerät](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Einrichten der Remotetools auf dem Gerät](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

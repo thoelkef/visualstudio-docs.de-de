@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700108"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Anzeigen von Datenwerten als Datentipps im Code-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +107,7 @@ DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informatione
   
 - Klicken Sie auf das Symbol mit dem Vergrößerungsglas, um die Standardschnellansicht für den Datentyp auszuwählen.  
   
-     - oder -   
+     - oder -  
   
      Klicken Sie auf den Popup-Pfeil neben der Schnellansicht, und wählen Sie aus der Liste eine dem Datentyp entsprechende Schnellansicht aus.  
   
@@ -143,6 +143,6 @@ DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informatione
   
 ## <a name="see-also"></a>Siehe auch  
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Vorgehensweise: Verwenden Sie das Dialogfeld ' Schnellüberwachung '](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Vorgehensweise: Verwenden Sie das Dialogfeld ' Schnellüberwachung '](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
- [Vorgehensweise: Ändern des numerischen Formats von Debugger-Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Vorgehensweise: Ändern des numerischen Formats von Debugger-Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

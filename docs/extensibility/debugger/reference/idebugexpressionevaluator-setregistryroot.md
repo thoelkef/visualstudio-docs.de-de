@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetRegistryRoot method
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b1d6fd8bb959bc789f52a2955abb13ee4f1165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2f64272b38b6a41e8637e884f19da62d2fd1a1e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874160"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325611"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Diese Methode legt den Registrierungsstamm. Zum Debuggen von Seite-an-Seite verwendet.
@@ -36,10 +39,9 @@ int SetRegistryRoot(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ustrRegistryRoot`
-
- [in] Der neue Registrierungsstamm.
+## <a name="parameters"></a>Parameter
+`ustrRegistryRoot`\
+[in] Der neue Registrierungsstamm.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440958"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674205"
 ---
 # <a name="link-model-elements-and-work-items"></a>Verknüpfen von Modellelementen und Arbeitselementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
 1. Vergewissern Sie sich in **Team Explorer**, dass eine Verbindung mit dem Teamprojekt hergestellt wurde, in dem die Modellelemente mit dem Arbeitselement verknüpft sind.  
   
     > [!NOTE]
-    > Sie können nur Team Explorer und nicht Team Web Access zum Anzeigen verknüpfter Modellelemente verwenden. Vergewissern Sie sich, dass der Arbeitsbereich dem Modellierungsprojekt zugeordnet wird, das die Modellierungsdiagramme oder -elemente enthält. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen. Weitere Informationen finden Sie unter [Problembehandlung](#Troubleshooting) und [Erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Sie können nur Team Explorer und nicht Team Web Access zum Anzeigen verknüpfter Modellelemente verwenden. Vergewissern Sie sich, dass der Arbeitsbereich dem Modellierungsprojekt zugeordnet wird, das die Modellierungsdiagramme oder -elemente enthält. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen. Weitere Informationen finden Sie unter [Problembehandlung](#Troubleshooting) und [Erstellen und Verwenden von Arbeitsbereichen](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Öffnen Sie das Arbeitselement, und wählen Sie **Links** aus. Öffnen Sie unter **Modelllink**das Kontextmenü für das verknüpfte Modellelement. Wählen Sie **Verknüpftes Element öffnen**aus.  
   
@@ -157,7 +157,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
   
     1. Wählen Sie **Eigenschaften**und dann **Arbeitselemente** aus, wobei die Anzahl von verknüpften Arbeitselemente angezeigt wird.  
   
-    2. Wählen Sie in der Eigenschaft **Arbeitselemente** die Schaltfläche mit den Auslassungszeichen **[…]**.  
+    2. Wählen Sie in der Eigenschaft **Arbeitselemente** die Schaltfläche mit den Auslassungszeichen **[…]** .  
   
         > [!NOTE]
         > Es werden nur die Arbeitselemente auf dem aktuellen Server angezeigt. Wenn die Liste leer ist, die Anzahl von Arbeitselementen jedoch nicht 0 ist, überprüfen Sie, ob in **Team Explorer**eine Verbindung mit dem richtigen Server besteht.  
@@ -168,7 +168,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
   
 |**Problem**|**Mögliche Ursache**|**Auflösung**|  
 |---------------|------------------------|--------------------|  
-|Das Modellelement, das Sie verknüpfen möchten, kann nicht gefunden werden.|Das Element könnte sich in einem Diagramm eines Modellierungsprojekts in [!INCLUDE[esprscc](../includes/esprscc-md.md)] befinden. Sie verfügen möglicherweise über keinen Arbeitsbereich, der dem Diagramm zugeordnet ist.|Ordnen Sie den Arbeitsbereich dem Modellierungsprojekt und dem Diagramm zu. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen.<br /><br /> Die für dieses Problem angezeigte Fehlermeldung enthält den Pfad, mit dem Sie den Arbeitsbereich zuordnen können.<br /><br /> Siehe [Erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Das Modellelement, das Sie verknüpfen möchten, kann nicht gefunden werden.|Das Element könnte sich in einem Diagramm eines Modellierungsprojekts in [!INCLUDE[esprscc](../includes/esprscc-md.md)] befinden. Sie verfügen möglicherweise über keinen Arbeitsbereich, der dem Diagramm zugeordnet ist.|Ordnen Sie den Arbeitsbereich dem Modellierungsprojekt und dem Diagramm zu. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen.<br /><br /> Die für dieses Problem angezeigte Fehlermeldung enthält den Pfad, mit dem Sie den Arbeitsbereich zuordnen können.<br /><br /> Siehe [Erstellen und Verwenden von Arbeitsbereichen](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Das verknüpfte Modellelement kann nicht gefunden werden.|Das verknüpfte Element könnte sich in einem Diagramm befinden, das verschoben, umbenannt oder gelöscht wurde.|1.  Löschen Sie in dem Arbeitselement den Link zum Modellelement.<br />2.  Erstellen Sie einen neuen Link vom Modellelement zum Arbeitselement.|  
 |Das Arbeitselement umfasst nicht die von Ihnen erwarteten verknüpften Modellelemente.|Ein Arbeitselement zeigt ein verknüpftes Ebenenelement nur an, wenn der Link vom Arbeitselement aus erstellt wurde. Wenn das Team [!INCLUDE[esprscc](../includes/esprscc-md.md)] nicht verwendet, wird der lokale Pfad der Diagramme zum Erstellen der Links verwendet. Wenn sich das Modellierungsprojekt und seine Diagramme in [!INCLUDE[esprscc](../includes/esprscc-md.md)] befinden, können alle Teammitglieder, die auf das Projekt zugreifen können, verknüpfte Elemente in Arbeitsaufgaben anzeigen.|Versuchen Sie, das Arbeitselement zu aktualisieren.|  
 |Durch das Löschen eines Links von einem Arbeitselement zu einem Modellelement wird der Link vom Modellelement zum Arbeitselement nicht entfernt.||Löschen Sie den Link zum Arbeitselement ausgehend vom Modellelement.|  

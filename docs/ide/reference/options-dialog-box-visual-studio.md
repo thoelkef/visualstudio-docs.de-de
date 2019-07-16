@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b4b30607d5d0c677f7ef5e2401bc55c2398eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecbd3582257d4c141c82be95c0e7ea06504ffcf
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945580"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839600"
 ---
-# <a name="options-dialog-box-visual-studio"></a>Dialogfeld "Optionen" (Visual Studio)
+# <a name="options-dialog-box-visual-studio"></a>Dialogfeld „Optionen“ (Visual Studio)
 
 Mit dem Dialogfeld **Optionen** können Sie die integrierte Entwicklungsumgebung (IDE) Ihren Wünschen entsprechend konfigurieren. Sie können beispielsweise einen Standardspeicherort für Ihre Projekte festlegen, das Standardverhalten und-aussehen von Windows anpassen und Tastenkombinationen für häufig verwendete Befehle erstellen. Zudem gibt es Optionen, die für Ihre Entwicklungssprachen und -plattform spezifisch sind. Sie können über das Menü **Extras** auf die **Optionen** zugreifen.
 
@@ -45,4 +45,4 @@ Das Aktivieren oder Deaktivieren von **Alle Einstellungen anzeigen** wendet alle
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anpassen des Editors](../../ide/customizing-the-editor.md)
+- [Anpassen des Editors](../how-to-change-text-case-in-the-editor.md)

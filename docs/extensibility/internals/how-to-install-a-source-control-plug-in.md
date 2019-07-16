@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420524"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334916"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in
 Erstellen eines Quellcodeverwaltungs-Plug-in umfasst drei Schritte:
@@ -64,7 +64,7 @@ Erstellen eines Quellcodeverwaltungs-Plug-in umfasst drei Schritte:
 
 3. Fügen Sie die Unterschlüssel **SourceCodeControlProvider**unter der **HKEY_LOCAL_MACHINE** -Schlüssel in der **SOFTWARE** Unterschlüssel.
 
-    Unter diesem Unterschlüssel, die den Registrierungseintrag **ProviderRegKey** festgelegt ist, um eine Zeichenfolge, die Unterschlüssel darstellt, die Sie in der Registrierung in Schritt 1 platziert. Das Muster ist **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< Firmenname\>\\< Produktname \>*.
+    Unter diesem Unterschlüssel, die den Registrierungseintrag **ProviderRegKey** festgelegt ist, um eine Zeichenfolge, die Unterschlüssel darstellt, die Sie in der Registrierung in Schritt 1 platziert. Das Muster ist **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< Firmenname\>\\< Produktname \>* .
 
     Im folgenden finden die Beispielinhalte für diesen Unterschlüssel.
 
@@ -77,7 +77,7 @@ Erstellen eines Quellcodeverwaltungs-Plug-in umfasst drei Schritte:
 
 4. Erstellen Sie einen Unterschlüssel mit dem Namen **InstalledSCCProviders** unter der **SourceCodeControlProvider** Unterschlüssel, und legen Sie einen Eintrag unter diesem Unterschlüssel.
 
-    Der Name dieses Eintrags ist, den Benutzer lesbaren Namen des Anbieters (entspricht der Wert für den Eintrag SCCServerName angegeben), und der Wert ist, von denen wiederum den Unterschlüssel, die in Schritt 1 erstellt haben. Das Muster ist **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< Anzeigename\>** = *SOFTWARE\\< Unternehmen Namen\>\\< Produktname\>*.
+    Der Name dieses Eintrags ist, den Benutzer lesbaren Namen des Anbieters (entspricht der Wert für den Eintrag SCCServerName angegeben), und der Wert ist, von denen wiederum den Unterschlüssel, die in Schritt 1 erstellt haben. Das Muster ist **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< Anzeigename\>**  = *SOFTWARE\\< Unternehmen Namen\>\\< Produktname\>* .
 
     Zum Beispiel:
 

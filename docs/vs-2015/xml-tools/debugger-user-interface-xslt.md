@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697025"
 ---
 # <a name="debugger-user-interface-xslt"></a>Benutzeroberfläche des XSLT-Debuggers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 |`position()`|Die Position bzw. Indexnummer des Kontextknotens in Bezug auf die Kontextgröße.|  
 |`self::node()`|Der Wert des Kontextknotens.|  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Debugkontexts](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Debugkontexts](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Ausgabefenster  
  Im Ausgabefenster werden alle während des Debuggens ausgegebenen Fehlermeldungen und aufgetretenen Sicherheitsausnahmen angezeigt.  
@@ -101,4 +101,4 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von XSLT](../xml-tools/debugging-xslt.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)   
- [Variablenfenster](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

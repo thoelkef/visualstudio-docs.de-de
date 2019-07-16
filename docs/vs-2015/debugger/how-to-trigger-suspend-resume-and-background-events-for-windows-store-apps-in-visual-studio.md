@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442723"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685933"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Auslösen von Anhalte-, Fortsetzungs- und Hintergrundereignissen für Windows Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
 
  Außerdem wird in diesem Thema das Debuggen von **Hintergrundaufgaben**beschrieben. Hintergrundaufgaben ermöglichen das Ausführen bestimmte Vorgänge in einem Hintergrundprozess, selbst wenn Ihre App nicht ausgeführt wird. Sie können den Debugger verwenden, um die App in den Debugmodus zu versetzen und die Hintergrundaufgabe anschließend zu debuggen, ohne die Benutzeroberfläche zu starten.
 
- Weitere Informationen zu Prozesslebensdauer-Verwaltung und Hintergrundaufgaben finden Sie unter [Launching, resuming, and multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Weitere Informationen zu Prozesslebensdauer-Verwaltung und Hintergrundaufgaben finden Sie unter [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> In diesem Thema
  [Auslösen von Ereignissen der Prozesslebensdauer-Verwaltung](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
      Beachten Sie, dass **Anhalten und beenden** die App schließt und die Debugsitzung beendet.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Auslösen von Hintergrundaufgaben
- Jede App kann eine Hintergrundaufgabe registrieren, um auf bestimmte Systemereignisse zu reagieren, selbst wenn die App nicht ausgeführt wird. Hintergrundaufgaben können keinen Code ausführen, der die Benutzeroberfläche direkt aktualisiert. Stattdessen zeigen sie dem Benutzer Informationen mithilfe von mit Kachelupdates, Infoanzeigerupdates und Toastbenachrichtigungen an. Weitere Informationen finden Sie unter [Supporting your app with background tasks](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Jede App kann eine Hintergrundaufgabe registrieren, um auf bestimmte Systemereignisse zu reagieren, selbst wenn die App nicht ausgeführt wird. Hintergrundaufgaben können keinen Code ausführen, der die Benutzeroberfläche direkt aktualisiert. Stattdessen zeigen sie dem Benutzer Informationen mithilfe von mit Kachelupdates, Infoanzeigerupdates und Toastbenachrichtigungen an. Weitere Informationen finden Sie unter [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Sie können die Ereignisse, die Hintergrundaufgaben für die App starten, über den Debugger auslösen.
 
@@ -125,4 +125,4 @@ Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management
 4. Wählen Sie das **Diagnose** -Protokoll aus.
 
 ## <a name="see-also"></a>Siehe auch
- [Testen von Store-apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [Anwendungslebenszyklus](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming, und das Multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Testen von Store-apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [Anwendungslebenszyklus](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming, und das Multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

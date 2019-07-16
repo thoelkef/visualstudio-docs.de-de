@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045472"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698378"
 ---
 # <a name="walkthrough-building-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -78,7 +78,7 @@ Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Int
 
 ## <a name="BKMK_CreateBuildConfig"></a> Erstellen einer benutzerdefinierten Buildkonfiguration
 
-Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Debug and Release Project Configurations (Debug- und Releaseprojektkonfigurationen)](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Debug and Release Project Configurations (Debug- und Releaseprojektkonfigurationen)](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds **Konfigurations-Manager** ändern oder erstellen. In dieser Prozedur erstellen Sie eine Buildkonfiguration zum Testen.
 
@@ -197,9 +197,9 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
     Die Buildinformationen umfassen die Uhrzeit, zu der der Build gestartet ist (am Anfang), Reihenfolge, in der die Dateien verarbeitet wurden, und die zum Abschließen des Prozesses erforderliche Zeit (am Ende). Diese Informationen umfassen auch die von Visual Studio beim Build ausgeführt Compeliersyntax.
 
-    Im Visual C#-Build führt die [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)-Option z.B. den von Ihnen zuvor in diesem Thema angegebenen Warnungscode 1762 zusammen mit drei weiteren Warnungen auf.
+    Im Visual C#-Build führt die [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)-Option z.B. den von Ihnen zuvor in diesem Thema angegebenen Warnungscode 1762 zusammen mit drei weiteren Warnungen auf.
 
-    Im Visual Basic-Build umfasst [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) keine bestimmten auszuschließenden Warnungen, sodass keine Warnungen angezeigt werden.
+    Im Visual Basic-Build umfasst [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) keine bestimmten auszuschließenden Warnungen, sodass keine Warnungen angezeigt werden.
 
    > [!TIP]
    > Sie können den Inhalt des Fensters **Ausgabe** durchsuchen, wenn Sie das Dialogfeld **Suchen** mithilfe der Tastenkombination STRG+F anzeigen.
@@ -264,6 +264,6 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)

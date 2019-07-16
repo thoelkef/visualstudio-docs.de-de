@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910381"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310018"
 ---
 # <a name="component-management"></a>Verwaltung von Komponenten
 Einheiten von Aufgaben in der Windows Installer werden als Windows Installer-Komponenten (manchmal als WICs oder nur Komponenten bezeichnet) bezeichnet. Eine GUID identifiziert jedes WIC, wird die grundlegende Einheit der Installation und die verweiszählung für Einrichtungen, die Windows Installer verwenden.

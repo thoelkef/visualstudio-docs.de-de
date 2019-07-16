@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974949"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263724"
 ---
 # <a name="install-visual-studio"></a>Installieren von Visual Studio
 
@@ -88,7 +88,7 @@ Vor der Installation von Visual Studio:
 
 ::: moniker range="vs-2017"
 
-Wenn Sie Fragen zum parallelen Ausführen früherer Versionen von Visual Studio mit Visual Studio 2017 haben, lesen Sie den Abschnitt [Kompatibilität mit vorherigen Versionen](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases/).
+Wenn Sie Fragen zum parallelen Ausführen früherer Versionen von Visual Studio mit Visual Studio 2017 haben, lesen Sie den Abschnitt [Kompatibilität mit vorherigen Versionen](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ::: moniker-end
 
@@ -203,7 +203,7 @@ Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung di
 
 Eine andere Möglichkeit zum Ändern der Standardsprache ist die Ausführung des Installers über die Befehlszeile. Mit dem Befehl `vs_installer.exe --locale en-US` können Sie z.B. erzwingen, dass das Installationsprogramm auf Englisch ausgeführt wird. Das Installationsprogramm speichert diese Einstellung für zukünftige Ausführungen. Der Installer unterstützt die folgenden Sprachtoken: zh-CN, zh-TW, cs-CZ, en-US, es-ES, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU und tr-TR.
 
-## <a name="step-7---change-the-installation-location-optional"></a>Schritt 7: Ändern des Installationspfads (optional)
+## <a name="step-7---select-the-installation-location-optional"></a>Schritt 7: Auswählen des Installationspfads (optional)
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ Eine andere Möglichkeit zum Ändern der Standardsprache ist die Ausführung des
 
 Sie können den Speicherbedarf für die Installation von Visual Studio auf Ihrem Systemlaufwerk reduzieren. Sie können den Downloadcache, freigegebene Komponenten, SDKs und Tools auf andere Datenträger verschieben, und Visual Studio dort belassen, wo es am schnellsten ausgeführt werden kann.
 
-  ![Visual Studio 2019: Ändern des Installationspfads](media/vs-2019/vs-installer-installation-locations.png "Ändern des Installationspfads")
+  ![Visual Studio 2019: Auswählen des Installationspfads](media/vs-2019/vs-installer-installation-locations.png "Auswählen des Installationspfads")
 
 ::: moniker-end
 

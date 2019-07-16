@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19fda87f0e2692d30b9a99777ca11edd7b3906f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420673"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324340"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mithilfe des Befehls Öffnen von Dateien
 Die folgenden Schritte beschreiben, wie verarbeitet die IDE die **geöffnete Datei** Befehl, der verfügbar ist. die **Datei** im Menü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Schritte beschreiben außerdem, wie Projekte auf Aufrufe, die von diesem Befehl stammen, reagieren soll.

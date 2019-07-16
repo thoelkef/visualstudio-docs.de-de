@@ -11,12 +11,12 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956365"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687486"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ In [Generieren neuer Projekte: In die Hintergründe, Teil 1](../../extensibility
 ## <a name="generating-the-solution-files"></a>Zum Erstellen der Projektmappendateien  
  Auswählen einer Anwendungsvorlage leitet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entzippen und öffnen die entsprechende VSTEMPLATE-Datei, und starten Sie eine Vorlage, um die XML-Befehle in dieser Datei zu interpretieren. Diese Befehle erstellen Projekte und Projektelemente in der neuen oder vorhandenen Projektmappe ein.  
   
- Die Vorlage entpackt Quelldateien namens Elementvorlagen, aus dem gleichen ZIP-Ordner, der die VSTEMPLATE-Datei enthält. Die Vorlage übernimmt diese Dateien in das neue Projekt, und sie entsprechend anpassen. Eine Übersicht über Projekt- und Elementvorlagen, finden Sie unter [NIB: Visual Studio-Vorlagen](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Die Vorlage entpackt Quelldateien namens Elementvorlagen, aus dem gleichen ZIP-Ordner, der die VSTEMPLATE-Datei enthält. Die Vorlage übernimmt diese Dateien in das neue Projekt, und sie entsprechend anpassen. Eine Übersicht über Projekt- und Elementvorlagen, finden Sie unter [NIB: Visual Studio-Vorlagen](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Vorlage Parameter ersetzt  
  Wenn die Vorlage eine Item-Vorlage in ein neues Projekt kopiert, ersetzt Vorlagenparameter durch Zeichenfolgen zum Anpassen der das. Ein Vorlagenparameter ist eine spezielle Token, das vorangestellt ist, und ein Dollarzeichen gefolgt sind, z. B. $date$.  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Generieren neuer Projekte: In die Hintergründe Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

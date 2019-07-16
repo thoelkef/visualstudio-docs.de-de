@@ -1,22 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft-Dokumentation
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 682786df1d676391cc1ec838e739cb03983ebb66
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334658"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Laden Sie Debugsymbole aus einem angegebenen Datenstrom der **ICorDebugModule** Objekt.
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ulAppDomainID`
+## <a name="parameters"></a>Parameter
+`ulAppDomainID`\
+[in] Der Bezeichner der Anwendungsdomäne.
 
- [in] Der Bezeichner der Anwendungsdomäne.
+`guidModule`\
+[in] Eindeutiger Bezeichner des Moduls.
 
-`guidModule`
+`baseAddress`\
+[in] Basis Speicheradresse.
 
- [in] Eindeutiger Bezeichner des Moduls.
+`pUnkMetadataImport`\
+[in] Objekt, das die Symbol-Metadaten enthält.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Basis Speicheradresse.
-
-`pUnkMetadataImport`
-
- [in] Objekt, das die Symbol-Metadaten enthält.
-
-`pUnkCorDebugModule`
-
- [in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`pStream`
-
- [in] Ein Datenstrom, die die Debugsymbole geladen enthält.
+`pStream`\
+[in] Ein Datenstrom, die die Debugsymbole geladen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

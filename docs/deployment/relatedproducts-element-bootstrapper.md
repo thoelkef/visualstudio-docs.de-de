@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898723"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747458"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; -Element (Bootstrapper)
 Die `RelatedProducts` -Element definiert, andere Produkte, die entweder hängen davon ab, oder sind in das aktuelle Produkt enthalten.
@@ -74,7 +74,7 @@ Die `RelatedProducts` -Element definiert, andere Produkte, die entweder hängen 
 |`Code`|Der Code-Name des Produkts enthalten, laut der `ProductCode` Attribut der `Product` Element. Weitere Informationen finden Sie unter [ \<Product >-Element](../deployment/product-element-bootstrapper.md).|
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel gibt an, mit der Microsoft-Installer installiert die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], und eine separate Installation ist nicht erforderlich.
+ Das folgende Codebeispiel gibt an, dass Microsoft Installer mit .NET Framework installiert ist, und eine separate Installation ist nicht erforderlich.
 
 ```xml
 <RelatedProducts>

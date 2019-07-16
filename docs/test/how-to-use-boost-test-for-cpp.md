@@ -1,26 +1,27 @@
 ---
 title: Verwenden von Boost.Test für C++
-ms.date: 01/29/2018
+description: Verwenden von Boost.Test zum Erstellen von Komponententests in Visual Studio.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226099"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Verwenden von Boost.Test für C++ in Visual Studio
 
-In **Visual Studio 2017 Version 15.5** und höher ist der Testadapter Boost.Test als Standardkomponente der Workload **Desktopentwicklung mit C++** in die Visual Studio-IDE integriert.
+In Visual Studio 2017 und höher ist der Testadapter Boost.Test als Standardkomponente der Workload **Desktopentwicklung mit C++** in die Visual Studio-IDE integriert.
 
 ![Testadapter für Boost.Test](media/cpp-boost-component.png)
 
-Wenn die Workload **Desktopentwicklung mit C++** nicht installiert ist, öffnen Sie **Visual Studio-Installer**, und wählen Sie **Ändern** aus. Wählen Sie zunächst die Workload **Desktopentwicklung mit C++** und anschließend die Schaltfläche **Ändern** aus.
+Wenn die Workload **Desktopentwicklung mit C++** nicht installiert ist, öffnen Sie **Visual Studio-Installer**. Wählen Sie zunächst die Workload **Desktopentwicklung mit C++** und anschließend die Schaltfläche **Ändern** aus.
 
 ## <a name="install-boost"></a>Installieren von Boost
 
@@ -48,7 +49,7 @@ Boost.Test erfordert [Boost](http://www.boost.org/). Wenn Sie Boost noch nicht i
 
 In der Elementvorlage wird die Boost.Test-Variante mit einzelner Kopfzeile verwendet, aber Sie können den #include-Pfad ändern, sodass die Variante mit der eigenständigen Bibliothek genutzt wird. Weitere Informationen finden Sie unter [Hinzufügen von include-Anweisungen](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Erstellen eines Testprojekts (Visual Studio 2017 Version 15.5)
+## <a name="create-a-test-project"></a>Erstellen eines Testprojekts
 
 Visual Studio 2017 Version 15.5 enthält keine vorkonfigurierten Testprojekte oder Elementvorlagen für Boost.Test. Aus diesem Grund müssen Sie ein Konsolenanwendungsprojekt erstellen und konfigurieren, in dem Ihre Tests gespeichert werden können.
 

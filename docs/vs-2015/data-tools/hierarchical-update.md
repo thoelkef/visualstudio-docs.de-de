@@ -24,19 +24,19 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386005"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699811"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten Daten (aus einem Dataset mit zwei oder mehr verknüpfte Tabellen) in einer Datenbank beim Verwalten von Regeln für die referenzielle Integrität. *Referenzielle Integrität* bezieht sich auf die Konsistenzregeln, angegeben durch die Einschränkungen in einer Datenbank, die das Verhalten des einfügen, aktualisieren und Löschen von verknüpften Datensätzen zu steuern. Beispielsweise ist es an der referenziellen Integrität, der die Erstellung eines Kundendatensatzes vor Aufträge erstellt werden für diesen Kunden erzwingt.  Weitere Informationen zu Beziehungen in Datasets, finden Sie unter [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md)  
   
- Die hierarchische Aktualisierung-Funktion verwendet einen `TableAdapterManager` zum Verwalten der `TableAdapter`s in einem typisierten Dataset. Die `TableAdapterManager` Komponente ist eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Klasse generiert, sodass es nicht Teil der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Wenn Sie eine Tabelle aus dem Datenquellenfenster auf einem Windows-Formular oder eine WPF-Seite ziehen, wird Visual Studio fügt eine Variable vom Typ TableAdapterManager in das Formular oder die Seite, und es im Designer auf der Komponentenleiste angezeigt. Ausführliche Informationen zu den `TableAdapterManager` Klasse, finden Sie im Abschnitt TableAdapterManager-Verweis [Übersicht über TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+ Die hierarchische Aktualisierung-Funktion verwendet einen `TableAdapterManager` zum Verwalten der `TableAdapter`s in einem typisierten Dataset. Die `TableAdapterManager` Komponente ist eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Klasse generiert, sodass es nicht Teil der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Wenn Sie eine Tabelle aus dem Datenquellenfenster auf einem Windows-Formular oder eine WPF-Seite ziehen, wird Visual Studio fügt eine Variable vom Typ TableAdapterManager in das Formular oder die Seite, und es im Designer auf der Komponentenleiste angezeigt. Ausführliche Informationen zu den `TableAdapterManager` Klasse, finden Sie im Abschnitt TableAdapterManager-Verweis [Übersicht über TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Standardmäßig behandelt ein Dataset verknüpfte Tabellen als "nur für Beziehungen" Was bedeutet, dass sie keine foreign Key-Einschränkungen erzwingen. Sie können diese Einstellung zur Entwurfszeit ändern, mit dem Dataset-Designer. Wählen Sie die Zeile der Beziehung zwischen zwei Tabellen, um die **Beziehung** Dialogfeld. Die Änderungen, die Sie hier vornehmen, wenn verhält sich wie der TableAdapterManager bestimmt senden die Änderungen in den zugehörigen Tabellen in der Datenbank.  
   
@@ -55,7 +55,7 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
   
  Standardmäßig werden die Datentabellen in einem DataSet mit Beziehungen (<xref:System.Data.DataRelation>) generiert, die den Beziehungen in der Datenbank entsprechen. Jedoch wird die Beziehung im DataSet nicht als Fremdschlüsseleinschränkung generiert. Die <xref:System.Data.DataRelation> als konfiguriert ist, **nur Beziehung** ohne <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> oder <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> in Kraft.  
   
- Standardmäßig sind Aktualisierungs- und Löschweitergaben deaktiviert, auch wenn Aktualisierungs- und/oder Löschweitergaben für die Datenbankbeziehung aktiviert sind. Beispielsweise können ein neuer Kunde und einen neuen Auftrag erstellen und dann versucht wird, zum Speichern der Daten einen Konflikt verursachen mit foreign Key-Einschränkungen, die in der Datenbank definiert sind. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren von Foreign Key-Einschränkungen in einem Dataset](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
+ Standardmäßig sind Aktualisierungs- und Löschweitergaben deaktiviert, auch wenn Aktualisierungs- und/oder Löschweitergaben für die Datenbankbeziehung aktiviert sind. Beispielsweise können ein neuer Kunde und einen neuen Auftrag erstellen und dann versucht wird, zum Speichern der Daten einen Konflikt verursachen mit foreign Key-Einschränkungen, die in der Datenbank definiert sind. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren von Foreign Key-Einschränkungen in einem Dataset](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
   
 ## <a name="set-the-order-to-perform-updates"></a>Legen Sie die Reihenfolge zum Durchführen von Aktualisierungen  
  Festlegen der Reihenfolge zum Durchführen von Aktualisierungen legt die Reihenfolge der Person, die eingefügt, aktualisiert und gelöscht, müssen alle geänderten Daten in allen Tabellen eines Datasets zu speichern. Wenn das hierarchische Update aktiviert ist, werden zuerst die Einfüge-, dann die Update- und anschließend die Löschvorgänge durchgeführt. Der `TableAdapterManager` stellt die `UpdateOrder`-Eigenschaft bereit, die Sie setzen können, um zuerst die Updates und dann die Einfüge- und Löschvorgänge durchzuführen.  
@@ -63,7 +63,7 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
 > [!NOTE]
 > Es ist wichtig zu verstehen, dass die Aktualisierungsreihenfolge für alle Vorgänge gilt. D.h., wenn Updates ausgeführt werden, einfügungen und löschungen klicken Sie dann für alle Tabellen im Dataset erfolgen.  
   
- Festlegen der `UpdateOrder` -Eigenschaft, nach dem Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) auf ein Formular, wählen Sie die `TableAdapterManager` in der Komponentenleiste, und legen Sie dann die `UpdateOrder` -Eigenschaft in der **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen der Reihenfolge beim Durchführen einer hierarchischen Aktualisierung](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
+ Festlegen der `UpdateOrder` -Eigenschaft, nach dem Ziehen von Elementen aus der [Fensters "Datenquellen"](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) auf ein Formular, wählen Sie die `TableAdapterManager` in der Komponentenleiste, und legen Sie dann die `UpdateOrder` -Eigenschaft in der **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen der Reihenfolge beim Durchführen einer hierarchischen Aktualisierung](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Erstellen Sie eine Sicherungskopie der ein Dataset vor dem Durchführen einer hierarchischen Aktualisierung  
  Beim Speichern von Daten (durch Aufrufen der `TableAdapterManager.UpdateAll()`-Methode) aktualisiert der `TableAdapterManager` die Daten für jede Tabelle in einer einzelnen Transaktion. Wenn ein Teil der Aktualisierung für eine Tabelle fehlschlägt, wird für die gesamte Transaktion ein Rollback ausgeführt. In den meisten Fällen gibt das Rollback Ihrer Anwendung in seinen ursprünglichen Zustand zurück.  
@@ -120,7 +120,7 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
 |`UpdateAll`-Methode|Speichert alle Daten aus allen Datentabellen an.|  
 |`BackUpDataSetBeforeUpdate` -Eigenschaft|Bestimmt, ob eine Sicherungskopie des Datasets vor dem Ausführen erstellen den `TableAdapterManager.UpdateAll` Methode. Boolescher Wert.|  
 |*TableName* `TableAdapter` Eigenschaft|Stellt eine `TableAdapter`. Die generierte `TableAdapterManager` enthält eine Eigenschaft für jede `TableAdapter` verwaltet. Beispielsweise wird ein Dataset mit den Tabellen Customers und Orders mit generiert eine `TableAdapterManager` , enthält `CustomersTableAdapter` und `OrdersTableAdapter` Eigenschaften.|  
-|`UpdateOrder` -Eigenschaft|Steuert die Reihenfolge von den einzelnen INSERT-, Update- und Delete-Befehle. Legen Sie diese Einstellung auf einen der Werte in der `TableAdapterManager.UpdateOrderOption` Enumeration.<br /><br /> In der Standardeinstellung die `UpdateOrder` nastaven NA hodnotu **InsertUpdateDelete**. Dies bedeutet, die einfügungen, dann aktualisiert und löscht dann erfolgen für alle Tabellen im Dataset. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen der Reihenfolge beim Durchführen einer hierarchischen Aktualisierung](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|`UpdateOrder` -Eigenschaft|Steuert die Reihenfolge von den einzelnen INSERT-, Update- und Delete-Befehle. Legen Sie diese Einstellung auf einen der Werte in der `TableAdapterManager.UpdateOrderOption` Enumeration.<br /><br /> In der Standardeinstellung die `UpdateOrder` nastaven NA hodnotu **InsertUpdateDelete**. Dies bedeutet, die einfügungen, dann aktualisiert und löscht dann erfolgen für alle Tabellen im Dataset. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen der Reihenfolge beim Durchführen einer hierarchischen Aktualisierung](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

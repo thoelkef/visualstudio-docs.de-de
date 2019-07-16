@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11facd5b7de76aa407ef28366b789870cdad03c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346179"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Enthält Informationen über ein Debug-Eigenschaft.
@@ -49,19 +52,26 @@ public struct DEBUG_PROPERTY_INFO {
 ```
 
 ## <a name="members"></a>Member
-DwValidFields eine Kombination von Flags aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, der angibt, welche Felder ausgefüllt werden.
+`dwValidFields`\
+Eine Kombination von Flags aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, der angibt, welche Felder ausgefüllt werden.
 
-BstrFullName den vollständigen Namen der Eigenschaft.
+`bstrFullName`\
+Der vollständige Name der Eigenschaft.
 
-BstrName den Namen der Eigenschaft in einem Kontext.
+`bstrName`\
+Der Eigenschaftenname in einem Kontext.
 
-BstrType Eigenschaft geben Sie als formatierte Zeichenfolge.
+`bstrType`\
+Der Typ der Eigenschaft als formatierte Zeichenfolge.
 
-BstrValue den Eigenschaftswert als eine formatierte Zeichenfolge.
+`bstrValue`\
+Der Eigenschaftswert als formatierte Zeichenfolge.
 
-pProperty der [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) von dieser Struktur beschriebenen Objekts.
+`pProperty`\
+Die [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) von dieser Struktur beschriebenen Objekts.
 
-DwAttrib eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Enumeration, die die Attribute für diese Eigenschaft beschreibt.
+`dwAttrib`\
+Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Enumeration, die die Attribute für diese Eigenschaft beschreibt.
 
 ## <a name="remarks"></a>Hinweise
 Eine Eigenschaft ist ein Objekt von einer hierarchischen Wesens, die über einen Namen, Typ und Wert verfügt. Eine Eigenschaft kann z. B. lokale Variablen, Parameter, überwachen Sie Variablen und Ausdrücken und Registern beschrieben.

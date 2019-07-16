@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715673"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318258"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Gibt an, welche Informationen Sie über ein Feld für die Disassembly abzurufen.
@@ -61,32 +64,45 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 };
 ```
 
-## <a name="members"></a>Member
-DSF_ADDRESS initialisieren und Verwenden der `bstrAddress` Feld.
+## <a name="fields"></a>Felder
+`DSF_ADDRESS`\
+Initialisieren und Verwenden der `bstrAddress` Feld.
 
-DSF_ADDRESSOFFSET initialisieren und Verwenden der `bstrAddressOffset` Feld.
+`DSF_ADDRESSOFFSET`\
+Initialisieren und Verwenden der `bstrAddressOffset` Feld.
 
-DSF_CODEBYTES initialisieren und Verwenden der `bstrCodeBytes` Feld.
+`DSF_CODEBYTES`\
+Initialisieren und Verwenden der `bstrCodeBytes` Feld.
 
-DSF_OPCODE initialisieren und Verwenden der `bstrOpCode` Feld.
+`DSF_OPCODE`\
+Initialisieren und Verwenden der `bstrOpCode` Feld.
 
-DSF_OPERANDS initialisieren und Verwenden der `bstrOperands` Feld.
+`DSF_OPERANDS`\
+Initialisieren und Verwenden der `bstrOperands` Feld.
 
-DSF_SYMBOL initialisieren und Verwenden der `bstrSymbol` Feld.
+`DSF_SYMBOL`\
+Initialisieren und Verwenden der `bstrSymbol` Feld.
 
-DSF_CODELOCATIONID initialisieren und Verwenden der `uCodeLocationId` Feld.
+`DSF_CODELOCATIONID`\
+Initialisieren und Verwenden der `uCodeLocationId` Feld.
 
-DSF_POSITION initialisieren und Verwenden der `posBeg` und `posEnd` Felder.
+`DSF_POSITION`\
+Initialisieren und Verwenden der `posBeg` und `posEnd` Felder.
 
-DSF_DOCUMENTURL initialisieren und Verwenden der `bstrDocumentUrl` Feld.
+`DSF_DOCUMENTURL`\
+Initialisieren und Verwenden der `bstrDocumentUrl` Feld.
 
-DSF_BYTEOFFSET initialisieren und Verwenden der `dwByteOffset` Feld.
+`DSF_BYTEOFFSET`\
+Initialisieren und Verwenden der `dwByteOffset` Feld.
 
-DSF_FLAGS initialisieren und Verwenden der `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) Feld.
+`DSF_FLAGS`\
+Initialisieren und Verwenden der `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) Feld.
 
-Symbol DSF_OPERANDS_SYMBOLS enthalten Namen in der `bstrOperands` Feld.
+`DSF_OPERANDS_SYMBOLS`\
+Symbolnamen in umfassen die `bstrOperands` Feld.
 
-DSF_ALL gibt alle Felder für den Disassembly-Datenstrom.
+`DSF_ALL`\
+Gibt alle Felder für den Disassembly-Stream an.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Parameter an die [lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) Methode, um die Felder anzugeben der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) sind, dass die Struktur initialisiert werden.

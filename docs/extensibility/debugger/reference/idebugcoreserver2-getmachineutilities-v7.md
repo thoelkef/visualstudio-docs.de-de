@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetMachineUtilities_V7
 ms.assetid: 64c1f08f-853b-4498-9810-29791581ef2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2929ed704d8b9642d30b9a7951a707db0635b319
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c5aefe3b348f36b32792ebce9600f846d5a9cffe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414050"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317828"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 Diese Methode ruft die Hilfsprogramme für die Computer für einen Server an.
@@ -39,10 +42,9 @@ int GetMachineUtilities_V7(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppUtil`
-
- [out] Gibt eine `IDebugMDMUtil2_V7` -Schnittstelle, die Informationen für den Computer Dienstprogramme darstellt.
+## <a name="parameters"></a>Parameter
+`ppUtil`\
+[out] Gibt eine `IDebugMDMUtil2_V7` -Schnittstelle, die Informationen für den Computer Dienstprogramme darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL`, gibt an, dass die Methode nicht implementiert wird.

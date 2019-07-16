@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446194"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261643"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
    1. Erstellen Sie ein Testprojekt.  
   
-        Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic**, **Visual C#** oder **Visual C++**, und wählen Sie dann **Test**aus.  
+        Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic**, **Visual C#** oder **Visual C++** , und wählen Sie dann **Test**aus.  
   
         Wählen Sie **Komponententestprojekt**aus.  
   
@@ -65,10 +65,10 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 > Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.  
   
 > [!NOTE]
-> Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [verwenden ein anderes Testframework](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [verwenden ein anderes Testframework](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 ## <a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode  
- Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Usa anderes Testframework](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [verwenden ein anderes Testframework](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Erstellen von Test und Methode  
   
@@ -76,7 +76,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
 2. Erstellen Sie ein Testprojekt.  
   
-   - Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, **Test** und anschließend **Komponententestprojekt**aus.  
+   - Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#** , **Test** und anschließend **Komponententestprojekt**aus.  
   
         ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   

@@ -1,21 +1,21 @@
 ---
 title: Einschließen eines NuGet-Pakets in Ihr Projekt
 description: In diesem Dokument wird beschrieben, wie ein NuGet-Paket in ein Xamarin-Projekt eingeschlossen wird. Es veranschaulicht das Suchen und Herunterladen von Paketen und bietet eine Einführung in die IDE-Integrationsfunktionen.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/14/2017
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938107"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691399"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Einschließen eines NuGet-Pakets in Ihr Projekt
 
-NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung und ist in Visual Studio für Mac und Visual Studio für Windows integriert. Sie können nach Paketen suchen und diese zu Ihren Xamarin-Projekten für iOS und Android mithilfe beider IDEs hinzufügen.
+NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung und ist in Visual Studio für Mac und Visual Studio für Windows integriert. Sie können nach Paketen suchen und diese zu Ihren Xamarin-, .NET Core- und ASP.NET-Projekten mithilfe beider IDEs hinzufügen.
 
 Dieser Artikel befasst sich mit dem Einschließen eines NuGet-Pakets in ein Projekt und veranschaulicht die Toolkette, durch die der Prozess nahtlos abläuft.
 
@@ -31,7 +31,7 @@ Erstellen Sie zunächst ein Projekt namens `HelloNuget`, wie unten gezeigt. Dies
 
 ## <a name="adding-a-package"></a>Hinzufügen eines Pakets
 
-Wenn das Projekt in Visual Studio für Mac geöffnet ist, klicken Sie mit der rechten Maustaste auf den Ordner **Pakete** im **Projektmappenpad**, und klicken Sie dann auf **Pakete hinzufügen**:
+Wenn das Projekt in Visual Studio für Mac geöffnet ist, klicken Sie mit der rechten Maustaste auf den Ordner **Pakete** im **Lösungspad**, und klicken Sie dann auf **NuGet-Pakete hinzufügen**:
 
 ![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,15 +43,15 @@ Wenn das Fenster geöffnet ist, wird eine Liste von Paketen aus der Standardpake
 
 ![Liste von NuGet-Paketen](media/nuget-walkthrough-AddPackages1.png)
 
-Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel  `azure`, zu suchen. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche  **Paket hinzufügen** , um die Installation zu starten.
+Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel  `azure mobile`, zu suchen. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche  **Paket hinzufügen** , um die Installation zu starten.
 
-[Add Azure NuGet Package (Hinzufügen eines Azure-NuGet-Pakets)](media/nuget-walkthrough-AddPackages2.png)
+![Hinzufügen eines Azure-NuGet-Pakets](media/nuget-walkthrough-AddPackages2.png)
 
 Sobald das Paket heruntergeladen wurde, wird es Ihrem Projekt hinzugefügt. Die Projektmappe wird sich wie folgt ändern:
 
 * Der Knoten **Referenzen** wird eine Liste aller Assemblys enthalten, die Teil eines NuGet-Pakets sind.
 * Der Knoten **Pakete** zeigt alle NuGet-Pakete an, die Sie heruntergeladen haben. Sie können Pakete aus dieser Liste aktualisieren oder entfernen.
-* Die Datei **packages.config** wird Ihrem Projekt hinzugefügt. Diese XML-Datei wird von der IDE verwendet, um nachzuverfolgen, auf welche Paketversionen in diesem Projekt verwiesen wird. Diese Datei sollte nicht manuell bearbeitet werden, aber Sie sollten sie in der Versionskontrolle behalten. Beachten Sie, dass die Datei „project.json“ statt der Datei „packages.config“ verwendet werden kann. Bei der Datei „project.json“ handelt es sich um ein neues Dateiformat für Pakete, das mit NuGet 3 eingeführt wurde und die transitive Wiederherstellung unterstützt. Weitere Informationen zu „project.json“ finden Sie in der [NuGet documentation (NuGet-Dokumentation)](http://docs.microsoft.com/NuGet/Schema/Project-Json). Die Datei „project.json“ muss manuell hinzugefügt und das Projekt geschlossen und erneut geöffnet werden, bevor diese in Visual Studio für Mac verwendet werden kann.
+* Die Datei **packages.config** wird Ihrem Projekt hinzugefügt. Diese XML-Datei wird von der IDE verwendet, um nachzuverfolgen, auf welche Paketversionen in diesem Projekt verwiesen wird. Diese Datei sollte nicht manuell bearbeitet werden, aber Sie sollten sie in der Versionskontrolle behalten. Beachten Sie, dass die Datei „project.json“ statt der Datei „packages.config“ verwendet werden kann. Bei der Datei „project.json“ handelt es sich um ein neues Dateiformat für Pakete, das mit NuGet 3 eingeführt wurde und die transitive Wiederherstellung unterstützt. Weitere Informationen zu „project.json“ finden Sie in der [NuGet documentation (NuGet-Dokumentation)](https://docs.microsoft.com/NuGet/Schema/Project-Json). Die Datei „project.json“ muss manuell hinzugefügt und das Projekt geschlossen und erneut geöffnet werden, bevor diese in Visual Studio für Mac verwendet werden kann.
 
 ## <a name="using-nuget-packages"></a>Verwenden von NuGet-Paketen
 
@@ -77,7 +77,7 @@ Klicken Sie mit der rechten Maustaste auf **Pakete**, um auf das Kontextmenü zu
 
 ![Paketmenü](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Pakete hinzufügen**: Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
+* **NuGet-Pakete hinzufügen**: Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
 * **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
 * **Wiederherstellen**: Lädt fehlende Pakete herunter (ohne bestehende Pakete auf neuere Versionen zu aktualisieren).
 

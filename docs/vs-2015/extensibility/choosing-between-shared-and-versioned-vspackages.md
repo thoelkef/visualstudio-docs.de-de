@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088144"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821981"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Auswählen zwischen freigegebenen VSPackages und VSPackages mit Versionsangabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Verschiedene Versionen von Visual Studio können auf demselben Computer gleichze
   
 - Machen Sie Ihr VSPackage mit mehreren Versionen kompatibel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Es sind also zwei Möglichkeiten, dies verfügbar:  
   
-    - Beschränken Sie Ihr VSPackage mit der nur die Funktionen der frühesten Version des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , die Sie unterstützen.  
+  - Beschränken Sie Ihr VSPackage mit der nur die Funktionen der frühesten Version des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , die Sie unterstützen.  
+
+  - Ihr VSPackage Programmieren zur Anpassung an die Version des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in dem er ausgeführt wird. Klicken Sie dann, wenn Abfragen für neuere Dienste ein Fehler auftritt, das VSPackage bieten andere Dienste, die in früheren Versionen von Microsoft Intune [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    - Ihr VSPackage Programmieren zur Anpassung an die Version des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in dem er ausgeführt wird. Klicken Sie dann, wenn Abfragen für neuere Dienste ein Fehler auftritt, das VSPackage bieten andere Dienste, die in früheren Versionen von Microsoft Intune [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
-  
-- Registrieren Sie Ihr VSPackage entsprechend an. Weitere Informationen finden Sie unter [VSPackage-Registrierung](../extensibility/internals/vspackage-registration.md) und [verwalteten VSPackage-Registrierung](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Registrieren Sie Ihr VSPackage entsprechend an. Weitere Informationen finden Sie unter [VSPackage-Registrierung](../extensibility/internals/vspackage-registration.md) und [verwalteten VSPackage-Registrierung](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 - Registrieren Sie die Dateierweiterungen entsprechend. Weitere Informationen finden Sie unter [Registrieren von Dateierweiterungen für Seite-an-Seite Bereitstellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

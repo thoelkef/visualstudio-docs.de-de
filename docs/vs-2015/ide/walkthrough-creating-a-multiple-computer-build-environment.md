@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438138"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263018"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Kopieren Sie die folgenden Dateien aus dem Ordner „Debug_NonRedist\x86\“ oder dem Ordner „\Debug_NonRedist\x64\“ wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a) beschrieben zum Buildcomputer. Keine anderen Dateien dürfen kopiert werden.  
+5. Kopieren Sie die folgenden Dateien aus dem Ordner „Debug_NonRedist\x86\“ oder dem Ordner „\Debug_NonRedist\x64\“ wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) beschrieben zum Buildcomputer. Keine anderen Dateien dürfen kopiert werden.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -292,7 +292,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
     |x86_amd64|x64 Cross|x86, x64|x64|  
     |amd64|x64 (Systemeigen)|x64|x64|  
   
-     Wenn „vcvarsall.bat“ erfolgreich ausgeführt wird, d.h., es werden keine Fehlermeldung angezeigt, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installieren von MSBuild-Assemblys auf den globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren.   
+     Wenn „vcvarsall.bat“ erfolgreich ausgeführt wird, d.h., es werden keine Fehlermeldung angezeigt, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installieren von MSBuild-Assemblys auf den globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren.  
   
 #### <a name="to-manually-set-environment-variables"></a>So legen Sie Umgebungsvariablen manuell fest  
   
@@ -424,5 +424,5 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
          Für systemeigenes Erstellen mit 64-Bit, zeigen Sie auf MSBuild mit 64-Bit.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)

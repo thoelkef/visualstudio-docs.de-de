@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
 searchscope: VS Subscription
-ms.openlocfilehash: 08511fda1cc91d84929ee4fd095e82a0656d26a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ece1a09f900cad499082d3bf41a7d9f0a97a09ac
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947817"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586906"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 
@@ -26,12 +26,15 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>, FTE  | Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Artifacts, Azure Pipelines (selbstgehosted)       |  Ja          |
-| Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail,                                        | Azure Boards und Repositorys (Basic)                                                            |  Ja          |
+| Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>, FTE  | Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Artifacts<sup>2</sup>, Azure Pipelines (selbstgehosted)       |  Ja          |
+| Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail,                                        | Azure Boards und Repositorys (Basic), Azure Artifacts<sup>2</sup>                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
+||
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Umfasst nicht: MCT Software & Services, Imagine.*
+
+<sup>2</sup>  *umfasst 2 GB kostenlos*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
@@ -41,7 +44,7 @@ Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige 
 
 Weitere Informationen zu Azure DevOps-Features:
 
-- [Azure Boards und Repositorys (Basic)](https://visualstudio.microsoft.com/team-services/compare-features/)
+- [Azure Boards und Repositorys (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 

@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416646"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686438"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke  
  In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht identisch mit Platzhaltern. Insbesondere:  
   
-1. **\.\\*** entspricht einer Zeichenfolge beliebiger Zeichen  
+1. **\.\\** * entspricht einer Zeichenfolge beliebiger Zeichen  
   
 2. **\\.** entspricht einem Punkt „.“  
   
@@ -181,7 +181,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
  Klicken Sie auf **Test**, **Testeinstellungen**, **Datei für Testeinstellungen auswählen**, und wählen Sie die RUNSETTINGS-Datei aus. Die Datei erscheint im Menü "Testeinstellungen", und Sie können sie auswählen oder abbrechen. Wenn die RUNSETTINGS-Datei ausgewählt ist, wird sie bei jeder Ausführung von **Code Coverage analysieren** angewendet.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>So passen Sie Laufzeiteinstellungen in einem Befehlszeilentest an  
- Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Einstellungsdatei ist ein Parameter dieses Hilfsprogramms. Weitere Informationen finden Sie unter [Verwenden von VSTest.console über die Befehlszeile](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Einstellungsdatei ist ein Parameter dieses Hilfsprogramms. Weitere Informationen finden Sie unter [Verwenden von VSTest.console über die Befehlszeile](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Starten der Visual Studio Developer-Eingabeaufforderung:  
   
@@ -204,7 +204,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
    - <em>Es wird jedoch die **Testassembly</em>* anstelle der **Testquelle** angezeigt. Beim Versuch, das Feld **Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
   
-      Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
+      Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]** . Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
   
    Die Ergebnisse sind im zusammenfassenden Abschnitt des Buildberichts sichtbar.  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

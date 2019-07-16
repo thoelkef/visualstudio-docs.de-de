@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698651"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
   
  **Was ist die universelle Windows-Plattform?**  
   
- Es ist eine Auflistung von Verträgen und Versionen. Mit diesen können Sie die Ziele auswählen, für die Ihre App ausgeführt werden kann. Es wird nicht länger ein Betriebssystem als Ziel für Ihre App angegeben. Jetzt richten Sie Ihre App auf eine oder mehrere Gerätefamilien aus. Weitere Informationen finden Sie in dieser [Plattform-Anleitung](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ Es ist eine Auflistung von Verträgen und Versionen. Mit diesen können Sie die Ziele auswählen, für die Ihre App ausgeführt werden kann. Es wird nicht länger ein Betriebssystem als Ziel für Ihre App angegeben. Jetzt richten Sie Ihre App auf eine oder mehrere Gerätefamilien aus. Weitere Informationen finden Sie in dieser [Plattform-Anleitung](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Anforderungen  
  Die Entwicklungstools für universelle Windows-Apps verfügen über Emulatoren, die Sie verwenden können, um zu prüfen, wie Ihre App auf unterschiedlichen Geräten aussieht. Wenn Sie diesen Emulatoren verwenden möchten, müssen Sie diese Software auf einem physischen Computer installieren. Auf dem physischen Computer muss Windows 8.1 (X 64) Professional Edition oder höher installiert sein, und er muss über einen Prozessor verfügen, der Hyper-V für Clients und SLAT (Second Level Address Translation) unterstützt. Die Emulatoren können nicht verwendet werden, wenn Visual Studio auf einem virtuellen Computer installiert ist.  
@@ -55,8 +55,8 @@ Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern könne
   Sie können den XAML-Designer nur verwenden, wenn Ihre Entwicklungsplattform Windows 10 ist.  
   
 ## <a name="universal-windows-apps"></a>Universelle Windows-Apps  
- Wählen Sie Ihre bevorzugte Entwicklungssprache aus C#, Visual Basic, C++ oder JavaScript aus, um [eine universelle Windows-App für Geräte unter Windows 10 zu erstellen](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Oder schauen Sie sich dieses [Video zu den Ersten Schritten](http://channel9.msdn.com/Series/ConnectOn-Demand/229)an.  
+ Wählen Sie Ihre bevorzugte Entwicklungssprache aus C#, Visual Basic, C++ oder JavaScript aus, um [eine universelle Windows-App für Geräte unter Windows 10 zu erstellen](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Oder schauen Sie sich dieses [Video zu den Ersten Schritten](http://channel9.msdn.com/Series/ConnectOn-Demand/229)an.  
   
- Wenn Sie über Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps verfügen, [portieren Sie diese vorhandenen Apps](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , um die neueste Version der universellen Windows-Plattform zu verwenden.  
+ Wenn Sie über Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps verfügen, [portieren Sie diese vorhandenen Apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , um die neueste Version der universellen Windows-Plattform zu verwenden.  
   
  Nachdem Sie die universelle Windows-App erstellt haben, müssen Sie [Ihre App packen](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) , um sie auf einem Windows 10-Gerät zu installieren oder an den Windows Store zu übermitteln.

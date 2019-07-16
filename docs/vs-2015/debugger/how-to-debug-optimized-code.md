@@ -23,21 +23,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675614"
 ---
 # <a name="how-to-debug-optimized-code"></a>Vorgehensweise: Debuggen von optimiertem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
-> Die Compileroption [/Zo (erweitertes optimiertes Debugging)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (eingeführt in Visual Studio Update 3) generiert umfassendere Debuginformationen für optimierten Code (Projekte, die nicht mit der Compileroption **/Od** erstellt wurden. Siehe [/O-Optionen (Code optimieren)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Dazu gehört verbesserte Unterstützung zum Debuggen von lokalen Variablen und Inlinefunktionen.  
+> Die Compileroption [/Zo (erweitertes optimiertes Debugging)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (eingeführt in Visual Studio Update 3) generiert umfassendere Debuginformationen für optimierten Code (Projekte, die nicht mit der Compileroption **/Od** erstellt wurden. Siehe [/O-Optionen (Code optimieren)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Dazu gehört verbesserte Unterstützung zum Debuggen von lokalen Variablen und Inlinefunktionen.  
 >   
 > [Bearbeiten und Fortfahren](../debugger/edit-and-continue-visual-csharp.md) ist deaktiviert, wenn die **/Zo**-Compileroption verwendet wird.  
   
@@ -73,11 +73,11 @@ HINWEIS]
   
 6. Wählen Sie `Optimization` im Ordner **C++** aus.  
   
-7. Suchen Sie die Option `Optimization` in der Eigenschaftenliste auf der rechten Seite. Die Einstellung daneben lautet vermutlich `Disabled (`[/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Wählen Sie eine der anderen Optionen aus (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` oder `Custom`).  
+7. Suchen Sie die Option `Optimization` in der Eigenschaftenliste auf der rechten Seite. Die Einstellung daneben lautet vermutlich `Disabled (`[/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Wählen Sie eine der anderen Optionen aus (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` oder `Custom`).  
   
 8. Wenn Sie für die `Custom` die Option `Optimization` auswählen, können Sie Optionen für alle weiteren Eigenschaften in der Eigenschaftenliste festlegen.  
   
-9. Wählen Sie die Konfigurationseigenschaften, C/C++ über die Befehlszeile Knoten der Seite mit den Projekteigenschaften, und fügen `(` [/zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` auf die **zusätzliche Optionen** Textfeld.  
+9. Wählen Sie die Konfigurationseigenschaften, C/C++ über die Befehlszeile Knoten der Seite mit den Projekteigenschaften, und fügen `(` [/zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` auf die **zusätzliche Optionen** Textfeld.  
   
     > [!WARNING]
     > Für `/Zo` ist Visual Studio 2013 Update 3 oder höher erforderlich.  
@@ -90,7 +90,7 @@ HINWEIS]
 for (x=0; x<10; x++)  
 ```  
   
- Angenommen, Sie haben in dieser Zeile einen Haltepunkt festgelegt. Sie gehen möglicherweise davon aus, dass der Haltepunkt 10 Mal getroffen wird. Wenn der Code optimiert ist, wird er jedoch nur einmal getroffen. Dies liegt daran, dass die erste Anweisung den Wert von `x` auf 0 festlegt. Der Compiler erkennt, dass dies nur einmal durchgeführt werden muss und verschiebt es aus der Schleife. Gleichzeitig wird auch der Haltepunkt verschoben. Die Anweisungen zum Vergleichen und Heraufsetzen von `x` verbleiben innerhalb der Schleife. Wenn Sie das Fenster **Disassemblierung** anzeigen, wird die [Schritteinheit](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) zur besseren Steuerung automatisch auf „Befehl“ festgelegt. Dies ist bei der schrittweisen Ausführung von optimiertem Code von Vorteil.  
+ Angenommen, Sie haben in dieser Zeile einen Haltepunkt festgelegt. Sie gehen möglicherweise davon aus, dass der Haltepunkt 10 Mal getroffen wird. Wenn der Code optimiert ist, wird er jedoch nur einmal getroffen. Dies liegt daran, dass die erste Anweisung den Wert von `x` auf 0 festlegt. Der Compiler erkennt, dass dies nur einmal durchgeführt werden muss und verschiebt es aus der Schleife. Gleichzeitig wird auch der Haltepunkt verschoben. Die Anweisungen zum Vergleichen und Heraufsetzen von `x` verbleiben innerhalb der Schleife. Wenn Sie das Fenster **Disassemblierung** anzeigen, wird die [Schritteinheit](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) zur besseren Steuerung automatisch auf „Befehl“ festgelegt. Dies ist bei der schrittweisen Ausführung von optimiertem Code von Vorteil.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über den CloudPilot-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948387"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032577"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Der CloudPilot-Vorteil in Visual Studio-Abonnements
 
@@ -64,7 +64,6 @@ Mit CloudPilot von UnifyCloud können Entwickler Anwendungen schnell und unkompl
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 Lizenz, 30 Tage, 1 Scan                                                            |  Nein.  Nur für neue Abonnenten verfügbar           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
-| Visual Studio Dev Essentials | Nicht zutreffend  | Nicht verfügbar | Nicht zutreffend |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
@@ -86,4 +85,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie den Azure-Vorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihre kostenlose Azure-Gutschrift zu erhalten.
+Wenn Sie den Azure-Vorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihre Azure-Gutschrift zu erhalten.

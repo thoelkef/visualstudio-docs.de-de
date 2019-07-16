@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438389"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824835"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 1. Wenn Sie die App aus Visual Studio heraus ausführen, wählen Sie auf der Symbolleiste **Standard** in der Dropdownliste **Debugging starten** ein Bereitstellungsziel aus, z. B. einen der Windows Phone-Emulatoren, **Lokaler Computer**, **Simulator**oder **Remotecomputer**.  
   
-2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
+2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…** .  
   
      Wenn Sie das Ziel der Analyse ändern möchten, wählen Sie**Ziel ändern**aus.  
   
@@ -259,9 +259,9 @@ if (performance.mark && performance.measure) {
   
 - Anzeigen der ungefähren Start-, Dauer- und Beendigungszeit für ein Ereignis in einer Zeitachsen- und Rasteransicht. Im Zeitachsendetaildiagramm können je nach Zoomzustand Zeiträume von 30 Millisekunden bis zu 30 Sekunden in der Rasteransicht angezeigt werden. Für Dauerwerte:  
   
-    - Inklusive Zeiten stellen die Dauer des Ereignisses einschließlich der untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert zuerst angezeigt.  
-  
-    - Exklusive Zeiten stellen die Dauer des Ereignisses ohne die untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert in Klammern angezeigt.  
+  - Inklusive Zeiten stellen die Dauer des Ereignisses einschließlich der untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert zuerst angezeigt.  
+
+  - Exklusive Zeiten stellen die Dauer des Ereignisses ohne die untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert in Klammern angezeigt.  
   
 - Erweitern Sie ein Ereignis in der Hierarchie, um untergeordnete Elemente des Ereignisses anzuzeigen. Die untergeordneten Elemente des Ereignisses sind andere Ereignisse, die vom übergeordneten Ereignis ausgelöst werden. Beispielsweise kann ein DOM-Ereignis Ereignislistener enthalten, die als untergeordnete Elemente angezeigt werden. Ein Ereignislistener kann andere Ereignisse enthalten, die sich daraus ergeben, z. B. ein Layoutereignis.  
   
@@ -269,13 +269,13 @@ if (performance.mark && performance.measure) {
   
 - Zeigen Sie Details für jedes Ereignis im Detailbereich an (rechter Bereich). Die Eigenschaften variieren je nach Ereignis, wie für diese Beispiele:  
   
-    - Für Zeitgeber, Ereignislistener (DOM-Ereignisse) und Animationsframerückrufe stellt die Eigenschaft **Rückruffunktion** einen Link zum Quellcodespeicherort zusammen mit dem Namen des Ereignishandlers oder der Rückruffunktion an.  
-  
-    - Für Zeitgeber, Ereignislistener (DOM-Ereignisse), Layoutereignisse und Animationsframerückrufe werden eine farbkodierte Zusammenfassung des ausgewählten Ereignisses und alle untergeordneten Elemente im Abschnitt **Zusammenfassung der inklusiven Zeit** (der farbkodierte Ring) angezeigt. Jedes farbcodierte Segment des Bilds stellt einen Ereignistyp dar. QuickInfo geben den Ereignistypnamen an.  
-  
-    > [!TIP]
-    > Das Diagramm mit den Zeitachsendetails und **Zusammenfassung der inklusiven Zeit** können Ihnen dabei helfen, Optimierungsbereiche zu identifizieren. Wenn beide Ansichten viele kleine Aufgaben anzeigen, ist das Ereignis eventuell ein Kandidat für die Optimierung. Beispielsweise kann es sein, dass eine App häufig DOM-Elemente aktualisiert, was zu Layout- und HTML-Analyseereignissen führt. Sie können die Leistung möglicherweise optimieren, indem Sie eine Batchverarbeitung einrichten.  
-  
+  - Für Zeitgeber, Ereignislistener (DOM-Ereignisse) und Animationsframerückrufe stellt die Eigenschaft **Rückruffunktion** einen Link zum Quellcodespeicherort zusammen mit dem Namen des Ereignishandlers oder der Rückruffunktion an.  
+
+  - Für Zeitgeber, Ereignislistener (DOM-Ereignisse), Layoutereignisse und Animationsframerückrufe werden eine farbkodierte Zusammenfassung des ausgewählten Ereignisses und alle untergeordneten Elemente im Abschnitt **Zusammenfassung der inklusiven Zeit** (der farbkodierte Ring) angezeigt. Jedes farbcodierte Segment des Bilds stellt einen Ereignistyp dar. QuickInfo geben den Ereignistypnamen an.  
+
+  > [!TIP]
+  > Das Diagramm mit den Zeitachsendetails und **Zusammenfassung der inklusiven Zeit** können Ihnen dabei helfen, Optimierungsbereiche zu identifizieren. Wenn beide Ansichten viele kleine Aufgaben anzeigen, ist das Ereignis eventuell ein Kandidat für die Optimierung. Beispielsweise kann es sein, dass eine App häufig DOM-Elemente aktualisiert, was zu Layout- und HTML-Analyseereignissen führt. Sie können die Leistung möglicherweise optimieren, indem Sie eine Batchverarbeitung einrichten.  
+
 ### <a name="FilterTimelineDetails"></a> Filtern der Zeitachsendetails  
  Sie können die Ansicht in den Zeitachsendetails für ein bestimmtes Ereignis filtern. Wählen Sie dazu in dessen Kontextmenü **Für Ereignis filtern** aus. Wenn Sie diese Option auswählen, wird die Zeitachsen- und Rasteransicht auf das ausgewählte Ereignis beschränkt. Auch die Auswahl im CPU-Auslastungsdiagramm wird auf das bestimmte Ereignis beschränkt.  
   
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Decodieren von Bildern.** Gibt die Zeit an, die für das Dekomprimieren und Decodieren von Bildern aufgewendet wurde.  
   
-  Für die Kategorien Skript und Formatieren stellt der Benutzeroberflächen-Reaktionsfähigkeits-Profiler möglicherweise Daten bereit, die Sie im Zeitachsendetaildiagramm bearbeiten können. Wenn Sie Skripterstellungsprobleme festgestellt haben, können Sie den CPU-Sampling-Profiler mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler ausführen. Um ausführlichere Daten abzurufen, können Sie alternativ den Visual Studio-Funktionsprofiler verwenden. Weitere Informationen finden Sie unter [Analysieren von JavaScript-Funktionstimingdaten](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Für die Kategorien Skript und Formatieren stellt der Benutzeroberflächen-Reaktionsfähigkeits-Profiler möglicherweise Daten bereit, die Sie im Zeitachsendetaildiagramm bearbeiten können. Wenn Sie Skripterstellungsprobleme festgestellt haben, können Sie den CPU-Sampling-Profiler mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler ausführen. Um ausführlichere Daten abzurufen, können Sie alternativ den Visual Studio-Funktionsprofiler verwenden. Weitere Informationen finden Sie unter [Analysieren von JavaScript-Funktionstimingdaten](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   Für die anderen Ereigniskategorien können Sie Plattformnebeneffekte identifizieren, die durch das Hinzufügen von Funktionen zur App verursacht werden. In diesen Fällen können Sie jedoch bestimmte Leistungsprobleme möglicherweise nicht mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler beheben.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Sehen Sie sich [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
   
-- Lesen Sie die Leistungstipps für die Windows Store-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von Windows Store-Apps mit JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Lesen Sie die Leistungstipps für die Windows Store-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von Windows Store-Apps mit JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Analysieren der App-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analysieren der App-Leistung](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

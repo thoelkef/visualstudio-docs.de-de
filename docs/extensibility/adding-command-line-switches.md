@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891836"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352340"
 ---
 # <a name="add-command-line-switches"></a>Hinzufügen von Befehlszeilenschaltern
 Sie können Befehlszeilenoptionen, die für Ihr VSPackage gelten hinzufügen bei *devenv.exe* ausgeführt wird. Verwendung <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> der Name des Schalters sowie die zugehörigen Eigenschaften deklariert. In diesem Beispiel wird der Schalter MySwitch für eine Unterklasse von VSPackage mit dem Namen hinzugefügt **AddCommandSwitchPackage** ohne Argumente und das VSPackage, die automatisch geladen.
@@ -34,7 +34,7 @@ Sie können Befehlszeilenoptionen, die für Ihr VSPackage gelten hinzufügen bei
 | Parameter | Beschreibung|
 | Argumente | Die Anzahl der Argumente für den Switch. Kann "*", oder eine Liste von Argumenten. |
 | DemandLoad | Laden Sie das VSPackage automatisch, wenn dieser auf 1 fest, legen Sie andernfalls auf 0 festgelegt wird. |
-| HelpString | Die Zeichenfolge "oder" Ressource-ID der Zeichenfolge mit anzuzeigende **Devenv /?**. |
+| HelpString | Die Zeichenfolge "oder" Ressource-ID der Zeichenfolge mit anzuzeigende **Devenv /?** . |
 | Name | Der Schalter. |
 | PackageGuid | Die GUID des Pakets. |
 

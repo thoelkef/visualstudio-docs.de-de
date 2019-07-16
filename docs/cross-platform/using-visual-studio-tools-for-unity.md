@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676736"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio-Tools für Unity
 
@@ -202,7 +202,7 @@ Beachten Sie, dass bei dem hier beschriebenen Szenario davon ausgegangen wird, d
 
    Die PDB-Dateien sind für das Debuggen erforderlich, da sie Debugsymbole der DLL enthalten und den DLL-Code seiner Quellcodeform zuordnen. Wenn Sie auf die ältere Runtime Visual abzielen, verwendet Visual Studio-Tools für Unity Informationen aus der DLL- und PDB-Datei, um eine DLL.MDB-Datei zu erstellen. Dies ist das Debugsymbolformat, das von der älteren Unity-Skript-Engine verwendet wird. Wenn Sie auf die neue Runtime zielen und Portable-PDB verwenden, werden die Visual Studio-Tools für Unity nicht versuchen, eine Symbolkonvertierung durchzuführen, da die neue Unity-Runtime Portable-PDBs nativ verarbeiten kann.
    
-   Weitere Informationen zur PDB-Generierung finden [hier](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Wenn Sie auf die neue Runtime abzielen, stellen Sie bitte sicher, dass „Debuginformationen“ auf „Portable“ gesetzt ist, um Portable-PDB korrekt zu generieren. Wenn Sie auf die ältere Runtime abzielen, müssen Sie „Full“ verwenden.
+   Weitere Informationen zur PDB-Generierung finden [hier](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Wenn Sie auf die neue Runtime abzielen, stellen Sie bitte sicher, dass „Debuginformationen“ auf „Portable“ gesetzt ist, um Portable-PDB korrekt zu generieren. Wenn Sie auf die ältere Runtime abzielen, müssen Sie „Full“ verwenden.
 
 4. Debuggen Sie Ihren Code. Sie können jetzt Ihren DLL-Quellcode zusammen mit dem Quellcode Ihres Unity-Projekts debuggen und alle vertrauten Debuggingfunktionen nutzen, d. h. Haltepunkte setzen und Code schrittweise durchlaufen.
 

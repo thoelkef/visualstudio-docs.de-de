@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421249"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824549"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung mit einem Azure Mobile Service verbunden sind
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung mit Verbindung mit einer Azure Mobile Service-Instanz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.  
@@ -28,9 +28,9 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
 - Ein aktives Microsoft Azure-Konto.  
   
-    - Für ein kostenloses Testkonto können Sie sich [hier](http://azure.microsoft.com/pricing/free-trial/)anmelden.  
-  
-    - Sie können [Vorteile für MSDN-Abonnenten](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)aktivieren. Über Ihr MSDN-Abonnement erhalten Sie monatlich eine Gutschrift, die Sie für kostenpflichtige Azure-Dienste verwenden können.  
+  - Für ein kostenloses Testkonto können Sie sich [hier](https://azure.microsoft.com/pricing/free-trial/)anmelden.  
+
+  - Sie können [Vorteile für MSDN-Abonnenten](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)aktivieren. Über Ihr MSDN-Abonnement erhalten Sie monatlich eine Gutschrift, die Sie für kostenpflichtige Azure-Dienste verwenden können.  
   
 ## <a name="create-a-project-and-add-references"></a>Erstellen eines neuen Projekts und Hinzufügen von Verweisen  
  Zunächst erstellen Sie ein WPF-Projekt und fügen diesem ein NuGet-Paket hinzu, über das Sie eine Verbindung mit Azure Mobile Services herstellen können.  
@@ -566,7 +566,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
  Sie können eine Benutzeroberfläche viel ansprechender gestalten, indem Sie dieser Farben, Formen, Grafiken und Animationen hinzufügen. Informationen hierzu finden Sie unter [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md).  
   
- Sie können eine Verbindung mit vorhandenen SQL-Datenbanken oder anderen Datenquellen mit Azure Mobile Services herstellen. Weitere Informationen finden Sie unter [Mobile Services – Dokumentation](http://azure.microsoft.com/services/app-service/mobile/).  
+ Sie können eine Verbindung mit vorhandenen SQL-Datenbanken oder anderen Datenquellen mit Azure Mobile Services herstellen. Weitere Informationen finden Sie unter [Mobile Services – Dokumentation](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

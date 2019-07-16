@@ -1,5 +1,5 @@
 ---
-title: 'Bereitstellung: Featuretour'
+title: Erster Einblick in die Bereitstellung
 description: Erfahren Sie, wie Sie Apps aus Visual Studio bereitstellen können.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929013"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032555"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -40,11 +40,11 @@ Sehen Sie sich die Schnellstarts und Tutorials an, um ausführliche Anweisungen 
 
 Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwendet oder um eine Stagingbereitstellung zu beginnen, in der zur endgültigen Bereitstellung ein anders Tool verwendet wird.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** und **.NET Core**: Verwenden Sie die Option „Veröffentlichen“, um eine Bereitstellung in einem lokalen Ordner durchzuführen. Welche Optionen genau verfügbar sind, hängt von Ihrem App-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Veröffentlichen** aus. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie anschließend **Ordner** aus. Weitere Informationen finden Sie unter [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** und **.NET Core**: Verwenden Sie die Option „Veröffentlichen“, um eine Bereitstellung in einem lokalen Ordner durchzuführen. Welche Optionen genau verfügbar sind, hängt von Ihrem App-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Veröffentlichen** aus. (Wenn Sie noch keine Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie anschließend **Ordner** aus. Weitere Informationen finden Sie unter [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md).
 
     ![„Veröffentlichen“ auswählen](../deployment/media/quickstart-publish.png)
 
-- **Windows-Desktop:** Sie können eine Windows-Desktopanwendung mit der ClickOnce-Bereitstellung in einem Ordner veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows-Desktop:** Sie können eine Windows-Desktopanwendung mit der ClickOnce-Bereitstellung in einem Ordner veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
@@ -83,7 +83,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
     Es gibt noch viele weitere Möglichkeiten, ASP.NET-Anwendungen und -Dienste bereitzustellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und -Diensten](http://www.asp.net/aspnet/overview/deployment).
 
-- **Windows Desktop**: Mit der ClickOnce-Bereitstellung können Sie eine Windows-Desktopanwendung auf einem Webserver oder in einer Netzwerk-Dateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop**: Mit der ClickOnce-Bereitstellung können Sie eine Windows-Desktopanwendung auf einem Webserver oder in einer Netzwerk-Dateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Veröffentlichen im Microsoft Store
 
@@ -120,6 +120,16 @@ Stellen Sie die Anwendungen in virtuellen Umgebungen bereit, um ausgereiftere En
 ## <a name="continuous-deployment"></a>Continuous Deployment
 
 Sie können Azure Pipelines verwenden um Continuous Deployment (kontinuierliche Bereitstellung) für Ihre App zu ermöglichen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) und [Bereitstellen in Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Bereitstellen einer SQL-Datenbank
+
+- [Ändern der Zielplattform und Veröffentlichen eines Datenbankprojekts (SQL Server Data Tools [SSDT])](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Bereitstellen eines Analysis Services-Projekts (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Bereitstellen von Integration Services-Projekten und -Paketen (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Erstellen und Bereitstellen in einer lokalen Datenbank](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Bereitstellung für andere App-Typen
 

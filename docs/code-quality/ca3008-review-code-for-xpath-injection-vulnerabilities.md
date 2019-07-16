@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806465"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841538"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Review code for XPath injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XPath-Befehlen)
 
@@ -32,7 +32,7 @@ Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht eine X
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Achten Sie darauf von XPath-Injection-Angriffen, bei der Arbeit mit nicht vertrauenswürdigen Eingaben. Erstellen von XPath-Abfragen mit nicht vertrauenswürdigen Eingaben kann es Angreifern ermöglichen, die Abfrage, um eine unbeabsichtigte Ergebnissatz in böswilliger Absicht zu bearbeiten, und legen Sie den Inhalt des abgefragten XML-möglicherweise offen. 
+Achten Sie darauf von XPath-Injection-Angriffen, bei der Arbeit mit nicht vertrauenswürdigen Eingaben. Erstellen von XPath-Abfragen mit nicht vertrauenswürdigen Eingaben kann es Angreifern ermöglichen, die Abfrage, um eine unbeabsichtigte Ergebnissatz in böswilliger Absicht zu bearbeiten, und legen Sie den Inhalt des abgefragten XML-möglicherweise offen.
 
 Mit dieser Regel versucht, beim Suchen der Eingabespalte aus HTTP-Anforderungen, die einen XPath-Ausdruck erreicht.
 
@@ -40,7 +40,7 @@ Mit dieser Regel versucht, beim Suchen der Eingabespalte aus HTTP-Anforderungen,
 > Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die eine XPath-Abfrage ausführt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) zum Konfigurieren des Grenzwerts in `.editorconfig` Dateien.
+> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

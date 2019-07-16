@@ -2,16 +2,16 @@
 title: Melden eines Problems mit Visual Studio für Mac
 description: Erfahren Sie, wie Sie in Visual Studio für Mac Vorschläge machen oder Probleme melden.
 ms.topic: troubleshooting
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 11/16/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937263"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691229"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Vorgehensweise: Melden eines Problems mit Visual Studio für Mac
 
@@ -43,9 +43,6 @@ Um ein Problem mit Visual Studio für Mac zu melden, klicken Sie in der Menülei
 
 1. Wenn Sie das gesuchte Problem nicht finden, klicken Sie an der Seite des Bildschirms auf **Neues Problem melden**.
 
-   > [!NOTE]
-   > Die Schaltfläche **Neues Problem melden** ist nur auf der Entwicklercommunity-Oberfläche in Visual Studio für Mac verfügbar. Probleme können nicht direkt auf der [Developer Community](https://developercommunity.visualstudio.com/)-Website gemeldet werden.
-
 1. Geben Sie einen aussagekräftigen Titel für das Problem an, der uns die Weiterleitung an das entsprechende Visual Studio für Mac-Team erleichtert.
 
 1. Geben Sie zusätzliche Details und, wenn möglich, die Schritte zum Reproduzieren des Problems an.
@@ -58,7 +55,7 @@ Um ein Problem mit Visual Studio für Mac zu melden, klicken Sie in der Menülei
 
 1. Klicken Sie auf **Absenden**, um den Bericht zusammen mit allen Bildern und Protokolldateien zu senden.
 
-   Informationen zu den erfassten Daten finden Sie unter [Data we collect (Daten, die wir erfassen)](/visualstudio/ide/developer-community-privacy.md#data-we-collect).
+   Informationen zu den erfassten Daten finden Sie unter [Data we collect (Daten, die wir erfassen)](/visualstudio/ide/developer-community-privacy#data-we-collect).
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Suchen nach Lösungen oder Geben von Feedback
 

@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079008"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823616"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächentext und-Hilfe für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079008"
 
 - Einige Fragen sich Fragen, wenn Sie eine Fehlermeldung zu erstellen:
 
-    - Kann der Benutzer zur Lösung des Problems zu diesem Fehler allein herausfinden, wie?
+  - Kann der Benutzer zur Lösung des Problems zu diesem Fehler allein herausfinden, wie?
 
-    - Wird der Benutzer das gleiche Vokabular wie dieser Fehler verwendet?
+  - Wird der Benutzer das gleiche Vokabular wie dieser Fehler verwendet?
 
-    - Ist dieser Fehler mehrdeutig oder in mehreren Fällen freigegeben? Wenn dies der Fall ist, führen Sie wie Sie mit der Lösung Benutzerhandbuch, die sie benötigen?
+  - Ist dieser Fehler mehrdeutig oder in mehreren Fällen freigegeben? Wenn dies der Fall ist, führen Sie wie Sie mit der Lösung Benutzerhandbuch, die sie benötigen?
 
 #### <a name="build-errors"></a>Buildfehler
  Da Visual Studio ein Entwicklungstool für die Software ist, verfügen viele Komponenten eine Kompilierung konvertieren oder Codierung Schritt, um die Arbeit des Entwicklers in das binäre Format zu konvertieren. Diese Konvertierungen können Fehler verursachen, wenn der Compiler nicht ordnungsgemäß erstellte Dateien nicht verarbeiten kann oder Compileroptionen ordnungsgemäß festgelegt wurden nicht.

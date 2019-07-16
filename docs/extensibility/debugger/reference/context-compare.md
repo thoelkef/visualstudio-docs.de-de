@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689173"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346397"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Gibt die Kriterien zum Vergleichen von zwei Speicher Kontexten.
@@ -53,24 +56,33 @@ public enum enum_CONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Member
-CONTEXT_EQUAL ermittelt die erste Speicherkontext in der Liste, die den Arbeitsspeicher Zielkontext entspricht.
+## <a name="fields"></a>Felder
+`CONTEXT_EQUAL`\
+Finden Sie den Speicherkontext für ersten, in der Liste, die den Arbeitsspeicher Zielkontext entspricht.
 
-CONTEXT_LESS_THAN ermittelt die erste Speicherkontext in der Liste, die kleiner als den Zielkontext der Arbeitsspeicher ist.
+`CONTEXT_LESS_THAN`\
+Finden Sie den Speicherkontext für ersten, in der Liste, die kleiner als den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_GREATER_THAN Suchen der ersten Arbeitsspeicher-Kontext, in der Liste, die den Zielkontext der Arbeitsspeicher größer ist.
+`CONTEXT_GREATER_THAN`\
+Finden Sie die ersten Arbeitsspeicher-Kontext, in der Liste aus, die den Zielkontext der Arbeitsspeicher größer ist.
 
-CONTEXT_LESS_THAN_OR_EQUAL ermittelt die erste Speicherkontext in der Liste, die kleiner als oder gleich den Zielkontext der Arbeitsspeicher ist.
+`CONTEXT_LESS_THAN_OR_EQUAL`\
+Finden Sie den ersten Arbeitsspeicher-Kontext, in der Liste, die kleiner als oder gleich den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_GREATER_THAN_OR_EQUAL ermittelt die erste Speicherkontext in der Liste, die größer als oder gleich den Zielkontext der Arbeitsspeicher ist.
+`CONTEXT_GREATER_THAN_OR_EQUAL`\
+Finden Sie den Speicherkontext für ersten, in der Liste, die größer als oder gleich den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_SAME_SCOPE ermittelt die erste Speicherkontext in der Liste, die im gleichen Bereich wie den Zielkontext der Arbeitsspeicher ist.
+`CONTEXT_SAME_SCOPE`\
+Finden Sie den Speicherkontext für ersten, in der Liste, die im gleichen Bereich wie den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_SAME_FUNCTION ermittelt den Speicherkontext für ersten in der Liste, die in die gleiche Funktion wie der Zielbereich für den Arbeitsspeicher ist.
+`CONTEXT_SAME_FUNCTION`\
+Finden Sie den Speicherkontext für ersten, in der Liste, die in die gleiche Funktion wie der Zielbereich für den Arbeitsspeicher ist.
 
-CONTEXT_SAME_MODULE ermittelt die erste Speicherkontext in der Liste, die im selben Modul wie den Zielkontext der Arbeitsspeicher ist.
+`CONTEXT_SAME_MODULE`\
+Finden Sie den Speicherkontext für ersten, in der Liste, die im selben Modul wie den Zielkontext der Arbeitsspeicher ist.
 
-CONTEXT_SAME_PROCESS ermittelt die erste Speicherkontext in der Liste, die in demselben Prozess wie den Zielkontext der Arbeitsspeicher ist.
+`CONTEXT_SAME_PROCESS`\
+Finden Sie den Speicherkontext für ersten, in der Liste, die in demselben Prozess wie den Zielkontext der Arbeitsspeicher ist.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) Methode.

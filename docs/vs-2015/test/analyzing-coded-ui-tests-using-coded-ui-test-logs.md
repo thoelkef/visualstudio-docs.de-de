@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90e8e85882225fbecb4947de234081ccfc26fbbb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442811"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824216"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,35 +34,35 @@ Testprotokolle für programmierten UI filtern wichtige Informationen zu den Ausf
   
 - Auf .NET Framework Version 4 abzielen, wenn keine Datei App.config im Testprojekt vorhanden ist  
   
-    - Öffnen Sie die Datei **QTAgent32_40.exe.config**.  
-  
-         Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
-  
-         Speichern Sie die Datei.  
-  
+  - Öffnen Sie die Datei **QTAgent32_40.exe.config**.  
+
+    Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
+
+    Speichern Sie die Datei.  
+
 - Auf .NET Framework Version 4,5 abzielen, wenn keine Datei App.config im Testprojekt vorhanden ist  
   
-    - Öffnen Sie die Datei **QTAgent32.exe.config**.  
-  
-         Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
-  
-         Speichern Sie die Datei.  
+  - Öffnen Sie die Datei **QTAgent32.exe.config**.  
+
+    Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
+
+    Speichern Sie die Datei.  
   
 - Datei App.config im Testprojekt vorhanden  
   
-    - Öffnen Sie die Datei App.config im Projekt.  
-  
-         Fügen Sie unter dem Konfigurationsknoten den folgenden Code hinzu:  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
+  - Öffnen Sie die Datei App.config im Projekt.  
+
+    Fügen Sie unter dem Konfigurationsknoten den folgenden Code hinzu:  
+
+    `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
 - Die Anmeldung aus dem Testcode selbst aktivieren  
   
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+  - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Schritt 2: Den Test der programmierten UI ausführen und das Protokoll anzeigen  
  Wenn Sie einen Test der programmierten Benutzeroberfläche mit der modifizierten Datei **QTAgent32.exe.config** ausführen, dann sehen Sie, dass es einen Ausgabelink in den Ergebnissen des Test-Explorers gibt. Protokolldateien werden nicht nur produziert, wenn der Test fehlschlägt, sondern auch für erfolgreiche Tests, wenn das Level der Ablaufverfolgung auf "verbose" gesetzt ist.  
@@ -109,4 +109,4 @@ Testprotokolle für programmierten UI filtern wichtige Informationen zu den Ausf
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
- [Vorgehensweise: Ausführen von Tests in Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+ [Vorgehensweise: Ausführen von Tests in Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

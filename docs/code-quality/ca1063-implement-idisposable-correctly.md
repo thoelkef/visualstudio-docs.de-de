@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788554"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820624"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 
@@ -52,7 +52,7 @@ Die <xref:System.IDisposable?displayProperty=nameWithType> Schnittstelle ist nic
 
 Verstoß gegen eine der folgenden Muster löst die Warnung CA1063.
 
-Jede nicht versiegelter Typ, der deklariert und implementiert die <xref:System.IDisposable> Schnittstelle muss eine eigene bereitstellen `protected virtual void Dispose(bool)` Methode. `Dispose()` sollten Aufrufen `Dipose(true)`, und den Aufruf des Finalizers sollten `Dispose(false)`. Wenn Sie einen nicht versiegelten Typ erstellen, die deklariert und implementiert die <xref:System.IDisposable> -Schnittstelle, die Sie definieren müssen `Dispose(bool)` und nennen Sie sie. Weitere Informationen finden Sie unter [Bereinigen nicht verwaltete Ressourcen (Handbuch für die .NET)](/dotnet/standard/garbage-collection/unmanaged) und [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern).
+Jede nicht versiegelter Typ, der deklariert und implementiert die <xref:System.IDisposable> Schnittstelle muss eine eigene bereitstellen `protected virtual void Dispose(bool)` Methode. `Dispose()` sollten Aufrufen `Dispose(true)`, und den Aufruf des Finalizers sollten `Dispose(false)`. Wenn Sie einen nicht versiegelten Typ erstellen, die deklariert und implementiert die <xref:System.IDisposable> -Schnittstelle, die Sie definieren müssen `Dispose(bool)` und nennen Sie sie. Weitere Informationen finden Sie unter [Bereinigen nicht verwaltete Ressourcen (Handbuch für die .NET)](/dotnet/standard/garbage-collection/unmanaged) und [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [konfigurierbare](#configurability).
 
@@ -90,7 +90,7 @@ Unterdrücken Sie keine Warnung dieser Regel.
 
 Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
 
-```
+```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 

@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba6fce72e3e27fbba9f8abdb424dabb778bd270c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 226762ef355a83a2539fa1402a4369398f9f52a4
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440409"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263152"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -694,7 +694,7 @@ some F# code
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
-2. [Visual Studio 2013 Isolated Shell Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2. [Visual Studio 2013 Isolated Shell Redist](https://aka.ms/VS2013/IsoShell-LP/all)
 
    **Übersicht**
 
@@ -737,7 +737,7 @@ some F# code
 
 2. Öffnen Sie im Projektmappen-Explorer im Projekt im Ordner Ressourcendateien ContosoHelpShellUI ApplicationCommands.vsct aus. Stellen Sie sicher, dass (Suchen Sie nach "No_Help") diese Zeile auskommentiert ist: `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
-3. Wählen Sie die F5-Taste zum Kompilieren und ausführen **Debuggen**. Wählen Sie in der experimentellen Instanz der Isolated Shell-IDE, die **Hilfe** Menü. Stellen Sie sicher, dass die **Sicht Ihnen helfen,**, **hinzufügen und Entfernen von Hilfeinhalt**, und **Hilfeeinstellungen festlegen** Befehle angezeigt.
+3. Wählen Sie die F5-Taste zum Kompilieren und ausführen **Debuggen**. Wählen Sie in der experimentellen Instanz der Isolated Shell-IDE, die **Hilfe** Menü. Stellen Sie sicher, dass die **Sicht Ihnen helfen,** , **hinzufügen und Entfernen von Hilfeinhalt**, und **Hilfeeinstellungen festlegen** Befehle angezeigt.
 
 4. Öffnen Sie im Projektmappen-Explorer im Ordner "Shell-Anpassung"-Projekt ContosHelpShell ContosoHelpShell.pkgdef aus. Um die Contoso-Hilfekatalog zu definieren, fügen Sie die folgenden Zeilen hinzu:
 
@@ -814,13 +814,13 @@ some F# code
 
 17. Starten Sie die Contoso-Anwendung (ausgehend vom Stamm des Contoso-app). Wählen Sie aus ISO-Shell, die **helfen** Menüelement, und ändern Sie die **Hilfeeinstellungen festlegen** zu **verwenden der lokalen Hilfe**.
 
-18. Wählen Sie in der Shell die **Hilfe** Menüelement, klicken Sie dann **Sicht Ihnen helfen,**. Lokale Hilfe-Viewer sollte gestartet werden. Wählen Sie die Registerkarte **Inhalt verwalten** aus. Klicken Sie unter **Installationsquelle**, wählen Sie die **Datenträger** Optionsfeld aus. Wählen Sie die **...**  Schaltfläche, und navigieren Sie zu den lokalen Ordner, der Contoso-Inhalt (in den lokalen Ordner im vorherigen Schritt kopiert) enthält. Wählen Sie die Datei "HelpContentSetup.msha". Contoso sollte jetzt als ein Buch in der Auswahl der Buch angezeigt werden. Wählen Sie **hinzufügen**, und wählen Sie dann die **Update** Schaltfläche (unten rechts).
+18. Wählen Sie in der Shell die **Hilfe** Menüelement, klicken Sie dann **Sicht Ihnen helfen,** . Lokale Hilfe-Viewer sollte gestartet werden. Wählen Sie die Registerkarte **Inhalt verwalten** aus. Klicken Sie unter **Installationsquelle**, wählen Sie die **Datenträger** Optionsfeld aus. Wählen Sie die **...**  Schaltfläche, und navigieren Sie zu den lokalen Ordner, der Contoso-Inhalt (in den lokalen Ordner im vorherigen Schritt kopiert) enthält. Wählen Sie die Datei "HelpContentSetup.msha". Contoso sollte jetzt als ein Buch in der Auswahl der Buch angezeigt werden. Wählen Sie **hinzufügen**, und wählen Sie dann die **Update** Schaltfläche (unten rechts).
 
 19. Wählen Sie in der Contoso-IDE die F1-Taste F1 Funktionalität testen.
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
+Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
 
 Weitere Informationen zum Nutzen der Hilfe-API finden Sie unter [Hilfe-Viewer-Codebeispiele](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e).
 

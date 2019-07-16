@@ -54,7 +54,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, k�
       </RelatedProducts>
     ```
 
-5. Fügen Sie XML-Code, um alle Dateien aufgelistet, die in das Bootstrapperpaket zu sind. In diesem Beispiel verwendet den Namen der Paketdatei *"CorePackage.msi"*.
+5. Fügen Sie XML-Code, um alle Dateien aufgelistet, die in das Bootstrapperpaket zu sind. In diesem Beispiel verwendet den Namen der Paketdatei *"CorePackage.msi"* .
 
     ```xml
     <PackageFiles>
@@ -64,7 +64,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, k�
 
 6. Kopieren oder verschieben Sie die *"CorePackage.msi"* -Datei in die *C:\package* Ordner.
 
-7. Fügen Sie XML-Code, zum Installieren des Pakets mithilfe von Bootstrapperbefehlen. Der Bootstrapper fügt automatisch die **/qn /** flag, das die *MSI* -Datei, die im Hintergrund installiert wird. Wenn die Datei ist eine *.exe*, führt der Bootstrapper die *.exe* -Datei mit der Shell. Das folgende XML zeigt keine Argumente *"CorePackage.msi"*, Sie können jedoch Befehlszeilenargument in der `Arguments` Attribut.
+7. Fügen Sie XML-Code, zum Installieren des Pakets mithilfe von Bootstrapperbefehlen. Der Bootstrapper fügt automatisch die **/qn /** flag, das die *MSI* -Datei, die im Hintergrund installiert wird. Wenn die Datei ist eine *.exe*, führt der Bootstrapper die *.exe* -Datei mit der Shell. Das folgende XML zeigt keine Argumente *"CorePackage.msi"* , Sie können jedoch Befehlszeilenargument in der `Arguments` Attribut.
 
     ```xml
     <Commands>

@@ -8,12 +8,12 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0747dfe89c2d8d4ceb8321f00f723f973f3ff526
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fcbda9f8c7a98d0830c898c81471854efc3a6403
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959364"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686142"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>LocalizedName-Element (Schema für VSIX-Sprachpaket)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,4 +62,4 @@ Erforderlich. Der lokalisierte Name der Erweiterung installiert werden.
 ## <a name="see-also"></a>Siehe auch  
  [Schemareferenz für VSX Sprachpaket](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)   
- [Referenz zum VSIX-Erweiterung Schema 1.0](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Referenz zum VSIX-Erweiterung Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

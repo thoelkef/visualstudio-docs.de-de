@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226385"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347411"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Diese Methode ordnet einen Symbolnamen ein Symboltyp.
@@ -44,17 +44,14 @@ int GetTypeByName(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszClassName`\
+`pszClassName`\
+[in] Der Symbolname.
 
- [in] Der Symbolname.
+`nameMatch`\
+[in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet. Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration.
 
- `nameMatch`\
-
- [in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet. Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration.
-
- `ppField`\
-
- [out] Gibt den Symboltyp, als ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.
+`ppField`\
+[out] Gibt den Symboltyp, als ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

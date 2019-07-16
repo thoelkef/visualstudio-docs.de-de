@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001912"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825764"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-schema
 
@@ -25,11 +25,11 @@ Diese Funktion ist nur für Elemente verfügbar. Zudem gelten die folgenden Rege
 
 - Das aktuelle Element im Editor muss leer sein und darf keine Attribute aufweisen. Alle folgenden Elemente sind z. B. gültig:
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - Der Cursor muss direkt rechts neben dem Elementnamen platziert werden.
 
@@ -56,7 +56,7 @@ Es werden Standardwerte generiert und als Werte gekennzeichnet, die bearbeitet w
 
      Im Editor wird eine neue Datei geöffnet. Die Datei enthält eine XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Schemas** Feld.
+3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen ( **...** ) auf die **Schemas** Feld.
 
      Die **XSD-Schemas** Dialogfeld wird angezeigt.
 
@@ -139,7 +139,7 @@ Es werden Standardwerte generiert und als Werte gekennzeichnet, die bearbeitet w
 </xs:schema>
 ```
 
-### <a name="output"></a>Output
+### <a name="output"></a>Ausgabe
 
  Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Gekennzeichnete Elemente als `bold` editierbaren Felder in der XML-Ausschnitt festlegen.
 

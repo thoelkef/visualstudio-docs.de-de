@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432547"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685269"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateierweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzugte Maßnahme, die auftritt, wenn ein Benutzer eine Datei doppelklickt. Dies wird bevorzugt, dass die Aktion mit einem Verb, z. B. geöffnet ist, verknüpft ist, die die Aktion entspricht.  
   
- Sie können die Verben, die ein Programmbezeichner (ProgID) für eine Erweiterung zugeordnet sind, mit der Shell-Schlüssel befindet sich unter HKEY_CLASSES_ROOT registrieren\\*progid*\shell. Weitere Informationen finden Sie unter [Dateitypen](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Sie können die Verben, die ein Programmbezeichner (ProgID) für eine Erweiterung zugeordnet sind, mit der Shell-Schlüssel befindet sich unter HKEY_CLASSES_ROOT registrieren\\*progid*\shell. Weitere Informationen finden Sie unter [Dateitypen](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
 ## <a name="registering-standard-verbs"></a>Registrieren von Standard-Verben  
  Das Betriebssystem erkennt die folgenden standard-Verben:  

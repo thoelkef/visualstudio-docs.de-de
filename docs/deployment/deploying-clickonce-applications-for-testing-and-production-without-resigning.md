@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne erneutes Signieren | Microsoft-Dokumentation
+title: Bereitstellen von ClickOnce-apps ohne erneutes Signieren
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b1abda86c8fdd80c20b03a6d3869d025d0a7aaa
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407054"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263296"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Test- und produktionsumgebungen Server ohne erneutes Signieren
 In diesem Artikel wird beschrieben, ein Feature von ClickOnce in .NET Framework Version 3.5, die die Bereitstellung von ClickOnce-Anwendungen über mehrere Speicherorte zu, ohne erneutes Signieren oder Ändern der ClickOnce können-Manifeste eingeführt.

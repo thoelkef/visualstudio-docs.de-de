@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196998"
 ---
 # <a name="contributing-to-the-automation-model"></a>Mitwirken am Automatisierungsmodell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Visual Studio bietet eine Reihe von Automatisierungsschnittstellen für die Umge
  [Bereitstellen von Automatisierung für Code](../../extensibility/internals/providing-automation-for-code.md)  
  Erklärt, dass die Erstellung eines Automatisierungsmodells für Ihren Code nicht erforderlich ist. Allerdings wird ein Link in diesem Thema bereitgestellt, die aussagekräftige Informationen in Codemodelle enthält.  
   
- [Vorgehensweise: Bereitstellen von Automatisierung für Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Vorgehensweise: Bereitstellen von Automatisierung für Fenster](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Erklärt, dass das Bereitstellen von Automatisierung ist eine gute Idee, wann immer Sie-Automatisierungsobjekte in einem Fenster zur Verfügung stellen möchten, und die Umgebung eine vorgefertigte Automatisierungsobjekt keine bereits bietet. Erläutert die Automatisierung für Toolfenster und Dokumentfenster.  
   
  [Verwenden des Automatisierungsmodells](../../extensibility/internals/using-the-automation-model.md)  

@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 561f6727ca0273d5d59434a7bfdd0cdc00533754
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458636"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322192"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Ruft ein lokales Objekt Ausdrucksauswertungsfehler Ausdruck den metrischen Namen ab.
@@ -44,21 +44,17 @@ private int GetEELocalObject(
 ```
 
 ## <a name="parameters"></a>Parameter
- `guidLang`\
+`guidLang`\
+[in] Eindeutiger Bezeichner der Programmiersprache.
 
- [in] Eindeutiger Bezeichner der Programmiersprache.
+`guidVendor`\
+[in] Eindeutiger Bezeichner des Herstellers.
 
- `guidVendor`\
+`pszMetric`\
+[in] Der Name der Metrik.
 
- [in] Eindeutiger Bezeichner des Herstellers.
-
- `pszMetric`\
-
- [in] Der Name der Metrik.
-
- `ppUnk`\
-
- [out] Der Ausdruck gibt Ausdrucksauswertungsfehler lokales Objekt.
+`ppUnk`\
+[out] Der Ausdruck gibt Ausdrucksauswertungsfehler lokales Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

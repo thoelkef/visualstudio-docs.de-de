@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442867"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686555"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität von Visual Basic- und C#-Code in Store-Apps mit der statischen Codeanalyse von Visual Studio
 
@@ -27,7 +27,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Das Codeanalysetool in Visual Studio Express überprüft den Code auf eine Reihe von allgemeinen Fehlern und auf Verstöße gegen gebräuchliche Programmiergrundlagen. Codeanalysewarnungen unterscheiden sich von C#-Compilerfehlern und -Warnungen, da das Codeanalysetool nach bestimmten Codeschemata sucht, die gültig sind, jedoch Probleme für Sie oder andere Personen bereiten können, die den Code verwenden. Codeanalyse kann auch Fehler im Code suchen, die schwierig durch Tests zu erkennen sind. Das regelmäßige Ausführen des Codeanalysetools während des Entwicklungsprozesses kann die Qualität der App erhöhen.
 
 > [!NOTE]
-> In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalyse verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](http://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
+> In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalyse verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](https://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
 
 ## <a name="in-this-topic"></a>In diesem Thema
  Erfahren Sie:
@@ -98,12 +98,12 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 ## <a name="BKMK_Warnings"></a> Visual Basic- und C#-Codeanalysewarnungen
  Codeanalyse löst die folgenden Warnungen aus:
 
- [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Leere Finalizer entfernen](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Leere Finalizer entfernen](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Verwerfbare Felder verwerfen](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: Verwerfbare Felder verwerfen](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Serialisierungskonstruktoren implementieren](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Serialisierungskonstruktoren implementieren](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

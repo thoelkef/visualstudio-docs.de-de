@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825042"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195296"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code für Codefehler
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Exemplarische Vorgehensweise: Verwenden Sie statische Codeanalyse Codefehler gefunden
 
 In dieser exemplarischen Vorgehensweise müssen Sie ein verwaltetes Projekt Codefehler analysieren, mit dem Code Analysetool.
 
-Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der Verwendung von Code-Analyse zum Analysieren Ihrer .NET-verwaltete Codeassemblys auf Übereinstimmung mit den Microsoft .NET Framework-Entwurfsrichtlinien.
+Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der Verwendung der Analyse von statischem Code zum Analysieren Ihrer .NET-verwaltete Codeassemblys auf Konformität mit den Entwurfsrichtlinien von .NET.
 
 ## <a name="create-a-class-library"></a>Erstellen einer Klassenbibliothek
 
@@ -29,7 +29,7 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-1. In der **neues Projekt** Dialogfeld erweitern Sie **installiert** > **Visual C#-**, und wählen Sie dann **Windows Desktop**.
+1. In der **neues Projekt** Dialogfeld erweitern Sie **installiert** > **Visual C#-** , und wählen Sie dann **Windows Desktop**.
 
 1. Wählen Sie die **Class-Bibliothek ((.NET Framework)** Vorlage.
 
@@ -141,7 +141,7 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
    1. Wählen Sie die **Assembly signieren** Kontrollkästchen.
 
-   1. In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >**.
+   1. In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >** .
 
       Die **Schlüssel für einen starken Namen erstellen** Dialogfeld wird angezeigt.
 

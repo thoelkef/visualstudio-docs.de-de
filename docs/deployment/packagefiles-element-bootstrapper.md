@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898710"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747509"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;"PackageFiles"&gt; -Element (Bootstrapper)
 Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für die Installation ausgeführt wird, als Ergebnis des definieren die `Command` Element.
@@ -62,7 +62,7 @@ Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für
 | `Hash` | Dies ist optional. Ein SHA1-Hash der Paketdatei. Dies wird verwendet, um die Integrität der Datei bei der Installation zu überprüfen. Wenn die identische Hash aus der Paketdatei nicht berechnet werden kann, wird das Paket nicht installiert werden. |
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel definiert die Pakete für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] redistributable-Paket und seine Abhängigkeiten, z. B. den Windows Installer.
+ Im folgenden Codebeispiel wird definiert, Pakete für das verteilbare .NET Framework-Paket und seine Abhängigkeiten, z. B. den Windows Installer.
 
 ```xml
 <PackageFiles>

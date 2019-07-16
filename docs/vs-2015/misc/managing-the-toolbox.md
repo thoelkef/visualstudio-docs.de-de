@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838677"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681543"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, z. B. einem Editor oder Designer, die Mitgliedschaft in und Darstellung der **Toolbox**zu verwalten.  
   
- Darüber hinaus kann die **Toolbox** selbst mittels Automatisierung verwaltet werden. Weitere Informationen zum Verwalten einer Toolbox mittels Automatisierung finden Sie unter [Vorgehensweise: Steuern die Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Darüber hinaus kann die **Toolbox** selbst mittels Automatisierung verwaltet werden. Weitere Informationen zum Verwalten einer Toolbox mittels Automatisierung finden Sie unter [Vorgehensweise: Steuern die Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Automatische Toolbox-Registerkartenauswahl  
  Eine bestimmte Registerkarte oder Kategorie der **Toolbox** kann automatisch basierend auf dem aktuell aktiven Editor oder Designer aktiviert werden. Wenn z. B. ein Forms-Designer aktiviert ist, soll möglicherweise die Registerkarte **Alle Windows Forms** ausgewählt sein.  
@@ -51,7 +51,7 @@ Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, 
   
 - Ein VSPackage muss entweder <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> verwenden, um Steuerelemente hinzuzufügen, oder das Steuerelement in einen Wrapper-Steuerelement hosten, das von <xref:System.Windows.Forms.AxHost> abgeleitet wird.  
   
-   Visual Studio enthält das `Aximp.exe`-Tool für die Automatisierung der Einbindung eines ActiveX-Steuerelements in einem Steuerelement, das von <xref:System.Windows.Forms.AxHost> abgeleitet wird. Weitere Informationen finden Sie unter [Aximp.exe (Windows Forms ActiveX Control Importer)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio enthält das `Aximp.exe`-Tool für die Automatisierung der Einbindung eines ActiveX-Steuerelements in einem Steuerelement, das von <xref:System.Windows.Forms.AxHost> abgeleitet wird. Weitere Informationen finden Sie unter [Aximp.exe (Windows Forms ActiveX Control Importer)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, und <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sind COM-basierte Schnittstellen, die über die Interop-Assemblys verfügbar sind.  
   

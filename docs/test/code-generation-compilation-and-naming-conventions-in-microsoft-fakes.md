@@ -1,5 +1,5 @@
 ---
-title: Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
+title: 'Microsoft Fakes: Generieren und Kompilieren von Code; Namenskonventionen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822760"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432293"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 

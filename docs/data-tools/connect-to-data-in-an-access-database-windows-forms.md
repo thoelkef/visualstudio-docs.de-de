@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568541"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820411"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank (Windows Forms)
 
-Sie können mit einer Access-Datenbank verbinden (entweder ein *mdf* Datei oder ein *ACCDB* Datei) mithilfe von Visual Studio. Nachdem Sie die Verbindung definiert haben, werden die Daten im Fenster **Datenquellen** angezeigt. Von dort können Sie Tabellen oder Ansichten auf die Formulare ziehen.
+Sie können mit einer Access-Datenbank verbinden (entweder ein *MDB* Datei oder ein *ACCDB* Datei) mithilfe von Visual Studio. Nachdem Sie die Verbindung definiert haben, werden die Daten im Fenster **Datenquellen** angezeigt. Von dort können Sie Tabellen oder Ansichten auf die Formulare ziehen.
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
@@ -51,7 +51,7 @@ Sie können mit Datenbanken über Access 2013, Office 365, Access 2010 oder Acce
 
    Das Dialogfeld **Verbindung hinzufügen** wird geöffnet.
 
-7. Wenn **Datenquelle** ist nicht festgelegt, um **Microsoft Access-Datenbankdatei (OLE DB)**, wählen die **Änderung** Schaltfläche.
+7. Wenn **Datenquelle** ist nicht festgelegt, um **Microsoft Access-Datenbankdatei (OLE DB)** , wählen die **Änderung** Schaltfläche.
 
    Die **Datenquelle wechseln** Dialogfeld wird geöffnet. Wählen Sie in der Liste der Datenquellen, **Microsoft Access-Datenbankdatei**. In der **Datenanbieter** Dropdown-Menü, Option **.NET Framework-Datenanbieter für OLE DB**, und wählen Sie dann **OK**.
 

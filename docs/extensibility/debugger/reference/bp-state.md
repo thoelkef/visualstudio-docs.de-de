@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a35ddccf1723067574942711db89cb64cc41f7b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709251"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350613"
 ---
 # <a name="bpstate"></a>BP_STATE
 Gibt an, ob einen gebundenen Haltepunkt vorhanden ist, und gibt auch an, wenn es aktiviert ist.
@@ -43,14 +46,18 @@ public enum enum_BP_STATE {
 };
 ```
 
-## <a name="members"></a>Member
-BPS_NONE gibt an, die kein Haltepunkt vorhanden ist.
+## <a name="fields"></a>Felder
+`BPS_NONE`\
+Gibt an, dass kein Haltepunkt vorhanden ist.
 
-BPS_DELETED gibt an, dass der Haltepunkt gelöscht wurde.
+`BPS_DELETED`\
+Gibt an, dass der Haltepunkt gelöscht wurde.
 
-BPS_DISABLED gibt an, dass der Haltepunkt deaktiviert ist.
+`BPS_DISABLED`\
+Gibt an, dass der Haltepunkt deaktiviert ist.
 
-BPS_ENABLED gibt an, dass der Breakpoint aktiviert ist.
+`BPS_ENABLED`\
+Gibt an, dass der Breakpoint aktiviert ist.
 
 ## <a name="remarks"></a>Hinweise
 Zurückgegeben von der [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) Methode.

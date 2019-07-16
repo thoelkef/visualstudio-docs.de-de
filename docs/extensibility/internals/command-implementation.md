@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910409"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824940"
 ---
 # <a name="command-implementation"></a>Befehlsimplementierung
 Um einen Befehl in einem VSPackage implementieren, müssen Sie die folgenden Aufgaben ausführen:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der Folgendes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Flags:
 
-    - `OLECMDF_SUPPORTED`: Der Befehl wird unterstützt.
+  - `OLECMDF_SUPPORTED`: Der Befehl wird unterstützt.
 
-    - `OLECMDF_INVISIBLE`: Der Befehl sollten nicht sichtbar sein.
+  - `OLECMDF_INVISIBLE`: Der Befehl sollten nicht sichtbar sein.
 
-    - `OLECMDF_LATCHED`: Der Befehl eingeschaltet ist und wird angezeigt, die überprüft wurden.
+  - `OLECMDF_LATCHED`: Der Befehl eingeschaltet ist und wird angezeigt, die überprüft wurden.
 
-    - `OLECMDF_ENABLED`: Der Befehl ist aktiviert.
+  - `OLECMDF_ENABLED`: Der Befehl ist aktiviert.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: Der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: Der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.
 
-    - `OLECMDF_NINCHED`: Mit dem Befehl wird ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).
+  - `OLECMDF_NINCHED`: Mit dem Befehl wird ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).
 
 - Wenn der Befehl, in definiert wurde der *VSCT* -Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:
 
-    - Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.
+  - Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.
 
-    - Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.
+  - Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.
 
 Stellen Sie außerdem sicher, dass der aktuelle Kontext keiner Automatisierungsfunktion, es sei denn, der Befehl dient speziell Automatisierungsfunktionen behandeln.
 

@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161376"
 ---
 # <a name="warning-script-debugging-disabled"></a>Warnung: Skriptdebuggen deaktiviert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
   
 3. Zeigen Sie auf der Registerkarte **Erweitert** unter der Kategorie **Browsen** das Feld **Einstellungen** an.  
   
-4. Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)**.  
+4. Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)** .  
   
 5. Klicken Sie auf **OK**.  
   

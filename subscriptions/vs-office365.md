@@ -7,26 +7,26 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947411"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032827"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus in Visual Studio-Abonnements
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus in Visual Studio-Abonnements
 
-Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 Pro Plus ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Office 365 bietet auch Dienste wie 1 TB OneDrive-Speicher, 60 Skype-Minuten pro Monat sowie Chat- und Telefonsupport von Microsoft. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
+Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 ProPlus ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Erste Schritte mit Office 365 Pro Plus
+## <a name="getting-started-with-office-365-proplus"></a>Erste Schritte mit Office 365 ProPlus
 
-Führen Sie die folgenden Schritte aus, um Office 365 Pro Plus herunterzuladen und zu aktivieren:
+Führen Sie die folgenden Schritte aus, um Office 365 ProPlus herunterzuladen und zu aktivieren:
 1. Melden Sie sich bei Ihrem Visual Studio Enterprise-Abonnement an.
 2. Klicken Sie auf die Registerkarte **Downloads**.
 3. Es wird eine Liste der empfohlenen Downloads angezeigt. Wählen Sie in der Office-Liste die Option **Office 365** aus.
    > [!div class="mx-imgBorder"]
    > ![Office 365-Downloads](_img/vs-office365/vs-office365-downloads.png)
-0. Um Office 365 installieren zu können, benötigen Sie einen Product Key.  Klicken Sie unter der Office 365-Auflistung auf den Link **Schlüssel abrufen**.
+0. Um Office 365 ProPlus installieren zu können, benötigen Sie einen Product Key.  Klicken Sie unter der Office 365-Auflistung auf den Link **Schlüssel abrufen**.
    > [!div class="mx-imgBorder"]
    > ![Office 365-Product Key abrufen](_img/vs-office365/vs-office365-get-key.png)
 0. In einem Flyoutfenster werden alle bereits von Ihnen abgerufenen Schlüssel sowie die Schlüssel angezeigt, die für Sie verfügbar sind.  Klicken Sie unter der Auflistung **Office Professional Plus 2019** auf **Schlüssel anfordern**, um einen neuen Schlüssel abzurufen.
@@ -58,7 +58,7 @@ Wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
-| Visual Studio Dev Essentials | Nicht zutreffend  | Nicht verfügbar |Nicht zutreffend |
+|  |
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
 

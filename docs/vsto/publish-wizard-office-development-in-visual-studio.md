@@ -39,7 +39,7 @@ ms.locfileid: "63447066"
 
 - Ein relativer oder absoluter Pfad im Standard Windows format, z. B. *C:\Deploy\MyApplication* oder *\MyApplication*.
 
-- Ein Universal Naming Convention (UNC)-Pfad, z. B.  *\\\ServerName\MyApplication\\*.
+- Ein Universal Naming Convention (UNC)-Pfad, z. B.  *\\\ServerName\MyApplication\\* .
 
 - Eine URL einer Web site, z. B. http://www.microsoft.com/MyApplication.
 

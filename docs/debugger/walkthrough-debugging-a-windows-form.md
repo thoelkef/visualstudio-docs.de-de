@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407586"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678924"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms-Projekts
 Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendungen. Ein solches Formular erstellt eine Windows-Standardanwendung. Sie können diese exemplarische Vorgehensweise mit Visual Basic, C# oder C++ ausführen.
@@ -48,7 +48,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-2. Öffnen Sie im Bereich „Projekttypen“ den Knoten **Visual Basic**, **Visual C#** oder **Visual C++**. Gehen Sie anschließend wie folgt vor:
+2. Öffnen Sie im Bereich „Projekttypen“ den Knoten **Visual Basic**, **Visual C#** oder **Visual C++** . Gehen Sie anschließend wie folgt vor:
 
     1. Wählen Sie für Visual Basic oder Visual C#- **Windows Desktop** > **Windows-Formular-App**.
 
@@ -165,23 +165,24 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Auf der **Debuggen** , wählen Sie im Menü **Starten ohne Debugging**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Das Windows Form wird unter Windows ausgeführt, genau wie bei einem Doppelklick auf die ausführbare Datei. Der Debugger wird nicht angehängt.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Auf der **Debuggen** , wählen Sie im Menü **an den Prozess anhängen**. (Mit diesem Befehl steht auch auf die **Tools** Menü.)
 
-     The **Attach to Process** dialog box appears.
+     Das Dialogfeld **An den Prozess anhängen** wird angezeigt.
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. In der **verfügbare Prozesse** Bereich, suchen, die den Prozessnamen (Walkthrough_SimpleDebug.exe) in der **Prozess** Spalte, und klicken Sie darauf.
 
-5. Click the **Attach** button.
+5. Klicken Sie auf die **Anfügen** Schaltfläche.
 
-6. In your Windows Form, click the one and only button.
+6. Klicken Sie im Formular auf die einzige vorhandene Schaltfläche.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Der Debugger unterbricht die Ausführung des Formulars am Haltepunkt.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
+- [Debuggersicherheit](../debugger/debugger-security.md)

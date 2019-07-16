@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 2517b8213ba2aa216f6cac64eb92a4c40402463f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855982"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255458"
 ---
 Windows Communication Foundation (WCF)

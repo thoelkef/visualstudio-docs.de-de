@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be8c468e8b6aac70d44485b1560a84524a4ef540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416347"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686415"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
   
   **Testen von SharePoint-Anwendungen**  
   
-  Die oben genannten Funktionen helfen Ihnen auch beim Schreiben von Komponenten- und Integrationstest für SharePoint-Anwendungen, die Visual Studio verwenden. [!INCLUDE[crabout](../includes/crabout-md.md)] Informationen zum Entwickeln von SharePoint-Anwendung mithilfe von Visual Studio finden Sie unter [Erstellen von SharePoint-Lösungen](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Erstellen und Debuggen von SharePoint-Lösungen](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) und [Überprüfen und Debuggen von SharePoint-Code](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Die oben genannten Funktionen helfen Ihnen auch beim Schreiben von Komponenten- und Integrationstest für SharePoint-Anwendungen, die Visual Studio verwenden. [!INCLUDE[crabout](../includes/crabout-md.md)] Informationen zum Entwickeln von SharePoint-Anwendung mithilfe von Visual Studio finden Sie unter [Erstellen von SharePoint-Lösungen](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Erstellen und Debuggen von SharePoint-Lösungen](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) und [Überprüfen und Debuggen von SharePoint-Code](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
   **Einschränkungen**  
   
@@ -126,7 +126,7 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
 8. Wählen Sie im Projektmappen-Explorer **Projekt erneut laden** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Erstellen von SharePoint-Lösungen](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Erstellen und Debuggen von SharePoint-Lösungen](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [Erstellen und Ausführen von Komponententests für vorhandenen Code](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Erstellen von SharePoint-Lösungen](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Erstellen und Debuggen von SharePoint-Lösungen](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

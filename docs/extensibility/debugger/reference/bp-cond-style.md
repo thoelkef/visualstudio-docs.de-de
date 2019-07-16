@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685858"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351814"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Gibt den Haltepunkt-Bedingung-Stil für ausstehende und gebundene Haltepunkte.
@@ -41,12 +44,15 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="members"></a>Member
-BP_COND_NONE den Haltepunkt wird ausgelöst, bei Erreichen des Haltepunkts Position. Keine Bedingung für Haltepunkt angegeben.
+## <a name="fields"></a>Felder
+`BP_COND_NONE`\
+Löst den Haltepunkt an, bei des Haltepunkts Position erreichen. Keine Bedingung für Haltepunkt angegeben.
 
-BP_COND_WHEN_TRUE löst den Haltepunkt aus, nur wenn der bedingte Ausdruck mit dem Haltepunkt verknüpften ergibt `true`.
+`BP_COND_WHEN_TRUE`\
+Den Haltepunkt ausgelöst wird, nur wenn der bedingte Ausdruck mit dem Haltepunkt verknüpften ergibt `true`.
 
-BP_COND_WHEN_CHANGED wird ausgelöst, die der Haltepunkt nur, wenn der Wert des bedingten Ausdrucks mit dem Haltepunkt zugeordneten aus der vorherigen Auswertung geändert wurde.
+`BP_COND_WHEN_CHANGED`\
+Wird ausgelöst, die der Haltepunkt nur, wenn der Wert des bedingten Ausdrucks mit dem Haltepunkt zugeordneten aus der vorherigen Auswertung geändert wurde.
 
 ## <a name="remarks"></a>Hinweise
 Verwendet für die `styleCondition` Mitglied der [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Struktur.

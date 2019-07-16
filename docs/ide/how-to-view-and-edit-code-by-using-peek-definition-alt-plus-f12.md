@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537482"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043414"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)
 
 Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe von **Definition einsehen** können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu verlassen.
 
-Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic zeigt **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten an (z.B. integrierte .NET Framework-Typen).
+Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic enthält **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten (z.B. integrierte .NET-Typen).
 
-## <a name="working-with-peek-definition"></a>Arbeiten mit der Peek-Definition
+## <a name="use-peek-definition"></a>Verwenden von „Definition einsehen“
 
-### <a name="to-open-a-peek-definition-window"></a>So öffnen Sie ein Fenster "Definition einsehen"
+### <a name="open-a-peek-definition-window"></a>Öffnen eines Fensters „Definition einsehen“
 
 1. Klicken Sie im Kontextmenü eines Typs oder Members auf **Definition einsehen**, um eine Definition einzusehen. Wenn die Option aktiviert ist,können Sie eine Definition auch mithilfe der Maus einsehen, indem Sie **STRG** (oder eine andere Zusatztaste) gedrückt halten und auf den Namen des Members klicken. Alternativ drücken Sie auf der Tastatur die Tasten **ALT**+**F12**.
 
@@ -75,7 +75,7 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 |Öffnen des Definitionsfensters|**ALT**+**F12**|
 |Schließen des Definitionsfensters|**ESC**|
 |Höherstufen des Definitionsfensters auf eine reguläre Dokumentregisterkarte|**UMSCHALT**+**ALT**+**Start**|
-|Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+**-** und **STRG**+**ALT**+**=**|
+|Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+ **-** und **STRG**+**ALT**+ **=**|
 |Zwischen mehreren Ergebnissen navigieren|**F8** und **UMSCHALT**+**F8**|
 |Umschalten zwischen den Fenstern "Code-Editor" und "Definition"|**UMSCHALT**+**ESC**|
 
@@ -86,4 +86,4 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 
 - [Navigieren durch den Code](../ide/navigating-code.md)
 - [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)
-- [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)
+- [Produktivitätsfeatures in Visual Studio](../ide/productivity-features.md)

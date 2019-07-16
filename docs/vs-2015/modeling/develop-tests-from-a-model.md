@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042053"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823328"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
   
  Beim Testen von Subsystemen werden dieselben Prinzipien auf die Hauptkomponenten eines Systems angewendet. Jede Komponente wird getrennt von den anderen Komponenten getestet. Subsystemtests konzentrieren sich auf das Verhalten, das auf den Benutzeroberflächen oder der API der Komponente sichtbar ist.  
   
- Weitere Informationen zum Ausführen von Tests finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Weitere Informationen zum Ausführen von Tests finden Sie unter [Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Ableiten von Systemtests aus einem Anforderungsmodell  
  Sie können eine Beziehung zwischen Systemtests und einem Anforderungsmodell erstellen und verwalten. Um diese Beziehung zu erstellen, schreiben Sie Tests, die den wichtigsten Elementen des Anforderungsmodells entsprechen. Visual Studio hilft Ihnen, diese Beziehung zu verwalten, indem es Ihnen ermöglicht, Verknüpfungen zwischen den Tests und Teilen des Modells zu erstellen. Weitere Informationen über Anforderungsmodelle finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
@@ -52,9 +52,9 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
   
 - Lassen Sie verschiedene Tests auf den unterschiedlichen Klauseln der Nachbedingung basieren. Erstellen Sie beispielsweise separate Tests für die Benachrichtigung des Restaurants über die Bestellung und für das Empfangen der Zahlung vom Kunden. Diese Trennung bietet folgende Vorteile:  
   
-    - Änderungen verschiedener Aspekte der Anforderungen treten häufig unabhängig voneinander auf. Durch ein derartiges Aufteilen der Tests in verschiedene Aspekte ist es einfacher, die Tests zu aktualisieren, wenn sich Anforderungen ändern.  
-  
-    - Wenn laut Entwicklungsplan ein Aspekt des Anwendungsfalls vor einem anderen implementiert wird, können Sie die Tests im Verlauf der Entwicklung getrennt aktivieren.  
+  - Änderungen verschiedener Aspekte der Anforderungen treten häufig unabhängig voneinander auf. Durch ein derartiges Aufteilen der Tests in verschiedene Aspekte ist es einfacher, die Tests zu aktualisieren, wenn sich Anforderungen ändern.  
+
+  - Wenn laut Entwicklungsplan ein Aspekt des Anwendungsfalls vor einem anderen implementiert wird, können Sie die Tests im Verlauf der Entwicklung getrennt aktivieren.  
   
 - Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion sein: Eingaben von 4 Stellen Sie sicher, dass die Ausgabe 2 ist. Entwerfen Sie stattdessen das Skript ein: Wählen Sie eine Eingabe; Multiplizieren Sie die Ausgabe von selbst, und stellen Sie sicher, dass das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.  
   
@@ -63,9 +63,9 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
   
 ###### <a name="to-link-tests-to-a-use-case"></a>So verknüpfen Sie Tests mit einem Anwendungsfall  
   
-1. Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Anwendungsfällen im Modell.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Viele der Accessoren und Aktualisierungen werden bereits durch die normale API der Anwendung verfügbar sein. Einige zusätzliche Funktionen müssen jedoch möglicherweise geschrieben werden, um die Tests zu ermöglichen. Diese zusätzlichen Accessoren und Aktualisierungen werden manchmal als „Testinstrumentation“ bezeichnet. Da sie vom inneren Entwurf des Systems abhängen, müssen sie von den Entwicklern des Systems bereitgestellt werden, wohingegen die Tester den Code für die Tests im Hinblick auf das Anforderungsmodell schreiben.  
   
- Wenn Sie automatisierte Tests schreiben, können Sie generische Tests verwenden, um Accessoren und Aktualisierungen zu umschließen. Weitere Informationen finden Sie unter [erstellen eine automatisierte, Testläufe eine ausführbare Datei mit generischen Tests](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Wenn Sie automatisierte Tests schreiben, können Sie generische Tests verwenden, um Accessoren und Aktualisierungen zu umschließen. Weitere Informationen finden Sie unter [erstellen eine automatisierte, Testläufe eine ausführbare Datei mit generischen Tests](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>Tests für Geschäftsregeln  
  Einige Anforderungen beziehen sich nicht direkt auf einen bestimmten Anwendungsfall. Das Unternehmen DinnerNow beispielsweise ermöglicht es Kunden, aus zahlreichen Speisekarten zu wählen, schreibt jedoch vor, dass die in einer Bestellung ausgewählten Positionen aus einer einzigen Speisekarte stammen müssen. Diese Geschäftsregel kann als Invariant hinsichtlich der Zuordnungen zwischen Bestellungen, Speisekarten und Positionen im Anforderungsklassenmodell ausgedrückt werden.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>So verknüpfen Sie Tests mit einem Modellelement oder einer Beziehung  
   
-1. Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089574"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823600"
 ---
 # <a name="resource-details-view---contention-data"></a>Ressourcendetailansicht – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ Die Ansicht Ressourcendetails enthält ein Zeitachsendiagramm der blockierenden 
   
 - Führen Sie einen der folgenden Schritte aus:  
   
-    - Klicken Sie auf **Verkleinern**, um zur vorherigen Zoomstufe zurückzukehren.  
-  
-    - Klicken Sie auf **Zurücksetzen des Zooms**, um die ganze Zeitachse in der Ansicht anzuzeigen.  
-  
+  - Klicken Sie auf **Verkleinern**, um zur vorherigen Zoomstufe zurückzukehren.  
+
+  - Klicken Sie auf **Zurücksetzen des Zooms**, um die ganze Zeitachse in der Ansicht anzuzeigen.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>So zeigen Sie die Aufrufliste eines Ereignisses an  
   
 - Klicken Sie im Zeitachsendiagramm auf die Ereignisleiste.  

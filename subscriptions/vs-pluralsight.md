@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc96d9c088a270342be792a2e7514e172a72ea45
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947553"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032774"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -41,7 +41,7 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
    - Klicken Sie auf das Kontrollkästchen, um die Nutzungsbedingungen und die Datenschutzrichtlinie zu akzeptieren.
    - Klicken Sie auf **I agree, activate benefit** (Ich stimme zu, Vorteil aktivieren).
      > [!div class="mx-imgBorder"]
-     > ![Pluralsight-Vorteil: Aktivierung](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Pluralsight-Vorteil: Aktivierung](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Pluralsight-Vorteil: Nutzungsbedingungen](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
@@ -72,9 +72,9 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 Monate    | Ja<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 Monate    | Nein |
 |                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 Monate    | Nein |
-|                     Visual Studio Dev Essentials                     |        NA         |   1 Monat    |       Nein       |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) |       Azure       | Nicht verfügbar |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Program      | Nicht verfügbar |       NA       |
+||
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 

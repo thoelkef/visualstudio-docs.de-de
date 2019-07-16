@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b5386d6b4d32b34b708b7d213cf1a6e96ec0651a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327035"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Diese Methode ruft ein Arbeitsspeicher-Objekt, das den Speicher darstellt, dem an dieses Objekt gebunden ist.
@@ -40,18 +43,15 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pField`
+## <a name="parameters"></a>Parameter
+`pField`\
+[in] Gibt an, welches Feld zum Abrufen des Speicherobjekts für.
 
- [in] Gibt an, welches Feld zum Abrufen des Speicherobjekts für.
+`uConstant`\
+[in] Stellt eine Speicheradresse oder den Wert für einen konstanten Wert dar.
 
- `uConstant`
-
- [in] Stellt eine Speicheradresse oder den Wert für einen konstanten Wert dar.
-
- `ppObject`
-
- [out] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die den Arbeitsspeicher, der an dieses Objekt gebunden ist darstellt.
+`ppObject`\
+[out] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , die den Arbeitsspeicher, der an dieses Objekt gebunden ist darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565080"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745299"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Datentools für .NET
 
-Visual Studio und .NET Framework bieten zusammen umfangreiche API und toolunterstützung für die Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. .NET Framework-Klassen, die Datenzugriff-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, zusammen mit den Daten, die in Visual Studio-Tools wurde entwickelt, hauptsächlich als Unterstützung für relationale Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbank-Anbieter oder von Dritten, ADO.NET-Anbieter gewährleistet.
+Visual Studio und .NET bieten zusammen umfangreiche API und toolunterstützung für die Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. Die Klassen in .NET, die Datenzugriffs-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, zusammen mit den Daten, die in Visual Studio-Tools wurde entwickelt, hauptsächlich als Unterstützung für relationale Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbank-Anbieter oder von Dritten, ADO.NET-Anbieter gewährleistet.
 
-[.NET Core](/dotnet/core/) ADO.NET, mit Ausnahme von Datasets und verknüpfte Typen unterstützt. Wenn Sie .NET Core Anzielen und eine Ebene objektrelationales Mapping (ORM), verwenden Sie [Entity Framework Core](/ef/core/).
+[.NET Core](/dotnet/core/) ADO.NET, mit Ausnahme von Datasets und ihre verwandten Typen unterstützt. Wenn Sie .NET Core abzielen und eine objektrelationales Mapping (ORM)-Ebene, verwenden Sie [Entity Framework Core](/ef/core/).
 
 Das folgende Diagramm zeigt eine vereinfachte Ansicht der grundlegenden Architektur:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Mithilfe von ClickOnce zum Bereitstellen von Anwendungen, die auf mehrere Versionen von .NET Framework ausgeführt werden kann | Microsoft-Dokumentation'
+title: Mithilfe von ClickOnce zum Bereitstellen von multitarget apps
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7e7d79dd1fc3d6c988701d0aa88cb4d0d299c2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406720"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747484"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die unter mehreren Versionen von .NET Framework ausgeführt werden können
 Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framework ausgerichtet ist, mithilfe der ClickOnce-bereitstellungstechnologie. Dies erfordert, dass Sie generieren und aktualisieren die Anwendungs- und Bereitstellungsmanifeste.
 
 > [!NOTE]
-> Bevor Sie die Anwendung mehrere Versionen von .NET Framework als Ziel festlegen, sollten Sie sicherstellen, dass Ihre Anwendung mit mehreren Versionen von .NET Framework ausgeführt wird. Die Version der common Language Runtime unterscheidet zwischen [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] im Vergleich zu .NET Framework 2.0, .NET Framework 3.0 und .NET Framework 3.5.
+> Bevor Sie die Anwendung mehrere Versionen von .NET Framework als Ziel festlegen, sollten Sie sicherstellen, dass Ihre Anwendung mit mehreren Versionen von .NET Framework ausgeführt wird. Die Version der common Language Runtime unterscheidet zwischen .NET Framework 4 und .NET Framework 2.0, .NET Framework 3.0 und .NET Framework 3.5.
 
  Dieser Prozess erfordert die folgenden Schritte aus:
 
@@ -88,7 +88,7 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Aktualisieren Sie die Versionsnummer der `<assemblyIdentity>` -Element für Microsoft.Windows.CommonLanguageRuntime der Versionsnummer für das .NET Framework, das den kleinsten gemeinsamen Nenner ist. Angenommen, die Anwendung .NET Framework 3.5 abzielt und [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], verwenden die 2.0.50727.0-Versionsnummer und den XML-Code sollte wie folgt aussehen:
+3. Aktualisieren Sie die Versionsnummer der `<assemblyIdentity>` -Element für Microsoft.Windows.CommonLanguageRuntime der Versionsnummer für das .NET Framework, das den kleinsten gemeinsamen Nenner ist. Z. B. wenn die Anwendung .NET Framework 3.5 und .NET Framework 4 ausgerichtet ist, sollte mithilfe der 2.0.50727.0-Versionsnummer und den XML-Code wie folgt aussehen:
 
    ```xml
    <dependency>

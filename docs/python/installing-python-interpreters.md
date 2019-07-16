@@ -1,7 +1,7 @@
 ---
 title: Auswählen und Installieren von Python-Interpretern
 description: Dieser Artikel enthält eine vollständige Liste der Python-Interpreter, die in Visual Studio unterstützt werden, sowie kurze Anweisungen dazu, wo die entsprechenden Installationsprogramme zu finden sind.
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957413"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043478"
 ---
 # <a name="install-python-interpreters"></a>Installieren von Python-Interpretern
 
@@ -27,6 +27,11 @@ Oder installieren Sie die Standardversion der Python-Interpreter über das Dialo
 
 Sie können die in der folgenden Tabelle aufgelisteten Interpreter auch manuell außerhalb des Visual Studio-Installationsprogramms installieren. Wenn Sie beispielsweise Anaconda 3 vor Visual Studio installiert haben, ist keine erneute Installation über das Visual Studio-Installationsprogramm erforderlich. Sie können einen Interpreter auch manuell installieren, wenn beispielsweise eine neuere Version verfügbar ist, die noch nicht im Visual Studio-Installer enthalten ist.
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio unterstützt die Python-Version 2.7 und Versionen ab 3.5. Es ist zwar möglich, Code mit Visual Studio zu bearbeiten, der in anderen Versionen von Python geschrieben wurde, aber diese Versionen werden offiziell nicht unterstützt, und Funktionen wie IntelliSense und Debuggen funktionieren möglicherweise nicht.
+::: moniker-end
+
 Für **Visual Studio 2015 und frühere Versionen** müssen Sie einen der Interpreter manuell installieren.
 
 Visual Studio (alle Versionen) überprüft die Registrierung gemäß den Angaben unter [PEP 514 - Python registration in the Windows registry (PEP 514 – Registrieren von Python in der Windows-Registrierung)](https://www.python.org/dev/peps/pep-0514/) und erkennt so automatisch jeden installierten Python-Interpreter und die zugehörige Umgebung. Python-Installationen befinden sich in der Regel unter **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32-Bit) und **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64-Bit) innerhalb der Knoten für die Verteilung, z.B. **PythonCore** (CPython) und **ContinuumAnalytics** (Anaconda).
@@ -35,7 +40,7 @@ Wenn Visual Studio keine installierte Umgebung findet, folgen Sie den Anweisunge
 
 Visual Studio zeigt im Fenster [**Python-Umgebungen**](managing-python-environments-in-visual-studio.md#the-python-environments-window) alle bekannten Umgebungen an und erkennt Updates für vorhandene Interpreter automatisch.
 
-| Interpreter | Beschreibung |
+| Interpreter | BESCHREIBUNG |
 | --- | --- |
 | [CPython](https://www.python.org/) | Der „native“ und am häufigsten verwendete Interpreter, verfügbar in 32- und 64-Bit-Versionen (32-Bit wird empfohlen). Er umfasst die neuesten Sprachfeatures, die maximale Python-Paketkompatibilität, vollständige Unterstützung für das Debuggen und Interoperabilität mit [IPython](https://ipython.org/). Siehe auch: [Should I use Python 2 or Python 3? (Sollte ich Python 2 oder Python 3 verwenden?)](https://wiki,python.org/moin/Python2orPython3). Beachten Sie, dass Visual Studio 2015 und frühere Versionen Python 3.6 nicht unterstützen, und den Fehler **Unsupported python version 3.6** (Python-Version 3.6 wird nicht unterstützt) ausgeben können. Verwenden Sie stattdessen Python 3.5 oder frühere Versionen. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Eine .NET-Implementierung von Python, verfügbar in 32-Bit- und 64-Bit-Versionen, die C#-/F#-/Visual Basic-Interoperabilität, Zugriff auf .NET APIs, Python-Standarddebuggen (jedoch kein C++-Debuggen im gemischten Modus) und IronPython-/C#-Debuggen im gemischten Modus bietet. IronPython unterstützt jedoch keine virtuelle Umgebungen. |

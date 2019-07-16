@@ -3,17 +3,17 @@ title: Animationen für Visual Studio | Microsoft-Dokumentation
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180f4c6c6d8e7770a1c0d6949db13eaa5eadb3ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799686"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825245"
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 ## <a name="animation-fundamentals"></a>Animation-Grundlagen
@@ -25,13 +25,13 @@ Führen Sie diese Regeln aus, um konsistente und benutzerfreundliche animationss
 
 - **Zeitpunkt und Geschwindigkeit sind wichtig,** um sicherzustellen, dass es sich bei Übergängen können Sie schnelle und natürliche:
 
-    - Führen Sie animierten Übergänge in eine halbe Sekunde (500 Millisekunden).
+  - Führen Sie animierten Übergänge in eine halbe Sekunde (500 Millisekunden).
 
-    - Animationen, die häufig auftreten würden müssen schnell genug sein, dass sie den Workflow des Benutzers nicht unterbrechen. Sehen Sie sich die Animation in einer Schleife aus, und passen Sie die zeitliche Steuerung aus, bis die richtige hält.
+  - Animationen, die häufig auftreten würden müssen schnell genug sein, dass sie den Workflow des Benutzers nicht unterbrechen. Sehen Sie sich die Animation in einer Schleife aus, und passen Sie die zeitliche Steuerung aus, bis die richtige hält.
 
-    - Animationen darf nicht sein, so schnell oder bedürfen, es ist schwer zu verstehen, aber nicht so langsam ist, dass es eine ungeduldig der Übergang abgeschlossen ist.
+  - Animationen darf nicht sein, so schnell oder bedürfen, es ist schwer zu verstehen, aber nicht so langsam ist, dass es eine ungeduldig der Übergang abgeschlossen ist.
 
-    - Verwenden Sie Variablen zeitliche Steuerung, um die Bedeutung hervorzuheben. Z. B. beim Navigieren durch eine Sequenz von Elementen in einem Diagramm beschleunigt über die Übergänge zwischen den Elementen und dann verlangsamt sich auf wichtige Elemente konzentrieren.
+  - Verwenden Sie Variablen zeitliche Steuerung, um die Bedeutung hervorzuheben. Z. B. beim Navigieren durch eine Sequenz von Elementen in einem Diagramm beschleunigt über die Übergänge zwischen den Elementen und dann verlangsamt sich auf wichtige Elemente konzentrieren.
 
 - **Mithilfe der schrittweisen nicht lineare Beschleunigung** von einem Zustand in einen anderen, bietet einen Überblick über die schwierigen Situationen ruhig und natürliche verschieben.
 
@@ -47,13 +47,13 @@ Führen Sie diese Regeln aus, um konsistente und benutzerfreundliche animationss
 
 - **Beim Anzeigen von Fortschritt oder Status** über Animation:
 
-    - Nicht mehr ausgeführt Bewegung bei der zugrunde liegenden Prozess Vorlauf ist nicht.
+  - Nicht mehr ausgeführt Bewegung bei der zugrunde liegenden Prozess Vorlauf ist nicht.
 
-    - Unterscheiden Sie unbestimmt Prozesse von bestimmte Prozesse.
+  - Unterscheiden Sie unbestimmt Prozesse von bestimmte Prozesse.
 
-    - Stellen Sie sicher, dass eine Animation identifizierbaren Abschluss und Fehler Status verfügt.
+  - Stellen Sie sicher, dass eine Animation identifizierbaren Abschluss und Fehler Status verfügt.
 
-    - Minimieren Sie die Verwendung von Auswirkungen Animationen, die der Status, und stellen sicher, dass sie echten Wert aufweisen, durch zusätzliche Informationen von der tatsächlichen Nutzung. Beispiele hierfür sind vorübergehende statusänderungen und Notfälle
+  - Minimieren Sie die Verwendung von Auswirkungen Animationen, die der Status, und stellen sicher, dass sie echten Wert aufweisen, durch zusätzliche Informationen von der tatsächlichen Nutzung. Beispiele hierfür sind vorübergehende statusänderungen und Notfälle
 
 #### <a name="animation-donts"></a>Animation-Empfehlungen:
 
@@ -118,7 +118,7 @@ Informationen zu komplexen und Variablen zu veranschaulichen:
 
 - Ein Element in eine andere verbundene
 
-##### <a name="state"></a>Zustand
+##### <a name="state"></a>Status
 
 - Die Inhaltsupdates
 
@@ -142,7 +142,7 @@ Informationen zu komplexen und Variablen zu veranschaulichen:
 
 - Länger Papierseiten durch Bilder
 
-##### <a name="time"></a>zeit
+##### <a name="time"></a>Uhrzeit
 
 - Anzeigen von Änderungen im Laufe der Zeit, Zeitsprung-screencast
 

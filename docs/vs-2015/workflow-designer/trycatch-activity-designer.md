@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976610"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697079"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch-Aktivitätsdesigner
 Die **TryCatch** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.TryCatch> Aktivität.  
   
 ## <a name="the-trycatch-activity"></a>Die TryCatch-Aktivität  
- Die <xref:System.Activities.Statements.TryCatch> Aktivität enthält eine <xref:System.Activities.Statements.TryCatch.Try%2A> -Aktivität, die eine Auflistung von **Catch\<TException >** und <xref:System.Activities.Statements.TryCatch.Finally%2A> Aktivität. Ein <xref:System.Activities.Statements.Catch%601> des Typs **TException** enthält ein <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> und <xref:System.Activities.Statements.Catch%601.Action%2A>. Zusammen werden diese verwendet, um einen typischen ausnahmebasierten Fehlerbehandlungsmechanismus zu implementieren. Eine <xref:System.Activities.Statements.TryCatch>-Aktivität versucht, die zugehörige <xref:System.Activities.Statements.TryCatch.Try%2A>-Aktivität auszuführen. Wenn die <xref:System.Activities.Statements.TryCatch.Try%2A> Aktivität löst Ausnahme aus, die <xref:System.Activities.Statements.TryCatch> Aktivität verwendet die **Catch < TException\>**  Auflistung mit die Ausnahme übereinstimmen. Wenn eine Übereinstimmung vorliegt, und klicken Sie dann die <xref:System.Activities.Statements.Catch%601.Action%2A> des entsprechenden **Catch\<TException >** ausgeführt und dient als Fehlerbehandlungslogik für die Ausnahme. Wenn die Aktivitäten im Abschnitt <xref:System.Activities.Statements.TryCatch.Try%2A> erfolgreich abgeschlossen werden oder die Aktivitäten in <xref:System.Activities.Statements.TryCatch.Catches%2A> erfolgreich abgeschlossen werden, führt die <xref:System.Activities.Statements.TryCatch>-Aktivität die zugehörige <xref:System.Activities.Statements.TryCatch.Finally%2A>-Aktivität aus. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Ausnahmen](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
+ Die <xref:System.Activities.Statements.TryCatch> Aktivität enthält eine <xref:System.Activities.Statements.TryCatch.Try%2A> -Aktivität, die eine Auflistung von **Catch\<TException >** und <xref:System.Activities.Statements.TryCatch.Finally%2A> Aktivität. Ein <xref:System.Activities.Statements.Catch%601> des Typs **TException** enthält ein <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> und <xref:System.Activities.Statements.Catch%601.Action%2A>. Zusammen werden diese verwendet, um einen typischen ausnahmebasierten Fehlerbehandlungsmechanismus zu implementieren. Eine <xref:System.Activities.Statements.TryCatch>-Aktivität versucht, die zugehörige <xref:System.Activities.Statements.TryCatch.Try%2A>-Aktivität auszuführen. Wenn die <xref:System.Activities.Statements.TryCatch.Try%2A> Aktivität löst Ausnahme aus, die <xref:System.Activities.Statements.TryCatch> Aktivität verwendet die **Catch < TException\>**  Auflistung mit die Ausnahme übereinstimmen. Wenn eine Übereinstimmung vorliegt, und klicken Sie dann die <xref:System.Activities.Statements.Catch%601.Action%2A> des entsprechenden **Catch\<TException >** ausgeführt und dient als Fehlerbehandlungslogik für die Ausnahme. Wenn die Aktivitäten im Abschnitt <xref:System.Activities.Statements.TryCatch.Try%2A> erfolgreich abgeschlossen werden oder die Aktivitäten in <xref:System.Activities.Statements.TryCatch.Catches%2A> erfolgreich abgeschlossen werden, führt die <xref:System.Activities.Statements.TryCatch>-Aktivität die zugehörige <xref:System.Activities.Statements.TryCatch.Finally%2A>-Aktivität aus. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Ausnahmen](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
   
 ### <a name="using-the-trycatch-activity-designer"></a>Verwenden des TryCatch-Aktivitätsdesigners  
  Die **TryCatch** Aktivitäts-Designer finden Sie in der **Fehlerbehandlung** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** auf der linken Seite der Registerkarte die [!INCLUDE[wfd2](../includes/wfd2-md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menü oder STRG + ALT + X.)  

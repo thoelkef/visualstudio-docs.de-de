@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f3cefc7c6e2a78d757bb931a430f09c6da103c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441051"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681050"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Vorgehensweise: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
    2. Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.  
   
        > [!NOTE]
-       > Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.  
   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978327"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821297"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Problembehandlung bei Office-projektmappenbereitstellung
   Dieses Thema enthält Informationen zur Lösung von allgemeinen Problemen, die beim Bereitstellen von Office-Projektmappen auftreten können.
@@ -73,9 +73,12 @@ ms.locfileid: "62978327"
 
 2. Wählen Sie auf der Seite **Anwendung** die Option **Assemblyinformationen**.
 
-3. In der ersten **Assemblyversion** Geben Sie ein Sternchen (\*), und wählen Sie dann die **OK** Schaltfläche.
+3. Legen Sie die Revisionsnummer, das dritte Feld, der die **Assemblyversion**, um einen Platzhalter (\*). Z. B. "1.0. *".  Wählen Sie dann die **OK** Schaltfläche.
 
    Nach dem Ändern der Assemblyversion kann die Signatur der Assembly mit einem starken Namen fortgesetzt werden, und die aktuellste Version der Anpassung wird geladen.
+
+ [!NOTE]
+> Ab Visual Studio 2017, wenn Sie versuchen, mithilfe von Platzhaltern in der Version der Assembly einen Buildfehler erfolgt.  Dies ist da Platzhalter in die Version der Assembly, die MSBuild-deterministische Funktion unterbrochen wird. Sie werden aufgefordert, die Platzhalter aus Version der Assembly entfernen, oder Deaktivieren von Determinismus.  Informationen finden Sie weitere Informationen zu den deterministischen Funktion: [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md) und [Anpassen Ihres Builds](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Installation schlägt fehl, wenn der URI, die nicht von US-ASCII-Zeichen verfügt über
  Wird eine Office-Projektmappe in einem HTTP/HTTPS/FTP-Speicherort veröffentlicht, darf der Pfad keine Unicode-Zeichen enthalten, die nicht in US-ASCII vorliegen. Solche Zeichen können zu inkonsistentem Verhalten im Setup-Programm führen. Verwenden Sie für den Installationspfad US-ASCII-Zeichen.
@@ -118,7 +121,7 @@ ms.locfileid: "62978327"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Eine ClickOnce-Projektmappe kann nicht installiert werden, indem Sie das Bereitstellungsmanifest aus dem Web öffnen
  Benutzer können Office-Projektmappen installieren, indem sie das Bereitstellungsmanifest aus dem Web öffnen. Einige Installationen von Internet Information Services (IIS) blockiert jedoch die *".VSTO"* Dateinamenerweiterung. Sie müssen den MIME-Typ in IIS definieren, bevor Sie sie zum Bereitstellen einer Office-Projektmappe verwenden.
 
- Informationen dazu, wie Sie den MIME-Typ in IIS 7 definieren, finden Sie unter [Hinzufügen eines MIME-Typs (IIS7)](http://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Informationen dazu, wie Sie den MIME-Typ in IIS 7 definieren, finden Sie unter [Hinzufügen eines MIME-Typs (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
 
  Legen Sie die Erweiterung auf **.vsto** und den MIME-Typ auf **application/x-ms-vsto**fest.
 

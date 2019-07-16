@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ae5c7e1916c77e3743de63df8903e62feea4fe28
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327326"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Diese Struktur gibt Informationen über einen Feldtyp aus Metadaten erstellt.
@@ -40,12 +43,15 @@ public struct BUILT_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Parameter
-UlAppDomainID-ID der Anwendung, von der das Symbol stammt. Dies wird verwendet, um eine Instanz der Anwendung eindeutig zu identifizieren.
+## <a name="members"></a>Member
+`ulAppDomainID`\
+Die ID der Anwendung, von der das Symbol stammt. Dies wird verwendet, um eine Instanz der Anwendung eindeutig zu identifizieren.
 
-GuidModule die GUID des Moduls, das dieses Feld enthält.
+`guidModule`\
+Die GUID des Moduls, das dieses Feld enthält.
 
-pUnderlyingField ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das das zugrunde liegende Feld dieses erstellte Feld zugeordneten bezeichnet.
+`pUnderlyingField`\
+Ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das das zugrunde liegende Feld dieses erstellte Feld zugeordneten bezeichnet.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Kontostruktur, wenn die `dwKind` Feld der `TYPE_INFO` Struktur nastaven NA hodnotu `TYPE_KIND_BUILT` (ein Wert aus der [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) die Enumeration).

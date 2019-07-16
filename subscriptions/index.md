@@ -7,13 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Willkommen bei Visual Studio-Abonnements
-Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579941"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784389"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio-Abonnements
 
@@ -169,7 +168,7 @@ Damit Ihr Abonnement noch nützlicher wird, werden Abonnementvorteile hinzugefü
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloud Services</h3>
-                        <p>Mit Ihrem Visual Studio-Abonnement erhalten Sie ein monatliches Azure-Guthaben, kostenlosen Zugriff auf Azure-Dienste, Rabatt auf Entwicklungs- und Testtarife und exklusiven Zugriff auf einen nur für Abonnenten verfügbaren Katalog mit Images vorkonfigurierter virtueller Computer. Je nach Abonnement können folgende Clouddienste enthalten sein:</p>
+                        <p>Mit Ihrem Visual Studio-Abonnement erhalten Sie ein monatliches Azure-Guthaben für den Zugriff auf Azure-Dienste, Rabatt auf Entwicklungs- und Testtarife und exklusiven Zugriff auf einen nur für Abonnenten verfügbaren Katalog mit Images vorkonfigurierter virtueller Computer. Je nach Abonnement können folgende Clouddienste enthalten sein:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
@@ -194,7 +193,6 @@ Damit Ihr Abonnement noch nützlicher wird, werden Abonnementvorteile hinzugefü
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (Business, Technologie, Kreativität)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (Cloud, Design, mobile Apps und Daten)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (Data Science und künstliche Intelligenz)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (Entwicklung für mobile Umgebungen)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility-Schulung</a> (mit Fokus auf der Cloud)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Professioneller technischer Support von Microsoft bei Incidents</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Advisory Chat</a></li>

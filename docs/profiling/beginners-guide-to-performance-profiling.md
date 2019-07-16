@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777747"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033037"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
@@ -148,6 +148,9 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
     ![Diagnosetools „Langsamster Pfad“](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
+
+    > [!NOTE]
+    > Wenn Sie in der Aufrufstruktur Code sehen, der als „broken“ oder „unwalkable stack“ markiert ist, bedeutet dies, dass Ereignisse aus der Ereignisablaufverfolgung für Windows wahrscheinlich gelöscht wurden. Versuchen Sie, die gleiche Ablaufverfolgung ein zweites Mal zu erfassen, um das Problem zu beheben.
 
 ## <a name="view-external-code"></a>Anzeigen von externem Code
 

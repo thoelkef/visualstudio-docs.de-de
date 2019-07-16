@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 842d78a2ea2ff665102b9cef922f463baf53cb78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29b6f219447e3c58bce9f5b4696697163ab4f6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920972"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318470"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 Ruft die GUID der Debug-Engine (DE) ab.
@@ -36,10 +39,9 @@ int GetEngineID(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pguidEngine`
-
- [out] Gibt die GUID des DE zurück.
+## <a name="parameters"></a>Parameter
+`pguidEngine`\
+[out] Gibt die GUID des DE zurück.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

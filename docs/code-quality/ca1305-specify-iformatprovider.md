@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797534"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714677"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider angeben.
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797534"
 
 Eine Methode oder ein Konstruktor ruft ein oder mehrere Elemente, deren Überladungen akzeptieren einen <xref:System.IFormatProvider?displayProperty=fullName> -Parameter, und die Methode oder der Konstruktor ruft nicht die Überladung, akzeptiert die <xref:System.IFormatProvider> Parameter.
 
-Diese Regel ignoriert Aufrufe von .NET Framework-Methoden, die als ignoriert dokumentiert sind die <xref:System.IFormatProvider> Parameter. Die Regel ignoriert auch die folgenden Methoden:
+Diese Regel ignoriert Aufrufe für .NET-Methoden, die als ignoriert dokumentiert sind die <xref:System.IFormatProvider> Parameter. Die Regel ignoriert auch die folgenden Methoden:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Diese Regel ignoriert Aufrufe von .NET Framework-Methoden, die als ignoriert dok
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Wenn eine <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> oder <xref:System.IFormatProvider> Objekt ist nicht angegeben, der Standardwert, der vom überladenen Member bereitgestellte ist möglicherweise nicht die in allen Gebietsschemas den gewünschten Effekt. Darüber hinaus wird .NET Framework-Member wählen Sie Standardkultur, und Formatierung basierend auf Annahmen, die möglicherweise nicht korrekt für Ihren Code. Um sicherzustellen, dass der Code ordnungsgemäß für Ihre Szenarien funktioniert, sollten Sie die kulturspezifische Informationen, anhand der folgenden Richtlinien angeben:
+Wenn eine <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> oder <xref:System.IFormatProvider> Objekt ist nicht angegeben, der Standardwert, der vom überladenen Member bereitgestellte ist möglicherweise nicht die in allen Gebietsschemas den gewünschten Effekt. Darüber hinaus .NET Member auswählen Standardkultur und Formatierung basierend auf Annahmen, die möglicherweise nicht korrekt für Ihren Code. Um sicherzustellen, dass der Code ordnungsgemäß für Ihre Szenarien funktioniert, sollten Sie die kulturspezifische Informationen, anhand der folgenden Richtlinien angeben:
 
 - Wenn der Wert für den Benutzer angezeigt wird, wird verwenden Sie die aktuelle Kultur. Siehe <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

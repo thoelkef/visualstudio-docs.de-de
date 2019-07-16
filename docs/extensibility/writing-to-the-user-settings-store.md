@@ -1,43 +1,22 @@
 ---
 title: Schreiben in den Store Benutzer Einstellungen | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 44380a03b87318be0fdf746c75eff8988ac68267
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318482"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen
 Benutzereinstellungen werden beschreibbaren Einstellungen wie die in der **Extras / Optionen** Dialogfeld Eigenschaften von Windows und bestimmte andere Dialogfelder. Visual Studio-Erweiterungen, die diese verwenden können, um kleine Mengen von Daten zu speichern. Diese exemplarische Vorgehensweise veranschaulicht das Editor Visual Studio als externes Tool hinzufügen, indem aus lesen und Schreiben in den Speicher für benutzereinstellungen.
-
-### <a name="backing-up-your-user-settings"></a>Sichern der Benutzereinstellungen
-
-1. Sie müssen die Einstellungen für externe Tools zurücksetzen, damit Sie debuggen können, und wiederholen Sie den Vorgang sein. Zu diesem Zweck müssen Sie die ursprünglichen Einstellungen speichern, sodass Sie nach Bedarf wiederhergestellt werden können.
-
-2. Öffnen Sie Regedit.exe.
-
-3. Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\\.
-
-    > [!NOTE]
-    > Stellen Sie sicher, dass Sie den Schlüssel anzeigen, die \14.0Exp\ und nicht \14.0 enthält\\. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, werden Ihre benutzereinstellungen in der Registrierungsstruktur "14.0Exp" ein.
-
-4. Mit der rechten Maustaste des \External Tools\-Unterschlüssels, und klicken Sie dann auf **exportieren**. Stellen Sie sicher, dass **ausgewählte Teilstruktur** ausgewählt ist.
-
-5. Speichern Sie die externen Tools.reg-Ergebnisdatei an.
-
-6. Später, wenn Sie die Einstellungen für externe Tools zurücksetzen möchten, wählen Sie den Registrierungsschlüssel HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\, und klicken Sie auf **löschen** im Kontextmenü.
-
-7. Wenn die **Löschen des Schlüssels bestätigen** klicken Sie im angezeigten Dialogfeld **Ja**.
-
-8. Die externe Tools.reg-Datei, die Sie zuvor gespeichert haben, klicken Sie auf **Öffnen mit**, und klicken Sie dann auf **Registrierungs-Editor**.
 
 ## <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen
 

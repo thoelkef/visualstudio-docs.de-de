@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 911f0423184f22919be016691b9333b2f62d1b61
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564007"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744799"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Erstellen benutzerdefinierte Ansichten von Objekten (C#, Visual Basic C++)
 Sie können die Art anpassen, wie Datentypen von Visual Studio in Debuggervariablenfenstern angezeigt werden.
@@ -41,7 +41,7 @@ Für C++ Code können Sie benutzerdefinierte Daten geben Erweiterungen, die mit 
 
 In C#, Visual Basic und C++ (C++nur /CLI Code), können Sie Erweiterungen für die Verwendung von benutzerdefinierter Daten hinzufügen <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, und <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
-In [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]-Code bietet Visual Basic keine Unterstützung des DebuggerBrowsable-Attributs. Diese Einschränkung wurde in aktuelleren Versionen von .NET Framework entfernt.
+In .NET Framework 2.0-Code unterstützt Visual Basic nicht des DebuggerBrowsable-Attributs. Diese Einschränkung wurde in aktuelleren Versionen von .NET Framework entfernt.
 
 ## <a name="visualizers"></a>Schnellansichten
 

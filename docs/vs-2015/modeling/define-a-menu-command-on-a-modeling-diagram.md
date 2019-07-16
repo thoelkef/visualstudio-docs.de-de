@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ec230a5bf32ab6e70967e76d31030af3a7a351a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433145"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687599"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definieren eines Menübefehls in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
    |                                                                                                    Referenz                                                                                                    |                                                                                                  Optionen                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definieren Sie Komponenten mithilfe von [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
+   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definieren Sie Komponenten mithilfe von [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Lesen und Ändern der Eigenschaften von Modellelementen                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Erstellen von Modellelementen, Ändern von Formen in Diagrammen                                                                                       |
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[Version]                                                                                  | Definieren von Modellereignishandlern<br /><br /> Kapseln einer Reihe von Änderungen im Modell. Weitere Informationen finden Sie unter [Link UML-modellaktualisierungen mithilfe von Transaktionen](../modeling/link-uml-model-updates-by-using-transactions.md). |
@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.  
 
-    2. Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
+    2. Suchen Sie die Datei **Bin\\\*\\** _IhrProjekt_**VSIX**  
 
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
 

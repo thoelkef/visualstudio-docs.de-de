@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da6c19341a1e1ab37b38ae4f5379ee5aaace5b87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954361"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820977"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
@@ -51,7 +51,7 @@ Wenn Sie die **Startseite** schließen und dann erneut anzeigen möchten, könne
 
 Das Erste, was Sie nach dem Öffnen von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so entworfen, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Klonen oder Ausschecken von Code, zum Öffnen bereits vorhandener Projekte oder Projektmappe, zum Erstellen eines neuen Projekts oder einfach zum Öffnen eines Ordners mit Codedateien.
 
-[![](media/vs-2019/start-window-labeled.png "Startfenster in Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![Startfenster in Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
 

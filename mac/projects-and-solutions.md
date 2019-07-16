@@ -1,29 +1,46 @@
 ---
 title: Projekte und Projektmappen
 description: Dieses Dokument enthält eine Übersicht der Projekte und Projektmappen in Visual Studio für Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 6ae37b7256b1cefe2bfbd2174135b013b1aa37cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b66a1dfbe0569c501d05b34425e198f1501438ca
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937003"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691276"
 ---
-# <a name="projects-and-solutions"></a>Projekte und Projektmappen
+# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Projekte und Projektmappen in Visual Studio für Mac
 
-In Visual Studio für Mac wird das Pad  _Projektmappe_  für die Anzeige einer Strukturansicht der gesamten geöffneten Projektmappe bereitgestellt. Das Pad **Projektmappe** ermöglicht den einfachen Zugriff auf Quellcode, Ressourcen, Benutzeroberflächen und Assemblyverweise, die in einzelnen Projekten enthalten sind. Im Pad „Projektmappe“ wird standardmäßig jeweils eine Projektmappe geöffnet. Jede Projektmappe kann viele Projekte enthalten, und jedes Projekt kann viele Elemente enthalten.
+Dieser Artikel bietet eine Übersicht über die Konzepte *Projekt* und *Projektmappe* in Visual Studio für Mac.
 
-## <a name="using-projects-and-solutions"></a>Verwenden von Projekten und Projektmappen
+> [!NOTE] 
+> Dieses Thema gilt für Visual Studio für Mac. Informationen zu Visual Studio unter Windows finden Sie unter [Projektmappen und Projekte in Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
-Weitere Informationen zum Erstellen eines neuen Projekts oder einer neuen Projektmappe finden Sie im Artikel [Erstellen neuer Projekte und Projektmappen](create-new-projects.md).
+## <a name="projects"></a>Projekte
 
-## <a name="project-and-solution-options"></a>Projekt- und Projektmappenoptionen
+Wenn Sie in Visual Studio für Mac eine neue Anwendung, eine neue Website usw. erstellen, beginnen Sie mit einem Projekt. Das Projekt enthält alle Dateien (Quellcode, Bilder, Datendateien usw.), die zum Kompilieren in eine ausführbare Datei, Bibliothek oder Website erforderlich sind.
 
-Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste darauf klicken und zu **Optionen** navigieren. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Verwalten von Projekt- und Projektmappeneigenschaften](managing-solutions-and-project-properties.md).
+Ein Projekt wird durch eine Datei (z.B. `.csproj` für C#-Projekte) definiert, die den XML-Code zur Definition der Datei- und Ordnerhierarchie, der Pfade zu Dateien sowie der projektspezifischen Einstellungen enthält, beispielsweise der Buildeinstellungen.
+
+Wenn ein Projekt von Visual Studio für Mac geladen wird, verwendet das Lösungspad die Projektdatei, um die Dateien und Ordner in Ihrem Projekt anzuzeigen. Während der Kompilierung liest MSBuild die Einstellungen aus der Projektdatei, um die ausführbare Datei zu erstellen.
+
+## <a name="solutions"></a>Projektmappen
+
+Eine *Projektmappe* ist ein Container, der ein oder mehrere verwandte Projekte gruppiert. Projektmappen werden von einer Textdatei (mit der Erweiterung `.sln`) in einem individuellen Format beschrieben. Diese Datei sollte nicht manuell bearbeitet werden.
+
+## <a name="managing-projects-in-the-solution-pad"></a>Verwalten von Projekten im Lösungspad
+
+Sobald ein Projekt erstellt oder geladen wurde, können Sie das Lösungspad verwenden, um das Projekt oder die Projektmappe und die darin enthaltenen Dateien anzuzeigen und zu verwalten. Die folgende Abbildung zeigt das Lösungspad mit einer .NET Core-Projektmappe, die zwei Projekte enthält:
+
+![Beispielprojektmappe mit mehreren Projekten](media/solution-example.png)
+
+Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste darauf klicken und **Optionen** auswählen.
+
+Weitere Informationen zu diesen Optionen finden Sie im Artikel [Verwalten von Projekt- und Projektmappeneigenschaften](managing-solutions-and-project-properties.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Projektmappen und Projekte in Visual Studio (unter Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)
+- [Projektmappen und Projekte in Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio)

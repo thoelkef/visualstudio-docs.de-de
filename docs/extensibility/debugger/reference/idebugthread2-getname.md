@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetName
 ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a5d4daad66ed6a4428724b20093473ba7b93856
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d6b57aac800027a4a591c3ea683761e19a31462c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226222"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320214"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Ruft den Namen eines Threads.
@@ -40,9 +40,8 @@ int GetName ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pbstrName`\
-
- [out] Gibt den Namen des Threads.
+`pbstrName`\
+[out] Gibt den Namen des Threads.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

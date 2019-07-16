@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435184"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685423"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
   
  Das Signieren der ClickOnce-Manifeste ist für EXE-basierte Anwendungen optional. Weitere Informationen finden Sie im Abschnitt "Generieren von unsignierten Manifesten" in diesem Dokument.  
   
- Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange). Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.  
@@ -109,7 +109,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 3. Veröffentlichen Sie die Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Assemblys mit starkem Namen](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Vorgehensweise: Erstellen eines öffentlichen / privaten Schlüsselpaars](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Assemblys mit starkem Namen](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Vorgehensweise: Erstellen eines öffentlichen / privaten Schlüsselpaars](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Seite „Signierung“, Projekt-Designer](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)

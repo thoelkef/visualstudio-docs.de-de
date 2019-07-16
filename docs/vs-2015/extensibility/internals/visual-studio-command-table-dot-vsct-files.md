@@ -11,12 +11,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947402"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675246"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>VSCT-Dateien (Visual Studio Command Table)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Konfiguration eine Befehlsdatei-Tabelle ist eine Textdatei, die den Satz von Bef
  [Entwerfen von Dateien für XML-Befehlstabellen (VSCT)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Beschreibt das Entwerfen der VSCT-Dateien.  
   
- [Vorgehensweise: Erstellen Sie ein. VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Vorgehensweise: Erstellen einer VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  Vergleicht die Methoden zum Erstellen einer VSCT-Datei an. Beschreibt den Prozess zum manuellen Erstellen eine neue VSCT-Datei.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)  
  Enthält Details zu jedem Abschnitt des Befehls Tabelle XML-Datei.  
   
- [Konfiguration der Befehl (. CTC)-Dateien](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Konfiguration der Befehl (. CTC)-Dateien](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Bietet eine Übersicht über das veraltete CTC-Dateiformat.  
   
  [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

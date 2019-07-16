@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540871"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745196"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 
@@ -46,8 +46,8 @@ Dieser Abschnitt ist eine Referenz für die Fehlermeldungen, die vom Analysetool
 |[CA0065](ca0065.md)|Nicht unterstütztes Metadatenkonstrukt: Typ "*TypeName*"enthält sowohl eine Eigenschaft als auch ein Feld mit dem gleichen Namen"*NameDesEigenschaftenfelds*"|
 |[CA0066](ca0066.md)|Der Wert "*VersionID*" bereitgestellt, um die **für/TargetFrameworkVersion** ist keine erkannte Version.|
 |[CA0067](ca0067.md)|Verzeichnis wurde nicht gefunden.|
-|[CA0068](ca0068.md)|Debuggen von Informationen konnte nicht gefunden werden, für die Zielassembly *"AssemblyName"*.|
-|[CA0069](ca0069.md)|Verwenden alternative Plattform. *FrameworkVersion1* konnte nicht gefunden werden. Mithilfe von *FrameworkVersion2* stattdessen. Für optimale Analyseergebnisse zu erzielen stellen Sie sicher, dass die richtige .NET Framework installiert ist.|
+|[CA0068](ca0068.md)|Debuggen von Informationen konnte nicht gefunden werden, für die Zielassembly *"AssemblyName"* .|
+|[CA0069](ca0069.md)|Verwenden alternative Plattform. *FrameworkVersion1* konnte nicht gefunden werden. Mithilfe von *FrameworkVersion2* stattdessen. Für optimale Analyseergebnisse zu erzielen stellen Sie sicher, dass die richtige Framework-Version installiert ist.|
 |[CA0070](ca0070.md)|Assembly bzw. aufgrund von Berechtigungen für die Codezugriffssicherheit kann nicht geladen werden.|
 |[CA0501](ca0501.md)|Lesen der Ausgabebericht kann nicht ausgeführt werden.|
 |[CA0502](ca0502.md)|Nicht unterstützte Sprache.|

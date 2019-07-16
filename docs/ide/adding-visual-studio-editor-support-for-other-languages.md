@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975665"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805325"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 
@@ -33,7 +33,7 @@ Features wie farbige Syntaxhervorhebung, Anweisungsvervollständigung (auch beka
 
 ![Farbige Syntaxhervorhebung in einem Perl-Skript](../ide/media/vside_perledit.png)
 
-Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für Anweisungsvervollständigung mithilfe von [TextMate Grammatiken](https://manual.macromates.com/en/language_grammars) für die folgenden Sprachen. Wenn sich Ihre bevorzugte Sprache nicht in der Liste findet, braucht Sie das trotzdem nicht zu beunruhigen – Sie können sie hinzufügen.
+Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für Anweisungsvervollständigung mithilfe von [TextMate Grammatiken](https://manual.macromates.com/en/language_grammars) für die folgenden Sprachen. Wenn Sie Ihre bevorzugte Sprache nicht in der Liste finden, können Sie sie hinzufügen.
 
 |||||||
 |-|-|-|-|-|-|
@@ -46,21 +46,21 @@ Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für 
 
 Über die farbige Syntaxhervorhebung und einfache Anweisungsvervollständigung hinaus bietet Visual Studio noch eine Funktion mit dem Namen [Navigieren zu](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Mithilfe dieses Features können Sie schnell Codedateien, Dateipfade und Codesymbole durchsuchen. Visual Studio bietet Unterstützung für Navigieren zu für die folgenden Sprachen.
 
+- C#
+
+- C++
+
+- TypeScript
+
+- JavaScript
+
+- Visual Basic
+
 - Gehe zu
 
 - Java
 
-- JavaScript
-
 - PHP
-
-- TypeScript
-
-- Visual Basic
-
-- Visual C++
-
-- C#
 
 Alle diese Dateitypen verfügen über die zuvor beschriebenen Features, auch wenn der Support für eine bestimmte Sprache noch nicht installiert wurde. Das Installieren der besonderen Unterstützung für einige Sprachen stellt möglicherweise weitergehende Unterstützung für die betreffende Sprache bereit, wie etwa IntelliSense oder andere erweiterte Sprachfeatures wie Glühbirnen.
 
@@ -89,5 +89,6 @@ Detailinformationen zum Erstellen von TextMate-Grammatiken finden Sie unter [Tex
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Walkthrough: Create a code snippet (Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts)](../ide/walkthrough-creating-a-code-snippet.md)
+- [Hinzufügen einer Erweiterung für das Sprachserverprotokoll](../extensibility/adding-an-lsp-extension.md)
+- [Exemplarische Vorgehensweise: Create a code snippet (Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts)](../ide/walkthrough-creating-a-code-snippet.md)
 - [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)

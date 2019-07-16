@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466d067cd144f009f9c0a37d4ace5bacc12f8a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c958c75088a6e31d9386f1acd423360b8dbe0a6c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433460"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336178"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung
 Ein Windows Installer-Paket (MSI) können Sie ein VSIX-Paket bereitstellen. Allerdings können Sie den Inhalt einer VSIX-Pakets für die Bereitstellung der MSI-Datei extrahieren. Diesem Dokument wird erläutert, wie Sie ein Projekt vorbereiten, deren Standardausgabe ein VSIX-Paket für die Aufnahme in ein Setup-Projekt ist.

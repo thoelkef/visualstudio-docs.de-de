@@ -3,17 +3,17 @@ title: Verwalten von universellen Windows-Projekten | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340542"
 ---
 # <a name="manage-universal-windows-projects"></a>Verwalten von universellen Windows-Projekten
 
@@ -293,7 +293,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Probieren Sie es aus. Drücken Sie F5, um die experimentelle Instanz zu starten. Erstellen Sie ein C#-universal-Hub-app-Projekt in der experimentellen Instanz (in der **neues Projekt** Dialogfeld **Visual C#-** > **Windows**  >   **Windows 8** > **universelle** > **Hub-App**). Nachdem die Projektmappe geladen wurde, wechseln Sie zu der **Tools** Menü, und klicken Sie auf **TestUniversalProject Aufrufen**, und überprüfen Sie dann den Text in die **Ausgabe** Bereich. Es sollte nun etwa Folgendes angezeigt werden:
+16. Probieren Sie es aus. Drücken Sie F5, um die experimentelle Instanz zu starten. Erstellen Sie ein C#-universal-Hub-app-Projekt in der experimentellen Instanz (in der **neues Projekt** Dialogfeld **Visual C#-**  > **Windows**  >   **Windows 8** > **universelle** > **Hub-App**). Nachdem die Projektmappe geladen wurde, wechseln Sie zu der **Tools** Menü, und klicken Sie auf **TestUniversalProject Aufrufen**, und überprüfen Sie dann den Text in die **Ausgabe** Bereich. Es sollte nun etwa Folgendes angezeigt werden:
 
     ```
     Found shared project: HubApp.Shared

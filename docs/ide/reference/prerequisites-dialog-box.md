@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969137"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746487"
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogfeld "Erforderliche Komponenten"
 
@@ -42,7 +42,7 @@ Die im Dialogfeld **Erforderliche Komponenten** aufgeführten erforderlichen Kom
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Mit diesem Paket wird Folgendes installiert:<br /><br /> – .NET Framework-Versionen 2.0, 3.0 und 3.5.<br />– Unterstützung für alle .NET Framework-Versionen auf 32-Bit- und 64-Bit-Betriebssystemen (x86 und x64).<br />– Sprachpakete für jede .NET Framework-Version, die mit dem Paket installiert wird.<br />– Service Packs für .NET Framework 2.0 und 3.0.<br /><br /> .NET Framework 3.0 ist im Lieferumfang von Windows Vista enthalten, und .NET Framework 3.5 ist in Visual Studio enthalten. .NET Framework 3.5 ist für alle Visual Basic- und C#-Projekte erforderlich, die explizit für 32-Bit-Betriebssysteme kompiliert werden und für die das Zielframework auf **.NET Framework 3.5** festgelegt ist, sowie für alle Visual Basic- und C#-Projekte, die für 64-Bit-Betriebssysteme kompiliert werden. (IA64 wird nicht unterstützt) Beachten Sie, dass Visual Basic-Projekte und C#-Projekte standardmäßig für jede CPU-Architektur kompiliert sind. Weitere Informationen finden Sie unter [Visual Studio Multi-Targeting Overview (Übersicht über das Anzielen mehrerer Frameworkversionen in Visual Studio)](../../ide/visual-studio-multi-targeting-overview.md) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Apps](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Mit diesem Paket wird Folgendes installiert:<br /><br /> – .NET Framework-Versionen 2.0, 3.0 und 3.5.<br />– Unterstützung für alle .NET Framework-Versionen auf 32-Bit- und 64-Bit-Betriebssystemen (x86 und x64).<br />– Sprachpakete für jede .NET Framework-Version, die mit dem Paket installiert wird.<br />– Service Packs für .NET Framework 2.0 und 3.0.<br /><br /> .NET Framework 3.0 ist im Lieferumfang von Windows Vista enthalten, und .NET Framework 3.5 ist in Visual Studio enthalten. .NET Framework 3.5 ist für alle Visual Basic- und C#-Projekte erforderlich, die explizit für 32-Bit-Betriebssysteme kompiliert werden und für die das Zielframework auf **.NET Framework 3.5** festgelegt ist, sowie für alle Visual Basic- und C#-Projekte, die für 64-Bit-Betriebssysteme kompiliert werden. (IA64 wird nicht unterstützt) Beachten Sie, dass Visual Basic-Projekte und C#-Projekte standardmäßig für jede CPU-Architektur kompiliert sind. Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../../ide/visual-studio-multi-targeting-overview.md) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Apps](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Mit dem Paket wird .NET Framework 4 sowohl für die x86- als auch die x64-Plattform installiert.|
 |**Microsoft-System-CLR-Typen für SQL Server 2014 (x64 und x86)**|Mit diesem Paket werden Microsoft-System-CLR-Typen für SQL Server 2014 für x64 oder x86 installiert.|
 |**SQL Server 2008 R2 Express**|Mit diesem Paket wird Microsoft SQL Server 2008 R2 Express, eine kostenlose Edition von Microsoft SQL Server 2008 R2 installiert. Dies ist eine ideale Datenbank für kleine Web-, Server- oder Desktopanwendungen. Es kann kostenlos für Entwicklung und Produktion verwendet werden.|
@@ -57,4 +57,4 @@ Die im Dialogfeld **Erforderliche Komponenten** aufgeführten erforderlichen Kom
 - [Seite „Veröffentlichen“, Projekt-Designer](../../ide/reference/publish-page-project-designer.md)
 - [Vorbedingungen für die Anwendungsbereitstellung](../../deployment/application-deployment-prerequisites.md)
 - [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+- [Übersicht über Frameworkziele](../../ide/visual-studio-multi-targeting-overview.md)

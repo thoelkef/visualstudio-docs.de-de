@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442841"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686538"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität des C++-Codes von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Das Codeanalysetool in Visual Studio Express-Editionen überprüft den Code auf eine Reihe von allgemeinen Fehlern und auf Verstöße gegen gebräuchliche Programmiergrundlagen. Codeanalysewarnungen unterscheiden sich von Compilerfehlern und -warnungen, da die Codeanalyse nach bestimmten Codeschemata sucht, die gültig sind, jedoch Probleme für Sie oder andere Personen bereiten können, die den Code verwenden. Codeanalyse kann auch Fehler im Code suchen, die schwierig durch Tests zu erkennen sind. Das regelmäßige Ausführen des Codeanalysetools während des Entwicklungsprozesses kann die Qualität der App erhöhen.
 
 > [!NOTE]
-> In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalysetools verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](http://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
+> In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalysetools verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](https://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
 
 ## <a name="BKMK_Run"></a> Ausführen der Codeanalyse
  So führen Sie die Codeanalyse in der Visual Studio-Projektmappe aus
@@ -116,7 +116,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                       [C6504](../code-quality/c6504.md)                        |                                              NULL auf Nichtzeiger                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck für "void"                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Puffergröße auf Nichtzeiger oder Array                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       NULL-Konflikt bei 0 Dereferenzierung                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       NULL-Konflikt bei 0 Dereferenzierung                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Schreibzugriff auf Konstante                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Rückgabe wurde für Vorbedingung verwendet                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        NULL für Nichtzeiger abgebrochen                                         |
@@ -127,11 +127,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                       [C6516](../code-quality/c6516.md)                        |                                          Keine Eigenschaften für Attribut                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Zulässige Größe für nicht lesbaren Puffer                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Schreibbare Größe für Puffer, der nicht geschrieben werden kann                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Ungültige Größenzeichenfolgendereferenzierung                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Ungültige Größenzeichenfolgendereferenzierung                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Ungültiger Größenzeichenfolgentyp                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Ungültiger Größenzeichenfolgenparameter                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Ungültiger Größenzeichenfolgenparameter                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Ungültiger Größenzeichenfolgenstandort                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Unbekannter Formatzeichenfolgenstil                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig  |

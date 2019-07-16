@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688117"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
   
  Isolierte Speicherung funktioniert in allen Versionen von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Isolierte Speicherung funktioniert auch in teilweise vertrauenswürdigen Anwendungen, ohne dass zusätzliche Berechtigungen gewährt werden müssen. Sie sollten isolierte Speicherung verwenden, wenn Ihre Anwendung unter teilweiser Vertrauenswürdigkeit ausgeführt werden, dabei aber anwendungsspezifische Daten verwalten muss.  
   
- Weitere Informationen finden Sie unter [Isolierte Speicherung](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Weitere Informationen finden Sie unter [Isolierte Speicherung](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Andere lokale Dateien  
  Wenn Ihre Anwendung mit Daten von Endbenutzern wie z. B. Berichten, Bildern, Musik usw. arbeiten oder solche Daten speichern muss, benötigt sie <xref:System.Security.Permissions.FileIOPermission> , um Daten im lokalen Dateisystem zu lesen oder in dieses zu schreiben.  
@@ -86,7 +86,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  An einem gewissen Punkt wird die Anwendung wahrscheinlich Informationen von einer Remotewebsite, wie z. B. Kundendaten oder Marktinformationen, abrufen müssen. Dieser Abschnitt beschreibt die am häufigsten verwendeten Techniken für das Abrufen von Remotedaten.  
   
 ### <a name="accessing-files-by-using-http"></a>Zugreifen auf Dateien über HTTP  
- Sie können auf Daten von einem Webserver zugreifen, indem Sie entweder den <xref:System.Net.WebClient> oder die <xref:System.Net.HttpWebRequest> -Klasse im <xref:System.Net> -Namespace verwenden. Bei den Daten kann es sich entweder um statische Dateien oder [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendungen handeln, die unformatierten Text oder XML-Daten zurückgeben. Daten im XML-Format können Sie am schnellsten mithilfe der <xref:System.Xml.XmlDocument> -Klasse abrufen, deren <xref:System.Xml.XmlDocument.Load%2A> -Methode eine URL als Argument verwendet. Ein Beispiel finden Sie unter [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ Sie können auf Daten von einem Webserver zugreifen, indem Sie entweder den <xref:System.Net.WebClient> oder die <xref:System.Net.HttpWebRequest> -Klasse im <xref:System.Net> -Namespace verwenden. Bei den Daten kann es sich entweder um statische Dateien oder [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendungen handeln, die unformatierten Text oder XML-Daten zurückgeben. Daten im XML-Format können Sie am schnellsten mithilfe der <xref:System.Xml.XmlDocument> -Klasse abrufen, deren <xref:System.Xml.XmlDocument.Load%2A> -Methode eine URL als Argument verwendet. Ein Beispiel finden Sie unter [Reading an XML Document into the DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  Wenn die Anwendung über HTTP auf Remotedaten zugreift, spielt auch Sicherheit eine Rolle. Der Zugriff der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung auf Netzwerkressourcen ist möglicherweise standardmäßig beschränkt. Dies hängt davon ab, wie die Anwendung bereitgestellt wurde. Diese Beschränkungen sollen verhindern, dass bösartige Programme Zugriff auf privilegierte Remotedaten erhalten oder über einen Benutzercomputer andere Computer im Netzwerk angreifen.  
   

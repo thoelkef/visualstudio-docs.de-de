@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993483"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821942"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers
 
@@ -126,13 +126,13 @@ Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen v
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -Diese Eigenschaft weist serialisierte Versionen der Quellobjekte auf, normalerweise in mehr als einem Format. Die nützlichsten Funktionen sind:
 
-    - diagramEventArgs.Data.GetDataFormats() – Listet die Formate, in dem Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).
+  - diagramEventArgs.Data.GetDataFormats() – Listet die Formate, in dem Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).
 
-    - `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt im angegebenen Format. Wandeln Sie das Objekt in den geeigneten Typ um. Zum Beispiel:
+  - `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt im angegebenen Format. Wandeln Sie das Objekt in den geeigneten Typ um. Beispiel:
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Sie können auch Objekte wie Modellbusverweise aus der Quelle in Ihr eigenes benutzerdefiniertes Format übertragen. Weitere Informationen finden Sie unter [wie Senden von Modellbusverweisen Drag and Drop](#to-send-an-object-from-a-source-dsl).
+    Sie können auch Objekte wie Modellbusverweise aus der Quelle in Ihr eigenes benutzerdefiniertes Format übertragen. Weitere Informationen finden Sie unter [wie Senden von Modellbusverweisen Drag and Drop](#to-send-an-object-from-a-source-dsl).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Verwenden Sie diese Eigenschaft aus, wenn Benutzer Elemente aus einem DSL- oder einem UML-Modell ziehen sollen. Ein Elementgruppenprototyp enthält mindestens ein Objekt, einen Link und deren Eigenschaftswerte. Er kann auch bei Einfügevorgängen und beim Hinzufügen eines Elements aus der Toolbox verwendet werden. In einem Prototyp werden Objekte und deren Typen anhand der GUID identifiziert. Mit diesem Code kann der Benutzer beispielsweise Klassenelemente aus einem UML-Diagramm oder dem UML-Modell-Explorer ziehen:
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Siehe auch
 
 - [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)
-- [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md)
+- [Bereitstellen von domänenspezifischen Sprachlösungen](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

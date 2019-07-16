@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445858"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705884"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Zum Einrichten einer Aufrufreihenfolge verwendete Attribute
- Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Ein mit einem der folgenden Attribute versehenes Codeelement wird zum angegebenen Zeitpunkt aufgerufen. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Für Assemblys
  AssemblyInitialize und AssemblyCleanup werden direkt nach dem Laden und direkt vor dem Entladen der Assembly aufgerufen.
@@ -64,7 +64,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Zum Angeben von Testklassen und Testmethoden verwendete Attribute
- Jede Testklasse muss das TestClass-Attribut aufweisen und jede Testmethode das TestMethod-Attribut. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Jede Testklasse muss das TestClass-Attribut aufweisen und jede Testmethode das TestMethod-Attribut. Weitere Informationen finden Sie unter [Anatomy of a Unit Test (Aufbau eines Komponententests)](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -118,7 +118,7 @@ Das Framework für Komponententests unterstützt Komponententests in [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Mit privaten Accessoren verwendete Klassen
- Wie unter [Using Publicize to Create a Private Accessor (Verwenden von Publicize zum Erstellen eines privaten Accessors)](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb) beschrieben, kann ein Komponententest für eine private Methode erstellt werden. Dabei wird eine private Accessor-Klasse erstellt, die ein Objekt der PrivateObject-Klasse instanziiert. Bei der PrivateObject-Klasse handelt es sich um eine Wrapperklasse, die im Rahmen des Prozesses für den privaten Accessor Reflektionen verwendet. Die PrivateType-Klasse ist ähnlich, unterscheidet sich jedoch insofern, als sie zum Aufrufen von privaten statischen Methoden statt von privaten Instanzmethoden verwendet wird.
+ Wie unter [Using Publicize to Create a Private Accessor (Verwenden von Publicize zum Erstellen eines privaten Accessors)](https://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb) beschrieben, kann ein Komponententest für eine private Methode erstellt werden. Dabei wird eine private Accessor-Klasse erstellt, die ein Objekt der PrivateObject-Klasse instanziiert. Bei der PrivateObject-Klasse handelt es sich um eine Wrapperklasse, die im Rahmen des Prozesses für den privaten Accessor Reflektionen verwendet. Die PrivateType-Klasse ist ähnlich, unterscheidet sich jedoch insofern, als sie zum Aufrufen von privaten statischen Methoden statt von privaten Instanzmethoden verwendet wird.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

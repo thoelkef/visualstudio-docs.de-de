@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 140aaa93272f6c10bb85a405cb2f875f2b6b464a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689574"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="technologies"></a>Technologien  
   
-- **Microsoft Active Accessibility** Eine COM-basierte Technologie, mit der die Zusammenarbeit von Anwendungen unter Microsoft Windows und Hilfsmitteln für die Barrierefreiheit verbessert wird. Sie bietet Dynamic Link Libraries zur Integration in das Betriebssystem sowie eine COM-Schnittstelle und Anwendungsprogrammierelemente, die Informationen über Benutzeroberflächenelemente auf zuverlässige Weise verfügbar machen. Weitere Informationen finden Sie unter [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
+- **Microsoft Active Accessibility** Eine COM-basierte Technologie, mit der die Zusammenarbeit von Anwendungen unter Microsoft Windows und Hilfsmitteln für die Barrierefreiheit verbessert wird. Sie bietet Dynamic Link Libraries zur Integration in das Betriebssystem sowie eine COM-Schnittstelle und Anwendungsprogrammierelemente, die Informationen über Benutzeroberflächenelemente auf zuverlässige Weise verfügbar machen. Weitere Informationen finden Sie unter [https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
   
-- **Microsoft .NET Speech Technologies** Das Microsoft .NET Speech SDK ist ein Satz von Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]-Steuerelementen, einem Microsoft Internet Explorer Speech-Add-In, Beispielanwendungen und Dokumentationen, über die Webentwickler sprachaktivierte [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]-Anwendungen erstellen, debuggen und bereitstellen können. Die Tools sind nahtlos in Microsoft Visual Studio integriert, sodass Entwickler das Potenzial der vertrauten Entwicklungsumgebung voll ausschöpfen können. Weitere Informationen finden Sie unter [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
+- **Microsoft .NET Speech Technologies** Das Microsoft .NET Speech SDK ist ein Satz von Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]-Steuerelementen, einem Microsoft Internet Explorer Speech-Add-In, Beispielanwendungen und Dokumentationen, über die Webentwickler sprachaktivierte [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]-Anwendungen erstellen, debuggen und bereitstellen können. Die Tools sind nahtlos in Microsoft Visual Studio integriert, sodass Entwickler das Potenzial der vertrauten Entwicklungsumgebung voll ausschöpfen können. Weitere Informationen finden Sie unter [https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx).  
   
-- **Understanding SAMI 1.0** Die Microsoft Synchronized Accessible Media Interchange-Technologie (SAMI) ermöglicht es Entwicklern, Audioinhalte für PC-Multimediaanwendungen zu erfassen. Weitere Informationen finden Sie unter [http://msdn.microsoft.com/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+- **Understanding SAMI 1.0** Die Microsoft Synchronized Accessible Media Interchange-Technologie (SAMI) ermöglicht es Entwicklern, Audioinhalte für PC-Multimediaanwendungen zu erfassen. Weitere Informationen finden Sie unter [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Windows-Anwendungen  
   
-- [Exemplarische Vorgehensweise: Erstellen einer Anwendung zugegriffen werden kann, Windows-basierten](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) dieses Thema enthält schrittweise Anweisungen zu den fünf Anforderungen zur Barrierefreiheit für das Logo zertifiziert für Windows in einer Windows-beispielanwendung.  
+- [Exemplarische Vorgehensweise: Erstellen einer Anwendung zugegriffen werden kann, Windows-basierten](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) dieses Thema enthält schrittweise Anweisungen zu den fünf Anforderungen zur Barrierefreiheit für das Logo zertifiziert für Windows in einer Windows-beispielanwendung.  
   
 - **Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche** In diesem technischen Artikel wird das Entwerfen einer Benutzeroberfläche für Windows-Anwendungen beschrieben, die über die Tastatur gesteuert werden. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
@@ -44,7 +44,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="web-sites"></a>Websites  
   
-- [Exemplarische Vorgehensweise: Richtlinien für Eingabehilfen für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps Entwurf Barrierefreiheit für das Web.  
+- [Exemplarische Vorgehensweise: Richtlinien für Eingabehilfen für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps Entwurf Barrierefreiheit für das Web.  
   
 - **Webseiten barrierefreier machen** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 3.2-Elemente sowie andere Elemente aufgelistet, die für die barrierefreie Entwicklung von Websites angepasst werden können. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   

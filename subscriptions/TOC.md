@@ -12,17 +12,15 @@
 ### [Herunterladen von Software](subscriber-downloads.md)
 #### [Liste der verfügbaren Softwaredownloads](software-download-list.md)
 ### [Abrufen & Verwalten von Product Keys](product-keys.md)
-### Visual Studio Dev Essentials
-#### [Einstieg in Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [Kündigen vom Visual Studio Dev Essentials-Abonnement](leave-vsde.md)
+### [Visual Studio mit GitHub Enterprise](access-github.md)
 ### [Vorteile für Abonnenten](subscriber-benefits.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## Nutzen der Vorteile für Abonnenten
 ### Tools
 #### [Visual Studio-IDE](vs-ide-benefit.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure-Guthaben](vs-azure.md)
 #### [Office 365-Entwicklerabonnement](vs-office-dev.md)
-#### [RStudio](vs-rstudio.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
@@ -32,14 +30,11 @@
 #### [Windows-Entwicklerkonto](vs-windows-dev.md)
 #### [Office 365-Abonnement](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure Pay-As-You-Go](vs-azure-payg.md)
 ### [Professionelle Entwicklung](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Hochqualifizieren](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
-#### [Xamarin University-Schulung](vs-xamarin.md)
 #### [MSDN Magazine-Abonnement](vs-msdn.md)
 ### [Supportvorteile](technical-support.md)
 #### [Azure Advisory Chat](vs-azure-advisory-chat.md)
@@ -72,6 +67,7 @@
 #### [Maximale Nutzung](maximum-usage.md)
 #### [Abgelaufene Abonnements](handle-expired-license.md)
 #### [Abonnenten mit privaten E-Mail-Anmeldungen](personal-email-sign-ins.md)
+### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
 ## Erwerben von Visual Studio-Abonnements
 ### [Vergleich von Abonnementoptionen](https://visualstudio.microsoft.com/vs/pricing)
 ### Kaufen von Cloudabonnements

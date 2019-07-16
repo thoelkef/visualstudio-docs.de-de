@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 983c6aa0a418ec87d521852bd4b0d781c5c90cfa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806452"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344023"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC-Datei
 Wenn Sie Visual Studio-Projektmappe oder das Projekt unter quellcodeverwaltung, die mit der IDE platzieren, empfängt die IDE zwei wichtige Informationen. Die Informationen stammen aus das Quellcodeverwaltungs-Plug-in Form von Zeichenfolgen. Diese Zeichenfolgen, die "AuxPath" und "Projektname", sind für die IDE nicht transparent, aber sie werden vom plug-in verwendet, um die Projektmappe oder das Projekt in der Versionskontrolle zu suchen. Die IDE in der Regel ruft diese Zeichenfolgen erstmals durch Aufrufen der [SccGetProjPath](../extensibility/sccgetprojpath-function.md), und klicken Sie dann speichert sie in der Projektmappe oder ein Projekt-Datei für zukünftige Aufrufe von der [SccOpenProject](../extensibility/sccopenproject-function.md). Bei der Einbettung in die Projektmappen- und Projektdateien-Dateien werden die Zeichenfolgen "AuxPath" und "Projektname" nicht automatisch aktualisiert, wenn ein Benutzer, Forks, branches oder Projektmappen- und Projektdateien-Dateien, die in der Versionskontrolle werden kopiert. Um sicherzustellen, dass die Dateien Projektmappen- und Projektdateien auf am richtigen Speicherort in der Versionskontrolle verweisen, müssen die Zeichenfolgen von Benutzer manuell aktualisieren. Da die Zeichenfolgen nicht transparent sein sollen, möglicherweise nicht immer klar, wie sie aktualisiert werden soll.

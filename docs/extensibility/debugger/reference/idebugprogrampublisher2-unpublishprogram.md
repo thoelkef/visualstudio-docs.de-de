@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgram
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90d56149d4e942c8fe5206fad3ce740f510a451d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 0bc394623731679a1172e85a499b1567e15042e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343251"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Wird ein Programm nicht verfügbar, die debuggt werden.
@@ -40,9 +40,8 @@ int UnpublishProgram(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pDebuggeeInterface`\
-
- [in] Ein `IUnknown` Schnittstelle, um die Anwendung. Dies ist der gleiche Wert angegeben die [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) Methode und eindeutig identifiziert die Anwendung entfernt wird (d. h., er dient als ein Cookie).
+`pDebuggeeInterface`\
+[in] Ein `IUnknown` Schnittstelle, um die Anwendung. Dies ist der gleiche Wert angegeben die [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) Methode und eindeutig identifiziert die Anwendung entfernt wird (d. h., er dient als ein Cookie).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548957"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587031"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Anpassen der Dateischachtelung im Projektmappen-Explorer
+# <a name="file-nesting-in-solution-explorer"></a>Dateischachtelung im Projektmappen-Explorer
 
-Das Schachteln verknüpfter Dateien im **Projektmappen-Explorer** ist kein neuer Ansatz, bisher hatten Sie jedoch keine Kontrolle über Schachtelungsregeln. Sie können zwischen den Voreinstellungen **Aus**, **Standard** und **Web** wählen, Sie können aber auch die Schachtelung nach Ihren Vorstellungen anpassen. Sie können sogar projektmappen- und projektspezifische Einstellungen erstellen, mehr Informationen dazu folgen später. Sehen wir uns zunächst die Standardeinstellungen an.
+Der **Projektmappen-Explorer** schachtelt verwandte Dateien, damit diese besser organisiert werden können und leichter aufzufinden sind. Wenn Sie z.B. ein Windows Forms-Formular zu einem Projekt hinzufügen, wird die Codedatei für das Formular im **Projektmappen-Explorer** unterhalb des Formulars geschachtelt. In ASP.NET Core-Projekten kann die Dateischachtelung noch einen Schritt weiter geführt werden. Sie können zwischen diesen Voreinstellungen für die Dateischachtelung auswählen: **Aus**, **Standard** und **Web**. Sie können auch [die Dateischachtelung anpassen](#customize-file-nesting) oder [projektmappenspezifische und projektspezifische Einstellungen erstellen](#create-project-specific-settings).
 
 > [!NOTE]
 > Das Feature wird derzeit nur für ASP.NET Core-Projekte unterstützt.
@@ -56,7 +56,7 @@ Konzentrieren wir uns auf den Knoten **dependentFileProviders** und dessen unter
 
 * **pathSegment**: Verwenden Sie diesen Regeltyp, um *jquery.min.js* unter *jquery.js* zu schachteln.
 
-* **allExtensions**: Verwenden Sie diesen Regeltyp, um *file.** unter *file.js* zu schachteln.
+* **allExtensions**: Verwenden Sie diesen Regeltyp, um *file.* * unter *file.js* zu schachteln.
 
 * **fileToFile**: Verwenden Sie diesen Regeltyp, um *bower.json* unter *.bowerrc* zu schachteln.
 
@@ -86,19 +86,43 @@ Dieser Anbieter arbeitet genau so wie der **extensionToExtension**-Anbieter, mit
 
 ### <a name="the-addedextension-provider"></a>Der addedExtension-Anbieter
 
-Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter der Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur am Ende des vollständigen Dateinamens auftreten. Betrachten Sie das folgende Beispiel:
+Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter der Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur am Ende des vollständigen Dateinamens auftreten.
+
+Betrachten Sie das folgende Beispiel:
 
 ![Regeln für das addedExtension-Beispiel](media/filenesting_addedextension.png) ![Wirkung des addedExtension-Beispiels](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* wird aufgrund der **addedExtension**-Regel unter *file.html* geschachtelt.
 
+> [!NOTE]
+> Sie müssen keine Dateierweiterungen für die `addedExtension`-Regel angeben, da sie automatisch auf alle Dateierweiterungen angewendet wird. Das bedeutet Folgendes: Eine Datei mit dem gleichen Namen und der gleichen Erweiterung wie eine andere Datei plus eine weitere Erweiterung am Ende wird unter der anderen Datei geschachtelt. Sie können die Wirkung dieses Anbieters nicht auf bestimmte Dateierweiterungen einschränken.
+
 ### <a name="the-pathsegment-provider"></a>Der pathSegment-Anbieter
 
-Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter einer Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur in der Mitte des vollständigen Dateinamens auftreten. Betrachten Sie das folgende Beispiel:
+Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter einer Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur in der Mitte des vollständigen Dateinamens auftreten.
+
+Betrachten Sie das folgende Beispiel:
 
 ![Regeln des pathSegment-Beispiels](media/filenesting_pathsegment.png) ![Wirkung des pathSegment-Beispiels](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* wird aufgrund der **pathSegment**-Regel unter *jquery.js* geschachtelt.
+
+> [!NOTE]
+> - Wenn Sie keine Dateierweiterungen für die `pathSegment`-Regel angeben, wird sie automatisch auf alle Dateierweiterungen angewendet. Das bedeutet Folgendes: Eine Datei mit dem gleichen Namen und der gleichen Erweiterung wie eine andere Datei plus eine weitere Erweiterung in der Mitte wird unter der anderen Datei geschachtelt.
+> - Sie können die Wirkung der `pathSegment`-Regel auf bestimmte Dateierweiterungen beschränken, indem Sie diese auf folgende Weise angeben:
+>
+>    ```json
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Der allExtensions-Anbieter
 
@@ -128,7 +152,7 @@ Sie können alle Einstellungen einschließlich Ihrer eigenen benutzerdefinierten
 
 ![Aktivieren von benutzerdefinierten Regeln für die Dateischachtelung](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Erstellen von projektmappenspezifischen und projektspezifischen Einstellungen
+## <a name="create-project-specific-settings"></a>Erstellen von projektspezifischen Einstellungen
 
 Sie können projektmappenspezifische und projektspezifische Einstellungen über das Kontextmenü jeder Projektmappe und jedes Projekts erstellen:
 
@@ -142,7 +166,7 @@ Sie können das Gegenteil tun und Visual Studio anweisen, *ausschließlich* die 
 
 Projektmappenspezifische und projektspezifische Einstellungen können in die Quellcodeverwaltung eingecheckt werden, und das gesamte Team, das an der Codebasis arbeitet, kann sie freigeben.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Deaktivieren von globalen Dateischachtelungsregeln für eine bestimmte Projektmappe oder ein bestimmtes Projekt
+## <a name="disable-file-nesting-rules-for-a-project"></a>Deaktivieren der Dateischachtelungsregeln für ein Projekt
 
 Sie können vorhandene globale Dateischachtelungsregeln für bestimmte Projektmappen oder Projekte deaktivieren, indem Sie die Aktion **remove** (Entfernen) anstelle von **add** (Hinzufügen) für einen Anbieter verwenden. Wenn Sie z.B. einem Projekt den folgenden Einstellungscode hinzufügen, werden alle **pathSegment**-Regeln deaktiviert, die global für dieses bestimmte Projekt existieren können.
 
@@ -157,3 +181,4 @@ Sie können vorhandene globale Dateischachtelungsregeln für bestimmte Projektma
 ## <a name="see-also"></a>Siehe auch
 
 - [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Projektmappen und Projekte in Visual Studio](solutions-and-projects-in-visual-studio.md)

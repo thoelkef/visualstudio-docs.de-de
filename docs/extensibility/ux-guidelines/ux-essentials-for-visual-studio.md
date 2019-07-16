@@ -3,17 +3,17 @@ title: UX Essentials für Visual Studio | Microsoft-Dokumentation
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951808"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310809"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 
@@ -134,10 +134,10 @@ In den richtigen Lösungsansatz **Abbildung C**, die Einstellung an eine Reihe v
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Unterstreichungen, die verwendet werden, während eine gruppenbezeichnung, nicht auf einen Link
  Unterstrichenen Text sollte nur für Links verwendet werden.
 
- **Bad:**\
+ **Bad:** \
  ![Unterstrichener Text, der keinen Link ist ein Visual Studio-Anti-Muster. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-G_GroupLabelIncorrect")<br />Unterstrichener Text, der keinen Link ist ein Visual Studio-Anti-Muster.
 
- **Gute:**\
+ **Gute:** \
  ![Richtig formatiert wurde, wird angezeigt, nicht-Hyperlink-Text nicht erweiterten in die Umgebungsschriftart. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-H_GroupLabelCorrect")<br />Richtig formatiert wurde, wird angezeigt, nicht-Hyperlink-Text nicht erweiterten in die Umgebungsschriftart.
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Durch Klicken auf ein Kontrollkästchen-Ergebnisse in einem Popupdialogfeld

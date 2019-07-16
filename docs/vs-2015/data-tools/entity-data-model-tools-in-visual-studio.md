@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705045"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Entity Data Model-Tools in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Entitätsframework ist eine objektrelationale zuordnungstechnologie, die .NET-En
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Beschreibt, wie [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Tools, die [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] bereitstellt, um Anwendungen zu erstellen.|
-|[Entity Data Model](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Enthält Links und Informationen zum Arbeiten mit Daten, mit dem Anwendungen, die auf [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
+|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Beschreibt, wie [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Tools, die [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] bereitstellt, um Anwendungen zu erstellen.|
+|[Entity Data Model](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Enthält Links und Informationen zum Arbeiten mit Daten, mit dem Anwendungen, die auf [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
 |[Erste Schritte in der vollständigen .NET (Konsole, WinForms, WPF, usw.).](/ef/ef6/get-started)|Stellt Tutorials zum Erstellen von .NET desktop-Anwendungen, die Entity Framework 7 verwenden.|
 |[ASP.NET 5-Anwendung mit neuen Datenbank](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Beschreibt, wie Sie eine neue ASP.NET 5-Anwendung mithilfe von Entity Framework 7 zu erstellen.|
 

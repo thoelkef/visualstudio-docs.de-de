@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 122071435d4bc2e5784abcc7a9a8c16c2c08e311
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a325e8798f54d8ec78ad0ec5318e9162b16774b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226198"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320113"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Ruft die Eigenschaften, die diesen Thread zu beschreiben.
@@ -43,12 +43,10 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parameter
 `dwFields`\
-
- [in] Eine Kombination von Flags aus der [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) -Enumeration, der bestimmt, welche Felder der `ptp` in ausgefüllt werden.
+[in] Eine Kombination von Flags aus der [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) -Enumeration, der bestimmt, welche Felder der `ptp` in ausgefüllt werden.
 
 `ptp`\
-
- [in, out] Ein [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) -Struktur, die mit den Eigenschaften des Threads gefüllt wird.
+[in, out] Ein [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) -Struktur, die mit den Eigenschaften des Threads gefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

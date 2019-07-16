@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: a0ae2fa860b4d6d316dc9aacd4f8108a0284c4ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844713"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256419"
 ---
 Übergänge

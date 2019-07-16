@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd952242db8b7394fa8915319686ac431b84947d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918852"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323948"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Ruft eine Liste der Pfade, die für Symbole als auch die Ergebnisse der Suche von jedem Pfad durchsucht werden.
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`dwFields`
+## <a name="parameters"></a>Parameter
+`dwFields`\
+[in] Eine Kombination von Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) Enumeration angeben welche Felder der `pInfo` in ausgefüllt werden.
 
- [in] Eine Kombination von Flags aus der [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) Enumeration angeben welche Felder der `pInfo` in ausgefüllt werden.
-
-`pInfo`
-
- [out] Ein [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) -Struktur, deren Mitglieder sind, sich mit den angegebenen Informationen gefüllt werden soll. Wenn dies ein null-Wert ist, gibt diese Methode `E_INVALIDARG`.
+`pInfo`\
+[out] Ein [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) -Struktur, deren Mitglieder sind, sich mit den angegebenen Informationen gefüllt werden soll. Wenn dies ein null-Wert ist, gibt diese Methode `E_INVALIDARG`.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn die Methode erfolgreich ist, gibt es `S_OK`ist, andernfalls einen Fehlercode zurückgegeben.
@@ -83,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Die Datei wurde nicht gefunden. ** 
- **c:\winnt\symbols\user32.pdb... Version stimmt nicht überein. ** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbole geladen.**
+**c:\symbols\user32.pdb... Die Datei wurde nicht gefunden.** 
+**c:\winnt\symbols\user32.pdb... Version stimmt nicht überein.** 
+ **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbole geladen.**
 
 ## <a name="see-also"></a>Siehe auch
 

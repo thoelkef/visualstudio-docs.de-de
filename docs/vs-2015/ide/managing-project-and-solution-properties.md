@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc27bd0cb93ab142d2a82758c72b27d14032d04e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424629"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674979"
 ---
 # <a name="managing-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
   
  ![Visual C&#43;&#43;-Projekteigenschaften](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")  
   
- Informationen zu C++-Projekteigenschaften finden Sie unter [Arbeiten mit Projekteigenschaften](http://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Weitere Informationen zu JavaScript-Eigenschaften finden Sie unter [Eigenschaftenseiten, JavaScript](../ide/reference/property-pages-javascript.md).  
+ Informationen zu C++-Projekteigenschaften finden Sie unter [Arbeiten mit Projekteigenschaften](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Weitere Informationen zu JavaScript-Eigenschaften finden Sie unter [Eigenschaftenseiten, JavaScript](../ide/reference/property-pages-javascript.md).  
   
 ## <a name="solution-properties"></a>Projektmappeneigenschaften  
  Um auf Eigenschaften für die Projektmappe zuzugreifen, klicken Sie mit der rechten Maustaste auf den Projektmappenknoten im **Projektmappen-Explorer** und wählen **Eigenschaften** aus. In dem Dialogfeld können Sie Projektkonfigurationen für Debug- oder Releasebuilds festlegen. Sie können auswählen, welche Projekte beim Drücken von F5 als Startprojekt verwendet werden sollen, und Sie können Codeanalyseoptionen festlegen.  

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2c8265ce0d09b592418082d159fd82d2afaf9fad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876381"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334630"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Lädt die Debugsymbole erhält die **ICorDebugModule** Objekt.
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ulAppDomainID`
+## <a name="parameters"></a>Parameter
+`ulAppDomainID`\
+[in] Der Bezeichner der Anwendungsdomäne.
 
- [in] Der Bezeichner der Anwendungsdomäne.
+`guidModule`\
+[in] Eindeutiger Bezeichner des Moduls.
 
-`guidModule`
+`baseAddress`\
+[in] Basis Speicheradresse.
 
- [in] Eindeutiger Bezeichner des Moduls.
+`pUnkMetadataImport`\
+[in] Objekt, das die Metadaten der Debug-Symbol enthält.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Basis Speicheradresse.
+`bstrModuleName`\
+[in] Der Name des Moduls.
 
-`pUnkMetadataImport`
-
- [in] Objekt, das die Metadaten der Debug-Symbol enthält.
-
-`pUnkCorDebugModule`
-
- [in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Der Name des Moduls.
-
-`bstrSymSearchPath`
-
- [in] Suchpfad für die Symboldatei.
+`bstrSymSearchPath`\
+[in] Suchpfad für die Symboldatei.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

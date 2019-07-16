@@ -1,42 +1,55 @@
 ---
 title: Erstellen neuer Projekte und Projektmappen
 description: In diesem Artikel erfahren Sie, wie Sie Projekte und Projektmappen in Visual Studio für Mac erstellen können.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/02/2019
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dbfc0d951524bb9ffbbd4a2366679cfc6ae41925
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983644"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693062"
 ---
-# <a name="creating-new-projects-and-solutions"></a>Erstellen neuer Projekte und Projektmappen
+# <a name="creating-a-new-project"></a>Erstellen eines neuen Projekts
 
-## <a name="creating-new-projects-and-solutions-from-a-template"></a>Erstellen neuer Projekte und Projektmappen mit einer Vorlage
+## <a name="opening-the-project-creation-dialog"></a>Öffnen des Dialogfelds für die Projekterstellung
 
-Projektmappen können zu jedem beliebigen Zeitpunkt mit einer vordefinierten Vorlage erstellt werden. Wählen Sie ab Visual Studio 2019 für Mac im Startfenster **Neu** aus. Als Alternative können Sie zu  **Datei > Neue Projektmappe** navigieren. Wählen Sie eine oder mehrere benötigte Plattformen aus und dann die benötigte Vorlage:
+Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio für Mac zu erstellen. Wenn Sie Visual Studio für Mac erstmalig öffnen, wird die Willkommensseite angezeigt. Hier können Sie die Option **Neu** auswählen. Anschließend gelangen Sie zum Bildschirm für die Projekterstellung.
 
-![Erstellen einer neuen Projektmappen](media/projects-and-solutions-image0.png)
+> [!TIP]
+> Darüber hinaus können Sie auf der Willkommensseite auch aktuelle Projekte und Projektmappen öffnen und nach ihnen suchen. Sie können auch aktuelle Projekte öffnen, indem Sie in der Menüleiste **Datei > Aktuelle Projektmappen** wählen.
 
-So wird eine Projektmappe erstellt, die ein oder mehrere Projekte enthalten kann, je nach Typ der ausgewählten Vorlage.
+![Willkommensseite mit der Option zum Erstellen eines neuen Projekts](media/first-run-project.png)
 
-Sie können über Kontextaktionen oder die Menüleiste durch den Projektmappen-Explorer navigieren.
+Wenn Visual Studio für Mac bereits mit einer geladenen Lösung geöffnet ist, können Sie eine neue Projektmappe erstellen, indem Sie in der Menüleiste **Datei > Neue Projektmappe** auswählen. Wenn Sie auf diese Weise eine neue Projektmappe erstellen, wird die bereits geladene geschlossen.
 
-Um ein neues Projekt in eine Projektmappe hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Namen der Projektmappe und dann auf **Hinzufügen > Neues Projekt hinzufügen**, um das Dialogfeld „Neues Projekt“ anzuzeigen:
+## <a name="creating-a-new-project-from-a-template"></a>Erstellen eines neuen Projekts aus einer Vorlage
 
-![Hinzufügen eines neuen Projekts](media/projects-and-solutions-image4.png)
+Das Dialogfeld **Neues Projekt** zeigt standardmäßig Ihre zuletzt verwendeten Vorlagen sortiert nach den *zuletzt verwendeten* Vorlagen an.
 
-Mit dieser Methode zum Hinzufügen von Projekten können Sie die Codefreigabefunktionen von Xamarin voll ausschöpfen. Wenn Sie einer vorhandenen Projektmappe ein freigegebenes Projekt oder eine Vorlage für eine portierbare Bibliothek hinzufügen, können Sie plattformübergreifende Logik einschließen, die in allen anderen Projekten in einer Projektmappe verwendet werden kann. Weitere Informationen zum Erstellen plattformübergreifender Anwendungen finden sind in den [entsprechenden Handbüchern](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
+Wenn Sie keine aktuelle Vorlage verwenden möchten, können Sie eine andere aus den Kategorien auf der linken Seite des Dialogfelds auswählen. Jede Kategorie enthält mehrere Projektvorlagen, aus denen Sie auswählen können. Wenn Sie auf einen Projekttyp klicken, wird auf der rechten Seite des Bildschirms eine Beschreibung angezeigt.
 
-## <a name="opening-recent-solutions"></a>Öffnen zuletzt verwendeter Projektmappen
+![Bildschirm „Neues Projekt“](media/project-creation-screen.png)
 
-Auf der Startseite von Visual Studio wird eine Lister der zuletzt verwendeten Projekte angezeigt:
+## <a name="configuring-your-new-project"></a>Konfigurieren des neuen Projekts
 
-![Abschnitt „Zuletzt verwendete Projektmappen“ auf der Startseite](media/create-new-projects-recent.png)
+Nachdem Sie sich für eine Projektvorlage entschieden haben, werden Sie auf den folgenden Bildschirmen durch alle Konfigurationsschritte geführt, die für die Einrichtung des Projekts erforderlich sind; diese können je nach Projekttyp variieren.
 
-Sie können diese Liste über das Filterfeld filtern oder einzelne Elemente aus der Liste entfernen.
+Für alle Projekte ist ein neues Projekt sowie ein Speicherort für die Dateien erforderlich. Wenn das Projekt Teil einer neuen Projektmappe ist, wird auch ein Projektmappenname benötigt, anstatt es zu einer bestehenden Projektmappe hinzuzufügen.
+
+Optional können Sie in diesem Schritt auch Optionen für die Git-Quellcodeverwaltung konfigurieren. Das folgende Bild zeigt ein Beispiel für den letzten Konfigurationsschritt für ein .NET Core-Projekt:
+
+![Konfigurieren eines neuen Projekts](media/configure-new-project.png)
+
+## <a name="adding-additional-projects-to-a-solution"></a>Hinzufügen weiterer Projekte zu einer Projektmappe
+
+Sie können weitere Projekte zu einer Projektmappe hinzufügen, indem Sie mit der rechten Maustaste auf die Projektmappe im Lösungspad klicken und entweder **Hinzufügen > Neues Projekt hinzufügen** oder **Hinzufügen > Vorhandenes Projekt hinzufügen** auswählen.
+
+Wenn Sie ein neues Projekt hinzufügen, werden Sie durch die Erstellung eines neuen Projekts geleitet, wie in [Konfigurieren des neuen Projekts](#configuring-your-new-project) gezeigt.
+
+Wenn Sie ein vorhandenes Projekt hinzufügen möchten, können Sie auf Ihrem Computer nach einem bestehenden Projekt suchen und es der Projektmappe hinzufügen.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697129"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318192"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Gibt an, welcher Teil eines Programms Zustand (z. B. ausgeführten Threads, Stapelrahmen und aktuelle Anweisungsadresse) sichern.
@@ -39,10 +42,12 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="members"></a>Member
-DUMP_MINIDUMP gibt einen kleinen, compact-Dump an.
+## <a name="fields"></a>Felder
+`DUMP_MINIDUMP`\
+Gibt einen kleinen, compact-Dump an.
 
-DUMP_FULLDUMP gibt einen großen, vollständigen Dump an.
+`DUMP_FULLDUMP`\
+Gibt einen großen, vollständigen Dump an.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Argument an die [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) Methode.

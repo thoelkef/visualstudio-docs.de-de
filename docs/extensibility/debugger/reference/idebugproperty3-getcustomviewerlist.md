@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457655"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348868"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Ruft eine Liste der benutzerdefinierten Viewer, die dieser Eigenschaft zugeordnet.
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parameter
 `celtSkip`\
-
- [in] Die Anzahl von Zuschauern zu überspringen.
+[in] Die Anzahl von Zuschauern zu überspringen.
 
 `celtRequested`\
-
- [in] Die Anzahl der abzurufenden-Viewer (gibt auch die Größe der an die `rgViewers` Array).
+[in] Die Anzahl der abzurufenden-Viewer (gibt auch die Größe der an die `rgViewers` Array).
 
 `rgViewers`\
-
- [in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen gefüllt werden soll.
+[in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen gefüllt werden soll.
 
 `pceltFetched`\
-
- [out] Die tatsächliche Anzahl von Zuschauern zurückgegeben werden soll.
+[out] Die tatsächliche Anzahl von Zuschauern zurückgegeben werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

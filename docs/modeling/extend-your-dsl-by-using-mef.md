@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b4748cd71416ce4d3e9cce64826f1ec97ceef85
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994530"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692982"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 
@@ -103,7 +103,7 @@ Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framewor
 
     Fügen Sie die Zeile hinter der vorhandenen `<Include>` Richtlinie.
 
-4. Open *"DslDefinition.DSL"*.
+4. Open *"DslDefinition.DSL"* .
 
 5. Wählen Sie im DSL-Explorer **editor\validierung**.
 
@@ -129,7 +129,7 @@ Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine ander
 
    - Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".
 
-   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\bin\\\\***
+   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\\"bin"\\\***
 
    - Wenn Sie Zugriff auf die DSL-VSIX-Datei haben, finden Sie die Assembly durch Ändern der Dateinamenerweiterung, der die VSIX-Datei in ".zip". Dekomprimieren Sie die ZIP-Datei.
 
@@ -149,19 +149,19 @@ Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine ander
 
 5. In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen**.
 
-6. Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"**.
+6. Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"** .
 
-7. Klicken Sie auf **fügen Inhalt hinzu,**. Legen Sie im Dialogfeld **Inhaltstyp** zu **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt hinzu.
+7. Klicken Sie auf **fügen Inhalt hinzu,** . Legen Sie im Dialogfeld **Inhaltstyp** zu **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt hinzu.
 
 8. Fügen Sie ein VSIX-Verweis auf die DSL hinzu.
 
-   1. In **"Source.Extension.vsixmanifest"**, klicken Sie auf **Verweis hinzufügen**
+   1. In **"Source.Extension.vsixmanifest"** , klicken Sie auf **Verweis hinzufügen**
 
-   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in ** DslPackage\bin\\\\***.
+   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in **DslPackage\\Bin\\\*** .
 
        Dadurch können Benutzer, die die DSL und die Erweiterung zur gleichen Zeit zu installieren. Wenn der Benutzer bereits die DSL installiert hat, wird nur die Erweiterung installiert.
 
-9. Überprüfen und aktualisieren Sie die anderen Felder des **"Source.Extension.vsixmanifest"**. Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass die richtigen Versionen von Visual Studio festgelegt werden.
+9. Überprüfen und aktualisieren Sie die anderen Felder des **"Source.Extension.vsixmanifest"** . Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass die richtigen Versionen von Visual Studio festgelegt werden.
 
 10. Fügen Sie Code hinzu, um das Klassenbibliotheksprojekt hinzu. Verwenden Sie die Beispiele im nächsten Abschnitt als Leitfaden.
 

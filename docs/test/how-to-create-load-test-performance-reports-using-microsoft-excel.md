@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950155"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747579"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel
 
@@ -144,7 +144,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
    > [!TIP]
    > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: Ziel und Berichtsname. Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter "Indikatorensätze verwalten" die Eigenschaft "Computertags" in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
 
-## <a name="net-framework-security"></a>.NET Framework-Sicherheit
+## <a name="net-security"></a>.NET-Sicherheit
 
 Auslastungstestergebnisse und -berichte enthalten potenziell sicherheitsrelevante Informationen, die für einen Angriff auf Ihren Computer oder Ihr Netzwerk verwendet werden können. Auslastungstestergebnisse und -berichte enthalten Computernamen und Verbindungszeichenfolgen. Seien Sie sich dessen bewusst, wenn Sie Auslastungstestberichte für andere freigeben.
 

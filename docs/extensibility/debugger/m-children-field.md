@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fefeaf07c923a5fefa282efcd96948b2d907cca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab6446b18350fe1f11e0b164d9eb4bff39035ddb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889512"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330891"
 ---
 # <a name="mchildren-field"></a>M_children-Feld
 Die Liste der untergeordneten Aufgaben, die mit dieser Aufgabe registriert sind.
 
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"*)
+ **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
 
  Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437609"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701216"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 |Modul (nur VB)|Methode, Eigenschaft, Feld, Ereignis, Konstruktor, Konstante|  
   
 > [!NOTE]
-> Erhöhen Sie die Präzision von Eigenschaftsdeklarationen durch automatisch implementierte Eigenschaften (nur C#), wenn in den Get- und Set-Zugriffsmethoden der Eigenschaft keine zusätzliche Logik erforderlich ist. Um die vollständige Signatur anzuzeigen, wählen Sie im Menü **Klassendiagramm** die Option **Memberformat ändern** aus, und klicken anschließend auf **Vollständige Signatur anzeigen**. Weitere Informationen über automatisch implementierte Eigenschaften finden Sie unter [Automatisch implementierte Eigenschaften](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Erhöhen Sie die Präzision von Eigenschaftsdeklarationen durch automatisch implementierte Eigenschaften (nur C#), wenn in den Get- und Set-Zugriffsmethoden der Eigenschaft keine zusätzliche Logik erforderlich ist. Um die vollständige Signatur anzuzeigen, wählen Sie im Menü **Klassendiagramm** die Option **Memberformat ändern** aus, und klicken anschließend auf **Vollständige Signatur anzeigen**. Weitere Informationen über automatisch implementierte Eigenschaften finden Sie unter [Automatisch implementierte Eigenschaften](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
@@ -131,7 +131,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
      **Hinweis**: Sie können Member auch mithilfe von Tastenkombinationen erstellen. Weitere Informationen finden Sie unter [Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster „Klassendetails“ (Klassen-Designer)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a> Ändern von Typmembern  
- Mit dem Klassen-Designer können Sie die Member der Typen ändern, die im Diagramm angezeigt werden. Sie können die Member jedes nicht schreibgeschützten Typs ändern, die in einem Klassendiagramm angezeigt werden. (Weitere Informationen finden Sie unter [Anzeigen von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Ändern Sie Typmember, indem Sie die direkte Bearbeitung auf der Entwurfsoberfläche, das Eigenschaftenfenster und das Klassendetailsfenster verwenden.  
+ Mit dem Klassen-Designer können Sie die Member der Typen ändern, die im Diagramm angezeigt werden. Sie können die Member jedes nicht schreibgeschützten Typs ändern, die in einem Klassendiagramm angezeigt werden. (Weitere Informationen finden Sie unter [Anzeigen von schreibgeschützten Informationen (Klassen-Designer)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Ändern Sie Typmember, indem Sie die direkte Bearbeitung auf der Entwurfsoberfläche, das Eigenschaftenfenster und das Klassendetailsfenster verwenden.  
   
  Alle im Klassendetailsfenster angezeigten Member stellen die Member der Typen im Klassendiagramm dar. Es gibt vier Arten von Membern: Methoden, Eigenschaften, Felder und Ereignisse.  
   
@@ -263,7 +263,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
   
  Alle Zellen im Klassendetailsfenster sind bis auf einige Ausnahmen bearbeitbar:  
   
-- Der gesamte Typ ist schreibgeschützt, wenn er sich beispielsweise in einer Assembly befindet, auf die verwiesen wird (weitere Informationen finden Sie unter [Anzeige von schreibgeschützten Informationen (Klassen-Designer)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Wenn Sie die Form im Klassen-Designer auswählen, werden die entsprechenden Details im Klassendetailsfenster schreibgeschützt angezeigt.  
+- Der gesamte Typ ist schreibgeschützt, wenn er sich beispielsweise in einer Assembly befindet, auf die verwiesen wird (weitere Informationen finden Sie unter [Anzeige von schreibgeschützten Informationen (Klassen-Designer)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Wenn Sie die Form im Klassen-Designer auswählen, werden die entsprechenden Details im Klassendetailsfenster schreibgeschützt angezeigt.  
   
 - Für Indexer ist der Name schreibgeschützt, der Rest (Typ, Modifizierer, Zusammenfassung) ist jedoch bearbeitbar.  
   

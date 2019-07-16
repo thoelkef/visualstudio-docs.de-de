@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b61b0f10e4231ce1970a55cf352490cbf02a42d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 781ff1e1c7d389baa43a54ee4413280f105ac1e1
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816530"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714994"
 ---
 # <a name="globalization-warnings"></a>Globalisierungswarnungen
 Globalisierungswarnungen Global verwendbare Bibliotheken und Anwendungen zu unterstützen.
@@ -32,7 +32,7 @@ Globalisierungswarnungen Global verwendbare Bibliotheken und Anwendungen zu unte
 |[CA1300: MessageBoxOptions angeben](../code-quality/ca1300-specify-messageboxoptions.md)|Wenn in Kulturen, in denen von rechts nach links gelesen wird, ein Meldungsfeld richtig angezeigt werden soll, müssen der RightAlign-Member und der RtlReading-Member der MessageBoxOptions-Enumeration an die Show-Methode übergeben werden.|
 |[CA1301: Doppelte Zugriffstasten vermeiden](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Eine Zugriffstaste ermöglicht den Zugriff auf ein Steuerelement unter Verwendung der ALT-TASTE. Wenn mehrere Steuerelemente über doppelte Zugriffstasten verfügen, ist das Verhalten der Zugriffstaste nicht stringent.|
 |[CA1302: Keine hartkodierung für gebietsschemaspezifische Zeichenfolgen verwenden](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Die System.Environment.SpecialFolder-Enumeration enthält Member, die auf besondere Systemordner verweisen. Die Speicherorte dieser Ordner können sich von Betriebssystem zu Betriebssystem unterscheiden. Der Benutzer kann einige Speicherorte ändern, und die Speicherorte sind lokalisiert. Die Environment.GetFolderPath-Methode gibt die Speicherorte, die der Environment.SpecialFolder-Enumeration, lokalisiert, und für den derzeit ausgeführten Computer geeignet zugeordnet sind.|
-|[CA1303: Literale nicht als lokalisierte Parameter übergeben](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Eine extern sichtbare Methode übergibt ein Zeichenfolgenliteral als Parameter an einen Konstruktor oder-Methode in der .NET Framework-Klassenbibliothek, und diese Zeichenfolge sollte lokalisierbar sein.|
+|[CA1303: Literale nicht als lokalisierte Parameter übergeben](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Eine extern sichtbare Methode übergibt ein Zeichenfolgenliteral als Parameter an eine .NET Konstruktor oder eine Methode, und diese Zeichenfolge sollte lokalisierbar sein.|
 |[CA1304: CultureInfo angeben](../code-quality/ca1304-specify-cultureinfo.md)|Eine Methode oder ein Konstruktor ruft einen Member mit einer Überladung auf, die einen System.Globalization.CultureInfo-Parameter akzeptiert. Die Methode oder der Konstruktor ruft nicht die Überladung auf, die den CultureInfo-Parameter akzeptiert. Wenn ein CultureInfo-Objekt oder ein System.IFormatProvider-Objekt nicht angegeben wird, besitzt der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht in allen Gebietsschemas den gewünschten Effekt.|
 |[CA1305: IFormatProvider angeben](../code-quality/ca1305-specify-iformatprovider.md)|Eine Methode oder ein Konstruktor ruft einen oder mehrere Member auf, die Überladungen besitzen und einen System.IFormatProvider-Parameter akzeptieren; die Methode oder der Konstruktor ruft die Überladung nicht auf, die den IFormatProvider-Parameter akzeptiert. Wenn ein System.Globalization.CultureInfo-Objekt oder ein IFormatProvider-Objekt nicht angegeben wird, besitzt der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht in allen Gebietsschemas den gewünschten Effekt.|
 |[CA1306: Set-Gebietsschema für Datentypen](../code-quality/ca1306-set-locale-for-data-types.md)|Das Gebietsschema bestimmt kulturspezifische Darstellungselemente für Daten wie die für Zahlenwerte, Währungssymbole und Sortierreihenfolge verwendete Formatierung. Wenn Sie eine DataTable oder ein DataSet erstellen, sollten Sie das Gebietsschema explizit festlegen.|

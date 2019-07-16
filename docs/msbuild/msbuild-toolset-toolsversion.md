@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436857"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747380"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 
@@ -48,7 +48,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 
 ## <a name="how-the-toolsversion-attribute-works"></a>So funktioniert das ToolsVersion-Attribut
 
- Wenn Sie in Visual Studio ein Projekt erstellen oder ein vorhandenes Projekt aktualisieren, ist automatisch ein Attribut mit dem Namen `ToolsVersion` in der Projektdatei vorhanden, und sein Wert entspricht der Version von MSBuild, die in der Visual Studio-Edition enthalten ist. Weitere Informationen finden Sie unter [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/visual-studio-multi-targeting-overview.md).
+ Wenn Sie in Visual Studio ein Projekt erstellen oder ein vorhandenes Projekt aktualisieren, ist automatisch ein Attribut mit dem Namen `ToolsVersion` in der Projektdatei vorhanden, und sein Wert entspricht der Version von MSBuild, die in der Visual Studio-Edition enthalten ist. Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md).
 
  Wenn ein `ToolsVersion`-Wert in einer Projektdatei definiert wird, verwendet MSBuild diesen Wert, um die Werte der Toolseteigenschaften zu bestimmen, die für das Projekt verfügbar sind. Eine Toolseteigenschaft ist `$(MSBuildToolsPath)`, die den Pfad der .NET Framework-Tools angibt. Nur diese Toolseteigenschaft (oder `$(MSBuildBinPath)`) ist erforderlich.
 

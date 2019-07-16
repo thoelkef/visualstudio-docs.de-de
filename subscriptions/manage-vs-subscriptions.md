@@ -1,18 +1,18 @@
 ---
 title: Verwalten von Visual Studio-Abonnements
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833943"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365432"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -125,6 +125,12 @@ Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfa
    > [!div class="mx-imgBorder"]
    > ![Bearbeiten von Profilinformationen](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Festlegen von Kommunikationseinstellungen
+Wenn Sie regelmäßige Updates zu Ihrem Abonnement und Ihren Vorteilen sowie den monatlichen Newsletter zu Visual Studio-Abonnements erhalten möchten, [aktualisieren Sie Ihre Einstellungen](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), in dem Sie in Ihrem Visual Studio-Profil das Kontrollkästchen für Visual Studio-Abonnements aktivieren. Sie können diese Einstellungen jederzeit ändern und die Updates kündigen. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Festlegen von Einstellungen](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Verknüpfen eines Abonnements mit vorhandenen Azure DevOps Services- oder Azure-Abonnements
 
 Wenn Sie sich mit einem persönlichen Microsoft-Konto (MSA) bei Ihrem Abonnement anmelden und ein Abonnement besitzen, für das Azure DevOps Services oder Microsoft Azure zusammen mit einem von Azure verwalteten Geschäfts-, Schul- oder Unikonto verwendet wird, können Sie die beiden Abonnements miteinander verknüpfen. Dies wird als „alternatives Konto“ bezeichnet und ermöglicht Ihnen die Weiternutzung Ihres Microsoft-Kontos zum Anmelden bei Ihrem Abonnement sowie den Zugriff auf vorhandene Azure-, Azure DevOps Services- und IDE-Ressourcen, die Ihrem Geschäfts-, Schul- oder Unikonto zugeordnet sind.

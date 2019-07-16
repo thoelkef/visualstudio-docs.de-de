@@ -1,5 +1,5 @@
 ---
-title: Sammeln ausführlicher Zeitsteuerungsdaten für Dienste über die Befehlszeile mit der Profiler-Instrumentierungsmethode | Microsoft-Dokumentation
+title: 'Profiler-Befehlszeile: Instrumentieren zum Abrufen von Details zur Zeitsteuerung'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6144ee367e7cf53ceb901bfe65cce9999f1e4680
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9271974857da4fffa7d053afdb2b160fb72ede4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949064"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033044"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für Dienste über die Befehlszeile mit der Profiler-Instrumentierungsmethode
 In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführlicher Leistungsdaten für Windows-Dienste unter Verwendung der Instrumentationsmethode über die Befehlszeile beschrieben.

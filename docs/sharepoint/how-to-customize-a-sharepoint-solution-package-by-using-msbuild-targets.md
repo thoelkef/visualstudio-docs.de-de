@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Ziele | Microsoft-Dokumentation'
+title: Anpassen von SharePoint-Lösungspakets mithilfe von MSBuild-Ziele
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814016"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401509"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungspakets mithilfe von MSBuild-Ziele
-  Durch die Verwendung von MSBuild-Ziele an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien erstellt (*.wsp*). Beispielsweise können Sie anpassen, die MSBuild-Eigenschaften, um das Zwischenverzeichnis Verpacken und die MSBuild-Element-Gruppen, die angeben, die aufgelisteten Dateien zu ändern.
+  Durch die Verwendung von MSBuild-Ziele an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien erstellt ( *.wsp*). Beispielsweise können Sie anpassen, die MSBuild-Eigenschaften, um das Zwischenverzeichnis Verpacken und die MSBuild-Element-Gruppen, die angeben, die aufgelisteten Dateien zu ändern.
 
 ## <a name="customize-and-run-msbuild-targets"></a>Anpassen und Ausführen von MSBuild-Ziele
  Wenn Sie die Ziele BeforeLayout und AfterLayout anpassen, können Sie Aufgaben vor dem paketlayout, z. B. hinzufügen, entfernen oder Ändern von Dateien, die verpackt, ausführen.
@@ -43,7 +43,7 @@ ms.locfileid: "62814016"
 
 3. Öffnen Sie das Projekt, öffnen Sie das Kontextmenü und wählen Sie dann **Projekt entladen**.
 
-4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **bearbeiten**  *\<Projektname > vbproj* oder **Bearbeiten**  *\<Projektname > .csproj*.
+4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **bearbeiten** *\<Projektname > vbproj* oder **Bearbeiten** *\<Projektname > .csproj*.
 
 5. Nach der `Import` Zeile am Ende der Projektdatei, fügen Sie die folgende Zeile hinzu.
 

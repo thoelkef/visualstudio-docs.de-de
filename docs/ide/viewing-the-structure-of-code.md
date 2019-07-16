@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Codestruktur mithilfe von Klassenansicht, Aufrufhierarchie, Objektkatalog und Codedefinition (Fenster)
+title: Klassenansicht, Aufrufhierarchie, Objektkatalog, Codedefinitionsfenster
 ms.date: 05/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582077"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747714"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Anzeigen der Codestruktur mithilfe verschiedener Toolfenster
 
-Sie können in Visual Studio Klassen und deren Member mithilfe verschiedener Toolfenster untersuchen, darunter **Klassenansicht**, **Aufrufhierarchie**, **Objektkatalog** und **Codedefinition** (nur C++). Mit diesen Tools können Sie Code in Visual Studio-Projekten, .NET Framework-Komponenten, COM-Komponenten, Dynamic Link Librarys (DLLs) und Typbibliotheken (TLB) untersuchen.
+Sie können in Visual Studio Klassen und deren Member mithilfe verschiedener Toolfenster untersuchen, darunter **Klassenansicht**, **Aufrufhierarchie**, **Objektkatalog** und **Codedefinition** (nur C++). Mit diesen Toolfenstern können Sie Code in Visual Studio-Projekten, .NET-Komponenten, COM-Komponenten, Dynamic Link Librarys (DLLs) und Typbibliotheken (TLBs) untersuchen.
 
 Sie können auch den **Projektmappen-Explorer** verwenden, um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen, Symbolverweisen und weiteren Inhalten zu suchen und die Aufrufhierarchie einer Methode anzuzeigen, ohne zwischen mehreren Toolfenstern wechseln zu müssen.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2e430abdc068070457dcf362e39dcbc0b398
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797558"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714252"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.
 
@@ -48,13 +48,13 @@ Wählen Sie einen Namen, der eindeutig ist, wenn er mit anderen Bezeichnern in G
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
-Unterdrücken Sie keine Warnung dieser Regel. Die Bibliothek kann nicht in allen verfügbaren Sprachen in .NET Framework verwendet werden.
+Unterdrücken Sie keine Warnung dieser Regel. Die Bibliothek kann nicht in allen verfügbaren Sprachen in .NET verwendet werden.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
 Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
 
-```
+```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 

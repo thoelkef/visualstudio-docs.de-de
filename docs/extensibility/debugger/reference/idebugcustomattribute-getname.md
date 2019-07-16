@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed12526422a38b7b3b629a0acafc019b2e94a5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3ed7abc9682d0a9f56c50fe7510ed3f276a6bf5a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921881"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315204"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Ruft den Namen des benutzerdefinierten Attributs.
@@ -36,10 +39,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `bstrName`
-
- [out] Gibt eine Zeichenfolge, die mit dem Namen des benutzerdefinierten Attributs.
+## <a name="parameters"></a>Parameter
+`bstrName`\
+[out] Gibt eine Zeichenfolge, die mit dem Namen des benutzerdefinierten Attributs.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

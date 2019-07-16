@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791070"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160056"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 
@@ -50,14 +50,18 @@ Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie u
 
 **Zielframework**
 
-Gibt die .NET Framework-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET Framework auf dem Computer installiert sind.
+Gibt die .NET-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET auf Ihrem Computer installiert sind.
 
-Standardmäßig entspricht der Wert dem Zielframework, das Sie beim Erstellen des Projekts ausgewählt haben.
+Für .NET Framework-Projekte entspricht der Standardwert dem Zielframework, das Sie beim Erstellen des Projekts angegeben haben.
+
+Für ein Projekt, das auf .NET Core abzielt, werden die verfügbaren Versionen ggf. wie folgt aussehen:
+
+![Framework-Zielversionen für ein .NET Core-Projekt](../media/application-target-framework.png)
 
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Ausgabetyp**
 
@@ -77,9 +81,9 @@ Weitere Informationen zur Umleitung finden Sie unter [Umleiten von Assemblyversi
 
 **Startobjekt**
 
-Definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Nicht festgelegt)**.
+Definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Nicht festgelegt)** .
 
-In einem WPF-App-Projekt ist diese Option standardmäßig festgelegt auf **(Nicht festgelegt)**. Die andere Option ist \[projectname].App. Bei einem WPF-Projekt müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei *Application.xaml*, und legen Sie die `StartupUri`-Eigenschaft auf eine *XAML*-Datei in Ihrem Projekt fest, beispielsweise *Window1.xaml*. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.
+In einem WPF-App-Projekt ist diese Option standardmäßig festgelegt auf **(Nicht festgelegt)** . Die andere Option ist \[projectname].App. Bei einem WPF-Projekt müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei *Application.xaml*, und legen Sie die `StartupUri`-Eigenschaft auf eine *XAML*-Datei in Ihrem Projekt fest, beispielsweise *Window1.xaml*. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.
 
 Weitere Informationen hierzu finden Sie unter [/main (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -115,4 +119,4 @@ Aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista 
 
 Wählen Sie dieses Optionsfeld aus, wenn Sie eine Ressourcendatei für das Projekt bereitstellen. Durch Auswahl dieser Option, werden die Optionen **Symbol** und **Manifest** deaktiviert.
 
-Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen (**...**), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.
+Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen ( **...** ), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.

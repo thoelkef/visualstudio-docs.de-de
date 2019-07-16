@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966549"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820656"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -30,7 +30,7 @@ Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Star
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "Die Visual Studio-IDE")](media/vs-2019/ide-overview.png#lightbox)
+[![Die Visual Studio 2019-IDE](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Im Dialogfeld **Neues Projekt** werden mehrere *Projektvorlagen* angezeigt. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind.
 
-1. Wählen Sie unterhalb von **Visual Basic** die Kategorie **.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)**. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
+1. Wählen Sie unterhalb von **Visual Basic** die Kategorie **.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)** . Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
 
    ![.NET Core-App-Vorlage](media/overview-npd.png)
 

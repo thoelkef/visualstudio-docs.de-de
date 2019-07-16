@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9752dfa90250bd427cb7a3d18e6e73775f25efb9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919022"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330292"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 Ruft den Typ oder Methode Besitzer dieses generischen Parameters ab.
@@ -34,10 +37,9 @@ int GetOwner(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ppOwner`
-
- [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das dieser generischen Parameter besitzt.
+## <a name="parameters"></a>Parameter
+`ppOwner`\
+[out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das dieser generischen Parameter besitzt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

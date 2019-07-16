@@ -10,19 +10,19 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8588efe9ce460a34fc71f44bc0116b5977afe7aa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705937"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Sample Excel Add-In for Coded UI Testing
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dieses Beispiel-Add-In für [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] wurde speziell für die Unterstützung von Test der programmierten UI von Excel-Arbeitsblättern entworfen, die in Visual Studio Enterprise aufgezeichnet und ausgeführt werden. Das Add-In wird mit Visual Studio-Tools für Office erstellt.  
   
- Weitere Informationen dazu, wie Sie eine Excel-Add-In erstellen, finden Sie unter [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-in für Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) oder suchen Sie in MSDN nach "Excel Add-In".  
+ Weitere Informationen dazu, wie Sie eine Excel-Add-In erstellen, finden Sie unter [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-in für Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) oder suchen Sie in MSDN nach "Excel Add-In".  
   
  Auch wenn es sich beim Excel-Add-In nicht um das Hauptthema dieser Dokumentation über die Erweiterung für Tests der programmierten UI für Excel handelt, sind einige Kommentare möglicherweise hilfreich.  
   
@@ -47,5 +47,5 @@ Dieses Beispiel-Add-In für [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] w
   
 ## <a name="see-also"></a>Siehe auch  
  [Extending Coded UI Tests and Action Recordings to Support Microsoft Excel (Erweitern von programmierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel)](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Exemplarische Vorgehensweise: Erstellen Ihrer ersten VSTO-Add-Ins für Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
- [Office- und SharePoint-Entwicklung](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
+ [Exemplarische Vorgehensweise: Erstellen Ihrer ersten VSTO-Add-Ins für Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Office- und SharePoint-Entwicklung](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

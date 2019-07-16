@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946790"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747696"
 ---
-# <a name="toolbox-data-tab"></a>Toolbox, Daten (Registerkarte )
+# <a name="toolbox-data-tab"></a>Toolbox, Registerkarte „Daten“
 
 Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können. Die Registerkarte **Daten** unter **Toolbox** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist. Die **Toolbox** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie die **Toolbox** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Toolbox**.
 
 > [!TIP]
 > Durch Ausführen des Assistenten zum Konfigurieren von Datenquellen werden die meisten Datenelemente automatisch erstellt und konfiguriert. Weitere Informationen finden Sie unter [Neue Datenquelle hinzufügen](../../data-tools/add-new-data-sources.md).
 
-## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche
+## <a name="ui-element-list"></a>Liste der Benutzeroberflächenelemente
 
-Um direkt zur .NET Framework-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn das Element in der **Toolbox** hervorgehoben ist, oder klicken Sie auf das Element in der Komponentenleiste des Designers.
+Um direkt zur .NET-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn sich der Fokus in der **Toolbox** auf dem Element oder in der Leiste des Designers auf dem Komponentenelement befindet.
 
 |name|Beschreibung|
 |----------|-----------------|

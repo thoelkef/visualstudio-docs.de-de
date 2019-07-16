@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411408"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680978"
 ---
 # <a name="text-template-utility-methods"></a>Hilfsprogrammmethoden für Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "63411408"
 Es gibt mehrere Methoden, die immer verfügbar, Sie beim Schreiben von Code sind einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Textvorlage. Diese Methoden werden in definiert <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
-> Sie können auch andere Methoden und Diensten, die von der hostumgebung in einem regulären (nicht vorverarbeiteten Textvorlage) bereitgestellt. Z. B. Sie Dateipfade zu beheben, Fehler protokollieren und Abrufen von bereitgestellten Dienste können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und alle geladenen Pakete.  Weitere Informationen finden Sie unter [den Zugriff auf Visual Studio von einer Textvorlage](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Sie können auch andere Methoden und Diensten, die von der hostumgebung in einem regulären (nicht vorverarbeiteten Textvorlage) bereitgestellt. Z. B. Sie Dateipfade zu beheben, Fehler protokollieren und Abrufen von bereitgestellten Dienste können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und alle geladenen Pakete.  Weitere Informationen finden Sie unter [den Zugriff auf Visual Studio von einer Textvorlage](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Write-Methoden  
  Sie können die `Write()` und `WriteLine()` Methoden zum Anfügen von Text in einem standard-Codeblock, anstatt einen Codeblock Ausdruck. Die folgenden beiden Codeblöcke sind funktional äquivalent.  

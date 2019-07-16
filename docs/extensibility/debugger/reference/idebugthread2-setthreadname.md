@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::SetThreadName
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7b74af8b93bb3b92d4673f40c06f0d9745ffb79c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: aa21a4ff708c8f9cad04e7124f0e4d16378256dd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226187"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320038"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Legt den Namen des Threads.
@@ -40,9 +40,8 @@ int SetThreadName ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszName`\
-
- [in] Der Name des Threads.
+`pszName`\
+[in] Der Name des Threads.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

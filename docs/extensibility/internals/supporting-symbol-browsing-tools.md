@@ -13,20 +13,20 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428757"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746005"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Unterstützen von Tools zum Durchsuchen von Symbolen
-**Objektkatalog**, **Klassenansicht**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche** Tools bieten Symbol Suchfunktionen in Visual Studio. Diese Tools Ansichten der hierarchischen Struktur von Symbolen angezeigt, und die Beziehungen zwischen den Symbolen in der Struktur angezeigt. Die Symbole können Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente, die in verschiedenen Komponenten enthalten darstellen. Zu den Komponenten zählen Visual Studio-Projekte, externe [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] Komponenten und Typbibliotheken (TLB). Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).
+**Objektkatalog**, **Klassenansicht**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche** Tools bieten Symbol Suchfunktionen in Visual Studio. Diese Tools Ansichten der hierarchischen Struktur von Symbolen angezeigt, und die Beziehungen zwischen den Symbolen in der Struktur angezeigt. Die Symbole können Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente, die in verschiedenen Komponenten enthalten darstellen. Die Komponenten umfassen Visual Studio-Projekte, externe .NET Framework-Komponenten und Typbibliotheken (TLB). Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).
 
 ## <a name="symbol-browsing-libraries"></a>Symbol zum Durchsuchen von Bibliotheken
  Als eine Sprache-Implementierung können Sie die Funktionen von Visual Studio zum Durchsuchen von Symbolen durch Erstellen von Bibliotheken, die die Symbole in Ihren Komponenten nachverfolgen, und geben Sie die Liste der Symbole auf dem Visual Studio-Objekt-Manager über einen Satz von Schnittstellen erweitern. Eine Bibliothek wird beschrieben, durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> Schnittstelle. Der Objekt-Manager für Visual Studio reagiert auf Anforderungen für neue Daten über die Tools zum Durchsuchen von Symbolen durch Abrufen von Daten aus den Bibliotheken und Organisieren sie. Klicken sie anschließend füllt oder aktualisiert die Tools, mit der angeforderten Daten. Abrufen eines Verweises auf die Visual Studio-Objekt-Manager, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, übergeben die <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> -service-ID, die `GetService` Methode.

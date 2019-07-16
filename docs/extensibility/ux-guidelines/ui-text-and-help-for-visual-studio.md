@@ -3,17 +3,17 @@ title: Benutzeroberflächentext und-Hilfe für Visual Studio | Microsoft-Dokumen
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31fdc396d1dae372663abeb4c956bac0c9ef9b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb4066d9728dd633492b05e4cc872dbdd8a91b5c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961326"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823589"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächentext und-Hilfe für Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a> Benutzeroberflächentext und Terminologie
@@ -191,11 +191,11 @@ ms.locfileid: "62961326"
 
 - Einige Fragen sich Fragen, wenn Sie eine Fehlermeldung zu erstellen:
 
-    - Kann der Benutzer zur Lösung des Problems zu diesem Fehler allein herausfinden, wie?
+  - Kann der Benutzer zur Lösung des Problems zu diesem Fehler allein herausfinden, wie?
 
-    - Wird der Benutzer das gleiche Vokabular wie dieser Fehler verwendet?
+  - Wird der Benutzer das gleiche Vokabular wie dieser Fehler verwendet?
 
-    - Ist dieser Fehler mehrdeutig oder in mehreren Fällen freigegeben? Wenn dies der Fall ist, führen Sie wie Sie mit der Lösung Benutzerhandbuch, die sie benötigen?
+  - Ist dieser Fehler mehrdeutig oder in mehreren Fällen freigegeben? Wenn dies der Fall ist, führen Sie wie Sie mit der Lösung Benutzerhandbuch, die sie benötigen?
 
 #### <a name="build-errors"></a>Buildfehler
  Da Visual Studio ein Entwicklungstool für die Software ist, verfügen viele Komponenten eine Kompilierung konvertieren oder Codierung Schritt, um die Arbeit des Entwicklers in das binäre Format zu konvertieren. Diese Konvertierungen können Fehler verursachen, wenn der Compiler nicht ordnungsgemäß erstellte Dateien nicht verarbeiten kann oder Compileroptionen ordnungsgemäß festgelegt wurden nicht.

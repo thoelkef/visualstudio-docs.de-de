@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
+title: Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447018"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329000"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.
@@ -36,7 +36,7 @@ ms.locfileid: "63447018"
 
  Der Speicherort des Veröffentlichungsordners ist das Verzeichnis, in das Visual Studio die Projektmappendateien kopiert, z. B. Manifeste, Assemblys und andere Dateien aus dem Build. Sie benötigen Schreibzugriff auf dieses Verzeichnis.
 
- Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokale sein (*c:\foldername\publishfolder*), relativer (*veröffentlichen\\*), oder einen vollqualifizierten Speicherort (*\\\servername\foldername* oder http://<em>Servername/Ordnername</em>).
+ Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokale sein (*c:\foldername\publishfolder*), relativer (*veröffentlichen\\* ), oder einen vollqualifizierten Speicherort ( *\\\servername\foldername* oder http://<em>Servername/Ordnername</em>).
 
  Standardmäßig ist der Ort der Veröffentlichung *http://localhost/projectname/* Wenn IIS installiert ist, oder die *veröffentlichen\\*  Verzeichnis, wenn Sie nicht IIS installiert haben.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447018"
 
  Die URL des Installationsordners ist das Verzeichnis, über das der Endbenutzer die Anpassung installiert. Hierbei handelt es sich ebenfalls um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird. Als Pfad kann derselbe Pfad wie für den Speicherort des Veröffentlichungsordners verwendet werden, aber dies ist nicht unbedingt erforderlich.
 
- Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokale sein (*c:\foldername\publishfolder*), relativer (*veröffentlichen\\*), oder einen vollqualifizierten Speicherort (*\\\servername\foldername* oder http://<em>Servername/Ordnername</em>). Alle HTTP/HTTPS-Speicherorte müssen mit US-ASCII-Zeichen erstellt werden. Unicode-Zeichen werden nicht unterstützt.
+ Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokale sein (*c:\foldername\publishfolder*), relativer (*veröffentlichen\\* ), oder einen vollqualifizierten Speicherort ( *\\\servername\foldername* oder http://<em>Servername/Ordnername</em>). Alle HTTP/HTTPS-Speicherorte müssen mit US-ASCII-Zeichen erstellt werden. Unicode-Zeichen werden nicht unterstützt.
 
  Wenn der Installationspfad festgelegt ist, müssen sich die Anpassungsdateien an diesem Speicherort befinden, damit Benutzer die Anpassung installieren können. Der Speicherort sollte nur festgelegt werden, wenn Sie den endgültigen Speicherort für die Bereitstellung kennen.
 

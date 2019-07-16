@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f5ecf6f09efb64e521740b74151fc160112fe7a3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077601"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826045"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,27 +31,27 @@ Dies bedeutet, dass Sie auf Elemente wie Projektdateinamen nicht genauso zugreif
 
 Um Buildaufgaben auf dem Entwicklungscomputer zu aktivieren, installieren [Modellierungs-SDK für Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
-Wenn [Buildserver](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) Ausführungen auf einem Computer, auf dem Visual Studio nicht installiert ist, und kopieren Sie die folgenden Dateien auf den Buildcomputer von Ihrem Entwicklungscomputer. Ersetzen Sie "*" durch die aktuellste Versionsnummer.
+Wenn [Buildserver](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) Ausführungen auf einem Computer, auf dem Visual Studio nicht installiert ist, und kopieren Sie die folgenden Dateien auf den Buildcomputer von Ihrem Entwicklungscomputer. Ersetzen Sie "*" durch die aktuellste Versionsnummer.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    - Microsoft.TextTemplating.Build.Tasks.dll
+  - Microsoft.TextTemplating.Build.Tasks.dll
 
-    - Microsoft.TextTemplating.targets
+  - Microsoft.TextTemplating.targets
 
 - $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (mehrere Dateien)
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (mehrere Dateien)
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
 - $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>So bearbeiten Sie die Projektdatei
 

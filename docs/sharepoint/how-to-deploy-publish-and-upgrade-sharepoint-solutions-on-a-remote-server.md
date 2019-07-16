@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver | Microsoft-Dokumentation'
+title: Bereitstellen Sie, veröffentlichen Sie und aktualisieren Sie die SharePoint-Lösungen per Remotezugriff
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813942"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401443"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Vorgehensweise: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver
   Zusätzlich zur Bereitstellung von SharePoint-Lösungen auf dem lokalen System aus, können Sie die SharePoint-sandkastenlösungen Remotestandorten oder lokale SharePoint-Websites veröffentlichen. Die remote veröffentlichen Prozess Kopien der *.wsp* Datei mit dem SharePoint-Server installiert die Lösung und anschließend können Sie die Lösung zu aktivieren. Sie können auch eine Remoteinstallation der SharePoint-Lösung aktualisieren, nachdem Änderungen vorgenommen werden.
@@ -35,9 +35,9 @@ ms.locfileid: "62813942"
 
 4. Wählen Sie die **veröffentlichen** Schaltfläche.
 
-5. Melden Sie sich an den Remoteserver ist eine Benutzerauthentifizierung erforderlich.
+5. Melden Sie sich an den Remoteserver sich Wenn Benutzerauthentifizierung erforderlich ist.
 
-     Der Veröffentlichungsstatus angezeigt wird angezeigt, in der Visual Studio **Ausgabe** Fenster. Wenn der Vorgang abgeschlossen wird, wird die Projektmappe (*.wsp*) Datei auf dem SharePoint-Remoteserver installiert ist. Es muss jedoch weiterhin aktiviert werden, bevor sie in SharePoint verwendet werden kann.
+     Der Veröffentlichungsstatus angezeigt wird angezeigt, in der Visual Studio **Ausgabe** Fenster. Wenn der Vorgang abgeschlossen wird, wird die Projektmappe ( *.wsp*) Datei auf dem SharePoint-Remoteserver installiert ist. Es muss jedoch weiterhin aktiviert werden, bevor sie in SharePoint verwendet werden kann.
 
 6. Auf der **Lösungskatalog** Seite, wählen Sie die SharePoint-Anwendung aus, und wählen Sie dann im Menüband der **aktivieren** Schaltfläche.
 
@@ -62,7 +62,7 @@ ms.locfileid: "62813942"
 
 7. Wählen Sie die **veröffentlichen** Schaltfläche.
 
-8. Melden Sie sich an den Remoteserver ist eine Benutzerauthentifizierung erforderlich.
+8. Melden Sie sich an den Remoteserver sich Wenn Benutzerauthentifizierung erforderlich ist.
 
      Wenn Sie mit dem Remoteserver zuletzt angemeldet, möglicherweise Authentifizierung nicht erforderlich.
 

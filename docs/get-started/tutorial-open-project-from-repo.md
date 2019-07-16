@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944123"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402086"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Öffnen eines Projekts von einem Repository aus
 
@@ -177,9 +177,9 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 Wenn Sie mit dem Codieren mit Visual Studio loslegen möchten, können Sie sich die ausführlichen Informationen in einem der folgenden sprachspezifischen Tutorials ansehen:
 
-- [Visual Studio-Tutorials | **C#**](./csharp/index.yml)
+- [Visual Studio-Tutorials | **C#** ](./csharp/index.yml)
 - [Visual Studio-Tutorials | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio | **C++**](/cpp/get-started/)
+- [Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio | **Python**](/visualstudio/python/)
 - [Visual Studio | **JavaScript**, **TypeScript** und **Node.js**](/visualstudio/javascript/)
 

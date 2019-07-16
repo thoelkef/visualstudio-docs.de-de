@@ -9,17 +9,17 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d2a2311d0a8c1e9470b5053ac4f5f309a1a4d0c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcd32aef240732b67a2c490e3738c9b3d2921ffc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959984"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698050"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Aufrufen von Texttransformation in einer VS-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie schreiben eine [Visual Studio-Erweiterung](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) z. B. einen Menübefehl oder [Domain-Specific Languge](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), können Sie des Textvorlagendiensts transformieren. Sie benötigen den <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>-Dienst, der in <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> umgewandelt werden muss.  
+Wenn Sie schreiben eine [Visual Studio-Erweiterung](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) z. B. einen Menübefehl oder [Domain-Specific Languge](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), können Sie des Textvorlagendiensts transformieren. Sie benötigen den <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>-Dienst, der in <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> umgewandelt werden muss.  
   
 ## <a name="getting-the-text-templating-service"></a>Erhalt des Textvorlagendiensts  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d58c8986922c30192d6300a623a635b24c34ed5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822580"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705771"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Ermitteln des Standardnamespaces eines Projekts
-Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], wenn die `CustomToolNamespace` Eigenschaft wird festgelegt, auf die Eingabedatei, klicken Sie dann den Wert der `CustomToolNamespace` wird der Wert, der der Namespace-Standardparameter, die an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Methode. Andernfalls die `wszDefaultNamespace` übergebene Parameter `Generate` ist immer gleich den Stamm-Namespace. Weitere Informationen zu Namespaces finden Sie unter [Namespace Schlüsselwörter](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
+Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], wenn die `CustomToolNamespace` Eigenschaft wird festgelegt, auf die Eingabedatei, klicken Sie dann den Wert der `CustomToolNamespace` wird der Wert, der der Namespace-Standardparameter, die an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Methode. Andernfalls die `wszDefaultNamespace` übergebene Parameter `Generate` ist immer gleich den Stamm-Namespace. Weitere Informationen zu Namespaces finden Sie unter [Namespace Schlüsselwörter](https://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
   
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] werden ordnerbasierten Namespace verwendet. Der Namespace besteht, also den Stamm-Namespace sowie die Namen von Ordnern, die das benutzerdefinierte Tool enthält. Ordnernamen weisen in ein gültiger Bezeichner konvertiert, und Punkte trennen Sie alle Namen. Z. B. wenn die Eingabedatei FolderA\FolderB\FolderC\MyInput.txt ist und der Stamm-Namespace CL9 ist, klicken Sie dann der berechneten Standardnamespace wäre **CL9. FolderA.FolderB.FolderC**.  
   

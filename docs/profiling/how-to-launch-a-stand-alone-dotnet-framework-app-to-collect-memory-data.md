@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Starten einer eigenständigen .NET Framework-Anwendung mit dem Profiler zum Sammeln von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
+title: 'Profiler-Befehlszeile: Öffnen der .NET Framework-Client-App, Abrufen von Speicherdaten'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386062"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032950"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Starten einer eigenständigen .NET Framework-Anwendung mit dem Profiler zum Sammeln von Speicherdaten über die Befehlszeile
 In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools eigenständige .NET Framework-(Client-)Anwendungen gestartet und Speicherdaten erfasst werden.
@@ -42,31 +42,31 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - Mit der Option [/start](../profiling/start.md)**:sample** wird der Profiler initialisiert.
+   - Mit der Option [/start](../profiling/start.md) **:sample** wird der Profiler initialisiert.
 
-   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
+   - Die Option [/output](../profiling/output.md) **:** `OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.
 
-   | Option | Beschreibung |
+   | Option | BESCHREIBUNG |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
 
 3. Starten Sie die Zielanwendung. Typ:
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
-   - Die Option [/gc](../profiling/gc-vsperfcmd.md)**:** `Keyword` ist zum Sammeln von .NET Framework-Speicherdaten erforderlich. Die Schlüsselwortparameter geben an, ob Daten zur Speicherbelegung oder Daten zur Speicherbelegung und der Objektlebensdauer gesammelt werden sollen.
+   - Die Option [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` ist zum Sammeln von .NET Framework-Speicherdaten erforderlich. Die Schlüsselwortparameter geben an, ob Daten zur Speicherbelegung oder Daten zur Speicherbelegung und der Objektlebensdauer gesammelt werden sollen.
 
-     |Stichwort|Beschreibung|
+     |Stichwort|BESCHREIBUNG|
      |-------------|-----------------|
      |**Speicherbelegung**|Sammelt nur Daten zur Speicherbelegung.|
      |**Lebensdauer**|Es werden Daten zur Speicherbelegung und zur Objektlebensdauer gesammelt.|
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/launch** verwenden.
 
-   |Option|Beschreibung|
+   |Option|BESCHREIBUNG|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Gibt eine Zeichenfolge mit den Befehlszeilenargumenten an, die an die Zielanwendung übergeben werden sollen.|
    |[/console](../profiling/console.md)|Startet die Ziel-Befehlszeilenanwendung in einem separaten Fenster.|
@@ -80,10 +80,10 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
 - Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
-    |Option|Beschreibung|
+    |Option|BESCHREIBUNG|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand von `PID` (der Prozess-ID) angegeben ist. Mit **/detach** wird die Datensammlung für alle Prozesse beendet.|
 
 - Sie können auch die Option **VSPerfCmd.exe**[/mark](../profiling/mark.md) verwenden, um eine Profilmarkierung in die Datendatei einzufügen. Der Befehl **/mark** fügt einen Bezeichner, einen Zeitstempel und eine optionale benutzerdefinierte Textzeichenfolge hinzu. Markierungen können zum Filtern von Berichten verwendet werden.
@@ -97,7 +97,7 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
     - Schließen Sie die Zielanwendung.
 
-         - oder - 
+         Oder
 
     - Geben Sie **VSPerfCmd /detach** ein.
 

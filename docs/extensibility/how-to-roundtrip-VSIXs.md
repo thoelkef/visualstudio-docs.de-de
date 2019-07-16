@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862798"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826027"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Vorgehensweise: Machen Sie Erweiterungen kompatibel mit Visual Studio 2017 und Visual Studio 2015
 
@@ -29,7 +29,7 @@ Hier ist eine Übersicht über die Schritte, die Sie in diesem Dokument eine VSI
 1. Importieren Sie die richtige NuGet-Pakete.
 2. Aktualisieren Sie die Erweiterungsmanifest:
     * Installationsziel
-    * Vorraussetzungen
+    * Erforderliche Komponenten
 3. Aktualisieren Sie die CSProj:
     * Update `<MinimumVisualStudioVersion>`.
     * Hinzufügen der `<VsixType>` Eigenschaft.
@@ -51,14 +51,14 @@ Es wird dringend empfohlen, um das Upgrade mit Visual Studio 2015, anstelle von 
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Stellen Sie sicher, dass es ist kein Verweis auf Datei "Project.JSON"
 
-Weiter unten in diesem Dokument werden wir fügen Sie bedingte Import-Anweisungen in Ihre **csproj* Datei. Dies funktioniert nicht, wenn die NuGet-Verweise in gespeichert sind *"Project.JSON"*. Es wird daher empfohlen, verschieben Sie alle NuGet-Verweise auf die *"Packages.config"* Datei.
+Weiter unten in diesem Dokument werden wir fügen Sie bedingte Import-Anweisungen in Ihre **csproj* Datei. Dies funktioniert nicht, wenn die NuGet-Verweise in gespeichert sind *"Project.JSON"* . Es wird daher empfohlen, verschieben Sie alle NuGet-Verweise auf die *"Packages.config"* Datei.
 Wenn das Projekt enthält eine *"Project.JSON"* Datei:
 
-* Beachten Sie die Verweise in *"Project.JSON"*.
+* Beachten Sie die Verweise in *"Project.JSON"* .
 * Von der **Projektmappen-Explorer**, löschen Sie die *"Project.JSON"* Datei aus dem Projekt. Dies löscht die *"Project.JSON"* Datei, und entfernt sie aus dem Projekt.
 * Fügen Sie dem Projekt die NuGet-Verweise in sichern:
-    * Mit der rechten Maustaste auf die **Lösung** , und wählen Sie **NuGet-Pakete für Projektmappe verwalten**.
-    * Visual Studio erstellt automatisch die *"Packages.config"* -Datei für Sie.
+  * Mit der rechten Maustaste auf die **Lösung** , und wählen Sie **NuGet-Pakete für Projektmappe verwalten**.
+  * Visual Studio erstellt automatisch die *"Packages.config"* -Datei für Sie.
 
 > [!NOTE]
 > Wenn Ihr Projekt EnvDTE-Pakete enthalten, müssen sie möglicherweise hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Verweise** auswählen **Verweis hinzufügen** und den entsprechenden Verweis hinzugefügt haben. Mithilfe von NuGet-Pakete kann Fehler erstellen, bei dem Versuch, Ihr Projekt zu erstellen.
@@ -165,7 +165,7 @@ Es wird dringend empfohlen, um einen Verweis auf eine geänderte csproj geöffne
 
 * Fügen Sie zusätzliche bedingte Anweisungen, um die `<import>` Tags, die einen Verweis Microsoft.VSSDK.BuildTools verfügen. Fügen Sie `'$(VisualStudioVersion)' != '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in die Kopf- und Fußzeile der Csproj-Datei angezeigt.
 
-Zum Beispiel:
+Beispiel:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ Zum Beispiel:
 
 * Fügen Sie zusätzliche bedingte Anweisungen, um die `<import>` Tags, die eine Microsoft.VisualStudio.Sdk.BuildTasks.14.0 aufweisen. Fügen Sie `'$(VisualStudioVersion)' == '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in die Kopf- und Fußzeile der Csproj-Datei angezeigt.
 
-Zum Beispiel:
+Beispiel:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ Zum Beispiel:
 
 * Fügen Sie zusätzliche bedingte Anweisungen, um die `<Error>` Tags, die einen Verweis Microsoft.VSSDK.BuildTools verfügen. Zu diesem Zweck einfügen `'$(VisualStudioVersion)' != '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
 
-Zum Beispiel:
+Beispiel:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ Zum Beispiel:
 
 * Fügen Sie zusätzliche bedingte Anweisungen, um die `<Error>` Tags, die eine Microsoft.VisualStudio.Sdk.BuildTasks.14.0 aufweisen. Fügen Sie `'$(VisualStudioVersion)' == '14.0' And` am Anfang der bedingungsanweisung. Diese Anweisungen werden in der Fußzeile der Csproj-Datei angezeigt.
 
-Zum Beispiel:
+Beispiel:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

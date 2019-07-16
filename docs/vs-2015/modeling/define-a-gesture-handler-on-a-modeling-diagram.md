@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433154"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825928"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -280,36 +280,36 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
   
  Die Parameter dieser Methoden lauten wie folgt:  
   
-- `ShapeElement target`. Die Form oder das Diagramm, auf die bzw. das der Benutzer ein Element gezogen hat.  
+- `ShapeElement target` Die Form oder das Diagramm, auf die bzw. das der Benutzer ein Element gezogen hat.  
   
-     `ShapeElement` ist eine Klasse in der Implementierung, die den UML-Modellierungstools zugrunde liegt. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden dieser Klasse nicht direkt verwendet werden. Umschließen Sie stattdessen das Element in einer `IShape`, und klicken Sie dann mit den Methoden, die in beschriebenen [anzeigen ein UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-    - Abrufen einer `IShape`:  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - Abrufen des Modellelements, das das Ziel des Drag & Drop-Vorgangs ist:  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         Sie können das Element in einen spezifischeren Typ von Element umwandeln.  
-  
-    - Abrufen des UML-Modellspeichers, der das UML-Modell enthält:  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - So erhalten Sie Zugriff auf den Host und Dienstanbieter  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement` ist eine Klasse in der Implementierung, die den UML-Modellierungstools zugrunde liegt. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden dieser Klasse nicht direkt verwendet werden. Umschließen Sie stattdessen das Element in einer `IShape`, und klicken Sie dann mit den Methoden, die in beschriebenen [anzeigen ein UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md).  
+
+  - Abrufen einer `IShape`:  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - Abrufen des Modellelements, das das Ziel des Drag & Drop-Vorgangs ist:  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - Abrufen des UML-Modellspeichers, der das UML-Modell enthält:  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - So erhalten Sie Zugriff auf den Host und Dienstanbieter  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`. Dieser Parameter enthält die serialisierte Form des Quellobjekts eines Ziehvorgangs:  
   
@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.  
   
-    2. Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
+    2. Suchen Sie die Datei **Bin\\\*\\** _IhrProjekt_**VSIX**  
   
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   

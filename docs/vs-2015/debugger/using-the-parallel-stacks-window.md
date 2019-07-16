@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961141"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684207"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Verwenden des Fensters "Parallele Stapel"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die **parallele Stapel** Fenster eignet sich, beim Debuggen von Multithreadanwendungen. Die **Ansicht "Threads"** Aufruflisteninformationen für alle Threads in Ihrer Anwendung. Im Fenster können Sie zwischen Threads und Stapelrahmen in diesen Threads navigieren. In verwaltetem Code der **Aufgabenansicht** Aufruflisten von <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte. In nativem Code der **Aufgabenansicht** Aufruflisten von [Aufgabengruppen](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [parallele Algorithmen](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchrone Agents](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), und [einfache Aufgaben](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
+Die **parallele Stapel** Fenster eignet sich, beim Debuggen von Multithreadanwendungen. Die **Ansicht "Threads"** Aufruflisteninformationen für alle Threads in Ihrer Anwendung. Im Fenster können Sie zwischen Threads und Stapelrahmen in diesen Threads navigieren. In verwaltetem Code der **Aufgabenansicht** Aufruflisten von <xref:System.Threading.Tasks.Task?displayProperty=fullName> Objekte. In nativem Code der **Aufgabenansicht** Aufruflisten von [Aufgabengruppen](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [parallele Algorithmen](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchrone Agents](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), und [einfache Aufgaben](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Threadansicht  
  In der folgenden Abbildung wird ein Thread dargestellt, der vom Hauptthread zu A und zu B und anschließend zu externem Code gewechselt ist. Zwei andere Threads starteten in externem Code und wechselten zu A. Einer der Threads fuhr jedoch mit B und anschließend mit externem Code fort, während der andere Thread mit C und dann mit einer AnonymousMethod fortfuhr.  
@@ -121,7 +121,7 @@ Die **parallele Stapel** Fenster eignet sich, beim Debuggen von Multithreadanwen
  [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
- [Parallele Programmierung](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Parallele Programmierung](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Verwenden das Fenster "Aufgaben"](../debugger/using-the-tasks-window.md)   
  [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Aufgabenklasse](../extensibility/debugger/task-class-internal-members.md)

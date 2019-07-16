@@ -84,18 +84,18 @@ ms.locfileid: "63440375"
 
 |Excel|Word|
 |-----------|----------|
-|Excel-Arbeitsmappe (*XLSX*)<br /><br /> Excel-Arbeitsmappe mit Makros (*.xlsm*)<br /><br /> Binäre Excel-Arbeitsmappe (*.xlsb*)<br /><br /> Excel 97-2003-Arbeitsmappe (*xls*)<br /><br /> Excel-Vorlage (*.xltx*)<br /><br /> Excel-Vorlage mit Makros (*.xltm*)<br /><br /> Excel 97-2003-Vorlage (*.xlt*)|Word-Dokument (*".docx"*)<br /><br /> Word-Dokument mit aktivierten Makros (*.docm*)<br /><br /> Word 97-2003-Dokument (*.doc*)<br /><br /> Word-Vorlage (*.dotx*)<br /><br /> Word-Vorlage mit Makros (*dotm*)<br /><br /> Word 97-2003-Vorlage (*.dot*)|
+|Excel-Arbeitsmappe (*XLSX*)<br /><br /> Excel-Arbeitsmappe mit Makros ( *.xlsm*)<br /><br /> Binäre Excel-Arbeitsmappe ( *.xlsb*)<br /><br /> Excel 97-2003-Arbeitsmappe (*xls*)<br /><br /> Excel-Vorlage ( *.xltx*)<br /><br /> Excel-Vorlage mit Makros ( *.xltm*)<br /><br /> Excel 97-2003-Vorlage ( *.xlt*)|Word-Dokument ( *".docx"* )<br /><br /> Word-Dokument mit aktivierten Makros ( *.docm*)<br /><br /> Word 97-2003-Dokument ( *.doc*)<br /><br /> Word-Vorlage ( *.dotx*)<br /><br /> Word-Vorlage mit Makros (*dotm*)<br /><br /> Word 97-2003-Vorlage ( *.dot*)|
 
- Sie sollten Erweiterungen durch verwalteten Code nur für Dokumente in den unterstützten Formaten entwerfen. Andernfalls können bestimmte Ereignisse möglicherweise nicht ausgelöst werden, wenn das Dokument in der Anwendung geöffnet wird. Z. B. die <xref:Microsoft.Office.Tools.Excel.Workbook.Open> Ereignis nicht ausgelöst, wenn für die Verwendung von Erweiterungen durch verwalteten Code mit Arbeitsmappen, die in der Excel-XML-Arbeitsblattformat gespeichert oder in der Webseite (*.htm*; *.html*) Format.
+ Sie sollten Erweiterungen durch verwalteten Code nur für Dokumente in den unterstützten Formaten entwerfen. Andernfalls können bestimmte Ereignisse möglicherweise nicht ausgelöst werden, wenn das Dokument in der Anwendung geöffnet wird. Z. B. die <xref:Microsoft.Office.Tools.Excel.Workbook.Open> Ereignis nicht ausgelöst, wenn für die Verwendung von Erweiterungen durch verwalteten Code mit Arbeitsmappen, die in der Excel-XML-Arbeitsblattformat gespeichert oder in der Webseite ( *.htm*; *.html*) Format.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Unterstützung für Word-Dokumenten mit .xml-Dateinamenerweiterungen
  Mit Projektvorlagen auf Dokumentebene können Sie keine Projekte erstellen, die auf den folgenden Dateiformaten basieren:
 
-- Word-XML-Dokument (*\*Xml*).
+- Word-XML-Dokument ( *\*Xml*).
 
-- Word 2003 XML-Dokument (*\*Xml*).
+- Word 2003 XML-Dokument ( *\*Xml*).
 
-  Wenn Sie möchten, dass die Endbenutzer Anpassungen in diesen Dateiformaten verwenden, erstellen Sie eine Anpassung, die eines der unterstützten Dateiformate aus der Tabelle oben verwendet, und stellen Sie diese Anpassung bereit. Nach der Installation der anpassungs können Endbenutzer das Dokument im Word-XML-Dokument speichern (*\*Xml*) Format oder die Word 2003 XML-Dokument (*\*Xml*)-Format und die Anpassung wird weiterhin wie erwartet funktionieren.
+  Wenn Sie möchten, dass die Endbenutzer Anpassungen in diesen Dateiformaten verwenden, erstellen Sie eine Anpassung, die eines der unterstützten Dateiformate aus der Tabelle oben verwendet, und stellen Sie diese Anpassung bereit. Nach der Installation der anpassungs können Endbenutzer das Dokument im Word-XML-Dokument speichern ( *\*Xml*) Format oder die Word 2003 XML-Dokument ( *\*Xml*)-Format und die Anpassung wird weiterhin wie erwartet funktionieren.
 
 ## <a name="Components"></a> Komponenten von Anpassungen
  Die Hauptkomponenten einer Anpassung sind das Dokument und die Assembly. Es gibt zudem mehrere andere Komponenten, die beeinflussen, wie Microsoft Office-Anwendungen Anpassungen finden und laden.
@@ -125,7 +125,7 @@ ms.locfileid: "63440375"
 
 1. Die Microsoft Office-Anwendung prüft anhand der benutzerdefinierten Dokumenteigenschaften, ob dem Dokument Erweiterungen durch verwalteten Code zugeordnet sind. Weitere Informationen finden Sie unter [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md).
 
-2. Wenn Erweiterungen durch verwalteten Code sind, um die Anwendung lädt *VSTOEE.dll*, welche Auslastung *"VSTOLoader.dll"*. Hierbei handelt es sich um nicht verwaltete DLLs, die die Ladeprogrammkomponenten für Visual Studio 2010-Tools für Office-Laufzeit sind. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Wenn Erweiterungen durch verwalteten Code sind, um die Anwendung lädt *VSTOEE.dll*, welche Auslastung *"VSTOLoader.dll"* . Hierbei handelt es sich um nicht verwaltete DLLs, die die Ladeprogrammkomponenten für Visual Studio 2010-Tools für Office-Laufzeit sind. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 3. *"VSTOLoader.dll"* lädt die [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] und startet den verwalteten Teil der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 

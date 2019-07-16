@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Erstellen einer ASP.NET Core-Web-App mit Entity Framework und Visual Studio 2019'
+title: ASP.NET Core-Web-App mit Entity Framework und Visual Studio 2019
 titleSuffix: ''
 description: Informieren Sie sich vor dem Erstellen einer ASP.NET Core-Web-App zuerst anhand dieses Videotutorials und schrittweiser Anleitungen über das Installieren von Visual Studio-2019.
 ms.custom: get-started
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838942"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261724"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Erstellen Ihrer ersten ASP.NET Core-App mithilfe von Entity Framework mit Visual Studio 2019
 

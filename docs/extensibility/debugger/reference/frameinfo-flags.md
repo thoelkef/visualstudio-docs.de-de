@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54bb93fa6f88c02731691728bceacdd4a5fe2036
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 56990cf324c09764137b344f875322e80e613403
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694347"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350488"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Gibt die Informationen für ein Stack-Frame-Objekt abgerufen.
@@ -97,68 +100,99 @@ public enum enum_FRAMEINFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Member
-FIF_FUNCNAME initialisieren und Verwenden der `m_bstrFuncName` Feld.
+## <a name="fields"></a>Felder
+`FIF_FUNCNAME`\
+Initialisieren und Verwenden der `m_bstrFuncName` Feld.
 
-FIF_RETURNTYPE initialisieren und Verwenden der `m_bstrReturnType` Feld.
+`FIF_RETURNTYPE`\
+Initialisieren und Verwenden der `m_bstrReturnType` Feld.
 
-FIF_ARGS initialisieren und Verwenden der `m_bstrArgs` Feld.
+`FIF_ARGS`\
+Initialisieren und Verwenden der `m_bstrArgs` Feld.
 
-FIF_LANGUAGE initialisieren und Verwenden der `m_bstrLanguage` Feld.
+`FIF_LANGUAGE`\
+Initialisieren und Verwenden der `m_bstrLanguage` Feld.
 
-FIF_MODULE initialisieren und Verwenden der `m_bstrModule` Feld.
+`FIF_MODULE`\
+Initialisieren und Verwenden der `m_bstrModule` Feld.
 
-FIF_STACKRANGE initialisieren und Verwenden der `m_addrMin` und `m_addrMax` (Stapel-Bereich) Felder.
+`FIF_STACKRANGE`\
+Initialisieren und Verwenden der `m_addrMin` und `m_addrMax` (Stapel-Bereich) Felder.
 
-FIF_FRAME initialisieren und Verwenden der `m_pFrame` Feld.
+`FIF_FRAME`\
+Initialisieren und Verwenden der `m_pFrame` Feld.
 
-FIF_DEBUGINFO initialisieren und Verwenden der `m_fHasDebugInfo` Feld.
+`FIF_DEBUGINFO`\
+Initialisieren und Verwenden der `m_fHasDebugInfo` Feld.
 
-FIF_STALECODE initialisieren und Verwenden der `m_fStaleCode` Feld.
+`FIF_STALECODE`\
+Initialisieren und Verwenden der `m_fStaleCode` Feld.
 
-FIF_ANNOTATEDFRAME initialisieren und Verwenden der `m_fAnnotatedFrame` Feld.
+`FIF_ANNOTATEDFRAME`\
+Initialisieren und Verwenden der `m_fAnnotatedFrame` Feld.
 
-FIF_DEBUG_MODULEP initialisieren und Verwenden der `m_pModule` Feld.
+`FIF_DEBUG_MODULEP`\
+Initialisieren und Verwenden der `m_pModule` Feld.
 
-FIF_FUNCNAME_FORMAT formatiert den Namen der Funktion. Das Ergebnis wird zurückgegeben, der `m_bstrFunName` Feld und keine anderen Felder ausgefüllt wurden.
+`FIF_FUNCNAME_FORMAT`\
+Formatiert den Namen der Funktion. Das Ergebnis wird zurückgegeben, der `m_bstrFunName` Feld und keine anderen Felder ausgefüllt wurden.
 
-FIF_FUNCNAME_RETURNTYPE fügt den Rückgabetyp zu den `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_RETURNTYPE`\
+Fügt den Rückgabetyp zu den `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_ARGS fügt die Argumente für die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_ARGS`\
+Fügt die Argumente für die `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_LANGUAGE fügt die Sprache, die die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_LANGUAGE`\
+Die Sprache, fügt die `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_MODULE fügt den Modulnamen, um die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_MODULE`\
+Fügt den Modulnamen, um die `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_LINES fügt die Anzahl von Zeilen, die die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_LINES`\
+Fügt die Anzahl von Zeilen, die die `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_OFFSET hinzugefügt, um die `m_bstrFuncName` Feld den Offset in Bytes vom Anfang der Zeile, wenn `FIF_FUNCNAME_LINES` angegeben ist. Wenn `FIF_FUNCNAME_LINES` nicht angegeben ist, oder wenn Zeilennummern nicht verfügbar sind, fügt den Offset in Bytes vom Beginn der Funktion.
+`FIF_FUNCNAME_OFFSET`\
+Hinzugefügt, die `m_bstrFuncName` Feld den Offset in Bytes vom Anfang der Zeile, wenn `FIF_FUNCNAME_LINES` angegeben ist. Wenn `FIF_FUNCNAME_LINES` nicht angegeben ist, oder wenn Zeilennummern nicht verfügbar sind, fügt den Offset in Bytes vom Beginn der Funktion.
 
-FIF_FUNCNAME_ARGS_TYPES fügt den Typ jedes Arguments der Funktion, die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_ARGS_TYPES`\
+Fügt den Typ jedes Arguments der Funktion, die `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_ARGS_NAMES fügt den Namen der einzelnen Argumente der Funktion, die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_ARGS_NAMES`\
+Fügt den Namen der einzelnen Argumente der Funktion, die `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_ARGS_VALUES fügt den Wert der einzelnen Argumente der Funktion, die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_ARGS_VALUES`\
+Fügt den Wert der einzelnen Argumente der Funktion, die `m_bstrFuncName` Feld.
 
-FIF_FUNCNAME_ARGS_ALL fügt dem Typ, Name und Wert von allen Argumenten, die die `m_bstrFuncName` Feld.
+`FIF_FUNCNAME_ARGS_ALL`\
+Fügt dem Typ, Name und Wert von allen Argumenten, die die `m_bstrFuncName` Feld.
 
-FIF_ARGS_TYPES die Argumenttypen abgerufen und formatiert werden.
+`FIF_ARGS_TYPES`\
+Die Argumenttypen abgerufen und formatiert.
 
-FIF_ARGS_NAMES Argumentnamen abgerufen und formatiert werden.
+`FIF_ARGS_NAMES`\
+Die Argumentnamen abgerufen und formatiert.
 
-FIF_ARGS_VALUES die Argumentwerte abgerufen und formatiert werden.
+`FIF_ARGS_VALUES`\
+Die Argumentwerte abgerufen und formatiert.
 
-FIF_ARGS_ALL abrufen und Format der Typ, Name und Wert für alle Argumente.
+`FIF_ARGS_ALL`\
+Abzurufen Sie, und formatieren Sie den Typ, Name und Wert für alle Argumente.
 
-FIF_ARGS_NOFORMAT gibt an, die die Argumente sind nicht formatiert (z. B. nicht hinzufügen, öffnende und schließende Klammern um Argumentliste keine Trennzeichen zwischen Argumenten hinzufügen).
+`FIF_ARGS_NOFORMAT`\
+Gibt an, dass die Argumente sind nicht formatiert (z. B. nicht hinzufügen, öffnende und schließende Klammern um Argumentliste keine Trennzeichen zwischen Argumenten hinzufügen).
 
-FIF_ARGS_NO_FUNC_EVAL gibt an, die Auswertung von (Eigenschaften) funktionieren sollte nicht verwendet werden, wenn Argumentwerte abrufen.
+`FIF_ARGS_NO_FUNC_EVAL`\
+Gibt an, dass es sich bei funktionsauswertung (Eigenschaft) beim Abrufen der Werte für das Argument nicht verwendet werden soll.
 
-FIF_FILTER_NON_USER_CODE Debug-Engine wird nicht benutzerseitiger Codeframes zu filtern, damit sie nicht eingeschlossen werden.
+`FIF_FILTER_NON_USER_CODE`\
+Die Debug-Engine wird nicht benutzerseitiger Codeframes zu filtern, damit sie nicht eingeschlossen werden.
 
-FIF_ARGS_NO_TOSTRING dürfen keine `ToString()` Funktion Auswertung oder formatieren, wenn Argumente der Funktion zurückgegeben.
+`FIF_ARGS_NO_TOSTRING`\
+Erlauben Sie keine `ToString()` Funktion Auswertung oder formatieren, wenn Argumente der Funktion zurückgegeben.
 
-FIF_DESIGN_TIME_EXPR_EVAL-Frame-Informationen sollten aus der gehosteten Anwendungsdomäne statt des hosting-Prozesses abgerufen werden.
+`FIF_DESIGN_TIME_EXPR_EVAL`\
+Frame-Informationen sollten aus der gehosteten Anwendungsdomäne statt des hosting-Prozesses abgerufen werden.
 
 ## <a name="remarks"></a>Hinweise
 Diese Flags werden an übergeben die [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) und [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) Methoden, um anzugeben, welche Felder sind, initialisiert werden, in der [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Strukturen.

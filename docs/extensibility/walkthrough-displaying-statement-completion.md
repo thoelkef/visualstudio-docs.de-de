@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f117209c8e1d57c64ab53df608fe55ae27f0cff0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965192"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312409"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren die Bezeichner für die Sie die Vervollständigung bereitstellen möchten, und klicken Sie dann auszulösen eine vervollständigungssitzung implementieren. Sie können Anweisungsvervollständigung im Kontext von einem Sprachdienst zu definieren, Definieren eigener Dateinamenerweiterung und Content-Type und -Vervollständigung für nur diesen Typ dann anzeigen. Oder Sie können die Vervollständigung für einem vorhandenen Inhaltstyp auslösen, z. B. "nur-Text". In dieser exemplarischen Vorgehensweise zeigt, wie Anweisungsvervollständigung für den Inhaltstyp "nur-Text", den Inhaltstyp der Textdateien handelt, ausgelöst wird. Der Inhaltstyp "Text" ist der Vorgänger aller anderen Inhaltstypen, einschließlich Code und XML-Dateien.

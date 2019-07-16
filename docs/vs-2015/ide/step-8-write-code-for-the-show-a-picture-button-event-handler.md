@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428609"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679330"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual C#-Code
   
     2. Das **IntelliSense**-Fenster wird geöffnet und zeigt **openFileDialog1** an. Wählen Sie die TAB-TASTE, um sie auszuwählen. (In Visual Basic beginnt der Text mit einem Großbuchstaben, daher wird **OpenFileDialog1** angezeigt. Stellen Sie sicher, dass **OpenFileDialog1** ausgewählt ist.)  
   
-         Weitere Informationen über `OpenFileDialog` finden Sie unter [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
+         Weitere Informationen über `OpenFileDialog` finden Sie unter [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
   
     3. Geben Sie einen Punkt (`.`) ein (viele Programmierer nennen dies einen „Dot“). Da Sie direkt nach **openFileDialog1** einen Punkt eingegeben haben, wird ein **IntelliSense**-Fenster geöffnet, das alle Eigenschaften und Methoden der **OpenFileDialog**-Komponente enthält. Dies sind die gleichen Eigenschaften, die im Fenster **Eigenschaften** angezeigt werden, wenn Sie sie im Windows Forms-Designer auswählen. Sie können auch Methoden auswählen, die Komponenten veranlassen, bestimmte Aufgaben auszuführen (z. B. Öffnen eines Dialogfelds).  
   
@@ -67,7 +67,7 @@ Ereignissymbol
   
     4. Beginnen Sie mit der Eingabe von `ShowDialog` (die Großschreibung ist in IntelliSense nicht relevant). Die `ShowDialog()`-Methode zeigt das Dialogfeld **Datei öffnen** an. Drücken Sie die TAB-TASTE, nachdem **ShowDialog** im Fenster hervorgehoben wurde. Sie können "ShowDialog" auch markieren und F1 auswählen, um dazu Hilfe abzurufen.  
   
-         Weitere Informationen zur `ShowDialog()`-Methode finden Sie unter [ShowDialog-Methode](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
+         Weitere Informationen zur `ShowDialog()`-Methode finden Sie unter [ShowDialog-Methode](https://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
     5. Wenn Sie für ein Steuerelement oder eine Komponente eine Methode verwenden (wird als *Aufrufen einer Methode* bezeichnet), müssen Sie Klammern hinzufügen. Geben Sie also in `ShowDialog` direkt nach dem „g“ eine öffnende und eine schließende Klammer ein: `()`. Das sollte nun folgendermaßen aussehen: „openFileDialog1.ShowDialog()“.  
   
@@ -83,7 +83,7 @@ Ereignissymbol
   
     8. Geben Sie einen Punkt ein, um das **IntelliSense**-Fenster für den DialogResult-Wert zu öffnen. Geben Sie den Buchstaben `O` ein, und drücken Sie die TAB-TASTE, um **OK** einzufügen.  
   
-         Weitere Informationen über `DialogResult` finden Sie unter [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
+         Weitere Informationen über `DialogResult` finden Sie unter [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
         > Die erste Codezeile sollte vollständig sein. Für Visual C# sollte sie wie folgt aussehen.  

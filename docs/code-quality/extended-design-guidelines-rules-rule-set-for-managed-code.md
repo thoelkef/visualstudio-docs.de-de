@@ -8,19 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816610"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975903"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
+
 Der Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien Erweitert auf die grundlegenden Regeln für Entwurfsrichtlinien, die Fehler bezüglich Verwendbarkeit und wartbarkeit zu maximieren, die gemeldet werden. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz Wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie höchste Standards für das Schreiben von Code, der leicht zu warten ist erzwingen möchten.
 
- Die erweiterten Entwurfsrichtlinienregeln umfassen alle von der Microsoft grundlegenden Regeln für Entwurfsrichtlinien. Die grundlegenden Regeln für Entwurfsrichtlinien umfassen alle Microsoft-Mindestregeln. Weitere Informationen finden Sie unter [Regelsatz einfachen Entwurfsrichtlinienregeln für verwalteten Code](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) und [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Die erweiterten Entwurfsrichtlinienregeln umfassen alle von der Microsoft grundlegenden Regeln für Entwurfsrichtlinien. Die grundlegenden Regeln für Entwurfsrichtlinien umfassen alle Microsoft-Mindestregeln. Weitere Informationen finden Sie unter [Regelsatz einfachen Entwurfsrichtlinienregeln für verwalteten Code](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) und [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- Die folgende Tabelle beschreibt alle Regeln im Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien.
+Die folgende Tabelle beschreibt alle Regeln im Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien.
 
 |Regel|Beschreibung|
 |----------|-----------------|

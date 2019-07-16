@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ed287f2d90e1ee92c7e0fd4ae685fbb9f38854f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350581"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Gibt die Struktur der Haltepunktposition Auflösung.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Member
-`bpType` Ein Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, der angibt, wie zum Interpretieren der `bpResLocation` Union oder `unionmemberX` Member.
+`bpType`\
+Ein Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, der angibt, wie zum Interpretieren der `bpResLocation` Union oder `unionmemberX` Member.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ nur] Enthält die [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) Struktur, wenn `bpType`  =  `BPT_CODE`.
 
- [C++ nur] Enthält die [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) Struktur, wenn `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ nur] Enthält die [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) Struktur, wenn `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ nur] Ein Platzhalter.
 
- [C++ nur] Enthält die [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) Struktur, wenn `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
- [C++ nur] Ein Platzhalter.
+`unionmember3`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
-`unionmember1`
-
- [C# nur] Siehe Hinweise zum interpretieren.
-
-`unionmember2`
-
- [C# nur] Siehe Hinweise zum interpretieren.
-
-`unionmember3`
-
- [C# nur] Siehe Hinweise zum interpretieren.
-
-`unionmember4`
-
- [C# nur] Siehe Hinweise zum interpretieren.
+`unionmember4`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur ist ein Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) und [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Strukturen.

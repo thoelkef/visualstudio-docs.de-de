@@ -3,18 +3,18 @@ title: Erstellen einer benutzerdefinierten Startseite | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336678"
 ---
 # <a name="creating-a-custom-start-page"></a>Erstellen einer benutzerdefinierten Startseite
 
@@ -24,7 +24,7 @@ Sie können eine benutzerdefinierte Startseite erstellen, anhand der Schritte in
 
 Stellen Sie zunächst eine leere Startseite durch das Erstellen einer *XAML* -Datei mit einem Tag-Struktur, die Visual Studio erkennt. Anschließend fügen Sie Markup und CodeBehind zu erzeugen, die Darstellung und Funktionalität, die Sie möchten.
 
-1. Erstellen eines neuen Projekts vom Typ **WPF-Anwendung** (**Visual C#-** > **Windows Desktop**).
+1. Erstellen eines neuen Projekts vom Typ **WPF-Anwendung** (**Visual C#-**  > **Windows Desktop**).
 
 2. Fügen Sie einen Verweis auf `Microsoft.VisualStudio.Shell.14.0` hinzu.
 

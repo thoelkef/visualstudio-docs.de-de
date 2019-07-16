@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440944"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825784"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Verwalten von Modellen und Diagrammen unter Versionskontrolle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagrammen, einschließlich Code Maps (DGML-Dateien), mithilfe von [Team Foundation-Versionskontrolle oder Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)– entweder mit lokalem Team Foundation Server oder in der Cloud mit Visual Studio Team Services.  
+Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagrammen, einschließlich Code Maps (DGML-Dateien), mithilfe von [Team Foundation-Versionskontrolle oder Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)– entweder mit lokalem Team Foundation Server oder in der Cloud mit Visual Studio Team Services.  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -37,9 +37,9 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
   
 - Jedes Diagramm wird in zwei Dateien gespeichert. Beispiel für ein Klassendiagramm:  
   
-    - **DiagramName.classdiagram** – Wenn diese Datei gelöscht wird oder beschädigt ist, geht das Diagramm verloren. Die im Diagramm angezeigten Klassen und Zuordnungen bleiben jedoch im Modell erhalten und werden im UML-Modell-Explorer angezeigt.  
-  
-    - **DiagramName.classdiagram.layout** – Wenn diese Datei gelöscht wird, werden die Formen weiterhin im Diagramm angezeigt, aber ihre Größen und Positionen gehen verloren. Jede Layoutdatei ist einer Diagrammdatei untergeordnet. Um diese anzuzeigen, klicken Sie im Projektmappen-Explorer neben der Diagrammdatei auf [+].  
+  - **DiagramName.classdiagram** – Wenn diese Datei gelöscht wird oder beschädigt ist, geht das Diagramm verloren. Die im Diagramm angezeigten Klassen und Zuordnungen bleiben jedoch im Modell erhalten und werden im UML-Modell-Explorer angezeigt.  
+
+  - **DiagramName.classdiagram.layout** – Wenn diese Datei gelöscht wird, werden die Formen weiterhin im Diagramm angezeigt, aber ihre Größen und Positionen gehen verloren. Jede Layoutdatei ist einer Diagrammdatei untergeordnet. Um diese anzuzeigen, klicken Sie im Projektmappen-Explorer neben der Diagrammdatei auf [+].  
   
 > [!NOTE]
 > Es ist wichtig, die Konsistenz zwischen den Dateien beizubehalten. Wenn Sie z. B. die Quellcodeverwaltung verwenden, um Änderungen in einer UML-Datei zurückzusetzen, sollten Sie die entsprechenden Änderungen in den *DIAGRAM- und LAYOUT-Dateien gleichzeitig zurücksetzen. Elemente im dargestellt ein. \*Diagrammdatei verloren, wenn sie nicht auch in einem UML-Datei dargestellt werden.  
@@ -55,9 +55,9 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
   
 - So stellen Sie sicher, dass Sie nur das Paket ändern, an dem Sie arbeiten:  
   
-    - Legen Sie die **LinkedPackage** -Eigenschaft einer UML-Klasse, einer UML-Komponente oder eines UML-Anwendungsfalldiagramms fest.  
-  
-    - Ziehen Sie im UML-Modell-Explorer eine Aktivität oder Interaktion in ein Paket, sobald Sie es erstellt haben. Dieses Element wird im UML-Modell-Explorer angezeigt, wenn Sie im Aktivitäts- oder Sequenzdiagramm den ersten Knoten erstellen.  
+  - Legen Sie die **LinkedPackage** -Eigenschaft einer UML-Klasse, einer UML-Komponente oder eines UML-Anwendungsfalldiagramms fest.  
+
+  - Ziehen Sie im UML-Modell-Explorer eine Aktivität oder Interaktion in ein Paket, sobald Sie es erstellt haben. Dieses Element wird im UML-Modell-Explorer angezeigt, wenn Sie im Aktivitäts- oder Sequenzdiagramm den ersten Knoten erstellen.  
   
 - Benennen Sie als Hilfe beim Nachverfolgen der Pakete die Paketdateien um, um die tatsächlichen Paketnamen widerzuspiegeln.  
   
@@ -77,7 +77,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
   
 - Ändern der Eigenschaften von Beziehungen, die über Paketbegrenzungen hinweg gelten  
   
-- Informationen zu Auschecksperren finden Sie unter [Auschecken und Bearbeiten von Dateien](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Informationen zu Auschecksperren finden Sie unter [Auschecken und Bearbeiten von Dateien](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>So verschieben Sie eine Diagrammdatei in einen oder aus einem Projektordner  
   

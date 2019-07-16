@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056b7efc01b9536184c3e443156e27e328bdd2b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: cf8e2958f55ca13ab050302a24ad9e5ae185d81a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353091"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Verwendet zum Festlegen von datenbreakpoints, die auf eine Zeichenfolge basieren, die der Benutzer aus der integrierten Entwicklungsumgebung (IDE) eingeben können.
@@ -34,13 +36,17 @@ typedef struct _BP_LOCATION_DATA_STRING {
 ```
 
 ## <a name="members"></a>Member
-`pThread` Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, an dem der Haltepunkt wird.
+`pThread`\
+Die [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, an dem der Haltepunkt wird.
 
-`bstrContext` Der Kontext der der Haltepunkt im Code, in der Regel eine Methode oder Funktion Namen wie für eine Aufrufliste.
+`bstrContext`\
+Der Kontext der der Haltepunkt im Code, in der Regel eine Methode oder Funktion Namen wie für eine Aufrufliste.
 
-`bstrDataExpr` Die Zeichenfolge gibt der Benutzer, um den Haltepunkt festzulegen.
+`bstrDataExpr`\
+Die Zeichenfolge gibt der Benutzer, um den Haltepunkt festzulegen.
 
-`dwNumElements` Die Anzahl der Elemente in der Datenzeichenfolge, die in der der Breakpoint auftritt.
+`dwNumElements`\
+Die Anzahl der Elemente in der Datenzeichenfolge, die in der der Breakpoint auftritt.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.

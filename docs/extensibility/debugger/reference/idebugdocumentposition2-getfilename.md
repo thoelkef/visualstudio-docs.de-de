@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc5e6ef5317e24e53215dad8f32bc95ee400762
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 478f259d111e19df988c76733d1bb52655adab2c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921356"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326532"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Ruft den Dateinamen der Quelldatei, die die Dokumentposition enthält.
@@ -36,10 +39,9 @@ int GetFileName( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pbstrFileName`
-
- [out] Gibt den Dateinamen der Quelldatei zurück.
+## <a name="parameters"></a>Parameter
+`pbstrFileName`\
+[out] Gibt den Dateinamen der Quelldatei zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

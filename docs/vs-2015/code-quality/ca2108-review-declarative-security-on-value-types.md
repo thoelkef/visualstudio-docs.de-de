@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: f6a17bf57f00923cfd31bd477f211ba66169672a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959424"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687369"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Deklarative Sicherheit auf Werttypen überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58959424"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Werttyp wird geschützt, indem eine [Daten und Modellierung](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) oder [Verknüpfungsaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
+ Ein öffentlicher oder geschützter Werttyp wird geschützt, indem eine [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) oder [Verknüpfungsaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Werttypen werden zugeordnet und durch die standardmäßige Konstruktoren initialisiert werden, bevor andere Konstruktoren ausgeführt. Wenn ein Werttyp wird durch einen Demand oder LinkDemand geschützt, und der Aufrufer verfügt nicht über die Berechtigungen, die die sicherheitsüberprüfung, die keinen Konstruktor außer erfüllen standardmäßig fehl, und eine Sicherheitsausnahme ausgelöst. Der Werttyp wird nicht freigegeben. Es bleibt im Zustand "" festlegen, indem die Standard-Konstruktor. Führen Sie Sie nicht davon gehen Sie aus, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, verfügt über die Berechtigung zum Erstellen oder die Instanz zugreifen.
@@ -56,8 +56,8 @@ ms.locfileid: "58959424"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Benutzerdefinierte Struktur-Konstruktor: Fehler bei Anforderung.**
+ **Benutzerdefinierte Struktur-Konstruktor: Fehler bei Anforderung.** 
 **Neue Werte SecuredTypeStructure 100 100**
 **neue Werte SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Siehe auch
- [Linkaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Linkaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - newsgroups, Visual Studio SDK support
 - Web sites, Visual Studio SDK support
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ffe939e2f8b8470b89ff1e8837e5a074dc321ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432433"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338364"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Unterstützung für das Visual Studio SDK
 Zahlreiche Optionen sind verfügbar für Kunden, die Fragen dazu, wie Sie die integrierte Entwicklungsumgebung (IDE) von Visual Studio zu erweitern.
@@ -45,7 +45,7 @@ Open-Source-Beispiele für Visual Studio SDK-Erweiterungen finden Sie auf GitHub
 ## <a name="included-support"></a>Unterstützung für enthalten
 
 ### <a name="visual-studio-product-support"></a>Produktsupport für Visual Studio
- Unterstützung ist im Lieferumfang der Kauf von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Produkte. Weitere Informationen finden Sie unter [Support für Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft bietet ein dediziertes Support-Team zur Beantwortung von Fragen zu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterbarkeit.
+ Unterstützung ist im Lieferumfang der Kauf von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Produkte. Weitere Informationen finden Sie unter [Support für Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft bietet ein dediziertes Support-Team zur Beantwortung von Fragen zu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterbarkeit.
 
 ### <a name="msdn-subscription-support"></a>Support für MSDN-Abonnements
  Pakete für MSDN-Abonnement können auch Support enthalten. Weitere Informationen finden Sie unter [Support für MSDN-Abonnenten](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Informationen über einzelne Support-Anfragen finden Sie unter [einzelne Support
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sprechen Sie mit uns](../ide/talk-to-us.md)
+- [Sprechen Sie mit uns](../ide/feedback-options.md)

@@ -1,5 +1,5 @@
 ---
-title: FullClassName-Element (Erweiterung für Visual Studio-Vorlagen-Assistenten) | Microsoft-Dokumentation
+title: FullClassName-Element (assistentenerweiterung für Visual Studio-Vorlage)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028b936cafbae60a0f58a9579a64041955632e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b7e480944e8f5519db1c9cfd123c07a0cf6208
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342627"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName-Element (assistentenerweiterung der Visual Studio-Vorlagen)
 Der vollqualifizierte Name der Klasse, die implementiert die `IWizard` Schnittstelle.

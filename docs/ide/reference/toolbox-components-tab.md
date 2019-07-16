@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944944"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747749"
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
 
-Zeigt die Komponenten an, die Sie zu Visual Basic- und C#-Designern für Windows Forms hinzufügen können. Zusätzlich zu den .NET Framework-Komponenten, die in Visual Studio enthalten sind (z.B. die Komponenten <xref:System.Messaging.MessageQueue> und <xref:System.Diagnostics.EventLog>), können Sie eigene Komponenten oder Drittanbieterkomponenten zu dieser Registerkarte hinzufügen.
+Zeigt die Komponenten an, die Sie zu Visual Basic- und C#-Designern für Windows Forms hinzufügen können. Zusätzlich zu den .NET-Komponenten, die in Visual Studio enthalten sind (z.B. die Komponenten <xref:System.Messaging.MessageQueue> und <xref:System.Diagnostics.EventLog>), können Sie eigene Komponenten oder Drittanbieterkomponenten zu dieser Registerkarte hinzufügen.
 
 Öffnen Sie einen Windows Forms-Designer, um diese Registerkarte anzuzeigen. Klicken Sie auf **Ansicht** > **Toolbox**. Wählen Sie in der **Toolbox** die Registerkarte **Komponenten** aus.
 

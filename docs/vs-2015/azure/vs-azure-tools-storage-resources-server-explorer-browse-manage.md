@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963058"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624153"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
@@ -96,7 +96,7 @@ Da es sich bei Ordnern in Blobcontainern um virtuelle Ordner handelt, ist es nic
 
 Sie können die angezeigten Blobs filtern, indem Sie ein gemeinsames Präfix angeben.
 
-Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** (**!**) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
+Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** ( **!** ) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
 
 ![Filtertextfeld](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -185,7 +185,7 @@ Die Tabelle ist in Entitäten (Anzeige in Zeilen) und Eigenschaften (Anzeige in 
 
 Öffnen Sie im Tabellen-Designer das Kontextmenü für eine Entität (eine einzelne Zeile) oder eine Eigenschaft (eine einzelne Zelle), und wählen Sie dann **Bearbeiten** aus.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Hinzufügen oder Bearbeiten einer Tabellenentität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Entitäten in einer einzelnen Tabelle müssen nicht denselben Eigenschaftensatz (Spalten) aufweisen. Beachten Sie beim Anzeigen und Bearbeiten von Tabellendaten folgende Einschränkungen:
 

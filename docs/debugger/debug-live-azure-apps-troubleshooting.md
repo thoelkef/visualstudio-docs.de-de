@@ -1,7 +1,7 @@
 ---
 title: Problembehandlung beim Debuggen von Momentaufnahmen | Microsoft-Dokumentation
-ms.custom: seodec18
-ms.date: 11/07/2018
+ms.custom: ''
+ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -11,16 +11,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3c66ba4a5031326ec288d3a5f2f3c4851d17ca6
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857761"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559763"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
-Wenn die in diesem Artikel beschriebenen Schritte Ihr Problem nicht lösen, wenden Sie sich an snaphelp@microsoft.com.
+Die in diesem Artikel beschriebenen Schritte das Problem nicht beheben, suchen Sie nach dem Problem auf [Entwicklercommunity](https://developercommunity.visualstudio.com/spaces/8/index.html) oder ein neues Problem melden, durch Auswahl **Hilfe** > **Feedback senden**   >  **Melden eines Problems** in Visual Studio.
+
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: Tritt ein HTTP-Status-Code-Fehler auf "Snapshot Debugger anfügen"
+
+Wenn Sie den folgenden Fehler in finden Sie unter den **Ausgabe** Fenster während des Versuchs, fügen Sie es möglicherweise ein bekanntes Problem mit dem unten aufgeführten. Wiederholen Sie die vorgeschlagenen Lösungen aus, und wenn das Problem weiterhin bestehen, wenden Sie sich an der vorherigen alias.
+
+`[TIMESTAMP] Error --- Unable to Start Snapshot Debugger - Attach Snapshot Debugger failed: System.Net.WebException: The remote server returned an error: (###) XXXXXX`
+
+### <a name="401-unauthorized"></a>(401) nicht autorisiert
+
+Dieser Fehler weist darauf hin, dass der REST-Aufruf von Visual Studio für Azure verwendet einen ungültigen Anmeldeinformationen ausgestellt. Ein bekanntes Problem mit dem Azure Active Directory leicht-OAuth-Modul kann diesen Fehler generieren.
+
+Führen Sie diese Schritte aus:
+
+* Stellen Sie sicher, dass es sich bei Ihrem personalisierungskonto Visual Studio verfügt über Berechtigungen für die Azure-Abonnement und Ressourcen, die Sie zum Anfügen. Eine schnelle Möglichkeit, die dadurch bestimmt wird überprüft, ob die Ressource verfügbar ist, klicken Sie im Dialogfeld aus **Debuggen** > **Momentaufnahmedebugger anfügen...**   >  **Azure-Ressource** > **wählen Sie vorhandene**, oder klicken Sie im Cloud-Explorer.
+* Wenn dieser Fehler auftritt weiterhin, gehen Sie die Feedbackkanäle, die am Anfang dieses Artikels beschrieben.
+
+### <a name="403-forbidden"></a>(403) Forbidden
+
+Dieser Fehler weist darauf hin, dass die Berechtigung verweigert wird. Dies kann durch viele andere Probleme verursacht werden.
+
+Führen Sie diese Schritte aus:
+
+* Stellen Sie sicher, dass Ihr Visual Studio-Konto ein gültiges Azure-Abonnement mit den erforderlichen Berechtigungen für Role-Based Access Control (RBAC) für die Ressource verfügt. Für App Service, überprüfen Sie, ob Sie berechtigt, [Abfrage](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) App Service-Plan Hosten Ihrer app.
+* Stellen Sie sicher, dass der Zeitstempel des Client-Computer richtig und aktuell ist. Server mit Zeitstempeln aus mehr als 15 Minuten der Zeitstempel der Anforderung in der Regel erstellen, diesen Fehler.
+* Wenn dieser Fehler auftritt weiterhin, gehen Sie die Feedbackkanäle, die am Anfang dieses Artikels beschrieben.
+
+### <a name="404-not-found"></a>(404) nicht gefunden.
+
+Dieser Fehler weist darauf hin, dass die Website auf dem Server nicht gefunden werden.
+
+Führen Sie diese Schritte aus:
+
+* Stellen Sie sicher, dass Sie eine Website bereitgestellt, und klicken Sie auf die App Service-Ressource, der Sie zum Anfügen, ausgeführt haben.
+* Stellen Sie sicher, dass die Site unter https://\<Ressource\>. azurewebsites.net
+* Wenn dieser Fehler auftritt weiterhin, gehen Sie die Feedbackkanäle, die am Anfang dieses Artikels beschrieben.
+
+### <a name="406-not-acceptable"></a>(406) nicht akzeptabel
+
+Dieser Fehler weist darauf hin, dass der Server nicht in den Typ an, legen Sie in der Accept-Header der Anforderung zu reagieren ist.
+
+Führen Sie diese Schritte aus:
+
+* Stellen Sie sicher, dass Ihre Website unter https:// ist\<Ressource\>. azurewebsites.net
+* Stellen Sie sicher, dass Ihre Website nicht für neue Instanzen migriert wurden. Snapshot-Debugger verwendet das Konzept der ARRAffinity für das Weiterleiten von Anforderungen an bestimmte Instanzen, die diesen Fehler gelegentlich erzeugen können.
+* Wenn dieser Fehler auftritt weiterhin, gehen Sie die Feedbackkanäle, die am Anfang dieses Artikels beschrieben.
+
+### <a name="409-conflict"></a>(409) Konflikt...
+
+Dieser Fehler weist darauf hin, dass die Anforderung mit dem aktuellen Serverstatus in Konflikt steht.
+
+Dies ist ein bekanntes Problem, das auftritt, wenn ein Benutzer versucht, Debugger für Momentaufnahmen für eine App Service anzufügen, die Application Insights aktiviert hat. Application Insights wird die App-Einstellungen mit einem unterschiedlicher Groß-/Kleinschreibung als Visual Studio dieses Problem verursachen.
+
+::: moniker range=">= vs-2019"
+Wir haben dies in Visual Studio-2019 behoben.
+::: moniker-end
+
+Führen Sie diese Schritte aus:
+
+::: moniker range="vs-2017"
+
+* Überprüfen Sie im Azure-Portal, dass die App-Einstellungen des Momentaufnahmedebuggers (SNAPSHOTDEBUGGER_EXTENSION_VERSION) und InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) in Großbuchstaben angegeben werden. Falls nicht, aktualisieren Sie die Einstellungen manuell die Site Neustart erzwungen.
+::: moniker-end
+* Wenn dieser Fehler auftritt weiterhin, gehen Sie die Feedbackkanäle, die am Anfang dieses Artikels beschrieben.
+
+### <a name="500-internal-server-error"></a>Interner-Serverfehler (500)
+
+Dieser Fehler weist darauf hin, dass der Standort vollständig heruntergefahren oder der Server die Anforderung kann nicht behandelt wird. Snapshot Debugger nur Funktionen zum Ausführen von Anwendungen. [Application Insights-Momentaufnahmedebugger](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) Erstellen von Snapshots von Ausnahmen und möglicherweise das beste Tool für Ihre Anforderungen.
+
+### <a name="502-bad-gateway"></a>(502) Bad Gateway
+
+Dieser Fehler gibt an, ein Netzwerkproblem serverseitige und kann temporär sein.
+
+Führen Sie diese Schritte aus:
+
+* Warten Sie einige Minuten, bevor Sie erneut den Momentaufnahmedebugger anzufügen.
+* Wenn dieser Fehler auftritt weiterhin, gehen Sie die Feedbackkanäle, die am Anfang dieses Artikels beschrieben.
 
 ## <a name="issue-snappoint-does-not-turn-on"></a>Problem: Andockpunkt ist nicht aktiviert
 
@@ -30,7 +106,7 @@ Wenn Sie ein Warnsymbol ![Andockpunktwarnsymbol](../debugger/media/snapshot-trou
 
 Führen Sie diese Schritte aus:
 
-1. Stellen Sie sicher, dass Sie über die gleiche Version des Quellcodes verfügen, die zum Erstellen und Bereitstellen Ihrer „app.isua1“ verwendet wurde. Stellen Sie sicher, dass Sie die richtigen Symbole für die Bereitstellung laden. Zeigen Sie dazu das **Module**-Fenster beim Debuggen von Momentaufnahmen an, und überprüfen Sie, ob die Symboldatei-Spalte eine PDB-Datei enthält, die für das Modul geladen wird, das Sie debuggen. Der Momentaufnahmedebugger versucht, automatisch Symbole für die Bereitstellung herunterzuladen und zu verwenden.
+1. Stellen Sie sicher, dass Sie die gleiche Version des Quellcodes verfügen, die zum Erstellen und Bereitstellen Ihrer app verwendet wurde. Stellen Sie sicher, dass Sie die richtigen Symbole für die Bereitstellung laden. Zeigen Sie dazu das **Module**-Fenster beim Debuggen von Momentaufnahmen an, und überprüfen Sie, ob die Symboldatei-Spalte eine PDB-Datei enthält, die für das Modul geladen wird, das Sie debuggen. Der Momentaufnahmedebugger versucht, automatisch Symbole für die Bereitstellung herunterzuladen und zu verwenden.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole werden nicht geladen werden, wenn ich eine Momentaufnahme öffnen
 
@@ -75,20 +151,22 @@ Führen Sie diese Schritte aus:
 
 - Momentaufnahmen beanspruchen wenig Arbeitsspeicher, nutzen aber festgelegten virtuellen Speicher. Wenn der Momentaufnahmedebugger eine hohe Arbeitsspeicherauslastung Ihres Servers erkennt, erstellt er keine Momentaufnahmen. Sie können bereits erfasste Momentaufnahmen löschen, indem Sie die Momentaufnahmedebugger-Sitzung beenden und es erneut versuchen.
 
+::: moniker range=">= vs-2019"
 ## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problem: Debuggen von Momentaufnahmen mit mehreren Versionen von Visual Studio erhalte ich Fehler
 
-VS 2019 erfordert eine neuere Version dieser Momentaufnahmedebugger-Websiteerweiterung in Ihrem Azure App Service.  Diese Version ist nicht kompatibel mit der älteren Version der Momentaufnahmedebugger-Websiteerweiterung, die von Visual Studio 2017 verwendet wird.  Sie erhalten die folgende Fehlermeldung, wenn Sie versuchen, den Momentaufnahmedebugger in Visual Studio 2019 einem App Service anzufügen, der zuvor vom Momentaufnahmedebugger in Visual Studio 2017 gedebugt wurde:
+Visual Studio-2019 erfordert eine neuere Version der Website der Erweiterung des Momentaufnahmedebuggers in Azure App Service.  Diese Version ist nicht kompatibel mit einer älteren Version der Website der Erweiterung des Momentaufnahmedebuggers, die von Visual Studio 2017 verwendet.  Sie erhalten den folgenden Fehler, wenn Sie versuchen, die Snapshot-Debugger in Visual Studio-2019 in einer Azure App Service anzufügen, die zuvor von der Snapshot Debugger in Visual Studio 2017 Debuggen:
 
-![Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2019")
+![Inkompatible Momentaufnahmedebugger-websiteerweiterung Visual Studio-2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "inkompatible Momentaufnahmedebugger-websiteerweiterung 2019 für Visual Studio")
 
-Wenn Sie im Gegensatz dazu Visual Studio 2017 verwenden, um den Momentaufnahmedebugger einem Azure App Service anzufügen, der zuvor vom Momentaufnahmedebugger in Visual Studio 2019 gedebugt wurde, erhalten Sie folgende Fehlermeldung:
+Im Gegensatz dazu, wenn Sie Visual Studio 2017 verwenden, um die Snapshot-Debugger mit einem Azure App Service anfügen, sodass die zuvor von der Snapshot Debugger in Visual Studio-2019 Debuggen, den folgenden Fehler erhalten Sie:
 
-![Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2017")
+![Inkompatible Momentaufnahmedebugger-websiteerweiterung Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "inkompatible Momentaufnahmedebugger-websiteerweiterung Visual Studio 2017")
 
 Um dieses Problem zu lösen, löschen Sie die folgenden App-Einstellungen im Azure-Portal, und fügen Sie den Momentaufnahmedebugger erneut an:
 
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+::: moniker-end
 
 ## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problem: Ich habe Probleme Debuggen von Momentaufnahmen und weitere Protokollierung aktivieren
 
@@ -111,7 +189,7 @@ Agent-Protokolle können sich an folgenden Speicherorten befinden:
 Instrumentierungsprotokolle finden Sie an den folgenden Speicherorten:
 
 - App Services:
-  - Fehlerprotokollierung wird automatisch an „D:\Home\LogFiles\eventlog.xml“ gesendet, Ereignisse werden mit <<Provider Name="Instrumentation Engine" //>> oder "Production Breakpoints" markiert
+  - Fehlerprotokollierung automatisch an D:\Home\LogFiles\eventlog.xml gesendet, werden Ereignisse mit markiert `<Provider Name="Instrumentation Engine" />` oder "Produktion Haltepunkte"
 - VM/VMSS:
   - Melden Sie sich bei Ihrem virtuellen Computer an, und öffnen Sie die Ereignisanzeige.
   - Öffnen Sie die folgende Ansicht: *Windows-Protokolle > Anwendung*.

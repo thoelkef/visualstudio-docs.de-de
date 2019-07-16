@@ -10,19 +10,19 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59afc6a95e327460602ece8db58f075b483d0e09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d2e7d15f7b479941c3186d8cd694c92f762bbf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538289"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690998"
 ---
 # <a name="extending-properties"></a>Erweitern von Eigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Eigenschaften** Fenster ist eine universelle Eigenschaftenbrowser für COM- und COM+-Komponenten und unterstützt alle [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Produkte. Die **Eigenschaften** Fenster arbeitet mit `ITypeInfo` geben Informationen und COM+-Metadaten zum Auflisten der Eigenschaften zur Entwurfszeit für das aktuell ausgewählte Objekt in einem anderen Fenster in der integrierten Entwicklungsumgebung (IDE).  
   
- Die **Eigenschaften** Fenster, die geöffnet werden kann, indem Sie auf der Tastatur die Taste F4 drücken, oder wählen **Fenster "Eigenschaften"** auf die **Ansicht** Menübefehl, dient zum Anzeigen und bearbeiten während der Entwurfszeit konfigurationsunabhängigen Eigenschaften und Ereignissen ausgewählter Objekte. Konfigurationsabhängigen Eigenschaften für Projektmappen und Projekten, werden angezeigt, auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md). Weitere Informationen finden Sie unter [NIB: Projekteigenschaften](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md), und [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Die **Eigenschaften** Fenster, die geöffnet werden kann, indem Sie auf der Tastatur die Taste F4 drücken, oder wählen **Fenster "Eigenschaften"** auf die **Ansicht** Menübefehl, dient zum Anzeigen und bearbeiten während der Entwurfszeit konfigurationsunabhängigen Eigenschaften und Ereignissen ausgewählter Objekte. Konfigurationsabhängigen Eigenschaften für Projektmappen und Projekten, werden angezeigt, auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md). Weitere Informationen finden Sie unter [NIB: Projekteigenschaften](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md), und [NIB: Elementverwaltung in Projekten](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  ![Übersicht über das Eigenschaftenfenster](../../extensibility/internals/media/vspropertieswindow.png "VsPropertiesWindow")  
 Eigenschaftenfenster  
@@ -70,19 +70,19 @@ Eigenschaftenfenster
  [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)  
  Beschreibt, wie Sie die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Plattform für die fortlaufend testen und Debuggen von Anwendungen erstellen.  
   
- [HTML-Dokumenteigenschaften, Eigenschaftenfenster](http://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
+ [HTML-Dokumenteigenschaften, Eigenschaftenfenster](https://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
  Enthält Anweisungen zum Bearbeiten von HTML-Dokument direkt aus dem Fenster "Eigenschaften", und stellt eine Tabelle, in die Felder in einem HTML-Dokument in das Fenster "Eigenschaften".  
   
- [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
+ [IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
  Beschreibt die `IDispatch` -Schnittstelle, die zuerst entwickelt wurde, um Automation, einen spät gebundenen Mechanismus zum zugreifen und Abrufen von Informationen zu den Methoden und Eigenschaften eines Objekts zu unterstützen.  
   
- [NIB: Einführung in dynamische Eigenschaften (Visual Studio)](http://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
+ [NIB: Einführung in dynamische Eigenschaften (Visual Studio)](https://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
  Bietet einen Überblick über die dynamischen Eigenschaften, mit denen Sie Ihre Anwendung so konfigurieren, dass Eigenschaftswerte in einer externen Konfigurationsdatei anstelle von kompilierten Code der Anwendung gespeichert sind.  
   
- [NIB: Projekte als Container](http://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
+ [NIB: Projekte als Container](https://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
  Beschreibt die Rolle des Projekts als Container für eine Lösung für logisch zu verwalten, erstellen und Debuggen die Elemente, die die Anwendung bilden.  
   
- [NIB: Projekteigenschaften](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ [NIB: Projekteigenschaften](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  Beschreibt, wie das Projekt Einstellungen verwaltet, mit denen Sie die Eigenschaften des Steuerelements, die für das gesamte Projekt gelten, sowie Eigenschaften, die auf bestimmte Erstellungskonfigurationen des Projekts beschränkt sind.  
   
  [Projektmappen und Projekte](../../ide/solutions-and-projects-in-visual-studio.md)  

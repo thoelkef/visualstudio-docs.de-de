@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 7a7b0615-df6b-4726-ab35-39dfa1ebed8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bbbbf620d9a5b78c098ec593dd20c57a18d79ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e98004c912fd820fba12854178e45330bb3376a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918372"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326962"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 Ruft den Anschlusslieferanten für diesen Port.
@@ -36,10 +39,9 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppSupplier`
-
- [out] Gibt eine [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) Objekt darstellt, die anschlusslieferant für einen Port.
+## <a name="parameters"></a>Parameter
+`ppSupplier`\
+[out] Gibt eine [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) Objekt darstellt, die anschlusslieferant für einen Port.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetDocumentContext method
 - IDebugActivateDocumentEvent2::GetDocumentContext method
 ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45923ef6d219e7f7dd79581856d0875b792130d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8dcef9858b8b210dac6f64de713a1efff4a8d63c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720327"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318026"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Ruft ab, der Dokumentenkontext, der die Position im Dokument wird beschrieben, die durch das debugpaket ausgeführt werden.
@@ -37,10 +40,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppDocContext`
-
- [out] Gibt eine [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das eine Position in einem Quelldokument für die Datei darstellt.
+## <a name="parameters"></a>Parameter
+`ppDocContext`\
+[out] Gibt eine [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das eine Position in einem Quelldokument für die Datei darstellt.
 
 ## <a name="remarks"></a>Hinweise
  Diese Position kann verwendet werden, um die Einfügemarke, z. B. anzuzeigen.

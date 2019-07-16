@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Ausführen von Komponententests für verwalteten Code
-ms.date: 11/04/2016
+title: Tutorial für C#-Komponententest
+ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -13,25 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976232"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820947"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
-Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschiedener Komponententests mithilfe des Microsoft-Komponententestframeworks für verwalteten Code und Visual Studio-**Test-Explorer**. Sie beginnen mit einem C#-Projekt in der Entwicklungsphase und erstellen Tests zur Codeüberprüfung. Anschließend führen Sie die Tests aus und überprüfen die Ergebnisse. Dann können Sie Änderungen am Projektcode vornehmen und die Tests erneut ausführen.
-
-> [!NOTE]
-> In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Der **Test-Explorer** kann außerdem Tests von Komponententestframeworks von Drittanbietern ausführen, die über Adapter für den **Test-Explorer** verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
-
-Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Befehlszeilenoptionen für VSTest.Console.exe](vstest-console-options.md).
-
-## <a name="prerequisites"></a>Erforderliche Komponenten
-
-- Das Projekt "Bank". Weitere Informationen finden Sie unter [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).
+Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschiedener Komponententests mithilfe des Microsoft-Komponententestframeworks für verwalteten Code und Visual Studio-**Test-Explorer**. Sie beginnen mit einem C#-Projekt in der Entwicklungsphase und erstellen Tests zur Codeüberprüfung. Anschließend führen Sie die Tests aus und überprüfen die Ergebnisse. Dann können Sie den Projektcode ändern und die Tests erneut ausführen.
 
 ## <a name="create-a-project-to-test"></a>Erstellen eines zu testenden Projekts
 
@@ -43,14 +34,14 @@ Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Wählen Sie die C#-Projektvorlage **Klassenbibliothek** aus.
+3. Wählen Sie unter der Kategorie **Visual C#** > **.NET Core** aus, und wählen Sie dann die Projektvorlage **Konsolen-App (.NET Core)**.
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie auf **OK**.
 
-   Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Class1.cs* wird geöffnet.
+   Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Program.cs* wird geöffnet.
 
    > [!NOTE]
-   > Wenn die Datei *Class1.cs* nicht im Code-Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Class1.cs*, um diese zu öffnen.
+   > Wenn die Datei *Program.cs* nicht im Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Program.cs*, um diese zu öffnen.
 
 ::: moniker-end
 
@@ -60,42 +51,92 @@ Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Suchen Sie die C#-Projektvorlage **Klassenbibliothek**, wählen Sie sie aus, und klicken Sie dann auf **Weiter**.
+3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)**, und klicken Sie dann auf **Weiter**.
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie dann auf **Erstellen**.
 
-   Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Class1.cs* wird geöffnet.
+   Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Program.cs* wird geöffnet.
 
    > [!NOTE]
-   > Wenn die Datei *Class1.cs* nicht im Code-Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Class1.cs*, um diese zu öffnen.
+   > Wenn die Datei *Program.cs* nicht im Editor geöffnet wird, doppelklicken Sie im **Projektmappen-Explorer** auf die Datei *Program.cs*, um diese zu öffnen.
 
 ::: moniker-end
 
-5. Kopieren Sie den Quellcode aus dem [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md), und ersetzen Sie den ursprünglichen Inhalt der Datei *Class1.cs* durch diesen kopierten Code.
+5. Ersetzen Sie den Inhalt der Datei *Program.cs* durch den folgenden C#-Code, der die Klasse *BankAccount* definiert:
 
-6. Speichern Sie die Datei als *BankAccount.cs*.
+   ```csharp
+   using System;
+
+   namespace BankAccountNS
+   {
+       /// <summary>
+       /// Bank account demo class.
+       /// </summary>
+       public class BankAccount
+       {
+           private readonly string m_customerName;
+           private double m_balance;
+
+           private BankAccount() { }
+
+           public BankAccount(string customerName, double balance)
+           {
+               m_customerName = customerName;
+               m_balance = balance;
+           }
+
+           public string CustomerName
+           {
+               get { return m_customerName; }
+           }
+
+           public double Balance
+           {
+               get { return m_balance; }
+           }
+
+           public void Debit(double amount)
+           {
+               if (amount > m_balance)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount; // intentionally incorrect code
+           }
+
+           public void Credit(double amount)
+           {
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount;
+           }
+
+           public static void Main()
+           {
+               BankAccount ba = new BankAccount("Mr. Bryan Walton", 11.99);
+
+               ba.Credit(5.77);
+               ba.Debit(11.22);
+               Console.WriteLine("Current balance is ${0}", ba.Balance);
+           }
+       }
+   }
+   ```
+
+6. Ändern Sie den Dateinamen per Rechtsklick zu *BankAccount.cs* und wählen Sie **Umbenennen** in **Projektmappen-Explorer**.
 
 7. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-Sie haben nun ein Projekt mit dem Namen Bank erstellt. Dieses Projekt enthält zu testenden Quellcode und Tools, mit denen der Quellcode getestet werden kann. Der Namespace für Bank (BankAccountNS) enthält die öffentliche BankAccount-Klasse, deren Methoden Sie im Folgenden testen sollen.
-
-Die Tests in diesem Artikel beziehen sich auf die Debit-Methode. Die Debit-Methode wird aufgerufen, wenn von einem Konto Geld abgehoben wird. Die Methodendefinition lautet wie folgt:
-
-```csharp
-// Method to be tested.
-public void Debit(double amount)
-{
-    if(amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    m_balance += amount;
-}
-```
+Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in diesem Artikel beziehen sich auf die `Debit`-Methode. Die `Debit`-Methode wird aufgerufen, wenn von einem Konto Geld abgehoben wird.
 
 ## <a name="create-a-unit-test-project"></a>Ein Komponententestprojekt erstellen
 
@@ -108,7 +149,7 @@ public void Debit(double amount)
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
 
-3. Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.
+3. Wählen Sie in der Liste der Vorlagen **MSTest Test Project (.NET Core)** aus.
 
 4. Geben Sie im Feld **Name** `BankTests` ein, und klicken Sie dann auf die Schaltfläche **OK**.
 
@@ -118,9 +159,9 @@ public void Debit(double amount)
 
 ::: moniker range=">=vs-2019"
 
-2. Suchen Sie die C#-Projektvorlage **Komponententestprojekt**, wählen Sie sie aus, und klicken Sie dann auf **Weiter**.
+2. Wählen Sie die C#-Projektvorlage **MSTest Test Project (.NET Core)** aus, und klicken Sie dann auf **Weiter**.
 
-3. Benennen Sie das Projekt mit `BankTests`.
+3. Geben Sie dem Projekt den Namen **ToDoApi**.
 
 4. Klicken Sie auf **Erstellen**.
 
@@ -130,22 +171,35 @@ public void Debit(double amount)
 
 5. Fügen Sie im Projekt **BankTests** einen Verweis auf die Projektmappe **Bank** ein.
 
-   Klicken Sie im **Projektmappen-Explorer** im Projekt **BankTests** erst auf **Verweise** und dann im Kontextmenü auf **Verweis hinzufügen**.
+   Wählen Sie im **Projektmappen-Explorer** im Projekt **BankTests** erst **Abhängigkeiten** und dann im Kontextmenü **Verweis hinzufügen** aus.
 
-6. Erweitern Sie im Dialogfeld **Verweis-Manager** den Eintrag **Projektmappe**, und überprüfen Sie das Element **Bank**.
+6. Erweitern Sie im Dialogfeld **Verweis-Manager** die Option **Projekte**, wählen Sie **Lösung** aus, und überprüfen Sie das Element **Bank**.
+
+7. Klicken Sie auf **OK**.
 
 ## <a name="create-the-test-class"></a>Die Testklasse erstellen
 
-Erstellen Sie eine Testklasse, um die `BankAccount`-Klasse zu überprüfen. Sie können die Datei *UnitTest1.cs* verwenden, die von der Projektvorlage generiert wurde; Datei und Klasse sollten jedoch einen aussagekräftigeren Namen erhalten. Sie können das in einem Schritt erledigen, indem Sie die Datei im **Projektmappen-Explorer** umbenennen.
+Erstellen Sie eine Testklasse, um die `BankAccount`-Klasse zu überprüfen. Sie können die Datei *UnitTest1.cs* verwenden, die von der Projektvorlage generiert wurde; Datei und Klasse sollten jedoch einen aussagekräftigeren Namen erhalten.
 
-### <a name="rename-a-class-file"></a>Umbenennen einer Klassendatei
+### <a name="rename-a-file-and-class"></a>Umbenennen einer Datei und Klasse
 
-Klicken Sie im **Projektmappen-Explorer** im BankTests-Projekt auf die Datei *UnitTest1.cs*. Klicken Sie im Kontextmenü auf die Option **Umbenennen**, und benennen Sie dann die Datei in *BankAccountTests.cs* um. Wenn Sie gefragt werden, ob Sie alle im Projekt enthaltenen Verweise in das Codeelement `UnitTest1` umbenennen möchten, klicken Sie auf **Ja**.
+1. Wählen Sie zum Umbenennen der Datei im **Projektmappen-Explorer** im BankTests-Projekt die Datei *UnitTest1.cs* aus. Klicken Sie im Kontextmenü auf die Option **Umbenennen**, und benennen Sie dann die Datei in *BankAccountTests.cs* um.
 
-Dadurch wird der Name der Klasse in `BankAccountTests`geändert. Die Datei *BankAccountTests.cs* enthält nun den folgenden Code:
+::: moniker range="vs-2017"
+
+2. Zum Umbenennen der Klasse wählen Sie **Ja** in dem Dialogfeld, in dem Sie gefragt werden, ob Sie auch Verweise auf das Codeelement umbenennen möchten.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Um die Klasse umzubenennen, setzen Sie im Code-Editor den Cursor auf `UnitTest1`, klicken Sie mit der rechten Maustaste, und wählen Sie **Umbenennen** aus. Geben Sie **BankAccountTests** ein, und drücken Sie dann die **EINGABETASTE**.
+
+::: moniker-end
+
+Die Datei *BankAccountTests.cs* enthält nun den folgenden Code:
 
 ```csharp
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BankTests
@@ -161,9 +215,9 @@ namespace BankTests
 }
 ```
 
-### <a name="add-a-using-statement-to-the-project-under-test"></a>Hinzufügen einer Using-Anweisung zum zu testenden Projekt
+### <a name="add-a-using-statement"></a>Hinzufügen einer Using-Anweisung
 
-Auch der Klasse kann eine `using`-Anweisung hinzugefügt werden, damit Sie ohne vollqualifizierte Namen das zu testende Projekt aufrufen können. Fügen Sie am Anfang der Klassendatei Folgendes hinzu:
+Fügen Sie der Testklasse eine [`using`-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) hinzu, damit Sie das Testprojekt ohne vollqualifizierte Namen aufrufen können. Fügen Sie am Anfang der Klassendatei Folgendes hinzu:
 
 ```csharp
 using BankAccountNS;
@@ -173,15 +227,15 @@ using BankAccountNS;
 
 Die Mindestanforderungen für eine Testklasse lauten wie folgt:
 
-- Im Microsoft-Komponententest-Framework für verwalteten Code ist das `[TestClass]` -Attribut für jede Klasse erforderlich, die in Test-Explorer auszuführende Komponententestmethoden enthält.
+- Das `[TestClass]`-Attribut ist für jede Klasse erforderlich, die in Test-Explorer auszuführende Komponententestmethoden enthält.
 
-- Jede Testmethode, die von Test-Explorer ausgeführt werden soll, muss über das `[TestMethod]`-Attribut verfügen.
+- Jede Testmethode, die vom Test-Explorer erkannt werden soll, muss über das `[TestMethod]`-Attribut verfügen.
 
-Ein Komponententestprojekt kann auch über andere Klassen ohne das `[TestClass]` -Attribut verfügen, und Testklassen können andere Methoden ohne das `[TestMethod]` -Attribut aufweisen. Sie können diese anderen Klassen und Methoden in den Testmethoden verwenden.
+Ein Komponententestprojekt kann auch über andere Klassen ohne das `[TestClass]` -Attribut verfügen, und Testklassen können andere Methoden ohne das `[TestMethod]` -Attribut aufweisen. Sie können diese anderen Klassen und Methoden in den Testmethoden aufrufen.
 
 ## <a name="create-the-first-test-method"></a>Die erste Testmethode erstellen
 
-In dieser Vorgehensweise schreiben Sie Komponententestmethoden, um das Verhalten der `Debit`-Methode der `BankAccount`-Klasse zu überprüfen. Die `Debit`-Methode wurde weiter oben in diesem Artikel bereits erläutert.
+In dieser Vorgehensweise schreiben Sie Komponententestmethoden, um das Verhalten der `Debit`-Methode der `BankAccount`-Klasse zu überprüfen.
 
 Es müssen mindestens drei Verhalten überprüft werden:
 
@@ -217,7 +271,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-Die Methode ist ganz einfach: Sie richtet ein neues `BankAccount`-Objekt mit einem Startguthaben ein und bucht dann einen gültigen Betrag ab. Sie verwendet die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>-Methode, um zu überprüfen, ob das Guthaben zum Schluss den Erwartungen entspricht.
+Die Methode ist ganz einfach: Sie richtet ein neues `BankAccount`-Objekt mit einem Startguthaben ein und bucht dann einen gültigen Betrag ab. Sie verwendet die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType>-Methode, um zu überprüfen, ob das Guthaben zum Schluss den Erwartungen entspricht.
 
 ### <a name="test-method-requirements"></a>Testmethodenanforderungen
 
@@ -233,26 +287,25 @@ Eine Testmethode muss die folgenden Anforderungen erfüllen:
 
 1. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.
 
-   Wenn keine Fehler auftreten, wird der **Test-Explorer** geöffnet, und in der Gruppe **Nicht ausgeführte Tests** wird **Debit_WithValidAmount_UpdatesBalance** aufgelistet.
+2. Wenn der **Test-Explorer** nicht geöffnet ist, öffnen Sie ihn, indem Sie in der oberen Menüleiste **Testen** > **Windows** > **Test-Explorer** auswählen.
 
-   > [!TIP]
-   > Wenn der **Test-Explorer** nach einem erfolgreichen Build nicht angezeigt wird, klicken Sie im Menü erst auf **Testen** und anschließend auf **Windows** > **Test-Explorer**.
+3. Wählen Sie **Alle ausführen** aus, um den Test auszuführen.
 
-2. Wählen Sie **Alle ausführen** aus, um den Test auszuführen. Während der Test ausgeführt wird, gibt die Statusleiste am oberen Fensterrand den aktuellen Status an. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich sind, oder rot, sofern bei einem der Tests ein Fehler auftritt.
+   Während der Test ausgeführt wird, gibt die Statusleiste am oberen Rand des Fensters **Test-Explorer** den aktuellen Status an. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich sind, oder rot, sofern bei einem der Tests ein Fehler auftritt.
 
-3. In diesem Fall schlägt der Test fehl. Die Testmethode wird in die Gruppe **Tests mit Fehlern** verschoben. Wählen Sie die Methode im **Test-Explorer** aus, um die Details unten im Fenster anzuzeigen.
+   In diesem Fall schlägt der Test fehl.
+
+4. Wählen Sie die Methode im **Test-Explorer** aus, um die Details unten im Fenster anzuzeigen.
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Den Code korrigieren und die Tests erneut ausführen
 
-### <a name="analyze-the-test-results"></a>Analysieren der Testergebnisse
-
-Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Für die `AreEqual`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter **Expected\<*value*>**) und was tatsächlich gefunden wurde (Parameter **Actual\<*value*>**). Es wurde davon ausgegangen, dass sich das Guthaben verringern würde. Stattdessen hat es sich aber um den Betrag der Abhebung erhöht.
+Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEqual`-Methode zeigt die Meldung an, was erwartet und was tatsächlich empfangen wurde. Es wurde davon ausgegangen, dass sich das Guthaben verringern würde. Stattdessen hat es sich aber um den Betrag der Abhebung erhöht.
 
 Beim Komponententest wurde ein Fehler festgestellt: Der Abbuchungsbetrag wird dem Kontoguthaben *hinzugerechnet*, anstatt davon *abgezogen* zu werden.
 
 ### <a name="correct-the-bug"></a>Korrigieren des Fehlers
 
-Um den Fehler zu beheben, ersetzen Sie die Zeile:
+Um den Fehler zu beheben, ersetzten Sie in der Datei *BankAccount.cs* die Zeile:
 
 ```csharp
 m_balance += amount;
@@ -266,7 +319,9 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Erneutes Ausführen des Tests
 
-Wählen Sie im **Test-Explorer** **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, wenn der Test erfolgreich ausgeführt wurde, und der Test wird in die Gruppe **Bestandene Tests** verschoben.
+Wählen Sie im **Test-Explorer** **Alle ausführen** aus, um den Test erneut auszuführen. Wenn die rote oder grüne Statusleiste grün wird, war der Test erfolgreich.
+
+![Test-Explorer in Visual Studio 2019, der erfolgreiche Tests anzeigt](media/test-explorer-banktests-passed.png)
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Den Code mit Komponententests verbessern
 
@@ -279,13 +334,12 @@ Sie haben eine Testmethode erstellt, um zu bestätigen, dass zum jeweiligen Zeit
 - entweder höher als das Guthaben ist
 - oder unter 0 liegt.
 
-### <a name="create-the-test-methods"></a>Erstellen der Testmethoden
+### <a name="create-and-run-new-test-methods"></a>Erstellen und Ausführen neuer Testmethoden
 
 Erstellen Sie eine Testmethode, um die Richtigkeit zu bestätigen, wenn der Abbuchungsbetrag unter 0 liegt:
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 {
     // Arrange
@@ -293,14 +347,12 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
     double debitAmount = -100.00;
     BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-    // Act
-    account.Debit(debitAmount);
-
-    // Assert is handled by the ExpectedException attribute on the test method.
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
 }
 ```
 
-Verwenden Sie das <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>-Attribut, um zu bestätigen, dass die richtige Ausnahme ausgelöst wurde. Das Attribut führt zu einem Fehlschlag des Tests, es sei denn, eine <xref:System.ArgumentOutOfRangeException> wird ausgelöst. Wenn Sie die zu testende Methode kurzzeitig ändern, um eine generischere <xref:System.ApplicationException> auszulösen, wenn der Abbuchungsbetrag unter 0 liegt, wird der Test richtig ausgeführt und schlägt fehl.
+Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A>-Methode, um zu bestätigen, dass die richtige Ausnahme ausgelöst wurde. Diese Methode führt zu einem Fehler des Tests, es sei denn, eine <xref:System.ArgumentOutOfRangeException> wird ausgelöst. Wenn Sie die zu testende Methode kurzzeitig ändern, um eine generischere <xref:System.ApplicationException> auszulösen, wenn der Abbuchungsbetrag unter 0 liegt, wird der Test richtig ausgeführt und schlägt fehl.
 
 Gehen Sie folgendermaßen vor, um das Verhalten zu testen, wenn der abzubuchende Betrag höher ist als das Guthaben:
 
@@ -310,15 +362,13 @@ Gehen Sie folgendermaßen vor, um das Verhalten zu testen, wenn der abzubuchende
 
 3. Legen Sie `debitAmount` auf eine Zahl größer als das Guthaben fest.
 
-### <a name="run-the-tests"></a>Tests ausführen
-
-Wenn die beiden Testmethoden ausgeführt werden, deutet dies darauf hin, dass der Test einwandfrei funktioniert.
+Führen Sie die zwei Tests aus, und stellen Sie sicher, dass sie erfolgreich abgeschlossen werden.
 
 ### <a name="continue-the-analysis"></a>Fortführen der Analyse
 
-Die letzten beiden Testmethoden stellen jedoch auch ein Problem dar. Sie können nicht sicher sagen, welche Bedingung der Methode, die getestet wird, die Ausnahme auslöst, wenn beide Methoden ausgeführt werden. Wenn man zwischen den beiden Bedingungen (einem negativen Abbuchungsbetrag und einem Betrag, der größer als das Guthaben ist) unterscheiden könnte, würde das die Tests zuverlässiger machen.
+Die zu testende Methode kann weiter verbessert werden. In der aktuellen Implementierung gibt es keine Möglichkeit, zu erfahren, welche Bedingung (`amount > m_balance` oder `amount < 0`) zu der Ausnahme geführt hat, die während des Tests ausgelöst wurde. Wir wissen nur, dass irgendwo in der Methode eine `ArgumentOutOfRangeException` ausgelöst wurde. Es wäre wünschenswert zu wissen, welche Bedingung in `BankAccount.Debit` das Auslösen der Ausnahme verursacht hat (`amount > m_balance` oder `amount < 0`), sodass wir sicher sein können, dass die Methode die Integrität ihrer Argumente ordnungsgemäß überprüft.
 
-Sehen Sie sich die zu testende Methode noch einmal an: Beide Bedingungsanweisungen verwenden einen `ArgumentOutOfRangeException`-Konstruktor, der den Namen des Arguments als Parameter übernimmt:
+Wenn Sie sich die zu testende Methode (`BankAccount.Debit`) noch einmal ansehen, werden Sie feststellen, dass beide Bedingungsanweisungen einen `ArgumentOutOfRangeException`-Konstruktor verwenden, der einfach den Namen des Arguments als Parameter übernimmt:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
@@ -328,7 +378,7 @@ Sie können einen Konstruktor verwenden, der weitaus ausführlichere Information
 
 ### <a name="refactor-the-code-under-test"></a>Umgestalten des zu testenden Codes
 
-Definieren Sie zunächst zwei Konstanten für die Fehlermeldungen im Klassengültigkeitsbereich. Fügen Sie diese in die zu testende Klasse (BankAccount) ein:
+Definieren Sie zunächst zwei Konstanten für die Fehlermeldungen im Klassengültigkeitsbereich. Übertragen Sie diese in die getestete Klasse `BankAccount`:
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -338,20 +388,20 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
 Ändern Sie dann die beiden Bedingungsanweisungen in der `Debit`-Methode:
 
 ```csharp
-    if (amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
-    }
+if (amount > m_balance)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
+}
 
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
-    }
+if (amount < 0)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
+}
 ```
 
 ### <a name="refactor-the-test-methods"></a>Umgestalten der Testmethoden
 
-Entfernen Sie das Testmethodenattribut `ExpectedException`, erfassen Sie stattdessen die ausgelöste Ausnahme, und überprüfen Sie die zugewiesene Meldung. Mithilfe der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName>-Methode können Sie zwei Zeichenfolgen miteinander vergleichen.
+Gestalten Sie die Testmethoden um, indem Sie den Aufruf von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> entfernen. Umschließen Sie den Aufruf von `Debit()` in einem `try/catch`-Block, fangen Sie die spezifische erwartete Ausnahme ab, und verifizieren Sie die zugehörige Meldung. Mithilfe der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName>-Methode können Sie zwei Zeichenfolgen miteinander vergleichen.
 
 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` wird wie folgt formuliert:
 
@@ -369,7 +419,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -383,7 +433,7 @@ Wenn ein Fehler in der getesteten Methode vorliegt und die `Debit`-Methode keine
 
 Dabei handelt es sich um einen Fehler der Testmethode. Um das Problem zu beheben, fügen Sie eine <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>-Assertion am Ende der Testmethode hinzu, um den Fall abzudecken, in dem keine Ausnahme ausgelöst wird.
 
-Ein erneuter Test zeigt jedoch, dass der Test jetzt *fehlschlägt*, wenn die richtige Ausnahme erfasst wird. Der `catch`-Block fängt die Ausnahme zwar ab, aber die Methode wird weiterhin ausgeführt und schlägt bei der neuen <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>-Assertion fehl. Um dieses Problem zu beheben, fügen Sie nach `return` eine `StringAssert`-Anweisung zum Block `catch` hinzu. Wenn Sie den Test erneut ausführen, bestätigen Sie, dass Sie dieses Problem behoben haben. Die fertige Version von `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` sieht wie folgt aus:
+Ein erneuter Test zeigt, dass der Test jetzt *fehlschlägt*, wenn die richtige Ausnahme erfasst wird. Der `catch`-Block fängt die Ausnahme zwar ab, aber die Methode wird weiterhin ausgeführt und schlägt bei der neuen <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>-Assertion fehl. Um dieses Problem zu beheben, fügen Sie nach `return` eine `StringAssert`-Anweisung zum Block `catch` hinzu. Wenn Sie den Test erneut ausführen, bestätigen Sie, dass Sie dieses Problem behoben haben. Die fertige Version von `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` sieht wie folgt aus:
 
 ```csharp
 [TestMethod]
@@ -399,7 +449,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -410,4 +460,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
+### <a name="conclusion"></a>Schlussbemerkung
+
 Aufgrund der Verbesserungen des Testcodes wurden stabilere und informationsreichere Testmethoden erstellt. Aber noch wichtiger: es wurde auch der Code verbessert, der getestet werden soll.
+
+> [!TIP]
+> In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Der **Test-Explorer** kann außerdem Tests von Komponententestframeworks von Drittanbietern ausführen, die über Adapter für den **Test-Explorer** verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
+
+## <a name="see-also"></a>Siehe auch
+
+Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Befehlszeilenoptionen für VSTest.Console.exe](vstest-console-options.md).

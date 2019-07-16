@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperty
 ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22cb633865a6f370c77b9ade7e9d737acdbe4c61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1a5a57cb0aa2e5173886b36a58da19a70aae707
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870660"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311573"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 Diese Methode fragt eine angegebene Eigenschaft-Wert, der den Debugprozess.
@@ -34,10 +37,9 @@ int QueryProperty(
    out object                 pvarPropValue);
 ```
 
-#### <a name="parameters"></a>Parameter
- `dwPropType`
-
- [in] Die Definition der Eigenschaft abgefragt. Folgende Werte sind möglich:
+## <a name="parameters"></a>Parameter
+`dwPropType`\
+[in] Die Definition der Eigenschaft abgefragt. Folgende Werte sind möglich:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -45,7 +47,8 @@ int QueryProperty(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Der Wert der Eigenschaft.
+`pvarPropValue`\
+[out] Der Wert der Eigenschaft.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

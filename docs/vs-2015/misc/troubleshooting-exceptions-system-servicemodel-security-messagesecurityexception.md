@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436553"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689146"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException
 Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird ausgelöst, wenn [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] feststellt, dass eine Nachricht nicht ordnungsgemäß gesichert oder manipuliert wurde. Der Fehler tritt am häufigsten auf, wenn alle folgenden Bedingungen zutreffen:  
@@ -86,4 +86,4 @@ Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird a
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Verwenden des Ausnahmen-Assistenten](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [Verwenden des Ausnahmen-Assistenten](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

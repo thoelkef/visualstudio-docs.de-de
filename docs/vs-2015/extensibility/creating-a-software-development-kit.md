@@ -8,12 +8,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: acad28e365c70a89c50b77e141e428468b9a6df2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 791400746247d71c06e133d10469132f38544b21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109789"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689991"
 ---
 # <a name="creating-a-software-development-kit"></a>Erstellen eines Software Development Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
   
 2. Ordner "Verweise": die Binärdateien, die die APIs enthalten. Dabei kann es sich um Windows-Metadatendateien (WinMD) oder Assemblys handeln.  
   
-3. Ordner "Redist": die Dateien, die für die Common Language Runtime/Debuggen erforderlich sind, und sollte als Teil der Anwendung des Benutzers verpackt zu erhalten. Alle Binärdateien platziert werden soll, darunter \redist\\< Config\>\\< Arch\>, und binärdateinamen sollte das folgende Format, um die Eindeutigkeit sicherzustellen:  **\<Unternehmen >.\< Produkt >. \<Zweck >. \<Erweiterung >**. Beispiel: Microsoft.Cpp.Build.dll. Alle Dateien mit Namen, die in Konflikt stehen möglicherweise mit dem Dateinamen aus anderen SDKs (z. B. Javascript, Css, Pri, Xaml, Png und Jpg-Dateien) platziert werden soll, darunter \redist\\< Config\>\\< Arch\> \\< Sdkname\>\ steuert, mit Ausnahme der Dateien, die XAML zugeordnet sind. Diese Dateien gespeichert werden sollen, darunter \redist\\< Config\>\\< Arch\>\\< Komponentenname\>\\.  
+3. Ordner "Redist": die Dateien, die für die Common Language Runtime/Debuggen erforderlich sind, und sollte als Teil der Anwendung des Benutzers verpackt zu erhalten. Alle Binärdateien platziert werden soll, darunter \redist\\< Config\>\\< Arch\>, und binärdateinamen sollte das folgende Format, um die Eindeutigkeit sicherzustellen:  **\<Unternehmen >.\< Produkt >. \<Zweck >. \<Erweiterung >** . Beispiel: Microsoft.Cpp.Build.dll. Alle Dateien mit Namen, die in Konflikt stehen möglicherweise mit dem Dateinamen aus anderen SDKs (z. B. Javascript, Css, Pri, Xaml, Png und Jpg-Dateien) platziert werden soll, darunter \redist\\< Config\>\\< Arch\> \\< Sdkname\>\ steuert, mit Ausnahme der Dateien, die XAML zugeordnet sind. Diese Dateien gespeichert werden sollen, darunter \redist\\< Config\>\\< Arch\>\\< Komponentenname\>\\.  
   
 4. DesignTime-Ordner: die Dateien, die auf nur pre-ausführen/Debuggen erforderlich sind, Zeit und sollten nicht als Teil des Benutzers-Anwendung verpackt werden. Diese können XML-Dokumente, Bibliotheken, Headern, Toolbox während der Entwurfszeit-Binärdateien, MSBuild-Elemente usw. sein. Alle SDK, die vorgesehen ist, für die Nutzung von einem systemeigenen Projekt muss eine *SDKName*.props-Datei. Das folgende Beispiel zeigt ein Beispiel für diesen Dateityp.  
   
@@ -148,7 +148,7 @@ SupportedArchitectures = "x86;x64;ARM"
 SupportsMultipleVersions = "Error"  
 CopyRedistToSubDirectory = "."  
 DependsOn = "SDKB, version=2.0"  
-MoreInfo = "http://msdn.microsoft.com/MySDK">  
+MoreInfo = "https://msdn.microsoft.com/MySDK">  
 <File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
 <Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
 <Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  

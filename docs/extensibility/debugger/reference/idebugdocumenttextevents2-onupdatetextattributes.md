@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateTextAttributes
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3e76c1eaf82763f461eb1a0b198a7653465970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a1eb8d6d9f14fcad5358b4a358673e08f3395ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875205"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351364"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 Benachrichtigt dem debugpaket, Text-Attribute im Dokument aktualisiert wurden.
@@ -38,14 +41,12 @@ int onUpdateTextAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pos`
+## <a name="parameters"></a>Parameter
+`pos`\
+[in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die angibt, in denen die Textattribute aktualisiert wurden.
 
- [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die angibt, in denen die Textattribute aktualisiert wurden.
-
- `dwNumToUpdate`
-
- [in] Gibt die Anzahl der Zeichen des Texts, die aktualisiert wurden.
+`dwNumToUpdate`\
+[in] Gibt die Anzahl der Zeichen des Texts, die aktualisiert wurden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

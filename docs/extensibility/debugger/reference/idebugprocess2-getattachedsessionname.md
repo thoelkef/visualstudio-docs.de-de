@@ -1,45 +1,46 @@
 ---
 title: IDebugProcess2::GetAttachedSessionName | Microsoft-Dokumentation
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugProcess2::GetAttachedSessionName
 helpviewer_keywords:
 - IDebugProcess2::GetAttachedSessionName
 ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
-caps.latest.revision: 14
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: cd927d66db6e38e3a208cac1ca6545a5b290dc03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1d14e76e576aaf3e467ab24083d445c9d9fc5214
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413486"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353160"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Ruft den Namen der Sitzung, die diesen Prozess zu Debuggen ist. Eine IDE kann diese Informationen für einen Benutzer anzeigen, die einen bestimmten Prozess auf einem bestimmten Computer Debuggen ist.
 
-Ruft den Namen der Sitzung, die diesen Prozess zu Debuggen ist. Eine IDE kann diese Informationen für einen Benutzer anzeigen, die einen bestimmten Prozess auf einem bestimmten Computer Debuggen ist.  
-  
 > [!NOTE]
-> Diese Methode ist veraltet, und die Implementierung sollte immer zurückgeben `E_NOTIMPL`.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-HRESULT GetAttachedSessionName(  
-   BSTR* pbstrSessionName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pbstrSessionName`  
-  
-## <a name="return-value"></a>Rückgabewert  
- Diese Methode sollte immer zurückgeben `E_NOTIMPL`.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
+> Diese Methode ist veraltet, und die Implementierung sollte immer zurückgeben `E_NOTIMPL`.
+
+## <a name="syntax"></a>Syntax
+
+```
+HRESULT GetAttachedSessionName(
+   BSTR* pbstrSessionName
+);
+```
+
+## <a name="parameters"></a>Parameter
+`pbstrSessionName`\
+
+## <a name="return-value"></a>Rückgabewert
+ Diese Methode sollte immer zurückgeben `E_NOTIMPL`.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

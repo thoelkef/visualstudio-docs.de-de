@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a26cbb1781561b6fb4d54da3cfaea9a9fbae7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917488"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311581"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Diese Methodenabfragen für eine angegebene Eigenschaftenwerte des des Debugvorgangs zur Verfügung.
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>Parameter
- `celt`
+## <a name="parameters"></a>Parameter
+`celt`\
+[in] Die Größe der Arrays, die die Definitionen von Eigenschaften und Eigenschaftswerte enthält.
 
- [in] Die Größe der Arrays, die die Definitionen von Eigenschaften und Eigenschaftswerte enthält.
-
- `dwPropType`
-
- [in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte sind:
+`dwPropType`\
+[in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte sind:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Ein Array mit den Eigenschaftswerten.
+`pvarPropValue`\
+[out] Ein Array mit den Eigenschaftswerten.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

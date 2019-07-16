@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980144"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309814"
 ---
 # <a name="overview-report-a-problem"></a>Übersicht: Melden eines Problems
 
@@ -80,7 +80,7 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 
 - - -
 
-![Status „Geschlossen (kein Fehler)“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![Status „Geschlossen (kein Fehler)“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
 **Geschlossen (kein Fehler)** gibt an, dass wir festgestellt haben, dass die gemeldete Funktion so beabsichtigt ist.
 

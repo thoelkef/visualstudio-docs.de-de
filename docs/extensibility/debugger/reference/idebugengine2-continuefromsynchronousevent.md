@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::ContinueFromSynchronousEvent
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 32dc338f2f2ff99d6aaff6dbd728fa3dd7fc9b84
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875321"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330148"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Wird aufgerufen, durch die sitzungsbasierter Debug-Manager (SDM), um anzugeben, dass ein synchroner Debug-Ereignis, die zuvor von der Debug-Engine (DE), dem SDM, gesendet, empfangen und verarbeitet wurde.
@@ -36,10 +39,9 @@ HRESULT ContinueFromSynchronousEvent(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pEvent`
-
- [in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das die zuvor gesendete synchrone-Ereignis darstellt, von dem der Debugger sollte jetzt fortfahren.
+## <a name="parameters"></a>Parameter
+`pEvent`\
+[in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das die zuvor gesendete synchrone-Ereignis darstellt, von dem der Debugger sollte jetzt fortfahren.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460973"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746349"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Diese Struktur stellt einen Rückgabewert aus einer Methode oder Funktion dar.
@@ -50,7 +50,7 @@ public struct METADATA_ADDRESS_RETVAL {
  Die ID der Methode, die, der dieser Rückgabewert ist.
 
  `dwCorType`\
- Der Basistyp des Rückgabewerts. Dies ist ein Wert aus der `CorElementType` in definierte Aufzählung der [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] corhdr.h-Datei des SDKS.
+ Der Basistyp des Rückgabewerts. Dies ist ein Wert aus der `CorElementType` Enumeration, die in der Datei ".NET Framework SDK" corhdr.h "definiert.
 
  `dwSigSize`\
  Die Größe der Rückgabewert-Signatur (gespeichert in `rgSig`).

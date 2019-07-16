@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ccea9847cc23e45f9877f3d331be723293ee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bf82275bf3375098cc8a8bcbeb200846252d2cec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918916"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349378"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Legt den Wert der Instanz des Klassenobjekts Wert aus der Instanz der Wertklasse als Parameter angegeben.
@@ -36,10 +39,9 @@ int SetFromManagedObject(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pManagedObject`
-
- [in] Eine Schnittstelle, die das verwaltete Objekt, das mit dem neuen Wert darstellt.
+## <a name="parameters"></a>Parameter
+`pManagedObject`\
+[in] Eine Schnittstelle, die das verwaltete Objekt, das mit dem neuen Wert darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

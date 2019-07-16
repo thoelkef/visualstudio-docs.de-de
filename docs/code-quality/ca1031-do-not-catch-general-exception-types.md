@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779283"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744689"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Allgemeine Ausnahmetypen nicht auffangen.
 
@@ -47,7 +47,7 @@ ms.locfileid: "62779283"
  Unterdrücken Sie keine Warnung dieser Regel. Allgemeine Ausnahmetypen abfangen können blenden Sie aus, von dem Benutzer einer Bibliothek Probleme zur Laufzeit und können Sie das Debuggen erschwert.
 
 > [!NOTE]
-> Beginnend mit der [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], die common Language Runtime (CLR) bietet mehr hervorgerufenen Ausnahmen, die auftreten, in das Betriebssystem und verwalteten Code, z. B.-zugriffsverletzungen in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], um die von verwaltetem Code behandelt werden. Sollten Sie Kompilieren einer Anwendung in der [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] oder höher und Verwalten von Beschädigungen hervorgerufenen Ausnahmen behandeln, können Sie anwenden der <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> -Attribut auf die Methode, die die Ausnahme zu beschädigtem Zustand behandelt.
+> Ab .NET Framework 4, bietet die common Language Runtime (CLR) nicht mehr hervorgerufenen Ausnahmen, die auftreten, in das Betriebssystem und verwalteten Code, z. B.-zugriffsverletzungen in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], um die von verwaltetem Code behandelt werden. Wenn Sie die Kompilierung einer Anwendung in .NET Framework 4 oder höher möchten und Behandlung von Beschädigungen hervorgerufenen Ausnahmen beibehalten, können Sie übernehmen die <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> -Attribut auf die Methode, die die Ausnahme zu beschädigtem Zustand behandelt.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt ein Typ, die gegen diese Regel verstößt und ein Typ, der ordnungsgemäß implementiert die `catch` Block.

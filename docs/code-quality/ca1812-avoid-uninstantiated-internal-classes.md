@@ -1,6 +1,6 @@
 ---
 title: 'CA1812: Nicht instanziierte interne Klassen vermeiden.'
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796903"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744701"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Nicht instanziierte interne Klassen vermeiden.
 
@@ -32,11 +32,11 @@ ms.locfileid: "62796903"
 
 ## <a name="cause"></a>Ursache
 
-Eine Instanz eines Typs auf Assemblyebene wird nicht durch Code in der Assembly erstellt.
+Ein interner (auf Assemblyebene) Typ wird nie instanziiert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Mit dieser Regel versucht, einen Aufruf eines Konstruktors den Typ zu finden, und gibt einen Verstoß aus, wenn kein Aufruf gefunden wird.
+Diese Regel versucht, einen Aufruf eines Konstruktors den Typ zu finden und einen Verstoß gemeldet, wenn kein Aufruf gefunden wird.
 
 Die folgenden Typen werden nicht durch diese Regel überprüft:
 
@@ -50,19 +50,17 @@ Die folgenden Typen werden nicht durch diese Regel überprüft:
 
 - Compilerfehler ausgegebenen Arraytypen
 
-- Typen, die nicht instanziiert werden kann, und definieren `static` (`Shared` in Visual Basic) Methoden nur.
+- Typen, die nicht instanziiert werden und nur definieren [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) Methoden.
 
-Wenn Sie anwenden <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> auf die Assembly, die analysiert wird, mit dieser Regel treten nicht für Konstruktoren, die als markiert sind `internal` , da Sie nicht erkennen können, ob ein Feld von einem anderen verwendeten `friend` Assembly.
-
-Obwohl Sie Umgehung dieser Einschränkung in der Visual Studio-Codeanalyse nicht möglich, wird der externe eigenständige FxCop auf interne Konstruktoren auftreten, wenn alle `friend` Assembly in der Analyse vorhanden ist.
+Wenn Sie anwenden, die <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> auf die Assembly, die analysiert wird, wird diese Regel nicht als markierten Typen gekennzeichnet [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)), da möglicherweise ein Feld von Friend-Assembly verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie den Code, der verwendet wird. Wenn der Typ nur statische Methoden enthält, fügen Sie eine der folgenden in den Typ aus, um zu verhindern, dass den Compiler einen Standardkonstruktor für die öffentliche Instanz ausgeben:
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie Code, der verwendet wird. Wenn der Typ nur enthält `static` Methoden, Hinzufügen eines der folgenden in den Typ aus, um zu verhindern, dass den Compiler einen Standardkonstruktor für die öffentliche Instanz ausgeben:
+
+- Die `static` Modifizierer für C# Typen, die auf .NET Framework 2.0 oder höher abzielen.
 
 - Ein privater Konstruktor für Typen, die .NET Framework-1.0 und 1.1 Versionen.
-
-- Die `static` (`Shared` in Visual Basic)-Modifizierer für Typen, die auf [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
@@ -70,9 +68,9 @@ Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Es wird empfohlen, d
 
 - Die Klasse wird durch für spät gebundene Reflektionsmethoden erstellt, wie z. B. <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- Die Klasse wird automatisch erstellt, von der Laufzeit oder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Z. B. Klassen, in denen <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> oder <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Die Klasse wird von der Laufzeit oder ASP.NET automatisch erstellt. Einige Beispiele für automatisch erstellte Klassen sind diejenigen, die implementieren <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> oder <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- Die Klasse wird als ein generischer Typparameter übergeben, die eine neue Einschränkung aufweist. Beispielsweise wird im folgenden Beispiel wird diese Regel ausgelöst.
+- Die Klasse wird übergeben, wie ein Typparameter, die eine [ `new` Einschränkung](/dotnet/csharp/language-reference/keywords/new-constraint). Im folgende Beispiel werden durch Regel CA1812 gekennzeichnet:
 
     ```csharp
     internal class MyClass
@@ -88,17 +86,13 @@ Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Es wird empfohlen, d
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  In diesen Fällen wird empfohlen, dass Sie diese Warnung unterdrücken.
-
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)

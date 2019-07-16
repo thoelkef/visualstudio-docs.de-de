@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439492"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683152"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Binden von Objekten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio bietet die Design-Time-Tools für die Arbeit mit benutzerdefiniert
 - Speichern von Daten aus Objekten in der Datenbank.
 
 > [!NOTE]
-> Um besser zu verstehen, und geben den Kontext für die Beispiele auf dieser Seite, empfehlen wir, dass Sie die folgenden Aufgaben: [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Diese exemplarische Vorgehensweise erstellt, die hier besprochenen Objekte.
+> Um besser zu verstehen, und geben den Kontext für die Beispiele auf dieser Seite, empfehlen wir, dass Sie die folgenden Aufgaben: [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Diese exemplarische Vorgehensweise erstellt, die hier besprochenen Objekte.
 
 ### <a name="loaddata-into-objects"></a>LoadData in Objekte
  In diesem Beispiel laden Sie Daten in Ihre Objekte mit TableAdapters. Standardmäßig sind TableAdapters mit zwei Arten von Methoden erstellt, die Daten aus einer Datenbank abzurufen und Datentabellen auffüllen.
@@ -75,7 +75,7 @@ Visual Studio bietet die Design-Time-Tools für die Arbeit mit benutzerdefiniert
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>Erstellen Sie eine typisierte Auflistung von Objekten
- Sie können für Ihre Objekte Auflistungsklassen zu erstellen oder verwenden Sie die typisierten Auflistungen, die automatisch von bereitgestellt werden die [BindingSource-Komponente](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
+ Sie können für Ihre Objekte Auflistungsklassen zu erstellen oder verwenden Sie die typisierten Auflistungen, die automatisch von bereitgestellt werden die [BindingSource-Komponente](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
 
  Wenn Sie eine benutzerdefinierte Auflistungsklasse für Objekte erstellen, es wird empfohlen, erben <xref:System.ComponentModel.BindingList%601>. Diese generische Klasse stellt Funktionen zum Verwalten Ihrer Sammlung als auch die Möglichkeit zum Auslösen von Ereignissen, die für das Senden von Benachrichtigungen an die Infrastruktur die Datenbindung in Windows Forms bereit.
 
@@ -92,9 +92,9 @@ Visual Studio bietet die Design-Time-Tools für die Arbeit mit benutzerdefiniert
 ### <a name="addobjects-to-a-collection"></a>Addobjects zu einer Sammlung
  Hinzufügen von Objekten zu einer Sammlung durch Aufrufen der `Add` Methode, die von einer benutzerdefinierten Auflistungsklasse oder die <xref:System.Windows.Forms.BindingSource>.
 
- Ein Beispiel für das Hinzufügen zu einer Sammlung mit einem <xref:System.Windows.Forms.BindingSource>, finden Sie unter den `LoadCustomers` -Methode in der [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Ein Beispiel für das Hinzufügen zu einer Sammlung mit einem <xref:System.Windows.Forms.BindingSource>, finden Sie unter den `LoadCustomers` -Methode in der [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Ein Beispiel des Hinzufügens von Objekten auf einer benutzerdefinierten Sammlung finden Sie unter den `LoadOrders` -Methode in der [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Ein Beispiel des Hinzufügens von Objekten auf einer benutzerdefinierten Sammlung finden Sie unter den `LoadOrders` -Methode in der [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 > Die `Add` Methode wird automatisch für Ihre benutzerdefinierte Sammlung bereitgestellt, beim erben von <xref:System.ComponentModel.BindingList%601>.

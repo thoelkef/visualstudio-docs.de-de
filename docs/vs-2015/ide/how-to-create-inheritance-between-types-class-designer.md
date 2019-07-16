@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80d4ebe992a3406a4e8c54b033cd4f526335231b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9994733405932ed9f7b15cc8ce46c31215afaebc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416977"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680355"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Vorgehensweise: Erstellen der Vererbung zwischen Typen (Klassen-Designer) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Um eine Vererbungsbeziehung zwischen zwei Typen in einem Klassendiagramm mithilf
     >  Sie können vorhandene generische Typen zwar visualisieren, Sie können jedoch keine neuen generischen Typen erstellen. Es ist auch nicht möglich, die Typparameter für vorhandene generische Typen zu ändern.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vererbung](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
- [Grundlagen der Vererbung](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
+ [Vererbung](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
+ [Grundlagen der Vererbung](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
  [Vorgehensweise: Anzeigen einer Vererbung zwischen Typen (Klassen-Designer)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Visual C++-Klassen im Klassen-Designer](../ide/visual-cpp-classes-in-class-designer.md)

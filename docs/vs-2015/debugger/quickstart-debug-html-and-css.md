@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446129"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687652"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Schnellstart: Debuggen von HTML und CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -306,4 +306,4 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Produktsupport und Barrierefreiheit](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Produktsupport und Barrierefreiheit](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

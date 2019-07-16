@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetAlias method
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d08d9108ed4a433bcbcb17d6d4587532542b303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db9156e01843e859a2279e43f73c00bee21b3e9c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872462"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308742"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Ruft den Alias, der dieses Objekt zugeordnete ab, sofern vorhanden.
@@ -36,10 +39,9 @@ int GetAlias(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppAlias`
-
- [out] Gibt eine [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) Objekt, das den Alias für dieses Objekt darstellt, andernfalls einen null-Wert.
+## <a name="parameters"></a>Parameter
+`ppAlias`\
+[out] Gibt eine [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) Objekt, das den Alias für dieses Objekt darstellt, andernfalls einen null-Wert.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetAppIDFromAddress
 - GetAppIDFromAddress
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb90dbb44b274e84c7cc22d09249b26b6ee491f1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 59078cd574c30992d332983704aba4d70f069d5c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458273"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347437"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 Ruft den Bezeichner der Anwendungsdomäne Wenn Sie die debugadresse ab.
@@ -41,13 +41,11 @@ int GetAppIDFromAddress(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pAddress`\
+`pAddress`\
+[in] Debuggen Sie die Adresse, die durch dargestellt wird die [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
 
- [in] Debuggen Sie die Adresse, die durch dargestellt wird die [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
-
- `pAppID`\
-
- [out] Der Bezeichner der Anwendungsdomäne.
+`pAppID`\
+[out] Der Bezeichner der Anwendungsdomäne.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

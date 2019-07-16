@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc3ffecf5a2760077c0a5da4f4508163a48ca1a4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412958"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313890"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Bewirkt, dass den Prozess eine Anweisung oder Anweisung wechseln.
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pThread`
+## <a name="parameters"></a>Parameter
+`pThread`\
+[in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt, das den Thread wird abgestuften darstellt.
 
- [in] Ein [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) Objekt, das den Thread wird abgestuften darstellt.
+`sk`\
+[in] Eines der [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) Werte.
 
- `sk`
-
- [in] Eines der [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) Werte.
-
- `step`
-
- [in] Eines der [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) Werte.
+`step`\
+[in] Eines der [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) Werte.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird Fehlercode zurückgegeben.

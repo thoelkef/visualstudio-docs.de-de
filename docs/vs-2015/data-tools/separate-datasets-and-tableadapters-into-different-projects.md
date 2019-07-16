@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bfd6cc62fc93ca3a535fb60c4ea5e1323c720558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425097"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690238"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Aufteilen von DataSets und TableAdapters in verschiedene Projekte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und Dataset-Klassen in separaten Projekten generiert werden können. Dies ermöglicht eine bequeme Trennung der Anwendungsebenen und die Erzeugung von N-Tier-Datenanwendungen.  
+Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und Dataset-Klassen in separaten Projekten generiert werden können. Dies ermöglicht eine bequeme Trennung der Anwendungsebenen und die Erzeugung von N-Tier-Datenanwendungen.  
   
  Das folgende Verfahren beschreibt den Prozess der Verwendung von Dataset-Designer zum Generieren von Dataset-Code in ein Projekt, das aus dem Projekt getrennt ist, das die generierte enthält `TableAdapter` Code.  
   
@@ -70,4 +70,4 @@ Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](http://ms
  [Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)   
  [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

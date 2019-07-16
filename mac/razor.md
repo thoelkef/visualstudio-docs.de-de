@@ -1,32 +1,83 @@
 ---
 title: Razor
 description: Informationen zur Razor-Unterstützung in ASP.NET Core-Apps in Visual Studio für Mac
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: f4c572fffb819affbbe74f05b95e270f8bbaa285
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e5a3f61ee7065a0615a381bdcc03dafc3566893
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936942"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691269"
 ---
-# <a name="razor-support"></a>Razor-Unterstützung
+# <a name="razor"></a>Razor
 
-Visual Studio für Mac unterstützt die Bearbeitung durch Razor, einschließlich IntelliSense und Syntaxhervorhebung in *CSHTML*-Dateien.
+Visual Studio für Mac bietet Unterstützung für die Bearbeitung mit Razor, einschließlich IntelliSense und Syntaxhervorhebung in *CSHTML*-Dateien.
 
-![Bearbeitung durch Razor in Visual Studio für Mac](media/razor-image1.png)
+![Bearbeitung mit Razor in Visual Studio für Mac](media/razor-editor.png)
 
-## <a name="getting-started-with-razor-in-visual-studio-for-mac"></a>Erste Schritte mit Razor in Visual Studio für Mac
+Dieser Leitfaden bietet eine Einführung in die Erstellung Ihrer ersten Razor-Web-App. Detailliertere Anleitungen finden Sie in der [.NET Core-Dokumentation zu Razor Pages](/aspnet/core/razor-pages/index).
 
-Wenn Sie mit der Arbeit mit Razor in Visual Studio für Mac beginnen, müssen Sie sich zwischen zwei Optionen entscheiden: Razor Pages in ASP.NET Core und ASP.NET Core MVC. Tutorials und weitere Informationen zu den beiden Optionen finden Sie in den folgenden Leitfäden:
+## <a name="creating-a-new-razor-project"></a>Erstellen eines neuen Razor-Projekts
 
-- [Erste Schritte mit Razor-Seiten in ASP.NET Core mit Visual Studio für Mac unter macOS](/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1)
-- [Erste Schritte mit ASP.NET Core MVC und Visual Studio für Mac](/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1)
+* Wählen Sie auf der Willkommensseite **Neu** aus, um ein neues Projekt zu erstellen:
 
-## <a name="see-also"></a>Siehe auch
+![Neues Projekt in Visual Studio für Mac](media/razor-new.png)
 
-- [Erste Schritte mit C# und ASP.NET Core in Visual Studio (unter Windows)](/visualstudio/ide/tutorial-csharp-aspnet-core)
+* Navigieren Sie im Dialogfeld „Neues Projekt“ zu **.NET Core** > **App** > **Webanwendung**, und klicken Sie auf die Schaltfläche **Weiter**:
+
+![Razor-Projektvorlage](media/razor-new-project1.png)
+
+* Wählen Sie das erforderliche .NET Core-Zielframework aus (2.2 oder höher wird empfohlen), und klicken Sie auf **Weiter**.  Wählen Sie einen Namen für Ihr Projekt aus, und fügen Sie bei Bedarf Git-Unterstützung hinzu. Wählen Sie **Create** (Erstellen), um das Projekt zu erstellen.
+
+![Razor-Projektname](media/razor-new-project2.png)
+
+Visual Studio für Mac öffnet Ihr Projekt im Codelayout.
+
+* Führen Sie das Projekt mit **BEFEHLSTASTE+WAHLTASTE+F5** ohne Debuggen aus.
+
+Visual Studio startet [Kestral](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), öffnet einen Browser auf der Seite `https://localhost:5001` und zeigt Ihre erste Razor-Web-App an:
+
+![Razor-Web-App in Safari](media/razor-webapp.png)
+
+## <a name="project-anatomy"></a>Projektanatomie
+
+Razor-Web-Apps bestehen aus folgenden Komponenten:
+
+### <a name="pages-folder"></a>Ordner „Seiten“
+
+Der Ordner „Seiten“ im Projekt enthält die Webseiten sowie das CodeBehind für jede Seite:
+* Eine * *.cshtml*-Datei für das HTML-Markup und die Razor-Syntax.
+* Eine * *.cshtml.cs*-Datei für das C#-CodeBehind zum Verarbeiten von Seitenereignissen.
+
+Unterstützende Dateien haben Namen, die mit einem Unterstrich beginnen. Die Datei „_Layout.cshtml“ beispielsweise konfiguriert Benutzeroberflächenelemente, die für alle Seiten gelten. Mit dieser Datei werden das Navigationsmenü oben auf der Seite und der Urheberrechtshinweis unten auf der Seite eingerichtet. Weitere Informationen finden Sie unter [Layout in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
+
+### <a name="launch-settings"></a>Starteinstellungen
+
+Die Datei *launchSettings.json* enthält die IIS-Einstellungen, Anwendungs-URL und weitere zugehörige Einstellungen.
+
+### <a name="app-settings"></a>App-Einstellungen
+
+Die Datei *appSettings.json* enthält Konfigurationsdaten wie z.B. Verbindungszeichenfolgen.
+
+Weitere Informationen zur Konfiguration finden Sie unter [Konfiguration in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index).
+
+### <a name="wwwroot-folder"></a>Ordner „wwwroot“
+
+Enthält statische Dateien, z. B. HTML-Dateien, JavaScript-Dateien und CSS-Dateien. Weitere Informationen finden Sie unter [Statische Dateien in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files).
+
+### <a name="programcs"></a>Program.cs
+
+Enthält den Einstiegspunkt für das Programm. Weitere Informationen finden Sie unter [ASP.NET Core-Webhost](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host).
+
+### <a name="startupcs"></a>Startup.cs
+
+Enthält Code, mit dem das App-Verhalten konfiguriert wird, beispielsweise, ob die App Zustimmung für Cookies erfordert. Weitere Informationen finden Sie unter [Anwendungsstart in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup).
+
+## <a name="see-aso"></a>Siehe auch:
+
+Eine umfassendere Anleitung zum Erstellen von Razor-Web-Apps finden Sie unter [Einführung in Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).

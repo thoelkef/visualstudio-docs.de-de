@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricDword
 ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fc685d043b405fbd78a446722e41df4ca584b8e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457340"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322040"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Ruft den Wert einer Metrik anhand des Namens.
@@ -44,21 +44,17 @@ private int GetMetricDword(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszType`\
+`pszType`\
+[in] Der Typ der Metrik.
 
- [in] Der Typ der Metrik.
+`guidSection`\
+[in] Eindeutiger Bezeichner des Abschnitts.
 
- `guidSection`\
+`pszMetric`\
+[in] Der Name der Metrik.
 
- [in] Eindeutiger Bezeichner des Abschnitts.
-
- `pszMetric`\
-
- [in] Der Name der Metrik.
-
- `pdwValue`\
-
- [out] Gibt den Wert der Metrik.
+`pdwValue`\
+[out] Gibt den Wert der Metrik.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

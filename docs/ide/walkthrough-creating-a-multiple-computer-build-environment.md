@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581638"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262937"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Buildumgebung für mehrere Computer
 
@@ -62,7 +62,7 @@ In diesem Abschnitt wird das Kopieren bestimmter Dateien, Compilern, Buildtools,
 - Auf einem x86-Computer lautet der Standardspeicherort *C:\Programme\Microsoft Visual Studio*.
 - Auf einem x64-Computer lautet der Standardspeicherort *C:\Programme (x86)\Microsoft Visual Studio*.
 
-Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betriebssystem abhängt. Auf einem x86-Computer lautet der Name *Programme*, auf einem x64-Computer hingegen *Programme (x86)*. Ungeachtet der Systemarchitektur wird der Ordner *Programme* in dieser exemplarischen Vorgehensweise als *%ProgramFiles%* bezeichnet.
+Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betriebssystem abhängt. Auf einem x86-Computer lautet der Name *Programme*, auf einem x64-Computer hingegen *Programme (x86)* . Ungeachtet der Systemarchitektur wird der Ordner *Programme* in dieser exemplarischen Vorgehensweise als *%ProgramFiles%* bezeichnet.
 
 > [!NOTE]
 > Auf dem Build-Computer müssen sich alle relevanten Dateien auf demselben Laufwerk befinden. Der Laufwerkbuchstabe des Laufwerks darf sich allerdings von dem Laufwerkbuchstaben für das Laufwerk, in dem Visual Studio auf dem Hostcomputer installiert ist, unterscheiden. Auf jeden Fall müssen Sie den Speicherort der Dateien berücksichtigen, wenn Sie , wie weiter unten in diesem Dokument beschrieben, Registrierungseinträge erstellen.
@@ -169,7 +169,7 @@ Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betrie
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Kopieren Sie nur die folgenden Dateien aus dem Ordner *Debug_NonRedist\x86* oder dem Ordner *Debug_NonRedist\x64* wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable) beschrieben auf den Buildcomputer. Keine anderen Dateien dürfen kopiert werden.
+5. Kopieren Sie nur die folgenden Dateien aus dem Ordner *Debug_NonRedist\x86* oder dem Ordner *Debug_NonRedist\x64* wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) beschrieben auf den Buildcomputer. Keine anderen Dateien dürfen kopiert werden.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ Sie können eine Buildumgebung erstellen, die auf verschiedenen Computern bereit
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)

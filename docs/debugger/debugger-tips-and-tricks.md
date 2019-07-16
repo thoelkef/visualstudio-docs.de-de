@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853012"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043304"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -78,7 +78,7 @@ Es ist einfach, zeigen Sie die Variablen mithilfe der Debuggerfenster wie die **
 
 2. Starten Sie den Debugger (**F5**) und die Ausführung am Haltepunkt beendet.
 
-3. Suchen Sie die Variable in der **"lokal"** Fenster (**Debuggen > Windows > "lokal"**) mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID**.
+3. Suchen Sie die Variable in der **"lokal"** Fenster (**Debuggen > Windows > "lokal"** ) mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID**.
 
     ![Erstellen Sie eine ObjectID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
@@ -170,4 +170,5 @@ Zusätzliche Tipps und Tricks und ausführlichere Informationen finden Sie in fo
 - [7 verborgenen Funktionen in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Siehe auch
-[Tastenkombinationen](../ide/tips-and-tricks-for-visual-studio.md)
+
+[Tastenkombinationen](../ide/productivity-shortcuts.md)

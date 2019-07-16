@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d99cef315e37d729db856376929c27cd8b2fe55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 856fe295650c1203d180c8cc3c7127b03b0d668f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681202"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoWiederherstellen, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63433716"
 Verwenden Sie diese Seite des Dialogfelds „Optionen“, um anzugeben, ob Dateien automatisch gesichert werden sollen oder nicht. Auf dieser Seite können Sie auch angeben, ob modifizierte Dateien wiederhergestellt werden sollen, wenn die integrierte Entwicklungsumgebung (IDE) unerwartet heruntergefahren wird. Sie können auf dieses Dialogfeld zugreifen, indem Sie das Menü **Extras** und anschließend **Optionen** auswählen und dann im Ordner **Umgebung** die Seite **AutoWiederherstellen** auswählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **AutoWiederherstellen-Informationen speichern alle \< Minuten**  
  Verwenden Sie diese Option, um anzupassen, wie oft eine Datei automatisch im Editor gespeichert wird. Bei zuvor gespeicherten Dateien wird eine Kopie der Datei in \\...\Eigene Dokumente\Visual Studio\<*version*>\Sicherungsdateien\\<*projektname*> gespeichert. Wenn es sich um eine neue Datei handelt und diese noch nicht manuell gespeichert wurde, wird die Datei automatisch mit einem zufällig generierten Dateinamen gespeichert.  

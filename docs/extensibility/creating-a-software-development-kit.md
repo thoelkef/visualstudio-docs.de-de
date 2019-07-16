@@ -3,17 +3,17 @@ title: Erstellen eines Software Development Kits | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ad14712653aeca146ffe00cc5c79fd044ce2a4b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891224"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345386"
 ---
 # <a name="create-a-software-development-kit"></a>Erstellen eines Software Development Kits
 Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein einzelnes Element in Visual Studio verweisen können. Die **Verweis-Manager** Dialogfeld listet alle SDKs, die für das Projekt relevant sind. Wenn Sie ein Projekt eine SDK hinzufügen, sind die APIs in Visual Studio verfügbar.
@@ -34,7 +34,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
  Plattform-SDKs sind erforderlich, um apps für eine Plattform zu entwickeln. Z. B. die [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK ist erforderlich, um das Entwickeln von apps für [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Installation
- Auf alle Plattform-SDKs installiert werden*HKLM\Software\Microsoft\Microsoft SDKs\\[TPI] \v [TPV]\\ @InstallationFolder = [SDK-Stamm]*. Entsprechend der [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK installiert ist, auf *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Auf alle Plattform-SDKs installiert werden *HKLM\Software\Microsoft\Microsoft SDKs\\[TPI] \v [TPV]\\ @InstallationFolder = [SDK-Stamm]* . Entsprechend der [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK installiert ist, auf *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Layout
  Plattform-SDKs wurde das folgende Layout:
@@ -74,7 +74,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
 
 1. Geben sie in einem Registrierungsschlüssel:
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<Zielplattform > \v < Versionsnummer der Plattform\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **HKLM\Software\Microsoft\Microsoft SDKs\<Zielplattform > \v < Versionsnummer der Plattform\>\ExtensionSDKs\<SDKName >\<SDKVersion >** \
 
      und fügen Sie einen (Standard)-Unterschlüssel mit dem Wert des `<path to SDK><SDKName><SDKVersion>`.
 
@@ -104,7 +104,7 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
 
 2. *Verweise* Ordner: die Binärdateien, die die APIs enthalten. Dabei kann es sich um Windows-Metadatendateien (WinMD) oder Assemblys handeln.
 
-3. *Redist* Ordner: die Dateien, die für die Common Language Runtime/Debuggen erforderlich sind, und sollte als Teil der Anwendung des Benutzers verpackt zu erhalten. Alle Binärdateien platziert werden soll, darunter *\redist\\< Config\>\\< Arch\>*, und binärdateinamen sollte das folgende Format, um die Eindeutigkeit sicherzustellen: *]* \<Unternehmen >. \<Produkt >. \<Zweck >. \<Erweiterung ><em>. Z. B. *Microsoft.Cpp.Build.dll</em>. Alle Dateien mit Namen, die in Konflikt stehen möglicherweise mit dem Dateinamen aus anderen SDKs (z. B. Javascript, Css, Pri, Xaml, Png und Jpg-Dateien) platziert werden soll, darunter <em>\redist\\< Config\>\\< arch\> \\< Sdkname\> \* steuert, mit Ausnahme der Dateien, die XAML zugeordnet sind. Diese Dateien gespeichert werden sollen, darunter * \redist\\< Config\>\\< Arch\>\\< Komponentenname\>\\</em>.
+3. *Redist* Ordner: die Dateien, die für die Common Language Runtime/Debuggen erforderlich sind, und sollte als Teil der Anwendung des Benutzers verpackt zu erhalten. Alle Binärdateien platziert werden soll, darunter *\redist\\< Config\>\\< Arch\>* , und binärdateinamen sollte das folgende Format, um die Eindeutigkeit sicherzustellen: *]* \<Unternehmen >. \<Produkt >. \<Zweck >. \<Erweiterung ><em>. Z. B. *Microsoft.Cpp.Build.dll</em>. Alle Dateien mit Namen, die in Konflikt stehen möglicherweise mit dem Dateinamen aus anderen SDKs (z. B. Javascript, Css, Pri, Xaml, Png und Jpg-Dateien) platziert werden soll, darunter <em>\redist\\< Config\>\\< arch\> \\< Sdkname\> \* steuert, mit Ausnahme der Dateien, die XAML zugeordnet sind. Diese Dateien gespeichert werden sollen, darunter * \redist\\< Config\>\\< Arch\>\\< Komponentenname\>\\</em>.
 
 4. *DesignTime* Ordner: die Dateien, die auf nur pre-ausführen/Debuggen erforderlich sind, Zeit und sollten nicht als Teil des Benutzers-Anwendung verpackt werden. Diese können XML-Dokumente, Bibliotheken, Headern, Toolbox während der Entwurfszeit-Binärdateien, MSBuild-Elemente usw. sein. Alle SDK, die vorgesehen ist, für die Nutzung von einem systemeigenen Projekt muss eine *SDKName.props* Datei. Das folgende Beispiel zeigt ein Beispiel für diesen Dateityp.
 
@@ -161,7 +161,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: Der gesamte SDK-Produktname. Z. B. die [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK heißt "Microsoft.WinJS.1.0" und "Microsoft.WinJS.2.0", die zu derselben Familie der SDK-Familie, "Microsoft.WinJS" gehören. Dieses Attribut ermöglicht Visual Studio und MSBuild, um diese Verbindung zu erstellen. Wenn dieses Attribut nicht vorhanden ist, wird der SDK-Name als der Name der Produktreihe verwendet.
 
-3. FrameworkIdentity: Gibt eine Abhängigkeit auf eine oder mehrere Windows-Komponentenbibliotheken, die der Wert dieses Attributs in der verwendeten app-Manifest eingefügt wird. Dieses Attribut gilt nur für Windows-Komponentenbibliotheken zur Verfügung.
+3. FrameworkIdentity: Gibt eine Abhängigkeit auf eine oder mehrere Bibliotheken der Windows-Komponente. Der Wert dieses Attributs wird in der verwendeten app-Manifest eingefügt. Dieses Attribut gilt nur für Windows-Komponentenbibliotheken zur Verfügung.
 
 4. TargetFramework: Gibt an, die SDKs, die im Verweis-Manager und der Toolbox verfügbar sind. Dies ist eine durch Semikolons getrennte Liste von Target frameworkMoniker, z. B. ".NET Framework, Version = v2. 0; .NET Framework, Version 4.5.1 =". Wenn mehrere Versionen des gleichen Zielframeworks angegeben sind, verwendet der Verweis-Manager die niedrigste angegebene Version filtern. Z. B. wenn ".NET Framework, Version = v2. 0; .NET Framework, Version 4.5.1 =" angegeben ist, verwendet der Bezugsmanager ".NET Framework, Version = v2. 0". Wenn ein bestimmtes Ziel-Framework-Profil angegeben ist, wird nur für dieses Profil vom Verweis-Manager verwendet werden filtern. Z. B., wenn "Silverlight, Version = v4. 0, Profil WindowsPhone =" angegeben ist, Verweis-Manager filtert auf nur die Windows Phone-Profil ein Projekt, das vollständige Silverlight 4.0 Framework wird das SDK im Verweis-Manager nicht angezeigt.
 

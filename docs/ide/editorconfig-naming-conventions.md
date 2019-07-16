@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557319"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309820"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -25,7 +25,7 @@ Namenskonventionen sollten in der EditorConfig-Datei von der spezifischsten zur 
 
 Bei jeder Namenskonvention müssen Sie die Symbole, für die sie gilt, einen Benennungsstil und einen Schweregrad zum Erzwingen der Konvention mithilfe der nachstehend beschriebenen Eigenschaften angeben. Die Reihenfolge der Eigenschaften ist ohne Bedeutung.
 
-Wählen Sie zunächst einen Titel für Ihre Namensregel, den Sie in jeder der Eigenschaften verwenden werden, die zur vollständigen Beschreibung der Regel erforderlich sind. Beispielsweise ist `public_members_must_be_capitalized` ein guter, beschreibender Name für eine Benennungsregel. In den folgenden Abschnitten beziehen wir uns auf den von Ihnen gewählten Titel als **<namingRuleTitle\>**.
+Wählen Sie zunächst einen Titel für Ihre Namensregel, den Sie in jeder der Eigenschaften verwenden werden, die zur vollständigen Beschreibung der Regel erforderlich sind. Beispielsweise ist `public_members_must_be_capitalized` ein guter, beschreibender Name für eine Benennungsregel. Die folgenden Abschnitte dieser Seite beziehen sich auf den von Ihnen als **<namingRuleTitle\>** gewählten Titel.
 
 ## <a name="symbols"></a>Symbole
 
@@ -116,7 +116,7 @@ Eine Namensregel stimmt mit den Signaturen überein, die *alle* Modifizierer bes
 
 ## <a name="style"></a>Stil
 
-Nachdem wir die Gruppe von Symbolen bestimmt haben, für die die Benennungsregel gelten soll, müssen wir den Benennungsstil beschreiben. Ein Stil kann vorgeben, dass der Name ein bestimmtes Präfix oder ein bestimmtes Suffix hat oder dass einzelne Wörter im Namen durch ein bestimmtes Zeichen getrennt sind. Sie können auch einen Groß-/Kleinschreibungsstil angeben. Die Stileigenschaft hat das folgende Format:
+Nachdem Sie die Gruppe von Symbolen bestimmt haben, für die die Benennungsregel gelten soll, können Sie den Benennungsstil beschreiben. Ein Stil kann vorgeben, dass der Name ein bestimmtes Präfix oder ein bestimmtes Suffix hat oder dass einzelne Wörter im Namen durch ein bestimmtes Zeichen getrennt sind. Sie können auch einen Groß-/Kleinschreibungsstil angeben. Die Stileigenschaft hat das folgende Format:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -175,11 +175,19 @@ error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler in der *
 > [!NOTE]
 > Sie müssen keinen Build für Ihr Projekt durchführen, damit Namensregelverstöße angezeigt werden. Sie werden bei der Bearbeitung des Codes angezeigt, entweder in der **Fehlerliste** oder als Vorschlag.
 
+## <a name="default-naming-styles"></a>Standardbenennungsstile
+
+Wenn Sie keine benutzerdefinierten Benennungsregeln angeben, verwendet Visual Studio die folgenden Standardstile:
+
+- Bei Klassen, Strukturen, Enumerationen, Eigenschaften und Ereignissen mit `public`-, `private`-, `internal`-, `protected`- oder `protected_internal`-Zugriff, ist der standardmäßige Benennungsstil die Pascal-Schreibweise.
+
+- Bei Schnittstellen mit `public`-, `private`-, `internal`-, `protected`- oder `protected_internal`-Zugriff ist der standardmäßige Benennungsstil die Pascal-Schreibweise mit dem erforderlichen Präfix **I**.
+
 ## <a name="example"></a>Beispiel
 
 Die folgende *EDITORCONFIG-Datei* enthält eine Namenskonvention, die angibt, dass öffentliche Eigenschaften, Methoden, Felder, Ereignisse und Delegaten großgeschrieben werden müssen. Beachten Sie, dass diese Namenskonvention mehrere Arten von Symbolen angibt, für die die Regel gelten soll, wobei die Werte durch ein Komma getrennt werden.
 
-```EditorConfig
+```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -199,7 +207,7 @@ Der folgende Screenshot zeigt die Auswirkung dieser Namenskonvention im Editor. 
 
 Lassen Sie uns nun den Schweregrad des Verstoßes in `warning` ändern:
 
-```EditorConfig
+```ini
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
@@ -209,6 +217,8 @@ Wenn Sie Ihre Codedatei schließen und wieder öffnen, sehen Sie statt des Vorsc
 
 ## <a name="see-also"></a>Siehe auch
 
-- [.NET-Sprach- und Formatierungskonventionen](../ide/editorconfig-code-style-settings-reference.md)
+- [Sprachkonventionen](editorconfig-language-conventions.md)
+- [Formatierungskonventionen](editorconfig-formatting-conventions.md)
+- [Roslyn-Namenskonventionen](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [Erstellen portierbarer benutzerdefinierter Editor-Optionen](../ide/create-portable-custom-editor-options.md)
-- [.editorconfig-Datei der .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](editorconfig-code-style-settings-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Sammeln von Speicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile | Microsoft-Dokumentation
+title: 'Profiler-Befehlszeile: Abrufen von Arbeitsspeicherdaten für .NET Framework-Dienste'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d39a81bbf504a36d65b86ffa35901eeaf1b0916b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831654"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747817"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Sammeln von Arbeitsspeicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile
-In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicherbelegungs- und Objektlebensdauerdaten für einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst mithilfe der Samplingmethode über die Befehlszeile beschrieben.
+In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicherbelegungs- und Objektlebensdauerdaten für einen .NET Framework-Dienst mithilfe der Samplingmethode über die Befehlszeile beschrieben.
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 

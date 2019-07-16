@@ -8,16 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f07d4e2dc52ff05d67ec18d7f40f1119db582c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bac2041e9338f4b8b95755221a44157e0c409c8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894007"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747278"
 ---
 # <a name="get-started-with-wpf"></a>Erste Schritte mit WPF
 
-Windows Presentation Foundation (WPF) ist ein Benutzeroberflächen-Framework, mit dem Desktopclientanwendungen erstellt werden können. Die WPF-Entwicklungsplattform unterstützt eine breite Palette an Anwendungsentwicklungsfeatures, darunter ein Anwendungsmodell, Ressourcen, Steuerelemente, Grafik, Layout, Datenbindung, Dokumente und Sicherheit. Es ist eine Teilmenge von .NET Framework, wenn Sie also bisher Anwendungen mit dem .NET Framework mithilfe von ASP.NET oder Windows Forms erstellt haben, sollte Ihnen die Programmiererfahrung vertraut sein. WPF verwendet XAML (Extensible Application Markup Language), um ein deklaratives Modell für die Anwendungsprogrammierung bereitzustellen. Dieser Abschnitt enthält Themen, die Sie mit WPF bekannt machen und Ihnen den Einstieg erleichtern.
+Windows Presentation Foundation (WPF) ist ein Benutzeroberflächen-Framework, mit dem Desktopclientanwendungen erstellt werden können. Die WPF-Entwicklungsplattform unterstützt eine breite Palette an Anwendungsentwicklungsfeatures, darunter ein Anwendungsmodell, Ressourcen, Steuerelemente, Grafik, Layout, Datenbindung, Dokumente und Sicherheit. Das Framework gehört zu .NET. Wenn Sie also bereits Anwendungen mit dem .NET mithilfe von ASP.NET oder Windows Forms erstellt haben, sollte Ihnen die Programmierung vertraut sein. WPF verwendet XAML (Extensible Application Markup Language), um ein deklaratives Modell für die Anwendungsprogrammierung bereitzustellen.
+
+Dieser Abschnitt enthält Themen, die Sie mit WPF bekannt machen und Ihnen den Einstieg erleichtern.
 
 ## <a name="where-should-i-start"></a>Wie sollte ich vorgehen?
 
@@ -25,7 +27,7 @@ Windows Presentation Foundation (WPF) ist ein Benutzeroberflächen-Framework, mi
 |-|-|
 |Ich möchte direkt beginnen…|[Exemplarische Vorgehensweise: Walkthrough: My first WPF desktop application (Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung)](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Ich möchte XAML-Designtools vergleichen...|[Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md)|
-|Neu bei .NET?|[Übersicht über .NET Framework](/dotnet/framework/get-started/overview)<br /><br /> [Grundlagen der Anwendung](/dotnet/standard/application-essentials)<br /><br /> [Erste Schritte mit Visual C# und Visual Basic](../ide/quickstart-visual-basic-console.md)|
+|Neu bei .NET?|[Übersicht über .NET](/dotnet/framework/get-started/overview)<br /><br /> [Grundlagen der Anwendung](/dotnet/standard/application-essentials)<br /><br /> [Erste Schritte mit Visual C# und Visual Basic](../ide/quickstart-visual-basic-console.md)|
 |Weitere Informationen über WPF...|[WPF-Übersicht](../designers/introduction-to-wpf.md)<br /><br /> [Übersicht über XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Steuerelemente](/dotnet/framework/wpf/controls/)<br /><br /> [Übersicht über Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |Sind Sie ein Windows Forms-Entwickler?|[Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Unterstützte Szenarios bei der Zusammenarbeit von WPF und Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 

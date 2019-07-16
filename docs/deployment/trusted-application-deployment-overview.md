@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406637"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747670"
 ---
 # <a name="trusted-application-deployment-overview"></a>Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
 Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen, die mithilfe der Technologie für die Bereitstellung einer vertrauenswürdigen Anwendung erweiterte Berechtigungen aufweisen.
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauensw�
 - *CertMgr.exe*, eine Komponente des Internet Explorers und daher unter Windows 98 und allen späteren Versionen vorhanden. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Erstellen einer ClickOnce-Anwendung
- Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung ist eine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Clientanwendung kombiniert mit Manifestdateien, die die Anwendung beschreiben und Installationsparameter angegeben. Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]enthalten sind, generieren. Weitere Informationen zum [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ist eine .NET Framework-Clientanwendung kombiniert mit Manifestdateien, die die Anwendung beschreiben und Installationsparameter angegeben. Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]enthalten sind, generieren. Weitere Informationen zum [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  Die Bereitstellung einer vertrauenswürdigen Anwendung gilt für [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]und kann nur mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen verwendet werden.
 

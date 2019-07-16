@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Azure-Community-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948311"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586945"
 ---
 # <a name="azure-community"></a>Azure-Community
 
@@ -54,8 +54,6 @@ Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargeste
 |                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Ein Jahr    |    Ja     |
 |                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Ein Jahr    |    Ja     |
 | Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud), NFR<sup>1</sup> |        Alle        | Nicht verfügbar |     Nein     |
-|                                     Visual Studio Dev Essentials                                      |        Nicht zutreffend        | Nicht verfügbar |     Nein     |
-|                                                                                                       |                   |               |            |
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 

@@ -33,17 +33,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68f2b400cc92673131dea2fc281b830df86019f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443875"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704384"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundation (WCF) und [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], Microsoft-Technologien für die Erstellung verteilter Anwendungen. Dieses Thema enthält eine Einführung in die Dienste von einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Perspektive. Die vollständige Dokumentation finden Sie unter [WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
+Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundation (WCF) und [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], Microsoft-Technologien für die Erstellung verteilter Anwendungen. Dieses Thema enthält eine Einführung in die Dienste von einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Perspektive. Die vollständige Dokumentation finden Sie unter [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
 
 ## <a name="what-is-wcf"></a>Was ist WCF?
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] ist ein einheitliches Framework zum Erstellen von sicherer, zuverlässiger, Transaktiver und interoperabler verteilte Anwendungen. Er ersetzt ältere prozessübergreifende Kommunikation-Technologien wie ASMX Web Services, .NET Remoting, Enterprise Services (DCOM) und MSMQ. WCF vereint die Funktionalität der alle diese Technologien unter ein einheitliches Programmiermodell. Dies vereinfacht die Benutzeroberfläche der Entwicklung von verteilten Anwendungen.
@@ -92,21 +92,21 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
 
  Wenn Sie eine Vorlage auswählen, werden die Dateien für einen Dienstvertrag, einer dienstimplementierung und eine Konfiguration hinzugefügt. Alle erforderlichen Attribute bereits hinzugefügt werden, erstellen einen einfachen "Hello World"-Typ des Diensts, und Sie keinen Code schreiben. Sie möchten werden natürlich Code hinzufügen, um Funktionen und Methoden für den Dienst realen bereitzustellen, aber die Vorlagen bieten die grundlegenden Grundlage.
 
- Weitere Informationen zu WCF-Vorlagen finden Sie unter [WCF Visual Studio-Vorlagen](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f).
+ Weitere Informationen zu WCF-Vorlagen finden Sie unter [WCF Visual Studio-Vorlagen](https://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f).
 
 #### <a name="wcf-service-host"></a>WCF-Diensthost
  Beim Starten der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugger (durch Drücken von F5) für einen WCF-Dienstprojekt, der WCF-Diensthost-Tool automatisch gestartet wird, um den Dienst lokal hosten. WCF-Diensthost listet die Dienste in einem WCF-Dienst-Projekt, lädt die Projektkonfiguration und instanziiert einen Host für die einzelnen Dienste, die es findet.
 
  Verwenden Sie WCF-Diensthost, können Sie einen WCF-Dienst testen, ohne zusätzlichen Code schreiben oder einen bestimmten Host bei der Entwicklung.
 
- Weitere Informationen zu WCF-Diensthost finden Sie unter [WCF-Diensthost (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
+ Weitere Informationen zu WCF-Diensthost finden Sie unter [WCF-Diensthost (WcfSvcHost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>WCF-Testclient
  Das WCF-Testclient-Tool ermöglicht Ihnen das Eingeben der Testparameter, übermitteln, die Eingabe an einen WCF-Dienst, und zeigen Sie die Antwort, die der Dienst zurücksendet. Es bietet es sich um einen geeigneten Dienst testen bei Kombination mit WCF-Diensthost. Das Tool im Ordner \Common7\IDE finden Sie die für Visual Studio 2015 auf Laufwerk, die installiert "c:" Hier ist: **C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  Wenn Sie F5, um ein WCF-Dienstprojekt Debuggen drücken, wird WCF-Testclient öffnet und zeigt eine Liste der Dienstendpunkte, die in der Konfigurationsdatei definiert sind. Sie können die Parameter testen und starten Sie den Dienst und wiederholen Sie diesen Vorgang, um kontinuierlich zu testen und überprüfen Ihren Dienst.
 
- Weitere Informationen zu WCF-Testclient, finden Sie unter [WCF-Testclient (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7).
+ Weitere Informationen zu WCF-Testclient, finden Sie unter [WCF-Testclient (WcfTestClient.exe)](https://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7).
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Zugreifen auf WCF-Diensten in Visual Studio
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vereinfacht die Aufgabe des Erstellens von WCF-Clients, die automatisch generiert einen Proxy und einen Endpunkt für Dienste, die Sie hinzufügen, indem Sie mit der **Hinzufügen eines Dienstverweises** Dialogfeld. Alle erforderlichen Konfigurationsinformationen wird die Datei "App.config" hinzugefügt. Den meisten Fällen ist alles, was man dazu Unternehmen muss den Dienst instanziiert, um sie zu verwenden.
@@ -236,12 +236,12 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Enthält eine schrittweise Demonstration zum Erstellen und Verwenden von WCF-Dienste in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Exemplarische Vorgehensweise: Erstellen eines WCF-Datendiensts mit WPF und Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Enthält eine schrittweise Demonstration zum Erstellen und Verwenden von [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Verwenden der WCF-Entwicklungstools](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Erläutert das Erstellen und Testen von WCF-Dienste in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Vorgehensweise: Hinzufügen, aktualisieren oder Entfernen eines Dienstverweises](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Beschreibt das Hinzufügen, aktualisieren oder Entfernen von WCF-Diensten aus einem Projekt.|
+|[Verwenden der WCF-Entwicklungstools](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Erläutert das Erstellen und Testen von WCF-Dienste in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Vorgehensweise: Hinzufügen, aktualisieren oder Entfernen eines Dienstverweises](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Beschreibt das Hinzufügen, aktualisieren oder Entfernen von WCF-Diensten aus einem Projekt.|
 |[Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Erläutert, wie referenziert und verwendet [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md)|Dienstverweise und vermeiden sie, dass bietet einige häufige Fehler, die auftreten können.|
 |[Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)|Beschreibt allgemeine Debugprobleme und Techniken, die beim Debuggen von WCF-Diensten auftreten können.|
-|[Übersicht über den Windows Communication Foundation-Authentifizierung](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Beschreibt, wie WCF zu verwenden, um einen Rollendienst für eine Website bereitzustellen.|
+|[Übersicht über den Windows Communication Foundation-Authentifizierung](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Beschreibt, wie WCF zu verwenden, um einen Rollendienst für eine Website bereitzustellen.|
 |[Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.|
 |[Dienstverweis konfigurieren (Dialogfeld)](../data-tools/configure-service-reference-dialog-box.md)|Beschreibt die Elemente der Benutzeroberfläche von der **Dienstverweis konfigurieren** Dialogfeld.|
 

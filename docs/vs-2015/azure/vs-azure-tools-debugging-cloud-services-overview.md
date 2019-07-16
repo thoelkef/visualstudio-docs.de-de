@@ -1,20 +1,15 @@
 ---
 title: Optionen zum Debuggen von Azure-Clouddiensten | Microsoft Docs
 description: Debuggen von Azure-Clouddiensten
-services: visual-studio-online
-documentationcenter: n/a
-author: mikejo
-manager: douge
-editor: ''
+author: mikejo5000
+manager: jillfra
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
-ms.service: visual-studio-online
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: multiple
-ms.workload: na
-origin.date: 03/18/2017
-ms.date: 05/11/2018
-ms.author: v-junlch
+ms.topic: conceptual
+ms.workload: azure-vs
+ms.date: 03/18/2017
+ms.author: mikejo
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.openlocfilehash: 3b489b97551e5b5522cb58868b34dee4d9e5fb7b
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -36,5 +31,3 @@ Sie können das Remotedebuggen für Ihre Clouddienste zu dem Zeitpunkt aktiviere
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio:](./vs-azure-tools-debug-cloud-services-virtual-machines.md) Erfahren Sie Näheres zum Debuggen von Azure-Clouddiensten.
-
-<!-- Update_Description: update metedata properties -->

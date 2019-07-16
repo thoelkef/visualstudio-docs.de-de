@@ -1,8 +1,8 @@
 ---
-title: 'Tutorial: „Hallo Welt“-App mit Windows Presentation Foundation (WPF) in Visual Basic'
+title: Hallo Welt-App mit WPF in Visual Basic
 description: Erstellen Sie eine einfache Windows Desktop.NET-App in Visual Basic mit Visual Studio mit dem Windows Presentation Foundation (WPF) UI-Framework.
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 924b3000ffa0648a9086ed4771e921a939859804
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965940"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043560"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Erstellen einer einfachen Anwendung mit Visual Basic
 
@@ -131,7 +131,7 @@ Das Fenster sollte der folgenden Abbildung entsprechen:
 Das XAML-Markup sollte in etwa dem folgenden Beispiel entsprechen:
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Anpassen des Texts im Textblock
@@ -298,9 +298,20 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 3. Erstellen Sie die Projektmappe, indem Sie auf **Erstellen** > **Projektmappe erstellen** klicken.
 
-Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Neuerungen in Visual Studio 2017](../../ide/whats-new-visual-studio.md)
-- [Produktivitätstipps](../../ide/productivity-tips-for-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Neuerungen in Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
+- [Produktivitätstipps](../../ide/productivity-features.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Neues in Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Produktivitätstipps](../../ide/productivity-features.md)
+
+::: moniker-end

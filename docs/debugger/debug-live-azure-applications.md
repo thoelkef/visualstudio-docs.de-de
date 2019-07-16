@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860391"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692111"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger
 
@@ -65,17 +65,17 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 ::: moniker range=">=vs-2019"
 2. Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen** aus. Wählen Sie den Azure App Service aus, für den Ihr Projekt bereitgestellt wird, und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
 
-      ![Starten des Momentaufnahmedebuggers im Menü „Debuggen“](../debugger/media/snapshot-debug-menu-attach.png)
+   ![Starten des Momentaufnahmedebuggers im Menü „Debuggen“](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Auswählen der Azure-Ressource](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Auswählen der Azure-Ressource](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > Wenn Sie zum ersten Mal **Momentaufnahmedebugger anfügen** auswählen, werden Sie aufgefordert, die Momentaufnahmedebugger-Websiteerweiterung in Ihrem Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Azure App Service.
+   > [!IMPORTANT]
+   > Wenn Sie zum ersten Mal **Momentaufnahmedebugger anfügen** auswählen, werden Sie aufgefordert, die Momentaufnahmedebugger-Websiteerweiterung in Ihrem Azure App Service zu installieren. Diese Installation erfordert einen Neustart des Azure App Service.
 
-  > [!NOTE]
-  > Die Application Insights-Websiteerweiterung unterstützt auch das Debuggen von Momentaufnahmen. Wenn Sie eine „Websiteerweiterung veraltet“-Fehlermeldung erhalten, finden Sie unter [Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio](../debugger/debug-live-azure-apps-troubleshooting.md) weitere Informationen zum Aktualisieren.
+   > [!NOTE]
+   > Die Application Insights-Websiteerweiterung unterstützt auch das Debuggen von Momentaufnahmen. Wenn Sie eine „Websiteerweiterung veraltet“-Fehlermeldung erhalten, finden Sie unter [Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio](../debugger/debug-live-azure-apps-troubleshooting.md) weitere Informationen zum Aktualisieren.
 
    Visual Studio ist jetzt im Modus des Debuggens von Momentaufnahmen.
    ![Momentaufnahme-debugging-Modus](../debugger/media/snapshot-message.png)

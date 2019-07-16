@@ -21,24 +21,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566810"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745464"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 
 *Hierarchische Aktualisierung* bezieht sich auf das Zurückspeichern der aktualisierten Daten (aus einem Dataset mit zwei oder mehr verknüpfte Tabellen) in einer Datenbank beim Verwalten von Regeln für die referenzielle Integrität. *Referenzielle Integrität* bezieht sich auf die Konsistenzregeln, angegeben durch die Einschränkungen in einer Datenbank, die das Verhalten des einfügen, aktualisieren und Löschen von verknüpften Datensätzen zu steuern. Beispielsweise ist es an der referenziellen Integrität, der die Erstellung eines Kundendatensatzes vor Aufträge erstellt werden für diesen Kunden erzwingt.  Weitere Informationen zu Beziehungen in Datasets, finden Sie unter [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md).
 
-Die hierarchische Aktualisierung-Funktion verwendet einen `TableAdapterManager` zum Verwalten der `TableAdapter`s in einem typisierten Dataset. Die `TableAdapterManager` Komponente ist eine Visual Studio generierten Klasse, sodass es nicht Teil der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Beim Ziehen einer Tabelle aus der **Datenquellen** Fenster mit einer Windows Form oder WPF-Seite, Visual Studio fügt eine Variable vom Typ TableAdapterManager in das Formular oder die Seite, und es im Designer auf der Komponentenleiste angezeigt. Ausführliche Informationen zu den `TableAdapterManager` Klasse, finden Sie im Abschnitt TableAdapterManager-Verweis [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Die hierarchische Aktualisierung-Funktion verwendet einen `TableAdapterManager` zum Verwalten der `TableAdapter`s in einem typisierten Dataset. Die `TableAdapterManager` Komponente ist eine Visual Studio generierten Klasse, nicht für einen Typ .NET. Beim Ziehen einer Tabelle aus der **Datenquellen** Fenster mit einer Windows Form oder WPF-Seite, Visual Studio fügt eine Variable vom Typ TableAdapterManager in das Formular oder die Seite, und es im Designer auf der Komponentenleiste angezeigt. Ausführliche Informationen zu den `TableAdapterManager` Klasse, finden Sie im Abschnitt TableAdapterManager-Verweis [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Standardmäßig behandelt ein Dataset verknüpfte Tabellen als "nur für Beziehungen" Was bedeutet, dass sie keine foreign Key-Einschränkungen erzwingen. Sie können diese Einstellung zur Entwurfszeit ändern, indem Sie mit der **Dataset-Designer**. Wählen Sie die Zeile der Beziehung zwischen zwei Tabellen, um die **Beziehung** Dialogfeld. Bestimmt die Änderungen, die Sie hier vornehmen wie die `TableAdapterManager` verhält, wenn sie senden die Änderungen in den zugehörigen Tabellen in der Datenbank.
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Aktivieren der hierarchischen Aktualisierung in einem dataset
 
-Standardmäßig wird die hierarchische Aktualisierung für alle neuen DataSets aktiviert, die in einem Projekt hinzugefügt oder erstellt werden. Aktivieren oder deaktivieren Sie hierarchische Aktualisierung, durch Festlegen der **hierarchische Aktualisierung** Eigenschaft eines typisierten Datasets im Dataset, **"true"** oder **"false"**:
+Standardmäßig wird die hierarchische Aktualisierung für alle neuen DataSets aktiviert, die in einem Projekt hinzugefügt oder erstellt werden. Aktivieren oder deaktivieren Sie hierarchische Aktualisierung, durch Festlegen der **hierarchische Aktualisierung** Eigenschaft eines typisierten Datasets im Dataset, **"true"** oder **"false"** :
 
 ![Hierarchische Aktualisierung festlegen](../data-tools/media/hierarchical-update-setting.png)
 
@@ -114,7 +114,7 @@ Neben dem Commit für Änderungen an einer verknüpften untergeordneten Tabelle 
 
 Standardmäßig eine `TableAdapterManager` Klasse wird generiert, wenn Sie ein Dataset erstellen, die verknüpfte Tabellen enthält. Um zu verhindern, dass die Klasse generiert wird, ändern Sie den Wert von der `Hierarchical Update` -Eigenschaft des Datasets auf "false". Wenn Sie eine Tabelle, die eine Beziehung auf die Entwurfsoberfläche, ein Windows-Formulars oder einer WPF-Seite verfügt ziehen, wird Visual Studio eine Membervariable der Klasse deklariert. Wenn Sie die Datenbindung nicht verwenden, müssen Sie manuell die Variable zu deklarieren.
 
-Die `TableAdapterManager` -Klasse ist nicht Teil der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Aus diesem Grund können keine Sie es in der Dokumentation nachschlagen. Er wird zur Entwurfszeit im Rahmen des Erstellungsprozesses des Datasets erstellt.
+Die `TableAdapterManager` Klasse ist nicht vom Typ .NET. Aus diesem Grund können keine Sie es in der Dokumentation nachschlagen. Er wird zur Entwurfszeit im Rahmen des Erstellungsprozesses des Datasets erstellt.
 
 Im folgenden sind die häufig verwendeten Methoden und Eigenschaften von den `TableAdapterManager` Klasse:
 

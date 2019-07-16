@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963174"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291041"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
@@ -33,7 +32,6 @@ Passen Sie Ihre Codebasis ohne Projekt mithilfe der folgenden *JSON*-Dateien an:
 |-|-|
 |*tasks.vs.json*|Geben Sie benutzerdefinierte Buildbefehle und Compileroptionen sowie frei wählbare (nicht auf den Build bezogene) Tasks an.<br>Der Zugriff erfolgt über das Kontextmenüelement **Tasks konfigurieren** im **Projektmappen-Explorer**.|
 |*launch.vs.json*|Geben Sie Befehlszeilenargumente für das Debuggen an.<br>Der Zugriff erfolgt über das Kontextmenüelement **Einstellungen für Debuggen und Starten** im **Projektmappen-Explorer**.|
-|*VSWorkspaceSettings.json*|Allgemeine Einstellungen, die sich auf Tasks und Start auswirken können. Durch Definieren von `envVars` in *VSWorkspaceSettings.json* werden beispielsweise die angegebenen Umgebungsvariablen zu extern ausgeführten Befehlen hinzugefügt.<br>Sie können diese Datei manuell erstellen.|
 
 Diese *JSON*-Dateien befinden sich in einem ausgeblendeten Ordner namens *.vs* im Stammverzeichnis Ihrer Codebasis. Die Dateien *tasks.vs.json* und *launch.vs.json* werden von Visual Studio bei Bedarf erstellt, wenn Sie im **Projektmappen-Explorer** für eine Datei oder einen Ordner die Option **Tasks konfigurieren** oder **Einstellungen für Debuggen und Starten** auswählen. Diese *JSON*-Dateien werden ausgeblendet, da Benutzer sie in der Regel nicht in die Quellcodeverwaltung einchecken möchten. Wenn Sie jedoch die Möglichkeit haben möchten, sie in die Quellcodeverwaltung einzuchecken, ziehen Sie die Dateien in das Stammverzeichnis Ihrer Codebasis, wo sie sichtbar sind.
 
@@ -193,7 +191,7 @@ Im Stammverzeichnis und den Unterverzeichnisse einer Codebasis können mehrere *
 - Das übergeordnete Verzeichnis des aktuellen Verzeichnisses, bis hoch zum Stammverzeichnis.
 - Einstellungsdateien im Stammverzeichnis.
 
-Diese Aggregationsregeln gelten für die Dateien *tasks.vs.json* und *VSWorkspaceSettings.json*. Informationen darüber, wie Einstellungen in anderen Dateien aggregiert werden, finden Sie im entsprechenden Abschnitt für die Datei im vorliegenden Artikel.
+Diese Aggregationsregeln gelten für *tasks.vs.json*. Informationen darüber, wie Einstellungen in anderen Dateien aggregiert werden, finden Sie im entsprechenden Abschnitt für die Datei im vorliegenden Artikel.
 
 ### <a name="properties-for-tasksvsjson"></a>Eigenschaften für „tasks.vs.json“
 
@@ -290,10 +288,6 @@ Wenn Sie diese Datei speichern, wird der Name der neuen Konfiguration in der Dro
 > [!NOTE]
 > Die `configurations`-Arrayeigenschaft in *launch.vs.json* wird aus zwei Speicherorten gelesen: dem Stammverzeichnis für die Codebasis und dem *.vs*-Verzeichnis. Wenn ein Konflikt vorliegt, erhält der Wert in *.vs\launch.vs.json* Priorität.
 
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Definieren von Arbeitsbereichseinstellungen in „VSWorkspaceSettings.json“
-
-Sie können allgemeine Einstellungen angeben, die sich auf Tasks und Starteinstellungen in der *VSWorkspaceSettings.json* auswirken. Wenn Sie z.B. `envVars` in *VSWorkspaceSettings.json* definieren, fügt Visual Studio die angegebenen Umgebungsvariablen zu Befehlen hinzu, die extern ausgeführt werden. Um diese Datei zu verwenden, müssen Sie sie manuell erstellen.
-
 ## <a name="additional-settings-files"></a>Zusätzliche Einstellungsdateien
 
 Zusätzlich zu den drei in diesem Thema beschriebenen *JSON*-Dateien liest Visual Studio auch Einstellungen aus einigen weiteren Dateien, wenn diese in Ihrer Codebasis vorhanden sind.
@@ -313,7 +307,7 @@ Aus der *.gitignore*-Datei gelesene Einstellungen werden auf das übergeordnete 
 ## <a name="see-also"></a>Siehe auch
 
 - [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Open Folder-Projekte für C++](/cpp/ide/non-msbuild-projects)
-- [CMake-Projekte in C++](/cpp/ide/cmake-tools-for-visual-cpp)
-- [NMAKE-Referenz](/cpp/build/nmake-reference)
+- [Open Folder-Projekte für C++](/cpp/build/open-folder-projects-cpp)
+- [CMake-Projekte für C++](/cpp/build/cmake-projects-in-visual-studio)
+- [NMAKE-Referenz](/cpp/build/reference/nmake-reference)
 - [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

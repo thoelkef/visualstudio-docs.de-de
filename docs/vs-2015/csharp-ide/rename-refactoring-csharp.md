@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439959"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686038"
 ---
 # <a name="rename-refactoring-c"></a>Umgestaltung durch Umbenennen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439959"
 |-----------------|----------------------|  
 |Feld|Ändert sich die Deklaration und Verwendungen des Felds in den neuen Namen ein.|  
 |lokale variable|Ändert sich die Deklaration und Verwendung von Variablen in den neuen Namen ein.|  
-|Methode|Ändert den Namen der Methode "und" alle Verweise auf diese Methode in den neuen Namen an. **Hinweis**:  Wenn Sie eine Erweiterungsmethode umbenennen, wird der Umbenennungsvorgang für alle Instanzen der Methode, die im Bereich, unabhängig davon, ob die Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird. Weitere Informationen finden Sie unter [Erweiterungsmethoden](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Methode|Ändert den Namen der Methode "und" alle Verweise auf diese Methode in den neuen Namen an. **Hinweis**:  Wenn Sie eine Erweiterungsmethode umbenennen, wird der Umbenennungsvorgang für alle Instanzen der Methode, die im Bereich, unabhängig davon, ob die Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird. Weitere Informationen finden Sie unter [Erweiterungsmethoden](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Namespace|Ändert den Namen des Namespace in den neuen Namen in der Deklaration alle `using` Anweisungen und den vollqualifizierten Namen. **Hinweis**:  Beim Umbenennen eines Namespaces, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualisiert auch die **Default Namespace** Eigenschaft für die **Anwendung** auf der Seite die **Projekt-Designer**. Diese Eigenschaft kann nicht zurückgesetzt werden, dazu **rückgängig machen** aus der **bearbeiten** Menü. Zurücksetzen der **Default Namespace** Eigenschaftswert, müssen Sie die Eigenschaft im Ändern der **Projekt-Designer**. Weitere Informationen finden Sie unter [Anwendungsseite](../ide/reference/application-page-project-designer-csharp.md).|  
 |Eigenschaft|Ändert sich die Deklaration und Verwendung der Eigenschaft in den neuen Namen ein.|  
 |Typ|Ändert sich alle Deklarationen und alle Verwendungen des Typs in den neuen Namen ein, z. B. Konstruktoren und Destruktoren. Für partielle Typen wird der Umbenennungsvorgang für alle Komponenten.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Siehe auch  
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)   
- [Anonyme Typen](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Anonyme Typen](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

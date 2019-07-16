@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695284"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
     - `#include` eine `.h`-Datei, die Deklarationen der extern zugreifbaren Funktionen der DLL enthält.  
   
-         Die `.h`-Datei sollte Funktionsdeklarationen enthalten, die mit `_declspec(dllimport)` gekennzeichnet sind. Alternativ können Sie die Methoden mit einer DEF-Datei exportieren. Weitere Informationen finden Sie unter [Importieren und Exportieren](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
+         Die `.h`-Datei sollte Funktionsdeklarationen enthalten, die mit `_declspec(dllimport)` gekennzeichnet sind. Alternativ können Sie die Methoden mit einer DEF-Datei exportieren. Weitere Informationen finden Sie unter [Importieren und Exportieren](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Komponententests können nur auf Funktionen zugreifen, die von der zu testenden DLL exportiert werden.  
   
@@ -168,7 +168,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
      ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png "UteCpp07")  
   
-     Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
+     Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
 4. Fügen Sie in der wichtigsten CPP-Datei einen minimalen Text für die Funktion hinzu:  
   
@@ -395,7 +395,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
 ## <a name="see-also"></a>Siehe auch  
  [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Überblick über die Interoperabilität von verwaltetem/nicht verwaltetem Code](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Überblick über die Interoperabilität von verwaltetem/nicht verwaltetem Code](https://msdn.microsoft.com/library/ms973872.aspx)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)   
- [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Importieren und Exportieren](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Importieren und Exportieren](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

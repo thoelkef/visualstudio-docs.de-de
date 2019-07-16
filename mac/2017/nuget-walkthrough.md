@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989168"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692799"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Einschließen eines NuGet-Pakets in Ihr Projekt
 
@@ -43,7 +43,7 @@ Wenn das Fenster geöffnet ist, wird eine Liste von Paketen aus der Standardpake
 
 ![Liste von NuGet-Paketen](media/nuget-walkthrough-AddPackages1.png)
 
-Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel  `azure`, zu suchen. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche  **Paket hinzufügen** , um die Installation zu starten.
+Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel `azure`, zu finden. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche **Paket hinzufügen**, um die Installation zu starten.
 
 [Add Azure NuGet Package (Hinzufügen eines Azure-NuGet-Pakets)](media/nuget-walkthrough-AddPackages2.png)
 
@@ -51,13 +51,13 @@ Sobald das Paket heruntergeladen wurde, wird es Ihrem Projekt hinzugefügt. Die 
 
 * Der Knoten **Referenzen** wird eine Liste aller Assemblys enthalten, die Teil eines NuGet-Pakets sind.
 * Der Knoten **Pakete** zeigt alle NuGet-Pakete an, die Sie heruntergeladen haben. Sie können Pakete aus dieser Liste aktualisieren oder entfernen.
-* Die Datei **packages.config** wird Ihrem Projekt hinzugefügt. Diese XML-Datei wird von der IDE verwendet, um nachzuverfolgen, auf welche Paketversionen in diesem Projekt verwiesen wird. Diese Datei sollte nicht manuell bearbeitet werden, aber Sie sollten sie in der Versionskontrolle behalten. Beachten Sie, dass die Datei „project.json“ statt der Datei „packages.config“ verwendet werden kann. Bei der Datei „project.json“ handelt es sich um ein neues Dateiformat für Pakete, das mit NuGet 3 eingeführt wurde und die transitive Wiederherstellung unterstützt. Weitere Informationen zu „project.json“ finden Sie in der [NuGet documentation (NuGet-Dokumentation)](http://docs.microsoft.com/NuGet/Schema/Project-Json). Die Datei „project.json“ muss manuell hinzugefügt und das Projekt geschlossen und erneut geöffnet werden, bevor diese in Visual Studio für Mac verwendet werden kann.
+* Die Datei **packages.config** wird Ihrem Projekt hinzugefügt. Diese XML-Datei wird von der IDE verwendet, um nachzuverfolgen, auf welche Paketversionen in diesem Projekt verwiesen wird. Diese Datei sollte nicht manuell bearbeitet werden, aber Sie sollten sie in der Versionskontrolle behalten. Beachten Sie, dass die Datei „project.json“ statt der Datei „packages.config“ verwendet werden kann. Bei der Datei „project.json“ handelt es sich um ein neues Dateiformat für Pakete, das mit NuGet 3 eingeführt wurde und die transitive Wiederherstellung unterstützt. Weitere Informationen zu „project.json“ finden Sie in der [NuGet documentation (NuGet-Dokumentation)](https://docs.microsoft.com/NuGet/Schema/Project-Json). Die Datei „project.json“ muss manuell hinzugefügt und das Projekt geschlossen und erneut geöffnet werden, bevor diese in Visual Studio für Mac verwendet werden kann.
 
 ## <a name="using-nuget-packages"></a>Verwenden von NuGet-Paketen
 
 Sobald das NuGet-Paket hinzugefügt und die Projektverweise aktualisiert wurden, können Sie so mit der API programmieren, wie Sie es mit jedem anderen Projektverweis tun würden.
 
-Vergewissern Sie sich, dass Sie alle erforderlichen  `using` -Anweisungen am Anfang Ihrer Datei hinzufügen:
+Versichern Sie sich, dass sie alle erforderlichen `using`-Anweisungen zum Anfang Ihrer Datei hinzufügen:
 
 ```csharp
 using Newtonsoft.Json;

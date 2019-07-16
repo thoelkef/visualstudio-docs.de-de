@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794093"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328801"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -20,7 +20,13 @@ Sie können Ihrem Projekt oder der Codebasis eine [EditorConfig](http://editorco
 
 EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschließlich Visual Studio unterstützt. Außerdem ist es eine portable Komponente, die mit dem Code geliefert wird und Codierungsstile auch außerhalb von Visual Studio erzwingen kann.
 
-Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wird die Formatierung von vorhandenem Code nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Neue Codezeilen werden jedoch gemäß den Einstellungen aus EditorConfig formatiert. Sie können festlegen, welche EditorConfig-Einstellungen von **Dokument formatieren** auf die [**Seite Formatierungsoptionen**](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
+Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wird die Formatierung von vorhandenem Code nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Neue Codezeilen werden jedoch gemäß den Einstellungen aus EditorConfig formatiert.
+
+::: moniker range="vs-2017"
+
+Sie können festlegen, welche EditorConfig-Einstellungen von **Dokument formatieren** auf die [**Seite Formatierungsoptionen**](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
+
+::: moniker-end
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [EditorConfig in Visual Studio für Mac](/visualstudio/mac/editorconfig).
@@ -49,15 +55,15 @@ Der Editor in Visual Studio unterstützt die gebräuchlichsten [EditorConfig-Eig
 - insert\_final_newline
 - root
 
-Die Einstellungen des EDITORCONFIG-Editors werden in allen von Visual Studio unterstützten Sprachen mit Ausnahme von XML unterstützt. Zusätzlich unterstützt EditorConfig Konventionen für [Programmierstile](../ide/editorconfig-code-style-settings-reference.md) und [Namenskonventionen](../ide/editorconfig-naming-conventions.md) für C# und Visual Basic.
+Die Einstellungen des EDITORCONFIG-Editors werden in allen von Visual Studio unterstützten Sprachen mit Ausnahme von XML unterstützt. Zusätzlich unterstützt EditorConfig Konventionen für [Codeformate](../ide/editorconfig-code-style-settings-reference.md) wie z.B. Konventionen für [Sprache](../ide/editorconfig-language-conventions.md), [Formatierung](../ide/editorconfig-formatting-conventions.md) und [Benennung](../ide/editorconfig-naming-conventions.md) für C# und Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Hinzufügen und Entfernen von EditorConfig-Dateien
 
-Durch das Hinzufügen einer EDITORCONFIG-Datei zu Ihrem Projekt oder Ihrer Codebasis werden vorhandene Formate nicht in die neuen umgewandelt. Wenn in Ihrer Datei beispielsweise Einzüge vorhanden sind, die mit Tabstopps formatiert sind, und Sie eine EDITORCONFIG-Datei hinzufügen, bei der die Einzüge mit Leerräumen formatiert sind, werden die Einzugszeichen nicht automatisch in Leerräume konvertiert. Neue Codezeilen werden jedoch gemäß den Einstellungen aus der EDITORCONFIG-Datei formatiert. Darüber hinaus werden beim Formatieren des Dokuments (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **Strg**+**K**, **Strg**+**D**) die Einstellungen in der EDITORCONFIG-Datei auf vorhandene Codezeilen angewendet.
+Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt oder Ihrer Codebasis hinzufügen, werden alle neuen Zeilen, die Sie schreiben, gemäß der EditorConfig-Datei formatiert. Durch das Hinzufügen einer EditorConfig-Datei werden vorhandene Formate jedoch erst dann in die neuen umgewandelt, wenn Sie das Dokument formatieren. Wenn in Ihrer Datei beispielsweise Einzüge vorhanden sind, die mit Tabstopps formatiert sind, und Sie eine EditorConfig-Datei hinzufügen, bei der die Einzüge mit Leerzeichen formatiert sind, werden die Einzugszeichen nicht automatisch in Leerzeichen konvertiert. Beim Formatieren des Dokuments (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D**) werden die Einstellungen in der EditorConfig-Datei auf vorhandene Codezeilen angewendet.
 
-Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entfernen, müssen Sie alle geöffneten Codedateien schließen und erneut öffnen, um die globalen Editor-Einstellungen für neue Codezeilen wiederherzustellen.
+Wenn Sie eine EditorConfig-Datei aus Ihrem Projekt oder Ihrer Codebasis entfernen und neue Codezeilen gemäß den globalen Editor-Einstellungen formatiert werden sollen, müssen Sie alle geöffneten Codedateien schließen und erneut öffnen.
 
-### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Hinzufügen einer EditorConfig-Datei zu einem Projekt oder einer Projektmappe
+### <a name="add-an-editorconfig-file-to-a-project"></a>Hinzufügen einer EditorConfig-Datei zu einem Projekt
 
 1. Öffnen Sie ein Projekt oder eine Projektmappe in Visual Studio. Wählen Sie den Knoten „Projekt“ oder „Projektmappe“ aus, je nachdem, ob Ihre Einstellungen für die *EDITORCONFIG*-Datei für alle Projekte in der Projektmappe oder nur für ein Projekt gelten sollen. Sie können ebenfalls einen Ordner in Ihrem Projekt oder in Ihrer Projektmappe auswählen, zu dem die *EDITORCONFIG*-Datei hinzugefügt werden soll.
 
@@ -65,34 +71,27 @@ Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entferne
 
    Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-1. Klicken Sie in den Kategorien auf der linken Seite auf **Allgemein**, und wählen Sie die Vorlage **Textdatei** aus. Geben Sie `.editorconfig` im Textfeld **Name** ein, und klicken Sie dann auf **Hinzufügen**.
+1. Suchen Sie im Suchfeld nach **editorconfig**.
+
+   In den Suchergebnissen werden zwei Elementvorlagen für die **EditorConfig-Datei** angezeigt.
+
+   ![Elementvorlagen für EditorConfig-Datei in Visual Studio](media/editorconfig-item-templates.png)
+
+1. Wählen Sie die Vorlage **editorconfig-Datei (Standard)** aus, um eine EditorConfig-Datei hinzuzufügen, die vorab mit zwei grundlegenden EditorConfig-Optionen für Einzugsformat und Größe aufgefüllt ist. Alternativ dazu können Sie auch die Vorlage **editorconfig-Datei (.NET)** auswählen, um eine EditorConfig-Datei hinzuzufügen, die vorab mit standardmäßigen [Konventionen für .NET-Codeformat, Formatierung und Benennung](../ide/editorconfig-code-style-settings-reference.md) aufgefüllt ist.
 
    Anschließend wird eine *EDITORCONFIG*-Datei in Projektmappen-Explorer angezeigt und im Editor geöffnet.
 
-   ![EDITORCONFIG-Datei in Projektmappen-Explorer](media/editorconfig-in-solution-explorer.png)
+   ![EDITORCONFIG-Datei in Projektmappen-Explorer und Editor](media/editorconfig-dotnet.png)
 
-1. Bearbeiten Sie die Datei wie gewünscht, zum Beispiel folgendermaßen:
-
-   ```EditorConfig
-   root = true
-
-   [*.{cs,vb}]
-   indent_size = 4
-   trim_trailing_whitespace = true
-
-   [*.cs]
-   csharp_new_line_before_open_brace = methods
-   ```
+1. Bearbeiten Sie die Datei wie gewünscht.
 
 ### <a name="other-ways-to-add-an-editorconfig-file"></a>Weitere Möglichkeiten zum Hinzufügen einer EditorConfig-Datei
 
 Es gibt mehrere Möglichkeiten, wie Sie Ihrem Projekt eine EditorConfig-Datei hinzufügen können:
 
-- Installieren Sie die [EditorConfig-Sprachdiensterweiterung](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig), die das Hinzufügen einer leeren *.editorconfig*-Datei zu Projekten vereinfacht. Klicken Sie nach der Installation dieser Erweiterung im Knoten „Projektmappe“, „Projekt“ oder in einem beliebigen Ordner im **Projektmappen-Explorer** im Kontextmenü oder in dem Menü, das sich durch Rechtsklick öffnet, auf **Hinzufügen** > **.editorconfig-Datei**. Diese Erweiterung verbessert auch die Bearbeitungsfunktionen für die *.editorconfig* Datei.
+- Das [Coderückschluss-Feature](/visualstudio/intellicode/code-style-inference) von IntelliCode für Visual Studio leitet Codeformate aus vorhandenem Code ab. Dann erstellt das Feature eine nicht leere EditorConfig-Datei, in der Ihre bevorzugten Codeformate bereits definiert sind.
 
-   ![Hinzufügen der EDITORCONFIG-Datei mit Erweiterung](media/editorconfig-extension-add.png)
-
-- Testen Sie die [IntelliCode-Erweiterung](/visualstudio/intellicode/intellicode-visual-studio). Diese experimentelle Erweiterung leitet Ihre Codeformate aus vorhandenem Code ab und erstellt dann eine nicht leere *.editorconfig*-Datei, in der Ihre Einstellungen für das Codeformat bereits definiert sind.
+- Ab Visual Studio 2019 können Sie in **Extras** > **Optionen** [eine EditorConfig-Datei basierend auf Ihren Codeformateinstellungen generieren](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files).
 
 ## <a name="file-hierarchy-and-precedence"></a>Dateihierarchie und Rangfolge
 
@@ -104,7 +103,7 @@ Fügen Sie zur Außerkraftsetzung einiger oder aller EditorConfig-Einstellungen 
 
 Wenn einige, aber nicht alle Einstellungen außer Kraft gesetzt werden sollen, geben Sie nur diese Einstellungen in der *EDITORCONFIG*-Datei an. Nur die Eigenschaften, die Sie explizit in der Datei auf der niedrigsten Ebene auflisten, werden außer Kraft gesetzt. Andere Einstellungen aus *EDITORCONFIG*-Dateien auf höheren Ebenen werden weiterhin angewendet. Wenn Sie sicherstellen möchten, dass die _Nein_-Einstellungen von _beliebigen_ *EDITORCONFIG*-Dateien auf höheren Ebenen auf diesen Teil der Codebasis angewendet werden, fügen Sie die ```root=true```-Eigenschaft zu der *EDITORCONFIG*-Datei auf niedrigerer Ebene hinzu:
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +134,7 @@ Wie erwartet erfolgt der Einzug beim Drücken der **TAB-TASTE** in der nächsten
 
 Fügen Sie dem Projekt eine neue Datei mit dem Namen *EDITORCONFIG* mit folgenden Inhalten hinzu. Die Einstellung `[*.cs]` bewirkt, dass sich diese Änderung nur auf C#-Codedateien in diesem Projekt auswirkt.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 
@@ -169,7 +168,6 @@ Sie können den Bereich Ihrer EDITORCONFIG-Konventionen steuern, indem Sie die `
 ## <a name="see-also"></a>Siehe auch
 
 - [.NET-Codeformatkonventionen](../ide/editorconfig-code-style-settings-reference.md)
-- [.NET-Benennungskonventionen](../ide/editorconfig-naming-conventions.md)
 - [Supporting EditorConfig for a language service (Unterstützen von EditorConfig für einen Sprachdienst)](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Features des Code-Editors](writing-code-in-the-code-and-text-editor.md)

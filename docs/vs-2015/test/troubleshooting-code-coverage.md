@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 926c9f329ccea8e38c60d4ca05cb1542df725414
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117407"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825876"
 ---
 # <a name="troubleshooting-code-coverage"></a>Problembehandlung bei der Code Coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
  Stellen Sie sicher, dass die Assembly nicht aus dem systemeigenen Imagecache geladen wird.  
   
  Erklärung  
- Systemeigene Imageassemblys werden aus Leistungsgründen nicht analysiert. Weitere Informationen finden Sie unter [Ngen.exe (Native Image Generator)](http://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
+ Systemeigene Imageassemblys werden aus Leistungsgründen nicht analysiert. Weitere Informationen finden Sie unter [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
  Auflösung  
  Verwenden Sie eine MSIL-Version der Assembly. Verarbeiten Sie sie nicht mit NGen.  
@@ -113,11 +113,11 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
   
 - **Fehler in regulärem Ausdruck**  
   
-     Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:  
-  
-    - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`  
-  
-    - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`  
+  Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:  
+
+  - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`  
+
+  - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Benutzerdefinierte Datei ".runsettings" mit falschen Ausschlüssen  
  Analyse  

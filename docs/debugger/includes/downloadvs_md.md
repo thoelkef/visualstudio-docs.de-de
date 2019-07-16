@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: bccfb9eee59aba9397f57b773cb06c3d2de89f9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848796"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256221"
 ---
 Laden Sie [Visual Studio Community](https://visualstudio.microsoft.com/vs/#downloadvs) herunter, oder vergleichen Sie die [Visual Studio-Editionen](https://visualstudio.microsoft.com/vs/compare/)

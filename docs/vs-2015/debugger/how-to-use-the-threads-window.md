@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434865"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824255"
 ---
-# <a name="how-to-use-the-threads-window"></a>Vorgehensweise: Verwenden des Fensters Threads
+# <a name="how-to-use-the-threads-window"></a>Vorgehensweise: Verwenden des Fensters „Threads“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können.  
@@ -72,11 +72,11 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 - Führen Sie einen der folgenden Schritte aus:  
   
-    - Doppelklicken Sie auf einen beliebigen Thread.  
-  
-    - Mit der rechten Maustaste in eines Threads aus, und klicken Sie auf **zu Thread wechseln**.  
-  
-         Der gelbe Pfeil wird neben dem neuen aktiven Thread angezeigt. Die grauen Konturen eines Pfeils geben den Thread, in dem der Debugger die Ausführung unterbrochen hat.  
+  - Doppelklicken Sie auf einen beliebigen Thread.  
+
+  - Mit der rechten Maustaste in eines Threads aus, und klicken Sie auf **zu Thread wechseln**.  
+
+    Der gelbe Pfeil wird neben dem neuen aktiven Thread angezeigt. Die grauen Konturen eines Pfeils geben den Thread, in dem der Debugger die Ausführung unterbrochen hat.  
   
 ## <a name="grouping-and-sorting-threads"></a>Gruppieren und Sortieren von Threads  
  Beim Gruppieren von Threads wird in der Tabelle eine Überschrift für jede Gruppe angezeigt. Die Überschrift enthält eine Gruppenbeschreibung (z. B. "Arbeitsthread" oder "Nicht gekennzeichnete Threads") und ein Strukturansicht-Steuerelement. Die einzelnen Threads jeder Gruppe werden unter der Gruppenüberschrift angezeigt. Wenn Sie die einzelnen Threads einer Gruppe ausblenden möchten, können Sie die Gruppe mithilfe des Strukturansicht-Steuerelements reduzieren.  
@@ -116,18 +116,18 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 - Wechseln Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** in das Feld **Suchen**, und führen Sie Folgendes aus:  
   
-    - Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
-  
-         \- oder –  
-  
-    - Klicken Sie auf die Dropdownliste neben der **Suche** Feld, und wählen Sie eine Suchzeichenfolge aus einer vorherigen Suche.  
+  - Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
+
+    \- oder –  
+
+  - Klicken Sie auf die Dropdownliste neben der **Suche** Feld, und wählen Sie eine Suchzeichenfolge aus einer vorherigen Suche.  
   
 - (Optional) Wenn bei der Suche die vollständige Aufrufliste berücksichtigt werden soll, wählen Sie **Aufrufliste durchsuchen** aus.  
   
 ## <a name="freezing-and-thawing-threads"></a>Sperren und Entsperren von Threads  
  Wenn ein Thread eingefroren ist, wird die Threadausführung vom System auch dann nicht gestartet, wenn Ressourcen verfügbar sind.  
   
- In nativem Code können Sie anhalten oder Fortsetzen von Threads durch Aufruf der Windows-Funktionen `SuspendThread` und `ResumeThread` oder die MFC-Funktionen [CWinThread:: SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) und [CWinThread:: ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Wenn Sie aufrufen `SuspendThread` oder `ResumeThread`, Sie ändern die *Unterbrechungszähler*, die angezeigt wird, der **Threads** Fenster. Wenn Sie jedoch einen systemeigenen Thread einfrieren oder reaktivieren, wird dadurch der Unterbrechungszähler nicht geändert. Im systemeigenen Code kann ein Thread nur ausgeführt werden, wenn er reaktiviert ist und sein Unterbrechungszähler den Wert 0 aufweist.  
+ In nativem Code können Sie anhalten oder Fortsetzen von Threads durch Aufruf der Windows-Funktionen `SuspendThread` und `ResumeThread` oder die MFC-Funktionen [CWinThread:: SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) und [CWinThread:: ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Wenn Sie aufrufen `SuspendThread` oder `ResumeThread`, Sie ändern die *Unterbrechungszähler*, die angezeigt wird, der **Threads** Fenster. Wenn Sie jedoch einen systemeigenen Thread einfrieren oder reaktivieren, wird dadurch der Unterbrechungszähler nicht geändert. Im systemeigenen Code kann ein Thread nur ausgeführt werden, wenn er reaktiviert ist und sein Unterbrechungszähler den Wert 0 aufweist.  
   
  In verwaltetem Code hat das Einfrieren oder Reaktivieren keinen Einfluss auf den Wert des Unterbrechungszählers. In verwaltetem Code hat ein eingefrorener Thread den Unterbrechungszähler 1 auf. In nativem Code hat der Unterbrechungszähler eines eingefrorenen Threads den Wert 0, es sei denn, seine Ausführung wurde durch einen `SuspendThread`-Aufruf unterbrochen.  
   

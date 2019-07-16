@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948626"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032858"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements
 
@@ -95,7 +95,6 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |Nein.  Nur für neue Abonnenten verfügbar         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 Monate                                             |  Nein.  Nur für neue Abonnenten verfügbar         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 Monate                                              | Nein.  Nur für neue Abonnenten verfügbar         |
-| Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA|
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*

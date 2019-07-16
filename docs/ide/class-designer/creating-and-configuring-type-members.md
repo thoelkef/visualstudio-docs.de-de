@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975540"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746924"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Erstellen und Konfigurieren von Typmembern im Klassen-Designer
 
@@ -114,7 +114,7 @@ Sie können einen Member mit einem der folgenden Tools erstellen:
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Fenster **Klassendetails** angezeigt.
 
-2. Klicken Sie im Fenster **Klassendetails** in dem Abschnitt, der die Art von Member enthält, die hinzugefügt werden soll, auf **\<Member hinzufügen>**. Wenn Sie z.B. ein Feld hinzufügen möchten, klicken Sie auf **\<Feld hinzufügen>**.
+2. Klicken Sie im Fenster **Klassendetails** in dem Abschnitt, der die Art von Member enthält, die hinzugefügt werden soll, auf **\<Member hinzufügen>** . Wenn Sie z.B. ein Feld hinzufügen möchten, klicken Sie auf **\<Feld hinzufügen>** .
 
 3. Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE.
 
@@ -154,7 +154,7 @@ In jeder Memberzeile werden die folgenden Elemente angezeigt:
 
 - **\<Member hinzufügen>**
 
-     Die letzte Zeile des Fensters **Klassendetails** enthält in der Zelle **Name** den Text **\<Member hinzufügen>**. Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
+     Die letzte Zeile des Fensters **Klassendetails** enthält in der Zelle **Name** den Text **\<Member hinzufügen>** . Wenn Sie auf diese Zelle klicken, können Sie einen neuen Member erstellen. Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
 
 - **Membereigenschaften im Eigenschaftenfenster**
 
@@ -205,7 +205,7 @@ Parameterzeilen enthalten die folgenden Elemente:
 
 - **\<Parameter hinzufügen>**
 
-     Die letzte Parameterzeile eines Members enthält im Feld **Name** den Text **<Parameter hinzufügen\>**. Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Die letzte Parameterzeile eines Members enthält im Feld **Name** den Text **<Parameter hinzufügen\>** . Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeigt wie im Fenster **Klassendetails**: **Name**, **Typ**, **Modifizierer**, **Zusammenfassung** sowie die Eigenschaft **Optional Default** (Optionaler Standard). Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.
 
@@ -225,7 +225,7 @@ Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeig
 
      Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
 
-3. Klicken Sie auf **\<Parameter hinzufügen>**, geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<Parameter hinzufügen>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird der Methode und dem Code der Methode hinzugefügt. Er wird im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 
@@ -241,7 +241,7 @@ Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeig
 
      Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
 
-3. Klicken Sie auf **\<Parameter hinzufügen>**, geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<Parameter hinzufügen>** , geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird der Methode und dem Code der Methode hinzugefügt. Er wird im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 
@@ -308,7 +308,7 @@ Wenn Sie versuchen, ein Projekt zu speichern, das einen Typ enthält, dessen Que
 
 Weist eine Codedatei einen Syntaxfehler auf, werden die Formen, die den Code in der Datei anzeigen, so lange mit Schreibschutz versehen, bis der Syntaxfehler behoben wird. Formen in diesem Zustand zeigen roten Text und ein rotes Symbol mit der Quickinfo "Die Quellcodedatei enthält einen Analysefehler" an.
 
-Ein Typ, auf den verwiesen wird (z. B. ein .NET Framework-Typ) und der unter einem anderen Projektknoten oder unter dem Knoten einer Assembly, auf die verwiesen wird, vorhanden ist, wird auf der Entwurfsoberfläche des Klassen-Designers als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.
+Ein Typ, auf den verwiesen wird (z.B. ein .NET-Typ) und der in einem anderen Projektknoten oder in dem Knoten einer referenzierten Assembly vorhanden ist, wird auf der Entwurfsoberfläche des Klassen-Designers als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.
 
 Indexer sind im Code und im Fenster **Klassendetails** mit Lese- und Schreibzugriff versehen. Der Indexername hingegen ist schreibgeschützt.
 

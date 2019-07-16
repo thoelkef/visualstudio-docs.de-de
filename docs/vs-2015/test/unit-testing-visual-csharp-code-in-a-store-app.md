@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445931"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695255"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Unittests von Visual C#-Code in einer Store-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 >   - Führen Sie Ihre Tests nach jedem Build aus.  
 >   - VS Enterprise enthält auch Microsoft Fakes, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.  
 > 
->   Weitere Informationen finden Sie unter [Überprüfen von Code mithilfe von Komponententests](http://msdn.microsoft.com/library/dd264975.aspx) in der MSDN Library.  
+>   Weitere Informationen finden Sie unter [Überprüfen von Code mithilfe von Komponententests](https://msdn.microsoft.com/library/dd264975.aspx) in der MSDN Library.  
   
 ## <a name="BKMK_In_this_topic"></a> In diesem Thema  
  [Erstellen der Projektmappe und des Komponententestprojekts](#BKMK_Create_the_solution_and_the_unit_test_project)  

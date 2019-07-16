@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b46037619bf7e43b647d4e3bc557c8ae9290cbd1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458593"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321992"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Ruft den eindeutigen Bezeichner für eine Metrik mit dem angegebenen Namen ab.
@@ -44,21 +44,17 @@ private int GetMetricGuid(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszType`\
+`pszType`\
+[in] Der Typ der Metrik.
 
- [in] Der Typ der Metrik.
+`guidSection`\
+[in] Eindeutiger Bezeichner des Abschnitts.
 
- `guidSection`\
+`pszMetric`\
+[in] Der Name der Metrik.
 
- [in] Eindeutiger Bezeichner des Abschnitts.
-
- `pszMetric`\
-
- [in] Der Name der Metrik.
-
- `pguidValue`\
-
- [out] Gibt den eindeutigen Bezeichner der Metrik zurück.
+`pguidValue`\
+[out] Gibt den eindeutigen Bezeichner der Metrik zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

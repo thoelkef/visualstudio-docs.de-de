@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: „Hallo Welt“-App mit Windows Presentation Foundation (WPF) in C#'
+title: Hallo Welt-App mit WPF in C#
 description: Erstellen Sie eine einfache Windows Desktop.NET-App in C# mit Visual Studio mit dem Windows Presentation Foundation (WPF) UI-Framework.
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 886a17b4b702802faa06f28ab1df485b56de9636
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426416"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043548"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C\#
 
@@ -62,7 +62,7 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
      ![Wählen Sie auf der Menüleiste "Datei", "Neu", "Projekt" aus.](../media/exploreide-filenewproject.png)
 
-1. Klicken Sie im Dialogfeld **Neues Projekt** auf **Installiert** > **Visual C#** > **Windows-Desktop**, und wählen Sie anschließend die Vorlage **WPF-App (.NET Framework)** aus. Nennen Sie das Projekt **HelloWPFApp**, und wählen Sie **OK** aus.
+1. Klicken Sie im Dialogfeld **Neues Projekt** auf **Installiert** > **Visual C#**  > **Windows-Desktop**, und wählen Sie anschließend die Vorlage **WPF-App (.NET Framework)** aus. Nennen Sie das Projekt **HelloWPFApp**, und wählen Sie **OK** aus.
 
      ![Vorlage für eine WPF-App im Visual Studio-Dialogfeld „Neues Projekt“](media/exploreide-newprojectcsharp.png)
 
@@ -308,8 +308,8 @@ Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releas
 
 3. Erstellen Sie die Projektmappe, indem Sie auf **Erstellen** > **Projektmappe erstellen** klicken.
 
-Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Datei, die Sie erstellt haben, in Ihrer Projektmappe und im Projektverzeichnis ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Produktivitätstipps](../../ide/productivity-tips-for-visual-studio.md)
+- [Produktivitätstipps](../../ide/productivity-features.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425901"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821630"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Das [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ist ein
   
  Visual Studio verwendet MSBuild, um verwaltete Projekte zu laden und zu erstellen. Die Projektdateien in Visual Studio (CSPROJ-, VBPROJ-, VCXPROJ-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Alle erforderlichen Einstellungen und Buildprozesse werden für die reguläre Entwicklungsarbeit in Visual Studio-Projekte importiert. Sie können diese jedoch in Visual Studio oder mithilfe eine XML-Editors erweitern oder ändern.  
   
- Weitere Informationen zu MSBuild für C++ finden Sie unter [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
+ Weitere Informationen zu MSBuild für C++ finden Sie unter [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
   
  Die folgenden Beispiele veranschaulichen, wann Sie Builds über die MSBuild-Befehlszeile anstelle der Visual Studio-IDE ausführen sollten.  
   
@@ -49,7 +49,7 @@ Das [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ist ein
   Sie können Code in der Visual Studio-IDE schreiben, aber Builds mit MSBuild ausführen. Des Weiteren können Sie Code in der IDE auf dem Entwicklungscomputer erstellen, jedoch eine MSBuild-Befehlszeile verwenden, um Code zu erstellen, der von mehreren Entwicklern integriert wird.  
   
 > [!NOTE]
-> Sie können Team Foundation Build verwenden, um die Anwendung automatisch zu kompilieren, zu testen und bereitzustellen. Das Buildsystem kann Builds automatisch ausführen, wenn Entwickler Code z. B. als Teil einer fortlaufenden Integrationsstrategie oder gemäß einem Zeitplan (z. B. bei einem Build für einen nächtlichen Buildüberprüfungstest) einchecken. Team Foundation Build kompiliert den Code mithilfe von MSBuild. Weitere Informationen finden Sie unter [Build the application (Erstellen der Anwendung)](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+> Sie können Team Foundation Build verwenden, um die Anwendung automatisch zu kompilieren, zu testen und bereitzustellen. Das Buildsystem kann Builds automatisch ausführen, wenn Entwickler Code z. B. als Teil einer fortlaufenden Integrationsstrategie oder gemäß einem Zeitplan (z. B. bei einem Build für einen nächtlichen Buildüberprüfungstest) einchecken. Team Foundation Build kompiliert den Code mithilfe von MSBuild. Weitere Informationen finden Sie unter [Build the application (Erstellen der Anwendung)](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
  Dieses Thema enthält eine Übersicht über MSBuild. Ein Einführungstutorial finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -59,14 +59,14 @@ Das [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ist ein
   
 - [Projektdatei](#BKMK_ProjectFile)  
   
-    - [Eigenschaften](#BKMK_Properties)  
-  
-    - [Elemente](#BKMK_Items)  
-  
-    - [Aufgaben](#BKMK_Tasks)  
-  
-    - [Ziele](#BKMK_Targets)  
-  
+  - [Eigenschaften](#BKMK_Properties)  
+
+  - [Elemente](#BKMK_Items)  
+
+  - [Aufgaben](#BKMK_Tasks)  
+
+  - [Ziele](#BKMK_Targets)  
+
 - [Buildprotokolle](#BKMK_BuildLogs)  
   
 - [Verwenden von MSBuild in Visual Studio](#BKMK_VisualStudio)  

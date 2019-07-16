@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541717"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714979"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen.
 
@@ -31,13 +31,17 @@ ms.locfileid: "62541717"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine Ressourcendatei erstellt wurde, mit einer Version von .NET Framework, die derzeit nicht unterstützt wird.
+
+Eine Ressourcendatei erstellt wurde, mit einer Version von .NET, die derzeit nicht unterstützt wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ressourcendateien, die mithilfe von Vorabversionen von .NET Framework erstellt wurden, möglicherweise nicht von den unterstützten Versionen von .NET Framework verwendet werden.
+
+Ressourcendateien, die mithilfe von Vorabversionen von .NET erstellt wurden, möglicherweise nicht von den unterstützten Versionen von .NET verwendet werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, erstellen Sie die Ressource mit einer unterstützten Version von .NET Framework.
+
+Um einen Verstoß gegen diese Regel zu beheben, erstellen Sie die Ressource mit einer unterstützten Version von .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+
+Unterdrücken Sie keine Warnung dieser Regel.

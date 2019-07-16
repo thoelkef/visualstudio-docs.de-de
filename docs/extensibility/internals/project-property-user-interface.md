@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], properties UI
 - project properties UI
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056913d779f34ce197e1397563caac43ebf8b619
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f701c1a2e31a52c05f0a7514c9d403522579e45
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859310"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825844"
 ---
 # <a name="project-property-user-interface"></a>Benutzeroberfläche für Projekteigenschaften
 
@@ -41,11 +41,11 @@ Der Prozess der Erweiterung eine **Projekteigenschaft** Dialogfeld wird unten be
 
 - Einem Projektuntertyp kann die entsprechenden CATIDs für die verschiedenen erweiterbare Objekte des Basisprojekts zur Laufzeit bestimmen, indem Sie die folgenden abrufen <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> Werte:
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Um die CATIDs für den Projektumfang zu bestimmen, ruft die oben aufgeführten Eigenschaften für der Projektuntertyp ab [VSITEMID. Stamm](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) aus der `VSITEMID typedef`. Einem Projektuntertyp sollten auch zu bestimmen, welche **Eigenschaftenseiten** dialogfeldseiten werden angezeigt, für das Projekt, sowohl die abhängig von der Konfiguration als auch die Konfiguration unabhängig. Einige Projektuntertypen können müssen, entfernen die integrierte Seiten und Hinzufügen von Projekt Untertyp bestimmte Seiten. Damit können dies, die Aufrufe der verwaltete Client-Projekt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Methode für die folgenden Eigenschaften:
 

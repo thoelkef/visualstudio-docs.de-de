@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038172"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821638"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
   
 - [Elementmetadaten](#BKMK_ItemMetadata)  
   
-    - [Verweisen auf Elementmetadaten in einer Projektdatei](#BKMK_ReferencingItemMetadata)  
-  
-    - [Bekannte Elementmetadaten](#BKMK_WellKnownItemMetadata)  
-  
-    - [Umwandeln von Elementtypen mit Metadaten](#BKMK_Transforming)  
+  - [Verweisen auf Elementmetadaten in einer Projektdatei](#BKMK_ReferencingItemMetadata)  
+
+  - [Bekannte Elementmetadaten](#BKMK_WellKnownItemMetadata)  
+
+  - [Umwandeln von Elementtypen mit Metadaten](#BKMK_Transforming)  
   
 - [Elementdefinitionen](#BKMK_ItemDefinitions)  
   
 - [Attribute für Elemente im ItemGroup-Element eines Ziels](#BKMK_AttributesWithinTargets)  
   
-    - [Entfernen des Attributs](#BKMK_RemoveAttribute)  
-  
-    - [KeepMetadata-Attribut](#BKMK_KeepMetadata)  
-  
-    - [RemoveMetadata-Attribut](#BKMK_RemoveMetadata)  
-  
-    - [KeepDuplicates-Attribut](#BKMK_KeepDuplicates)  
+  - [Entfernen des Attributs](#BKMK_RemoveAttribute)  
+
+  - [KeepMetadata-Attribut](#BKMK_KeepMetadata)  
+
+  - [RemoveMetadata-Attribut](#BKMK_RemoveMetadata)  
+
+  - [KeepDuplicates-Attribut](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a>Erstellen von Elementen in einer Projektdatei  
  Elemente werden in der Projektdatei als untergeordnete Elemente eines [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elements deklariert. Der Name des untergeordneten Elements ist der Typ des Elements. Durch das `Include`-Attribut des Elements wird angegeben, welche Elemente (Dateien) in den jeweiligen Elementtyp aufgenommen werden sollen. Im folgenden XML wird z.B. der mit `Compile` benannte Elementtyp erstellt, der zwei Dateien umfasst.  

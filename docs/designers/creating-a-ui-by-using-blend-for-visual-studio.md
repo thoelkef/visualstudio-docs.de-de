@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847324"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820564"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Übersicht über Blend für Visual Studio
 
@@ -60,7 +60,7 @@ Das **Objektfenster** enthält alle verfügbaren Steuerelemente und ähnelt der 
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Suchfeld** Verwenden Sie das Feld **Suchen** zum Filtern der Liste der Objekte.|
+|![Suchfeld für Objekte](../designers/media/b1_1.png)|**Suchfeld** Verwenden Sie das Feld **Suchen** zum Filtern der Liste der Objekte.|
 |![Rastermodus und Listenmodus](../designers/media/b1_2.png)|**Gittermodus und Listenmodus** Wechseln Sie zwischen der Ansicht **Gittermodus** und **Listenmodus** der Objekte.|
 |![Objektkategorien](../designers/media/b1_3.png)|**Objektkategorien** Klicken Sie auf eine Kategorie oder Unterkategorie, um die Liste der Objekte in dieser Kategorie anzuzeigen.|
 |![Stile](../designers/media/b1_4.png)|**Formatvorlagen** Zeigt alle Stile an, die im Ressourcenverzeichnis enthalten sind.|
@@ -115,7 +115,7 @@ Verwenden Sie dieses Fenster, um die Eigenschaften eines Objekts anzeigen zu las
 |![RGB-Farbraum](../designers/media/b1_12.png)|**RGB-Farbspektrum** Sie können die Farbe ändern, indem Sie die Werte für **R**-, **G**- oder **B**-Zahlen-Editoren (Rot, Grün, Blau) anpassen.|
 |![Alphakanal](../designers/media/b1_13.png)|**Alphakanal** Ändern Sie den Alphawert, indem Sie den Zahleneditor neben **A** verwenden.|
 |![Farbe in Ressource konvertieren](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Farbe in Ressource konvertieren** Konvertiert die ausgewählte Farbe in eine Farbressource. Farbressourcen sind verfügbar, wenn Sie auf die Farbressourcenregisterkarte klicken.|
-|![](../designers/media/b1_15.png)|**Farbtonwert** Zeigt den hexadezimalen Wert der angezeigten Farbe an.|
+|![Farbtonwert](../designers/media/b1_15.png)|**Farbtonwert** Zeigt den hexadezimalen Wert der angezeigten Farbe an.|
 |![Legende 16](../designers/media/b5_label_16.png)|**Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.|
 |![Erweiterte Eigenschaften anzeigen](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.|
 

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit der Eincheckrichtlinie für Teamprojekte'
+title: Projekt-Synchronisierungsregel legt fest, mit der Eincheckrichtlinie
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815827"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260848"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit einer Eincheckrichtlinie für Azure DevOps-Projekt
 
@@ -45,7 +45,7 @@ Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckr
 
 3. Klicken Sie auf **Codeanalyse**.
 
-4. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.
+4. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .
 
 5. In der **öffnen** Dialogfeld geben die Eincheckrichtlinie Regelsatz Datei.
 
@@ -61,6 +61,6 @@ Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckr
 
 5. Öffnen Sie das Dialogfeld "Eigenschaften" für das Codeprojekt, und zeigen die **Codeanalyse** Seite.
 
-6. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.
+6. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .
 
 7. In der **öffnen** Dialogfeld geben den Regelsatz-Datei.

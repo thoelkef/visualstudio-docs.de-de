@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095775"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697986"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Assemblys müssen gültige starke Namen aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60095775"
 
 - Für die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 1.0 und 1.1, verwenden Sie entweder die <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> oder <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> Attribut.
 
-- Für die [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], verwenden Sie entweder die `/keyfile` oder `/keycontainer` Compileroption [/keyfile (Geben Sie Schlüssel oder Schlüsselpaar zum Signieren einer Assembly)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) oder  [ /keycontainer (Geben Sie einen Schlüsselcontainer zum Signieren einer Assembly)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) -Linkeroption in C++).
+- Für die [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], verwenden Sie entweder die `/keyfile` oder `/keycontainer` Compileroption [/keyfile (Geben Sie Schlüssel oder Schlüsselpaar zum Signieren einer Assembly)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) oder  [ /keycontainer (Geben Sie einen Schlüsselcontainer zum Signieren einer Assembly)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) -Linkeroption in C++).
 
   **Zum Signieren der Assembly mit einem starken Namen in Visual Studio**
 
@@ -89,11 +89,11 @@ ms.locfileid: "60095775"
 
    **So signieren Sie Ihre Assembly mit einem starken Namen außerhalb von Visual Studio**
 
-- Verwenden Sie das strong Name-Tool (Sn.exe), die von bereitgestellte der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Verwenden Sie das strong Name-Tool (Sn.exe), die von bereitgestellte der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie nur eine Warnung dieser Regel auf, wenn die Assembly in einer Umgebung verwendet wird, den Inhalt manipulieren nicht relevant ist.
 
 ## <a name="see-also"></a>Siehe auch
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (Strong Name-Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (Strong Name-Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

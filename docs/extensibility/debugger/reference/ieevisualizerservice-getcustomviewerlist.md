@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223575"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350170"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Diese Methode gibt eine Liste der Typ-Schnellansichten, denen diesen Dienst bekannt sind.
@@ -46,21 +46,17 @@ int GetCustomViewerList(
 ```
 
 ## <a name="parameters"></a>Parameter
- `celtSkip`\
+`celtSkip`\
+[in] Die Anzahl von Schnellansichten, zu überspringen.
 
- [in] Die Anzahl von Schnellansichten, zu überspringen.
+`celRequested`\
+[in] Anzahl von Schnellansichten abrufen (gibt auch die Größe der an die `rgViewers` Array).
 
- `celRequested`\
+`rgViewers`\
+[in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen gefüllt werden soll.
 
- [in] Anzahl von Schnellansichten abrufen (gibt auch die Größe der an die `rgViewers` Array).
-
- `rgViewers`\
-
- [in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen gefüllt werden soll.
-
- `pceltFetched`\
-
- [out] Die Anzahl von Schnellansichten, die tatsächlich abgerufen.
+`pceltFetched`\
+[out] Die Anzahl von Schnellansichten, die tatsächlich abgerufen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

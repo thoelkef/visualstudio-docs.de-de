@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetENCUpdate
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2de204f3d95147d3250e570fa785ecccf68b4634
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eb92e7076c308663ddf9ec760d1f2276affd0c87
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320836"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Diese Methode ruft das Update bearbeiten und Fortfahren "(ENC) für dieses Programm an. Eine benutzerdefinierten Debug-Engine gibt immer `E_NOTIMPL`.
@@ -36,10 +39,9 @@ int GetENCUpdate(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppUpdate`
-
- [out] Gibt eine interne Schnittstelle, die zum Aktualisieren dieses Programms verwendet werden kann.
+## <a name="parameters"></a>Parameter
+`ppUpdate`\
+[out] Gibt eine interne Schnittstelle, die zum Aktualisieren dieses Programms verwendet werden kann.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

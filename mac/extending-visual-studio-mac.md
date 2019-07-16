@@ -1,17 +1,17 @@
 ---
 title: Erweitern von Visual Studio für Mac
 description: Die Funktionen von Visual Studio für Mac können mit Modulen erweitert werden, die Erweiterungspakete genannt werden. Der erste Teil dieser Anleitung erstellt ein einfaches Erweiterungspaket für Visual Studio für Mac, um das Datum und die Uhrzeit in ein Dokument einzufügen. Der zweite Teil dieser Anleitung erläutert die Grundlagen des Erweiterungspaketsystems und einige der wichtigsten APIs, die die Grundlage von Visual Studio für Mac bilden.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/14/2017
+author: alanjclark
+ms.author: alcl
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983165"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691658"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Erweitern von Visual Studio für Mac
 
@@ -28,7 +28,7 @@ Damit ein Erweiterungspaket aus Visual Studio für Mac erstellen kann, muss es �
 Der Vorteil dieses modularen Aufbaus ist, dass Visual Studio für Mac erweiterbar ist. Es existieren viele Erweiterungspunkte, die mit benutzerdefinierten Erweiterungspaketen erweitert werden können. Beispiele für aktuelle Erweiterungspakete umfassen die Unterstützung für C# und F#, Debuggertools und Projektvorlagen.
 
 > [!NOTE]
-> **Hinweis:** Wenn Sie über ein Add-in-Maker-Projekt verfügen, das vor Add-in-Maker 1.2 erstellt wurde, müssen Sie Ihr Projekt wie in den [hier](https://mhut.ch/addinmaker/1.2) beschriebenen Schritten migrieren.
+> Wenn Sie über ein Add-in-Maker-Projekt verfügen, das vor Add-in-Maker 1.2 erstellt wurde, müssen Sie Ihr Projekt wie in den [hier](https://mhut.ch/addinmaker/1.2) beschriebenen Schritten migrieren.
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Dieser Abschnitt befasst sich mit den verschiedenen Dateien, die vom Add-in Make
 
 ## <a name="attribute-files"></a>Attributdateien
 
-Erweiterungspakete speichern Metadaten über ihren Namen, ihre Version, Abhängigkeiten und andere Informationen in C#-Attributen. Der Add-in Maker erstellt zwei Dateien, `AddinInfo.cs` und `AssemblyInfo.cs`, um diese Informationen zu speichern und zu organisieren. Erweiterungspakete müssen über eine eindeutige ID und einen eindeutigen Namespace verfügen, der in deren *-Add-in-Attribut* angegeben wird:
+Erweiterungspakete speichern Metadaten über ihren Namen, ihre Version, Abhängigkeiten und andere Informationen in C#-Attributen. Der Add-in Maker erstellt zwei Dateien, `AddinInfo.cs` und `AssemblyInfo.cs`, um diese Informationen zu speichern und zu organisieren. Erweiterungspakete müssen über eine eindeutige ID und einen eindeutigen Namespace verfügen, der in ihrem *`Addin`-Attribut* angegeben wird:
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ Erweiterungspakete speichern Metadaten über ihren Namen, ihre Version, Abhängi
 )]
 ```
 
-Erweiterungspakete müssen auch Abhängigkeiten von den Erweiterungspaketen deklarieren, die die Erweiterungspunkte besitzen, in die sie eingebunden werden. Auf diese wird zum Zeitpunkt der Erstellung automatisch verwiesen.
+Erweiterungspakete müssen auch Abhängigkeiten von den Erweiterungspaketen deklarieren, die als Besitzer der Erweiterungspunkte fungieren, in die sie eingebunden werden. Auf diese wird zur Buildzeit automatisch verwiesen.
 
 Darüber hinaus können zusätzliche Verweise über den Add-in-Verweisknoten im Projektmappenpad für das Projekt hinzugefügt werden, wie in der folgenden Abbildung dargestellt:
 
@@ -81,10 +81,10 @@ Befehlserweiterungen werden durch das Hinzufügen von Einträgen zum Erweiterung
 
 Der Erweiterungsknoten enthält ein path-Attribut, das den Erweiterungspunkt angibt, in den er eingebettet ist, in diesem Fall `/MonoDevelop/Ide/Commands/Edit`. Darüber hinaus fungiert er als übergeordneter Knoten für den Befehl. Der Befehlsknoten verfügt über die folgenden Attribute:
 
-* **id**: Gibt den Bezeichner für diesen Befehl an. Befehlsbezeichner müssen als Enumerationsmember deklariert werden und werden dazu verwendet, Befehle mit Befehlselementen zu verbinden.
-* **_label**: Der Text, der in Menüs angezeigt werden soll.
-* **_description**: Der Text, der als QuickInfo für Symbolleistenschaltflächen angezeigt werden soll.
-* **defaultHandler**: Gibt die `CommandHandler`-Klasse an, die den Befehl steuert.
+* `id`: Gibt den Bezeichner für diesen Befehl an. Befehlsbezeichner müssen als Enumerationsmember deklariert werden und werden dazu verwendet, Befehle mit Befehlselementen zu verbinden.
+* `_label`: Der Text, der in Menüs angezeigt werden soll.
+* `_description`: Der Text, der als QuickInfo für Symbolleistenschaltflächen angezeigt werden soll.
+* `defaultHandler`: Gibt die `CommandHandler`-Klasse an, die den Befehl steuert.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ Der folgende Codeausschnitt zeigt eine CommandItem-Erweiterung, die in den `/Mon
 </Extension>
 ```
 
-Ein Befehlselement platziert einen in seinem ID-Attribut angegebenen Befehl in einem Menü. Dieses Befehlselement erweitert den Erweiterungspunkt `/MonoDevelop/Ide/MainMenu/Edit`, wodurch die Bezeichnung des Befehls im **Menü „Bearbeiten“** erscheint. Beachten Sie, dass die **ID** im Befehlselement mit der ID des Befehlsknoten, `InsertDate`, übereinstimmt. Wenn Sie das Befehlselement entfernen müssten, würde die Option **Datum einfügen** nicht mehr im Menü „Bearbeiten“ angezeigt.
+Ein Befehlselement platziert einen in seinem `id`-Attribut angegebenen Befehl in einem Menü. Dieses Befehlselement erweitert den Erweiterungspunkt `/MonoDevelop/Ide/MainMenu/Edit`, wodurch die Bezeichnung des Befehls im **Menü „Bearbeiten“** erscheint. Beachten Sie, dass die ID im Befehlselement mit der ID des Befehlsknoten, `InsertDate`, übereinstimmt. Wenn Sie das Befehlselement entfernen, wird die Option **Datum einfügen** nicht mehr im Menü „Bearbeiten“ angezeigt.
 
 ### <a name="command-handlers"></a>Befehlshandler
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-Dadurch werden der Befehl und das Befehlselement verknüpft: Das Befehlselement ruft den Befehl auf, wenn das Befehlselement aus dem **Menü „Bearbeiten“** ausgewählt wird.
+Befehl und Befehlselement sind nun miteinander verknüpft: Das Befehlselement ruft den Befehl auf, wenn das Befehlselement im **Menü „Bearbeiten“** ausgewählt wird.
 
 ## <a name="ide-apis"></a>IDE-APIs
 
@@ -158,6 +158,35 @@ Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind,
 * Umgestaltung
 * Ausführungshandler
 * Syntaxhervorhebung
+
+## <a name="extending-the-new-editor"></a>Erweitern des neuen Editors
+
+Visual Studio für Mac [bietet nun eine neue native Benutzeroberfläche für den Text-Editor Cocoa](https://aka.ms/vs/mac/editor/learn-more), die auf den gleichen Editorebenen wie in Visual Studio unter Windows aufbaut.
+
+Einer der vielen Vorteile der gemeinsamen Nutzung des Editors zwischen Visual Studio und Visual Studio für Mac ist, dass Code für den Visual Studio-Editor für die Ausführung in Visual Studio für Mac angepasst werden kann.
+
+> [!NOTE]
+> Derzeit unterstützt der neue Editor nur C#-Dateien. Andere Sprachen und Dateiformate werden in der Vorgängerversion des Editors geöffnet. Die Vorgängerversion des Editor implementiert jedoch einige der nachfolgend beschriebenen Visual Studio-Editor-APIs.
+
+### <a name="visual-studio-editor-overview"></a>Visual Studio-Editor: Übersicht
+
+![Visual Studio-Editor: Architektur](media/vs-editor-architecture.png)
+
+Bevor wir auf die für Visual Studio für Mac spezifischen Erweiterungsdetails eingehen, ist es hilfreich, mehr über den gemeinsam genutzten Editor selbst zu erfahren. Nachstehend finden Sie einige Ressourcen, die Ihr Verständnis vertiefen können:
+
+* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [MEF im Editor](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Im Editor](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [Erweiterungspunkte für den Sprachdienst und den Editor](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Eine Videoeinführung in die Architektur des Editors](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+Mit diesen Ressourcen zur Hand sind die primären Konzepte, mit denen Sie vertraut sein müssen, [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) und [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+
+* `ITextBuffer` ist eine InMemory-Darstellung des Texts, die im Laufe der Zeit geändert werden kann. Die `CurrentSnapshot`-Eigenschaft für `ITextBuffer` gibt eine *unveränderliche* Darstellung des aktuellen Inhalts des Puffers zurück, eine Instanz von `ITextSnapshot`. Wenn eine Bearbeitung des Puffers erfolgt, wird die CurrentSnapshot-Eigenschaft auf die neueste Version aktualisiert. Analysetools können die Momentaufnahme des Texts für jeden Thread einsehen, deren Inhalt sich garantiert nicht ändert.
+
+* `ITextView` ist die Darstellung auf der Benutzeroberfläche, wie `ITextBuffer` auf dem Bildschirm im Editorsteuerelement gerendert wird. Es weist einen Verweis auf seinen Textpuffer sowie `Caret`, `Selection` und andere benutzeroberflächenbezogene Konzepte auf.
+
+Für ein bestimmtes [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5) können Sie die zugehörigen zugrunde liegenden Elemente `ITextBuffer` und `ITextView` über `Document.GetContent<ITextBuffer>()` bzw. `Document.GetContent<ITextView>()` abrufen.
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 

@@ -1,1 +1,9 @@
+---
+ms.openlocfilehash: 8128a471b037909043bdd0eb7b77a7afdfbfe206
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261894"
+---
  Visual Studio SDK 

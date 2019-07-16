@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen einer Anmerkung zu Strukturen und Klassen
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571419"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493637"
 ---
 # <a name="annotating-structs-and-classes"></a>Hinzufügen einer Anmerkung zu Strukturen und Klassen
+
 Sie können Struktur- und Elemente mit Anmerkungen versehen, verwenden von Anmerkungen, die wie invarianten fungiert – sie werden als "true" bei einem beliebigen Funktionsaufruf oder eine Funktion Einstiegs-/ausstiegsspunkt, die die einschließende Struktur als Parameter oder einen Ergebniswert umfasst.
 
 ## <a name="struct-and-class-annotations"></a>Struktur- und Klassen-Anmerkungen
@@ -75,6 +76,39 @@ Sie können Struktur- und Elemente mit Anmerkungen versehen, verwenden von Anmer
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>Beispiel
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+Anmerkungen zu dieser Version für dieses Beispiel:
+
+- `_Field_z_` entspricht `_Null_terminated_`.  `_Field_z_` Gibt an ein Feld, Feld "Name" einen Null-terminierte Zeichenfolge ist.
+- `_Field_range_` für `bufferSize` gibt an, dass der Wert des `bufferSize` muss innerhalb von 1 und `MaxBufferSize` (jeweils einschließlich).
+- Die Ergebnisse von der `_Struct_size_bytes_` und `_Field_size_` Anmerkungen sind äquivalent. Für Strukturen oder Klassen, die ein Layout ähnlich wie `_Field_size_` ist einfacher zu lesen und zu verwalten, da weniger Verweise und Berechnungen als die entsprechende `_Struct_size_bytes_` Anmerkung. `_Field_size_` Sie erfordert keine Konvertierung in die Bytegröße. Wenn Bytegröße die einzige Option für ein void-Zeiger-Feld, z. B. ist `_Field_size_bytes_` kann verwendet werden. Wenn beide `_Struct_size_bytes_` und `_Field_size_` vorhanden ist, werden beide Tools zur Verfügung. Es ist Aufgabe des Tools erläutert, wie bei die zwei Anmerkungen nicht einverstanden sind.
 
 ## <a name="see-also"></a>Siehe auch
 

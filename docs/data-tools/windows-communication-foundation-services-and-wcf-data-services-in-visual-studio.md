@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564826"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714470"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 
@@ -56,7 +56,7 @@ WCF Data Services ist eine Implementierung des Open Data (OData)-Protokolls stan
 
 ### <a name="wcf-programming-model"></a>WCF-Programmiermodell
 
-WCF-Programmiermodells basiert darauf, dass Kommunikation zwischen zwei Entitäten: eine WCF-Dienst und einen WCF-Client. Das Programmiermodell gekapselt ist, der <xref:System.ServiceModel> Namespace in .NET Framework.
+WCF-Programmiermodells basiert darauf, dass Kommunikation zwischen zwei Entitäten: eine WCF-Dienst und einen WCF-Client. Das Programmiermodell gekapselt ist, der <xref:System.ServiceModel> -Namespace in .NET.
 
 ### <a name="wcf-service"></a>WCF-Dienst
 
@@ -228,7 +228,7 @@ Sie können ebenso, wie Sie eine beliebige andere Datenquelle an ein Steuereleme
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Vorgehensweise: Konfigurieren Sie einen Dienst, um die Wiederverwendung von vorhandener Typen
 
-Wenn ein Projekt ein Dienstverweis hinzugefügt wird, werden alle im Dienst definierten Typen im lokalen Projekt generiert. In vielen Fällen werden dabei von doppelte Typen erstellt, wenn ein Dienst allgemeine .NET Framework-Typen verwendet, oder wenn Typen in einer freigegebenen Bibliothek definiert sind.
+Wenn ein Projekt ein Dienstverweis hinzugefügt wird, werden alle im Dienst definierten Typen im lokalen Projekt generiert. In vielen Fällen werden dabei von doppelte Typen erstellt, wenn ein Dienst common .NET Typen verwendet, oder wenn Typen in einer freigegebenen Bibliothek definiert sind.
 
 Um dieses Problem zu vermeiden, werden die Typen in referenzierten Assemblys standardmäßig freigegeben. Wenn Sie die Typfreigabe für eine oder mehrere Assemblys deaktivieren möchten, Sie können dazu die **Dienstverweis** Dialogfeld.
 

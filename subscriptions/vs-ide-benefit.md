@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420810"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586935"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Verwenden des Visual Studio 2019-Vorteils
 
@@ -69,7 +69,6 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 | Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail                                       | Verfügbar                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Ja         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
-| Visual Studio Dev Essentials | Nicht zutreffend  | Visual Studio-Community |Ja |
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht: MCT Software & Services.*
 

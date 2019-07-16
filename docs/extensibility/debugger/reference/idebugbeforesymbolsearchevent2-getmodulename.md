@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
 ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30b9559ab26e4634b82332de538cfe181bb106b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 026c0a297eed18b21692885f08af07bdc656e842
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877604"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "66317541"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Ruft den Namen des Moduls, die gerade gedebuggt werden.
@@ -35,10 +38,9 @@ public int GetModuleName (
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pbstrModuleName`
-
- [out] Der Name des Moduls.
+## <a name="parameters"></a>Parameter
+`pbstrModuleName`\
+[out] Der Name des Moduls.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

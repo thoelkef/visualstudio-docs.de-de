@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445657"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823565"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML-Sequenzdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
   
   - Mit der rechten Maustaste der Lebenslinie, und wählen Sie dann **Klasse erstellen**.  
   
-     - oder -   
+     -oder-  
   
   - Wählen Sie die Lebenslinie, drücken Sie **F4**, und klicken Sie dann in der **Eigenschaften** legen die **Typ** Eigenschaft zu einem vorhandenen geben, oder geben Sie den Namen eines neuen Typs. Mit der rechten Maustaste in der Bezeichnung, und wählen Sie dann **Erstellungsvorgang**.  
   
@@ -205,10 +205,10 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
   
 - Anmerken von Ausnahmen oder Alternativen, die als Alternative zu der typischen angezeigten Sequenz ausgeführt werden können. Zum Beispiel: „Der Kunde kann wählen, den Rest dieser Sequenz zu überspringen.“  
   
-    - Erwägen Sie die Verwendung von Fragmenten als formalere Alternativen zu dieser Art von Anmerkung. Finden Sie unter [Beschreiben von Steuerungsstrukturen mit Fragmenten](#Fragments)  
+  - Erwägen Sie die Verwendung von Fragmenten als formalere Alternativen zu dieser Art von Anmerkung. Finden Sie unter [Beschreiben von Steuerungsstrukturen mit Fragmenten](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Festlegen des Diagrammumfangs  
- Es ist wichtig, deutlich hervorzuheben, was das Diagramm darstellen soll.   
+ Es ist wichtig, deutlich hervorzuheben, was das Diagramm darstellen soll.  
   
 #### <a name="initiating-event"></a>Auslösendes Ereignis  
  Jedes Diagramm sollte die Sequenz der Interaktionen zeigen, die sich aus einem auslösenden Ereignis ergibt. Beispielsweise könnte dies Folgendes sein:  
@@ -372,13 +372,13 @@ Sie können in Visual Studio zeichnen eine *Sequenzdiagramm* , die eine Interakt
   
 - Mit der rechten Maustaste in der Meldung, die Sie verschieben möchten, und klicken Sie dann auf **in Diagramm verschieben**.  
   
-     Visual Studio:  
-  
-    - Ersetzt die ausgewählte Meldung und alle untergeordneten Meldungen durch eine Interaktionsverwendung.  
-  
-    - Verschiebt die ersetzten Meldungen in ein neues Sequenzdiagramm.  
-  
-    - Erstellt eine Verknüpfung zwischen der Interaktionsverwendung und dem neuen Sequenzdiagramm.  
+  Visual Studio:  
+
+  - Ersetzt die ausgewählte Meldung und alle untergeordneten Meldungen durch eine Interaktionsverwendung.  
+
+  - Verschiebt die ersetzten Meldungen in ein neues Sequenzdiagramm.  
+
+  - Erstellt eine Verknüpfung zwischen der Interaktionsverwendung und dem neuen Sequenzdiagramm.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>So navigieren Sie zur Sequenz, auf die eine Interaktionsverwendung verweist  
   

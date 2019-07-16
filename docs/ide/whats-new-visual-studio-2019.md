@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 04/23/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432032"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552869"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
-**Für [Release 16.0](/visualstudio/releases/2019/release-notes/) aktualisiert**
+**Für [Release 16.1](/visualstudio/releases/2019/release-notes/) aktualisiert**
 
 >[!div class="button"]
 >[Herunterladen von Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -41,8 +41,8 @@ Eine ausführliche Liste aller Neuheiten in dieser Version finden Sie in den [Ve
 
 ## <a name="develop"></a>Entwicklung
 
-Sparen Sie Zeit mit den neuen Features.
-<br><br>
+Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie mit den neuen Features viel Zeit sparen können. <br><br>*Länge des Videos: 3,00 Minuten*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Verbesserte Suche
@@ -63,7 +63,7 @@ Rufen Sie die Refactorings einfach auf, indem Sie **STRG+.** drücken und die Ak
 
 ### <a name="intellicode"></a>IntelliCode
 
-[Visual Studio IntelliCode](/visualstudio/intellicode/) ist eine Erweiterung, die Sie bei der Softwareentwicklung mithilfe von künstlicher Intelligenz (KI) unterstützt. IntelliCode trainiert über 2.000 Open Source-Projekte auf GitHub &mdash; jedes mit über 100 Sternen &mdash; zum Generieren von Empfehlungen.
+[Visual Studio IntelliCode](/visualstudio/intellicode/) unterstützt Ihre Softwareentwicklung mithilfe von künstlicher Intelligenz (KI). IntelliCode trainiert über 2.000 Open Source-Projekte auf GitHub &mdash; jedes mit über 100 Sternen &mdash; zum Generieren von Empfehlungen.
 
  ![Animation: IntelliCode in Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
@@ -74,28 +74,38 @@ Im Folgenden werden einige Möglichkeiten aufgeführt, wie Sie mit Visual Studio
 * Suche nach schwer auffindbaren Codeproblemen
 * Schwerpunkt auf Code Reviews, indem die Aufmerksamkeit auf die wichtigen Bereiche gerichtet wird
 
-Bei der ersten Vorschauversion der IntelliCode-Erweiterung für Visual Studio wurde zunächst nur C# unterstützt. Jetzt wurde in Visual Studio auch Unterstützung für C++ und XAML hinzugefügt.
+Bei der ersten Vorschauversion von IntelliCode als Erweiterung für Visual Studio wurde zunächst nur C# unterstützt. Seit der **neuen Version 16.1** werden auch C# und XAML unterstützt. (Die Unterstützung für C++ und TypeScript und JavaScript befinden sich jedoch weiterhin in der Vorschau.)
 
 Und bei Verwendung von C# können Sie jetzt auch ein benutzerdefiniertes Modell für Ihren eigenen Code trainieren.
 
-Weitere Informationen zu IntelliCode finden Sie im Blogbeitrag [Code more, scroll less with Visual Studio IntelliCode (Mehr Code schreiben, weniger scrollen mit Visual Studio IntelliCode)](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/).
+Weitere Informationen zu IntelliCode finden Sie in den Blogbeiträgen [Announcing the general availability of IntelliCode plus a sneak peek](https://devblogs.microsoft.com/visualstudio/announcing-the-general-availability-of-intellicode-plus-a-sneak-peek/) (Ankündigung der allgemeinen Verfügbarkeit von IntelliCode und erster Einblick) und [Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) (Mehr codieren, weniger scrollen mit Visual Studio IntelliCode).
 
 ### <a name="code-cleanup"></a>Codebereinigung
 
 Neben einem neuen Integritätsindikator für Dokumente gibt es auch einen neuen Befehl für die Codebereinigung. Mit diesem neuen Befehl können Sie Warnungen und Vorschläge mit nur einem Knopfdruck ermitteln und anschließend beheben bzw. umsetzen.
 
-Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorrekturen vorgenommen, die von [aktuellen Einstellungen](code-styles-and-quick-actions.md) und [EDITORCONFIG-Dateien](create-portable-custom-editor-options.md) vorgeschlagen werden.
+Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorrekturen vorgenommen, die von [aktuellen Einstellungen](code-styles-and-code-cleanup.md) und [EDITORCONFIG-Dateien](create-portable-custom-editor-options.md) vorgeschlagen werden.
 
    ![Screenshot: das neue Steuerelement für die Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
 
 Sie können auch Korrektursammlungen als Profil speichern. Wenn Sie z.B. einige spezielle Korrekturen haben, die Sie beim Programmieren häufig anwenden, und eine weitere umfangreiche Korrektursammlung, die vor einem Code Review angewendet wird, können Sie Profile für diese verschiedenen Aufgaben konfigurieren.
 
-   ![Screenshot: das neue Steuerelement für die Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Screenshot: das Steuerelement zum Konfigurieren der Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+
+### <a name="per-monitor-aware-pma-rendering"></a>PMA-Rendering (PMA = Per-Monitor Aware)
+
+Wenn Sie Monitore verwenden, die mit unterschiedlichen Anzeigeskalierungsfaktoren konfiguriert sind, oder eine Remoteverbindung mit einem Computer herstellen, bei dem die Anzeigeskalierungsfaktoren von denen auf Ihrem Hauptgerät abweichen, werden Sie vielleicht feststellen, dass Visual Studio unscharf aussieht oder bei der falschen Skalierung gerendert wird.
+
+Seit der Veröffentlichung von Visual Studio 2019 ist Visual Studio eine PMA-fähige (per-monitor aware) Anwendung. Jetzt rendert Visual Studio unabhängig von den verwendeten Skalierungsfaktoren für die Anzeige ordnungsgemäß.
+
+   ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
+
+Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience with Visual Studio 2019 (Bessere Erfahrung mit mehreren Monitoren mit Visual Studio 2019)](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/).
 
 ## <a name="collaborate"></a>Zusammenarbeiten
 
-Arbeiten Sie im Team, um Probleme zu lösen.
-<br><br>
+Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie Probleme im Team lösen können. <br><br>*Länge des Videos: 4,22 Minuten*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Cloud im Workflow an erster Stelle
@@ -104,7 +114,7 @@ Wenn Sie Visual Studio 2019 öffnen, wird Ihnen u.a. das neue Startfenster auffa
 
    ![Screenshot: das neue Startfenster in Visual Studio 2019](media/vs-2019/start-window-dark.png)
 
-Im Startfenster stehen mehrere Optionen zur Verfügung, um schnell zum Code zu gelangen. Die Option zum Klonen oder Auschecken von Code aus einem Repository wird nun als erste dargestellt.  
+Im Startfenster stehen mehrere Optionen zur Verfügung, um schnell zum Code zu gelangen. Die Option zum Klonen oder Auschecken von Code aus einem Repository wird nun als erste dargestellt.
 
    ![Animation: Git in Visual Studio 2019 nun an oberster Position](media/vs-2019/git-first.gif)
 
@@ -128,12 +138,12 @@ Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit Visu
 
    ![Screenshot: das neue Startfenster in Visual Studio 2019](media/vs-2019/pr-experience.png)
 
-Als erste Schritte laden Sie die [Pull Requests für Visual Studio](https://aka.ms/pr4vs)-Erweiterung aus dem Visual Studio Marketplace herunter.
+Weitere Informationen finden Sie im Blogbeitrag [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (Codeprüfungen mit der Visual Studio Pull Requests-Erweiterung).
 
 ## <a name="debug"></a>Debug
 
-Konzentrieren Sie sich auf präzises, zielgerichtetes Arbeiten.
-<br><br>
+Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie beim Debuggen einen Fehler präzise einkreisen können. <br><br>*Länge des Videos: 3,54 Minuten*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Leistungsverbesserungen
@@ -178,9 +188,9 @@ Sie möchten mehr über unsere Pläne für Visual Studio 2019 erfahren? Weitere 
 
 Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedback unserer Kunden ernst nehmen. Es gibt den Anstoß zu vielen unserer Initiativen.
 
-* Wenn Sie einen Vorschlag zur Verbesserung von Visual Studio haben, können Sie diesen mithilfe des Tools [Vorschlag senden](talk-to-us.md#i-want-to-make-a-suggestion-about-visual-studio-features) einreichen.
+* Wenn Sie einen Vorschlag zur Verbesserung von Visual Studio haben, können Sie diesen mit dem Tool [Funktion vorschlagen](suggest-a-feature.md) einreichen.
 
-* Wenn bei Ihnen Hängen, Abstürze oder andere Leistungsprobleme auftreten, können Sie die Schritte zur Reproduktion und unterstützende Dateien auf einfache Weise mithilfe des Tools [Problem melden](talk-to-us.md#i-want-to-report-a-problem-with-visual-studio) mit uns teilen.
+* Wenn bei Ihnen Hängen, Abstürze oder andere Leistungsprobleme auftreten, können Sie die Schritte zur Reproduktion und unterstützende Dateien auf einfache Weise mithilfe des Tools [Problem melden](how-to-report-a-problem-with-visual-studio.md) mit uns teilen.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -188,4 +198,5 @@ Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedb
 * [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes/)
 * [Neuigkeiten im Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 für Mac ist jetzt verfügbar.](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Microsoft Build 2019-Konferenz](https://www.microsoft.com/build)
 * [Microsoft Connect(); 2018 conference (Microsoft Connect(); 2018-Konferenz)](https://www.microsoft.com/connectevent)

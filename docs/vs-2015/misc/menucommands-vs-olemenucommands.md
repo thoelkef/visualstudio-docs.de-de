@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000949"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624460"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand- und OleMenuCommand-Objekte
-Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.ComponentModel.Design.MenuCommand> - oder aus dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt ableiten und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  
+Sie können Menübefehle erstellen, durch Ableiten aus <xref:System.ComponentModel.Design.MenuCommand> oder <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Objekt aus, und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  
   
  Die Befehle, die ein VSPackage für die IDE verfügbar macht, müssen sichtbar und aktiviert sein, damit ein Benutzer sie verwenden kann. Wenn Befehle in einer VSCT-Datei erstellt werden, indem die Visual Studio-Paket-Projektvorlage verwendet wird, sind sie standardmäßig sichtbar und aktiviert. Durch Festlegen einiger Befehlsflags, z. B. `DynamicItemStart`, kann das Standardverhalten geändert werden. Die Sichtbarkeit, der Aktivierungsstatus und andere Eigenschaften eines Befehls können im Code auch zur Laufzeit geändert werden, indem auf das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt zugegriffen wird, das dem Befehl zugeordnet ist.  
   
@@ -115,7 +115,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      Werden mehrere Befehlsplatzierungen erstellt, die dasselbe GUID:ID-Paar und verschiedene übergeordnete Elemente haben, wird ein Menü an mehreren Positionen angezeigt. Weitere Informationen finden Sie in der Beschreibung des [CommandPlacements](../extensibility/commandplacements-element.md) -Elements.  
   
     Weitere Informationen zu Befehlsgruppen und Überordnung finden Sie unter [Erstellen von Wiederverwendbaren Gruppen von Schaltflächen](../extensibility/creating-reusable-groups-of-buttons.md).  
   

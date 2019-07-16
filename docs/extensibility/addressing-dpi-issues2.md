@@ -3,17 +3,17 @@ title: Adressierung DPI wichtigsten Themen2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2b440ff34a5c1f2c60b8874ba56266b636afde3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892062"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352267"
 ---
 # <a name="address-dpi-issues"></a>DPI-Probleme
 Eine zunehmende Anzahl von Geräten, die mit "hochauflösende" Bildschirme geliefert werden. Diese Seiten müssen in der Regel mehr als 200 Pixel pro Zoll (Ppi). Inhalt hochskaliert werden, auf die Anforderungen zum Anzeigen des Inhalts in einer normalen Ansicht Entfernung für das Gerät wird das Arbeiten mit einer Anwendung auf diesen Computern erforderlich. Seit 2014 ist die primäre Zielgruppe für anzeigen mit hoher Dichte mobiler Geräte (Tablets, Schalenkoffer Laptops und Smartphones) zu berechnen.
@@ -126,7 +126,7 @@ Um die DPI-Hilfsfunktionen in verwaltetem Code zugreifen zu können, die in Visu
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- Stellen Sie sicher, das Projekt enthält Verweise auf **"System.Windows.Forms"**, **PresentationCore**, und **PresentationUI**.
+- Stellen Sie sicher, das Projekt enthält Verweise auf **"System.Windows.Forms"** , **PresentationCore**, und **PresentationUI**.
 
 - Verwenden Sie im Code die **Microsoft.VisualStudio.PlatformUI** -Namespace, und rufen eine statische Funktionen DpiHelper-Klasse. Unterstützter Typen (Punkte, Größen, Rechtecke und So weiter) stehen bereitgestellte Erweiterungsfunktionen, die neue zurückgeben Objekte skaliert. Zum Beispiel:
 

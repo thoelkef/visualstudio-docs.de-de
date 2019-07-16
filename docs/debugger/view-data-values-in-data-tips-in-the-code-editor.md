@@ -75,7 +75,7 @@ So schließen Sie alle DataTips, auf die **Debuggen** , wählen Sie im Menü **a
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Schließen Sie alle DataTips für eine bestimmte Datei
 
-Schließen Sie alle DataTips für eine bestimmte Datei, auf die **Debuggen** , wählen Sie im Menü **Löschen aller angehefteten DataTips, \<Filename >**.
+Schließen Sie alle DataTips für eine bestimmte Datei, auf die **Debuggen** , wählen Sie im Menü **Löschen aller angehefteten DataTips, \<Filename >** .
 
 ## <a name="expand-and-edit-information"></a>Erweitern Sie Informationen anzeigen und bearbeiten
 Mithilfe von DataTips können Sie ein Array, eine Struktur oder ein Objekt erweitern, um deren Member anzuzeigen. Sie können mit einem DataTip auch den Wert einer Variablen bearbeiten.

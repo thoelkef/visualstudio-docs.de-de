@@ -2,17 +2,17 @@
 title: Problembehandlung bei der vorlagenermittlung in Visual Studio | Microsoft-Dokumentation
 ms.date: 01/02/2018
 ms.topic: conceptual
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3c5558079772a8ddc4c4826ba68d1866c220ba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432082"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823985"
 ---
 # <a name="troubleshooting-template-installation"></a>Problembehandlung bei der Vorlageninstallation
 
@@ -59,9 +59,9 @@ Die Protokolldatei enthält die folgenden Spalten:
 
 - **FullPathToTemplate**, der hat die folgenden Werte:
 
-    - 1 für die Manifest-basierte Bereitstellung
+  - 1 für die Manifest-basierte Bereitstellung
 
-    - 0 für die Datenträger-basierte Bereitstellung
+  - 0 für die Datenträger-basierte Bereitstellung
 
 - **TemplateFileName**
 

@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105473"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702266"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn die Ausführung wegen einer Ausnahme vom Debugger unterbrochen wird, wird ein Dialogfeld angezeigt. Für Visual Basic oder C#-, sehen Sie die [Ausnahmen-Assistent](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) Dialogfeld, in der Standardeinstellung. Für C++, sehen Sie die ältere **Ausnahme** Dialogfeld. Wenn Sie Visual Basic oder c# verwenden, aber deaktiviert haben die **Ausnahmen-Assistent** in die **Optionen** im Dialogfeld wird Ihnen die **Ausnahme** im Dialogfeld.  
+Wenn die Ausführung wegen einer Ausnahme vom Debugger unterbrochen wird, wird ein Dialogfeld angezeigt. Für Visual Basic oder C#-, sehen Sie die [Ausnahmen-Assistent](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) Dialogfeld, in der Standardeinstellung. Für C++, sehen Sie die ältere **Ausnahme** Dialogfeld. Wenn Sie Visual Basic oder c# verwenden, aber deaktiviert haben die **Ausnahmen-Assistent** in die **Optionen** im Dialogfeld wird Ihnen die **Ausnahme** im Dialogfeld.  
   
  Wenn die **Ausnahmen-Assistent** oder **Ausnahme** Dialogfeld angezeigt wird, können Sie versuchen, das Problem zu beheben, die die Ausnahme verursacht hat.  
   

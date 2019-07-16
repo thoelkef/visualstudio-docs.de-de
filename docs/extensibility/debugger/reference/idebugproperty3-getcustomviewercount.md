@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerCount
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c4179b6e762d925ca918e459c5109deb6579c10
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 99abfc65027bb43cafcd96c39da39ad40c5607ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458837"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348877"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Ruft die Anzahl der benutzerdefinierten Viewer, die für diese Eigenschaft verfügbar sein können.
@@ -41,8 +41,7 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>Parameter
 `pcelt`\
-
- [out] Die Anzahl der benutzerdefinierten Viewer für diese Eigenschaft verfügbar.
+[out] Die Anzahl der benutzerdefinierten Viewer für diese Eigenschaft verfügbar.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

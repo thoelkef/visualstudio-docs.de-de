@@ -25,7 +25,7 @@ Benutzerdefinierte Attribute sind spezielle Attribute, die Domänenelemente, For
 
 1. In der **DSL-Explorer**, wählen Sie das Element, dem Sie ein benutzerdefiniertes Attribut hinzufügen möchten.
 
-2. In der **Eigenschaften** neben der **benutzerdefinierte Attribute** -Eigenschaft, klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) Symbol.
+2. In der **Eigenschaften** neben der **benutzerdefinierte Attribute** -Eigenschaft, klicken Sie auf die Schaltfläche zum Durchsuchen ( **...** ) Symbol.
 
      Die **Attribute bearbeiten** Dialogfeld wird geöffnet.
 

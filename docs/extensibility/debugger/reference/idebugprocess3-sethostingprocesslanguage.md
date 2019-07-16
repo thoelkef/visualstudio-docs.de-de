@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e10c77fb7e4fd3e7a679e9954140760c282952b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 242f35dce9245406c3466784811d79ac1942c49f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917652"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313913"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Diese Methode legt die Sprache, der der Prozess unter gehostet werden. Diese Sprache kann dann von der Debug-Engine (DE) verwendet werden, laden Sie die entsprechenden ausdrucksauswertung.
@@ -36,10 +39,9 @@ int SetHostingProcessLanguage(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `guidLang`
-
- [in] `GUID` der Sprache, die die DE verwendet werden soll. Geben Sie `GUID_NULL` (C++) oder `Guid.Empty` (c#), damit die DE die Standardsprache zu verwenden.
+## <a name="parameters"></a>Parameter
+`guidLang`\
+[in] `GUID` der Sprache, die die DE verwendet werden soll. Geben Sie `GUID_NULL` (C++) oder `Guid.Empty` (c#), damit die DE die Standardsprache zu verwenden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.

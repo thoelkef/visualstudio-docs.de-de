@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872449"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318950"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Legt den Wert des Objekts aus eine aufeinanderfolgende Reihe von Bytes fest.
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pValue`
+## <a name="parameters"></a>Parameter
+`pValue`\
+[in] Ein Array von Bytes, die den neuen Wert darstellt.
 
- [in] Ein Array von Bytes, die den neuen Wert darstellt.
-
- `nSize`
-
- [in] Die Größe des Werts in Bytes.
+`nSize`\
+[in] Die Größe des Werts in Bytes.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

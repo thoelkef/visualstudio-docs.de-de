@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetUnderlyingSymbol method
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b6b90f388f93bc7cfc2c246c529217bcdb00fa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 353b6d6f2a448cb7ac1bfdc98cc489688db9ee74
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920277"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345033"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 Diese Methode gibt ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , der den Namen der Enumeration darstellt.
@@ -36,10 +39,9 @@ int GetUnderlyingSymbol(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppField`
-
- [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , beschreibt der Name dieser Enumeration.
+## <a name="parameters"></a>Parameter
+`ppField`\
+[out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , beschreibt der Name dieser Enumeration.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

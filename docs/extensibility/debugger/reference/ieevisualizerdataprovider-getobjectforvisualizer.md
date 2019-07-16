@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer method
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08fd3c2d82e3e2bef3098770fdfbcf7cdfe95f7c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a10630ee8c74af333958e7115c660872ac26f78f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224046"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350223"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Diese Methode ruft das Objekt, das diese Schnellansicht darstellt.
@@ -40,9 +40,8 @@ int GetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parameter
- `ppObject`\
-
- [out] Das Objekt dargestellt wird, indem diese Schnellansicht
+`ppObject`\
+[out] Das Objekt dargestellt wird, indem diese Schnellansicht
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

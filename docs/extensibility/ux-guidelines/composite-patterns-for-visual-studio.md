@@ -3,17 +3,17 @@ title: Zusammengesetzte Muster für Visual Studio | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686239ed719a74cc91d9aec1412c81f38ecdd956
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387473"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824607"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlichen Konfigurationen. Einige der wichtigsten zusammengesetzte Muster in Visual Studio im Hinblick auf Konsistenz sind:
@@ -226,7 +226,7 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
 - **Immer** versuchen, einen Indikator zu erstellen, die die Informationen zusammengefasst, zur Verfügung stellt. Geben Sie ggf. eine Anzahl die Anzahl der verfügbaren Datenelemente (z. B. "3 Referenzen" anstatt einfach "Referenzen"), oder stellen Sie sich eine andere Möglichkeit zum Zusammenfassen der Daten.
 
-    - In Fällen, in denen die Daten für einen Indikator immer berechnet und angezeigt werden können, sofort berücksichtigen von Feedback progressive wie die Werte berechnet werden. Betrachten Sie beispielsweise das Animieren von Änderungen, die Updates für die verfügbaren Daten, die ähnlich wie die widerspiegeln, die die Anzahl der ungelesenen e-Mails erhöht die e-Mail-live-Kachel in Windows Phone aktualisiert wird.
+  - In Fällen, in denen die Daten für einen Indikator immer berechnet und angezeigt werden können, sofort berücksichtigen von Feedback progressive wie die Werte berechnet werden. Betrachten Sie beispielsweise das Animieren von Änderungen, die Updates für die verfügbaren Daten, die ähnlich wie die widerspiegeln, die die Anzahl der ungelesenen e-Mails erhöht die e-Mail-live-Kachel in Windows Phone aktualisiert wird.
 
 - **Nie** hinzufügen Weitere Indikatoren, die als ein Benutzer für einen bestimmten des Inhalts relativ ausführen kann. Ambiente-Indikatoren sollten nützlich sein, ohne Eingreifen des Benutzers. Indikatoren verlieren ihre Umgebung aus, wenn der benötigten Überlauf und andere verwaltungssteuerung für sie sichtbar zu machen.
 
@@ -235,11 +235,11 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
 - **Immer** muss der Benutzer einige explizite Geste zum Öffnen des weiteren Inhalts führen. Allgemeine open Bewegungen zählen:
 
-    - **Wenn darauf gezeigt wird:** QuickInfos oder nicht interaktiven Informationelle
+  - **Wenn darauf gezeigt wird:** QuickInfos oder nicht interaktiven Informationelle
 
-    - **Expliziten Befehl:** Inline Presenter
+  - **Expliziten Befehl:** Inline Presenter
 
-    - **Doppelklicken Sie auf der ambient-Indikator:** CodeLens-Popup-Fenster
+  - **Doppelklicken Sie auf der ambient-Indikator:** CodeLens-Popup-Fenster
 
 - **Immer** den Detail-Inhalt zu verwerfen, wenn der Benutzer die Esc-Taste drückt.
 

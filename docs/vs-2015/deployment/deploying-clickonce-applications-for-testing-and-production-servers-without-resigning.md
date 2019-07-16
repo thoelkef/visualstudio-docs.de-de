@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a65f2e39eac5889b287b082b4cad6842f44aa2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675551"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne erneutes Signieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63422784"
 Ein neues Feature von ClickOnce eingeführt, die in .NET Framework Version 3.5, die die Bereitstellung von ClickOnce-Anwendungen über mehrere Speicherorte zu, ohne erneutes Signieren oder Ändern der ClickOnce können-Manifeste in diesem Thema.  
   
 > [!NOTE]
-> Erneutes Signieren ist immer noch die bevorzugte Methode zum Bereitstellen neuer Versionen von Anwendungen. Verwenden Sie diese Methode, nach Möglichkeit. Weitere Informationen finden Sie unter [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> Erneutes Signieren ist immer noch die bevorzugte Methode zum Bereitstellen neuer Versionen von Anwendungen. Verwenden Sie diese Methode, nach Möglichkeit. Weitere Informationen finden Sie unter [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
  Drittanbieter-Entwicklern und ISVs können zu diesem Feature teilnehmen erleichtert Ihnen die für ihre Kunden ihre Anwendungen zu aktualisieren. Diese Funktion kann in den folgenden Situationen verwendet werden:  
   
@@ -65,5 +65,5 @@ Ein neues Feature von ClickOnce eingeführt, die in .NET Framework Version 3.5, 
  Schritt-für-Schritt-Anleitungen zum Erstellen von Bereitstellungen, die von verschiedenen Netzwerkorten bereitgestellt werden können, finden Sie unter [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ## <a name="see-also"></a>Siehe auch  
- [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [„MageUI.exe“ (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
+ [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [„MageUI.exe“ (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 2 | Microsoft-Dokumentation'
+title: Erstellen Sie Website-Spaltenelement-Projekt mit der Projektvorlage, Teil 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436724"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401104"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und diesen einer Projektvorlage in Visual Studio zugeordnet haben, empfiehlt es sich, außerdem einen Assistenten für die Vorlage bereitzustellen. Mithilfe des Assistenten können Sie Informationen von Benutzern sammeln, während diese Ihre Vorlage verwenden, um ein neues Projekt zu erstellen, das das Projektelement enthält. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
@@ -156,7 +156,7 @@ ms.locfileid: "63436724"
 
 11. In **Projektmappen-Explorer**unter der **Verweise** Ordner für die **ProjectTemplateWizard** Projekts **EnvDTE**.
 
-12. In der **Eigenschaften** Fenster ändern Sie den Wert von der **Embed Interop Types** Eigenschaft **"false"**.
+12. In der **Eigenschaften** Fenster ändern Sie den Wert von der **Embed Interop Types** Eigenschaft **"false"** .
 
 13. Wenn Sie ein Visual Basic-Projekt entwickeln, können Sie den Namespace "ProjectTemplateWizard" in Ihr Projekt importieren, mit der **Projekt-Designer**.
 
@@ -368,7 +368,7 @@ ms.locfileid: "63436724"
 
 2. Auf der **Signierung** Registerkarte die **Assembly signieren** Kontrollkästchen.
 
-3. In der **Schlüsseldatei mit starkem Namen auswählen** wählen  **\<neu... >**.
+3. In der **Schlüsseldatei mit starkem Namen auswählen** wählen  **\<neu... >** .
 
 4. In der **Schlüssel für einen starken Namen erstellen** Dialogfeld Geben Sie einen Namen für die neue Datei mit dem Schlüssel löschen der **Schlüsseldatei mit Kennwort schützen** aus, und wählen Sie dann die **OK** Schaltfläche.
 
@@ -376,7 +376,7 @@ ms.locfileid: "63436724"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>So rufen Sie das öffentliche Schlüsseltoken der Assistenten-Assembly ab
 
-1. Auf der **Menü "Start"**, wählen Sie **Programme**, wählen Sie **Microsoft Visual Studio**, wählen Sie **Visual Studio-Tools**, und wählen Sie dann auf  **Developer-Eingabeaufforderung**.
+1. Auf der **Menü "Start"** , wählen Sie **Programme**, wählen Sie **Microsoft Visual Studio**, wählen Sie **Visual Studio-Tools**, und wählen Sie dann auf  **Developer-Eingabeaufforderung**.
 
      Ein Visual Studio-Eingabeaufforderungsfenster wird geöffnet.
 
@@ -502,7 +502,7 @@ ms.locfileid: "63436724"
 
    - In der **Namen** geben **Eigene Ja/Nein-Spalte**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
-     In **Projektmappen-Explorer**, ein neues Projekt angezeigt wird, und das ein Projektelement mit dem Namen **"Field1"**, Visual Studio geöffnet wird, des Projekts *"Elements.xml"* Datei im Editor.
+     In **Projektmappen-Explorer**, ein neues Projekt angezeigt wird, und das ein Projektelement mit dem Namen **"Field1"** , Visual Studio geöffnet wird, des Projekts *"Elements.xml"* Datei im Editor.
 
 8. Überprüfen Sie, ob *"Elements.xml"* enthält die Werte, die Sie im Assistenten angegeben.
 

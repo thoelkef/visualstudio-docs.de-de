@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685695"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ Sie können allgemeine Anwendungseigenschaften für Visual Basic-, C#- und F#-An
 ## <a name="see-also"></a>Siehe auch  
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Introduction to the Project Designer (Einführung in den Projekt-Designer)](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Introduction to the Project Designer (Einführung in den Projekt-Designer)](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Verwalten von Debugeigenschaften](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Verwalten von Kompilierungseigenschaften](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Verwalten von Debugeigenschaften](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Verwalten von Kompilierungseigenschaften](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Verwalten von Anwendungsressourcen (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Verwalten von Anwendungseinstellungen (.NET)](../ide/managing-application-settings-dotnet.md)
