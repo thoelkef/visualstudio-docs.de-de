@@ -17,18 +17,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 321de64442b983dd6da1d23c25d535b389f15bfc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144593"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Dialogfeld "Symbolladeinformationen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Dialogfeld **Symbolladeinformationen** wird angezeigt, wenn Sie mit der rechten Maustaste auf das Fenster **Module** klicken und die Option **Symbolladeinformationen** auswählen.  
   
-## <a name="uielement-list"></a>UIElement-Liste  
+## <a name="uielement-list"></a>Liste der Benutzeroberflächenelemente  
  **Information**  
  Es werden die Verzeichnisse angezeigt, in denen nach Symboldateien (PDB-Dateien) gesucht wird. Diese Einstellung basiert auf den Installationseinstellungen von Visual Studio sowie auf den von Ihnen im Dialogfeld **Optionen** an den Symboleinstellungen vorgenommenen Änderungen.  
   

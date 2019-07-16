@@ -11,13 +11,13 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203894"
 ---
-# <a name="intellisense-hosting"></a>IntelliSense Hosting
+# <a name="intellisense-hosting"></a>IntelliSense-Hosting
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio ermöglicht das Hosten von IntelliSense. IntellSense hosten können, bieten Sie IntelliSense für Code, der nicht von der Text-Editor für Visual Studio gehostet wird.  
@@ -35,7 +35,7 @@ Visual Studio ermöglicht das Hosten von IntelliSense. IntellSense hosten könne
   
  Der hostflags, die in definierten [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), sind unten zusammengefasst.  
   
-|IntelliSense Host Flag|Beschreibung|  
+|IntelliSense-Hostflag|Beschreibung|  
 |----------------------------|-----------------|  
 |IHF_READONLYCONTEXT|Dieses Flag bedeutet, dass der Kontextpuffer festlegen tritt auf, nur-Lese und Bearbeitungsfunktionen nur innerhalb des Betreff-Texts.|  
 |IHF_NOSEPERATESUBJECT|Festlegen dieser Kennzeichnung bedeutet, die es ist keine separate IntelliSense-Thema. Der Antragsteller vorhanden im Kontextpuffer, z. B. der herkömmlichen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> IntelliSense-System.|  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 574f254b1cfccf58def5c404c15b03a4c83658cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142443"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operatoren sollten symmetrische Überladungen aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58959041"
 ## <a name="rule-description"></a>Regelbeschreibung
  Es gibt keine Situationen, in denen entweder auf Gleichheit oder Ungleichheit für Instanzen eines Typs gilt, und der entgegengesetzte Operator ist nicht definiert. Typen implementieren den Inequality-Operator in der Regel durch Rückgabe den negierten Wert des Gleichheitsoperators.
 
- Der C#-Compiler gibt einen Fehler für Verstöße gegen diese Regel.
+ Der c#-Compiler gibt einen Fehler für Verstöße gegen diese Regel.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie sowohl die Gleichheits- und Ungleichheitsoperatoren oder zu entfernen Sie, die vorhanden ist.

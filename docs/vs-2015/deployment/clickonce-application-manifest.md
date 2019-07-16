@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157431"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsmanifest is
 |-------------|-----------------|----------------|  
 |[\<assembly>-Element](../deployment/assembly-element-clickonce-application.md)|Erforderlich. Ein Element der obersten Ebene.|`manifestVersion`|  
 |[\<assemblyIdentity>-Element](../deployment/assemblyidentity-element-clickonce-application.md)|Erforderlich. Identifiziert die primäre Assembly von der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo>-Element](../deployment/trustinfo-element-clickonce-application.md)|Gibt die Sicherheitsanforderungen der Anwendung an.|Keiner|  
+|[\<trustInfo>-Element](../deployment/trustinfo-element-clickonce-application.md)|Gibt die Sicherheitsanforderungen der Anwendung an.|None|  
 |[\<entryPoint>-Element](../deployment/entrypoint-element-clickonce-application.md)|Erforderlich. Gibt den Einstiegspunkt der Anwendung Code.|`name`|  
-|[\<dependency>-Element](../deployment/dependency-element-clickonce-application.md)|Erforderlich. Gibt jede Abhängigkeit an, die für die Ausführung der Anwendung erforderlich ist. Gibt optional Assemblys an, die vorinstalliert werden müssen.|Keiner|  
-|[\<file> Element](../deployment/file-element-clickonce-application.md)|Dies ist optional. Identifiziert jede Nichtassemblydatei, die von der Anwendung verwendet wird. Kann COM-Isolationsdaten (Component Object Model) enthalten, die der Datei zugeordnet sind.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<dependency>-Element](../deployment/dependency-element-clickonce-application.md)|Erforderlich. Gibt jede Abhängigkeit an, die für die Ausführung der Anwendung erforderlich ist. Gibt optional Assemblys an, die vorinstalliert werden müssen.|None|  
+|[\<file> Element](../deployment/file-element-clickonce-application.md)|Optional. Identifiziert jede Nichtassemblydatei, die von der Anwendung verwendet wird. Kann COM-Isolationsdaten (Component Object Model) enthalten, die der Datei zugeordnet sind.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation>-Element](../deployment/fileassociation-element-clickonce-application.md)|Dies ist optional. Gibt eine Dateierweiterung mit der Anwendung zugeordnet werden soll.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Hinweise  

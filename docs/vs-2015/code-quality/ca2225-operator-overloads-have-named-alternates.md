@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201613"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ ms.locfileid: "58959865"
 |+=|+=|+=|Hinzufügen|
 |&|und|&|BitwiseAnd|
 |&=|' Und ' =|&=|BitwiseAnd|
-|&#124;|Or|&#124;|BitwiseOr|
+|&#124;|oder|&#124;|BitwiseOr|
 |&#124;=|"Oder" =|&#124;=|BitwiseOr|
-|--|Nicht zutreffend|--|Dekrement|
+|--|N/V|--|Dekrement|
 |/|/|/|Teilen|
 |/=|/=|/=|Teilen|
 |==|=|==|gleich|
@@ -56,28 +56,28 @@ ms.locfileid: "58959865"
 |^=|XOR =|^=|Xor|
 |>|>|>|Vergleichen|
 |>=|>=|>=|Vergleichen|
-|++|Nicht zutreffend|++|Inkrement|
+|++|N/V|++|Inkrement|
 |<>|!=|gleich|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
+|<<|<<|<<|Linke UMSCHALTTASTE|
+|<<=|<<=|<<=|Linke UMSCHALTTASTE|
 |<|<|<|Vergleichen|
 |<=|<=|\<=|Vergleichen|
-|&&|Nicht zutreffend|&&|LogicalAnd|
-|&#124;&#124;|Nicht zutreffend|&#124;&#124;|LogicalOr|
-|!|Nicht zutreffend|!|LogicalNot|
+|&&|N/V|&&|LogicalAnd|
+|&#124;&#124;|N/V|&#124;&#124;|LogicalOr|
+|!|N/V|!|LogicalNot|
 |%|Mod|%|MOD oder Rest|
-|%=|Nicht zutreffend|%=|Mod|
+|%=|N/V|%=|Mod|
 |* (binär)|*|*|Multiplizieren|
-|*=|Nicht zutreffend|*=|Multiplizieren|
+|*=|N/V|*=|Multiplizieren|
 |~|Not|~|OnesComplement|
-|>>|>>|>>|RightShift|
-=|Nicht zutreffend|>>=|RightShift|
+|>>|>>|>>|Rechte UMSCHALTTASTE|
+=|N/V|>>=|Rechte UMSCHALTTASTE|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
-|-=|Nicht zutreffend|-=|Subtrahieren|
-|true|IsTrue|Nicht zutreffend|"IsTrue" (Eigenschaft)|
-|-(Unär)|Nicht zutreffend|-|Negate-|
-|+ (Unär)|Nicht zutreffend|+|Plus|
-|False|IsFalse|False|"IsTrue" (Eigenschaft)|
+|-=|N/V|-=|Subtrahieren|
+|true|IsTrue|N/V|"IsTrue" (Eigenschaft)|
+|-(Unär)|N/V|-|Negate-|
+|+ (Unär)|N/V|+|Plus|
+|false|IsFalse|False|"IsTrue" (Eigenschaft)|
 
  N/v == kann nicht überladen werden, in der ausgewählten Sprache.
 

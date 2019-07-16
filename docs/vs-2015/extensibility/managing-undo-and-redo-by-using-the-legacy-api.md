@@ -11,25 +11,25 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c2133c75b32e56c1a054740bd829bd04cac97cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194371"
 ---
-# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>Verwalten von Rückgängigmachen und Wiederherstellen mithilfe der Legacy-API
+# <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>Verwalten von Vorgängen zum Rückgängigmachen und Wiederherstellen mithilfe der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editoren müssen Rückgängig-Vorgänge unterstützt, mit denen Benutzer ihre letzten Änderungen zurückzusetzen, wenn sie zum Ändern von Code. Die meisten Editoren implementierter [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Rückgängig-Unterstützung, die automatisch von der integrierten Entwicklungsumgebung (IDE) bereitgestellt haben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Implementieren von Rückgängig-Verwaltung](../extensibility/how-to-implement-undo-management.md)  
+ [Vorgehensweise: Implementieren der Rückgängig-Funktion](../extensibility/how-to-implement-undo-management.md)  
  Bietet Rückgängig-Funktion für Editoren mit einzelnen oder mehreren Ansichten an.  
   
- [Vorgehensweise: Deaktivieren des Rückgängig-Stapels](../extensibility/how-to-clear-the-undo-stack.md)  
+ [Vorgehensweise: Leeren des Stapels zum Rückgängigmachen](../extensibility/how-to-clear-the-undo-stack.md)  
  Beschreibt, wie einen Rückgängig-Stapel gelöscht.  
   
- [Vorgehensweise: Verwenden Sie die verknüpfte rückgängig-Verwaltung](../extensibility/how-to-use-linked-undo-management.md)  
+ [Vorgehensweise: Verwenden der verknüpften Rückgängig-Funktion](../extensibility/how-to-use-linked-undo-management.md)  
  Enthält verknüpfte rückgängig-Verwaltung in den Editor.  
   
 ## <a name="reference"></a>Referenz  

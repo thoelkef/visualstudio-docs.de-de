@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203497"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tastenkombinationen (Help Viewer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Micro
 |Allgemeine Anwendung|Leerzeichen|Statt EINGABE, überall außer in den Bearbeitungsfeldern|  
 |Allgemeine Anwendung|F1|Öffnet die Hilfe zum aktuellen UI-Element|  
 |Allgemeine Anwendung|F11|Wechselt zwischen der Vollbild- und der normalen Ansicht|  
-|Symbolleiste|Rückschritt<br /><br /> -ODER-<br /><br /> ALT + NACH-LINKS-TASTE|Vorherige Seite anzeigen|  
+|Symbolleiste|Rückschritt<br /><br /> -oder-<br /><br /> ALT + NACH-LINKS-TASTE|Vorherige Seite anzeigen|  
 |Symbolleiste|ALT + NACH-RECHTS-TASTE|Nächste Seite anzeigen|  
 |Symbolleiste|ALT + POS1|Startseite von Help Reviewer anzeigen|  
-|Symbolleiste|STRG+ S|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte **„Inhalt“**)|  
+|Symbolleiste|STRG+ S|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte **„Inhalt“** )|  
 |Symbolleiste|STRG + D|Fügt das aktuelle Thema den **Favoriten** hinzu.|  
 |Symbolleiste|STRG + F|Zeigt die Suchleiste im Themenbereich an, sodass Sie das aktuelle Thema durchsuchen können.|  
 |Symbolleiste|STRG+P|Druckt die aktuelle Seite|  
 |Symbolleiste|STRG + F2|Zeigt eine Druckvorschau der aktuellen Seite an|  
 |Symbolleiste|STRG + O|Öffnet das Dialogfeld **Viewer-Optionen**|  
 |Symbolleiste|STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|  
-|Navigation|ALT + C<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + C|Öffnet die Registerkarte **Inhalt**.|  
-|Navigation|ALT + I<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + I|Öffnet die Registerkarte **Index**|  
-|Navigation|ALT + F<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + F|Öffnet die Registerkarte **Favoriten**|  
-|Navigation|ALT + S<br /><br /> -ODER-<br /><br /> STRG + E<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + S|Öffnet die Registerkarte **Suche**.|  
-|Navigation|ALT + M<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|  
-|Thema|Menütaste<br /><br /> ODER<br /><br /> UMSCHALT + F10|Öffnet das Kontextmenü für das aktuelle UI-Element|  
+|Navigation|ALT + C<br /><br /> -oder-<br /><br /> STRG + UMSCHALT + C|Öffnet die Registerkarte **Inhalt**.|  
+|Navigation|ALT + I<br /><br /> -oder-<br /><br /> STRG + UMSCHALT + I|Öffnet die Registerkarte **Index**|  
+|Navigation|ALT + F<br /><br /> -oder-<br /><br /> STRG + UMSCHALT + F|Öffnet die Registerkarte **Favoriten**|  
+|Navigation|ALT + S<br /><br /> -oder-<br /><br /> STRG + E<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + S|Öffnet die Registerkarte **Suche**.|  
+|Navigation|ALT + M<br /><br /> -oder-<br /><br /> STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|  
+|Thema|Menütaste<br /><br /> oder<br /><br /> UMSCHALT + F10|Öffnet das Kontextmenü für das aktuelle UI-Element|  
 |Thema|NACH-OBEN|Scrollt Zeile für Zeile zum Anfang des Dokuments|  
 |Thema|NACH-UNTEN|Scrollt Zeile für Zeile zum Anfang des Dokuments|  
 |Thema|Taste VORHERIGE SEITE|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|  

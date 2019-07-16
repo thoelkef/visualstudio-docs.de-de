@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9c57079246dd52bd7fb44371999d0c3747dad40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149123"
 ---
 # <a name="launching-the-debugger"></a>Starten des Debuggers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Starten des Debuggers gesendet werden müssen, der richtigen Sequenz von Methode
   
      Wenn `S_FALSE` wird zurückgegeben, die Debug-Engine (DE) ist dabei den virtuellen Computer geladen werden.  
   
-     - oder -   
+     -oder-  
   
      Wenn `S_OK` zurückgegeben wird, ist der DE geladen werden von der SDM in-Process. Das SDM führt dann die folgenden Aufgaben aus:  
   

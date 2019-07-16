@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197413"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

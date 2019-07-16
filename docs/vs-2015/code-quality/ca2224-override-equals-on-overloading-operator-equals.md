@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142464"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,12 +62,12 @@ ms.locfileid: "58955797"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **a = ([0] 1,1) und b = ([1] 2,2) gleich sind? No**
-**a == b ? Keine**
+ **a = ([0] 1,1) und b = ([1] 2,2) gleich sind? Keine**
+**eine == b? Keine**
 **a1 und einer gleich? Ja**
 **a1 == ein? Ja**
-**b und Bcopy gleich sind? No**
-**b == bcopy ? "Ja"**
+**b und Bcopy gleich sind? Keine**
+**b == Bcopy? "Ja"**
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt einen Typ, der technisch verstößt gegen diese Regel, aber nicht in einem inkonsistenten Weise verhält.
 
@@ -80,8 +80,8 @@ ms.locfileid: "58955797"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **a = (1,1) und b = (2,2) gleich sind? No**
-**a == b ? Keine**
+ **a = (1,1) und b = (2,2) gleich sind? Keine**
+**eine == b? Keine**
 **a1 und einer gleich? Ja**
 **a1 == ein? Ja**
 **b und Bcopy gleich sind? Ja**

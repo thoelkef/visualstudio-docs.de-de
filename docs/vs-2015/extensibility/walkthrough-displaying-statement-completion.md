@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202009"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,4 +204,4 @@ Sie können-Sprache basierenden Anweisungsvervollständigung durch definieren di
 4. Wenn Sie zuerst "a", und klicken Sie dann "d" eingeben, sollte eine Liste mit "hinzufügen" und "Anpassung" angezeigt werden. Beachten Sie, dass Addition ausgewählt ist. Wenn Sie eine andere "d" eingeben, sollte die Liste enthalten, nur "hinzufügen", die jetzt ausgewählt wird. Sie können committen Sie "hinzufügen", indem Sie die LEERTASTE, Tab oder EINGABETASTE drücken, oder schließen die Liste durch Eingabe der ESC-Taste, oder eine beliebige Taste.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

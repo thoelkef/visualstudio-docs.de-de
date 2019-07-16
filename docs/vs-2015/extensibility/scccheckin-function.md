@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189528"
 ---
 # <a name="scccheckin-function"></a>SccCheckin-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|  
 |SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Datei wurde nicht eingecheckt.|  
 |SCC_E_NOTCHECKEDOUT|Der Benutzer hat nicht die Datei, damit Sie sie einchecken kann nicht überprüft werden.|  
-|SCC_E_CHECKINCONFLICT|Einchecken konnte nicht ausgeführt werden, da:<br /><br /> – Ein anderer Benutzer hat jetzt aktiviert und `bAutoReconcile` wurde "false".<br /><br /> - oder - <br /><br /> – Die automatische Zusammenführung kann nicht erfolgen, (z. B., wenn die Dateien "binary" sind).|  
+|SCC_E_CHECKINCONFLICT|Einchecken konnte nicht ausgeführt werden, da:<br /><br /> – Ein anderer Benutzer hat jetzt aktiviert und `bAutoReconcile` wurde "false".<br /><br /> -oder-<br /><br /> – Die automatische Zusammenführung kann nicht erfolgen, (z. B., wenn die Dateien "binary" sind).|  
 |SCC_E_VERIFYMERGE|Datei wurde automatisch zusammengeführt, jedoch nicht überprüft wurden ausstehende Überprüfung des Benutzers.|  
 |SCC_E_FIXMERGE|Datei wurde automatisch zusammengeführt, aber nicht in eingecheckt wurde aufgrund eines Zusammenführungskonflikts, das manuell gelöst werden muss.|  
 |SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  

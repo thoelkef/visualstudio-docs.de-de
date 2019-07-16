@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191680"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 1. Öffnen Sie das Projekt in Visual Studio.  
   
-2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**. (Tastenkombination: ALT + F2).  
+2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…** . (Tastenkombination: ALT + F2).  
   
 3. Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
   

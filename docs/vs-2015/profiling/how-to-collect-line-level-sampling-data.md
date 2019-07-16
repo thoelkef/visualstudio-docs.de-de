@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185957"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Vorgehensweise: Sammeln von Samplingdaten auf Zeilenebene
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine proze
   
 - Bevor Sie ein Profil erstellen, geben Sie **VSPerfCLREnv /samplelineoff** ein. Dies wirkt sich auf Anwendungen und Dienste aus.  
   
-     - oder -  
+     \- oder -  
   
 - Wenn eine Anwendung starten, geben Sie **VSPerfCmd/lineoff \<other arguments >** ein.  
   

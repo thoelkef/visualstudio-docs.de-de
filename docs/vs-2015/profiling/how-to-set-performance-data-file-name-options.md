@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205785"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Vorgehensweise: Set Performance Data File Name Option
+# <a name="how-to-set-performance-data-file-name-options"></a>Vorgehensweise: Festlegen von Dateinamenoptionen für Leistungsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Standardmäßig speichern Sie eine Profilerstellungs-Datendatei (.vsp) mithilfe der folgenden Syntax:  

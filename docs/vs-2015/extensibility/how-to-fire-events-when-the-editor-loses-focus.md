@@ -11,13 +11,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204195"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Vorgehensweise: Lösen Sie Ereignisse aus, wenn der Editor den Fokus verliert.
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Vorgehensweise: Auslösen von Ereignissen, wenn der Editor den Fokus verliert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Manchmal ist es notwendig zu wissen, wenn Sie ein Editor den Fokus auf den Fensterrahmen verliert. Beispielsweise müssen Sie Code aus einem Codefenster zu extrahieren, nachdem der Editor nicht mehr darauf ausgerichtet ist. Das folgende Verfahren enthält die Schritte zum Empfangen von Benachrichtigungen über den Editor den Fokus.  

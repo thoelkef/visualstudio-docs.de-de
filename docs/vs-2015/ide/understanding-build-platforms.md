@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2f39bc76329ec891a6e239f7cd2ad816eea1979e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193354"
 ---
 # <a name="understanding-build-platforms"></a>Grundlagen zu Buildplattformen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ ms.locfileid: "54761945"
 Sie können verschiedene Versionen von Projektmappen- und Projekteigenschaften speichern, die für verschiedene Zielplattformen gelten. Beispielsweise können Sie eine Debug-Konfiguration für eine x86-Zielplattform und eine Debug-Konfiguration für eine x64-Zielplattform erstellen. Sie können die aktive Plattform schnell wechseln, sodass Sie problemlos mehrere Konfigurationen erstellen können.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)  
+ [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)  
  Erläutert, wie ein Projekt für eine bestimmte Zielplattform konfiguriert wird.  
   
- [Gewusst wie: Konfigurieren von Projekten für mehrere Zielplattformen](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
+ [Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
  Erläutert, wie ein Projekt für mehrere Zielplattformen konfiguriert wird.  
   
 ## <a name="see-also"></a>Siehe auch  

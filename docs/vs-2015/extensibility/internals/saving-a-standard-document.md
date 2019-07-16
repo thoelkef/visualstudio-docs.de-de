@@ -13,18 +13,18 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198092"
 ---
 # <a name="saving-a-standard-document"></a>Speichern eines Standarddokuments
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Die Umgebung verarbeitet die speichern, speichern unter, und speichern Sie alle Befehle. Wenn ein Benutzer auswählt **speichern**, **speichern unter**, oder **alle speichern** aus der **Datei** Menü oder schließt die Projektmappe, wodurch eine  **Speichern Sie alle**, der folgende Prozess durchgeführt.  
   
- ![Standard Editor](../../extensibility/internals/media/public.gif "Public")  
+ ![Standard-Editor](../../extensibility/internals/media/public.gif "öffentliche")  
 Speichern Sie, speichern und Klassenbehandlung für ein standard-Editor-Befehl Alle speichern  
   
  Dieser Prozess wird in den folgenden Schritten beschrieben:  

@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ddad7149db75aa662f9427a301c04eaf925146f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197424"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Erstellen einer Erweiterung mit einem VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ Diese exemplarische Vorgehensweise erstellen Sie ein VSIX-Projekt, und fügen Si
   
 3. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
   
-4. Öffnen Sie eine Projektmappe in der experimentellen Instanz ein. Daraufhin sollte ein Dialogfeld mit der Meldung **erste Paket im Initialize()**.
+4. Öffnen Sie eine Projektmappe in der experimentellen Instanz ein. Daraufhin sollte ein Dialogfeld mit der Meldung **erste Paket im Initialize()** .

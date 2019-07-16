@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d0396718482c9ce90527155a3612160612f66d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198729"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ int GetRank(
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Der Rang eines Arrays entspricht die Anzahl der Dimensionen ab. In C++ und C#, mehrdimensionale Arrays sind wirklich Arrays von Arrays und kann daher nur ein eindimensionales Array betrachtet werden (und die `GetRank` Methode gibt immer 1 zurück). In [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], dagegen auf mehrdimensionale Arrays werden anders verarbeitet, und der Rang eines solchen Arrays gibt die Anzahl der Dimensionen (und die `GetRank` Methode wird immer die Anzahl der Dimensionen).  
+ Der Rang eines Arrays entspricht die Anzahl der Dimensionen ab. In C++ und c#, mehrdimensionale Arrays sind wirklich Arrays von Arrays und kann daher nur ein eindimensionales Array betrachtet werden (und die `GetRank` Methode gibt immer 1 zurück). In [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], dagegen auf mehrdimensionale Arrays werden anders verarbeitet, und der Rang eines solchen Arrays gibt die Anzahl der Dimensionen (und die `GetRank` Methode wird immer die Anzahl der Dimensionen).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

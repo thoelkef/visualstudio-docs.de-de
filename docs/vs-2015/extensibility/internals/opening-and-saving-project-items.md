@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158065"
 ---
 # <a name="opening-and-saving-project-items"></a>Öffnen und Speichern von Projektelementen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speiche
  [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)  
  Enthält schrittweise Anleitungen zum angeben, dass die Dateien eines bestimmten Typs in Ihrem Projekt mit einem projektspezifischen-Editor geöffnet werden soll.  
   
- [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)  
+ [Vorgehensweise: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)  
  Enthält schrittweise Anleitungen zum angeben die IDE zu einen standard-Editor für Dateien in Ihrem Projekttyp öffnen zu aktivieren.  
   
  [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../../extensibility/how-to-open-editors-for-open-documents.md)  

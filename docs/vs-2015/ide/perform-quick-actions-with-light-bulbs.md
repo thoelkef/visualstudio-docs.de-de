@@ -10,16 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 74237b42ebafb82e82705d42174efb6f6a4d3661
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203713"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Ausführen von schnellen Aktionen mit Glühbirnen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Glühbirnen sind eine neue Produktivitätsfunktion in Visual Studio 2015. Es sind Symbole, die im Visual Studio-Editor angezeigt werden und auf die Sie klicken können, um schnelle Aktionen auszuführen, einschließlich des Refactorings und der Fehlerbehebung. Glühbirnen bieten eine Fehlerbehebungs- und Refactoringunterstützung an einem einzelnen Blickpunkt, und zwar oftmals rechts von der Zeile, in der Sie Ihre Eingaben vornehmen.  
+Glühbirnen sind ein neues Produktivitätsfeature in Visual Studio 2015. Es sind Symbole, die im Visual Studio-Editor angezeigt werden und auf die Sie klicken können, um schnelle Aktionen auszuführen, einschließlich des Refactorings und der Fehlerbehebung. Glühbirnen bieten eine Fehlerbehebungs- und Refactoringunterstützung an einem einzelnen Blickpunkt, und zwar oftmals rechts von der Zeile, in der Sie Ihre Eingaben vornehmen.  
   
  ![Kleines Glühbirnensymbol](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  
   
@@ -29,9 +29,9 @@ Glühbirnen sind eine neue Produktivitätsfunktion in Visual Studio 2015. Es si
   
 1. In vielen Fällen werden Glühbirnen spontan angezeigt, wenn Sie mit dem Mauszeiger auf die Position eines Fehlers zeigen, oder am linken Rand des Editors, wenn Sie die Einfügemarke in eine Zeile verschieben, die einen Fehler enthält. Wenn eine rote Wellenlinie angezeigt wird, können Sie den Mauszeiger darüber bewegen, um die Glühbirne anzuzeigen. Sie können auch veranlassen, dass eine Glühbirne angezeigt wird, wenn Sie die Maus oder Tastatur verwenden, um zu einem beliebigen Punkt in der Zeile zu wechseln, wo das Problem auftritt.  
   
-2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG+.**, um die Glühbirne aufzurufen und direkt zur Liste mit den potenziellen Fehlerbehebungen zu wechseln.  
+2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG+.** , um die Glühbirne aufzurufen und direkt zur Liste mit den potenziellen Fehlerbehebungen zu wechseln.  
   
-   ![Glühbirne mit mauszeigerbewegung](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
+   ![Glühbirne mit Anzeige beim Daraufzeigen mit der Maus](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
   
 ## <a name="to-see-potential-fixes"></a>So zeigen Sie potenzielle Fehlerbehebungen an  
  Klicken Sie entweder auf den Pfeil nach unten oder auf den Link zum Anzeigen von potenziellen Fehlerbehebungen, um eine Liste von schnellen Aktionen anzuzeigen, die die Glühbirne für Sie vornehmen kann.  

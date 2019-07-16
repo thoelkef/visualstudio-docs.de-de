@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147947"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |-|-|-|  
 |**SwitchName**|**Notizen**|**Erforderlich oder Optional**|  
 |Unbenannte (XML-Datei)|Dies ist der erste unbenannte Parameter und den Pfad der XML-Datei konvertiert wird.|Erforderlich|  
-|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standard: \<XML Filename>.pkgdef|Optional|  
+|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standard: \<XML-Dateiname > PKGDEF|Optional|  
 |/noLogo|Dieses Flag wird beendet, Produkt und das Copyright-Informationen aus drucken.|Optional|  
 |/?|Ausgeben von Hilfeinformationen.|Optional|  
 |/help|Ausgeben von Hilfeinformationen.|Optional|  
@@ -151,7 +151,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
   
 - VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
-- VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml/nologo  
   
 ## <a name="notes"></a>Hinweise  
   

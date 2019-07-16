@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f2660ca99d8704f5dd8e7b9aa66c9c8fc5bdbb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143750"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ SCCRTN SccSetOption(
 |`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Gibt an, ob es sich bei die IDE unterstützt derzeit einen Vorgang abgebrochen wird.|  
 |`SCC_OPT_NAMECHANGEPFN`|Zeiger auf die [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) Callback-Funktion|Setzt einen Zeiger auf eine Namensänderung Rückruffunktion an.|  
 |`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Gibt an, ob es sich bei die IDE ermöglicht die Überprüfung aus die Dateien manuell (über die Benutzeroberfläche quellcodeverwaltung), oder gibt an, ob sie nur über das Quellcodeverwaltungs-Plug-in müssen ausgecheckt sein, ein.|  
-|`SCC_OPT_SHARESUBPROJ`|Nicht zutreffend|Das Quellcodeverwaltungs-Plug-in der IDE an der lokale Projektordner zulässig, das plug-in wird zurückgegeben `SCC_I_SHARESUBPROJOK`.|  
+|`SCC_OPT_SHARESUBPROJ`|N/V|Das Quellcodeverwaltungs-Plug-in der IDE an der lokale Projektordner zulässig, das plug-in wird zurückgegeben `SCC_I_SHARESUBPROJOK`.|  
   
 ## <a name="sccopteventqueue"></a>SCC_OPT_EVENTQUEUE  
  Wenn `nOption` ist `SCC_OPT_EVENTQUEUE`, die IDE ist deaktiviert (oder erneutes Aktivieren) Verarbeitung im Hintergrund. Während eine Kompilierung, die IDE z. B. das Quellcodeverwaltungs-Plug-In für im Leerlauf befindlichen Verarbeitung jegliche beenden angewiesen. Nach der Kompilierung würden sie Verarbeitung im Hintergrund, das Plug-in der Ereigniswarteschlange auf dem neuesten Stand zu halten erneut aktivieren. Für die `SCC_OPT_EVENTQUEUE` Wert `nOption`, es gibt zwei mögliche Werte für `dwVal`, und zwar `SCC_OPT_EQ_ENABLE` und `SCC_OPT_EQ_DISABLE`.  

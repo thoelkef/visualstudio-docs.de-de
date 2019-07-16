@@ -7,11 +7,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197254"
 ---
 # <a name="vsix-color-editor"></a>VSIX-Farb-Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von
   
    **Schritt 1: Bestimmen Sie die Kategorie und Token-Namen für die neue Farbe-Token.**  
   
-   Die bevorzugte Benennung Schema für eine VSColor ist **[Category] [UI-Typ] [Status]**. Verwenden Sie nicht das Wort "Color" VSColor die Namen, da sie redundant ist.  
+   Die bevorzugte Benennung Schema für eine VSColor ist **[Category] [UI-Typ] [Status]** . Verwenden Sie nicht das Wort "Color" VSColor die Namen, da sie redundant ist.  
   
    Kategorienamen logische Gruppierungen bereitzustellen und sollten als eng wie möglich definiert werden. Z. B. der Namen eines einzelnen Toolfensters möglicherweise einen Kategorienamen, aber der Name des ein gesamtes Unternehmen Einheit oder ein Projekt-Team ist nicht. Einträge in Kategorien gruppieren kann Verwechslungen zwischen Farben mit dem gleichen Namen.  
   
@@ -65,7 +65,7 @@ Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von
   
    Einige allgemeine Namen enthalten:  
   
-- Aktiv  
+- Active  
   
 - Inaktiv  
   

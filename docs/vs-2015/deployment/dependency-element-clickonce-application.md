@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199883"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`supportUrl`|Dies ist optional. Gibt eine Support-URL für die abhängige Plattform. Diese URL wird für den Benutzer angezeigt, wenn die erforderliche Plattform gefunden wird.|  
+|`supportUrl`|Optional. Gibt eine Support-URL für die abhängige Plattform. Diese URL wird für den Benutzer angezeigt, wenn die erforderliche Plattform gefunden wird.|  
 |`description`|Dies ist optional. Beschreibt das Betriebssystem beschrieben in Menschen lesbarem Format die `dependentOS` Element.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
@@ -121,7 +121,7 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 |`suiteType`|Dies ist optional. Identifiziert eine Produktsuite, die auf dem System oder des Systems Konfigurationstyp verfügbar. Gültige Werte sind `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` und `terminal`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `professional`.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
- Dies ist optional. Enthält die `assemblyIdentity` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.  
+ Optional. Enthält die `assemblyIdentity` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.  
   
  `dependentAssembly` hat die folgenden Attribute an.  
   
@@ -129,7 +129,7 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 |---------------|-----------------|  
 |`dependencyType`|Erforderlich. Gibt den Typ der Abhängigkeit an. Gültige Werte sind `preprequisite` und `install`. Ein `install` Assembly installiert ist, als Teil der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung. Ein `prerequisite` Assembly muss im globalen Assemblycache (GAC) vor der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installieren kann.|  
 |`allowDelayedBinding`|Erforderlich. Gibt an, ob die Assembly zur Laufzeit programmgesteuert geladen werden kann.|  
-|`group`|Dies ist optional. Wenn die `dependencyType` -Attributsatz auf `install`, kennzeichnet eine benannte Gruppe von Assemblys, nur die Installation bei Bedarf. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Wenn auf festgelegt `framework` und `dependencyType` -Attributsatz auf `prerequisite`, kennzeichnet die Assembly als Teil von .NET Framework. Der globale Assemblycache (GAC) wird nicht auf diese Assembly überprüft, bei der Installation auf [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] und höhere Versionen.|  
+|`group`|Optional. Wenn die `dependencyType` -Attributsatz auf `install`, kennzeichnet eine benannte Gruppe von Assemblys, nur die Installation bei Bedarf. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Wenn auf festgelegt `framework` und `dependencyType` -Attributsatz auf `prerequisite`, kennzeichnet die Assembly als Teil von .NET Framework. Der globale Assemblycache (GAC) wird nicht auf diese Assembly überprüft, bei der Installation auf [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] und höhere Versionen.|  
 |`codeBase`|Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Der Pfad der abhängigen Assembly. Entweder ein absoluter Pfad oder einen Pfad relativ zum des Manifests kann Basisklasse sein. Dieser Pfad muss ein gültiger URI in der Reihenfolge für das Assemblymanifest gültig ist.|  
 |`size`|Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Die Größe der abhängigen Assembly, in Bytes.|  
   
@@ -140,11 +140,11 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 |---------------|-----------------|  
 |`name`|Erforderlich. Identifiziert den Namen der Anwendung.|  
 |`version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|  
-|`publicKeyToken`|Dies ist optional. Gibt an, eine hexadezimale Zeichenfolge von 16 Zeichen, das die letzten 8 Bytes darstellt. die `SHA-1` Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel zum Signieren des Katalogs muss mindestens 2048 Bits sein.|  
-|`processorArchitecture`|Dies ist optional. Gibt den Prozessor. Gültige Werte sind `x86` für 32-Bit-Windows und `I64` für 64-Bit-Windows.|  
-|`language`|Dies ist optional. Identifiziert den zweiteiligen Sprachcodes, z. B. EN-US, der Assembly an.|  
+|`publicKeyToken`|Optional. Gibt an, eine hexadezimale Zeichenfolge von 16 Zeichen, das die letzten 8 Bytes darstellt. die `SHA-1` Hashwert des öffentlichen Schlüssels unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel zum Signieren des Katalogs muss mindestens 2048 Bits sein.|  
+|`processorArchitecture`|Optional. Gibt den Prozessor. Gültige Werte sind `x86` für 32-Bit-Windows und `I64` für 64-Bit-Windows.|  
+|`language`|Optional. Identifiziert den zweiteiligen Sprachcodes, z. B. EN-US, der Assembly an.|  
   
-### <a name="hash"></a>hash  
+### <a name="hash"></a>Hashindizes  
  Die `hash` Element ist ein optionales untergeordnetes Element von der `assemblyIdentity` Element. Das `hash` -Element weist keine Attribute auf.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
