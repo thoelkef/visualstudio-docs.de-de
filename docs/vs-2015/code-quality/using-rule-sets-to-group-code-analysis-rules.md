@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 1da32bd3626af60de56c0a8544753f95988773e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201222"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Beim Konfigurieren der Codeanalyse in [!INCLUDE[vsUltLong](../includes/vsultlong
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Praktische Übungen zu erhalten:** Verwenden Sie das Tool zur Codeanalyse, um einen benutzerdefinierten Regelsatz, der zum Suchen und Beheben von Problemen in einer einfachen .NET Framework-Anwendung anzugeben.|-   [Exemplarische Vorgehensweise: Legen Sie die Konfiguration und Verwendung einer benutzerdefinierten Regelsatzes](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
 |**Konfigurieren der Codeanalyse für ein Projekt:** Wählen Sie einen vorhandenen Regelsatz für ein Projekt, eine Website oder eine Lösung.|-   [Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [Vorgehensweise: Angeben von Regelsätzen für mehrere Projekte in einer Projektmappe](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  

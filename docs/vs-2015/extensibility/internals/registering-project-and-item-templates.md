@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185835"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
   
  \Form  
   
- \Web Page  
+ \Web Seite  
   
  \HelperFiles (enthält die in der Projektelemente mit mehreren Dateien verwendeten Dateien)  
   

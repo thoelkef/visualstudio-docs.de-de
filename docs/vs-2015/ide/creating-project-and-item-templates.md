@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201909"
 ---
 # <a name="creating-project-and-item-templates"></a>Erstellen von Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Projekt- und Elementvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bie
 ## <a name="visual-studio-templates"></a>Visual Studio-Vorlagen  
  Zusammen mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird eine Reihe vordefinierter Projekt- und Elementvorlagen installiert. Die Windows Forms-Anwendungsvorlagen und Klassenbibliotheksvorlagen in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und [!INCLUDE[csprcs](../includes/csprcs-md.md)], die über das Dialogfeld **Neues Projekt** verfügbar sind, sind Beispiele für Projektvorlagen. Installierte Elementvorlagen sind im Dialogfeld **Neues Element hinzufügen** verfügbar. Sie umfassen Elemente wie Codedateien, XML-Dateien, HTML-Seiten und Stylesheets.  
   
- Diese Vorlagen stellen einen Ausgangspunkt bereit, von dem aus Benutzer Projekte erstellen oder aktuelle Projekte erweitern können. Projektvorlagen stellen die Dateien bereit, die für einen bestimmten Projekttyp erforderlich sind; sie umfassen standardmäßige Assemblyverweise und legen standardmäßige Projekteigenschaften und Compileroptionen fest. Elementvorlagen können eine unterschiedliche Komplexität aufweisen – angefangen von einer einfachen leeren Datei mit der gewünschten Dateierweiterung bis hin zu einer Elementvorlage mit mehreren Dateien, die beispielsweise Quellcodedateien mit Stubcode, Dateien mit Designerinformationen und eingebettete Ressourcen enthält.  
+ Diese Vorlagen stellen einen Ausgangspunkt bereit, von dem aus Benutzer Projekte erstellen oder aktuelle Projekte erweitern können. Projektvorlagen stellen die Dateien bereit, die für einen bestimmten Projekttyp erforderlich sind; sie umfassen standardmäßige Assemblyverweise und legen standardmäßige Projekteigenschaften und Compileroptionen fest. Elementvorlagen können eine unterschiedliche Komplexität aufweisen – angefangen von einer einfachen leeren Datei mit der gewünschten Dateinamenerweiterung bis hin zu einer Elementvorlage mit mehreren Dateien, die beispielsweise Quellcodedateien mit Stubcode, Dateien mit Designerinformationen und eingebettete Ressourcen enthält.  
   
  Zusätzlich zu den installierten Vorlagen in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** können Sie eigene Vorlagen erstellen oder von der Community bereitgestellte Vorlagen herunterladen und verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md) und [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md).  
   
@@ -47,11 +47,11 @@ Projekt- und Elementvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bie
   Wenn diese Dateien in einer ZIP-Datei komprimiert sind und sich im richtigen Ordner befinden, werden sie automatisch von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt. Projektvorlagen werden im Dialogfeld **Neues Projekt** im Abschnitt **Meine Vorlagen** angezeigt, und Elementvorlagen werden in den Dialogfeldern **Neues Element hinzufügen** angezeigt. Weitere Informationen zu Vorlagenordnern finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Starter Kits  
- Starter Kits sind erweiterte Vorlagen, die mit anderen Mitgliedern der Community gemeinsam genutzt werden können. Ein Starter Kit umfasst kompilierbare Codebeispiele, Dokumentationen und andere Ressourcen, die Benutzern parallel zur Erstellung hilfreicher und realer Anwendungen den Einstieg in neue Tools und Programmiertechniken erleichtern. Der grundlegende Inhalt und die Verfahren für Starter Kits sind identisch mit denen für Vorlagen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Starter Kits](../ide/how-to-create-starter-kits.md).  
+ Starter Kits sind erweiterte Vorlagen, die mit anderen Mitgliedern der Community gemeinsam genutzt werden können. Ein Starter Kit umfasst kompilierbare Codebeispiele, Dokumentationen und andere Ressourcen, die Benutzern parallel zur Erstellung hilfreicher und realer Anwendungen den Einstieg in neue Tools und Programmiertechniken erleichtern. Der grundlegende Inhalt und die Verfahren für Starter Kits sind identisch mit denen für Vorlagen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Starterkits](../ide/how-to-create-starter-kits.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)   
  [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)   
  [Vorlagenparameter](../ide/template-parameters.md)   
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)   
- [Gewusst wie: Erstellen von Starter Kits](../ide/how-to-create-starter-kits.md)
+ [Vorgehensweise: Create Starter Kits (Vorgehensweise: Erstellen von Starter Kits)](../ide/how-to-create-starter-kits.md)

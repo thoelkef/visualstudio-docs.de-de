@@ -14,11 +14,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201217"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
