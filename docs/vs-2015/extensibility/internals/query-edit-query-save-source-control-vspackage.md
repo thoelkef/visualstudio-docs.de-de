@@ -13,18 +13,18 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ad0cf7c3e1d3269dbe7ebee051cc32e2e8531ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148886"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>QueryEditQuerySave (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Editoren können die Abfrage bearbeiten Abfrage speichern (QEQS) Ereignisse senden. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Quellcode-Verwaltungsstub implementiert den QEQS-Dienst, sodass der Empfänger von Ereignissen von QEQS. Diese Ereignisse werden dann an das derzeit aktive Quellcodeverwaltungs-VSPackage delegiert. Die aktiven Datenquellen-Steuerelement, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und die zugehörigen Methoden. Die Methoden der `IVsQueryEditQuerySave2` Schnittstelle werden in der Regel aufgerufen, unmittelbar bevor ein Dokument bearbeitet wird, zum ersten Mal und unmittelbar bevor ein Dokument gespeichert wird.  
   
-## <a name="queryeditquerysave-events"></a>QueryEditQuerySave Events  
+## <a name="queryeditquerysave-events"></a>QueryEditQuerySave-Ereignisse  
  Das Quellcodeverwaltungs-VSPackage muss die QEQS-Ereignisse behandeln, durch die Implementierung der `IVsQueryEditQuerySave2` Schnittstelle und die erforderlichen Methoden. Es folgt eine kurze Beschreibung der beiden Methoden, die das VSPackage mindestens implementieren müssen. Die tatsächliche Implementierung muss in Übereinstimmung mit der Logik des Quellmodells Steuerelement sein.  
   
 ### <a name="queryeditfiles-method"></a>QueryEditFiles-Methode  

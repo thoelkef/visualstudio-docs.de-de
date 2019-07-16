@@ -13,11 +13,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150796"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Bereitstellen von Visual Studio-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,8 +57,8 @@ Nachdem Sie die Entwicklung Ihrer Erweiterungs abgeschlossen haben, können Sie 
 |[Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)|Beschreibt die Komponenten eines VSIX-Pakets.|
 |[VSIX-Projektvorlage](../extensibility/vsix-project-template.md)|Bietet schrittweise Anleitungen zum Verpacken und veröffentlichen eine Erweiterung an.|
 |[Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)|Erläutert, wie während des Installationsvorgangs extension.vsixlangpack-Dateien mit lokalisierten Text bereit.|
-|[Vorgehensweise: Aktualisieren Sie eine Erweiterung](../extensibility/how-to-update-a-visual-studio-extension.md)|Beschreibt, wie Sie eine Erweiterung auf Ihrem System zu aktualisieren und wie Sie ein Update auf eine vorhandene Visual Studio-Erweiterung bereitstellen.|
-|[Vorgehensweise: Fügen Sie eine Abhängigkeit zu einem VSIX-Paket](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Beschreibt, wie Verweise auf die VSIX-Pakete hinzufügen.|
+|[Vorgehensweise: Aktualisieren einer Erweiterung](../extensibility/how-to-update-a-visual-studio-extension.md)|Beschreibt, wie Sie eine Erweiterung auf Ihrem System zu aktualisieren und wie Sie ein Update auf eine vorhandene Visual Studio-Erweiterung bereitstellen.|
+|[Vorgehensweise: Hinzufügen einer Abhängigkeit zu einem VSIX-Paket](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Beschreibt, wie Verweise auf die VSIX-Pakete hinzufügen.|
 |[Vorbereiten von Erweiterungen für die Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Erläutert, wie zum Bereitstellen einer Erweiterung mit Windows Installer.|
 |[Signieren von VSIX-Paketen](../extensibility/signing-vsix-packages.md)|Erläutert das VSIX-Pakete zu signieren.|
 |[Private Kataloge](../extensibility/private-galleries.md)|Erläutert, wie private Kataloge für Erweiterungen zu erstellen.|

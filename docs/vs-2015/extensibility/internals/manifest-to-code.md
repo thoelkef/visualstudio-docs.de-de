@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192641"
 ---
 # <a name="manifest-to-code"></a>Manifest für Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Das Manifest für Code-Tool ist eine Konsolenanwendung, die akzeptiert einer .im
 ||||  
 |-|-|-|  
 |**SwitchName**|**Notizen**|**Erforderlich oder Optional**|  
-|/manifest|Der Pfad, der dem Manifest Image zum Erstellen oder aktualisieren den Codewrapper verwenden.|Erforderlich|  
+|"/ manifest"|Der Pfad, der dem Manifest Image zum Erstellen oder aktualisieren den Codewrapper verwenden.|Erforderlich|  
 |/ Language|Die Sprache, in dem den Codewrapper generiert werden soll.<br /><br /> Gültige Werte: CPP, C++, CS, CSharp, C#, VB oder VSCT Groß-/Kleinschreibung der Werte.<br /><br /> Für die VSCT-Sprache werden die Option, die die /monikerClass, /classAccess und/Namespace Optionen ignoriert.|Erforderlich|  
 |/imageIdClass|Der Name der ImageIdClass und die zugehörige Datei, die vom Tool erstellt. Für die C++-Language-Option werden nur die h-Dateien generiert.<br /><br /> Standard: \<Manifestpfad > \MyImageIds. \<Lang Ext >|Optional|  
 |/monikerClass|Der Name der MonikerClass und die zugehörige Datei, die vom Tool erstellt. Für die C++-Language-Option werden nur die h-Dateien generiert. Dies wird für die VSCT-Sprache ignoriert.<br /><br /> Standard: \<Manifestpfad > \MyMonikers. \<Lang Ext >|Optional|  
 |/classAccess|Der Zugriffsmodifizierer für die ImageIdClass und die MonikerClass. Stellen Sie sicher, dass der Zugriffsmodifizierer für die angegebene Sprache ungültig ist. Dies wird für die VSCT-Language-Option ignoriert.<br /><br /> Standard: Public|Optional|  
-|/namespace|Der Namespace, der im Codewrapper definiert wird. Dies wird für die VSCT-Language-Option ignoriert. Entweder "." oder "::" sind gültige Namespace-Trennzeichen, unabhängig von der gewählten Sprache.<br /><br /> Standard: MyImages|Optional|  
+|/ Namespace|Der Namespace, der im Codewrapper definiert wird. Dies wird für die VSCT-Language-Option ignoriert. Entweder "." oder "::" sind gültige Namespace-Trennzeichen, unabhängig von der gewählten Sprache.<br /><br /> Standard: MyImages|Optional|  
 |/noLogo|Dieses Flag wird beendet, Produkt und das Copyright-Informationen aus drucken.|Optional|  
 |/?|Ausgeben von Hilfeinformationen.|Optional|  
 |/help|Ausgeben von Hilfeinformationen.|Optional|  
   
  **Beispiele**  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest/Language: CSharp  
   
 - ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/Namespace: Meine:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   

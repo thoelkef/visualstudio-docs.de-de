@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195608"
 ---
 # <a name="modules-view"></a>Modulansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ In der Modulansicht werden die Module der Profilerstellungsdaten aufgelistet. Je
   
  Erweitern oder reduzieren Sie den Modulnamen, um die Ansicht der Modulleistungsdaten anzuzeigen oder zu schließen.  
   
- Klicken Sie zum Hinzufügen oder Entfernen von Spalten mit der rechten Maustaste in das Berichtsfenster, und wählen Sie anschließend **Spalten hinzufügen/entfernen** aus. Sie können die Daten durch Klicken auf einen Spaltennamen sortieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht der Profilerstellungstools](../profiling/how-to-customize-report-view-columns.md).  
+ Klicken Sie zum Hinzufügen oder Entfernen von Spalten mit der rechten Maustaste in das Berichtsfenster, und wählen Sie anschließend **Spalten hinzufügen/entfernen** aus. Sie können die Daten durch Klicken auf einen Spaltennamen sortieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md).  
   
  Welche Spalten in der Modulansicht verfügbar sind, ist abhängig von der Profilerstellungsmethode (Sampling oder Instrumentierung), die zum Sammeln der Daten verwendet wurde, und davon, ob in der Profilerstellungsausführung .NET-Arbeitsspeicherdaten gesammelt wurden.  
   

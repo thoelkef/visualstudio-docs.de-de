@@ -11,18 +11,18 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165778"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden Klammern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die Sprache basierenden Funktionen wie z. B. die Zuordnung von geschweiften Klammern durch definieren die geschweiften Klammern, die übereinstimmen sollten, und klicken Sie dann eine Textmarkierungstag auf die übereinstimmenden geschweiften Klammern hinzufügen, wenn sich die Einfügemarke, auf einem der Klammern befindet implementieren. Sie können geschweifte Klammern im Kontext einer Sprache, definieren Sie können eine eigene Erweiterung und Inhalt Dateinamentyp Tags definieren und Anwenden der, die nur diesen Typ oder Sie können die Tags anwenden, um einem vorhandenen Inhaltstyp (z. B. "Text"). Die folgende exemplarische Vorgehensweise zeigt, wie Tags aus, um den Inhaltstyp "Text" Zugehörige Klammer angewendet wird.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Erstellen eines MEF-Projekts (Managed Extensibility Framework)  
@@ -125,4 +125,4 @@ Sie können die Sprache basierenden Funktionen wie z. B. die Zuordnung von gesch
 4. Wenn Sie die position der Einfügemarke, bevor Sie eine öffnende geschweifte Klammer, sollten sowohl, geschweifte Klammer und der entsprechende schließende geschweifte Klammer hervorgehoben werden. Wenn Sie den Cursor direkt nach der schließenden geschweiften Klammer positionieren, sollten sowohl dieser geschweifte Klammer als auch die entsprechende öffnende geschweifte Klammer hervorgehoben werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

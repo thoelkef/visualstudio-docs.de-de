@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150668"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortieren, Filtern und Gruppieren (XML-Schema-Explorer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sort
   
 - **Schemadateien anzeigen**.  
   
-- **Compositors anzeigen (Sequence/Choice/All)**.  
+- **Compositors anzeigen (Sequence/Choice/All)** .  
   
 ## <a name="sorting-options"></a>Sortierungsoptionen  
  Die folgenden Sortierungsoptionen sind verfügbar. Der Standardwert ist **nach Sortiertyp**. Die "Sortieren nach"-Optionen gelten nicht für Dateien und Namespaces.  

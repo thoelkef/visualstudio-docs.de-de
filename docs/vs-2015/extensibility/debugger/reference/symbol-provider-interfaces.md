@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204872"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Im folgenden sind die Symbol Behandeln von Schnittstellen für die [!INCLUDE[vsi
 |[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|Die Basisschnittstelle für alle Typen, die zur Laufzeit bestimmt werden kann.|  
 |[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Stellt ein dynamisches Feld für eine [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Objekt.|  
 |[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|SP|Stellt einen Enumerationstyp dar.|  
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Sp|Erweitert die Typen der verfügbaren Felder zur Unterstützung von Generika mit verwaltetem Code.|  
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|SP|Erweitert die Typen der verfügbaren Felder zur Unterstützung von Generika mit verwaltetem Code.|  
 |[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|Die Basisklasse für alle Felder; Stellt eine Beschreibung eines Symbols oder einen Typ dar.|  
 |[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|SP|Stellt die Definition eines Felds für einen generischen Typ von verwaltetem Code dar.|  
 |[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|SP|Stellt eine Instanz eines Felds für einen generischen Typ von verwaltetem Code.|  

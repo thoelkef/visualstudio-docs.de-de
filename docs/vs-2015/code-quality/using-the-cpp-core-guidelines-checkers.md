@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142099"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Der C++ Core Guidelines sind eine portable Gruppe von Richtlinien, Regeln und be
   
    ![Eigenschaftenseite "Code Analysis Extensions-Einstellungen für](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Öffnen Sie zum Aktivieren oder deaktivieren den C++ Core Check Regelsätze, die **Eigenschaftenseiten** -Dialogfeld für Ihr Projekt. Klicken Sie unter **Konfigurationseigenschaften**, erweitern Sie **Codeanalyse**, **Erweiterungen**. Steuern Sie in der Dropdownliste neben **aktivieren C++ Core Check (freigegeben)** oder **aktivieren C++ Core Check (experimentell)**, wählen Sie **Ja** oder **keine**. Wählen Sie **OK** oder **übernehmen** zum Speichern der Änderungen.  
+   Öffnen Sie zum Aktivieren oder deaktivieren den C++ Core Check Regelsätze, die **Eigenschaftenseiten** -Dialogfeld für Ihr Projekt. Klicken Sie unter **Konfigurationseigenschaften**, erweitern Sie **Codeanalyse**, **Erweiterungen**. Steuern Sie in der Dropdownliste neben **aktivieren C++ Core Check (freigegeben)** oder **aktivieren C++ Core Check (experimentell)** , wählen Sie **Ja** oder **keine**. Wählen Sie **OK** oder **übernehmen** zum Speichern der Änderungen.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Überprüfen Sie Typen, Grenzen und Lebensdauer  
  Der C++ Core Check-Paket enthält derzeit Überprüfungen für die [Typsicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [umschließt Sicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), und [Lebensdauer Sicherheit](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) Profile.  
@@ -87,7 +87,7 @@ int main()
   
   Wenn die C++ Core Check Code Analysis Rulesets sind installiert und aktiviert, wenn Sie diesen Code kompilieren, die ersten beiden Warnungen werden ausgegeben, aber die dritte unterdrückt wird. Hier ist die Buildausgabe aus dem Beispielcode:  
   
-  **1 >---Erstellen gestartet: Projekt: CoreCheckExample, Konfiguration: Debug Win32 --**  
+  **1 >---Erstellen gestartet: Projekt: CoreCheckExample, Konfiguration: Debuggen von Win32:**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj-C:\Users\username\documents\visual Studio 2015\P >.**  
@@ -95,13 +95,13 @@ int main()
 **1 > CoreCheckExample.vcxproj-C:\Users\username\documents\visual Studio 2015\P >.**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.PDB (vollständige PDB)**  
 **c:\users\username\documents\visual Studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): warning C26494: Variable 'Arr' ist uninitializ**  
+**ckexample\corecheckexample.cpp(6): Warnung C26494: Variable 'Arr' ist uninitializ**  
 **ED immer ein Objekt initialisiert werden. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **ID=620421)**  
 **c:\users\username\documents\visual Studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): warning C26485: Ausdruck "Arr": Kein Array zu**  
+**ckexample\corecheckexample.cpp(7): Warnung C26485: Ausdruck "Arr": Kein Array zu**  
  **zeigerverfall. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**========== Build: 1 erfolgreich, 0 fehlerhaft, 0 aktuell, 0 übersprungen ====** der C++ Core Guidelines gibt es lassen sich besser und sicherer Code zu schreiben. Wenn Sie eine Instanz verfügen, in denen eine Regel oder ein Profil nicht angewendet werden sollte, ist es jedoch einfach direkt im Code unterdrückt werden sollen. Sie können die `gsl::suppress` Attribut C++ Core Check verhindern, erkennen und die berichterstellung einer Verletzung einer Regel in den folgenden Codeblock. Sie können einzelne Anweisungen aus, um bestimmte Regeln unterdrücken kennzeichnen. Können Sie auch das gesamte begrenzungsprofil unterdrücken, durch das Schreiben von `[[gsl::suppress(bounds)]]` ohne eine spezielle regelzahl.  
+**==== Erstellen: 1 erfolgreich, 0 fehlerhaft, 0 aktuell, 0 übersprungen ====** der C++ Core Guidelines gibt es lassen sich besser und sicherer Code zu schreiben. Wenn Sie eine Instanz verfügen, in denen eine Regel oder ein Profil nicht angewendet werden sollte, ist es jedoch einfach direkt im Code unterdrückt werden sollen. Sie können die `gsl::suppress` Attribut C++ Core Check verhindern, erkennen und die berichterstellung einer Verletzung einer Regel in den folgenden Codeblock. Sie können einzelne Anweisungen aus, um bestimmte Regeln unterdrücken kennzeichnen. Können Sie auch das gesamte begrenzungsprofil unterdrücken, durch das Schreiben von `[[gsl::suppress(bounds)]]` ohne eine spezielle regelzahl.  
   
 ## <a name="use-the-guideline-support-library"></a>Verwenden Sie die Richtlinie-Unterstützungsbibliothek  
  Das Microsoft.CppCoreCheck NuGet-Paket wird auch ein Paket mit Microsoft Implementierung von Guideline Support Library (GSL) installiert. GSL steht auch in eigenständiger Form an [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Diese Bibliothek ist hilfreich, wenn Sie den Core Guidelines möchten. GSL enthält die Definitionen, mit denen Sie die Fehler verursachenden Konstrukte mit sicherer Alternativen zu ersetzen. Sie können z. B. Ersetzen einer `T*, length` -Paar von Parametern mit dem `span<T>` Typ. GSL ist open Source, deshalb sollten Sie einen Blick auf die Bibliothekquellen, kommentieren oder beitragen können, das Projekt finden Sie unter [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).

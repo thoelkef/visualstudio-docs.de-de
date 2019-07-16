@@ -17,11 +17,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204042"
 ---
 # <a name="ide-constants"></a>IDE-Konstanten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> Klasse enthält die Konstanten, di
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Eine Konstante, die speziell für Visual Studio ist, der angibt, dass ein Cookie nicht festgelegt wurde.|  
 |[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Eine Visual Studio-Element-ID, die das Fehlen eines Projektelements darstellt. Dieser Wert wird verwendet, wenn keine aktuelle Auswahl vorhanden ist.|
 |[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Eine Visual Studio-Element-ID, die den Stamm einer Projekthierarchie darstellt und wird verwendet, um die gesamte Hierarchie, im Gegensatz zu einem einzelnen Element zu identifizieren.|
-|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Eine Visual Studio-Element-ID, die darstellt, die aktuell ausgewählte Element oder Elemente, die den Stamm der Hierarchie enthalten können.| 
+|[VSITEMID. Auswahl](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Eine Visual Studio-Element-ID, die darstellt, die aktuell ausgewählte Element oder Elemente, die den Stamm der Hierarchie enthalten können.| 
   
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
  Beschreibt, welche Komponente der IDE einfach, im ausgewählt wurde ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> aufrufen, z. B.  

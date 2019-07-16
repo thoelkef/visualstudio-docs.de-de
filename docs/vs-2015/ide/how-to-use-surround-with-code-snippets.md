@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f2fd696e5d1ac30fda19a53490bd494305d4fd82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186153"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Vorgehensweise: Verwenden Sie umschließende Codeausschnitte
+# <a name="how-to-use-surround-with-code-snippets"></a>Vorgehensweise: Verwenden von „Umschließen mit“-Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In den folgenden Vorgehensweisen wird beschrieben, wie Sie umschließende Codeausschnitte verwenden. Umschließende Codeausschnitte sind auf drei verschiedene Arten verfügbar: über Tastenkombinationen, über das Menü „Bearbeiten“ und über das Kontextmenü.  

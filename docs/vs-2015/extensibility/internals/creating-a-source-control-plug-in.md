@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37cb4cfc71b2574600bf7ca886c693b888ec821a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196967"
 ---
 # <a name="creating-a-source-control-plug-in"></a>Erstellen eines Quellcodeverwaltungs-Plug-Ins
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

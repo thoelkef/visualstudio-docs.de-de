@@ -15,11 +15,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196983"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance-Hilfsprogramm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ```  
   
 #### <a name="parameters"></a>Parameter  
- /Create  
+ / Erstellen  
  Erstellt die experimentelle Instanz.  
   
  / Reset  
@@ -42,10 +42,10 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  /Clean  
  Löscht die experimentelle Instanz.  
   
- /VSInstance  
+ / VSInstance  
  Der Name des Verzeichnisses, das die zu kopierende grundlegende Visual Studio-Instanz enthält.  
   
- /RootSuffix  
+ / RootSuffix  
  Das Suffix, auf den Namen des Verzeichnisses experimentelle Instanz angefügt werden soll.  
   
 ## <a name="remarks"></a>Hinweise  

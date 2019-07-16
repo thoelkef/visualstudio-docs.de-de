@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8ca68aec180c51a170fd6ecce58237a5b306705
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194393"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Verwalten von parallelen Dateizuordnungen
 
@@ -53,7 +53,7 @@ Wenn Sie mehrere Seite-an-Seite von VSPackages zu derselben Erweiterung verwende
 
   **CustomAction Tabellenzeilen, die bestimmen, die neueste Version von Visual Studio**
 
-  |Aktion|Typ|Source|Target|
+  |Aktion|Typ|Source|Ziel|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|

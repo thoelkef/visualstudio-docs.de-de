@@ -11,11 +11,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58956016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162118"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|  
-|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
+|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|  
+|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -58,7 +58,7 @@ Gibt die Beschreibung der Vorlage an, wie er in einem angezeigt wird der **neues
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
 ## <a name="text-value"></a>Textwert  
- Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
+ Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.  
   
  Der Text stellt eine Beschreibung der Vorlage bereit.  
   

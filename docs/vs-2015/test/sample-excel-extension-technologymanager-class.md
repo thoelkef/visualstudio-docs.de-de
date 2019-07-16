@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192510"
 ---
-# <a name="sample-excel-extension-technologymanager-class"></a>Sample Excel Extension: TechnologyManager Class
+# <a name="sample-excel-extension-technologymanager-class"></a>Sample Excel Extension: TechnologyManager-Klasse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>-Klasse und stellt Kerndiensten für die Erweiterung [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] bereit. Obwohl die Basisklasse über viele Methoden verfügt, wird in diesem Beispiel nur eine Teilmenge der Methoden verwendet.  

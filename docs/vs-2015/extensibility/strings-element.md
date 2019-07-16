@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0eae2fd7490269d713beb9950163071dd3ba32f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160566"
 ---
 # <a name="strings-element"></a>Strings-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Das Zeichenfolgen-Element muss mindestens einen enthalten **ButtonText** unterge
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|language|Dies ist optional. Language=".".|  
+|language|Optional. Language = ".".|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
@@ -51,7 +51,7 @@ Das Zeichenfolgen-Element muss mindestens einen enthalten **ButtonText** unterge
 |ToolTipText|Die `ToolTipText` Feld gibt den Text, der angezeigt wird, in der QuickInfo für ein Menüelement.<br /><br /> Wenn die `ToolTipText` Feld leer ist, ist die `ButtonText` Feld verwendet wird.|  
 |MenuText|Die `MenuText` Feld gibt den Text an, die für einen Befehl angezeigt wird, wenn sie im Hauptmenü, eine Symbolleiste, die in einem Kontextmenü oder in einem Untermenü wird. Wenn die `MenuText` Feld leer ist, werden die integrierte Entwicklungsumgebung (IDE) verwendet die `ButtonText` Feld. Die `MenuText` Feld kann auch für die Lokalisierung verwendet werden.<br /><br /> Für Kontextmenüs das `MenuText` Feld enthält den Namen, die in der Symbolleiste Kontextmenüs angezeigt wird, die Anpassung von Kontextmenüs in der IDE ermöglicht. Aus diesem Grund werden Sie in der Sie Ihre Kontextmenü Namen bestimmte; Verwenden Sie z. B. "-Widget-Paket im Kontextmenü" anstelle von "Verknüpfung".<br /><br /> Wenn die `MenuText` Feld nicht angegeben ist, die `ButtonText` Feld verwendet wird.|  
 |commandName|Die `CommandName` Feld gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Befehle** Registerkarte der **anpassen** Dialogfeld (verfügbar, indem Sie auf **anpassen**auf die **Tools** Menü).|  
-|CanonicalName|Die englische `CanonicalName` Feld gibt den Namen des Befehls in englischem Text, die in eingegeben werden, können die **Befehl** Fenster, um das Menüelement auszuführen. Die IDE entfernt alle Zeichen, die keine Buchstaben, Ziffern, Unterstriche oder eingebettete Punkte sind. Dieser Text wird dann verkettet, um zu den `ButtonText` Feld, um den Befehl definieren. Z. B. **neues Projekt** auf die **Datei** Startmenü den Befehl aus, File.NewProject.<br /><br /> Wenn die englische `CanonicalName` Feld nicht angegeben ist, verwendet die IDE die `ButtonText` Feld, und Leisten Sie alle mit Ausnahme von Buchstaben, Ziffern, Unterstriche und eingebettete Punkte. Zum Beispiel den Text der Schaltfläche "& definieren... Befehle" wird DefineCommands, in dem das kaufmännische und-Zeichen, den Speicherplatz und mit den Auslassungspunkten entfernt werden.<br /><br /> Wenn die `TextChanges` Flag angegeben wird und der Text des Befehls geändert wird, wird des entsprechenden Befehls erkannt werden, indem die **Befehl** Fenster wird nicht geändert, bleibt die kanonische Form des ursprünglichen `ButtonText` oder einem englischen `CanonicalName` Felder.|  
+|CanonicalName-Element|Die englische `CanonicalName` Feld gibt den Namen des Befehls in englischem Text, die in eingegeben werden, können die **Befehl** Fenster, um das Menüelement auszuführen. Die IDE entfernt alle Zeichen, die keine Buchstaben, Ziffern, Unterstriche oder eingebettete Punkte sind. Dieser Text wird dann verkettet, um zu den `ButtonText` Feld, um den Befehl definieren. Z. B. **neues Projekt** auf die **Datei** Startmenü den Befehl aus, File.NewProject.<br /><br /> Wenn die englische `CanonicalName` Feld nicht angegeben ist, verwendet die IDE die `ButtonText` Feld, und Leisten Sie alle mit Ausnahme von Buchstaben, Ziffern, Unterstriche und eingebettete Punkte. Zum Beispiel den Text der Schaltfläche "& definieren... Befehle" wird DefineCommands, in dem das kaufmännische und-Zeichen, den Speicherplatz und mit den Auslassungspunkten entfernt werden.<br /><br /> Wenn die `TextChanges` Flag angegeben wird und der Text des Befehls geändert wird, wird des entsprechenden Befehls erkannt werden, indem die **Befehl** Fenster wird nicht geändert, bleibt die kanonische Form des ursprünglichen `ButtonText` oder einem englischen `CanonicalName` Felder.|  
 |LocCanonicalName|Die `LocCanonicalName` Feld verhält sich genau wie die englische `CanonicalName` Feld ermöglicht jedoch das lokalisierte Befehlstext angegeben werden. Beide kanonische Felder können angegeben werden. Da die IDE in eingegebenen Text analysiert die **Befehl** Fenster und ordnet es mit einem Befehl sowohl für Englisch als auch für nicht-englischen Text kann den gleichen Befehl zugeordnet werden.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  

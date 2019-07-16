@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201438"
 ---
 # <a name="demo-sample"></a>Demobeispiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 2. Wenn Visual C++ nicht Ihre Standardsprache in VS ist, erweitern Sie in der Baumstruktur **Projekttypen** die Option **Andere Sprachen**.  
   
-3. Erweitern Sie **Visual C++**, und klicken Sie dann auf **Allgemein**.  
+3. Erweitern Sie **Visual C++** , und klicken Sie dann auf **Allgemein**.  
   
 4. Klicken Sie unter **Vorlagen** auf **Leeres Projekt**.  
   
@@ -56,13 +56,13 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 3. Wählen Sie in der Liste **Allgemein** den Text in der Spalte neben **Zielerweiterung** aus, und geben Sie dann **.lib** ein.  
   
-4. Klicken Sie unter **Projektstandards** auf die Spalte neben **Konfigurationstyp** und dann auf **Statische Bibliothek (.lib)**.  
+4. Klicken Sie unter **Projektstandards** auf die Spalte neben **Konfigurationstyp** und dann auf **Statische Bibliothek (.lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Hinzufügen der Kopf- und Quelldatei zum CodeDefects-Projekt  
   
 1. Erweitern Sie im Projektmappen-Explorer **CodeDefects**, klicken Sie mit der rechten Maustaste auf **Headerdateien**, klicken Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.  
   
-2. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Code** und dann auf **Headerdatei (.h)**.  
+2. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Code** und dann auf **Headerdatei (.h)** .  
   
 3. Geben Sie im Feld **Name** die Bezeichnung **Bug.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
   
@@ -90,7 +90,7 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 5. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Quelldateien**, zeigen Sie auf **Neu**, und klicken Sie anschließend auf **Neues Element**.  
   
-6. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **C++-Datei (.cpp)**.  
+6. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **C++-Datei (.cpp)** .  
   
 7. Geben Sie im Feld **Name** die Bezeichnung **Bug.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
   
@@ -170,13 +170,13 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 6. Wählen Sie in der Liste **Allgemein** den Text in der Spalte neben **Zielerweiterung** aus, und geben Sie dann **.lib** ein.  
   
-7. Klicken Sie unter **Projektstandards** auf die Spalte neben **Konfigurationstyp** und dann auf **Statische Bibliothek (.lib)**.  
+7. Klicken Sie unter **Projektstandards** auf die Spalte neben **Konfigurationstyp** und dann auf **Statische Bibliothek (.lib)** .  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Hinzufügen der Headerdatei und Quelldatei zum Annotations-Projekt  
   
 1. Erweitern Sie im Projektmappen-Explorer **Annotations**, klicken Sie mit der rechten Maustaste auf **Headerdateien**, klicken Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.  
   
-2. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Headerdatei (.h)**.  
+2. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Headerdatei (.h)** .  
   
 3. Geben Sie im Feld **Name** den **annotations.h** ein, und klicken Sie dann auf **Hinzufügen**.  
   
@@ -199,7 +199,7 @@ Diese folgenden Prozeduren zeigen Ihnen, wie Sie das Beispiel für [Exemplarisch
   
 5. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Quelldateien**, zeigen Sie auf **Neu**, und klicken Sie anschließend auf **Neues Element**.  
   
-6. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Code** und dann auf **C++-Datei (.cpp)**.  
+6. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Code** und dann auf **C++-Datei (.cpp)** .  
   
 7. Geben Sie im Feld **Name** den **annotations.cpp** ein, und klicken Sie dann auf **Hinzufügen**.  
   

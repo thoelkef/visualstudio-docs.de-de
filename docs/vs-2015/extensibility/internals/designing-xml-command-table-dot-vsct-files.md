@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196847"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Entwerfen von XML-Befehlstabelle (. VSCT)-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -119,7 +119,7 @@ Eine XML-Befehlstabellen (VSCT) Befehlsdatei beschreibt das Layout und die Darst
   
  Während der Entwicklung ist es möglich, dass mehrere VSPackage-Projekte erstellt und in der experimentellen Registrierungsstruktur, die zu verwirrend Überfrachtung in der IDE führen kann registriert werden. Um dieses Problem zu beheben, können Sie die experimentelle Struktur zurücksetzen, um die Standardeinstellungen, entfernen Sie alle registrierten VSPackages und alle Änderungen, die sie der IDE vorgenommen haben, können. Verwenden Sie zum Zurücksetzen der experimentellen Struktur das CreateExpInstance.exe-Tool, das in Visual Studio SDK enthalten ist. Sie finden sie unter  
   
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **% PROGRAMFILES (x 86) %\Visual Studio \<Version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Führen Sie das Tool über die Befehlszeile **CreateExpInstance/Reset**. Denken Sie daran, dass dieses Tool aus der experimentellen Struktur, alle registrierte VSPackages, die normalerweise nicht entfernt mit installierten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   

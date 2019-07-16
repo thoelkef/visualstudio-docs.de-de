@@ -11,11 +11,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65404f9fde6c8eeb653ab446595dbca83134703e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150799"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Gliederung und ausgeblendeter Text in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,8 +26,8 @@ Gliederung ermöglicht eine Sequenz von Textzeilen zu einer einzigen Zeile zu re
  [Vorgehensweise: Unterstützen der Gliederung in einem Legacysprachdienst](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
  Erläutert, wie implementieren  
   
- [Vorgehensweise: Unterstützen der ausgeblendeten Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Vorgehensweise: Unterstützen von ausgeblendetem Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Erläutert den Zweck eines Bereichs von ausgeblendetem Text, und enthält Anweisungen dazu, wie Sie einen Bereich des ausgeblendeten Textes zu implementieren.  
   
- [Vorgehensweise: Geben Sie die Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Erläutert die zwei Optionen, die Gliederung für Ihre Sprache zu unterstützen, erweitert die *reduzieren auf Definitionen* Befehl.

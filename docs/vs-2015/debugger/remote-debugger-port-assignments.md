@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195173"
 ---
 # <a name="remote-debugger-port-assignments"></a>Remotedebugger - Portzuweisungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,14 +34,14 @@ Der Visual Studio-Remotedebugger kann als Anwendung oder als Hintergrunddienst a
   
  Klicken Sie im Fenster "Remotedebugger" auf **Extras / Optionen**, und legen Sie die Nummer für den TCP/IP-Port fest.  
   
- Starten Sie von der Befehlszeile aus den Remotedebugger über die Option **/port**: **msvsmon /port \<Portnummer>**.  
+ Starten Sie von der Befehlszeile aus den Remotedebugger über die Option **/port**: **msvsmon /port \<Portnummer>** .  
   
  Alle Remotedebugger-Befehlszeilenoptionen finden Sie in der Hilfe zum Remotedebugging (drücken Sie **F1** , oder klicken Sie im Fenster "Remotedebugger" auf **Hilfe / Verwendung** ).  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Remotedebugger-Port bei 64-Bit-Betriebssystemen  
  Beim Starten der 64-Bit-Version des Remotedebuggers wird standardmäßig Port 4020 verwendet.  Wenn Sie einen 32-Bit-Prozess debuggen, startet die 64-Bit-Version des Remotedebuggers eine 32-Bit-Remotedebuggerversion auf Port 4021. Wenn Sie den 32-Bit-Remotedebugger ausführen, wird Port 4020 und nicht Port 4021 verwendet.  
   
- Dieser Port kann über die Befehlszeile konfiguriert werden: **"Msvsmon" /wow64port \<Portnummer >**.  
+ Dieser Port kann über die Befehlszeile konfiguriert werden: **"Msvsmon" /wow64port \<Portnummer >** .  
   
 ## <a name="the-discovery-port"></a>Port für die Ermittlung  
  UDP 3702 wird für die Suche nach ausgeführten Instanzen des Remotedebuggers im Netzwerk verwendet (z. B. bei **Suchen** im Dialogfeld **An den Prozess anhängen** ). Er wird nur für die Ermittlung von Computern verwendet, auf denen der Remotedebugger ausgeführt wird, und ist daher optional, wenn Sie den Computernamen oder die IP-Adresse des Zielcomputers auf andere Weise ermitteln können. Da dies der Standardport für die Ermittlung ist, kann die Portnummer nicht konfiguriert werden.  

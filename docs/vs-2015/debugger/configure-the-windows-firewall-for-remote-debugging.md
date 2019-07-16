@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161538"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurieren der Windows-Firewall für das Remotedebuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ In diesem Thema wird die Konfiguration der Firewall für das Remotedebuggen auf 
   
 3. Suchen Sie in der Liste **Zugelassene Apps und Features** nach **Visual Studio - Remotedebugmonitor**. Vergewissern Sie sich, dass diese Option (sofern aufgeführt) und mindestens ein Netzwerktyp ausgewählt sind.  
   
-4. Wenn **Visual Studio - Remotedebugmonitor** nicht aufgeführt ist, klicken Sie auf **Andere App zulassen**. Wenn Sie noch, dass es in sehen der **ein app-Fenster "hinzufügen"**, klicken Sie auf **Durchsuchen** und navigieren Sie zu  **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Remote Debugger**. Suchen Sie den entsprechenden Ordner für die Anwendung (x86, x64, Appx), und wählen Sie dann **msvsmon.exe**aus. Klicken Sie anschließend auf **Hinzufügen**.  
+4. Wenn **Visual Studio - Remotedebugmonitor** nicht aufgeführt ist, klicken Sie auf **Andere App zulassen**. Wenn Sie noch, dass es in sehen der **ein app-Fenster "hinzufügen"** , klicken Sie auf **Durchsuchen** und navigieren Sie zu  **\<Visual Studio-Installationsverzeichnis > \Common7\IDE\Remote Debugger**. Suchen Sie den entsprechenden Ordner für die Anwendung (x86, x64, Appx), und wählen Sie dann **msvsmon.exe**aus. Klicken Sie anschließend auf **Hinzufügen**.  
   
 5. Wählen Sie in der Liste **Zugelassene Apps** den Eintrag **Visual Studio - Remotedebugmonitor**aus. Wählen Sie einen oder mehrere Netzwerktypen (**Domäne, Heim/Arbeitsplatz (Privat), Öffentlich**) für die Kommunikation mit dem Remotedebugmonitor aus. Ein Typ muss das Netzwerk beinhalten, mit dem der Visual Studio-Computer verbunden ist.  
   

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158945"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- Es gibt auch andere Methoden für den Zugriff auf Links. Zum Beispiel:  
+ Es gibt auch andere Methoden für den Zugriff auf Links. Beispiel:  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -144,7 +144,7 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
  `store.ElementDirectory.GetElement(elementId);`  
   
 ## <a name="metadata"></a> Zugreifen auf Klasseninformationen  
- Sie erhalten Informationen über die Klassen, Beziehungen und andere Aspekte der DSL-Definition. Zum Beispiel:  
+ Sie erhalten Informationen über die Klassen, Beziehungen und andere Aspekte der DSL-Definition. Beispiel:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -235,13 +235,13 @@ using (Transaction t =
   
  Es gibt drei Möglichkeiten, die in denen Sie eine Instanz einer Beziehung erstellen können. Jede dieser drei Methoden hat dieselbe Wirkung:  
   
-- Legen Sie die Eigenschaft des der quellrolleninhaber. Zum Beispiel:  
+- Legen Sie die Eigenschaft des der quellrolleninhaber. Beispiel:  
   
   - `familyTree.People.Add(edward);`  
   
   - `edward.Parents.Add(henry);`  
   
-- Legen Sie die Eigenschaft des der Zielrolleninhaber. Zum Beispiel:  
+- Legen Sie die Eigenschaft des der Zielrolleninhaber. Beispiel:  
   
   - `edward.familyTreeModel = familyTree;`  
   
@@ -251,7 +251,7 @@ using (Transaction t =
   
        Die Multiplizität dieser Rolle ist `0..*`, also fügen wir der Auflistung hinzu.  
   
-- Erstellen Sie explizit eine Instanz der Beziehung. Zum Beispiel:  
+- Erstellen Sie explizit eine Instanz der Beziehung. Beispiel:  
   
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   

@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193867"
 ---
-# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Einen Dienstkontext für die Sprache bereitstellt, mit der Legacy-API
+# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Bereitstellen eines Sprachdienstkontexts mithilfe der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es gibt zwei Optionen für einen Sprachdienst zu Benutzer-Kontext verwenden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor: Text Markers Kontext bereitzustellen, oder geben Sie alle Benutzerkontext. Hier werden die Unterschiede zwischen den einzelnen beschrieben.  
@@ -44,7 +44,7 @@ Es gibt zwei Optionen für einen Sprachdienst zu Benutzer-Kontext verwenden die 
   
   Das folgende Diagramm veranschaulicht, wie der Kontext für einen Sprachdienst bereitgestellt wird, die implementiert `IVsLanguageContextProvider`.  
   
-  ![LangServiceImplementation2 graphic](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  ![LangServiceImplementation2-Grafik](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
   Kontext für einen Sprachdienst  
   
   Wie Sie im Diagramm sehen die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kerntext-Editor verfügt über eine Kontextsammlung angefügt ist. Diese kontextbehälter verweist auf drei separaten unterkontextbehälter: Sprachdienst, Standard-Editor und textmarkierung. Der Language-Dienst und Text Marker unterkontextbehälter enthalten Attribute und Schlüsselwörter für den Sprachdienst, wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Schnittstelle implementiert wird, und Textmarkierungen Wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle wird implementiert. Wenn Sie nicht eine der folgenden Schnittstellen implementieren, stellt der Editor Kontext für das Schlüsselwort an der Cursorposition in den unterkontextbehälter für Standard-Editor bereit.  

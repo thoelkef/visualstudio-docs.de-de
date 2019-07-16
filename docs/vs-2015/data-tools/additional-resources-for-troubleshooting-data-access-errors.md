@@ -232,11 +232,11 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143097"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Zusätzliche Ressourcen für die Problembehandlung beim Datenzugriff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

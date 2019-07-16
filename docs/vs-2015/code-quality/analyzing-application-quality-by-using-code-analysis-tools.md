@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157107"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analysieren der Anwendungsqualität mit Codeanalysetools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ In diesem Abschnitt
  [Codeanalyse für Treiberwarnungen](http://go.microsoft.com/fwlink/?LinkId=225920)  
  Beschreibt die Warnungen, die die Codeanalyse für Treiber meldet, wenn ein möglicher Fehler im Treibercode erkannt wird.  
   
-## <a name="related-tasks"></a>Verwandte Aufgaben  
+## <a name="related-tasks"></a>Related Tasks  
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)  
  Beschreibung hier einfügen.  
   

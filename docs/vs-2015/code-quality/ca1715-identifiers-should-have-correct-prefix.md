@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189128"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1715: Bezeichner 
 ## <a name="cause"></a>Ursache  
  Der Name einer extern sichtbaren Schnittstelle beginnt nicht mit einem Großbuchstaben "I".  
   
- - oder -   
+ -oder-  
   
  Der Name der einen generischen Parameter für einen extern sichtbaren Typ oder Methode beginnt nicht mit einem Großbuchstaben ' t '.  
   

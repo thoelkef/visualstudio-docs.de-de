@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176680"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
+# <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen für mehrere Projekte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Wenn ein Projekt über das Dialogfeld **Neues Projekt** erstellt wird, das auf einer Vorlage mit mehreren Projekten basiert, wird jedes Projekt in der Vorlage zur Projektmappe hinzugefügt.  
@@ -49,14 +49,14 @@ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Pro
   
   Die VSTEMPLATE-Stammdatei für eine Vorlage mit mehreren Projekten unterscheidet sich folgendermaßen von der für eine Vorlage mit einem einzelnen Projekt:  
   
-- Das `Type`-Attribut des `VSTemplate`-Elements enthält den Wert `ProjectGroup`. Zum Beispiel:  
+- Das `Type`-Attribut des `VSTemplate`-Elements enthält den Wert `ProjectGroup`. Beispiel:  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- Das `TemplateContent`-Element enthält ein `ProjectCollection`-Element, das ein oder mehrere `ProjectTemplateLink`-Elemente besitzt, die den Pfad der VSTEMPLATE-Datei der enthaltenen Projekte definiert. Zum Beispiel:  
+- Das `TemplateContent`-Element enthält ein `ProjectCollection`-Element, das ein oder mehrere `ProjectTemplateLink`-Elemente besitzt, die den Pfad der VSTEMPLATE-Datei der enthaltenen Projekte definiert. Beispiel:  
   
   ```  
   <TemplateContent>  

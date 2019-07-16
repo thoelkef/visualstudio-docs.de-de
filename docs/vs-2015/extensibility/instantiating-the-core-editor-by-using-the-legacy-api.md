@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203913"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Instanziieren die Kern-Editor mit der Legacy-API
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Instanziieren des Core-Editors mithilfe der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Editor ist verantwortlich für die Textbearbeitung, die Funktionen, z. B. einfügen, löschen, kopieren und einfügen. Es kombiniert diese Funktionen, mit denen von Diensten für Sprache, z. B. Text, Farben, die Einzüge und IntelliSense-Anweisungsvervollständigung bereitgestellt werden.  
@@ -69,4 +69,4 @@ Der Editor ist verantwortlich für die Textbearbeitung, die Funktionen, z. B. ei
 ## <a name="see-also"></a>Siehe auch  
  [In der Kern-Editor](../extensibility/inside-the-core-editor.md)   
  [Sie öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md)   
- [Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Exemplarische Vorgehensweise: Erstellen eines Core-Editors und Registrieren eines Editor-Dateityps](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

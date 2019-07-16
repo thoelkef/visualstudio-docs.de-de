@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155714"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,15 +157,15 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
 - `IsWebBootstrapper` Bestimmt, ob sich die setup.exe-Bootstrapper über das Internet oder in datenträgerbasierte Modus funktioniert.  
   
-## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL "," SupportUrl "," PublishURL "und" UpdateURL  
+## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL, and UpdateURL  
  Die folgende Tabelle zeigt die vier URL-Optionen für die ClickOnce-Bereitstellung.  
   
 |URL-option|Beschreibung|  
 |----------------|-----------------|  
 |`PublishURL`|Erforderlich, wenn Sie die ClickOnce-Anwendung auf einer Website veröffentlichen.|  
-|`InstallURL`|Dies ist optional. Legen Sie diese URL-Option aus, wenn der Standort für die Installation unterscheidet die `PublishURL`. Sie könnten z. B. Festlegen der `PublishURL` auf einem FTP-Pfad und der `InstallURL` an eine Web-URL.|  
+|`InstallURL`|Optional. Legen Sie diese URL-Option aus, wenn der Standort für die Installation unterscheidet die `PublishURL`. Sie könnten z. B. Festlegen der `PublishURL` auf einem FTP-Pfad und der `InstallURL` an eine Web-URL.|  
 |`SupportURL`|Dies ist optional. Legen Sie diese URL-Option aus, wenn die Support-Website unterscheidet die `PublishURL`. Sie können z. B. Festlegen der `SupportURL` auf die Customer-Website Ihres Unternehmens.|  
-|`UpdateURL`|Dies ist optional. Legen Sie diese URL-Option aus, wenn der Updatepfad unterscheidet die `InstallURL`. Sie könnten z. B. Festlegen der `PublishURL` auf einem FTP-Pfad und der `UpdateURL` an eine Web-URL.|  
+|`UpdateURL`|Optional. Legen Sie diese URL-Option aus, wenn der Updatepfad unterscheidet die `InstallURL`. Sie könnten z. B. Festlegen der `PublishURL` auf einem FTP-Pfad und der `UpdateURL` an eine Web-URL.|  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   

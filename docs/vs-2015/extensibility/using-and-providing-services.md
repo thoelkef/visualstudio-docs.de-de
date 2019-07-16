@@ -13,11 +13,11 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177437"
 ---
 # <a name="using-and-providing-services"></a>Verwenden und Bereitstellen von Diensten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
  [Vorgehensweise: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)  
  Behandelt das anfordern (nutzen) eines Diensts.  
   
- [Vorgehensweise: Geben Sie einen Dienst](../extensibility/how-to-provide-a-service.md)  
+ [Vorgehensweise: Bereitstellen eines Diensts](../extensibility/how-to-provide-a-service.md)  
  Erläutert, wie Sie einen Dienst bereitstellen.  
   
- [Vorgehensweise: Geben Sie einen asynchronen Visual Studio-Dienst](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Vorgehensweise: Bereitstellen eines asynchronen Visual Studio-Diensts](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Erläutert, wie einen asynchronen Dienst bereitstellen.  
   
  [Vorgehensweise: Problembehandlung bei Diensten](../extensibility/how-to-troubleshoot-services.md)  

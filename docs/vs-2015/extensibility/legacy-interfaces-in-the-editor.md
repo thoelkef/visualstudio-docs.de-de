@@ -11,13 +11,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180289"
 ---
-# <a name="legacy-interfaces-in-the-editor"></a>Legacy-Schnittstellen im Editor
+# <a name="legacy-interfaces-in-the-editor"></a>Legacyschnittstellen im Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Visual Studio-Editor von legacy-Schnittstelle zugreifen. Visual Studio SDK umfasst Adapter, die als bekannt *Shims*, die es ermöglichen, diese Schnittstellen für die Interaktion mit den neuen Editor. Dennoch wird empfohlen, dass Sie Ihren Legacycode Verwendung des neuen Editors für API aktualisieren. Ihr Code bieten eine bessere Leistung und Sie können neue Technologien wie Windows Presentation Foundation (WPF) und das Managed Extensibility Framework (MEF).  
@@ -31,9 +31,9 @@ Sie können Visual Studio-Editor von legacy-Schnittstelle zugreifen. Visual Stud
 |[Im Core-Editor](../extensibility/inside-the-core-editor.md)|Beschreibt die verschiedenen Komponenten von früheren Versionen des Editors.|  
 |[Instanziieren des Core-Editors mit der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Es wird erläutert, wie die legacy-API zu verwenden, um die Kern-Editor zu instanziieren.|  
 |[Editorfactorys](../extensibility/editor-factories.md)|Erläutert, wie Sie editorfactorys mit der legacy-API verwenden können.|  
-|[Vorgehensweise: Register-Editor-Dateitypen](../extensibility/how-to-register-editor-file-types.md)|Erläutert, wie eine Dateinamenerweiterung mit den Editor zu verknüpfen.|  
-|[Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Erläutert, wie einen Kern-Editor erstellen und verknüpfen eine Dateinamenerweiterung, darauf.|  
-|[Vorgehensweise: Bereitstellen von Kontext für Editoren](../extensibility/how-to-provide-context-for-editors.md)|Erläutert das Kontext für den Editor bereitzustellen.|  
+|[Vorgehensweise: Registrieren von Editor-Dateitypen](../extensibility/how-to-register-editor-file-types.md)|Erläutert, wie eine Dateinamenerweiterung mit den Editor zu verknüpfen.|  
+|[Exemplarische Vorgehensweise: Erstellen eines Core-Editors und Registrieren eines Editor-Dateityps](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Erläutert, wie einen Kern-Editor erstellen und verknüpfen eine Dateinamenerweiterung, darauf.|  
+|[Vorgehensweise: Angeben von Kontext für Editoren](../extensibility/how-to-provide-context-for-editors.md)|Erläutert das Kontext für den Editor bereitzustellen.|  
 |[Sprachdienste und der Core-Editor](../extensibility/language-services-and-the-core-editor.md)|Erläutert, die Interaktionen zwischen einem Sprachdienst und einen Editor.|  
 |[Zugriff auf den Textpuffer mit der Legacy-API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Erläutert, wie auf den Textpuffer mithilfe der legacy-API.|  
 |[Zugriff auf die Textansicht mit der Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|Erläutert, wie die Ansicht für den Zugriff mithilfe der legacy-API auf.|  
@@ -42,7 +42,7 @@ Sie können Visual Studio-Editor von legacy-Schnittstelle zugreifen. Visual Stud
 |[Verwenden von Textmarkierungen mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)|Erläutert das Textmarkierungen hinzufügen, indem Sie mit der legacy-API.|  
 |[Anpassen von Editorfarben und -menüs mit der Legacy-API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|Erläutert das Editor-Steuerelemente anpassen, indem Sie mit der legacy-API.|  
 |[Verwalten von „Rückgängig machen“ und „Wiederholen“ mit der Legacy-API](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Erläutert, wie "Rückgängig" zu verwalten und wiederherstellen, indem Sie mit der legacy-API.|  
-|[Vorgehensweise: Implementieren von Suchen und Ersetzen Sie Mechanismus](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Erläutert, wie zum Verwalten von Suchen und ersetzen, indem Sie die legacy-API.|  
+|[Vorgehensweise: Implementieren von „Suchen und Ersetzen“](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Erläutert, wie zum Verwalten von Suchen und ersetzen, indem Sie die legacy-API.|  
 |[Vorgehensweise: Unterdrücken von Dateiänderungsbenachrichtigungen](../extensibility/how-to-suppress-file-change-notifications.md)|Erläutert das dateiänderungsbenachrichtigungen zu unterdrücken, indem Sie mit der legacy-API.|  
 |[Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md)|Erläutert das Erstellen von benutzerdefinierten Editoren und Designern.|  
 |[Entwickeln eines Legacysprachdiensts](../extensibility/internals/developing-a-legacy-language-service.md)|Enthält Links zu Dokumenten über Features, die der Anpassungsfunktionen zum Bereitstellen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durch Hinzufügen von Unterstützung für einen Sprachdienst-Kern-Editor.|  

@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180306"
 ---
-# <a name="language-services-and-the-core-editor"></a>Sprachdienste und die Kern-Editor
+# <a name="language-services-and-the-core-editor"></a>Sprachdienste und der Core-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editoren von Visual Studio werden häufig von einem Sprachdienst zugeordnet. Unter anderem bietet ein Sprachdienst, farbige syntaxmarkierung, Anweisungsvervollständigung, IntelliSense und textformatierung.  
@@ -27,7 +27,7 @@ Editoren von Visual Studio werden häufig von einem Sprachdienst zugeordnet. Unt
   
  Weitere Informationen finden Sie unter [ermitteln welcher Editor öffnet eine Datei in einem Projekt](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Sprachdienste und die Kern-Editor  
+## <a name="language-services-and-the-core-editor"></a>Sprachdienste und der Core-Editor  
  Implementieren Sie einen Sprachdienst, können Sie steuern, wie Daten in der Dokumentenansicht angezeigt werden. Ein Sprachdienst, bietet Informationen und Verhaltensweisen, die für eine bestimmte Sprache, z. B. Visual C++ spezifisch sind. Beim Erstellen von eines Textpuffers und bestimmen die Dateierweiterung für das zu öffnende Dokument, bestimmt der Textpuffer den Sprachdienst, der mit dieser Dateierweiterung aus einem Registrierungsschlüssel, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors verknüpft ist \\{YourLanguageService GUID} \Extensions. Laden die Prozedur dann standard VSPackage lädt das VSPackage, und eine Instanz des Sprachdiensts wird erstellt.  
   
  Ein einfachen Sprachdiensts wird in der folgenden Abbildung angezeigt.  

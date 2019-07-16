@@ -12,22 +12,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144284"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Sie können diese Attribute verwenden, um die Reihenfolge anzugeben, in der Ziele ausgeführt werden:  
   
-- `InitialTargets`. Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
+- `InitialTargets` Das `Project`-Attribut gibt die Ziele an, die zuerst ausgeführt werden, auch wenn Ziele in der Befehlszeile oder im `DefaultTargets`-Attribut angegeben sind.  
   
-- `DefaultTargets`. Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
+- `DefaultTargets` Das `Project`-Attribut gibt die Ziele an, die erstellt werden, wenn ein Ziel nicht explizit in der Befehlszeile angegeben wird.  
   
-- `DependsOnTargets`. Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
+- `DependsOnTargets` Das `Target`-Attribut gibt Ziele an, die ausgeführt werden müssen, bevor das Ziel ausgeführt werden kann.  
   
 - `BeforeTargets` und `AfterTargets`. Diese `Target`-Attribute geben an, dass das Ziel vor oder nach den angegebenen Zielen ausgeführt werden soll (MSBuild 4.0).  
   

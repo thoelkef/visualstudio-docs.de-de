@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148840"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen von Randsteuerelementen für eine Ansicht, Befehlen und Einstellungen (Spaltenführungslinien)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Zuerst Sie ein VSIX-Projekt erstellen, ein Zusatzelement der Editor-Ansicht hinz
 - Es ist ein VSIP-Paket, das ist erforderlich, wenn Sie Benutzerbefehle haben, aber es ist nur für den Standardcode, der die Befehle Implementierungsobjekt initialisiert.
 - Es gibt eine `ColumnGuideCommands` Objekt, das die Benutzerbefehle implementiert und verknüpft die Befehlshandler für Befehle in der VSCT-Datei deklariert.
   
-  **VSIX**. Verwendung **Datei &#124; neu...** Befehl zum Erstellen eines Projekts. Wählen Sie im linken Navigationsbereich den Knoten "Erweiterbarkeit" unter C#, und wählen Sie **VSIX-Projekt** im rechten Bereich. Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.
+  **VSIX**. Verwendung **Datei &#124; neu...** Befehl zum Erstellen eines Projekts. Wählen Sie im linken Navigationsbereich den Knoten "Erweiterbarkeit" unter c#, und wählen Sie **VSIX-Projekt** im rechten Bereich. Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.
   
   **Anzeigen des Zusatzelements**. Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer. Wählen Sie die **hinzufügen &#124; neues Element...** Befehl zum Hinzufügen eines neuen Ansicht Zusatzelement-Elements. Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Zusatzelement** im rechten Bereich. Geben Sie den Namen ColumnGuideAdornment als Name des Elements, und wählen Sie **hinzufügen** hinzugefügt.
   

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150660"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML-Schemata (Dialogfeld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Die **XML-Schemas** Dialogfeld wird verwendet, um Wählen Sie die XML-Schema Def
   
  Sie erreichen die **XML-Schemas** Dialogfeld durch Klicken auf die **Schemas** Schaltfläche im Eigenschaftenfenster Dokuments oder durch auswählen **Schemas** aus der **XML** Menü.  
   
-## <a name="uielement-list"></a>UIElement-Liste  
+## <a name="uielement-list"></a>Liste der Benutzeroberflächenelemente  
  **Verwendung**  
  Wählen Sie aus, wie das XML-Schema verwendet werden soll.  
   
@@ -39,7 +39,7 @@ Die **XML-Schemas** Dialogfeld wird verwendet, um Wählen Sie die XML-Schema Def
   **Dateiname**  
   Zeigt den Dateinamen des XML-Schemas an.  
   
-  **Add**  
+  **Hinzufügen**  
   Öffnet die **XSD-Schema öffnen** Dialogfeld, in dem Sie zusätzliche Schemas, um das Schemaset hinzufügen auswählen kann. Wenn Sie ein Schema hinzufügen, mit dem Schema festgelegt werden, die **verwenden** Spaltenwert wird festgelegt, um **dieses Schema verwenden**.  
   
   **Entfernen**  

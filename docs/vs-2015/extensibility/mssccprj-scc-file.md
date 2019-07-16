@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194218"
 ---
 # <a name="mssccprjscc-file"></a>Datei „MSSCCPRJ.SCC“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ Wenn Visual Studio-Projektmappe oder das Projekt unter quellcodeverwaltung, die 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Eine Abbildung der MSSCCPRJ. SCC-Dateiformat  
  Es folgt ein Beispiel für die MSSCCPRJ. SCC-Dateiformat (die Zeilennummern werden nur als Leitfaden bereitgestellt und sollte nicht in der Datei Text enthalten sein):  
   
- [Line 1] `SCC = This is a Source Code Control file`  
+ [Zeile 1] `SCC = This is a Source Code Control file`  
   
- [Line 2]  
+ [Zeile 2]  
   
- [Line 3] `[TestApp.sln]`  
+ [Zeile 3] `[TestApp.sln]`  
   
- [Line 4] `SCC_Aux_Path = "\\server\vss\"`  
+ [Zeile 4] `SCC_Aux_Path = "\\server\vss\"`  
   
  [Line 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Line 6]  
+ [Zeile 6]  
   
- [Line 7] `[TestApp.csproj]`  
+ [Zeile 7] `[TestApp.csproj]`  
   
  [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Line 9] `SCC_Project_Name = "$/TestApp"`  
+ [Zeile 9] `SCC_Project_Name = "$/TestApp"`  
   
  Die erste Zeile gibt den Zweck der Datei, und dient als die Signatur für alle Dateien dieses Typs. Diese Zeile sollte genau wie dies in allen MSSCCPRJ angezeigt werden. SCC-Dateien:  
   

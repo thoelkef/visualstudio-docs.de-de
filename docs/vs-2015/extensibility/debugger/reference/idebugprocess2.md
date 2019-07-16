@@ -13,11 +13,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68f1693bbbda9bbf7622c2378799db4a342be7a5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58959188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187970"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ IDebugProcess2 : IUnknown
 |[Trennen](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Trennt den Debugger aus dem Prozess.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Ruft die System-Prozess-ID ab.|  
 |[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Ruft einen global eindeutigen Bezeichner für diesen Prozess ab.|  
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung, die Debuggen des Prozesses.<br /><br /> [DEPRECATED. SOLLTEN SIE IMMER RÜCKGABE `E_NOTIMPL`.]|  
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung, die Debuggen des Prozesses.<br /><br /> [ALS VERALTET MARKIERT. SOLLTEN SIE IMMER RÜCKGABE `E_NOTIMPL`.]|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Listet die Threads im Prozess ausgeführt wird.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Fordert an, die das nächste Programm, das Ausführen von Code in diesem Prozess beenden.|  
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Ruft ab, der Port, den diesem Prozess ausgeführt wird.|  

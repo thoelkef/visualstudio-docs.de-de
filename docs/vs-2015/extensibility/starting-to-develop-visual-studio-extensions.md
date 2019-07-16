@@ -12,13 +12,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d8050ea7447a67f50f42157d57c17d3f1f8a329
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160588"
 ---
-# <a name="starting-to-develop-visual-studio-extensions"></a>Starten Visual Studio-Erweiterungen entwickeln
+# <a name="starting-to-develop-visual-studio-extensions"></a>Beginnen mit der Entwicklung von Visual Studio-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, verfügen Sie wahrscheinlich einige Fragen. Wir haben einige der am häufigsten verwendeten Tools hier aufgeführt. Wenn Sie die Informationen nicht wird Sie suchen angezeigt, verwenden Sie die Feedback-Schaltflächen (**war diese Seite hilfreich?** am unteren Rand des Bildschirms), bitten Sie den gewünschten.

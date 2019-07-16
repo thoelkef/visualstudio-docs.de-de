@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159626"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form 
   
 1. Fügen Sie eine berechnete Domäneneigenschaft, mit der Domänenklasse. In der **Eigenschaften** legen die folgenden Werte:  
   
-     **IsBrowsable =**`False`**– Dadurch wird die Eigenschaft vom Benutzer ausgeblendet.**  
+     **IsBrowsable =** `False` **– Dadurch wird die Eigenschaft vom Benutzer ausgeblendet.**  
   
-     **Art =**`Calculated`**– Dies bedeutet, dass Sie Code bereitstellen, die den Wert berechnet.**  
+     **Art =** `Calculated` **– Dies bedeutet, dass Sie Code bereitstellen, die den Wert berechnet.**  
   
      **Namen** z. B. **DecoratorControl**  
   
@@ -92,7 +92,7 @@ Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form 
   
 6. Beachten Sie den Namespace, Klasse und Methode, die fehlen.  Beispiel: Company.FamilyTree.Person.GetDecoratorControlValue().  
   
-7. Schreiben Sie in einer separaten Codedatei eine partielle Klassendefinition, die die fehlende Methode enthält. Zum Beispiel:  
+7. Schreiben Sie in einer separaten Codedatei eine partielle Klassendefinition, die die fehlende Methode enthält. Beispiel:  
   
     ```  
     namespace Company.FamilyTree  

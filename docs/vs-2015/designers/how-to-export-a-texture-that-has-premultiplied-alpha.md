@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 61a53d8fca979fce04113aeb963e8cae94a49137
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159432"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

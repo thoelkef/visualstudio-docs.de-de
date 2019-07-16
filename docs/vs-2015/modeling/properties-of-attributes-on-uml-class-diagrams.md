@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154860"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Eigenschaften von Attributen in UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ In einem UML-Klassendiagramm können Sie Klassen und Schnittstellen *Attribute* 
 |    **Wird die Blattebene**    |    False     |                                                                                                                                                                    Bei „true“ ist das Zulassen einer Neudefinition dieses Attributs in abgeleiteten Typen nicht beabsichtigt.                                                                                                                                                                     |
 |  **Wird abgeleitet**   |    False     |                                                                                                              Bei „true“ wird dieses Attribut aus anderen Attributen berechnet. Diagonal wird z. B. aus Breite und Höhe berechnet. Die Details sollten in die **Beschreibung** oder einen angefügten Kommentar eingegeben werden.                                                                                                              |
 |  **Beschreibung**  |   (leer)    |                                                                                                                                                                        Für allgemeine Hinweise oder zum Definieren von Einschränkungen für die Werte im Attribut.                                                                                                                                                                        |
-| **Multiplicity**  |      1       | **1** – Dieses Attribut hat einen einzigen Wert des angegebenen Typs.<br /><br /> **0..1** – Dieses Attribut kann den Wert `null`haben.<br /><br /> **\\**\* -der Wert dieses Attributs ist eine Auflistung von Werten.<br /><br /> **1..\\**  \* -der Wert dieses Attributs ist eine Sammlung, die mindestens einen Wert enthält.<br /><br /> *n* **..** *m* – Der Wert dieses Attributs ist eine Auflistung, die zwischen *n* und *m* Werte enthält. |
+| **Multiplizität**  |      1       | **1** – Dieses Attribut hat einen einzigen Wert des angegebenen Typs.<br /><br /> **0..1** – Dieses Attribut kann den Wert `null`haben.<br /><br /> **\\** \* -der Wert dieses Attributs ist eine Auflistung von Werten.<br /><br /> **1..\\**  \* -der Wert dieses Attributs ist eine Sammlung, die mindestens einen Wert enthält.<br /><br /> *n* **..** *m* – Der Wert dieses Attributs ist eine Auflistung, die zwischen *n* und *m* Werte enthält. |
 |  **Sortiert**   |    False     |                                                                                                                                                                    Bei „true“ bildet die Auflistung eine sequenzielle Liste. Für **Multiplizität** größer als 1.                                                                                                                                                                     |
 |   **Ist eindeutig**   |    False     |                                                                                                                                                                Bei „true“ enthält die Auflistung keine doppelten Werte. Für **Multiplizität** größer als 1.                                                                                                                                                                |
 

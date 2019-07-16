@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58962305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193886"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Gibt an, ob die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projektsystem gener
   
  \<VSTemplate>  
  \<TemplateData>  
- \<ProvideDefaultName>  
+ \<ProvideDefaultName >  
   
 ## <a name="syntax"></a>Syntax  
   

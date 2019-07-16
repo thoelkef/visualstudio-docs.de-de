@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196574"
 ---
 # <a name="cppclean-task"></a>CPPClean-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Löscht die temporären Dateien, die MSBuild erstellt, wenn ein Visual C++-Proje
 |          **DoDelete**           |                                                            Optionaler **Boolean**-Parameter.<br /><br /> Wenn der Wert `true` ist, werden temporäre Builddateien bereinigt.                                                             |
 | **FilePatternsToDeleteOnClean** |                                            Erforderlicher `String` -Parameter.<br /><br /> Gibt eine durch ein Semikolon getrennte Liste von Dateierweiterungen von zu bereinigenden Dateien an                                             |
 |   **FilesExcludedFromClean**    |                                                    Optionaler `String` -Parameter.<br /><br /> Gibt eine durch ein Semikolon getrennte Liste von Dateien an, die nicht bereinigt werden sollen                                                    |
-|       **FoldersToClean**        | Erforderlicher `String` -Parameter.<br /><br /> Gibt eine durch ein Semikolon getrennte Liste von Verzeichnissen an, die bereinigt werden sollen. Sie können einen vollständigen oder einen relativen Pfad angeben, und der relative Pfad kann ein Platzhaltersymbol (**\\**\*) enthalten. |
+|       **FoldersToClean**        | Erforderlicher `String` -Parameter.<br /><br /> Gibt eine durch ein Semikolon getrennte Liste von Verzeichnissen an, die bereinigt werden sollen. Sie können einen vollständigen oder einen relativen Pfad angeben, und der relative Pfad kann ein Platzhaltersymbol ( **\\** \*) enthalten. |
 
 ## <a name="remarks"></a>Hinweise  
 

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73270acd97ac4555ade609601d92327235a2f3c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144901"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Sammeln von Parallelitätsdaten für eine ASP.NET-Webanwendung über die Profiler-Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Die Parallelitätsmethode der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profi
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |Anfügen des Profilers an eine aktive ASP.NET-Anwendung|-   [Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Parallelitätsdaten](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
@@ -37,7 +37,7 @@ Die Parallelitätsmethode der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profi
   
 ### <a name="profiling-aspnet-applications"></a>Profilerstellung für ASP.NET-Anwendungen  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Profilerstellung mit der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
 |**Profilerstellung mit der Instrumentationsmethode**|-   [Sammeln ausführlicher Zeitsteuerungsdaten für eine ASP.NET-Webanwendung über die Befehlszeile mit der Profiler-Instrumentationsmethode](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
@@ -45,7 +45,7 @@ Die Parallelitätsmethode der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profi
   
 ### <a name="profiling-concurrency-issues"></a>Profilerstellung bei Parallelitätsproblemen  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln von Parallelitätsdaten](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Profilerstellung für Dienste**|-   [Sammeln von Parallelitätsdaten](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  

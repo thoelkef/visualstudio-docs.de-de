@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178339"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Vorgehensweise: Angeben des zuerst zu erstellenden Ziels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-specify-one-initial-target"></a>Angeben eines ersten Ziels  
   
-- Geben Sie das Standardziel im `InitialTargets`-Attribut des `Project`-Elements an. Zum Beispiel:  
+- Geben Sie das Standardziel im `InitialTargets`-Attribut des `Project`-Elements an. Beispiel:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -47,7 +47,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-specify-one-default-target"></a>Ein Standardziel angeben  
   
-- Geben Sie das Standardziel im `DefaultTargets`-Attribut des `Project`-Elements an. Zum Beispiel:  
+- Geben Sie das Standardziel im `DefaultTargets`-Attribut des `Project`-Elements an. Beispiel:  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -64,13 +64,13 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Zuerst ein anderen Ziels und nicht das Standardziel verwenden  
   
-- Geben Sie das Ziel als das erstes Ziel mithilfe des **/target**-Befehlszeilenschalters ein. Zum Beispiel:  
+- Geben Sie das Ziel als das erstes Ziel mithilfe des **/target**-Befehlszeilenschalters ein. Beispiel:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>So können Sie zuerst mehrere Ziele, die nicht die Standardziele sind, verwenden  
   
-- Listen Sie die Ziele, getrennt durch Semikolons oder Kommas, mit dem **/target**-Befehlszeilenschalter auf. Zum Beispiel:  
+- Listen Sie die Ziele, getrennt durch Semikolons oder Kommas, mit dem **/target**-Befehlszeilenschalter auf. Beispiel:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   

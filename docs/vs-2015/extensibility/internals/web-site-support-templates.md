@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200962"
 ---
 # <a name="web-site-support-templates"></a>Vorlagen für die Websiteunterstützung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60044373"
   
      Standard-Startseite für die neue Website. Language-Attribut gibt an, die Codebehind-Sprache, und das CodeFile-Attribut gibt an, die abhängige Datei, die den Codebehind-Code, der mit dieser Seite verknüpft sind.  
   
-- Default.aspx.*extension*  
+- "Default.aspx". *Erweiterung*  
   
      Die abhängige Datei, die den Codebehind-Code für die Standard-Startseite enthält. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "60044373"
   
      Die HTML-Seite für den neuen Webdienst. Language-Attribut gibt an, die Codebehind-Sprache, und das CodeBehind-Attribut gibt an, die abhängige Datei, die den Codebehind-Code, der diesem Dienst zugeordnet.  
   
-- -Dienst. *extension*  
+- -Dienst. *Erweiterung*  
   
      Die abhängige Datei, die die Dienstklasse implementiert wird. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60044373"
 ### <a name="new-class"></a>Neue Klasse  
  Diese Vorlage erstellt eine neue Quelldatei, die als Reaktion auf eine leere Klasse definiert die **neue Klasse hinzufügen** Befehl.  
   
-- Klasse. *extension*  
+- Klasse. *Erweiterung*  
   
      Die Quelldatei, die die leere Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60044373"
   
      Der ab Inhalt der Webseite. Diese Webseite ist eine abhängige zugeordneten Codebehind-Datei.  
   
-- Codebehind. *extension*  
+- CodeBehind. *Erweiterung*  
   
      Die abhängige Datei, die der Webform-Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -178,7 +178,7 @@ ms.locfileid: "60044373"
   
      Der ab Inhalt der Masterseite. Diese Masterseite verfügt über eine abhängige zugeordneten Codebehind-Datei.  
   
-- Codebehind.*extension*  
+- CodeBehind. *Erweiterung*  
   
      Die abhängige Datei, die die Masterseite-Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   

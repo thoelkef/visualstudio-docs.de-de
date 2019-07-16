@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157061"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonyme Methoden und Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  Eine Klasse kann Inline anonyme Methode enthalten, die ein Feld einen Wert zuweist, die mehrere Konstruktoren. In diesem Fall dienen diese Warn- und Metriken alle Konstruktoren zugeordnet, wenn dieser Konstruktor einen anderen Konstruktor in derselben Klasse verkettet.  
   
- Z. B. in der folgenden Klasse, alle Warnungen, die in der Deklaration der gefunden werden **AnonymousMethod** ausgelöst werden soll, für **Class(int)** und **Class(string)** jedoch nicht für **Class()**.  
+ Z. B. in der folgenden Klasse, alle Warnungen, die in der Deklaration der gefunden werden **AnonymousMethod** ausgelöst werden soll, für **Class(int)** und **Class(string)** jedoch nicht für **Class()** .  
   
 ```vb  
   

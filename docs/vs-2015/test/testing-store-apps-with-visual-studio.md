@@ -9,11 +9,11 @@ caps.latest.revision: 22
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4817fdd346f8c60d061eaa18d9e8a335a5b26ea2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199745"
 ---
 # <a name="testing-store-apps-with-visual-studio"></a>Testen von Store-Apps mit Visual Studio
 
@@ -25,5 +25,5 @@ Visual Studio enthält Tools zum Testen, mit denen Sie die höchste Qualität Ih
 
 |||
 |-|-|
-|[Erstellen und Ausführen von Komponententests](../test/create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)|Erstellen Sie Komponententests für Store-Apps in Visual Studio, und führen Sie diese aus.|
-|[Analysieren der Codequalität mit der statischen Codeanalyse](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Ermitteln Sie mithilfe von Visual Studio Codeanalysetools Probleme, die beim Debuggen und Testen nur schwer zu erkennen sind.|
+|[Erstellen und Ausführen von Komponententests](../test/create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)|Erstellen Sie Visual Studio Komponententests für eine Store-App, und führen Sie diese aus.|
+|[Analysieren der Codequalität mit der statischen Codeanalyse](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Suchen Sie über die Visual Studio-Codeanalysetools nach Problemen, die beim Debugging und Testen schwer zu finden sind.|

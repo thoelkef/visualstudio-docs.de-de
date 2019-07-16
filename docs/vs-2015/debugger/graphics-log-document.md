@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161248"
 ---
 # <a name="graphics-log-document"></a>Grafikprotokolldokument
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 |--------------|-----------------|  
 |**Erstellt von**|Der Name der App, die das Grafikprotokolldokument erstellt hat. Wenn die Erfassungssitzung z. B. von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] initiiert wurde (manuelle Erfassung) ist der Wert dieser Eigenschaft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |**Startzeit der Sitzung**|Das Datum und die Uhrzeit, zu der die Erfassungssitzung begann.|  
-|**Size**|Die Größe des Grafikprotokolldokuments.|  
+|**Größe**|Die Größe des Grafikprotokolldokuments.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201606"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58959867"
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt in Microsoft intermediate Language (MSIL), einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass diese Regel kann nicht verletzt werden, mithilfe von C# oder Visual Basic .NET.
+ Das folgende Beispiel zeigt in Microsoft intermediate Language (MSIL), einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass diese Regel kann nicht verletzt werden, mithilfe von c# oder Visual Basic .NET.
 
 ```
 

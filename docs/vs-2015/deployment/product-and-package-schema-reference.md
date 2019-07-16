@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188960"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigke
   
 |Element|Beschreibung|Attribute|  
 |-------------|-----------------|----------------|  
-|[\<Product>-Element](../deployment/product-element-bootstrapper.md)|Element der obersten Ebene erforderlich für Produktdateien.|Keiner|  
+|[\<Product>-Element](../deployment/product-element-bootstrapper.md)|Element der obersten Ebene erforderlich für Produktdateien.|None|  
 |[\<Package>-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für die Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts>-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element, für die Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt.|Keiner|  
-|[\<InstallChecks>-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen auf dem lokalen Computer ausführen, während der Installation überprüft die Abhängigkeit.|Keiner|  
-|[\<Commands>-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen, wie beschrieben `InstallChecks`, und gibt an, welches Paket installiert die Überprüfung sollte fehlschlagen.|Keiner|  
-|[\<PackageFiles>-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Listet die Pakete, die durch diese Installation installiert werden können.|Keiner|  
-|[\<Strings>-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen der Produkte und Fehler Zeichenfolgen.|Keiner|  
+|[\<RelatedProducts>-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element, für die Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt.|None|  
+|[\<InstallChecks>-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen auf dem lokalen Computer ausführen, während der Installation überprüft die Abhängigkeit.|None|  
+|[\<Commands>-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen, wie beschrieben `InstallChecks`, und gibt an, welches Paket installiert die Überprüfung sollte fehlschlagen.|None|  
+|[\<PackageFiles>-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Listet die Pakete, die durch diese Installation installiert werden können.|None|  
+|[\<Strings>-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen der Produkte und Fehler Zeichenfolgen.|None|  
   
 ## <a name="remarks"></a>Hinweise  
  Das Paketschema wird von Setup.exe, eine Stub-Programm generiert, die von der MS Build-bootstrapping-Aufgabe, die wenig hartcodierte Logik selbst enthält. Das Schema Laufwerke jeden Aspekt des Installationsprozesses.  

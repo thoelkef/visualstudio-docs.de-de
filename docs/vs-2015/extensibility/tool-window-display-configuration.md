@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186397"
 ---
-# <a name="tool-window-display-configuration"></a>Tool-Fenster-Anzeigekonfiguration
+# <a name="tool-window-display-configuration"></a>Konfiguration der Toolfensteranzeige
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn eine VSPackage ein Toolfenster, die Standardposition, Größe, andockstil und andere Informationen zur Sichtbarkeit registriert wird optional Werte angegeben werden. Weitere Informationen zum Tool-Fenster-Registrierung, finden Sie unter [Tool Windows in der Registrierung](../extensibility/tool-windows-in-the-registry.md)  
@@ -40,7 +40,7 @@ HKEY_LOCAL_MACHINE\
 |Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |Name|REG_SZ|"Kurzen Namen hier einfügen"|Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet.|  
-|Float|REG_SZ|"X1,Y1,X2,Y2"|Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2 ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2 ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten.|  
 |Stil|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Verknüpft"<br /><br /> "Registerkarten"<br /><br /> "AlwaysFloat"|Ein Schlüsselwort, das Angeben der anfänglichen anzeigenzustand des Toolfensters.<br /><br /> "MDI" = MDI-Fensters angedockt.<br /><br /> "Float" = Gleitkommawert.<br /><br /> "Verknüpft" = verknüpft, die mit einem anderen Fenster (angegeben in den Fenster-Eintrag).<br /><br /> "Registerkarten" = in Kombination mit einem anderen Toolfenster.<br /><br /> "AlwaysFloat" = nicht angedockt werden.<br /><br /> Weitere Informationen finden Sie unter den folgenden Kommentarabschnitt.|  
 |Fenster|REG_SZ|*\<GUID>*|Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID möglicherweise gehört, um eine eigene Windows oder eines der Fenster in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Ausrichtung|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Unten"|Finden Sie unter den folgenden Kommentarabschnitt.|  
@@ -88,8 +88,8 @@ HKEY_LOCAL_MACHINE\
   
 |Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|(Standard)|REG_SZ|Keiner|Lassen Sie leer.|  
-|*\<GUID>*|REG_DWORD-Wert oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls müssen die Sichtbarkeit. Der Wert enthält lediglich eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
+|(Standard)|REG_SZ|None|Lassen Sie leer.|  
+|*\<GUID>*|REG_DWORD-Wert oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Optional. Der Eintrag Name muss die GUID eines Befehls müssen die Sichtbarkeit. Der Wert enthält lediglich eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
   
 ### <a name="example"></a>Beispiel  
   

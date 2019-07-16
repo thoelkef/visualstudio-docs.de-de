@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189078"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1903: Nur API aus
 |.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 Service Pack 2|  
 |.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 Service Pack 2, .NET Framework 3.0 SP1, .NET Framework 3.0 Service Pack 2|  
 |.NET Framework 3.5|.NET Framework 3.5 SP1|  
-|.NET Framework 4|Nicht zutreffend|  
+|.NET Framework 4|N/V|  
   
  Um das Zielframework des Projekts ändern möchten, finden Sie unter [für eine bestimmte .NET Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md).  
   

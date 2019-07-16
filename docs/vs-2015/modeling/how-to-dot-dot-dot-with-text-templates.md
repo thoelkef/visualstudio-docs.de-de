@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181570"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Textvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bieten eine gute M�
   
 ### <a name="generate-files-from-a-complex-model"></a>Generieren von Dateien aus einem komplexen Modell  
   
-- Erwägen Sie eine domänenspezifische Sprache (DSL) zur Darstellung des Modells erstellen. Dadurch viel einfacher schreiben die Vorlagen, da Sie Typen und Eigenschaften, die den Namen der Elemente im Modell widerspiegeln. Sie müssen nicht die Datei analysieren, oder navigieren XML-Knoten. Zum Beispiel:  
+- Erwägen Sie eine domänenspezifische Sprache (DSL) zur Darstellung des Modells erstellen. Dadurch viel einfacher schreiben die Vorlagen, da Sie Typen und Eigenschaften, die den Namen der Elemente im Modell widerspiegeln. Sie müssen nicht die Datei analysieren, oder navigieren XML-Knoten. Beispiel:  
   
      `foreach (Book book in this.Library) { ... }`  
   
@@ -87,7 +87,7 @@ Textvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bieten eine gute M�
      Weitere Informationen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md) und [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md).  
   
 ### <a name="get-data-from-includevsprvsincludesvsprvs-mdmd"></a>Abrufen von Daten aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
- Verwendung der Dienste, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vom Satz der `hostSpecific` -Attribut, und laden die `EnvDTE` Assembly. Zum Beispiel:  
+ Verwendung der Dienste, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vom Satz der `hostSpecific` -Attribut, und laden die `EnvDTE` Assembly. Beispiel:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

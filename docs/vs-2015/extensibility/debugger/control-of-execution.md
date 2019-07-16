@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3ce9f3fc810a1f2fd37166d4272b7c57c07927c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203279"
 ---
 # <a name="control-of-execution"></a>Steuern der Ausführung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Die Debug-Engine (DE) wird in der Regel eines der folgenden Ereignisse als das l
   
 5. Wenn der Benutzer wählt, mehr als Einzelschritt oder aus einer Funktion, die IDE die Debugsitzung zum Aufrufen des Programms fordert `Step` -Methode, und übergeben sie die Einheit der Schritt (-Anweisung, Anweisung oder Zeile) und die Art der Schritt – d. h. angibt, ob mehr als in Schritt , oder aus der Funktion. Wenn der Schritt abgeschlossen ist, sendet die DE ein vollständiges Schritt-Ereignis an die Debugsitzung, handelt es sich eine Beenden-Ereignis.  
   
-    - oder -   
+    -oder-  
   
     Wenn der Benutzer wählt fortgesetzt werden von den aktuellen Anweisungszeiger, fordert die IDE die Debugsitzung zum Aufrufen des Programms **Execute** Methode. Das Programm wird die Ausführung fortgesetzt, bis die nächste beenden-Bedingung erreicht.  
   
-    - oder -   
+    -oder-  
   
     Wenn die Debug-Sitzung eine bestimmte Stopping-Ereignis ignorieren soll, ruft die Debug-Sitzung des Programms **Weiter** Methode. Wenn das Programm ausführen in Einzelschritten wurde in, überspringen oder aus einer Funktion, wenn sie die beenden-Bedingung aufgetreten, weiterhin klicken Sie dann den Schritt.  
   

@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: acb7922658a5dd7db0839051a42a119733c8b1d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184207"
 ---
 # <a name="creating-a-custom-start-page"></a>Erstellen einer benutzerdefinierten Startseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Wenn Sie eine benutzerdefinierte Startseite mithilfe der Projektvorlage "Startse
   
 1. Kopieren der XAML-Datei und alle unterstützenden Textdateien oder Markup-Dateien, zu der **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  Ordner.  
   
-2. Wenn Ihre Startseite verweist keine Steuerelemente oder Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in _Visual Studio-Installationsordner_**\Common7\IDE\ "Privateassemblies"\\**.  
+2. Wenn Ihre Startseite verweist keine Steuerelemente oder Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in _Visual Studio-Installationsordner_ **\Common7\IDE\ "Privateassemblies"\\** .  
   
 3. Geben Sie an einer Visual Studio-Eingabeaufforderung **Devenv/rootsuffix Exp** um eine experimentelle Instanz von Visual Studio zu öffnen.  
   

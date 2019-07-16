@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd338443a6cad0a772d3780c4dbf361f2634240c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202841"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ int GetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parameter  
  `pguidLang`  
- [out] Die `GUID` der Sprache dieses Prozesses. `GUID_NULL` (C++) oder `Guid.Empty` (C#) bedeutet, dass die Sprache nicht festgelegt ist.  
+ [out] Die `GUID` der Sprache dieses Prozesses. `GUID_NULL` (C++) oder `Guid.Empty` (c#) bedeutet, dass die Sprache nicht festgelegt ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  

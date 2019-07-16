@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5126758c60262564390f84b6278300a41660f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187179"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IDebugDisassemblyStream2 : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Liest die Anleitung beginnend mit der aktuellen Position im Stream Disassembly.|  
+|[Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Liest die Anleitung beginnend mit der aktuellen Position im Stream Disassembly.|  
 |[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Verschiebt des lesezeigers im Disassemblyfenster Stream einer bestimmten Anzahl von Anweisungen, die relativ zur angegebenen Position.|  
 |[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Gibt einen Code-Speicherort-Bezeichner für einen bestimmten Code-Kontext zurück.|  
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Gibt ein für eine angegebene Standortbezeichner Code Context-Objekt zurück.|  
