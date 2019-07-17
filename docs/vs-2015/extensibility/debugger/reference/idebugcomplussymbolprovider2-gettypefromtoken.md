@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft-Dokumentation
+title: 'IDebugComPlusSymbolProvider2:: gettypeer fromtoken | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fa5e258390040fc70c0538c929a166984c3a7b0
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 07/17/2019
 ms.locfileid: "62540572"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ruft einen Typ, dessen Token erhält.  
+Ruft einen Typ ab, der sein Token erhält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,22 +45,22 @@ int GetTypeFromToken(
   
 #### <a name="parameters"></a>Parameter  
  `appDomain`  
- [in] Der Bezeichner der Anwendungsdomäne.  
+ in Der Bezeichner der Anwendungsdomäne.  
   
  `guidModule`  
- [in] Eindeutiger Bezeichner des Moduls.  
+ in Eindeutiger Bezeichner des Moduls.  
   
  `tdToken`  
- [in] Token des Typs abgerufen werden sollen.  
+ in Das Token des abzurufenden Typs.  
   
  `ppField`  
- [out] Gibt den Typ zurück, die durch dargestellt ist die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ vorgenommen Gibt den Typ zurück, der durch das [idebugfield](../../../extensibility/debugger/reference/idebugfield.md)dargestellt wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird `S_OK`zurückgegeben; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
+ Im folgenden Beispiel wird gezeigt, wie diese Methode für ein **cdebugsymbolprovider** -Objekt implementiert wird, das die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) -Schnittstelle verfügbar macht.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  
