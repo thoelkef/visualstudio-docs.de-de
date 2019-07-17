@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985309"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824445"
 ---
 # <a name="accessibility"></a>Zugriff
 
@@ -62,9 +62,9 @@ VoiceOver-Befehle werden in diesem Handbuch als **VO+*Taste*** angezeigt, wobei 
 Verwenden Sie die folgenden Tastenkombinationen, um durch die Benutzeroberfläche von Visual Studio für Mac zu navigieren:
 
 - **VO + Rechts/Links**: Navigieren zwischen den Elementen der Benutzeroberfläche
-    - VoiceOver sagt die Bezeichnung und die Art des Steuerelements an und erklärt die Interaktion mit ihm.
+  - VoiceOver sagt die Bezeichnung und die Art des Steuerelements an und erklärt die Interaktion mit ihm.
 - **VO + UMSCHALT + Nach unten / Nach oben**: Schritt in Element/aus Element
-    - Sobald Sie sich in einem Element befinden, können Sie mit **VO + Links/Rechts** durch die Elemente innerhalb dieses Elements navigieren.
+  - Sobald Sie sich in einem Element befinden, können Sie mit **VO + Links/Rechts** durch die Elemente innerhalb dieses Elements navigieren.
 - **VO + Leertaste**: Auswählen/Interagieren mit einem Steuerelement
 - **VO + M**: Interagieren mit der Visual Studio für Mac-Menüleiste
 

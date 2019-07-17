@@ -3,17 +3,17 @@ title: Suchen von Themen (Help Viewer)
 ms.date: 11/02/2017
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824284"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824995"
 ---
 # <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen von Themen
 
@@ -44,7 +44,7 @@ Sie können zielgerichtetere Suchen durchführen, die nur die für Sie interessa
 
 Die folgende Tabelle enthält einige einfache Regeln und Richtlinien für das Entwickeln von Suchabfragen in der Hilfe.
 
-|Syntax|Beschreibung|
+|Syntax|BESCHREIBUNG|
 |------------|-----------------|
 |Groß-/Kleinschreibung|Groß-/Kleinschreibung wird bei Suchvorgängen nicht beachtet. Entwickeln Sie Ihre Suchkriterien mit Groß-oder Kleinbuchstaben. Beispielsweise werden für „OLE“ und „ole“ die gleichen Ergebnisse zurückgegeben.|
 |Zeichenkombinationen|Sie können nicht nur nach einzelnen Buchstaben (a–z) oder Ziffern (0–9) suchen. Wenn Sie versuchen, nach bestimmten reservierten Wörtern wie „und“, „von“ und „mit“ zu suchen, werden diese ignoriert. Weitere Informationen finden Sie unter [Bei der Suche ignorierte Wörter (Stoppwörter)](#stopwords) weiter unten in diesem Thema.|

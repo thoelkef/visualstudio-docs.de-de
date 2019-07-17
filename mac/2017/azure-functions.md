@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933610"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824424"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
 Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – Funktionen – in einer Cloud erstellen und ausführen, ohne Infrastruktur bereitstellen und verwalten zu müssen. Weitere Informationen zu Azure Functions finden Sie in der [Dokumentation zu Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** enthalten.
 
@@ -77,7 +77,7 @@ Mit der Azure Functions-Unterstützung in Visual Studio für Mac können Sie Ihr
 
 Mithilfe von Funktionsvorlagen können Sie schnell mithilfe der am häufigsten verwendeten Trigger und Vorlagen neue Funktionen erstellen. Gehen Sie wie folgt vor, wenn Sie einen anderen Funktionstyp erstellen möchten:
 
-1. Wenn Sie eine neue Funktion hinzufügen möchten, klicken Sie erst mit der rechten Maustaste auf den Projektnamen und dann mit der linken auf **Hinzufügen > Funktion hinzufügen...**:
+1. Wenn Sie eine neue Funktion hinzufügen möchten, klicken Sie erst mit der rechten Maustaste auf den Projektnamen und dann mit der linken auf **Hinzufügen > Funktion hinzufügen...** :
 
     ![Kontextaktion zum Hinzufügen einer neuen Funktion](media/azure-functions-addnew.png)
 
@@ -96,7 +96,7 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 3. Im Dialogfeld **In Azure App Service veröffentlichen** können Sie entweder einen vorhandenen App-Dienst auswählen oder einen neuen erstellen, indem Sie auf **Neu** klicken.
 4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
 
-    |Einstellung  |Beschreibung  |
+    |Einstellung  |BESCHREIBUNG  |
     |---------|---------|
     |**App Service-Name**|Ein global eindeutiger Name, der Ihre neue Funktions-App identifiziert.|
     |**Abonnement**|Das zu verwendende Azure-Abonnement|
@@ -140,14 +140,14 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
 ## <a name="available-function-templates"></a>Verfügbare Funktionsvorlagen
 
 - **GitHub Trigger**: Antworten Sie auf Ereignisse, die in Ihren GitHub-Repositorys auftreten. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch einen GitHub-Webhook ausgelöst wird](/azure/azure-functions/functions-create-github-webhook-triggered-function).
-    - GitHub commenter: eine Funktion, die immer dann ausgeführt wird und einen Kommentar hinzufügt, wenn sie einen GitHub-Webhook für ein Problem oder einen Pull Request empfängt.
-    - GitHub WebHook: Diese Funktion wird ausgeführt, wenn sie einen GitHub-Webhook empfängt.
+  - GitHub commenter: eine Funktion, die immer dann ausgeführt wird und einen Kommentar hinzufügt, wenn sie einen GitHub-Webhook für ein Problem oder einen Pull Request empfängt.
+  - GitHub WebHook: Diese Funktion wird ausgeführt, wenn sie einen GitHub-Webhook empfängt.
 
 - **HTTP**: Lösen Sie die Ausführung Ihres Codes über eine HTTP-Anforderung aus. Es gibt explizite Vorlagen für die folgenden HTTP-Trigger:
-    - HTTP-Trigger
-    - Http GET CRUD
-    - Http POST CRUD
-    - HTTP-Trigger mit Parametern
+  - HTTP-Trigger
+  - Http GET CRUD
+  - Http POST CRUD
+  - HTTP-Trigger mit Parametern
 
 - **Timer**: Führen Sie eine Bereinigung oder andere Stapelaufgaben für einen vordefinierten Zeitplan aus. Diese Vorlage beinhaltet zwei Felder: ein Name und ein Zeitplan, bei dem es sich um einen CRON-Ausdruck handelt, der aus sechs Feldern besteht. Weitere Informationen finden Sie unter [Erstellen einer Funktion in Azure, die von einem Timer ausgelöst wird](/azure/azure-functions/functions-create-scheduled-function).
 

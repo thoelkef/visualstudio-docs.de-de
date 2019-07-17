@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844041"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823826"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 
@@ -43,15 +43,15 @@ Wenn Sie Ebenenreihenfolge ändern möchten, müssen Sie einen der folgenden Sch
 
 - Klicken Sie mit der rechten Maustaste auf das Element im Dokumentgliederungsfenster oder auf der Zeichenfläche, für das Sie die Ebenenreihenfolge ändern möchten, zeigen Sie auf **Reihenfolge**, und klicken Sie dann auf eine der folgenden Optionen:
 
-   - **In den Vordergrund**, um das Element in der Reihenfolge ganz nach vorne zu verschieben.
+  - **In den Vordergrund**, um das Element in der Reihenfolge ganz nach vorne zu verschieben.
 
-   - **Eine Ebene nach vorne**, um das Objekt eine Ebene in der Reihenfolge nach vorne zu holen.
+  - **Eine Ebene nach vorne**, um das Objekt eine Ebene in der Reihenfolge nach vorne zu holen.
 
-   - **Eine Ebene nach hinten**, um das Objekt eine Ebene in der Reihenfolge nach hinten zu verschieben.
+  - **Eine Ebene nach hinten**, um das Objekt eine Ebene in der Reihenfolge nach hinten zu verschieben.
 
-   - **In den Hintergrund**, um das Element hinter alle anderen Elemente in der Reihenfolge zu verschieben.
+  - **In den Hintergrund**, um das Element hinter alle anderen Elemente in der Reihenfolge zu verschieben.
 
-   Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem höheren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
+  Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem höheren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
 
 ## <a name="change-the-alignment-of-an-element"></a>Ändern der Ausrichtung eines Objekts
 

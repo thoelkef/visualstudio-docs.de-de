@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974734"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826285"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -135,20 +135,20 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
 Die drei P12-Dateien in diesem Ordner enthalten jeweils ein Zwischen- und ein Stammzertifikat. Auf den meisten Systemen, die über die aktuellsten Windows-Updates verfügen, sind diese Zertifikate bereits installiert.
 
 * **ManifestSignCertificates.p12** enthält:
-    * Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
-        * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-    * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
-        * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
+  * Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
+    * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
+  * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
+    * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **ManifestCounterSignCertificates.p12** enthält:
-    * Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
-        * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-    * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
-        * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
+  * Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
+    * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
+  * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
+    * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **Vs_installer_opc.SignCertificates.p12** enthält:
-    * Zwischenzertifikat: **Microsoft Code Signing PCA**
-        * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
-    * Stammzertifikat: **Microsoft Root Certificate Authority**
-        * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
+  * Zwischenzertifikat: **Microsoft Code Signing PCA**
+    * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
+  * Stammzertifikat: **Microsoft Root Certificate Authority**
+    * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 
 **Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden.
 
@@ -157,20 +157,20 @@ Die drei P12-Dateien in diesem Ordner enthalten jeweils ein Zwischen- und ein St
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** enthält:
-    * Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
-        * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-    * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
-        * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
+  * Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
+    * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
+  * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
+    * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **ManifestCounterSignCertificates.p12** enthält:
-    * Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
-        * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
-    * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
-        * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
+  * Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
+    * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
+  * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
+    * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
 * **Vs_installer_opc.SignCertificates.p12** enthält:
-    * Zwischenzertifikat: **Microsoft Code Signing PCA**
-        * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
-    * Stammzertifikat: **Microsoft Root Certificate Authority**
-        * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
+  * Zwischenzertifikat: **Microsoft Code Signing PCA**
+    * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
+  * Stammzertifikat: **Microsoft Root Certificate Authority**
+    * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 
 Im Visual Studio-Installer müssen nur die Stammzertifikate auf dem System installiert werden.
 
@@ -188,7 +188,7 @@ Eine Möglichkeit, das installierte System zu prüfen, sind die folgenden Schrit
   a. Klicken Sie auf **Datei** und dann auf **Snap-In hinzufügen/entfernen**.<br/>
   b. Doppelklicken Sie auf **Zertifikate**, dann auf **Computerkonto** und anschließend auf **Weiter**.<br/>
   c. Klicken Sie auf **Lokaler Computer**, dann auf **Fertig stellen** und anschließend auf **OK**.<br/>
-  d. Erweitern Sie **Zertifikate (Lokaler Computer)**.<br/>
+  d. Erweitern Sie **Zertifikate (Lokaler Computer)** .<br/>
   e. Erweitern Sie **Vertrauenswürdige Stammzertifizierungsstellen**, und klicken Sie dann auf **Zertifikate**.<br/>
     * Überprüfen Sie die Liste auf erforderliche Stammzertifikate.<br/>
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893005"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823856"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 
@@ -81,7 +81,7 @@ So sieht die **Shader-Designer-Modus**-Symbolleiste aus:
 
 In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
-|Element der Symbolleiste|Beschreibung|
+|Element der Symbolleiste|BESCHREIBUNG|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Interaktion mit Knoten und Kanten im Diagramm. In diesem Modus können Sie Knoten auswählen und verschieben oder löschen. Zudem können Sie Kanten einrichten oder unterbrechen.|
 |**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
@@ -109,17 +109,17 @@ Verwenden Sie den Modus **Auswählen**, um Knoten hinzuzufügen, zu entfernen, n
 
 - Gehen Sie dabei folgendermaßen vor:
 
-   - Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.
+  - Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.
 
-   - Wenn Sie einen Knoten aus dem Diagramm entfernen möchten, wählen Sie ihn aus, und drücken Sie dann die **ENTF-TASTE**.
+  - Wenn Sie einen Knoten aus dem Diagramm entfernen möchten, wählen Sie ihn aus, und drücken Sie dann die **ENTF-TASTE**.
 
-   - Um einen Knoten neu anzuordnen, wählen Sie diesen aus, und verschieben Sie ihn dann an einen neuen Speicherort.
+  - Um einen Knoten neu anzuordnen, wählen Sie diesen aus, und verschieben Sie ihn dann an einen neuen Speicherort.
 
-   - Um zwei Knoten zu verbinden, verschieben Sie ein Ausgabeterminal eines Knotens in ein Eingabeterminal des anderen Knotens. Es können nur Terminals mit kompatiblen Typen verbunden werden. Eine Linie zwischen den Terminals zeigt die Verbindung.
+  - Um zwei Knoten zu verbinden, verschieben Sie ein Ausgabeterminal eines Knotens in ein Eingabeterminal des anderen Knotens. Es können nur Terminals mit kompatiblen Typen verbunden werden. Eine Linie zwischen den Terminals zeigt die Verbindung.
 
-   - Um eine Verbindung zu entfernen, wählen Sie im Kontextmenü eines der verbundenen Terminals **Zeilen umbrechen** aus.
+  - Um eine Verbindung zu entfernen, wählen Sie im Kontextmenü eines der verbundenen Terminals **Zeilen umbrechen** aus.
 
-   - Um die Eigenschaften eines Knotens zu konfigurieren, wählen Sie den Knoten aus, und geben Sie dann im Fenster **Eigenschaften** neue Werte für die Eigenschaften an.
+  - Um die Eigenschaften eines Knotens zu konfigurieren, wählen Sie den Knoten aus, und geben Sie dann im Fenster **Eigenschaften** neue Werte für die Eigenschaften an.
 
 ### <a name="preview-shaders"></a>Shader (Vorschauversion)
 
@@ -168,7 +168,7 @@ Halten Sie hierzu **ALT** gedrückt, wählen Sie einen beliebigen Punkt auf der 
 
 Bevor Sie einen Shader in Ihrer App verwenden können, müssen Sie ihn in ein Format exportieren, das DirectX versteht.
 
-Sie können Shader als HLSL-Quellcode oder als kompilierten Shader-Bytecode exportieren. HLSL-Quellcode wird in eine Textdatei exportiert, die über die Erweiterung *.hlsl* verfügt. Shader-Bytecode kann entweder in eine unformatierte Binärdatei exportiert werden, die über die Erweiterung *.cso* verfügt, oder in eine C++-Headerdatei (*.h*), die den Shader-Bytecode in ein Array codiert.
+Sie können Shader als HLSL-Quellcode oder als kompilierten Shader-Bytecode exportieren. HLSL-Quellcode wird in eine Textdatei exportiert, die über die Erweiterung *.hlsl* verfügt. Shader-Bytecode kann entweder in eine unformatierte Binärdatei exportiert werden, die über die Erweiterung *.cso* verfügt, oder in eine C++-Headerdatei ( *.h*), die den Shader-Bytecode in ein Array codiert.
 
 Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).
 
@@ -182,8 +182,8 @@ Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehenswei
 |Alles auswählen|**STRG**+**A**|
 |Die aktuelle Auswahl löschen|**Löschen**|
 |Brechen Sie die aktuelle Auswahl ab.|**Escape** (**ESC**)|
-|Vergrößern|**STRG**+**Mausrad vorwärts**<br /><br /> Pluszeichen (**+**)|
-|Verkleinern|**STRG**+**Mausrad rückwärts**<br /><br /> Minuszeichen (**-**)|
+|Vergrößern|**STRG**+**Mausrad vorwärts**<br /><br /> Pluszeichen ( **+** )|
+|Verkleinern|**STRG**+**Mausrad rückwärts**<br /><br /> Minuszeichen ( **-** )|
 |Die Entwurfsoberfläche nach oben schwenken|**Mausrad rückwärts**<br /><br /> **BildAb**|
 |Die Entwurfsoberfläche nach unten schwenken|**Mausrad vorwärts**<br /><br /> **BildAuf**|
 |Die Entwurfsoberfläche nach links schwenken|**UMSCHALTTASTE**+**Mausrad rückwärts**<br /><br /> **Mausrad links**<br /><br /> **UMSCHALTTASTE**+**BildAb**|
@@ -199,7 +199,7 @@ Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehenswei
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie beim Arbeiten mit Texturen, Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Visual Studio-Bildbearbeitung für die Arbeit mit Texturen und Bildern.|

@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976218"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825771"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen
 
@@ -30,9 +30,9 @@ Mit dem Diagramm für Aktivitäten virtueller Benutzer können die Aktivitäten 
 
 - Schließen Sie diese Verfahren ab:
 
-    - [Aufzeichnen und Ausführen eines Webleistungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+  - [Aufzeichnen und Ausführen eines Webleistungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    - [Erstellen und Ausführen eines Auslastungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Erstellen und Ausführen eines Auslastungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Öffnen der in vorherigen exemplarischen Vorgehensweisen erstellten Projektmappe „ColorWebApp“
 
@@ -69,7 +69,7 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 3. Stellen Sie im Tool **Zoom zum Zeitraum** unter dem **Diagramm für Aktivitäten virtueller Benutzer** die linken und rechten Schieberegler so ein, dass sich beide in der Nähe des Symbols für die Schwellenwertverletzung befinden. Hierdurch wird die Zeitskala im **Diagramm für Aktivitäten virtueller Benutzer** geändert.
 
-4. Aktivieren Sie in der **Detaillegende** das Kontrollkästchen **(Fehler hervorheben)**. Der virtuelle Benutzer, der die Schwellenwertverletzung verursacht hat, wird hervorgehoben.
+4. Aktivieren Sie in der **Detaillegende** das Kontrollkästchen **(Fehler hervorheben)** . Der virtuelle Benutzer, der die Schwellenwertverletzung verursacht hat, wird hervorgehoben.
 
 5. Deaktivieren Sie im Bereich **Filterergebnisse** die Kontrollkästchen **Erfolgreiche Ergebnisse anzeigen** und **HttpError**, aber lassen Sie das Kontrollkästchen **ValidationRuleError** aktiviert.
 

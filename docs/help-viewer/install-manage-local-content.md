@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Help Viewer, installing local content
 - Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824299"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824957"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 
@@ -51,7 +51,7 @@ Standardmäßig installiert Help Viewer Inhalte, indem ein Microsoft-Onlinediens
 
     - Geben Sie den Pfad einer *MSHA-Datei* oder die URL eines Dienstendpunkts ein.
 
-    - Klicken Sie auf die Schaltfläche „Durchsuchen“ (**…**), um zu einer *MSHA-Datei* zu navigieren.
+    - Klicken Sie auf die Schaltfläche „Durchsuchen“ ( **…** ), um zu einer *MSHA-Datei* zu navigieren.
 
     - Wählen Sie in der Liste den zuletzt verwendeten Eintrag aus.
 

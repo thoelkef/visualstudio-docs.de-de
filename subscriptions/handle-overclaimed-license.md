@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 02/13/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren mit zu häufig in Anspruch genommenen Abonnements umgehen.
-searchscope: VS Subscription
-ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 23a0888a670c10af4447d7a097067ffe4fe70c0f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67587001"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783452"
 ---
 # <a name="overallocated-subscriptions"></a>Zu viel zugewiesene Abonnements
 

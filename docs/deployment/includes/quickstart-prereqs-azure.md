@@ -1,12 +1,12 @@
 ---
 ms.openlocfilehash: b8903ecc6f0bdb1ee24f5b8b7b724311c903e4ba
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256511"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143642"
 ---
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 ::: moniker range=">=vs-2019"
 
@@ -24,6 +24,6 @@ ms.locfileid: "67256511"
 
 * Ein ASP.NET-, ASP.NET Core-, .NET Core- oder Node.js-Projekt. Wenn Sie noch nicht über ein Projekt verfügen, wählen Sie eine der nachfolgenden Optionen aus:
   * ASP.NET Core: Führen Sie die Anweisungen unter [Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App](../../ide/quickstart-aspnet-core.md) aus, oder klicken Sie unter **Datei** > **Neues Projekt** auf **Visual C#**  >  **.NET Core**, und wählen Sie dann **ASP.NET Core-Webanwendung** aus. Wenn Sie dazu aufgefordert werden, klicken Sie auf die Vorlage **Webanwendung (Model View Controller)** , vergewissern Sie sich, dass **No Authentication** (Keine Authentifizierung) ausgewählt ist, und klicken Sie anschließend auf **OK**.
-  * Node.js: Führen Sie die Anweisungen unter [Schnellstart: Erstellen einer ersten Node.js-App mit Visual Studio](../../ide/quickstart-nodejs.md) aus, oder klicken Sie auf **Datei** > **Neues Projekt**, und wählen Sie **JavaScript** und anschließend **Leere Node.js-Webanwendung** aus.
+  * Node.js: Führen Sie die Anweisungen unter [Schnellstart: Erstellen einer ersten Node.js-App mit Visual Studio](../../ide/quickstart-nodejs.md) aus, oder klicken Sie auf **Datei** > **Neues Projekt**, und wählen Sie **JavaScript** und anschließend **	Leere Node.js-Webanwendung** aus.
 
 * Erstellen Sie das Projekt über den Menübefehl **Erstellen > Projektmappe erstellen**, bevor Sie mit der Bereitstellung beginnen.

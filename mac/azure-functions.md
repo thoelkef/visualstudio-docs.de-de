@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692832"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825553"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -138,14 +138,14 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
 ## <a name="available-function-templates"></a>Verfügbare Funktionsvorlagen
 
 - **GitHub Trigger**: Antworten Sie auf Ereignisse, die in Ihren GitHub-Repositorys auftreten. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch einen GitHub-Webhook ausgelöst wird](/azure/azure-functions/functions-create-github-webhook-triggered-function).
-    - GitHub commenter: eine Funktion, die immer dann ausgeführt wird und einen Kommentar hinzufügt, wenn sie einen GitHub-Webhook für ein Problem oder einen Pull Request empfängt.
-    - GitHub WebHook: Diese Funktion wird ausgeführt, wenn sie einen GitHub-Webhook empfängt.
+  - GitHub commenter: eine Funktion, die immer dann ausgeführt wird und einen Kommentar hinzufügt, wenn sie einen GitHub-Webhook für ein Problem oder einen Pull Request empfängt.
+  - GitHub WebHook: Diese Funktion wird ausgeführt, wenn sie einen GitHub-Webhook empfängt.
 
 - **HTTP**: Lösen Sie die Ausführung Ihres Codes über eine HTTP-Anforderung aus. Es gibt explizite Vorlagen für die folgenden HTTP-Trigger:
-    - HTTP-Trigger
-    - Http GET CRUD
-    - Http POST CRUD
-    - HTTP-Trigger mit Parametern
+  - HTTP-Trigger
+  - Http GET CRUD
+  - Http POST CRUD
+  - HTTP-Trigger mit Parametern
 
 - **Timer**: Führen Sie eine Bereinigung oder andere Stapelaufgaben für einen vordefinierten Zeitplan aus. Diese Vorlage beinhaltet zwei Felder: ein Name und ein Zeitplan, bei dem es sich um einen CRON-Ausdruck handelt, der aus sechs Feldern besteht. Weitere Informationen finden Sie unter [Erstellen einer Funktion in Azure, die von einem Timer ausgelöst wird](/azure/azure-functions/functions-create-scheduled-function).
 

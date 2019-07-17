@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Azure-Community-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 9cd166d2e6be64713e6e79569133eea887568da1
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586945"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250822"
 ---
 # <a name="azure-community"></a>Azure-Community
 

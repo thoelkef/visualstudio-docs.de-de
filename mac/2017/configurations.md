@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: f4e62d23684695c938061c178d7af078bfccfc27
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692459"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824404"
 ---
 # <a name="understanding-build-configurations"></a>Grundlagen der Buildkonfiguration
 
@@ -51,21 +51,21 @@ Für Aktivitäten, die nicht `MainLauncher` sind, muss `Exported=true` dem Aktiv
 Die folgende Liste enthält Beispiele für Daten, die in Laufzeitkonfigurationen eingeschlossen werden könnten:
 
 * Normales .NET-Projekt
-    * Alternative Start-App
-    * Startargumente
-    * Arbeitsverzeichnis
-    * Umgebungsvariablen
-    * Mono-Laufzeitoptionen (nur unter Mono verwenden)
+  * Alternative Start-App
+  * Startargumente
+  * Arbeitsverzeichnis
+  * Umgebungsvariablen
+  * Mono-Laufzeitoptionen (nur unter Mono verwenden)
 * Android-Projekt
-    * Einstiegspunkt (Aktivität, Dienst, Empfänger)
-    * Beabsichtigte Argumente und Daten
+  * Einstiegspunkt (Aktivität, Dienst, Empfänger)
+  * Beabsichtigte Argumente und Daten
 * iOS-Projekt
-    * Modus (Normal, Abrufen im Hintergrund)
+  * Modus (Normal, Abrufen im Hintergrund)
 * iOS-Erweiterungsprojekt
-    * Start-App: Standard oder benutzerdefiniert
+  * Start-App: Standard oder benutzerdefiniert
 * WatchKit-Projekt
-    * Modus (Übersicht, Benachrichtigung)
-    * Benachrichtigungsplayload
+  * Modus (Übersicht, Benachrichtigung)
+  * Benachrichtigungsplayload
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Endbenutzern (für MPN-Partner) Visual Studio-Abonnements zuweisen.
-searchscope: VS Subscription
-ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412400"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823196"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Verwalten von Visual Studio-Abonnements, die über Microsoft Partner Network (MPN) angeboten werden
 
@@ -61,7 +60,7 @@ Microsoft Action Pack-Abonnent und Visual Studio-Abonnements
 - Näheres zu [Visual Studio-Abonnements](https://partner.microsoft.com/membership/msdn-subscriptions) im Zusammenhang mit dem Microsoft Partner Network
 
 - Microsoft Partner Network [Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Programmadministrator-Handbuch für Software- und Onlinedienstevorteile)
-    - S. 6: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Zuweisen von Kontaktrollen und Visual Studio-Abonnements für Action Pack)
+  - S. 6: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Zuweisen von Kontaktrollen und Visual Studio-Abonnements für Action Pack)
 
 > [!NOTE]
 > Die technische Kontaktrolle ist für Visual Studio-Abonnements erforderlich

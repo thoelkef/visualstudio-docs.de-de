@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/28/2017
 ms.topic: conceptual
 description: Suchen Sie nach einer Liste der Softwaredownloads, die in Ihrem Visual Studio-Abonnement enthalten sind.
-searchscope: VS Subscription
-ms.openlocfilehash: fea44e77267a7f2e2d0964ee614807875198cd92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa25dea9e724c2a13f64134b4c0d2fa7891f8bfe
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561038"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250301"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>Wie erkenne ich, welche Software zum Herunterladen verfügbar ist?
 

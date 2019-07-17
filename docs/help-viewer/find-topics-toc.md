@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951333"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825071"
 ---
 # Vorgehensweise: Suchen nach Themen im Inhaltsverzeichnis
 
@@ -31,7 +31,7 @@ Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, u
 
 ## Filtern des Inhaltsverzeichnisses
 
-Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird. Titel werden nur in der Liste angezeigt, wenn sie den Stamm des angegebenen Begriffs enthalten. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Namen nicht den Begriff enthalten, werden auf einem einzelnen Knoten mit Auslassungszeichen (**...**) reduziert.
+Sie können das Inhaltsverzeichnis filtern, um den Themenbereich einzugrenzen, der auf der Registerkarte **Inhalt** angezeigt wird. Titel werden nur in der Liste angezeigt, wenn sie den Stamm des angegebenen Begriffs enthalten. Wenn Sie beispielsweise "Problembehandlung" als Filter angeben, werden nur Titel angezeigt, die "Problem" oder "Problembehandlung" enthalten. Knoten, deren Namen nicht den Begriff enthalten, werden auf einem einzelnen Knoten mit Auslassungszeichen ( **...** ) reduziert.
 
 1. Klicken Sie auf die Registerkarte **Inhalt**.
 
@@ -46,7 +46,7 @@ Wenn Sie ein Thema mithilfe der Index- oder Volltextsuchfunktionen geöffnet hab
 
 1. Zeigen Sie ein Thema an.
 
-2. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie **STRG+**+**S**.
+2. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie **STRG+** +**S**.
 
      Die Registerkarte **Inhalt** wird geöffnet und zeigt den Speicherort des Themas im Inhaltsverzeichnis an.
 

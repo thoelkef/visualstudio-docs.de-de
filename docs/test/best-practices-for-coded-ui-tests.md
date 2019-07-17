@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822975"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826080"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bewährte Methoden für Tests der programmierten UI
 
@@ -62,11 +62,11 @@ Benutzeroberflächen werden während der Entwicklung häufig geändert. Nachfolg
 
 - Wenn ein Steuerelement über eine Assertion verfügt, die nicht mehr gültig ist:
 
-    - Löschen Sie die Methode, die die Assertion enthält.
+  - Löschen Sie die Methode, die die Assertion enthält.
 
-    - Entfernen Sie den Aufruf dieser Methode aus der Testmethode.
+  - Entfernen Sie den Aufruf dieser Methode aus der Testmethode.
 
-    - Fügen Sie eine neue Assertion hinzu, indem Sie die Fadenkreuz-Schaltfläche auf das UI-Steuerelement ziehen, die UI-Zuordnung öffnen und die neue Assertion hinzufügen.
+  - Fügen Sie eine neue Assertion hinzu, indem Sie die Fadenkreuz-Schaltfläche auf das UI-Steuerelement ziehen, die UI-Zuordnung öffnen und die neue Assertion hinzufügen.
 
 Weitere Informationen über das Aufzeichnen von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual Studio-Abonnements enthalten ist
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031968"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824635"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
@@ -111,9 +110,9 @@ Antwort:  Nein.  Der Power BI Pro-Vorteil kann nicht zu Behördenmandanten hinzu
 
 ## <a name="support-resources"></a>Supportressourcen
 - Benötigen Sie Hilfe bei Power BI Pro?
-    - Lesen Sie die [Onlinedokumentation](/power-bi/).
-    - Haben Sie Probleme mit der Registrierung?  Lesen Sie den Artikel [Registrieren für Power BI als Einzelperson](/power-bi/service-self-service-signup-for-power-bi).
-    - Erkunden Sie die häufigsten Probleme, lassen Sie sich von der Community helfen, oder übermitteln Sie ein Supportticket auf der [Supportseite](https://powerbi.microsoft.com/support/).
+  - Lesen Sie die [Onlinedokumentation](/power-bi/).
+  - Haben Sie Probleme mit der Registrierung?  Lesen Sie den Artikel [Registrieren für Power BI als Einzelperson](/power-bi/service-self-service-signup-for-power-bi).
+  - Erkunden Sie die häufigsten Probleme, lassen Sie sich von der Community helfen, oder übermitteln Sie ein Supportticket auf der [Supportseite](https://powerbi.microsoft.com/support/).
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
