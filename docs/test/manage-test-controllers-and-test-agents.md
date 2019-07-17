@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788751"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824243"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -114,7 +114,7 @@ Test-Agents können nur entfernt werden, wenn sie sich im Offlinezustand befinde
 
 Der Status des Test-Agents kann einen der folgenden Werte aufweisen:
 
-|Status|Beschreibung|
+|Status|BESCHREIBUNG|
 |-|-----------------|
 |Test wird ausgeführt|Ausführen von Tests|
 |Bereit|Verfügbar zum Ausführen von Tests oder Sammeln von Daten und Diagnosen|
@@ -140,7 +140,7 @@ Mit dem folgenden Verfahren können Sie den Status und andere Einstellungen für
 
 1. Ändern Sie die folgenden Test-Agent-Eigenschaften nach Bedarf:
 
-|Test-Agent-Eigenschaft|Beschreibung|
+|Test-Agent-Eigenschaft|BESCHREIBUNG|
 |-|-----------------|
 |**Gewichtung**|Wird bei Verwendung von Test-Agents mit unterschiedlicher Leistungsfähigkeit zum Verteilen der Last verwendet. Ein Test-Agent mit einer Gewichtung von 100 erhält beispielsweise doppelt so viel Last wie ein Test-Agent mit einer Gewichtung von 50.|
 |**IP-Wechsel**|Wird zum Konfigurieren des IP-Wechsels verwendet. Durch IP-Wechsel kann ein Test-Agent für Anfragen an einen Server einen Bereich von IP-Adressen verwenden. Auf diese Weise werden Aufrufe von anderen Clientcomputern simuliert.<br /><br /> IP-Wechsel ist wichtig, wenn der Auslastungstest auf eine Webfarm zugreift. Die meisten Lastenausgleichsmodule etablieren die Zugehörigkeit zwischen einem Client und einem bestimmten Webserver über die IP-Adresse des Clients. Wenn alle Anfragen von einem einzigen Client zu kommen scheinen, wird die Auslastung vom Lastenausgleichsmodul nicht ausgeglichen. Um innerhalb der Webfarm einen guten Lastenausgleich zu erhalten, stellen Sie sicher, dass die Anfragen von mehreren IP-Adressen kommen. **Hinweis**:  Sie können entweder einen Netzwerkadapter angeben oder **(Keine zugewiesen)** verwenden, um automatisch einen derzeit nicht verwendeten Adapter auszuwählen. <br /><br /> Sie können die IP-Wechselfunktion nur verwenden, wenn der Visual Studio Test Agent-Dienst als Benutzer in der Administratorengruppe für diesen Agent-Computer ausgeführt wird. Dieser Benutzername wird während des Agent-Setups ausgewählt, kann jedoch durch Ändern der Diensteigenschaften und erneutes Starten des Diensts geändert werden.<br /><br /> Wenn Sie die ordnungsgemäße Funktion des IP-Wechsels überprüfen möchten, aktivieren Sie die IIS-Protokollierung auf dem Webserver, und überprüfen Sie mit der IIS-Protokollfunktion, ob die Anforderungen von den konfigurierten IP-Adressen kommen.|
@@ -186,25 +186,25 @@ Wenn Sie den Testeinstellungen für Visual Studio Rollen für die Anwendung hinz
 
 - Für die Rolle, die die Tests ausführen muss, ist kein Agent verfügbar. Die Tests können nicht ausgeführt werden. Sie können eine der folgenden Aktionen ausführen und dann die Tests erneut ausführen:
 
-    - Sie können warten, bis ein Agent für die Rolle zum Ausführen der Tests verfügbar ist.
+  - Sie können warten, bis ein Agent für die Rolle zum Ausführen der Tests verfügbar ist.
 
-    - Wenn Agents offline sind, die für die Rolle verwendet werden können, können Sie den Agent neu starten, damit er verfügbar ist.
+  - Wenn Agents offline sind, die für die Rolle verwendet werden können, können Sie den Agent neu starten, damit er verfügbar ist.
 
-    - Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für diese Rolle hinzufügen.
+  - Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für diese Rolle hinzufügen.
 
-    - Sie können die Agent-Eigenschaften für diese Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
+  - Sie können die Agent-Eigenschaften für diese Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
 
 - Für eine oder mehrere Rollen, die Diagnosedatenadapter ausführen, ist kein Agent verfügbar. Die Tests können ausgeführt werden, der Diagnosedatenadapter kann jedoch nicht ausgeführt werden. Sie können die Tests ohne den Diagnosedatenadapter ausführen, oder Sie können eine der folgenden Aktionen ausführen und die Tests erneut ausführen:
 
-    - Sie können warten, bis ein Agent für diese Rollen verfügbar ist.
+  - Sie können warten, bis ein Agent für diese Rollen verfügbar ist.
 
-    - Wenn für diese Rolle vorhandene Offline-Agents verwendet werden können, müssen Sie den Zustand des Agents im Menü **Test** unter **Testcontroller verwalten** in „Online“ ändern. Außerdem müssen Sie den Agent eventuell neu starten, wenn er vom Controller getrennt wurde.
+  - Wenn für diese Rolle vorhandene Offline-Agents verwendet werden können, müssen Sie den Zustand des Agents im Menü **Test** unter **Testcontroller verwalten** in „Online“ ändern. Außerdem müssen Sie den Agent eventuell neu starten, wenn er vom Controller getrennt wurde.
 
-    - Stellen Sie sicher, dass keiner der Agents, die Sie möglicherweise für diesen Testlauf benötigen, mit dem Ausführen von Tests ausgelastet ist. Sie können den Status aller Agents im Menü **Test** unter **Testcontroller verwalten** überprüfen.
+  - Stellen Sie sicher, dass keiner der Agents, die Sie möglicherweise für diesen Testlauf benötigen, mit dem Ausführen von Tests ausgelastet ist. Sie können den Status aller Agents im Menü **Test** unter **Testcontroller verwalten** überprüfen.
 
-    - Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für die Rolle hinzufügen.
+  - Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für die Rolle hinzufügen.
 
-    - Sie können die Agent-Eigenschaften für die Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
+  - Sie können die Agent-Eigenschaften für die Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Laden von Tests von verzögert signierten Assemblys
 

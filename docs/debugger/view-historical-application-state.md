@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676590"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825529"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Untersuchen von vorherigen App-Zuständen mithilfe des IntelliTrace-Features „Schritt zurück“ in Visual Studio (Visual Studio Enterprise)
 
@@ -119,8 +119,8 @@ Die Auswirkung auf die gesamte Steppingleistung hängt von Ihrer Anwendung ab. D
 
 * Wenn eine Momentaufnahme des Anwendungsprozesses für eine Anwendung erstellt wird, die eine permanente im Speicher abgebildete Datei verwendet, hält der Prozess mit der Momentaufnahme eine exklusive Sperre auf diese Datei aufrecht. Andere Prozess können die im Speicher abgebildete Datei noch immer lesen, jedoch keine Schreibvorgänge darin ausführen.
 
-    Problemumgehung:
-    * Löschen Sie alle Momentaufnahmen, indem Sie die Debugsitzung beenden.
+  Problemumgehung:
+  * Löschen Sie alle Momentaufnahmen, indem Sie die Debugsitzung beenden.
 
 * Die Steppingleistung mit aktivierten Momentaufnahmen kann beim Debuggen einer Anwendung betroffen sein, deren Prozess über eine hohe Anzahl von eindeutigen Arbeitsspeicherregionen verfügt, in etwa eine Anwendung, die eine hohe Anzahl von DLLs lädt. Dieses Problem wird in einer zukünftigen Version von Windows behoben. Wenn dieser Fehler bei Ihnen auftritt, wenden Sie sich an uns: stepback@microsoft.com
 

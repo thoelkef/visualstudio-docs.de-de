@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990502"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825865"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 
@@ -97,11 +97,11 @@ Lösung&mdash;Es gibt zwei mögliche Fehlertypen:
 
 - **Fehler in regulärem Ausdruck**
 
-     Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:
+  Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:
 
-    - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`
+  - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`
 
-    - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`
+  - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Benutzerdefinierte Datei ".runsettings" mit falschen Ausschlüssen
 

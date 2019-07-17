@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 281631332692d249ea30e747fa4a0fd69ca110f4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442239"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825663"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
 Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Profilerstellungsdaten interaktiv steuern.
@@ -31,11 +31,11 @@ Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Pro
 
 - Gehen Sie auf der Profilerstellungs-Sitzungsseite folgendermaßen vor:
 
-    - Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.
+  - Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.
 
-    - Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.
+  - Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.
 
-    - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.
+  - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)

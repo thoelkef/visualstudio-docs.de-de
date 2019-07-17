@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: cc7c049e0b1c5962b831e9084685b205acda38fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433419"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826112"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Profilers für die Reaktionsfähigkeit der Benutzeroberflächen beschrieben, einem Leistungstool für universelle Windows-Apps.
@@ -254,9 +254,9 @@ if (performance.mark && performance.measure) {
 
 - Anzeigen der ungefähren Start-, Dauer- und Beendigungszeit für ein Ereignis in einer Zeitachsen- und Rasteransicht. Im Zeitachsendetaildiagramm können je nach Zoomzustand Zeiträume von 30 Millisekunden bis zu 30 Sekunden in der Rasteransicht angezeigt werden. Für Dauerwerte:
 
-    - Inklusive Zeiten stellen die Dauer des Ereignisses einschließlich der untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert zuerst angezeigt.
+  - Inklusive Zeiten stellen die Dauer des Ereignisses einschließlich der untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert zuerst angezeigt.
 
-    - Exklusive Zeiten stellen die Dauer des Ereignisses ohne die untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert in Klammern angezeigt.
+  - Exklusive Zeiten stellen die Dauer des Ereignisses ohne die untergeordneten Elemente des Ereignisses dar. In der Rasteransicht wird dieser Wert in Klammern angezeigt.
 
 - Erweitern Sie ein Ereignis in der Hierarchie, um untergeordnete Elemente des Ereignisses anzuzeigen. Die untergeordneten Elemente des Ereignisses sind andere Ereignisse, die vom übergeordneten Ereignis ausgelöst werden. Beispielsweise kann ein DOM-Ereignis Ereignislistener enthalten, die als untergeordnete Elemente angezeigt werden. Ein Ereignislistener kann andere Ereignisse enthalten, die sich daraus ergeben, z. B. ein Layoutereignis.
 
@@ -264,12 +264,12 @@ if (performance.mark && performance.measure) {
 
 - Zeigen Sie Details für jedes Ereignis im Detailbereich an (rechter Bereich). Die Eigenschaften variieren je nach Ereignis, wie für diese Beispiele:
 
-    - Für Zeitgeber, Ereignislistener (DOM-Ereignisse) und Animationsframerückrufe stellt die Eigenschaft **Rückruffunktion** einen Link zum Quellcodespeicherort zusammen mit dem Namen des Ereignishandlers oder der Rückruffunktion an.
+  - Für Zeitgeber, Ereignislistener (DOM-Ereignisse) und Animationsframerückrufe stellt die Eigenschaft **Rückruffunktion** einen Link zum Quellcodespeicherort zusammen mit dem Namen des Ereignishandlers oder der Rückruffunktion an.
 
-    - Für Zeitgeber, Ereignislistener (DOM-Ereignisse), Layoutereignisse und Animationsframerückrufe werden eine farbkodierte Zusammenfassung des ausgewählten Ereignisses und alle untergeordneten Elemente im Abschnitt **Zusammenfassung der inklusiven Zeit** (der farbkodierte Ring) angezeigt. Jedes farbcodierte Segment des Bilds stellt einen Ereignistyp dar. QuickInfo geben den Ereignistypnamen an.
+  - Für Zeitgeber, Ereignislistener (DOM-Ereignisse), Layoutereignisse und Animationsframerückrufe werden eine farbkodierte Zusammenfassung des ausgewählten Ereignisses und alle untergeordneten Elemente im Abschnitt **Zusammenfassung der inklusiven Zeit** (der farbkodierte Ring) angezeigt. Jedes farbcodierte Segment des Bilds stellt einen Ereignistyp dar. QuickInfo geben den Ereignistypnamen an.
 
-    > [!TIP]
-    > Das Diagramm mit den Zeitachsendetails und **Zusammenfassung der inklusiven Zeit** können Ihnen dabei helfen, Optimierungsbereiche zu identifizieren. Wenn beide Ansichten viele kleine Aufgaben anzeigen, ist das Ereignis eventuell ein Kandidat für die Optimierung. Beispielsweise kann es sein, dass eine App häufig DOM-Elemente aktualisiert, was zu Layout- und HTML-Analyseereignissen führt. Sie können die Leistung möglicherweise optimieren, indem Sie eine Batchverarbeitung einrichten.
+  > [!TIP]
+  > Das Diagramm mit den Zeitachsendetails und **Zusammenfassung der inklusiven Zeit** können Ihnen dabei helfen, Optimierungsbereiche zu identifizieren. Wenn beide Ansichten viele kleine Aufgaben anzeigen, ist das Ereignis eventuell ein Kandidat für die Optimierung. Beispielsweise kann es sein, dass eine App häufig DOM-Elemente aktualisiert, was zu Layout- und HTML-Analyseereignissen führt. Sie können die Leistung möglicherweise optimieren, indem Sie eine Batchverarbeitung einrichten.
 
 ### <a name="FilterTimelineDetails"></a> Filtern der Zeitachsendetails
  Sie können die Ansicht in den Zeitachsendetails für ein bestimmtes Ereignis filtern. Wählen Sie dazu in dessen Kontextmenü **Für Ereignis filtern** aus. Wenn Sie diese Option auswählen, wird die Zeitachsen- und Rasteransicht auf das ausgewählte Ereignis beschränkt. Auch die Auswahl im CPU-Auslastungsdiagramm wird auf das bestimmte Ereignis beschränkt.

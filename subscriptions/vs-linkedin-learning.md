@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032858"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824796"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements
 
@@ -110,7 +109,7 @@ Antwort:  Nein, das LinkedIn Learning-Angebot ist nur für neue Abonnenten verf�
 
 ## <a name="support-resources"></a>Supportressourcen
 - Benötigen Sie Hilfe bei LinkedIn Learning?  Sehen Sie sich diese Ressourcen an:
-    - Hilfe bei der [Verwendung von LinkedIn Learning](https://www.linkedin.com/help/learning).
-    - Hilfe bei allgemeinen Fragen rund um [LinkedIn](https://www.linkedin.com/help/linkedin), beispielsweise zum Erstellen von Konten und Profilen oder zum Verwalten Ihres Netzwerks.
+  - Hilfe bei der [Verwendung von LinkedIn Learning](https://www.linkedin.com/help/learning).
+  - Hilfe bei allgemeinen Fragen rund um [LinkedIn](https://www.linkedin.com/help/linkedin), beispielsweise zum Erstellen von Konten und Profilen oder zum Verwalten Ihres Netzwerks.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

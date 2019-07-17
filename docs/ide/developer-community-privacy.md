@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978398"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823368"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -64,24 +64,24 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
 - Webdebugger-Protokolldateien, sofern vorhanden:
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Ein Screenshot, sofern dieser einbezogen werden soll
 
 - Aufzeichnungsdaten, sofern eine Aufzeichnung einbezogen werden soll. Diese umfassen:
 
-   - Schritte zum Reproduzieren des Problems
+  - Schritte zum Reproduzieren des Problems
 
-   - ETL-Ablaufverfolgungsdatei
+  - ETL-Ablaufverfolgungsdatei
 
-   - Dumpdatei
+  - Dumpdatei
 
-    > [!NOTE]
-    > Sie können vor dem Senden des Berichts sämtliche Aufzeichnungsdaten löschen, die nicht gesendet werden sollen.
+  > [!NOTE]
+  > Sie können vor dem Senden des Berichts sämtliche Aufzeichnungsdaten löschen, die nicht gesendet werden sollen.
 
 ## <a name="see-also"></a>Siehe auch
 

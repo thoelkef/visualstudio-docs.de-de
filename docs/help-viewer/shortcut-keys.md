@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da8de5c392862c196fa03a69806ffb877af881c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975622"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821961"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tastenkombinationen (Help Viewer)
 
@@ -30,7 +30,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Symbolleiste|**RÜCKTASTE**<br /><br /> -ODER-<br /><br /> **ALT**+**NACH-LINKS-TASTE**|Vorherige Seite anzeigen|
 |Symbolleiste|**ALT**+**NACH-RECHTS-TASTE**|Nächste Seite anzeigen|
 |Symbolleiste|**ALT**+**POS1**|Startseite von **Help Reviewer** anzeigen|
-|Symbolleiste|**STRG**+**S**|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte **„Inhalt“**)|
+|Symbolleiste|**STRG**+**S**|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte **„Inhalt“** )|
 |Symbolleiste|**STRG**+**D**|Fügt das aktuelle Thema den **Favoriten** hinzu.|
 |Symbolleiste|**STRG**+**F**|Zeigt die **Suchleiste** im Themenbereich an, sodass Sie das aktuelle Thema nach Text durchsuchen können.|
 |Symbolleiste|**STRG**+**P**|Druckt die aktuelle Seite|
@@ -59,7 +59,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Thema|**STRG**+**TAB**|Wechselt von links nach rechts zwischen Registerkarten|
 |Thema|**STRG**+**UMSCHALT**+**TAB**|Wechselt von rechts nach links zwischen Registerkarten|
 |Thema|**STRG**+**W**|Schließt die aktuelle Registerkarte|
-|Thema|**STRG**+**_Nummer_**|Wechselt zu einer bestimmten Registerkarte, wobei **_Zahl_** zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|
+|Thema|**STRG**+ **_Nummer_**|Wechselt zu einer bestimmten Registerkarte, wobei **_Zahl_** zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|
 |Thema|**STRG**+**ALT**+**F4**|Schließt andere Inhaltsregisterkarten|
 |Thema|**STRG**+**UMSCHALT**+**Pluszeichen**|Zoomt um 10 % heran|
 |Thema|**STRG**+**Minuszeichen**|Zoomt um 10 % heraus|

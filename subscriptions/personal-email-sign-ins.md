@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/23/2018
 ms.topic: conceptual
 description: Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
-searchscope: VS Subscription
-ms.openlocfilehash: 0ba4029fcec0c8d35a58def14ab38afbb79e2fee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acba6b5c1b5efac80590d02e3c813650962b4892
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539455"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250724"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
 

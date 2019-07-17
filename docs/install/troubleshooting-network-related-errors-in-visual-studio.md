@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 27364bd028d9fb493da354d3bff7f11efe5f459d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976229"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825706"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 
@@ -38,15 +38,15 @@ Dieser Fehler tritt normalerweise auf, wenn Benutzer über einen Proxyserver mit
 
 - Wenn das Problem durch einen Neustart von Visual Studio nicht behoben wird, liegt dies möglicherweise daran, dass Ihr Proxyserver keine Anmeldeinformationen für Adressen von Typ „http:&#47;&#47;go.microsoft.com“, sondern für Adressen vom Typ „&#42;.visualStudio.microsoftcom“ erwartet. Für diese Server müssen Sie die folgenden URLs möglicherweise einer Zulassungsliste hinzufügen, um die Blockierung aller Anmeldeszenarien in Visual Studio aufzuheben:
 
-    - &#42;.windows.net
+  - &#42;.windows.net
 
-    - &#42;.microsoftonline.com
+  - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.microsoft.com
+  - &#42;.visualstudio.microsoft.com
 
-    - &#42;.microsoft.com
+  - &#42;.microsoft.com
 
-    - &#42;.live.com
+  - &#42;.live.com
 
 - Sie können die Adresse „http:&#47;&#47;go.microsoft.com“ andernfalls aus der Zulassungsliste entfernen, damit das Dialogfeld „Proxyauthentifizierung“ beim Neustart von Visual Studio sowohl für die Adresse „http:&#47;&#47;go.microsoft.com“ als auch die Serverendpunkte angezeigt wird.
 

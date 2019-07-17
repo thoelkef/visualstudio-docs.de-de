@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569679"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825903"
 ---
 # <a name="compare-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.
@@ -93,15 +93,15 @@ Das stimmt allerdings nicht ganz. Wenn eine Eigenschaft, eine Elementdefinition 
 
 - Während der Auswertungsphase eines Builds:
 
-    - Eigenschaften werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt. Eigenschaftswerte der Form $(PropertyName) werden in Ausdrücken erweitert. Der Eigenschaftswert wird auf den erweiterten Ausdruck gesetzt.
+  - Eigenschaften werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt. Eigenschaftswerte der Form $(PropertyName) werden in Ausdrücken erweitert. Der Eigenschaftswert wird auf den erweiterten Ausdruck gesetzt.
 
-    - Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen wurden bereits in Ausdrücken erweitert. Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.
+  - Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen wurden bereits in Ausdrücken erweitert. Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.
 
-    - Elementtypen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Elementwerte in der Form @(Elementtyp) werden erweitert. Elementtransformationen werden ebenfalls erweitert. Eigenschaftenfunktionen und -werte wurden bereits in Ausdrücken erweitert. Die Elementliste und die Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.
+  - Elementtypen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Elementwerte in der Form @(Elementtyp) werden erweitert. Elementtransformationen werden ebenfalls erweitert. Eigenschaftenfunktionen und -werte wurden bereits in Ausdrücken erweitert. Die Elementliste und die Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.
 
 - Während der Auswertungsphase eines Builds:
 
-    - Eigenschaften und Elemente, die in Zielen definiert sind, werden zusammen in der Reihenfolge ausgewertet, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt, und Eigenschaftswerte werden in Ausdrücken erweitert. Elementwerte und Elementtransformationen werden ebenfalls erweitert. Die Eigenschaftswerte, Elementtypwerte und Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.
+  - Eigenschaften und Elemente, die in Zielen definiert sind, werden zusammen in der Reihenfolge ausgewertet, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt, und Eigenschaftswerte werden in Ausdrücken erweitert. Elementwerte und Elementtransformationen werden ebenfalls erweitert. Die Eigenschaftswerte, Elementtypwerte und Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Geringfügige Auswirkungen der Auswertungsreihenfolge
 In der Auswertungsphase eines Builds erfolgt die Auswertung von Eigenschaften vor der Auswertung von Elementen. Trotzdem können Eigenschaften Werte besitzen, die scheinbar von Elementwerten abhängen. Sehen Sie sich das folgende Skript an.

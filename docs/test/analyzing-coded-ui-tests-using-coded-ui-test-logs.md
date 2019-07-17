@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432310"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824483"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 
@@ -42,15 +42,15 @@ Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des P
 
 - Wenn eine *App.config*-Datei in Ihrem Testprojekt vorhanden ist, gehen Sie folgendermaßen vor:
 
-    - Öffnen Sie die Datei *App.config* im Projekt, und fügen Sie den folgenden Code unter dem Konfigurationsknoten hinzu:
+  - Öffnen Sie die Datei *App.config* im Projekt, und fügen Sie den folgenden Code unter dem Konfigurationsknoten hinzu:
 
-      ```xml
-      <system.diagnostics>
-        <switches>
-          <add name="EqtTraceLevel" value="4" />
-        </switches>
-      </system.diagnostics>`
-      ```
+    ```xml
+    <system.diagnostics>
+      <switches>
+        <add name="EqtTraceLevel" value="4" />
+      </switches>
+    </system.diagnostics>`
+    ```
 
 - Die Anmeldung aus dem Testcode selbst aktivieren:
 

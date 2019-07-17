@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810530"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250738"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 
@@ -43,7 +42,7 @@ Antwort: Sie können am einfachsten feststellen, ob Sie über die erforderlichen
 Sie müssen ein Azure-Abonnement (also ein Rechnungskonto) aus der angezeigten Liste der Azure-Abonnements auswählen, die derzeit mit Ihrem Konto verknüpft sind.
 Da der Name des Azure-Abonnements standardmäßig der Art des Rechnungskontos (Nutzungsbasierte Bezahlung, Enterprise Agreement usw.) entspricht, ist oft eindeutig, ob das Azure-Abonnement Teil von Enterprise Agreement ist.
 
-Ein weiterer Ansatz besteht darin, das [Azure Enterprise Portal](http://ea.azure.com) zu besuchen.  Wenn Sie dieses erfolgreich aufrufen können, besitzen Sie entweder die Rolle „Unternehmensadministrator“ oder „Kontobesitzer“. Nur Kontobesitzer können neue Azure-Rechnungskonten in Enterprise Agreement einrichten. Wenn Sie auf das Azure Enterprise Portal nicht zugreifen können, finden Sie heraus, wer der Unternehmensadministrator Ihrer Organisation ist. Bitten Sie diese Person anschließend darum, Sie als Kontobesitzer im Azure Enterprise Portal hinzuzufügen.  Wenn Sie diese Person nicht finden können, können Sie ein [Supportticket übermitteln](https://aka.ms/AzureEntSupport) und die Kontaktinformationen anfordern.  Sie benötigen den Namen Ihrer Organisation und Ihre Enterprise Agreement-Registrierungsnummer für das Supportticket.
+Ein weiterer Ansatz besteht darin, das [Azure Enterprise Portal](https://ea.azure.com) zu besuchen.  Wenn Sie dieses erfolgreich aufrufen können, besitzen Sie entweder die Rolle „Unternehmensadministrator“ oder „Kontobesitzer“. Nur Kontobesitzer können neue Azure-Rechnungskonten in Enterprise Agreement einrichten. Wenn Sie auf das Azure Enterprise Portal nicht zugreifen können, finden Sie heraus, wer der Unternehmensadministrator Ihrer Organisation ist. Bitten Sie diese Person anschließend darum, Sie als Kontobesitzer im Azure Enterprise Portal hinzuzufügen.  Wenn Sie diese Person nicht finden können, können Sie ein [Supportticket übermitteln](https://aka.ms/AzureEntSupport) und die Kontaktinformationen anfordern.  Sie benötigen den Namen Ihrer Organisation und Ihre Enterprise Agreement-Registrierungsnummer für das Supportticket.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Frage: Kann ich Azure-Zahlungsverpflichtungen von meinem Enterprise Agreement verwenden, um Visual Studio-Cloudabonnements zu kaufen?
 

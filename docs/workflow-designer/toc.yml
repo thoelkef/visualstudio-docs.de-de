@@ -1,202 +1,200 @@
 - name: Entwickeln von Apps mit dem Workflow-Designer
+  href: developing-applications-with-the-workflow-designer.md
+- name: Workflowprojekte
   items:
-    - name: Übersicht und Voraussetzungen
-      href: developing-applications-with-the-workflow-designer.md
-    - name: Workflowprojekte
+    - name: Erstellen eines Workflowprojekts
+      href: creating-a-workflow-project.md
+    - name: Hinzufügen eines neuen Elements zu einem Workflowprojekt
+      href: how-to-add-a-new-item-to-a-workflow-project.md
+- name: Hinzufügen von Aktivitäten zur Toolbox
+  href: how-to-add-activities-to-the-toolbox.md
+- name: Verwenden des Argument-Designers
+  href: how-to-use-the-argument-designer.md
+- name: Verwenden des Variablen-Designers
+  href: how-to-use-the-variable-designer.md
+- name: Verwenden des Ausdrucks-Editors
+  href: how-to-use-the-expression-editor.md
+- name: Verwenden des Imports-Designers
+  href: how-to-use-the-imports-designer.md
+- name: Verwenden der Brotkrümelnavigation
+  href: how-to-use-breadcrumb-navigation.md
+- name: Verwenden der Suche
+  href: how-to-use-search-in-the-workflow-designer.md
+- name: Definieren und Nutzen von Aktivitätsdelegaten
+  href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+- name: Hinzufügen von Kommentaren zu einem Workflow
+  href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+- name: Aktivitätsdesigner
+  items:
+    - name: Aktivitäts-Designer für die Ablaufsteuerung
       items:
-        - name: Erstellen eines Workflowprojekts
-          href: creating-a-workflow-project.md
-        - name: Hinzufügen eines neuen Elements zu einem Workflowprojekt
-          href: how-to-add-a-new-item-to-a-workflow-project.md
-    - name: Hinzufügen von Aktivitäten zur Toolbox
-      href: how-to-add-activities-to-the-toolbox.md
-    - name: Verwenden des Argument-Designers
-      href: how-to-use-the-argument-designer.md
-    - name: Verwenden des Variablen-Designers
-      href: how-to-use-the-variable-designer.md
-    - name: Verwenden des Ausdrucks-Editors
-      href: how-to-use-the-expression-editor.md
-    - name: Verwenden des Imports-Designers
-      href: how-to-use-the-imports-designer.md
-    - name: Verwenden der Brotkrümelnavigation
-      href: how-to-use-breadcrumb-navigation.md
-    - name: Verwenden der Suche im Workflow-Designer
-      href: how-to-use-search-in-the-workflow-designer.md
-    - name: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
-      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-    - name: Hinzufügen von Kommentaren zu einem Workflow im Workflow-Designer
-      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: Aktivitätsdesigner
+        - name: Übersicht und Referenz
+          displayName: Control flow activity designers
+          href: control-flow-activity-designers.md
+        - name: DoWhile-Aktivitätsdesigner
+          href: dowhile-activity-designer.md
+        - name: ForEach<T>-Aktivitätsdesigner
+          href: foreach-t-activity-designer.md
+        - name: If-Aktivitätsdesigner
+          href: if-activity-designer.md
+        - name: Parallel-Aktivitätsdesigner
+          href: parallel-activity-designer.md
+        - name: ParallelForEach<T>-Aktivitätsdesigner
+          href: parallelforeach-t-activity-designer.md
+        - name: Pick-Aktivitätsdesigner
+          href: pick-activity-designer.md
+        - name: PickBranch-Aktivitätsdesigner
+          href: pickbranch-activity-designer.md
+        - name: Sequence-Aktivitätsdesigner
+          href: sequence-activity-designer.md
+        - name: Switch<T>-Aktivitätsdesigner
+          href: switch-t-activity-designer.md
+        - name: While-Aktivitätsdesigner
+          href: while-activity-designer.md
+    - name: Aktivitäts-Designer für Flussdiagramme
       items:
-        - name: Ablaufsteuerungsaktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Control flow activity designers
-              href: control-flow-activity-designers.md
-            - name: DoWhile-Aktivitätsdesigner
-              href: dowhile-activity-designer.md
-            - name: ForEach<T>-Aktivitätsdesigner
-              href: foreach-t-activity-designer.md
-            - name: If-Aktivitätsdesigner
-              href: if-activity-designer.md
-            - name: Parallel-Aktivitätsdesigner
-              href: parallel-activity-designer.md
-            - name: ParallelForEach<T>-Aktivitätsdesigner
-              href: parallelforeach-t-activity-designer.md
-            - name: Pick-Aktivitätsdesigner
-              href: pick-activity-designer.md
-            - name: PickBranch-Aktivitätsdesigner
-              href: pickbranch-activity-designer.md
-            - name: Sequence-Aktivitätsdesigner
-              href: sequence-activity-designer.md
-            - name: Switch<T>-Aktivitätsdesigner
-              href: switch-t-activity-designer.md
-            - name: While-Aktivitätsdesigner
-              href: while-activity-designer.md
+        - name: Übersicht und Referenz
+          displayName: Flow chart activity designers
+          href: flowchart-activity-designers.md
         - name: Flussdiagramm-Aktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Flow chart activity designers
-              href: flowchart-activity-designers.md
-            - name: Flussdiagramm-Aktivitätsdesigner
-              href: flowchart-activity-designer.md
-            - name: FlowDecision-Aktivitätsdesigner
-              href: flowdecision-activity-designer.md
-            - name: FlowSwitch<T>-Aktivitätsdesigner
-              href: flowswitch-t-activity-designer.md
-        - name: Zustandsautomatenaktivitäts-Designer
-          items:
-            - name: Übersicht und Referenz
-              displayName: State machine activity designers
-              href: state-machine-activity-designers.md
-            - name: StateMachine-Aktivitäts-Designer
-              href: statemachine-activity-designer.md
-            - name: Zustandsaktivitäts-Designer
-              href: state-activity-designer.md
-            - name: FinalState-Aktivitäts-Designer
-              href: finalstate-activity-designer.md
-            - name: Übergangsaktivitäts-Designer
-              href: transition-activity-designer.md
-        - name: Messaging-Aktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Messaging activity designers
-              href: messaging-activity-designers.md
-            - name: CorrelationScope-Aktivitätsdesigner
-              href: correlationscope-activity-designer.md
-            - name: InitializeCorrelation-Aktivitätsdesigner
-              href: initializecorrelation-activity-designer.md
-            - name: Receive-Aktivitätsdesigner
-              href: receive-activity-designer.md
-            - name: ReceiveAndSendReply-Vorlagendesigner
-              href: receiveandsendreply-template-designer.md
-            - name: Send-Aktivitätsdesigner
-              href: send-activity-designer.md
-            - name: SendAndReceiveReply-Vorlagendesigner
-              href: sendandreceivereply-template-designer.md
-            - name: TransactedReceiveScope-Aktivitätsdesigner
-              href: transactedreceivescope-activity-designer.md
-        - name: Laufzeit-Aktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Run-time activity designers
-              href: runtime-activity-designers.md
-            - name: Persist-Aktivitätsdesigners
-              href: persist-activity-designer.md
-            - name: TerminateWorkflow-Aktivitätsdesigner
-              href: terminateworkflow-activity-designer.md
-        - name: Primitive Aktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Primitives activity designers
-              href: primitives-activity-designers.md
-            - name: Assign-Aktivitätsdesigner
-              href: assign-activity-designer.md
-            - name: Delay-Aktivitätsdesigner
-              href: delay-activity-designer.md
-            - name: InvokeDelegate
-              href: invokedelegate.md
-            - name: InvokeMethod-Aktivitätsdesigner
-              href: invokemethod-activity-designer.md
-            - name: WriteLine-Aktivitätsdesigner
-              href: writeline-activity-designer.md
-        - name: Transaktionsaktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Transaction activity designers
-              href: transaction-activity-designers.md
-            - name: CancellationScope-Aktivitätsdesigner
-              href: cancellationscope-activity-designer.md
-            - name: CompensableActivity-Aktivitätsdesigner
-              href: compensableactivity-activity-designer.md
-            - name: Compensate-Aktivitätsdesigner
-              href: compensate-activity-designer.md
-            - name: Confirm-Aktivitätsdesigner
-              href: confirm-activity-designer.md
-            - name: TransactionScope-Aktivitätsdesigner
-              href: transactionscope-activity-designer.md
-        - name: Auflistungsaktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Collection activity designers
-              href: collection-activity-designers.md
-            - name: AddToCollection<T>-Aktivitätsdesigner
-              href: addtocollection-t-activity-designer.md
-            - name: ClearCollection<T>-Aktivitätsdesigner
-              href: clearcollection-t-activity-designer.md
-            - name: ExistsInCollection<T>-Aktivitätsdesigner
-              href: existsincollection-t-activity-designer.md
-            - name: RemoveFromCollection<T>-Aktivitätsdesigner
-              href: removefromcollection-t-activity-designer.md
-        - name: Fehlerbehandlungsaktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Error handling activity designers
-              href: error-handling-activity-designers.md
-            - name: Rethrow-Aktivitätsdesigner
-              href: rethrow-activity-designer.md
-            - name: Throw-Aktivitätsdesigner
-              href: throw-activity-designer.md
-            - name: TryCatch-Aktivitätsdesigner
-              href: trycatch-activity-designer.md
-        - name: Migrationsaktivitätsdesigner
-          items:
-            - name: Übersicht und Referenz
-              displayName: Migration activity designers
-              href: migration-activity-designers.md
-            - name: Interop-Aktivitätsdesigner
-              href: interop-activity-designer.md
-    - name: Debug
+          href: flowchart-activity-designer.md
+        - name: FlowDecision-Aktivitätsdesigner
+          href: flowdecision-activity-designer.md
+        - name: FlowSwitch<T>-Aktivitätsdesigner
+          href: flowswitch-t-activity-designer.md
+    - name: Aktivitäts-Designer für Zustandsautomaten
       items:
-        - name: Debuggen von Workflows
-          href: debugging-workflows-with-the-workflow-designer.md
-        - name: Festlegen von Haltepunkten in Workflows
-          href: how-to-set-breakpoints-in-workflows.md
-        - name: Debuggen von XAML mit dem Workflow-Designer
-          href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: Nicht unterstützte Debugszenarios
-          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: Benutzeroberflächenreferenz
+        - name: Übersicht und Referenz
+          displayName: State machine activity designers
+          href: state-machine-activity-designers.md
+        - name: StateMachine-Aktivitäts-Designer
+          href: statemachine-activity-designer.md
+        - name: Zustandsaktivitäts-Designer
+          href: state-activity-designer.md
+        - name: FinalState-Aktivitäts-Designer
+          href: finalstate-activity-designer.md
+        - name: Übergangsaktivitäts-Designer
+          href: transition-activity-designer.md
+    - name: Aktivitäts-Designer für Messaging
       items:
-        - name: Dialogfeld '.NET-Typ suchen und auswählen'
-          href: browse-and-select-a-dotnet-type-dialog-box.md
-        - name: CorrelatesOn-Definition (Dialogfeld)
-          href: correlateson-definition-dialog-box.md
-        - name: CorrelationInitializers hinzufügen (Dialogfeld)
-          href: add-correlationinitializers-dialog-box.md
-        - name: Dialogfelder Parameter hinzufügen und Argumente hinzufügen
-          href: add-parameters-and-add-arguments-dialog-boxes.md
-        - name: Typauflistungs-Editor (Dialogfeld)
-          href: type-collection-editor-dialog-box.md
-        - name: Inhaltsdefinition (Dialogfeld)
-          href: content-definition-dialog-box.md
-        - name: Korrelation initialisieren (Dialogfeld)
-          href: initialize-correlation-dialog-box.md
-        - name: 'System.Activities (Registerkarte), Toolboxelemente auswählen (Dialogfeld)'
-          href: system-activities-tab-choose-toolbox-items-dialog-box.md
-        - name: Workflow-Designer-Shellfunktionen
-          href: workflow-designer-shell-features.md
-        - name: Tastenkombinationen
-          href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: Fehlermeldungen
-          href: error-messages-in-workflow-designer.md
+        - name: Übersicht und Referenz
+          displayName: Messaging activity designers
+          href: messaging-activity-designers.md
+        - name: CorrelationScope-Aktivitätsdesigner
+          href: correlationscope-activity-designer.md
+        - name: InitializeCorrelation-Aktivitätsdesigner
+          href: initializecorrelation-activity-designer.md
+        - name: Receive-Aktivitätsdesigner
+          href: receive-activity-designer.md
+        - name: ReceiveAndSendReply-Vorlagendesigner
+          href: receiveandsendreply-template-designer.md
+        - name: Send-Aktivitätsdesigner
+          href: send-activity-designer.md
+        - name: SendAndReceiveReply-Vorlagendesigner
+          href: sendandreceivereply-template-designer.md
+        - name: TransactedReceiveScope-Aktivitätsdesigner
+          href: transactedreceivescope-activity-designer.md
+    - name: Aktivitäts-Designer für die Runtime
+      items:
+        - name: Übersicht und Referenz
+          displayName: Run-time activity designers
+          href: runtime-activity-designers.md
+        - name: Persist-Aktivitätsdesigners
+          href: persist-activity-designer.md
+        - name: TerminateWorkflow-Aktivitätsdesigner
+          href: terminateworkflow-activity-designer.md
+    - name: Aktivitäts-Designer für Primitive
+      items:
+        - name: Übersicht und Referenz
+          displayName: Primitives activity designers
+          href: primitives-activity-designers.md
+        - name: Assign-Aktivitätsdesigner
+          href: assign-activity-designer.md
+        - name: Delay-Aktivitätsdesigner
+          href: delay-activity-designer.md
+        - name: InvokeDelegate
+          href: invokedelegate.md
+        - name: InvokeMethod-Aktivitätsdesigner
+          href: invokemethod-activity-designer.md
+        - name: WriteLine-Aktivitätsdesigner
+          href: writeline-activity-designer.md
+    - name: Aktivitäts-Designer für Transaktionen
+      items:
+        - name: Übersicht und Referenz
+          displayName: Transaction activity designers
+          href: transaction-activity-designers.md
+        - name: CancellationScope-Aktivitätsdesigner
+          href: cancellationscope-activity-designer.md
+        - name: CompensableActivity-Aktivitätsdesigner
+          href: compensableactivity-activity-designer.md
+        - name: Compensate-Aktivitätsdesigner
+          href: compensate-activity-designer.md
+        - name: Confirm-Aktivitätsdesigner
+          href: confirm-activity-designer.md
+        - name: TransactionScope-Aktivitätsdesigner
+          href: transactionscope-activity-designer.md
+    - name: Aktivitäts-Designer für Sammlungen
+      items:
+        - name: Übersicht und Referenz
+          displayName: Collection activity designers
+          href: collection-activity-designers.md
+        - name: AddToCollection<T>-Aktivitätsdesigner
+          href: addtocollection-t-activity-designer.md
+        - name: ClearCollection<T>-Aktivitätsdesigner
+          href: clearcollection-t-activity-designer.md
+        - name: ExistsInCollection<T>-Aktivitätsdesigner
+          href: existsincollection-t-activity-designer.md
+        - name: RemoveFromCollection<T>-Aktivitätsdesigner
+          href: removefromcollection-t-activity-designer.md
+    - name: Aktivitäts-Designer für die Fehlerbehandlung
+      items:
+        - name: Übersicht und Referenz
+          displayName: Error handling activity designers
+          href: error-handling-activity-designers.md
+        - name: Rethrow-Aktivitätsdesigner
+          href: rethrow-activity-designer.md
+        - name: Throw-Aktivitätsdesigner
+          href: throw-activity-designer.md
+        - name: TryCatch-Aktivitätsdesigner
+          href: trycatch-activity-designer.md
+    - name: Aktivitäts-Designer für Migrationen
+      items:
+        - name: Übersicht und Referenz
+          displayName: Migration activity designers
+          href: migration-activity-designers.md
+        - name: Interop-Aktivitätsdesigner
+          href: interop-activity-designer.md
+- name: Debug
+  items:
+    - name: Debuggen von Workflows
+      href: debugging-workflows-with-the-workflow-designer.md
+    - name: Festlegen von Haltepunkten in Workflows
+      href: how-to-set-breakpoints-in-workflows.md
+    - name: Debuggen von XAML mit dem Workflow-Designer
+      href: how-to-debug-xaml-with-the-workflow-designer.md
+    - name: Nicht unterstützte Debugszenarios
+      href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+- name: Benutzeroberflächenreferenz
+  items:
+    - name: Dialogfeld '.NET-Typ suchen und auswählen'
+      href: browse-and-select-a-dotnet-type-dialog-box.md
+    - name: CorrelatesOn-Definition (Dialogfeld)
+      href: correlateson-definition-dialog-box.md
+    - name: CorrelationInitializers hinzufügen (Dialogfeld)
+      href: add-correlationinitializers-dialog-box.md
+    - name: Dialogfelder Parameter hinzufügen und Argumente hinzufügen
+      href: add-parameters-and-add-arguments-dialog-boxes.md
+    - name: Typauflistungs-Editor (Dialogfeld)
+      href: type-collection-editor-dialog-box.md
+    - name: Inhaltsdefinition (Dialogfeld)
+      href: content-definition-dialog-box.md
+    - name: Korrelation initialisieren (Dialogfeld)
+      href: initialize-correlation-dialog-box.md
+    - name: 'System.Activities (Registerkarte), Toolboxelemente auswählen (Dialogfeld)'
+      href: system-activities-tab-choose-toolbox-items-dialog-box.md
+    - name: Workflow-Designer-Shellfunktionen
+      href: workflow-designer-shell-features.md
+    - name: Tastenkombinationen
+      href: keyboard-shortcuts-in-the-workflow-designer.md
+    - name: Fehlermeldungen
+      href: error-messages-in-workflow-designer.md

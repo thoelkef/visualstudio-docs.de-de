@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über den CloudPilot-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032577"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825915"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Der CloudPilot-Vorteil in Visual Studio-Abonnements
 
@@ -76,9 +75,9 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="support-resources"></a>Supportressourcen
 - Benötigen Sie Hilfe bei der Verwendung von CloudPilot?  Sehen Sie sich diese Ressourcen an:
-    - [Wenden Sie sich an UnifyCloud](https://www.unifycloud.com/contacts/), wenn Sie Fragen zu UnifyCloud-Produkten haben.
-    - [CloudPilot-Benutzerhandbuch](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
+  - [Wenden Sie sich an UnifyCloud](https://www.unifycloud.com/contacts/), wenn Sie Fragen zu UnifyCloud-Produkten haben.
+  - [CloudPilot-Benutzerhandbuch](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
 
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

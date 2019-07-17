@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: 8e29f5d13c9869995aad0b7a6793304b677d54ba
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032163"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825349"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -82,8 +81,8 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="support-resources"></a>Supportressourcen
 - Benötigen Sie Hilfe bei der Verwendung von DataCamp?  Sehen Sie sich diese Ressourcen an:
-    - [DataCamp Community](https://www.datacamp.com/community/tutorials) mit Foren und Tutorials.
-    - Im [DataCamp-Hilfecenter](https://support.datacamp.com/hc) können Sie Hilfethemen durchsuchen und sich Fragen anderer Benutzer ansehen.
-    - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
+  - [DataCamp Community](https://www.datacamp.com/community/tutorials) mit Foren und Tutorials.
+  - Im [DataCamp-Hilfecenter](https://support.datacamp.com/hc) können Sie Hilfethemen durchsuchen und sich Fragen anderer Benutzer ansehen.
+  - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
