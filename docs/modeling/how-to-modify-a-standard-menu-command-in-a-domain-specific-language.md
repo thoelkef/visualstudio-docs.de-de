@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263699"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890593"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Vorgehensweise: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 
@@ -55,7 +55,7 @@ Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten K
 
 2. In **DslPackage**, erstellen Sie einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs`.
 
-3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
+3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Beispiel:
 
     ```csharp
     using System;
@@ -65,7 +65,8 @@ Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten K
     { internal partial class Language1CommandSet { ...
     ```
 
-     **Beachten Sie** , wenn Sie die klassendateivorlage verwendet, um die neue Datei erstellen, müssen Sie korrigieren, sowohl den Namespace und den Namen der Klasse.
+    > [!NOTE]
+    > Wenn Sie die klassendateivorlage verwendet, um die neue Datei erstellen, müssen Sie sowohl den Namespace und den Klassennamen korrigieren.
 
 ## <a name="override-the-command-methods"></a>Überschreiben der Befehlsmethoden
 
@@ -128,7 +129,7 @@ Wenn der Code Änderungen am Speicher vornimmt, wie Erstellen, Löschen oder Akt
 
 Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:
 
-- `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
+- `this.CurrentSelection` Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
 
 - `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
 

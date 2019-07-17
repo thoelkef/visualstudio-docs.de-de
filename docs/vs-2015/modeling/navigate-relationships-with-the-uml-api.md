@@ -12,16 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158969"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navigieren in Beziehungen mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein Modell besteht aus Elementen, die über unterschiedliche Beziehungen miteinander verknüpft sind.  In diesem Thema wird beschrieben, wie Sie im Programmcode im Modell navigieren.  
+Ein Modell besteht aus Elementen, die über unterschiedliche Beziehungen miteinander verknüpft sind. In diesem Thema wird beschrieben, wie Sie im Programmcode im Modell navigieren.  
   
 ## <a name="traversing-relationships"></a>Durchlaufen von Beziehungen  
   
@@ -154,7 +154,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ## <a name="enumerating-relationships"></a>Auflisten von Beziehungen  
  Alle Eigenschaften des UML-Modell, die mehrere Werte zurückgeben entsprechen der IEnumerable < >-Schnittstelle. Dies bedeutet, dass Sie verwenden können, [Linq-Abfrageausdrücke](http://go.microsoft.com/fwlink/?LinkId=168834) und den Erweiterungsmethoden, die definiert, der **"System.Linq"** Namespace.  
   
- Zum Beispiel:  
+ Beispiel:  
   
 ```  
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()  
