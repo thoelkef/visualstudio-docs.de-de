@@ -260,11 +260,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 91dcea4d9d16a6e846a66e4a5590dedfdc62b90f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201466"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Codeanalysewarnungen für verwalteten Code nach CheckId
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -328,7 +328,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 |CA1055|[CA1055: URI-Rückgabewerte sollten keine Zeichenfolgen sein](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Diese Regel geht davon aus, dass die Methode einen URI zurückgibt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die System.Uri-Klasse stellt diese Dienste auf sichere Weise bereit.|  
 |CA1056|[CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Diese Regel geht davon aus, dass die Eigenschaft einen URI (Uniform Resource Identifier) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die System.Uri-Klasse stellt diese Dienste auf sichere Weise bereit.|  
 |CA1057|[CA1057: URI-Überladungen der Zeichenfolge aufrufen System.Uri-Überladungen](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Ein Typ deklariert Methodenüberladungen, die sich nur durch die Ersetzung eines Zeichenfolgenparameters mit einem System.Uri-Parameter unterscheiden. Die Überladung, die den Zeichenfolgenparameter akzeptiert, ruft nicht die Überladung auf, die den URI-Parameter akzeptiert.|  
-|CA1058|[CA1058: Typen sollten bestimmte Basistypen nicht erweitern.](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Verwenden Sie eine der Alternativen.|  
+|CA1058|[CA1058: Typen sollten bestimmte Basistypen nicht erweitern](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Verwenden Sie eine der Alternativen.|  
 |CA1059|[CA1059: Member sollten bestimmte konkreten Typen nicht verfügbar machen](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|Ein konkreter Typ ist ein Typ, der eine vollständige Implementierung aufweist und deshalb instanziiert werden kann. Damit der Member universell verwendet werden kann, ersetzen Sie den konkreten Typ durch die vorgeschlagene Schnittstelle.|  
 |CA1060|[CA1060: Verschieben von P/Invokes in NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Plattformaufrufmethoden, beispielsweise Methoden, die mit dem System.Runtime.InteropServices.DllImportAttribute-Attribut gekennzeichnet sind, oder Methoden, die in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mithilfe des Declare-Schlüsselworts definiert wurden, greifen auf nicht verwalteten Code zu. Diese Methoden sollten der Klasse NativeMethods, SafeNativeMethods oder UnsafeNativeMethods angehören.|  
 |CA1061|[CA1061: Basisklassenmethoden nicht ausblenden](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Eine Methode in einem Basistyp wird durch eine Methode mit identischem Namen in einem abgeleiteten Typ verdeckt, wenn die Parametersignatur der abgeleiteten Methode sich nur hinsichtlich der Typen unterscheidet, die schwächer abgeleitet sind als die entsprechenden Typen in der Parametersignatur der Basismethode.|  

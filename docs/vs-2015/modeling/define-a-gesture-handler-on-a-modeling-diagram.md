@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3da0988316f54b75cb8076b1f242280a71d9a624
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825928"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890487"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -296,7 +296,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
       IElement target = targetIShape.Element;  
       ```  
 
-        You can cast this to a more specific type of element.  
+      Sie können das Element in einen spezifischeren Typ von Element umwandeln.  
 
   - Abrufen des UML-Modellspeichers, der das UML-Modell enthält:  
 
@@ -379,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. Sie haben die Möglichkeit, die Erweiterung zu entfernen, indem Sie die Datei aus dem folgenden Ordner löschen:  
   
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[Version] \Extensions**  
   
 ## <a name="DragExample"></a> Beispiel  
  Im folgenden Beispiel wird gezeigt, wie basierend auf den Teilen und Anschlüssen einer aus einem Komponentendiagramm gezogenen Komponente Lebenslinien in einem Sequenzdiagramm erstellt werden.  
