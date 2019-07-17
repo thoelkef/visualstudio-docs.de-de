@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824332"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891042"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Formatierung (Skalierung/in Fettdruck zu setzen)-Referenz
  Einige Dialogfelder erfordern bestimmte Text fett formatiert wird, oder eine andere Größe als die Umgebungsschriftart verwendet. Zuvor, Schriftarten, die größer als die Umgebungsschriftart programmiert wurde, als "`environment font +2`" oder ähnlich. Verwenden die bereitgestellten Codeausschnitte werden hohe DPI-Monitore unterstützen und sicherstellen, dass es sich bei Anzeigetext immer an die richtige Größe und Gewicht (z. B. "Light" oder "semilight als") angezeigt wird.
 
-> **Hinweis: Bevor Sie die Formatierung anwenden, stellen Sie sicher Sie folgen den Anleitungen unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Bevor Sie die Formatierung anwenden, stellen Sie sicher Sie folgen den Anleitungen unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). **
 
  Um die Umgebungsschriftart skalieren zu können, legen Sie den Stil der TextBlock oder Label wie angegeben. Jede diese Codeausschnitte, die ordnungsgemäß verwendet wird, wird die richtige Schriftart, einschließlich der entsprechenden Größe und Gewicht Variationen generiert.
 
@@ -345,7 +346,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Alle Pronomen|Einschließlich der Hauptwortgruppe "Die" ebenfalls unverändert"," ein Zusammenschluss der das Pronomen "it" und das Verb "is"|
 |Vor- und Nachnamen Wörter, unabhängig von Wortarten||
 |Präpositionen, die Teil eines Ausdrucks verb|"Wird geschlossen, alle Windows" oder "Das System herunterzufahren"|
-|Alle Buchstaben der Abkürzung|HTML, XML, URL, IDE, RGB|
+|Alle Buchstaben der Abkürzung|HTML-"," XML "," URL "," IDE "," RGB|
 |Die zweite Begriff im ein zusammengesetztes Wort angezeigt, wenn es sich um ein Nomen oder Adjektiv, das richtige ist, oder wenn die Wörter die gleiche Gewichtung haben|Querverweis, vor der Microsoft-Software-Lese-/Schreibzugriff, Laufzeit|
 
 |Kleinbuchstaben|Beispiele|
@@ -482,5 +483,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ## <a name="see-also"></a>Siehe auch
 
-- [MSDN: Fonts (Windows)](/windows/desktop/uxguide/vis-fonts)
+- [MSDN: Schriftarten (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [MSDN: Text der Benutzeroberfläche (Windows)](/windows/desktop/uxguide/text-ui)

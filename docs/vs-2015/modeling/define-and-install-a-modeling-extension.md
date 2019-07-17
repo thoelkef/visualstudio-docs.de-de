@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181912"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
         |-|-|  
         |**Typ** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Source** =|**Ein Projekt in der aktuellen Projektmappe**|  
-        |**Project** =|*Ihr Klassenbibliotheksprojekt*|  
+        |**Projekt** =|*Ihr Klassenbibliotheksprojekt*|  
         |**Betten in diesen Ordner ein** =|*(leer)*|  
   
          Informationen zu anderen Komponententypen finden Sie unter den Links im nächsten Abschnitt.  
@@ -138,7 +138,7 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, durch das Löschen der Datei von folgendem Speicherort, in denen *%LocalAppData%* ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local:  
   
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[Version] \Extensions**  
   
 ## <a name="see-also"></a>Siehe auch  
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md)   

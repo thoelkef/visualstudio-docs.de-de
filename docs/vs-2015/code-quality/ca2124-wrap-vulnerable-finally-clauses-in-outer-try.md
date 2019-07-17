@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 755cce18afcad3fde621fb5a960cc780906afe51
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de2bd0bfbf60ef717e00daaa668475cb43a9d35c
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385994"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890936"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63385994"
  Diese Regel sucht `try` / `finally` , freigegebene Blöcke in Code, Versionen 1.0 und 1.1 des als Ziel, der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , die möglicherweise anfällig für böswillige Ausnahmefilter in der Aufrufliste. Wenn sensibler Vorgänge wie z. B. Identitätswechsel im Try-Block ausgeführt und eine Ausnahme ausgelöst wird, kann der Filter vor dem Ausführen der `finally` Block. Das Impersonation-Beispiel bedeutet dies, dass der Filter dem imitierten Benutzer ausgeführt wird. Filter sind nur in Visual Basic momentan implementierbar.
 
 > [!WARNING]
-> **Hinweis** In Version 2.0 oder höher, der die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], schützt, die Laufzeit automatisch eine `try` / `catch` /  `finally` böswillige Ausnahmefilter, verhindern, wenn der zurückgesetzt wird, direkt innerhalb der Methode enthält, die den Ausnahmeblock.
+> In Version 2.0 oder höher von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], schützt, die Laufzeit automatisch eine `try` / `catch` /  `finally` blockieren böswilliger Ausnahmefilter, tritt beim Zurücksetzen das direkt innerhalb der Methode, die enthält den Ausnahmeblock.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Platzieren Sie die entpackten `try` / `finally` in einem äußeren Try-Block. Finden Sie im zweite Beispiel, das folgende aus. Dies zwingt den `finally` vor Filtercodes ausgeführt.
