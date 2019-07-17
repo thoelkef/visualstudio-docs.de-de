@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177199"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -119,7 +119,7 @@ ms.locfileid: "60040995"
 |**Andere**|Startseite|Portal für Visual Studio mit Zugriff auf Feeds von Neuigkeiten für Entwickler, Visual Studio-Hilfe und zuletzt geöffnete Projekte des Benutzers. Benutzer können auch benutzerdefinierte Startseiten erstellen, kopieren die Datei "StartPage.xaml" aus dem Visual Studio "Common7\IDE\StartPages\" Programmdateiverzeichnis, des Ordners StartPages in das Verzeichnis des Visual Studio-Dokumente, und klicken Sie dann entweder die XAML durch das manuelle Bearbeiten oder Sie können Sie sie in Visual Studio oder einem anderen Codeeditor öffnen.|
 |**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Autos||
 |**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Direkt||
-|**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Output|Das Fenster "Ausgabe" kann verwendet werden, wenn Sie Text Ereignisse oder Status deklariert haben.|
+|**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Ausgabe|Das Fenster "Ausgabe" kann verwendet werden, wenn Sie Text Ereignisse oder Status deklariert haben.|
 |**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Arbeitsspeicher||
 |**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Haltepunkte||
 |**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Wird ausgeführt||
@@ -483,8 +483,8 @@ ms.locfileid: "60040995"
 
 |Mauszeiger|Befehl|Beschreibung|
 |-------------------|-------------|-----------------|
-|![Mouse "no drop" icon](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706-01_MouseNoDrop")|Keine Ablage|Element kann nicht am angegebenen Speicherort abgelegt werden.|
-|![Mouse "copy" icon](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706-02_MouseCopy")|Kopieren|Element wird an den Zielspeicherort kopiert werden.|
+|![Symbol für "keine Ablage" mit der Maus](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706-01_MouseNoDrop")|Keine Ablage|Element kann nicht am angegebenen Speicherort abgelegt werden.|
+|![Symbol für "Copy" der Maus](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706-02_MouseCopy")|Kopieren|Element wird an den Zielspeicherort kopiert werden.|
 |![Maus Symbol "verschieben"](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706-03_MouseMove")|Verschieben|Element wird an den Zielspeicherort verschoben werden.|
 |![Symbol für "Verweis hinzufügen" Maus](../../extensibility/ux-guidelines/media/0706-04-mouseaddref.png "0706-04_MouseAddRef")|Verweis hinzufügen|Ein Verweis auf das ausgewählte Element wird an den Zielspeicherort hinzugefügt werden.|
 
@@ -494,24 +494,24 @@ ms.locfileid: "60040995"
 |||Das Quellelement: Verweis/Link|Das Quellelement: Physische Element oder das Dateisystem (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Kein Modifizierer|Aktion|Verschieben|Link|
-|Kein Modifizierer|Target|Verweis auf das ursprüngliche Element hinzugefügt|Verweis auf das ursprüngliche Element hinzugefügt|
+|Kein Modifizierer|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Verweis auf das ursprüngliche Element hinzugefügt|
 |Kein Modifizierer|Source|Löscht Verweis zum ursprünglichen Element|Beibehalten des ursprünglichen Elements|
 |Kein Modifizierer|Ergebnis|**DROPEFFECT_MOVE** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_LINK** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|
 |Umschalt + Ziehen|Aktion|Verschieben|Keine Ablage|
-|Umschalt + Ziehen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Keine Ablage|
+|Umschalt + Ziehen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Keine Ablage|
 |Umschalt + Ziehen|Source|Löscht Verweis zum ursprünglichen Element|Keine Ablage|
 |Umschalt + Ziehen|Ergebnis|**DROPEFFECT_MOVE** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|Keine Ablage|
 |STRG + Ziehen|Aktion|Kopieren|Keine Ablage|
-|STRG + Ziehen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Keine Ablage|
+|STRG + Ziehen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Keine Ablage|
 |STRG + Ziehen|Source|Beibehalten Referenz zum ursprünglichen Element|Keine Ablage|
 |STRG + Ziehen|Ergebnis|**DROPEFFECT_COPY** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|Keine Ablage|
 |STRG + UMSCHALT + ziehen|Aktion|Link|Link|
-|STRG + UMSCHALT + ziehen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Verweis auf das ursprüngliche Element hinzugefügt|
+|STRG + UMSCHALT + ziehen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Verweis auf das ursprüngliche Element hinzugefügt|
 |STRG + UMSCHALT + ziehen|Source|Beibehalten Referenz zum ursprünglichen Element|Beibehalten des ursprünglichen Elements|
 |STRG + UMSCHALT + ziehen|Ergebnis|**DROPEFFECT_LINK** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_LINK** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|
 |STRG + UMSCHALT + ziehen|Hinweis|Identisch mit Drag & Drop-Verhalten für Tastenkombinationen im Windows-Explorer.||
 |Ausschneiden und einfügen|Aktion|Verschieben|Link|
-|Ausschneiden und einfügen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Verweis auf das ursprüngliche Element hinzugefügt|
+|Ausschneiden und einfügen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Verweis auf das ursprüngliche Element hinzugefügt|
 |Ausschneiden und einfügen|Source|Beibehalten Referenz zum ursprünglichen Element|Beibehalten des ursprünglichen Elements|
 |Ausschneiden und einfügen|Ergebnis|Element bleibt im ursprünglichen Speicherort im Speicher|Element bleibt im ursprünglichen Speicherort im Speicher|
 |Kopieren und einfügen|Aktion|Kopieren|Link|
@@ -525,24 +525,24 @@ ms.locfileid: "60040995"
 |||Das Quellelement: Verweis/Link|Das Quellelement: Physische Element oder das Dateisystem (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Kein Modifizierer|Aktion|Verschieben|Verschieben|
-|Kein Modifizierer|Target|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
+|Kein Modifizierer|Ziel|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
 |Kein Modifizierer|Source|Löscht Verweis zum ursprünglichen Element|Löscht Verweis zum ursprünglichen Element|
 |Kein Modifizierer|Ergebnis|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|
 |Umschalt + Ziehen|Aktion|Verschieben|Verschieben|
-|Umschalt + Ziehen|Target|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
+|Umschalt + Ziehen|Ziel|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
 |Umschalt + Ziehen|Source|Löscht Verweis zum ursprünglichen Element|Löscht Element aus der ursprünglichen Speicherort|
 |Umschalt + Ziehen|Ergebnis|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|
 |STRG + Ziehen|Aktion|Kopieren|Kopieren|
-|STRG + Ziehen|Target|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
+|STRG + Ziehen|Ziel|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
 |STRG + Ziehen|Source|Beibehalten Referenz zum ursprünglichen Element|Beibehalten Referenz zum ursprünglichen Element|
 |STRG + Ziehen|Ergebnis|**DROPEFFECT_ Kopie** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_ Kopie** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|
 |STRG + UMSCHALT + ziehen||Keine Ablage|Keine Ablage|
 |Ausschneiden und einfügen|Aktion|Verschieben|Verschieben|
-|Ausschneiden und einfügen|Target|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
+|Ausschneiden und einfügen|Ziel|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
 |Ausschneiden und einfügen|Source|Löscht Verweis zum ursprünglichen Element|Löscht Element aus der ursprünglichen Speicherort|
 |Ausschneiden und einfügen|Ergebnis|Element bleibt im ursprünglichen Speicherort im Speicher|Element wird vom ursprünglichen Speicherort im Speicher gelöscht.|
 |Kopieren und einfügen|Aktion|Kopieren|Kopieren|
-|Kopieren und einfügen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
+|Kopieren und einfügen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
 |Kopieren und einfügen|Source|Beibehalten des ursprünglichen Elements|Beibehalten des ursprünglichen Elements|
 |Kopieren und einfügen|Ergebnis|Element bleibt im ursprünglichen Speicherort im Speicher|Element bleibt im ursprünglichen Speicherort ins Speicher|
 
@@ -552,27 +552,27 @@ ms.locfileid: "60040995"
 |||Das Quellelement: Verweis/Link|Das Quellelement: Physische Element oder das Dateisystem (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Kein Modifizierer|Aktion|Verschieben|Verschieben|
-|Kein Modifizierer|Target|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
+|Kein Modifizierer|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
 |Kein Modifizierer|Source|Löscht Verweis zum ursprünglichen Element|Löscht Verweis zum ursprünglichen Element|
 |Kein Modifizierer|Ergebnis|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element aus der ursprünglichen Speicherort im Speicher gelöscht wird|
 |Umschalt + Ziehen|Aktion|Verschieben|Verschieben|
-|Umschalt + Ziehen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
+|Umschalt + Ziehen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
 |Umschalt + Ziehen|Source|Löscht Verweis zum ursprünglichen Element|Löscht Element aus der ursprünglichen Speicherort|
 |Umschalt + Ziehen|Ergebnis|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_ verschieben** wird als Aktion zurückgegeben **:: Löschen** und Element aus der ursprünglichen Speicherort im Speicher gelöscht wird|
 |STRG + Ziehen|Aktion|Kopieren|Kopieren|
-|STRG + Ziehen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
+|STRG + Ziehen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
 |STRG + Ziehen|Source|Beibehalten Referenz zum ursprünglichen Element|Beibehalten des ursprünglichen Elements|
 |STRG + Ziehen|Ergebnis|**DROPEFFECT_ Kopie** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_ Kopie** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|
 |STRG + UMSCHALT + ziehen|Aktion|Link|Link|
-|STRG + UMSCHALT + ziehen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Fügt der Verweis auf die ursprüngliche Quellelement|
+|STRG + UMSCHALT + ziehen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Fügt der Verweis auf die ursprüngliche Quellelement|
 |STRG + UMSCHALT + ziehen|Source|Beibehalten Referenz zum ursprünglichen Element|Beibehalten des ursprünglichen Elements|
 |STRG + UMSCHALT + ziehen|Ergebnis|**DROPEFFECT_ LINK** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|**DROPEFFECT_ LINK** wird als Aktion zurückgegeben **:: Löschen** und Element bleibt im ursprünglichen Speicherort im Speicher|
 |Ausschneiden und einfügen|Aktion|Verschieben|Verschieben|
-|Ausschneiden und einfügen|Target|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
+|Ausschneiden und einfügen|Ziel|Kopien Element Zielspeicherort|Kopien Element Zielspeicherort|
 |Ausschneiden und einfügen|Source|Löscht Verweis zum ursprünglichen Element|Löscht Element aus der ursprünglichen Speicherort|
 |Ausschneiden und einfügen|Ergebnis|Element bleibt im ursprünglichen Speicherort im Speicher|Element wird vom ursprünglichen Speicherort im Speicher gelöscht.|
 |Kopieren und einfügen|Aktion|Kopieren|Kopieren|
-|Kopieren und einfügen|Target|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
+|Kopieren und einfügen|Ziel|Verweis auf das ursprüngliche Element hinzugefügt|Kopien Element Zielspeicherort|
 |Kopieren und einfügen|Source|Beibehalten des ursprünglichen Elements|Beibehalten des ursprünglichen Elements|
 |Kopieren und einfügen|Ergebnis|Element bleibt im ursprünglichen Speicherort im Speicher|Element bleibt im ursprünglichen Speicherort im Speicher|
 

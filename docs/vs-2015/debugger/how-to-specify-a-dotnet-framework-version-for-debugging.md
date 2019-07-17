@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c785c419ead31ad90e2b20ae7f48af778598bb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176558"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Vorgehensweise: Geben Sie eine .NET Framework-Version für das Debuggen
+# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Vorgehensweise: Angeben einer .NET Framework-Version für das Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger unterstützt das Debuggen sowohl älterer Versionen von Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] als auch der aktuellen Version. Wenn Sie eine Anwendung von Visual Studio aus starten, erkennt der Debugger stets die richtige Version von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] für die Anwendung, die Sie debuggen. Wenn die Anwendung bereits ausgeführt wird und Sie **Anfügen an**, der Debugger immer möglicherweise nicht zum Identifizieren von einer älteren Version von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Dann erhalten Sie eine Fehlermeldung, die besagt,  
@@ -55,7 +55,7 @@ Der [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger unterst�
   
 6. Doppelklicken Sie auf **CLRVersionForDebugging**.  
   
-7. Geben Sie im Feld **Zeichenfolge bearbeiten** die .NET Framework-Versionsnummer in das Feld **Wert** ein. Zum Beispiel: V1.1.4322  
+7. Geben Sie im Feld **Zeichenfolge bearbeiten** die .NET Framework-Versionsnummer in das Feld **Wert** ein. Beispiel: V1.1.4322  
   
 8. Klicken Sie auf **OK**.  
   

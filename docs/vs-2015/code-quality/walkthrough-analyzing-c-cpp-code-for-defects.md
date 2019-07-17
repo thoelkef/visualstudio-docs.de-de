@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: dcd862b6ff9c94b8de3fc8b5a56164549fefe8ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142029"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Feh
   
 - Kommentieren Sie Quellcode, um Fehler der Codeanalyse zu verbessern.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
@@ -72,7 +72,7 @@ In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Feh
   
 ### <a name="to-analyze-code-defect-warnings"></a>Analysieren von Code (Warnungen) der Mängel  
   
-1. Auf der **Ansicht** Menü klicken Sie auf **Fehlerliste**.  
+1. Klicken Sie im Menü **Ansicht** auf **Fehlerliste**.  
   
      Abhängig von der Developer-Profil, das in ausgewählten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], möglicherweise müssen Sie es auf **Other Windows** auf die **Ansicht** , und klicken Sie dann auf **Fehlerliste**.  
   

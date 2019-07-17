@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201135"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Arbeiten mit dem Regelsatz-Editor für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Die Codeanalyse Regelsatz-Editor können Sie zum Festlegen von Regeln, die in ei
   
 |ToolBar-Steuerelement|Beschreibung|  
 |---------------------|-----------------|  
-|**Alle aufklappen**|Die Regeln in allen Gruppen angezeigt.|  
+|**Alle erweitern**|Die Regeln in allen Gruppen angezeigt.|  
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen an.|  
 |**Group By**|Gibt das Feld, nach dem Regeln gruppiert werden. Klicken Sie auf  **\<None >** ohne Gruppen angezeigt.|  
 |**Spaltenoptionen**|Gibt die Regelfelder angezeigt werden sollen.|  
