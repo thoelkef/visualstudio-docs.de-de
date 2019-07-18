@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146096"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Gewusst wie: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

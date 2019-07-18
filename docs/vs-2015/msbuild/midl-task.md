@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191559"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **AdditionalIncludeDirectories**  
   
-     Optionaler **String[]**-Parameter.  
+     Optionaler **String[]** -Parameter.  
   
      Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die auf importierte IDL-Dateien durchsucht werden, einschließlich Headerdateien und Anwendungskonfigurationsdateien (ACF).  
   
@@ -54,7 +54,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Optionaler **String**-Parameter.  
   
-     Eine Liste der Befehlszeilenoptionen. Zum Beispiel **„**_/option1 /option2 /option#_“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.  
+     Eine Liste der Befehlszeilenoptionen. Zum Beispiel **„** _/option1 /option2 /option#_ “. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.  
   
      Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
@@ -144,7 +144,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
      Wenn `true`, wird überprüft, ob sich die Enumerationswerte im zulässigen Bereich befinden.  
   
-     Weitere Informationen finden Sie auf der Seite „Befehlszeilenhilfe“ (**/?**) für midl.exe unter der Option **error-Enumeration**.  
+     Weitere Informationen finden Sie auf der Seite „Befehlszeilenhilfe“ ( **/?** ) für midl.exe unter der Option **error-Enumeration**.  
   
 - **ErrorCheckRefPointers**  
   
@@ -258,9 +258,9 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **PreprocessorDefinitions**  
   
-     Optionaler **String[]**-Parameter.  
+     Optionaler **String[]** -Parameter.  
   
-     Gibt einen oder mehrere *defines* an; d.h., einen Namen oder einen optionalen Wert, der an einen C-Präprozessor wie von einer `#define`-Direktive weitergegeben werden soll. Jedes „define“ ist folgendermaßen aufgebaut: *name[=value]*.  
+     Gibt einen oder mehrere *defines* an; d.h., einen Namen oder einen optionalen Wert, der an einen C-Präprozessor wie von einer `#define`-Direktive weitergegeben werden soll. Jedes „define“ ist folgendermaßen aufgebaut: *name[=value]* .  
   
      Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/D**. Siehe auch die Parameter **UndefinePreprocessorDefinitions** in dieser Tabelle.  
   
@@ -376,7 +376,7 @@ Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („
   
 - **UndefinePreprocessorDefinitions**  
   
-     Optionaler **String[]**-Parameter.  
+     Optionaler **String[]** -Parameter.  
   
      Entfernt jede vorherige Definition eines Namens, indem er den Namen wie eine `#undefine`-Direktive an den C-Präprozessor weitergibt. Geben Sie eine oder mehrere vorher definierte Namen ein.  
   

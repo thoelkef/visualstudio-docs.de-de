@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e1c32e062cf2a5406f235133fb646a16d21707cb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59646788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190409"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  Erforderlich. Der vollständige Pfad und Name der Projektmappen- oder Projektdatei.  
   
  /project `ProjName`  
- Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.  
+ Optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.  
   
  /projectconfig `ProjConfigName`  
- Dies ist optional. Der Name der Projektbuildkonfiguration für die Bereinigung des benannten `/project`.  
+ Optional. Der Name der Projektbuildkonfiguration für die Bereinigung des benannten `/project`.  
   
 ## <a name="remarks"></a>Anmerkungen  
  Dieser Schalter führt dieselbe Funktion aus wie der Menübefehl **Projektmappe bereinigen** in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE).  

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164051"
 ---
 # <a name="filtering-report-views"></a>Filtern von Berichtsansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
   
 2. Für jede Klausel, die Sie einem Filter hinzufügen möchten, wählen Sie Werte in den folgenden Feldern einer Zeile aus oder geben diese ein.  
   
-    |Feld|Beschreibung|  
+    |Feld|BESCHREIBUNG|  
     |-----------|-----------------|  
     |**Und/Oder**|Wählen Sie **Und** aus, wenn diese Klausel und die nächste Klausel beide wahr sein müssen, um zu einer Übereinstimmung zu führen. Wählen Sie **Oder** aus, wenn diese Klausel oder die nächste Klausel wahr sein kann, um zu einer Übereinstimmung zu führen.|  
     |**Feld**|Wählen Sie das in der Filterklausel zu verwendende Berichtsfeld in der angezeigten Liste der Datenfelder aus.|  
