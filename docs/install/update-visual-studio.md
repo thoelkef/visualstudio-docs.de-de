@@ -2,7 +2,7 @@
 title: Aktualisieren von Visual Studio 2017
 titleSuffix: ''
 description: Erfahren Sie, wie Sie Visual Studio auf das neueste Release aktualisieren.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290657"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250575"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualisieren von Visual Studio auf die neueste Version
 
@@ -257,6 +259,27 @@ Sie können nach einem Update suchen und es dann von der Menüleiste oder dem Su
 1. Wählen Sie im Dialogfeld **Das Update wurde heruntergeladen und ist installationsbereit.** **Update** aus.
 
    Visual Studio wird aktualisiert, geschlossen und anschließend wieder geöffnet.
+
+## <a name="customize-update-settings"></a>Anpassen von Aktualisierungseinstellungen
+
+Sie können die Aktualisierungseinstellungen in Visual Studio auf verschiedene Weise anpassen, z.B. durch eine Änderung des Installationsmodus und durch die Auswahl automatischer Downloads.
+
+Es stehen zwei Installationsmodi zur Auswahl:
+
+* **Beim Herunterladen installieren**
+* **Alle herunterladen und dann installieren**
+
+Sie können außerdem die Option **Updates automatisch herunterladen** auswählen, um das Herunterladen von Updates zuzulassen, wenn sich Ihr Computer im Leerlauf befindet.
+
+Gehen Sie dabei folgendermaßen vor:
+
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
+
+2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Produktupdates**.
+
+    ![Aktualisierungseinstellungen in Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Wählen Sie den Installationsmodus und die Optionen für den automatischen Download aus, die Sie für Visual Studio-Updates verwenden möchten.
 
 ::: moniker-end
 
