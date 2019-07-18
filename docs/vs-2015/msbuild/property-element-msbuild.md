@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158275"
 ---
 # <a name="property-element-msbuild"></a>Property-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|Attribut|BESCHREIBUNG|  
 |---------------|-----------------|  
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|  
   
@@ -54,7 +54,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Grouping-Element für Eigenschaften.|  
   

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156609"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Gewusst wie: Erweitern des Visual Studio-Buildvorgangs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Re
 
    Die folgende Tabelle zeigt alle Ziele in „Microsoft.Common.targets“, die Sie bedenkenlos überschreiben können.
 
-|Target Name|Beschreibung|
+|Target Name|BESCHREIBUNG|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden vor oder nach Abschluss der Kompilierung ausgeführt. Die meisten Anpassungen werden in einem dieser beiden Ziele ausgeführt.|
 |`BeforeBuild`, `AfterBuild`|Aufgaben, die in eines dieser Ziele eingefügt wurden, werden ausgeführt, bevor oder nachdem alles Weitere erstellt wurde. **Hinweis:** Die Ziele `BeforeBuild` und `AfterBuild` sind bereits in Kommentaren am Ende der meisten Projektdateien definiert. Dadurch können Sie Ihrer Projektdatei problemlos Prä- und Postbuildereignissen hinzufügen.|
@@ -119,7 +119,7 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Re
 
 ### <a name="commonly-overridden-dependson-properties"></a>Häufig überschriebene DependsOn-Eigenschaften
 
-|Eigenschaftenname|Beschreibung|
+|Eigenschaftenname|BESCHREIBUNG|
 |-------------------|-----------------|
 |`BuildDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie benutzerdefinierte Ziele vor oder nach dem gesamten Buildprozess einfügen möchten|
 |`CleanDependsOn`|Die zu überschreibende Eigenschaft, wenn Sie die Ausgabe Ihres benutzerdefinierten Buildprozesses bereinigen möchten|

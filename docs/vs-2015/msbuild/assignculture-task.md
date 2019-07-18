@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 23b991efaa32e2c1886e6e0cd64bb9d6181190d0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187038"
 ---
 # <a name="assignculture-task"></a>AssignCulture-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Diese Aufgabe akzeptiert eine Liste von Elementen, die eine gültige .NET-Kultur
 ## <a name="task-parameters"></a>Aufgabenparameter  
  In der folgenden Tabelle werden die Parameter der `AssignCulture`-Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|BESCHREIBUNG|  
 |---------------|-----------------|  
 |`AssignedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Liste der Elemente, die innerhalb des `Files`-Parameters empfangen wurden, mit einem `Culture`-Metadateneintrag, der jedem Element hinzugefügt wurde.<br /><br /> Wenn das eingehende Element vom `Files`-Parameter bereits einen `Culture`-Metadateneintrag enthält, wird der ursprüngliche Metadateneintrag verwendet.<br /><br /> Die Aufgabe weist nur dann einen `Culture`-Metadateneintrag zu, wenn der Dateiname einen gültigen Kulturbezeichner enthält. Der Kulturbezeichner muss zwischen den letzten beiden Punkten im Dateinamen platziert werden.|  
 |`AssignedFilesWithCulture`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Teilmenge der Elemente aus dem `AssignedFiles`-Parameter mit `Culture`-Metadateneintrag|  

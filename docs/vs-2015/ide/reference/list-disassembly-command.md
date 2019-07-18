@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d361e5231d72df81fae164818bbe8341442c9f89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199173"
 ---
 # <a name="list-disassembly-command"></a>Befehl "Disassemblierung auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,22 +38,22 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufgerufen werden.  
   
  /count: `number` [oder] /c: `number` [oder] /length: `number` [oder] /l: `number`  
- Dies ist optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.  
+ Optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.  
   
  /endaddress: `expression` [oder] /e: `expression`  
- Dies ist optional. Adresse, an der die Disassemblierung beendet wird.  
+ Optional. Adresse, an der die Disassemblierung beendet wird.  
   
  /codebytes:`yes`|`no` [oder] /bytes:`yes`|`no` [oder] /b:`yes`|`no`  
- Dies ist optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`sein.  
+ Optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`sein.  
   
  /source:`yes`|`no` [oder] /s:`yes`|`no`  
- Dies ist optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert ist `no`sein.  
+ Optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert ist `no`sein.  
   
  /symbolnames:`yes`|`no` [oder] /names:`yes`|`no` [oder] /n:`yes`|`no`  
- Dies ist optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`sein.  
+ Optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`sein.  
   
  [/linenumbers:`yes`|`no`]  
- Dies ist optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.  
+ Optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.  
   
 ## <a name="example"></a>Beispiel  
   

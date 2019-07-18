@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 981b37fe1ebaad5e45f0308143ab0384ef1d559b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145603"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,16 +49,16 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="invalid-options"></a>Ungültige Optionen  
  Die folgenden Optionen können nicht in derselben Befehlszeile wie **Sys** festgelegt werden.  
   
- **PF**[**:**`Events`]  
+ **PF**[ **:** `Events`]  
  Legt die Seitenstandards für das Samplingereignis fest und optional das Samplingintervall auf `Events`. Das standardmäßige PF-Intervall beträgt 10.  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  Legt das Samplingereignis auf die Prozessortaktzyklen und das Samplingintervall optional auf `Cycles` fest. Das Timer-Standardintervall beträgt 10.000.000.  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  Legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator fest und das Samplingintervall auf `Reload`.  
   
- **GC**[**:**{**Allocation**|**Lifetime**}]  
+ **GC**[ **:** {**Allocation**|**Lifetime**}]  
  Sammelt .NET-Speicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.  
   
 ## <a name="example"></a>Beispiel  

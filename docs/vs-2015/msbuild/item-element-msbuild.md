@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192606"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes E
   
 ### <a name="attributes"></a>Attribute  
   
-|Attribut|Beschreibung|  
+|Attribut|BESCHREIBUNG|  
 |---------------|-----------------|  
 |`Include`|Erforderliches Attribut.<br /><br /> Die Datei oder der Platzhalter, die bzw. der in die Liste der Elemente eingeschlossen werden soll.|  
 |`Exclude`|Optionales Attribut.<br /><br /> Die Datei oder der Platzhalter, die bzw. der aus der Liste der Elemente ausgeschlossen werden soll.|  
@@ -62,13 +62,13 @@ Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes E
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Ein benutzerdefinierter Elementmetadatenschlüssel, der den Elementmetadatenwert enthält. Es kann keine oder mehrere `ItemMetadata`-Elemente in einem Element geben.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Beschreibung|  
+|Element|BESCHREIBUNG|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Grouping-Element für Elemente.|  
   

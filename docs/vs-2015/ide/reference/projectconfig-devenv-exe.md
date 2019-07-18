@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4b956fb09681f6f4a1f916f4b108028f69f009cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200897"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei  
   
  /project `ProjName`  
- Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.  
+ Optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.  
   
  /projectconfig `ProjConfigName`  
- Dies ist optional. Der Name der Projektbuildkonfiguration für die Anwendung auf das benannte `/project`  
+ Optional. Der Name der Projektbuildkonfiguration für die Anwendung auf das benannte `/project`  
   
 ## <a name="remarks"></a>Anmerkungen  
   

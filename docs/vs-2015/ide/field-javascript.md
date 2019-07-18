@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b2fe09070261460b7b83f54de44a07cf96d40cf2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181277"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;Feld&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ Gibt Informationen zur Dokumentation an, darunter eine Beschreibung, die entwede
  Der Name des Felds oder des Members. Wenn das Element `<field>` in einer Konstruktorfunktion verwendet wird, ist `name` erforderlich und definiert den Member, für den das Tag gilt. Wenn das Element `<field>` ein Feld direkt kennzeichnet, wird dieses Attribut ignoriert und der von Visual Studio verwendete Name ist der Name des tatsächlichen Felds im Quellcode.  
   
  `static`  
- Dies ist optional. Gibt an, ob das Feld ein Member der Konstruktorfunktion oder des durch die Konstruktorfunktion zurückgegebenen Objekts ist. Wenn dieses Attribut auf `true` festgelegt ist, wird das Feld als Member der Konstruktorfunktion behandelt. Wenn dieses Attribut auf `false` festgelegt ist, wird das Feld als Member des von der Konstruktorfunktion zurückgegebenen Objekts behandelt.  
+ Optional. Gibt an, ob das Feld ein Member der Konstruktorfunktion oder des durch die Konstruktorfunktion zurückgegebenen Objekts ist. Wenn dieses Attribut auf `true` festgelegt ist, wird das Feld als Member der Konstruktorfunktion behandelt. Wenn dieses Attribut auf `false` festgelegt ist, wird das Feld als Member des von der Konstruktorfunktion zurückgegebenen Objekts behandelt.  
   
  `type`  
- Dies ist optional. Der Datentyp des Felds. Als Typ kann eines der folgenden Elemente verwendet werden:  
+ Optional. Der Datentyp des Felds. Als Typ kann eines der folgenden Elemente verwendet werden:  
   
 - Ein ECMAScript-Sprachentyp in der ECMAScript 5-Spezifikation, wie `Number` und `Object`  
   
@@ -54,37 +54,37 @@ Gibt Informationen zur Dokumentation an, darunter eine Beschreibung, die entwede
 - Eine JavaScript-Konstruktorfunktion  
   
   `integer`  
-  Dies ist optional. Wenn `type` auf `Number` festgelegt ist, wird angegeben, ob das Feld eine ganze Zahl ist. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass das Feld eine ganze Zahl ist; andernfalls ist das Attribut auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Optional. Wenn `type` auf `Number` festgelegt ist, wird angegeben, ob das Feld eine ganze Zahl ist. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass das Feld eine ganze Zahl ist; andernfalls ist das Attribut auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `domElement`  
-  Dies ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob das dokumentierte Feld ein DOM-Element ist. Wenn es auf `true` festgelegt ist, wird angegeben, dass das Feld ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn `type` nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt das dokumentierte Feld IntelliSense bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
+  Optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob das dokumentierte Feld ein DOM-Element ist. Wenn es auf `true` festgelegt ist, wird angegeben, dass das Feld ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn `type` nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt das dokumentierte Feld IntelliSense bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `mayBeNull`  
-  Dies ist optional. Gibt an, ob das dokumentierte Feld auf NULL festgelegt werden kann. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass das Feld auf NULL festgelegt werden kann; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Optional. Gibt an, ob das dokumentierte Feld auf NULL festgelegt werden kann. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass das Feld auf NULL festgelegt werden kann; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `elementType`  
-  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.  
+  Optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.  
   
   `elementInteger`  
-  Dies ist optional. Wenn das `type`-Attribut `Array` und das `elementType`-Attribut `Number` lautet, wird angegeben, ob die Elemente im Array ganze Zahlen sind. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array ganze Zahlen sind; andernfalls ist das Attribut auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Optional. Wenn das `type`-Attribut `Array` und das `elementType`-Attribut `Number` lautet, wird angegeben, ob die Elemente im Array ganze Zahlen sind. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array ganze Zahlen sind; andernfalls ist das Attribut auf `false` festzulegen. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `elementDomElement`  
-  Dies ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
+  Optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `elementMayBeNull`  
-  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `helpKeyword`  
-  Dies ist optional. Das Schlüsselwort für die F1-Hilfe.  
+  Optional. Das Schlüsselwort für die F1-Hilfe.  
   
   `locid`  
-  Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über das Feld. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Tag.  
+  Optional. Der Bezeichner für Lokalisierungsinformationen über das Feld. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im Tag [\<loc>](../ide/loc-javascript.md) angegeben wird.  
   
   `value`  
-  Dies ist optional. Gibt den Code an, der anstelle des Funktionscodes für die Verwendung mit IntelliSense ausgewertet werden soll. Für das Element `<field>` wird dieses Attribut in Konstruktorfunktionen unterstützt, jedoch nicht in Objektliteralen. Sie können dieses Attribut zur Bereitstellung von Typinformationen verwenden, wenn der Feldtyp nicht definiert wird. Beispielsweise können Sie `value=’1’` den Feldtyp als Zahl behandelt.  
+  Optional. Gibt den Code an, der anstelle des Funktionscodes für die Verwendung mit IntelliSense ausgewertet werden soll. Für das Element `<field>` wird dieses Attribut in Konstruktorfunktionen unterstützt, jedoch nicht in Objektliteralen. Sie können dieses Attribut zur Bereitstellung von Typinformationen verwenden, wenn der Feldtyp nicht definiert wird. Beispielsweise können Sie `value=’1’` den Feldtyp als Zahl behandelt.  
   
   `description`  
-  Dies ist optional. Eine Beschreibung des Felds.  
+  Optional. Eine Beschreibung des Felds.  
   
 ## <a name="remarks"></a>Anmerkungen  
  Das Attribut `name` ist erforderlich, wenn Sie ein Feld in einer Konstruktorfunktion dokumentieren. In allen anderen Szenarien sind sämtliche Attribute für das Element `<field>` optional.  

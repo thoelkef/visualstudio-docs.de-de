@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e0a4a8482dc1c2c66a45902f2f3382b179b46b13
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199120"
 ---
 # <a name="list-source-command"></a>Befehl "Quelle auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,19 +36,19 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
   
 ## <a name="switches"></a>Schalter  
  /Count:`number`  
- Dies ist optional. Gibt die Anzahl der anzuzeigenden Zeilen an.  
+ Optional. Gibt die Anzahl der anzuzeigenden Zeilen an.  
   
  /Current  
  Dies ist optional. Zeigt die aktuelle Zeile an.  
   
  /File:`filename`  
- Dies ist optional. Pfad der anzuzeigenden Datei. Ist kein Dateiname angegeben, zeigt der Befehl den Quellcode für die Zeile der aktuellen Anweisung an.  
+ Optional. Pfad der anzuzeigenden Datei. Ist kein Dateiname angegeben, zeigt der Befehl den Quellcode für die Zeile der aktuellen Anweisung an.  
   
  /Line:`number`  
- Dies ist optional. Zeigt eine bestimmte Zeilennummer an.  
+ Optional. Zeigt eine bestimmte Zeilennummer an.  
   
  /ShowLineNumbers:`yes|no`  
- Dies ist optional. Gibt an, ob Zeilennummern angezeigt werden sollen.  
+ Optional. Gibt an, ob Zeilennummern angezeigt werden sollen.  
   
 ## <a name="remarks"></a>Anmerkungen  
   

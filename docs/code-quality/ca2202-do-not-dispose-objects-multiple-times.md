@@ -1,6 +1,6 @@
 ---
 title: 'CA2202: Objekte nicht mehrmals verwerfen.'
-ms.date: 11/04/2016
+ms.date: 07/16/2019
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796831"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300600"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Objekte nicht mehrmals verwerfen.
 
@@ -32,29 +32,29 @@ ms.locfileid: "62796831"
 
 ## <a name="cause"></a>Ursache
 
-Eine methodenimplementierung enthält Codepfade, die mehrere Aufrufe verursachen könnten <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> oder einer Entsprechung von Dispose, z. B. einer Close()-Methode für bestimmte Typen, für das gleiche Objekt.
+Eine Methoden Implementierung enthält Codepfade, die mehrere Aufrufe <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> von oder eine verwerfen-Entsprechung (z. b. eine Close ()-Methode für einige Typen) für dasselbe Objekt verursachen könnten.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine ordnungsgemäß implementierte <xref:System.IDisposable.Dispose%2A> Methode kann mehrmals aufgerufen werden, ohne eine Ausnahme auszulösen. Allerdings ist dies nicht garantiert und Generieren von zu vermeiden einer <xref:System.ObjectDisposedException?displayProperty=fullName> sollte nicht aufgerufen werden <xref:System.IDisposable.Dispose%2A> mehr als einmal in einem Objekt.
+Eine ordnungsgemäß <xref:System.IDisposable.Dispose%2A> implementierte Methode kann mehrmals aufgerufen werden, ohne eine Ausnahme auszulösen. Dies ist jedoch nicht garantiert. um zu vermeiden, dass <xref:System.ObjectDisposedException?displayProperty=fullName> eine erstellt wird, <xref:System.IDisposable.Dispose%2A> sollten Sie nicht mehr als einmal für ein Objekt aufzurufen.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2000: Objekte verwerfen, bevor Bereich verloren geht](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000: Objekte vor Verlust des Gültigkeits Bereichs verwerfen](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung, also unabhängig des Codepfads, <xref:System.IDisposable.Dispose%2A> wird für das Objekt nur einmal aufgerufen.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die-Implementierung so, dass unabhängig vom <xref:System.IDisposable.Dispose%2A> Codepfad nur einmal für das-Objekt aufgerufen wird.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel. Auch wenn <xref:System.IDisposable.Dispose%2A> für das Objekt sicher auch mehrmals aufgerufen werden bekanntermaßen, möglicherweise in Zukunft die Implementierung ändern.
+Unterdrücken Sie keine Warnung dieser Regel. Auch wenn <xref:System.IDisposable.Dispose%2A> für das Objekt bekannt ist, dass es mehrmals sicher aufgerufen werden kann, kann sich die Implementierung in Zukunft ändern.
 
 ## <a name="example"></a>Beispiel
 
-Geschachtelte `using` Anweisungen (`Using` in Visual Basic) kann dazu führen, dass die CA2202 Warnung Verletzungen. Wenn die "IDisposable"-Ressource, der die geschachtelte innere `using` -Anweisung enthält, die Ressource des äußeren `using` -Anweisung, die `Dispose` -Methode der geschachtelten Ressource frei, die enthaltene Ressource. Wenn in diesem Fall die `Dispose` Methode des äußeren `using` Anweisung versucht, ihre Ressource ein zweites Mal freizugeben.
+`using` InVisualBasic)kanneszuVerstößengegendie`Using` CA2202-Warnung führen. Wenn die iverwerfbare Ressource der geschachtelten `using` inneren Anweisung die Ressource der äußeren `using` Anweisung enthält, gibt `Dispose` die-Methode der geschachtelten Ressource die enthaltene Ressource frei. Wenn diese Situation eintritt, versucht `Dispose` die-Methode der `using` äußeren Anweisung, die Ressource ein zweites Mal zu verwerfen.
 
-Im folgenden Beispiel eine <xref:System.IO.Stream> -Objekt, das in eine äußere erstellt wird using-Anweisung wird am Ende des using-Anweisung in der Dispose-Methode der inneren veröffentlicht die <xref:System.IO.StreamWriter> -Objekt, enthält die `stream` Objekt. Am Ende der äußeren `using` -Anweisung, die `stream` Objekt ist ein zweites Mal freigegeben. Der zweite Version handelt es sich um einen Verstoß gegen CA2202.
+Im folgenden Beispiel wird ein <xref:System.IO.Stream> -Objekt, das in einer äußeren using-Anweisung erstellt wird, am Ende der inneren using-Anweisung in der verwerfen-Methode <xref:System.IO.StreamWriter> des Objekts freigegeben, `stream` das das Objekt enthält. Am Ende der äußeren `using` Anweisung wird das `stream` Objekt ein zweites Mal freigegeben. Die zweite Version ist ein Verstoß gegen CA2202.
 
 ```csharp
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -68,7 +68,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 
 ## <a name="example"></a>Beispiel
 
-Um dieses Problem zu beheben, verwenden eine `try` / `finally` Block statt der äußeren `using` Anweisung. In der `finally` blockieren, stellen Sie sicher, dass die `stream` Ressource nicht null ist.
+Um dieses Problem zu beheben, verwenden `try` Sie anstelle der äußeren `using` -Anweisung einen / `finally` -Block. Stellen Sie im- `stream` Blocksicher,dassdieRessourcenichtNULList.`finally`
 
 ```csharp
 Stream stream = null;
@@ -83,10 +83,12 @@ try
 }
 finally
 {
-    if(stream != null)
-        stream.Dispose();
+    stream?.Dispose();
 }
 ```
+
+> [!TIP]
+> Die `?.` obige Syntax ist der [null bedingte Operator](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198385"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance-Enumeration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +35,14 @@ enum marker_importance;
   
 ### <a name="values"></a>Werte  
   
-|name|Beschreibung|  
+|name|BESCHREIBUNG|  
 |----------|-----------------|  
 |`critical_importance`|Gibt an, dass der Marker kritisch wichtig ist|  
 |`high_importance`|Gibt an, dass der Marker hoch wichtig ist|  
 |`low_importance`|Gibt an, dass der Marker weniger wichtig ist|  
 |`normal_importance`|Gibt an, dass der Marker normal wichtig ist|  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Concurrency::diagnostic  

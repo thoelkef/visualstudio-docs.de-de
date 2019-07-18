@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203484"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;Signatur&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ Gruppiert einen Satz zugehöriger Elementen für eine Funktion oder Methode, um 
   
 #### <a name="parameters"></a>Parameter  
  `externalid`  
- Dies ist optional. Wenn die `format` -Attribut für die [ \<Loc >](../ide/loc-javascript.md) Element `vsdoc`, dieses Attribut gibt an, das Element-ID verwendet, um den XML-Code zu suchen, die mit der Signatur zugeordnet ist. Anders als das `locid`-Attribut gibt dieses Attribut an, dass alle Elemente im Member, der diese ID aufweist, geladen werden sollen. Alle zugeordneten Beschreibungsinformationen, die im XML-Code vorhanden sind, werden auch mit den Elementen zusammengeführt, die in der Signatur angegeben sind. Dies ermöglicht es Ihnen, zusätzliche Elemente, wie `<capability>`, in der Sidecardatei anzugeben, ohne sie in der Quelldatei anzugeben. `externalid` ist ein optionales Attribut.  
+ Optional. Wenn die `format` -Attribut für die [ \<Loc >](../ide/loc-javascript.md) Element `vsdoc`, dieses Attribut gibt an, das Element-ID verwendet, um den XML-Code zu suchen, die mit der Signatur zugeordnet ist. Anders als das `locid`-Attribut gibt dieses Attribut an, dass alle Elemente im Member, der diese ID aufweist, geladen werden sollen. Alle zugeordneten Beschreibungsinformationen, die im XML-Code vorhanden sind, werden auch mit den Elementen zusammengeführt, die in der Signatur angegeben sind. Dies ermöglicht es Ihnen, zusätzliche Elemente, wie `<capability>`, in der Sidecardatei anzugeben, ohne sie in der Quelldatei anzugeben. `externalid` ist ein optionales Attribut.  
   
  `externalFile`  
- Dies ist optional. Gibt den Namen der Datei an, in der `externalid` zu finden ist. Dieses Attribut wird ignoriert, wenn kein `externalid` vorhanden ist. Dies ist ein optionales Attribut. Der Standardwert ist der Name der aktuellen Datei, jedoch mit einer XML-Erweiterung anstelle von JS. Standardmäßig werden Suchregeln für verwaltete Ressourcen für die Lokalisierung verwendet, um die Datei zu suchen.  
+ Optional. Gibt den Namen der Datei an, in der `externalid` zu finden ist. Dieses Attribut wird ignoriert, wenn kein `externalid` vorhanden ist. Dies ist ein optionales Attribut. Der Standardwert ist der Name der aktuellen Datei, jedoch mit einer XML-Erweiterung anstelle von JS. Standardmäßig werden Suchregeln für verwaltete Ressourcen für die Lokalisierung verwendet, um die Datei zu suchen.  
   
  `helpKeyword`  
- Dies ist optional. Das Schlüsselwort für die F1-Hilfe.  
+ Optional. Das Schlüsselwort für die F1-Hilfe.  
   
  `locid`  
- Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über das Feld. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Tag.  
+ Optional. Der Bezeichner für Lokalisierungsinformationen über das Feld. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im Tag [\<loc>](../ide/loc-javascript.md) angegeben wird.  
   
 ## <a name="remarks"></a>Anmerkungen  
  Verwenden Sie ein `<signature>`-Element für jede der überladenen Funktionsbeschreibung in der JS-Datei, oder verwenden Sie ein `<signature>`-Element für jede angegebene externe Member-ID.  

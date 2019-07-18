@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177962"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Erste Schritte beim Debuggen in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
 
  Verwenden Sie zunächst **Debug** und **x86** als Buildkonfiguration bzw. Plattform. Wenn Sie mit dem Programmieren und Debuggen fertig sind, ändern Sie die Konfiguration in **Release**, und geben Sie die gewünschte Zielplattform an. (In älteren Versionen von Visual Studio wurde die Standardplattform **AnyCPU** für .NET-Codeprojekte bereitgestellt.)
 
- Hinweis: Wenn Sie das Projekt erstellen, werden die Werte für Konfiguration und Plattform auch verwendet, um den Verzeichnispfad des Projekts zum Speichern der ausführbaren Datei zu bestimmen. Normalerweise ist dies **\<Pfad-zum-Projekt>\\<Projektname\>\\<Konfiguration\>\\<Plattform\>**. Beispielsweise würde sich ein Projekt mit der Konfiguration `Debug` und der Plattform `x86` unter `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` befinden. Dies kann hilfreich sein, wenn Sie eigene Tools oder Skripts zum Verwalten dieser ausführbaren Builddateien verwenden.
+ Hinweis: Wenn Sie das Projekt erstellen, werden die Werte für Konfiguration und Plattform auch verwendet, um den Verzeichnispfad des Projekts zum Speichern der ausführbaren Datei zu bestimmen. Normalerweise ist dies **\<Pfad-zum-Projekt>\\<Projektname\>\\<Konfiguration\>\\<Plattform\>** . Beispielsweise würde sich ein Projekt mit der Konfiguration `Debug` und der Plattform `x86` unter `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` befinden. Dies kann hilfreich sein, wenn Sie eigene Tools oder Skripts zum Verwalten dieser ausführbaren Builddateien verwenden.
 
 ### <a name="building-your-code"></a>Erstellen von Code
  Mit Ihrem konfigurierten Build können Sie nun das Projekt erstellen. Die einfachste Möglichkeit besteht darin, F7 zu drücken. Sie können den Build aber auch starten, indem Sie im Hauptmenü **Erstellen > Projektmappe erstellen** auswählen.

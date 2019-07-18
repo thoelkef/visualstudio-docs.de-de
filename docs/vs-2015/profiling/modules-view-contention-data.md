@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157361"
 ---
 # <a name="modules-view---contention-data"></a>Modulansicht: Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitä
   
  Die folgende Tabelle beschreibt die Werte der Spalten in der Modulansicht der Konfliktdaten.  
   
-|Spalte|Beschreibung|  
+|Spalte|BESCHREIBUNG|  
 |------------|-----------------|  
 |**Exklusive blockierte Zeit %**|– Bei einer Funktion die Zeit, für die die Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einem Modul die Summe der exklusiv blockierten Zeit der Funktionen im Modul.<br />– Bei einer Zeile oder einer Anweisung die Zeit, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  
 |**Exklusive blockierte Zeit %**|– Bei einer Funktion oder einem Modul der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit dieser Funktion oder dieses Moduls entspricht.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|  

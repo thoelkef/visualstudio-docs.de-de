@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147239"
 ---
 # <a name="blocking-time-profile-report"></a>Blockierungszeit-Profilbericht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische 
 ## <a name="blocking-time-report-columns"></a>Spalten des Blockierungszeitberichts  
  Die folgende Tabelle zeigt die Spalten für die einzelnen Blockierungszeitberichte.  
   
-|Spaltenname|Beschreibung|  
+|Spaltenname|BESCHREIBUNG|  
 |-----------------|-----------------|  
 |name|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|  
 |Instanzen|Die Anzahl der Instanzen des blockierenden Aufrufs für den sichtbaren Zeitraum.|  
