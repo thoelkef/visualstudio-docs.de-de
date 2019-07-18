@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Arbeiten mit XML und XSLT-Dateien
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Entwickeln mit Containern
+          href: containers/index.yml
         - name: Entwickeln inklusiver Apps
           items:
             - name: Entwerfen barrierefreier Apps
