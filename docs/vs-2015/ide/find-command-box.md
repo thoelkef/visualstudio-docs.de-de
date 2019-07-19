@@ -14,18 +14,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160671"
 ---
 # <a name="findcommand-box"></a>Suchen (Feld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Über das Feld **Find/Command** (Suchen/Befehl) können Sie nach Text suchen und Visual Studio-Befehle ausführen. Das Feld **Find/Command** (Suchen/Befehl) ist weiterhin als Steuerelement für die Symbolleiste verfügbar, wird standardmäßig aber nicht mehr angezeigt. Sie können das Feld **Find/Command** (Suchen/Befehl) einblenden, indem Sie in der Symbolleiste**Standard** auf **Schaltflächen hinzufügen oder entfernen** klicken und anschließend auf **Suchen** klicken.  
   
- Um einen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Befehl auszuführen, leiten Sie ihn mit einem Größer-als-Zeichen (>) ein.  
+ Leiten Sie einen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Befehl mit einem Größer-als-Zeichen (>) ein, um ihn auszuführen.  
   
  Das Feld **Suchen/Befehl** speichert die letzten 20 Eingaben und zeigt sie in einer Dropdownliste an. Mithilfe der Pfeiltasten kann in der Liste navigiert werden.  
   

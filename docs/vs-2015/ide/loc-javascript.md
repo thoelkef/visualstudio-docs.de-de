@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186098"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Gibt den Speicherort und den Typ der Sidecardatei an, die lokalisierte IntelliSe
   
 #### <a name="parameters"></a>Parameter  
  `filename`  
- Dies ist optional. Der Stammname der Sidecardatei, die Lokalisierungsinformationen für die neutrale Kultur enthält. Wenn Visual Studio nach Lokalisierungsinformationen sucht, wird versucht, eine kulturspezifische Version dieser Datei zu finden. Wenn `filename` beispielsweise "jquery.xml" ist, sucht Visual Studio im Speicherort der JS-Datei, die das `<loc>`-Element enthält, nach dem richtigen kulturspezifischen Ordner (wie "JA") . Wenn der kulturspezifische Ordner gefunden wurde, wird überprüft, ob eine Datei "jquery.xml" darin vorhanden ist. Wenn die richtige Datei nicht gefunden wird, werden stattdessen Speicherortregeln für verwaltete Ressourcen verwendet. Der Standardwert für `filename` ist der Name der aktuellen Datei, jedoch mit einer XML-Erweiterung anstelle von JS.  
+ Optional. Der Stammname der Sidecardatei, die Lokalisierungsinformationen für die neutrale Kultur enthält. Wenn Visual Studio nach Lokalisierungsinformationen sucht, wird versucht, eine kulturspezifische Version dieser Datei zu finden. Wenn `filename` beispielsweise "jquery.xml" ist, sucht Visual Studio im Speicherort der JS-Datei, die das `<loc>`-Element enthält, nach dem richtigen kulturspezifischen Ordner (wie "JA") . Wenn der kulturspezifische Ordner gefunden wurde, wird überprüft, ob eine Datei "jquery.xml" darin vorhanden ist. Wenn die richtige Datei nicht gefunden wird, werden stattdessen Speicherortregeln für verwaltete Ressourcen verwendet. Der Standardwert für `filename` ist der Name der aktuellen Datei, jedoch mit einer XML-Erweiterung anstelle von JS.  
   
  `format`  
- Dies ist optional. Der Typ der für die Lokalisierung verwendeten Sidecardatei. Verwenden Sie `messagebundle`, um die Verwendung der von Open Ajax-Metadaten definierten Meldungsbündel festzulegen. Das empfohlene Format ist `messagebundle`. Allerdings wird dieses Format nicht in Microsoft Ajax oder in WINMD-Dateien unterstützt. Verwenden Sie `vsdoc`, um das standardmäßige .NET Framework-Lokalisierungsformat anzugeben, das von Microsoft Ajax und Windows-Runtime verwendet wird. Dieses Attribut ist optional. Das Standardformat ist `vsdoc`.  
+ Optional. Der Typ der für die Lokalisierung verwendeten Sidecardatei. Verwenden Sie `messagebundle`, um die Verwendung der von Open Ajax-Metadaten definierten Meldungsbündel festzulegen. Das empfohlene Format ist `messagebundle`. Allerdings wird dieses Format nicht in Microsoft Ajax oder in WINMD-Dateien unterstützt. Verwenden Sie `vsdoc`, um das standardmäßige .NET Framework-Lokalisierungsformat anzugeben, das von Microsoft Ajax und Windows-Runtime verwendet wird. Dieses Attribut ist optional. Das Standardformat ist `vsdoc`.  
   
 ## <a name="remarks"></a>Anmerkungen  
  Das `<loc>`-Element muss am Dateianfang in demselben Abschnitt wie das `<reference>`-Element angezeigt werden. Verwendungsregeln für das `<loc>`-Element entsprechen denen für das `<reference>`-Element. Weitere Informationen finden Sie im Abschnitt "References-Direktiven" in [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
