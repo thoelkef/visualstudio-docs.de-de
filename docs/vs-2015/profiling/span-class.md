@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198363"
 ---
 # <a name="span-class"></a>span-Klasse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ class span;
   
 ### <a name="public-constructors"></a>Öffentliche Konstruktoren  
   
-|name|Beschreibung|  
+|name|BESCHREIBUNG|  
 |----------|-----------------|  
 |[span::span-Konstruktor](../profiling/span-span-constructor.md)|Initialisiert eine neue Instanz der `span`-Klasse.|  
 |[span::~span-Destruktor](../profiling/span-tilde-span-destructor.md)|Zerstört das `span`-Objekt und gibt seine Ressourcen frei.|  
@@ -43,7 +43,7 @@ class span;
 ## <a name="inheritance-hierarchy"></a>Vererbungshierarchie  
  `span`  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Concurrency::diagnostic  
