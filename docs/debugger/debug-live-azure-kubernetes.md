@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857885"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415750"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET Azure Kubernetes Services mit dem Momentaufnahmedebugger
 
@@ -33,11 +33,11 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Festlegen eines Andockpunkts und Anzeigen einer Momentaufnahme
 > * Festlegen eines Protokollpunkts
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Snapshot-Debugger für die Azure-Kubernetes-Dienste nur für Visual Studio Enterprise mit 2019 verfügbar oder höher mit der **Azure-entwicklungsworkload**. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
+* Momentaufnahmedebugger für Azure Kubernetes Services ist nur für Visual Studio 2019 Enterprise oder höher mit der **Arbeitsauslastung**für die Azure-Entwicklung verfügbar. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
 
-    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
+    Wenn Sie nicht bereits installiert ist, installieren Sie [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * Die Momentaufnahmensammlung ist für folgende Azure Kubernetes Services-Web-Apps verfügbar:
   * ASP.NET Core-Apps, die in .NET Core 2.2 oder höher unter Debian 9 ausgeführt werden.
@@ -54,11 +54,14 @@ In diesem Tutorial werden Sie Folgendes durchführen:
     > [!IMPORTANT]
     > Zum Debuggen mit einer Momentaufnahme müssen Sie *dieselbe Version des Quellcodes* öffnen, die für Ihren Azure Kubernetes-Dienst veröffentlicht wird.
 
-1. Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen** aus. Wählen Sie die AKS-Ressource aus, für die Ihre Web-App bereitgestellt wird, und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
+1. Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen** aus. Wählen Sie die AKS-Ressource aus, für die Ihre Web-App bereitgestellt wird, und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**. Momentaufnahmedebugger unterstützt auch [Azure App Service](debug-live-azure-applications.md) und [Azure Virtual Machines (VM) & Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md).
 
-      ![Starten des Momentaufnahmedebuggers im Menü „Debuggen“](../debugger/media/snapshot-debug-menu-attach.png)
+    ![Starten des Momentaufnahmedebuggers im Menü „Debuggen“](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Auswählen der Azure-Ressource](../debugger/media/snapshot-select-azure-resource-aks.png)
+    ![Auswählen der Azure-Ressource](../debugger/media/snapshot-select-azure-resource-aks.png)
+
+    > [!NOTE]
+    > (Visual Studio 2019, Version 16,2 und höher) Momentaufnahmedebugger hat den Azure-cloudsupport aktiviert. Stellen Sie sicher, dass sich sowohl die von Ihnen ausgewählte Azure-Ressource als auch das Azure Storage Konto in derselben Cloud befinden. Wenden Sie sich an Ihren Azure-Administrator, wenn Sie Fragen zu den [Azure-Konformitäts](https://azure.microsoft.com/overview/trusted-cloud/) Konfigurationen Ihres Unternehmens haben.
 
 Visual Studio ist jetzt im Modus des Debuggens von Momentaufnahmen.
 
@@ -70,7 +73,7 @@ Visual Studio ist jetzt im Modus des Debuggens von Momentaufnahmen.
 
 ## <a name="set-a-snappoint"></a>Festlegen eines Andockpunkts
 
-1. Klicken Sie im Code-Editor neben einer Codezeile, die Sie interessiert, auf den linken Bundsteg, um einen Andockpunkt festzulegen. Stellen Sie sicher, dass es sich um Code handelt, von dem Sie wissen, dass er ausgeführt wird.
+1. Klicken Sie im Code-Editor auf den linken bundplatz neben einer Codezeile, an der Sie interessiert sind, um einen andandandandler festzulegen. Stellen Sie sicher, dass der Code ausgeführt wird, den Sie kennen.
 
    ![Festlegen eines Andockpunkts](../debugger/media/snapshot-set-snappoint.png)
 
@@ -83,21 +86,21 @@ Visual Studio ist jetzt im Modus des Debuggens von Momentaufnahmen.
 
 ## <a name="take-a-snapshot"></a>Momentaufnahme erstellen
 
-Wenn ein Andockpunkt aktiviert ist, erfasst er eine Momentaufnahme, wenn die Codezeile ausgeführt wird, in der er platziert ist. Diese Ausführung kann von einer echten Anforderung auf dem Server verursacht werden. Damit Ihr Andockpunkt erreicht wird, wechseln Sie zur Browseransicht Ihrer Website, und führen Sie Aktionen durch, die sicher dazu führen, dass Ihr Andockpunkt erreicht wird.
+Nachdem ein snapspunkt festgelegt wurde, können Sie entweder manuell eine Momentaufnahme generieren, indem Sie die Browseransicht Ihrer Website aufrufen und die markierte Codezeile ausführen, oder warten Sie, bis Ihre Benutzer eine Datei aus Ihrer Website verwendet haben.
 
 ## <a name="inspect-snapshot-data"></a>Überprüfen von Momentaufnahmedaten
 
 1. Wenn der Andockpunkt erreicht wird, wird eine Momentaufnahme im Fenster „Diagnosetools“ angezeigt. Um dieses Fenster zu öffnen, wählen Sie **Debuggen > Fenster > Diagnosetools anzeigen** aus.
 
-   ![Öffnen eines Andockpunkts](../debugger/media/snapshot-diagsession-window.png)
+    ![Öffnen eines Andockpunkts](../debugger/media/snapshot-diagsession-window.png)
 
 1. Doppelklicken Sie auf den Andockpunkt, um die Momentaufnahme im Code-Editor zu öffnen.
 
-   ![Überprüfen von Momentaufnahmedaten](../debugger/media/snapshot-inspect-data.png)
+    ![Überprüfen von Momentaufnahmedaten](../debugger/media/snapshot-inspect-data.png)
 
-   In dieser Ansicht können Sie den Cursor über Variablen platzieren, um DataTips anzuzeigen, die Fenster **Lokal**, **Überwachungen** und **Aufrufliste** verwenden und auch Ausdrücke auswerten.
+    In dieser Ansicht können Sie den Cursor über Variablen platzieren, um DataTips anzuzeigen, die Fenster **Lokal**, **Überwachungen** und **Aufrufliste** verwenden und auch Ausdrücke auswerten.
 
-    Die Website selbst ist noch aktiv, und Endbenutzer sind nicht betroffen. Standardmäßig wird pro Andockpunkt nur eine einzige Momentaufnahme erfasst: Nachdem eine Momentaufnahme erfasst wurde, wird der Andockpunkt deaktiviert. Wenn Sie eine andere Momentaufnahme an dem Andockpunkt erfassen möchten, können Sie den Andockpunkt durch Klicken auf **Sammlung aktualisieren** wieder aktivieren.
+    Die Website selbst ist weiterhin Live, und Endbenutzer sind nicht betroffen. Standardmäßig wird pro Andockpunkt nur eine einzige Momentaufnahme erfasst: Nachdem eine Momentaufnahme erfasst wurde, wird der Andockpunkt deaktiviert. Wenn Sie eine andere Momentaufnahme an dem Andockpunkt erfassen möchten, können Sie den Andockpunkt durch Klicken auf **Sammlung aktualisieren** wieder aktivieren.
 
 Sie können Ihrer App auch weitere Andockpunkte hinzufügen und sie mit der Schaltfläche **Sammlung aktualisieren** aktivieren.
 
@@ -105,7 +108,7 @@ Sie können Ihrer App auch weitere Andockpunkte hinzufügen und sie mit der Scha
 
 ## <a name="set-a-conditional-snappoint"></a>Festlegen eines bedingten Andockpunkts
 
-Wenn es schwierig ist, einen bestimmten Status in Ihrer App neu herzustellen, überlegen Sie, ob die Verwendung eines bedingten Andockpunkts hilfreich sein kann. Bedingte Andockpunkte helfen Ihnen, zu vermeiden, eine Momentaufnahme zu erstellen, bevor die App in einen gewünschten Status wechselt, wenn z.B. eine Variable einen bestimmten Wert aufweist, den Sie untersuchen möchten. Sie können Bedingungen mithilfe von Ausdrücken, Filtern oder Trefferanzahl festlegen.
+Wenn es schwierig ist, einen bestimmten Zustand in Ihrer APP neu zu erstellen, sollten Sie einen bedingten andandandandandandandandand Mit bedingten snapshotpunkten können Sie steuern, wann eine Momentaufnahme erstellt werden soll, z. b. Wenn eine Variable einen bestimmten Wert enthält, den Sie überprüfen möchten. Sie können Bedingungen mithilfe von Ausdrücken, Filtern oder Trefferanzahl festlegen.
 
 #### <a name="to-create-a-conditional-snappoint"></a>So erstellen Sie einen bedingten Andockpunkt
 
