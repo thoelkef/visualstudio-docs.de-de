@@ -3,63 +3,19 @@ title: Verwalten von Visual Studio-Abonnements
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 06/24/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: 5d9c5e91f6cd76857bdd5aa4c5398cdde0db41b8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785088"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378059"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
 Das [Abonnentenportal](https://my.visualstudio.com) von Visual Studio bietet Ihnen die Möglichkeit, alle Ihre Abonnements und Programmmitgliedschaften zentral zu verwalten. Sie können Ihr Profil ändern, alle Vorteile Ihrer Abonnements nutzen und schnell und einfach zwischen den Abonnements wechseln.
-
-## <a name="signing-in-to-the-portal"></a>Anmelden beim Portal
-
-Willkommen bei Ihrem Visual Studio-Abonnement!  Mit Ihrem Abonnement erhalten Sie sämtliche Software und alle Leistungen, die Sie brauchen, um sich bei der Programmierung auf dem Laufenden zu halten, so z.B. Azure-Gutschriften, Tools für die Zusammenarbeit, Schulungsvergünstigungen, Support und mehr – das Neueste und Beste von Microsoft. Sie müssen sich anmelden, um das Portal verwenden zu können.
-
-### <a name="first-time-access"></a>Erstmaliger Zugriff
-
-Welche Schritte Sie ausführen müssen, um Ihr Abonnement erstmalig zu nutzen, hängt davon ab, wie Sie Ihr Abonnement abgerufen haben.
-
-#### <a name="microsoft-store"></a>Microsoft Store
-
-Wenn Sie über Microsoft Store ein Visual Studio-Abonnement erworben haben, können die Aktivierungsschritte von der **Bestätigungsseite** oder **Bestätigungs-E-Mail** der Zahlung aus initiiert werden.
-
-1. Klicken Sie auf der „Bestätigungsseite“ oder in der „Bestätigungs-E-Mail“ auf **Klicken Sie hier, um sich anzumelden**. Sie werden in Kürze umgeleitet zu https://my.visualstudio.com/subscriptions/activate.
-2. Geben Sie die E-Mail-Adresse ein, mit der Sie sich beim Abonnentenportal anmelden, und klicken Sie auf **Fortfahren**.
-3. Abhängig von der eingegebenen E-Mail-Adresse werden Sie auf die Anmeldeseite des Microsoft-Kontos oder auf die Anmeldeseite Ihres Unternehmens/Ihrer Schule umgeleitet.
-4. Geben Sie Ihr Kennwort ein, oder vervollständigen Sie die Anmeldeanforderungen.
-5. Geben Sie den auf der Bestätigungsseite oder in der Willkommens-E-Mail angegebenen Product Key an, und klicken Sie auf **Aktivieren**.
-
-#### <a name="workschool-accounts"></a>Geschäfts-/Schulkonten
-
-Wenn Ihr Abonnement über Ihre Arbeit/Schule bereitgestellt wurde, haben Sie eine Willkommens-E-Mail erhalten.
-
-1. Rufen Sie das [Abonnentenportal](https://my.visualstudio.com/) auf
-2. Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch in der Willkommens-E-Mail des Abonnenten angegeben. Überprüfen Sie den Junk-E-Mail-Ordner, wenn Sie die Willkommens-E-Mail nicht empfangen haben.
-3. Klicken Sie auf **Fortfahren**
-4. Sie werden auf die Anmeldeseite Ihres Unternehmens umgeleitet.
-5. Geben Sie Ihr Kennwort ein.
-6. Klicken Sie auf **Anmelden**.
-
-#### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
-
-Wenn Sie bei Visual Studio Marketplace ein Cloudabonnement für einen Monat oder ein Jahr erworben haben, rufen Sie das [Abonnentenportal](https://my.visualstudio.com/) auf, und melden Sie sich mit dem Microsoft-Konto (Microsoft Account, MSA) an, das Sie beim Erwerb des Abonnements angegeben haben.
-
-#### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Verwenden eines Geschäfts-/Schulkontos mit einem Microsoft-Konto (Microsoft Account, MSA)
-
-Wenn Ihre Organisation über Azure Active Directory verfügt, Sie jedoch kein Azure Active Directory-Konto besitzen, müssen Sie möglicherweise die **persönlichen** Optionen nutzen, die während des Anmeldeprozesses bereitgestellt werden.
-
-1. Rufen Sie das [Abonnentenportal](https://my.visualstudio.com) auf
-2. Geben Sie die E-Mail-Adresse ein, die dem neuen Visual Studio-Abonnement zugewiesen wurde. Diese Adresse wird auch im **Begrüßungsbrief** des Abonnenten angegeben. (Überprüfen Sie, ob die Willkommens-E-Mail in den Junk-E-Mail-Ordner verschoben wurde.)
-3. Klicken Sie auf **Fortfahren**
-4. Sie werden auf eine **Entscheidungsseite** umgeleitet.  Wählen Sie **Geschäfts-, Schul- oder Unikonto** aus, wenn Ihr Abonnement einem **Geschäfts-, Schul- oder Unikonto** zugewiesen wurde, das einem AAD-Mandanten (Azure Active Directory) zugeordnet ist. Wählen Sie **Persönlich** aus, wenn das Abonnement einer **geschäftlichen** E-Mail-Adresse zugeordnet ist, aber auch in ein **persönliches** Microsoft-Konto (Microsoft Account, MSA) konvertiert wurde.
-5. Geben Sie Ihr Kennwort ein
-6. Klicken Sie auf **Anmelden**
 
 ## <a name="managing-multiple-subscriptions"></a>Verwalten mehrerer Abonnements
 
@@ -87,7 +43,6 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 ## <a name="renewing-my-subscriptions"></a>Verlängern meiner Abonnements
 
 **Standardabonnements**
-
 - Microsoft Store: Wenn Sie Ihr Abonnement im [Microsoft Store](http://www.microsoft.com/store) erworben haben, können Sie es auch dort verlängern.
 - Volumenlizenz:  Wenn Ihr Unternehmen Abonnements über eine Volumenlizenz erwirbt, sollte sich der Administrator für die Verlängerung Ihres Abonnements an einen Händler wenden.
 
@@ -97,10 +52,8 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
-- [Microsoft Partner Network](https://partner.microsoft.com/en-us)
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
-
-**Visual Studio Dev Essentials:**  Dev Essentials ist ein kostenloses Programm. Die Mitgliedschaften laufen nicht ab.
+- [Microsoft Partner Network](https://partner.microsoft.com)
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
 ## <a name="transferring-subscriptions"></a>Übertragen von Abonnements
 
@@ -121,8 +74,6 @@ Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfa
 4. Klicken Sie auf **Speichern**, wenn Sie die Änderungen abgeschlossen haben.
 5. Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück**, um zur Seite „Vorteile“ zurückzukehren.
 
-   > [!div class="mx-imgBorder"]
-   > ![Bearbeiten von Profilinformationen](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>Festlegen von Kommunikationseinstellungen
 Wenn Sie regelmäßige Updates zu Ihrem Abonnement und Ihren Vorteilen sowie den monatlichen Newsletter zu Visual Studio-Abonnements erhalten möchten, [aktualisieren Sie Ihre Einstellungen](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), in dem Sie in Ihrem Visual Studio-Profil das Kontrollkästchen für Visual Studio-Abonnements aktivieren. Sie können diese Einstellungen jederzeit ändern und die Updates kündigen. 
@@ -131,7 +82,6 @@ Wenn Sie regelmäßige Updates zu Ihrem Abonnement und Ihren Vorteilen sowie den
    > ![Festlegen von Einstellungen](_img/manage-vs-subscriptions/change-prefs.png)
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Verknüpfen eines Abonnements mit vorhandenen Azure DevOps Services- oder Azure-Abonnements
-
 Wenn Sie sich mit einem persönlichen Microsoft-Konto (MSA) bei Ihrem Abonnement anmelden und ein Abonnement besitzen, für das Azure DevOps Services oder Microsoft Azure zusammen mit einem von Azure verwalteten Geschäfts-, Schul- oder Unikonto verwendet wird, können Sie die beiden Abonnements miteinander verknüpfen. Dies wird als „alternatives Konto“ bezeichnet und ermöglicht Ihnen die Weiternutzung Ihres Microsoft-Kontos zum Anmelden bei Ihrem Abonnement sowie den Zugriff auf vorhandene Azure-, Azure DevOps Services- und IDE-Ressourcen, die Ihrem Geschäfts-, Schul- oder Unikonto zugeordnet sind.
 
 Auch wenn beide Konten dieselbe E-Mail-Adresse nutzen, müssen Sie Ihr Geschäfts-/Schulkonto als Alternative hinzufügen, um Ihre Leistungen in beiden Konten in Anspruch nehmen zu können.
@@ -143,15 +93,11 @@ So fügen Sie ein alternatives Konto hinzu:
 3. Wählen Sie unter **Verwandte Links** den Eintrag **Alternatives Konto hinzufügen** aus.
 4. Geben Sie die E-Mail-Adresse Ihres Unternehmens/Ihrer Schule/Ihrer Universität ein, und klicken Sie auf **Hinzufügen**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Alternatives Konto](_img/manage-vs-subscriptions/alternate-account-resized.png)
-
 Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie auf die Registerkarte **Abonnements** klicken und die entsprechende Option im Abschnitt **Verwandte Links** auswählen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Frage: Wie lange behält Microsoft meine Daten bei, wenn ich mein Abonnement nicht verlängere?
-
 Antwort: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gespeichert.
 
 | Kanal                                                | Dauer (Tage) |

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5449f0b5cb7d2310f7f71a93236bbe5fd62eacae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4281315c8d18388cfbd4cf9bbe6b321e9e07c32b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824301"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416729"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen
 
@@ -29,7 +29,7 @@ Mit dem Dialogfeld **Konfigurations-Manager** können Sie Konfigurationen und Pl
 
 1. Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.
 
-2. Wählen Sie im Feld **Aktive Projektmappenplattform** die Plattform aus, die Ihre Projektmappe ansteuern soll, oder klicken Sie auf **\<Neu>**, um eine neue Plattform zu erstellen. Visual Studio kompiliert Ihre Plattform, damit diese die Plattform ansteuert, die als aktive Plattform im Dialogfeld **Konfigurations-Manager** festgelegt ist.
+2. Wählen Sie im Feld **Aktive Projektmappenplattform** die Plattform aus, die Ihre Projektmappe ansteuern soll, oder klicken Sie auf **\<Neu>** , um eine neue Plattform zu erstellen. Visual Studio kompiliert Ihre Plattform, damit diese die Plattform ansteuert, die als aktive Plattform im Dialogfeld **Konfigurations-Manager** festgelegt ist.
 
 ## <a name="remove-a-platform"></a>Entfernen einer Plattform
 
@@ -37,7 +37,7 @@ Wenn Sie feststellen, dass Sie keine Plattform benötigen, können Sie diese mit
 
 1. Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.
 
-2. Klicken Sie im Feld **Aktive Projektmappenplattform** auf **\<Bearbeiten>**. Das Dialogfeld **Projektmappenplattformen bearbeiten** wird geöffnet.
+2. Klicken Sie im Feld **Aktive Projektmappenplattform** auf **\<Bearbeiten>** . Das Dialogfeld **Projektmappenplattformen bearbeiten** wird geöffnet.
 
 3. Klicken Sie auf die Plattform, die Sie entfernen möchten, und dann auf **Entfernen**.
 
