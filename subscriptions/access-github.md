@@ -3,15 +3,15 @@ title: Visual Studio- und GitHub-Bündel | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informationen zum neuen Visual Studio- und GitHub-Bündel
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783440"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377650"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
 
@@ -62,15 +62,12 @@ Wenn Sie mit GitHub noch nicht vertraut sind, finden Sie hier einige Ressourcen,
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--where-is-my-github-subscription"></a>Frage:  Wo befindet sich mein GitHub-Abonnement?
-
 Antwort:  Der Prozess zum Einrichten des GitHub-Abonnements kann eine Weile dauern.  Wenn Sie schon länger warten und nichts gehört haben, können Sie sich an Ihren GitHub-Administrator wenden.  Es ist möglich, dass Ihr Administrator noch daran arbeitet oder sich entschieden hat, Ihnen kein GitHub-Abonnement zuzuweisen. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Frage:  Wie erreiche ich meinen GitHub-Administrator?
-
 Antwort:  Wenn Sie GitHub Enterprise Server verwenden, klicken Sie auf den **Support**-Link am unteren Rand des Clients, um eine Verbindung mit Ihrem Administrator herzustellen.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Frage: Erhalte ich das vollständige Visual Studio-Abonnement (Professional oder Enterprise), oder erhalte ich lediglich die IDE mit diesem Angebot?
-
 Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein vollständiges Visual Studio-Abonnement.  Sie erhalten alle Vorteile wie Softwaredownloads, Clouddienste, technischen Support und Partnervorteile im Rahmen dieses Abonnements, genau so, als ob das Abonnement separat erworben worden wäre.
 
 ## <a name="support-resources"></a>Supportressourcen
@@ -81,5 +78,4 @@ Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein volls
 - Erhalten Sie [technischen Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) für GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Nächste Schritte
-
 Wenn Sie mit GitHub noch nicht vertraut sind, sehen Sie sich das [GitHub Learning Lab](https://lab.github.com/) an, das Sie durch eine Reihe lehrreicher und praktischer Projekte führt und dabei hilfreiches Feedback an Sie weitergibt.
