@@ -18,7 +18,6 @@
 #### [Anmelden mit einem Geschäfts-, Schul- oder Unikonto](sign-in-work.md)
 #### [Anmelden mit GitHub](sign-in-github.md)
 #### [Alternative Identitäten](vs-alternate-identity.md)
-#### [Anmelden mit Aliasen](aliasing.md)
 #### [Probleme bei der Anmeldung](sign-in-issues.md)
 #### [Anonymisierungen von Abonnentendaten](anonymization.md)
 ### [Übersicht über das Abonnementportal](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [Internetdemonstrationen](internet-demos.md)
 ## Administratoren
 ### [Administratoraufgaben](admin-responsibilities.md)
+#### [Inventur vor der Produktion](admin-inventory.md)
+#### [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
+#### [Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen](assignments-orders.md)
 ### [Volumenlizenzierung](volume-license-admins.md)
 ### Onboarding Ihres Unternehmens
 #### [Onboarding nach der Migration](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [Überlastungen](handle-overclaimed-license.md)
 #### [Maximale Nutzung](maximum-usage.md)
 #### [Abgelaufene Abonnements](handle-expired-license.md)
+#### [Abonnenten mit Aliasen](aliasing.md)
 #### [Abonnenten mit privaten E-Mail-Anmeldungen](personal-email-sign-ins.md)
 ### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
 ## Ressourcen
