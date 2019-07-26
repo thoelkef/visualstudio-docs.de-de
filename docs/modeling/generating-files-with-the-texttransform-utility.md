@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7a33f7510eb862ed6af1f1d5337d8d3e2743ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993759"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493093"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
 
@@ -26,11 +26,11 @@ TextTransform.exe ist ein Befehlszeilentool, das Sie zum Transformieren einer Te
 
  TextTransform.exe befindet sich im folgenden Verzeichnis:
 
- **\Programme Dateien (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**
+ **\Programme (x86) \Microsoft Visual studio\2019\professional\common7\ide**
 
 für die Professional Edition oder
 
- **\Programme Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+ **\Programme (x86) \Microsoft Visual studio\2019\enterprise\common7\ide**
 
  für die Enterprise Edition.
 

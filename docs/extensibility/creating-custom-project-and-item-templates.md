@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377750"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493124"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt-und Element Vorlagen
 
@@ -36,7 +36,6 @@ Für grundlegende Vorlagen Erstellungs Szenarien sollten Sie den Assistenten zum
 
 ![Projektvorlagen Projektauswahl](media/project-template-selection.png)
 
-
 2. Fügen Sie dem Projekt, wie für Ihr Projekt erforderlich, Elemente hinzu, und entfernen Sie Sie. Entfernen Sie die bearbeitbare Projektdatei, die *AssemblyInfo* -Datei oder die *VSTEMPLATE* -Datei nicht.
 
 3. Aktualisieren Sie die *VSTEMPLATE* -Datei, um Ergänzungen und Löschvorgänge widerzuspiegeln. Das [Project](../extensibility/project-element-visual-studio-templates.md) -Element muss ein [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei enthalten, die in der Vorlage enthalten sein soll.
@@ -49,7 +48,7 @@ Für grundlegende Vorlagen Erstellungs Szenarien sollten Sie den Assistenten zum
 
      Visual Studio erstellt eine *ZIP* -Datei, die Ihre Vorlage enthält. Sie wurde nicht bereitgestellt und ist in der experimentellen Instanz nicht verfügbar.
 
-## <a name="create-an-item-template"></a>Erstellen einer Element Vorlage
+## <a name="create-an-item-template"></a>Erstellen einer Elementvorlage
 
 1. Erstellen Sie ein Element Vorlagen Projekt.
 
