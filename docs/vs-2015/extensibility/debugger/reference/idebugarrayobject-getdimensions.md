@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetDimensions | Microsoft-Dokumentation
+title: 'Idebugarrayobject:: GetDimensions | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/26/2019
 ms.locfileid: "68197788"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
@@ -42,16 +42,16 @@ int GetDimensions(
   
 #### <a name="parameters"></a>Parameter  
  `dwCount`  
- [in] Die Anzahl der Dimensionen, die abgerufen werden.  
+ in Die Anzahl der abzurufenden Dimensionen.  
   
  `dwDimensions`  
- [in, out] Ein Array, das mit der Größe der einzelnen Dimensionen gefüllt ist. `dwCount` Gibt an, die maximale Größe der `dwDimensions` Array.  
+ [in, out] Ein Array, das mit den Größen der einzelnen Dimensionen aufgefüllt wird. `dwCount`Gibt die maximale Größe des `dwDimensions` Arrays an.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Ein mehrdimensionales Array kann es sich um andere Größen für jede Dimension sein. Angenommen, das dreidimensionale Array `myarray[3][2][6]`, würde diese Methode zurückgeben, 3, 2 und 6 in der `dwDimensions` Parameter in dieser Reihenfolge.  
+ Ein mehrdimensionales Array kann für jede Dimension über unterschiedliche Größen verfügen. Bei Angabe des dreidimensionalen Arrays `myarray[3][2][6]`würde diese Methode z. b. 3, 2 und 6 `dwDimensions` im-Parameter in dieser Reihenfolge zurückgeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
