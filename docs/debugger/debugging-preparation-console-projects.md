@@ -1,5 +1,5 @@
 ---
-title: Vorbereitung zum Debuggen von Konsolenprojekten | Microsoft-Dokumentation
+title: Vorbereiten des Debuggens von Konsolen Projekten | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f94dcc62b829078fb8efc43ef92ddb203e1a1e32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852080"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533321"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Vorbereitung des Debugvorgangs: Konsolenprojekte (C#, C++, Visual Basic F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Vorbereitung des Debugvorgangs: Konsolen Projekte (C#, C++, Visual Basic, F#)
 
-Mit Ausnahme einiger zusätzlicher Punkte ist die Vorbereitung für das Debuggen eines Konsolenprojekts der Vorbereitung für das Debuggen eines Windows-Projekts sehr ähnlich. Weitere Informationen finden Sie unter [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md), und [Vorbereitung zum Debuggen: Windows Forms-Anwendungen (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
+Die Vorbereitung zum Debuggen eines Konsolen Projekts ähnelt dem Vorbereiten des Debuggens eines Windows-Projekts, mit einigen zusätzlichen Überlegungen wie dem Festlegen von Befehlszeilen Argumenten und dem Anhalten der APP zum Debuggen. Weitere Informationen finden Sie unter [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md)und [Vorbereitung des Debuggens: Windows Forms Anwendungen (.net)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
 
 - C#, Visual Basic und F# Konsolenanwendung
 
@@ -35,22 +35,25 @@ Mit Ausnahme einiger zusätzlicher Punkte ist die Vorbereitung für das Debuggen
 
 - C++-Konsolenanwendung (Win32)
 
-  Für die Konsolenanwendung müssen u. U. Befehlszeilenargumente angegeben werden. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), oder [Projekteinstellungen für c# Debug Configurations ](../debugger/project-settings-for-csharp-debug-configurations.md).
+  Für die Eingabe und die Anzeige von Ausgabemeldungen verwendet eine Konsolenanwendung das Fenster **Konsole**. Um in das **Konsolen** Fenster zu schreiben, muss Ihre Anwendung anstelle des Debug-Objekts das **Console** -Objekt verwenden. Verwenden Sie wie gewohnt das Debug-Objekt, um in das Fenster **Visual Studio-Ausgabe** zu schreiben. Sie sollten genau wissen, in welchem Fenster die Ausgabe erfolgt, da Sie ansonsten u. U. die Ausgabe im falschen Fenster überprüfen. Weitere Informationen finden Sie unter [Console-Klasse](/dotnet/api/system.console), [Debug-Klasse](/dotnet/api/system.diagnostics.debug) und [Ausgabefenster](../ide/reference/output-window.md).
 
-  Wie alle Projekteigenschaften bleiben diese Argumente über die Debug- und Visual Studio-Sitzungen hinweg erhalten. Wenn die Konsolenanwendung zuvor bereits debuggt wurde, sollten Sie daran denken, dass im Dialogfeld **\<Projekt> Eigenschaftenseiten** noch Argumente aus früheren Sitzungen enthalten sein können.
+## <a name="set-command-line-arguments"></a>Festlegen von Befehlszeilen Argumenten
 
-  Für die Eingabe und die Anzeige von Ausgabemeldungen verwendet eine Konsolenanwendung das Fenster **Konsole**. Zum Schreiben in die **Konsole** Fenster, die Ihre Anwendung verwenden muss die **Konsole** Objekt anstelle des Debug-Objekts. Verwenden Sie wie gewohnt das Debug-Objekt, um in das Fenster **Visual Studio-Ausgabe** zu schreiben. Sie sollten genau wissen, in welchem Fenster die Ausgabe erfolgt, da Sie ansonsten u. U. die Ausgabe im falschen Fenster überprüfen. Weitere Informationen finden Sie unter [Console-Klasse](/dotnet/api/system.console), [Debug-Klasse](/dotnet/api/system.diagnostics.debug) und [Ausgabefenster](../ide/reference/output-window.md).
+Für die Konsolenanwendung müssen u. U. Befehlszeilenargumente angegeben werden. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++ Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Projekteinstellungen für eine Visual Basic Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)oder [Projekteinstellungen C# für Debugkonfigurationen](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-## <a name="starting-the-application"></a>Starten der Anwendung
+Wie alle Projekteigenschaften bleiben diese Argumente über die Debug- und Visual Studio-Sitzungen hinweg erhalten. Wenn die Konsolenanwendung zuvor bereits debuggt wurde, sollten Sie daran denken, dass im Dialogfeld **\<Projekt> Eigenschaftenseiten** noch Argumente aus früheren Sitzungen enthalten sein können.
+
+## <a name="start-the-application"></a>Starten der Anwendung
+
  Wenn einige Konsolenanwendungen gestartet werden, werden sie vollständig ausgeführt und dann beendet. Dieses Verhalten gibt Ihnen möglicherweise nicht genügend Zeit, um die Ausführung zu unterbrechen und einen Debugvorgang durchzuführen. Zum Debuggen einer Anwendung verwenden Sie eines der folgenden Verfahren, mit dem die Anwendung gestartet wird:
 
-- Legen Sie einen Haltepunkt im Code, und starten Sie die Anwendung.
+- Legen Sie einen Haltepunkt im Code fest, und starten Sie die Anwendung.
 
-- Starten Sie Ihre Anwendung mit **F10** (**Debuggen** > **Prozedurschritt**) oder **F11** (**Debuggen**  >  **Einzelschritt**), und navigieren Sie dann mithilfe von Code mithilfe von anderen Optionen wie z. B. **Ausführung bis Klick**.
+- Starten Sie die Anwendung **mit F10** (**Debug** > **Step over**) **oder F11** (**Debug** > **step into**), und navigieren Sie dann durch den Code, indem Sie andere Optionen wie z. b. **Ausführen zum Klicken**verwenden.
 
-- Klicken Sie im Code-Editor, klicken Sie auf eine Zeile, und wählen **Ausführen bis Cursor**.
+- Klicken Sie im Code-Editor mit der rechten Maustaste auf eine Zeile, und wählen Sie **Ausführen bis Cursor**aus.
 
-  Beim Debuggen einer Konsolenanwendung möchten Sie die Anwendung möglicherweise über die Eingabeaufforderung und nicht von Visual Studio aus starten. In diesem Fall können Sie die Anwendung über die Eingabeaufforderung starten und den Visual Studio-Debugger an die Anwendung anfügen. Weitere Informationen finden Sie unter [Anfügen an ausgeführte Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+  Beim Debuggen einer Konsolenanwendung möchten Sie die Anwendung möglicherweise über die Eingabeaufforderung und nicht von Visual Studio aus starten. In diesem Fall können Sie die Anwendung über die Eingabeaufforderung starten und den Visual Studio-Debugger an die Anwendung anfügen. Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
   Wenn Sie eine Konsolenanwendung in Visual Studio starten, wird das Fenster **Konsole** manchmal hinter dem Visual Studio-Fenster angezeigt. Wenn Sie die Konsolenanwendung über Visual Studio starten und anscheinend nichts geschieht, versuchen Sie, das Visual Studio-Fenster zu verschieben.
 
