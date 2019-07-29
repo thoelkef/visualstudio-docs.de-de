@@ -54,9 +54,9 @@
       items:
         - name: 'Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer'
+        - name: 'Exemplarische Vorgehensweise: Testgesteuerte Entwicklung'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests
+        - name: Verwenden der MSTest-API in Komponententests
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Verwenden der Assert-Klassen
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: Erstellen eines datengesteuerten Komponententests
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle'
+            - name: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Komponententests für generische Methoden
           href: unit-tests-for-generic-methods.md
-        - name: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
+        - name: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere .NET-Version
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Komponententests für C-/C++-Code
       items:
@@ -227,7 +227,7 @@
         - name: Übersicht
           displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
-        - name: Anforderungen
+        - name: Requirements (Anforderungen)
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: Verwalten von Testcontrollern und Test-Agents
           href: manage-test-controllers-and-test-agents.md
