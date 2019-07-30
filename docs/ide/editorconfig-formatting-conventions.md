@@ -1,6 +1,6 @@
 ---
 title: .NET-Formatierungskonventionen für EditorConfig
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3218e819d8f94cf760cdc75d6bfa6d29d0a29568
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccebfc38d5170920fe3f3c37ee77aabaf660a3b8
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823337"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345670"
 ---
 # <a name="formatting-conventions"></a>Formatierungskonventionen
 
-Die Formatierungskonventionen für EditorConfig in Visual Studio lassen sich in zwei Kategorien unterteilen:
+Die Formatierungskonventionen für EditorConfig in Visual Studio lassen sich in folgende Kategorien unterteilen:
 
 - [.NET-Formatierungseinstellungen](#net-formatting-settings)
 
@@ -122,20 +122,32 @@ Die Formatierungsregeln in diesem Abschnitt gelten nur für C#-Code.
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
+  - csharp_indent_block_contents
+  - csharp_indent_braces
+  - csharp_indent_case_contents_when_block
 - [Abstandsoptionen](#spacing-options)
   - csharp_space_after_cast
   - csharp_space_after_keywords_in_control_flow_statements
-  - csharp_space_between_method_declaration_parameter_list_parentheses
-  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_parentheses
   - csharp_space_before_colon_in_inheritance_clause
   - csharp_space_after_colon_in_inheritance_clause
   - csharp_space_around_binary_operators
+  - csharp_space_between_method_declaration_parameter_list_parentheses
   - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-  - csharp_space_between_method_call_name_and_opening_parenthesis
+  - csharp_space_between_method_declaration_name_and_open_parenthesis
+  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_method_call_empty_parameter_list_parentheses
+  - csharp_space_between_method_call_name_and_opening_parenthesis
   - csharp_space_after_comma
+  - csharp_space_before_comma
   - csharp_space_after_dot
+  - csharp_space_before_dot
+  - csharp_space_after_semicolon_in_for_statement
+  - csharp_space_before_semicolon_in_for_statement
+  - csharp_space_around_declaration_statements
+  - csharp_space_before_open_square_brackets
+  - csharp_space_between_empty_square_brackets
+  - csharp_space_between_square_brackets
 - [Umbruchoptionen](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
@@ -371,6 +383,9 @@ Diese Formatierungsregeln beziehen sich auf die Verwendung von Einzügen zur Cod
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = true
 ```
 
 #### <a name="csharpindentcasecontents"></a>csharp\_indent\_case_contents
@@ -509,6 +524,83 @@ class C
 }
 ```
 
+#### <a name="csharpindentblockcontents"></a>csharp_indent_block_contents
+
+|||
+|-|-|
+| **Regelname** | csharp_indent_block_contents |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` - <br /><br />`false` -  |
+| **Visual Studio-Standard** | `true` |
+
+Codebeispiele:
+
+```csharp
+// csharp_indent_block_contents = true
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+
+// csharp_indent_block_contents = false
+static void Hello()
+{
+Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentbraces"></a>csharp_indent_braces
+
+|||
+|-|-|
+| **Regelname** | csharp_indent_braces |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` - <br /><br />`false` -  |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_indent_braces = true
+static void Hello()
+    {
+    Console.WriteLine("Hello");
+    }
+
+// csharp_indent_braces = false
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentcasecontentswhenblock"></a>csharp_indent_case_contents_when_block
+
+|||
+|-|-|
+| **Regelname** | csharp_indent_case_contents_when_block |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` - <br /><br />`false` -  |
+| **Visual Studio-Standard** | `true` |
+
+Codebeispiele:
+
+```csharp
+// csharp_indent_case_contents_when_block = true
+case 0:
+    {
+        Console.WriteLine("Hello");
+        break;
+    }
+
+// csharp_indent_case_contents_when_block = false
+case 0:
+{
+    Console.WriteLine("Hello");
+    break;
+}
+```
+
 ### <a name="spacing-options"></a>Abstandsoptionen
 
 Diese Formatierungsregeln beziehen sich auf die Verwendung von Leerzeichen zur Codeformatierung.
@@ -520,17 +612,26 @@ Diese Formatierungsregeln beziehen sich auf die Verwendung von Leerzeichen zur C
 [*.cs]
 csharp_space_after_cast = true
 csharp_space_after_keywords_in_control_flow_statements = true
-csharp_space_between_method_declaration_parameter_list_parentheses = true
-csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 csharp_space_before_colon_in_inheritance_clause = true
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
-csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_after_comma = true
+csharp_space_before_comma = false
 csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
 ```
 
 #### <a name="csharpspaceaftercast"></a>csharp\_space\_after_cast
@@ -540,7 +641,7 @@ csharp_space_after_dot = false
 | **Regelname** | csharp_space_after_cast |
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
-| **Werte** | `true` – Zwischen Typumwandlung und Wert muss sich ein Leerzeichen befinden.<br /><br />`false` – Zwischen Typumwandlung und Wert muss sich _kein_ Leerzeichen befinden. |
+| **Werte** | `true` – Leerzeichen zwischen einer Umwandlung und dem Wert platzieren<br /><br />`false` – Leerzeichen zwischen einer Umwandlung und dem Wert entfernen |
 | **Visual Studio-Standard** | `false` |
 
 Codebeispiele:
@@ -560,7 +661,7 @@ int y = (int)x;
 | **Regelname** | csharp_space_after_keywords_in_control_flow_statements |
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
-| **Werte** | `true` – in einer Ablaufsteuerungsanweisung wie z.B. einer `for`-Schleife ist hinter einem Schlüsselwort ein Leerzeichen erforderlich.<br /><br />`false` – in einer Ablaufsteuerungsanweisung wie z.B. einer `for`-Schleife ist hinter einem Schlüsselwort _kein_ Leerzeichen erforderlich. |
+| **Werte** | `true` – Leerzeichen nach einem Schlüsselwort in einer Ablaufsteuerungsanweisung wie einer `for`-Schleife platzieren<br /><br />`false` – Leerzeichen nach einem Schlüsselwort in einer Ablaufsteuerungsanweisung wie einer `for`-Schleife entfernen |
 | **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
@@ -571,46 +672,6 @@ for (int i;i<x;i++) { ... }
 
 // csharp_space_after_keywords_in_control_flow_statements = false
 for(int i;i<x;i++) { ... }
-```
-
-#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
-
-|||
-|-|-|
-| **Regelname** | csharp_space_between_method_declaration_parameter_list_parentheses |
-| **Gültige Sprachen** | C# |
-| **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
-| **Werte** | `true` – hinter der öffnenden Klammer und vor der schließenden Klammer einer Parameterliste der Methodendeklaration ein Leerzeichen platzieren.<br /><br />`false` – hinter der öffnenden Klammer und vor der schließenden Klammer einer Parameterliste der Methodendeklaration kein Leerzeichen platzieren. |
-| **Visual Studio-Standard** | `false` |
-
-Codebeispiele:
-
-```csharp
-// csharp_space_between_method_declaration_parameter_list_parentheses = true
-void Bark( int x ) { ... }
-
-// csharp_space_between_method_declaration_parameter_list_parentheses = false
-void Bark(int x) { ... }
-```
-
-#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
-
-|||
-|-|-|
-| **Regelname** | csharp_space_between_method_call_parameter_list_parentheses |
-| **Gültige Sprachen** | C# |
-| **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
-| **Werte** | `true` – hinter der öffnenden Klammer und vor der schließenden Klammer eines Methodenaufrufs ein Leerzeichen platzieren.<br /><br />`false` – hinter der öffnenden Klammer und vor der schließenden Klammer eines Methodenaufrufs kein Leerzeichen platzieren. |
-| **Visual Studio-Standard** | `false` |
-
-Codebeispiele:
-
-```csharp
-// csharp_space_between_method_call_parameter_list_parentheses = true
-MyMethod( argument );
-
-// csharp_space_between_method_call_parameter_list_parentheses = false
-MyMethod(argument);
 ```
 
 #### <a name="csharpspacebetweenparentheses"></a>csharp_space_between_parentheses
@@ -645,7 +706,7 @@ int y = ( int )x;
 | **Regelname** | csharp_space_before_colon_in_inheritance_clause |
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
-| **Werte** | `true` – vor dem Doppelpunkt für Basen und Schnittstellen in einer Typdeklaration ist ein Leerzeichen erforderlich.<br /><br />`false` – vor dem Doppelpunkt für Basen und Schnittstellen in einer Typdeklaration ist _kein_ Leerzeichen erforderlich. |
+| **Werte** | `true` – Leerzeichen vor dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration platzieren<br /><br />`false` – Leerzeichen vor dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration entfernen |
 | **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
@@ -681,7 +742,7 @@ class C: I
 | **Regelname** | csharp_space_after_colon_in_inheritance_clause |
 | **Gültige Sprachen** | C# |
 | **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
-| **Werte** | `true` – nach dem Doppelpunkt für Basen und Schnittstellen in einer Typdeklaration ist ein Leerzeichen erforderlich.<br /><br />`false` – nach dem Doppelpunkt für Basen und Schnittstellen in einer Typdeklaration ist _kein_ Leerzeichen erforderlich. |
+| **Werte** | `true` – Leerzeichen nach dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration platzieren<br /><br />`false` – Leerzeichen nach dem Doppelpunkt für Basen oder Schnittstellen in einer Typdeklaration entfernen |
 | **Visual Studio-Standard** | `true` |
 
 Codebeispiele:
@@ -735,6 +796,26 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
+#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
+
+|||
+|-|-|
+| **Regelname** | csharp_space_between_method_declaration_parameter_list_parentheses |
+| **Gültige Sprachen** | C# |
+| **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
+| **Werte** | `true` – hinter der öffnenden Klammer und vor der schließenden Klammer einer Parameterliste der Methodendeklaration ein Leerzeichen platzieren.<br /><br />`false` – Leerzeichen nach der öffnenden Klammer und vor der schließenden Klammer einer Parameterliste der Methodendeklaration entfernen |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_between_method_declaration_parameter_list_parentheses = true
+void Bark( int x ) { ... }
+
+// csharp_space_between_method_declaration_parameter_list_parentheses = false
+void Bark(int x) { ... }
+```
+
 #### <a name="csharpspacebetweenmethoddeclarationemptyparameterlistparentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |||
@@ -760,6 +841,81 @@ void Goo(int x)
 }
 
 // csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+#### <a name="csharpspacebetweenmethoddeclarationnameandopenparenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
+
+|||
+|-|-|
+| **Regelname** | csharp_space_between_method_declaration_name_and_open_parenthesis |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen zwischen dem Methodennamen und der öffnenden Klammer in der Methodendeklaration platzieren<br /><br />`false` – Leerzeichen zwischen dem Methodennamen und der öffnenden Klammer in der Methodendeklaration entfernen |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_between_method_declaration_name_and_open_parenthesis = true
+void M () { }
+
+// csharp_space_between_method_declaration_name_and_open_parenthesis = false
+void M() { }
+```
+
+#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
+
+|||
+|-|-|
+| **Regelname** | csharp_space_between_method_call_parameter_list_parentheses |
+| **Gültige Sprachen** | C# |
+| **Eingeführt in Version** | Visual Studio 2017 Version 15.3 |
+| **Werte** | `true` – hinter der öffnenden Klammer und vor der schließenden Klammer eines Methodenaufrufs ein Leerzeichen platzieren.<br /><br />`false` – Leerzeichen nach der öffnenden Klammer und vor der schließenden Klammer eines Methodenaufrufs entfernen |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_between_method_call_parameter_list_parentheses = true
+MyMethod( argument );
+
+// csharp_space_between_method_call_parameter_list_parentheses = false
+MyMethod(argument);
+```
+
+#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
+
+|||
+|-|-|
+| **Regelname** | csharp_space_between_method_call_empty_parameter_list_parentheses |
+| **Gültige Sprachen** | C# |
+| **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
+| **Werte** | `true` – Leerzeichen zwischen Klammern um leere Argumentliste einfügen.<br /><br />`false` – Leerzeichen zwischen Klammern um leere Argumentliste entfernen. |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
 void Goo()
 {
     Goo(1);
@@ -807,42 +963,6 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
-
-|||
-|-|-|
-| **Regelname** | csharp_space_between_method_call_empty_parameter_list_parentheses |
-| **Gültige Sprachen** | C# |
-| **Eingeführt in Version** | Visual Studio 2017-Version 15.7 |
-| **Werte** | `true` – Leerzeichen zwischen Klammern um leere Argumentliste einfügen.<br /><br />`false` – Leerzeichen zwischen Klammern um leere Argumentliste entfernen. |
-| **Visual Studio-Standard** | `false` |
-
-Codebeispiele:
-
-```csharp
-// csharp_space_between_method_call_empty_parameter_list_parentheses = true
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo( );
-}
-
-// csharp_space_between_method_call_empty_parameter_list_parentheses = false
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo();
-}
-```
-
 #### <a name="csharpspaceaftercomma"></a>csharp_space_after_comma
 
 |||
@@ -862,6 +982,25 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
+#### <a name="csharpspacebeforecomma"></a>csharp_space_before_comma
+
+|||
+|-|-|
+| **Regelname** | csharp_space_before_comma |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen vor einem Komma einfügen<br /><br />`false` – Leerzeichen vor einem Komma entfernen |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_before_comma = true
+int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
+
+// csharp_space_before_comma = false
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+```
+
 #### <a name="csharpspaceafterdot"></a>csharp_space_after_dot
 
 |||
@@ -879,6 +1018,139 @@ this. Goo();
 
 // csharp_space_after_dot = false
 this.Goo();
+```
+
+#### <a name="csharpspacebeforedot"></a>csharp_space_before_dot
+
+|||
+|-|-|
+| **Regelname** | csharp_space_before_dot |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen vor einem Punkt einfügen <br /><br />`false` – Leerzeichen vor einem Punkt entfernen |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_before_dot = true
+this .Goo();
+
+// csharp_space_before_dot = false
+this.Goo();
+```
+
+#### <a name="csharpspaceaftersemicoloninforstatement"></a>csharp_space_after_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Regelname** | csharp_space_after_semicolon_in_for_statement |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen nach jedem Semikolon in einer `for`-Anweisung einfügen<br /><br />`false` – Leerzeichen nach jedem Semikolon in einer `for`-Anweisung entfernen |
+| **Visual Studio-Standard** | `true` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_after_semicolon_in_for_statement = true
+for (int i = 0; i < x.Length; i++)
+
+// csharp_space_after_semicolon_in_for_statement = false
+for (int i = 0;i < x.Length;i++)
+```
+
+##### <a name="csharpspacebeforesemicoloninforstatement"></a>csharp_space_before_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Regelname** | csharp_space_before_semicolon_in_for_statement |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen vor jedem Semikolon in einer `for`-Anweisung einfügen <br /><br />`false` – Leerzeichen vor jedem Semikolon in einer `for`-Anweisung entfernen |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_before_semicolon_in_for_statement = true
+for (int i = 0 ; i < x.Length ; i++)
+
+// csharp_space_before_semicolon_in_for_statement = false
+for (int i = 0; i < x.Length; i++)
+```
+
+#### <a name="csharpspacearounddeclarationstatements"></a>csharp_space_around_declaration_statements
+
+|||
+|-|-|
+| **Regelname** | csharp_space_around_declaration_statements |
+| **Gültige Sprachen** | C# |
+| **Werte** | `ignore` – Keine zusätzlichen Leerzeichen in Deklarationsanweisungen entfernen<br /><br />`false` – Zusätzliche Leerzeichen in Deklarationsanweisungen entfernen |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_around_declaration_statements = ignore
+int    x    =    0   ;
+
+// csharp_space_around_declaration_statements = false
+int x = 0;
+```
+
+#### <a name="csharpspacebeforeopensquarebrackets"></a>csharp_space_before_open_square_brackets
+
+|||
+|-|-|
+| **Regelname** | csharp_space_before_open_square_brackets |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen vor öffnenden eckigen Klammern einfügen `[` <br /><br />`false` – Leerzeichen vor öffnenden eckigen Klammern entfernen `[` |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_before_open_square_brackets = true
+int [] numbers = new int [] { 1, 2, 3, 4, 5 };
+
+// csharp_space_before_open_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweenemptysquarebrackets"></a>csharp_space_between_empty_square_brackets
+
+|||
+|-|-|
+| **Regelname** | csharp_space_between_empty_square_brackets |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen zwischen leeren eckigen Klammern einfügen `[ ]` <br /><br />`false` – Leerzeichen zwischen leeren eckigen Klammern entfernen `[]` |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_between_empty_square_brackets = true
+int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
+
+// csharp_space_between_empty_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweensquarebrackets"></a>csharp_space_between_square_brackets
+
+|||
+|-|-|
+| **Regelname** | csharp_space_between_square_brackets |
+| **Gültige Sprachen** | C# |
+| **Werte** | `true` – Leerzeichen in nicht leeren eckigen Klammern einfügen `[ 0 ]` <br /><br />`false` – Leerzeichen aus nicht leeren eckigen Klammern entfernen `[0]` |
+| **Visual Studio-Standard** | `false` |
+
+Codebeispiele:
+
+```csharp
+// csharp_space_between_square_brackets = true
+int index = numbers[ 0 ];
+
+// csharp_space_between_square_brackets = false
+int index = numbers[0];
 ```
 
 ### <a name="wrap-options"></a>Umbruchoptionen

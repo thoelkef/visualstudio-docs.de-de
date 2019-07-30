@@ -1,17 +1,17 @@
 ---
 title: Verwenden des Abonnentenportals – http://my.visualstudio.com | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über sämtliche Vorteile, die Sie im Portal für Visual Studio-Abonnements nutzen können.
-ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784780"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377919"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Verwenden des Abonnentenportals – „my.visualstudio.com“
 
@@ -51,3 +51,6 @@ Zusätzlich zu den einzelnen Vorteilen, die in der Kategorie „Support“ auf d
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Müssen Sie ein Visual Studio-Cloudabonnement verlängern?  Möchten Sie die aktuellen Erweiterungen für die Visual Studio-Produktfamilie herunterladen?  Marketplace unterstützt Benutzer beim Suchen nach Erweiterungen, Tools und Diensten, die Azure DevOps, Azure DevOps Server und Visual Studio Code weiter optimieren. Sie können sogar Herausgeber werden und eigene Erweiterungen auf dem Markt veröffentlichen.
+
+## <a name="next-steps"></a>Nächste Schritte
+Melden Sie sich über [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) beim Portal an, und erfahren Sie mehr über Ihre Vorteile.  Außerdem erhalten Sie Informationen zum Anmelden beim Portal mit Ihrem [Microsoft-Konto](sign-in-msa.md) (MSA), Ihrem [Geschäfts-, Schul- oder Unikonto](sign-in-work.md) oder Ihrem [GitHub-Konto](sign-in-github.md). 

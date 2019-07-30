@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung
 description: Erfahren Sie, wie Sie Visual Studio aktualisieren, und dabei innerhalb einer Baseline für die Wartung bleiben.
-ms.date: 05/22/2019
+ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
@@ -12,16 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250333"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300549"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung
 
-Visual Studio 2019 durchläuft während seines [Produktlebenszyklus](/visualstudio/productinfo/release-rhythm#release-channel-updates) häufige Aktualisierungen. Dazu zählen sowohl kleinere Versionsaktualisierungen (z.B. von 16.0 auf 16.1), die neue Features und Komponenten beinhalten können, als auch Wartungsupdates (z.B. 16.0.4 auf 16.0.5), die nur gezielte Korrekturen für kritische Probleme enthalten.
+Während des Produktlebenszyklus wird Visual Studio häufig aktualisiert. Es gibt zwei Arten von Updates: 
+
+* **Updates für die Nebenversion**, z. B. von &mdash;16.0 auf 16.1&mdash;, die neue Features und Komponenten enthalten.  
+* **Wartungsupdates**, z. B. von 16.0.4 auf 16.0.5, die nur gezielte Korrekturen für kritische Probleme enthalten.
 
 Unternehmensadministratoren können auswählen, ob sie für ihre Clients eine Baseline für die Wartung verwenden. Diese wird für ein Jahr über die Veröffentlichung der nächsten Baseline für die Wartung hinaus mit Wartungsupdates unterstützt.
 
@@ -34,7 +37,7 @@ Um mit der Verwendung einer Baseline für die Wartung zu beginnen, laden Sie ein
 > [!NOTE]
 > Beachten Sie den Unterschied zwischen einem Bootstrapper für eine bestimmte Version und den standardmäßigen Bootstrappern. Die standardmäßigen Bootstrapper sind so konfiguriert, dass sie jeweils die neueste verfügbare Version von Visual Studio verwenden. Sie enthalten eine Nummer im Dateinamen (z.B. vs_enterprise__123456789-123456789.exe), wenn sie von „My.VisualStudio.com“ heruntergeladen werden.
 
-Während der Installation müssen Unternehmensadministratoren ihre Clients konfigurieren, um deren Aktualisierung auf die neueste Version zu verhindern. Sie können die Clients auf verschiedene Arten konfigurieren:
+Während der Installation müssen Unternehmensadministratoren ihre Clients konfigurieren, um deren Aktualisierung auf die neueste Version zu verhindern. Dafür stehen verschiedene Möglichkeiten zur Verfügung:
 - [Ändern Sie die `channelUri`-Einstellung in der Antwortkonfigurationsdatei](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network), um ein Kanalmanifest im Layout oder im lokalen Ordner zu verwenden.
 - [Ändern Sie den channelUri über die Befehlszeile](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet), um eine nicht vorhandene Datei zu verwenden.
 - [Legen Sie Richtlinien für das Clientsystem fest, um Updates zu deaktivieren](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), damit sich Clients nicht selbsttätig aktualisieren.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b20cf3692cf76f602eb11b0a53a1669c919f1679
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043574"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345734"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio verwendet [reguläre .NET-Ausdrücke](/dotnet/standard/base-types/
 
 ## <a name="regular-expression-examples"></a>Beispiele für reguläre Ausdrücke
 
-Die folgenden Tabellen enthalten eine Auswahl an Zeichen, Operatoren, Konstrukten und Musterbeispielen für reguläre Ausdrücke. Eine vollständige Referenz finden Sie unter [Sprachelemente für reguläre Ausdrücke](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+Die folgende Tabelle enthält eine Auswahl an Zeichen, Operatoren, Konstrukten und Musterbeispielen für reguläre Ausdrücke. Eine vollständige Referenz finden Sie unter [Sprachelemente für reguläre Ausdrücke](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 |Zweck|Ausdruck|Beispiel|
 |-------------|----------------|-------------|
@@ -45,7 +45,7 @@ Die folgenden Tabellen enthalten eine Auswahl an Zeichen, Operatoren, Konstrukte
 |Verankern der übereinstimmende Zeichenfolge am Ende der Datei|$|`end$` findet „end“ nur, wenn es am Ende der Datei vorkommt.|
 |Übereinstimmung mit beliebigem Zeichen in einem Satz|[abc]|`b[abc]` findet „ba“, „bb“ und „bc“.|
 |Übereinstimmung mit beliebigem Zeichen in einem Bereich von Zeichen|[a-f]|`be[n-t]` findet „bet“ in „between“, „ben“ in „beneath“ und „bes“ in „beside“, jedoch nicht „bel“ in „below“.|
-|Erfassung und implizite Nummerierung des in Klammern befindlichen Ausdrucks|()|`([a-z])X\1` findet „aXa“ und „bXb“, jedoch nicht „aXb“. „\1“ bezieht sich auf die erste Ausdrucksgruppe „[a-z]“.|
+|Erfassung und implizite Nummerierung des in Klammern befindlichen Ausdrucks|()|`([a-z])X\1` findet „aXa“ und „bXb“, jedoch nicht „aXb“. „\1“ bezieht sich auf die erste Ausdrucksgruppe „[a-z]“. Weitere Informationen finden Sie unter [Erfassungsgruppen und Ersetzungsmuster](#capture-groups-and-replacement-patterns). |
 |Aufheben der Gültigkeit einer Übereinstimmung|(?!abc)|`real(?!ity)` findet „real“ in „realty“ und „really“, jedoch nicht in „reality“. Findet außerdem das zweite "real" (jedoch nicht das erste "real") in "realityreal".|
 |Übereinstimmung mit beliebigem Zeichen, das sich nicht in einem angegebenen Satz von Zeichen befindet. Weitere Informationen finden Sie unter [Negative Zeichengruppe](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` findet „bef“ in „before“, „beh“ in „behind“ und „bel“ in „below“, jedoch nicht „beneath“.|
 |Übereinstimmung mit dem Ausdruck vor oder nach dem Symbol.|&#124;|`(sponge\|mud) bath` findet „sponge bath“ und „mud bath“.|

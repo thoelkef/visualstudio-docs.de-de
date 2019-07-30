@@ -9,14 +9,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531629"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416478"
 ---
-# <a name="generate-usings-in-visual-studio"></a>Generieren von Using-Anweisungen in Visual Studio
+# <a name="add-missing-usings-in-visual-studio"></a>Hinzufügen fehlender using-Anweisungen in Visual Studio
 
 Diese Codegenerierung gilt für:
 
@@ -28,7 +30,7 @@ Diese Codegenerierung gilt für:
 
 **Vorteile**: Da die Schnellaktion erforderliche Import-Anweisungen automatisch hinzufügt, müssen Sie die in Ihrem Code erforderlichen `using`-Anweisungen nicht manuell kopieren.
 
-## <a name="generate-usings-refactoring"></a>Refactoring: Generieren von Using-Anweisungen
+## <a name="add-missing-usings-refactoring"></a>Refactoring: Hinzufügen fehlender using-Anweisungen
 
 1. Kopieren Sie Code aus einer Datei, und fügen Sie ihn in eine neue Datei ohne die erforderlichen `using`-Anweisungen ein. Zusammen mit dem resultierenden Fehler wird ein Codefix angezeigt, der die fehlenden `using`-Anweisungen hinzufügt.
 
@@ -39,7 +41,7 @@ Diese Codegenerierung gilt für:
 
     ![Generieren von Using-Anweisungen](media/generate-using-codefix.png)
 
-3. Klicken Sie auf **Using \<Ihr Verweis\>;**, um den fehlenden Verweis hinzuzufügen.
+3. Klicken Sie auf **Using \<Ihr Verweis\>;** , um den fehlenden Verweis hinzuzufügen.
 
     ![Ergebnisse des Generierens von Using-Anweisungen](media/generate-using-result.png)
 
