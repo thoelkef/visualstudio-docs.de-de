@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8931e16751355a7f25c9ab88dbcd554bc7cb0ea7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97b1fc79c7b558fc4445b3d2621746e752a4ef71
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965593"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416486"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Erfahren Sie mehr über Projekte und Projektmappen mithilfe von Visual Basic
 
@@ -73,6 +73,8 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, und wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter** aus.
 
+   ![Vorlage „Leere Projektmappe“ in Visual Studio 2019](../media/vs-2019/tutorial-projects-blank-solution-template.png)
+
 4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen** aus.
 
    Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
@@ -82,6 +84,8 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 ### <a name="add-a-project"></a>Hinzufügen eines Projekts
 
 Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem leeren Projekt, und fügen Sie anschließend die benötigten Elemente hinzu.
+
+::: moniker range="vs-2017"
 
 1. Klicken Sie im Kontextmenü (Rechtsklick) der **Projektmappe „QuickSolution“** im **Projektmappen-Explorer** auf **Hinzufügen** > **Neues Projekt**.
 
@@ -93,8 +97,31 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
 
    > [!NOTE]
    > Wenn im linken Bereich des Dialogfelds nicht **Visual Basic** angezeigt wird, müssen Sie die *Workload* **.NET-Desktopentwicklung** von Visual Studio installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds **Neues Projekt hinzufügen** erledigen. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   >
+   > ![Öffnen des Links „Visual Studio-Installer“](media/tutorial-projects-open-installer-vb.png)
 
-   ![Öffnen des Links „Visual Studio-Installer“](media/tutorial-projects-open-installer-vb.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Klicken Sie im Kontextmenü (Rechtsklick) der **Projektmappe „QuickSolution“** im **Projektmappen-Explorer** auf **Hinzufügen** > **Neues Projekt**.
+
+   Ein Dialogfeld mit dem Titel **Neues Projekt hinzufügen** wird geöffnet.
+
+1. Geben Sie den Text **Leer** oben in das Suchfeld ein, und klicken Sie dann unter **Sprache** auf **Visual Basic**.
+
+1. Klicken Sie zuerst auf die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) und anschließend auf **Weiter**.
+
+1. Geben Sie dem Projekt den Namen **QuickDate**, und klicken Sie anschließend auf **Erstellen**.
+
+   Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
+
+   > [!NOTE]
+   > Wenn die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) nicht angezeigt wird, müssen Sie die Visual Studio-*Workload* **.NET-Desktopentwicklung** installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Eine einfache Möglichkeit, eine neue Workload beim Erstellen eines neuen Projekts zu installieren, besteht darin, auf den Link **Install more tools and features** (Weitere Tools und Features installieren) unter dem Text **Not finding what you're looking for?** (Sie finden nicht, wonach Sie suchen?) zu klicken. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   >
+   > ![Installerlink in Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
+
+::: moniker-end
 
 ## <a name="add-an-item-to-the-project"></a>Hinzufügen eines Elements zum Projekt
 
@@ -132,13 +159,27 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
 1. Klicken Sie im Kontextmenü (Rechtsklick) der **Projektmappe „QuickSolution“** im **Projektmappen-Explorer** auf **Hinzufügen** > **Neues Projekt**.
 
-   Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
+::: moniker range="Vs-2017"
 
-1. Erweitern Sie im linken Bereich **Visual Basic**, und wählen Sie die Kategorie **Test** aus. Wählen Sie im mittleren Bereich die Projektvorlage **Komponententestprojekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf die Schaltfläche **OK**.
+2. Erweitern Sie im linken Bereich **Visual Basic**, und wählen Sie die Kategorie **Test** aus. Wählen Sie im mittleren Bereich die Projektvorlage **Komponententestprojekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **OK**.
 
    Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.vb* geöffnet.
 
    ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/tutorial-projects-solution-explorer-vb.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie im Dialogfeld **Neues Projekt hinzufügen** oben in das Suchfeld den Text **Komponententest** ein, und klicken Sie dann unter **Sprache** auf **Visual Basic**.
+
+3. Klicken Sie zunächst auf die Projektvorlage **Unit Test Project (.NET Framework)** (Komponententestprojekt (.NET Framework)) und anschließend auf **Weiter**.
+
+4. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **Erstellen**.
+
+   Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.vb* geöffnet.
+
+::: moniker-end
 
 ## <a name="add-a-project-reference"></a>Hinzufügen eines Projektverweises
 

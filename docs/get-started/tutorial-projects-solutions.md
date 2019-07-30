@@ -1,6 +1,6 @@
 ---
 title: Einführung in Projekte und Projektmappen
-ms.date: 12/11/2017
+ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 498f52a85f52206bf5c12a2d591ce169eb0775fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e473d6d1512488950188b1e1649542f0341f43
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943683"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415656"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Erfahren Sie mehr über Projekte und Projektmappen
 
@@ -49,13 +49,13 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie auf der oberen Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
 1. Erweitern Sie im linken Bereich **Andere Projekttypen**, und klicken Sie dann auf **Visual Studio-Projektmappen**. Wählen Sie im mittleren Bereich die Vorlage **Leere Projektmappe** aus. Geben Sie Ihrer Projektmappe den Namen **QuickSolution**, und klicken Sie anschließend auf die Schaltfläche **OK**.
 
-   ![Vorlage „Leere Projektmappe“ in Visual Studio](media/tutorial-projects-new-solution.png)
+   ![Vorlage „Leere Projektmappe“ in Visual Studio 2017](media/tutorial-projects-new-solution.png)
 
    Die **Startseite** wird geschlossen, und im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
 
@@ -69,6 +69,8 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, und wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter** aus.
 
+   ![Vorlage „Leere Projektmappe“ in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+
 4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen** aus.
 
    Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
@@ -79,18 +81,43 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem leeren Projekt, und fügen Sie anschließend die benötigten Elemente hinzu.
 
+::: moniker range="vs-2017"
+
 1. Klicken Sie im Kontextmenü (Rechtsklick) der **Projektmappe „QuickSolution“** im **Projektmappen-Explorer** auf **Hinzufügen** > **Neues Projekt**.
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
-1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich die Vorlage **Leeres Projekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickDate**, und klicken Sie anschließend auf die Schaltfläche **OK**.
+1. Erweitern Sie im linken Bereich **Visual C#** , und wählen Sie **Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich die Vorlage **Leeres Projekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickDate**, und klicken Sie anschließend auf **OK**.
 
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
 
    > [!NOTE]
    > Wenn im linken Bereich des Dialogfelds nicht **Visual C#** angezeigt wird, müssen Sie die *Workload* **.NET-Desktopentwicklung** von Visual Studio installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds **Neues Projekt hinzufügen** erledigen. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   >
+   > ![Öffnen des Links „Visual Studio-Installer“](media/tutorial-projects-open-installer.png)
 
-   ![Öffnen des Links „Visual Studio-Installer“](media/tutorial-projects-open-installer.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Klicken Sie im Kontextmenü (Rechtsklick) der **Projektmappe „QuickSolution“** im **Projektmappen-Explorer** auf **Hinzufügen** > **Neues Projekt**.
+
+   Ein Dialogfeld mit dem Titel **Neues Projekt hinzufügen** wird geöffnet.
+
+1. Geben Sie den Text **Leer** oben in das Suchfeld ein, und klicken Sie dann unter **Sprache** auf **C#** .
+
+1. Klicken Sie zuerst auf die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) und anschließend auf **Weiter**.
+
+1. Geben Sie dem Projekt den Namen **QuickDate**, und klicken Sie anschließend auf **Erstellen**.
+
+   Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
+
+   > [!NOTE]
+   > Wenn die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) nicht angezeigt wird, müssen Sie die Visual Studio-*Workload* **.NET-Desktopentwicklung** installieren. Visual Studio verwendet die Workload-basierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihren Entwicklungstyp benötigen. Eine einfache Möglichkeit, eine neue Workload beim Erstellen eines neuen Projekts zu installieren, besteht darin, auf den Link **Install more tools and features** (Weitere Tools und Features installieren) unter dem Text **Not finding what you're looking for?** (Sie finden nicht, wonach Sie suchen?) zu klicken. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   >
+   > ![Öffnen des Links „Visual Studio-Installer“](media/vs-2019/tutorial-projects-open-installer.png)
+
+::: moniker-end
 
 ## <a name="add-an-item-to-the-project"></a>Hinzufügen eines Elements zum Projekt
 
@@ -138,45 +165,69 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
 1. Klicken Sie im Kontextmenü (Rechtsklick) der **Projektmappe „QuickSolution“** im **Projektmappen-Explorer** auf **Hinzufügen** > **Neues Projekt**.
 
-   Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
+::: moniker range="vs-2017"
 
-1. Erweitern Sie im linken Bereich **Visual Basic**, und wählen Sie die Kategorie **Test** aus. Wählen Sie im mittleren Bereich die Projektvorlage **Komponententestprojekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf die Schaltfläche **OK**.
+2. Erweitern Sie im linken Bereich **Visual C#** , und wählen Sie die Kategorie **Test** aus. Wählen Sie im mittleren Bereich die Projektvorlage **MSTest Test Project (.NET Core)** (MSTest-Testprojekt (.NET Core)) aus. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **OK**.
 
-   Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.vb* geöffnet. Die Erweiterung *.vb* wird allen Visual Basic-Codedateien hinzugefügt.
+   Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.cs* geöffnet.
 
    ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/tutorial-projects-solution-explorer.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Geben Sie im Dialogfeld **Neues Projekt hinzufügen** oben in das Suchfeld den Text **Komponententest** ein, und klicken Sie dann unter **Sprache** auf **C#** .
+
+3. Klicken Sie zunächst auf die Projektvorlage **MSTest Test Project (.NET Core)** (MSTest-Testprojekt (.NET Core)) und anschließend auf **Weiter**.
+
+4. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **Erstellen**.
+
+   Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.cs* geöffnet.
+
+   ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/vs-2019/tutorial-projects-solution-explorer.png)
+
+::: moniker-end
 
 ## <a name="add-a-project-reference"></a>Hinzufügen eines Projektverweises
 
 Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im Projekt **QuickDate** zu testen. Aus diesem Grund müssen Sie einen Verweis auf das Projekt hinzufügen. Dadurch entsteht eine *Buildabhängigkeit* zwischen den beiden Projekten, d.h., **QuickDate** wird beim Erstellen der Projektmappe vor **QuickTest** erstellt.
 
-1. Klicken Sie im **QuickTest**-Projekt auf den Knoten **Verweise**, und klicken Sie anschließend im Kontextmenü (Rechtsklick) auf **Verweis hinzufügen**.
-
-   ![Hinzufügen eines Verweismenüs](media/tutorial-projects-add-reference.png)
+1. Klicken Sie im **QuickTest**-Projekt zunächst auf den Knoten **Abhängigkeiten**, und anschließend im Kontextmenü (Rechtsklick) auf **Verweis hinzufügen**.
 
    Das Dialogfeld **Verweis-Manager** wird geöffnet.
 
-1. Erweitern Sie im linken Bereich **Projekte**, und wählen Sie **Projektmappe** aus. Aktivieren Sie im mittleren Bereich das Kontrollkästchen neben **QuickDate**, und klicken Sie dann auf **OK**.
+1. Erweitern Sie im linken Bereich **Projekte**, und wählen Sie **Projektmappe** aus. Aktivieren Sie im mittleren Bereich das Kontrollkästchen neben **QuickDate**, und klicken Sie dann auf **OK.
 
    Dem **QuickDate**-Projekt wird ein Verweis hinzugefügt.
 
+   ![Anzeigen des Projektmappen-Explorer-Projektverweises in Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+
 ## <a name="add-test-code"></a>Hinzufügen von Testcode
 
-1. Fügen Sie jetzt der Visual Basic-Codedatei Testcode hinzu. Ersetzen Sie den Inhalt von *UnitTest1.vb* durch den folgenden Code.
+1. Fügen Sie jetzt Testcode zur C#-Testcodedatei hinzu. Ersetzen Sie den Inhalt von *UnitTest1.cs* durch den folgenden Code:
 
-   ```vb
-   <TestClass()> Public Class UnitTest1
+   ```csharp
+   using System;
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-       <TestMethod()> Public Sub TestGetCurrentDate()
-           Assert.AreEqual(DateTime.Now.Date, QuickDate.Calendar.GetCurrentDate())
-       End Sub
-
-   End Class
+   namespace QuickTest
+   {
+       [TestClass]
+       public class UnitTest1
+       {
+           [TestMethod]
+           public void TestGetCurrentDate()
+           {
+               Assert.AreEqual(DateTime.Now.Date, QuickDate.Calendar.GetCurrentDate());
+           }
+       }
+   }
    ```
 
    Unter einigen Teilen des Codes werden rote Wellenlinien angezeigt. Sie können diesen Fehler beheben, indem Sie das Testprojekt als [Friend-Assembly](/dotnet/standard/assembly/friend-assemblies) für das **QuickDate**-Projekt festlegen.
 
-1. Öffnen Sie im Projekt **QuickDate** die Datei *Calendar.cs*, falls diese noch nicht geöffnet ist, und fügen Sie die folgende [using-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) und das folgende Attribut <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> am Anfang der Datei hinzu, um den Fehler in dem Testprojekt zu beheben.
+1. Öffnen Sie im **QuickDate**-Projekt die Datei *Calendar.cs*, falls diese noch nicht geöffnet ist. Fügen Sie oben in der Datei die folgende [Using-Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) und das <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>-Attribut hinzu, um den Fehler im Testprojekt zu beheben.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -196,9 +247,9 @@ In der Zeile in der *Calendar.cs*-Datei mit dem Attribut <xref:System.Runtime.Co
 
    Die *Eigenschaftenseiten* für das Projekt werden auf der Registerkarte **Anwendung** geöffnet. Die Eigenschaftenseiten enthalten verschiedene Einstellungen für das Projekt. Beachten Sie, dass der Assemblyname des **QuickTest**-Projekts tatsächlich „QuickTest“ lautet. Falls gewünscht können Sie ihn an dieser Stelle ändern. Wenn Sie das Testprojekt erstellen, ändert sich der Name der entstandenen Binärdatei von *QuickTest.dll* in den von Ihnen ausgewählten Namen.
 
-   ![Projekteigenschaften](media/tutorial-projects-properties.png)
+   ![Projekteigenschaften](media/tutorial-projects-netcore-properties.png)
 
-1. Entdecken Sie einige der anderen Registerkarten der Eigenschaftenseiten des Projekt, z.B. **Kompilieren** und **Einstellungen**. Diese Registerkarten sind bei den verschiedenen Projekttypen unterschiedlich.
+1. Sehen Sie sich einige der anderen Registerkarten der Eigenschaftenseite des Projekts an, z. B. **Build** und **Debuggen**. Diese Registerkarten sind bei den verschiedenen Projekttypen unterschiedlich.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

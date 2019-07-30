@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553950"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300588"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Schritt 3: Arbeiten mit Daten mithilfe von Entity Framework
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<SchoolContext>();
+            var context = services.GetRequiredService<AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -105,6 +105,15 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
+Fügen Sie am Ende des vorhandenen Using-Anweisungblocks die folgenden Using-Anweisungen zu *Program.cs* hinzu, um die Typnamen im vorangehenden Code aufzulösen:
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.Models;
+```
+
+Achten Sie darauf, dass Sie in Ihrem Code anstelle von „WebApplication1“ Ihren Projektnamen verwenden.
 
 Der meiste Code dient nur zur Fehlerbehandlung und um Zugriff auf den EF Core `AppDbContext` zu bieten, bevor die App ausgeführt wird. Die wichtigste Zeile ist `context.Database.EnsureCreated()`, die die Datenbank erstellt, wenn sie noch nicht vorhanden ist. Jetzt kann die App ausgeführt werden.
 

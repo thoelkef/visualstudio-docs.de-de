@@ -11,34 +11,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b8b11b01afa1d78aef9403acd13a305e36b2613
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531949"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377988"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung im Editor
 
 Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Kleinschreibung von ausgewähltem Text in nur Großbuchstaben oder nur Kleinbuchstaben zu ändern.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in diesem Artikel beschriebenen. Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen**, um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
+> Die angezeigten Dialogfelder und Menübefehl unterscheiden sich möglicherweise von den in diesem Artikel beschriebenen Dialogfeldern und Menübefehlen, die auf den Entwicklungseinstellungen **Allgemein** basieren. Klicken Sie zum Ändern Ihrer Entwicklungseinstellungen zunächst auf **Tools** > **Einstellungen importieren/exportieren** und anschließend auf **Alle Einstellungen zurücksetzen**.
 
-## <a name="to-switch-text-to-upper-case"></a>So ändern Sie Text in Großbuchstaben
+## <a name="to-change-text-case"></a>Ändern der Groß- und Kleinschreibung
 
 1. Markieren Sie den Text, den Sie konvertieren möchten.
 
-2. Wählen Sie im Menü **Bearbeiten** die Option **Erweitert** aus.
+2. Klicken Sie zum Ändern des Texts in Großbuchstaben auf **Bearbeiten** > **Erweitert** > **In Großbuchstaben umwandeln**, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.
 
-3. Klicken Sie auf **In Großbuchstaben umwandeln**, um Text in Großbuchstaben zu ändern, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.
+   Klicken Sie zum Ändern des Texts in Kleinbuchstaben auf **Bearbeiten** > **Erweitert** > **In Kleinbuchstaben umwandeln**, oder drücken Sie **STRG**+**U**.
 
-    - oder -
-
-    Klicken Sie auf **In Kleinbuchstaben umwandeln**, um Text in Kleinbuchstaben zu ändern, oder drücken Sie **STRG**+**U**.
-
-    > [!TIP]
-    > Wenn Sie die Formatierung der Groß-/Kleinschreibung vor diesen Änderungen wiederherstellen möchten, wählen Sie im Menü **Bearbeiten** **Rückgängig** aus.
+> [!TIP]
+> Wenn Sie die Formatierung der Groß-/Kleinschreibung vor diesen Änderungen wiederherstellen möchten, wählen Sie im Menü **Bearbeiten** **Rückgängig** aus.
 
 ## <a name="see-also"></a>Siehe auch
 

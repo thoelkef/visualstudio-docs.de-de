@@ -1,6 +1,6 @@
 ---
 title: Code Coverage-Tests
-ms.date: 09/18/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973068"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416446"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -30,7 +30,7 @@ Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Expl
 
 ![Codeabdeckungsergebnisse mit Färbung](../test/media/codecoverage1.png)
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Das Code Coverage-Feature ist nur in der Visual Studio Enterprise-Edition verfügbar.
 
@@ -55,9 +55,10 @@ Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informa
 
 Die Codeabdeckung wird in *Blöcken* gezählt. Ein Block ist ein Stück Code mit genau einem Einstiegs- und Endpunkt.  Wenn die Ablaufsteuerung des Programms einen Block während eines Testlaufs durchläuft, wird dieser Block als abgedeckt gezählt. Wie oft der Block verwendet wird, hat keinen Einfluss auf das Ergebnis.
 
-Die Ergebnisse können auch auf Zeilen bezogen angezeigt werden, wenn Sie in der Tabellenkopfzeile **Spalten hinzufügen/entfernen** auswählen. Werden im Testlauf alle Codeblöcke einer beliebigen Codezeile ausgeführt, zählt dies als eine Zeile. Wenn eine Zeile Codeblöcke enthält, von denen einige ausgeführt werden und andere nicht, zählt dies als Teilzeile.
+Die Ergebnisse können auch auf Zeilen bezogen angezeigt werden, wenn Sie in der Tabellenkopfzeile **Spalten hinzufügen/entfernen** auswählen. Manche Benutzer bevorzugen die Zählung in Zeilen, da die Prozentsätze genauer der Größe der Fragmente entsprechen, die im Quellcode angezeigt werden. Ein langer Block mit Berechnungen zählt als ein einzelner Block, selbst wenn er viele Zeilen einnimmt.
 
-Manche Benutzer bevorzugen die Zählung in Zeilen, da die Prozentsätze genauer der Größe der Fragmente entsprechen, die im Quellcode angezeigt werden. Ein langer Block mit Berechnungen zählt als ein einzelner Block, selbst wenn er viele Zeilen einnimmt.
+> [!TIP]
+> Eine Codezeile kann mehr als einen Codeblock enthalten. Wenn dies der Fall ist und der Testlauf alle Codeblöcke in der Zeile trainiert, wird sie als eine Zeile gezählt. Wenn nur manche Codeblöcke in der Zeile ausgeführt werden, wird sie als Teilzeile gezählt.
 
 ## <a name="manage-code-coverage-results"></a>Verwalten von Code Coverage-Ergebnissen
 
