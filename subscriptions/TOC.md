@@ -71,8 +71,9 @@
 #### [Video zum Onboarding](https://youtu.be/plSu6fpi7UI)
 ### Verwenden des Administratorportals
 #### [Übersicht](using-admin-portal.md)
-#### [Zuweisen von Abonnements](assign-license.md)
-#### [Erneutes Senden von Zuweisungs-E-Mails](resend-assignment-email.md)
+#### Zuweisen von Abonnements
+##### [Hinzufügen einzelner Benutzer](assign-license.md)
+##### [Hinzufügen mehrerer Benutzer](assign-license-bulk.md)
 #### [Bearbeiten von Abonnements](edit-license.md)
 #### [Löschen von Abonnements](delete-license.md)
 #### [Suchen nach einem Abonnement](search-license.md)
@@ -81,7 +82,7 @@
 #### [Maximale Nutzung](maximum-usage.md)
 #### [Abgelaufene Abonnements](handle-expired-license.md)
 #### [Abonnenten mit Aliasen](aliasing.md)
-#### [Abonnenten mit privaten E-Mail-Anmeldungen](personal-email-sign-ins.md)
+#### [Abonnenten mit Anmeldungen über private E-Mail-Adressen](personal-email-sign-ins.md)
 ### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
 ## Ressourcen
 ### [Whitepaper zur Visual Studio-Lizenzierung](https://aka.ms/vslicensing)
