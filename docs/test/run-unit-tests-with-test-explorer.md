@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747776"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493299"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -29,7 +29,7 @@ Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektma
 
 Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
-![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)
+![Test-Explorer](../test/media/ute_failedpassednotrunsummary.png)
 
 Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Standardgruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests**angezeigt. Sie können die Gruppierung der Tests im Test-Explorer ändern.
 
@@ -100,7 +100,7 @@ Klicken Sie zum Ändern der Testunterteilung den neben der Schaltfläche **Grupp
 
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
 
-|Gruppieren|Beschreibung|
+|Gruppieren|BESCHREIBUNG|
 |-|-----------------|
 |**Dauer**|Tests werden anhand der Ausführungszeit gruppiert: **Schnell**, **Mittel** und **Langsam**.|
 |**Ergebnis**|Tests werden anhand der Ausführungsergebnisse gruppiert: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
@@ -115,7 +115,7 @@ In der Regel handelt es sich bei Merkmalen um Kategoriename/Wert-Paare, ein Merk
 
 Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> -Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:
 
-|Merkmal|Beschreibung|
+|Merkmal|BESCHREIBUNG|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Die Kategorie "Besitzer" wird vom Komponententest-Framework definiert. Sie müssen einen Zeichenfolgenwert für den Besitzer angeben.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Die Kategorie "Priorität" wird vom Komponententest-Framework definiert. Sie müssen einen ganzzahligen Wert für die Priorität angeben.|
@@ -145,7 +145,7 @@ Filtern nach einem anderen Kriterium:
 > [!NOTE]
 > Bei Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet, und die angegebene Zeichenfolge kann einem die oft ausgegebene Befehlszeilen  Teil des Kriteriumswerts entsprechen.
 
-|Qualifizierer|Beschreibung|
+|Qualifizierer|BESCHREIBUNG|
 |-|-----------------|
 |**Merkmal**|Durchsucht sowohl die Merkmalskategorie als auch den Wert nach Übereinstimmungen. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|
 |**Projekt**|Durchsucht die Testprojektnamen nach Übereinstimmungen.|
@@ -228,3 +228,4 @@ Tests können im **Test-Explorer** ausgeführt werden, indem Sie mit der rechten
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Ausführen eines Komponententest als 64-Bit-Prozess](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [Häufig gestellte Fragen zum Test-Explorer](test-explorer-faq.md)

@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790207"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605420"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
@@ -99,7 +99,7 @@ Listet die Elemente auf, für die Sie die Vorder- und Hintergrundfarbe ändern k
 
 Hier einige Anzeigeelemente:
 
-|Anzeigeelement|Beschreibung|
+|Anzeigeelement|BESCHREIBUNG|
 |------------------|-----------------|
 |**Nur-Text**|Text im Editor.|
 |**Markierter Text**|Text, der in der aktuellen Auswahl enthalten ist, wenn der Editor den Fokus besitzt.|
@@ -253,6 +253,5 @@ Zeigt ein Beispiel für den Schriftschnitt und -grad sowie das Farbschema für d
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
 - [Optionen (Dialogfeld)](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

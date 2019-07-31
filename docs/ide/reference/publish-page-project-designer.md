@@ -1,25 +1,27 @@
 ---
 title: Seite "Veröffentlichen", Projekt-Designer
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968889"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461639"
 ---
 # <a name="publish-page-project-designer"></a>Seite "Veröffentlichen", Projekt-Designer
+
 Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet.
 
  Wählen Sie zum Aufrufen der Seite **Veröffentlichen** im **Projektmappenexplorer**einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** .
@@ -28,13 +30,14 @@ Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration 
 > Einige der hier beschriebenen ClickOnce-Eigenschaften können auch im **Veröffentlichungs-Assistent** festgelegt werden, der im Menü **Erstellen** verfügbar ist, oder durch Klicken auf die Schaltfläche**Veröffentlichungs-Assistent** auf dieser Seite.
 
 ## <a name="uielement-list"></a>UIElement-Liste
+
  **Pfad des Veröffentlichungsordners**
 
- Gibt den Speicherort an, in dem die Anwendung veröffentlicht wird. Dies kann ein Pfad zum Laufwerk (`C:\deploy\myapplication`), eine Dateifreigabe (`\\server\myapplication`) oder ein FTP-Server (`ftp://ftp.microsoft.com/myapplication`) sein. Beachten Sie, dass im Feld **Ort der Veröffentlichung** Text angegeben sein muss, damit die Schaltfläche zum Durchsuchen (**...**) funktioniert.
+ Gibt den Speicherort an, in dem die Anwendung veröffentlicht wird. Dies kann ein Pfad zum Laufwerk (`C:\deploy\myapplication`), eine Dateifreigabe (`\\server\myapplication`) oder ein FTP-Server (`ftp://ftp.microsoft.com/myapplication`) sein. Beachten Sie, dass im Feld **Ort der Veröffentlichung** Text angegeben sein muss, damit die Schaltfläche zum Durchsuchen ( **...** ) funktioniert.
 
  **URL des Installationsordners**
 
- Dies ist optional. Gibt eine Website an, auf die der Benutzer zugreift, um die Anwendung zu installieren. Dies ist nur erforderlich, wenn sie sich vom **Veröffentlichungsort**unterscheidet, wenn z.B. die Anwendung auf einem Stagingserver veröffentlicht wird.
+ Optional. Gibt eine Website an, auf die der Benutzer zugreift, um die Anwendung zu installieren. Dies ist nur erforderlich, wenn sie sich vom **Veröffentlichungsort**unterscheidet, wenn z.B. die Anwendung auf einem Stagingserver veröffentlicht wird.
 
  **Installationsmodus und -einstellungen**
 
@@ -66,7 +69,7 @@ Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration 
 
  **Revisionsnummer automatisch mit jeder Veröffentlichung erhöhen**
 
- Dies ist optional. Wenn diese Option ausgewählt ist (Standardeinstellung), wird der Teil **Revision** der Veröffentlichungsversionsnummer bei jeder Veröffentlichung der Anwendung um eins erhöht. Dies bewirkt, dass die Anwendung als Update veröffentlicht wird.
+ Optional. Wenn diese Option ausgewählt ist (Standardeinstellung), wird der Teil **Revision** der Veröffentlichungsversionsnummer bei jeder Veröffentlichung der Anwendung um eins erhöht. Dies bewirkt, dass die Anwendung als Update veröffentlicht wird.
 
  **Veröffentlichungs-Assistent**
 

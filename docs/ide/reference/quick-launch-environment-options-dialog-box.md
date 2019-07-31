@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969045"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605904"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Schnellstart, Umgebung, Dialogfeld „Optionen“
 
-Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optionen, Vorlagen oder Menüs schnell zu suchen und auszuführen. Sie können **Schnellstart** nicht zur Suche nach Code und Symbolen verwenden. Das Suchfeld **Schnellstart** befindet sich rechts oben in der Menüleiste und kann mit der Tastenkombination **STRG**+**Q** aufgerufen werden. Geben Sie einfach die Suchzeichenfolge im Feld ein. Verwenden Sie ‘@@‘, um nach Zeichenfolgen zu suchen, die @ enthalten. 
+Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optionen, Vorlagen oder Menüs schnell zu suchen und auszuführen. Sie können **Schnellstart** nicht zur Suche nach Code und Symbolen verwenden. Das Suchfeld **Schnellstart** befindet sich rechts oben in der Menüleiste und kann mit der Tastenkombination **STRG**+**Q** aufgerufen werden. Geben Sie einfach die Suchzeichenfolge im Feld ein. Verwenden Sie ‘@@‘, um nach Zeichenfolgen zu suchen, die @ enthalten.
 
 **Schnellstart** ist standardmäßig aktiviert, wenn Sie Visual Studio installieren. Auf der Menüleiste können Sie den **Schnellstart** darstellen oder ausblenden, indem Sie **Extras** > **Optionen** auswählen. Erweitern Sie den Knoten **Umgebungen**, und wählen Sie dann **Schnellstart** aus. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Schnellstart aktivieren**. Sie können auf dieser Seite auch Suchkategorien aktivieren oder deaktivieren.
 
@@ -47,7 +47,3 @@ Sie können die folgenden Tastenkombinationen verwenden, um die Suche auf bestim
 ## <a name="show-previous-results"></a>Vorherige Ergebnisse anzeigen
 
 Standardmäßig wird der eingegebene Suchbegriff nicht zwischen Suchsitzungen beibehalten. Die Suchzeichenfolge wird gelöscht, wenn Sie nach einem Begriff suchen. Bewegen Sie den Cursor außerhalb des Bereichs **Schnellstart** und dann wieder zurück. Um die Suchergebnisse beizubehalten, wechseln Sie in das Dialogfeld **Optionen**, wählen Sie **Schnellstart** aus, und aktivieren Sie dann das Kontrollkästchen **Suchergebnisse aus vorherigen Suchen anzeigen, wenn Schnellstart aktiviert ist** . Wenn Sie das nächste Mal eine Suche ausführen, verlassen Sie den Schnellstartbereich, und kehren Sie dahin zurück. Der Schnellstart behält den zuletzt verwendeten Suchbegriff bei und zeigt auch die Suchergebnisse an.
-
-## <a name="see-also"></a>Siehe auch
-
-- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07f6a1094658f575f4e805798ee468c5c829238
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: c9cae68a0803b550d7184b0e06d6a043d76fa725
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531577"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605473"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Vorgehensweise: Anzeigen von Zeilennummern im Editor
 
@@ -37,5 +37,4 @@ Sie können die Zeilennummerierung im Code ein- oder ausblenden.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Text-Editor, Dialogfeld „Optionen“](../../ide/reference/text-editor-options-dialog-box.md)
 - [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)

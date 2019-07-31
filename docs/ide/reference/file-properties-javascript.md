@@ -1,6 +1,7 @@
 ---
 title: Dateieigenschaften, JavaScript
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -20,19 +21,20 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790647"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461834"
 ---
 # <a name="file-properties-javascript"></a>Dateieigenschaften, JavaScript
+
 Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Projektsystem für die Dateien ausführen soll. Sie können Dateieigenschaften z.B. festlegen, um anzugeben, ob eine Datei als Ressourcendatei zum Paket hinzugefügt werden soll.
 
  Sie können eine beliebige Datei im Projektmappen-Explorer auswählen und deren Eigenschaften im Eigenschaftenfenster überprüfen. JavaScript-Dateien haben vier Eigenschaften: **In Ausgabeverzeichnis kopieren**, **Package Action**, **Dateiname** und **Dateipfad**.

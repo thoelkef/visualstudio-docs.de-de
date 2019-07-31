@@ -1,6 +1,7 @@
 ---
 title: 'Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten'
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -12,27 +13,27 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946920"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461606"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 
 Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möchten, müssen Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen/privaten Schlüsselpaar und unter Verwendung von Authenticode signiert werden. Sie können die Manifeste mit einem Zertifikat aus dem Windows-Zertifikatspeicher oder einer Schlüsseldatei signieren.
 
- Weitere Informationen über die ClickOnce-Bereitstellung finden Sie unter [ClickOnce security and deployment (ClickOnce-Sicherheit und Bereitstellung)](../deployment/clickonce-security-and-deployment.md).
+Weitere Informationen über die ClickOnce-Bereitstellung finden Sie unter [ClickOnce security and deployment (ClickOnce-Sicherheit und Bereitstellung)](../deployment/clickonce-security-and-deployment.md).
 
- Das Signieren der ClickOnce-Manifeste ist für *EXE*-basierte Anwendungen optional. Weitere Informationen finden Sie im Abschnitt „Generieren von unsignierten Manifesten“ in diesem Dokument.
+Das Signieren der ClickOnce-Manifeste ist für *EXE*-basierte Anwendungen optional. Weitere Informationen finden Sie im Abschnitt „Generieren von unsignierten Manifesten“ in diesem Dokument.
 
- Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Visual Studio unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange) mit der Erweiterung *.pfx*. Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.
@@ -84,7 +85,7 @@ Das Signieren der ClickOnce-Manifeste ist für *EXE*-basierte Anwendungen option
 > [!IMPORTANT]
 > Unsignierte Manifeste können die Entwicklung und das Testen der Anwendung vereinfachen. Unsignierte Manifeste führen in einer Produktionsumgebung jedoch zu beträchtlichen Sicherheitsrisiken. Ziehen Sie die Verwendung unsignierter Manifeste nur in Betracht, wenn die ClickOnce-Anwendung auf Computern in einem Intranet ausgeführt wird, das vollständig vom Internet oder anderen Quellen bösartigen Codes abgeschirmt ist.
 
- Standardmäßig werden durch ClickOnce automatisch signierte Manifeste generiert, sofern nicht mindestens eine Datei ausdrücklich aus dem generierten Hash ausgeschlossen wird. Wenn alle Dateien im Hash eingeschlossen sind, werden beim Veröffentlichen der Anwendung somit signierte Manifeste erstellt. Dies gilt auch, wenn das Kontrollkästchen **ClickOnce-Manifeste signieren** deaktiviert ist.
+Standardmäßig werden durch ClickOnce automatisch signierte Manifeste generiert, sofern nicht mindestens eine Datei ausdrücklich aus dem generierten Hash ausgeschlossen wird. Wenn alle Dateien im Hash eingeschlossen sind, werden beim Veröffentlichen der Anwendung somit signierte Manifeste erstellt. Dies gilt auch, wenn das Kontrollkästchen **ClickOnce-Manifeste signieren** deaktiviert ist.
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>So generieren Sie nicht signierte Manifeste und schließen alle Dateien in den generierten Hash ein
 

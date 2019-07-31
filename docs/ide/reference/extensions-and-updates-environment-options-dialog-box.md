@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2ddf174255a7db85e3eb61d71472748287be90
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790849"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605863"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>Dialogfeld „Optionen“: Umgebung \> Erweiterungen
 
@@ -36,7 +36,3 @@ Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-E
 ## <a name="additional-extension-galleries"></a>Zusätzliche Erweiterungskataloge
 
 Ein Enterprise-Feature, mit dem die Unterstützung für Kataloge von proprietären Erweiterungen ermöglicht wird. Weitere Informationen finden Sie unter [Private Kataloge](../../extensibility/private-galleries.md).
-
-## <a name="see-also"></a>Siehe auch
-
-- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
