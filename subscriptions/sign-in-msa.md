@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie sich mit einem Microsoft-Konto (verwaltetes Dienstkonto) bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: 3f90dec91530cbcb559dfb950a8e7d43faf274b2
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315351"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493084"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Anmeldung bei Ihrem/Ihren Visual Studio-Abonnements mit Ihrem Microsoft-Konto (verwaltetes Dienstkonto)
 
@@ -29,7 +29,6 @@ In diesem Artikel werden die Schritte zum Anmelden mit Ihrem Microsoft-Konto (ve
 3. Geben Sie Ihr Kennwort ein.
 4. Klicken Sie auf **Anmelden**.
 5. An diesem Punkt sollte die Seite „Vorteile“ angezeigt werden.
-
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q--im-unable-to-sign-in-using-my-msa"></a>Frage:  Ich kann mich nicht bei meinem verwalteten Dienstkonto anmelden.  
