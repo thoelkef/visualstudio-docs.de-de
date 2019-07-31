@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378059"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493358"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -73,7 +73,6 @@ Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfa
 3. Sie können auf der Registerkarte **Info** Namen, E-Mail-Adresse, Land/Region, Profilbild und Kontakteinstellungen ändern. Sie können auf der Registerkarte **Einstellungen** Ihre bevorzugte Sprache, Datums- und Uhrzeitmuster, die Zeitzone und das Design der Benutzeroberfläche auswählen.
 4. Klicken Sie auf **Speichern**, wenn Sie die Änderungen abgeschlossen haben.
 5. Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück**, um zur Seite „Vorteile“ zurückzukehren.
-
 
 ### <a name="setting-communications-preferences"></a>Festlegen von Kommunikationseinstellungen
 Wenn Sie regelmäßige Updates zu Ihrem Abonnement und Ihren Vorteilen sowie den monatlichen Newsletter zu Visual Studio-Abonnements erhalten möchten, [aktualisieren Sie Ihre Einstellungen](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), in dem Sie in Ihrem Visual Studio-Profil das Kontrollkästchen für Visual Studio-Abonnements aktivieren. Sie können diese Einstellungen jederzeit ändern und die Updates kündigen. 
