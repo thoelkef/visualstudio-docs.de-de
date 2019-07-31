@@ -1,23 +1,24 @@
 ---
 title: Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792230"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461470"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 
@@ -71,7 +72,7 @@ Bedingte Kompilierungskonstanten haben einen ähnlichen Effekt wie das Verwenden
 
  **Benutzerdefinierte Konstanten**
 
- Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Einträge sind durch Kommas getrennt in der folgenden Form anzugeben: **Name1="Value1",Name2="Value2",Name3="Value3"**.
+ Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Einträge sind durch Kommas getrennt in der folgenden Form anzugeben: **Name1="Value1",Name2="Value2",Name3="Value3"** .
 
 ## <a name="other-settings"></a>Weitere Einstellungen
 

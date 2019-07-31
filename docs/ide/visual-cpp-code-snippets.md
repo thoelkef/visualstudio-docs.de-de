@@ -2,19 +2,19 @@
 title: Visual C#-Codeausschnitte
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: mikeblome
+ms.author: mblome
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581759"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461623"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
 
@@ -24,7 +24,7 @@ Sie können einen Codeausschnitt an einer bestimmten Stelle im Code hinzufügen 
 
 ## <a name="insert-a-code-snippet"></a>Einfügen eines Codeausschnitts
 
-Öffnen Sie zum Einfügen eines Codeausschnitts eine C++-Codedatei (*.cpp* oder *.h*), klicken Sie auf eine beliebige Stelle in der Datei, und führen Sie eine der folgenden Aktionen aus:
+Öffnen Sie zum Einfügen eines Codeausschnitts eine C++-Codedatei ( *.cpp* oder *.h*), klicken Sie auf eine beliebige Stelle in der Datei, und führen Sie eine der folgenden Aktionen aus:
 
 - Klicken Sie mit der rechten Maustaste, um im Kontextmenü **Ausschnitt einfügen** auszuwählen.
 
@@ -64,7 +64,7 @@ Sie können dann 0 durch die richtige Bedingung ersetzen.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Wo finde ich eine vollständige Liste der C++-Codeausschnitte?
 
-Sie finden die vollständige Liste der C++-Codeausschnitte durch das Aufrufen des **Codeausschnitt-Managers** (im Menü **Extras**) und durch das Festlegen der **Sprache** auf **Visual C++**. Erweitern Sie im Fenster darunter **Visual C++**. Sie sollte die Namen aller C++-Codeausschnitte in alphabetischer Reihenfolge sehen.
+Sie finden die vollständige Liste der C++-Codeausschnitte durch das Aufrufen des **Codeausschnitt-Managers** (im Menü **Extras**) und durch das Festlegen der **Sprache** auf **Visual C++** . Erweitern Sie im Fenster darunter **Visual C++** . Sie sollte die Namen aller C++-Codeausschnitte in alphabetischer Reihenfolge sehen.
 
 Die Namen der meisten Codeausschnitte sind selbsterklärend, doch einige Namen sind möglicherweise verwirrend.
 
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Der Destruktor-Ausschnitt (~)
 
-Der Destruktor-Ausschnitt (**~**) zeigt unterschiedliches Verhalten in unterschiedlichen Kontexten. Wenn Sie diesen Ausschnitt innerhalb einer Klasse einfügen, stellt er einen Destruktor für diese Klasse bereit. Betrachten Sie beispielsweise den folgenden Code:
+Der Destruktor-Ausschnitt ( **~** ) zeigt unterschiedliches Verhalten in unterschiedlichen Kontexten. Wenn Sie diesen Ausschnitt innerhalb einer Klasse einfügen, stellt er einen Destruktor für diese Klasse bereit. Betrachten Sie beispielsweise den folgenden Code:
 
 ```cpp
 class SomeClass {
