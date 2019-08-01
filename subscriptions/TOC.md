@@ -62,9 +62,7 @@
 #### [Inventur vor der Produktion](admin-inventory.md)
 #### [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
 #### [Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen](assignments-orders.md)
-### [Volumenlizenzierung](volume-license-admins.md)
 ### Onboarding Ihres Unternehmens
-#### [Onboarding nach der Migration](post-migration-onboarding.md)
 #### [Open und Open License-Migration](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Cloudabonnements](cloud-admin.md)
