@@ -1,6 +1,6 @@
 ---
-title: Verwenden den eigenständigen IntelliTrace Collector | Microsoft-Dokumentation
-ms.date: 11/04/2016
+title: Verwenden des eigenständigen IntelliTrace-Sammlers | Microsoft-Dokumentation
+ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746108"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680629"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Verwenden den eigenständigen IntelliTrace Collector (C#, Visual Basic)
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Verwenden des eigenständigen IntelliTrace-SammlersC#(, Visual Basic)
 
 Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diagnosedaten für Ihre Anwendungen auf Produktionsservern oder anderen Umgebungen erfassen, ohne Visual Studio auf dem Zielcomputer zu installieren oder Änderungen an der Zielsystemumgebung vorzunehmen. Die eigenständige IntelliTrace Collector kann für Web-, SharePoint-, WPF- und Windows Forms-Webanwendungen verwendet werden. Nachdem die Daten gesammelt wurden, kann der Collector mit einem Löschvorgang deinstalliert werden.
 
@@ -28,17 +28,17 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 > [!NOTE]
 > Sie können IntelliTrace-Daten auf Remotecomputern auch für Web- und SharePoint-Anwendungen mithilfe des **Microsoft Monitoring Agent** im **Ablaufverfolgungs** modus erfassen.
 >
-> Sie können leistungsbezogene Ereignisse in den IntelliTrace-Daten erfassen, indem Sie den Agenten im **Überwachungs** modus ausführen. Der**Überwachungs** modus hat weniger Auswirkungen auf die Leistung als der **Ablaufverfolgungs** modus oder der **IntelliAblaufverfolgungs stand-alone collector**. Durch die Installation von Microsoft Monitoring Agent ändert sich nicht die Zielsystemumgebung. Finden Sie unter [mithilfe von Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
-> Die eigenständige IntelliTrace Collector unterstützt-Prozess-Momentaufnahmen nicht.
+> Sie können leistungsbezogene Ereignisse in den IntelliTrace-Daten erfassen, indem Sie den Agenten im **Überwachungs** modus ausführen. Der**Überwachungs** modus hat weniger Auswirkungen auf die Leistung als der **Ablaufverfolgungs** modus oder der **IntelliAblaufverfolgungs stand-alone collector**. Durch die Installation von Microsoft Monitoring Agent ändert sich nicht die Zielsystemumgebung. Siehe [Verwenden des Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Der eigenständige IntelliTrace-Collector unterstützt keine Prozess Momentaufnahmen.
 
  **Anforderungen**
 
-- .NET Framework 3.5, 4 oder 4.5
+- .NET Framework 3,5 oder höher
 
 - Visual Studio Enterprise (nicht Professional oder Community Editions) auf einem Entwicklungscomputer oder einem anderen Computer zum Öffnen von ITRACE-Dateien
 
   > [!NOTE]
-  > Achten Sie darauf, die Symboldateien (.pdb) zu speichern. Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Finden Sie unter [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
+  > Achten Sie darauf, die Symboldateien (.pdb) zu speichern. Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Siehe [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
 
   **FAQ**
 
@@ -52,7 +52,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 ## <a name="WhatApps"></a> Welche Apps arbeiten mit dem Collector?
 
-- Auf Internetinformationsdienste (IIS) Version 7.0, 7.5 und 8.0 gehostete ASP.NET-Webanwendungen
+- ASP.net Web-Apps, die unter Internetinformationsdienste (IIS), Version 7,0, 7,5, 8,0, 12,0 und 16,0 gehostet werden
 
 - SharePoint 2010- und SharePoint 2013-Anwendungen
 
@@ -70,7 +70,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 5. [Daten von einer Webapp oder SharePoint-Anwendung sammeln](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     - oder -
+     -oder-
 
      [Sammeln von Daten aus einer verwalteten Anwendung](#BKMK_Collect_Data_from_Executables)
 
@@ -80,9 +80,9 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 1. Erstellen Sie das Collector-Verzeichnis auf dem Server der App, beispielsweise: **C:\IntelliTraceCollector**
 
-2. Sie finden den Collector im Microsoft Download Center oder dem Installationsordner von Visual Studio 2013 Update 3. [IntelliTrace-Collector für Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
+2. Holen Sie sich den Collector aus dem [Microsoft Download Center](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019), [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)oder aus dem Visual Studio 2013 Update 3-Installationsordner. [IntelliTrace-Collector für Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
-   - **Microsoft Download Center**:
+   - **Microsoft Download Center** oder **My.VisualStudio.com**:
 
      1. Wählen Sie neben **IntelliTraceCollector.exe**die Option **Herunterladen**aus.
 
@@ -94,9 +94,13 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
    - **Visual Studio-Installationsordner**:
 
-     1. Kopieren Sie die Datei "IntelliTraceCollection.cab" aus dem folgenden Ordner:
+     1. Kopieren Sie intellitracecollection. cab aus dem Ordner, in dem der Collector installiert ist, z. b.:
 
-          **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **.. \Microsoft Visual studio\2019\enterprise\common7\ide\commonextensions\microsoft\intellitrace**
+
+          oder für frühere Versionen von Visual Studio:
+
+          **.. \Microsoft Visual Studio 12.0 \ Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
      2. Legen Sie „IntelliTraceCollection.cab“ im Collector-Verzeichnis ab, beispielsweise: **C:\IntelliTraceCollector**
 
@@ -117,7 +121,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 1. Öffnen Sie auf dem Server der App ein Eingabeaufforderungsfenster als Administrator.
 
-2. Verwenden Sie den Windows-Befehl **icacls** , um dem Serveradministrator vollständige Berechtigungen für das Collector-Verzeichnis einzuräumen. Zum Beispiel:
+2. Verwenden Sie den Windows-Befehl **icacls** , um dem Serveradministrator vollständige Berechtigungen für das Collector-Verzeichnis einzuräumen. Beispiel:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -125,13 +129,13 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
     1. Räumen Sie der Person, die die IntelliTrace-PowerShell-Cmdlets ausführen soll, vollständige Berechtigungen für das Collector-Verzeichnis ein.
 
-         Zum Beispiel:
+         Beispiel:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Räumen Sie dem Anwendungspool für die Webanwendung oder SharePoint-Anwendung Lese-/Schreib-Berechtigungen für das Collector-Verzeichnis ein.
 
-         Zum Beispiel:
+         Beispiel:
 
         - Für eine Web App im **DefaultAppPool** -Anwendungspool:
 
@@ -145,7 +149,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 1. Stellen Sie sicher, dass PowerShell auf dem Server der App aktiviert ist. Bei den meisten Versionen von Windows Server, können Sie diese Funktion im **Server-Manager** -Verwaltungsprogramm hinzufügen.
 
-     ![Hinzufügen von PowerShell mit dem Server-Manager](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![Hinzufügen von PowerShell mit Server-Manager](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. Installieren Sie die IntelliTrace-PowerShell-cmdlets.
 
@@ -161,7 +165,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
     2. Verwenden Sie im PowerShell-Befehlsfenster den Befehl **Import-Module** , um die **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**zu importieren.
 
-         Zum Beispiel:
+         Beispiel:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -179,7 +183,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 2. Für eine Web App oder SharePoint-Anwendung geben Sie dem Anwendungspool vollständige Berechtigungen zum ITRACE-Dateiverzeichnis. Sie können den Windows-Befehl **icacls** oder den Windows-Explorer (bzw. den Datei-Explorer) verwenden.
 
-    Zum Beispiel:
+    Beispiel:
 
    - So legen Sie Berechtigungen mit dem Windows-Befehl **icacls** fest:
 
@@ -234,7 +238,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 2. Reproduzieren Sie das Problem.
 
-3. Verwenden Sie zum Erstellen eines Prüfpunkts der ITRACE-Datei die folgende Syntax:
+3. Verwenden Sie die folgende Syntax, um einen Prüfpunkt für die itrace-Datei zu erstellen:
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -275,16 +279,16 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Öffnen der ITRACE-Datei in Visual Studio Enterprise
 
 > [!NOTE]
-> Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Finden Sie unter [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
+> Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen Sie über die entsprechenden Quelldateien und Symboldateien verfügen. Siehe [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
 
 1. Verschieben oder kopieren Sie die ITRACE-Datei auf einen Computer mit Visual Studio Enterprise (nicht mit Professional oder Community Editions).
 
 2. Doppelklicken Sie außerhalb von Visual Studio auf die ITRACE-Datei, oder öffnen Sie die Datei aus Visual Studio heraus.
 
-     Visual Studio zeigt die Seite **IntelliTrace-Zusammenfassung** an. In den meisten Abschnitten können Sie Ereignisse oder andere Elemente überprüfen, ein Element auswählen, und mit IntelliTrace an dem Punkt mit dem Debuggen beginnen, an dem ein Ereignis aufgetreten ist. Finden Sie unter [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).
+     Visual Studio zeigt die Seite **IntelliTrace-Zusammenfassung** an. In den meisten Abschnitten können Sie Ereignisse oder andere Elemente überprüfen, ein Element auswählen, und mit IntelliTrace an dem Punkt mit dem Debuggen beginnen, an dem ein Ereignis aufgetreten ist. Siehe [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    > Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen auf dem Entwicklungscomputer die entsprechenden Quelldateien und Symboldateien vorhanden sein. Finden Sie unter [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
+    > Um mit IntelliTrace debuggen und Code schrittweise ausführen zu können, müssen auf dem Entwicklungscomputer die entsprechenden Quelldateien und Symboldateien vorhanden sein. Siehe [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Wie rufe ich die möglichst viele Daten ab, ohne die App zu verlangsamen?
  IntelliTrace kann sehr viele Daten sammeln, daher sind die Auswirkungen auf die Leistung der App von den mit IntelliTrace gesammelten Daten und von der Art der analysierten Codes abhängig. Siehe [Optimieren der IntelliTrace-Auflistung auf Produktionsservern](http://go.microsoft.com/fwlink/?LinkId=255233).
@@ -371,13 +375,13 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
    Der `Employee` -Typ verfügt über die folgenden Attribute: `Id`, `Name`und `HomeAddress`. Eine Zuordnungsbeziehung besteht zwischen dem `Employee` - und dem `Address` -Typ.
 
-   ![Zusammenhang zwischen Mitarbeiter und Adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![Beziehung zwischen Employee und Address] Mitarbeiter (../debugger/media/employeeaddressrelationship.png "addressrelationship")
 
    Der Collector zeichnet Werte für `id`, `Employee.Id`, `Employee.Name` und das `Employee` -Objekt auf, das von der `AlterEmployee` -Methode zurückgegeben wird. Der Collector zeichnet jedoch keine Informationen zum `Address` -Objekt (außer NULL oder keine) auf. Der Collector zeichnet auch keine Daten zu lokalen Variablen in der `AlterEmployee` -Methode auf, es sei denn, andere Methoden verwenden diese lokalen Variablen als Parameter. An diesem Punkt werden sie als Methodenparameter aufgezeichnet.
 
 ## <a name="WhereElse"></a> Wo kann ich IntelliTrace-Daten außerdem abrufen?
 
-Sie können IntelliTrace-Daten aus einer IntelliTrace Debugsitzung in Visual Studio Enterprise abrufen. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
+Sie können IntelliTrace-Daten aus einer IntelliTrace-Debugsitzung in Visual Studio Enterprise erhalten. Siehe [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Wo kann ich weitere Informationen abrufen?
  [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md)

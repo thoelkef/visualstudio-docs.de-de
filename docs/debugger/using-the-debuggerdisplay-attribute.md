@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Informationen, die mithilfe der DebuggerDisplay anzeigen | Microsoft-Dokumentation
+title: Anzeigen benutzerdefinierter Informationen mit DebuggerDisplay | Microsoft-Dokumentation
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929606"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680590"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Entsprechende Konfiguration des Debuggers Vorgehensweise wird die Verwendung des DebuggerDisplay-Attributs (C#, Visual Basic F#, C++/CLI)
-Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Teilen Sie dem Debugger mit, was mithilfe des DebuggerDisplay-C#Attributs angezeigt F#werden C++soll (, Visual Basic,,/CLI).
+Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden. Wenn das Attribut auf einen Basistyp angewendet wird, gilt es auch für eine Unterklasse.
 
 Das `DebuggerDisplay` -Attribut verfügt über ein einziges Argument, das als Zeichenfolge in der Wertspalte für Instanzen des Typs angezeigt wird. Diese Zeichenfolge kann geschweifte Klammern (`{` und `}`) enthalten. Text innerhalb von Klammern wird als Feld, Eigenschaft oder Methode ausgewertet.
 
@@ -32,7 +32,7 @@ Ob der Debugger diesen impliziten `ToString()` -Aufruf auswertet, hängt von ein
 > Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras / Optionen / Debugging** aktiviert ist, wird das `DebuggerDisplay` -Attribut ignoriert.
 
 > [!NOTE]
-> Für nativen Code wird dieses Attribut nur in unterstützt C++/CLI Code.
+> Für nativen Code wird dieses Attribut nur in C++/CLI-Code unterstützt.
 
 In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.
 
@@ -90,7 +90,7 @@ public sealed class MyClass
 }
 ```
 
-Die ", Nq" Suffix weist die ausdrucksauswertung die Anführungszeichen entfernen, bei der Anzeige des Endwert (Nq = ohne Anführungszeichen).
+Das Suffix ", NQ" weist die Ausdrucks Auswertung an, die Anführungszeichen zu entfernen, wenn der endgültige Wert angezeigt wird (NQ = No Anführungszeichen).
 
 ## <a name="example"></a>Beispiel
 Im folgenden Codebeispiel wird veranschaulicht, wie `DebuggerDisplay`zusammen mit `DebuggerBrowseable` und `DebuggerTypeProxy`verwendet wird. Bei der Anzeige in einem Variablenfenster des Debuggers (z. B. im Fenster **Überwachen** ) wird dadurch eine Erweiterung erzeugt, die folgendermaßen aussieht:
