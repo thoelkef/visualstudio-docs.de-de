@@ -1,6 +1,6 @@
 ---
-title: Schreiben und Debuggen von XAML mit XAML "Hot" neu laden
-description: Laden von XAML "Hot" oder XAML bearbeiten und fortfahren, können Sie Änderungen an Ihrem XAML-Code vornehmen, während der Ausführung von apps
+title: Schreiben und Debuggen von XAML mithilfe von XAML Hot Neuladen
+description: XAML Hot Neuladen oder XAML-bearbeiten und Fortfahren ermöglicht es Ihnen, während der Ausführung von apps Änderungen an Ihrem XAML-Code vorzunehmen.
 ms.custom: ''
 ms.date: 02/28/2019
 ms.topic: conceptual
@@ -12,49 +12,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462144"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711226"
 ---
-# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von ausgeführten XAML-Code mit "Hot" Laden von XAML in Visual Studio
+# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von XAML-Code mit XAML-Hot-Neuladen in Visual Studio
 
-Visual Studio-XAML "Hot" erneut laden, können Sie Ihre WPF- oder UWP-app UI erstellen, und lassen Sie die Änderungen in XAML-Code vornehmen, während Ihre app ausgeführt wird. Dieses Feature können Sie inkrementell erstellen und Testen XAML-Code mit dem Vorteil der Datenkontext für die ausgeführte app Authentifizierungsstatus und andere realen-Komplexität, die schwer zu simulieren, während der Entwurfsphase ist.
+Visual Studio XAML Hot Neuladen hilft Ihnen beim Erstellen Ihrer WPF-oder UWP-App-Benutzeroberfläche, da Sie Änderungen an XAML-Code vornehmen können, während Ihre APP ausgeführt wird. Mit dieser Funktion können Sie XAML-Code inkrementell erstellen und testen, indem Sie den Datenkontext der ausgelaufenden APP, den Authentifizierungs Status und eine andere reale Komplexität, die während der Entwurfszeit schwer zu simulieren ist, nutzen.
 
-XAML "Hot" erneut laden ist besonders hilfreich, in diesen Szenarien:
+Das erneute Laden von XAML ist besonders in den folgenden Szenarien hilfreich:
 
-* Beheben von Problemen mit Benutzeroberfläche finden Sie in Ihren XAML-Code, nachdem die app im Debugmodus gestartet wurde.
+* Behebung von Benutzeroberflächen Problemen in Ihrem XAML-Code, nachdem die APP im Debugmodus gestartet wurde.
 
-* Erstellen einer neuen UI-Komponente für eine app, ist in der Entwicklung, profitieren Sie von Ihrer app-Runtime-Kontext.
+* Die Entwicklung einer neuen Benutzeroberflächen Komponente für eine APP, die sich in der Entwicklung befindet, während der Lauf Zeit Kontext ihrer App genutzt wird.
 
-|Unterstützte Anwendungstypen|Betriebssystem und Tools|
+|Unterstützte Anwendungs Typen|Betriebssystem und Tools|
 |-|-|-|
 |Windows Presentation Foundation (WPF) |.NET Framework 4.6+</br>Windows 7 und höher |
-|Universelle Windows-apps (UWP)|Windows 10 und höher, mit der [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
+|Universelle Windows-Apps (UWP)|Windows 10 und höher mit dem [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Visual Studio XAML "Hot" erneut laden ist derzeit nur unterstützt, wenn Ihre Anwendung in Visual Studio mit dem angefügten Debugger ausführen (**F5** oder **Debuggen**). Sie können nicht über diese Oberfläche aktivieren *an den Prozess anhängen*.
+> Das Laden von Visual Studio XAML Hot wird zurzeit nur unterstützt, wenn die Anwendung in Visual Studio mit dem angefügten Debugger ausgeführt wird (**F5** oder **Debuggen starten**). Sie können diese Funktion nicht aktivieren, indem Sie *an den Prozess anhängen*verwenden.
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-Im folgenden werden bekannte Einschränkungen von XAML die erneut laden "Hot". Um Einschränkung zu umgehen, die auftreten, beenden Sie den Debugger nur aus, und schließen Sie dann den Vorgang.
+Im folgenden finden Sie bekannte Einschränkungen für das heiße Laden von XAML. Beenden Sie den Debugger, und schließen Sie den Vorgang ab, um die Einschränkung zu umgehen, die Sie in ausführen.
 
 |Einschränkung|WPF|UWP|Hinweise|
 |-|-|-|-|
-|Verknüpfen von Ereignissen mit Steuerelementen, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|Fehler angezeigt: *Stellen Sie sicher Ereignis Fehler*|
-|Erstellen Ressourcenobjekte in einem Ressourcenwörterbuch, z. B. in Ihrer app Seitenfenster oder *"App.xaml"*|Nicht unterstützt|Unterstützt|Beispiel: Hinzufügen einer ```SolidColorBrush``` in ein Ressourcenverzeichnis für die Verwendung als eine ```StaticResource```.</br>Hinweis: Statische Ressourcen, Stil-Konverter und andere Elemente in einem Ressourcenverzeichnis geschrieben können angewendet/verwendet werden, bei der Verwendung von XAML "Hot" erneut laden. Nur die Erstellung der Ressource wird nicht unterstützt.</br> Ändern das Ressourcenverzeichnis ```Source``` Eigenschaft.| 
-|Neue Steuerelemente, Klassen, Windows oder andere Dateien hinzufügen zum Projekt, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|Keiner|
-|Verwalten von NuGet-Pakete (Pakete hinzufügen/entfernen/aktualisieren)|Nicht unterstützt|Nicht unterstützt|Keiner|
-|Ändern von Daten, die Bindung, verwendet die {X: Bind}-Markuperweiterung|Nicht zutreffend|In Visual Studio-2019 und höheren Versionen unterstützt|In Visual Studio 2017 und früheren Versionen unterstützt nicht|
+|Verknüpfen von Ereignissen mit Steuerelementen während der Ausführung der APP|Nicht unterstützt|Nicht unterstützt|Siehe Fehler: *Fehler bei Fehler*|
+|Erstellen von Ressourcen Objekten in einem Ressourcen Wörterbuch, z. b. in der Seite/im Fenster der APP oder in der *app. XAML*|Nicht unterstützt|Unterstützt|Beispiel: Hinzufügen ```SolidColorBrush``` eines zu einem Ressourcen Wörterbuch, ```StaticResource```das als verwendet werden soll.</br>Hinweis: Statische Ressourcen, Format Konverter und andere in ein Ressourcen Wörterbuch geschriebene Elemente können beim Verwenden von XAML-Hot-Neuladen angewendet/verwendet werden. Nur die Erstellung der Ressource wird nicht unterstützt.</br> Ändern der Eigenschaft des ```Source``` Ressourcen Wörterbuchs.| 
+|Hinzufügen von neuen Steuerelementen, Klassen, Fenstern oder anderen Dateien zu Ihrem Projekt, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|None|
+|Verwalten von nuget-Paketen (hinzufügen/entfernen/aktualisieren von Paketen)|Nicht unterstützt|Nicht unterstützt|None|
+|Ändern der Datenbindung, die die {x:Bind}-Markup Erweiterung verwendet|N/V|In Visual Studio 2019 und höheren Versionen unterstützt|Wird in Visual Studio 2017 oder früheren Versionen nicht unterstützt.|
 
 ## <a name="error-messages"></a>Fehlermeldungen
 
-Möglicherweise stoßen Sie auf die folgenden Fehler bei der Verwendung von XAML "Hot" neu laden.
+Bei der Verwendung von XAML Hot Neuladen treten möglicherweise die folgenden Fehler auf.
 
 |Fehlermeldung|Beschreibung|
 |-|-|-|
-|Stellen Sie sicher Ereignis Fehler|Fehler weist darauf hin, dass Sie versuchen, ein Ereignis zu verknüpfen, um eines der Steuerelemente, die während der Ausführung Ihrer Anwendung nicht unterstützt wird.|
-|Die XAML-Funktion „Bearbeiten und Fortfahren“ hat keine Elemente für die Aktualisierung gefunden.|Fehler tritt auf, beim Bearbeiten von XAML, die Speicherebenen "Hot" Laden in Ihrer app nicht aktualisieren kann.</br> In einigen Fällen kann dieser Fehler behoben werden, mit der ausgeführten app um zu einer Ansicht zu navigieren, in der XAML verwendet wird.</br> In manchen Fällen bedeutet dieser Fehler an, dass die Änderung nicht angewendet werden kann, bis Sie die Debugsitzung neu starten. |
-|Diese Änderung wird während einer Debugsitzung nicht unterstützt.|Fehler weist darauf hin, dass die Änderung, die Sie versuchen, die nicht von "Hot" Reload XAML unterstützt wird. Beenden Sie die Debugsitzung, nehmen Sie die Änderung, und klicken Sie dann starten Sie die Debugsitzung neu.|
+|Fehler bei Fehler|Der Fehler gibt an, dass Sie versuchen, ein Ereignis an eines der Steuerelemente zu übertragen, was nicht unterstützt wird, während die Anwendung ausgeführt wird.|
+|Die XAML-Funktion „Bearbeiten und Fortfahren“ hat keine Elemente für die Aktualisierung gefunden.|Der Fehler tritt auf, wenn Sie XAML bearbeiten, dass das heiße laden in Ihrer APP nicht aktualisiert werden kann.</br> Dieser Fehler kann manchmal behoben werden, indem Sie Ihre laufende App verwenden, um zu einer Ansicht zu navigieren, in der der XAML-Code verwendet wird.</br> In manchen Fällen bedeutet dieser Fehler, dass die jeweilige Änderung nicht angewendet werden kann, bis Sie die Debugsitzung neu starten. |
+|Diese Änderung wird während einer Debugsitzung nicht unterstützt.|Der Fehler gibt an, dass die Änderung, die Sie versuchen, von XAML Hot Neuladen nicht unterstützt wird. Nehmen Sie die Debugsitzung an, nehmen Sie die Änderung vor, und starten Sie die Debugsitzung neu.|
