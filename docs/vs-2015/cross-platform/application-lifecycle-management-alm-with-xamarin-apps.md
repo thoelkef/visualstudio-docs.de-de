@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696260"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740183"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) mit Xamarin-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
  In der folgenden Tabelle wird beschrieben, welche ALM-Funktionen von Visual Studio bei einem Xamarin-Projekt ordnungsgemäß bzw. eingeschränkt funktionieren. Ausführliche Informationen über die Funktionen selbst finden Sie in der verknüpften Dokumentation.  
   
 ## <a name="agile-tools"></a>Agile-Tools  
- Referenzlink: **[Arbeit](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
+ Referenzlink: **[Arbeiten](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** Sie (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
   
  Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Projekttyp und den Programmiersprachen unabhängig.  
   
@@ -42,7 +42,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |Berichte und Visualisierung des Fortschritts|Ja||  
   
 ## <a name="modeling"></a>Modellierung  
- Referenzlink: **[Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)**  
+ Referenzlink: **[Analysieren und modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)**  
   
  Die Entwicklungsfeatures sind unabhängig von der Programmiersprache oder funktionieren mit .NET-Sprachen wie C#. Mit Code zusammenhängende Aspekte finden Sie unter [Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).  
   
@@ -68,7 +68,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |[Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)|Ja||  
   
 ## <a name="build"></a>Build  
- Referenzlink: **[Build](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Referenzlink: **[Erstellen](/azure/devops/pipelines/index)**  
   
 |Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
@@ -91,7 +91,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |[Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nur Windows|Testaufzeichnung der Benutzeroberfläche in Visual Studio ist nur unter Windows möglich. Alle Plattformen finden Sie unter [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
- Referenzlink: **[Verbessern der Codequalität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Referenzlink: **[Verbessern der Code Qualität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  
@@ -101,8 +101,8 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Verwenden Sie stattdessen den [Xamarin Profiler](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) über Xamarin Studio. Beachten Sie, dass der Xamarin Profiler sich derzeit in der Vorschauversion befindet und noch nicht für Windows-Ziele funktioniert.|  
 |[Analysieren von .NET Framework-Arbeitsspeicherproblemen](../misc/analyze-dotnet-framework-memory-issues.md)|Nein|Visual Studio-Tools haben keinen Zugriff auf das Mono-Framework für die Profilerstellung.|  
   
-## <a name="release-management"></a>Release Management:  
- Referenzlink: **[Automatisieren von Bereitstellungen mit Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+## <a name="release-management"></a>Release Management  
+ Referenzlink: **[Automatisieren von bereit Stellungen mit Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Feature|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  

@@ -1,5 +1,5 @@
 ---
-title: Binden Sie an Daten vom Dienst im VSTO-add-in-Projekt
+title: Binden an Daten vom Dienst im VSTO-Add-in-Projekt
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6278e4e849d698097fe3760411a3121d977df07
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328858"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740118"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Binden Sie an Daten von einem Dienst in einem VSTO-Add-in-Projekt
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Binden an Daten aus einem Dienst in einem VSTO-Add-in-Projekt
   Sie können Daten in VSTO-Add-In-Projekten an Hoststeuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Steuerelemente zu einem Microsoft Office Word-Dokument hinzugefügt werden, wie die Steuerelemente an Daten gebunden werden, die aus dem MSDN Content Service abgerufen werden, und wie auf Ereignisse zur Laufzeit reagiert wird.
 
- **Gilt für:** Die Informationen in diesem Thema gelten für Projekten auf Anwendungsebene für Word 2010. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).
+ **Gilt für:** Die Informationen in diesem Thema betreffen Projekte auf Anwendungsebene für Word 2010. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
-- Hinzufügen einer <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Steuerelements zu einem Dokument zur Laufzeit.
+- Hinzufügen <xref:Microsoft.Office.Tools.Word.RichTextContentControl> eines Steuer Elements zu einem Dokument zur Laufzeit.
 
-- Binden der <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Steuerelement an Daten von einem Webdienst.
+- Binden des <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Steuer Elements an Daten aus einem Webdienst.
 
 - Reagieren auf das <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> -Ereignis eines <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Steuerelements
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -50,14 +50,14 @@ ms.locfileid: "67328858"
 
 1. Erstellen Sie in Visual Basic oder C# ein Word-VSTO-Add-In-Projekt namens **MTPS Content Service**.
 
-     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
 
      Visual Studio öffnet die Datei `ThisAddIn.vb` oder `ThisAddIn.cs` und fügt das Projekt dem **Projektmappen-Explorer**hinzu.
 
-## <a name="add-a-web-service"></a>Fügen Sie einen Webdienst hinzu.
- In dieser exemplarischen Vorgehensweise verwenden Sie einen Webdienst namens MTPS Content Service. Dieser Webdienst gibt Informationen aus einem angegebenen MSDN-Artikel in Form eines XML-Zeichenfolge oder ein nur-Text zurück. In einem späteren Schritt wird gezeigt, wie die zurückgegebenen Informationen in einem Inhaltssteuerelement angezeigt werden.
+## <a name="add-a-web-service"></a>Hinzufügen eines Webdiensts
+ Verwenden Sie für diese exemplarische Vorgehensweise einen Webdienst namens MTPS Content Service. Dieser Webdienst gibt Informationen aus einem angegebenen MSDN-Artikel in Form einer XML-Zeichenfolge oder eines reinen Texts zurück. In einem späteren Schritt wird gezeigt, wie die zurückgegebenen Informationen in einem Inhaltssteuerelement angezeigt werden.
 
-### <a name="to-add-the-mtps-content-service-to-the-project"></a>MTPS Content Service zum Projekt hinzufügen
+### <a name="to-add-the-mtps-content-service-to-the-project"></a>So fügen Sie dem Projekt den "MTPS Content Service" hinzu
 
 1. Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.
 
@@ -65,7 +65,7 @@ ms.locfileid: "67328858"
 
 3. Geben Sie die folgende URL in das Feld **Adresse** ein:
 
-     **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**
+     **http:\//Services.msdn.Microsoft.com/ContentServices/ContentService.asmx**
 
 4. Klicken Sie auf **Go**.
 
@@ -73,8 +73,8 @@ ms.locfileid: "67328858"
 
 6. Klicken Sie im Dialogfeld **Assistent zum Hinzufügen von Verweisen** auf **Fertig stellen**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Fügen Sie ein Inhaltssteuerelement hinzu und Binden an Daten zur Laufzeit
- In VSTO-Add-in-Projekten hinzufügen und Binden von Steuerelementen zur Laufzeit. In dieser exemplarischen Vorgehensweise konfigurieren Sie das Steuerelement zum Abrufen von Daten aus dem Webdienst, wenn ein Benutzer auf das Steuerelement klickt.
+## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Hinzufügen eines Inhalts Steuer Elements und Binden an Daten zur Laufzeit
+ In VSTO-Add-in-Projekten können Sie Steuerelemente zur Laufzeit hinzufügen und binden. In dieser exemplarischen Vorgehensweise konfigurieren Sie das Inhalts Steuerelement so, dass es Daten aus dem Webdienst abruft, wenn ein Benutzer auf das Steuerelement klickt.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>So fügen Sie ein Inhaltssteuerelement hinzu und binden es an Daten
 
@@ -88,7 +88,7 @@ ms.locfileid: "67328858"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. Fügen Sie der `ThisAddIn` -Klasse die folgende Methode hinzu. Diese Methode initialisiert die Objekte, die zum Erstellen und senden Sie eine Anforderung an den Webdienst erforderlich.
+3. Fügen Sie der `ThisAddIn` -Klasse die folgende Methode hinzu. Diese Methode initialisiert die Objekte, die zum Erstellen und Senden einer Anforderung an den Webdienst erforderlich sind.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]
@@ -103,7 +103,7 @@ ms.locfileid: "67328858"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]
 
-## <a name="test-the-add-in"></a>Testen Sie das Add-in
+## <a name="test-the-add-in"></a>Testen des Add-ins
  Wenn Sie Word öffnen, wird das <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Steuerelement angezeigt. Der Text im Steuerelement ändert sich, wenn Sie auf das Steuerelement klicken.
 
 ### <a name="to-test-the-vsto-add-in"></a>So testen Sie das VSTO-Add-In
