@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 35e84dc3ae817ab3c5346d83fc5f37934a34e0f9
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689574"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740167"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="windows-applications"></a>Windows-Anwendungen  
   
-- [Exemplarische Vorgehensweise: Erstellen einer Anwendung zugegriffen werden kann, Windows-basierten](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) dieses Thema enthält schrittweise Anweisungen zu den fünf Anforderungen zur Barrierefreiheit für das Logo zertifiziert für Windows in einer Windows-beispielanwendung.  
+- [Exemplarische Vorgehensweise: Erstellen einer zugänglichen Windows-basierten Anwendung](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) dieses Thema enthält Schritt-für-Schritt-Anleitungen zum Einschließen der fünf Barrierefreiheits Anforderungen für das Certified for Windows-Logo in einer Windows-Beispielanwendung.  
   
-- **Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche** In diesem technischen Artikel wird das Entwerfen einer Benutzeroberfläche für Windows-Anwendungen beschrieben, die über die Tastatur gesteuert werden. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
+- [Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) In diesem technischen Artikel wird das Entwerfen einer Benutzeroberfläche für Windows-Anwendungen beschrieben, die über die Tastatur gesteuert werden.  
   
-- **Console Accessibility** In diesem technischen Artikel werden APIs und Ereignisse beschrieben, mit denen die Konsole in Windows XP für Hilfsmittel für die Barrierefreiheit verfügbar gemacht wird. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
+- [Console Accessibility](/previous-versions/windows/desktop/dnacc/console-accessibility) In diesem technischen Artikel werden APIs und Ereignisse beschrieben, mit denen die Konsole in Windows XP für Hilfsmittel für die Barrierefreiheit verfügbar gemacht wird. 
   
 ## <a name="web-sites"></a>Websites  
   
-- [Exemplarische Vorgehensweise: Richtlinien für Eingabehilfen für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps Entwurf Barrierefreiheit für das Web.  
+- [Exemplarische Vorgehensweise: Barrierefreiheit-Richtlinien für die Verwendung von Image-Steuerelementen, Menü](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Steuerelementen und AutoPostBack in diesem Thema finden Sie Schritt-für-Schritt-Anleitungen zum einschließen barrierefreier Steuerelemente in eine Beispiel Webseite sowie einige Barrierefreiheits Tipps für das Web.  
   
-- **Webseiten barrierefreier machen** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 3.2-Elemente sowie andere Elemente aufgelistet, die für die barrierefreie Entwicklung von Websites angepasst werden können. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
+- [Webseiten barrierefreier machen](/previous-versions/windows/desktop/dnacc/making-web-pages-more-accessible) In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 3.2-Elemente sowie andere Elemente aufgelistet, die für die barrierefreie Entwicklung von Websites angepasst werden können. 
   
-- **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
+- [Erstellen barrierefreier Webseiten mit DHTML](/previous-versions//ms528445(v=vs.85)) In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. 
   
-- **Textalternativen für nicht barrierefreie Webseiten** In diesem technischen Artikel wird beschrieben, wie mithilfe von XML und XSLT mehrere Ansichten derselben Webseite, darunter Nur-Text-Versionen, bereitgestellt werden. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+- [Textalternativen für nicht barrierefreie Webseiten](/previous-versions/windows/desktop/dnacc/text-alternatives-to-inaccessible-web-pages) In diesem technischen Artikel wird beschrieben, wie mithilfe von XML und XSLT mehrere Ansichten derselben Webseite, darunter Nur-Text-Versionen, bereitgestellt werden. 
   
 ### <a name="third-party-resources"></a>Ressourcen von Drittanbietern  
   

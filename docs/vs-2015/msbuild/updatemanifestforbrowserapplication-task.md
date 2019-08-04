@@ -19,29 +19,29 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0a6dff6c9e10312241f1d95128febbd5dabb6c5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6dffa98a8abbf74bd6eee8761d91f09a7c022666
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696951"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740217"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Task wird ausgeführt, um das **\<hostInBrowser />**-Element dem Anwendungsmanifest (*projectname*.exe.manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)]-Projekt erstellt wird.  
+Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Task wird ausgeführt, um das **\<hostInBrowser />** -Element dem Anwendungsmanifest (*projectname*.exe.manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)]-Projekt erstellt wird.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
-|Parameter|Beschreibung|  
+|Parameter|BESCHREIBUNG|  
 |---------------|-----------------|  
-|`ApplicationManifest`|Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt den Pfad und den Namen der Anwendungsmanifestdatei an, der Sie das `<hostInBrowser />` Element hinzufügen möchten.|  
-|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />**-Element einzufügen. Wenn **true**, dann ist ein neues `<`**hostInBrowser />**-Element im **\<entryPoint />**-Element enthalten. Beachten Sie, dass der Einschluss von Elementen kumulativ ist: Wenn ein **\<hostInBrowser />**-Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />**-Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|  
+|`ApplicationManifest`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt den Pfad und den Namen der Anwendungsmanifestdatei an, der Sie das `<hostInBrowser />` Element hinzufügen möchten.|  
+|`HostInBrowser`|Erforderlicher **boolescher** Parameter.<br /><br /> Gibt an, ob das Anwendungsmanifest geändert werden soll, um das **\<hostInBrowser />** -Element einzufügen. Wenn **true**, dann ist ein neues `<`**hostInBrowser />** -Element im **\<entryPoint />** -Element enthalten. Beachten Sie, dass der Einschluss von Elementen kumulativ ist: Wenn ein **\<hostInBrowser />** -Element bereits vorhanden ist, wird es weder entfernt noch überschrieben. Stattdessen wird ein zusätzliches **\<hostInBrowser />** -Element erstellt. Wenn **false**, dann ist das Anwendungsmanifest nicht geändert.|  
   
 ## <a name="remarks"></a>Anmerkungen  
- [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] wird mithilfe von [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] ausgeführt und muss aus diesem Grund mit unterstützenden Bereitstellungs- und Anwendungsmanifesten veröffentlicht werden. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] verwendet die [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx)-Aufgabe zum Generieren eines Anwendungsmanifests.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] wird mithilfe von [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] ausgeführt und muss aus diesem Grund mit unterstützenden Bereitstellungs- und Anwendungsmanifesten veröffentlicht werden. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] verwendet die [GenerateApplicationManifest](/dotnet/api/microsoft.build.tasks.generateapplicationmanifest)-Aufgabe zum Generieren eines Anwendungsmanifests.  
   
- Anschließend muss ein zusätzliches Element, **\<hostInBrowser />**, dem Anwendungsmanifest hinzugefügt werden, um eine Anwendung zu konfigurieren, die von einem Browser gehostet wird; wie im folgenden Beispiel gezeigt:  
+ Anschließend muss ein zusätzliches Element, **\<hostInBrowser />** , dem Anwendungsmanifest hinzugefügt werden, um eine Anwendung zu konfigurieren, die von einem Browser gehostet wird; wie im folgenden Beispiel gezeigt:  
   
 ```  
 <!--MyXBAPApplication.exe.manifest-->  
