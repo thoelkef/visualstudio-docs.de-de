@@ -10,18 +10,16 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892844"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821557"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer
 
-Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie die Zeichenfläche und das Eigenschaftenfenster benutzen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten an ein Steuerelement gebunden werden. Die exemplarische Vorgehensweise zeigt insbesondere, wie eine einfache Einkaufswagenklasse erstellt wird, die über eine [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) mit der Bezeichnung `ItemCount` verfügt, und wie die Eigenschaft `ItemCount` an die Eigenschaft **Text** eines [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock)-Steuerelements gebunden wird.
+Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie die Zeichenfläche und das Eigenschaftenfenster benutzen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten an ein Steuerelement gebunden werden. Die exemplarische Vorgehensweise zeigt insbesondere, wie eine einfache Einkaufswagenklasse erstellt wird, die über eine [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) mit der Bezeichnung `ItemCount` verfügt, und wie die Eigenschaft `ItemCount` an die Eigenschaft **Text** eines [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock)-Steuerelements gebunden wird.
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>So erstellen Sie eine Klasse zur Verwendung als Datenquelle
 
@@ -65,7 +63,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
    End Class
    ```
 
-   Durch diesen Code wird der Wert „0“ (null) als Standardelementanzahl mithilfe des [PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata)-Objekts festgelegt.
+   Durch diesen Code wird der Wert „0“ (null) als Standardelementanzahl mithilfe des [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata)-Objekts festgelegt.
 
 1. Klicken Sie im Menü **Datei** auf die Option **Erstellen** > **Projektmappe erstellen**.
 
@@ -73,7 +71,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
 
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für **MainWindow.xaml**, und wählen Sie **Ansicht-Designer** aus.
 
-1. Klicken Sie in der Toolbox auf ein [Raster](/uwp/api/Windows.UI.Xaml.Controls.Grid)-Steuerelement, um es dem Formular hinzuzufügen.
+1. Klicken Sie in der Toolbox auf ein [Raster](xref:Windows.UI.Xaml.Controls.Grid)-Steuerelement, um es dem Formular hinzuzufügen.
 
 1. Wenn Sie `Grid` ausgewählt haben, klicken Sie im Eigenschaftenfenster auf **Neu** neben der **DataContext**-Eigenschaft.
 
@@ -87,7 +85,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
 
 1. Wenn Sie das `TextBlock`-Steuerelement ausgewählt haben, wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker rechts neben der **Text**-Eigenschaft aus, und klicken anschließend auf **Datenbindung erstellen**. (Der Eigenschaftenmarker sieht wie ein kleines Feld aus.)
 
-1. Wählen Sie im Dialogfeld „Datenbindung erstellen“ im Feld **Pfad** die **ItemCount: (int32)**-Eigenschaft aus, und klicken Sie dann auf **OK**.
+1. Wählen Sie im Dialogfeld „Datenbindung erstellen“ im Feld **Pfad** die **ItemCount: (int32)** -Eigenschaft aus, und klicken Sie dann auf **OK**.
 
      Die folgende Abbildung zeigt das Dialogfeld **Datenbindung erstellen**, wobei die Eigenschaft **ItemCount** ausgewählt ist.
 

@@ -1,26 +1,24 @@
 ---
-title: Visual Studio- und GitHub-Bündel | Microsoft-Dokumentation
+title: Visual Studio- und GitHub Enterprise-Paket | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/23/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Verwalten von Abonnements im Visual Studio- und GitHub-Bündel
-ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Verwalten von Abonnements im Visual Studio- und GitHub Enterprise-Paket
+ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783636"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605389"
 ---
-# <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Verwalten von Visual Studio-Abonnements mit GitHub Enterprise
-
+# <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Verwalten von Visual Studio-Abonnements mit GitHub Enterprise
 Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnementbündel zu kaufen, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist die einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
 
 Wenn Ihre Organisation Visual Studio-Abonnement smit GitHub Enterprise kauft, werden diese in zwei Teilen bereitgestellt und verwaltet.
 
-## <a name="managing-visual-studio-subscriptions"></a>Verwalten von Visual Studio-Abonnements
-
+## <a name="manage-visual-studio-subscriptions"></a>Verwalten von Visual Studio-Abonnements
 Wenn Ihre Organisation Visual Studio-Abonnements mit GitHub Enterprise kauft, wird der Visual Studio-Teil der Abonnements sofort bereitgestellt, und die Abonnements stehen für die Zuweisung und Verwaltung im Visual Studio-[Abonnementverwaltungs](https://manage.visualstudio.com)portal bereit. 
 
 Weitere Informationen zum Verwalten von Abonnements finden Sie in diesen Themen:
@@ -35,8 +33,7 @@ Weitere Informationen zum Verwalten von Abonnements finden Sie in diesen Themen:
 >
 > Es liegt in der Verantwortung des Kunden sicherzustellen, dass für jedes zugewiesene GitHub-Abonnement ein entsprechendes Visual Studio- mit GitHub-Abonnement im Verwaltungsportal zugewiesen ist, damit die Lizenzierungsanforderungen für dieses Abonnement erfüllt sind.
 
-## <a name="managing-github-enterprise-subscriptions"></a>Verwalten von GitHub Enterprise-Abonnements
-
+## <a name="manage-github-enterprise-subscriptions"></a>Verwalten von GitHub Enterprise-Abonnements
 Beim Kauf von GitHub Enterprise-Abonnements geht GitHub eine Partnerschaft mit den Kunden ein, um beim Erstellen und Konfigurieren der Organisationen zu helfen, die auf GitHub zugreifen werden, sowie beim Identifizieren der Administratoren.  Diese Administratoren erhalten dann eine Benachrichtigung, dass sie als Administratoren eingerichtet wurden.  
 
 Da dieser Prozess komplexer ist, kann es mehrere Tage nach dem Kauf von Abonnements dauern, bis die Organisationen und Administratoren vollständig eingerichtet sind.
@@ -44,7 +41,6 @@ Da dieser Prozess komplexer ist, kann es mehrere Tage nach dem Kauf von Abonneme
 GitHub ist entweder als cloudbasierte „GitHub.com“ oder als lokaler GitHub Enterprise Server verfügbar.  Die Prozesse zum Verwalten der beiden Versionen unterscheiden sich.  GitHub bietet eine Vielzahl von Hilfethemen und Administratoranleitungen für die Verwaltung von GitHub Enterprise-Abonnements.  Im Folgenden stellen wir Links zu ausgewählten Themen bereit.  
 
 ### <a name="githubcom"></a>GitHub.com 
-
 Weitere Informationen zum Verwalten von „GitHub.com“ finden Sie in den folgenden Themen der [GitHub-Hilfe](https://help.github.com/en).
 - [Vollständige Liste der Hilfethemen](https://help.github.com/en)
 - [Verwalten der Mitgliedschaft in Ihrer Organisation](https://help.github.com/en/articles/managing-membership-in-your-organization)
@@ -56,7 +52,6 @@ Weitere Informationen zum Verwalten von „GitHub.com“ finden Sie in den folge
 - [Verwalten des Zugriffs auf die Repositorys Ihrer Organisation](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
-
 Die GitHub-Hilfe bietet eine Reihe von Administratoranleitungen, in denen Fragen zur Verwaltung der Implementierung von GitHub Enterprise Server in Ihrer Organisation beantwortet und Tipps dazu gegeben werden.
 
 - [Anzeigen aller Administratoranleitungen](https://help.github.com/en/enterprise/2.16/admin)
@@ -70,7 +65,6 @@ Die GitHub-Hilfe bietet eine Reihe von Administratoranleitungen, in denen Fragen
 - [Installieren und Konfigurieren von GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Supportressourcen
-
 - Antworten auf Fragen zu einer Vielzahl von GitHub-Themen finden Sie unter [GitHub-Hilfe](https://help.github.com/en).
 - Hilfe von anderen GitHub-Benutzern finden Sie im [GitHub-Community-Forum](https://github.community/).
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
@@ -78,5 +72,4 @@ Die GitHub-Hilfe bietet eine Reihe von Administratoranleitungen, in denen Fragen
 - Erhalten Sie [technischen Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) für GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Nächste Schritte
-
 Weitere Informationen zum Verwalten von Visual Studio-Abonnements mit GitHub Enterprise finden Sie im Visual Studio-[Abonnementverwaltungsportal](https://visualstudio.microsoft.com/subscriptions-administration/).

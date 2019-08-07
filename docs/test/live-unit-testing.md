@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786519"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662064"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing mit Visual Studio
 
@@ -145,7 +145,7 @@ Es gibt einige Unterschiede zwischen dem automatischen Ausführen und Aktualisie
 
 - Beim Ausführen oder Debuggen von Tests im Test-Explorer-Fenster werden reguläre Binärdateien ausgeführt. Live Unit Testing führt dagegen instrumentierte Binärdateien aus.
 - Live Unit Testing erstellt keine neue Anwendungsdomäne zum Ausführen von Tests, sondern führt Tests mit der Standarddomäne aus. Tests, die über das **Test-Explorer**-Fenster ausgeführt werden, erstellen eine neue Anwendungsdomäne.
-- Live Unit Testing führt Tests in allen Testassemblys nacheinander aus. Wenn Sie mehrere Tests im **Test-Explorer**-Fenster ausführen und die Schaltfläche **Tests parallel ausführen** ausgewählt ist, werden Tests parallel ausgeführt.
+- Live Unit Testing führt Tests in allen Testassemblys nacheinander aus. Im Fenster **Test-Explorer** können Sie eine Option auswählen, mit der mehrere Tests parallel ausgeführt werden.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing und große Projektmappen
 
@@ -166,7 +166,7 @@ Um die einzelnen Projekte in Komponententests auszuwählen, gehen Sie nach dem S
 
 **Ausschließen von einzelnen Tests im Code-Editor-Fenster**
 
-Im Code-Editor-Fenster können Sie einzelne Testmethoden ein- oder ausschließen. Klicken sie im Code-Editor-Fenster mit der rechten Maustaste auf die Signatur der Testmethode. Wählen Sie anschließend **Livetests** > **[die ausgewählte Methode] einschließen**, **Livetests** > **[die ausgewählte Methode] ausschließen** oder **Livetests** > **Alle außer [die ausgewählte Methode] ausschließen** aus, wobei „die ausgewählte Methode“ für den Namen der im Codefenster ausgewählten Methode steht.
+Im Code-Editor-Fenster können Sie einzelne Testmethoden ein- oder ausschließen. Klicken sie im Code-Editor-Fenster mit der rechten Maustaste auf die Signatur der Testmethode. Wählen Sie anschließend **Livetests** >  **[die ausgewählte Methode] einschließen**, **Livetests** >  **[die ausgewählte Methode] ausschließen** oder **Livetests** > **Alle außer [die ausgewählte Methode] ausschließen** aus, wobei „die ausgewählte Methode“ für den Namen der im Codefenster ausgewählten Methode steht.
 
 **Programmgesteuertes Ausschließen von Tests**
 

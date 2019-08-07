@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Hinzufügen von Verweisen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Hinzufügen und Entfernen von importierten Namespaces (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Problembehandlung bei fehlerhaften Verweisen
@@ -352,6 +350,8 @@
                     - name: Übersicht
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: Hinzufügen von Überprüfungen auf NULL für alle Parameter
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Ändern der Methodensignatur
                       href: ide/reference/change-method-signature.md
                     - name: Konvertieren eines anonymen Typs in eine Klasse

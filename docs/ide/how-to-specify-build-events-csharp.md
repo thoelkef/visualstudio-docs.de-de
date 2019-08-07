@@ -1,6 +1,7 @@
 ---
 title: 'Vorgehensweise: Angeben von Buildereignissen (C#)'
 ms.date: 03/21/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946907"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483709"
 ---
 # <a name="how-to-specify-build-events-c"></a>Vorgehensweise: Angeben von Buildereignissen (C#)
 
@@ -37,27 +38,27 @@ Wenn ein Projekt erstellt wird, werden Präbuildereignisse in eine Datei mit dem
 
 4. Geben Sie im Feld **Befehlszeile für Präbuildereignis** die Syntax des Buildereignisses an.
 
-    > [!NOTE]
-    > Präbuildereignisse werden nicht ausgeführt, wenn das Projekt auf dem neuesten Stand ist, und es wird kein Build gestartet.
+   > [!NOTE]
+   > Präbuildereignisse werden nicht ausgeführt, wenn das Projekt auf dem neuesten Stand ist, und es wird kein Build gestartet.
 
 5. Geben Sie im Feld **Befehlszeile für Postbuildereignis** die Syntax des Buildereignisses an.
 
-    > [!NOTE]
-    > Fügen Sie allen Postbuildbefehlen, die *BAT*-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > [!NOTE]
+   > Fügen Sie allen Postbuildbefehlen, die *BAT*-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Geben Sie im Feld **Postbuildereignis ausführen** das Postbuildereignis als auszuführende Bedingung an.
 
-    > [!NOTE]
-    > Um umfangreiche Syntax hinzuzufügen oder Buildmakros aus den [Dialogfeldern „Befehlszeile für Präbuildereignis“ und. „Befehlszeile für Postbuildereignis“](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) auszuwählen, klicken Sie auf das Symbol mit den Auslassungszeichen (**...**), damit ein Bearbeitungsfeld angezeigt wird.
+   > [!NOTE]
+   > Um umfangreiche Syntax hinzuzufügen oder Buildmakros aus den [Dialogfeldern „Befehlszeile für Präbuildereignis“ und. „Befehlszeile für Postbuildereignis“](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) auszuwählen, klicken Sie auf das Symbol mit den Auslassungszeichen ( **...** ), damit ein Bearbeitungsfeld angezeigt wird.
 
-     Die Syntax des Buildereignisses kann beliebige Befehle enthalten, die für eine Eingabeaufforderung oder eine *BAT*-Datei zulässig sind. Dem Namen der Batchdatei sollte ein `call` vorangestellt sein, um sicherzustellen, dass alle nachfolgenden Befehle ausgeführt werden.
+   Die Syntax des Buildereignisses kann beliebige Befehle enthalten, die für eine Eingabeaufforderung oder eine *BAT*-Datei zulässig sind. Dem Namen der Batchdatei sollte ein `call` vorangestellt sein, um sicherzustellen, dass alle nachfolgenden Befehle ausgeführt werden.
 
-    > [!NOTE]
-    > Wenn Ihr Prä- oder Postbuildereignis nicht erfolgreich abgeschlossen wird, können Sie den Build abschließen, indem Sie Ihre Ereignisaktion mit einem Code, der nicht 0 (null) ist, beenden. Dies gibt eine erfolgreiche Aktion an.
+   > [!NOTE]
+   > Wenn Ihr Prä- oder Postbuildereignis nicht erfolgreich abgeschlossen wird, können Sie den Build abschließen, indem Sie Ihre Ereignisaktion mit einem Code, der nicht 0 (null) ist, beenden. Dies gibt eine erfolgreiche Aktion an.
 
 ## <a name="example"></a>Beispiel
 
-In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderliche Betriebssystem im Anwendungsmanifest mit einem *EXE*-Befehl festlegen, der von einem Postbuildereignis aus aufgerufen wird (die *EXE.MANIFEST*-Datei im Projektverzeichnis). Das mindestens erforderliche Betriebssystem ist eine Zahlenfolge mit vier Teilen wie z.B. 4.10.0.0. Um dies zu erreichen, ändert der Befehl den `<dependentOS>`-Abschnitt des Manifests:
+In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderliche Betriebssystem im Anwendungsmanifest mit einem *EXE*-Befehl festlegen, der von einem Postbuildereignis aus aufgerufen wird (die *EXE.MANIFEST*-Datei im Projektverzeichnis). Das mindestens erforderliche Betriebssystem ist eine Zahlenfolge mit vier Teilen wie z.B. 4.10.0.0. Der Befehl ändert den Abschnitt `<dependentOS>` des Manifests, um die mindestens erforderliche Betriebssystemversion festzulegen:
 
 ```xml
 <dependentOS>
@@ -83,11 +84,11 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
    class Program
    {
       /// <summary>
-      /// This function will set the minimum operating system version for a ClickOnce application.
+      /// This function sets the minimum operating system version for a ClickOnce application.
       /// </summary>
       /// <param name="args">
       /// Command Line Arguments:
-      /// 0 - Path to application manifest (.exe.manifest).
+      /// 0 - Path to application manifest (.exe.manifest)
       /// 1 - Version of OS
       ///</param>
       static void Main(string[] args)
@@ -135,7 +136,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 5. Kopieren Sie die *EXE*-Datei z.B. in das Verzeichnis *C:\TEMP\ChangeOSVersionVB.exe*.
 
-   Rufen Sie als Nächstes den Befehl in einem Postbuildereignis auf, um das Anwendungsmanifest zu modifizieren.
+Rufen Sie als Nächstes den Befehl in einem Postbuildereignis auf, um das Anwendungsmanifest zu modifizieren.
 
 ### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>Aufrufen eines Postbuildereignisses, um das Anwendungsmanifest zu ändern
 
@@ -147,31 +148,31 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 4. Veröffentlichen Sie das Projekt, indem Sie auf **Jetzt veröffentlichen** klicken.
 
-     Dann wird die Manifestdatei erstellt und unter *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest* gespeichert. Um die Manifestdatei anzuzeigen, klicken Sie mit der rechten Maustaste auf die Datei, klicken Sie auf **Öffnen mit**, dann auf **Programm aus einer Liste auswählen** und anschließend auf **Editor**.
+   Dann wird die Manifestdatei erstellt und unter *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest* gespeichert. Um die Manifestdatei anzuzeigen, klicken Sie mit der rechten Maustaste auf die Datei, klicken Sie auf **Öffnen mit**, dann auf **Programm aus einer Liste auswählen** und anschließend auf **Editor**.
 
-     Durchsuchen Sie die Datei nach dem `<osVersionInfo>`-Element. Die Version kann z.B. folgende sein:
+   Durchsuchen Sie die Datei nach dem `<osVersionInfo>`-Element. Die Version kann z.B. folgende sein:
 
-    ```xml
-    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+   ```
 
 5. Klicken Sie jetzt wieder im **Projekt-Designer** auf die Registerkarte **Buildereignisse**, und klicken Sie anschließend auf **Postbuild bearbeiten**.
 
 6. Geben Sie im Feld **Befehlszeile für Postbuildereignis** den folgenden Befehl ein:
 
-     `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
+   `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Wenn Sie das Projekt erstellen, ändert dieser Befehl das mindestens erforderliche Betriebssystem im Anwendungsmanifest in 5.1.2600.0.
+   Wenn Sie das Projekt erstellen, ändert dieser Befehl das mindestens erforderliche Betriebssystem im Anwendungsmanifest in 5.1.2600.0.
 
-     Da das `$(TargetPath)`-Makro den vollständigen Pfad für das ausführbare Element angibt, das gerade erstellt wird, gibt die `$(TargetPath)`*MANIFEST*-Datei das im Verzeichnis *bin* erstellte Anwendungsmanifest an. Durch die Veröffentlichung wird dieses Manifest an den Veröffentlichungsspeicherort kopiert, den Sie in einem vorherigen Schritt festgelegt haben.
+   Da das Makro `$(TargetPath)` den vollständigen Pfad für das ausführbare Element angibt, das gerade erstellt wird, gibt `$(TargetPath).manifest` das im Verzeichnis *bin* erstellte Anwendungsmanifest an. Durch die Veröffentlichung wird dieses Manifest an den Veröffentlichungsspeicherort kopiert, den Sie in einem vorherigen Schritt festgelegt haben.
 
 7. Veröffentlichen Sie das Projekt erneut.
 
-     Jetzt sollte die Manifestversion folgendermaßen lauten:
+   Jetzt sollte die Manifestversion folgendermaßen lauten:
 
-    ```xml
-    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+   ```
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,16 +5,16 @@ author: cobey
 ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1c0113346031853e21e9182a56078a44097119a5
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691982"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787690"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
-Codeausschnitte, die oft auch als  _Codevorlagen_ bezeichnet werden, sind für ein effizientes Programmieren sehr nützlich, da mit ihnen vorgeschriebene Codeblöcke eingefügt und bearbeitet werden können. Das Verwenden von Codeausschnitten ist praktisch, um gängige Muster schnell hinzuzufügen oder um neue Muster zu erlernen, falls Sie sich als Entwickler unsicher über die Syntax sind. Es werden Vorlagen für C#, F#, HTML, XML, Python und Razor bereitgestellt.
+Codeausschnitte, die oft auch als _Codevorlagen_ bezeichnet werden, sind für ein effizientes Programmieren sehr nützlich, da Sie es ermöglichen, vorgeschriebene Codeblöcke einzufügen und zu bearbeiten. Das Verwenden von Codeausschnitten ist praktisch, um gängige Muster schnell hinzuzufügen oder um neue Muster zu erlernen, falls Sie sich als Entwickler unsicher über die Syntax sind. Es werden Vorlagen für C#, F#, HTML, XML, Python und Razor bereitgestellt.
 
 In diesem Abschnitt wird das Erstellen, Einfügen und Verwenden von Codeausschnitten erläutert.
 
@@ -30,7 +30,7 @@ Es gibt verschiedene Möglichkeiten, Codeausschnitte hinzuzufügen, einige davon
 
   [![Codeausschnitte in der Toolbox](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Befehl „Vorlagen einfügen“** &ndash; derzeit ist keine standardmäßige Tastenbindung festgelegt, um eine Vorlage einzufügen. Navigieren Sie zum Erstellen einer Tastenbindung zu **Visual Studio > Einstellungen > Tastenbindungen**, und suchen Sie nach `template`. Dadurch können Sie die gewünschte Tastenbindung in das Feld „Bindung bearbeiten“ hinzufügen und anschließend auf  **Übernehmen** klicken:
+- **Befehl „Vorlagen einfügen“** &ndash; derzeit ist keine standardmäßige Tastenbindung festgelegt, um eine Vorlage einzufügen. Navigieren Sie zum Erstellen einer Tastenbindung zu **Visual Studio > Einstellungen > Tastenbindungen**, und suchen Sie nach `template`. Dadurch können Sie die gewünschte Tastenbindung in das Feld „Bindung bearbeiten“ hinzufügen und dann auf **Übernehmen** klicken:
 
   ![Befehl „Vorlagen einfügen“](media/source-editor-image15.png)
 

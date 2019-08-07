@@ -1,5 +1,6 @@
 ---
 title: Bereitstellen einer lokalen Variable
+description: Generieren Sie eine lokale Variable, um einen vorhandenen Ausdruck zu ersetzen. Wählen Sie den Ausdruck aus, klicken Sie mit der rechten Maustaste darauf, und wählen Sie das Menü „Schnellaktionen und Refactorings...“ aus. Wählen Sie dann „Lokales Element für alle Vorkommen von „Ausdruck“ bereitstellen“ aus.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -7,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540998"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483698"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Bereitstellen einer lokalen Variable in Visual Studio
 
@@ -43,7 +44,7 @@ Diese Codegenerierung gilt für:
 2. Führen Sie dann eine der folgenden Aktionen aus:
 
    - **Tastatur**
-      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
       - Klicken Sie auf die Schaltfläche ![Schraubendrehersymbol](media/screwdriver.png) die am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hervorgehobenen Ausdruck platziert wurde.

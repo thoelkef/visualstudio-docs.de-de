@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: aee0029553391c30fb29eb1f9fa7aba01968e5ed
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365294"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740158"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -165,7 +165,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 
 **Frage: Wo erfahre ich mehr über Flask?**
 
-**Antwort:** Lesen Sie die Flask-Dokumentation. Beginnen Sie dabei mit dem [Quickstart (Schnellstart)](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
+**Antwort:** Lesen Sie die Flask-Dokumentation. Beginnen Sie dabei mit dem [Quickstart (Schnellstart)](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 

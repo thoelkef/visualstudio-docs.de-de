@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: cae7a02c774773d08c287dde7df59ff62fdbec58
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195245"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533340"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Übersicht über .NET Compiler Platform-Analysetools
 
@@ -80,9 +80,9 @@ Der folgende Screenshot zeigt die Befehlszeilen-Buildausgabe vom Erstellen eines
 
 Den Regelschweregrad von Analysetools, die als Visual Studio-Erweiterung installiert wurden, können Sie nicht festlegen. Um den [Regelschweregrad](../code-quality/use-roslyn-analyzers.md#rule-severity) zu konfigurieren, installieren Sie die Analysetools als NuGet-Paket.
 
-### <a name="categories"></a>Kategorien
+## <a name="categories"></a>Kategorien
 
-Nachstehend finden Sie die verschiedenen Arten von Analysetools, die Ihnen bei der Analyse Ihres Codes helfen. 
+Nachstehend finden Sie die verschiedenen Arten von Analysetools, die Ihnen bei der Analyse Ihres Codes helfen:
 
 - Von Microsoft empfohlene Analysetools: [FxCop-Analysetools](../code-quality/fxcop-analyzers.yml)
 - Visual Studio IDE-Analysetools: [EditorConfig](../ide/code-styles-and-code-cleanup.md)

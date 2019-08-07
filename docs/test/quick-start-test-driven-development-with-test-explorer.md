@@ -1,81 +1,36 @@
 ---
-title: Testgesteuerte Entwicklung mit dem Test-Explorer
-ms.date: 11/04/2016
+title: Exemplarische Vorgehensweise für die testgesteuerte Entwicklung
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17ee82630e75e0b0ea8b4a069249c2dccad9010e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002155"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493133"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Exemplarische Vorgehensweise: Testgesteuerte Entwicklung mit dem Test-Explorer
 
-Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen Schritten der inkrementellen Entwicklung ordnungsgemäß funktioniert. Es gibt mehrere Frameworks, die Sie nutzen können, um Komponententests zu schreiben, darunter auch einige von Drittanbietern. Einige Testframeworks wurden speziell zum Testen in verschiedenen Sprachen oder Plattformen entwickelt. Der Test-Explorer stellt eine zentrale Oberfläche für Komponententests in einem dieser Frameworks bereit. Für die am häufigsten verwendeten Frameworks sind Adapter verfügbar. Sie können auch eigene Adapter für andere Frameworks schreiben.
+Erstellen Sie Komponententests, damit Ihr Code während inkrementellen Codeänderungen ordnungsgemäß funktioniert. Es gibt mehrere Frameworks, die Sie nutzen können, um Komponententests zu schreiben, darunter auch einige von Drittanbietern. Einige Testframeworks wurden speziell zum Testen in verschiedenen Sprachen oder Plattformen entwickelt. Der Test-Explorer stellt eine zentrale Oberfläche für Komponententests in einem dieser Frameworks bereit. Weitere Informationen zum **Test-Explorers** finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md) und [Visual Studio-Test-Explorer – häufig gestellte Fragen](test-explorer-faq.md).
 
-Der Test-Explorer löst die Komponententestfenster früherer Versionen von Visual Studio ab. Seine Vorteile:
+In dieser exemplarische Vorgehensweise wird veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Testframeworks (MSTest) entwickelt wird. Sie können es für andere Sprachen und andere Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
-- Sie können .NET-, nicht verwaltete und Datenbanktests sowie alle weiteren Arten von Tests über eine einzige Oberfläche ausführen.
+## <a name="create-a-test-and-generate-code"></a>Erstellen eines Tests und Generieren von Code
 
-- Sie können das Komponententestframework Ihrer Wahl verwenden, z.B. NUnit- oder MSTest-Frameworks.
+1. Erstellen Sie ein C#-Projekt für eine **Klassenbibliothek (.NET Standard)** . Dieses Projekt enthält den Code, den Sie testen möchten. Geben Sie dem Projekt den Namen **MyMath**.
 
-- Sie können alle benötigten Informationen in einem Fenster anzeigen.
+2. Fügen Sie in derselben Projektmappe ein neues **MSTest-Testprojekt (.NET Core)** hinzu. Geben Sie dem Testprojekt den Namen **MathTests**.
 
-## <a name="use-test-explorer"></a>Verwenden des Test-Explorers
+   ![Neue Code- und Testprojekte](../test/media/test-driven-development-ide.png)
 
-![Test-Explorer mit Schaltfläche „Alles ausführen“](../test/media/unittestexplorer-beta-.png)
-
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus
-
-1. Erstellen Sie Komponententests, die die Testframeworks Ihrer Wahl verwenden. Erstellen Sie beispielsweise einen Test, der das MSTest-Framework verwendet:
-
-   1. Erstellen Sie ein neues **Komponententestprojekt** für C#, Visual Basic oder C++.
-
-   2. Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.
-
-2. Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
-
-3. Klicken Sie in der Menüleiste auf **Test** > **Komponententests ausführen** > **Alle Tests**.
-
-    Die Projektmappe wird erstellt, und die Tests werden ausgeführt.
-
-    Der Test-Explorer wird geöffnet und zeigt eine Zusammenfassung der Ergebnisse an.
-
-   **So können Sie eine vollständige Liste der Tests anzeigen:** Klicken Sie in einer beliebigen Kategorie auf **Alle anzeigen**.
-
-   **So können Sie Details zu Testergebnissen anzeigen:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.
-
-   **So können Sie zum Code eines Tests navigieren:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.
-
-   **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen** aus.
-
-> [!IMPORTANT]
-> Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.
-
-> [!NOTE]
-> Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
-
-## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode
-
-Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
-
-### <a name="create-the-test-and-method"></a>Erstellen des Tests und der Methode
-
-1. Erstellen Sie ein C#-**Klassenbibliotheksprojekt**. Dieses Projekt enthält den Code, den Sie bereitstellen möchten. In diesem Beispiel hat es den Namen `MyMath`.
-
-2. Erstellen Sie ein neues Projekt **Komponententestprojekt**.
-
-   ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png)
-
-3. Schreiben Sie eine einfache Testmethode. Überprüfen Sie das Ergebnis, das für eine bestimmte Eingabe erreicht wurde:
+3. Schreiben Sie eine einfache Testmethode, die das Ergebnis überprüft, das für eine bestimmte Eingabe abgerufen wurde. Fügen Sie der `UnitTest1`-Klasse folgenden Code hinzu:
 
    ```csharp
-
    [TestMethod]
    public void BasicRooterTest()
    {
@@ -87,98 +42,93 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
      // Run the method under test:
      double actualResult = rooter.SquareRoot(input);
      // Verify the result:
-     Assert.AreEqual(expectedResult, actualResult,
-         delta: expectedResult / 100);
+     Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 100);
    }
    ```
 
-4. Generieren Sie die Methode von dem Test.
+4. Generieren Sie einen Typ aus dem Testcode.
 
-   1. Platzieren Sie den Cursor auf `Rooter`, und klicken Sie im Kontextmenü auf **Generieren** > **Neuer Typ**.
+   1. Platzieren Sie den Cursor auf `Rooter`, und wählen Sie dann über das Glühbirnenmenü **Typ „Rooter“ generieren** > **Neuen Typ generieren** aus.
 
-   2. Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.
+      ![Schnellaktion: neuen Typ generieren](media/test-driven-development-generate-new-type.png)
 
-   3. Platzieren Sie den Cursor auf `SquareRoot`, und klicken Sie im Kontextmenü auf **Generieren**  > **Methodenstub**.
+   2. Legen Sie im Dialogfeld **Typ generieren** das **Projekt** auf **MyMath** (das Klassenbibliotheksprojekt) fest, und klicken Sie auf **OK**.
 
-5. Führen Sie den Komponententest aus.
+      ![Dialogfeld „Typ generieren“ in Visual Studio 2019](media/test-driven-development-generate-type-dialog.png)
 
-   1. Klicken Sie im Menü **Test** auf **Komponententests ausführen** > **Alle Tests**.
+5. Generieren Sie eine Methode aus dem Testcode. Platzieren Sie den Cursor auf `SquareRoot`, und wählen Sie dann über das Glühbirnenmenü **Methode „Rooter.SquareRoot“ generieren** aus.
 
-        Die Projektmappe wird erstellt und ausgeführt.
+6. Führen Sie den Komponententest aus.
 
-        Test-Explorer wird geöffnet und zeigt die Ergebnisse an.
+   1. Klicken Sie im Menü **Test** auf **Fenster** > **Test-Explorer**, um den **Test-Explorer** zu öffnen.
 
-        Der Test wird unter **Fehlgeschlagene Tests**angezeigt:
+   2. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, um den Test auszuführen.
 
-6. Wählen Sie den Namen des Tests aus.
+   Die Projektmappe wird erstellt, und der Test wird ausgeführt und schlägt fehl.
 
-    Die Details des Tests werden im unteren Teil des Test-Explorers angezeigt.
+7. Wählen Sie den Namen des Tests aus.
 
-7. Wählen Sie die Elemente unter **Stapelüberwachung** aus, um festzustellen, wo der Test fehlgeschlagen ist.
+   Die Details des Tests werden im Bereich **Zusammenfassung der Testdetails** angezeigt.
 
-   ![Komponententest-Explorer zeigt fehlerhaften Test an](../test/media/unittestexplorerwalkthrough2.png)
+   ![Zusammenfassung der Testdetails im Test-Explorer](media/test-driven-development-test-detail-summary.png)
 
-   Sie haben jetzt einen Test und einen Stub erstellt, die Sie ändern werden, damit der Test erfolgreich verläuft.
+8. Klicken Sie auf den obersten Link unter **Stapelüberwachung**, um zu der Position zu springen, an der der Test fehlgeschlagen ist.
 
-#### <a name="after-every-change-make-all-the-tests-pass"></a>Sorgen Sie dafür, dass der Test nach jeder Änderung erfolgreich verläuft.
+Sie haben jetzt einen Test und einen Stub erstellt, die Sie ändern können, damit der Test erfolgreich verläuft.
 
-1. Verbessern Sie in *MyMath\Rooter.cs* den Code von `SquareRoot`:
+## <a name="verify-a-code-change"></a>Überprüfen einer Codeänderung
+
+1. Verbessern Sie in der Datei *Class1.cs* den Code von `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
-     {
-       return input / 2;
-     }
+    {
+        return input / 2;
+    }
     ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-     Der Code wird erstellt, und der Test wird ausgeführt.
+   Die Projektmappe wird erstellt, und der Test wird erfolgreich ausgeführt.
 
-     Der Test wurde erfolgreich ausgeführt.
+   ![Erfolgreicher Test im Test-Explorer](../test/media/test-driven-development-passed-test.png)
 
-     ![Komponententest-Explorer zeigt einen bestandenen Test an](../test/media/unittestexplorerwalkthrough3.png)
+## <a name="extend-the-range-of-inputs"></a>Erweitern des Eingabebereichs
 
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Fügen Sie Tests hinzu, um den Eingabebereich zu erweitern
+Sie können die Wahrscheinlichkeit erhöhen, dass Ihr Code in allen Fällen funktioniert, indem Sie Tests hinzufügen, die einen größeren Bereich an Eingabewerten testen.
 
-1. Um sich sicherer sein zu können, dass Ihr Code in allen Fällen funktioniert, fügen Sie Tests hinzu, die einen größeren Bereich an Eingabewerten testen.
+> [!TIP]
+> Vermeiden Sie, vorhandene erfolgreiche Tests zu ändern. Fügen Sie stattdessen lieber neue Tests hinzu. Ändern Sie vorhandene Tests nur, wenn sich die Benutzeranforderungen ändern. Dieses Vorgehen hilft sicherzustellen, dass durch die Erweiterung des Codes keine vorhandene Funktionalität verloren geht.
 
-    > [!TIP]
-    > Vermeiden Sie, vorhandene erfolgreiche Tests zu ändern. Fügen Sie stattdessen lieber neue Tests hinzu. Ändern Sie vorhandene Tests nur, wenn sich die Benutzeranforderungen ändern. Dieses Vorgehen hilft sicherzustellen, dass durch die Erweiterung des Codes keine vorhandene Funktionalität verloren geht.
-
-     Fügen Sie in der Testklasse den folgenden Test hinzu, der einen Bereich von Eingabewerten testet:
+1. Fügen Sie in der Testklasse den folgenden Test hinzu, der einen Bereich von Eingabewerten testet:
 
     ```csharp
     [TestMethod]
     public void RooterValueRange()
     {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Try a range of values:
-      for (double expectedResult = 1e-8;
-          expectedResult < 1e+8;
-          expectedResult = expectedResult * 3.2)
-      {
-        RooterOneValue(rooter, expectedResult);
-      }
+        // Create an instance to test.
+        Rooter rooter = new Rooter();
+
+        // Try a range of values.
+        for (double expected = 1e-8; expected < 1e+8; expected *= 3.2)
+        {
+            RooterOneValue(rooter, expected);
+        }
     }
 
     private void RooterOneValue(Rooter rooter, double expectedResult)
     {
-      double input = expectedResult * expectedResult;
-      double actualResult = rooter.SquareRoot(input);
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 1000);
+        double input = expectedResult * expectedResult;
+        double actualResult = rooter.SquareRoot(input);
+        Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 1000);
     }
     ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-     Der neue Test schlägt fehl, obwohl der erste Test weiterhin erfolgreich verläuft.
+   Der neue Test schlägt fehl, obwohl der erste Test weiterhin erfolgreich verläuft. Sie können die Fehlerquelle ermitteln, indem Sie den fehlgeschlagenen Test auswählen und die Details im Bereich **Zusammenfassung der Testdetails** anzeigen.
 
-     Um die Fehlerursache herauszufinden, wählen Sie den fehlgeschlagenen Test aus. Wählen Sie dann im unteren Teil des Test-Explorers das oberste Element der **Stapelüberwachung**aus.
-
-3. Überprüfen Sie die zu testende Methode, um zu sehen, was falsch sein könnte. Schreiben Sie den Code der `MyMath.Rooter` -Klasse neu:
+3. Überprüfen Sie die zu testende Methode, um zu sehen, was falsch sein könnte. Ändern Sie den Code von `SquareRoot` folgendermaßen:
 
     ```csharp
     public double SquareRoot(double input)
@@ -194,89 +144,86 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
     }
     ```
 
-4. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+4. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-     Beide Tests sind nun erfolgreich.
+   Beide Tests sind nun erfolgreich.
 
-#### <a name="add-tests-for-exceptional-cases"></a>Hinzufügen von Tests für Sonderfälle
+## <a name="add-tests-for-exceptional-cases"></a>Hinzufügen von Tests für Sonderfälle
 
-1. Fügen Sie einen Test für negative Eingaben hinzu:
+1. Fügen Sie einen neuen Test für negative Eingaben hinzu:
 
     ```csharp
     [TestMethod]
-     public void RooterTestNegativeInputx()
-     {
-         Rooter rooter = new Rooter();
-         try
-         {
-             rooter.SquareRoot(-10);
-         }
-         catch (ArgumentOutOfRangeException e)
-         {
-             return;
-         }
-         Assert.Fail();
-     }
+    public void RooterTestNegativeInputx()
+    {
+        Rooter rooter = new Rooter();
+        try
+        {
+            rooter.SquareRoot(-10);
+        }
+        catch (System.ArgumentOutOfRangeException)
+        {
+            return;
+        }
+        Assert.Fail();
+    }
     ```
 
-2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-     Die zu testende Methode bildet eine Schleife und muss manuell abgebrochen werden.
+   Die zu testende Methode bildet eine Schleife und muss manuell abgebrochen werden.
 
-3. Wählen Sie **Abbrechen**aus.
+3. Klicken Sie auf der Symbolleiste des **Test-Explorers** auf **Abbrechen**.
 
-     Der Test wird nach 10 Sekunden beendet.
+   Die Ausführung des Tests wird beendet.
 
-4. Beheben Sie den Code der Methode:
+4. Korrigieren Sie den Code von `SquareRoot`, indem Sie folgende `if`-Anweisung am Anfang der Methode hinzufügen:
 
     ```csharp
-
     public double SquareRoot(double input)
     {
-      if (input <= 0.0)
-      {
-        throw new ArgumentOutOfRangeException();
-      }
-    ...
-    ```
-
-5. Wählen Sie im Test-Explorer **Alle ausführen**aus.
-
-     Alle Tests sind erfolgreich.
-
-#### <a name="refactor-without-changing-tests"></a>Den Code umgestalten, ohne Tests zu ändern
-
-1. Vereinfachen Sie den Code, ohne jedoch die Tests zu ändern.
-
-    > [!TIP]
-    > Eine *Umgestaltung* ist eine Änderung, die vorgenommen wird, damit der Code besser funktioniert oder verständlicher wird. Eine Umgestaltung sieht nicht vor, das Verhalten des Codes zu ändern. Deshalb werden die Tests nicht geändert.
-    >
-    > Es wird empfohlen, die Schritte der Umgestaltung separat von den Schritten auszuführen, die die Funktionalität erweitern. Wenn Sie die Tests nicht ändern, können Sie sichergehen, dass während der Umgestaltung nicht versehentlich Fehler eingebaut wurden.
-
-    ```csharp
-    public class Rooter
-    {
-      public double SquareRoot(double input)
-      {
         if (input <= 0.0)
         {
-          throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException();
         }
+        ...
+    ```
+
+5. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
+
+   Alle Tests sind erfolgreich.
+
+## <a name="refactor-the-code-under-test"></a>Umgestalten des zu testenden Codes
+
+Führen Sie ein Refactoring für den Code durch, ohne die Tests zu ändern.
+
+> [!TIP]
+> Ein *Refactoring* ist eine Änderung, die vorgenommen wird, damit der Code besser funktioniert oder verständlicher wird. Eine Umgestaltung sieht nicht vor, das Verhalten des Codes zu ändern. Deshalb werden die Tests nicht geändert.
+>
+> Es wird empfohlen, die Schritte der Umgestaltung separat von den Schritten auszuführen, die die Funktionalität erweitern. Wenn Sie die Tests nicht ändern, können Sie sichergehen, dass während der Umgestaltung nicht versehentlich Fehler eingebaut wurden.
+
+1. Ändern Sie die Zeile, die `result` in der `SquareRoot`-Methode berechnet, folgendermaßen:
+
+    ```csharp
+    public double SquareRoot(double input)
+    {
+        if (input <= 0.0)
+        {
+            throw new ArgumentOutOfRangeException();
+        }
+
         double result = input;
         double previousResult = -input;
         while (Math.Abs(previousResult - result) > result / 1000)
         {
-          previousResult = result;
-          result = (result + input / result) / 2;
-          //was: result = result - (result * result - input) / (2*result);
+            previousResult = result;
+            result = (result + input / result) / 2;
+            //was: result = result - (result * result - input) / (2*result);
         }
         return result;
-      }
     }
     ```
 
-2. Wählen Sie **Alle ausführen**aus.
+2. Klicken Sie auf **Alle ausführen**, und überprüfen Sie, ob alle Tests weiterhin erfolgreich ausgeführt werden.
 
-     Alle Tests sind weiterhin erfolgreich.
-
-     ![Komponententest-Explorer zeigt 3 bestandene Tests an](../test/media/unittestexplorerwalkthrough4.png)
+   ![Drei erfolgreiche Tests im Test-Explorer](../test/media/test-driven-development-three-passed-tests.png)

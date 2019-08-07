@@ -830,6 +830,8 @@
   items:
     - name: Erstellen eines Software Development Kits
       href: creating-a-software-development-kit.md
+    - name: 'Vergleich: SDK und NuGet-Paket'
+      href: nuget-versus-sdk-references.md
     - name: 'Exemplarische Vorgehensweise: Erstellen eines SDK mit C# oder Visual Basic'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 'Exemplarische Vorgehensweise: Erstellen eines SDK mit C++'

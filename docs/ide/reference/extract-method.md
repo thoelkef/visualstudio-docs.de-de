@@ -1,5 +1,6 @@
 ---
 title: Extrahieren einer Methode
+description: Wandeln Sie ein Codefragment in eine eigene Methode um, indem Sie den Code auswählen und STRG+R, STRG+M drücken.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc1e96bed6c3f7fac857262644765d383de37482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790994"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483668"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring des Extrahierens einer Methode
 
@@ -49,7 +50,7 @@ Dieses Refactoring gilt für:
 
    - **Tastatur**
       - Drücken Sie **STRG+R** und dann **STRG+M**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Methode extrahieren** aus.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Methode extrahieren** aus.
    - **Maus**
       - Wählen Sie **Bearbeiten > Umgestalten > Methode extrahieren** aus.
       - Klicken Sie mit der rechten Maustaste auf den Code, und wählen Sie **Umgestalten > Extrahieren > Methode extrahieren**.

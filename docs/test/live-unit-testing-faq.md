@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258130"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662023"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – FAQ (Häufig gestellte Fragen)
 
@@ -139,7 +139,7 @@ Es gibt mehrere Unterschiede:
 
 - Live Unit Testing erstellt keine neue Anwendungsdomäne zum Ausführen von Tests. Tests, die im Fenster **Test-Explorer** ausgeführt werden, erstellen dagegen eine neue Anwendungsdomäne.
 
-- Live Unit Testing testet jede Testassembly sequenziell. Wenn Sie jedoch mehrere Tests im Fenster **Test-Explorer** ausführen und die Schaltfläche **Tests parallel ausführen** ausgewählt haben, werden sie parallel ausgeführt.
+- Live Unit Testing führt in jeder Testassembly nacheinander Tests aus. Im Fenster **Test-Explorer** können Sie mehrere Tests parallel ausführen.
 
 - Für die Ermittlung und Ausführung von Tests in Live Unit Testing wird Version 2 von `TestPlatform` verwendet, während im Fenster **Test-Explorer** Version 1 verwendet wird. In den meisten Fällen sollten Sie allerdings keinen Unterschied feststellen.
 

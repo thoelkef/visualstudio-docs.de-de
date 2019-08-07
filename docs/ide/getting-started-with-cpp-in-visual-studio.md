@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043396"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461685"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -107,7 +107,7 @@ Als Nächstes fügen Sie Code hinzu, um das Wort „Hallo“ im Konsolenfenster 
    using namespace std;
    ```
 
-   Sie werden vermutlich bereits festgestellt haben, dass ein Feld erschienen ist, während Sie den Code eingegeben haben. Dieses Feld enthält Vorschläge für die automatische Vervollständigung der Zeichen, die Sie eingeben. Es ist Teil von C++ IntelliSense, das Codeeingabeaufforderungen bietet, darunter Klassen- oder Schnittstellenmember sowie Parameterinformationen. Außerdem können Sie Codeausschnitte verwenden, wobei es sich um vordefinierte Codeblöcke handelt. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md) und [Codeausschnitte](../ide/code-snippets.md).
+   Sie werden vermutlich bereits festgestellt haben, dass ein Feld erschienen ist, während Sie den Code eingegeben haben. Dieses Feld enthält Vorschläge für die automatische Vervollständigung der eingegebenen Zeichen. Es ist Teil von C++ IntelliSense, das Codeeingabeaufforderungen bietet, darunter Klassen- oder Schnittstellenmember sowie Parameterinformationen. Außerdem können Sie Codeausschnitte verwenden, wobei es sich um vordefinierte Codeblöcke handelt. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md) und [Codeausschnitte](../ide/code-snippets.md).
 
    ![Der geänderte Code im Editor](../ide/media/get-started-cpp-cout-fix.png)
 
