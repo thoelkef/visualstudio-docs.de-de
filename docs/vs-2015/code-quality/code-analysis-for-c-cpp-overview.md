@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698002"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740238"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Übersicht über die Codeanalyse für C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Das Codeanalysetool für C/C++ liefert Entwicklern Informationen zu möglichen F
  Möglicherweise möchten Sie festlegen, dass beim Quellcode-Check-In stets bestimmte Richtlinien beachtet werden müssen. Insbesondere sollten Sie sicherstellen, dass die Analyse im Rahmen des aktuellen lokalen Builds durchgeführt wurde. Weitere Informationen zum Aktivieren einer Eincheckrichtlinie für die Codeanalyse finden Sie unter [Creating and Using Code Analysis Check-In Policies (Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse)](../code-quality/creating-and-using-code-analysis-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Team Build-Integration  
- Sie können die in das Buildsystem integrierten Funktionen verwenden, um das Codeanalysetool im Rahmen des [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]-Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Build the application (Erstellen der Anwendung)](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Sie können die in das Buildsystem integrierten Funktionen verwenden, um das Codeanalysetool im Rahmen des [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]-Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Build the application (Erstellen der Anwendung)](/azure/devops/pipelines/index).  
   
 ## <a name="command-line-support"></a>Befehlszeilenunterstützung  
  Das Analysetool wurde nicht nur vollständig in die Entwicklungsumgebung integriert, sondern es kann von Entwicklern auch wie im folgenden Beispiel dargestellt über die Befehlszeile verwendet werden:  

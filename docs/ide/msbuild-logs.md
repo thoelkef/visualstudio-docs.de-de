@@ -1,6 +1,7 @@
 ---
 title: Behandeln von MSBuild-Problemen und Erstellen von Protokollen
 ms.date: 06/27/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
@@ -14,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c3db56ac7ea60ce88beae6698c974ac91373ed00
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518196"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461478"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Behandeln von MSBuild-Problemen und Erstellen von Protokollen
 
@@ -117,10 +118,10 @@ Eine Datei „Msbuild.binlog“ wird in dem Verzeichnis erstellt, von dem aus Si
 
 1. Wechseln Sie im Visual Studio-Hauptmenü zu **Extras** > **Optionen** > **Projekte und Projektmappen** >**Erstellen und ausführen**.
 1. Legen Sie **Ausführlichkeit der Protokolldatei des MSBuild-Projektbuilds** in beiden Kombinationsfeldern auf **Detailliert** fest. Das obere steuert die Buildausführlichkeit im **Ausgabefenster**, und das zweite steuert die Buildausführlichkeit in der Datei „\<Projektname\>.log“, die während des Buildvorgangs im Zwischenverzeichnis der einzelnen Projekte erstellt wird.
-1. Geben Sie an einer Visual Studio Developer-Eingabeaufforderung einen der folgenden Befehle ein, und setzen Sie dabei die tatsächlichen Werte für Pfad und Konfiguration ein:
+2. Geben Sie an einer Visual Studio Developer-Eingabeaufforderung einen der folgenden Befehle ein, und setzen Sie dabei die tatsächlichen Werte für Pfad und Konfiguration ein:
 
     ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln 
+    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
     oder

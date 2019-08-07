@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315251"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533371"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -322,7 +322,7 @@ Bei jeder Änderung, die Sie an *app.tsx* vornehmen, müssen Sie den Webpack-Bef
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>Hinzufügen eines Buildskripts zum Transpilieren von JSX
 
-In neueren Versionen von Node.js ist ein Buildskript erforderlich. Sie können JSX beim Erstellen von Visual Studio transpilieren, anstatt JSX über die Befehlszeile (wie im vorherigen Abschnitt gezeigt) zu transpilieren.
+Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Erstellen von Visual Studio transpilieren, anstatt JSX über die Befehlszeile (wie im vorherigen Abschnitt gezeigt) zu transpilieren.
 
 * Öffnen Sie *package.json*, und fügen Sie nach Abschnitt `dependencies` den folgenden Abschnitt ein:
 

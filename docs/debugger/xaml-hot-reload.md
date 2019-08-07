@@ -1,8 +1,7 @@
 ---
 title: Schreiben und Debuggen von XAML mithilfe von XAML Hot Neuladen
 description: XAML Hot Neuladen oder XAML-bearbeiten und Fortfahren ermöglicht es Ihnen, während der Ausführung von apps Änderungen an Ihrem XAML-Code vorzunehmen.
-ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711226"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822142"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von XAML-Code mit XAML-Hot-Neuladen in Visual Studio
 
-Visual Studio XAML Hot Neuladen hilft Ihnen beim Erstellen Ihrer WPF-oder UWP-App-Benutzeroberfläche, da Sie Änderungen an XAML-Code vornehmen können, während Ihre APP ausgeführt wird. Mit dieser Funktion können Sie XAML-Code inkrementell erstellen und testen, indem Sie den Datenkontext der ausgelaufenden APP, den Authentifizierungs Status und eine andere reale Komplexität, die während der Entwurfszeit schwer zu simulieren ist, nutzen.
+Das heiße Laden von XAML unterstützt Sie beim Erstellen der Benutzeroberfläche der WPF-oder UWP-APP, indem Sie Änderungen an XAML-Code vornehmen können, während Ihre APP ausgeführt wird. Hot-Neuladen ist sowohl in Visual Studio als auch in Blend für Visual Studio verfügbar. Mit dieser Funktion können Sie XAML-Code inkrementell erstellen und testen, indem Sie den Datenkontext der ausgelaufenden APP, den Authentifizierungs Status und eine andere reale Komplexität, die während der Entwurfszeit schwer zu simulieren ist, nutzen.
 
 Das erneute Laden von XAML ist besonders in den folgenden Szenarien hilfreich:
 
@@ -35,7 +34,7 @@ Das erneute Laden von XAML ist besonders in den folgenden Szenarien hilfreich:
 |Universelle Windows-Apps (UWP)|Windows 10 und höher mit dem [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Das Laden von Visual Studio XAML Hot wird zurzeit nur unterstützt, wenn die Anwendung in Visual Studio mit dem angefügten Debugger ausgeführt wird (**F5** oder **Debuggen starten**). Sie können diese Funktion nicht aktivieren, indem Sie *an den Prozess anhängen*verwenden.
+> Das Laden von Visual Studio XAML Hot wird zurzeit nur unterstützt, wenn Sie die Anwendung in Visual Studio ausführen oder Blend für Visual Studio mit angefügtem Debugger (**F5** oder **Debuggen starten**). Sie können diese Funktion nicht aktivieren, indem Sie [an den Prozess anhängen](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)verwenden.
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
@@ -44,7 +43,7 @@ Im folgenden finden Sie bekannte Einschränkungen für das heiße Laden von XAML
 |Einschränkung|WPF|UWP|Hinweise|
 |-|-|-|-|
 |Verknüpfen von Ereignissen mit Steuerelementen während der Ausführung der APP|Nicht unterstützt|Nicht unterstützt|Siehe Fehler: *Fehler bei Fehler*|
-|Erstellen von Ressourcen Objekten in einem Ressourcen Wörterbuch, z. b. in der Seite/im Fenster der APP oder in der *app. XAML*|Nicht unterstützt|Unterstützt|Beispiel: Hinzufügen ```SolidColorBrush``` eines zu einem Ressourcen Wörterbuch, ```StaticResource```das als verwendet werden soll.</br>Hinweis: Statische Ressourcen, Format Konverter und andere in ein Ressourcen Wörterbuch geschriebene Elemente können beim Verwenden von XAML-Hot-Neuladen angewendet/verwendet werden. Nur die Erstellung der Ressource wird nicht unterstützt.</br> Ändern der Eigenschaft des ```Source``` Ressourcen Wörterbuchs.| 
+|Erstellen von Ressourcen Objekten in einem Ressourcen Wörterbuch, z. b. in der Seite/im Fenster der APP oder in der *app. XAML*|Nicht unterstützt|Unterstützt|Beispiel: Hinzufügen `SolidColorBrush` eines zu einem Ressourcen Wörterbuch, `StaticResource`das als verwendet werden soll.</br>Hinweis: Statische Ressourcen, Format Konverter und andere in ein Ressourcen Wörterbuch geschriebene Elemente können beim Verwenden von XAML-Hot-Neuladen angewendet/verwendet werden. Nur die Erstellung der Ressource wird nicht unterstützt.</br> Ändern der Eigenschaft des `Source` Ressourcen Wörterbuchs.|
 |Hinzufügen von neuen Steuerelementen, Klassen, Fenstern oder anderen Dateien zu Ihrem Projekt, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|None|
 |Verwalten von nuget-Paketen (hinzufügen/entfernen/aktualisieren von Paketen)|Nicht unterstützt|Nicht unterstützt|None|
 |Ändern der Datenbindung, die die {x:Bind}-Markup Erweiterung verwendet|N/V|In Visual Studio 2019 und höheren Versionen unterstützt|Wird in Visual Studio 2017 oder früheren Versionen nicht unterstützt.|

@@ -6,20 +6,18 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie sich die maximale Anzahl zugewiesener Abonnements im Visual Studio-Verwaltungsportal anzeigen lassen können.
-ms.openlocfilehash: 7a3205fd29c0eb69e20fee03a2679ab227243058
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416998"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605496"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements
-
 Mithilfe eines neuen Features im Verwaltungsportal für Visual Studio-Abonnements haben Sie immer im Blick, wie viele Abonnements Sie erworben und zugewiesen haben, und wissen, wie viele Abonnements auf jeder Stufe Sie sowohl während des vergangenen Jahres als auch über die gesamte Dauer Ihrer Vereinbarung hinweg maximal zugewiesen hatten. 
 
 ## <a name="view-your-maximum-usage"></a>Anzeigen der maximalen Auslastung
 So können Sie sich die maximale Anzahl zugewiesener Abonnements für jede Vereinbarung und für jede Abonnementstufe anzeigen lassen:
-
 1. Wählen Sie oben links im Portal aus der Dropdownliste die Vereinbarung aus, die Sie sich ansehen möchten. (Wenn Sie nur eine Vereinbarung haben, ist diese bereit ausgewählt.)
 2. Klicken Sie auf die Registerkarte **Maximum Usage** (Maximale Auslastung).  
     > [!div class="mx-imgBorder"]
@@ -41,8 +39,7 @@ In der Tabelle oben können Sie z.B. sehen, dass am 13.12.2018 von den 123 im Ra
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>Frage: Inwiefern unterscheiden sich die Informationen, die durch das Feature „Maximum Usage“ (Maximale Auslastung) gewonnen werden können, von den Zuweisungsinformationen, die auf der linken Seite des Portals im Bereich „Overview“ (Übersicht) verfügbar sind?
-
-Antwort:  Im Bereich „Overview“ (Übersicht) werden die aktuellen Zuweisungen und die verfügbaren Abonnements für jede Abonnementstufe angezeigt.  Diese können sich aber für eine Vereinbarung stark von der maximalen Anzahl zugewiesener Abonnements zu einem beliebigen Zeitpunkt unterscheiden.  Mithilfe des Features „Maximum Usage“ (Maximale Auslastung) können Sie sich anzeigen lassen, wann diese Höchstwerte für Zuweisungen erreicht wurden, und wie hoch diese waren.  Dieser Unterschied ist entscheidend, da die Abrechnung für Abonnements während des Abgleichs auf der maximalen Zahl von Abonnements basiert, die zu einem beliebigen Zeitpunkt im Jahr zugewiesen waren. 
+Antwort:  Die Informationen in der Übersicht zeigen die *aktuellen* Zuweisungen und die verfügbaren Abonnements für jede Abonnementebene an.  Diese Zahlen können stark von der maximalen Anzahl von Abonnements abweichen, die dem Abonnement während des laufenden Jahres oder während der Laufzeit der Vereinbarung zugewiesen werden.  Mithilfe des Features „Maximum Usage“ (Maximale Auslastung) können Sie sich anzeigen lassen, wann diese Höchstwerte für Zuweisungen erreicht wurden, und wie hoch diese waren.  Dieser Unterschied ist entscheidend, da die Abrechnung für Abonnements während des Abgleichs auf der maximalen Zahl von Abonnements basiert, die zu einem beliebigen Zeitpunkt im Jahr zugewiesen waren. 
 
 ## <a name="resources"></a>Ressourcen
 - [Whitepaper zur Lizenzierung von Visual Studio](https://aka.ms/vslicensing)
@@ -50,5 +47,5 @@ Antwort:  Im Bereich „Overview“ (Übersicht) werden die aktuellen Zuweisunge
 - [Nutzungsbedingungen für die Volumenlizenzierung](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Wenn Sie Fragen zu Abonnementzuweisungen oder zu anderen Bereichen des Visual Studio-Verwaltungsportals haben, finden Sie unter https://visualstudio.microsoft.com/subscriptions/support/ weitere Informationen. 
-
+- Wenn Sie Fragen zu Abonnementzuweisungen oder zu anderen Bereichen des Visual Studio-Verwaltungsportals haben, finden Sie unter https://visualstudio.microsoft.com/subscriptions/support/ weitere Informationen. 
+- Erfahren Sie, was Sie tun müssen, wenn Sie mehr Abonnements zuweisen, als Sie erworben haben – dies wird als [Überbelegung](handle-overclaimed-license.md) bezeichnet.

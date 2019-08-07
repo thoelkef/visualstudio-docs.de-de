@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 063024605f142cd2d836eb9322274e7b81cdd9f0
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820977"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483782"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
@@ -71,7 +71,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
    ![Suchen von Projektvorlagen auf der Visual Studio-Startseite](media/start-page-search-templates.png)
 
-   Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Framework)** aus. (Wenn Sie mit Visual Basic, C++, JavaScript oder einer anderen Sprache entwickeln, können Sie alternativ ein Projekt in einer dieser Sprachen erstellen. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
+   Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. Wählen Sie eine C#-Projektvorlage für eine **Konsolen-App (.NET Core)** aus. (Wenn Sie mit Visual Basic, C++, JavaScript oder einer anderen Sprache entwickeln, können Sie alternativ ein Projekt in einer dieser Sprachen erstellen. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
 
 1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie anschließend auf **OK**.
 
@@ -87,13 +87,13 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
    ![Dialogfeld „Neues Projekt“ in Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
-1. Wenn Sie C#, Visual Basic oder F# als Programmiersprache ausgewählt haben, wählen Sie die Vorlage **Konsolen-App (.NET Framework)** und anschließend **Weiter** aus. (Falls Sie eine andere Programmiersprache ausgewählt haben, wählen Sie einfach eine beliebige Vorlage aus. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
+1. Wenn Sie C#, Visual Basic oder F# als Programmiersprache ausgewählt haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** aus, und klicken Sie auf **Weiter**. (Falls Sie eine andere Programmiersprache ausgewählt haben, wählen Sie einfach eine beliebige Vorlage aus. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
 
 1. Übernehmen Sie auf der Seite **Neues Projekt konfigurieren** die Standardwerte für Projektname und Speicherort, und wählen Sie anschließend **Erstellen** aus.
 
 ::: moniker-end
 
-   Das Projekt wird erstellt, und eine Datei namens *Program.cs* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an und ist der Ort, an dem Sie den Großteil Ihrer Codierungsaufgaben in Visual Studio erledigen.
+   Das Projekt wird erstellt, und eine Datei namens *Program.cs* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an. Dort erledigen Sie den Großteil der Programmierarbeit in Visual Studio.
 
    ![Editor in Visual Studio](media/editor.png)
 

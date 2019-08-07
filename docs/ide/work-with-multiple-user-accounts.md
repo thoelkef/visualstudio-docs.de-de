@@ -1,18 +1,18 @@
 ---
 title: Arbeiten mit mehreren Benutzerkonten
-ms.date: 12/10/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581908"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483554"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -55,7 +55,19 @@ Wenn Sie den **Server-Explorer** dann das nächste Mal öffnen, werden die Resso
 
 Azure Active Directory (Azure AD) unterstützt das einmalige Anmelden für Endbenutzer in MVC-Webanwendungen in ASP.NET oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten. Benutzer, die Zugriff auf Ihre Azure AD-Domäne haben, können ihre bereits vorhandenen Azure AD-Konten verwenden, um eine Verbindung mit Ihren Webanwendung herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden.
 
-Um dies in Aktion zu sehen, erstellen Sie ein neues Projekt **ASP.NET-Webanwendung**. Wählen Sie im Dialogfeld **Neues ASP.NET-Projekt** die Option **Authentifizierung ändern** aus. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.
+::: moniker range="vs-2017"
+
+Erstellen Sie ein neues Projekt zur **ASP.NET Core-Webanwendung**, um dies in Aktion zu sehen. Klicken Sie im Dialogfeld **Neue ASP.NET Core-Webanwendung** auf die Vorlage **Webanwendung**, und wählen Sie **Authentifizierung ändern** aus.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Erstellen Sie ein neues Projekt zur **ASP.NET Core-Webanwendung**, um dies in Aktion zu sehen. Klicken Sie auf der Seite **Neue ASP.NET Core-Webanwendung erstellen** auf die Vorlage **Webanwendung**, und wählen Sie unter **Authentifizierung** **Ändern** aus.
+
+::: moniker-end
+
+Das Dialogfeld **Authentifizierung ändern** wird angezeigt, in dem Sie auswählen können, welche Art Authentifizierung in Ihrer Anwendung verwendet werden soll.
 
 ![Dialogfeld "Authentifizierung ändern" für ASP.NET](../ide/media/vs2015_change_authentication.png)
 

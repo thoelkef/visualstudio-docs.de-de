@@ -10,16 +10,110 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821513"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661817"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="2200"></a>2.2.0.0
+
+Veröffentlichung: 25. Juli 2019
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Auswertung:**
+
+  - Behoben: Überprüfung mit IntPtr-Typen
+
+- **Debugger:**
+
+  - Behoben: Verarbeitung von Abfangpunkten und Funktionsbreakpoints
+
+## <a name="2130"></a>2.1.3.0
+
+Veröffentlichung: 9. Juli 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Debugger:**
+
+  - Hinzugefügt: Unterstützung für das Abfangen von Unterklassen von Ausnahmen
+
+  - Hinzugefügt: Unterstützung für das MDS-Protokoll 2.51
+
+- **Integration:**
+
+  - Hinzugefügt: Unterstützung für ASMDEF-Dateien
+
+  - Wechsel zum Umbenennungsmodus wenn eine Datei über eine Vorlage hinzugefügt wird, um das Verhalten des Unity-Editors zu imitieren
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Behoben: Verarbeitung falsch formatierter Meldungen bei der Kommunikation mit Unity-Playern
+
+- **Auswertung:**
+
+  - Behoben: Verarbeitung von Namespaces in Ausdrücken
+
+## <a name="2120"></a>2.1.2.0
+
+Veröffentlichung: 2. Juli 2019
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Auswertung:**
+
+  - Behoben: Fehlerberichterstattung mit nicht analysierbaren Ausdrücken
+
+## <a name="2110"></a>2.1.1.0
+
+Veröffentlichung: 27. Juni 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - MonoBehaviour-API auf 2019.1 aktualisiert.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Behoben: Leistung des Unity-Projekt-Explorers
+
+  - Es wurden Warnungen und Fehler bei der Berichterstellung korrigiert, die ausgegeben werden sollen, wenn der Lightweightbuild aktiviert ist.
+
+  - Probleme mit der Leistung des Lightweightbuilds wurden behoben.
+
+## <a name="2100"></a>2.1.0.0
+
+Veröffentlichung: 20. Juni 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Die vollständige Builderstellung für Unity-Projekte wurde zugunsten von IntelliSense-Fehlern und -Warnungen deaktiviert. Unity erstellt eine Visual Studio-Projektmappe mit Klassenbibliotheksprojekten, die die internen Vorgänge von Unity darstellen. Das Ergebnis der Erstellung in Visual Studio wird von Unity nie verwendet oder übernommen, da die Kompilierungspipeline geschlossen ist. Die Builderstellung in Visual Studio verbraucht nur Ressourcen, führt aber zu nichts. Wenn Sie einen vollständigen Build benötigen, weil Ihre Tools oder Setups davon abhängig sind, können Sie diese Optimierung deaktivieren (Einstellungen > Tools für Unity > Vollständigen Build von Projekten deaktivieren).
+  
+  - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Es werden nur Pakete angezeigt, auf die durch Verwendung von „manifest.json“ im Ordner „Packages“ verwiesen wird, und im Ordner „Packages“ enthaltene lokale Pakete.
+
+## <a name="2021"></a>2.0.2.1
+
+Veröffentlichung: 30. Mai 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Hinzugefügt: benutzerdefiniertes Symbol für Unity-Ausführungsziele
 
 ## <a name="2020"></a>2.0.2.0
 
@@ -42,6 +136,7 @@ Veröffentlichung: 2. April 2019
   - Fehler bei Assemblyfilterung und Frameüberprüfung mit leeren Frames behoben.
 
 ## <a name="2011"></a>2.0.1.1
+ 
  Veröffentlichung: 26. März 2019
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
@@ -87,6 +182,7 @@ Veröffentlichung: 5. März 2019
   - Namespaces aus Vorlagen entfernt.
 
 ## <a name="2003"></a>2.0.0.3
+ 
  Veröffentlichung: 5. März 2019
 
 ### <a name="new-features"></a>Neue Funktionen

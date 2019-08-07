@@ -104,3 +104,11 @@
 
 # [Anmerkungen zu dieser Version](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Anmerkungen zur Vorschauversion](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
+# Proben
+## [Vorgestellte Beispiele](samples.yml)
+## [Alle ASP.NET Core-Beispiele](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
+## [Alle .NET Core-Beispiele](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
+## [Alle Xamarin.Forms-Beispiele](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
+## [Alle Xamarin.iOS-Beispiele](https://docs.microsoft.com/xamarin/ios/samples/)
+## [Alle Xamarin.Android-Beispiele](https://docs.microsoft.com/xamarin/android/samples/)
+## [Alle Xamarin.Mac-Beispiele](https://docs.microsoft.com/xamarin/mac/samples/)

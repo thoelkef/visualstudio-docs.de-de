@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821689"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493285"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
@@ -70,7 +70,7 @@ Sie können die QuickInfo manuell aufrufen, indem Sie auf **Bearbeiten** > **Int
 
 Wenn eine Funktion überladen ist, zeigt IntelliSense u. U. nicht für alle Formulare der überladenen Funktion Informationen an.
 
-Sie können „QuickInfo“ für C++-Code deaktivieren, indem Sie zu **Extras** > **Optionen** > **Text-Editor** > **C/C++** > **Erweitert** navigieren und **Auto QuickInfo** auf `false` festlegen.
+Sie können „QuickInfo“ für C++-Code deaktivieren, indem Sie zu **Extras** > **Optionen** > **Text-Editor** > **C/C++**  > **Erweitert** navigieren und **Auto QuickInfo** auf `false` festlegen.
 
 ## <a name="complete-word"></a>Wort vervollständigen
 
@@ -79,6 +79,17 @@ Die Option „Wort vervollständigen“ ergänzt den Rest eines Variablen-, Befe
 ## <a name="intellisense-options"></a>IntelliSense-Optionen
 
 IntelliSense-Optionen sind standardmäßig aktiviert. Um sie zu deaktivieren, klicken Sie auf **Extras** > **Optionen** > **Text-Editor**, und deaktivieren Sie **Parameterinformationen** oder **Members automatisch auflisten**, wenn Sie die Funktion „Members auflisten“ nicht verwenden möchten.
+
+## <a name="intellisense-icons"></a>IntelliSense-Symbole
+Die in IntelliSense vorhandenen Symbole können zusätzliche Bedeutung mit Symbolmodifizierer vermitteln. Dabei handelt es sich um Sterne, Herzen und Schlösser, die über dem Objektsymbol liegen und jeweils „gesperrt“, „intern“ oder „privat“ bedeuten.
+
+|    Symbol    |    Zugriff    |    BESCHREIBUNG    |
+|------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Symbolmodifizierer „Öffentlich“](../ide/media/intellisensePublicNoModifier.png)       |    Öffentliche Klasse    |    Der Zugriff ist nicht beschränkt.   |
+| ![Symbolmodifizierer „Geschützt“](../ide/media/intellisenseProtectedModifier.png)       |    Geschützte Klasse    |    Der Zugriff ist auf die enthaltende Klasse oder auf Typen beschränkt, die von der enthaltenden Klasse abgeleitet sind.    |
+| ![Symbolmodifizierer „Intern geschützt“](../ide/media/intellisenseProtectedInternalModifier.png)       |    Intern geschützte Klasse    |    Der Zugriff ist auf die aktuelle Assembly oder auf Typen beschränkt, die von der enthaltenden Klasse abgeleitet sind.    |
+| ![Symbolmodifizierer „Intern“](../ide/media/intellisenseInternalModifier.png)       |    Interne Klasse    |    Der Zugriff ist auf die aktuelle Assembly beschränkt.    |
+|![Symbolmodifizierer „Privat“](../ide/media/intellisensePrivateModifier.png)        |    Private Klasse    |    Der Zugriff ist auf die enthaltende Klasse oder auf Typen beschränkt, die von der enthaltenden Klasse innerhalb der aktuellen Assembly abgeleitet sind. (Verfügbar seit C# 7.2.)    |
 
 ## <a name="troubleshoot-intellisense"></a>Problembehandlung für IntelliSense
 

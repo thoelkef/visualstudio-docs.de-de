@@ -1,6 +1,7 @@
 ---
 title: Verwalten der Signierung von Assemblys und Manifesten
 ms.date: 02/17/2017
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538240"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461502"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
 
@@ -37,13 +38,13 @@ Informationen zum Signieren von Assemblys in Visual C++-Projekten finden Sie unt
 
 Sie können folgende .NET-Assemblys und Anwendungsmanifeste signieren:
 
-- Ausführbare Dateien (*.exe*)
+- Ausführbare Dateien ( *.exe*)
 
-- Anwendungsmanifeste (*.exe.manifest*)
+- Anwendungsmanifeste ( *.exe.manifest*)
 
-- Bereitstellungsmanifeste (*.application*)
+- Bereitstellungsmanifeste ( *.application*)
 
-- Freigegebene Komponentenassemblys (*.dll*)
+- Freigegebene Komponentenassemblys ( *.dll*)
 
 Signieren Sie folgende Objekttypen:
 

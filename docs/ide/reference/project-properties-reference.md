@@ -11,19 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6a21278670a477bdd30e28a6f0cc4cac04757
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969227"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461372"
 ---
-# <a name="project-properties-reference"></a>Projekteigenschaftenverweise
+# <a name="project-properties-reference"></a>Referenz zu Projekteigenschaften
+
 Weitere Informationen zum Konfigurieren und Anpassen von Projekteigenschaften.
 
 ## <a name="project-properties-pages"></a>Projekteigenschaftenseiten
 
-| Titel | Beschreibung |
+| Titel | BESCHREIBUNG |
 | - | - |
 | [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Auf dieser Seite können Sie Anwendungseinstellungen und Eigenschaften für ein [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Projekt festlegen. |
 | [Seite „Anwendung“, Projekt-Designer (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Auf dieser Seite können Sie Anwendungseinstellungen und Eigenschaften für ein [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekt festlegen. |

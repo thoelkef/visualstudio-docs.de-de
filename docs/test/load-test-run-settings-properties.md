@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785896"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662073"
 ---
 # <a name="load-test-run-settings-properties"></a>Eigenschaften von Laufzeiteinstellungen für Auslastungstests
 
@@ -89,9 +89,10 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |**WebTest-Verbindungspoolgröße**|Gibt die maximale Anzahl von Verbindungen zwischen dem Auslastungstest-Agent und dem Webserver an. Dies gilt nur für das Modell **Verbindungspool**.|
 
 ## <a name="change-run-setting-properties"></a>Ändern der Eigenschaften von Laufzeiteinstellungen
- Sie können dem Auslastungstest weitere Testlaufeinstellungen mit anderen Eigenschafteneinstellungen hinzufügen, damit Sie den Auslastungstest unter anderen Bedingungen ausführen können. Sie können z. B. eine neue Testeinstellung hinzufügen und eine andere Samplingrate verwenden oder eine längere Ausführungsdauer angeben. Sie können nur jeweils eine Testlaufeinstellung verwenden und müssen diese als aktiv markieren. Ein Beispiel finden Sie unter [Gewusst wie: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-### <a name="to-change-run-settings"></a>So ändern Sie Testlaufeinstellungen
+Sie können dem Auslastungstest weitere Testlaufeinstellungen mit anderen Eigenschafteneinstellungen hinzufügen, damit Sie den Auslastungstest unter anderen Bedingungen ausführen können. Sie können z. B. eine neue Testeinstellung hinzufügen und eine andere Samplingrate verwenden oder eine längere Ausführungsdauer angeben. Sie können nur jeweils eine Testlaufeinstellung verwenden und müssen diese als aktiv markieren. Ein Beispiel finden Sie unter [Gewusst wie: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+
+So ändern Sie Laufzeiteinstellungen:
 
 1. Öffnen Sie einen Auslastungstest.
 

@@ -14,14 +14,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429483"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662012"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
+
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Wo befindet sich die Gruppierung nach Merkmalen in Visual Studio 2019?
+Diese Gruppierung ist nun eine Spalte. Durch die mehrschichtige und anpassbare Hierarchie in Visual Studio 2019 Version 16.2 haben wir beschlossen, dass die Gruppierung nach Merkmalen zu einer unnötig komplexen Darstellung führt. Wir sind auf Ihr Feedback zu diesem Design gespannt! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+Aktuell können Sie mit der rechten Maustaste auf die Spalte im Test-Explorer und dann auf „Spalten“ klicken. Wenn Sie das Kontrollkästchen neben „Merkmal“ aktivieren, wird diese Spalte im Test-Explorer angezeigt. Sie können diese Spalte nun nach den für Sie relevanten Merkmalen filtern.
+
+![Spalte „Merkmal“ anzeigen](media/vs-2019/trait-column.png)
+![Spalte „Merkmal“ filtern](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Ermitteln dynamischer Tests
 

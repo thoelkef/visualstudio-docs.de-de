@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b8414f50ed420d8fb4b29d4c8a21d3c8dc6cee72
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691966"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493232"
 ---
 # <a name="source-editor"></a>Quellcode-Editor
 
@@ -32,13 +32,13 @@ Die Codefaltung erleichtert das Verwalten großer Quellcodedateien, da Entwickle
 
 Navigieren Sie zum Aktivieren der Codefaltung zu **Visual Studio > Einstellungen > Text-Editor > Allgemein > Codefaltung**:
 
-![Optionen für die Codefaltung](media/source-editor-image1.png)
+![Optionen für die Codefaltung](media/source-neweditor-image1.png)
 
 Dieses Menü enthält auch eine Option zum standardmäßigen Falten von #regions und Kommentaren, wobei ein benannter Hinweis anstelle von Code angezeigt wird.
 
 Verwenden Sie zum Anzeigen oder Ausblenden von Abschnitten das Anzeigewidget neben der Zeilennummer:
 
-![Ein- oder Ausblenden von Abschnitten im Code](media/source-editor-image2.png)
+![Ein- oder Ausblenden von Abschnitten im Code](media/source-neweditor-image2.png)
 
 Sie können auch über die Menüelemente **Ansicht > Faltung > Toggle Fold (Faltung umschalten)/Toggle All Folds (Alle Faltungen umschalten)** zwischen dem Ein- und Ausblenden der Faltungen wechseln:
 
@@ -46,21 +46,19 @@ Sie können auch über die Menüelemente **Ansicht > Faltung > Toggle Fold (Falt
 
 Dieses Menüelement kann auch zur Aktivierung oder Deaktivierung der Codefaltung verwendet werden.
 
-## <a name="white-space"></a>Leerraum
+## <a name="word-wrap"></a>Zeilenumbruch
 
-Es kann für Sie notwendig sein, unsichtbare Zeichen im Quellcode zu sehen. So können Sie sicherstellen, dass Codierungsstandards eingehalten und Speicherplatz nicht unnötigerweise verschwendet wird. Auch beim Programmieren in F# ist dies nützlich, denn dabei kommt es bei der Bewertung von Code genau auf die eingezogenen Zeilen an.
+Der Zeilenumbruch kann Ihnen beim Verwalten des Platzes helfen, wenn Sie an langen Codezeilen oder mit eingeschränktem Anzeigeraum arbeiten. Der Zeilenumbruch kann ebenso sicherstellen, dass Ihre Codeansicht den vollständigen Inhalt Ihrer Quelldatei enthält, auch wenn Sie Bereiche öffnen, die Ihre Ansicht verdecken oder die Breite Ihrer Quellanzeige minimieren. 
 
-Um Leerzeichen anzuzeigen, navigieren Sie zu **Visual Studio > Einstellungen > Text-Editor > Markierungen und Lineale**. Wenn Sie diese Option auswählen, können Sie festlegen, _wann_ unsichtbare Zeichen angezeigt werden sollen: „Never“ (Nie), „On Selection“ (Bei Auswahl) oder „Always“ (Immer):
+Der Zeilenumbruch ist in der Standardeinstellung deaktiviert, kann jedoch über die **Einstellungen** in Visual Studio für Mac aktiviert werden. 
 
-![Optionen zum Anzeigen unsichtbarer Zeichen](media/source-editor-image3.png)
+Aktivieren Sie den Zeilenumbruch, indem Sie zu **Visual Studio > Einstellungen > Text-Editor > Neuer Editor > Zeilenumbruch** navigieren.
 
-Es ist ebenfalls eine Option zum Anzeigen von Registerkarten, Leerzeichen und Zeilenenden verfügbar:
+![Optionen für den Zeilenumbruch](media/source-neweditor-wordwrap1.png)
 
-![Anzeigen von Registerkarten und Leerzeichen](media/source-editor-image4.png)
+Wenn der Zeilenumbruch aktiviert ist, werden Zeilen, die die Breite der Ansicht Ihres Quellcode-Editors überschreiten, automatisch in die nächste Zeile innerhalb Ihrer Quelldatei umgebrochen. Sie können auch eine Option aktivieren, mit deren Hilfe eine sichtbare Glyphe neben umgebrochenen Zeilen angezeigt wird. Dadurch können Sie zwischen Zeilen unterscheiden, die automatisch umgebrochen wurden, und Zeilen, für die Sie den Zeilenumbruch manuell durchgeführt haben.
 
-Unsichtbare Zeichen werden als graue Punkte angezeigt, wie in der folgenden Abbildung dargestellt:
-
-![Leerzeichen angezeigt](media/source-editor-image22.png)
+![Umgebrochener Text mit aktiviertem Zeilenumbruch](media/source-neweditor-wordwrap2.png)
 
 ## <a name="ruler"></a>Lineal
 
