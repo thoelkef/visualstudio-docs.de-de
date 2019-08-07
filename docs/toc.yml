@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Hinzufügen von Verweisen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Hinzufügen und Entfernen von importierten Namespaces (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Problembehandlung bei fehlerhaften Verweisen
