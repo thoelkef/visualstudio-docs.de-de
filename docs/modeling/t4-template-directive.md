@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856382"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870499"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 
-Eine Visual Studio T4-Textvorlage beginnt normalerweise mit einer `template` Anweisung, die angibt, wie die Vorlage verarbeitet werden sollen. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
+Eine Visual Studio T4-Textvorlage beginnt normalerweise `template` mit einer-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
 
 Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
@@ -72,9 +72,9 @@ Gültige Werte:
 
 Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
-Für Entwurfszeitvorlagen wird die Zwischencodedatei in geschrieben Ihre **% TEMP%** Verzeichnis.
+Bei Entwurfszeit Vorlagen wird die zwischen Code Datei in das Verzeichnis **% Temp%** geschrieben.
 
-Um eine Entwurfszeitvorlage im Debugger auszuführen, speichern Sie die Textvorlage, und klicken Sie dann im Kontextmenü der Textvorlage im Projektmappen-Explorer öffnen, und wählen **T4-Vorlage Debuggen**.
+Wenn Sie eine Entwurfszeit Vorlage im Debugger ausführen möchten, speichern Sie die Textvorlage, öffnen Sie das Kontextmenü der Textvorlage in Projektmappen-Explorer, und wählen Sie dann **T4-Vorlage Debuggen**aus.
 
 ## <a name="hostspecific-attribute"></a>hostspecific-Attribut
 
@@ -92,11 +92,11 @@ Gültige Werte:
 
 `trueFromBase`
 
-Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. Die Eigenschaft ist ein Verweis auf den Host des Transformations-Engine und wird als <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> deklariert. Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.
+Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. Die-Eigenschaft ist ein Verweis auf den Host der Transformations-Engine und wird als [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))deklariert. Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.
 
-Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Es gilt für [Entwurfszeitvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), aber nicht [Laufzeitvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Wenn `hostspecific` ist `true` werden Sie mithilfe von Visual Studio, und Sie können eine Typumwandlung `this.Host` in IServiceProvider umwandeln, um den Zugriff auf Visual Studio-Features. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Zum Beispiel:
+Wenn `hostspecific` `this.Host` ist `true` und Sie Visual Studio verwenden, können Sie in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Zum Beispiel:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Gültige Werte:
 
 `VB`
 
-Die `language` Attribut gibt die Sprache ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]), die für den Quellcode in anweisungs- und ausdrucksblöcken verwendet. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
+Das `language` -Attribut gibt die Sprache[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ( [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]oder) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
 Zum Beispiel:
 
@@ -156,7 +156,7 @@ Sie können angeben, dass der Programmcode der Vorlage von einer anderen Klasse 
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Vererbung in einer Laufzeittextvorlage (vorverarbeiteten Textvorlage)
 
-Sie können Vererbung zwischen Laufzeittextvorlagen verwenden, um eine Basisvorlage zu erstellen, die mehrere abgeleitete Varianten besitzt. Laufzeitvorlagen sind diejenigen, die die **benutzerdefiniertes Tool** -Eigenschaftensatz auf **TextTemplatingFilePreprocessor**. Eine Laufzeitvorlage generiert Code, den Sie in der Anwendung aufrufen können, um den in der Vorlage definierten Text zu erstellen. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Sie können Vererbung zwischen Laufzeittextvorlagen verwenden, um eine Basisvorlage zu erstellen, die mehrere abgeleitete Varianten besitzt. Lauf Zeit Vorlagen sind solche, bei denen die Eigenschaft **benutzerdefinierter Tool** auf **texttemplatingfilepreprocessor**festgelegt ist. Eine Laufzeitvorlage generiert Code, den Sie in der Anwendung aufrufen können, um den in der Vorlage definierten Text zu erstellen. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Wenn Sie kein `inherits`-Attribut angeben, werden eine Basisklasse und eine abgeleitete Klasse von der Textvorlage generiert. Wenn Sie ein `inherits`-Attribut angeben, wird nur die abgeleitete Klasse generiert. Sie können eine Basisklasse manuell erstellen, doch sie muss über die Methoden verfügen, die von der abgeleiteten Klasse verwendet werden.
 
@@ -222,7 +222,7 @@ A common central text.
 This is the common footer.
 ```
 
-Sie können die Basisklassen und die abgeleiteten Klassen in verschiedenen Projekten erstellen. Denken Sie daran, so das Basisprojekt oder die Assembly den Verweisen des abgeleiteten Projekts hinzu.
+Sie können die Basisklassen und die abgeleiteten Klassen in verschiedenen Projekten erstellen. Denken Sie daran, das Basisprojekt oder die Assembly den Verweisen des abgeleiteten Projekts hinzuzufügen.
 
 Sie können auch eine gewöhnliche, von Hand geschriebene Klasse als Basisklasse verwenden. Die Basisklasse muss die von der abgeleiteten Klasse verwendeten Methoden beinhalten.
 
@@ -231,13 +231,13 @@ Sie können auch eine gewöhnliche, von Hand geschriebene Klasse als Basisklasse
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Vererbung in einer Entwurfszeittextvorlage
 
-Eine Entwurfszeit-Textvorlage ist eine Datei für die **benutzerdefiniertes Tool** nastaven NA hodnotu **TextTemplatingFileGenerator**. Die Vorlage erstellt eine Ausgabedatei mit Code oder Text, die Teil von Visual Studio-Projekt bildet. Um die Ausgabedatei zu generieren, wird die Vorlage zuerst in eine Zwischenprogrammcodedatei übersetzt, die normalerweise nicht sichtbar ist. Das `inherits`-Attribut gibt die Basisklasse für den Zwischencode an.
+Eine Textvorlage für die Entwurfszeit ist eine Datei, für die das **benutzerdefinierte Tool** auf **TextTemplatingFileGenerator**festgelegt ist. Die Vorlage generiert eine Ausgabedatei mit Code oder Text, die Teil Ihres Visual Studio-Projekts ist. Um die Ausgabedatei zu generieren, wird die Vorlage zuerst in eine Zwischenprogrammcodedatei übersetzt, die normalerweise nicht sichtbar ist. Das `inherits`-Attribut gibt die Basisklasse für den Zwischencode an.
 
 Für eine Entwurfszeittextvorlage können Sie jede Basisklasse angeben, die von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> abgeleitet wird. Verwenden Sie die `<#@assembly#>`-Direktive, um die Assembly oder das Projekt zu laden, das die Basisklasse enthält.
 
-Weitere Informationen finden Sie unter ["Vererbung in Textvorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Weitere Informationen finden Sie unter ["Vererbung in Text Vorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
-## <a name="linepragmas-attribute"></a>LinePragmas-Attribut
+## <a name="linepragmas-attribute"></a>linepragmas-Attribut
 
 Beispiel:
 
@@ -251,9 +251,9 @@ Gültige Werte:
 
 Wenn dieses Attribut auf "false" festgelegt ist, werden die Tags entfernt, die die Zeilennummern im generierten Codes identifizieren. Dies bedeutet, dass der Compiler alle Fehler anhand der Zeilennummern des generierten Codes meldet. Damit erhalten Sie mehr Debugoptionen, da Sie entweder die Textvorlage oder den generierten Code debuggen können.
 
-Dieses Attribut auch hilfreich, wenn Sie erkennen, dass die absoluten Dateinamen in Pragmas irritierende Merges unter quellcodeverwaltung verursachen.
+Dieses Attribut kann auch hilfreich sein, wenn Sie feststellen, dass die absoluten Dateinamen in Pragmas zu ablenkend enden Zusammenführungen unter Quell Code Verwaltung führen.
 
-## <a name="visibility-attribute"></a>Sichtbarkeitsattribut
+## <a name="visibility-attribute"></a>Visibility-Attribut
 
 Beispiel:
 

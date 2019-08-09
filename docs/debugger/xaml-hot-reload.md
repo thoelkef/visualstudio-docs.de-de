@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822142"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870992"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von XAML-Code mit XAML-Hot-Neuladen in Visual Studio
 
@@ -53,7 +53,7 @@ Im folgenden finden Sie bekannte Einschränkungen für das heiße Laden von XAML
 Bei der Verwendung von XAML Hot Neuladen treten möglicherweise die folgenden Fehler auf.
 
 |Fehlermeldung|Beschreibung|
-|-|-|-|
+|-|-|
 |Fehler bei Fehler|Der Fehler gibt an, dass Sie versuchen, ein Ereignis an eines der Steuerelemente zu übertragen, was nicht unterstützt wird, während die Anwendung ausgeführt wird.|
 |Die XAML-Funktion „Bearbeiten und Fortfahren“ hat keine Elemente für die Aktualisierung gefunden.|Der Fehler tritt auf, wenn Sie XAML bearbeiten, dass das heiße laden in Ihrer APP nicht aktualisiert werden kann.</br> Dieser Fehler kann manchmal behoben werden, indem Sie Ihre laufende App verwenden, um zu einer Ansicht zu navigieren, in der der XAML-Code verwendet wird.</br> In manchen Fällen bedeutet dieser Fehler, dass die jeweilige Änderung nicht angewendet werden kann, bis Sie die Debugsitzung neu starten. |
 |Diese Änderung wird während einer Debugsitzung nicht unterstützt.|Der Fehler gibt an, dass die Änderung, die Sie versuchen, von XAML Hot Neuladen nicht unterstützt wird. Nehmen Sie die Debugsitzung an, nehmen Sie die Änderung vor, und starten Sie die Debugsitzung neu.|

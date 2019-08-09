@@ -1,5 +1,5 @@
 ---
-title: Verwaltung von Informationsrechten und Erweiterungen durch verwalteten code
+title: Verwaltung von Informationsrechten & Erweiterungen durch verwalteten Code
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca8f9d77681e3f11312e5e908a58ac2e292f581b
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177749"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872063"
 ---
-# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Verwaltung von Informationsrechten und Erweiterungen für verwalteten code
-  Microsoft Office Word und Microsoft Office Excel bieten Information Rights Management (IRM), ein Feature, mit denen Sie verhindern, dass nicht autorisierte Personen anzeigen oder Ändern von vertraulichen Informationen kann. Weitere Informationen zur Funktionsweise von Information Rights Management finden Sie Hilfe in der jeweiligen Anwendung.
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code
+  Microsoft Office Word und Microsoft Office Excel enthalten Informationen Rights Management (unm), eine Funktion, mit der Sie verhindern können, dass nicht autorisierte Personen vertrauliche Informationen anzeigen oder ändern. Ausführliche Informationen über die Funktionsweise von Informationen Rights Management finden Sie in der Hilfe zu einer bestimmten Office-Anwendung.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="run-code-behind-documents-with-restricted-permissions"></a>Führen Sie die CodeBehind-Dokumenten mit eingeschränkten Berechtigungen
- Wenn die Projektmappe enthält ein Dokument oder eine Arbeitsmappe, die IRM, wird standardmäßig verwendet, erlauben Word und Excel keine Ausführung von Code. Wenn Sie der Autor des Dokuments oder über den Vollzugriff verfügen, können Sie die Standardeinstellung ändern, so, dass Ihre Lösung funktioniert. Weitere Informationen finden Sie unter [Vorgehensweise: Zuzulassen Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+## <a name="run-code-behind-documents-with-restricted-permissions"></a>Ausführen von Code hinter Dokumenten mit eingeschränkten Berechtigungen
+ Wenn Ihre Projekt Mappe ein Dokument oder eine Arbeitsmappe enthält, die die Verwendung von "unm" enthält, können Word und Excel standardmäßig keinen Code ausführen. Wenn Sie der Autor des Dokuments sind oder über Vollzugriff verfügen, können Sie die Standardeinstellung so ändern, dass die Lösung funktioniert. Weitere Informationen finden Sie unter [Vorgehensweise: Zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)ausgeführt wird.
 
- Verhindert die Verwendung von IRM <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> abrufen oder Bearbeiten von Daten, die im Dokument zwischengespeichert werden.
+ Mit "unm" <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> wird verhindert, dass die im Dokument zwischengespeicherten Daten mithilfe von abgerufen oder bearbeitet werden.
 
-## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Endbenutzer zum Einschränken von Berechtigungen für Dokumente, die Erweiterungen durch verwalteten Code verwenden.
- Jede Person mit Vollzugriff auf das Dokument oder die Arbeitsmappe in der Projektmappe kann IRM verwenden, um Berechtigungen zu beschränken. Z. B. wenn ein Endbenutzer in der buchhaltungsabteilung eine Lösung, die ein Arbeitsblatt mit Daten aus einer Datenbank automatisch gefüllt verwendet, möchten dieser Benutzer Zugriff nur für Personen in seine Abteilung ändern und Lesezugriff auf andere Benutzer zu ermöglichen. Wenn der Benutzer die eingeschränkten Berechtigungen hinzufügt, wird standardmäßig der Code hinter dem Arbeitsblatt kann nicht ausgeführt, und das Arbeitsblatt nicht mit Daten aufgefüllt.
+## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Endbenutzer zum Einschränken von Berechtigungen für Dokumente, die Erweiterungen durch verwalteten Code verwenden
+ Jeder Benutzer, der über Vollzugriff auf das Dokument oder die Arbeitsmappe in der Lösung verfügt, kann die Berechtigungen mithilfe von "unm" einschränken. Wenn z. b. ein Endbenutzer in der Buchhaltungsabteilung eine Lösung verwendet, die automatisch ein Arbeitsblatt mit Daten aus einer Datenbank auffüllt, möchte dieser Benutzer möglicherweise nur den Zugriff für Personen in seiner Abteilung zulassen und Lesezugriff für andere Benutzer gewähren. Wenn der Benutzer die eingeschränkten Berechtigungen hinzufügt, kann der Code hinter dem Arbeitsblatt standardmäßig nicht ausgeführt werden, und das Arbeitsblatt wird nicht mit Daten aufgefüllt.
 
- Um das Problem zu beheben, muss ein Benutzer mit Vollzugriff auf das Dokument oder die Arbeitsmappe auf die Standardeinstellungen für die Berechtigung zum ermöglichen den programmgesteuerten Zugriff auf das Objektmodell ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Zuzulassen Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+ Um das Problem zu beheben, muss ein Benutzer mit Vollzugriff auf das Dokument oder die Arbeitsmappe die Standard Berechtigungseinstellungen ändern, um den programmgesteuerten Zugriff auf das Objektmodell zuzulassen. Weitere Informationen finden Sie unter [Vorgehensweise: Zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)ausgeführt wird.
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentschutz in Projektmappen auf Anwendungsebene](../vsto/document-protection-in-document-level-solutions.md)
-- [Kennwortschutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
-- [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
-- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
+- [Dokument Schutz in Projektmappen auf Dokument Ebene](../vsto/document-protection-in-document-level-solutions.md)
+- [Kenn Wort Schutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
+- [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
+- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

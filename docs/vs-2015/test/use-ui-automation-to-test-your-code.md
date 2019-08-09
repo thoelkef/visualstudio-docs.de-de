@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 54a050fc6d9d585be2613a27ca177dc77af61121
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825540"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871634"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -168,7 +168,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 - ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Sie können eine Testbereinigungsmethode hinzufügen, die durch ein [TestCleanup]-Attribut gekennzeichnet ist, mit dem am Ende jeder Testmethode Code ausgeführt wird. Zum Beispiel kann die Methode zum Schließen der Anwendung mit der TestCleanup-Methode aufgerufen werden.
 
 ### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Überprüfen der Eigenschaften von UI-Steuerelementen
- Mithilfe des **Generators für den Test der programmierten UI** können Sie der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse für den Test ein Steuerelement für die Benutzeroberfläche (UI) hinzufügen oder Code für eine Validierungsmethode generieren, in der eine Assertion für ein UI-Steuerelement verwendet wird.
+ Mit dem Test-Generator der programmierten **UI** können Sie der [UIMap](/previous-versions/dd580454(v=vs.140)) ein Benutzeroberflächen-Steuerelement (UI) für den Test hinzufügen oder Code für eine Validierungsmethode generieren, die eine-Assertion für ein UI-Steuerelement verwendet.
 
  Wählen Sie zum Generieren von Assertionen für die UI-Steuerelemente im Generator für Tests der programmierten UI das Tool **Assertionen hinzufügen** aus, und ziehen es auf das Steuerelement der getesteten Anwendung, die Sie überprüfen möchten. Lassen Sie die Maustaste los, sobald das Feld das Steuerelement enthält. Der Code der Steuerelementklasse wird sofort in der Datei `UIMap.Designer.cs` erstellt.
 
@@ -291,7 +291,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyingCodeCUITModify"></a> Anpassen des Tests der programmierten UI
  Nachdem Sie den Test der programmierten UI erstellt haben, können Sie diesen mithilfe eines der folgenden Tools in Visual Studio bearbeiten:
 
-- **Test-Generator der programmierten UI:** Verwenden Sie den Test-Generator für codierte UI können Sie Ihren Tests zusätzliche Steuerelemente und Überprüfungen hinzufügen. Weitere Informationen finden Sie in diesem Thema im Abschnitt [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions).
+- **Coded UI-Test-Generator:** Verwenden Sie den Test-Generator für codierte UI, um den Tests zusätzliche Steuerelemente und Validierung hinzuzufügen. Weitere Informationen finden Sie in diesem Thema im Abschnitt [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions).
 
 - **Editor für Tests der programmierten UI:** Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Editing Coded UI Tests Using the Coded UI Test Editor (Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI)](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -449,7 +449,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Running Automated Tests in Microsoft Test Manager (Ausführen von automatisierten Tests mit Microsoft Test Manager)](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Vorgehensweise: Konfigurieren und Ausführen von geplanten Tests nach dem Erstellen Ihrer Anwendung](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Vorgehensweise: Konfigurieren und Ausführen von geplanten Tests nach dem entwickeln der Anwendung](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [Run tests in your build process (Ausführen von Tests im Buildprozess)](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
@@ -465,14 +465,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Weitere Anleitungen finden Sie unter [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5: Automatisieren von Systemtests](http://go.microsoft.com/fwlink/?LinkID=255196). Weitere Informationen zum manuellen Tests finden Sie unter [&#91;retired&#93; Creating Manual Test Cases Using Microsoft Test Manager ([veraltet] Erstellen von manuellen Testfällen mit Microsoft Test Manager)](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Weitere Informationen zu automatisierten Systemtests finden Sie unter [Creating Automated Tests Using Microsoft Test Manager (Erstellen von automatischen Tests mit Microsoft Test Manager)](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu automatisieren. Weitere Anleitungen finden [Sie untertests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5: Automatisieren von System Tests](http://go.microsoft.com/fwlink/?LinkID=255196). Weitere Informationen zum manuellen Tests finden Sie unter [&#91;retired&#93; Creating Manual Test Cases Using Microsoft Test Manager ([veraltet] Erstellen von manuellen Testfällen mit Microsoft Test Manager)](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Weitere Informationen zu automatisierten Systemtests finden Sie unter [Creating Automated Tests Using Microsoft Test Manager (Erstellen von automatischen Tests mit Microsoft Test Manager)](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
 ### <a name="guidance"></a>Empfehlungen
-- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententest: Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 2: Komponententest: Testen von innerhalb](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5: Automatisieren von Systemtests](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Tests für Continuous Delivery mit Visual Studio 2012 – Kapitel 5: Automatisieren von System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>FAQ
 - [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)
@@ -484,7 +484,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="see-also"></a>Siehe auch
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Verbessern der Codequalität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
