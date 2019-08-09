@@ -1,5 +1,5 @@
 ---
-title: Dokumentschutz in Projektmappen auf Anwendungsebene
+title: Dokument Schutz in Projektmappen auf Dokument Ebene
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,46 +16,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6cc01c6506c4a3fca85029a8dcaf08607427ea4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a894f1e0fb9d5e9d55f46c442bc975de0bd900d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956204"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872068"
 ---
-# <a name="document-protection-in-document-level-solutions"></a>Dokumentschutz in Projektmappen auf Anwendungsebene
-  Sie können die Schutzfunktionen von Microsoft Office Word und Microsoft Office Excel in Projekten auf Dokumentebene verwenden. Diese Features blockieren nicht autorisierte Benutzer Änderungen an geschützten Teile eines Dokuments.
+# <a name="document-protection-in-document-level-solutions"></a>Dokument Schutz in Projektmappen auf Dokument Ebene
+  Sie können die Schutz Features von Microsoft Office Word und Microsoft Office Excel in Projekten auf Dokument Ebene verwenden. Diese Features blockieren nicht autorisierte Benutzer daran, Änderungen an geschützten Teilen eines Dokuments vorzunehmen.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Mit Excel können Sie Schutz aktivieren und deaktivieren, während die Arbeitsmappe im Designer geöffnet ist. Verwenden von Word, können Sie Schutz nur außerhalb der Designer aktivieren. Zur Laufzeit können Sie aktivieren oder Deaktivieren des Schutzes programmgesteuert für Word und Excel.
+ Wenn Sie Excel verwenden, können Sie den Schutz aktivieren und deaktivieren, während die Arbeitsmappe im Designer geöffnet ist. Mit Word können Sie den Schutz nur außerhalb des Designers aktivieren. Zur Laufzeit können Sie den Schutz für Word und Excel Programm gesteuert aktivieren oder deaktivieren.
 
- Dokumentschutz in einem Dokument aktiviert ist, die im Designer geöffnet ist, werden alle Steuerelemente aus entfernt die **Toolbox** oder deaktiviert ist, und Sie können keine Ziehen von der **Datenquellen** Fenster für das Dokument.
+ Wenn der Dokument Schutz für ein Dokument aktiviert ist, das im Designer geöffnet ist, werden alle Steuerelemente aus der **Toolbox** entfernt oder sind nicht verfügbar, und Sie können nichts aus dem **Datenquellen** Fenster in das Dokument ziehen.
 
 ## <a name="serverdocument-and-protected-documents"></a>ServerDocument und geschützte Dokumente
- Wenn ein Dokument geschützt ist, kann nicht außerhalb des Dokuments aus das Datencache zugegriffen werden. Können keine der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> -Klasse zum Abrufen oder Bearbeiten von Daten, die in einem geschützten Dokument zwischengespeichert werden, oder verwenden Sie andere Methoden der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> Klasse.
+ Wenn ein Dokument geschützt ist, kann nicht von außerhalb des Dokuments auf den Daten Cache zugegriffen werden. Sie können die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> -Klasse nicht verwenden, um Daten abzurufen oder zu bearbeiten, die in einem geschützten Dokument zwischengespeichert sind, <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> oder andere Methoden der-Klasse zu verwenden.
 
-## <a name="word-document-protection-in-the-designer"></a>Word-Dokument-Schutz im designer
- Wenn Sie Schutz auf ein Word-Dokument oder eine Vorlage hinzufügen, während es in Visual Studio geöffnet ist, kann nicht gestartet werden, erzwingen der Protection im Designer. Das Dokument ist im Entwurfsmodus befindet, während es in Visual Studio geöffnet ist, und es muss werden im Ausführmodus bevor Sie beginnen können, erzwingen der Protection.
+## <a name="word-document-protection-in-the-designer"></a>Schutz von Word-Dokumenten im Designer
+ Wenn Sie den Schutz einem Word-Dokument oder einer Vorlage hinzufügen, während es in Visual Studio geöffnet ist, können Sie nicht mit der Erzwingung des Schutzes im Designer beginnen. Das Dokument befindet sich im Entwurfs Modus, während es in Visual Studio geöffnet ist, und es muss sich im Testmodus befinden, bevor Sie mit der Erzwingung des Schutzes beginnen können.
 
- Wenn Sie ein Projekt, die ein vorhandenes Worddokument verwendet werden, das Schutz aktiviert ist erstellen, wird das Dokument jedoch beim Öffnen im Designer geschützt. Die geschützten Teile des Dokuments kann nicht bearbeitet werden, aber Sie können weiterhin Code im Code-Editor auf das Dokument zu automatisieren. Sie können nicht auch das Projekt erstellen, wenn der Schutz aktiviert ist, während das Dokument in Visual Studio geöffnet ist.
+ Wenn Sie jedoch ein Projekt erstellen, das ein vorhandenes Word-Dokument verwendet, für das der Schutz aktiviert ist, wird das Dokument geschützt, während es im Designer geöffnet wird. Die geschützten Teile des Dokuments können nicht bearbeitet werden, aber Sie können weiterhin Code im Code-Editor schreiben, um das Dokument zu automatisieren. Sie können das Projekt auch nicht erstellen, wenn der Schutz aktiviert ist, während das Dokument in Visual Studio geöffnet ist.
 
- Sie können Schutz deaktivieren, während das Dokument im Designer geöffnet ist, damit Sie das Dokument bearbeiten und erstellen Sie das Projekt. Sie können keine Schutz für die Kopie im Designer deaktivieren, während des Debuggens; das Dokument, das während des Debuggens geöffnet wird, wird eine separate Kopie aus dem geöffneten im Designer (befindet sich die Ausgabekopie in die *\bin* Verzeichnis in Visual Basic und die *\bin\debug* Verzeichnis für C# ).
+ Sie können den Schutz deaktivieren, während das Dokument im Designer geöffnet ist, sodass Sie das Dokument bearbeiten und das Projekt erstellen können. Während des Debuggens können Sie den Schutz für die Kopie im Designer nicht deaktivieren. das Dokument, das während des Debuggens geöffnet wird, ist eine separate Kopie, die im Designer geöffnet ist (die Ausgabe Kopie wird im Verzeichnis " *\bin* " für Visual Basic und das Verzeichnis " C# *\bin\debug* " für) gespeichert.
 
- Sie können Schutz für die Kopie des Dokuments ermöglichen, die im Designer geöffnet wird, durch Schließen des Projekts in Visual Studio, öffnen die Kopie des Dokuments, das in das Projektverzeichnis ist und den Schutz aktivieren.
+ Sie können den Schutz für die Kopie des Dokuments aktivieren, das im Designer geöffnet wird, indem Sie das Projekt in Visual Studio schließen, die Kopie des Dokuments öffnen, das sich im Projektverzeichnis befindet, und den Schutz aktivieren.
 
-## <a name="enforce-word-document-protection-on-build"></a>Erzwingen von Word-Dokument-Schutz für build
- Visual Studio startet das Erzwingen der Protection für Word-Dokumenten und Vorlagen während des Buildprozesses, damit der Schutz aktiviert wird, wenn das Dokument für das Debuggen wird geöffnet. Das Dokument ist mit einem leeren Kennwort geschützt.
+## <a name="enforce-word-document-protection-on-build"></a>Erzwingen des Schutzes von Word-Dokumenten für den Build
+ Visual Studio beginnt, den Schutz für Word-Dokumente und-Vorlagen während des Buildprozesses zu erzwingen, sodass der Schutz aktiviert wird, wenn das Dokument zum Debuggen geöffnet wird Das Dokument ist durch ein leeres Kennwort geschützt.
 
- Schutz wird aktiviert während des Buildvorgangs also, wenn Code im Dokument <xref:Microsoft.Office.Tools.Word.Document.Startup> Ereignis, das möglicherweise Ausnahmen verursacht, oder ändern Sie das Verhalten der Anwendung, diesen Code richtig gedebuggt werden kann. Wenn Sie Schutz aktivieren, nachdem das Dokument geöffnet ist, kann nicht Code für die Initialisierung debuggt oder getestet werden.
+ Der Schutz wird während des Buildvorgangs aktiviert, sodass dieser Code korrekt <xref:Microsoft.Office.Tools.Word.Document.Startup> debuggt werden kann, wenn im Dokument Ereignis Code vorhanden ist, der Ausnahmen verursachen oder das Verhalten der Anwendung ändern kann. Wenn Sie den Schutz aktivieren, nachdem das Dokument geöffnet wurde, kann der Initialisierungs Code nicht deentschlbelt oder getestet werden.
 
 ## <a name="setting-the-password"></a>Festlegen des Kennworts
- Visual Studio automatisch Schutz aktiviert, jedoch kein Kennwort in der Standardeinstellung bietet. Wenn Sie den Dokumentschutz, ein Kennwort verwenden möchten, müssen Sie es hinzufügen, bevor Sie die Projektmappe bereitstellen. Durch Hinzufügen eines Kennworts, können Sie autorisierte Benutzern, die den Schutz aufheben können. ohne Kennwort kann nicht einfach Schutz entfernt werden. Weitere Informationen zum Festlegen eines Kennworts finden Sie Hilfe in der jeweiligen Anwendung.
+ Visual Studio aktiviert automatisch den Schutz, aber standardmäßig wird kein Kennwort bereitstellt. Wenn Sie möchten, dass der Dokument Schutz ein Kennwort hat, müssen Sie es vor dem Bereitstellen der Lösung hinzufügen. Durch das Hinzufügen eines Kennworts können autorisierte Benutzer den Schutz aus dem Dokument entfernen. ohne Kennwort kann der Schutz nicht einfach entfernt werden. Ausführliche Informationen zum Festlegen eines Kennworts finden Sie in der Hilfe zu einer bestimmten Office-Anwendung.
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Schützen von Dokumenten und Teilen von Dokumenten](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
-- [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
-- [Verwaltung von Informationsrechten und Erweiterungen für verwalteten code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Kennwortschutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
-- [Vorgehensweise: Zulassen Sie Code Hintergrund von Dokumenten mit eingeschränkten Berechtigungen ausgeführt werden zu.](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
-- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
+- [Vorgehensweise: Programm gesteuertes schützen von Dokumenten und Teilen von Dokumenten](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
+- [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
+- [Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Kenn Wort Schutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
+- [Vorgehensweise: Zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt wird](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
