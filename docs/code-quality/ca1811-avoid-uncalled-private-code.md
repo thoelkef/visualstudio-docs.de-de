@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d4a194229ccbe6720f4c8097422691974ab64b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545471"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921330"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Nicht aufgerufenen privaten Code vermeiden.
 
@@ -31,30 +31,30 @@ ms.locfileid: "62545471"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein privater oder interner Member der (auf Assemblyebene) in der Assembly keine Aufrufer, wird nicht von der common Language Runtime aufgerufen und nicht durch einen Delegaten aufgerufen. Die folgenden Member werden nicht durch diese Regel überprüft:
+Ein privater oder interner Member (auf Assemblyebene) besitzt keine Aufrufer in der Assembly, wird nicht vom Common Language Runtime aufgerufen und wird nicht von einem Delegaten aufgerufen. Folgende Mitglieder werden von dieser Regel nicht geprüft:
 
-- Auf explizite Schnittstellenmember.
+- Explizite Schnittstellenmember.
 
 - Statische Konstruktoren.
 
 - Serialisierungskonstruktoren.
 
-- Mit markierte Methoden <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Mit <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> oder<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>gekennzeichnete Methoden.
 
-- Elemente, die Außerkraftsetzungen sind.
+- Member, die außer Kraft gesetzt werden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Mit dieser Regel Berichts kann falsch positive Ergebnisse, wenn Einstiegspunkte, die auftreten, von der Regellogik derzeit nicht identifiziert werden. Darüber hinaus kann ein Compiler nicht aufrufbaren Code in eine Assembly ausgeben.
+Diese Regel kann falsch positive Ergebnisse melden, wenn Einstiegspunkte auftreten, die derzeit nicht durch die Regellogik identifiziert werden. Außerdem kann ein Compiler nicht Aufruf baren Code in eine Assembly ausgeben.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Code nicht aufrufbaren, oder fügen Sie Code, den sie aufruft.
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den nicht Aufruf baren Code, oder fügen Sie Code hinzu, der ihn aufruft.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher, unterdrücken Sie eine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)

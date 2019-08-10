@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546374"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922052"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Die COM-Registrierungsmethoden dürfen nicht sichtbar sein.
 
@@ -35,25 +35,25 @@ ms.locfileid: "62546374"
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode, die mit der <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> Attribut ist als extern sichtbar.
+Eine Methode, die mit dem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> -Attribut oder dem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> -Attribut markiert ist, ist extern sichtbar.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn eine Assembly mit Component Object Model (COM) registriert ist, werden die Einträge in der Registrierung für jede in der Assembly für COM sichtbarer Typ hinzugefügt. Mit markierte Methoden der <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> und <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> Attribute werden aufgerufen, während der Registrierung und Aufhebung der Registrierung, um bei der Ausführung von Benutzercode, der spezifisch für die Registrierung/Aufhebung der Registrierung dieser Typen ist. Dieser Code sollte nicht außerhalb dieser Prozesse aufgerufen werden.
+Wenn eine Assembly mit Component Object Model (com) registriert wird, werden der Registrierung für jeden COM-sichtbaren Typ in der Assembly Einträge hinzugefügt. Methoden, die mit dem- <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> Attribut <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> und dem-Attribut markiert sind, werden während der Registrierungs-bzw. der Aufhebung der Registrierung aufgerufen, um Benutzercode auszuführen, der für die Registrierung/Aufhebung der Registrierung dieser Typen spezifisch ist. Dieser Code sollte nicht außerhalb dieser Prozesse aufgerufen werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Zugriff auf die Methode, die `private` oder `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Um einen Verstoß gegen diese Regel zu beheben, `private` ändern Sie den Zugriff der-Methode in oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] `internal` (`Friend` in).
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt zwei Methoden, die die Regel verletzen.
+Das folgende Beispiel zeigt zwei Methoden, die gegen die Regel verstoßen.
 
- [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1410: COM-Registrierungsmethoden müssen übereinstimmen.](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410: COM-Registrierungsmethoden müssen abgeglichen werden](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Siehe auch
 

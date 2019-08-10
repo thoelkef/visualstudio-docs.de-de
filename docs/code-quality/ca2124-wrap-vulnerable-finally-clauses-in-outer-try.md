@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796795"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920798"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen.
 
@@ -31,21 +31,21 @@ ms.locfileid: "62796795"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- In Version 1.0 und 1.1 von .NET Framework, eine öffentliche oder geschützte Methode enthält einen `try` / `catch` / `finally` Block. Die `finally` Block zum Sicherheitszustand zurückgesetzt wird angezeigt und steht nicht in einem `finally` Block.
+In den Versionen 1,0 und 1,1 des .NET Framework enthält eine öffentliche oder geschützte `try` Methode einen / `catch` / `finally` -Block. Der `finally` -Block scheint den Sicherheitszustand zurückzusetzen und ist nicht in `finally` einen-Block eingeschlossen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel sucht `try` / `finally` , freigegebene Blöcke in Code, der Versionen 1.0 und 1.1 von .NET Framework, die möglicherweise anfällig für böswillige Ausnahmefilter in der Aufrufliste abzielt. Wenn sensibler Vorgänge wie z. B. Identitätswechsel im Try-Block ausgeführt und eine Ausnahme ausgelöst wird, kann der Filter vor dem Ausführen der `finally` Block. Das Impersonation-Beispiel bedeutet dies, dass der Filter dem imitierten Benutzer ausgeführt wird. Filter sind nur in Visual Basic momentan implementierbar.
+Diese Regel `try` / findetBlöckeimCode,dieaufdieVersionen1,0und1,1des.NETFrameworkausgerichtetsind,dieanfälligfürschädlicheAusnahmeFilterinder`finally` -Aufrufe sind. Wenn sensible Vorgänge wie der Identitätswechsel im try-Block auftreten und eine Ausnahme ausgelöst wird, kann der Filter vor dem `finally` -Block ausgeführt werden. Für das Beispiel für den Identitätswechsel bedeutet dies, dass der Filter als Benutzer mit Identitätswechsel ausgeführt wird. Filter sind zurzeit nur in Visual Basic implementierbar.
 
 > [!NOTE]
-> In Version 2.0 und höher von .NET Framework, schützt die Common Language Runtime automatisch eine `try` / `catch` /  `finally` blockieren böswilliger Ausnahmefilter, tritt beim Zurücksetzen das direkt innerhalb der Methode, enthält den Ausnahmeblock.
+> In den Versionen 2,0 und höher des .NET Framework schützt die Common Language Runtime automatisch `try` einen /  / `catch` `finally` -Block vor bösartigen Ausnahme filtern, wenn die zurück Setzung direkt innerhalb der Methode auftritt, die enthält den Exception-Block.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Platzieren Sie die entpackten `try` / `finally` in einem äußeren Try-Block. Finden Sie im zweite Beispiel, das folgende aus. Dies zwingt den `finally` vor Filtercodes ausgeführt.
+Fügen Sie den nicht `try` umschließenen / `finally` in einen äußeren try-Block ein. Siehe das zweite Beispiel, das folgt. Dadurch wird erzwungen `finally` , dass vor dem Filtern von Code ausgeführt wird.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
-## <a name="pseudo-code-example"></a>Pseudocodebeispiel
+## <a name="pseudo-code-example"></a>Pseudo Codebeispiel
 
 ### <a name="description"></a>Beschreibung
 
@@ -63,7 +63,7 @@ finally {
 }
 ```
 
-Der folgende Pseudocode zeigt das Muster, Sie verwenden können, schützen Sie Ihren Code, und diese Regel zu erfüllen.
+Der folgende Pseudo Code zeigt das Muster, das Sie verwenden können, um Ihren Code zu schützen und diese Regel zu erfüllen.
 
 ```csharp
 try {

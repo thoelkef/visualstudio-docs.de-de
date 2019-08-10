@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f2ecd0adea8e3d71eebff6e532a44def68c01c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872054"
+ms.locfileid: "68926430"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint-Lösungen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office PowerPoint verwenden können. Mit VSTO-Add-Ins können Sie PowerPoint automatisieren, PowerPoint-Features erweitern oder die PowerPoint-Benutzeroberfläche anpassen.
@@ -58,7 +58,7 @@ ms.locfileid: "68872054"
  Weitere Informationen zum Entwurf der PowerPoint-Pia, z. b. zu den Unterschieden zwischen Klassen und Schnittstellen in der Pia und zur Implementierung von Ereignissen in der Pia, finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop](http://go.microsoft.com/fwlink/?LinkId=199885)-Assemblys von Office.
 
 ### <a name="vba-object-model-reference"></a>VBA-Objektmodell Referenz
- Die VBA-Objektmodellreferenz dokumentiert das PowerPoint-Objektmodell, das für VBA (Visual Basic for Applications)-Code verfügbar gemacht wird. Weitere Informationen finden Sie unter [PowerPoint 2010-Objektmodell Referenz](http://go.microsoft.com/fwlink/?LinkId=199770) .
+ Die VBA-Objektmodellreferenz dokumentiert das PowerPoint-Objektmodell, das für VBA (Visual Basic for Applications)-Code verfügbar gemacht wird. Weitere Informationen finden Sie unter [PowerPoint 2010-Objektmodell Referenz](http://go.microsoft.com/fwlink/?LinkId=199770).
 
  Alle Objekte und Member in der VBA-Objektmodellreferenz entsprechen Typen und Membern in der primären Interopassembly (PIA) für PowerPoint. Das Präsentationsobjekt in der VBA-Objektmodell Referenz entspricht z. b. dem [Präsentationstyp](/previous-versions/office/developer/office-2010/ff761925(v=office.14)) in der PowerPoint-Pia. Obwohl die VBA-Objektmodellreferenz Codebeispiele für die meisten Eigenschaften, Methoden und Ereignisse enthält, müssen Sie den VBA-Code in dieser Referenz in Visual Basic oder Visual C# übersetzen, wenn Sie ihn in einem mit Visual Studio erstellten VSTO-Add-In-Projekt für PowerPoint verwenden möchten.
 

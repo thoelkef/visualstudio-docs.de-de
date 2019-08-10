@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Manuelles Ausführen der Codeanalyse für verwalteten Code'
+title: 'Vorgehensweise: Manuelles Ausführen der Code Analyse für verwalteten Code'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 588f78c600aa7c78894a2e0bdc7f4443f4e86b31
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815842"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923970"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Vorgehensweise: Manuelles Ausführen der Codeanalyse für verwalteten Code
-Das Codeanalysetool liefert Ihnen Informationen zu möglichen Fehlern im Quellcode. Sie können die Codeanalyse automatisch ausführen, für jeden Build eines Codeprojekts aus, und Sie können die Codeanalyse auch manuell ausführen. Die Regeln, die überprüft werden, wenn die Codeanalyse ausgeführt wird, werden auf der Seite "Codeanalyse" der Eigenschaftenseiten des Projekts angegeben. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Vorgehensweise: Manuelles Ausführen der Code Analyse für verwalteten Code
+Das Code Analysetool enthält Informationen zu möglichen Fehlern im Quellcode. Sie können die Code Analyse automatisch mit jedem Build eines Code Projekts ausführen, und Sie können die Code Analyse auch manuell ausführen. Die Regeln, die beim Ausführen der Code Analyse geprüft werden, werden auf der Seite Code Analyse der Eigenschaften Seiten des Projekts angegeben. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren Sie die Code Analyse für ein Projekt](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)mit verwaltetem Code.
 
-### <a name="to-run-code-analysis-manually"></a>Die Codeanalyse manuell ausgeführt.
+### <a name="to-run-code-analysis-manually"></a>So führen Sie die Code Analyse manuell aus
 
-1. In **Projektmappen-Explorer**, klicken Sie auf das Projekt.
+1. Klicken Sie in **Projektmappen-Explorer**auf das Projekt.
 
-2. Auf der **analysieren** Menü klicken Sie auf **Ausführen der Codeanalyse für** *Projektname*.
+2. Klicken Sie im Menü **analysieren** auf **Code Analyse für** *Projekt Name*ausführen.

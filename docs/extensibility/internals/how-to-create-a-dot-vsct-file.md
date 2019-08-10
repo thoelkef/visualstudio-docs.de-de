@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen Sie ein. VSCT-Datei | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Erstellen Sie eine. Vsct-Datei | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,64 +10,64 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3155ff69db461e652b11ff6e8ec6d405000244f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328760"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924183"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Vorgehensweise: Erstellen einer VSCT-Datei
+# <a name="how-to-create-a-vsct-file"></a>Vorgehensweise: Erstellen einer vsct-Datei
 
-Es gibt mehrere Möglichkeiten, um eine Tabelle-Konfiguration in XML-basierte Visual Studio-Befehl erstellen (*VSCT*) Datei.
+Es gibt mehrere Möglichkeiten, eine XML-basierte Visual Studio-Befehls Tabellen Konfigurationsdatei (*vsct*-Datei) zu erstellen.
 
-- Sie können in ein neues VSPackage erstellen, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Paket-Vorlage.
+- Sie können ein neues VSPackage in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Paket Vorlage erstellen.
 
-- Sie können den XML-basierten Befehl Table Configuration-Compiler *Vsct.exe*, zum Generieren einer Datei aus einer vorhandenen *CTC* Datei.
+- Sie können den XML-basierten Befehls Tabellen Konfigurations Compiler *vsct. exe*verwenden, um eine Datei aus einer vorhandenen *CTC* -Datei zu generieren.
 
-- Können Sie *Vsct.exe* zum Generieren einer *VSCT* Datei aus einem vorhandenen *CTO* Datei.
+- Sie können " *vsct. exe* " verwenden, um eine *vsct* -Datei aus einer vorhandenen *CTO* -Datei zu generieren.
 
-- Sie können manuell ein neues erstellen *VSCT* Datei.
+- Sie können eine neue *vsct* -Datei manuell erstellen.
 
-  In diesem Artikel wird erläutert, wie zum manuellen Erstellen eines neuen *VSCT* Datei.
+  In diesem Artikel wird erläutert, wie Sie eine neue *vsct* -Datei manuell erstellen.
 
-### <a name="to-manually-create-a-new-vsct-file"></a>So erstellen Sie eine neue VSCT-Datei manuell
+### <a name="to-manually-create-a-new-vsct-file"></a>So erstellen Sie manuell eine neue vsct-Datei
 
 1. Starten Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 2. Auf der **Datei** Startmenü **neu**, und klicken Sie dann auf **Datei**.
 
-3. In der **Vorlagen** Bereich, klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.
+3. Klicken Sie im Bereich **Vorlagen** auf **XML-Datei** , und klicken Sie dann auf **Öffnen**.
 
-4. Auf der **Ansicht** Menü klicken Sie auf **Eigenschaften** zum Anzeigen der Eigenschaften der XML-Datei.
+4. Klicken Sie im Menü **Ansicht** auf **Eigenschaften** , um die Eigenschaften der XML-Datei anzuzeigen.
 
-5. In der **Eigenschaften** Fenster, klicken Sie auf die **Durchsuchen** Schaltfläche der **Schemas** Eigenschaft.
+5. Klicken Sie im **Eigenschaften** Fenster in der Eigenschaft **Schemas** auf die Schaltfläche **Durchsuchen** .
 
-6. Wählen Sie in der Liste der XSD-Schemas, die *vsct.xsd* Schema. Wenn es sich nicht in der Liste ist, klicken Sie auf **hinzufügen** und suchen Sie dann die Datei auf einem lokalen Laufwerk. Klicken Sie auf **OK** Wenn Sie fertig sind.
+6. Wählen Sie in der Liste der XSD-Schemas das Schema *vsct. xsd* aus. Wenn Sie nicht in der Liste enthalten ist, klicken Sie auf **Hinzufügen** , und suchen Sie dann die Datei auf einem lokalen Laufwerk. Wenn Sie fertig sind, klicken Sie auf **OK** .
 
-7. Geben Sie in der XML-Datei, *< CommandTable* , und drücken Sie dann die **Registerkarte**. Schließen Sie das Tag, indem Sie eingeben *>* .
+7. Geben Sie in der XML-Datei *< commandtable* ein, und drücken Sie die **Tab**-Taste. Schließen Sie das-Tag *>* , indem Sie eingeben.
 
-    Diese Aktion erstellt eine grundlegende *VSCT* Datei.
+    Durch diese Aktion wird eine einfache *vsct* -Datei erstellt.
 
-8. Geben Sie die Elemente der XML-Datei, die Sie hinzufügen möchten, die gemäß der [VSCT XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md). Weitere Informationen finden Sie unter [VSCT-Dateien erstellen](../../extensibility/internals/authoring-dot-vsct-files.md)
+8. Füllen Sie die Elemente der XML-Datei aus, die Sie hinzufügen möchten, entsprechend der [vsct-XML-Schema Referenz](../../extensibility/vsct-xml-schema-reference.md). Weitere Informationen finden Sie unter Erstellen von [vsct-Dateien](../../extensibility/internals/authoring-dot-vsct-files.md).
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Vorgehensweise: Erstellen einer VSCT-Datei aus einer vorhandenen CTC-Datei
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Vorgehensweise: Erstellen einer vsct-Datei aus einer vorhandenen CTC-Datei
 
-Sie erstellen ein XML-basiertes *VSCT* Datei aus einer vorhandenen Befehlstabelle *CTC* Quelldatei. Dabei können Sie das neue XML-basierte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Command Table-Compilerformat (VSCT) nutzen.
+Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen *CTC* -Quelldatei der Befehls Tabelle erstellen. Dabei können Sie das neue XML-basierte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Command Table-Compilerformat (VSCT) nutzen.
 
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>So erstellen Sie eine VSCT-Datei anhand einer CTC-Datei
 
 1. Rufen Sie eine Kopie der Sprache Perl ab.
 
-2. Rufen Sie eine Kopie des Perl-Skripts *"convertctctovsct.pl" ab*in der Regel befindet sich in der  *\<Visual Studio SDK-Installationspfad > \VisualStudioIntegration\Tools\bin* Ordner.
+2. Rufen Sie eine Kopie des Perl-Skripts *ConvertCTCToVSCT.pl*ab, das  *\<sich normalerweise im Visual Studio SDK-Installationspfad > Ordner \visualstudiointegration\tools\bin* befindet.
 
-3. Erstellen einer Kopie der *CTC* Quelldatei, die Sie konvertieren möchten.
+3. Rufen Sie eine Kopie der *CTC* -Quelldatei ab, die Sie konvertieren möchten.
 
 4. Speichern Sie die Dateien im selben Verzeichnis.
 
-5. In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im Administrator-Eingabeaufforderungsfenster, navigieren Sie zu dem Verzeichnis.
+5. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Navigieren Sie im Eingabe Aufforderungs Fenster zum Verzeichnis.
 
 6. Typ
 
@@ -75,26 +75,26 @@ Sie erstellen ein XML-basiertes *VSCT* Datei aus einer vorhandenen Befehlstabell
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
    ```
 
-    in denen *"pkgcmd.CTC"* ist der Name des der *CTC* Datei und *"pkgcmd.VSCT"* ist der Name des der *VSCT* -Datei, die Sie erstellen möchten.
+    Dabei ist " *pkgcmd. CTC* " der Name der *CTC* -Datei, und " *pkgcmd. vsct* " ist der Name der *vsct* -Datei, die Sie erstellen möchten.
 
-    Diese Aktion erstellt ein neues *VSCT* XML-Quelldatei. Kompilieren Sie die Datei mit *Vsct.exe*, würden Sie die VSCT-Compiler, wie Sie alle anderen *VSCT* Datei.
+    Durch diese Aktion wird eine neue *vsct* -XML-Befehls Tabellen-Quelldatei erstellt. Sie können die Datei mit " *vsct. exe*", dem VSCT-Compiler, wie jede andere *vsct* -Datei kompilieren.
 
    > [!NOTE]
-   > Sie können die Lesbarkeit verbessern die *VSCT* Datei, die XML-Kommentare neu formatiert wird.
+   > Sie können die Lesbarkeit der *vsct* -Datei verbessern, indem Sie die XML-Kommentare neu formatieren.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Vorgehensweise: Erstellen einer VSCT-Datei aus einer vorhandenen CTO-Datei
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Vorgehensweise: Erstellen einer vsct-Datei anhand einer vorhandenen CTO-Datei
 
-Sie erstellen ein XML-basiertes *VSCT* -Datei aus einer vorhandenen binären *CTO* Datei. Diese Vorgehensweise ermöglicht es Ihnen, das neue Befehlstabellen-Compilerformat zu nutzen. Dieser Prozess funktioniert auch, wenn die *CTO* -Datei kompiliert wurde, aus einem *CTC* Datei. Sie bearbeiten und kompilieren Sie die *VSCT* -Datei in eine andere CTO-Datei.
+Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen binären *CTO* -Datei erstellen. Diese Vorgehensweise ermöglicht es Ihnen, das neue Befehlstabellen-Compilerformat zu nutzen. Dieser Prozess funktioniert auch dann, wenn die *CTO* -Datei aus einer *CTC* -Datei kompiliert wurde. Sie können die *vsct* -Datei bearbeiten und in eine andere CTO-Datei kompilieren.
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>So erstellen Sie eine VSCT-Datei anhand einer CTO-Datei
 
-1. Erstellen Sie Kopien der *CTO* -Datei und der entsprechenden *.ctsym* Datei.
+1. Abrufen von Kopien der *CTO* -Datei und der entsprechenden *. ctsym* -Datei.
 
-2. Platzieren Sie die Dateien in demselben Verzeichnis wie die *vsct.exe* Compiler.
+2. Platzieren Sie die Dateien im selben Verzeichnis wie der *vsct. exe* -Compiler.
 
-3. Der Visual Studio-Eingabeaufforderung, wechseln Sie in das Verzeichnis mit dem *CTO* und *.ctsym* Dateien.
+3. Wechseln Sie an der Visual Studio-Eingabeaufforderung zu dem Verzeichnis, das die *CTO* -und *ctsym* -Dateien enthält.
 
 4. Typ
 
@@ -102,18 +102,18 @@ Sie erstellen ein XML-basiertes *VSCT* -Datei aus einer vorhandenen binären *CT
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
     ```
 
-     in denen \<Ctofilename\> ist der Name des der *CTO* Datei \<Vsctfilename\> ist der Name des der *VSCT* Datei, die Sie erstellen möchten, und \<Symfilename\> ist der Name des der *.ctsym* Datei.
+     wobei \<cdefilename\> der Name der *CTO* -Datei ist, \<ist vsctfilename\> der Name der *vsct* -Datei, die Sie erstellen möchten, und \<symfilename\> ist der Name von. die *. ctsym* -Datei.
 
-     Dieser Vorgang erstellt ein neues *VSCT* XML-Befehlstabellen-Compilerdatei. Sie können auch bearbeiten und kompilieren Sie die Datei mit *vsct.exe*, würden Sie die Vsct-Compiler, wie Sie alle anderen *VSCT* Datei.
+     Bei diesem Vorgang wird eine neue *vsct* -XML-Befehls Tabellen-Compilerdatei erstellt. Sie können die Datei mit " *vsct. exe*", dem VSCT-Compiler, wie jede andere *vsct* -Datei bearbeiten und kompilieren.
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
- Hinzufügen einer *VSCT* -Datei zu einem Projekt bewirkt nicht kompilieren. Sie müssen es im Buildprozess integrieren.
+ Das einfache Hinzufügen einer *vsct* -Datei zu einem Projekt führt nicht zu einer Kompilierung. Sie müssen Sie in den Buildprozess integrieren.
 
-### <a name="to-add-a-vsct-file-to-project-compilation"></a>Projekt-Kompilierung einer VSCT-Datei hinzu
+### <a name="to-add-a-vsct-file-to-project-compilation"></a>So fügen Sie eine vsct-Datei zur Projekt Kompilierung hinzu
 
-1. Öffnen Sie die Projektdatei im Editor. Wenn das Projekt geladen wird, müssen Sie es zunächst entladen.
+1. Öffnen Sie die Projektdatei im Editor. Wenn das Projekt geladen ist, müssen Sie es zuerst entladen.
 
-2. Hinzufügen einer [ItemGroup-Element](../../msbuild/itemgroup-element-msbuild.md) , enthält eine `VSCTCompile` Element, wie im folgenden Beispiel dargestellt.
+2. Fügen Sie ein [ItemGroup-Element](../../msbuild/itemgroup-element-msbuild.md) hinzu `VSCTCompile` , das ein-Element enthält, wie im folgenden Beispiel gezeigt.
 
     ```xml
     <ItemGroup>
@@ -124,9 +124,9 @@ Sie erstellen ein XML-basiertes *VSCT* -Datei aus einer vorhandenen binären *CT
 
     ```
 
-     Die `ResourceName` Element sollte immer festgelegt werden, um `Menus.ctmenu`.
+     Das `ResourceName` -Element sollte immer auf `Menus.ctmenu`festgelegt sein.
 
-3. Wenn das Projekt enthält eine *resx* hinzufügen. eine `EmbeddedResource` -Element, enthält eine `MergeWithCTO` Element, wie im folgenden Beispiel dargestellt:
+3. Wenn das Projekt eine *RESX* -Datei enthält, fügen Sie `EmbeddedResource` ein Element hinzu, `MergeWithCTO` das ein-Element enthält, wie im folgenden Beispiel gezeigt:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -136,19 +136,19 @@ Sie erstellen ein XML-basiertes *VSCT* -Datei aus einer vorhandenen binären *CT
 
     ```
 
-     Dieses Markup gesendet werden sollen, in der `ItemGroup` -Element, das eingebettete Ressourcen enthält.
+     Dieses Markup sollte innerhalb des `ItemGroup` -Elements enthalten sein, das eingebettete Ressourcen enthält.
 
-4. Öffnen Sie die Paketdatei, die in der Regel mit dem Namen  *\<ProjectName\>Package.cs* oder  *\<ProjectName\>Package.vb*, im Editor.
+4. Öffnen Sie die Paketdatei, die in der Regel  *\<ProjectName\>Package.cs* oder  *\<ProjectName\>Package. vb*heißt, im Editor.
 
-5. Hinzufügen einer `ProvideMenuResource` -Attribut auf die Paketklasse und, wie im folgenden Beispiel gezeigt.
+5. Fügen Sie `ProvideMenuResource` der Package-Klasse ein-Attribut hinzu, wie im folgenden Beispiel gezeigt.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]
     ```
 
-     Der Wert des erste Parameters muss dem Wert des entsprechen den `ResourceName` Attribut, das Sie in der Projektdatei definiert.
+     Der erste Parameterwert muss mit dem Wert des `ResourceName` -Attributs, das Sie in der Projektdatei definiert haben, identisch sein.
 
 ## <a name="see-also"></a>Siehe auch
-- [Erstellen von VSCT-Dateien](../../extensibility/internals/authoring-dot-vsct-files.md)
-- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [VSCT XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)
+- [Vsct-Dateien erstellen](../../extensibility/internals/authoring-dot-vsct-files.md)
+- [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vsct-XML-Schema Referenz](../../extensibility/vsct-xml-schema-reference.md)

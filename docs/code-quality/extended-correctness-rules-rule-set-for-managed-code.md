@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816633"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923998"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code
-Der Regelsatz Microsoft erweiterte Regeln für Richtigkeit maximiert die Logik und Fehler, die von der Codeanalyse gemeldet werden. Besonderes Augenmerk wird auf bestimmte Szenarien wie z. B. COM-Interoperabilität und mobile Anwendungen. Sie sollten diesen Regelsatz, wenn eines dieser Szenarien zutrifft, zu Ihrem Projekt oder um weitere Probleme in Ihrem Projekt zu ermitteln.
+Der Regelsatz für erweiterte Richtigkeit von Regeln von Microsoft maximiert die Fehler bei der Logik-und frameworkverwendung, die von der Code Analyse gemeldet werden. Zusätzlicher Schwerpunkt liegt auf bestimmten Szenarien, wie z. b. com-Interoperabilität und mobilen Anwendungen. Sie sollten diesen Regelsatz einschließen, wenn eines dieser Szenarien auf Ihr Projekt zutrifft, oder um weitere Probleme in Ihrem Projekt zu finden.
 
- Der erweiterte Microsoft-Regeln für Richtigkeit Regelsatz umfasst die Regeln, die in der Regel Microsoft grundlegenden Regeln für Richtigkeit festgelegt werden. Die grundlegenden Regeln für Richtigkeit enthalten die Regeln, die in der Microsoft-Mindestregeln Regel festgelegt werden. Weitere Informationen finden Sie unter [Regelsatz grundlegenden Regeln für Richtigkeit für verwalteten Code](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) und [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Der Regelsatz für die erweiterten Regeln für Richtigkeit von Microsoft enthält die Regeln, die im Regelsatz Microsoft Basic-Regeln für Richtigkeit enthalten sind. Die grundlegenden Regeln für Richtigkeit enthalten die Regeln, die im Regelsatz für die empfohlenen Mindestregeln von Microsoft enthalten sind. Weitere Informationen finden Sie unter [Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) und [Regelsatz für verwaltete Empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
- Die folgende Tabelle beschreibt alle Regeln im Regelsatz Microsoft erweiterte Regeln für Richtigkeit.
+In der folgenden Tabelle werden alle Regeln im Regelsatz für erweiterte Regeln für Richtigkeit von Microsoft beschrieben.
 
 |Regel|Beschreibung|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Der Regelsatz Microsoft erweiterte Regeln für Richtigkeit maximiert die Logik u
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparente Methoden dürfen nur überprüfbare IL enthalten.|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemands erfüllen.|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemand-Anforderungen erfüllen.|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|

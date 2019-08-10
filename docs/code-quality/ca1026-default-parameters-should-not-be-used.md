@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5dc7f7e62526050eeabdb91a557bbdf0fbcf6da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 888e1b5d551e357eb732dfe3f7661d51cbdf089d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779520"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923140"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Standardparameter sollten nicht verwendet werden.
 
@@ -31,26 +31,26 @@ ms.locfileid: "62779520"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein extern sichtbarer Typ enthält eine extern sichtbare Methode, die einen Standardparameter verwendet werden.
+Ein extern sichtbarer Typ enthält eine extern sichtbare Methode, die einen Standardparameter verwendet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Methoden, die Standardparameter verwenden, sind unter der Common Language Specification (CLS) zulässig. die CLS lässt jedoch Compiler, um die Werte zu ignorieren, die diese Parameter zugewiesen werden. Code, der für Compiler geschrieben wird, die ignoriert werden Standardparameterwerte muss die Argumente für jeden Standardparameter explizit bereitgestellt werden. Um das Verhalten zu gewährleisten, das verschiedenen Programmiersprachen werden sollen, sollte Methoden, die Standardparameter verwenden durch methodenüberladungen ersetzt werden, die die Standardparameter bereitgestellt.
+Methoden, die Standardparameter verwenden, sind unter dem Common Language Specification (CLS) zulässig. Allerdings können Compiler die Werte, die diesen Parametern zugewiesen sind, durch die CLS ignorieren. Code, der für Compiler geschrieben wird, die Standardparameter Werte ignorieren, muss explizit Argumente für jeden Standardparameter bereitstellen. Um das gewünschte Verhalten für Programmiersprachen beizubehalten, sollten Methoden, die Standardparameter verwenden, durch Methoden Überladungen ersetzt werden, die die Standardparameter bereitstellen.
 
- Der Compiler ignoriert die Werte der Standardparameter für Managed Extensions für C++, beim Zugriff auf verwaltetem Code. Visual Basic-Compiler unterstützt Methoden, die standardmäßigen Parameter verfügen, verwenden die [Optional](/dotnet/visual-basic/language-reference/modifiers/optional) Schlüsselwort.
+Der Compiler ignoriert die Werte der Standardparameter für die verwaltete Erweiterung C++ für den Zugriff auf verwalteten Code. Der Visual Basic-Compiler unterstützt Methoden, die über Standardparameter verfügen, die das [optionale](/dotnet/visual-basic/language-reference/modifiers/optional) Schlüsselwort verwenden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Ersetzen Sie die Methode, die Standardparameter durch überladene Methoden verwendet werden, die die Standardparameter angeben, um einen Verstoß gegen diese Regel zu beheben.
+Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie die-Methode, die Standardparameter verwendet, mit Methoden Überladungen, die die Standardparameter bereitstellen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, die Standardparameter verwendet und die überladene Methoden, die eine entsprechende Funktionalität bereitzustellen.
+Das folgende Beispiel zeigt eine Methode, die Standardparameter verwendet, und die überladenen Methoden, die eine äquivalente Funktionalität bereitstellen.
 
- [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
+[!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+[CA1025: Wiederholende Argumente durch ein Parameter Array ersetzen](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Sprachunabhängigkeit und sprachunabhängige Komponenten](/dotnet/standard/language-independence-and-language-independent-components)
+[Sprachunabhängigkeit und sprachunabhängige Komponenten](/dotnet/standard/language-independence-and-language-independent-components)

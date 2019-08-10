@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c762fb9777af8ac5e24875e879d2f24d0249e0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872122"
+ms.locfileid: "68926718"
 ---
 # <a name="custom-task-panes"></a>Benutzerdefinierte Aufgabenbereiche
   Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Funktionen Ihrer Projektmappe zur Verfügung stellen. Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.
@@ -124,7 +124,7 @@ ms.locfileid: "68872122"
 
  Um vom Aufgabenbereich verwendete Ressourcen zu bereinigen, während das VSTO-Add-In noch ausgeführt wird, verwenden Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>-Methode oder <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>-Methode. Durch diese Methoden werden das angegebene <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt aus der `CustomTaskPanes`-Auflistung entfernt und die <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A>-Methode des Objekts aufgerufen.
 
- Vom benutzerdefinierten Aufgabenbereich verwendete Ressourcen werden von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatisch bereinigt, wenn das VSTO-Add-In entladen wird. Die-Methode oder <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> die-Methode kann `ThisAddIn_Shutdown` nicht im-Ereignishandler Ihres Projekts aufgerufen werden. Durch diese Methoden wird <xref:System.ObjectDisposedException> ausgelöst, da die vom <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt verwendeten Ressourcen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereinigt werden, bevor `ThisAddIn_Shutdown` aufgerufen wird. Weitere Informationen zu `ThisAddIn_Shutdown`finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md) .
+ Vom benutzerdefinierten Aufgabenbereich verwendete Ressourcen werden von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatisch bereinigt, wenn das VSTO-Add-In entladen wird. Die-Methode oder <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> die-Methode kann `ThisAddIn_Shutdown` nicht im-Ereignishandler Ihres Projekts aufgerufen werden. Durch diese Methoden wird <xref:System.ObjectDisposedException> ausgelöst, da die vom <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt verwendeten Ressourcen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereinigt werden, bevor `ThisAddIn_Shutdown` aufgerufen wird. Weitere Informationen zu `ThisAddIn_Shutdown`finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
 ## <a name="Managing"></a>Verwalten von benutzerdefinierten Aufgabenbereichen in mehreren Anwendungs Fenstern
  Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Anwendung erstellen, die mehrere Fenster zum Anzeigen von Dokumenten und anderen Elementen verwendet, müssen Sie in zusätzlichen Schritten sicherstellen, dass der Aufgabenbereich sichtbar ist, wenn der Benutzer es erwartet.

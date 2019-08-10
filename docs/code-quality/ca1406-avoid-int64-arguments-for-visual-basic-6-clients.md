@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c8e50acf2aa4d061461ad934dbd61ba9be9644
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dfcc612e931756b0e3d817556c9b37844bc3cfd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546452"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922038"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden.
 
@@ -34,31 +34,31 @@ ms.locfileid: "62546452"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ, der ausdrücklich zum Component Object Model (COM) als sichtbar markiert ist einen Member deklariert, nimmt eine <xref:System.Int64?displayProperty=fullName> Argument.
+Ein Typ, der speziell für Component Object Model (com) als sichtbar gekennzeichnet ist, deklariert einen Member, <xref:System.Int64?displayProperty=fullName> der ein-Argument annimmt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Visual Basic 6-COM-Clients können nicht auf 64-Bit-Ganzzahlen zugreifen.
+Visual Basic 6-COM-Clients können nicht auf 64-Bit-Ganzzahlen zugreifen.
 
- Standardmäßig sind die folgenden für COM sichtbar: Assemblys, öffentliche Typen, öffentliche Member in öffentlichen Typen und alle Mitglieder der öffentliche Werttypen. Um falsch positive Ergebnisse zu reduzieren, erfordert mit dieser Regel jedoch die COM-Sichtbarkeit des Typs explizit angegeben werden; die übergeordnete Assembly muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ markiert werden muss, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
+Standardmäßig sind die folgenden Elemente für com sichtbar: Assemblys, öffentliche Typen, öffentliche Instanzmember in öffentlichen Typen und alle Member der öffentlichen Werttypen. Um falsch positive Ergebnisse zu reduzieren, erfordert diese Regel jedoch, dass die COM-Sichtbarkeit des Typs explizit angegeben wird. die <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> enthaltende Assembly muss mit dem auf festgelegten festgelegt werden, `false` und der Typ muss <xref:System.Runtime.InteropServices.ComVisibleAttribute> mit dem `true`auf festgelegten Wert gekennzeichnet werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel für einen Parameter zu beheben, dessen Wert immer als 32-Bit-Ganzzahl ausgedrückt werden, ändern Sie den Parametertyp in <xref:System.Int32?displayProperty=fullName>. Wenn der Wert des Parameters größer sein als als 32-Bit-Ganzzahl dargestellt werden kann, ändern Sie den Parametertyp in <xref:System.Decimal?displayProperty=fullName>. Beachten Sie, dass beide <xref:System.Single?displayProperty=fullName> und <xref:System.Double?displayProperty=fullName> Genauigkeitsverlust die oberen Bereiche der der <xref:System.Int64> -Datentyp. Wenn der Member nicht für COM sichtbar sein soll, markieren Sie sie mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `false`.
+Um einen Verstoß gegen diese Regel für einen Parameter zu beheben, dessen Wert immer als 32-Bit-Ganzzahl ausgedrückt werden kann, ändern Sie <xref:System.Int32?displayProperty=fullName>den Parametertyp in. Wenn der Wert des-Parameters größer sein kann als 32-Bit-Ganzzahl, ändern Sie den Parametertyp in <xref:System.Decimal?displayProperty=fullName>. Beachten Sie, <xref:System.Single?displayProperty=fullName> dass <xref:System.Double?displayProperty=fullName> sowohl als auch <xref:System.Int64> die Genauigkeit in den oberen Bereichen des Datentyps verlieren. Wenn der Member nicht für com sichtbar sein soll, markieren Sie ihn mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf `false`festgelegten.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn sicher ist, dass Visual Basic 6-COM-Clients nicht auf den Typ zugreifen.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn sicher ist, dass Visual Basic 6 com-Clients nicht auf den Typ zugreifen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
+Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
 
- [!code-csharp[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/CSharp/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.cs)]
- [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
+[!code-csharp[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/CSharp/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.cs)]
+[!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1413: Vermeiden Sie nicht öffentliche Felder in für COM sichtbaren Werttypen](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: Statische Member in für COM sichtbaren Typen vermeiden](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407: Statische Member in für COM sichtbaren Typen vermeiden](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
 

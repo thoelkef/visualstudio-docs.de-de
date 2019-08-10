@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd6e3228d67b8dd04cda15549f6b1d172d02916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03add1625c4d59bb180f9f0f08692e67bee8047b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546159"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922079"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: GetLastError unmittelbar nach P/Invoke aufrufen.
 
@@ -35,12 +35,12 @@ ms.locfileid: "62546159"
 
 ## <a name="cause"></a>Ursache
 
-Wird aufgerufen die <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> Methode oder die entsprechenden Win32- `GetLastError` -Funktion und der Aufruf, der unmittelbar zuvor sind nicht auf einer Plattform invoke-Methode.
+Es wird ein Aufruf an die <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> -Methode oder die entsprechende `GetLastError` Win32-Funktion durchgeführt, und der Aufruf, der unmittelbar vor erfolgt, erfolgt nicht in einer Platt Form Aufruf Methode.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine Plattformaufrufmethode greift auf nicht verwalteten Code und ist definiert, mit der `Declare` -Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> Attribut. In der Regel nach einem Fehler nicht verwaltete Funktionen aufrufen, die Win32 `SetLastError` Funktion einen Fehlercode festgelegt, die mit dem Fehler verknüpft ist. Der Aufrufer der fehlerhaften Funktion und ruft die Win32 `GetLastError` -Funktion zum Abrufen des Fehlercodes und ermitteln Sie die Ursache des Fehlers. Der Fehlercode wird auf einer pro-Thread-Basis verwaltet und wird überschrieben, indem der nächste Aufruf von `SetLastError`. Nach ein Aufruf an eine fehlerhafte Aufrufmethode, kann verwalteter Code durch Aufrufen den Fehlercode Abrufen der <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> Methode. Da der Fehlercode durch interne Aufrufe von anderen verwalteten Methoden der Klassenbibliotheken, überschrieben werden kann die `GetLastError` oder <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> -Methode unmittelbar nach der Plattformaufruf-Methodenaufruf, aufgerufen werden soll.
+Eine Platt Form Aufruf Methode greift auf nicht verwalteten Code zu und wird mit `Declare` dem- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Schlüsselwort <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> in oder dem-Attribut definiert. Im Allgemeinen wird bei einem Fehler von nicht verwalteten Funktionen die `SetLastError` Win32-Funktion aufgerufen, um einen Fehlercode festzulegen, der dem Fehler zugeordnet ist. Der Aufrufer der fehlgeschlagenen Funktion `GetLastError` Ruft die Win32-Funktion auf, um den Fehlercode abzurufen und die Ursache des Fehlers zu ermitteln. Der Fehlercode wird Thread bezogen verwaltet und durch den nächsten `SetLastError`-Befehl überschrieben. Nach einem Aufruf einer fehlgeschlagenen Platt Form Aufruf Methode kann verwalteter Code den Fehlercode abrufen, <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> indem er die-Methode aufruft. Da der Fehlercode von internen Aufrufen von anderen Methoden der verwalteten Klassenbibliothek überschrieben werden kann `GetLastError` , <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> sollte die-Methode oder die-Methode unmittelbar nach dem Aufruf der Platt Form Aufruf Methode aufgerufen werden.
 
- Die Regel ignoriert Aufrufe der folgenden verwalteten Member, wenn sie zwischen dem Aufruf von der Plattform invoke-Methode und der Aufruf von <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Ändern Sie diese Elemente nicht den Fehler Code und sind nützlich, für den Erfolg der einige Plattform invoke-Methodenaufrufe.
+Die Regel ignoriert Aufrufe der folgenden verwalteten Member, wenn Sie zwischen dem Aufruf der Platt Form Aufruf Methode und dem Aufruf <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>von auftreten. Diese Member ändern den Fehlercode nicht und sind hilfreich, um die erfolgreiche Ausführung einiger Platt Form Aufrufe von Platt Form aufrufen zu ermitteln.
 
 - <xref:System.IntPtr.Zero?displayProperty=fullName>
 
@@ -51,24 +51,24 @@ Wird aufgerufen die <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Err
 - <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, verschieben Sie den Aufruf von <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> invoke-Methode, damit den Aufruf von der Plattform unmittelbar folgt.
+Um einen Verstoß gegen diese Regel zu beheben, verschieben Sie den <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> Aufruf von so, dass er unmittelbar auf den Aufruf der Platt Form Aufruf Methode folgt.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicherer, die mit dieser Regel eine Warnung zu unterdrücken, wenn der Code zwischen dem Aufruf der-Methode aufrufen und die <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> Methodenaufruf kann nicht explizit oder implizit, dass der Fehlercode ändern.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Code zwischen dem Platt Form Aufruf <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> -Methodenaufruf und dem Methodenaufruf nicht explizit oder implizit bewirken kann, dass der Fehlercode geändert wird.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, die gegen die Regel verstößt und eine Methode, die die Regel erfüllt.
+Das folgende Beispiel zeigt eine Methode, die gegen die Regel verstößt, und eine Methode, die die Regel erfüllt.
 
- [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
- [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
+[!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
+[!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1060: Verschieben von P/Invokes in NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+[CA1060: Verschieben von P/aufrufen in die NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: P/Invoke-Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+[CA1400: P/aufrufende Einstiegspunkte müssen vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invokes dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+[CA1401: P/Aufrufe dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Geben Sie die Marshalling für P/Invoke-Zeichenfolgenargumente](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+[CA2101: Marshalling für P/Aufruf-Zeichen folgen Argumente angeben](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
- [CA2205: Verwenden Sie verwaltete Entsprechungen der Win32-API](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+[CA2205: Verwaltete Entsprechungen der Win32-API verwenden](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

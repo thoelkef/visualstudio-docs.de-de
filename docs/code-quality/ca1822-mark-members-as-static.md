@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ac9aff8741654ee5799724feb09c53f588dafb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796665"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921385"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren.
 
@@ -28,23 +28,23 @@ ms.locfileid: "62796665"
 |TypeName|MarkMethodsAsStatic|
 |CheckId|CA1822|
 |Kategorie|Microsoft.Performance|
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung. Nicht unterbrechend – Wenn Sie das Element auf einen Instanzmember mit ändern Sie einfach die `this` Schlüsselwort.<br /><br /> Unterbrechend – Wenn Sie das Element über ein Instanzmember in einen statischen Member ändern und außerhalb der Assembly sichtbar ist.|
+|Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen. Nicht unterbrechend: Wenn Sie das Element nur mit dem `this` -Schlüsselwort in einen Instanzmember ändern.<br /><br /> Unterbrechen: Wenn Sie den Member von einem Instanzmember in einen statischen Member ändern und dieser außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
- Ein Element, das nicht auf Instanzdaten zugreift, ist nicht als statisch markiert (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Ein Member, der nicht auf Instanzdaten zugreift, ist nicht als statisch [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]gekennzeichnet (Shared in).
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Member, die nicht auf Instanzdaten zugreifen oder keine Instanzmethoden aufrufen, können als static markiert werden (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Danach gibt der Compiler nicht virtuelle Aufrufsites an diese Member aus. Ausgeben von Aufrufsites wird zur Laufzeit für jeden Aufruf eine Überprüfung, die sicherstellt, dass der aktuelle Objektzeiger ungleich Null ist, verhindert. Dies kann zu eine messbaren Leistungssteigerung für leistungsabhängigen Code erreichen. In einigen Fällen stellt der Fehler auf die aktuelle Objektinstanz ein Problem der Richtigkeit dar.
+Member, die nicht auf Instanzdaten zugreifen oder keine Instanzmethoden aufrufen, können als static markiert werden (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Danach gibt der Compiler nicht virtuelle Aufrufsites an diese Member aus. Durch das Ausgeben von nicht virtuellen-Aufrufsites wird für jeden-Befehl, der sicherstellt, dass der aktuelle Objekt Zeiger nicht NULL ist, zur Laufzeit eine Überprüfung verhindert. Dies kann zu einer messbaren Leistungssteigerung bei Leistungs sensiblem Code werden. In einigen Fällen stellt der Fehler beim Zugriff auf die aktuelle Objektinstanz ein Problem mit der Richtigkeit dar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Markieren Sie den Member als statisch (oder im freigegebenen [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) oder verwenden Sie "this" / "Me" in der Methode Anforderungstext, falls zutreffend.
+Markieren Sie den Member als statisch (oder frei [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]gegeben), oder verwenden Sie "This"/"Me" im Methoden Text, falls zutreffend.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher eine Warnung dieser Regel für die zuvor abgelieferten Codes zu unterdrücken, für die die Lösung eine unterbrechende Änderung sein würde.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel für den zuvor gelieferten Code zu unterdrücken, dessen Behebung eine Breaking Change wäre.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)

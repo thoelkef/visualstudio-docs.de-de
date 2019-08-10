@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571367"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919541"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
-Sie können die grundlegende Microsoft-Regeln für Entwurfsrichtlinien Regelsatz, der sich auf das konzentrieren, wodurch der Code leichter zu verstehen und verwenden. Sie sollten diesen Regelsatz, wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie bewährte Methoden für Code, der leicht zu warten ist, erzwingen möchten, enthalten.
+Sie können den Regelsatz Regeln für Microsoft Basic-Entwurfs Richtlinien verwenden, um sich auf das Verständnis und die Verwendung Ihres Codes zu konzentrieren. Sie sollten diesen Regelsatz einschließen, wenn Ihr Projekt Bibliotheks Code enthält, oder wenn Sie bewährte Methoden für Code erzwingen möchten, der leicht zu verwalten ist.
 
- Die grundlegenden Regeln für Entwurfsrichtlinien enthalten alle Regeln im Regelsatz Microsoft-Mindestregeln. Eine Liste der Regeln für die minimale finden Sie unter [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Die grundlegenden Regeln für Entwurfs Richtlinien enthalten alle Regeln im Regelsatz für die Mindestanzahl von Microsoft-Regeln. Eine Liste der minimal Regeln finden Sie unter [Regelsatz für verwaltete Empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
 
- Die folgende Tabelle beschreibt alle Regeln im Regelsatz grundlegende Microsoft-Regeln für Entwurfsrichtlinien.
+In der folgenden Tabelle werden alle Regeln des Regelsatzes Microsoft Basic-Entwurfs Richtlinien Regeln beschrieben.
 
 |Regel|Beschreibung|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Sie können die grundlegende Microsoft-Regeln für Entwurfsrichtlinien Regelsatz
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparente Methoden dürfen nur überprüfbare IL enthalten.|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemands erfüllen.|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemand-Anforderungen erfüllen.|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|

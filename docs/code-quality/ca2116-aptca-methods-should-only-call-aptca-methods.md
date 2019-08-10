@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f55c48583e47a4602f33d69799d1d86a6c9c3e56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545421"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921148"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.
 
@@ -32,42 +32,42 @@ ms.locfileid: "62545421"
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode in einer Assembly mit der <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> Attribut Ruft eine Methode in einer Assembly, die nicht über das Attribut verfügt.
+Eine Methode in einer Assembly mit dem <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> -Attribut ruft eine Methode in einer Assembly auf, die nicht über das-Attribut verfügt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Standardmäßig öffentliche oder geschützte Methoden in Assemblys mit starken Namen implizit durch geschützt sind eine [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands) für volle Vertrauenswürdigkeit, ausschließlich vollständig vertrauenswürdige Aufrufer auf eine Assembly mit starkem Namen zugreifen können. Assemblys mit starkem Namen gekennzeichnet werden, mit der <xref:System.Security.AllowPartiallyTrustedCallersAttribute> -Attribut (APTCA) müssen sich nicht auf diesen Schutz. Das Attribut deaktiviert den Linkaufruf, damit die Assembly Aufrufern, die keine volle Vertrauenswürdigkeit, z. B. Code ausführen, die aus einem Intranet oder dem Internet zugegriffen werden kann.
+Standardmäßig werden öffentliche oder geschützte Methoden in Assemblys mit starken Namen implizit durch einen [Link](/dotnet/framework/misc/link-demands) Aufruf für volle Vertrauenswürdigkeit geschützt. nur voll vertrauenswürdige Aufrufer können auf eine Assembly mit starkem Namen zugreifen. Assemblys mit starkem Namen, <xref:System.Security.AllowPartiallyTrustedCallersAttribute> die mit dem-Attribut (APTCA) gekennzeichnet sind, verfügen nicht über diesen Schutz. Das-Attribut deaktiviert den Link Aufruf, sodass Aufrufer, die nicht voll vertrauenswürdig sind, wie z. b. Code, der über ein Intranet oder das Internet ausgeführt wird, auf die Assembly zugreifen können.
 
-Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist und die Assembly Code ausführt, in einer anderen Assembly, die keine teilweise vertrauenswürdigen Aufrufer zulässt, kann diese Sicherheitslücke ausgenutzt werden. Wenn zwei Methoden `M1` und `M2` folgende Bedingungen erfüllt, können böswillige Aufrufer der Methode `M1` den Linkaufruf implizite volle Vertrauenswürdigkeit zu umgehen, die schützt `M2`:
+Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist und die Assembly Code in einer anderen Assembly ausführt, die keine teilweise vertrauenswürdigen Aufrufer zulässt, kann eine Sicherheitslücke ausgenutzt werden. Wenn zwei Methoden `M1` und `M2` die folgenden Bedingungen erfüllen, können böswillige Aufrufer `M1` die-Methode verwenden, um den impliziten voll Vertrauens `M2`würdigen Link Bedarf zu umgehen, der schützt:
 
-- `M1` in einer voll vertrauenswürdigen Assembly, die über das APTCA-Attribut verfügt, wird eine öffentliche Methode deklariert werden.
+- `M1`ist eine öffentliche Methode, die in einer voll vertrauenswürdigen Assembly mit dem APTCA-Attribut deklariert ist.
 
-- `M1` Ruft eine Methode `M2` außerhalb `M1`der Assembly.
+- `M1`Ruft eine Methode `M2` außerhalb `M1`der Assembly auf.
 
-- `M2`die Assembly verfügt nicht über das APTCA-Attribut, und aus diesem Grund sollten nicht ausgeführt werden durch oder im Auftrag von Aufrufern, die teilweise vertrauenswürdig sind.
+- `M2`die Assembly verfügt nicht über das APTCA-Attribut und sollte daher nicht von oder im Auftrag von Aufrufern ausgeführt werden, die teilweise vertrauenswürdig sind.
 
-Ein teilweise vertrauenswürdiger Aufrufer `X` Methode aufrufen `M1`, und bewirkt, `M1` aufzurufende `M2`. Da `M2` verfügt nicht über das APTCA-Attribut angegeben haben, wird ihr unmittelbarer Aufrufer (`M1`) erfüllen müssen, einen Linkaufruf voll vertrauenswürdig sind. `M1` ist voll vertrauenswürdig und erfüllt daher diese Überprüfung. Das Sicherheitsrisiko liegt daran, dass `X` nicht beteiligt, die schützt Verknüpfungsaufrufs `M2` von nicht vertrauenswürdigen Aufrufern. Methoden mit dem APTCA-Attribut müssen daher keine Methoden aufrufen, die nicht mit das Attribut verfügen.
+Ein teilweise vertrauenswürdiger `X` Aufrufer `M1`kann die `M1` -Methode `M2`aufzurufen, wodurch aufgerufen wird. Da `M2` nicht über das APTCA-Attribut verfügt, muss der unmittelbare`M1`Aufrufer () einen Link Bedarf für volle Vertrauenswürdigkeit erfüllen. `M1` hat volle Vertrauenswürdigkeit und erfüllt daher diese Überprüfung. Das Sicherheitsrisiko besteht darin `X` , dass nicht an der Erfüllung des Link Bedarfs teilnimmt `M2` , der vor nicht vertrauenswürdigen Aufrufern schützt. Daher dürfen Methoden mit dem APTCA-Attribut keine Methoden aufzurufen, die nicht über das-Attribut verfügen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wenn das APTCA-Attribut erforderlich ist, verwenden Sie eine Anforderung, um die Methode zu schützen, die voll vertrauenswürdige Assembly aufruft. Die genauen Berechtigungen, die Sie bei Bedarf hängt von die Funktionalität, die durch die Methode verfügbar gemacht. Wenn es möglich ist, schützen Sie die Methode mit einer Anforderung für volle Vertrauenswürdigkeit, um sicherzustellen, dass die zugrunde liegende Funktionalität nicht für teilweise vertrauenswürdige Aufrufer verfügbar gemacht wird. Wenn dies nicht möglich ist, wählen Sie einen Satz von Berechtigungen, der effektiv die verfügbar gemachte Funktionalität schützt.
+Wenn das apcta-Attribut erforderlich ist, verwenden Sie eine Anforderung, um die Methode zu schützen, die die voll vertrauenswürdige Assembly aufruft. Welche Berechtigungen Sie benötigen, hängt von der Funktionalität ab, die von der-Methode verfügbar gemacht wird. Wenn dies möglich ist, schützen Sie die Methode mit einer Anforderung für vollständige Vertrauenswürdigkeit, um sicherzustellen, dass die zugrunde liegende Funktionalität nicht teilweise vertrauenswürdigen Aufrufern ausgesetzt ist. Wenn dies nicht möglich ist, wählen Sie einen Berechtigungs Satz aus, der die verfügbaren Funktionen effektiv schützt.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Um problemlos eine Warnung dieser Regel zu unterdrücken, müssen Sie sicherstellen, dass die Funktionalität verfügbar gemacht werden, indem Sie die Methode nicht direkt oder indirekt zulässt Aufrufer Zugriff auf vertrauliche Informationen, Vorgänge oder Ressourcen, die auf schädigende Weise verwendet werden können.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Um eine Warnung aus dieser Regel sicher zu unterdrücken, müssen Sie sicherstellen, dass die von der-Methode verfügbar gemachten Funktionen nicht direkt oder indirekt Aufrufern Zugriff auf vertrauliche Informationen, Vorgänge oder Ressourcen ermöglichen, die auf zerstörerische Weise verwendet werden können.
 
 ## <a name="example-1"></a>Beispiel 1
- Im folgenden Beispiel wird die zwei Assemblys und einer testanwendung, um das Sicherheitsrisiko, das von dieser Regel erkannte zu veranschaulichen. Die erste Assembly verfügt nicht über das APTCA-Attribut, und sollte nicht für teilweise vertrauenswürdige Aufrufer verfügbar sein (dargestellt durch `M2` aus dem vorherigen Beispiel).
+Im folgenden Beispiel werden zwei Assemblys und eine Testanwendung verwendet, um das Sicherheitsrisiko zu veranschaulichen, das von dieser Regel erkannt wird. Die erste Assembly verfügt nicht über das APTCA-Attribut und sollte nicht für teilweise vertrauenswürdige Aufrufer ( `M2` dargestellt durch in der vorherigen Diskussion) verfügbar sein.
 
- [!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
+[!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
 
 ## <a name="example-2"></a>Beispiel 2
- Die zweite Assembly ist voll vertrauenswürdig und lässt teilweise vertrauenswürdige Aufrufer (dargestellt durch `M1` aus dem vorherigen Beispiel).
+Die zweite Assembly ist voll vertrauenswürdig und ermöglicht teilweise vertrauenswürdige Aufrufer ( `M1` in der vorherigen Diskussion dargestellt).
 
- [!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
+[!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
 
 ## <a name="example-3"></a>Beispiel 3
- Die Anwendung zu testen (dargestellt durch `X` aus dem vorherigen Beispiel) ist teilweise vertrauenswürdig.
+Die Testanwendung (dargestellt durch `X` in der vorherigen Diskussion) ist teilweise vertrauenswürdig.
 
- [!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
+[!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
 
 Dieses Beispiel erzeugt die folgende Ausgabe:
 
@@ -78,11 +78,11 @@ ClassRequiringFullTrust.DoWork was called.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern.](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+- [CA2117: APTCA-Typen sollten nur APTCA-Basis Typen erweitern](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)
 - [Verwenden von Bibliotheken aus teilweise vertrauenswürdigem Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)
-- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)
+- [Link Aufrufe](/dotnet/framework/misc/link-demands)
 - [Daten und Modellierung](/dotnet/framework/data/index)

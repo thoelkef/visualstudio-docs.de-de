@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 274b01a67974db08d9ec016a18ec115bcfac2452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3868061a01572d0b1adadec6619f88269d353dff
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788567"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922437"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Argumente von öffentlichen Methoden validieren.
 
@@ -35,28 +35,28 @@ ms.locfileid: "62788567"
 
 ## <a name="cause"></a>Ursache
 
-Eine extern sichtbare Methode hebt den Verweis auf eines ihrer Verweisargumente ohne zu überprüfen, ob das Argument `null` (`Nothing` in Visual Basic).
+Eine extern sichtbare Methode dereferenziert eines der zugehörigen Verweis Argumente, ohne zu überprüfen, `null` ob`Nothing` dieses Argument (in Visual Basic) ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Alle Verweisargumente, die an extern sichtbare Methoden übergeben werden sollte aktiviert sein, für `null`. Lösen Sie ggf. eine <xref:System.ArgumentNullException> Wenn das Argument ist `null`.
+Alle Verweis Argumente, die an extern sichtbare Methoden übermittelt werden, sollten `null`gegen überprüft werden. Lösen Sie ggf. <xref:System.ArgumentNullException> eine aus, wenn `null`das-Argument ist.
 
-Wenn eine Methode aus einer unbekannten Assembly aufgerufen werden kann, da sie öffentliche oder geschützte deklariert ist, sollten Sie alle Parameter der Methode überprüfen. Wenn die Methode nur von bekannten Assemblys aufgerufen werden soll, sollten Sie die Methode intern machen und Anwenden der <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> -Attribut auf die Assembly, die die Methode enthält.
+Wenn eine Methode von einer unbekannten Assembly aufgerufen werden kann, da Sie als öffentlich oder geschützt deklariert ist, sollten Sie alle Parameter der Methode überprüfen. Wenn die-Methode nur von bekannten Assemblys aufgerufen werden soll, sollten Sie die-Methode intern machen und <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> das-Attribut auf die Assembly anwenden, die die-Methode enthält.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie jedes Verweisargument für `null`.
+Um einen Verstoß gegen `null`diese Regel zu beheben, überprüfen Sie jedes Verweis Argument auf.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Sie können eine Warnung dieser Regel unterdrücken, wenn Sie sicher sind, dass die dereferenzierte Parameter durch einen anderen Aufruf der-Methode in der Funktion überprüft wurde.
+Sie können eine Warnung aus dieser Regel unterdrücken, wenn Sie sicher sind, dass der Dereferenzierte Parameter von einem anderen Methoden aufrufin der Funktion überprüft wurde.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Methode, die gegen die Regel verstößt und eine Methode, die die Regel erfüllt.
+Das folgende Beispiel zeigt eine Methode, die gegen die Regel verstößt, und eine Methode, die die Regel erfüllt.
 
- ```csharp
- using System;
+```csharp
+using System;
 
 namespace DesignLibrary
 {
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>Beispiel
 
-Kopierkonstruktoren, die Felder oder Eigenschaften, die Reference-Objekten auffüllen können auch die CA1062 Regel verletzen. Die Verletzung auftritt, da das kopierte Objekt, das an den Copy-Konstruktor übergeben wird möglicherweise `null` (`Nothing` in Visual Basic). Um die Verletzung zu beheben, verwenden Sie eine statische Methode der (Shared in Visual Basic) zu um überprüfen, ob das kopierte Objekt nicht null ist.
+Kopierkonstruktoren, die Felder oder Eigenschaften auffüllen, die Verweis Objekte sind, können auch gegen die CA1062-Regel verstoßen. Die Verletzung tritt auf, weil das kopierte Objekt, das an den Kopierkonstruktor`Nothing` übergeben wird, möglicherweise `null` (in Visual Basic) ist. Um die Verletzung aufzulösen, verwenden Sie eine statische Methode (Shared in Visual Basic), um zu überprüfen, ob das kopierte Objekt nicht NULL ist.
 
-In der folgenden `Person` Klasse beispielsweise die `other` -Objekt, das an die `Person` Kopierkonstruktor möglicherweise `null`.
+Im folgenden `Person` Klassen Beispiel kann das `other` -Objekt, das an den `Person` Kopierkonstruktor übergeben wird `null`, sein.
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>Beispiel
 
-In den folgenden überarbeitet `Person` beispielsweise die `other` -Objekt, das an den Copy-Konstruktor übergeben wird wird zunächst überprüft, für NULL-Wert in der `PassThroughNonNull` Methode.
+Im folgenden überarbeiteten `Person` Beispiel wird das `other` an den Kopierkonstruktor übergebene-Objekt zuerst auf NULL in der `PassThroughNonNull` -Methode überprüft.
 
 ```csharp
 public class Person

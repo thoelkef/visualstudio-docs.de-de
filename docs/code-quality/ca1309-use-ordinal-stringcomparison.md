@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00accdbdb08e4267bbca2b7e5fab8002f539f1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c528266c54bbb2f3f0d9420461d700a46b09bd5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546478"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922286"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Ordinal-StringComparison verwenden.
 
@@ -32,18 +32,18 @@ ms.locfileid: "62546478"
 
 ## <a name="cause"></a>Ursache
 
-Die durch einen nicht linguistischen Zeichenfolgenvergleich wird nicht festgelegt. die <xref:System.StringComparison> Parameter entweder **Ordnungszahl** oder **OrdinalIgnoreCase**.
+Bei einer nicht linguistischen Zeichen folgen Vergleichsoperation wird der <xref:System.StringComparison> -Parameter nicht auf **Ordinal** oder **OrdinalIgnoreCase**festgelegt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Viele Zeichenfolgenoperationen, vor allem die <xref:System.String.Compare%2A?displayProperty=fullName> und <xref:System.String.Equals%2A?displayProperty=fullName> Methoden bieten jetzt eine Überladung, die akzeptiert eine <xref:System.StringComparison?displayProperty=fullName> Enumerationswert als Parameter.
+Viele Zeichen folgen Operationen, vor allem <xref:System.String.Compare%2A?displayProperty=fullName> die <xref:System.String.Equals%2A?displayProperty=fullName> -Methode und die-Methode, bieten nun <xref:System.StringComparison?displayProperty=fullName> eine Überladung, die einen-Enumerationswert als Parameter akzeptiert.
 
- Wenn Sie angeben, entweder **StringComparison.Ordinal** oder **StringComparison.OrdinalIgnoreCase**, beim Vergleich der Zeichenfolgen nicht linguistisch ist. Beim Vergleich Entscheidungen getroffen werden, werden, also die Funktionen, die spezifisch für die natürliche Sprache sind ignoriert. Features der natürlichen Sprache wird ignoriert, bedeutet, dass es sich bei basieren die Entscheidungen, die auf einfache bytevergleiche und nicht auf Groß-und Kleinschreibung oder Äquivalenz-Tabellen, die nach Kultur parametrisierten entsprechungstabellen. Daher durch Festlegen von den Parameter explizit auf die **StringComparison.Ordinal** oder **StringComparison.OrdinalIgnoreCase**, Ihren Code häufig beschleunigt, erhöht der Richtigkeit und wird zuverlässiger.
+Wenn Sie **StringComparison. Ordinal** oder **StringComparison. OrdinalIgnoreCase**angeben, ist der Zeichen folgen Vergleich nicht linguistisch. Das heißt, die Features, die für die natürliche Sprache spezifisch sind, werden ignoriert, wenn Vergleichs Entscheidungen getroffen werden. Das Ignorieren von Features in natürlicher Sprache bedeutet, dass die Entscheidungen auf einfachen Byte vergleichen und nicht auf Groß-/Kleinschreibung oder Äquivalenz Tabellen basieren, die nach Kultur parametrisiert werden. Durch das explizite Festlegen des Parameters auf " **StringComparison. Ordinal** " oder " **StringComparison. OrdinalIgnoreCase**" erhöht der Code daher häufig Geschwindigkeit, steigert die Richtigkeit und wird zuverlässiger.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Methode zum Zeichenfolgenvergleich an eine Überladung, die akzeptiert die <xref:System.StringComparison?displayProperty=fullName> -Enumeration als Parameter, und geben Sie entweder **Ordnungszahl** oder **OrdinalIgnoreCase**. Ändern Sie beispielsweise `String.Compare(str1, str2)` zu `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Methode für den Zeichen folgen Vergleich in <xref:System.StringComparison?displayProperty=fullName> eine Überladung, die die Enumeration als Parameter akzeptiert, und geben Sie entweder **Ordinal** oder **OrdinalIgnoreCase**an. Ändern Sie beispielsweise `String.Compare(str1, str2)` zu `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe vorgesehen ist, oder wenn die Semantik der aktuellen Kultur verwendet werden soll.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe bestimmt ist oder wenn die Semantik der aktuellen Kultur verwendet werden soll.
 
 ## <a name="see-also"></a>Siehe auch
 
