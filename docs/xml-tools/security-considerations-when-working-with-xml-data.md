@@ -8,32 +8,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9d3c3e8ddffb72b04a9ca2fc0ec4df5eaac150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966704"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926760"
 ---
-# <a name="security-considerations-when-working-with-xml-data"></a>Überlegungen zur Sicherheit bei der Arbeit mit XML-Daten
+# <a name="security-considerations-when-working-with-xml-data"></a>Sicherheitsüberlegungen beim Arbeiten mit XML-Daten
 
-Dieses Thema beschreibt die Sicherheitsprobleme, denen Sie beim Arbeiten mit XML-Editor oder dem XSLT-Debugger kennen müssen.
+In diesem Thema werden Sicherheitsprobleme erläutert, die Sie bei der Arbeit mit dem XML-Editor oder dem XSLT-Debugger kennen müssen.
 
 ## <a name="xml-editor"></a>XML-Editor
 
- Der XML-Editor basiert auf der Visual Studio-Text-Editor. Er beruht auf der <xref:System.Xml>-Klasse und der <xref:System.Xml.Xsl>-Klasse zum Behandeln vieler XML-Prozesse.
+Der XML-Editor basiert auf dem Visual Studio-Text-Editor. Er beruht auf der <xref:System.Xml>-Klasse und der <xref:System.Xml.Xsl>-Klasse zum Behandeln vieler XML-Prozesse.
 
-- XSLT-Transformationen werden in einer neuen Anwendungsdomäne ausgeführt. Die XSLT-Transformationen sind *Sandbox*; also wird die Sicherheitsrichtlinie für Codezugriff Ihres Computers verwendet, um zu bestimmen, die eingeschränkten Berechtigungen, die basierend auf, in dem das XSLT-Stylesheet befindet. Stylesheets von einem Internetspeicherort weisen die am stärksten eingeschränkten Berechtigungen auf, während auf die Festplatte kopierte Stylesheets mit voller Vertrauenswürdigkeit ausgeführt werden.
+- XSLT-Transformationen werden in einer neuen Anwendungsdomäne ausgeführt. Die XSLT-Transformationen sind *Sandkasten*. Das heißt, die Sicherheitsrichtlinie für den Code Zugriff Ihres Computers wird verwendet, um die eingeschränkten Berechtigungen basierend auf der Position des XSLT-Stylesheets zu bestimmen. Stylesheets von einem Internetspeicherort weisen die am stärksten eingeschränkten Berechtigungen auf, während auf die Festplatte kopierte Stylesheets mit voller Vertrauenswürdigkeit ausgeführt werden.
 
 - Mithilfe der <xref:System.Xml.Xsl.XslCompiledTransform>-Klasse wird XSLT in die Microsoft Intermediate Language (MSIL) kompiliert, um eine höhere Leistung bei der Ausführung zu erzielen.
 
-- Schemas, die auf einem externen Speicherort in der Katalogdatei zeigen, werden automatisch heruntergeladen, beim ersten Laden der XML-Editor. Mithilfe der <xref:System.Xml.Schema.XmlSchemaSet>-Klasse werden Schemata kompiliert. Links zu externen Schemata keinen für die Katalogdatei, die im XML-Editor bereitgestellt wird. Der Benutzer hat einen Verweis auf das externe Schema explizit hinzufügen, bevor der XML-Editor die Schemadatei herunterlädt. HTTP-Downloads kann deaktiviert werden, über die **verschiedene Extras/Optionen** Seite für den XML-Editor.
+- Schemas, die auf einen externen Speicherort in der Katalog Datei verweisen, werden beim ersten Laden des XML-Editors automatisch heruntergeladen. Mithilfe der <xref:System.Xml.Schema.XmlSchemaSet>-Klasse werden Schemata kompiliert. Die Katalog Datei, die mit dem XML-Editor ausgeliefert wird, enthält keine Links zu externen Schemas. Der Benutzer muss explizit einen Verweis auf das externe Schema hinzufügen, bevor der XML-Editor die Schema Datei herunterlädt. Das Herunterladen von http kann über die **Options Seite verschiedene Tools** für den XML-Editor deaktiviert werden.
 
-- Der XML-Editor verwendet die <xref:System.Net> Klassen für Downloads von Schemata
+- Der XML-Editor verwendet <xref:System.Net> die-Klassen zum Herunterladen von Schemas.
 
 ## <a name="xslt-debugger"></a>XSLT-Debugger
 
- Der XSLT-Debugger verwendet aus Visual Studio die verwaltete Debug-Engine und die verwalteten Klassen aus dem <xref:System.Xml>-Namespace und dem <xref:System.Xml.Xsl>-Namespace.
+Der XSLT-Debugger verwendet aus Visual Studio die verwaltete Debug-Engine und die verwalteten Klassen aus dem <xref:System.Xml>-Namespace und dem <xref:System.Xml.Xsl>-Namespace.
 
 - Der XSLT-Debugger führt jede XSLT-Transformation in einer Sandbox-Anwendungsdomäne aus. Mithilfe der Sicherheitsrichtlinie für den Codezugriff Ihres Computers werden die eingeschränkten Berechtigungen anhand des Speicherorts des XSLT-Stylesheets ermittelt. Stylesheets von einem Internetspeicherort weisen die am stärksten eingeschränkten Berechtigungen auf, während auf die Festplatte kopierte Stylesheets mit voller Vertrauenswürdigkeit ausgeführt werden.
 

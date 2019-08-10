@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fd1596fdede3d13d603e7df222395a7ef7a277
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc7f4a82b9a75e4d189e969712472f06b4019b73
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545113"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920883"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Sichere Serialisierungskonstruktoren.
 
@@ -31,26 +31,26 @@ ms.locfileid: "62545113"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> -Schnittstelle ist nicht, einen Delegaten oder eine Schnittstelle, und wird in einer Assembly deklariert, die teilweise vertrauenswürdige Aufrufer zulässt. Der Typ verfügt über einen Konstruktor, akzeptiert eine <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> Objekt und ein <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Objekt (die Signatur des Serialisierungskonstruktors). Dieser Konstruktor wird nicht durch eine sicherheitsüberprüfung gesichert, aber eine oder mehrere der normalen Konstruktoren des Typs gesichert wird.
+Der-Typ implementiert <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> die-Schnittstelle, ist kein Delegat oder eine Schnittstelle und wird in einer Assembly deklariert, die teilweise vertrauenswürdige Aufrufer zulässt. Der-Typ verfügt über einen Konstruktor, <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> der ein- <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Objekt und ein-Objekt (die Signatur des Serialisierungskonstruktors) annimmt. Dieser Konstruktor ist nicht durch eine Sicherheitsüberprüfung gesichert, aber ein oder mehrere der regulären Konstruktoren im Typ sind gesichert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel gilt für Typen, die benutzerdefinierte Serialisierung unterstützen. Ein Typ unterstützt die benutzerdefinierte Serialisierung, wenn er implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle. Der Serialisierungskonstruktor ist erforderlich und wird verwendet, um deserialisiert und erneut erstellen Objekte, die mit serialisiert wurden die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> Methode. Da der Serialisierungskonstruktor weist und Objekte initialisiert werden, müssen auch sicherheitsüberprüfungen, die auf normalen Konstruktoren vorhanden sind auf den Serialisierungskonstruktor vorhanden sein. Wenn Sie diese Regel verletzen, können Aufrufer, die andernfalls keine Instanz erstellt werden konnte den Serialisierungskonstruktor dazu.
+Diese Regel ist für Typen relevant, die die benutzerdefinierte Serialisierung unterstützen. Ein Typ unterstützt die benutzerdefinierte Serialisierung, <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> wenn die-Schnittstelle implementiert wird. Der Serialisierungskonstruktor ist erforderlich und wird zum Deserialisieren oder erneuten Erstellen von Objekten verwendet, die mit der <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> -Methode serialisiert wurden. Da der Serialisierungskonstruktor Objekte zuordnet und initialisiert, müssen Sicherheitsüberprüfungen, die für reguläre Konstruktoren vorhanden sind, auch auf dem Serialisierungskonstruktor vorhanden sein. Wenn Sie gegen diese Regel verstoßen, können Aufrufer, die nicht anderweitig eine Instanz erstellen konnten, den Serialisierungskonstruktor verwenden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, schützen Sie den Serialisierungskonstruktor mit sicherheitsanforderungen, die identisch mit den anderen Konstruktoren geschützt sind.
+Um einen Verstoß gegen diese Regel zu beheben, schützen Sie den Serialisierungskonstruktor mit Sicherheitsanforderungen, die mit denen identisch sind, die andere Konstruktoren schützen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keinen Verstoß gegen die Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keinen Verstoß gegen die Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
+Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
 
- [!code-csharp[FxCop.Security.SerialCtors#1](../code-quality/codesnippet/CSharp/ca2120-secure-serialization-constructors_1.cs)]
+[!code-csharp[FxCop.Security.SerialCtors#1](../code-quality/codesnippet/CSharp/ca2120-secure-serialization-constructors_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237: Markieren von ISerializable-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+[CA2237: Markieren von iserialisierbaren Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
 

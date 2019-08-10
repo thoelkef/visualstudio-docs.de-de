@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546530"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922729"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Keine Hartkodierung für gebietsschemaspezifische Zeichenfolgen verwenden.
 
@@ -34,24 +34,24 @@ ms.locfileid: "62546530"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Methode verwendet ein Zeichenfolgenliteral, das Teil des Pfads des bestimmten Systemordner darstellt.
+Eine Methode verwendet ein zeichenfolgenliteralelement, das einen Teil des Pfads bestimmter Systemordner darstellt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die <xref:System.Environment.SpecialFolder?displayProperty=fullName> -Enumeration enthält Elemente, die auf besondere Systemordner verweisen. Die Speicherorte dieser Ordner können unterschiedliche Werte aufweisen, unter verschiedenen Betriebssystemen, der Benutzer kann einige Speicherorte ändern und die Speicherorte sind lokalisiert. Ein Beispiel für einen speziellen Ordner ist der Ordner "System", "C:\WINDOWS\system32" wird auf [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] aber "C:\WINNT\system32" unter [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. Die <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> Methode gibt die Speicherorte zurück, die zugeordnet werden die <xref:System.Environment.SpecialFolder> Enumeration. Die Speicherorte, die von zurückgegeben werden <xref:System.Environment.GetFolderPath%2A> werden lokalisiert und für den derzeit ausgeführten Computer geeignet.
+Die <xref:System.Environment.SpecialFolder?displayProperty=fullName> -Enumeration enthält Elemente, die auf spezielle Systemordner verweisen. Die Speicherorte dieser Ordner können unterschiedlichen Betriebssystemen unterschiedliche Werte aufweisen, der Benutzer kann einige der Standorte ändern, und die Speicherorte werden lokalisiert. Ein Beispiel für einen speziellen Ordner ist der System Ordner, der "c:\Windows\System32" on [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] ist, aber "c:\WINNT\System32" unter. [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)] Die <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> -Methode gibt die Speicherorte zurück, die <xref:System.Environment.SpecialFolder> der-Enumeration zugeordnet sind. Die Speicherorte, die von <xref:System.Environment.GetFolderPath%2A> zurückgegeben werden, sind lokalisiert und für den aktuell laufenden Computer geeignet.
 
- Diese Regel die Ordnerpfade, die mithilfe von abgerufen werden die <xref:System.Environment.GetFolderPath%2A> Methode in separate Verzeichnisebenen. Jeder String-literal wird mit den Token verglichen. Wenn eine Übereinstimmung gefunden wird, wird davon ausgegangen, dass die Methode eine Zeichenfolge erstellt, die auf das Dateisystem-Speicherort verweist, die dem Token zugeordnet ist. Verwenden Sie für Portabilität und Lokalisierbarkeit die <xref:System.Environment.GetFolderPath%2A> Methode, um die Speicherorte der besonderen Systemordner anstelle von Zeichenfolgenliteralen abzurufen.
+Mit dieser Regel werden die Ordner Pfade, die mithilfe der <xref:System.Environment.GetFolderPath%2A> -Methode abgerufen werden, in separate Verzeichnis Ebenen mit Token versehen. Jedes Zeichenfolgenliterale wird mit den Token verglichen. Wenn eine Entsprechung gefunden wird, wird davon ausgegangen, dass die Methode eine Zeichenfolge aufbaut, die auf den System Speicherort verweist, der dem Token zugeordnet ist. Verwenden Sie für Portabilität und Lokalisier <xref:System.Environment.GetFolderPath%2A> barkeit die-Methode, um die Speicherorte der speziellen Systemordner abzurufen, anstatt Zeichen folgen Literale zu verwenden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, rufen Sie den Standort mithilfe der <xref:System.Environment.GetFolderPath%2A> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, rufen Sie den Speicherort <xref:System.Environment.GetFolderPath%2A> mithilfe der-Methode ab.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicherer, die mit dieser Regel eine Warnung zu unterdrücken, wenn das Zeichenfolgenliteral nicht verwendet wird, finden in einem der System-Standorte, die zugeordnet wird die <xref:System.Environment.SpecialFolder> Enumeration.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn das Zeichenfolgenliterale nicht verwendet wird, um auf einen der System <xref:System.Environment.SpecialFolder> Speicherorte zu verweisen, die mit der-Enumeration verknüpft sind.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel erstellt den Pfad des common Data Anwendungsordner, die, der drei Warnungen von dieser Regel generiert. Das Beispiel ruft dann den Pfad ab, mit der <xref:System.Environment.GetFolderPath%2A> Methode.
+Im folgenden Beispiel wird der Pfad des Ordners für allgemeine Anwendungsdaten erstellt, der drei Warnungen aus dieser Regel generiert. Im folgenden Beispiel wird der Pfad mithilfe der <xref:System.Environment.GetFolderPath%2A> -Methode abgerufen.
 
- [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
+[!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
+[!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1303: Literale nicht als lokalisierte Parameter übergeben](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+[CA1303: Literale nicht als lokalisierte Parameter übergeben](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

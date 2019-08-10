@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 648c59e2660c0509edfcf65ac50bf8791bc5896e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6bc88d3932baa5bbb4a723d7a16509831d58146
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779431"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923090"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Assemblys mit ComVisibleAttribute markieren.
 
@@ -35,23 +35,23 @@ ms.locfileid: "62779431"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Assembly verfügt nicht über die <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> angewendet werden.
+Auf eine Assembly wird das <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> -Attribut nicht angewendet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut bestimmt, wie COM-Clients für verwalteten Code zugreifen. Gute Entwurfsprinzipien verlangen, dass die COM-Sichtbarkeit durch Assemblys explizit angegeben wird. COM-Sichtbarkeit für eine gesamte Assembly festgelegt, und klicken Sie dann für einzelne Typen und Typmember überschrieben werden kann. Wenn das Attribut nicht vorhanden ist, sind die Inhalte der Assembly für COM-Clients sichtbar.
+Das <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attribut bestimmt, wie com-Clients auf verwalteten Code zugreifen. Gute Entwurfsprinzipien verlangen, dass die COM-Sichtbarkeit durch Assemblys explizit angegeben wird. Die COM-Sichtbarkeit kann für eine gesamte Assembly festgelegt und dann für einzelne Typen und Typmember überschrieben werden. Wenn das Attribut nicht vorhanden ist, ist der Inhalt der Assembly für com-Clients sichtbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie das Attribut auf die Assembly ein. Wenn Sie nicht, dass die Assembly für COM-Clients sichtbar ist möchten, wenden Sie das Attribut, und setzen ihren Wert auf `false`.
+Fügen Sie der Assembly das-Attribut hinzu, um einen Verstoß gegen diese Regel zu beheben. Wenn Sie nicht möchten, dass die Assembly für com-Clients sichtbar ist, wenden Sie das-Attribut an, `false`und legen Sie dessen Wert auf fest.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel. Wenn Sie die Assembly sichtbar sein soll, wenden Sie das Attribut, und setzen ihren Wert auf `true`.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel. Wenn Sie möchten, dass die Assembly sichtbar ist, wenden Sie das-Attribut an, `true`und legen Sie dessen Wert auf fest.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Assembly, die <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut angewendet, um zu verhindern, dass es für COM-Clients nicht angezeigt werden.
+Das folgende Beispiel zeigt eine Assembly, für die <xref:System.Runtime.InteropServices.ComVisibleAttribute> das-Attribut angewendet wurde, um zu verhindern, dass Sie für com-Clients sichtbar ist.
 
- [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
- [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
+[!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
+[!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
+[!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
 

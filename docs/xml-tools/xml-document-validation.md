@@ -1,5 +1,5 @@
 ---
-title: Validierung von XML-Dokumenten in XML-editor
+title: XML-Dokument Validierung im XML-Editor
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 13574a13aecf7edbc9627e7b8288689206f278c2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807717"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926699"
 ---
 # <a name="xml-document-validation"></a>Validierung von XML-Dokumenten
 
-Der XML-Editor überprüft XML 1.0-Syntax und führt auch die datenvalidierung während der Eingabe. Die Validierung wird vom Editor mithilfe einer DTD (Document Type Definition) oder eines Schemas vorgenommen. Durch rote wellenförmige Unterstreichungen werden Wohlgeformtheits-Fehler in XML 1.0 hervorgehoben. Blaue Wellenlinien weisen auf semantische Fehler in Abhängigkeit von der DTD- oder Schemavalidierung hin. Jedem Fehler ist ein Eintrag in der Fehlerliste zugeordnet. Sie können die Fehlermeldung auch anzeigen, indem Sie mit der Maus auf die Wellenlinie zeigen.
+Der XML-Editor überprüft die Syntax von XML 1,0 und führt während der Typvalidierung auch eine Datenüberprüfung durch. Die Validierung wird vom Editor mithilfe einer DTD (Document Type Definition) oder eines Schemas vorgenommen. Durch rote wellenförmige Unterstreichungen werden Wohlgeformtheits-Fehler in XML 1.0 hervorgehoben. Blaue Wellenlinien weisen auf semantische Fehler in Abhängigkeit von der DTD- oder Schemavalidierung hin. Jedem Fehler ist ein Eintrag in der Fehlerliste zugeordnet. Sie können die Fehlermeldung auch anzeigen, indem Sie mit der Maus auf die Wellenlinie zeigen.
 
- Die bei der Validierung verwendeten Schemata werden durch Abgleichen des `targetNamespace` eines kompilierten Schemas mit der xmlns-Deklaration des Elements gefunden. Kompilierte Schemata werden von einem der folgenden Speicherorte geladen, die entsprechend ihrer Priorität aufgelistet sind:
+Die bei der Validierung verwendeten Schemata werden durch Abgleichen des `targetNamespace` eines kompilierten Schemas mit der xmlns-Deklaration des Elements gefunden. Kompilierte Schemata werden von einem der folgenden Speicherorte geladen, die entsprechend ihrer Priorität aufgelistet sind:
 
-- Vom Dateinamen angegeben, der **Schemas** Feld des Dokuments **Eigenschaften** Fenster.
+- Aus dem Dateinamen, der im Feld **Schemas** des Fensters Dokument **Eigenschaften** angegeben ist.
 
 - Aus einem Inlineschema oder einer DTD.
 
@@ -38,11 +38,11 @@ Schemata können auch an den folgenden zusätzlichen Speicherorten gefunden werd
 - In einem Schema im Verzeichnis des Schemacache.
 
 ## <a name="xslt-files"></a>XSLT-Dateien
- Beim Bearbeiten einer XSLT-Datei, die *xslt.xsd* Datei im Schemacache für die Validierung verwendet wird. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Fehler aus dem XXLT-Compiler werden als rote wellenförmige Unterstreichungen angezeigt.
+Wenn Sie eine XSLT-Datei bearbeiten, wird die *XSLT. xsd* -Datei, die sich im Schema Cache befindet, für die Validierung verwendet. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Fehler aus dem XXLT-Compiler werden als rote wellenförmige Unterstreichungen angezeigt.
 
-## <a name="xml-schema-xsd-files"></a>XML-Schemadateien (XSD)
- Beim Bearbeiten von XML-Schemadatei, die *xsdschema.xsd* Datei im Schemacache für die Validierung verwendet wird. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Alle Kompilierungsfehler werden als rote wellenförmige Unterstreichungen angezeigt.
+## <a name="xml-schema-xsd-files"></a>XML-Schema Dateien (XSD)
+Beim Bearbeiten einer XML-Schema Datei wird die im Schema Cache befindliche *xsdschema. xsd* -Datei für die Validierung verwendet. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Alle Kompilierungsfehler werden als rote wellenförmige Unterstreichungen angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-editor](../xml-tools/xml-editor.md)
+- [XML-Editor](../xml-tools/xml-editor.md)

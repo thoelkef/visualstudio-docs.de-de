@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7b1610d07e5e38632056df237d284b40b6f101c6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744689"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922903"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Allgemeine Ausnahmetypen nicht auffangen.
 
@@ -35,26 +35,26 @@ ms.locfileid: "66744689"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine allgemeine Ausnahme wie z. B. <xref:System.Exception?displayProperty=fullName> oder <xref:System.SystemException?displayProperty=fullName> in abgefangen eine `catch` -Anweisung oder eine allgemeine Catch-Klausel, z. B. `catch()` verwendet wird.
+Eine <xref:System.Exception?displayProperty=fullName> allgemeine Ausnahme <xref:System.SystemException?displayProperty=fullName> ,z`catch` . b. oder, wird in einer-Anweisung abgefangen, oder eswirdeineallgemeinecatch-Klauselwieverwendet.`catch()`
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Allgemeine Ausnahmen sollten nicht abgefangen werden.
+Allgemeine Ausnahmen sollten nicht abgefangen werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, eine spezifischere Ausnahme abfangen und erneut auslösen, die allgemeine Ausnahme der letzten Anweisung in der `catch` Block.
+Um einen Verstoß gegen diese Regel zu beheben, fangen Sie eine spezifischere Ausnahme ab, oder lösen Sie die allgemeine Ausnahme erneut als letzte `catch` Anweisung im-Block aus.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel. Allgemeine Ausnahmetypen abfangen können blenden Sie aus, von dem Benutzer einer Bibliothek Probleme zur Laufzeit und können Sie das Debuggen erschwert.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel. Durch das Abfangen allgemeiner Ausnahme Typen können Lauf Zeit Probleme beim Bibliotheks Benutzer ausgeblendet und das Debugging erschwert werden.
 
 > [!NOTE]
-> Ab .NET Framework 4, bietet die common Language Runtime (CLR) nicht mehr hervorgerufenen Ausnahmen, die auftreten, in das Betriebssystem und verwalteten Code, z. B.-zugriffsverletzungen in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], um die von verwaltetem Code behandelt werden. Wenn Sie die Kompilierung einer Anwendung in .NET Framework 4 oder höher möchten und Behandlung von Beschädigungen hervorgerufenen Ausnahmen beibehalten, können Sie übernehmen die <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> -Attribut auf die Methode, die die Ausnahme zu beschädigtem Zustand behandelt.
+> Ab .NET Framework 4 werden von der Common Language Runtime (CLR) keine beschädigten Zustands Ausnahmen mehr bereitstellt, die im Betriebssystem auftreten, und verwalteter Code, z. b [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]. Zugriffs Verletzungen in, der von verwaltetem Code behandelt werden soll. Wenn Sie eine Anwendung in der .NET Framework 4 oder einer höheren Version kompilieren und die Behandlung von beschädigten Zustands Ausnahmen beibehalten möchten, können Sie das <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> -Attribut auf die Methode anwenden, die die Corrupted State Exception behandelt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt ein Typ, die gegen diese Regel verstößt und ein Typ, der ordnungsgemäß implementiert die `catch` Block.
+Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt, und einen Typ, `catch` der den-Block ordnungsgemäß implementiert.
 
- [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
- [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
- [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
+[!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
+[!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
+[!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2200: Erneut ausführen Sie, um Stapeldetails beizubehalten](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
+[CA2200: Erneut auslösen, um Stapel Details beizubehalten](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)

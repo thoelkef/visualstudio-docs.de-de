@@ -1,5 +1,5 @@
 ---
-title: VSTextView-Objekt | Microsoft-Dokumentation
+title: Vstextview-Objekt | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eddd5640b2f8f073f791f6bdb4dc006f8fab0e36
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5d3983dcefd515a43d573166c9bd772fd23bf0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322812"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924158"
 ---
-# <a name="vstextview-object"></a>VSTextView-Objekt
-Die Textansicht ist ein Fenster, das ermöglicht Benutzern das Anzeigen und bearbeiten den Unicode-Text des Textpuffers. Im Wesentlichen ist die Ansicht, was die meisten Benutzer als Editor bezeichnet. Da die Ansicht aus dem Puffer von verschiedenen Textebenen (Zeilenumbruch, Gliederung, Text usw.) getrennt ist, wird die Sicht nicht garantiert eine genaue Darstellung des Texts im Puffer. Weitere Informationen zu der Textansicht, finden Sie unter [zugreifen auf TheText Ansicht mit der legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+# <a name="vstextview-object"></a>Vstextview-Objekt
+Die Textansicht ist ein Fenster, in dem Benutzer den Unicode-Text des Text Puffers anzeigen und bearbeiten können. Im Wesentlichen ist die Sicht, auf die die meisten Benutzer als Editor verweisen. Da die Ansicht durch verschiedene Textebenen (Zeilenumbruch, Gliederung von Text usw.) vom Puffer getrennt ist, ist die Sicht nicht garantiert eine exakte Darstellung des Texts im Puffer. Weitere Informationen zur Textansicht finden Sie unter Zugreifen auf die [Textansicht mithilfe der Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md).
 
- Die folgende Tabelle zeigt die Schnittstellen der <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> Objekt.
+ In der folgenden Tabelle werden die Schnittstellen <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> im-Objekt angezeigt.
 
 |Interface|Beschreibung|
 |---------------|-----------------|
@@ -31,13 +31,13 @@ Die Textansicht ist ein Fenster, das ermöglicht Benutzern das Anzeigen und bear
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|Standard-OLE-Schnittstelle.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Standard-OLE-Schnittstelle.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Standard-OLE-Schnittstelle.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Ermöglicht die Erstellung von verbundaktionen (d. h. Aktionen, die in einer einzelnen Rückgängig-/Wiederholen-Einheit gruppiert sind).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Stellt die grundlegende Methoden für die Verwaltung und den Zugriff auf die Ansicht bereit. `IVsTextView` ist nicht sicher Thread.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Ermöglicht die Erstellung von Verbund Aktionen (d. h. Aktionen, die in einer einzelnen Rückgängig/Wiederholen-Einheit gruppiert sind).|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Stellt die grundlegenden Methoden zum Verwalten von und Zugreifen auf die Ansicht bereit. `IVsTextView`ist nicht Thread sicher.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Erstellt und verwaltet einen Fensterbereich.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Interaktion mit Textebenen.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Führt Vorgänge für die Sicht von einem anderen Thread.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Interagiert mit Textebenen.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Führt Vorgänge für die Ansicht aus einem anderen Thread aus.|
 
 ## <a name="see-also"></a>Siehe auch
 - [Abbildungen bearbeiten](https://www.microsoft.com/download/details.aspx?id=55984)
-- [VSTextBuffer-Objekt](../extensibility/vstextbuffer-object.md)
-- [Zugreifen auf TheText Ansicht mit der legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+- [Vstextbuffer-Objekt](../extensibility/vstextbuffer-object.md)
+- [Zugreifen auf die Textansicht mithilfe der Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542336"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920823"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Methoden mit Linkaufrufen nicht indirekt verfügbar machen.
 
@@ -31,26 +31,26 @@ ms.locfileid: "62542336"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Member wurde ein [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands) und wird aufgerufen, indem Sie ein Element, das keine sicherheitsüberprüfungen ausführt.
+Ein öffentliches oder geschütztes Mitglied hat einen [Link](/dotnet/framework/misc/link-demands) und wird von einem Member aufgerufen, der keine Sicherheitsüberprüfungen ausführt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Linkaufruf überprüft nur die Berechtigungen des unmittelbaren Aufrufers. Wenn ein Member `X` macht keine sicherheitsanforderungen der Aufrufer Code geschützt durch einen Linkaufruf, einen Aufrufer ohne die erforderliche Berechtigung verwenden, kann Aufrufe `X` auf den geschützten Member zuzugreifen.
+Ein Linkaufruf überprüft nur die Berechtigungen des unmittelbaren Aufrufers. Wenn ein Member `X` keine Sicherheitsanforderungen seiner Aufrufer erfüllt und Code aufruft, der durch einen Link Aufruf geschützt ist, kann ein Aufrufer `X` ohne die erforderliche Berechtigung für den Zugriff auf den geschützten Member verwenden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Fügen Sie einen [Daten und Modellierung](/dotnet/framework/data/index) oder bei Bedarf in das Element verknüpfen, sodass es nicht mehr ungesicherten Zugriff auf den Link bei Bedarf geschützte Member bereitstellt.
+Fügen Sie dem-Element eine Sicherheits [Daten-und Modellierungs-](/dotnet/framework/data/index) oder Verknüpfungs Anforderung hinzu, damit kein unsicherer Zugriff mehr auf den Member mit Link Bedarf geschützt wird.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Um problemlos eine Warnung dieser Regel zu unterdrücken, müssen Sie sicherstellen, dass Ihr Code seinen Aufrufern keinen Zugriff auf Vorgänge oder Ressourcen, die auf schädigende Weise verwendet werden können.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Um eine Warnung aus dieser Regel sicher zu unterdrücken, müssen Sie sicherstellen, dass Ihr Code den Aufrufern nicht den Zugriff auf Vorgänge oder Ressourcen gewährt, die auf zerstörerische Weise verwendet werden können.
 
 ## <a name="example-1"></a>Beispiel 1
- Die folgenden Beispiele zeigen eine Bibliothek, die gegen die Regel verstößt und eine Anwendung, die die Bibliothek aufzeigt. Die Beispielbibliothek bietet zwei Methoden, die zusammen die Regel verletzen. Die `EnvironmentSetting` Methode wird durch einen Linkaufruf für einen uneingeschränkten Zugriff auf Umgebungsvariablen geschützt. Die `DomainInformation` Methode macht keine sicherheitsanforderungen Aufrufer vor `EnvironmentSetting`.
+Die folgenden Beispiele zeigen eine Bibliothek, die gegen die Regel verstößt, und eine Anwendung, die die Schwachstellen der Bibliothek veranschaulicht. Die Beispiel Bibliothek stellt zwei Methoden bereit, die gegen die Regel verstoßen. Die `EnvironmentSetting` -Methode wird durch einen Link Aufruf für den uneingeschränkten Zugriff auf Umgebungsvariablen gesichert. Die `DomainInformation` -Methode stellt keine Sicherheitsanforderungen Ihrer Aufrufer her `EnvironmentSetting`, bevor Sie aufruft.
 
- [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
+[!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
 ## <a name="example-2"></a>Beispiel 2
- Die folgende Anwendung ruft die ungeschützten Bibliothekmembers.
+Die folgende Anwendung ruft den nicht geschützten Bibliotheks Member auf.
 
- [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
+[!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
 Dieses Beispiel erzeugt die folgende Ausgabe:
 
@@ -61,5 +61,5 @@ Dieses Beispiel erzeugt die folgende Ausgabe:
 ## <a name="see-also"></a>Siehe auch
 
 - [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)
-- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)
+- [Link Aufrufe](/dotnet/framework/misc/link-demands)
 - [Daten und Modellierung](/dotnet/framework/data/index)

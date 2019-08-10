@@ -13,25 +13,25 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c7adb310db9eece1d8d4a2881057cc1acde1062
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825226"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923817"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Angeben, wann und wo eine Anmerkung gültig ist
-Wenn eine Anmerkung bedingte ist, kann es andere Anmerkungen an, die an die Analyse erforderlich.  Beispielsweise verfügt eine Funktion eine Variable, die entweder synchron oder asynchron sein kann, verhält sich die Funktion wie folgt: In den synchronen Fall immer schließlich erfolgreich ist, aber bei asynchronen Vorgängen einen Fehler gemeldet, wenn er sofort nicht ordnungsgemäß ausgeführt werden. Wenn die Funktion synchron aufgerufen wird, bietet das Überprüfen des Ergebniswerts kein Wert, der Code-Analyzer, da er würde nicht zurückgegeben haben.  Wenn die Funktion wird asynchron aufgerufen, und das Ergebnis der Funktion nicht aktiviert ist, kann jedoch ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in dem Sie mithilfe, der `_When_` Anmerkung – weiter unten in diesem Artikel beschriebenen – zu aktivieren.
+Wenn eine Anmerkung bedingt ist, sind möglicherweise andere Anmerkungen erforderlich, um dies für den Analyzer anzugeben.  Wenn eine Funktion z. b. eine Variable aufweist, die entweder synchron oder asynchron sein kann, verhält sich die Funktion wie folgt: Im synchronen Fall ist Sie immer schließlich erfolgreich, aber im asynchronen Fall meldet Sie einen Fehler, wenn Sie nicht sofort ausgeführt werden kann. Wenn die Funktion synchron aufgerufen wird, stellt die Überprüfung des Ergebnis Werts keinen Wert für den Code Analyse Wert dar, da er nicht zurückgegeben hätte.  Wenn die Funktion jedoch asynchron aufgerufen wird und das Ergebnis der Funktion nicht aktiviert ist, kann ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in der Sie die- `_When_` Anmerkung – weiter unten in diesem Artikel – zum Aktivieren der Überprüfung verwenden können.
 
 ## <a name="structural-annotations"></a>Strukturelle Anmerkungen
- Um zu steuern, wann und wo Anmerkungen gelten, verwenden Sie die folgenden strukturellen Anmerkungen.
+Verwenden Sie die folgenden strukturellen Anmerkungen, um zu steuern, wann und wo Anmerkungen angewendet werden.
 
 |Anmerkung|Beschreibung|
 |----------------|-----------------|
-|`_At_(expr, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen im `anno-list` gelten für das Objekt, das von dem Namen `expr`. Für jede Anmerkung in `anno-list`, `expr` wird im Voraussetzung interpretiert, wenn die Anmerkung wird im Voraussetzung interpretiert, und in nachbedingung, wenn die Anmerkung wird in der nachbedingung interpretiert.|
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` ist ein Ausdruck, der einen l-Wert ergibt. Die Anmerkungen im `anno-list` gelten für das Objekt, das von dem Namen `expr`. Für jede Anmerkung in `anno-list`, `expr` wird im Voraussetzung interpretiert, wenn die Anmerkung in Vorbedingung, und in nachbedingung Wenn die Anmerkung in der nachbedingung interpretiert wird.<br /><br /> `iter` Der Name einer Variablen, die für die Anmerkung bezieht (schließt `anno-list`). `iter` verfügt über einen impliziten Typ `long`. Auswertung werden gleichnamige Variablen in einem beliebigen einschließenden Bereich ausgeblendet.<br /><br /> `elem-count` ist ein Ausdruck, der eine ganze Zahl ergibt.|
-|`_Group_(anno-list)`|Die Anmerkungen im `anno-list` gelten alle über alle Qualifizierer verfügen, die für die Gruppe-Anmerkung gilt, die für jede Anmerkung gilt.|
-|`_When_(expr, anno-list)`|`expr` ist ein Ausdruck, der zu konvertierenden `bool`. Wenn es sich um einen Wert ungleich (`true`), die Anmerkungen, die im angegebenen `anno-list` als anwendbar betrachtet werden.<br /><br /> Standardmäßig wird für jede Anmerkung in `anno-list`, `expr` wie die Verwendung der Eingabewerten aus, wenn die Anmerkung eine Vorbedingung ist, und wie die Ausgabewerte zu verwenden, wenn die Anmerkung eine nachbedingung ist interpretiert wird. Um die Standardeinstellung zu überschreiben, können Sie die `_Old_` systeminterne beim Auswerten einer nachbedingung, um anzugeben, dass der Eingabewerten verwendet werden soll. **Hinweis**:  Andere Anmerkungen können aktiviert werden, daher mit `_When_` bei dem Wert des änderbar, z. B. `*pLength`– ist erforderlich, da ausgewerteten Ergebnisses des `expr` in Vorbedingung weicht möglicherweise von ausgewerteten Ergebnis nach der Bedingung.|
+|`_At_(expr, anno-list)`|`expr`ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list` `expr` wird in der Vorbedingung interpretiert, wenn die Anmerkung in der Vorbedingung interpretiert wird, und in der Post Bedingung, wenn die Anmerkung in der Post-Bedingung interpretiert wird.|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr`ein Ausdruck, der einen lvalue ergibt. Die Anmerkungen in `anno-list` werden auf das Objekt angewendet, das von `expr`benannt wird. Für jede Anmerkung in `anno-list` `expr` wird in der Vorbedingung interpretiert, wenn die Anmerkung in der Vorbedingung interpretiert wird, und in der Post-Bedingung, wenn die Anmerkung in der nach Bedingung interpretiert wird.<br /><br /> `iter`der Name einer Variablen, die auf die Anmerkung (einschließlich `anno-list`) beschränkt ist. `iter`weist einen impliziten Typ `long`auf. Identisch benannte Variablen in jedem einschließenden Bereich werden aus der Auswertung ausgeblendet.<br /><br /> `elem-count`ein Ausdruck, der eine ganze Zahl ergibt.|
+|`_Group_(anno-list)`|Die Anmerkungen in `anno-list` werden alle als Qualifizierer betrachtet, die für die Gruppen Anmerkung gelten, die auf jede Anmerkung angewendet wird.|
+|`_When_(expr, anno-list)`|`expr`ein Ausdruck, der in `bool`konvertiert werden kann. Wenn der Wert ungleich 0 (`true`null) ist, gelten die Anmerkungen, die in `anno-list` angegeben sind, als anwendbar.<br /><br /> Standardmäßig `anno-list` `expr` wird für jede Anmerkung in als Verwendung der Eingabewerte interpretiert, wenn die Anmerkung eine Vorbedingung ist, und als die Ausgabewerte verwendet werden, wenn die Anmerkung eine nach Bedingung ist. Um die Standardeinstellung zu überschreiben, können `_Old_` Sie die systeminterne Funktion verwenden, wenn Sie eine nach Bedingung auswerten, um anzugeben, dass die Eingabewerte verwendet werden sollen. **Hinweis**:  Verschiedene Anmerkungen können als Folge der Verwendung `_When_` von aktiviert werden, wenn ein änderbarer Wert – beispielsweise – beteiligt ist, `*pLength`da das ausgewertete Ergebnis `expr` von in Vorbedingung möglicherweise von dem ausgewerteten Ergebnis in der nach Bedingung abweicht.|
 
 ## <a name="see-also"></a>Siehe auch
 

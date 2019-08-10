@@ -11,55 +11,55 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570078"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925704"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
-Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus wie Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. Befolgen Sie in diesem Thema, können Sie den Umgang mit einer Datenbank in eine einfache Windows Forms "Forms over Data"-Anwendung mit Visual c# oder Visual Basic und ADO.NET ermitteln.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.
+Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus wie Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. In diesem Thema erfahren Sie, wie Sie über eine einfache Windows Forms "Forms over Data"-Anwendung mit einer Datenbank interagieren, indem Sie Visual C# oder Visual Basic und ADO.NET verwenden.  Alle .NET-Daten Technologien – einschließlich Datasets, LINQ to SQL und Entity Framework – führen letztendlich Schritte aus, die den in diesem Artikel gezeigten ähneln.
 
-Dieser Artikel veranschaulicht eine einfache Möglichkeit zum Abrufen von Daten aus der Datenbank auf schnelle Weise. Wenn Ihre Anwendung muss Daten auf nicht trivialen Weise ändern und die Datenbank zu aktualisieren, sollten Sie sich mithilfe von Entity Framework und mithilfe der Datenbindung an um Steuerelemente der Benutzeroberfläche auf Änderungen in den zugrunde liegenden Daten automatisch zu synchronisieren.
+Dieser Artikel veranschaulicht eine einfache Methode, um Daten aus einer Datenbank schnell zu erhalten. Wenn Ihre Anwendung Daten auf nicht triviale Weise ändern und die Datenbank aktualisieren muss, sollten Sie die Verwendung von Entity Framework und die Verwendung der Datenbindung in Erwägung gezogen, um die Benutzeroberflächen-Steuerelemente automatisch mit Änderungen in den zugrunde liegenden Daten zu synchronisieren.
 
 > [!IMPORTANT]
 > Der Code enthält keine produktionsbereite Ausnahmebehandlung, um ihn einfach zu halten.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zum Erstellen der Anwendung benötigen Sie:
 
 - Visual Studio.
 
-- SQL Server Express LocalDB. Wenn Sie SQL Server Express LocalDB nicht haben, können Sie installieren, von der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- SQL Server Express LocalDB. Wenn Sie nicht über SQL Server Express localdb verfügen, können Sie es über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)installieren.
 
-In diesem Thema wird davon ausgegangen, dass Sie mit den grundlegenden Funktionen von Visual Studio-IDE vertraut, und eine Windows Forms-Anwendung erstellen, hinzufügen, dass das Projekt, und fügen Schaltflächen und andere Steuerelemente auf die Formulare, Formulare Eigenschaften der Steuerelemente und einfache Ereignisse programmieren festgelegt. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual c# und Visual Basic](../ide/quickstart-visual-basic-console.md) Thema, bevor Sie in dieser exemplarischen Vorgehensweise beginnen.
+In diesem Thema wird davon ausgegangen, dass Sie mit der grundlegenden Funktionalität der Visual Studio-IDE vertraut sind und eine Windows Forms Anwendung erstellen, dem Projekt Formulare hinzufügen, Schaltflächen und andere Steuerelemente in den Formularen einfügen, Eigenschaften der Steuerelemente festlegen und einfache Ereignisse programmieren können. Wenn Sie mit diesen Aufgaben nicht vertraut sind, empfehlen wir Ihnen, das Thema erste Schritte [mit C# Visual und Visual Basic](../ide/quickstart-visual-basic-console.md) abzuschließen, bevor Sie mit dieser exemplarischen Vorgehensweise beginnen.
 
 ## <a name="set-up-the-sample-database"></a>Die Beispieldatenbank einrichten
 
-Erstellen der Beispieldatenbank mit folgenden Schritten:
+Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen:
 
-1. Öffnen Sie in Visual Studio die **Server-Explorer** Fenster.
+1. Öffnen Sie in Visual Studio das Fenster **Server-Explorer** .
 
-2. Mit der rechten Maustaste auf **Datenverbindungen** , und wählen Sie **neue SQL Server-Datenbank erstellen**.
+2. Klicken Sie mit der rechten Maustaste auf **Datenverbindungen** , und wählen Sie **neue SQL Server Datenbank erstellen**aus.
 
-3. In der **Servernamen** Text geben **(Localdb) \mssqllocaldb**.
+3. Geben Sie im Textfeld **Server Name den Namen** **(localdb) \mssqllocaldb**ein.
 
-4. In der **neuen Datenbanknamen** Text geben **Sales**, wählen Sie dann **OK**.
+4. Geben Sie im Textfeld **Neuer Datenbankname den Namen** **Sales**ein, und klicken Sie dann auf **OK**.
 
-     Die leere **Sales** Datenbank erstellt und der Knoten "Datenverbindungen" im Server-Explorer hinzugefügt wird.
+     Die leere **Sales** -Datenbank wird erstellt und dem Knoten Datenverbindungen in Server-Explorer hinzugefügt.
 
-5. Mit der rechten Maustaste auf die **Sales** Datenverbindung, und wählen **neue Abfrage**.
+5. Klicken Sie mit der rechten Maustaste auf die **Verkaufs** Datenverbindung, und wählen Sie **neue Abfrage**aus.
 
      Ein Abfrage-Editor-Fenster wird geöffnet.
 
-6. Kopieren der [Sales Transact-SQL-Skript](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) in die Zwischenablage.
+6. Kopieren Sie das [Sales Transact-SQL-Skript](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) in die Zwischenablage.
 
-7. Fügen Sie das T-SQL-Skript im Abfrage-Editor, und wählen Sie dann die **Execute** Schaltfläche.
+7. Fügen Sie das T-SQL-Skript in den Abfrage-Editor ein, und klicken Sie dann auf die Schaltfläche **Ausführen** .
 
-     Nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Datenbankobjekte erstellt werden. Die Datenbank enthält zwei Tabellen: Kunden und Bestellungen. Diese Tabellen enthalten Anfangs keine Daten, aber Sie können Daten hinzufügen, wenn Sie die Anwendung ausführen, die Sie erstellen. Die Datenbank enthält auch vier einfache gespeicherte Prozeduren.
+     Nach kurzer Zeit wird die Ausführung der Abfrage beendet, und die Datenbankobjekte werden erstellt. Die-Datenbank enthält zwei Tabellen: Kunde und Bestellungen. Diese Tabellen enthalten anfänglich keine Daten, aber Sie können beim Ausführen der Anwendung, die Sie erstellen, Daten hinzufügen. Die Datenbank enthält außerdem vier einfache gespeicherte Prozeduren.
 
 ## <a name="create-the-forms-and-add-controls"></a>Die Formulare erstellen und Steuerelemente hinzufügen
 
@@ -90,9 +90,9 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 |Schaltfläche|Name = btnGoToFillOrCancel|
 |Schaltfläche|Name = btnExit|
 
- **NewCustomer-Formular**
+**NewCustomer-Formular**
 
- ![Neuen Kunden hinzufügen und eine Bestellung aufgeben](../data-tools/media/simpleappnewcust.png)
+![Neuen Kunden hinzufügen und eine Bestellung aufgeben](../data-tools/media/simpleappnewcust.png)
 
 |Steuerelemente für das NewCustomer-Formular|Eigenschaften|
 | - |----------------|
@@ -105,9 +105,9 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 |Schaltfläche|Name = btnAddAnotherAccount|
 |Schaltfläche|Name = btnAddFinish|
 
- **FillOrCancel-Formular**
+**FillOrCancel-Formular**
 
- ![Bestellungen erfüllen oder widerrufen](../data-tools/media/simpleappcancelfill.png)
+![Bestellungen erfüllen oder widerrufen](../data-tools/media/simpleappcancelfill.png)
 
 |Steuerelemente für das FillOrCancel-Formular|Eigenschaften|
 | - |----------------|
@@ -120,27 +120,27 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 |Schaltfläche|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Die Verbindungszeichenfolge speichern
- Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Um zu vermeiden, die Zeichenfolge in jedem Formular manuell einzugeben, speichern Sie die Zeichenfolge in die *"App.config"* -Datei in Ihrem Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode über ein beliebiges Formular in Ihrer Anwendung aufgerufen wird.
+Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Speichern Sie die Zeichenfolge in der Datei " *app. config* " in Ihrem Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode von einem beliebigen Formular in der Anwendung aufgerufen wird, um zu vermeiden, dass Sie die Zeichenfolge manuell eingeben.
 
- Sie finden die Verbindungszeichenfolge, indem Sie mit der rechten Maustaste auf die **Sales** Datenverbindung in **Server-Explorer** und **Eigenschaften**. Suchen Sie die **"ConnectionString"** -Eigenschaft verwenden, klicken Sie dann **STRG**+**ein**, **STRG**+**C**  auswählen und kopieren Sie die Zeichenfolge in die Zwischenablage.
+Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG**+**A**, **STRG**+**C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
 
-1. Wenn Sie c# in nutzen **Projektmappen-Explorer**, erweitern Sie die **Eigenschaften** Knoten unter dem Projekt, und öffnen Sie dann die **Settings.settings** Datei.
-    Wenn Sie in Visual Basic verwenden **Projektmappen-Explorer**, klicken Sie auf **alle Dateien anzeigen**, erweitern Sie die **Mein Projekt** Knoten, und öffnen Sie die **Settings.settings** Datei.
+1. C#Wenn Sie verwenden, erweitern Sie in **Projektmappen-Explorer**den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
+    Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer**auf **alle Dateien anzeigen**, erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
 
-2. In der **Namen** Spalte Geben Sie `connString`.
+2. Geben Sie `connString`in der Spalte Name den Namen ein.
 
-3. In der **Typ** Liste **(Verbindungszeichenfolge)**.
+3. Wählen Sie in der Liste **Typ** die Option **(Verbindungs Zeichenfolge)** aus.
 
-4. In der **Bereich** Liste **Anwendung**.
+4. Wählen Sie in der Liste **Bereich den Bereich** **Anwendung**aus.
 
-5. In der **Wert** Spalte Geben Sie Ihre Verbindungszeichenfolge (ohne außerhalb der Anführungszeichen), und speichern Sie Ihre Änderungen.
+5. Geben Sie in der Spalte **Wert** die Verbindungs Zeichenfolge (ohne äußere Anführungszeichen) ein, und speichern Sie die Änderungen.
 
 > [!NOTE]
-> In einer realen Anwendung sollten Sie sicher, wie beschrieben in der Verbindungszeichenfolge speichern [Verbindungszeichenfolgen und Konfigurationsdateien](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
+> In einer realen Anwendung sollten Sie die Verbindungs Zeichenfolge sicher speichern, wie in Verbindungs Zeichenfolgen [und Konfigurationsdateien](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)beschrieben.
 
 ## <a name="write-the-code-for-the-forms"></a>Den Code für die Formulare schreiben
 
-Dieser Abschnitt enthält kurze Übersichten über die Funktionsweise der einzelnen Formulare. Darüber hinaus den Code, der die zugrunde liegende Logik definiert werden, wenn eine Formular auf die Schaltfläche geklickt wird.
+Dieser Abschnitt enthält eine kurze Übersicht über die Funktionsweise der einzelnen Formulare. Außerdem wird der Code bereitstellt, der die zugrunde liegende Logik definiert, wenn auf eine Schaltfläche im Formular geklickt wird.
 
 ### <a name="navigation-form"></a>Navigationsformular
 
@@ -150,32 +150,32 @@ Das Navigationsformular wird geöffnet, wenn Sie die Anwendung ausführen. Die S
 
 Wenn Sie C# verwenden, öffnen Sie **Program.cs** im **Projektmappen-Explorer** und ändern die Zeile `Application.Run` in `Application.Run(new Navigation());`.
 
-Wenn Sie in Visual Basic verwenden **Projektmappen-Explorer**öffnen die **Eigenschaften** wählen Sie im Fenster der **Anwendung** Registerkarte, und wählen Sie dann  **"Simpledataapp.Navigation"** in die **Startformular** Liste.
+Wenn Sie Visual Basic verwenden, öffnen Sie in **Projektmappen-Explorer**das Fenster **Eigenschaften** , wählen Sie die Registerkarte **Anwendung** aus, und wählen Sie dann **simpledataapp. Navigation** in der Liste **Start Formular** aus.
 
-#### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignishandlern
+#### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignis Handlern
 
-Doppelklicken Sie auf die drei Schaltflächen für das Navigationsformular leere Ereignishandlermethoden erstellen. Durch Doppelklicken auf die Schaltflächen fügt automatisch generierten Code auch in der Designer-Codedatei, die einen Klick auf ein Ereignis auslösen kann.
+Doppelklicken Sie auf die drei Schaltflächen im Navigations Formular, um leere Ereignishandlermethoden zu erstellen. Durch Doppelklicken auf die Schaltflächen wird auch automatisch generierter Code in der Designer-Codedatei hinzugefügt, mit dem ein Klick auf eine Schaltfläche ausgelöst werden kann.
 
-#### <a name="add-code-for-the-navigation-form-logic"></a>Fügen Sie Code für die Navigationslogik-Formular hinzu
+#### <a name="add-code-for-the-navigation-form-logic"></a>Hinzufügen von Code für die Navigations Formular Logik
 
-In der Codepage für das Navigationsformular klicken Sie auf vollständige den Text für die Schaltfläche mit den drei Ereignishandler wie im folgenden Code gezeigt.
+Vervollständigen Sie in der Codepage für das Navigations Formular den Methoden Körper für die drei Schaltflächen-Click-Ereignishandler, wie im folgenden Code dargestellt.
 
 [!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]
 [!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]
 
 ### <a name="newcustomer-form"></a>NewCustomer-Formular
 
-Wenn Sie einen Kundennamen eingeben, und wählen Sie dann die **Kontoerstellung** Schaltfläche das NewCustomer-Formular erstellt, ein Kundenkonto und SQL Server gibt einen Identitätswert als neue Kunden-ID zurück. Sie können dann eine Bestellung für das neue Konto setzen, indem Sie eine Menge und ein Bestelldatum angeben und Auswählen der **Bestellung aufgeben** Schaltfläche.
+Wenn Sie einen Kundennamen eingeben und dann auf die Schaltfläche **Konto erstellen** klicken, erstellt das NewCustomer-Formular ein Kundenkonto und SQL Server einen Identitäts Wert als neue Kunden-ID zurück. Sie können dann eine Bestellung für das neue Konto festlegen, indem Sie einen Betrag und ein Bestelldatum angeben und die Schaltfläche **Bestellung platzieren** auswählen.
 
-#### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignishandlern
+#### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignis Handlern
 
-Erstellen Sie einen leeren Click-Ereignishandler für jede Schaltfläche auf das NewCustomer-Formular durch Doppelklicken auf jede der vier Schaltflächen. Durch Doppelklicken auf die Schaltflächen fügt automatisch generierten Code auch in der Designer-Codedatei, die einen Klick auf ein Ereignis auslösen kann.
+Erstellen Sie einen leeren Click-Ereignishandler für jede Schaltfläche im newCustomer-Formular, indem Sie auf jede der vier Schaltflächen doppelklicken. Durch Doppelklicken auf die Schaltflächen wird auch automatisch generierter Code in der Designer-Codedatei hinzugefügt, mit dem ein Klick auf eine Schaltfläche ausgelöst werden kann.
 
-#### <a name="add-code-for-the-newcustomer-form-logic"></a>Fügen Sie Code für die Logik der NewCustomer-Formular hinzu
+#### <a name="add-code-for-the-newcustomer-form-logic"></a>Hinzufügen von Code für die newCustomer-Formular Logik
 
-Gehen Sie folgendermaßen vor, um die Logik der NewCustomer-Formular abzuschließen.
+Führen Sie die folgenden Schritte aus, um die newCustomer-Formular Logik abzuschließen.
 
-1. Schalten Sie die `System.Data.SqlClient` Namespace in den Bereich, damit Sie auf vollständig nicht qualifizierte Namen der Member.
+1. Bringen Sie `System.Data.SqlClient` den Namespace in den Gültigkeitsbereich, sodass Sie die Namen der Member nicht vollständig qualifizieren müssen.
 
      ```csharp
      using System.Data.SqlClient;
@@ -185,29 +185,29 @@ Gehen Sie folgendermaßen vor, um die Logik der NewCustomer-Formular abzuschlie�
      Imports System.Data.SqlClient
      ```
 
-2. Fügen Sie einige Variablen und die Hilfsmethoden der Klasse, wie im folgenden Code gezeigt.
+2. Fügen Sie der-Klasse wie im folgenden Code gezeigt einige Variablen und Hilfsmethoden hinzu.
 
      [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]
      [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]
 
-3. Vollständige klicken Sie auf der der Text für die Schaltfläche "vier"-Ereignishandler wie im folgenden Code gezeigt.
+3. Vervollständigen Sie die Methoden Körper für die vier Schaltflächen-Click-Ereignishandler, wie im folgenden Code dargestellt.
 
      [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]
      [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]
 
 ### <a name="fillorcancel-form"></a>FillOrCancel-Formular
 
-Das FillOrCancel-Formular führt eine Abfrage aus, um einen Auftrag zurückzugeben, wenn Sie eine Auftrags-ID eingeben, und klicken Sie dann auf die **Auftrag suchen** Schaltfläche. Die zurückgegebene Zeile wird in einem schreibgeschützten Datenraster angezeigt. Sie können den Auftrag als abgebrochen (X) kennzeichnen, bei Auswahl der **Auftrag stornieren** Schaltfläche, oder Sie können die Reihenfolge als markieren ausgefüllten (F) bei Auswahl der **Auftrag ausfüllen** Schaltfläche. Bei Auswahl der **Auftrag suchen** Schaltfläche in diesem Fall die aktualisierte Zeile angezeigt.
+Das Formular "fllorcancel" führt eine Abfrage aus, um eine Bestellung zurückzugeben, wenn Sie eine Bestell -ID eingeben, und klicken Sie dann auf die Schaltfläche " Die zurückgegebene Zeile wird in einem schreibgeschützten Datenraster angezeigt. Sie können die Bestellung als abgebrochen (X) markieren, wenn Sie die Schaltfläche **Bestellung abbrechen** auswählen, oder Sie können die Bestellung als ausgefüllt markieren (F), wenn Sie die Schaltfläche Reihen **Folge ausfüllen** auswählen. Wenn Sie die Schaltfläche " **Bestellung suchen** " erneut auswählen, wird die aktualisierte Zeile angezeigt.
 
-#### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignishandlern
+#### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignis Handlern
 
-Erstellen Sie leere-Ereignishandlern für die vier Schaltflächen für das FillOrCancel-Formular durch Doppelklicken auf die Schaltflächen klicken. Durch Doppelklicken auf die Schaltflächen fügt automatisch generierten Code auch in der Designer-Codedatei, die einen Klick auf ein Ereignis auslösen kann.
+Erstellen Sie leere Click-Ereignishandler für die vier Schaltflächen im Formular "fllorcancel", indem Sie auf die Schaltflächen doppelklicken. Durch Doppelklicken auf die Schaltflächen wird auch automatisch generierter Code in der Designer-Codedatei hinzugefügt, mit dem ein Klick auf eine Schaltfläche ausgelöst werden kann.
 
-#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Fügen Sie Code für die Logik der FillOrCancel-Formular hinzu
+#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Hinzufügen von Code für die Formular Logik "fllorcancel"
 
-Um die Logik der FillOrCancel-Formular abgeschlossen haben, gehen Sie wie folgt vor.
+Führen Sie die folgenden Schritte aus, um die Formular Logik von "fllorcancel" abzuschließen.
 
-1. Schalten Sie die folgenden beiden Namespaces in den Bereich, damit Sie nicht die Namen der Elemente vollständig zu qualifizieren.
+1. Bringen Sie die folgenden beiden Namespaces in den Gültigkeitsbereich, damit Sie die Namen ihrer Member nicht vollständig qualifizieren müssen.
 
      ```csharp
      using System.Data.SqlClient;
@@ -219,12 +219,12 @@ Um die Logik der FillOrCancel-Formular abgeschlossen haben, gehen Sie wie folgt 
      Imports System.Text.RegularExpressions
      ```
 
-2. Fügen Sie eine Variable und Hilfsprogramm-Methode der Klasse an, wie im folgenden Code gezeigt.
+2. Fügen Sie der-Klasse wie im folgenden Code gezeigt eine Variable und eine Hilfsmethode hinzu.
 
      [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]
      [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]
 
-3. Vollständige klicken Sie auf der der Text für die Schaltfläche "vier"-Ereignishandler wie im folgenden Code gezeigt.
+3. Vervollständigen Sie die Methoden Körper für die vier Schaltflächen-Click-Ereignishandler, wie im folgenden Code dargestellt.
 
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]

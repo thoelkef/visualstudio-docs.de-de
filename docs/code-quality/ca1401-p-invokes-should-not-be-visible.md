@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 037f629a205c7af24509b8ca2e409683d1f085ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546361"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922133"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invokes dürfen nicht sichtbar sein.
 
@@ -34,19 +34,19 @@ ms.locfileid: "62546361"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte Methode in einem öffentlichen Typ hat die <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> Attribut (auch durch implementiert die `Declare` -Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Eine öffentliche oder geschützte Methode in einem öffentlichen Typ weist das <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> -Attribut auf (auch durch `Declare` das- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Schlüsselwort implementiert).
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Mit markierte Methoden der <xref:System.Runtime.InteropServices.DllImportAttribute> Attribut (oder mithilfe von definierten Methoden den `Declare` -Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Platform Invocation Services den Zugriff auf nicht verwalteten Code verwenden. Solche Methoden sollten nicht verfügbar gemacht werden. Halten diese Methoden, private oder interne, stellen Sie sicher, dass die Bibliothek verwendet werden kann, um Sicherheitsrichtlinien zu umgehen, dass der Aufrufer den Zugriff auf nicht verwalteten APIs, die sie andernfalls nicht aufrufen konnte.
+Methoden, die mit dem- <xref:System.Runtime.InteropServices.DllImportAttribute> Attribut markiert sind (oder Methoden, die mit dem `Declare` -Schlüssel [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Wort in definiert werden), verwenden Platt Form Aufruf Dienste für den Zugriff auf nicht verwalteten Code. Solche Methoden sollten nicht verfügbar gemacht werden. Wenn Sie diese Methoden als privat oder intern aufbewahren, stellen Sie sicher, dass die Bibliothek nicht zum verletzen der Sicherheit verwendet werden kann, indem Sie Aufrufern Zugriff auf nicht verwaltete APIs gewähren, die nicht anderweitig aufgerufen werden konnten.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zugriffsebene der Methode.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zugriffsebene der Methode.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel deklariert eine Methode, die gegen diese Regel verstößt.
+Im folgenden Beispiel wird eine Methode deklariert, die gegen diese Regel verstößt.
 
- [!code-vb[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/VisualBasic/ca1401-p-invokes-should-not-be-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/CSharp/ca1401-p-invokes-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/VisualBasic/ca1401-p-invokes-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/CSharp/ca1401-p-invokes-should-not-be-visible_1.cs)]

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545699"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921074"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Sichere Bestätigungen.
 
@@ -31,16 +31,16 @@ ms.locfileid: "62545699"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methode bestätigt eine Berechtigung an, und führt keine sicherheitsüberprüfungen für den Aufrufer.
+Eine Methode bestätigt eine Berechtigung und führt keine Sicherheitsüberprüfungen für den Aufrufer aus.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Das Gewähren einer Sicherheitsberechtigung ohne Sicherheitsüberprüfungen durchzuführen, kann ein ausnutzbares Sicherheitsrisiko in Code hinterlassen. Ein Sicherheitsstackwalk wird beendet, wenn eine Sicherheitsberechtigung gewährt wird. Wenn Sie eine Berechtigung ohne jegliche Überprüfung des Aufrufers gewähren, kann der Aufrufer indirekt Code ausführen, mithilfe Ihrer Berechtigungen. Assert-Vorgänge ohne sicherheitsüberprüfungen sind zulässig, wenn Sie sind Sie sicher, dass die Assertion auf schädliche Weise verwendet werden kann. Assert ist harmlos, wenn der Code, den Sie aufrufen, harmlos ist oder wenn Benutzer willkürlichen Informationen an Code übergeben können, die Sie aufrufen.
+Das Gewähren einer Sicherheitsberechtigung ohne Sicherheitsüberprüfungen durchzuführen, kann ein ausnutzbares Sicherheitsrisiko in Code hinterlassen. Ein Sicherheits Stapel-Walk wird beendet, wenn eine Sicherheits Berechtigung bestätigt wird. Wenn Sie eine Berechtigung ohne Überprüfung des Aufrufers bestätigen, könnte der Aufrufer indirekt Code ausführen, indem er ihre Berechtigungen verwendet. Bestätigungen ohne Sicherheitsüberprüfungen sind zulässig, wenn Sie sicher sind, dass Assert nicht schädlich verwendet werden kann. Eine Assert-Bestätigung ist harmlos, wenn der aufzurufende Code harmlos ist oder wenn Benutzer keine willkürlichen Informationen an den von Ihnen aufzurufenden Code übergeben können.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie der Methode oder der deklarierende Typ eine sicherheitsforderung hinzu.
+Um einen Verstoß gegen diese Regel zu beheben, fügen Sie der Methode oder dem deklarierenden Typ eine Sicherheitsanforderung hinzu.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie eine Warnung dieser Regel erst nach einer sorgfältigen sicherheitsreview.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrückt eine Warnung aus dieser Regel erst nach einer sorgfältigen Sicherheitsüberprüfung.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825764"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926817"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-schema
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-Schema
 
-Der XML-Editor verfügt über die Möglichkeit zum Generieren von XML-Ausschnitte aus einem Schema für XML Schema Definition Language (XSD). Beispielsweise, wie Sie eine XML-Datei, während Sie neben dem Elementnamen positioniert erstellen, Sie können drücken **Registerkarte** , füllen Sie das Element mit XML-Daten aus den Schemainformationen für dieses Element generiert.
+Der XML-Editor bietet die Möglichkeit, XML-Ausschnitte aus einem XSD-Schema (XML Schema Definition Language) zu generieren. Wenn Sie z. b. eine XML-Datei erstellen, während Sie neben dem Elementnamen positioniert ist, können Sie die **Tab** -Taste drücken, um das Element mit den XML-Daten aufzufüllen, die aus den Schema Informationen für dieses Element generiert werden.
 
 Diese Funktion ist nur für Elemente verfügbar. Zudem gelten die folgenden Regeln:
 
@@ -43,32 +43,32 @@ Es werden Standardwerte generiert und als Werte gekennzeichnet, die bearbeitet w
 
 ## <a name="example"></a>Beispiel
 
- Die Schritte in diesem Abschnitt veranschaulichen die schemagenerierter XML-Ausschnitt-Funktion von der XML-Editor verwenden.
+Die Schritte in diesem Abschnitt veranschaulichen die Verwendung des Schema generierten XML-Code Ausschnitt Features des XML-Editors.
 
 > [!NOTE]
 > Speichern Sie vor dem Starten dieser Prozeduren die Schemadatei auf dem lokalen Computer.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Erstellen Sie eine neue XML-Datei, und ordnen sie ein XML-schema
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>So erstellen Sie eine neue XML-Datei und ordnen Sie einem XML-Schema zu
 
-1. Auf der **Datei** Startmenü **neu**, und klicken Sie auf **Datei**.
+1. Zeigen Sie im Menü **Datei** auf **neu**, und klicken Sie auf **Datei**.
 
-2. Wählen Sie **XML-Datei** in die **Vorlagen** Bereich, und klicken Sie auf **öffnen**.
+2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Datei** und dann **Öffnen**aus.
 
      Im Editor wird eine neue Datei geöffnet. Die Datei enthält eine XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen ( **...** ) auf die **Schemas** Feld.
+3. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Schemas** auf die Schaltfläche zum Durchsuchen ( **...** ).
 
-     Die **XSD-Schemas** Dialogfeld wird angezeigt.
+     Das Dialogfeld **XSD-Schemas** wird angezeigt.
 
 4. Klicken Sie auf **Hinzufügen**.
 
-     Die **XSD-Schema öffnen** Dialogfeld wird angezeigt.
+     Das Dialogfeld **XSD-Schema öffnen** wird angezeigt.
 
-5. Wählen Sie die Schemadatei aus, und klicken Sie auf **öffnen**.
+5. Wählen Sie die Schema Datei, und klicken Sie auf **Öffnen**.
 
 6. Klicken Sie auf **OK**.
 
-     Das XML-Schema ist jetzt das XML-Dokument zugeordnet.
+     Das XML-Schema ist nun dem XML-Dokument zugeordnet.
 
 ### <a name="to-generate-an-xml-snippet"></a>So generieren Sie einen XML-Ausschnitt
 
@@ -76,23 +76,23 @@ Es werden Standardwerte generiert und als Werte gekennzeichnet, die bearbeitet w
 
 2. In der Memberliste werden die möglichen Elemente angezeigt:
 
-     **!--** zum Hinzufügen eines Kommentars.
+     **!--** , um einen Kommentar hinzuzufügen.
 
-     **! DOCTYPE** zum Hinzufügen eines Dokumenttyps.
+     **! DOCTYPE** zum Hinzufügen eines Dokument Typs.
 
      **?** zum Hinzufügen einer Verarbeitungsanweisung.
 
-     **Wenden Sie sich an** zum Hinzufügen eines Stammelements.
+     **Wenden** Sie sich an, um das Stamm Element hinzuzufügen.
 
-3. Wählen Sie **wenden Sie sich an** aus der Memberliste aus, und drücken Sie **EINGABETASTE**.
+3. Wählen Sie in der Mitgliederliste **Kontakt** aus, und drücken **Sie die Eingabe**Taste
 
      Der Editor fügt das Starttag `<Contact` hinzu und platziert den Cursor nach dem Elementnamen.
 
-4. Drücken Sie **Registerkarte** zum Generieren von XML-Daten für die `Contact` -Elements auf Grundlage seiner Schemainformationen.
+4. Drücken Sie die **Tab** -Taste, um `Contact` XML-Daten für das-Element anhand seiner Schema Informationen zu generieren.
 
 ## <a name="input"></a>Eingabe
 
- Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.
+Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -141,7 +141,7 @@ Es werden Standardwerte generiert und als Werte gekennzeichnet, die bearbeitet w
 
 ### <a name="output"></a>Ausgabe
 
- Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Gekennzeichnete Elemente als `bold` editierbaren Felder in der XML-Ausschnitt festlegen.
+Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Elemente, die `bold` als gekennzeichnet sind, sind bearbeitbare Felder im XML-Ausschnitt.
 
 ```xml
 <Contact>
@@ -157,4 +157,4 @@ Es werden Standardwerte generiert und als Werte gekennzeichnet, die bearbeitet w
 ## <a name="see-also"></a>Siehe auch
 
 - [XML-Ausschnitte](../xml-tools/xml-snippets.md)
-- [Vorgehensweise: Verwenden von XML-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md)
+- [Vorgehensweise: XML-Ausschnitte verwenden](../xml-tools/how-to-use-xml-snippets.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8196d4c48bfb93735b62c6f24cb08ec462e64c91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b17ccfe66875588ac19c587ff6fcbd889d1e6a44
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788580"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922315"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Ausnahmen sollten öffentlich sein.
 
@@ -31,20 +31,20 @@ ms.locfileid: "62788580"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine nicht öffentliche Ausnahme leitet sich direkt von <xref:System.Exception>, <xref:System.SystemException>, oder <xref:System.ApplicationException>.
+Eine nicht öffentliche Ausnahme wird direkt von <xref:System.Exception>, <xref:System.SystemException>oder <xref:System.ApplicationException>abgeleitet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine interne Ausnahme ist nur innerhalb ihres eigenen internen Bereichs sichtbar. Nachdem die Ausnahme den internen Bereich verlassen hat, kann nur die Basisausnahme zum Abfangen der Ausnahme verwendet werden. Wenn die interne Ausnahme von geerbt wird <xref:System.Exception>, <xref:System.SystemException>, oder <xref:System.ApplicationException>, der externe Code müssen nicht über genügend Informationen zur Vorgehensweise mit der Ausnahme.
+Eine interne Ausnahme ist nur innerhalb Ihres eigenen internen Bereichs sichtbar. Nachdem die Ausnahme den internen Bereich verlassen hat, kann nur die Basisausnahme zum Abfangen der Ausnahme verwendet werden. Wenn die interne Ausnahme von geerbt wird <xref:System.Exception>, <xref:System.SystemException>, oder <xref:System.ApplicationException>, der externe Code müssen nicht über genügend Informationen zur Vorgehensweise mit der Ausnahme.
 
- Aber wenn der Code eine öffentliche Ausnahme, die später als Grundlage für eine interne Ausnahme verwendet wird aufweist, ist es sinnvoll, wird davon ausgegangen, dass der Code noch weiter, etwas intelligent mit der Basis-Ausnahme kann. Die öffentliche Ausnahme müssen mehr Informationen als die vom bereitgestellten <xref:System.Exception>, <xref:System.SystemException>, oder <xref:System.ApplicationException>.
+Wenn der Code jedoch eine öffentliche Ausnahme aufweist, die später als Basis für eine interne Ausnahme verwendet wird, kann davon ausgegangen werden, dass der Code weiter unten mit der Basis Ausnahme intelligent vorgehen kann. Die öffentliche Ausnahme enthält mehr Informationen, als von <xref:System.Exception>, <xref:System.SystemException>oder <xref:System.ApplicationException>bereitgestellt werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wandeln Sie die Ausnahme oder die interne Ausnahme von einer öffentlichen Ausnahme, die nicht ableiten <xref:System.Exception>, <xref:System.SystemException>, oder <xref:System.ApplicationException>.
+Legen Sie die Ausnahme als öffentlich fest, oder leiten Sie die interne Ausnahme von einer öffentlichen <xref:System.Exception>Ausnahme <xref:System.SystemException>ab, <xref:System.ApplicationException>die nicht, oder ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie eine Meldung von dieser Regel, wenn Sie in allen Fällen sicher sind, dass die private Ausnahme innerhalb ihres eigenen internen Bereichs abgefangen wird.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie eine Nachricht aus dieser Regel, wenn Sie sicher sind, dass die private Ausnahme innerhalb Ihres eigenen internen Bereichs abgefangen wird.
 
 ## <a name="example"></a>Beispiel
- Mit dieser Regel wird für das erste Beispielmethode, ausgelöst (FirstCustomException) ausgelöst, daran, dass die Exception-Klasse wird direkt von einer Ausnahme abgeleitet und interne. Die Regel wird nicht für die SecondCustomException-Klasse ausgelöst werden, da auch die Klasse auch direkt aus einer Ausnahme abgeleitet wird, die Klasse als öffentlich deklariert ist. Die dritte Klasse auch löst nicht die Regel, da er nicht direkt von abgeleitet ist <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, oder <xref:System.ApplicationException?displayProperty=fullName>.
+Diese Regel wird für die erste Beispiel Methode, firstcustomexception, ausgelöst, da die Exception-Klasse direkt von der Ausnahme abgeleitet und intern ist. Die Regel wird nicht in der secondcustomexception-Klasse ausgelöst, da die Klasse auch direkt von der Ausnahme abgeleitet ist, wird die Klasse als öffentlich deklariert. Die dritte Klasse führt die Regel auch nicht aus, da Sie nicht direkt von <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>oder <xref:System.ApplicationException?displayProperty=fullName>abgeleitet wird.
 
- [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]
+[!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]

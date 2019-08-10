@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41ab039d33155769eac13469a65f2a35c8ed7324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 415b8c95dda3fca084fcb103dfa5e4f39e1a73da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778605"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922525"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können.
 
@@ -35,34 +35,34 @@ ms.locfileid: "62778605"
 
 ## <a name="cause"></a>Ursache
 
-Auf einen Typ verweist eine <xref:System.IntPtr?displayProperty=fullName> Feld eine <xref:System.UIntPtr?displayProperty=fullName> Feld oder eine <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> Feld, implementiert aber nicht <xref:System.IDisposable?displayProperty=fullName>.
+Ein Typ verweist auf <xref:System.IntPtr?displayProperty=fullName> ein Feld, <xref:System.UIntPtr?displayProperty=fullName> ein Feld oder ein <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> Feld, implementiert <xref:System.IDisposable?displayProperty=fullName>jedoch nicht.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Mit dieser Regel wird vorausgesetzt, dass <xref:System.IntPtr>, <xref:System.UIntPtr>, und <xref:System.Runtime.InteropServices.HandleRef> Felder Speichern von Zeigern in nicht verwalteten Ressourcen. Typen, die nicht verwaltete Ressourcen zuordnen müssen implementieren <xref:System.IDisposable> können Aufrufer, um diese Ressourcen bei Bedarf freigeben und verkürzen die Lebensdauer der Objekte, die die Ressourcen enthalten.
+Diese Regel setzt voraus <xref:System.IntPtr>, <xref:System.UIntPtr>dass die <xref:System.Runtime.InteropServices.HandleRef> Felder, und Zeiger auf nicht verwaltete Ressourcen speichern. Typen, die nicht verwaltete Ressourcen zuordnen, <xref:System.IDisposable> sollten implementieren, damit Aufrufer diese Ressourcenbedarfs gesteuert freigeben und die Lebensdauer der Objekte verkürzen können, die die Ressourcen enthalten.
 
-Das empfohlene Entwurfsmuster zum Bereinigen von nicht verwalteten Ressourcen ist sowohl eine implizite als auch eine explizite Möglichkeit, um die Ressourcen freizugeben, mit der <xref:System.Object.Finalize%2A?displayProperty=fullName> Methode und die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> -Methode, bzw. Der Garbage Collector Ruft die <xref:System.Object.Finalize%2A> Methode eines Objekts zu einem unbestimmten Zeitpunkt nach dem das Objekt festgestellt wird, dass Sie nicht mehr erreichbar ist. Nach dem <xref:System.Object.Finalize%2A> aufgerufen wird, eine zusätzliche automatische speicherbereinigung ist erforderlich, um das Objekt freigeben. Die <xref:System.IDisposable.Dispose%2A> Methode ermöglicht dem Aufrufer, Ressourcen bei Bedarf, früher als die Ressourcen freigegeben werden sollen, wenn der Garbage Collector überlassen explizit freizugeben. Nachdem sie die nicht verwalteten Ressourcen bereinigt <xref:System.IDisposable.Dispose%2A> sollten aufrufen, die <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> Methode, um dem Garbage Collector mitzuteilen, dass <xref:System.Object.Finalize%2A> ist nicht mehr aufgerufen werden muss; Dadurch entfällt die Notwendigkeit für die zusätzliche Garbagecollection und verkürzt die die Lebensdauer des Objekts.
+Das empfohlene Entwurfsmuster zum Bereinigen nicht verwalteter Ressourcen besteht darin, ein implizites und explizites Mittel bereitzustellen, um <xref:System.Object.Finalize%2A?displayProperty=fullName> diese Ressourcen mithilfe <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> der-Methode bzw. der-Methode freizugeben. Der Garbage Collector Ruft die <xref:System.Object.Finalize%2A> -Methode eines-Objekts zu einer unbestimmten Zeit auf, nachdem festgestellt wurde, dass das Objekt nicht mehr erreichbar ist. Nachdem <xref:System.Object.Finalize%2A> aufgerufen wurde, ist ein zusätzlicher Garbage Collection erforderlich, um das Objekt freizugeben. Die <xref:System.IDisposable.Dispose%2A> -Methode ermöglicht es dem Aufrufer, Ressourcen bei Bedarf explizit freizugeben, bevor die Ressourcen freigegeben werden, wenn Sie an die Garbage Collector weitergegeben werden. Nachdem die nicht verwalteten Ressourcen bereinigt wurden, <xref:System.IDisposable.Dispose%2A> sollte die- <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> Methode aufrufen, um die Garbage Collector zu informieren, <xref:System.Object.Finalize%2A> dass nicht mehr aufgerufen werden muss. Dadurch entfällt die Notwendigkeit zusätzlicher Garbage Collection und verkürzt das die Lebensdauer des Objekts.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, implementieren <xref:System.IDisposable>.
+Um einen Verstoß gegen diese Regel zu beheben, <xref:System.IDisposable>implementieren Sie.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Typ nicht über eine nicht verwaltete Ressource verweist. Andernfalls, unterdrücken Sie keine Warnung dieser Regel da Fehler implementieren <xref:System.IDisposable> kann dazu führen, dass nicht verwaltete Ressourcen nicht verfügbar oder nicht verwendet werden.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Typ nicht auf eine nicht verwaltete Ressource verweist. Andernfalls sollten Sie keine Warnung aus dieser Regel unterdrücken, weil die Implementierung <xref:System.IDisposable> von nicht verwalteten Ressourcen zu nicht verfügbaren oder nicht genutzten Ressourcen führen kann.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der implementiert <xref:System.IDisposable> , um eine nicht verwaltete Ressource zu bereinigen.
+Das folgende Beispiel zeigt einen Typ, der <xref:System.IDisposable> implementiert, um eine nicht verwaltete Ressource zu bereinigen.
 
- [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2115: Rufen Sie GC. KeepAlive beim Verwenden systemeigener Ressourcen](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Ruft GC auf. KeepAlive bei der Verwendung nativer Ressourcen](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: Rufen Sie GC. SuppressFinalize ordnungsgemäß](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Ruft GC auf. Ordnungsgemäße SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Siehe auch
 

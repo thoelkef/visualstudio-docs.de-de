@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797526"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921813"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle".
 
@@ -31,13 +31,13 @@ ms.locfileid: "62797526"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Mit dieser Regel tritt auf, wenn Prozesse, um festgelegt werden `ProcessPriorityClass.Idle`.
+Diese Regel tritt auf, wenn Prozesse auf `ProcessPriorityClass.Idle`festgelegt sind.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse mit `System.Diagnostics.ProcessPriorityClass.Idle` belegen die CPU, wenn sie andernfalls im Leerlauf sein würde, und daher den Standbymodus blockieren.
+Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse, die `System.Diagnostics.ProcessPriorityClass.Idle` über das verfügen, belegen die CPU, wenn Sie andernfalls im Leerlauf ist, und blockieren somit den Standbymodus.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Legen Sie Prozesse auf `ProcessPriorityClass.BelowNormal`.
+Legen Sie Prozesse `ProcessPriorityClass.BelowNormal`auf fest.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Diese Regel sollte unterdrückt werden, nur, wenn im Leerlauf Prozesspriorität erforderlich ist und Mobilität Überlegungen sicher ignoriert werden können.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Diese Regel sollte nur unterdrückt werden, wenn die Prozesspriorität für den Leerlauf erforderlich ist und Überlegungen zur Mobilität sicher ignoriert werden können.

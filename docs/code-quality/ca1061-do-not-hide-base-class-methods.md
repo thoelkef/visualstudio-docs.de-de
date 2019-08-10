@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faa225178a50be080f92a728998e914025c17168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788659"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922430"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Basisklassenmethoden nicht ausblenden.
 
@@ -31,18 +31,18 @@ ms.locfileid: "62788659"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein abgeleiteter Typ deklariert eine Methode mit dem gleichen Namen und mit der gleichen Anzahl von Parametern als eines seiner Basismethoden; mindestens einer der Parameter ist ein Basistyp des entsprechenden Parameters in der Basis-Methode. und alle übrigen Parameter müssen Typen, die mit den entsprechenden Parametern in die Basismethode identisch sind.
+Ein abgeleiteter Typ deklariert eine Methode, die denselben Namen und dieselbe Anzahl von Parametern wie eine seiner Basis Methoden hat. mindestens einer der Parameter ist ein Basistyp des entsprechenden Parameters in der Basis Methode. und alle verbleibenden Parameter verfügen über Typen, die mit den entsprechenden Parametern in der Basis Methode identisch sind.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine Methode in einem Basistyp wird durch eine Methode mit identischem Namen in einem abgeleiteten Typ ausgeblendet, wenn die Parametersignatur der abgeleiteten Methode nur von Typen unterscheidet, die schwächer abgeleitet als die entsprechenden Typen in der Parametersignatur der Basismethode sind.
+Eine Methode in einem Basistyp wird durch eine identikalisch benannte Methode in einem abgeleiteten Typ ausgeblendet, wenn die Parameter Signatur der abgeleiteten Methode nur von Typen abweicht, die schwächer abgeleitet sind als die entsprechenden Typen in der Parameter Signatur der Basis Methode.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie oder benennen Sie die Methode, oder ändern Sie die Parametersignatur, sodass die Methode die Basismethode nicht ausgeblendet wird.
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie die-Methode, oder benennen Sie Sie um, oder ändern Sie die Parameter Signatur, sodass die-Methode die Basis Methode nicht ausblenden kann.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, die gegen die Regel verstößt.
+Das folgende Beispiel zeigt eine Methode, die gegen die Regel verstößt.
 
- [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
+[!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
