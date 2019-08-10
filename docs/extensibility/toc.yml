@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: Problembehandlung bei VSPackages
       href: troubleshooting-vspackages.md
-- name: Shell (integriert oder isoliert)
-  href: 'https://vspartner.com/pages/vsshells'
 - name: Ausliefern von Visual Studio-Erweiterungen
   items:
     - name: Ausliefern von Visual Studio-Erweiterungen
