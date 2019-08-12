@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cac669b96f362d6da73e3eb2f373137c3d9bdd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 869ff99243349ae01c63da0a7d9e6544761cbd39
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778517"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922503"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Typen in Namespaces deklarieren.
 
@@ -34,25 +34,25 @@ ms.locfileid: "62778517"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ ist außerhalb des Bereichs eines benannten Namespaces definiert.
+Ein öffentlicher oder geschützter Typ wird außerhalb des Gültigkeits Bereichs eines benannten Namespace definiert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Typen werden in Namespaces, um Namenskonflikte zu verhindern und als eine Möglichkeit zum Organisieren verwandter Typen in einer Objekthierarchie deklariert. Typen, die außerhalb eines benannten Namespaces sind in einem globalen Namespace, der nicht im Code verwiesen werden kann.
+Typen werden in Namespaces deklariert, um Namenskonflikte zu verhindern, und als Möglichkeit, verwandte Typen in einer Objekthierarchie zu organisieren. Typen, die sich außerhalb eines benannten Namespace befinden, befinden sich in einem globalen Namespace, auf den im Code nicht verwiesen werden kann.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, platzieren Sie den Typ in einem Namespace.
+Um einen Verstoß gegen diese Regel zu beheben, platzieren Sie den-Typ in einem Namespace.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Obwohl Sie nie eine Warnung dieser Regel unterdrücken verfügen, ist es sicher ist, die dies tun, wenn die Assembly nicht zusammen mit anderen Assemblys verwendet werden soll.
-
-## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Bibliothek, die ein Typ, der falsch außerhalb eines Namespaces deklariert hat, und ein Typ, der den gleichen Namen, die in einem Namespace deklariert hat.
-
- [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Obwohl Sie eine Warnung nicht von dieser Regel unterdrücken müssen, ist dies sicher, wenn die Assembly nicht in Verbindung mit anderen Assemblys verwendet wird.
 
 ## <a name="example"></a>Beispiel
- Die folgende Anwendung verwendet die Bibliothek, die zuvor definiert wurde. Beachten Sie, dass der Typ, der außerhalb eines Namespace deklariert wird, wenn erstellt wird der Name `Test` wird nicht durch einen Namespace gekennzeichnet. Beachten Sie außerdem, den Zugriff auf die `Test` geben `Goodspace`, der Namespacename ist erforderlich.
+Das folgende Beispiel zeigt eine Bibliothek, die einen Typ aufweist, der fälschlicherweise außerhalb eines Namespaces deklariert wurde, und einen Typ, der denselben Namen aufweist, der in einem Namespace deklariert wurde.
 
- [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
- [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]
+[!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
+[!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+
+## <a name="example"></a>Beispiel
+Die folgende Anwendung verwendet die zuvor definierte Bibliothek. Beachten Sie, dass der Typ, der außerhalb eines Namespaces deklariert ist, `Test` erstellt wird, wenn der Name nicht durch einen Namespace qualifiziert ist. Beachten Sie außerdem, dass für `Test` den Zugriff `Goodspace`auf den-Typ in der Namespace Name erforderlich ist.
+
+[!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
+[!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]
