@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d472ec7d35b886dbc2294d2c3172b61d3b1e7702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd794d647d0af63edd133a65fbaad569e067e21
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974955"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924093"
 ---
 # <a name="codeindex-command"></a>CodeIndex-Befehl
 
@@ -47,8 +47,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Option**|**Beschreibung**|
 |----------------| - |
 |**/indexingStatus**|Zeigen Sie den Status und die Konfiguration des Codeindexdiensts an.|
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Die Indizierung aller Changesets wird gestartet.<br />-   **off**: Die Indizierung aller Changesets wird beendet.<br />-   **keepupOnly**: Die Indizierung zuvor erstellter Changesets wird beendet und die Indizierung nur neuer Changesets wird gestartet.|
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Sie können das Platzhalterzeichen (*) am Anfang, am Ende oder an beiden Enden des Serverpfads verwenden.|Gibt eine Liste mit Codedateien und ihren Pfaden an, die nicht indiziert werden sollen.<br /><br /> -   **add**: Die Datei, die nicht indiziert werden soll, der Liste ignorierter Dateien hinzufügen.<br />-   **remove**: Die Datei, die indiziert werden soll, aus der Liste ignorierter Dateien entfernen.<br />-   **removeAll**: Die Liste ignorierter Dateien wird gelöscht, und die Indizierung aller Dateien wird gestartet.<br />-   **view**: Alle Dateien anzeigen, die nicht indiziert werden.|
+|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**: Die Indizierung aller Changesets wird gestartet.<br />-   **off**: Die Indizierung aller Changesets wird beendet.<br />-   **keepupOnly**: Die Indizierung zuvor erstellter Changesets wird beendet und die Indizierung nur neuer Changesets wird gestartet.|
+|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Sie können das Platzhalterzeichen (*) am Anfang, am Ende oder an beiden Enden des Serverpfads verwenden.|Gibt eine Liste mit Codedateien und ihren Pfaden an, die nicht indiziert werden sollen.<br /><br /> -   **add**: Die Datei, die nicht indiziert werden soll, der Liste ignorierter Dateien hinzufügen.<br />-   **remove**: Die Datei, die indiziert werden soll, aus der Liste ignorierter Dateien entfernen.<br />-   **removeAll**: Die Liste ignorierter Dateien wird gelöscht, und die Indizierung aller Dateien wird gestartet.<br />-   **view**: Alle Dateien anzeigen, die nicht indiziert werden.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Zeigt die angegebene Anzahl der Dateien an, die die angegebene Größe in KB überschreitet. Sie können dann mithilfe der Option **/ignoreList** diese Dateien von der Indizierung ausschließen.|
 |**/reindexAll**|Zuvor indizierte Daten werden gelöscht, und die Indizierung wird neu gestartet.|
 |**/destroyCodeIndex [/noPrompt]**|Der Codeindex wird gelöscht, und alle indizierten Daten werden entfernt. Erfordert keine Bestätigung, wenn Sie die Option **/noPrompt** verwenden.|
@@ -62,61 +62,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 > [!NOTE]
 > Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E-Mail-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden.  Jede Ähnlichkeit mit tatsächlichen Firmen, Organisationen, Produkten, Domänen, Personen, Orten, Ereignissen, E-Mail-Adressen und Logos ist rein zufällig.
 
- So zeigen Sie den Status und die Konfiguration der Codeindizierung an:
+So zeigen Sie den Status und die Konfiguration der Codeindizierung an:
 
 ```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- So starten Sie die Indizierung aller Changesets:
+So starten Sie die Indizierung aller Changesets:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- So beenden Sie die Indizierung zuvor erstellter Changesets und starten die Indizierung nur neuer Changesets:
+So beenden Sie die Indizierung zuvor erstellter Changesets und starten die Indizierung nur neuer Changesets:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
- So finden Sie bis zu 50 Dateien, die größer als 10 KB sind
+So finden Sie bis zu 50 Dateien, die größer als 10 KB sind
 
 ```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- So schließen Sie eine bestimmte Datei aus der Indizierung aus und fügen Sie der Liste ignorierter Dateien hinzu:
+So schließen Sie eine bestimmte Datei aus der Indizierung aus und fügen Sie der Liste ignorierter Dateien hinzu:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
- So zeigen Sie alle Dateien an, die nicht indiziert werden
+So zeigen Sie alle Dateien an, die nicht indiziert werden
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- So löschen Sie zuvor indizierte Daten und starten die Indizierung neu:
+So löschen Sie zuvor indizierte Daten und starten die Indizierung neu:
 
 ```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
- So speichern Sie den gesamten Changeset-Verlauf:
+So speichern Sie den gesamten Changeset-Verlauf:
 
 ```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- So entfernen Sie die Größenbeschränkung für temporäre CodeLens-Daten und fahren mit der Indizierung unabhängig von der Größe der temporären Daten fort:
+So entfernen Sie die Größenbeschränkung für temporäre CodeLens-Daten und fahren mit der Indizierung unabhängig von der Größe der temporären Daten fort:
 
 ```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- So löschen Sie den Codeindex mit Bestätigung:
+So löschen Sie den Codeindex mit Bestätigung:
 
 ```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
