@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046851"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919478"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -46,7 +46,7 @@ Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.
 
 ## <a name="navigate-within-your-code"></a>Navigieren innerhalb des Codes
 
- Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code schneller zu finden und dorthin zu wechseln.
+Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code schneller zu finden und dorthin zu wechseln.
 
 - **Speichern von Codezeilen als Lesezeichen**. Sie können Lesezeichen verwenden, um schnell zu bestimmten Codezeilen in einer Datei zu navigieren.
 

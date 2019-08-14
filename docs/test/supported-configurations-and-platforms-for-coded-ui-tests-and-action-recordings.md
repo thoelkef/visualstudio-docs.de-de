@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431225"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926454"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen
 
@@ -68,7 +68,7 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 | Citrix/Terminaldienste | Das Aufzeichnen von Aktionen auf einem Terminalserver wird nicht empfohlen. Die Aufzeichnung unterstützt nicht, dass mehrere Instanzen gleichzeitig ausgeführt werden. |
 | PowerBuilder | Teilweise unterstützt.<br /><br /> Die Unterstützung erfolgt in dem Umfang, in dem der Zugang zu PowerBuilder-Steuerelementen ermöglicht wird. |
 
- Informationen zum Erstellen von Erweiterungen zur Unterstützung anderer Plattformen finden Sie unter [Aktivieren von Tests der programmierten UI Ihrer Steuerelemente](../test/enable-coded-ui-testing-of-your-controls.md) und [Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
+Informationen zum Erstellen von Erweiterungen zur Unterstützung anderer Plattformen finden Sie unter [Aktivieren von Tests der programmierten UI Ihrer Steuerelemente](../test/enable-coded-ui-testing-of-your-controls.md) und [Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
 ## <a name="see-also"></a>Siehe auch
 

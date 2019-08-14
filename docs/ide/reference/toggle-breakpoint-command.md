@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 214897a0f938d8ea52306b8f605948b38f196111
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18473fbd8ee0f7c4b415880da61c86de0bae6fc5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944968"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925971"
 ---
 # <a name="toggle-breakpoint-command"></a>Befehl "Haltepunkt ein/aus"
 Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.
@@ -31,10 +31,12 @@ Debug.ToggleBreakpoint [text]
 ```
 
 ## <a name="arguments"></a>Argumente
- `text` ist optional. Wenn Text angegeben ist, wird die Zeile als benannter Haltepunkt markiert. Andernfalls wird die Zeile als unbenannter Haltepunkt markiert. Ähnliches geschieht, wenn Sie F9 drücken.
+
+`text`\
+Optional. Wenn Text angegeben ist, wird die Zeile als benannter Haltepunkt markiert. Andernfalls wird die Zeile als unbenannter Haltepunkt markiert. Ähnliches geschieht, wenn Sie F9 drücken.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird der aktuelle Haltepunkt umgeschaltet.
+Im folgenden Beispiel wird der aktuelle Haltepunkt umgeschaltet.
 
 ```
 >Debug.ToggleBreakpoint

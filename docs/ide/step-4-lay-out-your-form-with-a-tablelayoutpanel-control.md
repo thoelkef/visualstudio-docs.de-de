@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e0c5999f8d8e6bdfbc96a24a1a51b7c093aca1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 269fa26b89ab1ca9165efa8eb8971731f078ec60
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431465"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925939"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement
 In diesem Schritt fügen Sie Ihrem Formular ein <xref:System.Windows.Forms.TableLayoutPanel>-Steuerelement hinzu. Das TableLayoutPanel hilft, Steuerelemente im Formular ordnungsgemäß auszurichten, die Sie später hinzufügen.
 
- ![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205211) und [Tutorial 1: Create a picture viewer in C# – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205211) und [Tutorial 1: Create a picture viewer in C# – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>So erstellen Sie ein Layout für das Formular mit einem TableLayoutPanel-Steuerelement
 

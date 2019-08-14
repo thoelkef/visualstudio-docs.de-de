@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de5b1b5add1337451d7b6a463c89951754e3581
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edcff51428451b50dc149b7b55cee11cb9ede853
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956411"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919045"
 ---
 # <a name="replace-command"></a>Befehl "Ersetzen"
 Ersetzt Text in Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** verfügbar sind.
@@ -32,69 +32,69 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ```
 
 ## <a name="arguments"></a>Argumente
- `findwhat`
+`findwhat`
 
- Erforderlich. Der Text, für den eine Übereinstimmung ermittelt werden soll.
+Erforderlich. Der Text, für den eine Übereinstimmung ermittelt werden soll.
 
- `replacewith`
+`replacewith`
 
- Erforderlich. Der Text, durch den der übereinstimmende Text ersetzt werden soll
+Erforderlich. Der Text, durch den der übereinstimmende Text ersetzt werden soll
 
 ## <a name="switches"></a>Schalter
- /all oder /a
+/all oder /a
 
- Dies ist optional. Ersetzt den Suchtext bei jedem Vorkommen durch den Ersetzungstext
+Optional. Ersetzt den Suchtext bei jedem Vorkommen durch den Ersetzungstext
 
- /case oder /c
+/case oder /c
 
- Dies ist optional. Übereinstimmungen treten nur auf, wenn die groß und klein geschriebenen Zeichen mit den im `findwhat`-Argument angegebenen übereinstimmen.
+Optional. Übereinstimmungen treten nur auf, wenn die groß und klein geschriebenen Zeichen mit den im `findwhat`-Argument angegebenen übereinstimmen.
 
- /doc oder/d
+/doc oder/d
 
- Dies ist optional. Sucht nur im aktuellen Dokument. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
+Optional. Sucht nur im aktuellen Dokument. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
 
- /hidden oder /h
+/hidden oder /h
 
- Dies ist optional. Sucht nach ausgeblendetem und reduziertem Text, z.B. nach den Metadaten eines Designzeit-Steuerelements, einem ausgeblendeten Bereich in einem umrissenen Dokument oder einer reduzierten Klasse bzw. Methode
+Optional. Sucht nach ausgeblendetem und reduziertem Text, z.B. nach den Metadaten eines Designzeit-Steuerelements, einem ausgeblendeten Bereich in einem umrissenen Dokument oder einer reduzierten Klasse bzw. Methode
 
- /open oder /o
+/open oder /o
 
- Dies ist optional. Sucht in allen geöffneten Dokumenten, als wären sie ein einziges Dokument. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
+Optional. Sucht in allen geöffneten Dokumenten, als wären sie ein einziges Dokument. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
 
- /options oder /t
+/options oder /t
 
- Dies ist optional. Zeigt eine Liste der aktuellen Optionseinstellungen für die Suche an und führt keine Suche aus.
+Optional. Zeigt eine Liste der aktuellen Optionseinstellungen für die Suche an und führt keine Suche aus.
 
- /proc oder /p
+/proc oder /p
 
- Dies ist optional. Sucht nur in der aktuellen Prozedur. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
+Optional. Sucht nur in der aktuellen Prozedur. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
 
- /regex oder /r
+/regex oder /r
 
- Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, die Textmuster anstelle von Literalzeichen darstellen. Eine vollständige Liste von Zeichen für reguläre Ausdrücke finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).
+Optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, die Textmuster anstelle von Literalzeichen darstellen. Eine vollständige Liste von Zeichen für reguläre Ausdrücke finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /reset oder /e
+/reset oder /e
 
- Dies ist optional. Legt die Suchoptionen wieder auf die Standardeinstellungen fest und führt keine Suche aus.
+Optional. Legt die Suchoptionen wieder auf die Standardeinstellungen fest und führt keine Suche aus.
 
- /sel oder /s
+/sel oder /s
 
- Dies ist optional. Sucht nur in der aktuellen Auswahl. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
+Optional. Sucht nur in der aktuellen Auswahl. Geben Sie nur einen der verfügbaren Suchbereiche an (`/doc`, `/proc`, `/open` oder `/sel`).
 
- /up oder /u
+/up oder /u
 
- Dies ist optional. Sucht von der aktuellen Position in der Datei bis zum Anfang der Datei. Standardmäßig beginnt die Suche bei der aktuellen Position in der Datei und wird bis zum Ende der Datei ausgeführt.
+Optional. Sucht von der aktuellen Position in der Datei bis zum Anfang der Datei. Standardmäßig beginnt die Suche bei der aktuellen Position in der Datei und wird bis zum Ende der Datei ausgeführt.
 
- /wild oder /l
+/wild oder /l
 
- Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, um ein Zeichen oder eine Abfolge von Zeichen darzustellen.
+Optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, um ein Zeichen oder eine Abfolge von Zeichen darzustellen.
 
- /word oder /w
+/word oder /w
 
- Dies ist optional. Sucht nur nach ganzen Wörtern.
+Optional. Sucht nur nach ganzen Wörtern.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird `btnSend` in allen geöffneten Dokumenten durch `btnSubmit` ersetzt.
+In diesem Beispiel wird `btnSend` in allen geöffneten Dokumenten durch `btnSubmit` ersetzt.
 
 ```
 >Edit.Replace btnSend btnSubmit /open

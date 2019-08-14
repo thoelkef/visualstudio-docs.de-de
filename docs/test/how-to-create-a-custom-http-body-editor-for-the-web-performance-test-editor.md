@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745824"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926516"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -117,9 +117,9 @@ Das <xref:System.Windows.Forms.UserControl> "MessageEditorControl", das in der v
 private MessageEditorControl messageEditorControl
 ```
 
- Die messageEditorControl-Instanz wird innerhalb des Plug-In-Dialogfelds gehostet, das von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>-Methode erstellt wird. Darüber hinaus wird das <xref:System.Windows.Forms.RichTextBox> von "messageEditorControl" mit dem Inhalt von <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aufgefüllt. Das Plug-In kann jedoch nur erstellt werden, wenn <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> `true` zurückgibt. Bei diesem Editor gibt <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> `true` zurück, wenn der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> "xml" enthält.
+Die messageEditorControl-Instanz wird innerhalb des Plug-In-Dialogfelds gehostet, das von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>-Methode erstellt wird. Darüber hinaus wird das <xref:System.Windows.Forms.RichTextBox> von "messageEditorControl" mit dem Inhalt von <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> aufgefüllt. Das Plug-In kann jedoch nur erstellt werden, wenn <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> `true` zurückgibt. Bei diesem Editor gibt <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> `true` zurück, wenn der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> im <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> "xml" enthält.
 
- Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer im Plug-In-Dialogfeld auf **OK** klickt, wird <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> aufgerufen, um den bearbeiteten Text als Zeichenfolge abzurufen und den **Zeichenfolgentext** in der Anforderung im Webleistungstest-Editor zu aktualisieren.
+Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer im Plug-In-Dialogfeld auf **OK** klickt, wird <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> aufgerufen, um den bearbeiteten Text als Zeichenfolge abzurufen und den **Zeichenfolgentext** in der Anforderung im Webleistungstest-Editor zu aktualisieren.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Erstellen Sie eine Klasse, und implementieren Sie die Schnittstelle IStringHttpBodyEditorPlugin.
 
@@ -285,7 +285,7 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 3. Wenn Sie die Aufzeichnung beenden, erweitern Sie im Webleistungstest-Editor die Anforderung für den Webdienst, und wählen Sie die Option **Zeichenfolgentext** oder **Binärer Text** aus.
 
-4. Wählen Sie im Fenster **Eigenschaften** die Option „Zeichenfolgentext“ oder „Binärer Text“ aus, und klicken Sie anschließend auf die Auslassungspunkte **(…)**.
+4. Wählen Sie im Fenster **Eigenschaften** die Option „Zeichenfolgentext“ oder „Binärer Text“ aus, und klicken Sie anschließend auf die Auslassungspunkte **(…)** .
 
    Das Dialogfeld **HTTP-Textdaten bearbeiten** wird angezeigt.
 

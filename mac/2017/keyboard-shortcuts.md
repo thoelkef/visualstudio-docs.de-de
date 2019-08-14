@@ -1,16 +1,16 @@
 ---
-title: Standardtastenkombinationen in Visual Studio für Mac
+title: Standardtastenkombinationen
 description: In diesem Artikel werden die Standardtastenkombinationen in Visual Studio für Mac aufgeführt.
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: adhartle
+ms.author: crdun
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 498cea9cdc32eab48d4f861f349e2076bb312bb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997167"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872243"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Standardtastenkombinationen in Visual Studio für Mac
 
@@ -36,7 +36,7 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 
 |Befehle|Tastenkombinationen|
 |-|-|
-|Haltepunkt aktivieren/deaktivieren|**⌥⌘/**, **⌘F9**|
+|Haltepunkt aktivieren/deaktivieren|**⌥⌘/** , **⌘F9**|
 |Anhalten|**⌥⌘P**, **⌥⌘L5**|
 |Alle Haltepunkte entfernen|**⇧⌘F9**|
 |Ausführen bis Cursor|**⌘F10**|
@@ -45,7 +45,7 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 |Einzelschritt|**⇧⌘I**, **⌘F11**|
 |Ausführen bis Rücksprung|**⇧⌘U**, **⇧⌘F11**|
 |Prozedurschritt|**⇧⌘O**, **F10**|
-|Haltepunkt ein/aus|**⌘\\**, **F9**|
+|Haltepunkt ein/aus|**⌘\\** , **F9**|
 |Haltepunkte anzeigen|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -225,8 +225,8 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 |Nächstes anzeigen|**⌥⌘↓**, **F8**|
 |Vorheriges anzeigen|**⌥⌘↑**, **⇧F8**|
 |Zwei Editor-Spalten|**⌥⌘2**|
-|Vergrößern|**⌘+**, **⌘=**|
-|Verkleinern|**⌘-**, **⌘_**|
+|Vergrößern|**⌘+** , **⌘=**|
+|Verkleinern|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Fenster
 
@@ -244,8 +244,8 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 |Andere ausblenden|**⌥⌘H**|
 |Visual Studio ausblenden|**⌘H**|
 |Minimieren|**⌘M**|
-|Nächstes Dokument|**⌘}**, **⌘F6**|
-|Vorheriges Dokument|**⌘{**, **⇧⌘F6**|
+|Nächstes Dokument|**⌘}** , **⌘F6**|
+|Vorheriges Dokument|**⌘{** , **⇧⌘F6**|
 |Zum nächsten Dokument wechseln|**⌃⇥**|
 |Zum nächsten Bereich wechseln|**⌃⌥⇥**|
 |Zum vorherigen Dokument wechseln|**⌃⇧⇥**|

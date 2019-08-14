@@ -1,16 +1,16 @@
 ---
-title: Xamarin in Visual Studio für Mac
+title: Xamarin
 description: 'Wenn Sie Xamarin in Visual Studio für Mac verwenden, können Sie plattformübergreifende Anwendungen für iOS, Mac, Android, tvOS und watchOS erstellen. '
 author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: e6cc642125f3b1466dd38d9ba3778c4f287cec63
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692102"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872352"
 ---
 # <a name="xamarin-mobile-app-development"></a>Entwicklung mobiler Apps mit Xamarin
 
@@ -55,6 +55,6 @@ Der Xamarin Inspector stellt eine interaktive C#-Konsole mit Benutzertools berei
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Er besteht aus einer eigenständigen Anwendung, die eine umfangreiche und auf verschiedene Programmierplattformen (Android, iOS, Mac und Windows) ausgerichtete C#-Konsole und eine Integration in den Debuggingworkflow Ihrer IDE bereitstellt. 
+Er besteht aus einer eigenständigen Anwendung, die eine umfangreiche und auf verschiedene Programmierplattformen (Android, iOS, Mac und Windows) ausgerichtete C#-Konsole und eine Integration in den Debuggingworkflow Ihrer IDE bereitstellt.
 
 Weitere Informationen finden Sie im Leitfaden zum [Xamarin Inspector](/xamarin/tools/inspector/).

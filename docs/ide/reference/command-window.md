@@ -16,33 +16,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4fe707d82354a8c947dfa89a7323b41a489d0fa8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438105"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919309"
 ---
 # <a name="command-window"></a>Befehlsfenster
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.
 
 ## <a name="displaying-the-values-of-variables"></a>Anzeigen der Werte von Variablen
- Verwenden Sie den [Befehl „Drucken“](../../ide/reference/print-command.md), um den Wert einer Variablen `varA` zu überprüfen:
+Verwenden Sie den [Befehl „Drucken“](../../ide/reference/print-command.md), um den Wert einer Variablen `varA` zu überprüfen:
 
 ```cmd
 >Debug.Print varA
 ```
 
- Das Fragezeichen (?) ist ein Alias für `Debug.Print`, sodass dieser Befehl auch wie folgt eingegeben werden kann:
+Das Fragezeichen (?) ist ein Alias für `Debug.Print`, sodass dieser Befehl auch wie folgt eingegeben werden kann:
 
 ```cmd
 >? varA
 ```
 
- Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.
+Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.
 
 ## <a name="entering-commands"></a>Eingeben von Befehlen
- Am linken Rand des Befehlsfensters wird das Größer-als-Zeichen (`>`) als Eingabeaufforderung für neue Zeilen angezeigt. Verwenden Sie die NACH-OBEN- und NACH UNTEN-TASTEN, um einen Bildlauf durch bereits ausgegebene Befehle durchzuführen.
+Am linken Rand des Befehlsfensters wird das Größer-als-Zeichen (`>`) als Eingabeaufforderung für neue Zeilen angezeigt. Verwenden Sie die NACH-OBEN- und NACH UNTEN-TASTEN, um einen Bildlauf durch bereits ausgegebene Befehle durchzuführen.
 
 |Aufgabe|Lösung|Beispiel|
 |----------|--------------|-------------|
@@ -50,7 +50,7 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 |Wechseln Sie zu einem Direktfenster.|Geben Sie in das Fenster `immed` ohne das Größer-als-Zeichen (>) ein.|`immed`|
 |Wechseln Sie wieder vom Direktfenster zum Befehlsfenster.|Geben Sie `cmd` in das Fenster ein.|`>cmd`|
 
- Die folgenden Tastenkombinationen erleichtern Ihnen die Navigation im Befehlsmodus.
+Die folgenden Tastenkombinationen erleichtern Ihnen die Navigation im Befehlsmodus.
 
 |Aktion|Cursorplatzierung|Schlüsselbindung|
 |------------| - |----------------|
@@ -62,23 +62,23 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 > Sie können den zuvor ausgegebenen Befehl ganz oder teilweise in die Eingabezeile kopieren, indem Sie einen Bildlauf dorthin durchführen, den Befehl ganz oder teilweise hervorheben und dann die EINGABETASTE drücken.
 
 ## <a name="mark-mode"></a>Markierungsmodus
- Wenn Sie im Fenster **Befehl** auf eine zuvor ausgegebene Zeile klicken, schalten Sie automatisch in den Markierungsmodus um. Auf diese Weise können Sie den Text vorheriger Befehle wie in einem beliebigen anderen Text-Editor markieren, bearbeiten, kopieren und in die aktuelle Zeile einfügen.
+Wenn Sie im Fenster **Befehl** auf eine zuvor ausgegebene Zeile klicken, schalten Sie automatisch in den Markierungsmodus um. Auf diese Weise können Sie den Text vorheriger Befehle wie in einem beliebigen anderen Text-Editor markieren, bearbeiten, kopieren und in die aktuelle Zeile einfügen.
 
 ## <a name="the-equals--sign"></a>Gleichheitszeichen (=)
- Abhängig vom Fenster, das zur Eingabe des `EvaluateStatement`-Befehls verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.
+Abhängig vom Fenster, das zur Eingabe des `EvaluateStatement`-Befehls verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.
 
- Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Sie können keine Zuweisungsoperatoren im Fenster **Befehl** verwenden. Wenn die Werte der Variablen `varA` und `varB` beispielsweise unterschiedlich sind, gibt der Befehl `>Debug.EvaluateStatement(varA=varB)` den Wert `False` zurück.
+Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Sie können keine Zuweisungsoperatoren im Fenster **Befehl** verwenden. Wenn die Werte der Variablen `varA` und `varB` beispielsweise unterschiedlich sind, gibt der Befehl `>Debug.EvaluateStatement(varA=varB)` den Wert `False` zurück.
 
- Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Der Befehl `>Debug.EvaluateStatement(varA=varB)` weist beispielsweise der Variablen `varA` den Wert der Variablen `varB` zu.
+Im Fenster **Direkt** wird ein Gleichheitszeichen (=) dagegen als Zuweisungsoperator interpretiert. Der Befehl `>Debug.EvaluateStatement(varA=varB)` weist beispielsweise der Variablen `varA` den Wert der Variablen `varB` zu.
 
 ## <a name="parameters-switches-and-values"></a>Parameter, Schalter und Werte
- Einige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehle verfügen über erforderliche und optionale Argumente, Schalter und Werte. Für die Verwendung dieser Befehle gelten bestimmte Regeln. Im folgenden Beispiel wird ein umfangreicher Befehl gezeigt, um die Terminologie zu verdeutlichen.
+Einige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehle verfügen über erforderliche und optionale Argumente, Schalter und Werte. Für die Verwendung dieser Befehle gelten bestimmte Regeln. Im folgenden Beispiel wird ein umfangreicher Befehl gezeigt, um die Terminologie zu verdeutlichen.
 
 ```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
- In diesem Beispiel ist
+In diesem Beispiel ist
 
 - `Edit.ReplaceInFiles` der Befehl,
 
@@ -98,16 +98,16 @@ Nahezu jeder von einem Befehl unterstützte Schalter verfügt über zwei Formen:
 Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert versehen werden, bezieht sich dieser Wert auf jeden der Schalter. Beispielsweise ist `/pgm:123` gleichbedeutend mit `/p:123 /g:123 /m:123`. Es tritt ein Fehler auf, wenn einer der Schalter in der Gruppe keinen Wert annimmt.
 
 ## <a name="escape-characters"></a>Escapezeichen
- Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter
+Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter
 
 ```cmd
 >Edit.Find ^^t /regex
 ```
 
- Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert. Im hier gezeigten Beispiel wird die Suche nach dem Muster "^t" veranschaulicht.
+Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert. Im hier gezeigten Beispiel wird die Suche nach dem Muster "^t" veranschaulicht.
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Verwenden von Anführungszeichen für Pfadnamen mit Leerzeichen
- Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\„Programmdateien“** oder **„C:\Programdateien“**.
+Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\„Programmdateien“** oder **„C:\Programdateien“** .
 
 ## <a name="see-also"></a>Siehe auch
 

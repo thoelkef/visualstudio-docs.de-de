@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 201702c794d70c32c0aeef410ad981d891d25d05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9c443f966265f70a729e2fd433353c4856a1f8c6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438201"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924054"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Vorgehensweise: Hinzufügen und Entfernen von importierten Namespaces (Visual Basic)
 
 Das Importieren eines Namespace ermöglicht Ihnen die Verwendung von Elementen aus diesem Namespace in Ihrem Code. Es ist nicht notwendig, das Element vollzuqualifizieren. Wenn Sie beispielsweise in der Klasse `System.Messaging.MessageQueue` auf die Methode `Create` zugreifen möchten, können Sie den `System.Messaging`-Namespace importieren und auf das benötigte Element im Code als `MessageQueue.Create` verweisen.
 
- Importierte Namespaces werden auf der Seite **Verweise** des **Projekt-Designers** verwaltet. Die Importe, die Sie in diesem Dialogfeld angeben, werden direkt an den Compiler (*/imports*) weitergegeben und gelten für alle Dateien in Ihrem Projekt. Verwenden Sie die `Imports`-Anweisung, um einen Namespace in einer einzelnen Quellcodedatei zu verwenden.
+Importierte Namespaces werden auf der Seite **Verweise** des **Projekt-Designers** verwaltet. Die Importe, die Sie in diesem Dialogfeld angeben, werden direkt an den Compiler ( */imports*) weitergegeben und gelten für alle Dateien in Ihrem Projekt. Verwenden Sie die `Imports`-Anweisung, um einen Namespace in einer einzelnen Quellcodedatei zu verwenden.
 
 ### <a name="to-add-an-imported-namespace"></a>So fügen Sie einen importierten Namespace hinzu
 
@@ -47,9 +47,9 @@ Das Importieren eines Namespace ermöglicht Ihnen die Verwendung von Elementen a
 3. Deaktivieren Sie in der Liste **Importierte Namespaces** das Kontrollkästchen für den Namespace, den Sie entfernen möchten.
 
 ## <a name="user-imports"></a>Benutzerimporte
- Mithilfe von Benutzerimporten können Sie anstatt des gesamten Namespace eine bestimmte Klasse innerhalb eines Namespace importieren. Beispiel: Ihre Anwendung verfügt über einen Import für den <xref:System.Diagnostics>-Namespace, Sie sind aber nur interessiert an der `Debug`-Klasse innerhalb dieses Namespace. Sie können <xref:System.Diagnostics.Debug> als Benutzerimport definieren und anschließend den Import für <xref:System.Diagnostics> löschen.
+Mithilfe von Benutzerimporten können Sie anstatt des gesamten Namespace eine bestimmte Klasse innerhalb eines Namespace importieren. Beispiel: Ihre Anwendung verfügt über einen Import für den <xref:System.Diagnostics>-Namespace, Sie sind aber nur interessiert an der `Debug`-Klasse innerhalb dieses Namespace. Sie können <xref:System.Diagnostics.Debug> als Benutzerimport definieren und anschließend den Import für <xref:System.Diagnostics> löschen.
 
- Wenn Sie Ihre Meinung später ändern und feststellen, dass Sie doch die Klasse `EventLog` benötigt hätten, können Sie <xref:System.Diagnostics.EventLog> als Benutzerimport eingeben und <xref:System.Diagnostics.Debug> mithilfe der Updatefunktionalität überschreiben.
+Wenn Sie Ihre Meinung später ändern und feststellen, dass Sie doch die Klasse `EventLog` benötigt hätten, können Sie <xref:System.Diagnostics.EventLog> als Benutzerimport eingeben und <xref:System.Diagnostics.Debug> mithilfe der Updatefunktionalität überschreiben.
 
 ### <a name="to-add-a-user-import"></a>So fügen Sie einen Benutzerimport hinzu
 

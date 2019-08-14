@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662064"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923751"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing mit Visual Studio
 
@@ -151,7 +151,7 @@ Es gibt einige Unterschiede zwischen dem automatischen Ausführen und Aktualisie
 
 Wenn Ihre Projektmappe mindestens zehn Projekte enthält, zeigt Visual Studio das folgende Dialogfeld an, um Sie zu warnen, dass die dynamische Ausführung einer großen Anzahl von Tests in großen Projekten die Leistung schwerwiegend beeinträchtigen kann, wenn Sie Live Unit Testing starten und keine persistenten Daten vorhanden sind oder wenn Sie im obersten Visual Studio-Menü auf **Test** > **Live Unit Testing** > **Bereinigt zurücksetzen** klicken. Wenn Sie auf **OK** klicken, führt Live Unit Testing alle Tests in der Projektmappe aus. Bei Auswahl von **Abbrechen** können Sie wählen, welche Tests ausgeführt werden. Informationen hierzu finden Sie im folgenden Abschnitt [Einschließen und Ausschließen von Testprojekten und Testmethoden](#include-and-exclude-test-projects-and-test-methods).
 
- ![Live Unit Testing-Dialogfeld für große Projekte](media/lut-large-project.png)
+![Live Unit Testing-Dialogfeld für große Projekte](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>Einschließen und Ausschließen von Testprojekten und Testmethoden
 

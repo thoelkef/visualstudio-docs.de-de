@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8e918878048eec7dae04b6d9269f664b9e99c567
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226343"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926754"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Verwenden von Google Test für C++ in Visual Studio
 
@@ -49,13 +49,13 @@ In Visual Studio 2017 und höher ist Google Test als Standardkomponente der Work
 
 Im Dialogfeld **Testprojektkonfiguration**, das Ihnen angezeigt wird, können Sie das Projekt auswählen, das Sie testen möchten. Wenn Sie ein Projekt auswählen, fügt Visual Studio einen Verweis auf das ausgewählte Projekt hinzu. Wenn Sie kein Projekt auswählen, müssen Sie manuell Verweise auf das Projekt hinzufügen, das Sie testen möchten. Bei der Auswahl zwischen statischer und dynamischer Verknüpfung mit den Google Test-Binärdateien müssen die gleichen Aspekte wie bei jedem anderen C++-Programm beachtet werden. Weitere Informationen finden Sie unter [DLLs in Visual C++](/cpp/build/dlls-in-visual-cpp).
 
- ![Konfigurieren von Google Test-Projekten](media/cpp-gtest-config.png)
+![Konfigurieren von Google Test-Projekten](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Festlegen von zusätzlichen Optionen
 
 Klicken Sie im Hauptmenü auf **Extras** > **Optionen** > **Testadapter für Google Test**, um zusätzliche Optionen festzulegen. Weitere Informationen zu diesen Einstellungen finden Sie in der Google Test-Dokumentation.
 
- ![Google Test-Projekteinstellungen](media/cpp-gtest-settings.png)
+![Google Test-Projekteinstellungen](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Hinzufügen von include-Anweisungen
 

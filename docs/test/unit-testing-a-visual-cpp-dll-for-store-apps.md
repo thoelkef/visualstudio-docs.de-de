@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132197"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925790"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
 In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für eine C++-DLL für UWP-Apps (Universelle Windows-Plattform) mit dem Microsoft-Testframework für C++ dargestellt. Die RooterLib-DLL implementiert eine Funktion zum annähernden Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Die DLL kann dann in eine UWP-App eingeschlossen werden, die Benutzern Spaß an der Mathematik vermittelt.
 
- In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.
+In diesem Thema wird gezeigt, wie Komponententests als erster Schritt in der Entwicklung verwendet werden. Bei dieser Vorgehensweise schreiben Sie zuerst eine Testmethode, die ein bestimmtes Verhalten in Ihrem Testsystem überprüft. Anschließend schreiben Sie den Code, der im Test erfolgreich ist. Durch das Ändern der Reihenfolge bei den folgenden Prozeduren, können Sie diese Strategie umkehren und zuerst den zu testenden Code und anschließend die Komponententests schreiben.
 
- In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen. Hinweise dazu, welche Struktur verwendet werden soll, erhalten Sie unter [Ausführen von Komponententests für vorhandene C++-Anwendungen mit dem Test-Explorer](../test/how-to-use-microsoft-test-framework-for-cpp.md).
+In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen. Hinweise dazu, welche Struktur verwendet werden soll, erhalten Sie unter [Ausführen von Komponententests für vorhandene C++-Anwendungen mit dem Test-Explorer](../test/how-to-use-microsoft-test-framework-for-cpp.md).
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
 

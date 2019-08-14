@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416737"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918895"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Festlegen von benutzerdefinierten Buildereignissen in Visual Studio
 
 Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Starten oder nach dem Beenden eines Builds Befehle automatisch ausführen. Sie können beispielsweise eine *BAT-Datei* ausführen, bevor ein Build gestartet wird, oder neue Dateien in einen Ordner kopieren, nachdem der Build abgeschlossen wurde. Buildereignisse werden nur ausgeführt, wenn der Build die betreffenden Punkte im Buildprozess erfolgreich erreicht.
 
- Spezifische Informationen zu den verwendeten Programmiersprachen finden Sie in den folgenden Themen:
+Spezifische Informationen zu den verwendeten Programmiersprachen finden Sie in den folgenden Themen:
 
 - Visual Basic: [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 
@@ -34,7 +34,7 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
 
 Buildereignisse folgen derselben Syntax wie DOS-Befehle, Sie können aber außerdem Makros verwenden, um die Erstellung zu erleichtern. Eine Liste der verfügbaren Makros finden Sie unter [Pre-build Event/Post-build Event command line dialog box (Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
- Um optimale Ergebnisse zu erhalten, befolgen Sie diese Tipps zur Formatierung:
+Um optimale Ergebnisse zu erhalten, befolgen Sie diese Tipps zur Formatierung:
 
 - Fügen Sie allen Buildereignissen, die *BAT-Dateien* ausführen, eine `call`-Anweisung hinzu.
 

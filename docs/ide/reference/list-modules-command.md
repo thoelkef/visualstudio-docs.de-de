@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d466a320d9acd968bfab07b7e8a595dde10ad9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89be89bb3befa6f6ab9e67f6e98ae4d7b1b94e64
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557062"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926203"
 ---
 # <a name="list-modules-command"></a>Befehl "Module auflisten"
 Listet die Module für den aktuellen Prozess auf.
@@ -33,44 +33,44 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>Parameter
- /Address:`yes|no`
+/Address:`yes|no`
 
- Dies ist optional. Gibt an, ob die Speicheradressen der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob die Speicheradressen der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- /Name:`yes|no`
+/Name:`yes|no`
 
- Dies ist optional. Gibt an, ob die Namen der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob die Namen der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- /Order:`yes|no`
+/Order:`yes|no`
 
- Dies ist optional. Gibt an, ob die Reihenfolge der Module angezeigt werden soll. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob die Reihenfolge der Module angezeigt werden soll. Der Standardwert ist `no`sein.
 
- /Path:`yes|no`
+/Path:`yes|no`
 
- Dies ist optional. Gibt an, ob die Pfade zu den Modulen angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob die Pfade zu den Modulen angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- /Process:`yes|no`
+/Process:`yes|no`
 
- Dies ist optional. Gibt an, ob die Prozesse der Module angezeigt werden sollen. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob die Prozesse der Module angezeigt werden sollen. Der Standardwert ist `no`sein.
 
- /SymbolFile:`yes|no`
+/SymbolFile:`yes|no`
 
- Dies ist optional. Gibt an, ob die Symboldateien der Module angezeigt werden sollen. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob die Symboldateien der Module angezeigt werden sollen. Der Standardwert ist `no`sein.
 
- /SymbolStatus:`yes|no`
+/SymbolStatus:`yes|no`
 
- Dies ist optional. Gibt an, ob die Symbolstatus der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob die Symbolstatus der Module angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- /Timestamp:`yes|no`
+/Timestamp:`yes|no`
 
- Dies ist optional. Gibt an, ob der Zeitstempel der Module angezeigt werden soll. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob der Zeitstempel der Module angezeigt werden soll. Der Standardwert ist `no`sein.
 
- /Version:`yes|no`
+/Version:`yes|no`
 
- Dies ist optional. Gibt an, ob die Versionen der Module angezeigt werden sollen. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob die Versionen der Module angezeigt werden sollen. Der Standardwert ist `no`sein.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel werden die Modulnamen, -adressen und -zeitstempel für den aktuellen Prozess aufgeführt.
+In diesem Beispiel werden die Modulnamen, -adressen und -zeitstempel für den aktuellen Prozess aufgeführt.
 
 ```
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no

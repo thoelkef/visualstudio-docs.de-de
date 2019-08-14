@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: e69c75b00ddb98148e9985820e577031ead0a275
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501202"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918814"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Schritt 5: Hinzufügen von Steuerelementen zum Formular
 In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref:System.Windows.Forms.PictureBox>-Steuerelement und ein <xref:System.Windows.Forms.CheckBox>-Steuerelement. Anschließend fügen Sie dem Formular <xref:System.Windows.Forms.Button>-Steuerelemente hinzu.
 
- ![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205211) und [Tutorial 1: Create a picture viewer in C# – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205211) und [Tutorial 1: Create a picture viewer in C# – Video 2 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# (Video 2))](http://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ## <a name="to-add-controls-to-your-form"></a>So fügen Sie dem Formular ein Steuerelement hinzu
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952034"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926040"
 ---
 # <a name="set-radix-command"></a>Befehl "Wurzel setzen"
 Legt die zum Anzeigen von ganzzahligen Werten verwendete numerische Basis fest bzw. gibt sie zurück.
@@ -30,12 +30,12 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Argumente
- `10` oder `16` oder `hex` oder `dec`
+`10` oder `16` oder `hex` oder `dec`
 
- Dies ist optional. Legt „dezimal“ (10 bzw. dec) oder „hexadezimal“ (16 bzw. hex) als Format fest. Wird ein Argument weggelassen, wird der aktuelle Wert der Wurzel zurückgegeben.
+Optional. Legt „dezimal“ (10 bzw. dec) oder „hexadezimal“ (16 bzw. hex) als Format fest. Wird ein Argument weggelassen, wird der aktuelle Wert der Wurzel zurückgegeben.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird die Umgebung zum Anzeigen ganzzahliger Werte im Hexadezimalformat konfiguriert.
+In diesem Beispiel wird die Umgebung zum Anzeigen ganzzahliger Werte im Hexadezimalformat konfiguriert.
 
 ```cmd
 >Debug.SetRadix hex

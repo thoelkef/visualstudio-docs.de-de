@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5eac9b88c9afacda48682ecc5a69c7f2db88550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71767571c6ea041a16eca5a66856c567be72b60
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788390"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925719"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Komponententests für generische Methoden
 
@@ -26,25 +26,25 @@ Sie können Komponententests für generische Methoden genau wie für andere Meth
 Wenn Visual Studio einen Komponententest für eine generische Klasse generiert, z.B. `MyList<T>`, werden zwei Methoden generiert: eine generisches Hilfsprogramm und eine Testmethode. Wenn `MyList<T>` über eine oder mehrere Typeinschränkungen verfügt, muss das Typargument alle Typeinschränkungen erfüllen. Um sicherzustellen, dass der zu testende generische Code bei allen zulässigen Eingaben erwartungsgemäß funktioniert, ruft die Testmethode die generische Hilfsmethode mit allen zu testenden Einschränkungen auf.
 
 ## <a name="examples"></a>Beispiele
- In den folgenden Beispielen werden Komponententests für Generics veranschaulicht:
+In den folgenden Beispielen werden Komponententests für Generics veranschaulicht:
 
 - [Bearbeiten von generiertem Testcode](#EditingGeneratedTestCode) Dieses Beispiel besteht aus zwei Abschnitten, „Generierter Testcode“ und „Bearbeiteter Testcode“. Es veranschaulicht, wie der von einer generischen Methode generierte Rohdaten-Testcode bearbeitet wird, um eine hilfreiche Testmethode zu erhalten.
 
 - [Verwenden einer Typeinschränkung](#TypeConstraintNotSatisfied) In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet. Die Typeinschränkung wird in diesem Beispiel nicht erfüllt.
 
 ### <a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
- Im Testcode in diesem Abschnitt wird eine Code-unter-Test-Methode mit dem Namen `SizeOfLinkedList()` getestet. Diese Methode gibt eine ganze Zahl zurück, die die Anzahl der Knoten in der verknüpften Liste angibt.
+Im Testcode in diesem Abschnitt wird eine Code-unter-Test-Methode mit dem Namen `SizeOfLinkedList()` getestet. Diese Methode gibt eine ganze Zahl zurück, die die Anzahl der Knoten in der verknüpften Liste angibt.
 
- Das erste Codebeispiel im Abschnitt „Generierter Testcode“ enthält den unbearbeiteten Testcode, wie er von Visual Studio Enterprise generiert wurde. Das zweite Beispiel im Abschnitt „Bearbeiteter Testcode“ veranschaulicht, wie Sie die Funktionsweise der SizeOfLinkedList-Methode für zwei verschiedene Datentypen, `int` und `char`, testen können.
+Das erste Codebeispiel im Abschnitt „Generierter Testcode“ enthält den unbearbeiteten Testcode, wie er von Visual Studio Enterprise generiert wurde. Das zweite Beispiel im Abschnitt „Bearbeiteter Testcode“ veranschaulicht, wie Sie die Funktionsweise der SizeOfLinkedList-Methode für zwei verschiedene Datentypen, `int` und `char`, testen können.
 
- Dieser Code zeigt zwei Methoden:
+Dieser Code zeigt zwei Methoden:
 
 - eine Testhilfsmethode, `SizeOfLinkedListTestHelper<T>()`. Der Name einer Testhilfsmethode enthält standardmäßig den Begriff „TestHelper“.
 
 - eine Testmethode, `SizeOfLinkedListTest()`. Jede Testmethode wird mit dem TestMethod-Attribut markiert.
 
 #### <a name="generated-test-code"></a>Generierter Testcode
- Der folgende Testcode wurde von der `SizeOfLinkedList()`-Methode generiert. Da es sich um den unbearbeiteten, generierten Test handelt, muss er geändert werden, damit die SizeOfLinkedList-Methode ordnungsgemäß getestet wird.
+Der folgende Testcode wurde von der `SizeOfLinkedList()`-Methode generiert. Da es sich um den unbearbeiteten, generierten Test handelt, muss er geändert werden, damit die SizeOfLinkedList-Methode ordnungsgemäß getestet wird.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -65,13 +65,13 @@ public void SizeOfLinkedListTest()
 }
 ```
 
- Im vorangehenden Code ist der generische Typparameter `GenericParameterHelper`. Obwohl er zur Angabe bestimmter Datentypen geändert werden kann, wie aus dem folgenden Beispiel ersichtlich, könnten Sie den Test ausführen, ohne diese Anweisung zu bearbeiten.
+Im vorangehenden Code ist der generische Typparameter `GenericParameterHelper`. Obwohl er zur Angabe bestimmter Datentypen geändert werden kann, wie aus dem folgenden Beispiel ersichtlich, könnten Sie den Test ausführen, ohne diese Anweisung zu bearbeiten.
 
 #### <a name="edited-test-code"></a>Bearbeiteter Testcode
- Im folgenden Code wurden die Testmethode und die Testhilfsmethode bearbeitet, damit die Code-unter-Test-Methode `SizeOfLinkedList()` erfolgreich von den Methoden getestet werden kann.
+Im folgenden Code wurden die Testmethode und die Testhilfsmethode bearbeitet, damit die Code-unter-Test-Methode `SizeOfLinkedList()` erfolgreich von den Methoden getestet werden kann.
 
 ##### <a name="test-helper-method"></a>Testhilfsmethode
- Die Testhilfsmethode führt die folgenden Schritte aus, die im Code den mit Schritt 1 bis 5 beschrifteten Zeilen entsprechen.
+Die Testhilfsmethode führt die folgenden Schritte aus, die im Code den mit Schritt 1 bis 5 beschrifteten Zeilen entsprechen.
 
 1. Erstellen einer generischen verknüpften Liste.
 
@@ -84,7 +84,7 @@ public void SizeOfLinkedListTest()
 5. Vergleichen von `actual` mit `expected` in einer Assert-Anweisung. Wenn die tatsächliche nicht der erwarteten Größe entspricht, ist der Test nicht erfolgreich.
 
 ##### <a name="test-method"></a>Testmethode
- Die Testmethode wird in den Code kompiliert, der aufgerufen wird, wenn Sie den Test SizeOfLinkedListTest ausführen. Sie führt die folgenden Schritte aus, die im Code den mit Schritt 6 bis 7 beschrifteten Zeilen entsprechen.
+Die Testmethode wird in den Code kompiliert, der aufgerufen wird, wenn Sie den Test SizeOfLinkedListTest ausführen. Sie führt die folgenden Schritte aus, die im Code den mit Schritt 6 bis 7 beschrifteten Zeilen entsprechen.
 
 1. Festlegen von `<int>` beim Aufrufen der Testhilfsmethode, um sicherzustellen, dass der Test für `integer`-Variablen verwendet werden kann.
 
@@ -118,9 +118,9 @@ public void SizeOfLinkedListTest()
 > Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 ### <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
- In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet, die nicht erfüllt wird. Der erste Abschnitt enthält Code aus dem Code-unter-Test-Projekt. Die Typeinschränkung ist hervorgehoben.
+In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet, die nicht erfüllt wird. Der erste Abschnitt enthält Code aus dem Code-unter-Test-Projekt. Die Typeinschränkung ist hervorgehoben.
 
- Der zweite Abschnitt enthält Code aus dem Testprojekt.
+Der zweite Abschnitt enthält Code aus dem Testprojekt.
 
 #### <a name="code-under-test-project"></a>Code-unter-Test-Projekt
 
@@ -158,15 +158,15 @@ namespace ClassLibrary2
 
 Wie bei allen neu generierten Komponententests müssen Sie diesem Komponententest nicht-eindeutige Assert-Anweisungen hinzufügen, damit er brauchbare Ergebnisse zurückgibt. Die Anweisungen werden nicht der mit dem TestMethod-Attribut markierten Methode hinzugefügt, sondern der TestHelper-Methode, die in diesem Test den Namen `DataTestHelper<T>()` hat.
 
- In diesem Beispiel verfügt der generische Typparameter `T` über die Einschränkung `where T : Employee`. Diese Einschränkung wird in der Testmethode nicht erfüllt. Aus diesem Grund enthält die `DataTest()`-Methode eine Assert-Anweisung, die Sie darauf hinweist, dass die für `T` festgelegte Typeinschränkung bereitgestellt werden muss. Die Nachricht der Assert-Anweisung lautet wie folgt: `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
+In diesem Beispiel verfügt der generische Typparameter `T` über die Einschränkung `where T : Employee`. Diese Einschränkung wird in der Testmethode nicht erfüllt. Aus diesem Grund enthält die `DataTest()`-Methode eine Assert-Anweisung, die Sie darauf hinweist, dass die für `T` festgelegte Typeinschränkung bereitgestellt werden muss. Die Nachricht der Assert-Anweisung lautet wie folgt: `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
 
- Anders ausgedrückt bedeutet dies: Wenn Sie die `DataTestHelper<T>()`-Methode aus der Testmethode `DataTest()` aufrufen, müssen Sie einen Parameter des Typs `Employee` oder eine von `Employee` abgeleitete Klasse übergeben.
+Anders ausgedrückt bedeutet dies: Wenn Sie die `DataTestHelper<T>()`-Methode aus der Testmethode `DataTest()` aufrufen, müssen Sie einen Parameter des Typs `Employee` oder eine von `Employee` abgeleitete Klasse übergeben.
 
- `using ClassLibrary2;`
+`using ClassLibrary2;`
 
- `using Microsoft.VisualStudio.TestTools.UnitTesting;`
+`using Microsoft.VisualStudio.TestTools.UnitTesting;`
 
- `namespace TestProject1`
+`namespace TestProject1`
 
 ```csharp
 {

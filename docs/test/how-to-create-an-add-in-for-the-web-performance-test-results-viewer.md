@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747243"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918202"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Add-Ins für den Webleistungstest-Ergebnisviewer
 
@@ -43,9 +43,9 @@ Erstellen oder öffnen Sie eine Projektmappe, bei der es sich nicht um eine Prod
 
 Ein Add-In ist eine kompilierte DLL, die in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) von Visual Studio ausgeführt wird. Durch die Kompilierung wird Ihr geistiges Eigentum geschützt und die Leistung verbessert. Sie können Add-Ins zwar manuell erstellen, aber es ist einfacher, dazu den **Add-In-Assistenten** zu verwenden. Mit diesem Assistenten wird ein voll funktionsfähiges und zugleich einfaches Add-In erstellt, das sofort nach dem Erstellen ausgeführt werden kann. Nachdem vom **Add-In-Assistenten** das grundlegende Programm erstellt wurde, können Sie Code hinzufügen und das Add-In anpassen.
 
- Im **Add-In-Assistenten** können Sie einen Anzeigenamen und eine Beschreibung für das Add-In angeben. Beide werden im **Add-In-Manager** angezeigt. Sie können auch festlegen, dass der Assistent Code generiert, um dem Menü **Extras** einen Befehl zum Öffnen des Add-Ins hinzuzufügen. Sie können für das Add-In auch das benutzerdefinierte Dialogfeld **Info** anzeigen. Wenn der Assistent beendet ist, verfügen Sie über ein neues Projekt mit nur einer Klasse, über die das Add-In implementiert wird. Diese Klasse heißt "Connect".
+Im **Add-In-Assistenten** können Sie einen Anzeigenamen und eine Beschreibung für das Add-In angeben. Beide werden im **Add-In-Manager** angezeigt. Sie können auch festlegen, dass der Assistent Code generiert, um dem Menü **Extras** einen Befehl zum Öffnen des Add-Ins hinzuzufügen. Sie können für das Add-In auch das benutzerdefinierte Dialogfeld **Info** anzeigen. Wenn der Assistent beendet ist, verfügen Sie über ein neues Projekt mit nur einer Klasse, über die das Add-In implementiert wird. Diese Klasse heißt "Connect".
 
- Am Ende dieses Artikels verwenden Sie den **Add-In-Manager**.
+Am Ende dieses Artikels verwenden Sie den **Add-In-Manager**.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>So erstellen Sie mithilfe des Add-In-Assistenten ein Add-In
 
@@ -326,9 +326,9 @@ Um die Sicherheit dadurch zu optimieren, dass böswillige Add-Ins nicht automati
 
 Außerdem können Sie auf dieser Seite die Ordner festlegen, in denen Visual Studio nach *.AddIn*-Registrierungsdateien suchen soll. Dadurch wird die Sicherheit erhöht, da Sie die Speicherorte beschränken können, an denen *.AddIn*-Registrierungsdateien gelesen werden können. Dadurch wird die unabsichtliche Verwendung schädlicher *.AddIn*-Dateien verhindert.
 
- **Einstellungen für die Add-In-Sicherheit**
+**Einstellungen für die Add-In-Sicherheit**
 
- Folgende Einstellungen befinden sich auf der Optionsseite für die Sicherheit von Add-Ins:
+Folgende Einstellungen befinden sich auf der Optionsseite für die Sicherheit von Add-Ins:
 
 - **Allow Add-in components to load.** (Laden von Add-In-Komponenten zulassen.) Standardmäßig ausgewählt. Wenn das Kontrollkästchen aktiviert ist, können Add-Ins in Visual Studio geladen werden. Wenn das Kontrollkästchen deaktiviert ist, können keine Add-Ins in Visual Studio geladen werden.
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973104"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926586"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 
@@ -20,7 +20,7 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Anforderungen**
+**Anforderungen**
 
 - Visual Studio Enterprise
 
@@ -47,17 +47,17 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 
 Unter [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) finden Sie eine Liste der Eigenschaften, zu denen Sie eine Assertion hinzufügen können.
 
- **Sucheigenschaften:** Die Sucheigenschaften für `HtmlAudio` sind `Id`, `Name` und `Title`.
+**Sucheigenschaften:** Die Sucheigenschaften für `HtmlAudio` sind `Id`, `Name` und `Title`.
 
- **Filtereigenschaften:** Die Filtereigenschaften für `HtmlAudio` sind `Src`, `Class`, `ControlDefinition` und `TagInstance`.
+**Filtereigenschaften:** Die Filtereigenschaften für `HtmlAudio` sind `Src`, `Class`, `ControlDefinition` und `TagInstance`.
 
 > [!NOTE]
 > Die Zeitdauer für das Suchen und Anhalten kann erheblich sein. Während der Wiedergabe wartet der Test der programmierten UI bis zur in `(TimeSpan)` angegebenen Zeit, bevor die Audiodatei angehalten wird. Wenn die angegebene Zeit unter bestimmten Ausnahmefällen verstrichen ist, bevor der Befehl „Pause“ aktiviert wurde, wird eine Ausnahme zurückgegeben.
 
 ## <a name="video-control"></a>Videosteuerelement
- **Videosteuerelement:** Aktionen im HTML5-Videosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
+**Videosteuerelement:** Aktionen im HTML5-Videosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
 
- ![HTML5-Videosteuerelement](../test/media/codedui_html5_video.png)
+![HTML5-Videosteuerelement](../test/media/codedui_html5_video.png)
 
 |Aktion|Aufzeichnung|Generierter Code|
 |-|---------------|-|
@@ -70,17 +70,17 @@ Unter [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEle
 
 Unter [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) finden Sie eine Liste der Eigenschaften, zu denen Sie eine Assertion hinzufügen können.
 
- **Sucheigenschaften:** Die Sucheigenschaften für `HtmlVideo` sind `Id`, `Name` und `Title`.
+**Sucheigenschaften:** Die Sucheigenschaften für `HtmlVideo` sind `Id`, `Name` und `Title`.
 
- **Filtereigenschaften:** Die Filtereigenschaften für `HtmlVideo` sind `Src`, `Poster`, `Class`, `ControlDefinition` und `TagInstance`.
+**Filtereigenschaften:** Die Filtereigenschaften für `HtmlVideo` sind `Src`, `Poster`, `Class`, `ControlDefinition` und `TagInstance`.
 
 > [!NOTE]
 > Wenn Sie das Video mithilfe der Bezeichnung „-30s“ oder „+30s“ zurück- bzw. vorspulen, wird dies aggregiert, um nach der entsprechenden Zeit zu suchen.
 
 ## <a name="progressbar"></a>ProgressBar
- **ProgressBar-Steuerelement:** ProgressBar ist ein Steuerelement ohne Interaktionen. Sie können Assertionen für die `Value`- und `Max`-Eigenschaften dieses Steuerelements hinzufügen. Weitere Informationen finden Sie unter [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+**ProgressBar-Steuerelement:** ProgressBar ist ein Steuerelement ohne Interaktionen. Sie können Assertionen für die `Value`- und `Max`-Eigenschaften dieses Steuerelements hinzufügen. Weitere Informationen finden Sie unter [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
- ![HTML5 ProgressBar-Steuerelement](../test/media/codedui_html5_progressbar.png)
+![HTML5 ProgressBar-Steuerelement](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>Siehe auch
 

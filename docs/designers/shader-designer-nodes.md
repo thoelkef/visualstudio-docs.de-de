@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 775d447b3e513e15eeafb1bfd90c54e3ffa70770
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844228"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925752"
 ---
 # <a name="shader-designer-nodes"></a>Shader-Designer-Knoten
 Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschiedenen Shader-Designer-Knoten, die Sie zum Erstellen von grafischen Effekten verwenden können.
 
 ## <a name="nodes-and-node-types"></a>Knoten und Knotentypen
- Der Shader-Designer stellt visuelle Effekte als Diagramm dar. Diese Diagramme werden aus Knoten erstellt, die speziell ausgewählt werden und so miteinander verbunden sind, dass der gewünschte Effekt erreicht wird. Jeder Knoten stellt entweder eine Information oder eine mathematische Funktion dar. Außerdem stellen die Verbindungen dieser Knoten miteinander dar, wie die Informationen durch das Diagramm fließen, um ein Ergebnis zu erzielen. Der Shader-Designer stellt sechs verschiedene Knotentypen (Filter, Texturknoten, Parameter, Konstanten, Hilfsprogrammknoten und Berechnungsknoten) und einige individuelle Knoten bereit, die zu jedem Typ gehören. Diese Knoten und Knotentypen werden in den anderen Artikeln in diesem Abschnitt beschrieben. Weitere Informationen finden Sie unter den Links am Ende dieses Dokuments.
+Der Shader-Designer stellt visuelle Effekte als Diagramm dar. Diese Diagramme werden aus Knoten erstellt, die speziell ausgewählt werden und so miteinander verbunden sind, dass der gewünschte Effekt erreicht wird. Jeder Knoten stellt entweder eine Information oder eine mathematische Funktion dar. Außerdem stellen die Verbindungen dieser Knoten miteinander dar, wie die Informationen durch das Diagramm fließen, um ein Ergebnis zu erzielen. Der Shader-Designer stellt sechs verschiedene Knotentypen (Filter, Texturknoten, Parameter, Konstanten, Hilfsprogrammknoten und Berechnungsknoten) und einige individuelle Knoten bereit, die zu jedem Typ gehören. Diese Knoten und Knotentypen werden in den anderen Artikeln in diesem Abschnitt beschrieben. Weitere Informationen finden Sie unter den Links am Ende dieses Dokuments.
 
 ## <a name="node-structure"></a>Knotenstruktur
- Alle Knoten bestehen aus einer Kombination aus gemeinsamen Elementen. Jeder Knoten verfügt auf der rechten Seite über mindestens ein Ausgabeterminal (außer Farbknoten, die die Ausgabe des Shaders darstellen). Knoten, die Berechnungs- oder Textursampler darstellen, verfügen auf der linken Seite über Eingabeterminals. Knoten, die Informationen darstellen, haben hingegen keine Eingabeterminals. Ausgabeterminals sind mit den Eingabeterminals verbunden, damit sie Informationen von einem Knoten an einen anderen verschieben können.
+Alle Knoten bestehen aus einer Kombination aus gemeinsamen Elementen. Jeder Knoten verfügt auf der rechten Seite über mindestens ein Ausgabeterminal (außer Farbknoten, die die Ausgabe des Shaders darstellen). Knoten, die Berechnungs- oder Textursampler darstellen, verfügen auf der linken Seite über Eingabeterminals. Knoten, die Informationen darstellen, haben hingegen keine Eingabeterminals. Ausgabeterminals sind mit den Eingabeterminals verbunden, damit sie Informationen von einem Knoten an einen anderen verschieben können.
 
 ### <a name="promotion-of-inputs"></a>Heraufstufung von Eingaben
- Da der Shader-Designer letztendlich HLSL-Quellcode generieren muss, damit der Effekt in einem Spiel oder einer App verwendet werden kann, sind Shader-Designerknoten Teil der Regeln zur Typerweiterung, die HLSL verwendet. Da die Grafikhardware hauptsächlich mit Gleitkommawerten arbeitet, ist die Typerweiterung zwischen verschiedenen Typen (z.B. von `int` auf `float` oder von `float` auf `double`) eher ungewöhnlich. Da Grafikhardware den gleichen Vorgang auf mehrere Informationspakete gleichzeitig anwendet, findet eine andere Art der Heraufstufung statt, bei der kürzere Eingabewerte erweitert werden, um sie an die längsten Eingabewerte anzugleichen. Auf welche Weise die Eingabe verlängert wird hängt von deren Typ und dem Vorgang an sich ab:
+Da der Shader-Designer letztendlich HLSL-Quellcode generieren muss, damit der Effekt in einem Spiel oder einer App verwendet werden kann, sind Shader-Designerknoten Teil der Regeln zur Typerweiterung, die HLSL verwendet. Da die Grafikhardware hauptsächlich mit Gleitkommawerten arbeitet, ist die Typerweiterung zwischen verschiedenen Typen (z.B. von `int` auf `float` oder von `float` auf `double`) eher ungewöhnlich. Da Grafikhardware den gleichen Vorgang auf mehrere Informationspakete gleichzeitig anwendet, findet eine andere Art der Heraufstufung statt, bei der kürzere Eingabewerte erweitert werden, um sie an die längsten Eingabewerte anzugleichen. Auf welche Weise die Eingabe verlängert wird hängt von deren Typ und dem Vorgang an sich ab:
 
 - **Wenn der kleinere Typ ein Skalarwert ist, dann:**
 
@@ -41,7 +41,7 @@ Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschi
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Konstante Knoten](../designers/constant-nodes.md)|Beschreibt Knoten, die Sie verwenden können, um Literalwerte und interpolierte Informationen zu Vertexzuständen in Shader-Berechnungen darzustellen. Vertexzustände werden interpoliert und unterscheiden sich daher in jedem Pixel: Jede Pixel-Shader-Instanz empfängt eine andere Version der Konstanten.|
 |[Parameterknoten](../designers/parameter-nodes.md)|Beschreibt Knoten, die Sie zur Darstellung der Kameraposition, Materialeigenschaften, Lichtparameter, Zeit und andere Informationen zum App-Status in Shader-Berechnungen verwenden können.|

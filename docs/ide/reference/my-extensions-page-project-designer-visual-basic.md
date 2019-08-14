@@ -13,32 +13,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1527d3d44d499028c852cb09e489c1b873b11c45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540610"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926159"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Seite "My-Erweiterungen", Projekt-Designer (Visual Basic)
 Verwenden Sie die Seite **My-Erweiterungen** des **Projekt-Designers**, um `My`-Namespaceerweiterungen in Ihrem Projekt zu verwalten. Mithilfe von `My`-Namespaceerweiterungen können Sie den `My`-Namespace so anpassen, dass Ihre eigenen benutzerdefinierten Member hinzugefügt werden. Informationen zum Erstellen der benutzerdefinierten `My`-Namespaceerweiterungen finden Sie unter [Erweitern des My-Namespaces in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
- Um auf die Seite **My-Erweiterungen** zuzugreifen, doppelklicken Sie für Ihren Projektknoten im **Projektmappen-Explorer** auf **Mein Projekt**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **My-Erweiterungen**.
+Um auf die Seite **My-Erweiterungen** zuzugreifen, doppelklicken Sie für Ihren Projektknoten im **Projektmappen-Explorer** auf **Mein Projekt**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **My-Erweiterungen**.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- Mithilfe der folgenden Optionen können Sie die `My`-Namespaceerweiterungen Ihrem Projekt hinzufügen oder aus diesem entfernen. Eine `My`-Namespaceerweiterung muss zunächst als Visual Studio-Elementvorlage installiert werden, damit sie verfügbar ist und hinzugefügt werden kann. Informationen zur Veröffentlichung und Installation von `My`-Namespaceerweiterungen finden Sie unter [Packen und Bereitstellen von benutzerdefinierten My-Erweiterungen](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
+Mithilfe der folgenden Optionen können Sie die `My`-Namespaceerweiterungen Ihrem Projekt hinzufügen oder aus diesem entfernen. Eine `My`-Namespaceerweiterung muss zunächst als Visual Studio-Elementvorlage installiert werden, damit sie verfügbar ist und hinzugefügt werden kann. Informationen zur Veröffentlichung und Installation von `My`-Namespaceerweiterungen finden Sie unter [Packen und Bereitstellen von benutzerdefinierten My-Erweiterungen](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **My-Namespaceerweiterungen**
 
- In dieser Liste sind alle in dem Projekt installierten `My`-Namespaceerweiterungen aufgelistet.
+In dieser Liste sind alle in dem Projekt installierten `My`-Namespaceerweiterungen aufgelistet.
 
  **Erweiterung hinzufügen**
 
- Klicken Sie auf diese Schaltfläche, um Ihrem Projekt eine installierte `My`-Namespaceerweiterung hinzuzufügen. Es wird eine Liste aller möglichen `My`-Namespaceerweiterungen angezeigt. Wählen Sie die `My`-Namespaceerweiterung aus, die Sie Ihrem Projekt hinzufügen möchten, und klicken Sie auf **OK**, um sie hinzuzufügen.
+Klicken Sie auf diese Schaltfläche, um Ihrem Projekt eine installierte `My`-Namespaceerweiterung hinzuzufügen. Es wird eine Liste aller möglichen `My`-Namespaceerweiterungen angezeigt. Wählen Sie die `My`-Namespaceerweiterung aus, die Sie Ihrem Projekt hinzufügen möchten, und klicken Sie auf **OK**, um sie hinzuzufügen.
 
  **Erweiterung entfernen**
 
- Wählen Sie mindestens einen Verweis in der Liste **My-Namespaceerweiterungen** aus, und klicken Sie dann auf diese Schaltfläche, um die `My`-Namespaceerweiterung aus dem Projekt zu entfernen.
+Wählen Sie mindestens einen Verweis in der Liste **My-Namespaceerweiterungen** aus, und klicken Sie dann auf diese Schaltfläche, um die `My`-Namespaceerweiterung aus dem Projekt zu entfernen.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 3c31617def66499e29c4c2fc3e2a1804e7446d9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "66745009"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926261"
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
 
@@ -26,41 +26,41 @@ Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Too
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
- Codeanalyse aktivieren\
- Aktiviert oder deaktiviert die Codeanalyse für Ihr Projekt.
+Codeanalyse aktivieren\
+Aktiviert oder deaktiviert die Codeanalyse für Ihr Projekt.
 
- Entwurfsregeln\
- Aktiviert oder deaktiviert die Entwurfsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Entwurfsregeln\
+Aktiviert oder deaktiviert die Entwurfsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Globalisierungsregeln\
- Aktiviert oder deaktiviert die Globalisierungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Globalisierungsregeln\
+Aktiviert oder deaktiviert die Globalisierungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Interoperabilitätsregeln\
- Aktiviert oder deaktiviert Interoperabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Interoperabilitätsregeln\
+Aktiviert oder deaktiviert Interoperabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Wartbarkeitsregeln\
- Aktiviert oder deaktiviert Wartbarkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Wartbarkeitsregeln\
+Aktiviert oder deaktiviert Wartbarkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Mobilitätsregeln\
- Aktiviert oder deaktiviert Mobilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Mobilitätsregeln\
+Aktiviert oder deaktiviert Mobilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Benennungsregeln\
- Aktiviert oder deaktiviert Benennungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Benennungsregeln\
+Aktiviert oder deaktiviert Benennungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Leistungsregeln\
- Aktiviert oder deaktiviert Leistungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Leistungsregeln\
+Aktiviert oder deaktiviert Leistungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Portabilitätsregeln\
- Aktiviert oder deaktiviert Portabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Portabilitätsregeln\
+Aktiviert oder deaktiviert Portabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Zuverlässigkeitsregeln\
- Aktiviert oder deaktiviert Zuverlässigkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Zuverlässigkeitsregeln\
+Aktiviert oder deaktiviert Zuverlässigkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Sicherheitsregeln\
- Aktiviert oder deaktiviert Sicherheitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Sicherheitsregeln\
+Aktiviert oder deaktiviert Sicherheitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Nutzungsregeln\
- Aktiviert oder deaktiviert Nutzungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
+Nutzungsregeln\
+Aktiviert oder deaktiviert Nutzungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
 ## <a name="see-also"></a>Siehe auch
 
