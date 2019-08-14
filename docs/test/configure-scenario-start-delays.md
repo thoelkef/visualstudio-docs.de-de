@@ -8,12 +8,12 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83e3086aa8181156a9d35a906a9d3a7e60575cd2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963792"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918444"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurieren des Szenarios „Startverzögerungen in Auslastungstests“
 
@@ -32,9 +32,9 @@ Sie können mit dem Auslastungstest-Editor eine Verzögerung vor dem Beginn eine
 > [!NOTE]
 > Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
- Die Eigenschaft **Startzeit verzögern** kann z.B. verwendet werden, wenn Sie in einem Szenario mit der Erstellung von Elementen beginnen müssen, die in einem anderen Szenario benötigt werden. Sie können das Szenario, in dem die Elemente verwendet werden sollen, verzögern, damit in dem Szenario, in dem die Elemente erstellt werden, einige Daten ausgefüllt werden.
+Die Eigenschaft **Startzeit verzögern** kann z.B. verwendet werden, wenn Sie in einem Szenario mit der Erstellung von Elementen beginnen müssen, die in einem anderen Szenario benötigt werden. Sie können das Szenario, in dem die Elemente verwendet werden sollen, verzögern, damit in dem Szenario, in dem die Elemente erstellt werden, einige Daten ausgefüllt werden.
 
- Ein anderes Beispiel ist, dass ein Szenario nur zu einer bestimmten Tageszeit ausgeführt wird. Sie möchten daher den Start des Szenarios verzögern, um dies zu simulieren.
+Ein anderes Beispiel ist, dass ein Szenario nur zu einer bestimmten Tageszeit ausgeführt wird. Sie möchten daher den Start des Szenarios verzögern, um dies zu simulieren.
 
 > [!NOTE]
 > Eine vollständige Liste der Eigenschaften von Laufzeiteinstellungen und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
@@ -62,7 +62,7 @@ Sie können mit dem Auslastungstest-Editor eine Verzögerung vor dem Beginn eine
 
 Die Eigenschaft **Während Aufwärmdauer deaktivieren** wird über das **Eigenschaftenfenster** festgelegt. Die Bearbeitung der Eigenschaften von Auslastungstestszenarien wird durch den Auslastungstest-Editor festgelegt.
 
- Mit der Eigenschaft **Während Aufwärmdauer deaktivieren** wird angegeben, ob das Szenario während der Aufwärmphase, die in der Eigenschaft **Startzeit verzögern** angegeben ist, ausgeführt werden soll oder nicht. Weitere Informationen finden Sie in der vorherigen Prozedur [Angeben einer verzögerten Startzeit für ein Szenario](#specify-the-delay-start-time-of-a-scenario).
+Mit der Eigenschaft **Während Aufwärmdauer deaktivieren** wird angegeben, ob das Szenario während der Aufwärmphase, die in der Eigenschaft **Startzeit verzögern** angegeben ist, ausgeführt werden soll oder nicht. Weitere Informationen finden Sie in der vorherigen Prozedur [Angeben einer verzögerten Startzeit für ein Szenario](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
 > Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).

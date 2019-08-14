@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783793"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918277"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurieren von Testiterationen in einem Auslastungstestszenario
 
@@ -32,18 +32,18 @@ Mit der Eigenschaft **Maximale Anzahl von Testiterationen** wird die maximale An
 > [!NOTE]
 > Eine vollständige Liste der Eigenschaften von Auslastungstestszenarios und deren Beschreibungen finden Sie unter [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md).
 
- Für eine sequenzielle Testmischung ist eine Iteration ein Durchlauf durch alle Tests in der Mischung. Für alle anderen Testmischungen zählt jede Testausführung als Iteration. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+Für eine sequenzielle Testmischung ist eine Iteration ein Durchlauf durch alle Tests in der Mischung. Für alle anderen Testmischungen zählt jede Testausführung als Iteration. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Wenn der Auslastungstest ein dauerbasierter Auslastungstest ist und die Dauer abläuft, bevor sämtliche Iterationen abgeschlossen sind, wird der Test beendet. Wenn der Test iterationsbasiert ist und die Testiterationen vor Szenarioiterationen erreicht werden, wird der Test beendet. Die Dauer wird mit der Eigenschaft **Testlaufdauer** im **Eigenschaftenfenster** konfiguriert, das einer Testlaufeinstellung in einem Auslastungstest zugeordnet ist.
+Wenn der Auslastungstest ein dauerbasierter Auslastungstest ist und die Dauer abläuft, bevor sämtliche Iterationen abgeschlossen sind, wird der Test beendet. Wenn der Test iterationsbasiert ist und die Testiterationen vor Szenarioiterationen erreicht werden, wird der Test beendet. Die Dauer wird mit der Eigenschaft **Testlaufdauer** im **Eigenschaftenfenster** konfiguriert, das einer Testlaufeinstellung in einem Auslastungstest zugeordnet ist.
 
- Wenn die Anzahl der Szenarioiterationen erreicht wird, wird die Ausführung des Szenarios beendet, doch alle anderen aktiven Szenarien werden weiterhin ausgeführt.
+Wenn die Anzahl der Szenarioiterationen erreicht wird, wird die Ausführung des Szenarios beendet, doch alle anderen aktiven Szenarien werden weiterhin ausgeführt.
 
 > [!NOTE]
 > Eine verwandte Eigenschaft ist die Eigenschaft **Eindeutig** für eine Webtest-Datenquelle, mit der Zeile für Zeile sequenziell durch die Daten navigiert wird. Dabei wird jedoch jeder Datensatz nur einmal angesteuert. Weitere Informationen finden Sie unter [Hinzufügen einer Datenquelle für einen Webleistungstests](../test/add-a-data-source-to-a-web-performance-test.md).
 
- Die Eigenschaft **Maximale Anzahl von Testiterationen** ist für eine Vielzahl von Situationen nützlich. Einige Auslastungstester bevorzugen iterationsbasierte Tests, andere hingegen auf der Dauer basierende Tests.
+Die Eigenschaft **Maximale Anzahl von Testiterationen** ist für eine Vielzahl von Situationen nützlich. Einige Auslastungstester bevorzugen iterationsbasierte Tests, andere hingegen auf der Dauer basierende Tests.
 
- ![Angeben von Testiterationen in einem Szenario](../test/media/loadtest_prop.png)
+![Angeben von Testiterationen in einem Szenario](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>So geben Sie die maximale Anzahl von Testiterationen an
 

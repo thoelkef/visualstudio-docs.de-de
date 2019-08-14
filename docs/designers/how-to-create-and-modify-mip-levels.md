@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50543a1f0191847beb4f849d56517cd0f12a1f7c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 026916a86609f665fdb8329b9c9eacf147be51e3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408619"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924274"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Vorgehensweise: Erstellen und Ändern von MIP-Ebenen
 Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *MIP-Ebenen* für den Detaillierungsgrad (LOD) des Texturraums zu generieren und zu ändern.
 
 ## <a name="generating-mip-levels"></a>Generieren von MIP-Ebenen
- *Mipmapping* ist eine Technik, die verwendet wird, um Renderingvorgänge zu beschleunigen und Aliasingartefakte auf strukturierten Objekten zu reduzieren, indem mehrere Kopien einer Textur in unterschiedlichen Größen vorberechnet und gespeichert werden. Jede als MIP-Ebene bezeichnete Kopie hat die halbe Breite und halbe Höhe der vorherigen Kopie. Wenn eine Textur auf der Oberfläche eines Objekts gerendert wird, wird die MIP-Ebene, die am ehesten dem Bildraumbereich der strukturierten Oberfläche entspricht, automatisch ausgewählt. Das bedeutet, dass die Grafikhardware übergroße Texturen nicht filtern muss, um für eine konsistente visuelle Qualität zu sorgen. Die Arbeitsspeicherkosten zum Speichern der MIP-Ebenen sind zwar ca. 33 Prozent höher als für die Originaltextur allein, die Leistungssteigerung und die bessere Bildqualität rechtfertigen diese Kosten jedoch.
+*Mipmapping* ist eine Technik, die verwendet wird, um Renderingvorgänge zu beschleunigen und Aliasingartefakte auf strukturierten Objekten zu reduzieren, indem mehrere Kopien einer Textur in unterschiedlichen Größen vorberechnet und gespeichert werden. Jede als MIP-Ebene bezeichnete Kopie hat die halbe Breite und halbe Höhe der vorherigen Kopie. Wenn eine Textur auf der Oberfläche eines Objekts gerendert wird, wird die MIP-Ebene, die am ehesten dem Bildraumbereich der strukturierten Oberfläche entspricht, automatisch ausgewählt. Das bedeutet, dass die Grafikhardware übergroße Texturen nicht filtern muss, um für eine konsistente visuelle Qualität zu sorgen. Die Arbeitsspeicherkosten zum Speichern der MIP-Ebenen sind zwar ca. 33 Prozent höher als für die Originaltextur allein, die Leistungssteigerung und die bessere Bildqualität rechtfertigen diese Kosten jedoch.
 
 #### <a name="to-generate-mip-levels"></a>So generieren Sie MIP-Ebenen
 
@@ -30,7 +30,7 @@ Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *
      Beachten Sie, dass die Schaltflächen **Zur nächsten MIP-Ebene wechseln** und **Zur vorherigen MIP-Ebene wechseln** jetzt auf der Symbolleiste **Bildbearbeitungsmodus** angezeigt werden. Wenn das Fenster **Eigenschaften** angezeigt wird, beachten Sie auch, dass die schreibgeschützten Eigenschaften **Mip-Ebene** und **Anzahl der Mip-Ebenen** nun in den Bildeigenschaften angezeigt werden.
 
 ## <a name="modifying-mip-levels"></a>Ändern von MIP-Ebenen
- Um Spezialeffekte zu erzielen oder die Bildqualität auf bestimmten Detailebenen zu erhöhen, können Sie jede MIP-Ebene einzeln ändern. Beispielsweise können Sie einem strukturierten Objekt ein anderes Erscheinungsbild in einem bestimmten Abstand geben (größerer Abstand entspricht kleineren MIP-Ebenen). Oder Sie können sicherstellen, dass Texturen, die Text oder Symbole enthalten, sogar auf kleineren MIP-Ebenen lesbar bleiben.
+Um Spezialeffekte zu erzielen oder die Bildqualität auf bestimmten Detailebenen zu erhöhen, können Sie jede MIP-Ebene einzeln ändern. Beispielsweise können Sie einem strukturierten Objekt ein anderes Erscheinungsbild in einem bestimmten Abstand geben (größerer Abstand entspricht kleineren MIP-Ebenen). Oder Sie können sicherstellen, dass Texturen, die Text oder Symbole enthalten, sogar auf kleineren MIP-Ebenen lesbar bleiben.
 
 #### <a name="to-modify-an-individual-mip-level"></a>So ändern Sie eine einzelne MIP-Ebene
 

@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3cd641a6361a8cf555e722ccd6c42414f5bdbe7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822799"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926445"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen mithilfe des Auslastungstest-Analyzers
 
@@ -37,11 +37,11 @@ Sie können diese Aufgaben unabhängig davon vornehmen, ob der Auslastungstest i
 
 ## <a name="differences-between-analyzing-a-running-and-a-completed-load-test"></a>Unterschiede zwischen dem Analysieren eines laufenden und eines abgeschlossenen Auslastungstests
 
- Wenn Sie einen Auslastungstest ausführen, wird der **Auslastungstest-Analyzer** auf einer separaten Registerkarte mit dem Namen und der Startzeit des Auslastungstests angezeigt (z.B. **LoadTest1 [12:40]**). Beim Ausführen eines Auslastungstests wird ein Teil der Leistungsindikatordaten im Arbeitsspeicher beibehalten. Diese Daten können während des Auslastungstests überwacht werden. Nach Abschluss eines Auslastungstests kann die vollständige Datenmenge aus der Datenbank analysiert werden. Die während eines Auslastungstests und nach Abschluss eines Auslastungstests angezeigten Daten unterscheiden sich. Daten für Antwortzeiten von 90 % und 95 % werden z. B. erst berechnet, nachdem der Auslastungstest abgeschlossen wurde. Unterschiede bestehen auch hinsichtlich der Funktion der Tools, die zum Analysieren der Daten zur Verfügung stehen.
+Wenn Sie einen Auslastungstest ausführen, wird der **Auslastungstest-Analyzer** auf einer separaten Registerkarte mit dem Namen und der Startzeit des Auslastungstests angezeigt (z.B. **LoadTest1 [12:40]** ). Beim Ausführen eines Auslastungstests wird ein Teil der Leistungsindikatordaten im Arbeitsspeicher beibehalten. Diese Daten können während des Auslastungstests überwacht werden. Nach Abschluss eines Auslastungstests kann die vollständige Datenmenge aus der Datenbank analysiert werden. Die während eines Auslastungstests und nach Abschluss eines Auslastungstests angezeigten Daten unterscheiden sich. Daten für Antwortzeiten von 90 % und 95 % werden z. B. erst berechnet, nachdem der Auslastungstest abgeschlossen wurde. Unterschiede bestehen auch hinsichtlich der Funktion der Tools, die zum Analysieren der Daten zur Verfügung stehen.
 
- Wenn Sie den Auslastungstest ausführen, sind zwei Ansichten verfügbar: Die **Diagrammansicht** und die **Tabellenansicht**. Die **Diagrammansicht** ermöglicht es Ihnen, gesammelte Leistungsindikatoren grafisch darzustellen. Die **Tabellenansicht** liefert Informationen zu den einzelnen gesammelten Tests, Seiten, Transaktionen und Anforderungen. Zudem wird eine Tabelle mit den Fehlern angezeigt.
+Wenn Sie den Auslastungstest ausführen, sind zwei Ansichten verfügbar: Die **Diagrammansicht** und die **Tabellenansicht**. Die **Diagrammansicht** ermöglicht es Ihnen, gesammelte Leistungsindikatoren grafisch darzustellen. Die **Tabellenansicht** liefert Informationen zu den einzelnen gesammelten Tests, Seiten, Transaktionen und Anforderungen. Zudem wird eine Tabelle mit den Fehlern angezeigt.
 
- Standardmäßig wird nach Abschluss des Auslastungstestlaufs die **Zusammenfassungsansicht** angezeigt. Sie können mithilfe der Symbolleiste zwischen den Ansichten **Zusammenfassung**, **Diagramme**, **Tabellen** und **Details** wechseln. Der **Auslastungstest-Analyzer** kann auch mit den üblichen Verfahren zum Bearbeiten von Fenstern in Visual Studio angedockt oder unverankert verwendet werden. Beim Analysieren abgeschlossener Auslastungstestläufe können Sie mehrere **Auslastungstest-Analyzer** gleichzeitig öffnen, um die verschiedenen Testläufe zu vergleichen.
+Standardmäßig wird nach Abschluss des Auslastungstestlaufs die **Zusammenfassungsansicht** angezeigt. Sie können mithilfe der Symbolleiste zwischen den Ansichten **Zusammenfassung**, **Diagramme**, **Tabellen** und **Details** wechseln. Der **Auslastungstest-Analyzer** kann auch mit den üblichen Verfahren zum Bearbeiten von Fenstern in Visual Studio angedockt oder unverankert verwendet werden. Beim Analysieren abgeschlossener Auslastungstestläufe können Sie mehrere **Auslastungstest-Analyzer** gleichzeitig öffnen, um die verschiedenen Testläufe zu vergleichen.
 
 ## <a name="tasks"></a>Aufgaben
 
