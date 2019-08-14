@@ -1,26 +1,44 @@
 ---
 title: Microsoft Azure-Vorteil | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823747"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681667"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
-
-## <a name="overview"></a>Übersicht
-
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrer [monatlichen Azure-Gutschrift](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
 
-## <a name="eligibility"></a>Berechtigung
+## <a name="activation-steps"></a>Aktivierungsschritte
+1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
+2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Azure“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Aktivieren**.
+   > [!div class="mx-imgBorder"]
+   > ![Azure-Kachel](_img/vs-azure/vs-azure-tile.png)
+
+3. Wenn Sie kein Azure-Abonnement haben, füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen. Aktivieren Sie dann das Kontrollkästchen, um die Geschäftsbedingungen zu akzeptieren, und klicken Sie dann auf **Registrieren**:
+   > [!div class="mx-imgBorder"]
+   > ![Azure-Registrierung](_img/vs-azure/vs-azure-sign-up-cropped.png). Wenn Sie über ein vorhandenes Abonnement verfügen, aktivieren Sie das Kontrollkästchen, um die Vereinbarung zu akzeptieren, und klicken Sie dann auf **Registrieren**.
+
+4. Wenn Ihr Konto verwendet werden kann, können Sie sich für einen Azure-Supportplan entscheiden, der separat erworben werden kann, oder erste Schritte mit Ihrem Azure-Abonnement durchführen.
+   > [!div class="mx-imgBorder"]
+   > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+
+5. Das Schnellstartcenter für das Azure-Dashboard wird geladen.  
+   > [!div class="mx-imgBorder"]
+   > ![Azure-Dashboard](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+
+6. Fügen Sie ein Lesezeichen für das [Azure-Portal](https://portal.azure.com) zu, damit Sie darauf immer leicht und schnell zugreifen können.
+
+
+## <a name="eligibility"></a>Berechtigung
 |                 Abonnementstufe/Programm                 |           Vorteil           |                         Erneuerbar?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 USD monatliches Guthaben     |                             Ja                             ||
@@ -46,30 +64,7 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
-## <a name="activation-steps"></a>Aktivierungsschritte
-
-1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
-
-2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Tools“ die Kachel „Azure“, und klicken Sie im unteren Bereich der Kachel mit den Vorteilen auf den Link **Aktivieren**.
-   > [!div class="mx-imgBorder"]
-   > ![Azure-Kachel](_img/vs-azure/vs-azure-tile.png)
-
-3. Füllen Sie die erforderlichen Informationen aus, um Ihr Azure-Abonnement zu erstellen. Aktivieren Sie dann das Kontrollkästchen, um die allgemeinen Geschäftsbedingungen zu akzeptieren, und klicken Sie auf **Registrieren**:
-   > [!div class="mx-imgBorder"]
-   > ![Azure-Registrierung](_img/vs-azure/vs-azure-sign-up-cropped.png)
-
-4. Wenn Ihr Konto verwendet werden kann, können Sie sich für einen Azure-Supportplan entscheiden, der separat erworben werden kann, oder erste Schritte mit Ihrem Azure-Abonnement durchführen.
-   > [!div class="mx-imgBorder"]
-   > ![Erste Schritte mit Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
-
-5. Das Azure-Dashboard wird geladen. Wenn Sie sich zum ersten Mal anmelden, können Sie eine Tour machen.  Die Tour besteht aus mehreren Bildschirmtipps, in denen erklärt wird, wie Sie verschiedene Aktionen durchführen und die für Sie relevanten Informationen finden.  Nach Abschluss der Tour wird das Azure-Dashboard angezeigt.
-
-6. Fügen Sie ein Lesezeichen für das [Azure-Portal](https://portal.azure.com) zu, damit Sie darauf immer leicht und schnell zugreifen können.
-   > [!div class="mx-imgBorder"]
-   > ![Azure-Dashboard](_img/vs-azure/vs-azure-dashboard-cropped.png)
-
-## <a name="faq"></a>FAQ
-
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Frage: Wie sende ich aus dem Azure-Portal eine Anfrage an den technischen Support?
 Antwort:  Die Übermittlung einer Supportanfrage aus dem Azure-Portal umfasst drei Schritte.
 1. Aktivieren Sie Ihren Vorteil für den technischen Support, und rufen Sie die Zugriffs-ID und Ihre Vertrags-ID ab.
@@ -79,7 +74,6 @@ Antwort:  Die Übermittlung einer Supportanfrage aus dem Azure-Portal umfasst dr
 Ausführliche Informationen finden Sie in der Dokumentation zum [technischen Support](vs-tech-support.md).
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Frage: Ich habe eine Nachricht erhalten, dass ich bald keinen Zugriff auf Azure mehr haben werde.  Wie kann ich Azure weiterhin nutzen?
-
 Antwort:  Sie erhalten diese E-Mail, weil Sie den mit Ihrem Visual Studio-Abonnement verbundenen Azure-Vorteil nutzen und dieses Abonnement abgelaufen ist oder entfernt wurde.  Um Azure weiterhin zu verwenden, haben Sie mehrere Möglichkeiten:
 
 **Empfohlene Aktion:**
@@ -105,9 +99,14 @@ Wenn Sie dieses Visual Studio-Azure-Abonnement nicht fortsetzen möchten, könne
 Wenn Sie der Meinung sind, dass Sie diese E-Mail irrtümlich erhalten haben, wenden Sie sich an den [Azure-Kundendienst](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
 ## <a name="support-resources"></a>Supportressourcen
-
 - Benötigen Sie Hilfe bei Azure?  Sehen Sie sich diese Ressourcen an:
   - Technischer Support: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure-Dokumentation](/azure/)
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Weitere Informationen zu Microsoft-Tools und -Diensten finden Sie in der Dokumentation zu:
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Visual Studio-IDE](/visualstudio/)

@@ -1,17 +1,17 @@
 ---
 title: Parasoft Virtualize/SOAtest Professional Desktop-Vorteil | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-Abonnement aktivieren, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824639"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787700"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
 
@@ -27,7 +27,10 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 
 3. Sie werden zur Parasoft-Website umgeleitet. Dort können Sie ein Konto erstellen.  Stellen Sie Ihre Kontaktinformationen bereit, und klicken sie auf **Weiter**.
    > [!div class="mx-imgBorder"]
-   > ![Parasoft-Vorteil: Konto erstellen](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Parasoft-Vorteil: Konto erstellen](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > Die Tabelle auf der Seite zeigt die Preise für ein ganzes Jahr, zuzüglich eines Visual Studio-Rabatts. Dieser Preis gilt, NACHDEM Sie Ihr sechsmonatiges Abonnement genutzt haben.  
 
 4. Sobald Sie ein Konto erstellt haben, wird Ihnen eine Benachrichtigung angezeigt, dass die Anweisungen zum Herunterladen Ihnen per E-Mail gesendet wurden.  (Denken Sie daran, Ihren Spamordner oder Junk-E-Mail-Ordner zu überprüfen, wenn die E-Mail in Ihrem Posteingang nicht angezeigt wird.)
 
@@ -56,14 +59,12 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 14. Geben Sie an, wo die Verknüpfung für die Anwendung installiert werden soll, und klicken Sie auf **Weiter**.
 
 15. Das SOAtest-Webstammzertifikat der Zertifizierungsstelle ist für bestimmte Funktionstests auf HTTPS-Websites erforderlich.  Wählen Sie aus, ob Sie das Stammzertifikat der Zertifizierungsstelle installieren möchten, und klicken Sie auf **Weiter**.
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft-Vorteil: Stammzertifikat der Zertifizierungsstelle](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft empfiehlt dringend, das Zertifikat zu installieren.
 
 16. Wählen Sie aus, ob während der Installation Desktop- oder Schnellstartsymbole erstellt werden sollen, und klicken Sie auf **Weiter**.
 
 17. Bestätigen Sie die Optionen, die Sie ausgewählt haben, und klicken Sie auf **Installieren**, um mit dem Installieren der Software zu beginnen.
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft-Vorteil: Bereit für die Installation](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. Wenn das Setup abgeschlossen wurde, klicken Sie auf **Fertig stellen**. Sie können nun mit der Verwendung des Parasoft Virtualize/SOAtest Professional Desktop-Vorteils beginnen.
 
@@ -89,3 +90,6 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
   - Parasoft-Ressourcencenter: https://www.parasoft.com/resources/
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Profitieren Sie von ihrer eigenen Entwicklungssandbox, indem Sie Ihr [Azure-Guthaben](vs-azure.md) aktivieren. 

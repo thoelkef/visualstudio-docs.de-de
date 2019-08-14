@@ -1,21 +1,22 @@
 ---
-title: Azure-Community-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
+title: Azure-Community-Support-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
-description: Erfahren Sie mehr über den Azure-Community-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 9cd166d2e6be64713e6e79569133eea887568da1
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Erfahren Sie mehr über den Azure-Community-Support-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
+ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250822"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681245"
 ---
-# <a name="azure-community"></a>Azure-Community
-
+# <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Azure-Community-Support-Forum in Visual Studio-Abonnements
 Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-Team.  Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu verschiedenen Themen rund um Azure.
+
+## <a name="available-topics"></a>Verfügbare Themen
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -27,7 +28,7 @@ Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-
 | [Azure-Verwaltungsportal](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-## <a name="activation-steps"></a>Aktivierungsschritte
+## <a name="get-started"></a>Erste Schritte
 Die ersten Schritte mit der Azure-Community sind ganz einfach.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
@@ -66,3 +67,6 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - [Azure-Dokumentation](/azure/).
 - Benötigen Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements?  Wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Wussten Sie, dass in vielen Visual Studio-Abonnements Azure-Gutschriften enthalten sind?  Erfahren Sie, wie Sie Ihre [aktivieren](vs-azure.md).

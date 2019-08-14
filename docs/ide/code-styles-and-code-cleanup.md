@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 4c7bb8f3e94a761023a19a5ea3361073b73d9f3b
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328764"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822429"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -58,7 +58,7 @@ In diesem Fenster festgelegte Optionen gelten für Ihr Visual Studio-Personalis
 
 ### <a name="preference-and-severity"></a>Einstellung und Schweregrad
 
-Sie können für jede dieser Codeformateinstellungen auf dieser Seite über die Dropdownfelder jeder Zeile die Werte für **Preference** (Präferenz)und **Schweregrad** festlegen. Der Schweregrad kann auf **Kein**, **Vorschlag**, **Warnung** oder **Fehler** festgelegt werden. Wenn Sie für ein Codeformat [Schnellaktionen](../ide/quick-actions.md) aktivieren möchten, stellen Sie sicher, dass die Einstellung für den **Schweregrad** auf einen anderen Wert als **Kein** festgelegt ist. Das Glühbirnensymbol für **Schnellaktionen** ![Glühbirnensymbol](media/light-bulb-dropdown.png), das Fehlerglühbirnensymbol ![Fehlerglühbirnensymbol](media/error-bulb.png) oder das Schraubendrehersymbol ![Schraubendrehersymbol](media/screwdriver.png) wird angezeigt, wenn ein nicht bevorzugtes Format verwendet wird, und Sie können eine Option aus der Liste der **Schnellaktionen** auswählen, um den Code automatisch im bevorzugten Format neu zu schreiben.
+Sie können für jede dieser Codeformateinstellungen auf dieser Seite über die Dropdownfelder jeder Zeile die Werte für **Preference** (Präferenz)und **Schweregrad** festlegen. Der Schweregrad kann auf **Nur Refactoring**, **Vorschlag**, **Warnung** oder **Fehler** festgelegt werden. Wenn Sie für ein Codeformat [Schnellaktionen](../ide/quick-actions.md) aktivieren möchten, stellen Sie sicher, dass die Einstellung für den **Schweregrad** auf einen anderen Wert als **Nur Refactoring** festgelegt ist. Das Glühbirnensymbol für **Schnellaktionen** ![Glühbirnensymbol](media/light-bulb-dropdown.png), das Fehlerglühbirnensymbol ![Fehlerglühbirnensymbol](media/error-bulb.png) oder das Schraubendrehersymbol ![Schraubendrehersymbol](media/screwdriver.png) wird angezeigt, wenn ein nicht bevorzugtes Format verwendet wird, und Sie können eine Option aus der Liste der **Schnellaktionen** auswählen, um den Code automatisch im bevorzugten Format neu zu schreiben.
 
 ## <a name="apply-code-styles"></a>Anwenden von Codeformaten
 

@@ -6,24 +6,22 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893583"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821936"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 
 In diesem Artikel werden Layoutpanels und Steuerelemente für den XAML-Designer erläutert.
 
-Stellen Sie sich vor, wo Objekte (z.B. Bilder, Schaltflächen oder Videos) auf einer Seite angezeigt werden sollen. Möglicherweise sollen sie in Zeilen und Spalten in einer einzigen Zeile, vertikal oder horizontal oder an festen Positionen anzeigt werden.
+Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen&mdash;Objekte wie Bilder, Schaltflächen und Videos. Möglicherweise sollen sie in Zeilen und Spalten in einer einzigen Zeile, vertikal oder horizontal oder an festen Positionen anzeigt werden.
 
 Nachdem Sie sich Gedanken über das Erscheinungsbild der Seite gemacht haben, wählen sie einen Layoutbereich aus. Alle Seiten starten mit einem, da Ihre Objekte zu etwas hinzugefügt werden müssen. Standardmäßig handelt es sich zwar um ein **Raster**, aber Sie können dies ändern.
 
-LayoutPanel-Elemente helfen Ihnen, Objekte auf einer Seite anzuordnen, aber sie können noch mehr. Sie helfen Ihnen, für verschiedene Bildschirmgrößen und Auflösungen zu entwerfen. Wenn Benutzer Ihre Anwendung ausführen, wird alles in einem Layoutpanel passend zur Bildschirmfläche des Geräts angepasst. Sollten sie dies für Ihr Layout nicht wollen, lässt sich dieses Verhalten für einen Teil des Layouts oder für das gesamte Layout überschreiben. Um dies zu steuern, können Sie Höhen-und Breiteneigenschaften verwenden.
+LayoutPanel-Elemente helfen Ihnen, Objekte auf einer Seite anzuordnen, aber sie können noch mehr. Sie helfen Ihnen, für verschiedene Bildschirmgrößen und Auflösungen zu entwerfen. Wenn Benutzer Ihre Anwendung ausführen, wird alles in einem Layoutpanel passend zur Bildschirmfläche des Geräts angepasst. Wenn Sie dies nicht möchten, können Sie dieses Verhalten für einen Teil des Layouts oder das gesamte Layout natürlich überschreiben. Um dies zu steuern, können Sie Höhen-und Breiteneigenschaften verwenden.
 
 ## <a name="layout-panels"></a>Layoutbereiche
 
@@ -41,9 +39,9 @@ Anordnen von Objekten in Zeilen und Spalten.
 
 Anordnen von Objekten in gleiche oder einheitliche Rasterbereiche. Dieser Bereich eignet sich hervorragend für die Anordnung einer Liste von Bildern.
 
-![Layoutpanel „UniformGrid“](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
-
 (Nur für WPF-Projekte verfügbar.)
+
+![Layoutpanel „UniformGrid“](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
 ### <a name="canvas"></a>Canvas
 
@@ -93,7 +91,7 @@ Anzeigen von Informationen oder Optionen für Benutzer in einem Fenster. Sie kö
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Ermöglicht es Benutzern, auf einer Seite oder auf einem Bereich einer Seite nach unten zu scrollen. Sie können einem **ScrollViewer** nur ein Objekt hinzufügen. Deshalb ist es sehr sinnvoll, einen Layoutbereich hinzuzufügen, z.B. ein **Raster** oder ein **StackPanel**.
+Ermöglicht es Benutzern, auf einer Seite oder auf einem Bereich einer Seite nach unten zu scrollen. Sie können einem **ScrollViewer** nur ein Objekt hinzufügen. Deshalb ist es sinnvoll, einen Layoutbereich hinzuzufügen, z.B. ein **Raster** oder ein **StackPanel**.
 
 ![Layoutsteuerelement „ScrollViewer“](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 

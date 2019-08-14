@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824445"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787646"
 ---
 # <a name="accessibility"></a>Zugriff
 
@@ -57,7 +57,7 @@ Wenn Sie **Vollständiger Tastaturzugriff** auf **Alle Steuerelemente** festlege
 
 Zu Aktivieren oder Deaktivieren von VoiceOver, drücken Sie auf **&#8984; + F5**.
 
-VoiceOver-Befehle werden in diesem Handbuch als **VO+*Taste*** angezeigt, wobei **VO** sich auf den Modifizierer bezieht, der im **VoiceOver -Hilfsprogramm** eingestellt ist. Standardmäßig wird **Strg + Alt** als Modifizierer verwendet. Abhängig von Ihrem VoiceOver-Modifizierer bedeutet **VO + M** beispielsweise **Strg + Alt + M**. Aus Gründen der Übersichtlichkeit werden Pfeiltasten als **Links** und **Rechts** usw. bezeichnet.
+VoiceOver-Befehle werden in diesem Handbuch als **VO+_Taste_** angezeigt, wobei **VO** sich auf den Modifizierer bezieht, der im **VoiceOver-Hilfsprogramm** eingestellt ist. Standardmäßig wird **Strg + Alt** als Modifizierer verwendet. Abhängig von Ihrem VoiceOver-Modifizierer bedeutet **VO + M** beispielsweise **Strg + Alt + M**. Aus Gründen der Übersichtlichkeit werden Pfeiltasten als **Links** und **Rechts** usw. bezeichnet.
 
 Verwenden Sie die folgenden Tastenkombinationen, um durch die Benutzeroberfläche von Visual Studio für Mac zu navigieren:
 

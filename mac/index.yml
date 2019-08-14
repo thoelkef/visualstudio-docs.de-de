@@ -5,7 +5,7 @@ metadata:
   description: In diesem Artikel werden die Features von Visual Studio für Mac vorgestellt.
   author: asb3993
   ms.author: amburns
-  ms.date: 04/02/2019
+  ms.date: 08/08/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
   ms.technology: vs-ide-general
@@ -17,7 +17,7 @@ sections:
       - type: list
         style: cards
         className: cardsM
-        columns: 2
+        columns: 3
         items:
           - href: ~/installation.md
             html: <p></p>
@@ -29,6 +29,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
             title: Visual Studio für Mac im Überblick
+          - href: 'https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: 'Visual Studio für Mac: Anmerkungen zu dieser Version'
   - title: Welche Apps kann ich erstellen?
     items:
       - type: paragraph
@@ -108,3 +113,15 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
             title: Quellcodeverwaltung
+  - title: Ich benötige weitere Hilfe
+    items:
+      - type: paragraph
+        text: Links zu anderen nützlichen Inhalten
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://visualstudio.microsoft.com/vs/support/mac/">Unterstützung für Visual Studio für Mac: Häufig gestellte Fragen</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/pricing/">Preise und Abonnements</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/compare/">Editionen im Vergleich</a>'
+          - html: '<a href="https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac">Abonnentenzugriff (einschließlich älterer Downloads)</a>'
+          - html: '<a href="https://code.visualstudio.com">Visual Studio Code</a>'

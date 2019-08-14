@@ -15,82 +15,81 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- data-storage
-ms.openlocfilehash: defc1605d15fcc9ce616212b48faa7674abc87e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b81bd3237f3eb2aa9a4c096ddfeae2c7bcd08c09
+ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824667"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68980551"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 
-Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsoberfläche zum Erstellen eines datengebundenen Steuerelements können Sie den Typ des von Ihnen erstellte Steuerelement auswählen. Jedes Element in das Fenster verfügt über eine Dropdownliste, in dem die Steuerelemente angezeigt, denen Sie auswählen können. Der Satz von Steuerelementen, die jedem Element wird durch den Datentyp des Elements bestimmt. Wenn das Steuerelement, das Sie erstellen möchten, nicht in der Liste angezeigt wird, können Sie die Anweisungen in diesem Thema, um das Steuerelement zur Liste hinzuzufügen befolgen.
+Wenn Sie ein Element aus dem Datenquellen Fenster auf eine Entwurfs Oberfläche ziehen, um ein Daten gebundenes Steuerelement zu erstellen, können Sie den Typ des Steuer Elements auswählen, das Sie erstellen. Jedes Element im-Fenster verfügt über eine Dropdown Liste, in der die Steuerelemente angezeigt werden, aus denen Sie auswählen können. Der Satz von Steuerelementen, die jedem Element zugeordnet sind, wird durch den Datentyp des Elements bestimmt. Wenn das Steuerelement, das Sie erstellen möchten, nicht in der Liste angezeigt wird, können Sie die Anweisungen in diesem Thema befolgen, um der Liste das Steuerelement hinzuzufügen.
 
-Weitere Informationen zum Auswählen von datengebundenen Steuerelementen für die Erstellung für Elemente in der **Datenquellen** Fenster finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+Weitere Informationen zum Auswählen von Daten gebundenen Steuerelementen, die für Elemente im Datenquellen Fenster erstellt werden sollen, finden Sie unter [Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-## <a name="customize-the-bindable-controls-list"></a>Anpassen der Liste bindungsfähige Steuerelemente
+## <a name="customize-the-bindable-controls-list"></a>Anpassen der Liste der bindbaren Steuerelemente
 
-Zum Hinzufügen oder entfernen Steuerelemente aus der Liste der verfügbaren Steuerelemente für Elemente in der **Datenquellen** Fenster, das einen bestimmten Datentyp, der die folgenden Schritte ausführen zu müssen.
+Zum Hinzufügen oder Entfernen von Steuerelementen aus der Liste der verfügbaren Steuerelemente für Elemente im Datenquellen Fenster, die einen bestimmten Datentyp aufweisen, führen Sie die folgenden Schritte aus.
 
-### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Die Steuerelemente für einen Datentyp aufgeführt werden auswählen
+### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>So wählen Sie die Steuerelemente aus, die für einen Datentyp aufgelistet werden sollen
 
 1. Der WPF- oder der Windows Forms-Designer muss geöffnet sein.
 
-2. In der **Datenquellen** , klicken Sie auf ein Element, das ist Teil einer Datenquelle, die Sie hinzugefügt, um das Fenster haben, und klicken Sie dann auf das Dropdownmenü für das Element.
+2. Klicken Sie im Fenster **Datenquellen** auf ein Element, das Teil einer Datenquelle ist, die Sie dem-Fenster hinzugefügt haben, und klicken Sie dann auf das Dropdown Menü für das Element.
 
    > [!TIP]
-   > Wenn die **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es durch Auswählen von **Ansicht** > **Other Windows** > **Datenquellen**.
+   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es, indem Sie**andere Windows** > -**Datenquellen** **anzeigen** > auswählen.
 
-3. Klicken Sie im Dropdown-Menü auf **anpassen**. Eine der folgenden Dialogfelder geöffnet:
+3. Klicken Sie im Dropdown Menü auf **Anpassen**. Eines der folgenden Dialogfelder wird geöffnet:
 
-    - Wenn die **Windows Forms-Designer** geöffnet ist, die **Daten für die Benutzeroberflächenanpassung** auf der Seite die **Optionen** Dialogfeld wird geöffnet.
+    - Wenn das **Windows Forms-Designer** geöffnet ist, wird die Seite **Daten Anpassung der Benutzeroberfläche** des Dialog Felds **Optionen** geöffnet. Weitere Informationen finden Sie im [Dialogfeld Anpassungsoptionen für die Daten Benutzeroberfläche](../ide/reference/options-windows-forms-designer-data-ui-customization.md).
 
-    - Wenn die **WPF-Designer** geöffnet ist, die **Steuerelementbindung anpassen** Dialogfeld wird geöffnet.
+    - Wenn der **WPF-Designer** geöffnet ist, wird das Dialogfeld **Steuerelement Bindung anpassen** geöffnet.
 
-4. Wählen Sie im Dialogfeld, einen Datentyp aus der **Datentyp** Dropdown-Liste.
+4. Wählen Sie im Dialogfeld in der Dropdown Liste **Datentyp** einen Datentyp aus.
 
-    - Wählen Sie zum Anpassen der Liste der Steuerelemente für eine Tabelle oder ein Objekt **[List]**.
+    - Wählen Sie **[list]** aus, um die Liste der Steuerelemente für eine Tabelle oder ein Objekt anzupassen.
 
-    - Um die Liste der Steuerelemente für eine Spalte einer Tabelle oder eine Eigenschaft eines Objekts anzupassen, wählen Sie den Datentyp der Spalte oder Eigenschaft in den zugrunde liegenden Datenspeicher.
+    - Wählen Sie den Datentyp der Spalte oder Eigenschaft im zugrunde liegenden Datenspeicher aus, um die Liste der Steuerelemente für eine Spalte einer Tabelle oder eine Eigenschaft eines Objekts anzupassen.
 
-    - Wählen Sie zum Anpassen der Liste der Steuerelemente zum Anzeigen von Datenobjekten, die eine benutzerdefinierte Formen **[andere]**. Wählen Sie z. B. **[andere]** verfügt Ihre Anwendung ein benutzerdefiniertes Steuerelement, das Daten aus mehr als eine Eigenschaft eines bestimmten Objekts anzeigt.
+    - Zum Anpassen der Liste der Steuerelemente zum Anzeigen von Datenobjekten, die benutzerdefinierte Formen aufweisen, wählen Sie **[Other]** aus. Wählen Sie z. b. **[Other]** aus, wenn Ihre Anwendung über ein benutzerdefiniertes Steuerelement verfügt, das Daten aus mehr als einer Eigenschaft eines bestimmten Objekts anzeigt.
 
-5. In der **zugeordnete Steuerelemente** wählen jedes Steuerelement, das Sie für den ausgewählten Datentyp verfügbar sein soll, oder heben Sie die Auswahl aller Steuerelemente, die Sie aus der Liste entfernen möchten.
+5. Wählen Sie im Feld zugeordnete Steuer **Elemente** die einzelnen Steuerelemente aus, die für den ausgewählten Datentyp verfügbar sein sollen, oder deaktivieren Sie die Auswahl aller Steuerelemente, die Sie aus der Liste entfernen möchten.
 
     > [!NOTE]
-    > Wenn das Steuerelement, das Sie auswählen möchten nicht, in angezeigt wird der **zugeordnete Steuerelemente** Feld müssen Sie das Steuerelement zur Liste hinzufügen. Weitere Informationen finden Sie unter [fügen Sie Steuerelemente zugeordnete](#add-associated-controls).
+    > Wenn das Steuerelement, das Sie auswählen möchten, nicht im Feld zugeordnete Steuer **Elemente** angezeigt wird, müssen Sie das Steuerelement der Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen](#add-associated-controls)von zugeordneten Steuerelementen.
 
 6. Klicken Sie auf **OK**.
 
-7. In der **Datenquellen** Fenster, die auf ein Element der Daten, dem ein oder mehrere Steuerelemente zugeordnet, und klicken Sie dann auf das Dropdownmenü für das Element.
+7. Klicken Sie im **Datenquellen** Fenster auf ein Element des Datentyps, dem Sie soeben mindestens ein Steuerelement zugeordnet haben, und klicken Sie dann auf das Dropdown Menü für das Element.
 
-     Die Steuerelemente, die Sie, in ausgewählt der **zugeordnete Steuerelemente** jetzt in der Dropdown-Menü für das Element angezeigt.
+     Die Steuerelemente, die Sie im Feld zugeordnete Steuer **Elemente** ausgewählt haben, werden jetzt im Dropdown Menü für das Element angezeigt.
 
-## <a name="add-associated-controls"></a>Zugeordnete Steuerelemente hinzufügen
+## <a name="add-associated-controls"></a>Zugeordnete Steuerelemente
 
-Wenn ein Steuerelement mit einem Datentyp zugeordnet werden soll, aber das Steuerelement nicht, in angezeigt wird der **zugeordnete Steuerelemente** Feld müssen Sie das Steuerelement zur Liste hinzufügen. Das Steuerelement muss sich in der aktuellen Projektmappe oder in einer referenzierten Assembly sein. Auch in verfügbar sein muss die **Toolbox** und über ein Attribut, das Datenbindungsverhalten des Steuerelements angibt.
+Wenn Sie ein Steuerelement einem Datentyp zuordnen möchten, das Steuerelement jedoch nicht im Feld zugeordnete Steuer **Elemente** angezeigt wird, müssen Sie das Steuerelement der Liste hinzufügen. Das-Steuerelement muss sich in der aktuellen Projekt Mappe oder in einer Assembly befinden, auf die verwiesen wird. Es muss auch in der **Toolbox** verfügbar sein und über ein Attribut verfügen, das das Daten Bindungsverhalten des Steuer Elements angibt.
 
-### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Die Liste der zugehörigen Steuerelemente Steuerelemente hinzu
+So fügen Sie der Liste der zugeordneten Steuerelemente Steuerelemente hinzu:
 
-1. Fügen Sie das gewünschte Steuerelement auf der **Toolbox** mit der rechten Maustaste die **Toolbox** und **Elemente auswählen**.
+1. Fügen Sie das gewünschte Steuerelement der **Toolbox** hinzu, indem Sie mit der rechten Maustaste auf die **Toolbox** klicken und **Elemente auswählen**auswählen.
 
-     Das Steuerelement muss es sich um einen der folgenden Attribute aufweisen.
+     Das Steuerelement muss eines der folgenden Attribute aufweisen:
 
     |Attribut|Beschreibung|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) der Daten anzeigen, wie z. B. eine <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut auf Steuerelemente zum Anzeigen von Listen (oder Tabellen) von Daten, z. B. eine <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementieren Sie dieses Attribut auf Steuerelemente zum Anzeigen von Listen (oder Tabellen) von Daten, sondern auch eine einzelne Spalte oder Eigenschaft darstellen müssen, z. B. eine <xref:System.Windows.Forms.ComboBox>.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) von Daten anzeigen, <xref:System.Windows.Forms.TextBox>z. b.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, <xref:System.Windows.Forms.DataGridView>z. b.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, aber auch eine einzelne Spalte oder Eigenschaft, z. b <xref:System.Windows.Forms.ComboBox>. eine, darstellen müssen.|
 
-2. Für Windows Forms auf die **Optionen** öffnen Sie im Dialogfeld die **Daten für die Benutzeroberflächenanpassung** Seite. Für WPF, öffnen Sie alternativ die **Steuerelementbindung anpassen** Dialogfeld. Weitere Informationen finden Sie unter [anpassen die Liste der bindungsfähige Steuerelemente für einen Datentyp](#customize-the-bindable-controls-list).
+2. Öffnen Sie für Windows Forms im Dialogfeld **Optionen** die Seite **Anpassung der Daten Benutzeroberfläche** . Oder öffnen Sie für WPF das Dialogfeld **Steuerelement Bindung anpassen** . Weitere Informationen finden Sie unter [Anpassen der Liste der bindbaren Steuerelemente für einen-Datentyp](#customize-the-bindable-controls-list).
 
-3. In der **zugeordnete Steuerelemente** Feld, das Steuerelement, das Sie gerade hinzugefügt haben, um die **Toolbox** sollte jetzt angezeigt werden.
+3. Im Feld zugeordnete Steuer **Elemente** sollte das Steuerelement, das Sie soeben der **Toolbox** hinzugefügt haben, nun angezeigt werden.
 
     > [!NOTE]
-    > Nur Steuerelemente, die sich innerhalb der aktuellen Projektmappe oder in einer referenzierten Assembly befinden, können die Liste mit den zugehörigen Steuerelementen hinzugefügt werden. (Die Steuerelemente müssen auch eines der Attribute für die Datenbindung in der vorherigen Tabelle implementieren.) Um Daten an ein benutzerdefiniertes Steuerelement zu binden, die in nicht verfügbar ist die **Datenquellen** Fenster ziehen Sie das Steuerelement aus der **Toolbox** auf der Entwurfsoberfläche, und ziehen Sie dann das Element, das aus binden die **Daten Quellen** Fenster auf das Steuerelement.
+    > Nur Steuerelemente, die sich innerhalb der aktuellen Projekt Mappe oder in einer referenzierten Assembly befinden, können der Liste der zugeordneten Steuerelemente hinzugefügt werden. (Die Steuerelemente müssen auch eines der Daten Bindungs Attribute in der vorherigen Tabelle implementieren.) Zum Binden von Daten an ein benutzerdefiniertes Steuerelement, das im Datenquellen Fenster nicht verfügbar ist, ziehen Sie das Steuerelement aus der **Toolbox** auf die Entwurfs Oberfläche, und ziehen Sie dann das Element, an das die Bindung erfolgen soll, aus dem **Datenquellen** Fenster auf das Steuerelement.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Anpassungsoptionen für Daten Benutzeroberfläche (Dialogfeld)](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432293"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918462"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 
@@ -110,9 +110,9 @@ Der Fakes-Code-Generator generiert Shim-Typen und Stub-Typen für Typen, die fü
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Interne Typen in Assemblys mit starkem Namen**
+**Interne Typen in Assemblys mit starkem Namen**
 
- Wenn die Shim-Assembly einen starken Namen hat und auf interne Typen der Assembly zugegriffen werden soll:
+Wenn die Shim-Assembly einen starken Namen hat und auf interne Typen der Assembly zugegriffen werden soll:
 
 - Es müssen sowohl die Testassembly als auch die Fakes-Assembly einen starken Namen haben.
 
@@ -179,11 +179,11 @@ Fügen Sie in den Komponententestprojekten einen Verweis auf die kompilierten Fa
 
 In einer Team Build-Umgebung werden alle Buildausgaben in ein Verzeichnis zusammengeführt. Bei mehreren Projekten, die Fakes verwenden, kann es möglicherweise vorkommen, dass sich Fakes-Assemblys aus verschiedenen Versionen gegenseitig überschreiben. Beispielsweise würden sich beide *mscorlib.dll*-Fakes, sowohl für TestProject1 von .NET Framework 2.0 als auch für TestProject2 von .NET Framework 4, aus einer *mscorlib.Fakes.dll*-Fakes-Assembly ergeben.
 
- Wenn Sie dieses Problem vermeiden möchten, sollte Fakes beim Hinzufügen der *FAKES*-Dateien automatisch qualifizierte Versionen der Fakes-Assemblynamen für Verweise erstellen, die sich nicht auf das Projekt beziehen. In einen Fakes-Assemblynamen mit qualifizierter Version wird eine Versionsnummer eingebettet, wenn der Fakes-Assemblyname erstellt wird:
+Wenn Sie dieses Problem vermeiden möchten, sollte Fakes beim Hinzufügen der *FAKES*-Dateien automatisch qualifizierte Versionen der Fakes-Assemblynamen für Verweise erstellen, die sich nicht auf das Projekt beziehen. In einen Fakes-Assemblynamen mit qualifizierter Version wird eine Versionsnummer eingebettet, wenn der Fakes-Assemblyname erstellt wird:
 
- Bei einer Assembly mit dem Namen "MyAssembly" und der Version "1.2.3.4" ist der Fakes-Assemblyname "MyAssembly.1.2.3.4.Fakes".
+Bei einer Assembly mit dem Namen "MyAssembly" und der Version "1.2.3.4" ist der Fakes-Assemblyname "MyAssembly.1.2.3.4.Fakes".
 
- Sie können diese Version durch die Bearbeitung des Versionsattributs des Assemblyelements in der *FAKES*-Datei ändern oder entfernen:
+Sie können diese Version durch die Bearbeitung des Versionsattributs des Assemblyelements in der *FAKES*-Datei ändern oder entfernen:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Namenskonventionen für Shim-Typ und Stub-Typ
 
- **Namespaces**
+**Namespaces**
 
 - Das Suffix ".Fakes" wird dem Namespace hinzugefügt.
 

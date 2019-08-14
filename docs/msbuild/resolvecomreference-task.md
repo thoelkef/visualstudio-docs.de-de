@@ -1,6 +1,6 @@
 ---
 title: ResolveCOMReference-Task | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -18,20 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681108"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference-Aufgabe
+
 Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB*-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.
 
 ## <a name="parameters"></a>Parameter
+
  In der folgenden Tabelle werden die Parameter der `ResolveCOMReference` -Aufgabe beschrieben.
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
 |`DelaySign`|Optionaler `Boolean` -Parameter.<br /><br /> Legt den öffentlichen Schlüssel in der Assembly ab, wenn der Wert `true` ist Signiert die Assembly vollständig, wenn der Wert `false` ist|
 |`EnvironmentVariables`|Optionaler `String[]` -Parameter.<br /><br /> Ein Array von Paaren von Umgebungsvariablen; durch Gleichheitszeichen getrennt. Diese Variablen werden an die erstellten *tlbimp.exe* und *aximp.exe* zusätzlich zum regulären Umgebungsblock oder zum ausgewählten Überschreiben übergeben.|
@@ -52,29 +54,37 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 |`WrapperOutputDirectory`|Optionaler `String` -Parameter.<br /><br /> Der Speicherort auf dem Datenträger für die generierte Interop-Assembly. Wenn diese Elementmetadaten nicht angegeben werden, verwendet der Task den absoluten Pfad des Verzeichnisses, in dem sich die Projektdatei befindet.|
 
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames-Elementmetadaten
+
  In der folgenden Tabelle werden die Elementmetadaten beschrieben, die für an den `TypeLibNames`-Parameter übergebene Elemente zur Verfügung stehen.
 
-|Metadaten|Beschreibung|
+|Metadaten|BESCHREIBUNG|
 |--------------|-----------------|
 |`GUID`|Erforderliche Elementmetadaten<br /><br /> Die GUID für die Typbibliothek. Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|
 |`VersionMajor`|Erforderliche Elementmetadaten<br /><br /> Die Hauptversion der Typbibliothek Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|
 |`VersionMinor`|Erforderliche Elementmetadaten<br /><br /> Die Nebenversion der Typbibliothek Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|
+|`EmbedInteropTypes`|Optional `Boolean`-Metadaten.<br /><br />  Bei `true` betten Sie die Interop-Typen aus diesem Verweis direkt in Ihre Assembly ein, anstatt eine Interop-DLL zu generieren.|
 |`LocaleIdentifier`|Optionale Elementmetadaten<br /><br /> Der Gebietsschemabezeichner (oder LCID) für die Typbibliothek Dieser wird als 32-Bit-Wert angegeben, der die Sprache identifiziert, die von einem Benutzer, einer Region oder eine Anwendung bevorzugt wird. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task den Standard-Gebietsschemabezeichner „0“ (null).|
 |`WrapperTool`|Optionale Elementmetadaten<br /><br /> Gibt das Wrappertool an, das verwendet wird, um den Assemblywrapper für diese Typbibliothek zu generieren. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task das Standardwrappertool „tlbimp“. Die verfügbaren Optionen von Typbibliotheken, die die Groß-/Kleinschreibung nicht beachten, sind:<br /><br /> -   `Primary`: Verwenden Sie dieses Wrappertool, wenn Sie eine bereits generierte primäre Interopassembly für die COM-Komponente verwenden möchten. Wenn Sie dieses Wrappertool verwenden, geben Sie kein Wrapperausgabeverzeichnis an, weil der Task ansonsten fehlschlägt.<br />-   `TLBImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für die COM-Komponente generieren möchten.<br />-   `AXImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für ein ActiveX-Steuerelement generieren möchten.|
 
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles-Elementmetadaten
+
  In der folgenden Tabelle werden die Elementmetadaten beschrieben, die für an den `TypeLibFiles`-Parameter übergebene Elemente zur Verfügung stehen.
 
-|Metadaten|Beschreibung|
+|Metadaten|BESCHREIBUNG|
 |--------------|-----------------|
+|`EmbedInteropTypes`|Optionaler `Boolean`-Parameter.<br /><br />  Bei `true` betten Sie die Interop-Typen aus diesem Verweis direkt in Ihre Assembly ein, anstatt eine Interop-DLL zu generieren.|
 |`WrapperTool`|Optionale Elementmetadaten<br /><br /> Gibt das Wrappertool an, das verwendet wird, um den Assemblywrapper für diese Typbibliothek zu generieren. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task das Standardwrappertool „tlbimp“. Die verfügbaren Optionen von Typbibliotheken, die die Groß-/Kleinschreibung nicht beachten, sind:<br /><br /> -   `Primary`: Verwenden Sie dieses Wrappertool, wenn Sie eine bereits generierte primäre Interopassembly für die COM-Komponente verwenden möchten. Wenn Sie dieses Wrappertool verwenden, geben Sie kein Wrapperausgabeverzeichnis an, weil der Task ansonsten fehlschlägt.<br />-   `TLBImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für die COM-Komponente generieren möchten.<br />-   `AXImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für ein ActiveX-Steuerelement generieren möchten.|
 
 > [!NOTE]
 > Je mehr Informationen Sie zur Verfügung stellen, um eine Typbibliothek eindeutig identifizieren zu können, desto wahrscheinlicher ist es, dass der Task in die korrekten Dateien auf dem Datenträger auflöst.
 
 ## <a name="remarks"></a>Anmerkungen
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).
+
+Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).
+
+Die COM-DLL muss nicht auf dem Computer registriert werden, damit diese Aufgabe funktioniert.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

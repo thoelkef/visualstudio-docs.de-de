@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461395"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712215"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testtools in Visual Studio
 
@@ -28,7 +28,13 @@ Die Visual Studio-Testtools können Sie und Ihr Team dabei unterstützen, hochwe
 
 Das Fenster **Test-Explorer** hilft Entwicklern beim Erstellen, Verwalten und Ausführen von Komponententests. Sie können entweder das Microsoft-Komponententest-Framework oder ein Drittanbieter- oder Open-Source-Framework verwenden.
 
+::: moniker range="vs-2017"
 ![Visual Studio Team Explorer](media/devtest-testexplorer.png)
+::: moniker-end
+
+::: moniker range="vs-2019"
+![Visual Studio Test Explorer 16.2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
 
 * [Erste Schritte mit Unittests](unit-test-your-code.md)
 * [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
