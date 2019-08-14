@@ -3,7 +3,7 @@ title: Ändern von Visual Studio 2017
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 06/25/2019
+ms.date: 07/31/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365404"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681391"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
@@ -86,7 +86,7 @@ Gehen Sie folgendermaßen vor:
 
      Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
 
-     ![Öffnen des Visual Studio-Installers](media/vs2019-visual-studio-installer.png "Öffnen des Visual Studio-Installers")
+     ![Öffnen des Visual Studio-Installers über Windows](media/vs-2019/vs-installer-windows-start.png "Öffnen des Visual Studio-Installers")
 
      > [!NOTE]
      > Sie können den Visual Studio-Installer auch an folgendem Speicherort finden:
@@ -97,7 +97,7 @@ Gehen Sie folgendermaßen vor:
 
 1. Suchen Sie im Installer nach der Edition von Visual Studio, die Sie installiert haben, und klicken Sie dann auf **Ändern**.
 
-     ![Aktualisieren oder Ändern von Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualisieren oder Ändern von Visual Studio 2017")
+     ![Aktualisieren oder Ändern von Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualisieren oder Ändern von Visual Studio 2019")
 
 1. Wählen Sie auf der Registerkarte **Workloads** die Workloads aus oder ab, die Sie installieren bzw. deinstallieren möchten.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431973"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681137"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Schnelle Websiteprofilerstellung mit VSPerfASPNETCmd
 
@@ -41,6 +41,8 @@ Geben Sie zum Profilen einer [!INCLUDE[vstecasp](../code-quality/includes/vsteca
 
  **vsperfaspnetcmd**  *websiteUrl*
 
+ Ein Beispiel für eine auf einem lokalen Server gehostete *websiteurl* ist *http://localhost/MySite/default.aspx* . Ein Beispiel für eine externe Website ist *http://www.contoso.com* . Weitere Informationen finden Sie in den Beispiel-URLs in [Profilerstellung für eine Website ohne das Öffnen eines Projekts in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Sammeln von ausführlichen Zeitsteuerungsdaten mit der Instrumentierungsmethode
 
 Verwenden Sie die folgende Befehlszeile zum Sammeln ausführlicher Zeitsteuerungsdaten über eine dynamisch kompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung:
@@ -61,14 +63,14 @@ Die **/Memory**-Option sammelt Daten zur Zuordnung von Objekten im .NET- Speiche
 
  Sie können auch die **/Trace**-Option verwenden, um ausführliche Zeitsteuerungsinformationen in die .NET-Speicherdaten einzuschließen:
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Erfassen von Ebeneninteraktionsdaten
 
 > [!WARNING]
 > Profilerstellungsdaten für die Ebeneninteraktion (Tier Interaction Profiling, TIP) können mit einer beliebigen Visual Studio-Edition erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in Visual Studio Enterprise angezeigt werden.
 >
-> Sie müssen zum Erfassen von TIP-Daten auf Windows 8 oder Windows Server 2012 die Instrumentierungsoption (**/trace**) verwenden.
+> Sie müssen zum Erfassen von TIP-Daten auf Windows 8 oder Windows Server 2012 die Instrumentierungsoption ( **/trace**) verwenden.
 
 Erfassen von Ebeneninteraktionsdaten mit Samplingdaten:
 
@@ -80,7 +82,7 @@ Sammeln von Ebeneninteraktionsdaten mit Instrumentationsdaten:
 
 Sammeln von Ebeneninteraktionsdaten mit .NET-Speicherdaten:
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Verwenden der /NoWait-Option
 
@@ -88,7 +90,7 @@ In der Standardeinstellung wird die Eingabeaufforderung nach einem **vsperfaspne
 
 So beginnen Sie mit der Profilerstellung:
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 So beenden Sie die Profilerstellung:
 
@@ -98,7 +100,7 @@ So beenden Sie die Profilerstellung:
 
 Sie können eine der folgenden Optionen zu den weiter oben in diesem Abschnitt aufgelisteten Befehlen hinzufügen, mit Ausnahme des Befehls **vsperfaspnetcmd/shutdown**.
 
-|Option|Beschreibung|
+|Option|BESCHREIBUNG|
 |------------|-----------------|
 |**/Output:** `VspFile`|Standardmäßig wird die Profilerstellungsdatendatei (*VSP*) im aktuellen Verzeichnis mit dem Dateinamen **PerformanceReport.vsp** erstellt. Verwenden Sie die Option /Output, um einen anderen Speicherort, Dateinamen oder beides anzugeben.|
 |**/PackSymbols:Off**|Standardmäßig bettet VsPerfASPNETCmd Symbole (Funktionsnamen, Parameternamen usw.) in die *VSP*-Datei ein. Das Einbetten der Symbole kann die Profilerstellungsdatendatei sehr groß werden lassen. Wenn Sie auf die *PDB*-Dateien zugreifen können, die die Symbole enthalten, wenn Sie die Daten analysieren, verwenden Sie die Option „/packsymbols:off“, um die Einbettung der Symbole zu deaktivieren.|

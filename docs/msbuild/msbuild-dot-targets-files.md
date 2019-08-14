@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f85cf678052427ca5395c8b33c4786c2316de0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: bacc58184d0ea78a5e54d7cc7b0b93df107b3300
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681407"
 ---
 # <a name="msbuild-targets-files"></a>TARGETS-Dateien von MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst mehrere *TARGETS*-Dateien, die Elemente, Eigenschaften, Ziele und Aufgaben für allgemeine Szenarios enthalten. Diese Dateien werden in die meisten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektdateien automatisch importiert, um Lesbarkeit und Verwaltung zu vereinfachen.
@@ -35,14 +35,14 @@ ms.locfileid: "63443621"
 
 ## <a name="common-targets-files"></a>Allgemeine TARGETS-Dateien
 
-| *TARGETS*-Datei | Beschreibung |
+| *TARGETS*-Datei | BESCHREIBUNG |
 |---------------------------------| - |
 | *Microsoft.Common.targets* | Definiert die Schritte im Standardbuildprozess für [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]- und [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Projekte.<br /><br /> Wird von *Microsoft.CSharp.targets*-Dateien und *Microsoft.VisualBasic.targets*-Dateien importiert, die die folgende Anweisung enthalten: `<Import Project="Microsoft.Common.targets" />` |
 | *Microsoft.CSharp.targets* | Definiert die Schritte im Standardbuildprozess für Visual C#-Projekte.<br /><br /> Wird von Visual C#-Projektdateien (*CSPROJ*) importiert, die die folgende Anweisung enthalten: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
 | *Microsoft.VisualBasic.targets* | Definiert die Schritte im Standardbuildprozess für Visual Basic-Projekte.<br /><br /> Wird von Visual Basic-Projektdateien (*VBPROJ*) importiert, die die folgende Anweisung enthalten: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
-Bei *Directory.Build.targets* handelt es sich um eine benutzerdefinierte Datei, die Anpassungen für Projekte in einem Verzeichnis bereitstellt. Diese Datei wird automatisch aus *Microsoft.Common.targets* importiert, wenn die Eigenschaft **ImportDirectoryBuildTargets** nicht auf **FALSE** festgelegt wird.
+Bei *Directory.Build.targets* handelt es sich um eine benutzerdefinierte Datei, die Anpassungen für Projekte in einem Verzeichnis bereitstellt. Diese Datei wird automatisch aus *Microsoft.Common.targets* importiert, wenn die Eigenschaft **ImportDirectoryBuildTargets** nicht auf **FALSE** festgelegt wird. Weitere Informationen finden Sie unter [Anpassen des Builds](customize-your-build.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md)

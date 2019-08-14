@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 21de3480ff3ac2d6733aacff6bcf714f910e7022
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263398"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821883"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
 
-Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren Einheiten namens Ressourcen gespeichert. Stile ermöglichen es Ihnen, Elementeigenschaften festzulegen und diese Einstellungen für ein konsistentes Erscheinungsbild für mehrere Elemente wiederzuverwenden. Eine [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definiert die Darstellung eines Steuerelements und kann auch als Ressource angewendet werden. Weitere Informationen finden Sie unter [Schnellstart: Styling controls (Formatieren von Steuerelementen)](http://go.microsoft.com/fwlink/?LinkID=248239) und [QuickStart: Control templates (Schnellstart: Steuerelementvorlagen)](http://go.microsoft.com/fwlink/?LinkID=247982).
+Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren Einheiten namens Ressourcen gespeichert. Stile ermöglichen es Ihnen, Elementeigenschaften festzulegen und diese Einstellungen für ein konsistentes Erscheinungsbild für mehrere Elemente wiederzuverwenden. Eine [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) definiert die Darstellung eines Steuerelements und kann auch als Ressource angewendet werden. Weitere Informationen finden Sie unter [XAML-Stile](/windows/uwp/design/controls-and-patterns/xaml-styles) und [ Steuerelementvorlagen](/windows/uwp/design/controls-and-patterns/control-templates).
 
-Wenn Sie eine neue Ressource von einer vorhandenen Eigenschaft, [Formatvorlage](/uwp/api/Windows.UI.Xaml.Style) oder `ControlTemplate` erstellen, können Sie im Dialogfeld **Ressource erstellen** die Ressource auf Anwendungs-, Dokument- oder Elementebene definieren. Diese Ebenen bestimmen, wo Sie die Ressource verwenden können. Wenn Sie beispielsweise die Ressource auf der Elementebene definieren, kann die Ressource nur auf das Element angewendet werden, für das sie erstellt wurde. Sie können die Ressource auch in einem [Ressourcenverzeichnis](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) speichern. Hierbei handelt es sich um eine eigene Datei, die in anderen Projekten wieder verwendet werden kann.
+Wenn Sie eine neue Ressource von einer vorhandenen Eigenschaft, einem vorhandenen [Stil](xref:Windows.UI.Xaml.Style) oder [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) erstellen, können Sie im Dialogfeld **Ressource erstellen** die Ressource auf Anwendungs-, Dokument- oder Elementebene definieren. Diese Ebenen bestimmen, wo Sie die Ressource verwenden können. Wenn Sie beispielsweise die Ressource auf der Elementebene definieren, kann die Ressource nur auf das Element angewendet werden, für das sie erstellt wurde. Sie können die Ressource auch in einem [Ressourcenverzeichnis](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) speichern. Hierbei handelt es sich um eine eigene Datei, die in anderen Projekten wieder verwendet werden kann.
 
 ## <a name="create-a-new-resource"></a>Erstellen einer neuen Ressource
 
@@ -63,7 +63,7 @@ Wenn Sie eine neue Ressource von einer vorhandenen Eigenschaft, [Formatvorlage](
      > [!NOTE]
      > Mit **Vorlage bearbeiten** werden Steuerelementvorlagen angewendet. Mit **Zusätzliche Vorlagen bearbeiten** werden andere Vorlagentypen angewendet.
 
-     Sie können Ressourcen anwenden, wenn sie kompatibel sind. Beispielsweise können Sie eine Pinselressource auf die **Vordergrund**-Eigenschaft eines <xref:Windows.UI.Xaml.Controls.TextBox>-Steuerelements anwenden.
+     Sie können Ressourcen anwenden, wenn sie kompatibel sind. Beispielsweise können Sie eine Pinselressource auf die **Vordergrund**-Eigenschaft eines Steuerelements [TextBox](xref:Windows.UI.Xaml.Controls.TextBox) anwenden.
 
 ## <a name="edit-a-resource"></a>Bearbeiten einer Ressource
 

@@ -1,5 +1,6 @@
 ---
-title: Tastenkombinationen in Blend
+title: Tastenkombinationen
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844324"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821739"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>Tastenkombinationen in Blend
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Tastenkombinationen in Blend für Visual Studio
 
 ## <a name="project-shortcuts"></a>Tastenkombinationen für Projekte
 
@@ -72,10 +73,10 @@ ms.locfileid: "62844324"
 |Automatische Anpassung der Höhe|**STRG**+**UMSCHALTTASTE**+**6**|
 |Gruppiert Objekte in ein Layoutpanel|**STRG**+**G**|
 |Gruppierung von Objekten aufheben|**STRG**+**UMSCHALTTASTE**+**G**|
-|Bringt die ausgewählten Objekte in den Vordergrund|**STRG**+**UMSCHALTTASTE**+**]**|
-|Eine Ebene nach vorne|**STRG**+**]**|
-|Sendet die ausgewählten Objekte in den Hintergrund|**STRG**+**UMSCHALTTASTE**+**[**|
-|Eine Ebene nach hinten|**STRG**+**[**|
+|Bringt die ausgewählten Objekte in den Vordergrund|**STRG**+**UMSCHALTTASTE**+ **]**|
+|Eine Ebene nach vorne|**STRG**+ **]**|
+|Sendet die ausgewählten Objekte in den Hintergrund|**STRG**+**UMSCHALTTASTE**+ **[**|
+|Eine Ebene nach hinten|**STRG**+ **[**|
 |Stellt ein Benutzersteuerelement aus den ausgewählten Objekten her (WPF)|**F8**|
 |Erzwingt die Proportionen von Objekten|Halten Sie die **UMSCHALTTASTE** beim Ziehen des Objekts gedrückt.|
 |Drehen Sie das Objekt in 15-Grad-Schritten|Halten Sie die **UMSCHALTTASTE** beim Drehen des Objekts gedrückt.|
@@ -95,8 +96,8 @@ ms.locfileid: "62844324"
 |Aufgabe|Vorgehensweise|
 |----------------|-------------|
 |Zwischen der **Design**-, der **Code**- und der **geteilten** Ansicht wechseln|**F11**|
-|Zeichenfläche vergrößern|**STRG**+**Gleichheitszeichen** (**=**)|
-|Verkleinert die Zeichenfläche|**STRG**+**Minuszeichen** (**-**)|
+|Zeichenfläche vergrößern|**STRG**+**Gleichheitszeichen** ( **=** )|
+|Verkleinert die Zeichenfläche|**STRG**+**Minuszeichen** ( **-** )|
 |Verkleinert oder vergrößert die Zeichenfläche|Drehen Sie das Mausrad|
 |Verschiebt die Zeichenfläche nach links oder rechts|Halten Sie die **UMSCHALTTASTE** gedrückt, und drehen Sie das Mausrad.|
 |Verschiebt die Zeichenfläche nach oben oder unten|Halten Sie die **STRG-TASTE** gedrückt, und drehen Sie das Mausrad.|

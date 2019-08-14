@@ -1,21 +1,22 @@
 ---
 title: Azure PAYG-Vorteil
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
-ms.openlocfilehash: aa5cd98b1526f654a4bb2803e5b22dde72cb8fda
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 6a2d4eab9ecc0adb6a89d87ceccb45b1472142b9
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784678"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681142"
 ---
-# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Einrichten eines Azure Dev/Test-Abonnements mit nutzungsbasierter Bezahlung
+# <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure Dev/Test-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
 
+## <a name="set-up-a-subscription"></a>Einrichten eines Abonnements
 1. Melden Sie sich in [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, klicken Sie auf den Link **Aktivieren** am unteren Rand der Kachel „Vorteil“, um die Vorteile Ihres Azure-Abonnements mit nutzungsbasierter Bezahlung zu nutzen.
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG-Kachel](_img/vs-azure-payg/vs-azure-payg-tile.png)
@@ -23,21 +24,27 @@ Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Te
 2. Wenn Sie bereits ein Azure-Konto als Teil Ihrer Abonnementvorteile aktiviert haben (wenn Sie z.B. ein Enterprise-Abonnement besitzen und Ihr monatliches Azure-Guthaben von 150 USD aktiviert haben), fahren Sie mit Schritt 5 fort.
 
 3. Auf der Anmeldeseite von Microsoft Azure können Sie entweder das Dev/Test Pay-As-You-Go-Angebot (PAYG) einrichten oder ein Upgrade auf das Visual Studio Enterprise-Angebot durchführen.  Klicken Sie auf **Mit dem aktuellen Angebot (Dev/Test Pay-As-You-Go) fortfahren**, wenn Sie kein Upgrade durchführen möchten.
-   > [!div class="mx-imgBorder"]
-   > ![Anmeldung bei Azure PAYG](_img/vs-azure-payg/vs-azure-payg-signup-cropped.png)
 
 4. Geben Sie eine Telefonnummer ein, um Ihre Identität zu verifizieren, und wählen Sie „SMS senden“ oder „Anrufen“ aus.  Geben Sie den Code ein, den Sie erhalten.  Klicken Sie auf **Code überprüfen**.
-   > [!div class="mx-imgBorder"]
-   > ![Anmeldung bei Azure PAYG](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
 5. Geben Sie dann die Abrechnungsinformationen für Ihr Konto an, und klicken Sie auf **Weiter**.  (Dies stellt die Kreditkarte dar, auf der Ihre Azure-Käufe abgerechnet werden.)
-   > [!div class="mx-imgBorder"]
-   > ![Azure PAYG-Bezahlung](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
 
 6. Aktivieren Sie im Abschnitt „Vereinbarung“ das Kontrollkästchen, um den Abonnementvertrag, die Angebotsdetails und die Datenschutzbestimmungen zu akzeptieren, und klicken Sie auf **Kaufen**.
 
 7. Auf der Seite **Willkommen bei Microsoft Azure!** können Sie einen Supportplan erwerben oder damit beginnen, Ihr Abonnement zu nutzen.
 
 8. Falls Sie angegeben haben, dass Sie mit der Nutzung Ihres Abonnements beginnen möchten, wird Ihnen das [Microsoft Azure-Portal](https://portal.azure.com) angezeigt. Bei Ihrem ersten Besuch wird Ihnen angeboten, einen kurzen Überblick über einige der Features zu erhalten.  Sobald Sie den Überblick abgeschlossen oder abgebrochen haben, wird Ihnen das Dashboard angezeigt.  Sie können nun mit der Verwendung von Azure beginnen.
-   > [!div class="mx-imgBorder"]
-   > ![Azure PAYG-Dashboard](_img/vs-azure-payg/vs-azure-payg-dashboard-cropped.png)
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>Frage:  Was geschieht, wenn ich Änderungen an diesem Abonnement vornehmen möchte?
+Antwort: So nehmen Sie Änderungen an Ihren Azure-Abonnements vor:
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie im linken Bereich die Option **Kostenverwaltung + Abrechnung** aus.
+3. Im Feld **Meine Abonnements** wird eine Liste Ihrer Abonnements angezeigt. Wählen Sie das gewünschte Abonnement aus.
+4. Sie haben nun die Möglichkeit, das Abonnement zu verwalten oder zu kündigen, es umzubenennen, das Verzeichnis zu wechseln oder den Abrechnungsbesitz zu übertragen.
+
+## <a name="next-steps"></a>Nächste Schritte
+Viele Abonnements enthalten zusätzliche Azure-bezogene Vorteile wie Azure DevOps und Azure-Gutschriften.  Weitere Informationen zu diesen Vorteilen finden Sie unter:
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure-Gutschriften](vs-azure.md)
+

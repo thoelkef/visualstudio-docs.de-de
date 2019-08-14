@@ -1,19 +1,17 @@
 ---
 title: Tastenkombinationen für XAML-Designer
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896758"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821779"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
 
@@ -31,7 +29,7 @@ Diese Tabelle enthält die Tastenkombinationen, die für die Arbeit mit Elemente
 |Auswählen eines einzelnen Elements|Drücken Sie die **TAB-TASTE**, um Elemente in der Reihenfolge auszuwählen, in der sie im Dokument angezeigt werden. (Sie können auch mit den Pfeiltasten Elemente auswählen.)|
 |Auswählen von mehreren Elementen|Halten Sie die **UMSCHALTTASTE**, während Sie jedes Element auswählen.|
 |Auswählen von mehreren nicht benachbarten Elementen|Halten Sie die **STRG-TASTE**, während Sie das erste und das letzte Element auswählen.|
-|Verschieben von ausgewählten Elementen|Drücken Sie die Pfeiltasten (Sie können die **UMSCHALTTASTE** gedrückt halten, um den zu verschiebenden Abstand pro Tastendruck zu vergrößern.)|
+|Verschieben von ausgewählten Elementen|Drücken Sie die Pfeiltasten. Sie können die **UMSCHALTTASTE** gedrückt halten, um den zu verschiebenden Abstand pro gedrückter Taste zu vergrößern.|
 |Drehen eines Elements in 15-Grad-Schritten|Halten Sie die **UMSCHALTTASTE** gedrückt, während Sie das Element drehen.|
 |Auswählen von allen Elementen|Drücken Sie **STRG**+**A**|
 |Aufheben der Auswahl aller Elemente|Drücken Sie auf **STRG**+**UMSCHALT**+**A**|

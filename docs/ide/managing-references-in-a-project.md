@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Verweisen in einem Projekt
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747053"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787625"
 ---
 # <a name="manage-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
@@ -45,6 +45,8 @@ Sie können einen Verweis zu folgenden Komponenten- und Diensttypen hinzufügen:
 - COM-Komponenten
 
 - Sonstige Assemblys oder Klassenbibliotheken von Projekten in derselben Projektmappe
+
+- Freigegebene Projekte
 
 - XML-Webdienste
 
@@ -109,16 +111,20 @@ Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../ide/
 
 ## <a name="project-to-project-references"></a>Projekt-zu-Projekt-Verweise
 
-Verweise zwischen Projekten sind Verweise auf Projekte mit Assemblys, die Sie im Dialogfeld **Projekt** erstellen. Visual Studio kann anhand eines Pfads zum Projekt nach einer Assembly suchen.
+Verweise zwischen Projekten sind Verweise auf Projekte mit Assemblys. Projektverweise weisen Sie über die Registerkarte **Projekte** im Dialogfeld „Verweis-Manager“ hinzu. Visual Studio kann anhand eines Pfads zum Projekt nach einer Assembly suchen.
 
 Wenn Sie ein Projekt haben, das eine Assembly erstellt, müssen Sie auf das Projekt verweisen und keinen Dateiverweis verwenden (siehe unten). Der Vorteil eines Verweises zwischen Projekten liegt darin, dass eine Abhängigkeit zwischen den Projekten im Buildsystem erzeugt wird. Das abhängige Projekt wird erstellt, wenn es sich seit der letzten Erstellung des verweisenden Projekts geändert hat. Bei Dateiverweisen wird keine Buildabhängigkeit erstellt, d. h., das verweisende Projekt kann ohne Erstellen des abhänigen Projekts erstellt werden, und der Verweis kann veraltet sein. (Das heißt, das Projekt kann auf eine vorher erstellte Version des Projekts verweisen.) Dies kann dazu führen, dass im *bin*-Verzeichnis mehrere Versionen einer einzigen DLL erforderlich sind, was jedoch nicht möglich ist. Wenn dieser Konflikt auftritt, wird eine Meldung wie die folgende angezeigt: „Fehler: Die Abhängigkeit ‚Datei‘ in Projekt ‚Projekt‘ kann nicht in das Ausführungsverzeichnis kopiert werden, da sie den Verweis ‚Datei‘ überschreiben würde.“ Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md) und [Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Anstelle eines Projekt-zu-Projekt-Verweises wird ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.
 
+## <a name="shared-project-references"></a>Verweis für das freigegebene Projekt
+
+Im Gegensatz zu den meisten anderen Projekttypen hat ein *freigegebenes Projekt* keine Binärausgabe. Stattdessen wird der Code in jedes Projekt kompiliert, das auf ihn verweist. [Mit freigegebenen Projekten](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) können Sie allgemeinen Code schreiben, auf den von einer Reihe verschiedener Anwendungsprojekte verwiesen wird. Der Code wird als Teil jedes verweisenden Projekts kompiliert und kann Compilerdirektiven beinhalten, um plattformspezifische Funktionen in die freigegebene Codebasis zu integrieren. Fügen Sie auf der **Registerkarte Freigegebene Projekte** im Dialogfeld „Verweis-Manager“ einen Verweis auf ein freigegebenes Projekt hinzu.
+
 ## <a name="file-references"></a>Dateiverweise
 
-Dateiverweise sind direkte Verweise auf Assemblys, die sich außerhalb eines Visual Studio-Projekts befinden. Sie erstellen diese mithilfe der Registerkarte **Durchsuchen** im **Verweis-Manager**. Dateiverweise bieten sich an, wenn Sie nur eine Assembly oder Komponente haben und nicht das Projekt, das sie als Ausgabe erstellt.
+Dateiverweise sind direkte Verweise auf Assemblys, die sich außerhalb eines Visual Studio-Projekts befinden. Sie erstellen diese mithilfe der Registerkarte **Durchsuchen** im Dialogfeld „Verweis-Manager“. Dateiverweise bieten sich an, wenn Sie nur eine Assembly oder Komponente haben und nicht das Projekt, das sie als Ausgabe erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 

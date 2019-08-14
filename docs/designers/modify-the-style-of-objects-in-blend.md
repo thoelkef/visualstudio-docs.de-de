@@ -1,5 +1,6 @@
 ---
-title: Ändern des Stils von Objekten in Blend
+title: Ändern des Stils von Objekten
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845205"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821959"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Ändern des Stils von Objekten in Blend für Visual Studio
 
 Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eigenschaften im Bereich **Eigenschaften**.
 
@@ -46,9 +47,9 @@ Erstellen Sie einen visuellen Pinsel aus einem Steuerelement, z. B. einer Schalt
 
 Sie entwerfen die Darstellung und das Verhalten eines Steuerelements einmal und wenden diesen Entwurf auf andere Steuerelemente an, sodass Sie sie nicht einzeln verwalten müssen.
 
-**Sollten Sie einen Stil verwenden?**: Wenn Sie nur die Standardeigenschaften (z. B. die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil*. Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
+**Sollten Sie einen Stil verwenden?** : Wenn Sie nur die Standardeigenschaften (z. B. die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil*. Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
 
-**Sollten Sie eine Vorlage verwenden?**: Wenn Sie nur Text anzeigen möchten, können Sie eine *Vorlage* verwenden. Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
+**Sollten Sie eine Vorlage verwenden?** : Wenn Sie nur Text anzeigen möchten, können Sie eine *Vorlage* verwenden. Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
 
 ### <a name="create-a-template-or-style"></a>Erstellen einer Vorlage oder eines Stils
 
@@ -84,11 +85,11 @@ Klicken Sie mit der rechten Maustaste auf ein Objekt im Fenster [Objekte und Zei
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements
 
-Wählen Sie das Steuerelement aus, und suchen Sie im Fenster [Eigenschaften](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
+Wählen Sie das Steuerelement aus, und suchen Sie im **Eigenschaftenfenster**** die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Visuelle Zustände: Ändern der Darstellung eines Steuerelements basierend auf dessen Status
+## <a name="visual-states"></a>Visuelle Zustände
 
-Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie können eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.
+Mit visuellen Zuständen können Sie das Erscheinungsbild eines Steuerelements basierend auf dessen Status ändern. Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie können eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.
 
 ![Mouseoverzustand](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 

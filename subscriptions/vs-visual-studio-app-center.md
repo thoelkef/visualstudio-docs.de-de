@@ -1,17 +1,17 @@
 ---
 title: Visual Studio App Center-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Visual Studio App Center-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826217"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787834"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center in Visual Studio-Abonnements
 
@@ -70,3 +70,6 @@ Jetzt sollten Sie auf das App Center-Portal zugreifen und Ihr Konto erstellen k�
   - Sehen Sie sich die vollständige [App Center-Dokumentation](/appcenter/) an.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Azure ist Ihre persönliche Sandbox zum Entwickeln/Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen. Aktivieren Sie Ihren [Azure-Vorteil](vs-azure.md), falls dies noch nicht geschehen ist. 

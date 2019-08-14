@@ -1,29 +1,50 @@
 ---
 title: Animieren von Objekten im XAML-Designer
-ms.date: 04/11/2018
+titleSuffix: Blend for Visual Studio
+ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: a5bd9c24351201d066f9055554468939df02b33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b396c0428f9810fe41fa70aca7b52fba2dd4f5b
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927028"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822178"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animieren von Objekten im XAML-Designer
 
-Sie können kurze Animationen erstellen, die Objekte bewegen, oder sie ein- und ausblenden.
+Mit Blend für Visual Studio können Sie ganz einfach kurze Animationen erstellen, die Objekte verschieben oder sie ein-und ausblenden.
 
-Erstellen Sie zunächst ein *Storyboard*. Ein Storyboard enthält eine oder mehrere *Zeitachsen*. Legen Sie auf einer Zeitachse *Keyframes* fest, um Änderungen an den Eigenschaften zu markieren. Beim Ausführen der Animation interpoliert Blend dann die Eigenschaftsänderungen im festgelegten Zeitraum. Das Ergebnis ist ein reibungsloser Übergang. Sie können jede Eigenschaft animieren, die zu einem Objekt gehört, sogar nicht visuelle Eigenschaften.
+Zum Erstellen einer Animation benötigen Sie ein *Storyboard*. Ein Storyboard enthält eine oder mehrere *Zeitachsen*. Legen Sie auf einer Zeitachse *Keyframes* fest, um Änderungen an den Eigenschaften zu markieren. Beim Ausführen der Animation interpoliert Blend für Visual Studio dann die Eigenschaftsänderungen im festgelegten Zeitraum. Das Ergebnis ist ein reibungsloser Übergang. Sie können jede Eigenschaft animieren, die zu einem Objekt gehört, sogar nicht visuelle Eigenschaften.
 
-Die folgende Abbildung zeigt ein Storyboard mit dem Namen **MoveUp**. Die Zeitachse enthält Keyframes, die die x- und y-Position eines Rechtecks markieren. Wenn diese Animation ausgeführt wird, wird das Rechteck nahtlos von einer Position zu einer anderen verschoben.
+Die folgenden Abbildungen zeigen ein Storyboard mit dem Namen **Storyboard1**. Die Zeitachse enthält Keyframes, die die x- und y-Position eines Rechtecks markieren. Wenn diese Animation ausgeführt wird, wird das Rechteck nahtlos von einer Position zu einer anderen verschoben.
 
-![MoveUp-Storyboard im XAML-Designer](../designers/media/982f031a-74a3-414a-abc2-a0f41a741075.png)
+![Storyboard für Animation in Blend für Visual Studio](../designers/media/storyboard-timeline.png)
+
+## <a name="create-an-animation"></a>Erstellen einer Animation
+
+1. Um ein Storyboard zu erstellen, wählen Sie die Schaltfläche **Storyboardoptionen** im Fenster **Objekte und Zeitachse** und dann **Neu** aus.
+
+   ![Hinzufügen eines Storyboards in Blend für Visual Studio](media/new-storyboard.png)
+
+2. Geben Sie im Dialogfeld **Storyboardressource erstellen** einen Namen für das Storyboard ein.
+
+3. Fügen Sie in der Designansicht im Bereich **Objekte** ein Rechteck unten links auf der Seite hinzu.
+
+   ![Rechteck im Bereich „Objekte“ im XAML-Designer](media/add-rectangle.PNG)
+
+4. Bewegen Sie im Fenster **Objekte und Zeitachse** den gelben Zeitzeiger auf **3** Sekunden.
+
+   ![Zeitindikator in der Zeitachse](media/timeline-indicator.PNG)
+
+5. Ziehen Sie das Rechteck in der Designansicht der Seite auf die rechte Seite der Seite.
+
+6. Drücken Sie **Wiedergeben**, um zu sehen, wie sich das Rechteck von der linken zur rechten Seite der Seite bewegt.
+
+Experimentieren Sie mit anderen Änderungen am Rechteck zu unterschiedlichen Zeitpunkten. Beispielsweise können Sie im Eigenschaftenfenster die Füllfarbe ändern oder die Ausrichtung umkehren.
 
 ## <a name="see-also"></a>Siehe auch
 

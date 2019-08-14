@@ -6,14 +6,12 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823826"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821516"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 
@@ -21,7 +19,7 @@ Sie können Ihrer App in XAML im Code oder unter Verwendung des XAML-Designers E
 
 ## <a name="add-an-element-to-a-layout"></a>Hinzufügen eines Elements zu einem Layout
 
-*Layout* ist der Prozess der Größenanpassung und Positionierung von Elementen in einer Benutzeroberfläche. Um visuelle Elemente zu positionieren, müssen Sie sie in einen [Bereich](/uwp/api/Windows.UI.Xaml.Controls.Panel) eines Layouts einfügen. Ein `Panel` verfügt über eine untergeordnete Eigenschaft, die eine Auflistung von [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement)-Typen ist. Sie können verschiedene untergeordnete `Panel`-Elemente wie z.B. [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) und [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) verwenden, um sie als Layoutcontainer zu nutzen und auf einer Seite zu positionieren und anzuordnen.
+*Layout* ist der Prozess der Größenanpassung und Positionierung von Elementen in einer Benutzeroberfläche. Um visuelle Elemente zu positionieren, müssen Sie sie in einen [Bereich](xref:Windows.UI.Xaml.Controls.Panel) eines Layouts einfügen. Ein `Panel` verfügt über eine untergeordnete Eigenschaft, die eine Auflistung von [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement)-Typen ist. Sie können verschiedene untergeordnete `Panel`-Elemente wie z.B. [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) und [Grid](xref:Windows.UI.Xaml.Controls.Grid) verwenden, um sie als Layoutcontainer zu nutzen und auf einer Seite zu positionieren und anzuordnen.
 
 Standardmäßig wird ein `Grid`-Bereich als Layoutcontainer der obersten Ebene innerhalb einer Seite oder eines Formulars verwendet. Sie können Layoutbereiche, Steuerelemente oder andere Elemente innerhalb der obersten Ebene des Seitenlayouts hinzufügen.
 
@@ -31,7 +29,7 @@ Wenn Sie in XAML-Designer einem Layout ein Element hinzufügen möchten, müssen
 
 - Ziehen Sie ein Element aus der **Toolbox** auf die Zeichenfläche.
 
-- Klicken Sie in der **Toolbox** auf eines der Zeichenwerkzeuge (z.B. [Ellipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) oder [Rechteck](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)), und zeichnen Sie dann ein Element im aktiven Bereich.
+- Klicken Sie in der **Toolbox** auf eines der Zeichenwerkzeuge (z.B. [Ellipse](xref:Windows.UI.Xaml.Shapes.Ellipse) oder [Rechteck](xref:Windows.UI.Xaml.Shapes.Rectangle)), und zeichnen Sie dann ein Element im aktiven Bereich.
 
 ## <a name="change-the-layering-order-of-elements"></a>Ändern der Ebenenreihenfolge von Elementen
 
@@ -51,7 +49,7 @@ Wenn Sie Ebenenreihenfolge ändern möchten, müssen Sie einen der folgenden Sch
 
   - **In den Hintergrund**, um das Element hinter alle anderen Elemente in der Reihenfolge zu verschieben.
 
-  Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem höheren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
+- Ändern Sie die **ZIndex**-Eigenschaft im **Layout**-Abschnitt im Eigenschaftenfenster. Bei überlappenden Elementen hat die **ZIndex**-Eigenschaft Vorrang vor der Reihenfolge der Elemente, die im Dokumentgliederungsfenster angezeigt werden. Ein Element mit einem höheren **ZIndex**-Wert wird im Vordergrund angezeigt, wenn sich Elemente überlappen.
 
 ## <a name="change-the-alignment-of-an-element"></a>Ändern der Ausrichtung eines Objekts
 
@@ -88,7 +86,7 @@ Wenn ein Randfunktionsindikator geöffnet ist, sei es vertikal oder horizontal, 
 Wenn Sie ein Rand-Adorner öffnen und der gegenüberliegende Rand nicht festgelegt ist, wird der gegenüberliegende Rand auf den richtigen Wert gemäß der Position des Elements auf der Zeichenfläche festgelegt. Für gegenüberliegende Ränder wie die Ränder **Links** und **Rechts** wird stets mindestens eine Eigenschaft festgelegt.
 
 > [!IMPORTANT]
-> Elemente, die innerhalb irgendwelcher Layoutcontainers platziert werden, wie beispielsweise ein <xref:Windows.UI.Xaml.Controls.Canvas>, haben keine Randfunktionsindikatoren. Elemente, die innerhalb eines <xref:Windows.UI.Xaml.Controls.StackPanel> platziert werden, haben Funktionsindikatoren für entweder die linken und rechten Ränder oder für die oberen und unteren Ränder, abhängig von der Ausrichtung des `StackPanel`.
+> Elemente, die innerhalb irgendwelcher Layoutcontainers platziert werden, wie beispielsweise ein [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), haben keine Randfunktionsindikatoren. Elemente, die innerhalb eines [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) platziert werden, haben Funktionsindikatoren für entweder die linken und rechten Ränder oder für die oberen und unteren Ränder, abhängig von der Ausrichtung des `StackPanel`.
 
 ## <a name="group-and-ungroup-elements"></a>Gruppieren von Elementen und Gruppierung aufheben
 
@@ -101,7 +99,7 @@ So gruppieren Sie Elemente in einem neuen Layoutcontainer:
 2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Elemente, zeigen Sie auf **Gruppieren in**, und klicken Sie dann auf den Typ des Layoutcontainers, in dem die Gruppe platziert werden soll.
 
     > [!TIP]
-    > Bei der Auswahl von <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> oder <xref:Windows.UI.Xaml.Controls.ScrollViewer>, um die Elemente zu gruppieren, werden die Elemente in einem neuen <xref:Windows.UI.Xaml.Controls.Grid>-Bereich innerhalb von <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> oder <xref:Windows.UI.Xaml.Controls.ScrollViewer> platziert. Wenn Sie die Gruppierung von Elementen in einem dieser Layoutcontainer aufheben, werden nur das <xref:Windows.UI.Xaml.Controls.Viewbox>, der <xref:Windows.UI.Xaml.Controls.Border> oder der <xref:Windows.UI.Xaml.Controls.ScrollViewer> gelöscht, und der Bereich <xref:Windows.UI.Xaml.Controls.Grid> wird beibehalten. Löschen Sie den `Grid`-Bereich, heben Sie die Gruppierung der Elemente erneut auf.
+    > Wenn Sie [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) oder [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) auswählen, um Ihre Objekte zu gruppieren, werden die Objekte in einem neuen [Rasterpanel](xref:Windows.UI.Xaml.Controls.Grid) in [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) oder [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) platziert. Wenn Sie die Gruppierung von Elementen in einem dieser Layoutcontainer aufheben, werden nur [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) oder [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) gelöscht, und der Bereich [Raster](xref:Windows.UI.Xaml.Controls.Grid) wird beibehalten. Löschen Sie den `Grid`-Bereich, heben Sie die Gruppierung der Elemente erneut auf.
 
 Wenn Sie die Gruppierung von Elementen aufheben möchten, klicken Sie mit der rechten Maustaste auf die Gruppierung, die Sie aufheben möchten, und klicken Sie dann auf **Gruppierung aufheben**. Sie können Elemente auch durch einen Rechtsklick auf ausgewählte Elemente im Dokumentgliederungsfenster und durch Klicken auf **Gruppieren in** oder **Gruppierung aufheben** gruppieren bzw. die Gruppierung aufheben.
 

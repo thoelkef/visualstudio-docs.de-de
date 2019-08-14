@@ -1,49 +1,33 @@
 ---
 title: MSDN Magazine-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Registrieren Sie sich, um das MSDN Magazine-Abonnement zu erhalten, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 0cc6757a77536a7bd8073418be8729802e8aaaae
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681577"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Der MSDN Magazine-Vorteil in Visual Studio-Abonnements
-
 Umfassende Behandlung von Microsoft-Technologien für praktische Lösungen realistischer Probleme.  Je nach Abonnement haben Sie Anspruch auf das gedruckte Magazin oder auf einen früheren Zugriff auf die digitale Version.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
-Die für die Aktivierung Ihres Vorteils erforderlichen Schritte hängen von der Edition ab, die Sie auswählen.
-
-### <a name="digital-edition"></a>Digitale Ausgabe
-Die digitale Ausgabe ist für Visual Studio Dev Essentials-Mitglieder verfügbar.
-
-1. Melden Sie sich unter [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, um auf die digitale Ausgabe von MSDN Magazine zuzugreifen.
+1. Um das MSDN Magazine zu abonnieren, melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 2. Suchen Sie im Abschnitt „Professionelle Entwicklung“ die Kachel “MSDN Magazine“, und klicken Sie auf **Zugreifen**.
-
-### <a name="printed-edition"></a>Druckausgabe
-1. Melden Sie sich unter [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, um Ihr MSDN Magazine-Abonnement zu starten.
-2. Suchen Sie im Abschnitt „Professionelle Entwicklung“ die Kachel „MSDN Magazine“, und klicken Sie auf der Kachel des MSDN Magazine-Abonnements auf **Abonnieren**. (Klicken Sie in der unteren rechten Ecke der Kachel auf das Ausrufezeichen, um auf die digitale Edition zuzugreifen.)
-   > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „MSDN Magazine“](_img/vs-msdn/vs-msdn-tile.png)
-
 3. Wählen Sie auf der MSDN Magazine-Seite Ihre bevorzugte Abonnementart aus.  Sie können die kostenlose digitale Version unabhängig von Ihrem Wohnort auswählen.  Die gedruckte Version ist für Personen in den USA kostenlos verfügbar.  Die Versandgebühren gelten für die gedruckte Version, die an Adressen außerhalb der USA versendet wird.
    > [!div class="mx-imgBorder"]
    > ![Abonnement des Vorteils „MSDN Magazine“](_img/vs-msdn/vs-msdn-subs-page-resized.png)
-
 4. Geben Sie die geforderten Kontaktinformationen ein, und klicken Sie auf **Senden**.  (Die Version des gewählten Magazins erscheint im Abschnitt des Magazinabonnements.  Wenn Sie die Druckversion auswählen, lautet die erste Option **Yes!  I want to receive 1 year (12 issues) of MSDN Magazine for FREE**. (Ja, ich möchte 12 Ausgaben von MSDN Magazine für ein Jahr KOSTENLOS erhalten.)
    > [!div class="mx-imgBorder"]
    > ![Profil des Vorteils „MSDN Magazine“](_img/vs-msdn/vs-msdn-profile.png)
-
 5. Das ist auch schon alles.  Je nachdem, für welche Version des Magazins Sie sich entscheiden, erhalten Sie entweder die Druckversion oder E-Mails mit Links zu den neuesten Onlineversionen mit der nächsten Edition.  Viel Erfolg!
 
 ## <a name="eligibility"></a>Berechtigung
-
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> |Druckausgabe       |  Nein.  Nur für neue Abonnenten verfügbar          |
@@ -67,3 +51,9 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="support-resources"></a>Supportressourcen
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Informieren Sie sich über mehr professionelle Entwicklungschancen in Ihrem Abonnement:
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [DataCamp](vs-datacamp.md)

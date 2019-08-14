@@ -3,15 +3,15 @@ title: Office 365-Vorteil | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250768"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787927"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus in Visual Studio-Abonnements
 
@@ -70,3 +70,9 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Besuchen Sie https://support.microsoft.com/allproducts, und wählen Sie das Produkt aus, um technischen Support für EMS-Komponenten zu erhalten.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie eine Frage zur Visual Studio-IDE, zu Azure DevOps oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure-Gutschriften](vs-azure.md)

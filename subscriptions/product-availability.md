@@ -3,15 +3,15 @@ title: Produktverfügbarkeit für Softwaredownloads in Visual Studio-Abonnements
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informationen zur Produktverfügbarkeit in Softwaredownloads für Visual Studio-Abonnements
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315391"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681697"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Produktverfügbarkeit für Softwaredownloads in Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.
@@ -38,4 +38,5 @@ Es hängt von Ihrer Abonnementstufe und den Programmmitgliedschaften ab, wie vie
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Für einige Softwaredownloads ist zum Installieren und Aktivieren ein Product Key erforderlich.  Weitere Informationen zum Abrufen und Verwalten von Product Keys finden Sie im Artikel zu Product Keys. 
+- Für einige Softwaredownloads ist zum Installieren und Aktivieren ein Product Key erforderlich.  Weitere Informationen zum Abrufen und Verwalten von [Product Keys](product-keys.md) finden Sie im Artikel zu Product Keys. 
+- Erfahren Sie, wie Sie [Software herunterladen](download-software.md).

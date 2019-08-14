@@ -1,17 +1,17 @@
 ---
 title: Pluralsight-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2019
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: bc80d8d799a0cca92bfa78cb1e96424f227fe9ef
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784884"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787660"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -32,36 +32,27 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
    > **„Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account.“** („Bitte beachten Sie: Wenn Sie zuvor ein anderes Pluralsight-Angebot über Ihr Visual Studio-Abonnement aktiviert haben, können Sie mit diesem Code möglicherweise kein neues Pluralsight-Konto erstellen.“)
 
 2. Sie erhalten eine Benachrichtigung, dass der Gutscheincode erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight-Vorteil: Aktivieren](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
 3. Sie werden auf die Pluralsight-Seite für den Vorteil umgeleitet, der in Ihrem Visual Studio-Abonnement enthalten ist.
    - Geben Sie im Formular die geforderten Kontaktinformationen ein.
    - Klicken Sie auf das Kontrollkästchen, um die Nutzungsbedingungen und die Datenschutzrichtlinie zu akzeptieren.
    - Klicken Sie auf **I agree, activate benefit** (Ich stimme zu, Vorteil aktivieren).
-     > [!div class="mx-imgBorder"]
-     > ![Pluralsight-Vorteil: Aktivierung](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
-     > [!div class="mx-imgBorder"]
-     > ![Pluralsight-Vorteil: Nutzungsbedingungen](_img/vs-pluralsight/vs-pluralsight-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight – Vorteile aktivieren](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
 5. Das Einrichten Ihres Kontos kann einen Moment dauern.  Sobald dieser Vorgang abgeschlossen ist, wird auf der Seite eine Bestätigung angezeigt, und Sie erhalten eine E-Mail, die Ihre Anmeldeinformationen enthält.  Diese E-Mail wird an den Alias gesendet, den Sie bei der Erstellung des Kontos angegeben haben.  Überprüfen Sie auch Ihre Ordner für Junk- oder Spam-E-Mails, wenn Sie die Nachricht nicht finden können.
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight-Vorteil: Bestätigung](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   >
+
    > [!NOTE]
    > Wenn Ihr Konto nicht dafür berechtigt ist, neue Angebote einzulösen, informiert Sie die empfangene E-Mail darüber, dass es ein Problem mit der Erstellung Ihres Accounts gab, da diesem Berechtigungen fehlen.  Darüber hinaus sind Informationen enthalten, die Sie dabei unterstützen, das Pluralsight-Supportteam zu kontaktieren, damit dieses Ihnen bei Bedarf offene Fragen zu Ihrem Konto beantwortet.
+   
 
 6. Sobald Ihr Konto erfolgreich erstellt wurde, enthält die empfangene E-Mail Ihren Benutzernamen, und Sie werden dazu aufgefordert, ein Kennwort zu erstellen.  Geben Sie ein Kennwort ein, und geben Sie es dann zur Bestätigung erneut ein. Klicken Sie dann auf **Log in to Pluralsight** (Bei Pluralsight anmelden).
    > [!div class="mx-imgBorder"]
    > ![Pluralsight-Vorteil: Willkommens-E-Mail](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. Geben Sie den Benutzernamen ein, den Sie mit der Willkommens-E-Mail erhalten haben sowie das Kennwort, das Sie gerade erstellt haben, und klicken Sie auf **Anmelden**.
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight-Vorteil: Anmeldung](_img/vs-pluralsight/vs-pluralsight-login.png)
 
 8. Das ist alles!  Nun können Sie Ihre Kenntnisse mit Tausenden von Pluralsight-Kursen erweitern.
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight-Vorteil: Startseite](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Berechtigung
 
