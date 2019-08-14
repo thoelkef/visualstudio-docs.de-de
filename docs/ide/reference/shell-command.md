@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990049"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918958"
 ---
 # <a name="shell-command"></a>Befehl "Shell"
 Startet ausführbare Programme aus [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -35,31 +35,31 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
 ## <a name="arguments"></a>Argumente
- `path`
+`path`
 
- Erforderlich. Der Pfad und Dateiname der auszuführenden Datei oder des zu öffnenden Dokuments. Wenn die angegebene Datei sich nicht in einem der Verzeichnisse in der Umgebungsvariable PATH befindet, ist der vollständige Pfad erforderlich.
+Erforderlich. Der Pfad und Dateiname der auszuführenden Datei oder des zu öffnenden Dokuments. Wenn die angegebene Datei sich nicht in einem der Verzeichnisse in der Umgebungsvariable PATH befindet, ist der vollständige Pfad erforderlich.
 
- `args`
+`args`
 
- Dies ist optional. Alle Argumente, die an das aufgerufene Programm übergeben werden sollen.
+Optional. Alle Argumente, die an das aufgerufene Programm übergeben werden sollen.
 
 ## <a name="switches"></a>Schalter
- /commandwindow [oder] /command [oder] /c [oder] /cmd
+/commandwindow [oder] /command [oder] /c [oder] /cmd
 
- Dies ist optional. Gibt an, dass die Ausgabe für die ausführbare Datei im **Befehlsfenster** angezeigt werden soll.
+Optional. Gibt an, dass die Ausgabe für die ausführbare Datei im **Befehlsfenster** angezeigt werden soll.
 
- /dir:`folder` [oder] /d: `folder`
+/dir:`folder` [oder] /d: `folder`
 
- Dies ist optional. Gibt das bei der Ausführung des Programms festzulegende Arbeitsverzeichnis an.
+Optional. Gibt das bei der Ausführung des Programms festzulegende Arbeitsverzeichnis an.
 
- /outputwindow [oder] /output [oder] /out [oder] /o
+/outputwindow [oder] /output [oder] /out [oder] /o
 
- Dies ist optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.
+Optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.
 
 ## <a name="remarks"></a>Anmerkungen
- Die /dir-, /o- und /c-Schalter müssen unmittelbar nach `Tools.Shell` angegeben werden. Alles, was nach dem Namen der ausführbaren Datei angegeben wird, wird als Befehlszeilenargumente übergeben.
+Die /dir-, /o- und /c-Schalter müssen unmittelbar nach `Tools.Shell` angegeben werden. Alles, was nach dem Namen der ausführbaren Datei angegeben wird, wird als Befehlszeilenargumente übergeben.
 
- Der vordefinierte Alias `Shell` kann anstelle von `Tools.Shell` verwendet werden.
+Der vordefinierte Alias `Shell` kann anstelle von `Tools.Shell` verwendet werden.
 
 > [!CAUTION]
 > Wenn im `path`-Argument der Verzeichnispfad und der Dateiname angegeben sind, sollten Sie den gesamten Pfadnamen wie im Folgenden dargestellt in literale Anführungszeichen (""") einschließen:
@@ -68,7 +68,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
- Jede aus drei doppelten Anführungszeichen bestehende Gruppe (""") wird vom `Shell`-Prozessor als einzelnes doppeltes Anführungszeichen interpretiert. Daher wird im vorherigen Beispiel tatsächlich die folgende Pfadzeichenfolge an den `Shell`-Befehl übergeben:
+Jede aus drei doppelten Anführungszeichen bestehende Gruppe (""") wird vom `Shell`-Prozessor als einzelnes doppeltes Anführungszeichen interpretiert. Daher wird im vorherigen Beispiel tatsächlich die folgende Pfadzeichenfolge an den `Shell`-Befehl übergeben:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
@@ -78,7 +78,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > Wenn Sie die Pfadzeichenfolge nicht in literale Anführungszeichen (""") einschließen, wird von Windows nur der Teil der Zeichenfolge bis zum ersten Leerzeichen verwendet. Wäre die oben aufgeführte Pfadzeichenfolge beispielsweise nicht ordnungsgemäß in Anführungszeichen eingeschlossen, würde Windows im Stammverzeichnis C:\ nach einer Datei mit dem Namen „Program“ suchen. Wenn tatsächlich eine ausführbare Datei „C:\Program.exe“ vorhanden wäre, die möglicherweise sogar widerrechtlich installiert wurde, würde Windows versuchen, dieses Programm anstelle des gewünschten Programms „C:\Programme\SomeFile.exe“ auszuführen.
 
 ## <a name="example"></a>Beispiel
- Der folgende Befehl verwendet „xcopy.exe“, um die Datei `MyText.txt` in den Ordner `Text` zu kopieren. Die Ausgabe von „xcopy.exe“ wird im **Befehlsfenster** und im Fenster **Ausgabe** angezeigt.
+Der folgende Befehl verwendet „xcopy.exe“, um die Datei `MyText.txt` in den Ordner `Text` zu kopieren. Die Ausgabe von „xcopy.exe“ wird im **Befehlsfenster** und im Fenster **Ausgabe** angezeigt.
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894184"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924506"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Vorgehensweise: Erstellen eines einfachen 3D-Modells
 
@@ -30,13 +30,13 @@ In diesem Artikel wird gezeigt, wie der Modell-Editor zum Erstellen eines einfac
 - Verwenden des Befehls **Triangulieren**
 
 ## <a name="create-a-basic-3d-model"></a>Erstellen eines einfachen 3D-Modells
- Sie können den Modell-Editor zum Erstellen und Ändern von 3D-Modellen und -Szenen für Ihre Spiele und Apps verwenden. Die folgenden Schritte zeigen, wie Sie den Modell-Editor verwenden, um ein vereinfachtes 3D-Modell eines Hauses zu erstellen. Ein vereinfachtes Modell kann als Ersatz für die endgültigen Grafikobjekte verwendet werden, die noch erstellt werden. Es dient als ein Gitter zur Kollisionserkennung oder als ein Modell mit niedrigen Details, das verwendet wird, wenn ein Objekt, das es darstellt, zu weit weg ist, um von detaillierterem Rendering zu profitieren.
+Sie können den Modell-Editor zum Erstellen und Ändern von 3D-Modellen und -Szenen für Ihre Spiele und Apps verwenden. Die folgenden Schritte zeigen, wie Sie den Modell-Editor verwenden, um ein vereinfachtes 3D-Modell eines Hauses zu erstellen. Ein vereinfachtes Modell kann als Ersatz für die endgültigen Grafikobjekte verwendet werden, die noch erstellt werden. Es dient als ein Gitter zur Kollisionserkennung oder als ein Modell mit niedrigen Details, das verwendet wird, wenn ein Objekt, das es darstellt, zu weit weg ist, um von detaillierterem Rendering zu profitieren.
 
- Das Modell sollte dann etwa so aussehen:
+Das Modell sollte dann etwa so aussehen:
 
- ![Das abgeschlossene Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png)
+![Das abgeschlossene Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png)
 
- Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
+Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Erstellen eines vereinfachten 3D-Modells eines Hauses
 

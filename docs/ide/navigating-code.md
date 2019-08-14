@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570087"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919515"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -31,7 +31,7 @@ Der Editor von Visual Studio bietet zahlreiche Möglichkeiten, im Code zu navigi
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>„Rückwärts navigieren“-Befehl und „Vorwärts navigieren“-Befehl
 
-Sie können die Schaltflächen **Rückwärts navigieren** (**STRG**+**-**) und **Vorwärts navigieren** (**STRG**+**UMSCHALT**+**-**) auf der Symbolleiste verwenden, um die Einfügemarke auf vorherige Positionen oder von einer vorherigen Position auf eine erst kürzlich besuchte Position zu verschieben. Diese Schaltflächen speichern die letzten 20 Positionen der Einfügemarke. Diese Befehle sind auch im Menü **Ansicht** unter **Rückwärts navigieren** und **Vorwärts navigieren** verfügbar.
+Sie können die Schaltflächen **Rückwärts navigieren** (**STRG**+ **-** ) und **Vorwärts navigieren** (**STRG**+**UMSCHALT**+ **-** ) auf der Symbolleiste verwenden, um die Einfügemarke auf vorherige Positionen oder von einer vorherigen Position auf eine erst kürzlich besuchte Position zu verschieben. Diese Schaltflächen speichern die letzten 20 Positionen der Einfügemarke. Diese Befehle sind auch im Menü **Ansicht** unter **Rückwärts navigieren** und **Vorwärts navigieren** verfügbar.
 
 ![Navigationsschaltflächen "Vor" und "Zurück"](../ide/media/vs2017_nav_buttons.png)
 
@@ -39,7 +39,7 @@ Sie können die Schaltflächen **Rückwärts navigieren** (**STRG**+**-**) und *
 
 Sie können die **Navigationsleiste** (die Dropdownfelder am Anfang des Codefensters) verwenden, um in einer Codebasis zu Code zu navigieren. Sie können einen Typ oder Member auswählen und direkt zu diesem wechseln. Die Navigationsleiste wird angezeigt, wenn Sie Code in der Visual Basic-, C#- oder C++-Code-Basis bearbeiten. In einer partiellen Klasse sind Member, die außerhalb der aktuellen Codedatei definiert wurden, möglicherweise deaktiviert (werden grau angezeigt).
 
- ![Codenavigationsleiste](../ide/media/vside_navigation_bar.png)
+![Codenavigationsleiste](../ide/media/vside_navigation_bar.png)
 
 Mithilfe der Dropdownfelder können Sie wie folgt navigieren:
 
@@ -78,7 +78,7 @@ Es existieren folgende „Gehe zu“-Befehle, die im Menü **Bearbeiten** unter 
 
 - **Gehe zu Zeile** (**STRG**+**G**): zur angegebenen Zeilennummer im aktiven Dokument wechseln.
 
-- **Gehe zu allen** (**STRG**+**T** oder **STRG**+**,**): zur angegebenen Zeile oder Datei bzw. zum angegebenen Typ, Member oder Symbol wechseln.
+- **Gehe zu allen** (**STRG**+**T** oder **STRG**+ **,** ): zur angegebenen Zeile oder Datei bzw. zum angegebenen Typ, Member oder Symbol wechseln.
 
 - **Zu Datei wechseln** (**STRG**+**1**, **STRG**+**F**): zur angegebenen Datei in der Projektmappe wechseln.
 

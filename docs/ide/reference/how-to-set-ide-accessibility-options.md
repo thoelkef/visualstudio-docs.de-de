@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0b5835333bf8cd41ab653108054e2d3dd4c73e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789799"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919283"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen
 
@@ -32,17 +32,17 @@ ms.locfileid: "62789799"
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editors, Dialogfelder und Toolfenster
 
- Standardmäßig wird in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Dialogfelder und Toolfenster die gleiche Schriftgröße und Schriftfarbe wie für das Betriebssystem verwendet. Die Farbeinstellungen für den Rahmen der IDE, die Dialogfelder, Symbolleisten und Toolfenster basieren auf einem Farbschema: hell oder dunkel. Sie können das aktuelle Farbschema unter [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md) ändern.
+Standardmäßig wird in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Dialogfelder und Toolfenster die gleiche Schriftgröße und Schriftfarbe wie für das Betriebssystem verwendet. Die Farbeinstellungen für den Rahmen der IDE, die Dialogfelder, Symbolleisten und Toolfenster basieren auf einem Farbschema: hell oder dunkel. Sie können das aktuelle Farbschema unter [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md) ändern.
 
- Sie können auch festlegen, dass in der Codeansicht des Editors Popupfenster angezeigt werden. Diese Fenster zeigen Ihnen möglicherweise verfügbare Member für das aktuelle Objekt und die Parameter, die für eine Funktion oder Anweisung benötigt werden. Sie können besonders hilfreich sein, wenn Sie Schwierigkeiten bei der Eingabe über die Tastatur haben. Allerdings kollidiert diese Funktion mit dem Fokus im Code-Editor, was für manche Benutzer problematisch sein kann. Sie können diese Fenster deaktivieren, indem Sie das Dialogfeld **Optionen** öffnen und **Member automatisch auflisten** sowie **Parameterinformationen** im **Text-Editor** auf der Seite **Alle Sprachen** unter **Allgemein** löschen.
+Sie können auch festlegen, dass in der Codeansicht des Editors Popupfenster angezeigt werden. Diese Fenster zeigen Ihnen möglicherweise verfügbare Member für das aktuelle Objekt und die Parameter, die für eine Funktion oder Anweisung benötigt werden. Sie können besonders hilfreich sein, wenn Sie Schwierigkeiten bei der Eingabe über die Tastatur haben. Allerdings kollidiert diese Funktion mit dem Fokus im Code-Editor, was für manche Benutzer problematisch sein kann. Sie können diese Fenster deaktivieren, indem Sie das Dialogfeld **Optionen** öffnen und **Member automatisch auflisten** sowie **Parameterinformationen** im **Text-Editor** auf der Seite **Alle Sprachen** unter **Allgemein** löschen.
 
- Sie können die Fenster in der IDE (Integrated Development Environment, Integrierte Entwicklungsumgebung) so anordnen, dass sie Ihrer individuellen Arbeitsweise entgegenkommen. Sie können jedes Toolfenster andocken, verschieben, ausblenden oder automatisch ausblenden.
+Sie können die Fenster in der IDE (Integrated Development Environment, Integrierte Entwicklungsumgebung) so anordnen, dass sie Ihrer individuellen Arbeitsweise entgegenkommen. Sie können jedes Toolfenster andocken, verschieben, ausblenden oder automatisch ausblenden.
 
- Weitere Informationen zum Ändern des Fensterlayouts finden Sie unter [Anpassen von Fensterlayouts in Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md).
+Weitere Informationen zum Ändern des Fensterlayouts finden Sie unter [Anpassen von Fensterlayouts in Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ### <a name="changing-the-size-of-text"></a>Ändern der Textgröße
 
- Sie können die Einstellungen für textbasierte Toolfenster, z.B. das Fenster **Befehl**, das Fenster **Direkt** und das Fenster **Ausgabe**, im Bereich **Schriftarten und Farben** der Optionen unter **Umgebung** im Dialogfeld **Extras** ändern. Wenn in der Dropdownliste **Einstellungen anzeigen** der Eintrag **[Alle Texttoolfenster]** ausgewählt wurde, wird in den Dropdownlisten **Elementvordergrund** und **Elementhintergrund** die Standardeinstellung **Standard** angezeigt. Sie können auch festlegen, wie Text im Editor angezeigt werden soll.
+Sie können die Einstellungen für textbasierte Toolfenster, z.B. das Fenster **Befehl**, das Fenster **Direkt** und das Fenster **Ausgabe**, im Bereich **Schriftarten und Farben** der Optionen unter **Umgebung** im Dialogfeld **Extras** ändern. Wenn in der Dropdownliste **Einstellungen anzeigen** der Eintrag **[Alle Texttoolfenster]** ausgewählt wurde, wird in den Dropdownlisten **Elementvordergrund** und **Elementhintergrund** die Standardeinstellung **Standard** angezeigt. Sie können auch festlegen, wie Text im Editor angezeigt werden soll.
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>So ändern Sie die Textgröße in textbasierten Toolfenstern und Editoren
 
@@ -73,7 +73,7 @@ ms.locfileid: "62789799"
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Ändern der Farben, die in der IDE verwendet werden
 
- Sie können auch die Standardfarben für Text, Indikatorränder, Leerstellen und Codeelemente im Editor anpassen.
+Sie können auch die Standardfarben für Text, Indikatorränder, Leerstellen und Codeelemente im Editor anpassen.
 
 > [!NOTE]
 > Um in allen Anwendungsfenstern des Betriebssystems kontrastreiche Farben zu verwenden, drücken Sie Linke <strong>ALT+</strong>Linke **UMSCHALT+DRUCK**. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] geöffnet ist, schließen und öffnen Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], damit die hohen Kontraste ordnungsgemäß übernommen werden.
@@ -94,7 +94,7 @@ ms.locfileid: "62789799"
 
 ## <a name="toolbars"></a>Symbolleisten
 
- Zur Verbesserung der Benutzerfreundlichkeit und Barrierefreiheit der Symbolleisten können Sie Text zu den Symbolleisten-Schaltflächen hinzufügen.
+Zur Verbesserung der Benutzerfreundlichkeit und Barrierefreiheit der Symbolleisten können Sie Text zu den Symbolleisten-Schaltflächen hinzufügen.
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>So weisen Sie Symbolleisten-Schaltflächen Text zu
 

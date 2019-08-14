@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605937"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926198"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 
@@ -40,11 +40,11 @@ Verwenden Sie die folgenden Optionen zum Auswählen der anzuzeigenden bzw. zu ä
 
  **Konfiguration**
 
- Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)** , **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
+Gibt die anzuzeigenden bzw. zu ändernden Konfigurationseinstellungen an. Die Einstellungen sind **Debuggen (Standard)** , **Release**, **Alle Konfigurationen** oder eine benutzerdefinierte Konfiguration. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plattform**
 
- Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
+Gibt die anzuzeigenden bzw. zu ändernden Plattformeinstellungen an. Die Einstellungen sind **Beliebige CPU** (Standard für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-App), **x64**, **ARM**, **x86** oder eine benutzerdefinierte Plattform. Weitere Informationen finden Sie unter [Vorgehensweise: How to: Set debug and release configurations in Visual Studio (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Seite "Allgemein"
 
@@ -55,13 +55,13 @@ Verwenden Sie die folgenden Optionen, um die allgemeinen Eigenschaften des Proje
 
  **Ausgabepfad**
 
- Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird der absolute Pfad im Projekt gespeichert. Der Standardpfad ist "bin\Debug".
+Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird der absolute Pfad im Projekt gespeichert. Der Standardpfad ist "bin\Debug".
 
- Bei Verwendung vereinfachter Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Wenn Sie auf **Debuggen** > **Debuggen starten** klicken (oder **F5** drücken), wird der Build unabhängig vom angegebenen **Ausgabepfad** am Speicherort für das Debuggen abgelegt. Mit dem Befehl **Projektmappe erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Um erweiterte Buildkonfigurationen zu aktivieren, wählen Sie in der Menüleiste die Optionen **Extras** > **Optionen** aus. Erweitern Sie im Dialogfeld **Optionen** die Option **Projekte und Projektmappen**, wählen Sie **Allgemein** aus, und heben Sie anschließend die Markierung des Kontrollkästchens **Erweiterte Buildkonfigurationen anzeigen** auf. Dadurch erlangen Sie die manuelle Steuerung aller Konfigurationswerte, und Sie können festlegen, ob eine Debug- oder eine Releaseversion erstellt werden soll.
+Bei Verwendung vereinfachter Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Wenn Sie auf **Debuggen** > **Debuggen starten** klicken (oder **F5** drücken), wird der Build unabhängig vom angegebenen **Ausgabepfad** am Speicherort für das Debuggen abgelegt. Mit dem Befehl **Projektmappe erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Um erweiterte Buildkonfigurationen zu aktivieren, wählen Sie in der Menüleiste die Optionen **Extras** > **Optionen** aus. Erweitern Sie im Dialogfeld **Optionen** die Option **Projekte und Projektmappen**, wählen Sie **Allgemein** aus, und heben Sie anschließend die Markierung des Kontrollkästchens **Erweiterte Buildkonfigurationen anzeigen** auf. Dadurch erlangen Sie die manuelle Steuerung aller Konfigurationswerte, und Sie können festlegen, ob eine Debug- oder eine Releaseversion erstellt werden soll.
 
  **Standardsprache**
 
- Gibt die Standardsprache für das Projekt an. Die Sprachenoption, die unter **Zeit, Sprache und Region** in der Systemsteuerung ausgewählt ist, gibt die bevorzugte Sprache des Benutzers an. Mit der Angabe einer Standardsprache für das Projekt kann überprüft werden, ob die angegebenen Standardsprachressourcen verwendet werden, wenn die bevorzugte Sprache des Benutzers nicht mit den in der Anwendung bereitgestellten Sprachressourcen übereinstimmt.
+Gibt die Standardsprache für das Projekt an. Die Sprachenoption, die unter **Zeit, Sprache und Region** in der Systemsteuerung ausgewählt ist, gibt die bevorzugte Sprache des Benutzers an. Mit der Angabe einer Standardsprache für das Projekt kann überprüft werden, ob die angegebenen Standardsprachressourcen verwendet werden, wenn die bevorzugte Sprache des Benutzers nicht mit den in der Anwendung bereitgestellten Sprachressourcen übereinstimmt.
 
 ## <a name="debug-page"></a>Seite "Debuggen"
 
@@ -72,7 +72,7 @@ Verwenden Sie die folgenden Optionen, um die Eigenschaften für das Debugverhalt
 
  **Zu startender Debugger**
 
- Gibt den Standardhost für den Debugger an.
+Gibt den Standardhost für den Debugger an.
 
 - Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 

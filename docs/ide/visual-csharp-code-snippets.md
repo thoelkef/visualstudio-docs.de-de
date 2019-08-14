@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581697"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918669"
 ---
 # <a name="c-code-snippets"></a>C#-Codeausschnitte
 
 Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihren Code einfügen können. Beispielsweise erstellt der `for`-Codeausschnitt eine leere `for`-Schleife. Einige Codeausschnitte sind umschließende Codeausschnitte, mit deren Hilfe Sie Codezeilen markieren und dann einen Codeausschnitt auswählen können, der die markierten Codezeilen einschließt. Durch das Markieren von Codezeilen und das anschließende Aktivieren des `for`-Codeausschnitts wird beispielsweise eine `for`-Schleife erstellt, die die markierten Codezeilen innerhalb des Schleifenblocks enthält. Durch Codeausschnitte kann das Erstellen von Programmcode schneller, einfacher und zuverlässiger werden.
 
- Sie können einen Codeausschnitt an der Cursorposition einfügen oder einen umgebenden Codeausschnitt einfügen, der den aktuell ausgewählten Code einschließt. Der Codeausschnitteinfüger wird im Menü **IntelliSense** über die Befehle **Codeausschnitt einfügen** oder **Umschließen mit** oder durch die Tastenkombinationen **STRG**+**K**>**X** bzw. **STRG**+**K**>**S** aufgerufen.
+Sie können einen Codeausschnitt an der Cursorposition einfügen oder einen umgebenden Codeausschnitt einfügen, der den aktuell ausgewählten Code einschließt. Der Codeausschnitteinfüger wird im Menü **IntelliSense** über die Befehle **Codeausschnitt einfügen** oder **Umschließen mit** oder durch die Tastenkombinationen **STRG**+**K**>**X** bzw. **STRG**+**K**>**S** aufgerufen.
 
- Der **Codeausschnitteinfüger** zeigt den Codeausschnittnamen für alle verfügbaren Codeausschnitte an. Darüber hinaus umfasst der Codeausschnitteinfüger ein Eingabedialogfeld, in dem Sie den Namen des Codeausschnitts vollständig oder teilweise eingeben können. Daraufhin wird im Codeausschnitteinfüger der Eintrag hervorgehoben, der dem Namen eines Codeausschnitts am besten entspricht. Durch Drücken der **TAB-TASTE** können Sie den Codeausschnitteinfüger jederzeit schließen und den zu diesem Zeitpunkt ausgewählten Codeausschnitt einfügen. Durch Drücken der **ESC-TASTE** oder Klicken mit der Maus im Code-Editor wird der Codeausschnitteinfüger geschlossen, ohne dass ein Codeausschnitt eingefügt wird.
+Der **Codeausschnitteinfüger** zeigt den Codeausschnittnamen für alle verfügbaren Codeausschnitte an. Darüber hinaus umfasst der Codeausschnitteinfüger ein Eingabedialogfeld, in dem Sie den Namen des Codeausschnitts vollständig oder teilweise eingeben können. Daraufhin wird im Codeausschnitteinfüger der Eintrag hervorgehoben, der dem Namen eines Codeausschnitts am besten entspricht. Durch Drücken der **TAB-TASTE** können Sie den Codeausschnitteinfüger jederzeit schließen und den zu diesem Zeitpunkt ausgewählten Codeausschnitt einfügen. Durch Drücken der **ESC-TASTE** oder Klicken mit der Maus im Code-Editor wird der Codeausschnitteinfüger geschlossen, ohne dass ein Codeausschnitt eingefügt wird.
 
 ## <a name="default-code-snippets"></a>Standardcodeausschnitte
 
 Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enthalten.
 
-|Name (oder Verknüpfung)|Beschreibung|Mögliche Stellen zum Einfügen des Ausschnitts|
+|Name (oder Verknüpfung)|BESCHREIBUNG|Mögliche Stellen zum Einfügen des Ausschnitts|
 | - |-----------------| - |
 |#if|Erstellt eine [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if)-Direktive und eine [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif)-Direktive.|Beliebig.|
 |#region|Erstellt eine [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region)-Direktive und eine [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion)-Direktive.|Beliebig.|

@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461560"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918883"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 
@@ -49,11 +49,11 @@ In diesem Dialogfeld können Sie Build- und Projekteinstellungen für C++ defini
 
  **Ja**
 
- Listet Umgebungsvariablen in der Buildprotokolldatei auf. Diese Option gibt an, dass während der Erstellung von C++-Projekten alle Umgebungsvariablen als Echo in die Buildprotokolldatei aufgenommen werden.
+Listet Umgebungsvariablen in der Buildprotokolldatei auf. Diese Option gibt an, dass während der Erstellung von C++-Projekten alle Umgebungsvariablen als Echo in die Buildprotokolldatei aufgenommen werden.
 
  **No**
 
- Schließt Umgebungsvariablen aus der Buildprotokolldatei aus.
+Schließt Umgebungsvariablen aus der Buildprotokolldatei aus.
 
 ## <a name="build-timing"></a>Buildzeitgeber
 
@@ -63,7 +63,7 @@ In diesem Dialogfeld können Sie Build- und Projekteinstellungen für C++ defini
 
  **No**
 
- Deaktiviert die Zeitnahme für das Build.
+Deaktiviert die Zeitnahme für das Build.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Maximale Anzahl gleichzeitiger C++-Kompilierungen
 

@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 07/24/2019
+ms.date: 08/06/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e6cde2a132107d8097cd5c51e438b16ffbf54ea
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 4f07b8c0fc5317f6646868ad61ba61e42754a79c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461524"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870726"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -31,6 +31,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.1 | Freigabe | 6\. August 2019 | 16.2.29201.188 |
 | 16.2.0 | Freigabe | 24. Juli 2019 | 16.2.29123.88 |
 | 16.3.0 | Vorschauversion 1 | 24. Juli 2019 | 16.3.29123.89 |
 | 16.2.0 | Vorschauversion 4 | 16. Juli 2019 | 16.2.29111.141 |

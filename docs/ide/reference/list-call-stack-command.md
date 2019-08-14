@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a122b9fbc97816b114ba2ff6274756f9e2093eef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970056"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919161"
 ---
 # <a name="list-call-stack-command"></a>Befehl "Aufrufliste auflisten"
 Zeigt die aktuelle Aufrufliste an.
@@ -34,71 +34,73 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ```
 
 ## <a name="arguments"></a>Argumente
- `index` ist optional. Legt den aktuellen Stapelrahmen fest, und zeigt keine Ausgabe an.
+
+`index`\
+Optional. Legt den aktuellen Stapelrahmen fest, und zeigt keine Ausgabe an.
 
 ## <a name="switches"></a>Schalter
- Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufgerufen werden.
+Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufgerufen werden.
 
- /Count:`number` [oder] /C:`number`
+/Count:`number` [oder] /C:`number`
 
- Dies ist optional. Maximale Anzahl der anzuzeigenden Aufruflisten. Der Standardwert ist unbegrenzt.
+Optional. Maximale Anzahl der anzuzeigenden Aufruflisten. Der Standardwert ist unbegrenzt.
 
- /ShowTypes:`yes`|`no` [oder] /T:`yes`|`no`
+/ShowTypes:`yes`|`no` [oder] /T:`yes`|`no`
 
- Dies ist optional. Gibt an, ob Parametertypen angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob Parametertypen angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- /ShowNames:`yes`|`no` [oder] /N:`yes`|`no`
+/ShowNames:`yes`|`no` [oder] /N:`yes`|`no`
 
- Dies ist optional. Gibt an, ob Parameternamen angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob Parameternamen angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- /ShowValues:`yes`|`no` [oder] /V:`yes`|`no`
+/ShowValues:`yes`|`no` [oder] /V:`yes`|`no`
 
- Dies ist optional. Gibt an, ob Parameterwerte angezeigt werden sollen. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob Parameterwerte angezeigt werden sollen. Der Standardwert ist `yes`sein.
 
- /ShowModule:`yes`|`no` [oder] /M:`yes`|`no`
+/ShowModule:`yes`|`no` [oder] /M:`yes`|`no`
 
- Dies ist optional. Gibt an, ob der Modulname angezeigt werden soll. Der Standardwert ist `yes`sein.
+Optional. Gibt an, ob der Modulname angezeigt werden soll. Der Standardwert ist `yes`sein.
 
- /ShowLineOffset:`yes`|`no` [oder] /#:`yes`|`no`
+/ShowLineOffset:`yes`|`no` [oder] /#:`yes`|`no`
 
- Dies ist optional. Gibt an, ob der Zeilenoffset angezeigt werden soll. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob der Zeilenoffset angezeigt werden soll. Der Standardwert ist `no`sein.
 
- /ShowByteOffset:`yes`|`no` [oder] /B:`yes`|`no`
+/ShowByteOffset:`yes`|`no` [oder] /B:`yes`|`no`
 
- Dies ist optional. Gibt an, ob der Byte-Offset angezeigt werden soll. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob der Byte-Offset angezeigt werden soll. Der Standardwert ist `no`sein.
 
- /ShowLanguage:`yes`|`no` [oder] /L:`yes`|`no`
+/ShowLanguage:`yes`|`no` [oder] /L:`yes`|`no`
 
- Dies ist optional. Gibt an, ob die Sprache angezeigt werden soll. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob die Sprache angezeigt werden soll. Der Standardwert ist `no`sein.
 
- /IncludeCallsAcrossThreads:`yes`|`no` [oder] /I:`yes`|`no`
+/IncludeCallsAcrossThreads:`yes`|`no` [oder] /I:`yes`|`no`
 
- Dies ist optional. Gibt an, ob angegeben werden soll, ob andere Threads aufgerufen werden oder selbst aufrufen. Der Standardwert ist `no`sein.
+Optional. Gibt an, ob angegeben werden soll, ob andere Threads aufgerufen werden oder selbst aufrufen. Der Standardwert ist `no`sein.
 
- /ShowExternalCode:`yes`|`no`
+/ShowExternalCode:`yes`|`no`
 
- Dies ist optional. Gibt an, ob für die Aufrufliste nur Benutzercode angezeigt werden soll. Wenn die Funktion „Nur eigenen Code“ deaktiviert ist, wird der gesamte nicht benutzerseitige Code angezeigt. Wenn diese Funktion aktiviert ist, wird nicht benutzerseitiger Code als `[external]` in der Ausgabe der Aufrufliste angezeigt.
+Optional. Gibt an, ob für die Aufrufliste nur Benutzercode angezeigt werden soll. Wenn die Funktion „Nur eigenen Code“ deaktiviert ist, wird der gesamte nicht benutzerseitige Code angezeigt. Wenn diese Funktion aktiviert ist, wird nicht benutzerseitiger Code als `[external]` in der Ausgabe der Aufrufliste angezeigt.
 
- Thread:`n`
+Thread:`n`
 
- Dies ist optional. Zeigt die Aufrufliste für den Thread `n` an. Wenn kein Thread angegeben ist, wird die Aufrufliste für den aktuellen Thread angezeigt.
+Optional. Zeigt die Aufrufliste für den Thread `n` an. Wenn kein Thread angegeben ist, wird die Aufrufliste für den aktuellen Thread angezeigt.
 
 ## <a name="remarks"></a>Anmerkungen
- Änderungen an den Argumenten oder Schaltern gelten bei zukünftigen Aufrufen dieses Befehls. Wenn Sie Debug.ListCallStackby selbst ausgeben, wird die gesamte Aufrufliste angezeigt. Wenn Sie beispielsweise einen Index angeben
+Änderungen an den Argumenten oder Schaltern gelten bei zukünftigen Aufrufen dieses Befehls. Wenn Sie Debug.ListCallStackby selbst ausgeben, wird die gesamte Aufrufliste angezeigt. Wenn Sie beispielsweise einen Index angeben
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
- wird der aktuelle Stapelrahmen auf diesen Frame festgelegt (in diesem Fall auf den zweiten Frame).
+wird der aktuelle Stapelrahmen auf diesen Frame festgelegt (in diesem Fall auf den zweiten Frame).
 
- Sie können diesen Befehl auch mit dem vordefinierten Alias „kb“ schreiben. Sie können beispielsweise Folgendes eingeben:
+Sie können diesen Befehl auch mit dem vordefinierten Alias „kb“ schreiben. Sie können beispielsweise Folgendes eingeben:
 
 ```cmd
 kb 2
 ```
 
- um den aktuellen Stapelrahmen auf den zweiten Frame festzulegen.
+um den aktuellen Stapelrahmen auf den zweiten Frame festzulegen.
 
 ## <a name="example"></a>Beispiel
 

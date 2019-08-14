@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746378"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926144"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 
@@ -46,41 +46,41 @@ Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Verweispfade** zuzu
 
  **Verweise**
 
- Diese Liste zeigt alle Verweise im Projekt, sowohl verwendete als auch nicht verwendete.
+Diese Liste zeigt alle Verweise im Projekt, sowohl verwendete als auch nicht verwendete.
 
  **Add**
 
- Klicken Sie auf diese Schaltfläche, um einen Verweis oder einen Webverweis in der Liste **Verweise** einzufügen.
+Klicken Sie auf diese Schaltfläche, um einen Verweis oder einen Webverweis in der Liste **Verweise** einzufügen.
 
- Klicken Sie auf **Verweise**, um Ihrem Projekt einen Verweis mit dem Dialogfeld „Verweis hinzufügen“ hinzuzufügen.
+Klicken Sie auf **Verweise**, um Ihrem Projekt einen Verweis mit dem Dialogfeld „Verweis hinzufügen“ hinzuzufügen.
 
- Klicken Sie auf **Webverweise**, um Ihrem Projekt einen Webverweis mit dem Dialogfeld **Webverweis hinzufügen** hinzuzufügen.
+Klicken Sie auf **Webverweise**, um Ihrem Projekt einen Webverweis mit dem Dialogfeld **Webverweis hinzufügen** hinzuzufügen.
 
  **Entfernen**
 
- Wählen Sie mindestens einen Verweis aus der Liste **Verweise** aus, und klicken Sie anschließend auf diese Schaltfläche, um ihn zu löschen.
+Wählen Sie mindestens einen Verweis aus der Liste **Verweise** aus, und klicken Sie anschließend auf diese Schaltfläche, um ihn zu löschen.
 
  **Aktualisieren von Webverweisen**
 
- Wählen Sie einen Webverweis aus der Liste **Verweise** aus, und klicken Sie anschließend auf diese Schaltfläche, um ihn zu aktualisieren.
+Wählen Sie einen Webverweis aus der Liste **Verweise** aus, und klicken Sie anschließend auf diese Schaltfläche, um ihn zu aktualisieren.
 
  **Importierte Namespaces**
 
- Sie können Ihren eigenen Namespace in diesem Feld eingeben oder auf **Benutzerimport hinzufügen** klicken, um ihn in der Namespaceliste hinzuzufügen.
+Sie können Ihren eigenen Namespace in diesem Feld eingeben oder auf **Benutzerimport hinzufügen** klicken, um ihn in der Namespaceliste hinzuzufügen.
 
- Sie können Aliase für von Benutzern importierte Namespaces erstellen. Um dies zu tun, geben Sie Ihren Alias und den Namespace im Format *alias*=*namespace* ein. Dies ist praktisch, wenn Sie lange Namespaces verwenden, z.B.: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Sie können Aliase für von Benutzern importierte Namespaces erstellen. Um dies zu tun, geben Sie Ihren Alias und den Namespace im Format *alias*=*namespace* ein. Dies ist praktisch, wenn Sie lange Namespaces verwenden, z.B.: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Benutzerimport hinzufügen**
 
- Klicken Sie auf diese Schaltfläche, um den im Feld **Importierte Namespaces** angegebenen Namespace der Liste der importierten Namespaces hinzuzufügen. Die Schaltfläche ist nur dann aktiviert, wenn der angegebene Namespace sich noch nicht in der Liste befindet.
+Klicken Sie auf diese Schaltfläche, um den im Feld **Importierte Namespaces** angegebenen Namespace der Liste der importierten Namespaces hinzuzufügen. Die Schaltfläche ist nur dann aktiviert, wenn der angegebene Namespace sich noch nicht in der Liste befindet.
 
  **Namespacesliste**
 
- Diese Liste zeigt alle verfügbaren Namespaces. Die Kontrollkästchen für Namespaces in Ihrem Projekt sind aktiviert.
+Diese Liste zeigt alle verfügbaren Namespaces. Die Kontrollkästchen für Namespaces in Ihrem Projekt sind aktiviert.
 
  **Benutzerimport aktualisieren**
 
- Wählen Sie einen vom Benutzer angegebenen Namespace in der Namespaceliste aus, geben Sie den Namen im Feld **Importierte Namespaces** ein, der den Namespace ersetzen soll, und klicken Sie anschließend auf diese Schaltfläche, um den neuen Namespace zu ändern. Die Schaltfläche ist nur dann aktiviert, wenn der ausgewählte Namespace ein Namespace ist, den Sie der Liste mit der Schaltfläche **Benutzerimport hinzufügen** hinzugefügt haben. Sie können Folgendes hinzufügen:
+Wählen Sie einen vom Benutzer angegebenen Namespace in der Namespaceliste aus, geben Sie den Namen im Feld **Importierte Namespaces** ein, der den Namespace ersetzen soll, und klicken Sie anschließend auf diese Schaltfläche, um den neuen Namespace zu ändern. Die Schaltfläche ist nur dann aktiviert, wenn der ausgewählte Namespace ein Namespace ist, den Sie der Liste mit der Schaltfläche **Benutzerimport hinzufügen** hinzugefügt haben. Sie können Folgendes hinzufügen:
 
 - Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>
 

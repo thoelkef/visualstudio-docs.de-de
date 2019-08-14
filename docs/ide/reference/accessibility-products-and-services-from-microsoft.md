@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793083"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926271"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 
@@ -46,19 +46,19 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
 
 ## <a name="windows"></a> Barrierefreiheitsfeatures in Windows
 
- Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
+Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="free-step-by-step-tutorials"></a>Kostenlose Lernprogramme mit Schritt-für-Schritt-Beschreibungen
 
- Microsoft bietet eine Reihe von Lernprogrammen mit Schritt-für-Schritt-Beschreibungen zur Anpassung der Barrierefreiheitsoptionen und -einstellungen auf Ihrem Computer. Diese Informationen werden parallel präsentiert, sodass Sie die Verwendung der Maus, der Tastatur oder die kombinierte Verwendung beider Eingabegeräte erlernen können.
+Microsoft bietet eine Reihe von Lernprogrammen mit Schritt-für-Schritt-Beschreibungen zur Anpassung der Barrierefreiheitsoptionen und -einstellungen auf Ihrem Computer. Diese Informationen werden parallel präsentiert, sodass Sie die Verwendung der Maus, der Tastatur oder die kombinierte Verwendung beider Eingabegeräte erlernen können.
 
- Ausführliche Tutorials zu Microsoft-Produkten finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
+Ausführliche Tutorials zu Microsoft-Produkten finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Hilfstechnologieprodukte für Windows
 
- Es ist eine Vielzahl von Hilfstechnologieprodukten verfügbar, um Personen mit Behinderungen die Verwendung von Computern zu erleichtern. Microsoft stellt auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) einen Suchkatalog für Hilfstechnologieprodukte bereit, die unter Windows ausgeführt werden können.
+Es ist eine Vielzahl von Hilfstechnologieprodukten verfügbar, um Personen mit Behinderungen die Verwendung von Computern zu erleichtern. Microsoft stellt auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) einen Suchkatalog für Hilfstechnologieprodukte bereit, die unter Windows ausgeführt werden können.
 
- Wenn Sie Hilfstechnologien verwenden, informieren Sie sich bei Ihrem Hilfstechnologieanbieter über mögliche Kompatibilitätsprobleme, bevor Sie Ihre Software oder Hardware aktualisieren.
+Wenn Sie Hilfstechnologien verwenden, informieren Sie sich bei Ihrem Hilfstechnologieanbieter über mögliche Kompatibilitätsprobleme, bevor Sie Ihre Software oder Hardware aktualisieren.
 
 ## <a name="altfortmats"></a> Dokumentation in alternativen Formaten
 

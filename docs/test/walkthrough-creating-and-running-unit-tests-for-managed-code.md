@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820947"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926789"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -34,7 +34,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Wählen Sie unter der Kategorie **Visual C#** > **.NET Core** aus, und wählen Sie dann die Projektvorlage **Konsolen-App (.NET Core)**.
+3. Wählen Sie unter der Kategorie **Visual C#** > **.NET Core** aus, und wählen Sie dann die Projektvorlage **Konsolen-App (.NET Core)** .
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie auf **OK**.
 
@@ -51,7 +51,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)**, und klicken Sie dann auf **Weiter**.
+3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)** , und klicken Sie dann auf **Weiter**.
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie dann auf **Erstellen**.
 
@@ -147,7 +147,7 @@ Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in die
 
 ::: moniker range="vs-2017"
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#** , und klicken Sie anschließend auf **Test**.
 
 3. Wählen Sie in der Liste der Vorlagen **MSTest Test Project (.NET Core)** aus.
 

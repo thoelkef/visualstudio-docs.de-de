@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958314"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926393"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installieren von Data Science-Unterstützung in Visual Studio
 
@@ -94,7 +94,7 @@ Verwenden Sie den Visual Studio-Installer, um die Workload **Datenspeicherung un
 
 ![Workload von Datenspeicherung und -verarbeitung](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Workloadoptionen von Datenspeicherung und -verarbeitung](media/workload/data-storage-workload-options.png)
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 ::: moniker range="vs-2017"
 - [Arbeiten mit SQL Server und R](../rtvs/integrating-sql-server-with-r.md)

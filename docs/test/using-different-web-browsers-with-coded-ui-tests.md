@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b7cad6d52dc3fabc182881b99163cf15e1a260c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973018"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926573"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 
@@ -43,11 +43,11 @@ Durch das Testen der Webanwendung in verschiedenen Webbrowsertypen können Sie d
 > [!NOTE]
 > Tests der programmierten UI können nicht mit den Browsern Google Chrome oder Mozilla Firefox aufgezeichnet werden.
 
- **Wiedergabe mit Internet Explorer:** Wird kein Browser explizit angegeben, werden Tests standardmäßig in Internet Explorer ausgeführt. Sie können den zu verwendenden Browser explizit angeben, indem Sie die **BrowserWindow.CurrentBrowser**-Eigenschaft im Testcode festlegen. Zur Verwendung von Internet Explorer sollte diese Eigenschaft auf **IE** oder **Internet Explorer** festgelegt werden.
+**Wiedergabe mit Internet Explorer:** Wird kein Browser explizit angegeben, werden Tests standardmäßig in Internet Explorer ausgeführt. Sie können den zu verwendenden Browser explizit angeben, indem Sie die **BrowserWindow.CurrentBrowser**-Eigenschaft im Testcode festlegen. Zur Verwendung von Internet Explorer sollte diese Eigenschaft auf **IE** oder **Internet Explorer** festgelegt werden.
 
- **Wiedergabe mit anderen Webbrowsern als Internet Explorer:** Ändern Sie die Eigenschaft „BrowserWindow.CurrentBrowser“ im Testcode auf **Firefox** oder **Chrome** zur Wiedergabe mit anderen Webbrowsern als Internet Explorer.
+**Wiedergabe mit anderen Webbrowsern als Internet Explorer:** Ändern Sie die Eigenschaft „BrowserWindow.CurrentBrowser“ im Testcode auf **Firefox** oder **Chrome** zur Wiedergabe mit anderen Webbrowsern als Internet Explorer.
 
- Um Tests auf Nicht-IE-Webbrowser wiederzugeben, müssen Sie die **Selenium-Komponenten für browserübergreifende Coded UI-Tests**.
+Um Tests auf Nicht-IE-Webbrowser wiederzugeben, müssen Sie die **Selenium-Komponenten für browserübergreifende Coded UI-Tests**.
 
 ### <a name="install-selenium-components"></a>Installieren von Selenium-Komponenten
 
@@ -120,15 +120,15 @@ Weitere Informationen finden Sie unter [Analysieren von Tests der programmierten
 
 ## <a name="video-resources"></a>Videoressourcen
 
- [Record on IE and playback everywhere (Aufzeichnen mit IE und unabhängige Wiedergabe)](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Record on IE and playback everywhere (Aufzeichnen mit IE und unabhängige Wiedergabe)](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Author cross browser tests with coded UI test builder (Erstellen von browserübergreifenden Tests mit dem Coded UI-Test-Generator)](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Author cross browser tests with coded UI test builder (Erstellen von browserübergreifenden Tests mit dem Coded UI-Test-Generator)](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
- [Erstellen von browserübergreifenden Tests mit einfacher Handcodierung ohne UI-Zuordnung](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
+[Erstellen von browserübergreifenden Tests mit einfacher Handcodierung ohne UI-Zuordnung](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
- [Sequenzielles Ausführen von browserübergreifenden Tests auf mehreren Browsern](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
+[Sequenzielles Ausführen von browserübergreifenden Tests auf mehreren Browsern](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
 
- [Beheben von Fehlern in browserübergreifenden Tests](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
+[Beheben von Fehlern in browserübergreifenden Tests](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ## <a name="see-also"></a>Siehe auch
 

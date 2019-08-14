@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2c83b74c2649681251ffa51f1366c0ce96d677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84a8ad1784ce33d30ce1023f0554feeb340b5703
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788810"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923649"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird
 
@@ -72,7 +72,7 @@ statusText.WaitForControlCondition(IsStatusDone);
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
 
- Bei allen vorherigen Methoden handelt es sich um Instanzmethoden von „UITestControl“. Diese Methode ist eine statische Methode. Diese Methode wartet zudem darauf, dass das angegebene Prädikat `true` ist, aber sie kann für einen komplexen „wait“-Vorgang (wie OR-Bedingungen) in mehreren Steuerelementen verwendet werden. Beispielsweise können Sie warten, bis der Statustext **Erfolgreich** lautet oder bis eine Fehlermeldung angezeigt wird, wie dies im folgenden Code gezeigt wird:
+Bei allen vorherigen Methoden handelt es sich um Instanzmethoden von „UITestControl“. Diese Methode ist eine statische Methode. Diese Methode wartet zudem darauf, dass das angegebene Prädikat `true` ist, aber sie kann für einen komplexen „wait“-Vorgang (wie OR-Bedingungen) in mehreren Steuerelementen verwendet werden. Beispielsweise können Sie warten, bis der Statustext **Erfolgreich** lautet oder bis eine Fehlermeldung angezeigt wird, wie dies im folgenden Code gezeigt wird:
 
 ```csharp
 
@@ -88,19 +88,19 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
 ```
 
- Alle diese Methoden weisen folgendes Verhalten auf:
+Alle diese Methoden weisen folgendes Verhalten auf:
 
- Die Methoden geben „true“ zurück, wenn die Wartezeit erfolgreich ist, andernfalls wird „false“ zurückgegeben.
+Die Methoden geben „true“ zurück, wenn die Wartezeit erfolgreich ist, andernfalls wird „false“ zurückgegeben.
 
- Das implizite Timeout für den Wartevorgang wird durch die Eigenschaft <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> angegeben. Der Standardwert dieser Eigenschaft ist „60000“ Millisekunden (eine Minute).
+Das implizite Timeout für den Wartevorgang wird durch die Eigenschaft <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> angegeben. Der Standardwert dieser Eigenschaft ist „60000“ Millisekunden (eine Minute).
 
- Die Methoden verfügen über eine Überladung für ein explizites Timeout in Millisekunden. Wenn der „wait“-Vorgang in einer impliziten Suche nach dem Steuerelement resultiert oder wenn die Anwendung ausgelastet ist, könnte die tatsächliche Wartezeit größer sein als der angegebene Timeout.
+Die Methoden verfügen über eine Überladung für ein explizites Timeout in Millisekunden. Wenn der „wait“-Vorgang in einer impliziten Suche nach dem Steuerelement resultiert oder wenn die Anwendung ausgelastet ist, könnte die tatsächliche Wartezeit größer sein als der angegebene Timeout.
 
- Die vorherigen Funktionen sind leistungsstark und flexibel und sollten fast alle Bedingungen erfüllen. Im Falle, dass diese Methoden Ihre Anforderungen jedoch nicht erfüllen, müssen Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> oder <xref:System.Threading.Thread.Sleep%2A> in Ihrem Code codieren. Es wird empfohlen, „Playback.Wait()“ anstelle der „Thread.Sleep()“-API zu verwenden. Die Gründe hierfür sind:
+Die vorherigen Funktionen sind leistungsstark und flexibel und sollten fast alle Bedingungen erfüllen. Im Falle, dass diese Methoden Ihre Anforderungen jedoch nicht erfüllen, müssen Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> oder <xref:System.Threading.Thread.Sleep%2A> in Ihrem Code codieren. Es wird empfohlen, „Playback.Wait()“ anstelle der „Thread.Sleep()“-API zu verwenden. Die Gründe hierfür sind:
 
- Sie können die <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>-Eigenschaft zum Ändern der Dauer des Standbymodus ändern. Standardmäßig ist diese Variable „1“. Sie können sie jedoch erhöhen oder verringern, um die Wartezeit über den gesamten Code hinweg zu ändern. Wenn Sie Tests insbesondere über ein langsames Netzwerk vornehmen oder wenn ein anderer langsamer Leistungsfall vorliegt, können Sie diese Variable an einer Stelle (oder sogar in der Konfigurationsdatei) auf „1,5“ ändern, um eine zusätzliche Wartezeit von 50 % an allen anderen Stellen hinzuzufügen.
+Sie können die <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>-Eigenschaft zum Ändern der Dauer des Standbymodus ändern. Standardmäßig ist diese Variable „1“. Sie können sie jedoch erhöhen oder verringern, um die Wartezeit über den gesamten Code hinweg zu ändern. Wenn Sie Tests insbesondere über ein langsames Netzwerk vornehmen oder wenn ein anderer langsamer Leistungsfall vorliegt, können Sie diese Variable an einer Stelle (oder sogar in der Konfigurationsdatei) auf „1,5“ ändern, um eine zusätzliche Wartezeit von 50 % an allen anderen Stellen hinzuzufügen.
 
- „Playback.Wait()“ ruft „Thread.Sleep()“ (nach obiger Berechnung) intern in kleineren Blöcken in einer „for“-Schleife auf, während die Überprüfung für den „cancel\break“-Vorgang erfolgt. Mit „Playback.Wait()“ können Sie die Wiedergabe vor dem Ende der Wartezeit abbrechen, während der Standbymodus möglicherweise eine Ausnahme auslöst.
+„Playback.Wait()“ ruft „Thread.Sleep()“ (nach obiger Berechnung) intern in kleineren Blöcken in einer „for“-Schleife auf, während die Überprüfung für den „cancel\break“-Vorgang erfolgt. Mit „Playback.Wait()“ können Sie die Wiedergabe vor dem Ende der Wartezeit abbrechen, während der Standbymodus möglicherweise eine Ausnahme auslöst.
 
 > [!TIP]
 > Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Er ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).

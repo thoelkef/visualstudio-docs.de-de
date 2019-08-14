@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950645"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926012"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
 
@@ -31,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Argumente
- `URL`
+`URL`
 
- Erforderlich. URL (Uniform Resource Locator) für die Website.
+Erforderlich. URL (Uniform Resource Locator) für die Website.
 
 ## <a name="switches"></a>Schalter
- /new
+/new
 
- Dies ist optional. Gibt an, dass die Seite in einer neuen Instanz des Webbrowsers angezeigt wird.
+Optional. Gibt an, dass die Seite in einer neuen Instanz des Webbrowsers angezeigt wird.
 
- /ext
+/ext
 
- Dies ist optional. Gibt an, dass die Seite im Standardwebbrowser außerhalb der IDE angezeigt wird.
+Optional. Gibt an, dass die Seite im Standardwebbrowser außerhalb der IDE angezeigt wird.
 
 ## <a name="remarks"></a>Anmerkungen
- Der Alias für den Befehl **ShowWebBrowser** ist **navigate** oder **nav**.
+Der Alias für den Befehl **ShowWebBrowser** ist **navigate** oder **nav**.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird die Microsoft-Dokumentation-Homepage in einem Webbrowser außerhalb der IDE gezeigt. Falls bereits eine Instanz des Webbrowsers geöffnet ist, wird sie verwendet. Andernfalls wird eine neue Instanz gestartet.
+Im folgenden Beispiel wird die Microsoft-Dokumentation-Homepage in einem Webbrowser außerhalb der IDE gezeigt. Falls bereits eine Instanz des Webbrowsers geöffnet ist, wird sie verwendet. Andernfalls wird eine neue Instanz gestartet.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext
