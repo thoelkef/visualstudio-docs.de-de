@@ -1,5 +1,5 @@
 ---
-title: Migration von XAML-Designer-Erweiterbarkeit
+title: Migration der XAML-Designer Erweiterbarkeit
 ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
@@ -9,45 +9,45 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890316"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024557"
 ---
-# <a name="xaml-designer-extensibility-migration"></a>Migration von XAML-Designer-Erweiterbarkeit
+# <a name="xaml-designer-extensibility-migration"></a>Migration des XAML-Designer-Erweiterbarkeit
 
-In Visual Studio-2019, der XAML-Designer unterstützt zwei verschiedene Architekturen: die Architektur des Designers Isolation und die neuere Oberfläche Isolation-Architektur. Dieser Übergang Architektur ist zur Unterstützung von Ziel-Laufzeiten, die nicht gehostet werden können in einem .NET Framework-Prozess erforderlich. Umstellung auf die Entwurfsoberfläche Isolation Architektur enthält grundlegende Änderungen für das Drittanbieter-Erweiterbarkeitsmodell. In diesem Artikel wird beschrieben, diese Änderungen, die in der Visual Studio 2019 16.2 Preview-Kanal verfügbar wird.
+In Visual Studio 2019 unterstützt der XAML-Designer zwei verschiedene Architekturen: die Designer Isolations Architektur und die aktuellere Architektur der Oberflächen Isolation. Dieser Architektur Übergang ist erforderlich, um Ziel Laufzeiten zu unterstützen, die nicht in einem .NET Framework Prozess gehostet werden können. Durch die Umstellung auf die Architektur der Oberflächen Isolation werden wichtige Änderungen am Erweiterbarkeits Modell von Drittanbietern eingeführt. In diesem Artikel werden diese Änderungen beschrieben, die in Visual Studio 2019 ab Version 16,3 verfügbar sind.
 
-**Designer Isolation** wird von der WPF-Designer für Projekte, die .NET Framework als Ziel verwendet und unterstützt *. design.dll* Erweiterungen. Benutzercode, Steuerelementbibliotheken und Drittanbieter-Erweiterungen werden in einem externen Prozess geladen (*XDesProc.exe*) zusammen mit den tatsächlichen Designer-Code und die Designer-Bereichen.
+Die **Designer Isolation** wird vom WPF-Designer für Projekte verwendet, die auf .NET Framework abzielen und *. Design. dll* -Erweiterungen unterstützt. Benutzercode, Steuerelement Bibliotheken und Erweiterungen von Drittanbietern werden in einem externen Prozess (*xdesproc. exe*) zusammen mit dem eigentlichen Designer Code und Designer-Panels geladen.
 
-**Isolation Oberfläche** wird von der UWP-Designer verwendet. Es wird auch von der WPF-Designer für Projekte verwendet, die auf .NET Core abzielen. Oberfläche isoliert werden nur der Benutzer Code und Bibliotheken in einem separaten Prozess geladen, während der Designer und ihre Bereiche in der Visual Studio-Prozess geladen werden (*DevEnv.exe*). Die Laufzeit zum Ausführen von Code und benutzerbibliotheken unterscheidet sich von, die von .NET Framework für den tatsächlichen Designer und die von Drittanbieter-Erweiterbarkeitscode verwendet.
+Die **Oberflächen Isolation** wird vom UWP-Designer verwendet. Sie wird auch vom WPF-Designer für Projekte verwendet, die auf .net Core abzielen. Bei der Oberflächen Isolation werden nur Benutzercode und Steuerelement Bibliotheken in einem separaten Prozess geladen, während der Designer und seine Panels in den Visual Studio-Prozess ("*devenv. exe*") geladen werden. Die Laufzeit, die zum Ausführen von Benutzercode und Steuerelement Bibliotheken verwendet wird, unterscheidet sich von der-.NET Framework für den eigentlichen Designer und Erweiterbarkeits Code von Drittanbietern.
 
-![Architektur der Erweiterbarkeit-migration](media/xaml-designer-extensibility-migration-architecture.png)
+![Erweiterbarkeit-Migration-Architektur](media/xaml-designer-extensibility-migration-architecture.png)
 
-Aufgrund dieser Neuerung Architektur werden die Erweiterungen von Drittanbietern in demselben Prozess wie die Bibliotheken der Drittanbieter-Steuerelement nicht mehr geladen. Die Erweiterungen können nicht mehr haben direkte Abhängigkeiten von Steuerelementbibliotheken oder direkt zugreifen auf Laufzeitobjekte. Erweiterungen, die für den Designer Isolation-Architektur mit geschrieben wurden die *Microsoft.Windows.Extensibility.dll* API muss migriert werden, um einen neuen Ansatz für die Arbeit mit der Oberfläche Isolation-Architektur. In der Praxis müssen eine vorhandene Erweiterung für neue Erweiterbarkeit-API-Assemblys kompiliert werden. Zugriff auf Steuerelement der Common Language Runtime-Typen über [Typeof](/dotnet/csharp/language-reference/keywords/typeof) oder Laufzeitinstanzen müssen ersetzt oder entfernt werden, da Steuerelementbibliotheken jetzt in einem anderen Prozess geladen werden.
+Aufgrund dieses Architektur Übergangs werden Erweiterungen von Drittanbietern nicht mehr in denselben Prozess geladen wie die Steuerelement Bibliotheken von Drittanbietern. Die Erweiterungen können nicht mehr direkte Abhängigkeiten von Steuerelement Bibliotheken aufweisen oder direkt auf Lauf Zeit Objekte zugreifen. Erweiterungen, die zuvor für die Designer Isolations Architektur mithilfe der *Microsoft. Windows. Extensibility. dll* -API geschrieben wurden, müssen zu einem neuen Ansatz migriert werden, um mit der Architektur der Oberflächen Isolation arbeiten zu können. In der Praxis muss eine vorhandene Erweiterung für neue Erweiterbarkeits-API-Assemblys kompiliert werden. Der Zugriff auf Lauf Zeit Steuerelement Typen über [typeof](/dotnet/csharp/language-reference/keywords/typeof) oder Lauf Zeit Instanzen muss ersetzt oder entfernt werden, da Steuerelement Bibliotheken nun in einem anderen Prozess geladen werden.
 
 ## <a name="new-extensibility-api-assemblies"></a>Neue Erweiterbarkeits-API-Assemblys
 
-Die neue erweiterbarkeitsassemblys-API die vorhandene API erweiterbarkeitsassemblys ähneln, aber führen Sie ein anderes Schema für die Benennungsstandards um unterscheiden. Auf ähnliche Weise Sprachschnittstellenpakete die Namespacenamen entsprechend die neuen Assemblynamen.
+Die neuen Erweiterbarkeits-API-Assemblys ähneln den vorhandenen Erweiterbarkeits-API-Assemblys, befolgen aber ein anderes Benennungs Schema, um Sie zu unterscheiden. Entsprechend wurden die Namen der Namespaces geändert, um die neuen Assemblynamen widerzuspiegeln.
 
-| Designer-Isolation-API-assembly            | API-Oberfläche Isolation-assembly                       |
+| Designer Isolation-API-Assembly            | API-Assembly der Oberflächen Isolation                       |
 |:------------------------------------------ |:---------------------------------------------------- |
 | Microsoft.Windows.Design.Extensibility.dll | Microsoft.VisualStudio.DesignTools.Extensibility.dll |
 | Microsoft.Windows.Design.Interaction.dll   | Microsoft.VisualStudio.DesignTools.Interaction.dll   |
 
-## <a name="new-file-extension-and-discovery"></a>Neue Dateierweiterung und Ermittlung
+## <a name="new-file-extension-and-discovery"></a>Neue Dateierweiterung und-Ermittlung
 
-Anstatt die *. design.dll* Dateierweiterung, neue Oberfläche, die Erweiterungen werden mithilfe von ermittelt die *. designtools.dll* Dateierweiterung. *. design.dll* und *. designtools.dll* Erweiterungen können vorhanden sein, in der gleichen *Entwurf* Unterordner.
+Anstatt die Dateierweiterung *. Design. dll* zu verwenden, werden neue Oberflächen Erweiterungen mithilfe der Dateierweiterung *. Designtools. dll* ermittelt. die Erweiterungen " *. Design. dll* " und " *. Designtools. dll* " können im gleichen *Entwurfs* Unterordner vorhanden sein.
 
-Während die Bibliotheken der Drittanbieter-Steuerelement für die tatsächliche Ziellaufzeit (.NET Core oder UWP) kompiliert sind die *. designtools.dll* Erweiterung immer als .NET Framework-Assembly kompiliert werden soll.
+Während Steuerelement Bibliotheken von Drittanbietern für die tatsächliche Ziel Laufzeit (.net Core oder UWP) kompiliert werden, sollte die Erweiterung *. Designtools. dll* immer als .NET Framework Assembly kompiliert werden.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Entkoppeln von Attributtabellen aus der Runtime-Typen
+## <a name="decouple-attribute-tables-from-runtime-types"></a>Entkoppeln von Attribut Tabellen von Lauf Zeit Typen
 
-Das Erweiterbarkeitsmodell Oberfläche Isolation Erweiterungen hängt von tatsächlichen Steuerelementbibliotheken kann nicht aus, und aus diesem Grund können keine Erweiterungen Typen verweisen, aus der Steuerelementbibliothek. Z. B. *MyLibrary.designtools.dll* sollte keine Abhängigkeit auf *MyLibrary.dll*.
+Das Erweiterbarkeits Modell der Oberflächen Isolation lässt nicht zu, dass Erweiterungen von tatsächlichen Steuerelement Bibliotheken abhängen. Daher können Erweiterungen nicht auf Typen aus der Steuerelement Bibliothek verweisen. Beispielsweise sollte *MyLibrary. Designtools. dll* keine Abhängigkeit von *MyLibrary. dll*aufweisen.
 
-Solche Abhängigkeiten wurden am häufigsten verwendeten, beim Registrieren von Metadaten für Typen über die Attributtabellen. Erweiterungscode, der Steuerelementbibliothek verweist auf Typen direkt per [Typeof](/dotnet/csharp/language-reference/keywords/typeof) oder [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) , die in die neuen APIs mit zeichenfolgenbasierten Typnamen ersetzt wird:
+Solche Abhängigkeiten waren am häufigsten beim Registrieren von Metadaten für Typen über Attribut Tabellen. Erweiterungs Code, der auf Steuerelement Bibliothekstypen direkt über [typeof](/dotnet/csharp/language-reference/keywords/typeof) oder [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) verweist, ersetzt die neuen APIs mithilfe von Zeichen folgen basierten Typnamen:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -92,11 +92,11 @@ Public Class AttributeTableProvider
 End Class
 ```
 
-## <a name="feature-providers-and-model-api"></a>Funktionsanbieter und Objektmodell-API
+## <a name="feature-providers-and-model-api"></a>Funktions Anbieter und Modell-API
 
-Featureanbieter werden in Assemblys implementiert und in den Visual Studio-Prozess geladen. `FeatureAttribute` Anbieter Funktionstypen, die direkt mit verweisen weiterhin auf [Typeof](/dotnet/csharp/language-reference/keywords/typeof).
+Funktions Anbieter werden in Erweiterungsassemblys implementiert und in den Visual Studio-Prozess geladen. `FeatureAttribute`wird weiterhin direkt mithilfe [von typeof](/dotnet/csharp/language-reference/keywords/typeof)auf Funktions Anbieter Typen verweisen.
 
-Derzeit werden die folgenden Featureanbieter unterstützt:
+Derzeit werden die folgenden Funktions Anbieter unterstützt:
 
 * `DefaultInitializer`
 * `AdornerProvider`
@@ -104,9 +104,9 @@ Derzeit werden die folgenden Featureanbieter unterstützt:
 * `ParentAdapter`
 * `PlacementAdapter`
 
-Da Featureanbieter jetzt in einem Prozess, der sich von den tatsächlichen Code und Laufzeitbibliotheken geladen werden, sind sie nicht mehr auf Laufzeitobjekte direkt zugreifen können. Stattdessen müssen alle Interaktionen zwischen konvertiert werden, um die entsprechenden modellbasierten-APIs zu verwenden. Der Modell-API wurde aktualisiert, und Zugriff auf <xref:System.Type> oder <xref:System.Object> ist entweder nicht mehr verfügbar oder wurde ersetzt mit `TypeIdentifier` und `TypeDefinition`.
+Da Funktions Anbieter nun in einem Prozess geladen werden, der sich von dem tatsächlichen Lauf Zeit Code und den Steuerelement Bibliotheken unterscheidet, können Sie nicht mehr direkt auf Lauf Zeit Objekte zugreifen. Stattdessen müssen alle diese Interaktionen konvertiert werden, um die entsprechenden modellbasierten APIs zu verwenden. Die Modell-API wurde aktualisiert, und der Zugriff <xref:System.Type> auf <xref:System.Object> oder ist entweder nicht mehr verfügbar `TypeIdentifier` oder wurde durch und `TypeDefinition`ersetzt.
 
-`TypeIdentifier` Stellt eine Zeichenfolge ohne den Namen einer Assembly Identifizieren eines Typs dar. Ein `TypeIdenfifier` zu aufgelöst werden kann eine `TypeDefinition` zur Abfrage von zusätzlichen Informationen über den Typ. `TypeDefinition` Instanzen können nicht im Erweiterungscode zwischengespeichert werden.
+`TypeIdentifier`stellt eine Zeichenfolge ohne Assemblynamen dar, der einen Typ identifiziert. Eine `TypeIdenfifier` kann in eine `TypeDefinition` aufgelöst werden, um zusätzliche Informationen über den Typ abzufragen. `TypeDefinition`-Instanzen können nicht im Erweiterungs Code zwischengespeichert werden.
 
 ```csharp
 TypeDefinition type = ModelFactory.ResolveType(
@@ -128,13 +128,13 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-APIs, die aus der Entwurfsoberfläche Isolation-Erweiterbarkeits-API-Gruppe entfernt werden:
+Aus dem Erweiterbarkeits-API-Satz der Oberflächen Isolation entfernte APIs:
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
 
-APIs, mit denen `TypeIdentifier` anstelle von <xref:System.Type>:
+APIs, die `TypeIdentifier` anstelle von <xref:System.Type>verwenden:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
@@ -150,12 +150,12 @@ APIs, mit denen `TypeIdentifier` anstelle von <xref:System.Type>:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-APIs, mit denen `TypeIdentifier` anstelle von <xref:System.Type> und unterstützen Sie nicht mehr Konstruktorargumente:
+APIs, die `TypeIdentifier` anstelle von <xref:System.Type> verwenden und keine Konstruktorargumente mehr unterstützen:
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-APIs, mit denen `TypeDefinition` anstelle von <xref:System.Type>:
+APIs, die `TypeDefinition` anstelle von <xref:System.Type>verwenden:
 
 * `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
@@ -173,7 +173,7 @@ APIs, mit denen `TypeDefinition` anstelle von <xref:System.Type>:
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
 
-APIs, mit denen `ModelItem` anstelle von <xref:System.Object>:
+APIs, die `ModelItem` anstelle von <xref:System.Object>verwenden:
 
 * `ModelItemCollection.Insert(int index, object value)`
 * `ModelItemCollection.Remove(object value)`
@@ -182,7 +182,12 @@ APIs, mit denen `ModelItem` anstelle von <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Bezeichnet die primitive Typen wie `Int32`, `String`, oder `Thickness` der Modell-API als .NET Framework-Instanzen übergeben werden kann und wird mit dem entsprechenden Objekt im Zielprozess Laufzeit konvertiert werden. Beispiel:
+Darüber hinaus unterstützen `SetValue` APIswienurInstanzenprimitiverTypenoderintegrierter.NETFrameworkTypen,diefürdieZielLaufzeitkonvertiertwerdenkönnen.`ModelItem` Derzeit werden diese Typen unterstützt:
+
+* Primitive .NET Framework Typen: `Boolean`, `Byte`, `Char`, `DateTime`, `Double`, ,`Enum` ,`Int16`, ,`Int64`,, `Int32` `Guid` `Nullable` `SByte` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* Bekannte WPF-.NET Framework Typen (und abgeleitete Typen `Brush`) `Color`: `CompositeTransform`, `CornerRadius`, `Duration`, `EasingFunctionBase`, `EasingMode`, `EllipseGeometry`, `FontFamily`, `GeneralTransform`, `Geometry` ,, , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
+
+Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -212,10 +217,10 @@ Public Class MyControlDefaultInitializer
 End Class
 ```
 
-Weitere Codebeispiele finden Sie in der [Xaml-Designer-Erweiterbarkeit-Samples](https://github.com/microsoft/xaml-designer-extensibility-samples) Repository.
+Weitere Codebeispiele sind im Repository " [XAML-Designer-Extensibility-Samples](https://github.com/microsoft/xaml-designer-extensibility-samples) " verfügbar.
 
-## <a name="limited-support-for-designdll-extensions"></a>Eingeschränkte Unterstützung für. design.dll-Erweiterungen
+## <a name="limited-support-for-designdll-extensions"></a>Eingeschränkte Unterstützung für. Design. dll-Erweiterungen
 
-Wenn alle *. designtools.dll* Erweiterung für eine Steuerelementbibliothek entdeckt wird, ist es geladen wird, erste und die Ermittlung für *. design.dll* Erweiterungen wird übersprungen.
+Wenn eine " *. Designtools. dll* "-Erweiterung für eine Steuerelement Bibliothek erkannt wird, wird Sie zuerst geladen, und die Ermittlung für " *. Design. dll* "-Erweiterungen wird übersprungen.
 
-Wenn kein *. designtools.dll* Erweiterungen vorhanden sind, aber eine *. design.dll* Erweiterung gefunden wird, wird der XAML-Sprachdienst versucht wird, zum Laden dieser Assembly zum Extrahieren der Attribut-Tabelle-Informationen zur Unterstützung Basic-Editors und Eigenschaft Inspector-Szenarien. Dieser Mechanismus wird im Bereich beschränkt. Es kann nicht beim Laden des Designers Isolation-Erweiterungen für die Ausführung von Featureanbieter jedoch gewährleistet grundlegenden Unterstützung für vorhandene WPF-Steuerelement-Bibliotheken.
+Wenn keine *. Designtools. dll* -Erweiterungen vorhanden sind, aber die Erweiterung " *. Design. dll* " gefunden wird, versucht der XAML-Sprachdienst, diese Assembly zu laden, um die Attribut Tabellen Informationen zu extrahieren, um grundlegende Editor-und eigenschaftsinspektorszenarios Dieser Mechanismus ist im Gültigkeitsbereich begrenzt. Das Laden von Designer Isolations Erweiterungen zum Ausführen von Featureanbietern ist nicht zulässig, kann jedoch grundlegende Unterstützung für vorhandene WPF-Steuerelement Bibliotheken bieten.
