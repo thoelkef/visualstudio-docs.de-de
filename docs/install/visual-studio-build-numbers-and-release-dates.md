@@ -2,24 +2,22 @@
 title: Visual Studio-Buildnummern und -Veröffentlichungstermine
 titleSuffix: ''
 description: Eine Liste der nach Datum sortierten veröffentlichten Versionen von und Buildnummern für Visual Studio.
-keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/06/2019
+ms.date: 08/14/2019
 ms.topic: reference
-helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f07b8c0fc5317f6646868ad61ba61e42754a79c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9da89a2964dc5c4f33d4a0619a1b93c901054d3b
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870726"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024540"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -31,6 +29,9 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.2 | Freigabe | 13. August 2019 | 16.2.29209.62 |
+| 16.3.0 | Vorschau 2 | 13. August 2019 | 16.3.29209.152 |
+| 16.0.7 | Freigabe | 13. August 2019 | 16.0.28803.571 |
 | 16.2.1 | Freigabe | 6\. August 2019 | 16.2.29201.188 |
 | 16.2.0 | Freigabe | 24. Juli 2019 | 16.2.29123.88 |
 | 16.3.0 | Vorschauversion 1 | 24. Juli 2019 | 16.3.29123.89 |
@@ -89,6 +90,8 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.15 | Freigabe | 13. August 2019 | 15.9.28307.812 |
+| 15.0.26 | Freigabe | 13. August 2019 | 15.0.26228.96 |
 | 15.9.14 | Freigabe | 9\. Juli 2019 | 15.9.28307.770 |
 | 15.0.25 | Freigabe | 9\. Juli 2019 | 15.0.26228.92 |
 | 15.9.13 | Freigabe | 11. Juni 2019 | 15.9.28307.718 |
