@@ -12,19 +12,19 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71686e160fd808b2df3d399b50206bed2a6869e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f8bd3aeab7606e33818bce1324ded83fc333eb9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979265"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918120"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins
 
 Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungstests Code zu verschiedenen Zeitpunkten auszuführen. Mithilfe von erstellten Plug-Ins können die integrierten Funktionen des Auslastungstests erweitert oder bearbeitet werden. Sie können z. B. Code für ein Auslastungstest-Plug-In schreiben, um während der Ausführung des Auslastungstests das Testmuster festzulegen oder zu bearbeiten. Hierzu müssen Sie eine Klasse erstellen, die von der <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle erbt. Diese Klasse muss die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*>-Methode dieser Schnittstelle implementieren. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
-> Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md)
+> Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

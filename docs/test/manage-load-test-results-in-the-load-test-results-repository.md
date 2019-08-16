@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788880"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926625"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Verwalten von Auslastungstestergebnissen im Repository für Auslastungstestergebnisse
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise stellt Indikatorensätze mit Namen zur Verfügung, die 
 
 ## <a name="sql-server-versions"></a>SQL Server-Versionen
 
- Für das Verwenden von Auslastungstests können Sie SQL Server Express LocalDB verwenden. Die Installation erfolgt zusammen mit Visual Studio. Dabei handelt es sich um einen Standarddatenbankserver für Auslastungstests (einschließlich der Integration in Microsoft Excel). SQL Server Express LocalDB ist ein Ausführungsmodus von SQL Server Express, der speziell für Programmentwickler vorgesehen ist. Bei der Installation von SQL Server Express LocalDB wird eine Mindestzahl an Dateien kopiert, die für den Start der SQL Server-Datenbank-Engine erforderlich sind.
+Für das Verwenden von Auslastungstests können Sie SQL Server Express LocalDB verwenden. Die Installation erfolgt zusammen mit Visual Studio. Dabei handelt es sich um einen Standarddatenbankserver für Auslastungstests (einschließlich der Integration in Microsoft Excel). SQL Server Express LocalDB ist ein Ausführungsmodus von SQL Server Express, der speziell für Programmentwickler vorgesehen ist. Bei der Installation von SQL Server Express LocalDB wird eine Mindestzahl an Dateien kopiert, die für den Start der SQL Server-Datenbank-Engine erforderlich sind.
 
- Wenn das Team hohe Datenbankanforderungen erwartet oder die Projekte zu groß für SQL Server Express LocalDB werden, sollten Sie ein Upgrade auf SQL Express oder auf die Vollversion von SQL Server in Erwägung ziehen, um Raum für weitere Skalierungen bereitzustellen. Wenn Sie SQL Server aktualisieren, werden die MDF- und LDF-Dateien für SQL Server Express LocalDB im Benutzerprofilordner gespeichert. Mit diesen Dateien können Sie die Auslastungstestdatenbank in SQL Server Express oder SQL Server importieren.
+Wenn das Team hohe Datenbankanforderungen erwartet oder die Projekte zu groß für SQL Server Express LocalDB werden, sollten Sie ein Upgrade auf SQL Express oder auf die Vollversion von SQL Server in Erwägung ziehen, um Raum für weitere Skalierungen bereitzustellen. Wenn Sie SQL Server aktualisieren, werden die MDF- und LDF-Dateien für SQL Server Express LocalDB im Benutzerprofilordner gespeichert. Mit diesen Dateien können Sie die Auslastungstestdatenbank in SQL Server Express oder SQL Server importieren.
 
 ## <a name="load-test-results-store-considerations"></a>Überlegungen zum Auslastungstest-Ergebnisspeicher
 
- Wenn Visual Studio Enterprise installiert ist, wird der Auslastungstest-Ergebnisspeicher zur Verwendung einer Instanz der SQL Express-Anwendung eingerichtet, die auf dem Computer installiert ist. SQL Express ist auf die Nutzung von maximal 4 GB Speicherplatz beschränkt. Wenn Sie über einen langen Zeitraum viele Auslastungstests ausführen, sollten Sie erwägen, den Auslastungstest-Ergebnisspeicher ggf. zur Verwendung einer Instanz des vollständigen SQL Server-Produkts zu konfigurieren.
+Wenn Visual Studio Enterprise installiert ist, wird der Auslastungstest-Ergebnisspeicher zur Verwendung einer Instanz der SQL Express-Anwendung eingerichtet, die auf dem Computer installiert ist. SQL Express ist auf die Nutzung von maximal 4 GB Speicherplatz beschränkt. Wenn Sie über einen langen Zeitraum viele Auslastungstests ausführen, sollten Sie erwägen, den Auslastungstest-Ergebnisspeicher ggf. zur Verwendung einer Instanz des vollständigen SQL Server-Produkts zu konfigurieren.
 
 ## <a name="load-test-analyzer-tasks"></a>Aufgaben des Auslastungstest-Analyzers
 
@@ -52,9 +52,9 @@ Visual Studio Enterprise stellt Indikatorensätze mit Namen zur Verfügung, die 
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- Sie können mit dem **Auslastungstest-Analyzer** sowohl die Ergebnisse eines derzeit ausgeführten Auslastungstests als auch eines abgeschlossenen Auslastungstests anzeigen.
+Sie können mit dem **Auslastungstest-Analyzer** sowohl die Ergebnisse eines derzeit ausgeführten Auslastungstests als auch eines abgeschlossenen Auslastungstests anzeigen.
 
 ## <a name="see-also"></a>Siehe auch
 
