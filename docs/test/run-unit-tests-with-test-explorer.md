@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711269"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918167"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -169,7 +169,7 @@ Sie können Ihre eigenen Hierarchie- und Gruppenebenen nach **Zustand** und dann
 |**Klasse**|Gruppiert Tests nach der enthaltenden Klasse.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Gruppieren nach Merkmalen
+### <a name="traits"></a>Merkmale
 
 In der Regel handelt es sich bei Merkmalen um Kategoriename/Wert-Paare, ein Merkmal kann jedoch auch eine einzelne Kategorie darstellen. Merkmale können Methoden zugewiesen werden, die im Komponententest-Framework als Testmethoden identifiziert sind. In einem Komponententest-Framework können Merkmalskategorien definiert werden. Außerdem können Sie den Merkmalskategorien Werte hinzufügen, um eigene Kategoriename/Wert-Paare zu definieren. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.
 
@@ -187,7 +187,7 @@ Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsnam
 
 **Merkmale im Microsoft-Komponententest-Framework für C++**
 
- Weitere Informationen finden Sie unter [Verwenden des Microsoft-Komponententest-Frameworks für C++](how-to-use-microsoft-test-framework-for-cpp.md).
+Weitere Informationen finden Sie unter [Verwenden des Microsoft-Komponententest-Frameworks für C++](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ## <a name="create-custom-playlists"></a>Erstellen benutzerdefinierter Wiedergabelisten
 
@@ -215,7 +215,7 @@ Die Wiedergabeliste wird in einer neuen Registerkarte im Test-Explorer geöffnet
 
 ![Die Wiedergabeliste wird in einer separaten Registerkarte im Test-Explorer geöffnet.](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-Wählen Sie zum**Hinzufügen von Tests zu einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**. 
+Wählen Sie zum**Hinzufügen von Tests zu einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
 
 **Um eine Wiedergabeliste zu öffnen**, wählen Sie das Wiedergabelistensymbol in der Visual Studio-Symbolleiste, und wählen Sie eine zuvor gespeicherte Wiedergabelistendatei aus dem Menü.
 ::: moniker-end
@@ -229,7 +229,7 @@ Die [Gruppen](#test-explorer-groups) sind auch als Spalten im Test-Explorer verf
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtern, Sortieren und Neuordnen von Testspalten
 
-Spalten können gefiltert, sortiert und neu angeordnet werden. 
+Spalten können gefiltert, sortiert und neu angeordnet werden.
 * Um bestimmte Merkmale zu filtern, klicken Sie oben in der Spalte „Merkmale“ auf das Filtersymbol.
 
   ![Spaltenfilter](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange d
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analysieren der Codeabdeckung für Komponententests
 
-MIthilfe des Codeabdeckungstools von Visual Studio können Sie die Menge des Produktcodes ermitteln, die tatsächlich von den Komponententests getestet wird. Das Codeabdeckungstool kann für ausgewählte oder alle Tests in einer Projektmappe ausgeführt werden.
+Mithilfe des Codeabdeckungstools von Visual Studio, das in der Visual Studio Enterprise-Edition verfügbar ist, können Sie die Menge des Produktcodes ermitteln, die tatsächlich von den Komponententests getestet wird. Das Codeabdeckungstool kann für ausgewählte oder alle Tests in einer Projektmappe ausgeführt werden.
 
 Ausführen des Codeabdeckungstools für Testmethoden in einer Projektmappe:
 
@@ -331,6 +331,8 @@ Tests können im **Test-Explorer** ausgeführt werden, indem Sie mit der rechten
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**STRG**+**R**, **STRG**+**T**|
 |TestExplorer.RunAllTestsInContext|**STRG**+**R**, **T**|
+|TestExplorer.RunAllTests|**STRG**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**STRG**+**R**, **L**|
 
 > [!NOTE]
 > In einer abstrakten Klasse können Sie keinen Test ausführen, da Tests nur in abstrakten Klassen definiert werden und nicht instanziiert. Zum Ausführen von Tests in abstrakten Klassen müssen Sie eine Klasse erstellen, die von der abstrakten Klasse abgeleitet ist.

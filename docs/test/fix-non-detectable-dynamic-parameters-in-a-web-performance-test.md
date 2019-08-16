@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003761"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918482"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Korrigieren von nicht erkennbaren dynamischen Parametern in einem Webleistungstest
 
@@ -76,7 +76,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 6. Fügen Sie ein zweites Webformular mit dem Namen *ASPQuery.aspx* hinzu.
 
-7. Ziehen Sie in der Entwurfsansicht eine **Bezeichnung** auf die Seite, und ändern Sie den Wert für ihre **(ID)**- Eigenschaft in **IndexLabel**.
+7. Ziehen Sie in der Entwurfsansicht eine **Bezeichnung** auf die Seite, und ändern Sie den Wert für ihre **(ID)** - Eigenschaft in **IndexLabel**.
 
      ![Bezeichnung zum Webformular hinzufügen](../test/media/web_test_dynamicparameter_label.png)
 
@@ -103,7 +103,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 11. Fügen Sie ein drittes Webformular mit dem Namen *JScriptQuery.aspx* hinzu.
 
-     Ziehen Sie wie bei der zweiten Seite eine **Bezeichnung** auf das Formular, setzen Sie ihre **(ID)**-Eigenschaft auf **IndexLabel**, ziehen Sie einen **Link** auf das Formular, und setzen Sie seine **Texteigenschaft** auf **Back** und seine **NavigationURL**-Eigenschaft auf **Querystring.aspx**.
+     Ziehen Sie wie bei der zweiten Seite eine **Bezeichnung** auf das Formular, setzen Sie ihre **(ID)** -Eigenschaft auf **IndexLabel**, ziehen Sie einen **Link** auf das Formular, und setzen Sie seine **Texteigenschaft** auf **Back** und seine **NavigationURL**-Eigenschaft auf **Querystring.aspx**.
 
      ![Das dritte Webformular hinzufügen und konfigurieren](../test/media/web_test_dynamicparameter_addwebform3.png)
 
@@ -251,7 +251,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Frage: Kann ich die Erkennung dynamischer Parameter erneut überprüfen, wenn meine Web-App geändert wurde?
 
- **Antwort:** Ja, gehen Sie dazu wie folgt vor:
+**Antwort:** Ja, gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie auf der Symbolleiste die Schaltfläche **Dynamische Parameter auf Webtestparameter hochstufen** aus.
 
@@ -265,4 +265,4 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Frage: Muss ich Visual Studio konfigurieren, damit dynamische Parameter erkannt werden?
 
- **Antwort:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die Erkennung dynamischer Parameter weiterhin über den Webleistungstest-Editor ausführen.
+**Antwort:** Standardmäßig ist Visual Studio so konfiguriert, dass dynamische Parameter erkannt werden, wenn Sie einen Webleistungstest aufzeichnen. Wenn Sie Visual Studio-Optionen jedoch so konfiguriert haben, dass dynamische Parameter nicht erkannt werden, oder die getestete Webanwendung mit zusätzlichen dynamischen Parametern geändert wird, können Sie die Erkennung dynamischer Parameter weiterhin über den Webleistungstest-Editor ausführen.
