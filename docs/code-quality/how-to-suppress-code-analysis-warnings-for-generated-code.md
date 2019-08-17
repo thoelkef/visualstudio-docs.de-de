@@ -1,5 +1,5 @@
 ---
-title: Unterdrücken von Verletzungen der Codeanalyse für generierten Code
+title: Code Analyse Verletzungen für generierten Code unterdrücken
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
@@ -8,29 +8,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a7990f5e9fa1893d8813b1307ab6a0a7fee46be
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 6ee4e3df94e46b4d3cc996a23fc1e40401195e21
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613570"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551130"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Vorgehensweise: Unterdrücken von Codeanalysewarnungen für generierten Code
 
-Generierter Code enthält Code, der vom Compiler für verwalteten Code oder Drittanbietertools zu Ihrem Projekt hinzugefügt wird. Sie möchten die Verletzungen von Namensregeln anzuzeigen, die Codeanalyse in generiertem Code ermittelt. Jedoch, da Sie können nicht anzeigen und verwalten den Code, der die Verstöße enthält, empfiehlt nicht, die angezeigt werden.
+Generierter Code enthält Code, der von verwalteten Code Compilern oder Drittanbieter Tools zu Ihrem Projekt hinzugefügt wird. Möglicherweise möchten Sie die Regel Verletzungen sehen, die von der Code Analyse in generiertem Code erkannt werden. Da Sie jedoch den Code, der die Verstöße enthält, nicht anzeigen und verwalten können, sollten Sie ihn möglicherweise nicht sehen.
 
-Die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen auf der Eigenschaftenseite des Code-Analyse eines Projekts können Sie wählen, ob Code analysewarnungen zu Code, die von einem Drittanbieter-Tool generierten angezeigt.
+Mithilfe des Kontrollkästchens **Ergebnisse aus generiertem Code unterdrücken** der Code Analyse-Eigenschaften Seite eines Projekts können Sie auswählen, ob Code Analyse Warnungen aus Code angezeigt werden sollen, der von einem Drittanbieter Tool generiert wurde.
 
 > [!NOTE]
 > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Der Quellcode für ein Formular oder eine Vorlage kann sowohl angezeigt als auch verwaltet werden.
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>So unterdrücken Sie Warnungen für generierten Code in einem Projekt
 
-1. Mit der rechten Maustaste in des Projekts im **Projektmappen-Explorer** , und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie mit der rechten Maustaste auf das Projekt in **Projektmappen-Explorer** und klicken Sie dann auf **Eigenschaften**.
 
-2. Wählen Sie die **Codeanalyse** Registerkarte.
+2. Wählen Sie die Registerkarte **Code Analyse** aus.
 
-3. Wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
+3. Aktivieren Sie das Kontrollkästchen **Ergebnisse aus generiertem Code unterdrücken** .
 
 > [!NOTE]
-> Sie können nur Warnungen von der statischen Codeanalyse unterdrücken. Derzeit keine Sie Unterdrückung von Warnungen der Codeanalyse von [Analysen](roslyn-analyzers-overview.md).
+> Sie können nur Warnungen aus der Legacy Analyse unterdrücken. Derzeit können Sie keine Code Analyse Warnungen von [Analyzern](roslyn-analyzers-overview.md)unterdrücken.

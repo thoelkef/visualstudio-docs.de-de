@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db2961022a6d3a168812b5b85552e21dcd3f9da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842511"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547930"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.
 
@@ -32,41 +32,41 @@ ms.locfileid: "65842511"
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |Kategorie|Microsoft.Design|
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn Sie aufgefordert werden, Hinzufügen einer **keine** Wert, der eine nicht-Flagenumeration. Wichtige – Wenn Sie aufgefordert werden, umbenennen oder entfernen alle Enumerationswerte.|
+|Unterbrechende Änderung|Nicht unterbrechend: Wenn Sie aufgefordert werden, einen " **None** "-Wert zu einer nicht-Flag-Enumeration hinzuzufügen. Unterbrechen: Wenn Sie aufgefordert werden, Enumerationswerte umzubenennen oder zu entfernen.|
 
 ## <a name="cause"></a>Ursache
 
-Eine Enumeration ohne eine angewendeten <xref:System.FlagsAttribute?displayProperty=fullName> definiert sich nicht auf ein Element, das den Wert 0 (null) aufweist. Oder eine Enumeration, die eine angewendet hat <xref:System.FlagsAttribute> definiert ein Element mit dem Wert 0 (null) der Name ist jedoch nicht "None". Oder die Enumeration definiert mehrere Elemente NULL-Werten.
+Eine Enumeration ohne angewendete <xref:System.FlagsAttribute?displayProperty=fullName> definiert keinen Member, der den Wert 0 (null) aufweist. Oder eine Enumeration, die über einen angewendeten <xref:System.FlagsAttribute> verfügt, definiert einen Member, der den Wert 0 (null) aufweist, der Name jedoch nicht "None" ist. Oder die-Enumeration definiert mehrere Member mit dem Wert 0 (null).
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Enumerationen, dies ist jedoch [konfigurierbare](#configurability).
+Standardmäßig prüft diese Regel nur extern sichtbare Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Der Standardwert einer nicht initialisierten Enumeration ist, genau wie anderer Werttypen ist 0 (null). Eine Enumeration ohne Flags-Attribut sollten Mitglied definieren, mit dem Wert 0 (null), damit der Standardwert ein gültiger Wert der Enumeration ist. Bei Bedarf, nennen Sie das Element 'None'. Ordnen Sie andernfalls 0 (null), auf den am häufigsten verwendeten Member. Wenn der Wert des ersten Elements der Enumeration nicht in der Deklaration festgelegt ist, ist der Wert in der Standardeinstellung 0 (null).
+Der Standardwert einer nicht initialisierten Enumeration, ebenso wie andere Werttypen, ist 0 (null). Eine Enumeration, die nicht mit Flags versehen ist, sollte einen Member mit dem Wert 0 (null) definieren, sodass der Standardwert ein gültiger Wert der-Enumeration ist. Wenn erforderlich, benennen Sie den Member "None". Andernfalls sollten Sie dem am häufigsten verwendeten Member NULL zuweisen. Wenn der Wert des ersten Enumerationsmembers nicht in der Deklaration festgelegt ist, ist der Wert standardmäßig auf 0 festgelegt.
 
-Wenn eine Enumeration, die die <xref:System.FlagsAttribute> angewendet definiert den Member NULL-Wert, der Name muss 'None', um anzugeben, dass in der Enumeration keine Werte festgelegt wurden. Verwenden einen NULL-Member, für andere Zwecke im Gegensatz zum Ergebnis der Verwendung von ist das <xref:System.FlagsAttribute> , AND und bitweise Operatoren sind nutzlos, mit dem Element. Dies bedeutet, dass nur ein Member den Wert 0 (null) zugewiesen werden soll. Wenn mehrere Elemente, die den Wert 0 (null) haben in einer Enumeration Flags-Attribut auftreten `Enum.ToString()` gibt falsche Ergebnisse für Elemente, die nicht 0 (null) zurück.
+Wenn eine Enumeration mit dem <xref:System.FlagsAttribute> angewendeten einen Member mit einem Wert von 0 (null) definiert, sollte der Name "None" lauten, um anzugeben, dass in der Enumeration keine Werte festgelegt wurden. Die Verwendung eines Elements mit einem Wert von 0 (null) für andere Zwecke steht im <xref:System.FlagsAttribute> Gegensatz zur Verwendung von in, da die-und-oder-oder bitweisen Operatoren mit dem-Member nutzlos sind. Dies impliziert, dass nur einem Member der Wert 0 (null) zugewiesen werden soll. Wenn mehrere Member mit dem Wert 0 (null) in einer durch Flags attributierten Enumeration auftreten, `Enum.ToString()` gibt falsche Ergebnisse für Member zurück, die nicht 0 (null) sind.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Definieren Sie einen Member mit dem Wert 0 (null), um einen Verstoß gegen diese Regel für nicht-Enumerationen zu beheben. Dies ist eine nicht unterbrechende Änderung. Namen Sie für Enumerationen, die einen 0 (null) Member definieren dieses Element den "None", und löschen Sie anderer Elemente, die den Wert 0 (null) aufweisen; Dies ist eine unterbrechende Änderung.
+Um einen Verstoß gegen diese Regel für Enumerationen mit nicht-Flags-Attributen zu beheben, definieren Sie einen Member, der den Wert 0 (null) aufweist. Dabei handelt es sich um einen nicht Breaking Change. Für Flags-attributierte Enumerationen, die einen Null-wertigen Member definieren, benennen Sie den Member "None", und löschen Sie alle anderen Member, die den Wert 0 (null) aufweisen. Dies ist eine Breaking Change.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel, mit Ausnahme von Enumerationen, die zuvor veröffentlicht haben.
+Unterdrücken Sie keine Warnung dieser Regel, außer bei von Flags attributierten Enumerationen, die zuvor ausgeliefert wurden.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1008.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt zwei Enumerationen, die die Regel erfüllen und eine Enumeration, `BadTraceOptions`, die gegen die Regel verstößt.
+Das folgende Beispiel zeigt zwei Enumerationen, die die Regel erfüllen, und eine Enumeration `BadTraceOptions`, die gegen die Regel verstößt.
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -74,11 +74,11 @@ Das folgende Beispiel zeigt zwei Enumerationen, die die Regel erfüllen und eine
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2217: Nicht Enumerationen mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Enumerationswerte nicht mit "Reserviert" benennen](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Führen Sie keine Präfixe für Enumerationswerte mit Typnamen](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028: Enumerationsspeicher sollte Int32 sein.](../code-quality/ca1028-enum-storage-should-be-int32.md)
-- [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1700: Enumerationswerte "reserviert" nicht benennen](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Enumerationswerte nicht mit Typname als Präfix versehen](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028: Der Aufzählungs Speicher muss Int32 lauten.](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
 

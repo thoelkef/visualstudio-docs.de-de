@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841651"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547126"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen.
 
@@ -32,9 +32,9 @@ ms.locfileid: "65841651"
 
 ## <a name="cause"></a>Ursache
 
-Der Name eines Parameters in einer methodenüberschreibung entspricht nicht den Namen des Parameters in der Basisdeklaration der Methode oder den Namen des Parameters in der Schnittstellendeklaration der Methode.
+Der Name eines Parameters in einer Methoden Überschreibung stimmt nicht mit dem Namen des Parameters in der Basis Deklaration der Methode oder dem Namen des Parameters in der Schnittstellen Deklaration der Methode.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Methoden, dies ist jedoch [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Methoden, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -42,18 +42,18 @@ Die konsistente Benennung von Parametern in einer Überschreibungshierarchie erh
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, benennen Sie die Parameter, um mit der der Basisdeklaration übereinstimmen. Die Lösung ist eine wichtige Änderung für COM sichtbare Methoden.
+Um einen Verstoß gegen diese Regel zu beheben, benennen Sie den Parameter so um, dass er der Basis Deklaration entspricht. Die Korrektur ist eine Breaking Change für sichtbare com-Methoden.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel, mit Ausnahme von COM-sichtbare Methoden in Bibliotheken, die zuvor veröffentlicht haben.
+Unterdrücken Sie keine Warnung dieser Regel, außer für COM-sichtbare Methoden in Bibliotheken, die zuvor ausgeliefert wurden.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).

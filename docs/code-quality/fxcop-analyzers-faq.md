@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037263"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551117"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Häufig gestellte Fragen zu FxCop und FxCop-Analysetools
 
@@ -31,7 +31,7 @@ FxCop-Analysetools basieren auf der .NET Compiler Platform („Roslyn“). Sie [
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Werden FxCop-Analysetools mit dem Befehl „Codeanalyse ausführen“ ausgeführt?
 
-Nein. Wenn Sie auf **Analyse** > **Codeanalyse ausführen** klicken, wird die statische Codeanalyse oder Legacy-FxCop ausgeführt. **Codeanalyse ausführen** wirkt sich nicht auf Analysetools aus, die auf Roslyn basieren, einschließlich der auf Roslyn basierenden FxCop-Analysetools.
+Nein. Wenn Sie Analyse > **Code Analyse ausführen**auswählen, wird eine Legacy Analyse ausgeführt. **Codeanalyse ausführen** wirkt sich nicht auf Analysetools aus, die auf Roslyn basieren, einschließlich der auf Roslyn basierenden FxCop-Analysetools.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Werden Analysetools von der MSBuild-Projekteigenschaft „RunCodeAnalysis“ ausgeführt?
 
@@ -43,15 +43,15 @@ Zum Ausführen von FxCop-Analysetools müssen Sie zunächst die entsprechenden [
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Nach der Installation des NuGet-Pakets für das FxCop-Analysetool erhalte ich die Warnung „CA0507“.
 
-Wenn Sie FxCop-Analysetools installiert haben, aber weiterhin eine Warnung erhalten CA0507 **"Run Code Analysis" ist zugunsten von FxCop-Analysetools, die während des Build ausgeführt werden, veraltet**, müssen Sie möglicherweise die msbuild-Eigenschaft **RunCodeAnalysis** in Ihrer Projektdatei auf **false** setzen. Andernfalls wird die statische Codeanalyse nach jedem Build ausgeführt.
+Wenn Sie FxCop-Analysetools installiert haben, aber weiterhin eine Warnung erhalten CA0507 **"Run Code Analysis" ist zugunsten von FxCop-Analysetools, die während des Build ausgeführt werden, veraltet**, müssen Sie möglicherweise die msbuild-Eigenschaft **RunCodeAnalysis** in Ihrer Projektdatei auf **false** setzen. Andernfalls wird die Legacy Analyse nach jedem Build ausgeführt.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Welche Regeln auf die FxCop-Analysetools portiert haben?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Welche Regeln wurden in FxCop-Analyzers portiert?
 
-Informationen darüber, welche wurden Regeln für die statische Codeanalyse zu portiert [FxCop-Analysetools](install-fxcop-analyzers.md), finden Sie unter [Fxcop-Regel-Portstatus](fxcop-rule-port-status.md).
+Informationen dazu, welche Legacy Analyse Regeln in [FxCop-Analysen](install-fxcop-analyzers.md)portiert wurden, finden Sie unter [Port Status der FxCop-Regel](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Siehe auch
 

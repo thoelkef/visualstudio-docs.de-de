@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922882"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547659"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standardausnahmekonstruktoren implementieren.
 
@@ -44,7 +44,7 @@ Ausnahme Typen müssen die folgenden drei Konstruktoren implementieren:
 
 - Public "netwexception" (String, Exception)
 
-Wenn Sie im Gegensatz zu [Roslyn-basierten FxCop-Analyzern](../code-quality/roslyn-analyzers-overview.md)die Legacy-und die statische Code Analyse von FxCop ausführen, führt das Fehlen eines vierten Konstruktors ebenfalls zu einem Verstoß:
+Wenn Sie darüber hinaus eine frühere FxCop-Analyse anstelle von [.NET Compiler Platform basierten FxCop-Analysen](../code-quality/roslyn-analyzers-overview.md)ausführen, wird durch das Fehlen eines vierten Konstruktors auch eine Verletzung generiert:
 
 - Protected or private, "netwexception" (SerializationInfo, StreamingContext)
 

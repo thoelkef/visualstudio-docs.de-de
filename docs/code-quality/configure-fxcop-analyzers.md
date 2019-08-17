@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300612"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551147"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurieren von FxCop-Analyzern
 
-Die [FxCop-Analysen](install-fxcop-analyzers.md) bestehen aus den wichtigsten "FxCop"-Regeln aus der statischen Code Analyse, die in Roslyn-Analysen konvertiert wurden. Sie können FxCop-Code Analysen auf zwei Arten konfigurieren:
+Die [FxCop-Analysen](install-fxcop-analyzers.md) bestehen aus den wichtigsten "FxCop"-Regeln aus der Legacy Analyse, die in .NET Compiler Platform-basierten Code Analysen konvertiert wurden. Sie können FxCop-Code Analysen auf zwei Arten konfigurieren:
 
 - Mit einem [Regelsatz](#fxcop-analyzer-rule-sets), mit dem Sie Regel aktivieren oder deaktivieren und den Schweregrad einzelner Regelverstöße festlegen können.
 
 - Ab Version 2.6.3 des [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) -nuget-Pakets über eine [Editor config-Datei](#editorconfig-file). Mit den [konfigurierbaren Optionen](fxcop-analyzer-options.md) können Sie verfeinern, welche Teile Ihrer Codebasis analysiert werden.
 
 > [!TIP]
-> Informationen zu den Unterschieden zwischen der statischen Code Analyse von FxCop und FxCop-Analyzern finden Sie unter Häufig gestellte Fragen zu [FxCop](fxcop-analyzers-faq.md)Analyzer.
+> Informationen zu den Unterschieden zwischen Legacy-und FxCop-Analyzern finden Sie unter Häufig gestellte Fragen zur [FxCop](fxcop-analyzers-faq.md)-Analyse.
 
 ## <a name="fxcop-analyzer-rule-sets"></a>FxCop-Analyse Regelsätze
 
@@ -42,7 +42,7 @@ Das nuget-Paket FxCop Analyzer enthält vordefinierte Regelsätze für die folge
 - Sicherheit
 - Verwendung
 
-Weitere Informationen finden Sie unter [Regelsätze für Roslyn-Analysen](analyzer-rule-sets.md).
+Weitere Informationen finden Sie unter [Regelsätze für Code Analysen](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>Editor config-Datei
 
@@ -90,7 +90,7 @@ Sie können eine Editor config-Datei für die Analyse Konfiguration zwischen zwe
 4. Laden Sie das Projekt neu.
 
 > [!NOTE]
-> Es ist nicht möglich, ältere FxCop-Regeln (statischer Code Analyse FxCop) mithilfe einer Editor config-Datei zu konfigurieren.
+> Es ist nicht möglich, ältere FxCop-Regeln mithilfe einer Editor config-Datei zu konfigurieren.
 
 ## <a name="option-scopes"></a>Options Bereiche
 

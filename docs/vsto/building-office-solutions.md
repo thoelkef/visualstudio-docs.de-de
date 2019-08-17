@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Office-Projektmappen
-ms.date: 02/02/2017
+title: Erstellen von Office-Lösungen
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,48 +26,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440336"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551846"
 ---
-# <a name="build-office-solutions"></a>Erstellen von Office-Projektmappen
-  Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+# <a name="build-office-solutions"></a>Erstellen von Office-Lösungen
+  Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [Kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-> [!NOTE]
-> Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
+[!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="project-output-for-office-projects"></a>Projektausgabe für Office-Projekte
+## <a name="project-output-for-office-projects"></a>Projekt Ausgabe für Office-Projekte
  Der Ausgabeort für Office-Projekte ist „ *Projektname*\bin\release“ oder „ *Projektname*\bin\debug“. Sie können die Erstellung nicht in einem Bereitstellungsverzeichnis vornehmen.
 
-### <a name="document-level-projects"></a>Projekte auf Dokumentebene
+### <a name="document-level-projects"></a>Projekte auf Dokument Ebene
  Wenn Sie ein Projekt auf Dokumentebene erstellen, sind die folgenden Elemente in der Projektausgabe enthalten:
 
 - Eine Kopie des Projektdokuments.
 
 - Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
 
-- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"* . Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+- Das Anwendungs Manifest mit der Dateinamenerweiterung " *. Manifest*". Weitere Informationen finden Sie unter [Anwendungs Manifeste für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen.
 
-- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"* . Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
+- Das Bereitstellungs Manifest mit der Dateinamenerweiterung *. VSTO*. Weitere Informationen finden Sie unter [Bereitstellungs Manifeste für Office](../vsto/deployment-manifests-for-office-solutions.md)-Projektmappen.
 
-- Eine Programmdatenbank (*PDB*) Datei.
+- Eine Programm Datenbankdatei (*PDB*-Datei).
 
 > [!NOTE]
-> Wenn Sie eine Projektmappe auf Dokumentebene an einem Remotespeicherort anstatt auf dem lokalen Computer erstellen, fügen Sie den vollqualifizierten Pfad zur Liste vertrauenswürdiger Speicherorte im Vertrauensstellungscenter der Anwendung hinzu. Weitere Informationen finden Sie im Abschnitt mit dem Gewähren von Vertrauenswürdigkeit für Dokumente in [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).
+> Wenn Sie eine Projektmappe auf Dokumentebene an einem Remotespeicherort anstatt auf dem lokalen Computer erstellen, fügen Sie den vollqualifizierten Pfad zur Liste vertrauenswürdiger Speicherorte im Vertrauensstellungscenter der Anwendung hinzu. Weitere Informationen finden Sie im Abschnitt "gewähren von Vertrauenswürdigkeit für Dokumente in [sicheren Office-Lösungen](../vsto/securing-office-solutions.md)".
 
-### <a name="application-level-projects"></a>Anwendungsebene
- Wenn Sie ein VSTO-Add-in-Projekt erstellen, sind die folgenden Elemente in der Projektausgabe enthalten:
+### <a name="application-level-projects"></a>Projekte auf Anwendungsebene
+ Wenn Sie ein VSTO-Add-in-Projekt erstellen, sind die folgenden Elemente in der Projekt Ausgabe enthalten:
 
 - Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
 
-- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"* . Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+- Das Anwendungs Manifest mit der Dateinamenerweiterung " *. Manifest*". Weitere Informationen finden Sie unter [Anwendungs Manifeste für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen.
 
-- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"* . Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
+- Das Bereitstellungs Manifest mit der Dateinamenerweiterung *. VSTO*. Weitere Informationen finden Sie unter [Bereitstellungs Manifeste für Office](../vsto/deployment-manifests-for-office-solutions.md)-Projektmappen.
 
-- Eine Programmdatenbank (*PDB*)-Datei für die Projektassembly.
+- Eine Programm Datenbankdatei (*PDB*) für die Projektassembly.
 
   Der Buildprozess für VSTO-Add-In-Projekte erstellt auch einen Satz von Registrierungseinträgen auf dem Entwicklungscomputer, die zum Laden des VSTO-Add-Ins erforderlich sind. Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).
 
@@ -87,28 +86,28 @@ ms.locfileid: "63440336"
 
  Office-Projekte verwenden Zertifikate, um den Herausgeber zu überprüfen. Visual Studio erstellt automatisch ein temporäres Zertifikat zur Identifizierung von Office-Projektmappen und konfiguriert den Entwicklungscomputer, damit dem temporären Zertifikat vertraut wird.
 
- Weitere Informationen finden Sie unter [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).
+ Weitere Informationen finden Sie unter [sichere Office-Lösungen](../vsto/securing-office-solutions.md).
 
 ### <a name="network-projects"></a>Netzwerkprojekte
- Wenn sich der Speicherort der Assembly oder des Dokuments auf einer Netzwerkfreigabe befindet, ist die Aktualisierung der lokalen Sicherheitsrichtlinie (auf Benutzerebene) nicht ausreichend, um die Ausführung der Projektmappe zu gestatten. Ein Administrator muss Assemblys und Dokumenten, die sich auf einer Netzwerkfreigabe befinden, volle Vertrauenswürdigkeit auf Computerebene gewähren, bevor die Projektmappe ausgeführt werden kann. Weitere Informationen zum Festlegen von Sicherheitsrichtlinien finden Sie unter [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).
+ Wenn sich der Speicherort der Assembly oder des Dokuments auf einer Netzwerkfreigabe befindet, ist die Aktualisierung der lokalen Sicherheitsrichtlinie (auf Benutzerebene) nicht ausreichend, um die Ausführung der Projektmappe zu gestatten. Ein Administrator muss Assemblys und Dokumenten, die sich auf einer Netzwerkfreigabe befinden, volle Vertrauenswürdigkeit auf Computerebene gewähren, bevor die Projektmappe ausgeführt werden kann. Weitere Informationen zum Festlegen von Sicherheitsrichtlinien finden Sie unter [sichere Office-Lösungen](../vsto/securing-office-solutions.md).
 
  Für Projekte auf Dokumentebene müssen Sie außerdem den vollqualifizierten Speicherort des Dokuments zur Office-Liste vertrauenswürdiger Ordner hinzufügen. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).
 
 ## <a name="change-the-platform-target"></a>Ändern der Zielplattform
  Standardmäßig ist die Zielplattform für Office-Projekte **Beliebige CPU**. In der Regel sollten Sie diese Einstellung nicht ändern. Office-Projektmappen, die mit der Zielplattformeinstellung **Beliebige CPU** erstellt werden, werden in 32-Bit- und 64-Bit-Versionen von Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]ausgeführt.
 
- Sie sollten die Zielplattform nur auf x64 festlegen, wenn Sie eine Projektmappe erstellen, die nur in 64-Bit-Versionen von Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]ausgeführt wird, und die Projektmappe systemeigene 64-Bit-APIs aufruft. Weitere Informationen zum Ändern der zielplattformeinstellung finden Sie unter [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md).
+ Sie sollten die Zielplattform nur auf x64 festlegen, wenn Sie eine Projektmappe erstellen, die nur in 64-Bit-Versionen von Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] oder [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]ausgeführt wird, und die Projektmappe systemeigene 64-Bit-APIs aufruft. Weitere Informationen zum Ändern der Platt Form Zieleinstellung finden [Sie unter Gewusst wie: Konfigurieren von Projekten für Ziel](../ide/how-to-configure-projects-to-target-platforms.md)Plattformen.
 
  Wenn Sie für die Zielplattform x64 festlegen, kann die Projektmappe nicht in 32-Bit-Versionen von Windows oder Office ausgeführt werden. Die x64-Zielplattform erfordert, dass die Projektmappe in einem 64-Bit-Prozess ausgeführt wird.
 
-## <a name="use-the-clean-command"></a>Mithilfe des Befehls zum Bereinigen
+## <a name="use-the-clean-command"></a>Verwenden des Befehls "bereinigen"
  Um die erstellten Projektdateien vom Entwicklungscomputer zu entfernen, können Sie den Befehl **Bereinigen** aus dem Menü **Erstellen** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verwenden. Der Befehl **Bereinigen** löscht alle Dateien im Ausgabespeicherort des Builds. Für Projekte auf Anwendungsebene entfernt der Befehl **Bereinigen** auch die vom Buildprozess erstellten Registrierungseinträge.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Debuggen von Office-Projekten](../vsto/debugging-office-projects.md)|Beschreibt Probleme beim Debuggen von Office-Projekten.|
-|[Exemplarische Vorgehensweise: Erstellen Sie Ihrer ersten Anpassung auf Dokumentebene, für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|
-|[Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt, wie ein VSTO-Add-in wieder zu aktivieren, das hart oder weich deaktiviert wurde.|
-|[Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)|Enthält Links zu Informationen über das Erstellen von Office-Projektmappen und über die Aufgabe, die Assemblys dabei zukommt.|
+|[Debugging von Office-Projekten](../vsto/debugging-office-projects.md)|Beschreibt Probleme beim Debuggen von Office-Projekten.|
+|[Exemplarische Vorgehensweise: Erstellen Sie Ihre erste Anpassung auf Dokument Ebene für Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Veranschaulicht, wie Sie eine Standardanpassung auf Dokumentebene für Excel erstellen.|
+|[Vorgehensweise: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Beschreibt, wie ein VSTO-Add-in, das hart oder weich deaktiviert wurde, erneut aktiviert wird.|
+|[Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)|Enthält Links zu Informationen über das Erstellen von Office-Projektmappen und über die Aufgabe, die Assemblys dabei zukommt.|

@@ -1,6 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook'
-ms.date: 02/02/2017
+title: 'Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Outlook'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aceab3fba1020c08382c31a2de32368e8ba12a05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981322"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547973"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook
-  Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eines VSTO-Add-Ins für Microsoft Office Outlook. Die in dieser Art von Projektmappe erstellten Features sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welches Outlook-Element geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Outlook
+  Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eines VSTO-Add-Ins für Microsoft Office Outlook. Die in dieser Art von Projektmappe erstellten Features sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welches Outlook-Element geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über &#40;die Entwicklung von Office&#41;](../vsto/office-solutions-development-overview-vsto.md)-Projektmappen VSTO.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
@@ -39,7 +41,7 @@ ms.locfileid: "62981322"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -66,10 +68,10 @@ ms.locfileid: "62981322"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das **FirstOutlookAddIn** -Projekt und öffnet die Codedatei **ThisAddIn** im Editor.
 
-## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Schreiben von Code, der jeder neuen e-Mail Text hinzufügt
+## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Schreiben von Code, der jeder neuen e-Mail-Nachricht Text hinzufügt
  Als Nächstes fügen Sie der Codedatei "ThisAddIn" Code hinzu. Der neue Code verwendet das Outlook-Objektmodell, um jeder neuen E-Mail Text hinzuzufügen. Standardmäßig enthält die Codedatei "ThisAddIn" den folgenden generierten Code:
 
-- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Outlook-Objektmodell. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
+- Eine Teildefinition der `ThisAddIn` -Klasse. Diese Klasse stellt einen Einstiegspunkt für Ihren Code bereit und ermöglicht den Zugriff auf das Outlook-Objektmodell. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Der Rest der `ThisAddIn` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
 
 - Die Ereignishandler `ThisAddIn_Startup` und `ThisAddIn_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihr VSTO-Add-In von Outlook geladen oder entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren des VSTO-Add-Ins, wenn es geladen wird, und zum Bereinigen der vom VSTO-Add-In verwendeten Ressourcen, wenn es entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
@@ -96,16 +98,16 @@ ms.locfileid: "62981322"
 
 - Das `Application` -Feld der `ThisAddIn` -Klasse. Das `Application` -Feld gibt ein <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt zurück, das für die aktuelle Instanz von Outlook steht.
 
-- Der `Inspector` -Parameter des Ereignishandlers für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis. Der `Inspector` -Parameter ist ein <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekt, das das Inspektorfenster der neuen E-Mail darstellt. Weitere Informationen finden Sie unter [Outlook-Projektmappen](../vsto/outlook-solutions.md).
+- Der `Inspector` -Parameter des Ereignishandlers für das <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> -Ereignis. Der `Inspector` -Parameter ist ein <xref:Microsoft.Office.Interop.Outlook.Inspector> -Objekt, das das Inspektorfenster der neuen E-Mail darstellt. Weitere Informationen finden Sie unter [Outlook-Lösungen](../vsto/outlook-solutions.md).
 
-## <a name="test-the-project"></a>Testen Sie das Projekt
+## <a name="test-the-project"></a>Testen des Projekts
  Wenn Sie das Projekt erstellen und ausführen, stellen Sie sicher, dass der Text in der Betreffzeile und dem Textkörper der neuen E-Mail angezeigt wird.
 
 ### <a name="to-test-the-project"></a>So testen Sie das Projekt
 
 1. Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen.
 
-     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Outlook das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über Office-Lösung das Erstellen](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md).
+     Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die im Buildausgabeordner des Projekts enthalten ist. Visual Studio erstellt auch einen Satz von Registrierungseinträgen, mit deren Hilfe Outlook das VSTO-Add-In ermitteln und laden kann. Die Sicherheitseinstellungen auf dem Entwicklungscomputer werden so konfiguriert, dass das VSTO-Add-In ausgeführt werden kann. Weitere Informationen finden Sie unter [Übersicht über](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)den Buildprozess für Office-Lösungen.
 
 2. Erstellen Sie in Outlook eine neue E-Mail.
 
@@ -115,7 +117,7 @@ ms.locfileid: "62981322"
 
 4. Schließen Sie Outlook.
 
-## <a name="clean-up-the-project"></a>Bereinigen Sie das Projekt
+## <a name="clean-up-the-project"></a>Bereinigen des Projekts
  Wenn Sie die Entwicklung eines Projekts abgeschlossen haben, entfernen Sie die VSTO-Add-In-Assembly, die Registrierungseinträge und die Sicherheitseinstellungen vom Entwicklungscomputer. Andernfalls wird das VSTO-Add-In jedes Mal ausgeführt, wenn Sie Outlook auf dem Entwicklungscomputer öffnen.
 
 ### <a name="to-clean-up-your-project"></a>So bereinigen Sie das Projekt
@@ -125,20 +127,20 @@ ms.locfileid: "62981322"
 ## <a name="next-steps"></a>Nächste Schritte
  Nachdem Sie nun ein einfaches VSTO-Add-In für Outlook erstellt haben, erfahren Sie in den folgenden Themen mehr über die Entwicklung von VSTO-Add-Ins:
 
-- Allgemeine Programmieraufgaben, die Sie ausführen können, indem Sie VSTO-Add-Ins für Outlook verwenden. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).
+- Allgemeine Programmieraufgaben, die Sie ausführen können, indem Sie VSTO-Add-Ins für Outlook verwenden. Weitere Informationen finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
-- Verwenden des Outlook-Objektmodells. Weitere Informationen finden Sie unter [Outlook-Projektmappen](../vsto/outlook-solutions.md).
+- Verwenden des Outlook-Objektmodells. Weitere Informationen finden Sie unter [Outlook-Lösungen](../vsto/outlook-solutions.md).
 
 - Anpassen der Outlook-Benutzeroberfläche (UI) beispielsweise durch das Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch das Erstellen eines eigenen benutzerdefinierten Aufgabenbereichs. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
 
-- Erstellen und Debuggen von VSTO-Add-Ins für Outlook. Weitere Informationen finden Sie unter [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).
+- Erstellen und Debuggen von VSTO-Add-Ins für Outlook. Weitere Informationen finden Sie unter [Erstellen von Office](../vsto/building-office-solutions.md)-Projektmappen.
 
-- Bereitstellen von VSTO-Add-Ins für Outlook. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
+- Bereitstellen von VSTO-Add-Ins für Outlook. Weitere Informationen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
 ## <a name="see-also"></a>Siehe auch
-- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
-- [Outlook-Projektmappen](../vsto/outlook-solutions.md)
-- [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)
-- [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)
-- [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)
+- [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Outlook-Lösungen](../vsto/outlook-solutions.md)
+- [Office-Benutzeroberflächen Anpassung](../vsto/office-ui-customization.md)
+- [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)
+- [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)

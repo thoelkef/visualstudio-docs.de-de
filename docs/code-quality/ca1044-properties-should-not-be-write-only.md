@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c83e28e525924c0641f13e2cbd51f8af26c5149
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b3e05f53c4efd16f02bc71c3c478e5ffe3ef8bc8
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842197"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547577"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Eigenschaften sollten nicht lesegeschützt sein.
 
@@ -35,35 +35,35 @@ ms.locfileid: "65842197"
 
 ## <a name="cause"></a>Ursache
 
-Eine Eigenschaft verfügt über einen Set-Accessor, jedoch nicht mit einem Get-Accessor.
+Eine Eigenschaft verfügt über einen Set-Accessor, jedoch nicht über einen get-Accessor.
 
-Diese Regel nur sucht standardmäßig an öffentliche Typen, aber dies ist [konfigurierbare](#configurability).
+Standardmäßig prüft diese Regel nur öffentliche Typen, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Erhalten bieten Sie Accessoren Lesezugriff auf eine Eigenschaft und gewähren Sie Set-Zugriffsmethoden Schreibzugriff. Obwohl eine schreibgeschützte Eigenschaft akzeptabel und oft erforderlich ist, verhindern die Entwurfsrichtlinien die Verwendung von Eigenschaften, die nur geschrieben werden können. Dies ist, da einen Benutzer einen Wert festlegen zu lassen, und klicken Sie dann verhindert, dass des Benutzers anzeigen des Werts wird keine Sicherheit geboten. Außerdem kann der Zustand freigegebener Objekte ohne Lesezugriff nicht angezeigt werden, wodurch ihre Nützlichkeit eingeschränkt wird.
+Get-Accessoren bieten Lesezugriff auf eine Eigenschaft, und Set-Accessoren stellen Schreibzugriff bereit. Obwohl eine schreibgeschützte Eigenschaft akzeptabel und oft erforderlich ist, verhindern die Entwurfsrichtlinien die Verwendung von Eigenschaften, die nur geschrieben werden können. Der Grund hierfür ist, dass ein Benutzer einen Wert festlegen kann und die Anzeige des Werts durch den Benutzer nicht gewährleistet. Außerdem kann der Zustand freigegebener Objekte ohne Lesezugriff nicht angezeigt werden, wodurch ihre Nützlichkeit eingeschränkt wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen Sie einen Get-Accessor der Eigenschaft ein. Auch wenn das Verhalten einer nur-Schreiben-Eigenschaft erforderlich ist, sollten Sie konvertieren diese Eigenschaft in eine Methode.
+Fügen Sie der-Eigenschaft einen get-Accessor hinzu, um einen Verstoß gegen diese Regel zu beheben. Wenn das Verhalten einer schreibgeschützten Eigenschaft erforderlich ist, empfiehlt es sich, diese Eigenschaft in eine Methode umzuwandeln.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es wird empfohlen, Sie keine Warnungen, die von dieser Regel unterdrücken.
+Es wird empfohlen, keine Warnungen dieser Regel zu unterdrücken.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1044.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel `BadClassWithWriteOnlyProperty` ist ein Typ mit einer nur-Schreiben-Eigenschaft. `GoodClassWithReadWriteProperty` enthält den korrigierten Code.
+Im folgenden Beispiel `BadClassWithWriteOnlyProperty` ist ein-Typ mit einer schreibgeschützten Eigenschaft. `GoodClassWithReadWriteProperty`enthält den korrigierten Code.
 
 [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)]
 [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]
