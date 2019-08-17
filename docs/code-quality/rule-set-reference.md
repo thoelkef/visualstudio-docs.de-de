@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825363"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550832"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
 
-Wenn Sie die statische Codeanalyse für Projekte mit verwaltetem Code in Visual Studio konfigurieren, können Sie aus einer Liste von integrierten *-Regelsätze*. Sie können entweder eine der folgenden integrierten Regelsätze verwenden, oder Sie können [Anpassen eines Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) an Ihre projektanforderungen anpassen.
+Wenn Sie die Legacy-Analyse für Projekte mit verwaltetem Code in Visual Studio konfigurieren, können Sie aus einer Liste integrierter *Regelsätze*auswählen. Sie können entweder eine der folgenden integrierten Regelsätze verwenden, oder Sie können [Anpassen eines Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) an Ihre projektanforderungen anpassen.
 
 Die Themen in diesem Abschnitt beschreiben die integrierte Regelsätze Mengen und die Regeln (oder Warnungen), die sie enthalten.
 
 > [!NOTE]
-> Die Regelsätze in diesem Abschnitt beziehen sich auf statische Codeanalyse. Informationen zu Regelsätzen, die für Roslyn-Analyzer-Pakete verfügbar sind, finden Sie unter [Verwenden von Regelsätzen mit Roslyn-Analyzern](analyzer-rule-sets.md).
+> Die Regelsätze in diesem Abschnitt beziehen sich auf die Legacy-Analyse. Weitere Informationen zu Regelsätzen, die für Code Analyzer-Pakete verfügbar sind, finden Sie unter [Verwenden von Regelsätzen mit Code Analyse](analyzer-rule-sets.md)Modulen.
 
 - [Regelsatz für alle Regeln](all-rules-rule-set.md)
 - [Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code](basic-correctness-rules-rule-set-for-managed-code.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a1ef4258d1b095395be34c7004e3f783b973897d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714379"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547876"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Generische Ereignishandlerinstanzen verwenden.
 
@@ -35,54 +35,54 @@ ms.locfileid: "66714379"
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ enthält einen Delegaten, die "void" zurückgibt und die Signatur enthält zwei Parameter (der erste ist ein Objekt und das zweite ein Typ, der EventArgs zugewiesen werden) und der enthaltenden Assembly Ziele.
+Ein Typ enthält einen Delegaten, der "void" zurückgibt und dessen Signatur zwei Parameter enthält (das erste Objekt und das zweite einen Typ, der EventArgs zugewiesen werden kann), und die enthaltende Assembly als Ziel .net.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Typen, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Vor, um benutzerdefinierte Informationen an den Ereignishandler übergeben ein neuer Delegat musste deklariert werden, die eine Klasse, die von abgeleitet wurde angegeben, die <xref:System.EventArgs?displayProperty=fullName> Klasse. In .NET ist die generische <xref:System.EventHandler%601?displayProperty=fullName> -Delegat ermöglicht es, jede Klasse, die abgeleitet wird <xref:System.EventArgs> , zusammen mit der Ereignishandler verwendet werden soll.
+Vor .net musste ein neuer Delegat deklariert werden, der eine von der <xref:System.EventArgs?displayProperty=fullName> -Klasse abgeleitete Klasse angibt, um benutzerdefinierte Informationen an den-Ereignishandler zu übergeben. In .NET ermöglicht der generische <xref:System.EventHandler%601?displayProperty=fullName> -Delegat, dass jede von <xref:System.EventArgs> abgeleitete Klasse mit dem-Ereignishandler verwendet wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Delegaten, und Ersetzen Sie die Verwendung durch die <xref:System.EventHandler%601?displayProperty=fullName> delegieren.
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den-Delegaten, und ersetzen <xref:System.EventHandler%601?displayProperty=fullName> Sie dessen Verwendung mithilfe des-Delegaten.
 
-Wenn der Delegat automatisch von Visual Basic-Compiler ist, ändern Sie die Syntax der Deklaration des Ereignisses mit der <xref:System.EventHandler%601?displayProperty=fullName> delegieren.
+Wenn der Delegat automatisch vom Visual Basic-Compiler generiert wird, ändern Sie die Syntax der Ereignis Deklaration, <xref:System.EventHandler%601?displayProperty=fullName> um den Delegaten zu verwenden.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt ein Delegat, der gegen die Regel verstößt. In der Visual Basic-Beispiel beschrieben Kommentare, wie ändern Sie das Beispiel, um die Regel erfüllen. Für das C#-Beispiel folgt ein Beispiel, das den geänderten Code zeigt.
+Das folgende Beispiel zeigt einen Delegaten, der gegen die Regel verstößt. Im Visual Basic Beispiel wird beschrieben, wie Sie das Beispiel ändern, um die Regel zu erfüllen. Im C# Beispiel folgt ein Beispiel, das den geänderten Code anzeigt.
 
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
-Der folgende Codeausschnitt entfernt der Delegatdeklaration überein, aus dem vorherigen Beispiel, das in der Regel entspricht. Er ersetzt die Verwendung in der `ClassThatRaisesEvent` und `ClassThatHandlesEvent` Methoden mithilfe der <xref:System.EventHandler%601?displayProperty=fullName> delegieren.
+Der folgende Code Ausschnitt entfernt die Delegatdeklaration aus dem vorherigen Beispiel, die die Regel erfüllt. Er ersetzt seine Verwendung in den `ClassThatRaisesEvent` Methoden `ClassThatHandlesEvent` und mithilfe des <xref:System.EventHandler%601?displayProperty=fullName> -Delegaten.
 
 [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1000: Statische Member in generischen Typen nicht deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1005: Übermäßige Parameter für generische Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010: Sammlungen sollten eine generische Schnittstelle implementieren.](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 - [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006: Generische Typen in Membersignaturen nicht schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004: Generische Methoden müssen den Typparameter angeben.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1007: Verwenden Sie Generika](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1006: Generische Typen in Element Signaturen nicht Schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004: Generische Methoden sollten Typparameter bereitstellen.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1007: Generika ggf. verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Siehe auch
 

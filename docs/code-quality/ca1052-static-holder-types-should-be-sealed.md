@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604765"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547517"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Statische Halter Typen sollten statisch oder notgeerbt sein.
 
@@ -59,7 +59,7 @@ Unterdrückt eine Warnung aus dieser Regel nur, wenn der Typ für die Vererbung 
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer ausführen (nicht über die statische Code Analyse), können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um beispielsweise anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar zu einer Editor config-Datei in Ihrem Projekt hinzu:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um beispielsweise anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar zu einer Editor config-Datei in Ihrem Projekt hinzu:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal

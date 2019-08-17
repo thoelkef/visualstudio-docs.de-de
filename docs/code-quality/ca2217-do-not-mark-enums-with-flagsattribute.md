@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe9b53a02f5a2c12b734c793557c69868a973e8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 377188183acdaa9aa86ae3344c8f6d5727b82ccc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841503"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546840"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Enumerationen nicht mit FlagsAttribute markieren.
 
@@ -36,41 +36,41 @@ ms.locfileid: "65841503"
 
 ## <a name="cause"></a>Ursache
 
-Ist eine Enumeration mit markiert <xref:System.FlagsAttribute> und verfügt sie über ein oder mehr Werte, die keine Potenzen von 2 oder eine Kombination aus anderen sind Werte für die Enumeration definiert.
+Eine Enumeration ist mit <xref:System.FlagsAttribute> markiert, und Sie verfügt über einen oder mehrere Werte, die nicht aus zwei oder einer Kombination der anderen definierten Werte für die Enumeration bestehen.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Enumerationen, dies ist jedoch [konfigurierbare](#configurability).
+Standardmäßig prüft diese Regel nur extern sichtbare Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine Enumeration müssen <xref:System.FlagsAttribute> vorhanden, nur, wenn jeder in der Enumeration definierte Wert eine Potenz von zwei oder eine Kombination von definierten Werte.
+Eine Enumeration sollte nur <xref:System.FlagsAttribute> vorhanden sein, wenn jeder in der-Enumeration definierte Wert eine Potenz von zwei oder einer Kombination von definierten Werten ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie <xref:System.FlagsAttribute> aus der Enumeration.
+Um einen Verstoß gegen diese Regel zu beheben, <xref:System.FlagsAttribute> entfernen Sie aus der-Enumeration.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca2217.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Nutzung) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Verwendung) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="examples"></a>Beispiele
 
-Der folgende Code zeigt eine Enumeration, `Color`, den Wert 3 enthält. 3 ist keine Potenz von 2 oder eine Kombination der definierten Werte. Die `Color` Enumeration darf nicht mit markiert werden <xref:System.FlagsAttribute>.
+Der folgende Code zeigt eine Enumeration `Color`, die den Wert 3 enthält. 3 ist keine Potenz von zwei oder eine Kombination aus den definierten Werten. Die `Color` Enumeration sollte nicht mit <xref:System.FlagsAttribute>markiert werden.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-Der folgende Code zeigt eine Enumeration, `Days`, erfüllt die Anforderungen für die Markierung mit <xref:System.FlagsAttribute>:
+Der folgende Code zeigt eine Enumeration, `Days`die die Anforderungen erfüllt, die mit <xref:System.FlagsAttribute>markiert werden sollen:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
@@ -78,7 +78,7 @@ Der folgende Code zeigt eine Enumeration, `Days`, erfüllt die Anforderungen fü
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
 

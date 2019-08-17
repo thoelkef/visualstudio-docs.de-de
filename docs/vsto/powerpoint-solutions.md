@@ -1,6 +1,6 @@
 ---
 title: PowerPoint-Lösungen
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926430"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551472"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint-Lösungen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office PowerPoint verwenden können. Mit VSTO-Add-Ins können Sie PowerPoint automatisieren, PowerPoint-Features erweitern oder die PowerPoint-Benutzeroberfläche anpassen.
@@ -31,8 +31,7 @@ ms.locfileid: "68926430"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> Möchten Sie Lösungen entwickeln, die die Office-Funktionen auf [mehrere Plattformen](https://dev.office.com/add-in-availability)ausweiten? Sehen Sie sich das neue [Office-Add-ins-Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins)an. Office-Add-ins haben im Vergleich zu VSTO-Add-Ins und-Lösungen einen geringen Speicherbedarf, und Sie können Sie mithilfe von fast allen webprogrammierungs Technologien wie HTML5, JavaScript, CSS3 und XML erstellen.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden [Sie unter Gewusst wie: Erstellen Sie ein Add-in für Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 

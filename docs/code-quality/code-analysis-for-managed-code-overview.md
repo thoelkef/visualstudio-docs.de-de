@@ -10,17 +10,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3231efbac4f4c101632e281fd54718e688bb885
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: a44465b5f3daf89e915a5f6f5e7abe6c856598e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195143"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546925"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die Codeanalyse für verwalteten Code in Visual Studio
+# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die Code Analyse für verwalteten Code in Visual Studio
 
-Visual Studio Codeanalyse von verwaltetem Code ausführen kann, gibt es zwei Möglichkeiten: mit [binäre Analysen](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), auch bekannt als FxCop statische Analyse der verwaltete Assemblys, und klicken Sie mit der moderner [Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md). Roslyn-Analysetools, die während der Eingabe zu Ihrem live Code analysieren, ersetzen Sie statische FxCop-Analyse, die nur Ihren Code nach einem Build analysiert.  
+Visual Studio kann eine Code Analyse von verwaltetem Code auf zweierlei Weise durchführen: mit [Legacy Analyse](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), auch als "FxCop Static Analysis of Managed Assemblys" bezeichnet, und mit den moderneren .NET Compiler Platform basierten [Code](../code-quality/roslyn-analyzers-overview.md)Analysemodulen. .NET Compiler Platform basierten Code Analysen, die Ihren Code während der durch zugabeart analysieren, ersetzen Sie die statische Code Analyse der veralteten FxCop-Code, die nur kompilierten Code analysiert.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über die Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md)
+- [Übersicht über .NET Compiler Platform-basierte Analysetools](../code-quality/roslyn-analyzers-overview.md)

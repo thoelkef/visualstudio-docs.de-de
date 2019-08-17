@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf16a9edf25132aa8b58702f01563b8d7ccf109a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841494"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547087"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Eigenschaftennamen sollten nicht mit Get-Methoden übereinstimmen.
 
@@ -35,44 +35,44 @@ ms.locfileid: "65841494"
 
 ## <a name="cause"></a>Ursache
 
-Der Name eines Elements beginnt mit "Get" und entspricht andernfalls den Namen einer Eigenschaft. Führen z. B. ein Typ, der eine Methode enthält, mit dem Namen "GetColor" und eine Eigenschaft mit dem Namen 'Color' einen Regelverstoß.
+Der Name eines Members beginnt mit "Get" und stimmt andernfalls mit dem Namen einer Eigenschaft überein. Ein Typ, der eine Methode namens "GetColor" und eine Eigenschaft mit dem Namen "Color" enthält, führt z. b. zu einer Regelverletzung.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Elemente und Eigenschaften, aber dies ist [konfigurierbare](#configurability).
+Standardmäßig prüft diese Regel nur extern sichtbare Member und Eigenschaften, dies ist jedoch [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
 "Get"-Methoden und -Eigenschaften sollten Namen aufweisen, die ihre Funktionen deutlich erkennbar machen.
 
-Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Diese Konsistenz reduziert die Zeit, die ist erforderlich, um eine neue Softwarebibliothek zu erhalten und zudem wird das Kundenvertrauen, dass die Bibliothek von einer Person entwickelt wurde, die Erfahrung in der Entwicklung von verwaltetem Code hat.
+Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Diese Konsistenz verringert die Zeit, die erforderlich ist, um eine neue Software Bibliothek kennenzulernen, und steigert das Kunden Vertrauen, dass die Bibliothek von einer Person entwickelt wurde, die über Kenntnisse in der Entwicklung von verwaltetem Code verfügt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Ändern Sie den Namen ein, sodass sie nicht den Namen einer Methode übereinstimmt, der mit "Get" vorangestellt ist.
+Ändern Sie den Namen so, dass er nicht mit dem Namen einer Methode identisch ist, der das Präfix "Get" vorangestellt ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
 > [!NOTE]
-> Diese Warnung kann ausgeschlossen werden, wenn die "Get"-Methode verursacht wird, durch die Implementierung von IExtenderProvider-Schnittstelle.
+> Diese Warnung wird möglicherweise ausgeschlossen, wenn die "Get"-Methode durch Implementieren der IExtenderProvider-Schnittstelle verursacht wird.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1721.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel enthält eine Methode und eine Eigenschaft, die gegen diese Regel verstoßen.
+Das folgende Beispiel enthält eine-Methode und eine-Eigenschaft, die gegen diese Regel verstoßen.
 
 [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
 [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1024: Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Verwenden Sie gegebenenfalls Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)

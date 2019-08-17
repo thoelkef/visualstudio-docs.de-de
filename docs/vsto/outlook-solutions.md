@@ -1,6 +1,6 @@
 ---
 title: Outlook-Projektmappen
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,32 +18,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4150751cbb8de64fc237335bc26407f932276075
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b27f874766853fb5239c96ec178233935484d1b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442390"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551487"
 ---
 # <a name="outlook-solutions"></a>Outlook-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Outlook verwenden können. Mit VSTO-Add-Ins können Sie Outlook automatisieren, Outlook-Features erweitern oder die Benutzeroberfläche (User Interface, UI) von Outlook anpassen. Weitere Informationen zu VSTO-Add-Ins finden Sie unter [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-> [!NOTE]
-> Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
+[!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="create-an-outlook-vsto-add-in-project"></a>Erstellen Sie ein Outlook VSTO-Add-in-Projekt
+## <a name="create-an-outlook-vsto-add-in-project"></a>Erstellen eines Outlook VSTO-Add-in-Projekts
  Erstellen Sie Outlook-Projekte mithilfe der Projektvorlage **Outlook-Add-In** im Dialogfeld **Neues Projekt** . Diese Vorlage enthält die erforderlichen Assemblyverweise und Projektdateien.
 
- Weitere Informationen zum Erstellen eines VSTO-Add-in-Projekts finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
+ Weitere Informationen zum Erstellen eines VSTO-Add-in-Projekts finden [Sie unter Gewusst wie: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio. Weitere Informationen zu den Projektvorlagen finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
 
 ## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO-Add-in-Programmiermodell
  Wenn Sie ein VSTO-Add-In-Projekt für Outlook erstellen, generiert Visual Studio eine Klasse mit dem Namen `ThisAddIn`, die die Grundlage für die Projektmappe darstellt. Diese Klasse bietet einen Ausgangspunkt für das Schreiben des Codes, und sie macht auch das Outlook-Objektmodell für das VSTO-Add-In verfügbar.
 
- Weitere Informationen zu den `ThisAddIn` -Klasse und anderen Funktionen Sie in einem VSTO-Add-in können finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).
+ Weitere Informationen zur-Klasse `ThisAddIn` und anderen Funktionen, die Sie in einem VSTO-Add-in verwenden können, finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
-## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatisieren von Outlook mithilfe von Outlook-Objektmodell
+## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatisieren von Outlook mithilfe des Outlook-Objektmodells
  Das Outlook-Objektmodell macht viele Typen verfügbar, die Sie zum Automatisieren von Outlook verwenden können. Diese Typen ermöglichen Ihnen das Schreiben von Code zum Ausführen häufiger Aufgaben:
 
 - Programmgesteuertes Erstellen und Senden von E-Mails
@@ -52,24 +51,24 @@ ms.locfileid: "63442390"
 
 - Suchen nach Elementen in Outlook-Ordnern
 
-  Weitere Informationen finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
+  Weitere Informationen finden Sie unter [Übersicht über das Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Anpassen der Benutzeroberfläche einer Outlook-Anwendung
 
 |Aufgabe|Weitere Informationen|
 |----------|--------------------------|
-|Fügen Sie dem Menüband eines Outlook-Inspektors benutzerdefinierte Registerkarten hinzu.|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|
+|Fügen Sie dem Menüband eines Outlook-Inspektors benutzerdefinierte Registerkarten hinzu.|[Übersicht über Menüband](../vsto/ribbon-overview.md)|
 |Hinzufügen benutzerdefinierter Gruppen zu einer integrierten Registerkarte in einem Outlook-Inspektor|[Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|
-|Hinzufügen eines benutzerdefinierten Aufgabenbereichs, der in einem Outlook-Inspektor angezeigt wird|[Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md).|
-|Hinzufügen eines Formularbereichs, der erweitert wird oder vorhandene Outlook-Formulare ersetzt.|[Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)|
+|Hinzufügen eines benutzerdefinierten Aufgabenbereichs, der in einem Outlook-Inspektor angezeigt wird|[Benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.|
+|Hinzufügen eines Formularbereichs, der erweitert wird oder vorhandene Outlook-Formulare ersetzt.|[Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)|
 
- Weitere Informationen zum Anpassen der Benutzeroberfläche von Outlook und anderen Microsoft Office-Anwendungen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
+ Weitere Informationen zum Anpassen der Benutzeroberfläche von Outlook und anderen Microsoft Office Anwendungen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)|Bietet einen Überblick über die Objekte, die vom Outlook-Objektmodell bereitgestellt werden.|
-|[Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)|Erläutert die von Visual Studio bereitgestellten Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.|
-|[Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Erläutert das Erstellen eines VSTO-Add-Ins für Microsoft Office Outlook.|
-|[Outlook 2010 unter Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=199013)|Der Bereich der MSDN Library, in dem Sie Artikel und Referenzdokumentation zum Entwickeln von Outlook-Projektmappen finden (nicht spezifisch für die Office-Entwicklung mit Visual Studio).|
+|[Übersicht über das Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)|Bietet einen Überblick über die Objekte, die vom Outlook-Objektmodell bereitgestellt werden.|
+|[Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)|Erläutert die von Visual Studio bereitgestellten Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.|
+|[Exemplarische Vorgehensweise: Erstellen Ihres ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Erläutert das Erstellen eines VSTO-Add-Ins für Microsoft Office Outlook.|
+|[Outlook 2010 in der Office-Entwicklung](http://go.microsoft.com/fwlink/?LinkId=199013)|Der Bereich der MSDN Library, in dem Sie Artikel und Referenzdokumentation zum Entwickeln von Outlook-Projektmappen finden (nicht spezifisch für die Office-Entwicklung mit Visual Studio).|
