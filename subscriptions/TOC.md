@@ -1,7 +1,7 @@
 # [Visual Studio-Abonnements](index.md)
 ## [Neuigkeiten](whats-new-in-subscriptions.md)
 ## Abonnements
-### Kaufen von Abonnements
+### Abonnements kaufen
 #### [Retail (Einzelhandel)](https://visualstudio.microsoft.com/vs/pricing)
 #### Cloud 
 ##### [Übersicht](vscloud-overview.md)
@@ -21,7 +21,7 @@
 #### [Probleme bei der Anmeldung](sign-in-issues.md)
 #### [Anonymisierungen von Abonnentendaten](anonymization.md)
 ### [Übersicht über das Abonnementportal](using-the-subscriber-portal.md)
-### [Verwalten von Abonnements](manage-vs-subscriptions.md)
+### [Verwalten Ihrer Abonnements](manage-vs-subscriptions.md)
 ### Vorteile
 #### Tools
 ##### [Azure-Guthaben](vs-azure.md)
