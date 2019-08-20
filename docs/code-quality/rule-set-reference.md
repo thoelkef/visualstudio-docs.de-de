@@ -9,32 +9,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550832"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585238"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
 
-Wenn Sie die Legacy-Analyse für Projekte mit verwaltetem Code in Visual Studio konfigurieren, können Sie aus einer Liste integrierter *Regelsätze*auswählen. Sie können entweder eine der folgenden integrierten Regelsätze verwenden, oder Sie können [Anpassen eines Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) an Ihre projektanforderungen anpassen.
-
-Die Themen in diesem Abschnitt beschreiben die integrierte Regelsätze Mengen und die Regeln (oder Warnungen), die sie enthalten.
+Wenn Sie die Legacy-Analyse für Projekte mit verwaltetem Code in Visual Studio konfigurieren, können Sie aus einer Liste integrierter *Regelsätze*auswählen. Einige Regeln sind in mehr als einem der integrierten Regelsätze enthalten, z. b. enthält der Regelsatz "grundlegende Regeln für Richtigkeit" Regeln, die im Regelsatz für verwaltete Empfohlene Regeln enthalten sind.
 
 > [!NOTE]
 > Die Regelsätze in diesem Abschnitt beziehen sich auf die Legacy-Analyse. Weitere Informationen zu Regelsätzen, die für Code Analyzer-Pakete verfügbar sind, finden Sie unter [Verwenden von Regelsätzen mit Code Analyse](analyzer-rule-sets.md)Modulen.
 
-- [Regelsatz für alle Regeln](all-rules-rule-set.md)
-- [Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code](basic-correctness-rules-rule-set-for-managed-code.md)
-- [Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code](basic-design-guideline-rules-rule-set-for-managed-code.md)
-- [Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code](extended-correctness-rules-rule-set-for-managed-code.md)
-- [Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code](extended-design-guidelines-rules-rule-set-for-managed-code.md)
-- [Regelsatz für Globalisierungsregeln für verwalteten Code](globalization-rules-rule-set-for-managed-code.md)
-- [Regelsatz für verwaltete Mindestregeln für verwalteten Code festlegen](managed-minimum-rules-rule-set-for-managed-code.md)
-- [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](managed-recommended-rules-rule-set-for-managed-code.md)
-- [Regelsatz für gemischte Mindestregeln](mixed-minimum-rules-rule-set.md)
-- [Regelsatz für gemischte empfohlene Mindestregeln](mixed-recommended-rules-rule-set.md)
-- [Regelsatz für systemeigene Mindestregeln](native-minimum-rules-rule-set.md)
-- [Regelsatz für systemeigene empfohlene Regeln](native-recommended-rules-rule-set.md)
-- [Regelsatz für Sicherheitsregeln für verwalteten Code](security-rules-rule-set-for-managed-code.md)
+Sie können entweder eine der folgenden integrierten Regelsätze verwenden, oder Sie können [Anpassen eines Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) an Ihre projektanforderungen anpassen. Wenn Sie mehrere Regelsätze einschließen, die dieselbe Regel in einem benutzerdefinierten Regelsatz enthalten, wird diese Regel nur einmal im benutzerdefinierten Regelsatz angezeigt.
+
+Die Themen in diesem Abschnitt beschreiben die integrierte Regelsätze Mengen und die Regeln (oder Warnungen), die sie enthalten.
+
+| Regelsatz | Enthaltene Regeln |
+| - | - |
+| [Alle Regeln](all-rules-rule-set.md) | Enthält alle verfügbaren verwalteten C++ und-Regeln |
+| [Grundlegende Richtigkeit von Regeln](basic-correctness-rules-rule-set-for-managed-code.md) | Schließt verwaltete Empfohlene Regeln sowie Regeln für Logic Errors und Framework-Verwendung ein. |
+| [Erweiterte Regeln für Richtigkeit](extended-correctness-rules-rule-set-for-managed-code.md) | Enthält grundlegende Regeln zur Richtigkeit (einschließlich verwalteter empfohlener Regeln) sowie weitere Regeln für Logikfehler und die frameworkverwendung. |
+| [Grundlegende Regeln für Entwurfs Richtlinien](basic-design-guideline-rules-rule-set-for-managed-code.md) | Umfasst verwaltete Empfohlene Regeln und Regeln, mit denen sichergestellt werden kann, dass Code einfach zu lesen, zu verstehen und zu warten |
+| [Regeln für erweiterte Entwurfs Richtlinien](extended-design-guidelines-rules-rule-set-for-managed-code.md) | Umfasst grundlegende Regeln für die Entwurfsrichtlinie (einschließlich verwalteter empfohlener Regeln) sowie weitere wart barkeits Regeln, die sich auf die Benennung konzentrieren |
+| [Globalisierungsregeln](globalization-rules-rule-set-for-managed-code.md) | Schließt Regeln für Globalisierungs Probleme ein. |
+| [Verwaltete Mindestregeln](managed-minimum-rules-rule-set-for-managed-code.md) | Enthält vier Regeln für kritische Probleme mit verwaltetem Code. |
+| [Verwaltete Empfohlene Regeln](managed-recommended-rules-rule-set-for-managed-code.md) | Schließt verwaltete Mindestregeln und mehr Regeln für kritische Probleme mit verwaltetem Code ein. |
+| [Gemischte Mindestregeln](mixed-minimum-rules-rule-set.md) | Schließt Regeln für kritische Probleme im C++ Code für CLR ein. |
+| [Gemischte Empfohlene Regeln](mixed-recommended-rules-rule-set.md) | Schließt gemischte minimal Regeln und mehr Regeln für kritische Probleme im C++ Code für CLR ein. |
+| [Systemeigene Mindestregeln](native-minimum-rules-rule-set.md) | Enthält Regeln für kritische Probleme in nativem Code. |
+| [Systemeigene Empfohlene Regeln](native-recommended-rules-rule-set.md) | Umfasst systemeigene Mindestregeln und mehr Regeln für kritische Probleme in System eigenem Code |
+| [Sicherheitsregeln](security-rules-rule-set-for-managed-code.md) | Enthält Regeln zum Ermitteln von Sicherheitsrisiken. |

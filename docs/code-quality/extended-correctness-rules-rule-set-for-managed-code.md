@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923998"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585109"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code
+
 Der Regelsatz für erweiterte Richtigkeit von Regeln von Microsoft maximiert die Fehler bei der Logik-und frameworkverwendung, die von der Code Analyse gemeldet werden. Zusätzlicher Schwerpunkt liegt auf bestimmten Szenarien, wie z. b. com-Interoperabilität und mobilen Anwendungen. Sie sollten diesen Regelsatz einschließen, wenn eines dieser Szenarien auf Ihr Projekt zutrifft, oder um weitere Probleme in Ihrem Projekt zu finden.
 
-Der Regelsatz für die erweiterten Regeln für Richtigkeit von Microsoft enthält die Regeln, die im Regelsatz Microsoft Basic-Regeln für Richtigkeit enthalten sind. Die grundlegenden Regeln für Richtigkeit enthalten die Regeln, die im Regelsatz für die empfohlenen Mindestregeln von Microsoft enthalten sind. Weitere Informationen finden Sie unter [Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) und [Regelsatz für verwaltete Empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
+Der Regelsatz für die erweiterten Regeln für Richtigkeit von Microsoft enthält die Regeln, die im Regelsatz [grundlegender Regeln](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) für die Richtigkeit von Regeln enthalten sind, der die Regeln im Regelsatz für [verwaltete Empfohlene Regeln](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) enthält.
 
 In der folgenden Tabelle werden alle Regeln im Regelsatz für erweiterte Regeln für Richtigkeit von Microsoft beschrieben.
 

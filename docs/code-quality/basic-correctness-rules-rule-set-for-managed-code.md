@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919570"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585014"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code
-Der Regelsatz für die grundlegenden Regeln für Richtigkeit konzentriert sich auf logische Fehler und häufige Fehler bei der Verwendung von Framework-APIs. Die grundlegenden Regeln für Richtigkeit enthalten die Regeln im Regelsatz für empfohlene Regeln. Weitere Informationen finden Sie unter [Regelsatz für verwaltete Empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) . Sie sollten diesen Regelsatz einschließen, um die Liste der Warnungen zu erweitern, die von den empfohlenen Mindestregeln gemeldet werden.
+
+Der Regelsatz für die grundlegenden Regeln für Richtigkeit konzentriert sich auf logische Fehler und häufige Fehler bei der Verwendung von Framework-APIs. Die grundlegenden Regeln für Richtigkeit enthalten die Regeln im Regelsatz [verwaltete Empfohlene Regeln](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 In der folgenden Tabelle werden alle Regeln im Regelsatz für Microsoft Basic-Regeln für Richtigkeit beschrieben.
 

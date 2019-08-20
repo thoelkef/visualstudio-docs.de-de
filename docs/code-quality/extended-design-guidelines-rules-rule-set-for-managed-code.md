@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975903"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585080"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 
-Der Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien Erweitert auf die grundlegenden Regeln für Entwurfsrichtlinien, die Fehler bezüglich Verwendbarkeit und wartbarkeit zu maximieren, die gemeldet werden. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz Wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie höchste Standards für das Schreiben von Code, der leicht zu warten ist erzwingen möchten.
+Der Regelsatz für Regeln für erweiterte Entwurfs Richtlinien von Microsoft erweitert die grundlegenden Regeln für Entwurfs Richtlinien, um die gemeldeten Nutzbarkeits-und verwaltbarkeitsprobleme zu maximieren. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz einschließen, wenn Ihr Projekt Bibliotheks Code enthält, oder wenn Sie die höchsten Standards für das Schreiben von Code erzwingen möchten, der leicht zu verwalten ist.
 
-Die erweiterten Entwurfsrichtlinienregeln umfassen alle von der Microsoft grundlegenden Regeln für Entwurfsrichtlinien. Die grundlegenden Regeln für Entwurfsrichtlinien umfassen alle Microsoft-Mindestregeln. Weitere Informationen finden Sie unter [Regelsatz einfachen Entwurfsrichtlinienregeln für verwalteten Code](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) und [Regelsatz für verwaltete empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Die Regeln für erweiterte Entwurfs Richtlinien enthalten alle Regeln im Regelsatz [grundlegender Regeln für Entwurfs Richtlinien](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , der die Regeln im Regelsatz [verwaltete Empfohlene Regeln](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) enthält.
 
-Die folgende Tabelle beschreibt alle Regeln im Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien.
+In der folgenden Tabelle werden alle Regeln im Regelsatz Regeln für erweiterte Entwurfs Richtlinien von Microsoft beschrieben.
 
 |Regel|Beschreibung|
 |----------|-----------------|
@@ -65,7 +65,7 @@ Die folgende Tabelle beschreibt alle Regeln im Regelsatz Microsoft erweiterte Re
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparente Methoden dürfen nur überprüfbare IL enthalten.|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemands erfüllen.|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemand-Anforderungen erfüllen.|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|
