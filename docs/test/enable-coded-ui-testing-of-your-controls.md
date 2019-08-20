@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98eb2df0d846fa542ec01b30ad5abfffa62ff54f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783613"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918262"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 
@@ -26,16 +26,16 @@ Steuerelemente können besser getestet werden, wenn Sie Unterstützung für das 
 
 Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelementen, die während einer Aufzeichnung gefunden werden, und generiert dann Code zur Wiedergabe dieser Sitzung. Wenn Barrierefreiheit vom Steuerelement nicht unterstützt wird, erfasst der Test-Generator der programmierten UI Aktionen wie z.B. Mausklicks anhand von Bildschirmkoordinaten. Bei der Wiedergabe des Tests werden diese Aktionen vom generierten Code an den gleichen Bildschirmkoordinaten ausgeführt. Wenn das Steuerelement bei der Wiedergabe des Tests an einer anderen Stelle auf dem Bildschirm angezeigt wird, kann der generierte Code die entsprechende Aktion nicht ausführen. Wenn Sie Barrierefreiheit für das Steuerelement nicht implementieren, kann dies möglicherweise zu Fehlern führen, wenn die Testwiedergabe auf unterschiedlichen Bildschirmkonfigurationen oder in unterschiedlichen Umgebungen erfolgt oder Änderungen am Benutzeroberflächenlayout vorgenommen wurden.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
- Wenn Sie Barrierefreiheit implementieren, wird diese vom Test-Generator der programmierten UI im Rahmen der Testaufzeichnung für das Erfassen von Informationen zum Steuerelement verwendet. Bei der anschließenden Ausführung des Tests erfolgt die Wiedergabe der entsprechenden Ereignisse durch den generierten Code auf dem Steuerelement, auch wenn sich dieses an einer anderen Stelle der Benutzeroberfläche befindet. Testautoren können mithilfe der grundlegenden Eigenschaften des Steuerelements auch Assert-Vorgänge erstellen.
+Wenn Sie Barrierefreiheit implementieren, wird diese vom Test-Generator der programmierten UI im Rahmen der Testaufzeichnung für das Erfassen von Informationen zum Steuerelement verwendet. Bei der anschließenden Ausführung des Tests erfolgt die Wiedergabe der entsprechenden Ereignisse durch den generierten Code auf dem Steuerelement, auch wenn sich dieses an einer anderen Stelle der Benutzeroberfläche befindet. Testautoren können mithilfe der grundlegenden Eigenschaften des Steuerelements auch Assert-Vorgänge erstellen.
 
- ![CUIT&#95;Record](../test/media/cuit_record.png)
+![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>So unterstützen Sie Aufzeichnung und Wiedergabe, Eigenschaftenvalidierung und Navigation für ein Windows Forms-Steuerelement
- Barrierefreiheit kann wie in der folgenden Prozedur dargestellt implementieren werden. Ein ausführliche Anleitung finden Sie unter <xref:System.Windows.Forms.AccessibleObject>.
+Barrierefreiheit kann wie in der folgenden Prozedur dargestellt implementieren werden. Ein ausführliche Anleitung finden Sie unter <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1. Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.
 
@@ -75,7 +75,7 @@ Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelem
 
 Nach dem Implementieren grundlegender Unterstützung für die Aufzeichnung und Wiedergabe sowie die Eigenschaftenvalidierung können Sie die benutzerdefinierten Eigenschaften des Steuerelements für Tests der programmierten UI verfügbar machen, indem Sie ein <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>-Plug-In implementieren. Beispielsweise wird von der folgenden Prozedur ein Eigenschaftenanbieter erstellt, mit dem Tests der programmierten UI auf die Zustandseigenschaft der untergeordneten CurveLegend-Steuerelemente des Diagrammsteuerelements zugreifen können:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>So unterstützen Sie die Validierung benutzerdefinierter Eigenschaften
 
@@ -159,15 +159,15 @@ Wenn ein Eigenschaftenanbieter für den Zugriff auf die benutzerdefinierten Eige
 
 ## <a name="support-intent-aware-actions-by-implementing-an-action-filter"></a>Unterstützen absichtsbewusster Aktionen durch Implementieren eines Aktionsfilters
 
- Beim Aufzeichnen eines Tests in Visual Studio werden alle Maus- und Tastaturereignisse erfasst. In einigen Fällen kann jedoch der Zweck der durch die Reihe von Maus- und Tastaturereignissen bewirkten Aktion verloren gehen. Wenn das Steuerelement beispielsweise AutoVervollständigen unterstützt, kann bei der Wiedergabe des Tests in einer anderen Umgebung der gleiche Satz von Maus- und Tastaturereignissen einen abweichenden Wert ergeben. Sie können ein Aktionsfilter-Plug-In hinzufügen, von dem die Reihe der Tastatur- und Mausereignisse durch eine einzelne Aktion ersetzt wird. Dadurch können Sie die zur Auswahl eines Werts erforderliche Reihe von Tastatur- und Mausereignissen durch eine einzelne Aktion zum Festlegen des Werts ersetzen. Auf diese Weise können die aufgrund von AutoVervollständigen in verschiedenen Umgebungen auftretenden Unterschiede bei Tests der codierten UI vermieden werden.
+Beim Aufzeichnen eines Tests in Visual Studio werden alle Maus- und Tastaturereignisse erfasst. In einigen Fällen kann jedoch der Zweck der durch die Reihe von Maus- und Tastaturereignissen bewirkten Aktion verloren gehen. Wenn das Steuerelement beispielsweise AutoVervollständigen unterstützt, kann bei der Wiedergabe des Tests in einer anderen Umgebung der gleiche Satz von Maus- und Tastaturereignissen einen abweichenden Wert ergeben. Sie können ein Aktionsfilter-Plug-In hinzufügen, von dem die Reihe der Tastatur- und Mausereignisse durch eine einzelne Aktion ersetzt wird. Dadurch können Sie die zur Auswahl eines Werts erforderliche Reihe von Tastatur- und Mausereignissen durch eine einzelne Aktion zum Festlegen des Werts ersetzen. Auf diese Weise können die aufgrund von AutoVervollständigen in verschiedenen Umgebungen auftretenden Unterschiede bei Tests der codierten UI vermieden werden.
 
 ### <a name="to-support-intent-aware-actions"></a>So unterstützen Sie absichtbewusste Aktionen
 
 ![CUIT&#95;Actions](../test/media/cuit_actions.png)
 
-1. Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> abgeleitete Aktionsfilterklasse, von der die Eigenschaften <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> und <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A> überschrieben werden.
+1. Implementieren Sie eine Aktionsfilterklasse, die von [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) abgeleitet ist und die Eigenschaften [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) und [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)) überschreibt.
 
-1. Überschreiben Sie <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. In diesem Beispiel wird eine Doppelklickaktion durch eine Einzelklickaktion ersetzt.
+1. Setzen Sie [ProcessRule](/previous-versions/visualstudio/visual-studio-2012/dd987281(v=vs.110)) außer Kraft. In diesem Beispiel wird eine Doppelklickaktion durch eine Einzelklickaktion ersetzt.
 
 1. Fügen Sie den Aktionsfilter der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A>-Methode des Erweiterungspakets hinzu.
 

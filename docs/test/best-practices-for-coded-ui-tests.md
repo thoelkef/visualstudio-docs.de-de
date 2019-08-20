@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 896531325b3630b97a5cc076955fae6201defac6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826080"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870208"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bewährte Methoden für Tests der programmierten UI
 
@@ -42,11 +42,11 @@ Halten Sie sich an die folgenden Richtlinien, um einen flexiblen Test der progra
 
 - Wenn sich die Benutzeroberfläche (User Interface, UI) ändert, zeichnen Sie die Testmethoden oder die Assertionsmethoden erneut auf, oder zeichnen Sie die betroffenen Abschnitte einer vorhandenen Testmethode erneut auf.
 
-- Erstellen Sie eine separate <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Datei für jedes Modul in der getesteten Anwendung. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Erstellen Sie eine separate [UIMap](/previous-versions/dd580454(v=vs.140))-Datei für jedes Modul in der getesteten Anwendung. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - Verwenden Sie in der getesteten Anwendung aussagekräftige Namen, wenn Sie Benutzeroberflächen-Steuerelemente erstellen. Aussagekräftige Namen schaffen mehr Klarheit und Benutzerfreundlichkeit für die automatisch generierten Steuerelementnamen.
 
-- Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse, der sich in der *UIMap.cs*-Datei befindet. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
+- Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der [UIMap](/previous-versions/dd580454(v=vs.140))-Klasse, der sich in der *UIMap.cs*-Datei befindet. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
 
 - Wenn Sie direkt mit der API codieren, verwenden Sie so oft wie möglich die Eigenschaften und Methoden in den Klassen, die in der *UIMap.Designer.cs*-Datei in Ihrem Code generiert wurden. Diese Klassen machen Ihre Arbeit einfacher und zuverlässiger und helfen Ihnen, produktiver zu sein.
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>Siehe auch
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md)

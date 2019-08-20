@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365334"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870774"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -85,6 +85,8 @@ Einzelheiten finden Sie unter [Automatisieren der Visual Studio-Installation mit
 ## <a name="copy-the-layout-to-a-network-share"></a>Kopieren des Layouts in eine Netzwerkfreigabe
 
 Hosten Sie das Layout in einer Netzwerkfreigabe, damit es auf anderen Computern ausgeführt werden kann.
+
+Im folgenden Beispiel wird [xcopy](/windows-server/administration/windows-commands/xcopy/) verwendet. Sie können auch [robocopy](/windows-server/administration/windows-commands/robocopy/) verwenden, wenn Sie möchten.  
 
 ::: moniker range="vs-2017"
 

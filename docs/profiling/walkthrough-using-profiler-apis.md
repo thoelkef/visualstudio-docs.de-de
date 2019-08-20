@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428127"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870276"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 
@@ -37,7 +37,7 @@ In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die
  Für nativen Code befinden sich die Visual Studio-Profiler-APIs in der Datei *VSPerf.dll*. Die Headerdatei *VSPerf.h* und die Importbibliothek *VSPerf.lib* befinden sich im Verzeichnis *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
  ::: moniker-end
 
- Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Diese DLL befindet sich im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Profiler>.
+ Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Diese DLL befindet sich im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Weitere Informationen finden Sie unter [Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
  In dieser exemplarischen Vorgehensweise wird angenommen, dass Ihre Entwicklungsumgebung so konfiguriert ist, dass sie Debuggen und Sampling unterstützt. In den folgenden Artikeln wird eine Übersicht über diese Vorgehensweise gegeben:
@@ -170,7 +170,7 @@ DataCollection.CurrentId);
 
 ## <a name="see-also"></a>Siehe auch
 
-- <xref:Microsoft.VisualStudio.Profiler>
+- [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Erste Schritte](../profiling/getting-started-with-performance-tools.md)
 - [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

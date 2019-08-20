@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb6a629b5ff0ddddeead8f9f53d43580aba084a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e138f253a734608140533de8019d2e5fb7577a7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897823"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924342"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders
 
@@ -48,15 +48,15 @@ In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau 
 > [!NOTE]
 > In dieser Abbildung wird eine orangene Farbe ausgewählt, um den Effekt des Shaders besser zu veranschaulichen. Da die Vorschauform jedoch keine Position im Raum hat, kann der Shader nicht vollständig im Voraus im Shader-Designer angeschaut werden. Der Shader muss in einer echten Szene vorausgeschaut werden, um den vollen Effekt zu demonstrieren.
 
- ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-gradient-effect-graph.png)
+![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-gradient-effect-graph.png)
 
- Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Vorschau von Shadern verwenden](../designers/shader-designer.md) in **Shader-Designer**.
+Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Vorschau von Shadern verwenden](../designers/shader-designer.md) in **Shader-Designer**.
 
- In der folgenden Abbildung wird die Anwendung des Shaders, der in diesem Dokument beschrieben wird, auf die 3D-Szene unter [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md) veranschaulicht. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.
+In der folgenden Abbildung wird die Anwendung des Shaders, der in diesem Dokument beschrieben wird, auf die 3D-Szene unter [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md) veranschaulicht. Die Farbintensität erhöht sich durch die Höhe der Punkte im Raum.
 
- ![Farbverlauf in einem 3D-Geländemodell](../designers/media/digit-gradient-effect-result.png)
+![Farbverlauf in einem 3D-Geländemodell](../designers/media/digit-gradient-effect-result.png)
 
- Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,18 +12,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317650"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923848"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Erstellen einer OpenGL ES-Anwendung für Android und iOS
 
 Sie können Visual Studio-Projekte und -Projektmappen für iOS-Apps und Android-Apps erstellen, die gemeinsamen Code nutzen. Dieser Artikel führt Sie durch eine Projektmappenvorlage, die eine einfache iOS-App und eine Android Native Activity-App erstellt. Die Apps verwenden gemeinsamen C++-Code, der OpenGL ES verwendet, um denselben animierten rotierenden Cube auf jeder Plattform anzuzeigen. OpenGL ES (OpenGL for Embedded Systems oder GLES) ist eine 2D- und 3D-Grafik-API, die auf zahlreichen mobilen Geräten unterstützt wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Bevor Sie eine OpenGL ES-App für iOS und Android erstellen, vergewissern Sie sich, dass alle Systemanforderungen erfüllt sind. Installieren Sie die Workload „Mobile-Entwicklung mit C++“ im Visual Studio-Installer, sofern dies nicht bereits erfolgt ist. Zur Entwicklung für iOS schließen Sie die optionalen Tools für die Entwicklung für iOS mit C++ ein. Zur Entwicklung für Android installieren Sie die Tools für die Entwicklung für Android mit C++ sowie die erforderlichen Drittanbietertools: Android NDK, Apache Ant, Google Android Emulator und Intel Hardware Accelerated Execution Manager. Als Nächstes konfigurieren Sie Intel HAXM und den Android-Emulator für die Ausführung auf Ihrem System. Weitere Informationen und ausführliche Anweisungen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Zum Entwickeln und Testen der iOS-App benötigen Sie einen Mac-Computer, der gemäß der Installationsanleitung eingerichtet wurde. Weitere Informationen zum Einrichten der iOS-Entwicklung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
@@ -158,7 +158,7 @@ Um eine iOS-App auf einem iOS-Gerät bereitzustellen, müssen Sie auf dem Mac au
 1. Wählen Sie auf der Symbolleiste Ihr iOS-Gerät aus, um die App auf dem Gerät auszuführen, das an Ihren Mac angeschlossen ist. Wenn die App nicht gestartet wird, vergewissern Sie sich, dass das Gerät der bereitgestellten Anwendung die Berechtigung für die Ausführung auf dem Gerät erteilt hat. Diese Berechtigung kann auf dem Gerät festgelegt werden: **Einstellungen** > **Allgemein** > **Geräteverwaltung**. Wählen Sie das Konto Ihrer Developer-App aus, legen Sie das Konto als vertrauenswürdig fest, und überprüfen Sie die App. Versuchen Sie erneut, die App in Visual Studio auszuführen.
 
    ![iOS-App auf iOS-Gerät](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Visual Studio-Debugger verwenden, um lokale Variablen zu prüfen, die Aufrufliste anzuzeigen und Werte zu überwachen.
 
    ![Debugger am Haltepunkt in iOS-App](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

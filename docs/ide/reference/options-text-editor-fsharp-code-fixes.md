@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778540"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870746"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>Optionen, Text-Editor, F#, Codekorrekturen
+# <a name="options-text-editor--f--code-fixes"></a>Optionen: Text-Editor > F# > Codekorrekturen
 
-Verwenden Sie die Optionenseite **Codekorrekturen**, um die Einstellungen festzulegen, mit denen Sie Codefehler identifizieren und Lösungen anbieten können. Wenn Sie auf die Optionsseite zugreifen möchten, klicken Sie auf **Tools** > **Optionen** und anschließend auf **Text-Editor** > **F#** > **Codekorrekturen**.
+Verwenden Sie die Optionenseite „Codekorrekturen“, um die Einstellungen festzulegen, mit denen Sie Codefehler identifizieren und Lösungen anbieten können. Wenn Sie auf die Optionsseite zugreifen möchten, klicken Sie auf **Tools** > **Optionen** und anschließend auf **Text-Editor** > **F#**  > **Codekorrekturen**.
 
 ## <a name="code-fixes"></a>Codekorrekturen
 
 - **Namen vereinfachen (Unnötige Qualifizierer entfernen)**
 
-   Wenn dieses Kontrollkästchen aktiviert ist, werden voll qualifizierte Namen vereinfacht, wenn die Qualifizierer nicht erforderlich sind, z.B. für ein Mitglied eines häufig verwendeten Namespaces.
+  Wenn dieses Kontrollkästchen aktiviert ist, werden voll qualifizierte Namen vereinfacht, wenn die Qualifizierer nicht erforderlich sind, z.B. für ein Mitglied eines häufig verwendeten Namespaces.
 
 - **Offenen Anweisungen immer auf der obersten Ebene platzieren**
 
-   Wenn dieses Kontrollkästchen aktiviert ist und Sie eine offene Anweisung in den Code eingeben, wird sie auf der obersten Ebene platziert.
+  Wenn dieses Kontrollkästchen aktiviert ist und Sie eine `open`-Anweisung in den Code eingeben, wird sie auf der obersten Ebene platziert.
 
 - **Nicht verwendete offene Anweisungen entfernen**
 
-   Wenn dieses Kontrollkästchen aktiviert ist, werden offene Anweisungen in der aktuellen Datei, die nicht verwendet werden, entfernt.
+  Wenn dieses Kontrollkästchen aktiviert ist, werden Dokumente auf unbenutzte `open`-Anweisungen analysiert, und es wird ein Glühbirnensymbol für eine [Schnelle Aktion](../quick-actions.md) mit einer Aktion zum Entfernen aller unbenutzten `open`-Anweisungen angezeigt.
 
 - **Analysieren und Lösungen für nicht verwendete Werte vorschlagen**
 
-   Wenn dieses Kontrollkästchen aktiviert ist, erkennt das Tool einen Wert, der nicht im Code verwendet wird. Wenn Sie dann mit der Maus über den unbenutzten Wert fahren, wird empfohlen, wie Sie den Wert verwenden können.
+  Wenn dieses Kontrollkästchen aktiviert ist, erkennt das Tool einen Wert, der nicht im Code verwendet wird. Wenn Sie dann mit der Maus über den unbenutzten Wert fahren, wird empfohlen, wie Sie den Wert verwenden können.
 
 ## <a name="see-also"></a>Siehe auch
 

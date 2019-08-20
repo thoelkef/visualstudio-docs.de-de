@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 74732249f5a82974f3df66df4b95357cdcf71c79
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826285"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925809"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -150,25 +150,19 @@ Die drei P12-Dateien in diesem Ordner enthalten jeweils ein Zwischen- und ein St
   * Stammzertifikat: **Microsoft Root Certificate Authority**
     * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 
-**Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden.
+**Update:** Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden. Diese Zertifikate werden in CER-Dateien anstelle von. P12 gespeichert.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.p12** enthält:
-  * Zwischenzertifikat: **Microsoft Code Signing PCA 2011**
-    * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
+* **ManifestSignCertificates.cer** enthält:
   * Stammzertifikat: **Microsoft Root Certificate Authority 2011**
     * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
-* **ManifestCounterSignCertificates.p12** enthält:
-  * Zwischenzertifikat: **Microsoft Time-Stamp PCA 2010**
-    * Nicht erforderlich Wenn Sie dieses Zertifikat haben, verbessert es die Leistung in einigen Szenarios.
+* **ManifestCounterSignCertificates.cer** enthält:
   * Stammzertifikat: **Microsoft Root Certificate Authority 2010**
     * Ist auf Systemen unter Windows 7 Service Pack 1 erforderlich, auf denen nicht die aktuellsten Windows Updates installiert sind
-* **Vs_installer_opc.SignCertificates.p12** enthält:
-  * Zwischenzertifikat: **Microsoft Code Signing PCA**
-    * Auf allen Systemen erforderlich. Beachten Sie, dass Systeme mit allen Windows-Updates möglicherweise nicht über dieses Zertifikat verfügen.
+* **Vs_installer_opc.SignCertificates.cer** enthält:
   * Stammzertifikat: **Microsoft Root Certificate Authority**
     * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 

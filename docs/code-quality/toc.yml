@@ -1,10 +1,10 @@
 - name: Dokumentation zur Codeanalyse
   href: index.md
-- name: Codeanalyse für verwalteten Code
+- name: Analysieren von verwaltetem Code
   items:
     - name: Übersicht
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn-Analysetools (Quellanalyse)
+    - name: Codeanalyse
       items:
         - name: Übersicht
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: FAQ
           href: analyzers-faq.md
-    - name: Binäre Analysetools (statische Codeanalyse)
+    - name: Legacyanalyse
       items:
         - name: Übersicht
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: Exemplarische Vorgehensweise für eine statische Codeanalyse
+        - name: Exemplarische Vorgehensweise für eine Legacyanalyse
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migration
           href: fxcop-analyzers.yml
-        - name: Manuelles Ausführen der Codeanalyse
+        - name: Manuelles Ausführen der Legacyanalyse
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Konfiguration
           items:
-            - name: Konfigurieren der Codeanalyse für binäre Analysetools
+            - name: Konfigurieren der Legacyanalyse
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Aktivieren der automatischen Codeanalyse
+            - name: Aktivieren der automatischen Legacycodeanalyse
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: Anpassen des Codeanalysewörterbuchs
+            - name: Anpassen des Legacycodeanalysewörterbuchs
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Unterdrücken
           items:
-            - name: Unterdrücken von Warnungen zur statischen Codeanalyse für generierten Code
+            - name: Unterdrücken von Legacyanalysewarnungen für generierten Code
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Anwendungsfehler bei der Codeanalyse
+        - name: Anwendungsfehler bei der Legacyanalyse
           items:
-            - name: Richtlinienfehler bei der Codeanalyse
+            - name: Richtlinienfehler bei der Legacyanalyse
               href: code-analysis-policy-errors.md
             - name: Übersicht
               href: code-analysis-application-errors.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: FAQ
           href: fxcop-analyzers-faq.md
-    - name: Migrieren von der statischen Analyse zu FxCop-Analysetools
+    - name: Migrieren von der Legacyanalyse zu FxCop-Analysetools
       items:
         - name: Übersicht
           href: fxcop-analyzers.yml
@@ -698,6 +698,10 @@
                   href: ca5378.md
                 - name: 'CA5386: Vermeiden Sie die Hartcodierung des SecurityProtocolType-Werts.'
                   href: ca5386.md
+                - name: 'CA5397: Verwenden Sie keine veralteten SslProtocols-Werte.'
+                  href: ca5397.md
+                - name: 'CA5398: Vermeiden Sie hartcodierte SslProtocols-Werte.'
+                  href: ca5398.md
             - name: Verwendungswarnungen
               items:
                 - name: Übersicht
@@ -791,7 +795,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: Automatisches Anhalten von Features
               href: automatic-feature-suspension.md
-- name: Codeanalyse für C/C++
+- name: Analysieren von C/C++-Code
   items:
     - name: Übersicht
       displayName: C++ code analysis
