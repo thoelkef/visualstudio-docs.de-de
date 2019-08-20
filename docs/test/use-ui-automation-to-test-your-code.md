@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824694"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926646"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Testen Ihres Codes mit dem Test der programmierten UI
 
@@ -158,7 +158,7 @@ Wenn Sie die Anwendung, den Browser oder die Datenbank nicht für jeden Test sep
 
 ## <a name="validate-the-properties-of-ui-controls"></a>Überprüfen der Eigenschaften von Steuerelementen der Benutzeroberfläche
 
-Mithilfe des **Generators für den Test der programmierten UI** können Sie der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse für den Test ein Steuerelement für die Benutzeroberfläche (UI) hinzufügen oder Code für eine Validierungsmethode generieren, in der eine Assertion für ein UI-Steuerelement verwendet wird.
+Mithilfe des **Generators für den Test der programmierten UI** können Sie der [UIMap](/previous-versions/dd580454(v=vs.140))-Klasse für den Test ein Steuerelement für die Benutzeroberfläche (UI) hinzufügen oder Code für eine Validierungsmethode generieren, in der eine Assertion für ein UI-Steuerelement verwendet wird.
 
 Wählen Sie zum Generieren von Assertionen für die UI-Steuerelemente im **Test-Generator der programmierten UI** das Tool **Assertionen hinzufügen** aus, und ziehen Sie es auf das Steuerelement der getesteten Anwendung, die Sie überprüfen möchten. Lassen Sie die Maustaste los, sobald das Feld das Steuerelement enthält. Der Code der Steuerelementklasse wird sofort in der Datei *UIMap.Designer.cs* erstellt.
 
@@ -402,10 +402,10 @@ Um für UI-Steuerelemente bestimmte Eigenschaftswerte abzurufen und festzulegen,
 
 Mit Steuerelementen, die von <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> abgeleitet werden (z.B. [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) oder [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)), können Sie die jeweiligen Eigenschaftswerte direkt abrufen oder festlegen. Der folgende Code zeigt einige Beispiele:
 
- ```csharp
- int i = myHtmlList.ItemCount;
- myWinCheckBox.Checked = true;
- ```
+```csharp
+int i = myHtmlList.ItemCount;
+myWinCheckBox.Checked = true;
+```
 
 ### <a name="to-get-properties-from-ui-test-controls"></a>So rufen Sie Eigenschaften aus UI-Teststeuerelementen ab
 
@@ -455,7 +455,6 @@ Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu autom
 
 - [Aufzeichnen und Wiedergeben von manuellen Tests](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Erstellen eines Tests der programmierten UI zum Testen einer UWP-App](test-uwp-app-with-coded-ui-test.md)

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483554"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870868"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -33,7 +33,7 @@ Melden Sie sich mit einem Microsoft-Konto oder einem Unternehmenskonto bei Visua
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Zugreifen auf Ihr Azure-Konto in Server-Explorer
 
-Drücken Sie **Strg**+**Alt**+**S**, um **Server-Explorer** zu öffnen. Erweitern Sie den Knoten **Azure**. Dann sollten Ihnen die in dem Azure-Konto verfügbaren Ressourcen angezeigt werden, die dem Konto zugeordnet sind, das Sie zur Anmeldung in Visual Studio verwendet haben. Dies sollte in etwa wie folgt aussehen:
+Um den Server-Explorer zu öffnen, wählen Sie **Ansicht** > **Server Explorer** (oder, wenn Sie die „Allgemeinen“ [Umgebungseinstellungen](../ide/environment-settings.md) verwenden, drücken Sie **STRG**+**Alt**+**S**). Erweitern Sie den Knoten **Azure**. Dann sollten Ihnen die in dem Azure-Konto verfügbaren Ressourcen angezeigt werden, die dem Konto zugeordnet sind, das Sie zur Anmeldung in Visual Studio verwendet haben. Dies sollte in etwa wie folgt aussehen:
 
 ![Server-Explorer mit erweitertem Azure-Knoten](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

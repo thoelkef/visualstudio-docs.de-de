@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33b8f0215e09dd43c265c7eb8ba08613132fabbc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001105"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870308"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
 Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](http://go.microsoft.com/fwlink/?LinkId=235405).
@@ -27,7 +27,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
  Die Nebenläufigkeitsschnellansicht macht einen Standardanbieter verfügbar, den Sie zum Generieren von Markern verwenden können. Der Anbieter ist bereits zusammen mit der Nebenläufigkeitsschnellansicht registriert. Sie müssen nichts weiter unternehmen, damit die Marker in der Benutzeroberfläche angezeigt werden.
 
 ### <a name="c-and-visual-basic"></a>C# und Visual Basic
- Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbieter, indem Sie <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> aufrufen. Dadurch werden vier Funktionen zum generieren von Markern verfügbar: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> und <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
+ Verwenden Sie in C#, Visual Basic und anderem verwalteten Code den Standardanbieter, indem Sie Methoden in der [Marker](/previous-versions/hh694099(v=vs.140))-Klasse aufrufen. Dadurch werden vier Methoden zum Generieren von Markern verfügbar: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)) und [WriteAlert](/previous-versions/hh694180(v=vs.140)). Für diese Funktionen gibt es mehrere Überladungen, je nachdem, ob Sie Standardwerte für die Eigenschaften verwenden möchten.  Die einfachste Überladung verwendet nur einen Zeichenfolgenparameter, der die Beschreibung des Ereignisses angibt. Die Beschreibung wird in den Berichten der Nebenläufigkeitsschnellansicht angezeigt.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>So fügen Sie einem C#- oder Visual Basic-Projekt Unterstützung für SDK hinzu
 
@@ -76,7 +76,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>So verwenden Sie einen neuen Markeranbieter in einem C#- oder Visual Basic-Projekt
 
-1. Erstellen eines <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>-Objekts  Der Konstruktor nimmt eine GUID an.
+1. Erstellen Sie ein [MarkerWriter](/previous-versions/hh694138(v=vs.140)) -Objekt.  Der Konstruktor nimmt eine GUID an.
 
 2. Öffnen Sie zum Registrieren des Anbieters das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) der Nebenläufigkeitsschnellansicht.  Wählen Sie die Registerkarte **Marker**, und wählen Sie anschließend die Schaltfläche **Neuen Anbieter hinzufügen** aus. Geben Sie im Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) die GUID ein, die verwendet wurde, um den Anbieter und eine Beschreibung des Anbieters zu erstellen.
 
@@ -88,7 +88,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>So verwenden Sie eine neue Markerserie in einem C#- oder Visual Basic-Projekt
 
-1. Um eine neue <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> zu verwenden, erstellen Sie sie zuerst mithilfe eines <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>-Objekts. Generieren Sie anschließend Markerereignisse direkt aus der neuen Serie.
+1. Um eine neue [MarkerSeries](/previous-versions/hh694127(v=vs.140)) zu verwenden, erstellen Sie sie zuerst mithilfe eines [MarkerWriter](/previous-versions/hh694138(v=vs.140))-Objekts. Generieren Sie anschließend Markerereignisse direkt aus der neuen Serie.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -121,9 +121,9 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 ## <a name="see-also"></a>Siehe auch
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|
 |[C-Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
-|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
+|[Instrumentierung](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
 |[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten|

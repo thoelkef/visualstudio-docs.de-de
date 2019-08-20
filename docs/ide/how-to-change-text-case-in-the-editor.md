@@ -11,19 +11,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e4e5e90e7b808e50f30c3a1d6527cdb7cfb4c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 5f01b16971c85a07923783e97f08a8b91512eef6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605821"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870789"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung im Editor
 
 Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Kleinschreibung von ausgewähltem Text in nur Großbuchstaben oder nur Kleinbuchstaben zu ändern.
 
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehl unterscheiden sich möglicherweise von den in diesem Artikel beschriebenen Dialogfeldern und Menübefehlen, die auf den Entwicklungseinstellungen **Allgemein** basieren. Klicken Sie zum Ändern Ihrer Entwicklungseinstellungen zunächst auf **Tools** > **Einstellungen importieren/exportieren** und anschließend auf **Alle Einstellungen zurücksetzen**.
+> Die angezeigten Dialogfelder und Menübefehl unterscheiden sich möglicherweise von den in diesem Artikel beschriebenen Dialogfeldern und Menübefehlen, die auf den Umgebungseinstellungen **Allgemein** basieren. Klicken Sie zum Ändern Ihrer Umgebungseinstellungen zunächst auf **Tools** > **Einstellungen importieren/exportieren** und anschließend auf **Alle Einstellungen zurücksetzen**.
 
 ## <a name="to-change-text-case"></a>Ändern der Groß- und Kleinschreibung
 
@@ -31,7 +31,7 @@ Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Klein
 
 2. Klicken Sie zum Ändern des Texts in Großbuchstaben auf **Bearbeiten** > **Erweitert** > **In Großbuchstaben umwandeln**, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.
 
-   Klicken Sie zum Ändern des Texts in Kleinbuchstaben auf **Bearbeiten** > **Erweitert** > **In Kleinbuchstaben umwandeln**, oder drücken Sie **STRG**+**U**.
+   Klicken Sie zum Ändern des Texts in Kleinbuchstaben auf **Bearbeiten** > **Erweitert** > **In Kleinbuchstaben umwandeln**, oder drücken Sie **STRG**+**U**. (Wenn Sie den C++-Entwicklungsworkload installiert haben, kann diese Tastenzuordnung von einem anderen Befehl verwendet werden.)
 
 > [!TIP]
 > Wenn Sie die Formatierung der Groß-/Kleinschreibung vor diesen Änderungen wiederherstellen möchten, wählen Sie im Menü **Bearbeiten** **Rückgängig** aus.

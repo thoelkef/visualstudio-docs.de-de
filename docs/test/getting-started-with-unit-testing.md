@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30c67bb85a7cf72090ea37680daa12933c44b0cb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003179"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870169"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
@@ -166,6 +166,8 @@ So erstellen Sie Komponententest für das Framework [NUnit](https://nunit.org/):
 
 4. Fügen Sie dem Projekt, das den Code enthält, den Sie testen möchten, einen Verweis aus dem Testprojekt hinzu.
 
+   Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie anschließend **Hinzufügen** > **Verweis** aus. (Sie können einen Verweis auch über das Kontextmenü des Knotens **Verweise** oder **Abhängigkeiten** hinzufügen.)
+
 5. Fügen Sie Ihrer Testmethode Code hinzu.
 
    ![Hinzufügen von Code zur Codedatei für Ihren Komponententest](media/vs-2019/unit-test-method.png)
@@ -178,4 +180,4 @@ So erstellen Sie Komponententest für das Framework [NUnit](https://nunit.org/):
 * [Create Unit Tests command (Befehl „Komponententests erstellen“)](create-unit-tests-menu.md)
 * [Generieren von Tests mit IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Ausführen von Unittests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
-* [Analysieren von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
