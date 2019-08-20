@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547942"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585134"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Regelsätze für Analysepakete
 
 Vordefinierte Regelsätze sind in einigen nuget Analyzer-Paketen enthalten. Beispielsweise aktivieren oder deaktivieren die Regelsätze, die im nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthalten sind (beginnend mit Version 2.6.2), Regeln basierend auf ihrer Kategorie, z. b. Sicherheit, Benennung oder Leistung. Durch die Verwendung von Regelsätzen können Sie auf einfache Weise nur die Regel Verletzungen erkennen, die eine bestimmte Regel Kategorie betreffen.
 
-Wenn Sie von der veralteten "FxCop"-Analyse zur .NET Compiler Platform basierten Code Analyse migrieren, können Sie mit diesen Regelsätzen weiterhin dieselben Regel Konfigurationen verwenden, die Sie zuvor verwendet haben.
+Wenn Sie von der veralteten "FxCop"-Analyse zur .NET Compiler Platform basierten Code Analyse migrieren, können Sie mit diesen Regelsätzen ähnliche Regel Konfigurationen verwenden, [die Sie zuvor verwendet](rule-set-reference.md)haben.
 
 ## <a name="use-analyzer-package-rule-sets"></a>Verwenden von analysepaketregelsätzen
 
@@ -58,7 +58,7 @@ Die vordefinierten analyseregelsätze enthalten drei RuleSets, die sich auf alle
 
 Außerdem gibt es zwei Regelsätze für jede Kategorie von Regeln im Paket, z. b. Leistung oder Sicherheit. Mit einem Regelsatz werden alle Regeln für die Kategorie aktiviert, und ein Regelsatz berücksichtigt die Standardeinstellungen für Schweregrad und Aktivierung für jede Regel in der Kategorie.
 
-Das nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthält Regelsätze für die folgenden Kategorien, die den für die Legacy Analyse verfügbaren Regelsätzen entsprechen:
+Das nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthält Regelsätze für die folgenden Kategorien:
 
 - Entwurf
 - Dokumentation

@@ -14,12 +14,12 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 - CPP
-ms.openlocfilehash: 2686248a087650f6170b72c8ef9b3a77e2ba275c
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957353"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585368"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Unterstützung für die Erkennung von Visual Studio-Extendern pro Monitor
 
@@ -215,7 +215,7 @@ Wenn ein nicht-WPF-Tool Fenster zur vollständigen Unterstützung von PMA migrie
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-public interface IVsDpiAeware
+public interface IVsDpiAware
 {
     [ComAliasName("Microsoft.VisualStudio.Shell.Interop.VSDPIMode")]
     uint Mode {get;}

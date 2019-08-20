@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459136"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585192"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Regelsatz für Sicherheitsregeln für verwalteten Code
-Sie sollten den Regelsatz Microsoft-Sicherheitsregeln, die Anzahl potenzieller Sicherheitsprobleme zu maximieren, die gemeldet werden, einschließen.
+
+Verwenden Sie den Microsoft-Regelsatz für Sicherheitsregeln für die Legacy Code Analyse, um die Anzahl potenzieller Sicherheitsprobleme zu maximieren, die gemeldet werden.
 
 |Regel|Beschreibung|
 |----------|-----------------|
@@ -54,7 +55,7 @@ Sie sollten den Regelsatz Microsoft-Sicherheitsregeln, die Anzahl potenzieller S
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.|
 |[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|Transparente Methoden dürfen das HandleProcessCorruptingExceptions-Attribut nicht verwenden.|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemands erfüllen.|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemand-Anforderungen erfüllen.|
 |[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|Transparenter Code darf nicht mit LinkDemands geschützt werden.|
 |[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|Transparente Methoden dürfen keine Sicherheitsanforderungen verwenden.|
 |[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|Transparenter Code darf keine Assemblys aus Bytearrays laden.|
@@ -66,13 +67,13 @@ Sie sollten den Regelsatz Microsoft-Sicherheitsregeln, die Anzahl potenzieller S
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Nicht den unsicheren BinaryFormatter zur Deserialisierung verwenden|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|BinaryFormatter.Deserialize nicht ohne Festlegung von BinaryFormatter.Binder aufrufen|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Verwenden Sie keine unsicheren Deserialisierer LosFormatter|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Verwenden Sie keine unsicheren Deserialisierer NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|Führen Sie nicht deserialisiert werden, ohne die erste Einstellung NetDataContractSerializer.Binder|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Stellen Sie sicher, dass vor der Deserialisierung NetDataContractSerializer.Binder festgelegt ist|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Verwenden Sie keine unsicheren Deserialisierer ObjectStateFormatter|
-|[CA2321](ca2321.md)|Führen Sie mit mithilfe einer SimpleTypeResolver JavaScriptSerializer nicht deserialisiert werden|
-|[CA2322](ca2322.md)|Sicherstellen Sie, dass JavaScriptSerializer vor der Deserialisierung nicht mit SimpleTypeResolver initialisiert ist|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Unsicheren Deserialisierer nicht verwenden: LosFormatter|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Unsicheren Deserialisierer nicht verwenden: NetDataContractSerializer|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|Nicht deserialisieren, ohne zuerst NetDataContractSerializer.Binder festzulegen|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Vor dem Deserialisieren sicherstellen, dass NetDataContractSerializer.Binder festgelegt ist|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Unsicheren Deserialisierer nicht verwenden: ObjectStateFormatter|
+|[CA2321](ca2321.md)|Nicht mit JavaScriptSerializer und SimpleTypeResolver deserialisieren|
+|[CA2322](ca2322.md)|Vor dem Deserialisieren sicherstellen, dass JavaScriptSerializer nicht mit SimpleTypeResolver initialisiert ist|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Review code for file path injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen über einen Dateipfad)|

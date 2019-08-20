@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919541"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585083"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
+
 Sie können den Regelsatz Regeln für Microsoft Basic-Entwurfs Richtlinien verwenden, um sich auf das Verständnis und die Verwendung Ihres Codes zu konzentrieren. Sie sollten diesen Regelsatz einschließen, wenn Ihr Projekt Bibliotheks Code enthält, oder wenn Sie bewährte Methoden für Code erzwingen möchten, der leicht zu verwalten ist.
 
-Die grundlegenden Regeln für Entwurfs Richtlinien enthalten alle Regeln im Regelsatz für die Mindestanzahl von Microsoft-Regeln. Eine Liste der minimal Regeln finden Sie unter [Regelsatz für verwaltete Empfohlene Regeln für verwalteten Code](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Die grundlegenden Regeln für Entwurfs Richtlinien enthalten alle Regeln im Regelsatz [verwaltete Empfohlene Regeln](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 In der folgenden Tabelle werden alle Regeln des Regelsatzes Microsoft Basic-Entwurfs Richtlinien Regeln beschrieben.
 
