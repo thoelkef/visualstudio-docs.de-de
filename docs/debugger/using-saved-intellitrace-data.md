@@ -37,7 +37,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
     |**Quelle**|**Weitere Informationen finden Sie unter**|
     |----------------|-------------|
     |Eine IntelliTrace-Sitzung in Visual Studio Enterprise (nicht in Professional oder Community Editions)|[IntelliTrace-Funktionen](../debugger/intellitrace-features.md)|
-    |Microsoft Monitoring Agent, entweder allein oder mit System Center 2012 R2 Operations Manager für ASP.NET-Webanwendungen und SharePoint-Anwendungen, bei der Bereitstellung ausgeführt|-   [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
+    |Microsoft Monitoring Agent, entweder allein oder mit System Center 2012 R2 Operations Manager für ASP.NET-Webanwendungen und SharePoint-Anwendungen, bei der Bereitstellung ausgeführt|-   [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)<br />-   [Neue Funktionen in System Center 2012 R2 – Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> Wie möchten Sie vorgehen?
 
