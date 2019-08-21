@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965549"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490630"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -30,18 +30,38 @@ Führen Sie die folgenden Schritte aus, um Code Coverage anzupassen:
 
 1. Fügen Sie eine Testlaufeinstellungsdatei zu Ihrer Projektmappe hinzu. Wählen sie im **Projektmappen-Explorer** im Kontextmenü Ihrer Projektmappe die Option **Hinzufügen** > **Neues Element** und **XML-Datei** aus. Speichern Sie die Datei mit einem Namen wie z.B. *CodeCoverage.runsettings*.
 
-1. Fügen Sie den Inhalt der Beispieldatei am Ende dieses Artikels hinzu, und passen Sie diesen anschließend wie in den folgenden Abschnitten beschrieben an Ihre Anforderungen an.
+2. Fügen Sie den Inhalt der Beispieldatei am Ende dieses Artikels hinzu, und passen Sie diesen anschließend wie in den folgenden Abschnitten beschrieben an Ihre Anforderungen an.
 
-1. Wählen Sie im Menü **Test** die Option **Testeinstellungen** > **Datei für Testeinstellungen auswählen** aus, um die Testeinstellungsdatei auszuwählen. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile oder in einem Buildworkflow finden Sie unter [Konfigurieren von Komponententests mit einer *RUNSETTINGS*-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Wählen Sie im Menü **Test** die Option **Testeinstellungen** > **Datei für Testeinstellungen auswählen** aus, um die Testeinstellungsdatei auszuwählen. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile oder in einem Buildworkflow finden Sie unter [Konfigurieren von Komponententests mit einer *RUNSETTINGS*-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Wenn Sie die Testlaufeinstellungsdatei auswählen möchten, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** aus, und wählen Sie dann **Einstellungsdatei auswählen** aus. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile oder in einem Buildworkflow finden Sie unter [Konfigurieren von Komponententests mit einer *RUNSETTINGS*-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
 
    Wenn Sie **Code Coverage analysieren** auswählen, werden die Konfigurationsinformationen aus der Testlaufeinstellungsdatei gelesen.
 
    > [!TIP]
    > Die vorherigen Code Coverage-Ergebnisse und Codefarben werden nicht automatisch ausgeblendet, wenn Sie Tests ausführen oder Ihren Code aktualisieren.
 
-Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test** > **Testeinstellungen**.
+::: moniker range="vs-2017"
+
+Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test**  > **Testeinstellungen**.
 
 ![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Einstellungen** im **Test-Explorer**.
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Angeben von Symbolsuchpfaden
 
@@ -89,7 +109,7 @@ Wenn **Include** leer ist, enthält die Verarbeitung der Code Coverage alle Asse
 
 In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht mit Platzhaltern identisch. Insbesondere:
 
-- **.\\** * entspricht einer Zeichenfolge beliebiger Zeichen
+- **.\*** entspricht einer Zeichenfolge beliebiger Zeichen
 
 - **\\.** entspricht einem Punkt „.“
 

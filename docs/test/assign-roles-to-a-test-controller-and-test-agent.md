@@ -12,16 +12,16 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177794"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490602"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Zuweisen von Rollen an einen Testcontroller und einen Test-Agent
 
-In dieser exemplarischen Vorgehensweise werden außerdem die Erstellung und Konfiguration einer Testeinstellung veranschaulicht, in der mithilfe eines Testcontrollers und eines Test-Agents Tests auf mehreren Computern verteilt werden, die Visual Studio verwenden. Darüber hinaus wird hier erläutert, wie der Testeinstellung Diagnose- und Datenadapter hinzugefügt werden.
+In diesem Artikel werden außerdem die Erstellung und Konfiguration einer Testeinstellung veranschaulicht, in der mithilfe eines Testcontrollers und eines Test-Agents Tests auf mehrere Computern verteilt werden, die Visual Studio verwenden. Darüber hinaus wird erläutert, wie der Testeinstellung Diagnose- und Datenadapter hinzugefügt werden.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -48,9 +48,6 @@ In dieser exemplarischen Vorgehensweise werden außerdem die Erstellung und Konf
      Das Dialogfeld **Testeinstellungen** wird angezeigt. Die Seite **Allgemein** ist ausgewählt.
 
      Sie können die Testeinstellungswerte jetzt bearbeiten und speichern.
-
-    > [!NOTE]
-    > Jeder erstellte Satz von Testeinstellungen wird im Menü **Test** als Option unter **Aktive Testeinstellungen auswählen** und **Testeinstellungen bearbeiten** aufgeführt.
 
 5. Geben Sie unter **Name** den Namen für die Testeinstellungen ein.
 
@@ -98,7 +95,17 @@ In dieser exemplarischen Vorgehensweise werden außerdem die Erstellung und Konf
 
 7. Klicken Sie auf **Schließen**.
 
-8. Klicken Sie im Menü „Test“ erst auf die Option **Aktive Testeinstellungen auswählen** und anschließend auf **TestSettingDistributedTestWalkthrough.testsettings**.
+::: moniker range="vs-2017"
+
+8. Klicken Sie im Menü „Test“ auf die Option **Testeinstellungsdatei auswählen** und dann auf *TestSettingDistributedTestWalkthrough.testsettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** aus, und wählen Sie dann **Einstellungsdatei auswählen** aus. Navigieren Sie zur Datei *TestSettingDistributedTestWalkthrough.testsettings*, und wählen Sie sie aus.
+
+::: moniker-end
 
 9. Führen Sie den Test wie gewohnt aus.
 

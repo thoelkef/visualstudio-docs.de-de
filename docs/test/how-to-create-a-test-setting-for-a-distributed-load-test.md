@@ -8,14 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f947d8a4994c8a515a707f34a07065358194e09
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950212"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490675"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellungsdatei für einen verteilten Auslastungstest
 
 Konfigurieren Sie *Testeinstellungen* für Ihre Auslastungstests, sodass Sie diese Tests mithilfe von Test-Agents und Testcontrollern auf mehrere Computer verteilen können. Sie können zudem Testeinstellungen für die Verwendung von *Adaptern für diagnostische Daten* konfigurieren, die die Arten der zu sammelnden Daten angeben oder welche Auswirkung auf die Testcomputer erzielt wird, wenn Sie Ihre Auslastungstests in Visual Studio ausführen.
 
@@ -39,9 +39,7 @@ Der Testcontroller verfügt über Agents, die für die einzelnen Rollen in den T
 
 Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in Ihrer Lösung für Auslastungstests, die in Visual Studio gemäß dem Plan ausgeführt werden sollen.
 
-## <a name="create-a-test-setting-for-a-distributed-load-test"></a>Erstellen einer Testeinstellung für einen verteilten Auslastungstest
-
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>So fügen Sie Testeinstellungen für einen verteilten Auslastungstest hinzu
+## <a name="create-a-test-settings-file"></a>Erstellen einer Testeinstellungsdatei
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Projektmappenelemente**, verweisen Sie auf **Hinzufügen**, und klicken Sie anschließend auf **Neues Element**.
 
@@ -55,15 +53,9 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Die neue Testeinstellungsdatei wird im **Projektmappen-Explorer** unter dem Ordner **Projektmappenelemente** angezeigt.
 
-    > [!NOTE]
-    > Die in Visual Studio Enterprise angezeigte Liste der Testeinstellungen wird von der Liste der Testeinstellungsdateien im Ordner **Projektmappenelemente** abgeleitet. Die Testeinstellungsdateien im Ordner **Projektmappenelemente** werden z.B. angezeigt, wenn Sie die im Menü **Test** enthaltene Option **Aktive Testeinstellungen auswählen** verwenden. Wenn Sie eine Testeinstellungsdatei an einen anderen Speicherort der Projektmappenhierarchie verschieben, hat dies zur Folge, dass diese in der integrierten Entwicklungsumgebung von Visual Studio nicht mehr als Testeinstellung verwendet werden kann.
-
 5. Das Dialogfeld **Testeinstellungen** wird angezeigt. Die Seite **Allgemein** ist ausgewählt.
 
      Sie können die Testeinstellungswerte jetzt bearbeiten und speichern.
-
-    > [!NOTE]
-    > Jeder erstellte Satz von Testeinstellungen wird im Menü **Test** als Option unter **Aktive Testeinstellungen auswählen** und **Testeinstellungen bearbeiten** aufgeführt.
 
 6. Geben Sie unter **Name** den Namen für die Testeinstellungen ein.
 
@@ -154,9 +146,9 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Die Seite **Setup- und Bereinigungsskripts** wird angezeigt.
 
-    1. Geben Sie den Speicherort der Skriptdatei unter **Setupskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Setupskript zu suchen.
+    1. Geben Sie den Speicherort der Skriptdatei unter **Setupskript** ein, oder klicken Sie auf die Auslassungspunkte ( **…** ), um das Setupskript zu suchen.
 
-    2. Geben Sie den Speicherort der Skriptdatei unter **Bereinigungsskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Bereinigungsskript zu suchen.
+    2. Geben Sie den Speicherort der Skriptdatei unter **Bereinigungsskript** ein, oder klicken Sie auf die Auslassungspunkte ( **…** ), um das Bereinigungsskript zu suchen.
 
 24. Um die Tests mithilfe eines anderen Hosts auszuführen, klicken Sie auf **Hosts**.
 
@@ -182,14 +174,11 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
 28. Klicken Sie zum Speichern der Testeinstellungen auf **Speichern unter**. Geben Sie unter **Objektname** den gewünschten Namen für die Datei ein.
 
-    > [!NOTE]
-    > Wenn Sie die Testeinstellungen ändern müssen, klicken Sie auf **Test** und dann auf **Testeinstellungen bearbeiten**, und zeigen Sie auf die Testeinstellungen, die Sie erstellt haben.
-
-### <a name="to-remove-a-test-settings-from-your-solution"></a>So entfernen Sie Testeinstellungen aus der Projektmappe
+## <a name="remove-a-test-settings-file-from-your-solution"></a>Entfernen einer Testeinstellungsdatei aus der Projektmappe
 
 Klicken Sie im Ordner **Projektmappenelemente** im **Projektmappen-Explorer** mit der rechten Maustaste auf die zu entfernenden Testeinstellungen, und wählen Sie anschließend **Entfernen** aus.
 
-Die Testeinstellungsdatei wird aus der Projektmappe entfernt. Diese Änderung wirkt sich im Menü **Test** auf die Auswahlmöglichkeiten für die Optionen **Aktive Testeinstellungen auswählen** und **Testeinstellungen bearbeiten** aus.
+Die Testeinstellungsdatei wird aus der Projektmappe entfernt.
 
 ## <a name="see-also"></a>Siehe auch
 

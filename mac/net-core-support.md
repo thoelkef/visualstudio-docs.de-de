@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 06/13/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 325489f243e6942cf02df406937f4d19cd21ed0d
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 2788529a72b556bcf97001ff1c75c9056e4e87f5
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681744"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634791"
 ---
 # <a name="net-core-support"></a>.NET Core-Unterstützung
 
@@ -24,7 +24,8 @@ Die folgende Tabelle beschreibt die Versionen von .NET Core, die von den Stabil-
 |v2.2.200 + |✔︎|✔︎|✔︎|
 |v3.0 < Vorschauversion 3 | | | |
 |v3.0 Vorschauversion 3, 4, 5 + |✔︎|✔︎|✔︎|
-|v3.0 Vorschauversion 6 und höher | |✔︎|✔︎|
+|v3.0 Vorschau 6, 7 | |✔︎|✔︎|
+|v3.0 Vorschau 8 oder höher | | |✔︎|
 
 > [!IMPORTANT]
 > Wenn Sie zuvor .NET Core v2.2.1xx mit Visual Studio für Mac 8.0 verwendet haben, müssen Sie ein manuelles Update auf die unterstützte .NET Core-Version durchführen (siehe die obige Tabelle). Es wird entweder [2.1.700](https://dotnet.microsoft.com/download/dotnet-core/2.1) oder [2.2.300](https://dotnet.microsoft.com/download/dotnet-core/2.2) empfohlen.

@@ -1,6 +1,6 @@
 ---
 title: Grundlagen von Komponententests
-ms.date: 06/06/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e5529ae777fe1cee69e669ce20fb919eceb5ef
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925823"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490723"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -40,7 +40,12 @@ Eine Einführung in Komponententests, in der Sie direkt in die Codierung eingef�
 
 In diesem Artikel dient die Entwicklung einer fiktiven Anwendung mit dem Namen `MyBank` als Beispiel. Sie benötigen den tatsächlichen Code nicht, um den Erläuterungen in diesem Thema folgen zu können. Testmethoden werden in C# geschrieben und mithilfe des Microsoft Unit Testing Framework for Managed Code angezeigt. Die Konzepte lassen sich jedoch leicht auf andere Sprachen und Frameworks übertragen.
 
+::: moniker range="vs-2017"
 ![Projektmappe MyBank](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Projektmappe MyBank 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 Der erste Entwurf für die Anwendung `MyBank` umfasst eine Kontenkomponente, die ein Einzelkonto und die zugehörigen Transaktionen mit der Bank darstellt, sowie eine Datenbankkomponente, die die Funktionen zum Aggregieren und Verwalten der Einzelkonten darstellt.
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -84,18 +89,28 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
 
 1. Klicken Sie im Code-Editorfenster mit der rechten Maustaste, und wählen Sie im Kontextmenü die Option [**Komponententests erstellen**](create-unit-tests-menu.md) aus.
 
+   ::: moniker range="vs-2017"
    ![Im Editorfenster das Kontextmenü anzeigen](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Im Editorfenster das Kontextmenü anzeigen](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
 
    > [!NOTE]
    > Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für das .NET Framework (aber nicht für .NET Core) zur Verfügung.
 
 2. Klicken Sie auf **OK**, um die Komponententests mit den Standardeinstellungen erstellen. Sie können die Werte zum Erstellen und Benennen des Komponententestprojekts und der Komponententests jedoch ändern. Sie können den Code auswählen, der den Komponententestmethoden standardmäßig hinzugefügt wird.
 
-    ![Screenshot: Dialogfeld „Komponententests erstellen“ in Visual Studio](../test/media/create-unit-tests.png)
+   ![Screenshot: Dialogfeld „Komponententests erstellen“ in Visual Studio](../test/media/create-unit-tests.png)
 
 3. Die Komponententest-Stubs werden in einem neuen Komponententestprojekt für alle Methoden in der Klasse erstellt.
 
-    ![Die Komponententests sind erstellt](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![Die Komponententests sind erstellt](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Die Komponententests sind erstellt](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#write-your-tests), um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzufügen möchten.
 
@@ -218,9 +233,14 @@ public void My_Test ()
 
 Wenn Sie das Testprojekt erstellen, werden die Tests im **Test-Explorer** angezeigt. Falls der **Test-Explorer** nicht geöffnet ist, klicken Sie im Visual Studio-Menü auf **Test** > **Fenster** > **Test-Explorer**.
 
+::: moniker range="vs-2017"
 ![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Komponententest-Explorer](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse in der Standardansicht des **Test-Explorers** in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests** angezeigt. Sie können eine Gruppenüberschrift auswählen, um die Ansicht zu öffnen, in der alle Tests dieser Gruppe angezeigt werden.
+Beim Ausführen, Schreiben und erneuten Ausführen der Tests kann der **Test-Explorer** die Ergebnisse in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests** anzeigen. In der Symbolleiste können Sie unterschiedliche Optionen für „Gruppieren nach“ auswählen.
 
 Sie können die Tests in jeder Ansicht durch entsprechenden Text im Suchfeld auf globaler Ebene filtern oder indem Sie einen der vordefinierten Filter auswählen. Sie können jederzeit eine beliebige Auswahl der Tests ausführen. Die Ergebnisse eines Testlaufs sind sofort oben im Explorer-Fenster in der Erfolgreich/Fehler-Leiste sichtbar. Details zu den Ergebnissen einer Testmethode werden angezeigt, wenn Sie den Test auswählen.
 
@@ -228,9 +248,14 @@ Sie können die Tests in jeder Ansicht durch entsprechenden Text im Suchfeld auf
 
 Mithilfe der **Test-Explorer**-Symbolleiste können Sie die Tests ermitteln, organisieren und ausführen, die Sie interessieren.
 
+::: moniker range="vs-2017"
 ![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen. Nachdem Sie einige Tests ausgeführt haben, wird eine Zusammenfassung des Testlaufs im unteren Bereich des **Test-Explorer**-Fensters angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen. Klicken Sie im Kontextmenü auf **Test öffnen** (auf der Tastatur: **F12**), um den Quellcode für den ausgewählten Test anzuzeigen.
+Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen. Wählen Sie einen Test aus, um die Details dieses Tests im Testdetailbereich anzuzeigen. Klicken Sie im Kontextmenü auf **Test öffnen** (auf der Tastatur: **F12**), um den Quellcode für den ausgewählten Test anzuzeigen.
 
 ::: moniker range="vs-2017"
 
@@ -246,18 +271,33 @@ Wenn einzelne Tests keine Abhängigkeiten aufweisen, die verhindern, dass sie in
 
 ### <a name="run-tests-after-every-build"></a>Ausführen von Tests nach jedem Build
 
-> [!WARNING]
-> Das Ausführen von Komponententests nach jedem Buildvorgang wird nur in Visual Studio Enterprise unterstützt.
+::: moniker range="vs-2017"
 
 |Schaltfläche|Beschreibung|
 |-|-|
-|![Nach Build ausführen](../test/media/ute_runafterbuild_btn.png)|Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü auf **Test**, und wählen Sie auf der **Test-Explorer**-Symbolleiste **Nach dem Buildvorgang Tests ausführen** aus.|
+|![Nach Build ausführen](../test/media/ute_runafterbuild_btn.png)|Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü auf **Test** und anschließend in der Symbolleiste **Test-Explorer** auf **Nach dem Buildvorgang Tests ausführen**.|
+
+> [!NOTE]
+> Zum Ausführen von Komponententests nach jedem Buildvorgang benötigen Sie Visual Studio 2017 Enterprise Edition oder Visual Studio 2019. In Visual Studio 2019 ist die Funktion zusätzlich zur Enterprise Edition sowohl in der Community als auch in der Professional Edition verfügbar.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang in der Test-Explorer-Symbolleiste auf das Einstellungssymbol, und wählen Sie **Nach dem Buildvorgang Tests ausführen** aus.
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>Filtern und Gruppieren der Testliste
 
-Wenn Sie über viele Tests verfügen, können Sie im **Test-Explorer**-Suchfeld eine Eingabe vornehmen, um die Liste entsprechend der angegebenen Zeichenfolge zu filtern. Sie können den Filter weiter einschränken, indem Sie eine Option in der Filterliste auswählen.
+Wenn Sie über viele Tests verfügen, können Sie im Suchfeld von **Test-Explorer** eine Eingabe vornehmen, um die Liste entsprechend der angegebenen Zeichenfolge zu filtern. Sie können den Filter weiter einschränken, indem Sie eine Option in der Filterliste auswählen.
 
+::: moniker range="vs-2017"
 ![Suchfilterkategorien](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Suchfilterkategorien](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |Schaltfläche|Beschreibung|
 |-|-|
@@ -282,9 +322,14 @@ Erfahren Sie mehr über das [Debuggen von Komponententests](../debugger/debugger
 
 **Frage: Wenn ich TDD verwende, wie generiere ich dann Code aus meinen Tests?**
 
-**Antwort:** Verwenden Sie IntelliSense zum Generieren von Klassen und Methoden in Ihrem Projektcode. Schreiben Sie eine Anweisung in einer Testmethode, mit der die Klasse oder die Methode aufgerufen wird, die Sie generieren möchten. Öffnen Sie anschließend das IntelliSense-Menü unter dem Aufruf. Wenn es sich um den Aufruf eines Konstruktors der neuen Klasse handelt, wählen Sie im Menü **Neuen Typ generieren** aus, und befolgen Sie die Schritte im Assistenten, um die Klasse in das Codeprojekt einzufügen. Wenn es sich um den Aufruf einer Methode handelt, wählen Sie im IntelliSense-Menü **Neue Methode generieren** aus.
+**Antwort:** Verwenden Sie Schnelle Aktionen zum Generieren von Klassen und Methoden in Ihrem Projektcode. Schreiben Sie eine Anweisung in einer Testmethode, mit der die Klasse oder die Methode aufgerufen wird, die Sie generieren möchten. Öffnen Sie anschließend die Glühbirne, die unter dem Fehler angezeigt wird. Wenn es sich um den Aufruf eines Konstruktors der neuen Klasse handelt, wählen Sie im Menü **Typ generieren** aus, und befolgen Sie die Schritte im Assistenten, um die Klasse in das Codeprojekt einzufügen. Wenn es sich um den Aufruf einer Methode handelt, wählen Sie im IntelliSense-Menü **Methode generieren** aus.
 
-![IntelliSense-Menü „Methodenstub generieren“](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![Schnelle Aktion-Menü „Methodenstub generieren“](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Schnelle Aktion-Menü „Methodenstub generieren“](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **Frage: Kann ich Komponententests erstellen, die mehrere Datensätze als Eingabe zum Ausführen des Tests verwenden?**
 
@@ -320,7 +365,7 @@ Erfahren Sie mehr über [datengesteuerte Komponententests](../test/how-to-create
 
 **Frage: Kann ich anzeigen, wie viel meines Codes durch die Komponententests getestet wird?**
 
-**Antwort:** Ja. Mit dem Codeabdeckungstool von Visual Studio können Sie die Menge des Codes ermitteln, die tatsächlich von den Komponententests getestet wird. Es werden alle systemeigenen und verwalteten Sprachen sowie alle Komponententestframeworks, die durch das Komponententestframework ausgeführt werden können, unterstützt.
+**Antwort:** Ja. Mit dem Codeabdeckungstool von Visual Studio in Visual Studio Enterprise können Sie die Menge des Codes ermitteln, die tatsächlich von den Komponententests getestet wird. Es werden alle systemeigenen und verwalteten Sprachen sowie alle Komponententestframeworks, die durch das Komponententestframework ausgeführt werden können, unterstützt.
 
 Das Codeabdeckungstool kann für ausgewählte oder alle Tests in einer Projektmappe ausgeführt werden. Im Fenster **Code Coverage-Ergebnisse** wird der Prozentsatz der durchlaufenen Produktcodeblöcke angezeigt, angeordnet nach Zeile, Funktion, Klasse, Namespace und Modul.
 

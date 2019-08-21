@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945013"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551190"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Festlegen von Standardeinstellungen für Unternehmensbereitstellungen von Visual Studio
 
@@ -55,6 +55,7 @@ Sie können die folgenden Registrierungswerte festlegen:
 | `CachePath` | `REG_SZ` oder `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Das Verzeichnis, in dem Paketmanifeste und optional Nutzlasten gespeichert werden. Weitere Informationen finden Sie unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Behalten Sie Paketnutzlasten bei, auch nachdem diese installiert wurden. Sie können den Wert jederzeit ändern. Durch Deaktivieren der Richtlinie werden alle zwischengespeicherten Paketnutzlasten für die Instanz entfernt, die Sie reparieren oder ändern. Weitere Informationen finden Sie unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md). |
 | `SharedInstallationPath` | `REG_SZ` oder `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Das Verzeichnis, in dem einige Pakete installiert werden, die von Versionen oder Instanzen von Visual Studio gemeinsam genutzt werden. Sie können den Wert jederzeit ändern, jedoch wirkt sich das nur auf zukünftige Installationen aus. Produkte, die bereits am alten Speicherort installiert sind, dürfen nicht verschoben werden, da sie möglicherweise nicht mehr ordnungsgemäß funktionieren. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Verhindern, dass Setup Updates für alle installierten Visual Studio-Produkte automatisch herunterlädt. Sie können den Wert jederzeit ändern. |
 
 > [!IMPORTANT]
 > Wenn Sie die Registrierungsrichtlinie `CachePath` nach einer Installation ändern, müssen Sie den vorhandenen Paketcache an den neuen Speicherort verschieben und seinen Schutz sicherstellen, damit `SYSTEM` und `Administrators` über Vollzugriff verfügen und `Everyone` über Lesezugriff verfügt.
