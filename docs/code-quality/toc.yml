@@ -162,31 +162,31 @@
           items:
             - name: Übersicht
               href: rule-set-reference.md
-            - name: Regelsatz für alle Regeln
+            - name: Alle Regeln
               href: all-rules-rule-set.md
-            - name: Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code
+            - name: Grundlegende Regeln für Richtigkeit
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
+            - name: Grundlegende Regeln für Entwurfsrichtlinien
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code
+            - name: Erweiterte Regeln für Richtigkeit
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
+            - name: Erweiterte Regeln für Entwurfsrichtlinien
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für Globalisierungsregeln für verwalteten Code
+            - name: Globalisierungsregeln
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für verwaltete Mindestregeln für verwalteten Code
+            - name: Verwaltete Mindestregeln
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für verwaltete empfohlene Regeln für verwalteten Code
+            - name: Verwaltete empfohlene Regeln
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für gemischte Mindestregeln
+            - name: Gemischte Mindestregeln
               href: mixed-minimum-rules-rule-set.md
-            - name: Regelsatz für gemischte empfohlene Mindestregeln
+            - name: Gemischte empfohlene Regeln
               href: mixed-recommended-rules-rule-set.md
-            - name: Regelsatz für systemeigene Mindestregeln
+            - name: Native Mindestregeln
               href: native-minimum-rules-rule-set.md
-            - name: Regelsatz für systemeigene empfohlene Regeln
+            - name: Native empfohlene Regeln
               href: native-recommended-rules-rule-set.md
-            - name: Regelsatz für Sicherheitsregeln für verwalteten Code
+            - name: Sicherheitsregeln
               href: security-rules-rule-set-for-managed-code.md
         - name: Unterdrücken von Warnungen
           href: in-source-suppression-overview.md
