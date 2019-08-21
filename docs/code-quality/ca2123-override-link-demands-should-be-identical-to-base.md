@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52959279bca5aa0f86722050f6118f64997a901d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545048"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920815"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein.
 
@@ -31,25 +31,25 @@ ms.locfileid: "62545048"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte Methode in einem öffentlichen Typ überschreibt eine Methode oder eine Schnittstelle implementiert und verfügt nicht über die gleichen [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands) wie die Schnittstelle oder eine virtuelle Methode.
+Eine öffentliche oder geschützte Methode in einem öffentlichen Typ überschreibt eine Methode oder implementiert eine Schnittstelle und hat nicht dieselben [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands) wie die Schnittstelle oder virtuelle Methode.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Durch diese Regel wird eine Methode mit ihrer Basismethode verglichen. Bei dieser handelt es sich entweder um eine Schnittstelle oder um eine virtuelle Methode in einem anderen Typ. Anschließend werden die Linkaufruf mit denen der Schnittstelle bzw. virtuellen Methode verglichen. Ein Verstoß wird gemeldet, wenn die-Methode oder die Basismethode einen Linkaufruf enthält, und das andere nicht.
+Durch diese Regel wird eine Methode mit ihrer Basismethode verglichen. Bei dieser handelt es sich entweder um eine Schnittstelle oder um eine virtuelle Methode in einem anderen Typ. Anschließend werden die Linkaufruf mit denen der Schnittstelle bzw. virtuellen Methode verglichen. Eine Verletzung wird gemeldet, wenn entweder die-Methode oder die-Basis Methode über einen Link Aufruf und das andere nicht.
 
- Wenn diese Regel verletzt wird, kann ein böswilliger Aufrufer den Linkaufruf umgehen, lediglich durch Aufruf der ungesicherten Methode.
+Wenn gegen diese Regel verstoßen wird, kann ein böswilliger Aufrufer den Link Aufruf nur durch Aufrufen der ungesicherten Methode umgehen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, wenden Sie den gleichen Linkaufruf auf die Methode zum Überschreiben oder die Implementierung aus. Wenn dies nicht möglich ist, markieren Sie die Methode mit einer vollständigen Anforderung aus, oder entfernen Sie das Attribut.
+Um einen Verstoß gegen diese Regel zu beheben, wenden Sie denselben Link Aufruf auf die Überschreibungs Methode oder-Implementierung an. Wenn dies nicht möglich ist, markieren Sie die Methode mit einer vollständigen Anforderung, oder entfernen Sie das Attribut ganz.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt verschiedene Verstöße gegen diese Regel.
+Das folgende Beispiel zeigt verschiedene Verstöße gegen diese Regel.
 
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
+[!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)
-- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)
+- [Link Aufrufe](/dotnet/framework/misc/link-demands)
