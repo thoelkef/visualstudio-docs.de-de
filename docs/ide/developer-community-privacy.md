@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823368"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634854"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -54,21 +54,19 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
 - Visual Studio-Aktivitätsprotokolldatei im Arbeitsspeicher
 
-- PerfWatson-Dateien, wenn die Watson-Sammlung aktiviert ist, aus dem Ordner *VSFeedbackPerfWatsonData*
+- PerfWatson-Dateien, wenn die Watson-Sammlung aktiviert ist
 
-- LiveShare-Protokolldateien, sofern vorhanden, aus dem Ordner *VSFeedbackVSRTCLogs*
+- LiveShare-Protokolldateien, sofern vorhanden
 
-- Xamarin-Protokolldateien, sofern vorhanden, aus *%LOCALAPPDATA%\Xamarin\Logs*
+- Xamarin-Protokolldateien, sofern vorhanden
 
-- NuGet-Protokolldateien, sofern vorhanden, aus *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- NuGet-Protokolldateien, sofern vorhanden
 
-- Webdebugger-Protokolldateien, sofern vorhanden:
+- Webdebugger-Protokolldateien, sofern vorhanden
 
-  - *%TEMP%\vscode-chrome-debug.txt*
+- Service Hub-Protokolle und MEF-Fehlerprotokolle, sofern vorhanden
 
-  - *%TEMP%\vscode-node-debug2.txt*
-
-  - *%TEMP%\vscode-edge-debug.txt*
+- Python-Protokolle, sofern vorhanden
 
 - Ein Screenshot, sofern dieser einbezogen werden soll
 

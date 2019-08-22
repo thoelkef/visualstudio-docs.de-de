@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen zum Test-Explorer
-ms.date: 11/07/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,16 +14,16 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662012"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551861"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
-
 ::: moniker range=">=vs-2019"
+
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Wo befindet sich die Gruppierung nach Merkmalen in Visual Studio 2019?
 Diese Gruppierung ist nun eine Spalte. Durch die mehrschichtige und anpassbare Hierarchie in Visual Studio 2019 Version 16.2 haben wir beschlossen, dass die Gruppierung nach Merkmalen zu einer unnötig komplexen Darstellung führt. Wir sind auf Ihr Feedback zu diesem Design gespannt! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
@@ -31,38 +31,43 @@ Aktuell können Sie mit der rechten Maustaste auf die Spalte im Test-Explorer un
 
 ![Spalte „Merkmal“ anzeigen](media/vs-2019/trait-column.png)
 ![Spalte „Merkmal“ filtern](media/vs-2019/trait-column-filter.png)
-
 ::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Ermitteln dynamischer Tests
 
 **Der Test-Explorer erkennt meine dynamisch definierten Tests nicht. (Z.B. Theorien, benutzerdefinierte Adapter und Merkmale oder „#ifdefs“) Wie kann ich diese Tests ermitteln?**
 
-Erstellen Sie das Projekt, und vergewissern Sie sich, dass unter **Extras** > **Optionen** > **Test** die assemblybasierte Ermittlung aktiviert ist.
-
+::: moniker range=">=vs-2019"
+Erstellen Sie das Projekt, um assemblybasierte Ermittlung auszuführen.
+::: moniker-end
+::: moniker range="vs-2017"
+Erstellen Sie das Projekt, und vergewissern Sie sich, dass in **Extras** > **Optionen** > **Test**t die assemblybasierte Ermittlung aktiviert ist.
+::: moniker-end
 Bei der [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) handelt es sich um eine quellenbasierte Testermittlung. Sie kann keine Tests ermitteln, die z.B. Theorien, benutzerdefinierte Adapter und Merkmale oder `#ifdef`-Anweisungen verwenden, da diese zur Laufzeit definiert werden. Ein Build ist erforderlich, damit diese Tests korrekt gefunden werden können. In Visual Studio 2017 Version 15.6 und höher wird die assemblybasierte Ermittlung (die übliche Ermittlung) erst nach Builds ausgeführt. Mit dieser Einstellung wird festgelegt, dass die Testermittlung in Echtzeit während der Bearbeitung so viele Tests wie möglich findet und die assemblybasierte Ermittlung das Anzeigen von dynamisch definierten Tests nach einem Build ermöglicht. Testermittlung in Echtzeit verbessert die Reaktionsfähigkeit, ermöglicht Ihnen aber dennoch, vollständige und genaue Ergebnisse nach einem Build zu erhalten.
 
 ## <a name="test-explorer--plus-symbol"></a>Pluszeichen (+) im Test-Explorer
 
 **Was bewirkt das Symbol „+“ (Pluszeichen), das in der obersten Zeile des Test-Explorers angezeigt wird?**
 
-Das Symbol „+“ (Pluszeichen) gibt an, dass mehr Tests nach einem Build ermittelt werden können, solange die assemblybasierte Ermittlung aktiviert ist. Es wird angezeigt, wenn dynamisch definierte Tests im Projekt erkannt werden.
+Das Symbol „+“ (Pluszeichen) gibt an, dass mehr Tests nach einem Build ermittelt werden können, wenn assemblybasierte Ermittlung ausgeführt wird. Es wird angezeigt, wenn dynamisch definierte Tests im Projekt erkannt werden.
 
 ![Plussymbol-Zusammenfassungszeile](media/testex-plussymbol.png)
 
+::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Assemblybasierte Ermittlung
 
 **Die assemblybasierte Ermittlung funktioniert bei meinem Projekt nicht mehr. Wie kann ich sie wieder aktivieren?**
 
-Wechseln Sie zu **Extras** > **Optionen** > **Test**, und aktivieren Sie das Kontrollkästchen **Additionally discover tests from built assemblies after builds** (Nach der Builderstellung zusätzliche Tests aus erstellten Assemblys ermitteln).
+Navigieren Sie zu **Extras** > **Optionen** > **Test**, und aktivieren Sie das Kontrollkästchen **Nach der Builderstellung zusätzliche Tests aus erstellten Assemblys ermitteln**.
 
 ![Assemblybasierte Option](media/testex-toolsoptions.png)
+::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Testermittlung in Echtzeit
 
 **Tests werden jetzt im Test-Explorer angezeigt, während ich schreibe, ohne dass ich mein Projekt erstellen muss. Was hat sich geändert?**
 
-Dieses Feature wird als [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) bezeichnet. Dabei wird ein Roslyn-Analysetool verwendet, um Tests zu suchen und den Test-Explorer in Echtzeit aufzufüllen, ohne dass Sie Ihr Projekt erstellen müssen. Weitere Informationen zum Verhalten der Testermittlung bei dynamisch definierten Tests wie Theorien oder benutzerdefinierten Merkmalen finden Sie in der Antwort zur ersten häufig gestellten Frage (FAQ #1).
+Dieses Feature wird als [Testermittlung in Echtzeit](https://go.microsoft.com/fwlink/?linkid=862824) bezeichnet. Dabei wird ein Roslyn-Analysetool verwendet, um Tests zu suchen und den Test-Explorer in Echtzeit aufzufüllen, ohne dass Sie Ihr Projekt erstellen müssen. Weitere Informationen zum Verhalten der Testermittlung bei dynamisch definierten Tests wie Theorien oder benutzerdefinierten Merkmalen finden Sie unter [Dynamische Testermittlung](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Konformität der Testermittlung in Echtzeit
 
@@ -92,7 +97,7 @@ In der Hierarchieansicht werden Tests alphabetisch und nicht anhand ihrer Ergebn
 
 ## <a name="test-explorer-hierarchy-view"></a>Hierarchieansicht des Test-Explorers
 
-**In der Hierarchieansicht sind die Projekt-, Namespace- und Klasse-Gruppierung mit Symbolen für „erfolgreich“, „fehlerhaft“, „übersprungen“ und „nicht ausgeführt“ versehen. Was bedeuten diese Symbole?**
+**In der Hierarchieansicht finden Sie Symbole für „erfolgreich“, „fehlerhaft“, „übersprungen“ und „nicht ausgeführt“ neben Gruppierungen des übergeordneten Knotens. Was bedeuten diese Symbole?**
 
 Die Symbole neben den Gruppierungen „Projekt“, „Namespace“ und „Klasse“ spiegeln den Status der Tests innerhalb der Gruppierung wider. Siehe folgende Tabelle.
 
@@ -110,6 +115,7 @@ Der Dateipfadfilter im Suchfeld **Test-Explorer** wurde in Visual Studio 2017 Ve
 
 In Visual Studio 2019 werden einige Testfenster-APIs entfernt, die zuvor als öffentlich markiert waren, aber nie offiziell dokumentiert wurden. Diese wurden als frühe Warnung für die Erweiterungsverwaltung in Visual Studio 2017 als „veraltet“ gekennzeichnet. Nach unserer Erkenntnis wurden diese APIs nur durch sehr wenige Erweiterungen ermittelt und mit einer Abhängigkeit konfiguriert. Dies waren `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` und `SearchFilterTokenType`. Wenn sich diese Änderung auf Ihre Erweiterung auswirkt, teilen Sie uns dies mit, indem Sie einen Fehler in der [Entwicklercommunity](https://developercommunity.visualstudio.com) melden.
 
+::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>NuGet-Verweis auf Testadapter
 
 **In Visual Studio 2017 Version 15.8 werden meine Tests ermittelt, aber nicht ausgeführt.**
@@ -124,6 +130,7 @@ Anstelle der Verwendung von Testadaptererweiterungen müssen Projekte NuGet-Pake
 > Wenn Sie den NUnit 2-Testadapter verwenden und nicht zum NUnit 3-Testadapter migrieren können, haben Sie die Möglichkeit, dieses neue Ermittlungsverhalten in Visual Studio Version 15.8 unter **Extras** > **Optionen** > **Test** zu deaktivieren.
 
 ![Test-Explorer-Adapterverhalten unter „Extras > Optionen“](media/testex-adapterbehavior.png)
+::: moniker-end
 
 ## <a name="uwp-testcontainer-was-not-found"></a>UWP-TestContainer wurde nicht gefunden
 

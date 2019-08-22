@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e54a0957cb6b63c95c1cd914f7fc3eb72e581ac3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981646"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585346"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>Exemplarische Vorgehensweise: Erste Schritte mit dem Windows Forms-Designer
 
@@ -309,8 +309,10 @@ Um das DemoCalculator-Steuerelement in einer Anwendung zu verwenden, müssen Sie
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel wurde gezeigt, wie Sie die Benutzeroberfläche für einen einfachen Rechner erstellen. Um fortzufahren, können Sie seine Funktionalität durch Implementieren der Rechnerlogik erweitern. Oder fahren Sie mit einem anderen Tutorial fort, [in dem Sie mit Windows Forms einen Bildviewer erstellen](../ide/tutorial-1-create-a-picture-viewer.md).
+In diesem Artikel wurde gezeigt, wie Sie die Benutzeroberfläche für einen einfachen Rechner erstellen. Um fortzufahren, können Sie seine Funktionalität durch Implementieren der Rechnerlogik erweitern und die [App dann mithilfe von ClickOnce veröffentlichen](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Oder fahren Sie mit einem anderen Tutorial fort, [in dem Sie mit Windows Forms einen Bildviewer erstellen](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/)
 - [Barrierefreiheit für Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [Veröffentlichen mithilfe von ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
