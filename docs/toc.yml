@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Nicht verwendete Wertzuweisungen, Variablen und Parameter'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Umschließen und Ausrichten von Aufrufketten
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Umschließen, Einziehen und Ausrichten von Parametern'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Exemplarische Vorgehensweise: Generieren von Code aus Verwendung'
