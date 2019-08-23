@@ -13,27 +13,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 209d3ca013e72ff709d0bd581dd460205d8e347d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326688"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976693"
 ---
 # <a name="nesting-projects"></a>Schachteln von Projekten
-Entwicklern von Unternehmensanwendungen, die das Visual Studio-Paket zu verwenden, können bequem gruppieren ähnliche Arten von Projekten, die zusammen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit *Projekt Schachtelung*. Beispielsweise verwendet das Enterprise-Vorlagenprojekt geschachtelte Projekte zum Gruppieren von Projekten in Kategorien. Business-Fassade-Projekte, Web-UI-Projekte und usw. werden in einer Kategorie gruppiert.
+Unternehmens Anwendungsentwickler, die ihr vs-Paket verwenden, können ähnliche Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mithilfe der *Projekt*Schachtelung bequem gruppieren. Beispielsweise verwendet das Enterprise-Vorlagen Projekt für die Gruppierung von Projekten in Kategorien. Geschäfts Fassaden Projekte, Webbenutzer Oberflächen Projekte usw. werden in einer Kategorie zusammengefasst.
 
- In diesem Szenario gibt es keine Beschränkung der Anzahl der Projekte, die der Entwickler unter jedes übergeordneten Projekts, geschachtelt werden kann, auch wenn der Entwickler Grenzwerte programmgesteuert bereitstellen kann. Diese Art der Gruppierung kann auch rekursiv erfolgen in diesem Fall können die Projekte des gleichen Typs als ein untergeordnetes Projekt geschachtelt werden, unter das untergeordnete Element ein Unterprojekt des untergeordneten Elements, zu dem ein Unterprojekt des übergeordneten Elements ist.
+ In diesem Szenario gibt es keine Beschränkung für die Anzahl von Projekten, die der Entwickler unter jedem übergeordneten Projekt Schachteln kann, obwohl der Entwicklerprogramm gesteuert Beschränkungen bereitstellen kann. Diese Art von Gruppierung kann auch rekursiv gemacht werden. in diesem Fall können die Projekte desselben Typs wie ein untergeordnetes Projekt unter dem untergeordneten Projekt untergeordnet werden, um ein untergeordnetes Element des untergeordneten Elements zu werden, bei dem es sich um ein untergeordnetes Element des übergeordneten Projekts handelt.
 
- Projekt Schachtelung ist nicht fester Bestandteil eines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sie müssen den Code zum Aktivieren der Schachtelung und Unterprojekt Schachtelung innerhalb von untergeordneten Projekten schreiben. Das übergeordnete Projekt ist eine spezielle VSPackage oder Projekttyp erstellt und registriert durch eine eigene GUID, die den Code, der erforderlich ist enthält, um die Schachtelung von Projekt zu implementieren.
+ Die Projekt Schachtelung ist kein intrinsischer Bestandteil von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Sie müssen den Code schreiben, um Schachtelung und untergeordnete Projekt Schachtelungen in untergeordneten Projekten zu aktivieren. Das übergeordnete Projekt ist ein spezielles VSPackage oder Projekttyp, der mit einer eigenen GUID erstellt und registriert wird, die den Code enthält, der zum Implementieren der Projekt Schachtelung erforderlich ist.
 
- Sie finden ein Beispiel für geschachtelte Projekte im Beispiel Example.Nested C#-Projekt.
+ Ein Beispiel zum Schachteln von Projekten [finden Sie unter Gewusst wie: Implementieren Sie in der](../../extensibility/internals/how-to-implement-nested-projects.md)Liste der Projekte.
 
-## <a name="nested-projects-example"></a>Beispiel für geschachtelte Projekte
- ![Geschachtelte Projektmappen](../../extensibility/internals/media/vsnestedprojects.gif "VsNestedProjects") Beispiel für geschachtelte Projekte
+## <a name="nested-projects-example"></a>Beispiel für ein Beispiel für ein Beispiel
+ ![Projekt] Mappe für Projektmappen (../../extensibility/internals/media/vsnestedprojects.gif "vsnestedprojects") Beispiel für ein Beispiel für ein Beispiel
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Implementieren von geschachtelten Projekten](../../extensibility/internals/how-to-implement-nested-projects.md)
 - [Überlegungen für das Entladen und Neuladen von geschachtelten Projekten](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Assistentenunterstützung für geschachtelte Projekte](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
