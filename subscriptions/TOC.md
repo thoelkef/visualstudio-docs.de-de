@@ -22,6 +22,7 @@
 #### [Anonymisierungen von Abonnentendaten](anonymization.md)
 ### [Übersicht über das Abonnementportal](using-the-subscriber-portal.md)
 ### [Verwalten Ihrer Abonnements](manage-vs-subscriptions.md)
+### [Kontaktieren des Abonnementadministrators](contact-my-admin.md)
 ### Vorteile
 #### Tools
 ##### [Azure-Guthaben](vs-azure.md)
@@ -58,17 +59,22 @@
 #### [Suchen und Anfordern von Schlüsseln](find-keys.md)
 #### [Internetdemonstrationen](internet-demos.md)
 ## Administratoren
-### [Administratoraufgaben](admin-responsibilities.md)
+### Administratoraufgaben
+#### [Administratoraufgaben](admin-responsibilities.md)
 #### [Inventur vor der Produktion](admin-inventory.md)
 #### [Verwalten von großen Teams und externen Vertragspartnern](manage-teams.md)
 #### [Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen](assignments-orders.md)
-### Onboarding Ihres Unternehmens
-#### [Open und Open License-Migration](open-migration.md)
+### Zugriff auf das Administratorportal
+#### [Volumenlizenz](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [Cloudabonnements](cloud-admin.md)
-#### [Video zum Onboarding](https://youtu.be/plSu6fpi7UI)
+#### [Partnerverwaltung für Kunden](open-migration.md)
+#### [Videotutorial: Zugriff auf das Administratorportal](https://youtu.be/plSu6fpi7UI)
 ### Verwenden des Administratorportals
+#### [Superadministratoren und Administratoren](admin-roles.md)
+#### [Festlegen von Vereinbarungseinstellungen](admin-prefs.md)
 #### [Übersicht](using-admin-portal.md)
+#### [Videotutorial: Verwenden des Administratorportals](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Zuweisen von Abonnements
 ##### [Hinzufügen einzelner Benutzer](assign-license.md)
 ##### [Hinzufügen mehrerer Benutzer](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [Abgelaufene Abonnements](handle-expired-license.md)
 #### [Abonnenten mit Aliasen](aliasing.md)
 #### [Abonnenten mit Anmeldungen über private E-Mail-Adressen](personal-email-sign-ins.md)
-### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
+#### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
 ## Ressourcen
 ### [Whitepaper zur Visual Studio-Lizenzierung](https://aka.ms/vslicensing)
 ### [Vergleich von Abonnementoptionen und -preisen](https://visualstudio.microsoft.com/vs/pricing)
