@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548037"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060448"
 ---
 # <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
 
@@ -62,6 +62,18 @@ Zum Ändern des aktiven Regelsatzes für ein Projekt navigieren Sie zur Register
 
 Sie können den Schweregrad der Analyzer-Regeln oder der *Diagnose*konfigurieren, wenn Sie [die-Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren. In der folgenden Tabelle werden die Optionen für den Schweregrad der Diagnose angezeigt:
 
+
+::: moniker range="vs-2019"
+|Schweregrad|Build-Zeitverhalten|Editor-Verhalten|
+|-|-|-|
+|Fehler|Verstöße werden im **Fehlerliste** und in der Befehlszeilen-Buildausgabe als *Fehler* angezeigt und bewirken, dass Builds fehlschlagen.|Das verletzen von Code wird mit einer roten Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines rotes Feld markiert.|
+|Warnung|Verstöße werden im **Fehlerliste** und in der Befehlszeilen-Buildausgabe als *Warnungen* angezeigt, bewirken jedoch nicht, dass Builds fehlschlagen.|Das verletzen von Code wird mit einer grünen Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines grünes Feld markiert.|
+|Vorschlag|Verstöße werden im **Fehlerliste**als *Meldungen* und nicht in der Befehlszeilen-Buildausgabe angezeigt.|Das verletzen von Code wird mit einem grauen Wellenlinien unterstrichen und in der Bild Lauf Leiste durch ein kleines graues Feld markiert.|
+|Silent|Für den Benutzer nicht sichtbar.|Für den Benutzer nicht sichtbar. Die Diagnose wird jedoch der IDE-Diagnose-Engine gemeldet.|
+|None|Vollständig unterdrückt.|Vollständig unterdrückt.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
 |Schweregrad|Build-Zeitverhalten|Editor-Verhalten|
 |-|-|-|
 |Fehler|Verstöße werden im **Fehlerliste** und in der Befehlszeilen-Buildausgabe als *Fehler* angezeigt und bewirken, dass Builds fehlschlagen.|Das verletzen von Code wird mit einer roten Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines rotes Feld markiert.|
@@ -69,6 +81,7 @@ Sie können den Schweregrad der Analyzer-Regeln oder der *Diagnose*konfigurieren
 |Info|Verstöße werden im **Fehlerliste**als *Meldungen* und nicht in der Befehlszeilen-Buildausgabe angezeigt.|Das verletzen von Code wird mit einem grauen Wellenlinien unterstrichen und in der Bild Lauf Leiste durch ein kleines graues Feld markiert.|
 |Ausgeblendet|Für den Benutzer nicht sichtbar.|Für den Benutzer nicht sichtbar. Die Diagnose wird jedoch der IDE-Diagnose-Engine gemeldet.|
 |None|Vollständig unterdrückt.|Vollständig unterdrückt.|
+::: moniker-end
 
 Außerdem können Sie den Schweregrad einer Regel "Zurücksetzen", indem Sie ihn auf " **default**" festlegen. Jede Diagnose hat einen Standard Schweregrad, der im **Eigenschaften** Fenster angezeigt werden kann.
 
