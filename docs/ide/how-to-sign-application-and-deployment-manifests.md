@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461606"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976714"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 
@@ -47,7 +47,7 @@ Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgeh
      Das Dialogfeld **Zertifikat auswählen** wird mit dem Inhalt des Windows-Zertifikatspeichers angezeigt.
 
     > [!TIP]
-    > Wenn Sie auf **Klicken Sie hier, um Zertifikateigenschaften anzuzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** angezeigt. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Sie können auf **Zertifikate** klicken, um weitere Hilfeinformationen anzuzeigen.
+    > Wenn Sie auf **Klicken Sie hier, um Zertifikateigenschaften anzuzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** angezeigt. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Klicken Sie auf **Zertifikate**, um weitere Hilfeinformationen anzuzeigen.
 
 3. Wählen Sie das Zertifikat aus, mit dem Sie die Manifeste signieren möchten.
 
@@ -66,9 +66,12 @@ Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgeh
     > [!NOTE]
     > Diese Option kann nur bei Dateien mit der Erweiterung *.pfx* verwendet werden. Speichern Sie Schlüsseldateien oder Zertifikate in einem anderen Format im Windows-Zertifikatspeicher, und wählen Sie das Zertifikat aus, das im vorhergehenden Verfahren beschrieben wurde. Zu den Funktionen des ausgewählten Zertifikats sollten auch Codesignaturen gehören.
 
-     Das Dialogfeld **Kennwort zum Öffnen der Datei eingeben** wird angezeigt. (Wenn die *PFX*-Datei bereits im Windows-Zertifikatspeicher gespeichert oder nicht kennwortgeschützt ist, werden Sie zur Eingabe eines Kennworts aufgefordert.)
+     Das Dialogfeld **Kennwort zum Öffnen der Datei eingeben** wird angezeigt. (Wenn die *PFX*-Datei bereits im Windows-Zertifikatspeicher gespeichert oder nicht kennwortgeschützt ist, werden Sie nicht zur Eingabe eines Kennworts aufgefordert.)
 
-4. Geben Sie das Kennwort für den Zugriff auf die Schlüsseldatei ein, und drücken Sie die **EINGABETASTE**.
+4. Geben Sie das Kennwort für den Zugriff auf die Schlüsseldatei ein, und drücken Sie dann die **EINGABETASTE**.
+
+> [!NOTE]
+> Die *PFX*-Datei kann keine Informationen zur Zertifikatsverkettung enthalten. Wenn dies allerdings der Fall ist, tritt der folgende Importfehler auf: **Das Zertifikat und der private Schlüssel für die Entschlüsselung wurden nicht gefunden.**
 
 ## <a name="sign-using-a-test-certificate"></a>Signieren mithilfe eines Testzertifikats
 

@@ -1,18 +1,18 @@
 ---
 title: Anpassen der Code Coverage-Analyse
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490630"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976760"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -34,26 +34,26 @@ Führen Sie die folgenden Schritte aus, um Code Coverage anzupassen:
 
 ::: moniker range="vs-2017"
 
-3. Wählen Sie im Menü **Test** die Option **Testeinstellungen** > **Datei für Testeinstellungen auswählen** aus, um die Testeinstellungsdatei auszuwählen. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile oder in einem Buildworkflow finden Sie unter [Konfigurieren von Komponententests mit einer *RUNSETTINGS*-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Wählen Sie im Menü **Test** die Option **Testeinstellungen** > **Datei für Testeinstellungen auswählen** aus, um die Testeinstellungsdatei auszuwählen. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile finden Sie unter [Konfigurieren von Komponententests](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Wenn Sie die Testlaufeinstellungsdatei auswählen möchten, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** aus, und wählen Sie dann **Einstellungsdatei auswählen** aus. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile oder in einem Buildworkflow finden Sie unter [Konfigurieren von Komponententests mit einer *RUNSETTINGS*-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Wenn Sie die Testlaufeinstellungsdatei auswählen möchten, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** aus, und wählen Sie dann **Einstellungsdatei auswählen** aus. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile finden Sie unter [Konfigurieren von Komponententests](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
    Wenn Sie **Code Coverage analysieren** auswählen, werden die Konfigurationsinformationen aus der Testlaufeinstellungsdatei gelesen.
 
    > [!TIP]
-   > Die vorherigen Code Coverage-Ergebnisse und Codefarben werden nicht automatisch ausgeblendet, wenn Sie Tests ausführen oder Ihren Code aktualisieren.
+   > Alle vorherigen Code Coverage-Ergebnisse und Codefarben werden nicht automatisch ausgeblendet, wenn Sie Tests ausführen oder Ihren Code aktualisieren.
 
 ::: moniker range="vs-2017"
 
 Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test**  > **Testeinstellungen**.
 
-![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei](../test/media/codecoverage-settingsfile.png)
+![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei in Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren od
 
 ### <a name="specify-symbol-search-paths"></a>Angeben von Symbolsuchpfaden
 
-Für die Code Coverage sind Symboldateien (*PDB*-Dateien) für Assemblys erforderlich. Für über die Projektmappe erstellte Assemblys werden Symboldateien meistens neben den Binärdateien bereitgestellt, und die Code Coverage funktioniert automatisch. In einigen Fällen sollten Sie jedoch Assemblys, auf die verwiesen wird, in die Codeabdeckungsanalyse einschließen. In solchen Fällen befinden sich die *PDB*-Dateien möglicherweise nicht neben den Binärdateien. Sie können jedoch den Symbolsuchpfad in der *RUNSETTINGS*-Datei angeben.
+Für die Code Coverage sind Symboldateien (*PDB*-Dateien) für Assemblys erforderlich. Für über die Projektmappe erstellte Assemblys werden Symboldateien meistens neben den Binärdateien bereitgestellt, und die Code Coverage funktioniert automatisch. In einigen Fällen sollten Sie Assemblys, auf die verwiesen wird, in die Code Coverage-Analyse einschließen. In solchen Fällen befinden sich die *PDB*-Dateien möglicherweise nicht neben den Binärdateien. Sie können jedoch den Symbolsuchpfad in der *RUNSETTINGS*-Datei angeben.
 
 ```xml
 <SymbolSearchPaths>
@@ -101,13 +101,11 @@ Alternativ können Sie angeben, welche Assemblys enthalten sein sollen. Dieser A
 </ModulePaths>
 ```
 
-Wenn **Include** leer ist, enthält die Verarbeitung der Code Coverage alle Assemblys, die geladen wurden und für die *PDB*-Dateien gefunden werden können. Die Code Coverage enthält keine Elemente, die mit einer Klausel in einer **Exclude**-Liste übereinstimmen.
-
-**Include** wird vor **Exclude** verarbeitet.
+Wenn **Include** leer ist, enthält die Verarbeitung der Code Coverage alle Assemblys, die geladen wurden und für die *PDB*-Dateien gefunden werden können. Die Code Coverage enthält keine Elemente, die mit einer Klausel in einer **Exclude**-Liste übereinstimmen. **Include** wird vor **Exclude** verarbeitet.
 
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke
 
-In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht mit Platzhaltern identisch. Insbesondere:
+Include- und exclude-Knoten verwenden reguläre Ausdrücke, die nicht mit Platzhaltern identisch sind. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Hier einige Beispiele:
 
 - **.\*** entspricht einer Zeichenfolge beliebiger Zeichen
 
@@ -153,7 +151,10 @@ Beispiel:
 
 - **Source**: gleicht Elemente nach dem Pfadnamen der Quelldatei ab, in der sie definiert sind.
 
-- **Attribute**: gleicht Elemente ab, an die ein bestimmtes Attribut angefügt ist. Geben Sie den vollständigen Namen des Attributs ein, und schließen Sie „Attribut“ am Ende des Namens ein.
+- **Attribute**: gleicht Elemente ab, an die ein bestimmtes Attribut angefügt ist. Geben Sie den vollständigen Namen des Attributs an (beispielsweise `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).
+
+  > [!TIP]
+  > Wenn Sie das Attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> ausschließen, werden Code, der Sprachfunktionen wie `async`, `await` und `yield return` verwendet, und automatisch implementierte Eigenschaften von der Code Coverage-Analyse ausgeschlossen. Wenn Sie tatsächlich generierten Code ausschließen möchten, schließen Sie nur das Attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> aus.
 
 - **Function**: gleicht Prozeduren, Funktionen oder Methoden nach dem vollqualifizierten Namen ab. Für den Abgleich mit einem Funktionsnamen muss der reguläre Ausdruck mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klassenname, Methodenname und Parameterliste, übereinstimmen. Beispiel:
 
@@ -243,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 

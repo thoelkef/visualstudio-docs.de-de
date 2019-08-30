@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824816"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976724"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronisieren von Visual Studio-Einstellungen auf mehreren Computern
 
@@ -71,7 +71,7 @@ Wenn Sie derzeit über Parallelinstallationen von Visual Studio verfügen und de
 
 1. Upgrade auf Visual Studio 2017 Version 15.3 oder höher
 
-2. Verwenden Sie den **Assistenten zum Importieren/Exportieren von Einstellungen**, um alle Ihre vorhandenen Einstellungen in einen Speicherort außerhalb des Ordners *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* zu exportieren.
+2. Verwenden Sie den **Assistenten zum Importieren und Exportieren von Einstellungen**, um alle vorhandenen Einstellungen in einen Speicherort außerhalb des Ordners *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* zu exportieren.
 
 3. Öffnen Sie die **Developer-Eingabeaufforderung für Visual Studio 2017**, und führen Sie `devenv /resetuserdata` aus.
 
@@ -84,6 +84,10 @@ Wenn Sie derzeit über Parallelinstallationen von Visual Studio verfügen und de
 Bestimmte Einstellungen wie das Layout des Toolfensters werden nicht zwischen verschiedenen parallelen Installationen von Visual Studio freigegeben. Die Datei *CurrentSettings.vssettings* unter *%userprofile%\Documents\Visual Studio 2019\Settings* befindet sich in einem installationsspezifischen Ordner, der *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings* ähnelt.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Zurücksetzen synchronisierter Einstellungen
+
+Melden Sie sich bei Visual Studio an, und klicken Sie dann auf **Extras** > **Einstellungen importieren/exportieren**, um den **Assistenten zum Importieren und Exportieren von Einstellungen** zu öffnen und alle Einstellungen auf die Standardeinstellung zurückzusetzen. Klicken Sie auf **Alle Einstellungen zurücksetzen**, und führen Sie dann die restlichen Schritte des Assistenten aus.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950347"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891270"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -47,7 +47,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
 
 In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können:
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
 |ext_*|Fügen Sie das Präfix `ext_` zu einem beliebigen Parameter hinzu, um auf die Variablen der übergeordneten Vorlage zu verweisen. Beispielsweise `ext_safeprojectname`.|
@@ -57,7 +57,8 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |projectname|Der Name, der vom Benutzer bei der Erstellung des Projekts angegeben wurde.|
 |registeredorganization|Der Registrierungsschlüsselwert aus HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Der Stammnamespace des aktuellen Projekts. Dieser Parameter gilt nur für Elementvorlagen.|
-|safeitemname|Wie `itemname`, jedoch wurden alle unsicheren Zeichen und Leerzeichen entfernt.|
+|safeitemname|Wie `itemname`, jedoch mit unsicheren Zeichen und Leerzeichen, die durch Unterstriche ersetzt wurden.|
+|safeitemrootname|Wie in `safeitemname`.|
 |safeprojectname|Der vom Benutzer beim Erstellen des Projekts angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden.|
 |Uhrzeit|Die aktuelle Uhrzeit im Format TT/MM/JJJJ 00:00:00.|
 |SpecificSolutionName|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `SpecificSolutionName` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `SpecificSolutionName` leer.|

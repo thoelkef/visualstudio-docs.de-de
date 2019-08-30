@@ -1,8 +1,10 @@
 ---
 title: Barrierefreiheitsfeatures in Visual Studio
 description: Erfahren Sie mehr über die Features und Hilfsprogramme, durch die die Windows-Betriebssysteme und die Visual Studio-Entwicklersuite für alle Benutzer, einschließlich Personen mit Behinderungen, leichter verwendet werden können.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
@@ -12,17 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793156"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060375"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Barrierefreiheitsfeatures in Visual Studio
-
-> [!TIP]
-> Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
 
 Neben den Eingabehilfen und Dienstprogrammen in Windows erleichtern die folgenden Funktionen Visual Studio für den Zugang für Personen mit Behinderungen:
 
@@ -39,9 +38,6 @@ Neben den Eingabehilfen und Dienstprogrammen in Windows erleichtern die folgende
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Barrierefreiheit für Visual Studio für Mac](/visualstudio/mac/accessibility).
 
-> [!IMPORTANT]
-> Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie der Tochtergesellschaft-Karte, die im Lieferumfang des Softwarepakets enthalten ist, verwenden, oder besuchen Sie [Kontaktinformationen für den Microsoft-Support](http://support.microsoft.com/ContactUs) und klicken Sie auf den Link **Microsoft Niederlassungen weltweit suchen** (im unteren Bereich der Seite). Diese Seite enthält eine Liste mit Telefonnummern und Adressen der Microsoft Support Services. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
-
 Weitere Informationen finden Sie unter den folgenden Themen:
 
 - [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../../ide/reference/how-to-set-ide-accessibility-options.md)
@@ -53,6 +49,16 @@ Weitere Informationen finden Sie unter den folgenden Themen:
 - [Tipps und Tricks zur Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)
 
 - [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+
+> [!IMPORTANT]
+> Die Informationen auf dieser Seite gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen lassen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der auf dieser Seite beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über die Barrierefreiheit sind auch in anderen Sprachen verfügbar.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 
