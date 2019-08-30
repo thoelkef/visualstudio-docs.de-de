@@ -1,8 +1,10 @@
 ---
 title: Produkte und Dienste von Microsoft für Barrierefreiheit
 description: Erfahren Sie mehr über die Produkte und Dienste von Microsoft, die dabei helfen können, den Zugriff auf unsere Betriebssysteme, Programme und Anwendungen für jeden zu verbessern, einschließlich für Personen mit Behinderungen.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -19,30 +21,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926271"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060392"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 
-> [!TIP]
-> Weitere Informationen zu aktuellen Barrierefreiheitupdates für Visual Studio finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3 (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3])](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Diese Seite enthält Informationen über die Funktionen, Produkte und Dienste, die Personen mit Behinderungen die Verwendung von Microsoft Windows erleichtern.
 
-Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Die folgenden Themen enthalten Informationen über die Funktionen, Produkte und Dienste, die Menschen mit Behinderungen die Verwendung von Microsoft Windows erleichtern:
-
-- [Barrierefreiheitsfeatures in Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
-
-- [Dokumentation in alternativen Formaten](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
-
-- [Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
-
-- [Weitere Informationen](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
-
-> [!NOTE]
-> Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
+> [!IMPORTANT]
+> Die Informationen auf dieser Seite gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen lassen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der auf dieser Seite beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen zur Barrierefreiheit sind auch in anderen Sprachen verfügbar.
 
 ## <a name="windows"></a> Barrierefreiheitsfeatures in Windows
 
@@ -66,9 +57,8 @@ Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentatio
 
 Darüber hinaus erhalten Sie weitere Microsoft-Veröffentlichungen von Learning Ally. Learning Ally verteilt diese Dokumente an registrierte und berechtigte Mitglieder ihres Vertriebsdiensts. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:
 
-|Lernhilfe|
-| - |
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Website von Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
+> Lernhilfe<br />
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Website von Learning Ally: [http://www.learningally.org](http://www.learningally.org/).
 
 Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.
 
@@ -86,7 +76,15 @@ Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgem
 
 Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
 
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Weitere Informationen zu aktuellen Barrierefreiheitupdates für Visual Studio finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3 (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3])](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+
+::: moniker-end
+
 ## <a name="see-also"></a>Siehe auch
 
 * [Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Barrierefreiheit für Visual Studio für Mac](/visualstudio/mac/accessibility)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605954"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976737"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Dialogfeld „Optionen“: Projekte und Projektmappen \> Allgemein
 
@@ -70,11 +70,31 @@ Wenn diese Option aktiviert ist, zeigt Visual Studio ein Bestätigungsmeldungsfe
 
 ## <a name="reopen-documents-on-solution-load"></a>Dokumente beim Laden der Projektmappe erneut öffnen
 
-**Eingeführt in Visual Studio 2017 Version 15.8**
-
 Wenn diese Option aktiviert ist, werden die Dokumente, die beim letzten Schließen dieser Projektmappe noch geöffnet waren, automatisch geöffnet, wenn die Projektmappe geöffnet wird.
 
 Das erneute Öffnen von bestimmten Dateitypen oder Designern kann das Laden von Projektmappen verzögern. Deaktivieren Sie diese Option, um die [Leistung beim Laden von Projektmappen](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) zu verbessern, wenn Sie den vorherigen Kontext der Projektmappe nicht wiederherstellen möchten.
+
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Wiederherstellen des Status der Projektmappen-Explorer-Projekthierarchie beim Laden der Projektmappe
+
+Wenn diese Option ausgewählt ist, wird der Zustand der Knoten im Projektmappen-Explorer in Bezug darauf wieder hergestellt, ob sie beim letzten Öffnen der Projektmappe erweitert oder zugeklappt wurden. Deaktivieren Sie diese Option, um die Ladezeit für große Projektmappen zu verringern.
+
+> [!TIP]
+> Wenn Sie diese Option deaktivieren, können Sie zum aktiven Dokument im Projektmappen-Explorer navigieren, indem Sie auf der Symbolleiste **Projektmappen-Explorer** auf **Mit aktivem Dokument synchronisieren** klicken.
+>
+> ![Mit aktivem Dokument im Projektmappen-Explorer synchronisieren](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Öffnen von Projektdateien im SDK-Format mit Doppelklick oder der Eingabetaste
+
+Wenn diese Option ausgewählt ist und Sie im Projektmappen-Explorer auf einen Projektknoten im SDK-Format doppelklicken oder diesen auswählen und dann die **EINGABETASTE** drücken, wird die Projektdatei (z. B. \*CSPROJ-Datei) als XML-Datei im Editor geöffnet. Wenn diese Option deaktiviert ist, wird der Knoten nur erweitern oder zugeklappt, wenn Sie auf einen Projektknoten im SDK-Format im Projektmappen-Explorer doppelklicken oder diesen auswählen und die **EINGABETASTE** drücken.
+
+Wenn Sie diese Option nicht ausgewählt haben und eine Projektdatei im SDK-Format bearbeiten möchten, klicken Sie mit der rechten Maustaste auf den Projektknoten im Projektmappen-Explorer und danach auf **Projektdatei bearbeiten**. Bei anderen Projekttypen müssen Sie das Projekt vor der Bearbeitung in Visual Studio erst noch hochladen.
+
+> [!TIP]
+> Ein *Projekt im SDK-Format* oder ein [Projekt-SDK](../../msbuild/how-to-use-project-sdk.md) verfügt über ein neueres und optimiertes Projektdateiformat, das mit MSBuild 15.0 eingeführt wurde. Ein Projekt im SDK-Format enthält ein `Sdk`-Attribut für das `Project`-Element (beispielsweise `<Project Sdk="Microsoft.NET.Sdk">`). Visual Studio erstellt ein Projekt im SDK-Format, wenn Sie beispielsweise ein neues .NET Core-Projekt aus einer der Visual Studio-Vorlagen erstellen.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

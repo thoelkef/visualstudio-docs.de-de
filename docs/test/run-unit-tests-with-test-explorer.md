@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918167"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891333"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -96,7 +96,7 @@ Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang 
 
 ## <a name="view-test-results"></a>Testergebnisse anzeigen
 
-Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests**angezeigt. Im Detailbereich unten im Test-Explorer wird eine Zusammenfassung des Testlaufs angezeigt.
+Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests**angezeigt. Im Detailbereich unten oder auf der Seite des Test-Explorers wird eine Zusammenfassung des Testlaufs angezeigt.
 
 ### <a name="view-test-details"></a>Anzeigen von Testdetails
 
@@ -181,7 +181,7 @@ Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsnam
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Die Kategorie "Besitzer" wird vom Komponententest-Framework definiert. Sie müssen einen Zeichenfolgenwert für den Besitzer angeben.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Die Kategorie "Priorität" wird vom Komponententest-Framework definiert. Sie müssen einen ganzzahligen Wert für die Priorität angeben.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Mithilfe des TestCategory-Attributs können Sie eine Kategorie ohne Wert angeben. Bei einer durch das TestCategory-Attribut definierten Kategorie kann es sich auch um die Kategorie eines TestProperty-Attributs handeln.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Mithilfe des TestCategory-Attributs können Sie eine Kategorie ohne Wert angeben.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|Mithilfe des TestProperty-Attributs können Sie Merkmalskategorie/Wert-Paare definieren.|
 
 
@@ -215,7 +215,7 @@ Die Wiedergabeliste wird in einer neuen Registerkarte im Test-Explorer geöffnet
 
 ![Die Wiedergabeliste wird in einer separaten Registerkarte im Test-Explorer geöffnet.](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-Wählen Sie zum**Hinzufügen von Tests zu einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
+Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
 
 **Um eine Wiedergabeliste zu öffnen**, wählen Sie das Wiedergabelistensymbol in der Visual Studio-Symbolleiste, und wählen Sie eine zuvor gespeicherte Wiedergabelistendatei aus dem Menü.
 ::: moniker-end
@@ -236,7 +236,7 @@ Spalten können gefiltert, sortiert und neu angeordnet werden.
 
 * Um die Reihenfolge der Spalten zu ändern, klicken Sie auf eine Spaltenüberschrift, und ziehen Sie Sie nach links oder rechts.
 
-* Um eine Spalte zu sortieren, klicken Sie auf die Spaltenüberschrift. Es können nicht alle Spalten sortiert werden.
+* Um eine Spalte zu sortieren, klicken Sie auf die Spaltenüberschrift. Es können nicht alle Spalten sortiert werden. Sie können auch nach einer sekundären Spalte sortieren, indem Sie die **UMSCHALTTASTE** gedrückt halten und auf einen zusätzlichen Spaltenheader klicken.
 
   ![Spaltensortierung](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Filtern nach einem anderen Kriterium:
 
 2. Wählen Sie ein neues Kriterium aus.
 
-3. Geben Sie zwischen den Anführungszeichen den Filterwert ein.
+3. Geben Sie zwischen den Anführungszeichen den Filterwert ein. Wenn Sie nach einer genauen Entsprechung für die Zeichenfolge anstatt einer enthaltenden Entsprechung suchen möchten, verwenden Sie das Gleichheitszeichen (=) anstelle des Doppelpunkts (:).
 
 ::: moniker range="vs-2017"
 ![Tests im Test-Explorer filtern](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Filtern nach einem anderen Kriterium:
 > [!NOTE]
 > Bei Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet, und die angegebene Zeichenfolge kann einem die oft ausgegebene Befehlszeilen  Teil des Kriteriumswerts entsprechen.
 
+::: moniker range="vs-2017"
 |Qualifizierer|BESCHREIBUNG|
 |-|-----------------|
 |**Merkmal**|Durchsucht sowohl die Merkmalskategorie als auch den Wert nach Übereinstimmungen. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|
 |**Projekt**|Durchsucht die Testprojektnamen nach Übereinstimmungen.|
 |**Fehlermeldung**|Durchsucht die von fehlerhaften Asserts zurückgegebenen benutzerdefinierte Fehlermeldungen nach Übereinstimmungen.|
 |**Dateipfad**|Durchsucht die vollqualifizierten Dateinamen der Testquelldateien nach Übereinstimmungen.|
-|**Vollqualifizierter Name**|Durchsucht die vollqualifizierten Dateinamen von Testnamespaces, Klassen und Methoden nach Übereinstimmungen.|
+|**Vollqualifizierter Name**|Durchsucht die vollqualifizierten Namen von Testnamespaces, Klassen und Methoden nach Übereinstimmungen.|
 |**Ausgabe**|Durchsucht die benutzerdefinierten Fehlermeldungen, die als Standardausgabe (stdout) oder Standardfehler (stderr) geschrieben werden. Die Syntax zum Angeben von Ausgabemeldungen wird durch das Komponententest-Framework festgelegt.|
 |**Ergebnis**|Sucht in den Kategorienamen des Test-Explorers nach Übereinstimmungen: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Qualifizierer|BESCHREIBUNG|
+|-|-----------------|
+|**Zustand**|Sucht in den Kategorienamen des Test-Explorers nach Übereinstimmungen: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
+|**Merkmale**|Durchsucht sowohl die Merkmalskategorie als auch den Wert nach Übereinstimmungen. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.|
+|**Vollqualifizierter Name**|Durchsucht die vollqualifizierten Namen von Testnamespaces, Klassen und Methoden nach Übereinstimmungen.|
+|**Projekt**|Durchsucht die Testprojektnamen nach Übereinstimmungen.|
+|**Zielframework**|Sucht in den Kategorienamen des Test-Explorers nach Übereinstimmungen: **Fehlgeschlagene Tests**, **übersprungene Tests** und **bestandene Tests**.|
+|**Namespace**|Durchsucht die Testnamespaces nach Übereinstimmungen.|
+|**Klasse**|Durchsucht die Testklassennamen nach Übereinstimmungen.|
+::: moniker-end
 
 Verwenden Sie folgende Syntax, um eine Teilmenge von Filterergebnissen auszuschließen :
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416446"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976779"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -36,7 +36,12 @@ Das Code Coverage-Feature ist nur in der Visual Studio Enterprise-Edition verfü
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>So analysieren Sie die Code Coverage in Komponententests im Test-Explorer
 
+::: moniker range="vs-2017"
 1. Wählen Sie im Menü **Test** die Option **Code Coverage analysieren** aus.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Klicken Sie im **Test-Explorer** im Menü **Ausführen** auf **Code Coverage analysieren**.
+::: moniker-end
 
 2. Wählen Sie ![Symbol „Code Coverage-Färbung anzeigen“](../test/media/codecoverage-showcoloringicon.png) **Code Coverage-Färbung anzeigen**, um anzuzeigen, welche Zeilen ausgeführt wurden.
 
