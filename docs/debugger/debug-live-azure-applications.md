@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493315"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179826"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger
 
@@ -37,7 +37,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 * Momentaufnahmedebugger ist nur ab Visual Studio 2017 Enterprise Version 15,5 oder höher mit der **Arbeitsauslastung**für die Azure-Entwicklung verfügbar. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
 
    ::: moniker range=">=vs-2019"
-   Wenn Sie nicht bereits installiert ist, installieren Sie [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Wenn Sie ein Update von einer früheren Visual Studio-Installation durchführen, führen Sie den Visual Studio-Installer aus, und überprüfen Sie die Momentaufnahmedebugger Komponente in der **Arbeitsauslastung ASP.net und Webentwicklung**.
+   Wenn Sie nicht bereits installiert ist, installieren Sie [Visual Studio 2019](https://visualstudio.microsoft.com/downloads). Wenn Sie ein Update von einer früheren Visual Studio-Installation durchführen, führen Sie den Visual Studio-Installer aus, und überprüfen Sie die Momentaufnahmedebugger Komponente in der **Arbeitsauslastung ASP.net und Webentwicklung**.
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    Falls noch nicht installiert, installieren Sie [Visual Studio 2017 Enterprise Version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) oder höher. Wenn Sie ein Update von einer früheren Visual Studio 2017-Installation durchführen, führen Sie den Visual Studio-Installer aus, und überprüfen Sie die Momentaufnahmedebugger Komponente in der **Arbeitsauslastung ASP.net und Webentwicklung**.
