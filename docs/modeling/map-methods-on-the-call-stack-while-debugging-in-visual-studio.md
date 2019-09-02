@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445144"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180068"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Zuordnen von Methoden in der Aufrufliste beim Debuggen in Visual Studio
 
@@ -51,7 +51,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
   Thema
 
-- [Video: Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: Visuelles Debuggen mit der Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Zuordnen der Aufrufliste](#MapStack)
 
@@ -79,7 +79,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 1. Beginnen Sie mit dem Debuggen. (Tastatur: **F5**)
 
-2. Wählen Sie nach Ihrer app in den Unterbrechungsmodus wechselt oder Sie eine Funktion schrittweise, **Code Map**. (Tastatur: **Ctrl** + **Shift** + **`**)
+2. Wählen Sie nach Ihrer app in den Unterbrechungsmodus wechselt oder Sie eine Funktion schrittweise, **Code Map**. (Tastatur: **STRG** + **UMSCHALT**) +  **`**
 
      ![Code Map auswählen, um Aufruflistenzuordnung zu starten](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -105,7 +105,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
  Jetzt haben Sie einer Karte – was geschieht als Nächstes? Wenn Sie mit C# oder Visual Basic arbeiten, fügen Sie Elemente wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was im Code geschieht.
 
- Doppelklicken Sie auf eine Methode, um ihre Codedefinition anzuzeigen, oder verwenden Sie das Kontextmenü für die Methode. (Tastatur: Wählen Sie die Methode auf der Karte, und drücken Sie **F12**)
+ Doppelklicken Sie auf eine Methode, um ihre Codedefinition anzuzeigen, oder verwenden Sie das Kontextmenü für die Methode. (Tastatur: Wählen Sie die Methode auf der Karte aus, und drücken Sie **F12**.
 
  ![Für eine Methode in der Code Map zur Codedefinition wechseln](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -156,7 +156,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
    Ändern der Zuordnung wirkt sich nicht auf den Code in keiner Weise aus. Sie können beliebigen Code in der Zuordnung gerne umbenennen, verschieben oder entfernen.
 
-- **Was bedeutet, dass diese Meldung: "Das Diagramm möglicherweise eine ältere Version des Codes basiert auf"?**
+- **Was bedeutet diese Meldung: "Das Diagramm basiert möglicherweise auf einer älteren Version des Codes"?**
 
    Der Code wurde möglicherweise geändert, nachdem Sie die Zuordnung zuletzt aktualisiert haben. Zum Beispiel befindet sich möglicherweise ein Aufruf für die Zuordnung nicht mehr im Code. Schließen Sie die Meldung, und versuchen Sie dann, die Projektmappe vor der erneuten Aktualisierung der Zuordnung neu zu erstellen.
 
@@ -178,7 +178,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 - **Wie verhindere ich die Zuordnung neue Aufruflisten automatisch hinzufügt?**
 
-   Wählen Sie ![Schaltfläche &#45; anzeigen Aufrufliste auf Code Map automatisch](../debugger/media/debuggermap_automaticupdateicon.gif) auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Karte hinzufügen möchten, drücken Sie die **STRG** + **UMSCHALT** + **`**.
+   Wählen Sie ![Schaltfläche &#45; anzeigen Aufrufliste auf Code Map automatisch](../debugger/media/debuggermap_automaticupdateicon.gif) auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Karte hinzufügen möchten, drücken Sie die **STRG** + **UMSCHALT** +  **`** .
 
    Die Zuordnung weiterhin vorhandene Aufruflisten in der Karte hervorgehoben, während des Debuggens.
 

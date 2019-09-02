@@ -45,7 +45,6 @@
 ##### [MSDN Magazine-Abonnement](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Support 
-##### [Azure Advisory Chat](vs-azure-advisory-chat.md)
 ##### [Azure-Community](vs-azure-community.md)
 ##### [Concierge-Support](vs-concierge-chat.md)
 ##### [Technischer Support](vs-tech-support.md)
