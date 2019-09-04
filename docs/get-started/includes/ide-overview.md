@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 27c9c453549f753f3dfdc1664fd76f7a65d0ded5
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68148380"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197136"
 ---
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
@@ -152,7 +152,7 @@ In diesem Abschnitt erstellen Sie ein einfaches Projekt, um einige Dinge auszupr
 
 ::: moniker range=">=vs-2019"
 
-[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
+[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/downloads), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
 
 ::: moniker-end
 

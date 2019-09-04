@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: dc1bddc83e094289eb2364e7d88b56536ab18bd2
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820656"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180228"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -203,7 +203,7 @@ In diesem Abschnitt erstellen Sie ein einfaches Projekt, um einige Dinge auszupr
 
 ::: moniker range=">=vs-2019"
 
-[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
+[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/downloads), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
 
 ::: moniker-end
 

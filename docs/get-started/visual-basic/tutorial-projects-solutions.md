@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97b1fc79c7b558fc4445b3d2621746e752a4ef71
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 37faf8dc0598a4e59c74e36da22df16119d5a001
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416486"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180160"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Erfahren Sie mehr über Projekte und Projektmappen mithilfe von Visual Basic
 
@@ -32,7 +32,7 @@ In diesem einführenden Artikel erfahren Sie mehr über das Erstellen einer *Pro
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen.
 
 ::: moniker-end
 

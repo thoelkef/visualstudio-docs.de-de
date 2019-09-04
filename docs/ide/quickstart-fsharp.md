@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953326"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180322"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihres ersten ASP.NET Core-Webdiensts in F\#
 
@@ -30,7 +30,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker range="vs-2019"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen.
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Web-API erstellen. Der P
 
 2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual F#**, und klicken Sie auf **Web**. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Webanwendung** und anschließend auf **OK**.
+3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual F#** , und klicken Sie auf **Web**. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Webanwendung** und anschließend auf **OK**.
 
      Falls Sie die Projektvorlagenkategorie **.NET Core** nicht finden, klicken Sie im linken Bereich auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
 

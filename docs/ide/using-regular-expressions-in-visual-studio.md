@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345734"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222742"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -48,7 +48,7 @@ Die folgende Tabelle enthält eine Auswahl an Zeichen, Operatoren, Konstrukten u
 |Erfassung und implizite Nummerierung des in Klammern befindlichen Ausdrucks|()|`([a-z])X\1` findet „aXa“ und „bXb“, jedoch nicht „aXb“. „\1“ bezieht sich auf die erste Ausdrucksgruppe „[a-z]“. Weitere Informationen finden Sie unter [Erfassungsgruppen und Ersetzungsmuster](#capture-groups-and-replacement-patterns). |
 |Aufheben der Gültigkeit einer Übereinstimmung|(?!abc)|`real(?!ity)` findet „real“ in „realty“ und „really“, jedoch nicht in „reality“. Findet außerdem das zweite "real" (jedoch nicht das erste "real") in "realityreal".|
 |Übereinstimmung mit beliebigem Zeichen, das sich nicht in einem angegebenen Satz von Zeichen befindet. Weitere Informationen finden Sie unter [Negative Zeichengruppe](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` findet „bef“ in „before“, „beh“ in „behind“ und „bel“ in „below“, jedoch nicht „beneath“.|
-|Übereinstimmung mit dem Ausdruck vor oder nach dem Symbol.|&#124;|`(sponge\|mud) bath` findet „sponge bath“ und „mud bath“.|
+|Übereinstimmung mit dem Ausdruck vor oder nach dem Symbol.|&#124;|`(sponge|mud) bath` findet „sponge bath“ und „mud bath“.|
 |[Versehen des Zeichens hinter dem umgekehrten Schrägstrich mit Escapezeichen](/dotnet/standard/base-types/character-escapes-in-regular-expressions).| \\ |`\^` findet das Zeichen „^“.|
 |Angeben der Anzahl von Vorkommen des vorherigen Zeichens oder der Gruppe. Weitere Informationen finden Sie unter [Übereinstimmung mit genau n Vorkommen](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, wobei n die Anzahl von Vorkommen ist.|`x(ab){2}x` findet „xababx“ und `x(ab){2,3}x` findet „xababx“ und „xabababx“, jedoch nicht „xababababx“.|
 |[Übereinstimmung mit Text in einer Unicode-Kategorie](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Weitere Informationen zu Unicode-Zeichenklassen finden Sie unter [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, wobei "X" die Unicode-Nummer angibt.|`\p{Lu}` findet „T“ und „D“ in „Thomas Doe“.|

@@ -4,15 +4,14 @@ description: Verwendung einer EditorConfig-Datei zum Aktivieren konsistenter Cod
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998756"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108112"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Erstellen und Bearbeiten einer benutzerdefinierten EditorConfig-Datei
 
@@ -84,7 +83,7 @@ Sie sollten eine vorhandene `.editorconfig`-Datei in Ihrem Projekt wiederverwend
 
 2. Navigieren Sie zum Verzeichnis der gewünschten Datei.
 
-3. Dateien, die mit `.` beginnen (z.B. `.editorconfig`) sind versteckte Dateien in macOS, drücken Sie daher auf **cmd+UMSCHALT+ .**, um die `.editorconfig`-Datei sichtbar zu machen.
+3. Dateien, die mit `.` beginnen (z.B. `.editorconfig`) sind versteckte Dateien in macOS, drücken Sie daher auf **cmd+UMSCHALT+ .** , um die `.editorconfig`-Datei sichtbar zu machen.
 
 4. Wählen Sie die `.editorconfig`-Datei aus, und klicken Sie auf **Öffnen**:
 
@@ -123,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 Durch Festlegen von `root` auf `true` wird diese Datei als oberste Datei der Codebase markiert, und alle höheren `.editorconfig`-Dateien im Projekt werden ignoriert, wie im Abschnitt [Überschreiben der EditorConfig-Einstellungen](#override-editorconfig-settings) erläutert wird.
 
-Jeder Abschnitt wird durch ein Quadrat (**[ ]**) gekennzeichnet und gibt Informationen zu den Arten von Dateien an, auf die die folgenden Eigenschaften sich beziehen.
+Jeder Abschnitt wird durch ein Quadrat ( **[ ]** ) gekennzeichnet und gibt Informationen zu den Arten von Dateien an, auf die die folgenden Eigenschaften sich beziehen.
 
 Im obigen Beispiel werden einige Einstellungen auf alle Dateien im Projekt angewendet. Andere werden nur C#-Dateien hinzugefügt. Die folgenden Screenshots zeigen den Code vor und nach der Anwendung der `.editorconfig`-Einstellung:
 

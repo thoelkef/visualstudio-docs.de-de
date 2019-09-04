@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: b047222f67d75bbc092a731c8de1ca1ba6d94cf7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692161"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108025"
 ---
 # <a name="working-with-git"></a>Arbeiten mit Git
 
@@ -59,7 +59,7 @@ Damit können Sie die folgenden Aktionen ausführen:
 
 ## <a name="switching-branches"></a>Wechseln von Branches
 
-Der erste in einem Repository erstellte Branch wird standardmäßig als  **Masterbranch**  bezeichnet. Es gibt keine technischen Unterschiede zwischen dem Masterbranch und allen anderen. Der Masterbranch wird aber in Entwicklungsteams am häufigsten als „Live“- oder „Produktionsbranch“ bezeichnet.
+Der erste in einem Repository erstellte Branch wird standardmäßig als **Masterbranch** bezeichnet. Es gibt keine technischen Unterschiede zwischen dem Masterbranch und allen anderen. Der Masterbranch wird aber in Entwicklungsteams am häufigsten als „Live“- oder „Produktionsbranch“ bezeichnet.
 
 Durch das Branchen von Master (oder jedem anderen Branch) kann eine eigenständige Entwicklungslinie erstellt werden. Diese neue Version des Masterbranchs kann unabhängig von der Liveversion bereitgestellt werden. Branches werden in der Softwareentwicklung häufig für Funktionen so verwendet.
 

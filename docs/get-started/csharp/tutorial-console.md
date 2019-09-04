@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5497b0a343960e3f9e7e606e45c41f188b2bdcba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823644"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180241"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -34,7 +34,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker range="vs-2019"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen.
 
 ::: moniker-end
 

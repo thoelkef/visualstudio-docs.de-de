@@ -4,15 +4,14 @@ description: Herstellen einer Verbindung zwischen Visual Studio für Mac und Tea
 author: conceptdev
 ms.author: crdun
 ms.date: 06/25/2019
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 52b40f8dbf24dd1e712bd0481e36f39cfcc1fc7d
-ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
+ms.openlocfilehash: fa269285cf11df848f842524e0d3d496a67b7469
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67398990"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108236"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Herstellen einer Verbindung mit der Team Foundation-Versionskontrolle
 

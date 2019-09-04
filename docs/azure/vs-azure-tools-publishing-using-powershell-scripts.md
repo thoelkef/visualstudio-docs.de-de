@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: f598ddd3175353103d478dca9828536346e247cd
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: cd19c619eca4505eab4c332783a678bf5e7ba87a
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177265"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179792"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
 
@@ -24,7 +24,7 @@ Mithilfe dieser Skripts können Sie angepasste Versionen Ihrer Website (auch als
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Visual Studio 2015 oder höher mit installierter **Azure-Workload** oder Visual Studio 2013 und Azure SDK 2.3 oder höher. Siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). (Sie benötigen das Azure SDK nicht, um die Skripts für Webprojekte zu generieren. Dieses Feature bezieht sich auf Webprojekte, nicht auf Webrollen in Clouddiensten.)
+* Visual Studio 2015 oder höher mit installierter **Azure-Workload** oder Visual Studio 2013 und Azure SDK 2.3 oder höher. Siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads). (Sie benötigen das Azure SDK nicht, um die Skripts für Webprojekte zu generieren. Dieses Feature bezieht sich auf Webprojekte, nicht auf Webrollen in Clouddiensten.)
 * Azure PowerShell 0.7.4 oder höher. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) oder höher.
 

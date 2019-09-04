@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 599eef257894c0619252a4c2db23b304e4439d70
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483504"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180034"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 
@@ -33,7 +33,7 @@ Visual Studio 2017 wurde so gestaltet, dass es unter verschiedensten Netzwerk- u
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
+Visual Studio 2019 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/downloads) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
 
 ::: moniker-end
 

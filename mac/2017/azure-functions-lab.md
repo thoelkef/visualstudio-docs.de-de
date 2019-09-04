@@ -4,15 +4,14 @@ description: Verwenden von Azure-Funktionen in Visual Studio für Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a2dd0f797d362edf5d75f798ff4578cc3c2b50c
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933851"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108008"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -25,7 +24,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 > * Integrieren mit Webressourcen und Azure-Speicherressourcen
 > * Orchestrieren eines Workflows mit mehreren Azure-Funktionen
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 - Visual Studio für Mac 7.5 oder höher
 - Ein Azure-Abonnement (kostenlos unter [https://azure.com/free](https://azure.com/free) verfügbar)
@@ -131,7 +130,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
     ![Neue Run-Methode mit hervorgehobener Methodeninitialisierung](media/azure-functions-lab-image14.png)
 
-1. Der erste Parameter ist mit dem Attribut **HttpTrigger** markiert, das angibt, dass die Methode über eine HTTP-Anforderung aufgerufen wird. Das Attribut gibt ebenfalls die Autorisierungsebene der Methode sowie die unterstützten Verben (in diesem Fall lediglich **"GET"**) an. Sie können optional eine **Route** definieren, die den Pfad zur Methode überschreibt und automatisch Variablen aus dem Pfad extrahieren kann. Da der Wert der **Route** in diesem Fall NULL ist, wird der Pfad dieser Methode standardmäßig auf **/api/Add** festgelegt.
+1. Der erste Parameter ist mit dem Attribut **HttpTrigger** markiert, das angibt, dass die Methode über eine HTTP-Anforderung aufgerufen wird. Das Attribut gibt ebenfalls die Autorisierungsebene der Methode sowie die unterstützten Verben (in diesem Fall lediglich **"GET"** ) an. Sie können optional eine **Route** definieren, die den Pfad zur Methode überschreibt und automatisch Variablen aus dem Pfad extrahieren kann. Da der Wert der **Route** in diesem Fall NULL ist, wird der Pfad dieser Methode standardmäßig auf **/api/Add** festgelegt.
 
     ![Neue Run-Methode mit hervorgehobenem Parameter](media/azure-functions-lab-image15.png)
 
@@ -226,7 +225,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. Fügen Sie am Ende der ersten Bindung (nach der Zeile **"name": "req"**) folgende Eigenschaften hinzu: Denken Sie daran, in der vorherigen Zeile ein Komma einzufügen. Diese Eigenschaft überschreibt das Standardstammverzeichnis, sodass nun **int**-Parameter aus dem Pfad extrahiert und in den Methodenparametern namens **x** und **y** platziert werden.
+1. Fügen Sie am Ende der ersten Bindung (nach der Zeile **"name": "req"** ) folgende Eigenschaften hinzu: Denken Sie daran, in der vorherigen Zeile ein Komma einzufügen. Diese Eigenschaft überschreibt das Standardstammverzeichnis, sodass nun **int**-Parameter aus dem Pfad extrahiert und in den Methodenparametern namens **x** und **y** platziert werden.
 
     ```json
     "direction": "in",
@@ -299,7 +298,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
     ![URL für HTTP-Funktionen](media/azure-functions-lab-image31.png)
 
-1. Kehren Sie zum Browserfenster zurück, und navigieren Sie zu **http://localhost:7071/api/Adder/3/5**.
+1. Kehren Sie zum Browserfenster zurück, und navigieren Sie zu **http://localhost:7071/api/Adder/3/5** .
 
 1. Auch dieses Mal funktioniert die Methode. Sie extrahiert Parameter aus dem Pfad und erzeugt eine Summe.
 
@@ -348,7 +347,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
 
 1. Drücken Sie **F5**, um das Projekt zu erstellen und auszuführen.
 
-1. Navigieren Sie in der Registerkarte des Browsers zu **http://localhost:7071/api/Process/4/6**. Dadurch wird eine weitere Meldung der Warteschlange hinzugefügt, die schließlich dazu führen soll, dass der Tabelle eine weitere Zeile hinzugefügt wird.
+1. Navigieren Sie in der Registerkarte des Browsers zu **http://localhost:7071/api/Process/4/6** . Dadurch wird eine weitere Meldung der Warteschlange hinzugefügt, die schließlich dazu führen soll, dass der Tabelle eine weitere Zeile hinzugefügt wird.
 
 1. Kehren Sie zum **Terminal** zurück, und suchen Sie die eingehende Anforderung für **4 + 6**.
 
@@ -381,7 +380,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
 
 1. Drücken Sie **F5**, um das Projekt zu erstellen und auszuführen.
 
-1. Aktualisieren Sie in der Registerkarte des Browsers die URL unter **http://localhost:7071/api/Process/4/6**. Da die Tabellenzeile für diesen Datensatz vorhanden ist, sollte die Rückgabe sofort und ohne Fehler erfolgen. Da es keine HTTP-Ausgabe gibt, wird die Ausgabe im Terminal angezeigt.
+1. Aktualisieren Sie in der Registerkarte des Browsers die URL unter **http://localhost:7071/api/Process/4/6** . Da die Tabellenzeile für diesen Datensatz vorhanden ist, sollte die Rückgabe sofort und ohne Fehler erfolgen. Da es keine HTTP-Ausgabe gibt, wird die Ausgabe im Terminal angezeigt.
 
     ![Terminal-Ausgabe, die die bereits vorhandene Tabellenzeile anzeigt](media/azure-functions-lab-image33.png)
 

@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c34755fdffb9dd2084f9999aafb01bd6b9fdb4f0
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569848"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180123"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimieren der Leistung von Visual Studio
 
@@ -25,7 +25,7 @@ Dieser Artikel enthält einige Vorschläge, die Sie ausprobieren können, wenn V
 
 ## <a name="upgrade-visual-studio"></a>Upgrade auf Visual Studio
 
-Wenn Sie derzeit Visual Studio 2015 verwenden, laden Sie [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) oder [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunter, um die verbesserte Leistung dieses Tools zu testen. Projektmappen werden in Visual Studio 2015 zwei- bis dreimal schneller geladen. Auch in anderen Bereichen wurde die Leistung verbessert. Visual Studio 2017 und Visual Studio 2019 können parallel zu Visual Studio 2015 installiert werden. Sie können das Tool also bedenkenlos ausprobieren.
+Wenn Sie derzeit Visual Studio 2015 verwenden, laden Sie [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) oder [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) kostenlos herunter, um die verbesserte Leistung dieses Tools zu testen. Projektmappen werden in Visual Studio 2015 zwei- bis dreimal schneller geladen. Auch in anderen Bereichen wurde die Leistung verbessert. Visual Studio 2017 und Visual Studio 2019 können parallel zu Visual Studio 2015 installiert werden. Sie können das Tool also bedenkenlos ausprobieren.
 
 ::: moniker range="vs-2017"
 

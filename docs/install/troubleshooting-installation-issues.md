@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997444"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180025"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern
 
@@ -71,7 +71,7 @@ Der Visual Studio-Installer-Bootstrapper ist eine kleine schlanke ausführbare D
 
 1. Schließen Sie den Visual Studio-Installer.
 2. Löschen Sie das Visual Studio-Installer-Verzeichnis. Das Verzeichnis ist in der Regel `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Führen Sie den Visual Studio-Installer-Bootstrapper aus. Den Bootstrapper finden Sie ggf. in Ihrem Ordner „Downloads“ mit einem Dateiname mit dem Muster `vs_[Visual Studio edition]__*.exe`. Wenn Sie die Anwendung nicht finden, können Sie den Bootstrapper herunterladen, indem Sie die [Visual Studio-Seite „Downloads“](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) aufrufen und dann für Ihre Edition von Visual Studio auf **Herunterladen** klicken. Führen Sie anschließend diese ausführbare Datei aus, um die Metadaten für Ihre Installation zurückzusetzen.
+3. Führen Sie den Visual Studio-Installer-Bootstrapper aus. Den Bootstrapper finden Sie ggf. in Ihrem Ordner „Downloads“ mit einem Dateiname mit dem Muster `vs_[Visual Studio edition]__*.exe`. Wenn Sie die Anwendung nicht finden, können Sie den Bootstrapper herunterladen, indem Sie die [Visual Studio-Seite „Downloads“](https://visualstudio.microsoft.com/downloads) aufrufen und dann für Ihre Edition von Visual Studio auf **Herunterladen** klicken. Führen Sie anschließend diese ausführbare Datei aus, um die Metadaten für Ihre Installation zurückzusetzen.
 4. Versuchen Sie, Visual Studio erneut zu installieren oder zu aktualisieren. Wenn beim Installer weiterhin ein Fehler auftritt, fahren Sie mit dem nächsten Schritt fort.
 
 ::: moniker-end
