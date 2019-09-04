@@ -1,7 +1,6 @@
 ---
 title: Veröffentlichen in Azure App Service
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,12 +11,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939371"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222734"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Veröffentlichen einer Web-App in Azure App Service mit Visual Studio für Mac
 
@@ -57,7 +56,7 @@ Sie können das Tool zum Veröffentlichen verwenden, um ASP.NET Core-Apps in Azu
 
     Sie können das Abonnement, das dem App Service zugeordnet wird, über das Dropdownfeld **Abonnement** ändern.
 
-    Sie können eine vorhandene **Ressourcengruppe** über das Dropdownfeld auswählen, oder Sie erstellen ein neues über die **+**-Schaltfläche.
+    Sie können eine vorhandene **Ressourcengruppe** über das Dropdownfeld auswählen, oder Sie erstellen ein neues über die **+** -Schaltfläche.
 
     Wählen Sie einen vorhandenen App Service-Plan aus, oder erstellen Sie einen neuen, indem Sie auf das Optionsfeld **Benutzerdefiniert** klicken.
 

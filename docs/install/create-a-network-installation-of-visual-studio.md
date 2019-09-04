@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870774"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180290"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -249,7 +249,7 @@ Wenn Produktupdates verfügbar sind, empfiehlt es sich, [das Layout der Netzwerk
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Die unter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) verfügbaren Visual Studio-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung das neueste verfügbare Release von Visual Studio.
+> Die unter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) verfügbaren Visual Studio-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung das neueste verfügbare Release von Visual Studio.
 >
 > Wenn Sie also heute einen Visual Studio-*Bootstrapper* herunterladen und diesen in sechs Monaten ausführen, wird das Visual Studio-Release installiert, das zum Zeitpunkt der Ausführung des Bootstrappers aktuell ist.
 >
