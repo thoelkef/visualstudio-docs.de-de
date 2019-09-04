@@ -57,7 +57,6 @@
 
 # Quellcodeverwaltung
 ## [Übersicht](version-control.md)
-## [TF-Versionskontrolle](tf-version-control.md)
 ## [Setting Up a Git Repository (Einrichten eines Git-Repository)](set-up-git-repository.md)
 ## [Working with Git (Arbeiten mit Git)](working-with-git.md)
 ## [Setting Up a Subversion Repository (Einrichten eines Subversion-Repository)](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [Protokolle und Ausnahmen](troubleshooting.md)
 ## [Programm zur Verbesserung der Visual Studio-Benutzerfreundlichkeit](visual-studio-experience-improvement-program.md)
 ## [Report a Problem (Melden eines Problems)](report-a-problem.md)
+## [Problembehandlung: Unterstützt Visual Studio für Mac die Team Foundation-Versionskontrolle?](tf-version-control.md)
 ## [Problembehandlung: Warum kann ich nicht alle Vorlagen anzeigen?](troubleshooting-no-templates.md)
 ## [Problembehandlung: Updater enthält Fehler, die beim Abrufen von Informationen auftreten](updater-troubleshooting.md)
 
