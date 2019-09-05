@@ -1,6 +1,6 @@
 ---
 title: 'Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien | Microsoft-Dokumentation'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415580"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154813"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 
@@ -42,6 +42,8 @@ Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine *TXT*-Date
 
    Visual Studio fordert Sie auf, einen Speicherort auszuwählen, an dem die Buildausgabe gespeichert werden soll.
 
+Sie können auch Protokolle generieren, indem Sie MSBuild direkt von der Befehlszeile ausführen. Verwenden Sie dabei die Befehlszeilenoption `-fileLogger` (`-fl`). Informationen dazu finden Sie unter [Erhalten von Buildprotokollen mit MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Ändern der Informationsmenge im Buildprotokoll
 
 1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
@@ -63,8 +65,11 @@ Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine *TXT*-Date
     > [!IMPORTANT]
     > Sie müssen das Projekt neu erstellen, damit Ihre Änderungen im Fenster **Ausgabe** (alle Projekte) und in der Datei *\<Projektname>.txt* (nur C++-Projekte) wirksam werden.
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Verwenden von Binärprotokollen, um das Durchsuchen großer Protokolldateien zu vereinfachen
+
+Binärprotokolle sind ein optionales Feature für .NET-Projekte, mit dem das Suchen von Informationen in umfangreichen Protokollen benutzerfreundlicher und einfacher wird. Um Binärprotokolle zu verwenden, installieren Sie die [Projektsystemtools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Weitere Informationen finden Sie unter [https://msbuildlog.com](https://msbuildlog.com) und [Binary Log](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md) (Binärprotokoll).
+
 ## <a name="see-also"></a>Siehe auch
 
-- [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
