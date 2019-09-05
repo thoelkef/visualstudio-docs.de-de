@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924076"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222688"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 
@@ -121,7 +121,7 @@ Für dieses Codeelement sind drei Attribute verfügbar:
    |`SQL`|Bezeichnet einen SQL-Codeausschnitt.|
    |`HTML`|Bezeichnet einen HTML-Codeausschnitt.|
 
-- **Art** - _optional:_ Gibt die Art des Codes an, den der Ausschnitt enthält, sowie die Position, an der ein Codeausschnitt eingefügt werden muss, damit der Code kompiliert wird. Der Wert kann in folgenden Formen vorliegen:
+- **Kind**: _optionales_ Attribut, das angibt, welche Art von Code der Codeausschnitt enthält. Der Wert kann in folgenden Formen vorliegen:
 
    |Wert|BESCHREIBUNG|
    |-----|-----------|

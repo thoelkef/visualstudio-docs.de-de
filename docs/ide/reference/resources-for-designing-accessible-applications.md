@@ -1,8 +1,10 @@
 ---
 title: Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 description: Erfahren Sie, wie Sie zugängliche Anwendungen erstellen, die die Arbeit für Personen mit Behinderung erleichtern.
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811780"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107840"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 
-Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den barrierefreien Entwurf von Software sowie Tipps und Beispiele für die Entwicklung barrierefreier Windows-Anwendungen und Websites. Allgemeine Informationen über die Barrierefreiheit finden Sie online unter [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Erfahren Sie mehr über Technologien, die die Barrierefreiheit unterstützen. Hier finden Sie auch Tipps und Links zu Tutorials, die Sie beim Entwickeln von barrierefreien Windows-Apps und -Websites unterstützen.
+
+>[!NOTE]
+>Weitere Informationen zur Entwicklung von Produkten, die alle Benutzer unterstützen, finden Sie unter [Microsoft Accessibility](https://www.microsoft.com/accessibility/) (Barrierefreiheit bei Microsoft).
 
 ## <a name="technologies"></a>Technologien
 
@@ -53,4 +58,5 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
 
 ## <a name="see-also"></a>Siehe auch
 
-[Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Barrierefreiheit für Visual Studio für Mac](/visualstudio/mac/accessibility/)

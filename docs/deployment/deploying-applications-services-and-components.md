@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533356"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222621"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -96,6 +96,13 @@ Sie können aus Visual Studio App-Pakete zur Bereitstellung im Microsoft Store e
 - **Windows-Desktop:** Eine Bereitstellung im Microsoft Store ist mithilfe der ab Version 15.4 in Visual Studio 2017 verfügbaren Desktop-Brücke möglich. Erstellen Sie hierzu als Erstes ein Paketerstellungsprojekt für Windows-Anwendungen. Weitere Informationen finden Sie unter [Packen einer Desktop-App für den Microsoft Store (Desktop-Brücke)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Desktop-Brücke](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Bereitstellen von .NET-Paketen in NuGet.org
+
+Zum Bereitstellen von gepacktem Code in „Paketen“, die kompilierten Code (in Form von DLLs) sowie weitere Inhalte enthalten, die von den Projekten benötigt werden, die diese Pakete nutzen, können Sie das NuGet-Paket in Visual Studio erstellen und den endgültigen Bereitstellungsbefehl in einem Befehlszeilenschnittstellentool ausgeben.
+
+- [Erstellen und Veröffentlichen eines .NET Standard-Pakets](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Erstellen und Veröffentlichen eines .NET Framework-Pakets](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Bereitstellen für ein Gerät (UWP)
 

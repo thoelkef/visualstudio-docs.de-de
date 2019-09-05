@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976215"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180005"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -83,7 +83,7 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 
 Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Diensten hinter einer Firewall oder einem Proxyserver Zugriff auf alle benötigten Komponenten haben, müssen Sie die folgenden URLs in die Zulassungsliste aufnehmen und diese Ports und Protokolle öffnen bzw. zulassen.
 
-| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung |
+| Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | BESCHREIBUNG |
 | - | - | - | - | - |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | | Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden. |
 | Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite (nur in Visual Studio 2017). |
@@ -122,7 +122,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Dient zum Anzeigen, Übermitteln, Ausführen und Verwalten von ASA-Aufträgen. <br><br> Wird verwendet, um HDI-Cluster zu durchsuchen und HDI-Aufträge zu übermitteln, zu diagnostizieren und zu debuggen. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
 | Paketerstellungsdienst | [account].visualstudio.com <br/> [Konto].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen \*.npmjs.org, \*.nuget.org und \*.nodejs.org sind nur für bestimmte Buildtaskszenarios erforderlich (z. B.: NuGet-Toolinstaller, Node Tool-Installationsprogramm) oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Wird zum Herstellen einer Verbindung mit Azure DevOps Services verwendet. |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Wird zum Herstellen einer Verbindung mit Azure DevOps Services verwendet. |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Behandlung netzwerkbezogener Fehler
