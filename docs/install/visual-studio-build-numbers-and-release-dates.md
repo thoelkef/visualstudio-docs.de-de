@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/20/2019
+ms.date: 09/04/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9d67ce7365a60bd744e0237d95b41f9dea2c641
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: e498e5667a7467c1621b10549cb1f67e6583a05b
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891323"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383732"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Vorschauversion 3 | 4\. September 2019 | 16.3.29230.61 |
 | 16.2.3 | Freigabe | 20. August 2019 | 16.2.29215.179 |
 | 16.2.2 | Freigabe | 13. August 2019 | 16.2.29209.62 |
 | 16.3.0 | Vorschau 2 | 13. August 2019 | 16.3.29209.152 |
@@ -186,7 +187,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.5.1 | Freigabe | 7\. Dezember 2017 | 15.0.27130.2003 |
 | 15.6.0 Vorschauversion 1 | Vorschau | 7\. Dezember 2017 | 15.6.27205.0 |
 | 15.0.7 | Freigabe | 6\. Dezember 2017 | 15.0.26228.18 |
-| 15.5 | Freigabe | 4\. Dezember 2017 | 15.0.27130.0 |
+| 15.5.0 | Freigabe | 4\. Dezember 2017 | 15.0.27130.0 |
 | 15.5.0 Vorschauversion 5 | Vorschau | 30. November 2017 | 15.0.27128.1 |
 | 15.4.5 | Freigabe | 27. November 2017 | 15.0.27004.2010 |
 | 15.5.0 Vorschauversion 4 | Vorschau | 14. November 2017 | 15.0.27110.0 |
@@ -198,7 +199,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.5.0 Vorschauversion 2 | Vorschau | 23. Oktober 2017 | 15.0.27019.1 |
 | 15.4.1 | Freigabe | 19. Oktober 2017 | 15.0.27004.2005 |
 | 15.5 Vorschauversion 1 | Vorschau | 11. Oktober 2017 | 15.0.27009.1 |
-| 15.4 | Freigabe | 9\. Oktober 2017 | 15.0.27004.2002 |
+| 15.4.0 | Freigabe | 9\. Oktober 2017 | 15.0.27004.2002 |
 | 15.4 Vorschauversion 6 | Vorschau | 9\. Oktober 2017| 15.0.27004.20002 |
 | 15.4 Vorschauversion 5 | Vorschau | 6\. Oktober 2017 | 15.0.27004.2000 |
 | 15.4 Vorschauversion 4 | Vorschau | 2\. Oktober 2017 | 15.0.26929.2 |
@@ -214,7 +215,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.3.1 Vorschauversion 1 | Vorschau | 18. August 2017 | 15.0.26730.08 |
 | 15.3.1  | Freigabe | 18. August 2017 | 15.0.26730.08 |
 | 15.4 Vorschauversion 1 | Vorschau | 24. August 2017 | 15.0.26823.1 |
-| 15.3 | Freigabe | 14. August 2017 | 15.0.26730.3 |
+| 15.3.0 | Freigabe | 14. August 2017 | 15.0.26730.3 |
 | 15.3 Vorschauversion 7.1 | Vorschau | 11. August 2017 | 15.0.26730.3 |
 | 15.3 Vorschauversion 7 | Vorschau | 1\. August 2017 | 15.0.26730.0 |
 | 15.3 Vorschauversion 6 | Vorschau | 26. Juli 2017 | 15.0.26724.1 |
@@ -232,14 +233,14 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.2.1  | Freigabe | 12. Mai 2017 | 15.0.26430.6 |
 | 15.3 Vorschauversion 1.1 | Vorschau | 11. Mai 2017 | 15.0.26510.0 |
 | 15.3 Vorschauversion 1 | Vorschau | 10. Mai 2017 | 15.0.26507.0 |
-| 15.2 | Freigabe | 10. Mai 2017 | 15.0.26430.4 |
+| 15.2.0 | Freigabe | 10. Mai 2017 | 15.0.26430.4 |
 | 15.2 Vorschauversion 4 | Vorschau | 3\. Mai 2017 | 15.0.26430.1 |
 | 15.2 Vorschauversion 3 | Vorschau | 26. April 2017 | 15.0.26424.2 |
 | 15.2 Vorschauversion 2 | Vorschau | 20. April 2017 | 15.0.26419.1 |
 | 15.2 Vorschauversion 1 | Vorschau | 17. April 2017 | 15.0.26412.1 |
 | 15.1.2  | Freigabe | 17. April 2017 | 15.0.26403.7 |
 | 15.1.1 | Freigabe | 10. April 2017 | 15.0.26403.3 |
-| 15.1 | Freigabe | 5\. April 2017 | 15.0.26403.0 |
+| 15.1.0 | Freigabe | 5\. April 2017 | 15.0.26403.0 |
 | 15.0.3  | Freigabe | 31. März 2017 | 15.0.26228.12 |
 | 15.0.2 | Freigabe | 28. März 2017 | 15.0.26228.10 |
 | 15.1 Vorschauversion 3 | Vorschau | 27. März 2017 | 15.0.26323.1 |
