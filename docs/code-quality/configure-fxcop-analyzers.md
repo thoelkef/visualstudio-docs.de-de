@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551147"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293446"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurieren von FxCop-Analyzern
 
@@ -46,7 +46,10 @@ Weitere Informationen finden Sie unter [Regelsätze für Code Analysen](analyzer
 
 ## <a name="editorconfig-file"></a>Editor config-Datei
 
-Sie können Analyzer-Regeln konfigurieren, indem Sie einer [Editor config](https://editorconfig.org) -Datei Schlüssel-Wert-Paare hinzufügen. Eine Konfigurationsdatei kann [für ein projektspezifisch](#per-project-configuration) sein oder von zwei oder mehr Projekten [gemeinsam genutzt](#shared-configuration) werden.
+Sie können FxCop-Analyse Regeln konfigurieren, indem Sie einer [Editor config](https://editorconfig.org) -Datei Schlüssel-Wert-Paare hinzufügen. Eine Konfigurationsdatei kann [für ein projektspezifisch](#per-project-configuration) sein oder von zwei oder mehr Projekten [gemeinsam genutzt](#shared-configuration) werden.
+
+> [!NOTE]
+> Es ist nicht möglich, ältere FxCop-Regeln mithilfe einer Editor config-Datei zu konfigurieren.
 
 ### <a name="per-project-configuration"></a>Konfiguration pro Projekt
 
@@ -61,7 +64,7 @@ Zurzeit gibt es keine hierarchische Unterstützung für das Kombinieren von Edit
 
 ### <a name="shared-configuration"></a>Freigegebene Konfiguration
 
-Sie können eine Editor config-Datei für die Analyse Konfiguration zwischen zwei oder mehr Projekten freigeben, es sind jedoch einige zusätzliche Schritte erforderlich.
+Sie können eine Editor config-Datei für die Konfiguration von FxCop Analyzer zwischen zwei oder mehr Projekten freigeben, es sind jedoch einige zusätzliche Schritte erforderlich.
 
 1. Speichern Sie die *Editor config* -Datei an einem gemeinsamen Speicherort.
 
@@ -90,7 +93,7 @@ Sie können eine Editor config-Datei für die Analyse Konfiguration zwischen zwe
 4. Laden Sie das Projekt neu.
 
 > [!NOTE]
-> Es ist nicht möglich, ältere FxCop-Regeln mithilfe einer Editor config-Datei zu konfigurieren.
+> Der beliebige freigegebene Speicherort der hier beschriebenen Editor config-Datei gilt nur für die Konfiguration von FxCop-Analyzers. Bei anderen Einstellungen, wie einzügkeit und Codestil, muss die editorconfig-Datei immer im Projektordner oder in einem übergeordneten Ordner abgelegt werden.
 
 ## <a name="option-scopes"></a>Options Bereiche
 
