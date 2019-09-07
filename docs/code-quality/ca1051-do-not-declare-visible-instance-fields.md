@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547558"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766056"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Sichtbare Instanzfelder nicht deklarieren.
 
@@ -38,9 +38,11 @@ Standardmäßig betrachtet diese Regel nur extern sichtbare Typen, aber dies ist
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein Feld sollte primär als Implementierungsdetail verwendet werden. Felder müssen oder `private` `internal` sein und sollten mithilfe von Eigenschaften verfügbar gemacht werden. Es ist so einfach, auf eine Eigenschaft zuzugreifen, da Sie auf ein Feld zugreifen kann. der Code in den Accessoren einer Eigenschaft kann sich ändern, wenn die Funktionen des Typs erweitert werden, ohne dass wichtige Änderungen eingeführt werden. Eigenschaften, die nur den Wert eines privaten oder internen Felds zurückgeben, werden für die Ausführung mit dem Zugriff auf ein Feld optimiert. sehr wenig Leistungsgewinn ist mit der Verwendung extern sichtbarer Felder für Eigenschaften verknüpft.
+Ein Feld sollte primär als Implementierungsdetail verwendet werden. Felder müssen oder `private` `internal` sein und sollten mithilfe von Eigenschaften verfügbar gemacht werden. Es ist so einfach, auf eine Eigenschaft zuzugreifen, da Sie auf ein Feld zugreifen kann. der Code in den Accessoren einer Eigenschaft kann sich ändern, wenn die Funktionen des Typs ohne wichtige Änderungen erweitert werden.
 
-Extern sichtbar bezieht sich `public`auf `protected`die Zugriffs `protected internal` Ebenen`Public`, `Protected`und ( `Protected Friend` , und in Visual Basic).
+Eigenschaften, die nur den Wert eines privaten oder internen Felds zurückgeben, werden für die Ausführung mit dem Zugriff auf ein Feld optimiert. der Leistungsgewinn bei der Verwendung extern sichtbarer Felder anstelle von Eigenschaften ist minimal. *Extern sichtbar* bezieht sich `public`auf `protected`die Zugriffs `protected internal` Ebenen`Public`, `Protected`und ( `Protected Friend` , und in Visual Basic).
+
+Darüber hinaus können öffentliche Felder nicht durch [Link](/dotnet/framework/misc/link-demands)Aufrufe geschützt werden. Weitere Informationen finden [Sie unter CA2112: Gesicherte Typen sollten keine Felder](../code-quality/ca2112-secured-types-should-not-expose-fields.md)verfügbar machen. (Link Aufrufe sind nicht auf .net Core-apps anwendbar.)
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -48,7 +50,12 @@ Um einen Verstoß gegen diese Regel zu beheben, machen Sie `private` das `intern
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel. Extern sichtbare Felder bieten keine Vorteile, die für Eigenschaften nicht verfügbar sind. Darüber hinaus können öffentliche Felder nicht durch [Link](/dotnet/framework/misc/link-demands)Aufrufe geschützt werden. Siehe [CA2112: Gesicherte Typen sollten keine Felder](../code-quality/ca2112-secured-types-should-not-expose-fields.md)verfügbar machen.
+Unterdrücken Sie diese Warnung nur, wenn Sie sicher sind, dass Consumer direkten Zugriff auf das Feld benötigen. Bei den meisten Anwendungen bieten verfügbar gemachte Felder keine Leistungs-oder wart barkeits Vorteile gegenüber Eigenschaften.
+
+Consumer benötigen in den folgenden Situationen möglicherweise Feld Zugriff:
+
+- in ASP.net-Web Forms Inhalts Steuerelementen
+- Wenn die Zielplattform verwendet `ref` , um Felder zu ändern, wie z. b. Model-View-ViewModel (MVVM)-Frameworks für WPF und UWP
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 

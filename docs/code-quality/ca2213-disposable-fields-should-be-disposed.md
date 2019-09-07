@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 675206bb58e27110af79c46b1d61e9489f7661f2
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65804997"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766084"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Verwerfbare Felder verwerfen.
 
@@ -32,48 +32,69 @@ ms.locfileid: "65804997"
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ, der implementiert <xref:System.IDisposable?displayProperty=fullName> deklariert Felder von Typen, die ebenfalls implementieren <xref:System.IDisposable>. Die <xref:System.IDisposable.Dispose%2A> -Methode des Felds wird nicht aufgerufen, indem die <xref:System.IDisposable.Dispose%2A> -Methode des deklarierenden Typs.
+Ein Typ, der <xref:System.IDisposable?displayProperty=fullName> implementiert, deklariert Felder mit Typen, die ebenfalls <xref:System.IDisposable>implementieren. Die <xref:System.IDisposable.Dispose%2A> -Methode des-Felds wird nicht von der <xref:System.IDisposable.Dispose%2A> -Methode des deklarierenden Typs aufgerufen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein Typ ist verantwortlich für das Verwerfen von alle nicht verwalteten Ressourcen. CA2213 überprüft, ob ein von einem verwerfbaren Typ auszuschließen (d. h. eine, die implementiert <xref:System.IDisposable>) `T` deklariert ein Feld `F` d. h. eine Instanz eines verwerfbaren Typs `FT`. Für jedes Feld `F` zugewiesen, die ein lokal erstelltes Objekt in den Methoden oder -Initialisierer des enthaltenden Typs `T`, der Regel wird versucht, einen Aufruf von `FT.Dispose`. Die Regel durchsucht, die vom aufgerufenen Methoden `T.Dispose` und die Ebene darunter (d. h. die Methoden, die aufgerufen werden, durch die Methoden aufgerufen werden, indem `T.Dispose`).
+Ein Typ ist für die Freigabe aller nicht verwalteten Ressourcen zuständig. Rule CA2213 prüft, ob ein verwerfbarer Typ (d. h. ein Typ <xref:System.IDisposable>, `T` der implementiert) `F` ein Feld deklariert, das eine Instanz eines `FT`verwerfbaren Typs ist. Für jedes Feld `F` , dem ein lokal erstelltes Objekt innerhalb der Methoden oder Initialisierer des enthaltenden Typs `T`zugewiesen wird, versucht die Regel, einen- `FT.Dispose`Rückruf zu suchen. Die-Regel durchsucht die Methoden `T.Dispose` , die von aufgerufen werden, und eine Ebene niedriger (d. h. die `T.Dispose`Methoden, die von den von aufgerufenen Methoden aufgerufen werden
 
 > [!NOTE]
-> Anders als die [Sonderfälle](#special-cases), Regel CA2213 ausgelöst wird, nur für Felder, die lokal erstelltes verwerfbares Objekt innerhalb von Methoden und den Initialisierer des enthaltenden Typs zugewiesen werden. Wenn das Objekt erstellt wird, oder außerhalb von Typ zugewiesen `T`, die Regel wird nicht ausgelöst. Dies verringert Störungen für Fälle, in dem der enthaltende Typ die Verantwortung für das Verwerfen des Objekts besitzt.
+> Mit Ausnahme der [Sonderfälle](#special-cases)wird Regel CA2213 nur für Felder ausgelöst, denen ein lokal erstelltes verwerfbares Objekt innerhalb der Methoden und Initialisierer des enthaltenden Typs zugewiesen wird. Wenn das Objekt erstellt oder außerhalb des Typs `T`zugewiesen wird, wird die Regel nicht ausgelöst. Dies reduziert das Rauschen in Fällen, in denen der enthaltende Typ nicht die Verantwortung für die Freigabe des Objekts übernimmt.
 
 ### <a name="special-cases"></a>Sonderfälle
 
-Regel CA2213 kann auch für Felder der folgenden Typen ausgelöst werden, auch wenn das Objekt, das sie zugewiesen sind nicht lokal erstellt wird:
+Regel CA2213 kann auch für Felder der folgenden Typen ausgelöst werden, auch wenn das Objekt, dem Sie zugewiesen sind, nicht lokal erstellt wurde:
 
 - <xref:System.IO.Stream?displayProperty=nameWithType>
 - <xref:System.IO.TextReader?displayProperty=nameWithType>
 - <xref:System.IO.TextWriter?displayProperty=nameWithType>
 - <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
 
-Gibt ein Objekt von einem dieser Typen an einen Konstruktor zu übergeben, und klicken Sie dann auf ein Feld Zuweisen einer *dispose Übertragung des Abonnementbesitzes* in den neu erstellten Typ. Der neu erstellte Typ ist, also jetzt verantwortlich für das Verwerfen des Objekts. Wenn das Objekt nicht verworfen wird, tritt ein, zu eine Verletzung der CA2213.
+Wenn Sie ein Objekt eines dieser Typen an einen Konstruktor übergeben und dann einem Feld zuweisen, wird eine Freigabe *Besitz Übertragung* an den neu erstellten Typ angegeben. Das heißt, der neu konstruierte Typ ist nun für das Freigeben des Objekts verantwortlich. Wenn das Objekt nicht verworfen wird, tritt ein Verstoß gegen CA2213 auf.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, rufen <xref:System.IDisposable.Dispose%2A> für Felder, die Typen, die implementieren <xref:System.IDisposable>.
+Um einen Verstoß gegen diese Regel zu beheben, <xref:System.IDisposable.Dispose%2A> müssen Sie für Felder mit Typen abrufen, <xref:System.IDisposable>die implementieren.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, falls:
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn Folgendes gilt:
 
-- Der markierten Typ ist nicht verantwortlich für die Ressource freigegeben, die nach dem Feld gespeichert (d. h. der Typ verfügt nicht über *verwerfen Sie den Besitz*)
-- Der Aufruf von <xref:System.IDisposable.Dispose%2A> tritt auf, auf einer tieferen aufrufenden Ebene als die regelüberprüfungen
+- Der gekennzeichnete Typ ist nicht für die Freigabe der Ressource zuständig, die im Feld gehalten wird (d. h., der Typ hat keinen Freigabe *Besitz*).
+- Der Aufruf von <xref:System.IDisposable.Dispose%2A> tritt auf einer tieferen Aufruf Ebene auf als die Regel Überprüfungen.
 
 ## <a name="example"></a>Beispiel
 
-Der folgende Codeausschnitt zeigt ein `TypeA` implementiert <xref:System.IDisposable>.
+Der folgende Code Ausschnitt zeigt einen Typ `TypeA` , der <xref:System.IDisposable>implementiert.
 
 [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]
 
-Der folgende Codeausschnitt zeigt ein `TypeB` , die verstößt gegen die Regel CA2213 durch das Deklarieren eines Feldes `aFieldOfADisposableType` als einem verwerfbaren Typ (`TypeA`) und nicht aufrufen <xref:System.IDisposable.Dispose%2A> für das Feld.
+Der folgende Code Ausschnitt zeigt einen Typ `TypeB` , der die Regel CA2213 verletzt, indem `aFieldOfADisposableType` er ein Feld als verwerfbaren Typ (`TypeA`) <xref:System.IDisposable.Dispose%2A> deklariert und nicht für das Feld aufgerufen wird.
 
 [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]
+
+Um die Verletzung zu beheben, `Dispose()` müssen Sie für das verwerfbare Feld aufzurufen:
+
+```csharp
+protected virtual void Dispose(bool disposing)
+{
+   if (!disposed)
+   {
+      // Dispose of resources held by this instance.
+      aFieldOfADisposableType.Dispose();
+
+      disposed = true;
+
+      // Suppress finalization of this disposed instance.
+      if (disposing)
+      {
+          GC.SuppressFinalize(this);
+      }
+   }
+}
+```
 
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:System.IDisposable?displayProperty=fullName>
-- [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Muster verwerfen](/dotnet/standard/design-guidelines/dispose-pattern)

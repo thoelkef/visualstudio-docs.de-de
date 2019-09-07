@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e300edf07aa98facbe6059ba9574e238ec8f3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 621bb7292ca467d6d3197636f662a4662712d483
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923243"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766024"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Generische Listen nicht verfügbar machen.
 
@@ -31,10 +31,12 @@ ms.locfileid: "68923243"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
-Ein Typ enthält einen extern sichtbaren Member, bei <xref:System.Collections.Generic.List%601?displayProperty=fullName> dem es sich um <xref:System.Collections.Generic.List%601?displayProperty=fullName> einen Typ handelt, der einen- <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ zurückgibt oder dessen Signatur einen-Parameter enthält.
+
+Ein Typ enthält einen extern sichtbaren Member, bei <xref:System.Collections.Generic.List%601?displayProperty=fullName> dem es sich um <xref:System.Collections.Generic.List%601> einen Typ handelt, der einen- <xref:System.Collections.Generic.List%601> Typ zurückgibt oder dessen Signatur einen-Parameter enthält.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>ist eine generische Auflistung, die für die Leistung und nicht Vererbung konzipiert ist. <xref:System.Collections.Generic.List%601?displayProperty=fullName>enthält keine virtuellen Member, die das Ändern des Verhaltens einer geerbten Klasse vereinfachen. Die folgenden generischen Auflistungen sind für Vererbung konzipiert und sollten <xref:System.Collections.Generic.List%601?displayProperty=fullName>anstelle von verfügbar gemacht werden.
+
+<xref:System.Collections.Generic.List%601?displayProperty=fullName>ist eine generische Auflistung, die für die Leistung und nicht Vererbung konzipiert ist. <xref:System.Collections.Generic.List%601>enthält keine virtuellen Member, die das Ändern des Verhaltens einer geerbten Klasse vereinfachen. Die folgenden generischen Auflistungen sind für Vererbung konzipiert und sollten <xref:System.Collections.Generic.List%601>anstelle von verfügbar gemacht werden.
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -42,13 +44,20 @@ Ein Typ enthält einen extern sichtbaren Member, bei <xref:System.Collections.Ge
 
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+
 Um einen Verstoß gegen diese Regel zu beheben, ändern <xref:System.Collections.Generic.List%601?displayProperty=fullName> Sie den Typ in eine der generischen Auflistungen, die für Vererbung entworfen wurden.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
-Unterdrücken Sie keine Warnung dieser Regel, es sei denn, die Assembly, die diese Warnung auslöst, ist keine wiederverwendbare Bibliothek. Beispielsweise wäre es sicher, diese Warnung in einer leistungsoptimierten Anwendung zu unterdrücken, bei der der Leistungsvorteil durch die Verwendung generischer Listen erzielt wurde.
+
+Unterdrücken Sie keine Warnung dieser Regel, es sei denn, die Assembly, die diese Warnung auslöst, ist keine wiederverwendbare Bibliothek. Beispielsweise wäre es sicher, diese Warnung in einer leistungsoptimierten Anwendung zu unterdrücken, in der ein Leistungsvorteil durch die Verwendung generischer Listen erzielt wurde.
 
 ## <a name="related-rules"></a>Verwandte Regeln
+
 [CA1005: Übermäßige Parameter für generische Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
 [CA1010: Sammlungen sollten eine generische Schnittstelle implementieren.](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -64,4 +73,5 @@ Unterdrücken Sie keine Warnung dieser Regel, es sei denn, die Assembly, die die
 [CA1007: Generika ggf. verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Siehe auch
+
 [Generika](/dotnet/csharp/programming-guide/generics/index)
