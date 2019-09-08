@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a0714082e0fce744fe74eaa4e4aefee5a41867
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365369"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766044"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen.
 
@@ -29,47 +29,49 @@ ms.locfileid: "67365369"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly, unabhängig von der Änderung angezeigt wird, die Sie vornehmen.<br /><br /> Nicht unterbrechend – Wenn Sie ändern, dass das Element, um die Parameter innerhalb des Texts zu verwenden.<br /><br /> Wichtige – Wenn Sie den Parameter entfernen und außerhalb der Assembly sichtbar ist.|
+|Unterbrechende Änderung|Nicht unterbrechend: Wenn der Member außerhalb der Assembly nicht sichtbar ist, unabhängig von der Änderung, die Sie vornehmen.<br /><br /> Nicht unterbrechend: Wenn Sie den Member so ändern, dass er den Parameter in seinem Text verwendet.<br /><br /> Unterbrechen: Wenn Sie den Parameter entfernen und dieser außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
 
-Eine Methodensignatur enthält einen Parameter, der nicht verwendet wird, im Methodentext.
+Eine Methoden Signatur enthält einen Parameter, der im Methoden Text nicht verwendet wird.
 
-Diese Regel untersucht die folgenden Arten von Methoden nicht:
+Diese Regel untersucht nicht die folgenden Arten von Methoden:
 
-- Methoden, die einen Delegaten auf.
+- Methoden, auf die ein Delegat verweist.
 
 - Methoden, die als Ereignishandler verwendet werden.
 
-- Methoden deklariert werden, mit der `abstract` (`MustOverride` in Visual Basic) Modifizierer.
+- Methoden, die mit `abstract` dem`MustOverride` -Modifizierer (in Visual Basic) deklariert wurden.
 
-- Methoden deklariert werden, mit der `virtual` (`Overridable` in Visual Basic) Modifizierer.
+- Methoden, die mit `virtual` dem`Overridable` -Modifizierer (in Visual Basic) deklariert wurden.
 
-- Methoden deklariert werden, mit der `override` (`Overrides` in Visual Basic) Modifizierer.
+- Methoden, die mit `override` dem`Overrides` -Modifizierer (in Visual Basic) deklariert wurden.
 
-- Methoden deklariert werden, mit der `extern` (`Declare` -Anweisung in Visual Basic) Modifizierer.
+- Methoden, die mit `extern` dem`Declare` -Modifizierer (Anweisung in Visual Basic) deklariert wurden.
+
+Bei Verwendung von [FxCop-Analyzern](install-fxcop-analyzers.md)werden Parameter, die mit dem [Verwerfungs](/dotnet/csharp/discards) Symbol benannt sind, nicht durch diese Regel gekennzeichnet, `_` `_1`z. b `_2`., und. Dadurch wird das Warnungs Rauschen bei Parametern reduziert, die für die Signatur Anforderungen benötigt werden, z. b. eine Methode, die als Delegat verwendet wird, ein Parameter mit speziellen Attributen oder ein Parameter, dessen Wert zur Laufzeit implizit von einem Framework aufgerufen wird, auf den aber nicht verwiesen wird. Ordnung.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Überprüfen Sie die Parameter in nicht virtuellen Methoden, die nicht im Methodentext verwendet werden, um sicherzustellen, dass keine Richtigkeit Umfeld des Fehlers für den Zugriff darauf vorhanden ist. Nicht verwendete Parameter fallen Kosten für Wartung und Leistung.
+Überprüfen Sie Parameter in nicht virtuellen Methoden, die nicht im Methoden Text verwendet werden, um sicherzustellen, dass keine Unrichtigkeit vorhanden ist, um den Zugriff darauf zu vermeiden. Nicht verwendete Parameter verursachen Wartungs-und Leistungskosten.
 
-Manchmal kann ein Verstoß gegen diese Regel auf einen Implementierungsfehler in der Methode hinweisen. Z. B. der Parameter sollte im Methodentext verwendet haben. Unterdrücken Sie Warnungen für diese Regel aus, wenn der Parameter aufgrund der Abwärtskompatibilität vorhanden sein muss.
+Manchmal kann ein Verstoß gegen diese Regel auf einen Implementierungs Fehler in der-Methode hinweisen. Beispielsweise sollte der-Parameter im Methoden Text verwendet werden. Unterdrückt Warnungen dieser Regel, wenn der Parameter aufgrund der Abwärtskompatibilität vorhanden sein muss.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den nicht verwendeten Parameter (eine fehlerhafte Änderung), oder verwenden Sie den Parameter im Methodentext (eine nicht unterbrechende Änderung).
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den nicht verwendeten Parameter (ein Breaking Change), oder verwenden Sie den-Parameter im Methoden Text (ein nicht-Breaking Change).
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel:
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken:
 
-- Für die zuvor abgelieferten Codes, die für die die Lösung eine unterbrechende Änderung sein würde.
+- Im zuvor gelieferten Code, für den die Korrektur ein Breaking Change wäre.
 
-- Für die `this` Parameter in einer benutzerdefinierten Erweiterungsmethode für <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>. Die Funktionen in der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> -Klasse sind statisch, daher besteht keine Notwendigkeit, den Zugriff auf die `this` Parameter im Methodentext.
+- Für den `this` -Parameter in einer benutzerdefinierten Erweiterungs <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>Methode für. Die Funktionen in der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> -Klasse sind statisch, sodass es nicht erforderlich ist, auf `this` den-Parameter im Methoden Text zuzugreifen.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt zwei Methoden. Eine Methode verstößt gegen die Regel, und die andere Methode der Regel entspricht.
+Das folgende Beispiel zeigt zwei Methoden. Eine Methode verstößt gegen die Regel, und die andere Methode erfüllt die Regel.
 
 [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
