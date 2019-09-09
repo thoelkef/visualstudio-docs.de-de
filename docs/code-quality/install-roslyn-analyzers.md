@@ -31,7 +31,7 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Ros
 2. Installieren Sie das Paket in Visual Studio, indem Sie entweder die [Paket-Manager-Konsole](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) oder die [Benutzeroberfläche des Paket-Managers](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)verwenden.
 
    > [!NOTE]
-   > Die Seite "www.nuget.org" für jedes Analysepaket zeigt den Befehl an, der in die **Paket-Manager-Konsole**eingefügt werden soll. Es gibt sogar eine praktische Schaltfläche, um den Text in die Zwischenablage zu kopieren.
+   > Die Seite www.nuget.org für jedes Analysepaket zeigt den Befehl an, der in die **Paket-Manager-Konsole**eingefügt werden soll. Es gibt sogar eine praktische Schaltfläche, um den Text in die Zwischenablage zu kopieren.
 
    Die Analyzer-Assemblys werden installiert und in **Projektmappen-Explorer** unter **Verweise** > -**Analyzers**angezeigt.
 
