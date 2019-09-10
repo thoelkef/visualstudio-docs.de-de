@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e498e5667a7467c1621b10549cb1f67e6583a05b
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.openlocfilehash: 608d13f53517a59d7345d862296e75b1ac7335b0
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383732"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739279"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.4 | Freigabe | 5\. September 2019 | 16.2.29230.47 |
 | 16.3.0 | Vorschauversion 3 | 4\. September 2019 | 16.3.29230.61 |
 | 16.2.3 | Freigabe | 20. August 2019 | 16.2.29215.179 |
 | 16.2.2 | Freigabe | 13. August 2019 | 16.2.29209.62 |
