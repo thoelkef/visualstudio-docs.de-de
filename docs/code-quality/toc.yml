@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012: Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061: Fügen Sie kein Schema nach URL hinzu.'
+                  href: ca3061.md
                 - name: 'CA3075: Unsichere DTD-Verarbeitung.'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076: Unsichere XSLT-Skriptausführung.'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361: Deaktivieren Sie Schannel nicht. Verwenden Sie starke Kryptografie.'
                   href: ca5361.md
+                - name: 'CA5363: Deaktivieren Sie die Anforderungsüberprüfung nicht.'
+                  href: ca5363.md
                 - name: 'CA5364: Verwenden Sie keine veralteten Sicherheitsprotokolle.'
                   href: ca5364.md
+                - name: 'CA5369: Verwenden Sie XmlReader zur Deserialisierung.'
+                  href: ca5369.md
+                - name: 'CA5370: Verwenden Sie XmlReader als überprüfenden Reader.'
+                  href: ca5370.md
+                - name: 'CA5371: Verwenden Sie XmlReader für Schemalesevorgänge.'
+                  href: ca5371.md
+                - name: 'CA5372: Verwenden Sie XmlReader für XPathDocument.'
+                  href: ca5372.md
+                - name: 'CA5373: Verwenden Sie keine veraltete Schlüsselableitungsfunktion.'
+                  href: ca5373.md
                 - name: 'CA5378: Deaktivieren Sie ServicePointManagerSecurityProtocols nicht.'
                   href: ca5378.md
+                - name: 'CA5380: Fügen Sie keine Zertifikate zum Stammspeicher hinzu.'
+                  href: ca5380.md
+                - name: 'CA5381: Stellen Sie sicher, dass keine Zertifikate zum Stammspeicher hinzugefügt werden.'
+                  href: ca5381.md
                 - name: 'CA5386: Vermeiden Sie die Hartcodierung des SecurityProtocolType-Werts.'
                   href: ca5386.md
+                - name: 'CA5389: Fügen Sie den Pfad des Archivelements nicht zum Pfad des Zieldateisystems hinzu.'
+                  href: ca5389.md
                 - name: 'CA5397: Verwenden Sie keine veralteten SslProtocols-Werte.'
                   href: ca5397.md
                 - name: 'CA5398: Vermeiden Sie hartcodierte SslProtocols-Werte.'
