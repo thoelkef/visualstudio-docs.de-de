@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993227"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887628"
 ---
 # <a name="sgen-task"></a>SGen-Aufgabe
 Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (*Sgen.exe*). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
@@ -31,11 +31,11 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der `SGen` -Aufgabe beschrieben.
 
-| Parameter | Beschreibung |
+| Parameter | BESCHREIBUNG |
 |-----------------------------| - |
 | `BuildAssemblyName` | Erforderlicher `String` -Parameter.<br /><br /> Die Assembly, für die Serialisierungscode generiert werden soll. |
 | `BuildAssemblyPath` | Erforderlicher `String` -Parameter.<br /><br /> Der Pfad der Assembly, für die Serialisierungscode generiert werden soll. |
-| `DelaySign` | Optionaler `Boolean` -Parameter.<br /><br /> Ist der Wert `true`, gibt dies an, dass die Assembly vollständig signiert werden soll. Ist der Wert `false`, gibt dies an, dass Sie nur den öffentlichen Schlüssel in die Assembly platzieren möchten.<br /><br /> Dieser Parameter hat nur dann Auswirkungen, wenn Sie ihn entweder mit dem `KeyFile`- oder `KeyContainer`-Parameter verwenden. |
+| `DelaySign` | Optionaler `Boolean` -Parameter.<br /><br /> Ist der Wert `true`, gibt dies an, dass Sie nur den öffentlichen Schlüssel in die Assembly platzieren möchten. Ist der Wert `false`, gibt dies an, dass die Assembly vollständig signiert werden soll.<br /><br /> Dieser Parameter hat nur dann Auswirkungen, wenn Sie ihn entweder mit dem `KeyFile`- oder `KeyContainer`-Parameter verwenden. |
 | `KeyContainer` | Optionaler `String` -Parameter.<br /><br /> Gibt einen Container an, der ein Schlüsselpaar enthält. Dieser wird zum Signieren der Assembly verwendet, indem ein öffentlicher Schlüssel in das Assemblymanifest eingefügt wird. Dann wird die endgültige Assembly von der Aufgabe mit dem privaten Schlüssel signiert. |
 | `KeyFile` | Optionaler `String` -Parameter.<br /><br /> Gibt ein Schlüsselpaar oder einen öffentlichen Schlüssel an, das bzw. der zum Signieren einer Assembly verwendet werden soll. Der Compiler fügt den öffentlichen Schlüssel in das Assemblymanifest ein und signiert anschließend die endgültige Assembly mit dem privaten Schlüssel. |
 | `Platform` | Optionaler `String` -Parameter.<br /><br /> Ruft die Compiler-Plattform ab, die zum Generieren der Ausgabeassembly verwendet wird, oder legt sie fest. Dieser Parameter kann den Wert `x86`, `x64` oder `anycpu` haben. Der Standardwert ist `anycpu`. |
