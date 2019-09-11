@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263724"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293707"
 ---
 # <a name="install-visual-studio"></a>Installieren von Visual Studio
 
@@ -112,7 +112,7 @@ Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu di
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Insta
  ::: moniker-end
 
 > [!TIP]
-> Nach der Installation können Sie jederzeit die Installation von Workloads oder Komponenten nachholen. Wenn Sie Visual Studio geöffnet haben, navigieren Sie zu **Extras** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Öffnen Sie den **Visual Studio-Installer** alternativ über das Startmenü. Nun können Sie die Workloads oder Komponenten auswählen, die Sie installieren möchten. Klicken Sie anschließend auf **Ändern**.
+> Nach der Installation können Sie jederzeit die Installation von Workloads oder Komponenten nachholen. Wenn Sie Visual Studio geöffnet haben, navigieren Sie zu **Extras** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Öffnen Sie den **Visual Studio-Installer** alternativ über das Startmenü. Nun können Sie die Workloads oder Komponenten auswählen, die Sie installieren möchten. Klicken Sie anschließend auf **Ändern**.
 
 ## <a name="step-5---choose-individual-components-optional"></a>Schritt 5: Auswählen einzelner Komponenten (optional)
 
@@ -236,9 +236,9 @@ Weitere Informationen finden Sie auf der Seite [Auswählen der Installationspfad
 
 3. Wählen Sie einen neuen Projekttyp aus.
 
-   Wenn Sie beispielsweise [eine C++-App erstellen](../ide/getting-started-with-cpp-in-visual-studio.md) möchten, wählen Sie **Installiert** aus, erweitern Sie **Visual C++**, und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten.
+   Wenn Sie beispielsweise [eine C++-App erstellen](../ide/getting-started-with-cpp-in-visual-studio.md) möchten, wählen Sie **Installiert** aus, erweitern Sie **Visual C++** , und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten.
 
-   Klicken Sie zum [Erstellen einer C#-App](../get-started/csharp/tutorial-console.md) auf **Installiert**, erweitern Sie **Visual C#**, und wählen Sie dann den C#-Projekttyp aus, den Sie erstellen möchten.
+   Klicken Sie zum [Erstellen einer C#-App](../get-started/csharp/tutorial-console.md) auf **Installiert**, erweitern Sie **Visual C#** , und wählen Sie dann den C#-Projekttyp aus, den Sie erstellen möchten.
 
 ::: moniker-end
 
