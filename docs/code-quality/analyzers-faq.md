@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
+ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547887"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70929767"
 ---
 # <a name="code-analysis-faq"></a>FAQ zur Code Analyse
 
@@ -24,15 +24,15 @@ Diese Seite enthält Antworten auf einige häufig gestellte Fragen zur .NET Comp
 
 **F**: Sollte ich die Code Analyse oder editorconfig zum Überprüfen des Code Formats verwenden?
 
-**A**: Code Analyse-und Editor config-Dateien arbeiten Hand in Hand. Wenn Sie Code Stile [in einer editorconfig-Datei](../ide/editorconfig-code-style-settings-reference.md) oder auf der [Options Seite Text-Editor](../ide/code-styles-and-code-cleanup.md) definieren, konfigurieren Sie tatsächlich die in Visual Studio integrierten Code-Analysen. Editor config-Dateien können auch verwendet werden, um einige Analysepakete von Drittanbietern zu konfigurieren, z. b. [FxCop-Analysen](configure-fxcop-analyzers.md).
+**A**: Code Analyse-und Editor config-Dateien arbeiten Hand in Hand. Wenn Sie Code Stile [in einer editorconfig-Datei](../ide/editorconfig-code-style-settings-reference.md) oder auf der [Options Seite Text-Editor](../ide/code-styles-and-code-cleanup.md) definieren, konfigurieren Sie tatsächlich die in Visual Studio integrierten Code-Analysen. Editor config-Dateien können auch verwendet werden, um einige nuget Analyzer-Pakete (z. b. [FxCop-Analysen](configure-fxcop-analyzers.md)) zu konfigurieren.
 
 ## <a name="editorconfig-versus-rule-sets"></a>Editor config im Vergleich zu Regelsätzen
 
 **F**: Sollten meine Analysen mithilfe eines Regelsatzes oder einer Editor config-Datei konfiguriert werden?
 
-**A**: Regelsätze und Editor config-Dateien schließen sich gegenseitig aus, um Analyzers zu konfigurieren. Sie können gleichzeitig vorhanden sein. [Regelsätze](analyzer-rule-sets.md) ermöglichen das Aktivieren und Deaktivieren von Regeln und das Festlegen Ihres schwere Grads. Editor config-Dateien bieten andere Möglichkeiten zum Konfigurieren von Regeln. Bei den FxCop-Analyzern können Sie mit Editor config-Dateien [definieren, welche Arten von Code analysiert](fxcop-analyzer-options.md)werden. Für die in Visual Studio integrierten Analysen können mit Editor config-Dateien [die bevorzugten Code Stile](../ide/editorconfig-code-style-settings-reference.md) für eine Codebasis definiert werden.
+**A**: Regelsätze und Editor config-Dateien schließen sich gegenseitig aus, um Analyzers zu konfigurieren. Sie können gleichzeitig vorhanden sein. [Regelsätze](analyzer-rule-sets.md) ermöglichen das Aktivieren und Deaktivieren von Regeln und das Festlegen Ihres schwere Grads. Editor config-Dateien bieten andere Möglichkeiten zum Konfigurieren von Regeln. Bei den FxCop-Analyzern können Sie mit Editor config-Dateien [definieren, welche Arten von Code analysiert](fxcop-analyzer-options.md)werden. Für die in Visual Studio integrierten Analysen können mit Editor config-Dateien [die bevorzugten Code Stile für eine Codebasis definiert](../ide/editorconfig-code-style-settings-reference.md) werden.
 
-Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen von Drittanbietern durch die Verwendung von Textdateien konfiguriert, die als [zusätzliche Dateien](../ide/build-actions.md#build-action-values) für die C# Compiler und VB gekennzeichnet sind.
+Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen durch die Verwendung von Textdateien konfiguriert, die als [zusätzliche Dateien](../ide/build-actions.md#build-action-values) für die C# Compiler-und VB-Compiler gekennzeichnet sind.
 
 > [!NOTE]
 > Editor config-Dateien können nicht zum Konfigurieren der Legacy Analyse verwendet werden, wohingegen Regelsätze dies möglich macht.
