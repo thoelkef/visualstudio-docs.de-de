@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160043"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766031"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -341,9 +341,13 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |--------------| - |
 |TestExplorer.DebugAllTests|**STRG+R, STRG+A**|
 |TestExplorer.DebugAllTestsInContext|**STRG+R, STRG+T**|
+|TestExplorer.DebugLastRun|**STRG+R, D**|
 |TestExplorer.RepeatLastRun|**STRG+R, L**|
 |TestExplorer.RunAllTests|**STRG+R, A**|
 |TestExplorer.RunAllTestsInContext|**STRG+R, T**|
+|TestExplorer.ShowTestExplorer|**STRG+E, T**|
+|LiveUnitTesting.OpenTab|**STRG+E, L**|
+|Test.CodeCoverageResults|**STRG+E, C**|
 
 ### <a name="bkmk_tools"></a> Extras
 
@@ -401,6 +405,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |View.WebBrowser|**STRG+ALT+R**|
 |View.ZoomIn|**STRG+UMSCHALT+.**|
 |View.ZoomOut|**STRG+UMSCHALT+,**|
+|TestExplorer.ShowTestExplorer|**STRG+E, T**|
 
 ### <a name="bkmk_window"></a> Fenster
 

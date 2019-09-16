@@ -1,61 +1,72 @@
 ---
-title: 'Schritt 2: Ausführen des Programms'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 'Schritt 2: Ausführen Ihrer Picture Viewer-App'
+ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a6c7e90f8113f5fa03da907db5dbb8f374a564e7
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918930"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887923"
 ---
-# <a name="step-2-run-your-program"></a>Schritt 2: Ausführen des Programms
-Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausführbares Programm erstellt. Noch macht das Programm nicht viel. Es zeigt nur ein leeres Fenster mit dem Text **Form1** in der Titelleiste an. Aber es kann ausgeführt werden, wie Sie gleich feststellen werden.
+# <a name="step-2-run-your-picture-viewer-app"></a>Schritt 2: Ausführen Ihrer Picture Viewer-App
 
-![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 1 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic – Video 1)](http://go.microsoft.com/fwlink/?LinkId=205209) und [Tutorial 1: Create a picture viewer in C# – Video 1 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 1)](http://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+Wenn Sie ein Windows Forms-App-Projekt erstellen, erstellen Sie ein ausführbares Programm. In diesem Tutorialschritt wird Ihre Picture Viewer-App noch nicht viel tun &mdash; das wird jedoch in späteren Schritten der Fall sein. Vorerst zeigt sie ein leeres Fenster mit **Form1** in der Titelleiste an.
 
-## <a name="to-run-your-program"></a>So führen Sie das Programm aus
+Im Folgenden wird erläutert, wie Sie Ihre App ausführen können. 
 
-1. Verwenden Sie eine der folgenden Methoden, um das Programm auszuführen.
+1. Wählen Sie eine der folgenden Vorgehensweisen aus:
 
     - Drücken Sie die Taste **F5**.
 
     - Klicken Sie in der Menüleiste auf **Debuggen** > **Debuggen starten**.
 
-    - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen starten** aus, die wie folgt aussieht.
+    - Klicken Sie in der Symbolleiste auf **Debugging starten**, die wie folgt aussieht:
 
-         ![Schaltfläche „Debugging starten“ in der Symbolleiste](../ide/media/express_icondebug.png)
- Schaltfläche **Debugging starten** auf der Symbolleiste
+      ![Symbolleistenschaltfläche „Debugging starten“](../ide/media/express_icondebug.png)<br>
+      *Symbolleistenschaltfläche* ***Debugging starten***
 
-2. Visual Studio führt das Programm aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Diagramm wird das Programm gezeigt, das Sie soeben erstellt haben. Das Programm wird ausgeführt, und Sie werden es bald ergänzen.
+1. Visual Studio führt Ihre App aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Screenshot wird die App gezeigt, die Sie soeben erstellt haben. Die App wird ausgeführt, und Sie werden sie schon bald erweitern.
 
-     ![Windows Form-Anwendungsprogramm wird ausgeführt](../ide/media/express_firstrun.png)
- **Windows Form-Anwendungsprogramm** wird ausgeführt
+     ![Ausgeführte Windows Forms-App](../ide/media/express_firstrun.png)<br>
+***Windows Forms-App*** *wird ausgeführt*
 
-3. Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und schauen Sie sich die neue Symbolleiste an. Zusätzliche Schaltflächen werden auf der Symbolleiste angezeigt, wenn ein Programm ausgeführt wird. Mit diesen Schaltflächen können Sie Aufgaben ausführen, wie z. B. ein Programm beenden und starten. Außerdem helfen sie Ihnen, alle evtl. vorhandenen Fehler zu ermitteln. Für dieses Beispiel verwenden wir sie nur, um das Programm zu starten und zu beenden.
+1. Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und sehen Sie sich die neue Symbolleiste an. Wenn Sie eine Anwendung ausführen, werden weitere Schaltflächen in der Symbolleiste angezeigt. Mit diesen Schaltflächen können Sie Aktionen durchführen, wie z. B. die App beenden und starten. Außerdem helfen sie Ihnen bei der Ermittlung von Fehlern. In diesem Beispiel verwenden Sie die Symbolleiste lediglich zum Starten und Beenden der App.
 
-     ![Debugsymbolleiste](../ide/media/express_debugtoolbar.png)
-**Debugsymbolleiste**
+     ![Debugsymbolleiste](../ide/media/express_debugtoolbar.png)<br>
+***Debug****symbolleiste*
 
-4. Verwenden Sie eine der folgenden Methoden, um das Programm zu beenden.
+1. Verwenden Sie eine der folgenden Vorgehensweisen, um die App zu beenden:
 
     - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen beenden** aus.
 
     - Klicken Sie in der Menüleiste auf **Debuggen** > **Debuggen beenden** aus.
 
+    - Drücken Sie **UMSCHALT**+**F5**.
+
     - Schließen Sie das **Form1**-Fenster, indem Sie auf die Schaltfläche mit dem **X** in der oberen rechten Ecke des Fensters klicken.
 
     > [!NOTE]
-    > Wenn Sie das Programm von der IDE heraus ausführen, wird dies als „Debuggen“ bezeichnet, denn dies geschieht normalerweise, um Programmfehler zu finden und zu beheben. Obwohl dieses Programm klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
+    > Wenn Sie die App in der IDE ausführen, wird dies als „Debuggen“ bezeichnet, da dies normalerweise geschieht, um Fehler in der Anwendung zu finden und zu beheben. Obwohl diese App klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
 
-## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
+## <a name="next-steps"></a>Nächste Schritte
 
-- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).
+* Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md)** .
 
-- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md).
+* Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 1: Erstellen eines Windows Forms-App-Projekts](../ide/step-1-create-a-windows-forms-application-project.md).
+
+## <a name="see-also"></a>Siehe auch
+
+* [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

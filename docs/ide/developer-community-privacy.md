@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634854"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864688"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -68,8 +68,14 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
 - Python-Protokolle, sofern vorhanden
 
-- Ein Screenshot, sofern dieser einbezogen werden soll
+- Windows Forms-Protokolle, sofern vorhanden
 
+> [!NOTE]
+> Protokolldateien werden nur an Microsoft gesendet, wenn Sie die Berechtigung erteilen, indem Sie den Fehlerbericht einreichen, in dem sie enthalten sind. Die enthaltenen Dateien können Sie im Schritt „Zusammenfassung“ des Fensters „Problem melden“ sehen (siehe Screenshot). Die gesammelten Protokolle werden im Ordner „%temp%“ gespeichert und regelmäßig nach jedem Upload bereinigt. Wenn Sie kein Protokoll in Ihrem Problembericht einschließen möchten, löschen Sie die Datei aus dem Order „%temp%“, bevor Sie den Bericht einreichen.  
+  > ![Problem melden: Zusammenfassung gesammelter Protokolle](media/report-a-problem-logs-collected.png)
+
+- Ein Screenshot, sofern dieser einbezogen werden soll
+  
 - Aufzeichnungsdaten, sofern eine Aufzeichnung einbezogen werden soll. Diese umfassen:
 
   - Schritte zum Reproduzieren des Problems
