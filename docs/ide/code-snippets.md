@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975240"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766254"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -31,7 +31,7 @@ Codeausschnitte sind kleine Blöcke mit wiederverwendbarem Code, die in einer Co
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Codeausschnitte (Visual Studio für Mac)](/visualstudio/mac/snippets).
 
-Codeausschnitte sind für viele Sprachen verfügbar, einschließlich C#, C++, Visual Basic, XML und T-SQL. Öffnen Sie den **Codeausschnitt-Manager** in Visual Studio über das Menü **Extras**, und wählen Sie aus der Dropdownliste im oberen Bereich eine Sprache aus. Dann werden Ihnen alle verfügbaren installierten Codeausschnitte für die jeweilige Sprache angezeigt.
+Codeausschnitte sind für viele Sprachen verfügbar, einschließlich C#, C++, Visual Basic, XML und T-SQL. Öffnen Sie den **Codeausschnitt-Manager** in über das Menü **Extras** (oder drücken Sie **STRG**+**K**, **STRG**+**B**), und wählen Sie aus der Dropdownliste im oberen Bereich eine Sprache aus. Dann werden Ihnen alle verfügbaren installierten Codeausschnitte für die jeweilige Sprache angezeigt.
 
 ![Dialogfeld Codeausschnitt-Manager](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ Es gibt folgende Möglichkeiten, auf Codeausschnitte zuzugreifen:
 
 - Klicken Sie im Kontextmenü (Rechtsklick) im Code-Editor auf **Ausschnitt** > **Ausschnitt einfügen**.
 
-- Drücken Sie auf der Tastatur die Tasten**STRG**+**K**+**X**.
+- Drücken Sie **STRG**+**K** und **STRG**+**X**.
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Erweiterungsausschnitte und umschließende Ausschnitte
 

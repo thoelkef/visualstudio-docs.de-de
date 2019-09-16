@@ -14,22 +14,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d146416190924c8f1835ef17bc0fb622fcc53e03
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180217"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864813"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C\#
 
 In diesem Tutorial lernen Sie sich viele Tools, Dialogfelder und Designer kennen, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
 
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
 ::: moniker range="vs-2017"
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?) kostenlos herunterladen.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen.
+
+- Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+- Sie können entweder .NET Framework oder .NET Core für dieses Tutorial verwenden. .NET Core ist das neuere, modernere Framework. Für .NET Core ist mindestens Visual Studio 2019 Version 16.3 erforderlich.
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Konfigurieren der IDE
@@ -76,9 +80,12 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
    ![Anzeigen des Fensters „Neues Projekt erstellen“](../../get-started/media/vs-2019/start-window-create-new-project.png "Screenshot des Fensters „Neues Projekt erstellen“")
 
-1. Suchen Sie auf dem Bildschirm **Neues Projekt erstellen** nach „WPF“, und wählen Sie **WPF-App (.NET Framework)** und anschließend **Weiter** aus.
+1. Suchen Sie in der Anzeige **Neues Projekt erstellen** nach „WPF“, und wählen Sie dann **WPF-App (.NET Core)** und anschließend **Weiter** aus.
 
    ![WPF-App-Vorlage im Dialogfeld „Neues Projekt erstellen“](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Screenshot der WPF-App-Vorlage im Dialogfeld „Neues Projekt erstellen“")
+
+   > [!NOTE]
+   > Möglicherweise finden Sie zwei WPF-Desktopvorlagen, eine für .NET Framework und eine weitere für .NET Core. Die .NET Core ist ab Visual Studio 2019 Version 16.3 verfügbar. Sie können eine beliebige Vorlage für dieses Tutorial verwenden, es wird jedoch empfohlen, .NET Core für neue Entwicklungen zu verwenden.
 
 1. Geben Sie dem Projekt auf dem nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
 
@@ -99,31 +106,23 @@ Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Wählen Sie daz
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Ändern des Namens der Datei „MainWindow.xaml“
 
-Geben Sie „MainWindow“ einen genaueren Namen.
-
-1. Wählen Sie im **Projektmappen-Explorer** die Datei *MainWindow.xaml* aus. Das Fenster **Eigenschaften** sollte nun angezeigt werden. Wenn dies nicht der Fall ist, klicken Sie auf das Menü **Ansicht** und das **Eigenschaftenfenster**-Element. (Oder drücken Sie **F4**.)
-
-1. Ändern Sie die Eigenschaft **Dateiname** in `Greetings.xaml`
-
-     ![Eigenschaftenfenster mit hervorgehobenem Dateinamen](../media/exploreide-filenameinpropertieswindow.png "Screenshot des Eigenschaftenfenster mit hervorgehobenem Dateinamen")
-
-     Im **Projektmappen-Explorer** wird angezeigt, dass der Name der Datei nun *Greetings.xaml* und der Name der geschachtelten Codedatei nun *Greetings.xaml.cs* lautet. Diese Codedatei ist unter dem *XAML*-Dateiknoten geschachtelt, um deren enge Verbindung untereinander darzustellen.
-
-     ![Eigenschaftenfenster und Projektmappen-Explorer-Fenster mit Greetings-Dateinamen](../media/exploreide-greetingsfilename.png "Screenshot des Eigenschaftenfensters und des Projektmappen-Explorer-Fensters mit Greetings-Dateinamen")     
+Geben Sie „MainWindow“ einen genaueren Namen. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf *MainWindow.xaml*, und wählen Sie dann **Umbenennen** aus. Benennen Sie die Datei in *Greetings.xaml* um.
 
 ## <a name="design-the-user-interface-ui"></a>Entwerfen der Benutzeroberfläche (UI)
+
+Wenn der Designer nicht geöffnet ist, wählen Sie die Datei *Greetings.xaml* aus, und drücken Sie **UMSCHALT**+**F7**, um den Designer zu öffnen.
 
 Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein <xref:System.Windows.Controls.TextBlock>-Steuerelement, zwei <xref:System.Windows.Controls.RadioButton>-Steuerelemente und ein <xref:System.Windows.Controls.Button>-Steuerelement.
 
 ### <a name="add-a-textblock-control"></a>Hinzufügen eines TextBlock-Steuerelements
 
-1. Geben Sie **STRG**+**Q** ein, um das Suchfeld zu aktivieren, und geben Sie dort den Begriff **Toolbox** ein. Wählen Sie in der Ergebnisliste **Ansicht > Toolbox** aus.
+1. Drücken Sie **STRG**+**Q**, um das Suchfeld zu aktivieren, und geben Sie dort den Begriff **Toolbox** ein. Wählen Sie in der Ergebnisliste **Ansicht > Toolbox** aus.
 
 1. Erweitern Sie in der **Toolbox** den Knoten **Häufig verwendete WPF-Steuerelemente**, damit das TextBlock-Steuerelement angezeigt wird.
 
      ![Toolbox mit hervorgehobenem TextBlock-Steuerelement](../media/exploreide-textblocktoolbox.png "Screenshot des Toolboxfensters mit hervorgehobenem TextBlock-Steuerelement")
 
-1. Fügen Sie auf der Entwurfsoberfläche ein TextBlock-Steuerelement hinzu, indem Sie das **TextBlock**-Element auswählen und in das Fenster auf der Entwurfsoberfläche ziehen. Zentrieren Sie das Steuerelement im oberen Bereich des Fensters.
+1. Fügen Sie auf der Entwurfsoberfläche ein TextBlock-Steuerelement hinzu, indem Sie das **TextBlock**-Element auswählen und in das Fenster auf der Entwurfsoberfläche ziehen. Zentrieren Sie das Steuerelement im oberen Bereich des Fensters. Ab Visual Studio 2019 können Sie das Steuerelement an den roten Hilfslinien ausrichten.
 
     Das Fenster sollte der folgenden Abbildung entsprechen:
 
@@ -159,7 +158,7 @@ Anschließend fügen Sie dem Formular zwei [RadioButton](/dotnet/framework/wpf/c
 
      ![Toolboxfenster mit ausgewähltem RadioButton-Steuerelement](../media/exploreide-radiobuttontoolbox.png "Screenshot des Toolboxfensters mit ausgewähltem RadioButton-Steuerelement")
 
-1. Fügen Sie auf der Entwurfsoberfläche zwei Optionsfeld-Steuerelemente hinzu, indem Sie auf das **Optionsfeld**-Element klicken und in das Fenster auf der Entwurfsoberfläche ziehen. Verschieben Sie die Schaltflächen (indem Sie darauf klicken und die Pfeiltasten drücken), sodass sie nebeneinander unter dem TextBlock-Steuerelement erscheinen.
+1. Fügen Sie auf der Entwurfsoberfläche zwei Optionsfeld-Steuerelemente hinzu, indem Sie auf das **Optionsfeld**-Element klicken und in das Fenster auf der Entwurfsoberfläche ziehen. Verschieben Sie die Schaltflächen (indem Sie darauf klicken und die Pfeiltasten drücken), sodass sie nebeneinander unter dem TextBlock-Steuerelement erscheinen. Richten Sie die Steuerelemente an den roten Hilfslinien aus.
 
    Das Fenster sieht wie folgt aus:
 
@@ -175,11 +174,7 @@ Als nächstes können Sie jetzt Anzeigetext für jedes RadioButton-Steuerelement
 
 ### <a name="add-display-text-for-each-radio-button"></a>Hinzufügen von Anzeigetext für jedes Optionsfeld
 
-1. Öffnen Sie auf der Entwurfsoberfläche das Kontextmenü für „HelloButton“, indem Sie mit der rechten Maustaste auf „HelloButton“ klicken. Wählen Sie dann **Text bearbeiten** aus, und geben Sie anschließend `Hello` ein.
-
-1. Öffnen Sie das Kontextmenü für „GoodbyeButton“, indem Sie mit der rechten Maustaste auf „GoodbyeButton“ klicken. Wählen Sie dann **Text bearbeiten** aus, und geben Sie anschließend `Goodbye` ein.
-
-   Das XAML-Markup sollte in etwa wie im folgenden Beispiel aussehen:
+1. Ändern Sie das **Content**-Attribut im XAML-Code von `HelloButton` und `GoodbyeButton` in `"Hello"` und `"Goodbye"`. Das XAML-Markup sollte in etwa wie im folgenden Beispiel aussehen:
 
    ```xaml
    <Grid>
@@ -211,7 +206,7 @@ Das letzte Benutzeroberflächenelement, das Sie hinzufügen, ist ein [Button](/d
 
 ### <a name="add-the-button-control"></a>Hinzufügen des Button-Steuerelements
 
-1. Suchen Sie in der **Toolbox** nach dem **Schaltflächen**-Steuerelement, und fügen Sie es auf der Entwurfsoberfläche dem Optionsfeld-Steuerelement hinzu, indem Sie es in der Entwurfsansicht in das Formular ziehen.
+1. Suchen Sie in der **Toolbox** nach dem **Schaltflächen**-Steuerelement, und fügen Sie es auf der Entwurfsoberfläche dem Optionsfeld-Steuerelement hinzu, indem Sie es in der Entwurfsansicht in das Formular ziehen. Wenn Sie Visual Studio 2019 oder höher verwenden, hilft Ihnen eine rote Linie beim Zentrieren des Steuerelements.
 
 1. Ändern Sie in der XAML-Ansicht den Wert von **Inhalt** für das Schaltflächen-Steuerelement von `Content="Button"` in `Content="Display"`. Speichern Sie dann die Änderungen.
 
@@ -239,7 +234,7 @@ Wenn die Anwendung ausgeführt wird, wird ein Meldungsfeld angezeigt, nachdem ei
      *Greetings.xaml.cs* wird geöffnet, der Cursor steht im `Button_Click`-Ereignis.
 
     ```csharp
-    private void Button_Click_1(object sender, RoutedEventArgs e)
+    private void Button_Click(object sender, RoutedEventArgs e)
     {
 
     }
@@ -286,7 +281,16 @@ Zu Beginn dieses Tutorials wurde *MainWindow.xaml* in *Greetings.xaml* umbenannt
 
 1. Ändern Sie `StartupUri="MainWindow.xaml"` zu `StartupUri="Greetings.xaml"`, und speichern Sie dann die Änderungen.
 
-Starten Sie den Debugger erneut (drücken Sie auf **F5**). Sie sollten das **Greetings**-Fenster der Anwendung sehen. Schließen Sie nun das Anwendungsfenster, um das Debuggen zu beenden.
+Starten Sie den Debugger erneut (drücken Sie auf **F5**). Sie sollten das **Greetings**-Fenster der Anwendung sehen.
+
+::: moniker range="vs-2017"
+![Screenshot der ausgeführten App](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Screenshot der ausgeführten App](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+Schließen Sie nun das Anwendungsfenster, um das Debuggen zu beenden.
 
 ### <a name="debug-with-breakpoints"></a>Debuggen mit Haltepunkten
 
@@ -325,6 +329,12 @@ Wenn Sie einige Haltepunkte hinzufügen, können Sie den Code während des Debug
 1. Schließen Sie das Anwendungsfenster, um das Debuggen zu beenden.
 
 1. Wählen Sie in der Menüleiste **Debuggen** > **Alle Haltepunkte deaktivieren** aus.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>Anzeigen einer Darstellung der Benutzeroberflächenelemente
+
+In der ausgeführten App sollte ein Widget angezeigt werden, das am oberen Rand des Fensters angezeigt wird. Dies ist eine Runtimehilfsfunktion, die Schnellzugriff auf einige hilfreiche Debugfeatures bereitstellt. Klicken Sie auf die erste Schaltfläche **Zur visuellen Echtzeitstruktur wechseln**. Daraufhin sollte ein Fenster mit einer Struktur angezeigt werden, die alle visuelle Elemente Ihrer Seite enthält. Erweitern Sie die Knoten, um die hinzugefügten Schaltflächen zu finden.
+
+![Screenshot: Fenster mit visueller Echtzeitstruktur](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Version der Anwendung erstellen
 
