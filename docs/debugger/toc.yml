@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: Anwenden von Bearbeitungen im Unterbrechungsmodus mithilfe von „Bearbeiten und Fortfahren“
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: Schreiben und Debuggen von ausgeführtem XAML-Code
-          href: xaml-hot-reload.md
+        - name: Neuladen von XAML im laufenden Betrieb
+          items:
+            - name: Schreiben und Debuggen von ausgeführtem XAML-Code
+              href: xaml-hot-reload.md
+            - name: Problembehandlung beim Neuladen von XAML im laufenden Betrieb
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'Bearbeiten und Fortfahren wird für F# nicht unterstützt'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Anzeigen der Debuggerdaten
