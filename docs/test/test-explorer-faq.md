@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551861"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079621"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 ::: moniker range=">=vs-2019"
@@ -115,7 +115,6 @@ Der Dateipfadfilter im Suchfeld **Test-Explorer** wurde in Visual Studio 2017 Ve
 
 In Visual Studio 2019 werden einige Testfenster-APIs entfernt, die zuvor als öffentlich markiert waren, aber nie offiziell dokumentiert wurden. Diese wurden als frühe Warnung für die Erweiterungsverwaltung in Visual Studio 2017 als „veraltet“ gekennzeichnet. Nach unserer Erkenntnis wurden diese APIs nur durch sehr wenige Erweiterungen ermittelt und mit einer Abhängigkeit konfiguriert. Dies waren `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` und `SearchFilterTokenType`. Wenn sich diese Änderung auf Ihre Erweiterung auswirkt, teilen Sie uns dies mit, indem Sie einen Fehler in der [Entwicklercommunity](https://developercommunity.visualstudio.com) melden.
 
-::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>NuGet-Verweis auf Testadapter
 
 **In Visual Studio 2017 Version 15.8 werden meine Tests ermittelt, aber nicht ausgeführt.**
@@ -126,6 +125,7 @@ Das **Testprojekt{} verweist auf keinen NuGet-Adapter für .NET. Die Testermittl
 
 Anstelle der Verwendung von Testadaptererweiterungen müssen Projekte NuGet-Pakete für Testadapter verwenden. Diese Anforderung führt zu einer erheblichen Leistungsverbesserung und verursacht weniger Probleme bei der Continuous Integration. Weitere Informationen zur Einstellung der .NET-Testadaptererweiterung finden Sie in den [Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Wenn Sie den NUnit 2-Testadapter verwenden und nicht zum NUnit 3-Testadapter migrieren können, haben Sie die Möglichkeit, dieses neue Ermittlungsverhalten in Visual Studio Version 15.8 unter **Extras** > **Optionen** > **Test** zu deaktivieren.
 
