@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f9c0f4913c80e1cf2f2fee24dbed5ad910ca75
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887798"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079360"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 
@@ -71,7 +71,7 @@ Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgeh
 4. Geben Sie das Kennwort für den Zugriff auf die Schlüsseldatei ein, und drücken Sie dann die **EINGABETASTE**.
 
 > [!NOTE]
-> Die *PFX*-Datei kann keine Informationen zur Zertifikatsverkettung enthalten. Wenn dies allerdings der Fall ist, tritt der folgende Importfehler auf: **Das Zertifikat und der private Schlüssel für die Entschlüsselung wurden nicht gefunden.** Sie können den *Certmgr.msc* verwenden und die [Option deaktivieren](/previous-versions/aa730868(v=vs.80)?redirectedfrom=MSDN#rsvssign_topic3), dass **alle Zertifikat beim Exportieren der PFX-Datei einbezogen werden**, um die Informationen zur Zertifikatsverkettung zu entfernen.
+> Die *PFX*-Datei kann keine Informationen zur Zertifikatsverkettung enthalten. Wenn dies allerdings der Fall ist, tritt der folgende Importfehler auf: **Das Zertifikat und der private Schlüssel für die Entschlüsselung wurden nicht gefunden.** Sie können den *Certmgr.msc* verwenden und die [Option deaktivieren](/previous-versions/aa730868(v=vs.80)), dass **alle Zertifikat beim Exportieren der PFX-Datei einbezogen werden**, um die Informationen zur Zertifikatsverkettung zu entfernen.
 
 ## <a name="sign-using-a-test-certificate"></a>Signieren mithilfe eines Testzertifikats
 

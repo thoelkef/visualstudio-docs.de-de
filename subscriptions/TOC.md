@@ -3,7 +3,7 @@
 ## Abonnements
 ### Abonnements kaufen
 #### [Retail (Einzelhandel)](https://visualstudio.microsoft.com/vs/pricing)
-#### Cloud 
+#### Wolke 
 ##### [Übersicht](vscloud-overview.md)
 ##### [Abrechnung – Häufig gestellte Fragen](vscloud-billing-faq.md)
 ##### [Erwerben für CSPs](vscloud-csp.md)
@@ -35,6 +35,7 @@
 ##### [Office 365-Abonnement](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
 ##### [Power BI Pro](vs-pbi.md)
+##### [RStudio](vs-rstudio.md)
 ##### [Visual Studio App Center](vs-visual-studio-app-center.md)
 ##### [Visual Studio-IDE](vs-ide-benefit.md)
 ##### [WhiteSource Bolt](vs-whitesource.md)
