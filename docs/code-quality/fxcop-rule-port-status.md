@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551068"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062415"
 ---
 # <a name="fxcop-rule-port-status"></a>Port Status der FxCop-Regel
 
@@ -25,7 +25,7 @@ Wenn Sie zuvor eine statische Code Analyse in Visual Studio verwendet haben, Fra
 
 Die [Seite für die automatisch generierte Dokumentation](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) im Repository "Roslyn-Analyzers" enthält die aktuellste Liste der Regeln, die in FxCop-Analyzers portiert wurden. Diese Seite verfügt auch über zusätzliche Informationen, z. b. ob die Regel standardmäßig aktiviert ist und ob Sie über eine zugeordnete *Code Korrektur*verfügt. ([Code Fehlerbehebungen](../ide/quick-actions.md) sind One-Click-Korrekturen, die im Glühbirnen-Symbolmenü in Visual Studio verfügbar sind.)
 
-Die Liste der FxCop-Regeln, die zu den FxCop- [Analyzern](install-fxcop-analyzers.md) portiert wurden, entspricht dem Datum auf dieser Seite:
+Die Liste der FxCop-Regeln, die zu den [FxCop-Analyzern](install-fxcop-analyzers.md) portiert wurden, entspricht dem Datum auf dieser Seite:
 
 Regel-ID | Titel
 --------|---------
@@ -69,7 +69,7 @@ Regel-ID | Titel
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Keine Ausnahmen an unerwarteten Speicherorten auslösen.
 CA1066 | Der {0} Typ muss IEquatable\<T > implementieren, weil er "ist" überschreibt.
 CA1067 | Überschreiben Sie Object. Gleichheits (Objekt) bei der\<Implementierung von IEquatable T >
-CA1068 | CancellationToken-Parameter müssen zuletzt angezeigt werden.
+[CA1068](ca1068.md) | CancellationToken-Parameter müssen zuletzt angezeigt werden.
 CA1200 | Vermeiden Sie die Verwendung von-Endtags mit Präfix.
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Literale nicht als lokalisierte Parameter übergeben.
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo angeben.
@@ -193,7 +193,7 @@ CA5369 | XmlReader für die Deserialisierung verwenden
 CA5370 | Verwenden von XmlReader zum Überprüfen des Readers
 CA5371 | Verwenden von XmlReader für Schema Lesevorgänge
 CA5372 | XmlReader für XPathDocument verwenden
-CA5373 | Keine veraltete schlüsselabderivationsfunktion verwenden
+CA5373 | Verwenden Sie keine veraltete Schlüsselableitungsfunktion.
 CA5374 | XslTransform nicht verwenden
 CA5375 | Konto Shared Access Signature nicht verwenden
 CA5376 | Verwenden von sharedaccessproycol httpsonly

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987672"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012607"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von XAML-Code mit XAML-Hot-Neuladen in Visual Studio
 
@@ -38,7 +38,7 @@ Das erneute Laden von XAML ist besonders in den folgenden Szenarien hilfreich:
 
 Die folgende Abbildung zeigt die Verwendung der visuellen echt Zeitstruktur, um den Quellcode zu öffnen, und dann XAML-Hot-Neuladen, um den Schaltflächen Text und die Schaltflächen Farbe zu ändern.
 
-![XAML-Hot-Upload](../debugger/media/xaml-hot-reload-using.gif)
+![Neuladen von XAML im laufenden Betrieb](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
 > Das Laden von Visual Studio XAML Hot wird zurzeit nur unterstützt, wenn Sie die Anwendung in Visual Studio ausführen oder Blend für Visual Studio mit angefügtem Debugger (**F5** oder **Debuggen starten**). Sie können diese Umgebung nicht mithilfe von [an den Prozess anhängen aktivieren,](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) es sei denn, Sie [legen manuell eine Umgebungsvariable fest](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
@@ -66,5 +66,5 @@ Bei der Verwendung von XAML Hot Neuladen treten möglicherweise die folgenden Fe
 
 ## <a name="see-also"></a>Siehe auch
 
-[Problem](xaml-hot-reload-troubleshooting.md)
-Behandlung beim XAML-Hot-laden[von XAML-Hot-laden für xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Problembehandlung bei XAML Hot Neuladen](xaml-hot-reload-troubleshooting.md)
+* [XAML-Hot-Upload für xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
