@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: Erstellen einer Konsolenanwendung'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python: Erstellen einer Web-App'
       href: ide/quickstart-python.md
     - name: 'Node.js: Erstellen einer Web-App'
@@ -767,7 +767,7 @@
           href: ide/reference/add-new-item-command.md
         - name: Befehl „Alias“
           href: ide/reference/alias-command.md
-        - name: Befehl „Anweisung auswerten“
+        - name: Anweisung auswerten (Befehl)
           href: ide/reference/evaluate-statement-command.md
         - name: Befehl „Suchen“
           href: ide/reference/find-command.md
@@ -799,7 +799,7 @@
           href: ide/reference/open-file-command.md
         - name: Projekt öffnen (Befehl)
           href: ide/reference/open-project-command.md
-        - name: Befehl „Drucken“
+        - name: Drucken (Befehl)
           href: ide/reference/print-command.md
         - name: Befehl „Aktuellen Wert anzeigen“
           href: ide/reference/quick-watch-command.md
