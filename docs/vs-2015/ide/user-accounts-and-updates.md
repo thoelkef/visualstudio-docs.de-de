@@ -9,15 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158285"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062879"
 ---
 # <a name="user-accounts-and-updates"></a>Benutzerkonten und Updates
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+> [!WARNING]
+> Visual Studio 2015 kann nicht auf Ressourcen zugreifen, die für den bedingten Zugriff konfiguriert sind. Um mit diesen Ressourcen zu arbeiten, führen Sie ein Upgrade auf Visual Studio 2017 oder höher aus.
 
 Visual Studio selbst ist eine verbundene Umgebung. Durch die Anmeldung erhalten Sie Zugriff auf alle Ihrem Benutzerkonto zugeordneten Dienste sowie auf alle mit diesem Konto verknüpften Konten. Ihre Kontoeinstellungen "wandern" mit Ihnen mit, unabhängig davon, wo Sie Visual Studio verwenden. Sie können in einer bestimmten Visual Studio-Instanz Berechtigungsebenen für einzelne Benutzer konfigurieren. Visual Studio informiert Sie auch, wenn für eine Komponente Ihrer Installation, beispielsweise für ein SDK, ein Update verfügbar ist.  
   
@@ -31,5 +35,6 @@ Visual Studio selbst ist eine verbundene Umgebung. Durch die Anmeldung erhalten 
 |[Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md)|Beschreibt das Entsperren von Visual Studio in verschiedenen Szenarien.|  
 |[Benachrichtigungen](../ide/visual-studio-notifications.md)|Beschreibt die Benachrichtigung durch Visual Studio bei verfügbaren Updates für Komponenten wie beispielsweise SDKs oder für Visual Studio selbst.|  
   
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Siehe auch
+
+- [Visual Studio-IDE](../ide/visual-studio-ide.md)
