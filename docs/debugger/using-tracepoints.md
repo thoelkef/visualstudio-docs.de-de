@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Ablauf Verfolgungs Punkten im Debugger | Microsoft-Dokumentation
-ms.date: 9/4/2019
+ms.date: 9/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9d96290474283164ed9761a0cb9aa7734f1a9d
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
-ms.translationtype: HT
+ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71069031"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095255"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Verwenden von Ablauf Verfolgungs Punkten im Visual Studio-Debugger
 
@@ -96,7 +96,6 @@ Wenn Sie den Wert des Zählers beim Ändern der Iterations `for` Schleife drucke
 
 ![Bedingter Ausdruck bei Änderung](../debugger/media/conditionalexpressionwhenchanged.png "Bedingter Ausdruck bei Änderung")
 
-
 Das Verhalten der Option **bei Änderung** unterscheidet sich für verschiedene Programmiersprachen.
 
 - Bei nativem Code betrachtet der Debugger die erste Auswertung der Bedingung nicht als Änderung, sodass bei der ersten Auswertung nicht der Ablauf Verfolgungs Punkt auftritt.
@@ -133,3 +132,11 @@ Obwohl Ablauf Verfolgungs Punkte dazu gedacht sind, das Debuggen zu bereinigen u
 Manchmal kann sich der Wert ändern, wenn Sie eine Eigenschaft oder ein Attribut eines Objekts überprüfen. Dies ist kein Fehler, der von der Ablauf Verfolgungs Punkt-Funktion selbst verursacht wird. es ist jedoch erwähnenswert, dass durch die Verwendung von Ablauf Verfolgungs Punkten zum Überprüfen von Objekten diese unbeabsichtigten Änderungen nicht vermieden werden.
 
 Die Art und Weise, wie Ausdrücke im **Aktions** Meldungs Feld ausgewertet werden, unterscheidet sich möglicherweise von der Sprache, die Sie zurzeit für die Entwicklung verwenden. Wenn Sie z. b. eine Zeichenfolge ausgeben möchten, müssen Sie eine Nachricht nicht in Anführungszeichen einschließen, auch wenn `Debug.WriteLine()` Sie `console.log()`normalerweise oder verwenden. Außerdem kann sich die Syntax der geschweiften Klammer`{ }`() für Ausgabe Ausdrücke von der Konvention für das Ausgeben von Werten in der Entwicklungssprache unterscheiden. (Der Inhalt innerhalb der geschweiften Klammern (`{ }`) sollte jedoch immer noch mit der Syntax Ihrer Entwicklungssprache geschrieben werden.)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
+- [Schreiben von C# besserem Code mithilfe von Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Erster Einblick in das Debuggen](../debugger/debugger-feature-tour.md)
+- [Ausdrücke im Debugger](expressions-in-the-debugger.md)
+- [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
