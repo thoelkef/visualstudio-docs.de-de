@@ -42,6 +42,8 @@
       items:
         - name: Verwenden von Haltepunkten
           href: using-breakpoints.md
+        - name: Verwenden von Ablaufverfolgungspunkten
+          href: using-tracepoints.md
         - name: Problembehandlung von Haltepunkten
           href: troubleshooting-breakpoints.md
     - name: Datenüberprüfung

@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: CancellationToken-Parameter müssen zuletzt aufgeführt werden.'
+                  href: ca1068.md
                 - name: 'CA2210: Assemblys müssen gültige starke Namen aufweisen.'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Warnungen in der Dokumentation
+              items:
+                - name: Übersicht
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: Verwenden Sie keine cref-Tags mit einem Präfix.'
+                  href: ca1200.md
             - name: Globalisierungswarnungen
               items:
                 - name: Übersicht
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824: Assemblys mit NeutralResourcesLanguageAttribute markieren.'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: Vermeiden Sie Arrayzuteilungen mit einer Länge von 0 (null).'
+                  href: ca1825.md
             - name: Portabilitätswarnungen
               items:
                 - name: Übersicht
