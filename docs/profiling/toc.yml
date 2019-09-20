@@ -1,5 +1,5 @@
 - name: Dokumentation zur Profilerstellung
-  href: index.md
+  href: index.yml
 - name: Übersicht
   href: profiling-overview.md
 - name: Schnellstarts
