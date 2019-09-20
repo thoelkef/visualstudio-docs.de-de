@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887974"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062849"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 
@@ -52,7 +52,7 @@ Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die S
 ***Form1.cs***-*Registerkarte mit C#-Code*
 
     > [!NOTE]
-    > Möglicherweise zeigt die Registerkarte „Form1.cs“ **showButton** als **ShowButton** an.
+    > Möglicherweise zeigt die Registerkarte „Form1.cs“ oder „Form1.vb“ **showButton** als **ShowButton** an.
 
 1. Konzentrieren Sie sich auf diesen Teil des Codes.
 
@@ -64,7 +64,7 @@ Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die S
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,8 +83,11 @@ Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die S
     Im Folgenden sehen Sie den neuen Code, der im Code-Editor angezeigt wird.
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > Der Code zeigt möglicherweise keine Ereignishandler in Binnenmajuskeln an.
 
     Die fünf Methoden, die Sie hinzugefügt haben, werden als *Ereignishandler* bezeichnet, da die App sie immer dann aufruft, wenn ein Ereignis eintritt (z. B. wenn ein Benutzer auf eine Schaltfläche klickt oder ein Kontrollkästchen aktiviert).
 

@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887959"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062867"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“
 
@@ -42,6 +42,9 @@ IntelliSense versucht zu ermitteln, was Sie als Nächstes machen möchten, und s
 1. Geben Sie in der leeren Zeile zwischen den beiden geschweiften Klammern `{ }` ein `i` ein. (Machen Sie die Eingabe in Visual Basic in der leeren Zeile zwischen `Private Sub...` und `End Sub`.) Ein **IntelliSense**-Fenster wird wie im folgenden Bild gezeigt geöffnet.
 
     ![IntelliSense mit Visual C&#35;-Code](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > Der Code zeigt möglicherweise keine Ereignishandler in Binnenmajuskeln an.
 
 1. Im **IntelliSense**-Fenster sollte das Wort `if` hervorgehoben werden. (Ist dies nicht der Fall, geben Sie den Kleinbuchstaben `f` ein, dann wird das Wort markiert.) Beachten Sie, dass ein *QuickInfo*-Feld neben dem **IntelliSense**-Fenster mit der Beschreibung **Codeausschnitt für if-Anweisung** angezeigt wird. (In Visual Basic zeigt die QuickInfo auch an, dass es sich um einen Codeausschnitt handelt, aber mit einem etwas anderen Wortlaut.) Wenn Sie diesen Ausschnitt verwenden möchten, drücken Sie die **Tab**-Taste, um `if` in den Code einzufügen. Drücken Sie dann erneut die **Tab**-Taste, um den Codeausschnitt für die `if`-Anweisung zu verwenden. (Wenn Sie eine andere Stelle ausgewählt haben und das **IntelliSense**-Fenster nicht mehr angezeigt wird, verwenden Sie die RÜCKTASTE, um das `i` zu löschen. Geben Sie den Buchstaben „i“ erneut ein, um das **IntelliSense-Fenster** wieder zu öffnen.)
 

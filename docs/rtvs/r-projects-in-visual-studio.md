@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809904"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012620"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Erstellen von R-Projekten in Visual Studio
 
@@ -37,7 +37,7 @@ Die *RHISTORY*-Datei zeichnet alle Befehle auf, die Sie im Fenster [R Interactiv
 
 Die Datei *rproject.rproj* behält bestimmte R-spezifische Projekteinstellungen bei, die anderweitig nicht von Visual Studio verwaltet werden:
 
-| Eigenschaft | Standard | Beschreibung |
+| Eigenschaft | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | Version | 1.0 | Die Version von R Tools für Visual Studio, die für die Projekterstellung verwendet wurde |
 | RestoreWorkspace | Standard | Lädt automatisch vorherige Arbeitsbereichsvariablen aus der Datei `.RData` im Projektverzeichnis |
@@ -48,7 +48,7 @@ Die Datei *rproject.rproj* behält bestimmte R-spezifische Projekteinstellungen 
 | NumSpacesForTab | 2 | Die Anzahl der einzufügenden Leerzeichen, wenn UseSpacesForTab „Ja“ lautet |
 | Codierung | UTF-8 | Die Standardcodierung für `.R`-Dateien |
 | RnwWeave | Sweave | Das beim Einbinden einer RNW-Datei zu verwendende Paket |
-| LaTeX | pdfLaTeX | Die beim Konvertieren von RMarkdwon in PDF zu verwendende Bibliothek |
+| LaTeX | pdfLaTeX | Die beim Konvertieren von RMarkdown in PDF zu verwendende Bibliothek |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Konvertieren eines Dateiordners in ein R-Projekt
 
@@ -63,20 +63,20 @@ Führen Sie die folgenden Schritte aus, wenn Sie einen vorhandenen Ordner mit *R
 
 Klicken Sie zum Öffnen der Eigenschaftenseiten des Projekts im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** oder das Menüelement **Projekt > (Projektname)-Eigenschaften** aus. Das geöffnete Fenster zeigt die Projekteigenschaften an:
 
-| Registerkarte | Eigenschaft | Beschreibung |
+| Registerkarte | Eigenschaft | BESCHREIBUNG |
 | --- | --- | --- |
 | Run | Startup file | Der Name der Datei, die mit dem Befehl **Source startup file**, **F5**, **Debuggen** > **Debuggen starten** oder **Debuggen** > **Ohne Debuggen starten** ausgeführt wird. Sie können die Startdatei auch im Projekt über einen Rechtsklick auf die Datei und die Option **Als R-Startskript festlegen** festlegen. |
 | | R Interactive beim Ausführen zurücksetzen | Löscht alle Variablen aus dem Arbeitsbereich des interaktiven Fensters, wenn das Projekt ausgeführt wird. So wird sichergestellt, dass keine Inhalte des Arbeitsbereichs aus vorherigen Ausführungen übrig bleiben. |
 | | Remote Project Path | Pfad zu einem Remotearbeitsbereich |
 | | Transfer files on run | Gibt an, ob die Projektdateien, die dem Filter in **Files to transfer** unterliegen, bei jeder Ausführung in einen Remotearbeitsbereich kopiert werden sollen |
 | | Files to transfer | Dateinamen und Platzhalter, die die genauen Dateien angeben, die in einen Remotearbeitsbereich kopiert werden sollen, wenn **Transfer files on run** ausgewählt ist. |
-| Einstellungen | (Settings.R-Datei) | Die Einstellungen des R-Projekts stammen aus *Settings.R*- oder **.Settings.R*-Dateien, die sich innerhalb des Projekts befinden. Wenn keine Einstellungsdatei vorhanden ist, können Sie Variablen hinzufügen und die Seite speichern. Zudem wird eine *Settings.R*-Standarddatei für Sie erstellt. Sie können die Einstellungsdatei auch über den Menübefehl **Datei** > **Neues Element hinzufügen** zum Projekt hinzufügen. <br/> Einstellungen werden als R-Code gespeichert, und die Datei kann vor dem Ausführen anderer Module und dem Vorabausfüllen der Umgebung mit den vordefinierten Einstellungen zurückverfolgt werden. |
+| Einstellungen | (Settings.R-Datei) | Die Einstellungen des R-Projekts stammen aus *Settings.R*- oder * *.Settings.R*-Dateien, die sich innerhalb des Projekts befinden. Wenn keine Einstellungsdatei vorhanden ist, können Sie Variablen hinzufügen und die Seite speichern. Zudem wird eine *Settings.R*-Standarddatei für Sie erstellt. Sie können die Einstellungsdatei auch über den Menübefehl **Datei** > **Neues Element hinzufügen** zum Projekt hinzufügen. <br/> Einstellungen werden als R-Code gespeichert, und die Datei kann vor dem Ausführen anderer Module und dem Vorabausfüllen der Umgebung mit den vordefinierten Einstellungen zurückverfolgt werden. |
 
 ## <a name="r-specific-project-commands"></a>R-spezifische Projektbefehle
 
 Visual Studio-Projekte unterstützen sowohl über das Kontextmenü als auch über das **Projektmenü** eine Reihe von allgemeinen Befehlen. Weitere Informationen zu diesen allgemeinen Funktionen finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Bedenken Sie jedoch, dass R Tools für Visual Studio (RTVS) eine Reihe eigener Befehle zum Kontextmenü eines R-Projekts sowie Dateien und Ordner innerhalb des Projekts hinzufügt.
 
-| Befehl | Beschreibung |
+| Befehl | BESCHREIBUNG |
 | --- | --- |
 | Arbeitsverzeichnis hier festlegen | Legt das Arbeitsverzeichnis des Fensters von R Interactive auf den Projektordner fest, der auch für jeden Unterordner eines Projekts verwendet werden kann. |
 | Enthaltenden Ordner öffnen | Öffnet den Windows-Explorer am Speicherort der ausgewählten Datei |
@@ -91,7 +91,7 @@ RTVS umfasst eine Reihe von Vorlagen für bestimmte Dateitypen. Sie können auf 
 > [!Note]
 > Die Befehle **Hinzufügen** > **Neues Element** zeigen auch allgemeine Dateitypen an, die in der Tabelle nicht aufgelistet sind. Mit **Datei** > **Neu** > **Datei** werden diese Typen stattdessen auf der Registerkarte **Allgemein** aufgeführt.
 
-| Dateityp | Beschreibung |
+| Dateityp | BESCHREIBUNG |
 | --- | --- |
 | R-Skript | Eine Textdatei, die dieselben Befehle enthält, die in der R-Befehlszeile eingegeben werden können |
 | R Markdown | Eine Datei mit einem [R Markdown](rmarkdown-with-r-in-visual-studio.md)-Dokument |
@@ -99,7 +99,7 @@ RTVS umfasst eine Reihe von Vorlagen für bestimmte Dateitypen. Sie können auf 
 | R-Dokumentation | Eine generische R-Dokumentationsdatei, die nur die Namens-, Alias-, und Titelfelder enthält |
 | R-Dokumentation (Funktion) | Eine R-Dokumentationsdatei, die viele Felder mit Kommentaren zum Beschreiben einer Funktion enthält |
 | R-Dokumentation (Dataset) | Eine R-Dokumentationsdatei, die viele Felder mit Kommentaren zum Beschreiben eines Datasets enthält |
-| SQL-Abfrage | Und leere *SQL*-Datei. Siehe [Arbeiten mit SQL Server und R](integrating-sql-server-with-r.md). |
+| SQL-Abfrage | Eine leere *SQL*-Datei. Siehe [Arbeiten mit SQL Server und R](integrating-sql-server-with-r.md). |
 | Gespeicherte Prozeduren mit R | Eine R-Datei mit untergeordneten SQL-Abfragen und einer Vorlagendatei für die untergeordnete gespeicherte Prozedur. Siehe [Arbeiten mit SQL Server und R](integrating-sql-server-with-r.md). |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Verwenden von verschiedenen Projekttypen in Visual Studio

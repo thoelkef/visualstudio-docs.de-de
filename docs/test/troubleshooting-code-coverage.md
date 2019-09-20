@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926540"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079586"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 
@@ -56,6 +56,8 @@ Erklärung: Für die Code Coverage-Engine muss während des Testlaufs für jede 
 Die *PDB*-Datei und die *DLL*- oder *EXE*-Datei müssen in dem gleichen Buildvorgang generiert werden.
 
 Lösung: Stellen Sie sicher, dass die Buildeinstellungen so konfiguriert sind, dass die *PDB*-Datei generiert wird. Wenn die *PDB*-Dateien beim Erstellen des Projekts nicht aktualisiert werden, öffnen Sie die Projekteigenschaften, wählen Sie die Seite **Build** aus, wählen Sie **Erweitert** aus, und überprüfen Sie die **Debuginformationen**.
+
+Vergewissern Sie sich bei C++-Projekten, dass die generierten PDB-Dateien über vollständige Debuginformationen verfügen. Öffnen Sie die Projekteigenschaften, und überprüfen Sie, ob der **Linker** > **Debuggen** > **Debuginformationen generieren** auf **Für Freigabe und Veröffentlichung optimierte Debuginformationen generieren (/DEBUG:FULL)** festgelegt ist.
 
 Wenn sich die *PDB*-Datei und die *DLL*- oder *EXE*-Dateien an verschiedenen Speicherorten befinden, kopieren Sie die *PDB*-Datei in dasselbe Verzeichnis. Es ist auch möglich, die Code Coverage-Engine so zu konfigurieren, dass an anderen Speicherorten nach *PDB*-Dateien gesucht wird. Weitere Informationen finden Sie unter [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 

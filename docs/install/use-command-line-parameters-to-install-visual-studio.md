@@ -2,7 +2,7 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 titleSuffix: ''
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
-ms.date: 03/30/2019
+ms.date: 09/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951318"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913247"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 
@@ -32,7 +32,7 @@ Wenn Sie Visual Studio von einer Befehlszeile aus installieren, können Sie die 
 - Den Installationsprozess automatisieren
 - Einen Cache (Layout) der Installationsdateien für den späteren Gebrauch erstellen
 
-Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwendet, die kleine Datei (ca. 1 MB), die den Downloadprozess initiiert. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen. Verwenden Sie die folgenden Links, um einen direkten Link zum neuesten Release-Bootstrapper für die Produktversion zu erhalten, die Sie installieren:
+Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die kleine Datei (1 MB), die den Downloadprozess initiiert, verwendet. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen. Verwenden Sie die folgenden Links, um einen direkten Link zum neuesten Release-Bootstrapper für die Produktversion zu erhalten, die Sie installieren:
 
 ::: moniker range="vs-2017"
 
@@ -56,7 +56,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 
 > Syntax: `vs_enterprise.exe [command] <options>...`
 
-(Ersetzen Sie `vs_enterprise.exe` nach Bedarf durch die Produktedition, die Sie installieren)
+Ersetzen Sie `vs_enterprise.exe` nach Bedarf durch die Produktedition, die Sie installieren. (Alternativ können Sie auch `vs_installer.exe` verwenden.)
 
 >[!TIP]
 > Weitere Informationen zur Verwendung der Befehlszeile für die Installation von Visual Studio finden Sie auf der Seite mit [Beispielen für Befehlszeilenparameter](command-line-parameter-examples.md).
@@ -112,7 +112,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | **Erweiterte Installationsoptionen** | **Beschreibung** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Optional:** Die ID des Kanals für die Instanz, die installiert werden soll. Diese Option ist für den Befehl „install“ erforderlich und kann für andere Befehle ignoriert werden, wenn `--installPath` angegeben ist. |
-| `--channelUri <uri>` | **Optional:** Der URI des Kanalmanifests. Wenn Sie keine Updates wünschen, kann `--channelUri` auf eine nicht vorhandene Datei zeigen. (Z.B. –channelUri C:\doesntExist.chman) Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
+| `--channelUri <uri>` | **Optional:** Der URI des Kanalmanifests. Werden keine Updates erwünscht, kann `--channelUri` auf eine nicht vorhandene Datei zeigen (z. B. --channelUri C:\doesntExist.chman). Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
 | `--installChannelUri <uri>` | **Optional:** Der URI des Kanalmanifests, der für die Installation verwendet werden soll. Der mit `--channelUri` festgelegte URI (der angegeben werden muss, wenn `--installChannelUri` angegeben ist) dient zum Ermitteln von Updates. Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
 | `--installCatalogUri <uri>` | **Optional:** Der URI des Katalogmanifests, der für die Installation verwendet werden soll. Wird diese Option angegeben, versucht der Kanal-Manager, das Katalogmanifest von diesem URI herunterzuladen, bevor der URI im Installationskanalmanifest verwendet wird. Dieser Parameter wird zur Unterstützung der Offlineinstallation verwendet, wobei der Layoutcache mit dem bereits heruntergeladenen Produktkatalog erstellt wird. Kann für den Befehl „install“ verwendet werden und wird für andere Befehle ignoriert. |
 | `--productId <id>` | **Optional**: Die ID des Produkts für die Instanz, die installiert wird. Diese ist bei normalen Installationsbedingungen bereits ausgefüllt. |
@@ -154,14 +154,7 @@ Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Stu
 
 Je nach Ergebnis des Vorgangs wird die Umgebungsvariable `%ERRORLEVEL%` auf einen der folgenden Werte festgelegt:
 
-| **Wert** | **Ergebnis** |
-| --------- | ---------- |
-| 0 | Der Vorgang wurde erfolgreich abgeschlossen. |
-| 1602 | Der Vorgang wurde abgebrochen. |
-| 3010 | Der Vorgang wurde erfolgreich abgeschlossen, für die Installation ist jedoch ein Neustart erforderlich, bevor sie verwendet werden kann. |
-| 5004 | Der Vorgang wurde abgebrochen. |
-| 5007 | Der Vorgang wurde blockiert – der Computer entspricht nicht den Anforderungen. |
-| Andere | Es ist ein Fehler aufgetreten – Überprüfen Sie die Protokolle für weitere Informationen |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die den Status der Installation angeben. Sortieren Sie die Ordner nach Datum, und suchen Sie Dateien für jeweils den Bootstrapper, die Installer-App und die Setup-Engine, die mit `dd_bootstrapper`, `dd_client` und `dd_setup` beginnen.
 
