@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32d9d9a874894ab7e3e71d10da3f3cf7b3428d3e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887908"
+ms.locfileid: "70913269"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
@@ -51,7 +51,7 @@ Anschließend sollte Ihre App in etwa wie in der folgenden Abbildung aussehen:
 
 |Titel|BESCHREIBUNG|
 |-----------|-----------------|
-|[Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md)|Erstellen Sie zunächst ein Windows Forms-App-Projekt.|
+|[Schritt 1: Erstellen eines Windows Forms-App-Projekts](../ide/step-1-create-a-windows-forms-application-project.md)|Erstellen Sie zunächst ein Windows Forms-App-Projekt.|
 |[Schritt 2: Ausführen Ihrer Picture Viewer-App](../ide/step-2-run-your-program.md)|Führen Sie das Windows Forms-App-Projekt aus, das Sie im vorherigen Schritt erstellt haben.|
 |[Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md)|Ändern Sie das Aussehen des Formulars mit dem **Eigenschaftenfenster**.|
 |[Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Fügen Sie Ihrem Formular ein `TableLayoutPanel`-Steuerelement hinzu.|

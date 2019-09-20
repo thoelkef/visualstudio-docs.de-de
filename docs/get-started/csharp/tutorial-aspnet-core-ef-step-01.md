@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261724"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977442"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Erstellen Ihrer ersten ASP.NET Core-App mithilfe von Entity Framework mit Visual Studio 2019
 
@@ -88,7 +88,7 @@ Beachten Sie, dass Sie für die meisten Projektvorlagen auch das Kontrollkästch
 - Geschäfts-, Schul- oder Unikonten. Diese Option verwendet Active Directory, Azure AD oder Office 365 für die Authentifizierung.
 - Windows-Authentifizierung. Geeignet für Intranetanwendungen.
 
-Wählen Sie die standardmäßige Webanwendungsvorlage ohne Authentifizierung aus, und klicken Sie auf **OK**.
+Wählen Sie die Standardvorlage für Webanwendungen ohne Authentifizierung aus, und klicken Sie auf **Erstellen**.
 
 ![Visual Studio 2019 – Auswählen von ASP.NET Core-Projektoptionen](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

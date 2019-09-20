@@ -1,6 +1,6 @@
 ---
-title: 'Schritt 11: Ausführen Ihrer App und Ausprobieren weiterer Features'
-ms.date: 08/30/2019
+title: 'Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e82e0002255a406f02f85cbb2636be1aa249529
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887948"
+ms.locfileid: "70913131"
 ---
-# <a name="step-11-run-your-app-and-try-other-features"></a>Schritt 11: Ausführen Ihrer App und Ausprobieren weiterer Features
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features
 
-Ihre App ist fertig und bereit zur Ausführung. Sie können Ihre App ausführen und die Hintergrundfarbe von <xref:System.Windows.Forms.PictureBox> festlegen. Indem Sie versuchen, die Anwendung zu verbessern, indem Sie die Farbe des Formulars ändern, die Schaltflächen und das Kontrollkästchen anpassen und die Eigenschaften des Formulars ändern, können Sie mehr lernen.
+Ihre Picture Viewer-App ist fertig und bereit zur Ausführung. Sie können Ihre App ausführen und die Hintergrundfarbe von <xref:System.Windows.Forms.PictureBox> festlegen. Indem Sie versuchen, die Anwendung zu verbessern, indem Sie die Farbe des Formulars ändern, die Schaltflächen und das Kontrollkästchen anpassen und die Eigenschaften des Formulars ändern, können Sie mehr lernen.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Ausführen Ihrer App und Festlegen der Hintergrundfarbe
 

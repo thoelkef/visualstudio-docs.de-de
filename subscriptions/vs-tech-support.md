@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681603"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936907"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können Probleme bei der Problemlösung für Produkte in **produktionsfernen Umgebungen** gelöst werden, die sich noch in der Standardsupportphase des [Supportlebenszyklus](https://support.microsoft.com/lifecycle/search) befinden. Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden; bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents, geltend 1 Jahr lang ab Aktivierung des Vorteils. Die Aktivierung des Vorteils muss stattfinden, während das Abonnement aktiv ist.
@@ -23,6 +23,13 @@ Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können P
 > Nicht alle Abonnements auf einer bestimmten Ebene sind berechtigt, Supportanfragen zu empfangen. Abonnements, die über FTE, NFR, MPN, MCT und andere Programme erworben wurden, empfangen keine Supportanfragen. Wenn Ihr Abonnement nicht dafür berechtigt ist, technische Supportanfragen zu empfangen, wird die Kachel „Technischer Support“ nicht bei Ihren verfügbaren Vorteilen angezeigt.
 
 **Um eine Supportanforderung über einen Vorteil einzureichen, müssen Sie diesen zuerst aktivieren.  Folgen Sie den Schritten im nächsten Abschnitt, um die Aktivierung abzuschließen.**
+
+## <a name="supported-products"></a>Unterstützte Produkte 
+Für Entwicklertools wie die Visual Studio-IDE und Azure DevOps Server wird durch Visual Studio-Abonnements Standardsupport und erweiterter Support angeboten.
+
+Für Produkte, die nicht für Entwickler konzipiert wurden (z. B. SQL Server, Windows, SharePoint) und die über Visual Studio-Abonnements heruntergeladen werden, wird nur Standardsupport angeboten. Diese Produkte sind für Entwicklungsumgebungen nur lizenziert, um Anwendungen zu entwerfen, zu entwickeln, zu testen und vorzuführen. Diese Produkte sind nicht für Produktionsumgebungen lizenziert.
+
+Beschreibungen auf Produktebene: Erweitern Sie **Unavailable support plans** (Nicht verfügbare Supportpläne). Wenn die Meldung „Support plan cannot be used for support on the specified product (Code:8)“ (Der Supportplan kann nicht für Support zum angegebenen Produkt verwendet werden (Code: 8).) angezeigt wird, kann Ihr Supportvertrag nicht für die ausgewählte Produktversion verwendet werden.
 
 ## <a name="how-to-activate-the-benefit"></a>Aktivieren des Vorteils
 1. Wechseln Sie zu https://my.visualstudio.com/Benefits, scrollen Sie nach unten zum Abschnitt „Support“, und klicken Sie auf der Kachel „Technischer Support“ auf **Chat to activate** (Chat für die Aktivierung).

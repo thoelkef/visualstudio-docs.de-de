@@ -1,21 +1,24 @@
 ---
 title: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 0e7d11f023cc239a3aaa4124cb1ac12a4e4ae9eb
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501145"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079612"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular
 
@@ -122,9 +125,9 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
    > [!NOTE]
    > Wenn Sie zu viele Einfügungen vornehmen, fügt die IDE dem TableLayoutPanel eine neue Zeile für das neue Label-Steuerelement hinzu. Sie können dies rückgängig machen. Drücken Sie die Tasten **STRG**+**Z**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Rückgängig**.
 
-    Als Nächstes wird das Formular angelegt. Es sollte aussehen wie die folgende Abbildung.
+    Als Nächstes wird das Formular angelegt. Sie sollte in etwa wie die folgende Abbildung aussehen.
 
-    ![Anfangszustand des Formulars für das Vergleichsspiel](../ide/media/express_tut4step1.png)<br/>   Anfangszustand des Formulars für das Vergleichsspiel
+    ![Anfangszustand des Memoryspiels](../ide/media/express_tut4step1.png)<br/>*Anfangszustand des Memoryspiels*
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 

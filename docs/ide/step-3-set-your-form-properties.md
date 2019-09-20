@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1ca71cb420bcc2bbc6ba00eb1eca5deaa2b2c9
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887899"
+ms.locfileid: "70913133"
 ---
 # <a name="step-3-set-your-form-properties"></a>Schritt 3: Festlegen der Formulareigenschaften
 
@@ -77,7 +77,7 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
 
 * Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 
-* Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 2: Ausführen Ihrer Picture Viewer-App(../ide/step-2-run-your-program.md).
+* Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 2: Ausführen Ihrer Picture Viewer-App](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>Siehe auch
 
