@@ -1,6 +1,6 @@
 ---
-title: Analyse Regelsätze
-ms.date: 04/22/2019
+title: FxCop-Analyse Regelsätze
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,22 +10,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585134"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185956"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Regelsätze für Analysepakete
 
 Vordefinierte Regelsätze sind in einigen nuget Analyzer-Paketen enthalten. Beispielsweise aktivieren oder deaktivieren die Regelsätze, die im nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthalten sind (beginnend mit Version 2.6.2), Regeln basierend auf ihrer Kategorie, z. b. Sicherheit, Benennung oder Leistung. Durch die Verwendung von Regelsätzen können Sie auf einfache Weise nur die Regel Verletzungen erkennen, die eine bestimmte Regel Kategorie betreffen.
 
+Bei einem Regelsatz handelt es sich um eine Gruppierung von Code Analyse Regeln, mit denen gezielte Probleme und bestimmte Bedingungen identifiziert werden. Regelsätze ermöglichen das Aktivieren oder Deaktivieren von Regeln und Festlegen des schwere Grads einzelner Regel Verletzungen. Das nuget-Paket FxCop Analyzer enthält vordefinierte Regelsätze für die folgenden Regel Kategorien:
+
+- Entwurf
+- Dokumentation
+- Verwaltbarkeit
+- Benennen
+- Leistung
+- Zuverlässigkeit
+- Sicherheit
+- Verwendung
+
 Wenn Sie von der veralteten "FxCop"-Analyse zur .NET Compiler Platform basierten Code Analyse migrieren, können Sie mit diesen Regelsätzen ähnliche Regel Konfigurationen verwenden, [die Sie zuvor verwendet](rule-set-reference.md)haben.
 
 ## <a name="use-analyzer-package-rule-sets"></a>Verwenden von analysepaketregelsätzen
 
-Nachdem Sie [ein nuget Analyzer-Paket installiert](install-roslyn-analyzers.md)haben, suchen Sie den vordefinierten Regelsatz im *RuleSets* -Verzeichnis. Wenn Sie z. b. auf `Microsoft.CodeAnalysis.FxCopAnalyzers` das Analysepaket verwiesen haben, finden Sie das zugehörige *RuleSets* -Verzeichnis unter *% User\\profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\<Version. \>\rulesets*. Kopieren Sie von dort eine oder mehrere der RuleSets, und fügen Sie Sie in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
+Nachdem Sie [ein nuget Analyzer-Paket installiert](install-roslyn-analyzers.md)haben, suchen Sie den vordefinierten Regelsatz im *RuleSets* -Verzeichnis. Wenn Sie z. b. auf `Microsoft.CodeAnalysis.FxCopAnalyzers` das Analysepaket verwiesen haben, finden Sie das *zugehörige RuleSets* -Verzeichnis unter *% User\\profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\<Version. \>\rulesets*. Kopieren Sie von dort eine oder mehrere der RuleSets, und fügen Sie Sie in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
 
 Sie können auch [einen vordefinierten Regelsatz anpassen](how-to-create-a-custom-rule-set.md) . Beispielsweise können Sie den Schweregrad einer oder mehrerer Regeln ändern, sodass Verstöße im **Fehlerliste**als Fehler oder Warnungen angezeigt werden.
 
@@ -74,5 +85,5 @@ Das nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.
 - [FAQ zu Analysetools](analyzers-faq.md)
 - [Overview of .NET Compiler Platform analyzers (Übersicht über .NET Compiler Platform-Analysetools)](roslyn-analyzers-overview.md)
 - [Installieren von Analyzern](install-roslyn-analyzers.md)
-- [Verwenden von Analyzern](use-roslyn-analyzers.md)
+- [Analysen konfigurieren](use-roslyn-analyzers.md)
 - [Verwenden von Regelsätzen zum Gruppieren von Code Analyse Regeln](using-rule-sets-to-group-code-analysis-rules.md)
