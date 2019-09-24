@@ -1,5 +1,5 @@
 - name: Dokumentation zur Bereitstellung
-  href: index.md
+  href: index.yml
 - name: Übersicht
   items:
     - name: Übersicht über die Bereitstellung
@@ -22,8 +22,8 @@
       items:
         - name: Bereitstellen einer .NET Core-Anwendung mit dem Tool „Veröffentlichen“
           href: /dotnet/core/deploying/deploy-with-vs
-        - name: Packen einer Desktop-App für Microsoft Store (Desktop-Brücke)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Packen einer Desktop-App für den Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Bereitstellen einer Desktop-App mit ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Erstellen von ClickOnce-Anwendungen über die Befehlszeile
@@ -38,14 +38,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Continuous Deployment von ASP.NET Core in Azure mit Git
           href: /aspnet/core/publishing/azure-continuous-deployment
-        - name: Veröffentlichen in Kubernetes mit Kubernetes-Tools für Visual Studio
-          href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
     - name: C++
       items:
         - name: Bereitstellen einer App in C/C++
           href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Packen einer Desktop-App für Microsoft Store (Desktop-Brücke)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Packen einer Desktop-App für den Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Bereitstellen einer C++/CLR App mit ClickOnce
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
