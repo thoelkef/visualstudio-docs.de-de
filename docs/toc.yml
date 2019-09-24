@@ -654,7 +654,7 @@
         - name: 'Exemplarische Vorgehensweise: Erstellen einer Buildumgebung für mehrere Computer'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Debuggen >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: Testen >>
       displayName: Unit testing
       href: test/improve-code-quality.md
