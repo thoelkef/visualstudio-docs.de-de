@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von ActiveX-Steuerelementen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Debuggen eines ActiveX-Steuer Elements Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894429"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211083"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Vorgehensweise: Debuggen von ActiveX-Steuerelementen
 
@@ -42,7 +42,7 @@ Um das ActiveX-Steuerelement zu debuggen, müssen Sie einen Container (ausführb
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus.
 
-2. Von der **Ansicht** Menü wählen **Eigenschaftenseiten**.
+2. Wählen Sie im Menü **Ansicht** die Option **Eigenschaften Seiten**aus.
 
 3. Öffnen Sie im Dialogfeld **Projekteigenschaftenseiten** den Ordner **Konfigurationseigenschaften**, und wählen Sie **Debuggen** aus.
 
@@ -61,5 +61,5 @@ Um das ActiveX-Steuerelement zu debuggen, müssen Sie einen Container (ausführb
 - [ActiveX-Steuerelemente](/cpp/mfc/activex-controls)
 - [Testen der Eigenschaften und Ereignisse mit Test Container](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Debuggen von COM und ActiveX](../debugger/com-and-activex-debugging.md)
-- [Debuggen in Visual Studio](../debugger/index.md)
+- [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

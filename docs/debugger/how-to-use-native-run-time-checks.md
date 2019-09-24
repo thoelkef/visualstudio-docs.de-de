@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden von systemeigenen Laufzeitprüfungen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Systemeigene Laufzeitüberprüfungen verwenden | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846969"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211023"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen
 In Visual C++ können Sie mit systemeigenen [runtime_checks](/cpp/preprocessor/runtime-checks) häufige Laufzeitfehler abfangen. Beispiele:
@@ -78,7 +78,7 @@ In Visual C++ können Sie mit systemeigenen [runtime_checks](/cpp/preprocessor/r
 - Verwenden Sie das `runtime_checks` -Pragma.
 
 ## <a name="see-also"></a>Siehe auch
-- [Debuggen in Visual Studio](../debugger/index.md)
+- [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [Laufzeitfehlerüberprüfung](/cpp/c-runtime-library/run-time-error-checking)
