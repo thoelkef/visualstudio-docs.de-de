@@ -1,5 +1,5 @@
 ---
-title: Debuggen ein installierten UWP-app-Pakets | Microsoft-Dokumentation
+title: Debuggen eines installierten UWP-App-Pakets | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 11/07/2018
 ms.topic: conceptual
@@ -20,83 +20,83 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5c2e94e9fa80145489bddfb005b7136bdff8a71
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563180"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211288"
 ---
-# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Debuggen eines installierten UWP-app-Pakets in Visual Studio
+# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Debuggen eines installierten UWP-App-Pakets in Visual Studio
 
-Installierte app-Pakete mit universellen Windows-Plattform (UWP) auf Windows 10-Computern und Xbox, HoloLens und IoT-Geräte können von Visual Studio debuggen.
+Visual Studio kann installierte universelle Windows-Plattform (UWP)-app-Pakete auf Windows 10-Computern und Xbox-, hololens-und IOT-Geräten Debuggen.
 
 >[!NOTE]
->Visual Studio-debugging für installierten UWP-apps wird auf Smartphones nicht unterstützt.
+>Das Visual Studio-Debuggen für installierte UWP-apps wird auf Smartphones nicht unterstützt.
 
-Weitere Informationen zum Debuggen von UWP-apps finden Sie in den Blogbeiträgen auf [Debuggen die app-Pakete installiert](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) und [Erstellen universeller Windows-Apps (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
+Weitere Informationen zum Debuggen von UWP-apps finden Sie in den Blogbeiträgen zum [Debuggen installierter App-Pakete](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) und zum entwickeln [universeller Windows-Apps (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
-## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Debuggen einer installierten UWP-app auf einem lokalen Computer
+## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Debuggen einer installierten UWP-App auf einem lokalen Computer
 
-1. Wählen Sie in Visual Studio **Debuggen** > **andere Debugziele** > **Debuggen Installed App Package**.
+1. **Wählen Sie** > in Visual Studio die Option**andere debugziele** > Debuggen**installiertes App-Paket**
 
-1. In der **Debuggen Installed App Package** Dialogfeld unter **Verbindungstyp**Option **lokalen Computer**.
+1. Wählen Sie im Dialogfeld **installiertes App-Paket Debuggen** unter **Verbindungstyp**die Option **lokaler Computer**.
 
-1. Klicken Sie unter **installierte App-Pakete**, wählen Sie die app, die Sie debuggen möchten, oder geben Sie seinen Namen in das Suchfeld. Nicht ausgeführte app-Pakete installiert werden, unter **nicht ausgeführt.**, und das Ausführen von apps befinden sich unter **ausführen**.
+1. Wählen Sie unter **installierte App-Pakete**die APP aus, die Sie debuggen möchten, oder geben Sie den Namen in das Suchfeld ein. Nicht ausgeführt installierte App-Pakete werden unter **nicht ausgeführt**angezeigt, und die Ausführung von apps wird derzeit **ausgeführt**.
 
    ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
 
-1. Ändern Sie bei Bedarf den Codetyp unter **diesen Codetyp Debuggen**, und wählen Sie andere Optionen.
-   - Wählen Sie **nicht starten sondern Debuggen meinen Code** So debuggen Sie die app gestartet wird. Starten des Debuggens die beim Starten der app ist eine effektive Möglichkeit zum Debuggen von Steuerelementpfade von [Methoden zum Starten der verschiedenen](/windows/uwp/xbox-apps/automate-launching-uwp-apps), z.B. die protokollaktivierung mit benutzerdefinierten Parametern.
+1. Ändern Sie ggf. den Codetyp unter **Debuggen Sie diesen Codetyp**, und wählen Sie andere Optionen aus.
+   - Wählen Sie **eigenen Code nicht starten, sondern Debuggen, wenn er** mit dem Debuggen beginnt, wenn die APP gestartet wird. Das Starten des Debuggens beim Starten der APP ist eine effektive Möglichkeit zum Debuggen von Steuerungs Pfaden von [verschiedenen Startmethoden](/windows/uwp/xbox-apps/automate-launching-uwp-apps), z. b. die Protokoll Aktivierung mit benutzerdefinierten
 
-1. Wählen Sie **starten**, oder wenn die app ausgeführt wird, wählen Sie **Anfügen**.
+1. Wählen Sie **Start**aus, oder klicken Sie auf **Anfügen**, wenn die app ausgeführt wird.
 
 > [!NOTE]
-> Sie können auch alle ausgeführten UWP oder andere app-Prozess anfügen, indem Sie auswählen **Debuggen** > **an den Prozess anhängen** in Visual Studio. Ist nicht erforderlich, den ursprüngliche Visual Studio-Projekt an einen laufenden Prozess anfügen, aber der app-Symbole werden geladen erheblich helfen wird, wenn Sie einen Prozess zu debuggen, dem Sie nicht über den ursprünglichen Code verfügen. Finden Sie unter [angeben von Symbol-und Quelldateien im Debugger](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Sie können auch an alle laufenden UWP-oder anderen APP-Prozesse anfügen, indem Sie in Visual Studio **Debuggen** > **an den Prozess anhängen** auswählen. Das ursprüngliche Visual Studio-Projekt muss nicht an einen laufenden Prozess angefügt werden, aber das Laden der APP-Symbole hilft beim Debuggen eines Prozesses, für den Sie nicht über den ursprünglichen Code verfügen, erheblich. Weitere Informationen finden Sie [unter Angeben von Symbol-und Quelldateien im Debugger](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="remote"></a> Debuggen einer installierten UWP-app auf einem Remotecomputer oder-Gerät
+## <a name="remote"></a>Debuggen einer installierten UWP-App auf einem Remote Computer oder-Gerät
 
-Beim ersten Visual Studio mit eine installierte UWP-app auf einem Windows 10-Gerät oder eine remote-Ersteller des Postings des aktualisieren Sie Windows 10-Computer, debuggt wird es der remote-debugging-Tools auf dem Zielgerät installiert.
+Wenn Visual Studio zum ersten Mal eine installierte UWP-App auf einem Windows 10-Gerät oder auf einem Remote Computer mit Windows 10-Update eines Remote Erstellers debuggt, werden die remotedebuggingtools auf dem Zielgerät installiert.
 
-1. [Aktivieren Sie den Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development) auf Visual Studio-Computer und Geräte oder Computer.
+1. [Aktivieren Sie den Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development) auf dem Visual Studio-Computer und dem Remote Gerät oder-Computer.
 
-1. Wenn Sie die Verbindung mit einem Remotecomputer unter Prä-Creator Update Windows 10, herstellen [manuell installieren und starten Sie den Remotedebugger](../debugger/remote-debugging.md) auf dem Remotecomputer.
+1. Wenn Sie eine Verbindung mit einem Remote Computer herstellen, auf dem das Windows 10-Update vor dem Ersteller ausgeführt wird, [Installieren und starten Sie den Remote Debugger manuell](../debugger/remote-debugging.md) auf dem Remote Computer.
 
-1. Wählen Sie auf dem Visual Studio-Computer **Debuggen** > **andere Debugziele** > **Debuggen Installed App Package**.
+1. **Wählen Sie** > auf dem Visual Studio-Computer die Option**andere debugziele** > Debuggen**installiertes App-Paket**
 
-1. In der **Debuggen Installed App Package** Dialogfeld unter **Verbindungstyp**Option **Remotecomputer** oder **Gerät**.
+1. Wählen Sie im Dialogfeld **installiertes App-Paket Debuggen** unter **Verbindungstyp**die Option **Remote Computer** oder **Gerät**.
 
-   Bei Auswahl von **Gerät**, Ihr Computer muss Windows 10-Gerät physisch verbunden sein.
+   Wenn Sie das **Gerät**auswählen, muss der Computer physisch mit einem Windows 10-Gerät verbunden sein.
 
-   Für einen Remotecomputer, wenn die Adresse des Computers nicht neben angezeigt wird **Adresse**Option **Änderung**.
+   Wenn die Computer Adresse neben **Address**nicht angezeigt wird, wählen Sie für einen Remote Computer die Option **ändern**aus.
 
-   1. In der **Remoteverbindung** Dialogfeld neben **Adresse**, geben Sie den Namen oder die IP-Adresse des Computers, um eine Verbindung herstellen möchten.
+   1. Geben Sie im Dialogfeld **Remote Verbindung** neben **Adresse**den Namen oder die IP-Adresse des Computers ein, mit dem Sie eine Verbindung herstellen möchten.
 
       ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
 
-      Wenn der Debugger kann nicht mit einem Remotecomputer mit den Namen des Computers verbunden sind, verwenden Sie stattdessen die IP-Adresse. Verwenden Sie die IP-Adresse für Xbox, HoloLens und IoT-Geräte.
-   1. Wählen Sie eine Authentifizierungsoption neben **Authentifizierungsmodus**.
+      Wenn der Debugger nicht mithilfe des Computer namens eine Verbindung mit einem Remote Computer herstellen kann, verwenden Sie stattdessen die IP-Adresse. Verwenden Sie die IP-Adresse für Xbox-, hololens-oder IOT-Geräte.
+   1. Wählen Sie eine Authentifizierungs Option neben dem **Authentifizierungsmodus**aus.
 
-      Behalten Sie den Standardwert für die meisten apps **universell (unverschlüsseltes Protokoll)**.
-   1. Wählen Sie **wählen**.
+      Behalten Sie für die meisten apps den Standardwert **Universal (unverschlüsseltes Protokoll)** bei.
+   1. Wählen Sie **auswählen**aus.
 
-1. Klicken Sie unter **installierte App-Pakete**, wählen Sie die app, die Sie debuggen möchten, oder geben Sie seinen Namen in das Suchfeld. Nicht ausgeführte app-Pakete installiert werden, unter **nicht ausgeführt.**, und das Ausführen von apps befinden sich unter **ausführen**.
+1. Wählen Sie unter **installierte App-Pakete**die APP aus, die Sie debuggen möchten, oder geben Sie den Namen in das Suchfeld ein. Nicht ausgeführt installierte App-Pakete werden unter **nicht ausgeführt**angezeigt, und die Ausführung von apps wird derzeit **ausgeführt**.
 
-1. Ändern Sie bei Bedarf den Codetyp unter **diesen Codetyp Debuggen**, und wählen Sie andere Optionen.
-   - Wählen Sie **nicht starten sondern Debuggen meinen Code** So debuggen Sie die app gestartet wird. Starten des Debuggens die beim Starten der app ist eine effektive Möglichkeit zum Debuggen von Steuerelementpfade von [Methoden zum Starten der verschiedenen](/windows/uwp/xbox-apps/automate-launching-uwp-apps), z.B. die protokollaktivierung mit benutzerdefinierten Parametern.
+1. Ändern Sie ggf. den Codetyp unter **Debuggen Sie diesen Codetyp**, und wählen Sie andere Optionen aus.
+   - Wählen Sie **eigenen Code nicht starten, sondern Debuggen, wenn er** mit dem Debuggen beginnt, wenn die APP gestartet wird. Das Starten des Debuggens beim Starten der APP ist eine effektive Möglichkeit zum Debuggen von Steuerungs Pfaden von [verschiedenen Startmethoden](/windows/uwp/xbox-apps/automate-launching-uwp-apps), z. b. die Protokoll Aktivierung mit benutzerdefinierten
 
-1. Wählen Sie **starten**, oder wenn die app ausgeführt wird, wählen Sie **Anfügen**.
+1. Wählen Sie **Start**aus, oder klicken Sie auf **Anfügen**, wenn die app ausgeführt wird.
 
-Wenn Sie das Debuggen eines installierten app-Pakets auf einem verbundenen Xbox, HoloLens und IoT-Gerät zum ersten Mal starten, installiert Visual Studio die richtige Version des Remotedebuggers für das Zielgerät. Installieren des Remotedebuggers dauert einige Zeit, und die Nachricht **Remotedebugger wird gestartet** zeigt an, während diese durchgeführt wird.
+Wenn Sie zum ersten Mal mit dem Debuggen eines installierten App-Pakets auf einem verbundenen Xbox-, hololens-oder IOT-Gerät beginnen, installiert Visual Studio die richtige Version des Remote Debuggers für das Zielgerät. Die Installation des Remote Debuggers kann einige Zeit in Anspruch nehmen, und die Meldung "der **Remote Debugger wird gestartet** " wird angezeigt.
 
 >[!NOTE]
->Derzeit ein Xbox oder HoloLens-Gerät die app neu gestartet mit dem Debugger angefügt wird, wenn er bereits ausgeführt wurde.
+>Derzeit startet ein Xbox-oder hololens-Gerät die APP mit dem angefügten Debugger neu, wenn Sie bereits ausgeführt wurde.
 
-Weitere Informationen zu Remotebereitstellung von UWP-apps, finden Sie unter [bereitstellen und Debuggen von UWP-apps](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) und [Debuggen von UWP-apps auf Remotecomputern](run-windows-store-apps-on-a-remote-machine.md).
+Weitere Informationen zur Remote Bereitstellung von UWP-apps finden Sie unter Bereitstellen [und Debuggen von UWP-apps](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) und [Debuggen von UWP-apps auf Remote](run-windows-store-apps-on-a-remote-machine.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debuggen in Visual Studio](../debugger/index.md)
+- [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Remotedebuggen](../debugger/remote-debugging.md)
 - [Konfigurieren der Windows-Firewall für das Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
