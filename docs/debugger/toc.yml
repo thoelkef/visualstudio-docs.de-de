@@ -1,5 +1,5 @@
 - name: Debugger-Dokumentation
-  href: index.md
+  href: index.yml
 - name: Übersicht
   items:
     - name: Was bedeutet „Debuggen“?
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Vorabrufen von Inhalt für Microsoft Store-Apps
               href: prefetch-content-for-windows-store-apps.md
-        - name: Verwalteter Code
+        - name: 'Verwalteter Code (C#, Visual Basic, F#)'
           items:
             - name: Debuggen von verwaltetem Code
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Debuggen von F#'
               href: debugging-f-hash.md
-        - name: Systemeigener Code
+        - name: C/C++-Code
           items:
             - name: Debuggen von nativem Code
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: Debuggen von eingefügtem Code
               href: how-to-debug-injected-code.md
-        - name: Debuggen von GPU-Code
+        - name: GPU-Code
           href: debugging-gpu-code.md
         - name: Grafikdiagnose
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Der Webserver ist nicht richtig konfiguriert
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript und TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Web-Apps
           items:
             - name: Debuggen von Webanwendungen
