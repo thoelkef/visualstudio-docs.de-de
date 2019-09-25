@@ -10,51 +10,51 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1d001dc306bbb225c4ecc1c0f17bf46619e2d0a7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841538"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237259"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Review code for XPath injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XPath-Befehlen)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForXPathInjectionVulnerabilities|
+|TypeName|Reviewcodeforxpthinjectionsicherheitsanfälligkeiten|
 |CheckId|CA3008|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht eine XPath-Abfrage.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen eine XPath-Abfrage.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Achten Sie darauf von XPath-Injection-Angriffen, bei der Arbeit mit nicht vertrauenswürdigen Eingaben. Erstellen von XPath-Abfragen mit nicht vertrauenswürdigen Eingaben kann es Angreifern ermöglichen, die Abfrage, um eine unbeabsichtigte Ergebnissatz in böswilliger Absicht zu bearbeiten, und legen Sie den Inhalt des abgefragten XML-möglicherweise offen.
+Beachten Sie bei der Arbeit mit nicht vertrauenswürdigen Eingaben die XPath-Injection-Angriffe. Das Erstellen von XPath-Abfragen mithilfe nicht vertrauenswürdiger Eingaben kann es einem Angreifer ermöglichen, die Abfrage bösartig zu manipulieren, um ein unbeabsichtigtes Ergebnis zurückzugeben, und möglicherweise den Inhalt der abgefragten XML-Daten offenzulegen.
 
-Mit dieser Regel versucht, beim Suchen der Eingabespalte aus HTTP-Anforderungen, die einen XPath-Ausdruck erreicht.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die eine XPath-Abfrage ausführt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die einen XPath-Ausdruck erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die eine XPath-Abfrage ausführt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Einige Ansätze für die Behebung von XPath-Injection-Anfälligkeiten gehören:
+Einige Ansätze zum Beheben von XPath-Injection-Sicherheitsrisiken sind:
 
 - Erstellen Sie keine XPath-Abfragen aus der Benutzereingabe.
-- Überprüfen Sie, dass die Eingabe nur eine sichere Gruppe von Zeichen enthält.
-- Versehen Sie Anführungszeichen mit Escapezeichen.
+- Überprüfen Sie, ob die Eingabe nur einen sicheren Satz von Zeichen enthält.
+- Escapezeichen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Wenn Sie, dass Sie die Eingabe zur Sicherheit überprüft haben wissen, kann ich diese Warnung unterdrücken.
+Wenn Sie wissen, dass Sie die Eingabe als sicher überprüft haben, ist es in Ordnung, diese Warnung zu unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

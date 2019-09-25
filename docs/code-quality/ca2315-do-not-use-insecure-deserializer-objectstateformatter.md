@@ -1,5 +1,5 @@
 ---
-title: 'CA2315: Verwenden Sie keine unsicheren Deserialisierer ObjectStateFormatter'
+title: 'CA2315: Unsicheren Deserialisierer nicht verwenden: ObjectStateFormatter'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,41 +13,41 @@ ms.workload:
 f1_keywords:
 - CA2315
 - DoNotUseInsecureDeserializerObjectStateFormatter
-ms.openlocfilehash: 793fa9df333eed7e485d7d8829849ae30d9c93a2
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 30e9d55fa5aa9c909c29935988f76107a4b5556d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135488"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237672"
 ---
-# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315: Verwenden Sie keine unsicheren Deserialisierer ObjectStateFormatter
+# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315: Unsicheren Deserialisierer nicht verwenden: ObjectStateFormatter
 
 |||
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerObjectStateFormatter|
 |CheckId|CA2315|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Ein <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> Deserialisierungsmethode war aufgerufen oder referenziert werden.
+Eine <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> Deserialisierungsmethode wurde aufgerufen oder referenziert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Diese Regel sucht nach <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> Deserialisierung Methoden- oder Verweise.
+Diese Regel findet <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> deserialisierungsmethodenaufrufe oder Verweise.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
 [!INCLUDE[insecure-deserializers-fixes-for-always-insecure-deserializers](includes/insecure-deserializers-fixes-for-always-insecure-deserializers-md.md)]
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

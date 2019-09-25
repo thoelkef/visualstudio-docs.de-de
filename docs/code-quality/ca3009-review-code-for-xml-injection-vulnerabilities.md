@@ -10,49 +10,49 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841067"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237246"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Review code for XML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XML-Befehlen)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForXmlInjectionVulnerabilities|
+|TypeName|Reviewcodeforxmlinjectionsicherheitsanfälligkeiten|
 |CheckId|CA3009|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht, unformatierte XML-Ausgabe.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen unformatierte XML-Ausgaben.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Achten Sie darauf von XML-Injection-Angriffen, bei der Arbeit mit nicht vertrauenswürdigen Eingaben. Ein Angreifer kann XML-Injection verwenden, um das Einfügen von Sonderzeichen in eine XML-Dokument, sodass das Dokument ungültig XML. Oder ein Angreifer könnte in böswilliger Absicht fügen Sie XML-Knoten ihrer Wahl.
+Beachten Sie bei der Arbeit mit nicht vertrauenswürdigen Eingaben, dass XML-Injection-Angriffe berücksichtigt werden. Ein Angreifer kann eine XML-Injektion verwenden, um Sonderzeichen in ein XML-Dokument einzufügen, sodass das Dokument ungültiges XML-Dokument ist. Oder ein Angreifer könnte die XML-Knoten Ihrer Wahl in böswilliger Absicht einfügen.
 
-Mit dieser Regel versucht beim Suchen der Eingabespalte aus HTTP-Anforderungen, die ein Schreiben von unformatiertem XML zu erreichen.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die unformatierten XML-Daten schreibt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die einen unformatierten XML-Schreibvorgang erreichen
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die unformatierten XML-Code schreibt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Schreiben Sie nicht die unformatierten XML-Daten. Verwenden Sie stattdessen Methoden oder Eigenschaften dieses XML-Codierung der Eingabe.
+Schreiben Sie kein unformatierte XML. Verwenden Sie stattdessen Methoden oder Eigenschaften, die Ihre Eingabe XML-codieren.
 
-Oder geben Sie mit der XML-Codierung vor dem Schreiben von XML-Rohdaten.
+Oder XML-codierungseingaben vor dem Schreiben von unformatierten XML-Daten.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Nicht unterdrücken von Warnungen, die von dieser Regel.
+Warnungen von dieser Regel nicht unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ad26dcbbbef5a34796ca0aa134653c3c9df5d763
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714719"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253259"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwaltete Entsprechungen der Win32 API verwenden.
 
@@ -31,35 +31,35 @@ ms.locfileid: "66714719"
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Rufen Sie eine Plattform ist definiert, und eine Methode mit der entsprechenden Funktionalität, die in .NET vorhanden ist.
+Eine Platt Form Aufruf Methode ist definiert, und eine Methode mit der entsprechenden Funktionalität ist in .net vorhanden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine Plattformaufrufmethode wird verwendet, um eine nicht verwaltete DLL-Funktion aufrufen und wird mit definiert die <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> -Attribut, oder die `Declare` -Schlüsselwort in Visual Basic. Ein falsch definierten Plattformaufrufmethode zu Runtime-Ausnahmen führen kann, die aufgrund von Problemen wie z. B. einen falsch geschriebenen Funktion, die fehlerhafte Zuordnung von Datentypen der Parameter und Rückgabetypen Werten und falschen Feld-Spezifikationen wie die Aufrufkonvention und das Zeichen Legen Sie. Falls verfügbar, ist es einfacher und weniger fehleranfällig, rufen Sie die entsprechende verwaltete Methode als zum Definieren und die nicht verwaltete Methode direkt aufzurufen. Aufrufen einer Plattform invoke-Methode kann auch zu Problemen führen, zusätzliche Sicherheit, die berücksichtigt werden müssen.
+Eine Platt Form Aufruf Methode wird verwendet, um eine nicht verwaltete DLL-Funktion aufzurufen, <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> und wird mithilfe des `Declare` -Attributs oder des-Schlüssel Worts in Visual Basic definiert. Eine falsch definierte Platt Form Aufruf Methode kann aufgrund von Problemen, wie z. b. einer falsch benannten Funktion, fehlerhafter Zuordnung von Parameter-und Rückgabewert Datentypen und falscher Feld Spezifikationen, wie z. b. der Aufruf Konvention und des Zeichens, zu Lauf Zeit Ausnahmen führen. Set. Falls verfügbar, ist es einfacher und weniger fehleranfällig, die entsprechende verwaltete Methode aufzurufen, als die nicht verwaltete Methode direkt zu definieren und aufzurufen. Das Aufrufen einer Platt Form Aufruf Methode kann auch zu zusätzlichen Sicherheitsproblemen führen, die behoben werden müssen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Aufruf an die nicht verwaltete Funktion mit einem Aufruf von seinem verwalteten Gegenwert fest.
+Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den-Befehl für die nicht verwaltete Funktion durch einen-Aufrufwert.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie eine Warnung dieser Regel, wenn die vorgeschlagene Ersetzungsmethode nicht die benötigte Funktionalität bietet.
+Unterdrückt eine Warnung aus dieser Regel, wenn die vorgeschlagene Ersetzungs Methode nicht die erforderliche Funktionalität bereitstellt.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Plattform rufen die Definition einer Methode, die die Regel verletzen. Darüber hinaus die Aufrufe an die Plattform Methode aufrufen und die entsprechende verwaltete Methode werden angezeigt.
+Das folgende Beispiel zeigt eine Platt Form Aufruf Methoden Definition, die gegen die Regel verstößt. Außerdem werden die Aufrufe der Platt Form Aufruf Methode und der entsprechenden verwalteten Methode angezeigt.
 
 [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
 [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1404: GetLastError unmittelbar nach P/Invoke aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
-- [CA1060: Verschieben von P/Invokes in NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
-- [CA1400: P/Invoke-Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
-- [CA1401: P/Invokes dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
-- [CA2101: Geben Sie die Marshalling für P/Invoke-Zeichenfolgenargumente](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+- [CA1404: GetLastError unmittelbar nach P/aufrufen aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+- [CA1060: Verschieben von P/aufrufen in die NativeMethods-Klasse](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+- [CA1400: P/aufrufende Einstiegspunkte müssen vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+- [CA1401: P/Aufrufe dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+- [CA2101: Marshalling für P/Aufruf-Zeichen folgen Argumente angeben](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
