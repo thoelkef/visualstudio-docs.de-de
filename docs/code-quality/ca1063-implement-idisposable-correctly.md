@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 837659ca24eb66995626668185500db7bc32bbd7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 8b29c9ed644c223488261333e79f17229bd4b7a3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547373"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235302"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 
@@ -42,7 +42,7 @@ Die <xref:System.IDisposable?displayProperty=nameWithType> Schnittstelle ist nic
 
 - `Dispose()`wird überschrieben.
 
-- Die `Dispose()` Methode ist nicht öffentlich, [versiegelt](/dotnet/csharp/language-reference/keywords/sealed)oder benannt.
+- Die `Dispose()` Methode ist nicht öffentlich, [versiegelt](/dotnet/csharp/language-reference/keywords/sealed) **oder benannt.**
 
 - `Dispose(bool)`ist nicht geschützt, virtuell oder nicht versiegelt.
 
@@ -72,7 +72,7 @@ Alle <xref:System.IDisposable> Typen sollten das Lösch [Muster](/dotnet/standar
 
 - Stellen Sie sicher, dass verwerfen () als öffentlich und [versiegelt](/dotnet/csharp/language-reference/keywords/sealed)deklariert ist.
 
-- Benennen Sie Ihre verwerfen- Methode um, und stellen Sie sicher, dass Sie als öffentlich und [versiegelt](/dotnet/csharp/language-reference/keywords/sealed)deklariert ist.
+- Benennen Sie Ihre **verwerfen-Methode um,** und stellen Sie sicher, dass Sie als öffentlich und [versiegelt](/dotnet/csharp/language-reference/keywords/sealed)deklariert ist.
 
 - Stellen Sie sicher, dass verwerfen (bool) als "Protected", "Virtual" und "unsealed" deklariert ist.
 

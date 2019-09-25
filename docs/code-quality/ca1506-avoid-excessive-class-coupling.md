@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546107"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234494"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Übermäßige Klassenkopplungen vermeiden.
 
@@ -32,21 +32,21 @@ ms.locfileid: "62546107"
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ oder Methode ist mit vielen anderen Knotentypen gekoppelt.
+Ein Typ oder eine Methode ist mit vielen anderen Typen verknüpft.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
 Durch diese Regel wird die Klassenkopplung gemessen, indem die eindeutigen Typverweise, die ein Typ oder eine Methode enthält, gezählt werden.
 
-Typen und Methoden, die einen hohen Grad an Klassenkopplungen können schwierig zu verwalten sein. Es hat sich bewährt, Typen und Methoden, die niedrige Kopplung und hohe Kohäsion aufweisen.
+Typen und Methoden mit einem hohen Grad an Klassen Kopplung können schwer zu verwalten sein. Es empfiehlt sich, Typen und Methoden zu nutzen, die eine geringe Kopplung und einen hohen Zusammenhalt aufweisen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um diese Verletzung zu beheben, versuchen Sie, gestalten Sie den Typ oder eine Methode zum Verringern der Anzahl von Typen, mit denen er verknüpft ist.
+Um diese Verletzung zu beheben, versuchen Sie, den Typ oder die Methode umzugestalten, um die Anzahl der Typen, mit denen Sie gekoppelt ist, zu reduzieren.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Ausgeschlossen Sie diese Warnung, wenn der Typ oder Methode gewartet werden kann, trotz der großen Anzahl von Abhängigkeiten von anderen Typen betrachtet wird.
+Schließen Sie diese Warnung aus, wenn der Typ oder die Methode trotz der großen Anzahl von Abhängigkeiten von anderen Typen als wart Bar eingestuft wird.
 
 ## <a name="see-also"></a>Siehe auch
 

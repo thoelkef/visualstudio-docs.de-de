@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e09a670ac85d37bc2c0297201db93462f64ca1
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 140037b025db88230762bc0d540d933cec7a5119
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714457"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236315"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Assemblys mit AssemblyVersionAttribute markieren.
 
@@ -36,7 +36,7 @@ ms.locfileid: "66714457"
 
 ## <a name="cause"></a>Ursache
 
-Die Assembly muss sich nicht auf eine Versionsnummer aus.
+Die Assembly hat keine Versionsnummer.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -48,21 +48,21 @@ Die Identität einer Assembly besteht aus den folgenden Informationen:
 
 - culture
 
-- Öffentliche Schlüssel (für Assemblys mit starkem Namen).
+- Öffentlicher Schlüssel (für Assemblys mit starkem Namen).
 
-.NET verwendet die Versionsnummer, um eine Assembly eindeutig zu identifizieren und auf Typen in Assemblys mit starkem Namen zu binden. Die Versionsnummer wird zusammen mit der Versions- und Herausgeberrichtlinie verwendet. Standardmäßig werden Anwendungen nur mit der Assemblyversion ausgeführt, mit der sie erstellt wurden.
+.NET verwendet die Versionsnummer zur eindeutigen Identifizierung einer Assembly und zum Binden an Typen in Assemblys mit starkem Namen. Die Versionsnummer wird zusammen mit der Versions- und Herausgeberrichtlinie verwendet. Standardmäßig werden Anwendungen nur mit der Assemblyversion ausgeführt, mit der sie erstellt wurden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen Sie eine Versionsnummer der Assembly mithilfe der <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> Attribut.
+Um einen Verstoß gegen diese Regel zu beheben, fügen Sie der Assembly mithilfe des <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> -Attributs eine Versionsnummer hinzu.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie eine Warnung dieser Regel nicht für Assemblys, die von Drittanbietern oder in einer produktionsumgebung verwendet werden.
+Unterdrücken Sie eine Warnung dieser Regel nicht für Assemblys, die von Drittanbietern oder in einer Produktionsumgebung verwendet werden.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Assembly, die <xref:System.Reflection.AssemblyVersionAttribute> -Attribut.
+Das folgende Beispiel zeigt eine Assembly, auf die <xref:System.Reflection.AssemblyVersionAttribute> das-Attribut angewendet wurde.
 
 [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
 [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
@@ -70,5 +70,5 @@ Das folgende Beispiel zeigt eine Assembly, die <xref:System.Reflection.AssemblyV
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Assemblyversionen](/dotnet/framework/app-domains/assembly-versioning)
-- [Vorgehensweise: Erstellen einer Herausgeberrichtlinie](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+- [Assemblyversionsverwaltung](/dotnet/framework/app-domains/assembly-versioning)
+- [Vorgehensweise: Erstellen einer Herausgeber Richtlinie](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

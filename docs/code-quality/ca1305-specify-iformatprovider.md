@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714677"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235032"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider angeben.
 
@@ -34,9 +34,9 @@ ms.locfileid: "66714677"
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode oder ein Konstruktor ruft ein oder mehrere Elemente, deren Überladungen akzeptieren einen <xref:System.IFormatProvider?displayProperty=fullName> -Parameter, und die Methode oder der Konstruktor ruft nicht die Überladung, akzeptiert die <xref:System.IFormatProvider> Parameter.
+Eine Methode oder ein Konstruktor ruft einen oder mehrere Member auf, die über Ladungen aufweisen <xref:System.IFormatProvider?displayProperty=fullName> , die einen Parameter akzeptieren, und die Methode oder der Konstruktor ruft nicht die <xref:System.IFormatProvider> Überladung auf, die den-Parameter annimmt.
 
-Diese Regel ignoriert Aufrufe für .NET-Methoden, die als ignoriert dokumentiert sind die <xref:System.IFormatProvider> Parameter. Die Regel ignoriert auch die folgenden Methoden:
+Diese Regel ignoriert Aufrufe von .NET-Methoden, die so dokumentiert sind <xref:System.IFormatProvider> , dass der-Parameter ignoriert wird. Die Regel ignoriert auch die folgenden Methoden:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,27 +44,27 @@ Diese Regel ignoriert Aufrufe für .NET-Methoden, die als ignoriert dokumentiert
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Wenn eine <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> oder <xref:System.IFormatProvider> Objekt ist nicht angegeben, der Standardwert, der vom überladenen Member bereitgestellte ist möglicherweise nicht die in allen Gebietsschemas den gewünschten Effekt. Darüber hinaus .NET Member auswählen Standardkultur und Formatierung basierend auf Annahmen, die möglicherweise nicht korrekt für Ihren Code. Um sicherzustellen, dass der Code ordnungsgemäß für Ihre Szenarien funktioniert, sollten Sie die kulturspezifische Informationen, anhand der folgenden Richtlinien angeben:
+Wenn ein <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> - <xref:System.IFormatProvider> oder-Objekt nicht angegeben wird, hat der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht die gewünschte Auswirkung in allen Gebiets Schemas. .Net-Member wählen außerdem Standard Kultur und-Formatierung basierend auf Annahmen, die für Ihren Code möglicherweise nicht korrekt sind. Um sicherzustellen, dass der Code für Ihre Szenarien erwartungsgemäß funktioniert, sollten Sie kulturspezifische Informationen gemäß den folgenden Richtlinien angeben:
 
-- Wenn der Wert für den Benutzer angezeigt wird, wird verwenden Sie die aktuelle Kultur. Siehe <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Wenn der Wert für den Benutzer angezeigt wird, verwenden Sie die aktuelle Kultur. Siehe <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Wenn der Wert gespeichert und von Software (persistent in einer Datei oder Datenbank) zugegriffen werden, die verwenden Sie die invariante Kultur. Siehe <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Wenn der Wert von Software (persistent in einer Datei oder Datenbank) gespeichert wird und darauf zugegriffen wird, verwenden Sie die invariante Kultur. Siehe <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Wenn Sie nicht, dass das Ziel des Werts wissen, haben Sie den Datenconsumer oder Anbieter die Kultur angeben.
+- Wenn Sie das Ziel des Werts nicht kennen, lassen Sie den Datenconsumer oder-Anbieter die Kultur angeben.
 
-Auch wenn das Standardverhalten des überladenen Member für Ihre Anforderungen geeignet ist, ist es besser, die kulturspezifische Überladung explizit aufrufen, so, dass der Code selbsterklärend und einfacher zu verwalten ist.
+Auch wenn das Standardverhalten des überladenen Elements für Ihre Bedürfnisse geeignet ist, ist es besser, die kulturspezifische Überladung explizit aufzurufen, sodass Ihr Code selbst dokumentierend und leichter zu pflegen ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie die Überladung mit einem <xref:System.IFormatProvider> Argument. Oder verwenden Sie eine [c# interpolierte Zeichenfolge](/dotnet/csharp/tutorials/string-interpolation) und übergeben es an der <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie die-über <xref:System.IFormatProvider> Ladung, die ein Argument annimmt. Oder verwenden Sie eine [ C# interinterpolierte Zeichenfolge](/dotnet/csharp/tutorials/string-interpolation) , und übergeben <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> Sie Sie an die-Methode.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn sicher ist, dass das standardmäßige Format die richtige Wahl ist und die codeverwaltbarkeit von keine wichtige Entwicklungsszenarien Priorität ist.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn sicher ist, dass das Standardformat die richtige Wahl ist und die Code Wartbarkeit keine wichtige Entwicklungs Priorität ist.
 
 ## <a name="example"></a>Beispiel
 
-In den folgenden Code der `example1` Zeichenfolge verstößt gegen die Regel CA1305. Die `example2` Zeichenfolge Regel CA1305 entspricht, indem Sie übergeben <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, implementiert <xref:System.IFormatProvider>zu <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. Die `example3` Zeichenfolge erfüllt Regel CA1305 durch Übergeben einer interpolierten Zeichenfolge in <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
+Im folgenden Code verstößt die Zeichen `example1` Folge gegen die Regel CA1305. Die `example2` Zeichenfolge erfüllt die Regel CA1305 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>durch Übergeben von <xref:System.IFormatProvider>, der <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>implementiert, in. Die `example3` Zeichenfolge erfüllt die Regel CA1305, indem eine interpoliert <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>-Zeichenfolge an übergeben wird.
 
 ```csharp
 string name = "Georgette";
@@ -81,7 +81,7 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1304: CultureInfo angeben](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304: Geben Sie CultureInfo an.](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Siehe auch
 

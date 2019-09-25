@@ -10,52 +10,52 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841038"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237177"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForRegexInjectionVulnerabilities|
+|TypeName|Reviewcodeforregexinjectionsicherheitsanfälligkeiten|
 |CheckId|CA3012|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht ein regulären Ausdrucks.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen einen regulären Ausdruck.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Achten Sie darauf von Regex-Injection-Angriffen, bei der Arbeit mit nicht vertrauenswürdigen Eingaben. Ein Angreifer kann die Regex-Injection verwenden, um einen regulären Ausdruck, um dem regulären Ausdruck entsprechen unbeabsichtigte Ergebnisse zu gestalten oder zu dem regulären Ausdruck, der einen hohen CPU, was zu einem Denial-of-Service-Angriff zu nutzen in böswilliger Absicht zu ändern.
+Beachten Sie bei der Arbeit mit nicht vertrauenswürdigen Eingaben die Regex Injection-Angriffe. Ein Angreifer kann eine Regex-Injektion verwenden, um einen regulären Ausdruck in böswilliger Weise zu ändern, damit der Regex unbeabsichtigte Ergebnisse findet oder der Regex übermäßige CPU beansprucht, was zu einem Denial-of-Service-Angriff führt.
 
-Mit dieser Regel versucht beim Suchen der Eingabespalte aus HTTP-Anforderungen, die einen regulären Ausdruck zu erreichen.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die einen regulären Ausdruck erstellt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die einen regulären Ausdruck erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die einen regulären Ausdruck erstellt, generiert diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Einige risikominderungen für Regex-einfügungen sind:
+Zu den entschärfungen bei Regex-Injektionen gehören:
 
-- Verwenden Sie immer eine [entsprechen Timeout](/dotnet/standard/base-types/best-practices#use-time-out-values) bei Verwendung von regulären Ausdrücken.
-- Vermeiden Sie mithilfe von regulären Ausdrücken, die auf Grundlage der Benutzereingabe.
-- Escapesonderzeichen aus Benutzereingaben durch Aufrufen von <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> oder eine andere Methode.
-- Können Sie nur nicht-Sonderzeichen aus Benutzereingaben.
+- Verwenden Sie bei der Verwendung regulärer Ausdrücke immer ein Übereinstimmungs [Timeout](/dotnet/standard/base-types/best-practices#use-time-out-values) .
+- Vermeiden Sie die Verwendung regulärer Ausdrücke auf der Grundlage von Benutzereingaben.
+- Escapezeichen für Sonderzeichen aus Benutzer <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> Eingaben durch Aufrufen von oder einer anderen Methode.
+- Nur nicht-Sonderzeichen von Benutzereingaben zulassen
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Wenn Sie wissen, verwenden Sie eine [entsprechen Timeout](/dotnet/standard/base-types/best-practices#use-time-out-values) und die Benutzereingabe wird keine Sonderzeichen enthalten, es ist in Ordnung ist, können Sie diese Warnung unterdrücken.
+Wenn Sie wissen, dass Sie ein Übereinstimmungs [Timeout](/dotnet/standard/base-types/best-practices#use-time-out-values) verwenden und die Benutzereingabe keine Sonderzeichen enthält, ist es in Ordnung, diese Warnung zu unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

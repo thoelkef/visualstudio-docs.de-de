@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797330"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234542"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Nicht wartbaren Code vermeiden.
 
@@ -36,19 +36,19 @@ Ein Typ oder eine Methode verfügt über einen niedrigen Wartbarkeitsindexwert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Der Wartbarkeitsindex wird berechnet, indem Sie die folgenden Metriken: Zeilen Code, Programm-Volume und zyklomatische Komplexität. Programm-Volume ist ein Maß für die Schwierigkeit der Überblick über einen Typ oder Methode, die basierend auf der Anzahl von Operatoren und Operanden in den Code. Zyklomatische Komplexität ist ein Maß der strukturellen Komplexität des Typs oder -Methode. Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität und verwaltbarkeit verwalteten Codes](../code-quality/code-metrics-values.md).
+Der Wartbarkeitsindex wird mithilfe der folgenden Metriken berechnet: Codezeilen, Programm Volume und zyklomatische Komplexität. Das Programm Volume ist ein Maß für die Schwierigkeit, ein Typ oder eine Methode zu verstehen, die auf der Anzahl von Operatoren und Operanden im Code basiert. Die zyklomatische Komplexität ist ein Maß für die strukturelle Komplexität des Typs oder der Methode. Weitere Informationen zu Codemetriken finden Sie unter [Messen der Komplexität und Verwaltbarkeit von verwaltetem Code](../code-quality/code-metrics-values.md).
 
-Ein niedriger Wartbarkeitsindex zeigt an, dass ein Typ oder Methode wahrscheinlich schwer zu verwalten und wäre ein guter Kandidat, neu zu entwerfen.
+Ein niedriger Wartbarkeitsindex gibt an, dass ein Typ oder eine Methode wahrscheinlich schwierig zu verwalten ist, und wäre ein guter Kandidat für die Umgestaltung.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um diese Verletzung zu beheben, gestalten Sie den Typ oder die Methode aus, und versuchen Sie es in kleinere und stärker fokussierte Typen oder Methoden unterteilt.
+Entwerfen Sie zum Beheben dieses Verstoßes den Typ oder die Methode neu, und versuchen Sie, ihn in kleinere und stärker fokussierte Typen oder Methoden aufzuteilen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Sie können diese Warnung unterdrücken, wenn der Typ oder Methode nicht aufgeteilt werden oder verwaltbaren trotz seiner Größe gilt.
+Sie können diese Warnung unterdrücken, wenn der Typ oder die Methode nicht geteilt werden kann oder trotz ihrer großen Größe als wart Bar eingestuft wird.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwaltbarkeitswarnungen](../code-quality/maintainability-warnings.md)
+- [Wart barkeits Warnungen](../code-quality/maintainability-warnings.md)
 - [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/code-metrics-values.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69976693"
 ---
 # <a name="nesting-projects"></a>Schachteln von Projekten
@@ -30,7 +30,7 @@ Unternehmens Anwendungsentwickler, die ihr vs-Paket verwenden, können ähnliche
  Ein Beispiel zum Schachteln von Projekten [finden Sie unter Gewusst wie: Implementieren Sie in der](../../extensibility/internals/how-to-implement-nested-projects.md)Liste der Projekte.
 
 ## <a name="nested-projects-example"></a>Beispiel für ein Beispiel für ein Beispiel
- ![Projekt] Mappe für Projektmappen (../../extensibility/internals/media/vsnestedprojects.gif "vsnestedprojects") Beispiel für ein Beispiel für ein Beispiel
+ ![Projekt Mappe für Projektmappen](../../extensibility/internals/media/vsnestedprojects.gif "vsnestedprojects") Beispiel für ein Beispiel für ein Beispiel
 
 ## <a name="see-also"></a>Siehe auch
 - [Überlegungen für das Entladen und Neuladen von geschachtelten Projekten](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)

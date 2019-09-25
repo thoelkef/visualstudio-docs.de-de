@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545266"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233160"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Auf Objekten mit schwacher Identität nicht sperren.
 
@@ -34,17 +34,17 @@ ms.locfileid: "62545266"
 
 ## <a name="cause"></a>Ursache
 
-Ein Thread versucht, eine Sperre für ein Objekt abzurufen, die eine schwache Identität verfügt.
+Ein Thread versucht, eine Sperre für ein Objekt zu erhalten, das eine schwache Identität aufweist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
 Ein Objekt hat eine schwache Identität, wenn ein Zugriff darauf über Grenzen von Anwendungsdomänen hinweg möglich ist. Ein Thread, der eine Sperre für ein Objekt zu erhalten versucht, das über eine schwache Identität verfügt, kann durch einen zweiten Thread in einer anderen Anwendungsdomäne blockiert werden, der eine Sperre für das gleiche Objekt besitzt.
 
-Die folgenden Typen haben eine schwache Identität und werden von der Regel gekennzeichnet:
+Die folgenden Typen haben eine schwache Identität und werden durch die Regel gekennzeichnet:
 
 - <xref:System.String>
 
-- Arrays von Werttypen, einschließlich [Ganzzahltypen](/dotnet/csharp/language-reference/keywords/integral-types-table), [Gleitkommatypen](/dotnet/csharp/language-reference/keywords/floating-point-types-table), und <xref:System.Boolean>.
+- Arrays von Werttypen, einschließlich ganzzahliger [Typen](/dotnet/csharp/language-reference/keywords/integral-types-table), Gleit [Komma Typen](/dotnet/csharp/language-reference/keywords/floating-point-types-table)und <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -62,9 +62,9 @@ Die folgenden Typen haben eine schwache Identität und werden von der Regel geke
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie ein Objekt von einem Typ, der nicht in der Liste in der Beschreibung des Ereignisses ist.
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie ein Objekt aus einem Typ, der nicht in der Liste im Abschnitt Beschreibung enthalten ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
@@ -74,7 +74,7 @@ Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einige Objektsperren, die die Regel verletzen.
+Das folgende Beispiel zeigt einige Objekt Sperren, die gegen die Regel verstoßen.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
@@ -83,5 +83,5 @@ Das folgende Beispiel zeigt einige Objektsperren, die die Regel verletzen.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [lock-Anweisung (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [Lock-AnweisungC#()](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [SyncLock-Anweisung (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

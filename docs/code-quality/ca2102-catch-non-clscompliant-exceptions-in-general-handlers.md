@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f361720f45a24e561ab2a886537bda02c73c006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f62ad97bbb96f49a7263edd29f0f8a7c263bec4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545771"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233010"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Nicht-CLSCompliant-Ausnahmen in allgemeinen Handlern abfangen.
 
@@ -31,29 +31,29 @@ ms.locfileid: "62545771"
 
 ## <a name="cause"></a>Ursache
 
-Ein Element in einer Assembly, die nicht mit der <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> oder markiert `RuntimeCompatibility(WrapNonExceptionThrows = false)` enthält einen Catch-Block, der verarbeitet <xref:System.Exception?displayProperty=fullName> und keinen unmittelbar folgenden allgemeinen Catch-Block. Diese Regel ignoriert [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Assemblys.
+Ein Member in einer Assembly, die nicht mit <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> oder `RuntimeCompatibility(WrapNonExceptionThrows = false)` gekennzeichnet ist, enthält einen catch-Block, der <xref:System.Exception?displayProperty=fullName> behandelt und keinen unmittelbar folgenden allgemeinen catch-Block enthält. Diese Regel ignoriert [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Assemblys.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein CatchBlock, behandelt <xref:System.Exception> fängt alle Common Language Specification (CLS) kompatibel Ausnahmen ab. Allerdings ist nicht CLS-kompatiblen Ausnahmen abgefangen werden. Nicht CLS-kompatible Ausnahmen ausgelöst werden können, von nativem Code oder von verwaltetem Code, die von Microsoft generiert wurde, intermediate Language (MSIL) Assembler. Beachten Sie, dass die C#- und [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Compiler lassen nicht nicht mit CLS kompatible Ausnahmen ausgelöst werden und [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] keine nicht-CLS kompatiblen Ausnahmen abgefangen. Ist die Absicht des Catch-Blocks alle Ausnahmen behandeln, verwenden Sie die folgenden allgemeinen Catch-Block Syntax.
+Ein catch-Block, <xref:System.Exception> der behandelt, fängt alle Common Language Specification (CLS)-kompatible Ausnahmen ab. Es werden jedoch keine nicht CLS-kompatiblen Ausnahmen abgefangen. Nicht CLS-kompatible Ausnahmen können aus nativem Code oder verwaltetem Code ausgelöst werden, der vom MSIL-Assembler (Microsoft Intermediate Language) generiert wurde. Beachten Sie, C# dass [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] die Compiler und nicht zulassen, dass nicht CLS-kompatible Ausnahmen ausgelöst werden [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , und keine nicht CLS-kompatiblen Ausnahmen abfängt. Wenn die Absicht des catch-Blocks darin besteht, alle Ausnahmen zu behandeln, verwenden Sie die folgende allgemeine catch-Block-Syntax.
 
 - C#: `catch {}`
 
-- C++: `catch(...) {}` oder `catch(Object^) {}`
+- C++: `catch(...) {}` oder`catch(Object^) {}`
 
-Eine nicht behandelte nicht CLS-kompatible Ausnahme wird ein Sicherheitsproblem, wenn zuvor zulässige Berechtigungen im Catch-Block entfernt werden. Da nicht CLS-kompatiblen Ausnahmen abgefangen werden, kann eine böswillige-Methode, die eine nicht CLS-kompatible Ausnahme ausgelöst mit erweiterten Berechtigungen ausgeführt.
+Eine nicht behandelte nicht CLS-kompatible Ausnahme wird zu einem Sicherheitsproblem, wenn zuvor zulässige Berechtigungen im catch-Block entfernt wurden. Da nicht CLS-kompatible Ausnahmen nicht abgefangen werden, könnte eine böswillige Methode, die eine nicht CLS-kompatible Ausnahme auslöst, mit erhöhten Berechtigungen ausgeführt werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, bei der die Absicht ist, zum Abfangen aller Ausnahmen, ersetzen, oder fügen Sie einen allgemeinen Catch-Block hinzu, oder markieren Sie die Assembly `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Berechtigungen im Catch-Block entfernt, doppelte die Funktionalität in den allgemeinen catch-Block. Ist dies nicht der Absicht, alle Ausnahmen behandeln, ersetzen Sie den Catch-Block, der verarbeitet <xref:System.Exception> Catch-Blöcke, die bestimmte Ausnahmetypen behandelt.
+Um einen Verstoß gegen diese Regel zu beheben, wenn alle Ausnahmen abgefangen werden sollen, ersetzen oder fügen Sie einen allgemeinen catch-Block ein, `RuntimeCompatibility(WrapNonExceptionThrows = true)`oder markieren Sie die Assembly. Wenn Berechtigungen im catch-Block entfernt werden, duplizieren Sie die Funktionalität im allgemeinen catch-Block. Wenn es nicht die Absicht ist, alle Ausnahmen zu behandeln, ersetzen Sie den Catch- <xref:System.Exception> Block, der durch Catch-Blöcke behandelt wird, die bestimmte Ausnahme Typen verarbeiten.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Try-Block keine Anweisungen enthält, die eine nicht-CLS-kompatible Ausnahme generieren kann. Da alle systemeigenen oder verwalteten Code eine nicht CLS-kompatible Ausnahme ausgelöst werden kann, erfordert dies Kenntnisse des gesamten Codes, die in allen Codepfaden innerhalb des Try-Blocks ausgeführt werden können. Beachten Sie, dass nicht mit CLS kompatiblen Ausnahmen nicht von der common Language Runtime ausgelöst werden.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der try-Block keine Anweisungen enthält, die möglicherweise eine nicht CLS-kompatible Ausnahme generieren. Da nativer oder verwalteter Code möglicherweise eine nicht CLS-kompatible Ausnahme auslöst, erfordert dies das Wissen über den gesamten Code, der in allen Codepfade innerhalb des try-Blocks ausgeführt werden kann. Beachten Sie, dass nicht CLS-kompatible Ausnahmen nicht vom Common Language Runtime ausgelöst werden.
 
 ## <a name="example-1"></a>Beispiel 1
 
-Das folgende Beispiel zeigt eine MSIL-Klasse, die eine nicht-CLS-kompatible Ausnahme ausgelöst.
+Das folgende Beispiel zeigt eine MSIL-Klasse, die eine nicht CLS-kompatible Ausnahme auslöst.
 
 ```cpp
 .assembly ThrowNonClsCompliantException {}
@@ -71,11 +71,11 @@ Das folgende Beispiel zeigt eine MSIL-Klasse, die eine nicht-CLS-kompatible Ausn
 
 ## <a name="example-2"></a>Beispiel 2
 
-Das folgende Beispiel zeigt eine Methode, die einen allgemeinen Catch-Block enthält, der die Regel erfüllt.
+Das folgende Beispiel zeigt eine-Methode, die einen allgemeinen catch-Block enthält, der die Regel erfüllt.
 
 [!code-csharp[FxCop.Security.CatchNonClsCompliantException#1](../code-quality/codesnippet/CSharp/ca2102-catch-non-clscompliant-exceptions-in-general-handlers_1.cs)]
 
-Kompilieren Sie wie folgt in den vorherigen Beispielen.
+Kompilieren Sie die vorherigen Beispiele wie folgt.
 
 ```cpp
 ilasm /dll ThrowNonClsCompliantException.il
@@ -84,7 +84,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA1031: Allgemeine Ausnahmetypen nicht auffangen](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+[CA1031: Allgemeine Ausnahme Typen nicht auffangen](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>Siehe auch
 

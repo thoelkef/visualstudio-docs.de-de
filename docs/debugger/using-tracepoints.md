@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "71095255"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Verwenden von Ablauf Verfolgungs Punkten im Visual Studio-Debugger
@@ -69,7 +69,7 @@ Wenn Sie auf **Schließen** klicken und dann das Programm Debuggen (**F5**), wir
 
 Sie können auch spezielle Schlüsselwörter verwenden, um spezifischere Informationen anzuzeigen. Geben Sie das Schlüsselwort genau wie unten dargestellt ein (verwenden Sie "$" vor jedem Schlüsselwort und alle Caps für das Schlüsselwort selbst).
 
-| Schlüsselwort | Was wird angezeigt? |
+| Stichwort | Was wird angezeigt? |
 | --- | --- |
 | $ADDRESS | Aktuelle Anweisung |
 | $CALLER | Aufrufen des Funktionsnamens |

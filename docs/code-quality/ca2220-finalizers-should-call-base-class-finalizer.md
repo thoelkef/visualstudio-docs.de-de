@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034f80c9198ab098070e6642f4a4d96cff1744c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5af6b7872f0fa05183334e6acd2bc4922f84990
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541857"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231160"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Finalizer sollten Basisklassen-Finalizer aufrufen.
 
@@ -28,27 +28,27 @@ ms.locfileid: "62541857"
 |TypeName|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ, überschreibt <xref:System.Object.Finalize%2A?displayProperty=fullName> ruft nicht die <xref:System.Object.Finalize%2A> -Methode in der Basisklasse.
+Ein Typ, der über <xref:System.Object.Finalize%2A?displayProperty=fullName> schreibt, ruft nicht <xref:System.Object.Finalize%2A> die-Methode in der Basisklasse auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Der Abschluss muss durch die Vererbungshierarchie weitergegeben werden. Um dies zu gewährleisten, müssen Typen ihrer Basisklasse aufrufen <xref:System.Object.Finalize%2A> innerhalb ihrer eigenen <xref:System.Object.Finalize%2A> Methode. Den Aufruf von den Basisklassen-Finalizer wird von der C#-Compiler automatisch hinzugefügt.
+Der Abschluss muss durch die Vererbungshierarchie weitergegeben werden. Um dies zu gewährleisten, müssen-Typen Ihre <xref:System.Object.Finalize%2A> Basisklassen Methode in Ihrer <xref:System.Object.Finalize%2A> eigenen-Methode abrufen. Der C# Compiler fügt den-Befehl dem Basisklassen-Finalizer automatisch hinzu.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, rufen Sie des Basistyps <xref:System.Object.Finalize%2A> aus Ihrem <xref:System.Object.Finalize%2A> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, müssen Sie die- <xref:System.Object.Finalize%2A> Methode des Basistyps von Ihrer <xref:System.Object.Finalize%2A> -Methode abrufen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel. Einige Compiler, die die common Language Runtime als Ziel legen Sie einen Aufruf der Basistyp des Finalizers in die Microsoft intermediate Language (MSIL). Wenn eine Warnung dieser Regel gemeldet wird, wird der Compiler kein Aufruf eingefügt, und müssen Sie es an Ihrem Code hinzufügen.
+Unterdrücken Sie keine Warnung dieser Regel. Einige Compiler, die auf abzielen, Common Language Runtime einen-Befehl an den Finalizer des Basistyps in die Microsoft Intermediate Language (MSIL) einfügen. Wenn eine Warnung aus dieser Regel gemeldet wird, fügt der Compiler den-Befehl nicht ein, und Sie müssen ihn dem Code hinzufügen.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Visual Basic-Beispiel zeigt ein `TypeB` ordnungsgemäß aufruft, die <xref:System.Object.Finalize%2A> -Methode in der Basisklasse.
+Im folgenden Visual Basic Beispiel wird ein Typ `TypeB` gezeigt, der die <xref:System.Object.Finalize%2A> -Methode in der-Basisklasse ordnungsgemäß aufruft.
 
 [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]
 

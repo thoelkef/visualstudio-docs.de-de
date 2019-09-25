@@ -10,53 +10,53 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 383011e53b14ec2cc7dd7474cd050f05295a2a73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 6bcf32401abdeae499097bc5187d11154e7dfc6e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841470"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237416"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002: Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForXssVulnerabilities|
+|TypeName|Reviewcodeforxsssicherheitsanfälligkeiten|
 |CheckId|CA3002|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht unformatierten HTML-Ausgabe.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen die Rohausgabe von HTML.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Bei der Arbeit mit nicht vertrauenswürdigen Eingaben aus webanforderungen Achten Sie darauf, dass Sie von Cross-Site scripting (XSS)-Angriffe. XSS-Angriff fügt nicht vertrauenswürdige Eingaben in unformatierten HTML-Ausgabe, denen der Angreifer schädliche Skripts ausführen oder in böswilliger Absicht Ändern des Inhalts auf Ihrer Webseite. Ein übliches Verfahren wäre `<script>` Elemente mit bösartigem Code in der Eingabe. Weitere Informationen finden Sie unter [OWASP XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
+Beachten Sie beim Arbeiten mit nicht vertrauenswürdigen Eingaben aus Webanforderungen, dass XSS-Angriffe (Cross-Site Scripting) berücksichtigt werden. Ein XSS-Angriff fügt nicht vertrauenswürdige Eingaben in die unformatierte HTML-Ausgabe ein, sodass der Angreifer bösartige Skripts ausführen oder den Inhalt auf der Webseite in böswilliger Absicht ändern kann. Ein typisches Verfahren ist das `<script>` Einfügen von Elementen mit bösartigem Code in die Eingabe. Weitere Informationen finden Sie unter [OWASP XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
 
-Mit dieser Regel versucht, Eingaben von HTTP-Anforderungen, die unformatierten HTML-Ausgabe erreichen zu finden.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die unformatiertes HTML ausgibt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die eine rohhtml-Ausgabe erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die unformatierten HTML-Code ausgibt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Anstelle der Ausgabe von unformatierten HTML, verwenden Sie eine Methode oder Eigenschaft, erste HTML-Codierung der Eingabe.
-- HTML-codieren nicht vertrauenswürdiger Daten vor dem Ausgeben von unformatierten HTML.
+- Anstatt unformatierten HTML-Code zu übertragen, verwenden Sie eine Methode oder Eigenschaft, die zuerst eine HTML-Codierung der Eingabe durchführen.
+- HTML-codieren nicht vertrauenswürdiger Daten vor der Ausgabe von unformatierten HTML-Daten.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, falls:
-- Sie wissen, dass die Eingabe mit einer bekannten, sicheren Reihe von Zeichen, die nicht mit HTML-Code überprüft wird.
-- Sie wissen, dass die Daten in einer Weise, die nicht von dieser Regel erkannte HTML-codiert ist.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn Folgendes gilt:
+- Sie wissen, dass die Eingabe anhand eines bekannten sicheren Satzes von Zeichen überprüft wird, die nicht HTML enthalten.
+- Sie wissen, dass die Daten in einer von dieser Regel nicht erkannten Weise HTML-codiert sind.
 
 > [!NOTE]
-> Diese Regel meldet möglicherweise falsch positive Ergebnisse für einige Methoden oder Eigenschaften, HTML-Codierung der Eingabe.
+> Diese Regel meldet möglicherweise falsch positive Ergebnisse für einige Methoden oder Eigenschaften, die Ihre Eingabe HTML-codieren.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

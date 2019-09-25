@@ -1,5 +1,5 @@
 ---
-title: 'CA2104: Deklarieren Sie schreibgeschützte änderbare Referenztypen nicht'
+title: 'CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren'
 ms.date: 11/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f4f165b4b00f46b478907c9affca672b4c7f113
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545354"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232955"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren.
 
@@ -35,7 +35,7 @@ ms.locfileid: "62545354"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 > [!NOTE]
-> Regel CA2104 ist veraltet und wird in einer zukünftigen Version von Visual Studio entfernt. Es wird nicht als implementiert eine [Analyzer](roslyn-analyzers-overview.md) aufgrund der komplizierte Analysen, die erforderlich sind, um die tatsächlichen Unveränderlichkeit eines Typs zu bestimmen.
+> Die Regel CA2104 ist veraltet und wird in einer zukünftigen Version von Visual Studio entfernt. Sie wird aufgrund der komplizierten Analyse, die erforderlich ist, um die tatsächliche Unveränderlichkeit eines Typs zu ermitteln, nicht als [Analyzer](roslyn-analyzers-overview.md) implementiert.
 
 ## <a name="cause"></a>Ursache
 
@@ -43,25 +43,25 @@ Ein extern sichtbarer Typ enthält ein extern sichtbares schreibgeschütztes Fel
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein änderbarer Typ ist ein Typ, dessen Instanzdaten geändert werden können. Die <xref:System.Text.StringBuilder?displayProperty=fullName> Klasse ist ein Beispiel für einen änderbaren Referenztyp. Es enthält Elemente, die den Wert einer Instanz der Klasse ändern können. Ein Beispiel für einen unveränderlichen Referenztyp ist der <xref:System.String?displayProperty=fullName> Klasse. Nach der sie instanziiert wurde, kann ihr Wert niemals ändern.
+Ein änderbarer Typ ist ein Typ, dessen Instanzdaten geändert werden können. Die <xref:System.Text.StringBuilder?displayProperty=fullName> -Klasse ist ein Beispiel für einen änderbaren Referenztyp. Sie enthält Member, die den Wert einer Instanz der-Klasse ändern können. Ein Beispiel für einen unveränderlichen Verweistyp ist die <xref:System.String?displayProperty=fullName> -Klasse. Nachdem Sie instanziiert wurde, kann sich der Wert nie ändern.
 
-Die schreibgeschützten Modifizierer ([Readonly](/dotnet/csharp/language-reference/keywords/readonly) in C#, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) in Visual Basic und [const](/cpp/cpp/const-cpp) in C++) auf einem Verweistyp Feld (oder Zeiger in C++) verhindert, dass das Feld aus durch eine andere Instanz des Verweistyps ersetzt. Allerdings verhindert der Modifizierer der Instanzdaten des Felds nicht, die durch den Verweistyp geändert wird.
+Der schreibgeschützte Modifizierer (Schreib geschützter in C#, [Schreib](/dotnet/visual-basic/language-reference/modifiers/readonly) [geschützter in Visual Basic](/dotnet/csharp/language-reference/keywords/readonly) und [Konstanten](/cpp/cpp/const-cpp) in C++) in einem Verweistyp Feld (oder Zeiger in C++) verhindert, dass das Feld durch eine andere Instanz des Verweis Typs ersetzt wird. Der-Modifizierer verhindert jedoch nicht, dass die Instanzdaten des Felds durch den Verweistyp geändert werden.
 
-Diese Regel möglicherweise versehentlich angezeigt einem Verstoß für einen Typ, ist, tatsächlich unveränderlich. In diesem Fall ist es sicher ist, die die Warnung zu unterdrücken.
+Diese Regel zeigt möglicherweise versehentlich einen Verstoß gegen einen Typ an, der tatsächlich unveränderlich ist. In diesem Fall ist es sicher, die Warnung zu unterdrücken.
 
-Schreibgeschützte Arrayfelder sind von dieser Regel ausgenommen verursachen jedoch stattdessen einen Verstoß gegen die [CA2105: Arrayfelder sollten nicht schreibgeschützt sein](../code-quality/ca2105-array-fields-should-not-be-read-only.md) Regel.
+Felder mit Schreib geschütztem Array sind von dieser Regel ausgenommen, führen jedoch zu [einem Verstoß gegen CA2105: Array Felder dürfen nicht schreibgeschützt sein](../code-quality/ca2105-array-fields-should-not-be-read-only.md) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den schreibgeschützten Modifizierer oder, wenn eine wichtige Änderung akzeptabel ist, ersetzen Sie das Feld mit einem unveränderlichen Typ.
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den schreibgeschützten Modifizierer, oder ersetzen Sie das Feld durch einen unveränderlichen Typ, wenn ein Breaking Change akzeptabel ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Feldtyp unveränderlich ist.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Feldtyp unveränderlich ist.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Felddeklaration, die einen Verstoß gegen diese Regel führt dazu, dass:
+Das folgende Beispiel zeigt eine Feld Deklaration, die einen Verstoß gegen diese Regel verursacht:
 
 [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
 [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]

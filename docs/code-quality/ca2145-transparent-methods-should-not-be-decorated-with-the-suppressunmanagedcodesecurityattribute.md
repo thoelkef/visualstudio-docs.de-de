@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9269a0862dacf928cffb31f722f382271d5f0e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cca385c346a7daa8aaddb377f999506ffb1abaa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542118"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232050"
 ---
 # <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145: Transparente Methoden dürfen nicht mit dem SuppressUnmanagedCodeSecurity-Attribut versehen werden.
 
@@ -28,17 +28,17 @@ ms.locfileid: "62542118"
 
 ## <a name="cause"></a>Ursache
 
-Eine transparente Methode, eine Methode, die mit der <xref:System.Security.SecuritySafeCriticalAttribute> -Methode oder ein Typ, der eine Methode enthält, ist markiert, mit der <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Attribut.
+Eine transparente Methode, eine mit der <xref:System.Security.SecuritySafeCriticalAttribute> -Methode markierte Methode oder ein Typ, der eine-Methode enthält, wird mit dem <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> -Attribut markiert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Methoden mit ergänzt die <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Attribut haben einen impliziten LinkDemand auf einer beliebigen Methode, die ihn aufruft. Dieser LinkDemand erfordert, dass der aufrufende Code sicherheitskritisch ist. Das Markieren der Methode, die SuppressUnmanagedCodeSecurity mit verwendet die <xref:System.Security.SecurityCriticalAttribute> Attribut macht diese Anforderung für Aufrufer der Methode leichter ersichtlich.
+Methoden, die mit <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> dem-Attribut ergänzt werden, weisen einen impliziten LinkDemand auf jede Methode auf, die diese aufruft. Dieser LinkDemand erfordert, dass der aufrufende Code sicherheitskritisch ist. Das Markieren der Methode, die SuppressUnmanagedCodeSecurity mit <xref:System.Security.SecurityCriticalAttribute> dem-Attribut verwendet, macht diese Anforderung für Aufrufer der-Methode deutlicher.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode bzw. kein Entitätstyp mit dem <xref:System.Security.SecurityCriticalAttribute> Attribut.
+Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode oder den <xref:System.Security.SecurityCriticalAttribute> Typ mit dem-Attribut.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 

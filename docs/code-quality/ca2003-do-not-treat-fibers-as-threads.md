@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8faaf3c6557065188c795d75ea9bbe4e78998709
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f5e4e7eb28207cb37824b23acbbac02b6df380d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806987"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233136"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Fibers nicht als Threads behandeln.
 
@@ -32,16 +32,16 @@ ms.locfileid: "62806987"
 
 ## <a name="cause"></a>Ursache
 
-Ein verwalteter Thread wird als ein Win32-Thread behandelt wird.
+Ein verwalteter Thread wird als Win32-Thread behandelt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Gehen Sie nicht, dass ein verwalteter Thread ein Win32-Thread ist; Es ist eine Fiber. Die common Language Runtime (CLR) führt verwaltete Threads als Fibers im Kontext der realen Threads, die von der SQL gehören. Diese Threads können mehrere Anwendungsdomänen und sogar Datenbanken in SQL Server-Prozesses freigegeben werden. Verwendung von verwalteten Thread-lokalen Speicher funktioniert, aber möglicherweise nicht verwenden, nicht verwalteten threadlokalen Speicher oder davon ausgehen, dass der Code erneut auf dem aktuellen Betriebssystemthread ausgeführt wird. Ändern Sie Einstellungen wie z. B. das Gebietsschema des Threads nicht. Rufen Sie nicht CreateCriticalSection oder CreateMutex über P/Invoke, da sie erfordern, dass der Thread, der gesperrte Betriebssystemthread wieder entsperrt auch die Sperre beendet wird muss. Da der Thread, der eine Sperre aktiviert eine Sperre bei der Verwendung von Fibers nicht beenden, sind kritische Abschnitte von Win32 und Mutex-Verfahren nutzlos in SQL. Sicher können Sie die meisten der Status eines verwalteten <xref:System.Threading.Thread> Objekts, einschließlich verwalteten threadlokalen Speicher und der aktuellen Kultur des Benutzers-Benutzeroberfläche (UI) des Threads. Allerdings Programmiermodells, Sie nicht die aktuelle Kultur eines Threads ändern, bei der Verwendung von SQL. Diese Einschränkung wird durch eine neue Berechtigung erzwungen werden.
+Nehmen Sie nicht an, dass ein verwalteter Thread ein Win32-Thread ist. Es ist eine Fiber. Der Common Language Runtime (CLR) führt verwaltete Threads im Zusammenhang mit echten Threads im Besitz von SQL als Fibers aus. Diese Threads können über Anwendungs Domänen und sogar Datenbanken im SQL Server Prozess gemeinsam genutzt werden. Die Verwendung des verwalteten lokalen Thread Speichers funktioniert, aber Sie dürfen keinen nicht verwalteten lokalen Thread Speicher verwenden oder davon ausgehen, dass der Code im aktuellen Betriebssystem Thread erneut ausgeführt wird. Ändern Sie nicht die Einstellungen, wie z. b. das Gebiets Schema des Threads. Rufen Sie "foratecriticalsection" oder "foratemutex" nicht über "P/aufrufen" auf, da Sie erfordern, dass der Thread, der eine Sperre eingibt, die Sperre ebenfalls beenden muss Da der Thread, der eine Sperre eingibt, keine Sperre verlässt, wenn Sie Fibers verwenden, sind die kritischen Win32-Abschnitte und Mutexe in SQL nutzlos. Möglicherweise verwenden Sie den größten Teil des Zustands für ein <xref:System.Threading.Thread> verwaltetes Objekt, einschließlich des verwalteten lokalen Thread Speichers und der aktuellen Benutzeroberflächen Kultur des Threads. Aus Gründen des Programmiermodells können Sie die aktuelle Kultur eines Threads jedoch nicht ändern, wenn Sie SQL verwenden. Diese Einschränkung wird durch eine neue Berechtigung erzwungen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Untersuchen Sie die Verwendung von Threads aus, und ändern Sie Ihren Code entsprechend.
+Überprüfen Sie die Verwendung von Threads, und ändern Sie den Code entsprechend.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine mit dieser Regel.
+Diese Regel nicht unterdrücken.
