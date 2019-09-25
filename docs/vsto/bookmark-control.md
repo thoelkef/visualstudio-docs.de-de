@@ -17,47 +17,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939333"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255146"
 ---
 # <a name="bookmark-control"></a>Bookmark-Steuerelement
   Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Textmarke, die über einen eindeutigen Namen verfügt, Ereignisse verfügbar macht und an Daten gebunden werden kann. Die Textmarke kann als Platzhalter verwendet werden, um ein Element oder eine Position in einem Microsoft Office Word-Dokument zu markieren. Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Kombination aus einem <xref:Microsoft.Office.Interop.Word.Bookmark> - und einem <xref:Microsoft.Office.Interop.Word.Range> -Objekt.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Sie können in Projekten auf Dokumentebene hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelemente in Ihr Dokument zur Entwurfszeit oder zur Laufzeit. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelementen zu einem beliebigen geöffneten Dokument zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ In Projekten auf Dokumentebene können Sie dem Dokument <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)Lesezeichen-Steuerelemente hinzu.
 
 ## <a name="bind-data-to-the-control"></a>Binden von Daten an das Steuerelement
  Ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement unterstützt die einfache Datenbindung. Die Textmarke sollte mithilfe der <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> -Eigenschaft an eine Datenquelle gebunden werden. Die Standardeigenschaft für die Datenbindung der Textmarke ist die <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> -Eigenschaft.
 
- Wenn die Daten im gebundenen Dataset aktualisiert werden, die <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement zeigt die Änderungen.
+ Wenn die Daten im gebundenen Dataset aktualisiert werden, zeigt das <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelement die Änderungen an.
 
  In Projekten auf Dokumentebene können Sie Daten auch an Textmarken binden, indem Sie das Fenster **Datenquellen** verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formatierung
- Die auf <xref:Microsoft.Office.Interop.Word.Bookmark> anwendbare Formatierung kann auf ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement angewendet werden. Diese Formatierung enthält Schriftarten, Einzüge, Abstände, Nummerierung und Stile.
+ Die auf <xref:Microsoft.Office.Interop.Word.Bookmark> anwendbare Formatierung kann auf ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement angewendet werden. Diese Formatierung schließt Schriftarten, Einzüge, Abstände, Nummerierungen und Stile ein.
 
-## <a name="assign-text-to-the-bookmark"></a>Weisen Sie diesem Text zur Textmarke
+## <a name="assign-text-to-the-bookmark"></a>Text dem Lesezeichen zuweisen
  Ein weiterer Unterschied zwischen einem <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> -Objekt und einem <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> -Steuerelement ist das Verhalten beim Zuweisen von Text zur Textmarke. Wenn Sie Text zu einem <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>mit der Länge 0 (null) zuweisen, wird der Text rechts neben der Textmarke angefügt und die Textmarke behält die Länge 0 (null). Wenn Sie jedoch Text zu einem <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>mit der Länge 0 (null) zuweisen, wird der Text in die Textmarke eingefügt und die Länge der Textmarke um die Gesamtzahl der eingefügten Zeichen erweitert.
 
- Das <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> -Steuerelement verfügt auch über die <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> -Eigenschaft. Diese Eigenschaft unterscheidet sich von der <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> -Eigenschaft, die verfügbar ist die <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> Eigenschaft eine <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> -Steuerelement, oder die <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> Eigenschaft eine <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> Objekt.
+ Das <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> -Steuerelement verfügt auch über die <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> -Eigenschaft. Diese Eigenschaft unterscheidet sich von <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> der-Eigenschaft, die für <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> die-Eigenschaft <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> eines-Steuer Elements <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> verfügbar ist, <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> oder der-Eigenschaft eines-Objekts.
 
 |Text-Eigenschaft|Beschreibung|
 |-------------------|-----------------|
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Verwenden Sie diese Eigenschaft zum Anzeigen von Text in einer Textmarke, und belassen Sie die Textmarke im Dokument. Durch das Zuweisen von Text zur Textmarke wird der Textmarkenbereich erweitert und die Textmarke nicht gelöscht.<br /><br /> `Bookmark1.Text = "Hello world"` fügt z. B. den Text in die Textmarken ein, und die Textmarke bleibt intakt.|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Verwenden Sie diese Eigenschaft, um Text an der Position der Textmarke anzuzeigen und die Textmarke automatisch zu löschen. `Bookmark1.Range.Text = "Hello world"` fügt z. B. den Text in die Textmarke ein, und die Textmarke wird gelöscht.|
 
-## <a name="rename-the-control-at-design-time"></a>Benennen Sie das Steuerelement zur Entwurfszeit
+## <a name="rename-the-control-at-design-time"></a>Umbenennen des Steuer Elements zur Entwurfszeit
  Wenn Sie in Projekten auf Dokumentebene ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement aus der **Toolbox** in Ihr Dokument ziehen, generiert Visual Studio automatisch einen Namen für das Steuerelement. Sie können den Namen des Steuerelemente im Fenster **Eigenschaften** ändern.
 
 ## <a name="overlapping-controls"></a>Überlappende Steuerelemente
- Bookmark-Steuerelemente können einander überlappen. Der gleiche Text kann von mehreren Textmarken freigegeben werden. Wenn Sie eines der überlappenden Textmarken neuen Text zuweisen, sie nur den neuen Text enthält, und die Textmarken überlappen nicht mehr. Die andere Textmarke enthält jetzt nur den Text, der von der ursprünglich überlappenden Textmarke gemeinsam genutzt wurde nicht an.
+ Lesezeichen-Steuerelemente können einander überlappen. Der gleiche Text kann von mehr als einem Lesezeichen gemeinsam genutzt werden. Wenn Sie einem der überlappenden Lesezeichen neuen Text zuweisen, enthält dieser nur den neuen Text, und die Lesezeichen überlappen sich nicht mehr. Das andere Lesezeichen enthält jetzt nur den Text, der nicht von den ursprünglich überlappenden Lesezeichen gemeinsam genutzt wurde.
 
- In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ wird von zwei überlappenden Textmarken gemeinsam genutzt:
+ In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ wird von zwei überlappenden Lesezeichen gemeinsam genutzt:
 
 |Textmarke|Text|
 |--------------|----------|
@@ -65,7 +65,7 @@ ms.locfileid: "62939333"
 |Bookmark1|This is sample|
 |Bookmark2|sample text.|
 
- Wenn Sie den neuen Text „This is replacement." zu Bookmark1 zuweisen, überlappen die Textmarken nicht überschneiden, und Bookmark2 behält nur den Text, der ursprünglich Teil von Bookmark1 war.
+ Wenn Sie den neuen Text „This is replacement." in bookmark1 zuweisen sind die Lesezeichen nicht überlappend, und Bookmark2 behält nur den Text bei, der ursprünglich nicht Teil von Bookmark1 zuweisen war.
 
 |Textmarke|Text|
 |--------------|----------|
@@ -73,9 +73,9 @@ ms.locfileid: "62939333"
 |Bookmark1|This is replacement|
 |Bookmark2|text.|
 
-Die innere Textmarke nicht gelöscht, wenn Sie den Text eines Lesezeichens zu ändern, die einer anderen Textmarke enthält. Klicken Sie jedoch die innere Textmarke wird zu einer leeren Textmarke, und an das Ende der äußeren Textmarke verschoben.
+Wenn Sie den Text eines Lesezeichens ändern, das ein anderes Lesezeichen enthält, wird das innere Lesezeichen nicht gelöscht. Das innere Lesezeichen wird jedoch zu einem leeren Lesezeichen und wechselt zum Ende des äußeren Lesezeichens.
 
-In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ wird von einer Textmarke gemeinsam genutzt, die in einer anderen Textmarke enthalten ist:
+In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ wird von einem Lesezeichen gemeinsam genutzt, das in einem anderen Lesezeichen enthalten ist:
 
 |Textmarke|Text|
 |--------------|----------|
@@ -87,7 +87,7 @@ In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ w
 
 |Textmarke|Text|
 |--------------|----------|
-|Zwei separate Textmarken|[Dies ist ein Ersatz.]{}|
+|Zwei separate Textmarken|[Dies ist eine Ersetzung.]{}|
 |Bookmark1|This is replacement.|
 |Bookmark2|*\<empty>*|
 
@@ -112,7 +112,7 @@ Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.Bookmar
 ## <a name="see-also"></a>Siehe auch
 
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
-- [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Vorgehensweise: Word-Dokumenten Lesezeichen-Steuerelemente hinzufügen](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921287"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233266"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden.
 
@@ -44,7 +44,7 @@ In .NET Framework 2,0 Service Pack 1 und 2, .NET Framework 3,0 Service Pack 1 un
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
-|.NET Framework 4|N/V|
+|.NET Framework 4|Nicht zutreffend|
 
 Informationen zum Ändern des Ziel-Frameworks eines [Projekts finden Sie unter Gewusst wie: Ausrichten auf eine Version von .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 

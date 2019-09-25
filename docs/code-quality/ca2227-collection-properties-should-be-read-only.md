@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6ced277aa442450418ce55f4e1db56ad5d8af1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806536"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231300"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Sammlungseigenschaften sollten schreibgeschützt sein.
 
@@ -36,27 +36,27 @@ ms.locfileid: "62806536"
 
 ## <a name="cause"></a>Ursache
 
-Eine extern sichtbare schreibbare Eigenschaft ist ein Typ, der implementiert <xref:System.Collections.ICollection?displayProperty=fullName>. Mit dieser Regel wird ignoriert, Arrays, Indexer (Eigenschaften mit dem Namen "Item") und Berechtigungssätze.
+Eine extern sichtbare, beschreibbare Eigenschaft ist ein Typ, der implementiert <xref:System.Collections.ICollection?displayProperty=fullName>. Diese Regel ignoriert Arrays, Indexer (Eigenschaften mit dem Namen "Item") und Berechtigungs Sätze.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine schreibbare Auflistungseigenschaft ermöglicht einen Benutzer, die Auflistung mit einer ganz anderen Sammlung zu ersetzen. Eine schreibgeschützte Eigenschaft beendet die Auflistung ersetzt wird, kann jedoch trotzdem die einzelnen Mitglieder festgelegt werden. Ersetzen die Auflistung ist ein Ziel, das Entwurfsmuster bestehend aus einer Methode, um alle Elemente aus der Auflistung zu entfernen und eine Methode, um der Auflistung neu auffüllen. Finden Sie unter den <xref:System.Collections.ArrayList.Clear%2A> und <xref:System.Collections.ArrayList.AddRange%2A> Methoden der <xref:System.Collections.ArrayList?displayProperty=fullName> -Klasse für ein Beispiel für dieses Muster.
+Eine beschreibbare Auflistungs Eigenschaft ermöglicht es einem Benutzer, die Sammlung durch eine vollkommen andere Auflistung zu ersetzen. Eine schreibgeschützte Eigenschaft verhindert, dass die Auflistung ersetzt wird, lässt jedoch weiterhin zu, dass die einzelnen Member festgelegt werden. Wenn das Ersetzen der Auflistung ein Ziel ist, besteht das bevorzugte Entwurfsmuster darin, eine Methode zum Entfernen aller Elemente aus der Auflistung und eine Methode zum erneuten Auffüllen der Auflistung einzuschließen. Ein Beispiel <xref:System.Collections.ArrayList.Clear%2A> für <xref:System.Collections.ArrayList.AddRange%2A> dieses Muster finden <xref:System.Collections.ArrayList?displayProperty=fullName> Sie unter den-und-Methoden der-Klasse.
 
-Sowohl binäre als auch XML-Serialisierung unterstützt schreibgeschützten Eigenschaften, die Auflistungen darstellen. Die <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> -Klasse verfügt über bestimmte Anforderungen für Typen, die implementieren <xref:System.Collections.ICollection> und <xref:System.Collections.IEnumerable?displayProperty=fullName> um serialisierbar sein.
+Sowohl die binäre als auch die XML-Serialisierung unterstützen schreibgeschützte Eigenschaften, die Sammlungen sind. Die <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> -Klasse verfügt über bestimmte Anforderungen für Typen <xref:System.Collections.ICollection> , <xref:System.Collections.IEnumerable?displayProperty=fullName> die implementieren, und, um serialisierbar zu sein.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, stellen Sie die Eigenschaft schreibgeschützt. Wenn der Entwurf es erfordert, fügen Sie Methoden zum Deaktivieren und erneutes Auffüllen der Auflistung hinzu.
+Um einen Verstoß gegen diese Regel zu beheben, legen Sie die Eigenschaft als schreibgeschützt fest. Wenn der Entwurf dies erfordert, fügen Sie Methoden hinzu, um die Auflistung zu löschen und neu aufzufüllen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Sie können die Warnung unterdrücken, wenn die Eigenschaft Teil ist eine [Data Transfer Object (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) Klasse.
+Sie können die Warnung unterdrücken, wenn die Eigenschaft Teil einer [Datenübertragung Object (dto)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) -Klasse ist.
 
-Andernfalls, unterdrücken Sie Warnungen, die von dieser Regel.
+Andernfalls sollten Sie keine Warnungen dieser Regel unterdrücken.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen Typ mit eine schreibbare Auflistungseigenschaft und zeigt, wie die Auflistung direkt ersetzt werden kann. Darüber hinaus zeigt die bevorzugte Weise ersetzen Sie die Eigenschaft für eine schreibgeschützte Auflistung mit `Clear` und `AddRange` Methoden.
+Das folgende Beispiel zeigt einen Typ mit einer beschreibbaren Auflistungs Eigenschaft und zeigt, wie die Auflistung direkt ersetzt werden kann. Außerdem zeigt es die bevorzugte Methode zum Ersetzen einer schreibgeschützten Auflistungs Eigenschaft mithilfe `Clear` der `AddRange` Methoden und.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ Das folgende Beispiel zeigt einen Typ mit eine schreibbare Auflistungseigenschaf
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1819: Eigenschaften sollten keine Arrays zurückgeben.](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819: Eigenschaften sollten keine Arrays zurückgeben](../code-quality/ca1819-properties-should-not-return-arrays.md)

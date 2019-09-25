@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bf4833aebdb6a92b9bd05294dd314dc2967738e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921552"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233688"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Methodenergebnisse nicht ignorieren.
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921552"
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
@@ -53,7 +53,7 @@ Wenn Methode a eine neue Instanz eines B-Objekts erstellt, das nie verwendet wir
 
 Wenn method a die Methode b aufruft, verwendet jedoch nicht die neue Zeichen folgen Instanz, die von der Methode b zurückgegeben wird. Übergeben Sie die Instanz als Argument an eine andere Methode, weisen Sie die Instanz einer Variablen zu. Oder entfernen Sie den-Befehl, wenn dies unnötig ist.
 
- -oder-
+ - oder -
 
 Wenn method a die Methode B aufruft, jedoch nicht das HRESULT oder den Fehlercode verwendet, das von der Methode zurückgegeben wird. Verwenden Sie das Ergebnis in einer Bedingungs Anweisung, weisen Sie das Ergebnis einer Variablen zu, oder übergeben Sie es als Argument an eine andere Methode.
 

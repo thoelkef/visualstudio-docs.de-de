@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920798"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232453"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Anfällige finally-Klauseln mit äußerem try-Block umschließen.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920798"
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 In den Versionen 1,0 und 1,1 des .NET Framework enthält eine öffentliche oder geschützte `try` Methode einen / `catch` / `finally` -Block. Der `finally` -Block scheint den Sicherheitszustand zurückzusetzen und ist nicht in `finally` einen-Block eingeschlossen.

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d77ecc255f03e38e39a9321d9c7a9e5568e94a4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88464effce80b6957dc8945ad17f5a39b4f449c8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546335"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234517"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Übermäßige Vererbung vermeiden.
 
@@ -39,15 +39,15 @@ Ein Typ ist in seiner Vererbungshierarchie mehr als vier Ebenen tief.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Tief verschachtelte Typenhierarchien können schwer zu verfolgen, verstehen und verwalten sein. Mit dieser Regel schränkt die Analyse für Hierarchien im selben Modul.
+Tief verschachtelte Typenhierarchien können schwer zu verfolgen, verstehen und verwalten sein. Diese Regel schränkt die Analyse auf Hierarchien im gleichen Modul ein.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ aus einer Basisklasse, die in der Vererbungshierarchie weniger komplex ist, oder entfernen Sie einige der mittleren Basistypen.
+Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem Basistyp ab, der in der Vererbungs Hierarchie weniger tief ist, oder entfernen Sie einige der zwischen Basis Typen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Allerdings kann der Code schwieriger zu warten sein. Beachten Sie, dass je nach Sichtbarkeit der Basistypen, Auflösen von Verstöße gegen diese Regel Änderungen erstellen kann. Entfernen die öffentliche Basistypen ist beispielsweise eine unterbrechende Änderung.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken. Allerdings ist es möglicherweise schwieriger, den Code zu verwalten. Beachten Sie, dass die Behebung von Verstößen gegen diese Regel in Abhängigkeit von der Sichtbarkeit von Basis Typen zu wichtigen Änderungen führen könnte. Beispielsweise ist das Entfernen von öffentlichen Basis Typen eine Breaking Change.
 
 ## <a name="example"></a>Beispiel
 

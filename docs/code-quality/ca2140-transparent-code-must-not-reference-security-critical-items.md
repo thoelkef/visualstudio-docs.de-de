@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f02938aed7456762f1ef51da716b6b96bdf437
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545028"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232146"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.
 
 |||
 |-|-|
-|TypeName|TransparentMethodsMustNotReferenceCriticalCode|
+|TypeName|Transparentmethodsmustnotreferencecriticalcode|
 |CheckId|CA2140|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
@@ -36,43 +36,43 @@ ms.locfileid: "62545028"
 
 Eine transparente Methode:
 
-- verarbeitet einen Sicherheit sicherheitsrelevanten Ausnahmetyp
+- behandelt einen sicherheitskritischen Sicherheits Ausnahmetyp.
 
-- verfügt über einen Parameter, der als einen sicherheitskritischen Typ gekennzeichnet ist.
+- verfügt über einen Parameter, der als sicherheitskritischer Typ markiert ist.
 
-- verfügt über einen generischen Parameter mit einem kritischen sicherheitseinschränkungen
+- verfügt über einen generischen Parameter mit sicherheitskritischen Einschränkungen
 
-- verfügt über eine lokale Variable, der einen sicherheitskritischen Typ
+- verfügt über eine lokale Variable mit einem sicherheitskritischen Typ.
 
-- verweist auf einen Typ, der als sicherheitskritisch markiert ist
+- verweist auf einen Typ, der als sicherheitskritisch markiert ist.
 
-- Ruft eine Methode, die als sicherheitskritisch markiert ist
+- Ruft eine Methode auf, die als sicherheitskritisch markiert ist.
 
-- verweist auf ein Feld, die als sicherheitskritisch markiert ist
+- verweist auf ein Feld, das als sicherheitskritisch markiert ist.
 
-- Gibt einen Typ, der als sicherheitskritisch markiert ist
+- Gibt einen Typ zurück, der als sicherheitskritisch markiert ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein Codeelement an, die mit der <xref:System.Security.SecurityCriticalAttribute> -Attribut ist sicherheitskritisch. Eine transparente Methode kann kein sicherheitskritisches Element verwenden. Wenn ein transparenter Typ versucht, einen sicherheitskritischen Typ zu verwenden eine <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , oder <xref:System.FieldAccessException> ausgelöst wird.
+Ein Code Element, das mit dem <xref:System.Security.SecurityCriticalAttribute> -Attribut markiert ist, ist sicherheitskritisch. Eine transparente Methode kann kein sicherheitskritisches Element verwenden. Wenn ein transparenter Typ versucht, einen sicherheitskritischen Typ zu verwenden <xref:System.TypeAccessException>, <xref:System.MethodAccessException> wird eine <xref:System.FieldAccessException> , oder ausgelöst.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Führen Sie eine der folgenden Schritte aus, um einen Verstoß gegen diese Regel zu beheben:
+Führen Sie einen der folgenden Schritte aus, um einen Verstoß gegen diese Regel zu beheben:
 
-- Markieren Sie das Codeelement, das die sicherheitskritischem Code mit verwendet die <xref:System.Security.SecurityCriticalAttribute> Attribut
+- Markieren Sie das Code Element, das den sicherheitskritischen Code verwendet <xref:System.Security.SecurityCriticalAttribute> , mit dem-Attribut.
 
      \- oder –
 
-- Entfernen Sie die <xref:System.Security.SecurityCriticalAttribute> Attribut aus den Codeelementen, die als sicherheitskritisch markiert sind, und markieren Sie sie mit stattdessen die <xref:System.Security.SecuritySafeCriticalAttribute> oder <xref:System.Security.SecurityTransparentAttribute> Attribut.
+- Entfernen Sie <xref:System.Security.SecurityCriticalAttribute> das Attribut aus den Code Elementen, die als sicherheitskritisch gekennzeichnet sind, und markieren Sie <xref:System.Security.SecuritySafeCriticalAttribute> Sie <xref:System.Security.SecurityTransparentAttribute> stattdessen mit dem-Attribut oder dem-Attribut.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
 
-Eine transparente Methode versucht, in den folgenden Beispielen wird eine generische Auflistung mit Sicherheit wichtig, ein sicherheitskritisches Feld und eine wichtige Methode verweisen.
+In den folgenden Beispielen versucht eine transparente Methode, auf eine sicherheitskritische generische Auflistung, ein Sicherheitskritisches Feld und eine sicherheitskritische Methode zu verweisen.
 
 [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70987764"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr über Produktivitäts Tipps und Tricks für den Debugger in Visual Studio
@@ -33,15 +33,15 @@ Anheten ![eines Datentyps](../debugger/media/dbg-tips-data-tips-pinned.png "Pinn
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Bearbeiten des Codes und Fortsetzen desC#Debuggens C++(, VB,)
 
-In den meisten Sprachen, die von Visual Studio unterstützt werden, können Sie den Code in der Mitte einer Debugsitzung bearbeiten und das Debuggen fortsetzen. Wenn Sie dieses Feature verwenden möchten, klicken Sie auf den Code mit dem Cursor, während er im Debugger angehalten wurde, bearbeiten Sie die Bearbeitung, und drücken Sie **F5**, **F10**oder **F11** , um das Debuggen fortzusetzen.
+In den meisten Sprachen, die von Visual Studio unterstützt werden, können Sie den Code während einer Debugsitzung bearbeiten und das Debuggen fortsetzen. Wenn Sie dieses Feature verwenden möchten, klicken Sie mit dem Cursor auf den Code, während dieser im Debugger angehalten wurde, und bearbeiten Sie diesen. Drücken Sie **F5**, **F10** oder **F11**, um das Debuggen fortzusetzen.
 
-![Debuggen bearbeiten und Fortfahren](../debugger/media/dbg-tips-edit-and-continue.gif "EDITANDCONTINUE")
+![Bearbeiten und Debuggen fortsetzen](../debugger/media/dbg-tips-edit-and-continue.gif "Bearbeiten und fortsetzen")
 
-Weitere Informationen zur Verwendung des Features und zu Funktions Beschränkungen finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
+Weitere Informationen zur Verwendung des Features finden Sie unter [Bearbeiten und Fortsetzen](../debugger/edit-and-continue.md).
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>XAML-Code bearbeiten und Debuggen fortsetzen
 
-Informationen zum Ändern von XAML-Code während einer Debugsitzung finden Sie unter [schreiben und Debuggen von XAML-Code mit XAML Hot Neuladen](xaml-hot-reload.md).
+Weitere Informationen zum Ändern von XAML-Code während einer Debugsitzung finden Sie unter [Schreiben und Debuggen von ausgeführtem XAML-Code durch Neuladen von XAML im laufenden Betrieb](xaml-hot-reload.md).
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Debuggingprobleme, die schwer zu reproduzieren sind
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40cb2a3674884a9fb4f1449c9afa2e0a2d27050f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df5c0db4e9e141e5833893bbbb447328eab8851e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808559"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233342"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Assemblys mit NeutralResourcesLanguageAttribute markieren.
 
@@ -32,39 +32,39 @@ ms.locfileid: "62808559"
 
 ## <a name="cause"></a>Ursache
 
-Eine Assembly enthält eine **ResX**-klassenbasierten Ressource, aber keinen der <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> angewendet wird.
+Eine Assembly enthält eine **RESX**-basierte Ressource, auf die <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> jedoch nicht angewendet wurde.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Die <xref:System.Resources.NeutralResourcesLanguageAttribute> Attribut informiert den Ressourcen-Manager der Standardkultur einer app. Wenn Ressourcen der Standardkultur in die Hauptassembly der app eingebettet sind und <xref:System.Resources.ResourceManager> wurde zum Abrufen von Ressourcen, die dieselbe Kultur aufweist wie die Standardkultur, gehören die <xref:System.Resources.ResourceManager> verwendet automatisch die Ressourcen in der Hauptassembly anstatt die Suche nach einer Satellitenassembly. Dies umgeht den üblichen Assembly-Test, verbessert die suchleistung für die erste Ressource, die Sie laden möchten, die und können Ihr Workingset reduziert.
+Das <xref:System.Resources.NeutralResourcesLanguageAttribute> -Attribut informiert den Ressourcen-Manager über die Standard Kultur einer App. Wenn die Ressourcen der Standard Kultur in die Hauptassembly der APP eingebettet sind und <xref:System.Resources.ResourceManager> Ressourcen abrufen müssen, die derselben Kultur angehören wie die Standard Kultur <xref:System.Resources.ResourceManager> , verwendet automatisch die Ressourcen, die sich in der Hauptassembly befinden. anstatt nach einer Satellitenassembly zu suchen. Dadurch wird der übliche assemblytest umgangen, die Suchleistung für die erste Ressource, die Sie laden, verbessert und Ihr Workingset kann reduziert werden.
 
 > [!TIP]
-> Finden Sie unter [Verpacken und Bereitstellen von Ressourcen](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) für den Prozess, <xref:System.Resources.ResourceManager> verwendet, um nach Dateien gesucht.
+> Unter [Verpacken und](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) Bereitstellen von Ressourcen für den <xref:System.Resources.ResourceManager> Prozess, der von verwendet wird, um nach Ressourcen Dateien zu suchen.
 
-## <a name="fix-violations"></a>Beheben von Verstößen
+## <a name="fix-violations"></a>Verstöße beheben
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen Sie das-Attribut auf die Assembly, und geben Sie die Sprache der Ressourcen der neutralen Kultur.
+Um einen Verstoß gegen diese Regel zu beheben, fügen Sie der Assembly das-Attribut hinzu, und geben Sie die Sprache der Ressourcen der neutralen Kultur an.
 
-### <a name="to-specify-the-neutral-language-for-resources"></a>Für Ressourcen der neutralen Sprache an
+### <a name="to-specify-the-neutral-language-for-resources"></a>So geben Sie die neutrale Sprache für Ressourcen an
 
-1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
 
-2. Wählen Sie die **Anwendung** Registerkarte, und wählen Sie dann **Assemblyinformationen**.
+2. Wählen Sie die Registerkarte **Anwendung** , und wählen Sie dann Assemblyinformationen.
 
    > [!NOTE]
-   > Wenn Ihr Projekt ein .NET Standard oder .NET Core-Projekt handelt, wählen Sie die **Paket** Registerkarte.
+   > Wenn das Projekt ein .NET Standard oder ein .net Core-Projekt ist, wählen Sie die Registerkarte **Paket** aus.
 
-3. Wählen Sie die Sprache aus der **neutrale Sprache** oder **Assembly neutrale Sprache** Dropdown-Liste.
+3. Wählen Sie in der Dropdown Liste **neutrale Sprache** oder assemblyneutrale **Sprache** die Sprache aus.
 
 4. Klicken Sie auf **OK**.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist zulässig, unterdrücken Sie eine Warnung dieser Regel. Allerdings kann die Leistung beim Start beeinträchtigen.
+Es ist zulässig, eine Warnung aus dieser Regel zu unterdrücken. Die Startleistung kann jedoch beeinträchtigt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
-- [Ressourcen in desktop apps (.NET)](/dotnet/framework/resources/)
-- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701 - Ressourcenzeichenfolge, die zusammengesetzte Wörter beachtet werden sollten](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [Ressourcen in Desktop-Apps (.net)](/dotnet/framework/resources/)
+- [CA1703: Ressourcen Zeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1701-Ressourcen Zeichenfolgen-Verbund Wörter müssen ordnungsgemäß geschrieben werden.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

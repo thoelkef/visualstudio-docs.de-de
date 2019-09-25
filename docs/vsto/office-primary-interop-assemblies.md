@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551690"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253739"
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
 
@@ -66,7 +66,7 @@ Ab Visual Studio 2017 werden diese Kopien der PIAs an den folgenden freigegebene
 - (oder *% Program Files (x86)% \ Microsoft Visual studio\shared\visual Studio Tools for office\pia\* auf 64-Bit-Betriebssystemen)
 
 > [!NOTE]
-> Für ältere Versionen von Visual Studio werden diese PIAs im Ordner "Visual Studio-Tools für office\pia" unter dem Ordner "*% Program Files%" für diese Version von Visual Studio installiert.  
+> Für ältere Versionen von Visual Studio werden diese PIAs im Ordner "Visual Studio-Tools für office\pia" unter dem Ordner "*% Program Files%" für diese Version von Visual Studio installiert.
 > Beispiel: *% Program Files (x86)% \ Microsoft Visual Studio 14,0 \ Visual Studio-Tools für office\pia\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Primäre Interop-Assemblys im globalen Assemblycache

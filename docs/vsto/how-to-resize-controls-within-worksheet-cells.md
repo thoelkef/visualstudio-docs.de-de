@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen'
+title: 'Vorgehensweise: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,50 +15,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08c65be450c45d7797984105723d5ae1b01a2d63
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961490"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252072"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen
-  Wenn Sie die Spalten oder Zeilen in einem Arbeitsblatt Größe, die Größe ändern alle Hoststeuerelemente in den Zellen automatisch an die Höhe oder Breite der Zelle, die Größe geändert wurde. Windows Forms-Steuerelemente sind standardmäßig nicht automatisch angepasst.
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Vorgehensweise: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen
+  Wenn Sie die Größe von Spalten oder Zeilen in einem Arbeitsblatt ändern, werden alle Host Steuerelemente in den Zellen automatisch an die Höhe oder Breite der Zelle angepasst, deren Größe geändert wurde. Die Größe Windows Forms Steuerelemente wird standardmäßig nicht automatisch geändert.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Wenn Sie die Steuerelemente zur Entwurfszeit hinzufügen, müssen Sie die Positionierungsoptionen für jedes Steuerelement festlegen.
+ Wenn Sie die Steuerelemente zur Entwurfszeit hinzufügen, müssen Sie für jedes Steuerelement Positionierungs Optionen festlegen.
 
- Wenn Sie ein Windows Forms-Steuerelement programmgesteuert hinzufügen, und geben Sie eine Bereichsargument, ändert die Größe des Steuerelements automatisch beim Ändern der Größe einer Zelle innerhalb des Bereichs. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
+ Wenn Sie ein Windows Forms-Steuerelement Programm gesteuert hinzufügen und ein Range-Argument angeben, wird das Steuerelement automatisch angepasst, wenn die Größe einer Zelle innerhalb des Bereichs geändert wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-## <a name="resize-controls-at-design-time"></a>Größe der Steuerelemente zur Entwurfszeit
+## <a name="resize-controls-at-design-time"></a>Ändern der Größe von Steuerelementen zur Entwurfszeit
 
-### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Um mit Steuerelementen zur Entwurfszeit mit Zellen ändern der Größe
+### <a name="to-make-controls-resize-with-cells-at-design-time"></a>So ändern Sie die Größe von Steuerelementen zur Entwurfszeit mit Zellen
 
-1. Von der **Toolbox**, ziehen Sie ein Windows Forms-Steuerelement in einem Arbeitsblatt.
+1. Ziehen Sie ein Windows Forms-Steuerelement aus der **Toolbox**auf ein Arbeitsblatt.
 
-2. Klicken Sie auf das Steuerelement, und klicken Sie dann auf **Formatsteuerung**.
+2. Klicken Sie mit der rechten Maustaste auf das Steuerelement, und klicken Sie dann auf **Format Control**
 
-3. In der **Formatsteuerung** Dialogfeld klicken Sie auf die **Eigenschaften** Registerkarte.
+3. Klicken Sie im Dialogfeld **Format Steuer** Element auf die Registerkarte **Eigenschaften** .
 
-4. Klicken Sie unter **Objektposition**, wählen die **Größe und mit Zellen** aus, und klicken Sie dann auf **OK**.
+4. Wählen Sie unter **Objekt Positionierung**die Option **verschieben und Größe mit Zellen** aus, und klicken Sie dann auf **OK**.
 
-     Wenn Sie die Größe der Zelle, die das Steuerelement enthält, wird die Größe des Steuerelements die Zelle eingepasst werden.
+     Wenn Sie die Größe der Zelle ändern, die das Steuerelement enthält, wird die Größe des Steuer Elements an die Zelle angepasst.
 
-## <a name="resize-controls-at-runtime"></a>Ändern der Größe Steuerelementen zur Laufzeit
- Wenn Sie ein Windows Forms-Steuerelement zur Laufzeit hinzufügen, und übergeben einen <xref:Microsoft.Office.Interop.Excel.Range> als Speicherort für das Steuerelement, das Steuerelement wird automatisch angepasst, wenn die Arbeitsblatt-Zelle, die den Bereich enthält die Größe geändert wird.
+## <a name="resize-controls-at-run-time"></a>Ändern der Größe von Steuerelementen zur Laufzeit
+ Wenn Sie ein Windows Forms-Steuerelement zur Laufzeit hinzufügen und ein <xref:Microsoft.Office.Interop.Excel.Range> als Speicherort für das-Steuerelement übergeben, wird die Größe des Steuer Elements automatisch geändert, wenn die Arbeitsblatt Zelle, die den Bereich enthält, in der Größe geändert wird.
 
-### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Um mit Steuerelementen zur Laufzeit mit Zellen ändern der Größe
+### <a name="to-make-controls-resize-with-cells-at-run-time"></a>So ändern Sie die Größe der Steuerelemente mit Zellen zur Laufzeit
 
-1. Fügen Sie ein Steuerelement zum Bereich A1.
+1. Fügen Sie dem Bereich a1 ein Steuerelement hinzu.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
 
-     Wenn Sie die Größe der Zelle, die das Steuerelement enthält, wird die Größe des Steuerelements die Zelle eingepasst werden.
+     Wenn Sie die Größe der Zelle ändern, die das Steuerelement enthält, wird die Größe des Steuer Elements an die Zelle angepasst.
 
-## <a name="reset-control-placement"></a>Zurücksetzen von Steuerelementen
- Sie können die Platzierung und Ändern der Größe des Steuerelements durch Festlegen von Zurücksetzen der `Placement` -Eigenschaft auf einen der folgenden <xref:Microsoft.Office.Interop.Excel.XlPlacement> Werte:
+## <a name="reset-control-placement"></a>Steuerelement Platzierung zurücksetzen
+ Sie können die Platzierung und die Größe des Steuer Elements zurücksetzen, indem `Placement` Sie die-Eigenschaft auf einen <xref:Microsoft.Office.Interop.Excel.XlPlacement> der folgenden Werte festlegen:
 
 - <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
@@ -66,16 +66,16 @@ ms.locfileid: "62961490"
 
 - <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
-### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Um das Verhalten eines Steuerelements zu ändern, damit es nicht mit der Zelle zu verschieben oder Ändern der Größe
+### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>So ändern Sie das Verhalten eines Steuer Elements, sodass es sich nicht mit der Größe der Zelle ändert
 
-1. Rufen Sie die Placement-Eigenschaft des Steuerelements, und legen Sie den Wert <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Nennen Sie die Placement-Eigenschaft des-Steuer Elements, und <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>legen Sie den Wert auf fest.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
 
 ## <a name="see-also"></a>Siehe auch
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
-- [Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Vorgehensweise: Hinzufügen von Windows Forms Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Vorgehensweise: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

@@ -1,5 +1,5 @@
 ---
-title: Zugreifen auf Daten in Dokumenten auf dem server
+title: Zugreifen auf Daten in Dokumenten auf dem Server
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,71 +13,71 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d12c8168ef01dd3a38616af4f9dab2c38662bfff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563108"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255765"
 ---
-# <a name="access-data-in-documents-on-the-server"></a>Zugreifen auf Daten in Dokumenten auf dem server
-  Sie können die Daten in einer Anpassung auf Dokumentebene programmieren, ohne das Objektmodell von Microsoft Office Word oder Microsoft Office Excel verwenden. Dies bedeutet, Sie können Daten in einem Dokument auf einem Server, die nicht Word oder Excel installiert. Code wird z. B. auf einem Server (beispielsweise eine [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seite) die Daten in einem Dokument angepasst und angepasste Dokument kann an einen Endbenutzer gesendet. Wenn der Endbenutzer das Dokument öffnet, bindet Datenbindungscode in die Projektmappenassembly benutzerdefinierten Daten in das Dokument. Dies ist möglich, da die Daten im Dokument von der Benutzeroberfläche getrennt sind. Weitere Informationen finden Sie unter [zwischengespeicherten Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md).
+# <a name="access-data-in-documents-on-the-server"></a>Zugreifen auf Daten in Dokumenten auf dem Server
+  Sie können für die Daten in einer Anpassung auf Dokument Ebene programmieren, ohne das Objektmodell von Microsoft Office Word oder Microsoft Office Excel verwenden zu müssen. Dies bedeutet, dass Sie auf Daten zugreifen können, die in einem Dokument auf einem Server enthalten sind, auf dem Word oder Excel nicht installiert ist. Beispielsweise kann der Code auf einem Server (z. b. [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] auf einer Seite) die Daten in einem Dokument anpassen und das angepasste Dokument an einen Endbenutzer senden. Wenn der Endbenutzer das Dokument öffnet, bindet der Daten Bindungs Code in der Projektmappenassembly die angepassten Daten an das Dokument. Dies ist möglich, da die Daten im Dokument von der Benutzeroberfläche getrennt sind. Weitere Informationen finden Sie unter [zwischengespeicherte Daten in Anpassungen auf Dokument Ebene](../vsto/cached-data-in-document-level-customizations.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="cache-data-for-use-on-a-server"></a>Daten Sie für die Verwendung auf einem server
- Um ein Datenobjekt in einem Dokument zwischenspeichern, kennzeichnen Sie ihn mit der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> -Attribut zur Entwurfszeit, oder verwenden Sie die `StartCaching` -Methode eines Hostelements zur Laufzeit. Wenn Sie ein Objekt in einem Dokument Zwischenspeichern der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] serialisiert das Objekt in eine XML-Zeichenfolge, die im Dokument gespeichert ist. Objekte müssen Anforderungen für Zwischenspeichern. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).
+## <a name="cache-data-for-use-on-a-server"></a>Zwischenspeichern von Daten für die Verwendung auf einem Server
+ Um ein Datenobjekt in einem Dokument zwischenzuspeichern, markieren Sie <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> es zur Entwurfszeit mit dem-Attribut `StartCaching` , oder verwenden Sie die-Methode eines Host Elements zur Laufzeit. Wenn Sie ein Datenobjekt in einem Dokument zwischenspeichern, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] serialisiert das Objekt in eine XML-Zeichenfolge, die im Dokument gespeichert ist. Objekte müssen bestimmte Anforderungen erfüllen, damit Sie für die Zwischenspeicherung geeignet sind. Weitere Informationen finden Sie unter zwischen [Speichern von Daten](../vsto/caching-data.md).
 
- Serverseitigen Code kann alle Datenobjekte im Datencache bearbeitet werden. Instanzen von zwischengespeicherten Daten gebundenen Steuerelemente sind mit der Benutzeroberfläche synchronisiert serverseitige Änderungen an den Daten werden automatisch angezeigt, wenn auf dem Client öffnen.
+ Der Server seitige Code kann beliebige Datenobjekte im Daten Cache bearbeiten. Steuerelemente, die an zwischengespeicherte Daten Instanzen gebunden sind, werden mit der Benutzeroberfläche synchronisiert, sodass alle serverseitigen Änderungen, die an den Daten vorgenommen werden, automatisch angezeigt werden, wenn das Dokument auf dem Client geöffnet wird.
 
-## <a name="access-data-in-the-cache"></a>Zugriff auf Daten im cache
- Sie können Clientanwendungen Office, z. B. eine Windows Forms-Anwendung oder eine Webseite im Cache zugreifen. Die Anwendung, die zwischengespeicherten Daten zugreift, muss vollständig vertrauenswürdig sein; eine Web-Anwendung mit teilweiser Vertrauenswürdigkeit kann einfügen, Abrufen oder Ändern von Daten in einem Office-Dokument zwischengespeichert.
+## <a name="access-data-in-the-cache"></a>Zugreifen auf Daten im Cache
+ Sie können auf Daten im Cache von Anwendungen außerhalb von Office zugreifen, z. b. aus einer Konsolenanwendung, einer Windows Forms Anwendung oder einer Webseite. Die Anwendung, die auf die zwischengespeicherten Daten zugreift, muss voll vertrauenswürdig sein. eine Webanwendung, die über teilweise Vertrauenswürdigkeit verfügt, kann keine Daten einfügen, Abrufen oder ändern, die in einem Office-Dokument zwischengespeichert werden.
 
- Datencache ist eine Hierarchie von Sammlungen von verfügbar gemacht über die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> -Eigenschaft des der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse:
+ Auf den Daten Cache kann über eine Hierarchie von Auflistungen zugegriffen werden <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> , die von <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> der-Eigenschaft der-Klasse verfügbar gemacht werden:
 
-- Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> gibt eine <xref:Microsoft.VisualStudio.Tools.Applications.CachedData>, enthält alle zwischengespeicherten Daten in einer Anpassung auf Dokumentebene.
+- Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> -Eigenschaft gibt <xref:Microsoft.VisualStudio.Tools.Applications.CachedData>ein-Objekt zurück, das alle zwischengespeicherten Daten in einer Anpassung auf Dokument Ebene enthält.
 
-- Jede <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> enthält eine oder mehrere <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> Objekte. Ein <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> enthält alle zwischengespeicherten Datenobjekte, die innerhalb einer einzelnen Klasse definiert sind.
+- Jedes <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> -Objekt enthält ein <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> oder mehrere-Objekte. Eine <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> enthält alle zwischengespeicherten Datenobjekte, die in einer einzelnen Klasse definiert sind.
 
-- Jede <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> enthält eine oder mehrere <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> Objekte. Eine <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> stellt ein einzelnes zwischengespeichertes Datenobjekt.
+- Jedes <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> -Objekt enthält ein <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> oder mehrere-Objekte. Ein <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> stellt ein einzelnes zwischengespeichertes Datenobjekt dar.
 
-  Im folgenden Codebeispiel wird veranschaulicht, wie auf eine zwischengespeicherte Zeichenfolge in der `Sheet1` -Klasse ein Excel-Arbeitsmappenprojekt. Dieses Beispiel ist Teil eines umfangreicheren Beispiels für die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> Methode.
+  Im folgenden Codebeispiel wird veranschaulicht, wie Sie in der `Sheet1` -Klasse eines Excel-Arbeitsmappenprojekts auf eine zwischengespeicherte Zeichenfolge zugreifen. Dieses Beispiel ist Teil eines größeren Beispiels, das für die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> -Methode bereitgestellt wird.
 
   [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
   [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]
 
-## <a name="modify-data-in-the-cache"></a>Ändern von Daten im cache
- Ändern Sie ein zwischengespeichertes Datenobjekt führen Sie normalerweise die folgenden Schritte aus:
+## <a name="modify-data-in-the-cache"></a>Ändern von Daten im Cache
+ Zum Ändern eines zwischengespeicherten Datenobjekts führen Sie in der Regel die folgenden Schritte aus:
 
-1. Die XML-Darstellung des zwischengespeicherten Objekts in eine neue Instanz des Objekts zu deserialisieren. Zugriff XML mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> -Eigenschaft des der <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> , der das zwischengespeicherte Objekt darstellt.
+1. Deserialisieren Sie die XML-Darstellung des zwischengespeicherten Objekts in eine neue Instanz des-Objekts. Sie können auf den XML-Code zugreifen <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> , indem Sie die-Eigenschaft des verwenden, das das zwischengespeicherte Datenobjekt darstellt.
 
-2. Ändern Sie diese Kopie.
+2. Nehmen Sie die Änderungen an dieser Kopie vor.
 
-3. Zum Serialisieren des bearbeiteten Objekts in den Datencache mithilfe einer der folgenden Optionen:
+3. Serialisieren Sie das geänderte Objekt zurück in den Daten Cache, indem Sie eine der folgenden Optionen verwenden:
 
-    - Die Änderung automatisch serialisiert, verwenden Sie die <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> Methode. Diese Methode verwendet die **DiffGram** Format für die Serialisierung <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, und typisierte Dataset-Objekte in den Datencache. Die **DiffGram** wird sichergestellt, dass dem Datencache in einem Dokument offline geändert korrekt an den Server gesendet werden.
+    - Wenn Sie die Änderungen automatisch serialisieren möchten, verwenden Sie die <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> -Methode. Diese Methode verwendet das **DiffGram** -Format für die <xref:System.Data.DataSet>Serialisierung von-, <xref:System.Data.DataTable>-und typisierten DataSet-Objekten im Daten Cache. Durch das **DiffGram** -Format wird sichergestellt, dass Änderungen am Daten Cache in einem Offline Dokument ordnungsgemäß an den Server gesendet werden.
 
-    - Wenn Sie eigene Serialisierung Änderungen zwischengespeicherten Daten ausführen möchten, können Sie direkt zu schreiben die <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> Eigenschaft. Angeben der **DiffGram** format verwenden Sie ein <xref:System.Data.Common.DataAdapter> zum Aktualisieren einer Datenbank mit Daten in einem <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, oder einem typisierten Dataset. Andernfalls die <xref:System.Data.Common.DataAdapter> Aktualisieren der Datenbank durch Hinzufügen neuer Zeilen statt vorhandene Zeilen zu ändern.
+    - Wenn Sie Ihre eigene Serialisierung für Änderungen an zwischengespeicherten Daten durchführen möchten, können Sie direkt in die <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> -Eigenschaft schreiben. Geben Sie das **DiffGram** -Format <xref:System.Data.Common.DataAdapter> an, wenn Sie einen zum Aktualisieren einer Datenbank mit Änderungen verwenden, die an den Daten in einem <xref:System.Data.DataSet>typisierten DataSet, <xref:System.Data.DataTable>oder vorgenommen werden. Andernfalls aktualisiert die <xref:System.Data.Common.DataAdapter> Datenbank, indem neue Zeilen hinzugefügt werden, anstatt vorhandene Zeilen zu ändern.
 
-### <a name="modify-data-without-deserializing-the-current-value"></a>Ändern von Daten ohne Deserialisieren des aktuellen Werts
- In einigen Fällen möchten Sie den Wert des zwischengespeicherten Objekts zu ändern, ohne die erste Deserialisieren des aktuellen Werts. Beispielsweise kann dies, wenn Sie den Wert eines Objekts ändern, das einen einfachen Typ, z. B. eine Zeichenfolge oder eine Ganzzahl, oder beim Initialisieren von zwischengespeicherten <xref:System.Data.DataSet> in einem Dokument auf einem Server. In diesen Fällen können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> -Methode ohne Deserialisieren von den aktuellen Wert des zwischengespeicherten Objekts.
+### <a name="modify-data-without-deserializing-the-current-value"></a>Daten ändern, ohne den aktuellen Wert zu deserialisieren
+ In einigen Fällen möchten Sie möglicherweise den Wert des zwischengespeicherten Objekts ändern, ohne zuerst den aktuellen Wert zu deserialisieren. Dies ist z. b. der Fall, wenn Sie den Wert eines Objekts ändern, das über einen einfachen Typ verfügt, z. b. eine Zeichenfolge oder eine ganze Zahl, oder <xref:System.Data.DataSet> Wenn Sie ein zwischengespeichertes in einem Dokument auf einem Server initialisieren. In diesen Fällen können Sie die <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> -Methode verwenden, ohne zuerst den aktuellen Wert des zwischengespeicherten Objekts zu deserialisieren.
 
- Im folgenden Codebeispiel wird veranschaulicht, wie der Wert eine zwischengespeicherte Zeichenfolge in der `Sheet1` -Klasse ein Excel-Arbeitsmappenprojekt. Dieses Beispiel ist Teil eines umfangreicheren Beispiels für die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> Methode.
+ Im folgenden Codebeispiel wird veranschaulicht, wie der Wert einer zwischengespeicherten Zeichenfolge in `Sheet1` der-Klasse eines Excel-Arbeitsmappenprojekts geändert wird. Dieses Beispiel ist Teil eines größeren Beispiels, das für die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> -Methode bereitgestellt wird.
 
  [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
  [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]
 
-### <a name="modify-null-values-in-the-data-cache"></a>Ändern von null-Werten im Datencache
- Der Datencache werden keine Objekte mit dem Wert gespeichert **null** Wenn das Dokument gespeichert und geschlossen. Diese Einschränkung hat mehrere folgen, wenn Sie zwischengespeicherte Daten ändern:
+### <a name="modify-null-values-in-the-data-cache"></a>Ändern von NULL-Werten im Daten Cache
+ Der Daten Cache speichert keine Objekte, die den Wert **null** aufweisen, wenn das Dokument gespeichert und geschlossen wird. Diese Einschränkung hat mehrere Konsequenzen, wenn Sie zwischengespeicherte Daten ändern:
 
-- Setzen Sie ein Objekt im Datencache den Wert **null**, alle Objekte im Datencache automatisch soll **null** beim Öffnen des Dokuments und der gesamte Datencache wird gelöscht, wenn die Dokument gespeichert und geschlossen. Das heißt, entfernt alle zwischengespeicherten Objekte aus dem Datencache und <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Auflistung leer sein.
+- Wenn Sie ein Objekt im Daten Cache auf den Wert **null**festlegen, werden alle Objekte im Daten Cache beim Öffnen des Dokuments automatisch auf **null** festgelegt, und der gesamte Daten Cache wird gelöscht, wenn das Dokument gespeichert und geschlossen wird. Das heißt, alle zwischengespeicherten Objekte werden aus dem Daten Cache entfernt, und die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Auflistung ist leer.
 
-- Wenn Sie eine Projektmappe mit **null** Objekte in den Datencache erstellen und diese Objekte mithilfe von initialisieren möchten die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse, bevor das Dokument zum ersten Mal geöffnet wird, müssen Sie sicherstellen, dass alle Objekte initialisieren im Datencache. Wenn nur einige der Objekte initialisieren aller Objekte festzulegen **null** beim Öffnen des Dokuments und der gesamte Datencache wird geleert, wenn das Dokument gespeichert und geschlossen wird.
+- Wenn Sie eine Projekt Mappe mit **null** -Objekten im Daten Cache erstellen und diese Objekte mithilfe der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> -Klasse initialisieren möchten, bevor das Dokument zum ersten Mal geöffnet wird, müssen Sie sicherstellen, dass Sie alle Objekte im Daten Cache initialisieren. Wenn Sie nur einige der Objekte initialisieren, werden alle Objekte beim Öffnen des Dokuments auf **null** festgelegt, und der gesamte Daten Cache wird gelöscht, wenn das Dokument gespeichert und geschlossen wird.
 
-## <a name="access-typed-datasets-in-the-cache"></a>Zugriff auf typisierte Datasets im cache
- Möchten Sie die Daten in einem typisierten Dataset sowohl aus einer Office-Projektmappe eine Anwendung außerhalb von Office, wie Windows Forms-Anwendung zugreifen oder ein [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Projekt, Sie definieren das typisierte Dataset in einer separaten Assembly sowohl verwiesen wird Projekte. Wenn Sie das Dataset mit Hinzufügen der **Datenquellenkonfiguration** Assistenten oder **Dataset-Designer**, behandelt.NET Framework die typisierten Datasets in beiden Projekten als unterschiedliche Typen . Weitere Informationen zum Erstellen von typisierten Datasets finden Sie unter [erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+## <a name="access-typed-datasets-in-the-cache"></a>Zugreifen auf typisierte Datasets im Cache
+ Wenn Sie auf die Daten in einem typisierten DataSet sowohl aus einer Office-Projekt Mappe als auch aus einer Anwendung außerhalb von Office zugreifen möchten (z. b [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] . eine Windows Forms Anwendung oder ein-Projekt), müssen Sie das typisierte DataSet in einer separaten Assembly definieren, auf die in beiden kte. Wenn Sie das typisierte DataSet mit dem Assistenten zum Konfigurieren von **Datenquellen** oder dem **DataSet-Designer**jedem Projekt hinzufügen, werden die typisierten Datasets in den beiden Projekten vom .NET Framework als verschiedene Typen behandelt. Weitere Informationen zum Erstellen von typisierten Datasets finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Zugreifen auf Daten in Dokumenten auf dem server](../vsto/accessing-data-in-documents-on-the-server.md)
-- [Zwischengespeicherte Daten in Anpassungen auf Dokumentebene](../vsto/cached-data-in-document-level-customizations.md)
+- [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Zwischengespeicherte Daten in Anpassungen auf Dokument Ebene](../vsto/cached-data-in-document-level-customizations.md)

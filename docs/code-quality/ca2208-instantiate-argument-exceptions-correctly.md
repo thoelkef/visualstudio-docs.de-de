@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2110a8d0b58d87a4554971cf00af6441d293aa91
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 9f9425ab1ea9eadd3bd06d950118ce83ba5c35f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975893"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231648"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Argumentausnahmen korrekt instanziieren.
 
@@ -32,48 +32,48 @@ ms.locfileid: "65975893"
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Möglichen Ursachen gehören die folgenden Situationen:
+Zu den möglichen Ursachen gehören die folgenden Situationen:
 
-- Wird aufgerufen, der (parameterlose) Standardkonstruktor eines Ausnahmetyps, der oder abgeleitet wird, <xref:System.ArgumentException>.
+- Der standardmäßige (parameterlose) Konstruktor eines Ausnahme Typs, der oder von <xref:System.ArgumentException>abgeleitet ist, wird aufgerufen.
 
-- Ein falsches Zeichenfolgenargument wird an einen parametrisierten Konstruktor eines Ausnahmetyps, der oder abgeleitet wird, übergeben <xref:System.ArgumentException>.
+- Ein falsches Zeichen folgen Argument wird an einen parametrisierten Konstruktor eines Ausnahme Typs übergeben, der oder von <xref:System.ArgumentException>abgeleitet ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Anstelle von Aufrufen des Standardkonstruktors, rufen Sie die Konstruktorüberladung, die eine aussagekräftigere Ausnahmemeldung bereitgestellt werden können. Die Ausnahmemeldung sollten als Ziel den Entwickler und stellen Sie klar die fehlerbedingung und Informationen zum Korrigieren oder die Ausnahme verhindern.
+Anstatt den Standardkonstruktor aufzurufen, rufen Sie eine der Konstruktorüberladungen auf, die eine aussagekräftigere Ausnahme Meldung bereitstellen lassen. Die Ausnahme Meldung sollte den Entwickler als Ziel haben und die Fehlerbedingung und die Vorgehensweise zur Behebung oder Vermeidung der Ausnahme eindeutig erläutern.
 
-Die Signaturen der Konstruktoren von mit einem und zwei Zeichenfolgen <xref:System.ArgumentException> und seinen abgeleiteten Typen sind nicht konsistent in Bezug auf die Position `message` und `paramName` Parameter. Stellen Sie sicher, dass diese Konstruktoren mit den richtigen Argumenten aufgerufen werden. Die Signaturen lauten wie folgt aus:
+Die Signaturen der einen und zwei zeichenfolgenkonstruktoren von <xref:System.ArgumentException> und der abgeleiteten Typen sind in Bezug auf die Position `paramName` `message` und die Parameter nicht konsistent. Stellen Sie sicher, dass diese Konstruktoren mit den richtigen Zeichen folgen Argumenten aufgerufen werden. Die Signaturen lauten wie folgt:
 
-- <xref:System.ArgumentException>(String `message`)
-- <xref:System.ArgumentException>(String `message`, Zeichenfolge `paramName`)
-- <xref:System.ArgumentNullException>(String `paramName`)
-- <xref:System.ArgumentNullException>(String `paramName`, Zeichenfolge `message`)
-- <xref:System.ArgumentOutOfRangeException>(String `paramName`)
-- <xref:System.ArgumentOutOfRangeException>(String `paramName`, Zeichenfolge `message`)
-- <xref:System.DuplicateWaitObjectException>(String `parameterName`)
-- <xref:System.DuplicateWaitObjectException>(String `parameterName`, Zeichenfolge `message`)
+- <xref:System.ArgumentException>(Zeichen `message`Folge)
+- <xref:System.ArgumentException>(Zeichen `message`Folge, `paramName`Zeichenfolge)
+- <xref:System.ArgumentNullException>(Zeichen `paramName`Folge)
+- <xref:System.ArgumentNullException>(Zeichen `paramName`Folge, `message`Zeichenfolge)
+- <xref:System.ArgumentOutOfRangeException>(Zeichen `paramName`Folge)
+- <xref:System.ArgumentOutOfRangeException>(Zeichen `paramName`Folge, `message`Zeichenfolge)
+- <xref:System.DuplicateWaitObjectException>(Zeichen `parameterName`Folge)
+- <xref:System.DuplicateWaitObjectException>(Zeichen `parameterName`Folge, `message`Zeichenfolge)
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, rufen einen Konstruktor, eine Meldung und/oder einen Parameternamen an, und stellen Sie sicher, dass die Argumente für den Typ des entsprechenden <xref:System.ArgumentException> aufgerufen wird.
+Um einen Verstoß gegen diese Regel zu beheben, müssen Sie einen Konstruktor aufrufen, der eine Nachricht, einen Parameternamen oder beides annimmt, und sicherstellen, dass die Argumente für <xref:System.ArgumentException> den aufgerufenen Typ ordnungsgemäß sind.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, nur, wenn Sie ein parametrisierter Konstruktor mit den richtigen Argumenten aufgerufen wird.
+Es ist sicher, eine Warnung aus dieser Regel nur zu unterdrücken, wenn ein parametrisierter Konstruktor mit den richtigen Zeichen folgen Argumenten aufgerufen wird.
 
 ## <a name="example"></a>Beispiel
 
-Der folgende Code zeigt einen Konstruktor, der eine Instanz von nicht ordnungsgemäß instanziiert <xref:System.ArgumentNullException>.
+Der folgende Code zeigt einen Konstruktor, der eine Instanz von <xref:System.ArgumentNullException>falsch instanziiert.
 
 [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)]
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs?range=3-6)]
 [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]
 
-Der folgende Code wird der vorherige Verstoß durch den Wechsel der Konstruktorargumente korrigiert.
+Mit dem folgenden Code wird der vorherige Verstoß korrigiert, indem die Konstruktorargumente gewechselt werden.
 
 [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs?range=3-6)]
@@ -81,4 +81,4 @@ Der folgende Code wird der vorherige Verstoß durch den Wechsel der Konstruktora
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1507: Verwenden Sie "nameof" anstelle von Zeichenfolge](ca1507.md)
+- [CA1507: Nameof anstelle der Zeichenfolge verwenden](ca1507.md)

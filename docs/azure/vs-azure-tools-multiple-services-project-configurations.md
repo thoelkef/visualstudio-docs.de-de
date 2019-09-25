@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260651"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253433"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -55,7 +55,7 @@ Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-
 
 ## <a name="settings-page"></a>Seite „Einstellungen“
 
-Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. In der Rolle ausgeführter Code kann die Werte der Konfigurationseinstellungen zur Laufzeit anhand von Klassen lesen, die von der [verwalteten Azure-Bibliothek](http://go.microsoft.com/fwlink?LinkID=171026) bereitgestellt werden, insbesondere die Methode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. Code, der in der Rolle ausgeführt wird, kann die Werte der Konfigurationseinstellungen zur Laufzeit mithilfe von Klassen lesen, die von der [verwalteten Azure-Bibliothek](http://go.microsoft.com/fwlink?LinkID=171026)bereitgestellt werden, insbesondere die [getconfigurationsettingvalue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) -Methode.
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurieren einer Verbindungszeichenfolge für ein Speicherkonto
 

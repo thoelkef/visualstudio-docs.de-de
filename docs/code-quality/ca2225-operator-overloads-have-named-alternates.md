@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546908"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231087"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 
@@ -28,7 +28,7 @@ ms.locfileid: "69546908"
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
@@ -48,9 +48,9 @@ Diese Regel überprüft die in der folgenden Tabelle aufgeführten Operatoren.
 |+=|+=|+=|Hinzufügen|
 |&|und|&|BitwiseAnd|
 |&=|Und =|&=|BitwiseAnd|
-|&#124;|oder|&#124;|BitwiseOr|
+|&#124;|Or|&#124;|BitwiseOr|
 |&#124;=|Oder =|&#124;=|BitwiseOr|
-|--|N/V|--|Dekrement|
+|--|Nicht zutreffend|--|Dekrement|
 |/|/|/|Teilen|
 |/=|/=|/=|Teilen|
 |==|=|==|gleich|
@@ -58,28 +58,28 @@ Diese Regel überprüft die in der folgenden Tabelle aufgeführten Operatoren.
 |^=|XOR =|^=|Xor|
 |>|>|>|Vergleichen|
 |>=|>=|>=|Vergleichen|
-|++|N/V|++|Inkrement|
+|++|Nicht zutreffend|++|Inkrement|
 |<>|!=|gleich|
 |<<|<<|<<|Linke UMSCHALTTASTE|
 |<<=|<<=|<<=|Linke UMSCHALTTASTE|
 |<|<|<|Vergleichen|
 |<=|<=|\<=|Vergleichen|
-|&&|N/V|&&|LogicalAnd|
-|&#124;&#124;|N/V|&#124;&#124;|Logicalor|
-|!|N/V|!|LogicalNot|
+|&&|Nicht zutreffend|&&|LogicalAnd|
+||||Nicht zutreffend||||Logicalor|
+|!|Nicht zutreffend|!|LogicalNot|
 |%|Mod|%|Mod oder Restwert|
-|%=|N/V|%=|Mod|
+|%=|Nicht zutreffend|%=|Mod|
 |* (binär)|*|*|Multiplizieren|
-|*=|N/V|*=|Multiplizieren|
+|*=|Nicht zutreffend|*=|Multiplizieren|
 |~|Not|~|Oneskomplement|
 |>>|>>|>>|Lesefolge wechseln|
-=|N/V|>>=|Lesefolge wechseln|
+=|Nicht zutreffend|>>=|Lesefolge wechseln|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
-|-=|N/V|-=|Subtrahieren|
-|true|IsTrue|N/V|IsTrue (Eigenschaft)|
-|-(unär)|N/V|-|Negation|
-|+ (unär)|N/V|+|ZZ|
-|false|IsFalse|False|IsTrue (Eigenschaft)|
+|-=|Nicht zutreffend|-=|Subtrahieren|
+|true|IsTrue|Nicht zutreffend|IsTrue (Eigenschaft)|
+|-(unär)|Nicht zutreffend|-|Negation|
+|+ (unär)|Nicht zutreffend|+|ZZ|
+|False|IsFalse|False|IsTrue (Eigenschaft)|
 
 N/A = = kann nicht in der ausgewählten Sprache überladen werden.
 

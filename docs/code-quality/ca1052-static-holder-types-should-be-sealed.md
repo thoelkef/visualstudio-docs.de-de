@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547517"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235622"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Statische Halter Typen sollten statisch oder notgeerbt sein.
 

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551714"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Stellen Sie eine Office-Projekt Mappe mithilfe Windows Installer
@@ -49,7 +49,7 @@ Wenn Sie Visual Studio zum Erstellen eines Windows Installers verwenden, können
 
 - [Konfigurieren der abhängigen Komponenten als erforderliche Komponenten](#Configure)
 
-- [Festlegen, wo die Projektmappe auf dem Computer des Benutzers bereitgestellt werden soll](#Location)
+- [Specify where you want to deploy the solution on the user's computer](#Location)
 
 - [Konfigurieren eines VSTO-Add-ins](#ConfigureRegistry)
 
@@ -157,7 +157,7 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
 
 Sie müssen nicht nur die folgenden Komponenten in die Setupanwendung einschließen, sondern auch andere Komponenten, die für die Ausführung der Lösung erforderlich sind.
 
-- Die Version von .NET Framework, die die Office-Projektmappe als Zielversion verwendet.
+- Die Version von .NET Framework, die die Office-Projektmappe als Zielversion verwendet.
 
 - Microsoft Visual Studio 2010-Tools für Office-Laufzeit.
 
@@ -333,7 +333,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 7. Wiederholen Sie diesen Vorgang, um die folgenden Werte zu erstellen.
 
-|Werttyp<br /><br />|Name<br /><br />|
+|Werttyp<br /><br />|name<br /><br />|
 |--------------|--------|
 |Zeichenfolgenwert<br /><br />|**FriendlyName**<br /><br />|
 |DWORD-Wert<br /><br />|**LoadBehavior**<br /><br />|

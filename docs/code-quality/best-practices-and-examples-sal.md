@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919447"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236759"
 ---
 # <a name="best-practices-and-examples-sal"></a>Empfohlene Vorgehensweisen und Beispiele (SAL)
 Im folgenden finden Sie einige Möglichkeiten, die Quell Code Anmerkung (Source Code Annotation Language, SAL) optimal zu nutzen und einige häufige Probleme zu vermeiden.
@@ -238,11 +238,11 @@ In diesem Beispiel besagt `_Out_opt_` , dass der Zeiger im Rahmen der Vorbedingu
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden von Sal-Anmerkungen zum Reduzieren vonC++ C/Code-Fehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-[verstehen von Sal](../code-quality/understanding-sal.md)
-[kommentieren von Funktionsparametern und Rückgabe Werten](../code-quality/annotating-function-parameters-and-return-values.md)
-Hinzufügen von[Anmerkungen zum Funktionsverhalten](../code-quality/annotating-function-behavior.md) 
-Hinzufügen einer [Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)
-[kommentieren von Sperr Verhalten](../code-quality/annotating-locking-behavior.md)
-[angeben, wann und wo eine Anmerkung intrinsische](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-[Funktionen](../code-quality/intrinsic-functions.md) anwendet
+[Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[Einführung in SAL](../code-quality/understanding-sal.md)  
+[Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)  
+[Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)  
+[Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)  
+[Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)  
+[Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[Systeminterne Funktionen](../code-quality/intrinsic-functions.md)  

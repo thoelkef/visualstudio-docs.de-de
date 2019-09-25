@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erste Schritte beim Anpassen des Menübands'
+title: 'Vorgehensweise: Beginnen Sie mit der Anpassung des Menübands'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967897"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255859"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Vorgehensweise: Erste Schritte beim Anpassen des Menübands
-  Fügen Sie zum Anpassen des Menübands einer Microsoft Office-Anwendung eine **Menüband (visueller Designer)** oder **Menüband (XML)** Element, das ein Office-Projekt.
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Vorgehensweise: Beginnen Sie mit der Anpassung des Menübands
+  Fügen Sie einem Office-Projekt ein **Menüband (visueller Designer)** oder ein **Menüband (XML)** -Element hinzu, um das Menüband einer Microsoft Office-Anwendung anzupassen.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-a-ribbon-to-a-project"></a>Hinzufügen eine Multifunktionsleiste zu einem Projekt
+### <a name="to-add-a-ribbon-to-a-project"></a>So fügen Sie einem Projekt ein Menüband hinzu
 
-1. Auf der **Projekt** Menü klicken Sie auf **neues Element hinzufügen**.
+1. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (visueller Designer)** oder **Menüband (XML)**. Weitere Informationen zu diesen Vorlagen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Menüband (visueller Designer)** oder **Menüband (XML)** aus. Weitere Informationen zu diesen Vorlagen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
 
-3. In der **Namen** geben einen Namen für das Element "Menüband".
+3. Geben Sie im Feld **Name** einen Namen für das Menü Band Element ein.
 
-    Dürfen enthalten keine die folgenden Zeichen:
+    Namen dürfen die folgenden Zeichen nicht enthalten:
 
-   - Nummernzeichen (#)
+   - Pfund (#)
 
-   - Prozentzeichen (%)
+   - Prozent (%)
 
-   - Kaufmännisches und-Zeichen (&)
+   - Kaufmännisches und-(&)
 
    - Sternchen (*)
 
@@ -61,17 +61,17 @@ ms.locfileid: "62967897"
 
    - Schrägstrich (/)
 
-   - Führende oder nachfolgende Leerzeichen ("")
+   - Führende oder nachfolgende Leerzeichen (' ')
 
-   - Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) Windows oder DOS reservierte Namen
+   - Namen, die für Windows oder DOS reserviert sind, z. b. ("NUL", "AUX", "con", "COM1", "LPT1" usw.)
 
 4. Klicken Sie auf **OK**.
 
-   Das Element "Menüband" wird im **Projektmappen-Explorer**. Weitere Informationen zu den nächsten Schritten finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
+   Das Menü Band Element wird in **Projektmappen-Explorer**angezeigt. Weitere Informationen zu den nächsten Schritten finden Sie unter Übersicht über das [Menüband](../vsto/ribbon-overview.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Menüband-Designer](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

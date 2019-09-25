@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f924e9530a7ee43ec2222366141c3af6be2efc29
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744701"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233609"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Nicht instanziierte interne Klassen vermeiden.
 
@@ -32,13 +32,13 @@ ms.locfileid: "66744701"
 
 ## <a name="cause"></a>Ursache
 
-Ein interner (auf Assemblyebene) Typ wird nie instanziiert.
+Ein interner Typ (auf Assemblyebene) wird nie instanziiert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel versucht, einen Aufruf eines Konstruktors den Typ zu finden und einen Verstoß gemeldet, wenn kein Aufruf gefunden wird.
+Diese Regel versucht, einen-Konstruktoren des-Typs aufzurufen, und meldet eine Verletzung, wenn kein-Rückruf gefunden wird.
 
-Die folgenden Typen werden nicht durch diese Regel überprüft:
+Die folgenden Typen werden von dieser Regel nicht untersucht:
 
 - Werttypen
 
@@ -48,29 +48,29 @@ Die folgenden Typen werden nicht durch diese Regel überprüft:
 
 - Delegaten
 
-- Compilerfehler ausgegebenen Arraytypen
+- Vom Compiler ausgegebene Array Typen
 
-- Typen, die nicht instanziiert werden und nur definieren [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) Methoden.
+- Typen, die nicht instanziiert werden können und nur [`static`](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared))-Methoden definieren.
 
-Wenn Sie anwenden, die <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> auf die Assembly, die analysiert wird, wird diese Regel nicht als markierten Typen gekennzeichnet [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)), da möglicherweise ein Feld von Friend-Assembly verwendet.
+Wenn Sie das <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> auf die Assembly anwenden, die analysiert wird, kennzeichnet diese Regel keine Typen, die als [`internal`](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) gekennzeichnet sind, da ein Feld möglicherweise von einer Friend-Assembly verwendet wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie Code, der verwendet wird. Wenn der Typ nur enthält `static` Methoden, Hinzufügen eines der folgenden in den Typ aus, um zu verhindern, dass den Compiler einen Standardkonstruktor für die öffentliche Instanz ausgeben:
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie Code hinzu, der ihn verwendet. Wenn der Typ nur `static` Methoden enthält, fügen Sie einen der folgenden Werte zum-Typ hinzu, um zu verhindern, dass der Compiler einen standardmäßigen öffentlichen Instanzkonstruktor ausgibt:
 
-- Die `static` Modifizierer für C# Typen, die auf .NET Framework 2.0 oder höher abzielen.
+- Der `static` -Modifizierer für C# Typen, die .NET Framework 2,0 oder höher als Ziel haben.
 
-- Ein privater Konstruktor für Typen, die .NET Framework-1.0 und 1.1 Versionen.
+- Ein privater Konstruktor für Typen, die .NET Framework die Versionen 1,0 und 1,1 als Ziel haben.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Es wird empfohlen, dass Sie diese Warnung in den folgenden Situationen unterdrücken:
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken. Es wird empfohlen, dass Sie diese Warnung in den folgenden Situationen unterdrücken:
 
-- Die Klasse wird durch für spät gebundene Reflektionsmethoden erstellt, wie z. B. <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Die-Klasse wird durch spät gebundene Reflektionsmethoden wie <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>erstellt.
 
-- Die Klasse wird von der Laufzeit oder ASP.NET automatisch erstellt. Einige Beispiele für automatisch erstellte Klassen sind diejenigen, die implementieren <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> oder <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Die-Klasse wird automatisch von der Runtime oder ASP.NET erstellt. Einige Beispiele für automatisch erstellte Klassen sind solche, die <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> oder <xref:System.Web.IHttpHandler?displayProperty=fullName>implementieren.
 
-- Die Klasse wird übergeben, wie ein Typparameter, die eine [ `new` Einschränkung](/dotnet/csharp/language-reference/keywords/new-constraint). Im folgende Beispiel werden durch Regel CA1812 gekennzeichnet:
+- Die-Klasse wird als Typparameter übergeben, der über [ `new` ](/dotnet/csharp/language-reference/keywords/new-constraint)eine-Einschränkung verfügt. Das folgende Beispiel wird durch die Regel CA1812 gekennzeichnet:
 
     ```csharp
     internal class MyClass

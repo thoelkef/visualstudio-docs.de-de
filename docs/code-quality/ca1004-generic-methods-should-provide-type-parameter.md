@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a09d06a521c4751e3aea78b72b99a8126f4e7ff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f4c5f9c001505a76f19f2d675d552124c611f3d5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923247"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236624"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generische Methoden müssen den Typparameter angeben.
 
@@ -67,4 +67,4 @@ Das folgende Beispiel zeigt die Syntax zum Aufrufen von zwei generischen Methode
 [CA1007: Generika ggf. verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Siehe auch
-[Generika](/dotnet/csharp/programming-guide/generics/index)
+[Generics](/dotnet/csharp/programming-guide/generics/index)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3f5b76015a3a54ee085b5cc2dd532920ff0795
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 06772f8dd91c27834b329293d06cfbc2a7dcfcef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920173"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230756"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Windows Forms-Einstiegspunkte mit STAThread markieren.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920173"
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 Eine Assembly verweist auf <xref:System.Windows.Forms> den Namespace, und der Einstiegspunkt ist nicht mit dem <xref:System.STAThreadAttribute?displayProperty=fullName> -Attribut gekennzeichnet.

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit'
+title: 'Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einem Menüband zur Laufzeit'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,35 +17,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981113"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255336"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einem Menüband zur Laufzeit
 
-In dieser exemplarischen Vorgehensweise veranschaulicht, wie die Menüband-Objektmodells zum Aktualisieren der Steuerelemente auf einem Menüband, nachdem das Menüband in der Office-Anwendung geladen wird.
+Diese exemplarische Vorgehensweise veranschaulicht die Verwendung des Menüband-Objektmodells zum Aktualisieren der Steuerelemente auf einem Menüband, nachdem das Menüband in die Office-Anwendung geladen wurde.
 
 [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-Das Beispiel ruft Daten aus der Beispieldatenbank "Northwind" ab, um ein Kombinationsfeld und ein Menü in Microsoft Office Outlook mit Daten aufzufüllen. Elemente, die Sie automatisch in diesen Steuerelementen auswählen, füllen Felder wie z. B. **zu** und **Betreff** einer e-Mail-Nachricht.
+Das Beispiel ruft Daten aus der Beispieldatenbank "Northwind" ab, um ein Kombinationsfeld und ein Menü in Microsoft Office Outlook mit Daten aufzufüllen. Elemente, die Sie in diesen Steuerelementen auswählen, füllen automatisch Felder wie z. b. und **Betreff** in einer e-Mail-Nachricht **auf** .
 
 In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
 - Erstellen Sie ein neues Outlook VSTO-Add-in-Projekt.
 
-- Entwerfen einer benutzerdefinierten Menübandgruppe.
+- Entwerfen einer benutzerdefinierten Menü Bandgruppe.
 
-- Fügen Sie der benutzerdefinierten Gruppe zu einer integrierten Registerkarte hinzu.
+- Fügen Sie die benutzerdefinierte Gruppe einer integrierten Registerkarte hinzu.
 
 - Aktualisieren Sie die Steuerelemente auf dem Menüband zur Laufzeit.
 
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
@@ -59,17 +59,17 @@ Erstellen Sie zunächst ein neues Outlook VSTO-Add-In-Projekt.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>So erstellen Sie ein neues Outlook VSTO-Add-In-Projekt
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], erstellen Sie ein Outlook VSTO-Add-in-Projekt mit dem Namen **"Ribbon_Update_At_Runtime"**.
+1. Erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Sie in ein Outlook VSTO-Add-in-Projekt mit dem Namen **Ribbon_Update_At_Runtime**.
 
 2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen**aus.
 
 3. Speichern Sie das Projekt im Standardprojektverzeichnis.
 
-     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
 
-## <a name="design-a-custom-ribbon-group"></a>Entwerfen einer benutzerdefinierten Menübandgruppe
+## <a name="design-a-custom-ribbon-group"></a>Entwerfen einer benutzerdefinierten Menü Bandgruppe
 
-Das Menüband in diesem Beispiel wird angezeigt, wenn ein Benutzer eine neue e-Mail-Nachricht verfasst. Um eine benutzerdefinierte Gruppe für die Multifunktionsleiste zu erstellen, ein Menübandelement zunächst Ihrem Projekt hinzufügen, und dann die Gruppe im Menüband-Designer entwerfen. Diese benutzerdefinierte Gruppe können Sie das Generieren von nachverfolgungs-e-Mail-Nachrichten an den Kunden durch Abrufen der Namen und Auftragsverläufe aus einer Datenbank.
+Das Menüband für dieses Beispiel wird angezeigt, wenn ein Benutzer eine neue e-Mail-Nachricht verfasst. Um eine benutzerdefinierte Gruppe für das Menüband zu erstellen, fügen Sie dem Projekt zunächst ein Menü Band Element hinzu, und entwerfen Sie dann die Gruppe im Menüband-Designer. Diese benutzerdefinierte Gruppe unterstützt Sie beim Generieren von e-Mail-Nachrichten an Kunden durch das Abrufen von Namen und Bestell Verläufen aus einer Datenbank.
 
 ### <a name="to-design-a-custom-group"></a>So entwerfen Sie eine benutzerdefinierte Gruppe
 
@@ -77,53 +77,53 @@ Das Menüband in diesem Beispiel wird angezeigt, wenn ein Benutzer eine neue e-M
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Menüband (Visueller Designer)** aus.
 
-3. Ändern Sie den Namen des neuen Menübands in **CustomerRibbon**, und klicken Sie dann auf **hinzufügen**.
+3. Ändern Sie den Namen des neuen Menübands in **CustomerRibbon**, und klicken Sie dann auf **Hinzufügen**.
 
-     Die *CustomerRibbon.cs* oder *CustomerRibbon.vb* im Menüband-Designer wird geöffnet und zeigt eine standardmäßige Registerkarte und Gruppe.
+     Die Datei *CustomerRibbon.cs* oder *CustomerRibbon. vb* wird im Menüband-Designer geöffnet und zeigt eine Standard Registerkarte und-Gruppe an.
 
 4. Klicken Sie auf den Menüband-Designer, um diese auszuwählen.
 
-5. In der **Eigenschaften** Fenster, klicken Sie auf den Dropdownpfeil neben der **RibbonType** -Eigenschaft, und klicken Sie dann auf **Microsoft.Outlook.Mail.Compose**.
+5. Klicken Sie im Fenster **Eigenschaften** auf den Dropdown Pfeil neben der **RibbonType** -Eigenschaft, und klicken Sie dann auf **Microsoft. Outlook. Mail. Compose**.
 
-     Dadurch wird das Menüband angezeigt wird, wenn der Benutzer eine neue e-Mail in Outlook verfasst.
+     Dadurch kann das Menüband angezeigt werden, wenn der Benutzer eine neue e-Mail-Nachricht in Outlook verfasst.
 
-6. Klicken Sie im Menüband-Designer auf **Group1** um es auszuwählen.
+6. Klicken Sie im Menüband-Designer auf **group1** , um es auszuwählen.
 
-7. In der **Eigenschaften** legen **Bezeichnung** zu **Kundenbestellungen**.
+7. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Kunden Käufe**fest.
 
-8. Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie eine **"ComboBox"** auf die **Kundenbestellungen** Gruppe.
+8. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox**ein Kombinations **Feld** auf die Gruppe **Kunden Käufe** .
 
-9. Klicken Sie auf **ComboBox1** um es auszuwählen.
+9. Klicken Sie auf **ComboBox1** , um es auszuwählen.
 
-10. In der **Eigenschaften** legen **Bezeichnung** zu **Kunden**.
+10. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Kunden**fest.
 
-11. Aus der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie eine **Menü** auf die **Kundenbestellungen** Gruppe.
+11. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox**ein **Menü** auf die Gruppe **Kunden Käufe** .
 
-12. In der **Eigenschaften** legen **Bezeichnung** zu **Produkt gekauft**.
+12. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Produkt gekauft**fest.
 
-13. Legen Sie **dynamische** zu **"true"**.
+13. Legen Sie **Dynamic** auf **true**fest.
 
-     Dadurch können Sie zum Hinzufügen und entfernen Steuerelemente im Menü zur Laufzeit aus, nachdem das Menüband in der Office-Anwendung geladen wird.
+     Dies ermöglicht Ihnen das Hinzufügen und Entfernen von Steuerelementen im Menü zur Laufzeit, nachdem das Menüband in die Office-Anwendung geladen wurde.
 
-## <a name="add-the-custom-group-to-a-built-in-tab"></a>Fügen Sie der benutzerdefinierten Gruppe zu einer integrierten Registerkarte hinzu.
+## <a name="add-the-custom-group-to-a-built-in-tab"></a>Hinzufügen der benutzerdefinierten Gruppe zu einer integrierten Registerkarte
 
-Eine integrierte Registerkarte ist eine Registerkarte, die bereits auf dem Menüband einer Outlook Explorer- oder Inspektor ist. In diesem Verfahren fügen Sie die benutzerdefinierte Gruppe einer integrierten Registerkarte hinzu und geben dann die Position der benutzerdefinierten Gruppe auf der Registerkarte an.
+Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem Menüband eines Outlook-Explorers oder Inspektors befindet. In diesem Verfahren fügen Sie die benutzerdefinierte Gruppe einer integrierten Registerkarte hinzu und geben dann die Position der benutzerdefinierten Gruppe auf der Registerkarte an.
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>So fügen Sie die benutzerdefinierte Gruppe einer integrierten Registerkarte hinzu
 
-1. Klicken Sie auf die **TabAddins (integriert)** Tab, um es auszuwählen.
+1. Klicken Sie auf die Registerkarte **TabAddins (integriert)** , um Sie auszuwählen.
 
-2. In der **Eigenschaften** Fenster, erweitern Sie die **ControlId** -Eigenschaft, und legen **OfficeId** zu **"TabNewMailMessage" fest**.
+2. Erweitern Sie im Fenster **Eigenschaften** die Eigenschaft **ControlID** , und legen Sie **OfficeId** auf **TabNewMailMessage**fest.
 
-     Dadurch wird die **Kundenbestellungen** Gruppe der **Nachrichten** Registerkarte des Menübands, die in einer neuen e-Mail-Nachricht angezeigt wird.
+     Dadurch wird die Gruppe " **Kunden Käufe** " der Registerkarte **Nachrichten** des Menübands hinzugefügt, das in einer neuen e-Mail angezeigt wird.
 
-3. Klicken Sie auf die **Kundenbestellungen** Gruppe, um es auszuwählen.
+3. Klicken Sie auf die Gruppe **Kunden Käufe** , um Sie auszuwählen.
 
-4. In der **Eigenschaften** Fenster, erweitern Sie die **Position** -Eigenschaft, klicken Sie auf den Dropdownpfeil neben der **PositionType** -Eigenschaft, und klicken Sie dann auf  **BeforeOfficeId**.
+4. Erweitern Sie im Fenster **Eigenschaften** die Eigenschaft **Position** , klicken Sie auf den Dropdown Pfeil neben der Eigenschaft **PositionType** , und klicken Sie dann auf **BeforeOfficeId**.
 
-5. Legen Sie die **OfficeId** Eigenschaft **"GroupClipboard" fest**.
+5. Legen Sie die **OfficeId-** Eigenschaft auf **GroupClipBoard**fest.
 
-     Dies positioniert die **Kundenbestellungen** vor der Gruppe der **Zwischenablage** Gruppe der **Nachrichten** Registerkarte.
+     Dadurch wird die Gruppe **Kunden Käufe** vor der Gruppe **Zwischenablage** auf der Registerkarte **Nachrichten** positioniert.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
 
@@ -133,53 +133,53 @@ Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset 
 
 1. Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.
 
-     Dies startet den **Assistenten zur Datenquellenkonfiguration**.
+     Dadurch wird der **Assistent zum Konfigurieren von Datenquellen**gestartet.
 
-2. Wählen Sie **Datenbank**, und klicken Sie dann auf **Weiter**.
+2. Wählen Sie **Datenbank**aus, und klicken Sie dann auf **weiter**.
 
-3. Wählen Sie **Dataset**, und klicken Sie dann auf **Weiter**.
+3. Wählen Sie **DataSet**aus, und klicken Sie dann auf **weiter**.
 
-4. Wählen Sie eine Datenverbindung zur Northwind-Beispieldatenbank Microsoft SQL Server Compact 4.0, oder fügen Sie eine neue Verbindung mit der **neue Verbindung** Schaltfläche.
+4. Wählen Sie eine Datenverbindung mit der Beispieldatenbank Northwind Microsoft SQL Server Compact 4,0 aus, oder fügen Sie mithilfe der Schaltfläche **neue Verbindung** eine neue Verbindung hinzu.
 
-5. Nachdem eine Verbindung ausgewählt oder erstellt wurde, klicken Sie auf **Weiter**.
+5. Nachdem eine Verbindung ausgewählt oder erstellt wurde, klicken Sie auf **weiter**.
 
-6. Klicken Sie auf **Weiter** um die Verbindungszeichenfolge zu speichern.
+6. Klicken Sie zum Speichern der Verbindungs Zeichenfolge auf **weiter** .
 
-7. Auf der **Datenbankobjekte auswählen** Seite **Tabellen**.
+7. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.
 
 8. Aktivieren Sie das Kontrollkästchen neben jeder der folgenden Tabellen:
 
-    1. **Kunden**
+    1. **Folgend**
 
-    2. **Auftragsdetails**
+    2. **Bestell Details**
 
-    3. **Aufträge**
+    3. **Vergabe**
 
-    4. **Produkte**
+    4. **Rodu**
 
 9. Klicken Sie auf **Fertig stellen**.
 
-## <a name="update-controls-in-the-custom-group-at-runtime"></a>Aktualisieren der Steuerelemente in der benutzerdefinierten Gruppe zur Laufzeit
+## <a name="update-controls-in-the-custom-group-at-run-time"></a>Aktualisieren von Steuerelementen in der benutzerdefinierten Gruppe zur Laufzeit
 
 Verwenden Sie Menüband-Objektmodell, um die folgenden Aufgaben auszuführen:
 
-- Hinzufügen von Kundennamen, die **Kunden** im Kombinationsfeld.
+- Fügen Sie Kundennamen zum Kombinations Feld **Customers** hinzu.
 
-- Hinzufügen von Menüs und Schaltflächen-Steuerelemente, die **gekaufte Produkte** Menü, das Darstellen von Bestellungen und Produkte verkauft.
+- Fügen Sie dem Menü **erworbene Produkte** Menü-und Schaltflächen-Steuerelemente hinzu, die Verkaufsaufträge und verkaufte Produkte darstellen.
 
-- Füllen Sie die für Betreff und Text Felder neuer e-Mail-Nachrichten mit Daten aus der **Kunden** im Kombinationsfeld und **gekaufte Produkte** Menü.
+- Füllen Sie die Felder "an", "Betreff" und "Text" für neue e-Mail-Nachrichten mit Daten aus dem Kombinations Feld " **Customers** " und dem **erworbenen Produkt**
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>So aktualisieren Sie Steuerelemente in der benutzerdefinierten Gruppe mithilfe des Menüband-Objektmodells
 
 1. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
 
-2. In der **Verweis hinzufügen** Dialogfeld klicken Sie auf die **.NET** Registerkarte die **System.Data.Linq** Assembly, und klicken Sie dann auf **OK**.
+2. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **.net** , wählen Sie die Assembly **System. Data. Linq** aus, und klicken Sie dann auf **OK**.
 
     Diese Assembly enthält Klassen für die Verwendung von LINQ (Language-Integrated Queries). Sie verwenden LINQ zum Auffüllen der Steuerelemente in der benutzerdefinierten Gruppe mit Daten aus der Datenbank "Northwind".
 
-3. In **Projektmappen-Explorer**, klicken Sie auf **CustomerRibbon.cs** oder **CustomerRibbon.vb** um es auszuwählen.
+3. Klicken Sie in **Projektmappen-Explorer**auf **CustomerRibbon.cs** oder **CustomerRibbon. vb** , um es auszuwählen.
 
-4. Auf der **Ansicht** Menü klicken Sie auf **Code**.
+4. Klicken Sie im Menü **Ansicht** auf **Code**.
 
     Die Menüband-Codedatei wird im Code-Editor geöffnet.
 
@@ -188,28 +188,28 @@ Verwenden Sie Menüband-Objektmodell, um die folgenden Aufgaben auszuführen:
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
 
-6. Fügen Sie den folgenden Code innerhalb der `CustomerRibbon` Klasse. Dieser Code deklariert die Datentabelle und die Tabellenadapter, die Sie zum Speichern von Informationen aus den Kunden-, Bestellungen-, Bestelldetails- und Produkttabellen der Datenbank "Northwind" verwenden.
+6. Fügen Sie in der `CustomerRibbon` -Klasse den folgenden Code hinzu. Dieser Code deklariert die Datentabelle und die Tabellenadapter, die Sie zum Speichern von Informationen aus den Kunden-, Bestellungen-, Bestelldetails- und Produkttabellen der Datenbank "Northwind" verwenden.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
 
-7. Fügen Sie der Klasse `CustomerRibbon` den folgenden Codeblock hinzu. Dieser Code fügt drei Hilfsmethoden, die Steuerelemente für die Multifunktionsleiste zur Laufzeit zu erstellen.
+7. Fügen Sie der Klasse `CustomerRibbon` den folgenden Codeblock hinzu. Mit diesem Code werden drei Hilfsmethoden hinzugefügt, die zur Laufzeit Steuerelemente für das Menüband erstellen.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]
 
 8. Ersetzen Sie die `CustomerRibbon_Load`-Ereignishandlermethode durch den folgenden Code. Dieser Code verwendet eine LINQ-Abfrage, um die folgenden Aufgaben auszuführen:
 
-   - Füllen Sie die **Kunden** Kombinationsfeld, indem Sie mit dem-ID und die Namen von 20 Kunden in der Northwind-Datenbank.
+   - Füllen Sie das Kombinations Feld **Customers** mit der ID und dem Namen von 20 Kunden in der Northwind-Datenbank.
 
-   - Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert die **ProductsPurchased** Menü mit Bestellnummern, die den zurzeit ausgewählten Kunden betreffen.
+   - Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert das **productspurgejagt** -Menü mit Bestellnummern, die sich auf den aktuell ausgewählten Kunden beziehen.
 
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
 
 9. Fügen Sie der `CustomerRibbon` -Klasse folgenden Code hinzu. Dieser Code verwendet LINQ-Abfragen, um die folgenden Aufgaben auszuführen:
 
-   - Hinzufügen eines Untermenüs zum die **ProductsPurchased** Menü für jeden Kaufauftrag im Zusammenhang mit dem ausgewählten Kunden.
+   - Fügt dem Menü **productspurgejagt** für jeden Verkaufsauftrag, der sich auf den ausgewählten Kunden bezieht, ein Untermenü hinzu.
 
    - Hinzufügen von Schaltflächen zu jedem Untermenü für die Produkte, die sich auf die Bestellung beziehen.
 
@@ -218,70 +218,70 @@ Verwenden Sie Menüband-Objektmodell, um die folgenden Aufgaben auszuführen:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
 
-10. In **Projektmappen-Explorer**, doppelklicken Sie auf dem Menüband-Codedatei.
+10. Doppelklicken Sie in **Projektmappen-Explorer**auf die Menüband-Codedatei.
 
      Der Menüband-Designer wird geöffnet.
 
-11. Doppelklicken Sie im Menüband-Designer auf die **Kunden** im Kombinationsfeld.
+11. Doppelklicken Sie im Menüband-Designer auf das Kombinations Feld **Kunden** .
 
      Die Menüband-Codedatei wird im Code-Editor geöffnet, und der `ComboBox1_TextChanged`-Ereignishandler wird angezeigt.
 
 12. Ersetzen Sie den `ComboBox1_TextChanged` -Ereignishandler durch den folgenden Code. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
-    - Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert die **gekaufte Produkte** Menü mit Bestellungen, die den ausgewählten Kunden betreffen.
+    - Aufrufen der Hilfsmethode `PopulateSalesOrderInfo`. Diese Methode aktualisiert das Menü " **Produkte gekauft** " mit Verkaufsaufträgen, die sich auf den ausgewählten Kunden beziehen.
 
-    - Aufrufen der Hilfsmethode `PopulateMailItem` und Übergeben des aktuellen Texts, der den Namen des ausgewählten Kunden darstellt. Diese Methode füllt, das für Betreff und Text Felder neuer e-Mail-Nachrichten.
+    - Aufrufen der Hilfsmethode `PopulateMailItem` und Übergeben des aktuellen Texts, der den Namen des ausgewählten Kunden darstellt. Diese Methode füllt die Felder "an", "Betreff" und "Text" neuer e-Mail-Nachrichten.
 
       [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
       [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]
 
-13. Fügen Sie der `Click` -Klasse den folgenden `CustomerRibbon` -Ereignishandler hinzu. Dieser Code fügt den Namen ausgewählter Produkte dem Feld "Text" Neuer e-Mail-Nachrichten.
+13. Fügen Sie der `Click` -Klasse den folgenden `CustomerRibbon` -Ereignishandler hinzu. Mit diesem Code wird der Name ausgewählter Produkte dem Feld Text der neuen e-Mail-Nachrichten hinzugefügt.
 
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
 14. Fügen Sie der `CustomerRibbon` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
-    - Füllt die neue e-Mail-Nachrichten an-Zeile mit der e-Mail-Adresse des aktuell ausgewählten Kunden.
+    - Füllt die Zeile neuer e-Mail-Nachrichten mithilfe der e-Mail-Adresse des aktuell ausgewählten Kunden auf.
 
-    - Fügt Text an den Betreff und Text neuer e-Mail-Nachrichten.
+    - Fügt Text zu den Feldern Betreff und Text der neuen e-Mail-Nachrichten hinzu.
 
       [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
       [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]
 
-## <a name="test-the-controls-in-the-custom-group"></a>Testen Sie die Steuerelemente in der benutzerdefinierten Gruppe
+## <a name="test-the-controls-in-the-custom-group"></a>Testen der Steuerelemente in der benutzerdefinierten Gruppe
 
-Wenn Sie ein neues e-Mail-Formular in Outlook öffnen, eine benutzerdefinierte Gruppe mit dem Namen **Kundenbestellungen** angezeigt wird, auf die **Nachrichten** Registerkarte des Menübands.
+Wenn Sie ein neues e-Mail-Formular in Outlook öffnen, wird eine benutzerdefinierte Gruppe mit dem Namen **Kunden Käufe** auf der Registerkarte **Nachrichten** des Menübands angezeigt.
 
-Erstellen Sie eine Kunden-nachverfolgungs-e-Mail-Nachricht, einen Kunden auswählen, und wählen Sie dann auf vom Kunden erworbenen Produkte. Die Steuerelemente in der **Kundenbestellungen** Gruppe zur Laufzeit mit Daten aus der Northwind-Datenbank aktualisiert werden.
+Wählen Sie zum Erstellen einer e-Mail-nach Verfolgungs Nachricht einen Kunden aus, und wählen Sie dann die vom Kunden erworbenen Produkte aus. Die Steuerelemente in der Gruppe **Kunden Käufe** werden zur Laufzeit mit Daten aus der Northwind-Datenbank aktualisiert.
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>So testen Sie die Steuerelemente in der benutzerdefinierten Gruppe
 
-1. Drücken Sie **F5** um Ihr Projekt auszuführen.
+1. Drücken Sie **F5** , um das Projekt auszuführen.
 
      Outlook wird gestartet.
 
-2. In Outlook auf der **Datei** Startmenü **neu**, und klicken Sie dann auf **e-Mail-Nachricht**.
+2. Zeigen Sie in Outlook im Menü **Datei** auf **neu**, und klicken Sie dann auf e- **Mail-Nachricht**.
 
      Die folgenden Aktionen werden ausgeführt:
 
     - Eine neues Inspektor-Fenster für E-Mail-Nachrichten wird angezeigt.
 
-    - Auf der **Nachricht** Registerkarte des Menübands die **Kundenbestellungen** Gruppe angezeigt wird, bevor Sie die **Zwischenablage** Gruppe.
+    - Auf der Registerkarte **Nachricht** des Menübands wird die Gruppe **Kunden Käufe** vor der Gruppe **Zwischenablage** angezeigt.
 
-    - Die **Kunden** Kombinationsfeld, in der Gruppe wird mit den Namen der Kunden in der Northwind-Datenbank aktualisiert.
+    - Das Kombinations Feld **Customers** in der Gruppe wird mit den Namen der Kunden in der Northwind-Datenbank aktualisiert.
 
-3. Auf der **Nachricht** Registerkarte des Menübands in die **Kundenbestellungen** gruppieren, wählen Sie einen Kunden aus der **Kunden** im Kombinationsfeld.
+3. Wählen Sie auf der Registerkarte **Nachricht** des Menübands in der Gruppe **Kunden Käufe** einen Kunden aus dem Kombinations Feld **Kunden** aus.
 
      Die folgenden Aktionen werden ausgeführt:
 
-    - Die **gekaufte Produkte** Menü wird aktualisiert, um jeder Auftrag für den ausgewählten Kunden angezeigt.
+    - Das Menü " **erworbene Produkte** " wird aktualisiert und zeigt jeden Verkaufsauftrag für den ausgewählten Kunden an.
 
     - Jedes Bestellungsuntermenü wird so aktualisiert, dass die in der betreffenden Bestellung gekauften Produkte angezeigt werden.
 
-    - Des ausgewählten Kunden-e-Mail-Adresse hinzugefügt, die **zu** Zeile die e-Mail-Nachricht, und der Betreff und Text der e-Mail-Nachricht werden mit Text aufgefüllt.
+    - Die e-Mail-Adresse des ausgewählten Kunden wird der Zeile **an** der e-Mail-Nachricht hinzugefügt, und der Betreff und der Textkörper der e-Mail-Nachricht werden mit Text aufgefüllt.
 
-4. Klicken Sie auf die **Products Purchases** Menü, zeigen Sie auf eine beliebige Bestellung, und klicken Sie dann auf ein Produkt aus der Bestellung.
+4. Klicken Sie auf das Menü **Produkte Einkäufe** , zeigen Sie auf einen beliebigen Verkaufsauftrag, und klicken Sie dann auf ein Produkt aus der Bestellung.
 
      Der Produktname wird dem Nachrichtentext der E-Mail-Nachricht hinzugefügt.
 
@@ -289,24 +289,24 @@ Erstellen Sie eine Kunden-nachverfolgungs-e-Mail-Nachricht, einen Kunden auswäh
 
 Weitere Informationen zum Anpassen der Office-Benutzeroberfläche finden Sie in diesen Themen:
 
-- Fügen Sie jeder Anpassung auf Dokumentebene kontextbasierte Benutzeroberfläche hinzu. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).
+- Fügen Sie jeder Anpassung auf Dokumentebene kontextbasierte Benutzeroberfläche hinzu. Weitere Informationen finden Sie unter [Übersicht über den Aktions](../vsto/actions-pane-overview.md)Bereich.
 
-- Erweitern Sie ein standardmäßiges oder benutzerdefiniertes Microsoft Office Outlook-Formular. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Entwerfen ein Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Erweitern Sie ein standardmäßiges oder benutzerdefiniertes Microsoft Office Outlook-Formular. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular](../vsto/walkthrough-designing-an-outlook-form-region.md)Bereichs.
 
-- Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu Outlook. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).
+- Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu Outlook. Weitere Informationen finden Sie unter [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Übersicht über das Menüband](../vsto/ribbon-overview.md)
+- [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)
-- [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Vorgehensweise: Beginnen Sie mit der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Menüband-Designer](../vsto/ribbon-designer.md)
-- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Übersicht über das Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md)
+- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Übersicht über das Ribbon-Objektmodell](../vsto/ribbon-object-model-overview.md)
 - [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Vorgehensweise: Ändern der Position einer Registerkarte des Menübands](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Vorgehensweise: Ändern der Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)
 - [Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Vorgehensweise: Exportieren eines Menübands vom Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Vorgehensweise: Add-In-Benutzeroberflächenfehler anzeigen](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Vorgehensweise: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Vorgehensweise: Add-in-Benutzeroberflächen Fehler anzeigen](../vsto/how-to-show-add-in-user-interface-errors.md)

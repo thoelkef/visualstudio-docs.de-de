@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2643ff7cb8ce401462be7e5c1e52d5f985896f3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546270"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234326"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden.
 
@@ -36,28 +36,28 @@ Eine Ressourcenzeichenfolge enthält mindestens ein Wort, das von der Rechtschre
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel analysiert die Ressourcenzeichenfolge in Wörter, die (mit Token versehen zusammengesetzte Wörter) und überprüft die Rechtschreibung eines einzelnen Worts/Tokens. Informationen zu den Analysealgorithmus, finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Diese Regel analysiert die Ressourcen Zeichenfolge in Wörter (tokenarisierung von zusammengesetzten Wörtern) und überprüft die Schreibweise der einzelnen Wörter/Token. Weitere Informationen zum-Algorithmus finden [Sie unter CA1704: Bezeichner sollten korrekt](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)geschrieben werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie vollständige Wörtern, die richtig geschrieben sind, oder fügen die Wörter zu einem Benutzerwörterbuch. Weitere Informationen zur Verwendung von benutzerdefinierten Wörterbüchern finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie komplette Wörter, die richtig geschrieben sind, oder fügen Sie einem benutzerdefinierten Wörterbuch die Wörter hinzu. Weitere Informationen zum Verwenden von benutzerdefinierten Wörterbüchern finden [Sie unter CA1704: Bezeichner sollten korrekt](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)geschrieben werden.
 
-## <a name="change-the-dictionary-language"></a>Ändern Sie die Wörterbuchsprache
+## <a name="change-the-dictionary-language"></a>Ändern der Wörterbuch Sprache
 
-Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Wenn Sie die Sprache der Rechtschreibprüfung ändern möchten, erreichen Sie daher durch das Hinzufügen eines der folgenden Attribute auf Ihre *"AssemblyInfo.cs"* oder *AssemblyInfo.vb* Datei:
+Standardmäßig wird die englische Version (en) der Rechtschreibprüfung verwendet. Wenn Sie die Sprache der Rechtschreibprüfung ändern möchten, können Sie dies durch Hinzufügen eines der folgenden Attribute zu Ihrer *AssemblyInfo.cs* -oder *AssemblyInfo. vb* -Datei erreichen:
 
-- Verwendung <xref:System.Reflection.AssemblyCultureAttribute> die Kultur angeben, wenn Ihre Ressourcen in einer Satellitenassembly befinden.
-- Verwendung <xref:System.Resources.NeutralResourcesLanguageAttribute> an die *neutrale Kultur* Ihrer Assembly, wenn Ihre Ressourcen in der gleichen Assembly wie Ihren Code sind.
+- Verwenden <xref:System.Reflection.AssemblyCultureAttribute> Sie, um die Kultur anzugeben, wenn sich Ihre Ressourcen in einer Satellitenassembly befinden.
+- Verwenden <xref:System.Resources.NeutralResourcesLanguageAttribute> Sie, um die *neutrale Kultur* der Assembly anzugeben, wenn sich Ihre Ressourcen in derselben Assembly wie Ihr Code befinden.
 
 > [!IMPORTANT]
-> Wenn Sie die Kultur auf etwas anderes als eine Kultur auf Englisch basierenden festlegen, ist diese Codeanalyse-Regelsätze im Hintergrund deaktiviert.
+> Wenn Sie die Kultur auf eine andere Kultur als Englisch festlegen, wird diese Code Analyse Regel im Hintergrund deaktiviert.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel. Ordnungsgemäß verringern geschriebene Wörter Zeitspanne, die für neue Softwarebibliotheken erforderlich ist.
+Unterdrücken Sie keine Warnung dieser Regel. Korrekt geschriebene Wörter verkürzen die Zeit, die erforderlich ist, um neue Software Bibliotheken zu erlernen.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1701: Zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter sollten korrekt geschrieben werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204: Literale sollten korrekt geschrieben werden.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46cb99f00bbbd9969899121f82ba591980b5b288
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796739"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231917"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Felder mit kritischen Typen sollten sicherheitskritisch sein.
 
@@ -26,7 +26,7 @@ ms.locfileid: "62796739"
 
 ## <a name="cause"></a>Ursache
 
-Ein sicherheitstransparentes Feld oder ein sicherungskritisches Feld wird deklariert. Sein Typ wird als sicherheitskritisch angegeben. Zum Beispiel:
+Ein sicherheitstransparentes Feld oder ein sicherungskritisches Feld wird deklariert. Sein Typ wird als sicherheitskritisch angegeben. Beispiel:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -48,7 +48,7 @@ Um sicherheitskritische Typen zu verwenden, muss der Code, der auf den Typ verwe
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, markieren Sie das Feld mit der <xref:System.Security.SecurityCriticalAttribute> Attribut, oder ändern Sie den Typ, der auf die verwiesen wird durch das Feld entweder Sicherheit sicherheitstransparent oder Kritisch.
+Um einen Verstoß gegen diese Regel zu beheben, markieren Sie das Feld <xref:System.Security.SecurityCriticalAttribute> mit dem-Attribut, oder machen Sie den Typ, auf den das Feld verweist, entweder Sicherheits transparent oder sicher kritisch.
 
 ```csharp
 // Fix 1: Make the referencing field security critical
@@ -75,7 +75,7 @@ Um einen Verstoß gegen diese Regel zu beheben, markieren Sie das Feld mit der <
    }
 ```
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437443"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255509"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Anpassen eines Menübands für InfoPath
   Beim Anpassen des Menübands in Microsoft Office InfoPath müssen Sie berücksichtigen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] kann das Menüband in den folgenden drei Typen von InfoPath-Anwendungsfenstern anzeigen:
@@ -29,7 +29,7 @@ ms.locfileid: "63437443"
 
 - Im Seitenansichtsfenster.
 
-  **Gilt für:** Die Informationen in diesem Thema betreffen VSTO-Add-in-Projekte für InfoPath 2010. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekt Typ](../vsto/features-available-by-office-application-and-project-type.md).
+  **Gilt für:** Die Informationen in diesem Thema betreffen VSTO-Add-in-Projekte für InfoPath 2010. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).
 
   Benutzer und Designer öffnen eine Formularvorlage im Entwurfsmodus, um die Darstellung und das Layout der Vorlage zu ändern. Benutzer öffnen Formulare, die auf einer Formularvorlage basieren, um Inhalte hinzuzufügen.
 
@@ -40,8 +40,8 @@ ms.locfileid: "63437443"
 
  Sie müssen den Menübandtyp jedes Fensters angeben, in denen das Menüband angezeigt werden soll.
 
-## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Angeben des Menübandtyps im Menüband-designer
- Bei Verwendung der **Menüband (visueller Designer)** Element, klicken Sie auf die **RibbonType** -Eigenschaft des Menübands in die **Eigenschaften** Fenster, und wählen Sie dann eine Menüband-IDs in der folgenden Tabelle beschrieben.
+## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Angeben des Menü Band Typs im Menüband-Designer
+ Wenn Sie das Element **Menüband (visueller Designer)** verwenden, klicken Sie auf die **RibbonType** -Eigenschaft des Menübands im Fenster **Eigenschaften** , und wählen Sie dann eine der in der folgenden Tabelle beschriebenen Menüband-IDs aus.
 
 |Menüband-ID|Fenster, in dem das Menüband angezeigt wird, wenn Sie das Projekt ausführen|
 |---------------|---------------------------------------------------------------------|
@@ -51,7 +51,7 @@ ms.locfileid: "63437443"
 
  Sie können einem Projekt mehrere Menübänder hinzufügen. Wenn sich mehrere Menübänder eine Menüband-ID teilen, überschreiben Sie die `CreateRibbonExtensibilityObject` -Methode in der `ThisAddin` -Klasse des Projekts, um anzugeben, welches Menüband zur Laufzeit ausgeführt werden soll. Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
 
-## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Angeben des Menübandtyps mithilfe des Menüband-XML
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Angeben des Menü Band Typs mithilfe von Menüband-XML
  Bei Verwendung des Elements **Menüband (XML)** überprüfen Sie den Wert des *ribbonID* -Parameters in der <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> -Methode, und geben Sie das entsprechende Menüband zurück.
 
  Die <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> -Methode wird automatisch von Visual Studio in der Menüband-Codedatei generiert. Der *ribbonID* -Parameter ist eine Zeichenfolge, die den Typ des InfoPath-Fensters identifiziert, das geöffnet wird, angibt.
@@ -62,7 +62,7 @@ ms.locfileid: "63437443"
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Übersicht über das Menüband](../vsto/ribbon-overview.md)
-- [Menüband-designer](../vsto/ribbon-designer.md)
+- [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Übersicht über Menüband](../vsto/ribbon-overview.md)
+- [Menüband-Designer](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

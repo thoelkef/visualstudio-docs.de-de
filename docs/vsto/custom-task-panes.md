@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926718"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254397"
 ---
 # <a name="custom-task-panes"></a>Benutzerdefinierte Aufgabenbereiche
   Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Funktionen Ihrer Projektmappe zur Verfügung stellen. Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.
@@ -59,7 +59,7 @@ ms.locfileid: "68926718"
    Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)einer Anwendung.
 
 ### <a name="create-the-user-interface"></a>Erstellen der Benutzeroberfläche
- Alle benutzerdefinierten Aufgabenbereiche, die mit den Office-Entwicklungstools in Visual Studio erstellt werden, enthalten ein <xref:System.Windows.Forms.UserControl>-Objekt. Dieses Benutzersteuerelement stellt die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs bereit. Sie können das Benutzer Steuerelement zur Entwurfszeit oder zur Laufzeit erstellen. Wenn Sie das Benutzersteuerelement zur Entwurfszeit erstellen, können Sie die Benutzeroberfläche des Aufgabenbereichs mit dem Windows Forms-Designer entwerfen.
+ Alle benutzerdefinierten Aufgabenbereiche, die mit den Office-Entwicklungstools in Visual Studio erstellt werden, enthalten ein <xref:System.Windows.Forms.UserControl>-Objekt. Dieses Benutzersteuerelement stellt die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs bereit. Sie können das Benutzersteuerelement zur Entwurfszeit oder zur Laufzeit erstellen. Wenn Sie das Benutzersteuerelement zur Entwurfszeit erstellen, können Sie die Benutzeroberfläche des Aufgabenbereichs mit dem Windows Forms-Designer entwerfen.
 
 ### <a name="instantiate-the-custom-task-pane"></a>Instanziieren des benutzerdefinierten Aufgabenbereichs
  Nachdem Sie ein Benutzersteuerelement erstellt haben, das die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs enthält, müssen Sie <xref:Microsoft.Office.Tools.CustomTaskPane> instanziieren. Übergeben Sie hierfür das Benutzersteuerelement an <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> im VSTO-Add-In, indem Sie eine der <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>-Methoden aufrufen. Diese Auflistung wird als `CustomTaskPanes`-Feld der `ThisAddIn`-Klasse verfügbar gemacht. Das folgende Codebeispiel sollte von der `ThisAddIn`-Klasse ausgeführt werden.

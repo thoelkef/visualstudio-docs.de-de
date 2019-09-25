@@ -14,43 +14,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82146c2ac997a0202c20e15492becb89a293f427
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6763fd9f8999bd590511026f6571db6a747c43bc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541922"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231856"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.
 
 |||
 |-|-|
-|TypeName|LiteralsShouldBeSpelledCorrectly|
+|TypeName|Literalsdbespelledrichtig|
 |CheckId|CA2204|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Eine Literalzeichenfolge als Argument für einen lokalisierbaren Parameter oder einer lokalisierbaren Eigenschaft übergeben wird, und die Zeichenfolge enthält eine oder mehrere Wörter, die von der Rechtschreibprüfung aus der Microsoft-Bibliothek nicht erkannt werden.
+Eine Literalzeichenfolge wird als Argument für einen lokalisierbaren Parameter oder an eine lokalisierbare Eigenschaft übergeben, und die Zeichenfolge enthält mindestens ein Wort, das von der Bibliothek der Microsoft-Rechtschreibprüfung nicht erkannt wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel prüft eine Literalzeichenfolge, die als Wert übergeben wird, auf einen Parameter oder eine Eigenschaft, wenn eine oder mehrere der folgenden Fälle zutreffen:
+Diese Regel überprüft eine Literalzeichenfolge, die als Wert an einen Parameter oder eine Eigenschaft übergeben wird, wenn mindestens einer der folgenden Fälle zutrifft:
 
-- Die <xref:System.ComponentModel.LocalizableAttribute> Attribut des Parameters oder der Eigenschaft wird festgelegt auf "true".
+- Das <xref:System.ComponentModel.LocalizableAttribute> -Attribut des-Parameters oder der-Eigenschaft ist auf true festgelegt.
 
-- Der Parameter oder die Eigenschaft Name enthält "Text", "Message" oder "Beschriftung".
+- Der Parameter-oder Eigenschaftsname enthält "Text", "Message" oder "Caption".
 
-- Der Name des String-Variable, die an eine <xref:System.Console.Write%2A> oder <xref:System.Console.WriteLine> Methode ist "Value" oder "format".
+- Der Name der Zeichen folgen Variablen, die an eine <xref:System.Console.Write%2A> -oder <xref:System.Console.WriteLine> -Methode übermittelt wird, ist entweder "Value" oder "Format".
 
-Diese Regel analysiert die Literalzeichenfolge in Wörter, die mit Token versehen zusammengesetzte Wörter und überprüft die Rechtschreibung jedes Wort oder Token. Informationen zu den Analysealgorithmus, finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Diese Regel analysiert die Literalzeichenfolge in Wörter, fasst zusammengesetzte Wörter um und überprüft die Schreibweise der einzelnen Wörter oder Token. Weitere Informationen zum-Algorithmus finden [Sie unter CA1704: Bezeichner sollten korrekt](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)geschrieben werden.
 
 ## <a name="language"></a>Sprache
 
-Die Rechtschreibprüfung überprüft, zurzeit nur für die Kultur auf Englisch basierenden Wörterbücher. Sie können die Kultur des Projekts in der Projektdatei ändern, durch das Hinzufügen der **CodeAnalysisCulture** Element.
+Die Rechtschreibprüfung prüft zurzeit nur auf englischsprachige Kultur Wörterbücher. Sie können die Kultur des Projekts in der Projektdatei ändern, indem Sie das Element " **codeanalysiscculture** " hinzufügen.
 
-Zum Beispiel:
+Beispiel:
 
 ```xml
 <Project ...>
@@ -59,17 +59,17 @@ Zum Beispiel:
 ```
 
 > [!IMPORTANT]
-> Wenn Sie die Kultur auf etwas anderes als eine Kultur auf Englisch basierenden festlegen, ist diese Codeanalyse-Regelsätze im Hintergrund deaktiviert.
+> Wenn Sie die Kultur auf eine andere Kultur als Englisch festlegen, wird diese Code Analyse Regel im Hintergrund deaktiviert.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie es zu einem Benutzerwörterbuch. Weitere Informationen zur Verwendung von benutzerdefinierten Wörterbüchern finden Sie unter [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort einem benutzerdefinierten Wörterbuch hinzu. Weitere Informationen zum Verwenden von benutzerdefinierten Wörterbüchern finden [Sie unter Gewusst wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel. Ordnungsgemäß zu geschriebene Wörter der Lernaufwand für neue Softwarebibliotheken reduzieren.
+Unterdrücken Sie keine Warnung dieser Regel. Korrekt geschriebene Wörter reduzieren die für neue Software Bibliotheken erforderliche Lernkurve.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1704: Bezeichner sollten korrekt geschrieben werden.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1703: Ressourcen Zeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

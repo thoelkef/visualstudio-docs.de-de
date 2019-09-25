@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546019"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233853"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Typnamen sollten nicht mit Namespaces übereinstimmen.
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Typnamen sollten nicht mit Namespaces identisch sein.
 
 |||
 |-|-|
@@ -32,16 +32,16 @@ ms.locfileid: "62546019"
 
 ## <a name="cause"></a>Ursache
 
-Ein Typname mit einem referenzierten Namespace-Namen, die mindestens eine extern sichtbare Typen übereinstimmt. Der Vergleich wird die Groß-/Kleinschreibung.
+Ein Typname stimmt mit einem Namespace Namen überein, auf den verwiesen wird, der einen oder mehrere extern sichtbare Typen aufweist. Beim Namensvergleich wird keine Groß-/Kleinschreibung beachtet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Benutzererstellte Typnamen sollten nicht die Namen der referenzierten Namespaces überein, die extern sichtbare Typen aufweisen. Verstoß gegen diese Regel kann die Verwendbarkeit der Bibliothek reduzieren.
+Vom Benutzer erstellte Typnamen sollten nicht mit den Namen von Namespaces, auf die verwiesen wird, mit extern sichtbaren Typen verglichen werden. Durch das verletzen dieser Regel kann die Benutzerfreundlichkeit der Bibliothek reduziert werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Benennen Sie den Typ, den Namen eines referenzierten Namespaces keine Übereinstimmung, die extern sichtbare Typen verfügt.
+Benennen Sie den Typ so um, dass er nicht mit dem Namen eines referenzierten Namespace mit extern sichtbaren Typen identisch ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Für neue Entwicklungen keine bekannte Szenarios auftreten, in dem Sie eine Warnung dieser Regel unterdrücken müssen. Bevor Sie die Warnung unterdrücken, sollten Sie sorgfältig, wie die Benutzer Ihrer Bibliothek mit dem entsprechenden Namen verwechselt werden können. Um den rückversand für Bibliotheken, müssen Sie möglicherweise eine Warnung dieser Regel zu unterdrücken.
+Bei der neuen Entwicklung treten keine bekannten Szenarien auf, in denen Sie eine Warnung aus dieser Regel unterdrücken müssen. Bevor Sie die Warnung unterdrücken, sollten Sie sorgfältig überlegen, wie die Benutzer Ihrer Bibliothek durch den übereinstimmenden Namen verwechselt werden könnten. Bei Versand Bibliotheken müssen Sie möglicherweise eine Warnung aus dieser Regel unterdrücken.
