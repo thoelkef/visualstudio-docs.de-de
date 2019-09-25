@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über sämtliche Vorteile, die Sie im Portal für Visual Studio-Abonnements nutzen können.
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377919"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095316"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Verwenden des Abonnentenportals – „my.visualstudio.com“
 
@@ -21,8 +21,8 @@ Um das Portal zu nutzen, melden sich mit der Identität an, die dem Abonnement z
 
 Das Portal ist in sechs Seiten unterteilt.  Jede Seite bietet Ihnen Zugriff auf andere Produkte oder Dienste, die in Ihrem Abonnement enthalten sind.  Die sechs Seiten heißen „Vorteile“, „Downloads“, „Product Keys“, „Abonnements“, „Support“ und „Marketplace“.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Die in Ihrem Abonnement enthaltenen Tools und Dienste werden auf der Seite „Vorteile“ als „Kacheln“ angezeigt.  Nicht alle Vorteile sind in allen Abonnements enthalten. Die Kacheln werden in drei Kategorien unterteilt:  Tools, professionelle Entwicklung und Support.  Wenn Sie Visual Studio Dev Essentials verwenden, sehen Sie auch eine Kategorie namens „Empfohlen“, die aus den anderen drei Kategorien ausgewählte Vorteile enthalten kann.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+Die in Ihrem Abonnement enthaltenen Tools und Dienste werden auf der Seite „Vorteile“ als „Kacheln“ angezeigt.  Nicht alle Vorteile sind in allen Abonnements enthalten. Die Kacheln werden in drei Kategorien unterteilt:  Tools, professionelle Entwicklung und Support.  
 
 ### <a name="tools"></a>Tools
 In der Kategorie „Tools“ finden Sie die wesentlichen Entwicklungstools wie die Visual Studio-IDE, Azure DevOps sowie von Microsoft-Partnern bereitgestellte Tools.  Sie sehen auch Dienste wie Azure und Visual Studio App Center.
@@ -33,15 +33,15 @@ Diese Kategorie enthält Vorteile wie z.B. Onlinetraining von Microsoft und unse
 ### <a name="support"></a>Support
 Haben Sie Fragen zu Azure?  Hilfe aus der Azure-Community erhalten Sie über Foren, oder nutzen Sie den Azure Advisory Chat (Vorschau).  Der Concierge Chat-Dienst kann Ihnen helfen, technische Dokumentation und Produktinformationen zu finden und Sie bei Fragen unterstützen, die sich auf Abonnements beziehen.  Ausgewählte Abonnements umfassen auch technischen Support auf Incidentbasis, um Sie beim Lösen von Problemen mit einer Vielzahl von Microsoft-Produkten zu unterstützen, die in Entwicklungs- und Testumgebungen ausgeführt werden.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 Abhängig von Ihrem Abonnement oder Programm haben Sie Zugriff auf Softwaredownloads von Updates und Patches bis zu einer umfangreichen Bibliothek aktueller Produkte sowie ältere Versionen, sodass Sie Ihre Apps in einer Vielzahl von Szenarien testen können.
 
 Zur Vereinfachung für Abonnenten, die mehrere, einem einzelnen Konto zugeordnete Abonnements besitzen, sehen Sie beim Besuch der Seite „Downloads“ die Downloads, die für das höchstwertigste Ihrer Abonnements zur Verfügung stehen.  Auf diese Weise können Sie unabhängig davon, welches Abonnement Sie derzeit verwenden, alle Ihre Downloads sehen.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 Besuchen Sie die Seite „Product Keys“ zum Abrufen von Schlüsseln zum Installieren und Aktivieren von Produkten, und um zu sehen, welche Schlüssel Sie bereits in Anspruch genommen haben.  Sie können auch eine Liste aller Ihrer Schlüssel zur sicheren Aufbewahrung exportieren.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 Die Seite „Abonnements“ bietet Ihnen die Funktionen, die Ihnen anzeigen, welche Abonnements Sie besitzen, mit denen Sie zwischen den Abonnements wechseln, sie verlängern und neue Abonnements aktivieren können. Sie können auch Abonnements, auf die Sie mit Ihrem Microsoft-Konto zugreifen, einem alternativen Konto zuordnen, das bereits vorhandenen Visual Studio-IDE-, Azure DevOps- oder Azure-Ressourcen zugeordnet ist.
 
 ## <a name="support"></a>Support

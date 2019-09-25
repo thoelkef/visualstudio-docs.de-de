@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766031"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238212"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -794,7 +794,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 | Edit.CollapseCurrentRegion | **STRG+M, STRG+S** |
 | Edit.CollapseTag | **STRG+M, STRG+T** |
 | Edit.CollapseToDefinitions | **STRG+M, STRG+O** (Buchstabe „O“) |
-| Edit.ContractSelection | **UMSCHALT+ALT+-** (gilt nicht für C++) |
+| Edit.ContractSelection | **UMSCHALT+ALT+-** |
 | Edit.CommentSelection | **STRG+K, STRG+C** |
 | Edit.CompleteWord | **STRG+LEERTASTE**<br /><br /> oder<br /><br /> **ALT+NACH-RECHTS-TASTE** |
 | Edit.CopyParameterTip | **STRG+UMSCHALT+ALT+C** |
@@ -807,7 +807,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 | Edit.DocumentStartExtend | **STRG+UMSCHALT+POS1** |
 | Edit.ExpandAllOutlining | **STRG+M, STRG+X** |
 | Edit.ExpandCurrentRegion | **STRG+M, STRG+E** |
-| Edit.ExpandSelection | **UMSCHALT+ALT+=** (gilt nicht für C++) |
+| Edit.ExpandSelection | **UMSCHALT+ALT+=** |
 | Edit.ExpandSelectiontoContainingBlock | **UMSCHALT+ALT+]** |
 | Edit.FormatDocument | **STRG+K, STRG+D** |
 | Edit.FormatSelection | **STRG+K, STRG+F** |
