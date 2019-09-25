@@ -1,5 +1,5 @@
 ---
-title: Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche
+title: Exemplarische Vorgehensweisen zur Anpassung von Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,60 +15,60 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95561f1404da1efd71ff3418f9154392f393795c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e961479fc500e53133c62337478368878bf26893
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977886"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254130"
 ---
-# <a name="office-ui-customization-walkthroughs"></a>Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche
+# <a name="office-ui-customization-walkthroughs"></a>Exemplarische Vorgehensweisen zur Anpassung von Office
   Die folgenden exemplarischen Vorgehensweisen veranschaulichen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Anpassen der Benutzeroberfläche von Microsoft Office-Anwendungen verwenden können.
 
-## <a name="actions-pane-walkthroughs"></a>Aktionsbereiche
-- [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md) wird veranschaulicht, wie ein Bereich "Aktionen" in einem Word-Dokument zu erstellen. Der Aktionsbereich enthält zwei Steuerelemente, die Benutzereingaben an das Dokument senden.
+## <a name="actions-pane-walkthroughs"></a>Exemplarische Vorgehensweisen für Aktionsbereiche
+- [Exemplarische Vorgehensweise: Das Einfügen von Text in ein Dokument aus einem](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md) Aktionsbereich veranschaulicht, wie ein Aktionsbereich in einem Word-Dokument erstellt wird. Der Aktionsbereich enthält zwei Steuerelemente, die Benutzereingaben an das Dokument senden.
 
-- [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) wird veranschaulicht, wie Sie Steuerelemente in einem Aktionsbereich in Word an Daten binden. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
+- [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) -Aktionsbereich veranschaulicht, wie Steuerelemente in einem Aktionsbereich in Word an Daten gebunden werden. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
 
-- [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) beschreibt, wie Sie Steuerelemente hinzufügen, die an einem Aktionsbereich in Excel eine Datenquelle gebunden sind.
+- [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) -Aktionsbereich in diesem Thema wird beschrieben, wie an eine Datenquelle gebundene Steuerelemente an einen Aktionsbereich in Excel hinzugefügt werden.
 
-## <a name="custom-task-pane-walkthroughs"></a>Exemplarische Vorgehensweisen für benutzerdefinierte Tasks
-- [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md) wird veranschaulicht, wie Sie einen benutzerdefinierten Aufgabenbereich zu erstellen, die ein Steuerelement, die die hostanwendung automatisiert enthält, wenn der Benutzer das Steuerelement klickt.
+## <a name="custom-task-pane-walkthroughs"></a>Exemplarische Vorgehensweisen für benutzerdefinierte Aufgaben
+- [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgaben](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md) Bereich veranschaulicht, wie ein benutzerdefinierter Aufgabenbereich erstellt wird, der ein Steuerelement enthält, das die Host Anwendung automatisiert, wenn der Benutzer auf das-Steuerelement klickt.
 
-- [Exemplarische Vorgehensweise: Synchronisieren ein benutzerdefinierten Aufgabenbereichs mit einer Menübandschaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md) wird veranschaulicht, wie Sie einen benutzerdefinierten Aufgabenbereich zu erstellen, die Benutzer durch Klicken auf eine Umschaltfläche auf dem Menüband anzeigen oder ausblenden können.
+- [Exemplarische Vorgehensweise: Durch das Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md) einer Menü Band Schaltfläche wird veranschaulicht, wie ein benutzerdefinierter Aufgabenbereich erstellt wird, den Benutzer durch Klicken auf eine UMSCHALT Fläche im Menüband ausblenden oder anzeigen können.
 
-- [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md) wird veranschaulicht, wie Sie eine eindeutige Instanz eines benutzerdefinierten Aufgabenbereichs mit einer einzelnen e-Mail-Nachrichten anzeigen, die erstellt oder in Outlook geöffnet ist.
+- [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md) Mail-Nachrichten in Outlook zeigt, wie eine eindeutige Instanz eines benutzerdefinierten Aufgabenbereichs für jede e-Mail-Nachricht angezeigt wird, die in Outlook erstellt oder geöffnet wird.
 
-## <a name="ribbon-walkthroughs"></a>Exemplarische Vorgehensweisen für Menübänder
-- [Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierte Registerkarte mit Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md) veranschaulicht, wie eine benutzerdefinierte Registerkarte des Menübands mithilfe des Menüband-Designers. Die Registerkarte enthält eine Schaltfläche, mit der ein Aktionsbereich ausgeblendet oder angezeigt werden kann.
+## <a name="ribbon-walkthroughs"></a>Exemplarische Vorgehensweisen
+- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mithilfe des Menüband-Designers](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md) veranschaulicht das Erstellen einer benutzerdefinierten Menüband-Registerkarte mithilfe des Menüband-Designers. Die Registerkarte enthält eine Schaltfläche, mit der ein Aktionsbereich ausgeblendet oder angezeigt werden kann.
 
-- [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md) veranschaulicht, wie die Menüband-Objektmodells zum Aktualisieren der Steuerelemente auf einem Menüband, nachdem das Menüband in der Office-Anwendung geladen wird.
+- [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einem Menüband zur](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md) Laufzeit zeigt, wie das Menüband-Objektmodell verwendet wird, um die Steuerelemente auf einem Menüband zu aktualisieren, nachdem das Menüband in die Office-Anwendung geladen wurde.
 
-- [Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierte Registerkarte mit Menüband-XML-](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) veranschaulicht, wie eine benutzerdefinierte Menüband-Registerkarte mit Menüband-XML anstelle des Menüband-Designers.
+- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) veranschaulicht das Erstellen einer benutzerdefinierten Menüband-Registerkarte mithilfe von Menüband-XML anstelle des Menüband-Designers.
 
 ## <a name="controls-on-word-documents"></a>Steuerelemente in Word-Dokumenten
-- [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-In](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md) veranschaulicht das Hinzufügen von Steuerelementen zu einem Dokument mithilfe eines VSTO-Add-Ins.
+- [Exemplarische Vorgehensweise: Das Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md) -Add-in veranschaulicht, wie Steuerelemente mithilfe eines VSTO-Add-Ins zu einem Dokument hinzugefügt werden.
 
-- [Exemplarische Vorgehensweise: Ändern der dokumentformatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md) veranschaulicht das Ändern der Formatierung in einem Word-Dokument mithilfe der Kontrollkästchen in einer Anpassung auf Dokumentebene.
+- [Exemplarische Vorgehensweise: Ändern der Dokument Formatierung mithilfe von](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md) CheckBox-Steuerelementen veranschaulicht, wie die Formatierung in einem Word-Dokument mithilfe von Kontrollkästchen in einer Anpassung auf Dokument Ebene geändert wird.
 
-- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md) veranschaulicht, wie Schaltflächen und Textfeldern in Word-Dokumenten.
+- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md) Schaltfläche zeigt, wie Schaltflächen und Textfelder in Word-Dokumenten verwendet werden.
 
-- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md) wird veranschaulicht, wie Diagrammformatvorlagen in einem Word-Dokument zu ändern, indem Sie mithilfe von Optionsfeldern in einer Anpassung auf Dokumentebene.
+- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md) von Options Feldern zeigt, wie Diagramm Stile in einem Word-Dokument mithilfe von Options Schaltflächen in einer Anpassung auf Dokument Ebene geändert werden.
 
 ## <a name="controls-on-excel-worksheets"></a>Steuerelemente in Excel-Arbeitsblättern
-- [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) veranschaulicht das Hinzufügen von Steuerelementen zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins.
+- [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit im VSTO-Add](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) -in-Projekt veranschaulicht das Hinzufügen von Steuerelementen zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins.
 
-- [Exemplarische Vorgehensweise: Ändern der arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md) veranschaulicht die Grundlagen der Verwendung von Kontrollkästchen zum Ändern der Formatierung in einem Excel-Arbeitsblatt.
+- [Exemplarische Vorgehensweise: Ändern der Arbeitsblatt Formatierung mit CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md) -Steuerelementen veranschaulicht die Grundlagen der Verwendung von Kontrollkästchen in einem Excel-Arbeitsblatt, um die Formatierung zu ändern.
 
-- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md) veranschaulicht die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Excel-Arbeitsblättern.
+- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld eines Arbeitsblatts mithilfe einer Schalt](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md) Fläche zeigt die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Excel-Arbeitsblättern.
 
-- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Optionsfeldern](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) veranschaulicht die Grundlagen zum Ändern von Diagrammformaten mithilfe von Optionsfeldern in einem Excel-Arbeitsblatt.
+- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) von Options Feldern zeigt die Grundlagen der Änderung von Diagramm Stilen mithilfe von Options Feldern in einem Excel-Arbeitsblatt an.
 
 ## <a name="see-also"></a>Siehe auch
 - [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)
-- [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)
-- [Daten in Exemplarische Vorgehensweisen für Office-Lösungen](../vsto/data-in-office-solutions-walkthroughs.md)
-- [Vorgehensweisen für Sicherheit und Bereitstellung](../vsto/security-and-deployment-walkthroughs.md)
-- [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Allgemeine Aufgaben in Office-Programmierung](../vsto/common-tasks-in-office-programming.md)
-- [Entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md)
+- [Exemplarische Vorgehensweisen mit Excel](../vsto/walkthroughs-using-excel.md)
+- [Exemplarische Vorgehensweisen für Daten in Office-Lösungen](../vsto/data-in-office-solutions-walkthroughs.md)
+- [Exemplarische Vorgehensweisen für Sicherheit](../vsto/security-and-deployment-walkthroughs.md)
+- [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Häufige Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md)
+- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

@@ -10,55 +10,55 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b81bd810bac142bdec23074e69bbd3840043c8f6
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c9e43dcdf1e923cb7bc4a98b17fd0be71b7927eb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841403"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237402"
 ---
 # <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003: Review code for file path injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen über einen Dateipfad)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForFilePathInjectionVulnerabilities|
+|TypeName|Reviewcodeforfilepage-Sicherheitsrisiken|
 |CheckId|CA3003|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht den Pfad von Dateien.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen den Pfad eines Datei Vorgangs.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Bei der Arbeit mit nicht vertrauenswürdigen Eingaben aus webanforderungen Achten Sie darauf, dass Sie benutzergesteuerte Eingabe verwenden, wenn Sie Pfade zu Dateien angeben. Ein Angreifer kann eine beliebige Datei, lesen möglicherweise Offenlegung von sensiblen Daten führt. Oder ein Angreifer möglicherweise zum Schreiben in eine beliebige Datei, was zu nicht autorisierten Änderung von sensiblen Daten oder die Sicherheit des Servers beeinträchtigen. Ist ein gängiges Verfahren der Angreifer [Path Traversal](https://www.owasp.org/index.php/Path_Traversal) auf Dateien außerhalb des vorgesehenen Verzeichnisses zugreifen.
+Wenn Sie mit nicht vertrauenswürdigen Eingaben aus Webanforderungen arbeiten, achten Sie darauf, benutzergesteuerte Eingaben beim Angeben von Pfaden zu Dateien zu verwenden. Ein Angreifer ist möglicherweise in der Lage, eine unbeabsichtigte Datei zu lesen, was dazu führt, dass sensible Daten offengelegt werden. Oder ein Angreifer kann in eine unbeabsichtigte Datei schreiben, was dazu führt, dass sensible Daten nicht autorisiert werden oder die Sicherheit des Servers beeinträchtigt wird. Eine gängige Angreifer-Technik ist die [Pfad Durchquerung](https://www.owasp.org/index.php/Path_Traversal) für den Zugriff auf Dateien außerhalb des vorgesehenen Verzeichnisses.
 
-Mit dieser Regel versucht beim Suchen der Eingabespalte aus HTTP-Anforderungen, die einen Pfad in einem Dateivorgang zu erreichen.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die in eine Datei schreibt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die einen Pfad in einem Datei Vorgang erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die in eine Datei schreibt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Wenn möglich, Dateipfade, die auf Grundlage der Benutzereingabe in einer explizit bekannte Sicherungsliste zu beschränken.  Lassen Sie z. B. wenn die Anwendung, die nur den Zugriff auf "red.txt", "green.txt" oder "blue.txt" benötigt wird, nur diese Werte zu.
-- Überprüfen Sie bei nicht vertrauenswürdigen Dateinamen, und überprüfen Sie, dass der Name gültig ist.
-- Verwenden Sie vollständigen Pfadnamen aus, wenn die Pfade angeben.
-- Vermeiden Sie potenziell gefährliche Konstrukte wie Path-Umgebungsvariablen.
-- Nur akzeptieren Sie lange Dateinamen zu und überprüfen Sie langen Namen zu, wenn Benutzer den Kurznamen übermittelt.
-- Endbenutzer-Eingabe für gültige Zeichen zu beschränken.
-- Ablehnen von Namen, in denen MAX_PATH-Länge überschritten wird.
-- Behandeln Sie Dateinamen buchstäblich, ohne Sie zu interpretieren.
-- Bestimmt, ob Sie den Dateinamen einer Datei oder ein Gerät darstellt.
+- Beschränken Sie nach Möglichkeit Dateipfade auf der Grundlage von Benutzereingaben auf eine explizit bekannte sichere Liste.  Wenn Ihre Anwendung z. b. nur auf "Red. txt", "Green. txt" oder "Blue. txt" zugreifen muss, lassen Sie diese Werte nur zu.
+- Suchen Sie nach nicht vertrauenswürdigen Dateinamen, und überprüfen Sie, ob der Name wohl geformt ist.
+- Verwenden Sie beim Angeben von Pfaden vollständige Pfadnamen.
+- Vermeiden Sie potenziell gefährliche Konstrukte wie z. b. PATH-Umgebungsvariablen
+- Akzeptieren Sie lange Dateinamen, und überprüfen Sie lange Namen, wenn der Benutzer Kurznamen übermittelt.
+- Hiermit wird die Eingabe von Endbenutzern auf gültige Zeichen beschränkt.
+- Namen ablehnen, bei denen MAX_PATH length überschritten wird.
+- Die Dateinamen werden ohne Interpretation wörtlich verarbeitet.
+- Bestimmen Sie, ob der Dateiname eine Datei oder ein Gerät darstellt.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Nachdem Sie Eingabe überprüft haben, wie im vorherigen Abschnitt beschrieben, ist es angemessen, diese Warnung unterdrücken.
+Wenn Sie die Eingabe entsprechend der Beschreibung im vorherigen Abschnitt überprüft haben, ist es in Ordnung, diese Warnung zu unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

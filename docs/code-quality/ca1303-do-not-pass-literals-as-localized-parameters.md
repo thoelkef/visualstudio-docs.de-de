@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc32db1aea9c5514a7548bc889b65463de3de3d5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2700dc2ade7ba901f15f67045e3170e2bbb40ff8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714697"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235113"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Literale nicht als lokalisierte Parameter übergeben.
 
@@ -33,37 +33,37 @@ ms.locfileid: "66714697"
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
 |Kategorie|Microsoft.Globalization|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode übergibt ein Zeichenfolgenliteral als Parameter an eine .NET Konstruktor oder eine Methode, und diese Zeichenfolge sollte lokalisierbar sein.
+Eine Methode übergibt ein Zeichenfolgenliteralzeichen als Parameter an einen .net-Konstruktor oder eine Methode, und diese Zeichenfolge muss lokalisierbar sein.
 
-Diese Warnung wird ausgelöst, wenn eine Literalzeichenfolge als Wert, auf einen Parameter oder eine Eigenschaft übergeben wird und eine oder mehrere der folgenden Fälle zutrifft:
+Diese Warnung wird ausgelöst, wenn eine Literalzeichenfolge als Wert an einen Parameter oder eine Eigenschaft übergeben wird und mindestens einer der folgenden Fälle zutrifft:
 
-- Die <xref:System.ComponentModel.LocalizableAttribute> Attribut des Parameters oder der Eigenschaft wird festgelegt auf "true".
+- Das <xref:System.ComponentModel.LocalizableAttribute> -Attribut des-Parameters oder der-Eigenschaft ist auf true festgelegt.
 
-- Der Parameter oder die Eigenschaft Name enthält "Text", "Message" oder "Beschriftung".
+- Der Parameter-oder Eigenschaftsname enthält "Text", "Message" oder "Caption".
 
-- Der Name des Parameters, der auf eine Console.Write "oder" Console.WriteLine-Methode übergeben wird, ist "Value" oder "format".
+- Der Name des Zeichen folgen Parameters, der an eine Console. Write-oder Console. Write teline-Methode übergeben wird, ist entweder "Value" oder "Format".
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Zeichenfolgenliterale, die in Quellcode eingebettet sind, sind schwer zu lokalisieren.
+Zeichen folgen Literale, die in Quellcode eingebettet sind, sind schwer zu lokalisieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie das Zeichenfolgenliteral durch eine Zeichenfolge, die durch eine Instanz der abgerufenen der <xref:System.Resources.ResourceManager> Klasse.
+Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie das Zeichenfolgenliteral durch eine Zeichen <xref:System.Resources.ResourceManager> Folge, die durch eine Instanz der-Klasse abgerufen wurde
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher, die mit dieser Regel eine Warnung zu unterdrücken, wenn die Codebibliothek nicht lokalisiert wird oder wenn die Zeichenfolge nicht mit der Endbenutzer oder ein Entwickler, die über die Codebibliothek verbunden ist.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Code Bibliothek nicht lokalisiert wird, oder wenn die Zeichenfolge für den Endbenutzer oder einen Entwickler, der die Code Bibliothek verwendet, nicht verfügbar gemacht wird.
 
-Benutzer können es sich um Rauschen für Methoden entfernt, die nicht lokalisierte Zeichenfolgen übergeben werden sollen, durch das Umbenennen der Parameter oder die Eigenschaft oder markieren diese Elemente als bedingt.
+Benutzer können das Rauschen gegen Methoden eliminieren, denen keine lokalisierten Zeichen folgen übergeben werden sollen, indem Sie entweder den Parameter oder die Eigenschaft umbenennen oder diese Elemente als bedingt markieren.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Methode, die eine Ausnahme auslöst, wenn eine der zwei Argumente außerhalb des gültigen Bereichs befinden. Für das erste Argument ist wird der Ausnahmekonstruktor eine Literalzeichenfolge, übergeben gegen diese Regel verstößt. Für das zweite Argument, dem Konstruktor wird ordnungsgemäß übergeben eine Zeichenfolge abrufen, der über eine <xref:System.Resources.ResourceManager>.
+Das folgende Beispiel zeigt eine Methode, die eine Ausnahme auslöst, wenn eines der beiden Argumente außerhalb des gültigen Bereichs liegt. Für das erste Argument wird dem Ausnahmekonstruktor eine Literalzeichenfolge übergeben, die gegen diese Regel verstößt. Für das zweite Argument wird dem Konstruktor ordnungsgemäß eine Zeichenfolge übergeben, die <xref:System.Resources.ResourceManager>über eine abgerufen wurde.
 
 [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
 [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
@@ -71,4 +71,4 @@ Das folgende Beispiel zeigt eine Methode, die eine Ausnahme auslöst, wenn eine 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ressourcen in desktop-apps](/dotnet/framework/resources/index)
+- [Ressourcen in Desktop-Apps](/dotnet/framework/resources/index)

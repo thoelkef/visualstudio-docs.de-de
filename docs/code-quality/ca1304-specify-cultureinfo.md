@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714359"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235103"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo angeben.
 
@@ -32,7 +32,7 @@ ms.locfileid: "66714359"
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode oder der Konstruktor ruft einen Member auf, die eine Überladung, die akzeptiert eine <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> -Parameter, und die Methode oder der Konstruktor ruft nicht die Überladung, akzeptiert die <xref:System.Globalization.CultureInfo> Parameter. Diese Regel ignoriert Aufrufe der folgenden Methoden:
+Eine Methode oder ein Konstruktor ruft einen Member mit einer Überladung auf, <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> die einen-Parameter akzeptiert, und die-Methode oder der-Konstruktor ruft <xref:System.Globalization.CultureInfo> nicht die-Überladung auf, die den-Parameter annimmt. Diese Regel ignoriert Aufrufe der folgenden Methoden:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,36 +40,36 @@ Eine Methode oder der Konstruktor ruft einen Member auf, die eine Überladung, d
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Wenn eine <xref:System.Globalization.CultureInfo> oder <xref:System.IFormatProvider?displayProperty=nameWithType> Objekt ist nicht angegeben, der Standardwert, der vom überladenen Member bereitgestellte ist möglicherweise nicht die in allen Gebietsschemas den gewünschten Effekt. Darüber hinaus .NET Member auswählen Standardkultur und Formatierung basierend auf Annahmen, die möglicherweise nicht korrekt für Ihren Code. Um sicherzustellen, dass der Code funktioniert, wie für Ihre Szenarien erwartet, sollten Sie die kulturspezifische Informationen, anhand der folgenden Richtlinien angeben:
+Wenn ein <xref:System.Globalization.CultureInfo> - <xref:System.IFormatProvider?displayProperty=nameWithType> oder-Objekt nicht angegeben wird, hat der vom überladenen Member bereitgestellte Standardwert möglicherweise nicht die gewünschte Auswirkung in allen Gebiets Schemas. .Net-Member wählen außerdem Standard Kultur und-Formatierung basierend auf Annahmen, die für Ihren Code möglicherweise nicht korrekt sind. Um sicherzustellen, dass der Code für Ihre Szenarien erwartungsgemäß funktioniert, sollten Sie kulturspezifische Informationen gemäß den folgenden Richtlinien angeben:
 
-- Wenn der Wert für den Benutzer angezeigt wird, wird verwenden Sie die aktuelle Kultur. Siehe <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Wenn der Wert für den Benutzer angezeigt wird, verwenden Sie die aktuelle Kultur. Siehe <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Wenn der Wert gespeichert und von der Software zugegriffen werden, verwenden Sie persistent gespeichert, in einer Datei oder Datenbank, die invariante Kultur, also. Siehe <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Verwenden Sie die invariante Kultur, wenn der Wert von Software gespeichert wird, d. h. in einer Datei oder Datenbank persistent gespeichert wird. Siehe <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Wenn Sie nicht, dass das Ziel des Werts wissen, haben Sie den Datenconsumer oder Anbieter die Kultur angeben.
+- Wenn Sie das Ziel des Werts nicht kennen, lassen Sie den Datenconsumer oder-Anbieter die Kultur angeben.
 
-Auch wenn das Standardverhalten des überladenen Member für Ihre Anforderungen geeignet ist, ist es besser, die kulturspezifische Überladung explizit aufrufen, so, dass der Code selbsterklärend und einfacher zu verwalten ist.
+Auch wenn das Standardverhalten des überladenen Elements für Ihre Bedürfnisse geeignet ist, ist es besser, die kulturspezifische Überladung explizit aufzurufen, sodass Ihr Code selbst dokumentierend und leichter zu pflegen ist.
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> wird nur verwendet, um lokalisierte Ressourcen abruft, mit einer Instanz von der <xref:System.Resources.ResourceManager?displayProperty=nameWithType> Klasse.
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>wird nur zum Abrufen lokalisierter Ressourcen mithilfe einer Instanz der <xref:System.Resources.ResourceManager?displayProperty=nameWithType> -Klasse verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie die Überladung mit einem <xref:System.Globalization.CultureInfo> Argument.
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie die-über <xref:System.Globalization.CultureInfo> Ladung, die ein-Argument annimmt.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn sicher ist, dass die Standardkultur die richtige Wahl ist und die codeverwaltbarkeit von keine wichtige Entwicklungsszenarien Priorität ist.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn sicher ist, dass die Standard Kultur die richtige Wahl ist und die Code Wartbarkeit keine wichtige Entwicklungs Priorität ist.
 
-## <a name="example-showing-how-to-fix-violations"></a>Beispiel für die Behandlung von Verstößen
+## <a name="example-showing-how-to-fix-violations"></a>Beispiel für das Beheben von Verstößen
 
-Im folgenden Beispiel `BadMethod` bewirkt, dass zwei Verstöße gegen diese Regel. `GoodMethod` korrigiert den ersten Verstoß durch Übergeben der invarianten Kultur, <xref:System.String.Compare%2A?displayProperty=nameWithType>, und diese gegebenenfalls korrigiert des zweiten Verstoßes durch Übergeben der aktuellen Kultur zu <xref:System.String.ToLower%2A?displayProperty=nameWithType> da `string3` wird dem Benutzer angezeigt.
+Im folgenden Beispiel `BadMethod` verursacht zwei Verstöße gegen diese Regel. `GoodMethod`korrigiert den ersten Verstoß durch übergeben der invarianten Kultur an <xref:System.String.Compare%2A?displayProperty=nameWithType>und korrigiert den zweiten Verstoß durch übergeben der aktuellen Kultur an <xref:System.String.ToLower%2A?displayProperty=nameWithType> , da `string3` dem Benutzer angezeigt wird.
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
-## <a name="example-showing-formatted-output"></a>Beispiel zeigt die formatierte Ausgabe
+## <a name="example-showing-formatted-output"></a>Beispiel für formatierte Ausgabe
 
-Das folgende Beispiel zeigt die Auswirkung der aktuellen Kultur auf dem standardmäßigen <xref:System.IFormatProvider> , wird ausgewählt, die <xref:System.DateTime> Typ.
+Das folgende Beispiel zeigt die Auswirkung der aktuellen Kultur auf den Standard <xref:System.IFormatProvider> Wert, der <xref:System.DateTime> vom-Typ ausgewählt wird.
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 
