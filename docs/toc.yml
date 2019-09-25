@@ -1,4 +1,4 @@
-- name: Visual Studio-Dokumentation
+- name: Dokumentation zur Visual Studio-IDE
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Übersicht
@@ -250,7 +250,7 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Entwickeln ohne Projekte oder Projektmappen
           items:
-            - name: 'Vorgehensweise: Entwickeln ohne ein Projekt'
+            - name: 'Gewusst wie: Entwickeln ohne ein Projekt'
               displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Anpassen von Build- und Debugtasks
