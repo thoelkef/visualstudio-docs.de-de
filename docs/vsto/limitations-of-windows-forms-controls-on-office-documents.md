@@ -1,5 +1,5 @@
 ---
-title: Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente
+title: Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,26 +20,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5cb4bf5788e1d30933a807e2e97e064118fc076
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 81a7da585f49b2a2d1f7df4df11d0c78b7a35d69
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823408"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251914"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Einschränkungen für Windows Forms-Steuerelemente in Office-Dokumente
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten
 
-Es gibt einige Unterschiede zwischen Windows Forms-Steuerelemente, die Microsoft Office Word-Dokumenten oder Microsoft Office Excel-Arbeitsblätter hinzugefügt werden, und Windows Forms-Steuerelemente, die Windows Forms hinzugefügt werden. Wenn Sie z. B. Hinzufügen einer <xref:Microsoft.Office.Tools.Word.Controls.Button> steuern, wie z. B. auf ein Dokument, Eigenschaften <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, und <xref:System.Windows.Forms.Control.TabIndex> Verhalten sich nicht wie zu erwarten.
+Es gibt einige Unterschiede zwischen Windows Forms-Steuerelementen, die Microsoft Office Word-Dokumenten hinzugefügt werden, oder Microsoft Office Excel-Arbeitsblätter und Windows Forms Steuerelemente, die Windows Forms hinzugefügt werden. Wenn Sie z. b. einem <xref:Microsoft.Office.Tools.Word.Controls.Button> Dokument ein Steuerelement hinzufügen, Verhalten <xref:System.Windows.Forms.Control.Dock>sich <xref:System.Windows.Forms.Control.Anchor>Eigenschaften wie <xref:System.Windows.Forms.Control.TabIndex> , und nicht wie erwartet.
 
-Viele dieser Unterschiede werden durch die Art, Windows Forms-Steuerelemente gehostet werden verursacht, für Dokumente. Wenn ein Dokument, ein Windows Forms-Steuerelement hinzugefügt wird die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bettet ein ActiveX-Steuerelement, das dann das Windows Forms-Steuerelement im Dokument hostet. Das Windows Forms-Steuerelement ist nicht direkt in das Dokument eingebettet.
+Viele dieser Unterschiede sind darauf zurückzuführen, wie Windows Forms Steuerelemente in Dokumenten gehostet werden. Wenn einem Dokument ein Windows Forms-Steuerelement hinzugefügt wird [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , bettet ein ActiveX-Steuerelement ein, das dann das Windows Forms Steuerelement im Dokument hostet. Das Windows Forms-Steuerelement ist nicht direkt in das Dokument eingebettet.
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Einschränkungen von Methoden und Eigenschaften von Windows Forms-Steuerelementen
 
-Es gibt eine Reihe von Methoden und Eigenschaften von Windows Forms-Steuerelementen, die nicht die gleiche Weise wie für ein Dokument arbeiten würden in einem Windows Form, und es wird daher empfohlen, dass sie nicht verwendet werden. Zum Festlegen von Eigenschaften wie z. B. <xref:System.Windows.Forms.Control.Dock> und <xref:System.Windows.Forms.Control.Anchor> wirkt sich nur auf die Position des Steuerelements in Bezug auf das Dokument, anstatt das Container-ActiveX-Steuerelement. Im folgenden finden eine Liste der nicht unterstützten Methoden und Eigenschaften von Windows Forms-Steuerelementen für Word und Excel:
+Es gibt eine Reihe von Methoden und Eigenschaften von Windows Forms-Steuerelementen, die nicht auf die gleiche Weise in einem Dokument funktionieren wie in einem Windows Form. Daher wird empfohlen, dass Sie nicht verwendet werden. Beispielsweise wirkt sich das Festlegen von <xref:System.Windows.Forms.Control.Dock> Eigenschaften <xref:System.Windows.Forms.Control.Anchor> wie und nur auf die Position des Steuer Elements in Bezug auf das ActiveX-Steuerelement des Containers und nicht auf das Dokument aus. Im folgenden finden Sie eine Liste der nicht unterstützten Methoden und Eigenschaften von Windows Forms-Steuerelementen für Word und Excel:
 
-- Nicht unterstützte Eigenschaften der Excel-Steuerelemente:
+- Nicht unterstützte Eigenschaften von Excel-Steuerelementen:
 
   - <xref:System.Windows.Forms.Control.Anchor>
   - <xref:System.Windows.Forms.Control.Dock>
@@ -48,7 +48,7 @@ Es gibt eine Reihe von Methoden und Eigenschaften von Windows Forms-Steuerelemen
   - <xref:System.Windows.Forms.Control.TabStop>
   - <xref:System.Windows.Forms.Control.TopLevelControl>
 
-- Nicht unterstützte Methoden und Eigenschaften des Word-Steuerelemente:
+- Nicht unterstützte Methoden und Eigenschaften von Word-Steuerelementen:
 
   - <xref:System.Windows.Forms.Control.Hide%2A>
   - <xref:System.Windows.Forms.Control.Show%2A>
@@ -60,47 +60,47 @@ Es gibt eine Reihe von Methoden und Eigenschaften von Windows Forms-Steuerelemen
   - <xref:System.Windows.Forms.Control.TopLevelControl>
   - <xref:System.Windows.Forms.Control.Visible>
 
-Außerdem kann nicht festgelegt werden die <xref:System.Windows.Forms.Control.Left> oder <xref:System.Windows.Forms.Control.Top> Eigenschaft von Windows Forms-Steuerelementen, die am Text in einem Worddokument ausgerichtet sind. Windows Forms-Steuerelemente werden Textfluss in den folgenden Fällen hinzugefügt:
+Sie können auch nicht die <xref:System.Windows.Forms.Control.Left> - <xref:System.Windows.Forms.Control.Top> Eigenschaft oder die-Eigenschaft von Windows Forms-Steuerelementen festlegen, die mit Text in einem Word-Dokument übereinstimmen. Windows Forms-Steuerelemente werden in den folgenden Fällen in der Zeile mit Text hinzugefügt:
 
-- Sie können programmgesteuert hinzufügen eines Steuerelements zu einem Word-Dokument und verwenden Sie eine Methode, die einen Bereich für den Speicherort angibt.
+- Sie können einem Word-Dokument Programm gesteuert ein-Steuerelement hinzufügen und eine-Methode verwenden, die einen Bereich für den Speicherort angibt.
 
-- Sie fügen Sie ein Windows Forms-Steuerelement in einem Word-Dokument zur Entwurfszeit hinzu. Sie können dies ändern, indem Sie das Steuerelement im Designer ändern.
+- Sie können einem Word-Dokument zur Entwurfszeit ein Windows Forms-Steuerelement hinzufügen. Sie können dies ändern, indem Sie das-Steuerelement im-Designer ändern.
 
-## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Unterschiede in Windows Forms-Steuerelemente für Office-Dokumente
+## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Unterschiede bei Windows Forms-Steuerelementen in Office-Dokumenten
 
-Windows Forms-Steuerelemente haben in der Regel das gleiche Verhalten für ein Office-Dokument, wie sie in einem Windows Form, aber einige Unterschiede. Die folgende Tabelle beschreibt die Unterschiede, die für Windows Forms-Steuerelemente für Office-Dokumente vorhanden sind.
+Windows Forms Steuerelemente haben im Allgemeinen das gleiche Verhalten wie in einem Windows Form in einem Office-Dokument, aber es gibt einige Unterschiede. In der folgenden Tabelle werden die Unterschiede beschrieben, die für Windows Forms Steuerelemente in Office-Dokumenten bestehen.
 
 |Funktionalität|Unterschied|
 |-------------------|----------------|
-|Steuerreihenfolge|Sie können nicht über die Steuerelemente auf einem Excel-Arbeitsblatt oder Word-Dokument Registerkarte.|
-|Steuerelement-Gruppierung|Sie können keine <xref:System.Windows.Forms.GroupBox> Steuerelement andere Steuerelemente auf einem Office-Dokument enthalten. Wenn Sie mehrere Optionsfelder direkt zu einem Dokument hinzufügen, sind die Optionsfelder nicht gegenseitig. Sie können Code aus, um die Optionsfelder sich gegenseitig ausschließende stellen schreiben. Allerdings ist der bevorzugte Ansatz die Optionsfelder, ein Benutzersteuerelement hinzuzufügen, und fügen Sie dann auf das Dokument das Benutzersteuerelement hinzu. Weitere Informationen finden Sie unter dem Beispiel des Word-Steuerelemente oder Beispiel für Excel-Steuerelemente unter [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).|
-|Steuerelementtyp|Eine Klasse, die von bereitgestellte Windows Forms-Steuerelemente in Dokumenten verwendete umschlossen sind die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , das Ihnen die Steuerelemente bestimmte Zusatzfunktionen auf die Excel-Arbeitsblatt oder Word-Dokument. Angenommen, Sie haben eine **Schaltfläche** in einem Excel-Arbeitsblatt zu steuern, müssen Sie den Typ angeben <xref:Microsoft.Office.Tools.Excel.Controls.Button> statt <xref:System.Windows.Forms.Button> verweisen oder Umwandeln des Objekts.|
-|Steuerelement Position und Größe|Die Größe und Position des Steuerelements richtet sich nach den Eigenschaften, die Teil des Containers ActiveX-Steuerelement. Die ActiveX-Steuerelementeigenschaften werden andere Werte als die entsprechenden Eigenschaften eines Windows Forms-Steuerelements. Beim Festlegen der `Top`, `Left`, `Height`, oder `Width` Eigenschaften eines Steuerelements, gemessen verweist, anstatt Pixel.|
-|Position des Steuerelements in Word-Dokumenten|Wenn Sie einem Flusslayout Steuerelemente hinzufügen, sollten Sie bedenken, die die Steuerelemente mit dem Inhalt wie die Änderungen am Inhalt eingefügt werden. Sie können das Steuerelement auf einen Absatz können nicht verankern, wenn Sie es aus ziehen die **Toolbox** daran, dass das Steuerelement zum Word-Dokument am Text ausgerichtet hinzugefügt wird. Wenn Sie eine andere Methode verwenden, um das Steuerelement, z. B. durch Doppelklicken auf das Steuerelement hinzuzufügen, wird das Steuerelement gemäß der Option "Wort" eingefügt, die Sie festgelegt haben, für das Einfügen von Bildern.<br /><br /> Sie können nicht festgelegt werden die `Left` oder `Top` Eigenschaft eines Steuerelements, das Text ausgerichtet ist.<br /><br /> Sie können keine Steuerelemente in einer Kopf- oder Fußzeile oder in einem Unterdokument platzieren.|
-|Steuerelementereignisse|Wenn das Steuerelement ausgewählt ist, löst Ereignisse in der folgenden Reihenfolge aus:<br /><br /> 1.  `Enter`<br />2.  `GotFocus`<br /><br /> Wenn das Steuerelement deaktiviert ist, löst Ereignisse in der folgenden Reihenfolge aus:<br /><br /> 1.  `Leave`<br />2.  `Validating`<br />3.  `Validated`<br />4.  `LostFocus`|
-|Skalierung des Steuerelements|Wenn Sie auf einen anderen als 100 % die zoomeinstellung eines Dokuments ändern, Steuerelemente sind deaktiviert, auch wenn sie angezeigt werden mit dem Dokument zu skalieren. Z. B. Wenn Sie eine Schaltfläche klicken, wenn das Dokument 130 % Zoom ist, es wird eine Meldung anzeigen, dass das Steuerelement deaktiviert wurde, bis Zoom auf 100 % festgelegt wird. Die Steuerelemente funktioniert ordnungsgemäß, wenn Sie den Zoom auf 100 % ändern.|
-|Eigenschaftswerte von Steuerelementen|Obwohl die Eigenschaften der Steuerelemente auf einem Windows Form in einen ganzzahligen Wert festgelegt werden, werden sie mit einem einzelnen für Steuerelemente in einem Word-Dokument festgelegt. In Excel werden die Eigenschaftswerte von Steuerelementen auf einen Double-Wert festgelegt. Wenn die `Height` und `Width` Eigenschaft eines Steuerelements in einem Arbeitsblatt überschreitet die Größe des Arbeitsblatts oder des Bildschirms, wird der Wert abgeschnitten.|
-|Größenanpassung des Steuerelements|Wenn Sie die Größe ein Steuerelements im Dokument mit einem der acht Ziehpunkte ändern, werden die Abmessungen des Steuerelements nicht in wiedergegeben der **Eigenschaften** Fenster, bis das Steuerelement wieder aktiviert wird.|
-|Verhalten des Steuerelements|Steuerelemente in einem Excel-Arbeitsblatt möglicherweise unvorhersehbar reagieren, wenn das Arbeitsblattfenster aufgeteilt wird. Z. B. Zugriff auf eine <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> auf dem Arbeitsblatt möglicherweise nur zur Verfügung in eines der Fenster.|
-|Benennung von Steuerelementen|Sie können keine reservierte Wörtern benennen-Steuerelemente. Wenn Sie hinzufügen, z. B. eine <xref:Microsoft.Office.Tools.Excel.Controls.Button> zu einem Arbeitsblatt, und ändern Sie den Namen in **System**, Fehler auftreten, wenn Sie das Projekt erstellen.|
-|Programmgesteuertes Hinzufügen von Steuerelementen|Verwenden Sie nicht den Konstruktor des Steuerelements, das Dokument zur Laufzeit ein Steuerelement hinzu. Verwenden Sie stattdessen die Hilfsmethoden, die von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Beispielsweise verwenden die <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> Methode, um eine Schaltfläche in einem Arbeitsblatt hinzuzufügen. Wenn Sie möchten ein Steuerelement hinzufügen, die von den Hilfsmethoden nicht unterstützt wird, können Sie mithilfe der `AddControl` Methode. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).|
-|Kopieren von Steuerelementen|Wenn Sie ein Windows Forms-Steuerelement zu kopieren und fügen Sie ihn in ein Dokument zur Laufzeit, wird ein leerer Container ActiveX-Steuerelement in das Dokument eingefügt. Das Windows Forms-Steuerelement nicht in den neuen Speicherort angezeigt, und Code-behind das ursprüngliche Steuerelement wird nicht in das ActiveX-Steuerelement-Container kopiert.|
+|Registerkarten Reihenfolge|Sie können keine Tabstopps durch Steuerelemente auf einem Excel-Arbeitsblatt oder Word-Dokument ablegen.|
+|Steuerelement Gruppierung|Ein <xref:System.Windows.Forms.GroupBox> Steuerelement kann nicht verwendet werden, um andere Steuerelemente in einem Office-Dokument aufzunehmen. Wenn Sie dem Dokument mehrere Options Felder direkt hinzufügen, schließen sich die Options Felder nicht gegenseitig aus. Sie können Code schreiben, um die Options Felder gegenseitig zu schließen. die bevorzugte Vorgehensweise besteht jedoch darin, einem Benutzer Steuerelement die Options Felder hinzuzufügen und dann dem Dokument das Benutzer Steuerelement hinzuzufügen. Weitere Informationen finden Sie im Beispiel Word-Steuerelemente oder Excel-Steuerelemente unter [Office-Entwicklungs Beispiele und](../vsto/office-development-samples-and-walkthroughs.md)Exemplarische Vorgehensweisen.|
+|Steuerelementtyp|Windows Forms Steuerelemente, die für Dokumente verwendet werden, sind in einer [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Klasse enthalten, die von bereitgestellt wird, die den Steuerelementen zusätzliche Funktionen für das Excel-Arbeitsblatt oder Word-Dokument bietet Wenn Sie z. b. ein **Schalt** Flächen-Steuerelement auf einem Excel-Arbeitsblatt haben, achten Sie <xref:Microsoft.Office.Tools.Excel.Controls.Button> darauf, <xref:System.Windows.Forms.Button> dass Sie den Typ als angeben, anstatt auf das Objekt zu verweisen oder es zu konvertieren.|
+|Position und Größe des Steuer Elements|Die Größe und die Position des Steuer Elements werden durch Eigenschaften bestimmt, die Teil des ActiveX-Steuer Elements für den Container sind. Die ActiveX-Steuerelement Eigenschaften nehmen andere Werte als die entsprechenden Eigenschaften eines Windows Forms Steuer Elements. Wenn Sie die `Top`Eigenschaften, `Left`, `Height`oder `Width` eines-Steuer Elements festlegen, wird es in Punkten anstatt in Pixel gemessen.|
+|Steuerelement Position in Word-Dokumenten|Wenn Sie einem Fluss basierten Layout Steuerelemente hinzufügen, denken Sie daran, dass die Steuerelemente mit dem Inhalt durchlaufen werden, wenn sich der Inhalt ändert. Sie können das Steuerelement nicht an einen Absatz anfügen, wenn Sie es aus der **Toolbox** ziehen, da das Steuerelement dem Word-Dokument in der Zeile mit Text hinzugefügt wird. Wenn Sie das Steuerelement mit einer anderen Methode hinzufügen, z. b. durch Doppelklicken auf das Steuerelement, wird das Steuerelement entsprechend der Word-Option eingefügt, die Sie zum Einfügen von Bildern festgelegt haben.<br /><br /> Sie können die- `Left` Eigenschaft `Top` oder die-Eigenschaft eines Steuer Elements, das Inline mit Text ist, nicht festlegen.<br /><br /> Sie können Steuerelemente nicht in einer Kopf-oder Fußzeile oder in einem unter Dokument platzieren.|
+|Steuerelement Ereignisse|Wenn das Steuerelement ausgewählt ist, werden Ereignisse in der folgenden Reihenfolge ausgelöst:<br /><br /> 1.  `Enter`<br />2.  `GotFocus`<br /><br /> Wenn das Steuerelement deaktiviert wird, werden Ereignisse in der folgenden Reihenfolge ausgelöst:<br /><br /> 1.  `Leave`<br />2.  `Validating`<br />3.  `Validated`<br />4.  `LostFocus`|
+|Steuern der Skalierung|Wenn Sie die Zoomeinstellung eines Dokuments in einen anderen Wert als 100% ändern, sind die Steuerelemente deaktiviert, obwohl Sie anscheinend mit dem Dokument skaliert werden. Wenn Sie z. b. auf eine Schaltfläche klicken, wenn das Dokument einen Zoom Wert von 130% aufweist, wird eine Meldung angezeigt, dass das Steuerelement deaktiviert wurde, bis der Zoom Wert auf 100% festgelegt ist. Die Steuerelemente funktionieren ordnungsgemäß, wenn Sie den Zoom Wert auf 100% ändern.|
+|Steuerelement Eigenschaftswerte|Obwohl die Eigenschaften von Steuerelementen in einem Windows Form auf einen ganzzahligen Wert festgelegt sind, werden Sie auf einen einzelnen für Steuerelemente in einem Word-Dokument festgelegt. In Excel werden die Eigenschaftswerte von Steuerelementen auf einen Double-Wert festgelegt. Wenn die `Height` - `Width` Eigenschaft und die-Eigenschaft eines-Steuer Elements auf einem Arbeitsblatt die Größe des Arbeitsblatts oder Bildschirms überschreiten, wird der Wert abgeschnitten.|
+|Größe des Steuer Elements ändern|Wenn Sie die Größe eines Steuer Elements im Dokument mit einem der acht Zieh Punkte ändern, werden die neuen Steuerelement Dimensionen nicht im **Eigenschaften** Fenster angezeigt, bis das Steuerelement erneut ausgewählt wird.|
+|Steuerelement Verhalten|Steuerelemente auf einem Excel-Arbeitsblatt können sich möglicherweise unvorhersehbar Verhalten, wenn das Arbeitsblatt Fenster geteilt wird. Beispielsweise ist der Zugriff auf <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> ein auf dem Arbeitsblatt möglicherweise nur in einem der Fenster verfügbar.|
+|Benennen von Steuerelementen|Sie können keine reservierten Wörter verwenden, um Steuerelemente zu benennen. Wenn Sie z. b. einem <xref:Microsoft.Office.Tools.Excel.Controls.Button> Arbeitsblatt eine hinzufügen und den Namen in **System**ändern, treten beim Erstellen des Projekts Fehler auf.|
+|Programmgesteuerte Hinzufügen von Steuerelementen|Verwenden Sie den Konstruktor des Steuer Elements nicht, um dem Dokument zur Laufzeit ein Steuerelement hinzuzufügen. Verwenden Sie stattdessen die Hilfsmethoden, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]bereitgestellt werden. Verwenden Sie z. b <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> . die-Methode, um einem Arbeitsblatt eine Schaltfläche hinzuzufügen. Wenn Sie ein Steuerelement hinzufügen möchten, das von diesen Hilfsmethoden nicht unterstützt wird, können `AddControl` Sie die-Methode verwenden. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Kopieren von Steuerelementen|Wenn Sie ein Windows Forms Steuerelement kopieren und es zur Laufzeit in ein Dokument einfügen, wird ein leeres Container-ActiveX-Steuerelement in das Dokument eingefügt. Das Windows Forms Steuerelement wird nicht am neuen Speicherort angezeigt, und der Code hinter dem ursprünglichen Steuerelement wird nicht in das ActiveX-Steuerelement des Containers kopiert.|
 
-## <a name="limitations-in-document-level-projects"></a>Einschränkungen in Projekten auf Dokumentebene
+## <a name="limitations-in-document-level-projects"></a>Einschränkungen in Projekten auf Dokument Ebene
 
-Einige Einschränkungen bei der Verwendung von Windows Forms-Steuerelemente in Dokumenten gelten nur für Projekte auf Dokumentebene.
+Einige Einschränkungen bei der Verwendung von Windows Forms Steuerelementen in Dokumenten gelten nur für Projekte auf Dokument Ebene.
 
-### <a name="control-support-at-design-time"></a>Unterstützung von Steuerelementen zur Entwurfszeit
+### <a name="control-support-at-design-time"></a>Steuern der Unterstützung zur Entwurfszeit
 
-Bestimmte Windows Forms-Steuerelemente werden entfernt, von der **Toolbox** Wenn eine Excel-Arbeitsblatt oder Word-Dokument in Visual Studio-Designer geöffnet ist. Dies ist aufgrund technischer Einschränkungen oder weil die Funktionalität bereits im Word- oder Excel verfügbar sind. Excel und Word-Projekte unterstützen alle von der Windows Forms-Steuerelemente und andere Komponenten, die in angezeigt werden. die **Toolbox** Wenn das Dokument den Fokus besitzt, und Sie können auch Drittanbieter-Steuerelementen zu einem Arbeitsblatt oder Dokument hinzufügen.
-
-> [!NOTE]
-> Alle Steuerelemente werden entfernt, von der **Toolbox** Wenn ein Dokument geschützt ist. Informationen zum Dokumentschutz finden Sie unter [Dokumentschutz in Projektmappen auf Anwendungsebene](../vsto/document-protection-in-document-level-solutions.md).
+Bestimmte Windows Forms Steuerelemente werden aus der **Toolbox** entfernt, wenn ein Excel-Arbeitsblatt oder Word-Dokument im Visual Studio-Designer geöffnet ist. Dies liegt an technischen Einschränkungen oder daran, dass die Funktionalität bereits in Word oder Excel verfügbar ist. Excel-und Word-Projekte unterstützen alle Windows Forms-Steuerelemente und andere Komponenten, die in der **Toolbox** angezeigt werden, wenn das Dokument den Fokus besitzt, und Sie können einem Arbeitsblatt oder einem Dokument auch Steuerelemente von Drittanbietern hinzufügen.
 
 > [!NOTE]
-> Drittanbieter-Steuerelemente müssen die <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attributsatz auf **"true"** um in einer Office-Projektmappe verwendet werden.
+> Wenn ein Dokument geschützt ist, werden alle Steuerelemente aus der **Toolbox** entfernt. Informationen zum Schutz von Dokumenten finden Sie unter [Dokument Schutz in Projektmappen auf Dokument Ebene](../vsto/document-protection-in-document-level-solutions.md).
 
-Die folgenden Steuerelemente und Komponenten sind nicht verfügbar, in der **Toolbox**:
+> [!NOTE]
+> Für Steuerelemente von Drittanbietern muss <xref:System.Runtime.InteropServices.ComVisibleAttribute> das-Attribut auf **true** festgelegt sein, damit Sie in einer Office-Projekt Mappe verwendet werden können.
+
+Die folgenden Steuerelemente und Komponenten sind nicht in der **Toolbox**verfügbar:
 
 - <xref:System.Windows.Forms.BindingNavigator>
 
@@ -180,11 +180,11 @@ Die folgenden Steuerelemente und Komponenten sind nicht verfügbar, in der **Too
 
 ### <a name="support-for-legacy-activex-controls"></a>Unterstützung für ältere ActiveX-Steuerelemente
 
-Wenn Sie ein Office-Projekt auf Dokumentebene, die verwendet wird erstellen, ein vorhandenes Word-Dokument oder eine Excel-Arbeitsmappe, die ActiveX-Steuerelemente enthält, geht die Funktionalität des ActiveX-Steuerelemente nicht verloren; Es ist jedoch keine Unterstützung für das Hinzufügen von neuen ActiveX-Steuerelemente in Visual Studio-Dokumenten aus. Wenn Ihr Word-Dokument eine Schaltfläche aus enthält z. B. die **Steuerelement** Toolbox, die eine Makro Visual Basic für Applikationen (VBA) ausgeführt wird, diese Funktion bleibt weiterhin das Makro ausgeführt, nachdem das Dokument in einem Office-Projekt verwendet wurde. Allerdings empfiehlt es sich, dass Sie ActiveX-Steuerelemente und VBA-Makros zu entfernen und Ersetzen Sie sie mit Windows Forms-Steuerelementen und verwaltetem Code.
+Wenn Sie ein Office-Projekt auf Dokument Ebene erstellen, das ein vorhandenes Word-Dokument oder eine Excel-Arbeitsmappe verwendet, die ActiveX-Steuerelemente enthält, gehen die Funktionen der ActiveX-Steuerelemente nicht verloren. Es gibt jedoch keine Unterstützung für das Hinzufügen von neuen ActiveX-Steuerelementen zu Ihren Dokumenten aus Visual Studio. Wenn das Word-Dokument z. b. eine Schaltfläche aus der **Steuer** Element-Toolbox enthält, die ein Visual Basic for Applications-Makro (VBA) ausführt, wird das Makro weiter ausgeführt, nachdem das Dokument in einem Office-Projekt verwendet wurde. Es wird jedoch empfohlen, ActiveX-Steuerelemente und VBA-Makros zu entfernen und Sie durch Windows Forms Steuerelemente und verwalteten Code zu ersetzen.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
-- [Windows Forms-Steuerelemente in Office-Dokumente – Übersicht](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Übersicht über Windows Forms Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Vorgehensweise: Hinzufügen von Windows Forms Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

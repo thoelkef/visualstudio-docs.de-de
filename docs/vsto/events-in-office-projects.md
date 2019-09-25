@@ -32,23 +32,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ae8d89baf864c73bed42e4f478624bc930e3c143
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826057"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253610"
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="document-level-projects"></a>Projekte auf Dokumentebene
- Visual Studio stellt generierten Code hinter neuen oder vorhandenen Dokumenten oder Arbeitsblättern in Anpassungen auf Dokumentebene bereit. Dieser Code werden zwei unterschiedliche Ereignisse ausgelöst: **Beim Start** und **Herunterfahren**.
+## <a name="document-level-projects"></a>Projekte auf Dokument Ebene
+ Visual Studio stellt generierten Code hinter neuen oder vorhandenen Dokumenten oder Arbeitsblättern in Anpassungen auf Dokumentebene bereit. Mit diesem Code werden zwei unterschiedliche Ereignisse ausgelöst: **Starten** und **herunter**fahren.
 
 ### <a name="startup-event"></a>Startup-Ereignis
- Das **Startup** -Ereignis wird für jedes Hostelement ausgelöst (Dokument, Arbeitsmappe oder Arbeitsblatt), nachdem das Dokument und der gesamte Initialisierungscode in der Assembly ausgeführt wurde. Dies ist das letzte ausgeführte Element im Konstruktor der Klasse, in dem Ihr Code ausgeführt wird. Weitere Informationen zu Hostelementen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
+ Das **Startup** -Ereignis wird für jedes Hostelement ausgelöst (Dokument, Arbeitsmappe oder Arbeitsblatt), nachdem das Dokument und der gesamte Initialisierungscode in der Assembly ausgeführt wurde. Dies ist das letzte ausgeführte Element im Konstruktor der Klasse, in dem Ihr Code ausgeführt wird. Weitere Informationen zu Host Elementen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
 
  Wenn Sie ein Projekt auf Dokumentebene erstellen, erstellt Visual Studio Ereignishandler für das **Startup** -Ereignis in den generierten Codedateien:
 
@@ -84,7 +84,7 @@ ms.locfileid: "67826057"
 > [!NOTE]
 > Vermeiden Sie es, Steuerelemente während des **Shutdown** -Ereignishandlerzeitraums des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das **Shutdown** -Ereignis eintritt. Wenn Sie Steuerelemente vor dem Schließen der Anwendung entfernen möchten, können Sie Ihren Code einem anderen Ereignishandler hinzufügen, z. B. **BeforeClose** oder **BeforeSave**.
 
-### <a name="event-handler-method-declarations"></a>Ereignishandler-Methodendeklarationen
+### <a name="event-handler-method-declarations"></a>Methoden Deklarationen der Ereignis Handlers
  An jede Ereignishandler-Methodendeklaration werden die gleichen Argumente übergeben: *sender* und *e*. In Excel bezieht sich das *sender* -Argument auf das Arbeitsblatt, z. B. `Sheet1` oder `Sheet2`. In Word bezieht sich das *sender* -Argument auf das Dokument. Das *e* -Argument bezieht sich auf die Standardargumente für ein Ereignis, die in diesem Fall nicht verwendet werden.
 
  Im folgenden Codebeispiel werden die Standardereignishandler in Projekten auf Dokumentebene für Word veranschaulicht.
@@ -100,7 +100,7 @@ ms.locfileid: "67826057"
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
 
-### <a name="order-of-events-in-document-level-excel-projects"></a>Reihenfolge der Ereignisse in Excel-Projekten auf Dokumentebene
+### <a name="order-of-events-in-document-level-excel-projects"></a>Reihenfolge der Ereignisse in Excel-Projekten auf Dokument Ebene
  Die **Startup** -Ereignishandler in Excel-Projekten werden in dieser Reihenfolge aufgerufen:
 
 1. `ThisWorkbook_Startup`.
@@ -125,7 +125,7 @@ ms.locfileid: "67826057"
 
 10. Andere Blätter laut Reihenfolge.
 
-    Die Reihenfolge wird festgelegt, wenn das Projekt kompiliert wird. Wenn der Benutzer die Blätter zur Laufzeit anders anordnet, ist es nicht die Reihenfolge ändern, dass die Ereignisse auf das nächste Mal ausgelöst werden, das die Arbeitsmappe geöffnet bzw. geschlossen wird.
+    Die Reihenfolge wird festgelegt, wenn das Projekt kompiliert wird. Wenn der Benutzer die Blätter zur Laufzeit anders anordnet, ändert sich dadurch nicht die Reihenfolge, in der die Ereignisse beim nächsten Öffnen oder Schließen der Arbeitsmappe ausgelöst werden.
 
 ## <a name="vsto-add-in-projects"></a>VSTO-Add-In-Projekte
  Visual Studio stellt generierten Code in VSTO-Add-Ins bereit. Mit diesem Code werden zwei unterschiedliche Ereignisse ausgelöst: <xref:Microsoft.Office.Tools.AddInBase.Startup> und <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
@@ -135,9 +135,9 @@ ms.locfileid: "67826057"
 
  Code im `ThisAddIn_Startup` -Ereignishandler ist der erste Benutzercode, der ausgeführt wird, es sei denn, Ihr VSTO-Add-In setzt die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode außer Kraft. In diesem Fall wird der `ThisAddIn_Startup` -Ereignishandler nach <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>aufgerufen.
 
- Fügen Sie Code in nicht die `ThisAdd-In_Startup` -Ereignishandler, wenn der Code ein geöffnetes Dokument erforderlich ist. Fügen Sie stattdessen diesen Code einem Ereignis hinzu, welches durch die Office-Anwendung ausgelöst wird, wenn vom Benutzer ein Dokument erstellt oder geöffnet wird. Weitere Informationen finden Sie unter [auf ein Dokument zugreifen, beim Starten der Office-Anwendung](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ Fügen Sie im `ThisAdd-In_Startup` -Ereignishandler keinen Code hinzu, wenn der Code erfordert, dass ein Dokument geöffnet ist. Fügen Sie stattdessen diesen Code einem Ereignis hinzu, welches durch die Office-Anwendung ausgelöst wird, wenn vom Benutzer ein Dokument erstellt oder geöffnet wird. Weitere Informationen finden Sie unter [zugreifen auf ein Dokument beim Starten der Office-Anwendung](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
- Weitere Informationen zur Startsequenz von VSTO-Add-ins finden Sie unter [Architecture of VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md).
+ Weitere Informationen zur Startsequenz von VSTO-Add-Ins finden Sie unter [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="shutdown-event"></a>Shutdown-Ereignis
  Das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis wird ausgelöst, wenn die Anwendungsdomäne, in der Ihr Code geladen wird, entladen werden soll. Dieses Ereignis wird mit der `ThisAddIn_Shutdown` -Methode in der generierten Codedatei behandelt. Dieser Ereignishandler ist der letzte Benutzercode, der beim Entladen des VSTO-Add-Ins ausgeführt wird.
@@ -153,8 +153,8 @@ ms.locfileid: "67826057"
 > Sie können für Outlook erzwingen, dass das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis beim Beenden ausgelöst wird, indem Sie dies in der Registrierung ändern. Aber wenn ein Administrator diese Einstellung zurücksetzt, wird der Code, den Sie der `ThisAddIn_Shutdown` -Methode hinzufügen, beim Beenden von Outlook nicht mehr ausgeführt. Weitere Informationen finden Sie unter [Shutdown-Änderungen für Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Siehe auch
-- [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)
+- [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
 - [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
-- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
+- [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926674"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255690"
 ---
 # <a name="actions-pane-overview"></a>Übersicht über den Aktionsbereich
   Ein Aktionsbereich ist ein anpassbarer Aufgabenbereich für **Dokument Aktionen** , der an ein bestimmtes Microsoft Office Word-Dokument oder eine Microsoft Office Excel-Arbeitsmappe angefügt wird. Der Aktionsbereich wird im Aufgabenbereich Office zusammen mit anderen integrierten Aufgabenbereichen gehostet, wie z. b. dem Aufgabenbereich **XML-Quelle** in Excel oder dem Aufgabenbereich **Formatvorlagen und Formatierung** in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.
@@ -114,7 +114,7 @@ ms.locfileid: "68926674"
 |Fromleft|Stapelt vom linken Rand des Aktionsbereichs.|
 |Fromright|Stapelt vom rechten Rand des Aktionsbereichs.|
 |FromTop|Stapelt von oberen Rand des Aktionsbereichs.|
-|None|Es wurde keine Stapelreihenfolge definiert; die Reihenfolge wird vom Entwickler gesteuert.|
+|Keine|Es wurde keine Stapelreihenfolge definiert; die Reihenfolge wird vom Entwickler gesteuert.|
 
  Im folgenden Code wird die <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>-Eigenschaft festgelegt, um die Benutzersteuerelemente vom oberen Rand des Aktionsbereichs zu stapeln.
 
@@ -122,7 +122,7 @@ ms.locfileid: "68926674"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>Anker Steuerelemente
- Wenn der Benutzer die Größe des Aktionsbereichs zur Laufzeit ändert, kann die Größe der Steuerelemente im Aktionsbereich geändert werden. Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>-Eigenschaft eines Windows Forms-Steuerelements verwenden, um Steuerelemente im Aktionsbereich zu verankern. Auf dieselbe Weise können Sie auch die Windows Forms-Steuerelemente im Benutzersteuerelement verankern. Weitere Informationen finden Sie unter [Vorgehensweise: Verankern von Steuerelementen](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)auf Windows Forms.
+ Wenn der Benutzer die Größe des Aktionsbereichs zur Laufzeit ändert, kann sich die Größe der Steuerelemente mit dem Aktionsbereich ändern. Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>-Eigenschaft eines Windows Forms-Steuerelements verwenden, um Steuerelemente im Aktionsbereich zu verankern. Auf dieselbe Weise können Sie auch die Windows Forms-Steuerelemente im Benutzersteuerelement verankern. Weitere Informationen finden Sie unter [Vorgehensweise: Verankern von Steuerelementen](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)auf Windows Forms.
 
 ## <a name="resize-the-actions-pane"></a>Ändern der Größe des Aktionsbereichs
  Sie können die Größe von <xref:Microsoft.Office.Tools.ActionsPane> nicht direkt ändern, weil <xref:Microsoft.Office.Tools.ActionsPane> in den Aufgabenbereich eingebettet ist. Sie können die Breite des Aufgabenbereichs jedoch programmgesteuert ändern, indem Sie die <xref:Microsoft.Office.Core.CommandBar.Width%2A>-Eigenschaft der <xref:Microsoft.Office.Core.CommandBar> festlegen, die den Aufgabenbereich darstellt. Sie können die Höhe des Aufgabenbereichs ändern, falls er horizontal angedockt oder unverankert ist.

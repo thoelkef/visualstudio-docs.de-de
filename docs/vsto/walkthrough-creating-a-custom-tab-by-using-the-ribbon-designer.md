@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer'
+title: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,64 +17,64 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a56f8bdfed38d77a939ab8e8b159510da7fcb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438607"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255524"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-Designer
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer
   Mit dem Menüband-Designer können Steuerelemente auf der benutzerdefinierten Registerkarte hinzugefügt und positioniert werden.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
-- [Erstellen von Aktionsbereichen](#BKMK_CreateActionsPanes).
+- [Erstellen von Aktions](#BKMK_CreateActionsPanes)Bereichen.
 
-- [Erstellen einer benutzerdefinierten Registerkarte](#BKMK_CreateCustomTab).
+- [Erstellen Sie eine benutzerdefinierte Registerkarte](#BKMK_CreateCustomTab).
 
-- [Ausblenden und Anzeigen von Aktionsbereichen mithilfe von Schaltflächen auf der benutzerdefinierten Registerkarte](#BKMK_HideShowActionsPane).
+- [Anzeigen und Anzeigen von Aktionsbereichen mithilfe von Schaltflächen auf der Registerkarte "Benutzer](#BKMK_HideShowActionsPane)definiert".
 
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - Microsoft Excel
 
-## <a name="create-an-excel-workbook-project"></a>Erstellen Sie ein Excel-Workbook-Projekt
+## <a name="create-an-excel-workbook-project"></a>Erstellen eines Excel-Arbeitsmappenprojekts
  Die Schritte für die Verwendung des Menüband-Designers sind für alle Office-Anwendungen nahezu identisch. In diesem Beispiel wird eine Excel-Arbeitsmappe verwendet.
 
 ### <a name="to-create-an-excel-workbook-project"></a>So erstellen Sie ein Excel-Arbeitsmappenprojekt
 
-- Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **MyExcelRibbon**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **MyExcelRibbon**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
 
-     Visual Studio öffnet die neue Arbeitsmappe im Designer und fügt die **MyExcelRibbon** Projekt **Projektmappen-Explorer**.
+     Visual Studio öffnet die neue Arbeitsmappe im Designer und fügt das Projekt **MyExcelRibbon** **Projektmappen-Explorer**hinzu.
 
-## <a name="BKMK_CreateActionsPanes"></a> Erstellen von Aktionsbereichen
+## <a name="BKMK_CreateActionsPanes"></a>Aktionsbereiche erstellen
  Fügen Sie dem Projekt zwei benutzerdefinierte Aktionsbereiche hinzu. Später werden der benutzerdefinierten Registerkarte Schaltflächen hinzugefügt, mit denen diese Aktionsbereiche angezeigt und ausgeblendet werden.
 
 ### <a name="to-create-actions-panes"></a>So erstellen Sie Aktionsbereiche
 
 1. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **ActionsPaneControl**, und wählen Sie dann **hinzufügen**.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **aktionspanecontrol**aus, und wählen Sie dann **Hinzufügen**aus.
 
-     Die **ActionsPaneControl1.cs** oder **ActionsPaneControl1.vb** Datei wird im Designer geöffnet.
+     Die Datei **ActionsPaneControl1.cs** oder **ActionsPaneControl1. vb** wird im Designer geöffnet.
 
-3. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, fügen Sie eine Bezeichnung hinzu, auf die Designeroberfläche.
+3. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**der Designer Oberfläche eine Bezeichnung hinzu.
 
-4. In der **Eigenschaften** legen die **Text** -Eigenschaft von label1 auf **Actions Pane 1**.
+4. Legen Sie im **Eigenschaften** Fenster die **Text** -Eigenschaft von Label1 auf **Actions Pane 1**fest.
 
-5. Wiederholen Sie die Schritte 1 bis 5, um einen zweiten Aktionsbereich und eine Bezeichnung zu erstellen. Legen Sie die **Text** -Eigenschaft der zweiten Bezeichnung auf **Actions Pane 2**.
+5. Wiederholen Sie die Schritte 1 bis 5, um einen zweiten Aktionsbereich und eine Bezeichnung zu erstellen. Legen Sie die **Text** -Eigenschaft der zweiten Bezeichnung auf **Actions Pane 2**fest.
 
-## <a name="BKMK_CreateCustomTab"></a> Erstellen einer benutzerdefinierten Registerkarte
- Eine der Entwurfsrichtlinien für Office-Anwendungen besagt, dass Benutzer immer die Möglichkeit haben sollen, die Benutzeroberfläche von Office-Anwendungen zu steuern. Um diese Funktion für die Aktionsbereiche hinzuzufügen, können Schaltflächen hinzugefügt werden, mit denen jeder Aktionsbereich von einer benutzerdefinierten Registerkarte auf dem Menüband angezeigt und ausgeblendet werden kann. Fügen Sie zum Erstellen einer benutzerdefinierten Registerkarte ein **Menüband (visueller Designer)** Elements zum Projekt. Der Designer unterstützt Sie beim Hinzufügen und Anordnen von Steuerelementen, Festlegen von Steuerelementeigenschaften und Behandeln von Ereignissen von Steuerelementen.
+## <a name="BKMK_CreateCustomTab"></a>Erstellen einer benutzerdefinierten Registerkarte
+ Eine der Entwurfsrichtlinien für Office-Anwendungen besagt, dass Benutzer immer die Möglichkeit haben sollen, die Benutzeroberfläche von Office-Anwendungen zu steuern. Um diese Funktion für die Aktionsbereiche hinzuzufügen, können Schaltflächen hinzugefügt werden, mit denen jeder Aktionsbereich von einer benutzerdefinierten Registerkarte auf dem Menüband angezeigt und ausgeblendet werden kann. Fügen Sie zum Erstellen einer benutzerdefinierten Registerkarte dem Projekt ein Element vom Typ **Menüband (visueller Designer)** hinzu. Der Designer unterstützt Sie beim Hinzufügen und Anordnen von Steuerelementen, Festlegen von Steuerelementeigenschaften und Behandeln von Ereignissen von Steuerelementen.
 
 ### <a name="to-create-a-custom-tab"></a>So erstellen Sie eine benutzerdefinierte Registerkarte
 
@@ -82,38 +82,38 @@ ms.locfileid: "63438607"
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Menüband (Visueller Designer)** aus.
 
-3. Ändern Sie den Namen des neuen Menübands in **MyRibbon**, und wählen Sie **hinzufügen**.
+3. Ändern Sie den Namen des neuen Menübands in **MyRibbon**, und wählen Sie **Hinzufügen**aus.
 
      Die Datei **MyRibbon.cs** oder **MyRibbon.vb** wird im Menüband-Designer geöffnet. Sie beinhaltet eine standardmäßige Registerkarte und eine Gruppe.
 
 4. Wählen Sie im Menüband-Designer die Standardregisterkarte aus.
 
-5. In der **Eigenschaften** Fenster, erweitern Sie die **ControlId** -Eigenschaft, und legen die **ControlIdType** Eigenschaft, um **benutzerdefinierte**.
+5. Erweitern Sie im Fenster **Eigenschaften** die Eigenschaft **ControlID** , und legen Sie dann die **ControlIdType** -Eigenschaft auf **Custom**fest.
 
-6. Legen Sie die **Bezeichnung** Eigenschaft **Meine benutzerdefinierte Registerkarte**.
+6. Legen Sie die **Label** -Eigenschaft auf **meine benutzerdefinierte Registerkarte**fest.
 
-7. Wählen Sie im Menüband-Designer **group1**.
+7. Wählen Sie im Menüband-Designer die Option **group1**aus.
 
-8. In der **Eigenschaften** legen **Bezeichnung** zu **Actions Pane Manager**.
+8. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Aktions**Bereich-Manager fest.
 
-9. Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie eine Schaltfläche auf **group1**.
+9. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox**eine Schaltfläche auf **group1**.
 
-10. Wählen Sie **"Button1"**.
+10. Wählen Sie **Button1**aus.
 
-11. In der **Eigenschaften** legen **Bezeichnung** zu **Show Actions Pane 1**.
+11. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung Bezeichnung** auf **Show Actions Pane 1**fest.
 
-12. Hinzufügen einer zweiten Schaltfläche auf **group1**, und legen Sie die **Bezeichnung** Eigenschaft **Show Actions Pane 2**.
+12. Fügen Sie **group1**eine zweite Schaltfläche hinzu, und legen Sie die **Label** -Eigenschaft auf **Show Actions Pane 2**fest.
 
-13. Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie eine **ToggleButton** -Steuerelement auf **group1**.
+13. Ziehen Sie von der Register **Karte Steuer** **Elemente für Office** -Menü Bänder der **Toolbox**ein-Steuerelement auf **group1**.
 
-14. Legen Sie die **Bezeichnung** Eigenschaft **Hide Actions Pane**.
+14. Legen Sie die Eigenschaft **Bezeichnung** auf den Bereich **Aktionen ausblenden**fest.
 
-## <a name="BKMK_HideShowActionsPane"></a> Ausblenden und Anzeigen von Aktionsbereichen mithilfe von Schaltflächen auf der benutzerdefinierten Registerkarte
+## <a name="BKMK_HideShowActionsPane"></a>Ausblenden und Anzeigen von Aktionsbereichen mithilfe von Schaltflächen auf der Registerkarte "Benutzer definiert"
  Im letzten Schritt wird Code hinzugefügt, der auf den Benutzer reagiert. Fügen Sie Ereignishandler für die <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click>-Ereignisse der zwei Schaltflächen und das <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>-Ereignis der Umschaltfläche hinzu. Fügen Sie diesen Ereignishandlern Code hinzu, um das Aus- und Einblenden der Aktionsbereiche zu aktivieren.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>So werden Aktionsbereiche mithilfe von Schaltflächen auf der benutzerdefinierten Registerkarte ausgeblendet und angezeigt
 
-1. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für *MyRibbon.cs* oder *MyRibbon.vb*, und wählen Sie dann **Ansichtscode**.
+1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für *MyRibbon.cs* oder *MyRibbon. vb*, und wählen Sie dann **Code anzeigen**aus.
 
 2. Fügen Sie oben in der `MyRibbon`-Klasse den folgenden Code hinzu: Mit diesem Code werden zwei Aktionsbereichobjekte erstellt.
 
@@ -131,40 +131,40 @@ ms.locfileid: "63438607"
      [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
 
 ## <a name="test-the-custom-tab"></a>Testen der benutzerdefinierten Registerkarte
- Beim Ausführen des Projekts wird Excel gestartet, und die **Meine benutzerdefinierte Registerkarte** Registerkarte im Menüband angezeigt wird. Wählen Sie die Schaltflächen **Meine benutzerdefinierte Registerkarte** ein-und Ausblenden von die Aktionsbereiche.
+ Wenn Sie das Projekt ausführen, wird Excel gestartet, und die Registerkarte **meine benutzerdefinierte Register** Karte wird auf dem Menüband angezeigt. Wählen Sie die Schaltflächen auf der **Registerkarte Benutzer** definiert aus, um die Aktionsbereiche anzuzeigen und auszublenden.
 
 ### <a name="to-test-the-custom-tab"></a>So testen Sie die benutzerdefinierte Registerkarte
 
-1. Drücken Sie **F5** um Ihr Projekt auszuführen.
+1. Drücken Sie **F5** , um das Projekt auszuführen.
 
-2. Wählen Sie die **Meine benutzerdefinierte Registerkarte** Registerkarte.
+2. Wählen Sie die Registerkarte **meine benutzerdefinierte Registerkarte** aus.
 
-3. In der **Custom Actions Pane Manager** Gruppe **Show Actions Pane 1**.
+3. Wählen Sie in der Gruppe **benutzerdefinierte Aktionen** Bereich-Manager die Option **Aktionen Bereich 1 anzeigen**aus.
 
-     Der Bereich "Aktionen" angezeigt wird, und zeigt die Bezeichnung **Actions Pane 1**.
+     Der Aktionsbereich wird angezeigt und zeigt den **Aktionsbereich 1**der Bezeichnung an.
 
-4. Wählen Sie **Show Actions Pane 2**.
+4. Wählen Sie **Aktionsbereich 2 anzeigen**aus.
 
-     Der Bereich "Aktionen" angezeigt wird, und zeigt die Bezeichnung **Actions Pane 2**.
+     Der Aktionsbereich wird angezeigt und zeigt den **Aktionsbereich 2**der Bezeichnung an.
 
-5. Wählen Sie **Hide Actions Pane**.
+5. Wählen Sie den Bereich **Aktionen ausblenden**aus.
 
      Die Aktionsbereiche werden nicht mehr angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
  Weitere Informationen zum Anpassen der Office-Benutzeroberfläche finden Sie in diesen Themen:
 
-- Fügen Sie jeder Anpassung auf Dokumentebene kontextbasierte Benutzeroberfläche hinzu. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).
+- Fügen Sie jeder Anpassung auf Dokumentebene kontextbasierte Benutzeroberfläche hinzu. Weitere Informationen finden Sie unter [Übersicht über den Aktions](../vsto/actions-pane-overview.md)Bereich.
 
-- Erweitern Sie ein standardmäßiges oder benutzerdefiniertes Microsoft Office Outlook-Formular. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Entwerfen ein Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Erweitern Sie ein standardmäßiges oder benutzerdefiniertes Microsoft Office Outlook-Formular. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular](../vsto/walkthrough-designing-an-outlook-form-region.md)Bereichs.
 
 ## <a name="see-also"></a>Siehe auch
-- [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Übersicht über das Menüband](../vsto/ribbon-overview.md)
+- [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Menüband-Designer](../vsto/ribbon-designer.md)
 - [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Vorgehensweise: Ändern der Position einer Registerkarte des Menübands](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Vorgehensweise: Beginnen Sie mit der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Vorgehensweise: Ändern der Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)
-- [Vorgehensweise: Hinzufügen von Steuerelementen zur backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Übersicht über das Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md)
+- [Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Übersicht über das Ribbon-Objektmodell](../vsto/ribbon-object-model-overview.md)

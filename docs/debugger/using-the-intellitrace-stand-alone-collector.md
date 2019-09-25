@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680629"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252532"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Verwenden des eigenständigen IntelliTrace-SammlersC#(, Visual Basic)
 
@@ -70,7 +70,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
 5. [Daten von einer Webapp oder SharePoint-Anwendung sammeln](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     -oder-
+     - oder -
 
      [Sammeln von Daten aus einer verwalteten Anwendung](#BKMK_Collect_Data_from_Executables)
 
@@ -315,7 +315,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
   - Sie können die Startzeit reduzieren, indem Sie Ereignisse deaktivieren, die für die App nicht relevant sind. Deaktivieren Sie beispielsweise Windows Workflow-Ereignisse für Apps, die Windows Workflow nicht verwenden.
 
-  - Sie können die Start- und Laufzeitleistung verbessern, indem Sie Registrierungsereignisse für Apps deaktivieren, die auf die Registrierung zugreifen, aber keine Probleme mit Registrierungseinstellungen anzeigen.
+  - Sie können sowohl die Start-als auch die Laufzeitleistung verbessern, indem Sie Registrierungs Ereignisse für apps deaktivieren, die auf die Registrierung zugreifen, aber keine Probleme mit den Registrierungs Einstellungen anzeigen.
 
 - Überprüfen Sie die Module im Sammlungsplan, für die IntelliTrace Daten sammelt. Bearbeiten Sie den Sammlungsplan, um nur für Sie interessante Module einzuschließen:
 

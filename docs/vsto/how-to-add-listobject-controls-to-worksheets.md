@@ -13,32 +13,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f6ca2544f64433746f6aa57c9456fee11459db
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826708"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254695"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern
-  Sie können hinzufügen <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen zu einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Projekten auf Dokumentebene.
+  Sie können <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente in einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Projekten auf Dokumentebene hinzufügen.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Sie können auch hinzufügen <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen zur Laufzeit in VSTO-Add-in-Projekte.
+ Sie können auch <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelementen zur Laufzeit in VSTO-Add-In-Projekte hinzufügen.
 
  In diesem Thema werden die folgenden Aufgaben beschrieben:
 
 - [Hinzufügen von ListObject-Steuerelementen zur Entwurfszeit](#designtime)
 
-- [Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)
+- [Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene](#runtimedoclevel)
 
 - [Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)
 
-  Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelemente finden Sie [ListObject-Steuerelement](../vsto/listobject-control.md).
+  Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen finden Sie unter [ListObject Control](../vsto/listobject-control.md).
 
-## <a name="designtime"></a> Hinzufügen von ListObject-Steuerelementen zur Entwurfszeit
- Es gibt mehrere Möglichkeiten zum Hinzufügen von <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente in einem Arbeitsblatt in einem Projekt auf Dokumentebene zur Entwurfszeit: Von in Excel, über die Visual Studio **Toolbox**, und von der **Datenquellen** Fenster.
+## <a name="designtime"></a>Hinzufügen von ListObject-Steuerelementen zur Entwurfszeit
+ Es gibt mehrere Möglichkeiten zum hinzu <xref:Microsoft.Office.Tools.Excel.ListObject> fügen von Steuerelementen zu einem Arbeitsblatt in einem Projekt auf Dokument Ebene zur Entwurfszeit: Aus Excel, aus der Visual Studio- **Toolbox**und aus dem **Datenquellen** Fenster.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -60,14 +60,14 @@ ms.locfileid: "62826708"
 
 #### <a name="to-use-the-data-sources-window"></a>So verwenden Sie das Fenster „Datenquellen“
 
-1. Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Datenquelle. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).
+1. Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Datenquelle. Weitere Informationen finden Sie unter [Hinzufügen neuer Verbindungen](../data-tools/add-new-connections.md).
 
 2. Ziehen Sie eine Tabelle aus dem Fenster **Datenquellen** in das Arbeitsblatt.
 
      Ein datengebundenes <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement wird dem Arbeitsblatt hinzugefügt. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a> Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene
- Sie können hinzufügen, die <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement dynamisch zur Laufzeit. So können Sie Hoststeuerelemente als Antwort auf Ereignisse erstellen. Dynamisch erstellte Listenobjekte werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
+## <a name="runtimedoclevel"></a>Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem Projekt auf Dokument Ebene
+ Sie können das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement dynamisch zur Laufzeit hinzufügen. So können Sie Hoststeuerelemente als Antwort auf Ereignisse erstellen. Dynamisch erstellte Listenobjekte werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein ListObject-Steuerelement programmgesteuert hinzu
 
@@ -76,8 +76,8 @@ ms.locfileid: "62826708"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="runtimeaddin"></a> Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
- Sie können ein <xref:Microsoft.Office.Tools.Excel.ListObject>-Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Dynamisch erstellte Listenobjekte werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt gespeichert und geschlossen wird. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+## <a name="runtimeaddin"></a>Hinzufügen von ListObject-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+ Sie können ein <xref:Microsoft.Office.Tools.Excel.ListObject>-Steuerelement programmgesteuert jedem geöffneten Arbeitsblatt in einem VSTO-Add-In-Projekt hinzufügen. Dynamisch erstellte Listenobjekte werden im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt gespeichert und geschlossen wird. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein ListObject-Steuerelement programmgesteuert hinzu
 
@@ -87,11 +87,11 @@ ms.locfileid: "62826708"
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
 ## <a name="see-also"></a>Siehe auch
-- [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [ListObject-Steuerelement](../vsto/listobject-control.md)
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
-- [Vorgehensweise: Größe von ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
+- [Vorgehensweise: Größe von ListObject-Steuerelementen ändern](../vsto/how-to-resize-listobject-controls.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

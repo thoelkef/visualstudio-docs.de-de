@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870821"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252179"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX-Erweiterungs Schema 2,0-Referenz
 In einer VSIX-Bereitstellungs Manifest-Datei wird der Inhalt eines VSIX-Pakets beschrieben. Das Dateiformat wird durch ein Schema geregelt. Version 2,0 dieses Schemas unterstützt das Hinzufügen von benutzerdefinierten Typen und Attributen.  Das Schema des Manifests ist erweiterbar. Das Manifest-Lade Modul ignoriert XML-Elemente und-Attribute, die es nicht versteht.
@@ -38,7 +38,7 @@ In einer VSIX-Bereitstellungs Manifest-Datei wird der Inhalt eines VSIX-Pakets b
 
 - `<Assets>`Dieser Abschnitt enthält alle in diesem Paket enthaltenen Assets. Ohne diesen Abschnitt stellt dieses Paket keinen Inhalt dar.
 
-- `<AnyElement>*`-Das Manifest-Schema ist flexibel genug, um beliebige andere Elemente zuzulassen. Alle untergeordneten Elemente, die nicht vom Manifest-Loader erkannt werden, werden in der Erweiterungs-Manager-API als zusätzliche XmlElement-Objekte verfügbar gemacht. Mithilfe dieser untergeordneten Elemente können VSIX-Erweiterungen zusätzliche Daten in der Manifestressource definieren, auf die der Code in Visual Studio zur Laufzeit zugreifen kann. Siehe [Microsoft. VisualStudio. ExtensionManager. IExtension. additionalelements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
+- `<AnyElement>*`-Das Manifest-Schema ist flexibel genug, um beliebige andere Elemente zuzulassen. Alle untergeordneten Elemente, die nicht vom Manifest-Loader erkannt werden, werden in der Erweiterungs-Manager-API als zusätzliche XmlElement-Objekte verfügbar gemacht. Mithilfe dieser untergeordneten Elemente können VSIX-Erweiterungen zusätzliche Daten in der Manifestressource definieren, auf die der Code, der in Visual Studio ausgeführt wird, zur Laufzeit zugreifen kann. Siehe [Microsoft. VisualStudio. ExtensionManager. IExtension. additionalelements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
 
 ### <a name="metadata-element"></a>Metadata-Element
  In diesem Abschnitt handelt es sich um die Metadaten für das Paket, seine Identität und die Werbeinformationen. `<Metadata>`enthält die folgenden Elemente:
@@ -49,7 +49,7 @@ In einer VSIX-Bereitstellungs Manifest-Datei wird der Inhalt eines VSIX-Pakets b
 
   - `Version`: Definiert die Version dieses Pakets und dessen Inhalt. Dieses Attribut folgt dem Format der CLR-assemblyversionierung: Hauptversion. neben Version. Build. Revision (1.2.40308.00). Ein Paket mit einer höheren Versionsnummer wird als Updates für das Paket angesehen und kann über die vorhandene installierte Version installiert werden.
 
-  - `Language`: Dieses Attribut ist die Standardsprache für das Paket und entspricht den Textdaten in diesem Manifest. Dieses Attribut folgt der CLR-Gebiets Schema-Code Konvention für Ressourcenassemblys, z. b.: en-US, en, fr-fr. Sie können angeben `neutral` , um eine sprachneutrale Erweiterung zu deklarieren, die in einer beliebigen Version von Visual Studio ausgeführt wird. Der Standardwert ist `neutral`.
+  - `Language`: Dieses Attribut ist die Standardsprache für das Paket und entspricht den Textdaten in diesem Manifest. Dieses Attribut folgt der CLR-Gebiets Schema-Code Konvention für Ressourcenassemblys, z. b.: en-US, en, fr-fr. Sie können angeben `neutral` , um eine sprachneutrale Erweiterung zu deklarieren, die in einer beliebigen Version von Visual Studio ausgeführt wird. Der Standardwert ist `neutral`sein.
 
   - `Publisher`: Dieses Attribut identifiziert den Herausgeber dieses Pakets, entweder einen Firmennamen oder einen individuellen Namen. Das `Publisher` -Attribut ist auf 100 Zeichen beschränkt.
 

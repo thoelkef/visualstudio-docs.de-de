@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes auswählen von Arbeitsblättern'
+title: 'Vorgehensweise: Programm gesteuertes auswählen von Arbeitsblättern'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,22 +13,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b56df406049f3f4076f6e4d1efebcf0eb2abb18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962290"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255628"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Vorgehensweise: Programmgesteuertes auswählen von Arbeitsblättern
+# <a name="how-to-programmatically-select-worksheets"></a>Vorgehensweise: Programm gesteuertes auswählen von Arbeitsblättern
   Die Methode <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> wählt das angegebene Objekt aus. Die Auswahl des Benutzers wird in das neue Objekt verschoben. Verwenden Sie die Methode <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A>, wenn Sie den Fokus auf das Objekt verschieben möchten, ohne die Benutzerauswahl zu ändern.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Wenn Sie ein vorhandenes Arbeitsblatt in einem VSTO-Add-in auswählen möchten oder wenn das Arbeitsblatt zur Laufzeit in einer Anpassung auf Dokumentebene erstellt wurde, Sie darauf zugreifen müssen, mit der Excel <xref:Microsoft.Office.Interop.Excel.Sheets> Auflistung der Excel-Arbeitsmappe; andernfalls können Sie die zugreifen<xref:Microsoft.Office.Tools.Excel.Worksheet>Hostelement direkt.
+ Wenn Sie ein vorhandenes Arbeitsblatt in einem VSTO-Add-In auswählen möchten oder wenn das Arbeitsblatt zur Laufzeit in einer Anpassung auf Dokumentebene erstellt wurde, müssen Sie mit der Excel-Auflistung <xref:Microsoft.Office.Interop.Excel.Sheets> der Excel-Arbeitsmappe darauf zugreifen. Andernfalls können Sie direkt auf das <xref:Microsoft.Office.Tools.Excel.Worksheet>-Hostelement zugreifen.
 
-## <a name="use-the-worksheet-host-item"></a>Verwenden Sie das Arbeitsblatt-Hostelement
- Fügen Sie den folgenden Code hinzu, in einer Anpassung auf Dokumentebene *Sheet1.vb* oder *Sheet1.cs*.
+## <a name="use-the-worksheet-host-item"></a>Arbeitsblatt-Host Element verwenden
+ Fügen Sie in einer Anpassung auf Dokument Ebene den folgenden Code zu *Sheet1. vb* oder *Sheet1.cs*hinzu.
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>So wählen Sie das erste Arbeitsblatt in einer Arbeitsmappe mithilfe eines Hostelements aus
 
@@ -49,12 +49,12 @@ ms.locfileid: "62962290"
 
 ## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
-- [Vorgehensweise: Programmgesteuertes Drucken von Arbeitsblättern](../vsto/how-to-programmatically-print-worksheets.md)
-- [Vorgehensweise: Programmgesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [Vorgehensweise: Programmgesteuertes Ausblenden von Arbeitsblättern](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Vorgehensweise: Programmgesteuertes Schützen von Arbeitsblättern](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Arbeitsblatthostelement](../vsto/worksheet-host-item.md)
+- [Vorgehensweise: Programm gesteuertes Drucken von Arbeitsblättern](../vsto/how-to-programmatically-print-worksheets.md)
+- [Vorgehensweise: Programm gesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [Vorgehensweise: Arbeitsblätter Programm gesteuert ausblenden](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Vorgehensweise: Programm gesteuertes schützen von Arbeitsblättern](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Arbeitsblatt-Host Element](../vsto/worksheet-host-item.md)
 - [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)
-- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
-- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
+- [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870715"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254118"
 ---
 # <a name="access-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 
@@ -138,7 +138,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Dynamisches Laden von Modellen
  Wenn Sie zur Laufzeit bestimmen möchten, welche Modelle geladen werden sollen, können Sie eine Modelldatei dynamisch in den Programmcode laden, anstatt die DSL-spezifische Direktive zu verwenden.
 
- Eine der Funktionen der DSL-spezifischen Direktive besteht jedoch darin, den DSL-Namespace zu importieren, damit der Vorlagen Code die in dieser DSL definierten Domänen Klassen verwenden kann. Da Sie nicht die-Direktive verwenden, müssen Sie  **\<** Assembly> hinzufügen und  **\<>** Direktiven für alle Modelle importieren, die Sie möglicherweise laden. Dies ist einfach, wenn die verschiedenen Modelle, die Sie möglicherweise laden, alle Instanzen derselben DSL sind.
+ Eine der Funktionen der DSL-spezifischen Direktive besteht jedoch darin, den DSL-Namespace zu importieren, damit der Vorlagen Code die in dieser DSL definierten Domänen Klassen verwenden kann. Da Sie nicht die-Direktive verwenden, müssen Sie  **\<Assembly>** hinzufügen und  **\<>** Direktiven für alle Modelle importieren, die Sie möglicherweise laden. Dies ist einfach, wenn die verschiedenen Modelle, die Sie möglicherweise laden, alle Instanzen derselben DSL sind.
 
  Die effektivste Methode zum Laden der Datei ist die Verwendung Visual Studio ModelBus. In einem typischen Szenario verwendet Ihre Textvorlage eine DSL-spezifische Direktive, um das erste Modell auf die übliche Weise zu laden. Dieses Modell enthält ModelBus-Verweise auf ein anderes Modell. Mit ModelBus können Sie das Modell öffnen, auf das verwiesen wird, und auf ein bestimmtes Element zugreifen. Weitere Informationen finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 

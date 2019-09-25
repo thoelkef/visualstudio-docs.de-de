@@ -15,78 +15,78 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945218"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255779"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
 
-Microsoft Visual Studio und Microsoft Office enthalten zahlreiche Funktionen zur Barrierefreiheit, mit denen Sie benutzerdefinierte Lösungen zu erstellen, die Zugriff auf standard-Anforderungen erfüllen. Microsoft veröffentlicht Richtlinien für den Zugriff auf im Web. Weitere Informationen finden Sie unter den [-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio und Microsoft Office enthalten viele Barrierefreiheits Features, die es Ihnen ermöglichen, benutzerdefinierte Lösungen zu erstellen, die die Standardanforderungen für Barrierefreiheit erfüllen. Microsoft veröffentlicht Richtlinien für Barrierefreiheit im Web. Weitere Informationen finden Sie auf der [Website zur Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=37113).
 
-In den meisten Fällen erfüllen die Office-Projekten in Visual Studio Accessibility Standards oder macht Eigenschaften, die Sie festlegen können, um Ihre Lösungen zugänglich zu machen. Es gibt jedoch einige Features, die Zugriff auf eingeschränkte haben.
+In den meisten Fällen erfüllen Office-Projekte in Visual Studio Barrierefreiheits Standards oder machen Eigenschaften verfügbar, die Sie festlegen können, um Ihre Lösungen zugänglich zu machen. Allerdings gibt es einige Features mit eingeschränkter Barrierefreiheit.
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>Barrierefreiheit zur Entwurfszeit
 
-### <a name="use-shortcut-keys-in-document-level-projects"></a>Verwenden von Tastenkombinationen in Projekten auf Dokumentebene
- Wenn Microsoft Office Word-Dokument oder einer Microsoft Office Excel-Arbeitsmappe in Visual Studio geöffnet ist, empfängt nur eine Anwendung zu einem Zeitpunkt Befehle der Tastenkombination. Standardmäßig erhält das Visual Studio alle Befehle für Tastenkombination, Sie können jedoch Word- oder Excel, die sie empfangen werden, wenn das Dokument den Fokus durch Auswahl besitzt **Dynamisches Tastaturschema** auf die **Tastatureinstellungen** Seite von der **Optionen** Dialogfeld. Weitere Informationen finden Sie unter [Microsoft Office Word-Tastatur, Microsoft Office-Tastatureinstellungen, Dialogfeld Optionen](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) und [Microsoft Office Excel-Tastatur, Microsoft Office-Tastatureinstellungen, Dialogfeld "Optionen"](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).
+### <a name="use-shortcut-keys-in-document-level-projects"></a>Verwenden von Tastenkombinationen in Projekten auf Dokument Ebene
+ Wenn ein Microsoft Office Word-Dokument oder eine Microsoft Office Excel-Arbeitsmappe in Visual Studio geöffnet ist, empfängt jeweils nur eine Anwendung die Tastenkombinationen. Standardmäßig empfängt Visual Studio alle Tastenkombinationen, Sie können Sie jedoch in Word oder Excel empfangen, wenn das Dokument den Fokus besitzt, indem Sie auf der Seite **Tastatur Einstellungen** des Dialog Felds **Optionen die Option** **dynamisches Tastatur Schema** auswählen. Weitere Informationen finden Sie unter [Microsoft Office Word-Tastatur, Microsoft Office Tastatur Einstellungen, Dialogfeld "Optionen](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) " und [Microsoft Office Excel-Tastatur, Microsoft Office Tastatur Einstellungen, Dialogfeld "Optionen](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)".
 
-### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Anzeigen von Tastenkombinationen für die Multifunktionsleiste in Projekten auf Dokumentebene
- Wenn Sie ein Word-Dokument oder eine Excel-Arbeitsmappe in Visual Studio geöffnet ist, drücken Sie können nicht die **Alt** -Taste, um die Tastenkombinationen für die Registerkarten und Steuerelemente auf dem Menüband anzeigen. Um die Tastenkombinationen anzuzeigen, während das Dokument oder die Arbeitsmappe im Designer geöffnet ist, führen Sie die folgenden Schritte aus.
+### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Anzeigen von Tastenkombinationen für das Menüband in Projekten auf Dokument Ebene
+ Wenn ein Word-Dokument oder eine Excel-Arbeitsmappe in Visual Studio geöffnet ist, können Sie die **alt** -Taste nicht drücken, um die Tastenkombinationen für die Registerkarten und Steuerelemente auf dem Menüband anzuzeigen. Um die Tastenkombinationen anzuzeigen, während das Dokument oder die Arbeitsmappe im Designer geöffnet ist, führen Sie die folgenden Schritte aus.
 
-#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Um Tastenkombinationen für die Multifunktionsleiste Registerkarten und Steuerelemente im Designer anzuzeigen.
+#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>So zeigen Sie Tastenkombinationen für Registerkarten und Steuerelemente des Menübands im Designer an
 
-1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Optionen**.
+1. Klicken Sie in Visual Studio im **Menü Extras** auf **Optionen**.
 
-2. Erweitern Sie die **Büroanwendungen** Knoten, und wählen **Microsoft Office Excel-Tastatur** oder **Microsoft Office Word-Tastatur**je nach Bedarf.
+2. Erweitern Sie den Knoten " **Office-Tools** ", und wählen Sie nach Bedarf **Microsoft Office Excel-Tastatur** oder **Microsoft Office Wort Tastatur**aus.
 
-3. Wählen Sie **Dynamisches Tastaturschema**.
+3. Wählen Sie **dynamisches Tastatur Schema**aus.
 
-     Es wird eine Meldung angezeigt, die besagt, dass Sie Visual Studio für die Änderung wirksam wird neu gestartet werden müssen.
+     Es wird eine Meldung angezeigt, die besagt, dass Sie Visual Studio neu starten müssen, damit die Änderung wirksam wird.
 
 4. Klicken Sie auf **OK**.
 
-5. Starten Sie Visual Studio neu, und öffnen Sie Ihr Projekt.
+5. Starten Sie Visual Studio neu, und öffnen Sie das Projekt erneut.
 
-6. Öffnen Sie den Dokument oder die Arbeitsmappe Designer für das Projekt.
+6. Öffnen Sie das Dokument oder den arbeitsmappendesigner für Ihr Projekt.
 
-7. Drücken Sie **F6** die Tastenkombinationen für das Menüband angezeigt werden soll.
+7. Drücken Sie **F6** , um die Tastenkombinationen für das Menüband anzuzeigen.
 
-## <a name="accessibility-at-runtime"></a>Zugriff zur Laufzeit
+## <a name="accessibility-at-run-time"></a>Barrierefreiheit zur Laufzeit
 
-### <a name="windows-forms-controls-on-office-documents"></a>Windows Forms-Steuerelemente für Office-Dokumente
- Windows Forms-Steuerelemente verfügbar machen Eigenschaften von Bedienungshilfen um Informationen über das Steuerelement an Eingabehilfen, z.B. die Sprachausgabe bereitzustellen. Profitieren Sie von diesen Eigenschaften von Bedienungshilfen, wenn die Steuerelemente in Office-Dokumenten in einer Anpassung auf Dokumentebene befinden. Weitere Informationen finden Sie unter [bieten Informationen über Eingabehilfen für Steuerelemente auf einem Windows Form](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
+### <a name="windows-forms-controls-on-office-documents"></a>Windows Forms Steuerelemente in Office-Dokumenten
+ Windows Forms Steuerelemente machen Barrierefreiheits Eigenschaften verfügbar, die Informationen über das Steuerelement für Barrierefreiheits Hilfen bereitstellen, z. b. Sprachausgabe Sie können diese Barrierefreiheits Eigenschaften nutzen, wenn die Steuerelemente in einem Office-Dokument in einer Anpassung auf Dokument Ebene vorliegen. Weitere Informationen finden Sie unter [Bereitstellen von Barrierefreiheits Informationen für Steuerelemente in einem Windows Form](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
 
- Es gibt jedoch auch einige Einschränkungen Zugriff zur Laufzeit ein Windows Forms-Steuerelemente auf einem Excel-Arbeitsmappe oder ein Word-Dokument gehostet werden:
+ Zur Laufzeit gibt es jedoch einige Einschränkungen für die Barrierefreiheit, wenn Windows Forms-Steuerelemente in einer Excel-Arbeitsmappe oder einem Word-Dokument gehostet werden:
 
-- Sie können nicht von einem Steuerelement in eine andere Registerkarte.
+- Sie können nicht von einem Steuerelement zu einem anderen Tabulator.
 
-- Steuerelemente in einem Dokument sind deaktiviert, wenn Sie die zoomeinstellung des Dokuments in etwas anderes als 100 % ändern.
+- Steuerelemente in einem Dokument werden deaktiviert, wenn Sie die Zoomeinstellung des Dokuments in einen anderen Wert als 100% ändern.
 
-  Weitere Informationen zu Einschränkungen für Windows Forms-Steuerelemente in Dokumenten finden Sie unter [Einschränkungen von Windows Forms-Steuerelemente für Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
+  Informationen zu Einschränkungen bei Windows Forms Steuerelementen in Dokumenten finden Sie unter [Einschränkungen von Windows Forms Steuerelementen in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
 ### <a name="actions-panes-and-custom-task-panes"></a>Aktionsbereiche und benutzerdefinierte Aufgabenbereiche
- Wenn ein Bereich "Aktionen" oder einen benutzerdefinierten Aufgabenbereich den Fokus besitzt, greifen Sie auf die Steuerelemente die gleiche Weise, die Sie Steuerelemente auf einer Windows Forms-Anwendung zugreifen würden. Um den Cursor zwischen den Bereich "Aktionen" und dem Dokument zu verschieben, drücken Sie **F6**.
+ Wenn ein Aktionsbereich oder ein benutzerdefinierter Aufgabenbereich den Fokus besitzt, können Sie auf die Steuerelemente auf die gleiche Weise zugreifen wie auf Steuerelemente in einer Windows Forms Anwendung. Wenn Sie den Cursor zwischen dem Aktionsbereich und dem Dokument verschieben möchten, können Sie **F6**drücken.
 
- Weitere Informationen zu Aktionsbereichen und benutzerdefinierten Aufgabenbereichen, finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md) und [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).
+ Weitere Informationen zu Aktionsbereichen und benutzerdefinierten Aufgabenbereichen finden Sie unter Übersicht über den [Aktions](../vsto/actions-pane-overview.md) Bereich und [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.
 
 ### <a name="display-modes"></a>Anzeigemodi
 
-Visual Studio verfügt über die folgenden Einschränkungen, die im Zusammenhang mit der Anzeigemodi:
+Visual Studio weist die folgenden Einschränkungen im Zusammenhang mit den Anzeigemodi auf:
 
-- Steuerelemente in einem Word-Dokument oder eine Excel-Arbeitsblatt sind deaktiviert, wenn Sie die zoomeinstellung des Dokuments in etwas anderes als 100 % ändern.
+- Steuerelemente in einem Word-Dokument oder Excel-Arbeitsblatt werden deaktiviert, wenn Sie die Zoomeinstellung des Dokuments in etwas anderes als 100% ändern.
 
-- Die **neues Projekt** Dialogfeld zeigt keine Steuerelemente ordnungsgemäß, wenn ein Benutzer des Computers Eingabehilfen, ändert **Kontrast**.
+- Im Dialogfeld **Neues Projekt** werden Steuerelemente nicht ordnungsgemäß angezeigt, wenn ein Benutzer die Barrierefreiheits Optionen des Computers zur **Verwendung von hoher Kontrast**ändert.
 
-Sie können die Bildschirmlupe verwenden, um diese Einschränkungen zu umgehen. Bildschirmlupe ist eine Anzeige-Dienstprogramm in Windows, die ein separates Fenster erstellt, in dem einen vergrößerten Teil des Bildschirms angezeigt.
+Sie können die Bildschirmlupe verwenden, um diese Einschränkungen zu überwinden. Die Bildschirmlupe ist ein Anzeige Dienstprogramm in Windows, das ein separates Fenster erstellt, in dem ein vergrößerter Teil des Bildschirms angezeigt wird.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)
+- [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
-- [Barrierefreiheit für Personen mit behinderungen](../ide/reference/accessibility-for-people-with-disabilities.md)
+- [Barrierefreiheit für Personen mit Behinderungen](../ide/reference/accessibility-for-people-with-disabilities.md)
 - [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

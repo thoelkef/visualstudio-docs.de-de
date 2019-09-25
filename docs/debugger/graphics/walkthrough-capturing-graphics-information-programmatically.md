@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erfassen von Grafikinformationen programmgesteuert | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Programm gesteuertes erfassen von Grafik Informationen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 187328e4ef4d1de0c865120400f84e65385160fc
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848518"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252892"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 Sie können die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose zur programmgesteuerten Erfassung von Grafikinformationen aus einer Direct3D-App verwenden.
@@ -23,7 +23,7 @@ Programmgesteuerte Erfassung ist in Szenarien wie den folgenden nützlich:
 
 - Beginnen Sie programmgesteuerte Erfassung, wenn Ihre Grafik-App überhaupt kein Rendern ausführt, etwa wenn in ihr DirectCompute verwendet wird, um Berechnungen auszuführen.
 
-- Rufen Sie `CaptureCurrentFrame`auf, wenn ein Renderingproblem schwer durch manuelles Testen zu antizipieren und zu erfassen ist, aber programmgesteuert mithilfe von Informationen über den Status der App zur Laufzeit vorhergesagt werden kann.
+- Wird `CaptureCurrentFrame`aufgerufen, wenn ein Renderingproblem bei manuellen Tests schwer zu antizipieren und zu erfassen ist, aber Programm gesteuert mithilfe von Informationen über den Status der App zur Laufzeit vorhergesagt werden kann.
 
 ## <a name="CaptureDX11_2"></a> Programmgesteuerte Erfassung in Windows 10
 In diesem Teil der exemplarischen Vorgehensweise wird die programmgesteuerte Erfassung in Apps gezeigt, die die DirectX 11.2-API unter Windows 10 verwenden, in der die Methode der stabilen Erfassung verwendet wird.
@@ -37,7 +37,7 @@ In diesem Abschnitt wird gezeigt, wie folgende Aufgaben ausgeführt werden:
 - Aufzeichnen von Grafikinformationen
 
 > [!NOTE]
-> Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für Visual Studio für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um erfassungsfunktionalität bereitzustellen.
+> Vorherige Implementierungen der programmgesteuerten Erfassung stützten sich auf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Remotetools für Visual Studio für, um Erfassungs Funktionen bereitzustellen.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung
 Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese die erforderlichen Header enthalten. Diese Header sind Bestandteile des Windows 10 SDK.
@@ -54,7 +54,7 @@ Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese di
     ```
 
     > [!IMPORTANT]
-    > Schließen Sie nicht die Headerdatei „vsgcapture.h“ ein – diese unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher –, um die programmgesteuerte Erfassung in Ihren Windows 10-Apps auszuführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei enthalten ist, nachdem die d3d11_2.h-Header enthalten ist, gibt der Compiler eine Warnung aus. Wenn vor dem d3d11_2.h vsgcapture.h enthalten ist, wird die app nicht starten.
+    > Schließen Sie nicht die Headerdatei „vsgcapture.h“ ein – diese unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher –, um die programmgesteuerte Erfassung in Ihren Windows 10-Apps auszuführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei nach dem einschließen des d3d11_2. h-Headers enthalten ist, gibt der Compiler eine Warnung aus. Wenn "vsgcapture. h" vor "d3d11_2. h" enthalten ist, wird die APP nicht gestartet.
 
     > [!NOTE]
     > Wenn das DirectX SDK vom Juni 2010 auf Ihrem Computer installiert wurde und der Include-Pfad Ihres Projekts `%DXSDK_DIR%includex86`enthält, verschieben Sie diesen Teil an das Ende des Include-Pfads. Gehen Sie beim Bibliothekspfad genauso vor.
@@ -63,7 +63,7 @@ Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese di
 Bevor Sie Grafikinformationen von DirectX 11.2 erfassen können, müssen Sie die DXGI-Debugschnittstelle abrufen.
 
 > [!IMPORTANT]
-> Wenn Sie programmgesteuerte Erfassung verwenden zu können, müssen Sie weiterhin Ihre app unter der Grafikdiagnose ausführen (Alt + F5 in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) oder unter dem [Befehlszeilen-Erfassungs-Tool](command-line-capture-tool.md).
+> Wenn Sie die programmgesteuerte Erfassung verwenden, müssen Sie Ihre APP weiterhin unter Grafik Diagnose (alt + [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]F5 in) oder unter dem [Befehlszeilen-Erfassungs Tool](command-line-capture-tool.md)ausführen.
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>So rufen Sie die IDXGraphicsAnalysis-Schnittstelle ab
 
@@ -74,7 +74,7 @@ Bevor Sie Grafikinformationen von DirectX 11.2 erfassen können, müssen Sie die
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  Sehen Sie sich die `HRESULT` zurückgegebenes [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) um sicherzustellen, dass Sie eine gültige Schnittstelle abrufen, bevor Sie sie verwenden:
+  Achten Sie darauf, dass `HRESULT` Sie die von [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) zurückgegebene überprüfen, um sicherzustellen, dass Sie vor der Verwendung eine gültige Schnittstelle erhalten
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -107,12 +107,12 @@ Wenn Sie nun über eine gültige `IDXGraphicsAnalysis` -Schnittstelle verfügen,
     ...
     ```
 
-- Nach dem Aufruf von `EndCapture`, das Graphics-Objekt frei.
+- Geben Sie `EndCapture`nach dem-Befehl das Grafik Objekt frei.
 
 ## <a name="next-steps"></a>Nächste Schritte
 In dieser exemplarische Vorgehensweise wurde veranschaulicht, wie Grafikinformationen programmatisch erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:
 
-- Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. Finden Sie unter [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).
+- Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. Siehe [Übersicht](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen](walkthrough-capturing-graphics-information.md)

@@ -1,5 +1,5 @@
 ---
-title: Update-Anpassungen von Menübändern in Office-Projekten migriert auf .NET Framework 4, 4.5
+title: Aktualisieren von Menü Band Anpassungen in Office-Projekten, die zu .NET Framework 4, 4,5 migriert wurden
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,26 +12,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03424ecb477a32ecff31a83d341a6eef178a31e0
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836076"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254351"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Anpassungen von Menübändern in Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
-  Wenn Ihr Projekt eine menübandanpassung, die erstellt wurde die **Menüband (visueller Designer)** Projektelement, müssen Sie die folgenden Änderungen an Ihrem Projektcode vornehmen, wenn das Zielframework geändert wird, um die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder später noch mal.
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Menü Band Anpassungen in Office-Projekten, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren
+  Wenn das Projekt eine Menü Band Anpassung enthält, die mit dem Projekt Element **Menüband (visueller Designer)** erstellt wurde, müssen Sie die folgenden Änderungen am Projekt Code vornehmen, wenn das Ziel Framework in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird.
 
 - Ändern Sie den generierten Menübandcode.
 
-- Ändern Sie Code, in dem Menüband-Steuerelemente zur Laufzeit instanziiert werden, Menübandereignisse behandelt werden oder die Position einer Menübandkomponente programmgesteuert festgelegt wird.
+- Ändern Sie Code, in dem Menüband-Steuerelemente zur Laufzeit instanziiert werden, Menü Band Ereignisse behandelt werden oder die Position einer Menü Band Komponente Programm gesteuert festgelegt wird.
 
-## <a name="update-the-generated-ribbon-code"></a>Aktualisieren Sie den generierten Menübandcode
+## <a name="update-the-generated-ribbon-code"></a>Aktualisieren des generierten Menüband-Codes
  Wenn das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie den generierten Code für das Menübandelement ändern, indem Sie die folgenden Schritte ausführen. Die zu aktualisierenden Codedateien hängen von der Programmiersprache ab und davon, wie Sie das Projekt erstellt haben:
 
-- In Visual Basic-Projekten oder in Visual C#-Projekten, die Sie in einem erstellt [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] oder [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] führen Sie alle Schritte in der Menüband-Code-Behind-Datei (*YourRibbonItem*. "Designer.cs" oder *YourRibbonItem*. Designer.vb). Um den Code-Behind-Datei in Visual Basic-Projekten anzuzeigen, klicken Sie auf die **alle Dateien anzeigen** Schaltfläche **Projektmappen-Explorer**.
+- In Visual Basic-Projekten oder in visuellen C# Projekten, die Sie entweder [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] in oder [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] in erstellt haben, führen Sie alle Schritte in der Code Behind-Datei des Menübands aus (*yourribbonitem*. Designer.cs oder *yourribbonitem*. Designer. vb). Um die Code Behind-Datei in Visual Basic-Projekten anzuzeigen, klicken Sie auf die Schaltfläche **alle Dateien anzeigen** in **Projektmappen-Explorer**.
 
-- In Visual C#-Projekten, die Sie in Visual Studio 2008 erstellt und anschließend eine Aktualisierung auf [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], führen Sie die ersten beiden Schritte aus, in der Menüband-Codedatei (*YourRibbonItem*.cs oder *YourRibbonItem*. vb), und Führen Sie die verbleibenden Schritte aus, in der Menüband-Code-Behind-Datei.
+- Führen Sie C# in Visual Studio-Projekten, die Sie in Visual Studio 2008 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]erstellt und dann auf aktualisiert haben, die ersten beiden Schritte in der Menüband-Codedatei (*yourribbonitem*. cs oder *yourribbonitem*. vb) aus, und führen Sie die restlichen Schritte im Code Behind-Datei des Menübands.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>So ändern Sie den generierten Menübandcode
 
@@ -97,30 +97,30 @@ ms.locfileid: "66836076"
     this.button1 = this.Factory.CreateRibbonButton();
     ```
 
-     Eine vollständige Liste der Hilfsmethoden für die Multifunktionsleisten-Steuerelemente, finden Sie unter [Menüband instanziieren steuert](#ribboncontrols).
+     Eine vollständige Liste der Hilfsmethoden für die Menüband-Steuerelemente finden Sie unter [instanziieren](#ribboncontrols)von Menü Band Steuerelementen.
 
 4. Ändern Sie in Visual C#-Projekten jede Codezeile in der `InitializeComponent`-Methode, die einen <xref:System.EventHandler%601>-Delegaten verwendet, um stattdessen einen bestimmten Menübanddelegaten zu verwenden.
 
      Angenommen, die Datei enthält die folgende Codezeile, die das <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click>-Ereignis in einem Projekt behandelt, das auf .NET Framework 3.5 abzielt.
 
-    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> In einem Projekt, das [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher, Sie müssen stattdessen den folgenden Code.
+    \<Codecontentplachalter > 8</CodeContentPlaceHolder> in einem Projekt, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher abzielt, müssen Sie stattdessen den folgenden Code verwenden.
 
-    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> eine vollständige Liste der Menübanddelegaten finden Sie unter [Behandeln von Menübandereignissen](#ribbonevents).
+    \<Codecontentplachalter > 9</CodeContentPlaceHolder> eine vollständige Liste der multifunktionsleistendelegaten finden Sie unter Behandeln von Menü [Band Ereignissen](#ribbonevents).
 
 5. Suchen Sie in Visual Basic-Projekten die `ThisRibbonCollection`-Klasse am Ende der Datei. Ändern Sie die Deklaration dieser Klasse, sodass sie nicht mehr von `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection` erbt.
 
-## <a name="ribboncontrols"></a> Instanziieren von Menübandsteuerelementen
+## <a name="ribboncontrols"></a>Instanziieren von Menü Band Steuerelementen
  Sie müssen jeden Code ändern, in dem Menübandsteuerelemente dynamisch instanziiert werden. In Projekten, die auf .NET Framework 3.5 abzielen, sind Menübandsteuerelemente Klassen, die Sie in bestimmten Szenarien direkt instanziieren können. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, fungieren diese Steuerelemente als Schnittstellen, die Sie nicht direkt instanziieren können. Sie müssen die Steuerelemente mit Methoden erstellen, die vom <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt bereitgestellt werden.
 
  Es gibt zwei Möglichkeiten, um auf das <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt zuzugreifen:
 
-- Mithilfe der Factory-Eigenschaft der Ribbon-Klasse zu verwenden. Verwenden Sie diesen Ansatz aus Code in der Ribbon-Klasse.
+- Mithilfe der Factory-Eigenschaft der Ribbon-Klasse. Verwenden Sie diesen Ansatz aus Code in der Ribbon-Klasse.
 
-- Mithilfe der `Globals.Factory.GetRibbonFactory`-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen zu der Globals-Klasse, finden Sie unter [Global den Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
+- Mithilfe der `Globals.Factory.GetRibbonFactory`-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen über die Globals-Klasse finden [Sie unter globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
 
   Im folgenden Codebeispiel wird dargestellt, wie ein <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> in einer Menübandklasse eines Projekts erstellt wird, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist.
 
-\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> die folgende Tabelle enthält die Steuerelemente, die Sie programmgesteuert erstellen können und die Methode verwenden, um die Steuerelemente in Projekten zu erstellen, die die alsZiel[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher.
+\<Codecontentplachalter > 10</CodeContentPlaceHolder> \<codecontentplachalter > 11</CodeContentPlaceHolder> in der folgenden Tabelle sind die Steuerelemente aufgelistet, die Sie Programm gesteuert erstellen können, sowie die-Methode, die zum Erstellen der Steuerelemente in Projekten verwendet werden soll, die auf abzielen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher.
 
 |Steuerelement|RibbonFactory-Methode für Projekte unter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher|
 |-------------| - |
@@ -142,7 +142,7 @@ ms.locfileid: "66836076"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-## <a name="ribbonevents"></a> Behandeln von Menübandereignissen
+## <a name="ribbonevents"></a>Behandeln von Menü Band Ereignissen
  Sie müssen Code ändern, in dem Ereignisse von Menübandsteuerelementen behandelt werden. In Projekten, die auf .NET Framework 3.5 abzielen, werden diese Ereignisse vom generischen <xref:System.EventHandler%601>-Delegaten behandelt. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, werden diese Ereignisse jetzt von anderen Delegaten behandelt.
 
  In der folgenden Tabelle sind die Menübandereignisse und die Delegaten aufgeführt, die ihnen in Projekten zugeordnet sind, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind.
@@ -153,14 +153,14 @@ ms.locfileid: "66836076"
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|
 
-## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Die Position einer Menübandkomponente programmgesteuert festgelegt
+## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Programm gesteuertes Festlegen der Position einer Menü Band Komponente
  Sie müssen Code ändern, in dem die Position von Menübandgruppen, Registerkarten oder Steuerelementen festgelegt wird. In Projekten, die auf .NET Framework 3.5 abzielen, können Sie mithilfe der `AfterOfficeId`-Methode und der `BeforeOfficeId`-Methode der statischen `Microsoft.Office.Tools.Ribbon.RibbonPosition`-Klasse die `Position`-Eigenschaft von Gruppen, Registerkarten oder Steuerelementen zuweisen. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, müssen Sie auf diese Methoden mit der <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A>-Eigenschaft zugreifen, die vom <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt bereitgestellt wird.
 
  Es gibt zwei Möglichkeiten, um auf das <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>-Objekt zuzugreifen:
 
 - Mithilfe der `Factory`-Eigenschaft der Ribbon-Klasse. Verwenden Sie diesen Ansatz aus Code in der Ribbon-Klasse.
 
-- Mithilfe der `Globals.Factory.GetRibbonFactory`-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen zu der Globals-Klasse, finden Sie unter [Global den Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
+- Mithilfe der `Globals.Factory.GetRibbonFactory`-Methode. Verwenden Sie diesen Ansatz aus Code außerhalb der Ribbon-Klasse. Weitere Informationen über die Globals-Klasse finden [Sie unter globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
 
   Im folgenden Codebeispiel wird dargestellt, wie die `Position`-Eigenschaft einer Registerkarte in einer Ribbon-Klasse in einem Projekt festgelegt wird, das auf .NET Framework 3.5 abzielt.
 
@@ -183,5 +183,5 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Migrieren von Office-Projektmappen zu .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Menüband-Designer](../vsto/ribbon-designer.md)
