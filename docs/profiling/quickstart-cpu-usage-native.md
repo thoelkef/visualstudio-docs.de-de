@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73f8b69b120b1c21de92a8706eab0dbbcbb6e38e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703849"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128183"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C++)
 
@@ -34,7 +34,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 2. Klicken Sie unter **Visual C++** auf **Windows-Desktop** und dann im mittleren Bereich auf **Windows-Konsolenanwendung**.
 
-    Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
+    Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++** , und klicken Sie dann auf **Ändern**.
 
 3. Geben Sie einen Namen wie **Diagnostics_Get_Started_Native** ein, und klicken Sie auf **OK**.
 
@@ -186,5 +186,5 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

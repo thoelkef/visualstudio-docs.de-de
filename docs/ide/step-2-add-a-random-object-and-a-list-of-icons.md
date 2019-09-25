@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1a8a6c6ec1535e36eae5ebc2e8f56282ef03fc
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079574"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118948"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen
 In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das Spiel. Jedes Symbol wird zwei zufällig ausgewählten Zellen im TableLayoutPanel auf dem Formular hinzugefügt. Sie verwenden zwei `new`-Anweisungen, um zwei Objekte zu erstellen. Das erste Objekt ist ein <xref:System.Random>-Objekt, wie Sie es auch im Mathematik-Quiz verwendet haben. Es wird in diesem Code verwendet, um Zellen im TableLayoutPanel zufällig auszuwählen. Das zweite Objekt ist möglicherweise neu für Sie – es ist ein <xref:System.Collections.Generic.List%601>-Objekt, das verwendet wird, um die zufällig ausgewählten Symbole zu speichern.

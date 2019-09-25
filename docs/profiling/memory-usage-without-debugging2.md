@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830700"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128231"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analysieren der Speicherauslastung ohne den Debugger
 
@@ -121,7 +121,7 @@ Die meisten Typen in Apps spielen für App-Entwickler keine große Rolle. Mit de
 
  ![Links zu einem Momentaufnahmenbericht in einem Momentaufnahmenbereich](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links to snapshot report in a snapshot pane")
 
-Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap**-Struktur. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)**. Der Link „Objekte“ ordnet den Bericht nach der Spalte **Anzahl**. Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
+Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap**-Struktur. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)** . Der Link „Objekte“ ordnet den Bericht nach der Spalte **Anzahl**. Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> „Verwalteter Heap“-Struktur (Bericht mit Momentaufnahmedetails)
  Die Struktur des **verwalteten Heaps** führt die Objekttypen auf, die im Speicher gehalten werden. Sie können den Typennamen erweitern, um die zehn größten Instanzen des Typs nach Größe geordnet anzuzeigen. Wenn Sie einen Typ oder eine Instanz auswählen, wird die **Pfade zum Stamm**- und die **Verweisobjekt**-Struktur für das gewählte Element angezeigt.
@@ -164,7 +164,7 @@ Eine **Verweistypen**-Struktur in einem Bericht mit Momentaufnahmedetails weist 
 
 In einem Momentaufnahmenvergleichsbericht werden die Unterschiede zwischen der primären und der zuvor erstellten Momentaufnahme angezeigt. Wenn Sie einen Vergleichsbericht öffnen möchten, klicken Sie auf einen der Vergleichslinks im Momentaufnahmenbereich.
 
-Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap**-Struktur in dem Bericht. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Differenz der Größe (Bytes)**. Der Link „Objekte“ ordnet den Bericht nach der Spalte **Differenz der Anzahl**. Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
+Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap**-Struktur in dem Bericht. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Differenz der Größe (Bytes)** . Der Link „Objekte“ ordnet den Bericht nach der Spalte **Differenz der Anzahl**. Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
 
  ![Links zu einem Vergleichsbericht in einem Momentaufnahmenbereich](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links to difference report in a snapshot pane")
 
@@ -201,7 +201,7 @@ Die **Verweistypen**- oder die **Verweisobjekte**-Struktur zeigt die Objekte an,
 
 ![Verweistypen in einem Vergleichsbericht](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Referenced Types in a diff report")
 
-Eine **Verweistypen**-Struktur in einem Momentaufnahmenvergleichsbericht weist die folgenden Spalten auf. Eine **Verweisobjekte**-Struktur umfasst die folgenden Spalten: **Instanz**, **Größe (Bytes)**, **Inklusive Größe (Bytes)** und **Modul**.
+Eine **Verweistypen**-Struktur in einem Momentaufnahmenvergleichsbericht weist die folgenden Spalten auf. Eine **Verweisobjekte**-Struktur umfasst die folgenden Spalten: **Instanz**, **Größe (Bytes)** , **Inklusive Größe (Bytes)** und **Modul**.
 
 |||
 |-|-|
@@ -216,7 +216,7 @@ Eine **Verweistypen**-Struktur in einem Momentaufnahmenvergleichsbericht weist d
 
 ## <a name="see-also"></a>Siehe auch
 - [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)
-- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
 - [Bewährte Methoden zur Leistungsverbesserung für UWP-Apps mit C++, C# und Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](http://go.microsoft.com/fwlink/p/?LinkId=394706)

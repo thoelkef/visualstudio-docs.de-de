@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797942"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128305"
 ---
 # <a name="perftips"></a>PerfTips
 Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnosetools** helfen Ihnen beim Überwachen und Analysieren der Leistung Ihrer App während des Debuggens.
@@ -55,5 +55,5 @@ Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnos
 2. Aktivieren oder deaktivieren Sie **Aktivieren der Diagnosetools während des Debuggens**.
 
 ## <a name="see-also"></a>Siehe auch
-- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

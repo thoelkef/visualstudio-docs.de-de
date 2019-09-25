@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8528b9e6ad302319f1fb1ebb010c7f55b93932
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416599"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211259"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
 
@@ -25,7 +25,7 @@ Wenn Sie Quellcode erstellen, werden von der Build-Engine Assemblys und ausführ
 
 Indem Sie Ihren Code häufig erstellen, können Sie Kompilierzeitfehler wie zum Beispiel falsche Syntax, falsch geschriebene Schlüsselwörter und Typenkonflikte früher identifizieren. Sie können auch Laufzeitfehler, z.B. Logik- und Semantikfehler, erkennen und beheben, indem Sie Debugversionen des Codes erstellen und ausführen.
 
-Ein erfolgreicher Build überprüft, dass der Quellcode der Anwendung die richtige Syntax enthält und alle statischen Verweise auf Bibliotheken, Assemblys und andere Komponenten gelöst werden. Eine ausführbare Datei wird erzeugt, die auf ihre ordnungsgemäße Funktion geprüft werden kann. Dies kann sowohl in einer [Debugumgebung](../debugger/index.md) geschehen als auch über eine Vielzahl manueller und automatisierter Tests, die die [Codequalität verbessern](../test/improve-code-quality.md). Sobald die Anwendung vollständig getestet ist, können Sie eine Releaseversion zur Bereitstellung für Ihre Kunden kompilieren. Eine Einführung in diesen Prozess finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).
+Ein erfolgreicher Build überprüft, dass der Quellcode der Anwendung die richtige Syntax enthält und alle statischen Verweise auf Bibliotheken, Assemblys und andere Komponenten gelöst werden. Eine ausführbare Datei wird erzeugt, die auf ihre ordnungsgemäße Funktion geprüft werden kann. Dies kann sowohl in einer [Debugumgebung](../debugger/index.yml) geschehen als auch über eine Vielzahl manueller und automatisierter Tests, die die [Codequalität verbessern](../test/improve-code-quality.md). Sobald die Anwendung vollständig getestet ist, können Sie eine Releaseversion zur Bereitstellung für Ihre Kunden kompilieren. Eine Einführung in diesen Prozess finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).
 
 Sie können mit der Visual Studio-IDE, MSBuild-Befehlszeilentools und Azure Pipelines eine Anwendung erstellen:
 
