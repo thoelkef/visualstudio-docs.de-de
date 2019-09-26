@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159950"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273363"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Erstellen einer Datenbank und Hinzufügen von Tabellen in Visual Studio
 
@@ -68,6 +68,9 @@ Sie können die Verbindungs Zeichenfolge für die Datei *SampleDatabase. mdf* an
 
 - Sie können auch **View** > **Server-Explorer**auswählen, wenn dieses Fenster nicht bereits geöffnet ist. Öffnen Sie die Eigenschaftenfenster, indem Sie den Knoten **Datenverbindungen** erweitern, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf*, und wählen Sie dann **Eigenschaften**aus.
 
+  > [!TIP]
+  > Wenn Sie den Knoten Datenverbindungen nicht erweitern können oder die Verbindung SampleDatabase. mdf nicht aufgeführt ist, wählen Sie auf der Server-Explorer Symbolleiste die Schaltfläche **Verbindung mit Datenbank herstellen** aus. Stellen Sie im Dialogfeld **Verbindung hinzufügen** sicher, dass unter **Datenquelle** **Microsoft SQL Server Datenbankdatei** ausgewählt ist, und wählen Sie dann die Datei SampleDatabase. mdf aus, und wählen Sie Sie aus. Schließen Sie die Verbindung hinzu, indem Sie auf **OK klicken**.
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Erstellen von Tabellen und Schlüsseln mit Tabellen-Designer
 
 In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jeder Tabelle und einige Zeilen mit Beispiel Daten. Außerdem erstellen Sie einen Fremdschlüssel, um anzugeben, wie Datensätze in einer Tabelle den Datensätzen in der anderen Tabelle entsprechen.
@@ -75,6 +78,8 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 ### <a name="create-the-customers-table"></a>Erstellen der Tabelle "Customers"
 
 1. Erweitern Sie in **Server-Explorer**den Knoten **Datenverbindungen** , und erweitern Sie dann den Knoten **SampleDatabase. mdf** .
+
+   Wenn Sie den Knoten Datenverbindungen nicht erweitern können oder die Verbindung SampleDatabase. mdf nicht aufgeführt ist, wählen Sie auf der Server-Explorer Symbolleiste die Schaltfläche **Verbindung mit Datenbank herstellen** aus. Stellen Sie im Dialogfeld **Verbindung hinzufügen** sicher, dass unter **Datenquelle** **Microsoft SQL Server Datenbankdatei** ausgewählt ist, und wählen Sie dann die Datei SampleDatabase. mdf aus, und wählen Sie Sie aus. Schließen Sie die Verbindung hinzu, indem Sie auf **OK klicken**.
 
 2. Klicken Sie mit der rechten Maustaste auf **Tabellen** , und wählen Sie **neue Tabelle hinzufügen**
 

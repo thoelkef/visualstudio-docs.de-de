@@ -9,12 +9,12 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: 9f5085c7a655f186c3c8a4a6eecada8b440650cd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024557"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273220"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migration des XAML-Designer-Erweiterbarkeit
 
@@ -26,7 +26,7 @@ Die **Oberflächen Isolation** wird vom UWP-Designer verwendet. Sie wird auch vo
 
 ![Erweiterbarkeit-Migration-Architektur](media/xaml-designer-extensibility-migration-architecture.png)
 
-Aufgrund dieses Architektur Übergangs werden Erweiterungen von Drittanbietern nicht mehr in denselben Prozess geladen wie die Steuerelement Bibliotheken von Drittanbietern. Die Erweiterungen können nicht mehr direkte Abhängigkeiten von Steuerelement Bibliotheken aufweisen oder direkt auf Lauf Zeit Objekte zugreifen. Erweiterungen, die zuvor für die Designer Isolations Architektur mithilfe der *Microsoft. Windows. Extensibility. dll* -API geschrieben wurden, müssen zu einem neuen Ansatz migriert werden, um mit der Architektur der Oberflächen Isolation arbeiten zu können. In der Praxis muss eine vorhandene Erweiterung für neue Erweiterbarkeits-API-Assemblys kompiliert werden. Der Zugriff auf Lauf Zeit Steuerelement Typen über [typeof](/dotnet/csharp/language-reference/keywords/typeof) oder Lauf Zeit Instanzen muss ersetzt oder entfernt werden, da Steuerelement Bibliotheken nun in einem anderen Prozess geladen werden.
+Aufgrund dieses Architektur Übergangs werden Erweiterungen von Drittanbietern nicht mehr in denselben Prozess geladen wie die Steuerelement Bibliotheken von Drittanbietern. Die Erweiterungen können nicht mehr direkte Abhängigkeiten von Steuerelement Bibliotheken aufweisen oder direkt auf Lauf Zeit Objekte zugreifen. Erweiterungen, die zuvor für die Designer Isolations Architektur mithilfe der *Microsoft. Windows. Extensibility. dll* -API geschrieben wurden, müssen zu einem neuen Ansatz migriert werden, um mit der Architektur der Oberflächen Isolation arbeiten zu können. In der Praxis muss eine vorhandene Erweiterung für neue Erweiterbarkeits-API-Assemblys kompiliert werden. Der Zugriff auf Lauf Zeit Steuerelement Typen über [typeof](/dotnet/csharp/language-reference/keywords/typeof) -oder Lauf Zeit Instanzen muss ersetzt oder entfernt werden, da Steuerelement Bibliotheken nun in einem anderen Prozess geladen werden.
 
 ## <a name="new-extensibility-api-assemblies"></a>Neue Erweiterbarkeits-API-Assemblys
 
@@ -43,7 +43,7 @@ Anstatt die Dateierweiterung *. Design. dll* zu verwenden, werden neue Oberfläc
 
 Während Steuerelement Bibliotheken von Drittanbietern für die tatsächliche Ziel Laufzeit (.net Core oder UWP) kompiliert werden, sollte die Erweiterung *. Designtools. dll* immer als .NET Framework Assembly kompiliert werden.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Entkoppeln von Attribut Tabellen von Lauf Zeit Typen
+## <a name="decouple-attribute-tables-from-run-time-types"></a>Entkoppeln von Attribut Tabellen von Lauf Zeit Typen
 
 Das Erweiterbarkeits Modell der Oberflächen Isolation lässt nicht zu, dass Erweiterungen von tatsächlichen Steuerelement Bibliotheken abhängen. Daher können Erweiterungen nicht auf Typen aus der Steuerelement Bibliothek verweisen. Beispielsweise sollte *MyLibrary. Designtools. dll* keine Abhängigkeit von *MyLibrary. dll*aufweisen.
 
@@ -103,6 +103,7 @@ Derzeit werden die folgenden Funktions Anbieter unterstützt:
 * `ContextMenuProvider`
 * `ParentAdapter`
 * `PlacementAdapter`
+* `DesignModeValueProvider`wird mit der Einschränkung unterstützt `TranslatePropertyValue` , die über `InvalidateProperty` oder bei Änderung im Designer aufgerufen wird. Sie wird nicht aufgerufen, wenn Sie im Lauf Zeit Code geändert wird.
 
 Da Funktions Anbieter nun in einem Prozess geladen werden, der sich von dem tatsächlichen Lauf Zeit Code und den Steuerelement Bibliotheken unterscheidet, können Sie nicht mehr direkt auf Lauf Zeit Objekte zugreifen. Stattdessen müssen alle diese Interaktionen konvertiert werden, um die entsprechenden modellbasierten APIs zu verwenden. Die Modell-API wurde aktualisiert, und der Zugriff <xref:System.Type> auf <xref:System.Object> oder ist entweder nicht mehr verfügbar `TypeIdentifier` oder wurde durch und `TypeDefinition`ersetzt.
 
@@ -133,12 +134,15 @@ Aus dem Erweiterbarkeits-API-Satz der Oberflächen Isolation entfernte APIs:
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
+* `AssemblyReferences.GetTypes(Type baseType)`
 
 APIs, die `TypeIdentifier` anstelle von <xref:System.Type>verwenden:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
 * `ModelFactory.CreateStaticMemberItem(EditingContext context, Type type, string memberName)`
+* `ModelFactory.ResolveType(EditingContext context, Type)` wurde in `MetadataFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)` geändert
+* `ModelService.ResolveType(TypeIdentifier typeIdentifier)` wurde in `MetadataService.ResolveType(TypeIdentifier typeIdentifier)` geändert
 * `ViewItem.ItemType`
 * `ModelEvent.EventType`
 * `ModelEvent.IsEventOfType(Type type)`
@@ -157,7 +161,6 @@ APIs, die `TypeIdentifier` anstelle von <xref:System.Type> verwenden und keine K
 
 APIs, die `TypeDefinition` anstelle von <xref:System.Type>verwenden:
 
-* `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
 * `ValueTranslationService.HasValueTranslation(Type itemType, PropertyIdentifier identifier)`
 * `ValueTranslationService.TranslatePropertyValue(Type itemType, ModelItem item, PropertyIdentifier identifier, object value)`
@@ -172,15 +175,12 @@ APIs, die `TypeDefinition` anstelle von <xref:System.Type>verwenden:
 * `FeatureManager.GetCustomAttributes(Type type, Type attributeType)`
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
+* `PropertyEntry.PropertyType`
 
-APIs, die `ModelItem` anstelle von <xref:System.Object>verwenden:
+APIs, die `AssemblyIdentifier` anstelle von `<xref:System.Reflection.AssemblyName?displayProperty=fullName>`verwenden:
 
-* `ModelItemCollection.Insert(int index, object value)`
-* `ModelItemCollection.Remove(object value)`
-* `ModelItemDictionary.Add(object key, object value)`
-* `ModelItemDictionary.ContainsKey(object key)`
-* `ModelItemDictionary.Remove(object key)`
-* `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
+* `AssemblyReferences.ReferencedAssemblies`
+* `AssemblyReferences.LocalAssemblyName` wurde in `AssemblyReferences.LocalAssemblyIdentifier` geändert
 
 Darüber hinaus unterstützen `SetValue` APIswienurInstanzenprimitiverTypenoderintegrierter.NETFrameworkTypen,diefürdieZielLaufzeitkonvertiertwerdenkönnen.`ModelItem` Derzeit werden diese Typen unterstützt:
 
