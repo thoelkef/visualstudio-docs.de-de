@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987754"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322544"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Überprüfen von XAML-Eigenschaften beim Debuggen
 Sie können über **Visuelle Echtzeitstruktur** und **Live-Eigenschaften-Explorer** eine Echtzeitansicht Ihres ausgeführten XAML-Codes abrufen. Diese Tools bieten Ihnen eine Strukturansicht der Benutzeroberflächenelemente Ihrer ausgeführten XAML-Anwendung, und Sie zeigen Ihnen Runtime-Eigenschaften der von Ihnen ausgewählten Benutzeroberflächenelemente an.
@@ -81,7 +81,10 @@ Wenn das Fenster angezeigt wird, klicken Sie mehrmals auf die Schaltfläche **El
 
 Kehren Sie zum Anwendungsfenster zurück, und fügen Sie ein paar weitere Elemente hinzu. In **Visuelle Echtzeitstruktur** sollten mehr Listenfeldelemente angezeigt werden.
 
-Nun sehen wir uns die Eigenschaften von einem der Listenfeldelemente an. Wählen Sie das erste Listenfeldelement in **Visuelle Echtzeitstruktur** aus, und klicken Sie auf das Symbol **Eigenschaften anzeigen** auf der Symbolleiste. Der **Live-Eigenschaften-Explorer** wird angezeigt. Beachten Sie, dass es sich beim Feld **Inhalt** um „Item1“ handelt, und das Feld **Hintergrund** den Wert **#FFFFFFE0** (hellgelb) aufweist. Wechseln Sie zurück zu **Visuelle Echtzeitstruktur**, und wählen Sie das zweite Listenfeldelement aus. Der **Live-Eigenschaften-Explorer** zeigt nun an, dass das Feld **Inhalt** „Item2“ lautet und das Feld **Hintergrund** den Wert **#FFD3D3D3** (hellgrau) aufweist.
+Nun sehen wir uns die Eigenschaften von einem der Listenfeldelemente an. Wählen Sie das erste Listenfeldelement in **Visuelle Echtzeitstruktur** aus, und klicken Sie auf das Symbol **Eigenschaften anzeigen** auf der Symbolleiste. Der **Live-Eigenschaften-Explorer** wird angezeigt. Beachten Sie, dass das Feld " **Content** " den Wert "item1" hat und das Feld **Hintergrund** > **Farbe** **#FFFFFFE0**ist. Wechseln Sie zurück zu **Visuelle Echtzeitstruktur**, und wählen Sie das zweite Listenfeldelement aus. Der **Live Property Explorer** sollte anzeigen, dass das Feld " **Content** " den Wert "item2" hat, und das Feld **Hintergrund** > **Farbe** ist **#FFD3D3D3**.
+
+> [!NOTE]
+> Ein gelber Rahmen um eine Eigenschaft im **Live-Eigenschaften-Explorer** bedeutet, dass der Eigenschafts Wert über eine Bindung festgelegt `Color = {BindingExpression}`wird, z. b. Ein grüner Rahmen bedeutet, dass der Wert mit einer Ressource wie festgelegt wird `Color = {StaticResource MyBrush}`, z. b.
 
 Die tatsächliche Struktur der XAML weist eine Menge Elemente auf, an denen Sie möglicherweise nicht direkt interessiert sind. Wenn Sie sich darüber hinaus nicht gut mit dem Code auskennen, ist die Navigation in der Struktur zum Suchen des gewünschten Elements möglicherweise kompliziert. Daher bietet **Visuelle Echtzeitstruktur** mehrere Möglichkeiten zum Verwenden der Benutzeroberfläche der Anwendung, damit Sie die zu prüfenden Elemente finden können.
 
