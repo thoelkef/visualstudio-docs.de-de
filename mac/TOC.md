@@ -95,6 +95,10 @@
 ## [Mobile Apps mit Xamarin](/visualstudio/mac/xamarin)
 
 # [Barrierefreiheit](accessibility.md)
+## [Festlegen von IDE-Barrierefreiheitsoptionen](accessibility-ide-options.md)
+## [Verwenden von macOS-Tools für Barrierefreiheit](accessibility-macos.md)
+### [Verwenden der Tastaturnavigation](accessibility-keyboard.md)
+### [Verwenden von VoiceOver](accessibility-voiceover.md)
 
 # Problembehandlung
 ## [Protokolle und Ausnahmen](troubleshooting.md)

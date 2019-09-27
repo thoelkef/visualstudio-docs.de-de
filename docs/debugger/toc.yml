@@ -666,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: Debuggen eines lokal gehosteten WCF-Diensts
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: Zusammenarbeiten
+      items:
+        - name: Schreiben und Debuggen von Code mithilfe von Live Share
+          href: /visualstudio/liveshare/use/vs
     - name: Dumpdateien
       items:
         - name: Verwenden von Dumpdateien
