@@ -47,9 +47,9 @@ Erstellen Sie einen visuellen Pinsel aus einem Steuerelement, z. B. einer Schalt
 
 Sie entwerfen die Darstellung und das Verhalten eines Steuerelements einmal und wenden diesen Entwurf auf andere Steuerelemente an, sodass Sie sie nicht einzeln verwalten müssen.
 
-**Sollten Sie einen Stil verwenden?** : Wenn Sie nur die Standardeigenschaften (z. B. die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil*. Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
+**Sollten Sie einen Stil verwenden?**: Wenn Sie nur die Standardeigenschaften (z. B. die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil*. Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
 
-**Sollten Sie eine Vorlage verwenden?** : Wenn Sie nur Text anzeigen möchten, können Sie eine *Vorlage* verwenden. Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
+**Sollten Sie eine Vorlage verwenden?**: Wenn Sie nur Text anzeigen möchten, können Sie eine *Vorlage* verwenden. Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
 
 ### <a name="create-a-template-or-style"></a>Erstellen einer Vorlage oder eines Stils
 
@@ -85,7 +85,7 @@ Klicken Sie mit der rechten Maustaste auf ein Objekt im Fenster [Objekte und Zei
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements
 
-Wählen Sie das Steuerelement aus, und suchen Sie im **Eigenschaftenfenster**** die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
+Wählen Sie das Steuerelement aus, und suchen Sie im **Eigenschaftenfenster** ** die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
 
 ## <a name="visual-states"></a>Visuelle Zustände
 
