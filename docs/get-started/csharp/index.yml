@@ -6,7 +6,7 @@ metadata:
   description: Erstellen von C#-Apps mit Visual Studio
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 09/27/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: b4db5aef6d4a91d684a588971ec23fa673aa98da
+  ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71252152"
+  ms.lasthandoff: 10/01/2019
+  ms.locfileid: "71693032"
 landingContent:
 - title: Erste Schritte
   linkLists:
@@ -39,14 +39,18 @@ landingContent:
       url: tutorial-console.md
     - text: Erstellen einer Web-App
       url: tutorial-aspnet-core.md
-    - text: Erstellen Ihrer ersten ASP.NET Core-App
-      url: tutorial-aspnet-core-ef-step-01.md
     - text: Erstellen einer UWP-App (Universelle Windows-Plattform)
       url: tutorial-uwp.md
     - text: Erstellen einer Windows-Desktop-App
       url: tutorial-wpf.md
+    - text: Erstellen einer Windows Forms-App
+      url: ../../ide/create-csharp-winform-visual-studio.md
     - text: Informationen zur Programmiersprache C#
       url: /dotnet/csharp/tutorials/intro-to-csharp/
+  - linkListType: video
+    links:
+    - text: Erstellen einer ASP.NET Core-App
+      url: tutorial-aspnet-core-ef-step-01.md
 - title: Kennenlernen von Visual Studio
   linkLists:
   - linkListType: tutorial
