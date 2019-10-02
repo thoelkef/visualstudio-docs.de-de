@@ -3,63 +3,68 @@ title: Erstellen und Bearbeiten von Buildkonfigurationen
 description: In diesem Artikel wird beschrieben, wie Sie Buildkonfigurationen in Visual Studio für Mac erstellen.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 26f6e25bfe1284fc31bcd484b905bf5d75c2ba15
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693073"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128426"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Erstellen und Bearbeiten von Buildkonfigurationen
 
-Buildkonfigurationen können für einzelne Projekte oder auf projektmappenweiter Basis erstellt werden. Diese Konfigurationen ermöglichen Ihnen die präzise Steuerung eines Builds.
+Buildkonfigurationen ermöglichen Ihnen die präzise Steuerung eines Builds, sodass Sie Konfigurationen erstellen können, die verschiedenen Test- und Verteilungssituationen gerecht werden. Sie können Buildkonfigurationen für einzelne Projekte oder für gesamte Projektmappen erstellen.
 
-Das Menü „Optionen“ stellt Ihnen sowohl für Projekte als auch für Projektmappen einen Bereich zur Verfügung, in dem Sie neue und bestehende Konfigurationen erstellen und bearbeiten können.
+Sie können sowohl für Projekt als auch für Projektmappen mithilfe des Dialogfelds „Projektoptionen“ neue Konfigurationen erstellen und vorhandene bearbeiten.
 
-## <a name="creating-a-project-build-configurations"></a>Erstellen von Projektbuildkonfigurationen
+>[!NOTE]
+>Dieses Thema gilt für Visual Studio für Mac. Informationen für Visual Studio unter Windows finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](/visualstudio/ide/how-to-create-and-edit-configurations).
+
+## <a name="creating-a-project-build-configuration"></a>Erstellen von Projektbuildkonfigurationen
 
 Führen Sie die folgenden Schritte aus, um eine Projektbuildkonfiguration zu erstellen:
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten „Projekte“, und klicken Sie dann auf **Options** (Optionen).
+1. Klicken Sie mit der rechten Maustaste auf den Knoten „Projekte“, und klicken Sie dann auf **Options** (Optionen). Sie können auch auf den Projektknoten doppelklicken, um das Dialogfeld „Projektoptionen“ zu öffnen.
 
 2. Klicken Sie im Dialogfeld „Projektoptionen“ auf **Build > Configurations** (Erstellen > Konfigurationen):
 
     ![Konfigurations-Manager in Projektoptionen](media/create-and-edit-configurations-image2.png)
 
-3. Klicken Sie auf **Add** (Hinzufügen), um eine neue Konfiguration zu erstellen. Alternativ können Sie auch eine der bestehenden Konfigurationen kopieren.
+3. Klicken Sie auf **Hinzufügen**, um eine neue Konfiguration zu erstellen. Sie können auch vorhandene Konfigurationen kopieren.
 
-Sobald die Konfiguration erstellt wurde, können Sie den Abschnitt **Build** (Erstellen) in den Projektoptionen verwenden, um Eigenschaften gemäß Ihrer Konfigurationen anzupassen:
+Sobald Sie die Konfiguration erstellt haben, können Sie den Abschnitt **Build** in den Projektoptionen verwenden, um die Eigenschaften gemäß Ihrer Konfigurationen anzupassen:
 
 ![Konfigurieren von Buildoptionen](media/create-and-edit-configurations-image3.png)
 
 ## <a name="creating-a-solution-build-configuration"></a>Erstellen einer Projektmappen-Buildkonfiguration
 
-Führen Sie die folgenden Schritte aus, um eine Projektmappen-Buildkonfiguration zu erstellen:
+Führen Sie die folgenden Schritte aus, um eine Buildkonfiguration für eine Projektmappe zu erstellen:
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten „Projektmappen“, und klicken Sie dann auf **Optionen**.
+1. Klicken Sie mit der rechten Maustaste auf den Projektmappenknoten, und wählen Sie **Optionen** aus. Sie können auf den Projektmappenknoten doppelklicken, um das Dialogfeld „Projektmappenoptionen“ zu öffnen.
 
 2. Klicken Sie im Dialogfeld „Projektmappenoptionen“ auf **Build > Konfigurationen**:
 
     ![Konfigurations-Manager in Projektmappenoptionen](media/create-and-edit-configurations-image1.png)
 
-3. Klicken Sie auf **Hinzufügen**, um eine neue Konfiguration zu erstellen. Alternativ können Sie auch eine der bestehenden Konfigurationen kopieren.
+3. Klicken Sie auf **Hinzufügen**, um eine neue Konfiguration zu erstellen. Sie können auch vorhandene Konfigurationen kopieren.
 
-Sobald die Konfiguration erstellt wurde, können Sie den Abschnitt **Build** in den Optionen jedes Projekts verwenden, um Eigenschaften gemäß Ihrer Konfigurationen anzupassen:
+Sobald Sie die Konfiguration erstellt haben, können Sie den Abschnitt **Build** des Dialogfelds „Projektoptionen“ für alle Ihre Projekte verwenden, um die Eigenschaften gemäß Ihrer Konfigurationen anzupassen:
 
 ![Konfigurieren von Buildoptionen](media/create-and-edit-configurations-image3.png)
 
-## <a name="editing-a-build-configuration"></a>Bearbeiten einer Buildkonfiguration
+## <a name="renaming-a-build-configuration"></a>Umbenennen einer Buildkonfiguration
 
-Wenn Sie eine Konfiguration umbenennen möchten, wählen Sie diese aus der Konfigurationsliste in den Projekt- oder Projektmappenoptionen aus:
+Wenn Sie eine Konfiguration umbenennen möchten, wählen Sie diese aus der Konfigurationsliste aus, indem Sie in den Projekt- oder Projektmappenoptionen zu **Build > Konfigurationen** navigieren:
 
 ![Konfigurationsliste](media/create-and-edit-configurations-image4.png)
 
 Klicken Sie auf die Schaltfläche **Umbenennen**.
 
 ![Dialogfeld „Umbenennen“](media/create-and-edit-configurations-image5.png)
+
+Klicken Sie dann zur Bestätigung auf **OK**.
 
 ## <a name="related-video"></a>Zugehörige Videos
 

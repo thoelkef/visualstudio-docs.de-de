@@ -1,21 +1,21 @@
 ---
-title: Visual Studio- und GitHub-Bündel | Microsoft-Dokumentation
+title: 'Angebot: Visual Studio kombiniert mit GitHub | Microsoft-Dokumentation'
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: Informationen zum neuen Visual Studio- und GitHub-Bündel
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+description: Lernen Sie unser neues Angebot für Visual Studio in Kombination mit GitHub kennen.
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377650"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238147"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
 
-Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnementbündel zu kaufen, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist eine einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
+Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnement zu erwerben, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist eine einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
 
 - Mit Visual Studio und GitHub können Sie skaliert innovativ sein, indem Sie Open Source-Code, Community und bewährte Methoden sicher in Ihre IDE und Ihre Workflows einbringen.
 - Verwenden Sie die besten Entwicklungstools und -Dienste für Entwickler ihrer Klasse mit der umfangreichsten Palette an Ressourcen, um großartige Anwendungen zu erstellen, bereitzustellen und zu verwalten. 
@@ -28,11 +28,11 @@ Wenn Ihre Organisation ein neues Enterprise Agreement eingeht oder ein vorhanden
 - Visual Studio Enterprise mit GitHub Enterprise
 - Visual Studio Professional mit GitHub Enterprise
 
-Wenn Ihre Organisation über ein Enterprise Agreement verfügt, dessen Verlängerung noch nicht ansteht, können Sie die „Step-Up“-SKU kaufen, um Ihren vorhandenen Visual Studio Enterprise- oder Visual Studio Professional-Abonnements GitHub Enterprise hinzuzufügen.  Wenn Ihr Vertrag dann zur Verlängerung ansteht, können Sie das Bündel kaufen.
+Wenn Ihre Organisation über ein Enterprise Agreement verfügt, dessen Verlängerung noch nicht ansteht, können Sie die „Step-Up“-SKU kaufen, um Ihren vorhandenen Visual Studio Enterprise- oder Visual Studio Professional-Abonnements GitHub Enterprise hinzuzufügen. Wenn Ihr Vertrag dann zur Verlängerung ansteht, können Sie das Angebot wahrnehmen.
 
 Vorhandene SKUs für Visual Studio Enterprise, Visual Studio Professional und GitHub Enterprise bleiben auch weiterhin separat verfügbar. 
 
-Weitere Informationen zu Vorteilen, Optionen und Preise finden Sie unter https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+Weitere Informationen zum Nutzen und zu Optionen finden Sie unter https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
 ## <a name="getting-your-subscriptions"></a>So erhalten Sie Ihre Abonnements
 
@@ -40,7 +40,7 @@ Visual Studio- und GitHub Enterprise-Abonnements werden in zwei Teilen zugewiese
 1. Das Visual Studio-Abonnement (Enterprise oder Professional)
 2. Das GitHub Enterprise-Abonnement
 
-Wenn Ihre Organisation Abonnements kauft, werden diese von Administratoren zugewiesen.  Die Visual Studio- und GitHub Enterprise-Abonnements werden gesondert zugewiesen.  
+Wenn Ihre Organisation Abonnements kauft, werden diese von Administratoren zugewiesen. Die Visual Studio- und GitHub Enterprise-Abonnements werden gesondert zugewiesen.  
 
 Wenn Ihnen ein Visual Studio- und GitHub-Abonnement zugewiesen werden, erhalten Sie eine E-Mail, in der Ihnen mitgeteilt wird, dass Ihr Visual Studio-Abonnementadministrator Ihnen ein Abonnement zugewiesen hat.  Zu diesem Zeitpunkt können Sie es unter https://my.visualstudio.com/subscriptions anzeigen.  
 

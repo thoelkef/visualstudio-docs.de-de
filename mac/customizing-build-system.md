@@ -3,22 +3,20 @@ title: Anpassen des Buildsystems
 description: In diesem Artikel erhalten Sie eine kurze Einführung in das MSBuild-System, das von Visual Studio für Mac verwendet wird.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/14/2017
+ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693020"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128393"
 ---
 # <a name="customizing-the-build-system"></a>Anpassen des Buildsystems
 
-MSBuild ist eine von Microsoft entwickelte Build-Engine, mit der hauptsächlich .NET-Anwendungen erstellt werden können. Das Mono-Framework hat zudem seine eigene Implementierung der Build-Engine von Microsoft mit dem Namen **xbuild**. xbuild wurde jedoch abgeschafft, damit MSBuild unter sämtlichen Betriebssystemen ausgeführt werden kann.
+Die Microsoft-Build-Engine ist eine Plattform zum Erstellen von Anwendungen. Diese Engine, die auch als MSBuild bezeichnet wird, wurde von Microsoft entwickelt und ermöglicht das Erstellen von .NET-Anwendungen. Das Mono-Framework hat zudem seine eigene Implementierung der Build-Engine von Microsoft mit dem Namen **xbuild**. Zu diesem Zeitpunkt wurde xbuild jedoch eingestellt und unter sämtlichen Betriebssystemen durch MSBuild ersetzt.
 
-**MSBuild** wird hauptsächlich für Buildsysteme für Projekte in Visual Studio für Mac verwendet.
-
-MSBuild arbeitet mit einem Eingabensatz, wie z.B. Quelldateien, und wandelt diese in Ausgaben um, wie z.B. ausführbare Dateien. Diese Ausgabe wird durch den Aufruf von Tools wie dem Compiler erzielt.
+**MSBuild** wird als Buildsystem für Projekte in Visual Studio für Mac verwendet und verarbeitet Eingaben, z. B. Quelldateien, in Ausgaben, z. B. ausführbare Dateien. Diese Ausgabe wird durch den Aufruf von Tools wie dem Compiler erzielt.
 
 ## <a name="msbuild-file"></a>MSBuild-Datei
 

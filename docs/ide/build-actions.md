@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981105"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254428"
 ---
 # <a name="build-actions"></a>Buildvorgänge
 
@@ -36,7 +36,7 @@ Einige der gängigeren Buildprozesse für C# und Visual Basic-Projektdateien sin
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Eine Textdatei, die keine Quelldatei ist, die an den C#- oder Visual Basic-Compiler als Eingabe übergeben wird. Dieser Buildprozess wird hauptsächlich zum Bereitstellen von Eingaben für [Analysetools](../code-quality/roslyn-analyzers-overview.md) verwendet, auf die ein Projekt verweist, um die Codequalität zu überprüfen. Weitere Informationen finden Sie in der GitHub-Übersicht zum [Verwenden zusätzlicher Dateien](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
 | **ApplicationDefinition** | WPF | Die Datei, die Ihre Anwendung definiert. Wenn Sie ein Projekt erstmalig erstellen, ist dies *App.XAML*. |
-| **CodeAnalysisDictionary** | .NET | Ein benutzerdefiniertes Wörterbuch, das von der Codeanalyse für die Rechtschreibprüfung verwendet wird. Weitere Informationen finden Sie unter [Gewusst wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **CodeAnalysisDictionary** | .NET | Ein benutzerdefiniertes Wörterbuch, das von der Codeanalyse für die Rechtschreibprüfung verwendet wird. Weitere Informationen finden Sie unter [How to: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
 | **Compile** | any | Die Datei wird an den Compiler als Quelldatei übergeben.|
 | **Inhalt** | .NET | Eine Datei, die als **Content** markiert ist, kann als Stream abgerufen werden, indem Sie <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType> aufrufen. Bei ASP.NET-Projekten werden diese Dateien bei der Bereitstellung als Teil der Website integriert.|
 | **DesignData** | WPF | Wird für XAML-ViewModel-Dateien verwendet, um die Anzeige von Benutzersteuerelementen zur Entwurfszeit mit Dummytypen und Beispieldaten zu ermöglichen. |
@@ -48,7 +48,7 @@ Einige der gängigeren Buildprozesse für C# und Visual Basic-Projektdateien sin
 | **Seite** | WPF | Kompilieren Sie eine XAML-Datei in eine binäre BAML-Datei zum schnelleren Laden zur Laufzeit. |
 | **Ressource** | WPF | Gibt an, dass die Datei in eine Ressourcendatei des Assemblymanifests mit der Erweiterung *.g.resources* eingebettet wird. |
 | **Shadow** | .NET | Wird für eine Accessordatei verwendet, die eine Liste der erstellten Assemblydateinamen enthält (eine pro Zeile). Generieren Sie für jede Assembly in der Liste öffentliche Klassen mit den Namen `ClassName_Accessor`, die den Originalen entsprechen, aber mit öffentlichen Methoden anstelle von privaten Methoden. Wir für Komponententests verwendet. |
-| **Begrüßungsbildschirm** | WPF | Gibt eine Bilddatei an, die zur Laufzeit angezeigt werden soll, wenn die APP gestartet wird. |
+| **Begrüßungsbildschirm** | WPF | Gibt eine Bilddatei an, die zur Laufzeit angezeigt werden soll, wenn die App gestartet wird. |
 | **XamlAppDef** | Windows Workflow Foundation | Weist den Build an, eine Workflow-XAML-Datei in eine Assembly mit einem eingebetteten Workflow zu erstellen. |
 
 > [!NOTE]

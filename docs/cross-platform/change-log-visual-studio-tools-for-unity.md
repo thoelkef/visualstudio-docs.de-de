@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 07/29/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,101 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661955"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185992"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="4330"></a>4.3.3.0
+
+Veröffentlicht am 23. September 2019
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Fehler- und Warnberichterstellung für Lightweightbuilds wurde korrigiert.
+
+## <a name="4320"></a>4.3.2.0
+
+Veröffentlicht am 16. September 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Wir haben das Verständnis von Visual Studio für Unity-Projekte vertieft, indem wir neue, für Unity spezifische Diagnosefunktionen hinzugefügt haben. Wir haben die IDE auch intelligenter gestaltet, indem wir allgemeine C#-Diagnosen unterdrückt haben, die nicht für Unity-Projekte gelten. Die IDE zeigt z. B. keine Schnellkorrektur zum Ändern einer Prüfungsvariablen in `readonly` an, die Sie daran hindern würde, die Variable im Unity-Editor zu ändern.
+    - `UNT0001`: Unity-Nachrichten werden von der Runtime auch aufgerufen, wenn sie leer sind. Deklarieren Sie sie nicht, um unnötige Verarbeitung durch die Unity-Laufzeit zu vermeiden.
+    - `UNT0002`: Der Tagvergleich mithilfe der Zeichenfolgengleichheit ist langsamer als die integrierte CompareTag-Methode.
+    - `UNT0003`: Die Verwendung der generischen Form von GetComponent wird für die Typsicherheit bevorzugt.
+    - `UNT0004`: Die Update-Nachricht ist von der Framerate abhängig und sollte Time.deltaTime anstelle von Time.fixedDeltaTime verwenden.
+    - `UNT0005`: Die FixedUpdate-Nachricht ist von der Framerate abhängig und sollte Time.fixedDeltaTime anstelle von Time.deltaTime verwenden.
+    - `UNT0006`: Es wurde eine falsche Methodensignatur für diese Unity-Nachricht erkannt.
+    - `UNT0007`: Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Zusammenfügung nicht kompatibel ist.
+    - `UNT0008`: Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Verteilung nicht kompatibel ist.
+    - `UNT0009`: Wenn Sie das InitializeOnLoad-Attribut auf eine Klasse anwenden, müssen Sie einen statischen Konstruktor bereitstellen. Das InitializeOnLoad-Attribut stellt sicher, dass es aufgerufen wird, wenn der Editor gestartet wird.
+    - `UNT0010`: MonoBehaviour sollte nur mithilfe von AddComponent() erstellt werden. MonoBehaviour ist eine Komponente und muss einem GameObject angefügt werden.
+    - `UNT0011`: ScriptableObject sollte nur mit CreateInstance() erstellt werden. ScriptableObject muss von der Unity-Engine zum Verarbeiten von Unity-Nachrichtenmethoden erstellt werden.
+    - `USP0001` für `IDE0029`: Unity-Objekte sollten keine NULL-Zusammenfügung verwenden.
+    - `USP0002` für `IDE0031`: Unity-Objekte sollten keine NULL-Verteilung verwenden.
+    - `USP0003` für `IDE0051`: Unity-Nachrichten werden von der Unity-Runtime aufgerufen.
+    - `USP0004` für `IDE0044`: Felder mit einem SerializeField-Attribut sollten nicht als schreibgeschützt festgelegt werden.
+
+## <a name="4310"></a>4.3.1.0
+
+Veröffentlicht am 4. September 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Auswertung:**
+
+  - Unterstützung für bessere Typanzeige wurde hinzugefügt: `List<object>` anstelle von `List'1[[System.Object, <corlib...>]]`.
+
+  - Unterstützung für Zeigermemberzugriff wurde hinzugefügt: `p->data->member`.
+
+  - Unterstützung für implizite Konvertierungen in Arrayinitialisierern wurde hinzugefügt: `new byte [] {1,2,3,4}`.
+
+## <a name="4300"></a>4.3.0.0
+
+Veröffentlicht am 13. August 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Debugger:**
+
+  - Hinzugefügt: Unterstützung für das MDS-Protokoll 2.51
+
+- **Integration:**
+
+  - Das Fenster „An Unity-Instanz anfügen“ wurde mit Funktionen zum Sortieren, Suchen und Aktualisieren verbessert. Die PID wird jetzt auch für lokale Spieler angezeigt (durch Abfragen von lauschenden Sockets auf dem System, um den Besitzerprozess abzurufen).
+
+  - Hinzugefügt: Unterstützung für ASMDEF-Dateien
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Behoben: Verarbeitung falsch formatierter Meldungen bei der Kommunikation mit Unity-Playern
+
+- **Auswertung:**
+
+  - Behoben: Verarbeitung von Namespaces in Ausdrücken
+
+  - Behoben: Überprüfung mit IntPtr-Typen
+  
+  - Behoben: Probleme mit Ausnahmen bei der Einzelschrittausführung
+
+  - Behoben: Auswertung von Pseudobezeichnen (z. B. $exception)
+
+  - Behoben: Absturz bei Dereferenzierung ungültiger Adressen  
+
+  - Behoben: Problem bei entladenen AppDomains
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -79,7 +164,7 @@ Veröffentlicht am 21. Mai 2019
 
   - Der Mechanismus zum Extrahieren von Projektnamen wurde mit Unity 2019.x aktualisiert.
 
-  - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Nur referenzierte Pakete (durch Verwendung von „manifest.json“ im Ordner ```Packages```) und lokale Pakete (im Ordner ```Packages``` integriert) werden angezeigt.
+  - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Nur referenzierte Pakete (durch Verwendung von „manifest.json“ im Ordner `Packages`) und lokale Pakete (im Ordner `Packages` integriert) werden angezeigt.
 
 - **Projektgenerierung:**
 
@@ -89,7 +174,7 @@ Veröffentlicht am 21. Mai 2019
 
   - Unterstützung für aliasqualifizierte Namen wurde hinzugefügt (derzeit nur im globalen Namespace). Daher akzeptiert die Ausdrucksauswertung jetzt Typen der Form „global::namespace.type“.
 
-  - Unterstützung für die Form ```pointer[index]``` wurde hinzugefügt, die semantisch identisch mit ```*(pointer+index)``` ist, der Form zum Dereferenzieren von Zeigern.
+  - Unterstützung für die Form `pointer[index]` wurde hinzugefügt, die semantisch identisch mit `*(pointer+index)` ist, der Form zum Dereferenzieren von Zeigern.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -129,7 +214,7 @@ Veröffentlichung: 13. Februar 2019
 
   - Unterstützung hinzugefügt, um Unity-Prozesse während der Installation richtig zu erkennen und damit die Setup-Engine mit Dateisperren besser umgehen kann.
 
-  - ScriptableObject-API aktualisiert.
+  - Die `ScriptableObject`-API wurde aktualisiert.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -139,13 +224,13 @@ Veröffentlichung: 31. Januar 2019
 
 - **Projektgenerierung:**
 
-  - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Wir haben die Compilerwarnungen CS0649 und IDE0051 in Unity-Projekten, die diese Nachrichten erstellt haben, automatisch unterdrückt.
+  - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Die Compilerwarnungen `CS0649` und `IDE0051` in Unity-Projekten, die diese Nachrichten erstellt haben, werden nun automatisch unterdrückt.
 
 - **Integration:**
 
   - Die Benutzererfahrung bei der Anzeige von Unity-Editor- und Player-Instanzen wurde verbessert (Fenster sind nun in der Größe veränderbar, verwenden einheitliche Ränder und zeigen einen Griff zum Ändern der Größe). Prozess-ID-Informationen für Unity-Editoren hinzugefügt.
 
-  - MonoBehaviour-API aktualisiert.
+  - Die `MonoBehaviour`-API wurde aktualisiert.
 
 - **Auswertung:**
 

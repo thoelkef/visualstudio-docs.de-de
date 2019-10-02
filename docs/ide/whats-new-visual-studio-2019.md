@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 07/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293718"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211333"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
-**Für [Release 16.2](/visualstudio/releases/2019/release-notes/) aktualisiert**
+**Für [Release 16.3](/visualstudio/releases/2019/release-notes/) aktualisiert**
 
 >[!div class="button"]
 >[Herunterladen von Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -107,6 +107,12 @@ Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience
 **Neu in Version 16.2:** Der Test-Explorer wurde aktualisiert. Große Testdatensätze können nun besser verarbeitet werden, das Filtern wurde vereinfacht, Befehle sind besser auffindbar, Wiedergabelisten werden als Registerkarten angezeigt, und es gibt anpassbare Spalten, mit denen Sie die angezeigten Testinformationen optimieren können.
 
    ![Screenshot: Verbesserungen an der Benutzeroberfläche des Test-Explorers](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**Neu in Version 16.3:** Unterstützung für .NET Core 3.0 wurde integriert. .NET Core 3.0 ist plattformübergreifend, Open Source und wird vollständig von Microsoft unterstützt. 
+
+Weitere Informationen finden Sie im Blogbeitrag zur [Ankündigung von .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
 ## <a name="collaborate"></a>Zusammenarbeiten
 
