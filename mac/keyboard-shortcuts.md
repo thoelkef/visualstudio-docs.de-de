@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211323"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273321"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Standardtastenkombinationen in Visual Studio für Mac
 
-Weitere Informationen zum Tastaturzugriff finden Sie unter [Vorgehensweise: Verwenden der Tastaturnavigation](~/accessibility.md#how-to-use-keyboard-navigation).
+Weitere Informationen zum Tastaturzugriff finden Sie unter [Vorgehensweise: Verwenden der Tastaturnavigation](~/accessibility-keyboard.md).
 
 Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, indem Sie die entsprechende Tastenkombination verwenden. In diesem Dokument werden die Standardtastenkombinationen für das Tastenzuordnungsschema **Visual Studio für Mac** aufgeführt. Weitere Informationen zum Ändern des Tastenzuordnungsschemas finden Sie unter [Anpassen der IDE](~/customizing-the-ide.md#key-bindings). Die Tastenkombinationen für einen Befehl können auch angepasst werden. Wählen Sie hierzu **Visual Studio für Mac** > **Voreinstellungen** und anschließend im Fenster **Voreinstellungen** die Optionen **Umgebung** > **Tastenzuordnung** aus.
 
