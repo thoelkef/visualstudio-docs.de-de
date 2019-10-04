@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierte Ansichten von Objekten | Microsoft-Dokumentation
+title: Erstellen benutzerdefinierter Ansichten von Objekten | Microsoft-Dokumentation
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,33 +23,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 911f0423184f22919be016691b9333b2f62d1b61
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744799"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814298"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Erstellen benutzerdefinierte Ansichten von Objekten (C#, Visual Basic C++)
+# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>Erstellen benutzerdefinierter Ansichten von ObjektenC#(Visual Basic, F#, C++/CLI)
 Sie können die Art anpassen, wie Datentypen von Visual Studio in Debuggervariablenfenstern angezeigt werden.
-
-## <a name="native-code"></a>nativer Code
-
-Für C++ Code können Sie benutzerdefinierte Daten geben Erweiterungen, die mit dem Natvis-Framework hinzufügen, wie in beschrieben [Erstellen benutzerdefinierter Ansichten von C++ Objekte im Debugger](/visualstudio/debugger/create-custom-views-of-native-objects). Für C++/CLI-Code, außerdem können Sie hier in diesem Artikel beschriebenen Attribute.
 
 ## <a name="attributes"></a>Attribute
 
-In C#, Visual Basic und C++ (C++nur /CLI Code), können Sie Erweiterungen für die Verwendung von benutzerdefinierter Daten hinzufügen <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, und <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+In C#, Visual Basic, F#und C++ (C++nur/CLI-Code) können Sie mithilfe von <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> und <xref:System.Diagnostics.DebuggerBrowsableAttribute> Erweiterungen für benutzerdefinierte Daten hinzufügen.
 
-In .NET Framework 2.0-Code unterstützt Visual Basic nicht des DebuggerBrowsable-Attributs. Diese Einschränkung wurde in aktuelleren Versionen von .NET Framework entfernt.
+In .NET Framework 2,0-Code unterstützt Visual Basic das DebuggerBrowsable-Attribut nicht. Diese Einschränkung wurde in aktuelleren Versionen von .NET Framework entfernt.
 
 ## <a name="visualizers"></a>Schnellansichten
 
 Sie können eine Schnellansicht schreiben, um einen beliebigen verwalteten Datentyp anzuzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data).
 
+> [!NOTE]
+> Für C++ Code können Sie mit dem natvis-Framework benutzerdefinierte Datentyp Erweiterungen hinzufügen, wie in [Erstellen benutzerdefinierter C++ Ansichten von Objekten im Debugger](/visualstudio/debugger/create-custom-views-of-native-objects)beschrieben.
+
 ## <a name="see-also"></a>Siehe auch
 
-- [Entsprechende Konfiguration des Debuggers Vorgehensweise wird die Verwendung des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Entsprechende Konfiguration des Debuggers, welcher Typ wird die Verwendung des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md)
+- [Dem Debugger mitteilen, was mit dem DebuggerDisplay-Attribut angezeigt werden soll](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Hiermit wird dem Debugger mitgeteilt, welcher Typ mit dem DebuggerTypeProxy-Attribut angezeigt werden soll.](../debugger/using-debuggertypeproxy-attribute.md)
 - [Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)
 - [Verbessern des Debuggens mit den Debuggeranzeigeattributen](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
