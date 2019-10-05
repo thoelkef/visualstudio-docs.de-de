@@ -1,11 +1,13 @@
 - name: Debugger-Dokumentation
-  href: index.md
+  href: index.yml
 - name: Übersicht
   items:
     - name: Was bedeutet „Debuggen“?
       href: what-is-debugging.md
     - name: Debugverfahren und -tools
       href: write-better-code-with-visual-studio.md
+    - name: Finden der Debugaufgabe
+      href: find-your-debugging-task.md
 - name: Schnellstarts
   items:
     - name: Erster Einblick in den Debugger
@@ -42,6 +44,8 @@
       items:
         - name: Verwenden von Haltepunkten
           href: using-breakpoints.md
+        - name: Verwenden von Ablaufverfolgungspunkten
+          href: using-tracepoints.md
         - name: Problembehandlung von Haltepunkten
           href: troubleshooting-breakpoints.md
     - name: Datenüberprüfung
@@ -126,8 +130,12 @@
               href: edit-and-continue-visual-basic.md
             - name: Anwenden von Bearbeitungen im Unterbrechungsmodus mithilfe von „Bearbeiten und Fortfahren“
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: Schreiben und Debuggen von ausgeführtem XAML-Code
-          href: xaml-hot-reload.md
+        - name: Neuladen von XAML im laufenden Betrieb
+          items:
+            - name: Schreiben und Debuggen von ausgeführtem XAML-Code
+              href: xaml-hot-reload.md
+            - name: Problembehandlung beim Neuladen von XAML im laufenden Betrieb
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'Bearbeiten und Fortfahren wird für F# nicht unterstützt'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Anzeigen der Debuggerdaten
@@ -230,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Benutzerdefinierte Ansichten (verwaltet)
               items:
-                - name: Erstellen benutzerdefinierter Ansichten von verwalteten Objekten
+                - name: Erstellen benutzerdefinierter Ansichten von Objekten
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 'Den Debugger anweisen, was er anzeigen soll'
                   href: using-the-debuggerdisplay-attribute.md
@@ -346,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: Debuggen mehrerer Prozesse
           href: debug-multiple-processes.md
-        - name: 'Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“'
+        - name: Debuggen mithilfe des Fensters „Threads“
           href: how-to-use-the-threads-window.md
-        - name: 'Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung'
+        - name: Debuggen einer parallelen Anwendung
           href: walkthrough-debugging-a-parallel-application.md
         - name: Wechseln zu einem anderen Thread während des Debuggens
           href: how-to-switch-to-another-thread-while-debugging.md
@@ -444,7 +452,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Vorabrufen von Inhalt für Microsoft Store-Apps
               href: prefetch-content-for-windows-store-apps.md
-        - name: Verwalteter Code
+        - name: 'Verwalteter Code (C#, Visual Basic, F#)'
           items:
             - name: Debuggen von verwaltetem Code
               href: debugging-managed-code.md
@@ -488,7 +496,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Debuggen von F#'
               href: debugging-f-hash.md
-        - name: Systemeigener Code
+        - name: C/C++-Code
           items:
             - name: Debuggen von nativem Code
               href: debugging-native-code.md
@@ -576,7 +584,7 @@
                   href: com-debugging-tools.md
             - name: Debuggen von eingefügtem Code
               href: how-to-debug-injected-code.md
-        - name: Debuggen von GPU-Code
+        - name: GPU-Code
           href: debugging-gpu-code.md
         - name: Grafikdiagnose
           href: graphics/toc.yml
@@ -626,6 +634,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Der Webserver ist nicht richtig konfiguriert
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript und TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Web-Apps
           items:
             - name: Debuggen von Webanwendungen
@@ -656,6 +668,10 @@
               href: how-to-step-into-wcf-services.md
             - name: Debuggen eines lokal gehosteten WCF-Diensts
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: Zusammenarbeiten
+      items:
+        - name: Schreiben und Debuggen von Code mithilfe von Live Share
+          href: /visualstudio/liveshare/use/vs
     - name: Dumpdateien
       items:
         - name: Verwenden von Dumpdateien

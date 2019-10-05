@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6a8fda526647a1a9f7f999928cb08978a61bd04
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387483"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235778"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Typen nicht als Verweis übergeben.
 
@@ -31,47 +31,47 @@ ms.locfileid: "63387483"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte Methode in einem öffentlichen Typ hat einen `ref` Parameter, der ein primitiver Typ, ein Verweistyp oder ein Werttyp ist, akzeptiert ist keiner der integrierten Typen.
+Eine öffentliche oder geschützte Methode in einem öffentlichen Typ verfügt über `ref` einen Parameter, der einen primitiven Typ, einen Verweistyp oder einen Werttyp annimmt, bei dem es sich nicht um einen der integrierten Typen handelt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Übergabe von Typen als Verweis (mit `out` oder `ref`) erfordert Erfahrung mit Zeigern, Kenntnisse der Unterschiede zwischen Werttypen und Verweistypen und Umgang mit Methoden, die Rückgabe mehrerer Werte aufweisen. Außerdem ist der Unterschied zwischen `out` und `ref` Parameter kann häufig nicht interpretiert werden.
+Die Übergabe von Typen als Verweis `out` ( `ref`mit oder) erfordert die Verwendung von Zeigern, das Verständnis der Unterschiede zwischen Werttypen und Verweis Typen sowie die Behandlung von Methoden mit mehreren Rückgabe Werten. Außerdem wird der Unterschied `out` zwischen `ref` -und-Parametern nicht häufig verstanden.
 
- Wenn ein Verweistyp "by Reference" übergeben wird, soll die Methode ab, den Parameter zu verwenden, um eine andere Instanz des Objekts zurückzugeben. (Übergabe eines Verweistyps als Verweis wird auch bezeichnet als mithilfe eines Zeigers, double, Zeiger auf einen Zeiger oder doppelte Dereferenzierung.) Verwenden die Standardaufrufkonvention, die "als Wert" übergeben wird, erhält ein Parameter, der einen Verweistyp bereits akzeptiert einen Zeiger auf das Objekt. Der Zeiger ist, nicht auf das Objekt aus, die auf den er verweist, wird als Wert übergeben. Übergabe nach Wert bedeutet, die die Methode den Zeiger, damit diese auf eine neue Instanz des Verweises nicht ändern kann geben, aber können ändern, den Inhalt des Objekts auf den er verweist. Für die meisten Anwendungen müssen dies ist ausreichend, und liefert das gewünschte Verhalten.
+Wenn ein Verweistyp als Verweis übergeben wird, beabsichtigt die Methode, den-Parameter zu verwenden, um eine andere Instanz des Objekts zurückzugeben. (Die Übergabe eines Verweis Typs als Verweis wird auch als Verwendung eines doppelten Zeigers, Zeiger auf einen Zeiger oder doppelte Dereferenzierung bezeichnet.) Mit der Standard Aufruf Konvention, die als Wert übergeben wird, erhält ein Parameter, der einen Verweistyp annimmt, bereits einen Zeiger auf das Objekt. Der Zeiger, nicht das Objekt, auf das es verweist, wird als Wert übermittelt. Das übergeben nach Wert bedeutet, dass die Methode den Zeiger nicht ändern kann, damit Sie auf eine neue Instanz des Verweis Typs verweist, kann jedoch den Inhalt des Objekts ändern, auf das es verweist. Dies ist für die meisten Anwendungen ausreichend und liefert das gewünschte Verhalten.
 
- Wenn eine Methode eine andere Instanz zurückgeben muss, verwenden Sie der Rückgabewert der Methode, um dies zu erreichen. Finden Sie unter den <xref:System.String?displayProperty=fullName> -Klasse für eine Vielzahl von Methoden, die für Zeichenfolgen verwendet werden, und geben Sie eine neue Instanz einer Zeichenfolge zurück. Mithilfe des Modells, bleibt es an den Aufrufer, um zu entscheiden, ob das ursprüngliche Objekt beibehalten wird.
+Wenn eine Methode eine andere Instanz zurückgeben muss, verwenden Sie den Rückgabewert der-Methode, um dies zu erreichen. Eine Reihe <xref:System.String?displayProperty=fullName> von Methoden, die mit Zeichen folgen arbeiten und eine neue Instanz einer Zeichenfolge zurückgeben, finden Sie unter der-Klasse. Wenn dieses Modell verwendet wird, wird es dem Aufrufer überlassen, zu entscheiden, ob das ursprüngliche Objekt beibehalten wird.
 
- Zwar sind in aller Munde und häufig verwendet, die richtige Anwendung der Rückgabewerte `out` und `ref` Parameter erfordert, mittlere Design- und Fertigkeiten im coding. Entwurf für eine Breite Zielgruppe master arbeiten mit Benutzern nicht erwarten sollten Entwickler von Bibliotheken `out` oder `ref` Parameter.
+Obwohl Rückgabewerte alltäglich und stark verwendet werden, sind für die korrekte `out` Anwendung `ref` von-und-Parametern zwischen Entwurfs-und Codierungs Fähigkeiten erforderlich. Bibliotheks Architekten, die für eine allgemeine Zielgruppe entwerfen, sollten nicht erwarten, dass `out` Benutzer `ref` die Arbeit mit-oder-Parametern meistern.
 
 > [!NOTE]
-> Bei der Arbeit mit Parametern, die große Strukturen sind, können die zusätzlichen Ressourcen, die erforderlich sind, zum Kopieren dieser Strukturen eine Auswirkung auf die Leistung führen, wenn Sie nach Wert übergeben. In diesen Fällen verwenden Sie ggf. `ref` oder `out` Parameter.
+> Wenn Sie mit Parametern arbeiten, die große Strukturen darstellen, können die zusätzlichen Ressourcen, die erforderlich sind, um diese Strukturen zu kopieren, beim übergeben nach Wert einen Leistungs Effekt verursachen. In diesen Fällen können Sie die Verwendung `ref` der Parameter oder `out` in Erwägung gezogen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, die von einem Werttyp verursacht wird, müssen Sie die Methode, die das Objekt als ihren Rückgabewert zurück. Wenn die Methode mehrere Werte zurückgeben muss, Umgestalten Sie, um eine einzelne Instanz eines Objekts zurück, der die Werte enthält.
+Um einen Verstoß gegen diese Regel zu beheben, der durch einen Werttyp verursacht wird, lassen Sie die Methode das Objekt als Rückgabewert zurückgeben. Wenn die Methode mehrere Werte zurückgeben muss, entwerfen Sie Sie so um, dass eine einzelne Instanz eines Objekts zurückgegeben wird, das die Werte enthält.
 
- Um einen Verstoß gegen diese Regel zu beheben, die von einem Verweistyp verursacht wird, stellen Sie sicher, dass das gewünschte Verhalten ist, um eine neue Instanz des Verweises zurückzugeben. Wenn es sich handelt, sollte die Methode den Rückgabewert verwenden, hierzu.
+Um einen Verstoß gegen diese Regel zu beheben, der durch einen Verweistyp verursacht wird, stellen Sie sicher, dass das gewünschte Verhalten eine neue Instanz des Verweises zurückgeben soll. Wenn dies der Fall ist, sollte die Methode ihren Rückgabewert verwenden, um dies zu tun.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher ist, unterdrücken Sie eine Warnung dieser Regel. Dieser Entwurf könnte jedoch Probleme hinsichtlich der Verwendbarkeit führen.
-
-## <a name="example"></a>Beispiel
- Die folgende Bibliotheken zeigt zwei Implementierungen einer Klasse, die Antworten auf das Feedback des Benutzers generiert. Die erste Implementierung (`BadRefAndOut`) erzwingt, dass Benutzer der Bibliothek, die drei Rückgabewerte zu verwalten. Die zweite Implementierung (`RedesignedRefAndOut`) vereinfacht die benutzererfahrung durch Rückgabe einer Instanz einer Container-Klasse (`ReplyData`), die die Daten als einzelne Einheit verwaltet.
-
- [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken. Dieser Entwurf kann jedoch Probleme mit der Benutzerfreundlichkeit verursachen.
 
 ## <a name="example"></a>Beispiel
- Die folgende Anwendung zeigt die Erfahrung des Benutzers. Der Aufruf der umgestalteten Bibliothek (`UseTheSimplifiedClass` Methode) ist einfacher, und die Informationen, die von der Methode zurückgegeben wird, ist einfach verwaltet. Die Ausgabe der beiden Methoden ist identisch.
+Die folgende Bibliothek zeigt zwei Implementierungen einer-Klasse, die Antworten auf das Feedback des Benutzers generiert. Die erste Implementierung (`BadRefAndOut`) zwingt den Bibliotheks Benutzer, drei Rückgabewerte zu verwalten. Die zweite Implementierung (`RedesignedRefAndOut`) vereinfacht die Benutzer Leistung durch die Rückgabe einer Instanz einer Container Klasse (`ReplyData`), die die Daten als einzelne Einheit verwaltet.
 
- [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_2.cs)]
-
-## <a name="example"></a>Beispiel
- Die folgende Beispielbibliothek wird veranschaulicht, wie `ref` Parameter für Verweistypen werden verwendet, und zeigt eine bessere Möglichkeit, die diese Funktionalität zu implementieren.
-
- [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_3.cs)]
+[!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_1.cs)]
 
 ## <a name="example"></a>Beispiel
- Die folgende Anwendung ruft jede Methode in der Bibliothek, um das Verhalten zu veranschaulichen.
+Die folgende Anwendung veranschaulicht die Benutzeroberflächen Darstellung. Der-Befehl für die neu gestaltete`UseTheSimplifiedClass` Bibliothek (-Methode) ist einfacher, und die von der-Methode zurückgegebenen Informationen können problemlos verwaltet werden. Die Ausgabe der beiden Methoden ist identisch.
 
- [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_4.cs)]
+[!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_2.cs)]
+
+## <a name="example"></a>Beispiel
+Die folgende Beispiel Bibliothek veranschaulicht, `ref` wie Parameter für Verweis Typen verwendet werden, und zeigt eine bessere Möglichkeit, diese Funktionalität zu implementieren.
+
+[!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_3.cs)]
+
+## <a name="example"></a>Beispiel
+Die folgende Anwendung ruft jede Methode in der Bibliothek auf, um das Verhalten zu veranschaulichen.
+
+[!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_4.cs)]
 
 Dieses Beispiel erzeugt die folgende Ausgabe:
 
@@ -87,4 +87,4 @@ Passing by return value:
 ```
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1021: Out-Parameter vermeiden](../code-quality/ca1021-avoid-out-parameters.md)
+[CA1021: Out-Parameter vermeiden](../code-quality/ca1021-avoid-out-parameters.md)

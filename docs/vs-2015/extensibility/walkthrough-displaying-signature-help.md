@@ -11,11 +11,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202045"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,4 +247,4 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
 4. Nachdem Sie die öffnende Klammer eingeben, sollte eine QuickInfo, die zeigt eine Liste mit den zwei Signaturen für die `add()` Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

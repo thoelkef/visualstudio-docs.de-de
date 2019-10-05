@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd7be5aea136c901241ca66af485e76a39cd0ee5
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817583"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681310"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 Mit diesem Dialogfeld können Sie das Standardverhalten der Scrollleiste des Code-Editors ändern. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Scrollleisten** aus.
@@ -68,6 +68,8 @@ Wählen Sie aus, ob die vertikale Scrollleiste die folgenden Anmerkungen anzeige
 > Die Option **Markierungen anzeigen** umfasst Haltepunkte und Lesezeichen.
 
 Probieren Sie es aus, indem Sie eine umfangreiche Codedatei öffnen und Text ersetzen, der an mehreren Stellen in der Datei vorkommt. Die Bildlaufleiste zeigt die Auswirkungen der Ersetzungen an. Sie können also Änderungen rückgängig machen, wenn ein Element nicht ersetzt werden soll.
+
+Informationen zur Bedeutung der verschiedenen Farben und Symbole beim Bearbeiten von Code finden Sie in unserem Blogbeitrag [Verbesserte Scrollleiste](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/).
 
 ## <a name="behavior"></a>Verhalten
 

@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Python-Umgebungen und -Interpretern
 description: Verwalten Sie globale, virtuelle und Conda-Umgebungen im Fenster „Python-Umgebungen“. Dort können Sie Python-Interpreters und -Pakete installieren und Visual Studio-Projekten Umgebungen zuweisen.
-ms.date: 03/18/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1826981f29ebfc29e7e5d28aa32fbff8c74ea5a
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536754"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585388"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -35,8 +35,15 @@ Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, finden Sie das al
 - [Arbeiten mit Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
 - [Installieren von Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md)
 
+::: moniker range="vs-2017"
 > [!Note]
 > Sie können Umgebungen für Python-Code nicht verwalten, der nur als Ordner über **Datei** > **Öffnen** > **Ordner** geöffnet wurde. Stattdessen [erstellen Sie ein Python-Projekt aus vorhandenem Code](quickstart-01-python-in-visual-studio-project-from-existing-code.md), um die Umgebungsfeatures von Visual Studio nutzen zu können.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Sie können Umgebungen für Python-Code verwalten, der als Ordner über **Datei** > **Öffnen** > **Ordner** geöffnet wurde. Mithilfe der Python-Symbolleiste können Sie zwischen allen erkannten Umgebungen wechseln und außerdem eine neue Umgebung hinzufügen. Die Umgebungsinformationen werden in der Datei „PythonSettings.json“ im Ordner „.vs“ des Arbeitsbereichs gespeichert.
+::: moniker-end
 
 ## <a name="the-python-environments-window"></a>Das Fenster „Python-Umgebungen“
 
@@ -150,7 +157,7 @@ Eine Conda-Umgebung ist eine mit dem `conda`-Tool oder der in Visual Studio 2017
 
 1. Konfigurieren Sie die folgenden Felder:
 
-    | Feld | Beschreibung |
+    | Feld | BESCHREIBUNG |
     | --- | --- |
     | Projekt | Das Projekt, in dem die Umgebung erstellt werden soll (falls eine Visual Studio-Projektmappe mehrere Projekte enthält) |
     | name | Der Name für die Conda-Umgebung |
@@ -208,7 +215,7 @@ Führen Sie die folgenden Schritte aus, um eine Umgebung zu identifizieren, die 
 
 1. Geben Sie einen Namen für die Umgebung in das Feld **Beschreibung** ein.
 
-1. Geben Sie den Pfad des Interpreters in das Feld **Präfixpfad** ein, oder navigieren Sie dorthin (mithilfe von **...**).
+1. Geben Sie den Pfad des Interpreters in das Feld **Präfixpfad** ein, oder navigieren Sie dorthin (mithilfe von **...** ).
 
 1. Wenn Visual Studio einen Python-Interpreter an diesem Speicherort erkennt (z.B. unter dem unten gezeigten Pfad für eine Conda-Umgebung), wird der Befehl **Automatische Erkennung** aktiviert. Durch Auswahl von **Automatische Erkennung** werden die verbleibenden Felder ausgefüllt. Sie können diese Felder auch manuell ausfüllen.
 
@@ -255,7 +262,7 @@ Umgebungen, die Sie behalten möchten, lassen sich korrigieren, indem Sie zunäc
 Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption verfügt, oder eine ungültige Umgebung entfernen, führen Sie die folgenden Schritte aus, um die Registrierung direkt zu ändern. Visual Studio aktualisiert das Fenster **Python-Umgebungen** automatisch, wenn Sie Änderungen an der Registrierung vornehmen.
 
 1. Führen Sie *regedit.exe* aus.
-1. Navigieren Sie zu **HKEY_LOCAL_MACHINE\SOFTWARE\Python** für 32-Bit-Interpreter oder zu **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** für 64-Bit-Interpreter. Für IronPython müssen Sie stattdessen nach  **IronPython** suchen.
+1. Navigieren Sie zu **HKEY_LOCAL_MACHINE\SOFTWARE\Python**. Für IronPython müssen Sie stattdessen nach  **IronPython** suchen.
 1. Erweitern Sie den Knoten, der der Verteilung entspricht, z. B. **Python Core** für CPython oder **ContinuumAnalytics** für Anaconda. Erweitern Sie für IronPython den Versionsnummerknoten.
 1. Überprüfen Sie die Werte im Knoten **InstallPath**:
 

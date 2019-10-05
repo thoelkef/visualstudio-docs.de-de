@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145554"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn und ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  **GlobalOff**|**GlobalOn**  
  Beendet oder startet die Profilerstellung für alle Prozesse in einer Befehlszeilen-Profilerstellungssitzung  
   
- {**ProcessOff**|**ProcessOn**}**:**`TID`  
+ {**ProcessOff**|**ProcessOn**} **:** `TID`  
  Beendet oder startet die Profilerstellung für den angegebenen Prozess  
   
 ## <a name="example"></a>Beispiel  

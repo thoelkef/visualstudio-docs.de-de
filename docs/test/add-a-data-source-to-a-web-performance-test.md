@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834932"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180146"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
 
@@ -66,7 +66,7 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 ::: moniker range="vs-2019"
 
-1. Wenn Sie nicht über Visual Studio Enterprise verfügen, können Sie das Programm über die Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) herunterladen.
+1. Wenn Sie nicht über Visual Studio Enterprise verfügen, können Sie das Programm über die Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) herunterladen.
 
 2. Erstellen Sie eine SQL-Datenbank.
 

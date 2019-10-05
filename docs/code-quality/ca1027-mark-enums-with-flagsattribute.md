@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdb8406d43f90414cf255abae6f1ca5f549e92e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 8375d2096417948b19a228d8a4f02accac7c0b5f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842481"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236112"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Enumerationen mit FlagsAttribute markieren.
 
@@ -32,43 +32,43 @@ ms.locfileid: "65842481"
 
 ## <a name="cause"></a>Ursache
 
-Die Werte einer Enumeration sind Potenzen von 2 oder Kombinationen von anderen Werten, die in der Enumeration definiert sind und die <xref:System.FlagsAttribute?displayProperty=fullName> Attribut ist nicht vorhanden. Um falsch positive Ergebnisse zu reduzieren, meldet diese Regel keinen Verstoß für Enumerationen, die aufeinander folgender Werte aufweisen.
+Die Werte einer Enumeration sind zwei oder Kombinationen aus anderen Werten, die in der-Enumeration definiert sind, und das <xref:System.FlagsAttribute?displayProperty=fullName> -Attribut ist nicht vorhanden. Um falsch positive Ergebnisse zu reduzieren, meldet diese Regel keinen Verstoß gegen Enumerationen, die zusammenhängende Werte aufweisen.
 
-Dies ist jedoch standardmäßig diese Regel nur untersucht öffentliche Enumerationen [konfigurierbare](#configurability).
+Standardmäßig untersucht diese Regel nur öffentliche Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. Anwenden <xref:System.FlagsAttribute> auf eine Enumeration, wenn deren benannten Konstanten sinnvoll kombiniert werden können. Betrachten Sie beispielsweise eine Enumeration der Tage der Woche in einer Anwendung, die überwacht die Tag-Ressourcen verfügbar sind. Wenn die Verfügbarkeit der einzelnen Ressourcen codiert ist, mit der Enumeration, die <xref:System.FlagsAttribute> vorhanden, eine beliebige Kombination von Tagen dargestellt werden kann. Ohne das Attribut kann nur ein Tag der Woche dargestellt werden.
+Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. Gilt <xref:System.FlagsAttribute> für eine Enumeration, wenn deren benannte Konstanten sinnvoll kombiniert werden können. Stellen Sie sich z. b. eine Enumeration der Wochentage in einer Anwendung vor, die nachverfolgen, welche Tages Ressourcen verfügbar sind. Wenn die Verfügbarkeit der einzelnen Ressourcen mithilfe der-Enumeration <xref:System.FlagsAttribute> , die vorhanden ist, codiert ist, kann eine beliebige Kombination von Tagen dargestellt werden. Ohne das-Attribut kann nur ein Wochentag dargestellt werden.
 
-Für Felder, die mit den flexibel kombinierbaren Enumerationen zu speichern, werden die einzelnen Enumerationswerte als Gruppen von Bits in das Feld behandelt. Aus diesem Grund diese Felder werden manchmal als bezeichnet *Bitfelder*. Enumerationswerte für die Speicherung in einem Bitfeld zu kombinieren, verwenden Sie die boolesche bedingten Operatoren. Verwenden Sie die booleschen logischen Operatoren, zum Testen ein Bitfeld, um festzustellen, ob ein bestimmtes Enumerationswert vorhanden ist. Für ein Bitfeld zum Speichern und Abrufen von kombinierten Enumerationswerte ordnungsgemäß muss jeder Wert, der in der Enumeration definiert ist, eine Potenz von zwei sein. Wenn dies der Fall ist, werden die booleschen logischen Operatoren nicht extrahieren, die einzelnen Enumerationswerte, die in das Feld gespeichert werden.
+Für Felder, die kombinierbare Enumerationen speichern, werden die einzelnen Enumerationswerte als Gruppen von Bits im Feld behandelt. Daher werden solche Felder manchmal auch als *Bitfelder*bezeichnet. Verwenden Sie zum Kombinieren von Enumerationswerten für den Speicher in einem Bitfeld die booleschen bedingten Operatoren. Um ein Bitfeld zu testen, um zu bestimmen, ob ein bestimmter Enumerationswert vorhanden ist, verwenden Sie die logischen booleschen Operatoren. Damit ein Bitfeld kombinierte Enumerationswerte ordnungsgemäß speichert und abruft, muss jeder in der-Enumeration definierte Wert eine Potenz von zwei sein. Sofern dies nicht der Fall ist, können die logischen booleschen Operatoren die einzelnen Enumerationswerte, die im Feld gespeichert sind, nicht extrahieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen <xref:System.FlagsAttribute> der Enumeration.
+Um einen Verstoß gegen diese Regel zu beheben, <xref:System.FlagsAttribute> fügen Sie der-Enumeration hinzu.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie eine Warnung dieser Regel, wenn Sie nicht, dass die Enumerationswerte kombinierbar sein möchten.
+Unterdrücken Sie eine Warnung aus dieser Regel, wenn Sie nicht möchten, dass die Enumerationswerte kombinierbar sind.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1027.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel `DaysEnumNeedsFlags` ist eine Enumeration, die erfüllt die Anforderungen für die Verwendung von <xref:System.FlagsAttribute> jedoch nicht vorhanden ist. Die `ColorEnumShouldNotHaveFlag` Enumeration keine Werte, die Potenzen von 2 sind jedoch falsch gibt <xref:System.FlagsAttribute>. Dies verstößt gegen die Regel [CA2217: Nicht Enumerationen mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+Im folgenden Beispiel `DaysEnumNeedsFlags` ist eine Enumeration, die die Anforderungen für die Verwendung <xref:System.FlagsAttribute> von erfüllt, jedoch nicht. Die `ColorEnumShouldNotHaveFlag` -Enumeration weist keine Werte auf, die zwei, aber falsch fest <xref:System.FlagsAttribute>gelegt sind. Dies verstößt gegen [Regel CA2217: Markieren Sie die auffüge Zeichen nicht mit FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
 [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2217: Nicht Enumerationen mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
 

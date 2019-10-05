@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328801"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150179"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -20,7 +20,20 @@ Sie können Ihrem Projekt oder der Codebasis eine [EditorConfig](http://editorco
 
 EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschließlich Visual Studio unterstützt. Außerdem ist es eine portable Komponente, die mit dem Code geliefert wird und Codierungsstile auch außerhalb von Visual Studio erzwingen kann.
 
-Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wird die Formatierung von vorhandenem Code nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Neue Codezeilen werden jedoch gemäß den Einstellungen aus EditorConfig formatiert.
+::: moniker range=">=vs-2019"
+
+Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt in Visual Studio hinzufügen, werden neue Codezeilen gemäß der EditorConfig-Einstellungen formatiert. Die Formatierung von vorhandenem Code wird nicht geändert, es sei denn, Sie führen einen der folgenden Befehle aus:
+
+ - [Codebereinigung](../ide/code-styles-and-code-cleanup.md) (**STRG**+**K**, **STRG**+**E**): wendet die Leerzeicheneinstellungen, z. B. das Einzugsformat, und ausgewählte Codeformatierungseinstellungen an, z. B. die Sortierung von `using`-Anweisungen.
+ - **Bearbeiten** > **Erweitert** > **Dokument formatieren** (**STRG**+**K**, **STRG**+**D** im Standardprofil): wendet nur die Leerzeicheneinstellungen an, z. B. das Einzugsformat.
+ 
+ ::: moniker-end
+ 
+::: moniker range="=vs-2017"
+
+Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt in Visual Studio hinzufügen, werden neue Codezeilen gemäß der EditorConfig-Einstellungen formatiert. Die Formatierung von vorhandenem Code wird nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Das Formatieren des Dokuments wirkt sich nur auf die Leerzeicheneinstellungen (z. B. auf das Einzugsformat) aus, es sei denn, Sie haben „Dokument formatieren“ zur [Durchführung zusätzlicher Codebereinigung](../ide/code-styles-and-code-cleanup.md#apply-code-styles) konfiguriert.
+ 
+ ::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +72,7 @@ Die Einstellungen des EDITORCONFIG-Editors werden in allen von Visual Studio unt
 
 ## <a name="add-and-remove-editorconfig-files"></a>Hinzufügen und Entfernen von EditorConfig-Dateien
 
-Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt oder Ihrer Codebasis hinzufügen, werden alle neuen Zeilen, die Sie schreiben, gemäß der EditorConfig-Datei formatiert. Durch das Hinzufügen einer EditorConfig-Datei werden vorhandene Formate jedoch erst dann in die neuen umgewandelt, wenn Sie das Dokument formatieren. Wenn in Ihrer Datei beispielsweise Einzüge vorhanden sind, die mit Tabstopps formatiert sind, und Sie eine EditorConfig-Datei hinzufügen, bei der die Einzüge mit Leerzeichen formatiert sind, werden die Einzugszeichen nicht automatisch in Leerzeichen konvertiert. Beim Formatieren des Dokuments (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D**) werden die Einstellungen in der EditorConfig-Datei auf vorhandene Codezeilen angewendet.
+Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt oder Ihrer Codebasis hinzufügen, werden alle neuen Zeilen, die Sie schreiben, gemäß der EditorConfig-Datei formatiert. Durch das Hinzufügen einer EditorConfig-Datei werden vorhandene Formate jedoch erst dann in die neuen konvertiert, wenn Sie das Dokument formatieren oder eine [Codebereinigung](../ide/code-styles-and-code-cleanup.md) ausführen. Wenn in Ihrer Datei beispielsweise Einzüge vorhanden sind, die mit Tabstopps formatiert sind, und Sie eine EditorConfig-Datei hinzufügen, bei der die Einzüge mit Leerzeichen formatiert sind, werden die Einzugszeichen nicht automatisch in Leerzeichen konvertiert. Beim Formatieren des Dokuments (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D**) werden die Leerzeicheneinstellungen in der EditorConfig-Datei auf vorhandene Codezeilen angewendet.
 
 Wenn Sie eine EditorConfig-Datei aus Ihrem Projekt oder Ihrer Codebasis entfernen und neue Codezeilen gemäß den globalen Editor-Einstellungen formatiert werden sollen, müssen Sie alle geöffneten Codedateien schließen und erneut öffnen.
 

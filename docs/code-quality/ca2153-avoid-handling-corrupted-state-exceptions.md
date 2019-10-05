@@ -1,5 +1,5 @@
 ---
-title: Codeanalyse-Regelsätze CA2153 für Corrupted State Exceptions
+title: Code Analyse Regel CA2153 für beschädigte Zustands Ausnahmen
 ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
@@ -7,49 +7,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0179a9609907adc07dc6d8a085eb9a2a0c38c065
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542156"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253224"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Verhindern, dass Corrupted State Exceptions
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Vermeiden der Behandlung von beschädigten Zustands Ausnahmen
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-[Ausnahmen (CSEs) aufgrund von](https://msdn.microsoft.com/magazine/dd419661.aspx) anzugeben, dass der Speicher Speicherbeschädigung innerhalb des Prozesses. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
+[Beschädigte Zustands Ausnahmen (CSES)](https://msdn.microsoft.com/magazine/dd419661.aspx) weisen darauf hin, dass im Prozess Speicher Beschädigungen vorhanden sind. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. In diesem Szenario beschädigten Zustand ein allgemeiner Handler nur fängt die Ausnahme ab, wenn Sie die Methode mit kennzeichnen die <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> Attribut. In der Standardeinstellung die [Common Language Runtime (CLR)](/dotnet/standard/clr) ist keine Catch-Handler für CSEs aufgerufen.
+CSE gibt an, dass der Zustand eines Prozesses beschädigt wurde und nicht vom System abgefangen wurde. Im Szenario mit beschädigtem Zustand fängt ein allgemeiner Handler die Ausnahme nur ab, wenn Sie die Methode <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> mit dem-Attribut markieren. Standardmäßig ruft die [Common Language Runtime (CLR)](/dotnet/standard/clr) keine catch-Handler für CSEs auf.
 
-Die sicherste Methode ist, um den Prozess abstürzen zu ermöglichen, ohne diese Arten von Ausnahmen abfangen. Selbst das Protokollieren von Code können Angreifer speicherbeschädigungen auszunutzen.
+Die sicherste Option besteht darin, den Prozess abstürzen zu lassen, ohne diese Art von Ausnahmen abfangen zu müssen. Durch die Protokollierung von Code können Angreifer auch Speicher Beschädigungs Fehler ausnutzen.
 
-Diese Warnung wird ausgelöst, wenn CSEs mit einem allgemeinen Handler abgefangen werden, der alle Ausnahmen, z. B. abfängt `catch (System.Exception e)` oder `catch` ohne Ausnahme-Parameter.
+Diese Warnung wird ausgelöst, wenn CSEs mit einem allgemeinen Handler abgefangen werden, der alle Ausnahmen abfängt `catch` , z `catch (System.Exception e)` . b. oder ohne Ausnahme Parameter.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Führen Sie eine der folgenden Schritte aus, um diese Warnung zu beheben:
+Um diese Warnung zu beheben, führen Sie einen der folgenden Schritte aus:
 
-- Entfernen Sie das <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>-Attribut. Dadurch wird wieder das Standardverhalten der Laufzeit hergestellt, bei dem CSEs nicht an Catch-Handler übergeben werden.
+- Entfernen Sie das <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>-Attribut. Dadurch wird das standardmäßige Laufzeitverhalten wieder hergestellt, bei dem CSEs nicht an catch-Handler übergeben werden.
 
-- Entfernen Sie den allgemeinen Catch-Handler zugunsten von Handlern, die bestimmte Ausnahmetypen abfangen. Dies kann auch CSEs, vorausgesetzt, dass vom Handlercode sicher behandelt werden kann (selten vorkommenden) gehören.
+- Entfernen Sie den allgemeinen Catch-Handler zugunsten von Handlern, die bestimmte Ausnahmetypen abfangen. Dazu können auch CSEs gehören, vorausgesetzt, der Handlercode kann Sie sicher behandeln (selten).
 
-- Erneut die CSE im Catch-Handler, übergibt die Ausnahme an dem Aufrufer und führt zum Beenden des ausgeführten Prozesses aus.
+- Lösen Sie die Client seitige Erweiterung erneut im catch-Handler aus, der die Ausnahme an den Aufrufer übergibt und den laufenden Prozess beenden soll.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
-## <a name="pseudo-code-example"></a>Pseudocodebeispiel
+## <a name="pseudo-code-example"></a>Pseudo Codebeispiel
 
 ### <a name="violation"></a>Verletzung
 
@@ -71,9 +71,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1---remove-the-attribute"></a>Lösung 1: Entfernen Sie das Attribut
+### <a name="solution-1---remove-the-attribute"></a>Lösung 1: Entfernen des Attributs
 
-Entfernen der <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> Attribut wird sichergestellt, dass Corrupted State Exceptions nicht von der Methode behandelt werden.
+Durch Entfernen <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> des-Attributs wird sichergestellt, dass beschädigte Zustands Ausnahmen nicht von der-Methode behandelt werden.
 
 ```csharp
 void TestMethod1()
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2---catch-specific-exceptions"></a>Lösung 2: bestimmte Ausnahmen abfangen
+### <a name="solution-2---catch-specific-exceptions"></a>Lösung 2: erfassen spezifischer Ausnahmen
 
 Entfernen Sie den allgemeinen Catch-Handler, und fangen Sie nur bestimmte Ausnahmetypen ab.
 
@@ -111,9 +111,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3---rethrow"></a>Lösung 3: Lösen Sie erneut aus
+### <a name="solution-3---rethrow"></a>Lösung 3-erneut auslösen
 
-Ausnahme erneut auslösen.
+Lösen Sie die Ausnahme erneut aus.
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]

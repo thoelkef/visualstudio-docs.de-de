@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157775"
 ---
 # <a name="summary-view---instrumentation-data"></a>Zusammenfassungansicht – Instrumentationsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
   
  **Langsamster Pfad** umfasst die folgenden Daten für jede Funktion:  
   
-|Spalte|Beschreibung|  
+|Spalte|BESCHREIBUNG|  
 |------------|-----------------|  
 |**Name**|Der Name der Funktion.|  
 |**verstrichene inklusive Zeit %**|Der Prozentsatz der gesamten Zeit in den Profilerstellungsdaten, die die Funktion für die Ausführung von Code im Funktionsrumpf und in den von ihr aufgerufenen Funktionen aufgewendet hat.|  
@@ -42,7 +42,7 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
   
  **Funktionen mit den meisten einzelnen Aufgaben** umfasst die folgenden Daten für jede Funktion:  
   
-|Spalte|Beschreibung|  
+|Spalte|BESCHREIBUNG|  
 |------------|-----------------|  
 |**Name**|Der Name der Funktion.|  
 |**Exklusive Zeit %**|Der Prozentsatz der gesamten Zeit in den Profilerstellungsdaten, die die Funktion für die Ausführung von Code im Funktionsrumpf verwendet hat. In Funktionen, die von der Funktion aufgerufen wurden, aufgewendete Zeit wurde nicht berücksichtigt.|  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545537"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232818"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Deklarative Sicherheit auf Werttypen überprüfen.
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545537"
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Ein öffentlicher oder geschützter Werttyp wird geschützt, indem eine [Daten und Modellierung](/dotnet/framework/data/index) oder [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands).
+Ein öffentlicher oder geschützter Werttyp wird durch [Daten-, Modellierungs-](/dotnet/framework/data/index) oder Verknüpfungs Aufrufe [gesichert.](/dotnet/framework/misc/link-demands)
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Werttypen werden zugeordnet und durch die standardmäßige Konstruktoren initialisiert werden, bevor andere Konstruktoren ausgeführt. Wenn ein Werttyp wird durch einen Demand oder LinkDemand geschützt, und der Aufrufer verfügt nicht über die Berechtigungen, die die sicherheitsüberprüfung, die keinen Konstruktor außer erfüllen standardmäßig fehl, und eine Sicherheitsausnahme ausgelöst. Der Werttyp wird nicht freigegeben. Es bleibt im Zustand "" festlegen, indem die Standard-Konstruktor. Führen Sie Sie nicht davon gehen Sie aus, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, verfügt über die Berechtigung zum Erstellen oder die Instanz zugreifen.
+Werttypen werden von ihren Standardkonstruktoren zugeordnet und initialisiert, bevor andere Konstruktoren ausgeführt werden. Wenn ein Werttyp durch einen Demand-oder LinkDemand-Wert geschützt wird und der Aufrufer nicht über die Berechtigungen verfügt, die die Sicherheitsüberprüfung erfüllen, schlägt jeder andere Konstruktor als der Standardwert fehl, und es wird eine Sicherheits Ausnahme ausgelöst. Die Zuordnung des Werttyps wird nicht aufgehoben. Sie bleibt im Zustand, der durch den Standardkonstruktor festgelegt wird. Nehmen Sie nicht an, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, über die Berechtigung zum Erstellen oder zugreifen auf die Instanz verfügt
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Sie können keinen Verstoß gegen diese Regel beheben, es sei denn, Sie die sicherheitsüberprüfung, von dem Typ entfernen und Verwendung methodensicherheit auf Zeilenebene an seiner Stelle überprüft. Beheben den Verstoß auf diese Weise verhindert nicht, dass Aufrufer mit unzureichenden Berechtigungen Abrufen von Instanzen des Werttyps. Sie müssen sicherstellen, dass eine Instanz des Werttyps, in seinem Standardzustand macht keine vertraulichen Informationen verfügbar, und kann nicht auf schädliche Weise verwendet werden.
+Es ist nicht möglich, einen Verstoß gegen diese Regel zu beheben, es sei denn, Sie entfernen die Sicherheitsüberprüfung des Typs und verwenden Sicherheitsüberprüfungen auf Methoden Ebene. Wenn Sie die Verletzung auf diese Weise beheben, wird nicht verhindert, dass Aufrufer mit unzureichenden Berechtigungen Instanzen des Werttyps erhalten. Sie müssen sicherstellen, dass eine Instanz des Werttyps in seinem Standardzustand keine sensiblen Informationen verfügbar macht und nicht schädlich verwendet werden kann.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Sie können eine Warnung dieser Regel unterdrücken, wenn ein Aufrufer die Instanzen des Werttyps in seinem Standardzustand abrufen kann, ohne die Sicherheit gefährden.
+Sie können eine Warnung aus dieser Regel unterdrücken, wenn ein Aufrufer Instanzen des Werttyps im Standardzustand abrufen kann, ohne eine Bedrohung für die Sicherheit darstellen zu müssen.
 
 ## <a name="example-1"></a>Beispiel 1
 
-Das folgende Beispiel zeigt eine Bibliothek mit einem Werttyp, der gegen diese Regel verstößt. Die `StructureManager` Typs wird davon ausgegangen, dass ein Aufrufer, eine Instanz des Werttyps übergibt, verfügt über die Berechtigung zum Erstellen oder die Instanz zugreifen.
+Das folgende Beispiel zeigt eine Bibliothek mit einem Werttyp, der gegen diese Regel verstößt. Der `StructureManager` -Typ geht davon aus, dass ein Aufrufer, der eine Instanz des Werttyps übergibt, über die Berechtigung verfügt, auf die Instanz zuzugreifen
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>Beispiel 2
 
-Die folgende Anwendung zeigt die Bibliotheks Schwachstelle.
+Die folgende Anwendung veranschaulicht die Schwachstelle der Bibliothek.
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 
@@ -68,5 +68,5 @@ New values SecuredTypeStructure 200 200
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)
+- [Link Aufrufe](/dotnet/framework/misc/link-demands)
 - [Daten und Modellierung](/dotnet/framework/data/index)

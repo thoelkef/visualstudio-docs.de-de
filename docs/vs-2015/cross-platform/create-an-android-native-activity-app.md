@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151029"
 ---
 # <a name="create-an-android-native-activity-app"></a>Erstellen einer Android Native Activity-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
   
 1. Öffnen Sie Visual Studio. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen**die Option **Visual C++**, **Plattformübergreifend**und dann die Vorlage **Native-Activity Application (Android)** aus.  
+2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen**die Option **Visual C++** , **Plattformübergreifend**und dann die Vorlage **Native-Activity Application (Android)** aus.  
   
 3. Vergeben Sie an die App einen Namen wie etwa `MyAndroidApp`(ohne Leerzeichen), und wählen Sie dann **OK**.  
   

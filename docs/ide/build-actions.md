@@ -3,17 +3,17 @@ title: Buildprozesse für Dateien
 ms.date: 11/19/2018
 ms.technology: vs-ide-compile
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7820cbbe0477000c2a822e94f5204906d65025fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975645"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254428"
 ---
 # <a name="build-actions"></a>Buildvorgänge
 
@@ -30,13 +30,29 @@ Sämtliche Dateien in einem Projekt von Visual Studio verfügen über einen Buil
 
 ## <a name="build-action-values"></a>Buildprozesswerte
 
-Einige der Buildprozesse für C# und Visual Basic-Projektdateien sind die folgenden:
+Einige der gängigeren Buildprozesse für C# und Visual Basic-Projektdateien sind die folgenden:
 
-* **None** (Keiner): Die Datei ist in keiner Weise Teil des Builds. Dieser Wert kann für Dokumentationsdateien wie Infodateien verwendet werden.
-* **Compile** (Kompilieren): Die Datei wird an den C#-Compiler als Quelldatei übergeben.
-* **Content** (Inhalt): Eine Datei, die als **Inhalt** markiert ist, kann als Stream abgerufen werden, indem Sie <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType> aufrufen. Bei ASP.NET-Projekten werden diese Dateien bei der Bereitstellung als Teil der Website integriert.
-* **Embedded Ressource** (Eingebettete Ressource): Die Datei wird an den Compiler als Ressource übergeben, die in die Assembly eingebettet wird. Rufen Sie <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> zum Lesen der Datei aus der Assembly auf.
-* **Additional Files** (Zusätzliche Dateien): Eine Textdatei, die keine Quelldatei ist, die an den C#- oder Visual Basic-Compiler als Eingabe übergeben wird. Dieser Buildprozess wird hauptsächlich zum Bereitstellen von Eingaben für [Analysetools](../code-quality/roslyn-analyzers-overview.md) verwendet, auf die ein Projekt verweist, um die Codequalität zu überprüfen. Weitere Informationen finden Sie in der GitHub-Übersicht zum [Verwenden zusätzlicher Dateien](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).
+|Buildvorgang | Projekttypen | BESCHREIBUNG |
+|-|-|
+| **AdditionalFiles** | C#, Visual Basic | Eine Textdatei, die keine Quelldatei ist, die an den C#- oder Visual Basic-Compiler als Eingabe übergeben wird. Dieser Buildprozess wird hauptsächlich zum Bereitstellen von Eingaben für [Analysetools](../code-quality/roslyn-analyzers-overview.md) verwendet, auf die ein Projekt verweist, um die Codequalität zu überprüfen. Weitere Informationen finden Sie in der GitHub-Übersicht zum [Verwenden zusätzlicher Dateien](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
+| **ApplicationDefinition** | WPF | Die Datei, die Ihre Anwendung definiert. Wenn Sie ein Projekt erstmalig erstellen, ist dies *App.XAML*. |
+| **CodeAnalysisDictionary** | .NET | Ein benutzerdefiniertes Wörterbuch, das von der Codeanalyse für die Rechtschreibprüfung verwendet wird. Weitere Informationen finden Sie unter [How to: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **Compile** | any | Die Datei wird an den Compiler als Quelldatei übergeben.|
+| **Inhalt** | .NET | Eine Datei, die als **Content** markiert ist, kann als Stream abgerufen werden, indem Sie <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType> aufrufen. Bei ASP.NET-Projekten werden diese Dateien bei der Bereitstellung als Teil der Website integriert.|
+| **DesignData** | WPF | Wird für XAML-ViewModel-Dateien verwendet, um die Anzeige von Benutzersteuerelementen zur Entwurfszeit mit Dummytypen und Beispieldaten zu ermöglichen. |
+| **DesignDataWithDesignTimeCreateable** | WPF | Wie **bei DesignData**, aber mit tatsächlichen Typen.  |
+| **Embedded Resource** | .NET | Die Datei wird an den Compiler als Ressource übergeben, die in die Assembly eingebettet wird. Rufen Sie <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> zum Lesen der Datei aus der Assembly auf.|
+| **EntityDeploy** | .NET | EDMX-Dateien von ‚Entity Framework (EF), die die Bereitstellung von EF-Artefakten angeben. |
+| **Fakes** | .NET | Wird für das Microsoft Fakes-Testframework verwendet. Weitere Informationen finden Sie unter [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
+| **Keine** | any | Die Datei ist in keiner Weise Teil des Builds. Dieser Wert kann für Dokumentationsdateien wie Infodateien verwendet werden.|
+| **Seite** | WPF | Kompilieren Sie eine XAML-Datei in eine binäre BAML-Datei zum schnelleren Laden zur Laufzeit. |
+| **Ressource** | WPF | Gibt an, dass die Datei in eine Ressourcendatei des Assemblymanifests mit der Erweiterung *.g.resources* eingebettet wird. |
+| **Shadow** | .NET | Wird für eine Accessordatei verwendet, die eine Liste der erstellten Assemblydateinamen enthält (eine pro Zeile). Generieren Sie für jede Assembly in der Liste öffentliche Klassen mit den Namen `ClassName_Accessor`, die den Originalen entsprechen, aber mit öffentlichen Methoden anstelle von privaten Methoden. Wir für Komponententests verwendet. |
+| **Begrüßungsbildschirm** | WPF | Gibt eine Bilddatei an, die zur Laufzeit angezeigt werden soll, wenn die App gestartet wird. |
+| **XamlAppDef** | Windows Workflow Foundation | Weist den Build an, eine Workflow-XAML-Datei in eine Assembly mit einem eingebetteten Workflow zu erstellen. |
+
+> [!NOTE]
+> Zusätzliche Buildaktionen können für bestimmte Projekttypen definiert werden, sodass die Liste der Buildaktionen vom Projekttyp abhängt und Werte angezeigt werden können, die nicht in dieser Liste enthalten sind.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 06/29/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552869"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211333"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
-**Für [Release 16.1](/visualstudio/releases/2019/release-notes/) aktualisiert**
+**Für [Release 16.3](/visualstudio/releases/2019/release-notes/) aktualisiert**
 
 >[!div class="button"]
->[Herunterladen von Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Herunterladen von Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 Visual Studio 2019 bietet branchenführende Tools und Dienste für jeden Entwickler, jede App und jede Plattform. Ob Sie Visual Studio zum ersten Mal oder schon seit Jahren nutzen, Sie werden von der neuen Version überzeugt sein.
 
@@ -65,7 +65,7 @@ Rufen Sie die Refactorings einfach auf, indem Sie **STRG+.** drücken und die Ak
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) unterstützt Ihre Softwareentwicklung mithilfe von künstlicher Intelligenz (KI). IntelliCode trainiert über 2.000 Open Source-Projekte auf GitHub &mdash; jedes mit über 100 Sternen &mdash; zum Generieren von Empfehlungen.
 
- ![Animation: IntelliCode in Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Animation: IntelliCode in Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
 Im Folgenden werden einige Möglichkeiten aufgeführt, wie Sie mit Visual Studio IntelliCode Ihre Produktivität steigern können:
 
@@ -101,6 +101,18 @@ Seit der Veröffentlichung von Visual Studio 2019 ist Visual Studio eine PMA-fä
    ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
 
 Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience with Visual Studio 2019 (Bessere Erfahrung mit mehreren Monitoren mit Visual Studio 2019)](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/).
+
+### <a name="test-explorer"></a>Test-Explorer
+
+**Neu in Version 16.2:** Der Test-Explorer wurde aktualisiert. Große Testdatensätze können nun besser verarbeitet werden, das Filtern wurde vereinfacht, Befehle sind besser auffindbar, Wiedergabelisten werden als Registerkarten angezeigt, und es gibt anpassbare Spalten, mit denen Sie die angezeigten Testinformationen optimieren können.
+
+   ![Screenshot: Verbesserungen an der Benutzeroberfläche des Test-Explorers](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**Neu in Version 16.3:** Unterstützung für .NET Core 3.0 wurde integriert. .NET Core 3.0 ist plattformübergreifend, Open Source und wird vollständig von Microsoft unterstützt. 
+
+Weitere Informationen finden Sie im Blogbeitrag zur [Ankündigung von .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
 ## <a name="collaborate"></a>Zusammenarbeiten
 
@@ -178,6 +190,12 @@ ASP.NET Core-Anwendungen und Desktopanwendungen, die auf einem virtuellen Azure 
 
 Weitere Informationen finden Sie auf der Seite [Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md) und in dem Blogbeitrag [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Einführung in Time Travel Debugging für Visual Studio Enterprise 2019).
 
+### <a name="microsoft-edge-insider-support"></a>Unterstützung von Microsoft Edge Insider
+
+**Neu in Version 16.2:** Sie können einen Breakpoint in einer JavaScript-Anwendung festlegen und eine Debugsitzung starten, indem Sie den Browser [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) verwenden. Daraufhin öffnet Visual Studio ein neues Browserfenster mit aktiviertem Debuggen, das Sie dann zum Durchlaufen der JavaScript-Anwendung in Visual Studio verwenden können.
+
+   ![Screenshot: JavaScript-Code, der im Browser gerendert wird](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>Ausblick
 
 Wir aktualisieren Visual Studio 2019 häufig mit neuen Features, die die Entwicklung immer weiter verbessern. Weitere Informationen zu unseren aktuellen Innovationen finden Sie im [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/). Was wir zurzeit in der Vorschau veröffentlicht haben, können Sie den [Visual Studio 2019 Preview Release Notes](/visualstudio/releases/2019/release-notes-preview/) (Anmerkungen zu Vorschauversionen in Visual Studio 2019) entnehmen.
@@ -194,9 +212,8 @@ Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedb
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Ankündigung von Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes/)
 * [Neuigkeiten im Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 für Mac ist jetzt verfügbar.](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Versionshinweise für Visual Studio 2019 für Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Microsoft Build 2019-Konferenz](https://www.microsoft.com/build)
 * [Microsoft Connect(); 2018 conference (Microsoft Connect(); 2018-Konferenz)](https://www.microsoft.com/connectevent)

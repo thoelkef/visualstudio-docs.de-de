@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Verweisen mit dem Verweis-Manager
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -21,26 +21,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160166"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787893"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
-Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Komponenten hinzuzufügen und zu verwalten, die von Ihnen, Microsoft oder einem anderen Unternehmen entwickelt wurden. Wenn Sie eine universelle Windows-App entwickeln, verweist das Projekt automatisch auf alle richtigen Windows SDK-DLLs. Wenn Sie eine .NET-Anwendung entwickeln, verweist das Projekt automatisch auf *mscorlib.dll*. Einige .NET-APIs werden in Komponenten verfügbar gemacht, die Sie manuell hinzufügen müssen. Verweise auf COM-Komponenten oder benutzerdefinierte Komponenten müssen manuell hinzugefügt werden.
+Sie können das Dialogfeld „Verweis-Manager“ verwenden, um Verweise auf Komponenten hinzuzufügen und zu verwalten, die von Ihnen, Microsoft oder einem anderen Unternehmen entwickelt wurden. Wenn Sie eine universelle Windows-App entwickeln, verweist das Projekt automatisch auf alle richtigen Windows SDK-DLLs. Wenn Sie eine .NET-Anwendung entwickeln, verweist das Projekt automatisch auf *mscorlib.dll*. Einige .NET-APIs werden in Komponenten verfügbar gemacht, die Sie manuell hinzufügen müssen. Verweise auf COM-Komponenten oder benutzerdefinierte Komponenten müssen manuell hinzugefügt werden.
 
 ## <a name="reference-manager-dialog-box"></a>Dialogfeld "Verweis-Manager"
 
-Das Dialogfeld **Verweis-Manager** zeigt die verschiedenen Kategorien je nach Projekttyp auf der linken Seite an:
+Das Dialogfeld „Verweis-Manager“ zeigt die verschiedenen Kategorien je nach Projekttyp auf der linken Seite an:
 
 - **Assemblys** mit den Untergruppen **Framework** und **Erweiterungen**.
 
-- **COM:** Hier werden alle COM-Komponenten aufgelistet, die für Verweise verfügbar sind.
+- **COM** listet alle COM-Komponenten auf, die für Verweise verfügbar sind.
 
-- **Projektmappe** mit der Untergruppe **Projekte**.
+- **Projekte**
+
+- **Freigegebene Projekte**
 
 - **Windows** mit den Untergruppen **Core** und **Erweiterungen**. Sie können die Verweise im Windows SDK oder im Erweiterungs-SDK mit dem **Objektkatalog** untersuchen.
 
@@ -62,7 +64,7 @@ Wenn Sie einem der EnvDTE-Namespaces (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvD
 
 Alle Desktopprojekte enthalten einen impliziten Verweis auf **mscorlib**. Visual Basic-Projekte enthalten einen impliziten Verweis auf <xref:Microsoft.VisualBasic>. Alle Projekte enthalten einen impliziten Verweis auf **System.Core**. Dies gilt auch, wenn der Eintrag aus der Liste der Verweise entfernt wird.
 
-Wenn ein Projekttyp keine Assemblys unterstützt, wird die Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
+Wenn ein Projekttyp keine Assemblys unterstützt, wird die Registerkarte nicht im Dialogfeld „Verweis-Manager“ angezeigt.
 
 Die Registerkarte **Assemblys** besteht aus zwei untergeordneten Registerkarten:
 
@@ -105,33 +107,33 @@ Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben
 
 - Verschieben oder kopieren Sie die Assembly in einen der folgenden Speicherorte:
 
-   - Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)
+  - Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)
 
-   - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)
+  - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie können die Assemblys über die Registerkarte **Projekte** suchen.)
 
-    \- oder –
+  \- oder –
 
 - Legen Sie einen Registrierungsschlüssel fest, der den Speicherort der anzuzeigenden Assemblys angibt:
 
-   Fügen Sie für ein 32-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel hinzu:
+  Fügen Sie für ein 32-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel hinzu:
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   Fügen Sie für ein 64-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel in einer 32-Bit-Registrierungsstruktur hinzu:
+  Fügen Sie für ein 64-Bit-Betriebssystem einen der folgenden Registrierungsschlüssel in einer 32-Bit-Registrierungsstruktur hinzu:
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* ist die niedrigste geltende Frameworkversion. Wenn *\<VersionMinimum\>* Version 3.0 ist, gelten in *AssemblyFoldersEx* angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.
+  *\<VersionMinimum\>* ist die niedrigste geltende Frameworkversion. Wenn *\<VersionMinimum\>* Version 3.0 ist, gelten in *AssemblyFoldersEx* angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.
 
-   *\<AssemblyLocation\>* ist das Verzeichnis der Assemblys, die Sie im Dialogfeld **Verweis hinzufügen** anzeigen möchten, z.B. *C:\MyAssemblies*.
+  *\<AssemblyLocation\>* ist das Verzeichnis der Assemblys, die Sie im Dialogfeld **Verweis hinzufügen** anzeigen möchten, z.B. *C:\MyAssemblies*.
 
-   Indem der Registrierungsschlüssel unter dem `HKEY_LOCAL_MACHINE`-Knoten erstellt wird, können die Assemblys am angegebenen Speicherort für alle Benutzer im Dialogfeld **Verweis hinzufügen** angezeigt werden. Wenn der Registrierungsschlüssel unter dem `HKEY_CURRENT_USER`-Knoten erstellt wird, hat dies nur Einfluss auf die Einstellung für den aktuellen Benutzer.
+  Indem der Registrierungsschlüssel unter dem `HKEY_LOCAL_MACHINE`-Knoten erstellt wird, können die Assemblys am angegebenen Speicherort für alle Benutzer im Dialogfeld **Verweis hinzufügen** angezeigt werden. Wenn der Registrierungsschlüssel unter dem `HKEY_CURRENT_USER`-Knoten erstellt wird, hat dies nur Einfluss auf die Einstellung für den aktuellen Benutzer.
 
-   Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. Die Assemblys sollten auf der Registerkarte **.NET** angezeigt werden. Stellen Sie andernfalls sicher, dass sich die Assemblys im angegebenen Verzeichnis *AssemblyLocation* befinden, starten Sie Visual Studio neu, und versuchen Sie es noch einmal.
+  Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. Die Assemblys sollten auf der Registerkarte **.NET** angezeigt werden. Stellen Sie andernfalls sicher, dass sich die Assemblys im angegebenen Verzeichnis *AssemblyLocation* befinden, starten Sie Visual Studio neu, und versuchen Sie es noch einmal.
 
 ## <a name="projects-tab"></a>Registerkarte „Projekte“
 
@@ -141,6 +143,10 @@ Ein Projekt kann auf ein anderes Projekt verweisen, das eine andere Frameworkver
 
 > [!NOTE]
 > Ein Projekt, das auf .NET Framework 4 abzielt, ist nicht kompatibel mit einem Projekt, das auf das Clientprofil von .NET Framework 4 abzielt.
+
+## <a name="shared-projects-tab"></a>Registerkarte „Freigegebene Projekte“
+
+Fügen Sie auf der **Registerkarte Freigegebene Projekte** im Dialogfeld „Verweis-Manager“ einen Verweis auf ein freigegebenes Projekt hinzu. [Mit freigegebenen Projekten](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) können Sie allgemeinen Code schreiben, auf den von einer Reihe verschiedener Anwendungsprojekte verwiesen wird.
 
 ## <a name="universal-windows-tab"></a>Registerkarte „Universelles Windows“
 
@@ -155,28 +161,28 @@ Universelle Windows-App-Projekte verweisen standardmäßig auf das Universelles 
 
 **Erweiterungen** listen die Benutzer-SDKs auf, die die als Ziel verwendete Windows-Plattform erweitern.
 
-Ein SDK ist eine Auflistung von Dateien, die Visual Studio als einzelne Komponente behandelt. Auf der Registerkarte **Erweiterungen** werden SDKs, die sich auf das Projekt beziehen, über das das Dialogfeld **Verweis-Manager** aufgerufen wurde, als einzelne Einträge aufgeführt. Wenn er einem Projekt hinzugefügt wird, wird der gesamte SDK-Inhalt von Visual Studio so verwendet, dass der Benutzer keine weiteren Aktionen ausführen muss, um den SDK-Inhalt in IntelliSense, in der Toolbox, in Designern, im Objektkatalog, im Build, bei der Bereitstellung, beim Debuggen und beim Packen zu nutzen.
+Ein SDK ist eine Auflistung von Dateien, die Visual Studio als einzelne Komponente behandelt. Auf der Registerkarte **Erweiterungen** werden SDKs, die sich auf das Projekt beziehen, über das das Dialogfeld „Verweis-Manager“ aufgerufen wurde, als einzelne Einträge aufgeführt. Wenn er einem Projekt hinzugefügt wird, wird der gesamte SDK-Inhalt von Visual Studio so verwendet, dass der Benutzer keine weiteren Aktionen ausführen muss, um den SDK-Inhalt in IntelliSense, in der Toolbox, in Designern, im Objektkatalog, im Build, bei der Bereitstellung, beim Debuggen und beim Packen zu nutzen.
 
 Informationen über das Anzeigen Ihres SDKs auf der Registerkarte **Erweiterungen** finden Sie unter [Creating a Software Development Kit (Erstellen eines Software Development Kits)](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Wenn ein Projekt auf ein SDK verweist, das von einem anderen SKD abhängt, verwendet Visual Studio das zweite SDK nur, wenn Sie manuell einen Verweis auf das zweite SDK hinzufügen. Wenn ein Benutzer ein SDK auf der Registerkarte **Erweiterungen** auswählt, unterstützt Sie das Dialogfeld **Verweis-Manager** beim Erkennen von SDK-Abhängigkeiten, indem es alle Abhängigkeiten im Detailbereich auflistet.
+> Wenn ein Projekt auf ein SDK verweist, das von einem anderen SKD abhängt, verwendet Visual Studio das zweite SDK nur, wenn Sie manuell einen Verweis auf das zweite SDK hinzufügen. Wenn ein Benutzer ein SDK auf der Registerkarte **Erweiterungen** auswählt, unterstützt Sie das Dialogfeld „Verweis-Manager“ beim Erkennen von SDK-Abhängigkeiten, indem es alle Abhängigkeiten im Detailbereich auflistet.
 
-Wenn ein Projekttyp Erweiterungen nicht unterstützt, wird diese Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
+Wenn ein Projekttyp Erweiterungen nicht unterstützt, wird diese Registerkarte nicht im Dialogfeld „Verweis-Manager“ angezeigt.
 
 ## <a name="com-tab"></a>COM-Registerkarte
 
 Die Registerkarte **COM** listet alle COM-Komponenten auf, die für Verweise verfügbar sind. Wenn Sie einer registrierten COM DLL mit einem internen Manifest eine Referenz hinzufügen möchten, müssen Sie die Registrierung der DLL zunächst aufheben. Andernfalls fügt Visual Studio den Assemblyverweis nicht als native DLL, sondern als ActiveX-Steuerelement hinzu.
 
-Wenn ein Projekttyp COM nicht unterstützt, wird die Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
+Wenn ein Projekttyp COM nicht unterstützt, wird die Registerkarte nicht im Dialogfeld „Verweis-Manager“ angezeigt.
 
-## <a name="browse-button"></a>Schaltfläche "Durchsuchen"
+## <a name="browse"></a>Durchsuchen
 
 Mit der Schaltfläche **Durchsuchen** können Sie nach einer Komponente im Dateisystem suchen.
 
 Ein Projekt kann auf eine andere Komponente verweisen, die eine andere Frameworkversion als Ziel verwendet. Sie können z.B. eine Anwendung für .NET Framework 4.7 erstellen, die auf eine Komponente verweist, die wiederum auf .NET Framework 4 abzielt. Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md).
 
-Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis-Manager** auf der Registerkarte **Projektmappe**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
+Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld „Verweis-Manager“ auf der Registerkarte **Projektmappe**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
 
 Sie können nicht zu einem SDK navigieren und es dem Projekt hinzufügen. Sie können nur zu einer Datei navigieren (beispielsweise zu einer Assembly oder einer *WINMD*-Datei) und sie dem Projekt hinzufügen.
 
@@ -201,7 +207,7 @@ Beim Erstellen eines Dateiverweises auf ein WinMD wird als Layout erwartet, dass
 
 ## <a name="search"></a>Suchen
 
-Die Suchleiste im Dialogfeld **Verweis-Manager** funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.
+Die Suchleiste im Dialogfeld „Verweis-Manager“ funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.
 
 ## <a name="see-also"></a>Siehe auch
 

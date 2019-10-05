@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5422d8cb56a9df1fad40857f6802e55ebd11b2ed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3f9094b4d668df37c25da075d0cee590052f910d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675494"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919817"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimieren Ihres Azure-Codes
 Wenn Sie Apps programmieren, für die Microsoft Azure verwendet wird, sollten Sie einige Hinweise zur Codeerstellung beachten. So vermeiden Sie Probleme mit der Skalierbarkeit, dem Verhalten und der Leistung von Apps in einer Cloudumgebung. Microsoft stellt ein Azure-Tool für die Codeanalyse bereit, mit dem mehrere dieser häufig auftretenden Probleme erkannt und behoben werden können. Sie können das Tool in Visual Studio über NuGet herunterladen.
@@ -128,7 +128,7 @@ Der Vorteil der Verwendung von **OnMessage** gegenüber **Receive** besteht dari
 Wenn Sie **Receive** ohne Verwendung des Standardwerts aufrufen, sollten Sie sicherstellen, dass der Wert *ServerWaitTime* mehr als eine Minute beträgt. Mit dem Festlegen von *ServerWaitTime* auf mehr als eine Minute wird verhindert, dass für den Server eine Zeitüberschreitung auftritt, bevor die Nachricht vollständig empfangen wurde.
 
 ### <a name="solution"></a>Lösung
-Die empfohlene Verwendung wird in den folgenden Codebeispielen veranschaulicht. Weitere Informationen finden Sie unter [QueueClient.OnMessage Method (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) und [QueueClient.Receive Method (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
+Die empfohlene Verwendung wird in den folgenden Codebeispielen veranschaulicht. Weitere Informationen finden Sie unter [QueueClient.OnMessage-Methode (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) und [QueueClient.Receive-Methode (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
 
 Sehen Sie sich die Informationen zum Entwurfsmuster unter [Einführung in asynchrone Nachrichten](https://msdn.microsoft.com/library/dn589781.aspx)an, um die Leistung der Azure-Messaginginfrastruktur zu verbessern.
 

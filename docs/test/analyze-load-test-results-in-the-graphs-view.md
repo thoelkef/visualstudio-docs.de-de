@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432018"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926467"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen in der Diagrammansicht des Auslastungstest-Analyzers
 
@@ -38,7 +38,7 @@ Es werden mehrere integrierte Diagramme zur Verfügung gestellt. Sie können die
 
 In der folgenden Tabelle sind die integrierten Diagramme aufgeführt, die für die Analyse von Auslastungstestergebnissen verfügbar sind.
 
-|Diagrammname|Beschreibung|
+|Diagrammname|BESCHREIBUNG|
 |-|-|
 |Schlüsselindikatoren|Indikatoren zur Beschreibung grundlegender Aspekte der Testleistung wie Benutzerauslastung, Durchsatz und Antwortzeit.|
 |Testantwortzeit|Daten über die Zeitdauer, die zur Testausführung benötigt wird.|
@@ -47,20 +47,20 @@ In der folgenden Tabelle sind die integrierten Diagramme aufgeführt, die für d
 |Controller und Agents|Informationen über die Computer, auf denen die Auslastungstests ausgeführt werden. Dies schließt Daten über Arbeitsspeichernutzung, Prozessor, physischen Datenträger und Prozesse ein.<br /><br /> Standardmäßig werden nur Daten der Indikatoren Verfügbare MB und Prozessorzeit erfasst.|
 |Antwortzeit der Transaktion|Die durchschnittliche Antwortzeit für die während des Auslastungstests ausgeführten Transaktionen|
 
- Sie können verschiedene Indikatoren im Diagramm anzeigen lassen, sowohl zur Laufzeit als auch nach Ausführung eines Tests.
+Sie können verschiedene Indikatoren im Diagramm anzeigen lassen, sowohl zur Laufzeit als auch nach Ausführung eines Tests.
 
 > [!NOTE]
 > Einem automatisch generierten Antwortzeitdiagramm können nur Leistungsindikatoren für die Antwortzeit hinzugefügt werden.
 
- Die Indikatorinformationen werden sowohl im Diagramm als auch in der Legende unterhalb der Diagramme angezeigt. Außerdem können Sie einen Bereich des Diagramms vergrößern. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+Die Indikatorinformationen werden sowohl im Diagramm als auch in der Legende unterhalb der Diagramme angezeigt. Außerdem können Sie einen Bereich des Diagramms vergrößern. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>In Diagrammen angezeigte Zähler
 
- In Diagrammen werden *Indikatoren* angezeigt. Indikatoren beziehen sich auf die während eines Auslastungstests erfassten Daten, beispielsweise Tests pro Sekunde oder durchschnittliche Testzeit. Weitere Informationen zu Indikatoren finden Sie unter [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+In Diagrammen werden *Indikatoren* angezeigt. Indikatoren beziehen sich auf die während eines Auslastungstests erfassten Daten, beispielsweise Tests pro Sekunde oder durchschnittliche Testzeit. Weitere Informationen zu Indikatoren finden Sie unter [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- Die Legende der Indikatoren, die in den Diagrammen angezeigt werden, enthält mehrere Spalten mit nützlichen Daten zur Ausführung des Auslastungstests. Um die Anzeige von Daten im Diagramm zu deaktivieren, deaktivieren Sie das Kontrollkästchen in der entsprechenden Zeile der Legende.
+Die Legende der Indikatoren, die in den Diagrammen angezeigt werden, enthält mehrere Spalten mit nützlichen Daten zur Ausführung des Auslastungstests. Um die Anzeige von Daten im Diagramm zu deaktivieren, deaktivieren Sie das Kontrollkästchen in der entsprechenden Zeile der Legende.
 
- Die Legende enthält folgende Spalten:
+Die Legende enthält folgende Spalten:
 
 |Zähler|Der Name des Indikators|
 |-|-|
@@ -87,11 +87,11 @@ In der folgenden Tabelle sind die integrierten Diagramme aufgeführt, die für d
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
- [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md)
+[Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md)
 
- [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -21,17 +21,17 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821756"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918705"
 ---
 # <a name="understand-build-configurations"></a>Grundlagen der Buildkonfiguration
 
@@ -59,33 +59,33 @@ Jeder Eintrag im Feld **Projektkontexte** in einer Projektmappenkonfiguration st
 Die aktive Projektmappenkonfiguration stellt der IDE auch Kontext bereit. Wenn Sie z.B. an einem Projekt arbeiten und in der Konfiguration angegeben ist, dass es für ein mobiles Gerät erstellt wird, werden in der **Toolbox** nur die Elemente angezeigt, die in einem Projekt für ein mobiles Gerät verwendet werden können.
 
 ## <a name="project-configurations"></a>Projektkonfigurationen
- Die Konfiguration und Plattform, auf die ein Projekt ausgerichtet ist, werden zusammen verwendet, um die bei der Erstellung zu verwendenden Eigenschaften festzulegen. Ein Projekt kann für jede Kombination aus Konfiguration und Plattform über einen anderen Satz von Eigenschaftendefinitionen verfügen. Zum Ändern der Eigenschaften eines Projekts können Sie die Eigenschaftenseiten nutzen. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften** aus.
+Die Konfiguration und Plattform, auf die ein Projekt ausgerichtet ist, werden zusammen verwendet, um die bei der Erstellung zu verwendenden Eigenschaften festzulegen. Ein Projekt kann für jede Kombination aus Konfiguration und Plattform über einen anderen Satz von Eigenschaftendefinitionen verfügen. Zum Ändern der Eigenschaften eines Projekts können Sie die Eigenschaftenseiten nutzen. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften** aus.
 
- Die konfigurationsabhängigen Eigenschaften in einer Projektkonfiguration können den jeweiligen Anforderungen entsprechend definiert werden. Bei einem bestimmten Build kann beispielsweise festgelegt werden, welche Projektelemente eingeschlossen und welche Ausgabedateien erstellt werden, wo sie gespeichert und wie sie optimiert werden.
+Die konfigurationsabhängigen Eigenschaften in einer Projektkonfiguration können den jeweiligen Anforderungen entsprechend definiert werden. Bei einem bestimmten Build kann beispielsweise festgelegt werden, welche Projektelemente eingeschlossen und welche Ausgabedateien erstellt werden, wo sie gespeichert und wie sie optimiert werden.
 
- Projektkonfigurationen können erhebliche Unterschiede aufweisen. Beispielsweise können die Merkmale einer Konfiguration angeben, dass die Ausgabedatei auf einen minimalen Bereich optimiert wird, und eine andere Konfiguration gibt möglicherweise an, dass die ausführbare Datei mit Höchstgeschwindigkeit ausgeführt wird.
+Projektkonfigurationen können erhebliche Unterschiede aufweisen. Beispielsweise können die Merkmale einer Konfiguration angeben, dass die Ausgabedatei auf einen minimalen Bereich optimiert wird, und eine andere Konfiguration gibt möglicherweise an, dass die ausführbare Datei mit Höchstgeschwindigkeit ausgeführt wird.
 
- Projektkonfigurationen werden individuell vom Projektmappen, und nicht vom Benutzer, gespeichert, sodass sie von einem Team gemeinsam verwendet werden können.
+Projektkonfigurationen werden individuell vom Projektmappen, und nicht vom Benutzer, gespeichert, sodass sie von einem Team gemeinsam verwendet werden können.
 
- Obwohl Projektabhängigkeiten von der Konfiguration unabhängig sind, werden nur die Projekte erstellt, die in der aktiven Projektmappenkonfiguration angegeben sind.
+Obwohl Projektabhängigkeiten von der Konfiguration unabhängig sind, werden nur die Projekte erstellt, die in der aktiven Projektmappenkonfiguration angegeben sind.
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Zuweisen von Projektkonfigurationen in Visual Studio
- Wenn Sie eine neue Projektmappenkonfiguration definieren und keine Einstellungen von einer vorhandenen kopieren, werden in Visual Studio zum Zuweisen standardmäßiger Projektkonfigurationen die folgenden Kriterien angewendet. Die Kriterien werden in der angezeigten Reihenfolge ausgewertet.
+Wenn Sie eine neue Projektmappenkonfiguration definieren und keine Einstellungen von einer vorhandenen kopieren, werden in Visual Studio zum Zuweisen standardmäßiger Projektkonfigurationen die folgenden Kriterien angewendet. Die Kriterien werden in der angezeigten Reihenfolge ausgewertet.
 
-1. Wenn ein Projekte einen Konfigurationsname enthält(*\<<Konfigurationsname> \<Plattformname>*), der genau dem Namen der neuen Projektmappenkonfiguration entspricht, wird diese Konfiguration zugewiesen. In Konfigurationsnamen wird die Groß-/Kleinschreibung nicht beachtet.
+1. Wenn ein Projekte einen Konfigurationsname enthält( *\<<Konfigurationsname> \<Plattformname>* ), der genau dem Namen der neuen Projektmappenkonfiguration entspricht, wird diese Konfiguration zugewiesen. In Konfigurationsnamen wird die Groß-/Kleinschreibung nicht beachtet.
 
 2. Wenn das Projekt über einen Konfigurationsnamen verfügt, in dem der der Namensteil der Konfiguration der neuen Projektmappenkonfiguration entspricht, wird diese Konfiguration unabhängig des Plattformteils zugewiesen.
 
 3. Gibt es auch danach noch keine Übereinstimmung, wird die erste im Projekt aufgeführte Konfiguration zugewiesen.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Zuweisen von Projektmappenkonfigurationen in Visual Studio
- Wenn Sie eine Projektkonfiguration erstellen (indem Sie in **Configuration Manager** im Dropdownmenü der Spalte **Konfiguration** für dieses Projekt die Option **Neu** auswählen) und das Kontrollkästchen **Neue Projektmappenkonfigurationen erstellen** aktivieren, wird in Visual Studio nach einer gleich benannten Projektmappenkonfiguration gesucht, um das Projekt auf jeder davon unterstützten Plattform zu erstellen. In einigen Fällen werden vorhandene Projektmappenkonfigurationen von Visual Studio umbenannt, oder es werden neue definiert.
+Wenn Sie eine Projektkonfiguration erstellen (indem Sie in **Configuration Manager** im Dropdownmenü der Spalte **Konfiguration** für dieses Projekt die Option **Neu** auswählen) und das Kontrollkästchen **Neue Projektmappenkonfigurationen erstellen** aktivieren, wird in Visual Studio nach einer gleich benannten Projektmappenkonfiguration gesucht, um das Projekt auf jeder davon unterstützten Plattform zu erstellen. In einigen Fällen werden vorhandene Projektmappenkonfigurationen von Visual Studio umbenannt, oder es werden neue definiert.
 
- In Visual Studio werden die folgenden Kriterien für die Zuweisung von Projektmappenkonfigurationen verwendet.
+In Visual Studio werden die folgenden Kriterien für die Zuweisung von Projektmappenkonfigurationen verwendet.
 
 - Wenn in einer Projektkonfiguration keine Plattform oder nur eine einzige Plattform angegeben ist, wird entweder eine Projektmappenkonfiguration gesucht, deren Name dem der neuen Projektkonfiguration entspricht, oder es wird eine solche hinzugefügt. Der Standardname dieser Projektmappenkonfiguration enthält keinen Plattformnamen und weist das Format *\<Projektkonfigurationsname>* auf.
 
-- Wenn von einem Projekt mehrere Plattformen unterstützt werden, wird eine Projektmappenkonfiguration für jede unterstützte Plattform gesucht oder hinzugefügt. Der Name jeder Projektmappenkonfiguration umfasst sowohl den Namen der Projektkonfiguration als auch den Plattformnamen und verfügt über das Format *\<Projektkonfigurationsname> \<Plattformname>*.
+- Wenn von einem Projekt mehrere Plattformen unterstützt werden, wird eine Projektmappenkonfiguration für jede unterstützte Plattform gesucht oder hinzugefügt. Der Name jeder Projektmappenkonfiguration umfasst sowohl den Namen der Projektkonfiguration als auch den Plattformnamen und verfügt über das Format *\<Projektkonfigurationsname> \<Plattformname>* .
 
 ## <a name="see-also"></a>Siehe auch
 

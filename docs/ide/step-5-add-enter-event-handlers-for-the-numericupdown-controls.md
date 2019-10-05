@@ -1,29 +1,33 @@
 ---
 title: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2687c423f6b2facaa2fa1c3504888c65345888
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263116"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118739"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente
 
 Im fünften Teil dieses Tutorials fügen Sie <xref:System.Windows.Forms.Control.Enter>-Ereignishandler hinzu, um die Eingabe von Antworten auf Quizfragen zu vereinfachen. Mit diesem Code wird der aktuelle Wert in den einzelnen <xref:System.Windows.Forms.NumericUpDown>-Steuerelementen markiert und gelöscht, sobald ein Quizteilnehmer das Steuerelement ausgewählt und einen anderen Wert eingibt.
 
 > [!NOTE]
-> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung.
+> - Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Informationen zum Herunterladen einer vollständigen Version des Codes finden Sie unter [Tutorialbeispiel des vollständigen Mathequiz](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>So überprüfen Sie das Standardverhalten
 
@@ -58,6 +62,9 @@ Im fünften Teil dieses Tutorials fügen Sie <xref:System.Windows.Forms.Control.
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
+     > [!IMPORTANT]
+     > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
+
      Dieser Code sieht komplex aus, aber Sie können ihn verstehen, wenn Sie ihn schrittweise überprüfen. Schauen Sie sich zuerst den Beginn der Methode an: `object sender` in C# oder `sender As System.Object` in Visual Basic. Dieser Parameter verweist auf das Objekt, dessen Ereignis ausgelöst wird, das als Absender bezeichnet wird. In diesem Fall ist das Absenderobjekt das NumericUpDown-Steuerelement. Geben Sie in der ersten Zeile der Methode an, dass der Absender nicht nur ein beliebiges generisches Objekt ist, sondern speziell ein NumericUpDown-Steuerelement. (Jedes NumericUpDown-Steuerelement ist ein Objekt, aber nicht jedes Objekt ist ein NumericUpDown-Steuerelement.) Das NumericUpDown-Steuerelement heißt in dieser Methode **answerBox**, da es für alle NumericUpDown-Steuerelemente im Formular verwendet wird und nicht nur für das NumericUpDown-Summensteuerelement. Da Sie die Variable "answerBox" in dieser Methode deklarieren, gilt der Bereich nur für diese Methode. Das bedeutet, dass die Variable nur innerhalb dieser Methode verwendet werden kann.
 
      Die nächste Zeile überprüft, ob answerBox erfolgreich von einem Objekt in ein NumericUpDown-Steuerelement konvertiert (umgewandelt) wurde. Wenn die Konvertierung nicht erfolgreich war, hat die Variable einen Wert von `null` (C#) oder `Nothing` (Visual Basic). In der dritten Zeile wird die Länge der Antwort angegeben, die im NumericUpDown-Steuerelement angezeigt wird. In der vierten Zeile wird der aktuelle Wert im Steuerelement auf der Grundlage dieser Länge ausgewählt. Wenn der Quizteilnehmer nun das Steuerelement aktiviert, löst Visual Studio das Ereignis aus. Daraufhin wird die aktuelle Antwort ausgewählt. Sobald der Quizteilnehmer eine andere Antwort eingibt, wird die vorherige Antwort gelöscht und durch die neue Antwort ersetzt.
@@ -74,6 +81,6 @@ Im fünften Teil dieses Tutorials fügen Sie <xref:System.Windows.Forms.Control.
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).
+- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md)** .
 
 - Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md).

@@ -7,17 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810566"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870518"
 ---
-# <a name="invoking-text-transformation-in-a-vs-extension"></a>Aufrufen von Texttransformation in einer VS-Erweiterung
-Wenn Sie eine Visual Studio-Erweiterung, z. B. einen Menübefehl schreiben oder [Domain-Specific Languge](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), können Sie des Textvorlagendiensts transformieren. Sie benötigen den <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>-Dienst, der in <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> umgewandelt werden muss.
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Aufrufen von Text Transformation in einer Visual Studio-Erweiterung
 
-## <a name="getting-the-text-templating-service"></a>Erhalt des Textvorlagendiensts
+Wenn Sie eine Visual Studio-Erweiterung, z. b. einen Menübefehl oder eine [domänenspezifische Sprache](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), schreiben, können Sie Textvorlagen mithilfe des Textvorlagen Dienstanbieter transformieren. Holen Sie sich den Dienst [stexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) , und wandeln Sie ihn in [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))um.
+
+## <a name="get-the-text-templating-service"></a>Den Textvorlagen Dienst erhalten
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -33,16 +34,17 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
 ```
 
-## <a name="passing-parameters-to-the-template"></a>Übergeben von Parametern an die Vorlage
+## <a name="pass-parameters-to-the-template"></a>Übergeben von Parametern an die Vorlage
+
  Sie können Parameter an die Vorlage übergeben. In der Vorlage können Sie die Parameterwerte mit der `<#@parameter#>`-Direktive abrufen.
 
- Für einen Parameter muss ein Typ verwendet werden, der serialisierbar ist oder gemarshallt werden kann. Das heißt, der Typ muss mit <xref:System.SerializableAttribute> deklariert werden, oder er muss sich von <xref:System.MarshalByRefObject> ableiten. Diese Einschränkung ist notwendig, da die Textvorlage in einer separaten AppDomain ausgeführt wird. Alle integrierten Typen wie z. B. **System.String** und **System. Int32** sind serialisierbar.
+ Für einen Parameter muss ein Typ verwendet werden, der serialisierbar ist oder gemarshallt werden kann. Das heißt, der Typ muss mit <xref:System.SerializableAttribute> deklariert werden, oder er muss sich von <xref:System.MarshalByRefObject> ableiten. Diese Einschränkung ist notwendig, da die Textvorlage in einer separaten AppDomain ausgeführt wird. Alle integrierten Typen, z. b **. System. String** und **System. Int32** , sind serialisierbar.
 
  Um Parameterwerte zu übergeben, können vom aufrufenden Code Werte entweder im `Session`-Wörterbuch oder im <xref:System.Runtime.Remoting.Messaging.CallContext> platziert werden.
 
  Das folgende Beispiel transformiert mithilfe der beiden Methoden eine kurze Testvorlage:
 
-```
+```csharp
 using Microsoft.VisualStudio.TextTemplating;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 ...
@@ -73,10 +75,11 @@ string result = t4.ProcessTemplate("",
 //     Test: Hello    07/06/2010 12:37:45    42
 ```
 
-## <a name="error-reporting-and-the-output-directive"></a>Fehlerbericht und Ausgabeanweisung
- Alle Fehler, die während der Verarbeitung auftreten, werden im Fehlerfenster von Visual Studio angezeigt werden. Außerdem können Sie über Fehler informiert werden, indem Sie einen Rückruf angeben, der <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> implementiert.
+## <a name="error-reporting-and-the-output-directive"></a>Fehlerberichterstattung und die Output-Direktive
 
- Wenn Sie die Ergebniszeichenfolge in eine Datei schreiben möchten, sind Sie möglicherweise daran interessiert, welche Dateierweiterung und welche Codierung in der `<#@output#>`-Direktive in der Vorlage angegeben wurden. Diese Informationen werden auch an den Rückruf übergeben. Weitere Informationen finden Sie unter [T4 Output-Direktive](../modeling/t4-output-directive.md).
+Alle Fehler, die während der Verarbeitung auftreten, werden im Fehler Fenster von Visual Studio angezeigt. Darüber hinaus können Sie über Fehler benachrichtigt werden, indem Sie einen Rückruf angeben, der [itexttemplatingcallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110))implementiert.
+
+Wenn Sie die Ergebniszeichenfolge in eine Datei schreiben möchten, sind Sie möglicherweise daran interessiert, welche Dateierweiterung und welche Codierung in der `<#@output#>`-Direktive in der Vorlage angegeben wurden. Diese Informationen werden auch an den Rückruf übergeben. Weitere Informationen finden Sie unter [T4 Output-Direktive](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -118,7 +121,7 @@ class T4Callback : ITextTemplatingCallback
 }
 ```
 
- Der Code kann mit einer Vorlagendatei getestet werden, die der folgenden Datei ähnelt:
+Der Code kann mit einer Vorlagendatei getestet werden, die der folgenden Datei ähnelt:
 
 ```
 <#@output extension=".htm" encoding="ASCII"#>
@@ -127,14 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- Die compilerwarnung wird im Fehlerfenster von Visual Studio angezeigt, und generieren sie außerdem einen Aufruf von `ErrorCallback`.
+Die Compilerwarnung wird im Fehler Fenster von `ErrorCallback`Visual Studio angezeigt, und es wird auch ein-Rückruf generiert.
 
 ## <a name="reference-parameters"></a>Verweisparameter
- Sie können Werte aus einer Textvorlage mit einer Parameterklasse übergeben, die von <xref:System.MarshalByRefObject> abgeleitet wird.
 
-## <a name="related-topics"></a>Verwandte Themen
- So generieren Sie Text von einer vorverarbeiteten Textvorlage Rufen Sie die `TransformText()`-Methode der generierten Klasse auf. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Sie können Werte aus einer Textvorlage mit einer Parameterklasse übergeben, die von <xref:System.MarshalByRefObject> abgeleitet wird.
 
- So generieren Sie Text außerhalb von Visual Studio-Erweiterung: Definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
+## <a name="related-articles"></a>Verwandte Artikel
 
- So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann Rufen Sie die `t4.PreprocessTemplate()` -Methode von <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>auf.
+So generieren Sie Text von einer vorverarbeiteten Textvorlage Rufen Sie die `TransformText()`-Methode der generierten Klasse auf. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+
+So generieren Sie Text außerhalb einer Visual Studio-Erweiterung: Definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
+
+So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann Rufen Sie die [preprocesstemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) -Methode von [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))auf.

@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184141"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Jemals daran gedacht, dazu, wie Sie Ihren eigenen Projekttyp erstellen? Fragen S
   
  ![Dialogfeld Neues Projekt](../../extensibility/internals/media/newproject.gif "NewProject")  
   
- Werfen wir einen Blick. Die **Projekttypen** Struktur enthält die verschiedenen Projekttypen, die Sie erstellen können. Bei Auswahl ein Projekttyps wie **Visual C#-Windows-**, sehen Sie eine Liste der Vorlagen in der Anwendung, die Ihnen den Einstieg erleichtern. **Visual Studio installierte Vorlagen** werden von Visual Studio installiert und für alle Benutzer des Computers verfügbar sind. Neue Vorlagen, die Sie erstellen, oder erfassen können hinzugefügt werden **Meine Vorlagen** und nur für Sie verfügbar sind.  
+ Werfen wir einen Blick. Die **Projekttypen** Struktur enthält die verschiedenen Projekttypen, die Sie erstellen können. Bei Auswahl ein Projekttyps wie **Visual C#-Windows-** , sehen Sie eine Liste der Vorlagen in der Anwendung, die Ihnen den Einstieg erleichtern. **Visual Studio installierte Vorlagen** werden von Visual Studio installiert und für alle Benutzer des Computers verfügbar sind. Neue Vorlagen, die Sie erstellen, oder erfassen können hinzugefügt werden **Meine Vorlagen** und nur für Sie verfügbar sind.  
   
  Bei der Auswahl einer Vorlage wie **Windows-Anwendung**, eine Beschreibung des Anwendungstyps wird angezeigt, in das Dialogfeld, in diesem Fall **ein Projekt zum Erstellen einer Anwendung mit einer Windows-Benutzeroberfläche**.  
   
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Visual Studio-Installationspfad > \VC#\VCSPackages\1033\csprojui.dll  
   
- Um dies zu überprüfen, öffnen Sie den Datei-Explorer, und ziehen Sie csprojui.dll in das Verzeichnis Visual Studio... Die Tabelle zeigt, dass es sich bei Resource #2345 die Beschriftung weist **Visual C#-**.  
+ Um dies zu überprüfen, öffnen Sie den Datei-Explorer, und ziehen Sie csprojui.dll in das Verzeichnis Visual Studio... Die Tabelle zeigt, dass es sich bei Resource #2345 die Beschriftung weist **Visual C#-** .  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Dies bestimmt die Position des Stammknotens in der **Projekttypen** Struktur.  
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** als untergeordneter Knoten des Visual C# -Code direkt unter der Windows-Knoten wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Generieren neuer Projekte: In die Hintergründe Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

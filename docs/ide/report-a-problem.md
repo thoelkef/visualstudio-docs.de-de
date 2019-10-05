@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309814"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925983"
 ---
 # <a name="overview-report-a-problem"></a>Übersicht: Melden eines Problems
 
@@ -110,7 +110,7 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 
 Es wird empfohlen, dass Sie die Suchfunktion verwenden, um sicherzustellen, dass Ihr Problem nicht bereits gemeldet wurde. Wenn Sie einen vorhandenen Eintrag finden, der zu Ihrem Problem passt, dann folgen Sie diesem Problemticket, und stimmen Sie dafür.
 
- Stellen Sie alle verfügbaren Informationen bereit, damit unsere Teams Ihre Erfahrung reproduzieren können.  Zu diesen Informationen zählen erforderliche Reproduktionsschritte, Codefragmente, Screenshots, Reproduktionsdatensätze, Protokolldateien und andere Artefakte.  Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio.md).
+Stellen Sie alle verfügbaren Informationen bereit, damit unsere Teams Ihre Erfahrung reproduzieren können.  Zu diesen Informationen zählen erforderliche Reproduktionsschritte, Codefragmente, Screenshots, Reproduktionsdatensätze, Protokolldateien und andere Artefakte.  Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Wie wird mein Feedback priorisiert?
 

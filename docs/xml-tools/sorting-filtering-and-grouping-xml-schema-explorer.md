@@ -1,5 +1,5 @@
 ---
-title: Sortieren, Filtern und Gruppieren von im XML-Schema-Explorer
+title: Sortieren, Filtern und Gruppieren im XML-Schema-Explorer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,40 +8,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daa629b4c26abf7b6ce801c30ea6f6fd41fbaa48
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808105"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926731"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortieren, Filtern und gruppieren (XML-Schema-Explorer)
 
-In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sortieren, Filtern und nachfolgend angezeigten Gruppierungsoptionen** Menü auf der **XML-Schema-Explorer** Symbolleiste.
+In diesem Thema werden die Optionen beschrieben, die über das Menü **Sortieren, Filtern und Gruppieren von Optionen** auf der Symbolleiste des **XML-Schema-Explorers** verfügbar sind.
 
 ## <a name="filter-options"></a>Filteroptionen
 
- Die folgenden Filteroptionen sind verfügbar. In der Standardeinstellung die **Namespaces anzeigen** und **Schemadateien anzeigen** -Option aktiviert ist.
+Die folgenden Filteroptionen sind verfügbar. Standardmäßig sind die Optionen **Namespaces anzeigen** und **Schema Dateien anzeigen** ausgewählt.
 
 - **Namespaces anzeigen**.
 
-- **Schemadateien anzeigen**.
+- **Schema Dateien anzeigen**.
 
-- **Compositors anzeigen (Sequence/Choice/All)**.
+- **Compositors anzeigen (Sequence/Choice/all)** .
 
 ## <a name="sorting-options"></a>Sortieroptionen
 
- Die folgenden Sortierungsoptionen sind verfügbar. Der Standardwert ist **nach Sortiertyp**. **Sortieren nach** Optionen gelten nicht für Dateien und Namespaces.
+Die folgenden Sortierungsoptionen sind verfügbar. Der Standardwert ist **nach Typ sortieren**. Die Option " **Sortieren nach** " gilt nicht für Dateien und Namespaces.
 
 - **Nach Typ sortieren**.
 
 - **Nach Namen sortieren**.
 
-- **Nach Dokumentreihenfolge**.
+- **Dokument Reihenfolge**.
 
 ### <a name="sort-by-type"></a>Nach Typ sortieren
 
- Wenn die **nach Sortiertyp** Option ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert. Knoten sind innerhalb jeder Gruppe alphabetisch sortiert.
+Wenn die Option **nach Typ sortieren** ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert. Knoten sind innerhalb jeder Gruppe alphabetisch sortiert.
 
 1. `import`-Knoten
 
@@ -63,7 +63,7 @@ In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sort
 
 ### <a name="sort-by-name"></a>Nach Namen sortieren
 
- Wenn die **nach Namen sortieren** Option ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert:
+Wenn die Option **nach Name sortieren** ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert:
 
 1. `import`-Knoten (in alphabetischer Reihenfolge der Namespaces)
 
@@ -75,8 +75,8 @@ In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sort
 
 ### <a name="document-order"></a>Dokumentreihenfolge
 
- Die **Dokumentreihenfolge** Option ist verfügbar, wenn die **Schemadateien anzeigen** ausgewählt ist. Wenn **Dokumentreihenfolge** ausgewählt ist, werden globale Knoten in der Reihenfolge, in der sie in der Schemadatei vorkommen, angezeigt.
+Die Option **Dokument Reihenfolge** ist verfügbar, wenn die Option **Schema Dateien anzeigen** ausgewählt ist. Wenn die **Dokument Reihenfolge** ausgewählt ist, werden globale Knoten in der Reihenfolge angezeigt, in der Sie in der Schema Datei angezeigt werden.
 
-## <a name="persisting-sortfilter-options"></a>Beibehalten von sortierungs-/Filteroptionen
+## <a name="persisting-sortfilter-options"></a>Beibehalten von Sortier-/Filteroptionen
 
- Die Sortierungs-, Filter- und Gruppierungsoptionen werden in der Registrierung für jeden Benutzer gespeichert, unabhängig davon, welche Projektmappe oder welche Dateien beim Ändern der Einstellungen geöffnet waren.
+Die Sortierungs-, Filter- und Gruppierungsoptionen werden in der Registrierung für jeden Benutzer gespeichert, unabhängig davon, welche Projektmappe oder welche Dateien beim Ändern der Einstellungen geöffnet waren.

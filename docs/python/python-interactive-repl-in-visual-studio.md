@@ -10,22 +10,22 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896895"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822392"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
-Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fenster (Read Eval Print Loop, REPL) für Ihre Python-Umgebungen, das eine Verbesserung gegenüber dem REPL darstellt, das Sie mit der Eingabe von *python.exe* in der Befehlszeile erhalten. Im **interaktiven** Fenster (geöffnet mit den Befehlen **Ansicht** > **Weitere Fenster** > **&lt;Umgebung&gt; interaktive** Menübefehle) können Sie beliebigen Python-Code eingeben und sofortige Ergebnisse anzeigen lassen. Diese Art der Codierung unterstützt Sie beim Lernen und Experimentieren mit APIs und Bibliotheken und beim interaktiven Entwickeln von funktionierendem Code, den Sie in Ihre Projekte einfügen können.
+Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fenster (Read Eval Print Loop, REPL) für Ihre Python-Umgebungen, das eine Verbesserung gegenüber dem REPL darstellt, das Sie mit der Eingabe von *python.exe* in der Befehlszeile erhalten. Im **interaktiven** Fenster (geöffnet mit den Befehlen **Ansicht** > **Weitere Fenster** >  **&lt;Umgebung&gt; interaktive** Menübefehle) können Sie beliebigen Python-Code eingeben und sofortige Ergebnisse anzeigen lassen. Diese Art der Codierung unterstützt Sie beim Lernen und Experimentieren mit APIs und Bibliotheken und beim interaktiven Entwickeln von funktionierendem Code, den Sie in Ihre Projekte einfügen können.
 
 ![Interaktives Python-Fenster](media/interactive-window.png)
 
 Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
-| REPL | Beschreibung | Bearbeiten | Debuggen | Bilder |
+| REPL | BESCHREIBUNG | Bearbeiten | Debuggen | Bilder |
 | --- | --- | --- | --- | --- |
 | Standard | Standard-REPL, kommuniziert direkt mit Python | Standardbearbeitung (mehrzeilig usw.) | Ja, über `$attach` | Nein |
 | Debug | Standard-REPL, kommuniziert mit gedebuggtem Python-Prozess | Standardbearbeitung | Nur Debuggen | Nein |
@@ -40,7 +40,7 @@ Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich d
 
 Es gibt mehrere Methoden zum Öffnen des **interaktiven** Fensters für eine Umgebung.
 
-Erstens: Wechseln Sie zum Python-Umgebungsfenster (**Ansicht** > **Weitere Fenster** > **Python-Umgebungen** oder **STRG**+**K** > **STRG**+**`**), und wählen Sie den Befehl oder die Schaltfläche **Interaktives Fenster öffnen** für eine ausgewählte Umgebung aus.
+Erstens: Wechseln Sie zum Python-Umgebungsfenster (**Ansicht** > **Weitere Fenster** > **Python-Umgebungen** oder **STRG**+**K** > **STRG**+ **`** ), und wählen Sie den Befehl oder die Schaltfläche **Interaktives Fenster öffnen** für eine ausgewählte Umgebung aus.
 
 ![Link zu interaktivem Fenster in Python-Umgebungen](media/interactive-window-opening.png)
 
@@ -48,7 +48,7 @@ Zweitens: Am unteren Rand des Menüs **Ansicht** > **Weitere Fenster** finden Si
 
 ![Menüelemente für interaktives Fenster in „Ansicht > Weitere Fenster“](media/interactive-window-menu.png)
 
-Drittens: Sie können in der Startdatei Ihres Projekts – oder für eine eigenständige Datei – durch Auswahl des Menübefehls **Debuggen** > **[Projekt | Datei] in interaktivem Python ausführen\<** (**UMSCHALT**+**ALT**+**F5**) ein **interaktives** Fenster öffnen:
+Drittens: Sie können in der Startdatei Ihres Projekts – oder für eine eigenständige Datei – durch Auswahl des Menübefehls **Debuggen** >  **[Projekt | Datei] in interaktivem Python ausführen\<** (**UMSCHALT**+**ALT**+**F5**) ein **interaktives** Fenster öffnen:
 
 ![Ausführen des Projekts im interaktiven Python-Menü](media/interactive-execute-project.png)
 
@@ -62,18 +62,18 @@ Sie können verschiedene Aspekte des **interaktiven** Fensters über **Extras** 
 
 ## <a name="use-the-interactive-window"></a>Verwenden des interaktiven Fensters
 
-Sobald das **interaktive** Fenster geöffnet ist, können Sie beginnen, Zeile für Zeile Code an der **\>\>\>**-Eingabeaufforderung einzugeben. Das **interaktive** Fenster führt jede Zeile nach der Eingabe aus, Importieren von Modulen, Definieren von Variablen usw. eingeschlossen:
+Sobald das **interaktive** Fenster geöffnet ist, können Sie beginnen, Zeile für Zeile Code an der **\>\>\>** -Eingabeaufforderung einzugeben. Das **interaktive** Fenster führt jede Zeile nach der Eingabe aus, Importieren von Modulen, Definieren von Variablen usw. eingeschlossen:
 
 ![Interaktives Python-Fenster](media/interactive-window.png)
 
-Eine Ausnahme besteht, wenn zusätzliche Codezeilen benötigt werden, um eine vollständige Anweisung zu erstellen, beispielsweise wenn eine `for`-Anweisung wie oben gezeigt mit einem Doppelpunkt endet. In diesen Fällen ändert sich die Eingabeaufforderungszeile in **...**, um anzugeben, dass Sie zusätzliche Zeilen für den Block eingeben müssen, wie in der obigen Grafik in der vierten und fünften Zeile dargestellt. Wenn Sie in einer leeren Zeile die **EINGABETASTE** drücken, schließt das **interaktive** Fenster den Block und führt ihn im Interpreter aus.
+Eine Ausnahme besteht, wenn zusätzliche Codezeilen benötigt werden, um eine vollständige Anweisung zu erstellen, beispielsweise wenn eine `for`-Anweisung wie oben gezeigt mit einem Doppelpunkt endet. In diesen Fällen ändert sich die Eingabeaufforderungszeile in **...** , um anzugeben, dass Sie zusätzliche Zeilen für den Block eingeben müssen, wie in der obigen Grafik in der vierten und fünften Zeile dargestellt. Wenn Sie in einer leeren Zeile die **EINGABETASTE** drücken, schließt das **interaktive** Fenster den Block und führt ihn im Interpreter aus.
 
 > [!Tip]
 > Eine Verbesserung im Vergleich zum üblichen Befehlszeilen-REPL von Python ist im **interaktiven** Fenster das automatische Einrücken von Anweisungen, die zum gleichen Bereich gehören. Sein Verlauf (abgerufen mit der NACH-OBEN-TASTE) bietet auch mehrzeilige Elemente, während im Befehlszeilen-REPL nur einzelne Zeilen möglich sind.
 
 <a name="meta-commands"></a> Das **interaktive** Fenster unterstützt auch mehrere Metabefehle. Alle Metabefehle beginnen mit `$`, und Sie können `$help` eingeben, um eine Liste der Metabefehle abzurufen, und `$help <command>`, um nähere Informationen zur Verwendung eines bestimmten Befehls zu erhalten.
 
-| Metabefehl | Beschreibung |
+| Metabefehl | BESCHREIBUNG |
 | --- | --- |
 | `$$` | Fügt einen Kommentar ein, was das Kommentieren von Code während der gesamten Sitzung erleichtert. |
 | `$attach` | Fügt den Visual Studio-Debugger dem REPL-Fensterprozess an, um das Debuggen zu aktivieren. |
@@ -111,7 +111,11 @@ Dieser Befehl ist auch zur iterativen oder evolutionären Codeentwicklung inklus
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-Wenn Sie eine Codedatei als Zwischenablage verwenden, haben Sie häufiger kleine Codeblöcke, die Sie auf einmal senden möchten. Um Code zu gruppieren, markieren Sie den Code als *code cell* (Codezelle), indem Sie einen Kommentar mit `#%%` zum Anfang der Zelle hinzufügen, der die vorherige beendet. Codezellen können reduziert und erweitert werden. Das Drücken von **STRG**+**EINGABETASTE** innerhalb einer Codezelle sendet die gesamte Zelle an das **interaktive** Fenster und wechselt zur nächsten.
+## <a name="work-with-code-cells"></a>Arbeiten mit Codezellen
+
+Codezellen können zur Datenanalyse verwendet werden und werden von einer Vielzahl von Text-Editoren unterstützt.
+
+Wenn Sie beispielsweise eine Codedatei als Zwischenablage verwenden, haben Sie häufiger kleine Codeblöcke, die Sie auf einmal senden möchten. Um Code zu gruppieren, markieren Sie den Code als *code cell* (Codezelle), indem Sie einen Kommentar mit `#%%` zum Anfang der Zelle hinzufügen, der die vorherige beendet. Codezellen können reduziert und erweitert werden. Das Drücken von **STRG**+**EINGABETASTE** innerhalb einer Codezelle sendet die gesamte Zelle an das **interaktive** Fenster und wechselt zur nächsten.
 
 Visual Studio erkennt auch Codezellen, die mit Kommentaren wie `# In[1]:` beginnen, was dem Format entspricht, das Sie beim Exportieren eines Jupyter-Notebooks als Python-Datei erhalten. Durch diese Erkennung kann ein Notebook von [Azure Notebooks (Azure-Notebooks)](https://notebooks.azure.com/) einfach ausgeführt werden, indem es als Python-Datei heruntergeladen,in Visual Studio geöffnet und anschließend **STRG**+**EINGABETASTE** gedrückt wird, um jede Zelle auszuführen.
 

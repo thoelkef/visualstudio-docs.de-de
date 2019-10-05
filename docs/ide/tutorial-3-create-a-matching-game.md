@@ -1,19 +1,20 @@
 ---
 title: 'Tutorial 3: Erstellen eines Vergleichsspiels'
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
+ms.topic: tutorial
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8fafd46561b6a3628989b675b14c493b60da6fe
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821524"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118708"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Erstellen eines Vergleichsspiels
 
@@ -44,7 +45,7 @@ Wenn Sie sich festfahren oder Probleme mit der Programmierung haben, versuchen S
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Erstellen Sie zuerst das Projekt, und fügen Sie ein `TableLayoutPanel`-Steuerelement hinzu, um die Steuerelemente richtig auszurichten.|
 |[Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Fügen Sie ein `Random`-Objekt und ein `List`-Objekt hinzu, um eine Liste mit Symbolen zu erstellen.|

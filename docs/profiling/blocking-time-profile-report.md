@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c80c768e153ae9469fe43785480bbe6bb1edeaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777462"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926313"
 ---
 # <a name="blocking-time-profile-report"></a>Blockierungszeit-Profilbericht
 Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische Aufruflisten zu den einzelnen Blockierungskategorien (wie „E/A“ oder „Synchronisierung“). Der Bericht zur vorzeitigen Entfernung listet die Prozesse auf, die den aktuellen Prozess vorzeitig entfernt haben, und gibt die Anzahl der Instanzen für die vorzeitige Entfernung an. Um den Blockierungsprofilbericht zu erstellen, sammelt das Tool blockierende API-Aufrufe und stellt sie in einer Struktur von Aufruflisten zusammen. In diesen Berichten angezeigte Daten hängen vom aktuellen Zeitraum, von ausgeblendeten Threads und den beiden folgenden Filtern ab, die angewendet werden können:
@@ -31,7 +31,7 @@ Die Profilberichte enthalten aggregierte Blockierungszeitdaten für spezifische 
 ## <a name="blocking-time-report-columns"></a>Spalten des Blockierungszeitberichts
  Die folgende Tabelle zeigt die Spalten für die einzelnen Blockierungszeitberichte.
 
-|Spaltenname|Beschreibung|
+|Spaltenname|BESCHREIBUNG|
 |-----------------|-----------------|
 |**Name**|Der Name der Funktion für die einzelnen Ebenen der Aufrufliste.|
 |**Instanzen**|Die Anzahl der Instanzen des blockierenden Aufrufs für den sichtbaren Zeitraum.|

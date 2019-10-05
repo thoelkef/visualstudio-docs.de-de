@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180328"
 ---
 # <a name="keybinding-element"></a>KeyBinding-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ KeyBinding-Element gibt die Tastenkombinationen für die Befehle an.
 |id|Erforderlich.|  
 |Editor|Erforderlich. Der Editor GUID gibt an, der Bearbeitungskontext für den diese Tastenkombination aktiv sein werden. Der globale Bindung Bereichswert ist "guidVSStd97".|  
 |key1|Erforderlich. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X und VK_constants vorangestellt.|  
-|mod1|Dies ist optional. Eine beliebige Kombination aus STRG, ALT und die UMSCHALTTASTE, die durch Leerzeichen getrennt sind.|  
+|MOD1|Optional. Eine beliebige Kombination aus STRG, ALT und die UMSCHALTTASTE, die durch Leerzeichen getrennt sind.|  
 |key2|Dies ist optional. Gültige Werte sind alle eingegeben alphanumerische Zeichen sowie zweistelligen Hexadezimalwerten, 0 X und VK_constants vorangestellt.|  
-|mod2|Dies ist optional. Eine beliebige Kombination aus STRG, ALT und die UMSCHALTTASTE, die durch Leerzeichen getrennt sind.|  
-|Emulator|Dies ist optional.|  
+|MOD2|Optional. Eine beliebige Kombination aus STRG, ALT und die UMSCHALTTASTE, die durch Leerzeichen getrennt sind.|  
+|Emulator|Optional.|  
 |Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  

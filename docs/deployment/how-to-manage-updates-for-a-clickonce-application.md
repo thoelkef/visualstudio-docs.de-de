@@ -19,37 +19,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8486ebede9db2ab6b052c1fed789883ceaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ba899e922e98817462b06a1693525ab1ae69e20
+ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928564"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71159904"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können automatisch oder programmgesteuert nach Updates suchen. Als Entwickler müssen Sie große Flexibilität bei der Angabe, wann und wie Updates gesucht werden und gibt an, ob Updates erforderlich sind, in dem die Anwendung nach Updates suchen soll.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendungen können automatisch oder Programm gesteuert nach Updates suchen. Als Entwickler haben Sie viele Flexibilität bei der Angabe, wann und wie Update Überprüfungen durchgeführt werden, ob Updates obligatorisch sind und wo die Anwendung nach Updates suchen soll.
 
- Sie können konfigurieren, dass die Anwendung für Updates automatisch vor dem Start der Anwendung oder in bestimmten Zeitabständen überprüfen, nachdem die Anwendung gestartet. Darüber hinaus können Sie die mindestens erforderliche Version angeben; d. h. ist ein Update installiert, wenn der Benutzer-Version niedriger als die erforderliche Version ist.
+ Sie können die Anwendung so konfigurieren, dass nach Updates vor dem Start der Anwendung oder in festgelegten Intervallen nach dem Start der Anwendung gesucht wird. Außerdem können Sie eine mindestens erforderliche Version angeben. Das heißt, dass ein Update installiert wird, wenn die Version des Benutzers niedriger als die erforderliche Version ist.
 
- Sie können die Anwendung für die Prüfung auf Updates, die programmgesteuert auf Grundlage eines Ereignisses, z. B. eine benutzeranforderung konfigurieren. Im Verfahren "so programmgesteuert auf Updates überprüfen" in diesem Thema wird gezeigt, wie Sie Code schreiben würden, verwendet der <xref:System.Deployment.Application.ApplicationDeployment> Klasse, um nach Updates suchen auf der Grundlage von Ereignissen.
+ Sie können die Anwendung so konfigurieren, dass Sie Programm gesteuert auf Grundlage eines Ereignisses, z. b. einer Benutzer Anforderung, nach Updates sucht. In diesem Thema wird erläutert, wie Sie Code schreiben, der mithilfe der-Klasse nach Updates auf der <xref:System.Deployment.Application.ApplicationDeployment> Grundlage eines Ereignisses sucht, um Programm gesteuert nach Updates zu suchen.
 
- Auch können Sie Ihre Anwendung von einem Speicherort bereitstellen und aktualisieren Sie sie von einem anderen. Finden Sie im Verfahren "So"geben Sie einen anderen Updatepfad.
+ Sie können Ihre Anwendung auch an einem Speicherort bereitstellen und von einem anderen Standort aus aktualisieren. Weitere Informationen finden Sie im Verfahren "so geben Sie einen anderen Update Speicherort an".
 
- Weitere Informationen finden Sie unter [Auswählen einer Strategie der ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).
+ Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).
 
- Updateverhalten wird verwaltet, der **Anwendungsupdates** im Dialogfeld aus der **veröffentlichen** auf der Seite die **Projekt-Designer.**
+ Das Aktualisierungs Verhalten wird im Dialogfeld **Anwendungs Updates** verwaltet, das auf der Seite **veröffentlichen** des **Projekt-Designers** verfügbar ist.
 
-### <a name="to-check-for-updates-before-the-application-starts"></a>Nach Updates gesucht werden soll, bevor die Anwendung gestartet wird.
+### <a name="to-check-for-updates-before-the-application-starts"></a>So suchen Sie nach Updates, bevor die Anwendung gestartet wird
 
 1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3. Klicken Sie auf die **Updates** die Schaltfläche, um die **Anwendungsupdates** Dialogfeld.
+3. Klicken Sie auf die Schaltfläche **Updates** , um das Dialogfeld **Anwendungs Updates** zu öffnen.
 
-4. In der **Anwendungsupdates** Dialogfeld Feld, stellen Sie sicher, dass die **die Anwendung soll nach Updates suchen** das Kontrollkästchen aktiviert ist.
+4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. In der **auswählen, wann die Anwendung nach Updates suchen soll** wählen Sie im Abschnitt **vor dem Start der Anwendung**. Dadurch wird sichergestellt, dass Benutzer, die mit dem Netzwerk verbunden sind, immer die Anwendung mit den neuesten Updates ausgeführt werden.
+5. Wählen Sie im Abschnitt **Wählen Sie aus, wann die Anwendung nach Updates suchen soll aus** , **bevor die Anwendung gestartet**wird. Dadurch wird sichergestellt, dass Benutzer, die mit dem Netzwerk verbunden sind, immer die Anwendung mit den neuesten Updates ausführen.
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Suchen nach Updates im Hintergrund nach dem Start der Anwendung
 
@@ -57,51 +57,51 @@ ms.locfileid: "62928564"
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3. Klicken Sie auf die **Updates** die Schaltfläche, um die **Anwendungsupdates** Dialogfeld.
+3. Klicken Sie auf die Schaltfläche **Updates** , um das Dialogfeld **Anwendungs Updates** zu öffnen.
 
-4. In der **Anwendungsupdates** Dialogfeld Feld, stellen Sie sicher, dass das Kontrollkästchen **die Anwendung soll nach Updates suchen** ausgewählt ist.
+4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **für die Anwendung auf Updates prüfen** ausgewählt ist.
 
-5. In der **auswählen, wann die Anwendung nach Updates im Abschnitt suchen, sollten**Option **nach dem Starten der Anwendung**. Die Anwendung wird schneller auf diese Weise gestartet, und klicken Sie dann nach Updates suchen im Hintergrund wird, und nur die Benutzer benachrichtigen, wenn ein Update verfügbar ist. Nach Abschluss der Installation werden Updates nicht wirksam, bis die Anwendung neu gestartet wird.
+5. Wählen Sie im **Abschnitt wählen Sie aus, wann die Anwendung nach Updates suchen soll aus**, **nachdem die Anwendung gestartet**wurde. Die Anwendung wird auf diese Weise schneller gestartet, und es wird im Hintergrund nach Updates gesucht, und der Benutzer wird nur benachrichtigt, wenn ein Update verfügbar ist. Nach der Installation werden Updates erst wirksam, wenn die Anwendung neu gestartet wird.
 
-6. In der **angeben, wie häufig die Anwendung nach Updates suchen soll** Abschnitt, wählen Sie entweder **überprüfen Sie jedes Mal, wenn die Anwendung ausgeführt wird** (Standard) oder **überprüfen jeder** und geben Sie eine Zahl und ein Zeitintervall.
+6. Aktivieren Sie im Abschnitt geben Sie an, **wie häufig die Anwendung nach Updates suchen soll** die Option **jedes Mal aktivieren, wenn die Anwendung** ausgeführt wird (Standard), oder **Aktivieren Sie alle** , und geben Sie eine Zahl und ein Zeitintervall ein.
 
-### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Mindestens erforderliche Version für die Anwendung angeben
-
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
-
-2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
-
-3. Klicken Sie auf die **Updates** die Schaltfläche, um die **Anwendungsupdates** Dialogfeld.
-
-4. In der **Anwendungsupdates** Dialogfeld Feld, stellen Sie sicher, dass die **die Anwendung soll nach Updates suchen** das Kontrollkästchen aktiviert ist.
-
-5. Wählen Sie die **geben eine mindestens erforderliche Version für diese Anwendung** aus, und geben Sie dann **wichtigen**, **kleinere**, **erstellen**, und  **Revision** Zahlen für die Anwendung.
-
-### <a name="to-specify-a-different-update-location"></a>Zum Angeben eines Speicherorts für die anderen Updates
+### <a name="to-specify-a-minimum-required-version-for-the-application"></a>So geben Sie eine mindestens erforderliche Version für die Anwendung an
 
 1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3. Klicken Sie auf die **Updates** die Schaltfläche, um die **Anwendungsupdates** Dialogfeld.
+3. Klicken Sie auf die Schaltfläche **Updates** , um das Dialogfeld **Anwendungs Updates** zu öffnen.
 
-4. In der **Anwendungsupdates** Dialogfeld Feld, stellen Sie sicher, dass die **die Anwendung soll nach Updates suchen** das Kontrollkästchen aktiviert ist.
+4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. In der **Updatepfad** Geben Sie den Speicherort für die Aktualisierung mit einer vollqualifizierten URL, die mit dem Format *http://Hostname/ApplicationName*, oder einen UNC-Pfad im Format  *\\\Server\ ApplicationName*, oder klicken Sie auf die **Durchsuchen** Schaltfläche um den Updatepfad suchen.
+5. Aktivieren Sie das Kontrollkästchen **mindestens erforderliche Version für diese Anwendung angeben** , und geben Sie dann die Nummern für **Haupt**-und **neben**Version, **Build**und **Revision** für die Anwendung ein.
 
-### <a name="to-check-for-updates-programmatically"></a>Programmgesteuert nach Updates suchen
+### <a name="to-specify-a-different-update-location"></a>So geben Sie einen anderen Aktualisierungs Speicherort an
 
 1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3. Klicken Sie auf die **Updates** die Schaltfläche, um die **Anwendungsupdates** Dialogfeld.
+3. Klicken Sie auf die Schaltfläche **Updates** , um das Dialogfeld **Anwendungs Updates** zu öffnen.
 
-4. In der **Anwendungsupdates** Dialogfeld Feld, stellen Sie sicher, dass die **die Anwendung soll nach Updates suchen** Kontrollkästchen deaktiviert ist. (Optional können Sie auswählen dieses Kontrollkästchen, überprüfen Sie, ob Updates programmgesteuert und auch die ClickOnce-Laufzeit, die automatisch nach Updates suchen können.)
+4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. In der **Updatepfad** Geben Sie den Speicherort für die Aktualisierung mit einer vollqualifizierten URL, die mit dem Format *http://Hostname/ApplicationName*, oder einen UNC-Pfad im Format  *\\\Server\ ApplicationName*, oder klicken Sie auf die **Durchsuchen** Schaltfläche um den Updatepfad suchen. Speicherort für die Aktualisierung ist, wo die Anwendung nach einer aktualisierten Version von sich selbst sucht.
+5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des *http://Hostname/ApplicationName* Formats oder eines UNC-Pfads im Format  *\\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach der zu suchen. Speicherort aktualisieren.
 
-6. Erstellen Sie eine Schaltfläche, Menüelement oder andere Benutzeroberflächenelemente in einem Windows Form, die Benutzer ausgewählt werden, nach Updates suchen. Elements-Ereignishandler rufen Sie eine Methode zum Suchen und installieren Sie Updates aus. Sie finden ein Beispiel für Visual Basic und Visual C# Code für eine solche Methode im [Vorgehensweise: Suchen nach Anwendungsupdates programmgesteuert mithilfe der API für der ClickOnce-Bereitstellung](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
+### <a name="to-check-for-updates-programmatically"></a>So suchen Sie Programm gesteuert nach Updates
+
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
+
+3. Klicken Sie auf die Schaltfläche **Updates** , um das Dialogfeld **Anwendungs Updates** zu öffnen.
+
+4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** deaktiviert ist. (Optional können Sie dieses Kontrollkästchen aktivieren, um Programm gesteuert nach Updates zu suchen und die ClickOnce-Laufzeit zu überprüfen, ob Updates automatisch überprüft werden.)
+
+5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des *http://Hostname/ApplicationName* Formats oder eines UNC-Pfads im Format  *\\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach der zu suchen. Speicherort aktualisieren. Der Aktualisierungs Speicherort ist der Ort, an dem die Anwendung nach einer aktualisierten Version von sich selbst sucht.
+
+6. Erstellen Sie eine Schaltfläche, ein Menü Element oder eine andere Benutzeroberfläche in einem Windows Form, die Benutzer auswählen, um nach Updates zu suchen. Über den-Ereignishandler dieses Elements können Sie eine Methode zum Suchen und Installieren von Updates abrufen. Ein Beispiel für Visual Basic und visuellen C# Code für eine solche Methode finden Sie unter [Gewusst wie: Suchen Sie Programm gesteuert mithilfe der ClickOnce-Bereitstellungs-](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)API nach Anwendungs Updates.
 
 7. Erstellen Sie Ihre Anwendung.
 
@@ -109,6 +109,6 @@ ms.locfileid: "62928564"
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Application updates dialog box (Dialogfeld „Anwendungsupdates“)](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Veröffentlichen von ClickOnce-Anwendungslösungen](../deployment/publishing-clickonce-applications.md)
+- [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)
 - [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Vorgehensweise: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

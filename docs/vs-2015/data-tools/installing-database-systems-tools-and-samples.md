@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196070"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>Installieren von Datenbanksystemen, Tools und Beispiele
+# <a name="installing-database-systems-tools-and-samples"></a>Installieren von Datenbanksystemen, Tools und Beispielen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio umfasst keine Datenbanksysteme außer denen, die intern verwendet. Um eine Anwendung verbundenen Daten in Visual Studio zu entwickeln, Sie in der Regel das Datenbanksystem auf Ihrem lokalen Entwicklungscomputer installieren und die Anwendung und Datenbank in einer produktionsumgebung dann bereitstellen, wenn sie bereit sind. Für das Datenbanksystem von .NET-Anwendungen zugegriffen werden und in Visual Studio Data Tools-Fenster sichtbar ist muss er einen ADO.NET-Anbieter für Daten verfügen. Ein Anbieter muss speziell Entity Framework unterstützen, wenn Sie Datenmodelle in Ihrer .NET-Anwendung verwenden möchten.     Viele Anbieter werden über den NuGet-Paket-Manager oder über Visual Studio-Katalog angeboten.  

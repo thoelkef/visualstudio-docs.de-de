@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46284c37bc40f963253912b4b8b66cd20a871f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a93f776ac6e133b0ebf79d1dfa56f802ff66e5f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545214"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232770"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Zeiger sollten nicht sichtbar sein.
 
@@ -31,28 +31,28 @@ ms.locfileid: "62545214"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte <xref:System.IntPtr?displayProperty=fullName> oder <xref:System.UIntPtr?displayProperty=fullName> Feld ist nicht schreibgeschützt.
+Ein öffentliches oder geschütztes <xref:System.IntPtr?displayProperty=fullName> Feld <xref:System.UIntPtr?displayProperty=fullName> oder ist nicht schreibgeschützt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.IntPtr> und <xref:System.UIntPtr> sind Zeigertypen, die für den Zugriff auf nicht verwalteten Speicher. Wenn ein Zeiger nicht privat, intern oder schreibgeschützt ist, kann bösartiger Code den Wert des Zeigers, potenziell den Zugriff auf beliebige Speicherbereiche ermöglichen oder Anwendungs-bzw. Systemfehler verursachen ändern.
+ <xref:System.IntPtr>und <xref:System.UIntPtr> sind Zeiger Typen, die für den Zugriff auf nicht verwalteten Speicher verwendet werden. Wenn ein Zeiger nicht privat, intern oder schreibgeschützt ist, kann bösartiger Code den Wert des Zeigers ändern und möglicherweise den Zugriff auf beliebige Speicherorte im Arbeitsspeicher erlauben oder Anwendungs-oder Systemfehler verursachen.
 
- Wenn Sie zum Absichern des Zugriffs auf den Typ, die das Mauszeiger-Feld enthält beabsichtigen, finden Sie unter [CA2112: Gesicherte Typen sollten keine Felder verfügbar](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+Wenn Sie den Zugriff auf den Typ, der das Zeiger Feld enthält, sichern möchten [, finden Sie weitere Informationen unter CA2112: Gesicherte Typen sollten keine Felder](../code-quality/ca2112-secured-types-should-not-expose-fields.md)verfügbar machen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Sichern Sie den Zeiger, durch die somit schreibgeschützt, intern oder privat.
+Sichern Sie den Zeiger, indem Sie ihn als schreibgeschützt, intern oder privat festlegen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie eine Warnung dieser Regel, wenn Sie nicht auf den Wert des Zeigers angewiesen sind.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrückt eine Warnung aus dieser Regel, wenn Sie sich nicht auf den Wert des Zeigers verlassen.
 
 ## <a name="example"></a>Beispiel
- Der folgende Code zeigt, Zeiger, die gegen die Regel eingehalten wird. Beachten Sie, dass die nicht privater Zeiger auch die Regel verletzen [CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Der folgende Code zeigt Zeiger, die die Regel verletzen und erfüllen. Beachten Sie, dass die nicht privaten Zeiger auch gegen die [Regel CA1051 verstoßen: Deklarieren Sie keine sichtbaren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)Instanzfelder.
 
- [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
+[!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+[CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+[CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>Siehe auch
 

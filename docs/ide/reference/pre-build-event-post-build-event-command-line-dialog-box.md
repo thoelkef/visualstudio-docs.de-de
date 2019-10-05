@@ -1,6 +1,7 @@
 ---
 title: Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -28,48 +29,51 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969058"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461317"
 ---
-# <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogfeld "Befehlszeile für Präbuildereignis"/"Befehlszeile für Postbuildereignis"
+# <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“
+
 Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direkt in das Bearbeitungsfeld eingeben oder Prä- und Postbuildmakros aus der Liste der verfügbaren Makros auswählen.
 
 > [!NOTE]
 > Präbuildereignisse werden nicht ausgeführt, wenn das Projekt auf dem neuesten Stand ist, und es wird kein Build gestartet.
 
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche
- **Bearbeitungsfeld der Befehlszeile**
 
- Enthält die auszuführenden Ereignisse für den Prä- oder Postbuild.
+**Bearbeitungsfeld der Befehlszeile**
+
+Enthält die auszuführenden Ereignisse für den Prä- oder Postbuild.
 
 > [!NOTE]
 > Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
- **Makros**
+**Makros**
 
- Erweitert das Bearbeitungsfeld, um eine Liste der Makros anzuzeigen, die in das Bearbeitungsfeld der Befehlszeile eingefügt werden sollen.
+Erweitert das Bearbeitungsfeld, um eine Liste der Makros anzuzeigen, die in das Bearbeitungsfeld der Befehlszeile eingefügt werden sollen.
 
- **Makrotabelle**
+**Makrotabelle**
 
- Listet die verfügbaren Makros und deren Werte auf. Im Folgenden finden Sie eine Beschreibung der einzelnen Makros. Sie können nur ein Makro gleichzeitig in das Bearbeitungsfeld der Befehlszeile einfügen.
+Listet die verfügbaren Makros und deren Werte auf. Im Folgenden finden Sie eine Beschreibung der einzelnen Makros. Sie können nur ein Makro gleichzeitig in das Bearbeitungsfeld der Befehlszeile einfügen.
 
- **Einfügen**
+**Einfügen**
 
- Fügt das in der Makrotabelle ausgewählte Makro in das Bearbeitungsfeld der Befehlszeile ein.
+Fügt das in der Makrotabelle ausgewählte Makro in das Bearbeitungsfeld der Befehlszeile ein.
 
 ### <a name="macros"></a>Makros
- Sie können diese Makros verwenden, um Speicherorte für Dateien anzugeben oder bei einer Mehrfachauswahl den tatsächlichen Namen der Eingabedatei abrufen. Bei diesen Makros wird nicht zwischen Groß-/Kleinschreibung unterschieden.
 
-|Makro|Beschreibung|
+Sie können diese Makros verwenden, um Speicherorte für Dateien anzugeben oder bei einer Mehrfachauswahl den tatsächlichen Namen der Eingabedatei abrufen. Bei diesen Makros wird nicht zwischen Groß-/Kleinschreibung unterschieden.
+
+|Makro|BESCHREIBUNG|
 |-----------|-----------------|
 |`$(ConfigurationName)`|Der Name der aktuellen Projektkonfiguration, z.B. „Debug“.|
 |`$(OutDir)`|Der Pfad des Ausgabedateiverzeichnisses relativ zum Projektverzeichnis. Dies wird in den Wert für die Eigenschaft „Output Directory“ aufgelöst. Ein nachgestellter umgekehrter Schrägstrich („\\“) ist enthalten.|

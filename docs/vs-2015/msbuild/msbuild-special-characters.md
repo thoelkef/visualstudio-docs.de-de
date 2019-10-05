@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150764"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild-Sonderzeichen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

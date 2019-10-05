@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3a20a9ecf08c82589fd915fdd4bd60c6144e9d1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201821"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Um neue Typen für Projekte in Visual C# .NET und Visual Basic .NET zu entwerfen
   
     |||  
     |-|-|  
-    |**For**|**Add**|  
+    |**For**|**Hinzufügen**|  
     |Klassen, abstrakte Klassen, Strukturen oder Structs|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode), Destruktoren (Methode) und Konstanten, die den Typ definieren|  
     |Enumerationen|Feldwerte, die die Enumeration bilden|  
     |Schnittstellen|Methoden, Eigenschaften und Ereignisse, die die Schnittstelle bilden|  

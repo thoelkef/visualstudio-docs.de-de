@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817615"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461802"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
 

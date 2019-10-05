@@ -1,5 +1,8 @@
 # [Visual Studio für Mac](index.yml)
-# [IDE Tour (IDE-Tour)](ide-tour.md)
+
+# Erste Schritte
+## [IDE Tour (IDE-Tour)](ide-tour.md)
+## [Visual Studio für Mac für Windows-Benutzer](vsmac-for-windows-users.md)
 
 # Installation
 ## [Installieren von Visual Studio 2019 für Mac](installation.md)
@@ -31,6 +34,7 @@
 # Quellcode-Editor
 ## [Editor-Funktionen](source-editor.md)
 ## [Refactoring](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Kommentare](comments.md)
 ## [Editor Behavior (Editor-Verhalten)](editor-behavior.md)
 ## [Task Comments (Aufgabenkommentare)](task-comments.md)
@@ -56,7 +60,6 @@
 
 # Quellcodeverwaltung
 ## [Übersicht](version-control.md)
-## [TF-Versionskontrolle](tf-version-control.md)
 ## [Setting Up a Git Repository (Einrichten eines Git-Repository)](set-up-git-repository.md)
 ## [Working with Git (Arbeiten mit Git)](working-with-git.md)
 ## [Setting Up a Subversion Repository (Einrichten eines Subversion-Repository)](set-up-subversion-repository.md)
@@ -75,6 +78,7 @@
 ### [Erstellen von ASP.NET Core-Anwendungen in Visual Studio für Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript und TypeScript](javascript.md)
+### [launchSettings.json](launch-settings.md)
 ## Azure
 ### [Übersicht](azure-workload.md)
 ### [Einführung in Azure Functions](azure-functions.md)
@@ -93,14 +97,31 @@
 ### [Änderungsprotokoll](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Mobile Apps mit Xamarin](/visualstudio/mac/xamarin)
 
-# [Barrierefreiheit](accessibility.md)
+# Zugriff
+## [Übersicht](accessibility.md)
+## [Festlegen von IDE-Barrierefreiheitsoptionen](accessibility-ide-options.md)
+## macOS-Tools und -Features für Barrierefreiheit
+### [Verwenden von macOS-Tools für Barrierefreiheit](accessibility-macos.md)
+### [Verwenden der Tastaturnavigation](accessibility-keyboard.md)
+### [Verwenden von VoiceOver](accessibility-voiceover.md)
+
+# [Visual Studio für Mac für Windows-Benutzer](vsmac-for-windows-users.md)
 
 # Problembehandlung
 ## [Protokolle und Ausnahmen](troubleshooting.md)
 ## [Programm zur Verbesserung der Visual Studio-Benutzerfreundlichkeit](visual-studio-experience-improvement-program.md)
 ## [Report a Problem (Melden eines Problems)](report-a-problem.md)
+## [Problembehandlung: Unterstützt Visual Studio für Mac die Team Foundation-Versionskontrolle?](tf-version-control.md)
 ## [Problembehandlung: Warum kann ich nicht alle Vorlagen anzeigen?](troubleshooting-no-templates.md)
 ## [Problembehandlung: Updater enthält Fehler, die beim Abrufen von Informationen auftreten](updater-troubleshooting.md)
 
 # [Anmerkungen zu dieser Version](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Anmerkungen zur Vorschauversion](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
+# Proben
+## [Vorgestellte Beispiele](samples/index.yml)
+## [Alle ASP.NET Core-Beispiele](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
+## [Alle .NET Core-Beispiele](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
+## [Alle Xamarin.Forms-Beispiele](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
+## [Alle Xamarin.iOS-Beispiele](https://docs.microsoft.com/xamarin/ios/samples/)
+## [Alle Xamarin.Android-Beispiele](https://docs.microsoft.com/xamarin/android/samples/)
+## [Alle Xamarin.Mac-Beispiele](https://docs.microsoft.com/xamarin/mac/samples/)

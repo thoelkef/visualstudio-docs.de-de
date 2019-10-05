@@ -1,25 +1,33 @@
 ---
 title: 'Schritt 3: Hinzufügen eines Countdowntimers'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 197a52894a8c0ed3c2c38b9036a521a558c1005d
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430763"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118780"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Schritt 3: Hinzufügen eines Countdowntimers
+
 Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem die Anzahl von Sekunden verfolgt wird, die verbleiben, bis der Quizteilnehmer das Quiz beendet.
 
 > [!NOTE]
-> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung.
+> - Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Informationen zum Herunterladen einer vollständigen Version des Codes finden Sie unter [Tutorialbeispiel des vollständigen Mathequiz](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>So fügen Sie einen Countdowntimer hinzu
 
@@ -27,6 +35,9 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+
+   > [!IMPORTANT]
+   > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Jetzt benötigen Sie eine Methode, die die Sekunden zählt, z. B. einen Timer, der nach Ablauf der angegebenen Zeit ein Ereignis auslöst.
 
@@ -54,7 +65,7 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
      Sie haben gerade eine `if else`-Anweisung hinzugefügt, mit der Sie Programme zum Treffen von Entscheidungen auffordern können. Eine `if else`-Anweisung sieht wie folgt aus.
 
     > [!NOTE]
-    > Das folgende Beispiel dient nur der Veranschaulichung. Fügen Sie es nicht dem Projekt hinzu.
+    > Das folgende Beispiel dient nur zur Demonstration. Fügen Sie es nicht dem Projekt hinzu.
 
     ```vb
     If (something that your program will check) Then
@@ -99,10 +110,11 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
 
      Der Timer beginnt den Countdown. Wenn die Zeit abläuft, wird das Quiz beendet, und die Antwort wird angezeigt. In der folgenden Abbildung ist das laufende Quiz dargestellt.
 
-     ![Mathetest in Bearbeitung](../ide/media/express_addcountdown.png) Mathetest in Bearbeitung
+     ![Mathequiz wird durchgeführt](../ide/media/express_addcountdown.png)<br/>
+*Mathequiz wird durchgeführt*
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
 - Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md).

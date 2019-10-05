@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960462"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870680"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Zugreifen auf Visual Studio oder andere Hosts von einer Textvorlage
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Zugreifen auf Visual Studio oder andere Hosts über eine Textvorlage
 
 In einer Textvorlage können Sie Methoden und Eigenschaften, die vom Host bereitgestellt werden, die die Vorlage ausgeführt wird. Visual Studio ist ein Beispiel für einen Host an.
 
@@ -24,7 +24,7 @@ In einer Textvorlage können Sie Methoden und Eigenschaften, die vom Host bereit
 
 ## <a name="obtain-access-to-the-host"></a>Erhalten Sie Zugriff auf den host
 
-Legen Sie den Host für den Zugriff auf `hostspecific="true"` in die `template` Richtlinie. Nun können Sie `this.Host`, weist den Typ der <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Die <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> Typ enthält Member, die Sie zum Beispiel verwenden können, zum Auflösen von Dateinamen, und melden Sie Fehler.
+Legen Sie den Host für den Zugriff auf `hostspecific="true"` in die `template` Richtlinie. Nun können Sie mit `this.Host`dem Typ [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))verwenden. Der [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) -Typ enthält Member, die Sie zum Auflösen von Dateinamen und Protokoll Fehlern verwenden können, z. b.
 
 ### <a name="resolve-file-names"></a>Auflösen von Dateinamen
 

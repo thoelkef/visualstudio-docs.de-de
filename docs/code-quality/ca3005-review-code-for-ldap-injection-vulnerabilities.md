@@ -10,52 +10,52 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b9091df08368674511b770158ea47c247aade7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c0c99d5d0adb145a061693f8a83b1f674e05eed4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841365"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237341"
 ---
 # <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: Review code for LDAP injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von LDAP-Befehlen)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForLdapInjectionVulnerabilities|
+|TypeName|Reviewcodeforldapinjectionsicherheitsanfälligkeiten|
 |CheckId|CA3005|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht eine LDAP-Anweisung.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen eine LDAP-Anweisung.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Achten Sie darauf von Lightweight Directory Access Protocol (LDAP)-Injection-Angriffen, bei der Arbeit mit nicht vertrauenswürdigen Eingaben. Angreifer kann potenziell schädliche LDAP-Anweisungen für Informationsverzeichnisse ausführen. Anwendungen, die eine Benutzereingabe zu verwenden, zum Erstellen von dynamischer LDAP-Anweisungen für den Zugriff auf Verzeichnisdienste sind besonders anfällig.
+Beachten Sie beim Arbeiten mit nicht vertrauenswürdigen Eingaben die LDAP-Injection-Angriffe (Lightweight Directory Access Protocol). Ein Angreifer kann potenziell böswillige LDAP-Anweisungen für Informations Verzeichnisse ausführen. Anwendungen, die Benutzereingaben verwenden, um dynamische LDAP-Anweisungen für den Zugriff auf Verzeichnisdienste zu erstellen, sind besonders anfällig.
 
-Mit dieser Regel versucht, beim Suchen der Eingabespalte aus HTTP-Anforderungen, die eine LDAP-Anweisung erreicht.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die eine LDAP-Anweisung ausgeführt wird, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die eine LDAP-Anweisung erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die eine LDAP-Anweisung ausführt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Erwägen Sie für den vom Benutzer gesteuerte Teil LDAP-Anweisungen eine der:
-- Zulassen von nur einer sicheren Liste von nicht-Sonderzeichen.
-- Verbieten Sie Sonderzeichen
-- Versehen Sie Sonderzeichen mit Escapezeichen.
+Beachten Sie für den benutzergesteuerten Teil der LDAP-Anweisungen eine der folgenden:
+- Lässt nur eine sichere Liste von nicht Sonderzeichen zu.
+- Sonderzeichen nicht zulassen
+- Sonderzeichen für Escapezeichen.
 
-Finden Sie unter [OWASPs LDAP-Injection Spickzettel](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) Weitere Anleitungen.
+Weitere Anleitungen finden Sie unter [OWASP: Cheat Sheet zur LDAP Injection-Verhinderung](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) .
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Wenn Sie wissen, wurde die Eingabe überprüft oder mit Escapezeichen versehen, um sicherzugehen, kann ich diese Warnung unterdrücken.
+Wenn Sie wissen, dass die Eingabe als sicher überprüft wurde, können Sie diese Warnung unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200828"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei  
   
  /project `ProjName`  
- Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.  
+ Optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.  
   
  /projectconfig `ProjConfigName`  
- Dies ist optional. Der Name der Projektbuildkonfiguration für die Neuerstellung des benannten `/project`.  
+ Optional. Der Name der Projektbuildkonfiguration für die Neuerstellung des benannten `/project`.  
   
 ## <a name="remarks"></a>Anmerkungen  
   

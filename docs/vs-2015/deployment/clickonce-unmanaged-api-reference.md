@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 714d7b18995bf1ad51b07e02227e440879f73c9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192307"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referenz zur nicht verwalteten API für ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,8 +76,8 @@ ms.locfileid: "58960523"
 |Parameter|Beschreibung|Typ|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|Ein Zeiger auf eine auf NULL endende Zeichenfolge, die die URL des Bereitstellungsmanifests enthält.|LPCWSTR|  
-|`data`|Für zukünftige Verwendung reserviert. Muss NULL sein.|LPVOID|  
-|`flags`|Für zukünftige Verwendung reserviert. Muss 0 (null) sein.|DWORD|  
+|`data`|Zur künftigen Verwendung reserviert. Muss NULL sein.|LPVOID|  
+|`flags`|Zur künftigen Verwendung reserviert. Muss 0 (null) sein.|DWORD|  
   
 ### <a name="return-value"></a>Rückgabewert  
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Wenn eine verwaltete Ausnahme auftritt, 0 x 80020009 (DISP_E_EXCEPTION).  

@@ -3,25 +3,23 @@ title: CloudPilot-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den CloudPilot-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 6fec81e4f4345c77bdff7dd08bf2615d6fe45ad4
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032577"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681659"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Der CloudPilot-Vorteil in Visual Studio-Abonnements
-
 Migrieren Sie Ihre Apps in einigen wenigen Schritten zu Microsoft Azure. Sie können in kürzester Zeit die erforderlichen Codeänderungen zeilengenau bestimmen, um die Migration zu folgenden Bereichen erfolgreich durchführen zu können: Container, VMs, App Services, Azure SQL und bzw. oder SQL MI. Migrieren Sie Ihre Apps anschließend mithilfe von Assistenten mit ASR, DMA und DMS zu Azure.
 
+## <a name="overview"></a>Übersicht
 Mit CloudPilot von UnifyCloud können Entwickler Anwendungen schnell und unkompliziert zu Azure migrieren.  CloudPilot schätzt die Kosten für eine Migration zu Azure PaaS oder IaaS genau ein und gibt umfassende Empfehlungen, welche Codezeilen wie angepasst werden müssen, damit die Anwendung in der Cloud ausgeführt werden kann. Diese Einschätzung erfolgt deutlich schneller als eine manuelle Bewertung. CloudPilot unterstützt Sie bei der ersten Einschätzung des Aufwands einer Cloudmigration sowie bei der Planung. Beim Refactoring bietet es umfangreiche Empfehlungen für Codeänderungen für die Cloud, und es unterstützt Sie bei letzten Tests mit Unternehmenstechnologien und -richtlinien.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
-
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
 2. Suchen Sie nach der Kachel für den CloudPilot-Vorteil in der Kategorie „Extras“, und klicken Sie auf **Get Code** (Code abrufen).
@@ -76,9 +74,9 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="support-resources"></a>Supportressourcen
 - Benötigen Sie Hilfe bei der Verwendung von CloudPilot?  Sehen Sie sich diese Ressourcen an:
-    - [Wenden Sie sich an UnifyCloud](https://www.unifycloud.com/contacts/), wenn Sie Fragen zu UnifyCloud-Produkten haben.
-    - [CloudPilot-Benutzerhandbuch](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
+  - [Wenden Sie sich an UnifyCloud](https://www.unifycloud.com/contacts/), wenn Sie Fragen zu UnifyCloud-Produkten haben.
+  - [CloudPilot-Benutzerhandbuch](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
 
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

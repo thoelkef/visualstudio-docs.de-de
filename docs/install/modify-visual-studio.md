@@ -3,7 +3,7 @@ title: Ändern von Visual Studio 2017
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 06/25/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365404"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026489"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
@@ -41,15 +41,17 @@ Wir haben nicht nur das Personalisieren von Visual Studio erleichtert, um den Di
 
 Gehen Sie folgendermaßen vor:
 
-## <a name="modify-workloads"></a>Ändern von Arbeitsauslastungen
-
- Arbeitsauslastungen enthalten die Features, die Sie für die verwendete Programmiersprache oder Plattform benötigen. Verwenden Sie Arbeitsauslastungen, um Visual Studio so zu ändern, dass die Arbeit, die Sie ausführen möchten zum gewünschten Zeitpunkt unterstützt werden.
-
 >[!IMPORTANT]
 >Zum Installieren, Aktualisieren und Anpassen von Visual Studio müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt. Weitere Informationen finden Sie unter [Benutzerberechtigungen und Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
->[!TIP]
-> Beim folgenden Verfahren wird davon ausgegangen, dass Sie über eine Internetverbindung verfügen. Weitere Informationen dazu, wie Sie eine zuvor erstellte [Offlineinstallation](create-an-offline-installation-of-visual-studio.md) von Visual Studio ändern, finden Sie auf der Seite [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).
+## <a name="modify-workloads"></a>Ändern von Arbeitsauslastungen
+
+ [Workloads](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) enthalten die Funktionen, die Sie für die verwendete Programmiersprache oder Plattform benötigen. Verwenden Sie Arbeitsauslastungen, um Visual Studio so zu ändern, dass die Arbeit, die Sie ausführen möchten zum gewünschten Zeitpunkt unterstützt werden.
+
+>[!NOTE]
+> Beim folgenden Verfahren wird davon ausgegangen, dass Sie über eine Internetverbindung verfügen.
+>
+> Weitere Informationen dazu, wie Sie eine zuvor erstellte [Offlineinstallation](create-an-offline-installation-of-visual-studio.md) von Visual Studio ändern, finden Sie auf den Seiten [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md) und [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +61,7 @@ Gehen Sie folgendermaßen vor:
 
      ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 
-     >[!NOTE]
+     >[!TIP]
      >Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.<br/><br/> Alternativ dazu finden Sie den Visual Studio-Installer in folgendem Speicherort: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 1. Starten Sie das Installationsprogramm, indem Sie darauf klicken oder tippen, und wählen Sie dann **Ändern**.
@@ -86,7 +88,7 @@ Gehen Sie folgendermaßen vor:
 
      Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
 
-     ![Öffnen des Visual Studio-Installers](media/vs2019-visual-studio-installer.png "Öffnen des Visual Studio-Installers")
+     ![Öffnen des Visual Studio-Installers über Windows](media/vs-2019/vs-installer-windows-start.png "Öffnen des Visual Studio-Installers")
 
      > [!NOTE]
      > Sie können den Visual Studio-Installer auch an folgendem Speicherort finden:
@@ -97,7 +99,7 @@ Gehen Sie folgendermaßen vor:
 
 1. Suchen Sie im Installer nach der Edition von Visual Studio, die Sie installiert haben, und klicken Sie dann auf **Ändern**.
 
-     ![Aktualisieren oder Ändern von Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualisieren oder Ändern von Visual Studio 2017")
+     ![Aktualisieren oder Ändern von Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualisieren oder Ändern von Visual Studio 2019")
 
 1. Wählen Sie auf der Registerkarte **Workloads** die Workloads aus oder ab, die Sie installieren bzw. deinstallieren möchten.
 
@@ -117,12 +119,14 @@ Gehen Sie folgendermaßen vor:
 
 ## <a name="modify-individual-components"></a>Ändern einzelner Komponenten
 
-Wenn Sie keine Workloads installieren möchten, um Ihre Visual Studio-Installation anzupassen, wählen Sie die Registerkarte **Einzelne Komponenten** im Visual Studio-Installer aus, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
+Klicken Sie im Visual Studio-Installer auf die Registerkarte **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen, wenn Sie keine [Workloads](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) installieren möchten, um Ihre Visual Studio-Installation anzupassen.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
+* [Weitere Informationen zu Visual Studio-Workloads](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
+* [Liste der Workload- und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
 * [Visual Studio aktualisieren](update-visual-studio.md)
 * [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md)

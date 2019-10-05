@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549199"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926301"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Vorgehensweise: Entsperren von Visual Studio
 
@@ -50,11 +50,11 @@ Gehen Sie folgendermaßen vor, um Visual Studio mithilfe eines Visual Studio-Abo
 
 ### <a name="update-stale-licenses"></a>Aktualisieren veralteter Lizenzen
 
- Möglicherweise wurde die folgende Meldung angezeigt, dass Ihre Lizenz in Visual Studio abgelaufen ist: „Ihre Lizenz ist abgelaufen und muss aktualisiert werden.“
+Möglicherweise wurde die folgende Meldung angezeigt, dass Ihre Lizenz in Visual Studio abgelaufen ist: „Ihre Lizenz ist abgelaufen und muss aktualisiert werden.“
 
- ![Visual Studio-Meldung zu abgelaufener Lizenz](../ide/media/vs2017_stale-license.png)
+![Visual Studio-Meldung zu abgelaufener Lizenz](../ide/media/vs2017_stale-license.png)
 
- Diese Meldung gibt an, dass Ihr Abonnement zwar ggf. noch immer gültig ist, das von Visual Studio für Ihr Abonnement verwendete Lizenztoken jedoch nicht aktualisiert wurde und aus einem der folgenden Gründe abgelaufen ist:
+Diese Meldung gibt an, dass Ihr Abonnement zwar ggf. noch immer gültig ist, das von Visual Studio für Ihr Abonnement verwendete Lizenztoken jedoch nicht aktualisiert wurde und aus einem der folgenden Gründe abgelaufen ist:
 
 - Sie haben Visual Studio nicht verwendet oder hatten über einen längeren Zeitraum keine Internetzugang.
 - Sie haben sich bei Visual Studio abgemeldet.
@@ -68,7 +68,7 @@ Wenn Sie Ihre Anmeldeinformationen nicht erneut eingeben, beginnt der Ablaufzeit
 
 ### <a name="update-expired-licenses"></a>Aktualisieren abgelaufener Lizenzen
 
- Wenn Ihr Abonnement vollständig abgelaufen ist und Sie keine Zugriffsrechte mehr für Visual Studio besitzen, müssen Sie Ihr Abonnement erneuern oder ein anderes Konto hinzufügen, das über ein Abonnement verfügt. Wechseln Sie zu **Datei** > **Kontoeinstellungen**, um weitere Informationen über die verwendete Lizenz zu erhalten. Die Lizenzinformationen werden auf der rechten Seite des Dialogfelds angezeigt. Wenn Sie über ein weiteres Abonnement verfügen, das mit einem anderen Konto verknüpft ist, fügen Sie dieses Konto zur Liste **Alle Konten** auf der linken Seite des Dialogfelds hinzu, indem Sie auf den Link **Konto hinzufügen** klicken.
+Wenn Ihr Abonnement vollständig abgelaufen ist und Sie keine Zugriffsrechte mehr für Visual Studio besitzen, müssen Sie Ihr Abonnement erneuern oder ein anderes Konto hinzufügen, das über ein Abonnement verfügt. Wechseln Sie zu **Datei** > **Kontoeinstellungen**, um weitere Informationen über die verwendete Lizenz zu erhalten. Die Lizenzinformationen werden auf der rechten Seite des Dialogfelds angezeigt. Wenn Sie über ein weiteres Abonnement verfügen, das mit einem anderen Konto verknüpft ist, fügen Sie dieses Konto zur Liste **Alle Konten** auf der linken Seite des Dialogfelds hinzu, indem Sie auf den Link **Konto hinzufügen** klicken.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Analysieren der CPU-Auslastungsdaten (verwalteter Code)
+title: Analysieren der CPU-Auslastungsdaten (C#, Visual Basic)
 description: Messen der App-Leistung in C# und Visual Basic mithilfe des Diagnosetools für die CPU-Auslastung
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05dbbf5bc6e13b36e5918a880d0a767968a78f30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703858"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128197"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (verwalteter Code)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C#, Visual Basic)
 
 Visual Studio enthält viele leistungsstarke Features, mit denen Sie Leistungsprobleme in Ihrer Anwendung besser analysieren können. In diesem Thema werden einige der grundlegenden Funktionen erläutert. Außerdem betrachten wir das Tool, mit dem Leistungsengpässe aufgrund hoher CPU-Auslastung erkannt werden können. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
 
@@ -31,7 +31,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
 1. Klicken Sie in Visual Studio auf **Datei** > **Neues Projekt**.
 
-2. Klicken Sie unter **Visual C#** oder **Visual Basic** auf **Windows-Desktop** und dann im mittleren Bereich auf **Konsolen-App (.NET Framework)**.
+2. Klicken Sie unter **Visual C#** oder **Visual Basic** auf **Windows-Desktop** und dann im mittleren Bereich auf **Konsolen-App (.NET Framework)** .
 
     Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
@@ -237,5 +237,5 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

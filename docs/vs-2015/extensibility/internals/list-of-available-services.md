@@ -12,11 +12,11 @@ caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203822"
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59001472"
 |Dienst|Interface|Visual Studio|Visual Studio 2005|Beschreibung|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Ja|Ja|Wird von VSPackages verwendet zum Abrufen einer <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> Schnittstelle aus einem ActiveX-Steuerelement, um asynchrone Datenübertragungen zu ermöglichen.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Nein|Ja|Ruft die Design-Time-Erweiterbarkeit (DTE)-Objekt, das verwendet wird, für die Automatisierung ab.<br /><br /> C/C++ ID: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Nein|Ja|Ruft die Design-Time-Erweiterbarkeit (DTE)-Objekt, das verwendet wird, für die Automatisierung ab.<br /><br /> C/C++-ID: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|Ja|Ja|Durch ein Forms-Designer zum Anzeigen des Standardereignishandler für ein Steuerelement implementiert.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|Ja|Ja|Ermöglicht einem VSPackages, die Automationsschnittstelle von einem anderen VSPackage oder ein Steuerelement zugreifen.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|Ja|Ja|Aktiviert ein VSPackage hinzufügen oder erstellen eine erweiterte Typbibliothek.|  

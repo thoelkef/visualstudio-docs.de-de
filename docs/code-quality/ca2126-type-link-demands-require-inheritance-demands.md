@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdf92eae202f1ebb80b88e28307e7dacfbc0a39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f01ba5af7640521333093e4bba1f36a95363b60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542389"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232469"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Typlinkaufrufe erfordern Vererbungsanforderungen.
 
@@ -35,34 +35,34 @@ ms.locfileid: "62542389"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher unversiegelter Typ wird geschützt durch einen Linkaufruf, verfügt über eine überschreibbare Methode, und weder der Typ noch die Methode mit einer vererbungsanforderung geschützt ist.
+Ein öffentlicher unversiegelter Typ wird durch einen Link Aufruf geschützt, verfügt über eine über schreibbare Methode, und weder der Typ noch die Methode wird mit einer Vererbungs Anforderung geschützt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Linkaufruf auf eine Methode oder der deklarierende Typ ist den direkte Aufrufer der Methode, um die angegebene Berechtigung erforderlich. Eine vererbungsanforderung für eine Methode erfordert eine überschreibende Methode, um die angegebene Berechtigung zu erhalten. Eine vererbungsanforderung für einen Typ ist erforderlich, eine abgeleitete Klasse die angegebene Berechtigung haben.
+Ein Link Aufruf für eine Methode oder Ihren deklarierenden Typ erfordert, dass der unmittelbare Aufrufer der Methode über die angegebene Berechtigung verfügt. Ein Vererbungs Bedarf für eine Methode erfordert, dass eine über schreibende Methode über die angegebene Berechtigung verfügt. Ein Vererbungs Bedarf für einen Typ erfordert, dass eine abgeleitete Klasse über die angegebene Berechtigung verfügt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, Sichern Sie den Typ oder die Methode mit einer vererbungsanforderung für die gleichen Berechtigungen wie den Linkaufruf aus.
+Um einen Verstoß gegen diese Regel zu beheben, sichern Sie den Typ oder die Methode mit einer Vererbungs Anforderung für dieselbe Berechtigung wie der Link Aufruf.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
+Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
 
- [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
- [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
- [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
+[!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
+[!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
+[!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2108: Deklarative Sicherheit auf Werttypen überprüfen](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+[CA2108: Deklarative Sicherheit für Werttypen überprüfen](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+[CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA2122: Methoden mit Linkaufrufen nicht indirekt verfügbar machen](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
+[CA2122: Methoden mit Link aufrufen nicht indirekt verfügbar machen](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein.](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+[CA2123: Überschreibungs Link Aufrufe sollten mit der Basis identisch sein.](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Richtlinien für das Schreiben von sicherem Code](/dotnet/standard/security/secure-coding-guidelines)
-- [Verknüpfungsaufrufe](/dotnet/framework/misc/link-demands)
+- [Link Aufrufe](/dotnet/framework/misc/link-demands)

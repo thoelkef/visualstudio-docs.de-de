@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177471"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Bereitstellen von Windows Store-Apps aus Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 
 - Handelt es sich bei dem Ziel um ein Remotegerät, kopiert Visual Studio die erforderlichen Dateien auf den Remotecomputer und registriert anschließend die App auf dem Gerät.
 
-  Bereitstellung erfolgt automatisch, wenn Sie Ihre app aus Visual Studio mit Debuggen die **Debuggen starten** Option (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: CTRL + F5). Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
+  Bereitstellung erfolgt automatisch, wenn Sie Ihre app aus Visual Studio mit Debuggen die **Debuggen starten** Option (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: STRG + F5). Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
 
 - Ad-Hoc-Tests auf einem lokalen oder Remotecomputer.
 

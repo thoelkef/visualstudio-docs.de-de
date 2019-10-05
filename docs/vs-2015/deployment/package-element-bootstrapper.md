@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157681"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; -Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei
 |---------------|-----------------|  
 |`Culture`|Erforderlich. Definiert die Kultur für dieses Paket an, der bestimmt, die Sprache, die verwendet werden. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das kulturspezifischen Zeichenfolgen für Produktnamen und Fehlermeldungen während der Installation führt.|  
 |`Name`|Erforderlich. Der Name des Pakets angezeigt, die Entwickler in einem Tool wie z. B. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das enthalten soll eine `String` -Element mit der `Name` und `Culture` Eigenschaften festgelegt werden, entsprechend der `Name` und `Culture` Eigenschaften `Package`.|  
-|`LicenseAgreement`|Dies ist optional. Gibt den Namen der Datei in das Paket für die Verteilung der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann entweder nur-Text (.txt) oder Rich-Text-Format sein. (.rtf)|  
+|`LicenseAgreement`|Optional. Gibt den Namen der Datei in das Paket für die Verteilung der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann entweder nur-Text (.txt) oder Rich-Text-Format sein. (RTF)|  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel zeigt eine vollständige Paketdatei zum Verteilen der [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].  

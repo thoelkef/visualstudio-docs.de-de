@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192753"
 ---
 # <a name="graphics-event-call-stack"></a>Aufrufliste des Grafikereignisses
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +38,8 @@ Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ih
 |Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Ein Symbol, die eindeutig die Funktion identifiziert, die die Aufrufseite enthält. Das Debugsymbol für die Funktion wird angezeigt, wenn dieses verfügbar ist. Andernfalls wird der Offset der Funktion angezeigt.|  
-|**Datei**|Der Dateiname der Quelldatei oder Bibliotheksdatei, die die Aufrufsite enthält.|  
-|**Position**|Die Zeilennummer der Aufrufsite.|  
+|**File**|Der Dateiname der Quelldatei oder Bibliotheksdatei, die die Aufrufsite enthält.|  
+|**Speicherort**|Die Zeilennummer der Aufrufsite.|  
   
 ### <a name="links-to-graphics-objects"></a>Links zu Grafikobjekten  
  Um die ausgewählten Grafiken zu verstehen, benötigen Sie möglicherweise Informationen über das Direct3D-Objekt, dem diese zugeordnet sind. Das Fenster **Aufrufliste des Grafikereignisses** enthält Links zu diesen Informationen.  

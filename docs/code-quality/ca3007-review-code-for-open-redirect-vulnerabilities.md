@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e60d0fad1262138b57f079485bc7455e55c7ec25
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0226c0e2e66a6543b81cd8ee674a743766b65f3e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841345"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237273"
 ---
 # <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007: Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)
 
@@ -24,39 +24,39 @@ ms.locfileid: "65841345"
 |TypeName|ReviewCodeForOpenRedirectVulnerabilities|
 |CheckId|CA3007|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht eine HTTP-Antwort-Umleitung.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen eine Umleitung von HTTP-Antworten.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Bei der Arbeit mit nicht vertrauenswürdigen Eingaben Achten Sie darauf, dass Sie offene umleitungen Sicherheitsrisiken. Ein Angreifer kann ein Sicherheitsrisiko, das offene umleitungen um Ihre Website zu verwenden, geben Sie die Darstellung einer legitimen URL, aber einen ahnungslosen Besucher einer Phishing oder andere bösartige Website umleiten ausnutzen.
+Beachten Sie bei der Arbeit mit nicht vertrauenswürdigen Eingaben die Sicherheitsrisiken offener Umleitung. Ein Angreifer kann eine offene Umleitungs Anfälligkeit ausnutzen, um die Darstellung einer legitimen URL mithilfe Ihrer Website zu versehen, aber einen nicht ahnenden Besucher an eine phishingwebseite oder eine andere böswillige Webseite umzuleiten.
 
-Mit dieser Regel versucht beim Suchen der Eingabespalte aus HTTP-Anforderungen, die eine HTTP-umleitungs-URL zu erreichen.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die mit einer HTTP-Umleitung antwortet, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die eine HTTP-Umleitungs-URL erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die mit einer HTTP-Umleitung antwortet, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Einige Ansätze für die Behebung von Sicherheitsrisiken für offene umleitungen sind:
+Einige Ansätze zum Beheben offener Umleitungs Sicherheitslücken sind:
 
-- Ermöglichen Sie keine Benutzern das Einleiten von umleitungen.
-- Dürfen Sie Benutzer geben Sie einen beliebigen Teil der URL in einem Szenario mit Umleitung nicht.
-- Leitet zu einer vordefinierten"Liste" URLs zu beschränken.
-- Überprüfen Sie umleitungs-URLs.
-- Falls zutreffend, sollten Sie eine Haftungsausschluss-Seite verwenden, wenn Benutzer außerhalb Ihrer Website weitergeleitet werden.
+- Erlauben Sie Benutzern nicht, Umleitungen zu initiieren.
+- Erlauben Sie Benutzern nicht, einen Teil der URL in einem Umleitungs Szenario anzugeben.
+- Beschränken Sie Umleitungen auf eine vordefinierte "Zulassungsliste" von URLs.
+- Umleitungs-URLs überprüfen.
+- Falls zutreffend, sollten Sie ggf. eine Ausschluss Seite verwenden, wenn Benutzer von Ihrer Website entfernt werden.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Wenn Sie, dass Sie die Eingabe wissen, um die gewünschten URLs eingeschränkt werden, überprüft haben, kann ich diese Warnung unterdrücken.
+Wenn Sie wissen, dass Sie die Eingabe so überprüft haben, dass Sie auf beabsichtigte URLs beschränkt ist, ist es in Ordnung, diese Warnung zu unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

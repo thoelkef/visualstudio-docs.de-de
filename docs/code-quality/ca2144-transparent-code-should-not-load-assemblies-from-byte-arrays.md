@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971c7e794c5b782c2ba71be868fc2f9e7747fdb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33edff9b22559799cef4ad7e03058a5eb212182b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542277"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232010"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Transparenter Code darf keine Assemblys aus Bytearrays laden.
 
@@ -27,7 +27,7 @@ ms.locfileid: "62542277"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine transparente Methode lädt eine Assembly aus einem Bytearray, das mit einem der folgenden Methoden:
+Eine transparente Methode lädt eine Assembly aus einem Bytearray mit einer der folgenden Methoden:
 
 - <xref:System.Reflection.Assembly.Load%2A>
 
@@ -36,15 +36,15 @@ ms.locfileid: "62542277"
 - <xref:System.Reflection.Assembly.Load%2A>
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die Sicherheitsüberprüfung für transparenten Code ist nicht so umfassend wie die Sicherheitsüberprüfung für wichtigen Code, da in transparentem Code keine sicherheitsrelevanten Aktionen ausgeführt werden können. Aus einem Bytearray geladene Assemblys werden in transparentem Code eventuell nicht erkannt, und dieses Bytearray könnte wichtigen oder sicherheitsgeschützten Code enthalten, der überwacht werden muss. Transparenter Code darf daher keine Assemblys aus einem Bytearray laden.
+Die Sicherheitsüberprüfung für transparenten Code ist nicht so umfassend wie die Sicherheitsüberprüfung für wichtigen Code, da in transparentem Code keine sicherheitsrelevanten Aktionen ausgeführt werden können. Aus einem Bytearray geladene Assemblys werden in transparentem Code eventuell nicht erkannt, und dieses Bytearray könnte wichtigen oder sicherheitsgeschützten Code enthalten, der überwacht werden muss. Daher sollte transparenter Code keine Assemblys aus einem Bytearray laden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Markieren Sie die Methode, die die Assembly geladen wird, um einen Verstoß gegen diese Regel zu beheben, die <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.
+Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode, die die Assembly lädt <xref:System.Security.SecurityCriticalAttribute> , mit <xref:System.Security.SecuritySafeCriticalAttribute> dem-Attribut oder dem-Attribut.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Die Regel wird für den folgenden Code ausgelöst, da eine transparente Methode eine Assembly aus einem Bytearray geladen.
+Die Regel wird für den folgenden Code ausgelöst, da eine transparente Methode eine Assembly aus einem Bytearray lädt.
 
- [!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]
+[!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]

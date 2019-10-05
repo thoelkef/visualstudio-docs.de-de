@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 827a8ee01575d6d263c8f8ee423de72cfe939e39
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806627"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231178"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizer sollten geschützt sein.
 
@@ -28,22 +28,22 @@ ms.locfileid: "62806627"
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ implementiert einen Finalizer, der keine (geschützten) Zugriff angibt.
+Ein öffentlicher Typ implementiert einen Finalizer, der keinen Zugriff auf die Familie (geschützter Zugriff) angibt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Finalizer müssen den Familienzugriffsmodifizierer verwenden. Mit dieser Regel wird durch die C#-, Visual Basic und Visual C++-Compiler erzwungen.
+Finalizer müssen den Familienzugriffsmodifizierer verwenden. Diese Regel wird von den C#Compilern, Visual Basic und Visual C++ erzwungen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Finalizer als Familie zugegriffen werden kann.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Finalizer so, dass er auf die Familie zugreifen kann.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Der Verstoß gegen diese Regel kann nicht in einer beliebigen .NET-Sprache auf hoher Ebene werden; Sie können verletzt werden, wenn Sie Microsoft Intermediate Language schreiben.
+Diese Regel kann in keiner .NET-Sprache auf hoher Ebene verletzt werden. Sie kann verletzt werden, wenn Sie die Microsoft Intermediate Language schreiben.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

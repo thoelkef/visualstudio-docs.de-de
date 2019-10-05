@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461583"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918343"
 ---
 # <a name="test-mix-models-overview"></a>Testmischungsmodelle – Übersicht
 
@@ -52,7 +52,7 @@ Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den
 Wenn Sie diese Einstellung verwenden, basiert der nächste zu startende Test auf den zugewiesenen Prozentsätzen. Dabei wird die Anzahl der virtuellen Benutzer, die die einzelnen Tests gerade ausführen, nicht berücksichtigt.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Prozentsatz nach virtuellen Benutzern
- Dieses Testmischungsmodell bestimmt den Prozentsatz virtueller Benutzer, die einen bestimmten Test ausführen. Wenn Sie dieses Testmischungsmodell verwenden, basiert der nächste zu startende Test nicht nur auf den zugewiesenen Prozentsätzen, sondern auch auf dem Prozentsatz der virtuellen Benutzer, die derzeit einen bestimmten Test ausführen. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, so genau wie möglich mit der zugewiesenen Verteilung überein.
+Dieses Testmischungsmodell bestimmt den Prozentsatz virtueller Benutzer, die einen bestimmten Test ausführen. Wenn Sie dieses Testmischungsmodell verwenden, basiert der nächste zu startende Test nicht nur auf den zugewiesenen Prozentsätzen, sondern auch auf dem Prozentsatz der virtuellen Benutzer, die derzeit einen bestimmten Test ausführen. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, so genau wie möglich mit der zugewiesenen Verteilung überein.
 
 ### <a name="PacingTestMix"></a> Bestimmen der Geschwindigkeit bei der Testmischung
 
@@ -69,7 +69,7 @@ Wenn Sie das Testmischungsmodell mit Geschwindigkeitsangabe verwenden, wird durc
 Die Einstellung **Reaktionszeit zwischen Testiterationen** gilt nicht, wenn Sie eine Geschwindigkeit für die Testmischung angeben.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Anwenden der Verteilung auf die Geschwindigkeitsverzögerung
- Der Wert für die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** in einem Auslastungstestszenario kann auf TRUE oder FALSE festgelegt werden:
+Der Wert für die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** in einem Auslastungstestszenario kann auf TRUE oder FALSE festgelegt werden:
 
 - **True**: Das Szenario wendet typische statistische Verteilungsverzögerungen an, die über den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben werden. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
@@ -82,13 +82,13 @@ Die Einstellung **Reaktionszeit zwischen Testiterationen** gilt nicht, wenn Sie 
   Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ### <a name="SequentialOrder"></a> Sequenzielle Reihenfolge
- Wenn die Option "Basierend auf sequenzieller Testreihenfolge" aktiviert ist, führt jeder virtuelle Benutzer alle Tests in dem Szenario in der Reihenfolge aus, in der die Tests definiert wurden.
+Wenn die Option "Basierend auf sequenzieller Testreihenfolge" aktiviert ist, führt jeder virtuelle Benutzer alle Tests in dem Szenario in der Reihenfolge aus, in der die Tests definiert wurden.
 
 ## <a name="test-iterations-property"></a>Eigenschaft „Testiterationen“
- In den Testlaufeinstellungseigenschaften können Sie einen Wert für die Testiterationen-Eigenschaft angeben. Dieser Wert entspricht der Anzahl von Testiterationen, die in einem Auslastungstest ausgeführt werden sollen. Nachdem die angegebene Anzahl von Testiterationen gestartet wurde, werden unabhängig von den Einstellungen beliebiger Auslastungsprofile keine zusätzlichen Testiterationen gestartet. Nachdem die angegebene Anzahl der Testiterationen abgeschlossen wurde, wird der Auslastungstest beendet. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+In den Testlaufeinstellungseigenschaften können Sie einen Wert für die Testiterationen-Eigenschaft angeben. Dieser Wert entspricht der Anzahl von Testiterationen, die in einem Auslastungstest ausgeführt werden sollen. Nachdem die angegebene Anzahl von Testiterationen gestartet wurde, werden unabhängig von den Einstellungen beliebiger Auslastungsprofile keine zusätzlichen Testiterationen gestartet. Nachdem die angegebene Anzahl der Testiterationen abgeschlossen wurde, wird der Auslastungstest beendet. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Initialisierungs- und Beendigungstests
- Sie können Tests auswählen, die am Anfang und Ende der Auslastungstestsitzung jedes virtuellen Benutzers ausgeführt werden sollen. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+Sie können Tests auswählen, die am Anfang und Ende der Auslastungstestsitzung jedes virtuellen Benutzers ausgeführt werden sollen. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 - **Initialisierungstest** Dieser Test wird von jedem virtuellen Benutzer ausgeführt, bevor ein beliebiger Test aus der Testmischung ausgeführt wird.
 

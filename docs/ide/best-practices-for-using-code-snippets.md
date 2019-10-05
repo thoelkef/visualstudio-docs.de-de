@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975608"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825958"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bewährte Methoden für die Verwendung von Codeausschnitten
 
@@ -31,7 +31,7 @@ Wenn Sie die Speicherorte an die Anwendung anpassen, sollten Sie Folgendes beach
 
 - Suchen eines verfügbaren Speicherorts. Benutzer haben möglicherweise keinen Zugriff auf den Ordner *Programme* des Computers. Daher kann das Speichern von Dateien mit den Anwendungsdateien eventuell nicht funktionieren.
 
-- Suchen eines sicheren Speicherorts. Das Speichern von Dateien im Stammordner (*C:\\*) ist nicht sicher. Zum Speichern von Anwendungsdaten wird der Ordner *Anwendungsdaten* empfohlen. Für die Daten einzelner Benutzer kann die Anwendung im Ordner *Dokumente* eine Datei für jeden Benutzer erstellen.
+- Suchen eines sicheren Speicherorts. Das Speichern von Dateien im Stammordner (*C:\\* ) ist nicht sicher. Zum Speichern von Anwendungsdaten wird der Ordner *Anwendungsdaten* empfohlen. Für die Daten einzelner Benutzer kann die Anwendung im Ordner *Dokumente* eine Datei für jeden Benutzer erstellen.
 
 - Verwenden eines gültigen Dateinamens. Sie können die Steuerelemente <xref:System.Windows.Forms.OpenFileDialog> und <xref:System.Windows.Forms.SaveFileDialog> verwenden, um die Wahrscheinlichkeit ungültiger Dateinamen zu reduzieren. Denken Sie daran, dass die Datei zwischen dem Zeitpunkt, zu dem der Benutzer die Datei auswählt, und dem Zeitpunkt, zu dem sie vom Code bearbeitet wird, möglicherweise gelöscht wird. Zudem ist der Benutzer eventuell nicht berechtigt, in die Datei zu schreiben.
 
@@ -61,11 +61,11 @@ IntelliSense-Codeausschnitte, die von Visual Studio installiert werden, sind in 
 
 - Öffnen Sie alle heruntergeladenen Ausschnittdateien im Editor oder XML-Editor von Visual Studio, und überprüfen Sie sie vor der Installation sorgfältig. Achten Sie dabei auf Folgendes:
 
-    - Der Code eines Ausschnitts kann bei der Ausführung das System beschädigen. Lesen Sie den Quellcode sorgfältig, bevor Sie ihn ausführen.
+  - Der Code eines Ausschnitts kann bei der Ausführung das System beschädigen. Lesen Sie den Quellcode sorgfältig, bevor Sie ihn ausführen.
 
-    - Der Hilfe-URL-Block der Ausschnittdatei kann URLs enthalten, die eine bösartige Skriptdatei ausführen oder eine anstößige Website anzeigen.
+  - Der Hilfe-URL-Block der Ausschnittdatei kann URLs enthalten, die eine bösartige Skriptdatei ausführen oder eine anstößige Website anzeigen.
 
-    - Der Codeausschnitt kann Verweise enthalten, die automatisch dem Projekt hinzugefügt werden und von überall auf Ihr System geladen werden können. Diese Verweise wurden möglicherweise von der Stelle auf den Computer heruntergeladen, von der Sie den Ausschnitt heruntergeladen haben. Der Ausschnitt kann dann eine Methode im Verweis aufrufen, die bösartigen Code ausführt. Um sich gegen einen solchen Angriff zu schützen, sollten Sie die Import- und Verweisblöcke der Ausschnittdatei überprüfen.
+  - Der Codeausschnitt kann Verweise enthalten, die automatisch dem Projekt hinzugefügt werden und von überall auf Ihr System geladen werden können. Diese Verweise wurden möglicherweise von der Stelle auf den Computer heruntergeladen, von der Sie den Ausschnitt heruntergeladen haben. Der Ausschnitt kann dann eine Methode im Verweis aufrufen, die bösartigen Code ausführt. Um sich gegen einen solchen Angriff zu schützen, sollten Sie die Import- und Verweisblöcke der Ausschnittdatei überprüfen.
 
 ## <a name="see-also"></a>Siehe auch
 

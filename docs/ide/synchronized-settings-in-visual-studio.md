@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950426"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976724"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronisieren von Visual Studio-Einstellungen auf mehreren Computern
 
@@ -31,19 +31,19 @@ Standardmäßig werden die folgenden Einstellungen synchronisiert:
 
 - Im Folgenden finden Sie die Optionen auf den Seiten **Extras** > **Optionen**:
 
-   - Design und Einstellungen zur Schreibweise der Menüleiste auf der Optionsseite **Umgebung** > **Allgemein**
+  - Design und Einstellungen zur Schreibweise der Menüleiste auf der Optionsseite **Umgebung** > **Allgemein**
 
-   - Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**
+  - Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**
 
-   - Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**
+  - Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**
 
-   - Alle Einstellungen auf der Optionsseite **Umgebung** > **Registerkarten und Fenster**
+  - Alle Einstellungen auf der Optionsseite **Umgebung** > **Registerkarten und Fenster**
 
-   - Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**
+  - Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**
 
-   - Alle Einstellungen auf den Optionsseiten **Text-Editor**, etwa die [Einstellungen für das Codeformat](code-styles-and-quick-actions.md).
+  - Alle Einstellungen auf den Optionsseiten **Text-Editor**, etwa die [Einstellungen für das Codeformat](code-styles-and-code-cleanup.md).
 
-   - Alle Einstellungen auf den Optionsseiten für den **XAML-Designer**
+  - Alle Einstellungen auf den Optionsseiten für den **XAML-Designer**
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Deaktivieren der synchronisierten Einstellungen auf einem bestimmten Computer
 
@@ -71,7 +71,7 @@ Wenn Sie derzeit über Parallelinstallationen von Visual Studio verfügen und de
 
 1. Upgrade auf Visual Studio 2017 Version 15.3 oder höher
 
-2. Verwenden Sie den **Assistenten zum Importieren/Exportieren von Einstellungen**, um alle Ihre vorhandenen Einstellungen in einen Speicherort außerhalb des Ordners *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* zu exportieren.
+2. Verwenden Sie den **Assistenten zum Importieren und Exportieren von Einstellungen**, um alle vorhandenen Einstellungen in einen Speicherort außerhalb des Ordners *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* zu exportieren.
 
 3. Öffnen Sie die **Developer-Eingabeaufforderung für Visual Studio 2017**, und führen Sie `devenv /resetuserdata` aus.
 
@@ -84,6 +84,10 @@ Wenn Sie derzeit über Parallelinstallationen von Visual Studio verfügen und de
 Bestimmte Einstellungen wie das Layout des Toolfensters werden nicht zwischen verschiedenen parallelen Installationen von Visual Studio freigegeben. Die Datei *CurrentSettings.vssettings* unter *%userprofile%\Documents\Visual Studio 2019\Settings* befindet sich in einem installationsspezifischen Ordner, der *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings* ähnelt.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Zurücksetzen synchronisierter Einstellungen
+
+Melden Sie sich bei Visual Studio an, und klicken Sie dann auf **Extras** > **Einstellungen importieren/exportieren**, um den **Assistenten zum Importieren und Exportieren von Einstellungen** zu öffnen und alle Einstellungen auf die Standardeinstellung zurückzusetzen. Klicken Sie auf **Alle Einstellungen zurücksetzen**, und führen Sie dann die restlichen Schritte des Assistenten aus.
 
 ## <a name="see-also"></a>Siehe auch
 

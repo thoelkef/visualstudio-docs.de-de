@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Grafiken und WordArt zu Dokumenten programmgesteuert
+title: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63b1a72a5b332f27b6bd38d25c16ff3a5981b4fa
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177766"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253826"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Vorgehensweise: Programmgesteuertes Hinzufügen von Grafiken und WordArt zu Dokumenten
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Vorgehensweise: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
   Sie können Ihren Dokumenten zur Entwurfszeit oder zur Laufzeit Bilder und Zeichnungsobjekte hinzufügen. Mithilfe von WordArt können Sie Microsoft Office Word-Dokumenten dekorativen Text hinzufügen. Diese Spezialeffekte für Text sind Zeichnungsobjekte, die Sie anpassen und in Ihr Dokument einfügen können.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "66177766"
 
 1. Platzieren Sie den Cursor an der Stelle, an der Sie das Bild in das Dokument einfügen möchten.
 
-2. Klicken Sie auf die **einfügen** Registerkarte des Menübands.
+2. Klicken Sie im Menüband auf die Registerkarte **Einfügen** .
 
-3. In der **Abbildungen** auf **Bild**.
+3. Klicken Sie in der Gruppe **Abbildungen** auf **Bild**.
 
-4. In der **Bild einfügen** Dialogfeld, navigieren Sie zu dem Bild eingefügt werden soll, und klicken Sie auf **einfügen**.
+4. Navigieren Sie im Dialogfeld **Bild einfügen** zu dem Bild, das Sie einfügen möchten, und klicken Sie auf **Einfügen**.
 
      Das Bild wird dem Dokument an der aktuellen Cursorposition hinzugefügt.
 
-## <a name="add-a-picture-at-runtime"></a>Hinzufügen eines Bildes zur Laufzeit
+## <a name="add-a-picture-at-run-time"></a>Hinzufügen eines Bilds zur Laufzeit
  Sie können ein Bild an der aktuellen Cursorposition in ein Dokument einfügen.
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>So fügen Sie ein Bild an der Cursorposition hinzu
@@ -60,15 +60,15 @@ ms.locfileid: "66177766"
 
 1. Platzieren Sie den Cursor an der Stelle, an der Sie WordArt in das Dokument einfügen möchten.
 
-2. Klicken Sie auf die **einfügen** Registerkarte des Menübands.
+2. Klicken Sie im Menüband auf die Registerkarte **Einfügen** .
 
-3. In der **Text** auf **WordArt**, und wählen Sie dann ein WordArt-Format.
+3. Klicken Sie in der Gruppe **Text** auf **WordArt**, und wählen Sie dann einen WordArt-Stil aus.
 
-4. Fügen Sie den Text, der im Dokument angezeigt werden sollen die **WordArt-Text bearbeiten** Dialogfeld und klicken Sie auf **OK**.
+4. Fügen Sie den Text, den Sie im Dokument anzeigen möchten, dem Dialogfeld **Text bearbeiten Text** hinzu, und klicken Sie auf **OK**.
 
      Der Text wird dem Dokument mit dem ausgewählten WordArt-Format hinzugefügt.
 
-## <a name="add-wordart-at-runtime"></a>Hinzufügen von WordArt zur Laufzeit
+## <a name="add-wordart-at-run-time"></a>Hinzufügen von WordArt zur Laufzeit
  Sie können WordArt an der aktuellen Cursorposition in ein Dokument einfügen. Die Verfahren unterscheiden sich für Anpassungen auf Dokumentebene und VSTO-Add-Ins.
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>So fügen Sie WordArt in einer Anpassung auf Dokumentebene an der Cursorposition hinzu
@@ -97,11 +97,11 @@ ms.locfileid: "66177766"
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
 
-- Ein Bild mit dem Namen *SamplePicture.jpg* muss vorhanden sein, auf Laufwerk C.
+- Ein Bild mit dem Namen *SamplePicture. jpg* muss auf Laufwerk C vorhanden sein.
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Programmgesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Vorgehensweise: Programmgesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Vorgehensweise: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Vorgehensweise: Programmgesteuertes Speichern von Dokumenten](../vsto/how-to-programmatically-save-documents.md)
-- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
+- [Vorgehensweise: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Vorgehensweise: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Vorgehensweise: Programmgesteuerte Wiederherstellung der Auswahl nach Such Vorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Vorgehensweise: Programm gesteuertes Speichern von Dokumenten](../vsto/how-to-programmatically-save-documents.md)
+- [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

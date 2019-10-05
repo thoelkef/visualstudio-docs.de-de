@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164566"
 ---
 # <a name="caller--callee-view----contention-data"></a>Ansicht der Aufrufer/Aufgerufenen – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine 
   
  **Funktionen, die von der aktuellen Funktion aufgerufen wurden** wird im unteren Raster angezeigt, und gibt Konfliktinformationen für die aufgerufene Funktion (untergeordnete Funktion) der ausgewählten Funktion an, als die untergeordnete Funktion von der aktuellen Funktion aufgerufen wurde.  
   
-|Spalte|Beschreibung|  
+|Spalte|BESCHREIBUNG|  
 |------------|-----------------|  
 |**Type**|Der Kontext der Funktion:<br /><br /> -   **0** – die aktuelle Funktion<br />-   **1** – eine Funktion, die die aktuelle Funktion aufruft<br />-   **2** – eine Funktionen, die von der aktuellen Funktion aufgerufen wird<br /><br /> Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
 |**Exklusive blockierte Zeit %**|– Bei einer aktuellen Funktion die Zeit, für die die Funktion vom Ausführen von Code im Funktionsrumpf abgehalten wurde. Dies umfasst nicht die blockierte Zeit für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einer aufrufenden Funktion der Anteil der exklusiven blockierten Zeit der aktuellen Funktion, als diese Funktion die aktuelle Funktion aufgerufen hat.<br />– Bei einer aufgerufenen Funktion die Zeit, während der diese Funktion ihren eigenen Code nicht ausführen konnte, als diese Funktion von der aktuellen Funktion aufgerufen wurde. Dies umfasst nicht die blockierte Zeit für untergeordnete Funktionen, die von dieser aufgerufenen Funktion aufgerufen wurden.|  

@@ -1,6 +1,6 @@
 ---
 title: .NET-Namenskonventionen für EditorConfig-Dateien
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,18 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309820"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251695"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
 Namenskonventionen beziehen sich auf die Benennung von Codeelementen wie z.B. Klassen, Eigenschaften und Methoden. Sie können beispielsweise angeben, dass öffentliche Member großgeschrieben oder asynchrone Methoden mit „Async“ enden müssen. Sie können diese Regeln erzwingen, indem Sie sie in einer [.editorconfig](../ide/create-portable-custom-editor-options.md)-Datei angeben. Verletzungen von Namensregeln erscheinen entweder in der **Fehlerliste** oder als Vorschlag unter dem Namen, je nachdem, welchen Schweregrad Sie für Ihre Regel wählen. Es besteht keine Notwendigkeit, einen Build des Projekts zu erstellen, um Verstöße zu erkennen.
-
-Namenskonventionen sollten in der EditorConfig-Datei von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird. Wenn es jedoch mehrere *Regeleigenschaften* mit dem gleichen Namen gibt, hat die zuletzt gefundene Eigenschaft mit diesem Namen Vorrang. Weitere Informationen finden Sie unter [Dateihierarchie und Rangfolge](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Bei jeder Namenskonvention müssen Sie die Symbole, für die sie gilt, einen Benennungsstil und einen Schweregrad zum Erzwingen der Konvention mithilfe der nachstehend beschriebenen Eigenschaften angeben. Die Reihenfolge der Eigenschaften ist ohne Bedeutung.
 
@@ -167,13 +165,30 @@ Die folgende Tabelle zeigt die zulässigen Schweregrade und ihre Bedeutung:
 
 Schweregrad | Effekt
 ------------ | -------------
-„none“ oder „silent“ | Wenn dieses Format nicht befolgt wird, wird der Benutzer nicht benachrichtigt. Automatisch generierter Code folgt jedoch diesem Format.
+Keine | Die Regel wird vollständig unterdrückt.
+Refactoring oder unbeaufsichtigt | Wenn dieses Format nicht befolgt wird, wird der Benutzer nicht benachrichtigt. Automatisch generierter Code folgt jedoch diesem Format.
 Vorschlag | Wenn dieses Format nicht eingehalten wird, dies dem Benutzer als Vorschlag (zwei unterlegte Punkte bei den ersten beiden Zeichen) anzeigen. Dies hat zur Kompilierzeit keine Auswirkungen.
 warning | Wenn dieses Format nicht eingehalten wird, eine Compilerwarnung in der **Fehlerliste** anzeigen.
 error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler in der **Fehlerliste** anzeigen.
 
 > [!NOTE]
 > Sie müssen keinen Build für Ihr Projekt durchführen, damit Namensregelverstöße angezeigt werden. Sie werden bei der Bearbeitung des Codes angezeigt, entweder in der **Fehlerliste** oder als Vorschlag.
+
+## <a name="rule-order"></a>Regelreihenfolge
+
+::: moniker range="vs-2017"
+
+Namenskonventionen sollten in der EditorConfig-Datei von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird. Wenn es jedoch mehrere *Regeleigenschaften* mit dem gleichen Namen gibt, hat die zuletzt gefundene Eigenschaft mit diesem Namen Vorrang. Weitere Informationen finden Sie unter [Dateihierarchie und Rangfolge](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Ab Visual Studio 2019 Version 16.2 spielt die Reihenfolge, in der Benennungsregeln in einer EDITORCONFIG-Datei definiert werden, keine Rolle. Stattdessen ordnet Visual Studio die Benennungsregeln automatisch entsprechend der Definition der Regeln selbst. Die Erweiterung [EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) kann eine EditorConfig-Datei analysieren und Fälle melden, in denen sich die Regelreihenfolge in der Datei von der Reihenfolge unterscheidet, die vom Compiler zur Laufzeit verwendet wird.
+
+Wenn Sie eine frühere Version von Visual Studio verwenden, sollten Namenskonventionen in der EDITORCONFIG-Datei von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird. Wenn es jedoch mehrere *Regeleigenschaften* mit dem gleichen Namen gibt, hat die zuletzt gefundene Eigenschaft mit diesem Namen Vorrang. Weitere Informationen finden Sie unter [Dateihierarchie und Rangfolge](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
 
 ## <a name="default-naming-styles"></a>Standardbenennungsstile
 

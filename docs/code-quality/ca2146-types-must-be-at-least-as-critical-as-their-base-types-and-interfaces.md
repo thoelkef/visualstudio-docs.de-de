@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a8a5609394f0dd428066e32fb425a2abb486c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce7870077cb859a25de70c726c78cad1d50270e5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231945"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.
 
@@ -27,16 +27,16 @@ ms.locfileid: "62542052"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein transparenter Typ wird abgeleitet von einem Typ, die mit der <xref:System.Security.SecuritySafeCriticalAttribute> oder <xref:System.Security.SecurityCriticalAttribute>, oder ein Typ, der mit markiert ist die <xref:System.Security.SecuritySafeCriticalAttribute> Attribut stammt von einem Typ, die mit der <xref:System.Security.SecurityCriticalAttribute> Attribut.
+Ein transparenter Typ wird von einem Typ <xref:System.Security.SecuritySafeCriticalAttribute> abgeleitet, der mit <xref:System.Security.SecurityCriticalAttribute>oder gekennzeichnet ist, oder ein Typ, der mit dem <xref:System.Security.SecuritySafeCriticalAttribute> -Attribut markiert ist, wird von einem Typ abgeleitet, der mit <xref:System.Security.SecurityCriticalAttribute> dem-Attribut markiert ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel wird ausgelöst, wenn ein abgeleiteter Typ über ein Sicherheitstransparenzattribut verfügt, das nicht so wichtig wie der Basistyp oder die implementierte Schnittstelle ist. Nur wichtige Typen können von wichtigen Basistypen abgeleitet werden oder kritische Schnittstellen implementieren, und nur kritische oder sicherheitskritische Typen können von sicherheitskritischen Basistypen abgeleitet werden oder sicherheitskritische Schnittstellen implementieren. Verstöße gegen diese Regel in Transparenz der Ebene 2 führen eine <xref:System.TypeLoadException> für den abgeleiteten Typ.
+Diese Regel wird ausgelöst, wenn ein abgeleiteter Typ über ein Sicherheitstransparenzattribut verfügt, das nicht so wichtig wie der Basistyp oder die implementierte Schnittstelle ist. Nur wichtige Typen können von wichtigen Basistypen abgeleitet werden oder kritische Schnittstellen implementieren, und nur kritische oder sicherheitskritische Typen können von sicherheitskritischen Basistypen abgeleitet werden oder sicherheitskritische Schnittstellen implementieren. Verstöße gegen diese Regel in der Transparenz der Ebene 2 führen <xref:System.TypeLoadException> zu einer für den abgeleiteten Typ.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um diese Verletzung zu beheben, markieren Sie die abgeleiteten oder implementierenden Typ mit einem Transparenzattribut, das mindestens genauso kritisch sein wie der Basistyp oder die Schnittstelle ist.
+Um diese Verletzung zu beheben, markieren Sie den abgeleiteten oder implementierenden Typ mit einem Transparenz Attribut, das mindestens so kritisch ist wie der Basistyp oder die Schnittstelle.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- [!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]
+[!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]

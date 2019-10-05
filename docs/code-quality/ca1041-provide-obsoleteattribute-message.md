@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 354d1d2fe99fa55bba7f8a00bf3e9f760ff1dbaf
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 6620ac646c7fe20de856185708effc9e1a331e57
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842189"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235851"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: ObsoleteAttribute-Meldung bereitstellen.
 
@@ -36,35 +36,35 @@ ms.locfileid: "65842189"
 
 ## <a name="cause"></a>Ursache
 
-Einen Typ oder Member ist markiert, indem eine <xref:System.ObsoleteAttribute?displayProperty=fullName> -Attribut, das nicht der <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> angegebene Eigenschaft.
+Ein Typ oder Member wird mit einem <xref:System.ObsoleteAttribute?displayProperty=fullName> -Attribut gekennzeichnet, dessen <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> -Eigenschaft nicht angegeben ist.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Typen und Member, aber dies ist [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Typen und Member, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-<xref:System.ObsoleteAttribute> Dient zum Kennzeichnen als veraltet markierte von Bibliothekstypen und Member. Consumer sollten die Verwendung von einem beliebigen Typ oder Member, der als veraltet markiert ist. Dies ist, da er möglicherweise nicht unterstützt und in späteren Versionen der Bibliothek entfernt werden. Wenn ein Typ oder Member mit markiert <xref:System.ObsoleteAttribute> kompiliert wurde, die <xref:System.ObsoleteAttribute.Message%2A> -Eigenschaft des Attributs wird angezeigt. Auf diese Weise erhält der Benutzer Informationen zum veralteten Typ oder Member. Diese Informationen umfassen im Allgemeinen, wie langen den veralteten Typ oder Member wird von der Bibliotheks-Designer und die bevorzugte Ersetzung verwenden unterstützt.
+<xref:System.ObsoleteAttribute>wird verwendet, um veraltete Bibliothekstypen und Member zu markieren. Bibliotheks Consumer sollten die Verwendung eines beliebigen Typs oder Members vermeiden, der als veraltet markiert ist. Dies liegt daran, dass Sie möglicherweise nicht unterstützt wird und schließlich aus späteren Versionen der Bibliothek entfernt wird. Wenn ein Typ oder Member, der mit <xref:System.ObsoleteAttribute> markiert ist, kompiliert <xref:System.ObsoleteAttribute.Message%2A> wird, wird die-Eigenschaft des-Attributs angezeigt. Auf diese Weise erhält der Benutzer Informationen zum veralteten Typ oder Member. Diese Informationen umfassen im Allgemeinen, wie lange der veraltete Typ oder Member von den Bibliotheks-Designern unterstützt wird, und die bevorzugte Ersetzung für die Verwendung von.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen die `message` Parameter, um die <xref:System.ObsoleteAttribute> Konstruktor.
+Um einen Verstoß gegen diese Regel zu beheben, fügen `message` Sie dem <xref:System.ObsoleteAttribute> Konstruktor den Parameter hinzu.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie eine Warnung dieser Regel nicht, da die <xref:System.ObsoleteAttribute.Message%2A> Eigenschaft enthält wichtige Informationen zu den veralteten Typ oder Member.
+Unterdrücken Sie keine Warnung aus dieser Regel, da <xref:System.ObsoleteAttribute.Message%2A> die-Eigenschaft wichtige Informationen über den veralteten Typ oder Member bereitstellt.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1041.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen veralteten Member, die einer ordnungsgemäß deklarierten <xref:System.ObsoleteAttribute>.
+Das folgende Beispiel zeigt ein veraltetes Element, das über eine <xref:System.ObsoleteAttribute>ordnungsgemäß deklarierte verfügt.
 
 [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
 [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]

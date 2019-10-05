@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821572"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154858"
 ---
 # <a name="use-the-task-list"></a>Verwenden der Aufgabenliste
 
@@ -63,6 +63,9 @@ Ein Kommentar im Code, dem ein Kommentarzeichen und ein vordefiniertes Token vor
 ```
 
 Da `TODO` ein vordefiniertes Token ist, wird dieser Kommentar als eine `TODO`-Aufgabe in der Liste angezeigt.
+
+> [!NOTE]
+> Standardtoken sind nur für die Sprachen C/C++, C# und VB verfügbar. Informationen zu anderen Sprachen finden Sie im Abschnitt **Benutzerdefinierte Token**.
 
 ### <a name="custom-tokens"></a>Benutzerdefinierte Token
 

@@ -15,11 +15,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183946"
 ---
 # <a name="projects"></a>Projekte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ In Visual Studio-Projekte sind Container, mit denen Entwickler zum Organisieren 
  [Webprojekte](../../extensibility/internals/web-projects.md)  
  Erläutert, Web-Projekt, die wiederum von ASP.NET-Webanwendungen erstellen.  
   
- [Generieren neuer Projekte: In die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: In die Hintergründe Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Neue Projektgenerierung: In die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Erläutert, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen.  
   
  [VSSDK-Beispiele](../../misc/vssdk-samples.md)  

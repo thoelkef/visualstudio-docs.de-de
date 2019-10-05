@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: e6a9b03ce2552e50ebfca8f9e6e2823dee794c20
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841777"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481771"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 
@@ -28,93 +28,96 @@ ms.locfileid: "65841777"
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Es wurde eine operatorüberladung erkannt, und die erwartete benannte Alternativmethode wurde nicht gefunden.
+Eine Operator Überladung wurde erkannt, und die erwartete benannte alternative Methode wurde nicht gefunden.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Typen, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Überladen von Operatoren ermöglicht die Verwendung der Symbole, die Berechnungen für einen Typ darstellt. Ein Typ, der das Pluszeichen (+) für die Addition überlädt müsste z. B. in der Regel einen alternativen Member, die mit dem Namen "Hinzufügen". Der benannte Alternativmember ermöglicht den Zugriff auf die gleiche Funktionalität wie der Operator, und es wird bereitgestellt, um Entwickler beim Programmieren in Sprachen, die überladene Operatoren nicht unterstützen.
+Die Operator Überladung ermöglicht die Verwendung von Symbolen zur Darstellung von Berechnungen für einen Typ. Beispielsweise würde ein Typ, der das Plus Symbol `+` zur Addition überlädt, normalerweise einen alternativen Member mit dem Namen `Add` aufweisen. Der benannte Alternative Member bietet Zugriff auf die gleiche Funktionalität wie der-Operator. Sie wird für Entwickler bereitgestellt, die in Sprachen programmieren, die überladene Operatoren nicht unterstützen.
 
-Diese Regel überprüft die Operatoren in der folgenden Tabelle aufgelistet sind.
+Diese Regel wird untersucht:
 
-|C#|Visual Basic|C++|Alternativer name|
-|---------|------------------|-----------|--------------------|
+- Implizite und explizite Umwandlungs Operatoren in einem Typ durch Prüfen auf Methoden mit dem Namen "`To<typename>`" und "`From<typename>`".
+
+- Die in der folgenden Tabelle aufgeführten Operatoren:
+
+|C#|Visual Basic|C++|Alternativer Methodenname|
+|-|-|-|-|
 |+ (binär)|+|+ (binär)|Hinzufügen|
 |+=|+=|+=|Hinzufügen|
 |&|und|&|BitwiseAnd|
-|&=|' Und ' =|&=|BitwiseAnd|
-|&#124;|Or|&#124;|BitwiseOr|
-|&#124;=|"Oder" =|&#124;=|BitwiseOr|
+|&=|Und =|&=|BitwiseAnd|
+|&#124;|oder|&#124;|BitwiseOr|
+|&#124;=|Oder =|&#124;=|BitwiseOr|
 |--|Nicht zutreffend|--|Dekrement|
 |/|/|/|Teilen|
 |/=|/=|/=|Teilen|
 |==|=|==|gleich|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
-|>|>|>|Vergleichen|
-|>=|>=|>=|Vergleichen|
+|>|>|>|CompareTo oder Vergleich|
+|>=|>=|>=|CompareTo oder Vergleich|
 |++|Nicht zutreffend|++|Inkrement|
-|<>|!=|gleich|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
-|<|<|<|Vergleichen|
-|<=|<=|\<=|Vergleichen|
+|!=|<>|!=|gleich|
+|<<|<<|<<|Linke UMSCHALTTASTE|
+|<<=|<<=|<<=|Linke UMSCHALTTASTE|
+|<|<|<|CompareTo oder Vergleich|
+|<=|<=|\<=|CompareTo oder Vergleich|
 |&&|Nicht zutreffend|&&|LogicalAnd|
-|&#124;&#124;|Nicht zutreffend|&#124;&#124;|LogicalOr|
+|&#124;&#124;|Nicht zutreffend|&#124;&#124;|Logicalor|
 |!|Nicht zutreffend|!|LogicalNot|
-|%|Mod|%|MOD oder Rest|
+|%|Mod|%|Mod oder Restwert|
 |%=|Nicht zutreffend|%=|Mod|
 |* (binär)|*|*|Multiplizieren|
 |*=|Nicht zutreffend|*=|Multiplizieren|
-|~|Not|~|OnesComplement|
-|>>|>>|>>|RightShift|
-=|Nicht zutreffend|>>=|RightShift|
+|~|Not|~|Oneskomplement|
+|>>|>>|>>|Lesefolge wechseln|
+=|Nicht zutreffend|>>=|Lesefolge wechseln|
 |-(binär)|-(binär)|-(binär)|Subtrahieren|
 |-=|Nicht zutreffend|-=|Subtrahieren|
-|true|IsTrue|Nicht zutreffend|"IsTrue" (Eigenschaft)|
-|-(Unär)|Nicht zutreffend|-|Negate-|
-|+ (Unär)|Nicht zutreffend|+|Plus|
-|False|IsFalse|False|"IsTrue" (Eigenschaft)|
+|true|IsTrue|Nicht zutreffend|IsTrue (Eigenschaft)|
+|-(unär)|Nicht zutreffend|-|Negation|
+|+ (unär)|Nicht zutreffend|+|ZZ|
+|false|IsFalse|False|IsTrue (Eigenschaft)|
 
-N/v == kann nicht überladen werden, in der ausgewählten Sprache.
+\* N/A bedeutet, dass der Operator nicht in der ausgewählten Sprache überladen werden kann.
 
-Die Regel überprüft auch implizite und explizite Umwandlungsoperatoren in einem Typ (`SomeType`) durch Prüfen auf Methoden, die mit dem Namen `ToSomeType` und `FromSomeType`.
-
-In C# geschrieben Wenn ein binärer Operator überladen ist, wird der zugehörige Zuweisungsoperator, ggf. auch implizit überladen.
+> [!NOTE]
+> Wenn C#in ein binärer Operator überladen wird, wird der entsprechende Zuweisungs Operator (sofern vorhanden) ebenfalls implizit überladen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie die alternative Methode für den Operator aus. Nennen Sie ihn mit den empfohlenen alternativen Namen.
+Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie die alternative-Methode für den-Operator. Nennen Sie Sie mithilfe des empfohlenen alternativen namens.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie eine Warnung dieser Regel nicht, wenn Sie eine freigegebene Bibliothek implementieren. Anwendungen können eine Warnung dieser Regel ignorieren.
+Unterdrücken Sie keine Warnung aus dieser Regel, wenn Sie eine freigegebene Bibliothek implementieren. Anwendungen können eine Warnung aus dieser Regel ignorieren.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca2225.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Nutzung) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Verwendung) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel definiert eine Struktur, die gegen diese Regel verstößt. Um das Beispiel zu korrigieren, fügen Sie eine öffentliche `Add(int x, int y)` Methode, um die Struktur.
+Im folgenden Beispiel wird eine Struktur definiert, die gegen diese Regel verstößt. Fügen Sie der-Struktur eine öffentliche `Add(int x, int y)` Methode hinzu, um das Beispiel zu korrigieren.
 
 [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-- [CA2224: Außerkraftsetzung equals, Equals beim Überladen](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Überschreiben von GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA1046: Gleichheits Operator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2226: Operatoren sollten symmetrische über Ladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224: Überschreiben von Gleichheits beim Überladen von Operatoren](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: GetHashCode beim Überschreiben von ist überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 - [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

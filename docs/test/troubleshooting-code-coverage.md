@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990502"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079586"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 
@@ -29,7 +29,7 @@ Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden C
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Mögliche Gründe dafür, dass keine oder alte Ergebnisse angezeigt werden
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Verwenden Sie die richtige Edition von Visual Studio?
- Sie benötigen Visual Studio Enterprise.
+Sie benötigen Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Es wurden keine Tests ausgeführt.
 
@@ -56,6 +56,8 @@ Erklärung: Für die Code Coverage-Engine muss während des Testlaufs für jede 
 Die *PDB*-Datei und die *DLL*- oder *EXE*-Datei müssen in dem gleichen Buildvorgang generiert werden.
 
 Lösung: Stellen Sie sicher, dass die Buildeinstellungen so konfiguriert sind, dass die *PDB*-Datei generiert wird. Wenn die *PDB*-Dateien beim Erstellen des Projekts nicht aktualisiert werden, öffnen Sie die Projekteigenschaften, wählen Sie die Seite **Build** aus, wählen Sie **Erweitert** aus, und überprüfen Sie die **Debuginformationen**.
+
+Vergewissern Sie sich bei C++-Projekten, dass die generierten PDB-Dateien über vollständige Debuginformationen verfügen. Öffnen Sie die Projekteigenschaften, und überprüfen Sie, ob der **Linker** > **Debuggen** > **Debuginformationen generieren** auf **Für Freigabe und Veröffentlichung optimierte Debuginformationen generieren (/DEBUG:FULL)** festgelegt ist.
 
 Wenn sich die *PDB*-Datei und die *DLL*- oder *EXE*-Dateien an verschiedenen Speicherorten befinden, kopieren Sie die *PDB*-Datei in dasselbe Verzeichnis. Es ist auch möglich, die Code Coverage-Engine so zu konfigurieren, dass an anderen Speicherorten nach *PDB*-Dateien gesucht wird. Weitere Informationen finden Sie unter [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md).
 
@@ -97,11 +99,11 @@ Lösung&mdash;Es gibt zwei mögliche Fehlertypen:
 
 - **Fehler in regulärem Ausdruck**
 
-     Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:
+  Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:
 
-    - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`
+  - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`
 
-    - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`
+  - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Benutzerdefinierte Datei ".runsettings" mit falschen Ausschlüssen
 

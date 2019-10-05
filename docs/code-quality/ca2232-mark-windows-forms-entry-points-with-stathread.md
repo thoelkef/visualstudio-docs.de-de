@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bea8ee43c90c0e6559846bad00b61ec434ec46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06772f8dd91c27834b329293d06cfbc2a7dcfcef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541808"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230756"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Windows Forms-Einstiegspunkte mit STAThread markieren.
 
@@ -31,25 +31,25 @@ ms.locfileid: "62541808"
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Assembly verweist auf die <xref:System.Windows.Forms> Namespace und der Einstiegspunkt ist nicht mit markiert die <xref:System.STAThreadAttribute?displayProperty=fullName> Attribut.
+Eine Assembly verweist auf <xref:System.Windows.Forms> den Namespace, und der Einstiegspunkt ist nicht mit dem <xref:System.STAThreadAttribute?displayProperty=fullName> -Attribut gekennzeichnet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.STAThreadAttribute> Gibt an, dass das COM-Threadingmodell für die Anwendung Singlethread-Apartment. Dieses Attribut muss am Einstiegspunkt jeder Anwendung vorhanden sein, die Windows Forms verwendet. Wird es weggelassen, funktionieren die Windows-Komponenten eventuell nicht richtig. Wenn das Attribut nicht vorhanden ist, verwendet die Anwendung die Multithread-Apartment-Modell, die für Windows Forms nicht unterstützt wird.
+ <xref:System.STAThreadAttribute>Gibt an, dass das COM-Threading Modell für die Anwendung ein Single Thread-Apartment ist. Dieses Attribut muss am Einstiegspunkt jeder Anwendung vorhanden sein, die Windows Forms verwendet. Wird es weggelassen, funktionieren die Windows-Komponenten eventuell nicht richtig. Wenn das-Attribut nicht vorhanden ist, verwendet die Anwendung das Multithread Apartment-Modell, das für Windows Forms nicht unterstützt wird.
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Projekte, die das Anwendungsframework verwendet keine markieren die **Main** Methode mit STAThread markieren. Die [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Compiler automatisch durchführt.
+> [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Projekte, in denen das Anwendungs Framework verwendet wird, müssen die **Main** -Methode nicht mit STAThread markieren. Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Compiler führt dies automatisch aus.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, fügen die <xref:System.STAThreadAttribute> -Attribut auf den Einstiegspunkt. Wenn die <xref:System.MTAThreadAttribute?displayProperty=fullName> Attribut vorhanden ist, entfernen Sie sie.
+Um einen Verstoß gegen diese Regel zu beheben, fügen <xref:System.STAThreadAttribute> Sie dem Einstiegspunkt das-Attribut hinzu. Wenn das <xref:System.MTAThreadAttribute?displayProperty=fullName> Attribut vorhanden ist, entfernen Sie es.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel ein, wenn Sie für .NET Compact Framework, für das Entwickeln der <xref:System.STAThreadAttribute> -Attribut ist nicht erforderlich und wird nicht unterstützt.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn Sie für die .NET Compact Framework entwickeln, für <xref:System.STAThreadAttribute> die das Attribut unnötig ist und nicht unterstützt wird.
 
 ## <a name="example"></a>Beispiel
- Die folgenden Beispiele veranschaulichen die richtige Verwendung von <xref:System.STAThreadAttribute>:
+In den folgenden Beispielen wird die korrekte Verwendung <xref:System.STAThreadAttribute>von veranschaulicht:
 
- [!code-csharp[FxCop.Usage.StaThread#1](../code-quality/codesnippet/CSharp/ca2232-mark-windows-forms-entry-points-with-stathread_1.cs)]
- [!code-vb[FxCop.Usage.StaThread#1](../code-quality/codesnippet/VisualBasic/ca2232-mark-windows-forms-entry-points-with-stathread_1.vb)]
+[!code-csharp[FxCop.Usage.StaThread#1](../code-quality/codesnippet/CSharp/ca2232-mark-windows-forms-entry-points-with-stathread_1.cs)]
+[!code-vb[FxCop.Usage.StaThread#1](../code-quality/codesnippet/VisualBasic/ca2232-mark-windows-forms-entry-points-with-stathread_1.vb)]

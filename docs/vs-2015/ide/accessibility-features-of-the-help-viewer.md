@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 041e83f8d71679ffb26d24be37f353e39fbc08e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148283"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Barrierefreiheitsfunktionen von Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54765843"
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Dieses Thema enthält Informationen über die Funktionen, Produkte und Dienste, mit denen Microsoft Help Viewer 2.2 Barrierefreiheit bietet.  
   
 ## <a name="keyboard-access"></a>Tastaturzugriff  
- Sie können auf alle Funktionen von Help Viewer zugreifen, indem Sie die Tastatur verwenden. Weitere Informationen finden Sie unter [Tastenkombinationen (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
+ Sie können auf alle Funktionen des Help Viewers zugreifen, indem Sie die Tastatur verwenden. Weitere Informationen finden Sie unter [Tastenkombinationen (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 ## <a name="font-size"></a>Schriftgrad  
  Sie können den Schriftgrad ändern, in dem der Thementext im Dokumentfenster angezeigt wird. Weitere Informationen finden Sie unter [Anpassen von Help Viewer](../ide/customize-the-help-viewer.md).  

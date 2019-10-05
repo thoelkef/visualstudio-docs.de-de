@@ -1,10 +1,10 @@
 - name: Dokumentation zur Codeanalyse
   href: index.md
-- name: Codeanalyse für verwalteten Code
+- name: Analysieren von verwaltetem Code
   items:
     - name: Übersicht
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn-Analysetools (Quellanalyse)
+    - name: Codeanalyse
       items:
         - name: Übersicht
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: FAQ
           href: analyzers-faq.md
-    - name: Binäre Analysetools (statische Codeanalyse)
+    - name: Legacyanalyse
       items:
         - name: Übersicht
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: Exemplarische Vorgehensweise für eine statische Codeanalyse
+        - name: Exemplarische Vorgehensweise für eine Legacyanalyse
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migration
           href: fxcop-analyzers.yml
-        - name: Manuelles Ausführen der Codeanalyse
+        - name: Manuelles Ausführen der Legacyanalyse
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Konfiguration
           items:
-            - name: Konfigurieren der Codeanalyse für binäre Analysetools
+            - name: Konfigurieren der Legacyanalyse
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Aktivieren der automatischen Codeanalyse
+            - name: Aktivieren der automatischen Legacycodeanalyse
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: Anpassen des Codeanalysewörterbuchs
+            - name: Anpassen des Legacycodeanalysewörterbuchs
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Unterdrücken
           items:
-            - name: Unterdrücken von Warnungen zur statischen Codeanalyse für generierten Code
+            - name: Unterdrücken von Legacyanalysewarnungen für generierten Code
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Anwendungsfehler bei der Codeanalyse
+        - name: Anwendungsfehler bei der Legacyanalyse
           items:
-            - name: Richtlinienfehler bei der Codeanalyse
+            - name: Richtlinienfehler bei der Legacyanalyse
               href: code-analysis-policy-errors.md
             - name: Übersicht
               href: code-analysis-application-errors.md
@@ -123,11 +123,13 @@
           items:
             - name: Übersicht
               href: configure-fxcop-analyzers.md
-            - name: EditorConfig-Optionen
+            - name: Bereichsoptionen
               href: fxcop-analyzer-options.md
+            - name: Vordefinierter Regelsatz
+              href: analyzer-rule-sets.md
         - name: FAQ
           href: fxcop-analyzers-faq.md
-    - name: Migrieren von der statischen Analyse zu FxCop-Analysetools
+    - name: Migrieren von der Legacyanalyse zu FxCop-Analysetools
       items:
         - name: Übersicht
           href: fxcop-analyzers.yml
@@ -137,8 +139,6 @@
       items:
         - name: Übersicht
           href: using-rule-sets-to-group-code-analysis-rules.md
-        - name: Regelsätze für Analysepakete
-          href: analyzer-rule-sets.md
         - name: Konfigurieren von Regelsätzen
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung
@@ -162,31 +162,31 @@
           items:
             - name: Übersicht
               href: rule-set-reference.md
-            - name: Regelsatz für alle Regeln
+            - name: Alle Regeln
               href: all-rules-rule-set.md
-            - name: Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code
+            - name: Grundlegende Regeln für Richtigkeit
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
+            - name: Grundlegende Regeln für Entwurfsrichtlinien
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code
+            - name: Erweiterte Regeln für Richtigkeit
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
+            - name: Erweiterte Regeln für Entwurfsrichtlinien
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für Globalisierungsregeln für verwalteten Code
+            - name: Globalisierungsregeln
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für verwaltete Mindestregeln für verwalteten Code
+            - name: Verwaltete Mindestregeln
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für verwaltete empfohlene Regeln für verwalteten Code
+            - name: Verwaltete empfohlene Regeln
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Regelsatz für gemischte Mindestregeln
+            - name: Gemischte Mindestregeln
               href: mixed-minimum-rules-rule-set.md
-            - name: Regelsatz für gemischte empfohlene Mindestregeln
+            - name: Gemischte empfohlene Regeln
               href: mixed-recommended-rules-rule-set.md
-            - name: Regelsatz für systemeigene Mindestregeln
+            - name: Native Mindestregeln
               href: native-minimum-rules-rule-set.md
-            - name: Regelsatz für systemeigene empfohlene Regeln
+            - name: Native empfohlene Regeln
               href: native-recommended-rules-rule-set.md
-            - name: Regelsatz für Sicherheitsregeln für verwalteten Code
+            - name: Sicherheitsregeln
               href: security-rules-rule-set-for-managed-code.md
         - name: Unterdrücken von Warnungen
           href: in-source-suppression-overview.md
@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: CancellationToken-Parameter müssen zuletzt aufgeführt werden.'
+                  href: ca1068.md
                 - name: 'CA2210: Assemblys müssen gültige starke Namen aufweisen.'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Warnungen in der Dokumentation
+              items:
+                - name: Übersicht
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: Verwenden Sie keine cref-Tags mit einem Präfix.'
+                  href: ca1200.md
             - name: Globalisierungswarnungen
               items:
                 - name: Übersicht
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824: Assemblys mit NeutralResourcesLanguageAttribute markieren.'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: Vermeiden Sie Arrayzuteilungen mit einer Länge von 0 (null).'
+                  href: ca1825.md
             - name: Portabilitätswarnungen
               items:
                 - name: Übersicht
@@ -658,6 +669,16 @@
                   href: ca2321.md
                 - name: 'CA2322: Vor dem Deserialisieren sicherstellen, dass JavaScriptSerializer nicht mit SimpleTypeResolver initialisiert ist'
                   href: ca2322.md
+                - name: 'CA2326: Keine anderen TypeNameHandling-Werte als None (Keine) verwenden'
+                  href: ca2326.md
+                - name: 'CA2327: Keine unsichere JsonSerializerSettings-Klasse verwenden'
+                  href: ca2327.md
+                - name: 'CA2328: Sicherstellen, dass JsonSerializerSettings sicher ist'
+                  href: ca2328.md
+                - name: 'CA2329: Nicht mit JsonSerializer mit unsicherer Konfiguration deserialisieren'
+                  href: ca2329.md
+                - name: 'CA2330: Sicherstellen, dass JsonSerializer eine sichere Konfiguration bei der Deserialisierung verwendet'
+                  href: ca2330.md
                 - name: 'CA3001: Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)'
                   href: ca3001-review-code-for-sql-injection-vulnerabilities.md
                 - name: 'CA3002: Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)'
@@ -682,6 +703,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012: Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061: Fügen Sie kein Schema nach URL hinzu.'
+                  href: ca3061.md
                 - name: 'CA3075: Unsichere DTD-Verarbeitung.'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076: Unsichere XSLT-Skriptausführung.'
@@ -690,6 +713,36 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: 'CA3147: Verbhandler mit ValidateAntiForgeryToken markieren.'
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: 'CA5361: Deaktivieren Sie Schannel nicht. Verwenden Sie starke Kryptografie.'
+                  href: ca5361.md
+                - name: 'CA5363: Deaktivieren Sie die Anforderungsüberprüfung nicht.'
+                  href: ca5363.md
+                - name: 'CA5364: Verwenden Sie keine veralteten Sicherheitsprotokolle.'
+                  href: ca5364.md
+                - name: 'CA5369: Verwenden Sie XmlReader zur Deserialisierung.'
+                  href: ca5369.md
+                - name: 'CA5370: Verwenden Sie XmlReader als überprüfenden Reader.'
+                  href: ca5370.md
+                - name: 'CA5371: Verwenden Sie XmlReader für Schemalesevorgänge.'
+                  href: ca5371.md
+                - name: 'CA5372: Verwenden Sie XmlReader für XPathDocument.'
+                  href: ca5372.md
+                - name: 'CA5373: Verwenden Sie keine veraltete Schlüsselableitungsfunktion.'
+                  href: ca5373.md
+                - name: 'CA5378: Deaktivieren Sie ServicePointManagerSecurityProtocols nicht.'
+                  href: ca5378.md
+                - name: 'CA5380: Fügen Sie keine Zertifikate zum Stammspeicher hinzu.'
+                  href: ca5380.md
+                - name: 'CA5381: Stellen Sie sicher, dass keine Zertifikate zum Stammspeicher hinzugefügt werden.'
+                  href: ca5381.md
+                - name: 'CA5386: Vermeiden Sie die Hartcodierung des SecurityProtocolType-Werts.'
+                  href: ca5386.md
+                - name: 'CA5389: Fügen Sie den Pfad des Archivelements nicht zum Pfad des Zieldateisystems hinzu.'
+                  href: ca5389.md
+                - name: 'CA5397: Verwenden Sie keine veralteten SslProtocols-Werte.'
+                  href: ca5397.md
+                - name: 'CA5398: Vermeiden Sie hartcodierte SslProtocols-Werte.'
+                  href: ca5398.md
             - name: Verwendungswarnungen
               items:
                 - name: Übersicht
@@ -783,7 +836,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: Automatisches Anhalten von Features
               href: automatic-feature-suspension.md
-- name: Codeanalyse für C/C++
+- name: Analysieren von C/C++-Code
   items:
     - name: Übersicht
       displayName: C++ code analysis
@@ -948,6 +1001,8 @@
           href: C26476.md
         - name: C26477
           href: C26477.md
+        - name: C26478
+          href: c26478.md
         - name: C26481
           href: C26481.md
         - name: C26482
@@ -982,6 +1037,10 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
+        - name: C26812
+          href: c26812.md
+        - name: C26814
+          href: c26814.md
     - name: C/C++-Warnungen
       items:
         - name: Übersicht

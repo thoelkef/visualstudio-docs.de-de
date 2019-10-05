@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961826"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254381"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Django-Webprojektvorlage für Umfragen
 
@@ -374,6 +374,6 @@ Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt
 
 - Schreiben von Komponententests in *tests.py*. Die Visual Studio-Projektvorlagen bieten Ausgangspunkte für diese. Weitere Informationen finden Sie in [Writing your first Django app, part 5 - testing (Erstellen Ihrer ersten Django-App, Teil 5 – Testen)](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) und [Testing in Django (Testen in Django)](https://docs.djangoproject.com/en/2.0/topics/testing/) in der Django-Dokumentation.
 
-- Ändern Sie die App von SQLite in einen Datenspeicher auf Produktionsebene, wie z.B. MySQL, PostgreSQL und SQL Server (können alle in Azure gehostet werden). Wie in [When to use SQLite (Empfohlene Verwendung von SQLite)](https://www.sqlite.org/whentouse.html) (sqlite.org) beschrieben, ist SQLite hervorragend für Standorte mit niedrigem bis mittleren Verkehrsaufkommen und weniger als 100.000 Treffern/Tag geeignet, wird aber bei einem höheren Verkehrsaufkommen nicht empfohlen. Da SQLite zudem auf einen einzelnen Computer beschränkt ist, kann es nicht in jedem Szenario mit mehreren Servern, z.B. Lastenausgleich und geografische Replikation, verwendet werden. Informationen über die Unterstützung von Django für andere Datenbanken finden Sie unter [Database setup (Datenbankeinrichtung)](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Sie können auch die [Azure SDK für Python](/python/azure/?view=azure-python) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs zu arbeiten.
+- Ändern Sie die App von SQLite in einen Datenspeicher auf Produktionsebene, wie z.B. MySQL, PostgreSQL und SQL Server (können alle in Azure gehostet werden). Wie in [When to use SQLite (Empfohlene Verwendung von SQLite)](https://www.sqlite.org/whentouse.html) (sqlite.org) beschrieben, ist SQLite hervorragend für Standorte mit niedrigem bis mittleren Verkehrsaufkommen und weniger als 100.000 Treffern/Tag geeignet, wird aber bei einem höheren Verkehrsaufkommen nicht empfohlen. Da SQLite zudem auf einen einzelnen Computer beschränkt ist, kann es nicht in jedem Szenario mit mehreren Servern, z.B. Lastenausgleich und geografische Replikation, verwendet werden. Informationen über die Unterstützung von Django für andere Datenbanken finden Sie unter [Database setup (Datenbankeinrichtung)](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Sie können auch die [Azure SDK für Python](/azure/python/) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs zu arbeiten.
 
 - Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure DevOps ein. Zusätzlich zur Arbeit mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie ein Azure DevOps-Projekt automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter [Erstellen einer CI/CD-Pipeline für Python mit dem Azure DevOps-Projekt](/azure/devops-project/azure-devops-project-python?view=vsts) sowie in der allgemeinen [Azure DevOps-Dokumentation](/azure/devops/?view=vsts).

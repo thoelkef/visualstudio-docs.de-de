@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6e96325edd3a17a09437e093590cc02a55504a5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777638"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825831"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
 Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert.
@@ -44,15 +44,15 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **GenerateFromSchema**
 
-     Optionaler **String**-Parameter.
+  Optionaler **String**-Parameter.
 
-     Gibt die Typen an, die aus dem angegebenen Schema generiert werden.
+  Gibt die Typen an, die aus dem angegebenen Schema generiert werden.
 
-     Geben Sie einen der folgenden Werte an, von denen jeder einer XSD-Option entspricht.
+  Geben Sie einen der folgenden Werte an, von denen jeder einer XSD-Option entspricht.
 
-    - **classes** - **/classes**
+  - **classes** -  **/classes**
 
-    - **dataset** - **/dataset**
+  - **dataset** -  **/dataset**
 
 - **Sprache**
 

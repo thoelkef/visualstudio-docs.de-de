@@ -1,23 +1,24 @@
 ---
 title: Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792230"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919355"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 
@@ -37,7 +38,7 @@ Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-
 
 ## <a name="optimizations"></a>Optimierungen
 
- Die folgenden Optionen geben Optimierungen an, die in einigen Fällen eine Programmdatei verkleinern kann, dazu führen, dass ein Programm schneller ausgeführt wird oder den Buildprozess beschleunigen können.
+Die folgenden Optionen geben Optimierungen an, die in einigen Fällen eine Programmdatei verkleinern kann, dazu führen, dass ein Programm schneller ausgeführt wird oder den Buildprozess beschleunigen können.
 
 **Überprüfungen auf Ganzzahlüberlauf entfernen**
 
@@ -51,11 +52,11 @@ Standardmäßig ist dieses Kontrollkästchen deaktiviert, um Compileroptimierung
 
  **DLL-Basisadresse**
 
- Dieses Textfeld zeigt die DLL-Standardbasisadresse im Hexadezimalformat an. Sie können dieses Textfeld in Klassenbibliotheks- und Steuerelementbibliotheksprojekten verwenden, um die Basisadresse anzugeben, die verwendet werden soll, wenn die DLL erstellt wird.
+Dieses Textfeld zeigt die DLL-Standardbasisadresse im Hexadezimalformat an. Sie können dieses Textfeld in Klassenbibliotheks- und Steuerelementbibliotheksprojekten verwenden, um die Basisadresse anzugeben, die verwendet werden soll, wenn die DLL erstellt wird.
 
  **Generieren von Debuginformationen**
 
- Wählen Sie aus der Liste **None** (Keine), **Full** (Vollständig) oder **pdb-only** (nur pdb) aus. **None** (Keine) gibt an, das keine Informationen zum Debuggen generiert werden. **Full** (Vollständig) gibt an, dass vollständige Debuginformationen generiert werden. **pdb-only** (Nur PDB-Dateien) gibt an, dass nur PDB-Debuginformationen generiert werden. Der Standardwert für diese Option ist **Full** (Vollständig).
+Wählen Sie aus der Liste **None** (Keine), **Full** (Vollständig) oder **pdb-only** (nur pdb) aus. **None** (Keine) gibt an, das keine Informationen zum Debuggen generiert werden. **Full** (Vollständig) gibt an, dass vollständige Debuginformationen generiert werden. **pdb-only** (Nur PDB-Dateien) gibt an, dass nur PDB-Debuginformationen generiert werden. Der Standardwert für diese Option ist **Full** (Vollständig).
 
 ## <a name="compilation-constants"></a>Kompilierungskonstanten
 
@@ -63,15 +64,15 @@ Bedingte Kompilierungskonstanten haben einen ähnlichen Effekt wie das Verwenden
 
  **DEBUG-Konstante definieren**
 
- In der Standardeinstellung ist diese Kontrollkästchen aktiviert und gibt an, dass eine DEBUG-Konstante festgelegt werden kann.
+In der Standardeinstellung ist diese Kontrollkästchen aktiviert und gibt an, dass eine DEBUG-Konstante festgelegt werden kann.
 
  **TRACE-Konstante definieren**
 
- In der Standardeinstellung ist diese Kontrollkästchen aktiviert und gibt an, dass eine TRACE-Konstante festgelegt werden kann.
+In der Standardeinstellung ist diese Kontrollkästchen aktiviert und gibt an, dass eine TRACE-Konstante festgelegt werden kann.
 
  **Benutzerdefinierte Konstanten**
 
- Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Einträge sind durch Kommas getrennt in der folgenden Form anzugeben: **Name1="Value1",Name2="Value2",Name3="Value3"**.
+Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Einträge sind durch Kommas getrennt in der folgenden Form anzugeben: **Name1="Value1",Name2="Value2",Name3="Value3"** .
 
 ## <a name="other-settings"></a>Weitere Einstellungen
 

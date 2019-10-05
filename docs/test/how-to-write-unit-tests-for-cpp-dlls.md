@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132166"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926665"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
- Es gibt einige Möglichkeiten, um DLL-Code zu testen, je nachdem, ob dieser die Funktionen exportiert, die Sie testen möchten. Wählen Sie eine der folgenden Methoden aus:
+Es gibt einige Möglichkeiten, um DLL-Code zu testen, je nachdem, ob dieser die Funktionen exportiert, die Sie testen möchten. Wählen Sie eine der folgenden Methoden aus:
 
- **Die Komponententests rufen nur Funktionen auf, die von der DLL exportiert werden:** Fügen Sie wie unter [Schreiben von Komponententests für C/C++ in Visual Studio](writing-unit-tests-for-c-cpp.md) beschrieben ein separates Testprojekt hinzu. Fügen Sie im Testprojekt einen Verweis auf das DLL-Projekt hinzu.
+**Die Komponententests rufen nur Funktionen auf, die von der DLL exportiert werden:** Fügen Sie wie unter [Schreiben von Komponententests für C/C++ in Visual Studio](writing-unit-tests-for-c-cpp.md) beschrieben ein separates Testprojekt hinzu. Fügen Sie im Testprojekt einen Verweis auf das DLL-Projekt hinzu.
 
- Rufen Sie die Prozedur [Verweisen auf exportierte Funktionen aus dem DLL-Projekt](#projectRef) auf.
+Rufen Sie die Prozedur [Verweisen auf exportierte Funktionen aus dem DLL-Projekt](#projectRef) auf.
 
- **Die DLL wird als EXE-Datei erstellt:** Fügen Sie ein separates Testprojekt hinzu. Verknüpfen Sie sie mit der Ausgabeobjektdatei.
+**Die DLL wird als EXE-Datei erstellt:** Fügen Sie ein separates Testprojekt hinzu. Verknüpfen Sie sie mit der Ausgabeobjektdatei.
 
- Rufen Sie die Prozedur [So verknüpfen Sie die Tests mit dem Objekt- oder Bibliotheksdateien](#objectRef).
+Rufen Sie die Prozedur [So verknüpfen Sie die Tests mit dem Objekt- oder Bibliotheksdateien](#objectRef).
 
- **Die Komponententests rufen Nicht-Member-Funktionen auf, die nicht von der DLL exportiert werden, und die DLL kann als statische Bibliothek erstellt werden:** Ändern Sie das DLL-Projekt so, dass es in eine *LIB*-Datei kompiliert wird. Fügen Sie ein separates Testprojekt hinzu, das auf das zu testende Projekt verweist.
+**Die Komponententests rufen Nicht-Member-Funktionen auf, die nicht von der DLL exportiert werden, und die DLL kann als statische Bibliothek erstellt werden:** Ändern Sie das DLL-Projekt so, dass es in eine *LIB*-Datei kompiliert wird. Fügen Sie ein separates Testprojekt hinzu, das auf das zu testende Projekt verweist.
 
- Diese Methode hat den Vorteil, dass Ihre Tests nicht exportierte Members verwenden, aber dennoch in einem separaten Projekt verbleiben können.
+Diese Methode hat den Vorteil, dass Ihre Tests nicht exportierte Members verwenden, aber dennoch in einem separaten Projekt verbleiben können.
 
- Rufen Sie die Prozedur [To change the DLL to a static library (Ändern der DLL in eine statische Bibliothek)](#staticLink) auf.
+Rufen Sie die Prozedur [To change the DLL to a static library (Ändern der DLL in eine statische Bibliothek)](#staticLink) auf.
 
- **Die Komponententests müssen nicht exportierte Nicht-Member-Funktionen aufrufen, und der Code muss als DLL (Dynamic Link Library) erstellt werden:** Fügen Sie Komponententests im gleichen Projekt wie den Produktcode hinzu.
+**Die Komponententests müssen nicht exportierte Nicht-Member-Funktionen aufrufen, und der Code muss als DLL (Dynamic Link Library) erstellt werden:** Fügen Sie Komponententests im gleichen Projekt wie den Produktcode hinzu.
 
- Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt hinzu](#sameProject).
+Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt hinzu](#sameProject).
 
 ## <a name="create-the-tests"></a>Erstellen der Tests
 
@@ -93,7 +93,7 @@ ms.locfileid: "67132166"
       1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
       1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.

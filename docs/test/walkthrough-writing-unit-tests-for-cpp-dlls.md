@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132154"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661899"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -88,7 +88,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2019 erstellen.
 
-1. Erstellen Sie ein C++-Projekt mithilfe des **Windows-Desktopassistenten**: Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Namen der Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus. Legen Sie die **Sprache** auf C++ fest, und geben Sie dann im Suchfeld „windows“ ein. Wählen Sie in der Ergebnisliste **Windows-Desktopassistent** aus. 
+1. Erstellen Sie ein C++-Projekt mithilfe des **Windows-Desktopassistenten**: Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Namen der Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus. Legen Sie die **Sprache** auf C++ fest, und geben Sie dann im Suchfeld „windows“ ein. Wählen Sie in der Ergebnisliste **Windows-Desktopassistent** aus.
 
      In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.
 
@@ -321,10 +321,21 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 
 6. Alle Tests sind nun erfolgreich.
 
-     ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
+   ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
+
+::: moniker range="vs-2017"
 
 > [!TIP]
 > Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Wenn einzelne Tests keine Abhängigkeiten aufweisen, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über das Eigenschaftenmenü auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+
+::: moniker-end
 
 ## <a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern
 
@@ -353,7 +364,7 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 
 - **Einchecktests.** Sie können festlegen, dass mehrere Tests ausgeführt werden, bevor jedes Teammitglied Code in die Quellcodeverwaltung eincheckt. In der Regel ist dies eine Teilmenge des vollständigen Satzes von Buildüberprüfungstests.
 
-     Sie können auch eine Untergrenze der Codeabdeckung vorgeben.
+   Sie können auch eine Untergrenze der Codeabdeckung vorgeben.
 
 ## <a name="see-also"></a>Siehe auch
 

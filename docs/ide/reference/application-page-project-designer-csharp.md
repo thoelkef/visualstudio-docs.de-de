@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160056"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551432"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 
@@ -105,6 +105,8 @@ Legt die *ICO*-Datei fest, die als Programmsymbol verwendet werden soll. Klicken
 
 Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
+Weitere Informationen zum Erstellen eines Symbols finden Sie unter [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons).
+
 **Manifest**
 
 Aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista unter Benutzerkontensteuerung (UAC) ausgeführt wird. Diese Option kann die folgenden Werte aufweisen:
@@ -120,3 +122,5 @@ Aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista 
 Wählen Sie dieses Optionsfeld aus, wenn Sie eine Ressourcendatei für das Projekt bereitstellen. Durch Auswahl dieser Option, werden die Optionen **Symbol** und **Manifest** deaktiviert.
 
 Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen ( **...** ), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.
+
+Weitere Informationen finden Sie unter [Erstellen von Ressourcendateien für .NET-Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

@@ -1,7 +1,7 @@
 ---
 title: Behandlung von Installationsproblemen oder Problemen beim Upgrade
 description: Manchmal kann etwas schiefgehen. Wenn die Installation oder das Upgrade von Visual Studio fehlschlägt, kann diese Seite Ihnen helfen.
-ms.date: 03/30/2019
+ms.date: 09/13/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997444"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062815"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern
 
@@ -29,9 +29,9 @@ ms.locfileid: "62997444"
 
 Dieser Leitfaden zur Problembehandlung enthält Schritt-für-Schritt-Anleitungen, mit denen sich die meisten Installationsprobleme beheben lassen sollten.
 
-## <a name="how-to-troubleshoot-an-online-installation"></a>Gewusst wie: Problembehandlung bei einer Onlineinstallation
+## <a name="online-installations"></a>Onlineinstallationen
 
-Dies folgenden Schritte sind für eine typische Onlineinstallation optimiert. Informationen zum Beheben von Problemen bei Offlineinstallationen finden Sie unter [Problembehandlung bei einer Offlineinstallation](#how-to-troubleshoot-an-offline-installation).
+Dies folgenden Schritte sind für eine typische Onlineinstallation optimiert. Informationen zum Beheben von Problemen bei Offlineinstallationen finden Sie unter [Problembehandlung bei einer Offlineinstallation](#offline-installations).
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Schritt 1: Prüfen, ob das Problem bekannt ist
 
@@ -71,7 +71,7 @@ Der Visual Studio-Installer-Bootstrapper ist eine kleine schlanke ausführbare D
 
 1. Schließen Sie den Visual Studio-Installer.
 2. Löschen Sie das Visual Studio-Installer-Verzeichnis. Das Verzeichnis ist in der Regel `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Führen Sie den Visual Studio-Installer-Bootstrapper aus. Den Bootstrapper finden Sie ggf. in Ihrem Ordner „Downloads“ mit einem Dateiname mit dem Muster `vs_[Visual Studio edition]__*.exe`. Wenn Sie die Anwendung nicht finden, können Sie den Bootstrapper herunterladen, indem Sie die [Visual Studio-Seite „Downloads“](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) aufrufen und dann für Ihre Edition von Visual Studio auf **Herunterladen** klicken. Führen Sie anschließend diese ausführbare Datei aus, um die Metadaten für Ihre Installation zurückzusetzen.
+3. Führen Sie den Visual Studio-Installer-Bootstrapper aus. Den Bootstrapper finden Sie ggf. in Ihrem Ordner „Downloads“ mit einem Dateiname mit dem Muster `vs_[Visual Studio edition]__*.exe`. Wenn Sie die Anwendung nicht finden, können Sie den Bootstrapper herunterladen, indem Sie die [Visual Studio-Seite „Downloads“](https://visualstudio.microsoft.com/downloads) aufrufen und dann für Ihre Edition von Visual Studio auf **Herunterladen** klicken. Führen Sie anschließend diese ausführbare Datei aus, um die Metadaten für Ihre Installation zurückzusetzen.
 4. Versuchen Sie, Visual Studio erneut zu installieren oder zu aktualisieren. Wenn beim Installer weiterhin ein Fehler auftritt, fahren Sie mit dem nächsten Schritt fort.
 
 ::: moniker-end
@@ -82,7 +82,7 @@ In einigen Situationen, z. B. bei beschädigten Dateien, müssen die Probleme gg
 
 ::: moniker range="vs-2017"
 
-1. Sammeln Sie Ihre Setupprotokolle. Nähere Informationen finden Sie unter [Abrufen der Visual Studio-Installationsprotokolle](#how-to-get-visual-studio-installation-logs).
+1. Sammeln Sie Ihre Setupprotokolle. Nähere Informationen finden Sie unter [Abrufen der Visual Studio-Installationsprotokolle](#installation-logs).
 2. Öffnen Sie den Visual Studio-Installer, und klicken Sie dann auf **Problem melden**, um das Visual Studio-Feedbacktool zu öffnen.
 ![Sie können zur Schaltfläche „Feedback geben“ navigieren, um das Feedbacktool zu öffnen](media/report-a-problem.png)
 3. Versehen Sie Ihren Problembericht mit einem Titel, und geben Sie relevante Details an. Klicken Sie auf **Weiter**, um zum Abschnitt **Anlagen** zu wechseln. Fügen Sie die generierte Protokolldatei an (in der Regel befindet sich die Datei unter `%TEMP%\vslogs.zip`).
@@ -92,7 +92,7 @@ In einigen Situationen, z. B. bei beschädigten Dateien, müssen die Probleme gg
 
 ::: moniker range="vs-2019"
 
-1. Sammeln Sie Ihre Setupprotokolle. Nähere Informationen finden Sie unter [Abrufen der Visual Studio-Installationsprotokolle](#how-to-get-visual-studio-installation-logs).
+1. Sammeln Sie Ihre Setupprotokolle. Nähere Informationen finden Sie unter [Abrufen der Visual Studio-Installationsprotokolle](#installation-logs).
 2. Öffnen Sie den Visual Studio-Installer, und klicken Sie dann auf **Problem melden**, um das Visual Studio-Feedbacktool zu öffnen.
 ![Sie können zur Schaltfläche „Feedback geben“ navigieren, um das Feedbacktool zu öffnen](media/vs-2019/vs-installer-report-problem.png)
 3. Versehen Sie Ihren Problembericht mit einem Titel, und geben Sie relevante Details an. Klicken Sie auf **Weiter**, um zum Abschnitt **Anlagen** zu wechseln. Fügen Sie die generierte Protokolldatei an (in der Regel befindet sich die Datei unter `%TEMP%\vslogs.zip`).
@@ -112,16 +112,18 @@ Als letzten Ausweg können Sie [Visual Studio entfernen](remove-visual-studio.md
 
 Wenn Ihnen keiner der vorherigen Schritte zu einer erfolgreichen Installation oder einem erfolgreichen Upgrade von Visual Studio verholfen hat, setzen Sie sich über unsere [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous)-Supportoption (nur englischsprachig) mit uns in Verbindung, um weitere Hilfe zu erhalten.
 
-## <a name="how-to-troubleshoot-an-offline-installation"></a>Gewusst wie: Problembehandlung bei einer Offlineinstallation
+## <a name="offline-installations"></a>Offlineinstallationen
 
-Es folgt eine Tabelle mit bekannten Problemen und einigen Problemumgehungen, die bei Installationen in einem lokalen Layout helfen können.
+Es folgt eine Tabelle mit bekannten Problemen und einigen Problemumgehungen, die Sie bei der [Offlineinstallation](create-an-offline-installation-of-visual-studio.md) und der anschließenden Installation über eine lokale Umgebung unterstützen können.
 
 | Problem       | Element                   | Lösung |
 | ----------- | ---------------------- | -------- |
 | Benutzer haben keinen Zugriff auf Dateien. | Berechtigungen (ACLs) | Stellen Sie sicher, dass Sie die Berechtigungen (ACLs) so anpassen, dass anderen Benutzern Lesezugriff erteilt wird, *bevor* Sie die Offlineinstallation freigeben. |
 | Neue Arbeitslasten, Komponenten oder Sprachen werden nicht installiert.  | `--layout`  | Stellen Sie sicher, dass Sie über Internetzugriff verfügen, wenn Sie eine Installation aus einem partiellen Layout heraus ausführen und Arbeitsauslastungen, Komponenten oder Sprachen auswählen, die nicht zuvor in diesem partiellen Layout heruntergeladen wurden. |
 
-## <a name="how-to-get-visual-studio-installation-logs"></a>Gewusst wie: Abrufen der Visual Studio-Installationsprotokolle
+Weitere Informationen zur Problembehandlung bei einer [Netzwerkinstallation](create-a-network-installation-of-visual-studio.md) finden Sie unter [Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
+
+## <a name="installation-logs"></a>Installationsprotokolle
 
 Setupprotokolle sind zum Beheben der meisten Installationsprobleme nicht erforderlich. Wenn Sie ein Problem mit [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md) im Visual Studio-Installer melden, werden diese Protokolle automatisch in Ihren Bericht einbezogen.
 
@@ -137,7 +139,7 @@ So erfassen Sie die Protokolle:
 > [!NOTE]
 > Das Tool muss unter dem gleichen Benutzerkonto ausgeführt werden, unter dem die fehlgeschlagene Installation ausgeführt wurde. Wenn Sie das Tool in einem anderen Benutzerkonto ausführen, legen Sie die Option `–user:<name>` fest, um das Benutzerkonto anzugeben, unter dem die fehlgeschlagene Installation ausgeführt wurde. Führen Sie `Collect.exe -?` in einer Eingabeaufforderung als Administrator für zusätzliche Optionen und Nutzungsinformationen aus.
 
-## <a name="get-live-help"></a>Anfordern von Live-Hilfe
+## <a name="live-help"></a>Livehilfe
 
 Wenn die in diesem Leitfaden zur Problembehandlung aufgeführten Lösungen Ihnen nicht zu einer erfolgreichen Installation oder einem erfolgreichen Upgrade von Visual Studio verholfen haben, verwenden Sie unsere [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous)-Supportoption (nur englischsprachig), um weitere Hilfe zu erhalten.
 

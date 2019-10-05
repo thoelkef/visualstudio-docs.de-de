@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb870bcc3c4297d5d1b403176f931f75e418d423
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149712"
 ---
 # <a name="formaturl-task"></a>FormatUrl-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Konvertiert eine URL in ein gültiges URL-Format
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `FormatUrl` -Aufgabe beschrieben.  
   
-|Parameter|Beschreibung|  
+|Parameter|BESCHREIBUNG|  
 |---------------|-----------------|  
 |`InputUrl`|Optionaler `String` -Parameter.<br /><br /> Gibt die zu formatierende URL an|  
 |`OutputUrl`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die formatierte URL an|  

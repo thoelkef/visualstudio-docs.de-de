@@ -1,80 +1,83 @@
 ---
 title: Seite "Veröffentlichen", Projekt-Designer
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968889"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926167"
 ---
 # <a name="publish-page-project-designer"></a>Seite "Veröffentlichen", Projekt-Designer
+
 Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet.
 
- Wählen Sie zum Aufrufen der Seite **Veröffentlichen** im **Projektmappenexplorer**einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** .
+Wählen Sie zum Aufrufen der Seite **Veröffentlichen** im **Projektmappenexplorer**einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** .
 
 > [!NOTE]
 > Einige der hier beschriebenen ClickOnce-Eigenschaften können auch im **Veröffentlichungs-Assistent** festgelegt werden, der im Menü **Erstellen** verfügbar ist, oder durch Klicken auf die Schaltfläche**Veröffentlichungs-Assistent** auf dieser Seite.
 
 ## <a name="uielement-list"></a>UIElement-Liste
+
  **Pfad des Veröffentlichungsordners**
 
- Gibt den Speicherort an, in dem die Anwendung veröffentlicht wird. Dies kann ein Pfad zum Laufwerk (`C:\deploy\myapplication`), eine Dateifreigabe (`\\server\myapplication`) oder ein FTP-Server (`ftp://ftp.microsoft.com/myapplication`) sein. Beachten Sie, dass im Feld **Ort der Veröffentlichung** Text angegeben sein muss, damit die Schaltfläche zum Durchsuchen (**...**) funktioniert.
+Gibt den Speicherort an, in dem die Anwendung veröffentlicht wird. Dies kann ein Pfad zum Laufwerk (`C:\deploy\myapplication`), eine Dateifreigabe (`\\server\myapplication`) oder ein FTP-Server (`ftp://ftp.microsoft.com/myapplication`) sein. Beachten Sie, dass im Feld **Ort der Veröffentlichung** Text angegeben sein muss, damit die Schaltfläche zum Durchsuchen ( **...** ) funktioniert.
 
  **URL des Installationsordners**
 
- Dies ist optional. Gibt eine Website an, auf die der Benutzer zugreift, um die Anwendung zu installieren. Dies ist nur erforderlich, wenn sie sich vom **Veröffentlichungsort**unterscheidet, wenn z.B. die Anwendung auf einem Stagingserver veröffentlicht wird.
+Optional. Gibt eine Website an, auf die der Benutzer zugreift, um die Anwendung zu installieren. Dies ist nur erforderlich, wenn sie sich vom **Veröffentlichungsort**unterscheidet, wenn z.B. die Anwendung auf einem Stagingserver veröffentlicht wird.
 
  **Installationsmodus und -einstellungen**
 
- Bestimmt, ob die Anwendung direkt auf dem **Veröffentlichungsort** ausgeführt wird (wenn **Anwendung ist nur online verfügbar** ausgewählt ist) oder installiert und auf dem Menü **Start** sowie dem Untermenü **Programme hinzufügen oder entfernen** der **Systemsteuerung** hinzugefügt wird (wenn **Die Anwendung ist auch offline verfügbar** ausgewählt ist).
+Bestimmt, ob die Anwendung direkt auf dem **Veröffentlichungsort** ausgeführt wird (wenn **Anwendung ist nur online verfügbar** ausgewählt ist) oder installiert und auf dem Menü **Start** sowie dem Untermenü **Programme hinzufügen oder entfernen** der **Systemsteuerung** hinzugefügt wird (wenn **Die Anwendung ist auch offline verfügbar** ausgewählt ist).
 
- Für WPF-Webbrowseranwendungen ist die Option **Anwendung ist auch offline verfügbar** deaktiviert, da Anwendungen dieser Art nur online verfügbar sind.
+Für WPF-Webbrowseranwendungen ist die Option **Anwendung ist auch offline verfügbar** deaktiviert, da Anwendungen dieser Art nur online verfügbar sind.
 
  **Anwendungsdateien**
 
- Öffnet das Dialogfeld „Anwendungsdateien“, mit dem angegeben wird, wie und wo einzelne Dateien installiert sind
+Öffnet das Dialogfeld „Anwendungsdateien“, mit dem angegeben wird, wie und wo einzelne Dateien installiert sind
 
  **Erforderliche Komponenten**
 
- Öffnet das Dialogfeld „Erforderliche Komponenten“, mit dem erforderliche Komponenten wie das .NET Framework angegeben werden, die zusammen mit dieser Anwendung installiert werden
+Öffnet das Dialogfeld „Erforderliche Komponenten“, mit dem erforderliche Komponenten wie das .NET Framework angegeben werden, die zusammen mit dieser Anwendung installiert werden
 
  **Updates**
 
- Öffnet das Dialogfeld „Anwendungsupdates“, mit dem das Updateverhalten der Anwendung angegeben wird. Dieses Element ist nicht verfügbar, wenn **Anwendung ist nur online verfügbar** ausgewählt ist.
+Öffnet das Dialogfeld „Anwendungsupdates“, mit dem das Updateverhalten der Anwendung angegeben wird. Dieses Element ist nicht verfügbar, wenn **Anwendung ist nur online verfügbar** ausgewählt ist.
 
  **Optionen**
 
- Öffnet das Dialogfeld „Veröffentlichungsoptionen“, mit dem zusätzliche erweiterte Veröffentlichungsoptionen angegeben werden
+Öffnet das Dialogfeld „Veröffentlichungsoptionen“, mit dem zusätzliche erweiterte Veröffentlichungsoptionen angegeben werden
 
  **Veröffentlichungsversion**
 
- Legt die Veröffentlichungsversionsnummer für die Anwendung fest. Wird die Versionsnummer geändert, wird die Anwendung als Update veröffentlicht. Jeder Teil der Veröffentlichungsversion (**Hauptversion**, **Nebenversion**, **Build**, **Revision**) kann den Maximalwert 65355 (<xref:System.UInt16.MaxValue>) haben, d.h. das von <xref:System.Version> zugelassene Maximum.
+Legt die Veröffentlichungsversionsnummer für die Anwendung fest. Wird die Versionsnummer geändert, wird die Anwendung als Update veröffentlicht. Jeder Teil der Veröffentlichungsversion (**Hauptversion**, **Nebenversion**, **Build**, **Revision**) kann den Maximalwert 65355 (<xref:System.UInt16.MaxValue>) haben, d.h. das von <xref:System.Version> zugelassene Maximum.
 
- Wenn Sie mit ClickOnce mehrere Versionen einer Anwendung installieren, verschiebt die Installation ältere Versionen der Anwendung in einen Ordner mit dem Namen Archiv in dem von Ihnen angegebenen Veröffentlichungsort. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.
+Wenn Sie mit ClickOnce mehrere Versionen einer Anwendung installieren, verschiebt die Installation ältere Versionen der Anwendung in einen Ordner mit dem Namen Archiv in dem von Ihnen angegebenen Veröffentlichungsort. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.
 
  **Revisionsnummer automatisch mit jeder Veröffentlichung erhöhen**
 
- Dies ist optional. Wenn diese Option ausgewählt ist (Standardeinstellung), wird der Teil **Revision** der Veröffentlichungsversionsnummer bei jeder Veröffentlichung der Anwendung um eins erhöht. Dies bewirkt, dass die Anwendung als Update veröffentlicht wird.
+Optional. Wenn diese Option ausgewählt ist (Standardeinstellung), wird der Teil **Revision** der Veröffentlichungsversionsnummer bei jeder Veröffentlichung der Anwendung um eins erhöht. Dies bewirkt, dass die Anwendung als Update veröffentlicht wird.
 
  **Veröffentlichungs-Assistent**
 
- Öffnet den Veröffentlichungs-Assistenten. Die Fertigstellung des Veröffentlichungs-Assistenten hat dieselbe Wirkung wie das Ausführen des Befehls **Veröffentlichen** im Menü **Erstellen** .
+Öffnet den Veröffentlichungs-Assistenten. Die Fertigstellung des Veröffentlichungs-Assistenten hat dieselbe Wirkung wie das Ausführen des Befehls **Veröffentlichen** im Menü **Erstellen** .
 
  **Jetzt veröffentlichen**
 
- Veröffentlicht die Anwendung mithilfe der aktuellen Einstellungen. Entspricht der Schaltfläche **Fertigstellen** im **Veröffentlichungs-Assistenten**.
+Veröffentlicht die Anwendung mithilfe der aktuellen Einstellungen. Entspricht der Schaltfläche **Fertigstellen** im **Veröffentlichungs-Assistenten**.
 
 ## <a name="see-also"></a>Siehe auch
 

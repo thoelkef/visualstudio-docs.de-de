@@ -1,6 +1,7 @@
 ---
 title: Seite "Signierung", Projekt-Designer
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -14,82 +15,85 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d4fa326d65606fd06d41fc5c697b80a526c1059
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950538"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461294"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
+
 Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendungs- und Bereitstellungsmanifeste zu signieren. Außerdem können sie damit die Assembly signieren (Signierung mit starkem Namen).
 
- Bitte beachten Sie, dass das Signieren von Anwendungs- und Bereitstellungsmanifesten sich vom Signieren von Assemblys unterscheidet, obwohl beide Aufgaben von der Seite **Signierung** aus durchgeführt werden.
+Bitte beachten Sie, dass das Signieren von Anwendungs- und Bereitstellungsmanifesten sich vom Signieren von Assemblys unterscheidet, obwohl beide Aufgaben von der Seite **Signierung** aus durchgeführt werden.
 
- Außerdem unterscheidet sich das Speichern von Schlüsseldateiinformationen für das Signieren von Manifesten von dem von Assemblys. Bei der Signierung von Manifesten werden Schlüsselinformationen in der kryptografischen Speicherdatenbank ihres Computers und dem Windows-Zertifikat des aktuellen Benutzers gespeichert. Bei der Signierung von Assemblys werden Schlüsselinformationen hingegen nur in der kryptografischen Speicherdatenbank Ihres Computers gespeichert.
+Außerdem unterscheidet sich das Speichern von Schlüsseldateiinformationen für das Signieren von Manifesten von dem von Assemblys. Bei der Signierung von Manifesten werden Schlüsselinformationen in der kryptografischen Speicherdatenbank ihres Computers und dem Windows-Zertifikat des aktuellen Benutzers gespeichert. Bei der Signierung von Assemblys werden Schlüsselinformationen hingegen nur in der kryptografischen Speicherdatenbank Ihres Computers gespeichert.
 
- Wählen Sie zum Aufrufen der Seite **Signierung** im **Projektmappenexplorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Signierung**.
+Wählen Sie zum Aufrufen der Seite **Signierung** im **Projektmappenexplorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Signierung**.
 
 ## <a name="application-and-deployment-manifest-signing"></a>Signierung von Anwendungs- und Bereitstellungsmanifesten
- Kontrollkästchen **ClickOnce-Manifeste signieren**
 
- Setzen Sie in diesem Kontrollkästchen ein Häkchen, wenn Sie Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen bzw. privaten Schlüsselpaar signieren möchten. Weitere Informationen hierzu finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md).
+Kontrollkästchen **ClickOnce-Manifeste signieren**
 
- Schaltfläche **Aus Speicher auswählen**
+Setzen Sie in diesem Kontrollkästchen ein Häkchen, wenn Sie Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen bzw. privaten Schlüsselpaar signieren möchten. Weitere Informationen hierzu finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
- Gibt Ihnen die Möglichkeit, ein vorhandenes Zertifikat aus dem persönlichen Zertifikatspeicher des aktuellen Benutzers auszuwählen. Eines dieser Zertifikate können Sie für die Signierung Ihrer Anwendungs- und Bereitstellungsmanifeste benutzen.
+Schaltfläche **Aus Speicher auswählen**
 
- Wenn Sie auf **Aus Speicher auswählen** klicken, wird das Dialogfeld **Zertifikat auswählen** geöffnet, in dem die Zertifikate in Ihrem persönlichen Zertifikatspeicher aufgelistet werden, die aktuell gültig – d.h. nicht abgelaufen – sind, und die private Schlüssel aufweisen. Der Zweck des von Ihnen ausgewählten Zertifikats sollte eine Codesignatur enthalten.
+Gibt Ihnen die Möglichkeit, ein vorhandenes Zertifikat aus dem persönlichen Zertifikatspeicher des aktuellen Benutzers auszuwählen. Eines dieser Zertifikate können Sie für die Signierung Ihrer Anwendungs- und Bereitstellungsmanifeste benutzen.
 
- Wenn Sie auf **Zertifikateigenschaften anzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** geöffnet. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Sie können auf **Learn more about certificates (Weitere Informationen zu Zertifikaten)** klicken, um weitere Hilfeinformationen anzuzeigen.
+Wenn Sie auf **Aus Speicher auswählen** klicken, wird das Dialogfeld **Zertifikat auswählen** geöffnet, in dem die Zertifikate in Ihrem persönlichen Zertifikatspeicher aufgelistet werden, die aktuell gültig – d.h. nicht abgelaufen – sind, und die private Schlüssel aufweisen. Der Zweck des von Ihnen ausgewählten Zertifikats sollte eine Codesignatur enthalten.
 
- Schaltfläche **Aus Datei auswählen**
+Wenn Sie auf **Zertifikateigenschaften anzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** geöffnet. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Sie können auf **Learn more about certificates (Weitere Informationen zu Zertifikaten)** klicken, um weitere Hilfeinformationen anzuzeigen.
 
- Gibt Ihnen die Möglichkeit, ein Zertifikat aus einer vorhandenen Schlüsseldatei auszuwählen.
+Schaltfläche **Aus Datei auswählen**
 
- Wenn Sie auf **Aus Datei auswählen** klicken, öffnet sich das Dialogfeld **Datei auswählen**, über das Sie eine Zertifikatschlüsseldatei (.pfx) auswählen können. Die Datei muss kennwortgeschützt sein und darf sich nicht bereits in Ihrem persönlichen Zertifikatspeicher befinden.
+Gibt Ihnen die Möglichkeit, ein Zertifikat aus einer vorhandenen Schlüsseldatei auszuwählen.
 
- Geben Sie im Dialogfeld **Kennwort zum Öffnen der Datei eingeben** ein Kennwort ein, um die Zertifikatschlüsseldatei (.pfx) zu öffnen. Informationen zum Kennwort sind in Ihrer persönlichen Schlüsselcontainerliste und Ihrem persönlichen Zertifikatspeicher gespeichert.
+Wenn Sie auf **Aus Datei auswählen** klicken, öffnet sich das Dialogfeld **Datei auswählen**, über das Sie eine Zertifikatschlüsseldatei (.pfx) auswählen können. Die Datei muss kennwortgeschützt sein und darf sich nicht bereits in Ihrem persönlichen Zertifikatspeicher befinden.
 
- Schaltfläche **Testzertifikat erstellen**
+Geben Sie im Dialogfeld **Kennwort zum Öffnen der Datei eingeben** ein Kennwort ein, um die Zertifikatschlüsseldatei (.pfx) zu öffnen. Informationen zum Kennwort sind in Ihrer persönlichen Schlüsselcontainerliste und Ihrem persönlichen Zertifikatspeicher gespeichert.
 
- Gibt Ihnen die Möglichkeit, ein Testzertifikat zu erstellen. Das Testzertifikat wird für die Signierung Ihrer ClickOnce-Anwendungs- und Bereitstellungsmanifesten verwendet.
+Schaltfläche **Testzertifikat erstellen**
 
- Wenn Sie auf **Testzertifikat erstellen** klicken, wird das Dialogfeld **Testzertifikat erstellen** aufgerufen, wo Sie ein Kennwort für die Schlüsseldatei mit starkem Namen für das Testzertifikat eingeben können. Die Datei heißt *Projektname*_TemporaryKey.pfx. Wenn Sie auf **OK** klicken, ohne ein Kennwort einzugeben, ist die .pfx-Datei nicht kennwortverschlüsselt.
+Gibt Ihnen die Möglichkeit, ein Testzertifikat zu erstellen. Das Testzertifikat wird für die Signierung Ihrer ClickOnce-Anwendungs- und Bereitstellungsmanifesten verwendet.
 
- Feld **Timestampserver-URL**
+Wenn Sie auf **Testzertifikat erstellen** klicken, wird das Dialogfeld **Testzertifikat erstellen** aufgerufen, wo Sie ein Kennwort für die Schlüsseldatei mit starkem Namen für das Testzertifikat eingeben können. Die Datei heißt *Projektname*_TemporaryKey.pfx. Wenn Sie auf **OK** klicken, ohne ein Kennwort einzugeben, ist die .pfx-Datei nicht kennwortverschlüsselt.
 
- Gibt die Adresse des Servers an, der Ihre Signatur mit einem Zeitstempel versieht. Wenn Sie ein Zertifikat bereitstellen, überprüft diese externe Seite den Zeitpunkt, zu dem die Anwendung signiert wurde.
+Feld **Timestampserver-URL**
+
+Gibt die Adresse des Servers an, der Ihre Signatur mit einem Zeitstempel versieht. Wenn Sie ein Zertifikat bereitstellen, überprüft diese externe Seite den Zeitpunkt, zu dem die Anwendung signiert wurde.
 
 ## <a name="assembly-signing"></a>Signieren von Assemblys
- Kontrollkästchen **Assembly signieren**
 
- Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe von **Projekt-Designer** finden Sie unter [Vorgehensweise: Signieren von Assemblys (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Kontrollkästchen **Assembly signieren**
 
- Diese Option verwendet das Tool „AI.exe“, das vom Windows Software Development Kit (SDK) zum Signieren der Assembly bereitgestellt wird. Weitere Informationen zu diesem Tool erhalten Sie im Artikel [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe von **Projekt-Designer** finden Sie unter [Vorgehensweise: Signieren von Assemblys (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Liste **Schlüsseldatei mit starkem Namen auswählen**
+Diese Option verwendet das Tool „AI.exe“, das vom Windows Software Development Kit (SDK) zum Signieren der Assembly bereitgestellt wird. Weitere Informationen zu diesem Tool erhalten Sie im Artikel [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
- Gibt Ihnen die Möglichkeit, eine neue oder bereits vorhandene Schlüsseldatei mit starkem Namen festzulegen, die verwendet wird, um die Assembly zu signieren. Wählen Sie **\<Browse...>** aus, um eine vorhandene Schlüsseldatei auszuwählen.
+Liste **Schlüsseldatei mit starkem Namen auswählen**
 
- Wählen Sie **\<New...>** aus, um eine neue Schlüsseldatei zu erstellen, mit der Sie die Assembly signieren können. Das Dialogfeld **Schlüssel für einen starken Namen erstellen** wird geöffnet, in dem Sie einen Namen für die Schlüsseldatei angeben und die Schlüsseldatei durch ein Kennwort schützen können. Das Kennwort muss mindestens eine Länge von 6 Zeichen aufweisen. Wenn Sie ein Kennwort angeben, wird eine Personal Information Exchange-Datei (.pfx) erstellt; wenn Sie kein Kennwort angeben, wird eine Schlüsseldatei mit starkem Namen (.snk) erstellt.
+Gibt Ihnen die Möglichkeit, eine neue oder bereits vorhandene Schlüsseldatei mit starkem Namen festzulegen, die verwendet wird, um die Assembly zu signieren. Wählen Sie **\<Browse...>** aus, um eine vorhandene Schlüsseldatei auszuwählen.
 
- Schaltfläche **Kennwort ändern**
+Wählen Sie **\<New...>** aus, um eine neue Schlüsseldatei zu erstellen, mit der Sie die Assembly signieren können. Das Dialogfeld **Schlüssel für einen starken Namen erstellen** wird geöffnet, in dem Sie einen Namen für die Schlüsseldatei angeben und die Schlüsseldatei durch ein Kennwort schützen können. Das Kennwort muss mindestens eine Länge von 6 Zeichen aufweisen. Wenn Sie ein Kennwort angeben, wird eine Personal Information Exchange-Datei (.pfx) erstellt; wenn Sie kein Kennwort angeben, wird eine Schlüsseldatei mit starkem Namen (.snk) erstellt.
 
- Ändert das Kennwort der Personal Information Exchange-Datei (.pfx), mit der Sie die Assembly signieren.
+Schaltfläche **Kennwort ändern**
 
- Wenn Sie auf **Kennwort ändern** klicken, wird das Dialogfeld **Schlüsselkenntwort ändern** geöffnet. In diesem Dialogfeld ist das **alte Kennwort** das aktuelle Kennwort der Schlüsseldatei. Das **neue Kennwort** muss mindestens eine Länge von 6 Zeichen aufweisen. Informationen zum Kennwort werden im Windows-Zertifikatspeicher des aktuellen Benutzers gespeichert.
+Ändert das Kennwort der Personal Information Exchange-Datei (.pfx), mit der Sie die Assembly signieren.
 
- Kontrollkästchen **Nur verzögerte Signierung**
+Wenn Sie auf **Kennwort ändern** klicken, wird das Dialogfeld **Schlüsselkenntwort ändern** geöffnet. In diesem Dialogfeld ist das **alte Kennwort** das aktuelle Kennwort der Schlüsseldatei. Das **neue Kennwort** muss mindestens eine Länge von 6 Zeichen aufweisen. Informationen zum Kennwort werden im Windows-Zertifikatspeicher des aktuellen Benutzers gespeichert.
 
- Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die verzögerte Signierung zu aktivieren.
+Kontrollkästchen **Nur verzögerte Signierung**
 
- Bitte beachten Sie, dass ein verzögert signiertes Projekt nicht ausgeführt wird und auch nicht debuggt werden kann. Allerdings können Sie das [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) mit der Option `-Vr` verwenden, um das Überprüfen während der Entwicklung zu überspringen.
+Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die verzögerte Signierung zu aktivieren.
+
+Bitte beachten Sie, dass ein verzögert signiertes Projekt nicht ausgeführt wird und auch nicht debuggt werden kann. Allerdings können Sie das [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) mit der Option `-Vr` verwenden, um das Überprüfen während der Entwicklung zu überspringen.
 
 > [!NOTE]
 > Beim Signieren einer Assembly haben Sie möglicherweise nicht immer Zugriff auf einen privaten Schlüssel. Eine Organisation kann z.B. ein streng geheim gehaltenes Schlüsselpaar verwenden, auf das Entwickler nicht täglich zugreifen können. Möglicherweise steht der öffentliche Schlüssel zur Verfügung, während der Zugriff auf den privaten Schlüssel nur einigen Wenigen erlaubt ist. In einem solchen Fall können Sie die *verzögerte* oder *Teilsignierung* verwenden, um den öffentlichen Schlüssel bereitzustellen. Dadurch wird das Hinzufügen des privaten Schlüssels solange verzögert, bis die Assembly übergeben wird.

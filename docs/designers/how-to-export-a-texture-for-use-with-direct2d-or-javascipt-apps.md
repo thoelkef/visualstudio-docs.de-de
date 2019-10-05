@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459204"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824611"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder JavaScript-Apps
 
@@ -25,11 +25,11 @@ In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:
 
 - Konfigurieren der Pipeline für Bildinhalte zur Generierung einer Textur, die in einer Direct2D- oder JavaScript-App verwenden werden kann.
 
-    - Generieren einer blockkomprimierten *DDS*-Datei.
+  - Generieren einer blockkomprimierten *DDS*-Datei.
 
-    - Generieren eines prämultiplizierten Alphas.
+  - Generieren eines prämultiplizierten Alphas.
 
-    - Generieren von Mipmaps deaktivieren.
+  - Generieren von Mipmaps deaktivieren.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Renderingkonventionen in Direct2D
 
@@ -39,11 +39,11 @@ Texturen, die im Direct2D-Kontext verwendet werden, müssen diesen internen Dire
 
 - Die Textur muss im *DDS*-Format angegeben werden, indem eines dieser Blockkomprimierungsformate verwendet wird:
 
-   - BC1_UNORM-Komprimierung
+  - BC1_UNORM-Komprimierung
 
-   - BC2_UNORM-Komprimierung
+  - BC2_UNORM-Komprimierung
 
-   - BC3_UNORM-Komprimierung
+  - BC3_UNORM-Komprimierung
 
 - Mipmaps werden nicht unterstützt.
 

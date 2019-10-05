@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181081"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59649558"
 ## <a name="reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften  
  In der folgenden Tabelle werden die vordefinierten [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Eigenschaften beschrieben.  
   
-|Eigenschaft|Beschreibung|Reserviert oder bekannt|  
+|Eigenschaft|BESCHREIBUNG|Reserviert oder bekannt|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Der absolute Pfad des Ordners, in dem sich die zurzeit verwendeten [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Binärdateien befinden (z.B. C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Diese Eigenschaft ist nützlich, wenn Sie auf Dateien im [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Verzeichnis verweisen müssen.<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein.|Reserviert|  
 |`MSBuildExtensionsPath`|Seit .NET Framework 4 gibt es keinen Unterschied zwischen den Standardwerten von `MSBuildExtensionsPath` und `MSBuildExtensionsPath32`. Sie können die Umgebungsvariable `MSBUILDLEGACYEXTENSIONSPATH` auf einen Wert ungleich NULL festlegen, um das Verhalten des Standardwerts von `MSBuildExtensionsPath` in früheren Versionen zu ermöglichen.<br /><br /> In .NET Framework 3.5 und Vorgängerversionen verweist der Standardwert von `MSBuildExtensionsPath` auf den Pfad des MSBuild-Unterordners unter dem Ordner "\Program Files\" oder "\Program Files (x86)", je nach Bitanzahl des aktuellen Prozesses. Bei einem 32-Bit-Prozess auf einem 64-Bit-Computer zeigt diese Eigenschaft beispielsweise auf den Ordner "\Programme (x86)". Bei einem 64-Bit-Prozess auf einem 64-Bit-Computer zeigt diese Eigenschaft auf den Ordner "\Programme".<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein.<br /><br /> Dieser Speicherort ist nützlich zum Ablegen benutzerdefinierter Zieldateien. Ihre Zieldateien können beispielsweise unter "\Programme\MSBuild\MyFiles\Northwind.targets" installiert sein und dann mithilfe des folgenden XML-Codes in Projektdateien importiert werden:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Bekannt|  

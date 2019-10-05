@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201731"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58959936"
  Um einen Verstoß gegen diese Regel zu beheben, stellen Sie der Eigenschaft eine Methode oder ändern Sie die Eigenschaft zum Zurückgeben einer Auflistung.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Attribute können Eigenschaften enthalten, die Arrays zurückgeben, aber Sie können keine Eigenschaften enthalten, die Auflistungen zurückgeben. Sie können eine Warnung, die für eine Eigenschaft eines Attributs ausgelöst wird, die von der [System.Attribute] abgeleitet ist unterdrücken (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) Klasse. Unterdrücken Sie andernfalls keine Warnung dieser Regel.
+ Attribute können Eigenschaften enthalten, die Arrays zurückgeben, aber Sie können keine Eigenschaften enthalten, die Auflistungen zurückgeben. Sie können eine Warnung unterdrücken, die für eine Eigenschaft eines Attributs ausgelöst wird, die die [System.Attribute abgeleitet wurden.] () abgeleitet wird<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) Klasse. Unterdrücken Sie andernfalls keine Warnung dieser Regel.
 
 ## <a name="example-violation"></a>Beispiel für einen Verstoß
 
@@ -70,7 +70,7 @@ ms.locfileid: "58959936"
 ### <a name="description"></a>Beschreibung
  Im folgenden Beispiel wird der Verstoß korrigiert, durch Ändern der Eigenschaft zum Zurückgeben einer
 
- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.
+ <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedCollection/cs/FxCop.Performance.PropertyArrayFixedCollection.cs#1)]

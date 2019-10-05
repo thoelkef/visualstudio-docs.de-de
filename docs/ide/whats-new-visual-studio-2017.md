@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583489"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925908"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -60,7 +60,7 @@ Die wichtigste Änderung beim Installieren von Visual Studio ist die neue Setupo
 
 Wählen Sie die benötigten Arbeitsauslastungen, und ändern Sie sie bei Bedarf.
 
- ![Visual Studio 2017-Setupdialogfeld](../install/media/install-visual-studio-enterprise.png)
+![Visual Studio 2017-Setupdialogfeld](../install/media/install-visual-studio-enterprise.png)
 
 Und Sie verfügen ferner über Optionen, um die Installation zu optimieren:
 
@@ -108,11 +108,11 @@ Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiteru
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen in Ihrer Liste bemerken:
 
-* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_**: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_** : Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_**: Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
+* ![Symbol „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_** : Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol „Installiert](media/vs2017ide-installedicon.png) **_Installiert_**: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol „Installiert](media/vs2017ide-installedicon.png) **_Installiert_** : Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu Ihrer Liste als **Roamed & Installed** (Roaming und Installation) hinzugefügt. Die Erweiterung wird dann zu Ihrer Roamingliste hinzugefügt, über die Sie auf diese über Ihren Computer zugreifen können.
@@ -178,7 +178,7 @@ Wir haben die Benutzerfreundlichkeit der Navigation verbessert, sodass Sie mit g
 
 * **Zur Implementierung wechseln** (**Strg**+**F12**) &ndash; Navigieren Sie von jedem Basistyp oder Member zu dessen verschiedenen Implementierungen.
 
-* **Go To All** (**Strg**+**T** oder **Strg**+**,**) &ndash; ( Gehe zu allen) Navigieren Sie direkt zu jeder beliebigen Datei-/Typ-/Member-/Symboldeklaration. Sie können die Ergebnisliste filtern oder die Abfragesyntax verwenden (z.B. „f Suchbegriff“ für Dateien, „t Suchbegriff“ für Typen usw.).
+* **Go To All** (**Strg**+**T** oder **Strg**+ **,** ) &ndash; ( Gehe zu allen) Navigieren Sie direkt zu jeder beliebigen Datei-/Typ-/Member-/Symboldeklaration. Sie können die Ergebnisliste filtern oder die Abfragesyntax verwenden (z.B. „f Suchbegriff“ für Dateien, „t Suchbegriff“ für Typen usw.).
 
   ![Verbesserte Option „Gehe zu allen“](media/vs2017ide-navigation-go-to.png)
 
@@ -262,7 +262,7 @@ Weitere Informationen finden Sie unter [Debug live ASP.NET apps using snappoints
 
 Universelle Windows-Plattform (UWP) ist die App-Plattform für Windows 10. Sie können Apps für UWP mit nur einem API-Satz, einem App-Paket und einem Store entwickeln, um alle Windows 10-Geräte (PC, Tablet, Smartphone, Xbox, HoloLens, Surface Hub usw.) zu erreichen. UWP unterstützt verschiedene Bildschirmgrößen und eine Vielzahl von Interaktionsmodellen, z.B. Fingereingabe, Maus und Tastatur, Gamecontroller oder Stifteingabe. Hinter UWP-Apps steht die Idee, dass Benutzer ihre Funktionen mobil auf ALLEN Geräten verwenden und jeweils das Gerät verwenden möchten, das am praktischsten und produktivsten für die vorliegende Aufgabe ist.
 
- ![Universelle Windows-Plattform](../cross-platform/media/uwp_coreextensions.png)
+![Universelle Windows-Plattform](../cross-platform/media/uwp_coreextensions.png)
 
 Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Windows 10-Geräte zu erstellen. Visual Studio 2017 stellt für jede Sprache eine Vorlage für UWP-Apps bereit, durch die Sie ein einzelnes Projekt für alle Geräte erstellen können. Wenn Ihre Arbeit abgeschlossen ist, können Sie ein App-Paket erstellen und dieses von Visual Studio aus an Microsoft Store übermitteln, um Ihre App für Kunden mit Windows 10-Geräten bereitzustellen.
 
@@ -367,7 +367,7 @@ Weitere Informationen finden Sie unter [Visual Studio Tools für KI](../ai/about
 Wir aktualisieren Visual Studio 2017 häufig mit neuen Features, die die Entwicklung immer weiter verbessern. Nachfolgend werden einige der wichtigsten Updates aufgeführt, die sich derzeit in der Phase der experimentellen Vorschau befinden:
 
 * **[Live Share:](https://visualstudio.microsoft.com/services/live-share/)** ein neues Tool, über das Sie eine Codebasis und deren Kontext für ein anderes Teammitglied freigeben können und direkt in Visual Studio eine sofortige bidirektionale Kollaboration erhalten. Mithilfe von Live Share können Ihre Teammitglieder ohne Probleme und auf sichere Weise ein Projekt, das Sie für sie freigegeben haben, lesen, bearbeiten und debuggen sowie darin navigieren.<br><br>Weitere Informationen finden Sie unter [Live Share FAQ (Häufig gestellte Fragen zu Live Share)](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**: eine neue Funktion zur Verbesserung der Softwareentwicklung unter Verwendung von KI. Dabei werden bessere kontextbezogene Codevervollständigungen zur Verfügung gestellt, Entwickler werden dabei unterstützt, gemäß den Mustern und Formatierungen ihres Teams zu codieren, versteckte Codeprobleme zu finden und Code Reviews auf die Bereiche zu beschränken, die wirklich wichtig sind. <br><br>Weitere Informationen finden Sie unter [IntelliCode FAQ (Häufig gestellte Fragen zu IntelliCode)](/visualstudio/intellicode/faq).
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** : eine neue Funktion zur Verbesserung der Softwareentwicklung unter Verwendung von KI. Dabei werden bessere kontextbezogene Codevervollständigungen zur Verfügung gestellt, Entwickler werden dabei unterstützt, gemäß den Mustern und Formatierungen ihres Teams zu codieren, versteckte Codeprobleme zu finden und Code Reviews auf die Bereiche zu beschränken, die wirklich wichtig sind. <br><br>Weitere Informationen finden Sie unter [IntelliCode FAQ (Häufig gestellte Fragen zu IntelliCode)](/visualstudio/intellicode/faq).
 
 Sie möchten mehr über unsere Pläne für Visual Studio 2017 erfahren? Weitere Informationen finden Sie auf der Seite [Visual Studio-Roadmap](/visualstudio/productinfo/vs2018-roadmap).
 
@@ -377,11 +377,11 @@ Und schauen Sie sich auch unsere neueste Version von [Visual Studio 2019](whats-
 
 Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedback unserer Kunden ernst nehmen. Es gibt den Anstoß zu vielen unserer Initiativen.
 
-Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen oder mehr über Optionen zur Produktunterstützung erfahren möchten, finden Sie weitere Informationen auf der Seite [Talk to Us (Sprechen Sie mit uns)](talk-to-us.md).
+Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen oder mehr über Optionen zur Produktunterstützung erfahren möchten, finden Sie weitere Informationen auf der Seite [Send us feedback](feedback-options.md) (Senden Sie uns Feedback).
 
 ### <a name="report-a-problem"></a>Problem melden
 
- Manchmal reicht eine Nachricht nicht aus, um das gesamte Ausmaß eines Problems, auf das Sie gestoßen sind, deutlich zu machen. Wenn Ihr Programm nicht mehr reagiert und Abstürze oder andere Leistungsprobleme auftreten, können Sie die Schritte zur Reproduktion und unterstützende Dateien (wie etwa Screenshots, Ablaufverfolgungsdateien und Heap-Dumpdateien) auf einfache Weise mithilfe des Tools **Problem melden** mit uns teilen. Weitere Informationen zur Verwendung dieses Tools finden Sie auf der Seite [Melden eines Problems](how-to-report-a-problem-with-visual-studio.md).
+Manchmal reicht eine Nachricht nicht aus, um das gesamte Ausmaß eines Problems, auf das Sie gestoßen sind, deutlich zu machen. Wenn Ihr Programm nicht mehr reagiert und Abstürze oder andere Leistungsprobleme auftreten, können Sie die Schritte zur Reproduktion und unterstützende Dateien (wie etwa Screenshots, Ablaufverfolgungsdateien und Heap-Dumpdateien) auf einfache Weise mithilfe des Tools **Problem melden** mit uns teilen. Weitere Informationen zur Verwendung dieses Tools finden Sie auf der Seite [Melden eines Problems](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Siehe auch
 

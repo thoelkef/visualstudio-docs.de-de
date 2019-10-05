@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47b7e703d811ff5dce421db103af89bb3a76512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b2ace5f6e51fc7a8d29faab14cc2332fd808f93
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796435"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231652"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: ServicedComponents nicht mit WebMethod markieren.
 
@@ -32,19 +32,19 @@ ms.locfileid: "62796435"
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode in einem Typ, der von erbt <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> ist mit markiert <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
+Eine Methode in einem Typ, der von <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> erbt, ist mit <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>markiert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-<xref:System.Web.Services.WebMethodAttribute> gilt für Methoden innerhalb eines XML-Webdiensts, die mit ASP.NET erstellt wurden. Dadurch kann die Methode von remote-Web-Clients aufgerufen. Die Methode und die Klasse muss öffentlich und Ausführung in einer ASP.NET-Webanwendung. <xref:System.EnterpriseServices.ServicedComponent> Typen von COM+-Anwendungen gehostet werden, und COM+-Dienste verwenden können. <xref:System.Web.Services.WebMethodAttribute> gilt nicht für <xref:System.EnterpriseServices.ServicedComponent> Typen, da sie nicht für die gleichen Szenarien vorgesehen sind. Insbesondere Hinzufügen des Attributs auf die <xref:System.EnterpriseServices.ServicedComponent> -Methode nicht, dass die Methode aufgerufen von remote-Web-Clients. Da <xref:System.Web.Services.WebMethodAttribute> und <xref:System.EnterpriseServices.ServicedComponent> Methode in Konflikt stehenden Verhalten und Anforderungen für den Kontext, Transaktionsfluss und das Verhalten der Methode werden in bestimmten Szenarien fehlerhaft.
+<xref:System.Web.Services.WebMethodAttribute>gilt für Methoden innerhalb eines XML-Webdiensts, die mit ASP.NET erstellt wurden. Dadurch kann die Methode von Remoteweb Clients aufgerufen werden. Die-Methode und die-Klasse müssen öffentlich sein und in einer ASP.NET-Webanwendung ausgeführt werden. <xref:System.EnterpriseServices.ServicedComponent>Typen werden von com+-Anwendungen gehostet und können com+-Dienste verwenden. <xref:System.Web.Services.WebMethodAttribute>wird nicht auf- <xref:System.EnterpriseServices.ServicedComponent> Typen angewendet, da Sie nicht für dieselben Szenarien vorgesehen sind. Insbesondere wird durch das Hinzufügen des <xref:System.EnterpriseServices.ServicedComponent> -Attributs zur-Methode nicht die Methode von Remoteweb Clients aufgerufen. Da <xref:System.Web.Services.WebMethodAttribute> und eine <xref:System.EnterpriseServices.ServicedComponent> Methode widersprüchliche Verhalten und Anforderungen für den Kontext-und Transaktions Fluss aufweisen, ist das Verhalten der Methode in einigen Szenarien falsch.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Attribut aus der <xref:System.EnterpriseServices.ServicedComponent> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das- <xref:System.EnterpriseServices.ServicedComponent> Attribut aus der-Methode.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel. Es gibt keine Szenarios, in denen eine Kombination aus diesen Elementen korrekt ist.
+Unterdrücken Sie keine Warnung dieser Regel. Es gibt keine Szenarios, in denen die Kombination dieser Elemente korrekt ist.
 
 ## <a name="see-also"></a>Siehe auch
 

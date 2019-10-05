@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85d168e97f422a3965096a334cb2a448406604f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797178"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233840"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Keine unnötigen Umwandlungen.
 
@@ -34,32 +34,32 @@ ms.locfileid: "62797178"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
-Eine Methode führt die doppelte Umwandlungen für eines der Argumente oder lokale Variablen.
+Eine Methode führt doppelte Umwandlungen für eines ihrer Argumente oder lokale Variablen aus.
 
-Für die vollständige Analyse durch diese Regel muss der getestete Assembly mit Debuginformationen erstellt werden, und die zugehörigen Programmdatenbankdatei (.pdb) muss verfügbar sein.
+Für eine vollständige Analyse dieser Regel muss die getestete Assembly mithilfe von Debuginformationen erstellt werden, und die zugehörige Programm Datenbankdatei (. pdb) muss verfügbar sein.
 
 ## <a name="rule-description"></a>Regelbeschreibung
-Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. Für explizite doppelte Umwandlungsvorgänge speichern Sie das Ergebnis der Umwandlung in eine lokale Variable, und verwenden Sie die lokale Variable anstelle der doppelten Umwandlungsvorgänge.
+Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. Speichern Sie bei expliziten doppelten Umwandlungs Vorgängen das Ergebnis der Umwandlung in einer lokalen Variablen, und verwenden Sie die lokale Variable anstelle der doppelten Umwandlungs Vorgänge.
 
-Wenn der C#- `is` Operator wird verwendet, um zu testen, ob die Umwandlung erfolgreich ist, bevor die eigentliche Umwandlung ausgeführt wird, sollten Sie erwägen, das Ergebnis der `as` Operator stattdessen. Dies bietet dieselbe Funktionalität ohne die implizite Umwandlung von ausgeführten Vorgang die `is` Operator. In c# 7.0 und höher verwenden die `is` -Operator mit [Musterabgleich](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) zum Überprüfen der typkonvertierung und wandeln Sie den Ausdruck auf eine Variable dieses Typs in einem Schritt.
+Wenn der C# `is` -Operator verwendet wird, um zu testen, ob die Umwandlung erfolgreich ist, bevor die tatsächliche Umwandlung ausgeführt wird, sollten `as` Sie stattdessen das Ergebnis des Operators testen. Dadurch wird die gleiche Funktionalität ohne den impliziten Umwandlungs Vorgang bereitstellt, der `is` vom-Operator ausgeführt wird. Oder verwenden Sie C# in 7,0 und höher den `is` -Operator mit [Muster](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) Abgleich, um die Typkonvertierung zu überprüfen und den Ausdruck in einem Schritt in eine Variable dieses Typs umzuwandeln.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung der Methode um die Anzahl der Cast-Vorgänge zu minimieren.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung der-Methode, um die Anzahl der Umwandlungs Vorgänge zu minimieren.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher, unterdrücken Sie eine Warnung dieser Regel, oder die Regel vollständig zu ignorieren, wenn Leistung nicht relevant ist.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken oder die Regel vollständig zu ignorieren, wenn die Leistung nicht relevant ist.
 
 ## <a name="examples"></a>Beispiele
- Das folgende Beispiel zeigt eine Methode, die die Regel verletzen, mit der C#- `is` Operator. Eine zweite Methode entspricht die Regel durch Ersetzen der `is` Operator in einem Test für das Ergebnis der `as` -Operator, der verringert die Anzahl der Cast-Vorgänge pro Iteration von zwei auf einen. Eine dritte Methode führt die Regel auch mithilfe `is` mit [Musterabgleich](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) , eine Variable des gewünschten Typs zu erstellen, wenn die Konvertierung erfolgreich ausgeführt werden würde.
+Das folgende Beispiel zeigt eine Methode, die die Regel mit dem C# `is` -Operator verletzt. Eine zweite Methode erfüllt die Regel, indem der `is` -Operator durch einen Test für das Ergebnis `as` des-Operators ersetzt wird, wodurch die Anzahl von Umwandlungs Vorgängen pro Iterationen von zwei auf 1 verringert wird. Eine dritte Methode erfüllt die Regel auch, indem `is` mit dem [Muster](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) Vergleich verwendet wird, um eine Variable des gewünschten Typs zu erstellen, wenn die Typkonvertierung erfolgreich war.
 
- [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
+[!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
- Das folgende Beispiel zeigt eine Methode, `start_Click`, besitzt mehrere doppelte explizite Umwandlungen, die gegen die Regel, und eine Methode, `reset_Click`, die der Regel entspricht, durch die Umwandlung in eine lokale Variable zu speichern.
+Das folgende Beispiel zeigt die-Methode `start_Click`, die über mehrere doppelte explizite Umwandlungen verfügt, die gegen die Regel verstoßen, und `reset_Click`eine Methode,, die die Regel erfüllt, indem die Umwandlung in einer lokalen Variablen gespeichert wird.
 
- [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
- [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
+[!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
+[!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
 
 ## <a name="see-also"></a>Siehe auch
 
-- [As (C#-Referenz)](/dotnet/csharp/language-reference/keywords/as)
-- [is (C#-Referenz)](/dotnet/csharp/language-reference/keywords/is)
+- [AS (C# Referenz)](/dotnet/csharp/language-reference/keywords/as)
+- [is (C# Reference)](/dotnet/csharp/language-reference/keywords/is)

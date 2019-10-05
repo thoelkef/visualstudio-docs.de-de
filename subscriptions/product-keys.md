@@ -1,18 +1,17 @@
 ---
 title: Verwenden von Product Keys | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/20/2019
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
-searchscope: VS Subscription
-ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977719"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377689"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -43,19 +42,24 @@ Wenn Sie die maximale Anzahl von Product Keys in Anspruch genommen haben, die Ih
 
 Unsere Untersuchungen zeigen, dass für die meisten Abonnenten die in ihrem Abonnement enthaltene Anzahl von Product Keys ausreicht. Wenn Sie zusätzliche Product Keys benötigen, können Sie diese über den [Kundendienst für Visual Studio-Abonnements](https://visualstudio.microsoft.com/subscriptions/support/) anfordern. Der Antrag wird fallweise auf Genehmigung geprüft.
 
-## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
-Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
-> [!div class="mx-imgBorder"]
-> ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
+## <a name="accessing-product-keys"></a>Zugriff auf Product Keys
+Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
 
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
+> [!div class="mx-imgBorder"]
+> ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
+
+Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Auf dieser Seite finden Sie statische Schlüssel, die für alle Benutzer eines Produkts verwendet werden können. Zudem können Sie benutzerdefinierte Schlüssel für Ihre Situation abrufen, den Status Ihrer Anspruchsbeschränkungen für Product Keys anzeigen und alle Product Keys exportieren. 
+
+> [!div class="mx-imgBorder"]
+> ![Seite „Product Keys“](_img/product-keys/product-keys-page.png)
 
 Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
-|    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
+|    Schlüsseltyp           |    BESCHREIBUNG                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nicht zutreffend                    |    Für die Installation dieses Produkts ist kein Schlüssel erforderlich.                                                       |
 |    Einzelhandel                     |    Mit Verkaufsschlüsseln sind mehrere Aktivierungen möglich. Sie werden für die Verkaufsversionen des Produkts verwendet. In vielen Fällen sind pro Schlüssel 10 Aktivierungen zulässig. Häufig sind jedoch weitere Aktivierungen auf demselben Computer zulässig.                                                       |
@@ -71,46 +75,7 @@ Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
 Sie können einen Schlüssel von der Downloadseite des Produkts anfordern. Alternativ können Sie auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) nach dem erforderlichen Schlüssel suchen.
 
-### <a name="claiming-product-keys"></a>Inanspruchnahme von Product Keys
-Nur Abonnenten mit aktiven Abonnements können Produkte herunterladen und Product Keys in Anspruch nehmen.  Sie können Ihre in Anspruch genommenen Schlüssel von der Seite [Product Keys](https://my.visualstudio.com/productkeys) herunterladen, während Ihr Abonnement aktiv ist.
-
-So nehmen Sie einen Product Key in Anspruch:
-1. Melden Sie sich bei Ihrem Visual Studio-Abonnement an.  Sie müssen angemeldet sein, um Produkte herunterladen oder Product Keys in Anspruch nehmen zu können.
-2. Klicken Sie auf die Registerkarte [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3. Die Product Keys werden in alphabetischer Reihenfolge nach dem Namen des Produkts aufgelistet.  Sie können den Fensterinhalt bis zum gewünschten Produkt nach unten verschieben oder über die Suchleiste oben auf der Seite nach dem Namen suchen.
-   > [!div class="mx-imgBorder"]
-   > ![Nach Product Key suchen](_img/product-keys/visio-product-key-cropped.png)
-
-In diesem Beispiel wird die Suchleiste verwendet, um einen Product Key für Visio 2010 zu suchen.
-Wie Sie sehen können, werden mehrere Versionen von Visio 2010 aufgeführt.  Jeweils ein Schlüssel ist bereits für Visio Standard 2010 und Visio Premium 2010 in Anspruch genommen worden. Für beide Programme können weitere vier Schlüssel verwendet werden.  Bei den beiden Schlüsseln, die in Anspruch genommen wurden, handelt es sich um Verkaufsschlüssel. Sie werden auf der Seite angezeigt.  Beachten Sie, dass Sie in der Spalte **Hinweise** eine kurze Notiz zu den beanspruchten Schlüsseln hinterlassen können.  Diese können Sie zusammen mit dem Datum in der Spalte **Beansprucht** verwenden, um den Überblick über in Anspruch genommene Schlüssel zu behalten.  Sie könnten beispielsweise Notizen machen, wenn Sie die Installation eines Produkts mit dem Schlüssel aktivieren.
-
-### <a name="exporting-your-claimed-keys"></a>Exportieren Ihrer in Anspruch genommenen Schlüssel
-Sie können eine Liste mit allen in Anspruch genommenen Schlüsseln exportieren, zusammen mit einer großen Auswahl statischer und anderer Schlüssel, die automatisch mit „In Anspruch genommen“ markiert wurden.
-
-> [!IMPORTANT]
-> Wenn Ihr Abonnement abgelaufen ist, können Sie keine neuen Schlüssel mehr in Anspruch nehmen oder Ihre in Anspruch genommenen Schlüssel exportieren.
-
-Klicken Sie zum Exportieren Ihrer Schlüssel einfach ganz rechts auf der Seite „Product Keys“ auf den Link **Alle Schlüssel exportieren**.  Es wird eine XML-Datei mit dem Namen „KeysExport.xml“ erstellt, die Sie öffnen oder speichern können.  Sie müssen die Datei mit einer Anwendung öffnen, die XML-Dateien verarbeiten kann.  Sie können die Datei beispielsweise als schreibgeschützte Arbeitsmappe in Excel öffnen.
-
-## <a name="internet-demonstrations-via-terminal-services"></a>Internetdemonstrationen über Terminaldienste
-Mit einem Visual Studio-Abonnement sind Sie berechtigt, Benutzern den Zugriff auf Internetdemonstrationen Ihrer Programme über Terminaldienste (Windows Server 2003 oder Windows Server 2008) oder Remotedesktopdienste (Windows Server 2008 R2 und höher) zu ermöglichen. So können bis zu 200 anonyme Benutzer gleichzeitig auf Ihre Demonstration zugreifen. In Ihrer Demonstration dürfen keine Produktionsdaten verwendet werden. Visual Studio-Abonnenten sind berechtigt, Benutzern ihre Anwendungen zu demonstrieren. Allerdings können bei dieser Internetdemonstration Benutzer ohne Visual Studio-Abonnement nur über Terminaldienste (Terminal Services, TS) oder Remotedesktopdienste (Remote Desktop Services, RDS) mit der Demonstrationsanwendung interagieren, solange die Software mittels Visual Studio-Abonnements lizenziert ist.
-
-Dies ist eine Ergänzung der Entwicklungs-/Testrechte, gemäß denen Visual Studio-Abonnenten so viele RDS- oder TS-Verbindungen wie nötig verwenden können.
-
-### <a name="enabling-rds-access"></a>Aktivieren des RDS-Zugriffs
-Visual Studio-Abonnenten können die Anzahl der Benutzer mit Zugriff auf Windows Server über RDS erhöhen, indem Sie im [Abonnentenportal](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) auf der Registerkarte [Produkt Keys](https://my.visualstudio.com?wt.mc_id=o~msft~docs) einen Product Key eingeben. Öffnen Sie zum Abrufen eines Product Key die Seite „Product Keys“, und scrollen Sie nach unten zur der Version von Windows Server, die Sie ausführen. Suchen Sie „Windows Server <Version> R2-Remotedesktopdienste <Benutzer oder Gerät>-Verbindungen“, und klicken Sie auf die Schaltfläche **Claim Key** (Schlüssel in Anspruch nehmen). Wenn Sie beispielsweise RDS unter Windows Server 2012 R2 verwenden und Ihre Bereitstellung Benutzer-Clientzugriffslizenzen umfasst, wählen Sie „Windows Server 2012 > Remotedesktopdienste > Benutzerverbindungen (50)“ aus.
-Für Windows Server 2008 R2 stehen für jeden Typ fünf Schlüssel zur Verfügung, die jeweils 20 Verbindungen unterstützen. Für Windows Server 2012 R2 stehen für jeden Typ vier Schlüssel zur Verfügung, die jeweils 50 Verbindungen unterstützen.
-
-#### <a name="to-enable-additional-connections-in-windows-server"></a>So aktivieren Sie unter Windows Server weitere Verbindungen:
-1. Öffnen Sie den Server-Manager.
-2. Öffnen Sie im linken Navigationsbereich die Liste „Server“.
-3. Klicken Sie mit der rechten Maustaste auf Ihren Lizenzserver, und wählen Sie „Lizenzen installieren“ aus.
-4. Folgen Sie den Anweisungen des Assistenten.  Wählen Sie bei der Auswahl des Vertragstyps „Vollprodukterwerb“ aus, und geben Sie den Product Key ein, den Sie unter „Mein Portal“ erhalten haben.
-
-Benutzer können über RDS auf Anwendungen zugreifen, wenn die folgenden Bedingungen erfüllt sind:
-- Die Benutzer müssen anonym (nicht authentifiziert) sein.
-- Verbindungen müssen über das Internet erfolgen.
-- Für Demonstrationen der Anwendung sind bis zu 200 gleichzeitige Verbindungen möglich.
-- Die Product Keys zum Aktivieren von Benutzerverbindungen müssen von einem Visual Studio-Abonnenten abgerufen werden.
-
-Anweisungen zum Einrichten der Remotedesktoplizenzierung auf Ihrem Server finden Sie unter [Konfiguration von Remotedesktoplizenzierung unter Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Falls Sie Fragen haben, besuchen Sie das [Forum für Microsoft-Remotdesktopdienste](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
+## <a name="next-steps"></a>Nächste Schritte
+Rufen Sie https://my.visualstudio.com/productkeys auf, um Schlüssel zu beanspruchen.  
+In diesem Artikel erfahren Sie mehr über das [Suchen und Beanspruchen von Schlüsseln](find-keys.md).
+In diesem Artikel erfahren Sie mehr über das Verwenden von Product Keys für die Unterstützung von [Internetdemonstrationen](internet-demos.md).

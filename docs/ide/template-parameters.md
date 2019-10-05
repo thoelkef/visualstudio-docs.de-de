@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950347"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766109"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -47,7 +47,7 @@ Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:
 
 In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können:
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
 |ext_*|Fügen Sie das Präfix `ext_` zu einem beliebigen Parameter hinzu, um auf die Variablen der übergeordneten Vorlage zu verweisen. Beispielsweise `ext_safeprojectname`.|
@@ -57,10 +57,11 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |projectname|Der Name, der vom Benutzer bei der Erstellung des Projekts angegeben wurde.|
 |registeredorganization|Der Registrierungsschlüsselwert aus HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Der Stammnamespace des aktuellen Projekts. Dieser Parameter gilt nur für Elementvorlagen.|
-|safeitemname|Wie `itemname`, jedoch wurden alle unsicheren Zeichen und Leerzeichen entfernt.|
+|safeitemname|Wie `itemname`, jedoch mit unsicheren Zeichen und Leerzeichen, die durch Unterstriche ersetzt wurden.|
+|safeitemrootname|Wie in `safeitemname`.|
 |safeprojectname|Der vom Benutzer beim Erstellen des Projekts angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden.|
 |Uhrzeit|Die aktuelle Uhrzeit im Format TT/MM/JJJJ 00:00:00.|
-|SpecificSolutionName|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `SpecificSolutionName` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `SpecificSolutionName` leer.|
+|specifiedSolutionName|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `specifiedSolutionName` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `specifiedSolutionName` leer.|
 |userdomain|Die aktuelle Benutzerdomäne.|
 |username|Der aktuelle Benutzername.|
 |webnamespace|Der Name der aktuellen Website. Dieser Parameter wird in der Webformularvorlage verwendet und gewährleistet eindeutige Klassennamen. Wenn sich die Website im Stammverzeichnis des Webservers befindet, wird dieser Vorlagenparameter in das Stammverzeichnis des Webservers aufgelöst.|

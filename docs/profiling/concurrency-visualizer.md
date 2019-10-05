@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e19cdb633528c3304d500fe268a583c542f1e4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001029"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128130"
 ---
 # <a name="concurrency-visualizer"></a>Parallelitätsschnellansicht
 
@@ -42,7 +42,7 @@ Die Nebenläufigkeitsschnellansicht beruht auf den Funktionen der [Ereignisablau
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Auslastungsansicht](../profiling/utilization-view.md)|Beschreibt, wie Systemaktivitäten über alle Prozessoren hinweg angezeigt und analysiert werden.|
 |[Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)|Beschreibt, wie die Interaktionen zwischen Threads in Ihrem Programm analysiert werden.|
@@ -55,5 +55,5 @@ Die Nebenläufigkeitsschnellansicht beruht auf den Funktionen der [Ereignisablau
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Profilerstellung in Visual Studio](../profiling/index.yml)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

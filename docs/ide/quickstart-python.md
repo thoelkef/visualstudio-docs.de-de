@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365294"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180345"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -29,7 +29,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker range=">=vs-2019"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen. Wählen Sie im Installer die Workload **Python-Entwicklung** aus.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen. Wählen Sie im Installer die Workload **Python-Entwicklung** aus.
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 
 **Frage: Wo erfahre ich mehr über Flask?**
 
-**Antwort:** Lesen Sie die Flask-Dokumentation. Beginnen Sie dabei mit dem [Quickstart (Schnellstart)](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
+**Antwort:** Lesen Sie die Flask-Dokumentation. Beginnen Sie dabei mit dem [Quickstart (Schnellstart)](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 

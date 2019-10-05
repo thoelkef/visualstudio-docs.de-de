@@ -1,5 +1,5 @@
 ---
-title: 'Bewährte Methoden der Webentwicklung: COM, VSTO und VBA-add-ins in Office'
+title: 'Bewährte Methoden für die Entwicklung: COM, VSTO, & VBA-Add-Ins in Office'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,57 +11,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4689f14a6ce66f509a7af1f4a9a1d50a0f8d37cd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401440"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254648"
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Entwicklungsmethoden für COM, VSTO und VBA-add-ins in Office
-  Wenn Sie COM, VSTO oder VBA-add-ins für Office entwickeln, führen Sie die besten Entwicklungsmethoden in diesem Artikel beschrieben.   Dadurch wird sichergestellt:
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Methoden für die Entwicklung von com-, VSTO-und VBA-Add-Ins in Office
+  Wenn Sie com-, VSTO-oder VBA-Add-Ins für Office entwickeln, befolgen Sie die in diesem Artikel beschriebenen bewährten Methoden für die Entwicklung.   Dadurch wird Folgendes sichergestellt:
 
-- Kompatibilität von Add-Ins über verschiedene Versionen und Bereitstellungen von Office.
+- Kompatibilität von Add-Ins über verschiedene Versionen und bereit Stellungen von Office hinweg.
 - Geringere Komplexität der Add-in-Bereitstellung für Ihre Benutzer und IT-Administratoren.
-- Unbeabsichtigte Installation oder zur Laufzeit Fehler des add-Ins werden nicht ausgeführt.
+- Unbeabsichtigte Installation oder Laufzeitfehler des Add-ins treten nicht auf.
 
->Hinweis: Mithilfe der [Desktop-Brücke](/windows/uwp/porting/desktop-to-uwp-root) Vorbereitung auf den COM-VSTO oder VBA-add-in für den Windows Store wird nicht unterstützt. COM, VSTO und VBA-add-ins können nicht in den Windows Store oder den Office Store verteilt werden.
+>Hinweis: Das Verwenden der [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) zum Vorbereiten des com-, VSTO-oder VBA-Add-Ins für den Windows Store wird nicht unterstützt. COM-, VSTO-und VBA-Add-Ins können nicht im Windows Store oder im Office Store verteilt werden.
 
-## <a name="do-not-check-for-office-during-installation"></a>Aktivieren Sie nicht für Office während der installation
- Müssen das Add-in erkennt, ob es sich bei Office installiert ist, während der Add-in-Installation empfohlen nicht. Wenn Office nicht installiert ist, können Sie das Add-in installieren, und der Benutzer wird in der Lage, darauf zuzugreifen, nachdem Office installiert ist.
+## <a name="do-not-check-for-office-during-installation"></a>Nicht während der Installation für Office prüfen
+ Es wird nicht empfohlen, dass Sie mit dem Add-in erkennen, ob Office während des Add-in-Installationsvorgangs installiert wird. Wenn Office nicht installiert ist, können Sie das Add-in installieren, und der Benutzer kann nach der Installation von Office darauf zugreifen.
 
-## <a name="use-embedded-interop-types-nopia"></a>Verwenden Sie die eingebettete Interop-Typen (NoPIA)
-Wenn Ihre Lösung verwendet .NET 4.0 oder höher verwenden eingebettete interop-Typen (NoPIA) anstelle von abhängig von der Office Primary Interop Assemblies (PIA) redistributable. Verwenden das Einbetten von Typen reduziert die Installationsgröße der Lösung und zukünftige Kompatibilität sichergestellt. Office 2010 ist die letzte Version von Office, die die verteilbare PIA geliefert wurden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einbetten von Typinformationen aus Microsoft Office-Assemblys](https://msdn.microsoft.com/library/ee317478.aspx) und [Typäquivalenz und eingebettete interop-Typen](/windows/uwp/porting/desktop-to-uwp-root).
+## <a name="use-embedded-interop-types-nopia"></a>Eingebettete Interop-Typen (nopia) verwenden
+Wenn Ihre Lösung .NET 4,0 oder höher verwendet, verwenden Sie eingebettete Interop-Typen (nopia) anstelle von der verteilbaren Office Primary Interopassemblys (PIA). Durch die Verwendung von Einbettungs Typen wird die Installations Größe Ihrer Lösung reduziert, und die zukünftige Kompatibilität wird sichergestellt. Office 2010 war die letzte Version von Office, die die PIA Redistributable ausgeliefert hat. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Einbetten von Typinformationen aus](https://msdn.microsoft.com/library/ee317478.aspx) Microsoft Office Assemblys und [typäquivalenz und eingebetteten Interop-Typen](/windows/uwp/porting/desktop-to-uwp-root).
 
-Wenn Ihre Lösung auf eine frühere Version von .NET verwendet, empfehlen wir, dass Sie die Projektmappe, um .NET 4.0 oder höher verwenden, aktualisieren. Mithilfe von .NET 4.0 oder höher reduziert die Common Language Runtime von erforderlichen Komponenten auf neuere Versionen von Windows.
+Wenn Ihre Lösung eine frühere Version von .NET verwendet, empfiehlt es sich, die Lösung für die Verwendung von .NET 4,0 oder höher zu aktualisieren. Die Verwendung von .NET 4,0 oder höher reduziert die Lauf Zeit Voraussetzungen für neuere Versionen von Windows.
 
-## <a name="avoid-depending-on-specific-office-versions"></a>Vermeiden Sie abhängig von bestimmten Versionen von Office
-Ihre Lösung Funktionalität verwendet, die nur in neueren Versionen von Office verfügbar sind, sicher, dass die Funktion (wenn möglich, auf die Feature-Ebene) vorhanden ist. zur Laufzeit (z. B. mit der Ausnahme Ausnahmebehandlungsfehler oder indem Sie die Version überprüfen). Überprüfen Sie Mindestversionen, statt in bestimmten Versionen, wie z. B. die unterstützten APIs im Objektmodell, mit der [Application.Version Eigenschaft](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Es wird nicht empfohlen, dass Sie auf Office binary Metadaten, Installationspfade oder Registrierungsschlüssel verlassen, da diese Installationen, Umgebungen und Versionen ändern können.
+## <a name="avoid-depending-on-specific-office-versions"></a>Vermeiden Sie die Abhängigkeit von bestimmten Office-Versionen.
+Wenn Ihre Lösung Funktionen verwendet, die nur in neueren Versionen von Office verfügbar sind, überprüfen Sie, ob die Funktion (sofern möglich) zur Laufzeit vorhanden ist (z. b. durch die Verwendung der Ausnahmebehandlung oder durch Überprüfen der Version). Überprüfen Sie die minimalen Versionen und keine bestimmten Versionen, indem Sie unterstützte APIs im Objektmodell verwenden, z. b. die [Application. Version-Eigenschaft](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Es wird nicht empfohlen, dass Sie sich auf binäre Office-Metadaten, Installations Pfade oder Registrierungsschlüssel verlassen, da sich diese zwischen Installationen, Umgebungen und Versionen ändern können.
 
-## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Aktivieren Sie die 32-Bit- und 64-Bit-Office-Nutzung
-Ihr Build-Standardziel sollte sowohl für 32-Bit-(x86) als auch für 64-Bit-(x64) unterstützen, es sei denn, Ihre Lösung von Bibliotheken abhängig ist, die nur für eine bestimmte Bitanzahl verfügbar sind. Die 64-Bit-Version von Office zunehmen bei Einführung, insbesondere in big Data-Umgebungen. Unterstützung sowohl für 32-Bit-als auch für 64-Bit-erleichtert Ihnen für Ihre Benutzer für den Übergang zwischen 32-Bit und 64-Bit-Versionen von Office.
+## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Aktivieren von 32-Bit-und 64-Bit-Office-Verwendung
+Das standardbuildziel sollte sowohl 32-Bit (x86) als auch 64-Bit (x64) unterstützen, es sei denn, die Projekt Mappe ist von Bibliotheken abhängig, die nur für eine bestimmte Bitness verfügbar sind. Die 64-Bit-Version von Office wird bei der Übernahme gesteigert, insbesondere in Big Data Umgebungen. Wenn Sie sowohl 32-Bit als auch 64-Bit unterstützen, ist es für Benutzer einfacher, zwischen 32-Bit-und 64-Bit-Versionen von Office zu wechseln.
 
-Beim Schreiben von VBA-Code wird mit 64-Bit-Safe declare-Anweisungen und Variablen nach Bedarf zu konvertieren. Darüber hinaus stellen Sie sicher, dass Dokumente Benutzer, die entweder 32-Bit oder 64-Bit-Versionen von Office ausführen, indem Sie Code für jede Bitanzahl für das Bereitstellen gemeinsam genutzt werden können. Weitere Informationen finden Sie unter [VBA-64-Bit-Anwendungen (Übersicht)](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
+Verwenden Sie beim Schreiben von VBA-Code 64-Bit-sichere Declare-Anweisungen, und konvertieren Sie Variablen nach Bedarf. Außerdem sollten Sie sicherstellen, dass Dokumente von Benutzern gemeinsam genutzt werden können, die entweder 32-Bit-oder 64-Bit-Versionen von Office ausführen, indem Sie Code für jede Bitness bereitstellen Weitere Informationen finden Sie unter [Übersicht über 64-Bit-Visual Basic für Anwendungen](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
-## <a name="support-restricted-environments"></a>Zur Unterstützung von eingeschränkter Umgebungen
-Ihre Lösung sollte keine Rechte heraufstufung von Benutzerrechten-Konto oder Administratorrechte erfordern. Darüber hinaus sollte die Lösung nicht abhängig festlegen oder ändern:
+## <a name="support-restricted-environments"></a>Unterstützen eingeschränkter Umgebungen
+Für Ihre Lösung sollten keine Rechte für das Benutzerkonto oder Administrator Rechte erforderlich sein. Außerdem sollte die Lösung nicht von der Einstellung oder Änderung abhängen:
 
 - Das aktuelle Arbeitsverzeichnis.
-- Verzeichnisse, laden die DLL.
-- Der PATH-Variablen.
+- DLL-Lade Verzeichnisse.
+- Die Pfad Variable.
 
-## <a name="change-the-save-location-of-shared-data-and-settings"></a>Ändern Sie den Speichervorgang Speicherort der freigegebenen Daten und Einstellungen
-Wenn die Lösung besteht aus einem Add-in und ein Prozess, der außerhalb von Office ist, verwenden Sie nicht Anwendungsdatenordner des Benutzers oder der Registrierung zum Austauschen von Daten oder Einstellungen zwischen dem Add-in und der externe Prozess. Stattdessen Sie verwenden Sie temporären Ordner des Benutzers, den Ordner "Dokumente" und den Installationsverzeichnis der Projektmappe.
+## <a name="change-the-save-location-of-shared-data-and-settings"></a>Speicherort für freigegebene Daten und Einstellungen ändern
+Wenn die Lösung aus einem Add-in und einem externen Prozess für Office besteht, verwenden Sie nicht den Anwendungsdatenordner des Benutzers oder die Registrierung, um Daten oder Einstellungen zwischen dem Add-in und dem externen Prozess auszutauschen. Verwenden Sie stattdessen den temporären Ordner, den Ordner "Dokumente" oder das Installationsverzeichnis Ihrer Lösung.
 
-## <a name="increment-the-version-number-with-each-update"></a>Erhöht die Versionsnummer bei jeder Aktualisierung
-Die Versionsnummer der Binärdateien in der Projektmappe festgelegt, und es mit jedem Update erhöht. Dies veranlasst er für Benutzer einfacher, Änderungen zwischen den Versionen ermitteln und Bewerten der Kompatibilität.
+## <a name="increment-the-version-number-with-each-update"></a>Erhöhen Sie die Versionsnummer jedes Updates.
+Legen Sie die Versionsnummer der Binärdateien in der Projekt Mappe fest, und erhöhen Sie Sie mit jedem Update. Dadurch wird es für Benutzer einfacher, Änderungen Zwischenversionen zu erkennen und die Kompatibilität zu bewerten.
 
-## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Geben Sie Informationen zur Unterstützung bei den neuesten Versionen von Office
-Kunden werden gebeten, ISVs, Informationen zur Unterstützung für die COM, VSTO und VBA-add-ins bieten, die in Office ausgeführt. Ihre explizite Unterstützung-Anweisungen können Kunden mithilfe von Office 365 ProPlus auflisten verstehen bereitschaftstools Ihre Unterstützung.
+## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Bereitstellen von Support Anweisungen für die neuesten Versionen von Office
+Kunden bitten Sie ISVs, Support Anweisungen für Ihre com-, VSTO-und VBA-Add-Ins bereitzustellen, die in Office ausgeführt werden. Durch das Auflisten ihrer expliziten Support Anweisungen können Kunden, die Office 365 ProPlus Readiness Tools verwenden, ihre Unterstützung verstehen.
 
-Um Unterstützung für Office-Clientanwendungen (z. B. Word oder Excel) bereitzustellen, überprüfen Sie zunächst, dass Ihre Add-Ins in der aktuellen Office-Version ausgeführt, und dann einen Commit ausführen, um die Bereitstellung von Updates, wenn das Add-in in einer zukünftigen Version aufgehoben. Sie müssen keine Add-Ins zu testen, wenn Microsoft einen neuen Build oder ein Update für Office veröffentlicht. Microsoft nur selten ändert, die COM, VSTO und VBA-Plattform in Office-Erweiterbarkeit, und diese Änderungen werden gut dokumentiert.
+Zum Bereitstellen von Support Anweisungen für Office-Client Anwendungen (z. b. Word oder Excel) überprüfen Sie zunächst, ob Ihre Add-Ins in der aktuellen Office-Version ausgeführt werden, und führen Sie dann die Bereitstellung von Updates durch, wenn das Add-in in einer zukünftigen Version unterbrochen wird. Sie müssen Ihre Add-Ins nicht testen, wenn Microsoft einen neuen Build oder ein Update für Office freigibt. Microsoft ändert die Erweiterbarkeits Plattform für com, VSTO und VBA in Office selten, und diese Änderungen werden gut dokumentiert.
 
->Wichtig: Microsoft verwaltet eine Liste der unterstützten-add-ins für Berichte zur hardwarebereitschaft und ISV-Kontaktinformationen. Das add-in aufgelistet finden Sie unter [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
+>Wichtig: Microsoft verwaltet eine Liste der unterstützten Add-Ins für Bereitschafts Berichte und ISV-Kontaktinformationen. Informationen dazu, wie Sie das Add-in [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows)auflisten, finden Sie unter.
 
-## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Verwenden Sie Monitor "Prozess", um Installations- oder laden die Probleme zu debuggen
-Verfügt Ihr Add-in Kompatibilitätsprobleme während der Installation oder laden, können sie Probleme mit Datei-oder Registrierungszugriff zugeordnet werden. Verwendung [Process Monitor](/sysinternals/downloads/procmon) oder ähnliche Debugtool, sich anzumelden, und Vergleichen von Verhalten in einer arbeitsumgebung, um das Problem zu identifizieren.
+## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Verwenden des Prozess Monitors zum Debuggen oder Laden von Problemen
+Wenn das Add-in während der Installation oder Auslastung Kompatibilitätsprobleme aufweist, sind Sie möglicherweise mit Problemen mit dem Datei-oder Registrierungs Zugriff verknüpft. Verwenden Sie den [Prozess Monitor](/sysinternals/downloads/procmon) oder ein ähnliches Debugtool, um das Verhalten einer funktionierenden Umgebung zu protokollieren und zu vergleichen, um das Problem zu identifizieren.

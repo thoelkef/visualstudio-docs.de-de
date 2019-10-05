@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797405"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253301"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Übermäßige Komplexität vermeiden.
 
@@ -36,39 +36,39 @@ ms.locfileid: "62797405"
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode hat eine übermäßige zyklomatische Komplexität.
+Eine Methode weist eine übermäßige zyklomatische Komplexität auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-*Zyklomatische Komplexität* misst die Anzahl der linear unabhängiger Pfade durch die Methode, die durch die Anzahl und Komplexität bedingter Branches bestimmt wird. Eine niedrige zyklomatische Komplexität gibt im Allgemeinen eine Methode, die einfach zu verstehen, zu testen und zu verwalten. Die zyklomatische Komplexität errechnet sich aus einem Diagramm Control Flow, der Methode und wird wie folgt angegeben:
+Die *zyklomatische Komplexität* misst die Anzahl der Linear unabhängigen Pfade durch die Methode, die durch die Anzahl und Komplexität bedingter Verzweigungen bestimmt wird. Eine geringe zyklomatische Komplexität gibt im Allgemeinen eine Methode an, die leicht verständlich, getestet und gewartet werden kann. Die zyklomatische Komplexität wird anhand eines Ablauf Steuerungs Diagramms der-Methode berechnet und wie folgt angegeben:
 
-Zyklomatische Komplexität die Anzahl Rändern - die Anzahl der Knoten + 1 =
+zyklomatische Komplexität = die Anzahl der Kanten: die Anzahl der Knoten + 1
 
-Ein *Knoten* einem zweigverteilungspunkt Logik darstellt und ein *Edge* eine Linie zwischen den Knoten darstellt.
+Ein *Knoten* stellt einen Logic Branch-Punkt dar, und ein *Edge* stellt eine Linie zwischen Knoten dar.
 
-Einen Verstoß wird von die Regel berichtet, wenn die zyklomatische Komplexität mehr als 25 ist.
+Die Regel meldet eine Verletzung, wenn die zyklomatische Komplexität größer als 25 ist.
 
-Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität von verwaltetem Code](../code-quality/code-metrics-values.md).
+Weitere Informationen zu Codemetriken finden Sie unter [Messen der Komplexität von verwaltetem Code](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, gestalten Sie die Methode, um die zyklomatische Komplexität zu reduzieren.
+Um einen Verstoß gegen diese Regel zu beheben, müssen Sie die-Methode umgestalten, um die zyklomatische Komplexität zu verringern.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn die Komplexität nicht ganz einfach reduziert werden kann und die Methode einfach ist zu verstehen, zu testen und zu verwalten. Insbesondere bei einer Methode, die eine große enthält `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])-Anweisung ist ein Kandidat für den Ausschluss. Die Risiken zur Destabilisierung der Codebasis später im Entwicklungszyklus oder Einführung in eine unerwartete Änderung im Verhalten von Common Language Runtime zuvor abgelieferten Codes den Code ein refactoring der Verwaltbarkeit Vorteile möglicherweise aufgehoben werden.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Komplexität nicht leicht reduziert werden kann und die Methode leicht verständlich, getestet und gewartet werden kann. Insbesondere eine Methode, die eine große `switch` Anweisung (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) enthält, ist ein Kandidat für den Ausschluss. Das Risiko, dass die Codebasis später im Entwicklungs Durchlauf oder eine unerwartete Änderung des Lauf Zeit Verhaltens in zuvor verlauftem Code zu destabilisieren ist, kann die wart barkeits Vorteile der Umgestaltung des Codes überwiegen.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>Berechnung der zyklomatische Komplexität
+## <a name="how-cyclomatic-complexity-is-calculated"></a>So berechnen Sie die zyklomatische Komplexität
 
-Die zyklomatische Komplexität wird durch Hinzufügen von 1 wie folgt berechnet:
+Die zyklomatische Komplexität wird berechnet, indem der folgende Wert 1 hinzugefügt wird:
 
-- Anzahl der Branches (z. B. `if`, `while`, und `do`)
+- Anzahl von Verzweigungen (z `if`. `while`b. `do`, und)
 
-- Anzahl der `case` Anweisungen in einem `switch`
+- Anzahl von `case` Anweisungen in einem`switch`
 
 ## <a name="example"></a>Beispiel
 
-Die folgenden Beispiele zeigen die Methoden, die unterschiedliche zyklomatische Komplexität vorliegt.
+In den folgenden Beispielen werden Methoden veranschaulicht, die unterschiedliche zyklomatische Komplexität aufweisen.
 
 **Zyklomatische Komplexität von 1**
 

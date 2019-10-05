@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b42058e0501612acbf454df725a9f1631489d26e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155287"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series-Konstruktor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ marker_series(
  `_ProviderGuid`  
  Die GUID des Anbieters der Reihe  
   
-## <a name="requirements"></a>Anforderungen  
+## <a name="requirements"></a>Requirements (Anforderungen)  
  **Header:** cvmarkersobj.h  
   
  **Namespace:** Concurrency::diagnostic  

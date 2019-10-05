@@ -1,5 +1,5 @@
 ---
-title: Richtlinien zur Benutzerfreundlichkeit von Visual Studio-Benutzer | Microsoft-Dokumentation
+title: Richtlinien für die Visual Studio-Benutzer Darstellung | Microsoft-Dokumentation
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,22 +8,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f82142a66ad5c967e8f790e6dc70fca6b53496
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310757"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315118"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
-Führen Sie den Visual Studio User Experience Guidelines, wenn Sie neue Funktionen für Visual Studio entwerfen. Diese Richtlinien enthalten Informationen über allgemeine Benutzer-Modelle und interaktionsmustern, damit Designer neue Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die nahtlose und einheitliche, in der Entwicklungsumgebung sind.
+Befolgen Sie die Richtlinien für die Visual Studio-Benutzer Leistung, wenn Sie neue Features für Visual Studio entwerfen. Diese Richtlinien enthalten Informationen zu gängigen Benutzer Modellen und Interaktionsmustern, damit Entwickler von neuen Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die in der Entwicklungsumgebung nahtlos und konsistent sind.
 
-Wenn Sie Software für Microsoft-Produkte entwickeln, erfahren Sie, diese Ressourcen zu verwenden:
+Wenn Sie Software für Microsoft-Produkte entwickeln, erfahren Sie, wie Sie die folgenden Ressourcen verwenden:
 
-- Die [Windows User Experience Interaction Guidelines](https://developer.microsoft.com/windows/desktop) sind die Grundlagen für Windows desktop-Verhalten und aussehen.
+- Die [Interaktions Richtlinien für Windows-Benutzer](https://docs.microsoft.com/windows/win32/uxguide/guidelines) Funktionen sind die Grundlagen für das Verhalten und die Darstellung von Windows-Desktops.
 
-- Diese Visual Studio-Richtlinien, plattformspezifischen Leitfäden, die die allgemeinen Windows-Richtlinien in unserer Umgebung ggf. ersetzen.
+- Diese Visual Studio-Richtlinien sind plattformspezifische Richtlinien, die die allgemeinen Windows-Richtlinien ersetzen, wenn dies für unsere Umgebung geeignet ist.
 
-- Die [Steuerelemente und Muster für die UWP-apps](/windows/uwp/design/controls-and-patterns) sind eine Referenz für die zukünftigen Muster, die in einigen Fällen, in Visual Studio verwendet werden kann.
+- Die Steuer [Elemente und Muster für UWP-apps](/windows/uwp/design/controls-and-patterns) sind ein Verweis auf neue Muster, die in einigen Instanzen von Visual Studio verwendet werden können.
 
-Diese Richtlinien bieten Ihnen die Informationen darüber, was Sie beim Entwerfen von Visual Studio, und in einigen Fällen auch Informationen darüber, wie es enthalten ist. Ausführlichere Informationen der Implementierung und erfahren Sie mehr über bestimmte Anwendungsprogrammierschnittstellen (APIs), mit denen Sie schreiben Code für Lösungen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio integrieren, verwenden Sie die [Visual Studio Software Development Kit (SDK)](../visual-studio-sdk.md).
+Diese Richtlinien enthalten Informationen dazu, was beim Entwerfen für Visual Studio zu tun ist, und in einigen Fällen auch Informationen dazu, wie Sie dies tun können. Ausführlichere Implementierungs Informationen und Informationen zu bestimmten Anwendungs Programmierschnittstellen (Application Programming Interfaces, APIs), mit denen Sie Code für Projektmappen schreiben können, die in die integrierte Entwicklungsumgebung (IDE) von Visual Studio integriert sind, können Sie die [Visualisierung Studio Software Development Kit (SDK)](../visual-studio-sdk.md).

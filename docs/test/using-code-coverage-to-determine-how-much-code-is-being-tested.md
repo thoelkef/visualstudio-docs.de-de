@@ -1,6 +1,6 @@
 ---
 title: Code Coverage-Tests
-ms.date: 09/18/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973068"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913187"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -28,36 +26,60 @@ Die Codeabdeckungsanalyse kann sowohl in verwaltetem (CLI) als auch in nicht ver
 
 Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Explorer ausführen. In der Ergebnistabelle wird der Prozentsatz des Codes angegeben, der in den einzelnen Assemblys, Klassen und Methoden ausgeführt wurde. Außerdem wird im Quellcode-Editor angezeigt, welcher Code getestet wurde.
 
+::: moniker range="vs-2017"
+
 ![Codeabdeckungsergebnisse mit Färbung](../test/media/codecoverage1.png)
 
-## <a name="requirements"></a>Anforderungen
+::: moniker-end
+
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Das Code Coverage-Feature ist nur in der Visual Studio Enterprise-Edition verfügbar.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>So analysieren Sie die Code Coverage in Komponententests im Test-Explorer
+## <a name="analyze-code-coverage"></a>Analysieren von Code Coverage
+
+::: moniker range="vs-2017"
 
 1. Wählen Sie im Menü **Test** die Option **Code Coverage analysieren** aus.
 
-2. Wählen Sie ![Symbol „Code Coverage-Färbung anzeigen“](../test/media/codecoverage-showcoloringicon.png) **Code Coverage-Färbung anzeigen**, um anzuzeigen, welche Zeilen ausgeführt wurden.
+::: moniker-end
 
-   Um die Farben zu ändern oder den Text in Fettdruck anzuzeigen, wählen Sie **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben** > **Einstellungen anzeigen für: Text-Editor** aus. Unter **Elemente anzeigen** können Sie die Abdeckungselemente anpassen.
+::: moniker range=">=vs-2019"
+
+1. Wählen Sie im **Test-Explorer** im Menü **Ausführen** die Option **Code Coverage für alle Tests analysieren** aus.
+
+   ![Menüoption „Code Coverage analysieren“ in VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
+
+   Wenn der **Test-Explorer** nicht geöffnet ist, öffnen Sie ihn, indem Sie auf **Testen**>**Windows**>**Test-Explorer** klicken oder **STRG**+**E**,**T** drücken.
+
+::: moniker-end
+
+2. Klicken Sie nach der Ausführung der Tests im Fenster **Code Coverage-Ergebnisse** auf ![Symbol „Code Coverage-Färbung anzeigen“](../test/media/codecoverage-showcoloringicon.png) **Code Coverage-Färbung anzeigen**. Der von Tests abgedeckte Code wird standardmäßig hellblau hervorgehoben.
+
+   > [!TIP]
+   > Zum Ändern der Farben oder zum Verwenden von Fettdruck wählen Sie **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben** > **Einstellungen anzeigen für: Text-Editor** aus. Passen Sie unter **Elemente anzeigen** die Einstellungen der Elemente für „Coverage“ an, z. B. **Von Code Coverage nicht verwendeter Bereich**.
+   >
+   > ![Schriftarten und Farben für Code Coverage](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. Wenn die Ergebnisse eine niedrige Abdeckung anzeigen, untersuchen Sie, welche Teile des Codes nicht ausgeführt werden, und schreiben Sie weitere Tests, um diese abzudecken. Entwicklungsteams streben normalerweise eine Codeabdeckung von ca. 80 % an. In einigen Situationen ist eine geringere Abdeckung akzeptabel. Beispielsweise ist eine geringere Abdeckung akzeptabel, wenn ein Teil des Codes aus einer Standardvorlage generiert wird.
 
 > [!TIP]
-> - Vergewissern Sie sich, dass die Compileroptimierung deaktiviert ist.
-> - Wenn Sie mit nicht verwaltetem (nativem) Code arbeiten, verwenden Sie einen Debugbuild.
-> - Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.
+> - Deaktivieren Sie die Compileroptimierung.
+> - Verwenden Sie ein Debugbuild, wenn Sie mit nicht verwaltetem (nativem) Code arbeiten.
+> - Erstellen Sie PDB-Dateien (Symboldateien) für jede Assembly.
 
-Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md). Vergessen Sie nicht, die Code Coverage nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.
+Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md).
+
+Vergessen Sie nicht, die Code Coverage nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.
 
 ## <a name="report-in-blocks-or-lines"></a>Berichterstellung in Blöcken oder in Zeilen
 
 Die Codeabdeckung wird in *Blöcken* gezählt. Ein Block ist ein Stück Code mit genau einem Einstiegs- und Endpunkt.  Wenn die Ablaufsteuerung des Programms einen Block während eines Testlaufs durchläuft, wird dieser Block als abgedeckt gezählt. Wie oft der Block verwendet wird, hat keinen Einfluss auf das Ergebnis.
 
-Die Ergebnisse können auch auf Zeilen bezogen angezeigt werden, wenn Sie in der Tabellenkopfzeile **Spalten hinzufügen/entfernen** auswählen. Werden im Testlauf alle Codeblöcke einer beliebigen Codezeile ausgeführt, zählt dies als eine Zeile. Wenn eine Zeile Codeblöcke enthält, von denen einige ausgeführt werden und andere nicht, zählt dies als Teilzeile.
+Die Ergebnisse können auch auf Zeilen bezogen angezeigt werden, wenn Sie in der Tabellenkopfzeile **Spalten hinzufügen/entfernen** auswählen. Manche Benutzer bevorzugen die Zählung in Zeilen, da die Prozentsätze genauer der Größe der Fragmente entsprechen, die im Quellcode angezeigt werden. Ein langer Block mit Berechnungen zählt als ein einzelner Block, selbst wenn er viele Zeilen einnimmt.
 
-Manche Benutzer bevorzugen die Zählung in Zeilen, da die Prozentsätze genauer der Größe der Fragmente entsprechen, die im Quellcode angezeigt werden. Ein langer Block mit Berechnungen zählt als ein einzelner Block, selbst wenn er viele Zeilen einnimmt.
+> [!TIP]
+> Eine Codezeile kann mehr als einen Codeblock enthalten. Wenn dies der Fall ist und der Testlauf alle Codeblöcke in der Zeile trainiert, wird sie als eine Zeile gezählt. Wenn nur manche Codeblöcke in der Zeile ausgeführt werden, wird sie als Teilzeile gezählt.
 
 ## <a name="manage-code-coverage-results"></a>Verwalten von Code Coverage-Ergebnissen
 

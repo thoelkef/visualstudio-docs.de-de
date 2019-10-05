@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840517"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787974"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Komponententests für JavaScript und TypeScript in Visual Studio
 
@@ -26,6 +26,7 @@ Folgende Frameworks werden unterstützt:
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (dieses Framework bezieht sich speziell auf Node.js-Tools für Visual Studio)
 
 > [!WARNING]
@@ -164,5 +165,11 @@ Klicken Sie dazu im Projektmappen-Explorer mit der rechten Maustaste auf den Pro
 
 Als Nächstes fügen Sie die Tests in den Teststammordner ein, den Sie angegeben haben, woraufhin sie im Fenster „Test-Explorer“ ausgeführt werden. Sollten sie anfänglich nicht angezeigt werden, müssen Sie das Projekt neu erstellen.
 
-> [!NOTE]
-> Dies funktioniert derzeit nicht für .NET Standard- und .NET Core-Projekte.
+### <a name="unit-test-net-core-and-net-standard"></a>Komponententests in .NET Core und .NET Standard
+Zusätzlich zu den oben genannten Eigenschaften müssen Sie auch das NuGet-Paket [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) installieren und die Eigenschaft festlegen:
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

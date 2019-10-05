@@ -9,36 +9,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3ef03b3833f30c1376bd3b2787f4ca773c992ef
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960436"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870669"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen
 
-Wenn Sie Erweiterungscode für Abhängigkeitsdiagramme schreiben, können Sie Werte mit jedem Element in einem Abhängigkeitsdiagramm speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Ferner können Sie diese Eigenschaften werden in der **Eigenschaften** Fenster, damit Benutzer anzeigen und bearbeiten können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Validierungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.
+Wenn Sie Erweiterungs Code für Abhängigkeits Diagramme schreiben, können Sie Werte mit jedem Element in einem Abhängigkeits Diagramm speichern. Die Werte bleiben erhalten, wenn das Diagramm gespeichert und erneut geöffnet wird. Diese Eigenschaften können auch im **Eigenschaften** Fenster angezeigt werden, damit Sie von Benutzern angezeigt und bearbeitet werden können. Beispielsweise können Sie Benutzer für jede Ebene einen regulären Ausdruck angeben lassen und Validierungscode schreiben, um sicherzustellen, dass die Namen der Klassen in jeder Ebene dem Muster entsprechen, das vom Benutzer angegeben wird.
 
 ## <a name="non-visible-properties"></a>Nicht sichtbare Eigenschaften
 
-Wenn Sie lediglich Ihren Code können Sie jedes Element in einem Abhängigkeitsdiagramm Werte zuordnen möchten, müssen Sie keine MEF-Komponente zu definieren. Es gibt ein Wörterbuch namens `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden.
+Wenn Sie möchten, dass Ihr Code nur Werte an ein beliebiges Element in einem Abhängigkeits Diagramm anfügt, müssen Sie keine MEF-Komponente definieren. Es ist ein Wörterbuch `Properties` mit dem Namen in [ilayerelement](/previous-versions/ff644511(v=vs.140))vorhanden. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Abhängigkeits Diagramms gespeichert.
 
-## <a name="editable-properties"></a>Bearbeitbaren Eigenschaften
+## <a name="editable-properties"></a>Bearbeitbare Eigenschaften
 
-**Erste Vorbereitung**
+**Anfängliche Vorbereitung**
 
 > [!IMPORTANT]
-> Um Eigenschaften anzuzeigen, stellen Sie die folgende Änderung auf jedem Computer, in dem Ebeneneigenschaften sichtbar sein soll:
+> Nehmen Sie die folgenden Änderungen an den einzelnen Computern vor, auf denen Ebeneneigenschaften angezeigt werden sollen, um die Eigenschaften anzuzeigen:
 >
-> 1. Führen Sie mithilfe von Editor **als Administrator ausführen**. Open *%ProgramFiles%\Microsoft Visual Studio [Version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
-> 2. In der **Content** Element hinzufügen:
+> 1. Führen Sie Notepad mithilfe von **als Administrator ausführen**aus. Öffnen Sie " *%ProgramFiles%\Microsoft Visual Studio [Version] \common7\ide\extensions\microsoft\architecture tools\extensibilityruntime\extension.vsixmanifest*".
+> 2. Fügen Sie im **Content** -Element Folgendes hinzu:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Unter den **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Developer-Eingabeaufforderung**. Geben Sie Folgendes ein:
+> 3. Öffnen Sie im **Visual Studio-Tools** Abschnitt des Visual Studio-Anwendungs Startmenüs **Developer-Eingabeaufforderung**. Geben Sie Folgendes ein:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -47,7 +47,7 @@ Wenn Sie lediglich Ihren Code können Sie jedes Element in einem Abhängigkeitsd
 
 **Stellen Sie sicher, dass Ihr Code in einem VSIX-Projekt ist.**
 
-Wenn die Eigenschaft Teil eines Befehls, Geste oder überprüfungsprojekt ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen einer benutzerdefinierten architekturvalidierung zu Abhängigkeitsdiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Wenn Ihre Eigenschaft Teil eines Befehls-, Gesten-oder Validierungs Projekts ist, müssen Sie nichts hinzufügen. Der Code für die benutzerdefinierte Eigenschaft sollte in einem Visual Studio-Erweiterungsprojekt definiert werden, das als MEF-Komponente definiert wird. Weitere Informationen finden Sie unter [Hinzufügen von Befehlen und Gesten zu Abhängigkeits Diagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oder [Hinzufügen einer benutzerdefinierten Architektur Validierung zu Abhängigkeits Diagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
 **Definieren der benutzerdefinierten Eigenschaft**
 
@@ -61,7 +61,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-Sie können Eigenschaften für <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> oder eine der abgeleiteten Klassen definieren, darunter folgende:
+Sie können Eigenschaften für [ilayerelement](/previous-versions/ff644511(v=vs.140)) oder eine der abgeleiteten Klassen definieren, die Folgendes umfassen:
 
 - `ILayerModel` - das Modell
 

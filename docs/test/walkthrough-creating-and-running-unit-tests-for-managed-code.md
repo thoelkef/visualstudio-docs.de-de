@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820947"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383724"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -34,7 +34,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Wählen Sie unter der Kategorie **Visual C#** > **.NET Core** aus, und wählen Sie dann die Projektvorlage **Konsolen-App (.NET Core)**.
+3. Wählen Sie unter der Kategorie **Visual C#** > **.NET Core** aus, und wählen Sie dann die Projektvorlage **Konsolen-App (.NET Core)** .
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie auf **OK**.
 
@@ -51,7 +51,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)**, und klicken Sie dann auf **Weiter**.
+3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)** , und klicken Sie dann auf **Weiter**.
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie dann auf **Erstellen**.
 
@@ -147,7 +147,7 @@ Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in die
 
 ::: moniker range="vs-2017"
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#** , und klicken Sie anschließend auf **Test**.
 
 3. Wählen Sie in der Liste der Vorlagen **MSTest Test Project (.NET Core)** aus.
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Erneut testen, umschreiben und neu analysieren
 
-Wenn ein Fehler in der getesteten Methode vorliegt und die `Debit`-Methode keine <xref:System.ArgumentOutOfRangeException> auslöst, muss keine korrekte Meldung mit der Ausnahme ausgegeben werden. Derzeit ist die Testmethode nicht für diesen Fall ausgelegt. Wenn der `debitAmount`-Wert gültig ist (d.h. kleiner als das Guthaben, jedoch größer als null), wird keine Ausnahme erfasst, sodass die Assertion nie reagiert. Die Testmethode ist trotzdem erfolgreich. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
+Wenn ein Fehler in der getesteten Methode vorliegt und die `Debit`-Methode keine <xref:System.ArgumentOutOfRangeException> auslöst, muss keine korrekte Meldung mit der Ausnahme ausgegeben werden. Derzeit ist die Testmethode nicht für diesen Fall ausgelegt. Wenn der `debitAmount`-Wert gültig ist (d. h. kleiner als das Guthaben, jedoch größer als 0 (null)), wird keine Ausnahme erfasst, sodass die Assertion nicht ausgelöst wird. Die Testmethode ist trotzdem erfolgreich. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.
 
 Dabei handelt es sich um einen Fehler der Testmethode. Um das Problem zu beheben, fügen Sie eine <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>-Assertion am Ende der Testmethode hinzu, um den Fall abzudecken, in dem keine Ausnahme ausgelöst wird.
 

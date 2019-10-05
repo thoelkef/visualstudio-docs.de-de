@@ -3,15 +3,15 @@ title: Deinstallieren von Visual Studio für Mac
 description: Anleitung zum Deinstallieren von Visual Studio für Mac und dazugehörigen Tools
 author: asb3993
 ms.author: amburns
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 65f5dedce42d6f2391c23bc82e37a5228bfe7242
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 7d86e5abbb25d8c348f550d28618aae614725471
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691907"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211512"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
 
@@ -57,7 +57,7 @@ Führen Sie die folgenden Schritte durch, um das Skript auszuführen:
     sudo ./uninstall-vsmac.sh
     ```
 
-4. Löschen Sie schließlich das Deinstallationsskript.
+4. Löschen Sie abschließend das Deinstallationsskript, und entfernen Sie Visual Studio für Mac aus dem Dock (sofern vorhanden).
 
 ### <a name="net-core-script"></a>.NET Core-Skript
 
@@ -222,6 +222,12 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+* * * 
+
+
+
+
 
 ## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Deinstallieren der Vorschauversion von Visual Studio 2019 für Mac
 

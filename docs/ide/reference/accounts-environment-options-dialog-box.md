@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792893"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604900"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Konten, Umgebung, Dialogfeld „Optionen“
 
@@ -33,7 +33,7 @@ Wenn diese Option aktiviert ist, ändert sich das Verhalten von Visual Studio, w
 
 ## <a name="registered-azure-clouds"></a>Registrierte Azure-Clouds
 
-In diesem Abschnitt werden die Azure-Cloudinstanzen gezeigt, auf die Sie über mindestens ein Konto zugreifen können, mit dem Sie sich bei Visual Studio angemeldet haben. Zum Beispiel verfügen Sie möglicherweise über Zugriff auf eine private Azure-Instanz im Rechenzentrum Ihres Unternehmens. Oder Sie verfügen über Zugriff auf eine Sovereign Cloud- oder Government Cloud-Instanz von Azure, z. B. Azure in China oder Azure US Government. Die globale Azure-Cloudinstanz wird standardmäßig in der Liste aufgeführt, und Sie können sie nicht entfernen.
+In diesem Abschnitt werden die Azure-Cloudinstanzen gezeigt, auf die Sie über mindestens ein Konto zugreifen können, mit dem Sie sich bei Visual Studio angemeldet haben. Zum Beispiel verfügen Sie möglicherweise über Zugriff auf eine private Azure-Instanz im Rechenzentrum Ihres Unternehmens. Sie verfügen vielleicht auch über Zugriff auf eine Sovereign Cloud- oder Government Cloud-Instanz von Azure, z. B. Azure China 21 Vianet oder Azure US Government. Die globale Azure-Cloudinstanz wird standardmäßig in der Liste aufgeführt, und Sie können sie nicht entfernen.
 
 Registrieren Sie eine zusätzliche Azure-Cloud, indem Sie auf **Hinzufügen** klicken. Im Dialogfeld **Neue Azure-Cloud hinzufügen** werden mehrere bekannte Azure-Cloudinstanzen aufgeführt, mit denen Sie eine Verbindung herstellen können. Sie können aber auch die URL zu einem privaten Azure-Endpunkt eingeben.
 
@@ -47,4 +47,3 @@ Nachdem Sie eine zusätzliche Azure-Cloud registriert haben, können Sie auswäh
 - [Anmelden bei Visual Studio](../signing-in-to-visual-studio.md)
 - [Arbeiten mit mehreren Benutzerkonten](../work-with-multiple-user-accounts.md)
 - [Umgebungseinstellungen](../environment-settings.md)
-- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)

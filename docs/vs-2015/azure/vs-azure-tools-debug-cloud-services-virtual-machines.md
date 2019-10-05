@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: cf4fb43148a4746d821b415391c0b69bdd7028e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec67549131b4c200da2b6b317e91d1ca67cdfbb0
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964384"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891010"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio
 
@@ -40,7 +40,8 @@ Der Emulator simuliert den Azure-Computedienst und wird in Ihrer lokalen Umgebun
 
 3. Durchlaufen Sie Ihre Anwendung schrittweise, indem Sie auf die Befehle im Menü **Debuggen** klicken und Haltepunkte in Ihrem Code setzen. Wenn Sie die Anwendung im Debugger schrittweise durchlaufen, werden die Bereiche mit dem aktuellen Status der Anwendung aktualisiert. Wenn Sie das Debuggen beenden, wird die Anwendungsbereitstellung gelöscht. Wenn Ihre Anwendung eine Webrolle umfasst und Sie als Startaktion das Starten des Webbrowsers festgelegt haben, startet Visual Studio Ihre Webanwendung im Browser. Wenn Sie die Anzahl der Instanzen einer Rolle in der Dienstkonfiguration ändern, müssen Sie den Clouddienst beenden und dann das Debuggen neu starten, damit Sie diese neuen Instanzen der Rolle debuggen können.
 
-    **Hinweis**: Wenn Sie das Ausführen oder Debuggen des Diensts beenden, werden der lokale Serveremulator und der Speicheremulator nicht beendet. Sie müssen explizit über den Infobereich beendet werden.
+    > [!NOTE]
+    > Wenn Sie das Ausführen oder Debuggen des Diensts beenden, werden der lokale Serveremulator und der Speicheremulator nicht beendet. Sie müssen explizit über den Infobereich beendet werden.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Debuggen eines Clouddiensts in Azure
 
@@ -146,7 +147,8 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
     ![Dialogfeld "Neues ASP.NET-Webprojekt erstellen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Hinweis**: Sie werden aufgefordert, sich bei Ihrem Azure-Konto anzumelden, wenn Sie noch nicht angemeldet sind.
+    > [!NOTE]
+    > Sie werden aufgefordert, sich bei Ihrem Azure-Konto anzumelden, wenn Sie noch nicht angemeldet sind.
 
 3. Wählen Sie die verschiedenen Einstellungen für den virtuellen Computer aus, und klicken Sie dann auf **OK**. Weitere Informationen finden Sie unter [Virtuelle Computer](http://go.microsoft.com/fwlink/?LinkId=623033) .
 

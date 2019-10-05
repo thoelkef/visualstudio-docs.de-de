@@ -1,5 +1,5 @@
 ---
-title: "\"Editorconfig\" im Vergleich zu Analysen"
+title: Editor config und Analysen
 ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,55 +9,55 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec9296f15c48cf3b327c78cd0ce7d57adafa002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571471"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062166"
 ---
-# <a name="analyzers-faq"></a>FAQ zu Analysetools
+# <a name="code-analysis-faq"></a>FAQ zur Code Analyse
 
-Diese Seite enthält Antworten auf einige häufig gestellten Fragen zu Roslyn-Analysetools in Visual Studio.
+Diese Seite enthält Antworten auf einige häufig gestellte Fragen zur .NET Compiler Platform basierten Code Analyse in Visual Studio.
 
-## <a name="roslyn-analyzers-versus-editorconfig"></a>Roslyn-Analysetools im Vergleich zu editorconfig
+## <a name="code-analysis-versus-editorconfig"></a>Code Analyse im Vergleich zu Editor config
 
-**Q**: Roslyn-Analysetools oder editorconfig für das Codeformat soll ich verwenden?
+**F**: Sollte ich die Code Analyse oder editorconfig zum Überprüfen des Code Formats verwenden?
 
-**A**: Roslyn-Analysetools und editorconfig-Dateien arbeiten Hand in Hand. Beim Definieren von Codeformate [in einer editorconfig-Datei](../ide/editorconfig-code-style-settings-reference.md) oder auf die [Text-Editor-Optionen](../ide/code-styles-and-quick-actions.md) Seite konfigurieren Sie tatsächlich die Roslyn-Analysetools, die in Visual Studio integriert sind. EditorConfig-Dateien können auch verwendet werden, um einige Pakete von Drittanbietern Analyzer zu konfigurieren, z. B. [FxCop-Analysetools](configure-fxcop-analyzers.md).
+**A**: Code Analyse-und Editor config-Dateien arbeiten Hand in Hand. Wenn Sie Code Stile [in einer editorconfig-Datei](../ide/editorconfig-code-style-settings-reference.md) oder auf der [Options Seite Text-Editor](../ide/code-styles-and-code-cleanup.md) definieren, konfigurieren Sie tatsächlich die in Visual Studio integrierten Code-Analysen. Editor config-Dateien können auch verwendet werden, um einige nuget Analyzer-Pakete (z. b. [FxCop-Analysen](configure-fxcop-analyzers.md)) zu konfigurieren.
 
-## <a name="editorconfig-versus-rule-sets"></a>"Editorconfig" im Vergleich zu Regelsätzen
+## <a name="editorconfig-versus-rule-sets"></a>Editor config im Vergleich zu Regelsätzen
 
-**Q**: Sollte ich meine Analysen mit einem Regelsatz oder eine editorconfig-Datei konfigurieren?
+**F**: Sollten meine Analysen mithilfe eines Regelsatzes oder einer Editor config-Datei konfiguriert werden?
 
-**A**: Regelsätze und editorconfig-Dateien sind sich gegenseitig ausschließende Möglichkeiten zum Konfigurieren von Analysen. Sie können gleichzeitig vorhanden sein. [-Regelsätze](analyzer-rule-sets.md) können Sie aktivieren oder Deaktivieren von Regeln aus, und legen Sie ihren Schweregrad. EditorConfig-Dateien bieten weitere Informationen zum Konfigurieren von Regeln. Editorconfig-Dateien für FxCop-Analyzer können Sie [definieren, welche Arten von Code zum Analysieren von](fxcop-analyzer-options.md). Editorconfig-Dateien für die Analyzer, die in Visual Studio integriert sind, können Sie [definieren Sie die bevorzugte Codeformate](../ide/editorconfig-code-style-settings-reference.md) für eine Codebasis.
+**A**: Regelsätze und Editor config-Dateien können gleichzeitig vorhanden sein und können zum Konfigurieren von Analysemodulen verwendet werden. [Regelsätze](analyzer-rule-sets.md) ermöglichen das Aktivieren und Deaktivieren von Regeln und das Festlegen Ihres schwere Grads. Editor config-Dateien bieten andere Möglichkeiten zum Konfigurieren von Regeln. Für FxCop-Analyzers können Sie mit Editor config-Dateien [definieren, welche Arten von Code analysiert](fxcop-analyzer-options.md)werden. Bei den Code-Formatvorlagen, die in Visual Studio integriert sind, können Sie mit Editor config-Dateien [die bevorzugten Code Stile für eine Codebasis definieren](../ide/editorconfig-code-style-settings-reference.md) .
 
-Zusätzlich zu den Regelsätze und editorconfig-Dateien, manche Analysetools von Drittanbietern konfiguriert werden, durch die Verwendung von Textdateien als [zusätzliche Dateien](../ide/build-actions.md#build-action-values) für die C# - und VB-Compiler.
+Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen durch die Verwendung von Textdateien konfiguriert, die als [zusätzliche Dateien](../ide/build-actions.md#build-action-values) für C# die Compiler-und VB-Compiler gekennzeichnet sind.
 
 > [!NOTE]
-> EditorConfig-Dateien können nicht verwendet werden, so konfigurieren Sie Regeln für die statische Codeanalyse, dagegen Regelsätze können.
+> Editor config-Dateien können nicht zum Konfigurieren der Legacy Analyse verwendet werden, wohingegen Regelsätze dies möglich macht.
 
-## <a name="analyzers-in-ci-builds"></a>Analysetools in CI-builds
+## <a name="code-analysis-in-ci-builds"></a>Code Analyse in CI-Builds
 
-**Q**: Funktionieren die Analysetools in continuous Integration (CI)-Builds?
+**F**: Funktioniert die .NET Compiler Platform basierte Code Analyse in Continuous Integration (CI)-Builds?
 
-**A**: Ja. Für Analyzer, die aus einem NuGet-Paket installiert sind, werden diese Regeln [erzwungen, die zum Zeitpunkt der Erstellung](roslyn-analyzers-overview.md#build-errors), einschließlich während eines CI-Builds. Analysetools in CI-Builds Respekt-Regelkonfiguration aus beiden verwendet [-Regelsätze](analyzer-rule-sets.md) und [editorconfig-Dateien](configure-fxcop-analyzers.md). Derzeit werden die codeanalyzer, die in Visual Studio erstellt wurden, sind nicht verfügbar ist, als NuGet-Paket, und diese Regeln sind also nicht durchsetzbar, in einem CI-Build.
+**A**: Ja. Bei Analysemodulen, die von einem nuget-Paket installiert werden, werden diese Regeln [zur Buildzeit erzwungen](roslyn-analyzers-overview.md#build-errors), einschließlich während eines CI-Builds. Die in CI verwendeten Analyzers erstellen die Regel Konfiguration sowohl aus [Regelsätzen](analyzer-rule-sets.md) als auch aus [Editor config-Dateien](configure-fxcop-analyzers.md). Derzeit sind die in Visual Studio integrierten Code Analysen nicht als nuget-Paket verfügbar, sodass diese Regeln in einem CI-Build nicht durchsetzbar sind.
 
-## <a name="ide-analyzers-versus-stylecop"></a>IDE-Analysetools im Vergleich zu StyleCop
+## <a name="ide-analyzers-versus-stylecop"></a>IDE-Analysen im Vergleich zu StyleCop
 
-**Q**: Was ist der Unterschied zwischen der IDE von Visual Studio Code-Analyzer und die StyleCop-Analyzer?
+**F**: Worin besteht der Unterschied zwischen den Visual Studio-IDE-Code-Analyzern und StyleCop-Analyzern?
 
-**A**: Visual Studio-IDE enthält integrierte Analysen, die für beide Stil und die Qualität von codeproblemen aussehen. Diese Regeln können Sie neue Sprachfeatures verwenden, wie sie eingeführt werden, und verbessern die Verwaltbarkeit des Codes. IDE-Analysetools werden fortlaufend aktualisiert, mit jeder Version von Visual Studio.
+**A**: Die Visual Studio-IDE enthält integrierte Analysen, die sowohl Code-als auch Qualitätsprobleme suchen. Diese Regeln helfen Ihnen, neue sprach Features zu verwenden, wenn Sie eingeführt werden, und die Wartbarkeit Ihres Codes zu verbessern. IDE-Analysen werden ständig mit jeder Visual Studio-Version aktualisiert.
 
-[StyleCop-Analysetools](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) Drittanbieter-Analyzer als NuGet-Paket installiert, die Konsistenz der Stil in Ihrem Code untersucht werden. Im Allgemeinen können mit StyleCop-Regeln Sie persönliche Einstellungen für einen Code Basis festlegen, ohne dabei einen Stil über ein anderes zu empfehlen.
+[StyleCop-Analysen](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) sind Analysen von Drittanbietern, die als nuget-Paket installiert werden und die Stilkonsistenz in Ihrem Code überprüfen. Im Allgemeinen können Sie mit StyleCop-Regeln persönliche Einstellungen für eine Codebasis festlegen, ohne einen Stil über einen anderen zu empfehlen.
 
-## <a name="analyzers-versus-static-code-analysis"></a>Analysetools im Vergleich zur Analyse von statischem code
+## <a name="code-analyzers-versus-legacy-analysis"></a>Code Analysetools und Legacy Analyse
 
-**Q**: Was ist der Unterschied zwischen Analyzer und Analyse von statischem Code?
+**F**: Worin besteht der Unterschied zwischen der Legacy Analyse und der .NET Compiler Platform basierten Code Analyse?
 
-**A**: Analysetools analysieren Quellcode in Echtzeit und während der Kompilierung, während der Analyse von statischem Code Binärdateien analysiert wird, nachdem der Build abgeschlossen wurde. Weitere Informationen finden Sie unter [Roslyn-Analysetools im Vergleich zu statischer Codeanalyse](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis) und [FxCop-Analyzer – häufig gestellte Fragen](fxcop-analyzers-faq.md).
+**A**: die .NET Compiler Platform basierte Code Analyse analysiert den Quellcode in Echtzeit und während der Kompilierung, während die Legacy Analyse Binärdateien analysiert, nachdem der Build abgeschlossen wurde. Weitere Informationen finden Sie unter [.NET Compiler Platform-basierte Analyse](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) und häufig gestellte Fragen zu den [FxCop-Analysen](fxcop-analyzers-faq.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über die Analysetools](roslyn-analyzers-overview.md)
+- [Übersicht über Analyzers](roslyn-analyzers-overview.md)
 - [Einstellungen für die .NET-Codierungskonventionen für EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

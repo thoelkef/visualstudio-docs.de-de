@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261987"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533371"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -66,13 +66,13 @@ Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann 
     Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
     ::: moniker-end
 
-    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
     ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
 
 * Die Node.js-Laufzeit muss installiert sein.
 
-    Dieses Tutorial wurde mit der Version 8.11.2 getestet.
+    Dieses Tutorial wurde mit der Version 10.16.0 getestet.
 
     Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
 
@@ -318,7 +318,19 @@ In den vorherigen Schritten haben Sie dem Projekt die Datei *webpack-config.js* 
 
     ![Laden geänderter Dateien](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-Bei jeder Änderung, die Sie an *app.tsx* vornehmen, müssen Sie den Webpack-Befehl erneut ausführen.
+Bei jeder Änderung, die Sie an *app.tsx* vornehmen, müssen Sie den Webpack-Befehl erneut ausführen. Fügen Sie zum Automatisieren dieses Schritts eine Buildskript hinzu, um JSX zu transpilieren.
+
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>Hinzufügen eines Buildskripts zum Transpilieren von JSX
+
+Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Erstellen von Visual Studio transpilieren, anstatt JSX über die Befehlszeile (wie im vorherigen Abschnitt gezeigt) zu transpilieren.
+
+* Öffnen Sie *package.json*, und fügen Sie nach Abschnitt `dependencies` den folgenden Abschnitt ein:
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
 
 ## <a name="run-the-app"></a>Ausführen der App
 
@@ -331,7 +343,7 @@ Bei jeder Änderung, die Sie an *app.tsx* vornehmen, müssen Sie den Webpack-Bef
     ![Auswählen von Chrome als Debugziel](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Wenn Chrome auf Ihrem Computer verfügbar ist, jedoch nicht als Option angezeigt wird, wählen Sie aus der Dropdownliste für das Debugziel **Browserauswahl** aus, und klicken Sie dann auf Chrome, um diesen Browser als Standardbrowser festzulegen (wählen Sie dazu **Als Standard festlegen** aus).
+    Wenn Chrome auf Ihrem Computer verfügbar ist, jedoch nicht als Option angezeigt wird, wählen Sie aus der Dropdownliste für das Debugziel **Web Browser (browsername)**  > **Google Chrome** (Webbrowser (Browsername) > Google Chrome) aus, und wählen Sie dann Chrome als das Standardbrowserziel fest.
 
 1. Drücken Sie zum Ausführen der App **F5** (**Debuggen** > **Debuggen starten**), oder klicken Sie auf die Schaltfläche mit dem grünen Pfeil.
 

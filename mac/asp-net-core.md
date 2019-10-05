@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 9dcd1b65e9d8ea60f082304b4f84a7108efb99a6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692942"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913315"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -38,7 +38,7 @@ Es gibt einige Projekte, die eine vorgefertigte Vorlage zum Erstellen einer ASP.
 
 ![ASP.NET-Projektoptionen](media/asp-net-core-2019-new-asp-core.png)
 
-Klicken Sie auf die **leere ASP.NET Core-Webanwendung** und dann auf **Weiter**. Benennen Sie das Projekt, und klicken Sie auf **Erstellen**. Dadurch wird eine neue ASP.NET Core-Anwendung erstellt, die in etwa so aussehen sollte wie auf folgendem Bild:
+Klicken Sie auf die **leere ASP.NET Core-Webanwendung** und dann auf **Weiter**. Benennen Sie das Projekt, und klicken Sie auf **Erstellen**. Dadurch wird eine neue ASP.NET Core-App erstellt. Erweitern Sie im linken Bereich des Lösungspads den zweiten Pfeil, und wählen Sie dann **Startup.cs** aus. Es sollte ähnlich wie diese Abbildung aussehen:
 
 ![Ansicht „Neue leere ASP.NET Core-Anwendung“](media/asp-net-core-2019-empty-project.png)
 

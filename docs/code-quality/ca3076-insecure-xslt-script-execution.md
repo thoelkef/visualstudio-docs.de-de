@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c6c5df0109a8cff3cefcc308ea27077ef0fbe03
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541089"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237081"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung.
 
@@ -21,31 +21,31 @@ ms.locfileid: "62541089"
 |TypeName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .NET-Anwendungen ausführen, könnte der Prozessor möglicherweise nicht vertrauenswürdige URI-Verweise auflösen, wodurch Angreifern sensible Informationen offengelegt werden könnten, was wiederum zu Denial-of-Service- und Cross-Site-Angriffen führen kann. Weitere Informationen finden Sie unter [XSLT-Sicherheit Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations).
+Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .NET-Anwendungen ausführen, könnte der Prozessor möglicherweise nicht vertrauenswürdige URI-Verweise auflösen, wodurch Angreifern sensible Informationen offengelegt werden könnten, was wiederum zu Denial-of-Service- und Cross-Site-Angriffen führen kann. Weitere Informationen finden Sie unter [XSLT-Sicherheitsüberlegungen (. net Guide)](/dotnet/standard/data/xml/xslt-security-considerations).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-**XSLT** ist ein W3C-Standard (World Wide Web Consortium) zum Transformieren von XML-Daten. XSLT wird normalerweise verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate wie HTML, Text mit fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
+**XSLT** ist ein W3C-Standard (World Wide Web Consortium) zum Transformieren von XML-Daten. XSLT wird in der Regel verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate (z. b. html, Text mit fester Länge, durch Trennzeichen getrennten Text oder ein anderes XML-Format) zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
 
-Um sicherzustellen, können Sie keine Angriffsfläche, mit dieser Regel wird ausgelöst, wenn die "XslCompiledTransform".<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Unsichere Kombinationen aus empfängt <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung von bösartigen Skripts.
+Um sicherzustellen, dass Sie keine Angriffsfläche verfügbar machen, wird diese Regel immer dann ausgelöst, wenn XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> empfängt unsichere Kombinations Instanzen von <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung bösartiger Skripts ermöglicht wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings an.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer Instanz, die Dokument-Funktion und Skript die Ausführung deaktiviert wurde.
+- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer-Instanz, die die Dokument Funktion und Skriptausführung deaktiviert hat.
 
 - Ersetzen Sie das <xref:System.Xml.XmlResolver> -Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver> -Instanz.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie eine Regel aus dieser Warnung niemals, es sei denn, Sie sind ganz sicher, dass die Eingabe von einer vertrauenswürdigen Quelle stammt.
 
 ## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
 
-### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Verletzung, die XsltSettings.TrustedXslt verwendet.
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Verstoß, bei dem XsltSettings. treudxslt verwendet wird
 
 ```csharp
 using System.Xml;
@@ -66,7 +66,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution-that-uses-xsltsettingsdefault"></a>Lösung, die XsltSettings.Default verwendet.
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Projekt Mappe, die XsltSettings. default verwendet
 
 ```csharp
 using System.Xml;
@@ -87,7 +87,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Verletzung&mdash;Dokumentieren der Dokumentfunktion und skriptausführung Ausführung nicht deaktiviert.
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Verstoß&mdash;gegen Dokument Funktion und Skriptausführung nicht deaktiviert
 
 ```csharp
 using System.Xml;
@@ -112,7 +112,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Lösung&mdash;Dokument Dokumentfunktion und skriptausführung ausführen deaktivieren
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Lösung&mdash;Deaktivieren der Dokument Funktion und Skriptausführung
 
 ```csharp
 using System.Xml;
@@ -141,4 +141,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XSLT-Sicherheitsaspekte (Handbuch für die .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [XSLT-Sicherheitsüberlegungen (. net-Leitfaden)](/dotnet/standard/data/xml/xslt-security-considerations)

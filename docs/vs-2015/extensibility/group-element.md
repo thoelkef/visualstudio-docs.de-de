@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204280"
 ---
 # <a name="group-element"></a>Group-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +40,14 @@ Definiert eine Gruppe der VSPackage-Befehl.
 |---------------|-----------------|  
 |guid|Erforderlich. GUID der Befehls-ID der GUID-ID.|  
 |id|Erforderlich. ID des Befehls-ID der GUID-ID.|  
-|priority|Dies ist optional. Ein numerischer Wert, der die Priorität angibt.|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|priority|Optional. Ein numerischer Wert, der die Priorität angibt.|  
+|Bedingung|Optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|Übergeordnetes Element|Dies ist optional. Das übergeordnete Element der Schaltfläche.|  
+|Übergeordnetes Element|Optional. Das übergeordnete Element der Schaltfläche.|  
 |Anmerkung|Optionaler Kommentar.|  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  

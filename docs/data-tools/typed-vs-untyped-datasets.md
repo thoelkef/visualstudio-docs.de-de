@@ -11,34 +11,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6a16b8f0752ca2ab063f8bbbaa966836856eb4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c5ae8c665c195a1a50e02afda97ec34ac163297
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565807"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252920"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typisierte Datasets im Vergleich zu nicht typisierten Datasets
-Ein typisiertes Dataset ist ein Dataset, das zuerst von der Basisklasse abgeleitet ist <xref:System.Data.DataSet> Klasse, und klicken Sie dann mithilfe von Informationen aus der **Dataset-Designer**, die in einer XSD-Datei zum Generieren einer neuen gespeichert wird stark typisierte Dataset-Klasse. Informationen aus dem Schema (Tabellen, Spalten usw.) generiert und in diese neue Datasetklasse als einen Satz von Eigenschaften und Objekte erster Klasse kompiliert. Da ein typisiertes Dataset von der Basisklasse erbt <xref:System.Data.DataSet> -Klasse übernimmt die typisierte Klasse die Funktionalität der <xref:System.Data.DataSet> Klasse mit Methoden, die eine Instanz von verwendet werden kann, und wählen Sie eine <xref:System.Data.DataSet> Klasse als Parameter.
+Ein typisiertes DataSet ist ein DataSet, das zuerst von der Basis <xref:System.Data.DataSet> Klasse abgeleitet wird, und dann Informationen aus der in einer XSD-Datei gespeicherten **DataSet-Designer**verwendet, um eine neue, stark typisierte DataSet-Klasse zu generieren. Informationen aus dem Schema (Tabellen, Spalten usw.) werden generiert und in diese neue DataSet-Klasse als Satz von Objekten und Eigenschaften der ersten Klasse kompiliert. Da ein typisiertes DataSet von der Basis <xref:System.Data.DataSet> Klasse erbt, übernimmt die typisierte Klasse die gesamte Funktionalität <xref:System.Data.DataSet> der-Klasse und kann mit Methoden verwendet werden, die eine Instanz einer <xref:System.Data.DataSet> Klasse als Parameter annehmen.
 
- Ein nicht typisiertes Dataset, weist im Gegensatz dazu keine entsprechenden integrierten Schema auf. Wie Sie in ein typisiertes Dataset enthält ein nicht typisiertes Dataset Tabellen, Spalten und So weiter, aber diese werden nur als Sammlungen verfügbar gemacht. (Aber nachdem Sie manuell in den Tabellen und andere Datenelemente in einer nicht typisierten Dataset erstellt haben, können Sie die Struktur des als Exportieren eines Schemas mithilfe des Datasets <xref:System.Data.DataSet.WriteXmlSchema%2A> Methode.)
+Ein nicht typisiertes DataSet hat dagegen kein entsprechendes integriertes Schema. Wie bei einem typisierten DataSet enthält ein nicht typisiertes Dataset Tabellen, Spalten usw. – Diese werden jedoch nur als Auflistungen verfügbar gemacht. (Nachdem Sie jedoch die Tabellen und anderen Datenelemente in einem nicht typisierten Dataset manuell erstellt haben, können Sie die Struktur des Datasets mithilfe der- <xref:System.Data.DataSet.WriteXmlSchema%2A> Methode des Datasets als Schema exportieren.)
 
-## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Kontrast-Datenzugriff in typisierte und nicht typisierte datasets
- Die Klasse für ein typisiertes Dataset verfügt über ein Objektmodell, das in der die Eigenschaften auf die tatsächlichen Namen der Tabellen und Spalten übernehmen. Wenn Sie mit einem typisierten Dataset arbeiten, können Sie z. B. eine Spalte verweisen, mit Code wie den folgenden:
+## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Vergleichen des Datenzugriffs in typisierten und nicht typisierten Datasets
+Die-Klasse für ein typisiertes Dataset verfügt über ein Objektmodell, in dem die Eigenschaften die tatsächlichen Namen der Tabellen und Spalten übernehmen. Wenn Sie z. b. mit einem typisierten Dataset arbeiten, können Sie auf eine Spalte verweisen, indem Sie Code wie den folgenden verwenden:
 
- [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
- [!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
+[!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
+[!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
 
- Im Gegensatz dazu, wenn Sie mit einem nicht typisierten Dataset arbeiten, ist der entsprechende Code:
+Wenn Sie hingegen mit einem nicht typisierten Dataset arbeiten, lautet der entsprechende Code:
 
- [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
- [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
+[!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
+[!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
- Zugriff auf typisierte Datasets ist nicht nur, leichter zu lesen, aber auch vollständig von IntelliSense in Visual Studio unterstützt **Code-Editor**. Einfacher zu verwenden, sondern stellt die Syntax für das typisierte Dataset für die typüberprüfung zur Kompilierzeit stark verringert die Wahrscheinlichkeit von Fehlern beim Zuweisen von Werten zu Dataset-Elemente bereit. Wenn Sie den Namen einer Spalte in Ihrer <xref:System.Data.DataSet> Klasse und die Anwendung anschließend kompilieren, erhalten Sie einen Buildfehler. Durch Doppelklicken auf den Buildfehler in der **Aufgabenliste**, wechseln Sie direkt zu der Zeile oder die Codezeilen, die Namen der alten Spalte verweisen. Zugriff auf Tabellen und Spalten in einem typisierten Dataset ist darüber hinaus zur Laufzeit etwas schneller, da Zugriff zum Zeitpunkt der Kompilierung nicht über Auflistungen zur Laufzeit bestimmt wird.
+Der typisierte Zugriff ist nicht nur leichter lesbar, sondern wird auch vollständig von IntelliSense im **Code-Editor**von Visual Studio unterstützt. Die Syntax für das typisierte DataSet ist nicht nur einfacher zu arbeiten, sondern stellt die Typüberprüfung zur Kompilierzeit bereit, wodurch die Wahrscheinlichkeit von Fehlern beim Zuweisen von Werten zu datasetmembern erheblich reduziert wird. Wenn Sie den Namen einer Spalte in <xref:System.Data.DataSet> der Klasse ändern und dann die Anwendung kompilieren, erhalten Sie einen Buildfehler. Wenn Sie in der **Aufgabenliste**auf den Buildfehler doppelklicken, können Sie direkt zu den Zeilen oder Codezeilen wechseln, die auf den alten Spaltennamen verweisen. Der Zugriff auf Tabellen und Spalten in einem typisierten DataSet wird zur Laufzeit ebenfalls etwas beschleunigt, da der Zugriff zur Kompilierzeit und nicht über Auflistungen zur Laufzeit bestimmt wird.
 
- Obwohl typisierten "Datasets" viele Vorteile haben, ist ein nicht typisiertes Dataset in einer Vielzahl von Situationen nützlich. Das offensichtlichste Szenario ist, wenn kein Schema für das Dataset verfügbar ist. Dies kann beispielsweise auftreten, wenn Ihre Anwendung interagiert mit einer Komponente, die einen Dataset zurückgibt, aber Sie wissen nicht, im Voraus dessen Struktur. Auf ähnliche Weise, es gibt Zeiten, wenn Sie mit Daten arbeiten, die nicht über eine statische, vorhersagbare Struktur verfügt. In diesem Fall ist es unpraktisch, dass ein typisiertes Dataset verwenden, da Sie müssten die typisierte Dataset-Klasse bei jeder Änderung der Datenstruktur generieren.
+Obwohl typisierte Datasets viele Vorteile haben, ist ein nicht typisiertes Dataset in einer Vielzahl von Situationen nützlich. Das offensichtlichste Szenario ist, wenn kein Schema für das Dataset verfügbar ist. Dies kann z. b. der Fall sein, wenn die Anwendung mit einer Komponente interagiert, die ein DataSet zurückgibt, Sie aber nicht im Voraus wissen, was die Struktur ist. Ebenso gibt es Zeiten, in denen Sie mit Daten arbeiten, die nicht über eine statische, vorhersagbare Struktur verfügen. In diesem Fall ist es unpraktisch, ein typisiertes DataSet zu verwenden, da Sie die typisierte DataSet-Klasse mit jeder Änderung in der Datenstruktur neu generieren müssten.
 
- Allgemeiner ausgedrückt, fallen oft können Sie ein Dataset dynamisch erstellt, ohne ein Schema zur Verfügung. In diesem Fall ist das Dataset einfach einer praktischen Struktur, in der Sie Informationen beibehalten können, solange die Daten in einer relationalen Weise dargestellt werden können. Zur gleichen Zeit können Sie nutzen das Dataset-Funktionen, z. B. die Möglichkeit zum Serialisieren von des Daten für die Übergabe an einen anderen Prozess oder eine XML-Datei geschrieben.
+Im Allgemeinen gibt es viele Male, wenn Sie ein DataSet dynamisch erstellen können, ohne ein Schema verfügbar zu machen. In diesem Fall ist das Dataset einfach eine bequeme Struktur, in der Sie Informationen aufbewahren können, solange die Daten auf relationale Weise dargestellt werden können. Gleichzeitig können Sie die Funktionen des Datasets nutzen, z. b. die Möglichkeit, die Informationen zu serialisieren, um Sie an einen anderen Prozess zu übergeben, oder eine XML-Datei zu schreiben.
 
 ## <a name="see-also"></a>Siehe auch
 

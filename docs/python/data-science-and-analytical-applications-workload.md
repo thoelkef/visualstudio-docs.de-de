@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958314"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154876"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installieren von Data Science-Unterstützung in Visual Studio
 
@@ -94,7 +94,7 @@ Verwenden Sie den Visual Studio-Installer, um die Workload **Datenspeicherung un
 
 ![Workload von Datenspeicherung und -verarbeitung](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Workloadoptionen von Datenspeicherung und -verarbeitung](media/workload/data-storage-workload-options.png)
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 ::: moniker range="vs-2017"
 - [Arbeiten mit SQL Server und R](../rtvs/integrating-sql-server-with-r.md)
@@ -106,7 +106,7 @@ Weitere Informationen finden Sie unter:
 
 Für Data Science sind zusätzlich zu dem, was die Workload „Data Science und analytische Anwendungen“ unmittelbar bietet, auch der Dienst „Azure Notebooks“ sowie das „Azure SDK für Python“ nützlich.
 
-Das Azure SDK für Python vereinfacht die Nutzung und Verwaltung von Microsoft Azure-Diensten in Anwendungen unter Windows, Mac und Linux. Weitere Informationen finden Sie unter [Azure SDK für Python](../python/azure-sdk-for-python.md).
+Das Azure SDK für Python vereinfacht die Nutzung und Verwaltung von Microsoft Azure-Diensten in Anwendungen unter Windows, Mac und Linux. Weitere Informationen finden Sie unter [Azure SDK für Python](/azure/python/).
 
 Azure Notebooks (zurzeit als Vorschau verfügbar) bietet kostenlosen Onlinezugriff auf die Anwendung „Jupyter Notebooks“, die in der Cloud auf Microsoft Azure ausgeführt wird. Der Dienst enthält Beispiel-Notebooks in den Sprachen Python, R und F#, um Ihnen den Einstieg zu erleichtern. Besuchen Sie die Seite [notebooks.azure.com](https://notebooks.azure.com/).
 

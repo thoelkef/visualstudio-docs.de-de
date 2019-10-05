@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841966"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234076"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.
 
@@ -32,35 +32,35 @@ ms.locfileid: "65841966"
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Kategorie|Microsoft.Naming|
-|Unterbrechende Änderung|Wichtige – Wenn auf Schnittstellen ausgelöst.<br /><br /> Nicht unterbrechend – Wenn für den generischen Parameter des Typs ausgelöst.|
+|Unterbrechende Änderung|Unterbrechen: beim Auslösen für Schnittstellen.<br /><br /> Nicht unterbrechend: Wenn Sie für generische Typparameter ausgelöst werden.|
 
 ## <a name="cause"></a>Ursache
 
-Der Name einer Schnittstelle beginnt nicht mit einem Großbuchstaben "I".
+Der Name einer Schnittstelle beginnt nicht mit dem Großbuchstaben "I".
 
-- oder - 
+- oder -
 
-Der Name des eine [generischen Typparameter](/dotnet/csharp/programming-guide/generics/generic-type-parameters) von einem Typ oder die Methode beginnt nicht mit einem Großbuchstaben ' t '.
+Der Name eines [generischen Typparameters](/dotnet/csharp/programming-guide/generics/generic-type-parameters) für einen Typ oder eine Methode beginnt nicht mit einem Großbuchstaben "t".
 
-Diese Regel nur sucht standardmäßig an extern sichtbaren Schnittstellen, Typen und Methoden, dies ist jedoch [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Schnittstellen, Typen und Methoden, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Starten die Namen der bestimmte Programmierelemente gemäß der Konvention mit einem bestimmten Präfix.
+Gemäß der Konvention beginnen die Namen bestimmter Programmier Elemente mit einem bestimmten Präfix.
 
-Schnittstellennamen sollte mit einem großen gestartet werden die 'I' einen anderen Großbuchstabe folgen. Diese Regel wird berichtet, Verstöße für Schnittstellennamen, z. B. "MyInterface" und "IsolatedInterface".
+Schnittstellennamen müssen mit einem Großbuchstaben "I" gefolgt von einem anderen Großbuchstaben beginnen. Diese Regel meldet Verstöße gegen Schnittstellennamen wie "MyInterface" und "IsolatedInterface".
 
-Namen generischer Typparameter sollte mit einem Großbuchstaben beginnen ' t ' und kann optional von einem anderen Großbuchstaben gefolgt werden. Diese Regel wird berichtet, Verstöße für den Namen des generischen Typs Parameter wie z. B. 'V' und 'Typ'.
+Generische Typparameter Namen sollten mit einem Großbuchstaben "t" beginnen, und optional kann ein anderer Großbuchstabe befolgt werden. Diese Regel meldet Verstöße gegen generische Typparameter Namen wie z. b. "V" und "Type".
 
 Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysetools](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihres Codes diese Regel analysiert. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie konfigurieren, welche Teile des Codes von dieser Regel analysiert werden. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
-### <a name="single-character-type-parameters"></a>Typparameter für einzelne Zeichen
+### <a name="single-character-type-parameters"></a>Typparameter mit einem Zeichen
 
-Sie können, ob Parameter vom Typ der einzelnen Zeichen dieser Regel auszuschließen oder nicht konfigurieren. Um beispielsweise anzugeben, dass diese Regel *sollte nicht* Parameter vom Typ der einzelnen Zeichen zu analysieren, fügen Sie einen der folgenden Schlüssel-Wert-Paare in einer editorconfig-Datei in Ihrem Projekt hinzu:
+Sie können konfigurieren, ob Typparameter mit einem einzelnen Zeichen aus dieser Regel ausgeschlossen werden sollen. Um beispielsweise anzugeben, dass diese Regel *keine* Typparameter mit einem einzelnen Zeichen analysieren soll, fügen Sie einer editorconfig-Datei in Ihrem Projekt eines der folgenden Schlüssel-Wert-Paare hinzu:
 
 ```ini
 # Package version 2.9.0 and later
@@ -71,49 +71,49 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Diese Regel löst nie für einen Typparameter, der mit dem Namen `T`, z. B. `Collection<T>`.
+> Diese Regel wird für einen Typparameter mit dem `T`Namen nie ausgelöst, `Collection<T>`z. b.
 
 ### <a name="api-surface"></a>API-Oberfläche
 
-Sie können konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Sie können basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren.
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Benennen Sie den Bezeichner, damit es ordnungsgemäß vorangestellt ist.
+Benennen Sie den Bezeichner so um, dass er ordnungsgemäß vorangestellt ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
-## <a name="interface-naming-example"></a>Benennungskonventionen Beispiel für Schnittstelle
+## <a name="interface-naming-example"></a>Beispiel für Schnittstellen Benennung
 
-Der folgende Codeausschnitt zeigt eine falsch benannte Schnittstelle:
+Der folgende Code Ausschnitt zeigt eine falsch benannte Schnittstelle:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-Der folgende Codeausschnitt korrigiert der vorherige Verstoß, indem Sie die Schnittstelle 'I' voranstellen:
+Der folgende Code Ausschnitt korrigiert die vorherige Verletzung, indem die Schnittstelle mit "I" vorangestellt wird:
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
-## <a name="type-parameter-naming-example"></a>Type-Parameter-Benennungskonventionen – Beispiel
+## <a name="type-parameter-naming-example"></a>Beispiel für Typparameter Benennung
 
-Der folgende Codeausschnitt zeigt einen falsch benannter generischer Typparameter:
+Der folgende Code Ausschnitt zeigt einen falsch benannten generischen Typparameter:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
-Im folgenden Codeausschnitt wird der vorherige Verstoß korrigiert, werden des generische Typparameters t ":
+Mit dem folgenden Code Ausschnitt wird der vorherige Verstoß korrigiert, indem dem generischen Typparameter "'t" vorangestellt wird:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]

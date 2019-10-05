@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557098"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919132"
 ---
 # <a name="list-memory-command"></a>Befehl "Arbeitsspeicher auflisten"
 Zeigt den Inhalt des angegebenen Speicherbereichs an.
@@ -32,41 +32,41 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>Argumente
- `expression`
+`expression`
 
- Dies ist optional. Die Speicheradresse, ab der die Anzeige des Arbeitsspeicher begonnen werden soll
+Optional. Die Speicheradresse, ab der die Anzeige des Arbeitsspeicher begonnen werden soll
 
 ## <a name="switches"></a>Schalter
- /ANSI|Unicode
+/ANSI|Unicode
 
- Dies ist optional. Zeigen Sie den Arbeitsspeicher als Zeichen an, die den Bytes im Arbeitsspeicher entsprechen, entweder als ANSI- oder Unicode-Zeichen.
+Optional. Zeigen Sie den Arbeitsspeicher als Zeichen an, die den Bytes im Arbeitsspeicher entsprechen, entweder als ANSI- oder Unicode-Zeichen.
 
- /Count:`number`
+/Count:`number`
 
- Dies ist optional. Bestimmt, wie viele Byte Arbeitsspeicher angezeigt werden, beginnend bei `expression`.
+Optional. Bestimmt, wie viele Byte Arbeitsspeicher angezeigt werden, beginnend bei `expression`.
 
- /Format:`formattype`
+/Format:`formattype`
 
- Dies ist optional. Formattypen für das Anzeigen von Speicherinformationen im Fenster **Arbeitsspeicher**; entweder OneByte, TwoBytes, FourBytes, EightBytes, Float (32-Bit), oder Double (64-Bit). Wenn OneByte verwendet wird, ist `/Unicode` nicht verfügbar.
+Optional. Formattypen für das Anzeigen von Speicherinformationen im Fenster **Arbeitsspeicher**; entweder OneByte, TwoBytes, FourBytes, EightBytes, Float (32-Bit), oder Double (64-Bit). Wenn OneByte verwendet wird, ist `/Unicode` nicht verfügbar.
 
- /Hex|Signed|Unsigned
+/Hex|Signed|Unsigned
 
- Dies ist optional. Gibt das Format zum Anzeigen von Zahlen an: mit Vorzeichen, ohne Vorzeichen oder hexadezimal.
+Optional. Gibt das Format zum Anzeigen von Zahlen an: mit Vorzeichen, ohne Vorzeichen oder hexadezimal.
 
 ## <a name="remarks"></a>Anmerkungen
- Anstatt einen kompletten **Debug.ListMemory**-Befehl mit allen Schaltern zu schreiben, können Sie den Befehl mithilfe vordefinierter Aliase aufrufen, bei denen bestimmte Schalter auf angegebene Werte voreingestellt werden. Anstatt z.B. Folgendes einzugeben:
+Anstatt einen kompletten **Debug.ListMemory**-Befehl mit allen Schaltern zu schreiben, können Sie den Befehl mithilfe vordefinierter Aliase aufrufen, bei denen bestimmte Schalter auf angegebene Werte voreingestellt werden. Anstatt z.B. Folgendes einzugeben:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- Können Sie Folgendes schreiben:
+Können Sie Folgendes schreiben:
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- Hier finden Sie eine Liste vorhandener Aliase für den **Debug.ListMemory**-Befehl:
+Hier finden Sie eine Liste vorhandener Aliase für den **Debug.ListMemory**-Befehl:
 
 |Alias|Befehl und Schalter|
 |-----------| - |

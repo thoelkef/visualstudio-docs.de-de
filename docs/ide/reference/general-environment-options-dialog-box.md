@@ -1,35 +1,31 @@
 ---
 title: Allgemein, Umgebung, Dialogfeld "Optionen"
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
+- Environment Options dialog box
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790134"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180286"
 ---
 # <a name="options-dialog-box-environment--general"></a>Dialogfeld „Optionen“: Umgebung \> Allgemein
 
@@ -66,7 +62,7 @@ Gibt an, ob Visual Studio die Anpassung der visuellen Darstellung automatisch fe
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 verfügt über die Einstellung **Windows kann versuchen, Apps mit unscharfer Darstellung zu korrigieren**. Es ist empfehlenswert, diese Einstellung auf **Ein** einzustellen, wenn Visual Studio auf dem Monitor unscharf angezeigt wird. Erwägen Sie ein Upgrade auf [Visual Studio-2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), das über eine erheblich verbesserte Anzeigeschärfe verfügt, da es sich um eine PMA-Anwendung (mit monitorspezifischen DPI-Werten kompatibel) handelt.
+> Windows 10 verfügt über die Einstellung **Windows kann versuchen, Apps mit unscharfer Darstellung zu korrigieren**. Es ist empfehlenswert, diese Einstellung auf **Ein** einzustellen, wenn Visual Studio auf dem Monitor unscharf angezeigt wird. Erwägen Sie ein Upgrade auf [Visual Studio-2019](https://visualstudio.microsoft.com/downloads), das über eine erheblich verbesserte Anzeigeschärfe verfügt, da es sich um eine PMA-Anwendung (mit monitorspezifischen DPI-Werten kompatibel) handelt.
 
 ::: moniker-end
 
@@ -102,5 +98,4 @@ Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
 - [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

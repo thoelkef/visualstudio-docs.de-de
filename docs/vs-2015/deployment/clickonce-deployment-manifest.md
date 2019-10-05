@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190459"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce-Bereitstellungsmanifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 |[\<assembly>-Element](../deployment/assembly-element-clickonce-deployment.md)|Erforderlich. Ein Element der obersten Ebene.|`manifestVersion`|  
 |[\<assemblyIdentity>-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)|Erforderlich. Identifiziert das Anwendungsmanifest für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
 |[\<description>-Element](../deployment/description-element-clickonce-deployment.md)|Erforderlich. Identifiziert Anwendungsinformationen, die zum Erstellen eines Shell-Eintrags und des Elements **Software** in der Systemsteuerung verwendet werden.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
-|[\<deployment>-Element](../deployment/deployment-element-clickonce-deployment.md)|Dies ist optional. Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
+|[\<deployment>-Element](../deployment/deployment-element-clickonce-deployment.md)|Optional. Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
 |[\<compatibleFrameworks>-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Erforderlich. Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann.|`SupportUrl`|  
 |[\<dependency>-Element](../deployment/dependency-element-clickonce-deployment.md)|Erforderlich. Identifiziert die Version der Anwendung, die für die Bereitstellung installiert werden soll, und den Speicherort des Anwendungsmanifests.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity> Element](../deployment/publisheridentity-element-clickonce-deployment.md)|Für signierte Manifeste erforderlich. Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Signature>-Element](../deployment/signature-element-clickonce-deployment.md)|Dies ist optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.|Keiner|  
+|[\<Signature>-Element](../deployment/signature-element-clickonce-deployment.md)|Optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.|None|  
 |[\<customErrorReporting>-Element](../deployment/customerrorreporting-element-clickonce-deployment.md)|Dies ist optional. Gibt einen URI an, der bei einem Fehler angezeigt wird.|URI|  
   
 ## <a name="remarks"></a>Hinweise  

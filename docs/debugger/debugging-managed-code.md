@@ -1,6 +1,6 @@
 ---
-title: Debuggen von verwaltetem Code | Microsoft-Dokumentation
-ms.date: 11/04/2016
+title: Debugging von verwaltetem Code | Microsoft-Dokumentation
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851878"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211200"
 ---
-# <a name="debugging-managed-code"></a>Debuggen von verwaltetem Code
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuggen vonC#verwaltetem Code F#( C++, Visual Basic,,/CLI)
 
-In diesem Abschnitt werden die häufigsten Probleme beim Debuggen sowie Verfahrensweisen für verwaltete Anwendungen bzw. Anwendungen erörtert, die in Sprachen für die Common Language Runtime geschrieben wurden, z. B. Visual Basic, C# und C++. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
+In diesem Abschnitt werden häufige Debugprobleme und-Techniken für verwaltete Anwendungen oder Anwendungen behandelt, die in Sprachen geschrieben wurden, die auf C#die Common Language Runtime C++abzielen, z. b. Visual Basic, und/CLI. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -47,7 +47,7 @@ Dieser Abschnitt enthält Codebeispiele zum Debuggen der `OnStart`-Methode eines
 [Debuggen im gemischten Modus](../debugger/debugging-mixed-mode-applications.md)\
 Erörtert das Debuggen von Anwendungen im gemischten Modus. Dies sind alle Anwendungen, die nativen Code mit verwaltetem Code kombinieren.
 
-[Fehler: Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Fehler: Das Debuggen ist nicht möglich, da ein Kernel Debugger auf dem System aktiviert ist.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 In diesem Abschnitt wird eine Fehlermeldung beschrieben, die auftritt, wenn Sie versuchen, verwalteten Code auf einem [!INCLUDE[win7](../debugger/includes/win7_md.md)]-, [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]-, [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]-, [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]- oder Windows NT-System zu debuggen, das im Debugmodus gestartet wurde.
 
 [JIT-Optimierung und -Debuggen](../debugger/jit-optimization-and-debugging.md)\
@@ -62,7 +62,7 @@ Beschreibt, wie die Toolfenster **Parallele Aufgaben** und **Parallele Stapel** 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
 [IntelliTrace](../debugger/intellitrace.md)\
-Fehler werden einfacher und schneller gefunden, da der Ausführungsverlauf mit IntelliTrace aufgezeichnet wird. Sehen Sie sich die aufgezeichneten Ereignisse und Aufrufe sorgfältig an, um den Zustand der Anwendung zu wichtigen Zeitpunkt zu überprüfen. Debuggen Sie den Code, ohne viele Haltepunkte festzulegen oder Ihre Anwendung häufig neu zu starten. Ist Visual Studio Enterprise erforderlich.
+Fehler werden einfacher und schneller gefunden, da der Ausführungsverlauf mit IntelliTrace aufgezeichnet wird. Sehen Sie sich die aufgezeichneten Ereignisse und Aufrufe sorgfältig an, um den Zustand der Anwendung zu wichtigen Zeitpunkt zu überprüfen. Debuggen Sie den Code, ohne viele Haltepunkte festzulegen oder Ihre Anwendung häufig neu zu starten. Erfordert Visual Studio Enterprise.
 
 [Ablaufverfolgung und Instrumentieren von Anwendungen](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
 Hier werden die Ablaufverfolgung (eine Methode zum Überwachen der Ausführung einer Anwendung) und die Instrumentation (das Platzieren von Ablaufverfolgungsanweisungen an strategischen Stellen im Code) beschrieben. Die Links in diesem Abschnitt bringen Sie zu den folgenden Themen: Einführung in die Instrumentation und die Ablaufverfolgung, Ablaufverfolgungsschalter, Ablaufverfolgungslistener, Ablaufverfolgung für Code in einer Anwendung, Hinzufügen von Ablaufverfolgungsanweisungen zu Anwendungscode und bedingte Kompilierung mit <xref:System.Diagnostics.Debug> und <xref:System.Diagnostics.Trace>.
@@ -81,7 +81,7 @@ Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms-Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Debuggersicherheit](../debugger/debugger-security.md)
-- [Debuggen in Visual Studio](../debugger/index.md)
+- [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

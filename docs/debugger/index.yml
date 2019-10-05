@@ -1,0 +1,84 @@
+### YamlMime:Landing
+title: Dokumentation zu Visual Studio-Debugger
+summary: Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms überwachen und Probleme finden.
+metadata:
+  title: Debuggen in Visual Studio
+  description: Erfahren Sie, wie Sie mit Visual Studio Anwendungen und Code debuggen.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 9ddd78b13e3281c4285d0bb2aaf4ee0a34af5369
+  ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71814305"
+landingContent:
+- title: Informationen zu Debuggen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was bedeutet „Debuggen“?
+      url: what-is-debugging.md
+    - text: Debugverfahren und -tools
+      url: write-better-code-with-visual-studio.md
+    - text: Erster Einblick in den Debugger
+      url: debugger-feature-tour.md
+    - text: Finden der Debugaufgabe
+      url: find-your-debugging-task.md
+- title: Erste Schritte
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Debuggen für Einsteiger
+      url: debugging-absolute-beginners.md
+    - text: Informationen zum Debuggen von C#
+      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Informationen zum Debuggen von C++
+      url: getting-started-with-the-debugger-cpp.md
+    - text: Informationen zum Debuggen von Visual Basic
+      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Ausführen von Python-Code im Debugger >>
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+- title: Pausieren von und Navigieren im Code
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Navigieren im Code mit dem Debugger
+      url: navigating-through-code-with-the-debugger.md
+    - text: Verwenden von Haltepunkten
+      url: using-breakpoints.md
+    - text: Bearbeiten von Code und Fortsetzen des Debuggens
+      url: edit-and-continue.md
+- title: Untersuchen von Daten
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Variablen überprüfen
+      url: autos-and-locals-windows.md
+    - text: Festlegen eines Überwachungselements für Variablen
+      url: watch-and-quickwatch-windows.md
+    - text: Anzeigen der Aufrufliste
+      url: how-to-use-the-call-stack-window.md
+- title: Weitere Themen mit dem Debugger
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Tipps und Tricks für den Debugger
+      url: debugger-tips-and-tricks.md
+    - text: Schreiben und Debuggen von ausgeführtem XAML-Code
+      url: xaml-hot-reload.md
+    - text: Debuggen einer aktiven Azure-App
+      url: debug-live-azure-applications.md
+    - text: Den Debugger anweisen, was er anzeigen soll
+      url: using-the-debuggerdisplay-attribute.md
+    - text: Remotedebuggen
+      url: remote-debugging.md
+- title: Zusammenarbeiten
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Schreiben und Debuggen von Code mithilfe von Live Share >>
+      url: /visualstudio/liveshare/use/vs

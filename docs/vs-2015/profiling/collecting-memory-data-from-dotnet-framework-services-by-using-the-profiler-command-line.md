@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67184daeae3b2a50da266e2eb420d5a2ae9896db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198399"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Sammeln von Speicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,17 +23,17 @@ In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicher
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Anfügen des Profilers an einen .NET-Dienst**|-   [Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Erfassen von Arbeitsspeicherdaten](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrumentieren eines .NET-Diensts und Erfassen von .NET-Arbeitsspeicherdaten**|-   [Vorgehensweise: Instrumentieren eines .NET Framework-Diensts und Sammeln von Arbeitsspeicherdaten](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Hinzufügen von Ebeneninteraktionsdaten**|-   [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Verwandte Aufgaben  
+## <a name="related-tasks"></a>Related Tasks  
   
 ### <a name="profiling-services"></a>Profilerstellungsdienste  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Profilerstellung mit der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
 |**Profilerstellung mit der Instrumentationsmethode**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
@@ -41,7 +41,7 @@ In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicher
   
 ### <a name="profiling-net-framework-memory-data"></a>Profilerstellung für .NET Framework-Arbeitsspeicherdaten  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln von .NET Framework-Speicherdaten für eigenständige Anwendungen über die Profiler-Befehlszeile](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Profilerstellung für ASP.NET-Webanwendungen**|-   [Sammeln von Speicherdaten aus einer ASP.NET-Webanwendung über die Profiler-Befehlszeile](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  

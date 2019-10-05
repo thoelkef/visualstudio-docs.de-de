@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d4b4ff425feb22b5057a8d1a76b7f73b8932d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204167"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Vorgehensweise: Hosten Sie einen Editor in einem anderen Editor
+# <a name="how-to-host-an-editor-in-another-editor"></a>Vorgehensweise: Hosten eines Editors in einem anderen Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio können Sie ein Editor in einem anderen durch Angeben des hosting-Fensters als ein übergeordnetes Fenster hosten. Zu diesem Zweck legen Sie die Parameter <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> und <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> auf den untergeordneten Fensterrahmen.  

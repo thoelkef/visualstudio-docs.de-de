@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193508"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;EntryPoint&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Identifiziert die Assembly, die sollten ausgeführt, wenn dies [!INCLUDE[ndptecc
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`name`|Dies ist optional. Dieser Wert wird nicht von .NET Framework verwendet.|  
+|`name`|Optional. Dieser Wert wird nicht von .NET Framework verwendet.|  
   
  `entryPoint` hat die folgenden Elemente:  
   
@@ -78,14 +78,14 @@ Identifiziert die Assembly, die sollten ausgeführt, wenn dies [!INCLUDE[ndptecc
 |`parameters`|Erforderlich. Beschreibt die Aktion an, mit dem Einstiegspunkt an. Der einzige gültige Wert ist `run`; Wenn eine leere Zeichenfolge angegeben wird, `run` wird angenommen.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
- Dies ist optional. Wenn enthalten, gibt an, dass diese Bereitstellung eine Komponente enthält, die innerhalb eines benutzerdefinierten Hosts bereitgestellt werden, und ist keine eigenständige Anwendung.  
+ Optional. Wenn enthalten, gibt an, dass diese Bereitstellung eine Komponente enthält, die innerhalb eines benutzerdefinierten Hosts bereitgestellt werden, und ist keine eigenständige Anwendung.  
   
  Wenn dieses Element vorhanden ist, ist die `assemblyIdentity` und `commandLine` Elemente dürfen nicht auch vorhanden sein. Wenn dies der Fall, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] löst einen Validierungsfehler während der Installation.  
   
  Dieses Element weist keine Attribute und keine untergeordneten Elemente.  
   
 ## <a name="customux"></a>customUX  
- Dies ist optional. Gibt an, dass die Anwendung installiert ist und durch ein individuelles Installationsprogramm erstellt, verwaltet und nicht Eintrag im Menü Start, Kontextmenü oder hinzufügen erstellen oder Entfernen der Eintrag "Programme".  
+ Optional. Gibt an, dass die Anwendung installiert ist und durch ein individuelles Installationsprogramm erstellt, verwaltet und nicht Eintrag im Menü Start, Kontextmenü oder hinzufügen erstellen oder Entfernen der Eintrag "Programme".  
   
 ```  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  

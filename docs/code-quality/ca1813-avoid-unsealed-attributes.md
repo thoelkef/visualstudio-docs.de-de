@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714751"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233598"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Nicht versiegelte Attribute vermeiden.
 
@@ -35,19 +35,19 @@ ms.locfileid: "66714751"
 
 ## <a name="cause"></a>Ursache
 
-Ein öffentlicher Typ erbt von <xref:System.Attribute?displayProperty=fullName>ist nicht abstrakt und ist nicht versiegelt (`NotInheritable` in Visual Basic).
+Ein öffentlicher Typ erbt von <xref:System.Attribute?displayProperty=fullName>, ist nicht abstrakt und ist nicht versiegelt (`NotInheritable` in Visual Basic).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-.NET bietet Methoden zum Abrufen von benutzerdefinierten Attributen. Standardmäßig wird mit diesen Methoden die Attributvererbungshierarchie durchsucht. Z. B. <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> sucht nach dem Typ des angegebenen Attributs oder jeder Typ des Attributs, das den Typ des angegebenen Attributs erweitert. Versiegeln das Attribut wird das Durchsuchen der Vererbungshierarchie befindet und kann die Leistung verbessern.
+.NET stellt Methoden zum Abrufen von benutzerdefinierten Attributen bereit. Standardmäßig wird mit diesen Methoden die Attributvererbungshierarchie durchsucht. Beispielsweise <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> sucht nach dem angegebenen Attributtyp oder an einem beliebigen Attributtyp, der den angegebenen Attributtyp erweitert. Durch das Versiegeln des Attributs wird die Suche durch die Vererbungs Hierarchie beseitigt und die Leistung verbessert.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, versiegeln Sie den Typ des Attributs oder abstract.
+Um einen Verstoß gegen diese Regel zu beheben, versiegeln Sie den Attributtyp, oder machen Sie ihn abstrakt.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Unterdrücken Sie nur dann, wenn Sie eine Attributhierarchie definieren und können nicht versiegeln das Attribut oder abstract.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken. Unterdrücken Sie nur, wenn Sie eine Attribut Hierarchie definieren und das Attribut nicht versiegeln oder abstrahieren können.
 
 ## <a name="example"></a>Beispiel
 
@@ -58,7 +58,7 @@ Das folgende Beispiel zeigt ein benutzerdefiniertes Attribut, das diese Regel er
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1019: Accessors für Attributargumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1019: Accessoren für Attribut Argumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 - [CA1018: Attribute mit AttributeUsageAttribute markieren](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Siehe auch

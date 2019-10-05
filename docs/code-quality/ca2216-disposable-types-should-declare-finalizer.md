@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541870"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231253"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren.
 
@@ -28,15 +28,15 @@ ms.locfileid: "62541870"
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ, der implementiert <xref:System.IDisposable?displayProperty=fullName>, und enthält Felder, die die Verwendung von nicht verwalteten Ressourcen wird empfohlen, einen Finalizer ist nicht implementiert werden, wie beschrieben <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+Ein Typ, der <xref:System.IDisposable?displayProperty=fullName>implementiert und über Felder verfügt, die die Verwendung nicht verwalteter Ressourcen vorschlagen, implementiert keinen Finalizer, wie in <xref:System.Object.Finalize%2A?displayProperty=fullName>beschrieben.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein Verstoß gegen diese Regel wird gemeldet, wenn die verwerfbaren Typs Felder der folgenden Typen enthält:
+Ein Verstoß gegen diese Regel wird gemeldet, wenn der verwerfbare Typ Felder der folgenden Typen enthält:
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -46,11 +46,11 @@ Ein Verstoß gegen diese Regel wird gemeldet, wenn die verwerfbaren Typs Felder 
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie einen Finalizer, der Aufrufe Ihrer <xref:System.IDisposable.Dispose%2A> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie <xref:System.IDisposable.Dispose%2A> einen Finalizer, der die-Methode aufruft.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicherer, die mit dieser Regel eine Warnung zu unterdrücken, wenn der Typ nicht implementiert <xref:System.IDisposable> für die Freigabe nicht verwalteter Ressourcen.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Typ <xref:System.IDisposable> nicht implementiert, um nicht verwaltete Ressourcen freizugeben.
 
 ## <a name="example"></a>Beispiel
 
@@ -60,11 +60,11 @@ Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA2115: Rufen Sie GC. KeepAlive beim Verwenden systemeigener Ressourcen](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Ruft GC auf. KeepAlive bei der Verwendung nativer Ressourcen](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816: Rufen Sie GC. SuppressFinalize ordnungsgemäß](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Ruft GC auf. Ordnungsgemäße SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
-[CA1049: Typen, die systemeigene Ressourcen besitzen müssen gelöscht werden können.](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Siehe auch
 

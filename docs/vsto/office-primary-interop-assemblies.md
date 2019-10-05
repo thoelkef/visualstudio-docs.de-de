@@ -1,6 +1,6 @@
 ---
 title: Primäre Interop-Assemblys in Office
-ms.date: 09/20/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,83 +14,85 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447095"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342503"
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
 
 Zur Verwendung der Funktionen einer Microsoft Office-Anwendung in einem Office-Projekt müssen Sie die primäre Interop-Assembly (PIA) für diese Anwendung verwenden. Die PIA ermöglicht es verwaltetem Code, mit dem COM-basierten Objektmodell einer Microsoft Office-Anwendung zu interagieren.
 
+[!include[Add-ins note](includes/addinsnote.md)]
+
 Wenn Sie ein neues Office-Projekt erstellen, fügt Visual Studio Verweise auf die PIAs hinzu, die zum Erstellen des Projekts erforderlich sind. In einigen Szenarien müssen Sie Verweise auf zusätzliche PIAs hinzufügen (beispielsweise, wenn Sie eine Funktion von Microsoft Office Word in einem Projekt für Microsoft Office Excel verwenden möchten).
 
 In diesem Thema werden die folgenden Aspekte der Verwendung von Microsoft Office PIAs in Office-Projekten beschrieben:
 
-- [Separate primäre interop-Assemblys erstellen und Ausführen von Projekten](#separateassemblies)
+- [Separate primäre Interop-Assemblys zum Erstellen und Ausführen von Projekten](#separateassemblies)
 
-- [Verwenden von Funktionen mehrerer Microsoft Office-Anwendungen in einem einzelnen Projekt](#usingfeatures)
+- [Verwenden von Features mehrerer Microsoft Office Anwendungen in einem einzelnen Projekt](#usingfeatures)
 
 - [Vollständige Liste primärer Interop-Assemblys für Microsoft Office-Anwendungen](#pialist)
 
-Weitere Informationen zu primären Interopassemblys finden Sie unter [primärer interop-Assemblys](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+Weitere Informationen zu primären Interop-Assemblys finden Sie unter [primäre](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))Interopassemblys.
 
 <a name="separateassemblies"></a>
 
-## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>Separate primäre interop-Assemblys erstellen und Ausführen von Projekten
+## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>Separate primäre Interop-Assemblys zum Erstellen und Ausführen von Projekten
 
 Visual Studio verwendet unterschiedliche Sätze von PIAs auf dem Entwicklungscomputer. Diese unterschiedlichen Assemblysätze befinden sich an den folgenden Speicherorten:
 
-- Einen Ordner in das Verzeichnis für Programmdateien
+- Ordner im Verzeichnis "Programme"
 
   Diese Kopien der Assemblys werden verwendet, wenn Sie Code schreiben und Projekte erstellen. Visual Studio installiert diese Assemblys automatisch.
 
-- Im globalen Assemblycache
+- Der globale Assemblycache
 
   Diese Kopien der Assemblys werden bei einigen Entwicklungsaufgaben verwendet, z. B. wenn Sie Projekte ausführen oder debuggen. Visual Studio installiert und registriert diese Assemblys nicht; Sie müssen dies selbst tun.
 
-### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Primäre interop-Assemblys in das Verzeichnis für Programmdateien
+### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Primäre Interop-Assemblys im Verzeichnis "Programme"
 
 Bei der Installation von Visual Studio werden die PIAs automatisch an einem Speicherort im Dateisystem außerhalb des globalen Assemblycaches installiert. Wenn Sie ein neues Projekt erstellen, fügt Visual Studio automatisch Verweise auf diese Kopien der PIAs zu Ihrem Projekt hinzu. Visual Studio verwendet diese PIA-Kopien anstelle der Assemblys im globalen Assemblycache, um Typverweise aufzulösen, wenn Sie das Projekt entwickeln und erstellen.
 
 Diese Kopien der PIAs helfen dabei, mehrere Entwicklungsprobleme im Zusammenhang mit Visual Studio zu vermeiden. Diese können auftreten, wenn unterschiedliche Versionen der PIAs im globalen Assemblycache registriert werden.
 
-Ab Visual Studio 2017, werden diese Kopien der PIAs installiert, die folgenden freigegebene Speicherorten auf dem Entwicklungscomputer:
+Ab Visual Studio 2017 werden diese Kopien der PIAs an den folgenden freigegebenen Speicherorten auf dem Entwicklungs Computer installiert:
 
-- *%ProgramFiles%\Microsoft Studio\Shared\Visual von visual Studio-Tools für Office\PIA\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (oder * % ProgramFiles% (x86) %\Microsoft Visual Studio-Tools mit Studio\Shared\Visual für Office\PIA\* auf 64-Bit-Betriebssystemen)
+- (oder `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` auf 64-Bit-Betriebssystemen)
 
 > [!NOTE]
-> Für ältere Versionen von Visual Studio, die diese PIAs installiert werden, um Visual Studio-Tools für Office\PIA Ordner unter dem * Ordner "% ProgramFiles%" für diese Version von Visual Studio.  
-> Beispiel: * % ProgramFiles% (x86) %\Microsoft Visual Studio 14.0\Visual Studio-Tools für Office\PIA\*
+> Für ältere Versionen von Visual Studio werden diese PIAs im Ordner "Visual Studio-Tools für office\pia" unter dem Ordner "`%ProgramFiles%`" für diese Version von Visual Studio installiert.
+> Beispiel: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
-### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Primäre interop-Assemblys im globalen Assemblycache
+### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Primäre Interop-Assemblys im globalen Assemblycache
 
-Für die Ausführung bestimmter Entwicklungsaufgaben müssen die PIAs im globalen Assemblycache auf dem Entwicklungscomputer installiert und registriert sein. In der Regel werden die PIAs automatisch installiert, wenn Sie Office auf dem Entwicklungscomputer installieren. Weitere Informationen finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+Für die Ausführung bestimmter Entwicklungsaufgaben müssen die PIAs im globalen Assemblycache auf dem Entwicklungscomputer installiert und registriert sein. In der Regel werden die PIAs automatisch installiert, wenn Sie Office auf dem Entwicklungscomputer installieren. Weitere Informationen finden Sie unter [Konfigurieren eines Computers zum Entwickeln von Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)-Projektmappen.
 
-Zur Ausführung von Office-Lösungen sind die Office-PIAs auf Endbenutzercomputern nicht erforderlich. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).
+Zur Ausführung von Office-Lösungen sind die Office-PIAs auf Endbenutzercomputern nicht erforderlich. Weitere Informationen finden Sie unter [Entwerfen und Erstellen von Office-](../vsto/designing-and-creating-office-solutions.md)Projektmappen.
 
 <a name="usingfeatures"></a>
 
-## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Verwenden von Funktionen mehrerer Microsoft Office-Anwendungen in einem einzelnen Projekt
+## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Verwenden von Features mehrerer Microsoft Office Anwendungen in einem einzelnen Projekt
 
 Jede Office-Projektvorlage in Visual Studio wird im Hinblick auf die Arbeit mit einer einzelnen Microsoft Office-Anwendung entworfen. Um Funktionen in mehreren Microsoft Office-Anwendungen oder in einer Anwendung bzw. Komponente zu verwenden, die kein Projekt in Visual Studio besitzt, müssen Sie einen Verweis auf die erforderlichen PIAs hinzufügen.
 
-In den meisten Fällen sollten Sie Verweise auf die PIAs, die von Visual Studio unter installiert sind Hinzufügen der `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` Verzeichnis. Diese Versionen der Assemblys werden auf die **Framework** Registerkarte die **Verweis-Manager** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+In den meisten Fällen sollten Sie Verweise auf die PIAs hinzufügen, die von Visual Studio unter dem `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` Verzeichnis installiert werden. Diese Versionen der Assemblys werden im Dialogfeld Verweis- **Manager** auf der Registerkarte **Framework** angezeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Richten Sie Office-Anwendungen über primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)ein.
 
 Wenn Sie die PIAs im globalen Assemblycache installiert und registriert haben, werden diese Versionen im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** angezeigt. Vermeiden Sie es, Verweise auf diese Versionen hinzuzufügen, da sonst bei ihrer Verwendung Entwicklungsprobleme auftreten können. Wenn verschiedene Versionen der PIAs im globalen Assemblycache registriert sind, bindet das Projekt automatisch an die Version der Assembly, die zuletzt registriert wurde - auch dann, wenn Sie im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** eine andere Version angeben.
 
 > [!NOTE]
-> Einige Assemblys werden einem Projekt automatisch hinzugefügt, wenn eine Assembly hinzugefügt wird, die auf sie verweist. Beispielsweise Verweise auf die *"Office.dll"* und *"Microsoft.Vbe.Interop.dll"* Assemblys werden automatisch hinzugefügt, wenn Sie einen Verweis auf die Word, Excel, Outlook, Microsoft Forms- oder Graph hinzufügen Assemblys.
+> Einige Assemblys werden einem Projekt automatisch hinzugefügt, wenn eine Assembly hinzugefügt wird, die auf sie verweist. Verweise auf die Assemblys `Office.dll` und `Microsoft.Vbe.Interop.dll` werden z. b. automatisch hinzugefügt, wenn Sie einen Verweis auf die Word-, Excel-, Outlook-, Microsoft Forms-oder Graph-Assemblys hinzufügen.
 
 <a name="pialist"></a>
 
-## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Primäre Interopassemblys für Microsoft Office-Anwendungen
+## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Primäre Interop-Assemblys für Microsoft Office Anwendungen
 
-Die folgende Tabelle enthält die primäre interop-Assemblys, die für die verfügbar sind [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] und [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+In der folgenden Tabelle werden die primären Interop-Assemblys [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]aufgelistet [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] , [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]die für und verfügbar sind.
 
 <br/>
 
@@ -110,29 +112,29 @@ Die folgende Tabelle enthält die primäre interop-Assemblys, die für die verf�
 |Microsoft Publisher 14.0-Objektbibliothek<br /><br /> Microsoft Publisher 15,0-Objektbibliothek|Microsoft.Office.Interop.Publisher.dll|
 |Microsoft SharePoint Designer 14.0-Webobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Microsoft SharePoint Designer 14.0-Seitenobjekt-Verweisbibliothek|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Microsoft Smart Tags 2.0-Typbibliothek **beachten:**  Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]veraltet.|Microsoft.Office.Interop.SmartTag.dll|
+|Microsoft Smarttags 2,0-Typbibliothek **Hinweis:**  Smarttags sind in [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] und [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]veraltet.|Microsoft.Office.Interop.SmartTag.dll|
 |Microsoft Visio 14.0-Typbibliothek<br /><br /> Microsoft Visio 15,0-Typbibliothek|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14.0-Typbibliothek für "Speichern als Web"<br /><br /> Microsoft Visio 15,0-Typbibliothek für "Speichern als Web"|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Microsoft Visio 14.0-Typbibliothek für Zeichnungssteuerelemente<br /><br /> Microsoft Visio 15,0-Typbibliothek für Zeichnungssteuerelemente|Microsoft.Office.Interop.VisOcx.dll|
 |Microsoft Word 14.0-Objektbibliothek<br /><br /> Microsoft Word 15,0-Objektbibliothek|[Microsoft.Office.Interop.Word.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.word?view=word-pia)|
 |Microsoft Visual Basic for Applications Erweiterung 5.3|Microsoft.Vbe.Interop.dll|
 
-### <a name="binding-redirect-assemblies"></a>Bindungsumleitungsassemblys
+### <a name="binding-redirect-assemblies"></a>Bindungsassemblys
 
-Wenn Sie die Office-PIAs im globalen Assemblycache installieren und registrieren (entweder mit Office oder durch das Installieren des verteilbaren Pakets für die PIAs), werden die Bindungsumleitungsassemblys ebenfalls nur im globalen Assemblycache installiert. Diese Assemblys tragen dazu bei, die sicherstellen, dass die richtige Version der primären interop-Assemblys zur Laufzeit geladen wird.
+Wenn Sie die Office-PIAs im globalen Assemblycache installieren und registrieren (entweder mit Office oder durch das Installieren des verteilbaren Pakets für die PIAs), werden die Bindungsumleitungsassemblys ebenfalls nur im globalen Assemblycache installiert. Diese Assemblys helfen sicherzustellen, dass die richtige Version der primären Interop-Assemblys zur Laufzeit geladen wird.
 
 Wenn eine Projektmappe, die auf eine Assembly für [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] verweist, beispielsweise auf einem Computer mit der [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] -Version derselben primären Interop-Assembly ausgeführt wird, weist die Bindungsumleitungsassembly die [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] -Laufzeit an, die [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] -Version der primären Interop-Assembly zu laden.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der bindungsumleitung](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
+Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der automatischen Bindungs](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)Umleitung.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
-- [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md)
+- [Vorgehensweise: Abzielen von Office-Anwendungen über primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md)
 - [InfoPath-Lösungen](../vsto/infopath-solutions.md)
-- [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)
-- [PowerPoint-Projektmappen](../vsto/powerpoint-solutions.md)
+- [Übersicht über das Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)
+- [PowerPoint-Lösungen](../vsto/powerpoint-solutions.md)
 - [Projektmappen](../vsto/project-solutions.md)
 - [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
 - [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
-- [Allgemeine Referenz &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Allgemeine Referenz &#40;zur Office-Entwicklung in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

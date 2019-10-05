@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965530"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483827"
 ---
 # <a name="create-a-unit-test-project"></a>Ein Komponententestprojekt erstellen
 
@@ -29,13 +29,17 @@ Komponententests spiegeln häufig die Struktur des getesteten Codes. Angenommen,
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie anschließend **Test** aus.
 
-3. Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Geben Sie dem Projekt einen Namen, und klicken Sie dann auf **OK**.
+3. Wählen Sie die Projektvorlage für das Testframework aus, das Sie verwenden möchten, z. B. **MSTest Test Project** oder **NUnit Test Project**. Geben Sie dem Projekt einen Namen, und klicken Sie dann auf **OK**.
+
+   ![Testprojektvorlagen in Visual Studio 2017](media/test-project-templates.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Geben Sie auf der Seite **Neues Projekt erstellen** **Komponententest** in das Suchfeld ein. Wählen Sie die Projektvorlage **Komponententestprojekt (.NET Framework)** aus, und klicken Sie dann auf **Weiter**.
+2. Geben Sie auf der Seite **Neues Projekt erstellen** **Komponententest** in das Suchfeld ein. Wählen Sie die Projektvorlage für das Testframework aus, das Sie verwenden möchten, z. B. **MSTest Test Project** oder **NUnit Test Project**, und klicken Sie auf **Weiter**.
+
+   ![Testprojektvorlagen in Visual Studio 2019](media/vs-2019/test-project-templates.png)
 
 3. Geben Sie auf der Seite **Neues Projekt konfigurieren** einen Namen für Ihr Projekt ein, und klicken Sie dann auf **Erstellen**.
 

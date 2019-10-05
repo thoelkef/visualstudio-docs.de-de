@@ -2,17 +2,17 @@
 title: Konfigurieren eines C++-Projekts für IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mblome
+author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715376"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154902"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurieren eines C++-Projekts für IntelliSense
 
@@ -38,7 +38,7 @@ Wenn Sie Ihre Builds außerhalb der Visual Studio-IDE ausführen und Ihre Builds
 
 ![VC++-Include-Verzeichnisse](media/vcpp-intellisense-include-paths.png)
 
- Um die aktuellen Werte für Buildmakros wie **VC_IncludePath** anzuzeigen, wählen Sie die Zeile „Include-Verzeichnisse“ aus, und klicken Sie dann auf das Dropdownmenü auf der rechten Seite. Wählen Sie dann **\<Bearbeiten>** aus, und klicken Sie auf die Schaltfläche **Makros**.
+Um die aktuellen Werte für Buildmakros wie **VC_IncludePath** anzuzeigen, wählen Sie die Zeile „Include-Verzeichnisse“ aus, und klicken Sie dann auf das Dropdownmenü auf der rechten Seite. Wählen Sie dann **\<Bearbeiten>** aus, und klicken Sie auf die Schaltfläche **Makros**.
 
 ### <a name="makefile-projects"></a>Makefile-Projekte
 
@@ -48,7 +48,7 @@ Für Makefile-Projekte, die auf der NMake-Projektvorlage basieren, wählen Sie *
 
 ### <a name="open-folder-projects"></a>Open Folder-Projekte
 
-Stellen Sie für CMake-Projekte sicher, dass die #include-Pfade für alle Konfigurationen in „CMakeLists.txt“ richtig angegeben werden. Andere Projekttypen erfordern möglicherweise eine Datei „CppProperties.json“. Weitere Informationen finden Sie unter [Konfigurieren von IntelliSense mit „CppProperties.json“](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Stellen Sie sicher, dass die Pfade für jede Konfiguration richtig sind, die in der Datei definiert ist.
+Stellen Sie für CMake-Projekte sicher, dass die #include-Pfade für alle Konfigurationen in „CMakeLists.txt“ richtig angegeben werden. Andere Projekttypen erfordern möglicherweise eine Datei „CppProperties.json“. Weitere Informationen finden Sie unter [Konfigurieren von IntelliSense mit „CppProperties.json“](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson). Stellen Sie sicher, dass die Pfade für jede Konfiguration richtig sind, die in der Datei definiert ist.
 
 Wenn ein Syntaxfehler in der Datei „CppProperties.json“ vorliegt, ist IntelliSense in den betroffenen Dateien fehlerhaft. Visual Studio zeigt den Fehler im Ausgabefenster an.
 
@@ -79,18 +79,18 @@ Um zu überprüfen, ob der IntelliSense-Compiler die richtigen Compileroptionen 
 Das Ausgabefenster zeigt nun die Befehlszeilen an, die an den IntelliSense-Compiler übergeben werden. Dies ist eine Beispielausgabe:
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Diese Informationen können Ihnen helfen zu verstehen, warum IntelliSense unrichtige Informationen bereitstellt. Wenn das Include-Verzeichnis Ihres Projekts beispielsweise **$(MyVariable)\Include** enthält und das Diagnoseprotokoll **/I\Include** als Include-Pfad anzeigt, bedeutet dies, dass **$(MyVariable)** nicht ausgewertet und aus dem endgültigen Include-Pfad entfernt wurde.
@@ -110,10 +110,10 @@ Ein IntelliSense-Build generiert zwar keine Binärdateien, kann aber trotzdem fe
 Die Fehlermeldung weist Sie ggf. an, Ablaufverfolgung zur Entwurfszeit zu aktivieren:
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 Wenn Sie die Umgebungsvariable TRACEDESIGNTIME auf TRUE festlegen und Visual Studio neu starten, sehen Sie im Verzeichnis „%TEMP%“ eine Protokolldatei, die bei der Diagnose des Buildfehlers helfen kann.

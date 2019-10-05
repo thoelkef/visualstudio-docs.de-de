@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823420"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918609"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analysieren der Aktivität virtueller Benutzer bei Auslastungstests in der Detailansicht des Auslastungstest-Analyzers
 
@@ -31,19 +31,19 @@ In der **Detailansicht** wird das **Diagramm für Aktivitäten virtueller Benutz
 > [!NOTE]
 > Bevor Sie den Auslastungstest ausführen, für den Sie das **Diagramm für Aktivitäten virtueller Benutzer** verwenden möchten, müssen Sie mithilfe des Auslastungstest-Editors überprüfen, ob die Eigenschaft **Speicher für Details der zeitlichen Steuerung** auf **AllIndividualDetails** festgelegt ist.
 
- **Bereich „Detaillegende“**
+**Bereich „Detaillegende“**
 
- ![Detaillegendenbereich](../test/media/ltest_detailslegend.png)
+![Detaillegendenbereich](../test/media/ltest_detailslegend.png)
 
- Der Bereich „Detaillegende“ wird im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt. Im Bereich "Detaillegende" können Sie Tests, Seiten und Transaktionen auf Grundlage unterschiedlicher Kriterien herausfiltern. Sie können z. B. bestimmte Tests aus der Ansicht bzw. alle erfolgreich verlaufenen Tests oder Tests entfernen, die aufgrund bestimmter Fehler fehlgeschlagen sind. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
+Der Bereich „Detaillegende“ wird im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt. Im Bereich "Detaillegende" können Sie Tests, Seiten und Transaktionen auf Grundlage unterschiedlicher Kriterien herausfiltern. Sie können z. B. bestimmte Tests aus der Ansicht bzw. alle erfolgreich verlaufenen Tests oder Tests entfernen, die aufgrund bestimmter Fehler fehlgeschlagen sind. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
 
- Sie können fehlgeschlagene Tests markieren, woraufhin alle fehlgeschlagenen Tests rot hervorgehoben werden. Sie können auch Tests hervorheben, für die Testprotokolle vorhanden sind. Tests mit Protokollen erhalten die Farbe Grün.
+Sie können fehlgeschlagene Tests markieren, woraufhin alle fehlgeschlagenen Tests rot hervorgehoben werden. Sie können auch Tests hervorheben, für die Testprotokolle vorhanden sind. Tests mit Protokollen erhalten die Farbe Grün.
 
- **Bereich „Filterergebnisse“**
+**Bereich „Filterergebnisse“**
 
- ![Filterergebnisbereich](../test/media/ltest_filterresults.png)
+![Filterergebnisbereich](../test/media/ltest_filterresults.png)
 
- Der Bereich „Filterergebnisse“ wird im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt. Im Bereich "Filterergebnisse" können Sie Ergebnisse wie folgt filtern:
+Der Bereich „Filterergebnisse“ wird im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt. Im Bereich "Filterergebnisse" können Sie Ergebnisse wie folgt filtern:
 
 - **Nur Ergebnisse mit Protokollen anzeigen**: zeigt nur Testergebnisse an, denen Testprotokolle zugeordnet sind.
 

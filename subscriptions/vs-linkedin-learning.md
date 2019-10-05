@@ -1,18 +1,17 @@
 ---
 title: LinkedIn Learning-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 9715c2fb5dd8219e05a6728c7d242aef24e86081
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032858"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787763"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements
 
@@ -33,46 +32,26 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 
 ### <a name="create-a-linkedin-account"></a>Erstellen eines LinkedIn-Kontos
 4. Wenn Sie noch kein LinkedIn-Konto besitzen, klicken Sie auf **Jetzt Mitglied werden**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Jetzt Mitglied werden](_img/vs-linkedin/vs-linkedin-join-now.png)
 
 5. Geben Sie Ihre persönlichen Daten, wählen Sie einen Benutzernamen und ein Kennwort, und klicken Sie auf **Jetzt Mitglied werden**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Konto erstellen](_img/vs-linkedin/vs-linkedin-create-account.png)
 
 6. Geben Sie Ihr Land und Ihre Postleitzahl an, und klicken Sie auf **Weiter**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Ort festlegen](_img/vs-linkedin/vs-linkedin-set-location.png)
 
 7. Geben Sie als Nächstes für Ihr Profil einige persönliche Informationen an.  Geben Sie an, ob Sie Student sind, und geben Sie Ihre letzte Berufsbezeichnung, das Unternehmen und die Branche an.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Rolle festlegen](_img/vs-linkedin/vs-linkedin-role.png)
 
 8. Während dieses Schritts haben Sie die Möglichkeit, Ihre Interessensbereiche anzugeben.  Sie können den Kontoerstellungsprozess beschleunigen, indem Sie auf Folgendes klicken: **Not sure yet.   I’m open!** (Weiß noch nicht. Ich bin vielseitig interessiert.)  (Sie können später noch Interessensbereiche angeben.)
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Interessen](_img/vs-linkedin/vs-linkedin-interests.png)
 
 9. Wenn Sie Ihre E-Mail-Adresse angegeben haben, wurde Ihnen eine Nachricht mit einem Bestätigungscode gesendet.  Die Nachricht wurde von „LinkedIn Messages“ gesendet.  Wenn sich diese nicht in Ihrem Posteingang befindet, überprüfen Sie bitte den Junk-E-Mail-Ordner.  Geben Sie den Code aus der Nachricht ein, und klicken Sie auf **Verify** (Prüfen).
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Prüfen](_img/vs-linkedin/vs-linkedin-verify.png)
 
 10. Falls Sie Ihre Kontakte aus dem zuvor angegebenen E-Mail-Konto importieren möchten, können Sie dies jetzt tun.  Klicken Sie andernfalls auf **Überspringen**. (Wenn Sie diesen Schritt überspringen, werden Sie gebeten, Ihre Auswahl zu bestätigen.  Klicken Sie auf **Ja**.)
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Kontakte](_img/vs-linkedin/vs-linkedin-contacts.png)
 
 11. Die Option „Job alert“ (Jobalarm) ermöglicht es Ihnen, zu Stellen in Ihrer Region benachrichtigt zu werden, die für Sie möglicherweise geeignet wären.  Sie können den Jobalarm jetzt aktivieren oder diesen Schritt überspringen, um das Erstellen Ihres Kontos fortzusetzen.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Jobalarm](_img/vs-linkedin/vs-linkedin-job-alerts.png)
 
 12. Basierend auf Ihren bisherigen Einstellungen und den persönlichen Informationen, die Sie bisher eingegeben haben, sehen Sie eine Auswahl empfohlener Kontakte, was Ihnen den Aufbau Ihres beruflichen Netzwerks erleichtern soll.  Sie können Verbindungen hinzufügen oder diesen Schritt überspringen.
 
 13. Klicken Sie auf **Foto hochladen**, wenn Sie ein Foto zu Ihrem Profil hinzufügen möchten.  Andernfalls können Sie diesen Schritt überspringen.  (Sie können auch später noch ein Foto hinzufügen.)
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning: Foto hochladen](_img/vs-linkedin/vs-linkedin-photo.png)
 
 14. Sie können die LinkedIn-App auf Ihr Handy herunterladen, um von überall aus Zugriff auf Ihr Netzwerk zu haben.  Sie können sich einen Link an Ihr Handy senden lassen oder die App direkt im App Store oder von Google Play herunterladen.  Sie können auch auf **Weiter** klicken, um diesen Schritt jetzt zu überspringen und die App später herunterzuladen.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning: Foto hochladen](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>Testzugang aktivieren
 15. Da Sie sich nun bei Ihrem LinkedIn-Konto angemeldet haben oder eines erstellt haben, können Sie nun Ihr Premiumabonnement aktivieren und die Vorteile von LinkedIn Learning genießen.  Klicken Sie auf **Activate your offer** (Testzugang aktivieren).
@@ -110,7 +89,7 @@ Antwort:  Nein, das LinkedIn Learning-Angebot ist nur für neue Abonnenten verf�
 
 ## <a name="support-resources"></a>Supportressourcen
 - Benötigen Sie Hilfe bei LinkedIn Learning?  Sehen Sie sich diese Ressourcen an:
-    - Hilfe bei der [Verwendung von LinkedIn Learning](https://www.linkedin.com/help/learning).
-    - Hilfe bei allgemeinen Fragen rund um [LinkedIn](https://www.linkedin.com/help/linkedin), beispielsweise zum Erstellen von Konten und Profilen oder zum Verwalten Ihres Netzwerks.
+  - Hilfe bei der [Verwendung von LinkedIn Learning](https://www.linkedin.com/help/learning).
+  - Hilfe bei allgemeinen Fragen rund um [LinkedIn](https://www.linkedin.com/help/linkedin), beispielsweise zum Erstellen von Konten und Profilen oder zum Verwalten Ihres Netzwerks.
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

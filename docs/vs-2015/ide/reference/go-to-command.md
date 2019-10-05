@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 010d2c395d77be590b3d8d3bc26fc83aaa63adfa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199265"
 ---
 # <a name="go-to-command"></a>Befehl "Gehe zu"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Edit.GoTo [linenumber]
   
 ## <a name="arguments"></a>Argumente  
  `linenumber`  
- Dies ist optional. Eine ganze Zahl, die die Zeilennummer, zu der Sie springen wollen, angibt.  
+ Optional. Eine ganze Zahl, die die Zeilennummer, zu der Sie springen wollen, angibt.  
   
 ## <a name="remarks"></a>Anmerkungen  
  Die Zeilennummerierung beginnt bei eins. Wenn der Wert von `linenumber` kleiner als eins ist, wird die erste Zeile angezeigt. Wenn der Wert von `linenumber` größer als die Nummer der letzten Zeile ist, wird die letzte Zeile angezeigt.  

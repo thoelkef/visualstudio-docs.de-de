@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e4e5c4ed258bcc88fedbb6d015fed576d326a0f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546071"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234953"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Für COM sichtbare Basistypen sollten für COM sichtbar sein.
 
@@ -31,25 +31,25 @@ ms.locfileid: "62546071"
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
 |Kategorie|Microsoft.Interoperability|
-|Unterbrechende Änderung|DependsOnFix|
+|Unterbrechende Änderung|Dependsonfix|
 
 ## <a name="cause"></a>Ursache
- Sichtbarer Typ Component Object Model (COM) leitet sich von einem Typ, der nicht für COM sichtbar ist.
+Ein Component Object Model sichtbarer Typ (com) ist von einem Typ abgeleitet, der nicht für com sichtbar ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn COM sichtbarer Typ Member in einer neuen Version hinzufügt, müssen sie halten Sie sich an strenge Richtlinien, die zu vermeiden, dass der COM-Clients, die auf die aktuelle Version zu binden. Ein Typ, der für COM nicht sichtbar ist wird davon ausgegangen, dass es keine diese COM-Versionsregeln folgen, wenn neue Elemente hinzugefügt. Wenn jedoch eine COM-sichtbar Typ leitet sich von der COM-Typ nicht sichtbar, und stellt eine Schnittstelle für Klassen von <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> oder <xref:System.Runtime.InteropServices.ClassInterfaceType> (Standardeinstellung), alle öffentlichen Member des Basistyps (es sei denn, sie explizit als COM unsichtbar markiert sind, was wäre redundant) sind für COM verfügbar gemacht Der Basistyp neue Elemente in einer späteren Version hinzugefügt wird, können zur funktionsunfähigkeit von COM-Clients, die auf die Schnittstelle des abgeleiteten Typs binden. Für COM sichtbare Typen sollten nur für COM sichtbare Typen, um das Risiko der Unterbrechung COM-Clients zu reduzieren abgeleitet werden.
+Wenn ein durch COM sichtbarer Typ Elemente in einer neuen Version hinzufügt, muss er strenge Richtlinien einhalten, um zu vermeiden, dass com-Clients, die an die aktuelle Version gebunden sind, unterbrochen werden Ein Typ, der für COM unsichtbar ist, setzt voraus, dass er diese com-Versions Regeln beim Hinzufügen neuer Member nicht befolgt. Wenn ein für COM sichtbarer Typ jedoch vom COM-unsichtbar-Typ abgeleitet ist und eine Klassen <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> Schnittstelle <xref:System.Runtime.InteropServices.ClassInterfaceType> von oder (Standard) verfügbar macht, werden alle öffentlichen Member des Basistyps (es sei denn, Sie sind explizit als com unsichtbar markiert, was redundant wäre) werden für com verfügbar gemacht. Wenn der Basistyp neue Member in einer nachfolgenden Version hinzufügt, werden alle com-Clients, die an die Klassen Schnittstelle des abgeleiteten Typs gebunden sind, möglicherweise nicht mehr unterbrechen. Für COM sichtbare Typen sollten nur von sichtbaren com-Typen abgeleitet werden, um die Wahrscheinlichkeit zu verringern, dass com-Clients unterbrochen werden
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie die Basistypen für COM sichtbar oder den abgeleiteten Typ für COM nicht sichtbar.
+Um einen Verstoß gegen diese Regel zu beheben, müssen Sie die Basis Typen com sichtbar machen, oder der abgeleitete Typ com ist unsichtbar.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
+Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
 
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
 

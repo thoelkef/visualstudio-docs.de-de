@@ -7,25 +7,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a4df209e45205e8098503494b61c385e1b07d3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825389"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585317"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Regelsatz für gemischte empfohlene Mindestregeln
 
-Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häufigsten und kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern zu unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
+Die gemischten empfohlenen Regeln von Microsoft konzentrieren sich auf die häufigsten und wichtigsten Probleme in C++ Ihren Projekten, die die Common Language Runtime unterstützen, einschließlich potenzieller Sicherheitslücken, Anwendungs abstürzen und anderer wichtiger Logik-und Entwurfs Fehler. Dieser Regelsatz enthält alle Regeln im Regelsatz für [gemischte Mindestregeln](mixed-minimum-rules-rule-set.md) .
+
+Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den Sie für Ihre Projekte erstellen, die die Common Language Runtime unterstützen.
 
 |Regel|Beschreibung|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Nicht initialisierter Speicher wird verwendet|
 |[C6011](../code-quality/c6011.md)|Dereferenzierender NULL-Zeiger|
 |[C6029](../code-quality/c6029.md)|Verwendung von ungeprüftem Wert|
-|[C6031](../code-quality/c6031.md)|Rückgabewert wird ignoriert|
+|[C6031](../code-quality/c6031.md)|Rückgabewert wird ignoriert.|
 |[C6053](../code-quality/c6053.md)|0 (null)-Abbruch des Aufrufs|
-|[C6054](../code-quality/c6054.md)|0 (null)-Abbruch fehlt|
+|[C6054](../code-quality/c6054.md)|Keine Beendigung fehlt.|
 |[C6059](../code-quality/c6059.md)|Fehlerhafte Verkettung|
 |[C6063](../code-quality/c6063.md)|Fehlendes Zeichenfolgenargument für Formatfunktion|
 |[C6064](../code-quality/c6064.md)|Fehlendes Ganzzahlargument für Formatfunktion|
@@ -34,27 +36,27 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C6101](../code-quality/c6101.md)|Rückgabe von nicht initialisiertem Speicher|
 |[C6200](../code-quality/c6200.md)|Index überschreitet maximale Puffergröße|
 |[C6201](../code-quality/c6201.md)|Index überschreitet maximale Puffergröße|
-|[C6214](../code-quality/c6214.md)|Ungültige Umwandlung von HRESULT in BOOL|
-|[C6215](../code-quality/c6215.md)|Ungültige Umwandlung von BOOL in HRESULT|
-|[C6216](../code-quality/c6216.md)|Ungültige vom Compiler eingefügte Umwandlung von BOOL in HRESULT|
-|[C6217](../code-quality/c6217.md)|Ungültiger HRESULT-Test mit NOT|
-|[C6220](../code-quality/c6220.md)|Ungültiger HRESULT-Vergleich mit -1|
-|[C6226](../code-quality/c6226.md)|Ungültiger HRESULT-Zuordnung – 1|
-|[C6230](../code-quality/c6230.md)|Ungültiger HRESULT-Verwendung als boolescher Wert|
-|[C6235](../code-quality/c6235.md)|Konstante ungleich 0 mit logischen- oder|
-|[C6236](../code-quality/c6236.md)|Logische- oder mit Konstante ungleich 0|
-|[C6237](../code-quality/c6237.md)|0 (null) mit logischen- und verliert Nebeneffekte|
+|[C6214](../code-quality/c6214.md)|Ungültige Umwandlung von HRESULT in bool|
+|[C6215](../code-quality/c6215.md)|Ungültige Umwandlung von bool in HRESULT.|
+|[C6216](../code-quality/c6216.md)|Ungültige, vom Compiler eingefügte Umwandlung von bool in HRESULT|
+|[C6217](../code-quality/c6217.md)|Ungültiger HRESULT-Test mit Not|
+|[C6220](../code-quality/c6220.md)|Ungültiger HRESULT-Vergleich mit-1.|
+|[C6226](../code-quality/c6226.md)|Ungültige HRESULT-Zuweisung zu-1.|
+|[C6230](../code-quality/c6230.md)|Ungültige HRESULT-Verwendung als boolescher Wert.|
+|[C6235](../code-quality/c6235.md)|Konstante ungleich 0 (null) mit logischem or|
+|[C6236](../code-quality/c6236.md)|Logisches OR mit Konstante ungleich 0 (null)|
+|[C6237](../code-quality/c6237.md)|NULL mit logischer und verliert Nebeneffekte|
 |[C6242](../code-quality/c6242.md)|Lokale Entladung erzwungen|
-|[C6248](../code-quality/c6248.md)|Erstellen von Null-DACL|
-|[C6250](../code-quality/c6250.md)|Veröffentlichte Adressdeskriptoren|
-|[C6255](../code-quality/c6255.md)|Ungeschützte Verwendung von ' alloca '|
-|[C6258](../code-quality/c6258.md)|Mithilfe von Thread beenden|
-|[C6259](../code-quality/c6259.md)|Warteschlange für unzustellbare Nachrichten, die Code In bitweisem- oder Switch|
-|[C6260](../code-quality/c6260.md)|Verwenden der Byte-Arithmetik|
-|[C6262](../code-quality/c6262.md)|Übermäßige Stapelverwendung|
-|[C6263](../code-quality/c6263.md)|Verwenden von Alloca In Schleife|
-|[C6268](../code-quality/c6268.md)|Fehlende Klammern In Umwandlung|
-|[C6269](../code-quality/c6269.md)|Zeiger-Dereferenzierung ignoriert|
+|[C6248](../code-quality/c6248.md)|Erstellen einer NULL-DACL|
+|[C6250](../code-quality/c6250.md)|Nicht freigegebene Adress Deskriptoren|
+|[C6255](../code-quality/c6255.md)|Ungeschützte Verwendung von "Zuweisung"|
+|[C6258](../code-quality/c6258.md)|Verwenden des Beendigungs Threads|
+|[C6259](../code-quality/c6259.md)|Unzustellbaren Code in einem bitweisen oder eingeschränkten Switch|
+|[C6260](../code-quality/c6260.md)|Verwendung von Byte-Arithmetik|
+|[C6262](../code-quality/c6262.md)|Übermäßige Stapel Verwendung|
+|[C6263](../code-quality/c6263.md)|Verwenden von "Zuweisung in Schleife"|
+|[C6268](../code-quality/c6268.md)|Fehlende Klammern in Umwandlung|
+|[C6269](../code-quality/c6269.md)|Zeiger Dereferenzierung wird ignoriert.|
 |[C6270](../code-quality/c6270.md)|Fehlendes Gleitkommaargument für Formatfunktion|
 |[C6271](../code-quality/c6271.md)|Zusätzliches Argument für Formatfunktion|
 |[C6272](../code-quality/c6272.md)|Nicht-Gleitkommaargument für Formatfunktion|
@@ -62,47 +64,47 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C6274](../code-quality/c6274.md)|Nicht-Zeichenargument für Formatfunktion|
 |[C6276](../code-quality/c6276.md)|Ungültige Zeichenfolgenumwandlung|
 |[C6277](../code-quality/c6277.md)|Ungültiger CreateProcess-Aufruf|
-|[C6278](../code-quality/c6278.md)|New-Arrayoperator-Delete-Konflikt|
-|[C6279](../code-quality/c6279.md)|Skalar-New und "Delete"-Konflikt|
-|[C6280](../code-quality/c6280.md)|Memory Allocation speicherspeicherbelegung und Aufheben der Konflikt|
-|[C6281](../code-quality/c6281.md)|Bitweiser Relationsvorrang|
+|[C6278](../code-quality/c6278.md)|Array-neue skalare Lösch Konflikte|
+|[C6279](../code-quality/c6279.md)|Skalar-neues Array-DELETE-Konflikt|
+|[C6280](../code-quality/c6280.md)|Nicht übereinstimmende Speicher Belegungs Zuordnung|
+|[C6281](../code-quality/c6281.md)|Bitweise Beziehungs Rangfolge|
 |[C6282](../code-quality/c6282.md)|Zuweisung ersetzt Test|
-|[C6283](../code-quality/c6283.md)|Primitive New-Arrayoperator-Delete-Konflikt|
+|[C6283](../code-quality/c6283.md)|Primitives Array-neue skalare Lösch Konflikte|
 |[C6284](../code-quality/c6284.md)|Ungültiges Objekt-Argument für Formatfunktion|
-|[C6285](../code-quality/c6285.md)|Logische- oder Konstanten|
-|[C6286](../code-quality/c6286.md)|Ungleich NULL logische- oder verliert Nebeneffekte|
+|[C6285](../code-quality/c6285.md)|Logisches OR von Konstanten|
+|[C6286](../code-quality/c6286.md)|Logischer or-Wert ungleich 0 (null) und keine Nebeneffekte|
 |[C6287](../code-quality/c6287.md)|Redundanter Test|
-|[C6288](../code-quality/c6288.md)|Gegenseitige Inklusion über logischem- und "false"|
-|[C6289](../code-quality/c6289.md)|Gegenseitige Ausschluss über logischen- oder "true" ist|
+|[C6288](../code-quality/c6288.md)|Gegenseitige Einbindung über logisches and ist false|
+|[C6289](../code-quality/c6289.md)|Gegenseitiger Ausschluss über logisches OR ist true|
 |[C6290](../code-quality/c6290.md)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem AND-Operator|
 |[C6291](../code-quality/c6291.md)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem OR-Operator|
-|[C6292](../code-quality/c6292.md)|Schleife zählt vom Maximum|
-|[C6293](../code-quality/c6293.md)|Schleife wird vom Minimum nach unten gezählt|
-|[C6294](../code-quality/c6294.md)|Schleifentext wurde niemals ausgeführt|
+|[C6292](../code-quality/c6292.md)|Schleife zählt vom Maximum nach oben|
+|[C6293](../code-quality/c6293.md)|Schleife zählt vom Minimalbetrag|
+|[C6294](../code-quality/c6294.md)|Schleifen Text wurde nie ausgeführt.|
 |[C6295](../code-quality/c6295.md)|Unendliche Schleife|
-|[C6296](../code-quality/c6296.md)|Schleife, die nur einmal ausgeführt.|
-|[C6297](../code-quality/c6297.md)|Ergebnis der Verschiebung auf größeren umwandeln|
+|[C6296](../code-quality/c6296.md)|Schleife wird nur einmal ausgeführt|
+|[C6297](../code-quality/c6297.md)|Ergebnis der UMSCHALT Umwandlung in eine größere Größe|
 |[C6299](../code-quality/c6299.md)|Bitfeld zu booleschem Vergleich|
 |[C6302](../code-quality/c6302.md)|Ungültiges Zeichenfolgenargument für Formatfunktion|
 |[C6303](../code-quality/c6303.md)|Ungültiges Zeichenfolgenargument für breite Zeichen zu Formatfunktion|
 |[C6305](../code-quality/c6305.md)|Keine Übereinstimmung bei Größe und Count-Verwendung|
 |[C6306](../code-quality/c6306.md)|Falscher Variablenargument-Funktionsaufruf|
-|[C6308](../code-quality/c6308.md)|Verlust neu zuweisen|
-|[C6310](../code-quality/c6310.md)|Unzulässige Ausnahme in Filterkonstante|
-|[C6312](../code-quality/c6312.md)|Ausnahme Ausführungsschleife fortsetzen|
-|[C6314](../code-quality/c6314.md)|Bitweiser- oder Rangfolge|
-|[C6317](../code-quality/c6317.md)|Nicht Not-Komplement|
+|[C6308](../code-quality/c6308.md)|Rezuweisung-Leck|
+|[C6310](../code-quality/c6310.md)|Ungültige Ausnahme Filter Konstante|
+|[C6312](../code-quality/c6312.md)|Ausnahme Ausführungs Schleife fortsetzen|
+|[C6314](../code-quality/c6314.md)|Bitweiser or-Rangfolge|
+|[C6317](../code-quality/c6317.md)|Nicht Komplement|
 |[C6318](../code-quality/c6318.md)|Ausnahme Suche fortsetzen|
-|[C6319](../code-quality/c6319.md)|Wird durch Kommata ignoriert|
-|[C6324](../code-quality/c6324.md)|Zeichenfolgenkopie statt Vergleich von Zeichenfolgen|
+|[C6319](../code-quality/c6319.md)|Durch Komma ignoriert|
+|[C6324](../code-quality/c6324.md)|Zeichen folgen Kopie anstelle von Zeichen folgen Vergleich|
 |[C6328](../code-quality/c6328.md)|Möglicher Argumenttypenkonflikt|
-|[C6331](../code-quality/c6331.md)|Ungültige der VirtualFree-Flags|
-|[C6332](../code-quality/c6332.md)|Ungültige der VirtualFree-Parameter|
-|[C6333](../code-quality/c6333.md)|VirtualFree-ungültige Größe|
-|[C6335](../code-quality/c6335.md)|Verlust in Prozesshandle|
-|[C6381](../code-quality/c6381.md)|Information zum Herunterfahren fehlt|
+|[C6331](../code-quality/c6331.md)|Ungültige VirtualFree-Flags|
+|[C6332](../code-quality/c6332.md)|Ungültiger VirtualFree-Parameter|
+|[C6333](../code-quality/c6333.md)|Ungültige VirtualFree-Größe|
+|[C6335](../code-quality/c6335.md)|Verlust des Prozess Handles|
+|[C6381](../code-quality/c6381.md)|Informationen zum Herunterfahren fehlen|
 |[C6383](../code-quality/c6383.md)|Element-Anzahl Byte-Anzahl Pufferüberlauf|
-|[C6384](../code-quality/c6384.md)|Zeigergrößen-Division|
+|[C6384](../code-quality/c6384.md)|Zeigergrößendivision|
 |[C6385](../code-quality/c6385.md)|Leseüberlauf|
 |[C6386](../code-quality/c6386.md)|Schreibüberlauf|
 |[C6387](../code-quality/c6387.md)|Ungültiger Parameterwert|
@@ -125,7 +127,7 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|
 |[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|
 |[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|
-|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden|
+|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die Eigenschaft "NeedsRelease" darf nicht für Werte des void-Typs verwendet werden.|
 |[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|
 |[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|
 |[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|
@@ -138,48 +140,48 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C6706](../code-quality/c6706.md)|Unerwarteter Anmerkungsfehler für Anmerkung|
 |[C6995](../code-quality/c6995.md)|Fehler beim Speichern der XML-Protokolldatei.|
 |[C26100](../code-quality/c26100.md)|Racebedingung|
-|[C26101](../code-quality/c26101.md)|Ein Interlock-Vorgang ordnungsgemäß zu verwenden|
-|[C26110](../code-quality/c26110.md)|Fehler des Aufrufers beim Aufrechterhalten der Sperre|
-|[C26111](../code-quality/c26111.md)|Fehler des Aufrufers beim Sperre|
-|[C26112](../code-quality/c26112.md)|Aufrufer kann nicht aufrechterhalten von Sperren|
-|[C26115](../code-quality/c26115.md)|Ein auf die Sperre aufzuheben|
-|[C26116](../code-quality/c26116.md)|Fehler beim Abrufen oder beim Aufrechterhalten der Sperre|
-|[C26117](../code-quality/c26117.md)|Nicht gehaltene Sperre|
+|[C26101](../code-quality/c26101.md)|Fehler bei der ordnungsgemäßen Verwendung des Interlocked-Vorgangs.|
+|[C26110](../code-quality/c26110.md)|Fehler des Aufrufers bei der Sperre|
+|[C26111](../code-quality/c26111.md)|Fehler beim Freigeben der Sperre|
+|[C26112](../code-quality/c26112.md)|Der Aufrufer kann keine Sperre enthalten|
+|[C26115](../code-quality/c26115.md)|Fehler beim Freigeben der Sperre.|
+|[C26116](../code-quality/c26116.md)|Fehler beim Abrufen oder Speichern der Sperre.|
+|[C26117](../code-quality/c26117.md)|Aufheben der nicht gehaltenen Sperre|
 |[C26140](../code-quality/c26140.md)|Nebenläufigkeitsfehler bei SAL-Anmerkung.|
-|[C28020](../code-quality/c28020.md)|Der Ausdruck ist nicht "true" bei diesem Aufruf|
+|[C28020](../code-quality/c28020.md)|Der Ausdruck ist bei diesem Befehl nicht "true".|
 |[C28021](../code-quality/c28021.md)|Der Parameter, der mit Anmerkungen versehen ist, muss ein Zeiger sein.|
-|[C28022](../code-quality/c28022.md)|Die Funktionsklassen in dieser Funktion stimmen nicht überein, den Funktionsklassen in der Typedef an, zu deren Definition verwendet.|
-|[C28023](../code-quality/c28023.md)|Die Funktion zugewiesen wird, oder übergeben müssen eine \_Funktion\_Klasse\_ Anmerkung für mindestens eine der Klassen verfügen|
-|[C28024](../code-quality/c28024.md)|Der zuzuweisende Funktionszeiger wird mit der Funktionsklasse versehen, die nicht in der Liste der Funktionsklassen enthalten ist.|
-|[C28039](../code-quality/c28039.md)|Der Typ des tatsächlichen Parameters sollte genau dem Typ übereinstimmen.|
-|[C28112](../code-quality/c28112.md)|Eine Variable, die über eine Interlocked-Funktion zugegriffen wird, muss immer über eine Interlocked-Funktion zugegriffen werden.|
+|[C28022](../code-quality/c28022.md)|Die Funktionsklassen in dieser Funktion stimmen nicht mit den Funktionsklassen in der typedef, die zum Definieren der Funktion verwendet wird, ab.|
+|[C28023](../code-quality/c28023.md)|Die Funktion, die zugewiesen oder übermittelt wird \_,\_sollte\_ über eine Funktionsklassen Anmerkung für mindestens eine der Klassen (es) verfügen.|
+|[C28024](../code-quality/c28024.md)|Der Funktionszeiger, der zugewiesen wird, wird mit der Funktionsklasse kommentiert, die nicht in der Liste der Funktionsklassen enthalten ist.|
+|[C28039](../code-quality/c28039.md)|Der Typ des tatsächlichen Parameters sollte genau mit dem Typ übereinstimmen.|
+|[C28112](../code-quality/c28112.md)|Auf eine Variable, auf die über eine Interlocked-Funktion zugegriffen wird, muss immer über eine Interlocked-Funktion zugegriffen werden.|
 |[C28113](../code-quality/c28113.md)|Zugreifen auf eine lokale Variable über eine Interlocked-Funktion|
-|[C28125](../code-quality/c28125.md)|Die Funktion muss innerhalb eines Try / except-Blocks aus aufgerufen werden|
-|[C28137](../code-quality/c28137.md)|Das Variablenargument sollte stattdessen eine (Literal-) Konstante sein.|
-|[C28138](../code-quality/c28138.md)|Das Konstante Argument sollte stattdessen variabel sein.|
-|[C28159](../code-quality/c28159.md)|Erwägen Sie stattdessen eine andere Funktion.|
+|[C28125](../code-quality/c28125.md)|Die Funktion muss innerhalb eines try/with-Blocks aufgerufen werden.|
+|[C28137](../code-quality/c28137.md)|Das Variablen Argument sollte stattdessen eine (Literale) Konstante sein.|
+|[C28138](../code-quality/c28138.md)|Das Constant-Argument sollte stattdessen eine Variable sein.|
+|[C28159](../code-quality/c28159.md)|Verwenden Sie stattdessen ggf. eine andere Funktion.|
 |[C28160](../code-quality/c28160.md)|Fehleranmerkung|
-|[C28163](../code-quality/c28163.md)|Die Funktion sollte nie aufgerufen werden innerhalb eines Try / except-Blocks|
-|[C28164](../code-quality/c28164.md)|Das Argument wird an eine Funktion übergeben wird, die einen Zeiger auf ein Objekt (keinen Zeiger auf einen Zeiger) erwartet|
+|[C28163](../code-quality/c28163.md)|Die Funktion sollte nie innerhalb eines try/with-Blocks aufgerufen werden.|
+|[C28164](../code-quality/c28164.md)|Das Argument wird an eine Funktion übermittelt, die einen Zeiger auf ein Objekt erwartet (kein Zeiger auf einen Zeiger).|
 |[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|
-|[C28183](../code-quality/c28183.md)|Das Argument könnte ein Wert sein, und ist eine Kopie des Werts im Zeiger enthaltenen|
-|[C28193](../code-quality/c28193.md)|Die Variable enthält einen Wert, der untersucht werden muss|
+|[C28183](../code-quality/c28183.md)|Das Argument könnte ein Wert sein und eine Kopie des im Zeiger gefundenen Werts sein.|
+|[C28193](../code-quality/c28193.md)|Die Variable enthält einen Wert, der untersucht werden muss.|
 |[C28196](../code-quality/c28196.md)|Die Anforderung wird nicht erfüllt. (Der Ausdruck wird nicht mit "True" ausgewertet.)|
 |[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
 |[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|
-|[C28205](../code-quality/c28205.md)|\_Erfolg\_ oder \_auf\_Fehler\_ in einem illegalen Kontext verwendet|
+|[C28205](../code-quality/c28205.md)|\_Erfolg\_ oder \_bei\_fehlgeschlagenerVerwendunginunzulässigemKontext\_|
 |[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|
 |[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|
-|[C28209](../code-quality/c28209.md)|Die Deklaration für Symbol weist einen Konflikt|
+|[C28209](../code-quality/c28209.md)|Die Deklaration für das Symbol hat eine widersprüchliche Deklaration.|
 |[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|
 |[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|
 |[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|
-|[C28213](../code-quality/c28213.md)|Die \_verwenden\_Decl\_Anmerkungen\_ -Anmerkung muss ohne Änderung eine vorherige Deklaration verweisen verwendet werden.|
+|[C28213](../code-quality/c28213.md)|Die \_Anmerkung\_use decl\_Anmerkungen\_ muss verwendet werden, um eine vorherige Deklaration ohne Änderung zu verweisen.|
 |[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
 |[C28217](../code-quality/c28217.md)|Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein|
-|[C28218](../code-quality/c28218.md)|Für Funktionsparameter entspricht der der Parameter, die in der Datei gefundenen nicht|
+|[C28218](../code-quality/c28218.md)|Für den Funktionsparameter stimmt der Parameter der Anmerkung nicht mit der in der Datei gefundenen ab.|
 |[C28219](../code-quality/c28219.md)|Member von Enumeration für den Parameter in der Anmerkung erwartet|
 |[C28220](../code-quality/c28220.md)|Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck|
 |[C28221](../code-quality/c28221.md)|Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck|
@@ -204,7 +206,7 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C28240](../code-quality/c28240.md)|Die Anmerkung zum Parameter verfügt über param2, jedoch nicht über param1.|
 |[C28241](../code-quality/c28241.md)|Die Anmerkung für die Funktion zum Parameter wird nicht erkannt.|
 |[C28243](../code-quality/c28243.md)|Die Anmerkung für die Funktion zum Parameter erfordert eine größere Anzahl von Dereferenzierungen, als der derzeit angemerkte Typ zulässt.|
-|[C28244](../code-quality/c28244.md)|Die Anmerkung für Funktion wurde einen nicht analysierbares Parameter/externe Anmerkung|
+|[C28244](../code-quality/c28244.md)|Die Anmerkung für die Funktion verfügt über einen nicht parameterbaren Parameter/eine externe Anmerkung.|
 |[C28245](../code-quality/c28245.md)|Die Anmerkung für die Funktion merkt „this“ in einer Nicht-Member-Funktion an.|
 |[C28246](../code-quality/c28246.md)|Die Parameteranmerkung für die Funktion stimmt nicht mit dem Parametertyp überein.|
 |[C28250](../code-quality/c28250.md)|Inkonsistente Anmerkung für die Funktion: die vorherige Instanz weist einen Fehler auf.|
@@ -217,7 +219,7 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|
 |[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|
 |[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|
-|[C28275](../code-quality/c28275.md)|Der Parameter für \_Makro\_Wert\_ ist null.|
+|[C28275](../code-quality/c28275.md)|Der Parameter für \_den\_Makro\_ Wert ist NULL.|
 |[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|
 |[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|
 |[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|
@@ -225,7 +227,7 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
 |[C28287](../code-quality/c28287.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)|
 |[C28288](../code-quality/c28288.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)|
-|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine|
+|[C28289](../code-quality/c28289.md)|For-Funktion: "Read ableto" oder "Write tableto" enthielt keine Limit-Spezifikation als Parameter.|
 |[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
 |[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
 |[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|
@@ -234,8 +236,8 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[C28303](../code-quality/c28303.md)|Ein mehrdeutiger \_Deref\_-Operator wurde in der Anmerkung gefunden.|
 |[C28304](../code-quality/c28304.md)|Ein falsch platzierter \_Notref\_-Operator wurde gefunden, der auf das Token angewendet wird.|
 |[C28305](../code-quality/c28305.md)|Fehler beim Analysieren eines Token.|
-|[C28306](../code-quality/c28306.md)|Die Anmerkung zum Parameter ist veraltet|
-|[C28307](../code-quality/c28307.md)|Die Anmerkung zum Parameter ist veraltet|
+|[C28306](../code-quality/c28306.md)|Die Anmerkung für den Parameter ist veraltet.|
+|[C28307](../code-quality/c28307.md)|Die Anmerkung für den Parameter ist veraltet.|
 |[C28350](../code-quality/c28350.md)|Die Anmerkung beschreibt eine Situation, die nicht bedingt anwendbar ist.|
 |[C28351](../code-quality/c28351.md)|Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
@@ -278,7 +280,7 @@ Die Microsoft gemischte Empfohlene Mindestregeln konzentrieren sich auf die häu
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparente Methoden dürfen nur überprüfbare IL enthalten.|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparente Methoden dürfen keine Methoden mit dem SuppressUnmanagedCodeSecurity-Attribut aufrufen.|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen.|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemands erfüllen.|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparente Methoden dürfen keine LinkDemand-Anforderungen erfüllen.|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|

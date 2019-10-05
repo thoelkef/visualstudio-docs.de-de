@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a644cf3dc934676a14f1c5c59a6582fcd45ae7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c06f8693034b9943de8072f110f4661b87098a5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806653"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231150"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen.
 
@@ -28,26 +28,26 @@ ms.locfileid: "62806653"
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechend, wichtige|
+|Unterbrechende Änderung|Nicht unterbrechend, unterbrechen|
 
 ## <a name="cause"></a>Ursache
- Eine Ausnahme wird ausgelöst, von einem `finally`, filtern oder Fault-Klausel.
+Eine-Ausnahme wird von einer `finally`-, Filter-oder Fault-Klausel ausgelöst.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn eine Ausnahme in einer Ausnahmeklausel ausgelöst wird, wird die Schwierigkeit des Debuggens erheblich vergrößert.
+Wenn eine Ausnahme in einer Exception-Klausel ausgelöst wird, erhöht Sie die Schwierigkeit des Debuggens erheblich.
 
- Wenn eine Ausnahme ausgelöst wird, einem `finally` oder Fault-Klausel, verbirgt die neue Ausnahme die aktive Ausnahme, falls vorhanden. Dadurch wird den ursprünglichen Fehler schwer zu erkennen und zu debuggen.
+Wenn eine Ausnahme in einer `finally` -oder-Fehler Klausel ausgelöst wird, verbirgt die neue Ausnahme die aktive Ausnahme, falls vorhanden. Dadurch wird der ursprüngliche Fehler schwer zu erkennen und zu debuggen.
 
- Wenn in einer Filterklausel eine Ausnahme ausgelöst wird, die Runtime automatisch fängt die Ausnahme ab und führt dazu, dass den Filter auf "false" ausgewertet. Es ist keine Möglichkeit, um den Unterschied zwischen der Filter auswerten auf "false" eine Ausnahme wird von einem Filter ausgelöst. Dadurch wird es schwierig ist, um zu erkennen und Debuggen von Fehlern in der Filterlogik.
+Wenn eine Ausnahme in einer Filter Klausel ausgelöst wird, fängt die Laufzeit die Ausnahme automatisch ab und bewirkt, dass der Filter zu "false" ausgewertet wird. Es gibt keine Möglichkeit, den Unterschied zwischen dem Auswerten des Filters und einer Ausnahme, die von einem Filter ausgelöst wird, zu erkennen. Dadurch wird es schwierig, Fehler in der Logik des Filters zu erkennen und zu debuggen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um diese Verstoß gegen diese Regel zu beheben, keine explizit auslösen eine Ausnahme eine `finally`, filtern oder Fault-Klausel.
+Um diesen Verstoß gegen diese Regel zu beheben, lösen Sie nicht explizit eine Ausnahme von `finally`einer-, Filter-oder Fault-Klausel aus.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie eine Warnung für diese Regel. Es gibt keine Szenarios, die unter denen eine Ausnahme, die in-Ausnahmeklausel eine ausgelöst, einen Vorteil für die Ausführung von Code bereitstellt.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung für diese Regel. Es gibt keine Szenarios, in denen eine Ausnahme, die in einer Exception-Klausel ausgelöst wird, den ausführenden Code als Vorteil bietet.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+[CA1065: Keine Ausnahmen an unerwarteten Speicherorten](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Entwurfswarnungen](../code-quality/design-warnings.md)
+[Entwurfswarnungen](../code-quality/design-warnings.md)

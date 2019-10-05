@@ -10,47 +10,47 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9fbb4b8b11b0fce7d3e7530eef80af19b35b73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a459be8c8ab028581c850f5b5770a95cb70e3510
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841030"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237193"
 ---
 # <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForDllInjectionVulnerabilities|
+|TypeName|Reviewcodefordllinjectionsicherheitsanfälligkeiten|
 |CheckId|CA3011|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige HTTP-Anforderung, dass die Eingabe einer Methode, die erreicht hat, lädt eine Assembly.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen eine Methode, die eine Assembly lädt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Bei der Arbeit mit nicht vertrauenswürdigen Eingaben Achten Sie darauf, dass Sie beim Laden von nicht vertrauenswürdigem Code. Wenn Ihre Webanwendung nicht vertrauenswürdigen Code geladen wird, ist ein Angreifer möglicherweise böswilligen DLLs in den Prozess einfügen und schädlichen Code ausführen können.
+Wenn Sie mit nicht vertrauenswürdigen Eingaben arbeiten, achten Sie darauf, nicht vertrauenswürdigen Code zu laden. Wenn Ihre Webanwendung nicht vertrauenswürdigen Code lädt, kann ein Angreifer möglicherweise böswillige DLLs in Ihren Prozess einfügen und bösartigen Code ausführen.
 
-Mit dieser Regel versucht, die Eingabe aus einer HTTP-Anforderung zu finden, die eine Methode erreicht wird, die eine Assembly geladen.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die eine Assembly lädt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben aus einer HTTP-Anforderung zu suchen, die eine Methode erreicht, die eine Assembly lädt.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die eine Assembly lädt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Nicht vertrauenswürdige DLLs nicht aus Benutzereingaben geladen werden.
+Nicht vertrauenswürdige DLLs aus Benutzereingaben nicht laden.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Nicht unterdrücken von Warnungen, die von dieser Regel.
+Warnungen von dieser Regel nicht unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

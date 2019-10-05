@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744805"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233064"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.
 
@@ -37,19 +37,19 @@ ms.locfileid: "66744805"
 
 ## <a name="cause"></a>Ursache
 
-Eine Methode legt die <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> Eigenschaft mithilfe einer Zeichenfolge, die aus einem Zeichenfolgenargument für die Methode erstellt wird.
+Eine Methode legt die <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> -Eigenschaft mithilfe einer Zeichenfolge fest, die aus einem Zeichen folgen Argument für die-Methode erstellt wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel setzt voraus, dass das Zeichenfolgenargument Benutzereingaben enthält. Eine aus Benutzereingaben erstellte SQL-Befehlszeichenfolge ist anfällig für SQL-Injection-Angriffe. In einer SQL-Injection-Angriff stellt ein böswilliger Benutzer Eingaben, die den Entwurf einer Abfrage zu beschädigen oder damit unautorisierter Zugriff auf die zugrunde liegende Datenbank ändert. Typische Techniken sind die Einfügung von einem einzelnen Anführungszeichen oder Apostroph, die die SQL-Zeichenfolgenliteral-Trennzeichen ist: zwei Gedankenstriche, was bedeutet einen SQL-Kommentar; und ein Semikolon, was bedeutet, dass ein neuer Befehl folgt. Wenn der Benutzereingabe Teil der Abfrage, verwenden Sie eine der folgenden sein muss aufgeführt, in der Reihenfolge der Effektivität, um das Risiko von Angriffen zu verringern.
+Diese Regel setzt voraus, dass das Zeichenfolgenargument Benutzereingaben enthält. Eine aus Benutzereingaben erstellte SQL-Befehlszeichenfolge ist anfällig für SQL-Injection-Angriffe. Bei einem SQL-Injection-Angriff liefert ein böswilliger Benutzereingaben, die den Entwurf einer Abfrage verändern, wenn versucht wird, den Zugriff auf die zugrunde liegende Datenbank zu beschädigen oder nicht autorisierten Zugriff zu erhalten. Typische Techniken sind die Einschleusung eines einfachen Anführungs Zeichens oder Apostroph, bei dem es sich um das SQL-literalzeichentrennzeichen handelt. zwei Bindestriche, die einen SQL-Kommentar bedeuten. und ein Semikolon, das angibt, dass ein neuer Befehl folgt. Wenn Benutzereingaben Teil der Abfrage sein müssen, verwenden Sie eine der folgenden (in der Reihenfolge der Effektivität aufgeführten), um das Risiko von Angriffen zu verringern.
 
 - Verwenden Sie eine gespeicherte Prozedur.
 
-- Verwenden Sie eine parametrisierten Befehl-Zeichenfolge.
+- Verwenden Sie eine parametrisierte Befehls Zeichenfolge.
 
-- Überprüfen Sie die Benutzereingabe für Typ und Inhalt vor dem Erstellen der Befehlszeichenfolge.
+- Überprüfen Sie die Benutzereingaben für Typ und Inhalt, bevor Sie die Befehls Zeichenfolge erstellen.
 
-Implementieren Sie die folgenden Typen von .NET die <xref:System.Data.IDbCommand.CommandText%2A> Eigenschaft oder Konstruktoren, die die Eigenschaft festgelegt wird, mit der ein Zeichenfolgenargument bereitstellen.
+Die folgenden .NET-Typen implementieren <xref:System.Data.IDbCommand.CommandText%2A> die-Eigenschaft oder stellen Konstruktoren bereit, mit denen die-Eigenschaft mithilfe eines Zeichen folgen Arguments festgelegt wird.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> und <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -59,16 +59,16 @@ Implementieren Sie die folgenden Typen von .NET die <xref:System.Data.IDbCommand
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> und <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-Beachten Sie, dass diese Regel verletzt wird, wenn die ToString-Methode eines Typs explizit oder implizit verwendet wird, die die Abfragezeichenfolge zu erstellen. Nachfolgend finden Sie ein Beispiel:
+Beachten Sie, dass diese Regel verletzt wird, wenn die Methode "destring" eines Typs explizit oder implizit verwendet wird, um die Abfrage Zeichenfolge zu erstellen. Nachfolgend finden Sie ein Beispiel:
 
 ```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-Die Regel wird verletzt, da ein böswilliger Benutzer die ToString()-Methode überschreiben kann.
+Die Regel wird verletzt, weil ein böswilliger Benutzer die Methode "destring ()" überschreiben kann.
 
-Die Regel wird auch verletzt werden, wenn ToString implizit verwendet wird.
+Die Regel wird auch verletzt, wenn die Zeichenfolge implizit verwendet wird.
 
 ```csharp
 int x = 10;
@@ -77,15 +77,15 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie eine parametrisierte Abfrage ein.
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie eine parametrisierte Abfrage.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Befehlstext keine Benutzereingaben.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Befehls Text keine Benutzereingaben enthält.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Methode, `UnsafeQuery`, die gegen die Regel und eine Methode, `SaferQuery`, der Regel mithilfe einer parametrisierten Befehlszeichenfolge entspricht.
+Das folgende Beispiel zeigt eine Methode `UnsafeQuery`,, die gegen die Regel verstößt, und eine `SaferQuery`Methode,, die die Regel mithilfe einer parametrisierten Befehls Zeichenfolge erfüllt.
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

@@ -13,34 +13,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e4c10e3a337b44a4b7c9a1cb59165736bb3e7efb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821899"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871526"
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über n-schichtige Datenanwendungen
-*N-schichtige* -datenanwendungen sind datenanwendungen, die in mehrere voneinander *Ebenen*. Sie werden auch "verteilte Anwendungen" oder "Anwendungen mit mehreren Ebenen" genannt, da die Verarbeitung auf voneinander unabhängige, auf Client und Server verteilte Ebenen aufgeteilt wird. Beim Entwickeln einer Anwendung, die auf Daten zugreift, sollten die verschiedenen Ebenen, aus denen die Anwendung besteht, klar getrennt sein.
+*N-Tier-* Daten Anwendungen sind Daten Anwendungen, die in mehrere *Ebenen*aufgeteilt sind. Sie werden auch "verteilte Anwendungen" oder "Anwendungen mit mehreren Ebenen" genannt, da die Verarbeitung auf voneinander unabhängige, auf Client und Server verteilte Ebenen aufgeteilt wird. Beim Entwickeln einer Anwendung, die auf Daten zugreift, sollten die verschiedenen Ebenen, aus denen die Anwendung besteht, klar getrennt sein.
 
-Eine typische N-Tier-Anwendung besteht aus einer Präsentationsschicht, einer mittleren Ebene und einer Datenschicht. Die einfachste Möglichkeit zum Trennen der verschiedenen Ebenen einer N-Tier-Anwendung besteht im Erstellen separater Projekte für jede Ebene, die in der Anwendung enthalten sein soll. Beispielsweise könnte die Präsentationsebene eine Windows Forms-Anwendung sein, während die Datenzugriffslogik eine in der mittleren Ebene angesiedelte Klassenbibliothek ist. Weiterhin könnte die Präsentationslogik in der mittleren Ebene über einen Dienst mit der Datenzugriffsebene kommunizieren. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Außerdem werden vertrauliche Informationen von N-Tier-Anwendungen in der Regel in der mittleren Ebene gespeichert, die von der Präsentationsebene getrennt ist.
+Eine typische N-Tier-Anwendung besteht aus einer Präsentationsschicht, einer mittleren Ebene und einer Datenschicht. Die einfachste Möglichkeit zum Trennen der verschiedenen Ebenen einer N-Tier-Anwendung besteht im Erstellen separater Projekte für jede Ebene, die in der Anwendung enthalten sein soll. Beispielsweise könnte die Präsentationsebene eine Windows Forms-Anwendung sein, während die Datenzugriffslogik eine in der mittleren Ebene angesiedelte Klassenbibliothek ist. Darüber hinaus kann die Präsentationsschicht über einen Dienst, z. b. einen Webdienst, mit der Datenzugriffs Logik in der mittleren Ebene kommunizieren. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Außerdem werden vertrauliche Informationen von N-Tier-Anwendungen in der Regel in der mittleren Ebene gespeichert, die von der Präsentationsebene getrennt ist.
 
 Visual Studio enthält zahlreiche Features, die Entwicklern das Erstellen von N-Tier-Anwendungen erleichtern.
 
-- Das Dataset enthält eine **DataSet-Projekt** -Eigenschaft, die Ihnen ermöglicht, die das Dataset (Datenentitätsebene) und TableAdaptern (Datenzugriffsebene) in einzelne Projekte.
+- Das DataSet stellt eine **DataSet-Projekt** Eigenschaft bereit, die es Ihnen ermöglicht, das Dataset (Daten Entitäts Ebene) und TableAdapters (Datenzugriffs Ebene) in diskrete Projekte zu trennen.
 
-- Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) enthält Einstellungen, um den DataContext und Datenklassen in separaten Namespaces zu generieren. Dies ermöglicht eine logische Trennung von Datenzugriffs- und Datenentitätsebenen.
+- Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) stellen Einstellungen bereit, mit denen die DataContext-und Daten Klassen in separaten Namespaces generiert werden. Dies ermöglicht eine logische Trennung von Datenzugriffs- und Datenentitätsebenen.
 
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) bietet die <xref:System.Data.Linq.Table%601.Attach%2A> -Methode, die Ihnen ermöglicht, der ein DataContext aus unterschiedlichen Ebenen in einer Anwendung vereinigt. Weitere Informationen finden Sie unter [N-schichtige und Remoteanwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) stellt die <xref:System.Data.Linq.Table%601.Attach%2A> -Methode bereit, mit der Sie den DataContext aus verschiedenen Ebenen in einer Anwendung zusammenführen können. Weitere Informationen finden Sie unter [N-Tier-und Remote Anwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Präsentationsebene
 Die *Präsentationsebene* ist die Ebene, auf der Benutzer mit einer Anwendung interagieren. Sie enthält oft auch zusätzliche Anwendungslogik. Zu den typischen Komponenten einer Präsentationsebene gehören:
 
 - Komponenten zur Datenbindung, etwa <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator>.
 
-- Objektdarstellungen von Daten, z. B. [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) Entitätsklassen für die Verwendung in der Präsentationsebene.
+- Objekt Darstellungen von Daten, z. b. [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) Entitäts Klassen für die Verwendung in der Präsentationsebene.
 
-Die Präsentationsebene greift der mittleren Ebene in der Regel mithilfe eines Dienstverweises auf (z. B. eine [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) Anwendung). Die Präsentationsschicht greift nicht direkt auf die Datenschicht zu. Sie kommuniziert mit der Datenebene unter Verwendung der Datenzugriffskomponenten der mittleren Ebene.
+Die Präsentationsebene greift in der Regel mithilfe eines Dienst Verweises auf die mittlere Ebene zu (z. b. ein [Windows Communication Foundation Dienste und WCF Data Services in der Visual Studio-](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) Anwendung). Die Präsentationsschicht greift nicht direkt auf die Datenschicht zu. Sie kommuniziert mit der Datenebene unter Verwendung der Datenzugriffskomponenten der mittleren Ebene.
 
 ## <a name="middle-tier"></a>Mittlere Ebene
 Die *mittlere Ebene* ist die Ebene, über die Präsentationsebene und Datenebene miteinander kommunizieren. Zu den typischen Komponenten einer mittleren Ebene gehören:
@@ -49,24 +49,24 @@ Die *mittlere Ebene* ist die Ebene, über die Präsentationsebene und Datenebene
 
 - Komponenten und Logik für den Datenzugriff, wie beispielsweise:
 
-  - [TableAdapters](create-and-configure-tableadapters.md) und ["DataAdapters" und "DataReaders"](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [TableAdapters](create-and-configure-tableadapters.md) und [DataAdapters und DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-  - Objektdarstellungen von Daten, z. B. [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) Entitätsklassen.
+  - Objekt Darstellungen von Daten, z. b. [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) Entitäts Klassen.
 
   - Allgemeine Anwendungsdienste wie Authentifizierung, Autorisierung und Personalisierung.
 
 In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Features und Technologien und deren mögliche Verwendung in der mittleren Ebene einer N-Tier-Anwendung dargestellt.
 
-![Mittlere Ebene Komponenten](../data-tools/media/ntiermid.png) mittleren Ebene
+![Mittlere Ebene Komponenten](../data-tools/media/ntiermid.png) der mittleren Ebene
 
 Die mittlere Ebene stellt in der Regel mithilfe einer Datenverbindung eine Verbindung mit der Datenschicht her. Diese Datenverbindung wird üblicherweise in der Datenzugriffskomponente gespeichert.
 
 ## <a name="data-tier"></a>Datenebene
-Die *Datenebene* ist im Grunde der Server, die Daten einer Anwendung (z. B. ein Server mit SQL Server) gespeichert.
+Die *Datenebene* ist im Grunde der Server, auf dem die Daten einer Anwendung gespeichert werden (z. b. ein Server, auf dem SQL Server ausgeführt wird).
 
 In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Funktionen und Technologien und deren mögliche Verwendung in der Datenebene einer N-Tier-Anwendung dargestellt.
 
-![Komponenten der Datenschicht](../data-tools/media/ntierdatatier.png) Datenebene
+![Datenebene der](../data-tools/media/ntierdatatier.png) Datenebenenkomponenten
 
 Vom Client in der Präsentationsebene kann nicht direkt auf die Datenschicht zugegriffen werden. Stattdessen fungiert die mittlere Ebene als Datenzugriffskomponente und dient zur Kommunikation zwischen der Präsentations- und der Datenebene.
 

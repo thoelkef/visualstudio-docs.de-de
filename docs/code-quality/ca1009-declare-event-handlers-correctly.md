@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779674"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236475"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Ereignishandler korrekt deklarieren.
 
@@ -35,31 +35,31 @@ ms.locfileid: "62779674"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Delegat, der eine öffentliche oder geschützte Ereignisbehandlung muss nicht die richtige Signatur, Typ oder Namen zurückgeben.
+Ein Delegat, der ein öffentliches oder geschütztes Ereignis behandelt, weist nicht die richtige Signatur, den Rückgabetyp oder die richtigen Parameternamen auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ereignishandlermethoden nehmen zwei Parameter an. Die erste ist vom Typ <xref:System.Object?displayProperty=fullName> und ist mit dem Namen "Sender". Dies ist das Objekt, durch das das Ereignis ausgelöst wurde. Der zweite Parameter ist vom Typ <xref:System.EventArgs?displayProperty=fullName> und trägt die Bezeichnung 'e'. Dies sind die Daten, die dem Ereignis zugeordnet sind. Wenn das Ereignis ausgelöst wird, wenn eine Datei geöffnet ist, enthält die Daten z. B. in der Regel den Namen der Datei.
+Ereignishandlermethoden nehmen zwei Parameter an. Der erste ist vom Typ <xref:System.Object?displayProperty=fullName> und hat den Namen "Sender". Dies ist das Objekt, durch das das Ereignis ausgelöst wurde. Der zweite Parameter ist vom Datentyp <xref:System.EventArgs?displayProperty=fullName> und hat den Namen "e". Dies sind die Daten, die dem Ereignis zugeordnet sind. Wenn das Ereignis beispielsweise ausgelöst wird, wenn eine Datei geöffnet wird, enthalten die Ereignisdaten in der Regel den Namen der Datei.
 
- Ereignishandlermethoden sollten keinen Wert zurückgibt. In der Programmiersprache c# wird dies durch den Rückgabetyp angegeben `void`. Ein Ereignishandler kann mehrere Methoden in mehrere Objekte aufrufen. Wenn die Methoden zum Zurückgeben eines Werts zulässig wäre, würde würde die Rückgabe mehrerer Werte für jedes Ereignis auftreten, und nur der Wert der letzten Methode, die aufgerufen wurde verfügbar.
+Ereignishandlermethoden sollten keinen Wert zurückgeben. In der C# Programmiersprache wird dies durch den Rückgabetyp `void`angegeben. Ein Ereignishandler kann mehrere Methoden in mehreren Objekten aufrufen. Wenn die Methoden einen Wert zurückgeben können, werden mehrere Rückgabewerte für jedes Ereignis auftreten, und nur der Wert der letzten aufgerufenen Methode wäre verfügbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Signatur, Rückgabetyp oder Parameternamen des Delegaten. Weitere Informationen finden Sie im folgende Beispiel.
+Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Signatur, den Rückgabetyp oder die Parameternamen des Delegaten. Weitere Informationen finden Sie im folgenden Beispiel.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt ein Delegat, der zur Behandlung von Ereignissen geeignet ist. Die Methoden, die von diesem Ereignishandler aufgerufen werden können, entsprechen mit der Signatur, die in den Entwurfsrichtlinien angegeben wird. `AlarmEventHandler` ist der Typname des Delegaten. `AlarmEventArgs` leitet sich von der Basisklasse für die Ereignisdaten <xref:System.EventArgs>, und enthält alarm Ereignisdaten.
+Das folgende Beispiel zeigt einen Delegaten, der für die Behandlung von Ereignissen geeignet ist. Die Methoden, die von diesem Ereignishandler aufgerufen werden können, entsprechen der Signatur, die in den Entwurfs Richtlinien angegeben ist. `AlarmEventHandler`der Typname des Delegaten. `AlarmEventArgs`wird von der-Basisklasse für Ereignisdaten <xref:System.EventArgs>abgeleitet und enthält Alarmereignis Daten.
 
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
+[!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
+[!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
+[!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2109: Sichtbare Ereignishandler überprüfen](../code-quality/ca2109-review-visible-event-handlers.md)
+[CA2109: Sichtbare Ereignishandler überprüfen](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:System.EventArgs?displayProperty=fullName>
 - <xref:System.Object?displayProperty=fullName>
-- [Behandeln und Auslösen von Ereignissen](/dotnet/standard/events/index)
+- [Behandeln und Auswerfen von Ereignissen](/dotnet/standard/events/index)

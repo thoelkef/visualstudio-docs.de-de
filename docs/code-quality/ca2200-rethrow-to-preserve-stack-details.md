@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796844"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231907"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Erneut ausführen, um Stapeldetails beizubehalten.
 
@@ -31,27 +31,27 @@ ms.locfileid: "62796844"
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Eine Ausnahme wird erneut ausgelöst, und die Ausnahme wird explizit angegeben, der `throw` Anweisung.
+Eine Ausnahme wird erneut ausgelöst, und die Ausnahme wird explizit in der `throw` Anweisung angegeben.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Sobald eine Ausnahme ausgelöst wird, ist Teil der Informationen, die es enthält die stapelüberwachung. Die stapelüberwachung ist eine Liste von der Methode Aufrufhierarchie, die mit der Methode beginnt, die die Ausnahme auslöst, und endet mit der Methode, die die Ausnahme abgefangen. Wenn eine Ausnahme erneut ausgelöst wird, durch Angeben der Ausnahme in der `throw` -Anweisung, die stapelüberwachung auf die aktuelle Methode neu gestartet wird und die Liste der Methodenaufrufe zwischen der ursprünglichen Methode, die die Ausnahme ausgelöst hat und die aktuelle Methode geht verloren. Um die ursprüngliche Stapelüberwachungsinformationen mit der Ausnahme zu halten, verwenden Sie die `throw` -Anweisung ohne Angabe der Ausnahme.
+Sobald eine Ausnahme ausgelöst wird, ist ein Teil der Informationen, die er enthält, die Stapel Überwachung. Die Stapel Überwachung ist eine Liste der Methoden Aufrufhierarchie, die mit der-Methode beginnt, die die Ausnahme auslöst und mit der-Methode endet, die die Ausnahme abfängt. Wenn eine Ausnahme erneut ausgelöst wird, indem die Ausnahme in der `throw` Anweisung angegeben wird, wird die Stapel Überwachung bei der aktuellen Methode neu gestartet, und die Liste der Methodenaufrufe zwischen der ursprünglichen Methode, die die Ausnahme ausgelöst hat, und der aktuellen Methode gehen verloren. Um die ursprünglichen Stapel Überwachungsinformationen mit der Ausnahme beizubehalten, verwenden Sie `throw` die-Anweisung, ohne die Ausnahme anzugeben.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, auslösen Sie Ausnahme erneut, ohne die Ausnahme explizit anzugeben.
+Um einen Verstoß gegen diese Regel zu beheben, lösen Sie die Ausnahme erneut aus, ohne die Ausnahme explizit anzugeben.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Methode, `CatchAndRethrowExplicitly`, die gegen die Regel und eine Methode, `CatchAndRethrowImplicitly`, die die Regel erfüllt.
+Das folgende Beispiel zeigt eine Methode `CatchAndRethrowExplicitly`,, die gegen die Regel verstößt, und eine `CatchAndRethrowImplicitly`Methode,, die die Regel erfüllt.
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

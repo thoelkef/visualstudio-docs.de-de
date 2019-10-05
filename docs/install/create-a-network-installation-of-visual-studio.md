@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365334"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180290"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -85,6 +85,8 @@ Einzelheiten finden Sie unter [Automatisieren der Visual Studio-Installation mit
 ## <a name="copy-the-layout-to-a-network-share"></a>Kopieren des Layouts in eine Netzwerkfreigabe
 
 Hosten Sie das Layout in einer Netzwerkfreigabe, damit es auf anderen Computern ausgeführt werden kann.
+
+Im folgenden Beispiel wird [xcopy](/windows-server/administration/windows-commands/xcopy/) verwendet. Sie können auch [robocopy](/windows-server/administration/windows-commands/robocopy/) verwenden, wenn Sie möchten.  
 
 ::: moniker range="vs-2017"
 
@@ -247,7 +249,7 @@ Wenn Produktupdates verfügbar sind, empfiehlt es sich, [das Layout der Netzwerk
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Die unter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) verfügbaren Visual Studio-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung das neueste verfügbare Release von Visual Studio.
+> Die unter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) verfügbaren Visual Studio-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung das neueste verfügbare Release von Visual Studio.
 >
 > Wenn Sie also heute einen Visual Studio-*Bootstrapper* herunterladen und diesen in sechs Monaten ausführen, wird das Visual Studio-Release installiert, das zum Zeitpunkt der Ausführung des Bootstrappers aktuell ist.
 >

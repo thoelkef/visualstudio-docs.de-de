@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56c2281f76b9064427d1d651523b9cda441eb029
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778771"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236016"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumeratoren sollten eine starke Typisierung aufweisen.
 
@@ -31,7 +31,7 @@ ms.locfileid: "62778771"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ implementiert <xref:System.Collections.IEnumerator?displayProperty=fullName> jedoch nicht über eine stark typisierte Version von bietet die <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> Eigenschaft. Typen, die aus den folgenden Typen abgeleitet werden, sind von dieser Regel ausgenommen:
+Ein öffentlicher oder geschützter Typ implementiert <xref:System.Collections.IEnumerator?displayProperty=fullName> , stellt jedoch keine stark typisierte Version <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> der Eigenschaft bereit. Typen, die von den folgenden Typen abgeleitet werden, sind von dieser Regel ausgenommen:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
@@ -40,23 +40,23 @@ ms.locfileid: "62778771"
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel muss <xref:System.Collections.IEnumerator> Implementierungen stark typisierte Version des auch angeben, die <xref:System.Collections.IEnumerator.Current%2A> Eigenschaft, damit Benutzer nicht erforderlich, die den Rückgabewert in den starken Typ umwandeln, wenn sie die Funktionen verwenden, die bereitgestellt wird von der Schnittstelle. Mit dieser Regel wird davon ausgegangen, dass der Typ, der implementiert <xref:System.Collections.IEnumerator> enthält eine Auflistung von Instanzen eines Typs, der stärker ist als <xref:System.Object>.
+Diese Regel erfordert <xref:System.Collections.IEnumerator> , dass Implementierungen auch eine stark typisierte Version <xref:System.Collections.IEnumerator.Current%2A> der-Eigenschaft bereitstellen, damit Benutzer den Rückgabewert nicht in den starken Typ umwandeln müssen, wenn Sie die Funktionalität verwenden, die von der-Schnittstelle bereitgestellt wird. Diese Regel geht davon aus, dass der <xref:System.Collections.IEnumerator> Typ, der implementiert, eine Auflistung von Instanzen eines Typs enthält <xref:System.Object>, der größer als ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, explizit die Schnittstelleneigenschaft implementieren (deklarieren Sie sie als `IEnumerator.Current`). Hinzufügen einer öffentliche stark typisierte Version der Eigenschaft, die als deklariert `Current`, und geben Sie ein stark typisiertes Objekt zurück.
+Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie die Schnittstellen Eigenschaft explizit (deklarieren Sie Sie als `IEnumerator.Current`). Fügen Sie eine öffentliche, stark typisierte Version der Eigenschaft hinzu `Current`, die als deklariert wurde, und geben Sie ein stark typisiertes Objekt zurück.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie eine Warnung dieser Regel, wenn Sie einen objektbasierten Enumerator für die Verwendung mit einer Auflistung von objektbasierten, z. B. einer binären Struktur implementieren. Typen, die erweitern die neue Sammlung, definieren den stark typisierten Enumerator und stark typisierte Eigenschaft verfügbar machen.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrückt eine Warnung aus dieser Regel, wenn Sie einen objektbasierten Enumerator für die Verwendung mit einer objektbasierten Auflistung implementieren, z. b. eine binäre Struktur. Typen, die die neue Auflistung erweitern, definieren den stark typisierten Enumerator und machen die stark typisierte Eigenschaft verfügbar.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel veranschaulicht die richtige Vorgehensweise zum Implementieren Sie eine stark typisierte <xref:System.Collections.IEnumerator> Typ.
+Im folgenden Beispiel wird die richtige Methode zum Implementieren eines stark typisierten <xref:System.Collections.IEnumerator> Typs veranschaulicht.
 
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1035: ICollection-Implementierungen weisen Member mit starker Typisierung](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+[CA1035: ICollection-Implementierungen weisen Member mit starker Typisierung auf](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: Listen sind stark typisiert.](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039: Listen weisen eine starke Typisierung auf](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Siehe auch
 

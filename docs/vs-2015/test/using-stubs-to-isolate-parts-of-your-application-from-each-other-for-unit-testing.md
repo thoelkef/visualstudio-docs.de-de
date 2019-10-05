@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185719"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +224,7 @@ End Class
  Stubs werden auch für die Getter und Setter von Eigenschaften, für Ereignisse sowie für generische Methoden generiert.  
   
 ### <a name="mocks"></a> Überprüfen von Parameterwerten  
- Sie können überprüfen, ob die richtigen Werte übergeben werden, wenn Ihre Komponente eine andere Komponente aufruft. Sie können entweder eine Assertion im Stub einfügen, oder Sie können den Wert und speichern und ihn im Hauptteil des Tests überprüfen. Zum Beispiel:  
+ Sie können überprüfen, ob die richtigen Werte übergeben werden, wenn Ihre Komponente eine andere Komponente aufruft. Sie können entweder eine Assertion im Stub einfügen, oder Sie können den Wert und speichern und ihn im Hauptteil des Tests überprüfen. Beispiel:  
   
 ```csharp  
 [TestClass]  
@@ -400,7 +400,7 @@ public void TestGetValue()
  Ruft der Code `GetValue<T>` mit einer anderen Instanziierung auf, würde der Stub einfach das Verhalten aufrufen.  
   
 ### <a name="BKMK_Partial_stubs"></a> Stubs von virtuellen Klassen  
- In den vorherigen Beispielen wurden die Stubs aus Schnittstellen generiert. Sie können Stubs auch aus einer Klasse generieren, die über virtuelle oder abstrakte Member verfügt. Zum Beispiel:  
+ In den vorherigen Beispielen wurden die Stubs aus Schnittstellen generiert. Sie können Stubs auch aus einer Klasse generieren, die über virtuelle oder abstrakte Member verfügt. Beispiel:  
   
 ```csharp  
 // Base class in application under test  

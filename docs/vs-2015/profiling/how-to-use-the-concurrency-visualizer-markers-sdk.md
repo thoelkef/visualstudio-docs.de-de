@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 00957e742f5731d43881df4f0ff9e18bfd7cf773
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555568"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870051"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Vorgehensweise: Verwenden der SDK-Parallelitätsschnellansichtsmarker
 
@@ -90,7 +90,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen eine <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> -Objekt durch Aufrufen der statischen () [EnterSpan]<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) Methode. Um in die Standardreihe zu schreiben, verwenden Sie die statischen Methoden zum Schreiben der <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>-Klasse.
+3. Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen ein [Span](/previous-versions/hh694189(v=vs.140)) -Objekt, indem Sie `EnterSpan` die statische-Methode aufrufen. Um in die Standard Reihe zu schreiben, verwenden Sie die statischen Schreib Methoden der [Markers](/previous-versions/hh694099(v=vs.140)) -Klasse.
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
 
      ![Parallelitätsschnellansicht mit Markern und Warnungen](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Fügen Sie Code hinzu, um benutzerdefinierte Markerreihen mithilfe der statischen <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>-Methode zu erstellen. Die <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>-Klasse enthält Methoden zum Erstellen von Spannen und zum Schreiben von Flags, Meldungen und Warnungen.
+5. Fügen Sie Code zum Erstellen von Kunden Marker-Reihen hinzu, indem Sie die statische Methode " [samatemarkerseries](/previous-versions/hh694171(v=vs.140)) " verwenden Die [markerseries](/previous-versions/hh694127(v=vs.140)) -Klasse enthält Methoden zum Erstellen von Spannen und Schreiben von Flags, Nachrichten und Warnungen.
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")

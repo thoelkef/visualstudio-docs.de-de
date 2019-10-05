@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531619"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605427"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Vorgehensweise: Verwalten von Zeilenumbrüchen im Editor
 
@@ -32,7 +32,7 @@ Sie können die Option **Zeilenumbruch** aktivieren und deaktivieren. Wenn diese
 
 2. Wählen Sie im Ordner **Text-Editor** im Unterordner **Alle Sprachen** die Option **Allgemein** aus, um diese Option global festzulegen.
 
-     - oder -
+     \- oder -
 
      Wählen Sie die Optionen **Allgemein** im Unterordner für die Sprache aus, in der Sie programmieren.
 
@@ -55,5 +55,4 @@ Wenn Sie mit Zeilenumbrüchen in Notepad++, Sublime Text oder Visual Studio Code
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Text-Editor, Dialogfeld „Optionen“](../../ide/reference/text-editor-options-dialog-box.md)
 - [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)

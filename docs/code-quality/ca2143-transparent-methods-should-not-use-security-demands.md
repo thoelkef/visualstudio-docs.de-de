@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17160e5fd47491dddb22a28d4b3f7464ad3efb78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a182beba738e583fad83c3f51d7efa312761906d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806788"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231982"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Transparente Methoden dürfen keine Sicherheitsanforderungen verwenden.
 
@@ -27,21 +27,21 @@ ms.locfileid: "62806788"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Einer transparenten Typ- oder deklarativ mit markiert einen <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` nach Bedarf, oder die Methode ruft die <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> Methode.
+Ein übergeordneter Typ oder eine übergeordnete Methode wird deklarativ <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> mit einem `.Demand` Bedarf gekennzeichnet, oder <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> die-Methode ruft die-Methode auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Sicherheitstransparenter Code sollte nicht für das Überprüfen der Sicherheit einer Operation zuständig sein und sollte daher keine Berechtigungen fordern. Sicherheitstransparenter Code sollte mithilfe von vollständigen Anforderungen Sicherheitsentscheidungen fällen, und sicherheitskritischer Code sollte für die vollständige Anforderung nicht auf transparentem Code beruhen. Jeder Code, der Sicherheit, wie z. B. sicherheitsanforderungen prüft, sollte stattdessen sicherheitsgeschützt sein.
+Sicherheitstransparenter Code sollte nicht für das Überprüfen der Sicherheit einer Operation zuständig sein und sollte daher keine Berechtigungen fordern. Sicherheitstransparenter Code sollte mithilfe von vollständigen Anforderungen Sicherheitsentscheidungen fällen, und sicherheitskritischer Code sollte für die vollständige Anforderung nicht auf transparentem Code beruhen. Jeder Code, der Sicherheitsüberprüfungen durchführt, wie z. b. Sicherheitsanforderungen, sollte stattdessen sicherheitsrelevant sein.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, markieren Sie in der Regel die Methode mit dem <xref:System.Security.SecuritySafeCriticalAttribute> Attribut. Sie können auch den Bedarf entfernen.
+Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode im Allgemeinen mit <xref:System.Security.SecuritySafeCriticalAttribute> dem-Attribut. Sie können auch die Anforderung entfernen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Die Regel Dateien auf den folgenden Code, da eine transparente Methode eine deklarative Sicherheit-Anforderung ist.
+Die Regel Dateien für den folgenden Code, da eine transparente Methode eine deklarative Sicherheitsanforderung durchführt.
 
- [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
+[!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- [CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+[CA2142: Transparenter Code darf nicht mit LinkDemand geschützt werden.](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

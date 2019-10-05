@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187780"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Bereitstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,11 +83,11 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`preRequisite`|Dies ist optional. Gibt an, dass diese Assembly im GAC bereits vorhanden sein sollte. Gültige Werte sind `true` und `false`. Wenn `true`, und die angegebene Assembly im globalen Assemblycache nicht vorhanden, die Anwendung nicht ausgeführt.|  
-|`visible`|Dies ist optional. Gibt die obersten Ebene, einschließlich ihrer projektabhängigkeiten Anwendungsidentität. Intern vom [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsspeicher und Aktivierung zu verwalten.|  
+|`preRequisite`|Optional. Gibt an, dass diese Assembly im GAC bereits vorhanden sein sollte. Gültige Werte sind `true` und `false`. Wenn `true`, und die angegebene Assembly im globalen Assemblycache nicht vorhanden, die Anwendung nicht ausgeführt.|  
+|`visible`|Optional. Gibt die obersten Ebene, einschließlich ihrer projektabhängigkeiten Anwendungsidentität. Intern vom [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsspeicher und Aktivierung zu verwalten.|  
 |`dependencyType`|Erforderlich. Die Beziehung zwischen dieser Abhängigkeit und der Anwendung. Gültige Werte sind:<br /><br /> -   `install`. Komponente stellt eine separate Installation aus der aktuellen Anwendung dar.<br />-   `preRequisite`. Komponente ist von der aktuellen Anwendung erforderlich.|  
-|`codebase`|Dies ist optional. Der vollständige Pfad zum Anwendungsmanifest.|  
-|`size`|Dies ist optional. Die Größe des Anwendungsmanifests, in Bytes.|  
+|`codebase`|Optional. Der vollständige Pfad zum Anwendungsmanifest.|  
+|`size`|Optional. Die Größe des Anwendungsmanifests, in Bytes.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements. Der Inhalt des `assemblyIdentity` muss genau wie beschrieben in der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungsmanifest. Die folgende Tabelle zeigt die Attribute der `assemblyIdentity` Element.  
@@ -99,9 +99,9 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 |`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge von 16 Zeichen, die die letzten 8 Bytes des SHA-1-Hashs des öffentlichen Schlüssels darstellt, unter denen die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel zum Signieren muss auf 2048 Bits betragen.|  
 |`processorArchitecture`|Erforderlich. Gibt den Mikroprozessor an. Gültige Werte sind `x86` für 32-Bit-Windows und `IA64` für 64-Bit-Windows.|  
 |`Language`|Dies ist optional. Identifiziert den zweiteiligen Sprachcodes der Assembly. So steht z. B. EN-US, der für Englisch (USA). Die Standardeinstellung ist `neutral`. Dieses Element ist der `asmv2` Namespace.|  
-|`type`|Dies ist optional. Abwärtskompatibilität der Kompatibilität mit Windows-Seite-an-Seite-Technologie installieren. Der einzige zulässige Wert ist `win32`.|  
+|`type`|Optional. Abwärtskompatibilität der Kompatibilität mit Windows-Seite-an-Seite-Technologie installieren. Der einzige zulässige Wert ist `win32`.|  
   
-## <a name="hash"></a>hash  
+## <a name="hash"></a>Hashindizes  
  Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Das `hash` -Element weist keine Attribute auf.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  

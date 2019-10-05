@@ -8,12 +8,14 @@ metadata:
   description: Erfahren Sie, wie Sie Visual Studio für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für jede Plattform und jedes Gerät verwenden können.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  f1_keywords:
+  - MSDNSTART
+  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
+  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493718"
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71238126"
 highlightedContent:
   items:
   - title: Setup und Installation
@@ -130,13 +132,13 @@ additionalContent:
       url: ide/compiling-and-building-in-visual-studio.md
     - title: Debug
       summary: Untersuchen und beheben Sie Fehler in Ihrem Code.
-      url: debugger/index.md
+      url: debugger/index.yml
     - title: Test
       summary: Führen Sie Tests in Ihren Projekten durch.
       url: test/improve-code-quality.md
     - title: Bereitstellen
-      summary: Geben Sie beispielsweise Ihre Apps mit WebDeploy, InstallShield und Continuous Integration frei.
-      url: deployment/index.md
+      summary: Geben Sie beispielsweise Ihre Apps und den Code mit Web Deploy, InstallShield, NuGet, Continuous Integration usw. frei.
+      url: deployment/index.yml
     - title: Quellcodeverwaltung
       summary: Geben Sie Code mit Versionskontrolltechnologien wie Git und TFVC frei.
       url: version-control/index.md
@@ -145,7 +147,7 @@ additionalContent:
       url: /azure/devops
     - title: Messen der Leistung
       summary: Ermitteln Sie Engpässe und optimieren Sie die Codeleistung mithilfe von Diagnosetools.
-      url: profiling/index.md
+      url: profiling/index.yml
     - title: Erweitern
       summary: Fügen Sie eigene Funktionen zur Visual Studio-IDE hinzu, um Ihre Entwicklungserfahrung zu verbessern.
       url: extensibility/index.md
@@ -192,7 +194,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: Mobile Entwicklung mit JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (nur Visual Studio 2017 und 2015)
       - text: Mobile Entwicklung mit C++
         url: /visualstudio/cross-platform/
       - text: Spieleentwicklung mit C++

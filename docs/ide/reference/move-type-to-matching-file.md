@@ -1,5 +1,6 @@
 ---
 title: Verschieben eines Typs in ein entsprechendes Dateirefactoring
+description: Verschieben Sie einen Typ in eine separate Datei mit demselben Namen. Klicken Sie mit der rechten Maustaste auf den Typ, wählen Sie Schnellaktionen und Refactorings aus, und klicken Sie auf „Typ in <TypeName>.cs verschieben“.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540754"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483655"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Verschieben eines Typs in ein entsprechendes Dateirefactoring
 
@@ -45,7 +46,7 @@ Dieses Refactoring gilt für:
 
 2. Führen Sie dann eine der folgenden Aktionen aus:
 
-   - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**,
+   - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** ,
    - Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Schnellaktionen und Refactorings** aus.
 
 1. Wählen Sie **Typ verschieben in *TypeName*cs** aus dem Menü aus. Dabei ist *TypeName* der Name des Typs, den Sie ausgewählt haben.

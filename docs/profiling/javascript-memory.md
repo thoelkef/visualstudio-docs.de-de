@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d41fbe3233c3564af5cab93c8adfeaa7cc3bc24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446304"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826096"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren der JavaScript-Arbeitsspeicherauslastung in UWP-Apps
 Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in UWP-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
@@ -255,14 +255,14 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 
   Um die Differenzinformationen zwischen den Momentaufnahmen zu filtern, wählen Sie einen der **Bereichsfilter** oben in den Differenzansichten aus.
 
-- **Übrige Objekte der Momentaufnahme #\<Zahl>**. Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.
+- **Übrige Objekte der Momentaufnahme #\<Zahl>** . Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.
 
   > [!TIP]
   > Um mit diesem Filter die nützlichsten Informationen anzuzeigen, befolgen Sie die unter [Isolate a memory leak](#isolate-a-memory-leak)beschriebenen Schritte.
 
 - **Objekte zwischen Momentaufnahme #\<Zahl> und #\<Zahl>** eingefügt. Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.
 
-- **Alle Objekte in Momentaufnahme #\<Zahl>**. Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.
+- **Alle Objekte in Momentaufnahme #\<Zahl>** . Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.
 
   Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.
 
@@ -355,11 +355,11 @@ if (performance && performance.mark) {
 
 - Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Beispiel:
 
-    - Die falsche Verwendung der Funktion [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) kann dieses Problem verursachen.
+  - Die falsche Verwendung der Funktion [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) kann dieses Problem verursachen.
 
-    - Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.
+  - Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.
 
-    - Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
 
 - Sehen Sie sich den letzten Teil [dieses Video](https://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.
 
@@ -367,8 +367,8 @@ if (performance && performance.mark) {
 
 - Erwägen Sie, vorübergehend Code zu ändern, um Probleme zu isolieren. Auf diese Weise können Sie z. B. folgende Vorgänge durchführen:
 
-    - Verwenden Sie die Befehle für die Speicheranalyse, `console.takeSnapshot` und `performance.mark`. (Siehe [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).)
+  - Verwenden Sie die Befehle für die Speicheranalyse, `console.takeSnapshot` und `performance.mark`. (Siehe [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).)
 
-         Sie können diese Befehle zum Isolieren von Problemen verwenden, die Sie nicht isolieren können, indem Sie manuell eine Heap-Momentaufnahme erstellen.
+    Sie können diese Befehle zum Isolieren von Problemen verwenden, die Sie nicht isolieren können, indem Sie manuell eine Heap-Momentaufnahme erstellen.
 
-    - Erstellen Sie ein Testobjekt, und verfolgen Sie es in den Ansichten der JavaScript-Speicheranalyse, z. B. in der Typenansicht. Beispielsweise können Sie einem anderen Objekt ein sehr großes Objekt anfügen, um festzustellen, ob für ein bestimmtes Objekt oder Element eine Garbage Collection durchgeführt wurde.
+  - Erstellen Sie ein Testobjekt, und verfolgen Sie es in den Ansichten der JavaScript-Speicheranalyse, z. B. in der Typenansicht. Beispielsweise können Sie einem anderen Objekt ein sehr großes Objekt anfügen, um festzustellen, ob für ein bestimmtes Objekt oder Element eine Garbage Collection durchgeführt wurde.

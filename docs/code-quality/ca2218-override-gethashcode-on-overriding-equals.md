@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155d983a68734038220ffb53aa7a5e9504abdb40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8699e3434dc9c4cf9d3eccc37916c20ff7f34015
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541883"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231190"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode beim Überschreiben von Equals überschreiben.
 
@@ -28,13 +28,13 @@ ms.locfileid: "62541883"
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher Typ überschreibt <xref:System.Object.Equals%2A?displayProperty=fullName> , nicht jedoch <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+Ein öffentlicher Typ überschreibt <xref:System.Object.Equals%2A?displayProperty=fullName> , aber nicht außer <xref:System.Object.GetHashCode%2A?displayProperty=fullName>Kraft.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Object.GetHashCode%2A> Gibt einen Wert, der basierend auf der aktuellen Instanz, die für die Verwendung in Hashalgorithmen und Datenstrukturen wie Hashtabellen geeignet ist. Zwei Objekte, die den gleichen Typ aufweisen und gleich sind, müssen den gleichen Hashcode, um sicherzustellen, dass die Instanzen der folgenden Typen ordnungsgemäß zurückgeben:
+ <xref:System.Object.GetHashCode%2A>gibt basierend auf der aktuellen Instanz einen-Wert zurück, der sich für Hash Algorithmen und Datenstrukturen eignet, z. b. eine Hash Tabelle. Zwei Objekte, die denselben Typ und gleich sind, müssen denselben Hashcode zurückgeben, um sicherzustellen, dass Instanzen der folgenden Typen ordnungsgemäß funktionieren:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -52,52 +52,52 @@ ms.locfileid: "62541883"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Typen, die implementieren <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Typen, die implementieren<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung der <xref:System.Object.GetHashCode%2A>. Für ein Paar von Objekten desselben Typs, müssen Sie sicherstellen, dass es sich bei der Implementierung den gleichen Wert zurückgegeben, wenn die Implementierung von <xref:System.Object.Equals%2A> gibt `true` für das Paar.
+Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine <xref:System.Object.GetHashCode%2A>Implementierung von bereit. Bei einem Paar von Objekten desselben Typs müssen Sie sicherstellen, dass die Implementierung denselben Wert zurückgibt, wenn die Implementierung von <xref:System.Object.Equals%2A> für `true` das Paar zurückgibt.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
-## <a name="class-example"></a>Beispiel:
-
-### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt eine Klasse (Referenztyp), die gegen diese Regel verstößt.
-
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
-
-### <a name="comments"></a>Kommentare
- Im folgenden Beispiel wird der Verstoß durch Überschreiben korrigiert <xref:System.Object.GetHashCode>.
-
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]
-
-## <a name="structure-example"></a>Struktur-Beispiel
+## <a name="class-example"></a>Klassen Beispiel
 
 ### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt eine Struktur (Werttyp), die gegen diese Regel verstößt.
+Das folgende Beispiel zeigt eine Klasse (Verweistyp), die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
 
 ### <a name="comments"></a>Kommentare
- Im folgenden Beispiel wird der Verstoß durch Überschreiben korrigiert <xref:System.Object.GetHashCode>.
+Im folgenden Beispiel wird die Verletzung durch über <xref:System.Object.GetHashCode>schreiben behoben.
 
 ### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]
+
+## <a name="structure-example"></a>Struktur Beispiel
+
+### <a name="description"></a>Beschreibung
+Das folgende Beispiel zeigt eine Struktur (Werttyp), die gegen diese Regel verstößt.
+
+### <a name="code"></a>Code
+[!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
+
+### <a name="comments"></a>Kommentare
+Im folgenden Beispiel wird die Verletzung durch über <xref:System.Object.GetHashCode>schreiben behoben.
+
+### <a name="code"></a>Code
+[!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+[CA1046: Gleichheits Operator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Operatorüberladungen weisen benannte alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+[CA2225: Operator Überladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+[CA2226: Operatoren sollten symmetrische über Ladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Außerkraftsetzung equals, Equals beim Überladen](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+[CA2224: Überschreiben von Gleichheits beim Überladen von Operatoren](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+[CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>Siehe auch
 

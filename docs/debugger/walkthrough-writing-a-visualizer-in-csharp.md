@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901247"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890922"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#\#
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in C# eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Diese einfache Zeichenfolgen-Schnellansicht ist an sich nicht sehr nützlich, doch wird an ihrem Beispiel die grundlegende Vorgehensweise für das Erstellen besser geeigneter Schnellansichten für andere Datentypen gezeigt.
@@ -38,10 +38,10 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 1. Erstellen Sie ein neues Klassenbibliotheksprojekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Klassenbibliothek**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen Sie eine neue Klassenbibliothek ((.NET Standard)**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Klassenbibliothek**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen Sie eine neue Klassenbibliothek ((.NET Standard)** . Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Im linken Bereich die **neues Projekt** Dialogfeld **Visual C#** , wählen Sie **.NET Standard**, und wählen Sie dann im mittleren Bereich **Class-Bibliothek (. NET Standard)**.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Im linken Bereich die **neues Projekt** Dialogfeld **Visual C#** , wählen Sie **.NET Standard**, und wählen Sie dann im mittleren Bereich **Class-Bibliothek (. NET Standard)** .
     ::: moniker-end
 
 2. Geben Sie einen geeigneten Namen für die Klassenbibliothek, z. B. `MyFirstVisualizer`, und klicken Sie dann auf **erstellen** oder **OK**.
@@ -170,7 +170,7 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 1. Klicken Sie im Projektmappen-Explorer mit der Maustaste der lösungs, wählen Sie **hinzufügen**, und klicken Sie dann auf **neues Projekt**.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in das Suchfeld **Konsolen-app**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen eine neue Konsolenanwendung ((.NET Framework)**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Geben Sie in das Suchfeld **Konsolen-app**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen eine neue Konsolenanwendung ((.NET Framework)** . Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
@@ -202,7 +202,8 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 
 2. Vergeben Sie für den Namen Program.cs eine aussagekräftigere Bezeichnung, zum Beispiel TestConsole.cs.
 
-    **Beachten Sie** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ändert automatisch die Klassendeklaration in TestConsole.cs entsprechend den neuen Dateinamen an.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in TestConsole.cs automatisch an den neuen Dateinamen an.
 
 3. Fügen Sie in TestConsole.cs den `using`-Anweisungen den folgenden Code hinzu:
 

@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160458"
 ---
 # <a name="symbols-element"></a>Symbols-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für n
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|Keiner||  
+|None||  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   

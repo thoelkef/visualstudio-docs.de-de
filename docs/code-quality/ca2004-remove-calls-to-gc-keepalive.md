@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c495357b837c4ae10d4dfe1e25237d6caaefcc4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808365"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233116"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Aufrufe an GC.KeepAlive entfernen.
 
@@ -31,13 +31,13 @@ ms.locfileid: "62808365"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Klassen geben mit `SafeHandle` , aber dennoch enthält Aufrufe von `GC.KeepAlive`.
+Klassen verwenden `SafeHandle` , aber enthalten weiterhin Aufrufe `GC.KeepAlive`von.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn Sie zum Konvertieren `SafeHandle` Nutzung, entfernen Sie alle Aufrufe `GC.KeepAlive` (Objekt). In diesem Fall Klassen dürfen keine aufzurufende `GC.KeepAlive`, vorausgesetzt, sie haben keinen Finalizer, sondern basieren auf `SafeHandle` das Betriebssystemhandle für diese durchführen.  Obwohl die Kosten für einen Aufruf von `GC.KeepAlive` möglicherweise unerheblich, wie die Wahrnehmung der Leistung gemessen, die einen Aufruf von `GC.KeepAlive` erforderlich oder ausreichend, um eine Lebensdauer zu lösen, Problem, das möglicherweise nicht mehr vorhanden. Dadurch wird der Code schwieriger zu, verwalten.
+Wenn Sie in die Verwendung `SafeHandle` von umrechnen, entfernen Sie `GC.KeepAlive` alle Aufrufe von (-Objekt). In diesem Fall dürfen Klassen nicht aufzurufen `GC.KeepAlive`, wenn Sie keinen Finalizer haben, sondern `SafeHandle` sich darauf verlassen, das Betriebssystem Handle für Sie abzuschließen.  Obwohl die Kosten für die Durchführung eines Aufrufes `GC.KeepAlive` durch die Leistung vernachlässigbar sein können, `GC.KeepAlive` ist der Eindruck, dass ein aufrufbedarf entweder notwendig oder ausreichend ist, um ein Lebensdauer Problem zu lösen, das möglicherweise nicht mehr vorhanden ist, den Code schwerer zu machen. Verwalten.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie Aufrufe von `GC.KeepAlive`.
+Entfernen Sie Aufrufe `GC.KeepAlive`von.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Sie können diese Warnung unterdrücken, nur dann, wenn er nicht technisch korrekt zu konvertieren ist `SafeHandle` Nutzung in Ihrer Klasse.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Sie können diese Warnung nur unterdrücken, wenn die Konvertierung `SafeHandle` in die Verwendung in ihrer Klasse nicht technisch korrekt ist.

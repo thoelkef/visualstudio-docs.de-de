@@ -1,18 +1,18 @@
 ---
 title: Anpassen der Code Coverage-Analyse
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965549"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150110"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -30,22 +30,42 @@ Führen Sie die folgenden Schritte aus, um Code Coverage anzupassen:
 
 1. Fügen Sie eine Testlaufeinstellungsdatei zu Ihrer Projektmappe hinzu. Wählen sie im **Projektmappen-Explorer** im Kontextmenü Ihrer Projektmappe die Option **Hinzufügen** > **Neues Element** und **XML-Datei** aus. Speichern Sie die Datei mit einem Namen wie z.B. *CodeCoverage.runsettings*.
 
-1. Fügen Sie den Inhalt der Beispieldatei am Ende dieses Artikels hinzu, und passen Sie diesen anschließend wie in den folgenden Abschnitten beschrieben an Ihre Anforderungen an.
+2. Fügen Sie den Inhalt der Beispieldatei am Ende dieses Artikels hinzu, und passen Sie diesen anschließend wie in den folgenden Abschnitten beschrieben an Ihre Anforderungen an.
 
-1. Wählen Sie im Menü **Test** die Option **Testeinstellungen** > **Datei für Testeinstellungen auswählen** aus, um die Testeinstellungsdatei auszuwählen. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile oder in einem Buildworkflow finden Sie unter [Konfigurieren von Komponententests mit einer *RUNSETTINGS*-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Wählen Sie im Menü **Test** die Option **Testeinstellungen** > **Datei für Testeinstellungen auswählen** aus, um die Testeinstellungsdatei auszuwählen. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile finden Sie unter [Konfigurieren von Komponententests](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Wenn Sie die Testlaufeinstellungsdatei auswählen möchten, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** aus, und wählen Sie dann **Einstellungsdatei auswählen** aus. Informationen zur Angabe einer Testlaufeinstellungsdatei für die Ausführung von Tests über die Befehlszeile finden Sie unter [Konfigurieren von Komponententests](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+
+::: moniker-end
 
    Wenn Sie **Code Coverage analysieren** auswählen, werden die Konfigurationsinformationen aus der Testlaufeinstellungsdatei gelesen.
 
    > [!TIP]
-   > Die vorherigen Code Coverage-Ergebnisse und Codefarben werden nicht automatisch ausgeblendet, wenn Sie Tests ausführen oder Ihren Code aktualisieren.
+   > Alle vorherigen Code Coverage-Ergebnisse und Codefarben werden nicht automatisch ausgeblendet, wenn Sie Tests ausführen oder Ihren Code aktualisieren.
 
-Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test** > **Testeinstellungen**.
+::: moniker range="vs-2017"
 
-![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei](../test/media/codecoverage-settingsfile.png)
+Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Test**  > **Testeinstellungen**.
 
-### <a name="specify-symbol-search-paths"></a>Angeben von Symbolsuchpfaden
+![Testeinstellungsmenü mit benutzerdefinierter Einstellungsdatei in Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
-Für die Code Coverage sind Symboldateien (*PDB*-Dateien) für Assemblys erforderlich. Für über die Projektmappe erstellte Assemblys werden Symboldateien meistens neben den Binärdateien bereitgestellt, und die Code Coverage funktioniert automatisch. In einigen Fällen sollten Sie jedoch Assemblys, auf die verwiesen wird, in die Codeabdeckungsanalyse einschließen. In solchen Fällen befinden sich die *PDB*-Dateien möglicherweise nicht neben den Binärdateien. Sie können jedoch den Symbolsuchpfad in der *RUNSETTINGS*-Datei angeben.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Um die benutzerdefinierten Einstellungen ein- und auszuschalten, deaktivieren oder aktivieren Sie die Datei im Menü **Einstellungen** im **Test-Explorer**.
+
+::: moniker-end
+
+## <a name="symbol-search-paths"></a>Symbolsuchpfade
+
+Für die Code Coverage sind Symboldateien (*PDB*-Dateien) für Assemblys erforderlich. Für über die Projektmappe erstellte Assemblys werden Symboldateien meistens neben den Binärdateien bereitgestellt, und die Code Coverage funktioniert automatisch. In einigen Fällen sollten Sie Assemblys, auf die verwiesen wird, in die Code Coverage-Analyse einschließen. In solchen Fällen befinden sich die *PDB*-Dateien möglicherweise nicht neben den Binärdateien. Sie können jedoch den Symbolsuchpfad in der *RUNSETTINGS*-Datei angeben.
 
 ```xml
 <SymbolSearchPaths>
@@ -57,9 +77,11 @@ Für die Code Coverage sind Symboldateien (*PDB*-Dateien) für Assemblys erforde
 > [!NOTE]
 > Die Symbolauflösung kann zeitaufwendig sein, insbesondere wenn sie einen Remotedateispeicherort mit zahlreichen Assemblys verwendet. Daher sollten Sie in Erwägung ziehen, die *PDB*-Dateien in denselben lokalen Speicherort zu kopieren wie die Binärdateien (*DLL* und *EXE*).
 
-### <a name="exclude-and-include"></a>„Include“ und „Exclude“
+## <a name="include-or-exclude-assemblies-and-members"></a>Einschließen oder Ausschließen von Assemblys und Membern
 
-Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Beispiel:
+Sie können Assemblys oder spezifische Typen und Member für die Code Coverage-Analyse einschließen oder ausschließen. Wenn der Abschnitt **Include** (Einschließen) leer ist oder ausgelassen wird, werden alle geladenen Assemblys und deren zugehörigen PDB-Dateien eingeschlossen. Wenn eine Assembly oder ein Member mit einer Klausel im Abschnitt **Exclude** (Ausschließen) übereinstimmt, wird sie bzw. er von der Code Coverage-Analyse ausgeschlossen. Der Abschnitt **Exclude** (Ausschließen) hat Vorrang vor dem Abschnitt **Include** (Einschließen): Wenn eine Assembly sowohl in **Include** als auch in **Exclude** aufgeführt wird, wird sie nicht in die Code Coverage-Analyse eingeschlossen.
+
+Mit dem folgenden XML-Code wird eine einzelne Assembly beispielsweise ausgeschlossen, indem ihr Name angegeben wird:
 
 ```xml
 <ModulePaths>
@@ -70,7 +92,7 @@ Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Be
 </ModulePaths>
 ```
 
-Alternativ können Sie angeben, welche Assemblys enthalten sein sollen. Dieser Ansatz hat den Nachteil, dass Sie beim Hinzufügen von weiteren Assemblys zur Projektmappe daran denken müssen, diese der Liste hinzuzufügen:
+Im folgenden Beispiel wird festgelegt, dass nur eine einzelne Assembly in Code Coverage enthalten werden soll:
 
 ```xml
 <ModulePaths>
@@ -81,15 +103,22 @@ Alternativ können Sie angeben, welche Assemblys enthalten sein sollen. Dieser A
 </ModulePaths>
 ```
 
-Wenn **Include** leer ist, enthält die Verarbeitung der Code Coverage alle Assemblys, die geladen wurden und für die *PDB*-Dateien gefunden werden können. Die Code Coverage enthält keine Elemente, die mit einer Klausel in einer **Exclude**-Liste übereinstimmen.
+In der folgenden Tabelle werden die verschiedenen Methoden aufgeführt, mit denen Assemblys und Member zum Einschließen oder Ausschließen aus Code Coverage identifiziert werden können.
 
-**Include** wird vor **Exclude** verarbeitet.
+| XML-Element | Gesuchte Übereinstimmung |
+| - | - |
+| ModulePath | Gleicht Assemblys anhand des Assemblynamens oder Dateipfads ab. |
+| CompanyName | Gleicht Assemblys anhand des Attributs **Company** ab. |
+| PublicKeyToken | Gleicht signierte Assemblys nach dem öffentlichen Schlüsseltoken ab. |
+| Quelle | Gleicht Elemente anhand des Pfadnamens der Quelldatei ab, in der sie definiert sind. |
+| Attribut | Entspricht Elementen, die das festgelegte Attribut aufweisen. Geben Sie den vollständigen Namen des Attributs an (beispielsweise `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).<br/><br/>Wenn Sie das Attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> ausschließen, werden Code, der Sprachfunktionen wie `async`, `await` und `yield return` verwendet, und automatisch implementierte Eigenschaften von der Code Coverage-Analyse ausgeschlossen. Wenn Sie tatsächlich generierten Code ausschließen möchten, schließen Sie nur das Attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> aus. |
+| Funktion | Gleicht Prozeduren, Funktionen oder Methoden nach dem vollqualifizierten Namen, einschließlich der Parameterliste, ab. Mithilfe eines [regulären Ausdrucks](#regular-expressions) können Sie auch nach einer Übereinstimmung mit einem Teil des Namens suchen.<br/><br/>Beispiele:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke
 
-In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht mit Platzhaltern identisch. Insbesondere:
+Include- und exclude-Knoten verwenden reguläre Ausdrücke, die nicht mit Platzhaltern identisch sind. Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet. Hier einige Beispiele:
 
-- **.\\** * entspricht einer Zeichenfolge beliebiger Zeichen
+- **.\*** entspricht einer Zeichenfolge beliebiger Zeichen
 
 - **\\.** entspricht einem Punkt „.“
 
@@ -101,9 +130,7 @@ In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Wei
 
 - **$** entspricht dem Ende der Zeichenfolge
 
-Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet.
-
-Beispiel:
+Im folgenden XML-Code wird veranschaulicht, wie Sie spezifische Assemblys mithilfe von regulären Ausdrücken einschließen oder ausschließen:
 
 ```xml
 <ModulePaths>
@@ -120,45 +147,27 @@ Beispiel:
 </ModulePaths>
 ```
 
+Im folgenden XML-Code wird veranschaulicht, wie Sie spezifische Funktionen mithilfe von regulären Ausdrücken einschließen oder ausschließen:
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > Wenn ein Fehler in einem regulären Ausdruck auftritt, z.B. eine Klammer ohne Escapezeichen oder Übereinstimmung, wird die Code Coverage-Analyse nicht ausgeführt.
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>Andere Möglichkeiten zum Einschließen oder Ausschließen von Elementen
-
-- **ModulePath**: gleicht vom Assemblydateipfad angegebene Assemblys ab.
-
-- **CompanyName**: gleicht Assemblys nach dem **Company**-Attribut ab.
-
-- **PublicKeyToken**: gleicht signierte Assemblys nach dem öffentlichen Schlüsseltoken ab.
-
-- **Source**: gleicht Elemente nach dem Pfadnamen der Quelldatei ab, in der sie definiert sind.
-
-- **Attribute**: gleicht Elemente ab, an die ein bestimmtes Attribut angefügt ist. Geben Sie den vollständigen Namen des Attributs ein, und schließen Sie „Attribut“ am Ende des Namens ein.
-
-- **Function**: gleicht Prozeduren, Funktionen oder Methoden nach dem vollqualifizierten Namen ab. Für den Abgleich mit einem Funktionsnamen muss der reguläre Ausdruck mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klassenname, Methodenname und Parameterliste, übereinstimmen. Beispiel:
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+Weitere Informationen zu regulären Ausdrücken finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>Beispiel für eine RUNSETTINGS-Datei
 
@@ -223,9 +232,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 
@@ -262,9 +270,14 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
+            
+            <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <!-- When set to True, collects coverage information from child processes that are launched by test or production code. -->
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <!-- When set to True, restarts the IIS process and collects coverage information from it. -->
             <CollectAspDotNet>False</CollectAspDotNet>
 
           </CodeCoverage>

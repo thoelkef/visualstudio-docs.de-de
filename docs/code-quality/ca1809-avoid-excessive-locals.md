@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89d6ee4d1a53f63cffb31439a124d3d9358e976f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545240"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233645"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Übermäßige lokale Variablen vermeiden.
 
@@ -31,16 +31,16 @@ ms.locfileid: "62545240"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Element enthält mehr als 64 lokale Variablen, von die einige Compiler generiert werden kann.
+Ein Member enthält mehr als 64 lokale Variablen, von denen einige möglicherweise vom Compiler generiert werden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Zur Optimierung der allgemeinen Leistung ist zum Speichern eines Werts in einem Prozessorregister statt im Speicher, der als bezeichnet wird *Ablaufanalyse* den Wert. Die common Language Runtime betrachtet, bis zu 64 lokale Variablen für die Registrierung in Betracht. Variablen, die nicht registriert werden, die auf dem Stapel abgelegt werden und müssen vor der Bearbeitung in ein Register verschoben werden. Um die Möglichkeit, dass alle lokale Variablen registriert werden, die Anzahl der lokalen Variablen auf 64 beschränken.
+Eine häufige Leistungsoptimierung besteht darin, einen Wert in einem Prozessor Register anstelle von im Arbeitsspeicher zu speichern. Dies wird als *registrieren* des Werts bezeichnet. Der Common Language Runtime berücksichtigt bis zu 64 lokale Variablen für die Registrierung. Variablen, die nicht registriert werden, werden auf dem Stapel abgelegt und müssen vor der Bearbeitung in ein Register verschoben werden. Um die Wahrscheinlichkeit zuzulassen, dass alle lokalen Variablen registriert werden, begrenzen Sie die Anzahl der lokalen Variablen auf 64.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Umgestalten Sie, um einen Verstoß gegen diese Regel zu beheben, die Implementierung, um nicht mehr als 64 lokale Variablen verwenden.
+Um einen Verstoß gegen diese Regel zu beheben, müssen Sie die Implementierung so umgestalten, dass nicht mehr als 64 lokale Variablen verwendet werden.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, oder um die Regel zu deaktivieren, wenn die Leistung kein Problem darstellt.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken oder die Regel zu deaktivieren, wenn die Leistung kein Problem ist.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)

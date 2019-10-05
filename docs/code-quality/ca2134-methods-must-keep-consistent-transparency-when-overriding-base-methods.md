@@ -10,42 +10,42 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67114c20a7fcf5e8ff01773d8777b23d3caf3d91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542323"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253315"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Methoden müssen beim Überschreiben von Basismethoden eine konsistente Transparenz wahren.
 
 |||
 |-|-|
-|TypeName|MethodsMustOverrideWithConsistentTransparency|
+|TypeName|Methodsmustoverride withkonsistenttransparenz|
 |CheckId|CA2134|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Diese Regel wird ausgelöst, wenn eine Methode mit markiert die <xref:System.Security.SecurityCriticalAttribute> überschreibt eine Methode, die transparent oder mit der <xref:System.Security.SecuritySafeCriticalAttribute>. Die Regel wird auch ausgelöst, wenn eine Methode, die transparent oder mit der <xref:System.Security.SecuritySafeCriticalAttribute> überschreibt eine Methode, die mit einem <xref:System.Security.SecurityCriticalAttribute>.
+Diese Regel wird ausgelöst, wenn eine mit dem <xref:System.Security.SecurityCriticalAttribute> markierte Methode eine Methode überschreibt, die transparent oder <xref:System.Security.SecuritySafeCriticalAttribute>mit markiert ist. Die Regel wird auch ausgelöst, wenn eine Methode, die transparent oder mit <xref:System.Security.SecuritySafeCriticalAttribute> markiert ist, eine Methode überschreibt, die <xref:System.Security.SecurityCriticalAttribute>mit gekennzeichnet ist.
 
- Die Regel wird angewendet, wenn eine virtuelle Methode überschrieben oder eine Schnittstelle implementiert wird.
+Die Regel wird angewendet, wenn eine virtuelle Methode überschrieben oder eine Schnittstelle implementiert wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel wird beim Versuch, ändern Sie den Security Zugriff auf eine Methode, die sich weiter entlang der Vererbungskette ausgelöst. Beispielsweise ist eine virtuelle Methode in einer Basisklasse transparenten oder sicherheitsrelevanten, muss dann die abgeleitete Klasse es mit einer transparenten oder sicherheitsrelevanten-Methode überschreiben. Im Gegensatz dazu ist das virtuelle sicherheitskritisch, muss die abgeleitete Klasse sie mit eine wichtige Methode überschreiben. Das gleiche gilt für die Schnittstellenmethoden implementieren.
+Diese Regel wird für Versuche ausgelöst, den Sicherheits Zugriff einer Methode weiter oben in der Vererbungs Kette zu ändern. Wenn eine virtuelle Methode in einer Basisklasse z. b. transparent oder sicherheitsrelevant ist, muss Sie von der abgeleiteten Klasse mit einer transparenten oder sicherheitskritischen Methode überschrieben werden. Umgekehrt muss die abgeleitete Klasse diese mit einer sicherheitskritischen Methode überschreiben, wenn Sie sicherheitskritisch ist. Die gleiche Regel gilt für die Implementierung von Schnittstellen Methoden.
 
- Transparenzregeln werden erzwungen, wenn der Code JIT-Kompilierung statt zur Laufzeit ist, damit, dass die transparenzberechnung keine dynamische Typinformationen. Aus diesem Grund muss das Ergebnis der Berechnung der Transparenz ausschließlich über den statischen Typen wird der JIT-kompiliert, unabhängig vom dynamischen Typ nicht bestimmt werden können.
+Transparenzregeln werden erzwungen, wenn der Code anstelle der Laufzeit JIT kompiliert wird, sodass die Transparenz Berechnung nicht über dynamische Typinformationen verfügt. Daher muss das Ergebnis der Transparenz Berechnung in der Lage sein, nur von den statischen Typen zu bestimmen, die JIT-kompiliert werden, unabhängig vom dynamischen Typ.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Transparenz der Methode, die eine virtuelle Methode überschreiben oder Implementieren einer Schnittstelle, um die Transparenz des virtuellen oder Schnittstellenmethode entsprechen.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Transparenz der Methode, die eine virtuelle Methode überschreibt, oder implementieren Sie eine Schnittstelle, die der Transparenz der virtuellen oder Schnittstellen Methode entspricht.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnungen, die von dieser Regel. Verstöße gegen diese Regel führt in einer Laufzeit <xref:System.TypeLoadException> für Assemblys, die Transparenz der Ebene 2 zu verwenden.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Warnungen von dieser Regel nicht unterdrücken. Verstöße gegen diese Regel führen zu einer Laufzeit <xref:System.TypeLoadException> für Assemblys, die Transparenz der Ebene 2 verwenden.
 
 ## <a name="examples"></a>Beispiele
 
 ### <a name="code"></a>Code
- [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
+[!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- [Sicherheitstransparenter Code, Ebene 2](/dotnet/framework/misc/security-transparent-code-level-2)
+[Sicherheits transparenter Code, Ebene 2](/dotnet/framework/misc/security-transparent-code-level-2)

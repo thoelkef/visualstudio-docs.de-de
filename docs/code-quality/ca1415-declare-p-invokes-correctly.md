@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da6448a414437a07b545a999b35031f82e9a8689
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546185"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234611"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invokes korrekt deklarieren.
 
@@ -28,24 +28,24 @@ ms.locfileid: "62546185"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Kategorie|Microsoft.Interoperability|
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn der P/Invoke, die den Parameter deklariert, kann nicht außerhalb der Assembly angezeigt werden. Unterbrechend – Wenn der P/Invoke, die den Parameter deklariert, die außerhalb der Assembly angezeigt werden können.|
+|Unterbrechende Änderung|Nicht unterbrechend: Wenn der P/Aufruf, der den Parameter deklariert, außerhalb der Assembly nicht sichtbar ist. Unterbrechung: Wenn der P/Aufruf, der den Parameter deklariert, außerhalb der Assembly sichtbar ist.|
 
 ## <a name="cause"></a>Ursache
- Eine Plattformaufrufmethode wurde falsch deklariert.
+Eine Platt Form Aufruf Methode wurde falsch deklariert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine Plattformaufrufmethode greift auf nicht verwalteten Code und ist definiert, mit der `Declare` -Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Derzeit diese Regel sucht Plattformaufrufdeklarationen Methode, die Win32-Funktionen als Ziel, die einen Zeiger auf einen OVERLAPPED-Strukturparameter haben und es ist nicht des zugehörigen verwalteten Parameters ein Zeiger auf eine <xref:System.Threading.NativeOverlapped?displayProperty=fullName> Struktur.
+Eine Platt Form Aufruf Methode greift auf nicht verwalteten Code zu und wird mithilfe `Declare` des- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Schlüssel Worts <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>in oder definiert. Derzeit sucht diese Regel nach Platt Form Aufruf-Methoden Deklarationen, die auf Win32-Funktionen abzielen, die einen Zeiger auf einen übergebenen Struktur Parameter aufweisen, und der entsprechende verwaltete Parameter <xref:System.Threading.NativeOverlapped?displayProperty=fullName> ist kein Zeiger auf eine-Struktur.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, deklarieren Sie ordnungsgemäß die Plattform invoke-Methode.
+Um einen Verstoß gegen diese Regel zu beheben, deklarieren Sie die Platt Form Aufruf Methode ordnungsgemäß.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt Plattformaufrufmethoden, die die Regel verletzen, und die Regel zu erfüllen.
+Das folgende Beispiel zeigt Platt Form Aufruf Methoden, die gegen die Regel verstoßen und die Regel erfüllen.
 
- [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
+[!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- [Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)
+[Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 353b98ae0ab186a4ff665566a8f3b7600db66274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b91e2df31ae0e188d0d1e0e3076ab410bf8c2296
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569007"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919833"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Verwalten von Dienstkonfigurationen und Profilen
 ## <a name="overview"></a>Übersicht
@@ -68,7 +68,7 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
 2. Klicken Sie wie in der folgenden Abbildung gezeigt neben der Liste **Zielprofil** auf die Schaltfläche **Profil speichern**. Dadurch wird ein Profil für Sie erstellt.
 
     ![Erstellen eines neuen Profils](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
-3. Nach dem Erstellen des Profils klicken Sie in der Liste **Zielprofil** auf **<Verwalten…>**.
+3. Nach dem Erstellen des Profils klicken Sie in der Liste **Zielprofil** auf **<Verwalten…>** .
 
     Das Dialogfeld **Profile verwalten** wird angezeigt, wie in der folgenden Abbildung gezeigt.
 
@@ -96,4 +96,4 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
 5. (Optional) Klicken Sie auf **Veröffentlichen** , um den Clouddienst mit den neuen Einstellungen zu veröffentlichen. Wenn Sie den Clouddienst nicht unmittelbar veröffentlichen möchten und den Veröffentlichungs-Assistenten schließen, werden Sie von Visual Studio gefragt, ob Sie die Änderungen am Profil speichern möchten.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Informationen zum Konfigurieren anderer Teile des Azure-Projekts in Visual Studio finden Sie unter [Konfigurieren eines Azure-Projekts](http://go.microsoft.com/fwlink/p/?LinkID=623075)
+Informationen zum Konfigurieren anderer Teile des Azure-Projekts in Visual Studio finden Sie unter [Konfigurieren eines Azure-Projekts](http://go.microsoft.com/fwlink/p/?LinkID=623075).

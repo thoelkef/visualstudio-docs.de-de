@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149267"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Res
 |**Inklusive blockierte Zeit %**|– Für eine Ressource, der Prozentsatz der gesamten blockierten Zeit in den Profilerstellungsdaten, die für diese Ressource blockiert war<br />– Für eine Ressource, der Prozentsatz der gesamten blockierten Zeit in der Profilerstellung, die für die Instanzen dieser Funktion blockiert wurde.|  
 |**Inklusive Konflikte %**|– Für eine Ressource, die Gesamtzahl der Fälle, in denen der Zugriff auf die Ressource blockiert war und einen Thread warten musste.<br />– Für eine Funktion, der Prozentsatz aller Konfliktereignisse in der Profilerstellung, die für den Zugriff auf die Instanzen der Funktion für die übergeordnete Ressource inklusive Konfliktereignisse waren.|  
 |**Inklusive Konflikte %**|– Für eine Ressource, der Prozentsatz aller Konfliktereignisse in der Profilerstellung, die für den Zugriff auf diese Ressource Konfliktereignisse waren.<br />– Für eine Funktion, die Anzahl der Fälle, in denen der Zugriff dieser Instanzen der Funktion auf die übergeordnete Ressource blockiert war, während die Funktion Code im Funktionstext ausführte. Dies umfasst nicht die blockierten Ereignisse für Funktionen, die von dieser Funktion aufgerufen wurden.|  
-|**Ebene**|Die Tiefe dieser Funktion in der Aufrufstruktur. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
+|**Level**|Die Tiefe dieser Funktion in der Aufrufstruktur. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|  
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|  
 |**Modulname**|Der Name des Moduls, das die Funktion enthält.|  
 |**Modulpfad**|Der Pfad des Moduls, das die Funktion enthält.|  

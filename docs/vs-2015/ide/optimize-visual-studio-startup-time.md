@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203800"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimieren der Startzeit von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Wenn Visual Studio einen langsamen Start erkennt, wird eine Popupmeldung angezei
 
 ![Visual Studio-Leistung verwalten – Popup](../ide/media/vside-perfdialog-popup.PNG "Visual Studio-Leistung verwalten – Popup")
 
-Das Dialogfeld **Visual Studio-Leistung verwalten** weist zwei Kategorien auf: **Erweiterungen** und **Toolfenster**.
+Die **Visual Studio-Leistung verwalten** Dialogfeld verfügt über zwei Kategorien unterteilt: **Erweiterungen** und **Tool Windows**.
 
 ### <a name="control-extensions"></a>Steuern von Erweiterungen
 Wenn eine Erweiterung den Start von Visual Studio verlangsamt, wird die Erweiterung im Dialogfeld **Visual Studio-Leistung verwalten** angezeigt, wenn Sie einen der Erweiterungstypen auswählen. Wenn der Einfluss auf die Startzeit (der im Abschnitt **Auswirkungen** aufgelistet ist) inakzeptabel hoch ist, können Sie sich entscheiden, die Erweiterung beim Start immer zu deaktivieren, indem Sie die Schaltfläche **Deaktivieren** auswählen. Sie können die Erweiterung mithilfe des Erweiterungs-Managers oder des Dialogfelds „Visual Studio-Leistung verwalten“ für zukünftige Sitzungen wieder aktivieren.
@@ -43,8 +43,8 @@ Wenn eine Erweiterung den Start von Visual Studio verlangsamt, wird die Erweiter
 ### <a name="control-tool-windows"></a>Steuern von Toolfenstern
 Wenn der Start von Visual Studio durch ein Toolfenster verlangsamt wird, haben Sie die Wahl, ob Sie dessen Standardverhalten beibehalten (was keine Vorteile bei der Startgeschwindigkeit bringt) oder das Verhalten durch Auswahl einer von zwei Verhaltensweisen außer Kraft setzen:
 
-- **Fenster beim Start nicht anzeigen:** Wenn Sie diese Option aktivieren, ist das angegebene Toolfenster beim Öffnen von Visual Studio immer geschlossen, auch, wenn Sie es in einer früheren Sitzung offen gelassen hatten. Sie können das Toolfenster über das Menü öffnen.
-- **Fenster beim Start automatisch ausblenden:** Wenn ein Toolfenster in einer früheren Sitzung offen gelassen wurde, bewirkt die Aktivierung dieser Option, dass die Gruppe des Toolfensters beim Start eingeklappt ist, um die Initialisierung des Toolfensters zu verhindern. Dies ist eine gute Wahl, wenn Sie ein Toolfenster häufig verwenden, da das Toolfenster trotzdem verfügbar ist, sich aber nicht mehr negativ auf die Startzeit von Visual Studio auswirkt.
+- **Fenster beim Start nicht anzeigen:** Wenn Sie diese Option auswählen, wird das angegebene Toolfenster immer geschlossen, wenn Sie Visual Studio öffnen, selbst wenn in einer früheren Sitzung offen gelassen hatten. Sie können das Toolfenster über das Menü öffnen.
+- **Fenster beim Start automatisch ausblenden:** Wenn ein Toolfenster in einer früheren Sitzung offen gelassen wurde, wird die Auswahl dieser Option Gruppe von des Toolfensters beim Start zur Initialisierung des Toolfensters zu verhindern reduziert. Dies ist eine gute Wahl, wenn Sie ein Toolfenster häufig verwenden, da das Toolfenster trotzdem verfügbar ist, sich aber nicht mehr negativ auf die Startzeit von Visual Studio auswirkt.
 
 ![Visual Studio-Leistung verwalten – Toolfenster](../ide/media/vside-perfdialog-toolwindows.PNG "Visual Studio-Leistung verwalten – Toolfenster")
 

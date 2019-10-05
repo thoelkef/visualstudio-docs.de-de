@@ -1,22 +1,20 @@
 ---
-title: Concierge Chat-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
+title: Concierge Chat-Vorteil in Visual Studio Subscription | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Weitere Informationen zum Concierge Chat-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: 9141da640cf0a181c462f1f9af5c3e8fe70a3fb4
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586919"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681184"
 ---
-# <a name="concierge-chat"></a>Concierge Chat
-
-Die Concierge Chat-Dienste bieten Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten sowie Unterstützung bei der Nutzung Ihrer Visual Studio-Abonnementvorteile.
+# <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat in Visual Studio-Abonnements
+Der Concierge Chat-Dienst bietet Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten sowie Unterstützung bei der Nutzung Ihrer Visual Studio-Abonnementvorteile.
 
 Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch angeboten (bei Fragen, bei denen es nicht um Konten, Abrechnung und Abonnements geht).
 
@@ -37,7 +35,6 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
     > ![Concierge Chat-Sitzung](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Berechtigung
-
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja          |
@@ -54,10 +51,15 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Frage:  Ist der Chatdienst in mehreren Sprachen verfügbar?
    Antwort: Hilfe bei Fragen zu Konten, Abrechnung und Abonnements ist in mehreren Sprachen verfügbar.  Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten ist nur auf Englisch verfügbar.
 
 ## <a name="support-resources"></a>Supportressourcen
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Weitere Informationen zu Microsoft-Tools und -Diensten finden Sie in der Dokumentation zu:
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Visual Studio-IDE](/visualstudio/)

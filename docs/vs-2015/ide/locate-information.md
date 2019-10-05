@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 708c1d0ed2c7fe12a4f3e905d3fd5652b25f0a8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178721"
 ---
 # <a name="locate-information"></a>Suchen nach Informationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,4 +31,4 @@ Der Help Viewer bietet verschiedene Methoden, mit denen Sie Informationen in der
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Tipps zur Volltextsuche](../ide/full-text-search-tips.md)  
   
- [Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis](../ide/how-to-find-topics-in-the-table-of-contents.md)
+ [Vorgehensweise: Find Topics in the Table of Contents (Vorgehensweise: Suchen von Themen im Inhaltsverzeichnis)](../ide/how-to-find-topics-in-the-table-of-contents.md)

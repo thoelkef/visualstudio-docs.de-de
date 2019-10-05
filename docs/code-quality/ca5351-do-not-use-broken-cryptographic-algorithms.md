@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540858"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236947"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540858"
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |Kategorie|Microsoft.Cryptography|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 > [!NOTE]
 > Diese Warnung wurde zuletzt im November 2015 aktualisiert.
@@ -35,7 +35,7 @@ Die kryptografischen Algorithmen in der folgenden Liste sind anfällig für beka
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Unterbrochene kryptografische Algorithmen werden nicht als sicher betrachtet; ihre Verwendung sollte unterbunden werden. Der MD5-Hashalgorithmus ist anfällig für bekannte Kollisionsangriffe. Die spezielle Sicherheitslücke hängt jedoch vom Verwendungszusammenhang ab.  Zum Sicherstellen der Datenintegrität (z. B. Dateisignatur oder digitales Zertifikat) verwendete Hashalgorithmen sind besonders anfällig.  In diesem Kontext könnten Angreifer zwei separate Teile der Daten generieren und nützliche Daten durch schädliche Daten ersetzen, ohne den Hashwert zu ändern oder eine zugeordnete digitale Signatur für ungültig zu erklären.
+Unterbrochene kryptografische Algorithmen werden nicht als sicher betrachtet; ihre Verwendung sollte unterbunden werden. Der MD5-Hashalgorithmus ist anfällig für bekannte Kollisionsangriffe. Die spezielle Sicherheitslücke hängt jedoch vom Verwendungszusammenhang ab.  Hash Algorithmen, die verwendet werden, um die Datenintegrität sicherzustellen (z. b. Datei Signatur oder digitales Zertifikat), sind besonders anfällig.  In diesem Kontext könnten Angreifer zwei separate Teile der Daten generieren und nützliche Daten durch schädliche Daten ersetzen, ohne den Hashwert zu ändern oder eine zugeordnete digitale Signatur für ungültig zu erklären.
 
 Bei Verschlüsselungsalgorithmen:
 
@@ -49,17 +49,17 @@ Diese Regel löst aus, wenn eine der oben genannten Kryptografiefunktionen im Qu
 
 Verwenden Sie kryptografisch sicherere Optionen:
 
-- Verwenden Sie für MD5 Hashes der [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) -Produktfamilie (z. B. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Verwenden Sie für MD5 Hashes in der [SHA-2-](/windows/desktop/SecCrypto/hash-and-signature-algorithms) Familie (z <xref:System.Security.Cryptography.SHA512>. b. <xref:System.Security.Cryptography.SHA256>, <xref:System.Security.Cryptography.SHA384>,).
 
 - Verwenden Sie für DES und RC2 eine <xref:System.Security.Cryptography.Aes> -Verschlüsselung.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel, bevor sie von einem Kryptografie-Experten geprüft wurde.
 
 ## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
 
-Die folgenden Pseudocode-Beispiele veranschaulichen das von dieser Regel und mögliche Alternativen erkannte Muster.
+Die folgenden Pseudo Codebeispiele veranschaulichen das von dieser Regel erkannte Muster und mögliche Alternativen.
 
 ### <a name="md5-hashing-violation"></a>Verstoß bei MD5-Hashfunktion
 

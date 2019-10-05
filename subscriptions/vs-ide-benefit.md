@@ -3,18 +3,17 @@ title: Visual Studio IDE-Vorteil in Visual Studio-Abonnements | Microsoft-Dokume
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
-searchscope: VS Subscription
-ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586935"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787860"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>Verwenden des Visual Studio 2019-Vorteils
+# <a name="the-visual-studio-2019-benefit"></a>Der Visual Studio 2019-Vorteils
 
 Als Visual Studio-Abonnent haben Sie Zugriff auf die Visual Studio-IDE.  Die genaue Version richtet sich nach der Stufe Ihres Abonnements.  Der Vorteil wird auf der Seite [Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) im Abonnentenportal als Kachel in der Kategorie „Tools“ (Extras) angezeigt.
 
@@ -35,7 +34,7 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 5. Klicken Sie auf die blaue Schaltfläche „Herunterladen“.
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise: Downloaddetails](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Klicken Sie auf **Ausführen**, um die Installation zu starten.
+6. Klicken Sie auf das heruntergeladene Installationspaket.  Klicken Sie nach Aufforderung auf **Ausführen**, um die Installation zu starten.
 7. Klicken Sie im Dialogfeld „Benutzerkontensteuerung“ auf **Ja**.
 8. Klicken Sie auf **Weiter**, um den Lizenzbestimmungen zuzustimmen.
 9. Wenn der Installer gestartet wird, können Sie Ihre gewünschten Workloads, individuelle Komponenten und Sprachpakete auf den entsprechenden Registerkarten auswählen.
@@ -44,9 +43,9 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 
 10. Klicken Sie auf **Installieren**.
 
-11. Wenn die Installation abgeschlossen ist, können Sie diese ändern oder Visual Studio starten.  Klicken Sie auf **Starten**, um Visual Studio zu starten.
+11. Wenn die Installation abgeschlossen ist, können Sie diese ändern oder Visual Studio starten.  Klicken Sie auf **Starten**, um Visual Studio zu starten.  Wenn Sie mehrere Versionen installiert haben, werden diese aufgelistet.
     > [!div class="mx-imgBorder"]
-    > ![Starten von Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Starten von Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. Melden Sie sich mit dem Konto an, das Ihrem Visual Studio-Abonnement zugeordnet ist.
 
@@ -54,12 +53,9 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 
 14. Visual Studio wird geöffnet. Sie können nun mit der Verwendung von Visual Studio beginnen.
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![Einstieg in Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -79,6 +75,12 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="support-resources"></a>Supportressourcen
 - Wenn Sie Hilfe bei Visual Studio IDE benötigen, sehen Sie sich die folgenden Ressourcen an:
-    - Technischer Support: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Dokumentation](/visualstudio/)
+  - Technischer Support: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Dokumentation](/visualstudio/)
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+
+## <a name="next-steps"></a>Nächste Schritte
+Wenn Sie Visual Studio installiert haben, vergessen Sie nicht, diese anderen wichtigen Vorteile zu aktivieren:
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure-Gutschriften](vs-azure.md)
+- [Windows-Entwicklerkonto](vs-windows-dev.md)

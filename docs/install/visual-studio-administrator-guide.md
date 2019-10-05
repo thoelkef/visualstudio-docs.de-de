@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328794"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026469"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
@@ -95,7 +95,7 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 * (Optional) [Wenden Sie einen Volumenlizenz-Produktschlüssel](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) als Teil des Installationsskripts, damit Benutzer die Software nicht separat aktivieren müssen.
 
-* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und wie Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und von wo Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
 
 * (Optional) Legen Sie Registrierungsrichtlinien fest, die Auswirkungen auf die Bereitstellung von Visual Studio haben – z. B. darüber, wo Pakete, die für andere Versionen oder Instanzen freigegeben wurden, installiert werden, [wo Pakete zwischengespeichert werden](disable-or-move-the-package-cache.md?view=vs-2019) oder[ ob Pakete zwischengespeichert werden](set-defaults-for-enterprise-deployments.md?view=vs-2019).
 
@@ -134,7 +134,7 @@ Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Ins
 
 * (Optional) [Wenden Sie einen Volumenlizenz-Produktschlüssel](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) als Teil des Installationsskripts, damit Benutzer die Software nicht separat aktivieren müssen.
 
-* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und wie Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* (Optional) Aktualisieren Sie das Netzwerklayout, [um zu steuern, wann und von wo Produktupdates an Ihre Endbenutzer übermittelt werden](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
 
 * (Optional) Legen Sie Registrierungsrichtlinien fest, die Auswirkungen auf die Bereitstellung von Visual Studio haben – z. B. darüber, wo Pakete, die für andere Versionen oder Instanzen freigegeben wurden, installiert werden, [wo Pakete zwischengespeichert werden](disable-or-move-the-package-cache.md?view=vs-2017) oder[ ob Pakete zwischengespeichert werden](set-defaults-for-enterprise-deployments.md?view=vs-2019).
 

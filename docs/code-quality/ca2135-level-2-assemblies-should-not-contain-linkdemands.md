@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcd9032d550e79a47941540408dc6e98a15e33f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66b9e7cb0eba06b00b30c2b7d00fac78206d222f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796717"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232244"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Assemblys der Stufe 2 dürfen keine LinkDemands enthalten.
 
@@ -27,18 +27,18 @@ ms.locfileid: "62796717"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Klasse oder Klassenmember verwendet eine <xref:System.Security.Permissions.SecurityAction> in einer Anwendung, die Sicherheit der Ebene 2 verwendet wird.
+Eine Klasse oder ein Klassenmember verwendet <xref:System.Security.Permissions.SecurityAction> in einer Anwendung, die Sicherheit auf Ebene 2 verwendet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- LinkDemands sind im Sicherheitsregelsatz der Ebene 2 veraltet. Markieren Sie, statt LinkDemands zur Erzwingung von Sicherheit zur just-in-Time (JIT)-Kompilierungszeit zu erzwingen, die Methoden, Typen und Felder mit den <xref:System.Security.SecurityCriticalAttribute> Attribut.
+LinkDemands sind im Sicherheitsregelsatz der Ebene 2 veraltet. Anstatt LinkDemand zum Erzwingen der Sicherheit bei Just-in-time (JIT)-Kompilierungszeit zu verwenden, markieren Sie die Methoden, Typen und <xref:System.Security.SecurityCriticalAttribute> Felder mit dem-Attribut.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen die <xref:System.Security.Permissions.SecurityAction> und markieren Sie den Typ oder Member mit dem <xref:System.Security.SecurityCriticalAttribute> Attribut.
+Um einen Verstoß gegen diese Regel zu beheben, entfernen <xref:System.Security.Permissions.SecurityAction> Sie den, und markieren Sie den Typ <xref:System.Security.SecurityCriticalAttribute> oder Member mit dem-Attribut.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel die <xref:System.Security.Permissions.SecurityAction> entfernt werden soll, und die Methode gekennzeichnet, mit der <xref:System.Security.SecurityCriticalAttribute> Attribut.
+Im folgenden Beispiel sollte das <xref:System.Security.Permissions.SecurityAction> entfernt und die-Methode mit dem <xref:System.Security.SecurityCriticalAttribute> -Attribut markiert werden.
 
- [!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]

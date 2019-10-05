@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual Studio-Abonnements enthalten ist
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031968"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787963"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
@@ -34,8 +33,6 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
    > ![Power BI Pro-Vorteil: vorhandenes Konto](_img/vs-pbi/vs-pbi-existing-account.png)
 
 4. Geben Sie Ihre Kontaktinformationen an, um ein neues Konto zu erstellen, und klicken sie anschließend auf **Weiter**.
-   > [!div class="mx-imgBorder"]
-   > ![Power BI Pro-Vorteil: Konto erstellen](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
 5. Erstellen Sie anschließend Ihre Benutzer-ID und ein Kennwort.  Wenn Sie bereits ein Konto haben und trotzdem ein Neues erstellen möchten, müssen Sie einen anderen Unternehmensnamen verwenden.  Klicken Sie auf **Create my account** (Mein Konto erstellen).
    > [!div class="mx-imgBorder"]
@@ -46,8 +43,6 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
    > ![Power BI Pro-Vorteil: kein Bot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
 
 7. Geben Sie den Code ein, den Sie erhalten haben, und klicken Sie auf **Weiter**.
-   > [!div class="mx-imgBorder"]
-   > ![Power BI Pro-Vorteil: kein Bot 2](_img/vs-pbi/vs-pbi-robot2-cropped.png)
 
 8. Geben Sie Ihre Kontaktinformationen an, und klicken sie anschließend auf **Weiter**.
    > [!div class="mx-imgBorder"]
@@ -60,8 +55,6 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
     > ![Power BI Pro-Vorteil: Kontaktinformationen](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
 11. Auf der nächsten Seite erhalten Sie eine Bestätigung, dass Sie Power BI Pro jetzt verwenden können.  Auf der Seite wird ein Link zur Anmeldeseite angegeben.  Es wird empfohlen, den Link zu der Anmeldeseite sowie Ihre Benutzer-ID zu speichern.  (Außerdem wird eine Begrüßungs-E-Mail an die Adresse gesendet, die Sie beim Einrichten des Kontos angegeben haben.)  Es wird möglicherweise automatisch ein Fenster des Office 365-Assistenten angezeigt, das Sie bei Fragen nutzen können.  Klicken Sie auf **Los geht's**, um fortzufahren.
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Pro-Vorteil: Einrichtung abgeschlossen](_img/vs-pbi/vs-pbi-all-set-cropped.png)
 
 12. Mit der erfolgreichen Einrichtung Ihres Power BI Pro-Kontos haben Sie Zugriff auf das Office 365-Administratorzentrum, in dem Sie Benutzer und Domänen verwalten, Office-Software installieren und mehr über Office 365 erfahren können.  Das ist alles!  Jetzt sind Sie startbereit.
 
@@ -111,9 +104,9 @@ Antwort:  Nein.  Der Power BI Pro-Vorteil kann nicht zu Behördenmandanten hinzu
 
 ## <a name="support-resources"></a>Supportressourcen
 - Benötigen Sie Hilfe bei Power BI Pro?
-    - Lesen Sie die [Onlinedokumentation](/power-bi/).
-    - Haben Sie Probleme mit der Registrierung?  Lesen Sie den Artikel [Registrieren für Power BI als Einzelperson](/power-bi/service-self-service-signup-for-power-bi).
-    - Erkunden Sie die häufigsten Probleme, lassen Sie sich von der Community helfen, oder übermitteln Sie ein Supportticket auf der [Supportseite](https://powerbi.microsoft.com/support/).
+  - Lesen Sie die [Onlinedokumentation](/power-bi/).
+  - Haben Sie Probleme mit der Registrierung?  Lesen Sie den Artikel [Registrieren für Power BI als Einzelperson](/power-bi/service-self-service-signup-for-power-bi).
+  - Erkunden Sie die häufigsten Probleme, lassen Sie sich von der Community helfen, oder übermitteln Sie ein Supportticket auf der [Supportseite](https://powerbi.microsoft.com/support/).
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 

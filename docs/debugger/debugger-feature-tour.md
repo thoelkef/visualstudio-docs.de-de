@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679765"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "70987788"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -115,6 +115,16 @@ Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu start
 Durch das Klicken auf **Neu starten** sparen Sie im Vergleich zum Beenden der App und dem erneuten Starten des Debuggers Zeit. Der Debugger hält am ersten Breakpoint an, der bei der Codeausführung erreicht wird.
 
 Wenn Sie den Debugger beenden und zum Code-Editor zurückkehren möchten, können Sie anstelle von **Neu starten** auf die rote Schaltfläche „Beenden“ ![Debuggen beenden](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") drücken.
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Bearbeiten des Codes und Fortsetzen des Debuggens (C#, Visual Basic, C++, YAML)
+
+In den meisten Sprachen, die von Visual Studio unterstützt werden, können Sie den Code während einer Debugsitzung bearbeiten und das Debuggen fortsetzen. Wenn Sie dieses Feature verwenden möchten, klicken Sie mit dem Cursor auf den Code, während dieser im Debugger angehalten wurde, und bearbeiten Sie diesen. Drücken Sie **F5**, **F10** oder **F11**, um das Debuggen fortzusetzen.
+
+![Bearbeiten und Debuggen fortsetzen](../debugger/media/dbg-tips-edit-and-continue.gif "Bearbeiten und fortsetzen")
+
+Weitere Informationen zur Verwendung des Features finden Sie unter [Bearbeiten und Fortsetzen](../debugger/edit-and-continue.md).
+
+Weitere Informationen zum Ändern von XAML-Code während einer Debugsitzung finden Sie unter [Schreiben und Debuggen von ausgeführtem XAML-Code durch Neuladen von XAML im laufenden Betrieb](xaml-hot-reload.md).
 
 ## <a name="inspect-variables-with-data-tips"></a>Untersuchen von Variablen mithilfe von Datentipps
 

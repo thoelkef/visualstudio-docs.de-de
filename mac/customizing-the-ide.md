@@ -1,21 +1,21 @@
 ---
 title: Anpassen der IDE
-description: Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. Dieses Thema erläutert die verschiedenen Arten, auf die Visual Studio für Mac an Ihre Bedürfnisse angepasst werden kann.
+description: Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. In diesem Artikel werden die verschiedenen Arten erläutert, auf die Sie Visual Studio für Mac Ihren Bedürfnissen anpassen können.
 author: alanjclark
 ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691837"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213741"
 ---
 # <a name="customizing-the-ide"></a>Anpassen der IDE
 
-Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. In diesem Artikel werden die verschiedenen Arten erläutert, auf die Visual Studio für Mac Ihren Bedürfnissen angepasst werden kann.
+Visual Studio für Mac kann so angepasst werden, dass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik entspricht. In diesem Artikel werden die verschiedenen Arten erläutert, auf die Visual Studio für Mac Ihren Bedürfnissen angepasst werden kann.
 
 ## <a name="dark-theme"></a>Dunkles Design
 
@@ -58,17 +58,21 @@ Diese Informationen werden verwendet, um Standard-Dateiheader (z.B. eine Lizenz)
 
 ![Optionen für Standard-Header](media/customizing-the-ide-image8a.png)
 
-Die aufgefüllten Felder für **Name** und **E-Mail** werden bei jedem Commit verwendet, der über die Versionskontrolle in Visual Studio für Mac ausgeführt wird. Wenn Sie diese Felder nicht aufgefüllt haben, fordert Visual Studio für Mac Sie dazu auf, dies zu tun, wenn Sie die Versionskontrolle verwenden möchten.
+Die aufgefüllten Felder für **Name** und **E-Mail** werden bei jedem Commit verwendet, der über die Versionskontrolle in Visual Studio für Mac ausgeführt wird. Wenn Sie diese Felder nicht aufgefüllt haben, werden Sie von Visual Studio für Mac dazu aufgefordert, sobald Sie die Versionskontrolle verwenden möchten.
 
 ## <a name="key-bindings"></a>Tastenbindungen
 
-Durch Tastenbindungen können Sie Ihre Entwicklungsumgebung anpassen, sodass Sie sich effizienter durch Visual Studio für Mac bewegen können. Es stellt vertraute Tastenbindungen für viele beliebte IDEs bereit, zum Beispiel Visual Studio (unter Windows), ReSharper, Visual Studio Code und Xcode.
+Durch Tastenzuordnungen oder -kombinationen können Sie Ihre Entwicklungsumgebung so anpassen, dass Sie sich effizienter durch Visual Studio für Mac bewegen können. Es stellt vertraute Tastenbindungen für viele beliebte IDEs bereit, zum Beispiel Visual Studio (unter Windows), ReSharper, Visual Studio Code und Xcode.
 
 Tastenbindungen können festgelegt werden, indem Sie zu **Visual Studio > Einstellungen > Umgebung > Tastenbindungen** navigieren, wie in der folgenden Abbildung dargestellt:
 
 ![Festlegen von Tastenbindungen](media/customizing-the-ide-image10a.png)
 
 Von hier aus können Sie nach Kombinationen für Tastenbindungen suchen, im Konflikt stehende Bindungen anzeigen lassen, neue Bindungen hinzufügen und die bestehenden Bindungen bearbeiten.
+
+Diese Zuordnungen können auch während der ersten Einrichtung von Visual Studio für Mac über den Bildschirm **Tastaturauswahl** festgelegt werden:
+
+![Festlegen von Tastenzuordnungen (erste Ausführung)](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Arbeitsbereichlayout
 
@@ -108,7 +112,7 @@ Der Status eines geöffneten Pads wird durch ein *Layout* dargestellt. Die Layou
 
 Es gibt immer ein aktives Layout und jede Änderung, die Sie an einem Layout vornehmen, zum Beispiel das Hinzufügen oder Neupositionieren eines Pads, ändert nur das aktive Layout. Wenn Sie Visual Studio für Mac schließen, werden die von Ihnen vorgenommenen Änderungen nicht gespeichert.
 
-Es ist jedoch möglich, über das Menüelement **Ansicht > Aktuelles Layout speichern** ein neues Layout zu erstellen. Dadurch wird das aktuelle Layout zum Menü hinzugefügt, sodass Sie es jederzeit auswählen können:
+Es ist jedoch möglich, über das Menüelement **Ansicht > Aktuelles Layout speichern** ein neues Layout zu erstellen. Mit diesem Befehl wird dem Menü das aktuelle Layout hinzugefügt, sodass Sie es jederzeit auswählen können:
 
 ![Speichern aktueller Layouts](media/customizing-the-ide-image6a.png)
 
@@ -116,7 +120,7 @@ Es ist jedoch möglich, über das Menüelement **Ansicht > Aktuelles Layout spei
 
 In Visual Studio für Mac können Sie Text-Editoren parallel öffnen oder einen Editor als getrenntes, unverankertes Fenster öffnen.
 
-Der 2-Spalten-Modus kann über das Menüelement „Ansicht“ aktiviert werden, indem Sie auf **Ansicht > Editor-Spalten > 2 Spalten** klicken, oder indem Sie eine Registerkarte des Editors an einen der Ränder des Editorbereichs ziehen:
+Der 2-Spalten-Modus kann über das Menüelement „Ansicht“ aktiviert werden. Klicken Sie hierzu auf **Ansicht > Editorspalten > 2 Spalten**, oder ziehen Sie eine Registerkarte des Editors an einen der Ränder des Editorbereichs:
 
 ![Paralleler Modus für zwei Spalten](media/customizing-the-ide-sbs.png)
 

@@ -13,11 +13,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194190"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
   
  \<VSTemplate>  
  \<TemplateData>  
- \<Name>  
+ \<Name >  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -45,8 +45,8 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|  
-|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
+|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|  
+|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -58,9 +58,9 @@ Gibt den Namen der Vorlage an, wie in der **neues Projekt** oder **neues Element
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
 ## <a name="text-value"></a>Textwert  
- Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
+ Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.  
   
- Der Text gibt den Namen der Vorlage.  
+ Der Text gibt den Namen der Vorlage an.  
   
 ## <a name="remarks"></a>Hinweise  
  `Name` ist ein erforderliches untergeordnetes Element von `TemplateData`.  

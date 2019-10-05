@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 09/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cdab0458d67bb13ffdd456e2e50e86d290444f3c
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177677"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211378"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Arbeitsauslastung und Komponenten-IDs von Visual Studio
 
@@ -50,7 +50,7 @@ Weitere Informationen zur Verwendung dieser Listen finden Sie auf der Seite [Ver
 
 ::: moniker range="vs-2019"
 
-**Für [Release 16.1](/visualstudio/releases/2019/release-notes/) aktualisiert**
+**Für [Release 16.3](/visualstudio/releases/2019/release-notes/) aktualisiert**
 
 | **Edition** | **ID** | **Beschreibung** |
 | ----------- | ------ | --------------- |

@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58959195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196928"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten Containerordnern für Projektmappen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,8 +57,8 @@ Die Source-Plug-in-API Version 1.2 kann einem Benutzer ein einziger Stammknoten 
   
 |Projektmappe enthält|Auf Datenträger|Datenbank-Standardstruktur|  
 |-----------------------|-----------------------|--------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*User_choice*  /C/Web1<br /><br /> $/*user_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*User_choice*  /D/web1<br /><br /> $/*user_choice*/sln1/win1|  
+|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /C/Web1<br /><br /> $/*User_choice*/Web2|  
+|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /D/web1<br /><br /> $/*User_choice*  /sln1/win1|  
   
  Die SUR-Ordner und Unterordner werden erstellt, unabhängig davon, ob der Vorgang wurde abgebrochen oder aufgrund eines Fehlers fehlschlägt. Sie werden nicht automatisch in "Abbrechen" oder fehlerbedingungen entfernt.  
   

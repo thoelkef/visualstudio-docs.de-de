@@ -1,61 +1,55 @@
 ---
 title: 'Tutorial 1: Erstellen eines Bildanzeigeprogramms'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 08/30/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821811"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118672"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
-In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei lädt und in einem Fenster anzeigt. Sie erfahren, wie Sie mithilfe des **Windows Forms-Designers** Steuerelemente, z.B. Schaltflächen und Bildfelder, auf das Formular ziehen, ihre Eigenschaften festlegen und mithilfe von Containern die Größe des Formulars stufenlos ändern können. Sie fangen auch an, Code zu schreiben. Sie lernen Folgendes:
+In diesem Tutorial erstellen Sie eine App, die ein Bild aus einer Datei lädt und in einem Fenster anzeigt. Sie erfahren, wie Sie mithilfe des **Windows Forms-Designers** Steuerelemente, z. B. Schaltflächen und Bildfelder, auf das Formular ziehen, ihre Eigenschaften festlegen und mithilfe von Containern die Größe des Formulars reibungslos ändern können. Sie fangen auch an, Code zu schreiben.
 
-- Erstellen Sie ein neues Projekt.
+> [!NOTE]
+> In diesem Lernprogramm werden sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
 
-- Testen (Debuggen) einer Anwendung
+In diesem Tutorial werden Sie durch die folgenden Aufgaben geführt:
 
-- Hinzufügen grundlegender Steuerelemente, z. B. Kontrollkästchen und Schaltflächen, zu einem Formular
+* Erstellen Sie ein neues Projekt.
 
-- Positionieren von Steuerelementen auf einem Formular mithilfe von Layouts
+* Testen (Debuggen) einer Anwendung
 
-- Hinzufügen der Dialogfelder **Datei öffnen** und **Farbe** zu einem Formular.
+* Hinzufügen grundlegender Steuerelemente, z. B. Kontrollkästchen und Schaltflächen, zu einem Formular
 
-- Schreiben von Code mithilfe von IntelliSense und Codeausschnitten
+* Positionieren von Steuerelementen auf einem Formular mithilfe von Layouts
 
-- Schreiben von Ereignishandlermethoden
+* Hinzufügen der Dialogfelder **Datei öffnen** und **Farbe** zu einem Formular.
 
-Am Ende sieht das Programm wie in der folgenden Abbildung aus:
+* Schreiben von Code mithilfe von IntelliSense und Codeausschnitten
 
-![Bild, das Sie in diesem Lernprogramm erstellen](../ide/media/express_pictureviewerdone.png)
+* Schreiben von Ereignishandlermethoden
+
+Anschließend sollte Ihre App in etwa wie in der folgenden Abbildung aussehen:
+
+![Picture Viewer-App, die Sie in diesem Tutorial erstellen](../ide/media/express_pictureviewerdone.png)
 
 ## <a name="tutorial-links"></a>Tutoriallinks
 
-Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
-
-![Videolink](../data-tools/media/playvideo.gif)Weitere Informationen erhalten Sie in der Videoversion dieses Themas unter [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic - Video 1)](http://go.microsoft.com/fwlink/?LinkId=205207) oder unter [Leitfaden für C#](http://go.microsoft.com/fwlink/?LinkId=205198).
-
-> [!NOTE]
-> Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise. In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
->
-> Um Code für Visual Basic anzuzeigen, wählen Sie die Registerkarte **VB** oben in den Codeblöcken aus. Um Code für Visual C# anzuzeigen, wählen Sie die Registerkarte **C#** aus. Wenn Sie Informationen zu Visual C++ benötigen, finden Sie diese unter [Erste Schritte](../ide/getting-started-with-cpp-in-visual-studio.md) und im [C++-Sprachtutorial](http://www.cplusplus.com/doc/tutorial/).
->
-> Wenn Sie erfahren möchten, wie Sie UWP-Apps in Visual C# oder Visual Basic schreiben, lesen Sie [Entwickeln von UWP-Apps](https://developer.microsoft.com/windows/apps).
-
-## <a name="related-topics"></a>Verwandte Themen
-
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
-|[Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md)|Beginnen Sie, indem Sie ein Windows Forms-Anwendungsprojekt erstellen.|
-|[Schritt 2: Ausführen des Programms](../ide/step-2-run-your-program.md)|Führen Sie das Windows Forms-Anwendungsprogramm aus, das Sie im vorherigen Schritt erstellt haben.|
+|[Schritt 1: Erstellen eines Windows Forms-App-Projekts](../ide/step-1-create-a-windows-forms-application-project.md)|Erstellen Sie zunächst ein Windows Forms-App-Projekt.|
+|[Schritt 2: Ausführen Ihrer Picture Viewer-App](../ide/step-2-run-your-program.md)|Führen Sie das Windows Forms-App-Projekt aus, das Sie im vorherigen Schritt erstellt haben.|
 |[Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md)|Ändern Sie das Aussehen des Formulars mit dem **Eigenschaftenfenster**.|
 |[Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Fügen Sie Ihrem Formular ein `TableLayoutPanel`-Steuerelement hinzu.|
 |[Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md)|Fügen Sie dem Formular Steuerelemente hinzu, z.B. ein `PictureBox`-Steuerelement und ein `CheckBox`-Steuerelement. Fügen Sie dem Formular Schaltflächen hinzu.|
@@ -64,4 +58,14 @@ Informationen zum Herunterladen einer vollständigen Version des Beispiels finde
 |[Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Schreiben Sie Code mit dem IntelliSense-Tool.|
 |[Schritt 9: Überprüfen, Kommentieren und Testen des Codes](../ide/step-9-review-comment-and-test-your-code.md)|Prüfen und testen Sie den Code. Fügen Sie bei Bedarf Kommentare hinzu.|
 |[Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Schreiben Sie mithilfe von IntelliSense Code, damit andere Schaltflächen und ein Kontrollkästchen funktionieren.|
-|[Schritt 11: Ausführen des Programms und Ausprobieren weiterer Funktionen](../ide/step-11-run-your-program-and-try-other-features.md)|Führen Sie das Programm aus, und legen Sie die Hintergrundfarbe fest. Probieren Sie andere Funktionen aus. Ändern Sie z. B. Farben, Schriftarten und Rahmen.|
+|[Schritt 11: Ausführen Ihrer App und Ausprobieren weiterer Features](../ide/step-11-run-your-program-and-try-other-features.md)|Führen Sie Ihre App aus, und legen Sie die Hintergrundfarbe fest. Probieren Sie andere Funktionen aus. Ändern Sie z. B. Farben, Schriftarten und Rahmen.|
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Beginnen Sie das Tutorial mit **[Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md)** .
+
+## <a name="see-also"></a>Siehe auch
+
+* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
+* [Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546234"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234153"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.
 
@@ -28,37 +28,42 @@ ms.locfileid: "62546234"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Kategorie|Microsoft.Naming|
-|Unterbrechende Änderung|Wichtige – Wenn auf Assemblys, Namespaces, Typen, Member und Parameter ausgelöst.<br /><br /> Nicht unterbrechend – Wenn für den generischen Parameter des Typs ausgelöst.|
+|Unterbrechende Änderung|Unterbrechen: Wenn Assemblys, Namespaces, Typen, Member und Parameter ausgelöst werden.<br /><br /> Nicht unterbrechend: Wenn Sie für generische Typparameter ausgelöst werden.|
 
 ## <a name="cause"></a>Ursache
- Der Name eines Bezeichners ist keine korrekte Groß-/Kleinschreibung.
 
- \- oder –
+Der Name eines Bezeichners ist nicht ordnungsgemäß geschrieben.
 
- Der Name eines Bezeichners enthält eine zweibuchstabige Abkürzung, und ist der zweite Buchstaben in Kleinbuchstaben.
+\- oder –
 
- \- oder –
+Der Name eines Bezeichners enthält einen aus zwei Buchstaben bestehenden Akronym und den zweiten Buchstaben in Kleinbuchstaben.
 
- Der Name eines Bezeichners enthält ein Akronym mindestens drei Großbuchstaben.
+\- oder –
+
+Der Name eines Bezeichners enthält ein Akronym von drei oder mehr Großbuchstaben.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Diese Konsistenz reduziert die Lernkurve, die für neue Softwarebibliotheken erforderlich ist, und zudem wird das Kundenvertrauen, dass die Bibliothek von einer Person entwickelt wurde, die Erfahrung in der Entwicklung von verwaltetem Code hat.
 
- Gemäß der Konvention Parameternamen Camel-Case Groß-/Kleinschreibung, und einen Namespace, Typ und Elementnamen Pascal-Schreibweise zur Groß-und Kleinschreibung. In einem Namen in Kamel-Schreibweise der erste Buchstabe ist in Kleinbuchstaben, und die erste Buchstaben des verbleibenden Wörter im Namen ist groß geschrieben. Beispiele für Namen in Kamel-Schreibweise sind `packetSniffer`, `ioFile`, und `fatalErrorCode`. In einem Namen Pascal-Schreibweise verwendet der erste Buchstaben wird Groß- und die erste Buchstaben des verbleibenden Wörter im Namen ist groß geschrieben. Beispiele für Namen Pascal-Schreibweise angegeben sind `PacketSniffer`, `IOFile`, und `FatalErrorCode`.
+Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Diese Konsistenz reduziert die Lernkurve, die für neue Software Bibliotheken erforderlich ist, und steigert das Kunden Vertrauen, dass die Bibliothek von einem Benutzer entwickelt wurde, der über Kenntnisse in der Entwicklung von verwaltetem Code verfügt.
 
- Diese Regel den Namen in Wörter, die basierend auf die Groß-/Kleinschreibung unterteilt und überprüft alle zwei Buchstaben bestehenden Wörter mit einer Liste der allgemeinen zwei Buchstaben bestehenden Wörter wie "In" oder "My". Wenn eine Übereinstimmung nicht gefunden wird, wird angenommen, dass das Wort ein Akronym handelt. Mit dieser Regel wird außerdem davon ausgegangen, dass es ein Akronym gefunden hat, wenn Sie den Namen entweder vier Großbuchstaben in einer Zeile oder drei Großbuchstaben in einer Zeile am Ende des Namens enthält.
+Gemäß der Konvention verwenden Parameternamen die Kamel-Schreibweise, und Namespace-, Typ-und Elementnamen verwenden Pascal-Schreibweise. Bei einem Kamel Namen ist der erste Buchstabe klein geschrieben, und der erste Buchstabe der restlichen Wörter im Namen ist Großbuchstaben. Beispiele für die Namen von Kamel Namen `packetSniffer`sind `ioFile`, und `fatalErrorCode`. In einem Namen mit Pascal-Schreibweise ist der erste Buchstabe Großbuchstaben, und der erste Buchstabe der restlichen Wörter im Namen ist Großbuchstaben. Beispiele für Namen von Pascal-Namen `PacketSniffer`sind `IOFile`, und `FatalErrorCode`.
 
- Gemäß der Konvention verwenden zwei Buchstaben bestehenden Akronyme Großbuchstaben und Akronyme der drei oder mehr Zeichen verwenden Pascal-Schreibweise zur Groß-und Kleinschreibung. Die folgenden Beispiele verwenden die Benennungskonvention: "DB", "CR", "Cpa" und "Ecma". In den folgenden Beispielen verstoßen gegen die Konvention: '-E/a', 'XML' und "DoD", und für nicht-Parameternamen, "Xp" und "cpl".
+Diese Regel teilt den Namen auf der Grundlage der Groß-und Kleinschreibung in Wörter auf und überprüft alle zwei Buchstaben mit einer Liste von gängigen zwei buchstabwörtern, wie z. b. "in" oder "My". Wenn keine Entsprechung gefunden wird, wird angenommen, dass es sich bei dem Wort um ein Akronym handelt. Außerdem geht diese Regel davon aus, dass Sie ein Akronym gefunden hat, wenn der Name entweder vier Großbuchstaben in einer Zeile oder drei Großbuchstaben in einer Zeile am Ende des Namens enthält.
 
- "ID" ist, einen Sonderfall dar, die dazu führen, dass einen Verstoß gegen diese Regel. "Id" ist kein Akronym, aber es ist eine Abkürzung für "ID".
+Gemäß der Konvention verwenden zwei Buchstaben Akronyme alle Großbuchstaben, und für Akronyme von drei oder mehr Zeichen wird die Pascal-Schreibweise verwendet. In den folgenden Beispielen wird diese Benennungs Konvention verwendet: ' DB ', ' CR ', ' CPA ' und ' ECMA '. Die folgenden Beispiele verstoßen gegen die Konvention: "IO", "XML" und "DoD", und für nicht Parameternamen "XP" und "cpl".
+
+"ID" ist ein Sonderzeichen, um einen Verstoß gegen diese Regel zu verursachen. ' ID ' ist kein Akronym, aber ist eine Abkürzung für ' Identification '.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Ändern Sie den Namen, damit sie die richtige Groß-/Kleinschreibung ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher, diese Warnung zu unterdrücken, wenn Sie Ihre eigenen Benennungskonventionen haben oder wenn der Bezeichner, einen ordnungsgemäßen Namen, z. B. den Namen eines Unternehmens oder eine Technologie darstellt.
+Ändern Sie den Namen so, dass er richtig geschrieben ist.
 
- Sie können auch bestimmte Begriffe, Abkürzungen und Akronyme hinzufügen, um ein benutzerdefiniertes Wörterbuch des Code-Analyse. In benutzerdefinierten Wörterbuchs angegebenen Begriffe verursacht keine Verstöße gegen diese Regel. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+
+Es ist sicher, diese Warnung zu unterdrücken, wenn Sie Ihre eigenen Benennungs Konventionen haben, oder wenn der Bezeichner einen richtigen Namen darstellt, z. b. den Namen eines Unternehmens oder einer Technologie.
+
+Sie können einem benutzerdefinierten Code Analyse Wörterbuch auch bestimmte Begriffe, Abkürzungen und Akronyme hinzufügen. Im benutzerdefinierten Wörterbuch angegebene Begriffe verursachen keine Verstöße gegen diese Regel. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+
+[CA1708: Bezeichner sollten sich um mehr als einen Fall unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

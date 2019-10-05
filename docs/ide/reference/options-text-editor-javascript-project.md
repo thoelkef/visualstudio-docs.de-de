@@ -1,28 +1,28 @@
 ---
 title: Optionen, Text-Editor, JavaScript, Projekt
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778172"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605927"
 ---
 # <a name="options-text-editor-javascript-project"></a>Optionen, Text-Editor, JavaScript, Projekt
 
-Verwenden Sie die Seite **Projekt** des Dialogfelds **Optionen**, um JavaScript-Projektoptionen im Code-Editor anzugeben. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Tools** > **Optionen** klicken und anschließend **Text-Editor** >  **JavaScript** > **Projekt** erweitern.
+Verwenden Sie die Seite **Projekt** des Dialogfelds **Optionen**, um JavaScript- und TypeScript-Projektoptionen im Code-Editor anzugeben. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Projekt** erweitern.
 
 ## <a name="project-analysis-options"></a>Projektanalyseoptionen
 
@@ -60,7 +60,7 @@ Diese Optionen bestimmen, wie der Editor TypeScript-Dateien behandelt, die nicht
 
 ### <a name="uielement-list"></a>UIElement-Liste
 
-|Option|Beschreibung|
+|Option|BESCHREIBUNG|
 |------------|-----------------|
 |**React-Framework**|Wenn diese Option aktiviert ist, gibt der Code-Editor eine *JS*-Dateierweiterung aus.|
 |**Preserve**|Wenn diese Option ausgewählt ist, behält der Code-Editor das JSX als Teil der Ausgabe bei und sendet eine *JSX*-Dateierweiterung.|

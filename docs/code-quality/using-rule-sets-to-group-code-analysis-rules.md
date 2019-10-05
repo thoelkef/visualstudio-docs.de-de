@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825083"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548027"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppe von Codeanalyseregeln
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppieren von Code Analyse Regeln
 
-Wenn Sie die Codeanalyse in Visual Studio konfigurieren, können Sie aus einer Liste von integrierten *-Regelsätze*. Ein Regelsatz ist eine Gruppierung von Codeanalyseregeln, die gezielte Probleme und bestimmte Bedingungen für das Projekt zu identifizieren. Beispielsweise können Sie einen Regelsatz anwenden, der entwickelt wurde, um Code auf öffentlich verfügbare APIs überprüft. Sie können auch einen Regelsatz anwenden, der alle verfügbaren Regeln enthält.
+Wenn Sie die Code Analyse in Visual Studio konfigurieren, können Sie aus einer Liste integrierter *Regelsätze*auswählen. Bei einem Regelsatz handelt es sich um eine Gruppierung von Code Analyse Regeln, mit denen gezielte Probleme und bestimmte Bedingungen für das Projekt identifiziert werden. Sie können z. b. einen Regelsatz anwenden, der für die Überprüfung von Code auf öffentlich verfügbare APIs konzipiert ist. Sie können auch einen Regelsatz anwenden, der alle verfügbaren Regeln enthält.
 
-Sie können einen Regelsatz durch Regeln hinzufügen oder löschen oder ändern die Regel Schweregrade als Warnungen oder Fehler angezeigt werden Anpassen der **Fehlerliste**. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, bietet der Regelsatz-Editor suchen und Filtern von Tools, die Sie während des Vorgangs helfen.
+Sie können einen Regelsatz anpassen, indem Sie Regeln hinzufügen oder löschen oder Regel Schweregrade ändern, damit Sie im **Fehlerliste**als Warnungen oder Fehler angezeigt werden. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, stellt der Regelsatz-Editor Such-und Filter Tools bereit, die Sie bei diesem Prozess unterstützen.
 
-Regelsätze stehen für [statische Analyse von verwaltetem Code](how-to-configure-code-analysis-for-a-managed-code-project.md), [Analyse von C++-Code](using-rule-sets-to-specify-the-cpp-rules-to-run.md), und [Roslyn-Analysetools](analyzer-rule-sets.md).
+Regelsätze sind für die [Analyse von verwaltetem Code](analyzer-rule-sets.md), die [Legacy Analyse von verwaltetem Code](how-to-configure-code-analysis-for-a-managed-code-project.md)und [ C++ die Code Analyse](using-rule-sets-to-specify-the-cpp-rules-to-run.md)verfügbar.
 
-## <a name="rule-set-format"></a>Regel festgelegten format
+## <a name="rule-set-format"></a>Regelsatz Format
 
-Ein Regelsatz wird angegeben, in der XML-Format in eine *ruleSet* Datei. Regeln, die eine ID enthalten und eine *Aktion*, werden die Analysetool-ID und den Namespace in der Datei gruppiert werden.
+Ein Regelsatz wird im XML-Format in einer *. RuleSet* -Datei angegeben. Regeln, die aus einer ID und einer *Aktion*bestehen, werden nach Analyse-ID und Namespace in der Datei gruppiert.
 
-Den Inhalt einer *ruleSet* Datei ähnlich wie in dieser XML-Code:
+Der Inhalt einer *RuleSet* -Datei sieht in etwa wie folgt aus:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,11 +54,11 @@ Den Inhalt einer *ruleSet* Datei ähnlich wie in dieser XML-Code:
 ```
 
 > [!TIP]
-> Es ist einfacher, [bearbeiten ein Regelsatzes](../code-quality/working-in-the-code-analysis-rule-set-editor.md) im grafischen **Regelsatz-Editor** als von hand.
+> Es ist einfacher, [einen Regelsatz](../code-quality/working-in-the-code-analysis-rule-set-editor.md) im grafischen **Regelsatz-Editor** als manuell zu bearbeiten.
 
-## <a name="specify-a-rule-set-for-a-project"></a>Geben Sie einen Regelsatz für ein Projekt
+## <a name="specify-a-rule-set-for-a-project"></a>Geben Sie einen Regelsatz für ein Projekt an.
 
-Der Regelsatz für ein Projekt, indem angegeben wird die **CodeAnalysisRuleSet** Eigenschaft in der Visual Studio-Projektdatei. Zum Beispiel:
+Der Regelsatz für ein Projekt wird von der **codeanalysisruleset** -Eigenschaft in der Visual Studio-Projektdatei angegeben. Beispiel:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

@@ -1,61 +1,63 @@
 ---
-title: 'Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 'Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee62d8c5b9a657b09feda01d6275a79ee91b487d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430823"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118792"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features
-Das Programm ist fertig und bereit zur Ausführung. Sie können das Programm ausführen und die Hintergrundfarbe von <xref:System.Windows.Forms.PictureBox> festlegen. Um den Lerneffekt zu erhöhen, können Sie das Programm verbessern, indem Sie die Farbe des Formulars ändern, die Schaltflächen und das Kontrollkästchen anpassen und die Eigenschaften des Formulars ändern.
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features
 
- Informationen zum Herunterladen einer vollständigen Version des Beispiels finden Sie unter [Complete picture viewer tutorial sample (Tutorialbeispiel für vollständiges Bildanzeigeprogramm)](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Ihre Picture Viewer-App ist fertig und bereit zur Ausführung. Sie können Ihre App ausführen und die Hintergrundfarbe von <xref:System.Windows.Forms.PictureBox> festlegen. Indem Sie versuchen, die Anwendung zu verbessern, indem Sie die Farbe des Formulars ändern, die Schaltflächen und das Kontrollkästchen anpassen und die Eigenschaften des Formulars ändern, können Sie mehr lernen.
 
- ![Videolink](../data-tools/media/playvideo.gif) Videos zu diesem Thema finden Sie unter [Tutorial 1: Create a picture viewer in Visual Basic – Video 5 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic – Video 5)](http://go.microsoft.com/fwlink/?LinkId=205216) und [Tutorial 1: Create a picture viewer in C# – Video 5 (Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 5)](http://go.microsoft.com/fwlink/?LinkId=205206). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
-
-## <a name="to-run-your-program-and-set-the-background-color"></a>So können Sie das Programm ausführen und die Hintergrundfarbe festlegen
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>Ausführen Ihrer App und Festlegen der Hintergrundfarbe
 
 1. Drücken Sie **F5**, oder klicken Sie in der Menüleiste auf **Debuggen** > **Debuggen starten**.
 
-2. Bevor Sie ein Bild öffnen, wählen Sie die Schaltfläche **Hintergrundfarbe festlegen** aus. Das Dialogfeld **Farbe** wird geöffnet.
+1. Bevor Sie ein Bild öffnen, wählen Sie die Schaltfläche **Hintergrundfarbe festlegen** aus. Das Dialogfeld **Farbe** wird geöffnet.
 
-     ![Dialogfeld „Farbe“](../ide/media/express_colordialog.png)
- Dialogfeld **Farbe**
+     ![Dialogfeld „Farbe“](../ide/media/express_colordialog.png)<br/>
+*Dialogfeld* ***Farbe***
 
-3. Wählen Sie eine Farbe aus, um die PictureBox-Hintergrundfarbe festzulegen. Schauen Sie sich die `backgroundButton_Click()`-Methode genau an, um zu verstehen, wie sie funktioniert.
+1. Wählen Sie eine Farbe aus, um die PictureBox-Hintergrundfarbe festzulegen. Sehen Sie sich die `backgroundButton_Click()`- oder `BackgroundButton_Click()`-Methode genau an, um zu verstehen, wie sie funktioniert.
 
     > [!NOTE]
     > Sie können aus dem Internet ein Bild laden, indem Sie die URL des Bilds in das Dialogfeld **Datei öffnen** einfügen. Versuchen Sie, ein Bild mit einem transparenten Hintergrund zu finden, damit die Hintergrundfarbe angezeigt wird.
 
-4. Wählen Sie die Schaltfläche **Bild löschen** aus, um sicherzustellen, das es gelöscht wird. Beenden Sie dann das Programm, indem Sie die Schaltfläche **Schließen** auswählen.
+1. Wählen Sie die Schaltfläche **Bild löschen** aus, um sicherzustellen, das es gelöscht wird. Beenden Sie dann die App, indem Sie auf **Schließen** klicken.
 
-## <a name="to-try-other-features"></a>So probieren Sie weitere Funktionen aus
+## <a name="try-other-features"></a>Ausprobieren weiterer Features
 
-- Ändern Sie die Farbe des Formulars und der Schaltflächen mit der **BackColor**-Eigenschaft.
+* Ändern Sie die Farbe des Formulars und der Schaltflächen mit der **BackColor**-Eigenschaft.
 
-- Passen Sie die Schaltflächen und das Kontrollkästchen mit den Eigenschaften **Font** und **ForeColor** an.
+* Passen Sie die Schaltflächen und das Kontrollkästchen mit den Eigenschaften **Font** und **ForeColor** an.
 
-- Ändern Sie die Eigenschaften **FormBorderStyle** und **ControlBox** des Formulars.
+* Ändern Sie die Eigenschaften **FormBorderStyle** und **ControlBox** des Formulars.
 
-- Verwenden Sie die Eigenschaften **AcceptButton** und **CancelButton** des Formulars, damit Schaltflächen automatisch ausgewählt werden, wenn der Benutzer die **EINGABETASTE** oder die **ESC-TASTE** drückt. Veranlassen Sie, dass das Programm das Dialogfeld **Datei öffnen** öffnet, wenn der Benutzer die **EINGABETASTE** drückt, und das Dialogfeld schließt, wenn der Benutzer die **ESC-TASTE** drückt.
+* Verwenden Sie die Eigenschaften **AcceptButton** und **CancelButton** des Formulars, damit Schaltflächen automatisch ausgewählt werden, wenn der Benutzer die **EINGABETASTE** oder die **ESC-TASTE** drückt. Veranlassen Sie, dass die App das Dialogfeld **Datei öffnen** öffnet, wenn der Benutzer die **EINGABETASTE** drückt, und das Dialogfeld schließt, wenn der Benutzer die **ESC-TASTE** drückt.
 
-## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
+## <a name="next-steps"></a>Nächste Schritte
 
-- Weitere Informationen zum Programmieren in Visual Studio finden Sie unter [Programmierkonzepte](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+Fahren Sie für weitere Informationen mit dem folgenden Tutorial fort:
 
-- Weitere Informationen zu Visual Basic finden Sie unter [Entwickeln von Anwendungen mit Visual Basic](/dotnet/visual-basic/developing-apps/index).
+> [!div class="nextstepaction"]
+> [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-- Weitere Informationen zu Visual C# finden Sie in der [Einführung in die Programmiersprache C# und in .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
+Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-- Das nächste Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+## <a name="see-also"></a>Siehe auch
 
-- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
+* [Weitere Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [C++-Tutorial](/cpp/get-started/tutorial-console-cpp)

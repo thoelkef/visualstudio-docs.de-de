@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd8ee08b53ef3f9216edcb67ebcdbe6c4978bb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0ed38a713f9e9a2ab95ad7e1062c6d5d9ab541d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778843"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236103"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.
 
@@ -31,23 +31,23 @@ ms.locfileid: "62778843"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein unversiegelter, extern sichtbarer Typ gibt eine explizite Methodenimplementierung einer öffentlichen Schnittstelle an und gibt keine alternative extern sichtbare Methode mit dem gleichen Namen an.
+Ein unversiegelter, extern sichtbarer Typ gibt eine explizite Methodenimplementierung einer öffentlichen Schnittstelle an und gibt keine alternative extern sichtbare Methode mit dem gleichen Namen an.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Erwägen Sie einen Basistyp, der eine öffentliche Schnittstelle explizit implementiert. Ein Typ, der vom Basistyp abgeleitet ist, kann die geerbte Schnittstelle-Methode zugreifen, nur über einen Verweis auf die aktuelle Instanz (`this` in c#), die die Schnittstelle umgewandelt wird. Wenn der abgeleitete Typ (explizit) die Methode die geerbte Schnittstelle reimplements, kann die basisimplementierung nicht mehr zugegriffen werden. Der Aufruf über die aktuelle Instanz Referenz wird die abgeleitete Implementierung aufgerufen wird. Dies bewirkt, dass Rekursion und letztlich zu einem Stapelüberlauf.
+Beachten Sie einen Basistyp, der eine öffentliche Schnittstellen Methode explizit implementiert. Ein Typ, der vom Basistyp abgeleitet wird, kann nur über einen Verweis auf die aktuelle Instanz (`this` in C#), die in die-Schnittstelle umgewandelt wird, auf die geerbte Schnittstellen Methode zugreifen. Wenn der abgeleitete Typ die geerbte Schnittstellen Methode (explizit) neu implementiert, kann auf die Basis Implementierung nicht mehr zugegriffen werden. Durch den Aufruf über den aktuellen Instanzverweis wird die abgeleitete Implementierung aufgerufen. Dies bewirkt eine Rekursion und einen eventuellen Stapelüberlauf.
 
- Diese Regel meldet sich nicht auf einen Verstoß gegen eine explizite Implementierung von <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Wenn eine extern sichtbare `Close()` oder `System.IDisposable.Dispose(Boolean)` Methode wird bereitgestellt.
+Diese Regel meldet keine Verstöße gegen eine explizite Implementierung von <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> , wenn eine extern sichtbare `Close()` -oder `System.IDisposable.Dispose(Boolean)` -Methode bereitgestellt wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie eine neue Methode, die stellt die gleiche Funktionalität und für abgeleitete Typen sichtbar ist, oder ändern Sie in einer Implementierung verwenden. Wenn eine wichtige Änderung akzeptabel ist, ist eine Alternative, um den Typ versiegelt stellen.
+Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie eine neue Methode, die die gleiche Funktionalität verfügbar macht und für abgeleitete Typen sichtbar ist, oder ändern Sie zu einer nicht expliziten Implementierung. Wenn ein Breaking Change akzeptabel ist, besteht eine Alternative darin, den Typ versiegelt zu machen.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist eine Warnung dieser Regel zu unterdrücken, wenn eine extern sichtbare Methode angegeben wird, die die gleiche Funktionalität aber einen anderen Namen als die explizit implementierte Methode sicher.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn eine extern sichtbare Methode bereitgestellt wird, die über die gleiche Funktionalität, aber einen anderen Namen als die explizit implementierte Methode verfügt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, `ViolatingBase`, die gegen die Regel und einen Typ, `FixedBase`, zeigt, dass eine Lösung für die Verletzung.
+Das folgende Beispiel zeigt einen Typ `ViolatingBase`,, der gegen die Regel verstößt, und einen `FixedBase`Typ,, der eine Korrektur für die Verletzung anzeigt.
 
- [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
+[!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 
 ## <a name="see-also"></a>Siehe auch
- [Schnittstellen](/dotnet/csharp/programming-guide/interfaces/index)
+[Schnittstellen](/dotnet/csharp/programming-guide/interfaces/index)

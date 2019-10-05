@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186365"
 ---
 # <a name="usedcommand-element"></a>UsedCommand-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Aktiviert ein VSPackage einen Befehl auf, der in eine andere VSCT-Datei definier
 |---------------|-----------------|  
 |guid|Erforderlich. Die GUID der GUID-ID-Paar, die den Befehl identifiziert.|  
 |id|Erforderlich. Die ID des das GUID-ID-Paar, die den Befehl identifiziert.|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Bedingung|Optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|Keiner||  
+|None||  
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
   

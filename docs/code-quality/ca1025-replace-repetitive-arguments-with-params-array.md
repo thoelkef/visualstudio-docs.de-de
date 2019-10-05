@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4a292cb3f3221b36c163c87881fd23db0606399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f65d64dd4e881c41b17cd7cb9dc072a6fe800766
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779418"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236145"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen.
 
@@ -31,18 +31,18 @@ ms.locfileid: "62779418"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte Methode in einem öffentlichen Typ über mehr als drei Parameter verfügt und die letzten drei Parameter sind vom gleichen Typ.
+Eine öffentliche oder geschützte Methode in einem öffentlichen Typ weist mehr als drei Parameter auf, und die letzten drei Parameter weisen denselben Typ auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Verwenden Sie ein Parameterarray statt sich wiederholender Argumente, wenn die genaue Anzahl von Argumenten unbekannt ist und der Variablen Argumente den gleichen Typ aufweisen oder als gleicher Typ übergeben werden können. Z. B. die <xref:System.Console.WriteLine%2A> Methode bietet eine allgemeine Überladung, die ein Parameterarray verwendet wird, um eine beliebige Anzahl von akzeptieren <xref:System.Object> Argumente.
+Verwenden Sie ein Parameter Array anstelle von wiederholten Argumenten, wenn die genaue Anzahl der Argumente unbekannt ist und die Variablen Argumente denselben Typ aufweisen oder als derselbe Typ übergeben werden können. Die <xref:System.Console.WriteLine%2A> -Methode stellt z. b. eine allgemeine Überladung bereit, die ein Parameter Array verwendet, um <xref:System.Object> eine beliebige Anzahl von Argumenten zu akzeptieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie die wiederholte Argumente mit einem Parameterarray.
+Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie die wiederholten Argumente durch ein Parameter Array.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel; Dieses Design kann jedoch Probleme hinsichtlich der Verwendbarkeit verursachen.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist immer sicher, eine Warnung aus dieser Regel zu unterdrücken. Dieser Entwurf kann jedoch Probleme mit der Benutzerfreundlichkeit verursachen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt.
+Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt.
 
- [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]
+[!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]

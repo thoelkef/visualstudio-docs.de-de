@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788999"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925950"
 ---
 # <a name="watch-command"></a>Befehl "Überwachung"
 Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** . Sie können das Fenster **Überwachen** verwenden, um die Werte von Variablen, Ausdrücken und Registern zu berechnen, um diese Werte zu berechnen und die Ergebnisse zu speichern.
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Argumente
- `index`
 
- Erforderlich. Die Instanznummer des Fensters „Überwachen“.
+`index`\
+Erforderlich. Die Instanznummer des Fensters „Überwachen“.
 
 ## <a name="remarks"></a>Anmerkungen
- Der `index` muss eine ganze Zahl sein. Gültige Werte sind 1, 2, 3 oder 4.
+
+Der `index` muss eine ganze Zahl sein. Gültige Werte sind 1, 2, 3 oder 4.
 
 ## <a name="example"></a>Beispiel
 

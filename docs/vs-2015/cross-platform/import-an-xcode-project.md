@@ -8,11 +8,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150974"
 ---
 # <a name="import-an-xcode-project"></a>Importieren eines XCode-Projekts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Microsoft Visual C++ für die plattformübergreifende, mobile Entwicklung umfass
   
     ![„Globale Eigenschaften“-Bereich „Aus XCode importieren“](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Diese globalen Pfade können auch in Visual Studio im Dialogfeld **Optionen** festgelegt werden. Wählen Sie im Menü **Tools** **Optionen** aus, um sie zu finden. Im Dialogfeld **Optionen**, erweitern Sie **Plattformübergreifend**, **C++**, **iOS** und **Globale Eigenschaften**.  
+    Diese globalen Pfade können auch in Visual Studio im Dialogfeld **Optionen** festgelegt werden. Wählen Sie im Menü **Tools** **Optionen** aus, um sie zu finden. Im Dialogfeld **Optionen**, erweitern Sie **Plattformübergreifend**, **C++** , **iOS** und **Globale Eigenschaften**.  
   
     Klicken Sie auf **Weiter** , um fortzufahren.  
   

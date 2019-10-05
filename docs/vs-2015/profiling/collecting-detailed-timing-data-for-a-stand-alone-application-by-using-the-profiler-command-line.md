@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176622"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für eine eigenständige Anwendung über die Profiler-Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
 |**Erstellen einer C/C++-Anwendung mithilfe der Instrumentationsmethode**|-   [Vorgehensweise: Instrumentieren einer nativen Komponente und Sammeln ausführlicher Zeitsteuerungsdaten](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Hinzufügen von Ebeneninteraktionsdaten**|-   [Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Verwandte Aufgaben  
+## <a name="related-tasks"></a>Related Tasks  
   
 ### <a name="profiling-stand-alone-applications"></a>Profilerstellung für eigenständige Anwendungen  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Erstellen von Anwendungsprofilen mithilfe der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Profilerstellung der .NET-Speicherbelegung und Garbage Collection**|-   [Sammeln von .NET Framework-Speicherdaten für eigenständige Anwendungen über die Profiler-Befehlszeile](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
@@ -44,7 +44,7 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
   
 ### <a name="profiling-by-using-the-instrumentation-method"></a>Profilerstellung mithilfe der Instrumentierungsmethode  
   
-|Aufgabe|Verwandter Inhalt|  
+|Aufgabe|Verwandte Inhalte|  
 |----------|---------------------|  
 |**Profilerstellung für ASP.NET-Anwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Profilerstellung von Diensten**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  

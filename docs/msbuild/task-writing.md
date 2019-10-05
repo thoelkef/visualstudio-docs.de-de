@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439989"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238193"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten ist, finden Sie unter [MSBuild Task Reference](../msbuild/msbuild-task-reference.md).
@@ -141,10 +141,35 @@ public string RequiredProperty { get; set; }
 
  Das `[Required]`-Attribut wird von <xref:Microsoft.Build.Framework.RequiredAttribute> im <xref:Microsoft.Build.Framework>-Namespace definiert.
 
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Aufrufen einer Aufgabe mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]
+
+Zum Aufrufen einer Aufgabe instanziiert [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zunächst die Aufgabenklasse. Anschließend werden die Eigenschaftensetter des Objekts für Aufgabenparameter aufgerufen, die in der Projektdatei im Aufgabenelement festgelegt sind. Der Eigenschaftensetter wird nicht aufgerufen, wenn das Aufgabenelement keinen Parameter angibt oder der im Element angegebene Ausdruck eine leere Zeichenfolge ergibt.
+
+Sehen Sie sich z. B. folgendes Projekt an:
+
+```xml
+<Project>
+ <Target Name="InvokeCustomTask">
+  <CustomTask Input1=""
+              Input2="$(PropertyThatIsNotDefined)"
+              Input3="value3" />
+ </Target>
+</Project>
+```
+
+Hier wird nur der Setter für `Input3` aufgerufen.
+
+Eine Aufgabe sollte nicht von der relativen Reihenfolge des Aufrufs von Parameter und Eigenschaftensetter abhängen.
+
+### <a name="task-parameter-types"></a>Typen von Aufgabenparametern
+
+In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erfolgt die native Verarbeitung von Eigenschaften der Typen `string`, `bool`, `ITaskItem` und `ITaskItem[]`. Akzeptiert eine Aufgabe einen Parameter eines anderen Typs, ruft [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A> auf, um von `string` (wobei alle Eigenschaften- und Elementverweise erweitert werden) in den Zieltyp zu konvertieren. Schlägt die Konvertierung für einen Eingabeparameter fehl, gibt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] einen Fehler aus und ruft die Methode `Execute()` der Aufgabe nicht auf.
+
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
- Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.
+### <a name="description"></a>BESCHREIBUNG
+
+Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.
 
 ### <a name="code"></a>Code
 
@@ -167,8 +192,9 @@ namespace SimpleTask1
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
- Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine Aufgabe, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.
+### <a name="description"></a>BESCHREIBUNG
+
+Die folgende [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine Aufgabe, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Dieser Task gibt den Wert `true` zurück, der darauf hindeutet, dass der Task erfolgreich ausgeführt wird.
 
 ### <a name="code"></a>Code
 
@@ -202,16 +228,19 @@ namespace SimpleTask2
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
- Diese [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Sie verfügt über eine erforderliche Zeichenfolgeneigenschaft und löst ein Ereignis aus, das von allen registrierten Protokollierungen angezeigt wird.
+### <a name="description"></a>BESCHREIBUNG
+
+Diese [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitete Aufgabe. Sie verfügt über eine erforderliche Zeichenfolgeneigenschaft und löst ein Ereignis aus, das von allen registrierten Protokollierungen angezeigt wird.
 
 ### <a name="code"></a>Code
- [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+
+[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
- Im folgenden Beispiel wird eine Projektdatei dargestellt, die die vorherigen Beispielaufgabe „SimpleTask3“ aufruft.
+### <a name="description"></a>BESCHREIBUNG
+
+Im folgenden Beispiel wird eine Projektdatei dargestellt, die die vorherigen Beispielaufgabe „SimpleTask3“ aufruft.
 
 ### <a name="code"></a>Code
 
@@ -227,4 +256,5 @@ namespace SimpleTask2
 ```
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

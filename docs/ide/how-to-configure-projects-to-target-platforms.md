@@ -1,6 +1,6 @@
 ---
 title: 'Vorgehensweise: Konfigurieren von Projekten für Zielplattformen'
-ms.date: 11/04/2016
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438191"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634923"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für Zielplattformen
 
@@ -64,9 +64,60 @@ Die für diese Aufgabe erforderlichen Schritte sind je nach Programmiersprache u
 
 - Informationen zu [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten finden Sie unter [/clr (Common Language Runtime-Kompilierung)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
+## <a name="manually-editing-the-project-file"></a>Manuelles Bearbeiten der Projektdatei
+
+Manchmal müssen Sie die Projektdatei für eine benutzerdefinierte Konfiguration manuell bearbeiten. Ein Beispiel dafür ist, wenn Sie Bedingungen verwenden, die in der IDE nicht angegeben werden können, z.B. ein Verweis, der für zwei verschiedene Plattformen unterschiedlich ist, wie im folgenden Beispiel gezeigt.
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Beispiel: Verweisen auf x86- und x64-Assemblys und -DLLs
+
+Möglicherweise verfügen Sie über eine .NET-Assembly oder -DLL mit x86- und x64-Versionen. Um das Projekt für die Verwendung dieser Verweise einzurichten, fügen Sie zunächst den Verweis hinzu, und öffnen Sie dann die Projektdatei, und bearbeiten Sie diese, um eine `ItemGroup` mit einer Bedingung hinzuzufügen, die auf die Konfiguration und die Zielplattform verweist.  Angenommen, die Binärdatei, auf die Sie verweisen, ist ClassLibrary1, und es gibt unterschiedliche Pfade für Debug- und Releasekonfigurationen sowie x86- und x64-Versionen.  Verwenden Sie dann vier `ItemGroup`-Elemente mit allen Kombinationen von Einstellungen wie folgt:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> In Visual Studio 2017 müssen Sie das Projekt entladen, bevor Sie die Projektdatei bearbeiten können. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Projekt entladen** aus. Wenn Sie die Bearbeitung abgeschlossen haben, speichern Sie die Änderungen, und laden Sie das Projekt erneut, indem Sie mit der rechten Maustaste auf den Projektknoten und dann auf **Projekt erneut laden** klicken.
+::: moniker-end
+
+Weitere Informationen zur Projektdatei finden Sie unter [Referenz zum MSBuild-Projektdateischema](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+
 ## <a name="see-also"></a>Siehe auch
 
 - [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md)
 - [/platform (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64-Bit-Anwendungen](/dotnet/framework/64-bit-apps)
 - [Visual Studio-IDE-64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)
+- [Grundlegendes zur Projektdatei](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

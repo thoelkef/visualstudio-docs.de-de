@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8d4c23934ddb6a838344eb6252f6002a5ecf10d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934555"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926093"
 ---
 # <a name="set-current-process"></a>Aktuellen Prozess festlegen
 Legt den angegebenen Prozess als aktiven Prozess im Debugger fest.
@@ -28,12 +28,12 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>Argumente
- `index`
+`index`
 
- Erforderlich. Der Index des Prozesses.
+Erforderlich. Der Index des Prozesses.
 
 ## <a name="remarks"></a>Anmerkungen
- Sie können beim Debuggen mit mehreren Prozessen verbunden sein, es ist jedoch jeweils nur ein Prozess im Debugger aktiv. Zum Festlegen des aktiven Prozesses können Sie den Befehl `SetCurrentProcess` verwenden.
+Sie können beim Debuggen mit mehreren Prozessen verbunden sein, es ist jedoch jeweils nur ein Prozess im Debugger aktiv. Zum Festlegen des aktiven Prozesses können Sie den Befehl `SetCurrentProcess` verwenden.
 
 ## <a name="example"></a>Beispiel
 

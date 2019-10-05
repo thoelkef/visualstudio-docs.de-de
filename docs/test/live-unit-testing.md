@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4ace476a2454c7f6735f19cd07f222d6c06564e
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786519"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913339"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing mit Visual Studio
 
@@ -145,13 +145,13 @@ Es gibt einige Unterschiede zwischen dem automatischen Ausführen und Aktualisie
 
 - Beim Ausführen oder Debuggen von Tests im Test-Explorer-Fenster werden reguläre Binärdateien ausgeführt. Live Unit Testing führt dagegen instrumentierte Binärdateien aus.
 - Live Unit Testing erstellt keine neue Anwendungsdomäne zum Ausführen von Tests, sondern führt Tests mit der Standarddomäne aus. Tests, die über das **Test-Explorer**-Fenster ausgeführt werden, erstellen eine neue Anwendungsdomäne.
-- Live Unit Testing führt Tests in allen Testassemblys nacheinander aus. Wenn Sie mehrere Tests im **Test-Explorer**-Fenster ausführen und die Schaltfläche **Tests parallel ausführen** ausgewählt ist, werden Tests parallel ausgeführt.
+- Live Unit Testing führt Tests in allen Testassemblys nacheinander aus. Im Fenster **Test-Explorer** können Sie eine Option auswählen, mit der mehrere Tests parallel ausgeführt werden.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing und große Projektmappen
 
 Wenn Ihre Projektmappe mindestens zehn Projekte enthält, zeigt Visual Studio das folgende Dialogfeld an, um Sie zu warnen, dass die dynamische Ausführung einer großen Anzahl von Tests in großen Projekten die Leistung schwerwiegend beeinträchtigen kann, wenn Sie Live Unit Testing starten und keine persistenten Daten vorhanden sind oder wenn Sie im obersten Visual Studio-Menü auf **Test** > **Live Unit Testing** > **Bereinigt zurücksetzen** klicken. Wenn Sie auf **OK** klicken, führt Live Unit Testing alle Tests in der Projektmappe aus. Bei Auswahl von **Abbrechen** können Sie wählen, welche Tests ausgeführt werden. Informationen hierzu finden Sie im folgenden Abschnitt [Einschließen und Ausschließen von Testprojekten und Testmethoden](#include-and-exclude-test-projects-and-test-methods).
 
- ![Live Unit Testing-Dialogfeld für große Projekte](media/lut-large-project.png)
+![Live Unit Testing-Dialogfeld für große Projekte](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>Einschließen und Ausschließen von Testprojekten und Testmethoden
 
@@ -166,7 +166,7 @@ Um die einzelnen Projekte in Komponententests auszuwählen, gehen Sie nach dem S
 
 **Ausschließen von einzelnen Tests im Code-Editor-Fenster**
 
-Im Code-Editor-Fenster können Sie einzelne Testmethoden ein- oder ausschließen. Klicken sie im Code-Editor-Fenster mit der rechten Maustaste auf die Signatur der Testmethode. Wählen Sie anschließend **Livetests** > **[die ausgewählte Methode] einschließen**, **Livetests** > **[die ausgewählte Methode] ausschließen** oder **Livetests** > **Alle außer [die ausgewählte Methode] ausschließen** aus, wobei „die ausgewählte Methode“ für den Namen der im Codefenster ausgewählten Methode steht.
+Im Code-Editor-Fenster können Sie einzelne Testmethoden ein- oder ausschließen. Klicken sie im Code-Editor-Fenster mit der rechten Maustaste auf die Signatur der Testmethode. Wählen Sie anschließend **Livetests** >  **[die ausgewählte Methode] einschließen**, **Livetests** >  **[die ausgewählte Methode] ausschließen** oder **Livetests** > **Alle außer [die ausgewählte Methode] ausschließen** aus, wobei „die ausgewählte Methode“ für den Namen der im Codefenster ausgewählten Methode steht.
 
 **Programmgesteuertes Ausschließen von Tests**
 
@@ -177,6 +177,12 @@ Mithilfe der folgenden Attribute können Sie ebenfalls einzelne Methoden von Liv
 - Für xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
 - Für NUnit: `[Category("SkipWhenLiveUnitTesting")]`
 - Für MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+
+Sie können auch eine ganze Assembly von Tests aus Live Unit Testing ausschließen:
+
+- Für xUnit: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- Für NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- Für MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Siehe auch
 

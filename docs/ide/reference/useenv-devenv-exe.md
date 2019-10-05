@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37326bbe44eed15a562f0d28c01eac02973a2487
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16443b30ccf6ba03a01df0234695d27e4cd909af
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789257"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186484"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -69,4 +69,4 @@ devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ## <a name="see-also"></a>Siehe auch
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
-- [Eigenschaftenseite „VC++-Verzeichnisse“ (Windows)](/cpp/ide/vcpp-directories-property-page)
+- [Eigenschaftenseite „VC++-Verzeichnisse“ (Windows)](/cpp/build/reference/vcpp-directories-property-page)

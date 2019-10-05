@@ -9,11 +9,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202086"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüs und Befehle für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -226,7 +226,7 @@ ms.locfileid: "60095801"
 
 ## <a name="naming-commands"></a>Benennen die Befehle
 
-### <a name="naming-conventions"></a>Namenskonventionen 
+### <a name="naming-conventions"></a>Namenskonventionen
  Benennen von konsistenten Befehl ist wichtig, damit Benutzer finden und Ausführen von Befehlen, indem Sie entweder mithilfe der Befehlszeile oder Bindung an eine Tastenkombination können. Befehlsnamen können auch die Benutzer wissen, welchem Zweck ein Befehl angegeben wird, wenn er auf einer Symbolleiste oder in einem cascading oder Kontext-Menü angezeigt wird.
 
 #### <a name="when-naming-commands"></a>Wenn Befehle benennen:

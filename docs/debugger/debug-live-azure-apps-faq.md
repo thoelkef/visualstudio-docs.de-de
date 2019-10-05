@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586838"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211213"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Häufig gestellte Fragen zum Debuggen von Momentaufnahmen in Visual Studio
 
@@ -49,7 +49,7 @@ Ja, das Momentaufnahmedebuggen kann bei Servern unter Last funktionieren. Wenn n
 
 Sie können die Momentaufnahmedebugger-Websiteerweiterung mit den folgenden Schritten in Ihrem App Service deinstallieren:
 
-1. Deaktivieren Sie Ihren App Service über den Cloud-Explorer in Visual Studio oder im Azure-Portal aus.
+1. Deaktivieren Sie die APP Service entweder über die Cloud-Explorer in Visual Studio oder die Azure-Portal.
 1. Navigieren Sie zur Kudu-Website Ihres App Service (d.h. yourappservice.**scm**.azurewebsites.net), und navigieren Sie zu **Websiteerweiterungen**.
 1. Klicken Sie auf das X der Momentaufnahmedebugger-Websiteerweiterung, um sie zu entfernen.
 
@@ -57,28 +57,28 @@ Sie können die Momentaufnahmedebugger-Websiteerweiterung mit den folgenden Schr
 
 Der Momentaufnahmedebugger muss einen Satz von Ports öffnen, um die in Azure erstellten Momentaufnahmen zu debuggen. Hierbei handelt es sich um die gleichen Ports, die für das Remotedebuggen erforderlich sind. [Hier finden Sie die Liste der Ports](../debugger/remote-debugger-port-assignments.md).
 
-#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Wie deaktiviere ich die Remote Debugger-Erweiterung?
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Gewusst wie die remotedebuggererweiterung deaktivieren?
 
-App-Dienste:
-1. Deaktivieren Sie Remote Debugger-Erweiterung über das Azure-Portal für Ihren App Service.
-2. Azure-Portal > Ihr Anwendungsdienst-Ressourcenblatt > *Anwendungseinstellungen*
-3. Navigieren Sie zu der *Debuggen* aus, und klicken Sie auf die *aus* Schaltfläche *Remotedebuggen*.
+App Services:
+1. Deaktivieren Sie die remotedebuggererweiterung über die Azure-Portal für Ihre APP Service.
+2. Azure-Portal > Sie das Anwendungs Dienst-Ressourcen Blatt > *Anwendungseinstellungen*
+3. Navigieren Sie zum Abschnitt *Debuggen* , und klicken Sie auf die Schaltfläche *aus* für *Remote Debugging*.
 
 Für AKS:
-1. Aktualisieren Sie die dockerfile-Datei zum Entfernen von der Abschnitten zu den [Visual Studio Snapshot Debugger auf Docker-Images](https://github.com/Microsoft/vssnapshotdebugger-docker).
-2. Neu erstellen Sie, und stellen Sie das geänderte Docker-Image.
+1. Aktualisieren Sie die dockerfile-Datei, um die Abschnitte zu entfernen, die dem [Visual Studio-Momentaufnahmedebugger auf docker-Images](https://github.com/Microsoft/vssnapshotdebugger-docker)entsprechen.
+2. Erneutes Erstellen und erneutes Bereitstellen des geänderten docker-Images.
 
-Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und eingehende NAT-Adresspools für VM/virtuellen VM-skalierungsgruppen wie folgt aus:
+Entfernen Sie für virtuelle Computer/VM-Skalierungs Gruppen die remotedebuggererweiterung, Zertifikate, keyvault und eingehende NAT-Pools wie folgt:
 
-1. Entfernen Sie die Remote Debugger-Erweiterung
+1. Remotedebuggererweiterung entfernen
 
-   Es gibt mehrere Möglichkeiten, den Remotedebugger für virtuelle Computer und VM Scale Sets-Instanzen zu deaktivieren:
+   Es gibt mehrere Möglichkeiten, den Remote Debugger für virtuelle Computer und VM-Skalierungs Gruppen zu deaktivieren:
 
-      - Deaktivieren Sie den Remotedebugger über die Cloud-Explorer
+      - Deaktivieren Sie den Remote Debugger durch Cloud-Explorer
 
-         - Cloud-Explorer > Ressource des virtuellen Computers > Debuggen deaktivieren (Debuggen deaktivieren ist nicht vorhanden für VM-Skalierungsgruppe auf Cloud-Explorer).
+         - Cloud-Explorer > der Ressource des virtuellen Computers > Debuggen deaktivieren (Debuggen ist für VM-Skalierungs Gruppe auf Cloud-Explorer nicht vorhanden).
 
-      - Deaktivieren Sie den Remotedebugger mit PowerShell-Skripts/Cmdlets
+      - Deaktivieren Sie den Remote Debugger mit PowerShell-Skripts/-Cmdlets.
 
          Für den virtuellen Computer:
 
@@ -86,7 +86,7 @@ Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und ei
          Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
 
-         Für VM Scale Sets:
+         Für VM-Skalierungs Gruppen:
 
          ```powershell
          $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
@@ -94,20 +94,20 @@ Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und ei
          Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
-      - Deaktivieren Sie den Remotedebugger über die Azure-portal
-         - Azure-Portal > Ihr VM/virtual Machine Scale sets für Blatt "Ressourcen" > Extensions
-         - Deinstallieren Sie Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger-Erweiterung
+      - Deaktivieren Sie den Remote Debugger über die Azure-Portal
+         - Azure-Portal > Ressourcen Blatt für virtuelle Computer/VM-Skalierungs Gruppen > Erweiterungen
+         - Deinstallieren Sie die Erweiterung "Microsoft. VisualStudio. Azure. Remotedebug. vsremotedebugger".
 
          > [!NOTE]
-         > VM Scale Sets - Portal lässt keine DebuggerListener Ports entfernen. Sie müssen Azure PowerShell verwenden. Details finden Sie weiter unten.
+         > VM-Skalierungs Gruppen: das Portal lässt das Entfernen der debuggerlistener-Ports nicht zu. Sie müssen Azure PowerShell verwenden. Details finden Sie weiter unten.
 
 2. Entfernen von Zertifikaten und Azure Key Vault
 
-   Wenn Sie die Remote Debugger-Erweiterung für virtuellen Computer oder VM Scale Sets-Instanzen zu installieren, werden sowohl Client-als auch Zertifikate zur Authentifizierung des Visual Studio-Clients mit dem virtuellen Azure-Computer erstellt/Virtual Machine Scale sets für Ressourcen.
+   Beim Installieren der remotedebuggererweiterung für virtuelle Computer oder VM-Skalierungs Gruppen werden Client-und Server Zertifikate erstellt, um den vs-Client mit den Ressourcen virtueller Azure-Computer/VM-Skalierungs Gruppen zu authentifizieren.
 
-   - Das Clientzertifikat
+   - Das Client Zertifikat
 
-      Dieses Zertifikat ist ein selbst signiertes Zertifikat im Zertifikatspeicher befinden: / CurrentUser/My /
+      Bei diesem Zertifikat handelt es sich um ein selbst signiertes Zertifikat im Zertifikat:/CurrentUser/My/
 
       ```
       Thumbprint                                Subject
@@ -116,17 +116,17 @@ Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und ei
       1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
-      Eine Möglichkeit, dieses Zertifikat von Ihrem Computer zu entfernen ist, über PowerShell
+      Eine Möglichkeit, dieses Zertifikat von Ihrem Computer zu entfernen, ist PowerShell.
 
       ```powershell
       $ResourceName = 'ResourceName' # from above
       Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
-   - Das Serverzertifikat
-      - Der entsprechenden Serverzertifikat-Fingerabdruck, die als Geheimnis in Azure-Schlüsseltresor bereitgestellt wird. Visual Studio versucht, suchen oder erstellen einen Schlüsseltresor mit dem Präfix MSVSAZ * in der Region für den virtuellen Computer oder VM Scale sets-Ressource. Alle virtuellen Computer oder VM-skalierungsgruppen Ressourcen, die in dieser Region bereitgestellt werden daher den gleichen Schlüsseltresor gemeinsam.
-      - Um den Server-Zertifikat-Fingerabdruck geheimen Schlüssel zu löschen, wechseln Sie zum Azure-Portal, und finden Sie den Schlüsseltresor MSVSAZ * in der gleichen Region, die Ihre Ressource hostet. Löschen des geheimen Schlüssels mit der Bezeichnung werden sollte `remotedebugcert<<ResourceName>>`
-      - Sie müssen auch den Serverschlüssel aus Ihrer Ressource über PowerShell zu löschen.
+   - Das Server Zertifikat
+      - Der entsprechende Fingerabdruck des Serverzertifikats wird als geheimer Schlüssel in Azure Key Vault bereitgestellt. VS versucht, einen keyvault mit dem Präfix "msvsaz *" in der Region zu suchen oder zu erstellen, die der Ressource des virtuellen Computers oder der VM-Skalierungs Gruppen entspricht. Alle in dieser Region bereitgestellten Ressourcen für virtuelle Computer oder VM-Skalierungs Gruppen werden daher denselben Schlüssel Tresor verwenden.
+      - Um den Schlüssel für den Fingerabdruck des Serverzertifikats zu löschen, wechseln Sie zum Azure-Portal, und suchen Sie in der gleichen Region, in der die Ressource gehostet wird, den Schlüssel Tresor msvsaz *. Löschen Sie das Geheimnis, das gekennzeichnet werden soll.`remotedebugcert<<ResourceName>>`
+      - Sie müssen auch den geheimen Server Schlüssel aus ihrer Ressource über PowerShell löschen.
 
       Für virtuelle Computer:
 
@@ -135,16 +135,16 @@ Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und ei
       Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
 
-      Für VM Scale Sets:
+      Für VM-Skalierungs Gruppen:
 
       ```powershell
       $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
       Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
       ```
 
-3. Entfernen Sie alle DebuggerListener eingehende NAT-Pools (VM-Skalierungsgruppe nur)
+3. Alle eingehenden NAT-Pools für debuggerlistener entfernen (nur VM-Skalierungs Gruppe)
 
-   Der Remotedebugger führt DebuggerListener eingehende NAT-Pools, die für Ihre Skalierungsgruppe auf den Load Balancer angewendet werden.
+   Der Remote Debugger führt debuggerlistener-gebundene NAT-Pools ein, die auf den Load Balancer Ihres scalesets angewendet werden.
 
    ```powershell
    $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
@@ -158,30 +158,30 @@ Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und ei
    }
    ```
 
-#### <a name="how-do-i-disable-snapshot-debugger"></a>Wie deaktiviere ich Momentaufnahmedebugger?
+#### <a name="how-do-i-disable-snapshot-debugger"></a>Gewusst wie Momentaufnahmedebugger deaktivieren?
 
-Für App Service:
-1. Snapshot Debugger über das Azure-Portal für Ihren App Service zu deaktivieren.
-2. Azure-Portal > Ihr Anwendungsdienst-Ressourcenblatt > *Anwendungseinstellungen*
-3. Löschen Sie die folgenden App-Einstellungen im Azure-Portal, und speichern Sie die Änderungen zu.
+App Service:
+1. Deaktivieren Sie Momentaufnahmedebugger über die Azure-Portal für Ihre APP Service.
+2. Azure-Portal > Sie das Anwendungs Dienst-Ressourcen Blatt > *Anwendungseinstellungen*
+3. Löschen Sie die folgenden App-Einstellungen im Azure-Portal, und speichern Sie die Änderungen.
    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
    > [!WARNING]
-   > Alle Änderungen an Anwendungseinstellungen werden einen Neustart der app initiiert. Weitere Informationen zu Anwendungseinstellungen finden Sie unter [Konfigurieren einer App Service-app im Azure-Portal](/azure/app-service/web-sites-configure).
+   > Durch Änderungen an den Anwendungseinstellungen wird ein Neustart der APP initiiert. Weitere Informationen zu Anwendungseinstellungen finden Sie unter [Konfigurieren einer APP Service-APP in der Azure-Portal](/azure/app-service/web-sites-configure).
 
 Für AKS:
-1. Aktualisieren Sie die dockerfile-Datei zum Entfernen von der Abschnitten zu den [Visual Studio Snapshot Debugger auf Docker-Images](https://github.com/Microsoft/vssnapshotdebugger-docker).
-2. Neu erstellen Sie, und stellen Sie das geänderte Docker-Image.
+1. Aktualisieren Sie die dockerfile-Datei, um die Abschnitte zu entfernen, die dem [Visual Studio-Momentaufnahmedebugger auf docker-Images](https://github.com/Microsoft/vssnapshotdebugger-docker)entsprechen.
+2. Erneutes Erstellen und erneutes Bereitstellen des geänderten docker-Images.
 
-Für skalierungsgruppen für virtuelle Computer/virtuelle Computer:
+Für virtuelle Computer/VM-Skalierungs Gruppen:
 
-Es gibt mehrere Möglichkeiten, den Momentaufnahmedebugger zu deaktivieren:
-- Cloud-Explorer > Ihrer VM/virtuellen VM-Skalierungsgruppe Ressource > Diagnose deaktivieren
+Es gibt mehrere Möglichkeiten, die Momentaufnahmedebugger zu deaktivieren:
+- Cloud-Explorer > der Ressource des virtuellen Computers/der VM-Skalierungs Gruppe > die Diagnose deaktivieren
 
-- Azure-Portal > Ihr VM/virtuellen VM-Skalierungsgruppe Blatt "Ressourcen" > Erweiterungen > deinstallieren Microsoft.Insights.VMDiagnosticsSettings-Erweiterung
+- Azure-Portal > Sie das Ressourcen Blatt des virtuellen Computers/der VM-Skalierungs Gruppe > Erweiterungen > Deinstallieren Sie die Erweiterung Microsoft. Insights. vmdiagnosticssettings.
 
-- PowerShell-Cmdlets aus [Azure PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- PowerShell-Cmdlets von [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
    Virtueller Computer:
 
@@ -189,7 +189,7 @@ Es gibt mehrere Möglichkeiten, den Momentaufnahmedebugger zu deaktivieren:
       Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-   VM-skalierungsgruppen:
+   VM-Skalierungs Gruppen:
 
    ```powershell
       $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
@@ -198,8 +198,8 @@ Es gibt mehrere Möglichkeiten, den Momentaufnahmedebugger zu deaktivieren:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debuggen in Visual Studio](../debugger/index.md)
-- [Debug live ASP.NET-Apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md)
-- [Debug live ASP.NET Azure Machines\Virtual VMs Scale Sets-Instanzen mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Debug live ASP.NET-Azure-Kubernetes, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md)
+- [Debuggen in Visual Studio](../debugger/index.yml)
+- [Debuggen von Live ASP.net-apps mithilfe der Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md)
+- [Live Debuggen ASP.net Azure Virtual machines\vm Scale Sets Using the Momentaufnahmedebugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Live Debuggen ASP.net Azure Kubernetes mithilfe der Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md)
 - [Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-troubleshooting.md)

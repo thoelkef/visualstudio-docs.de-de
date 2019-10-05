@@ -12,11 +12,11 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184866"
 ---
 # <a name="adding-a-toolbar"></a>Hinzufügen einer Symbolleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Diese exemplarische Vorgehensweise zeigt, wie Visual Studio-IDE eine Symbolleist
   
  Weitere Informationen zu Menüs, finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-an-extension-with-a-toolbar"></a>Erstellen einer Erweiterung mit einer Symbolleiste  
@@ -89,7 +89,7 @@ Diese exemplarische Vorgehensweise zeigt, wie Visual Studio-IDE eine Symbolleist
   
 6. Mit der rechten Maustaste in der Menüleiste von Visual Studio zum Abrufen der Liste der Symbolleisten. Wählen Sie **testen Symbolleiste**.  
   
-7. Eine Symbolleiste sollte jetzt als Symbol rechts neben der Suche in Dateien Symbol angezeigt werden. Wenn Sie das Symbol klicken, sollten Sie sehen, dass ein Dialogfeld mit der Meldung **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. Eine Symbolleiste sollte jetzt als Symbol rechts neben der Suche in Dateien Symbol angezeigt werden. Wenn Sie das Symbol klicken, sollten Sie sehen, dass ein Dialogfeld mit der Meldung **ToolbarTestCommandPackage. In IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

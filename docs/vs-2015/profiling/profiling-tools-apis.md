@@ -9,30 +9,30 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2dc5477055969ca9c9424d5cd51f34f12a411579
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801156"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871597"
 ---
 # <a name="profiling-tools-apis"></a>APIs für Profilerstellungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können verwaltete oder native Methoden von APIs der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools eingeben, um die Datensammlung während einer Profilerstellung zu steuern. In diesem Abschnitt werden die Methoden der APIs sowie die Vorgehensweise für deren Verwendung beschrieben.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)  
- Beschreibt die Methoden der C++-Profilerstellungstools  
-  
- <xref:Microsoft.VisualStudio.Profiler>  
- Beschreibt die Methoden der .NET-Profilerstellungstools  
-  
- [Exemplarische Vorgehensweise: Verwenden von Profiler-APIs](../profiling/walkthrough-using-profiler-apis.md)  
- In diesem ausführlichen Beispiel erhalten Sie Informationen zur Verwendung der Methoden der .NET-Profilerstellungstools.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Steuern der Datensammlung](../profiling/controlling-data-collection.md)  
-  
-## <a name="see-also"></a>Siehe auch  
+Sie können verwaltete oder native Methoden von APIs der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools eingeben, um die Datensammlung während einer Profilerstellung zu steuern. In diesem Abschnitt werden die Methoden der APIs sowie die Vorgehensweise für deren Verwendung beschrieben.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)\
+ Beschreibt die Methoden der C++-Profilerstellungstools
+
+ [Profiler](/previous-versions/ms242704(v=vs.140))\
+ Beschreibt die Methoden der .NET-Profilerstellungstools
+
+ [Exemplarische Vorgehensweise: Verwenden von Profiler-APIs](../profiling/walkthrough-using-profiler-apis.md)\
+ In diesem ausführlichen Beispiel erhalten Sie Informationen zur Verwendung der Methoden der .NET-Profilerstellungstools.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Steuern der Datensammlung](../profiling/controlling-data-collection.md)
+
+## <a name="see-also"></a>Siehe auch
  [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)

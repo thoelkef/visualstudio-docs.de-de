@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 7203f7f287ebb5b71ecad6e6ad4a861d63e5cf08
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714252"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234216"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden.
 
@@ -32,40 +32,40 @@ ms.locfileid: "66714252"
 
 ## <a name="cause"></a>Ursache
 
-Die Namen von zwei Typen, Member, Parameter oder den vollqualifizierten Namespaces sind identisch, wenn sie in Kleinbuchstaben konvertiert wurden.
+Die Namen von zwei Typen, Membern, Parametern oder voll qualifizierten Namespaces sind identisch, wenn Sie in Kleinbuchstaben konvertiert werden.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Typen, Member und Namespaces, dies ist jedoch [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Typen, Member und Namespaces, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Bezeichner für Namespaces, Typen, Member und Parameter dürfen sich nicht nur durch die Groß-/Kleinschreibung unterscheiden, weil Sprachen, die auf die Common Language Runtime abzielen, nicht zwischen Groß- und Kleinschreibung unterscheiden müssen. Z. B. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ist eine weit verbreitete Sprache, Groß-/Kleinschreibung.
+Bezeichner für Namespaces, Typen, Member und Parameter dürfen sich nicht nur durch die Groß-/Kleinschreibung unterscheiden, weil Sprachen, die auf die Common Language Runtime abzielen, nicht zwischen Groß- und Kleinschreibung unterscheiden müssen. Beispielsweise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ist eine häufig verwendete Sprache ohne Beachtung der Groß-/Kleinschreibung.
 
-Mit dieser Regel wird für öffentlich sichtbaren Member nur ausgelöst werden.
+Diese Regel wird nur für öffentlich sichtbare Elemente ausgelöst.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Wählen Sie einen Namen, der eindeutig ist, wenn er mit anderen Bezeichnern in Groß-und Kleinschreibung verglichen wird.
+Wählen Sie einen eindeutigen Namen aus, wenn er mit anderen bezeichnerwerten in der Groß-und Kleinschreibung verglichen wird.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel. Die Bibliothek kann nicht in allen verfügbaren Sprachen in .NET verwendet werden.
+Unterdrücken Sie keine Warnung dieser Regel. Die Bibliothek ist möglicherweise nicht in allen verfügbaren Sprachen in .net verwendbar.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
-## <a name="example-of-a-violation"></a>Beispiel eines Verstoßes
+## <a name="example-of-a-violation"></a>Beispiel für eine Verletzung
 
-Das folgende Beispiel zeigt einen Verstoß gegen diese Regel.
+Das folgende Beispiel veranschaulicht einen Verstoß gegen diese Regel.
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

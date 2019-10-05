@@ -1,20 +1,19 @@
 ---
-title: Erste Schritte beim Erstellen von Spielen mit Unity in Visual Studio für Mac
+title: Erste Schritte beim Erstellen von Spielen mit Unity
 description: Erste Schritte mit Unity und Visual Studio für Mac
 author: asb3993
 ms.author: amburns
 ms.date: 05/20/2019
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: 8f14d21468336dba220a76ad8978f136d50f96f1
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: ff8fe1b2b4efe7ff91d3b363c58183be534a1441
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836159"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108429"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Erste Schritte beim Erstellen von Spielen mit Unity in Visual Studio für Mac 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Erste Schritte beim Erstellen von Spielen mit Unity in Visual Studio für Mac
 
 Unity ist eine Spiele-Engine, mit der Sie Spiele in C# entwickeln können. Diese exemplarische Vorgehensweise zeigt, wie Sie mit der Entwicklung und dem Debuggen von Unity-Spielen mit Visual Studio für Mac und den Visual Studio für Mac-Tools für die Unity-Erweiterung in Verbindung mit der Unity-Umgebung beginnen können.
 
@@ -156,7 +155,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
         public float Speed = 50;
         private Transform _playerTransform;
         private Transform _myTransform;
-        
+
         void Start()
         {
             var player = GameObject.FindGameObjectWithTag("Player");

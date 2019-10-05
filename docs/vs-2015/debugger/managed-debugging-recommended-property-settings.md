@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f63e1382d242a679ed4fac09bfb3040200fed551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203593"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Verwaltetes Debuggen: Empfohlene Eigenschafteneinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Bestimmte Eigenschaften sollten für alle Szenarios des verwalteten Debuggens gl
 |-----------------------|-----------------|  
 |**DEBUG-Konstante definieren**|C#und F#: Legen Sie das Kontrollkästchen aktiviert. Dadurch kann die Anwendung die Debug-Klasse verwenden.|  
 |**TRACE-Konstante definieren**|C#und F#: Legen Sie das Kontrollkästchen aktiviert. Dadurch kann die Anwendung die Trace-Klasse verwenden.|  
-|**Code optimieren**|C#, F#, und Visual Basic: Legen Sie auf "false". Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn das Programm einen Fehler aufweist, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren. Beachten Sie jedoch, dass der im Fenster **Disassembly** angezeigte Code aus optimiertem Code generiert wurde, der möglicherweise nicht mit dem Code im Code-Editor übereinstimmt. Um optimierten Code zu debuggen, müssen Sie deaktivieren [nur mein Code](just-my-code.md).<br /><br /> Weitere Informationen finden Sie unter [Projekteinstellungen für C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) oder [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
+|**Code optimieren**|C#, F#, und Visual Basic: Legen Sie auf "false". Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn das Programm einen Fehler aufweist, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren. Beachten Sie jedoch, dass der im Fenster **Disassembly** angezeigte Code aus optimiertem Code generiert wurde, der möglicherweise nicht mit dem Code im Code-Editor übereinstimmt. Um optimierten Code zu debuggen, müssen Sie deaktivieren [nur mein Code](just-my-code.md).<br /><br /> Weitere Informationen finden Sie unter [Projekteinstellungen für c# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) oder [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
 |**Ausgabepfad**|Legen Sie als Ausgabepfad „bin\Debug\\\“ fest.|  
 |**Erweiterte Kompilierungsoptionen**|nur Visual Basic. Klicken Sie auf **Erweitert**, um die erweiterten Eigenschaften festzulegen, die in der folgenden Tabelle beschrieben werden.|  
   

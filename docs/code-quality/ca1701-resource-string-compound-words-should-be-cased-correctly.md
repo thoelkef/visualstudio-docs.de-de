@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546283"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234360"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.
 
@@ -32,39 +32,39 @@ ms.locfileid: "62546283"
 
 ## <a name="cause"></a>Ursache
 
-Eine Ressourcenzeichenfolge enthält ein zusammengesetztes Wort, das anscheinend nicht beachtet werden.
+Eine Ressourcen Zeichenfolge enthält ein zusammengesetztes Wort, das anscheinend nicht ordnungsgemäß geschrieben wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Jedes Wort in der Ressourcenzeichenfolge wird in einzelne Token unterteilt, die auf die Groß-/Kleinschreibung basieren. Jede zusammenhängende Kombination aus zwei Token wird durch die Rechtschreibprüfung aus der Microsoft-Bibliothek überprüft. Wenn der Begriff erkannt wird, erzeugt er einen Regelverstoß. Beispiele für zusammengesetzte Wörter, die dazu führen, einen Verstoß dass sind "CheckSum" und "MultiPart", die als "Checksum" und "Multipart", bzw. Groß-/Kleinschreibung beachtet werden sollten. Aufgrund von vorherigen gängige Nutzungsform einige Ausnahmen werden in der Regel erstellt, und mehrere einzelne Wörter gekennzeichnet sind, z. B. "Toolbar" und "Filename", die als zwei unterschiedliche Wörter Groß-/Kleinschreibung beachtet werden sollten. In diesem Beispiel würde "ToolBar" und "FileName" gekennzeichnet werden.
+Jedes Wort in der Ressourcen Zeichenfolge wird in Token aufgeteilt, die auf der Groß-/Kleinschreibung basieren. Jede zusammenhängende Kombination aus zwei Token wird durch die Rechtschreibprüfung aus der Microsoft-Bibliothek überprüft. Wenn der Begriff erkannt wird, erzeugt er einen Regelverstoß. Beispiele für zusammengesetzte Wörter, die zu einer Verletzung führen, sind "Checksum" und "multipart", die als "Checksum" und "multipart" bezeichnet werden müssen. Aufgrund früherer allgemeiner Verwendung sind mehrere Ausnahmen in die Regel integriert, und es werden mehrere einzelne Wörter gekennzeichnet, z. b. "Toolbar" und "filename", die als zwei unterschiedliche Wörter geschrieben werden sollten. In diesem Beispiel würden "Toolbar" und "filename" gekennzeichnet werden.
 
 Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Ändern Sie das Wort, sodass es die richtige Groß-/Kleinschreibung wird.
+Ändern Sie das Wort, damit es ordnungsgemäß geschrieben wird.
 
-## <a name="change-the-dictionary-language"></a>Ändern Sie die Wörterbuchsprache
+## <a name="change-the-dictionary-language"></a>Ändern der Wörterbuch Sprache
 
-Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Wenn Sie die Sprache der Rechtschreibprüfung ändern möchten, erreichen Sie daher durch das Hinzufügen eines der folgenden Attribute auf Ihre *"AssemblyInfo.cs"* oder *AssemblyInfo.vb* Datei:
+Standardmäßig wird die englische Version (en) der Rechtschreibprüfung verwendet. Wenn Sie die Sprache der Rechtschreibprüfung ändern möchten, können Sie dies durch Hinzufügen eines der folgenden Attribute zu Ihrer *AssemblyInfo.cs* -oder *AssemblyInfo. vb* -Datei erreichen:
 
-- Verwendung <xref:System.Reflection.AssemblyCultureAttribute> die Kultur angeben, wenn Ihre Ressourcen in einer Satellitenassembly befinden.
-- Verwendung <xref:System.Resources.NeutralResourcesLanguageAttribute> an die *neutrale Kultur* Ihrer Assembly, wenn Ihre Ressourcen in der gleichen Assembly wie Ihren Code sind.
+- Verwenden <xref:System.Reflection.AssemblyCultureAttribute> Sie, um die Kultur anzugeben, wenn sich Ihre Ressourcen in einer Satellitenassembly befinden.
+- Verwenden <xref:System.Resources.NeutralResourcesLanguageAttribute> Sie, um die *neutrale Kultur* der Assembly anzugeben, wenn sich Ihre Ressourcen in derselben Assembly wie Ihr Code befinden.
 
 > [!IMPORTANT]
-> Wenn Sie die Kultur auf etwas anderes als eine Kultur auf Englisch basierenden festlegen, ist diese Codeanalyse-Regelsätze im Hintergrund deaktiviert.
+> Wenn Sie die Kultur auf eine andere Kultur als Englisch festlegen, wird diese Code Analyse Regel im Hintergrund deaktiviert.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn beide Teile der zusammengesetzte Begriff von der Wörterbuch erkannt werden und die Absicht ist, verwenden Sie zwei Wörter.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn beide Teile des Verbund Worts vom Rechtschreib Wörterbuch erkannt werden und die Absicht ist, zwei Wörter zu verwenden.
 
-Sie können auch ein benutzerdefiniertes Wörterbuch für die Rechtschreibprüfung zusammengesetzte Wörter hinzugefügt. Wörter im benutzerdefinierten Wörterbuchs verursachen keine Verstöße. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Sie können auch Verbund Wörter zu einem Benutzerwörterbuch für die Rechtschreibprüfung hinzufügen. Wörter im benutzerdefinierten Wörterbuch verursachen keine Verstöße. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1702: Bei zusammengesetzten Begriffen sollte beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702: Zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden.](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Bezeichner sollten sich um mehr als einen Fall unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Siehe auch
 

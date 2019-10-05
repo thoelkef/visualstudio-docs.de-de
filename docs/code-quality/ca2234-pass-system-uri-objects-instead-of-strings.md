@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7f333ae6f9e938261c0f91196120f3376d0388
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b52d98716a774c05ca085e2b7023a5d1faa69baa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841585"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237961"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.
 
@@ -32,39 +32,39 @@ ms.locfileid: "65841585"
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Ein Aufruf erfolgt, um eine Methode, die einen Zeichenfolgenparameter verfügt, dessen Name, "Uri", "Uri", "Urn", "Urn", "Url" oder "Url enthält" und der deklarierende Typ der Methode enthält eine entsprechende methodenüberladung, die eine <xref:System.Uri?displayProperty=fullName> Parameter.
+Eine Methode mit einem Zeichen folgen Parameter, der den Namen "URI", "URI", "urn", "urn", "URL" oder "URL" enthält, wird aufgerufen, und der deklarierende Typ der Methode enthält eine entsprechende Methoden Überladung mit einem <xref:System.Uri?displayProperty=fullName> -Parameter.
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Methoden und Typen. Dies ist jedoch [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Methoden und Typen, kann jedoch [konfiguriert](#configurability)werden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein Parametername in Token basierend auf der Kamel unterteilt, und anschließend wird jedes Token überprüft, um festzustellen, ob es sich um "Uri", "Uri", "Urn", "Urn", "Url" oder "Url" gleich. Wenn eine Übereinstimmung vorliegt, wird angenommen, dass der Parameter einen uniform Resource Identifier (URI) darstellen. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri> Klasse stellt diese Dienste auf sichere Weise. Wenn eine Auswahl zwischen zwei Überladungen, die unterscheiden sich nur bezüglich der Darstellung einer URI vorhanden ist, sollte der Benutzer auswählen die Überladung mit einem <xref:System.Uri> Argument.
+Ein Parameter Name wird basierend auf der Camel-Schreibweise in Token aufgeteilt, und dann wird jedes Token dahingehend geprüft, ob es "URI", "URI", "urn", "urn", "URL" oder "URL" entspricht. Wenn eine Entsprechung vorhanden ist, wird davon ausgegangen, dass der Parameter einen URI (Uniform Resource Identifier) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri> -Klasse stellt diese Dienste auf sichere und sichere Weise bereit. Wenn zwischen zwei über Ladungen, die sich nur in Bezug auf die Darstellung eines URIs unterscheiden, eine Auswahl besteht, sollte der Benutzer die- <xref:System.Uri> Überladung auswählen, die ein-Argument annimmt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, rufen Sie die Überladung, akzeptiert die <xref:System.Uri> Argument.
+Um einen Verstoß gegen diese Regel zu beheben, müssen Sie die-über <xref:System.Uri> Ladung aufrufen, die das-Argument annimmt.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Zeichenfolgenparameter keinen URI darstellt.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn der Zeichen folgen Parameter keinen URI darstellt.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca2234.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Nutzung) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Verwendung) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt eine Methode, `ErrorProne`, die gegen die Regel und eine Methode, `SaferWay`, ordnungsgemäß aufruft, die <xref:System.Uri> überladen:
+Das folgende Beispiel zeigt eine Methode `ErrorProne`,, die gegen die Regel verstößt, und eine `SaferWay`Methode, die die <xref:System.Uri> -Überladung ordnungsgemäß aufruft:
 
 [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
 [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]
@@ -72,7 +72,7 @@ Das folgende Beispiel zeigt eine Methode, `ErrorProne`, die gegen die Regel und 
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1057: URI-Überladungen der Zeichenfolge aufrufen System.Uri-Überladungen](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
-- [CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA1055: URI-Rückgabewerte sollten keine Zeichenfolgen sein](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA1057: Zeichen folgen-URI-über Ladungen werden System. URI-über Ladungen aufgerufen](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056: Uri-Eigenschaften dürfen keine Zeichen folgen sein.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1054: URI-Parameter dürfen keine Zeichen folgen sein.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA1055: URI-Rückgabewerte dürfen keine Zeichen folgen sein.](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

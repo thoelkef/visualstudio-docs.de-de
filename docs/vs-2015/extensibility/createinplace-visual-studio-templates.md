@@ -14,11 +14,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184242"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Gibt an, ob erstellen Sie das Projekt und führen Sie die parameterersetzung in 
   
  \<VSTemplate>  
  \<TemplateData>  
- \<CreateInPlace>  
+ \<CreateInPlace >  
   
 ## <a name="syntax"></a>Syntax  
   

@@ -1,5 +1,6 @@
 ---
 title: Häufige schnelle Aktionen
+description: Die beliebtesten Schnellaktionen für C# und Visual Basic sind unter anderem das Bearbeiten falsch geschriebener Schlüsselwörter oder falscher Symbole, das Lösen von Mergekonflikten, das Entfernen nötiger Importe, das Generieren von Typen, die Einführung lokaler Variablen usw.
 ms.date: 03/28/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976514"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551443"
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
@@ -158,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>Entfernen des Typs aus dem default-Wertausdruck
 
-Diese schnelle Aktion entfernt den Werttyp aus einem Standardwertausdruck und verwendet das [Standardliteral](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), wenn der Compiler den Typ des Ausdrucks ableiten kann.
+Diese schnelle Aktion entfernt den Werttyp aus einem Standardwertausdruck und verwendet das [Standardliteral](/dotnet/csharp/language-reference/operators/default#default-literal), wenn der Compiler den Typ des Ausdrucks ableiten kann.
 
 ```csharp
 // Before

@@ -1,22 +1,21 @@
 ---
-title: Visual Studio- und GitHub-Bündel | Microsoft-Dokumentation
+title: 'Angebot: Visual Studio kombiniert mit GitHub | Microsoft-Dokumentation'
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
-description: Informationen zum neuen Visual Studio- und GitHub-Bündel
-searchscope: VS Subscription
-ms.openlocfilehash: 7871496cf427d3e610693391d80693852d71c64e
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+description: Lernen Sie unser neues Angebot für Visual Studio in Kombination mit GitHub kennen.
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586565"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238147"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
 
-Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnementbündel zu kaufen, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist eine einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
+Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnement zu erwerben, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist eine einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
 
 - Mit Visual Studio und GitHub können Sie skaliert innovativ sein, indem Sie Open Source-Code, Community und bewährte Methoden sicher in Ihre IDE und Ihre Workflows einbringen.
 - Verwenden Sie die besten Entwicklungstools und -Dienste für Entwickler ihrer Klasse mit der umfangreichsten Palette an Ressourcen, um großartige Anwendungen zu erstellen, bereitzustellen und zu verwalten. 
@@ -29,11 +28,11 @@ Wenn Ihre Organisation ein neues Enterprise Agreement eingeht oder ein vorhanden
 - Visual Studio Enterprise mit GitHub Enterprise
 - Visual Studio Professional mit GitHub Enterprise
 
-Wenn Ihre Organisation über ein Enterprise Agreement verfügt, dessen Verlängerung noch nicht ansteht, können Sie die „Step-Up“-SKU kaufen, um Ihren vorhandenen Visual Studio Enterprise- oder Visual Studio Professional-Abonnements GitHub Enterprise hinzuzufügen.  Wenn Ihr Vertrag dann zur Verlängerung ansteht, können Sie das Bündel kaufen.
+Wenn Ihre Organisation über ein Enterprise Agreement verfügt, dessen Verlängerung noch nicht ansteht, können Sie die „Step-Up“-SKU kaufen, um Ihren vorhandenen Visual Studio Enterprise- oder Visual Studio Professional-Abonnements GitHub Enterprise hinzuzufügen. Wenn Ihr Vertrag dann zur Verlängerung ansteht, können Sie das Angebot wahrnehmen.
 
 Vorhandene SKUs für Visual Studio Enterprise, Visual Studio Professional und GitHub Enterprise bleiben auch weiterhin separat verfügbar. 
 
-Weitere Informationen zu Vorteilen, Optionen und Preise finden Sie unter https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+Weitere Informationen zum Nutzen und zu Optionen finden Sie unter https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
 ## <a name="getting-your-subscriptions"></a>So erhalten Sie Ihre Abonnements
 
@@ -41,7 +40,7 @@ Visual Studio- und GitHub Enterprise-Abonnements werden in zwei Teilen zugewiese
 1. Das Visual Studio-Abonnement (Enterprise oder Professional)
 2. Das GitHub Enterprise-Abonnement
 
-Wenn Ihre Organisation Abonnements kauft, werden diese von Administratoren zugewiesen.  Die Visual Studio- und GitHub Enterprise-Abonnements werden gesondert zugewiesen.  
+Wenn Ihre Organisation Abonnements kauft, werden diese von Administratoren zugewiesen. Die Visual Studio- und GitHub Enterprise-Abonnements werden gesondert zugewiesen.  
 
 Wenn Ihnen ein Visual Studio- und GitHub-Abonnement zugewiesen werden, erhalten Sie eine E-Mail, in der Ihnen mitgeteilt wird, dass Ihr Visual Studio-Abonnementadministrator Ihnen ein Abonnement zugewiesen hat.  Zu diesem Zeitpunkt können Sie es unter https://my.visualstudio.com/subscriptions anzeigen.  
 
@@ -63,15 +62,12 @@ Wenn Sie mit GitHub noch nicht vertraut sind, finden Sie hier einige Ressourcen,
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--where-is-my-github-subscription"></a>Frage:  Wo befindet sich mein GitHub-Abonnement?
-
 Antwort:  Der Prozess zum Einrichten des GitHub-Abonnements kann eine Weile dauern.  Wenn Sie schon länger warten und nichts gehört haben, können Sie sich an Ihren GitHub-Administrator wenden.  Es ist möglich, dass Ihr Administrator noch daran arbeitet oder sich entschieden hat, Ihnen kein GitHub-Abonnement zuzuweisen. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Frage:  Wie erreiche ich meinen GitHub-Administrator?
-
 Antwort:  Wenn Sie GitHub Enterprise Server verwenden, klicken Sie auf den **Support**-Link am unteren Rand des Clients, um eine Verbindung mit Ihrem Administrator herzustellen.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Frage: Erhalte ich das vollständige Visual Studio-Abonnement (Professional oder Enterprise), oder erhalte ich lediglich die IDE mit diesem Angebot?
-
 Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein vollständiges Visual Studio-Abonnement.  Sie erhalten alle Vorteile wie Softwaredownloads, Clouddienste, technischen Support und Partnervorteile im Rahmen dieses Abonnements, genau so, als ob das Abonnement separat erworben worden wäre.
 
 ## <a name="support-resources"></a>Supportressourcen
@@ -82,5 +78,4 @@ Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein volls
 - Erhalten Sie [technischen Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) für GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Nächste Schritte
-
 Wenn Sie mit GitHub noch nicht vertraut sind, sehen Sie sich das [GitHub Learning Lab](https://lab.github.com/) an, das Sie durch eine Reihe lehrreicher und praktischer Projekte führt und dabei hilfreiches Feedback an Sie weitergibt.

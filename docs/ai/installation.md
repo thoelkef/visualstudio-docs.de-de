@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548454"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918040"
 ---
 # <a name="installation"></a>Installation
 
@@ -37,14 +37,14 @@ Sie können die Tools aus [Visual Studio Marketplace](https://aka.ms/vstoolsfora
 
 ## <a name="prepare-your-local-machine"></a>Vorbereiten Ihres lokalen Computers
 
-Bevor Sie Deep Learning-Modelle auf Ihrem lokalen Computer einrichten, stellen Sie sicher, dass die zutreffenden Anforderungen installiert sind. Prüfen Sie dabei auch, ob Sie die neusten Treiber und Bibliotheken für Ihre NVIDIA-GPU (falls vorhanden) installiert haben. Außerdem sollten Sie sicherstellen, dass Python und Python-Bibliotheken wie NumPy und SciPy sowie passende Deep Learning-Frameworks, die Sie für das Projekt verwenden möchten, wie Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch und Chainer installiert sind.
+Bevor Sie Deep Learning-Modelle auf Ihrem lokalen Computer einrichten, stellen Sie sicher, dass die zutreffenden Anforderungen installiert sind. Prüfen Sie dabei auch, ob Sie die neusten Treiber und Bibliotheken für Ihre NVIDIA-GPU (falls vorhanden) installiert haben. Stellen Sie außerdem sicher, dass Python und Python-Bibliotheken wie NumPy und SciPy sowie passende Deep Learning-Frameworks, die Sie für das Projekt verwenden möchten, wie Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch und Chainer installiert sind.
 
 > [!NOTE]
 > Die Einführung in die Software in den folgenden Abschnitten sind Auszüge aus den jeweiligen Websites.
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA-GPU-Treiber
 
-Deep Learning-Frameworks nutzen die NVIDIA-GPU, um Computer schnell und genau lernen zu lassen und auf Künstliche Intelligenz hinzuarbeiten. Wenn Ihr Computer über NVIDIA-GPU-Karten verfügt, klicken Sie auf diesen [Link](http://www.nvidia.com/Download/index.aspx), oder versuchen Sie, Ihr Betriebssystem zu aktualisieren und den neusten Treiber zu installieren.
+Deep Learning-Frameworks nutzen die NVIDIA-GPU, um Computer schnell und genau lernen zu lassen und auf Künstliche Intelligenz hinzuarbeiten. Wenn Ihr Computer über NVIDIA-GPU-Karten verfügt, lesen Sie [NVIDIA-Treiberdownloads](http://www.nvidia.com/Download/index.aspx), oder versuchen Sie ein Betriebssystemupdate, um den neuesten Treiber zu installieren.
 
 ### <a name="cuda"></a>CUDA
 
@@ -88,27 +88,27 @@ Anschließend sollten Sie prüfen, ob Python 3.5 richtig installiert ist, und ak
 
 - **Windows**
 
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
 
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Python in Visual Studio
 
@@ -128,7 +128,7 @@ pip3.5 install -U numpy scipy
 ```
 
 > [!NOTE]
-> Mithilfe des obenstehenden Befehls werden veraltete oder inoffizielle Versionen von NumPy und SciPy (z.B. Pakete von Drittanbietern für Windows von der Website http://www.lfd.uci.edu/~gohlke/pythonlibs/) auf die neuesten offiziellen Versionen aktualisiert.
+> Mithilfe des obenstehenden Befehls werden veraltete oder inoffizielle Versionen von NumPy und SciPy (z.B. Pakete von Drittanbietern für Windows von der Website http://www.lfd.uci.edu/~gohlke/pythonlibs/ ) auf die neuesten offiziellen Versionen aktualisiert.
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
 
@@ -141,7 +141,7 @@ Informationen zur Installation des Python-Pakets für CNTK finden Sie unter [Ins
 
 ### <a name="tensorflow"></a>TensorFlow
 
-[TensorFlow](https://www.tensorflow.org/) ist eine Open Source-Softwarebibliothek für die numerische Berechnung mithilfe von Datenflussdiagrammen. Ausführliche Informationen zur Installation finden Sie [hier](https://www.tensorflow.org/install/).
+[TensorFlow](https://www.tensorflow.org/) ist eine Open-Source-Softwarebibliothek für die numerische Berechnung mithilfe von Datenflussdiagrammen. Ausführliche Informationen zur Installation finden Sie [hier](https://www.tensorflow.org/install/).
 
 > [!NOTE]
 > Ab Version 1.2 stellt TensorFlow keine GPU-Unterstützung für macOS mehr zur Verfügung.
@@ -162,21 +162,21 @@ Führen Sie den folgenden Befehl über ein Terminal aus, um MXNet zu installiere
 
 - Mit GPU
 
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
 
 - Ohne GPU
 
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
 [Keras](https://keras.io/) ist eine allgemeine neurale Netzwerk-API, die in Python geschrieben ist und zusätzlich zu CNTK, TensorFlow oder Theano ausgeführt werden kann. Das Tool wurde entwickelt, um schnelles Experimentieren zu ermöglichen. Ein Hauptbestandteil der Forschung ist, schnellstmöglich und ohne unnötige Verzögerungen von einer Idee zu einem Ergebnis zu gelangen.
 
-Bitte führen Sie den folgenden Befehl über ein Terminal aus, um Keras zu installieren:
+Führen Sie den folgenden Befehl über ein Terminal aus, um Keras zu installieren:
 
 ```bash
 pip3.5 install Keras==2.0.9
@@ -186,7 +186,7 @@ pip3.5 install Keras==2.0.9
 
 [Theano](http://deeplearning.net/software/theano/) ist eine Python-Bibliothek, über die Sie mathematische Ausdrücke mit mehrdimensionalen Arrays effizient definieren, optimieren und auswerten können.
 
-Bitte führen Sie den folgenden Befehl über ein Terminal aus, um Theano zu installieren:
+Führen Sie den folgenden Befehl über ein Terminal aus, um Theano zu installieren:
 
 ```bash
 pip3.5 install Theano==0.9.0
@@ -203,33 +203,33 @@ Führen Sie den folgenden Befehl über ein Terminal aus, um PyTorch zu installie
 
 - **Windows**
 
-   Derzeit gibt es noch kein offizielles Wheel-Paket. Sie können von [Anaconda](https://anaconda.org/pytorch/repo?type=all) oder von der [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch) ein Drittanbieter-Paket herunterladen.
+  Derzeit gibt es noch kein offizielles Wheel-Paket. Sie können von [Anaconda](https://anaconda.org/pytorch/repo?type=all) oder von der [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch) ein Drittanbieter-Paket herunterladen.
 
-   - Dekomprimieren Sie es in Ihrem Basisverzeichnis, z. B. in *C:\Users\test\pytorch*.
-   - Fügen Sie *C:\Users\test\pytorch\Lib\site-packages* der Umgebungsvariable „%PYTHONPATH%“ hinzu.
+  - Dekomprimieren Sie es in Ihrem Basisverzeichnis, z. B. in *C:\Users\test\pytorch*.
+  - Fügen Sie *C:\Users\test\pytorch\Lib\site-packages* der Umgebungsvariable „%PYTHONPATH%“ hinzu.
 
-      ```bash
-      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
-      pip3 install torchvision
-      ```
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > macOS-Binärdateien unterstützen CUDA nicht. Führen Sie daher eine Installation aus der Quelle durch, wenn CUDA benötigt wird.
+  > [!NOTE]
+  > macOS-Binärdateien unterstützen CUDA nicht. Führen Sie daher eine Installation aus der Quelle durch, wenn CUDA benötigt wird.
 
 - **Linux**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > Dieses einzelne Paket unterstützt sowohl GPU als auch CPU.
+  > [!NOTE]
+  > Dieses einzelne Paket unterstützt sowohl GPU als auch CPU.
 
 Installieren Sie zuletzt Torchvision unter allen anderen Betriebssystemen außer Windows:
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) ist ein Python-basiertes Deep Learning-Framework, das für Flexibilität steht. Das Framework stellt automatische Differenzierungs-APIs, die auf **Define-by-run-Ansätzen** (auch unter der Bezeichnung „Dynamic Computational Graphs“ („Dynamische Berechnungsdiagramme“) bekannt) basieren, sowie objektorientierte, allgemeine APIs zur Verfügung, über die neurale Netzwerke erstellt und trainiert werden.
+[Chainer](https://chainer.org/) ist ein Python-basiertes Deep Learning-Framework, das für Flexibilität steht. Es bietet automatische Differenzierungs-APIs basierend auf dem definierbaren Ansatz (auch bekannt als dynamische Berechnungsgrafiken) sowie objektorientierte allgemeine APIs zum Aufbau und zum Training neuronaler Netze.
 
 Installieren Sie [CuPy](https://github.com/cupy/cupy), um die CUDA-Unterstützung zu aktivieren:
 

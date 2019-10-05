@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148245"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,13 +74,13 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
 
 |Ordnername|Beschreibung|
 |-----------------|-----------------|
-|\\*\<Sprachenname*|Der Sprachordner. Ersetzen Sie *\<Sprachenname* durch den Namen der Sprache. Beispiel: **\Matlab**.|
+|\\ *\<Sprachenname*|Der Sprachordner. Ersetzen Sie *\<Sprachenname* durch den Namen der Sprache. Beispiel: **\Matlab**.|
 |\Syntaxes|Der Grammatikordner. Enthält die JSON-Grammatikdateien für die Sprache, wie etwa **Matlab.json**.|
 |\Snippets|Der Codeausschnittordner. Enthält die Ausschnitte für die Sprache.|
 
- In Windows wird %userprofile% in den Pfad C:\Users\\*\<Benutzername>* aufgelöst. Wenn der Erweiterungsordner auf Ihrem System nicht vorhanden ist, müssen Sie ihn erstellen. Wenn der Ordner bereits vorhanden ist, ist er verborgen.
+ In Windows wird %userprofile% in den Pfad C:\Users\\ *\<Benutzername>* aufgelöst. Wenn der Erweiterungsordner auf Ihrem System nicht vorhanden ist, müssen Sie ihn erstellen. Wenn der Ordner bereits vorhanden ist, ist er verborgen.
 
- Detailinformationen zum Erstellen von TextMate-Grammatiken finden Sie unter [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – Einführung in Sprachgrammatiken: Hinzufügen von Quellcode-Syntaxhervorhebung mit Einbettung in HTML) und [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Anmerkungen zum Erstellen einer Sprachgrammatik und eines benutzerdefinierten Designs für ein TextMate-Paket).
+ Ausführliche Informationen zum Erstellen von TextMate-Grammatiken finden Sie unter [TextMate – Einführung in Sprachgrammatiken: How to add source code syntax highlighting embedded in HTML (Text Mate – Einführung in Sprachen: Hinzufügen von Quellcode-Syntaxhervorhebungen mit Einbettung in HTML)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) und unter [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Anmerkungen zum Erstellen einer Sprache und eines benutzerdefinierten Designs für ein TextMate-Paket)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Siehe auch
- [Visual Studio 2013 Verbesserungen an Navigieren zu](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md) [Exemplarische Vorgehensweise: Anweisungsvervollständigung anzeigen](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 Verbesserungen an Navigieren zu](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md) [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigungen](../extensibility/walkthrough-displaying-statement-completion.md)

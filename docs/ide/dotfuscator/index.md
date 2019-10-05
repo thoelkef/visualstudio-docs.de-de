@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53bd95875cf990afee6d356744961d3637f16842
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557416"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253768"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -55,10 +55,10 @@ Dotfuscator Community bietet für Entwickler, Architekten und Tester eine Reihe 
 Beispiele für Dotfuscator Community-Features für [.NET-Obfuskation][obfuscation] und sonstigen [Anwendungsschutz][app-protection]:
 
 * *[Umbenennung][renaming]* von Bezeichnern, um das Reverse Engineering der kompilierten Assemblys zu erschweren.
-* *[Manipulationsschutz][tamper]*, um die Ausführung manipulierter Anwendungen zu erkennen und manipulierte Sitzungen zu beenden oder in geeigneter Weise zu reagieren.
-* *[Debugschutz][debug]*, um das Anfügen eines Debuggers an eine aktive Anwendung zu erkennen und Debugsitzungen zu beenden oder in geeigneter Weise zu reagieren.
-* *[Schutz vor Geräten mit Rootzugriff][root]*, um zu ermitteln, ob die Anwendung auf einem Android-Gerät mit Rootzugriff ausgeführt wird, und um Sitzungen auf diesen Geräten zu beenden oder in geeigneter Weise zu reagieren.
-* *[Verhaltensweisen beim Ablauf von Anwendungen][shelflife]*, mit denen ein Enddatum codiert wird und abgelaufene Anwendungssitzungen beendet werden.
+* *[Manipulationsschutz][tamper]* , um die Ausführung manipulierter Anwendungen zu erkennen und manipulierte Sitzungen zu beenden oder in geeigneter Weise zu reagieren.
+* *[Debugschutz][debug]* , um das Anfügen eines Debuggers an eine aktive Anwendung zu erkennen und Debugsitzungen zu beenden oder in geeigneter Weise zu reagieren.
+* *[Schutz vor Geräten mit Rootzugriff][root]* , um zu ermitteln, ob die Anwendung auf einem Android-Gerät mit Rootzugriff ausgeführt wird, und um Sitzungen auf diesen Geräten zu beenden oder in geeigneter Weise zu reagieren.
+* *[Verhaltensweisen beim Ablauf von Anwendungen][shelflife]* , mit denen ein Enddatum codiert wird und abgelaufene Anwendungssitzungen beendet werden.
 
 Weitere Informationen zu diesen Funktionen und dazu, wie sie in die Strategie zum Schutz Ihrer Anwendungen passen, finden Sie auf der [Seite mit Funktionen][capabilities].
 

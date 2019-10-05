@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978398"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864688"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -54,34 +54,38 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
 - Visual Studio-Aktivitätsprotokolldatei im Arbeitsspeicher
 
-- PerfWatson-Dateien, wenn die Watson-Sammlung aktiviert ist, aus dem Ordner *VSFeedbackPerfWatsonData*
+- PerfWatson-Dateien, wenn die Watson-Sammlung aktiviert ist
 
-- LiveShare-Protokolldateien, sofern vorhanden, aus dem Ordner *VSFeedbackVSRTCLogs*
+- LiveShare-Protokolldateien, sofern vorhanden
 
-- Xamarin-Protokolldateien, sofern vorhanden, aus *%LOCALAPPDATA%\Xamarin\Logs*
+- Xamarin-Protokolldateien, sofern vorhanden
 
-- NuGet-Protokolldateien, sofern vorhanden, aus *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- NuGet-Protokolldateien, sofern vorhanden
 
-- Webdebugger-Protokolldateien, sofern vorhanden:
+- Webdebugger-Protokolldateien, sofern vorhanden
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+- Service Hub-Protokolle und MEF-Fehlerprotokolle, sofern vorhanden
 
-   - *%TEMP%\vscode-node-debug2.txt*
+- Python-Protokolle, sofern vorhanden
 
-   - *%TEMP%\vscode-edge-debug.txt*
+- Windows Forms-Protokolle, sofern vorhanden
+
+> [!NOTE]
+> Protokolldateien werden nur an Microsoft gesendet, wenn Sie die Berechtigung erteilen, indem Sie den Fehlerbericht einreichen, in dem sie enthalten sind. Die enthaltenen Dateien können Sie im Schritt „Zusammenfassung“ des Fensters „Problem melden“ sehen (siehe Screenshot). Die gesammelten Protokolle werden im Ordner „%temp%“ gespeichert und regelmäßig nach jedem Upload bereinigt. Wenn Sie kein Protokoll in Ihrem Problembericht einschließen möchten, löschen Sie die Datei aus dem Order „%temp%“, bevor Sie den Bericht einreichen.  
+  > ![Problem melden: Zusammenfassung gesammelter Protokolle](media/report-a-problem-logs-collected.png)
 
 - Ein Screenshot, sofern dieser einbezogen werden soll
-
+  
 - Aufzeichnungsdaten, sofern eine Aufzeichnung einbezogen werden soll. Diese umfassen:
 
-   - Schritte zum Reproduzieren des Problems
+  - Schritte zum Reproduzieren des Problems
 
-   - ETL-Ablaufverfolgungsdatei
+  - ETL-Ablaufverfolgungsdatei
 
-   - Dumpdatei
+  - Dumpdatei
 
-    > [!NOTE]
-    > Sie können vor dem Senden des Berichts sämtliche Aufzeichnungsdaten löschen, die nicht gesendet werden sollen.
+  > [!NOTE]
+  > Sie können vor dem Senden des Berichts sämtliche Aufzeichnungsdaten löschen, die nicht gesendet werden sollen.
 
 ## <a name="see-also"></a>Siehe auch
 

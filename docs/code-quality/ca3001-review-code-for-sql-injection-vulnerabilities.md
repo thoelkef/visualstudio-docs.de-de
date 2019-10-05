@@ -10,47 +10,47 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841462"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238119"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
+|TypeName|Reviewcodeforsqlinjectionssicherheitsanfälligkeiten|
 |CheckId|CA3001|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht, Text für einen SQL-Befehl.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen den Text eines SQL-Befehls.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Bei der Arbeit mit nicht vertrauenswürdigen Eingaben und SQL-Befehle Achten Sie darauf, dass Sie von SQL-Injection-Angriffen. SQL Injection-Angriffen kann mit schädliche SQL-Befehlen, gefährden die Sicherheit und Integrität Ihrer Anwendung ausführen. Typische Techniken auch ein einfaches Anführungszeichen oder Apostroph begrenzenden Literalzeichenfolgen, zwei Bindestriche für einen Kommentar, und ein Semikolon für das Ende einer Anweisung. Weitere Informationen finden Sie unter [SQL Injection](/sql/relational-databases/security/sql-injection).
+Beachten Sie beim Arbeiten mit nicht vertrauenswürdigen Eingabe-und SQL-Befehlen, dass SQL-Injection-Angriffe berücksichtigt werden. Ein SQL Injection-Angriff kann bösartige SQL-Befehle ausführen und so die Sicherheit und Integrität Ihrer Anwendung beeinträchtigen. Typische Techniken umfassen die Verwendung eines einfachen Anführungs Zeichens oder Apostroph zum Begrenzen von Literalzeichenfolgen, zwei Bindestrichen für einen Kommentar und ein Semikolon für das Ende einer Anweisung. Weitere Informationen finden Sie unter [SQL Injection](/sql/relational-databases/security/sql-injection).
 
-Mit dieser Regel versucht, Eingaben von HTTP-Anforderungen, die eine SQL Befehlstext erreichen zu finden.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die den SQL-Befehl ausgeführt wird, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die den Text eines SQL-Befehls erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die den SQL-Befehl ausführt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Verwenden Sie parametrisierte SQL-Befehle oder gespeicherte Prozeduren mit Parametern, die nicht vertrauenswürdige Eingaben enthält.
+Verwenden Sie parametrisierte SQL-Befehle oder gespeicherte Prozeduren mit Parametern, die die nicht vertrauenswürdige Eingabe enthalten.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher, die mit dieser Regel eine Warnung zu unterdrücken, wenn Sie wissen, dass die Eingabe mit einer bekannten, sicheren Reihe von Zeichen immer überprüft wird.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn Sie wissen, dass die Eingabe immer anhand eines bekannten sicheren Satzes von Zeichen überprüft wird.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 
@@ -165,7 +165,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="stored-procedure-solution"></a>Gespeicherte Prozedur-Lösung
+### <a name="stored-procedure-solution"></a>Lösung für eine gespeicherte Prozedur
 
 ```csharp
 using System;

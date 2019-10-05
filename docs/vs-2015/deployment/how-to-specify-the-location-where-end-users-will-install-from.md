@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159127"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Vorgehensweise: Angeben des Speicherorts für die Installation durch Endbenutzer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3. Geben Sie im Feld Installations-URL den Speicherort der Installation mithilfe einer vollqualifizierten URL im Format http://www.microsoft.com/ApplicationName, oder einen UNC-Pfad im Format \\\Server\ApplicationName.  
+3. Geben Sie im Feld Installations-URL den Speicherort der Installation mithilfe einer vollqualifizierten URL im Format http://www.microsoft.com/ApplicationName , oder einen UNC-Pfad im Format \\ \Server\ApplicationName.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Geben Sie, in denen Visual Studio die Dateien kopiert an](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

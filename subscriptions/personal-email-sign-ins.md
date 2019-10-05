@@ -1,26 +1,23 @@
 ---
-title: Persönliche E-Mail-Nachrichten, die im VLSC angezeigt werden
+title: Im VLSC angezeigte persönliche E-Mail-Nachrichten
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/23/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
 description: Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
-searchscope: VS Subscription
-ms.openlocfilehash: 0ba4029fcec0c8d35a58def14ab38afbb79e2fee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8418a177e793f0b4fe9a5019d2cf62fa724312ff
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539455"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605751"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
-
-Wenn Unternehmen vom Volume Licensing Service Center (VLSC) zum neuen [Abonnementverwaltungsportal](https://manage.visualstudio.com) von Visual Studio migrieren, stellen Administratoren möglicherweise überrascht fest, dass als „Anmelde-E-Mail-Adresse“ für manche Abonnenten eine E-Mail-Adresse von Drittanbietern wie Hotmail, Gmail oder Yahoo angezeigt wird.  Weitere Informationen finden Sie [in diesem Video](https://www.youtube.com/watch?v=1op-i1zEMfY&t=0s&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=6).
+Nachdem Unternehmen vom Volume Licensing Service Center (VLSC) zum neuen [Abonnementverwaltungsportal](https://manage.visualstudio.com) von Visual Studio migriert haben, stellen Administratoren möglicherweise fest, dass als „Anmelde-E-Mail-Adresse“ für manche Abonnenten eine E-Mail-Adresse von Drittanbietern wie Hotmail, Gmail oder Yahoo angezeigt wird.  Weitere Informationen finden Sie [in diesem Video](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
 
 ## <a name="cause"></a>Ursache
-
-Grund für dieses Szenario sind Anmeldeprozesse, die mit dem älteren MSDN-Abonnentenprozess verknüpft waren. Benutzer wurden ohne Änderungen aus dem Volume Licensing-Servicecenter (VLSC) zum neuen Portal migriert. Den Administratoren war möglicherweise nicht bewusst, dass Benutzer persönliche Konten verwendet hatten, um auf ihre Abonnementvorteile zuzugreifen. Vor den Visual Studio-Abonnentenmigrationen, die 2016 abgeschlossen wurden, waren zur erfolgreichen Verwendung eines Visual Studio-Abonnements zwei Aktionen erforderlich:
+Grund für dieses Szenario sind Anmeldeprozesse, die mit dem älteren MSDN-Abonnentenprozess verknüpft waren. Benutzer wurden ohne Änderungen aus dem Volume Licensing-Servicecenter (VLSC) zum Verwaltungsportal für Visual Studio-Abonnements migriert. Den Administratoren war möglicherweise nicht bewusst, dass Benutzer persönliche Konten verwendet hatten, um auf ihre Abonnementvorteile zuzugreifen. Vor den Visual Studio-Abonnentenmigrationen, die 2016 abgeschlossen wurden, waren zur erfolgreichen Verwendung eines Visual Studio-Abonnements zwei Aktionen erforderlich:
 1. Der Administrator „wies“ das Abonnement einem einzelnen Abonnenten unter Verwendung seiner Geschäfts- oder Schul-E-Mail-Adresse zu.
 2. Der Abonnent „aktivierte“ das Abonnement.
 
@@ -29,10 +26,12 @@ Während der Aktivierung des Abonnenten galt: Ein Microsoft-Konto (MSA) war zum 
 > [!NOTE]
 > Der neue Abonnentenprozess in [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) unterstützt sowohl Geschäfts-, Uni- und Schulkonto- als auch Microsoft-Kontoidentitätstypen (MAA).
 
-Da die Administratormigration Daten aus dem VLSC bezüglich der „Anmelde-E-Mail-Adresse“ des Abonnenten für den neuen Abonnentenverwaltungsprozess verwendet, können schließlich möglicherweise vor kurzem migrierte Administratoren diese zuvor nicht bemerkten persönlichen Konten aufgrund von Änderungen an der Benutzeroberfläche sehen, die diese Informationen besser sichtbar machen.
+Bei der Administratormigration wurden aus dem VLSC stammende Daten zu den Anmelde-E-Mail-Adressen der Abonnenten in den neuen Abonnentenverwaltungsprozess übernommen. Daher sehen kürzlich migrierte Administratoren diese zuvor nicht bemerkten persönlichen Konten möglicherweise auf der neuen Benutzeroberfläche, die diese Informationen besser sichtbar macht.
 
 ## <a name="solution"></a>Lösung
+Um das Problem zu beheben, müssen Sie Abonnenteninformationen bearbeiten, um ihre Anmelde-E-Mail-Adressen zu aktualisieren.  Bearbeitungen können für einzelne Abonnenten oder mehrere gleichzeitig vorgenommen werden. Vollständige Informationen finden Sie unter [Bearbeiten von Abonnements](edit-license.md).
 
-Um das Problem zu beheben, müssen Sie Abonnenteninformationen bearbeiten, um ihre Anmelde-E-Mail-Adressen zu aktualisieren.  Bearbeitungen können für einzelne Abonnenten oder mehrere gleichzeitig vorgenommen werden. Ausführliche Informationen finden Sie unter [Bearbeiten von Visual Studio-Abonnementzuweisungen](edit-license.md).
+##  <a name="next-steps"></a>Nächste Schritte
+- Wenn Sie die E-Mail-Adressen der Abonnenten aktualisiert haben, sollten Sie ihnen mitteilen, dass ihre Anmeldeinformationen geändert wurden.  Sie erhalten auch eine E-Mail mit den aktualisierten Informationen.
+- Es kann hilfreich sein, die [Liste der Abonnenten in Ihrer Organisation zu filtern](search-license.md), um nach Anmelde-E-Mail-Adressen zu suchen, die möglicherweise geändert werden müssen.  
 
-Nachdem Sie die E-Mail-Adressen der Abonnenten aktualisiert haben, sollten Sie ihnen mitteilen, dass ihre Anmeldeinformationen geändert wurden.  Sie erhalten auch eine E-Mail mit den aktualisierten Informationen.

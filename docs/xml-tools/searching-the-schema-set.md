@@ -1,5 +1,5 @@
 ---
-title: 'XML-Schema-Explorer: Durchsuchen des Schemasets'
+title: 'XML-Schema-Explorer: Durchsuchen des Schema Satzes'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 898b79e53773c09d60e32a3ef262346b0371d2af
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784571"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926801"
 ---
 # <a name="search-the-schema-set"></a>Durchsuchen des Schemasets
 
-Die **XML-Schema-Explorer** ermöglicht es Ihnen, suchen Sie das Schema auf folgende Weise festlegen:
+Der **XML-Schema-Explorer** ermöglicht das Durchsuchen des Schemas auf folgende Weise:
 
 - Schlüsselwortsuche
 
@@ -25,33 +25,33 @@ Die **XML-Schema-Explorer** ermöglicht es Ihnen, suchen Sie das Schema auf folg
 
 ## <a name="keyword-search"></a>Schlüsselwortsuche
 
- Durchführen von Schlüsselwortsuchen durch Eingabe einer Teilzeichenfolge in der **Schlüsselwortsuche** Textfeld die **XML-Schema-Explorer** Symbolleiste.
+Sie führen eine Schlüsselwort Suche durch, indem Sie eine Teil Zeichenfolge in das Textfeld **Suchen Schemaset** der Symbolleiste des **XML-Schema-Explorers** eingeben
 
- ![Schlüsselwortsuche im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearch.gif)
+![Schlüsselwortsuche im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearch.gif)
 
- Die **XML-Schema-Explorer** durchsucht das Schemaset für die folgenden Attribute:
+Der **XML-Schema-Explorer** durchsucht den Schemaset nach den folgenden Attributen:
 
-- Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. Sie finden die Elemente, Attribute, Typen und So weiter, anhand des Namens.
+- Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. Sie können Elemente, Attribute, Typen usw. nach Namen suchen.
 
 - Die `schemaLocation`-Attribute von Include-Anweisungen.
 
 - Die `namespace`-Attribute von Import-Anweisungen.
 
-## <a name="schema-specific-search"></a>Schemaspezifische Suche
+## <a name="schema-specific-search"></a>Schema spezifische Suche
 
- Die **XML-Schema-Explorer** enthält auch integrierte Suchfunktionen, die Sie zugreifen können, mithilfe des Kontextmenüs (Rechtsklick), der die **XML-Schema-Explorer**. Weitere Informationen zu verfügbaren Kontextmenüs finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md). Sie können auch eine schemaspezifische Suche aus der Ausgangsansicht ausführen; Weitere Informationen finden Sie im Abschnitt "Details zum Schemaset" in der [Ausgangsansicht](../xml-tools/start-view.md) Thema.
+Der **XML-Schema-Explorer** enthält auch integrierte Suchvorgänge, auf die Sie über das Kontextmenü (Rechtsklick) des XML- **Schema-Explorers**zugreifen können. Weitere Informationen zu verfügbaren Kontextmenüs finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md). Sie können auch eine Schema spezifische Suche in der Start Ansicht ausführen. Weitere Informationen finden Sie im Abschnitt "Details zum Schemaset" im Thema " [Start Ansicht](../xml-tools/start-view.md) ".
 
-## <a name="display-and-navigate-search-results"></a>Anzeigen und Suchergebnissen navigieren
+## <a name="display-and-navigate-search-results"></a>Anzeigen und Navigieren in den Suchergebnissen
 
- Nach der Suche wird der Symbolleiste ein Bereich mit der Ergebniszusammenfassung der Suche hinzugefügt. Die Ergebnisse der Suche werden auch hervorgehoben, der **XML-Schema-Explorer** und auf der vertikalen Bildlaufleiste durch Teilstriche markiert. Sie können die Suchergebnissen navigieren, indem die **wechseln Sie zum nächsten Suchergebnis** und **wechseln Sie zum vorherigen Suchergebnis** Schaltflächen im Bereich Zusammenfassung der Ergebnisse der der **XML-Schema-Explorer**Symbolleiste Mithilfe der Tastatur **F3** und **UMSCHALT**+**F3**; oder durch Klicken auf die Teilstriche in der Bildlaufleiste.
+Nach der Suche wird der Symbolleiste ein Bereich mit der Ergebniszusammenfassung der Suche hinzugefügt. Die Suchergebnisse werden auch im XML- **Schema-Explorer** hervorgehoben und auf der vertikalen Schiebe Leiste durch Ticks gekennzeichnet. Sie können in den Suchergebnissen navigieren, indem Sie auf der Symbolleiste des **XML-Schema-Explorers** im Ergebnisbereich "Zusammenfassung" auf die Schaltflächen " **Gehe zur nächsten Suchergebnis** " klicken. mithilfe der Tastaturtasten **F3** und **UMSCHALT**+**F3**oder durch Klicken auf die Teil Striche in der Bild Lauf Leiste.
 
- Sie können die Ergebnisse der Suche mit dem Arbeitsbereich hinzufügen, indem Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** auf den Bereich auf die Schaltfläche.
+Sie können die Suchergebnisse dem Arbeitsbereich hinzufügen, indem Sie im Zusammenfassungs Ergebnisbereich auf die Schaltfläche **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** klicken.
 
- ![Suchergebnis im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
+![Suchergebnis im XML-Schema-Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
-## <a name="clear-search-results"></a>Löschen der Suchergebnisse
+## <a name="clear-search-results"></a>Suchergebnisse löschen
 
- Um die Suchergebnisse zu löschen, klicken Sie auf die **x** im Bereich Zusammenfassung der Ergebnisse der Schaltfläche die **XML-Schema-Explorer** Suche Toolbar.
+Um die Suchergebnisse zu löschen, klicken Sie auf der Symbolleiste des **XML-Schema-Explorers** im Zusammenfassungs Ergebnisbereich auf die Schaltfläche **x** .
 
 ## <a name="see-also"></a>Siehe auch
 

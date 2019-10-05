@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6cd466a41c61da929e9acc1619f384a3621f9c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204332"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName-Element (Assistentenerweiterung für Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "59001026"
 Der vollqualifizierte Name der Klasse, die implementiert die `IWizard` Schnittstelle.  
   
  \<VSTemplate>  
- \<WizardExtension>  
+ \<WizardExtension >  
  ...  
- \<FullClassName>  
+ \<FullClassName >  
   
 ## <a name="syntax"></a>Syntax  
   

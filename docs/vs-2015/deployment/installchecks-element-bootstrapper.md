@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189010"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; -Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |---------------|-----------------|  
 |`Property`|Erforderlich. Der Name der Eigenschaft zum Speichern des Ergebnisses. Diese Eigenschaft verwiesen werden kann, in einem Test unter der `InstallConditions` -Element, das ein untergeordnetes Element von der `Command` Element. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md).|  
 |`PackageFile`|Erforderlich. Das externe Programm ausgeführt werden soll. Das Programm muss Teil des Setuppakets Verteilung sein.|  
-|`Arguments`|Dies ist optional. Gibt Befehlszeilenargumente an die ausführbare Datei mit dem Namen von `PackageFile`.|  
+|`Arguments`|Optional. Gibt Befehlszeilenargumente an die ausführbare Datei mit dem Namen von `PackageFile`.|  
   
 ## <a name="filecheck"></a>FileCheck  
  Dieses Element ist ein optionales untergeordnetes Element des `InstallChecks`. Für jede Instanz der `FileCheck`, der Bootstrapper bestimmen, ob die angegebene Datei vorhanden ist, und geben Sie die Versionsnummer der Datei zurück. Wenn Sie eine Versionsnummer in der Datei nicht vorhanden ist, legt der Bootstrapper die Eigenschaft mit dem Namen von `Property` auf 0. Wenn die Datei nicht vorhanden ist, `Property` nicht auf einen beliebigen Wert festgelegt ist.  
@@ -105,8 +105,8 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |`Property`|Erforderlich. Der Name der Eigenschaft zum Speichern des Ergebnisses. Diese Eigenschaft verwiesen werden kann, in einem Test unter der `InstallConditions` -Element, das ein untergeordnetes Element von der `Command` Element. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md).|  
 |`FileName`|Erforderlich. Der Name des zu suchenden Datei.|  
 |`SearchPath`|Erforderlich. Der Datenträger oder ein Ordner, in dem nach der Datei gesucht werden soll. Dies muss ein relativer Pfad sein, wenn `SpecialFolder` zugewiesen ist; andernfalls, muss es sich um einen absoluten Pfad.|  
-|`SpecialFolder`|Dies ist optional. Ein Ordner, der besondere Bedeutung, entweder auf Windows oder hat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Der Standardwert ist, interpretiert `SearchPath` als absoluter Pfad. Folgende Werte sind gültig:<br /><br /> `AppDataFolder`. Der Anwendungsdatenordner für diesen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung; für den aktuellen Benutzer spezifisch.<br /><br /> `CommonAppDataFolder`. Der Anwendungsdatenordner, die von allen Benutzern verwendet wird.<br /><br /> `CommonFilesFolder`. Im Ordner "Gemeinsame Dateien" für den aktuellen Benutzer.<br /><br /> `LocalDataAppFolder`. Der Datenordner für Anwendungen kein roaming.<br /><br /> `ProgramFilesFolder`. Die standardmäßigen Ordner "Programme" für 32-Bit-Anwendungen.<br /><br /> `StartUpFolder`. Der Ordner, der enthält alle Anwendungen, die beim Systemstart gestartet.<br /><br /> `SystemFolder`. Der Ordner, der 32-Bit-System-DLLs enthält.<br /><br /> `WindowsFolder`. Der Ordner, der die Windows-System-Installation enthält.<br /><br /> `WindowsVolume`. Das Laufwerk oder Partition, die die Windows-System-Installation enthält.|  
-|`SearchDepth`|Dies ist optional. Die Tiefe am dem Unterordner für die angegebene Datei gesucht werden soll. Die Suche ist die Tiefe. Der Standardwert ist 0 (null) und die Suche auf den Ordner der obersten Ebene in beschränkt `SpecialFolder` und **SearchPath**.|  
+|`SpecialFolder`|Optional. Ein Ordner, der besondere Bedeutung, entweder auf Windows oder hat [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Der Standardwert ist, interpretiert `SearchPath` als absoluter Pfad. Folgende Werte sind gültig:<br /><br /> `AppDataFolder` Der Anwendungsdatenordner für diesen [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung; für den aktuellen Benutzer spezifisch.<br /><br /> `CommonAppDataFolder` Der Anwendungsdatenordner, die von allen Benutzern verwendet wird.<br /><br /> `CommonFilesFolder`. Im Ordner "Gemeinsame Dateien" für den aktuellen Benutzer.<br /><br /> `LocalDataAppFolder`. Der Datenordner für Anwendungen kein roaming.<br /><br /> `ProgramFilesFolder`. Die standardmäßigen Ordner "Programme" für 32-Bit-Anwendungen.<br /><br /> `StartUpFolder`. Der Ordner, der enthält alle Anwendungen, die beim Systemstart gestartet.<br /><br /> `SystemFolder`. Der Ordner, der 32-Bit-System-DLLs enthält.<br /><br /> `WindowsFolder`. Der Ordner, der die Windows-System-Installation enthält.<br /><br /> `WindowsVolume` Das Laufwerk oder Partition, die die Windows-System-Installation enthält.|  
+|`SearchDepth`|Optional. Die Tiefe am dem Unterordner für die angegebene Datei gesucht werden soll. Die Suche ist die Tiefe. Der Standardwert ist 0 (null) und die Suche auf den Ordner der obersten Ebene in beschränkt `SpecialFolder` und **SearchPath**.|  
   
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  Dieses Element ist ein optionales untergeordnetes Element des `InstallChecks`. Für jede Instanz der `MsiProductCheck`, der Bootstrapper überprüft, ob die angegebene Microsoft Windows Installer-Installation ausgeführt wurde, bis er abgeschlossen ist. Den Wert der Eigenschaft, die je nach Zustand des installierten Produkts festgelegt ist. Ein positiver Wert gibt an, das Produkt installiert ist, 0 oder-1 gibt an, es ist nicht installiert. (Siehe die Funktion mit dem Windows Installer SDK MsiQueryFeatureState, Weitere Informationen.) . Wenn Windows Installer nicht, auf dem Computer installiert ist, `Property` ist nicht festgelegt.  
@@ -117,7 +117,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |---------------|-----------------|  
 |`Property`|Erforderlich. Der Name der Eigenschaft zum Speichern des Ergebnisses. Diese Eigenschaft verwiesen werden kann, in einem Test unter der `InstallConditions` -Element, das ein untergeordnetes Element von der `Command` Element. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md).|  
 |`Product`|Erforderlich. Die GUID für das installierte Produkt hinzu.|  
-|`Feature`|Dies ist optional. Die GUID für eine bestimmte Funktion von der installierten Anwendung.|  
+|`Feature`|Optional. Die GUID für eine bestimmte Funktion von der installierten Anwendung.|  
   
 ## <a name="registrycheck"></a>RegistryCheck  
  Dieses Element ist ein optionales untergeordnetes Element des `InstallChecks`. Für jede Instanz der `RegistryCheck`, überprüft der Bootstrapper, um festzustellen, ob der angegebene Registrierungsschlüssel vorhanden ist, oder gibt an, ob es sich um den angegebenen Wert aufweist.  
@@ -139,8 +139,8 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |---------------|-----------------|  
 |`Property`|Erforderlich. Der Name der Eigenschaft zum Speichern des Ergebnisses. Diese Eigenschaft verwiesen werden kann, in einem Test unter der `InstallConditions` -Element, das ein untergeordnetes Element von der `Command` Element. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Erforderlich. Der Name des Registrierungsschlüssels. Der Wert wird als Pfad zu einer Datei, interpretiert, es sei denn, die `File` -Attribut festgelegt ist. Wenn dieser Schlüssel nicht vorhanden ist, `Property` ist nicht festgelegt.|  
-|`Value`|Dies ist optional. Der Name des Registrierungswerts abgerufen werden soll. Der Standardwert ist den Text des Standardwerts zurückgegeben. `Value` eine Zeichenfolge muss sein.|  
-|`FileName`|Dies ist optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass der Wert aus dem Registrierungsschlüssel einen Verzeichnispfad ein, und dieser Name wird an ihn angefügt. Wenn nicht angegeben, wird angenommen, dass der Rückgabewert aus der Registrierung den vollständigen Pfad zu einer Datei enthalten.|  
+|`Value`|Optional. Der Name des Registrierungswerts abgerufen werden soll. Der Standardwert ist den Text des Standardwerts zurückgegeben. `Value` eine Zeichenfolge muss sein.|  
+|`FileName`|Optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass der Wert aus dem Registrierungsschlüssel einen Verzeichnispfad ein, und dieser Name wird an ihn angefügt. Wenn nicht angegeben, wird angenommen, dass der Rückgabewert aus der Registrierung den vollständigen Pfad zu einer Datei enthalten.|  
 |`SearchDepth`|Dies ist optional. Die Tiefe am dem Unterordner für die angegebene Datei gesucht werden soll. Die Suche ist die Tiefe. Der Standardwert ist 0 (null) und die Suche zum Ordner obersten Ebene, die durch den Registrierungsschlüssel-Wert angegeben werden schränkt.|  
   
 ## <a name="remarks"></a>Hinweise  

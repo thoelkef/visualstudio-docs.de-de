@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148229"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Optionen|Beschreibung|  
 |-------------|-----------------|  
 |**U**|Die Berichtsausgabe und die umgeleitete Konsolenausgabe werden als Unicode geschrieben. Es muss sich um die erste angegebene Option handeln.|  
-|**Summary:**[*types*]|Erstellt mindestens einen Berichtstyp<br /><br /> -   `All` – alle Berichtstypen werden generiert<br />-   `CallerCallee` – über- und untergeordnete Beziehungen zwischen Funktionen<br />-   `Function` – aufgerufene Funktionen<br />-   `CallTree` – Hierarchien der aufgerufenen Funktionen<br />-   `Counter` – alle Markierungen und Windows-Leistungsindikatorwerte<br />-   `Ip` – Anweisungen mit Profilen<br />-   `Life` – Lebensdauer von zugeordneten Objekten (verfügbar, wenn Speicherbelegungsdaten erfasst wurden)<br />-   `Line` – Profildaten von Quellcodezeilen<br />-   `Header` – der Bericht enthält Dateiheaderinformationen<br />-   `Mark` – alle Markierungen<br />-   `Module` – Module mit Profilen<br />-   `Process` – Prozesse mit Profilen<br />-   `Thread` – Threads mit Profilen<br />-   `Type` – zugeordnete Typen<br />-   `Contention` – Ressourcenkonflikte<br />-   `RuleWarnings` – Probleme mit Leistungsregeln<br />-   `ETW` – alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows (ETW). Die ETL-Datendatei muss sich am ursprünglichen Standort oder in dem Verzeichnis mit der VSP- oder VSPS-Datei befinden.|  
+|**Summary:** [*types*]|Erstellt mindestens einen Berichtstyp<br /><br /> -   `All` – alle Berichtstypen werden generiert<br />-   `CallerCallee` – über- und untergeordnete Beziehungen zwischen Funktionen<br />-   `Function` – aufgerufene Funktionen<br />-   `CallTree` – Hierarchien der aufgerufenen Funktionen<br />-   `Counter` – alle Markierungen und Windows-Leistungsindikatorwerte<br />-   `Ip` – Anweisungen mit Profilen<br />-   `Life` – Lebensdauer von zugeordneten Objekten (verfügbar, wenn Speicherbelegungsdaten erfasst wurden)<br />-   `Line` – Profildaten von Quellcodezeilen<br />-   `Header` – der Bericht enthält Dateiheaderinformationen<br />-   `Mark` – alle Markierungen<br />-   `Module` – Module mit Profilen<br />-   `Process` – Prozesse mit Profilen<br />-   `Thread` – Threads mit Profilen<br />-   `Type` – zugeordnete Typen<br />-   `Contention` – Ressourcenkonflikte<br />-   `RuleWarnings` – Probleme mit Leistungsregeln<br />-   `ETW` – alle während der Profilerstellungsausführung erfassten Ereignisse der Ereignisablaufverfolgung für Windows (ETW). Die ETL-Datendatei muss sich am ursprünglichen Standort oder in dem Verzeichnis mit der VSP- oder VSPS-Datei befinden.|  
 |**XML**|Ausgabebericht im XML-Format|  
 |**CallTrace**|Erstellt eine Liste mit Funktionseinträgen und beendet ETW-Ereignisse und Markierungen|  
 |**ClearPackedSymbols**|Entfernt zuvor eingebettete Symbole aus einer Profilerdatendatei. Führen Sie diesen Befehl aus, bevor Sie PackSymbols ein zweites Mal ausführen.|  
@@ -72,14 +72,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Optionen|Beschreibung|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`][,`callee`]]|Zeigt nur Funktionsaufrufe der Benutzeranwendung an und blendet Systemaufrufe aus<br /><br /> – Keine Parameter: blendet alle Systemfunktionen aus<br />-   `caller` – zeigt eine Ebene von Systemfunktionen an, die Anwendungsfunktionen aufrufen<br />-   `callee` – zeigt eine Ebene von Systemfunktionen an, die von Benutzeranwendungsfunktionen aufgerufen werden|  
-|**StartTime:**[*Wert*]|Zeigt nur Daten an, die nach dem Wert erfasst werden (in Millisekunden)|  
-|**EndTime:**[*Wert*]|Zeigt nur Daten an, die vor dem Wert erfasst werden (in Millisekunden)|  
+|**JustMyCode**[ **:** [`caller`][,`callee`]]|Zeigt nur Funktionsaufrufe der Benutzeranwendung an und blendet Systemaufrufe aus<br /><br /> – Keine Parameter: blendet alle Systemfunktionen aus<br />-   `caller` – zeigt eine Ebene von Systemfunktionen an, die Anwendungsfunktionen aufrufen<br />-   `callee` – zeigt eine Ebene von Systemfunktionen an, die von Benutzeranwendungsfunktionen aufgerufen werden|  
+|**StartTime:** [*Wert*]|Zeigt nur Daten an, die nach dem Wert erfasst werden (in Millisekunden)|  
+|**EndTime:** [*Wert*]|Zeigt nur Daten an, die vor dem Wert erfasst werden (in Millisekunden)|  
 |**FilterFile:** `VSPFFile`|Gibt den Speicherort einer Filterdatei an, die aus dem Visual Studio-Fenster „Leistungsbericht“ generiert wurde|  
-|**MsFilter:**[*Startzeit,Dauer*]|Zeigt nur Daten ab `starttime` an, bis zur Länge von `duration` (in Millisekunden)|  
-|**Process:**[*PID*]|Zeigt nur Daten aus dem angegebenen Prozess an|  
-|**Thread:**[*Thread-ID*]|Zeigt nur Daten aus dem angegebenen Thread an|  
-|**Thread:**[*Thread-ID,Prozess-ID*]|Zeigt nur Daten aus dem angegebenen Thread an, der dem angegebenen Prozess zugeordnet ist|  
+|**MsFilter:** [*Startzeit,Dauer*]|Zeigt nur Daten ab `starttime` an, bis zur Länge von `duration` (in Millisekunden)|  
+|**Process:** [*PID*]|Zeigt nur Daten aus dem angegebenen Prozess an|  
+|**Thread:** [*Thread-ID*]|Zeigt nur Daten aus dem angegebenen Thread an|  
+|**Thread:** [*Thread-ID,Prozess-ID*]|Zeigt nur Daten aus dem angegebenen Thread an, der dem angegebenen Prozess zugeordnet ist|  
   
 ## <a name="difference-report-options"></a>Optionen für Unterschiedeberichte  
  In der folgenden Tabelle werden die Optionen zum Vergleichen von Berichtsdateien beschrieben.  
@@ -87,9 +87,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Optionen|Beschreibung|  
 |-------------|-----------------|  
 |**Diff** `vspfile1 vspfile2`|Vergleicht zwei Berichtsdateien (VSP- oder VSPS-Dateien). Optionen zur Zusammenfassung werden bei der Verwendung der „Diff“-Option ignoriert.|  
-|**Diff:**[*Wert*]|Bei Werten, die unter diesem Schwellenwert liegen, wird der Unterschied zwischen zwei Werten ignoriert. Außerdem werden keine neuen Daten mit Werten angezeigt, die unter diesem Schwellenwert legen.|  
-|**DiffTable:**[*Tabellenname*]|Verwendet die angegebene Tabelle zum Vergleichen von Dateien. Standardmäßig wird die Funktionstabelle verwendet.|  
-|**DiffColumn:**[*Spaltenname*]|Verwendet diese angegebene Spalte zum Vergleichen von Werten. Standardmäßig handelt es sich dabei um die Spalte mit dem prozentualen Anteil exklusiver Stichproben.|  
+|**Diff:** [*Wert*]|Bei Werten, die unter diesem Schwellenwert liegen, wird der Unterschied zwischen zwei Werten ignoriert. Außerdem werden keine neuen Daten mit Werten angezeigt, die unter diesem Schwellenwert legen.|  
+|**DiffTable:** [*Tabellenname*]|Verwendet die angegebene Tabelle zum Vergleichen von Dateien. Standardmäßig wird die Funktionstabelle verwendet.|  
+|**DiffColumn:** [*Spaltenname*]|Verwendet diese angegebene Spalte zum Vergleichen von Werten. Standardmäßig handelt es sich dabei um die Spalte mit dem prozentualen Anteil exklusiver Stichproben.|  
 |**QueryDiffTables**|Listet die gültigen Tabellen und Spalten für die beiden bereitgestellten Berichtsdateien auf.|  
   
 ## <a name="see-also"></a>Siehe auch  

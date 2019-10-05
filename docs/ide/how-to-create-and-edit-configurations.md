@@ -14,17 +14,17 @@ helpviewer_keywords:
 - project build configurations, creating
 - project build configurations, editing
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824242"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925765"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen
 
@@ -44,7 +44,7 @@ Sie können das Dialogfeld **Konfigurations-Manager** verwenden, um neue Buildko
 
 Sie können im Dialogfeld **Konfigurations-Manager** die Dropdownliste **Konfiguration der aktuellen Projektmappe** verwenden, um eine Projektmappen-weite Buildkonfiguration auszuwählen, eine vorhandene zu ändern oder eine neue Konfiguration zu erstellen. Sie können die Dropdownliste **Aktive Projektmappenplattform** verwenden, um die Plattform auszuwählen, auf die die Konfiguration ausgerichtet ist, eine vorhandene zu ändern, oder eine neue Plattform hinzuzufügen. Im Bereich **Projektkontexte** werden die Projekte in der Projektmappe aufgeführt. Für jedes Projekt können Sie eine projektspezifische Konfiguration und Plattform auswählen, vorhandene ändern oder eine neue Konfiguration erstellen bzw. eine neue Plattform hinzufügen. Sie können auch Kontrollkästchen aktivieren, die angeben, ob jedes Projekt bei Verwendung der Projektmappe-weiten Konfiguration zum Erstellen oder Bereitstellen der Projektmappe eingeschlossen wird.
 
- Nachdem Sie die gewünschte Konfigurationen festgelegt haben, können Sie die für diese Konfigurationen geeigneten Projekteigenschaften festlegen.
+Nachdem Sie die gewünschte Konfigurationen festgelegt haben, können Sie die für diese Konfigurationen geeigneten Projekteigenschaften festlegen.
 
 ### <a name="set-properties-based-on-configurations"></a>Festlegen von Eigenschaften auf der Grundlage von Konfigurationen
 

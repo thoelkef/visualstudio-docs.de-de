@@ -1,5 +1,5 @@
 ---
-title: Referenz zur Benutzeroberfläche Debuggen | Microsoft-Dokumentation
+title: Benutzeroberflächen Referenz Debuggen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d459e1c6611fa1b20e05ba2d5bd24e23750109d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28757580b7f45e3d63cba1782f17283ad01f26c6
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852183"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211054"
 ---
 # <a name="debugging-user-interface-reference"></a>Referenz zur Debugger-Benutzeroberfläche
 Beim Debuggen einer Anwendung werden möglicherweise folgende Dialogfelder angezeigt.
@@ -43,6 +43,6 @@ Beim Debuggen einer Anwendung werden möglicherweise folgende Dialogfelder angez
 - [Debugfehler und Warnmeldungen](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 
 ## <a name="see-also"></a>Siehe auch
-- [Debuggen in Visual Studio](../debugger/index.md)
+- [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Befehlsfenster](../ide/reference/command-window.md)

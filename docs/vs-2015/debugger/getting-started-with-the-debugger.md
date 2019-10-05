@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202306"
 ---
 # <a name="getting-started-with-the-debugger"></a>Erste Schritte mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ static void Main(string[] args)
   
  ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
   
- Nur unter dem Codefenster sollte die **"Auto"**, **"lokal"**, und **Watch** Windows. Diese Fenster zeigen die aktuellen Werte der Variablen zum Zeitpunkt der Ausführung. Sowohl die **"Auto"** und **"lokal"** Windows anzeigen **"TestInt" erst** mit einem Wert von **10**.  
+ Nur unter dem Codefenster sollte die **"Auto"** , **"lokal"** , und **Watch** Windows. Diese Fenster zeigen die aktuellen Werte der Variablen zum Zeitpunkt der Ausführung. Sowohl die **"Auto"** und **"lokal"** Windows anzeigen **"TestInt" erst** mit einem Wert von **10**.  
   
  ![Auto-Fenster beim Debuggen](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   

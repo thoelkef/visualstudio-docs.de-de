@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745784"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888029"
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 Umschließt *csc.exe* und erzeugt ausführbare Dateien (*EXE*-Dateien), Dynamic Link Libraries (*DLL*-Dateien) und Codemodule (*NETMODULE*-Dateien). Weitere Informationen zu *csc.exe* finden Sie unter [C#-Compileroptionen](/dotnet/csharp/language-reference/compiler-options/index).
@@ -31,7 +31,7 @@ Umschließt *csc.exe* und erzeugt ausführbare Dateien (*EXE*-Dateien), Dynamic 
 ## <a name="parameters"></a>Parameter
 In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.
 
-| Parameter | Beschreibung |
+| Parameter | BESCHREIBUNG |
 |------------------------------| - |
 | `AdditionalLibPaths` | Optionaler `String[]` -Parameter.<br /><br /> Gibt zusätzliche Verzeichnisse an, in denen nach Verweisen gesucht wird. Weitere Informationen finden Sie unter [-lib (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Optionaler `String` -Parameter.<br /><br /> Gibt mindestens Modul an, das Bestandteil dieser Assembly sein soll. Weitere Informationen finden Sie unter [-addmodule (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |
@@ -42,7 +42,7 @@ In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.
 | `CodePage` | Optionaler `Int32` -Parameter.<br /><br /> Gibt die für alle Quellcodedateien in der Kompilierung die zu verwendende Codepage an. Weitere Informationen finden Sie unter [-codepage (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Optionaler `String` -Parameter.<br /><br /> Gibt den Debugtyp an. `DebugType` kann `full` oder `pdbonly` sein. Die Standardeinstellung ist `full`. Dadurch kann ein Debugger einem aktiven Programm zugeordnet werden kann. Durch das Angeben von `pdbonly` ist ein Debuggen von Quellcode möglich, wenn das Programm im Debugger gestartet wird. Der Assembler wird jedoch nur angezeigt, wenn das aktive Programm an den Debugger angefügt ist.<br /><br /> Dieser Parameter überschreibt den `EmitDebugInformation`-Parameter.<br /><br /> Weitere Informationen finden Sie unter [-debug (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `DefineConstants` | Optionaler `String` -Parameter.<br /><br /> Definiert Präprozessorsymbole. Weitere Informationen finden Sie unter [-define (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option). |
-| `DelaySign` | Optionaler `Boolean` -Parameter.<br /><br /> Ist der Wert `true`, gibt dies an, dass die Assembly vollständig signiert werden soll. Ist der Wert `false`, gibt dies an, dass Sie nur den öffentlichen Schlüssel in die Assembly platzieren möchten.<br /><br /> Dieser Parameter hat nur dann Auswirkungen, wenn Sie ihn entweder mit dem `KeyFile`- oder `KeyContainer`-Parameter verwenden.<br /><br /> Weitere Informationen finden Sie unter [-delaysign (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
+| `DelaySign` | Optionaler `Boolean` -Parameter.<br /><br /> Ist der Wert `true`, gibt dies an, dass Sie nur den öffentlichen Schlüssel in die Assembly platzieren möchten. Ist der Wert `false`, gibt dies an, dass die Assembly vollständig signiert werden soll.<br /><br /> Dieser Parameter hat nur dann Auswirkungen, wenn Sie ihn entweder mit dem `KeyFile`- oder `KeyContainer`-Parameter verwenden.<br /><br /> Weitere Informationen finden Sie unter [-delaysign (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
 | `Deterministic` | Optionaler `Boolean` -Parameter.<br/><br/> Wenn dieser auf `true` festgelegt ist, gibt der Compiler eine Assembly aus, deren Inhalt im Binärformat über Kompilierungen identisch ist, wenn die Eingaben identisch sind.<br/><br/>Weitere Informationen finden Sie unter [-deterministic (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Optionaler `String` -Parameter.<br /><br /> Gibt die Liste der zu deaktivierenden Warnungen an. Weitere Informationen finden Sie unter [-nowarn (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Optionaler `String` -Parameter.<br /><br /> Verarbeitet Dokumentationskommentare zu einer XML-Datei. Weitere Informationen finden Sie unter [-doc (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |

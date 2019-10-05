@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0745506bfe55305c9c3a55f57823e5d80c453006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14061c0f54593a2cb9b591d39cb46a433b0e34be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796732"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232308"
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Delegaten müssen an Methoden mit konsistenter Transparenz gebunden werden.
 
@@ -27,21 +27,21 @@ ms.locfileid: "62796732"
 |Unterbrechende Änderung|Breaking|
 
 > [!NOTE]
-> Diese Warnung wird nur auf Code angewendet werden, die die CoreCLR (die Version der CLR, die speziell für Silverlight-Webanwendungen ist) ausgeführt wird.
+> Diese Warnung wird nur auf Code angewendet, der CoreCLR (die Version der CLR, die für Silverlight-Webanwendungen spezifisch ist) ausgeführt wird.
 
 ## <a name="cause"></a>Ursache
 
-Diese Warnung wird ausgelöst, auf eine Methode, die einen Delegaten gebunden, die mit der <xref:System.Security.SecurityCriticalAttribute> an eine Methode, die transparent oder mit markiert, die <xref:System.Security.SecuritySafeCriticalAttribute>. Die Warnung wird auch für eine Methode ausgelöst, die einen transparenten oder sicherheitsrelevanten Delegaten an eine wichtige Methode bindet.
+Diese Warnung wird für eine Methode ausgelöst, die einen mit dem <xref:System.Security.SecurityCriticalAttribute> markierten Delegaten an eine Methode bindet, die transparent oder <xref:System.Security.SecuritySafeCriticalAttribute>mit markiert ist. Die Warnung wird auch für eine Methode ausgelöst, die einen transparenten oder sicherheitsrelevanten Delegaten an eine wichtige Methode bindet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Delegattypen und die Methoden, denen sie zum Binden müssen konsistenten Transparenz aufweisen. Transparent und sicher zugänglich Delegaten können nur an andere Methoden transparenten oder sicherheitsrelevanten binden. Auf ähnliche Weise können kritische Delegaten nur an wichtige Methoden gebunden werden. Diese Bindungsregeln stellen Sie sicher, dass der einzige Code, der eine Methode über einen Delegaten aufrufen können auch die gleiche Methode direkt aufgerufen haben kann. Beispielsweise verhindern Bindungsregeln transparenten Code kritischen Code direkt über einen transparenten Delegaten aufrufen.
+Delegattypen und die Methoden, an die Sie gebunden werden, müssen über eine konsistente Transparenz verfügen. Transparente und sicherheitskritische Delegaten können nur an andere transparente oder sichere kritische Methoden gebunden werden. Ebenso können kritische Delegaten nur an kritische Methoden gebunden werden. Diese Bindungs Regeln stellen sicher, dass der einzige Code, der eine Methode über einen Delegaten aufrufen kann, auch dieselbe Methode direkt aufgerufen hätte. Bindungs Regeln verhindern z. b., dass transparenter Code kritischen Code direkt über einen transparenten Delegaten aufrufen kann.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Warnung zu beheben, ändern Sie die Transparenz des Delegaten oder der Methode, die es gebunden wird, damit die Transparenz der beiden sind äquivalent.
+Um einen Verstoß gegen diese Warnung zu beheben, ändern Sie die Transparenz des Delegaten oder der Methode, die gebunden wird, damit die Transparenz der beiden Bindungen gleichwertig ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 

@@ -1,27 +1,28 @@
 ---
 title: Dialogfeld "Erweiterte Buildeinstellungen" (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745014"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186791"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Dialogfeld "Erweiterte Buildeinstellungen" (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Dialogfeld „Erweiterte Buildeinstellungen“ (C#)
 
-Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Designers**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekte.
+Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Designers**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld kann nur für C#-Projekte verwendet werden.
 
 ## <a name="general"></a>Allgemein
 
@@ -29,19 +30,19 @@ Die folgenden Optionen geben Ihnen die Möglichkeit, allgemeine erweiterte Einst
 
 **Sprachversion**
 
-Gibt die Version der zu verwendenden Sprache an. Die Funktionsgruppe ist für jede Version anders, weshalb diese Option dazu verwendet werden kann, den Compiler dazu zu zwingen, nur eine Untergruppe von implementierten Funktionen zu erlauben oder nur die Funktionen zu aktivieren, die mit einem bereits vorhandenen Standard kompatibel sind. Diese Einstellung hat folgende Optionen:
+::: moniker range=">=vs-2019"
 
-- **default**
+Link zu [/langversion (C#-Compileroptionen](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)). Dort finden Sie Informationen, wie eine Standardsprachversion basierend auf dem Zielframework eines Projekts ausgewählt wird.
 
-   Setzt die aktuellen Version als Ziel.
+::: moniker-end
 
-- **ISO-1** und **ISO-2**
+::: moniker range="vs-2017"
 
-   Als Ziel werden jeweils die Standardfunktionen von ISO-1 und ISO-2 verwendet.
+Gibt die Version der zu verwendenden Sprache an. Die Funktionsgruppe ist für jede Version anders, weshalb diese Option dazu verwendet werden kann, den Compiler dazu zu zwingen, nur eine Untergruppe von implementierten Funktionen zu erlauben oder nur die Funktionen zu aktivieren, die mit einem bereits vorhandenen Standard kompatibel sind.
 
-- **C# [Versionsnummer]**
+Der Standardwert lautet C# 7.0.
 
-   Als Ziel wird eine bestimmte Version von C# verwendet. Weitere Informationen finden Sie unter [/langversion (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Bericht für interne Compilerfehler**
 

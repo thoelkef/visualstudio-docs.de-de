@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b26d92ca63a94cac7e293a688b1c7b3331586877
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546032"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234790"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: AutoDual ClassInterfaceType nicht verwenden.
 
@@ -34,29 +34,29 @@ ms.locfileid: "62546032"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Component Object Model (COM) sichtbarer Typ ist mit markiert die <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attributsatz auf die `AutoDual` Wert <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+Ein Component Object Model sichtbarer Typ (com) ist mit dem <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut gekennzeichnet, `AutoDual` das auf <xref:System.Runtime.InteropServices.ClassInterfaceType>den Wert von festgelegt ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Typen, die eine duale Schnittstelle verwenden, ermöglichen Clients die Bindung an ein bestimmtes Schnittstellenlayout. Änderungen an einer zukünftigen Version des Layouts des Typs oder eines Basistyps führen zur Aufhebung der Verbindung zu COM-Clients, die eine Bindung zu der Schnittstelle haben. In der Standardeinstellung Wenn die <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> Attribut nicht angegeben wird, eine nur-Dispatch-Schnittstelle wird verwendet.
+Typen, die eine duale Schnittstelle verwenden, ermöglichen Clients die Bindung an ein bestimmtes Schnittstellenlayout. Änderungen an einer zukünftigen Version des Layouts des Typs oder eines Basistyps führen zur Aufhebung der Verbindung zu COM-Clients, die eine Bindung zu der Schnittstelle haben. Wenn das <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut nicht angegeben wird, wird standardmäßig eine Dispatch-Schnittstelle verwendet.
 
- Sofern nicht anders markiert ist, werden alle öffentliche nicht generische Typen für COM sichtbar; alle nicht öffentliche und generische Typen sind für COM nicht sichtbar
+Sofern nicht anders gekennzeichnet, sind alle öffentlichen nicht generischen Typen für com sichtbar. alle nicht öffentlichen und generischen Typen sind für com nicht sichtbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert von der <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> -Attribut auf die `None` Wert <xref:System.Runtime.InteropServices.ClassInterfaceType> und definieren Sie explizit die Schnittstelle.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> des-Attributs in <xref:System.Runtime.InteropServices.ClassInterfaceType> den `None` Wert von, und definieren Sie die-Schnittstelle explizit.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie eine Warnung dieser Regel nicht, es sei denn, es sicher ist, dass das Layout des Typs und dessen Basistypen in einer zukünftigen Version nicht geändert werden.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel, es sei denn, es ist sicher, dass sich das Layout des Typs und der zugehörigen Basis Typen in einer zukünftigen Version nicht ändern.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Klasse, die gegen die Regel und eine erneute Deklaration der Klasse, um eine explizite Schnittstelle verwenden.
+Das folgende Beispiel zeigt eine Klasse, die gegen die Regel verstößt, und eine erneute Deklaration der-Klasse, um eine explizite-Schnittstelle zu verwenden.
 
- [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
+[!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+[CA1403: Automatische Layouttypen sollten nicht für com sichtbar sein](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412: ComSource-Schnittstellen als IDispatch markieren](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+[CA1412: ComSource-Schnittstellen als IDispatch markieren](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>Siehe auch
 

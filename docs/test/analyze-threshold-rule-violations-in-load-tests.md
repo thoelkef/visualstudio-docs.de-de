@@ -15,12 +15,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823083"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918626"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
@@ -32,9 +32,9 @@ Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** i
 
 ## <a name="view-threshold-violations-in-the-table"></a>Anzeigen von Schwellenwertverletzungen in der Tabelle
 
- In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen angezeigt. Die Tabelle enthält folgende Spalten:
+In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen angezeigt. Die Tabelle enthält folgende Spalten:
 
-|Spalte|Beschreibung|In der Standardeinstellung angezeigt|
+|Spalte|BESCHREIBUNG|In der Standardeinstellung angezeigt|
 |-|-|-|
 |zeit|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
 |Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**:  Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
@@ -46,33 +46,33 @@ Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** i
 > [!NOTE]
 > Sie können die Tabelle sortieren, indem Sie die Spaltenüberschriften auswählen.
 
- Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Anzeigen von Schwellenwertverletzungen im Indikatorenfenster
 
- Schwellenwertverletzungen können im **Indikatorenfenster** in der Struktur angezeigt werden, in der die Leistungsindikatoren für den Auslastungstest aufgeführt sind. Schwellenwertverletzungen werden im **Indikatorenfenster** durch Symbole dargestellt. Folgende Symbole werden verwendet:
+Schwellenwertverletzungen können im **Indikatorenfenster** in der Struktur angezeigt werden, in der die Leistungsindikatoren für den Auslastungstest aufgeführt sind. Schwellenwertverletzungen werden im **Indikatorenfenster** durch Symbole dargestellt. Folgende Symbole werden verwendet:
 
- Folgende Symbole werden verwendet:
+Folgende Symbole werden verwendet:
 
- ![Keine Schwellenwertverletzung](../test/media/icon_ltest_1.gif) Keine Schwellenwertverletzung.
+![Keine Schwellenwertverletzung](../test/media/icon_ltest_1.gif) Keine Schwellenwertverletzung.
 
- ![Kritische Schwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_2.gif) Eine kritische Schwellenwertverletzung ist im letzten Intervall aufgetreten.
+![Kritische Schwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_2.gif) Eine kritische Schwellenwertverletzung ist im letzten Intervall aufgetreten.
 
- ![Kritische Schwellenwertverletzung in einem vorherigen Intervall](../test/media/icon_ltest_3.gif) Eine kritische Schwellenwertverletzung ist in einem vorherigen Intervall aufgetreten.
+![Kritische Schwellenwertverletzung in einem vorherigen Intervall](../test/media/icon_ltest_3.gif) Eine kritische Schwellenwertverletzung ist in einem vorherigen Intervall aufgetreten.
 
- ![Warnschwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_4.gif) Eine Warnung für eine Schwellenwertverletzung ist im letzten Intervall aufgetreten.
+![Warnschwellenwertverletzung im letzten Intervall](../test/media/icon_ltest_4.gif) Eine Warnung für eine Schwellenwertverletzung ist im letzten Intervall aufgetreten.
 
- ![Warnschwellenwertverletzung in einem vorherigen Intervall](../test/media/icon_ltest_5.gif) Eine Warnung für eine Schwellenwertverletzung ist in einem vorherigen Intervall aufgetreten.
+![Warnschwellenwertverletzung in einem vorherigen Intervall](../test/media/icon_ltest_5.gif) Eine Warnung für eine Schwellenwertverletzung ist in einem vorherigen Intervall aufgetreten.
 
- Optional können Schwellenwertverletzungen auch im Diagramm angezeigt werden. Das Schwellenwertsymbol wird im Diagramm neben dem Datenpunkt angezeigt, bei dem die Schwellenwertverletzung aufgetreten ist.
+Optional können Schwellenwertverletzungen auch im Diagramm angezeigt werden. Das Schwellenwertsymbol wird im Diagramm neben dem Datenpunkt angezeigt, bei dem die Schwellenwertverletzung aufgetreten ist.
 
- In der Indikatorstruktur werden Symbole für Schwellenwertverletzungen von den einzelnen Indikatorknoten auf den Stammknoten übertragen. So werden Sie auf Verletzungen von Indikatoren hingewiesen, die möglicherweise nicht in der Struktur sichtbar sind, wenn diese nicht erweitert wurde.
+In der Indikatorstruktur werden Symbole für Schwellenwertverletzungen von den einzelnen Indikatorknoten auf den Stammknoten übertragen. So werden Sie auf Verletzungen von Indikatoren hingewiesen, die möglicherweise nicht in der Struktur sichtbar sind, wenn diese nicht erweitert wurde.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Anzeigen von Schwellenwertverletzungen im Diagramm
 
- Schwellenwertverletzungen können im Diagramm angezeigt werden. Wie im **Indikatorenfenster** werden Schwellenwertverletzungen im Diagramm durch Symbole dargestellt. Die Symbole werden im Diagramm neben den Datenpunkten angezeigt, an denen die Schwellenwertverletzung auftrat. Wenn eine Schwellenwertverletzung für einen Indikator auftritt, der nicht im Diagramm angezeigt wird, können Sie den Indikator dem Diagramm hinzufügen, indem Sie ihn aus dem **Indikatorenfenster** in das Diagramm ziehen.
+Schwellenwertverletzungen können im Diagramm angezeigt werden. Wie im **Indikatorenfenster** werden Schwellenwertverletzungen im Diagramm durch Symbole dargestellt. Die Symbole werden im Diagramm neben den Datenpunkten angezeigt, an denen die Schwellenwertverletzung auftrat. Wenn eine Schwellenwertverletzung für einen Indikator auftritt, der nicht im Diagramm angezeigt wird, können Sie den Indikator dem Diagramm hinzufügen, indem Sie ihn aus dem **Indikatorenfenster** in das Diagramm ziehen.
 
- Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md).
+Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688157"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890467"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#\#
 
@@ -39,7 +39,7 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
 1. Auf der **Datei** Menü wählen **neu** , und klicken Sie dann auf **neues Projekt**.
 
-2. In der **neues Projekt** Dialogfeld **Projekttyp**Option **Visual C#-**.
+2. In der **neues Projekt** Dialogfeld **Projekttyp**Option **Visual C#-** .
 
 3. In der **Vorlagen** wählen **Klassenbibliothek**.
 
@@ -196,7 +196,8 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
 2. Vergeben Sie für den Namen Program.cs eine aussagekräftigere Bezeichnung, zum Beispiel TestConsole.cs.
 
-    **Beachten Sie** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ändert automatisch die Klassendeklaration in TestConsole.cs entsprechend den neuen Dateinamen an.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passt die Klassendeklaration in TestConsole.cs automatisch an den neuen Dateinamen an.
 
 3. Fügen Sie in TestConsole.cs den `using`-Anweisungen den folgenden Code hinzu:
 
@@ -234,7 +235,7 @@ Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen 
 
 1. Wählen Sie im Menü **Datei** die Option **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
 
-2. In der **neues Projekt hinzufügen** Dialogfeld **Projekttyp**Option **Visual C#-**.
+2. In der **neues Projekt hinzufügen** Dialogfeld **Projekttyp**Option **Visual C#-** .
 
 3. In der **Vorlagen** wählen **Klassenbibliothek**.
 

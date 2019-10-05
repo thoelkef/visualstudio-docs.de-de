@@ -1,93 +1,86 @@
 ---
 title: Einschließen eines NuGet-Pakets in Ihr Projekt
-description: In diesem Dokument wird beschrieben, wie ein NuGet-Paket in ein Xamarin-Projekt eingeschlossen wird. Es veranschaulicht das Suchen und Herunterladen von Paketen und bietet eine Einführung in die IDE-Integrationsfunktionen.
+description: In diesem Dokument wird erläutert, wie Sie ein NuGet-Paket mithilfe von Visual Studio für Mac in ein Projekt einfügen. Es veranschaulicht das Suchen und Herunterladen von Paketen und bietet eine Einführung in die IDE-Integrationsfunktionen.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 04/24/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.custom: video
-ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.custom: conceptual
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691399"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213685"
 ---
-# <a name="include-a-nuget-package-in-your-project"></a>Einschließen eines NuGet-Pakets in Ihr Projekt
+# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installieren und Verwalten von NuGet-Paketen in Visual Studio für Mac
 
-NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung und ist in Visual Studio für Mac und Visual Studio für Windows integriert. Sie können nach Paketen suchen und diese zu Ihren Xamarin-, .NET Core- und ASP.NET-Projekten mithilfe beider IDEs hinzufügen.
+Über die Benutzeroberfläche des NuGet-Paket-Managers in Visual Studio für Mac können Sie auf einfache Weise NuGet-Pakete in Projekten und Projektmappen installieren, deinstallieren und aktualisieren. Sie können nach Paketen suchen und diese zu Ihren .NET Core-, ASP.NET Core- und Xamarin-Projekten hinzufügen.
 
 Dieser Artikel befasst sich mit dem Einschließen eines NuGet-Pakets in ein Projekt und veranschaulicht die Toolkette, durch die der Prozess nahtlos abläuft.
 
-## <a name="nuget-in-visual-studio-for-mac"></a>NuGet in Visual Studio für Mac
+Eine Einführung in die Verwendung von NuGet in Visual Studio für Mac finden Sie im [Schnellstart: Installieren und Verwenden eines Pakets in Visual Studio für Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac).
 
-Zum Veranschaulichen der NuGet-Paketfunktionen erläutern wir zunächst das Erstellen einer neuen Anwendung und das Hinzufügen eines Pakets zu dieser. Anschließend behandeln wir die IDE-Features, die Sie beim Verwalten von Paketen unterstützen.
+## <a name="find-and-install-a-package"></a>Suchen und Installieren eines Pakets
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+1. Klicken Sie bei einem in Visual Studio für Mac geöffneten Projekt im **Lösungspad** mit der rechten Maustaste auf den Ordner **Abhängigkeiten** (**Pakete**, wenn Sie ein Xamarin-Projekt verwenden), und wählen Sie dann **NuGet-Pakete verwalten...** aus.
 
-Erstellen Sie zunächst ein Projekt namens `HelloNuget`, wie unten gezeigt. Dieses Beispiel zeigt die Vorlage für eine Single-View-Anwendung unter iOS, allerdings funktioniert jeder unterstützte Projekttyp:
+    ![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-packages-menu.png)
 
-![Erstellen eines neuen iOS-Projekts](media/nuget-walkthrough-NewProject.png)
+2. Daraufhin wird das Fenster **NuGet-Pakete verwalten** geöffnet. Stellen Sie sicher, dass `nuget.org` für das Dropdownfeld für die Quelle in der oberen linken Ecke des Dialogfelds festgelegt ist.
 
-## <a name="adding-a-package"></a>Hinzufügen eines Pakets
+    ![Liste von NuGet-Paketen](media/nuget-walkthrough-add-packages1.png)
 
-Wenn das Projekt in Visual Studio für Mac geöffnet ist, klicken Sie mit der rechten Maustaste auf den Ordner **Pakete** im **Lösungspad**, und klicken Sie dann auf **NuGet-Pakete hinzufügen**:
+3. Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel `EntityFramework`, zu finden. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche **Paket hinzufügen**, um die Installation zu starten.
 
-![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-PackagesMenu.png)
+    ![Hinzufügen des EntityFramework-NuGet-Pakets](media/nuget-walkthrough-add-packages2.png)
 
-Dadurch wird das Fenster **Pakete hinzufügen** geöffnet. Versichern Sie sich, dass das Dropdownmenü für die Quelle auf `nuget.org` festgelegt ist:
+4. Sobald das Paket heruntergeladen wurde, wird es Ihrem Projekt hinzugefügt. Die Projektmappe ändert sich, je nachdem, welche Art von Projekt Sie bearbeiten:
 
-![Dropdownmenü für die Datenquellenliste](media/nuget-walkthrough-Source.png)
+    **Xamarin-Projekte**
+    * Der Knoten **Referenzen** wird eine Liste aller Assemblys enthalten, die Teil eines NuGet-Pakets sind.
+    * Der Knoten **Pakete** zeigt alle NuGet-Pakete an, die Sie heruntergeladen haben. Sie können Pakete aus dieser Liste aktualisieren oder entfernen.
+    
+    **.NET Core-Projekte**
 
-Wenn das Fenster geöffnet ist, wird eine Liste von Paketen aus der Standardpaketquelle (nuget.org) geladen. Die ersten Ergebnisse sehen wie folgt aus:
-
-![Liste von NuGet-Paketen](media/nuget-walkthrough-AddPackages1.png)
-
-Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel  `azure mobile`, zu suchen. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche  **Paket hinzufügen** , um die Installation zu starten.
-
-![Hinzufügen eines Azure-NuGet-Pakets](media/nuget-walkthrough-AddPackages2.png)
-
-Sobald das Paket heruntergeladen wurde, wird es Ihrem Projekt hinzugefügt. Die Projektmappe wird sich wie folgt ändern:
-
-* Der Knoten **Referenzen** wird eine Liste aller Assemblys enthalten, die Teil eines NuGet-Pakets sind.
-* Der Knoten **Pakete** zeigt alle NuGet-Pakete an, die Sie heruntergeladen haben. Sie können Pakete aus dieser Liste aktualisieren oder entfernen.
-* Die Datei **packages.config** wird Ihrem Projekt hinzugefügt. Diese XML-Datei wird von der IDE verwendet, um nachzuverfolgen, auf welche Paketversionen in diesem Projekt verwiesen wird. Diese Datei sollte nicht manuell bearbeitet werden, aber Sie sollten sie in der Versionskontrolle behalten. Beachten Sie, dass die Datei „project.json“ statt der Datei „packages.config“ verwendet werden kann. Bei der Datei „project.json“ handelt es sich um ein neues Dateiformat für Pakete, das mit NuGet 3 eingeführt wurde und die transitive Wiederherstellung unterstützt. Weitere Informationen zu „project.json“ finden Sie in der [NuGet documentation (NuGet-Dokumentation)](https://docs.microsoft.com/NuGet/Schema/Project-Json). Die Datei „project.json“ muss manuell hinzugefügt und das Projekt geschlossen und erneut geöffnet werden, bevor diese in Visual Studio für Mac verwendet werden kann.
+    * Der Knoten **Abhängigkeiten > NuGet** zeigt alle NuGet-Pakete an, die Sie heruntergeladen haben. Sie können Pakete aus dieser Liste aktualisieren oder entfernen.
 
 ## <a name="using-nuget-packages"></a>Verwenden von NuGet-Paketen
 
 Sobald das NuGet-Paket hinzugefügt und die Projektverweise aktualisiert wurden, können Sie so mit der API programmieren, wie Sie es mit jedem anderen Projektverweis tun würden.
 
-Vergewissern Sie sich, dass Sie alle erforderlichen  `using` -Anweisungen am Anfang Ihrer Datei hinzufügen:
+Versichern Sie sich, dass sie alle erforderlichen `using`-Anweisungen zum Anfang Ihrer Datei hinzufügen:
 
 ```csharp
 using Newtonsoft.Json;
 ```
 
-Die meisten NuGet-Pakete enthalten zusätzliche Informationen, zum Beispiel eine Infodatei oder einen Projektseitenlink zur NuGet-Quelle. Sie können diesen Link normalerweise in den Paketinformationen auf der Seite „Pakete hinzufügen“ finden:
-
-[View Project Page link (Anzeigen des Projektseitenlinks)](media/nuget-walkthrough-project-page.png)
-
 <a name="Package_Updates" class="injected"></a>
 
-## <a name="package-updates"></a>Paketaktualisierungen
+## <a name="updating-packages"></a>Aktualisieren von Paketen
 
-Paketupdates können entweder alle auf einmal durchgeführt werden, indem Sie mit der rechten Maustaste auf den Knoten **Pakete** klicken, oder einzeln, indem Sie auf jede Komponente klicken.
+Paketupdates können entweder alle auf einmal durchgeführt werden, indem Sie mit der rechten Maustaste auf den Knoten **Abhängigkeiten** (**Pakete** bei Xamarin-Projekten) klicken, oder einzeln, indem Sie auf jedes Paket klicken. Wenn eine neue Version eines NuGet-Pakets verfügbar ist, wird ein Symbol für die Aktualisierung ![NACH-OBEN-TASTE mit Kreis](media/nuget-walkthrough-update-icon.png) angezeigt.
 
-Klicken Sie mit der rechten Maustaste auf **Pakete**, um auf das Kontextmenü zuzugreifen:
+Klicken Sie mit der rechten Maustaste auf **Abhängigkeiten**, um das Kontextmenü anzuzeigen, und wählen Sie **Aktualisieren** aus, um alle Pakete zu aktualisieren:
 
-![Paketmenü](media/nuget-walkthrough-PackagesMenu.png)
+![Paketmenü](media/nuget-walkthrough-packages-menu-update.png)
 
-* **NuGet-Pakete hinzufügen**: Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
+* **NuGet-Pakete verwalten:** Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
 * **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
 * **Wiederherstellen**: Lädt fehlende Pakete herunter (ohne bestehende Pakete auf neuere Versionen zu aktualisieren).
 
 Die Optionen „Aktualisieren“ und „Wiederherstellen“ sind auch auf Projektmappenebene verfügbar und wirken sich auf alle Projekte in der Projektmappe aus.
 
-Sie können auch mit der rechten Maustaste auf die einzelnen Pakete klicken, um auf das Kontextmenü zuzugreifen:
+Im Lösungspad wird angezeigt, welche Version eines Pakets derzeit installiert ist, und Sie können per Rechtsklick ein Update für das Paket durchführen.
 
-![Paketmenü](media/nuget-walkthrough-PackageMenu.png)
+![Paketmenü mit den Optionen „Update“, „Entfernen“ und „Aktualisieren“](media/nuget-walkthrough-PackageMenu.png)
 
-* **Versionsnummer**: Die Versionsnummer ist ein deaktiviertes Menüelement, das nur zu Informationszwecken dient.
+Außerdem wird neben dem Paketnamen eine Benachrichtigung angezeigt, wenn eine neue Version für ein Paket zur Verfügung steht, damit Sie entscheiden können, ob Sie ein Update durchführen möchten.
+
+![Benachrichtigung bei verfügbarer neuen Paketversion](media/nuget-walkthrough-package-update-available.png)
+
+Im angezeigten Menü stehen die folgenden zwei Optionen zur Auswahl:
+
 * **Aktualisieren**: Überprüft den Quellserver und lädt eine neuere Version herunter (falls vorhanden).
 * **Entfernen**: Entfernt das Paket aus diesem Projekt und die relevanten Assemblys aus den Projektverweisen.
 

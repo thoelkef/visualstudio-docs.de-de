@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204005"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder an
   
  \<VSTemplate>  
  \<TemplateData>  
- \<Icon>  
+ \<Symbol ">  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -47,8 +47,8 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder an
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, der angibt, die Visual Studio-Paket-ID.|  
-|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt an, die Visual Studio-Ressourcen-ID.|  
+|`Package`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|  
+|`ID`|Optionales Attribut, für erweiterte Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
@@ -60,7 +60,7 @@ Gibt den Pfad und den Dateinamen der Bilddatei, die als Symbol dient entweder an
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
 ## <a name="text-value"></a>Textwert  
- Ein Textwert ist erforderlich, es sei denn, die `Package` und `ID` Attribute verwendet werden.  
+ Ein Textwert ist erforderlich, es sei denn, die Attribute `Package` und `ID` werden verwendet.  
   
  Der Text gibt den Pfad und Dateiname des Vorlagensymbols, die in angezeigt werden die **neues Projekt** Dialogfeld.  
   

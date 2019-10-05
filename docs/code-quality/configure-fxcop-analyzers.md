@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren Sie FxCop-Analysen, die mit "editorconfig"
-ms.date: 03/11/2019
+title: Konfigurieren von FxCop-Analyzern mithilfe von Editor config
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
@@ -9,63 +9,74 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac751b7ec130b6bfbb18752c02b491b6c342f172
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7619b040343720198e190f551741f565e62fa145
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816915"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186399"
 ---
-# <a name="configure-fxcop-analyzers"></a>Konfigurieren Sie FxCop-Analysen
+# <a name="configure-fxcop-analyzers"></a>Konfigurieren von FxCop-Analyzern
 
-Die [FxCop-Analysetools](install-fxcop-analyzers.md) bestehen aus den Regeln für die wichtigsten "FxCop" aus der Analyse von statischem Code, in der Roslyn-Analysetools konvertiert. Sie können die FxCop-Code-Analyzer auf zwei Arten konfigurieren:
-
-- Mit einem [Regelsatz](#fxcop-analyzer-rule-sets), wodurch aktivieren oder deaktivieren die Regel aus, und legen Sie den Schweregrad für die einzelnen Verletzungen.
-
-- Ab Version 2.6.3, der die [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet-Paket, über eine [editorconfig-Datei](#editorconfig-file). Die [konfigurierbaren Optionen](fxcop-analyzer-options.md) können Sie, welche Teile Optimieren Ihrer Codebasis, um zu analysieren.
+Das [Paket FxCop](install-fxcop-analyzers.md) Analyzer besteht aus den wichtigsten "FxCop"-Regeln aus der Legacy-Analyse, die in .NET Compiler Platform-basierte Code Analysen konvertiert wurden. Bei bestimmten FxCop-Regeln können Sie durch [konfigurierbare Optionen](fxcop-analyzer-options.md)verfeinern, auf welche Teile Ihrer Codebasis Sie angewendet werden sollen. Jede Option wird durch Hinzufügen eines Schlüssel-Wert-Paars zu einer [Editor config](https://editorconfig.org) -Datei angegeben. Eine Konfigurationsdatei kann [für ein projektspezifisch](#per-project-configuration) sein oder von zwei oder mehr Projekten [gemeinsam genutzt](#shared-configuration) werden.
 
 > [!TIP]
-> Informationen zu den Unterschieden zwischen statischen FxCop-Codeanalyse und FxCop-Analysen, finden Sie unter [FxCop-Analyzer – häufig gestellte Fragen](fxcop-analyzers-faq.md).
-
-## <a name="fxcop-analyzer-rule-sets"></a>FxCop-Analyse-Regelsätze
-
-Eine Möglichkeit zum Konfigurieren von FxCop-Analysen wird mithilfe eines XML- *Regelsatz*. Ein Regelsatz ist eine Gruppierung von Codeanalyseregeln, die gezielte Probleme und bestimmte Bedingungen identifizieren. Regelsätze können Sie die aktivieren oder deaktivieren die Regel aus, und legen Sie den Schweregrad für die einzelnen Verletzungen.
-
-Das NuGet-Paket von FxCop-Analyzer enthält vordefinierte Regel für den folgenden Regelkategorien:
-
-- Entwurf
-- Dokumentation
-- Verwaltbarkeit
-- Benennen
-- Leistung
-- Zuverlässigkeit
-- Sicherheit
-- Verwendung
-
-Weitere Informationen finden Sie unter [von Regelsätzen für Roslyn-Analysetools](analyzer-rule-sets.md).
-
-## <a name="editorconfig-file"></a>EditorConfig-Datei
-
-Sie können die Analyzer-Regeln konfigurieren, durch das Hinzufügen von Schlüssel-Wert-Paare, ein [editorconfig](https://editorconfig.org) Datei. Eine Konfigurationsdatei möglich [für ein Projekt spezifisch](#per-project-configuration) oder [freigegebenen](#shared-configuration) zwischen mindestens zwei Projekte.
-
-### <a name="per-project-configuration"></a>Pro-Projektkonfiguration
-
-Um editorconfig-basierte analysekonfiguration für ein bestimmtes Projekt zu aktivieren, fügen eine *editorconfig* Datei zum Stammverzeichnis des Projekts.
-
-> [!TIP]
-> Sie können eine editorconfig-Datei zu Ihrem Projekt hinzufügen, indem Sie mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer** und **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** Fenster eingeben **"editorconfig"** in das Suchfeld. Wählen Sie die **Editorconfig-Datei (Standard)** Vorlage, und wählen Sie **hinzufügen**.
+> Sie können dem Projekt eine Editor config-Datei hinzufügen, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und**Neues Element** **Hinzufügen** > auswählen. Geben Sie im Fenster **Neues Element hinzufügen** im Suchfeld den Text **Editor config** ein. Wählen Sie die Vorlage **Editor config file (Standard)** aus, und wählen Sie **Hinzufügen**aus.
 >
-> ![Editorconfig-Element zum Projekt in Visual Studio hinzufügen](media/add-editorconfig-file.png)
+> ![Editor config-Datei dem Projekt in Visual Studio hinzufügen](media/add-editorconfig-file.png)
 
-Derzeit besteht keine hierarchische Unterstützung für "kombiniert" editorconfig-Dateien vorhanden sind auf anderen Verzeichnis, beispielsweise die Projektmappen- und Projektdateien-Ebene.
+::: moniker range=">=vs-2019"
 
-### <a name="shared-configuration"></a>Freigegebene Konfiguration
+Informationen zum Konfigurieren des schwere Grads einer Regel (z. b. ob es sich um einen Fehler oder eine Warnung handelt) finden Sie unter [Festlegen des Regel schwere Grads in einer Editor config-Datei](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Sie können auch einen der integrierten [Regelsätze](analyzer-rule-sets.md) auswählen, um eine Kategorie von Regeln schnell zu aktivieren oder zu deaktivieren.
 
-Sie können eine editorconfig-Datei für die Konfiguration des Analysemoduls zwischen zwei oder mehr Projekten freigeben, aber es ist einige zusätzliche Schritte erforderlich.
+::: moniker-end
 
-1. Speichern Sie die *editorconfig* in einen allgemeinen Speicherort.
+Im restlichen Teil dieses Artikels wird die allgemeine Syntax der [Optionen erläutert,](fxcop-analyzer-options.md) die die Anwendung von FxCop-Regeln verfeinern.
 
-2. Erstellen Sie eine *props* -Datei mit dem folgenden Inhalt:
+> [!NOTE]
+> Es ist nicht möglich, ältere FxCop-Regeln mithilfe einer Editor config-Datei zu konfigurieren. Informationen zu den Unterschieden zwischen Legacy-und FxCop-Analyzern finden Sie unter Häufig gestellte Fragen zur [FxCop](fxcop-analyzers-faq.md)-Analyse.
+
+## <a name="option-scopes"></a>Options Bereiche
+
+Jede Option zum verfeinern kann für alle Regeln, für eine Kategorie von Regeln (z. b. Benennung oder Entwurf) oder für eine bestimmte Regel konfiguriert werden.
+
+### <a name="all-rules"></a>Alle Regeln
+
+Die Syntax zum Konfigurieren einer Option für *alle* Regeln lautet wie folgt:
+
+|Syntax|Beispiel|
+|-|-|
+| dotnet_code_quality. OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
+
+### <a name="category-of-rules"></a>Kategorie von Regeln
+
+Die Syntax zum Konfigurieren einer Option für eine *Kategorie* von Regeln (z. b. Benennung, Entwurf oder Leistung) lautet wie folgt:
+
+|Syntax|Beispiel|
+|-|-|
+| dotnet_code_quality. Rulecategory. optionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+
+### <a name="specific-rule"></a>Bestimmte Regel
+
+Die Syntax zum Konfigurieren einer Option für eine *bestimmte* Regel lautet wie folgt:
+
+|Syntax|Beispiel|
+|-|-|
+| dotnet_code_quality. RuleId. optionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+
+## <a name="per-project-configuration"></a>Konfiguration pro Projekt
+
+Fügen Sie dem Stammverzeichnis des Projekts eine *Editor config* -Datei hinzu, um die Editor config-basierte Analyse Konfiguration für ein bestimmtes Projekt zu aktivieren.
+
+Zurzeit gibt es keine hierarchische Unterstützung für das Kombinieren von Editor config-Dateien, die auf unterschiedlichen Verzeichnis Ebenen vorhanden sind, z. b. die Projekt Mappe und die Projektebene.
+
+## <a name="shared-configuration"></a>Freigegebene Konfiguration
+
+Sie können eine Editor config-Datei für die Konfiguration von FxCop Analyzer zwischen zwei oder mehr Projekten freigeben, es sind jedoch einige zusätzliche Schritte erforderlich.
+
+1. Speichern Sie die *Editor config* -Datei an einem gemeinsamen Speicherort.
+
+2. Erstellen Sie eine *.* -Eigenschaften Datei mit folgendem Inhalt:
 
    ```xml
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -78,7 +89,7 @@ Sie können eine editorconfig-Datei für die Konfiguration des Analysemoduls zwi
    </Project>
    ```
 
-3. Fügen Sie eine Zeile in Ihrer *csproj* oder *vbproj* zu importierende Datei die *props* Datei, die Sie im vorherigen Schritt erstellt haben. Diese Zeile muss platziert werden, vor dem alle Zeilen mit dem Importieren den FxCop-Analyzer *props* Dateien. Wenn Ihre .props-Datei heißt beispielsweise *editorconfig.props*:
+3. Fügen Sie der *csproj* -oder *vbproj* -Datei eine Zeile hinzu, um die im vorherigen Schritt erstellte *.* -Datei zu importieren. Diese Zeile muss vor allen Zeilen platziert werden, in denen die FxCop Analyzer *.* -Eigenschaften Dateien importiert werden. Beispiel: die Datei ".-Eigenschaften" hat den Namen " *Editor config.* -Eigenschaften":
 
    ```xml
    ...
@@ -87,40 +98,14 @@ Sie können eine editorconfig-Datei für die Konfiguration des Analysemoduls zwi
    ...
    ```
 
-4. Laden Sie das Projekt ein.
+4. Laden Sie das Projekt neu.
 
 > [!NOTE]
-> Sie können keine vorheriger FxCop-Regeln (statische Codeanalyse FxCop) konfigurieren, mithilfe einer editorconfig-Datei.
-
-## <a name="option-scopes"></a>Option-Bereiche
-
-Jede Option kann für alle Regeln, für eine Kategorie von Regeln (z. B. "Naming" oder "Entwurf") oder für eine bestimmte Regel konfiguriert werden.
-
-### <a name="all-rules"></a>Alle Regeln
-
-Die Syntax für das Konfigurieren einer Option für alle Regeln lautet wie folgt aus:
-
-|Syntax|Beispiel|
-|-|-|
-| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
-
-### <a name="category-of-rules"></a>Kategorie von Regeln
-
-Die Syntax zum Konfigurieren einer Option für eine *Kategorie* von Regeln (z. B. benennen, Entwurf und Leistung) lautet wie folgt:
-
-|Syntax|Beispiel|
-|-|-|
-| dotnet_code_quality.RuleCategory.OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
-
-### <a name="specific-rule"></a>Entsprechende Regel
-
-Die Syntax für das Konfigurieren einer Option für eine bestimmte Regel lautet wie folgt aus:
-
-|Syntax|Beispiel|
-|-|-|
-| dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+> Der beliebige freigegebene Speicherort der hier beschriebenen Editor config-Datei gilt nur für die Konfiguration des Bereichs bestimmter FxCop-Analyse Regeln. Bei anderen Einstellungen, wie z. b. Schweregrad der Regel, allgemeinen Editor-Einstellungen und Codestil, muss die editorconfig-Datei immer im Projektordner oder in einem übergeordneten Ordner abgelegt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
+- [Optionen für den Regelbereich für FxCop-Analysen](fxcop-analyzer-options.md)
+- [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
 - [FxCop-Analysen](install-fxcop-analyzers.md)
+- [.Net-Codierungs Konventionen für Editor config](../ide/editorconfig-code-style-settings-reference.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f78ea4f44c48d2740df58def03a6335bce6637a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545931"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234339"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.
 
@@ -28,7 +28,7 @@ ms.locfileid: "62545931"
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Kategorie|Microsoft.Naming|
-|Unterbrechende Änderung|Unterbrechend – Wenn ausgelöst von Assemblys.<br /><br /> Nicht unterbrechend – Wenn ausgelöst von Typparametern.|
+|Unterbrechende Änderung|Unterbrechen: Wenn Assemblys ausgelöst werden.<br /><br /> Nicht unterbrechend: Wenn für Typparameter ausgelöst wird.|
 
 ## <a name="cause"></a>Ursache
 
@@ -36,19 +36,19 @@ Der Name eines Bezeichners enthält mehrere Begriffe, und mindestens einer der B
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Der Name des Bezeichners ist in Wörter unterteilt, die auf die Groß-/Kleinschreibung basieren. Jede zusammenhängende Kombination von zwei Wörtern, die von der Rechtschreibprüfung aus der Microsoft-Bibliothek aktiviert ist. Der Bezeichner erzeugt, wenn es erkannt wird, einen Verstoß gegen die Regel. Beispiele für zusammengesetzte Wörter, die dazu führen, einen Verstoß dass sind "CheckSum" und "MultiPart", die als "Checksum" und "Multipart", bzw. Groß-/Kleinschreibung beachtet werden sollten. Aufgrund von vorherigen gängige Nutzungsform werden einige Ausnahmen in der Regel erstellt, und es werden mehrere einzelne Wörter gekennzeichnet, z. B. "Toolbar" und "Filename", sollten werden Groß-/Kleinschreibung als zwei unterschiedliche Wörter (in diesem Fall "ToolBar" und "FileName").
+Der Name des Bezeichners wird in Wörter aufgeteilt, die auf der Groß-/Kleinschreibung basieren. Jede zusammenhängende Kombination aus zwei Wörtern wird von der Bibliothek der Microsoft-Rechtschreibprüfung überprüft. Wenn es erkannt wird, führt der Bezeichner zu einem Verstoß gegen die Regel. Beispiele für zusammengesetzte Wörter, die zu einer Verletzung führen, sind "Checksum" und "multipart", die als "Checksum" und "multipart" bezeichnet werden müssen. Aufgrund früherer allgemeiner Verwendung sind mehrere Ausnahmen in die Regel integriert, und es werden mehrere einzelne Wörter gekennzeichnet, z. b. "Toolbar" und "filename", die als zwei unterschiedliche Wörter (in diesem Fall "Toolbar" und "filename") geschrieben werden sollten.
 
 Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Ändern Sie den Namen, damit sie die richtige Groß-/Kleinschreibung ist.
+Ändern Sie den Namen so, dass er richtig geschrieben ist.
 
 ## <a name="language"></a>Sprache
 
-Die Rechtschreibprüfung überprüft, zurzeit nur für die Kultur auf Englisch basierenden Wörterbücher. Sie können die Kultur des Projekts in der Projektdatei ändern, durch das Hinzufügen der **CodeAnalysisCulture** Element.
+Die Rechtschreibprüfung prüft zurzeit nur auf englischsprachige Kultur Wörterbücher. Sie können die Kultur des Projekts in der Projektdatei ändern, indem Sie das Element " **codeanalysiscculture** " hinzufügen.
 
-Zum Beispiel:
+Beispiel:
 
 ```xml
 <Project ...>
@@ -57,17 +57,17 @@ Zum Beispiel:
 ```
 
 > [!IMPORTANT]
-> Wenn Sie die Kultur auf etwas anderes als eine Kultur auf Englisch basierenden festlegen, ist diese Codeanalyse-Regelsätze im Hintergrund deaktiviert.
+> Wenn Sie die Kultur auf eine andere Kultur als Englisch festlegen, wird diese Code Analyse Regel im Hintergrund deaktiviert.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn beide Teile der zusammengesetzte Begriff von der Wörterbuch erkannt werden und die Absicht ist, verwenden Sie zwei Wörter.
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn beide Teile des Verbund Worts vom Rechtschreib Wörterbuch erkannt werden und die Absicht ist, zwei Wörter zu verwenden.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1701: Zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter sollten korrekt geschrieben werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Bezeichner sollten sich um mehr als einen Fall unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Siehe auch
 

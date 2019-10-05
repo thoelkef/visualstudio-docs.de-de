@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a424e3c884d47b7deb848b418fbf0f3344d6c379
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714731"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234734"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Die COM-Registrierungsmethoden müssen übereinstimmen.
 
@@ -35,23 +35,23 @@ ms.locfileid: "66714731"
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ deklariert eine Methode, die mit der <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> Attribut deklariert jedoch keine Methode, die mit der <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> -Attribut, oder umgekehrt.
+Ein Typ deklariert eine Methode, die mit dem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> -Attribut markiert ist, aber keine Methode deklariert, die mit dem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> -Attribut markiert ist, oder umgekehrt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Für Clients zum Erstellen eines Typs .NET Component Object Model (COM) muss der Typ zuerst registriert werden. Wenn sie verfügbar ist, eine Methode, die mit der <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> -Attribut während der Registrierung zum Ausführen benutzerdefinierter Code aufgerufen wird. Eine entsprechende Methode, die mit der <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> -Attribut aufgerufen wird, bei der Aufhebung der Registrierung, der die Vorgänge von der Registrierungsmethode umzukehren.
+Damit Component Object Model (com)-Clients einen .NET-Typ erstellen können, muss der Typ zuerst registriert werden. Wenn Sie verfügbar ist, wird eine Methode, die mit dem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> -Attribut markiert ist, während des Registrierungsvorgangs aufgerufen, um benutzerdefinierten Code auszuführen. Eine entsprechende-Methode, die mit dem <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> -Attribut markiert ist, wird während der Aufhebung der Registrierung aufgerufen, um die Vorgänge der Registrierungsmethode umzukehren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen Sie die entsprechende Registrierung oder das Aufheben der Registrierung-Methode.
+Um einen Verstoß gegen diese Regel zu beheben, fügen Sie die entsprechende Registrierung oder Aufhebung der Registrierung hinzu.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
 Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt. Kommentierte Code zeigt das Update für die Verletzung.
+Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt. Der kommentierte Code zeigt die Korrektur des Verstoßes.
 
 [!code-csharp[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/CSharp/ca1410-com-registration-methods-should-be-matched_1.cs)]
 [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]
@@ -63,5 +63,5 @@ Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt. Kommentie
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
-- [Registrieren von Assemblys bei COM](/dotnet/framework/interop/registering-assemblies-with-com)
+- [Assemblys bei com registrieren](/dotnet/framework/interop/registering-assemblies-with-com)
 - [Regasm.exe (Assembly Registration-Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

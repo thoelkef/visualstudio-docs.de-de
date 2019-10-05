@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179063"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
 |**Modulpfad**|Der Pfad des Moduls, das den Typ oder die Funktion enthält.|  
 |**Quelldatei**|Die Quelldatei, die die Definition des Typs oder der Funktion enthält.|  
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Typdefinition oder der Funktion in der Quelldatei.|  
-|**Ebene**|Gibt an, ob die Daten für einen Typ oder eine Funktion gelten.|  
+|**Level**|Gibt an, ob die Daten für einen Typ oder eine Funktion gelten.|  
 |**Inklusive Speicherbelegungen**|– Bei einer Funktion die Gesamtzahl von Objekten des übergeordneten Typs, die von der Funktion erstellt wurden. Diese Zahl schließt auch Objekte mit ein, die in untergeordneten Funktionen erstellt wurden.<br />– für einen Typ: die Gesamtzahl der Instanzen des Typs, die erstellt wurden.|  
 |**Inklusive Speicherbelegungen in %**|– Bei einer Funktion der Anteil aller Objekte, die während der Profilerstellung erstellt wurden und inklusive Belegungen des übergeordneten Typs dieser Funktion waren.<br />– für einen Typ: der Anteil der Gesamtzahl der Objekte, die bei der Profilerstellung erstellt wurden und Instanzen dieses Typs sind.|  
 |**Exklusive Speicherbelegungen**|– Bei einer Funktion die Anzahl von Objekten, die während der Ausführung der Funktion ab Anfang der Aufrufliste erstellt wurden. Diese Zahl schließt die Objekte nicht mit ein, die in untergeordneten Funktionen erstellt wurden.<br />– für einen Typ: die Gesamtzahl der Instanzen des Typs, die erstellt wurden.|  

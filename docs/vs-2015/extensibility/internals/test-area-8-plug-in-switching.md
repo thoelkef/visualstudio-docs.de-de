@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203120"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-In-Wechsel
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumge
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  
-|Automatische Source Control-Plug-in ändern|1.  Select-Plug-in als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **-Plug-in Auswahl**.)<br />2.  Erstellen Sie ein neues Projekt.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Wählen Sie eine andere-Plug-in (z. B. [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Akzeptieren Sie entladen Lösung-Eingabeaufforderung.<br />6.  Öffnen Sie die Projektmappe vom Datenträger aus.|Projektmappe wird geöffnet.<br /><br /> -Plug-in im Test wird das aktuelle Quellcodeverwaltungs-Plug-in.|  
+|Automatische Source Control-Plug-in ändern|1.  Select-Plug-in als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** ->  **-Plug-in Auswahl**.)<br />2.  Erstellen Sie ein neues Projekt.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Wählen Sie eine andere-Plug-in (z. B. [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Akzeptieren Sie entladen Lösung-Eingabeaufforderung.<br />6.  Öffnen Sie die Projektmappe vom Datenträger aus.|Projektmappe wird geöffnet.<br /><br /> -Plug-in im Test wird das aktuelle Quellcodeverwaltungs-Plug-in.|  
   
 ### <a name="case-8b-solution-based-change"></a>Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern  
   
@@ -52,7 +52,7 @@ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumge
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  
-|Änderung des-Plug-In für eine Projektmappe|1.  Select-Plug-in als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **-Plug-in Auswahl**).<br />2.  Erstellen Sie ein neues Projekt und Projektmappe.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Aufheben der Bindung der Projektmappe aus der quellcodeverwaltung (mithilfe der **Quellcodeverwaltung ändern** (Dialogfeld)).<br />5.  Wählen Sie eine andere-Plug-in (z. B. [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />6.  Laden Sie die Projektmappe vom Datenträger aus, wenn entladen.<br />7.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />8.  Aufheben der Bindung der Projektmappe aus der quellcodeverwaltung (mit **Quellcodeverwaltung ändern** (Dialogfeld)).<br />9. Wählen Sie-Plug-in im Test erneut aus.<br />10. Laden Sie die Projektmappe vom Datenträger erneut, wenn entladen.<br />11. Binden Sie die Lösung am ursprünglichen Speicherort (mithilfe der **Quellcodeverwaltung ändern** (Dialogfeld)).|Projektmappe wird zur quellcodeverwaltung hinzugefügt, mit dem ausgewählten-Plug-in.|  
+|Änderung des-Plug-In für eine Projektmappe|1.  Select-Plug-in als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** ->  **-Plug-in Auswahl**).<br />2.  Erstellen Sie ein neues Projekt und Projektmappe.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Aufheben der Bindung der Projektmappe aus der quellcodeverwaltung (mithilfe der **Quellcodeverwaltung ändern** (Dialogfeld)).<br />5.  Wählen Sie eine andere-Plug-in (z. B. [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />6.  Laden Sie die Projektmappe vom Datenträger aus, wenn entladen.<br />7.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />8.  Aufheben der Bindung der Projektmappe aus der quellcodeverwaltung (mit **Quellcodeverwaltung ändern** (Dialogfeld)).<br />9. Wählen Sie-Plug-in im Test erneut aus.<br />10. Laden Sie die Projektmappe vom Datenträger erneut, wenn entladen.<br />11. Binden Sie die Lösung am ursprünglichen Speicherort (mithilfe der **Quellcodeverwaltung ändern** (Dialogfeld)).|Projektmappe wird zur quellcodeverwaltung hinzugefügt, mit dem ausgewählten-Plug-in.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -1,53 +1,24 @@
 ---
 title: EMS-Vorteil | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/05/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über den in Ihrem Visual Studio-Abonnement enthaltenen Enterprise Mobility + Security-Vorteil.
-searchscope: VS Subscription
-ms.openlocfilehash: 053e7463bbbe3649eaed20fa42b80f91c745b8cb
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 93b613d06c6cd8ebcb3b28437677339084a9b720
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032152"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787776"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) in Visual Studio-Abonnements
 
-Jährliche Cloud- und Standardabonnements von Visual Studio Enterprise enthalten Enterprise Mobility + Security (EMS).  Mit EMS, das die Dienste Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics und Microsoft Cloud App Security umfasst, können Sie Ihre Identitäten, Geräte, Apps und Daten sichern und verwalten.
+Jährliche Cloud- und Standardabonnements von Visual Studio Enterprise enthalten Enterprise Mobility + Security (EMS).  Mit EMS, das die Dienste Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics und Microsoft Cloud App Security umfasst, können Sie Ihre Identitäten, Geräte, Apps und Daten sichern und verwalten. 
 
-> [!NOTE]
-> Wenn Sie ein mehrjähriges Abonnement durch Volumenlizenzierung erwerben, ist der EMS-Vorteil derzeit nur im ersten Jahr verfügbar.
-
-## <a name="activation-steps"></a>Aktivierungsschritte
-
-Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden.
-
-1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
-
-2. Suchen Sie im Abschnitt „Tools“ die Kachel „Enterprise Mobility & Security“, und klicken Sie im unteren Bereich der Kachel auf den Link **Code abrufen**.   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
-   > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „EMS“](_img/vs-ems/vs-ems-tile.png)
-
-3. Auf der Seite von Enterprise Mobility + Security E5 können Sie sich mit einem bestehenden Abonnement anmelden oder ein neues erstellen.  Um ein neues zu erstellen, vervollständigen Sie die angeforderten Informationen, und klicken Sie auf **Next** (Weiter).
-   > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Konto erstellen](_img/vs-ems/vs-ems-create-account-cropped.png)
-
-4. Erstellen Sie Ihre Benutzer-ID und ein Kennwort.  Klicken Sie auf **Create my account** (Mein Konto erstellen), um den Vorgang fortzusetzen.
-   > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Benutzer-ID erstellen](_img/vs-ems/vs-ems-userID-cropped.png)
-
-5. Geben Sie als Nächstes eine Telefonnummer an, an die der Prüfcode per Anruf oder SMS übermittelt wird.  Geben Sie den Code ein, und klicken Sie auf **Next** (Weiter).
-   > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Überprüfung](_img/vs-ems/vs-ems-robot-cropped.png)
-
-6. Auf der nächsten Seite ist die Anmeldeseite, auf der Ihre Benutzer-ID angezeigt wird.  Notieren Sie die Informationen zur späteren Verwendung.  Klicken Sie auf **You’re ready to go…** (Sie sind startbereit…).
-   > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Konto erstellt](_img/vs-ems/vs-ems-save-info-cropped.png)
-
-7. Für EMS ist Zugriff auf das [Microsoft Azure-Portal](https://azure.microsoft.com) erforderlich.  Führen Sie die drei Schritte auf der EMS-Angebotsseite aus. So aktivieren Sie Ihr Azure-Abonnement, fügen Benutzer hinzu und konfigurieren EMS.
+> [!IMPORTANT]
+> Der EMS-Vorteil (Enterprise Mobility + Security) ist zurzeit nicht für neue Aktivierungen verfügbar, wenn wir wichtige Änderungen an diesem Vorteil vornehmen.  Wenn Sie ihn bereits aktiviert haben, können Sie ihn weiterhin wie gewohnt verwenden.  
 
 ## <a name="eligibility"></a>Berechtigung
 

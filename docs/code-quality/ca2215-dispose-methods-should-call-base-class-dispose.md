@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 468b63ca554ea126bbd621a2502e54540e6ed068
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541896"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231282"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose-Methoden müssen die Dispose-Funktion der Basisklasse aufrufen.
 
@@ -29,29 +29,29 @@ ms.locfileid: "62541896"
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
 |Kategorie|Microsoft.Usage|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Typ, der implementiert <xref:System.IDisposable?displayProperty=fullName> erbt von einem Typ, der auch implementiert <xref:System.IDisposable>. Die <xref:System.IDisposable.Dispose%2A> Methode der erbende Typ ruft nicht die <xref:System.IDisposable.Dispose%2A> Methode des übergeordneten Typs.
+Ein Typ, der <xref:System.IDisposable?displayProperty=fullName> implementiert, erbt von einem Typ, <xref:System.IDisposable>der ebenfalls implementiert. Die <xref:System.IDisposable.Dispose%2A> -Methode des erbenden Typs ruft nicht die <xref:System.IDisposable.Dispose%2A> -Methode des übergeordneten Typs auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn ein Typ von einem verwerfbaren Typ erbt, muss er Aufrufen der <xref:System.IDisposable.Dispose%2A> Methode des Basistyps von in eine eigene <xref:System.IDisposable.Dispose%2A> Methode. Aufrufen der Methode des Basistyps wird Dispose alle Ressourcen, die von den Basistyp erstellt freigegeben werden.
+Wenn ein Typ von einem verwerfbaren Typ erbt, muss er die <xref:System.IDisposable.Dispose%2A> -Methode des Basistyps in seiner eigenen <xref:System.IDisposable.Dispose%2A> -Methode abrufen. Durch das Aufrufen der Methode für den Basistyp wird sichergestellt, dass alle vom Basistyp erstellten Ressourcen freigegeben werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, rufen `base`.<xref:System.IDisposable.Dispose%2A> in Ihrer <xref:System.IDisposable.Dispose%2A> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, `base`wenden Sie an.<xref:System.IDisposable.Dispose%2A> in der <xref:System.IDisposable.Dispose%2A> -Methode.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, falls der Aufruf von `base`.<xref:System.IDisposable.Dispose%2A> Tritt auf, auf einer tieferen aufrufenden Ebene als die Regel überprüft.
-
-## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt ein `TypeA` implementiert <xref:System.IDisposable>.
-
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn `base`aufgerufen wird.<xref:System.IDisposable.Dispose%2A> Tritt auf einer tieferen Aufruf Ebene auf als die Regel Überprüfungen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ `TypeB` , die von Typ erbt `TypeA` und ordnungsgemäß ruft seine <xref:System.IDisposable.Dispose%2A> Methode.
+Das folgende Beispiel zeigt einen Typ `TypeA` , der <xref:System.IDisposable>implementiert.
 
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
+[!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt einen Typ `TypeB` , der vom-Typ `TypeA` erbt und seine <xref:System.IDisposable.Dispose%2A> -Methode ordnungsgemäß aufruft.
+
+[!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>Siehe auch
 

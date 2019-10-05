@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797765"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924521"
 ---
 # <a name="resource-details-view---contention-data"></a>Ressourcendetailansicht – Konfliktdaten
 Die Ansicht Ressourcendetails enthält ein Zeitachsendiagramm der blockierenden Ereignisse, die von Konflikten ausgewählter Ressourcen ausgelöst wurden. Ein blockierendes Ereignis tritt auf, wenn der Thread gezwungen wird, die Ausführung anzuhalten, da ein anderer Thread den Zugriff auf die Ressource gesperrt hat.
@@ -36,9 +36,9 @@ Die Ansicht Ressourcendetails enthält ein Zeitachsendiagramm der blockierenden 
 
 - Führen Sie einen der folgenden Schritte aus:
 
-    - Klicken Sie auf **Verkleinern**, um zur vorherigen Zoomstufe zurückzukehren.
+  - Klicken Sie auf **Verkleinern**, um zur vorherigen Zoomstufe zurückzukehren.
 
-    - Klicken Sie auf **Zurücksetzen des Zooms**, um die ganze Zeitachse in der Ansicht anzuzeigen.
+  - Klicken Sie auf **Zurücksetzen des Zooms**, um die ganze Zeitachse in der Ansicht anzuzeigen.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>So zeigen Sie die Aufrufliste eines Ereignisses an
 

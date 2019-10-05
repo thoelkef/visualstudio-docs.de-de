@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73148800c60280ed72e0d5f8014cfe6b97d217
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f9455e83d7cb128a34696ae5e849fd0901f1891
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542208"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232217"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Member dürfen keine miteinander in Konflikt stehenden Transparenzanmerkungen aufweisen.
 
@@ -32,18 +32,18 @@ ms.locfileid: "62542208"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Diese Regel wird ausgelöst, wenn Sie ein Typmember mit markiert ist eine <xref:System.Security> Security-Attribut, das eine andere als das Sicherheitsattribut eines Containers von der Members Transparenz.
+Diese Regel wird ausgelöst, wenn ein Typmember mit einem <xref:System.Security> Sicherheits Attribut markiert ist, das eine andere Transparenz aufweist als das Sicherheits Attribut eines Containers des Members.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Transparenzattribute werden von größeren Codeelementen bis hin zu kleineren Elementen übernommen. Die Transparenzattribute von Codeelementen mit größerem Umfang haben Vorrang vor Transparenzattributen von Codeelementen, die im ersten Element enthalten sind. Z. B. eine Klasse, die mit der <xref:System.Security.SecurityCriticalAttribute> -Attribut kann keine Methode, die mit markierten enthalten die <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.
+Transparenzattribute werden von größeren Codeelementen bis hin zu kleineren Elementen übernommen. Die Transparenzattribute von Codeelementen mit größerem Umfang haben Vorrang vor Transparenzattributen von Codeelementen, die im ersten Element enthalten sind. Eine-Klasse, die mit dem <xref:System.Security.SecurityCriticalAttribute> -Attribut markiert ist, kann z. b. keine Methode enthalten, die mit dem <xref:System.Security.SecuritySafeCriticalAttribute> -Attribut markiert ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um diese Verletzung zu beheben, entfernen Sie das Sicherheitsattribut aus dem Codeelement, das niedrigeren Bereich aufweist, oder ändern Sie das Attribut, damit das enthaltende Codeelement identisch sein.
+Um diese Verletzung zu beheben, entfernen Sie das Sicherheits Attribut aus dem Code Element, das einen niedrigeren Gültigkeitsbereich aufweist, oder ändern Sie das zugehörige Attribut, sodass es mit dem enthaltenden Code Element identisch ist.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnungen, die von dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Warnungen von dieser Regel nicht unterdrücken.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel ist eine Methode mit markiert die <xref:System.Security.SecuritySafeCriticalAttribute> -Attribut, und es ist ein Member einer Klasse, die mit der <xref:System.Security.SecurityCriticalAttribute> Attribut. Das sichere Attribut sollte entfernt werden.
+Im folgenden Beispiel wird eine-Methode mit dem <xref:System.Security.SecuritySafeCriticalAttribute> -Attribut gekennzeichnet und ist ein Member einer Klasse, die mit dem <xref:System.Security.SecurityCriticalAttribute> -Attribut markiert ist. Das Sicherheits sichere Attribut sollte entfernt werden.
 
- [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]
+[!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]

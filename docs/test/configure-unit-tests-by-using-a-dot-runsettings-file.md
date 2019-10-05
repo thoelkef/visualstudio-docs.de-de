@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160206"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251829"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -26,11 +26,25 @@ Laufzeiteinstellungsdateien können verwendet werden, um Tests zu konfigurieren,
 
 ### <a name="ide"></a>IDE
 
-Um eine Datei mit Ausführungseinstellungen in der IDE anzugeben, wählen Sie **Test** > **Testeinstellungen** > **Datei für Testeinstellungen auswählen** und anschließend die *RUNSETTINGS*-Datei aus.
+::: moniker range="vs-2017"
 
-![Menü „Datei für Testeinstellungen auswählen“ in Visual Studio](media/select-test-settings-file.png)
+Um eine Testlaufeinstellungsdatei in der IDE anzugeben, wählen Sie **Test** > **Testeinstellungen** > **Datei für Testeinstellungen auswählen** und anschließend die *.runsettings*-Datei aus.
 
-Die Datei erscheint im Menü **Testeinstellungen**, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
+![Menü „Datei für Testeinstellungen auswählen“ in Visual Studio 2017](media/select-test-settings-file.png)
+
+Die Datei wird im Menü „Testeinstellungen“ angezeigt, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Um eine Testlaufeinstellungsdatei in der IDE anzugeben, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** und dann **Einstellungsdatei auswählen** aus. Navigieren Sie zur *.runsettings*-Datei, und wählen Sie diese aus.
+
+![Menü „Datei für Testeinstellungen auswählen“ in Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+
+Die Datei wird im Menü „Einstellungen“ im Test-Explorer angezeigt, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
+
+::: moniker-end
 
 ### <a name="command-line"></a>Befehlszeile
 
@@ -73,9 +87,19 @@ Gehen Sie wie folgt vor, um Ihre Tests mit einer *RUNSETTINGS*-Datei anzupassen:
    > [!TIP]
    > Der Dateiname spielt keine Rolle, sofern Sie die Erweiterung *.runsettings* verwenden.
 
-1. Ersetzen Sie die Dateiinhalte durch das XML aus dem folgenden Beispiel ,und passen Sie es nach Bedarf an.
+2. Ersetzen Sie die Dateiinhalte durch das XML aus dem folgenden Beispiel ,und passen Sie es nach Bedarf an.
 
-1. Klicken Sie im Menü **Test** auf **Testeinstellungen** > **Datei für Testeinstellungen auswählen**. Navigieren Sie zu der erstellten *RUNSETTINGS*-Datei, und wählen Sie **OK** aus.
+::: moniker range="vs-2017"
+
+3. Klicken Sie im Menü **Test** auf **Testeinstellungen** > **Datei für Testeinstellungen auswählen**. Navigieren Sie zu der erstellten *RUNSETTINGS*-Datei, und wählen Sie **OK** aus.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Wenn Sie die Testlaufeinstellungsdatei auswählen möchten, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** aus, und wählen Sie dann **Einstellungsdatei auswählen** aus. Navigieren Sie zu der erstellten *RUNSETTINGS*-Datei, und wählen Sie **OK** aus.
+
+::: moniker-end
 
    > [!TIP]
    > Sie können mehrere *RUNSETTINGS*-Dateien in Ihrer Projektmappe erstellen und je nach Bedarf eine davon als aktive Testeinstellungsdatei auswählen.
@@ -94,7 +118,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
+    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -132,12 +156,16 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
+        <Configuration>
+           <!-- Change to "false" to only add video attachments to failed tests -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+        </Configuration>
       </DataCollector>
 
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime -->
+  <!-- Parameters used by tests at run time -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
@@ -260,7 +288,7 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 |-|-|-|
 |**ForcedLegacyMode**|False|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf **TRUE** fest, um den älteren Testadapter zu verwenden.<br /><br />Beispielsweise können Sie diese Einstellung verwenden, wenn Sie eine *app.config*-Datei für einen Komponententest angegeben haben.<br /><br />Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|
 |**IgnoreTestImpact**|False|Die Testauswirkungensfunktion priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder von Microsoft Test-Manager ausgeführt werden. Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [Welche Tests sollten ab einem vorherigen Build ausgeführt werden?](https://msdn.microsoft.com/library/dd286589)|
-|**SettingsFile**||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Außerdem können Sie eine Testeinstellungsdatei angeben, indem Sie **Test** > **Testeinstellungen** > **Datei für Testeinstellungen auswählen** auswählen.<br /><br />Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true**festlegen.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Sie können auch eine Testeinstellungsdatei [ im Menü „Einstellungen“](#ide) angeben.<br /><br />Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true**festlegen.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|Nachdem ein Testlauf abgeschlossen ist, wird MSTest beendet. Jeder Prozess, der als Teil des Tests gestartet wird, wird dann ebenfalls abgebrochen. Wenn der Test-Executor aktiv bleiben soll, legen Sie den Wert auf **TRUE** fest. Beispielsweise können Sie mit dieser Einstellung erreichen, dass der Browser zwischen Tests der programmierten UI aktiv bleibt.|
 |**DeploymentEnabled**|true|Wenn Sie den Wert auf **FALSE** festlegen, werden in der Testmethode angegebene Bereitstellungselemente nicht in das Bereitstellungsverzeichnis kopiert.|
 |**CaptureTraceOutput**|true|Mithilfe von <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> können Sie über Ihre Testmethode in die Debugablaufverfolgung schreiben.|

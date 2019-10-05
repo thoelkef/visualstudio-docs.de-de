@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798678"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211373"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -90,7 +90,7 @@ Alle neuen oder aktualisierten Warnungen werden auf der Registerkarte **Fehlerli
 
 ## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Verwenden von Schnellaktionen zum Beheben oder Umgestalten von Code
 
-Über [Schnelle Aktionen](../ide/quick-actions.md) (über das Glühbirnen- oder Schraubendrehersymbol verfügbar) können Sie eine Inline-Umgestaltung von Code vornehmen. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet, können Sie auch **STRG**+**.** drücken oder im Randbereich auf das Glühbirnen-, Fehlerglühbirnen- oder Schraubendrehersymbol klicken. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
+Über [Schnelle Aktionen](../ide/quick-actions.md) (über das Glühbirnen- oder Schraubendrehersymbol verfügbar) können Sie eine Inline-Umgestaltung von Code vornehmen. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet, können Sie auch **STRG**+ **.** drücken oder im Randbereich auf das Glühbirnen-, Fehlerglühbirnen- oder Schraubendrehersymbol klicken. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
 
 ![Visual Studio, Glühbirne mit Vorschau](../ide/media/quick-actions-options.png)
 
@@ -98,7 +98,19 @@ Schnelle Aktionen können immer dann verwendet werden, wenn Codeanalysetools fes
 
 ![Text „Keine schnellen Aktionen verfügbar“](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Mit etwas Erfahrung können Sie rasch mithilfe der Pfeiltasten und **STRG**+**.** überprüfen, ob Möglichkeiten zur Umgestaltung und Bereinigung Ihres Codes verfügbar sind.
+Mit etwas Erfahrung können Sie rasch mithilfe der Pfeiltasten und **STRG**+ **.** überprüfen, ob Möglichkeiten zur Umgestaltung und Bereinigung Ihres Codes verfügbar sind.
+
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>Ausführen der Codebereinigung
+
+Mit der Schaltfläche **Codebereinigung** am unteren Rand des Editors bietet Visual Studio eine [bedarfsgesteuerte Formatierung Ihrer C#-Codedatei](code-styles-and-code-cleanup.md#apply-code-styles), einschließlich Codeformateinstellungen.
+
+![Schaltfläche „Codebereinigung“ in Visual Studio 2019](media/execute-code-cleanup.png)
+
+Zusätzlich zur Formatierung Ihrer Datei im Hinblick auf Leerzeichen, Einzüge usw. wendet die **Codebereinigung** auch eine Reihe von Codeformaten an, die Sie festlegen. Ihre Einstellungen für jedes Codeformat werden aus der [EditorConfig-Datei](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files) gelesen, sofern für das Projekt eine vorhanden ist, oder aus den [Codeformateinstellungen](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) im Dialogfeld **Optionen**.
+
+::: moniker-end
 
 ## <a name="debug-your-running-code"></a>Debuggen von ausgeführtem Code
 
@@ -157,5 +169,5 @@ Weitere Informationen zu Komponententests in Visual Studio und wie diese Ihnen h
 ## <a name="see-also"></a>Siehe auch
 
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
-- [Weitere Informationen zur Verwendung des Debuggers](../debugger/index.md)
+- [Weitere Informationen zur Verwendung des Debuggers](../debugger/index.yml)
 - [Generieren und Korrigieren von Code](../ide/code-generation-in-visual-studio.md)

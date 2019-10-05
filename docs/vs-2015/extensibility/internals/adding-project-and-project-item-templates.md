@@ -12,11 +12,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b68c9f4bbaed73603c46fc0beab77a308b8933d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203858"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Hinzufügen von Projekt- und Projektelementvorlagen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Wenn Sie eigene Projekttypen erstellen, müssen Sie die Unterstützung für neue
  [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)  
  Enthält schrittweise Anleitungen zum Öffnen eines Elements intrinsisch an einen bestimmten Editor für ein Projekt gebunden.  
   
- [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)  
+ [Vorgehensweise: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)  
  Enthält schrittweise Anleitungen für eine standard-Editor zu öffnen.  
   
  [Projektuntertypen](../../extensibility/internals/project-subtypes.md)  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87b4dcff0bd626947a0d98822150d03fc7c7059
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb121962bbfd61dc4d4aac84467a2a8659918b63
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945567"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926122"
 ---
 # <a name="replace-in-files-command"></a>Befehl "In Dateien ersetzen"
 Ersetzt Text in Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** verfügbar sind.
@@ -33,73 +33,73 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ```
 
 ## <a name="arguments"></a>Argumente
- `findwhat`
+`findwhat`
 
- Erforderlich. Der Text, für den eine Übereinstimmung ermittelt werden soll.
+Erforderlich. Der Text, für den eine Übereinstimmung ermittelt werden soll.
 
- `replacewith`
+`replacewith`
 
- Erforderlich. Der Text, durch den der übereinstimmende Text ersetzt werden soll
+Erforderlich. Der Text, durch den der übereinstimmende Text ersetzt werden soll
 
 ## <a name="switches"></a>Schalter
- /all oder /a
+/all oder /a
 
- Dies ist optional. Ersetzt den Suchtext bei jedem Vorkommen durch den Ersetzungstext
+Optional. Ersetzt den Suchtext bei jedem Vorkommen durch den Ersetzungstext
 
- /case oder /c
+/case oder /c
 
- Dies ist optional. Übereinstimmungen treten nur auf, wenn die groß und klein geschriebenen Zeichen mit den im `findwhat`-Argument angegebenen übereinstimmen.
+Optional. Übereinstimmungen treten nur auf, wenn die groß und klein geschriebenen Zeichen mit den im `findwhat`-Argument angegebenen übereinstimmen.
 
- /ext: `extensions`
+/ext: `extensions`
 
- Dies ist optional. Legt die Dateierweiterungen für die zu suchenden Dateien fest.
+Optional. Legt die Dateierweiterungen für die zu suchenden Dateien fest.
 
- /keep oder /k
+/keep oder /k
 
- Dies ist optional. Gibt an, dass alle geänderten Dateien geöffnet bleiben
+Optional. Gibt an, dass alle geänderten Dateien geöffnet bleiben
 
- /lookin: `searchpath`
+/lookin: `searchpath`
 
- Dies ist optional. Das zu durchsuchende Verzeichnis. Wenn der Pfad Leerzeichen enthält, schließen Sie ihn vollständig in Anführungszeichen ein.
+Optional. Das zu durchsuchende Verzeichnis. Wenn der Pfad Leerzeichen enthält, schließen Sie ihn vollständig in Anführungszeichen ein.
 
- /options oder /t
+/options oder /t
 
- Dies ist optional. Zeigt eine Liste der aktuellen Optionseinstellungen für die Suche an und führt keine Suche aus.
+Optional. Zeigt eine Liste der aktuellen Optionseinstellungen für die Suche an und führt keine Suche aus.
 
- /regex oder /r
+/regex oder /r
 
- Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, die Textmuster anstelle von Literalzeichen darstellen. Eine vollständige Liste von Zeichen für reguläre Ausdrücke finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).
+Optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, die Textmuster anstelle von Literalzeichen darstellen. Eine vollständige Liste von Zeichen für reguläre Ausdrücke finden Sie unter [Reguläre Ausdrücke](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /reset oder /e
+/reset oder /e
 
- Dies ist optional. Legt die Suchoptionen wieder auf die Standardeinstellungen fest und führt keine Suche aus.
+Optional. Legt die Suchoptionen wieder auf die Standardeinstellungen fest und führt keine Suche aus.
 
- /stop
+/stop
 
- Dies ist optional. Hält den aktuellen Suchvorgang an, wenn ein solcher ausgeführt wird. „In Dateien ersetzen“ ignoriert alle anderen Argumente, wenn `/stop` angegeben wurde. Um z.B. die aktuelle Ersetzung zu beenden, müssten Sie Folgendes eingeben:
+Optional. Hält den aktuellen Suchvorgang an, wenn ein solcher ausgeführt wird. „In Dateien ersetzen“ ignoriert alle anderen Argumente, wenn `/stop` angegeben wurde. Um z.B. die aktuelle Ersetzung zu beenden, müssten Sie Folgendes eingeben:
 
 ```
 >Edit.ReplaceinFiles /stop
 ```
 
- /sub oder /s
+/sub oder /s
 
- Dies ist optional. Durchsucht die Unterordner im Verzeichnis, das im Argument /lookin:`searchpath` angegeben wurde.
+Optional. Durchsucht die Unterordner im Verzeichnis, das im Argument /lookin:`searchpath` angegeben wurde.
 
- /text2 oder /2
+/text2 oder /2
 
- Dies ist optional. Zeigt die Ergebnisse der Ersetzung im Fenster **Suchergebnisse 2** an.
+Optional. Zeigt die Ergebnisse der Ersetzung im Fenster **Suchergebnisse 2** an.
 
- /wild oder /l
+/wild oder /l
 
- Dies ist optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, um ein Zeichen oder eine Abfolge von Zeichen darzustellen.
+Optional. Verwendet vordefinierte Sonderzeichen im `findwhat`-Argument als Notationen, um ein Zeichen oder eine Abfolge von Zeichen darzustellen.
 
- /word oder /w
+/word oder /w
 
- Dies ist optional. Sucht nur nach ganzen Wörtern
+Optional. Sucht nur nach ganzen Wörtern
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird nach `btnCancel` gesucht. Danach werden alle CLS Dateien durch `btnReset` ersetzt, die sich im Ordner „My Visual Studio Projects“ (Meine Visual Studio-Projekte) befinden, und Informationen zu Ersetzung werden im Fenster **Suchergebnisse: 2** angezeigt.
+In diesem Beispiel wird nach `btnCancel` gesucht. Danach werden alle CLS Dateien durch `btnReset` ersetzt, die sich im Ordner „My Visual Studio Projects“ (Meine Visual Studio-Projekte) befinden, und Informationen zu Ersetzung werden im Fenster **Suchergebnisse: 2** angezeigt.
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2

@@ -1,7 +1,7 @@
 ---
 title: Entwickeln einer OpenGL ES-Anwendung für Android und iOS | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/16/2019
+ms.date: 09/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,30 +12,34 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317650"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079276"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Erstellen einer OpenGL ES-Anwendung für Android und iOS
 
 Sie können Visual Studio-Projekte und -Projektmappen für iOS-Apps und Android-Apps erstellen, die gemeinsamen Code nutzen. Dieser Artikel führt Sie durch eine Projektmappenvorlage, die eine einfache iOS-App und eine Android Native Activity-App erstellt. Die Apps verwenden gemeinsamen C++-Code, der OpenGL ES verwendet, um denselben animierten rotierenden Cube auf jeder Plattform anzuzeigen. OpenGL ES (OpenGL for Embedded Systems oder GLES) ist eine 2D- und 3D-Grafik-API, die auf zahlreichen mobilen Geräten unterstützt wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
-Bevor Sie eine OpenGL ES-App für iOS und Android erstellen, vergewissern Sie sich, dass alle Systemanforderungen erfüllt sind. Installieren Sie die Workload „Mobile-Entwicklung mit C++“ im Visual Studio-Installer, sofern dies nicht bereits erfolgt ist. Zur Entwicklung für iOS schließen Sie die optionalen Tools für die Entwicklung für iOS mit C++ ein. Zur Entwicklung für Android installieren Sie die Tools für die Entwicklung für Android mit C++ sowie die erforderlichen Drittanbietertools: Android NDK, Apache Ant, Google Android Emulator und Intel Hardware Accelerated Execution Manager. Als Nächstes konfigurieren Sie Intel HAXM und den Android-Emulator für die Ausführung auf Ihrem System. Weitere Informationen und ausführliche Anweisungen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Zum Entwickeln und Testen der iOS-App benötigen Sie einen Mac-Computer, der gemäß der Installationsanleitung eingerichtet wurde. Weitere Informationen zum Einrichten der iOS-Entwicklung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+Bevor Sie eine OpenGL ES-App für iOS und Android erstellen, vergewissern Sie sich, dass alle Systemanforderungen erfüllt sind. Installieren Sie die Workload „Mobile-Entwicklung mit C++“ im Visual Studio-Installer, sofern dies nicht bereits erfolgt ist. Zur Entwicklung für iOS schließen Sie die optionalen Tools für die Entwicklung für iOS mit C++ ein. Zur Entwicklung für Android installieren Sie die Tools für die Entwicklung für Android mit C++ sowie die erforderlichen Drittanbietertools: das Android NDK, Apache Ant und der Google Android-Emulator. Für eine bessere Emulatorleistung auf Intel-Plattformen wird empfohlen, dass Sie auch den Hardware Accelerated Execution Manager (HAXM) von Intel installieren. Als Nächstes konfigurieren Sie Intel HAXM und den Android-Emulator für die Ausführung auf Ihrem System. Weitere Informationen und ausführliche Anweisungen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
+
+Zum Entwickeln und Testen der iOS-App benötigen Sie einen Mac-Computer, der gemäß der Installationsanleitung eingerichtet wurde. Weitere Informationen zum Einrichten der iOS-Entwicklung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Erstellen eines neuen OpenGLES-Anwendungsprojekts
 
-In diesem Lernprogramm erstellen Sie zunächst ein neues OpenGL ES-Anwendungsprojekt. Anschließend erstellen und führen Sie die Standard-App im Visual Studio-Emulator für Android aus. Als Nächstes erstellen Sie die App für iOS und führen sie auf einem iOS-Gerät aus.
+In diesem Tutorial erstellen Sie zunächst ein neues OpenGL ES-Anwendungsprojekt, und dann erstellen Sie die Standard-App und führen sie im Visual Studio-Emulator für Android aus. Als Nächstes erstellen Sie die App für iOS und führen sie auf einem iOS-Gerät aus.
 
-1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
+::: moniker range="vs-2017"
 
-1. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen** die Option **Visual C++**  > **Plattformübergreifend** und dann die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus.
+1. Klicken Sie in Visual Studio auf **Datei**>**Neu**>**Projekt**.
 
-1. Vergeben Sie an die App einen Namen wie etwa `MyOpenGLESApp`(ohne Leerzeichen), und wählen Sie dann **OK**.
+1. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen** die Option **Visual C++** >**Plattformübergreifend** und dann die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus.
+
+1. Geben Sie der App einen Namen wie *MyOpenGLESApp*, und klicken Sie dann auf **OK**.
 
    ![Neues OpenGLES-Anwendungsprojekt](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -43,7 +47,23 @@ In diesem Lernprogramm erstellen Sie zunächst ein neues OpenGL ES-Anwendungspro
 
    ![MyOpenGLESApp im Projektmappen-Explorer](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
-   Die neue OpenGL ES-Anwendungsprojektmappe umfasst drei Bibliotheksprojekte und zwei Anwendungsprojekte. Der Bibliotheksordner enthält ein Projekt mit freigegebenem Code und zwei plattformspezifischen Projekte, die auf den gemeinsam verwendeten Code verweisen:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Klicken Sie in Visual Studio auf **Datei**>**Neu**>**Projekt**.
+
+1. Wählen Sie im Dialogfeld **Neues Projekt erstellen** die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus, und klicken Sie dann auf **Weiter**.
+
+1. Geben Sie im Dialogfeld **Neues Projekt konfigurieren** einen Namen wie *MyOpenGLESApp* in **Projektname** ein, und klicken Sie dann auf **Erstellen**.
+
+   Visual Studio erstellt die neue Projektmappe und öffnet den Projektmappen-Explorer.
+
+   ![MyOpenGLESApp im Projektmappen-Explorer](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+
+::: moniker-end
+
+Die neue OpenGL ES-Anwendungsprojektmappe umfasst drei Bibliotheksprojekte und zwei Anwendungsprojekte. Der Bibliotheksordner enthält ein Projekt mit freigegebenem Code und zwei plattformspezifischen Projekte, die auf den gemeinsam verwendeten Code verweisen:
 
 - `MyOpenGLESApp.Android.NativeActivity` enthält die Verweise und den Verbindungscode, mit denen Ihre App als eine systemeigene Aktivität auf Android implementiert werden kann. Die Einstiegspunkte aus dem Verbindungscode sind in der Datei *main.cpp* implementiert, die den gemeinsamen Code in `MyOpenGLESApp.Shared` enthält. Vorkompilierte Header befinden sich in *pch.h*. Das Native Activity-App-Projekt wird in eine gemeinsam genutzte Bibliotheksdatei (*SO*) kompiliert, die durch das `MyOpenGLESApp.Android.Packaging`-Projekt ausgewählt wird.
 
@@ -158,7 +178,7 @@ Um eine iOS-App auf einem iOS-Gerät bereitzustellen, müssen Sie auf dem Mac au
 1. Wählen Sie auf der Symbolleiste Ihr iOS-Gerät aus, um die App auf dem Gerät auszuführen, das an Ihren Mac angeschlossen ist. Wenn die App nicht gestartet wird, vergewissern Sie sich, dass das Gerät der bereitgestellten Anwendung die Berechtigung für die Ausführung auf dem Gerät erteilt hat. Diese Berechtigung kann auf dem Gerät festgelegt werden: **Einstellungen** > **Allgemein** > **Geräteverwaltung**. Wählen Sie das Konto Ihrer Developer-App aus, legen Sie das Konto als vertrauenswürdig fest, und überprüfen Sie die App. Versuchen Sie erneut, die App in Visual Studio auszuführen.
 
    ![iOS-App auf iOS-Gerät](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Visual Studio-Debugger verwenden, um lokale Variablen zu prüfen, die Aufrufliste anzuzeigen und Werte zu überwachen.
 
    ![Debugger am Haltepunkt in iOS-App](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

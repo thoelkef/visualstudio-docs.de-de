@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953295"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606082"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalisieren der Visual Studio-IDE
 
@@ -27,24 +27,24 @@ Sie können eine Standardsammlung von Einstellungen auswählen, die Visual Studi
 
 ## <a name="general-environment-options"></a>Allgemeine Umgebungsoptionen
 
-Über das Dialogfeld [Umgebungsoptionen](../ide/reference/environment-options-dialog-box.md) sind viele Optionen zur Personalisierung verfügbar. Es gibt zwei Möglichkeiten, um auf dieses Dialogfeld zuzugreifen:
+Über das Dialogfeld [Umgebungsoptionen](../ide/reference/general-environment-options-dialog-box.md) sind viele Optionen zur Personalisierung verfügbar. Es gibt zwei Möglichkeiten, um auf dieses Dialogfeld zuzugreifen:
 
 - Klicken Sie in der Menüleiste auf **Extras** > **Optionen**, und erweitern Sie ggf. den Knoten **Umgebung**.
 
-- Drücken Sie **STRG**+**Q**, geben Sie im Suchfeld den Begriff **Umgebung** ein, und wählen Sie aus den Ergebnissen dann **Umgebung --> Allgemein** aus.
+- Drücken Sie **STRG**+**Q**, geben Sie im Suchfeld den Begriff **Umgebung** ein, und wählen Sie aus den Ergebnissen dann **Umgebung > Allgemein** aus.
 
 > [!TIP]
 > Wenn das Dialogfeld „Optionen“ angezeigt wird, können Sie **F1** drücken, um Hilfe zu den verschiedenen Einstellungen auf dieser Seite zu erhalten.
 
 ## <a name="environment-color-themes"></a>Umgebungsfarbschemas
 
-Geben Sie im Suchfeld den Begriff **Umgebung** ein, und klicken Sie auf **Umgebung --> Allgemein**, um das Farbdesign zwischen hell, dunkel und blau zu ändern. Ändern Sie die Option **Farbschema** im Dialogfeld **Optionen**.
+Geben Sie im Suchfeld den Begriff **Umgebung** ein, und klicken Sie auf **Umgebung > Allgemein**, um das Farbdesign zwischen hell, dunkel und blau zu ändern. Ändern Sie die Option **Farbschema** im Dialogfeld **Optionen**.
 
-Geben Sie im Suchfeld den Begriff **Umgebung** ein, und klicken Sie auf **Umgebung --> Schriftarten und Farben**, um die Optionen für die farbliche Kennzeichnung im Editor zu ändern. Weitere Informationen finden Sie unter [How to: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Geben Sie im Suchfeld den Begriff **Umgebung** ein, und klicken Sie auf **Umgebung > Schriftarten und Farben**, um die Optionen für die farbliche Kennzeichnung im Editor zu ändern. Weitere Informationen finden Sie unter [How to: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Groß-/Kleinschreibung im Hauptmenü
 
-Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster Buchstabe groß** (z.B. „Datei“) und **Großbuchstaben** (z.B. „DATEI“) wechseln. Geben Sie im Suchfeld den Begriff **Umgebung** ein, wählen Sie **Umgebung --> Allgemein** aus, und ändern Sie dann die Option **Traditionellen Menüleistenstil mit großen Anfangsbuchstaben verwenden**.
+Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster Buchstabe groß** (z.B. „Datei“) und **Großbuchstaben** (z.B. „DATEI“) wechseln. Geben Sie im Suchfeld den Begriff **Umgebung** ein, wählen Sie **Umgebung > Allgemein** aus, und ändern Sie dann die Option **Traditionellen Menüleistenstil mit großen Anfangsbuchstaben verwenden**.
 
 ### <a name="customize-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
 

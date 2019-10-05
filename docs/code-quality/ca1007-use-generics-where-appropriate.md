@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0d7783bea936b04fcb600563dadea6a65ac5ef5e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744766"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236522"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generics verwenden.
 
@@ -34,37 +34,37 @@ ms.locfileid: "66744766"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine extern sichtbare Methode enthält einen Verweisparameter vom Typ <xref:System.Object?displayProperty=fullName>, und die übergeordnete Assembly ist auf .NET Framework 2.0 ausgerichtet.
+Eine extern sichtbare Methode enthält einen Verweis Parameter vom Typ <xref:System.Object?displayProperty=fullName>, und die enthaltende Assembly zielt .NET Framework 2,0 ab.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Verweisparameter ist ein Parameter, die mithilfe von geändert wird die `ref` (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Schlüsselwort. Der Argumenttyp, der für einen Verweisparameter bereitgestellt werden muss genau dem Typ des Verweisparameters übereinstimmen. Um einen Typ zu verwenden, der von dem Typ des Verweisparameters abgeleitet ist, muss der Typ zuerst umwandeln und eine Variable vom Typ Verweisparameters zugewiesen werden. Verwenden einer generischen Methode kann alle Typen mit gewissen Einschränkungen an die Methode übergeben werden, ohne zunächst den Typ auf den Parametertyp Verweis umzuwandeln.
+Ein Verweis Parameter ist ein Parameter, der mit dem `ref` Schlüsselwort (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) geändert wird. Der Argumenttyp, der für einen Verweis Parameter bereitgestellt wird, muss exakt mit dem Verweis Parametertyp übereinstimmen. Um einen Typ zu verwenden, der vom Verweis Parametertyp abgeleitet ist, muss der Typ zuerst umgewandelt und einer Variablen des Verweis Parameter Typs zugewiesen werden. Die Verwendung einer generischen Methode ermöglicht, dass alle Typen, die Einschränkungen unterliegen, an die Methode übergeben werden, ohne dass der Typ zuerst in den Verweis Parametertyp umgewandelt wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, die Sie eine generische Methode, und Ersetzen Sie die <xref:System.Object> Parameter mit einem Typparameter.
+Um einen Verstoß gegen diese Regel zu beheben, legen Sie die-Methode als <xref:System.Object> generisch fest, und ersetzen Sie den-Parameter mithilfe eines Typparameters.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine allgemeine Swap-Routine, die als nicht generische und generische Methoden implementiert wird. Beachten Sie, wie effizient die Zeichenfolgen ausgetauscht werden, mithilfe der generischen Methode, die im Vergleich zu nicht generischen Methode.
+Das folgende Beispiel zeigt eine allgemeine Austausch Routine, die sowohl als nicht generische als auch als generische Methoden implementiert ist. Beachten Sie, wie effizient die Zeichen folgen mithilfe der generischen-Methode im Vergleich zur nicht generischen-Methode ausgetauscht werden.
 
- [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
- [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
+[!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
+[!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005: Übermäßige Parameter für generische Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010: Sammlungen sollten eine generische Schnittstelle implementieren.](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Statische Member in generischen Typen nicht deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)
+[CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: Generische Typen in Membersignaturen nicht schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+[CA1006: Generische Typen in Element Signaturen nicht Schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Generische Methoden müssen den Typparameter angeben.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004: Generische Methoden sollten Typparameter bereitstellen.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Generika](/dotnet/csharp/programming-guide/generics/index)
+[Generics](/dotnet/csharp/programming-guide/generics/index)

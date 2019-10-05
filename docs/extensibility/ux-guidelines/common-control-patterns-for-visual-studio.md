@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312297"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890971"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 ## <a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente
@@ -296,7 +296,8 @@ Richtlinien für die mithilfe der Schaltfläche:
 #### <a name="graphical-buttons"></a>Grafische Schaltflächen
 Einige Schaltflächen sollten immer ein Bild und nie enthalten Text zum Einsparen von Speicherplatz und Lokalisierung-Probleme zu vermeiden. Diese werden häufig in Feld dateiöffnungs- und andere sortierbaren Listen verwendet.
 
-> **Hinweis**: Benutzer müssen diese Schaltflächen (es gibt keine Zugriffsschlüssel) die Registerkarte, daher platzieren Sie sie in einer sinnvollen Reihenfolge. Zuordnung der `name` Eigenschaft der Schaltfläche auf die Aktion, die es dauert, sodass Bildschirmsprachausgaben richtig Schaltflächenaktion interpretiert.
+> [!NOTE]
+> Benutzer müssen diese Schaltflächen (es gibt keine Zugriffsschlüssel) die Registerkarte, daher platzieren Sie sie in einer sinnvollen Reihenfolge. Zuordnung der `name` Eigenschaft der Schaltfläche auf die Aktion, die es dauert, sodass Bildschirmsprachausgaben richtig Schaltflächenaktion interpretiert.
 
 | Funktion | Schaltfläche |
 | --- | --- |
@@ -383,7 +384,7 @@ Ein Rastersteuerelement ist ein komplexes Steuerelement, das eine Strukturansich
 
 - **Pfeil nach rechts:** Erweitern Sie den Knoten aus. Nachdem der Knoten erweitert ist, soll er weiterhin auf die nächste Spalte auf der rechten Seite navigieren. Navigation sollte am Ende der Zeile zu beenden.
 
-- **Tab:** Wechselt zur nächsten Zelle auf der rechten Seite.  Am Ende der Zeile wird Sie Navigation zur nächsten Zeile fortgesetzt.
+- **Registerkarte ":** Wechselt zur nächsten Zelle auf der rechten Seite.  Am Ende der Zeile wird Sie Navigation zur nächsten Zeile fortgesetzt.
 
 - **Umschalt + Tab:** Wechselt zur nächsten Zelle auf der linken Seite.  Navigation weiterhin am Anfang der Zeile, aus der äußersten rechten Zelle in der vorherigen Zeile.
 

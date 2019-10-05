@@ -1,48 +1,54 @@
 ---
 title: Optionen, Text-Editor, JavaScript, IntelliSense
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.IntelliSense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778571"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605980"
 ---
-# <a name="options-text-editor-javascript-intellisense"></a>Optionen, Text-Editor, JavaScript, IntelliSense
-Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die das Verhalten von IntelliSense für JavaScript beeinflussen. Sie erreichen die **IntelliSense**-Seite, indem Sie **Tools** > **Optionen** in der Menüleiste auswählen und anschließend **Text-Editor** > **JavaScript** > **IntelliSense** erweitern.
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Dialogfeld „Optionen“: Text-Editor \> JavaScript \> IntelliSense
+
+Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die das Verhalten von IntelliSense für JavaScript beeinflussen. Sie erreichen die Seite **IntelliSense**, indem Sie in der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** > **JavaScript/TypeScript** > **IntelliSense** erweitern.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 Die Seite **IntelliSense** enthält folgende Abschnitte:
 
 ## <a name="statement-completion"></a>Anweisungsvervollständigung
- Sie können diese Optionen verwenden, um das Verhalten der IntelliSense-Anweisungsvervollständigung zu ändern.
+
+Sie können diese Optionen verwenden, um das Verhalten der IntelliSense-Anweisungsvervollständigung zu ändern.
 
 ### <a name="uielement-list"></a>UIElement-Liste
- **Nur mit TAB- oder EINGABETASTE Commit ausführen**
 
- Wenn Sie dieses Kontrollkästchen aktivieren, erweitert der JavaScript-Code-Editor Anweisungen nur dann mit Elementen, die Sie in der Vervollständigungsliste ausgewählt haben, wenn Sie auf die **TAB-TASTE** oder die **EINGABETASTE** drücken. Wenn Sie dieses Kontrollkästchen deaktivieren, können auch andere Zeichen wie Punkt, Komma, Doppelpunkt, öffnende runde Klammer und öffnende geschweifte Klammer ({) Anweisungen mit den ausgewählten Elementen erweitern.
+**Nur mit TAB- oder EINGABETASTE Commit ausführen**
+
+Wenn Sie dieses Kontrollkästchen aktivieren, erweitert der JavaScript-Code-Editor Anweisungen nur dann mit Elementen, die Sie in der Vervollständigungsliste ausgewählt haben, wenn Sie auf die **TAB-TASTE** oder die **EINGABETASTE** drücken. Wenn Sie dieses Kontrollkästchen deaktivieren, können auch andere Zeichen wie Punkt, Komma, Doppelpunkt, öffnende runde Klammer und öffnende geschweifte Klammer ({) Anweisungen mit den ausgewählten Elementen erweitern.
 
 ## <a name="references"></a>Verweise
- Sie können diese Optionen verwenden, um die Typen von IntelliSense-JS-Dateien anzugeben, die für verschiedene JavaScript-Projekttypen verfügbar sind. Die IntelliSense-Verweise werden normalerweise verwendet, um die IntelliSense-Unterstützung für globale Objekte bereitzustellen. Sie können diese Seite auch verwenden, um die Ladereihenfolge für Skripts festlegen, die zur Laufzeit geladen werden müssen, und um IntelliSense-Erweiterungsdateien hinzuzufügen.
+
+Sie können diese Optionen verwenden, um die Typen von IntelliSense-JS-Dateien anzugeben, die für verschiedene JavaScript-Projekttypen verfügbar sind. Die IntelliSense-Verweise werden normalerweise verwendet, um die IntelliSense-Unterstützung für globale Objekte bereitzustellen. Sie können diese Seite auch verwenden, um die Ladereihenfolge für Skripts festlegen, die zur Laufzeit geladen werden müssen, und um IntelliSense-Erweiterungsdateien hinzuzufügen.
 
 ### <a name="uielement-list"></a>UIElement-Liste
- **Verweisgruppen**
 
- Diese Option gibt den Verweisgruppentyp an. Drei Verweisgruppen werden unterstützt:
+**Verweisgruppen**
 
- Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte IntelliSense-JS-Dateien für verschiedene JavaScript-Projekte verfügbar sind. Vier Verweisgruppen sind verfügbar:
+Diese Option gibt den Verweisgruppentyp an. Drei Verweisgruppen werden unterstützt:
+
+Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte IntelliSense-JS-Dateien für verschiedene JavaScript-Projekte verfügbar sind. Vier Verweisgruppen sind verfügbar:
 
 - Implizit (Windows- *Version*) für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] -Apps, die JavaScript verwenden. Die in dieser Gruppe enthalten Dateien sind für jede im Code-Editor geöffnete JS-Datei für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps mit JavaScript verfügbar.
 

@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc1fb57c7ec43421b211b29cfd6ab97b24a1864c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184749"
 ---
 # <a name="bitmap-element"></a>Bitmap-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ Definiert eine Bitmap. Die Bitmap wird von einer Ressource oder aus einer Datei 
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |guid|Erforderlich. GUID der Befehls-ID der GUID-ID.<br /><br /> Das Guid-Attribut für eine Bitmap ist nicht in jedem VSPackage oder andere Befehlsgruppe zugeordnet.  Es sollte für die bitmapdefinition eindeutig sein und sollte nicht für andere Zwecke verwendet werden.|  
-|resID|ID des Befehls-ID der GUID-ID. Entweder der "RESID" oder das Href-Attribut ist erforderlich.<br /><br /> Das ResID-Attribut ist ein Integer-Ressourcen-ID, die den bitmapstrip bestimmt, der während der Zusammenführung Befehlstabelle geladen werden soll.  Beim Laden der Befehlstabelle ist, wird die Bitmaps angegeben werden, indem Sie die Ressourcen-ID aus der Ressource des gleichen Moduls geladen werden.|  
-|usedList|Erforderlich, wenn das ResID-Attribut vorhanden ist. Wählt die verfügbaren Images im bitmapstrip.|  
+|"RESID"|ID des Befehls-ID der GUID-ID. Entweder der "RESID" oder das Href-Attribut ist erforderlich.<br /><br /> Das ResID-Attribut ist ein Integer-Ressourcen-ID, die den bitmapstrip bestimmt, der während der Zusammenführung Befehlstabelle geladen werden soll.  Beim Laden der Befehlstabelle ist, wird die Bitmaps angegeben werden, indem Sie die Ressourcen-ID aus der Ressource des gleichen Moduls geladen werden.|  
+|"usedlist"|Erforderlich, wenn das ResID-Attribut vorhanden ist. Wählt die verfügbaren Images im bitmapstrip.|  
 |href|Der Pfad für die Bitmap. Entweder der "RESID" oder das Href-Attribut ist erforderlich.<br /><br /> Für die angegebene Abbilddatei, die in die resultierende Binärdatei eingebettet ist, wird dem Includepfad durchsucht.  Beim Befehl Tabelle Zusammenführen wird das Bild kopiert, und ist keine zusätzliche Ressourcensuche oder Laden erforderlich.  Wenn das Attribut "usedlist" nicht vorhanden ist, stehen alle Bilder auf den Streifen. **Hinweis**:  Bilder können in einem von mehreren Formaten angegeben werden, die BMP-, GIF- und PNG enthalten.  Frühere Versionen des Compilers wurde Bitmap mit 32-Bit-Images, die alpha-Information für die partielle Transparenz, nicht unterstützt. Die problemumgehung für diese Versionen ist das PNG-Format verwendet.|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Bedingung|Optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  

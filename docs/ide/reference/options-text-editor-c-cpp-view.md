@@ -8,21 +8,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15952c8262ea1e8dec1e89816a5887f9bfe9bf6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817764"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461271"
 ---
 # <a name="options-text-editor-cc-view"></a>Optionen, Text-Editor, C/C++, Ansicht
 
 Verwenden Sie diesen Eigenschaftenseiten, um das Standardverhalten des Code-Editors zu ändern, wenn Sie in C oder C++ programmieren.
 
-Wählen Sie **Tools** > **Optionen** aus, erweitern Sie **Text-Editor** und dann **C/C++**, und wählen Sie **Ansicht** aus, um auf diese Eigenschaftenseite zuzugreifen.
+Wählen Sie **Tools** > **Optionen** aus, erweitern Sie **Text-Editor** und dann **C/C++** , und wählen Sie **Ansicht** aus, um auf diese Eigenschaftenseite zuzugreifen.
 
 ## <a name="code-squiggles"></a>Wellenlinien im Code
 

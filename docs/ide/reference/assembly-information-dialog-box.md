@@ -12,40 +12,55 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744880"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870764"
 ---
 # <a name="assembly-information-dialog-box"></a>Assemblyinformationen (Dialogfeld)
-Im Dialogfeld **Assemblyinformationen** werden die Werte der globalen .NET Framework-Assemblyattribute festgelegt, die in der AssemblyInfo-Datei gespeichert sind, die mit dem Projekt automatisch erstellt wird. Im **Projektmappen-Explorer** befindet sich die Datei im Knoten **Mein Projekt** in [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (klicken Sie zum Anzeigen auf **Alle Dateien anzeigen**). Sie befindet sich unter **Eigenschaften** in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Weitere Informationen zu Assemblyattributen finden Sie unter [Attributes (Attribute)](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
 
- Wählen Sie zum Aufrufen des Dialogfelds einen Projektknoten im **Projektmappen-Explorer** aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Wenn der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Anwendung**. Klicken Sie auf der Seite **Anwendung** auf die Schaltfläche **Assemblyinformationen**.
+Im Dialogfeld „Assemblyinformationen“ werden die Werte der globalen .NET Framework-Assemblyattribute festgelegt, die in der AssemblyInfo-Datei gespeichert sind, die mit dem Projekt automatisch erstellt wird. Im Projektmappen-Explorer befindet sich die AssemblyInfo-Datei im Knoten **Mein Projekt** für Visual Basic-Projekte (klicken Sie zum Anzeigen auf **Alle Dateien** anzeigen). Für C#-Projekte befindet sie sich unter **Eigenschaften**. Weitere Informationen finden Sie unter [Attribute (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
+
+Um auf dieses Dialogfeld zuzugreifen, wählen Sie einen Projektknoten im **Projektmappen-Explorer** aus, und wählen Sie dann im Menü **Projekt** **Eigenschaften**. Auf der Seite **Anwendung** wählen Sie die Schaltfläche **Assemblyinformation**.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- **Titel:** Gibt einen Titel für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyTitleAttribute>
 
- **Beschreibung:** Gibt eine optionale Beschreibung für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyDescriptionAttribute>
+**Titel**\
+Gibt einen Titel für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyTitleAttribute>
 
- **Firma:** Gibt einen Firmennamen für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyCompanyAttribute>
+**Beschreibung**\
+Gibt eine optionale Beschreibung für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyDescriptionAttribute>
 
- **Produkt:** Gibt einen Produktnamen für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyProductAttribute>
+**Unternehmen**\
+Gibt einen Firmennamen für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyCompanyAttribute>
 
- **Copyright:** Gibt Copyrightinformationen für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyCopyrightAttribute>
+Der Standardwert für das Unternehmen kann in der Registrierung festgelegt oder geändert werden. Suchen Sie nach dem **RegisteredOrganization**-Wert je nach Windowssversion im Schlüssel **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** oder **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion**.
 
- **Marke:** Gibt eine Marke für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyTrademarkAttribute>
+**Produkt**\
+Gibt einen Produktnamen für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyProductAttribute>
 
- **Assemblyversion:** Gibt die Version der Assembly an. Entspricht <xref:System.Reflection.AssemblyVersionAttribute>
+**Copyright**\
+Gibt Copyrightinformationen für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyCopyrightAttribute>
 
- **Dateiversion:** Gibt eine Versionsnummer an, die den Compiler anweist, eine bestimmte Version der Versionsressource der Win32-Datei zu verwenden. Entspricht <xref:System.Reflection.AssemblyFileVersionAttribute>
+**Marke**\
+Gibt eine Marke für das Assemblymanifest an. Entspricht <xref:System.Reflection.AssemblyTrademarkAttribute>
 
- **GUID:** Eine eindeutige GUID zur Identifizierung der Assembly. Wenn Sie ein Projekt erstellen, generiert Visual Studio eine GUID für die Assembly. Entspricht <xref:System.Guid>
+**Assemblyversion**\
+Gibt die Version der Assembly an. Entspricht <xref:System.Reflection.AssemblyVersionAttribute>
 
- **Neutrale Sprache:** Gibt an, welche Kultur die Assembly unterstützt. Entspricht <xref:System.Resources.NeutralResourcesLanguageAttribute> Der Standardwert lautet **(Keine)** .
+**Dateiversion**\
+Gibt eine Versionsnummer an, die den Compiler anweist, eine bestimmte Version der Versionsressource der Win32-Datei zu verwenden. Entspricht <xref:System.Reflection.AssemblyFileVersionAttribute>
 
- **Assembly COM-sichtbar machen:** Gibt an, ob Typen in der Assembly für COM verfügbar sind. Entspricht <xref:System.Runtime.InteropServices.ComVisibleAttribute>
+**GUID**\
+Eine eindeutige GUID zur Identifizierung der Assembly. Wenn Sie ein Projekt erstellen, generiert Visual Studio eine GUID für die Assembly. Entspricht <xref:System.Guid>
+
+**Neutrale Sprache**\
+Gibt an, welche Kultur die Assembly unterstützt. Entspricht <xref:System.Resources.NeutralResourcesLanguageAttribute> Der Standardwert lautet **(Keine)** .
+
+**Assembly COM-sichtbar machen**\
+Gibt an, ob Typen in der Assembly für COM verfügbar sind. Entspricht <xref:System.Runtime.InteropServices.ComVisibleAttribute>
 
 ## <a name="see-also"></a>Siehe auch
 

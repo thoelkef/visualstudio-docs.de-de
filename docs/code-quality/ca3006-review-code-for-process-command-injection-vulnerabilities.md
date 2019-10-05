@@ -10,48 +10,48 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841442"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237281"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)
 
 |||
 |-|-|
-|TypeName|ReviewCodeForProcessCommandInjectionVulnerabilities|
+|TypeName|Reviewcodeforprocesscommandinjectionsicherheitsanfälligkeiten|
 |CheckId|CA3006|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Potenziell nicht vertrauenswürdige Eingabe der HTTP-Anforderung erreicht einen Process-Befehl.
+Potenziell nicht vertrauenswürdige HTTP-Anforderungs Eingaben erreichen einen Verarbeitungs Befehl.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Achten Sie darauf von Befehl Injection-Angriffen, bei der Arbeit mit nicht vertrauenswürdigen Eingaben. Ein Befehl-Injection-Angriff kann schädliche Befehle auf das zugrunde liegende Betriebssystem, gefährden die Sicherheit und Integrität Ihres Servers ausführen.
+Beachten Sie bei der Arbeit mit nicht vertrauenswürdigen Eingaben, dass Befehls Injection-Angriffe berücksichtigt werden. Ein Befehl zum Einschleusen von Befehlen kann bösartige Befehle auf dem zugrunde liegenden Betriebssystem ausführen und so die Sicherheit und Integrität des Servers beeinträchtigen.
 
-Mit dieser Regel versucht, Eingaben von HTTP-Anforderungen, die einen Verarbeitungsbefehl erreichen zu finden.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die einen Prozess startet, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, Eingaben von HTTP-Anforderungen zu suchen, die einen Verarbeitungs Befehl erreichen.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. die HTTP-Anforderungs Eingabe liest und Sie dann an eine andere Assembly übergibt, die einen Prozess startet, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Vermeiden Sie wenn möglich, Starten von Prozessen, die auf Grundlage der Benutzereingabe.
-- Überprüfen Sie die Eingabe anhand von einer bekannten, sicheren Gruppe von Zeichen und Länge.
+- Vermeiden Sie nach Möglichkeit das Starten von Prozessen auf der Grundlage von Benutzereingaben.
+- Überprüfen Sie die Eingabe anhand eines bekannten sicheren Satzes von Zeichen und Länge.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Wenn Sie wissen, wurde die Eingabe überprüft oder mit Escapezeichen versehen, um sicherzugehen, ist es sicher, diese Warnung unterdrücken.
+Wenn Sie wissen, dass die Eingabe als sicher überprüft wurde, können Sie diese Warnung sicher unterdrücken.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

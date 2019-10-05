@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461620"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918370"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Übersicht von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
@@ -69,17 +69,17 @@ Der Testcontroller stellt eine allgemeine Architektur zum Ausführen von Tests b
 
 Der Test-Agent wird als Dienst ausgeführt, der nach Anforderungen des Testcontrollers zum Starten eines neuen Tests lauscht. Wenn der Test-Agent eine Anforderung empfängt, startet der Test-Agent-Dienst einen Prozess zum Ausführen des Tests. Jeder Test-Agent führt den gleichen Auslastungstest aus.
 
- Den Test-Agents wird vom Administrator eine Gewichtung zugewiesen, und die Auslastung wird entsprechend der Gewichtung der Test-Agents verteilt. Wenn z. B. Test-Agent 1 eine Gewichtung von 30 und Test-Agent 2 eine Gewichtung von 70 hat, und die Auslastung auf 1.000 Benutzer festgelegt wurde, werden von Test-Agent 1 300 und von Test-Agent 2 700 virtuelle Benutzer simuliert. Weitere Informationen finden Sie unter [Verwalten von Testcontrollern und Test-Agents mit Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Den Test-Agents wird vom Administrator eine Gewichtung zugewiesen, und die Auslastung wird entsprechend der Gewichtung der Test-Agents verteilt. Wenn z. B. Test-Agent 1 eine Gewichtung von 30 und Test-Agent 2 eine Gewichtung von 70 hat, und die Auslastung auf 1.000 Benutzer festgelegt wurde, werden von Test-Agent 1 300 und von Test-Agent 2 700 virtuelle Benutzer simuliert. Weitere Informationen finden Sie unter [Verwalten von Testcontrollern und Test-Agents mit Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- Der Test-Agent erhält als Eingabe einen Satz von Tests und einen Satz von Simulationsparametern. Ein Schlüsselkonzept besteht darin, dass Tests von den Computern unabhängig sind, auf denen sie ausgeführt werden.
+Der Test-Agent erhält als Eingabe einen Satz von Tests und einen Satz von Simulationsparametern. Ein Schlüsselkonzept besteht darin, dass Tests von den Computern unabhängig sind, auf denen sie ausgeführt werden.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Verbindungspunkte zwischen Testcontrollern und Test-Agents
 
 In der folgenden Abbildung sind die Verbindungspunkte zwischen Testcontroller, Test-Agent und Client dargestellt. Sie enthält die Ports für eingehende und ausgehende Verbindungen sowie die für diese Ports verwendeten Sicherheitseinschränkungen.
 
- ![Ports und Sicherheit von Testcontrollern und Test-Agents](./media/test-controller-agent-firewall.png)
+![Ports und Sicherheit von Testcontrollern und Test-Agents](./media/test-controller-agent-firewall.png)
 
- Weitere Informationen finden Sie unter [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Weitere Informationen finden Sie unter [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Installationsinformationen für Testcontroller und Test-Agents
 

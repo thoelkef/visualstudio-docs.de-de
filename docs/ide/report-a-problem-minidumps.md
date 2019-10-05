@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: eefcbefa8b728afa677e7bd04fd538633ae117f0
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518176"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461664"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Erstellen von Minidumps für einen Visual Studio-Prozess mit allen Aufruflisten
 
@@ -40,7 +40,6 @@ In einigen Fällen kann Microsoft einen Minidump eines laufenden Visual Studio-P
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Abrufen der Aufruflisten aus dem Minidump
 
 1. Öffnen Sie die Speicherabbilddatei in Visual Studio.
-
 1. Navigieren Sie zu **Extras** > **Optionen** > **Debuggen** > **Symbole**, und stellen Sie sicher, dass **Microsoft-Symbolserver** unter **Speicherorte für Symboldateien (.pdb)** aktiviert ist.
 1. Öffnen Sie das **Befehlsfenster** (**Ansicht** > **Weitere Fenster** > **Befehlsfenster**).
 1. Geben Sie „~*k“ ein. Im Fenster werden die Aufruflisten aller Threads angezeigt.

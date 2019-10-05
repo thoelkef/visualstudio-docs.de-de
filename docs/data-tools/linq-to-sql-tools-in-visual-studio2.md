@@ -8,72 +8,72 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4105a93d4ad459c8bc1cb3a7a20b37c69f311c12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9511f2101c8dbac0ae8a9ba9e08f9a4f22067c3a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566425"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252927"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL-Tools in Visual Studio
 
-LINQ to SQL war die erste objektrelationales Mapping-Technologie von Microsoft veröffentlicht. Es funktioniert gut in grundlegenden Szenarien und weiterhin in Visual Studio unterstützt werden, aber es ist nicht mehr in der aktiven Entwicklung. Verwenden Sie LINQ to SQL, wenn eine ältere Anwendung verwaltet, die es bereits verwendet wird, oder in einfache Anwendungen, die SQL Server verwenden und erfordern keine mit mehreren Tabellen zuordnen. Neue Anwendungen sollten im Allgemeinen das Entity Framework verwenden, wenn eine objektrelationale Zuordnung-Ebene erforderlich ist.
+LINQ to SQL war die erste Objekt relationale Mapping-Technologie, die von Microsoft veröffentlicht wurde. Dies funktioniert in einfachen Szenarien gut und wird in Visual Studio weiterhin unterstützt, ist jedoch nicht mehr in der aktiven Entwicklung. Verwenden Sie LINQ to SQL, wenn Sie eine ältere Anwendung verwalten, die Sie bereits verwendet, oder in einfachen Anwendungen, die SQL Server verwenden und keine Zuordnung mit mehreren Tabellen benötigen. Im Allgemeinen sollten neue Anwendungen die Entity Framework verwenden, wenn eine Objekt relationale Mapper-Ebene erforderlich ist.
 
-In Visual Studio, erstellen Sie LINQ to SQL-Klassen, die darstellen, SQL-Tabellen mithilfe der **Object Relational Designer** (**O/R Designer**).
+In Visual Studio erstellen Sie LINQ to SQL Klassen, die SQL-Tabellen darstellen, mithilfe der **objektrelationaler Designer** (**O/R-Designer**).
 
-Die **O/R Designer** verfügt über zwei verschiedene Bereiche auf seiner Entwurfsoberfläche: den Entitätenbereich auf der linken Seite und den Methodenbereich auf der rechten Seite. Der Entitätenbereich ist die Hauptentwurfsoberfläche, auf der Entitätsklassen, Zuordnungen und Vererbungshierarchien angezeigt werden. Der Methodenbereich ist die Entwurfsoberfläche, auf der die <xref:System.Data.Linq.DataContext>-Methoden angezeigt werden, die gespeicherten Prozeduren und Funktionen zugeordnet sind.
+Der **O/R-Designer** hat zwei unterschiedliche Bereiche auf der Entwurfs Oberfläche: der Bereich Entitäten auf der linken Seite und der Bereich Methoden auf der rechten Seite. Der Entitätenbereich ist die Hauptentwurfsoberfläche, auf der Entitätsklassen, Zuordnungen und Vererbungshierarchien angezeigt werden. Der Methodenbereich ist die Entwurfsoberfläche, auf der die <xref:System.Data.Linq.DataContext>-Methoden angezeigt werden, die gespeicherten Prozeduren und Funktionen zugeordnet sind.
 
-Die **O/R Designer** bietet eine visuelle Entwurfsoberfläche zum Erstellen von [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) -Entitätsklassen und-Zuordnungen (Beziehungen), die auf Objekte in einer Datenbank basieren. Das heißt, die **O/R Designer** erstellt ein Objekt in einer Anwendung, die Objekte in einer Datenbank zugeordnet ist. Außerdem generiert er einen stark typisierten <xref:System.Data.Linq.DataContext> , sendet und empfängt Daten zwischen Entitätsklassen und der Datenbank. Die **O/R Designer** auch bietet Funktionen zum Zuordnen gespeicherter Prozeduren und Funktionen <xref:System.Data.Linq.DataContext> Methoden zum Zurückgeben von Daten und Füllen von Entitätsklassen. Zum Schluss die **O/R Designer** bietet die Möglichkeit zum Entwerfen von vererbungsbeziehungen zwischen Entitätsklassen.
+Der **O/R-Designer** stellt eine visuelle Entwurfs Oberfläche zum Erstellen von [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) Entitäts Klassen und-Zuordnungen (Beziehungen) bereit, die auf Objekten in einer Datenbank basieren. Mit anderen Worten: der **O/R-Designer** erstellt in einer Anwendung, die Objekten in einer Datenbank zugeordnet wird, ein Objektmodell. Außerdem wird ein stark typisiertes <xref:System.Data.Linq.DataContext> generiert, das Daten zwischen den Entitäts Klassen und der Datenbank sendet und empfängt. Der **O/R-Designer** bietet auch Funktionen zum Zuordnen gespeicherter Prozeduren und Funktionen zu <xref:System.Data.Linq.DataContext> Methoden zum Zurückgeben von Daten und Auffüllen von Entitäts Klassen. Schließlich bietet der **O/R-Designer** die Möglichkeit, Vererbungs Beziehungen zwischen Entitäts Klassen zu entwerfen.
 
-## <a name="open-the-or-designer"></a>Öffnen Sie den O/R-designer
+## <a name="open-the-or-designer"></a>Öffnen Sie den O/R-Designer.
 
-Wählen Sie zum Hinzufügen einer LINQ to SQL-Entity-Datenmodell zu Ihrem Projekt **Projekt** > **neues Element hinzufügen**, und wählen Sie dann **LINQ to SQL-Klassen** aus der Liste der Projektelemente:
+Um dem Projekt ein LINQ to SQL Entitäts Modell hinzuzufügen, wählen Sie **Projekt** > **Neues Element hinzufügen**aus, und wählen Sie dann **LINQ to SQL Klassen** aus der Liste der Projekt Elemente aus:
 
 ![LINQ to SQL-Klassen](../data-tools/media/raddata-linq-to-sql-classes.png)
 
-Visual Studio erstellt eine *dbml* Datei und fügt es der Projektmappe hinzu. Dies ist die XML-Zuordnungsdatei und die zugehörigen Code-Dateien.
+Visual Studio erstellt eine *DBML* -Datei und fügt Sie der Projekt Mappe hinzu. Dies ist die XML-Mapping-Datei und die zugehörigen Code Dateien.
 
-![LINQ to SQL-Klassen im Projektmappen-Explorer](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
+![LINQ to SQL Klassen in Projektmappen-Explorer](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
 
-Bei der Auswahl der *dbml* -Datei, zeigt Visual Studio die **O/R Designer** Oberfläche, die Ihnen zur visuellen Erstellung des Modells ermöglicht. Die folgende Abbildung zeigt den Designer nach der Northwind `Customers` und `Orders` Tabellen verfügen über gezogen wurden **Server-Explorer**. Beachten Sie die Beziehung zwischen den Tabellen.
+Wenn Sie die *DBML* -Datei auswählen, zeigt Visual Studio die **O/R-Designer** Oberfläche an, die es Ihnen ermöglicht, das Modell visuell zu erstellen. Die folgende Abbildung zeigt den Designer, nachdem die `Customers` Northwind `Orders` -und-Tabellen aus **Server-Explorer**gezogen wurden. Beachten Sie die Beziehung zwischen den Tabellen.
 
 ![LINQ to SQL-Designer](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> Die **O/R Designer** ist eine einfache objektrelationale Zuordnungen, da es nur 1:1-zuordnungsbeziehungen unterstützt. Das heißt, dass eine Entitätsklasse nur über eine 1:1-Zuordnungsbeziehung zu einer Datenbanktabelle oder -ansicht verfügen kann. Komplexe Zuordnungen, z. B. die Zuordnung einer Entitätsklasse zu einer verknüpften Tabelle, wird nicht unterstützt. Verwenden Sie das Entity Framework für die komplexe Zuordnung. Darüber hinaus ist der Designer ein unidirektionaler Code-Generator. Das bedeutet, dass in der Codedatei nur Änderungen der Designeroberfläche wiedergegeben werden. Manuelle Änderungen an der Codedatei werden nicht wiedergegeben, der **O/R Designer**. In der Codedatei vorgenommene manuelle Änderungen werden überschrieben, wenn der Designer gespeichert und Code erneut generiert wird. Informationen zum Hinzufügen von Benutzercode und Erweitern der von generierten Klassen die **O/R Designer**, finden Sie unter [Vorgehensweise: Erweitern von O/R-Designer erstellten Code](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> Der **O/R-Designer** ist ein einfacher objektrelationaler Mapper, da er nur 1:1-Zuordnungsbeziehungen unterstützt. Das heißt, dass eine Entitätsklasse nur über eine 1:1-Zuordnungsbeziehung zu einer Datenbanktabelle oder -ansicht verfügen kann. Eine komplexe Zuordnung, wie z. b. die Zuordnung einer Entitäts Klasse zu einer verbundenen Tabelle, wird nicht unterstützt. Verwenden Sie die Entity Framework für die komplexe Zuordnung. Darüber hinaus ist der Designer ein unidirektionaler Code-Generator. Das bedeutet, dass in der Codedatei nur Änderungen der Designeroberfläche wiedergegeben werden. Manuelle Änderungen an der Codedatei werden im **O/R-Designer**nicht widergespiegelt. In der Codedatei vorgenommene manuelle Änderungen werden überschrieben, wenn der Designer gespeichert und Code erneut generiert wird. Weitere Informationen zum Hinzufügen von Benutzercode und Erweitern der vom **O/R-Designer**generierten Klassen finden [Sie unter Gewusst wie: Erweitern Sie den Code, der vom O/](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)R-Designer generiert wurde.
 
-## <a name="create-and-configure-the-datacontext"></a>Erstellen Sie und konfigurieren Sie den DataContext
+## <a name="create-and-configure-the-datacontext"></a>Erstellen und Konfigurieren des DataContext
 
-Nach dem Hinzufügen einer **LINQ to SQL-Klassen** Element zu einem Projekt, und Öffnen der **O/R Designer**, die leere Entwurfsoberfläche stellt ein leeres <xref:System.Data.Linq.DataContext> bereit für die Konfiguration. Die Klasse <xref:System.Data.Linq.DataContext> wird mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf die Entwurfsoberfläche gezogen wird. Deshalb wird die Klasse <xref:System.Data.Linq.DataContext> mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf der Entwurfsoberfläche abgelegt wird. Weitere Informationen zu den <xref:System.Data.Linq.DataContext> Klasse finden Sie unter [DataContext-Methoden (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+Nachdem Sie einem Projekt ein **LINQ to SQL Classes** -Element hinzugefügt und den **O/R-Designer**geöffnet haben, stellt die leere Entwurfs <xref:System.Data.Linq.DataContext> Oberfläche eine leere bereit, die konfiguriert werden kann. Die Klasse <xref:System.Data.Linq.DataContext> wird mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf die Entwurfsoberfläche gezogen wird. Deshalb wird die Klasse <xref:System.Data.Linq.DataContext> mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf der Entwurfsoberfläche abgelegt wird. Weitere Informationen <xref:System.Data.Linq.DataContext> zur-Klasse finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Erstellen von Entitätsklassen, die Datenbanktabellen und-Sichten zugeordnet
+## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Erstellen von Entitäts Klassen, die Datenbanktabellen und-Sichten zugeordnet sind
 
-Sie können Entitätsklassen, die zu Tabellen und Ansichten zugeordnet sind, durch Ziehen von Datenbanktabellen und-Sichten aus erstellen **Server-Explorer** oder **Datenbank-Explorer** auf die **O/R Designer**. Wie im vorherigen Abschnitt angegeben, wird die Klasse <xref:System.Data.Linq.DataContext> mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf die Entwurfsoberfläche gezogen wird. Wenn ein nachfolgendes Element, das einer anderen Verbindung hinzugefügt wird die **O/R Designer**, Sie können ändern, dass die Verbindung für die <xref:System.Data.Linq.DataContext>. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von LINQ to SQL-Klassen, die Tabellen und Ansichten zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Sie können Entitäts Klassen erstellen, die Tabellen und Sichten zugeordnet sind, indem Sie Datenbanktabellen und-Sichten von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen. Wie im vorherigen Abschnitt angegeben, wird die Klasse <xref:System.Data.Linq.DataContext> mithilfe der Verbindungsinformationen des ersten Elements konfiguriert, das auf die Entwurfsoberfläche gezogen wird. Wenn ein nachfolgendes Element, das eine andere Verbindung verwendet, dem **O/R-Designer**hinzugefügt wird, können Sie die <xref:System.Data.Linq.DataContext>Verbindung für den ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von LINQ to SQL-Klassen, die Tabellen und Ansichten zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
-## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Erstellen Sie DataContext-Methoden, die gespeicherten Prozeduren und Funktionen aufrufen.
+## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Erstellen von DataContext-Methoden, die gespeicherte Prozeduren und Funktionen abrufen
 
-Sie erstellen <xref:System.Data.Linq.DataContext> Methoden, die aufgerufen werden (zugeordnet) gespeicherte Prozeduren und Funktionen durch Ziehen von **Server-Explorer** oder **Datenbank-Explorer** auf die **O/R-Designer** . Gespeicherte Prozeduren und Funktionen hinzugefügt werden die **O/R Designer** Methoden wie die <xref:System.Data.Linq.DataContext>.
+Sie können Methoden <xref:System.Data.Linq.DataContext> erstellen, die gespeicherte Prozeduren und Funktionen aufzurufen, indem Sie Sie von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen. Gespeicherte Prozeduren und Funktionen werden dem **O/R-Designer** als Methoden des <xref:System.Data.Linq.DataContext>hinzugefügt.
 
 > [!NOTE]
-> Beim Ziehen von gespeicherten Prozeduren und Funktionen von **Server-Explorer** oder **Datenbank-Explorer** auf die **O/R Designer**, der Rückgabetyp der generierten <xref:System.Data.Linq.DataContext> Methode hängt davon ab, in dem Sie das Element ablegen. Weitere Informationen finden Sie unter [DataContext-Methoden (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+> Wenn Sie gespeicherte Prozeduren und Funktionen von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen, unterscheidet sich <xref:System.Data.Linq.DataContext> der Rückgabetyp der generierten Methode je nachdem, wo Sie das Element ablegen. Weitere Informationen finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Konfigurieren von DataContext, um gespeicherte Prozeduren zu verwenden, um Daten zwischen Entitätsklassen und einer Datenbank speichern
+## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Konfigurieren eines DataContext für die Verwendung gespeicherter Prozeduren zum Speichern von Daten zwischen Entitäts Klassen und einer Datenbank
 
-Wie bereits angemerkt wurde, können <xref:System.Data.Linq.DataContext>-Methoden erstellt werden, die gespeicherte Prozeduren und Funktionen aufrufen. Darüber hinaus können Sie auch gespeicherte Prozeduren zuweisen, die für die Standardinstanz verwendet werden, LINQ to SQL-Laufzeitverhalten, die ausführt, einfügungen, Updates, und löscht. Weitere Informationen finden Sie unter [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Wie bereits angemerkt wurde, können <xref:System.Data.Linq.DataContext>-Methoden erstellt werden, die gespeicherte Prozeduren und Funktionen aufrufen. Außerdem können Sie gespeicherte Prozeduren zuweisen, die für das standardmäßige LINQ to SQL Laufzeitverhalten verwendet werden, das Einfügungen, Aktualisierungen und Löschungen ausführt. Weitere Informationen finden Sie unter [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Vererbung und der O/R-Designer
 
-Wie bei anderen Objekten die LINQ to SQL-Klassen kann Vererbung verwenden und aus anderen Klassen abgeleitet werden. Vererbungsbeziehungen werden in einer Datenbank auf verschiedene Arten erstellt. Die **O/R Designer** unterstützt das Konzept der Vererbung einer einzelnen Tabelle aus, wie häufig in relationalen Systemen implementierte. Weitere Informationen finden Sie unter [Vorgehensweise: Configure inheritance by using the O/R Designer (Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer)](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Wie bei anderen-Objekten können LINQ to SQL-Klassen die Vererbung verwenden und von anderen Klassen abgeleitet werden. Vererbungsbeziehungen werden in einer Datenbank auf verschiedene Arten erstellt. Der **O/R-Designer** unterstützt das Konzept der Vererbung einer einzelnen Tabelle, da es häufig in relationalen Systemen implementiert wird. Weitere Informationen finden Sie unter [Vorgehensweise: Configure inheritance by using the O/R Designer (Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer)](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL-Abfragen
 
-Die Entitätsklassen erstellt die **O/R Designer** dienen zur Verwendung mit [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/). Weitere Informationen finden Sie unter [Vorgehensweise: Abfragen von Informationen](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+Die vom **O/R-Designer** erstellten Entitäts Klassen sind für die Verwendung mit [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)konzipiert. Weitere Informationen finden Sie unter [Vorgehensweise: Abfragen von Informationen](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
-## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Trennen Sie den generierten DataContext und Entity-Klasse-Code in verschiedene namespaces
+## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Den generierten DataContext-und Entitäts Klassen Code in verschiedene Namespaces aufteilen
 
-Die **O/R Designer** bietet die **Kontext Namespace** und **Entity Namespace** Eigenschaften für die <xref:System.Data.Linq.DataContext>. Mit diesen Eigenschaften wird festgelegt in welchen Namespace der <xref:System.Data.Linq.DataContext> und der Entitätsklassencode generiert werden. Standardmäßig sind diese Eigenschaften leer, und der <xref:System.Data.Linq.DataContext> und die Entitätsklassen werden in den Namespace der Anwendung generiert. Geben Sie einen Wert in die Eigenschaften **Context Namespace** und/oder **Entity Namespace** ein, um den Code in einem anderen Namespace als dem der Anwendung zu generieren.
+Der **O/R-Designer** stellt die **Kontext Namespace** -und <xref:System.Data.Linq.DataContext> **Entitäts Namespace** -Eigenschaften für bereit. Mit diesen Eigenschaften wird festgelegt in welchen Namespace der <xref:System.Data.Linq.DataContext> und der Entitätsklassencode generiert werden. Standardmäßig sind diese Eigenschaften leer, und der <xref:System.Data.Linq.DataContext> und die Entitätsklassen werden in den Namespace der Anwendung generiert. Geben Sie einen Wert in die Eigenschaften **Context Namespace** und/oder **Entity Namespace** ein, um den Code in einem anderen Namespace als dem der Anwendung zu generieren.
 
-## <a name="reference-content"></a>Verweisen auf Inhalte
+## <a name="reference-content"></a>Referenz Inhalt
 
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
@@ -81,4 +81,4 @@ Die **O/R Designer** bietet die **Kontext Namespace** und **Entity Namespace** E
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
-- [Häufig gestellte Fragen ((.NET Framework)](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)
+- [Häufig gestellte Fragen (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)

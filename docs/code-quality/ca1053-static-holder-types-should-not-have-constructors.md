@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388315"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235582"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Statische Haltertypen sollten keine Konstruktoren aufweisen.
+# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: Statische Halter Typen sollten keine Standardkonstruktoren aufweisen.
 
 |||
 |-|-|
@@ -30,22 +30,21 @@ ms.locfileid: "63388315"
 |Kategorie|Microsoft.Design|
 |Unterbrechende Änderung|Breaking|
 
+> [!NOTE]
+> Die Regel CA1053 wird in [CA1052 kombiniert: Statische Halter Typen sollten in](ca1052-static-holder-types-should-be-sealed.md) [FxCop-Analyzern](fxcop-analyzers.yml)versiegelt sein.
+
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder verschachtelter öffentlicher Typ deklariert nur statische Member und verfügt über einen öffentlichen oder geschützten Standardkonstruktor.
+
+Ein öffentlicher oder ein eingefügter öffentlicher Typ deklariert nur statische Member und verfügt über einen Standardkonstruktor.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Der Konstruktor ist überflüssig, da zum Aufrufen statischer Member keine Instanz des Typs erforderlich ist. Darüber hinaus, da der Typ keine nicht statische Member, bietet erstellen Sie eine Instanz Zugriff auf Member des Typs keine.
+
+Der Standardkonstruktor ist nicht erforderlich, da das Aufrufen statischer Member keine Instanz des Typs erfordert. Da der Typ nicht über nicht statische Member verfügt, bietet das Erstellen einer-Instanz keinen Zugriff auf die Member des Typs.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Standardkonstruktor, oder stellen sie private.
 
-> [!NOTE]
-> Einige Compiler erstellen automatisch einen öffentlichen Standardkonstruktor, wenn der Typ keine Konstruktoren definiert ist. Ist dies der Fall bei Ihrem Typ, fügen Sie einen privaten Standardkonstruktor, um die Verletzung zu entfernen.
+Entfernen Sie den Standardkonstruktor, um einen Verstoß gegen diese Regel zu beheben.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel. Das Vorhandensein des Konstruktors legt nahe, dass der Typ nicht um einen statischen Typ ist.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass kein Standardkonstruktor vorhanden, im Quellcode ist. Wenn dieser Code in eine Assembly kompiliert wird, wird der C#-Compiler einen Standardkonstruktor, einfügen, der gegen diese Regel verstoßen wird. Um dies zu korrigieren, deklarieren Sie einen privaten Konstruktor.
-
- [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]
+Unterdrücken Sie keine Warnung dieser Regel. Das vorhanden sein des Standardkonstruktors deutet darauf hin, dass der Typ kein statischer Typ ist.

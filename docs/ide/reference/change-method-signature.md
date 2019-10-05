@@ -1,9 +1,10 @@
 ---
-title: Umgestalten der Methodensignatur
+title: Ändern der Methodensignatur
+description: Entfernen von Parametern einer Methode oder Ändern deren Reihenfolge Klicken Sie mit der rechten Maustaste auf eine Methode, wählen Sie „Schnelle Aktionen“ und anschließend „Refactorings“ aus, und klicken Sie auf „Signatur ändern“.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.remove
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791110"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711264"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Ändern einer Methodensignatur durch Refactoring
 
@@ -50,7 +51,7 @@ Dieses Refactoring gilt für:
 
    - **Tastatur**
       - Drücken Sie **STRG+R** und dann **STRG+V**.  (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
-      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Signatur ändern** aus.
+      - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Signatur ändern** aus.
    - **Maus**
       - Wählen Sie **Bearbeiten > Umgestalten > Parameter entfernen** aus.
       - Wählen Sie **Bearbeiten > Umgestalten > Parameter neu anordnen** aus.
@@ -60,7 +61,7 @@ Dieses Refactoring gilt für:
 
    ![Dialogfeld „Signatur ändern“](media/changesignature-dialog-cs.png)
 
-   | Schaltfläche | Beschreibung
+   | Schaltfläche | BESCHREIBUNG
    | ------ | ---
    | **Nach oben/unten** | Den ausgewählten Parameter in der Liste nach oben oder nach unten verschieben
    | **Entfernen** | Den ausgewählten Parameter aus der Liste entfernen

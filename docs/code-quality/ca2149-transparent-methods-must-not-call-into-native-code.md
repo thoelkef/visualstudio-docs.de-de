@@ -10,33 +10,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 462ddeebba217e3a129736d1532aeec6b106d0cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e75b12b820b3ff3ac5a26f83148a49ca87c12ad
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542143"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231952"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.
 
 |||
 |-|-|
-|TypeName|TransparentMethodsMustNotCallNativeCode|
+|TypeName|Transparentmethodsmustnotcallnativecode|
 |CheckId|CA2149|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methode aufruft, eine native Funktion durch einen Methodenstub wie z. B. P/Invoke.
+Eine Methode ruft eine native Funktion durch einen Methodenstub wie z. b. P/Aufruf auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Mit dieser Regel wird für jede transparente Methode, die direkt in nativen Code, z. B. mit P/Invoke aufruft ausgelöst. Verstöße gegen diese Regel führen zu einem <xref:System.MethodAccessException> im Transparenzmodell der Ebene 2 und einer vollständigen Anforderung für <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> im Transparenzmodell Ebene 1.
+Diese Regel wird für jede transparente Methode ausgelöst, die direkt in nativem Code aufruft, z. b. über einen P/-Aufruf. Verstöße gegen diese Regel führen im Transparenz <xref:System.MethodAccessException> Modell der Ebene 2 zu einer und <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> im Transparenz Modell der Ebene 1 zu einer vollständigen Anforderung.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode, die mit den systemeigenen Code Ruft die <xref:System.Security.SecurityCriticalAttribute> oder <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.
+Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode, die den nativen <xref:System.Security.SecurityCriticalAttribute> Code <xref:System.Security.SecuritySafeCriticalAttribute> mit dem-Attribut oder dem-Attribut aufruft.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- [!code-csharp[FxCop.Security.CA2149.TransparentMethodsMustNotCallNativeCode#1](../code-quality/codesnippet/CSharp/ca2149-transparent-methods-must-not-call-into-native-code_1.cs)]
+[!code-csharp[FxCop.Security.CA2149.TransparentMethodsMustNotCallNativeCode#1](../code-quality/codesnippet/CSharp/ca2149-transparent-methods-must-not-call-into-native-code_1.cs)]

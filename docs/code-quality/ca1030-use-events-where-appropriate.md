@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a3d2ef30018c7fe57f1e7d728ba1dd152f56f5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 28d71fbfc10532f7c9420ea7e847ef4c29b88854
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714295"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236077"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Nach Möglichkeit Ereignisse verwenden.
 
@@ -32,35 +32,35 @@ ms.locfileid: "66714295"
 
 ## <a name="cause"></a>Ursache
 
-Namen einer Methode beginnt mit einer der folgenden:
+Ein Methodenname beginnt mit einem der folgenden:
 
 - AddOn
 - RemoveOn
-- Auslösen
-- Auslösen
+- Lösch
+- züchten
 
-Diese Regel nur sucht standardmäßig an extern sichtbare Methoden, dies ist jedoch [konfigurierbare](#configurability).
+Standardmäßig betrachtet diese Regel nur extern sichtbare Methoden, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel erkennt Methoden, deren Namen normalerweise für Ereignisse verwendet würden. Ereignisse befolgen das Entwurfsmuster "Beobachter" oder "Veröffentlichen-Abonnieren"; Sie werden verwendet, wenn eine Zustandsänderung bei einem Objekt auf andere Objekte übertragen werden muss. Wenn eine Methode als Reaktion auf eine klar definierte Zustandsänderung hin aufgerufen wird, sollte die Methode von einem Ereignishandler aufgerufen werden. Objekte, die die Methode aufrufen, sollten Ereignisse auslösen, statt die Methode direkt aufzurufen.
+Diese Regel erkennt Methoden, deren Namen normalerweise für Ereignisse verwendet würden. Ereignisse folgen dem Observer-oder Publish-Subscribe-Entwurfsmuster. Sie werden verwendet, wenn eine Zustandsänderung in einem Objekt an andere Objekte übermittelt werden muss. Wenn eine Methode als Reaktion auf eine klar definierte Zustandsänderung aufgerufen wird, sollte die Methode von einem Ereignishandler aufgerufen werden. Objekte, die die Methode aufrufen, sollten Ereignisse auslösen, statt die Methode direkt aufzurufen.
 
-Einige allgemeine Beispiele für Ereignisse werden in Benutzeroberflächenanwendungen gefunden, in denen eine Benutzeraktion wie das Klicken auf eine Schaltfläche führt dazu, ein Segment des Codes dass ausgeführt. Das Ereignismodell für .NET ist nicht auf Benutzeroberflächen beschränkt. Sie sollten überall dort verwendet werden, mit denen Sie kommunizieren müssen, dass Zustandsänderungen auf eine oder mehrere Objekte.
+Einige häufige Beispiele für Ereignisse finden Sie in Benutzeroberflächen Anwendungen, bei denen eine Benutzeraktion, wie z. b. das Klicken auf eine Schaltfläche, bewirkt, dass ein Code Ausschnitt ausgeführt wird Das .NET-Ereignis Modell ist nicht auf Benutzeroberflächen beschränkt. Sie sollte überall dort verwendet werden, wo Sie Zustandsänderungen an einem oder mehreren Objekten übermitteln müssen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Wenn die Methode aufgerufen wird, wenn der Status eines Objekts geändert wird, empfiehlt sich das Design, um das Ereignismodell für .NET verwenden.
+Wenn die-Methode aufgerufen wird, wenn sich der Zustand eines Objekts ändert, sollten Sie den Entwurf ändern, damit das .NET-Ereignis Modell verwendet werden kann.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie eine Warnung dieser Regel, wenn die Methode nicht mit dem .NET Ereignismodell funktioniert.
+Unterdrückt eine Warnung aus dieser Regel, wenn die Methode nicht mit dem .NET-Ereignis Modell funktioniert.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1030.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).

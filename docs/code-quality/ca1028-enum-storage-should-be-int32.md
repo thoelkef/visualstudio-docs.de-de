@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eee81a96e6841aa77e2056a95bd18979724b62e5
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842395"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236087"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Der Enumerationsspeicher sollte Int32 sein.
 
@@ -37,51 +37,51 @@ ms.locfileid: "65842395"
 
 Der zugrunde liegende Typ einer Enumeration ist nicht <xref:System.Int32?displayProperty=fullName>.
 
-Dies ist jedoch standardmäßig diese Regel nur untersucht öffentliche Enumerationen [konfigurierbare](#configurability).
+Standardmäßig untersucht diese Regel nur öffentliche Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. In der Standardeinstellung die <xref:System.Int32?displayProperty=fullName> -Datentyp wird verwendet, um den konstanten Wert zu speichern. Auch wenn Sie dies zugrunde liegende Typ ändern können, ist es nicht notwendig oder empfehlenswert für die meisten Szenarien. Keine erhebliche Leistungszunahme erfolgt über einen Datentyp, der kleiner ist als <xref:System.Int32>. Wenn Sie den Standarddatentyp verwenden können, verwenden Sie eine von der Common Language-System (CLS)-kompatiblen ganzzahligen Typen <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, oder <xref:System.Int64> um sicherzustellen, dass alle Werte der Enumeration dargestellt werden können CLS-kompatible Programmiersprachen.
+Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. Standardmäßig wird der <xref:System.Int32?displayProperty=fullName> -Datentyp verwendet, um den konstanten Wert zu speichern. Obwohl Sie diesen zugrunde liegenden Typ ändern können, ist es für die meisten Szenarien nicht notwendig oder empfehlenswert. Durch die Verwendung eines-Datentyps, der kleiner als <xref:System.Int32>ist, wird kein erheblicher Leistungsgewinn erzielt. Wenn Sie den Standard Datentyp nicht verwenden können, sollten Sie einen der CLS-kompatiblen ganzzahligen Typen (Common Language System) <xref:System.Byte>, <xref:System.Int16> <xref:System.Int32>,, oder <xref:System.Int64> verwenden, um sicherzustellen, dass alle Werte der-Enumeration in CLS-kompatible Programmiersprachen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, wenn Probleme mit der Größe oder Kompatibilität vorhanden sind, verwenden Sie <xref:System.Int32>. Für Situationen, in denen <xref:System.Int32> ist nicht groß genug, um die Werte aufnehmen, verwenden Sie <xref:System.Int64>. Wenn die Abwärtskompatibilität mit einen kleineren Datentyp erforderlich ist, verwenden Sie <xref:System.Byte> oder <xref:System.Int16>.
+Verwenden <xref:System.Int32>Sie, um einen Verstoß gegen diese Regel zu beheben, sofern keine Größen-oder Kompatibilitätsprobleme vorhanden sind. <xref:System.Int32> Verwenden<xref:System.Int64>Sie für Situationen, in denen nicht groß genug ist, um die Werte zu speichern. Wenn die Abwärtskompatibilität einen kleineren Datentyp erfordert, <xref:System.Byte> verwenden <xref:System.Int16>Sie oder.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie eine Warnung dieser Regel nur, wenn Sie Abwärtskompatibilität erforderlich ist. In Anwendungen ist nicht in der Regel mit dieser Regel entsprechen keine Probleme verursachen. Bibliotheken, in denen Interoperabilität erforderlich ist, kann der Fehler, die mit dieser Regel kompatibel Ihre Benutzer beeinträchtigen.
+Unterdrückt eine Warnung aus dieser Regel nur, wenn dies bei Problemen mit der Abwärtskompatibilität erforderlich ist. In-Anwendungen verursacht die fehlgeschlagene Einhaltung dieser Regel keine Probleme. In Bibliotheken, bei denen die sprach Interoperabilität erforderlich ist, kann sich die Einhaltung dieser Regel nicht negativ auf die Benutzer auswirken.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 
-Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+Wenn Sie diese Regel von [FxCop](install-fxcop-analyzers.md) Analyzer (und nicht mit der Legacy Analyse) ausführen, können Sie basierend auf ihrer Barrierefreiheit konfigurieren, für welche Teile Ihrer Codebasis diese Regel ausgeführt werden soll. Um z. b. anzugeben, dass die Regel nur für die nicht öffentliche API-Oberfläche ausgeführt werden soll, fügen Sie das folgende Schlüssel-Wert-Paar in eine Editor config-Datei in Ihrem Projekt ein:
 
 ```ini
 dotnet_code_quality.ca1028.api_surface = private, internal
 ```
 
-Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
+Sie können diese Option nur für diese Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Entwurf) konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von FxCop-Analysen](configure-fxcop-analyzers.md).
 
-## <a name="example-of-a-violation"></a>Beispiel eines Verstoßes
+## <a name="example-of-a-violation"></a>Beispiel für eine Verletzung
 
-Das folgende Beispiel zeigt zwei Enumerationen, die nicht den empfohlenen zugrunde liegenden Datentyp verwenden.
+Das folgende Beispiel zeigt zwei Enumerationen, die den empfohlenen zugrunde liegenden Datentyp nicht verwenden.
 
 [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
 [!code-csharp[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>Beispiel für die Behebung
+## <a name="example-of-how-to-fix"></a>Beispiel für das Beheben von
 
-Im folgenden Beispiel wird der vorherige Verstoß durch ändern den zugrunde liegenden Datentyp, korrigiert <xref:System.Int32>.
+Im folgenden Beispiel wird der vorherige Verstoß korrigiert, indem der zugrunde liegende- <xref:System.Int32>Datentyp in geändert wird.
 
 [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
 [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1008: -Enumerationen sollten NULL-Wert aufweisen.](../code-quality/ca1008-enums-should-have-zero-value.md)
-- [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217: Nicht Enumerationen mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Enumerationswerte nicht mit "Reserviert" benennen](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Führen Sie keine Präfixe für Enumerationswerte mit Typnamen](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1008: Enumerationswerte sollten NULL-Werte aufweisen.](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1700: Enumerationswerte "reserviert" nicht benennen](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Enumerationswerte nicht mit Typname als Präfix versehen](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Siehe auch
 

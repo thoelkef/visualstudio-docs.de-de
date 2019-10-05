@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb41f2ad4548933d10137e7f72cae59643d33043
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545983"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233875"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Bezeichner sollten kein falsches Präfix aufweisen.
 
@@ -31,20 +31,20 @@ ms.locfileid: "62545983"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Bezeichner weist ein falsches Präfix.
+Ein Bezeichner weist ein falsches Präfix auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Gemäß der Konvention verfügen nur bestimmte Programmierelemente über Namen, die mit einem bestimmten Präfix anfangen.
+Gemäß der Konvention verfügen nur bestimmte Programmierelemente über Namen, die mit einem bestimmten Präfix anfangen.
 
- Typnamen müssen sich nicht auf ein bestimmtes Präfix und nicht das Präfix ein "C". Diese Regel meldet Verstöße Typnamen wie "CMyClass und meldet keine Verstöße für Typnamen wie"Cache".
+Typnamen haben kein bestimmtes Präfix und sollten kein "C" als Präfix aufweisen. Diese Regel meldet Verstöße gegen Typnamen wie z. b. "CMyClass" und meldet keine Verstöße gegen Typnamen, wie z. b. "Cache".
 
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Diese Konsistenz reduziert die Lernkurve, die für neue Softwarebibliotheken erforderlich ist und zudem wird das Kundenvertrauen, dass die Bibliothek von einer Person entwickelt wurde, die Erfahrung in der Entwicklung von verwaltetem Code hat.
+Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Diese Konsistenz reduziert die Lernkurve, die für neue Software Bibliotheken erforderlich ist, und steigert das Kunden Vertrauen, dass die Bibliothek von einer Person entwickelt wurde, die über Kenntnisse in der Entwicklung von verwaltetem Code verfügt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie das Präfix aus einem Bezeichner.
+Entfernen Sie das Präfix aus dem Bezeichner.
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel.
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1715: Bezeichner sollten ein korrektes Präfix aufweisen](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

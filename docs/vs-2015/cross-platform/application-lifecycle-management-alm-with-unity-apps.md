@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 9d3624fd8b69a51d3d9de1776bc6d2e7bc61a4c1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 65b87c0c03e51e5b14fae7c59a8ac7f9eb8ec0e7
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696179"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740193"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) mit Unity-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
  In den folgenden Tabellen sehen Sie, welche Visual Studio-ALM-Funktionen bei der Arbeit mit Unity verwendet werden können. Ausführliche Informationen über die Funktionen selbst finden Sie in der verknüpften Dokumentation.  
   
 ## <a name="agile-tools"></a>Agile-Tools  
- Referenzlink: **[Arbeit](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
+ Referenzlink: **[Arbeiten](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** Sie (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
   
  Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Projekttyp und den Programmiersprachen unabhängig.  
   
@@ -39,7 +39,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |Berichte und Visualisierung des Fortschritts|Ja||  
   
 ## <a name="modeling"></a>Modellierung  
- Referenzlink: **[Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)**  
+ Referenzlink: **[Analysieren und modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)**  
   
  Allgemeiner Hinweis: Obwohl diese Entwurfsfunktionen entweder unabhängig von der Programmiersprache sind oder mit .NET-Sprachen wie C# funktionieren, beziehen sie sich auf ein traditionelles Anwendungsparadigma mit Objekthierarchien und Klassenbeziehungen. Für das Entwerfen eines Spiels in Unity ist ein anderes Paradigma erforderlich, nämlich die Beziehungen von grafischen Objekten, Sounds, Shadern, Skripts usw. Aus diesem Grund sind die Modellierungsdiagrammtools von Visual Studio für die Gesamtheit eines Unity-Projekts nicht von besonderer Bedeutung. Sie können möglicherweise zum Verwalten von Beziehungen innerhalb von C#-Skripts verwendet werden, aber das ist nur ein Teil des Ganzen.  
   
@@ -73,7 +73,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 3. Binäre Objekte in einem Unity-Projekt, z. B. Texturen oder Audiodateien, können eine große Menge an Speicherplatz belegen. Verschiedene Quellcodeverwaltungssysteme wie Git speichern eine Kopie einer Datei für jede vorgenommene Änderung, auch wenn die Änderung nur einen kleinen Teil der Datei betrifft. Dadurch kann das Git-Repository sehr groß werden. Um dies zu vermeiden, entscheiden sich Unity-Entwickler häufig dafür, nur finale Objekte zu ihrem Repository hinzufügen und den Arbeitsverlauf der Objekte anderweitig zu speichern, etwa mit OneDrive, DropBox oder git-annex. Dieser Ansatz funktioniert, da solche Objekte in der Regel nicht zusammen mit Änderungen am Quellcode mit einer Versionsangabe versehen müssen. Entwickler legen in der Regel auch den Objektserialisierungsmodus des Projekteditors auf das Erzwingen von Text fest, um Szenendateien als Text und nicht im Binärformat zu speichern, wodurch Zusammenführungen in der Quellcodeverwaltung ermöglicht werden. Weitere Informationen finden Sie unter [Editoreinstellungen](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity-Dokumentation).  
   
 ## <a name="build"></a>Build  
- Referenzlink: **[Build](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Referenzlink: **[Erstellen](/azure/devops/pipelines/index)**  
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
@@ -96,7 +96,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |[Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nein|Tests der codierten UI basieren auf lesbaren Steuerelementen in der App-Benutzeroberfläche. Unity-Apps sind grafischer Art, sodass Inhalte nicht von den Tools für Tests der codierten UI gelesen werden können.|  
   
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
- Referenzlink: **[Verbessern der Codequalität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Referenzlink: **[Verbessern der Code Qualität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
@@ -106,8 +106,8 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Verwenden des [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity-Website).|  
 |[Analysieren von .NET Framework-Arbeitsspeicherproblemen](../misc/analyze-dotnet-framework-memory-issues.md)|Nein|Visual Studio-Tools haben keinen Zugriff auf das Mono-Framework (wie von Unity verwendet) für die Profilerstellung. Verwenden des [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity-Dokumentation).|  
   
-## <a name="release-management"></a>Release Management:  
- Referenzlink: **[Automatisieren von Bereitstellungen mit Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+## <a name="release-management"></a>Release Management  
+ Referenzlink: **[Automatisieren von bereit Stellungen mit Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
