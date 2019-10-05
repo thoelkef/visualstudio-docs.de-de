@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811992"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186813"
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
@@ -25,7 +25,17 @@ Schnelle Aktionen können für Folgendes verwendet werden:
 
 - Anwenden einer Codefehlerbehebung für eine Verletzung einer Regel des [Codeanalysetools](../code-quality/roslyn-analyzers-overview.md)
 
+::: moniker range=">=vs-2019"
+
+- [Unterdrücken](../code-quality/use-roslyn-analyzers.md#suppress-violations) einer Verletzung einer Regel des Codeanalysetools oder [Konfigurieren](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) des Schweregrads
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - [Unterdrücken](../code-quality/use-roslyn-analyzers.md#suppress-violations) einer Verletzung einer Regel des Codeanalysetools
+
+::: moniker-end
 
 - Anwenden eines Refactorings (z.B. [Inlinesetzen einer temporären Variable](../ide/reference/inline-temporary-variable.md))
 
@@ -34,7 +44,7 @@ Schnelle Aktionen können für Folgendes verwendet werden:
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden sie unter [Refactoring (Visual Studio für Mac)](/visualstudio/mac/refactoring).
 
-Schnelle Aktionen können mithilfe der Glühbirne ![Glühbirnensymbol](media/light-bulb-icon.png), des Schraubendrehers ![Schraubendrehersymbol](media/screwdriver-icon.png) oder durch Drücken der Tasten **STRG**+**.** angewendet werden, wenn Ihr Cursor sich auf einer Codezeile befindet, für die eine Aktion verfügbar ist. Eine Glühbirne mit einem roten Warnzeichen ![Glühbirnensymbol](media/error-light-bulb-icon.png) wird angezeigt. Das deutet auf einen Fehler hin, für den in Visual Studio eine Problemlösung verfügbar ist.
+Schnelle Aktionen können mithilfe der Glühbirne ![Glühbirnensymbol](media/light-bulb-icon.png), des Schraubendrehers ![Schraubendrehersymbol](media/screwdriver-icon.png) oder durch Drücken der Tasten **STRG**+ **.** angewendet werden, wenn Ihr Cursor sich auf einer Codezeile befindet, für die eine Aktion verfügbar ist. Eine Glühbirne mit einem roten Warnzeichen ![Glühbirnensymbol](media/error-light-bulb-icon.png) wird angezeigt. Das deutet auf einen Fehler hin, für den in Visual Studio eine Problemlösung verfügbar ist.
 
 Drittanbieter können für jede Sprache benutzerdefinierte Diagnosen und Empfehlungen bereitstellen, beispielsweise als Bestandteil eines SDKs. Basierend auf diesen Regeln leuchten die Visual Studio-Glühbirnen dann auf.
 
@@ -62,6 +72,6 @@ Klicken Sie neben der Glühbirne auf den Pfeil nach unten oder auf den Link **M�
 
 - [Codegenerierung in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Häufige schnelle Aktionen](../ide/common-quick-actions.md)
-- [Codeformate und Schnellaktionen](../ide/code-styles-and-quick-actions.md)
+- [Codeformate und Schnellaktionen](../ide/code-styles-and-code-cleanup.md)
 - [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Refactoring (Visual Studio für Mac)](/visualstudio/mac/refactoring)

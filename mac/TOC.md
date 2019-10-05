@@ -1,5 +1,8 @@
 # [Visual Studio für Mac](index.yml)
-# [IDE Tour (IDE-Tour)](ide-tour.md)
+
+# Erste Schritte
+## [IDE Tour (IDE-Tour)](ide-tour.md)
+## [Visual Studio für Mac für Windows-Benutzer](vsmac-for-windows-users.md)
 
 # Installation
 ## [Installieren von Visual Studio 2019 für Mac](installation.md)
@@ -94,7 +97,15 @@
 ### [Änderungsprotokoll](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Mobile Apps mit Xamarin](/visualstudio/mac/xamarin)
 
-# [Barrierefreiheit](accessibility.md)
+# Zugriff
+## [Übersicht](accessibility.md)
+## [Festlegen von IDE-Barrierefreiheitsoptionen](accessibility-ide-options.md)
+## macOS-Tools und -Features für Barrierefreiheit
+### [Verwenden von macOS-Tools für Barrierefreiheit](accessibility-macos.md)
+### [Verwenden der Tastaturnavigation](accessibility-keyboard.md)
+### [Verwenden von VoiceOver](accessibility-voiceover.md)
+
+# [Visual Studio für Mac für Windows-Benutzer](vsmac-for-windows-users.md)
 
 # Problembehandlung
 ## [Protokolle und Ausnahmen](troubleshooting.md)

@@ -3,14 +3,14 @@ title: Anmelden bei Visual Studio für Mac
 description: 'Vorgehensweise: Anmelden bei Visual Studio für Mac'
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957376"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213660"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Anmelden bei Visual Studio für Mac
 
@@ -29,17 +29,17 @@ Wenn Sie sich nicht sofort anmelden möchten, können Sie für 30 Tage eine Eval
 > [!TIP]
 > Stellen Sie vor der Anmeldung bei Visual Studio für Mac sicher, dass Sie mit dem Internet verbunden sind. > Abonnements können nur online aktiviert werden. Wenn Sie nicht verbunden sind, wählen Sie „Ich mache das später“ und melden Sie sich über das Menü an, wenn Sie verbunden sind.
 
-Führen Sie folgende Schritte aus, um sich bei Visual Studio für Mac anzumelden:
+Führen Sie beim ersten Start folgende Schritte aus, um sich bei Visual Studio für Mac anzumelden:
 
 1. Klicken Sie im Anmeldefenster auf die Schaltfläche **Bei Microsoft anmelden**:
 
-    ![Dialogfeld „Konten“ in Visual Studio für Mac](media/signing-in-image12.png)
+    ![Dialogfeld „Konten“ in Visual Studio für Mac](media/ide-tour-2019-start-signin.png)
 
 2. Geben Sie Ihre Microsoft-Anmeldeinformationen ein:
 
     ![Dialogfeld „Microsoft-Anmeldeinformationen“](media/signing-in-image13.png)
 
-3. Nachdem Sie sich angemeldet haben, wird das Startfenster von Visual Studio 2019 für Mac angezeigt. Von dort aus können Sie ein Projekt öffnen oder ein neues erstellen:
+4. Nachdem Sie sich angemeldet haben, wird eine Option zum Auswählen von Tastenkombinationen angezeigt. Wählen Sie die Option aus, die Sie verwenden möchten, und **fahren Sie fort**. Anschließend wird das Startfenster von Visual Studio 2019 für Mac angezeigt. Von dort aus können Sie ein Projekt öffnen oder ein neues erstellen:
 
     ![Anmeldung erfolgreich](media/signing-in-image14.png)
 

@@ -66,7 +66,7 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: 'Erstellen eines Projekts, das über Ressourcen verfügt'
               href: how-to-build-a-project-that-has-resources.md
-            - name: Inlinetasks
+            - name: Inlineaufgaben
               items:
                 - name: MSBuild-Inlineaufgaben
                   href: msbuild-inline-tasks.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: MSBuild-Transformationen
           href: msbuild-transforms.md
-        - name: Visual Studio-Integration
+        - name: Integration von Visual Studio
           items:
             - name: Integration von Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrieren von .NET Framework-Erweiterungen
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Paralleles Erstellen mehrerer Projekte
+        - name: Paralleles Erstellen von mehreren Projekten
           items:
             - name: Paralleles Erstellen von mehreren Projekten mit MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -236,7 +236,7 @@
               href: usingtask-element-msbuild.md
             - name: When-Element (MSBuild)
               href: when-element-msbuild.md
-        - name: Taskreferenz
+        - name: Aufgabenreferenz
           items:
             - name: MSBuild-Taskreferenz – Übersicht
               href: msbuild-task-reference.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: ToolTaskExtension-Basisklasse
               href: tooltaskextension-base-class.md
+            - name: Diagnostizieren von Aufgabenfehlern
+              href: diagnosing-task-failures.md
             - name: AL (Assembly Linker)-Aufgabe
               href: al-assembly-linker-task.md
             - name: AspNetCompiler-Aufgabe

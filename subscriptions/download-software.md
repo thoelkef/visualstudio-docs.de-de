@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/18/2019
 ms.topic: conceptual
 description: Informationen zum Suchen und Herunterladen von Microsoft-Softwaretiteln in Visual Studio-Abonnements
-ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377826"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095397"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Herunterladen von Softwaretiteln in Visual Studio-Abonnements
 Je nachdem, über welches Visual Studio-Abonnement Sie verfügen, können Sie auf eine Vielzahl von Softwaretiteln zurückgreifen.  In diesem Artikel wird erläutert, wie Sie die benötigte Software suchen und finden, um Ihr Abonnement optimal zu nutzen. 
 
 > [!NOTE]
-> Nur die Downloads, die in Ihrem Abonnement enthalten sind, werden auf der Seite [Downloads](https://my.visualstudio.com/downloads/featured) angezeigt.  Wenn Sie über mehr als ein Abonnement oder mehr als eine Programmmitgliedschaft verfügen, werden die Downloads für Ihr **höchstes Abonnement** angezeigt, auch wenn Sie zu dem Zeitpunkt ein anderes Abonnement abrufen.  Wenn Sie beispielsweise über ein Visual Studio Professional- und ein Visual Studio Test Professional-Abonnement verfügen, die beide derselben Anmelde-ID zugeordnet sind, werden die Downloads angezeigt, die im Visual Studio Professional-Abonnement enthalten sind, auch wenn Sie derzeit die Dev Essentials-Vorteile anzeigen lassen.
+> Nur die Downloads, die in Ihrem Abonnement enthalten sind, werden auf der Seite [Downloads](https://my.visualstudio.com/downloads/featured) angezeigt.  Wenn Sie über mehr als ein Abonnement oder mehr als eine Programmmitgliedschaft verfügen, werden die Downloads für Ihr **höchstes Abonnement** angezeigt, auch wenn Sie zu dem Zeitpunkt ein anderes Abonnement abrufen.  Wenn Sie beispielsweise über ein Visual Studio Enterprise- und ein Visual Studio Professional-Abonnement verfügen, die beide derselben Anmelde-ID zugeordnet sind, werden die Downloads angezeigt, die im Visual Studio Enterprise-Abonnement enthalten sind, auch wenn Sie derzeit die Vorteile des Professional-Abonnements anzeigen lassen.
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Downloads im Abonnentenportal
 Wenn Sie die Seite [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) aufrufen, werden Ihnen beliebte Downloads angezeigt, die nach Produkttyp in Gruppen angeordnet sind.  Sie können einen der angezeigten beliebten Downloads auswählen oder nach einem beliebigen Produkt über die Suchleiste im oberen Bereich der Seite suchen.

@@ -1,6 +1,6 @@
 ---
 title: .NET-Sprachkonventionen für EditorConfig
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551418"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186547"
 ---
 # <a name="language-conventions"></a>Sprachkonventionen
 
 Die Sprachkonventionen für EditorConfig in Visual Studio lassen sich in zwei Kategorien unterteilen: für Visual Basic und C# und für C# spezifisch. Sprachkonventionen beeinflussen die Verwendung der unterschiedlichen Aspekte einer Programmiersprache, z. B. Modifizierer und Klammern.
 
 > [!TIP]
-> - Mit den Links in **diesem Artikel** können Sie zu den unterschiedlichen Abschnitten springen.
 > - Um Codebeispiele in Ihrer bevorzugten Programmiersprache anzuzeigen, wählen Sie diese mithilfe der Sprachauswahl in der oberen rechten Ecke des Browserfensters aus.
 >
 >   ![Auswahl der Codesprache](media/code-language-picker.png)
+>
+> - Mit den Links in **diesem Artikel** können Sie zu den unterschiedlichen Abschnitten springen.
 
 ## <a name="rule-format"></a>Regelformat
 
@@ -36,19 +37,48 @@ Regeln für Sprachkonventionen weisen das folgende allgemeine Format auf:
 
 `option_name = value:severity`
 
-Für jede Sprachkonvention geben Sie einen Wert an, der definiert, ob oder wann Sie das Format bevorzugen. Viele Regeln akzeptieren den Wert `true` (dieses Format bevorzugen) oder `false` (dieses Format nicht bevorzugen). Andere akzeptieren Werte wie `when_on_single_line` oder `never`. Der zweite Teil der Regel gibt den **Schweregrad** an.
+Für jede Sprachkonvention geben Sie einen Wert an, der definiert, ob oder wann Sie das Format bevorzugen. Viele Regeln akzeptieren den Wert `true` (dieses Format bevorzugen) oder `false` (dieses Format nicht bevorzugen). Andere Regeln akzeptieren Werte wie `when_on_single_line` oder `never`. Der zweite Teil der Regel gibt den [Schweregrad](#severity-levels) an.
 
-### <a name="severity"></a>Schweregrad
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Da Sprachkonventionen auch von Analysetools erzwungen werden, können Sie deren Schweregrad auch mithilfe der Standardkonfigurationssyntax für Analysetools festlegen. Die Syntax sieht wie folgt aus: `dotnet_diagnostic.<rule ID>.severity = <severity>`. Beispiel: `dotnet_diagnostic.IDE0040.severity = silent`. Weitere Informationen finden Sie unter [Festlegen des Regelschweregrads in einer EditorConfig-Datei](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file).
+
+::: moniker-end
+
+## <a name="severity-levels"></a>Schweregrade
 
 Der Schweregrad einer Sprachkonvention gibt an, auf welcher Ebene das Format erzwungen werden soll. In der folgenden Tabelle werden die möglichen Schweregrade und die zugehörigen Auswirkungen aufgeführt:
 
 Schweregrad | Effekt
 :------- | ------
-`none` | Zeigen Sie dem Benutzer nichts mehr an, wenn gegen diese Regel verstoßen wird. Features zur Codegenerierung generieren jedoch Code in diesem Format. Regeln mit dem Schweregrad `none` werden im Menü **Schnelle Aktionen und Refactorings** nie angezeigt. In den meisten Fällen gelten diese als „deaktiviert“ oder „ignoriert“.
-`silent` (auch `refactoring` in Visual Studio 2017 Version 15.8 und höher) | Zeigen Sie dem Benutzer nichts mehr an, wenn gegen diese Regel verstoßen wird. Features zur Codegenerierung generieren jedoch Code in diesem Format. Regeln mit dem Schweregrad `silent` gelten für Bereinigungsvorgänge und werden im Menü **Schnellaktionen und Refactorings** angezeigt.
-`suggestion` | Wenn gegen diese Regel verstoßen wird, zeigen Sie sie dem Benutzer als Vorschlag an. Vorschläge werden in Form von drei grauen Punkten unter den ersten zwei Zeichen dargestellt.
-`warning` | Zeigen Sie eine Compilerwarnung an, wenn gegen diese Formatregel verstoßen wird.
 `error` | Zeigen Sie einen Compilerfehler an, wenn gegen diese Formatregel verstoßen wird.
+`warning` | Zeigen Sie eine Compilerwarnung an, wenn gegen diese Formatregel verstoßen wird.
+`suggestion` | Wenn gegen diese Regel verstoßen wird, zeigen Sie sie dem Benutzer als Vorschlag an. Vorschläge werden in Form von drei grauen Punkten unter den ersten zwei Zeichen dargestellt.
+`silent` | Zeigen Sie dem Benutzer nichts mehr an, wenn gegen diese Regel verstoßen wird. Features zur Codegenerierung generieren jedoch Code in diesem Format. Regeln mit dem Schweregrad `silent` gelten für Bereinigungsvorgänge und werden im Menü **Schnellaktionen und Refactorings** angezeigt.
+`none` | Zeigen Sie dem Benutzer nichts mehr an, wenn gegen diese Regel verstoßen wird. Features zur Codegenerierung generieren jedoch Code in diesem Format. Regeln mit dem Schweregrad `none` werden im Menü **Schnelle Aktionen und Refactorings** nie angezeigt. In den meisten Fällen gelten diese als „deaktiviert“ oder „ignoriert“.
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>Automatisches Konfigurieren von Codeformaten
+
+Ab Version 16.3 von Visual Studio 2019 können Sie Regeln für Codeformate über das Fehlerbehebungsmenü [Schnellaktionen](quick-actions.md) konfigurieren, wenn ein Formatverstoß auftritt.
+
+So ändern Sie die Codeformatkonvention:
+
+1. Zeigen Sie im Editor auf die Wellenlinie, und öffnen Sie dann das angezeigte Fehlerbehebungsmenü. Klicken Sie auf **Issues konfigurieren oder unterdrücken** > **Konfigurieren\<Regel-ID >Codeformat**.
+
+   ![Konfigurieren des Codeformats über das Fehlerbehebungsmenü in Visual Studio](media/vs-2019/configure-code-style.png)
+
+2. Wählen Sie hier eine der Codeformatoptionen aus.
+
+   ![Konfigurieren der Codeformateinstellung](media/vs-2019/configure-code-style-setting.png)
+
+   Visual Studio fügt der EditorConfig-Datei die Konfigurationseinstellung hinzu oder bearbeitet diese Einstellung, wie im Vorschaufeld veranschaulicht wird.
+
+Wenn Sie den Schweregrad für einen Verstoß gegen Codeformate ändern möchten, gehen Sie ähnlich vor, wählen jedoch **Konfigurieren \<Regel-ID > Schweregrad** anstelle von **Konfigurieren \<Regel-ID > Codeformat** aus. Weitere Informationen finden Sie unter [Automatisches Konfigurieren des Regelschweregrads](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>Einstellungen für das .NET-Codeformat
 

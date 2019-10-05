@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841605"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237379"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Review code for information disclosure vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken bei der Veröffentlichung von Informationen)
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841605"
 |TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
 |CheckId|CA3004|
 |Kategorie|Microsoft.Security|
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|
+|Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Meldung, stapelüberwachung oder eine Zeichenfolgendarstellung einer Ausnahme erreicht Webausgabe.
+Eine Ausnahme Meldung, Stapel Überwachung oder Zeichen folgen Darstellung erreicht die Webausgabe.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Veröffentlichung von Ausnahmeinformationen erhalten Angreifer, die einen Einblick in die Interna von Ihrer Anwendung, die Angreifer kann finden Sie weitere Sicherheitsrisiken, die ausgenutzt.
+Die Offenlegung von Ausnahme Informationen bietet Angreifern Einblicke in die internale Ihrer Anwendung, die Angreifern bei der Suche nach anderen Sicherheitsrisiken helfen können.
 
-Mit dieser Regel versucht, eine Ausnahmemeldung, die stapelüberwachung und die Zeichenfolgendarstellung, die die Ausgabe in eine HTTP-Antwort zu finden.
-
-> [!NOTE]
-> Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly wird eine Ausnahme abgefangen und leitet diese dann an eine andere Assembly, die die Ausnahme ausgibt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
+Diese Regel versucht, eine Ausnahme Meldung, eine Stapel Überwachung oder eine Zeichen folgen Darstellung zu suchen, die an eine HTTP-Antwort ausgegeben wird.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
+> Diese Regel kann keine Daten über Assemblys hinweg verfolgen. Wenn eine Assembly z. b. eine Ausnahme abfängt und Sie dann an eine andere Assembly übergibt, die die Ausnahme ausgibt, erzeugt diese Regel keine Warnung.
+
+> [!NOTE]
+> Es gibt eine konfigurierbare Beschränkung, wie tief diese Regel den Datenfluss über Methodenaufrufe hinweg analysieren wird. Weitere Informationen zum Konfigurieren des Limits in einer Editor config-Datei finden Sie unter [Analyse Konfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Ausgegeben Sie Informationen zur Ausnahme zu HTTP-Antworten nicht werden. Stattdessen geben Sie eine allgemeine Fehlermeldung. Finden Sie unter [OWASP Fehlerbehandlung Seite](https://www.owasp.org/index.php/Error_Handling) Weitere Anleitungen.
+Geben Sie keine Ausnahme Informationen an http-Antworten aus. Geben Sie stattdessen eine generische Fehlermeldung an. Weitere Anleitungen finden Sie auf [der Seite Fehlerbehandlung für OWASP](https://www.owasp.org/index.php/Error_Handling) .
 
-## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Wenn Sie kennen Ihre Webausgabe innerhalb Ihrer Anwendung Vertrauensgrenze und niemals außerhalb verfügbar, es ist in Ordnung, diese Warnung unterdrücken. Dies kommt selten vor. Berücksichtigen Sie, die Ihrer Anwendung Vertrauensgrenze und Datenflüsse im Laufe der Zeit ändern können.
+Wenn Sie wissen, dass Ihre Webausgabe innerhalb der Vertrauensstellungs Grenze ihrer Anwendung liegt und nie außerhalb von verfügbar gemacht wird, ist es okay, diese Warnung zu unterdrücken. Dies ist selten. Berücksichtigen Sie, dass sich die Vertrauensstellungs Grenze und Datenflüsse Ihrer Anwendung im Laufe der Zeit ändern können.
 
-## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
+## <a name="pseudo-code-examples"></a>Pseudo Codebeispiele
 
 ### <a name="violation"></a>Verletzung
 

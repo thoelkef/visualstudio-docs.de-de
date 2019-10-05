@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957429"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251695"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -184,7 +184,7 @@ Namenskonventionen sollten in der EditorConfig-Datei von der spezifischsten zur 
 
 ::: moniker range=">=vs-2019"
 
-Ab Visual Studio 2019 Version 16.2 spielt die Reihenfolge, in der Benennungsregeln in einer EDITORCONFIG-Datei definiert werden, keine Rolle. Stattdessen ordnet Visual Studio die Benennungsregeln automatisch entsprechend der Definition der Regeln selbst. Die [Editorconfig-Sprachdiensterweiterung](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) kann eine EDITORCONFIG-Datei analysieren und Fälle melden, in denen sich die Regelreihenfolge in der Datei von der vom Compiler zur Laufzeit verwendeten Reihenfolge unterscheidet.
+Ab Visual Studio 2019 Version 16.2 spielt die Reihenfolge, in der Benennungsregeln in einer EDITORCONFIG-Datei definiert werden, keine Rolle. Stattdessen ordnet Visual Studio die Benennungsregeln automatisch entsprechend der Definition der Regeln selbst. Die Erweiterung [EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) kann eine EditorConfig-Datei analysieren und Fälle melden, in denen sich die Regelreihenfolge in der Datei von der Reihenfolge unterscheidet, die vom Compiler zur Laufzeit verwendet wird.
 
 Wenn Sie eine frühere Version von Visual Studio verwenden, sollten Namenskonventionen in der EDITORCONFIG-Datei von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird. Wenn es jedoch mehrere *Regeleigenschaften* mit dem gleichen Namen gibt, hat die zuletzt gefundene Eigenschaft mit diesem Namen Vorrang. Weitere Informationen finden Sie unter [Dateihierarchie und Rangfolge](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 

@@ -3,15 +3,15 @@ title: Einschließen eines NuGet-Pakets in Ihr Projekt
 description: In diesem Dokument wird erläutert, wie Sie ein NuGet-Paket mithilfe von Visual Studio für Mac in ein Projekt einfügen. Es veranschaulicht das Suchen und Herunterladen von Paketen und bietet eine Einführung in die IDE-Integrationsfunktionen.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/17/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079543"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213685"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installieren und Verwalten von NuGet-Paketen in Visual Studio für Mac
 
@@ -23,17 +23,17 @@ Eine Einführung in die Verwendung von NuGet in Visual Studio für Mac finden Si
 
 ## <a name="find-and-install-a-package"></a>Suchen und Installieren eines Pakets
 
-1. Klicken Sie bei einem in Visual Studio für Mac geöffneten Projekt im **Lösungspad** mit der rechten Maustaste auf den Ordner **Abhängigkeiten** (**Pakete**, wenn Sie ein Xamarin-Projekt verwenden), und wählen Sie dann **Pakete hinzufügen** aus.
+1. Klicken Sie bei einem in Visual Studio für Mac geöffneten Projekt im **Lösungspad** mit der rechten Maustaste auf den Ordner **Abhängigkeiten** (**Pakete**, wenn Sie ein Xamarin-Projekt verwenden), und wählen Sie dann **NuGet-Pakete verwalten...** aus.
 
-    ![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-PackagesMenu.png)
+    ![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-packages-menu.png)
 
-2. Dadurch wird das Fenster **Pakete hinzufügen** geöffnet. Stellen Sie sicher, dass `nuget.org` für das Dropdownfeld für die Quelle in der oberen linken Ecke des Dialogfelds festgelegt ist.
+2. Daraufhin wird das Fenster **NuGet-Pakete verwalten** geöffnet. Stellen Sie sicher, dass `nuget.org` für das Dropdownfeld für die Quelle in der oberen linken Ecke des Dialogfelds festgelegt ist.
 
-    ![Liste von NuGet-Paketen](media/nuget-walkthrough-AddPackages1.png)
+    ![Liste von NuGet-Paketen](media/nuget-walkthrough-add-packages1.png)
 
 3. Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel `EntityFramework`, zu finden. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche **Paket hinzufügen**, um die Installation zu starten.
 
-    ![Hinzufügen eines Azure-NuGet-Pakets](media/nuget-walkthrough-AddPackages2.png)
+    ![Hinzufügen des EntityFramework-NuGet-Pakets](media/nuget-walkthrough-add-packages2.png)
 
 4. Sobald das Paket heruntergeladen wurde, wird es Ihrem Projekt hinzugefügt. Die Projektmappe ändert sich, je nachdem, welche Art von Projekt Sie bearbeiten:
 
@@ -43,7 +43,7 @@ Eine Einführung in die Verwendung von NuGet in Visual Studio für Mac finden Si
     
     **.NET Core-Projekte**
 
-    Der Knoten **Abhängigkeiten > NuGet** zeigt alle NuGet-Pakete an, die Sie heruntergeladen haben. Sie können Pakete aus dieser Liste aktualisieren oder entfernen.
+    * Der Knoten **Abhängigkeiten > NuGet** zeigt alle NuGet-Pakete an, die Sie heruntergeladen haben. Sie können Pakete aus dieser Liste aktualisieren oder entfernen.
 
 ## <a name="using-nuget-packages"></a>Verwenden von NuGet-Paketen
 
@@ -59,11 +59,11 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Aktualisieren von Paketen
 
-Paketupdates können entweder alle auf einmal durchgeführt werden, indem Sie mit der rechten Maustaste auf den Knoten **Abhängigkeiten** (oder **Pakete** bei Xamarin-Projekten) klicken, oder einzeln, indem Sie auf jede Komponente klicken.
+Paketupdates können entweder alle auf einmal durchgeführt werden, indem Sie mit der rechten Maustaste auf den Knoten **Abhängigkeiten** (**Pakete** bei Xamarin-Projekten) klicken, oder einzeln, indem Sie auf jedes Paket klicken. Wenn eine neue Version eines NuGet-Pakets verfügbar ist, wird ein Symbol für die Aktualisierung ![NACH-OBEN-TASTE mit Kreis](media/nuget-walkthrough-update-icon.png) angezeigt.
 
-Klicken Sie mit der rechten Maustaste auf **Abhängigkeiten**, um auf das Kontextmenü zuzugreifen:
+Klicken Sie mit der rechten Maustaste auf **Abhängigkeiten**, um das Kontextmenü anzuzeigen, und wählen Sie **Aktualisieren** aus, um alle Pakete zu aktualisieren:
 
-![Paketmenü](media/nuget-walkthrough-PackagesMenu.png)
+![Paketmenü](media/nuget-walkthrough-packages-menu-update.png)
 
 * **NuGet-Pakete verwalten:** Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
 * **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.

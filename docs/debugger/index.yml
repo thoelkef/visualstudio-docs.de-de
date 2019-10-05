@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: 2ce5c3c8c9baf6f513f7dca4b4072e02e461a62a
-  ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+  ms.openlocfilehash: 9ddd78b13e3281c4285d0bb2aaf4ee0a34af5369
+  ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71213596"
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71814305"
 landingContent:
 - title: Informationen zu Debuggen
   linkLists:
@@ -26,6 +26,8 @@ landingContent:
       url: write-better-code-with-visual-studio.md
     - text: Erster Einblick in den Debugger
       url: debugger-feature-tour.md
+    - text: Finden der Debugaufgabe
+      url: find-your-debugging-task.md
 - title: Erste Schritte
   linkLists:
   - linkListType: tutorial
@@ -74,3 +76,9 @@ landingContent:
       url: using-the-debuggerdisplay-attribute.md
     - text: Remotedebuggen
       url: remote-debugging.md
+- title: Zusammenarbeiten
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Schreiben und Debuggen von Code mithilfe von Live Share >>
+      url: /visualstudio/liveshare/use/vs

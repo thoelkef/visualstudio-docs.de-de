@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231087"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481771"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operatorüberladungen weisen benannte Alternativen auf.
 
@@ -38,17 +38,21 @@ Standardmäßig betrachtet diese Regel nur extern sichtbare Typen, aber dies ist
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Die Operator Überladung ermöglicht die Verwendung von Symbolen zur Darstellung von Berechnungen für einen Typ. Beispielsweise würde ein Typ, der das Pluszeichen (+) zusätzlich über lädt, in der Regel einen alternativen Member mit dem Namen "Add" aufweisen. Der benannte Alternative Member bietet Zugriff auf die gleiche Funktionalität wie der-Operator und wird für Entwickler bereitgestellt, die in Sprachen programmieren, die überladene Operatoren nicht unterstützen.
+Die Operator Überladung ermöglicht die Verwendung von Symbolen zur Darstellung von Berechnungen für einen Typ. Beispielsweise würde ein Typ, der das Plus Symbol `+` zur Addition überlädt, normalerweise einen alternativen Member mit dem Namen `Add` aufweisen. Der benannte Alternative Member bietet Zugriff auf die gleiche Funktionalität wie der-Operator. Sie wird für Entwickler bereitgestellt, die in Sprachen programmieren, die überladene Operatoren nicht unterstützen.
 
-Diese Regel überprüft die in der folgenden Tabelle aufgeführten Operatoren.
+Diese Regel wird untersucht:
 
-|C#|Visual Basic|C++|Alternativer Name|
-|---------|------------------|-----------|--------------------|
+- Implizite und explizite Umwandlungs Operatoren in einem Typ durch Prüfen auf Methoden mit dem Namen "`To<typename>`" und "`From<typename>`".
+
+- Die in der folgenden Tabelle aufgeführten Operatoren:
+
+|C#|Visual Basic|C++|Alternativer Methodenname|
+|-|-|-|-|
 |+ (binär)|+|+ (binär)|Hinzufügen|
 |+=|+=|+=|Hinzufügen|
 |&|und|&|BitwiseAnd|
 |&=|Und =|&=|BitwiseAnd|
-|&#124;|Or|&#124;|BitwiseOr|
+|&#124;|oder|&#124;|BitwiseOr|
 |&#124;=|Oder =|&#124;=|BitwiseOr|
 |--|Nicht zutreffend|--|Dekrement|
 |/|/|/|Teilen|
@@ -56,16 +60,16 @@ Diese Regel überprüft die in der folgenden Tabelle aufgeführten Operatoren.
 |==|=|==|gleich|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
-|>|>|>|Vergleichen|
-|>=|>=|>=|Vergleichen|
+|>|>|>|CompareTo oder Vergleich|
+|>=|>=|>=|CompareTo oder Vergleich|
 |++|Nicht zutreffend|++|Inkrement|
-|<>|!=|gleich|
+|!=|<>|!=|gleich|
 |<<|<<|<<|Linke UMSCHALTTASTE|
 |<<=|<<=|<<=|Linke UMSCHALTTASTE|
-|<|<|<|Vergleichen|
-|<=|<=|\<=|Vergleichen|
+|<|<|<|CompareTo oder Vergleich|
+|<=|<=|\<=|CompareTo oder Vergleich|
 |&&|Nicht zutreffend|&&|LogicalAnd|
-||||Nicht zutreffend||||Logicalor|
+|&#124;&#124;|Nicht zutreffend|&#124;&#124;|Logicalor|
 |!|Nicht zutreffend|!|LogicalNot|
 |%|Mod|%|Mod oder Restwert|
 |%=|Nicht zutreffend|%=|Mod|
@@ -79,21 +83,20 @@ Diese Regel überprüft die in der folgenden Tabelle aufgeführten Operatoren.
 |true|IsTrue|Nicht zutreffend|IsTrue (Eigenschaft)|
 |-(unär)|Nicht zutreffend|-|Negation|
 |+ (unär)|Nicht zutreffend|+|ZZ|
-|False|IsFalse|False|IsTrue (Eigenschaft)|
+|false|IsFalse|False|IsTrue (Eigenschaft)|
 
-N/A = = kann nicht in der ausgewählten Sprache überladen werden.
+\* N/A bedeutet, dass der Operator nicht in der ausgewählten Sprache überladen werden kann.
 
-Die Regel überprüft auch implizite und explizite Umwandlungs Operatoren in einem`SomeType`Typ (), indem Sie `ToSomeType` auf `FromSomeType`Methoden mit dem Namen und überprüft.
-
-Wenn C#in ein binärer Operator überladen wird, wird der entsprechende Zuweisungs Operator (sofern vorhanden) ebenfalls implizit überladen.
+> [!NOTE]
+> Wenn C#in ein binärer Operator überladen wird, wird der entsprechende Zuweisungs Operator (sofern vorhanden) ebenfalls implizit überladen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie die alternative-Methode für den-Operator. nennen Sie Sie mithilfe des empfohlenen alternativen namens.
+Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie die alternative-Methode für den-Operator. Nennen Sie Sie mithilfe des empfohlenen alternativen namens.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel, wenn Sie eine freigegebene Bibliothek implementieren. Anwendungen können eine Warnung aus dieser Regel ignorieren.
+Unterdrücken Sie keine Warnung aus dieser Regel, wenn Sie eine freigegebene Bibliothek implementieren. Anwendungen können eine Warnung aus dieser Regel ignorieren.
 
 ## <a name="configurability"></a>Konfigurierbarkeit
 

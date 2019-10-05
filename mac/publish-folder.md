@@ -2,31 +2,31 @@
 title: Veröffentlichen in einem Ordner
 ms.date: 04/02/2019
 helpviewer_keywords:
-- deployment, website
+- deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: e22176d2188df92f0956f88c912d48cb9c954dd9
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 165cfc38b8289946e0966083785defd18ca87d77
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222763"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095412"
 ---
-# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Veröffentlichen einer Web-App in einem Ordner mithilfe von Visual Studio für Mac
+# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Veröffentlichen in einem Ordner mit Visual Studio für Mac
 
-Sie können das Tool zum Veröffentlichen verwenden, um ASP.NET Core-Apps in einem Ordner zu veröffentlichen.
+Sie können das Tool zum Veröffentlichen verwenden, um .NET Core-Konsolenanwendungen oder ASP.NET Core-Apps in einem Ordner zu veröffentlichen.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- [Visual Studio 2019 für Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installiert mit aktiviertem ASP.NET Core.
-- Ein ASP.NET Core-Projekt. Wenn Sie noch kein Projekt haben, können Sie [ein neues Projekt erstellen](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- [Visual Studio 2019 für Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installiert mit aktiviertem .NET Core.
+- Ein .NET Core-Konsolen- oder ASP.NET Core-Projekt Wenn Sie noch kein Projekt haben, können Sie [ein neues Projekt erstellen](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>In Ordner veröffentlichen
 
-Mit Visual Studio für Mac können Sie Ihre ASP.NET Core-Projekte mithilfe des Tools zum Veröffentlichen in einem Ordner veröffentlichen. Nachdem Sie Dateien in einem Ordner veröffentlicht haben, können Sie diese auf Ihren Webserver und somit in eine andere Umgebung verschieben. Wenn Sie eine Veröffentlichung in einem Ordner vornehmen möchten, befolgen Sie die folgenden Schritte:
+Mit Visual Studio für Mac können Sie Ihre .NET Core-Projekte mithilfe des Tools zum Veröffentlichen in einem Ordner veröffentlichen. Nachdem Sie Dateien in einem Ordner veröffentlicht haben, können Sie diese in eine andere Umgebung verschieben. Wenn Sie eine Veröffentlichung in einem Ordner vornehmen möchten, befolgen Sie die folgenden Schritte:
 
  1. Klicken Sie im Lösungspad mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**.
 

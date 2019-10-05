@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: Debugverfahren und -tools
       href: write-better-code-with-visual-studio.md
+    - name: Finden der Debugaufgabe
+      href: find-your-debugging-task.md
 - name: Schnellstarts
   items:
     - name: Erster Einblick in den Debugger
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Benutzerdefinierte Ansichten (verwaltet)
               items:
-                - name: Erstellen benutzerdefinierter Ansichten von verwalteten Objekten
+                - name: Erstellen benutzerdefinierter Ansichten von Objekten
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 'Den Debugger anweisen, was er anzeigen soll'
                   href: using-the-debuggerdisplay-attribute.md
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: Debuggen mehrerer Prozesse
           href: debug-multiple-processes.md
-        - name: 'Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“'
+        - name: Debuggen mithilfe des Fensters „Threads“
           href: how-to-use-the-threads-window.md
-        - name: 'Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung'
+        - name: Debuggen einer parallelen Anwendung
           href: walkthrough-debugging-a-parallel-application.md
         - name: Wechseln zu einem anderen Thread während des Debuggens
           href: how-to-switch-to-another-thread-while-debugging.md
@@ -666,6 +668,10 @@
               href: how-to-step-into-wcf-services.md
             - name: Debuggen eines lokal gehosteten WCF-Diensts
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: Zusammenarbeiten
+      items:
+        - name: Schreiben und Debuggen von Code mithilfe von Live Share
+          href: /visualstudio/liveshare/use/vs
     - name: Dumpdateien
       items:
         - name: Verwenden von Dumpdateien

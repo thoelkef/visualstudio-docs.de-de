@@ -1,7 +1,7 @@
 ---
 title: Klassenansicht, Aufrufhierarchie, Objektkatalog, Codedefinitionsfenster
-ms.date: 05/18/2018
-ms.topic: conceptual
+ms.date: 09/19/2019
+ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747714"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150128"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Anzeigen der Codestruktur mithilfe verschiedener Toolfenster
 
@@ -68,14 +68,13 @@ Die Schaltfläche **Klassenansicht: Einstellungen** auf der Symbolleiste weist d
 |||
 |-|-|
 |**Basistypen anzeigen**|Es werden die Basistypen angezeigt.|
-|**Abgeleitete Typen anzeigen**|Es werden die abgeleiteten Typen angezeigt.|
+|**Projektverweise anzeigen**|Projektverweise werden angezeigt.|
 |**Ausgeblendete Typen und Member anzeigen**|Es werden ausgeblendete Typen und Member in hellgrauer Textfarbe angezeigt (nicht für die Verwendung von Clients vorgesehen).|
 |**Öffentliche Member anzeigen**|Es werden öffentliche Member angezeigt.|
 |**Geschützte Member anzeigen**|Es werden geschützte Member angezeigt.|
 |**Private Member anzeigen**|Es werden private Member angezeigt.|
 |**Andere Member anzeigen**|Es werden andere Arten von Member angezeigt, einschließlich der internen Member (oder „Friend“ in Visual Basic).|
 |**Geerbte Member anzeigen**|Es werden geerbte Member angezeigt.|
-|**Erweiterungsmethoden anzeigen**|Es werden Erweiterungsmethoden angezeigt.|
 
 ### <a name="class-view-shortcut-menu"></a>Klassenansicht: Kontextmenü
 
@@ -157,7 +156,6 @@ Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste
 |**Namespaces anzeigen**|Zeigt im linken Bereich anstelle von physischen Containern die Namespaces an. Die in mehreren physischen Containern gespeicherten Namespaces werden zusammengeführt.|
 |**Container anzeigen**|Zeigt im linken Bereich anstelle von Namespaces die physischen Container an. **Namespaces anzeigen** und **Container anzeigen** sind sich gegenseitig ausschließende Einstellungen.|
 |**Basistypen anzeigen**|Zeigt Basistypen an.|
-|**Abgeleitete Typen anzeigen**|Zeigt abgeleitete Typen an.|
 |**Ausgeblendete Typen und Member anzeigen**|Ausgeblendete Typen und Member werden in hellgrauer Textfarbe angezeigt (nicht für die Verwendung von Clients vorgesehen).|
 |**Öffentliche Member anzeigen**|Zeigt öffentliche Member an.|
 |**Geschützte Member anzeigen**|Zeigt geschützte Member an.|
@@ -168,7 +166,7 @@ Mithilfe der Schaltfläche **Objektkatalog: Einstellungen** auf der Symbolleiste
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Objektkatalog: Kontextmenübefehle
 
-Das Kontextmenü im **Objektkatalog** kann in Abhängigkeit vom Typ des ausgewählten Objekts die folgenden Befehle enthalten:
+Das Kontextmenü im **Objektkatalog** kann in Abhängigkeit des ausgewählten Projekts die folgenden Befehle enthalten:
 
 |||
 |-|-|

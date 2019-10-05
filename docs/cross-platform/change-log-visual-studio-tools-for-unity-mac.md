@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Mac) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661817"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185962"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="2330"></a>2.3.3.0
+
+Veröffentlicht am 23. September 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Eine neue Unterdrückung für IDE0060 wurde hinzugefügt, um zu verhindern, dass die IDE eine Schnellkorrektur zum Entfernen nicht verwendeter Parameter anzeigt.
+    - `USP0005` für `IDE0060`: Unity-Nachrichten werden von der Unity-Runtime aufgerufen.
+
+## <a name="2320"></a>2.3.2.0
+
+Veröffentlicht am 16. September 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Wir haben das Verständnis von Visual Studio für Unity-Projekte vertieft, indem wir neue, für Unity spezifische Diagnosefunktionen hinzugefügt haben. Wir haben die IDE auch intelligenter gestaltet, indem wir allgemeine C#-Diagnosen unterdrückt haben, die nicht für Unity-Projekte gelten. Die IDE zeigt z. B. keine Schnellkorrektur zum Ändern einer Prüfungsvariablen in `readonly` an, die Sie daran hindern würde, die Variable im Unity-Editor zu ändern.
+    - `UNT0001`: Unity-Nachrichten werden von der Runtime auch aufgerufen, wenn sie leer sind. Deklarieren Sie sie nicht, um unnötige Verarbeitung durch die Unity-Laufzeit zu vermeiden.
+    - `UNT0002`: Der Tagvergleich mithilfe der Zeichenfolgengleichheit ist langsamer als die integrierte CompareTag-Methode.
+    - `UNT0003`: Die Verwendung der generischen Form von GetComponent wird für die Typsicherheit bevorzugt.
+    - `UNT0004`: Die Update-Nachricht ist von der Framerate abhängig und sollte Time.deltaTime anstelle von Time.fixedDeltaTime verwenden.
+    - `UNT0005`: Die FixedUpdate-Nachricht ist von der Framerate abhängig und sollte Time.fixedDeltaTime anstelle von Time.deltaTime verwenden.
+    - `UNT0006`: Es wurde eine falsche Methodensignatur für diese Unity-Nachricht erkannt.
+    - `UNT0007`: Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Zusammenfügung nicht kompatibel ist.
+    - `UNT0008`: Unity überschreibt den NULL-Vergleichsoperator für Unity-Objekte, der mit der NULL-Verteilung nicht kompatibel ist.
+    - `UNT0009`: Wenn Sie das InitializeOnLoad-Attribut auf eine Klasse anwenden, müssen Sie einen statischen Konstruktor bereitstellen. Das InitializeOnLoad-Attribut stellt sicher, dass es aufgerufen wird, wenn der Editor gestartet wird.
+    - `UNT0010`: MonoBehaviour sollte nur mithilfe von AddComponent() erstellt werden. MonoBehaviour ist eine Komponente und muss einem GameObject angefügt werden.
+    - `UNT0011`: ScriptableObject sollte nur mit CreateInstance() erstellt werden. ScriptableObject muss von der Unity-Engine zum Verarbeiten von Unity-Nachrichtenmethoden erstellt werden.
+    - `USP0001` für `IDE0029`: Unity-Objekte sollten keine NULL-Zusammenfügung verwenden.
+    - `USP0002` für `IDE0031`: Unity-Objekte sollten keine NULL-Verteilung verwenden.
+    - `USP0003` für `IDE0051`: Unity-Nachrichten werden von der Unity-Runtime aufgerufen.
+    - `USP0004` für `IDE0044`: Felder mit einem SerializeField-Attribut sollten nicht als schreibgeschützt festgelegt werden.
+
+## <a name="2310"></a>2.3.1.0
+
+Veröffentlicht am 4. September 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Auswertung:**
+
+  - Unterstützung für bessere Typanzeige wurde hinzugefügt: `List<object>` anstelle von `List'1[[System.Object, <corlib...>]]`.
+
+  - Unterstützung für Zeigermemberzugriff wurde hinzugefügt: `p->data->member`.
+
+  - Unterstützung für implizite Konvertierungen in Arrayinitialisierern wurde hinzugefügt: `new byte [] {1,2,3,4}`.
+
+  - Unterstützung des Hexadezimal-Editors beim Untersuchen von Bytearrays und Zeichenfolgen wurde hinzugefügt.
+
+## <a name="2300"></a>2.3.0.0
+
+Veröffentlicht am 13. August 2019
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Auswertung:**
+
+  - Probleme mit Ausnahmen bei der Einzelschrittausführung wurden behoben.
+
+  - Die Auswertung von Pseudobezeichnen (z. B. $exception) wurde behoben.
+
+  - Absturz bei Dereferenzierung ungültiger Adressen wurde behoben.  
+
+  - Ein Problem bei entladenen AppDomains wurde behoben.
 
 ## <a name="2200"></a>2.2.0.0
 
@@ -103,7 +171,7 @@ Veröffentlichung: 20. Juni 2019
 
   - Die vollständige Builderstellung für Unity-Projekte wurde zugunsten von IntelliSense-Fehlern und -Warnungen deaktiviert. Unity erstellt eine Visual Studio-Projektmappe mit Klassenbibliotheksprojekten, die die internen Vorgänge von Unity darstellen. Das Ergebnis der Erstellung in Visual Studio wird von Unity nie verwendet oder übernommen, da die Kompilierungspipeline geschlossen ist. Die Builderstellung in Visual Studio verbraucht nur Ressourcen, führt aber zu nichts. Wenn Sie einen vollständigen Build benötigen, weil Ihre Tools oder Setups davon abhängig sind, können Sie diese Optimierung deaktivieren (Einstellungen > Tools für Unity > Vollständigen Build von Projekten deaktivieren).
   
-  - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Es werden nur Pakete angezeigt, auf die durch Verwendung von „manifest.json“ im Ordner „Packages“ verwiesen wird, und im Ordner „Packages“ enthaltene lokale Pakete.
+  - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Nur referenzierte Pakete (durch Verwendung von „manifest.json“ im Ordner `Packages`) und lokale Pakete (im Ordner `Packages` integriert) werden angezeigt.
 
 ## <a name="2021"></a>2.0.2.1
 
@@ -164,6 +232,12 @@ Veröffentlichung: 20. März 2019
 - **Projektgenerierung:**
 
   - Beibehalten externer Eigenschaften bei Verarbeitung der Projektmappendatei.
+  
+- **Auswertung:**
+
+  - Unterstützung für aliasqualifizierte Namen wurde hinzugefügt (derzeit nur im globalen Namespace). Daher akzeptiert die Ausdrucksauswertung jetzt Typen der Form „global::namespace.type“.
+
+  - Unterstützung für die Form `pointer[index]` wurde hinzugefügt, die semantisch identisch mit `*(pointer+index)` ist, der Form zum Dereferenzieren von Zeigern.
 
 ## <a name="2004"></a>2.0.0.4
 
@@ -173,7 +247,7 @@ Veröffentlichung: 5. März 2019
 
 - **Integration:**
 
-  - ScriptableObject-API aktualisiert.
+  - Die `ScriptableObject`-API wurde aktualisiert.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -189,7 +263,7 @@ Veröffentlichung: 5. März 2019
 
 - **Projektgenerierung:**
 
-  - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Wir haben die Compilerwarnungen CS0649 und IDE0051 in Unity-Projekten, die diese Nachrichten erstellt haben, automatisch unterdrückt.
+  - Öffentliche und serialisierte Felder rufen keine Warnungen mehr hervor. Die Compilerwarnungen `CS0649` und `IDE0051` in Unity-Projekten, die diese Nachrichten erstellt haben, werden nun automatisch unterdrückt.
 
 - **Integration:**
 
