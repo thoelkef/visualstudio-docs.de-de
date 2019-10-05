@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211237"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962931"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
-Wenn das Problem durch die in diesem Artikel beschriebenen Schritte nicht behoben werden kann, suchen Sie in der [Entwickler Community](https://developercommunity.visualstudio.com/spaces/8/index.html) nach dem Problem, oder melden Sie ein neues Problem, indem Sie **Hilfe** > **Feedback** > senden**Problem** in Visual melden auswählen. Panorama.
+Wenn das Problem durch die in diesem Artikel beschriebenen Schritte nicht behoben werden kann, suchen Sie in der [Entwickler Community](https://developercommunity.visualstudio.com/spaces/8/index.html) nach dem Problem, oder melden Sie ein neues Problem, indem Sie **Hilfe** > **Feedback senden** > **melden Sie ein Problem** in Visual Studio an.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: Beim Anfügen Momentaufnahmedebugger wird ein HTTP-Statuscode Fehler feststellen.
 
@@ -34,7 +34,7 @@ Dieser Fehler zeigt an, dass der von Visual Studio an Azure ausgegebene Rest-Bef
 
 Führen Sie diese Schritte aus:
 
-* Stellen Sie sicher, dass Ihr Visual Studio-Personalisierungs Konto über Berechtigungen für das Azure-Abonnement und die Ressource verfügt, an die Sie anhängen. Eine schnelle Möglichkeit, dies zu ermitteln, besteht darin, zu überprüfen, ob die Ressource im Dialogfeld über **Debuggen** > Momentaufnahmedebugger verfügbar ist **...** Azure Resource**Select vorhandene**oder in Cloud-Explorer.  >  > 
+* Stellen Sie sicher, dass Ihr Visual Studio-Personalisierungs Konto über Berechtigungen für das Azure-Abonnement und die Ressource verfügt, an die Sie anhängen. Eine schnelle Möglichkeit, dies zu ermitteln, besteht darin, zu überprüfen, ob die Ressource im Dialogfeld über **Debuggen** > **Anfügen Momentaufnahmedebugger..** .  > **Azure-Ressourcen** > **Wählen Sie vorhandene**oder in Cloud-Explorer aus.
 * Wenn dieser Fehler weiterhin auftritt, verwenden Sie einen der Feedback Kanäle, die am Anfang dieses Artikels beschrieben werden.
 
 ### <a name="403-forbidden"></a>(403) verboten
@@ -54,7 +54,8 @@ Dieser Fehler weist darauf hin, dass die Website auf dem Server nicht gefunden w
 Führen Sie diese Schritte aus:
 
 * Vergewissern Sie sich, dass Sie eine Website bereitgestellt haben und auf der APP Service Ressource ausgeführt werden, an die Sie anfügen.
-* Überprüfen Sie, ob die Website unter\<https://\>Resource. azurewebsites.net verfügbar ist.
+* Überprüfen Sie, ob die Website unter https://@no__t -0resource\>.azurewebsites.net verfügbar ist.
+* Stellen Sie sicher, dass Ihre benutzerdefinierte Webanwendung, die ordnungsgemäß ausgeführt wird, beim Zugriff auf https://@no__t -0resource\>.azurewebsites.net keinen Statuscode 404 zurückgibt
 * Wenn dieser Fehler weiterhin auftritt, verwenden Sie einen der Feedback Kanäle, die am Anfang dieses Artikels beschrieben werden.
 
 ### <a name="406-not-acceptable"></a>(406) nicht zulässig
@@ -63,7 +64,7 @@ Dieser Fehler zeigt an, dass der Server nicht auf den Typ reagieren kann, der im
 
 Führen Sie diese Schritte aus:
 
-* Überprüfen Sie, ob Ihre Website unter\<https://\>Resource. azurewebsites.net verfügbar ist.
+* Überprüfen Sie, ob Ihre Website unter https://@no__t -0resource\>.azurewebsites.net verfügbar ist.
 * Vergewissern Sie sich, dass Ihre Site nicht zu neuen Instanzen migriert wurde. Momentaufnahmedebugger verwendet das Konzept von "arverloität" für das Routing von Anforderungen an bestimmte Instanzen, die diesen Fehler zeitweise verursachen können.
 * Wenn dieser Fehler weiterhin auftritt, verwenden Sie einen der Feedback Kanäle, die am Anfang dieses Artikels beschrieben werden.
 
@@ -156,11 +157,11 @@ Führen Sie diese Schritte aus:
 
 Visual Studio 2019 erfordert eine neuere Version der Erweiterung der Momentaufnahmedebugger Site auf Ihrem Azure App Service.  Diese Version ist nicht mit der älteren Version der von Visual Studio 2017 verwendeten Momentaufnahmedebugger Site Erweiterung kompatibel.  Sie erhalten die folgende Fehlermeldung, wenn Sie versuchen, die Momentaufnahmedebugger in Visual Studio 2019 an eine Azure App Service anzufügen, die zuvor vom Momentaufnahmedebugger in Visual Studio 2017 deentschlbelt wurde:
 
-Nicht ![kompatible Momentaufnahmedebugger Website Erweiterung Visual Studio 2019] Nicht (../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "kompatible Momentaufnahmedebugger Website Erweiterung Visual Studio 2019")
+Nicht ![kompatible Momentaufnahmedebugger Site Erweiterung Visual Studio 2019]nicht(../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "kompatibel Momentaufnahmedebugger Website Erweiterung Visual Studio 2019")
 
 Wenn Sie im Gegensatz dazu Visual Studio 2017 verwenden, um die Momentaufnahmedebugger an eine Azure App Service anzufügen, die zuvor vom Momentaufnahmedebugger in Visual Studio 2019 deentschlbelt wurde, erhalten Sie die folgende Fehlermeldung:
 
-Nicht ![kompatible Momentaufnahmedebugger Website Erweiterung Visual Studio 2017] Nicht (../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "kompatible Momentaufnahmedebugger Website Erweiterung Visual Studio 2017")
+Nicht ![kompatible Momentaufnahmedebugger Site Erweiterung Visual Studio 2017]nicht(../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "kompatibel Momentaufnahmedebugger Website Erweiterung Visual Studio 2017")
 
 Um dieses Problem zu lösen, löschen Sie die folgenden App-Einstellungen im Azure-Portal, und fügen Sie den Momentaufnahmedebugger erneut an:
 
@@ -189,7 +190,7 @@ Agent-Protokolle können sich an folgenden Speicherorten befinden:
 Instrumentierungsprotokolle finden Sie an den folgenden Speicherorten:
 
 - App Services:
-  - Die Fehler Protokollierung wird automatisch an d:\home\logfiles\eventlog.XML gesendet, Ereignisse sind `<Provider Name="Instrumentation Engine" />` mit oder "Produktions Breakpoints" gekennzeichnet.
+  - Die Fehler Protokollierung wird automatisch an d:\home\logfiles\eventlog.XML gesendet, Ereignisse werden mit `<Provider Name="Instrumentation Engine" />` oder "Produktions Breakpoints" gekennzeichnet.
 - VM/VMSS:
   - Melden Sie sich bei Ihrem virtuellen Computer an, und öffnen Sie die Ereignisanzeige.
   - Öffnen Sie die folgende Ansicht: *Windows meldet > Anwendung*.

@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a00fdb2a41a03554113f2ecb626185aab2c74d5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 74a772bbe915227bca001f9370980cbc7d3212a5
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547997"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974893"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Exemplarische Vorgehensweise: Verwenden der statischen Code Analyse zum Ermitteln von Code Fehlern
 
@@ -25,15 +25,9 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 ## <a name="create-a-class-library"></a>Erstellen einer Klassenbibliothek
 
-### <a name="to-create-a-class-library"></a>So erstellen Sie eine Klassenbibliothek
+1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt aus der Vorlage **Klassenbibliothek (.NET Framework)** .
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
-
-1. Erweitern Sie im Dialogfeld **Neues Projekt** die Option **installiertes** > **visuelles C#** Element, und wählen Sie dann **Windows-Desktop**aus.
-
-1. Wählen Sie die Vorlage **Klassenbibliothek (.NET Framework)** aus.
-
-1. Geben Sie im Textfeld **Name den Namen** **CodeAnalysisManagedDemo** ein, und klicken Sie dann auf **OK**.
+1. Nennen Sie das Projekt " **CodeAnalysisManagedDemo**".
 
 1. Nachdem das Projekt erstellt wurde, öffnen Sie die Datei *Class1.cs* .
 
@@ -55,31 +49,39 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 1. Speichern Sie die Datei Class1.cs.
 
-## <a name="analyze-the-project"></a>Analysieren des Projekts
-
-### <a name="to-analyze-a-managed-project-for-code-defects"></a>So analysieren Sie ein verwaltetes Projekt auf Code Fehler
+## <a name="analyze-the-project-for-code-defects"></a>Analysieren des Projekts auf Code Fehler
 
 1. Wählen Sie das Projekt "CodeAnalysisManagedDemo" in **Projektmappen-Explorer**aus.
 
-1. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
+2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
 
-     Die Eigenschaften Seite "CodeAnalysisManagedDemo" wird angezeigt.
+   Die Eigenschaften Seite "CodeAnalysisManagedDemo" wird angezeigt.
 
-1. Wählen Sie die Registerkarte **Code Analyse** aus.
+3. Wählen Sie die Registerkarte **Code Analyse** aus.
 
-1. Vergewissern Sie sich, dass die Option **Code Analyse für Build aktivieren** aktiviert ist.
+::: moniker range="vs-2017"
 
-1. Wählen Sie in der Dropdown Liste **diesen Regelsatz ausführen** die Option **Microsoft alle Regeln**aus.
+4. Stellen Sie sicher, dass **Code Analyse für Build aktivieren** ausgewählt ist.
 
-1. Klicken Sie im Menü **Datei** auf **ausgewählte Elemente speichern**, und schließen Sie dann die Eigenschaften Seiten.
+5. Wählen Sie in der Dropdown Liste **diesen Regelsatz ausführen** die Option **Microsoft alle Regeln**aus.
 
-1. Klicken Sie im Menü **Erstellen** auf **CodeAnalysisManagedDemo erstellen**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Stellen Sie sicher, dass im Abschnitt **binäre Analysen** die Option **auf Build ausführen** ausgewählt ist.
+
+5. Wählen Sie in der Dropdown Liste **aktive Regeln** die Option **Microsoft alle Regeln**aus.
+
+::: moniker-end
+
+6. Klicken Sie im Menü **Datei** auf **ausgewählte Elemente speichern**, und schließen Sie dann die Eigenschaften Seiten.
+
+7. Klicken Sie im Menü **Erstellen** auf **CodeAnalysisManagedDemo erstellen**.
 
     Die CodeAnalysisManagedDemo-projektbuildwarnungen werden im Fenster **Fehlerliste** und **Ausgabe** angezeigt.
 
 ## <a name="correct-the-code-analysis-issues"></a>Beheben der Code Analyse Probleme
-
-### <a name="to-correct-code-analysis-rule-violations"></a>So korrigieren Sie Verstöße gegen Code Analyse Regeln
 
 1. Wählen Sie im Menü **Ansicht** die Option **Fehlerliste**aus.
 
@@ -91,47 +93,27 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 1. Verwenden Sie die folgenden Tipps, um die Warnungen zu beheben:
 
-   [CA1014: Assemblys mit CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)markieren: Microsoft. Design: "Demo" sollte mit dem CLSCompliantAttribute gekennzeichnet werden, und der Wert sollte "true" lauten.
+   [CA1014: Assemblys mit CLSCompliantAttribute @ no__t-0 markieren: Fügen Sie den Code `[assembly: CLSCompliant(true)]` am Ende der AssemblyInfo.cs-Datei hinzu.
 
-   1. Fügen Sie den `using System;` Code der AssemblyInfo.cs-Datei hinzu.
+   [CA1032: Standardausnahmekonstruktoren implementieren @ no__t-0: Fügen Sie den Konstruktor `public demo (String s) : base(s) { }` der-Klasse `demo` hinzu.
 
-   1. Fügen Sie als nächstes den `[assembly: CLSCompliant(true)]` Code am Ende der AssemblyInfo.cs-Datei hinzu.
+   [CA1032: Standardausnahmekonstruktoren implementieren @ no__t-0: Fügen Sie den Konstruktor `public demo (String s, Exception e) : base(s, e) { }` der-Klasse `demo` hinzu.
 
-   [CA1032: Standardausnahmekonstruktoren](../code-quality/ca1032-implement-standard-exception-constructors.md)implementieren: Microsoft.Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: öffentliche Demo (Zeichenfolge)
+   [CA1032: Standardausnahmekonstruktoren implementieren @ no__t-0: Fügen Sie den Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` der Klassen Demo hinzu. Sie müssen auch eine `using`-Anweisung für <xref:System.Runtime.Serialization?displayProperty=fullName> hinzufügen.
 
-   1. Fügen Sie der- `public demo (String s) : base(s) { }` Klasse `demo`den-Konstruktor hinzu.
+   [CA1032: Standardausnahmekonstruktoren implementieren @ no__t-0: Fügen Sie den Konstruktor `public demo () : base() { }` der-Klasse `demo` hinzu.
 
-   [CA1032: Standardausnahmekonstruktoren](../code-quality/ca1032-implement-standard-exception-constructors.md)implementieren: Microsoft.Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: öffentliche Demo (Zeichenfolge, Ausnahme)
+   [CA1709: Bezeichner sollten korrekt geschrieben werden @ no__t-0: Ändern Sie die Schreibweise des Namespace `testCode` in `TestCode`.
 
-   1. Fügen Sie der- `public demo (String s, Exception e) : base(s, e) { }` Klasse `demo`den-Konstruktor hinzu.
+   [CA1709: Bezeichner sollten korrekt geschrieben werden @ no__t-0: Ändern Sie den Namen des Members in `Demo`.
 
-   [CA1032: Standardausnahmekonstruktoren](../code-quality/ca1032-implement-standard-exception-constructors.md)implementieren: Microsoft.Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: geschützte Demo (SerializationInfo, StreamingContext)
+   [CA1709: Bezeichner sollten korrekt geschrieben werden @ no__t-0: Ändern Sie den Namen des Members in `Item`.
 
-   1. Fügen Sie den `using System.Runtime.Serialization;` Code am Anfang der Class1.cs-Datei hinzu.
+   [CA1710: Bezeichner sollten das korrekte Suffix @ no__t-0 aufweisen: Ändern Sie den Namen der Klasse und deren Konstruktoren in `DemoException`.
 
-   1. Fügen Sie als nächstes den Konstruktor hinzu.`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   [CA2237: Markieren Sie iserialisierbare Typen mit SerializableAttribute @ no__t-0: Fügen Sie der-Klasse `demo` das `[Serializable ()]`-Attribut hinzu.
 
-   [CA1032: Standardausnahmekonstruktoren](../code-quality/ca1032-implement-standard-exception-constructors.md)implementieren: Microsoft.Design: Fügen Sie dieser Klasse den folgenden Konstruktor hinzu: öffentliche Demo ()
-
-   1. Fügen Sie der- `public demo () : base() { }` Klasse `demo`den-Konstruktor hinzu **.**
-
-   [CA1709: Bezeichner sollten korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)geschrieben werden: Microsoft.Naming: Korrigieren Sie die Schreibweise des Namespace namens "Testcode", indem Sie ihn in "Testcode" ändern.
-
-   1. Ändern Sie die Groß-/Kleinschreibung `TestCode`des-Namespace `testCode` in.
-
-   [CA1709: Bezeichner sollten korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)geschrieben werden: Microsoft.Naming: Korrigieren Sie die Schreibweise des Typnamens "Demo", indem Sie Sie in "Demo" ändern.
-
-   1. Ändern Sie den Namen des Members in `Demo`.
-
-   [CA1709: Bezeichner sollten korrekt](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)geschrieben werden: Microsoft.Naming: Korrigieren Sie die Schreibweise des Element namens "Item", indem Sie ihn in "Item" ändern.
-
-   1. Ändern Sie den Namen des Members in `Item`.
-
-   [CA1710: Bezeichner sollten ein korrektes](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)Suffix aufweisen: Microsoft.Naming: Benennen Sie "Testcode. Demo" in "Exception" um.
-
-   1. Ändern Sie den Namen der Klasse und deren Konstruktoren in `DemoException`.
-
-   [CA2210: Assemblys müssen gültige starke](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)Namen haben: Signieren Sie "CodeAnalysisManagedDemo" mit einem Schlüssel mit starkem Namen.
+   [CA2210: Assemblys müssen gültige starke Namen @ no__t-0 aufweisen: Signieren Sie "CodeAnalysisManagedDemo" mit einem Schlüssel mit starkem Namen:
 
    1. Wählen Sie im Menü **Projekt** die Option **CodeAnalysisManagedDemo-Eigenschaften**aus.
 
@@ -141,21 +123,17 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
    1. Aktivieren Sie das Kontrollkästchen **Assembly signieren** .
 
-   1. Wählen Sie  **\<in der Liste Schlüsseldatei für Zeichen folgen Namen auswählen die Option neu... aus. >** .
+   1. Wählen Sie in der Liste **Schlüsseldatei für Zeichen folgen Name auswählen** **\<new->** aus.
 
       Das Dialogfeld Schlüssel für einen **starken Namen erstellen** wird angezeigt.
 
-   1. Geben Sie im **Schlüssel Dateinamen den Namen**TestKey ein.
+   1. Geben Sie für **Schlüssel Dateiname den Namen** **TestKey**ein.
 
-   1. Geben Sie ein Kennwort ein, und wählen Sie dann **OK**
+   1. Geben Sie ein Kennwort ein, und wählen Sie dann **OK**aus.
 
    1. Wählen Sie im Menü **Datei** die Option **ausgewählte Elemente speichern**aus, und schließen Sie dann die Eigenschaften Seiten.
 
-   [CA2237: Markieren Sie iserialisierbare Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Fügen Sie ein [serialisierbares]-Attribut zum Typ ' Demo ' hinzu, da dieser Typ iserialisierbar implementiert.
-
-   1. Fügen Sie `[Serializable ()]` der-Klasse `demo`das-Attribut hinzu.
-
-   Nachdem Sie die Änderungen vorgenommen haben, sollte die Class1.cs-Datei wie folgt aussehen:
+   Nachdem Sie alle Änderungen vorgenommen haben, sollte die Class1.cs-Datei wie folgt aussehen:
 
    ```csharp
    using System;
@@ -186,7 +164,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
     1. Wählen Sie im **Fehlerliste**die Warnung aus.
 
-    1. Wählen Sie im Kontextmenü (Kontextmenü) die Option**in Unterdrückungs Datei**unter **drücken** > aus.
+    1. Klicken Sie im Kontextmenü (Kontextmenü) auf  > **in Unterdrückungs Datei**unter **drücken**.
 
 1. Erstellen Sie das Projekt neu.
 

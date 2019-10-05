@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185956"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974695"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Regelsätze für Analysepakete
 
@@ -36,7 +36,7 @@ Wenn Sie von der veralteten "FxCop"-Analyse zur .NET Compiler Platform basierten
 
 ## <a name="use-analyzer-package-rule-sets"></a>Verwenden von analysepaketregelsätzen
 
-Nachdem Sie [ein nuget Analyzer-Paket installiert](install-roslyn-analyzers.md)haben, suchen Sie den vordefinierten Regelsatz im *RuleSets* -Verzeichnis. Wenn Sie z. b. auf `Microsoft.CodeAnalysis.FxCopAnalyzers` das Analysepaket verwiesen haben, finden Sie das *zugehörige RuleSets* -Verzeichnis unter *% User\\profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\<Version. \>\rulesets*. Kopieren Sie von dort eine oder mehrere der RuleSets, und fügen Sie Sie in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
+Nachdem Sie [ein nuget Analyzer-Paket installiert](install-roslyn-analyzers.md)haben, suchen Sie den vordefinierten Regelsatz im *RuleSets* -Verzeichnis. Wenn Sie z. b. auf das `Microsoft.CodeAnalysis.FxCopAnalyzers` Analyzer-Paket verwiesen haben, finden Sie das *zugehörige RuleSets* -Verzeichnis unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-4 @ no__t-5version @ no__t-6\rulesets*. Kopieren Sie von dort eine oder mehrere der RuleSets, und fügen Sie Sie in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
 
 Sie können auch [einen vordefinierten Regelsatz anpassen](how-to-create-a-custom-rule-set.md) . Beispielsweise können Sie den Schweregrad einer oder mehrerer Regeln ändern, sodass Verstöße im **Fehlerliste**als Fehler oder Warnungen angezeigt werden.
 
@@ -46,7 +46,7 @@ Der Vorgang zum Festlegen des aktiven Regelsatzes ist ein wenig anders, je nachd
 
 ### <a name="net-core"></a>.NET Core
 
-Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Core-oder .NET Standard-Projekten festlegen möchten, fügen Sie die Eigenschaft " **codeanalysisruleset** " manuell zu Ihrer Projektdatei hinzu. Der folgende Code Ausschnitt legt `HelloWorld.ruleset` z. b. den aktiven Regelsatz fest.
+Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Core-oder .NET Standard-Projekten festlegen möchten, fügen Sie die Eigenschaft " **codeanalysisruleset** " manuell zu Ihrer Projektdatei hinzu. Der folgende Code Ausschnitt legt z. b. `HelloWorld.ruleset` als aktiven Regelsatz fest.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,11 +57,29 @@ Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Cor
 
 ### <a name="net-framework"></a>.NET Framework
 
-Um einen Regelsatz für den aktiven Regelsatz für die Analyse in .NET Framework Projekten festzulegen, klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus. Wählen Sie auf den Eigenschaften Seiten des Projekts die Registerkarte **Code Analyse** aus. Wählen Sie unter **diesen Regelsatz ausführen**die Option **Durchsuchen**aus, und wählen Sie dann den gewünschten Regelsatz aus, den Sie in das Projektverzeichnis kopiert haben. Nun sehen Sie nur Regel Verletzungen für die Regeln, die im ausgewählten Regelsatz aktiviert sind.
+So erstellen Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .NET Framework Projekten:
+
+- Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus.
+
+- Wählen Sie auf den Eigenschaften Seiten des Projekts die Registerkarte **Code Analyse** aus.
+
+::: moniker range="vs-2017"
+
+- Wählen Sie unter **diesen Regelsatz ausführen**die Option **Durchsuchen**aus, und wählen Sie dann den gewünschten Regelsatz aus, den Sie in das Projektverzeichnis kopiert haben.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Wählen Sie unter **aktive Regeln**die Option **Durchsuchen**aus, und wählen Sie dann den gewünschten Regelsatz aus, den Sie in das Projektverzeichnis kopiert haben.
+
+::: moniker-end
+
+   Nun sehen Sie nur Regel Verletzungen für die Regeln, die im ausgewählten Regelsatz aktiviert sind.
 
 ## <a name="available-rule-sets"></a>Verfügbare Regelsätze
 
-Die vordefinierten analyseregelsätze enthalten drei RuleSets, die sich auf alle Regeln im&mdash;Paket auswirken, das Sie alle aktiviert, eine, die alle deaktiviert, und eine, die die Standardeinstellungen für den Schweregrad und die Aktivierung jeder Regel berücksichtigt:
+Die vordefinierten analyseregelsätze enthalten drei RuleSets, die sich auf alle Regeln im Paket @ no__t-0one auswirken, das Sie alle aktiviert, eine, die alle deaktiviert, und eine, die die Standardeinstellungen für den Schweregrad und die Aktivierung der Regel berücksichtigt:
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset

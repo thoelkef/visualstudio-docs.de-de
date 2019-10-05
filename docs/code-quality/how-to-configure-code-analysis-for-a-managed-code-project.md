@@ -13,21 +13,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 86aa308369ef93792126c7f8da5f59f94ef0c02a
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551052"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975116"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Vorgehensweise: Legacy Analyse für verwalteten Code konfigurieren
 
 In Visual Studio können Sie aus einer Liste von Code Analyse- [Regelsätzen](../code-quality/rule-set-reference.md) auswählen, die auf ein Projekt mit verwaltetem Code angewendet werden sollen. In der Standardeinstellung die **Microsoft-Mindestregeln** Regelsatz ausgewählt ist, aber Sie können bei Bedarf einen anderen Regelsatz anwenden. Regelsätze können auf eine oder mehrere Projekte in einer Projektmappe angewendet werden.
 
-Informationen zum Konfigurieren eines Regelsatzes für ASP.NET-Webanwendungen finden [Sie unter Gewusst wie: Konfigurieren Sie die Code Analyse für eine ASP.net](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)-Webanwendung.
-
 > [!NOTE]
-> Dieser Artikel bezieht sich auf die Legacy Analyse und nicht auf [.NET Compiler Platform basierte Code](use-roslyn-analyzers.md)Analysetools, die nach dem erstellen keine Code Analyse ausführen.
+> Dieser Artikel bezieht sich auf die Legacy Analyse und nicht auf [.NET Compiler Platform basierte Code Analysen](use-roslyn-analyzers.md).
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Konfigurieren eines Regelsatzes für ein .NET Framework Projekt
 
@@ -37,20 +35,40 @@ Informationen zum Konfigurieren eines Regelsatzes für ASP.NET-Webanwendungen fi
 
    - Mit der rechten Maustaste in des Projekts im **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**, und wählen Sie dann die **Codeanalyse** Registerkarte.
 
-1. In der **Konfiguration** und **Plattform** Listen, wählen Sie die Buildplattform und die Zielplattform.
+2. In der **Konfiguration** und **Plattform** Listen, wählen Sie die Buildplattform und die Zielplattform.
 
-1. Codeanalyse ausführen jedes Mal, wenn das Projekt mit der ausgewählten Konfiguration erstellt wird, wählen die **Codeanalyse für Build aktivieren** Kontrollkästchen. Sie können die Codeanalyse auch manuell ausführen, indem Sie auswählen **analysieren** > **Codeanalyse ausführen** > **Ausführen der Codeanalyse für \<Projektname >** .
+::: moniker range="vs-2017"
 
-1. Standardmäßig meldet die Codeanalyse keine Warnungen zu Code, der automatisch von Tools von Drittanbietern generiert wird. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, wählen Sie **Code Analyse beim Build aktivieren aus**. Sie können die Codeanalyse auch manuell ausführen, indem Sie auswählen **analysieren** > **Codeanalyse ausführen** > **Ausführen der Codeanalyse für \<Projektname >** .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, wählen Sie im Abschnitt **binäre Analyse** Module die Option **im Build ausführen** aus. Sie können die Codeanalyse auch manuell ausführen, indem Sie auswählen **analysieren** > **Codeanalyse ausführen** > **Ausführen der Codeanalyse für \<Projektname >** .
+
+::: moniker-end
+
+4. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
 
     > [!NOTE]
-    > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Sie können sowohl anzeigen und verwalten den Quellcode für ein Formular oder einer Vorlage, ohne es überschrieben.
+    > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Sie können den Quellcode für ein Formular oder eine Vorlage anzeigen und verwalten und werden nicht überschrieben.
 
-1. In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:
+::: moniker range="vs-2017"
+
+5. In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Führen Sie in der Liste **aktive Regeln** einen der folgenden Schritte aus:
+
+::: moniker-end
 
     - Wählen Sie den Regelsatz, den Sie verwenden möchten.
 
-    - Wählen Sie  **\<durchsuchen... >** finden Sie eine vorhandene benutzerdefinierte Regel festlegen, ist nicht in der Liste.
+    - Wählen Sie **\<browse >** aus, um einen vorhandenen benutzerdefinierten Regelsatz zu suchen, der nicht in der Liste enthalten ist.
 
     - Definieren einer [benutzerdefinierten Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md).
 
@@ -77,4 +95,3 @@ Standardmäßig werden alle verwalteten Projekten einer Projektmappe zugewiesen 
 ## <a name="see-also"></a>Siehe auch
 
 - [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)
-- [Vorgehensweise: Konfigurieren der Code Analyse für eine ASP.NET-Webanwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

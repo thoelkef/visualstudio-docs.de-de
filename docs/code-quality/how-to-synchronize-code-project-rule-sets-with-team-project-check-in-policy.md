@@ -1,5 +1,5 @@
 ---
-title: Projekt-Synchronisierungsregel legt fest, mit der Eincheckrichtlinie
+title: Projekt Regelsätze mit Eincheck Richtlinie synchronisieren
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,57 +10,65 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260848"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975060"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit einer Eincheckrichtlinie für Azure DevOps-Projekt
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Vorgehensweise: Synchronisieren von Code Projekt-Regelsätzen mit einer Azure devops-Projekt Eincheck Richtlinie
 
-Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckrichtlinie für das Azure DevOps-Projekt durch Angabe eines Regelsatzes, das mindestens die Regeln enthält, die in der Regel legen Sie für den Check-in-Richtlinie angegeben werden. Der leitende Entwickler können Sie mit dem Namen und Speicherort der Regel legen Sie für den Check-in-Richtlinie informieren. Sie können eine der folgenden Optionen verwenden, um sicherzustellen, dass die Codeanalyse für das Projekt den richtigen Satz an Regeln verwendet:
+Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtlinie für das Azure devops-Projekt synchronisiert, indem ein Regelsatz angegeben wird, der mindestens die Regeln enthält, die im Regelsatz für die Eincheck Richtlinie angegeben sind. Ihr Entwickler Leiter kann Sie über den Namen und den Speicherort des Regelsatzes für die Eincheck Richtlinie informieren. Sie können eine der folgenden Optionen verwenden, um sicherzustellen, dass die Code Analyse für das Projekt den richtigen Regelsatz verwendet:
 
-- Wenn eine der integrierten Regelsätzen Microsoft die Check-in-Richtlinie verwendet wird, öffnen Sie das Dialogfeld "Eigenschaften" für das Codeprojekt, zeigt die Codeanalyse-Seite und wählen Sie die Regel, die auf der Seite "Codeanalyse" von den projekteinstellungen Code festgelegt. Die Microsoft-Standardregelsätze automatisch mit Visual Studio installiert werden auf schreibgeschützt festgelegt werden und sollte nicht bearbeitet werden. Wenn die Regelsätze nicht bearbeitet werden, garantiert die Regeln in der Richtlinie und eine Regel für das lokale Gruppen entsprechen.
+- Wenn die Eincheck Richtlinie einen der integrierten Microsoft-Regelsätze verwendet, öffnen Sie das Dialogfeld "Eigenschaften" für das Code Projekt, zeigen Sie die Seite "Code Analyse" an, und wählen Sie den Regelsatz aus. Die Standardregel Sätze von Microsoft werden automatisch mit Visual Studio installiert und sollten nicht bearbeitet werden. Wenn die Regelsätze nicht bearbeitet werden, entsprechen die Regeln in der Richtlinie und den lokalen Regelsätzen der Garantie.
 
-- Wenn die Eincheckrichtlinie ein benutzerdefinierten Regelsatzes verwendet wird, führen Sie einen Get-Vorgang für die Regelsatzdatei in der Versionskontrolle, um eine lokale Kopie zu erstellen. Geben Sie dann diesen lokalen Speicherort in den Code Analysis-Einstellungen für das Codeprojekt ein. Die Regeln werden garantiert, wenn die Regel legen Sie für den Check-in-Richtlinie auf dem neuesten Stand ist.
+- Wenn in der Eincheck Richtlinie ein benutzerdefinierter Regelsatz verwendet wird, führen Sie einen Get-Vorgang für die Regel Satz Datei in der Versionskontrolle aus, um eine lokale Kopie zu erstellen. Geben Sie dann den lokalen Speicherort in den Code Analyse Einstellungen für das Code Projekt an. Die Regeln entsprechen garantiert, wenn der Regelsatz für die Eincheck Richtlinie auf dem neuesten Stand ist.
 
-     Wenn Sie den Speicherort der Versionskontrolle in einen lokalen Ordner, die in der gleichen Beziehung in das Stammverzeichnis des Azure DevOps-Projekt wie Ihr Codeprojekt ist zuordnen, wird der Speicherort der Regel mithilfe eines relativen Pfads festgelegt. Der relative Pfad wird sichergestellt, dass die Einstellung des Code-Projekt für die Codeanalyse auf andere Computer verschoben werden kann.
+     Wenn Sie den Speicherort der Versionskontrolle einem lokalen Ordner zuordnen, der sich in derselben Beziehung zum Azure devops-Projektstamm als das Code Projekt befindet, wird der Speicherort der Regel mit einem relativen Pfad festgelegt. Der relative Pfad stellt sicher, dass die Code Projekteinstellung für die Code Analyse auf andere Computer verschoben werden kann.
 
-- Passen Sie eine Kopie der Regel legen Sie für die Eincheckrichtlinie für ein Codeprojekt. Stellen Sie sicher, dass der neue Regelsatz enthält alle Regeln in der Check-in-Richtlinie und alle anderen Regeln, die Sie einschließen möchten. Sie müssen sicherstellen, werden, dass der Regelsatz alle Regeln in der Regel legen Sie für den Check-in-Richtlinie enthält.
+- Passen Sie eine Kopie des Regelsatzes für die Eincheck Richtlinie für ein Code Projekt an. Stellen Sie sicher, dass der neue Regelsatz alle Regeln in der Eincheck Richtlinie und alle anderen Regeln enthält, die Sie einschließen möchten. Sie müssen sicherstellen, dass der Regelsatz alle Regeln im Regelsatz für die Eincheck Richtlinie enthält.
 
-## <a name="to-specify-a-microsoft-standard-rule-set"></a>Geben Sie einen Microsoft-standard-Regelsatz fest
+## <a name="to-specify-a-microsoft-standard-rule-set"></a>So geben Sie einen Microsoft Standard-Regelsatz an
 
 1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie auf **Codeanalyse**.
+2. Klicken Sie auf **Code Analyse**.
 
-3. In der **diesen Regelsatz ausführen** Liste, klicken Sie auf der Eincheckrichtlinie-Regelsatz.
+::: moniker range="vs-2017"
 
-## <a name="to-specify-a-custom-check-in-policy-rule-set"></a>Angeben einen benutzerdefinierte Eincheckrichtlinie-Regelsatz
+3. Wählen Sie in der Liste **diesen Regelsatz ausführen** den Regelsatz Check-in-Richtlinie aus.
 
-1. Führen Sie bei Bedarf einen Get-Vorgang für die Regelsatzdatei an, die angibt, der Eincheckrichtlinie.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Wählen Sie in der Liste **aktive Regeln** den Regelsatz Check-in-Richtlinie aus.
+
+::: moniker-end
+
+## <a name="to-specify-a-custom-check-in-policy-rule-set"></a>So geben Sie einen benutzerdefinierten Eincheck Richtlinien-Regelsatz an
+
+1. Führen Sie bei Bedarf einen Get-Vorgang für die Regel Satz Datei aus, die die Eincheck Richtlinie angibt.
 
 2. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.
 
-3. Klicken Sie auf **Codeanalyse**.
+3. Klicken Sie auf **Code Analyse**.
 
-4. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .
+::: moniker range="vs-2017"
 
-5. In der **öffnen** Dialogfeld geben die Eincheckrichtlinie Regelsatz Datei.
+4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<browse >** .
 
-## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Legen zum Erstellen einer benutzerdefinierten Regel für ein Codeprojekt
+::: moniker-end
 
-1. Führen Sie eines der Verfahren in diesem Thema die Check-in-Richtlinie des Azure DevOps-Projekts auf der Seite "Codeanalyse" im Dialogfeld Projekt Einstellungen auswählen.
+::: moniker range=">=vs-2019"
 
-2. Klicken Sie auf **Öffnen**.
+4. Klicken Sie in der Liste **aktive Regeln** auf **\<browse >** .
 
-3. Hinzufügen oder Entfernen von Regeln mithilfe der [Regelsatz-Editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
+::: moniker-end
 
-4. Speichern Sie den geänderten Regelsatz, um eine RULESET-Datei auf dem lokalen Computer oder einen UNC-Pfad.
+5. Geben Sie im Dialogfeld **Öffnen** die Regel Satz Datei für die Eincheck Richtlinie an.
 
-5. Öffnen Sie das Dialogfeld "Eigenschaften" für das Codeprojekt, und zeigen die **Codeanalyse** Seite.
+## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>So erstellen Sie einen benutzerdefinierten Regelsatz für ein Code Projekt
 
-6. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .
-
-7. In der **öffnen** Dialogfeld geben den Regelsatz-Datei.
+Weitere Informationen zum Erstellen eines benutzerdefinierten Regelsatzes finden Sie unter [Anpassen eines Regelsatzes](how-to-create-a-custom-rule-set.md).
