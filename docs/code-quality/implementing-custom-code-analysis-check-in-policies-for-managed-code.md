@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierter Code Codeanalyse-Eincheckrichtlinien für verwalteten code
+title: Eincheck Richtlinien für benutzerdefinierte Code Analyse für verwalteten Code
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260839"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975034"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 
@@ -110,10 +110,18 @@ Sie geben Sie eine Regel des Project-Eincheckrichtlinie als die Codeanalyse-Rege
 
 4. Klicken Sie ggf. auf die entsprechenden Optionen in der **Konfiguration** und **Plattform** aufgeführt.
 
-5. Um die Analyse von Code jedes Mal ausführen, die den Codeprojekt mit der angegebenen Konfiguration erstellt wird, wählen Sie die **Codeanalyse für Build aktivieren (definiert eine CODE_ANALYSIS-Konstante)** Kontrollkästchen.
+::: moniker range="vs-2017"
 
-6. Wenn Code in Komponenten von anderen Unternehmen ignorieren möchten, wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
+5. Wenn Sie die Code Analyse bei jedem Erstellen des Code Projekts mithilfe der angegebenen Konfiguration ausführen möchten, wählen Sie **Code Analyse beim Build aktivieren aus**.
 
-7. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .
+::: moniker-end
 
-8. Geben Sie die lokale Version der Regelsatzdatei der Eincheckrichtlinie.
+::: moniker range=">=vs-2019"
+
+5. Um die Code Analyse jedes Mal auszuführen, wenn das Code Projekt mithilfe der angegebenen Konfiguration erstellt wird, wählen Sie im Abschnitt **binäre Analysen** die Option **im Build ausführen** aus.
+
+::: moniker-end
+
+6. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<browse >** .
+
+8. Wählen Sie die lokale Version der Regel Satz Datei für die Eincheck Richtlinie aus.
