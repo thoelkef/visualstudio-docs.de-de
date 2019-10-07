@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: bdf67f78d1a4cc7e2d17336a7272b919fcc6fba9
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251829"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693025"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -38,11 +38,11 @@ Die Datei wird im Menü „Testeinstellungen“ angezeigt, und Sie können sie a
 
 ::: moniker range=">=vs-2019"
 
-Um eine Testlaufeinstellungsdatei in der IDE anzugeben, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** und dann **Einstellungsdatei auswählen** aus. Navigieren Sie zur *.runsettings*-Datei, und wählen Sie diese aus.
+Wählen Sie **Test** > **Einstellungsdatei auswählen** aus, um eine Testlaufeinstellungsdatei anzugeben. Navigieren Sie zur *.runsettings*-Datei, und wählen Sie diese aus.
 
-![Menü „Datei für Testeinstellungen auswählen“ in Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+![Menü „Datei für Testeinstellungen auswählen“ in Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-Die Datei wird im Menü „Einstellungen“ im Test-Explorer angezeigt, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
+Die Datei wird im Menü „Test“ angezeigt, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Gehen Sie wie folgt vor, um Ihre Tests mit einer *RUNSETTINGS*-Datei anzupassen:
 
 ::: moniker range=">=vs-2019"
 
-3. Wenn Sie die Testlaufeinstellungsdatei auswählen möchten, wählen Sie im **Test-Explorer** den Pfeil auf der Schaltfläche **Einstellungen** aus, und wählen Sie dann **Einstellungsdatei auswählen** aus. Navigieren Sie zu der erstellten *RUNSETTINGS*-Datei, und wählen Sie **OK** aus.
+3. Wählen Sie **Test** > **Einstellungsdatei auswählen** aus, um die Testlaufeinstellungsdatei auszuwählen. Navigieren Sie zu der erstellten *RUNSETTINGS*-Datei, und wählen Sie **OK** aus.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -149,7 +149,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-
+            
           </CodeCoverage>
         </Configuration>
       </DataCollector>
@@ -157,11 +157,12 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
-          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true"  xmlns="">           
+            <ScreenCaptureVideo bitRate="512" frameRate="2" quality="20" />
+          </MediaRecorder>
         </Configuration>
       </DataCollector>
-
     </DataCollectors>
   </DataCollectionRunSettings>
 
