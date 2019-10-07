@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: ca7df1c087e35fd188461382e4f44de6ab703964
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846223"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481955"
 ---
 # <a name="special-characters-to-escape"></a>Sonderzeichen mit Escapezeichen
 Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine besondere Bedeutung in dem Kontext haben, in dem sie verwendet werden. Beispielsweise ist das Sternchen (*) nur in den "Include"- und "Exclude"-Attributen einer Elementdefinition oder in einem Aufruf von <xref:Microsoft.Build.Tasks.CreateItem> ein Sonderzeichen. In allen anderen Fällen wird das Sternchen als einfaches Sternchen behandelt. Obwohl sie Sternchen nicht überall in Projektdateien mit Escapezeichen versehen müssen, kann dies auch nicht schaden.
@@ -30,7 +30,7 @@ Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine 
 
  Es folgt die vollständige Liste der Sonderzeichen mit Escapezeichen:
 
-|Zeichen|Beschreibung|
+|Zeichen|BESCHREIBUNG|
 |---------------|-----------------|
 |%|Prozentzeichen, für Verweise auf Metadaten verwendet.|
 |$|Dollarzeichen, für Verweise auf Eigenschaften verwendet.|
@@ -40,6 +40,9 @@ Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine 
 |;|Semikolon, ein Listentrennzeichen.|
 |?|Fragezeichen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|
 |*|Sternchen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|
+
+> [!NOTE]
+> In einigen Szenarios müssen Sie doppelte gerade Anführungszeichen (") möglicherweise mit Escapezeichen versehen, beispielsweise bei der Verwendung solcher Zeichen innerhalb eines `Exec`-Tasks.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Escapesonderzeichen in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)

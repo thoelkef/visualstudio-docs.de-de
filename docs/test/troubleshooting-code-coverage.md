@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079586"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342476"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 
@@ -29,6 +29,7 @@ Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden C
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Mögliche Gründe dafür, dass keine oder alte Ergebnisse angezeigt werden
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Verwenden Sie die richtige Edition von Visual Studio?
+
 Sie benötigen Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Es wurden keine Tests ausgeführt.
@@ -43,7 +44,7 @@ Lösung&mdash;Wählen Sie im Test-Explorer **Alle ausführen** aus, um zu überp
 
 Wenn Sie die Tests ändern und erneut ausführen, können das vorherige Code Coverage-Ergebnis und die Codefarbe der alten Ausführung noch sichtbar sein.
 
-1. Führen Sie "Codeabdeckung analysieren" aus.
+1. Führen Sie **Code Coverage analysieren** aus.
 
 2. Stellen Sie sicher, dass Sie das aktuelle Resultset im Fenster **Code Coverage-Ergebnisse** ausgewählt haben.
 

@@ -1,28 +1,28 @@
 ---
-title: Erstellen einer Windows Forms-App mit Visual Basic
-description: Erfahren Sie, wie Sie schrittweise eine Windows Forms-App in Visual Studio mit Visual Basic erstellen.
-ms.date: 09/27/2019
+title: Erstellen einer Windows Forms-App mit C#
+description: Erfahren Sie in dieser Schrittanleitung, wie Sie eine Windows Forms-App in Visual Studio mit C# erstellen.
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang: vb
+ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 dev_langs:
-- VB
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
+ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
 ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681581"
+ms.locfileid: "71685529"
 ---
-# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic
+# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Erstellen einer Windows Forms-App in Visual Studio mit C#
 
-Mithilfe dieser kurzen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio können Sie eine einfache Visual Basic-Anwendung erstellen, die über eine Windows-basierte Benutzeroberfläche verfügt.
+In dieser kurzen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio erstellen Sie eine einfache C#-Anwendung, die über eine Windows-basierte Benutzeroberfläche verfügt.
 
 ::: moniker range="vs-2017"
 
@@ -41,7 +41,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
-Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enthält schon bevor Sie mit der Bearbeitung beginnen alle Vorlagendateien, die Sie benötigen.
+Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projekttyp enthält schon bevor Sie mit der Bearbeitung beginnen alle Vorlagendateien, die Sie benötigen.
 
 ::: moniker range="vs-2017"
 
@@ -49,7 +49,7 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie dann auf **Windows-Desktop**. Klicken Sie im mittleren Bereich auf **Windows Forms-App (.NET Framework)** . Nennen Sie die Datei `HelloWorld`.
+1. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual C#** , und klicken Sie dann auf **Windows-Desktop**. Klicken Sie im mittleren Bereich auf **Windows Forms-App (.NET Framework)** . Nennen Sie die Datei `HelloWorld`.
 
      Wenn Ihnen die Projektvorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der oberen Menüleiste auf **Extras** > **Tools und Features abrufen**. Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
@@ -65,11 +65,11 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
    ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Wählen Sie im Fenster **Neues Projekt erstellen** die Vorlage **Windows Forms-App (.NET Framework)** für Visual Basic aus.
+1. Wählen Sie im Fenster **Neues Projekt erstellen** die Vorlage **Windows Forms-App (.NET Framework)** für C# aus.
 
-   (Sie können die Suche auch verfeinern, um schnell zu der gewünschten Vorlage zu gelangen. Sie können z. B. *Windows Forms-App* im Suchfeld eingeben. Wählen Sie anschließend in der Liste der Sprachen **Visual Basic** und dann in der Liste der Plattformen **Windows** aus.)  
+   (Sie können die Suche auch verfeinern, um schnell zu der gewünschten Vorlage zu gelangen. Sie können z. B. *Windows Forms-App* im Suchfeld eingeben. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann in der Liste der Plattformen **Windows** aus.)  
 
-   ![Screenshot: Auswählen der Visual Basic-Vorlage für die Windows Forms-App (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Auswählen der C#-Vorlage für die Windows Forms-App (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-winforms-project-nonfiltered.png)
 
    > [!NOTE]
    > Wenn Sie die **Windows Forms-App (.NET Framework)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
@@ -84,7 +84,7 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *HalloWelt* ein. Wählen Sie anschließend **Erstellen** aus.
 
-   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-winform-project-helloworld.png)
 
    Visual Studio öffnet Ihr neues Projekt.
 
@@ -92,29 +92,29 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 ## <a name="create-the-application"></a>Erstellen der Anwendung
 
-Sobald Sie eine Visual Basic-Projektvorlage ausgewählt und die Datei benannt haben, öffnet Visual Studio ein Formular für Sie. Ein Formular ist eine Windows-Benutzeroberfläche. Wir erstellen eine „Hallo Welt“-Anwendung, indem wir dem Formular Steuerelemente hinzufügen und die App dann ausführen.
+Nachdem Sie eine C#-Projektvorlage ausgewählt und die Datei benannt haben, öffnet Visual Studio ein Formular für Sie. Ein Formular ist eine Windows-Benutzeroberfläche. Wir erstellen eine „Hallo Welt“-Anwendung, indem wir dem Formular Steuerelemente hinzufügen und die App dann ausführen.
 
 ### <a name="add-a-button-to-the-form"></a>Hinzufügen einer Schaltfläche zum Formular
 
-1. Klicken Sie auf **Toolbox**, um das „Toolbox ausfliegen“-Fenster zu öffnen.
+1. Klicken Sie auf **Toolbox**, um das Toolbox-Flyoutfenster zu öffnen.
 
-     ![Klicken Sie auf „Toolbox“, um das Toolbox-Fenster zu öffnen.](../ide/media/vb-toolbox-toolwindow.png)
+     ![Auswählen von „Toolbox“ zum Öffnen des Toolbox-Fensters](../ide/media/csharp-toolbox-toolwindow.png)
 
      (Wenn Ihnen die Option **Toolbox** nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Klicken Sie zu diesem Zweck auf **Ansicht** > **Toolbox**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
 
-1. Klicken Sie auf das **Stecknadelsymbol**, um das **Toolbox-Fenster** anzudocken.
+1. Klicken Sie auf das **Stecknadelsymbol**, um das **Toolbox**-Fenster anzudocken.
 
-     ![Klicken Sie auf das Stecknadelsymbol, um das Toolbox-Fenster an die IDE anzuheften.](../ide/media/vb-pin-the-toolbox-window.png)
+     ![Auswählen des Stecknadelsymbols zum Anheften des Toolbox-Fensters an die IDE](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. Klicken Sie auf das **Schaltflächen-Steuerelement**, und bewegen Sie dieses dann zum Formular.
+1. Klicken Sie auf das **Schaltflächen**-Steuerelement, und ziehen Sie es auf das Formular.
 
-     ![Hinzufügen einer Schaltfläche zum Formular](../ide/media/vb-add-a-button-to-form1.png)
+     ![Hinzufügen einer Schaltfläche zum Formular](../ide/media/csharp-add-button-form1.png)
 
-1. Geben Sie im Fenster **Eigenschaften** im Abschnitt **Darstellung** (oder im Abschnitt **Schriftarten**) `Click this` ein, und drücken Sie dann die **EINGABETASTE**.
+1. Suchen Sie im Fenster **Eigenschaften** nach **Text**, ändern Sie den Namen von **Button1** in `Click this`, und drücken Sie dann die **EINGABETASTE**.
 
      ![Hinzufügen von Text zur Schaltfläche auf dem Formular](../ide/media/vb-button-control-text.png)
 
-     (Wenn Ihnen das **Eigenschaftenfenster** nicht angezeigt wird, können Sie es über die Menüleiste öffnen. Klicken Sie dafür auf **Ansicht** > **Eigenschaftenfenster**. Oder drücken Sie **F4**.)
+     (Wenn Ihnen das **Eigenschaftenfenster** nicht angezeigt wird, können Sie es über die Menüleiste öffnen. Klicken Sie zu diesem Zweck auf **Ansicht** > **Eigenschaftenfenster**. Oder drücken Sie **F4**.)
 
 1. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von **Button1** in `btnClickThis`, und drücken Sie dann die **EINGABETASTE**.
 
@@ -133,23 +133,23 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 
 ### <a name="add-code-to-the-form"></a>Hinzufügen von Code zum Formular
 
-1. Doppelklicken Sie im Fenster **Form1.vb [Entwurf]** auf die Schaltfläche **Click this** („Hier klicken“), um das Fenster **Form1.vb** zu öffnen.
+1. Doppelklicken Sie im Fenster **Form1.cs &#91;Entwurf&#93;** auf die Schaltfläche **Hier klicken**, um das Fenster **Form1.cs** zu öffnen.
 
-      (Stattdessen können Sie auch **Form1.vb** im **Projektmappen-Explorer** erweitern und dann auf **Form1** klicken.)
+      (Stattdessen können Sie auch **Form1.cs** im **Projektmappen-Explorer** erweitern und dann auf **Form1** klicken.)
 
-1. Geben Sie im Fenster **Form1.vb** zwischen den Zeilen **Private Sub** und **End Sub** die Zeichenfolge `lblHelloWorld.Text = "Hello World!"` ein, wie im folgenden Screenshot gezeigt:
+1. Geben Sie im Fenster **Form1.cs** nach der Zeile **private void** die Zeichenfolge `lblHelloWorld.Text = "Hello World!";` ein, wie im folgenden Screenshot gezeigt:
 
-     ![Hinzufügen von Code zum Formular](../ide/media/vb-add-code-to-the-form.png)
+     ![Hinzufügen von Code zum Formular](../get-started/csharp/media/csharp-winforms-add-code.png)
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
 1. Klicken Sie auf die Schaltfläche **Start**, um die Anwendung auszuführen.
 
-     ![Klicken Sie auf „Start“, um die App auszuführen und zu debuggen.](../ide/media/vb-click-start-hello-world.png)
+     ![Auswählen von „Start“ zum Debuggen und Ausführen der App](../ide/media/vb-click-start-hello-world.png)
 
    Daraufhin werden einige Vorgänge gleichzeitig ausgeführt. In der Visual Studio-IDE öffnen sich das Fenster **Diagnosetools** und ein **Ausgabefenster**. Außerhalb der IDE wird das **Form1**-Dialogfeld angezeigt. Darin ist die Schaltfläche **Click this** („Hier klicken“) und Text mit dem Inhalt **Label1** enthalten.
 
-1. Klicken Sie auf die Schaltfläche **Click this** („Hier klicken“) im Dialogfeld **Form1**. Beachten Sie, dass der Text **Label1** sich in **Hallo Welt!** ändert.
+1. Klicken Sie im Dialogfeld **Form1** auf die Schaltfläche **Hier klicken**. Beachten Sie, dass der Text **Label1** sich in **Hallo Welt!** ändert.
 
     ![Ein „Form1“-Dialogfeld, das den Text „Label1“ beinhaltet. ](../ide/media/vb-form1-dialog-hello-world.png)
 
@@ -164,6 +164,6 @@ Fahren Sie für weitere Informationen mit dem folgenden Tutorial fort:
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Weitere Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
-* [C#-Tutorials](/visualstudio/get-started/csharp/)
+* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
+* [Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
 * [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)

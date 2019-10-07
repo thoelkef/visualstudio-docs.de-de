@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291041"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342399"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
@@ -256,6 +256,9 @@ Sie können Tasks für jede Datei und jeden Ordner erstellen, indem Sie den Name
    ![Angepasste Startschaltfläche](media/customize-start-button.png)
 
    Wenn Sie **F5** drücken, wird der Debugger gestartet und hält an jedem Haltepunkt an, den Sie festgelegt haben. Alle vertrauten Debuggerfenster sind verfügbar und funktionsfähig.
+
+   > [!IMPORTANT]
+   > Weitere Informationen zu benutzerdefinierten Build- und Debugtasks in „Ordner öffnen“-Projekten für C++ finden Sie unter [„Ordner öffnen“-Unterstützung für C++-Buildsysteme in Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Angeben von Argumenten für das Debuggen
 

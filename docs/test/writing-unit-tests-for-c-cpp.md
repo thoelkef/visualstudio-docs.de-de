@@ -1,19 +1,19 @@
 ---
 title: Schreiben von Komponententests für C/C++
 description: Schreiben von C++-Komponententests in Visual Studio mit verschiedenen Testframeworks wie CTest, Boost.Test und Google Test.
-ms.date: 05/06/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160181"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481916"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -86,6 +86,8 @@ Wenn der Testcode die Funktionen, die Sie testen möchten, nicht exportiert, kö
 Fügen Sie als Nächstes in der *CPP*-Datei in Ihrem Komponententest eine `#include`-Direktive für sämtliche Headerdateien hinzu, die die Typen und Funktionen deklarieren, die Sie testen möchten. Geben Sie `#include "` ein, um IntelliSense zu aktivieren, damit es Ihnen bei der Auswahl hilft. Wiederholen Sie diesen Vorgang für alle zusätzlichen Header.
 
 ![Hinzufügen von include-Anweisungen](media/cpp-add-includes-test-project.png)
+
+Um nicht in jede include-Anweisung in der Quelldatei den vollständigen Pfad eingeben zu müssen, können Sie die erforderlichen Ordner unter **Projekt** > **Eigenschaften** > **C/C++**  > **Allgemein** > **Zusätzliche Includeverzeichnisse** hinzufügen.
 
 ### <a name="write-test-methods"></a>Schreiben von Testmethoden
 

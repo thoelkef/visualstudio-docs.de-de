@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787660"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342381"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -46,9 +46,7 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
    > Wenn Ihr Konto nicht dafür berechtigt ist, neue Angebote einzulösen, informiert Sie die empfangene E-Mail darüber, dass es ein Problem mit der Erstellung Ihres Accounts gab, da diesem Berechtigungen fehlen.  Darüber hinaus sind Informationen enthalten, die Sie dabei unterstützen, das Pluralsight-Supportteam zu kontaktieren, damit dieses Ihnen bei Bedarf offene Fragen zu Ihrem Konto beantwortet.
    
 
-6. Sobald Ihr Konto erfolgreich erstellt wurde, enthält die empfangene E-Mail Ihren Benutzernamen, und Sie werden dazu aufgefordert, ein Kennwort zu erstellen.  Geben Sie ein Kennwort ein, und geben Sie es dann zur Bestätigung erneut ein. Klicken Sie dann auf **Log in to Pluralsight** (Bei Pluralsight anmelden).
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight-Vorteil: Willkommens-E-Mail](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
+6. Nachdem Ihr Konto erfolgreich erstellt wurde, erhalten Sie eine Mail mit Ihrem Benutzernamen, in der Sie aufgefordert werden, ein Kennwort zu erstellen.  Geben Sie ein Kennwort ein, und geben Sie es dann zur Bestätigung erneut ein. Klicken Sie dann auf **Log in to Pluralsight** (Bei Pluralsight anmelden).
 
 7. Geben Sie den Benutzernamen ein, den Sie mit der Willkommens-E-Mail erhalten haben sowie das Kennwort, das Sie gerade erstellt haben, und klicken Sie auf **Anmelden**.
 
