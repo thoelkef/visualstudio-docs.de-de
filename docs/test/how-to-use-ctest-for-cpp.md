@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 0b6c4eb391014342a18ec3fe56a03a651463105c
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: cc0ced6205444e1436ffbffa73ba647a6b682c5c
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160080"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720549"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Verwenden von CTest für C++ in Visual Studio 2017 und höher
 
@@ -20,7 +20,9 @@ CMake (einschließlich CTest) ist standardmäßig als Komponente der Workload **
 
 ## <a name="to-write-tests"></a>Schreiben von Tests
 
-Die CMake-Unterstützung in Visual Studio umfasst nicht das Visual Studio-Projektsystem. Aus diesem Grund können Sie CTest-Tests auf dieselbe Weise wie in einer CMake-Umgebung schreiben und konfigurieren. Weitere Informationen zu CMake in Visual Studio finden Sie unter [CMake-Projekte in Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
+Die CMake-Unterstützung in Visual Studio umfasst nicht das Visual Studio-Projektsystem. Aus diesem Grund können Sie CTest-Tests auf dieselbe Weise wie in einer CMake-Umgebung schreiben und konfigurieren. Verwenden Sie den Befehl `enable_testing()`, um Tests zu aktivieren, und den Befehl `add_test()`, um einen neuen Test hinzuzufügen. Weitere Informationen zu CTest finden Sie in der [CMake-Dokumentation](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
+
+Weitere Informationen zu CMake in Visual Studio finden Sie unter [CMake-Projekte in Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 
 ## <a name="to-run-tests"></a>Ausführen von Tests
 
@@ -29,12 +31,6 @@ CTest ist vollständig im **Test-Explorer** integriert und unterstützt außerde
 Die folgende Abbildung zeigt die Ergebnisse eines CTest-Durchlaufs, der mit einem Google-Testframework ausgeführt wurde:
 
 ![CTest mit Google Test-Framework in Visual Studio](media/ctest-test-explorer.png)
-
-Wenn Sie CTest, aber nicht die Google- oder Boost-Adapter verwenden, sehen Sie die Ergebnisse auf der CTest-Ebene statt auf der Ebene der einzelnen Testmethoden. Sie können ausführbare CTest-Dateien debuggen und diese durchlaufen, aber Stapelüberwachungen für einzelne Tests werden nicht unterstützt.
-
-Die folgende Abbildung zeigt die Ergebnisse eines CTest-Durchlaufs, der mit einem Google-Testframework ausgeführt wurde:
-
-![CTest mit Google Test-Framework in Visual Studio 2017](media/ctest-test-explorer.png)
 
 Wenn Sie CTest, aber nicht die Google- oder Boost-Adapter verwenden, sehen Sie die Ergebnisse auf der CTest-Ebene statt auf der Ebene der einzelnen Testmethoden. Sie können ausführbare CTest-Dateien debuggen und diese durchlaufen, aber Stapelüberwachungen für einzelne Tests werden nicht unterstützt.
 

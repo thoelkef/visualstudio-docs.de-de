@@ -1,78 +1,33 @@
 ---
 title: Zugriff
-description: In diesem Artikel werden die Barrierefreiheitsfunktionen in Visual Studio für Mac eingeführt, und es wird erklärt, wie sie aktiviert werden können.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/17/2019
+description: In diesem Artikel erhalten Sie eine Einführung in die Barrierefreiheitsfunktionen in Visual Studio für Mac und erfahren, wie diese aktiviert werden.
+author: alanjclark
+ms.author: alcl
+ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: a5826bccd826e811fde112e7e1cf6992ec9ef1f3
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787646"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273351"
 ---
 # <a name="accessibility"></a>Zugriff
 
-Visual Studio für Mac bietet die folgenden Barrierefreiheitsfunktionen, um Personen mit Behinderungen den Zugang zu erleichtern:
+Es gibt eine Reihe von Tools und Features für die Barrierefreiheit, die direkt in macOS integriert sind und Ihnen bei der Verwendung von Visual Studio für Mac helfen.  Darüber hinaus bietet Visual Studio für Mac folgende Features, um Personen mit unterschiedlichen Fähigkeiten die Bedienung zu erleichtern:
 
-- Vergrößern des Texts in Lösungspads und Editor-Pads
-- Textgrößenoptionen in den Editoren
-- Anpassen der Farbe in den Editoren
-- Tastaturnavigation
-- Anpassen von Tastenkombinationen
-- Codevervollständigung für Methoden und Parameter
+* Vergrößerter Text in Editoren
+* Vergrößerter Text in Pads
+* Anpassung der Farbthemen im Code-Editor
+* Anpassen von Tastenkombinationen
+* Tastaturnavigation
 
-Zusätzlich zu diesen Features bietet Apple eine Reihe von Tools, die Benutzer mit besonderen Anforderungen unterstützen, wie VoiceOver und Diktat.
+> [!NOTE]
+> Dieser Leitfaden bezieht sich auf Visual Studio für Mac. Informationen zu Visual Studio für Windows finden Sie unter [Barrierefreiheitsfunktionen in Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio).
 
-Weitere Informationen zu Barrierefreiheitsfunktionen in macOS finden Sie auf der [Website von Apple](https://www.apple.com/accessibility/mac/).
+Weitere Informationen finden Sie unter den folgenden Themen:
 
-## <a name="enabling-macos-assistive-technologies-in-visual-studio-for-mac"></a>Aktivieren von macOS-Hilfstechnologien in Visual Studio für Mac
-
-Die Unterstützung von Visual Studio für Mac für macOS-Hilfstechnologien ist standardmäßig deaktiviert. Um sie zu aktivieren, gehen Sie folgendermaßen vor:
-
-1. Wechseln Sie zu **Visual Studio (Menü) > Einstellungen > Weiter > Barrierefreiheit**.
-
-2. Aktivieren Sie das Kontrollkästchen **Barrierefreiheit aktivieren**:
-
-   ![Einstellungen „Barrierefreiheit aktivieren“](media/accessibility-preferences.png)
-
-3. Wählen Sie die Schaltfläche **Visual Studio neu starten**, um Visual Studio neu zu starten und die Unterstützung für Apple-Hilfstechnologien zu aktivieren.
-
-## <a name="how-to-use-keyboard-navigation"></a>Vorgehensweise: Verwenden der Tastaturnavigation
-
-Die Unterstützung der Tastaturnavigation ist direkt in macOS integriert, aber um die umfassendste Erfahrung zu haben, sollten Sie macOS so einstellen, dass es durch **Alle Steuerelemente** navigiert:
-
-![Systemeinstellungen – Tastatur – Alle Steuerelemente](media/accessibility-preferences-keyboard.png)
-
-Wenn Sie **Vollständiger Tastaturzugriff** auf **Alle Steuerelemente** festlegen, können Sie durch alle Steuerelemente in einem Fenster oder Dialogfenster navigieren. Sie können Steuerelemente folgendermaßen auswählen:
-
-- Drücken der TABULATORTASTE, um vorwärts durch Steuerelemente zu navigieren
-- Drücken der UMSCHALTTASTE + TABULATORTASTE, um rückwärts durch Steuerelemente zu navigieren
-- Drücken der Pfeiltasten, um in Richtung der Pfeile zwischen Steuerelementen zu navigieren
-- Registerkarte „Steuerelement“ aus den Textbereichsfeldern
-- Durch Drücken der Leertaste wird das Steuerelement aktiviert, auf dem momentan der Fokus liegt.
-
-## <a name="how-to-enable-and-use-voiceover"></a>Vorgehensweise: Aktivieren und Verwenden von VoiceOver
-
-Zu Aktivieren oder Deaktivieren von VoiceOver, drücken Sie auf **&#8984; + F5**.
-
-VoiceOver-Befehle werden in diesem Handbuch als **VO+_Taste_** angezeigt, wobei **VO** sich auf den Modifizierer bezieht, der im **VoiceOver-Hilfsprogramm** eingestellt ist. Standardmäßig wird **Strg + Alt** als Modifizierer verwendet. Abhängig von Ihrem VoiceOver-Modifizierer bedeutet **VO + M** beispielsweise **Strg + Alt + M**. Aus Gründen der Übersichtlichkeit werden Pfeiltasten als **Links** und **Rechts** usw. bezeichnet.
-
-Verwenden Sie die folgenden Tastenkombinationen, um durch die Benutzeroberfläche von Visual Studio für Mac zu navigieren:
-
-- **VO + Rechts/Links**: Navigieren zwischen den Elementen der Benutzeroberfläche
-  - VoiceOver sagt die Bezeichnung und die Art des Steuerelements an und erklärt die Interaktion mit ihm.
-- **VO + UMSCHALT + Nach unten / Nach oben**: Schritt in Element/aus Element
-  - Sobald Sie sich in einem Element befinden, können Sie mit **VO + Links/Rechts** durch die Elemente innerhalb dieses Elements navigieren.
-- **VO + Leertaste**: Auswählen/Interagieren mit einem Steuerelement
-- **VO + M**: Interagieren mit der Visual Studio für Mac-Menüleiste
-
-Weitere Informationen zur Verwendung von VoiceOver und eine umfassende Liste von Befehlen finden Sie in den folgenden Anleitungen:
-
-- [Apple VoiceOver – Erste Schritte](https://support.apple.com/en-us/guide/voiceover-guide/welcome/web)
-- [VoiceOver Commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (VoiceOver-Befehle in macOS)
-
-## <a name="see-also"></a>Siehe auch
-
-- [Barrierefreiheitsfunktionen in Visual Studio (unter Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)
+* [Festlegen von IDE-Barrierefreiheitsoptionen](accessibility-ide-options.md)
+* [Verwenden von macOS-Features und -Tools für Barrierefreiheit](accessibility-macos.md)
+* [Verwenden der Tastaturnavigation](accessibility-keyboard.md)
+* [Verwenden von macOS-VoiceOver mit Visual Studio für Mac](accessibility-voiceover.md)
