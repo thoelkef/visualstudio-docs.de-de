@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062415"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018422"
 ---
 # <a name="fxcop-rule-port-status"></a>Port Status der FxCop-Regel
 
@@ -67,10 +67,10 @@ Regel-ID | Titel
 [CA1063](ca1063-implement-idisposable-correctly.md) | Ordnungsgemäße Implementierung von iverwerf
 [CA1064](ca1064-exceptions-should-be-public.md) | Ausnahmen sollten öffentlich sein.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Keine Ausnahmen an unerwarteten Speicherorten auslösen.
-CA1066 | Der {0} Typ muss IEquatable\<T > implementieren, weil er "ist" überschreibt.
-CA1067 | Überschreiben Sie Object. Gleichheits (Objekt) bei der\<Implementierung von IEquatable T >
-[CA1068](ca1068.md) | CancellationToken-Parameter müssen zuletzt angezeigt werden.
-CA1200 | Vermeiden Sie die Verwendung von-Endtags mit Präfix.
+CA1066 | Der Typ "{0}" sollte "IEquatable @ no__t-1T >" implementieren, da er "ist" überschreibt
+CA1067 | Überschreiben Sie Object. Gleichheits (Objekt), wenn Sie IEquatable @ no__t-0t implementieren >
+[CA1068](ca1068.md) | CancellationToken-Parameter müssen zuletzt aufgeführt werden.
+CA1200 | Verwenden Sie keine cref-Tags mit einem Präfix.
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Literale nicht als lokalisierte Parameter übergeben.
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo angeben.
 [CA1305](ca1305-specify-iformatprovider.md) | IFormatProvider angeben.
@@ -149,28 +149,28 @@ CA2010 | Verwenden Sie immer den Wert, der von mit PreserveSigAttribute markiert
 [CA2242](ca2242-test-for-nan-correctly.md) | Ordnungsgemäß auf NaN testen.
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden.
 CA2244 | Indizierte Element Initialisierungen nicht duplizieren
-[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | Nicht den unsicheren BinaryFormatter zur Deserialisierung verwenden
-[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | BinaryFormatter.Deserialize nicht ohne Festlegung von BinaryFormatter.Binder aufrufen
-[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen
-[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md) | Unsicheren Deserialisierer nicht verwenden: LosFormatter
-[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md) | Unsicheren Deserialisierer nicht verwenden: NetDataContractSerializer
-[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md) | Nicht deserialisieren, ohne zuerst NetDataContractSerializer.Binder festzulegen
-[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md) | Vor dem Deserialisieren sicherstellen, dass NetDataContractSerializer.Binder festgelegt ist
-[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md) | Unsicheren Deserialisierer nicht verwenden: ObjectStateFormatter
+[CA2300](ca2300.md) | Nicht den unsicheren BinaryFormatter zur Deserialisierung verwenden
+[CA2301](ca2301.md) | BinaryFormatter.Deserialize nicht ohne Festlegung von BinaryFormatter.Binder aufrufen
+[CA2302](ca2302.md) | Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen
+[CA2305](ca2305.md) | Unsicheren Deserialisierer nicht verwenden: LosFormatter
+[CA2310](ca2310.md) | Unsicheren Deserialisierer nicht verwenden: NetDataContractSerializer
+[CA2311](ca2311.md) | Nicht deserialisieren, ohne zuerst NetDataContractSerializer.Binder festzulegen
+[CA2312](ca2312.md) | Vor dem Deserialisieren sicherstellen, dass NetDataContractSerializer.Binder festgelegt ist
+[CA2315](ca2315.md) | Unsicheren Deserialisierer nicht verwenden: ObjectStateFormatter
 [CA2321](ca2321.md) | Nicht mit JavaScriptSerializer und SimpleTypeResolver deserialisieren
 [CA2322](ca2322.md) | Vor dem Deserialisieren sicherstellen, dass JavaScriptSerializer nicht mit SimpleTypeResolver initialisiert ist
-[CA3001](ca3001-review-code-for-sql-injection-vulnerabilities.md) | Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)
-[CA3002](ca3002-review-code-for-xss-vulnerabilities.md) | Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)
-[CA3003](ca3003-review-code-for-file-path-injection-vulnerabilities.md) | Review code for file path injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen über einen Dateipfad)
-[CA3004](ca3004-review-code-for-information-disclosure-vulnerabilities.md) | Review code for information disclosure vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken bei der Veröffentlichung von Informationen)
-[CA3005](ca3005-review-code-for-ldap-injection-vulnerabilities.md) | Review code for LDAP injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von LDAP-Befehlen)
-[CA3006](ca3006-review-code-for-process-command-injection-vulnerabilities.md) | Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)
-[CA3007](ca3007-review-code-for-open-redirect-vulnerabilities.md) | Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)
-[CA3008](ca3008-review-code-for-xpath-injection-vulnerabilities.md) | Review code for XPath injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XPath-Befehlen)
-[CA3009](ca3009-review-code-for-xml-injection-vulnerabilities.md) | Review code for XML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XML-Befehlen)
-[CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | Review code for XAML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XAML-Befehlen)
-[CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)
-[CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)
+[CA3001](ca3001.md) | Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)
+[CA3002](ca3002.md) | Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)
+[CA3003](ca3003.md) | Review code for file path injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen über einen Dateipfad)
+[CA3004](ca3004.md) | Review code for information disclosure vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken bei der Veröffentlichung von Informationen)
+[CA3005](ca3005.md) | Review code for LDAP injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von LDAP-Befehlen)
+[CA3006](ca3006.md) | Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)
+[CA3007](ca3007.md) | Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)
+[CA3008](ca3008.md) | Review code for XPath injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XPath-Befehlen)
+[CA3009](ca3009.md) | Review code for XML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XML-Befehlen)
+[CA3010](ca3010.md) | Review code for XAML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XAML-Befehlen)
+[CA3011](ca3011.md) | Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)
+[CA3012](ca3012.md) | Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)
 CA3061 | Schema nicht nach URL hinzufügen
 [CA3075](ca3075-insecure-dtd-processing.md) | Unsichere DTD-Verarbeitung in XML
 [CA3076](ca3076-insecure-xslt-script-execution.md) | Unsichere XSLT-Skript Verarbeitung.
