@@ -21,12 +21,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018489"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163062"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Übersicht über die Codeanalyse für C/C++
 
@@ -46,7 +46,7 @@ Sie können das Analysetool auch über die Befehlszeile verwenden, wie im folgen
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 Version 15,7 und** höher Sie können das Tool in der Befehlszeile mit jedem Buildsystem ausführen, einschließlich cmake.
+**Visual Studio 2017, Version 15.7 und höher**: Sie können das Tool in der Befehlszeile mit jedem Buildsystem ausführen, einschließlich cmake.
 
 ## <a name="pragma-support"></a>#pragma Unterstützung
 
