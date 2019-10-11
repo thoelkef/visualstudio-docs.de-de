@@ -2,23 +2,25 @@
 title: Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
 ms.date: 04/28/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.rulesets.native
 author: mikeblome
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 061b52a683992bdc2fe5792ab05e00f788434a0f
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018220"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163099"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum angeben C++ der Regeln, die ausgeführt werden sollen
 
 In Visual Studio können Sie einen benutzerdefinierten *Regelsatz* erstellen und ändern, um bestimmte Projektanforderungen zu erfüllen, die mit der Code Analyse verknüpft sind. Die Standardregel Sätze werden in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` gespeichert.
 
-**Visual Studio 2017 Version 15,7 und** höher Sie können benutzerdefinierte Regelsätze mit einem beliebigen Text-Editor erstellen und diese in Befehlszeilenbuilds anwenden, unabhängig davon, welches Buildsystem Sie verwenden. Weitere Informationen finden Sie unter [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017, Version 15.7 und höher**: Sie können benutzerdefinierte Regelsätze mit einem beliebigen Text-Editor erstellen und diese in Befehlszeilenbuilds anwenden, unabhängig davon, welches Buildsystem Sie verwenden. Weitere Informationen finden Sie unter [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
 Um einen benutzerdefinierten C++ Regelsatz in Visual Studio zu erstellen, mussC++ ein C/-Projekt in der Visual Studio-IDE geöffnet sein. Öffnen Sie dann einen Standardregel Satz im Regelsatz-Editor, und fügen Sie bestimmte Regeln hinzu bzw. entfernen Sie Sie, und ändern Sie optional die Aktion, die auftritt, wenn die Code Analyse festlegt, dass eine Regel verletzt wurde.
 
@@ -26,7 +28,7 @@ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen u
 
 ## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>So erstellen Sie eine benutzerdefinierte Regel aus einem einzelnen vorhandenen Regelsatz
 
-1. Öffnen Sie in Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**aus.
+1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**aus.
 
 2. Wählen Sie auf der Registerkarte **Eigenschaften** die Option **Code Analyse**aus.
 
@@ -36,7 +38,7 @@ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen u
 
      \- oder –
 
-   - Wählen Sie **\<browse >** aus, um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
+   - Wählen Sie **\<browse... >** , um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
 
 4. Wählen Sie **Öffnen** aus, um die Regeln im Regelsatz-Editor anzuzeigen.
 
@@ -50,9 +52,11 @@ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen u
 
 - Um die Aktion zu ändern, die durchgeführt wird, wenn eine Regel in einer Code Analyse verletzt wird, wählen Sie das Feld **Aktion** für die Regel aus, und wählen Sie dann einen der folgenden Werte aus:
 
-     **Warnung: generiert** eine Warnung.
+     **Warnung** : generiert eine Warnung.
 
      **Fehler** -generiert einen Fehler.
+     
+     **Info** : generiert eine Meldung.
 
      **Keine** : deaktiviert die Regel. Diese Aktion ist mit der Aktion identisch, die beim Entfernen der Regel aus dem Regelsatz ausgeführt wird.
 

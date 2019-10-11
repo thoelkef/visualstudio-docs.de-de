@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3222509ccc5ec20cd1433d215ca3d69609af6bcb
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975021"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172805"
 ---
 # <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
 
@@ -64,7 +64,7 @@ In der folgenden Tabelle werden die verschiedenen Optionen für den Schweregrad 
 |-|-|-|
 | Fehler | `error` | Verstöße werden im Fehlerliste und in der Befehlszeilen-Buildausgabe als *Fehler* angezeigt und bewirken, dass Builds fehlschlagen.| Das verletzen von Code wird mit einer roten Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines rotes Feld markiert. |
 | Warnung | `warning` | Verstöße werden im Fehlerliste und in der Befehlszeilen-Buildausgabe als *Warnungen* angezeigt, bewirken jedoch nicht, dass Builds fehlschlagen. | Das verletzen von Code wird mit einer grünen Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines grünes Feld markiert. |
-| Info | `suggestion` | Verstöße werden im Fehlerliste als *Meldungen* und nicht in der Befehlszeilen-Buildausgabe angezeigt. | Das verletzen von Code wird mit einem grauen Wellenlinien unterstrichen und in der Bild Lauf Leiste durch ein kleines graues Feld markiert. |
+| Info | `suggestion` | Verstöße werden im Fehlerliste als *Meldungen* und nicht in der Befehlszeilen-Buildausgabe angezeigt. | Das verletzen von Code wird mit einer grauen Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines graues Feld markiert. |
 | Ausgeblendet | `silent` | Für den Benutzer nicht sichtbar. | Für den Benutzer nicht sichtbar. Die Diagnose wird jedoch der IDE-Diagnose-Engine gemeldet. |
 | None | `none` | Vollständig unterdrückt. | Vollständig unterdrückt. |
 | Default | `default` | Entspricht dem Standard Schweregrad der Regel. Um den Standardwert für eine Regel zu ermitteln, suchen Sie in der Eigenschaftenfenster. | Entspricht dem Standard Schweregrad der Regel. |
@@ -138,7 +138,7 @@ Visual Studio bietet eine bequeme Möglichkeit, den Schweregrad einer Regel im G
 
 ![Regel Satz Datei in Projektmappen-Explorer](media/ruleset-in-solution-explorer.png)
 
-1. Öffnen Sie die aktive [Regel Satz](analyzer-rule-sets.md) Datei, indem Sie in **Projektmappen-Explorer**auf die Datei doppelklicken. Wählen Sie dazu im Kontextmenü des Knotens **@no__t-** 4-**Analyzers** den Knoten **aktive Regel Satz öffnen** aus, oder klicken **Sie auf der** **Seite Code Analyse** -Eigenschaften Seite für das Projekt.
+1. Öffnen Sie die aktive Regel Satz Datei, indem Sie in **Projektmappen-Explorer**auf die Datei doppelklicken. Wählen Sie dazu im Kontextmenü des Knotens **@no__t-** 3-**Analyzers** die Option **aktiven Regelsatz öffnen** aus, oder wählen Sie im Code **Öffnen** aus.  **Analysis** -Eigenschaften Seite für das Projekt.
 
    Wenn Sie den Regelsatz zum ersten Mal bearbeiten, erstellt Visual Studio eine Kopie der Standardregel Satz-Datei, benennt Sie *\<projectname >. RuleSet*und fügt Sie dem Projekt hinzu. Dieser benutzerdefinierte Regelsatz wird auch zum aktiven Regelsatz für Ihr Projekt.
 

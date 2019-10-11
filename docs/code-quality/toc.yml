@@ -532,11 +532,11 @@
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900: Werttypfelder sollten portabel sein.'
-                  href: ca1900-value-type-fields-should-be-portable.md
+                  href: ca1900.md
                 - name: 'CA1901: Deklarationen von P/Invoke müssen portabel sein.'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                  href: ca1901.md
                 - name: 'CA1903: Nur API aus Zielframework verwenden.'
-                  href: ca1903-use-only-api-from-targeted-framework.md
+                  href: ca1903.md
             - name: Zuverlässigkeitswarnungen
               items:
                 - name: Übersicht
@@ -847,7 +847,7 @@
       href: quick-start-code-analysis-for-c-cpp.md
     - name: Analysieren von C/C++-Code im Hinblick auf Fehler
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
-    - name: Demobeispiel
+    - name: Beispielprojekt
       href: demo-sample.md
     - name: Verwenden der Überprüfungen für C++ Core Guidelines
       href: using-the-cpp-core-guidelines-checkers.md
@@ -855,6 +855,8 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: Regelsätze für C++-Code
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Verwenden von Clang-Tidy
+      href: clang-tidy.md
     - name: Verwenden von SAL-Anmerkungen zum Reduzieren von Codefehlern
       items:
         - name: Übersicht

@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
@@ -43,19 +43,19 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c64ccedaeb8c13e353daaba0aeec0a388885bdf
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819915"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950655"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang-Projekteigenschaften (Android C++)
 
-Eigenschaft | Beschreibung | Auswahlmöglichkeiten
+Eigenschaft | BESCHREIBUNG | Auswahlmöglichkeiten
 --- | ---| ---
 Zusätzliche Includeverzeichnisse | Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind. (-I[path]).
-Debuginformationsformat | Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. | **Keine**: Generiert keine Debuginformationen, sodass die Kompilierung ggf. schneller erfolgt.<br>**Vollständige Debugging-Informationen(DWARF2)**: Generiert DWARF2-Debuginformationen.<br>**Informationen zur Zeilennummer**: Nur Zeilennummerninformationen generieren.<br>
+Debuginformationsformat | Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. | **Keine**: Generiert keine Debuginformationen, sodass die Kompilierung ggf. schneller erfolgt.<br>**Vollständige Debugging-Informationen(DWARF2)** : Generiert DWARF2-Debuginformationen.<br>**Informationen zur Zeilennummer**: Nur Zeilennummerninformationen generieren.<br>
 Name der Objektdatei | Gibt einen Namen an, um den Standardnamen der Objektdatei zu überschreiben. Dies kann ein Datei- oder Verzeichnisname sein. (/Fo[name]).
 Warnstufe | Wählen Sie aus, wie streng der Compiler bei Codefehlern sein soll.  Andere Kennzeichnungen sollten direkt zu den zusätzlichen Optionen hinzugefügt werden. (/w, /Weverything). | **Alle Warnungen deaktivieren**: Deaktiviert alle Compilerwarnungen.<br>**Alle Warnungen aktivieren**: Aktiviert alle Warnungen, einschließlich standardmäßig deaktivierter Warnungen.<br>
 Warnungen als Fehler behandeln | Behandelt alle Compilerwarnungen als Fehler. Bei einem neuen Projekt kann es empfehlenswert sein, /WX in allen Kompilierungen zu verwenden. Das Beheben aller Warnungen stellt sicher, dass die geringstmögliche Anzahl schwer zu findender Codefehler vorhanden ist.
@@ -72,8 +72,8 @@ Sicherheitsüberprüfung | Die Sicherheitsprüfung hilft bei der Erkennung von �
 Positionsunabhängiger Code | Generieren von positionsunabhängigem Code (Position Independent Code, PIC) für die Verwendung in einer freigegebenen Bibliothek.
 Kurze Enumerationen verwenden | Dieser Enumerationstyp verwendet nur so viele Bytes, wie das Eingabeset an möglichen Werten erfordert.
 Laufzeit-Typeninformation aktivieren | Fügt Code für die Überprüfung der C++-Objekttypen während der Laufzeit hinzu (Laufzeit-Typinformationen).     (frtti, fno-rtti)
-C-Sprachstandard | Bestimmt den C-Sprachstandard. | **Default**<br>**C89**: C89-Sprachstandard.<br>**C99**: C99-Sprachstandard.<br>**C11**: C11-Sprachstandard.<br>**C99 (GNU-Dialekt)**: C99-Sprachstandard (GNU-Dialekt).<br>**C11 (GNU-Dialekt)**: C11-Sprachstandard (GNU-Dialekt).<br>
-C++-Sprachstandard | Bestimmt den C++-Sprachstandard | **Default**<br>**C++03**: C++03-Sprachstandard.<br>**C++11**: C++11-Sprachstandard.<br>**C++14**: C++14-Sprachstandard.<br>**C++03 (GNU-Dialekt)**: C++03-Sprachstandard (GNU-Dialekt).<br>**C++11 (GNU-Dialekt)**: C++11-Sprachstandard (GNU-Dialekt).<br>**C++14 (GNU-Dialekt)**: C++14-Sprachstandard (GNU-Dialekt).<br>
+C-Sprachstandard | Bestimmt den C-Sprachstandard. | **Default**<br>**C89**: C89-Sprachstandard.<br>**C99**: C99-Sprachstandard.<br>**C11**: C11-Sprachstandard.<br>**C99 (GNU-Dialekt)** : C99-Sprachstandard (GNU-Dialekt).<br>**C11 (GNU-Dialekt)** : C11-Sprachstandard (GNU-Dialekt).<br>
+C++-Sprachstandard | Bestimmt den C++-Sprachstandard | **Default**<br>**C++03**: C++03-Sprachstandard.<br>**C++11**: C++11-Sprachstandard.<br>**C++14**: C++14-Sprachstandard.<br>**C++03 (GNU-Dialekt)** : C++03-Sprachstandard (GNU-Dialekt).<br>**C++11 (GNU-Dialekt)** : C++11-Sprachstandard (GNU-Dialekt).<br>**C++14 (GNU-Dialekt)** : C++14-Sprachstandard (GNU-Dialekt).<br>
 Präprozessordefinitionen | Definiert Präprozessorsymbole für Ihre Quelldatei. (-D)
 Präprozessordefinitionen aufheben | Gibt mindestens eine aufgehobene Präprozessordefinition an.  (-U [macro])
 Alle Präprozessordefinitionen aufheben | Hebt die Definition aller zuvor definierten Präprozessorwerte auf.  (-undef)
