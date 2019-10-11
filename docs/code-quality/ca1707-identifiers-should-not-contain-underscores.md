@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234268"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252569"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Bezeichner sollten keine Unterstriche enthalten.
 
@@ -32,11 +32,11 @@ ms.locfileid: "71234268"
 
 ## <a name="cause"></a>Ursache
 
-Der Name eines Bezeichners enthält den Unterstrich\_().
+Der Name eines Bezeichners enthält den Unterstrich (\_).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Gemäß der Konvention enthalten Bezeichnernamen keinen Unterstrich (\_). Die Regel überprüft Namespaces, Typen, Member und Parameter.
+Gemäß der Konvention enthalten Bezeichnernamen nicht den Unterstrich (\_). Die Regel überprüft Namespaces, Typen, Member und Parameter.
 
 Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
@@ -46,9 +46,9 @@ Entfernen Sie alle Unterstrich Zeichen aus dem Namen.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
-Unterdrücken Sie keine Warnung dieser Regel.
+Unterdrücken Sie keine Warnungen für Produktionscode. Es ist jedoch sicher, diese Warnung für Testcode zu unterdrücken. Sie können Warnungen aus dieser Regel unterdrücken, indem Sie den [Schweregrad](use-roslyn-analyzers.md#rule-severity) auf **keine**festlegen. 
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1709: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Bezeichner sollten sich um mehr als einen Fall unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1708: Bezeichner sollten sich um mehr als die Groß-/Kleinschreibung unterscheiden

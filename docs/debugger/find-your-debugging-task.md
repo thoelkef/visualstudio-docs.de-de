@@ -1,5 +1,5 @@
 ---
-title: Suchen der debugaufgabe
+title: Finden der Debugaufgabe
 description: Identifizieren Sie das Debugger-Feature, mit dem Sie Ihre APP Debuggen können.
 ms.custom: ''
 ms.date: 10/01/2019
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817509"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018781"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Suchen Ihres debugtasks in Visual Studio
 
@@ -34,7 +34,10 @@ Verwenden Sie einen bedingten Haltepunkt, um zu steuern, wo und wann ein Breakpo
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Code nur anhalten, wenn sich die Eigenschaft oder der Wert eines bestimmten Objekts ändert
 
-Legen C++Sie für einen [Daten Breakpoint](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)fest. Für apps, die .net Core 3 verwenden, können Sie auch einen [Daten Haltepunkt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)festlegen.
+Legen C++Sie für einen [Daten Breakpoint](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)fest. 
+::: moniker range=">= vs-2019"
+Für apps, die .net Core 3 verwenden, können Sie auch einen [Daten Haltepunkt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)festlegen.
+::: moniker-end
 
 Andernfalls können Sie C# für F# und nur [eine Objekt-ID mit einem bedingten Haltepunkt verfolgen](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 
