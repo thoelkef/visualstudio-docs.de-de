@@ -14,7 +14,7 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
-        - name: 'Gewusst wie: Generieren von Unittests mit IntelliTest'
+        - name: 'Vorgehensweise: Generieren von Unittests mit IntelliTest'
           href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: Übersicht
           href: intellitest-manual/introduction.md
@@ -120,13 +120,13 @@
     - name: Einführung
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Neuerungen in Live Unit Testing
+    - name: Neuigkeiten
       href: live-unit-testing-whats-new.md
-    - name: Erste Schritte mit Live Unit Testing
+    - name: Erste Schritte
       href: live-unit-testing-start.md
-    - name: Verwenden von Live Unit Testing in der Enterprise Edition
+    - name: Konfigurieren und Verwenden
       href: live-unit-testing.md
-    - name: Live Unit Testing – häufig gestellte Fragen
+    - name: FAQ
       href: live-unit-testing-faq.md
 - name: Webleistungstests und Auslastungstests
   items:
