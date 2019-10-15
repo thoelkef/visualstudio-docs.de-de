@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 183923a764cc3462e799c8f67677aa564c5fe59d
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: bc3d0376e0f3af186802fa566e1618ae7ed89a78
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585130"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305605"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Regelsatz für verwaltete Mindestregeln für verwalteten Code
 
@@ -22,6 +22,6 @@ Die verwalteten minimal Regeln konzentrieren sich auf die kritischsten Probleme 
 |Regel|Beschreibung|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Leere Finalizer entfernen.|
+|[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen.|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Gleichheits Operator beim Überschreiben`ValueType.Equals`|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Gleichheits Operator beim Überschreiben von `ValueType.Equals`|

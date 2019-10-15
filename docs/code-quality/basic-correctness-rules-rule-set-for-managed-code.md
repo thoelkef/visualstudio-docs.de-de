@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585014"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305459"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die grundlegenden Regeln für Richtigkeit für verwalteten Code
 
@@ -40,7 +40,7 @@ In der folgenden Tabelle werden alle Regeln im Regelsatz für Microsoft Basic-Re
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Für COM sichtbare Basistypen sollten für COM sichtbar sein.|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Die COM-Registrierungsmethoden müssen übereinstimmen.|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes korrekt deklarieren.|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Leere Finalizer entfernen.|
+|[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Werttypfelder sollten portabel sein.|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Deklarationen von P/Invoke müssen portabel sein.|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Auf Objekten mit schwacher Identität nicht sperren.|
@@ -89,10 +89,10 @@ In der folgenden Tabelle werden alle Regeln im Regelsatz für Microsoft Basic-Re
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Gleichheitsoperator beim Überladen von Addition und Subtraktion überladen.|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Literale nicht als lokalisierte Parameter übergeben.|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Zeichenfolgen in Großbuchstaben normalisieren.|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|Methodenergebnisse nicht ignorieren.|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|GC.SuppressFinalize korrekt aufrufen.|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Eigenschaften sollten keine Arrays zurückgeben.|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.|
+|[CA1806](../code-quality/ca1806.md)|Methodenergebnisse nicht ignorieren.|
+|[CA1816](../code-quality/ca1816.md)|GC.SuppressFinalize korrekt aufrufen.|
+|[CA1819](../code-quality/ca1819.md)|Eigenschaften sollten keine Arrays zurückgeben.|
+|[CA1820](../code-quality/ca1820.md)|Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Nur API aus Zielframework verwenden.|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Aufrufe an GC.KeepAlive entfernen.|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|SafeHandle verwenden, um native Ressourcen zu kapseln.|

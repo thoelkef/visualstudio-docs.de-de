@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: be864812cc7355f80700bd3e270178c9626d4180
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231300"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305900"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Sammlungseigenschaften sollten schreibgeschützt sein.
 
@@ -36,13 +36,13 @@ ms.locfileid: "71231300"
 
 ## <a name="cause"></a>Ursache
 
-Eine extern sichtbare, beschreibbare Eigenschaft ist ein Typ, der implementiert <xref:System.Collections.ICollection?displayProperty=fullName>. Diese Regel ignoriert Arrays, Indexer (Eigenschaften mit dem Namen "Item") und Berechtigungs Sätze.
+Eine extern sichtbare, beschreibbare Eigenschaft ist ein Typ, der <xref:System.Collections.ICollection?displayProperty=fullName> implementiert. Diese Regel ignoriert Arrays, Indexer (Eigenschaften mit dem Namen "Item") und Berechtigungs Sätze.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine beschreibbare Auflistungs Eigenschaft ermöglicht es einem Benutzer, die Sammlung durch eine vollkommen andere Auflistung zu ersetzen. Eine schreibgeschützte Eigenschaft verhindert, dass die Auflistung ersetzt wird, lässt jedoch weiterhin zu, dass die einzelnen Member festgelegt werden. Wenn das Ersetzen der Auflistung ein Ziel ist, besteht das bevorzugte Entwurfsmuster darin, eine Methode zum Entfernen aller Elemente aus der Auflistung und eine Methode zum erneuten Auffüllen der Auflistung einzuschließen. Ein Beispiel <xref:System.Collections.ArrayList.Clear%2A> für <xref:System.Collections.ArrayList.AddRange%2A> dieses Muster finden <xref:System.Collections.ArrayList?displayProperty=fullName> Sie unter den-und-Methoden der-Klasse.
+Eine beschreibbare Auflistungs Eigenschaft ermöglicht es einem Benutzer, die Sammlung durch eine vollkommen andere Auflistung zu ersetzen. Eine schreibgeschützte Eigenschaft verhindert, dass die Auflistung ersetzt wird, lässt jedoch weiterhin zu, dass die einzelnen Member festgelegt werden. Wenn das Ersetzen der Auflistung ein Ziel ist, besteht das bevorzugte Entwurfsmuster darin, eine Methode zum Entfernen aller Elemente aus der Auflistung und eine Methode zum erneuten Auffüllen der Auflistung einzuschließen. Ein Beispiel für dieses Muster finden Sie in den Methoden <xref:System.Collections.ArrayList.Clear%2A> und <xref:System.Collections.ArrayList.AddRange%2A> der Klasse <xref:System.Collections.ArrayList?displayProperty=fullName>.
 
-Sowohl die binäre als auch die XML-Serialisierung unterstützen schreibgeschützte Eigenschaften, die Sammlungen sind. Die <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> -Klasse verfügt über bestimmte Anforderungen für Typen <xref:System.Collections.ICollection> , <xref:System.Collections.IEnumerable?displayProperty=fullName> die implementieren, und, um serialisierbar zu sein.
+Sowohl die binäre als auch die XML-Serialisierung unterstützen schreibgeschützte Eigenschaften, die Sammlungen sind. Die <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>-Klasse verfügt über bestimmte Anforderungen für Typen, die <xref:System.Collections.ICollection> und <xref:System.Collections.IEnumerable?displayProperty=fullName> implementieren, damit sie serialisierbar sind.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -56,7 +56,7 @@ Andernfalls sollten Sie keine Warnungen dieser Regel unterdrücken.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen Typ mit einer beschreibbaren Auflistungs Eigenschaft und zeigt, wie die Auflistung direkt ersetzt werden kann. Außerdem zeigt es die bevorzugte Methode zum Ersetzen einer schreibgeschützten Auflistungs Eigenschaft mithilfe `Clear` der `AddRange` Methoden und.
+Das folgende Beispiel zeigt einen Typ mit einer beschreibbaren Auflistungs Eigenschaft und zeigt, wie die Auflistung direkt ersetzt werden kann. Außerdem zeigt es die bevorzugte Methode zum Ersetzen einer schreibgeschützten Auflistungs Eigenschaft mithilfe der Methoden `Clear` und `AddRange`.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ Das folgende Beispiel zeigt einen Typ mit einer beschreibbaren Auflistungs Eigen
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1819: Eigenschaften sollten keine Arrays zurückgeben](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819: Eigenschaften sollten keine Arrays zurückgeben @ no__t-0

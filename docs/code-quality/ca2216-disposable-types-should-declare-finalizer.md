@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3ac52bdb17aeb7d04e434d2b02ff9a905eab49a2
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231253"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305926"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren.
 
@@ -32,7 +32,7 @@ ms.locfileid: "71231253"
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ, der <xref:System.IDisposable?displayProperty=fullName>implementiert und über Felder verfügt, die die Verwendung nicht verwalteter Ressourcen vorschlagen, implementiert keinen Finalizer, wie in <xref:System.Object.Finalize%2A?displayProperty=fullName>beschrieben.
+Ein Typ, der <xref:System.IDisposable?displayProperty=fullName> implementiert und über Felder verfügt, die die Verwendung nicht verwalteter Ressourcen vorschlagen, implementiert keinen Finalizer, wie von <xref:System.Object.Finalize%2A?displayProperty=fullName> beschrieben.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -46,7 +46,7 @@ Ein Verstoß gegen diese Regel wird gemeldet, wenn der verwerfbare Typ Felder de
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie <xref:System.IDisposable.Dispose%2A> einen Finalizer, der die-Methode aufruft.
+Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie einen Finalizer, der die <xref:System.IDisposable.Dispose%2A>-Methode aufruft.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
@@ -60,11 +60,11 @@ Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt.
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA2115: Ruft GC auf. KeepAlive bei der Verwendung nativer Ressourcen](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Ruft GC auf. KeepAlive bei Verwendung nativer Ressourcen @ no__t-0
 
-[CA1816: Ruft GC auf. Ordnungsgemäße SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Ruft GC auf. SuppressFinalize ordnungsgemäß @ no__t-0
 
-[CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden @ no__t-0
 
 ## <a name="see-also"></a>Siehe auch
 

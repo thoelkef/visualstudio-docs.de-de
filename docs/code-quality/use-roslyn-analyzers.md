@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172805"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305669"
 ---
 # <a name="use-code-analyzers"></a>Verwenden von Code Analysemodulen
 
@@ -66,7 +66,7 @@ In der folgenden Tabelle werden die verschiedenen Optionen für den Schweregrad 
 | Warnung | `warning` | Verstöße werden im Fehlerliste und in der Befehlszeilen-Buildausgabe als *Warnungen* angezeigt, bewirken jedoch nicht, dass Builds fehlschlagen. | Das verletzen von Code wird mit einer grünen Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines grünes Feld markiert. |
 | Info | `suggestion` | Verstöße werden im Fehlerliste als *Meldungen* und nicht in der Befehlszeilen-Buildausgabe angezeigt. | Das verletzen von Code wird mit einer grauen Wellenlinie unterstrichen und in der Bild Lauf Leiste durch ein kleines graues Feld markiert. |
 | Ausgeblendet | `silent` | Für den Benutzer nicht sichtbar. | Für den Benutzer nicht sichtbar. Die Diagnose wird jedoch der IDE-Diagnose-Engine gemeldet. |
-| None | `none` | Vollständig unterdrückt. | Vollständig unterdrückt. |
+| Keine | `none` | Vollständig unterdrückt. | Vollständig unterdrückt. |
 | Default | `default` | Entspricht dem Standard Schweregrad der Regel. Um den Standardwert für eine Regel zu ermitteln, suchen Sie in der Eigenschaftenfenster. | Entspricht dem Standard Schweregrad der Regel. |
 
 Der folgende Screenshot des Code-Editors zeigt drei verschiedene Verstöße gegen verschiedene Schweregrade. Beachten Sie die Farbe der Wellenlinie und das kleine farbige Quadrat in der Bild Lauf Leiste auf der rechten Seite.
@@ -93,7 +93,7 @@ Das Festlegen des schwere Grads einer Regel in einer Editor config-Datei hat Vor
 
 1. Wenn Sie nicht bereits über eine Editor config-Datei für Ihr Projekt verfügen, [fügen Sie eine hinzu](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Fügen Sie unter der entsprechenden Dateierweiterung einen Eintrag für jede Regel hinzu, die Sie konfigurieren möchten. Um z. b. den Schweregrad für [CA1822](ca1822-mark-members-as-static.md) auf `error` C# für Dateien festzulegen, sieht der Eintrag wie folgt aus:
+2. Fügen Sie unter der entsprechenden Dateierweiterung einen Eintrag für jede Regel hinzu, die Sie konfigurieren möchten. Um z. b. den Schweregrad für [CA1822](ca1822.md) auf `error` C# für Dateien festzulegen, sieht der Eintrag wie folgt aus:
 
    ```ini
    [*.cs]
@@ -229,7 +229,7 @@ Um Analyzer-Verstöße in der Befehlszeile anzuzeigen, wenn Sie das Projekt mith
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-Die folgende Abbildung zeigt die Befehlszeilen-Buildausgabe der Erstellung eines Projekts, das eine Verletzung der Analyse Regel enthält:
+Der folgende Screenshot zeigt die Befehlszeilen-Buildausgabe vom Erstellen eines Projekts an, das einen Regelverstoß des Analysetools enthält:
 
 ![MSBuild-Ausgabe mit Regelverstoß](media/command-line-build-analyzers.png)
 
