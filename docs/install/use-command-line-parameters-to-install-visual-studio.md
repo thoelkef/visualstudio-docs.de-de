@@ -2,7 +2,7 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 titleSuffix: ''
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
-ms.date: 09/11/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913247"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018800"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 
@@ -32,23 +32,30 @@ Wenn Sie Visual Studio von einer Befehlszeile aus installieren, können Sie die 
 - Den Installationsprozess automatisieren
 - Einen Cache (Layout) der Installationsdateien für den späteren Gebrauch erstellen
 
-Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die kleine Datei (1 MB), die den Downloadprozess initiiert, verwendet. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen. Verwenden Sie die folgenden Links, um einen direkten Link zum neuesten Release-Bootstrapper für die Produktversion zu erhalten, die Sie installieren:
+Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die kleine Datei (1 MB), die den Downloadprozess initiiert, verwendet. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Informationen zum Herunterladen eines Bootstrappers für Visual Studio 2017 finden Sie auf der Downloadseite für [**frühere Versionen von Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Verwenden Sie die folgenden Links, um einen direkten Link zum neuesten Release-Bootstrapper für die Produktversion zu erhalten, die Sie installieren:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+Ihre Bootstrapperdatei entspricht oder ähnelt einer der folgenden Dateien:
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
 
 ## <a name="command-line-parameters"></a>Befehlszeilenparameter
 

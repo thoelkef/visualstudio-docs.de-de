@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180254"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975161"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
@@ -58,7 +58,7 @@ Beginnen Sie mit dem Erstellen einer neuen Datei, und fügen Sie dieser Code hin
 
 ::: moniker-end
 
-2. Wählen Sie im Menü **Datei** auf der Menüleiste **Neu** > **Datei** aus.
+2. Wählen Sie im Menü **Datei** auf der Menüleiste **Neu** > **Datei** aus, oder drücken sie **STRG**+**N**.
 
 3. Klicken Sie im Dialogfeld **Neue Datei** unter der Kategorie **Allgemein** auf die Option **Visual C#-Klasse**, und klicken Sie dann auf **Öffnen**.
 
@@ -80,7 +80,7 @@ Visual Studio stellt nützliche *Codeausschnitte* bereit, die Sie verwenden kön
 
    Daraufhin wir die Methodensignatur `static void Main()` zu der Datei hinzugefügt. Die [Main()](/dotnet/csharp/programming-guide/main-and-command-args/)-Methode ist der Einstiegspunkt für C#-Anwendungen.
 
-Die verfügbaren Codeausschnitte variieren je nach Programmiersprache. Sie können sich die für Ihre Sprache verfügbaren Codeausschnitte anzeigen lassen, indem Sie **Bearbeiten** > **IntelliSense** > **Ausschnitt einfügen** und anschließend den Ordner für Ihre Sprache auswählen. Für C# sieht die Liste wie folgt aus:
+Die verfügbaren Codeausschnitte variieren je nach Programmiersprache. Sie können sich die für Ihre Sprache verfügbaren Codeausschnitte anzeigen lassen, indem Sie **Bearbeiten** > **IntelliSense** > **Ausschnitt einfügen** auswählen, oder indem Sie **STRG**+**K**, **STRG**+**X** drücken, und anschließend den Ordner für Ihre Sprache auswählen. Für C# sieht die Liste wie folgt aus:
 
 ![Liste der Codeausschnitte für C#](../media/tutorial-code-snippet-list.png)
 

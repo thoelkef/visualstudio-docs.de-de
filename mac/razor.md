@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 791182255448db01a1c43796da72bedeec9f2f96
-ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175432"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962924"
 ---
 # <a name="create-razor-web-apps"></a>Erstellen von Razor-Web-Apps
 
@@ -47,8 +47,8 @@ Razor-Web-Apps enthalten die folgenden Komponenten.
 ### <a name="pages-folder"></a>Ordner „Seiten“
 
 Dieser Ordner enthält die Webseiten eines Projekts sowie das jeweilige CodeBehind für die Seiten:
-* Eine * *.cshtml*-Datei für das HTML-Markup und die Razor-Syntax.
-* Eine * *.cshtml.cs*-Datei für das C#-CodeBehind zum Verarbeiten von Seitenereignissen.
+   - Eine *\*.cshtml*-Datei für das HTML-Markup und die Razor-Syntax.
+   - Eine *\*.cshtml.cs*-Datei für das C#-CodeBehind zum Verarbeiten von Seitenereignissen.
 
 Unterstützende Dateien haben Namen, die mit einem Unterstrich beginnen. Die Datei „_Layout.cshtml“ beispielsweise konfiguriert Benutzeroberflächenelemente, die für alle Seiten gelten. Mit dieser Datei werden das Navigationsmenü oben und der Urheberrechtshinweis unten auf der Seite eingerichtet. Weitere Informationen finden Sie unter [Layout in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
 

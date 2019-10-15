@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren einer netzwerkbasierten Installation
 description: Erfahren Sie, wie Sie eine netzwerkbasierte Installation von Visual Studio mit dem Befehl „--layout“ aktualisieren.
-ms.date: 03/30/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971367"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018814"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualisieren einer netzwerkbasierten Installation von Visual Studio
 
@@ -42,7 +42,7 @@ Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt ha
 
 ::: moniker-end
 
-Wenn Sie ein Layout in einer Dateifreigabe hosten, sollten Sie eine private Kopie des Layouts aktualisieren (z. B. c:\vsoffline) und diese, nachdem alle aktualisierten Inhalte heruntergeladen wurden, in Ihre Dateifreigabe kopieren (z. B. \\server\products\VS). Wenn Sie dies nicht tun, ist es wahrscheinlicher, dass Benutzer, die das Setup ausführen, während Sie das Layout aktualisieren, nicht alle Inhalte aus dem Layout erhalten, da es noch nicht vollständig aktualisiert wurde.
+Wenn Sie ein Layout in einer Dateifreigabe hosten, sollten Sie eine private Kopie des Layouts aktualisieren (z. B. C:\VSLayout) und diese, nachdem alle aktualisierten Inhalte heruntergeladen wurden, in Ihre Dateifreigabe kopieren (z. B. \\server\products\VS). Wenn Sie dies nicht tun, ist es wahrscheinlicher, dass Benutzer, die das Setup ausführen, während Sie das Layout aktualisieren, nicht alle Inhalte aus dem Layout erhalten, da es noch nicht vollständig aktualisiert wurde.
 
 Hier finden Sie einige ausführliche Beispiele für das Erstellen und Aktualisieren eines Layouts:
 
