@@ -1,5 +1,5 @@
 ---
-title: 'CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.'
+title: 'CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,25 +18,25 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 53665601cc719882930c0ceaa9794603791d2d7c
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236491"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349226"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen.
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen
 
 |||
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend: Wenn Sie aufgefordert werden, einen " **None** "-Wert zu einer nicht-Flag-Enumeration hinzuzufügen. Unterbrechen: Wenn Sie aufgefordert werden, Enumerationswerte umzubenennen oder zu entfernen.|
 
 ## <a name="cause"></a>Ursache
 
-Eine Enumeration ohne angewendete <xref:System.FlagsAttribute?displayProperty=fullName> definiert keinen Member, der den Wert 0 (null) aufweist. Oder eine Enumeration, die über einen angewendeten <xref:System.FlagsAttribute> verfügt, definiert einen Member, der den Wert 0 (null) aufweist, der Name jedoch nicht "None" ist. Oder die-Enumeration definiert mehrere Member mit dem Wert 0 (null).
+Eine Enumeration ohne angewendetes <xref:System.FlagsAttribute?displayProperty=fullName> definiert keinen Member, der den Wert 0 (null) aufweist. Oder eine Enumeration, die über einen angewendeten <xref:System.FlagsAttribute> verfügt, definiert einen Member mit dem Wert 0 (null), der Name ist jedoch nicht "None". Oder die-Enumeration definiert mehrere Member mit dem Wert 0 (null).
 
 Standardmäßig prüft diese Regel nur extern sichtbare Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
@@ -44,7 +44,7 @@ Standardmäßig prüft diese Regel nur extern sichtbare Enumerationen, dies ist 
 
 Der Standardwert einer nicht initialisierten Enumeration, ebenso wie andere Werttypen, ist 0 (null). Eine Enumeration, die nicht mit Flags versehen ist, sollte einen Member mit dem Wert 0 (null) definieren, sodass der Standardwert ein gültiger Wert der-Enumeration ist. Wenn erforderlich, benennen Sie den Member "None". Andernfalls sollten Sie dem am häufigsten verwendeten Member NULL zuweisen. Wenn der Wert des ersten Enumerationsmembers nicht in der Deklaration festgelegt ist, ist der Wert standardmäßig auf 0 festgelegt.
 
-Wenn eine Enumeration mit dem <xref:System.FlagsAttribute> angewendeten einen Member mit einem Wert von 0 (null) definiert, sollte der Name "None" lauten, um anzugeben, dass in der Enumeration keine Werte festgelegt wurden. Die Verwendung eines Elements mit einem Wert von 0 (null) für andere Zwecke steht im <xref:System.FlagsAttribute> Gegensatz zur Verwendung von in, da die-und-oder-oder bitweisen Operatoren mit dem-Member nutzlos sind. Dies impliziert, dass nur einem Member der Wert 0 (null) zugewiesen werden soll. Wenn mehrere Member mit dem Wert 0 (null) in einer durch Flags attributierten Enumeration auftreten, `Enum.ToString()` gibt falsche Ergebnisse für Member zurück, die nicht 0 (null) sind.
+Wenn eine Enumeration mit dem <xref:System.FlagsAttribute> einen Member mit 0 (null) aufweist, muss der Name "None" lauten, um anzugeben, dass keine Werte in der Enumeration festgelegt wurden. Die Verwendung eines Elements mit einem Wert von 0 (null) für andere Zwecke steht im Gegensatz zur Verwendung des <xref:System.FlagsAttribute>, da die-und-und-oder bitweisen Operatoren für den Member nutzlos sind. Dies impliziert, dass nur einem Member der Wert 0 (null) zugewiesen werden soll. Wenn mehrere Member mit dem Wert 0 (null) in einer durch Flags attributierten Enumeration auftreten, gibt `Enum.ToString()` falsche Ergebnisse für Member zurück, die nicht NULL sind.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -66,7 +66,7 @@ Sie können diese Option nur für diese Regel, für alle Regeln oder für alle R
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt zwei Enumerationen, die die Regel erfüllen, und eine Enumeration `BadTraceOptions`, die gegen die Regel verstößt.
+Das folgende Beispiel zeigt zwei Enumerationen, die die Regel erfüllen, und eine Enumeration, `BadTraceOptions`, die gegen die Regel verstößt.
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -74,11 +74,11 @@ Das folgende Beispiel zeigt zwei Enumerationen, die die Regel erfüllen, und ein
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Enumerationswerte "reserviert" nicht benennen](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Enumerationswerte nicht mit Typname als Präfix versehen](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028: Der Aufzählungs Speicher muss Int32 lauten.](../code-quality/ca1028-enum-storage-should-be-int32.md)
-- [CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217.md)
+- [CA1700: Enumerationswerte nicht mit "Reserviert" benennen](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028: Der Enumerationsspeicher sollte Int32 sein.](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
 

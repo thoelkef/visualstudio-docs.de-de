@@ -1,5 +1,5 @@
 ---
-title: 'CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.'
+title: 'CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b352d8f49cb92f70b449427179229fd882dbc9ce
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 113df599f793e92c41b7aa6b8a8f52a4c188982a
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234064"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348903"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen
 
 |||
 |-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "71234064"
 
 ## <a name="cause"></a>Ursache
 
-Der Name einer Enumeration endet in einem Plural Wort, und die Enumeration ist nicht mit dem <xref:System.FlagsAttribute?displayProperty=fullName> -Attribut gekennzeichnet.
+Der Name einer Enumeration endet in einem Plural Wort, und die Enumeration ist nicht mit dem <xref:System.FlagsAttribute?displayProperty=fullName>-Attribut gekennzeichnet.
 
 Standardmäßig prüft diese Regel nur extern sichtbare Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
@@ -40,13 +40,13 @@ Standardmäßig prüft diese Regel nur extern sichtbare Enumerationen, dies ist 
 
 Benennungs Konventionen legen fest, dass ein Plural Name für eine Enumeration angibt, dass mehr als ein Wert der Enumeration gleichzeitig angegeben werden kann. Der <xref:System.FlagsAttribute> weist Compiler an, dass die Enumeration als Bitfeld behandelt werden soll, das bitweise Operationen für die Enumeration ermöglicht.
 
-Wenn nur ein Wert einer Enumeration gleichzeitig angegeben werden kann, sollte der Name der Enumeration ein einzelnes Wort sein. Beispielsweise kann eine Enumeration, die die Wochentage definiert, für die Verwendung in einer Anwendung bestimmt werden, in der Sie mehrere Tage angeben können. Diese Enumeration sollte den und <xref:System.FlagsAttribute> den Namen "Days" aufweisen. Eine ähnliche Enumeration, die zulässt, dass nur ein einzelner Tag angegeben wird, verfügt nicht über das-Attribut und könnte als "Day" bezeichnet werden.
+Wenn nur ein Wert einer Enumeration gleichzeitig angegeben werden kann, sollte der Name der Enumeration ein einzelnes Wort sein. Beispielsweise kann eine Enumeration, die die Wochentage definiert, für die Verwendung in einer Anwendung bestimmt werden, in der Sie mehrere Tage angeben können. Diese Enumeration sollte den <xref:System.FlagsAttribute> aufweisen und als "Days" bezeichnet werden. Eine ähnliche Enumeration, die zulässt, dass nur ein einzelner Tag angegeben wird, verfügt nicht über das-Attribut und könnte als "Day" bezeichnet werden.
 
 Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dies reduziert die Zeit, die erforderlich ist, um eine neue Software Bibliothek kennenzulernen, und steigert das Kunden Vertrauen, dass die Bibliothek von einem Benutzer entwickelt wurde, der über Kenntnisse in der Entwicklung von verwaltetem Code verfügt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Geben Sie den Namen der Enumeration als Singular Wort an, oder <xref:System.FlagsAttribute>fügen Sie hinzu.
+Geben Sie den Namen der Enumeration als Singular Wort an, oder fügen Sie den <xref:System.FlagsAttribute> hinzu.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
@@ -64,9 +64,9 @@ Sie können diese Option nur für diese Regel, für alle Regeln oder für alle R
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1714: Flags-Enumerationen sollten Plural Namen aufweisen.](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
-- [CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+- [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90464052d0ba4f02b6b971adbacda8a29f3b0b2c
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 3ef7217ad6e66f839ab0a6adce7314a590793cf0
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305445"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349305"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
 
@@ -69,24 +69,24 @@ In der folgenden Tabelle werden alle Regeln des Regelsatzes Microsoft Basic-Entw
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Erneut ausführen, um Stapeldetails beizubehalten.|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Objekte nicht mehrmals verwerfen.|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Statische Felder für Werttyp inline initialisieren.|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|ServicedComponents nicht mit WebMethod markieren.|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen.|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Überschreibbare Methoden in Konstruktoren nicht aufrufen.|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Verwerfbare Typen sollten einen Finalizer deklarieren.|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Finalizer sollten Basisklassen-Finalizer aufrufen.|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Serialisierungskonstruktoren implementieren.|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Windows Forms-Einstiegspunkte mit STAThread markieren.|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Alle nicht serialisierbaren Felder markieren.|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Basisklassenmethoden auf ISerializable-Typen aufrufen.|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|ISerializable-Typen mit SerializableAttribute markieren.|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Serialisierungsmethoden korrekt implementieren.|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|ISerializable ordnungsgemäß implementieren.|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Geben Sie die korrekte Anzahl für Formatierungsmethoden an.|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Ordnungsgemäß auf NaN testen.|
+|[CA2200](../code-quality/ca2200.md)|Erneut ausführen, um Stapeldetails beizubehalten.|
+|[CA2202](../code-quality/ca2202.md)|Objekte nicht mehrmals verwerfen.|
+|[CA2207](../code-quality/ca2207.md)|Statische Felder für Werttyp inline initialisieren.|
+|[CA2212](../code-quality/ca2212.md)|ServicedComponents nicht mit WebMethod markieren.|
+|[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
+|[CA2214](../code-quality/ca2214.md)|Überschreibbare Methoden in Konstruktoren nicht aufrufen.|
+|[CA2216](../code-quality/ca2216.md)|Verwerfbare Typen sollten einen Finalizer deklarieren.|
+|[CA2220](../code-quality/ca2220.md)|Finalizer sollten Basisklassen-Finalizer aufrufen.|
+|[CA2229](../code-quality/ca2229.md)|Serialisierungskonstruktoren implementieren.|
+|[CA2231](../code-quality/ca2231.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
+|[CA2232](../code-quality/ca2232.md)|Windows Forms-Einstiegspunkte mit STAThread markieren.|
+|[CA2235](../code-quality/ca2235.md)|Alle nicht serialisierbaren Felder markieren.|
+|[CA2236](../code-quality/ca2236.md)|Basisklassenmethoden auf ISerializable-Typen aufrufen.|
+|[CA2237](../code-quality/ca2237.md)|ISerializable-Typen mit SerializableAttribute markieren.|
+|[CA2238](../code-quality/ca2238.md)|Serialisierungsmethoden korrekt implementieren.|
+|[CA2240](../code-quality/ca2240.md)|ISerializable ordnungsgemäß implementieren.|
+|[CA2241](../code-quality/ca2241.md)|Geben Sie die korrekte Anzahl für Formatierungsmethoden an.|
+|[CA2242](../code-quality/ca2242.md)|Ordnungsgemäß auf NaN testen.|
 |[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Statische Member nicht in generischen Typen deklarieren.|
 |[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|Generische Listen nicht verfügbar machen.|
 |[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|Generische Ereignishandlerinstanzen verwenden.|
@@ -151,19 +151,19 @@ In der folgenden Tabelle werden alle Regeln des Regelsatzes Microsoft Basic-Entw
 |[CA1820](../code-quality/ca1820.md)|Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.|
 |[CA1822](../code-quality/ca1822.md)|Member als statisch markieren.|
 |[CA1823](../code-quality/ca1823.md)|Nicht verwendete private Felder vermeiden.|
-|[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Keine reservierten Ausnahmetypen auslösen.|
-|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Verwaltete Entsprechungen der Win32 API verwenden.|
-|[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Argumentausnahmen korrekt instanziieren.|
-|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|Nicht konstante Felder sollten nicht sichtbar sein.|
-|[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|Enumerationen nicht mit FlagsAttribute markieren.|
-|[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|Keine Ausnahmen in Ausnahmeklauseln auslösen.|
-|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Finalizer sollten geschützt sein.|
-|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Sichtbarkeit für geerbte Member nicht verringern.|
-|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.|
-|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Equals beim Überladen von Gleichheitsoperatoren überschreiben.|
-|[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Operatorüberladungen weisen benannte Alternativen auf.|
-|[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Operatoren sollten symmetrische Überladungen aufweisen.|
-|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Sammlungseigenschaften sollten schreibgeschützt sein.|
-|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|params für Variablenargumente verwenden.|
-|[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.|
-|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|Deserialisierungsmethoden für optionale Felder angeben.|
+|[CA2201](../code-quality/ca2201.md)|Keine reservierten Ausnahmetypen auslösen.|
+|[CA2205](../code-quality/ca2205.md)|Verwaltete Entsprechungen der Win32 API verwenden.|
+|[CA2208](../code-quality/ca2208.md)|Argumentausnahmen korrekt instanziieren.|
+|[CA2211](../code-quality/ca2211.md)|Nicht konstante Felder sollten nicht sichtbar sein.|
+|[CA2217](../code-quality/ca2217.md)|Enumerationen nicht mit FlagsAttribute markieren.|
+|[CA2219](../code-quality/ca2219.md)|Keine Ausnahmen in Ausnahmeklauseln auslösen.|
+|[CA2221](../code-quality/ca2221.md)|Finalizer sollten geschützt sein.|
+|[CA2222](../code-quality/ca2222.md)|Sichtbarkeit für geerbte Member nicht verringern.|
+|[CA2223](../code-quality/ca2223.md)|Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.|
+|[CA2224](../code-quality/ca2224.md)|Equals beim Überladen von Gleichheitsoperatoren überschreiben.|
+|[CA2225](../code-quality/ca2225.md)|Operatorüberladungen weisen benannte Alternativen auf.|
+|[CA2226](../code-quality/ca2226.md)|Operatoren sollten symmetrische Überladungen aufweisen.|
+|[CA2227](../code-quality/ca2227.md)|Sammlungseigenschaften sollten schreibgeschützt sein.|
+|[CA2230](../code-quality/ca2230.md)|params für Variablenargumente verwenden.|
+|[CA2234](../code-quality/ca2234.md)|Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen.|
+|[CA2239](../code-quality/ca2239.md)|Deserialisierungsmethoden für optionale Felder angeben.|

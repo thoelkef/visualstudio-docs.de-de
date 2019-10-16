@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0a03f68ed15e790ea8a43a9ae2b476dd2f6f5d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d7b4a993af3a473ada7b4884001e372d9f444403
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235547"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349070"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: URI-Rückgabewerte dürfen keine Zeichenfolgen sein.
 
@@ -31,7 +31,7 @@ ms.locfileid: "71235547"
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |CheckId|CA1055|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
@@ -42,11 +42,11 @@ Standardmäßig prüft diese Regel nur öffentliche Methoden, aber dies ist [kon
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel teilt den Methodennamen in Token auf der Grundlage der Pascal-Schreibweise und überprüft, ob jedes Token mit "URI", "URI", "urn", "urn", "URL" oder "URL" übereinstimmen. Wenn eine Entsprechung vorliegt, geht die Regel davon aus, dass die Methode einen URI (Uniform Resource Identifier) zurückgibt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die <xref:System.Uri?displayProperty=fullName> -Klasse stellt diese Dienste auf sichere und sichere Weise bereit.
+Diese Regel teilt den Methodennamen in Token auf der Grundlage der Pascal-Schreibweise und überprüft, ob jedes Token mit "URI", "URI", "urn", "urn", "URL" oder "URL" übereinstimmen. Wenn eine Entsprechung vorliegt, geht die Regel davon aus, dass die Methode einen URI (Uniform Resource Identifier) zurückgibt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Die Klasse <xref:System.Uri?displayProperty=fullName> stellt diese Dienste auf sichere und sichere Weise bereit.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Rückgabetyp in <xref:System.Uri>.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Rückgabetyp in einen <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
@@ -64,7 +64,7 @@ Sie können diese Option nur für diese Regel, für alle Regeln oder für alle R
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen Typ `ErrorProne`,, der gegen diese Regel verstößt, und einen Typ, `SaferWay`, der die Regel erfüllt.
+Das folgende Beispiel zeigt einen Typ, `ErrorProne`, der gegen diese Regel verstößt, und einen Typ, `SaferWay`, der die Regel erfüllt.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1055-uri-return-values-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1055-uri-return-values-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ Das folgende Beispiel zeigt einen Typ `ErrorProne`,, der gegen diese Regel verst
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1056: Uri-Eigenschaften dürfen keine Zeichen folgen sein.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1054: URI-Parameter dürfen keine Zeichen folgen sein.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA2234: Übergeben Sie System. URI-Objekte anstelle von Zeichen folgen.](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Zeichen folgen-URI-über Ladungen werden System. URI-über Ladungen aufgerufen](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen](../code-quality/ca2234.md)
+- [CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 898a11be40d29c2e6181886c2c90af9315af6e3e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305546"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349564"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 
@@ -71,7 +71,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|
 |[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|
 |[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|
-|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die Eigenschaft "NeedsRelease" darf nicht für Werte des void-Typs verwendet werden.|
+|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|
 |[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|
 |[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|
 |[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|
@@ -142,7 +142,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
 |[C28287](../code-quality/c28287.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)|
 |[C28288](../code-quality/c28288.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)|
-|[C28289](../code-quality/c28289.md)|For-Funktion: "Read ableto" oder "Write tableto" enthielt keine Limit-Spezifikation als Parameter.|
+|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|
 |[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
 |[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
 |[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|
@@ -155,5 +155,5 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C28351](../code-quality/c28351.md)|Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
 |[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen.|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
+|[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
+|[CA2231](../code-quality/ca2231.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|

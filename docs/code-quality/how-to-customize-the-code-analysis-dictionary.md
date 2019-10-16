@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anpassen des Codeanalysewörterbuchs'
+title: 'Gewusst wie: Anpassen des Codeanalysewörterbuchs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7c88e565de4f4b3e3b25b6523ff04f1831a70d
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: b4a6c94f5784d57a90dd31f21f8829b3141140d0
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314147"
+ms.locfileid: "72349591"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>Vorgehensweise: Anpassen des Codeanalysewörterbuchs
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>Gewusst wie: Anpassen des Codeanalysewörterbuchs
 
 Bei der Code Analyse wird ein integriertes Wörterbuch verwendet, um Bezeichner in Ihrem Code auf Fehler in der Schreibweise, in grammatischem Fall und in anderen Benennungs Konventionen der .net-Entwurfs Richtlinien zu überprüfen. Sie können eine benutzerdefinierte Wörterbuch-XML-Datei erstellen, um Begriffe, Abkürzungen und Akronyme zum integrierten Wörterbuch hinzuzufügen, zu entfernen oder zu ändern.
 
@@ -95,19 +95,19 @@ Fügen Sie den Begriff als inneren Text eines Dictionary/Words/erkannten/Word-El
 
 Begriffe in Wörterbuch/Wörtern/erkannten Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Ressourcen Zeichenfolgen sollten korrekt geschrieben werden @ no__t-0
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1709: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- [CA1726: Bevorzugte Begriffe verwenden @ no__t-0
+- [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)
 
-- [CA2204: Literale müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Wörterbuch/Wörter/nicht erkannt/Word
 
@@ -130,19 +130,19 @@ Um einen Begriff aus der Liste der Begriffe auszuschließen, die von der Code An
 
 Die Begriffe im Wörterbuch/Wörter/nicht erkannten Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Ressourcen Zeichenfolgen sollten korrekt geschrieben werden @ no__t-0
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1709: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- [CA1726: Bevorzugte Begriffe verwenden @ no__t-0
+- [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)
 
-- [CA2204: Literale müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Wörterbuch/Wörter/veraltet/Begriff [@PreferredAlternate]
 
@@ -171,15 +171,15 @@ Um einen vorgeschlagenen Alternativen Begriff in der Warnung einzuschließen, ge
 
 Begriffe im Wörterbuch/Wörter/deprecated-Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Ressourcen Zeichenfolgen sollten korrekt geschrieben werden @ no__t-0
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1726: Bevorzugte Begriffe verwenden @ no__t-0
+- [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)
 
 ### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Wörterbuch/Wörter/Verbund/Begriff [@CompoundAlternate]
 
@@ -206,13 +206,13 @@ Mit dem integrierten Wörterbuch werden einige Begriffe als einzelne, diskrete B
 
 Begriffe im Wörterbuch/Wörter/Verbund Knoten werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Ressourcen Zeichenfolgen sollten korrekt geschrieben werden @ no__t-0
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
 ### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/diskreteexceptions/Term
 
@@ -235,9 +235,9 @@ Um einen Begriff in der Liste der Begriffe auszuschließen, die die Code Analyse
 
 Die Begriffe im Knoten Wörterbuch/Wörter/diskreteexceptions werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1701: Ressourcen Zeichenfolgen-Verbund Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Zusammengesetzte Wörter müssen ordnungsgemäß geschrieben werden @ no__t-0
+- [CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/Akronyme/CasingExceptions/Akronym
 
@@ -260,7 +260,7 @@ Wenn Sie ein Akronym in die Liste der Begriffe einschließen möchten, die von d
 
 Begriffe im Knoten "Dictionary/acronyme/CasingExceptions" werden auf die folgenden Code Analyse Regeln angewendet:
 
-- [CA1709: Bezeichner sollten korrekt geschrieben werden @ no__t-0
+- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
 ## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>So verwenden Sie ein benutzerdefiniertes Wörterbuch auf ein Projekt
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.'
+title: 'CA1054: URI-Parameter dürfen keine Zeichenfolgen sein'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,35 +18,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 49788b900eb8aed9fac6e4da4844377bae67efbf
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5f4efbec200b90614a5d78a4b04b2ebd32588cb5
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235557"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349084"
 ---
-# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.
+# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: URI-Parameter dürfen keine Zeichenfolgen sein
 
 |||
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
 
-Ein Typ deklariert eine Methode mit einem Zeichen folgen Parameter, dessen Name "URI", "URI", "urn", "urn", "URL" oder "URL" enthält, und der Typ deklariert keine entsprechende Überladung, die <xref:System.Uri?displayProperty=fullName> einen-Parameter annimmt.
+Ein Typ deklariert eine Methode mit einem Zeichen folgen Parameter, dessen Name "URI", "URI", "urn", "urn", "URL" oder "URL" enthält, und der Typ deklariert keine entsprechende Überladung, die einen <xref:System.Uri?displayProperty=fullName>-Parameter annimmt.
 
 Standardmäßig betrachtet diese Regel nur extern sichtbare Typen, aber dies ist [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Diese Regel teilt den Parameternamen auf Grundlage der Camel-Schreibweise in Token auf und überprüft, ob jedes Token mit "URI", "URI", "urn", "urn", "URL" oder "URL" übereinstimmen. Wenn eine Entsprechung vorhanden ist, geht die Regel davon aus, dass der Parameter einen URI (Uniform Resource Identifier) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Wenn eine Methode eine Zeichen folgen Darstellung eines URIs annimmt, sollte eine entsprechende Überladung bereitgestellt werden, die eine Instanz <xref:System.Uri> der-Klasse annimmt, die diese Dienste auf sichere und sichere Weise bereitstellt.
+Diese Regel teilt den Parameternamen auf Grundlage der Camel-Schreibweise in Token auf und überprüft, ob jedes Token mit "URI", "URI", "urn", "urn", "URL" oder "URL" übereinstimmen. Wenn eine Entsprechung vorhanden ist, geht die Regel davon aus, dass der Parameter einen URI (Uniform Resource Identifier) darstellt. Eine Zeichenfolgendarstellung eines URIs ist anfällig für Analyse- und Codierungsfehler und kann zu Sicherheitsmängeln führen. Wenn eine Methode eine Zeichen folgen Darstellung eines URIs annimmt, sollte eine entsprechende Überladung bereitgestellt werden, die eine Instanz der <xref:System.Uri>-Klasse annimmt, die diese Dienste auf sichere und sichere Weise bereitstellt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den- <xref:System.Uri> Parameter in einen-Typ. Dies ist eine Breaking Change. Alternativ dazu können Sie eine Überladung der-Methode bereit <xref:System.Uri> stellen, die einen-Parameter annimmt. Dies ist ein nicht-Breaking Change.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Parameter in einen <xref:System.Uri>-Typ. Dies ist eine Breaking Change. Alternativ dazu können Sie eine Überladung der-Methode bereitstellen, die einen <xref:System.Uri>-Parameter annimmt. Dabei handelt es sich um einen nicht Breaking Change.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
@@ -64,7 +64,7 @@ Sie können diese Option nur für diese Regel, für alle Regeln oder für alle R
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt einen Typ `ErrorProne`,, der gegen diese Regel verstößt, und einen Typ, `SaferWay`, der die Regel erfüllt.
+Das folgende Beispiel zeigt einen Typ, `ErrorProne`, der gegen diese Regel verstößt, und einen Typ, `SaferWay`, der die Regel erfüllt.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ Das folgende Beispiel zeigt einen Typ `ErrorProne`,, der gegen diese Regel verst
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1056: Uri-Eigenschaften dürfen keine Zeichen folgen sein.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1055: URI-Rückgabewerte dürfen keine Zeichen folgen sein.](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234: Übergeben Sie System. URI-Objekte anstelle von Zeichen folgen.](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Zeichen folgen-URI-über Ladungen werden System. URI-über Ladungen aufgerufen](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056: URI-Eigenschaften dürfen keine Zeichenfolgen sein](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1055: URI-Rückgabewerte dürfen keine Zeichenfolgen sein](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234: Übergeben Sie System.Uri-Objekte anstelle von Zeichenfolgen](../code-quality/ca2234.md)
+- [CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.'
+title: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b45e98fde35e8be3296ce1c6916f61ef7b76a306
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235245"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349027"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen
 
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -66,13 +66,13 @@ Eigenschaften sind im Grunde intelligente Felder. Daher sollten Sie sich so weit
 
 Die folgenden Ausnahmen können von einer Get-Methode der Eigenschaft ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>und alle Ableitungen ( <xref:System.ObjectDisposedException?displayProperty=fullName>einschließlich)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>und alle Ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
 
-- <xref:System.ArgumentException?displayProperty=fullName>(nur aus indizierten Get-)
+- <xref:System.ArgumentException?displayProperty=fullName> (nur aus indiziertem Get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(nur aus indizierten Get-)
+- <xref:System.Collections.Generic.KeyNotFoundException> (nur aus indiziertem Get)
 
 ### <a name="event-accessor-methods"></a>Ereigniszugriffsmethoden
 
@@ -80,11 +80,11 @@ Ereignisaccessoren sollten einfache Vorgänge sein, die keine Ausnahmen auslöse
 
 Die folgenden Ausnahmen können von einem Ereignis Accessor ausgelöst werden:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>und alle Ableitungen ( <xref:System.ObjectDisposedException?displayProperty=fullName>einschließlich)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle Ableitungen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>und alle Ableitungen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle Ableitungen
 
-- <xref:System.ArgumentException>und Ableitungen
+- <xref:System.ArgumentException> und Ableitungen
 
 ### <a name="equals-methods"></a>Gleichheits Methoden
 
@@ -94,7 +94,7 @@ Die folgenden **Gleichheits** Methoden sollten keine Ausnahmen auslösen:
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Eine **Gleichheits** Methode sollte `true` oder `false` zurückgeben, anstatt eine Ausnahme auszulösen. Wenn z. b. gleich zwei nicht übereinstimmende Typen weitergegeben werden `false` , sollten Sie nur <xref:System.ArgumentException>zurückgeben, anstatt eine auszulösen.
+Eine **Gleichheits** Methode sollte `true` oder `false` zurückgeben, anstatt eine Ausnahme auszulösen. Wenn z. b. gleich zwei nicht übereinstimmende Typen weitergegeben werden, sollten Sie nur `false` zurückgeben, anstatt eine <xref:System.ArgumentException> auszulösen.
 
 ### <a name="gethashcode-methods"></a>GetHashCode-Methoden
 
@@ -106,11 +106,11 @@ Die folgenden **GetHashCode** -Methoden sollten normalerweise keine Ausnahmen au
 
 **GetHashCode** sollte immer einen Wert zurückgeben. Andernfalls können Sie Elemente in der Hash Tabelle verlieren.
 
-Die Versionen von **GetHashCode** , die ein Argument annehmen, können <xref:System.ArgumentException>eine auslösen. **Object. GetHashCode** sollte jedoch nie eine Ausnahme auslösen.
+Die Versionen von **GetHashCode** , die ein Argument annehmen, können eine <xref:System.ArgumentException> auslösen. **Object. GetHashCode** sollte jedoch nie eine Ausnahme auslösen.
 
 ### <a name="tostring-methods"></a>Methoden mit dem Methoden Satz
 
-Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName> , um Informationen zu Objekten im Zeichen folgen Format anzuzeigen. Daher sollte die Objekt **Zeichenfolge** den Status eines Objekts nicht ändern und keine Ausnahmen auslösen.
+Der Debugger verwendet <xref:System.Object.ToString%2A?displayProperty=fullName>, um Informationen zu Objekten im Zeichen folgen Format anzuzeigen. Daher sollte die Objekt **Zeichenfolge** den Status eines Objekts nicht ändern und keine Ausnahmen auslösen.
 
 ### <a name="static-constructors"></a>Statische Konstruktoren
 
@@ -122,13 +122,13 @@ Das Auslösen einer Ausnahme von einem Finalizer bewirkt, dass die CLR schnell a
 
 ### <a name="dispose-methods"></a>Verwerfen von Methoden
 
-Eine <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Methode sollte keine Ausnahme auslösen. "Verwerfen" wird häufig als Teil der Bereinigungs Logik in `finally` einer-Klausel aufgerufen. Daher zwingt das explizite Auslösen einer Ausnahme von verwerfen den Benutzer, eine Ausnahmebehandlung in der `finally` -Klausel hinzuzufügen.
+Eine <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>-Methode sollte keine Ausnahme auslösen. "Verwerfen" wird häufig als Teil der Bereinigungs Logik in einer `finally`-Klausel aufgerufen. Daher zwingt das explizite Auslösen einer Ausnahme von verwerfen den Benutzer, die Ausnahmebehandlung in der `finally`-Klausel hinzuzufügen.
 
 Der verwerfen **(false)** -Codepfad sollte nie Ausnahmen auslösen, da der Löschvorgang fast immer von einem Finalizer aufgerufen wird.
 
 ### <a name="equality-operators--"></a>Gleichheits Operatoren (= =,! =)
 
-Like-Methoden sollten Gleichheits Operatoren entweder `true` oder `false`zurückgeben und sollten keine Ausnahmen auslösen.
+Wie Gleichheits Methoden sollten Gleichheits Operatoren entweder `true` oder `false` zurückgeben und keine Ausnahmen auslösen.
 
 ### <a name="implicit-cast-operators"></a>Implizite Umwandlungs Operatoren
 
@@ -146,7 +146,7 @@ Wenn die Verletzung durch eine Ausnahme Deklaration statt einer ausgelösten Aus
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2219: Keine Ausnahmen in Ausnahmeklauseln auslöst](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1700: Enumerationswerte &#39;nicht reserviert benennen&#39;'
+title: 'CA1700: Enumeration-Werte &#39;nicht reserviert benennen&#39;'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5171123827481c99bbc35c10b04aaf942a15fabb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f0097725b8f84a641df9061d693f1f5c4bdf1851
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234387"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348970"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Enumerationswerte &#39;nicht reserviert benennen&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Enumeration-Werte &#39;nicht reserviert benennen&#39;
 
 |||
 |-|-|
@@ -40,11 +40,11 @@ Bei dieser Regel wird vorausgesetzt, dass Enumerationsmember mit einem Namen, de
 
 Fügen Sie der-Enumeration in der zukünftigen Version einen neuen Member hinzu, anstatt einen reservierten Member zu verwenden. In den meisten Fällen handelt es sich beim Hinzufügen des neuen Members nicht um eine Breaking Change, sofern die Addition nicht bewirkt, dass die Werte der ursprünglichen Member geändert werden.
 
-In einer begrenzten Anzahl von Fällen ist das Hinzufügen eines Members eine Breaking Change, auch wenn die ursprünglichen Member ihre ursprünglichen Werte beibehalten. Vor allem kann der neue Member nicht aus vorhandenen Codepfade zurückgegeben werden, ohne Aufrufer [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]zu unterbrechen, die eine `switch` -Anweisung (`Select` in) für den Rückgabewert verwenden, der die gesamte Elementliste umfasst und eine Ausnahme im Standardfall. Ein sekundäres Problem ist, dass der Client Code die Änderung des Verhaltens von Reflektionsmethoden wie <xref:System.Enum.IsDefined%2A?displayProperty=fullName>nicht behandelt. Wenn das neue Element von vorhandenen Methoden zurückgegeben werden muss oder eine bekannte Anwendungs Inkompatibilität aufgrund einer schlechten Reflektionsverwendung auftritt, besteht die einzige Lösung in folgenden Gründen in folgenden Lösungen:
+In einer begrenzten Anzahl von Fällen ist das Hinzufügen eines Members eine Breaking Change, auch wenn die ursprünglichen Member ihre ursprünglichen Werte beibehalten. Vor allem kann der neue Member nicht aus vorhandenen Codepfade zurückgegeben werden, ohne dass Aufrufer unterbrochen werden, die eine `switch`-Anweisung (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) für den Rückgabewert verwenden, der die gesamte Elementliste umfasst und im Standardfall eine Ausnahme auslöst. Ein sekundäres Problem ist, dass der Client Code die Änderung des Verhaltens von Reflektionsmethoden wie <xref:System.Enum.IsDefined%2A?displayProperty=fullName> möglicherweise nicht behandelt. Wenn das neue Element von vorhandenen Methoden zurückgegeben werden muss oder eine bekannte Anwendungs Inkompatibilität aufgrund einer schlechten Reflektionsverwendung auftritt, besteht die einzige Lösung in folgenden Gründen in folgenden Lösungen:
 
 1. Fügen Sie eine neue-Enumeration hinzu, die die ursprünglichen und neuen Member enthält.
 
-2. Markieren Sie die ursprüngliche Enumeration mit <xref:System.ObsoleteAttribute?displayProperty=fullName> dem-Attribut.
+2. Markieren Sie die ursprüngliche Enumeration mit dem <xref:System.ObsoleteAttribute?displayProperty=fullName>-Attribut.
 
    Befolgen Sie dasselbe Verfahren für alle extern sichtbaren Typen oder Member, die die ursprüngliche Enumeration verfügbar machen.
 
@@ -58,12 +58,12 @@ Es ist sicher, eine Warnung aus dieser Regel für ein Element zu unterdrücken, 
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217.md)
 
-[CA1712: Enumerationswerte nicht mit Typname als Präfix versehen](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028: Der Aufzählungs Speicher muss Int32 lauten.](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028: Der Enumerationsspeicher sollte Int32 sein.](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008: Enumerationswerte sollten NULL-Werte aufweisen.](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008: Enumerationen müssen einen Wert von 0 (null) aufweisen](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

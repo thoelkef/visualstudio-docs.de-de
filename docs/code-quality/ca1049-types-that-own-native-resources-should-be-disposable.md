@@ -1,5 +1,5 @@
 ---
-title: 'CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können.'
+title: 'CA1049: Typen, die systemeigene Ressourcen besitzen, müssen gelöscht werden können'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306119"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349092"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können.
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typen, die systemeigene Ressourcen besitzen, müssen gelöscht werden können
 
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
@@ -56,11 +56,11 @@ Das folgende Beispiel zeigt einen Typ, der <xref:System.IDisposable> implementie
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
-[CA2115: Ruft GC auf. KeepAlive bei Verwendung nativer Ressourcen @ no__t-0
+[CA2115: GC.KeepAlive beim Verwenden systemeigener Ressourcen aufrufen](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816: Ruft GC auf. SuppressFinalize ordnungsgemäß @ no__t-0
+[CA1816: GC.SuppressFinalize korrekt aufrufen](../code-quality/ca1816.md)
 
-[CA2216: Verwerfbare Typen sollten den Finalizer @ no__t-0 deklarieren.
+[CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren](../code-quality/ca2216.md)
 
 [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

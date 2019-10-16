@@ -1,5 +1,5 @@
 ---
-title: 'CA1027: Enumerationen mit FlagsAttribute markieren.'
+title: 'CA1027: Enumerationen mit FlagsAttribute markieren'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,37 +14,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8375d2096417948b19a228d8a4f02accac7c0b5f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 01dc0ed6ca5bd7af8131fb85d35310131a821eaa
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236112"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349162"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Enumerationen mit FlagsAttribute markieren.
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Enumerationen mit FlagsAttribute markieren
 
 |||
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Die Werte einer Enumeration sind zwei oder Kombinationen aus anderen Werten, die in der-Enumeration definiert sind, und das <xref:System.FlagsAttribute?displayProperty=fullName> -Attribut ist nicht vorhanden. Um falsch positive Ergebnisse zu reduzieren, meldet diese Regel keinen Verstoß gegen Enumerationen, die zusammenhängende Werte aufweisen.
+Die Werte einer Enumeration sind zwei oder Kombinationen aus anderen Werten, die in der-Enumeration definiert sind, und das <xref:System.FlagsAttribute?displayProperty=fullName>-Attribut ist nicht vorhanden. Um falsch positive Ergebnisse zu reduzieren, meldet diese Regel keinen Verstoß gegen Enumerationen, die zusammenhängende Werte aufweisen.
 
 Standardmäßig untersucht diese Regel nur öffentliche Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. Gilt <xref:System.FlagsAttribute> für eine Enumeration, wenn deren benannte Konstanten sinnvoll kombiniert werden können. Stellen Sie sich z. b. eine Enumeration der Wochentage in einer Anwendung vor, die nachverfolgen, welche Tages Ressourcen verfügbar sind. Wenn die Verfügbarkeit der einzelnen Ressourcen mithilfe der-Enumeration <xref:System.FlagsAttribute> , die vorhanden ist, codiert ist, kann eine beliebige Kombination von Tagen dargestellt werden. Ohne das-Attribut kann nur ein Wochentag dargestellt werden.
+Eine Enumeration ist ein Werttyp, der einen Satz verwandter benannter Konstanten definiert. Wenden Sie <xref:System.FlagsAttribute> auf eine Enumeration an, wenn deren benannte Konstanten sinnvoll kombiniert werden können. Stellen Sie sich z. b. eine Enumeration der Wochentage in einer Anwendung vor, die nachverfolgen, welche Tages Ressourcen verfügbar sind. Wenn die Verfügbarkeit der einzelnen Ressourcen mithilfe der-Enumeration codiert wird, die <xref:System.FlagsAttribute> vorhanden ist, kann eine beliebige Kombination von Tagen dargestellt werden. Ohne das-Attribut kann nur ein Wochentag dargestellt werden.
 
 Für Felder, die kombinierbare Enumerationen speichern, werden die einzelnen Enumerationswerte als Gruppen von Bits im Feld behandelt. Daher werden solche Felder manchmal auch als *Bitfelder*bezeichnet. Verwenden Sie zum Kombinieren von Enumerationswerten für den Speicher in einem Bitfeld die booleschen bedingten Operatoren. Um ein Bitfeld zu testen, um zu bestimmen, ob ein bestimmter Enumerationswert vorhanden ist, verwenden Sie die logischen booleschen Operatoren. Damit ein Bitfeld kombinierte Enumerationswerte ordnungsgemäß speichert und abruft, muss jeder in der-Enumeration definierte Wert eine Potenz von zwei sein. Sofern dies nicht der Fall ist, können die logischen booleschen Operatoren die einzelnen Enumerationswerte, die im Feld gespeichert sind, nicht extrahieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, <xref:System.FlagsAttribute> fügen Sie der-Enumeration hinzu.
+Um einen Verstoß gegen diese Regel zu beheben, fügen Sie der-Enumeration <xref:System.FlagsAttribute> hinzu.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
@@ -62,13 +62,13 @@ Sie können diese Option nur für diese Regel, für alle Regeln oder für alle R
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel `DaysEnumNeedsFlags` ist eine Enumeration, die die Anforderungen für die Verwendung <xref:System.FlagsAttribute> von erfüllt, jedoch nicht. Die `ColorEnumShouldNotHaveFlag` -Enumeration weist keine Werte auf, die zwei, aber falsch fest <xref:System.FlagsAttribute>gelegt sind. Dies verstößt gegen [Regel CA2217: Markieren Sie die auffüge Zeichen nicht mit FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+Im folgenden Beispiel ist `DaysEnumNeedsFlags` eine Enumeration, die die Anforderungen für die Verwendung von <xref:System.FlagsAttribute> erfüllt, aber nicht. Die `ColorEnumShouldNotHaveFlag`-Enumeration weist keine Werte auf, die zwei, aber falsch <xref:System.FlagsAttribute>-Werte sind. Dies verstößt gegen Regel [CA2217: Markieren Sie keine Enumerationen mit FlagsAttribute](../code-quality/ca2217.md).
 
 [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Siehe auch
 

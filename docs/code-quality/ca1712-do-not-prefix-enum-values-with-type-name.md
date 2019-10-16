@@ -1,5 +1,5 @@
 ---
-title: 'CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden.'
+title: 'CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5966c9685bc4bbc5ba997f8acf47abbbfca1a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f151296fce00ca92209c588c4be0361f9adfc7fd
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234110"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348933"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden.
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Keine Typnamen als Präfixe für Enumerationswerte verwenden
 
 |||
 |-|-|
@@ -58,9 +58,9 @@ Das folgende Beispiel zeigt eine falsch benannte Enumeration, gefolgt von der ko
 ## <a name="related-rules"></a>Verwandte Regeln
 [CA1711: Bezeichner sollten kein falsches Suffix aufweisen](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-[CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-[CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Siehe auch
 

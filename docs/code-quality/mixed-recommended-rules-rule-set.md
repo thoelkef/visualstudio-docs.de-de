@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602ad4c8f6ea3b5ca8d2b6f57c4148964b17a6c
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 994f8151b209d58617a23edbb4bba38836570710
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305591"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349539"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Regelsatz für gemischte empfohlene Mindestregeln
 
@@ -127,7 +127,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|
 |[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|
 |[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|
-|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die Eigenschaft "NeedsRelease" darf nicht für Werte des void-Typs verwendet werden.|
+|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|
 |[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|
 |[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|
 |[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|
@@ -227,7 +227,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
 |[C28287](../code-quality/c28287.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)|
 |[C28288](../code-quality/c28288.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)|
-|[C28289](../code-quality/c28289.md)|For-Funktion: "Read ableto" oder "Write tableto" enthielt keine Limit-Spezifikation als Parameter.|
+|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|
 |[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
 |[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
 |[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|
@@ -284,21 +284,21 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typen müssen mindestens genauso kritisch sein wie ihre Basistypen und Schnittstellen.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Erneut ausführen, um Stapeldetails beizubehalten.|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Objekte nicht mehrmals verwerfen.|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Statische Felder für Werttyp inline initialisieren.|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|ServicedComponents nicht mit WebMethod markieren.|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen.|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Überschreibbare Methoden in Konstruktoren nicht aufrufen.|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Verwerfbare Typen sollten einen Finalizer deklarieren.|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Finalizer sollten Basisklassen-Finalizer aufrufen.|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Serialisierungskonstruktoren implementieren.|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Windows Forms-Einstiegspunkte mit STAThread markieren.|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Alle nicht serialisierbaren Felder markieren.|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Basisklassenmethoden auf ISerializable-Typen aufrufen.|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|ISerializable-Typen mit SerializableAttribute markieren.|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Serialisierungsmethoden korrekt implementieren.|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|ISerializable ordnungsgemäß implementieren.|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Geben Sie die korrekte Anzahl für Formatierungsmethoden an.|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Ordnungsgemäß auf NaN testen.|
+|[CA2200](../code-quality/ca2200.md)|Erneut ausführen, um Stapeldetails beizubehalten.|
+|[CA2202](../code-quality/ca2202.md)|Objekte nicht mehrmals verwerfen.|
+|[CA2207](../code-quality/ca2207.md)|Statische Felder für Werttyp inline initialisieren.|
+|[CA2212](../code-quality/ca2212.md)|ServicedComponents nicht mit WebMethod markieren.|
+|[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
+|[CA2214](../code-quality/ca2214.md)|Überschreibbare Methoden in Konstruktoren nicht aufrufen.|
+|[CA2216](../code-quality/ca2216.md)|Verwerfbare Typen sollten einen Finalizer deklarieren.|
+|[CA2220](../code-quality/ca2220.md)|Finalizer sollten Basisklassen-Finalizer aufrufen.|
+|[CA2229](../code-quality/ca2229.md)|Serialisierungskonstruktoren implementieren.|
+|[CA2231](../code-quality/ca2231.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
+|[CA2232](../code-quality/ca2232.md)|Windows Forms-Einstiegspunkte mit STAThread markieren.|
+|[CA2235](../code-quality/ca2235.md)|Alle nicht serialisierbaren Felder markieren.|
+|[CA2236](../code-quality/ca2236.md)|Basisklassenmethoden auf ISerializable-Typen aufrufen.|
+|[CA2237](../code-quality/ca2237.md)|ISerializable-Typen mit SerializableAttribute markieren.|
+|[CA2238](../code-quality/ca2238.md)|Serialisierungsmethoden korrekt implementieren.|
+|[CA2240](../code-quality/ca2240.md)|ISerializable ordnungsgemäß implementieren.|
+|[CA2241](../code-quality/ca2241.md)|Geben Sie die korrekte Anzahl für Formatierungsmethoden an.|
+|[CA2242](../code-quality/ca2242.md)|Ordnungsgemäß auf NaN testen.|

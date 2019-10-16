@@ -1,5 +1,5 @@
 ---
-title: 'CA1704: Bezeichner sollten korrekt geschrieben werden.'
+title: 'CA1704: Bezeichner sollten korrekt geschrieben werden'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f2e42e68f008c625c8d6b5150d0348d14e29d3dc
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234292"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348948"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden.
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden
 
 |||
 |-|-|
@@ -69,13 +69,13 @@ Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>So fügen Sie einem benutzerdefinierten wörterbuchwörter hinzu
 
-Benennen Sie die benutzerdefinierte Wörterbuch-XML-Datei *CustomDictionary. XML*. Platzieren Sie das Wörterbuch im Installationsverzeichnis des Tools, im Projektverzeichnis oder in dem Verzeichnis, das dem Tool unter dem Profil des Benutzers zugeordnet ist ( *%UserProfile%\Anwendungsdaten\\...* ). Informationen zum Hinzufügen des benutzerdefinierten Wörterbuchs zu einem Projekt in Visual Studio finden [Sie unter Gewusst wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Benennen Sie die benutzerdefinierte Wörterbuch-XML-Datei *CustomDictionary. XML*. Platzieren Sie das Wörterbuch im Installationsverzeichnis des Tools, im Projektverzeichnis oder in dem Verzeichnis, das dem Tool unter dem Profil des Benutzers zugeordnet ist ( *%UserProfile%\Application Data @ no__t-1...* ). Informationen zum Hinzufügen des benutzerdefinierten Wörterbuchs zu einem Projekt in Visual Studio finden Sie unter Gewusst [wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 - Fügen Sie Wörter hinzu, die unter dem Wörterbuch/Wörter/erkannten Pfad keine Verletzung verursachen sollten.
 
 - Fügen Sie Wörter hinzu, die eine Verletzung im Wörterbuch/Wörter/nicht erkannten Pfad verursachen sollten.
 
-- Fügen Sie Wörter, die als veraltet gekennzeichnet werden sollen, unter dem Pfad Dictionary/Words/deprecated hinzu. Weitere Informationen finden Sie im [Thema zu verwandten Regeln CA1726: Weitere Informationen finden](../code-quality/ca1726-use-preferred-terms.md) Sie unter bevorzugte Begriffe.
+- Fügen Sie Wörter, die als veraltet gekennzeichnet werden sollen, unter dem Pfad Dictionary/Words/deprecated hinzu. Weitere Informationen finden Sie im Thema Verwandte Regel [CA1726: bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md) .
 
 - Fügen Sie dem Wörterbuch/Akronyme/CasingExceptions-Pfad Ausnahmen zu den Regeln für die Akronym-Schreibweise hinzu.
 
@@ -110,13 +110,13 @@ Unterdrückt eine Warnung aus dieser Regel nur, wenn das Wort absichtlich falsch
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA2204: Literale sollten korrekt geschrieben werden.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703: Ressourcen Zeichenfolgen sollten korrekt geschrieben werden.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Bezeichner sollten sich um mehr als einen Fall unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707: Bezeichner sollten keine Unterstriche enthalten.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204.md)
+- [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: Bezeichner sollten keine Unterstriche enthalten](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 - [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [Gewusst wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

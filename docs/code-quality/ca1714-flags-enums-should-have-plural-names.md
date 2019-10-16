@@ -1,5 +1,5 @@
 ---
-title: 'CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen.'
+title: 'CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79585cd9cae31f46a9506085c9c8faf5b5844d44
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0a648978eaf65faa66dd1ac10a4224c7e5168510
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234094"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348921"
 ---
-# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen.
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen
 
 |||
 |-|-|
@@ -32,19 +32,19 @@ ms.locfileid: "71234094"
 
 ## <a name="cause"></a>Ursache
 
-Eine Enumeration weist das <xref:System.FlagsAttribute?displayProperty=fullName> -Element und seinen Namen nicht auf ' ' auf.
+Eine Enumeration weist den <xref:System.FlagsAttribute?displayProperty=fullName> auf, und der Name endet nicht mit "".
 
 Standardmäßig prüft diese Regel nur extern sichtbare Enumerationen, dies ist jedoch [konfigurierbar](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Typen, die mit <xref:System.FlagsAttribute> markiert sind, haben Namen, die den Plural aufweisen, da das Attribut angibt, dass mehr als ein Wert angegeben werden kann. Beispielsweise kann eine Enumeration, die die Wochentage definiert, für die Verwendung in einer Anwendung bestimmt werden, in der Sie mehrere Tage angeben können. Diese Enumeration sollte den und <xref:System.FlagsAttribute> den Namen "Days" aufweisen. Eine ähnliche Enumeration, die zulässt, dass nur ein einzelner Tag angegeben wird, verfügt nicht über das-Attribut und könnte als "Day" bezeichnet werden.
+Typen, die mit <xref:System.FlagsAttribute> gekennzeichnet sind, haben Namen, die den Plural aufweisen, da das Attribut angibt, dass mehr als ein Wert angegeben werden kann. Beispielsweise kann eine Enumeration, die die Wochentage definiert, für die Verwendung in einer Anwendung bestimmt werden, in der Sie mehrere Tage angeben können. Diese Enumeration sollte den <xref:System.FlagsAttribute> aufweisen und als "Days" bezeichnet werden. Eine ähnliche Enumeration, die zulässt, dass nur ein einzelner Tag angegeben wird, verfügt nicht über das-Attribut und könnte als "Day" bezeichnet werden.
 
 Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Geben Sie den Namen der Enumeration als Plural Wort ein, oder entfernen <xref:System.FlagsAttribute> Sie das Attribut, wenn mehrere Enumerationswerte nicht gleichzeitig angegeben werden sollen.
+Geben Sie den Namen der Enumeration als Plural Wort ein, oder entfernen Sie das <xref:System.FlagsAttribute>-Attribut, wenn mehrere Enumerationswerte nicht gleichzeitig angegeben werden sollen.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
@@ -62,8 +62,8 @@ Sie können diese Option nur für diese Regel, für alle Regeln oder für alle R
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1027: Markierungen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217: Auffüge Zeichen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Siehe auch
 

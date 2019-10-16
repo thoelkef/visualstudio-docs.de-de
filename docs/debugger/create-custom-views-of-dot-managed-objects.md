@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierter Ansichten von Objekten | Microsoft-Dokumentation
+title: Erstellen benutzerdefinierter Ansichten von verwalteten Objekten | Microsoft-Dokumentation
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 4649ac11daa062089d2916a5d5d0a331e4d74272
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814298"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349459"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>Erstellen benutzerdefinierter Ansichten von ObjektenC#(Visual Basic, F#, C++/CLI)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Erstellen benutzerdefinierter Ansichten von verwalteten ObjektenC#(Visual Basic, F#, C++/CLI)
 Sie können die Art anpassen, wie Datentypen von Visual Studio in Debuggervariablenfenstern angezeigt werden.
 
 ## <a name="attributes"></a>Attribute
@@ -41,7 +41,7 @@ In .NET Framework 2,0-Code unterstützt Visual Basic das DebuggerBrowsable-Attri
 
 ## <a name="visualizers"></a>Schnellansichten
 
-Sie können eine Schnellansicht schreiben, um einen beliebigen verwalteten Datentyp anzuzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data).
+Sie können eine Schnellansicht schreiben, um einen beliebigen verwalteten Datentyp anzuzeigen. Weitere Informationen finden Sie unter [Gewusst wie: Schreiben einer](/visualstudio/debugger/create-custom-visualizers-of-data)Schnellansicht.
 
 > [!NOTE]
 > Für C++ Code können Sie mit dem natvis-Framework benutzerdefinierte Datentyp Erweiterungen hinzufügen, wie in [Erstellen benutzerdefinierter C++ Ansichten von Objekten im Debugger](/visualstudio/debugger/create-custom-views-of-native-objects)beschrieben.

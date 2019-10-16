@@ -1,5 +1,5 @@
 ---
-title: 'CA1062: Argumente von öffentlichen Methoden validieren.'
+title: 'CA1062: Argumente von öffentlichen Methoden validieren'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,35 +17,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 43aa94f67e17a3de51635840419e36ef38db41df
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235340"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381017"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Argumente von öffentlichen Methoden validieren.
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Argumente von öffentlichen Methoden validieren
 
 |||
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
 
-Eine extern sichtbare Methode dereferenziert eines der zugehörigen Verweis Argumente, ohne zu überprüfen, `null` ob`Nothing` dieses Argument (in Visual Basic) ist.
+Eine extern sichtbare Methode dereferenziert eines der zugehörigen Verweis Argumente, ohne zu überprüfen, ob dieses Argument `null` (`Nothing` in Visual Basic) ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Alle Verweis Argumente, die an extern sichtbare Methoden übermittelt werden, sollten `null`gegen überprüft werden. Lösen Sie ggf. <xref:System.ArgumentNullException> eine aus, wenn `null`das-Argument ist.
+Alle Verweis Argumente, die an extern sichtbare Methoden übermittelt werden, sollten auf `null` überprüft werden. Lösen Sie ggf. eine <xref:System.ArgumentNullException> aus, wenn das Argument `null` ist.
 
-Wenn eine Methode von einer unbekannten Assembly aufgerufen werden kann, da Sie als öffentlich oder geschützt deklariert ist, sollten Sie alle Parameter der Methode überprüfen. Wenn die-Methode nur von bekannten Assemblys aufgerufen werden soll, sollten Sie die-Methode intern machen und <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> das-Attribut auf die Assembly anwenden, die die-Methode enthält.
+Wenn eine Methode von einer unbekannten Assembly aufgerufen werden kann, da Sie als öffentlich oder geschützt deklariert ist, sollten Sie alle Parameter der Methode überprüfen. Wenn die-Methode nur von bekannten Assemblys aufgerufen werden soll, sollten Sie die-Methode intern machen und das <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>-Attribut auf die Assembly anwenden, die die-Methode enthält.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen `null`diese Regel zu beheben, überprüfen Sie jedes Verweis Argument auf.
+Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie jedes Verweis Argument auf `null`.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
 
@@ -76,7 +76,7 @@ namespace DesignLibrary
         {
             if (input == null)
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
             if (input.Length != 0)
             {
@@ -107,7 +107,7 @@ Namespace DesignLibrary
         Sub Validate(ByVal input As String)
 
             If input Is Nothing Then
-                Throw New ArgumentNullException("input")
+                Throw New ArgumentNullException(NameOf(input))
             End If
 
             If input.Length <> 0 Then
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>Beispiel
 
-Kopierkonstruktoren, die Felder oder Eigenschaften auffüllen, die Verweis Objekte sind, können auch gegen die CA1062-Regel verstoßen. Die Verletzung tritt auf, weil das kopierte Objekt, das an den Kopierkonstruktor`Nothing` übergeben wird, möglicherweise `null` (in Visual Basic) ist. Um die Verletzung aufzulösen, verwenden Sie eine statische Methode (Shared in Visual Basic), um zu überprüfen, ob das kopierte Objekt nicht NULL ist.
+Kopierkonstruktoren, die Felder oder Eigenschaften auffüllen, die Verweis Objekte sind, können auch gegen die CA1062-Regel verstoßen. Die Verletzung tritt auf, weil das kopierte Objekt, das an den Kopierkonstruktor übergeben wird, `null` (`Nothing` in Visual Basic) sein kann. Um die Verletzung aufzulösen, verwenden Sie eine statische Methode (Shared in Visual Basic), um zu überprüfen, ob das kopierte Objekt nicht NULL ist.
 
-Im folgenden `Person` Klassen Beispiel kann das `other` -Objekt, das an den `Person` Kopierkonstruktor übergeben wird `null`, sein.
+Im folgenden `Person`-Klassen Beispiel kann das `other`-Objekt, das an den `Person`-Kopierkonstruktor übergeben wird, `null` sein.
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden überarbeiteten `Person` Beispiel wird das `other` an den Kopierkonstruktor übergebene-Objekt zuerst auf NULL in der `PassThroughNonNull` -Methode überprüft.
+Im folgenden überarbeiteten `Person`-Beispiel wird das `other`-Objekt, das an den Kopierkonstruktor übergeben wird, zuerst auf NULL in der `PassThroughNonNull`-Methode überprüft.
 
 ```csharp
 public class Person
@@ -175,7 +175,7 @@ public class Person
     private static Person PassThroughNonNull(Person person)
     {
         if (person == null)
-            throw new ArgumentNullException("person");
+            throw new ArgumentNullException(nameof(person));
         return person;
     }
 }
