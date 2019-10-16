@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118739"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314117"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente
 
@@ -62,8 +62,7 @@ Im fünften Teil dieses Tutorials fügen Sie <xref:System.Windows.Forms.Control.
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     > [!IMPORTANT]
-     > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Dieser Code sieht komplex aus, aber Sie können ihn verstehen, wenn Sie ihn schrittweise überprüfen. Schauen Sie sich zuerst den Beginn der Methode an: `object sender` in C# oder `sender As System.Object` in Visual Basic. Dieser Parameter verweist auf das Objekt, dessen Ereignis ausgelöst wird, das als Absender bezeichnet wird. In diesem Fall ist das Absenderobjekt das NumericUpDown-Steuerelement. Geben Sie in der ersten Zeile der Methode an, dass der Absender nicht nur ein beliebiges generisches Objekt ist, sondern speziell ein NumericUpDown-Steuerelement. (Jedes NumericUpDown-Steuerelement ist ein Objekt, aber nicht jedes Objekt ist ein NumericUpDown-Steuerelement.) Das NumericUpDown-Steuerelement heißt in dieser Methode **answerBox**, da es für alle NumericUpDown-Steuerelemente im Formular verwendet wird und nicht nur für das NumericUpDown-Summensteuerelement. Da Sie die Variable "answerBox" in dieser Methode deklarieren, gilt der Bereich nur für diese Methode. Das bedeutet, dass die Variable nur innerhalb dieser Methode verwendet werden kann.
 

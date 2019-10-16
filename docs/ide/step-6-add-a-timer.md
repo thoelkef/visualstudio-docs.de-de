@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5958c089998d35dea4324c59f85c368adf900c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118994"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289638"
 ---
 # <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen von Timern
 Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.
@@ -27,8 +27,8 @@ Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuere
 
 1. Wählen Sie **Timer** in der Toolbox des **Windows Forms-Designers** (in der Kategorie **Komponenten**) aus, und drücken Sie anschließend die **EINGABETASTE**, oder doppelklicken Sie auf den Timer, um dem Formular ein Timer-Steuerelement hinzuzufügen. Das Symbol des Timers mit dem Namen **Timer1** wird in einem Bereich unterhalb des Formulars angezeigt, wie in der folgenden Abbildung dargestellt.
 
-     ![Timer](../ide/media/express_timer.png)
-**Timer**
+     ![Zeitgeber](../ide/media/express_timer.png)<br/>
+**Zeitgeber**
 
     > [!NOTE]
     > Wenn die Toolbox leer ist, haben Sie zuvor möglicherweise nicht den Formular-Designer aktiviert, sondern den Code für das Formular.
@@ -39,6 +39,9 @@ Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuere
 
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+
+      > [!IMPORTANT]
+      > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Der Tick-Ereignishandler bewirkt drei Dinge: Zuerst beendet er den Zeitgeber, indem er die <xref:System.Windows.Forms.Timer.Stop>-Methode aufruft. Anschließend verwendet er die beiden Verweisvariablen `firstClicked` und `secondClicked`, um die Symbole für die zwei Bezeichnungsfelder, die der Spieler gewählt hat, wieder unsichtbar zu machen. Zuletzt setzt er die Verweisvariablen `firstClicked` und `secondClicked` in Visual C# auf `null` und in Visual Basic auf `Nothing` zurück. Dieser Schritt ist wichtig, weil sich das Programm auf diese Weise selbst zurücksetzt. In diesem Zustand werden keine <xref:System.Windows.Forms.Label>-Steuerelemente überwacht, und das Programm ist wieder für eine Auswahl des Spielers bereit.
 

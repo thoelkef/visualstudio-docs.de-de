@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 197a52894a8c0ed3c2c38b9036a521a558c1005d
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118780"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314103"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Schritt 3: Hinzufügen eines Countdowntimers
 
@@ -36,8 +36,7 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
-   > [!IMPORTANT]
-   > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Jetzt benötigen Sie eine Methode, die die Sekunden zählt, z. B. einen Timer, der nach Ablauf der angegebenen Zeit ein Ereignis auslöst.
 
