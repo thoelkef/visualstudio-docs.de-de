@@ -170,8 +170,8 @@
   items:
     - name: Entwicklung
       items:
-        - name: 'Index: Verwenden der IDE zum Schreiben von Code'
-          href: ide/index-writing-code.md
+        - name: Erste Schritte
+          href: ide/index-writing-code.yml
         - name: Navigieren in der IDE
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: Projektmappen und Projekte
@@ -250,7 +250,7 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Entwickeln ohne Projekte oder Projektmappen
           items:
-            - name: 'Gewusst wie: Entwickeln ohne ein Projekt'
+            - name: 'Vorgehensweise: Entwickeln ohne ein Projekt'
               displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Anpassen von Build- und Debugtasks
