@@ -44,8 +44,6 @@
       items:
         - name: Verwenden von Haltepunkten
           href: using-breakpoints.md
-        - name: Verwenden von Ablaufverfolgungspunkten
-          href: using-tracepoints.md
         - name: Problembehandlung von Haltepunkten
           href: troubleshooting-breakpoints.md
     - name: Datenüberprüfung
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'Bearbeiten und Fortfahren wird für F# nicht unterstützt'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: In Ausgabefenster protokollieren
+      href: using-tracepoints.md
     - name: Anzeigen der Debuggerdaten
       items:
         - name: Module
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Benutzerdefinierte Ansichten (verwaltet)
               items:
-                - name: Erstellen benutzerdefinierter Ansichten von Objekten
+                - name: Erstellen benutzerdefinierter Ansichten von verwalteten Objekten
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 'Den Debugger anweisen, was er anzeigen soll'
                   href: using-the-debuggerdisplay-attribute.md
