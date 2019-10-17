@@ -1,5 +1,5 @@
 - name: Dokumentation zur Codeanalyse
-  href: index.md
+  href: index.yml
 - name: Analysieren von verwaltetem Code
   items:
     - name: Übersicht
@@ -203,9 +203,9 @@
                   displayName: cryptography warnings
                   href: cryptography-warnings.md
                 - name: 'CA5350: Keine schwachen Kryptografiealgorithmen verwenden.'
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                  href: ca5350.md
                 - name: CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                  href: ca5351.md
             - name: Entwurfswarnungen
               items:
                 - name: Übersicht
@@ -370,7 +370,7 @@
                 - name: 'CA1309: Ordinal-StringComparison verwenden.'
                   href: ca1309-use-ordinal-stringcomparison.md
                 - name: 'CA2101: Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.'
-                  href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
+                  href: ca2101.md
             - name: Interoperabilitätswarnungen
               items:
                 - name: Übersicht
