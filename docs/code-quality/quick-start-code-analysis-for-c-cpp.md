@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163020"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445635"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
 
@@ -28,7 +28,7 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
 
 2. Wählen Sie optional in den Listen **Konfiguration** und **Plattform** die Buildkonfiguration und die Zielplattform aus.
 
-3. Codeanalyse ausführen jedes Mal, wenn das Projekt mit der ausgewählten Konfiguration erstellt wird, wählen die **Codeanalyse für Build aktivieren** Kontrollkästchen. Sie können die Code Analyse auch manuell ausführen, indem Sie das Menü **analysieren** öffnen und dann **Code Analyse für** *ProjectName* ausführen oder **Code Analyse für Datei ausführen**auswählen.
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, aktivieren Sie das Kontrollkästchen **Code Analyse bei Build aktivieren** . Sie können die Code Analyse auch manuell ausführen, indem Sie das Menü **analysieren** öffnen und dann **Code Analyse für** *ProjectName* ausführen oder **Code Analyse für Datei ausführen**auswählen.
 
 4. Wählen Sie den [Regelsatz](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) aus, den Sie verwenden möchten, oder erstellen Sie einen [benutzerdefinierten Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md). Wenn Sie llvm/clang-cl verwenden, finden Sie weitere Informationen unter [Verwenden von clang-tidy in Visual Studio](../code-quality/clang-tidy.md) , um clang-saubere Analyseoptionen zu konfigurieren.
 
@@ -83,7 +83,7 @@ So unterdrücken Sie eine Warnung
 
 3. Wählen Sie **Meldung unterdrücken** und dann **in Quelle aus**.
 
-   Wenn Sie eine Meldung unterdrücken, wird `#pragma warning (disable:[warning ID])` eingefügt, die die Warnung für die Codezeile unterdrückt.
+   Wenn Sie eine Meldung unterdrücken, werden `#pragma warning (disable:[warning ID])` eingefügt, die die Warnung für die Codezeile unterdrückt.
 
 ## <a name="create-work-items-for-code-analysis-warnings"></a>Erstellen von Arbeitsaufgaben für Code Analyse Warnungen
 

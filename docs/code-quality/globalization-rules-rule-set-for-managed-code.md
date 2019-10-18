@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
-ms.translationtype: MT
+ms.openlocfilehash: 905f3323f4ede33ba8a7e1547bed7a81c43be96d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69584980"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449032"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Regelsatz für Globalisierungsregeln für verwalteten Code
 
@@ -31,4 +31,4 @@ Verwenden Sie den Regelsatz Microsoft-Globalisierungsregeln, um sich auf Problem
 |[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|StringComparison angeben.|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Zeichenfolgen in Großbuchstaben normalisieren.|
 |[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Ordinal-StringComparison verwenden.|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.|
+|[CA2101](../code-quality/ca2101.md)|Marshalling für P/Invoke-Zeichenfolgenargumente festlegen.|

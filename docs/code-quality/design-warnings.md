@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b4440a922c1971f02937f6da007da6aa96864
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 5229084f34a8c2a674d327ad86f7f3d2bbb1aae5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349653"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449186"
 ---
 # <a name="design-warnings"></a>Entwurfswarnungen
 
@@ -84,7 +84,7 @@ Entwurfs Warnungen unterstützen die Einhaltung der [.net-Entwurfs Richtlinien](
 | [CA1057: URI-Überladungen vom Typ string rufen Überladungen vom Typ System.Uri auf](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md) | Ein Typ deklariert Methodenüberladungen, die sich nur durch die Ersetzung eines Zeichenfolgenparameters mit einem System.Uri-Parameter unterscheiden. Die Überladung, die den Zeichenfolgenparameter akzeptiert, ruft nicht die Überladung auf, die den URI-Parameter akzeptiert. |
 | [CA1058: Typen sollten bestimmte Basistypen nicht erweitern](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Verwenden Sie eine der Alternativen. |
 | [CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | Ein konkreter Typ ist ein Typ, der eine vollständige Implementierung aufweist und deshalb instanziiert werden kann. Damit der Member universell verwendet werden kann, ersetzen Sie den konkreten Typ durch die vorgeschlagene Schnittstelle. |
-| [CA1060: P-Invokes in NativeMethods-Klasse verschieben](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | Platt Form Aufruf Methoden, z. b. mit den <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>-oder-Methoden, die mit dem Declare-Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] definiert wurden, greifen auf nicht verwalteten Code zu. Diese Methoden sollten der Klasse NativeMethods, SafeNativeMethods oder UnsafeNativeMethods angehören. |
+| [CA1060: P-Invokes in NativeMethods-Klasse verschieben](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | Platt Form Aufruf Methoden, wie z. b. diejenigen, <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> die mit dem Declare-Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] gekennzeichnet sind, greifen auf nicht verwalteten Code zu. Diese Methoden sollten der Klasse NativeMethods, SafeNativeMethods oder UnsafeNativeMethods angehören. |
 | [CA1061: Basisklassenmethoden nicht ausblenden](../code-quality/ca1061-do-not-hide-base-class-methods.md) | Eine Methode in einem Basistyp wird durch eine Methode mit identischem Namen in einem abgeleiteten Typ verdeckt, wenn die Parametersignatur der abgeleiteten Methode sich nur hinsichtlich der Typen unterscheidet, die schwächer abgeleitet sind als die entsprechenden Typen in der Parametersignatur der Basismethode. |
 | [CA1062: Argumente von öffentlichen Methoden validieren](../code-quality/ca1062-validate-arguments-of-public-methods.md) | Alle an extern sichtbare Methoden übergebenen Verweisargumente sollten auf NULL überprüft werden. |
 | [CA1063: IDisposable korrekt implementieren](../code-quality/ca1063-implement-idisposable-correctly.md) | Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren. |

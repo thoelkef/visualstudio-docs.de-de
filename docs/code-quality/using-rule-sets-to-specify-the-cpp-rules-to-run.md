@@ -9,18 +9,18 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163099"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445608"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum angeben C++ der Regeln, die ausgeführt werden sollen
 
 In Visual Studio können Sie einen benutzerdefinierten *Regelsatz* erstellen und ändern, um bestimmte Projektanforderungen zu erfüllen, die mit der Code Analyse verknüpft sind. Die Standardregel Sätze werden in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` gespeichert.
 
-**Visual Studio 2017, Version 15.7 und höher**: Sie können benutzerdefinierte Regelsätze mit einem beliebigen Text-Editor erstellen und diese in Befehlszeilenbuilds anwenden, unabhängig davon, welches Buildsystem Sie verwenden. Weitere Informationen finden Sie unter [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 Version 15,7 und höher:** Sie können benutzerdefinierte Regelsätze mit einem beliebigen Text-Editor erstellen und diese in Befehlszeilenbuilds anwenden, unabhängig davon, welches Buildsystem Sie verwenden. Weitere Informationen finden Sie unter [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
 Um einen benutzerdefinierten C++ Regelsatz in Visual Studio zu erstellen, mussC++ ein C/-Projekt in der Visual Studio-IDE geöffnet sein. Öffnen Sie dann einen Standardregel Satz im Regelsatz-Editor, und fügen Sie bestimmte Regeln hinzu bzw. entfernen Sie Sie, und ändern Sie optional die Aktion, die auftritt, wenn die Code Analyse festlegt, dass eine Regel verletzt wurde.
 
@@ -36,9 +36,9 @@ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen u
 
    - Wählen Sie den Regelsatz aus, den Sie anpassen möchten.
 
-     \- oder –
+     \- oder -
 
-   - Wählen Sie **\<browse... >** , um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
+   - **@No__t_1Browse auswählen... >** , um einen vorhandenen Regelsatz anzugeben, der nicht in der Liste enthalten ist.
 
 4. Wählen Sie **Öffnen** aus, um die Regeln im Regelsatz-Editor anzuzeigen.
 
@@ -66,7 +66,7 @@ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen u
 
 - Um die Regeln in allen Gruppen zu reduzieren, wählen Sie **alle**reduzieren aus.
 
-- Wenn Sie das Feld ändern möchten, nach dem Regeln gruppiert werden, wählen Sie das Feld aus der Liste **Gruppieren nach** aus. Wählen Sie **\<none >** aus, um die Regeln nicht gruppiert anzuzeigen.
+- Wenn Sie das Feld ändern möchten, nach dem Regeln gruppiert werden, wählen Sie das Feld aus der Liste **Gruppieren nach** aus. Wählen Sie **\<None >** aus, um die Regeln nicht gruppiert anzuzeigen.
 
 - Wählen Sie **Spaltenoptionen**aus, um Felder in Regel Spalten hinzuzufügen oder zu entfernen.
 
@@ -82,7 +82,7 @@ Zum Erstellen eines neuen benutzerdefinierten Regelsatzes speichern Sie diesen u
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>So erstellen Sie einen Regelsatz in einem Text-Editor
 
-Sie können einen benutzerdefinierten Regelsatz in einem Text-Editor erstellen, ihn an einem beliebigen Speicherort mit der Erweiterung "`.ruleset`" Speichern und mit der Compileroption " [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis) " anwenden.
+Sie können einen benutzerdefinierten Regelsatz in einem Text-Editor erstellen, ihn an einem beliebigen Speicherort mit einer `.ruleset`-Erweiterung speichern und mit der [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis) -Compileroption anwenden.
 
 Das folgende Beispiel zeigt eine grundlegende Regel Satz Datei, die Sie als Ausgangspunkt verwenden können:
 

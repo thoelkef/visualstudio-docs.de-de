@@ -7,19 +7,19 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5e07f1e9ce83f36e6ecfbae148c84d18f40ff1
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015957"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448641"
 ---
 # <a name="best-practices-and-examples-sal"></a>Empfohlene Vorgehensweisen und Beispiele (SAL)
 Im folgenden finden Sie einige Möglichkeiten, die Quell Code Anmerkung (Source Code Annotation Language, SAL) optimal zu nutzen und einige häufige Probleme zu vermeiden.
 
 ## <a name="_in_"></a>\_In\_
 
-Wenn die Funktion in das-Element schreiben soll, verwenden Sie `_Inout_` anstelle von `_In_`. Dies ist insbesondere bei der automatisierten Konvertierung von älteren Makros in SAL von Bedeutung. Vor SAL verwendeten viele Programmierer Makros als Kommentare – Makros, die mit `IN`, `OUT`, `IN_OUT` oder Varianten dieser Namen benannt wurden. Es wird empfohlen, dass Sie diese Makros in SAL konvertieren, aber wir sollten auch darauf achten, dass Sie bei der Konvertierung sorgfältig vorgehen, da der Code möglicherweise geändert wurde, seit der ursprüngliche Prototyp geschrieben wurde, und das alte Makro nicht mehr die Funktionsweise des Codes widerspiegelt. Achten Sie besonders auf das `OPTIONAL`-Kommentar Makro, weil es häufig falsch platziert wird – z. b. auf der falschen Seite eines Kommas.
+Wenn die Funktion in das-Element schreiben soll, verwenden Sie `_Inout_` anstelle von `_In_`. Dies ist insbesondere bei der automatisierten Konvertierung von älteren Makros in SAL von Bedeutung. Vor SAL haben viele Programmierer Makros als Kommentare verwendet – Makros, die `IN`, `OUT`, `IN_OUT` oder Varianten dieser Namen benannt wurden. Es wird empfohlen, dass Sie diese Makros in SAL konvertieren, aber wir sollten auch darauf achten, dass Sie bei der Konvertierung sorgfältig vorgehen, da der Code möglicherweise geändert wurde, seit der ursprüngliche Prototyp geschrieben wurde, und das alte Makro nicht mehr die Funktionsweise des Codes widerspiegelt. Achten Sie besonders auf das `OPTIONAL` Comment-Makro, weil es häufig falsch platziert wird – z. b. auf der falschen Seite eines Kommas.
 
 ```cpp
 
@@ -61,11 +61,11 @@ void Func2(_Out_ int *p1)
 }
 ```
 
-## <a name="_pre_defensive_-and-_post_defensive_"></a>\_pre @ no__t-1defensive @ no__t-2 und \_post @ no__t-4defensive @ no__t-5
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_Pre \_defensive \_ und \_Post \_defensive \_
 
-Wenn eine Funktion an einer Vertrauens Grenze angezeigt wird, empfiehlt es sich, die Anmerkung "`_Pre_defensive_`" zu verwenden.  Durch den "defensive"-Modifizierer werden bestimmte Anmerkungen geändert, um anzugeben, dass die Schnittstelle zum Zeitpunkt des Aufrufes strikt geprüft werden soll. im Implementierungs Text sollte jedoch davon ausgegangen werden, dass falsche Parameter passieren können. In diesem Fall wird `_In_ _Pre_defensive_` an einer Vertrauensstellungs Grenze bevorzugt, um anzugeben, dass ein Aufrufer zwar einen Fehler erhält, wenn er versucht, NULL zu übergeben, der Funktions Rumpf jedoch analysiert wird, als ob der Parameter NULL sein kann, und alle Versuche, auf den Zeiger ohne erstes zu verweisen. die Überprüfung auf NULL wird gekennzeichnet.  Eine `_Post_defensive_`-Anmerkung ist auch zur Verwendung in Rückrufe verfügbar, bei denen die vertrauenswürdige Partei als Aufrufer angenommen wird und der nicht vertrauenswürdige Code der aufgerufene Code ist.
+Wenn eine Funktion an einer Vertrauens Grenze angezeigt wird, empfiehlt es sich, die `_Pre_defensive_` Anmerkung zu verwenden.  Durch den "defensive"-Modifizierer werden bestimmte Anmerkungen geändert, um anzugeben, dass die Schnittstelle zum Zeitpunkt des Aufrufes strikt geprüft werden soll. im Implementierungs Text sollte jedoch davon ausgegangen werden, dass falsche Parameter passieren können. In diesem Fall wird `_In_ _Pre_defensive_` an einer Vertrauensstellungs Grenze bevorzugt, um anzugeben, dass ein Aufrufer zwar einen Fehler erhält, wenn er versucht, NULL zu übergeben, der Funktions Rumpf jedoch analysiert wird, als ob der Parameter NULL sein kann, und alle Versuche, auf den Zeiger ohne erstes checki zu verweisen. ng für NULL wird gekennzeichnet.  Eine `_Post_defensive_` Anmerkung ist auch zur Verwendung in Rückrufe verfügbar, bei denen die vertrauenswürdige Partei als Aufrufer angenommen wird und der nicht vertrauenswürdige Code der aufgerufene Code ist.
 
-## <a name="_out_writes_"></a>\_out @ no__t-1schreib Vorgänge @ no__t-2
+## <a name="_out_writes_"></a>\_Out \_writes \_
 
 Das folgende Beispiel veranschaulicht einen allgemeinen Missbrauch von `_Out_writes_`.
 
@@ -77,7 +77,7 @@ void Func1(_Out_writes_(size) CHAR *pb,
 );
 ```
 
-Die Anmerkung `_Out_writes_` bedeutet, dass Sie über einen Puffer verfügen. Es wurden `cb` Bytes zugeordnet, wobei das erste Byte beim Beenden initialisiert wird. Diese Anmerkung ist nicht streng falsch, und es ist hilfreich, die zugeordnete Größe auszudrücken. Sie gibt jedoch nicht an, wie viele Elemente von der Funktion initialisiert werden.
+Die Anmerkung `_Out_writes_` gibt an, dass ein Puffer vorhanden ist. @No__t_0 zugeordneten Bytes, wobei das erste Byte beim Beenden initialisiert wird. Diese Anmerkung ist nicht streng falsch, und es ist hilfreich, die zugeordnete Größe auszudrücken. Sie gibt jedoch nicht an, wie viele Elemente von der Funktion initialisiert werden.
 
 Das nächste Beispiel zeigt drei richtige Möglichkeiten, um die genaue Größe des initialisierten Teils des Puffers vollständig anzugeben.
 
@@ -98,7 +98,7 @@ void Func3(_Out_writes_(size) PSTR pb,
 );
 ```
 
-## <a name="_out_-pstr"></a>\_out @ no__t-1 Pstr
+## <a name="_out_-pstr"></a>\_Out \_ Pstr
 
 Die Verwendung von `_Out_ PSTR` ist fast immer falsch. Dies wird als vorhanden sein eines Output-Parameters interpretiert, der auf einen Zeichen Puffer zeigt und NULL-terminiert ist.
 
@@ -113,9 +113,9 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
 
 Eine Anmerkung wie `_In_ PCSTR` ist häufig und hilfreich. Er verweist auf eine Eingabe Zeichenfolge, die NULL-Beendigung hat, da die Vorbedingung von `_In_` das Erkennen einer null-terminierten Zeichenfolge zulässt.
 
-## <a name="_in_-wchar-p"></a>\_in @ no__t-1 WCHAR * p
+## <a name="_in_-wchar-p"></a>\_In \_ WCHAR * p
 
-`_In_ WCHAR* p` besagt, dass es einen Eingabe Zeiger `p` gibt, der auf ein Zeichen zeigt. In den meisten Fällen ist dies jedoch wahrscheinlich nicht die Spezifikation, die vorgesehen ist. Stattdessen ist die Angabe eines null-terminierten Arrays wahrscheinlich beabsichtigt. Verwenden Sie dazu `_In_ PWSTR`.
+`_In_ WCHAR* p` gibt an, dass ein Eingabe Zeiger `p` vorhanden ist, der auf ein Zeichen zeigt. In den meisten Fällen ist dies jedoch wahrscheinlich nicht die Spezifikation, die vorgesehen ist. Stattdessen ist die Angabe eines null-terminierten Arrays wahrscheinlich beabsichtigt. Verwenden Sie dazu `_In_ PWSTR`.
 
 ```cpp
 
@@ -126,7 +126,7 @@ void Func1(_In_ WCHAR* wszFileName);
 void Func2(_In_ PWSTR wszFileName);
 ```
 
-Die richtige Angabe der NULL-Beendigung fehlt häufig. Verwenden Sie die entsprechende `STR`-Version, um den Typ zu ersetzen, wie im folgenden Beispiel gezeigt.
+Die richtige Angabe der NULL-Beendigung fehlt häufig. Verwenden Sie die entsprechende `STR` Version, um den Typ zu ersetzen, wie im folgenden Beispiel gezeigt.
 
 ```cpp
 
@@ -143,9 +143,9 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 }
 ```
 
-## <a name="_out_range_"></a>\_out @ no__t-1range @ no__t-2
+## <a name="_out_range_"></a>\_Out \_range \_
 
-Wenn der-Parameter ein-Zeiger ist und Sie den Bereich des Werts des Elements, auf das der-Zeiger zeigt, ausdrücken möchten, verwenden Sie `_Deref_out_range_` anstelle von `_Out_range_`. Im folgenden Beispiel wird der Bereich von * pcbfill ausgedrückt, nicht pcbfill.
+Wenn der-Parameter ein-Zeiger ist und Sie den Bereich des Werts des Elements, auf das der Zeiger verweist, ausdrücken möchten, verwenden Sie `_Deref_out_range_` anstelle von `_Out_range_`. Im folgenden Beispiel wird der Bereich von * pcbfill ausgedrückt, nicht pcbfill.
 
 ```cpp
 
@@ -166,7 +166,7 @@ void Func2(
 
 `_Deref_out_range_(0, cbSize)` ist für einige Tools nicht unbedingt erforderlich, da Sie von `_Out_writes_to_(cbSize,*pcbFilled)` abgeleitet werden kann, Sie wird jedoch aus Gründen der Vollständigkeit hier angezeigt.
 
-## <a name="wrong-context-in-_when_"></a>Falscher Kontext in \_when @ no__t-1
+## <a name="wrong-context-in-_when_"></a>Falscher Kontext in \_When \_
 
 Ein weiterer häufiger Fehler ist die Verwendung der Post-State-Auswertung für Vorbedingungen. Im folgenden Beispiel ist `_Requires_lock_held_` eine Vorbedingung.
 
@@ -181,11 +181,11 @@ _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
 ```
 
-Der Ausdruck `result` verweist auf einen Wert nach dem Status, der im Zustand vor dem Zustand nicht verfügbar ist.
+Der Ausdruck `result` verweist auf einen Wert nach dem Zustand, der im Zustand vor dem Zustand nicht verfügbar ist.
 
-## <a name="true-in-_success_"></a>TRUE in \_success @ no__t-1
+## <a name="true-in-_success_"></a>TRUE in \_Success \_
 
-Wenn die Funktion erfolgreich ist, wenn der Rückgabewert ungleich 0 (null) ist, verwenden Sie `return != 0` als Erfolgs Bedingung anstelle von `return == TRUE`. Ungleich NULL bedeutet nicht notwendigerweise, dass die Äquivalenz zum tatsächlichen Wert, den der Compiler für `TRUE` bereitstellt. Der Parameter für `_Success_` ist ein Ausdruck, und die folgenden Ausdrücke werden als Äquivalent ausgewertet: `return != 0`, `return != false`, `return != FALSE` und `return` ohne Parameter oder Vergleiche.
+Wenn die Funktion erfolgreich ist, wenn der Rückgabewert ungleich 0 (null) ist, verwenden Sie `return != 0` als Erfolgs Bedingung anstelle von `return == TRUE`. Ungleich NULL bedeutet nicht notwendigerweise, dass die Äquivalenz zum tatsächlichen Wert, den der Compiler für `TRUE` bereitstellt. Der zu `_Success_` Ende Parameter ist ein Ausdruck, und die folgenden Ausdrücke werden als Äquivalent ausgewertet: `return != 0`, `return != false`, `return != FALSE` und `return` ohne Parameter oder Vergleiche.
 
 ```cpp
 
@@ -204,7 +204,7 @@ BOOL WINAPI TryEnterCriticalSection(
 
 ## <a name="reference-variable"></a>Verweis Variable
 
-Bei einer Verweis Variablen wurde in der vorherigen Version von Sal der implizite Zeiger als Anmerkung verwendet, und das Hinzufügen einer `__deref` zu Anmerkungen, die an eine Verweis Variable angefügt wurden, ist erforderlich. Diese Version verwendet das-Objekt selbst und erfordert nicht die zusätzliche `_Deref_`.
+Bei einer Verweis Variablen wurde in der vorherigen Version von Sal der implizite Zeiger als Anmerkung verwendet, und das Hinzufügen einer `__deref` zu Anmerkungen, die an eine Verweis Variable angefügt wurden, ist erforderlich. Diese Version verwendet das-Objekt selbst und erfordert nicht die zusätzlichen `_Deref_`.
 
 ```cpp
 
@@ -234,7 +234,7 @@ _Out_opt_ void *MightReturnNullPtr1();
 _Ret_maybenull_ void *MightReturnNullPtr2();
 ```
 
-In diesem Beispiel besagt `_Out_opt_`, dass der Zeiger im Rahmen der Vorbedingung Null sein kann. Vorbedingungen können jedoch nicht auf den Rückgabewert angewendet werden. In diesem Fall ist die korrekte Anmerkung `_Ret_maybenull_`.
+In diesem Beispiel gibt `_Out_opt_` an, dass der Zeiger im Rahmen der Vorbedingung Null sein kann. Vorbedingungen können jedoch nicht auf den Rückgabewert angewendet werden. In diesem Fall wird die korrekte Anmerkung `_Ret_maybenull_`.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -245,4 +245,4 @@ In diesem Beispiel besagt `_Out_opt_`, dass der Zeiger im Rahmen der Vorbedingun
 [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)  
 [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)  
 [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-[Systeminterne Funktionen](../code-quality/intrinsic-functions.md)  
+[Systeminterne Funktionen](../code-quality/intrinsic-functions.md)

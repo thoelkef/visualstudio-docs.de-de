@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d9ca8c8bd46b4f8455c7aa750170d38f03321f6
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349679"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449064"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Optionen für den Regelbereich für FxCop-Analysen
 
@@ -21,9 +21,9 @@ Mit einigen FxCop-Analyse Regeln können Sie verfeinern, auf welche Teile Ihrer 
 Diese Konfigurationsoptionen sind ab Version 2.6.3 des nuget-Pakets [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) verfügbar.
 
 > [!TIP]
-> Die vollständige Liste der Optionen, die für eine bestimmte Version des Pakets "fxcopanalyzers" verfügbar sind, finden Sie in der *Analyse Configuration.MD* -Datei im *Dokumentations* Ordner für das Paket. Die Datei befindet sich unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\documentation\Analyzer Configuration.MD*. Diese Konfigurations Dokumentations Datei ist in jeder Version des Pakets enthalten, beginnend mit Version 2.6.5. Im folgenden finden Sie ein Beispiel dafür, wie eine Option in der Datei *Analyzer Configuration.MD* dokumentiert wird:
+> Die vollständige Liste der Optionen, die für eine bestimmte Version des Pakets "fxcopanalyzers" verfügbar sind, finden Sie in der *Analyse Configuration.MD* -Datei im *Dokumentations* Ordner für das Paket. Die Datei befindet sich unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \documentation\analyzer Configuration.MD*. Diese Konfigurations Dokumentations Datei ist in jeder Version des Pakets enthalten, beginnend mit Version 2.6.5. Im folgenden finden Sie ein Beispiel dafür, wie eine Option in der Datei *Analyzer Configuration.MD* dokumentiert wird:
 >
-> Options Name: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> Options Name: `sufficient_IterationCount_for_weak_KDF_algorithm` \
 > Optionswerte: ganzzahlige Werte \
 > Standardwert: spezifisch für jede konfigurierbare Regel (standardmäßig "100000" für die meisten Regeln) \
 > Ein Beispiel: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`

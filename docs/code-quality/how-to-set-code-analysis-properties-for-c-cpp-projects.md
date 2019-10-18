@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte'
+title: 'Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448915"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
 
 Sie können konfigurieren, welche Regeln das Code Analysetool verwendet, um den Code in jeder Konfiguration des Projekts zu analysieren. Außerdem können Sie die Code Analyse weiterleiten, um Warnungen aus dem Code zu unterdrücken, der von einem Drittanbieter Tool generiert und Ihrem Projekt hinzugefügt wurde.
 
@@ -45,7 +45,7 @@ Die Code Analyse soll Sie dabei unterstützen, die Qualität Ihres Codes zu verb
 
 ## <a name="cmake-configuration"></a>Cmake-Konfiguration
 
-Ändern Sie in cmake-Projekten den Wert der Schlüssel `enableMicrosoftCodeAnalysis` und `enableClangTidyCodeAnalysis` in `CMakeSettings.json`, um die Code Analyse zu aktivieren oder zu deaktivieren. Weitere Informationen finden [Sie unter Verwenden von clang-tidy in Visual Studio](../code-quality/clang-tidy.md) .
+Ändern Sie in cmake-Projekten den Wert der `enableMicrosoftCodeAnalysis`-und `enableClangTidyCodeAnalysis` Schlüssel innerhalb `CMakeSettings.json`, um die Code Analyse zu aktivieren oder zu deaktivieren. Weitere Informationen finden [Sie unter Verwenden von clang-tidy in Visual Studio](../code-quality/clang-tidy.md) .
 
 ## <a name="see-also"></a>Siehe auch
 

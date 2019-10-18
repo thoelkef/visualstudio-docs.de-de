@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
-ms.date: 07/11/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1001b37509432a7ae95a565d90d972d2043fdeab
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016011"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442410"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 In diesem Artikel werden typische Verwendungsmöglichkeiten von Anmerkungen für einfache Funktionsparameter – skalare und Zeiger auf Strukturen und Klassen – und die meisten Puffer Typen beschrieben.  Dieser Artikel zeigt auch gängige Verwendungs Muster für Anmerkungen. Weitere Anmerkungen, die sich auf Funktionen beziehen, finden Sie unter [kommentieren von Funktionsverhalten](../code-quality/annotating-function-behavior.md).
@@ -167,69 +167,41 @@ Wenn für die Anmerkungen in der folgenden Tabelle ein Zeiger Parameter mit Anme
 
      `_In_reads_bytes_(s)`
 
-     Ein Zeiger auf ein Array, das von der Funktion gelesen wird.  Das Array weist die Größe `s` Elemente auf, die alle gültig sein müssen.
+     Ein Zeiger auf ein Array, das von der Funktion gelesen wird.  Das Array hat die Größe `s` Elemente, die alle gültig sein müssen.
 
-     Die Variante "`_bytes_`" gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char`-Zeichen folgen die Variante `_bytes_` nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet, verwendet wird.
+     Der `_bytes_` Variant gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char` Zeichen folgen die `_bytes_` Variant nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet.
 
 - `_In_reads_z_(s)`
 
-     Ein Zeiger auf ein Array, das NULL-terminierte und eine bekannte Größe aufweist. Die Elemente bis zum NULL-Terminator – oder `s`, wenn kein NULL-Terminator vorhanden ist – müssen im Zustand "vorab" gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` nach der Elementgröße.
+     Ein Zeiger auf ein Array, das NULL-terminierte und eine bekannte Größe aufweist. Die Elemente bis zum NULL-Terminator – oder `s`, wenn kein NULL-Terminator vorhanden ist – im Zustand "Pre-State" gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` nach der Elementgröße.
 
 - `_In_reads_or_z_(s)`
 
-     Ein Zeiger auf ein Array, das NULL-terminierte oder eine bekannte Größe hat, oder beides. Die Elemente bis zum NULL-Terminator – oder `s`, wenn kein NULL-Terminator vorhanden ist – müssen im Zustand "vorab" gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` nach der Elementgröße.  (Wird für die `strn`-Familie verwendet.)
+     Ein Zeiger auf ein Array, das NULL-terminierte oder eine bekannte Größe hat, oder beides. Die Elemente bis zum NULL-Terminator – oder `s`, wenn kein NULL-Terminator vorhanden ist – im Zustand "Pre-State" gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` nach der Elementgröße.  (Wird für die `strn` Familie verwendet.)
 
 - `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
-     Ein Zeiger auf ein Array von `s`-Elementen (bzw. Bytes), die von der Funktion geschrieben werden.  Die Array Elemente müssen nicht im Voraus State gültig sein, und die Anzahl der Elemente, die im Post-State gültig sind, ist nicht angegeben.  Wenn Anmerkungen zum Parametertyp vorhanden sind, werden Sie im Post-State angewendet. Betrachten Sie hierzu den folgenden Beispielcode:
+     Ein Zeiger auf ein Array von `s` Elementen (bzw. Bytes), die von der Funktion geschrieben werden.  Die Array Elemente müssen nicht im Voraus State gültig sein, und die Anzahl der Elemente, die im Post-State gültig sind, ist nicht angegeben.  Wenn Anmerkungen zum Parametertyp vorhanden sind, werden Sie im Post-State angewendet. Betrachten Sie hierzu den folgenden Beispielcode:
 
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
 
-     In diesem Beispiel stellt der Aufrufer einen Puffer `size`-Elemente für `p1` bereit.  `MyStringCopy` macht einige dieser Elemente gültig. Noch wichtiger ist, dass die `_Null_terminated_`-Anmerkung auf `PWSTR` bedeutet, dass `p1` im Post-State NULL-terminiert ist.  Auf diese Weise ist die Anzahl der gültigen Elemente immer noch klar definiert, aber eine bestimmte Element Anzahl ist nicht erforderlich.
+     In diesem Beispiel stellt der Aufrufer einen Puffer `size` Elemente für `p1` bereit.  `MyStringCopy` macht einige dieser Elemente gültig. Noch wichtiger ist, dass die `_Null_terminated_` Anmerkung auf `PWSTR` bedeutet, dass `p1` im nach Zustand NULL endet.  Auf diese Weise ist die Anzahl der gültigen Elemente immer noch klar definiert, aber eine bestimmte Element Anzahl ist nicht erforderlich.
 
-     Die Variante "`_bytes_`" gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char`-Zeichen folgen die Variante `_bytes_` nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet, verwendet wird.
+     Der `_bytes_` Variant gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char` Zeichen folgen die `_bytes_` Variant nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet.
 
 - `_Out_writes_z_(s)`
 
-     Ein Zeiger auf ein Array von `s`-Elementen.  Die Elemente müssen nicht im Voraus State gültig sein.  Im Post-Zustand müssen die Elemente, die durch das NULL-Abschluss Zeichen – das vorhanden sein müssen – gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` nach der Elementgröße.
+     Ein Zeiger auf ein Array von `s` Elementen.  Die Elemente müssen nicht im Voraus State gültig sein.  Im Post-Zustand müssen die Elemente, die durch das NULL-Abschluss Zeichen – das vorhanden sein müssen – gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` nach der Elementgröße.
 
 - `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
-     Ein Zeiger auf ein Array, das in der Funktion gelesen und geschrieben wird.  Sie hat die Größe `s`-Elemente und ist im Zustand vor und nach dem Zustand gültig.
+     Ein Zeiger auf ein Array, das in der Funktion gelesen und geschrieben wird.  Sie hat die Größe `s` Elemente und ist im Zustand vor und nach dem Zustand gültig.
 
-     Die Variante "`_bytes_`" gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char`-Zeichen folgen die Variante `_bytes_` nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet, verwendet wird.
-
-- `_Inout_updates_z_(s)`
-
-     Ein Zeiger auf ein Array, das NULL-terminierte und eine bekannte Größe aufweist. Die Elemente, die durch das NULL-Abschluss Zeichen – die vorhanden sein müssen, müssen – sowohl im Zustand vor als auch nach dem Status gültig sein.  Es wird davon ausgegangen, dass sich der Wert im Post-State von dem Wert im Zustand "vor" unterscheidet. Dazu gehört auch der Speicherort des NULL-Terminator. Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` nach der Elementgröße.
-
-- `_Out_writes_to_(s,c)`
-
-     `_Out_writes_bytes_to_(s,c)`
-
-     `_Out_writes_all_(s)`
-
-     `_Out_writes_bytes_all_(s)`
-
-     Ein Zeiger auf ein Array von `s`-Elementen.  Die Elemente müssen nicht im Voraus State gültig sein.  Im Post-Zustand müssen die Elemente bis zum @no__t -0-th-Element gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` und `c` von der Elementgröße, oder verwenden Sie die Variante `_bytes_`, die wie folgt definiert ist:
-
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     Das heißt, dass jedes Element, das im Puffer bis `s` im Zustand "Pre" vorhanden ist, im Post-State gültig ist.  Zum Beispiel:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
-
-- `_Inout_updates_to_(s,c)`
-
-     `_Inout_updates_bytes_to_(s,c)`
-
-     Ein Zeiger auf ein Array, das von der Funktion gelesen und geschrieben wird.  Sie hat die Größe `s`-Elemente, die alle im Zustand "Pre-State" gültig sein müssen, und `c`-Elemente müssen im Post-Zustand gültig sein.
-
-     Die Variante "`_bytes_`" gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char`-Zeichen folgen die Variante `_bytes_` nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet, verwendet wird.
+     Der `_bytes_` Variant gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char` Zeichen folgen die `_bytes_` Variant nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet.
 
 - `_Inout_updates_z_(s)`
 
@@ -243,11 +215,11 @@ Wenn für die Anmerkungen in der folgenden Tabelle ein Zeiger Parameter mit Anme
 
      `_Out_writes_bytes_all_(s)`
 
-     Ein Zeiger auf ein Array von `s`-Elementen.  Die Elemente müssen nicht im Voraus State gültig sein.  Im Post-Zustand müssen die Elemente bis zum @no__t -0-th-Element gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` und `c` von der Elementgröße, oder verwenden Sie die Variante `_bytes_`, die wie folgt definiert ist:
+     Ein Zeiger auf ein Array von `s` Elementen.  Die Elemente müssen nicht im Voraus State gültig sein.  Im Post-Zustand müssen die Elemente bis zum `c`-th-Element gültig sein.  Wenn die Größe in Bytes bekannt ist, Skalieren Sie `s` und `c` von der Elementgröße, oder verwenden Sie den `_bytes_` Variant, der wie folgt definiert ist:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     Das heißt, dass jedes Element, das im Puffer bis `s` im Zustand "Pre" vorhanden ist, im Post-State gültig ist.  Zum Beispiel:
+     Das heißt, dass jedes Element, das im Puffer vorhanden ist, bis `s` im Zustand "Pre" ist, im Post-State gültig ist.  Beispiel:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -255,41 +227,41 @@ Wenn für die Anmerkungen in der folgenden Tabelle ein Zeiger Parameter mit Anme
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Ein Zeiger auf ein Array, das von der Funktion gelesen und geschrieben wird.  Sie hat die Größe `s`-Elemente, die alle im Zustand "Pre-State" gültig sein müssen, und `c`-Elemente müssen im Post-Zustand gültig sein.
+     Ein Zeiger auf ein Array, das von der Funktion gelesen und geschrieben wird.  Sie hat die Größe `s` Elemente, die alle im Zustand "vor dem Status" gültig sein müssen, und `c` Elemente müssen im nach Zustand gültig sein.
 
-     Die Variante "`_bytes_`" gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char`-Zeichen folgen die Variante `_bytes_` nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet, verwendet wird.
+     Der `_bytes_` Variant gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char` Zeichen folgen die `_bytes_` Variant nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet.
 
 - `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
-     Ein Zeiger auf ein Array, das von der-Funktion der Size-`s`-Elemente gelesen und geschrieben wird. Definiert als äquivalent zu:
+     Ein Zeiger auf ein Array, das von der Funktion der Size-`s` Elemente gelesen und geschrieben wird. Definiert als äquivalent zu:
 
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`
 
-     Das heißt, jedes Element, das im Puffer bis zum `s` im Zustand "vor" vorhanden ist, ist im Zustand vor und nach dem Zustand gültig.
+     Das heißt, dass jedes Element, das im Puffer vorhanden ist, bis `s` im Zustand "Pre-State" im Zustand "Pre-State" und "Post-State" gültig ist.
 
-     Die Variante "`_bytes_`" gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char`-Zeichen folgen die Variante `_bytes_` nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet, verwendet wird.
+     Der `_bytes_` Variant gibt die Größe in Bytes anstelle von Elementen an. Verwenden Sie dies nur, wenn die Größe nicht als Elemente ausgedrückt werden kann.  Beispielsweise verwenden `char` Zeichen folgen die `_bytes_` Variant nur dann, wenn eine ähnliche Funktion, die `wchar_t` verwendet.
 
 - `_In_reads_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array, für das der Ausdruck `p` @ no__t-1 @ no__t-2 (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen im Voraus State gültig sein.
+     Ein Zeiger auf ein Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p` @ no__t-1 @ no__t-2 (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen im Voraus State gültig sein.
+     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array, für das der Ausdruck `p` @ no__t-1 @ no__t-2 (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
+     Ein Zeiger auf ein Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p` @ no__t-1 @ no__t-2 (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
+     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
 
 ## <a name="optional-pointer-parameters"></a>Optionale Zeigerparameter
 
-Wenn eine Zeiger Parameter Anmerkung `_opt_` enthält, weist dies darauf hin, dass der Parameter möglicherweise NULL ist. Andernfalls führt die-Anmerkung dieselbe wie die Version aus, die `_opt_` nicht enthält. Im folgenden finden Sie eine Liste der `_opt_`-Varianten der Zeiger Parameter Anmerkungen:
+Wenn eine Zeiger Parameter Anmerkung `_opt_` enthält, weist dies darauf hin, dass der Parameter möglicherweise NULL ist. Andernfalls führt die-Anmerkung dieselbe wie die Version aus, die keine `_opt_` enthält. Im folgenden finden Sie eine Liste der `_opt_` Varianten der Zeiger Parameter Anmerkungen:
 
 ||||
 |-|-|-|
@@ -331,7 +303,7 @@ Ausgabe Zeiger Parameter erfordern eine besondere Schreibweise, um die NULL-Wert
 
    `_Ouptr_opt_result_maybenull_z_`
 
-   Der zurückgegebene Zeiger hat die `_Null_terminated_`-Anmerkung.
+   Der zurückgegebene Zeiger verfügt über die `_Null_terminated_` Anmerkung.
 
 - `_COM_Outptr_`
 
@@ -341,7 +313,7 @@ Ausgabe Zeiger Parameter erfordern eine besondere Schreibweise, um die NULL-Wert
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   Der zurückgegebene Zeiger hat eine com-Semantik und führt daher eine `_On_failure_`-nach Bedingung aus, dass der zurückgegebene Zeiger NULL ist.
+   Der zurückgegebene Zeiger hat eine com-Semantik und führt daher eine `_On_failure_` nach Bedingung aus, dass der zurückgegebene Zeiger NULL ist.
 
 - `_Outptr_result_buffer_(s)`
 
@@ -389,7 +361,7 @@ Ausgabe Zeiger Parameter erfordern eine besondere Schreibweise, um die NULL-Wert
 
 ## <a name="output-reference-parameters"></a>Ausgabeverweisparameter
 
-Der Verweis Parameter wird häufig für Ausgabeparameter verwendet.  Für einfache Ausgabe Verweis Parameter – z. b. `int&` – `_Out_` die richtige Semantik.  Wenn der Ausgabewert jedoch ein Zeiger ist – z. b. `int *&` – werden die entsprechenden Zeiger Anmerkungen wie `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Verwenden Sie die folgenden zusammengesetzten Anmerkungen, um die Semantik der Ausgabe Verweis Parameter für Zeiger Typen kurz auszudrücken:
+Der Verweis Parameter wird häufig für Ausgabeparameter verwendet.  Für einfache Ausgabe Verweis Parameter – z. b. `int&` – `_Out_` die richtige Semantik bereit.  Wenn der Ausgabewert jedoch ein Zeiger ist – z. b. `int *&` – werden die entsprechenden Zeiger Anmerkungen wie `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Verwenden Sie die folgenden zusammengesetzten Anmerkungen, um die Semantik der Ausgabe Verweis Parameter für Zeiger Typen kurz auszudrücken:
 
 **Anmerkungen und Beschreibungen**
 
@@ -403,55 +375,55 @@ Der Verweis Parameter wird häufig für Ausgabeparameter verwendet.  Für einfac
 
 - `_Outref_result_buffer_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf einen gültigen Puffer der Größe `s`-Elemente.
+     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Verweist auf einen gültigen Puffer der Größe `s` Elemente.
 
 - `_Outref_result_bytebuffer_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf einen gültigen Puffer der Größe `s` Bytes.
+     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf einen gültigen Puffer der Größe `s` bytes.
 
 - `_Outref_result_buffer_to_(s, c)`
 
-     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf den Puffer der `s`-Elemente, von denen die ersten `c` gültig sind.
+     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf den Puffer von `s` Elementen, von denen die ersten `c` gültig sind.
 
 - `_Outref_result_bytebuffer_to_(s, c)`
 
-     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf den Puffer von `s` bytes, von denen die ersten `c` gültig sind.
+     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf den Puffer `s` bytes, von denen die ersten `c` gültig sind.
 
 - `_Outref_result_buffer_all_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Verweist auf einen gültigen Puffer der Größe @no__t gültigen-0-Elementen.
+     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Verweist auf einen gültigen Puffer der Größe `s` gültigen Elementen.
 
 - `_Outref_result_bytebuffer_all_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Zeigt auf einen gültigen Puffer `s` Bytes gültiger Elemente.
+     Das Ergebnis muss im Post-State gültig sein und darf nicht NULL sein. Verweist auf einen gültigen Puffer `s` Bytes gültiger Elemente.
 
 - `_Outref_result_buffer_maybenull_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-State NULL sein. Zeigt auf einen gültigen Puffer der Größe `s`-Elemente.
+     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-State NULL sein. Verweist auf einen gültigen Puffer der Größe `s` Elemente.
 
 - `_Outref_result_bytebuffer_maybenull_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-State NULL sein. Zeigt auf einen gültigen Puffer der Größe `s` Bytes.
+     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-State NULL sein. Zeigt auf einen gültigen Puffer der Größe `s` bytes.
 
 - `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-State NULL sein. Zeigt auf den Puffer der `s`-Elemente, von denen die ersten `c` gültig sind.
+     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-State NULL sein. Zeigt auf den Puffer von `s` Elementen, von denen die ersten `c` gültig sind.
 
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
-     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-Zustand NULL sein. Zeigt auf den Puffer von `s` bytes, von denen die ersten `c` gültig sind.
+     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-Zustand NULL sein. Zeigt auf den Puffer `s` bytes, von denen die ersten `c` gültig sind.
 
 - `_Outref_result_buffer_all_maybenull_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-Zustand NULL sein. Verweist auf einen gültigen Puffer der Größe @no__t gültigen-0-Elementen.
+     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-Zustand NULL sein. Verweist auf einen gültigen Puffer der Größe `s` gültigen Elementen.
 
 - `_Outref_result_bytebuffer_all_maybenull_(s)`
 
-     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-Zustand NULL sein. Zeigt auf einen gültigen Puffer `s` Bytes gültiger Elemente.
+     Das Ergebnis muss im Post-State gültig sein, kann jedoch im Post-Zustand NULL sein. Verweist auf einen gültigen Puffer `s` Bytes gültiger Elemente.
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich jedoch auf einer anderen Ebene von "de-Reference", und Sie müssen das Konzept des Zeigers auf das Ergebnis nicht überdenken.  Für die folgenden Anmerkungen ist der Rückgabewert das mit Anmerkungen versehene Objekt – ein Skalar, ein Zeiger auf eine Struktur oder ein Zeiger auf einen Puffer. Diese Anmerkungen haben die gleiche Semantik wie die entsprechende `_Out_`-Anmerkung.
+Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich jedoch auf einer anderen Ebene von "de-Reference", und Sie müssen das Konzept des Zeigers auf das Ergebnis nicht überprüfen.  Für die folgenden Anmerkungen ist der Rückgabewert das mit Anmerkungen versehene Objekt – ein Skalar, ein Zeiger auf eine Struktur oder ein Zeiger auf einen Puffer. Diese Anmerkungen haben die gleiche Semantik wie die entsprechende `_Out_` Anmerkung.
 
 |||
 |-|-|
@@ -459,7 +431,7 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
 
 ## <a name="format-string-parameters"></a>Zeichen folgen Parameter formatieren
 
-- `_Printf_format_string_` gibt an, dass der Parameter eine Format Zeichenfolge für die Verwendung in einem `printf`-Ausdruck ist.
+- `_Printf_format_string_` gibt an, dass der Parameter eine Format Zeichenfolge für die Verwendung in einem `printf` Ausdruck ist.
 
      **Beispiel**
 
@@ -474,7 +446,7 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
     }
     ```
 
-- `_Scanf_format_string_` gibt an, dass der Parameter eine Format Zeichenfolge für die Verwendung in einem `scanf`-Ausdruck ist.
+- `_Scanf_format_string_` gibt an, dass der Parameter eine Format Zeichenfolge für die Verwendung in einem `scanf` Ausdruck ist.
 
      **Beispiel**
 
@@ -489,7 +461,7 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
     }
     ```
 
-- `_Scanf_s_format_string_` gibt an, dass der Parameter eine Format Zeichenfolge für die Verwendung in einem `scanf_s`-Ausdruck ist.
+- `_Scanf_s_format_string_` gibt an, dass der Parameter eine Format Zeichenfolge für die Verwendung in einem `scanf_s` Ausdruck ist.
 
      **Beispiel**
 
@@ -522,24 +494,24 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
 
      `_Field_range_(low, hi)`
 
-     Der Parameter, das Feld oder das Ergebnis befindet sich im Bereich (einschließlich) von `low` bis `hi`.  Entspricht `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`, das auf das mit Anmerkungen versehene Objekt in Verbindung mit den entsprechenden Bedingungen vor oder nach Bundesstaat angewendet wird.
+     Der Parameter, das Feld oder das Ergebnis befindet sich im Bereich (einschließlich) von `low` bis `hi`.  Entspricht `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`, die auf das mit Anmerkungen versehene Objekt in Verbindung mit den entsprechenden Bedingungen vor oder nach Bundesstaat angewendet wird.
 
     > [!IMPORTANT]
-    > Obwohl die Namen "in" und "out" enthalten, gilt die Semantik von "`_In_`" und "`_Out_`" **nicht** für diese Anmerkungen.
+    > Obwohl die Namen "in" und "out" enthalten, gilt die Semantik von `_In_` und `_Out_` **nicht** für diese Anmerkungen.
 
 - `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
-     Der mit Anmerkungen versehene Wert ist genau `expr`.  Entspricht `_Satisfies_(_Curr_ == expr)`, das auf das mit Anmerkungen versehene Objekt in Verbindung mit den entsprechenden Bedingungen vor oder nach Bundesstaat angewendet wird.
+     Der mit Anmerkungen versehene Wert ist genau `expr`.  Entspricht `_Satisfies_(_Curr_ == expr)`, die auf das mit Anmerkungen versehene Objekt in Verbindung mit den entsprechenden Bedingungen vor oder nach Bundesstaat angewendet wird.
 
 - `_Struct_size_bytes_(size)`
 
-     Gilt für eine Struktur-oder Klassen Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs größer als der deklarierte Typ sein kann, wobei die Anzahl der Bytes von `size` angegeben wird.  Zum Beispiel:
+     Gilt für eine Struktur-oder Klassen Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs größer als der deklarierte Typ sein kann, mit der Anzahl der Bytes, die von `size` angegeben werden.  Beispiel:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     Die Puffergröße eines Parameters `pM` vom Typ `MyStruct *` wird dann wie folgt angenommen:
+     Die Puffergröße eines Parameter `pM` vom Typ `MyStruct *` wird dann wie folgt angenommen:
 
      `min(pM->nSize, sizeof(MyStruct))`
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da0d70af989d759df94eb2d22606ad90373936ad
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585238"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448837"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
 
@@ -23,9 +23,9 @@ Wenn Sie die Legacy-Analyse für Projekte mit verwaltetem Code in Visual Studio 
 > [!NOTE]
 > Die Regelsätze in diesem Abschnitt beziehen sich auf die Legacy-Analyse. Weitere Informationen zu Regelsätzen, die für Code Analyzer-Pakete verfügbar sind, finden Sie unter [Verwenden von Regelsätzen mit Code Analyse](analyzer-rule-sets.md)Modulen.
 
-Sie können entweder eine der folgenden integrierten Regelsätze verwenden, oder Sie können [Anpassen eines Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md) an Ihre projektanforderungen anpassen. Wenn Sie mehrere Regelsätze einschließen, die dieselbe Regel in einem benutzerdefinierten Regelsatz enthalten, wird diese Regel nur einmal im benutzerdefinierten Regelsatz angezeigt.
+Sie können entweder einen dieser integrierten Regelsätze verwenden, oder Sie können [einen Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md) an Ihre Projektanforderungen anpassen. Wenn Sie mehrere Regelsätze einschließen, die dieselbe Regel in einem benutzerdefinierten Regelsatz enthalten, wird diese Regel nur einmal im benutzerdefinierten Regelsatz angezeigt.
 
-Die Themen in diesem Abschnitt beschreiben die integrierte Regelsätze Mengen und die Regeln (oder Warnungen), die sie enthalten.
+In den Themen in diesem Abschnitt werden die integrierten Regelsätze und die darin enthaltenen Regeln (oder Warnungen) beschrieben.
 
 | Regelsatz | Enthaltene Regeln |
 | - | - |

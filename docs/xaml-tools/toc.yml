@@ -1,0 +1,114 @@
+- name: XAML-Tools in Visual Studio
+  href: index.yml
+- name: Übersicht über XAML
+  href: xaml-overview.md
+- name: XAML-Designer
+  items:
+    - name: Entwerfen von XAML-Code in Visual Studio und Blend
+      href: designing-xaml-in-visual-studio.md
+    - name: Übersicht über den XAML-Designer
+      href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+    - name: Arbeiten mit Elementen
+      href: working-with-elements-in-xaml-designer.md
+    - name: Organisieren von Objekten in Layoutcontainern
+      href: organize-objects-into-layout-containers-in-xaml-designer.md
+    - name: Erstellen und Anwenden einer Ressource
+      href: how-to-create-and-apply-a-resource.md
+    - name: 'Exemplarische Vorgehensweise: Binden an Daten'
+      href: walkthrough-binding-to-data-in-xaml-designer.md
+    - name: Aktivieren und Deaktivieren von Projektcode
+      href: debugging-or-disabling-project-code-in-xaml-designer.md
+    - name: Blend for Visual Studio
+      items:
+        - name: Übersicht
+          href: creating-a-ui-by-using-blend-for-visual-studio.md
+        - name: Zeichnen von Formen und Pfaden
+          href: draw-shapes-and-paths.md
+        - name: Ändern des Stils von Objekten
+          href: modify-the-style-of-objects-in-blend.md
+        - name: Animieren von Objekten
+          href: animate-objects-in-xaml-designer.md
+        - name: Anzeigen von Daten
+          href: display-data-in-blend.md
+    - name: Referenz
+      items:
+        - name: XAML-Fehler und -Warnungen
+          href: xaml-errors-warnings.md
+        - name: Tastenkombinationen für XAML-Designer
+          href: keyboard-shortcuts-for-xaml-designer.md
+        - name: Tastenkombinationen für Blend
+          href: keyboard-shortcuts-in-blend.md
+        - name: Zusatztasten der Zeichenfläche (Blend)
+          href: artboard-modifier-keys-in-blend.md
+        - name: Zusatztasten des Stiftwerkzeugs (Blend)
+          href: pen-tool-modifier-keys-in-blend.md
+        - name: Zusatztasten des Direktauswahlwerkzeugs (Blend)
+          href: direct-selection-tool-modifier-keys-in-blend.md
+- name: Debuggen von XAML
+  items:
+    - name: Überprüfen von XAML-Eigenschaften beim Debuggen
+      href: inspect-xaml-properties-while-debugging.md
+    - name: Neuladen von XAML im laufenden Betrieb
+      items:
+        - name: Schreiben und Debuggen von ausgeführtem XAML-Code
+          href: xaml-hot-reload.md
+        - name: Problembehandlung
+          href: xaml-hot-reload-troubleshooting.md
+    - name: Debuggen von XAML in Blend
+      href: debug-xaml-in-blend.md
+    - name: Debuggen von UWP-Apps >>
+      href: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+- name: Windows Presentation Foundation (WPF)
+  items:
+    - name: Erste Schritte
+      displayName: Windows Presentation Foundation (WPF)
+      href: ../designers/getting-started-with-wpf.md
+    - name: WPF-Übersicht
+      href: ../designers/introduction-to-wpf.md
+    - name: Datenbindung
+      items:
+        - name: WPF-Datenbindung mit LINQ to XML
+          href: ../designers/wpf-data-binding-with-linq-to-xml-overview.md
+        - name: Dynamische Eigenschaften in LINQ to XML
+          items:
+            - name: Übersicht
+              displayName: LINQ to XML dynamic properties
+              href: ../designers/linq-to-xml-dynamic-properties.md
+            - name: Dynamische Eigenschaften der XAttribute-Klasse
+              items:
+                - name: Value (dynamische XAttribute-Eigenschaft)
+                  href: ../designers/value-xattribute-dynamic-property.md
+            - name: Dynamische Eigenschaften der XElement-Klasse
+              items:
+                - name: Attribute (dynamische XElement-Eigenschaft)
+                  href: ../designers/attribute-xelement-dynamic-property.md
+                - name: Element (dynamische XElement-Eigenschaft)
+                  href: ../designers/element-xelement-dynamic-property.md
+                - name: Elements (dynamische XElement-Eigenschaft)
+                  href: ../designers/elements-xelement-dynamic-property.md
+                - name: Descendants (dynamische XElement-Eigenschaft)
+                  href: ../designers/descendants-xelement-dynamic-property.md
+                - name: Value (dynamische XElement-Eigenschaft)
+                  href: ../designers/value-xelement-dynamic-property.md
+                - name: Xml (dynamische XElement-Eigenschaft)
+                  href: ../designers/xml-xelement-dynamic-property.md
+            - name: Beispiele
+              items:
+                - name: WPF-Datenbindung mithilfe von LINQ to XML
+                  href: ../designers/wpf-data-binding-using-linq-to-xml-example.md
+                - name: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
+                  href: ../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md
+                - name: 'Exemplarische Vorgehensweise: LINQ to XML-Datenbindung'
+                  href: ../designers/walkthrough-linqtoxmldatabinding-example.md
+                - name: L2DBForm.xaml-Quellcode
+                  href: ../designers/l2dbform-xaml-source-code.md
+                - name: L2DBForm.xaml.cs-Quellcode
+                  href: ../designers/l2dbform-xaml-cs-source-code.md
+    - name: Debuggen von WPF-Apps
+      items:
+        - name: Debuggen von WPF
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+        - name: Verwenden der WPF-Strukturschnellansicht
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+        - name: Anzeigen von WPF-Ablaufverfolgungsinformationen
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json
