@@ -1,5 +1,5 @@
 ---
-title: Remote Debuggen C++ eines visuellen Projekts | Microsoft-Dokumentation
+title: Remote Debuggen eines C++ Projekts | Microsoft-Dokumentation
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211111"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450424"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Remote Debuggen C++ eines visuellen Projekts in Visual Studio
+# <a name="remote-debugging-a-c-project-in-visual-studio"></a>Remote Debuggen eines C++ Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer installieren und führen Sie die Remote Tools auf dem Computer aus, auf dem Sie die APP bereitstellen möchten, konfigurieren Sie das Projekt für die Verbindung mit dem Remote Computer über Visual Studio, und stellen Sie die APP bereit, und führen Sie Sie aus.
 
-![Remote Debugger-Komponenten] (../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![Remote Debugger-Komponenten](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
 Weitere Informationen zum Remote Debuggen von universellen Windows-Apps (UWP) finden Sie unter [Debuggen eines installierten App-Pakets](debug-installed-app-package.md).
 
@@ -45,14 +45,14 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 > [!TIP]
 > In einigen Szenarien kann es am effizientesten sein, den Remote Debugger von einer Dateifreigabe aus auszuführen. Weitere Informationen finden Sie unter [Ausführen des Remote Debuggers aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
 
-## <a name="BKMK_setup"></a> Einrichten des Remotedebuggers
+## <a name="BKMK_setup"></a>Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Wenn Sie Berechtigungen für weitere Benutzer hinzufügen, den Authentifizierungsmodus oder die Portnummer für den Remote Debugger ändern müssen, finden Sie weitere Informationen unter [configure the Remote Debugger](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a> Remotedebuggen eines Visual C++-Projekts
+## <a name="remote_cplusplus"></a>Remote Debuggen eines C++ Projekts
  In der folgenden Prozedur ist der Name und der Pfad des Projekts "c:\remotetemp\mymfc", und der Name des Remote Computers lautet " **mjo-DL**".
 
 1. Erstellen Sie eine MFC-Anwendung mit dem Namen **mymfc**.
@@ -63,7 +63,7 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 
 4. Legen Sie **Zu startender Debugger** auf **Remote-Windows-Debugger** fest.
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Remotedebuggingcplus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
 
 5. Nehmen Sie die folgenden Änderungen an den Eigenschaften vor:
 
@@ -83,7 +83,7 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 
 7. Aktivieren Sie für die Konfiguration **Debuggen** das Kontrollkästchen **Bereitstellen**.
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Remotedebugcplusbereitstellung](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
 
 8. Starten Sie das Debuggen (wählen Sie **Debuggen > Debuggen starten** aus, oder drücken Sie **F5**).
 
@@ -91,7 +91,7 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 
 10. Geben Sie bei entsprechender Aufforderung Netzwerk Anmelde Informationen ein, um eine Verbindung mit dem Remote Computer herzustellen.
 
-     Die erforderlichen Anmelde Informationen sind spezifisch für die Sicherheitskonfiguration Ihres Netzwerks. Beispielsweise können Sie auf einem Domänen Computer ein Sicherheitszertifikat auswählen oder den Domänen Namen und das Kennwort eingeben. Auf einem Computer, der nicht der Domäne ist, können Sie den Computernamen und einen gültigen Benutzerkonto Namen <strong>MJO-DL\name@something.com</strong>, wie z. b., zusammen mit dem richtigen Kennwort eingeben.
+     Die erforderlichen Anmelde Informationen sind spezifisch für die Sicherheitskonfiguration Ihres Netzwerks. Beispielsweise können Sie auf einem Domänen Computer ein Sicherheitszertifikat auswählen oder den Domänen Namen und das Kennwort eingeben. Auf einem Computer, der nicht der Domäne ist, können Sie den Computernamen und einen gültigen Benutzerkonto Namen, wie z. b. <strong>MJO-DL\name@something.com</strong>, zusammen mit dem richtigen Kennwort eingeben.
 
 11. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wird.
 
