@@ -239,7 +239,7 @@
             - name: Benutzerdefinierte Ansichten (verwaltet)
               items:
                 - name: Erstellen benutzerdefinierter Ansichten von verwalteten Objekten
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: 'Den Debugger anweisen, was er anzeigen soll'
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 'Den Debugger anweisen, welchen Typ er anzeigen soll'
