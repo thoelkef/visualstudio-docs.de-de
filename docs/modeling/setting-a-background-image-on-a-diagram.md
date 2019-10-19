@@ -2,20 +2,20 @@
 title: Festlegen eines Hintergrundbilds für ein Diagramm
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37d590fb13f7b8b04005d2877d378c556c772af5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823956"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670811"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
-In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
+Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
 
 ## <a name="setting-the-background-image"></a>Festlegen des Hintergrundbildes
 
@@ -23,37 +23,37 @@ In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergr
 
 1. Kopieren Sie die Bilddatei, die Sie als Diagrammhintergrund verwenden möchten, in das Verzeichnis "Dsl\Resources" des aktuellen Projekts.
 
-2. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Ordner "Dsl\Resources", zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**.
+2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Ordner dsl\resources, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Vorhandenes Element**.
 
-3. In der **vorhandenes Element hinzufügen** (Dialogfeld), navigieren Sie zu dem Ordner "Dsl\Resources".
+3. Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zum Ordner "dsl\resources".
 
-4. In der **Dateityp** auf **Bilddateien**.
+4. Klicken Sie in der Liste **Dateityp** auf **Bilddateien**.
 
-5. Klicken Sie auf die Bilddatei, die Sie in das Verzeichnis kopiert, und klicken Sie dann auf **hinzufügen**.
+5. Klicken Sie auf die Bilddatei, die Sie in das Verzeichnis kopiert haben, und klicken Sie dann auf **Hinzufügen**.
 
-6. Mit der rechten Maustaste Dsl, und klicken Sie auf **Eigenschaften** um die Eigenschaften des Dsl-Projekt zu öffnen.
+6. Klicken Sie mit der rechten Maustaste auf DSL und dann auf **Eigenschaften** , um die Eigenschaften des DSL-Projekts zu öffnen.
 
-7. Auf der **Ressourcen** auf **dieses Projekt enthält keine Standardressourcendatei. Klicken Sie hier, um eine zu erstellen.**
+7. Klicken Sie auf der Registerkarte **Ressourcen** auf **dieses Projekt enthält keine Standard Ressourcen Datei. Klicken Sie hier, um eine zu erstellen.**
 
-8. Die Bilddatei der Ressourcendatei hinzuzufügen, ziehen Sie das Bild aus **Projektmappen-Explorer** in das Fenster "Ressourcen".
+8. Fügen Sie die Bilddatei der Ressourcen Datei hinzu, indem Sie das Bild von **Projektmappen-Explorer** in das Fenster "Ressourcen" ziehen.
 
 9. Öffnen Sie das Menü "Datei", und klicken Sie auf die Option zum Speichern der Projekteigenschaften.
 
 10. Prüfen Sie, ob die Datei "Dsl\Properties\Resources.resx" vorhanden ist und die Datei "Resources.Designer.cs" enthält.
 
-11. Wenn "Resources.Designer.cs" fehlt, klicken Sie auf die Datei "Resources.resx" im **Projektmappen-Explorer**.
+11. Wenn Resources.Designer.cs nicht vorhanden ist, klicken Sie in **Projektmappen-Explorer**auf die Datei Resources. resx.
 
 12. Legen Sie im Fenster **Eigenschaften** die Eigenschaft `Custom Tool` auf `ResXFileCodeGenerator`fest.
 
-13. In **Projektmappen-Explorer**, mit der rechten Maustaste in des Dsl-Projekts, zeigen Sie auf **hinzufügen**, und klicken Sie auf **neuer Ordner**.
+13. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das DSL-Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie auf **neuer Ordner**.
 
-14. Nennen Sie den Ordner **benutzerdefinierte**.
+14. Benennen Sie den Ordner als **Benutzer**definiert.
 
-15. Mit der rechten Maustaste in den Ordner "Custom", zeigen Sie auf **hinzufügen**, und klicken Sie auf **neues Element**.
+15. Klicken Sie mit der rechten Maustaste auf den Ordner Custom, zeigen Sie auf **Hinzufügen**, und klicken Sie auf **Neues Element**
 
-16. In der **neues Element hinzufügen** Dialogfeld die **Vorlagen** auf **Codedatei**.
+16. Klicken Sie im Dialogfeld **Neues Element hinzufügen** in der Liste **Vorlagen** auf **Codedatei**.
 
-17. In der **Namen** geben `BackgroundImage.cs`, und klicken Sie auf **hinzufügen**.
+17. Geben Sie im Feld **Name** `BackgroundImage.cs` ein, und klicken Sie auf **Hinzufügen**.
 
 18. Kopieren Sie den folgenden Code in die Datei "BackgroundImage.cs", und passen Sie den Namespace, den Diagrammklassennamen und den Bilddatei-Ressourcennamen an.
 
@@ -98,7 +98,7 @@ In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergr
     }
     ```
 
-     Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Siehe auch
 

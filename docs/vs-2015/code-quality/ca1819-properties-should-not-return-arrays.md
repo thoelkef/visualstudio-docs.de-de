@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1819
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c85efc3e601eb9e0d887043c50b30587e51321e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201731"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668372"
 ---
-# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben.
+# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine öffentliche oder geschützte Eigenschaft in einem öffentlichen Typ zurückgegeben ein Array.
+ Eine öffentliche oder geschützte Eigenschaft in einem öffentlichen Typ gibt ein Array zurück.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Von Eigenschaften zurückgegebene Arrays sind nicht schreibgeschützt, selbst wenn die Eigenschaft schreibgeschützt ist. Damit das Array gegen Manipulationen geschützt bleibt, muss die Eigenschaft eine Kopie des Arrays zurückgeben. Normalerweise verstehen die Benutzer nicht, welche negativen Auswirkungen der Aufruf einer solchen Eigenschaft auf die Leistung hat. Insbesondere können sie die Eigenschaft als eine indizierte Eigenschaft.
+ Arrays, die von Eigenschaften zurückgegeben werden, sind nicht schreibgeschützt, auch wenn die Eigenschaft schreibgeschützt ist. Damit das Array gegen Manipulationen geschützt bleibt, muss die Eigenschaft eine Kopie des Arrays zurückgeben. Normalerweise verstehen die Benutzer nicht, welche negativen Auswirkungen der Aufruf einer solchen Eigenschaft auf die Leistung hat. Insbesondere kann die-Eigenschaft als indizierte Eigenschaft verwendet werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie der Eigenschaft eine Methode oder ändern Sie die Eigenschaft zum Zurückgeben einer Auflistung.
+ Um einen Verstoß gegen diese Regel zu beheben, stellen Sie entweder die-Eigenschaft als Methode dar, oder ändern Sie die-Eigenschaft, um eine Auflistung zurückzugeben.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Attribute können Eigenschaften enthalten, die Arrays zurückgeben, aber Sie können keine Eigenschaften enthalten, die Auflistungen zurückgeben. Sie können eine Warnung unterdrücken, die für eine Eigenschaft eines Attributs ausgelöst wird, die die [System.Attribute abgeleitet wurden.] () abgeleitet wird<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) Klasse. Unterdrücken Sie andernfalls keine Warnung dieser Regel.
+ Attribute können Eigenschaften enthalten, die Arrays zurückgeben, aber keine Eigenschaften enthalten, die Auflistungen zurückgeben. Sie können eine Warnung unterdrücken, die für eine Eigenschaft eines Attributs ausgelöst wird, das von [System. Attribute] abgeleitet ist (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->klassi. Andernfalls sollten Sie keine Warnung aus dieser Regel unterdrücken.
 
-## <a name="example-violation"></a>Beispiel für einen Verstoß
+## <a name="example-violation"></a>Beispiel Verstoß
 
 ### <a name="description"></a>Beschreibung
  Das folgende Beispiel zeigt eine Eigenschaft, die gegen diese Regel verstößt.
@@ -54,21 +54,21 @@ ms.locfileid: "68201731"
  [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayViolation/vb/FxCop.Performance.PropertyArrayViolation.vb#1)]
 
 ### <a name="comments"></a>Kommentare
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie der Eigenschaft eine Methode oder ändern Sie die Eigenschaft zum Zurückgeben einer Auflistung anstelle eines Arrays zu.
+ Um einen Verstoß gegen diese Regel zu beheben, machen Sie die Eigenschaft zu einer Methode, oder ändern Sie die Eigenschaft so, dass eine Auflistung anstelle eines Arrays zurückgegeben wird.
 
-## <a name="change-the-property-to-a-method-example"></a>Ändern Sie die Eigenschaft in einer Methode – Beispiel
+## <a name="change-the-property-to-a-method-example"></a>Ändern der-Eigenschaft in ein Methoden Beispiel
 
 ### <a name="description"></a>Beschreibung
- Im folgende Beispiel wird der Verstoß durch Ändern der Eigenschaft an eine Methode korrigiert.
+ Im folgenden Beispiel wird die Verletzung behoben, indem die-Eigenschaft in eine-Methode geändert wird.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Performance.PropertyArrayFixedMethod#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedMethod/cs/FxCop.Performance.PropertyArrayFixedMethod.cs#1)]
  [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedMethod/vb/FxCop.Performance.PropertyArrayFixedMethod.vb#1)]
 
-## <a name="return-a-collection-example"></a>Ein Beispiel für die Sammlung zurück
+## <a name="return-a-collection-example"></a>Beispiel für eine Auflistung zurückgeben
 
 ### <a name="description"></a>Beschreibung
- Im folgenden Beispiel wird der Verstoß korrigiert, durch Ändern der Eigenschaft zum Zurückgeben einer
+ Im folgenden Beispiel wird die Verletzung behoben, indem die-Eigenschaft geändert wird, um eine
 
  <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
@@ -76,21 +76,21 @@ ms.locfileid: "68201731"
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedCollection/cs/FxCop.Performance.PropertyArrayFixedCollection.cs#1)]
  [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedCollection/vb/FxCop.Performance.PropertyArrayFixedCollection.vb#1)]
 
-## <a name="allowing-users-to-modify-a-property"></a>Benutzer zum Ändern einer Eigenschaft
+## <a name="allowing-users-to-modify-a-property"></a>Benutzern das Ändern einer Eigenschaft gestatten
 
 ### <a name="description"></a>Beschreibung
- Sie möchten die Consumer der-Klasse zum Ändern einer Eigenschaft zu ermöglichen. Das folgende Beispiel zeigt eine Lese-/Schreibeigenschaft, die gegen diese Regel verstößt.
+ Möglicherweise möchten Sie dem Consumer der-Klasse gestatten, eine Eigenschaft zu ändern. Das folgende Beispiel zeigt eine Lese-/Schreibeigenschaft, die gegen diese Regel verstößt.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/cs/FxCop.Performance.PropertyModifyViolation.cs#1)]
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/vb/FxCop.Performance.PropertyModifyViolation.vb#1)]
 
 ### <a name="comments"></a>Kommentare
- Im folgenden Beispiel wird der Verstoß korrigiert, durch Ändern der Eigenschaft zum Zurückgeben einer <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>.
+ Im folgenden Beispiel wird die Verletzung behoben, indem die-Eigenschaft geändert wird, um eine <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> zurückzugeben.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/cs/FxCop.Performance.PropertyModifyFixed.cs#1)]
  [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/vb/FxCop.Performance.PropertyModifyFixed.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1024: Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Nach Möglichkeit Eigenschaften verwenden](../code-quality/ca1024-use-properties-where-appropriate.md)

@@ -9,22 +9,22 @@ helpviewer_keywords:
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eb0c600830c114ca24f9cdc0619fd84c6e18d232
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871810"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668573"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Thema werden die Elemente und Beziehungen in Ebenenmodellen beschrieben, die Sie mithilfe von Programmcode durchsuchen und aktualisieren können. Weitere Informationen zu ebenendiagrammen aus Sicht des Benutzers finden [Sie unter ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) - [und ebenendiagramme: Richt](../modeling/layer-diagrams-guidelines.md)Linien.
+In diesem Thema werden die Elemente und Beziehungen in Ebenenmodellen beschrieben, die Sie mithilfe von Programmcode durchsuchen und aktualisieren können. Weitere Informationen zu ebenendiagrammen aus Sicht des Benutzers finden Sie unter [ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) -und [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).
 
- Das in diesem Thema beschriebene `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer`-Modell ist eine Fassade eines allgemeineren <xref:Microsoft.VisualStudio.GraphModel>-Modells. Wenn Sie einen [Menübefehl oder eine Gesten Erweiterung](../modeling/add-commands-and-gestures-to-layer-diagrams.md)schreiben, verwenden Sie `Layer` das Modell. Wenn Sie eine [ebenenvalidierungserweiterung](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)schreiben, ist es einfacher, `GraphModel`die zu verwenden.
+ Das in diesem Thema beschriebene `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer`-Modell ist eine Fassade eines allgemeineren <xref:Microsoft.VisualStudio.GraphModel>-Modells. Wenn Sie einen [Menübefehl oder eine Gesten Erweiterung](../modeling/add-commands-and-gestures-to-layer-diagrams.md)schreiben, verwenden Sie das `Layer` Modell. Wenn Sie eine [ebenenvalidierungserweiterung](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)schreiben, ist es einfacher, die `GraphModel` zu verwenden.
 
 ## <a name="transactions"></a>Transaktionen
  Erwägen Sie beim Aktualisieren eines Modells die Änderungen in eine `ILinkedUndoTransaction` einzuschließen. Auf diese Weise werden die Änderungen zu einer Transaktion gruppiert. Wenn eine der Änderungen fehlschlägt, wird die gesamte Transaktion zurückgesetzt. Wenn der Benutzer eine Änderung rückgängig macht, werden alle Änderungen zusammen rückgängig gemacht.
@@ -97,14 +97,14 @@ IEnumerable<ILayerComment> comments =
 
  [Ilayerartifaktreferenzierung](/previous-versions/ff644536(v=vs.140)). Die Eigenschaft "Kategorien" gibt an, welche Art von Artefakt referenziert wird, z. B. Klasse, ausführbare Datei oder Assembly. Die Kategorien bestimmen, wie der Bezeichner das Zielartefakt identifiziert.
 
- [Artifaktreferenceextensions. kreateartifaktreferenceasync](/previous-versions/ff695840(v=vs.140)) erstellt einen artefaktverweis aus <xref:EnvDTE.Project> einem <xref:EnvDTE.ProjectItem>oder einem. Das ist ein asynchroner Vorgang. Daher stellen Sie normalerweise einen Rückruf bereit, der nach Abschluss der Erstellung aufgerufen wird.
+ [Artifaktreferenceextensions. kreateartifaktreferenceasync](/previous-versions/ff695840(v=vs.140)) erstellt einen artefaktverweis aus einer <xref:EnvDTE.Project> oder <xref:EnvDTE.ProjectItem>. Das ist ein asynchroner Vorgang. Daher stellen Sie normalerweise einen Rückruf bereit, der nach Abschluss der Erstellung aufgerufen wird.
 
  Ebenenartefaktverweise dürfen nicht mit Artefakten in Anwendungsfalldiagrammen verwechselt werden.
 
 ## <a name="shapes-and-diagrams"></a>Formen und Diagramme
- Zwei-Objekte werden verwendet, um die einzelnen Elemente in einem Ebenenmodell darzustellen: ein `ILayerElement`-Objekt und ein [IShape](/previous-versions/ee806673(v=vs.140))-Objekt. `IShape` stellt Position und Größe der Form auf dem Diagramm dar. In Ebenenmodellen verfügt jedes `ILayerElement` über ein `IShape`, und jedes `IShape` in einem Ebenendiagramm besitzt ein `ILayerElement`. `IShape` wird auch für UML-Modelle verwendet. Daher verfügt nicht jedes `IShape` über ein Ebenenelement.
+ Zwei-Objekte werden verwendet, um die einzelnen Elemente in einem Ebenenmodell darzustellen: eine `ILayerElement` und eine [IShape](/previous-versions/ee806673(v=vs.140)). `IShape` stellt Position und Größe der Form auf dem Diagramm dar. In Ebenenmodellen verfügt jedes `ILayerElement` über ein `IShape`, und jedes `IShape` in einem Ebenendiagramm besitzt ein `ILayerElement`. `IShape` wird auch für UML-Modelle verwendet. Daher verfügt nicht jedes `IShape` über ein Ebenenelement.
 
- Auf dieselbe Weise wird der `ILayerModel` in einem [IDiagram](/previous-versions/ee789658(v=vs.140))angezeigt.
+ Auf dieselbe Weise wird die `ILayerModel` in einem [IDiagram](/previous-versions/ee789658(v=vs.140))angezeigt.
 
  Im Code eines benutzerdefinierten Befehl- oder Gestenhandlers können Sie das aktuelle Diagramm und die aktuelle Formenauswahl aus dem `DiagramContext`-Import abrufen:
 

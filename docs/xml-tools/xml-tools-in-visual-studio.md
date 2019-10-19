@@ -1,5 +1,5 @@
 ---
-title: XML-Editor und Schema-designer
+title: XML-Editor und Schema-Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -27,35 +27,35 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7493d6c10c83b16ad7579299a49a7747e34c20b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746514"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668711"
 ---
 # <a name="xml-tools-in-visual-studio"></a>XML-Tools in Visual Studio
 
-*Extensible Markup Language (XML)* ist eine Markupsprache, die ein Format zum Beschreiben von Daten bereitstellt. XML trennt die Daten und deren Präsentation mit verknüpften Stylesheets wie Extensible Stylesheet Language (XSL) und cascading Stylesheets (CSS). Visual Studio enthält Tools und Funktionen, die das Arbeiten mit XML, XSLT und XML-Schemas vereinfachen.
+*Extensible Markup Language (XML)* ist eine Markup Sprache, die ein Format zum Beschreiben von Daten bereitstellt. XML trennt die Daten und ihre Darstellung durch die Verwendung zugeordneter Stylesheets wie Extensible Stylesheet Language (XSL) und Cascading Stylesheets (CSS). Visual Studio enthält Tools und Funktionen, die das Arbeiten mit XML, XSLT und XML-Schemas vereinfachen.
 
 ## <a name="xml-editor"></a>XML-Editor
 
-Die [XML-Editor](xml-editor.md) wird zum Bearbeiten von XML-Dokumenten verwendet. Es bietet vollständige XML-Syntax überprüfen "," Schema-Validierung während der Eingabe, farbcodierung und IntelliSense. Wenn ein Schema oder eine DTD (Dokumenttypdefinition) bereitgestellt wird, werden von IntelliSense damit die zulässigen Elemente und Attribute aufgelistet.
+Der [XML-Editor](xml-editor.md) wird zum Bearbeiten von XML-Dokumenten verwendet. Sie bietet vollständige Überprüfung der XML-Syntax, Schema Validierung während der Typerstellung, Farbcodierung und IntelliSense. Wenn ein Schema oder eine DTD (Dokumenttypdefinition) bereitgestellt wird, werden von IntelliSense damit die zulässigen Elemente und Attribute aufgelistet.
 
 Folgende zusätzlichen Funktionen sind verfügbar:
 
-- Unterstützung für XML-Codeausschnitte, einschließlich schemagenerierter Ausschnitte
+- Unterstützung von XML-Ausschnitten, einschließlich Schema generierter Ausschnitte
 
-- Dokumentieren Sie Gliederungen, sodass Elemente erweitert und reduziert werden können
+- Dokument Gliederung, sodass Elemente erweitert und reduziert werden können
 
-- Die Möglichkeit zum Ausführen von XSLT-Transformationen und Anzeigen der Ergebnisse als Text, XML oder HTML
+- Die Fähigkeit zum Ausführen von XSLT-Transformationen und zum Anzeigen der Ergebnisse als Text, XML oder HTML
 
-- Die Möglichkeit zum Generieren von Schemas für XML Schema Definition Language (XSD) aus dem XML-Instanzdokument
+- Die Fähigkeit zum Generieren von XSD-Schemas (XML Schema Definition Language) aus dem XML-Instanzdokument
 
 - Unterstützung für das Bearbeiten von XSLT-Stylesheets, einschließlich IntelliSense-Unterstützung
 
@@ -63,19 +63,19 @@ Folgende zusätzlichen Funktionen sind verfügbar:
 
 ## <a name="xml-schema-designer"></a>XML-Schema-Designer
 
-Die [XML-Schema-Designer](xml-schema-designer.md) integriert ist, mit Visual Studio und dem XML-Editor, um mit Schemas für XML Schema Definition Language (XSD) arbeiten können.
+Der [XML-Schema-Designer](xml-schema-designer.md) ist in Visual Studio und den XML-Editor integriert, damit Sie mit XSD-Schemas (XML Schema Definition Language) arbeiten können.
 
 ## <a name="xslt-debugging"></a>Debuggen von XSLT-Code
 
-Visual Studio unterstützt [Debuggen von XSLT-Stylesheets](../xml-tools/debugging-xslt.md). Mithilfe des Debuggers können Sie Haltepunkte in einem XSLT-Stylesheet festlegen, den Code in einem XSLT-Stylesheet schrittweise ausführen usw.
+Visual Studio unterstützt das [Debugging von XSLT-Stylesheets](../xml-tools/debugging-xslt.md). Mithilfe des Debuggers können Sie Haltepunkte in einem XSLT-Stylesheet festlegen, den Code in einem XSLT-Stylesheet schrittweise ausführen usw.
 
 > [!NOTE]
-> Der XSLT-Debugger ist nur verfügbar, in der Enterprise Edition von Visual Studio.
+> Der XSLT-Debugger ist nur in der Enterprise Edition von Visual Studio verfügbar.
 
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:System.Xml?displayProperty=fullName>
 - [XSLT-Transformationen](/dotnet/standard/data/xml/xslt-transformations)
-- [Verarbeiten von XML-Daten mithilfe des XPath-Datenmodells](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [Verarbeiten von XML-Daten mit dem XPath-Datenmodell](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
 - [XML-Dokumentobjektmodell (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)
 - [XML Schema Object Model (SOM) (XML-Schemaobjektmodell (SOM))](/dotnet/standard/data/xml/xml-schema-object-model-som)

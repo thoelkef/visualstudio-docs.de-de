@@ -12,17 +12,17 @@ helpviewer_keywords:
 - IdentifiersShouldNotHaveIncorrectSuffix
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0ed08a50ce7e4c665839f6dccb4913e13d0d774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676475"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669177"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen.
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,13 +47,13 @@ ms.locfileid: "65676475"
 |Dictionary|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|Ein Ereignishandlerdelegat.|
-|Ausnahme|<xref:System.Exception?displayProperty=fullName>|
+|-Ausnahme|<xref:System.Exception?displayProperty=fullName>|
 |Berechtigung|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Warteschlange|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stapel|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Stream|<xref:System.IO.Stream?displayProperty=fullName>|
 
- Darüber hinaus sollten die folgenden Suffixe **nicht** verwendet werden:
+ Außerdem sollten die folgenden Suffixe **nicht** verwendet werden:
 
 - delegate
 
@@ -75,4 +75,4 @@ ms.locfileid: "65676475"
  [CA1710: Bezeichner sollten ein richtiges Suffix aufweisen](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Attribute](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Ereignisse und Delegaten](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [Attribute](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Ereignisse und](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115) Delegaten
