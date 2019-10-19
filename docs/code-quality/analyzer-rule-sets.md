@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172784"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606547"
 ---
-# <a name="enable-a-category-of-rules"></a>Aktivieren einer Kategorie von Regeln
+# <a name="enable-a-category-of-rules"></a>Aktivieren der Regelkategorie
 
 Analysepakete können vordefinierte [Editor config](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) -und [Regel Satz](using-rule-sets-to-group-code-analysis-rules.md) Dateien enthalten, die es Ihnen ermöglichen, eine Kategorie von Regeln, wie z. b. Sicherheits-oder Entwurfs Regeln, schnell und einfach zu aktivieren. Das nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthält sowohl Regelsätze (beginnend mit Version 2.6.2) als auch Editor config-Dateien (beginnend mit Version 2.9.5). Indem Sie eine bestimmte Kategorie von Regeln aktivieren, können Sie gezielte Probleme und bestimmte Bedingungen ermitteln.
 
@@ -53,13 +53,13 @@ Jede dieser Kategorien von Regeln verfügt über eine Editor config-oder Regel S
 
 ## <a name="predefined-editorconfig-files"></a>Vordefinierte Editor config-Dateien
 
-Die vordefinierten Editor config-Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\editorconfig* Verzeichnis. Beispielsweise befindet sich die Datei "Editor config", um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__ t-5. Editor config*.
+Die vordefinierten Editor config-Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich in " *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \editor config".* Verzeichnis. Beispielsweise befindet sich die Datei "Editor config", um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \editor config\securityrulesenabled \\. Editor config*.
 
 Kopieren Sie die ausgewählte Editor config-Datei in das Stammverzeichnis Ihres Projekts.
 
 ## <a name="predefined-rule-sets"></a>Vordefinierter Regelsatz
 
-Die vordefinierten Regel Satz Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\rulesets* befinden. Beispielsweise befindet sich die Regel Satz Datei, um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\rulesets\SecurityRulesEnabled.RuleSet*.
+Die vordefinierten Regel Satz Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \rulesets* befinden. Beispielsweise befindet sich die Regel Satz Datei, um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \ruleseung\securityrulesenabled.RuleSet*.
 
 Kopieren Sie mindestens einen Regelsatz, und fügen Sie ihn in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
 

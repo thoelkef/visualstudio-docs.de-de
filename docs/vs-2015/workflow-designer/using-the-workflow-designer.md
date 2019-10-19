@@ -1,5 +1,5 @@
 ---
-title: Mit dem Workflowdesigner | Microsoft-Dokumentation
+title: Verwenden des Workflow-Designer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,37 +9,30 @@ helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], using
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1490708dc3dce4120d79879ded69283dd6108f67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855425"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656367"
 ---
 # <a name="using-the-workflow-designer"></a>Verwenden des Workflow-Designers
-In diesem Abschnitt wird beschrieben, wie neue Aktivitäten und Workflowprojekte mithilfe der integrierten Designer und dem Ausdrucks-Editor, der von einigen Aktivitätsdesignern gehostet wird, erstellt werden.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Erstellen eines Workflowprojekts](../workflow-designer/creating-a-workflow-project.md)  
- Themen, die beschreiben, wie Bibliotheken mithilfe dieser Vorlagen erstellt werden.  
-  
- [Vorgehensweise: Hinzufügen von Aktivitäten zur Toolbox](../workflow-designer/how-to-add-activities-to-the-toolbox.md)  
- Veranschaulicht die verschiedenen Methoden zum Hinzufügen von Aktivitäten zur Toolbox.  
-  
- [Vorgehensweise: Verwenden des Argument-Designers](../workflow-designer/how-to-use-the-argument-designer.md)  
- Zeigt, wie es der Argument-Designer vereinfacht, Daten in eine und aus einer Aktivität fließen zu lassen.  
-  
- [Vorgehensweise: Verwenden des Variablen-Designers](../workflow-designer/how-to-use-the-variable-designer.md)  
- Zeigt, wie Variablen zur Verwendung in Datenbindungsszenarien und Bedingungsanweisungen erstellt werden.  
-  
- [Vorgehensweise: Use the Expression Editor (Vorgehensweise: Verwenden des Ausdrucks-Editors)](../workflow-designer/how-to-use-the-expression-editor.md)  
- Zeigt, wie mit dem Ausdrucks-Editor Ausdrücke eingegeben und ausgewertet werden.  
-  
- [Vorgehensweise: Use the Imports Designer (Vorgehensweise: Verwenden des Import-Designers)](../workflow-designer/how-to-use-the-imports-designer.md)  
- Zeigt, wie Namespaces für die Typen eingegeben werden, die Sie in Ausdrücken verwenden.  
-  
- [Vorgehensweise: Verwenden der Brotkrümelnavigation](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
- Zeigt, wie zwischen Aktivitäten navigiert wird.
+In diesem Abschnitt wird beschrieben, wie neue Aktivitäten und Workflowprojekte mithilfe der integrierten Designer und dem Ausdrucks-Editor, der von einigen Aktivitätsdesignern gehostet wird, erstellt werden.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Erstellen eines Workflow Projekts](../workflow-designer/creating-a-workflow-project.md) Themen, in denen beschrieben wird, wie Bibliotheken mithilfe dieser Vorlagen erstellt werden.
+
+ Gewusst [wie: Hinzufügen von Aktivitäten zur Toolbox](../workflow-designer/how-to-add-activities-to-the-toolbox.md) Zeigt die verschiedenen Möglichkeiten zum Hinzufügen von Aktivitäten zur Toolbox.
+
+ Gewusst [wie: Verwenden des Argument-Designers](../workflow-designer/how-to-use-the-argument-designer.md) Zeigt, wie der Argument-Designer es vereinfacht, Daten in eine und aus einer Aktivität fließen zu lassen.
+
+ Gewusst [wie: Verwenden des Variablen-Designers](../workflow-designer/how-to-use-the-variable-designer.md) Zeigt, wie Variablen zur Verwendung in Daten Bindungs Szenarien und Bedingungs Anweisungen erstellt werden.
+
+ Gewusst [wie: Verwenden des Ausdrucks-Editors](../workflow-designer/how-to-use-the-expression-editor.md) Zeigt, wie der Ausdrucks-Editor zum eingeben und Auswerten von Ausdrücken verwendet wird.
+
+ Gewusst [wie: Verwenden des Imports-Designers](../workflow-designer/how-to-use-the-imports-designer.md) Zeigt, wie Namespaces für die Typen eingegeben werden, die Sie in Ihren Ausdrücken verwenden.
+
+ Gewusst [wie: Verwenden der Breadcrumb-Navigation](../workflow-designer/how-to-use-breadcrumb-navigation.md) Zeigt, wie zwischen Aktivitäten navigiert wird.

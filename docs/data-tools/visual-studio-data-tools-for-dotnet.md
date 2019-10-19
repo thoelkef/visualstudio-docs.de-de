@@ -1,46 +1,46 @@
 ---
-title: Datatools für .NET
+title: Daten Tools für .net
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66745299"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648095"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Datentools für .NET
 
-Visual Studio und .NET bieten zusammen umfangreiche API und toolunterstützung für die Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche. Die Klassen in .NET, die Datenzugriffs-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, zusammen mit den Daten, die in Visual Studio-Tools wurde entwickelt, hauptsächlich als Unterstützung für relationale Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbank-Anbieter oder von Dritten, ADO.NET-Anbieter gewährleistet.
+Visual Studio und .net bieten eine umfassende Unterstützung für APIs und Tools zum Herstellen einer Verbindung mit Datenbanken, zum Modellieren von Daten im Arbeitsspeicher und zum Anzeigen der Daten auf der Benutzeroberfläche. Die .NET-Klassen, die Datenzugriffs Funktionen bereitstellen, werden als [ADO.net](/dotnet/framework/data/adonet/index)bezeichnet. ADO.net, zusammen mit den Daten Tools in Visual Studio, wurde hauptsächlich zur Unterstützung von relationalen Datenbanken und XML entwickelt. Heutzutage bieten viele nosql-Datenbankanbieter oder Drittanbieter ADO.NET-Anbieter an.
 
-[.NET Core](/dotnet/core/) ADO.NET, mit Ausnahme von Datasets und ihre verwandten Typen unterstützt. Wenn Sie .NET Core abzielen und eine objektrelationales Mapping (ORM)-Ebene, verwenden Sie [Entity Framework Core](/ef/core/).
+[.Net Core](/dotnet/core/) unterstützt ADO.net, mit Ausnahme von Datasets und den zugehörigen Typen. Wenn Sie .net Core als Ziel verwenden und eine ORM-Ebene (Object-Relational Mapping) benötigen, verwenden Sie [Entity Framework Core](/ef/core/).
 
 Das folgende Diagramm zeigt eine vereinfachte Ansicht der grundlegenden Architektur:
 
 ![ADO.NET-Architektur](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
-## <a name="typical-workflow"></a>Typischer workflow
+## <a name="typical-workflow"></a>Typischer Workflow
 
-Der typische Arbeitsablauf umfasst dies:
+Der typische Workflow lautet wie folgt:
 
-1. Installieren Sie eine Entwicklungs- oder Testdatenbank auf dem lokalen Computer. Finden Sie unter [Installieren von Datenbanksystemen, Tools und Beispielen](../data-tools/installing-database-systems-tools-and-samples.md). Wenn Sie einen Azure Data Service verwenden, ist dieser Schritt nicht erforderlich.
+1. Installieren Sie eine Entwicklungs-oder Testdatenbank auf dem lokalen Computer. Weitere Informationen finden Sie unter [Installieren von Datenbanksystemen, Tools und Beispielen](../data-tools/installing-database-systems-tools-and-samples.md). Wenn Sie einen Azure-Datendienst verwenden, ist dieser Schritt nicht erforderlich.
 
-2. Testen Sie die Verbindung mit der Datenbank (oder Dienst oder lokale Datei) in Visual Studio. Finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).
+2. Testen Sie die Verbindung mit der Datenbank (oder dem Dienst oder der lokalen Datei) in Visual Studio. Siehe [Hinzufügen neuer Verbindungen](../data-tools/add-new-connections.md).
 
-3. (Optional) Verwenden Sie die Tools zum Generieren und konfigurieren ein neues Modell aus. Modelle auf Grundlage von Entity Framework sind die Empfehlung für neue Anwendungen. Das Modell, einem Sie verwenden, ist die Datenquelle, mit der die Anwendung interagiert. Das Modell befindet sich logisch zwischen der Datenbank "oder" Service "und" der Anwendung verwendet wird. Finden Sie unter [neue Datenquellen hinzufügen](../data-tools/add-new-data-sources.md).
+3. Optionale Verwenden Sie die-Tools, um ein neues Modell zu generieren und zu konfigurieren. Modelle, die auf Entity Framework basieren, sind die Standard Empfehlung für neue Anwendungen. Das Modell, das Sie verwenden, ist die Datenquelle, mit der die Anwendung interagiert. Das Modell befindet sich logisch zwischen der Datenbank oder dem Dienst und der Anwendung. Siehe [Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md).
 
-4. Ziehen Sie die Datenquelle aus der **Datenquellen** Fenster auf einer Windows Forms, ASP.NET oder Windows Presentation Foundation-Entwurfsoberfläche, um den Code für die Datenbindung zu generieren, die die Daten für den Benutzer auf die Weise angezeigt werden, die Sie angeben. Finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+4. Ziehen Sie die Datenquelle aus dem **Datenquellen** Fenster auf eine Windows Forms-, ASP.net-oder Windows Presentation Foundation-Entwurfs Oberfläche, um den Daten Bindungs Code zu generieren, der die Daten für den Benutzer auf die von Ihnen angegebene Weise anzeigt. Siehe [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-5. Hinzufügen von benutzerdefiniertem Code für Aspekte wie Geschäftsregeln, Suche und datenüberprüfung oder benutzerdefinierte Funktionalität nutzen, die die zugrunde liegenden Datenbank verfügbar macht.
+5. Fügen Sie benutzerdefinierten Code für Dinge wie Geschäftsregeln, Suche und Datenvalidierung hinzu, oder verwenden Sie benutzerdefinierte Funktionen, die von der zugrunde liegenden Datenbank verfügbar gemacht werden.
 
-Sie können überspringen Sie Schritt 3 und Programmieren eine Anwendung .NET Befehle direkt an eine Datenbank, sondern mithilfe eines Modells. In diesem Fall finden Sie hier auf die entsprechende Dokumentation: [ADO.NET](/dotnet/framework/data/adonet/index). Beachten Sie, mit denen Sie immer noch die **Assistenten zur Datenquellenkonfiguration** und Designern, die Datenbindung-Code generieren, wenn Sie Ihre eigenen Objekte im Arbeitsspeicher, und klicken Sie dann eine Datenbindung von UI-Steuerelemente mit diesen Objekten aufzufüllen.
+Sie können Schritt 3 überspringen und eine .NET-Anwendung programmieren, um Befehle direkt an eine Datenbank auszugeben, anstatt ein Modell zu verwenden. In diesem Fall finden Sie hier auf die entsprechende Dokumentation: [ADO.NET](/dotnet/framework/data/adonet/index). Beachten Sie, dass Sie den **Assistenten zum Konfigurieren von Datenquellen** und Designer weiterhin verwenden können, um Daten Bindungs Code zu generieren, wenn Sie Ihre eigenen Objekte im Arbeitsspeicher auffüllen und anschließend Daten der Benutzeroberflächen-Steuerelemente an diese Objekte binden.
 
 ## <a name="see-also"></a>Siehe auch
 

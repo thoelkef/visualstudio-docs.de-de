@@ -2,25 +2,25 @@
 title: Anpassen von Text- und Image-Feldern
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04cd8d1eb94ba488b621fb30f9ac598ce9c71722
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445814"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653992"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
-Wenn Sie einen Text-Decorator in einer Form definieren, wird er durch einen TextField dargestellt. Beispiele für die Initialisierung von TextFields und andere ShapeFields untersuchen Sie Dsl\GeneratedCode\Shapes.cs in der DSL-Projektmappe.
+Wenn Sie einen Text-Decorator in einer Form definieren, wird er durch ein Textfeld dargestellt. Beispiele für die Initialisierung von textfields und anderen shapefields-Werten finden Sie unter dsl\generatedcode\shapes.cs in ihrer DSL-Lösung.
 
- Ein Textfeld handelt es sich um ein Objekt, das einen Bereich innerhalb einer Form, wie z. B. den Speicherplatz, die eine Bezeichnung zugewiesen verwaltet. Viele Formen der gleichen Klasse wird ein Textfeld-Instanz gemeinsam genutzt. TextField-Instanz nicht den Text der Bezeichnung für jede Instanz separat gespeichert: stattdessen die `GetDisplayText(ShapeElement)` Methode nimmt die Form als Parameter und der Text abhängig von den aktuellen Status der Form sowie ihres Modellelements suchen können.
+ Ein TextField-Objekt ist ein Objekt, das einen Bereich innerhalb einer Form verwaltet, z. b. den Platz, der einer Bezeichnung zugewiesen ist. Eine TextField-Instanz wird von vielen Formen derselben Klasse gemeinsam genutzt. Die TextField-Instanz speichert den Text der Bezeichnung nicht separat für jede Instanz: stattdessen nimmt die `GetDisplayText(ShapeElement)`-Methode die Form als Parameter an und kann den Text durchsuchen, der vom aktuellen Zustand der Form und dem zugehörigen Modellelement abhängig ist.
 
-## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Wie wird die Darstellung eines Textfeldes bestimmt.
- Die `DoPaint()` Methode aufgerufen wird, um zeigt das Feld auf dem Bildschirm. Sie können entweder die Standardeinstellung überschreiben `DoPaint(),` oder überschreiben einiger der Methoden, die ihn aufruft. Die folgende vereinfachte Version der standardmäßigen Methoden können Sie erfahren, wie Sie das Standardverhalten außer Kraft setzen:
+## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Bestimmen der Darstellung eines Textfelds
+ Die `DoPaint()`-Methode wird aufgerufen, um das Feld auf dem Bildschirm anzuzeigen. Sie können entweder die Standard `DoPaint(),` außer Kraft setzen, oder Sie können einige der Methoden außer Kraft setzen, die Sie aufruft. Mithilfe der folgenden vereinfachten Version der Standardmethoden können Sie verstehen, wie Sie das Standardverhalten überschreiben:
 
 ```csharp
 // Simplified version:
@@ -80,17 +80,17 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
 ```
 
- Es gibt mehrere Paare von `Get` Methoden und `Default` Eigenschaften, z. B. `DefaultMultipleLine/GetMultipleLine()`. Sie können die Standardeigenschaft zum Ändern des Werts für alle Instanzen des Form-Felds einen Wert zuweisen. Wenn den Wert aus einer Shape-Instanz ein anderes Kommunikationsprotokoll oder abhängig vom Zustand der Form oder ihres Modellelements unterschiedlich sein soll, überschreiben die `Get` Methode.
+ Es gibt mehrere andere Paare von `Get` Methoden und `Default` Eigenschaften, z. b. `DefaultMultipleLine/GetMultipleLine()`. Sie können der Default-Eigenschaft einen Wert zuweisen, um den Wert für alle Instanzen des Shape-Felds zu ändern. Überschreiben Sie die `Get`-Methode, um den Wert von einer Shape-Instanz zu einer anderen oder abhängig vom Zustand der Form oder des zugehörigen Modell Elements zu ändern.
 
 ## <a name="static-customizations"></a>Statische Anpassungen
- Wenn Sie jede Instanz dieses Felds Form ändern möchten, zunächst herausfinden Sie, ob Sie die Eigenschaft in der DSL-Definition festlegen können. Sie können z. B. Schriftgrad und Schriftschnitt im Eigenschaftenfenster festlegen.
+ Wenn Sie jede Instanz dieses Shape-Felds ändern möchten, ermitteln Sie zunächst, ob Sie die-Eigenschaft in der DSL-Definition festlegen können. Beispielsweise können Sie den Schrift Grad und den Schrift Schnitt im Eigenschaftenfenster festlegen.
 
- Falls nicht, und überschreiben Sie dann die `InitializeShapeFields` Ihre Shape-Klasse, und weisen Sie einen Wert an die entsprechende Methode `Default...` Eigenschaft des Textfelds.
+ Wenn dies nicht der Wert ist, überschreiben Sie die `InitializeShapeFields`-Methode der Shape-Klasse, und weisen Sie der entsprechenden `Default...`-Eigenschaft des Textfelds einen Wert zu.
 
 > [!WARNING]
-> Zum Überschreiben `InitializeShapeFields()`, müssen Sie festlegen, die **generiert doppelte Ableitungen** Eigenschaft der Shape-Klasse, `true` in der DSL-Definition.
+> Um `InitializeShapeFields()` zu überschreiben, müssen Sie die Eigenschaft **generiert Double** -Eigenschaft der Shape-Klasse auf `true` in der DSL-Definition festlegen.
 
- In diesem Beispiel hat eine Form ein Textfeld, das für die Kommentare von Benutzern verwendet wird. Die standard-Kommentar-Schriftart verwendet werden soll. Da es einer Standardschriftart, aus dem Stil handelt, können wir die Standard-Schriftart-Id festlegen:
+ In diesem Beispiel verfügt eine Form über ein Textfeld, das für Benutzerkommentare verwendet wird. Wir möchten die standardmäßige Kommentar Schriftart verwenden. Da es sich um eine Standard Schriftart aus dem Stilsatz handelt, können wir die Standard Schriftart-ID festlegen:
 
 ```csharp
 
@@ -106,13 +106,13 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 ```
 
 ## <a name="dynamic-customizations"></a>Dynamische Anpassungen
- Damit wird die Darstellung variieren abhängig vom Zustand einer Form oder ihres Modellelements, leiten Sie eine eigene Unterklasse von `TextField` und überschreiben Sie mindestens eine `Get...` Methoden. Sie müssen auch der Shape InitializeShapeFields Methode überschreiben und Ersetzen Sie die Instanz von dem Textfeld mit einer Instanz Ihrer eigenen Klasse.
+ Um die Darstellung von dem Zustand einer Form oder des Modell Elements abhängig zu machen, leiten Sie eine eigene Unterklasse von `TextField` ab, und überschreiben Sie mindestens eine `Get...` Methode. Außerdem müssen Sie die initializeshapeer Fields-Methode der Form überschreiben und die Instanz des Textfelds durch eine Instanz Ihrer eigenen Klasse ersetzen.
 
- Im folgenden Beispiel wird die Schriftart für ein Textfeld abhängig vom Zustand des Modellelements der Form einer booleschen Domäneneigenschaft.
+ Im folgenden Beispiel wird die Schriftart eines Textfelds vom Zustand einer booleschen Domänen Eigenschaft des Modell Elements der Form abhängig.
 
- Erstellen Sie eine neue DSL-Projektmappe mithilfe der Vorlage für die minimale Sprache, zum Ausführen dieses Beispiels den Code. Fügen Sie eine booleschen Domäneneigenschaft `AlternateState` mit der Domänenklasse ExampleElement. Fügen Sie ein Symbol für Decorator-Element der ExampleShape-Klasse aus, und legen Sie das Image in eine Bitmapdatei. Klicken Sie auf **alle Vorlagen transformieren**. Fügen Sie eine neue Codedatei im DSL-Projekt, und fügen Sie den folgenden Code.
+ Um diesen Beispielcode auszuführen, erstellen Sie eine neue DSL-Lösung mithilfe der Vorlage für minimale Sprache. Fügen Sie der "ExampleElement"-Domänen Klasse eine boolesche Domänen Eigenschafts `AlternateState` hinzu. Fügen Sie der Klasse exampleshape ein symboldecorator-Symbol hinzu, und legen Sie dessen Bild auf eine Bitmapdatei fest. Klicken Sie auf **alle Vorlagen transformieren**. Fügen Sie im DSL-Projekt eine neue Codedatei hinzu, und fügen Sie den folgenden Code ein.
 
- Um den Code zu testen, drücken Sie F5, und öffnen Sie in der Projektmappe Debuggen ein Beispieldiagramm. Der Standardzustand des Symbols sollte angezeigt werden. Wählen Sie die Form, und ändern Sie im Eigenschaftenfenster den Wert des der **AlternateState** Eigenschaft. Die Schriftart des Elementnamens sollten ändern.
+ Um den Code zu testen, drücken Sie F5, und öffnen Sie in der Projekt Mappe Debuggen ein Beispiel Diagramm. Der Standardzustand des Symbols sollte angezeigt werden. Wählen Sie die Form aus, und ändern Sie in der Eigenschaftenfenster den Wert der Eigenschaft **Alternativen** Wert. Die Schriftart des Element namens sollte sich ändern.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -167,39 +167,39 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   }
 ```
 
-## <a name="style-sets"></a>Formatvorlagen
- Das vorhergehende Beispiel zeigt, wie Sie das Textfeld ein, alle Schriftarten ändern können, die verfügbar ist. Allerdings ist die bevorzugte Methode zum Ändern eines Formatvorlagen, die die Form oder mit der Anwendung zugeordnet ist. Zu diesem Zweck Sie außer Kraft setzen <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> oder GetTextBrushId().
+## <a name="style-sets"></a>Stil Gruppen
+ Im vorangehenden Beispiel wird gezeigt, wie Sie das Textfeld in eine beliebige Schriftart ändern können, die verfügbar ist. Eine bevorzugte Methode ist jedoch, Sie in eine Gruppe von Stilen zu ändern, die der Form oder der Anwendung zugeordnet ist. Zu diesem Zweck überschreiben Sie <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> oder gettextbrushid ().
 
- Alternativ sollten Sie Änderungen der Formatvorlage die Form durch Überschreiben <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Dies hat es sich um die Auswirkungen der Änderung die Schriftarten und Pinsel für alle formfelder.
+ Sie können auch den Stil Satz ihrer Form ändern, indem Sie <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A> überschreiben. Dies hat den Effekt, dass die Schriftarten und Pinsel für alle Form Felder geändert werden.
 
-## <a name="customizing-image-fields"></a>Anpassen von Image-Feldern
- Wenn Sie ein Decorator-Bildelement in einer Form definieren, und wenn Sie eine Bild-Form definieren, wird der Bereich, in dem die Form angezeigt wird, von einem ImageField verwaltet. Beispiele für die Initialisierung von ImageFields und andere ShapeFields untersuchen Sie Dsl\GeneratedCode\Shapes.cs in der DSL-Projektmappe.
+## <a name="customizing-image-fields"></a>Anpassen von Bildfeldern
+ Wenn Sie in einer Form einen Bild-Decorator definieren und eine Bildform definieren, wird der Bereich, in dem die Form angezeigt wird, von einem ImageField verwaltet. Beispiele für die Initialisierung von imagefields und anderen shapefields-Werten finden Sie unter dsl\generatedcode\shapes.cs in ihrer DSL-Lösung.
 
- Ein ImageField handelt es sich um ein Objekt, das einen Bereich innerhalb einer Form, wie z. B. den Speicherplatz zugewiesen werden, um ein Decorator-Element verwaltet. Viele Formen der gleiche Shape-Klasse wird eine Instanz von ImageField gemeinsam genutzt. Die ImageField-Instanz ein separates Abbild für jede Form nicht gespeichert: stattdessen die `GetDisplayImage(ShapeElement)` Methode nimmt die Form als Parameter und das Image abhängig von den aktuellen Status der Form sowie ihres Modellelements suchen können.
+ Ein ImageField ist ein Objekt, das einen Bereich innerhalb einer Form verwaltet, z. b. den einem Decorator zugewiesenen Raum. Eine ImageField-Instanz wird von vielen Formen derselben Shape-Klasse gemeinsam genutzt. Die ImageField-Instanz speichert kein separates Bild für jede Form: stattdessen nimmt die `GetDisplayImage(ShapeElement)`-Methode die Form als Parameter an und kann das Bild nach dem aktuellen Zustand der Form und dem zugehörigen Modellelement suchen.
 
- Wenn besonderes Verhalten wie eine Image-Variablen werden sollen, können Sie eine eigene Klasse von ImageField erstellen.
+ Wenn Sie ein spezielles Verhalten (z. b. ein Variablen Bild) wünschen, können Sie eine eigene Klasse erstellen, die von ImageField abgeleitet ist.
 
-#### <a name="to-create-a-subclass-of-imagefield"></a>Erstellen Sie eine Unterklasse von ImageField
+#### <a name="to-create-a-subclass-of-imagefield"></a>So erstellen Sie eine Unterklasse von ImageField
 
-1. Legen Sie die **generiert doppelte Ableitungen** Eigenschaft der übergeordneten Form-Klasse in Ihrer DSL-Definition.
+1. Legen Sie die Eigenschaft **generiert Double abgeleitet** der übergeordneten Shape-Klasse in der DSL-Definition fest.
 
-2. Überschreiben der `InitializeShapeFields` Methode der Shape-Klasse.
+2. Überschreiben Sie die `InitializeShapeFields`-Methode der Shape-Klasse.
 
-    - Erstellen Sie eine neue Codedatei im DSL-Projekt, und Schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Definition der Methode vorhanden.
+    - Erstellen Sie eine neue Codedatei im DSL-Projekt, und schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Methoden Definition dort.
 
-3. Überprüfen Sie den Code der `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.
+3. Überprüfen Sie den Code der `InitializeShapeFields` in dsl\generatedcode\shapes.cs.
 
-     Rufen Sie in der Überschreibungsmethode die Basismethode auf, und klicken Sie dann erstellen Sie eine Instanz Ihrer eigenen Images-Feld-Klasse. Verwenden Sie diese ersetzen die regulären Bildfeld in der `shapeFields` Liste.
+     Rufen Sie in ihrer Überschreibungs Methode die Basis Methode auf, und erstellen Sie dann eine Instanz Ihrer eigenen Bild Feld Klasse. Verwenden Sie dieses, um das Feld reguläres Image in der Liste `shapeFields` zu ersetzen.
 
 ## <a name="dynamic-icons"></a>Dynamische Symbole
- In diesem Beispiel wird ein Symbol zu ändern, die abhängig vom Zustand des Modellelements der Form.
+ In diesem Beispiel wird eine Symbol Änderung abhängig vom Zustand des Modell Elements der Form.
 
 > [!WARNING]
-> In diesem Beispiel wird veranschaulicht, wie Sie ein dynamisches Bild-Decorator-Element. Aber wenn Sie nur ein oder zwei Abbilder abhängig vom Status einer Variablen des Modells wechseln möchten, es ist einfacher, mehrere Image-Decorator-Elemente erstellen, suchen sie in der gleichen Position auf der Form und legen Sie den Filter Sichtbarkeit, hängt von bestimmten Werten des Modells Variable. Zum Festlegen dieser Filter wählen Sie das flächenkartogramm, in der DSL-Definition, öffnen Sie das DSL-Details-Fenster, und klicken Sie auf der Registerkarte "Decorator-Elemente".
+> In diesem Beispiel wird veranschaulicht, wie ein Dynamic Image Decorator-Gerät gemacht wird. Wenn Sie jedoch nur zwischen einem oder zwei Bildern wechseln möchten (abhängig vom Zustand einer Modell Variablen), ist es einfacher, mehrere Bild-Decorator-Elemente zu erstellen, Sie an derselben Position in der Form zu suchen und dann den Sichtbarkeits Filter so festzulegen, dass er von bestimmten Werten des Modells abhängt. veränder. Um diesen Filter festzulegen, wählen Sie die Form Zuordnung in der DSL-Definition aus, öffnen Sie das Fenster DSL-Details, und klicken Sie auf die Registerkarte Decorators.
 
- Erstellen Sie eine neue DSL-Projektmappe mithilfe der Vorlage für die minimale Sprache, zum Ausführen dieses Beispiels den Code. Fügen Sie eine booleschen Domäneneigenschaft `AlternateState` mit der Domänenklasse ExampleElement. Fügen Sie ein Symbol für Decorator-Element der ExampleShape-Klasse aus, und legen Sie das Image in eine Bitmapdatei. Klicken Sie auf **alle Vorlagen transformieren**. Fügen Sie eine neue Codedatei im DSL-Projekt, und fügen Sie den folgenden Code.
+ Um diesen Beispielcode auszuführen, erstellen Sie eine neue DSL-Lösung mithilfe der Vorlage für minimale Sprache. Fügen Sie der "ExampleElement"-Domänen Klasse eine boolesche Domänen Eigenschafts `AlternateState` hinzu. Fügen Sie der Klasse exampleshape ein symboldecorator-Symbol hinzu, und legen Sie dessen Bild auf eine Bitmapdatei fest. Klicken Sie auf **alle Vorlagen transformieren**. Fügen Sie im DSL-Projekt eine neue Codedatei hinzu, und fügen Sie den folgenden Code ein.
 
- Um den Code zu testen, drücken Sie F5, und öffnen Sie in der Projektmappe Debuggen ein Beispieldiagramm. Der Standardzustand des Symbols sollte angezeigt werden. Wählen Sie die Form, und ändern Sie im Eigenschaftenfenster den Wert des der **AlternateState** Eigenschaft. Das Symbol sollte dann über dieser Form um 90 Grad gedreht angezeigt.
+ Um den Code zu testen, drücken Sie F5, und öffnen Sie in der Projekt Mappe Debuggen ein Beispiel Diagramm. Der Standardzustand des Symbols sollte angezeigt werden. Wählen Sie die Form aus, und ändern Sie in der Eigenschaftenfenster den Wert der Eigenschaft **Alternativen** Wert. Das Symbol sollte dann auf dieser Form um 90 Grad gedreht angezeigt werden.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

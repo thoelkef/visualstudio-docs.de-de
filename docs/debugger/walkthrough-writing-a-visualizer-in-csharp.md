@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 995508380fd551af33d98ebd48ab02a8287d0284
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890922"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637952"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#\#
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C\#
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in C# eine einfache Schnellansicht schreiben können. Die in dieser exemplarischen Vorgehensweise erstellte Schnellansicht zeigt den Inhalt einer Zeichenfolge in einem Windows Forms-Meldungsfeld an. Diese einfache Zeichenfolgen-Schnellansicht ist an sich nicht sehr nützlich, doch wird an ihrem Beispiel die grundlegende Vorgehensweise für das Erstellen besser geeigneter Schnellansichten für andere Datentypen gezeigt.
 
 > [!NOTE]
@@ -29,22 +29,22 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in C# eine einfach
 
 Schnellansichtcode muss in eine DLL eingefügt werden, die vom Debugger gelesen wird. Deshalb müssen Sie als Erstes ein Klassenbibliotheksprojekt für die DLL erstellen.
 
-## <a name="create-a-visualizer-manually"></a>Erstellen Sie eine Schnellansicht manuell
+## <a name="create-a-visualizer-manually"></a>Manuelles Erstellen einer Schnellansicht
 
-Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
+Führen Sie die folgenden Aufgaben aus, um eine Schnellansicht zu erstellen.
 
 ### <a name="to-create-a-class-library-project"></a>So erstellen Sie ein Klassenbibliotheksprojekt
 
 1. Erstellen Sie ein neues Klassenbibliotheksprojekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Klassenbibliothek**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen Sie eine neue Klassenbibliothek ((.NET Standard)** . Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Class Library**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann **Create a New Class Library (.NET Standard)** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Im linken Bereich die **neues Projekt** Dialogfeld **Visual C#** , wählen Sie **.NET Standard**, und wählen Sie dann im mittleren Bereich **Class-Bibliothek (. NET Standard)** .
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialog Felds **Neues Projekt** unter **Visual C#**  **.NET Standard**aus, und klicken Sie dann im mittleren Bereich auf **Klassenbibliothek (.NET Standard)** .
     ::: moniker-end
 
-2. Geben Sie einen geeigneten Namen für die Klassenbibliothek, z. B. `MyFirstVisualizer`, und klicken Sie dann auf **erstellen** oder **OK**.
+2. Geben Sie einen geeigneten Namen für die Klassenbibliothek ein, z. b. `MyFirstVisualizer`, und klicken Sie dann auf **Erstellen** oder **OK**.
 
    Nachdem Sie die Klassenbibliothek erstellt haben, müssen Sie einen Verweis auf Microsoft.VisualStudio.DebuggerVisualizers.DLL hinzufügen, damit die dort definierten Klassen verwendet werden können. Bevor Sie den Verweis hinzufügen, müssen Sie aber einige Klassen umbenennen, damit sie aussagekräftige Namen haben.
 
@@ -59,13 +59,13 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 
 3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie im Kontextmenü **Verweis hinzufügen** aus.
 
-4. In der **Verweis hinzufügen** Dialogfeld auf die **Durchsuchen** Registerkarte **Durchsuchen** und suchen Sie die Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+4. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Durchsuchen** die Option **Durchsuchen** aus, und suchen Sie die Datei Microsoft. VisualStudio. DebuggerVisualizers. dll.
 
-    Sie finden die DLL im  *\<Visual Studio-Installationsverzeichnis > \Common7\IDE\PublicAssemblies* Unterverzeichnis des Visual Studio-Installationsverzeichnis.
+    Sie finden die dll in *\<Visual Studio-Installationsverzeichnis > \common7\ide\publicassemblies* Unterverzeichnis des Installationsverzeichnisses von Visual Studio.
 
 5. Klicken Sie auf **OK**.
 
-6. Fügen Sie in DebuggerSide.cs den `using`-Anweisungen die folgende Anweisung hinzu:
+6. Fügen Sie in DebuggerSide.cs der `using`-Direktiven Folgendes hinzu:
 
    ```csharp
    using Microsoft.VisualStudio.DebuggerVisualizers;
@@ -99,19 +99,19 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
   }
   ```
 
-  Die `Show`-Methode enthält den Code, der für das Erstellen des Dialogfelds der Schnellansicht oder eines anderen Benutzeroberflächenelements verantwortlich ist. Sie zeigt die Informationen an, die der Debugger an die Schnellansicht übergibt. Den Code, der das Dialogfeld erstellt und die Informationen anzeigt, müssen Sie hinzufügen. In dieser exemplarischen Vorgehensweise verwenden Sie dazu ein Windows Forms-Meldungsfeld. Zuerst müssen Sie einen Verweis und eine `using`-Anweisung für System.Windows.Forms hinzufügen.
+  Die `Show`-Methode enthält den Code, der für das Erstellen des Dialogfelds der Schnellansicht oder eines anderen Benutzeroberflächenelements verantwortlich ist. Sie zeigt die Informationen an, die der Debugger an die Schnellansicht übergibt. Den Code, der das Dialogfeld erstellt und die Informationen anzeigt, müssen Sie hinzufügen. In dieser exemplarischen Vorgehensweise verwenden Sie dazu ein Windows Forms-Meldungsfeld. Zuerst müssen Sie einen Verweis und eine `using`-Direktive für "System. Windows. Forms" hinzufügen.
 
 ### <a name="to-add-systemwindowsforms"></a>So fügen Sie System.Windows.Forms hinzu
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie im Kontextmenü **Verweis hinzufügen** aus.
 
-2. In der **Verweis hinzufügen** Dialogfeld auf die **Durchsuchen** Registerkarte **Durchsuchen**, und suchen Sie die "System.Windows.Forms.dll".
+2. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Durchsuchen** die Option **Durchsuchen**aus, und suchen Sie die System. Windows. Forms. dll.
 
-    Sie finden die DLL im *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
+    Sie finden die dll in *C:\WINDOWS\Microsoft.Net\Framework\v4.0.30319*.
 
 3. Klicken Sie auf **OK**.
 
-4. Fügen Sie in DebuggerSide.cs den `using`-Anweisungen die folgende Anweisung hinzu:
+4. Fügen Sie in DebuggerSide.cs der `using`-Direktiven Folgendes hinzu:
 
    ```csharp
    using System.Windows.Forms;
@@ -135,7 +135,7 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 
 ### <a name="to-add-the-debuggee-side-code"></a>So fügen Sie den Code für die zu debuggende Seite hinzu
 
-1. Fügen Sie DebuggerSide.cs den folgenden Attributcode hinzu, und zwar nach den `using`-Anweisungen und vor `namespace MyFirstVisualizer`:
+1. Fügen Sie den folgenden Attribut Code zu DebuggerSide.cs nach den `using` Direktiven, jedoch vor `namespace MyFirstVisualizer` hinzu:
 
    ```csharp
    [assembly:System.Diagnostics.DebuggerVisualizer(
@@ -167,16 +167,16 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>So fügen Sie der Projektmappe ein Konsolenanwendungsprojekt hinzu
 
-1. Klicken Sie im Projektmappen-Explorer mit der Maustaste der lösungs, wählen Sie **hinzufügen**, und klicken Sie dann auf **neues Projekt**.
+1. Klicken Sie in Projektmappen-Explorer mit der rechten Maustaste auf die Projekt Mappe, und wählen Sie **Hinzufügen**und dann **Neues Projekt**aus.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in das Suchfeld **Konsolen-app**, wählen Sie **Vorlagen**, wählen Sie dann **erstellen eine neue Konsolenanwendung ((.NET Framework)** . Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Geben Sie im Suchfeld Konsolen- **App**ein, wählen Sie **Vorlagen**aus, und wählen Sie dann **neue Konsolen-app erstellen (.NET Framework)** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
     ::: moniker-end
 
-2. Geben Sie einen geeigneten Namen für die Klassenbibliothek, z. B. `MyTestConsole`, und klicken Sie dann auf **erstellen** oder **OK**.
+2. Geben Sie einen geeigneten Namen für die Klassenbibliothek ein, z. b. `MyTestConsole`, und klicken Sie dann auf **Erstellen** oder **OK**.
 
    Jetzt müssen Sie die notwendigen Verweise hinzufügen, damit MyFirstVisualizer von MyTestConsole aufgerufen werden kann.
 
@@ -184,7 +184,7 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyTestConsole**, und wählen Sie im Kontextmenü **Verweis hinzufügen** aus.
 
-2. In der **Verweis hinzufügen** Dialogfeld **Durchsuchen** Registerkarte, die den Eintrag Microsoft.VisualStudio.DebuggerVisualizers.dll.
+2. **Klicken** Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte "Microsoft. VisualStudio. DebuggerVisualizers. dll".
 
 3. Klicken Sie auf **OK**.
 
@@ -205,7 +205,7 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
     > [!NOTE]
     > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] passt die Klassendeklaration in TestConsole.cs automatisch an den neuen Dateinamen an.
 
-3. Fügen Sie in TestConsole.cs den `using`-Anweisungen den folgenden Code hinzu:
+3. Fügen Sie in TestConsole.cs den folgenden Code zu den `using`-Anweisungen hinzu:
 
    ```csharp
    using MyFirstVisualizer;
@@ -230,9 +230,9 @@ Führen Sie die Schritte, die unten, um eine Schnellansicht zu erstellen.
 
    Herzlichen Glückwunsch! Sie haben soeben Ihre erste Schnellansicht erstellt und getestet.
 
-   Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Vorgehensweise: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).
+   Wenn Sie die Schnellansicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und nicht nur innerhalb der Testumgebung verwenden möchten, dann müssen Sie die Schnellansicht installieren. Weitere Informationen finden Sie unter [Gewusst wie: Installieren einer](../debugger/how-to-install-a-visualizer.md)Schnellansicht.
 
-## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Erstellen Sie eine Schnellansicht mithilfe der Schnellansichtelementvorlage
+## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Erstellen einer Schnellansicht mithilfe der Element Vorlage "Schnellansicht"
 
 Bis jetzt wurde in dieser exemplarischen Vorgehensweise erläutert, wie eine Schnellansicht manuell erstellt wird. Dies war eine Lernübung. Da Sie jetzt wissen, wie eine simple Schnellansicht funktioniert, können Sie diese auch auf einfachere Weise mithilfe der Schnellansichtelementvorlage erstellen.
 
@@ -242,9 +242,9 @@ Zuerst müssen Sie ein neues Klassenbibliotheksprojekt erstellen.
 
 1. Klicken Sie im Menü **Datei** auf **Neu > Projekt**.
 
-2. In der **neues Projekt** Dialogfeld **Visual C#-** Option **.NET Standard**.
+2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Visual C#** den **.NET Standard**aus.
 
-3. Wählen Sie im mittleren Bereich **Klassenbibliothek**.
+3. Wählen Sie im mittleren Bereich die Option **Klassenbibliothek**aus.
 
 4. Geben Sie im Feld **Name** für die Klassenbibliothek einen entsprechenden Namen ein, zum Beispiel „MySecondVisualizer“.
 
@@ -258,7 +258,7 @@ Zuerst müssen Sie ein neues Klassenbibliotheksprojekt erstellen.
 
 2. Wählen Sie im Kontextmenü die Option **Hinzufügen** aus, und klicken Sie danach auf **Neues Element**.
 
-3. In der **neues Element hinzufügen** Dialogfeld **Visual c#-Elemente**Option **Debuggerschnellansicht**.
+3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **visuelle C# Elemente**die Option **Debugger**-Schnellansicht aus.
 
 4. Geben Sie im Feld **Name** einen passenden Namen ein, zum Beispiel „SecondVisualizer.cs“.
 
@@ -269,5 +269,5 @@ Zuerst müssen Sie ein neues Klassenbibliotheksprojekt erstellen.
 ## <a name="see-also"></a>Siehe auch
 
 - [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)
-- [Vorgehensweise: Install a Visualizer (Vorgehensweise: Installieren einer Schnellansicht)](../debugger/how-to-install-a-visualizer.md).
+- [Gewusst wie: Installieren einer Schnellansicht](../debugger/how-to-install-a-visualizer.md)
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)

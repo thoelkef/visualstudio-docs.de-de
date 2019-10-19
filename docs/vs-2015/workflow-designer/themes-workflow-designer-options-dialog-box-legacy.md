@@ -1,5 +1,5 @@
 ---
-title: Designs, Workflowdesigner, Optionen (Dialogfeld) (Legacy) | Microsoft-Dokumentation
+title: Themen, Workflow-Designer, Dialog Feld "Optionen" (Legacy) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,32 +11,31 @@ helpviewer_keywords:
 - themes, options
 ms.assetid: 71150631-4674-4568-bce8-570bef3780ad
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03b96f80a6b595a3f037bd0b08111540fa5b4ca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b8dfd5c2aaf6e7ced24bc952d7ccadc04cc72f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976728"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654677"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Dialogfeld "Designs, Workflow-Designer, Optionen (Vorgängerversion)
-In diesem Thema wird beschrieben, wie die **Designs, Workflow-Designer, Optionen** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
-  
- Ein Design definiert die Hintergrund- und Vordergrundfarben, Formate, Symbole und andere visuelle Elemente eines Workflows. Sie können Designs für die Wiederverwendung durch andere Workflows speichern. Sie können auswählen, Standard- und benutzerdefinierte Designs mit speichern die **Designs, Workflow-Designer, Optionen** Dialogfeld. Um das Dialogfeld zu öffnen, klicken Sie auf **benutzerdefiniertes Design auswählen** auf die **Workflow** Menü. Oder, mit der rechten Maustaste in der Workflow-Entwurfsoberfläche, und klicken Sie auf **benutzerdefiniertes Design auswählen**.  
-  
- Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Designs, Workflow-Designer, Optionen** Dialogfeld.  
-  
-|Benutzeroberflächenelement|Beschreibung|  
-|----------------|-----------------|  
-|**Neu**|Klicken Sie zum Öffnen der [Designkonfigurationsdialogfeld (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) zum Erstellen eines neuen Designs.|  
-|**Ändern...**|Klicken Sie zum Öffnen der [Designkonfigurationsdialogfeld (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) um das ausgewählte Design zu ändern.|  
-|**Browse** (Durchsuchen)|Klicken Sie auf dieses Element, um nach einer Workflowdesigndatei zu suchen, die die Dateierweiterung .wtm aufweist.|  
-|**Wählen Sie ein Design**|Liste der Designnamensspaltenüberschrift der Designs. Wählen Sie ein Design aus der Liste aus, klicken Sie auf **ändern** bearbeiten, oder klicken Sie auf **OK** des ausgewählten Designs für den Workflow zu verwenden.|  
-|**Beschreibung**|Liste der Designbeschreibungsspaltenüberschrift der Designs.|  
-|**Position**|Liste der Designspeicherortspaltenüberschrift der Designs.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Designkonfigurationsdialogfeld (Vorgängerversion)](../workflow-designer/theme-configuration-dialog-box-legacy.md)   
- [Benutzeroberflächenhilfe von Visual Studio Designer für Windows Workflow Foundation (Vorgängerversion)](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+In diesem Thema wird beschrieben, wie das Dialogfeld Designs **, Workflow-Designer, Optionen** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet wird. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+
+ Ein Design definiert die Hintergrund- und Vordergrundfarben, Formate, Symbole und andere visuelle Elemente eines Workflows. Sie können Designs für die Wiederverwendung durch andere Workflows speichern. Mithilfe des Dialog Felds "Designs" **, "Workflow-Designer** " und "Optionen" können Sie standardmäßige und benutzerdefinierte Designs auswählen. Um dieses Dialogfeld zu öffnen, klicken Sie im Menü **Workflow** auf **benutzerdefiniertes Design auswählen** . Oder klicken Sie mit der rechten Maustaste auf die Workflow Entwurfs Oberfläche, und klicken Sie auf **benutzerdefiniertes Design auswählen**
+
+ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds Designs **, Workflow-Designer und Optionen** beschrieben.
+
+|Benutzeroberflächenelement|Beschreibung|
+|----------------|-----------------|
+|**Neu**|Klicken Sie hier, um das [Dialog Feld "Design Konfiguration" (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) zu öffnen und ein neues Design zu erstellen.|
+|**Ändern...**|Klicken Sie hier, um das [Dialog Feld "Design Konfiguration" (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) zu öffnen und das ausgewählte Design zu ändern.|
+|**Browse** (Durchsuchen)|Klicken Sie auf dieses Element, um nach einer Workflowdesigndatei zu suchen, die die Dateierweiterung .wtm aufweist.|
+|**Design auswählen**|Liste der Designnamensspaltenüberschrift der Designs. Wählen Sie ein Design aus der Liste aus, klicken Sie auf **ändern** , um zu bearbeiten, oder klicken Sie auf **OK** , um das ausgewählte Design für den Workflow zu verwenden|
+|**Beschreibung**|Liste der Designbeschreibungsspaltenüberschrift der Designs.|
+|**Position**|Liste der Designspeicherortspaltenüberschrift der Designs.|
+
+## <a name="see-also"></a>Siehe auch
+ Design [Konfiguration (Dialog Feld) (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) [Legacy-Designer für Windows Workflow Foundation UI-Hilfe](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

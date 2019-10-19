@@ -1,44 +1,44 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden der Funktionen des XML-Editors'
+title: 'Exemplarische Vorgehensweise: Verwenden von XML-Editor-Funktionen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624192"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604448"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden von Features des XML-Editors
+# <a name="walkthrough-use-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden von XML-Editor-Funktionen
 
-Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. Die exemplarische Vorgehensweise verwendet auch einige der Funktionen des XML-Editors, die nützlich für das Erstellen von XML zu erleichtern.
+Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. In der exemplarischen Vorgehensweise werden auch einige der Funktionen des XML-Editors verwendet, die für die XML-Erstellung wertvoll sind.
 
 > [!NOTE]
-> Speichern Sie vor dem Starten der exemplarischen Vorgehensweise, die *hireDate.xsd* Datei (unten in diesem Thema enthalten) auf dem lokalen Computer.
+> Speichern Sie vor dem Starten der exemplarischen Vorgehensweise die Datei *hireDate. xsd* (unten in diesem Thema enthalten) auf Ihrem lokalen Computer.
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Erstellen Sie eine neue XML-Datei, und ordnen sie ein XML-schema
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>So erstellen Sie eine neue XML-Datei und ordnen Sie einem XML-Schema zu
 
-1. Auf der **Datei** Startmenü **neu**, und klicken Sie auf **Datei**.
+1. Zeigen Sie im Menü **Datei** auf **neu**, und klicken Sie auf **Datei**.
 
-2. Wählen Sie **XML-Datei** in die **Vorlagen** Bereich, und klicken Sie auf **öffnen**.
+2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Datei** und dann **Öffnen**aus.
 
      Im Editor wird eine neue Datei geöffnet. Die Datei enthält eine XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen ( **...** ) auf die **Schemas** Feld.
+3. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Schemas** auf die Schaltfläche zum Durchsuchen ( **...** ).
 
-     Die **XSD-Schemas** Dialogfeld wird angezeigt.
+     Das Dialogfeld **XSD-Schemas** wird angezeigt.
 
 4. Klicken Sie auf **Hinzufügen**.
 
-     Die **XSD-Schema öffnen** Dialogfeld wird angezeigt.
+     Das Dialogfeld **XSD-Schema öffnen** wird angezeigt.
 
-5. Wählen Sie die *hireDate.xsd* Datei, und klicken Sie auf **öffnen**.
+5. Wählen Sie die Datei *hireDate. xsd* aus, und klicken Sie auf **Öffnen**.
 
 6. Klicken Sie auf **OK**.
 
@@ -50,69 +50,69 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
      In der Memberliste werden die möglichen Elemente angezeigt:
 
-    - **!--** zum Hinzufügen eines Kommentars.
+    - **!--** , um einen Kommentar hinzuzufügen.
 
-    - **! DOCTYPE** zum Hinzufügen eines Dokumenttyps.
+    - **! DOCTYPE** zum Hinzufügen eines Dokument Typs.
 
     - **?** zum Hinzufügen einer Verarbeitungsanweisung.
 
-    - **Mitarbeiter** zum Hinzufügen eines Stammelements.
+    - **Mitarbeiter** , um das Stamm Element hinzuzufügen.
 
-2. Wählen Sie  **&lt;!--** hinzufügen eine Comment-Knoten, und drücken Sie **EINGABETASTE**.
+2. Wählen Sie **&lt;!--** , um einen Kommentar Knoten hinzuzufügen, und drücken **Sie die Eingabe**Taste
 
      Der Editor fügt ein Kommentar-Endtag ein und platziert den Cursor zwischen dem Start- und Endtag des Kommentars.
 
-3. Geben Sie in **XML-Testdatei**.
+3. Geben Sie die **Test-XML-Datei**ein.
 
-4. Geben Sie auf einer neuen Zeile `<`, und wählen Sie **Mitarbeiter** in der Memberliste aus.
+4. Geben Sie in einer neuen Zeile `<` ein, und wählen Sie **Employee** aus der Liste Mitglied aus.
 
      Im Editor wird der Anfang eines XML-Elements, `<employee`, hinzugefügt. An dieser Stelle können Sie dem Element Attribute hinzufügen, oder Sie können das Starttag schließen, indem Sie `>` eingeben.
 
 5. Geben Sie `>` ein, um das Tag zu schließen.
 
-6. Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die **QuickInfo** wird die Meldung angezeigt: **Das Element "Employee" ist Inhalt unvollständig. Erwartet 'ID'** .
+6. Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die **QuickInfo zeigt die** Meldung an: **das Element "Employee" hat unvollständigen Inhalt. "ID" erwartet**.
 
-7. Typ `<` , und wählen Sie **ID** in der Memberliste aus. Geben Sie anschließend `>` ein.
+7. Geben Sie `<` ein, und wählen Sie **ID** aus der Liste Mitglied aus. Geben Sie anschließend `>` ein.
 
      Der Editor fügt das XML-Element `<ID></ID>` hinzu und platziert den Cursor hinter dem ID-Starttag.
 
-8. Typ **Abc**.
+8. Geben Sie **ABC**ein.
 
-     Die **Abc** Text weist eine wellenförmige Unterstreichung. Die **QuickInfo** wird die Meldung angezeigt: **Das Element "ID" weist einen ungültigen Wert gemäß seinem Datentyp**.
+     Der **ABC** -Text hat eine wellenförmige Unterstreichung. In der QuickInfo **wird die folgende Meldung angezeigt:** **das "ID"-Element weist einen ungültigen Wert gemäß seines Datentyps auf**.
 
-9. Mit der rechten Maustaste auf das ID-Element, und wählen Sie **Gehe zu Definition**.
+9. Klicken Sie mit der rechten Maustaste auf das ID-Element, und wählen Sie **Gehe zu Definition**.
 
-     Der Editor geöffnet wird die *hireDate.xsd* -Datei in einem neuen Dokumentfenster und platziert den Cursor auf den ID-Schemaelementdefinition.
+     Der Editor öffnet die Datei *hireDate. xsd* in einem neuen Dokument Fenster und positioniert den Cursor in der Definition des ID-Schema Elements.
 
-10. Zurückgeben der XML-Datei, und Ersetzen Sie die **Abc** Text mit **123**.
+10. Kehren Sie zur XML-Datei zurück, und ersetzen Sie den **ABC** -Text durch **123**.
 
-     Die wellenförmige Unterstreichung und **QuickInfo** deaktiviert sind, unter dem Wert des ID-Element. Die **QuickInfo** für das Ende der Mitarbeiter Tag jetzt die Meldung angezeigt: **Das Element "Employee" ist Inhalt unvollständig. Erwartet "Hire-Date"** .
+     Die Wellen **förmige Unterstreichung und die** QuickInfo werden unter dem ID-Elementwert gelöscht. Die **QuickInfo für das** Endtag Employee zeigt nun folgende Meldung an: **das Element "Employee" hat unvollständigen Inhalt. "Hire-Date" erwartet**.
 
-11. Platzieren Sie den Cursor hinter dem ID-Endtag, geben Sie im `<`Option **' Hire-Date** aus der Memberliste aus, und geben Sie `>`.
+11. Platzieren Sie den Cursor nach dem ID-Endtag, geben Sie `<` ein, wählen Sie in der Liste Mitglied den Wert " **Hire-Date** " aus, und geben Sie dann `>` ein.
 
      Der Editor fügt das XML-Element `<hire-date></hire-date>` hinzu und platziert den Cursor hinter dem 'hire-date'-Starttag.
 
-12. Geben Sie in **2003-01-10** für den ' Hire-Date-Wert.
+12. Geben Sie **2003-01-10** für den Wert "Hire-Date" ein.
 
 ## <a name="to-format-the-xml-document"></a>So formatieren Sie das XML-Dokument
 
-- Wählen Sie die **Dokument formatieren** auf der Symbolleiste des XML-Editors, oder drücken Sie Schaltfläche **STRG**+**E**,**D**.
+- Wählen Sie auf der XML-Editor-Symbolleiste die Schaltfläche **Dokument formatieren** aus, oder drücken Sie **STRG** +**E**,**D**.
 
-   ![Schaltfläche für Format XML-Dokument in Visual Studio](media/format-xml-document.png)
+   ![Formatieren der XML-Dokument Schaltfläche in Visual Studio](media/format-xml-document.png)
 
    Das XML-Dokument wird neu formatiert.
 
 ## <a name="to-save-the-xml-document"></a>So speichern Sie das XML-Dokument
 
-1. Von der **Datei** , wählen Sie im Menü **speichern**.
+1. Wählen Sie im Menü **Datei** die Option **Speichern**unter aus.
 
-     Die **Datei speichern unter** Dialogfeld wird angezeigt. Der Standarddateiname lautet *'XMLFile1'* .
+     Das Dialogfeld **Datei speichern** unter wird angezeigt. Der Standard Dateiname ist *"XMLFile1"* .
 
-2. Geben Sie den Dateinamen und Speicherort für das XML-Dokument aus, und klicken Sie auf **speichern**.
+2. Geben Sie den Namen und Speicherort für das XML-Dokument ein, und klicken Sie auf **Speichern**.
 
-## <a name="hiredatexsd-file"></a>hireDate.xsd-Datei
+## <a name="hiredatexsd-file"></a>Datei "hireDate. xsd"
 
-Die folgende Schemadatei wird in dieser exemplarischen Vorgehensweise verwendet:
+In dieser exemplarischen Vorgehensweise wird die folgende Schema Datei verwendet:
 
 ```xml
 <?xml version="1.0"?>
@@ -132,4 +132,4 @@ Die folgende Schemadatei wird in dieser exemplarischen Vorgehensweise verwendet:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-editor](../xml-tools/xml-editor.md)
+- [XML-Editor](../xml-tools/xml-editor.md)

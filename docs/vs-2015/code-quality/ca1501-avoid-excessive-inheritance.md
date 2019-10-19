@@ -1,5 +1,5 @@
 ---
-title: 'CA1501: Übermäßige Vererbung vermeiden | Microsoft-Dokumentation'
+title: 'CA1501: übermäßige Vererbung vermeiden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - CA1501
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 420e9492fc5ab431710d62e1d8ea3c1bd8a31ce9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2106042b552efbe824d7517abcc86e322b57aa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191481"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607854"
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Übermäßige Vererbung vermeiden.
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Übermäßige Vererbung vermeiden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
-|Kategorie|Microsoft.Maintainability|
+|Kategorie|Microsoft. Wartbarkeit|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
  Ein Typ ist in seiner Vererbungshierarchie mehr als vier Ebenen tief.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Tief verschachtelte Typenhierarchien können schwer zu verfolgen, verstehen und verwalten sein. Mit dieser Regel schränkt die Analyse für Hierarchien im selben Modul.
+ Tief verschachtelte Typenhierarchien können schwer zu verfolgen, verstehen und verwalten sein. Diese Regel schränkt die Analyse auf Hierarchien im gleichen Modul ein.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ aus einer Basisklasse, die in der Vererbungshierarchie weniger komplex ist, oder entfernen Sie einige der mittleren Basistypen.
+ Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem Basistyp ab, der in der Vererbungs Hierarchie weniger tief ist, oder entfernen Sie einige der zwischen Basis Typen.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Allerdings kann der Code schwieriger zu warten sein. Beachten Sie, dass je nach Sichtbarkeit der Basistypen, Auflösen von Verstöße gegen diese Regel Änderungen erstellen kann. Entfernen die öffentliche Basistypen ist beispielsweise eine unterbrechende Änderung.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken. Allerdings ist es möglicherweise schwieriger, den Code zu verwalten. Beachten Sie, dass die Behebung von Verstößen gegen diese Regel in Abhängigkeit von der Sichtbarkeit von Basis Typen zu wichtigen Änderungen führen könnte. Beispielsweise ist das Entfernen von öffentlichen Basis Typen eine Breaking Change.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.

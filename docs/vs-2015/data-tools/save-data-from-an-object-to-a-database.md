@@ -15,69 +15,69 @@ helpviewer_keywords:
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c1470c831177e74e7670d696b44fc2b0119a9a9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425060"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607455"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte aus dem Objekt eines TableAdapters-DBDirect-Methoden übergeben (z. B. `TableAdapter.Insert`).
-  
- Klicken Sie zum Speichern von Daten aus einer Auflistung von Objekten, durchlaufen Sie die Auflistung von Objekten (z. B. eine for-Next-Schleife), und senden Sie die Werte für jedes Objekt an die Datenbank mithilfe einer der TableAdapters-DBDirect-Methoden.  
-  
- Standardmäßig werden die DBDirect-Methoden auf einem TableAdapter erstellt, die direkt in der Datenbank ausgeführt werden können. Diese Methoden können direkt aufgerufen werden und erfordern keine <xref:System.Data.DataSet> oder <xref:System.Data.DataTable> Objekte Änderungen abstimmen, um Updates in einer Datenbank zu senden.  
-  
+Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte aus dem-Objekt an eine der DBDirect-Methoden des TableAdapter übergeben (z. b. `TableAdapter.Insert`).
+
+ Um Daten aus einer Auflistung von-Objekten zu speichern, durchlaufen Sie die Auflistung von-Objekten (z. b. eine for-Next-Schleife), und senden Sie die Werte für jedes Objekt mithilfe einer der DBDirect-Methoden des TableAdapter an die Datenbank.
+
+ Standardmäßig werden DBDirect-Methoden auf einem TableAdapter erstellt, der direkt für die Datenbank ausgeführt werden kann. Diese Methoden können direkt aufgerufen werden, und es ist nicht erforderlich, <xref:System.Data.DataSet>-oder <xref:System.Data.DataTable>-Objekten Änderungen abzugleichen, um Updates an eine Datenbank zu senden.
+
 > [!NOTE]
-> Wenn Sie einen TableAdapter konfigurieren, muss die Hauptabfrage genügend Informationen für die DBDirect-Methoden, die erstellt werden, angeben. Z. B. wenn ein TableAdapter zum Abfragen von Daten aus einer Tabelle, die nicht über eine primäre Schlüsselspalte definiert verfügt konfiguriert ist, wird es nicht DBDirect-Methoden generiert.  
-  
-|TableAdapter-DBDirect-Methode|Beschreibung|  
-|----------------------------------|-----------------|  
-|`TableAdapter.Insert`|Fügt neue Datensätze in einer Datenbank und ermöglicht es Ihnen, einzelne Spaltenwerte als Methodenparameter übergeben.|  
-|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die `Update` Methode übernimmt die Werte der ursprünglichen und neuen Spalte als Methodenparameter. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden verwendet, um diesen Datensatz aktualisieren.<br /><br /> Die `TableAdapter.Update` Methode dient auch zum Abstimmen von Änderungen in einem Dataset zurück an die Datenbank mithilfe einer <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, oder ein Array von <xref:System.Data.DataRow>s als Methodenparameter.|  
-|`TableAdapter.Delete`|Löscht den vorhandenen Datensätze aus der Datenbank, die basierend auf den ursprünglichen Spaltenwerte als Methodenparameter übergeben.|  
-  
-### <a name="to-save-new-records-from-an-object-to-a-database"></a>Um neue Datensätze aus einem Objekt in einer Datenbank zu speichern.  
-  
-- Erstellen Sie die Datensätze durch Übergeben der Werte, die `TableAdapter.Insert` Methode.  
-  
-     Das folgende Beispiel erstellt einen neuer Kundendatensatz in der `Customers` Tabelle durch Übergeben der Werte in der `currentCustomer` -Objekt an die `TableAdapter.Insert` Methode.  
-  
+> Wenn Sie einen TableAdapter konfigurieren, muss die Haupt Abfrage genügend Informationen bereitstellen, damit die DBDirect-Methoden erstellt werden können. Wenn ein TableAdapter z. b. so konfiguriert ist, dass Daten aus einer Tabelle abgefragt werden, für die keine Primärschlüssel Spalte definiert ist, werden keine DBDirect-Methoden generiert.
+
+|TableAdapter-DBDirect-Methode|Beschreibung|
+|----------------------------------|-----------------|
+|`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu und ermöglicht es Ihnen, einzelne Spaltenwerte als Methoden Parameter zu übergeben.|
+|`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die `Update`-Methode übernimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die `TableAdapter.Update`-Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> oder ein Array von <xref:System.Data.DataRow>s als Methoden Parameter verwendet wird.|
+|`TableAdapter.Delete`|Löscht vorhandene Datensätze aus der Datenbank auf Grundlage der ursprünglichen Spaltenwerte, die als Methoden Parameter weitergegeben werden.|
+
+### <a name="to-save-new-records-from-an-object-to-a-database"></a>So speichern Sie neue Datensätze aus einem Objekt in einer Datenbank
+
+- Erstellen Sie die Datensätze, indem Sie die Werte an die `TableAdapter.Insert`-Methode übergeben.
+
+     Im folgenden Beispiel wird ein neuer Kundendaten Satz in der `Customers` Tabelle erstellt, indem die Werte im `currentCustomer`-Objekt an die `TableAdapter.Insert`-Methode übergeben werden.
+
      [!code-csharp[VbRaddataSaving#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#23)]
-     [!code-vb[VbRaddataSaving#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#23)]  
-  
-### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Zum Aktualisieren vorhandener Datensätze aus einem Objekt in einer Datenbank  
-  
-- Ändern Sie die Datensätze durch Aufrufen der `TableAdapter.Update` -Methode, indem Sie die neuen Werte zur Aktualisierung des Datensatzes übergeben und in den ursprünglichen Werten den Datensatz gesucht.  
-  
+     [!code-vb[VbRaddataSaving#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#23)]
+
+### <a name="to-update-existing-records-from-an-object-to-a-database"></a>So aktualisieren Sie vorhandene Datensätze von einem Objekt in eine Datenbank
+
+- Ändern Sie die Datensätze, indem Sie die `TableAdapter.Update`-Methode aufrufen, die neuen Werte übergeben, um den Datensatz zu aktualisieren, und die ursprünglichen Werte übergeben, um den Datensatz zu suchen.
+
     > [!NOTE]
-    > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Update` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
-  
-     Das folgende Beispiel aktualisiert einen vorhandenen Datensatz in die `Customers` Tabelle übergeben Sie die neuen und ursprünglichen Werte in der `Customer` -Objekt an die `TableAdapter.Update` Methode.  
-  
+    > Das Objekt muss die ursprünglichen Werte beibehalten, um Sie an die `Update`-Methode zu übergeben. In diesem Beispiel werden Eigenschaften mit einem `orig`-Präfix verwendet, um die ursprünglichen Werte zu speichern.
+
+     Im folgenden Beispiel wird ein vorhandener Datensatz in der `Customers` Tabelle aktualisiert, indem die neuen und ursprünglichen Werte im `Customer`-Objekt an die `TableAdapter.Update`-Methode übergeben werden.
+
      [!code-csharp[VbRaddataSaving#24](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#24)]
-     [!code-vb[VbRaddataSaving#24](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#24)]  
-  
-### <a name="to-delete-existing-records-from-a-database"></a>So löschen Sie vorhandene Datensätze aus einer Datenbank  
-  
-- Löschen Sie die Datensätze durch Aufrufen der `TableAdapter.Delete` -Methode und übergeben die ursprünglichen Werte den Datensatz gesucht.  
-  
+     [!code-vb[VbRaddataSaving#24](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#24)]
+
+### <a name="to-delete-existing-records-from-a-database"></a>So löschen Sie vorhandene Datensätze aus einer Datenbank
+
+- Löschen Sie die Datensätze, indem Sie die `TableAdapter.Delete`-Methode aufrufen und die ursprünglichen Werte übergeben, um den Datensatz zu suchen.
+
     > [!NOTE]
-    > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Delete` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
-  
-     Das folgende Beispiel löscht einen Datensatz aus der `Customers` Tabelle übergeben Sie die ursprünglichen Werte in der `Customer` -Objekt an die `TableAdapter.Delete` Methode.  
-  
+    > Das Objekt muss die ursprünglichen Werte beibehalten, um Sie an die `Delete`-Methode zu übergeben. In diesem Beispiel werden Eigenschaften mit einem `orig`-Präfix verwendet, um die ursprünglichen Werte zu speichern.
+
+     Im folgenden Beispiel wird ein Datensatz aus der `Customers` Tabelle gelöscht, indem die ursprünglichen Werte im `Customer`-Objekt an die `TableAdapter.Delete`-Methode übergeben werden.
+
      [!code-csharp[VbRaddataSaving#25](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#25)]
-     [!code-vb[VbRaddataSaving#25](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#25)]  
-  
-## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
- Sie benötigen die Berechtigung zum Ausführen des ausgewählten INSERT-, Update- oder DELETE für die Tabelle in der Datenbank.  
-  
-## <a name="see-also"></a>Siehe auch  
+     [!code-vb[VbRaddataSaving#25](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#25)]
+
+## <a name="net-framework-security"></a>.NET Framework-Sicherheit
+ Sie müssen über die Berechtigung zum Ausführen der ausgewählten INSERT-, Update-oder DELETE-Berechtigung für die-Tabelle in der-Datenbank verfügen.
+
+## <a name="see-also"></a>Siehe auch
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

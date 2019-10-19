@@ -1,5 +1,5 @@
 ---
-title: TransactedReceiveScope-Aktivitätsdesigner | Microsoft-Dokumentation
+title: Transactedreceivescope-Aktivitäts Designer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,42 +8,37 @@ f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4864a19cf48b468abed90e120e4924237653cec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4230e4b598553f5fefbc3b97663fd42320ee1e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976698"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607020"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope-Aktivitätsdesigner
-Die **TransactedReceiveScope** -Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.TransactedReceiveScope> Aktivität.  
-  
-## <a name="the-transactedreceivescope-activity"></a>Die TransactedReceiveScope-Aktivität  
- Die <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität ermöglicht es Ihnen, eine Transaktion in Servertransaktionen einzubinden, die von einem Workflow oder einem Verteiler erstellt werden.  
-  
-### <a name="using-the-transactedreceivescope-activity-designer"></a>Verwenden des TransactedReceiveScope-Aktivitätsdesigners  
- Die **TransactedReceiveScope** Aktivitäts-Designer finden Sie in der **Messaging** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**  Registerkarte [!INCLUDE[wfd2](../includes/wfd2-md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menü oder STRG + ALT + X.)  
-  
- Die **TransactedReceiveScope** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und auf die [!INCLUDE[wfd2](../includes/wfd2-md.md)] -Oberfläche ganz egal, wo Aktivitäten normalerweise platziert werden. Dies erstellt eine <xref:System.ServiceModel.Activities.TransactedReceiveScope> -Aktivität mit dem standardmäßigen **"DisplayName"** von TransactedReceiveScope. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **TransactedReceiveScope** Aktivitäts-Designer oder in der **"DisplayName"** Feld des Eigenschaftenrasters.  
-  
- Die **TransactedReceiveScope** Designer enthält **anfordern** und **Text** Felder. Diese werden verwendet, um die <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>-Eigenschaft, die eine <xref:System.ServiceModel.Activities.Receive>-Aktivität angibt, und die <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>-Eigenschaft zu konfigurieren, die eine andere <xref:System.Activities.Activity>-Instanz angibt. <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> erstellt eine Transaktion. Die Transaktion wird dann dem Geltungsbereich der <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>-Instanz zugeordnet, damit jede Aktivität in diesem Bereich in dieser Transaktion ausgeführt wird.  
-  
-### <a name="the-transactedreceivescope-properties"></a>Die TransactedReceiveScope-Eigenschaften  
- In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese <xref:System.Activities.Activity.DisplayName%2A>-Eigenschaft kann im Eigenschaftenraster oder in der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche bearbeitet werden, die anderen Eigenschaften müssen jedoch in der Entwurfsoberfläche bearbeitet werden.  
-  
-|Eigenschaftenname|Erforderlich|Verwendung|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Der optionale Anzeigename der <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität. Der Standardwert lautet TransactedReceiveScope.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Name nicht unbedingt erforderlich ist, wird als Best Practice empfohlen, einen Anzeigenamen zu verwenden.|  
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Löscht eine <xref:System.ServiceModel.Activities.Receive> Aktivität in der **anfordern** Block auf der aktivitätsdesigneroberfläche.|  
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Löscht eine <xref:System.Activities.Activity> in die **Text** Block auf der aktivitätsdesigneroberfläche.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
- [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Empfangen](../workflow-designer/receive-activity-designer.md)   
- [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
- [Senden](../workflow-designer/send-activity-designer.md)   
- [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
+Der **transactedreceivescope** -Designer wird verwendet, um eine <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität zu erstellen und zu konfigurieren.
+
+## <a name="the-transactedreceivescope-activity"></a>Die TransactedReceiveScope-Aktivität
+ Die <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität ermöglicht es Ihnen, eine Transaktion in Servertransaktionen einzubinden, die von einem Workflow oder einem Verteiler erstellt werden.
+
+### <a name="using-the-transactedreceivescope-activity-designer"></a>Verwenden des TransactedReceiveScope-Aktivitätsdesigners
+ Der **transactedreceivescope** -Aktivitäts Designer befindet sich in der Kategorie **Messaging** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf [!INCLUDE[wfd2](../includes/wfd2-md.md)] auf die Registerkarte **Toolbox** klicken (Sie können auch **Symbolleiste** aus der Ansicht auswählen.Menü oder STRG + ALT + X.)
+
+ Der **transactedreceivescope** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden. Dadurch wird eine <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität mit dem **Display Name** -Standardwert von transactedreceivescope erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann im Header des **transactedreceivescope** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
+
+ Der **transactedreceivescope** -Designer enthält **Anforderungs** -und **Text** Felder. Diese werden verwendet, um die <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>-Eigenschaft, die eine <xref:System.ServiceModel.Activities.Receive>-Aktivität angibt, und die <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>-Eigenschaft zu konfigurieren, die eine andere <xref:System.Activities.Activity>-Instanz angibt. <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> erstellt eine Transaktion. Die Transaktion wird dann dem Geltungsbereich der <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>-Instanz zugeordnet, damit jede Aktivität in diesem Bereich in dieser Transaktion ausgeführt wird.
+
+### <a name="the-transactedreceivescope-properties"></a>Die TransactedReceiveScope-Eigenschaften
+ In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese <xref:System.Activities.Activity.DisplayName%2A>-Eigenschaft kann im Eigenschaftenraster oder in der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche bearbeitet werden, die anderen Eigenschaften müssen jedoch in der Entwurfsoberfläche bearbeitet werden.
+
+|Eigenschaftenname|Erforderlich|Verwendung|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der optionale Anzeigename der <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität. Der Standardwert lautet TransactedReceiveScope.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Name nicht unbedingt erforderlich ist, wird als Best Practice empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Löscht eine <xref:System.ServiceModel.Activities.Receive> Aktivität in den **Anforderungs** Block auf der Aktivitäts Designer Oberfläche.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Löscht eine <xref:System.Activities.Activity> in den **Body** -Block auf der Aktivitäts Designer Oberfläche.|
+
+## <a name="see-also"></a>Siehe auch
+ [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md) [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) [Receive](../workflow-designer/receive-activity-designer.md) [receiveandsendreply](../workflow-designer/receiveandsendreply-template-designer.md) [Send](../workflow-designer/send-activity-designer.md) [sendandreceivereply](../workflow-designer/sendandreceivereply-template-designer.md)
