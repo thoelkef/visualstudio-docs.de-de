@@ -1,5 +1,5 @@
 ---
-title: 'CA1814: Bevorzugen Sie verzweigte Arrays mehrdimensionalen | Microsoft-Dokumentation'
+title: 'CA1814: verzweigte Arrays über mehrdimensional bevorzugen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA1814
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ac183321bd2a3070b1f1ddc54402b74c8fb823
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201699"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668414"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Jagged Arrays mehrdimensionalen Arrays vorziehen.
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Verzweigte Arrays mehrdimensionalen Arrays vorziehen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Element wird als ein mehrdimensionales Array deklariert.
+ Ein Member wird als mehrdimensionales Array deklariert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Ein verzweigtes Array ist ein Array, dessen Elemente wiederum Arrays sind. Die Arrays, die die Elemente bilden, können unterschiedliche Größen haben, was bei einigen Gruppen von Daten dazu führt, dass weniger Speicherplatz vergeudet wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie das mehrdimensionale Array in ein verzweigtes Array ein.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie das mehrdimensionale Array in ein Jagged Array.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, wenn es sich bei das mehrdimensionale Array Speicherplatz nicht verschwendet wird.
+ Unterdrückt eine Warnung aus dieser Regel, wenn das mehrdimensionale Array keinen Speicherplatz verschwendet.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt die Deklarationen für verzweigte und mehrdimensionale Arrays.
+ Das folgende Beispiel zeigt Deklarationen für verzweigte und mehrdimensionale Arrays.
 
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/cs/FxCop.Performance.JaggedArrays.cs#1)]
  [!code-vb[FxCop.Performance.JaggedArrays#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/vb/FxCop.Performance.JaggedArrays.vb#1)]

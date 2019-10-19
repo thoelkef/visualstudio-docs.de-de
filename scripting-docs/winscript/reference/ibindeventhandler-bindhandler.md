@@ -1,5 +1,5 @@
 ---
-title: IBindEventHandler::BindHandler | Microsoft-Dokumentation
+title: 'Ibindeventhandler:: bindhandler | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01372766eb434efe73f47b265c7984bab48ea164
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 160020832509c9fb2aa95c095148127228a92e17
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991373"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572571"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
-Wird ein Ereignis auf ein Objekt gebunden.  
+Bindet ein Ereignis an ein-Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT BindHandler(
   
 #### <a name="parameters"></a>Parameter  
  `pstrEvent`  
- [in] Gibt das Ereignis behandelt.  
+ in Gibt das Ereignis an, das behandelt werden soll.  
   
  `pdisp`  
- [in] Gibt das Objekt zur Behandlung des Ereignisses.  
+ in Gibt das-Objekt an, das das Ereignis behandelt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,7 +51,7 @@ HRESULT BindHandler(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird ein Ereignis auf ein Objekt gebunden.  
+ Diese Methode bindet ein Ereignis an ein-Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IBindEventHandler-Schnittstelle](../../winscript/reference/ibindeventhandler-interface.md)

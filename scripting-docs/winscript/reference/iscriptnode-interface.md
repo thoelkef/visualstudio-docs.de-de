@@ -1,5 +1,5 @@
 ---
-title: IScriptNode-Schnittstelle | Microsoft-Dokumentation
+title: Iscriptnode-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,32 +13,32 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13bf20f9e1e642b948ddaa72ae9dca7bb457fba2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38ab73ddb1bd924035cb6ba61d26e65f16f53eed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786773"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577518"
 ---
 # <a name="iscriptnode-interface"></a>IScriptNode-Schnittstelle
-Ein Objekt, implementiert die `IScriptNode` Schnittstelle stellt eine Webseite dar.  
+Ein Objekt, das die `IScriptNode`-Schnittstelle implementiert, stellt eine Webseite dar.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IScriptNode` Schnittstelle verfügbar macht, die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von `IUnknown` geerbt werden, macht die `IScriptNode`-Schnittstelle die folgenden Methoden verfügbar.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Gibt an, ob ein Objekt noch aktiv ist.|  
-|[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Fügt eine untergeordnete Instanz `IScriptEntry`.|  
-|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Fügt eine Scriptlet als untergeordnete Instanz von einem `IScriptNode`.|  
-|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Löscht die Baumstruktur im Objekt.|  
-|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Gibt das untergeordnete Element, das am angegebenen Index in der Knoten ist.|  
-|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Gibt einen anwendungsdefinierten Wert, der verwendet wird, das Hostobjekt, das Scriptlet zugeordnet werden soll.|  
-|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Gibt den Index eines Objekts in der Liste der untergeordneten Elemente des übergeordneten Elements zurück.|  
-|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Gibt die Skriptsprache, die anhand des aktuellen Knotens mit Skripts verwendet wird.|  
-|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Gibt die Anzahl der untergeordneten Knoten der `IScriptNode` Objekt.|  
-|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Gibt die `IScriptNode` -Objekt, das das übergeordnete Element eines Objekts ist.|  
+|[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Fügt eine untergeordnete Instanz von `IScriptEntry` hinzu.|  
+|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Fügt ein Scriptlet als untergeordnete Instanz eines `IScriptNode` hinzu.|  
+|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Löscht die Objektstruktur.|  
+|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Gibt das untergeordnete Element zurück, das sich am angegebenen Index im Knoten befindet.|  
+|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Gibt einen von der Anwendung definierten Wert zurück, der verwendet wird, um ein Scriptlet dem Host Objekt zuzuordnen.|  
+|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Gibt den Index eines Objekts in der untergeordneten Liste des übergeordneten Elements zurück.|  
+|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Gibt die Skriptsprache zurück, die vom aktuellen Skript Knoten verwendet wird.|  
+|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Gibt die Anzahl der untergeordneten Knoten des `IScriptNode`-Objekts zurück.|  
+|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Gibt das `IScriptNode` Objekt zurück, das dem-Objekt übergeordnet ist.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Autorisierungsschnittstellen](../../winscript/reference/active-script-authoring-interfaces.md)
