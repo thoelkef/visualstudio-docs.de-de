@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::ReplaceText | Microsoft-Dokumentation
+title: 'Idebugdocumenttextauthor:: ReplaceText | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 920b6851f5fea42597be7ec5dcc55350024abea9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: beca5d0ce19a38346ef9b03e39169769c90ea008
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946764"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572034"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
-Ersetzt Text in das Dokument an.  
+Ersetzt Text im Dokument.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT ReplaceText(
   
 #### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- [in] Die Startposition des Zeichenbereichs folgt ersetzen.  
+ in Start Position des zu ersetzenden Zeichen Bereichs.  
   
  `cNumToReplace`  
- [in] Die Anzahl der zu ersetzenden Zeichen.  
+ in Anzahl der zu ersetzenden Zeichen.  
   
  `pcharText[]`  
- [in] Ein Puffer mit den neuen Zeichen, um die alte Zeichen zu ersetzen.  
+ in Ein Puffer, der die neuen Zeichen zum Ersetzen der alten Zeichen enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,7 +55,7 @@ HRESULT ReplaceText(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ersetzt Text in das Dokument.  
+ Diese Methode ersetzt Text im Dokument.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentTextAuthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)
