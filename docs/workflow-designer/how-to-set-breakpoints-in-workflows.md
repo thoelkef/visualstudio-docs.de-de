@@ -1,42 +1,42 @@
 ---
-title: 'Workflow-Designer – Vorgehensweise: Festlegen von Haltepunkten in Workflows'
+title: 'Workflow-Designer: Gewusst wie: Festlegen von Breakpoints in Workflows'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6d2806a8757f00924d51c76aea82cfc8c6a5673
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949518"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650329"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Vorgehensweise: Festlegen von Haltepunkten in Workflows
+# <a name="how-to-set-breakpoints-in-workflows"></a>Vorgehensweise: Festlegen von Breakpoints in Workflows
 
-Wenn Sie die Workflow-Designer verwenden, können Sie Haltepunkte für die grafischen Workflows festlegen, wie Sie in Visual Basic- oder C#-Code tun würden. Wie erwartet, hält die Workflowausführung an jedem festgelegten Haltepunkt an.
+Wenn Sie Workflow-Designer verwenden, können Sie Haltepunkte in ihren grafischen Workflows wie Visual Basic oder C# Code festlegen. Wie erwartet, hält die Workflowausführung an jedem festgelegten Haltepunkt an.
 
-Ein Haltepunkt verfügt über drei Zustände: *Ausstehende*, *gebunden*, und *Fehler*. Wenn Sie einen Haltepunkt festlegen, erhält dieser den Status "Ausstehend". Dieser wird durch ein rot ausgefülltes Symbol dargestellt. Wenn die Laufzeit den Workflowtyp geladen hat, wechselt der Haltepunktstatus zu "Gebunden". Haben Sie ein falsches Format für den Haltepunkt angegeben, etwa einen ungültigen Aktivitätsnamen, dann erscheint eine Fehlermeldung. Der Haltepunkt wird immer noch dem Haltepunktfenster hinzugefügt, er wird jedoch mit einem kleinen "x" markiert.
+Ein Haltepunkt hat drei Zustände: " *Pending*", " *Bound*" und " *Error*". Wenn Sie einen Haltepunkt festlegen, erhält dieser den Status "Ausstehend". Dieser wird durch ein rot ausgefülltes Symbol dargestellt. Wenn die Laufzeit den Workflowtyp geladen hat, wechselt der Haltepunktstatus zu "Gebunden". Haben Sie ein falsches Format für den Haltepunkt angegeben, etwa einen ungültigen Aktivitätsnamen, dann erscheint eine Fehlermeldung. Der Haltepunkt wird immer noch dem Haltepunktfenster hinzugefügt, er wird jedoch mit einem kleinen "x" markiert.
 
 > [!NOTE]
 > Das Festlegen von Haltepunkten für aufgerufene Workflows wird nicht unterstützt.
 
 > [!NOTE]
-> Stellen Sie sicher, dass Sie die Option **nur eigenen Code aktivieren (nur verwaltet)** aus der **Tools** > **Optionen** > **Debuggen**  Menü vor dem Debuggen. Wenn die Option nicht aktiviert ist und Sie einen Haltepunkt für die ersten inneren Sequenz festlegen, Sie zwei Sequenzen, die in einer anderen Sequenz verschachtelt haben, drücken **F11** ist nicht die zweite innere Sequenz debuggt.
+> Stellen Sie sicher, dass Sie die Option **nur eigenen Code aktivieren (nur verwaltet)** **im Menü Extras  > ** **Optionen**  >  Menü**Debuggen** aktivieren, bevor Sie Debuggen. Wenn die Option nicht ausgewählt ist und zwei Sequenzen in einer anderen Sequenz geschachtelt sind und Sie einen Haltepunkt für die erste innere Sequenz festgelegt haben, wird durch Drücken von **F11** nicht in die zweite innere Sequenz debuggt.
 
 > [!NOTE]
-> Haltepunkte in einem Workflow werden nicht erreicht werden, wenn der vollständige Pfad zur XAML-Dateieigenschaft nicht korrekt ist. Der vollständige Pfad zur XAML-Datei ist nicht korrekt, nach dem Verschieben das Projekt oder Projektmappe in einen anderen Ordner oder einem anderen Computer. Wählen Sie **STRG**+**S** speichern und aktualisieren Sie die vollständige-Eigenschaft.
+> Haltepunkte in einem Workflow werden nicht getroffen, wenn der vollständige Pfad zur XAML-Datei Eigenschaft nicht korrekt ist. Der vollständige Pfad zur XAML-Datei ist nicht korrekt, nachdem das Projekt oder die Projekt Mappe in einen anderen Ordner oder auf einen anderen Computer verschoben wurde. Wählen Sie **STRG** +**S** aus, um die vollständige Pfadeigenschaft zu speichern und zu aktualisieren.
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>So legen Sie einen Haltepunkt für eine Aktivität in der Entwurfsansicht fest
 
 1. Wählen Sie die Aktivität aus, bei der der Debugger unterbrechen soll.
 
-2. Auf der **Debuggen** , wählen Sie im Menü **Haltepunkt ein/aus**. Ein rotes Symbol wird am oberen linken Rand der Aktivität angezeigt.
+2. Klicken Sie im Menü **Debuggen** auf halte **Punkt umschalten**. Ein rotes Symbol wird am oberen linken Rand der Aktivität angezeigt.
 
-   Sie können alternativ drücken **F9** nach dem Auswählen der Aktivität, oder Sie können mit der rechten Maustaste in der Aktivitäts und wählen Sie **Haltepunkt** > **Haltepunkt einfügen** über das Kontextmenü.
+   Alternativ können Sie **F9** drücken, nachdem Sie die Aktivität ausgewählt haben, oder Sie können mit der rechten Maustaste auf die Aktivität klicken und im Kontextmenü halte **Punkt  >  halte** **Punkt einfügen** auswählen.
 
 ## <a name="see-also"></a>Siehe auch
 

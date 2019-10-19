@@ -3,17 +3,17 @@ title: 'Workflow-Designer: XAML Debuggen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: af5b7585ed5c0f34eeb44edba8c60ba0d5e14559
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a7b686db2f8c6818d7a76a5e5188715665b3a87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254777"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650352"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer
 
@@ -26,7 +26,7 @@ Workflows werden in XAML definiert. In der Benutzeroberfläche werden Workflows 
 
 1. Öffnen Sie in Visual Studio ein Workflow-oder Aktivitäts Projekt.
 
-2. Legen Sie einen Haltepunkt für die Aktivität oder die Aktivitäten fest, die Sie debuggen möchten, wie unter [Vorgehensweise: Legen Sie Breakpoints in](../workflow-designer/how-to-set-breakpoints-in-workflows.md)Workflows fest.
+2. Legen Sie einen Haltepunkt für die Aktivität oder die Aktivitäten fest, die Sie debuggen möchten, wie unter Gewusst [wie: Festlegen von Breakpoints in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)beschrieben.
 
 3. Klicken Sie mit der rechten Maustaste auf die XAML-Datei, die die Workflow Definition enthält, und wählen Sie **Code anzeigen**aus. Der Haltepunkt wird in der gleichen Zeile wie die XAML-Elementdeklaration der Aktivität angezeigt, für die Sie den Haltepunkt in der Entwurfsansicht festgelegt haben.
 
@@ -36,5 +36,5 @@ Workflows werden in XAML definiert. In der Benutzeroberfläche werden Workflows 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+- [Gewusst wie: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [Workflows Debuggen](debugging-workflows-with-the-workflow-designer.md)

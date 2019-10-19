@@ -1,5 +1,5 @@
 ---
-title: 'CA2222: Sichtbarkeit für geerbte Member nicht verringern | Microsoft-Dokumentation'
+title: 'CA2222: Sichtbarkeit für geerbte Elemente nicht verringern | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - CA2222
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ee6228359e84687023a713ee866ebfbb760b206b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3dda56e6980133b0e33893fbb814c4a3a7008c49
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142456"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656060"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Sichtbarkeit für geerbte Member nicht verringern.
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Sichtbarkeit für geerbte Member nicht verringern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
-|Kategorie|Microsoft.Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine private Methode in einem nicht versiegelten Typ verfügt über eine Signatur, die an eine öffentliche Methode, die in einem Basistyp deklariert identisch ist. Die private Methode ist nicht endgültig.
+ Eine private Methode in einem nicht versiegelten Typ hat eine Signatur, die mit einer öffentlichen Methode identisch ist, die in einem Basistyp deklariert ist. Die private Methode ist nicht Final.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Sie sollten den Zugriffsmodifizierer für geerbte Member nicht ändern. Wenn Sie einen geerbten Member in private ändern, werden Aufrufer nicht am Zugriff auf die Implementierung der Basisklasse der Methode gehindert. Wenn das Element ist privat, und der Typ nicht versiegelten ist, kann durch das erbende Typen die letzte öffentliche Implementierung der Methode in der Vererbungshierarchie aufrufen. Wenn Sie den Zugriffsmodifizierer ändern müssen, die Methode sollte als final gekennzeichnet werden, oder sein Typ muss versiegelt werden, um zu verhindern, dass die Methode überschrieben wird.
+ Sie sollten den Zugriffsmodifizierer für geerbte Member nicht ändern. Wenn Sie einen geerbten Member in private ändern, werden Aufrufer nicht am Zugriff auf die Implementierung der Basisklasse der Methode gehindert. Wenn der Member privat gemacht wird und der Typ nicht versiegelt ist, kann der erbende Typ die letzte öffentliche Implementierung der Methode in der Vererbungs Hierarchie aufzurufen. Wenn Sie den Zugriffsmodifizierer ändern müssen, muss entweder die Methode als Final markiert werden, oder der Typ muss versiegelt sein, um zu verhindern, dass die Methode überschrieben wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Zugriff auf nicht privat sein. Auch wenn Ihre bevorzugte Programmiersprache unterstützt wird, können Sie die Methode endgültige vornehmen.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Zugriff auf "nicht privat". Wenn Ihre Programmiersprache Sie unterstützt, können Sie alternativ die Methode als endgültig festlegen.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.

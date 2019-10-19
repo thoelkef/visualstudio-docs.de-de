@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975060"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649382"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Vorgehensweise: Synchronisieren von Code Projekt-Regelsätzen mit einer Azure devops-Projekt Eincheck Richtlinie
 
@@ -31,7 +31,7 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>So geben Sie einen Microsoft Standard-Regelsatz an
 
-1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
 
 2. Klicken Sie auf **Code Analyse**.
 
@@ -51,19 +51,19 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 1. Führen Sie bei Bedarf einen Get-Vorgang für die Regel Satz Datei aus, die die Eincheck Richtlinie angibt.
 
-2. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.
+2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
 
 3. Klicken Sie auf **Code Analyse**.
 
 ::: moniker range="vs-2017"
 
-4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<browse >** .
+4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Browse >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Klicken Sie in der Liste **aktive Regeln** auf **\<browse >** .
+4. Klicken Sie in der Liste **aktive Regeln** auf **\<Browse >** .
 
 ::: moniker-end
 

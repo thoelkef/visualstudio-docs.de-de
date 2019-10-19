@@ -3,23 +3,23 @@ title: Der Designer kann während des Debuggens nicht geändert werden
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e18a95aa2e4eb8a9238a046e3a77f3d618cdd2b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 77034b422f710bd6e7811679f35024b543a91558
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458376"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648156"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Der Designer kann während des Debuggens nicht geändert werden
 
 Diese Meldung wird angezeigt, wenn Elemente im **O/R-Designer** geändert werden, während die Anwendung im Debugmodus ausgeführt wird. Wenn die Anwendung im Debugmodus ausgeführt wird, ist der **O/R-Designer** schreibgeschützt.
 
-Wählen Sie zum Beheben dieses Fehlers **Debuggen beenden** auf die **Debuggen** Menü. Die Anwendung beendet das Debuggen, und Sie können Elemente in der **O/R Designer**.
+Wählen Sie zum Beheben dieses Fehlers im Menü **Debuggen** die Option **Debuggen** deaktivieren aus. Die Anwendung beendet das Debuggen, und Sie können die Elemente im **O/R-Designer**ändern.
 
 ## <a name="see-also"></a>Siehe auch
 

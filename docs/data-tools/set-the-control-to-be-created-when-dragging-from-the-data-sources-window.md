@@ -1,5 +1,5 @@
 ---
-title: Legen Sie beim Ziehen aus Datenquellenfenster erstellen
+title: Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b5c57b73656f75ae9d99211ba28e38935d3164cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715092"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641042"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll
 
@@ -32,12 +32,12 @@ In diesem Kontext bezieht sich der Begriff *Objekt* auf ein benutzerdefiniertes 
 
 ### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>So legen Sie die Steuerelemente fest, die für Datentabellen oder Objekte erstellt werden sollen
 
-1. Achten Sie darauf die **WPF** Designer oder dem **Windows Forms** -Designer geöffnet ist.
+1. Stellen Sie sicher, dass der **WPF** -Designer oder der **Windows Forms** -Designer geöffnet ist.
 
 2. Wählen Sie im Fenster **Datenquellen** das Element aus, das die festzulegende Datentabelle oder das Objekt darstellt.
 
    > [!TIP]
-   > Wenn die **Datenquellen** nicht geöffnet ist, können Sie es öffnen, indem Sie auswählen **Ansicht** > **Other Windows** > **Datenquellen**.
+   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, können Sie es öffnen, indem Sie  > **anderen Windows**  > **Datenquellen** **anzeigen** auswählen.
 
 3. Klicken Sie auf das Dropdownmenü für das Element, und klicken Sie im Menü auf eines der folgenden Elemente:
 
@@ -45,17 +45,17 @@ In diesem Kontext bezieht sich der Begriff *Objekt* auf ein benutzerdefiniertes 
 
     - Wählen Sie ein anderes Steuerelement in der Liste, z.B. **DataGrid** oder **List** in einer WPF-Anwendung, oder **DataGridView** in einer Windows Forms-Anwendung aus, um alle Daten in einem einzelnen Steuerelement anzuzeigen.
 
-    Die Liste der verfügbaren Steuerelemente hängt Designer Sie geöffnet, welche Version von .NET das Projekt abzielt haben, und gibt an, ob Sie benutzerdefinierte Steuerelemente hinzugefügt haben, Unterstützung der Datenbindung an die **Toolbox**. Wenn das Steuerelement, die, das Sie erstellen möchten, nicht in der Liste der verfügbaren Steuerelemente ist, können Sie das Steuerelement zur Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    Die Liste der verfügbaren Steuerelemente hängt vom geöffneten Designer, der Version von .net, auf die das Projekt abzielt, und davon ab, ob Sie benutzerdefinierte Steuerelemente hinzugefügt haben, die die Datenbindung zur **Toolbox**unterstützen. Wenn das Steuerelement, das Sie erstellen möchten, nicht in der Liste der verfügbaren Steuerelemente enthalten ist, können Sie das Steuerelement der Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellen Fenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-    Erfahren Sie, wie ein benutzerdefiniertes Windows Forms-Steuerelement zu erstellen, die die Liste der Steuerelemente für Datentabellen oder Objekte im hinzugefügt werden, können, die **Datenquellen** Fenster finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, die komplexe Daten unterstützt Binden von](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
+    Informationen zum Erstellen eines benutzerdefinierten Windows Forms Steuer Elements, das der Liste der Steuerelemente für Datentabellen oder Objekte im **Datenquellen** Fenster hinzugefügt werden kann, finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das eine komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
-## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Legen Sie die Steuerelemente für Datenspalten oder-Eigenschaften erstellt werden soll
+## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Festlegen der zu erstellenden Steuerelemente für Datenspalten oder Eigenschaften
 
 Bevor Sie ein Element, das eine Spalte oder eine Eigenschaft eines Objekts im Fenster **Datenquellen** darstellt, in den Designer ziehen, können Sie das zu erstellende Steuerelement festlegen.
 
 ### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>So legen Sie die Steuerelemente fest, die für Spalten oder Eigenschaften erstellt werden sollen
 
-1. Achten Sie darauf die **WPF** Designer oder dem **Windows Forms** -Designer geöffnet ist.
+1. Stellen Sie sicher, dass der **WPF** -Designer oder der **Windows Forms** -Designer geöffnet ist.
 
 2. Erweitern Sie im Fenster **Datenquellen** die gewünschte Tabelle oder das gewünschte Objekt, sodass die Spalten bzw. Eigenschaften angezeigt werden.
 
@@ -63,11 +63,11 @@ Bevor Sie ein Element, das eine Spalte oder eine Eigenschaft eines Objekts im Fe
 
 4. Klicken Sie auf das Dropdownmenü für die Spalte oder die Eigenschaft, und wählen Sie das Steuerelement aus, das beim Ziehen des Elements in den Designer erstellt werden soll.
 
-     Die Liste der verfügbaren Steuerelemente hängt Designer Sie geöffnet, welche Version von .NET das Projekt abzielt haben, und welche benutzerdefinierten Steuerelemente, unterstützen, die Daten, die Bindung, die Sie hinzugefügt haben die **Toolbox**. Wenn das gewünschte Steuerelement in der Liste der verfügbaren Steuerelemente aufgeführt ist, können Sie der Liste das Steuerelement hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     Die Liste der verfügbaren Steuerelemente hängt vom geöffneten Designer, der Version von .net, auf die das Projekt abzielt, und davon ab, welche benutzerdefinierten Steuerelemente die Datenbindung unterstützen, die Sie der **Toolbox**hinzugefügt haben. Wenn das gewünschte Steuerelement in der Liste der verfügbaren Steuerelemente aufgeführt ist, können Sie der Liste das Steuerelement hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellen Fenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-     Erfahren Sie, wie ein benutzerdefiniertes Steuerelement erstellen, die die Liste der Steuerelemente für Datenspalten oder Eigenschaften im hinzugefügt werden, können, die **Datenquellen** Fenster finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, die einfache Datenbindungunterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
+     Informationen zum Erstellen eines benutzerdefinierten Steuer Elements, das der Liste der Steuerelemente für Datenspalten oder Eigenschaften im **Datenquellen** Fenster hinzugefügt werden kann, finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das die einfache Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 
-     Wenn Sie ein Steuerelement für die Spalte oder Eigenschaft erstellen möchten, wählen Sie **keine** im Dropdown-Menü. Dies ist nützlich, wenn Sie die übergeordnete Tabelle oder das Objekt in den Designer ziehen, aber die Spalte oder die Eigenschaft nicht einschließen möchten.
+     Wenn Sie kein Steuerelement für die Spalte oder Eigenschaft erstellen möchten, wählen Sie im Dropdown Menü die Option **keine** aus. Dies ist nützlich, wenn Sie die übergeordnete Tabelle oder das Objekt in den Designer ziehen, aber die Spalte oder die Eigenschaft nicht einschließen möchten.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449047"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649576"
 ---
 # <a name="fxcop-rule-port-status"></a>Port Status der FxCop-Regel
 
@@ -67,8 +67,8 @@ Regel-ID | Titel
 [CA1063](ca1063-implement-idisposable-correctly.md) | Ordnungsgemäße Implementierung von iverwerf
 [CA1064](ca1064-exceptions-should-be-public.md) | Ausnahmen sollten öffentlich sein.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Keine Ausnahmen an unerwarteten Speicherorten auslösen.
-CA1066 | Der Typ "{0}" sollte "IEquatable @ no__t-1T >" implementieren, da er "ist" überschreibt
-CA1067 | Überschreiben Sie Object. Gleichheits (Objekt), wenn Sie IEquatable @ no__t-0t implementieren >
+CA1066 | Der Typ {0} sollte IEquatable \<T > implementieren, da er "ist mit" überschreibt.
+CA1067 | Überschreiben Sie Object. Gleichheits (Objekt), wenn Sie IEquatable \<T implementieren >
 [CA1068](ca1068.md) | CancellationToken-Parameter müssen zuletzt aufgeführt werden.
 CA1200 | Verwenden Sie keine cref-Tags mit einem Präfix.
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Literale nicht als lokalisierte Parameter übergeben.

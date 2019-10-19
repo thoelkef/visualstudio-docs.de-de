@@ -6,39 +6,39 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e36b942780f9efd4ddb3612d9631188b17d791
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 8cbbdab08b5bc9298f83d4159f31ac8b9b0fb963
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744516"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645711"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
 
-In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschützten Formaten, damit Sie freigeben können Projektbeteiligte, Benutzer oder Projektteammitglieder nicht die gleiche Version von Visual Studio verwenden.
+In Visual Studio können Sie Modellierungs Diagramme in schreibgeschützten Formaten speichern, damit Sie Sie für Projekt beteiligte, Benutzer oder Projektteam Mitglieder freigeben können, die nicht die gleiche Version von Visual Studio verwenden.
 
-Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Welche Editionen von Visual Studio diese Funktion unterstützen, erfahren Sie unter [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Kopieren Sie ein Diagramm oder einen Teil eines Diagramms an eine andere Anwendung
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Kopieren eines Diagramms oder eines Teils eines Diagramms in eine andere Anwendung
 
 1. Wählen Sie im Diagramm einige oder alle Formen aus.
 
-2. Mit der rechten Maustaste in der Auswahl, und klicken Sie dann auf **Kopie**.
+2. Klicken Sie mit der rechten Maustaste auf Ihre Auswahl, und klicken Sie auf **Kopieren**.
 
 3. Fügen Sie die Auswahl in die gewünschte Anwendung ein.
 
-## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Speichern Sie ein Modellierungsdiagramm als XML Paper Specification (XPS)-Datei
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Speichern eines Modellierungs Diagramms als XML Paper Specification-Datei (. Xps)
 
-1. Auf der **Datei** Menü klicken Sie auf **Drucken** zum Öffnen der **Drucken** im Dialogfeld.
+1. Klicken Sie im Menü **Datei** auf **Drucken** , um das Dialogfeld **Drucken** zu öffnen.
 
-2. In der **Namen** Liste **Microsoft XPS Document Writer**, und klicken Sie dann auf **OK**.
+2. Wählen Sie in der Liste **Name** die Option **Microsoft XPS Document Writer**aus, und klicken Sie dann auf **OK**.
 
-3. In der **speichern Sie die Datei** (Dialogfeld), speichern Sie die Datei als ein **XPS-Dokument (\*.xps)** Datei.
+3. Speichern Sie die Datei im Dialogfeld **Datei speichern** unter als **XPS-Dokument Datei (\*. Xps)** .
 
 ## <a name="see-also"></a>Siehe auch
 

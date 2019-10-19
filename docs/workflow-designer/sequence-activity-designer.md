@@ -1,31 +1,31 @@
 ---
-title: Workflow-Designer - Sequence-Aktivitätsdesigner
+title: Workflow-Designer-Sequence-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abbffa44ee7fa4db2a03e5f46820f707cae8d4fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 116e8c31a6d7cad2e5c6da95bc66e34a0d11163a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434077"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649946"
 ---
 # <a name="sequence-activity-designer"></a>Sequence-Aktivitätsdesigner
 
 Die <xref:System.Activities.Statements.Sequence>-Aktivität enthält eine geordnete Auflistung von untergeordneten Aktivitäten, die in der angegebenen Reihenfolge ausgeführt werden.
 
-Eine andere Möglichkeit, eine Gruppe von Aktivitäten in einer bestimmten Reihenfolge auszuführen, besteht in der Verwendung einer <xref:System.Activities.Statements.Flowchart>-Aktivität. Erwägen Sie die Verwendung der [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) , wenn Sie haben eine einfache Verzweigung oder Programmablauf an, die Sie einer Schleife graphisch modellieren möchten.
+Eine andere Möglichkeit, eine Gruppe von Aktivitäten in einer bestimmten Reihenfolge auszuführen, besteht in der Verwendung einer <xref:System.Activities.Statements.Flowchart>-Aktivität. Verwenden Sie ggf. das Flussdiagramm, wenn ein einfacher Verzweigungs-oder Schleifen Programmfluss vorhanden ist, den Sie [Diagramms](../workflow-designer/flowchart-activity-designer.md) modellieren möchten.
 
 ## <a name="using-the-sequence-activity-designer"></a>Verwenden des Sequence-Aktivitätsdesigners
 
-Hinzufügen einer <xref:System.Activities.Statements.Sequence> -Aktivität ziehen Sie die **Sequenz** Aktivitäts-Designer aus der **Toolbox** und legen Sie sie an der Oberfläche des Workflow-Designer. Zum Hinzufügen einer untergeordneten Aktivität <xref:System.Activities.Statements.Sequence> -Aktivität, ziehen Sie eine andere Aktivität aus der **Toolbox** und legen Sie es auf dem Dreieck im Feld mit dem Hinweistext "Aktivität hier ablegen".
+Um eine <xref:System.Activities.Statements.Sequence>-Aktivität hinzuzufügen, ziehen Sie den **Sequence** -Aktivitäts Designer aus der **Toolbox** , und legen Sie ihn auf der Workflow-Designer Oberfläche ab. Um dieser <xref:System.Activities.Statements.Sequence> Aktivität eine untergeordnete Aktivität hinzuzufügen, ziehen Sie eine andere Aktivität aus der **Toolbox** , und legen Sie Sie auf dem Dreieck im Feld mit dem Hinweis Text "Aktivität hier ablegen" ab.
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Eigenschaften der Sequence-Aktivität im Workflow-Designer
 

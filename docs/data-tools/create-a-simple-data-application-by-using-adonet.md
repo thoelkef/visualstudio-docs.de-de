@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925704"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648730"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
@@ -27,7 +27,7 @@ Dieser Artikel veranschaulicht eine einfache Methode, um Daten aus einer Datenba
 > [!IMPORTANT]
 > Der Code enthält keine produktionsbereite Ausnahmebehandlung, um ihn einfach zu halten.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
 Zum Erstellen der Anwendung benötigen Sie:
 
@@ -59,7 +59,7 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 
 7. Fügen Sie das T-SQL-Skript in den Abfrage-Editor ein, und klicken Sie dann auf die Schaltfläche **Ausführen** .
 
-     Nach kurzer Zeit wird die Ausführung der Abfrage beendet, und die Datenbankobjekte werden erstellt. Die-Datenbank enthält zwei Tabellen: Kunde und Bestellungen. Diese Tabellen enthalten anfänglich keine Daten, aber Sie können beim Ausführen der Anwendung, die Sie erstellen, Daten hinzufügen. Die Datenbank enthält außerdem vier einfache gespeicherte Prozeduren.
+     Nach kurzer Zeit wird die Ausführung der Abfrage beendet, und die Datenbankobjekte werden erstellt. Die Datenbank enthält zwei Tabellen: "Customer" und "Orders". Diese Tabellen enthalten anfänglich keine Daten, aber Sie können beim Ausführen der Anwendung, die Sie erstellen, Daten hinzufügen. Die Datenbank enthält außerdem vier einfache gespeicherte Prozeduren.
 
 ## <a name="create-the-forms-and-add-controls"></a>Die Formulare erstellen und Steuerelemente hinzufügen
 
@@ -122,12 +122,12 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 ## <a name="store-the-connection-string"></a>Die Verbindungszeichenfolge speichern
 Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Speichern Sie die Zeichenfolge in der Datei " *app. config* " in Ihrem Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode von einem beliebigen Formular in der Anwendung aufgerufen wird, um zu vermeiden, dass Sie die Zeichenfolge manuell eingeben.
 
-Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG**+**A**, **STRG**+**C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
+Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG** +**A**, **STRG** +**C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
 
 1. C#Wenn Sie verwenden, erweitern Sie in **Projektmappen-Explorer**den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
     Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer**auf **alle Dateien anzeigen**, erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
 
-2. Geben Sie `connString`in der Spalte Name den Namen ein.
+2. Geben Sie in der Spalte **Name** `connString` ein.
 
 3. Wählen Sie in der Liste **Typ** die Option **(Verbindungs Zeichenfolge)** aus.
 
@@ -175,7 +175,7 @@ Erstellen Sie einen leeren Click-Ereignishandler für jede Schaltfläche im newC
 
 Führen Sie die folgenden Schritte aus, um die newCustomer-Formular Logik abzuschließen.
 
-1. Bringen Sie `System.Data.SqlClient` den Namespace in den Gültigkeitsbereich, sodass Sie die Namen der Member nicht vollständig qualifizieren müssen.
+1. Bringen Sie den `System.Data.SqlClient`-Namespace in den Gültigkeitsbereich, damit Sie die Namen der zugehörigen Member nicht vollständig qualifizieren müssen.
 
      ```csharp
      using System.Data.SqlClient;
@@ -197,7 +197,7 @@ Führen Sie die folgenden Schritte aus, um die newCustomer-Formular Logik abzusc
 
 ### <a name="fillorcancel-form"></a>FillOrCancel-Formular
 
-Das Formular "fllorcancel" führt eine Abfrage aus, um eine Bestellung zurückzugeben, wenn Sie eine Bestell -ID eingeben, und klicken Sie dann auf die Schaltfläche " Die zurückgegebene Zeile wird in einem schreibgeschützten Datenraster angezeigt. Sie können die Bestellung als abgebrochen (X) markieren, wenn Sie die Schaltfläche **Bestellung abbrechen** auswählen, oder Sie können die Bestellung als ausgefüllt markieren (F), wenn Sie die Schaltfläche Reihen **Folge ausfüllen** auswählen. Wenn Sie die Schaltfläche " **Bestellung suchen** " erneut auswählen, wird die aktualisierte Zeile angezeigt.
+Das Formular "fllorcancel" führt eine Abfrage aus, um eine Bestellung zurückzugeben, wenn Sie eine Bestell-ID eingeben, und klicken Sie dann **auf die Schalt** Fläche " Die zurückgegebene Zeile wird in einem schreibgeschützten Datenraster angezeigt. Sie können die Bestellung als abgebrochen (X) markieren, wenn Sie die Schaltfläche **Bestellung abbrechen** auswählen, oder Sie können die Bestellung als ausgefüllt markieren (F), wenn Sie die Schaltfläche Reihen **Folge ausfüllen** auswählen. Wenn Sie die Schaltfläche " **Bestellung suchen** " erneut auswählen, wird die aktualisierte Zeile angezeigt.
 
 #### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignis Handlern
 

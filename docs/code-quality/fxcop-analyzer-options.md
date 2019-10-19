@@ -2,17 +2,17 @@
 title: Konfigurationsoptionen für FxCop Analyzer
 ms.date: 09/23/2019
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449064"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649593"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Optionen für den Regelbereich für FxCop-Analysen
 

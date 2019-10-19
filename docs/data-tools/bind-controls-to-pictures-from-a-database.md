@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648834"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Binden von Steuerelementen an Bilder aus einer Datenbank
 
@@ -39,7 +39,7 @@ In der folgenden Prozedur wird davon ausgegangen, dass das Fenster **Datenquelle
 2. Erweitern Sie im Fenster **Datenquellen** die gewünschte Tabelle oder das gewünschte Objekt, sodass die Spalten bzw. Eigenschaften angezeigt werden.
 
    > [!TIP]
-   > Wenn die **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es durch Auswählen von **Ansicht** > **Other Windows** > **Datenquellen**.
+   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, öffnen Sie es, indem Sie  > **anderen Windows**  > **Datenquellen** **anzeigen** auswählen.
 
 3. Wählen Sie die Spalte oder die Eigenschaft aus, die die Bilddaten enthält, und wählen Sie eines der folgenden Steuerelemente aus der Dropdown-Steuerelementliste aus:
 
@@ -47,7 +47,7 @@ In der folgenden Prozedur wird davon ausgegangen, dass das Fenster **Datenquelle
 
     - Wenn der Windows Forms-Designer geöffnet ist, wählen Sie **PictureBox** aus.
 
-    - Sie können auch ein anderes Steuerelement auswählen, das die Datenbindung unterstützt und Bilder anzeigen kann. Wenn das Steuerelement, das Sie verwenden möchten, nicht in der Liste der verfügbaren Steuerelemente enthalten ist, können Sie es der Liste hinzufügen und es anschließend auswählen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    - Sie können auch ein anderes Steuerelement auswählen, das die Datenbindung unterstützt und Bilder anzeigen kann. Wenn das Steuerelement, das Sie verwenden möchten, nicht in der Liste der verfügbaren Steuerelemente enthalten ist, können Sie es der Liste hinzufügen und es anschließend auswählen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellen Fenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="see-also"></a>Siehe auch
 

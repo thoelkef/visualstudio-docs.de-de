@@ -6,20 +6,20 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682209"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654858"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen zu unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.  
+Die gemischten minimal Regeln von Microsoft konzentrieren sich auf die kritischsten Probleme C++ in Ihren Projekten, die die Common Language Runtime unterstützen, einschließlich potenzieller Sicherheitslücken und Anwendungs Abstürze. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.
 
 |                                            Regel                                             |                                                  Beschreibung                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Ungültiger Größenzeichenfolgenparameter                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Ungültiger Größenzeichenfolgenstandort                                    |
 |        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden               |
+|                              [C6527](../code-quality/c6527.md)                              |              Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Unbekannter Formatzeichenfolgenstil                                        |
 |                              [C6540](../code-quality/c6540.md)                              | Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig  |
 |                              [C6551](../code-quality/c6551.md)                              |                              Ungültige Größenangabe: Ausdruck nicht analysierbar                              |
@@ -101,7 +101,7 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |                             [C28215](../code-quality/c28215.md)                             |                    Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.                    |
 |                             [C28216](../code-quality/c28216.md)                             |        Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.         |
 |                             [C28217](../code-quality/c28217.md)                             |            Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein             |
-|                             [C28218](../code-quality/c28218.md)                             |             Für Funktionsparameter entspricht der der Parameter, die in der Datei gefundenen nicht              |
+|                             [C28218](../code-quality/c28218.md)                             |             Für den Funktionsparameter stimmt der Parameter der Anmerkung nicht mit der in der Datei gefundenen ab.              |
 |                             [C28219](../code-quality/c28219.md)                             |                 Member von Enumeration für den Parameter in der Anmerkung erwartet                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck                         |
@@ -146,7 +146,7 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |                             [C28286](../code-quality/c28286.md)                             |                                    Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.                                    |
 |                             [C28287](../code-quality/c28287.md)                             |                Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)                |
 |                             [C28288](../code-quality/c28288.md)                             |                  Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)                   |
-|                             [C28289](../code-quality/c28289.md)                             |                Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine                |
+|                             [C28289](../code-quality/c28289.md)                             |                Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.                |
 |                             [C28290](../code-quality/c28290.md)                             |           Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.            |
 |                             [C28291](../code-quality/c28291.md)                             |                        Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            Ausdrucksoperanden von inkompatiblen Typen für Operator                             |
