@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Designs in Workflows (Vorgängerversion) | Microsoft-Dokumentation
+title: Verwenden von Designs in Workflows (Legacy) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,26 +10,24 @@ helpviewer_keywords:
 - Theme Configuration dialog box
 ms.assetid: 10225f34-aced-432a-846c-82cf6137d7c0
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 79dc06eb352c3196418d5ebe274b10c6740f5e75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ad3c6b1c66ffa5ec512cfda857738d1219628e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855701"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606694"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Verwenden von Designs in Workflows (Vorgängerversion)
-In diesem Thema wird beschrieben, wie bei Verwendung der Vorgängerversion von [!INCLUDE[wf](../includes/wf-md.md)], die auf [!INCLUDE[wfd1](../includes/wfd1-md.md)] oder [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] abzielt, Designs in [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet werden.  
-  
- Mithilfe der [!INCLUDE[wf2](../includes/wf2-md.md)]-Designs können Sie das Aussehen Ihrer Workflows mit dem Legacy-Designer anpassen. Ein Design definiert die Hintergrund- und Vordergrundfarben, Formate, Symbole und andere visuelle Elemente eines Workflows. Sie können Designs für die Wiederverwendung durch andere Workflows speichern.  
-  
- Sie erstellen und bearbeiten Designs mit der [Designkonfigurationsdialogfeld (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md). Wählen Sie zum Öffnen dieses Dialogfelds **neues Design erstellen** auf die **Workflow** Menü oder mit der rechten Maustaste des workflowentwurfs auf Entwurfsoberfläche, und wählen **neues Design erstellen**.  
-  
- Sie können auswählen, standardmäßige und benutzerdefinierte Designs speichern, mithilfe der [Designs, Workflow-Designer, Optionen (Dialogfeld) (Legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md). Um das Dialogfeld zu öffnen, klicken Sie auf **benutzerdefiniertes Design auswählen** auf die **Workflow** Menü (oder mit der rechten Maustaste in der Workflow-Entwurfsoberfläche, und klicken Sie auf **benutzerdefiniertes Design auswählen**) und wählen Sie dann die **Workflow-Designer** Option. Wählen Sie das Design, Sie möchten, und klicken Sie auf **OK**.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Designkonfigurationsdialogfeld (Vorgängerversion)](../workflow-designer/theme-configuration-dialog-box-legacy.md)   
- [Designs, Workflowdesigner, Optionen (Dialogfeld) (Vorgängerversion)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
- [Verwenden des Legacyworkflow-Designers](../workflow-designer/using-the-legacy-workflow-designer.md)
+In diesem Thema wird beschrieben, wie bei Verwendung der Vorgängerversion von [!INCLUDE[wf](../includes/wf-md.md)], die auf [!INCLUDE[wfd1](../includes/wfd1-md.md)] oder [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] abzielt, Designs in [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet werden.
+
+ Mithilfe der [!INCLUDE[wf2](../includes/wf2-md.md)]-Designs können Sie das Aussehen Ihrer Workflows mit dem Legacy-Designer anpassen. Ein Design definiert die Hintergrund- und Vordergrundfarben, Formate, Symbole und andere visuelle Elemente eines Workflows. Sie können Designs für die Wiederverwendung durch andere Workflows speichern.
+
+ Sie erstellen und bearbeiten Designs mit dem [Dialog Feld "Design Konfiguration" (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md). Um dieses Dialogfeld zu öffnen, wählen Sie im Menü **Workflow** die Option **Neues Design erstellen** aus, oder klicken Sie mit der rechten Maustaste auf die Workflow Entwurfs Oberfläche, und wählen Sie **Neues Design erstellen**.
+
+ Sie können mithilfe des Dialog Felds "Designs", "Workflow-Designer" und " [Optionen" (Legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)Standardwerte auswählen und benutzerdefinierte Designs speichern. Klicken Sie zum Öffnen dieses Dialog Felds im Menü **Workflow** auf **benutzerdefiniertes Design auswählen** (oder klicken Sie mit der rechten Maustaste auf die Workflow Entwurfs Oberfläche, klicken Sie auf **benutzerdefiniertes Design auswählen**), und wählen Sie dann die Option **Workflow-Designer** Wählen Sie das gewünschte Design aus, und klicken Sie auf **OK**.
+
+## <a name="see-also"></a>Siehe auch
+ Design [Konfiguration (Dialogfeld) (Legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) Designs [, Workflow-Designer, Dialogfeld "Optionen" (Legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md) [mithilfe des Legacy-Workflow-Designer](../workflow-designer/using-the-legacy-workflow-designer.md)

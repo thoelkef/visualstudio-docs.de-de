@@ -1,37 +1,32 @@
 ---
 title: Tastenkombinationen (HTML und JavaScript) | Microsoft-Dokumentation
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7f800a74fb1cb9d0909bd1f95571eb7a3c27b06
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905590"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588969"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Tastenkombinationen (HTML und JavaScript)
 
-::: moniker range=">=vs-2019"
- Tastenkombinationen in Visual Studio zum Debuggen von Node.js-apps in Visual Studio mit der **Node.js-Entwicklung** arbeitsauslastung installiert.
-::: moniker-end
-::: moniker range="vs-2017"
- Tastenkombinationen in Visual Studio zum Debuggen von UWP-apps mit HTML und JavaScript.
-::: moniker-end
+Tastenkombinationen in Visual Studio zum Debuggen von UWP-apps mit HTML und JavaScript.
 
 ## <a name="general-shortcuts"></a>Allgemeine Tastenkombinationen
 
- Diese Tastenkombinationen gelten für alle Tools für UWP-apps mit HTML und JavaScript.
+ Diese Tastenkombinationen funktionieren in allen Tools für UWP-apps, die HTML und JavaScript verwenden.
 
 |Aktion|Verknüpfung|
 |------------|--------------|
@@ -64,6 +59,6 @@ ms.locfileid: "62905590"
 |Verringern des ausgewählten CSS-Werts um 1|NACH-UNTEN|
 
 ## <a name="see-also"></a>Siehe auch
-- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)
-- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

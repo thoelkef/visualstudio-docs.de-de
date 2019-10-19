@@ -1,5 +1,5 @@
 ---
-title: Ausführen von Komponententests für Store-apps
+title: Ausführen von Komponententests für Store-Apps
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446228"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672247"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ausführen von Komponententests für Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,13 +56,13 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 ## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
- ![Komponententest-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Komponenten Test-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
  Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Standardgruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests**angezeigt. Sie können die Gruppierung der Tests im Test-Explorer ändern.
 
  Über die Test-Explorer-Symbolleiste können Sie die meisten Aktionen zum Suchen, Organisieren und Ausführen von Tests ausführen.
 
- ![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Ausführen von Tests über die Test-Explorer-Symbolleiste](../test/media/ute-toolbar.png "UTE_ToolBar")
 
 ### <a name="BKMK_Running_tests"></a> Ausführen von Tests
  Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
@@ -105,12 +105,12 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 
 |||
 |-|-|
-|![Gruppenschaltfläche „Test-Explorer“](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|
+|![Schaltfläche "Test-Explorer"](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|
 
 ### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Suchen und Filtern der Testliste
  Wenn Sie über viele Tests verfügen, können Sie im Test-Explorer-Suchfeld eine Eingabe vornehmen, um die Liste entsprechend der angegebenen Zeichenfolge zu filtern. Sie können den Filter auf bestimmte Typen von Zeichenfolgen einschränken, indem Sie vor der Eingabe der Suchzeichenfolge in der Filterliste eine Auswahl vornehmen.
 
- ![Suchfilterkategorien](../test/media/ute-searchfilter.png "UTE_SearchFilter")
+ ![Filter Kategorien suchen](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
 ## <a name="BKMK_Debugging_unit_tests"></a> Debuggen von Komponententests
  Mit dem Test-Explorer können Sie Debugsitzungen für Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:

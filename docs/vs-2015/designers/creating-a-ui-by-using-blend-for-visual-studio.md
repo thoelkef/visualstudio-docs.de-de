@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657993"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 ## <a name="Tools"></a>Überblick über die Werkzeuge
  Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in Ihrer Anwendung Objekte erstellen und ändern. Die Objekte werden erstellt, indem Sie ein Werkzeug auswählen und die Objekte mit der Maus auf die Zeichenfläche ziehen.
 
- ![Werkzeugbereich](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
+ ![Werkzeug Panel](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
 |||||
 |-|-|-|-|
@@ -52,14 +52,14 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |![](../designers/media/b1-3.png "B1_3")|**Pinselwerkzeuge** Sie dienen zum Bearbeiten der visuellen Attribute eines Objekts, beispielsweise Pinseltransformationen, Zeichnen eines Objekts oder Auswählen der Attribute eines Objekts zur Übertragung auf ein anderes Objekt.|![Legende C](../designers/media/b5-label-c.png "b5_label_C")|**Formenwerkzeuge**|
 |![](../designers/media/b1-4.png "B1_4")|**Objektbibliothekswerkzeuge** Sie dienen zum Zeichnen der gängigsten Objekte auf der Zeichenfläche, z.B. Pfade, Formen, Layoutbereiche, Text und Steuerelemente.|![Legende D](../designers/media/b5-label-d.png "b5_label_D")|**Layoutbereiche**|
 |![](../designers/media/b1-5.png "B1_5")|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5-label-e.png "b5_label_E")|**Textsteuerelemente**|
-|||![Legende F](../designers/media/b5-label-f.png "b5_label_E")|**Allgemeine Steuerelemente**|
+|||![Legende F](../designers/media/b5-label-f.png "b5_label_F")|**Allgemeine Steuerelemente**|
 
- **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [der Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Die Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)
 
 ## <a name="Assets"></a>Überblick über den Objektbereich
  Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visual Studio ähnelt. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektbereich**, einschließlich Stile, Medien, Verhalten und Effekte.
 
- ![Objektbereich](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![Objekte Panel](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
 |||
 |-|-|
@@ -72,7 +72,7 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 ## <a name="Objects"></a>Überblick über die Bereiche Objekte und Zeitachse
  Verwenden Sie diesen Bereich, um die Objekte auf der Zeichenfläche zu organisieren und gegebenenfalls zu animieren.
 
- ![Objekt- und Zeitachsenbereich im Animationsmodus](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![Objekt-und Zeitachsen Panel im Animationsmodus](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
 |||
 |-|-|
@@ -96,9 +96,9 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 ## <a name="Properties"></a>Überblick über den Bereich Eigenschaften
  Verwenden Sie diesen Bereich, um die Eigenschaften eines Objekts anzuzeigen und zu ändern. Sie können sie auch direkt auf der Zeichenfläche festlegen. Wenn Sie dies tun, werden die Änderungen im Bereich **Eigenschaften** angezeigt.
 
- ![Bereich „Eigenschaften“](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
+ ![Eigenschaften Panel](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") und **Reduzieren** ![Reduzieren](../designers/media/b5-collapse-button.png "Schaltfläche_Reduzieren"), um Kategoriedetails anzuzeigen oder auszublenden.
+ **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421A-BBB3-6f5055b67b64") **und reduzieren** ![reduzieren, um](../designers/media/b5-collapse-button.png "b5_collapse_button") Kategoriedetails anzuzeigen oder auszublenden.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -120,7 +120,7 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |                     ![Legende 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.                                                                      |
 
- **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)
 
 ## <a name="see-also"></a>Siehe auch
  [Einfügen von Steuerelementen und Ändern des Verhaltens](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [Animieren von Objekten](../designers/animate-objects-in-xaml-designer.md) [Zeichnen von Formen und Pfaden](../designers/draw-shapes-and-paths.md) [Entwerfen von XAML in Visual Studio und Blend für Visual Studio](../designers/designing-xaml-in-visual-studio.md)

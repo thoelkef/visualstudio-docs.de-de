@@ -2,17 +2,17 @@
 title: 'Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808157"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604445"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-Hierarchie
+# <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
 
 Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSLT-Stylesheet werden oft `includes`- und `imports`-Anweisungen verwendet. Die Kompilierung beginnt mit dem Hauptstylesheet. Wenn in Folge der Kompilierung eines XSLT-Stylesheets ein Fehler angezeigt wird, kann dieser jedoch aus einer anderen Quelle als dem Hauptstylesheet stammen. Zum Beheben des Fehlers oder Bearbeiten des Stylesheets müssen Sie möglicherweise auf eingeschlossene oder importierte Stylesheets zugreifen. Beim schrittweisen Ausführen des Stylesheets im Debugger werden ggf. eingeschlossene und importierte Stylesheets geöffnet, und Sie können einen Haltepunkt in den eingeschlossenen Stylesheets hinzufügen.
 
@@ -20,9 +20,9 @@ Ein anderes Szenario, in dem das XSLT-Hierarchietool nützlich sein kann, ist da
 
 Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Stylesheet veranschaulicht.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>Debuggen in einem referenzierten Stylesheet
+## <a name="to-debug-in-a-referenced-style-sheet"></a>So debuggen Sie in einem referenzierten Stylesheet
 
-1. Öffnen Sie in Visual Studio ein XML-Dokument. Dieses Beispiel verwendet das folgende Dokument:
+1. Öffnen Sie in Visual Studio ein XML-Dokument. In diesem Beispiel wird das folgende Dokument verwendet:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -46,7 +46,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </COLLECTION>
     ```
 
-1. Fügen Sie die folgenden *xslincludefile.xsl*:
+1. Fügen Sie die folgende *xslincludefile. XSL-Datei*hinzu:
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-3. Fügen Sie die folgenden *xslinclude.xsl* Datei:
+3. Fügen Sie die folgende *xslinclude. xsl* -Datei hinzu:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,12 +103,12 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-4. Fügen Sie einen Haltepunkt bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`.
+4. Fügen Sie einen Haltepunkt in der Anweisungs `<xsl:include href="xslincludefile.xsl" />` hinzu.
 
 5. Beginnen Sie mit dem Debuggen.
 
-6. Wenn der Debugger hält bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`, drücken Sie die **Einzelschritt** Schaltfläche. Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
+6. Wenn der Debugger bei der Anweisungs `<xsl:include href="xslincludefile.xsl" />` angehalten wird, klicken Sie auf die Schaltfläche Einzel **Schritt** . Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XSLT-profiler](../xml-tools/xslt-profiler.md)
+- [XSLT-Profiler](../xml-tools/xslt-profiler.md)

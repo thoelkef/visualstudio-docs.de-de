@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeae6a14c846de83aaffa6568c6c30b82d9d81b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871732"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658550"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
  Die `template`-Direktive besitzt mehrere Attribute, mit denen Sie verschiedene Aspekte der Transformation angeben können. Alle Attribute sind optional.
 
 ## <a name="compileroptions-attribute"></a>compilerOptions-Attribut
- Beispiel: `compilerOptions="optimize+"`
+ Ein Beispiel: `compilerOptions="optimize+"`
 
- Gültige Werte: Alle gültigen Compileroptionen. Weitere Informationen finden [ C# Sie unter Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Gültige Werte: beliebige gültige Compileroptionen. Weitere Informationen finden [ C# Sie unter Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compileroptionen nach Kategorie aufgelistet](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignoriert für Laufzeitvorlagen (vorverarbeitete Vorlagen).
 
  Diese Optionen werden übernommen, wenn die Vorlage in [!INCLUDE[csprcs](../includes/csprcs-md.md)] oder [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)] konvertiert wurde. Der daraus resultierende Code wird kompiliert.
 
 ## <a name="culture-attribute"></a>Kulturattribut
- Beispiel: `culture="de-CH"`
+ Ein Beispiel: `culture="de-CH"`
 
  Gültige Werte: "", die invariante Kultur (Standard).
 
@@ -77,7 +77,7 @@ hostspecific="true"
 
  Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Wenn `hostspecific` auf `true` festgelegt ist und Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Zum Beispiel:
+ Wenn `hostspecific` auf `true` festgelegt ist und Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -102,15 +102,15 @@ Content of myFile is:
  Wenn Sie die Attribute `inherits` und `hostspecific` zusammen verwenden, geben Sie host="trueFromBase" in der abgeleiteten Klasse sowie host="true" in der Basisklasse an. Dies vermeidet eine doppelte Definition der Eigenschaft `Host` im generierten Code.
 
 ## <a name="language-attribute"></a>language-Attribut
- Beispiel: `language="VB"`
+ Ein Beispiel: `language="VB"`
 
  Gültige Werte: `C#` (Standard)
 
  `VB`
 
- Das Language-Attribut gibt die Sprache[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ( [!INCLUDE[csprcs](../includes/csprcs-md.md)]oder) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
+ Das Language-Attribut gibt die Sprache ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../includes/csprcs-md.md)]) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
- Zum Beispiel:
+ Beispiel:
 
 ```vb
 <#@ template language="VB" #>
@@ -214,7 +214,7 @@ This is the common footer.
  Weitere Informationen finden Sie unter ["Vererbung in Text Vorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>LinePragmas-Attribut
- Beispiel: `linePragmas="false"`
+ Ein Beispiel: `linePragmas="false"`
 
  Gültige Werte: `true` (Standard)
 
@@ -225,7 +225,7 @@ This is the common footer.
  Dieses Attribut ist auch hilfreich, wenn Sie erkennen, dass die absoluten Dateinamen in Pragmas irritierende Merges unter Quellcodeverwaltung verursachen.
 
 ## <a name="visibility-attribute"></a>Sichtbarkeitsattribut
- Beispiel: `visibility="internal"`
+ Ein Beispiel: `visibility="internal"`
 
  Gültige Werte: `public` (Standard)
 

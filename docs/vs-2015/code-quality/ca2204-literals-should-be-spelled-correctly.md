@@ -1,5 +1,5 @@
 ---
-title: 'CA2204: Literale sollten richtig geschrieben werden kann | Microsoft-Dokumentation'
+title: 'CA2204: Literale sollten korrekt geschrieben werden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - CA2204
 ms.assetid: b0bbcbb6-c92d-4c14-8ef7-9c8b38c791a6
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a08cb7cee2af51ade4b94dbf675ff83d7da456e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142510"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659536"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen.
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|LiteralsShouldBeSpelledCorrectly|
+|TypeName|Literalsdbespelledrichtig|
 |CheckId|CA2204|
-|Kategorie|Microsoft.Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Eine Methode übergibt eine, die Literalzeichenfolge mit verwendet wird, in einem Parameter oder die Eigenschaft, die eine lokalisierte Zeichenfolge und das Zeichenfolgenliteral erfordert enthält eine oder mehrere Wörter, die von der Rechtschreibprüfung aus der Microsoft-Bibliothek nicht erkannt werden.
+ Eine Methode übergibt eine Literalzeichenfolge an, die in einem Parameter oder einer Eigenschaft verwendet wird, für die eine lokalisierte Zeichenfolge erforderlich ist, und die Literalzeichenfolge enthält mindestens ein Wort, das von der Bibliothek der Microsoft-Rechtschreibprüfung
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel prüft eine Literalzeichenfolge, die als Wert übergeben wird, auf einen Parameter oder eine Eigenschaft, wenn eine oder mehrere der folgenden Fälle zutreffen:
+ Diese Regel überprüft eine Literalzeichenfolge, die als Wert an einen Parameter oder eine Eigenschaft übergeben wird, wenn mindestens einer der folgenden Fälle zutrifft:
 
-- Die <xref:System.ComponentModel.LocalizableAttribute> Attribut des Parameters oder der Eigenschaft wird festgelegt auf "true".
+- Das <xref:System.ComponentModel.LocalizableAttribute>-Attribut des-Parameters oder der-Eigenschaft ist auf true festgelegt.
 
-- Der Parameter oder die Eigenschaft Name enthält "Text", "Message" oder "Beschriftung".
+- Der Parameter-oder Eigenschaftsname enthält "Text", "Message" oder "Caption".
 
-- Der Name des Parameters, der auf eine Console.Write "oder" Console.WriteLine-Methode übergeben wird, ist "Value" oder "format".
+- Der Name des Zeichen folgen Parameters, der an eine Console. Write-oder Console. Write teline-Methode übergeben wird, ist entweder "Value" oder "Format".
 
-  Diese Regel analysiert die Literalzeichenfolge in Wörter, die mit Token versehen zusammengesetzte Wörter und überprüft die Rechtschreibung eines einzelnen Worts/Tokens. Informationen zu den Analysealgorithmus, finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+  Diese Regel analysiert die Literalzeichenfolge in Wörter, fasst zusammengesetzte Wörter um und überprüft die Schreibweise der einzelnen Wörter/Token. Weitere Informationen zum Algorithmus für die Verarbeitung finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
-  Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet.
+  Standardmäßig wird die englische Version (en) der Rechtschreibprüfung verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie es zu einem Benutzerwörterbuch. Weitere Informationen zur Verwendung von benutzerdefinierten Wörterbüchern finden Sie unter [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+ Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort einem benutzerdefinierten Wörterbuch hinzu. Weitere Informationen zum Verwenden von benutzerdefinierten Wörterbüchern finden Sie unter Gewusst [wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Ordnungsgemäß zu geschriebene Wörter der Lernaufwand für neue Softwarebibliotheken reduzieren.
+ Unterdrücken Sie keine Warnung dieser Regel. Korrekt geschriebene Wörter reduzieren die für neue Software Bibliotheken erforderliche Lernkurve.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Anpassen der Definition einer domänenspezifischen Sprache | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Anpassen der Definition der domänenspezifischen Sprache | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 ms.assetid: be98c38b-3ce3-4dce-8bcb-b79b85b4c825
 caps.latest.revision: 48
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 564ac5591595c62f1e5770176a383413b2e755bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 808fb54ea97c27af912ad02ab458bb2fd3e74ff6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002108"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605117"
 ---
 # <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>Exemplarische Vorgehensweise: Anpassen der Definition einer domänenspezifischen Sprache
-Dieser Inhalt ist veraltet. Informieren Sie sich [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Dieser Inhalt ist veraltet. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).

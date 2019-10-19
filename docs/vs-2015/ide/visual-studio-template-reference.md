@@ -1,5 +1,5 @@
 ---
-title: Referenz zu Vorlagen | Microsoft-Dokumentation
+title: Vorlagen Verweis | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,15 +9,15 @@ helpviewer_keywords:
 - reference, Visual Studio templates
 ms.assetid: 5ebdd6c4-5d3e-448c-b47d-f62ec5f44d51
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0690d37e90f910300f75880387a3f3ec44783206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3e522d7c38a7f2d8b3c1614aa66bcf840e16ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154927"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666556"
 ---
 # <a name="visual-studio-template-reference"></a>Referenz zu Visual Studio-Vorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "68154927"
 Die folgenden Links enthalten Informationen über die verschiedenen Aspekte der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt- und Elementvorlagen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) beschreibt die XML-Elemente, die in der VSTEMPLATE-Dateien verwendet.
+ [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md) Beschreibt die XML-Elemente, die in VSTEMPLATE-Dateien verwendet werden.
 
- [Vorlagenparameter](../ide/template-parameters.md) beschreibt die verfügbaren Parameter für Projekt- und Elementvorlagen.
+ [Vorlagen Parameter](../ide/template-parameters.md) Beschreibt die verfügbaren Parameter für Projekt-und Element Vorlagen.
 
  <xref:Microsoft.VisualStudio.TemplateWizard> Beschreibt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle und verwandte Typen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Vorgehensweise: Create Project Templates (Vorgehensweise: Erstellen von Projektvorlagen)](../ide/how-to-create-project-templates.md)
+ [Gewusst wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
 
- [Vorgehensweise: Create Item Templates (Vorgehensweise: Erstellen von Elementvorlagen)](../ide/how-to-create-item-templates.md)
+ [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
 
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
 
- [Vorgehensweise: Create Starter Kits (Vorgehensweise: Erstellen von Starter Kits)](../ide/how-to-create-starter-kits.md)
+ [Gewusst wie: Erstellen von Starter Kits](../ide/how-to-create-starter-kits.md)

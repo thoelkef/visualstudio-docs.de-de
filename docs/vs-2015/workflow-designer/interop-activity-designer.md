@@ -1,5 +1,5 @@
 ---
-title: Interop-Aktivitätsdesigner | Microsoft-Dokumentation
+title: Interop-Aktivitäts Designer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,42 +8,42 @@ f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 994d7776ff7c32f8dd309e667597550637ef2b5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952047"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659035"
 ---
 # <a name="interop-activity-designer"></a>Interop-Aktivitätsdesigner
-Die **Interop** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Interop> Aktivität.  
-  
-## <a name="the-interop-activity"></a>Die Interop-Aktivität  
- Die <xref:System.Activities.Statements.Interop>-Aktivität verwaltet die Ausführung von Typen, die sich von <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> innerhalb eines Workflows ableiten.  
-  
-### <a name="using-the-interop-activity-designer"></a>Verwenden des Interop-Aktivitätsdesigners  
- Die **Interop** Aktivitäts-Designer finden Sie in der **Migration** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**Registerkarte (Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menü- oder STRG + ALT + X.)  
-  
- Die [Migration](../workflow-designer/migration-activity-designers.md) Kategorie, enthält die <xref:System.Activities.Statements.Interop> Aktivität nur wird in der **Toolbox** Wenn Ihr Projekt, das vollständige abzielt [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)].  
-  
- Für c#-Projekten können Sie erneut das Projekt, um die Verwendung des vollständigen anwenden [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] durch Rechtsklick auf das Projekt in der **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Anwendung** Registerkarte die **.NET Framework 4** option die **Zielframework**. Wählen Sie die **Ja** Schaltfläche der **Änderung des Zielframeworks** Dialogfeld, in dem Sie aufgefordert werden, die diese Änderung zu bestätigen.  
-  
- Für VB-Projekte können Sie das Projekt, um die Verwendung des vollständigen erneut anwenden [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] mit der rechten Maustaste auf das Projekt in der **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Kompilieren** Registerkarte, klicken Sie auf die **Advanced Compile Options** Schaltfläche. Wählen Sie **.Net Framework 4** aus der **Zielframeworkliste** , und klicken Sie dann auf **OK**. Klicken Sie auf die **Ja** Schaltfläche der **Änderung des Zielframeworks** Dialogfeld, in dem Sie aufgefordert werden, die diese Änderung zu bestätigen.  
-  
- Die **Interop** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und auf die [!INCLUDE[wfd2](../includes/wfd2-md.md)] -Oberfläche ganz egal, wo Aktivitäten normalerweise platziert werden, etwa innerhalb einer <xref:System.Activities.Statements.Sequence>. Dies erstellt eine <xref:System.Activities.Statements.Interop> -Aktivität mit dem standardmäßigen **"DisplayName"** von Interop. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **Interop** Aktivitäts-Designer oder in der **"DisplayName"** Feld des Eigenschaftenrasters.  
-  
- Klicken Sie auf die **zum Durchsuchen klicken...** Text in die **ActivityType** Feld, auf die **Interop** -Aktivitätsdesigner oder im Eigenschaftenraster, um die **.NET-Typ suchen und auswählen** Dialogfeld. Nur Typen für Workflow 3.0- oder Workflow 3.5-Aktivitäten werden angezeigt (d. h. nur Typen, die von <xref:System.Workflow.ComponentModel.Activity> abgeleitet sind). [!INCLUDE[crabout](../includes/crabout-md.md)] Verwenden Sie dieses Kontrollkästchen zum Angeben eines Typs, finden Sie unter den [navigieren, und wählen Sie ein Dialogfeld](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) Thema.  
-  
-### <a name="the-interop-properties"></a>Die Interop-Eigenschaften  
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.Interop>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder in der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche bearbeitet werden.  
-  
-|Eigenschaftenname|Erforderlich|Verwendung|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Interop>-Aktivität. Der Standardwert lautet Interop. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|  
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Gibt den Typ der in der <xref:System.Activities.Statements.Interop>-Aktivität enthaltenen Aktivität an. Der angegebene Typ muss von <xref:System.Workflow.ComponentModel.Activity> abgeleitet sein.|  
-  
-## <a name="see-also"></a>Siehe auch  
+Der **Interop** -Aktivitäts Designer wird verwendet, um eine <xref:System.Activities.Statements.Interop>-Aktivität zu erstellen und zu konfigurieren.
+
+## <a name="the-interop-activity"></a>Die Interop-Aktivität
+ Die <xref:System.Activities.Statements.Interop>-Aktivität verwaltet die Ausführung von Typen, die sich von <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> innerhalb eines Workflows ableiten.
+
+### <a name="using-the-interop-activity-designer"></a>Verwenden des Interop-Aktivitätsdesigners
+ Der **Interop** -Aktivitäts Designer befindet sich in der Kategorie **Migration** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf die Registerkarte **Toolbox** klicken (Sie können auch im Menü **Ansicht** den Befehl **Toolbox** auswählen oder STRG + ALT + X drücken).
+
+ Die Kategorie [Migration](../workflow-designer/migration-activity-designers.md) , in der die <xref:System.Activities.Statements.Interop> Aktivität enthalten ist, wird nur in der **Toolbox** angezeigt, wenn das Projekt für den vollständigen [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] steht.
+
+ Für C# Projekte können Sie das Projekt für die Verwendung der vollständigen [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] neu zuweisen, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und **Eigenschaften**auswählen. Wählen Sie auf der Registerkarte **Anwendung** die Option **NET Framework 4** im **Ziel Framework**aus. Wählen Sie im Dialogfeld **Ziel Framework-Änderung** die Schaltfläche **Ja** aus, in der Sie aufgefordert werden, diese Änderung zu bestätigen.
+
+ Für VB-Projekte können Sie das Projekt erneut als Ziel verwenden, um die voll [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] zu verwenden, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und **Eigenschaften**auswählen. Klicken Sie auf der Registerkarte **Kompilieren** auf die Schaltfläche **Erweiterte Kompilierungsoptionen** . Wählen Sie **.NET Framework 4** aus der **Liste Ziel Framework** aus, und klicken Sie dann auf **OK**. Klicken Sie im Dialogfeld **Ziel Framework-Änderung** auf die Schaltfläche **Ja** , in der Sie aufgefordert werden, diese Änderung zu bestätigen.
+
+ Der **Interop** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence>. Dadurch wird eine <xref:System.Activities.Statements.Interop>-Aktivität mit dem **Display Name** -Standardwert Interop erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann im Header des **Interop** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
+
+ Klicken Sie auf die Schaltfläche **zum Durchsuchen...** Text im Feld **ActivityType** , entweder im **Interop** -Aktivitäts Designer oder im Eigenschaften Raster, um das Dialogfeld **.NET-Typ suchen und auswählen** zu aktivieren. Nur Typen für Workflow 3.0- oder Workflow 3.5-Aktivitäten werden angezeigt (d. h. nur Typen, die von <xref:System.Workflow.ComponentModel.Activity> abgeleitet sind). [!INCLUDE[crabout](../includes/crabout-md.md)] verwenden dieses Felds zum Angeben eines Typs finden Sie im Thema [Dialog Feld zum Durchsuchen und Auswählen eines .net-Typs](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) .
+
+### <a name="the-interop-properties"></a>Die Interop-Eigenschaften
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Interop>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder in der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche bearbeitet werden.
+
+|Eigenschaftenname|Erforderlich|Verwendung|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Interop>-Aktivität. Der Standardwert lautet Interop. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Gibt den Typ der in der <xref:System.Activities.Statements.Interop>-Aktivität enthaltenen Aktivität an. Der angegebene Typ muss von <xref:System.Workflow.ComponentModel.Activity> abgeleitet sein.|
+
+## <a name="see-also"></a>Siehe auch
  [Migration](../workflow-designer/migration-activity-designers.md)

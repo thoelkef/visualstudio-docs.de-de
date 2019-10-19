@@ -21,15 +21,15 @@ helpviewer_keywords:
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701264"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665833"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 ## <a name="kinds-of-windows"></a>Fensterarten
 
 ### <a name="tool-and-document-windows"></a>Tool- und Dokumentfenster
- Die IDE verfügt über zwei grundlegende Fenstertypen *Toolfenster* und *Dokumentfenster*. Toolfenster sind in Projektmappen-Explorer, Server-Explorer, Ausgabefenster, Fehlerliste, Designer, Debuggerfenster usw. enthalten. Dokumentfenster enthalten Quellcodedateien, beliebige Textdateien, Konfigurationsdateien usw. Die Größe der Toolfenster kann angepasst werden, und sie können an der Titelleiste gezogen werden. Dokumentfenster können an der Registerkarte gezogen werden. Klicken Sie zum Festlegen anderer Optionen für das Fenster mit der rechten Maustaste auf die Registerkarte oder die Titelleiste.
+ Die IDE verfügt über zwei grundlegende Fenstertypen *Toolfenster* und *Dokumentfenster*. Toolfenster sind in Projektmappen-Explorer, Server-Explorer, Ausgabefenster, Fehlerliste, Designer, Debuggerfenster usw. enthalten. Dokumentfenster enthalten Quellcodedateien, beliebige Textdateien, Konfigurationsdateien usw. Die Größe der Toolfenster kann angepasst werden, und sie können an der Titelleiste gezogen werden. Dokument Fenster können von der Registerkarte gezogen werden. Klicken Sie mit der rechten Maustaste auf die Registerkarte oder die Titelleiste, um weitere Optionen für das Fenster festzulegen.
 
  Im Menü **Fenster** werden Optionen zum Andocken, Verankern und Ausblenden von Fenstern in der IDE angezeigt. Klicken Sie mit der rechten Maustaste auf eine Fensterregisterkarte oder Titelleiste, um weitere Optionen für ein bestimmtes Fenster anzuzeigen. Sie können mehrere Instanzen bestimmter Toolfenster gleichzeitig anzeigen. Sie können z. B. mehrere Webbrowserfenster anzeigen und zusätzliche Instanzen bestimmter Toolfenster erstellen, indem Sie **Neues Fenster** im Menü **Fenster** wählen.
 
@@ -53,7 +53,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
  Wenn Sie zwei Positionen gleichzeitig in einem Dokument anzeigen oder bearbeiten müssen, können Sie die Fenster teilen. Um das Dokument in zwei Abschnitte zu teilen, durch die unabhängig voneinander gescrollt werden kann, klicken Sie auf **Teilen** im Menü **Fenster** . Klicken Sie auf **Teilung aufheben** im Menü **Fenster** , um die ursprüngliche Ansicht wiederherzustellen.
 
 ### <a name="toolbars"></a>Symbolleisten
- Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zur Anordnung und Anpassung von Symbolleisten finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zum Positionieren und Anpassen von Symbolleisten finden Sie unter [Gewusst wie: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Anordnen und Andocken von Fenstern
  Dokumentfenster und Toolfenster können *angedockt*werden, sodass sie eine Position und Größe innerhalb des IDE-Fensterrahmens haben, oder als unverankerte Fenster der IDE angezeigt werden. Toolfenster können an einer beliebigen Stelle innerhalb des IDE-Rahmens angedockt werden; manche Toolfenster können im Registerkartenformat angedockt werden. Dokumentfenster können innerhalb des Editorrahmens angedockt und an ihre aktuelle Position in der Aktivierreihenfolge angeheftet werden. Sie können mehrere Fenster per Rafting zu außerhalb der IDE andocken. Toolfenster können ausgeblendet oder minimiert werden.
@@ -88,22 +88,22 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
  Die folgende Abbildung veranschaulicht das Diamant-Führungssymbol für Dokumentfenster, das nur im Bearbeitungsrahmen angedockt werden kann:
 
- ![Dokumentfenster-Rautenführungssymbol](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+ ![Diamant-Führungs Symbol für Dokument Fenster](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
 
  Toolfenster können an einer Seite eines Frames in der IDE oder innerhalb des Bearbeitungsrahmens angebunden werden. Ein Diamant-Führungssymbol wird angezeigt, wenn Sie ein Toolfenster an eine andere Position ziehen, damit Sie das Fenster problemlos neu andocken können.
 
  Diamant-Führungssymbol für Toolfenster
 
- ![Toolfenster-Rautenführungssymbol](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+ ![Tool Fenster Anleitung für Diamanten](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
 
  In der folgenden Abbildung ist der Projektmappen-Explorer an einer neuen Position angedockt, die durch den blauen schattierten Bereich dargestellt wird:
 
- ![Andocken des Projektmappen-Explorer in eine neue Position](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![Andocken von Projektmappen-Explorer an einer neuen Position](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
 ### <a name="closing-and-auto-hiding-tool-windows"></a>Schließen und Automatisches Ausblenden von Toolfenstern
  Sie können ein Toolfenster schließen, indem Sie auf das X in der Titelleiste oben rechts klicken; Verwenden Sie zum erneuten Öffnen des Fensters die entsprechende Tastenkombination oder den Menübefehl. Toolfenster unterstützen eine Funktion mit dem Namen „Automatisch im Hintergrund“, mit der ein Fenster bei Verwendung eines anderen Fensters in den Hintergrund versetzt wird und ist somit nicht mehr sichtbar ist. Wenn ein Fenster automatisch in den Hintergrund versetzt wird, wird sein Name auf einer Registerkarte am Rand der IDE angezeigt. Um das Fenster wieder zu verwenden, zeigen Sie auf die Registerkarte, damit das Fenster wieder angezeigt wird.
 
- ![Automatisches Ausblenden](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
+ ![Automatisch ausblenden](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
 > Um festzulegen, ob die Funktion "Automatisch im Hintergrund" in Toolfenstern einzeln oder als angedockte Gruppen ausgeführt wird, wählen Sie im Dialogfeld **Optionen** die Option **Schaltfläche "Automatisch ausblenden" bezieht sich nur auf aktives Toolfenster** aus. Weitere Informationen finden Sie unter [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).
@@ -157,19 +157,19 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
 1. Sie können mit Tastenkombinationen zwischen Layouts wechseln, oder wählen Sie alternativ im Hauptmenü **Fenster > Fensterlayout anwenden** aus.
 
-     ![Anwenden von Layout-Menü "Fenster"](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
+     ![Menü "Fenster Layout anwenden"](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
      Nachdem Sie das Benutzeroberflächenlayout angewendet haben, beachten Sie, wie das Layout im Bearbeitungs- und im Debugmodus beibehalten wird.
 
      Wenn Sie an Ihrem Arbeitsplatz mehrere Monitore und zuhause einen Laptop mit nur einem Monitor nutzen, können Sie Layouts erstellen, die für den jeweiligen Computer optimiert sind.
 
-     Hinweis: Wenn Sie ein für mehrere Monitore konzipiertes Layout mit einem einzelnen Monitor nutzen, werden die frei schwebenden Fenster, die Sie auf dem zweiten Monitor platziert haben, durch das Visual Studio-Fenster verdeckt. Sie können diese Fenster in den Vordergrund bewegen, indem Sie "Alt+Tab" drücken. Wenn Sie später Visual Studio mit mehreren Monitoren öffnen, können Sie die Fenster wieder auf die festgelegten Positionen verschieben, indem Sie das Layout erneut anwenden.
+     Hinweis: Wenn Sie ein für mehrere Monitore konzipiertes Layout mit einem einzelnen Monitor nutzen, werden die frei schwebenden Fenster, die Sie auf dem zweiten Monitor platziert haben, durch das Visual Studio-Fenster verdeckt. Sie können diese Fenster in den Vordergrund bringen, indem Sie ALT + TAB drücken. Wenn Sie später Visual Studio mit mehreren Monitoren öffnen, können Sie die Fenster an den angegebenen Positionen wiederherstellen, indem Sie das Layout erneut anwenden.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Verwalten der Layouts und Ausführen von Roamings
 
 1. Sie können benutzerdefinierte Layouts entfernen, umbenennen oder neu arrangieren, indem Sie **Fenster > Fensterlayouts verwalten** auswählen. Wenn Sie ein Layout verschieben, wird die Schlüsselbindung automatisch so angepasst, dass die neue Position in der Liste wiedergegeben wird. Die Bindung kann nicht auf andere Weise geändert werden. Daher können Sie maximal 10 Layouts gleichzeitig speichern.
 
-     ![Fensterlayouts verwalten](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+     ![Fensterlayouts verwalten](../ide/media/managewindowlayouts.png "Managewindowlayouts")
 
      Um nachzusehen, welche Tastenkombination welchem Layout zugeordnet ist, wählen Sie **Fenster > Fensterlayout anwenden** aus.
 
@@ -180,6 +180,6 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 |Titel|Beschreibung|
 |-----------|-----------------|
 |[Fensterarten](../misc/kinds-of-windows.md)|Beschreibt die Unterschiede zwischen Toolfenstern und Dokumentfenstern in der IDE.|
-|[Vorgehensweise: Arrange and Dock Windows (Vorgehensweise: Anordnen und Andocken von Fenstern)](../misc/how-to-arrange-and-dock-windows.md)|Beschreibt das Andocken, automatische Ausblenden und Anordnen von Fenstern sowie das Zurücksetzen des Fensterlayouts.|
-|[Vorgehensweise: Move Around in the IDE (Vorgehensweise: Navigieren in der IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Beschreibt, wie Sie in der IDE zwischen geöffneten Fenstern in der Reihenfolge ihrer Verwendung wechseln können. Es wird auch beschrieben, wie Sie zu bestimmten Dokumenten springen können.|
+|[Gewusst wie: Anordnen und Andocken von Fenstern](../misc/how-to-arrange-and-dock-windows.md)|Beschreibt das Andocken, automatische Ausblenden und Anordnen von Fenstern sowie das Zurücksetzen des Fensterlayouts.|
+|[Vorgehensweise: Navigieren in der IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Beschreibt, wie Sie in der IDE zwischen geöffneten Fenstern in der Reihenfolge ihrer Verwendung wechseln können. Es wird auch beschrieben, wie Sie zu bestimmten Dokumenten springen können.|
 |[Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Enthält Informationen zu Einstellungskombinationen und deren Auswirkungen auf Fensterlayouts, Tastenkombinationen und andere Elemente in der IDE.|

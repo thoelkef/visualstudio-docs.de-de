@@ -1,5 +1,5 @@
 ---
-title: Was&#39;neues für den Entwurf
+title: '&#39;Neues beim Entwurf'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187123"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659246"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Neues beim Entwurf in Visual Studio in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Diese Version von Visual Studio bietet die folgenden Verbesserungen, sodass Sie 
 
  In der RTM-Version haben wir die Kontextmenüs für Codeelemente und Links benutzerfreundlicher gestaltet, indem wir die Befehle hinsichtlich Auswählen, Bearbeiten, Verwalten von Gruppen und Ändern des Layouts des Gruppeninhalts in Abschnitte eingeteilt haben. Beachten Sie außerdem, dass Testprojekte in einem anderen Format als andere Projekte angezeigt werden und die Symbole für Elemente in der Zuordnung passender gestaltet wurden.
 
- ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![Ausgewählte Elemente auf einem neuen Code Map anzeigen](../ide/media/codemapsshowonnewmap.png "Codemapsshowonnewmap")
 
  Zu den weiteren Verbesserungen gehören:
 
@@ -64,18 +64,18 @@ Diese Version von Visual Studio bietet die folgenden Verbesserungen, sodass Sie 
 
 - **Architektur-Explorer**. Sie können den Architektur-Explorer nicht mehr zum Erstellen von Diagrammen verwenden. Aber Sie können weiterhin den Projektmappen-Explorer verwenden.
 
-## <a name="VersionSupport"></a> Edition-Unterstützung für Architektur- und Modellierungstools
+## <a name="VersionSupport"></a>Editions Unterstützung für Architektur-und Modellierungstools
 
-Visual Studio 2015 ist in mehreren Versionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
+Visual Studio 2015 ist in verschiedenen Editionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur-und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
 
-|**Funktion**|**Enterprise**|**Professional**|**Community**|**Express**|
+|**Funktion**|**Fangen**|**Fachliche**|**Community**|**Drückt**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Codezuordnungen**|Ja|Unterstützt nur lesen und Filtern von Code Maps, Hinzufügen neuer allgemeiner Knoten und Erstellen eines neuen gerichteten Diagramms aus einer Auswahl aus.|-|-|
-|**UML-Klassendiagrammen**|Ja|-|-|-|
-|**UML-Sequenzdiagrammen**|Ja|-|-|-|
-|**UML-Anwendungsfalldiagramme**|Ja|-|-|-|
+|**Codezuordnungen**|Ja|Unterstützt nur das Lesen und Filtern von Code Maps, das Hinzufügen neuer generischer Knoten und das Erstellen eines neuen gerichteten Diagramms aus einer Auswahl.|-|-|
+|**UML-Klassendiagramme**|Ja|-|-|-|
+|**UML-Sequenzdiagramme**|Ja|-|-|-|
+|**UML-Anwendungsfall Diagramme**|Ja|-|-|-|
 |**UML-Aktivitätsdiagramme**|Ja|-|-|-|
-|**UML-Komponentendiagrammen**|Ja|-|-|-|
+|**UML-Komponenten Diagramme**|Ja|-|-|-|
 |**Ebenendiagramme**|Ja|-|-|-|
-|**Gerichtete Diagramme** (DGML-Diagramme)|Ja|Ja|-|-|
+|**Gesteuerte Diagramme** (dgml-Diagramme)|Ja|Ja|-|-|
 |**Codeklon**|Ja|-|-|-|

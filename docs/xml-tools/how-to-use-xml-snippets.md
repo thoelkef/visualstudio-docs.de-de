@@ -1,62 +1,62 @@
 ---
-title: 'Gewusst wie: Verwenden von XML-Ausschnitte'
+title: Verwenden von XML-Ausschnitten
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 163fcddb8553da39b035e649155e04c3da4b430e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002051"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601794"
 ---
-# <a name="how-to-use-xml-snippets"></a>Vorgehensweise: Verwenden von XML-Ausschnitten
+# <a name="how-to-use-xml-snippets"></a>Gewusst wie: Verwenden von XML-Ausschnitten
 
-Sie können XML-Ausschnitte aufrufen, indem Sie die folgenden zwei Befehle im Kontextmenü des XML-Editor verwenden. Die **Ausschnitt einfügen** Befehl wird den XML-Ausschnitt an der Cursorposition eingefügt. Die **Umschließen mit** Befehl dient als Wrapper für den XML-Ausschnitt für den ausgewählten Text. Jeder XML-Ausschnitt verfügt über definierte Ausschnitttypen. Die Ausschnitttypen bestimmen, ob der Ausschnitt mit verfügbar ist. die **Ausschnitt einfügen** Befehl aus, die **Umschließen mit** oder mit beiden Befehlen.
+Sie können XML-Ausschnitte aufrufen, indem Sie die folgenden beiden Befehle im Kontextmenü des XML-Editors verwenden. Der Befehl **Ausschnitt einfügen** fügt den XML-Code Ausschnitt an der Cursorposition ein. Der Befehl **Umschließen mit** umschließt den XML-Code Ausschnitt um den markierten Text. Jeder XML-Ausschnitt verfügt über definierte Ausschnitttypen. Die Ausschnitt Typen bestimmen, ob der Ausschnitt mit dem Befehl **Ausschnitt einfügen** , dem Befehl **Umschließen mit** oder beidem verfügbar ist.
 
 Nachdem dem Editor der XML-Ausschnitt hinzugefügt wurde, werden alle editierbaren Felder in den Ausschnitten in gelber Farbe hervorgehoben, und der Cursor wird auf dem ersten editierbaren Feld platziert.
 
 ## <a name="insert-snippet"></a>Ausschnitt einfügen
 
-Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Ausschnitt einfügen** Befehl.
+In den folgenden Prozeduren wird beschrieben, wie Sie auf den Befehl **Ausschnitt einfügen** zugreifen.
 
 > [!NOTE]
-> Die **Ausschnitt einfügen** Befehl steht auch über die Tastenkombination (**STRG**+**K**, klicken Sie dann **STRG** + **X**).
+> Der Befehl **Ausschnitt einfügen** ist auch über die Tastenkombination (**STRG** +**K**, dann **STRG** +**X**) verfügbar.
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>So fügen Sie Ausschnitte über das Kontextmenü ein
 
 1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.
 
-2. Mit der rechten Maustaste, und wählen Sie **Ausschnitt einfügen**.
+2. Klicken Sie mit der rechten Maustaste, und wählen Sie **Ausschnitt einfügen**aus.
 
    Es wird eine Liste der verfügbaren XML-Ausschnitte angezeigt.
 
-3. Wählen Sie einen Ausschnitt aus der Liste mit der Maus oder durch Eingabe des Namens der Codeausschnitt, und drücken **Registerkarte** oder **EINGABETASTE**.
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die **Tab** -Taste oder die **Eingabe**Taste.
 
 ### <a name="to-insert-snippets-using-the-intellisense-menu"></a>So fügen Sie Ausschnitte über das IntelliSense-Menü ein
 
 1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.
 
-2. Von der **bearbeiten** Startmenü **IntelliSense**, und wählen Sie dann **Ausschnitt einfügen**.
+2. Zeigen Sie im Menü **Bearbeiten** auf **IntelliSense**, und wählen Sie **Ausschnitt einfügen**aus.
 
    Es wird eine Liste der verfügbaren XML-Ausschnitte angezeigt.
 
-3. Wählen Sie einen Ausschnitt aus der Liste mit der Maus oder durch Eingabe des Namens der Codeausschnitt, und drücken **Registerkarte** oder **EINGABETASTE**.
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die **Tab** -Taste oder die **Eingabe**Taste.
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Zum Einfügen von Codeausschnitten in der Liste der IntelliSense-Wort vervollständigen
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>So fügen Sie Ausschnitte durch die IntelliSense-Liste "Wort vervollständigen" ein
 
 1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.
 
-2. Beginnen Sie mit dem Eingeben des XML-Ausschnitts, der der Datei hinzugefügt werden soll. Wenn die automatische Vervollständigung aktiviert ist, wird die Wort vervollständigen-Liste von IntelliSense angezeigt. Wenn es nicht angezeigt wird, drücken Sie die **STRG**+**Speicherplatz** aktivieren.
+2. Beginnen Sie mit dem Eingeben des XML-Ausschnitts, der der Datei hinzugefügt werden soll. Wenn die automatische Vervollständigung aktiviert ist, wird die Wort vervollständigen-Liste von IntelliSense angezeigt. Wenn Sie nicht angezeigt wird, drücken Sie **STRG** +**LEERTASTE** , um Sie zu aktivieren.
 
 3. Wählen Sie den XML-Ausschnitt aus der Wort vervollständigen-Liste aus.
 
-4. Drücken Sie **Registerkarte**, **Registerkarte** um den XML-Ausschnitt aufzurufen.
+4. Drücken Sie **Tab**, **Tab** , um den XML-Ausschnitt aufzurufen.
 
 > [!NOTE]
 > Möglicherweise können XML-Ausschnitte in einigen Fällen nicht aufgerufen werden. Wenn Sie z. B. versuchen, ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens einzufügen, generiert der Editor keinen XML-Ausschnitt. Wenn ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens verwendet wird, sind die erforderlichen Attribute oder Unterelemente nicht vorhanden, sodass der Editor über keine Daten zum Einfügen verfügt.
@@ -67,51 +67,51 @@ Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Ausschni
 
 2. Geben Sie im Editorbereich `<` ein.
 
-3. Drücken Sie **Esc** , schließen Sie die IntelliSense-Liste Wort vervollständigen.
+3. Drücken Sie **ESC** , um die Liste IntelliSense Complete Word zu schließen.
 
-4. Geben Sie den Namen der Verknüpfung der Codeausschnitt, und drücken Sie **Registerkarte** um den XML-Ausschnitt aufzurufen.
+4. Geben Sie den Verknüpfungs Namen des Ausschnitts ein, und drücken Sie die **Tab** -Taste, um den XML-Ausschnitt aufzurufen.
 
 ## <a name="surround-with"></a>Umgeben mit
 
-Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Umschließen mit** Befehl.
+In den folgenden Verfahren wird beschrieben, wie Sie auf den Befehl **Umschließen mit** zugreifen.
 
 > [!NOTE]
-> Die **Umschließen mit** Befehl steht auch über die Tastenkombination (**STRG**+**K**, klicken Sie dann **STRG** + **S**).
+> Der Befehl **Umschließen mit** ist auch über die Tastenkombination (**STRG** +**K**, dann **STRG** +**S**) verfügbar.
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Umschließen mit aus dem Kontextmenü verwenden
+### <a name="to-use-surround-with-from-the-context-menu"></a>So verwenden Sie "umgeben mit" über das Kontextmenü
 
-1. Wählen Sie den Text an, in der XML-Editor umgeben.
+1. Wählen Sie den Text aus, der im XML-Editor umschließt werden soll
 
-2. Mit der rechten Maustaste, und wählen Sie **Umschließen mit**.
-
-   Eine Liste der verfügbaren Umgeben mit-XML-Ausschnitte wird angezeigt.
-
-3. Wählen Sie einen Ausschnitt aus der Liste mit der Maus oder durch Eingabe des Namens der Codeausschnitt, und drücken **Registerkarte** oder **EINGABETASTE**.
-
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Umschließen mit der IntelliSense-Menü verwenden
-
-1. Wählen Sie den Text an, in der XML-Editor umgeben.
-
-2. Von der **bearbeiten** Startmenü **IntelliSense**, und wählen Sie dann **Umschließen mit**.
+2. Klicken Sie mit der rechten Maustaste, und wählen Sie **umgeben mit**
 
    Eine Liste der verfügbaren Umgeben mit-XML-Ausschnitte wird angezeigt.
 
-3. Wählen Sie einen Ausschnitt aus der Liste mit der Maus oder durch Eingabe des Namens der Codeausschnitt, und drücken **Registerkarte** oder **EINGABETASTE**.
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die **Tab** -Taste oder die **Eingabe**Taste.
+
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>So verwenden Sie "umschließen mit" über das IntelliSense-Menü
+
+1. Wählen Sie den Text aus, der im XML-Editor umschließt werden soll
+
+2. Zeigen Sie im Menü **Bearbeiten** auf **IntelliSense**, und wählen Sie dann **Umschließen mit**aus.
+
+   Eine Liste der verfügbaren Umgeben mit-XML-Ausschnitte wird angezeigt.
+
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die **Tab** -Taste oder die **Eingabe**Taste.
 
 ## <a name="use-xml-snippets"></a>Verwenden von XML-Ausschnitten
 
 Wenn Sie einen XML-Ausschnitt ausgewählt haben, wird der Text des Codeausschnitts automatisch an der Cursorposition eingefügt. Alle editierbaren Felder im Ausschnitt sind hervorgehoben, und das erste editierbare Feld wird automatisch markiert. Das aktuell markierte Feld ist geschachtelt.
 
-Wenn ein Feld markiert ist, können Sie einen neuen Wert in das Feld eingeben. Drücken Sie **Registerkarte** durchläuft den editierbaren Felder des Ausschnitts; drücken **UMSCHALT**+**Registerkarte** navigieren Sie in umgekehrter Reihenfolge. Durch Klicken auf ein Feld wird der Cursor in diesem Feld platziert. Mit einem Doppelklick auf ein Feld wird dieses markiert. Wenn ein Feld hervorgehoben ist, kann eine QuickInfo angezeigt werden, die eine Beschreibung des Felds liefert.
+Wenn ein Feld markiert ist, können Sie einen neuen Wert in das Feld eingeben. Durch Drücken der **Tab** -Taste durch die bearbeitbaren Felder des Code Ausschnitts durch Drücken der **UMSCHALT** +**Registerkarte** werden Sie in umgekehrter Reihenfolge durchlaufen Durch Klicken auf ein Feld wird der Cursor in diesem Feld platziert. Mit einem Doppelklick auf ein Feld wird dieses markiert. Wenn ein Feld hervorgehoben ist, kann eine QuickInfo angezeigt werden, die eine Beschreibung des Felds liefert.
 
 Nur die erste Instanz des jeweiligen Feldes ist editierbar. Wenn dieses Feld hervorgehoben ist, sind die anderen Instanzen des Feldes mit einem Rahmen versehen. Wenn Sie den Wert eines editierbaren Feldes ändern, wird das Feld an allen Stellen im Ausschnitt geändert, an denen es verwendet wird.
 
-Drücken Sie **EINGABETASTE** oder **Esc** feldbearbeitung beendet, und den Editor zurück in den normalen.
+Durch Drücken der **Eingabe** Taste oder **ESC** wird die Feldbearbeitung abgebrochen, und der Editor wird normal zurückgegeben.
 
-Die Standardfarben für editierbare können geändert werden, indem die **Codeausschnittfeld** festlegen in der **Schriftarten und Farben** im Bereich der **Optionen** Dialogfeld. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern der im Editor in Visual Studio 2017 verwendeten Schriftarten und Farben](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Die Standardfarben für bearbeitbare Code Ausschnitt Felder können geändert werden, indem Sie im Bereich **Schriftarten und Farben** des Dialog Felds **Optionen** die Einstellung für das **Code Ausschnitt Feld** ändern. Weitere Informationen finden Sie unter Gewusst [wie: Ändern von Schriftarten und Farben im Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [XML-Ausschnitte](../xml-tools/xml-snippets.md)
-- [Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Vorgehensweise: Erstellen von XML-Ausschnitten](../xml-tools/how-to-create-xml-snippets.md)
+- [Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Gewusst wie: Erstellen von XML-Ausschnitten](../xml-tools/how-to-create-xml-snippets.md)

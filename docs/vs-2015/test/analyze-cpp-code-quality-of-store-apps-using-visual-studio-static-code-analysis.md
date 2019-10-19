@@ -1,5 +1,5 @@
 ---
-title: C++statische Analyse Store-apps
+title: C++statische Code Analyse Store-Apps
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686538"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672709"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität des C++-Codes von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Das Codeanalysetool in Visual Studio Express-Editionen überprüft den Code auf eine Reihe von allgemeinen Fehlern und auf Verstöße gegen gebräuchliche Programmiergrundlagen. Codeanalysewarnungen unterscheiden sich von Compilerfehlern und -warnungen, da die Codeanalyse nach bestimmten Codeschemata sucht, die gültig sind, jedoch Probleme für Sie oder andere Personen bereiten können, die den Code verwenden. Codeanalyse kann auch Fehler im Code suchen, die schwierig durch Tests zu erkennen sind. Das regelmäßige Ausführen des Codeanalysetools während des Entwicklungsprozesses kann die Qualität der App erhöhen.
 
@@ -41,12 +41,12 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
    Die Projektmappe wird kompiliert und die Codeanalyse ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.
 
-   ![Codeanalysefenster](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Fenster "Code Analyse"](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
  Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung im Fenster "Codeanalyse" aus. Die Warnung wird erweitert, um ausführliche Informationen zum Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummer und die Analyselogik an, die zu der Warnung geführt haben.
 
- ![Erweiterte Codeanalysewarnung](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
+ ![Erweiterte Code Analyse Warnung](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  Wenn Sie eine Warnung erweitern, werden die Codezeilen, die die Warnung verursacht haben, im Visual Studio-Code-Editor hervorgehoben.
 
@@ -73,7 +73,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 ## <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
  Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.
 
- ![Fenster zum Suchen und Filtern der Codeanalyse](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Suchen und Filtern des Code Analyse Fensters](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
 ## <a name="Warnings"></a> C++-Codeanalysewarnungen
  Die Codeanalyse gibt die folgenden Warnungen für C++-Code aus:
@@ -132,7 +132,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Ungültiger Größenzeichenfolgenparameter                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Ungültiger Größenzeichenfolgenstandort                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden               |
+|                       [C6527](../code-quality/c6527.md)                        |              Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Unbekannter Formatzeichenfolgenstil                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Ungültige Größenangabe: Ausdruck nicht analysierbar                              |
@@ -158,7 +158,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                      [C28215](../code-quality/c28215.md)                       |                    Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.                    |
 |                      [C28216](../code-quality/c28216.md)                       |        Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein             |
-|                      [C28218](../code-quality/c28218.md)                       |             Für Funktionsparameter entspricht der der Parameter, die in der Datei gefundenen nicht              |
+|                      [C28218](../code-quality/c28218.md)                       |             Für den Funktionsparameter stimmt der Parameter der Anmerkung nicht mit der in der Datei gefundenen ab.              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Member von Enumeration für den Parameter in der Anmerkung erwartet                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck                         |
@@ -203,7 +203,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                      [C28286](../code-quality/c28286.md)                       |                                    Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine                |
+|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.                |
 |                      [C28290](../code-quality/c28290.md)                       |           Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Ausdrucksoperanden von inkompatiblen Typen für Operator                             |

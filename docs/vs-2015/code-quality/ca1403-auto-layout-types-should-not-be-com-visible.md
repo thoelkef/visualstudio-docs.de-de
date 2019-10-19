@@ -1,5 +1,5 @@
 ---
-title: 'CA1403: Typen mit automatischem Layout sollten nicht COM sichtbar sein | Microsoft-Dokumentation'
+title: 'CA1403: automatische Layouttypen sollten nicht com-sichtbar sein | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2420582ab342948d7774e1bb9e4b5947f44f8d2b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5f39540cb23d86dda4244604da8a9ff764594e11
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695438"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661334"
 ---
-# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein.
+# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|
 |CheckId|CA1403|
-|Kategorie|Microsoft.Interoperability|
+|Kategorie|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Werttyp der Component Object Model (COM) sichtbar ist mit markiert die <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> -Attributsatz auf <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.
+ Ein sichtbarer Component Object Model (com)-Werttyp ist mit dem Attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> gekennzeichnet, das auf <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> festgelegt ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Runtime.InteropServices.LayoutKind> Layouttypen werden von der common Language Runtime verwaltet. Das Layout dieser Typen kann zwischen Versionen von .NET Framework ändern, die COM-Clients unterbrochen wird, die ein bestimmtes Layout erwarten. Beachten Sie, dass bei der <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut nicht angegeben ist, der C#-, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], und geben Sie die C++-Compiler die <xref:System.Runtime.InteropServices.LayoutKind> Layout für Werttypen.
+ <xref:System.Runtime.InteropServices.LayoutKind> Layouttypen werden vom Common Language Runtime verwaltet. Das Layout dieser Typen kann sich zwischen den Versionen der .NET Framework ändern, wodurch com-Clients, die ein bestimmtes Layout erwarten, unterbricht werden. Beachten Sie, dass C#, wenn das <xref:System.Runtime.InteropServices.StructLayoutAttribute>-Attribut nicht angegeben ist, die C++ -, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-und-Compiler das <xref:System.Runtime.InteropServices.LayoutKind> Layout für Werttypen angeben.
 
- Sofern nicht anders markiert ist, werden alle öffentliche nicht generische Typen für COM sichtbar; alle nicht öffentliche und generische Typen sind für COM nicht sichtbar Um falsch positive Ergebnisse zu reduzieren, erfordert mit dieser Regel jedoch die COM-Sichtbarkeit des Typs explizit angegeben werden; die übergeordnete Assembly muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ markiert werden muss, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
+ Sofern nicht anders gekennzeichnet, sind alle öffentlichen nicht generischen Typen für com sichtbar. alle nicht öffentlichen und generischen Typen sind für com nicht sichtbar. Um falsch positive Ergebnisse zu reduzieren, erfordert diese Regel jedoch, dass die COM-Sichtbarkeit des Typs explizit angegeben wird. die enthaltende Assembly muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> als `false` markiert werden, und der Typ muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf `true` festgelegt sein.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert von der <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut <xref:System.Runtime.InteropServices.LayoutKind> oder <xref:System.Runtime.InteropServices.LayoutKind>, oder ändern Sie den Typ für COM nicht sichtbar
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Wert des <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attributs in <xref:System.Runtime.InteropServices.LayoutKind> oder <xref:System.Runtime.InteropServices.LayoutKind>, oder machen Sie den Typ für COM unsichtbar.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt ein Typ, der gegen die Regel verstößt und ein Typ, der die Regel erfüllt.
+ Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt, und einen Typ, der die Regel erfüllt.
 
  [!code-csharp[FxCop.Interoperability.AutoLayout#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.AutoLayout/cs/FxCop.Interoperability.AutoLayout.cs#1)]
  [!code-vb[FxCop.Interoperability.AutoLayout#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.AutoLayout/vb/FxCop.Interoperability.AutoLayout.vb#1)]
@@ -56,4 +56,4 @@ ms.locfileid: "65695438"
  [CA1408: AutoDual ClassInterfaceType nicht verwenden](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Einführung in die Klassenschnittstelle](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [Qualifizieren von .NET-Typen für die Interoperation](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [Interoperation mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [Einführung in die Klassen Schnittstelle](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [qualifizieren von .NET-Typen für die Interoperation](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

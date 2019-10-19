@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696005"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662223"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Optionen, Text-Editor, XAML, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,16 +117,16 @@ Mit dieser Einstellung wird gesteuert, ob die Entwurfsansicht angezeigt wird, we
 
 |||
 |-|-|
-|**Öffnen Sie die Dokumente immer in vollständige XAML-Ansicht**|Gibt an, ob der XAML-Dokumente nur in XAML-Ansicht, ohne die Entwurfsansicht angezeigt werden. Beim Laden großer Dokumente hilfreich.|
+|**Dokumente in der vollständigen XAML-Ansicht immer öffnen**|Gibt an, ob XAML-Dokumente nur in der XAML-Ansicht angezeigt werden, ohne Designansicht. Nützlich für das Laden großer Dokumente.|
 
 ## <a name="toolbox"></a>Werkzeugkasten
-Verwenden Sie diese Einstellung, um anzugeben, ob Benutzersteuerelemente und benutzerdefinierte Steuerelemente in der Toolbox angezeigt werden.
+Verwenden Sie diese Einstellung, um anzugeben, ob Benutzer Steuerelemente und benutzerdefinierte Steuerelemente in der Toolbox angezeigt werden.
 
 |||
 |-|-|
 |**Toolboxelemente automatisch ausfüllen**|Gibt an, ob Benutzersteuerelemente und benutzerdefinierte Steuerelemente in der aktuellen Projektmappe automatisch in der Toolbox angezeigt werden.|
 
 ## <a name="see-also"></a>Siehe auch
-[XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Vorgehensweise: Ändern der XAML-Ansichtseinstellungen](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[Exemplarische Vorgehensweisen zu XAML und Code](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+ Gewusst[wie: Ändern von XAML-Ansichts Einstellungen](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+ exemplarischen Vorgehensweisen für[XAML und Code](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

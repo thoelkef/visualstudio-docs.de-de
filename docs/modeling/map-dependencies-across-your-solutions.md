@@ -11,17 +11,17 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecc8ae714dfb35281029a9d6e240a148e7c9511
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 45fb9b1a08dc54257f24f469d3a717b82faccf45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913346"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661546"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Zuordnen von Abhängigkeiten zu Code Maps
 
@@ -38,7 +38,7 @@ Sie können Code Abhängigkeiten in diesen Sprachen zuordnen:
 
 - Visual C# oder Visual Basic in einer Projekt Mappe oder in Assemblys (*dll* -oder *exe*-Datei)
 
-- Nativer oder verwalteter C++ C-oder C++ -Code in visuellen Projekten, Header Dateien `#include`( *. h* oder) oder Binärdateien
+- Nativer oder verwalteter C++ C-oder C++ -Code in visuellen Projekten, Header Dateien ( *. h* oder `#include`) oder Binärdateien
 
 - Aus .NET-Modulen für Microsoft Dynamics AX erstellte X++-Projekte und X++-Assemblydateien
 
@@ -49,7 +49,7 @@ Sie können Code Abhängigkeiten in diesen Sprachen zuordnen:
 
 Um in Visual Studio eine Code Map zu erstellen, installieren Sie zunächst die Komponenten **Code Map** und **Live-Abhängigkeits** Überprüfung:
 
-1. Öffnen Sie **Visual Studio-Installer**. Sie können Sie über das Windows-Startmenü oder in Visual Studio öffnen, indem Sie **Tools Tools** > **und Features**auswählen auswählen.
+1. Öffnen Sie **Visual Studio-Installer**. Sie können Sie über das Windows-Startmenü oder in Visual Studio öffnen, indem Sie **Extras  > ** **Tools und Features erhalten**auswählen.
 
 1. Wählen Sie die Registerkarte **Einzelne Komponenten** aus.
 
@@ -67,7 +67,7 @@ Sie können eine leere Code Map erstellen und Elemente auf diese ziehen, einschl
 
 So fügen Sie eine leere Code Map hinzu:
 
-1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten auf oberster Ebene. Wählen Sie**Neues Element** **Hinzufügen** > aus.
+1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten auf oberster Ebene. Wählen Sie  > **Neues Element** **Hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **installiert**die Kategorie **Allgemein** aus.
 
@@ -78,13 +78,13 @@ So fügen Sie eine leere Code Map hinzu:
 
    Im Ordner Projektmappenelemente der Projekt Mappe wird eine leere Karte angezeigt.
 
-Auf ähnliche Weise können Sie eine neue Code Map Datei erstellen, ohne Sie der Projekt Mappe hinzuzufügen, indem Sie **Architektur** > **neue Code Map** oder **Datei** > **neue** > **Datei**auswählen.
+Auf ähnliche Weise können Sie eine neue Code Map Datei erstellen, ohne Sie der Projekt Mappe hinzuzufügen, indem Sie **Architektur**  > **neue Code Map** oder **Datei**  > **neue**  > **Datei**auswählen.
 
 ## <a name="generate-a-code-map-for-your-solution"></a>Generieren eines Code Map für die Lösung
 
 So zeigen Sie alle Abhängigkeiten in der Projekt Mappe an:
 
-1. Wählen Sie in der Menüleiste **Architektur** > **Code Map für Projekt Mappe generieren aus**. Wenn sich der Code seit der letzten Erstellung nicht geändert hat, können Sie **Architektur** > **Code Map für** Projekt Mappe generieren auswählen, ohne stattdessen zu erstellen.
+1. Wählen Sie in der Menüleiste **Architektur** aus,  > **Code Map für**Projekt Mappe generieren. Wenn sich der Code seit der letzten Erstellung nicht geändert hat, können Sie **Architektur**  > **Code Map für** Projekt Mappe generieren, ohne stattdessen zu erstellen.
 
    ![Generieren eines Code Map-Befehls](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -149,7 +149,7 @@ So zeigen Sie alle Abhängigkeiten in der Projekt Mappe an:
 Siehe auch:
 
 - [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)
-- [Anpassen von Code Maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - Ermitteln potenzieller Probleme im Code durch [Ausführen einer Analyse](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="view-specific-dependencies-in-a-code-map"></a>Anzeigen bestimmter Abhängigkeiten in einer Code Map
@@ -162,7 +162,7 @@ Angenommen, Sie verfügen über einen Code Review, der in einigen Dateien mit au
 
    ![Auswählen der Elemente, die Sie zuordnen möchten](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. Wählen Sie auf der Symbolleiste **Projektmappen-Explorer** **in Code Map** ![die Schaltfläche](../modeling/media/createnewgraphfromselectedbutton.gif)neues Diagramm aus ausgewählten Knoten erstellen die Option anzeigen aus. Oder öffnen Sie das Kontextmenü für eine oder eine Gruppe von Elementen, und wählen Sie **auf Code Map anzeigen**aus.
+1. Wählen Sie auf der **Projektmappen-Explorer** Symbolleiste die Option **in Code Map anzeigen** ![Create neues Diagramm aus der Schaltfläche ausgewählte Knoten ](../modeling/media/createnewgraphfromselectedbutton.gif) aus. Oder öffnen Sie das Kontextmenü für eine oder eine Gruppe von Elementen, und wählen Sie **auf Code Map anzeigen**aus.
 
    Sie können auch Elemente aus **Projektmappen-Explorer**, **Klassenansicht**oder **Objektkatalog**in eine [neue](#add-a-code-map) oder vorhandene Code Map ziehen. Um die übergeordnete Hierarchie für die Elemente einzuschließen, halten Sie die **STRG** -Taste gedrückt, während Sie Elemente ziehen, oder verwenden Sie die Schaltfläche übergeordnete Elemente **einschließen** auf der Code Map Symbolleiste, um die Standardaktion anzugeben. Sie können Assemblydateien auch von außerhalb von Visual Studio ziehen, z. b. aus **Windows-Explorer**.
 
@@ -177,15 +177,15 @@ Angenommen, Sie verfügen über einen Code Review, der in einigen Dateien mit au
 
    ![Erweitern eines Knotens in einer Code Map](../modeling/media/dependencygraph_containment.png)
 
-   Um alle Elemente zu erweitern, wählen Sie diese mithilfe von **STRG**+**A**aus, öffnen Sie dann das Kontextmenü für die Karte, und wählen Sie **Gruppe** > **erweitern**aus. Diese Option ist jedoch nicht verfügbar, wenn das Erweitern aller Gruppen zu einer nicht verwendbaren Code Map oder zu Speicherproblemen führt.
+   Um alle Elemente zu erweitern, wählen Sie diese mithilfe von **STRG** +**A**aus, öffnen Sie dann das Kontextmenü für die Karte, und wählen Sie **Gruppe**  > **erweitern**aus. Diese Option ist jedoch nicht verfügbar, wenn das Erweitern aller Gruppen zu einer nicht verwendbaren Code Map oder zu Speicherproblemen führt.
 
 5. Erweitern Sie bei Bedarf weitere Elemente, an denen Sie interessiert sind, und klicken Sie auf die Klassen-und Element Ebene.
 
    ![Erweitern von Gruppen auf Klassen- und Memberebene](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   Wenn Sie Elemente anzeigen möchten, die sich im Code befinden, aber nicht in der Zuordnung angezeigt werden, klicken ![Sie auf das Symbol](../modeling/media/dependencygraph_deletednodesicon.png) untergeordnete Elemente **erneut abrufen** in der oberen linken Ecke einer Gruppe.
+   Um Elemente anzuzeigen, die sich im Code befinden, aber nicht in der Zuordnung angezeigt werden, klicken Sie auf das Symbol untergeordnete Elemente **erneut abrufen** ![Refetch Symbol "untergeordnete Elemente" ](../modeling/media/dependencygraph_deletednodesicon.png) in der oberen linken Ecke einer Gruppe.
 
-6. Um weitere Elemente im Zusammenhang mit den auf der Code Map dargestellten anzuzeigen, wählen Sie ein Element aus, wählen Sie **Verwandte anzeigen** auf der Symbolleiste der Code Map aus, und wählen Sie dann den Typ verwandter Elemente aus, die der Code Map hinzugefügt werden sollen. Wählen Sie alternativ ein oder mehrere Elemente aus, öffnen Sie das Kontextmenü, und wählen Sie dann die Option **anzeigen** für den Typ verwandter Elemente aus, die der Karte hinzugefügt werden sollen. Zum Beispiel:
+6. Um weitere Elemente im Zusammenhang mit den auf der Code Map dargestellten anzuzeigen, wählen Sie ein Element aus, wählen Sie **Verwandte anzeigen** auf der Symbolleiste der Code Map aus, und wählen Sie dann den Typ verwandter Elemente aus, die der Code Map hinzugefügt werden sollen. Wählen Sie alternativ ein oder mehrere Elemente aus, öffnen Sie das Kontextmenü, und wählen Sie dann die Option **anzeigen** für den Typ verwandter Elemente aus, die der Karte hinzugefügt werden sollen. Beispiel:
 
     Für eine **Assembly**wählen Sie Folgendes aus:
 
@@ -228,7 +228,7 @@ Angenommen, Sie verfügen über einen Code Review, der in einigen Dateien mit au
 
     ![Anzeigen der durch dieses Member aufgerufenen Methoden](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. Die Beziehungen werden auf der Code Map angezeigt. In diesem Beispiel zeigt die Karte die von der `Find` -Methode aufgerufenen Methoden und ihre Position in der Projekt Mappe oder extern.
+7. Die Beziehungen werden auf der Code Map angezeigt. In diesem Beispiel werden die Methoden, die von der `Find`-Methode aufgerufen werden, und ihre Position in der Projekt Mappe oder extern angezeigt.
 
    ![Anzeigen bestimmter Abhängigkeiten in Codeübersichten](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -238,9 +238,9 @@ Angenommen, Sie verfügen über einen Code Review, der in einigen Dateien mit au
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Video: Grundlegendes zum Entwerfen von Code mit Visual Studio 2015-Code Maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [Video: verstehen des Entwurfs aus Code mit Visual Studio 2015-Code Maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md)
-- [Anpassen von Code Maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

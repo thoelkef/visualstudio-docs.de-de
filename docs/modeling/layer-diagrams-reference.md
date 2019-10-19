@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de634ee62387e50fed89e4465842b2801748f45
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766152"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661492"
 ---
 # <a name="dependency-diagrams-reference"></a>Abhängigkeits Diagramme: Referenz
 
@@ -48,7 +48,7 @@ Verwenden Sie ein Abhängigkeits Diagramm, um die folgenden Aufgaben auszuführe
 
 - Untermauern der vorgesehenen Architektur während der Entwicklung und Wartung des Codes durch Einschließen von Validierung in Eincheck- und Buildvorgänge
 
-In diesem Thema werden die Elemente beschrieben, die Sie in einem Abhängigkeits Diagramm verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von Abhängigkeits Diagrammen finden [Sie unter Abhängigkeits Diagramme: Richt](../modeling/layer-diagrams-guidelines.md)Linien. Weitere Informationen zu ebenenmustern finden Sie auf der [Seite Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+In diesem Thema werden die Elemente beschrieben, die Sie in einem Abhängigkeits Diagramm verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von Abhängigkeits Diagrammen finden Sie unter [Abhängigkeits Diagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu ebenenmustern finden Sie auf der [Seite Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Lesen von Abhängigkeits Diagrammen
 
@@ -58,9 +58,9 @@ In der folgenden Tabelle werden die Elemente beschrieben, die Sie in einem Abhä
 
 |**Gebildet**|**Element**|**Beschreibung**|
 |-|-|-|
-|1|**Deck**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die mit einer Ebene verknüpften Artefakte anzuzeigen, öffnen Sie das Kontextmenü für die Ebene, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -   Unzulässige **Namespace Abhängigkeiten** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht von den angegebenen Namespaces abhängen können.<br />-   Unzulässige **Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht zu den angegebenen Namespaces gehören dürfen.<br />-   **Erforderliche Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte zu einem der angegebenen Namespaces gehören müssen.|
-|2|**Gkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Direction** : gibt die Richtung der Abhängigkeit an.|
-|3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Direction** : gibt die Richtung der Abhängigkeit an.|
+|1|**Deck**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die mit einer Ebene verknüpften Artefakte anzuzeigen, öffnen Sie das Kontextmenü für die Ebene, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -    unzulässige**Namespace Abhängigkeiten** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht von den angegebenen Namespaces abhängen können.<br />-    unzulässige**Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht zu den angegebenen Namespaces gehören dürfen.<br />-   **erforderliche Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte zu einem der angegebenen Namespaces gehören müssen.|
+|2|**Gkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
+|3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
 |4|**Kommentar**|Verwenden Sie einen Kommentar, um dem Diagramm oder Elementen im Diagramm allgemeine Hinweise hinzuzufügen.|
 |5|**Kommentar Verknüpfung**|Verwenden Sie dieses Feature, um Kommentare mit Elementen im Diagramm zu verknüpfen.|
 
@@ -93,7 +93,7 @@ Der **Ebenen-Explorer** wird geöffnet und zeigt die Artefakte an, die mit den a
 |-|-|
 |**Klassen**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|
 |**Deck**|Die Ebene, die mit dem Artefakt verknüpft ist.|
-|**Unterstützt Validierung**|Wenn **true**, kann der ebenenvalidierungsprozess überprüfen, ob das Projekt Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn der Wert **false**ist, wird der Link nicht an dem ebenenvalidierungsprozess beteiligt.<br /><br /> Weitere Informationen finden [Sie unter Abhängigkeits Diagramme: Richt](../modeling/layer-diagrams-guidelines.md)Linien.|
+|**Unterstützt Validierung**|Wenn **true**, kann der ebenenvalidierungsprozess überprüfen, ob das Projekt Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn der Wert **false**ist, wird der Link nicht an dem ebenenvalidierungsprozess beteiligt.<br /><br /> Weitere Informationen finden Sie unter [Abhängigkeits Diagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).|
 |**Bezeichner**|Der Verweis auf das verknüpfte Artefakt|
 
 ## <a name="see-also"></a>Siehe auch

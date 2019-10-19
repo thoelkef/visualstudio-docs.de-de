@@ -1,21 +1,21 @@
 ---
-title: 'CA3075: Unsichere DTD-Verarbeitung | Microsoft-Dokumentation'
+title: 'CA3075: unsichere DTD-Verarbeitung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693411"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661624"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Unsichere DTD-Verarbeitung.
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Unsichere DTD-Verarbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -35,31 +35,31 @@ ms.locfileid: "65693411"
 
 - Die <xref:System.Xml.XmlNode.InnerXml%2A> -Eigenschaft in XML wird festgelegt.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> Analyse wird die Eigenschaft festgelegt.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>-Eigenschaft ist auf "analysieren" festgelegt.
 
 - Die Verarbeitung einer nicht vertrauenswürdigen Eingabe erfolgt mit <xref:System.Xml.XmlResolver> anstelle von <xref:System.Xml.XmlSecureResolver> .
 
-- Der XmlReader.<xref:System.Xml.XmlReader.Create%2A> Methode wird aufgerufen, mit einer unsicheren <xref:System.Xml.XmlReaderSettings> Instanz oder ohne Instanz.
+- Der XmlReader. <xref:System.Xml.XmlReader.Create%2A> die Methode wird mit einer unsicheren <xref:System.Xml.XmlReaderSettings> Instanz oder gar keiner Instanz aufgerufen.
 
-- <xref:System.Xml.XmlReader> wird mit unsicheren Standardeinstellungen oder Werten erstellt.
+- <xref:System.Xml.XmlReader> mit unsicheren Standardeinstellungen oder-Werten erstellt wird.
 
   In jedem dieser Fälle ist das Ergebnis identisch: Der Inhalt aus dem Dateisystem oder von Netzwerkfreigaben auf dem Computer, auf dem der XML-Code verarbeitet wird, wird dem Angreifer offengelegt und kann dann als DoS-Vektor verwendet werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Fangen Sie ab und verarbeiten Sie alle XmlTextReader-Ausnahmen ordnungsgemäß, um die Offenlegung von Pfadinformationen zu vermeiden.
+- Alle XmlTextReader-Ausnahmen ordnungsgemäß erfassen und verarbeiten, um die Offenlegung von Pfadinformationen zu vermeiden.
 
-- Verwenden der <xref:System.Xml.XmlSecureResolver> die Ressourcen zu beschränken, die die XmlTextReader zugreifen kann.
+- Verwenden Sie die  <xref:System.Xml.XmlSecureResolver>, um die Ressourcen einzuschränken, auf die der XmlTextReader zugreifen kann.
 
-- Erlauben Sie keine der <xref:System.Xml.XmlReader> keine externen Ressourcen öffnen die <xref:System.Xml.XmlResolver> Eigenschaft **null**.
+- Lassen Sie die  <xref:System.Xml.XmlReader> externe Ressourcen nicht zu öffnen, indem Sie die <xref:System.Xml.XmlResolver>-Eigenschaft auf **null**festlegen.
 
 - Stellen Sie sicher, dass die <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> -Eigenschaft von <xref:System.Data.DataViewManager> von einer vertrauenswürdigen Quelle aus zugewiesen wird.
 
   .NET 3.5 und früher
 
-- Deaktivieren Sie die DTD-Verarbeitung, wenn Sie mit nicht vertrauenswürdigen Quellen arbeiten, indem Sie festlegen, werden die <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> Eigenschaft **"true"** .
+- Deaktivieren Sie die DTD-Verarbeitung, wenn Sie mit nicht vertrauenswürdigen Quellen arbeiten, indem Sie die  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>-Eigenschaft auf **true** festlegen.
 
-- Die XmlTextReader-Klasse verfügt über die Vererbungsanforderung „volle Vertrauenswürdigkeit“. Finden Sie unter [Vererbungsanforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) für Weitere Informationen.
+- Die XmlTextReader-Klasse verfügt über die Vererbungsanforderung „volle Vertrauenswürdigkeit“. Weitere Informationen finden Sie unter [Vererbungs Anforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 
   .NET 4 und höher
 
