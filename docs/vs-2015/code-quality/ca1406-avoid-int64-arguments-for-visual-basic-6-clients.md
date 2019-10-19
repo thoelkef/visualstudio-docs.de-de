@@ -1,5 +1,5 @@
 ---
-title: 'CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden | Microsoft-Dokumentation'
+title: 'CA1406: Vermeiden von Int64-Argumenten für Visual Basic 6-Clients | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1406
 ms.assetid: d5d0d3fc-f105-43da-be5b-923ab023309c
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7cf2fc4e9160f44f51ac565619bd8d52bff8b22b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20ea7bd7bba6f221395c7e2c21d6c1dcc241fb4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705721"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661295"
 ---
-# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden.
+# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidInt64ArgumentsForVB6Clients|
 |CheckId|CA1406|
-|Kategorie|Microsoft.Interoperability|
+|Kategorie|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ, der ausdrücklich zum Component Object Model (COM) als sichtbar markiert ist einen Member deklariert, nimmt eine <xref:System.Int64?displayProperty=fullName> Argument.
+ Ein Typ, der speziell für Component Object Model (com) als sichtbar gekennzeichnet ist, deklariert einen Member, der ein <xref:System.Int64?displayProperty=fullName> Argument annimmt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Visual Basic 6-COM-Clients können nicht auf 64-Bit-Ganzzahlen zugreifen.
+ Visual Basic 6 com-Clients können nicht auf ganze Zahlen mit 64 Bit zugreifen.
 
- Standardmäßig sind die folgenden für COM sichtbar: Assemblys, öffentliche Typen, öffentliche Member in öffentlichen Typen und alle Mitglieder der öffentliche Werttypen. Um falsch positive Ergebnisse zu reduzieren, erfordert mit dieser Regel jedoch die COM-Sichtbarkeit des Typs explizit angegeben werden; die übergeordnete Assembly muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ markiert werden muss, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
+ Standardmäßig sind die folgenden Elemente für com sichtbar: Assemblys, öffentliche Typen, öffentliche Instanzmember in öffentlichen Typen und alle Member der öffentlichen Werttypen. Um falsch positive Ergebnisse zu reduzieren, erfordert diese Regel jedoch, dass die COM-Sichtbarkeit des Typs explizit angegeben wird. die enthaltende Assembly muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> als `false` markiert werden, und der Typ muss mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf `true` festgelegt sein.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel für einen Parameter zu beheben, dessen Wert immer als 32-Bit-Ganzzahl ausgedrückt werden, ändern Sie den Parametertyp in <xref:System.Int32?displayProperty=fullName>. Wenn der Wert des Parameters größer sein als als 32-Bit-Ganzzahl dargestellt werden kann, ändern Sie den Parametertyp in <xref:System.Decimal?displayProperty=fullName>. Beachten Sie, dass beide <xref:System.Single?displayProperty=fullName> und <xref:System.Double?displayProperty=fullName> Genauigkeitsverlust die oberen Bereiche der der <xref:System.Int64> -Datentyp. Wenn der Member nicht für COM sichtbar sein soll, markieren Sie sie mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `false`.
+ Um einen Verstoß gegen diese Regel für einen Parameter zu beheben, dessen Wert immer als 32-Bit-ganzzahlig ausgedrückt werden kann, ändern Sie den Parametertyp in <xref:System.Int32?displayProperty=fullName>. Wenn der Wert des-Parameters größer sein kann als 32-Bit-Ganzzahl, ändern Sie den Parametertyp in <xref:System.Decimal?displayProperty=fullName>. Beachten Sie, dass sowohl <xref:System.Single?displayProperty=fullName> als auch <xref:System.Double?displayProperty=fullName> Genauigkeit in den oberen Bereichen des <xref:System.Int64> Datentyps verlieren. Wenn der Member nicht für com sichtbar sein soll, markieren Sie ihn mit dem <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf `false` festgelegt ist.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn sicher ist, dass Visual Basic 6-COM-Clients nicht auf den Typ zugreifen.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn sicher ist, dass Visual Basic 6 com-Clients nicht auf den Typ zugreifen.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt einen Typ, der gegen die Regel verstößt.
@@ -53,11 +53,11 @@ ms.locfileid: "65705721"
  [!code-vb[FxCop.Interoperability.LongArgument#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LongArgument/vb/FxCop.Interoperability.LongArgument.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1413: Vermeiden Sie nicht öffentliche Felder in für COM sichtbaren Werttypen](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
  [CA1407: Statische Member in für COM sichtbaren Typen vermeiden](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
  [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Interoperation mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Long-Datentyp](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
+ Interoperabilität mit [Long-Datentyp](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516) [von nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

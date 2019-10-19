@@ -1,5 +1,5 @@
 ---
-title: 'CA1823: Nicht verwendete private Felder vermeiden | Microsoft-Dokumentation'
+title: 'CA1823: nicht verwendete private Felder vermeiden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - CA1823
 ms.assetid: 614f94f6-0dc7-430f-8124-cb889a4a720f
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 32bf1596e4994f3cfdb2df179bb5d7f1a743f289
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7ccfbe863e010b4dcf8a9d1b442c9bcdba6822e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201652"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661129"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Nicht verwendete private Felder vermeiden.
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Nicht verwendete private Felder vermeiden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Mit dieser Regel wird gemeldet, wenn ein privates Feld in Ihrem Code vorhanden ist, jedoch nicht von jedem Codepfad verwendet werden.
+ Diese Regel wird gemeldet, wenn ein privates Feld im Code vorhanden ist, aber nicht von einem Codepfad verwendet wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Es wurden private Felder erkannt, auf die in der Assembly anscheinend kein Zugriff erfolgt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Feld, oder fügen Sie Code, der verwendet wird.
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Feld, oder fügen Sie Code hinzu, der es verwendet.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, unterdrücken Sie eine Warnung dieser Regel.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

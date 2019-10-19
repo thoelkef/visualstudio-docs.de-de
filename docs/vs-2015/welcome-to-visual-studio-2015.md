@@ -11,14 +11,14 @@ helpviewer_keywords:
 - Visual Studio 2015
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 229ce6d15d8f411a81c684d20945f4dcc9fb8957
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695041"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657044"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Willkommen bei Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 
  Sehen Sie sich auch die [Codebeispiele](https://code.msdn.microsoft.com/) an, und suchen Sie nach Beispielen, die Ihnen beim schnelleren Schreiben der App helfen.
 
- Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Weitere Informationen zum Installationsvorgang finden Sie unter [installieren Sie Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Weitere Informationen zum Installationsvorgang finden Sie unter [Installieren von Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Erweitern von Visual Studio
  Fügen Sie Ihre eigene Visual Studio-Erweiterung hinzu, um ein Tool oder Skript einzuschließen, das Sie beim Schreiben von Code häufig verwenden. Sie können benutzerdefinierte Menüelemente und Toolfenster erstellen und auf diese Weise eigene Tools in die Visual Studio-IDE integrieren. Sie können den Visual Studio-Editor so erweitern, dass Code analysiert und Fehler behoben werden, oder einen neuen Projekttyp hinzufügen, um genau die benötigten Elemente einzuschließen.
@@ -54,15 +54,15 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 
  Wählen Sie die benötigten Tools auf Grundlage Ihrer App-Anforderungen und der zu verwendenden Sprache aus.
 
-1. [Xamarin für Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Eine gemeinsame Codebasis in C# für alle Geräte
+1. [Xamarin für Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)– eine gemeinsame Codebasis in C# für alle Geräte
 
-2. [Apache Cordova mit Visual Studio](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Eine gemeinsame Codebasis für HTML, CSS und JavaScript oder Typescript
+2. [Apache Cordova mit Visual Studio](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)– eine gemeinsame Codebasis für HTML, CSS und JavaScript oder Typescript
 
-3. [Visual Studio-Tools für Unity](./cross-platform/visual-studio-tools-for-unity.md): Entwicklung von 2D/3D-SPIELEN inC#
+3. [Visual Studio-Tools für Unity](./cross-platform/visual-studio-tools-for-unity.md): Entwicklung von 2D/3D-Spielen in C#
 
-4. [C++für die plattformübergreifende Entwicklung](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Freigegebene Codebibliotheken und apps imC++
+4. [C++ für plattformübergreifende Entwicklung](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)– freigegebene Codebibliotheken und Apps in C++
 
-5. [Visual Studio-Emulator für Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio-Emulator für Android: Debuggen Sie und Testen Sie Ihrer Android-apps unabhängig von der IDE
+5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)Visual Studio-Emulator für Android: Debuggen und Testen Ihrer Android-Apps, unabhängig von der IDE
 
 ## <a name="connect-your-apps-to-services"></a>Verbinden der Apps mit Diensten
  Sie können standardmäßig eine Verbindung mit folgenden Diensten herstellen (vorausgesetzt, Sie verfügen über ein Konto für den jeweiligen Dienst):
@@ -79,7 +79,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 ## <a name="build-test-and-manage-your-code"></a>Erstellen, Testen und Verwalten von Code
 
 ### <a name="check-in-your-code"></a>Einchecken von Code
- Wenn Sie in einem Team arbeiten, müssen Sie die neuesten Versionen des Codes freigeben, damit jeder im Team dieselbe Codebasis verwendet. Visual Studio integriert sich nahtlos mit Visual Studio Team Services oder Team Foundation Server, um Versionskontrolle mithilfe von Git oder TFVC (Team Foundation Version Control) bereitzustellen. Verwenden Sie Visual Studio Team Services, um den Code ohne Wartung eines lokalen Servers in der Cloud zu speichern. Wenn Sie über einen lokalen Server verfügen möchten, verwenden Sie Team Foundation Server. Jedes Mal, wenn Sie ein Codeprojekt erstellen, haben Sie die Möglichkeit, es der Versionskontrolle hinzuzufügen. Erfahren Sie mehr darüber, welches Versionskontrollsystem System für Ihre Anforderungen am besten geeignet ist: [Verwenden der Versionskontrolle](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Wenn Sie in einem Team arbeiten, müssen Sie die neuesten Versionen des Codes freigeben, damit jeder im Team dieselbe Codebasis verwendet. Visual Studio integriert sich nahtlos mit Visual Studio Team Services oder Team Foundation Server, um Versionskontrolle mithilfe von Git oder TFVC (Team Foundation Version Control) bereitzustellen. Verwenden Sie Visual Studio Team Services, um den Code ohne Wartung eines lokalen Servers in der Cloud zu speichern. Wenn Sie über einen lokalen Server verfügen möchten, verwenden Sie Team Foundation Server. Jedes Mal, wenn Sie ein Codeprojekt erstellen, haben Sie die Möglichkeit, es der Versionskontrolle hinzuzufügen. Informationen darüber, welches Versionskontrollsystem für Ihre Anforderungen am besten geeignet ist, finden Sie unter [Verwenden der Versionskontrolle](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Erstellen der App
  Sie können Ihre [App lokal erstellen](./ide/compiling-and-building-in-visual-studio.md) und sicherstellen, dass sie ordnungsgemäß funktioniert. Dann verwenden Sie die [Debugtools](./debugger/debugging-in-visual-studio.md) , um Probleme mit der App zu beheben. Sie können auch Projekte auf freigegebenen Buildservern oder in der Cloud erstellen. Automatisieren Sie den Buildprozess, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen.
@@ -96,7 +96,7 @@ Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervo
 
 |||||
 |-|-|-|-|
-|[What’s new in Visual Studio 2015 (Neues in Visual Studio 2015)](./what-s-new-in-visual-studio-2015.md)|[Neues bei Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Neues in .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[What’s new for ALM (Neues im ALM)](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[What’s new in Visual Studio 2015 (Neues in Visual Studio 2015)](./what-s-new-in-visual-studio-2015.md)|[What’s new for Visual C# (Neues bei Visual C#)](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Neues in .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[What’s new for ALM (Neues im ALM)](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[Neues bei Visual C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Neues bei Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[What’s new for JavaScript (Neues bei JavaScript)](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
