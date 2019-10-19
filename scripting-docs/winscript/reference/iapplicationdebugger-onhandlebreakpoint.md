@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onHandleBreakPoint | Microsoft-Dokumentation
+title: 'Iapplicationdebugger:: onlenker Breakpoint | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edf8816cd646596ce1f897dfd9d949790d52b7b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3796ea1f50f0c4bcf945dbc10592c048db22757b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991349"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577841"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
-Behandelt ein Haltepunktereignis.  
+Behandelt ein breakpointereignis.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT onHandleBreakPoint(
   
 #### <a name="parameters"></a>Parameter  
  `prpt`  
- [in] Der Thread, in der Haltepunkt aufgetreten ist.  
+ in Der Thread, in dem der Haltepunkt aufgetreten ist.  
   
  `br`  
- [in] Der Grund für den Haltepunkt.  
+ in Der Grund für den Breakpoint.  
   
  `pError`  
- [in] Informationen zu Fehlern Common Language Runtime bereitgestellt, wenn der Wert des `br` BREAKREASON_ERROR ist.  
+ in Lauf Zeit Fehlerinformationen, die bereitgestellt werden, wenn der Wert von `br` BREAKREASON_ERROR ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,12 +55,12 @@ HRESULT onHandleBreakPoint(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, wenn ein Haltepunkt erreicht wird und `IDebugApplication::HandleBreakPoint` aufgerufen wird.  
+ Diese Methode wird aufgerufen, wenn ein Breakpoint gedrückt wird und `IDebugApplication::HandleBreakPoint` aufgerufen wird.  
   
- Die Anwendung bleibt solange unterbrochen, bis der Debugger-IDE ruft `IRemoteDebugApplication::ResumeFromBreakPoint`.  
+ Die Anwendung bleibt angehalten, bis die Debugger-IDE `IRemoteDebugApplication::ResumeFromBreakPoint` aufruft.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IApplicationDebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)   
- [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
- [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
+ [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)    
+ [Idebugapplication:: Lenker Breakpoint](../../winscript/reference/idebugapplication-handlebreakpoint.md) -   
+ [Iremotedebuapplication:: resumefrombreakpoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
  [BREAKREASON-Enumeration](../../winscript/reference/breakreason-enumeration.md)

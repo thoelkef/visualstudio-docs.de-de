@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState | Microsoft-Dokumentation
+title: 'IActiveScript:: getscriptthreadstate | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f6ef4b0acdf6e3b746316bef8abe9a3f0f8225
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935607"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72578008"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-Ruft den aktuellen Status eines Threads Skript ab.  
+Ruft den aktuellen Zustand eines Skript Threads ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,15 +38,15 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>Parameter  
  `stidThread`  
- [in] Bezeichner des Threads für den der Zustand gewünscht wird, oder eine der folgenden speziellen Thread-IDs:  
+ in Der Bezeichner des Threads, für den der Status gewünscht ist, oder einer der folgenden speziellen Thread Bezeichner:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|Die Basis-Thread. instanziiert wurde, also die in dem der Skript-Engine-Threads.|  
-|SCRIPTTHREADID_CURRENT|Der aktuell ausgeführten Thread.|  
+|SCRIPTTHREADID_BASE|Der Basis Thread. Das heißt, der Thread, in dem die Skript-Engine instanziiert wurde.|  
+|SCRIPTTHREADID_CURRENT|Der derzeit ausgeführte Thread.|  
   
  `pstsState`  
- [out] Die Adresse einer Variablen, die den Zustand der angegebenen Threads empfängt. Der Status wird angegeben, von einem der benannten Konstanten Werte von definiert die [SCRIPTTHREADSTATE-Enumeration](../../winscript/reference/scriptthreadstate-enumeration.md) Enumeration. Wenn dieser Parameter den aktuellen Thread nicht identifiziert, kann der Zustand zu einem beliebigen Zeitpunkt ändern.  
+ vorgenommen Adresse einer Variablen, die den Zustand des bestimmten Threads empfängt. Der Status wird durch einen der benannten Konstanten Werte angegeben, der durch die [scriptthreadstate-Enumeration](../../winscript/reference/scriptthreadstate-enumeration.md) festgelegt wird. Wenn dieser Parameter den aktuellen Thread nicht identifiziert, kann sich der Status jederzeit ändern.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -55,10 +55,10 @@ HRESULT GetScriptThreadState(
 |------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert).|  
+|`E_UNEXPECTED`|Der-Befehl wurde nicht erwartet (z. b. wurde die Skript-Engine noch nicht geladen oder initialisiert).|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode kann von nicht-Base Threads aufgerufen werden, ohne dass eine nicht-Base-Legende Hostobjekte oder in der [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Schnittstelle.  
+ Diese Methode kann von nicht basisthreads aus aufgerufen werden, ohne dass ein Aufruf von Objekten oder die [iactivescriptsite](../../winscript/reference/iactivescriptsite.md) -Schnittstelle durchgeführt werden soll.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

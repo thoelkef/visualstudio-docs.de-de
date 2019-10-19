@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts::Skip | Microsoft-Dokumentation
+title: 'Ienumdebugexpressionkontexte:: Skip | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5176eb83c4c5bfe517066d8ea7f52b76e121fb26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b155f42a52a64e3d79e99eca3e314fd8d85b9bfd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963519"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571500"
 ---
 # <a name="ienumdebugexpressioncontextsskip"></a>IEnumDebugExpressionContexts::Skip
-Überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.  
+Überspringt eine angegebene Anzahl von Segmenten in einer enumerationssequenz.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Anzahl von Segmenten in der Enumerationsfolge übersprungen.  
+ in Anzahl der zu über springenden Segmente in der enumerationssequenz.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT Skip(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.  
+ Diese Methode überspringt eine angegebene Anzahl von Segmenten in einer enumerationssequenz.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugExpressionContexts-Schnittstelle](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)

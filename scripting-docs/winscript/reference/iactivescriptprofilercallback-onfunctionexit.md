@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionExit | Microsoft-Dokumentation
+title: 'Iactivescriptprofilercallback:: onfunctionexit | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c84b64a12b1a6b61399f70b7209c86dd8d2a9a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87801b7873e43498031264ff4719fb47eca99f40
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993331"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571680"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-Benachrichtigt den Profiler, dass das Objekt, dass die Skript-Engine beendet die Ausführung einer Funktion aufrufen, keinen Aufruf in das Document Objekt Model (DOM) ist.  
+Benachrichtigt das Profiler-Objekt, dass die Skript-Engine das Ausführen eines Funktions Aufrufes beendet hat, der kein Aufrufe der Dokumentobjektmodell (DOM) ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionExit(
   
 #### <a name="parameters"></a>Parameter  
  `scriptId`  
- [in] Die eindeutige ID des Skripts, das die Funktion gehört. Diese ID wird von der Skript-Engine zugewiesen.  
+ in Die eindeutige ID des Skripts, zu dem die Funktion gehört. Diese ID wird von der Skript-Engine zugewiesen.  
   
  `functionId`  
- [in] Die eindeutige ID der Funktion. Diese ID wird von der Skript-Engine zugewiesen.  
+ in Die eindeutige ID der Funktion. Diese ID wird von der Skript-Engine zugewiesen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Der Rückgabewert dieser Methode wird von der Skript-Engine ignoriert.  
   
 ## <a name="remarks"></a>Hinweise  
- Für DOM-Aufrufe, die Skript-Engine ruft [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) anstelle von `IActiveScriptProfilerCallback::OnFunctionExit`. Dies ist aufgrund der großen Anzahl von eindeutigen Methoden und Eigenschaften im DOM.  
+ Bei Dom-aufrufen Ruft die Skript-Engine " [IActiveScriptProfilerCallback2:: onfunctionexitbyname](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) " anstelle von "`IActiveScriptProfilerCallback::OnFunctionExit`" auf. Dies liegt an der großen Anzahl von eindeutigen Methoden und Eigenschaften im Dom.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
+ [Iactivescriptprofilercallback:: onfunctionenter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)    
  [IActiveScriptProfilerCallback-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md)

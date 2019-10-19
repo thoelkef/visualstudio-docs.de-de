@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SetStateString | Microsoft-Dokumentation
+title: 'Idebugapplicationthread:: setstatestring | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf832c14156d0d00f8bc7243537c3cb543019f2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de4a3e4e9666d6686400e5560343309591b2b3e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822126"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574514"
 ---
 # <a name="idebugapplicationthreadsetstatestring"></a>IDebugApplicationThread::SetStateString
-Legt die Beschreibung der Zustand des Threads fest.  
+Legt die Beschreibung des Thread Zustands fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetStateString(
   
 #### <a name="parameters"></a>Parameter  
  `pstrState`  
- [in] Die Beschreibung der der Zustand des Threads.  
+ in Die Beschreibung des Thread Zustands.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT SetStateString(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode legt die Beschreibung der der Zustand des Threads.  
+ Diese Methode legt die Beschreibung des Thread Zustands fest.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationThread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)

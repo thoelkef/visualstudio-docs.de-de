@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Microsoft-Dokumentation
+title: 'Idebughelper:: kreatepropertybrowser | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fc1e4365deea4a3981d9cf457a2c0af37edcd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99aa03470b49d02ee9f0ac1548bd1f8e27d0ab34
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979252"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562501"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Gibt einen Eigenschaftenbrowser, der umschließt eine Variante zurück.  
+Gibt einen Eigenschaften Browser zurück, der eine Variante umschließt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Parameter  
  `pvar`  
- [in] Root-Variante zu durchsuchen.  
+ in Stamm Variante zum Durchsuchen.  
   
  `bstrName`  
- [in] Name für den Stamm.  
+ in Der Name, der dem Stamm zugewiesen werden soll.  
   
  `pdat`  
- [in] Thread auf dem Eigenschaften angefordert. Wenn dieser Parameter NULL ist, kein marshalling erfolgt.  
+ in Der Thread, für den Eigenschaften angefordert werden sollen. Wenn dieser Parameter NULL ist, wird kein Marshalling ausgeführt.  
   
  `ppdob`  
- [out] Der Eigenschaftenbrowser.  
+ vorgenommen Der Eigenschaften Browser.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -59,9 +59,9 @@ HRESULT CreatePropertyBrowser(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt einen Eigenschaftenbrowser, der eine Variante umschließt.  
+ Diese Methode gibt einen Eigenschaften Browser zurück, der eine Variante umschließt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
- [IDebugHelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)   
+ [Idebughelper:: kreatepropertybrowserex](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
+ [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)    
  [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)

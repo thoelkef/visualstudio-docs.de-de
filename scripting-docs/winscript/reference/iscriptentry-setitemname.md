@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName | Microsoft-Dokumentation
+title: 'Iscriptentry:: setitemname | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ba226704f5b064c86b52c1b349650d509b2b549
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787657"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575372"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-Legt den Namen, der identifiziert eine `IScriptEntry` Objekt.  
+Legt den Elementnamen fest, der ein `IScriptEntry` Objekt identifiziert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetItemName(
   
 #### <a name="parameters"></a>Parameter  
  `psz`  
- [in] Die Adresse eines Puffers, der den Namen des Elements enthält. Der Name des Elements wird vom Host zum Identifizieren des Eintrags.  
+ in Die Adresse eines Puffers, der den Elementnamen enthält. Der Elementname wird vom Host zum Identifizieren des Eintrags verwendet.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,13 +45,13 @@ HRESULT SetItemName(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_FAIL`|Die Methode war nicht erfolgreich.|  
+|`E_FAIL`|Die Methode konnte nicht erfolgreich ausgeführt werden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Für `IScriptEntry` Objekten, die Rückgabe dieser Methode `S_OK`.  
+ Bei `IScriptEntry` Objekten gibt diese Methode `S_OK` zurück.  
   
- Für `IScriptScriptlet` Objekte (die abgeleitet `IScriptEntry`), gibt diese Methode `E_FAIL`. Für `IScriptScriptlet` Objekten, die den Namen des Elements wird festgelegt, indem [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) und kann nicht geändert werden.  
+ Bei `IScriptScriptlet` Objekten (die von `IScriptEntry` abgeleitet sind) gibt diese Methode `E_FAIL` zurück. Bei `IScriptScriptlet` Objekten wird der Elementname von [iactivescriptauthor:: addscriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) festgelegt und kann nicht geändert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)   
+ [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)    
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

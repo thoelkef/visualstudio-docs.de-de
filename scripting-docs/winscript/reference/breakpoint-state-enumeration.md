@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955359"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572634"
 ---
-# <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE-Enumeration
+# <a name="breakpoint_state-enumeration"></a>BREAKPOINT_STATE-Enumeration
 Gibt den Zustand eines Haltepunkts an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -41,9 +41,9 @@ typedef enum tagBREAKPOINT_STATE {
   
 |Member|Beschreibung|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|Der Haltepunkt nicht mehr vorhanden ist, aber es gibt immer noch darauf verwiesen wird.|  
-|BREAKPOINT_DISABLED|Der Haltepunkt vorhanden, aber deaktiviert.|  
-|BREAKPOINT_ENABLED|Der Haltepunkt vorhanden und aktiviert ist.|  
+|BREAKPOINT_DELETED|Der Breakpoint ist nicht mehr vorhanden, aber es gibt noch Verweise darauf.|  
+|BREAKPOINT_DISABLED|Der Breakpoint ist vorhanden, ist jedoch deaktiviert.|  
+|BREAKPOINT_ENABLED|Der Breakpoint ist vorhanden und aktiviert.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

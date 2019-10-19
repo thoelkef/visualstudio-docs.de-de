@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsSuspendedForBreakPoint | Microsoft-Dokumentation
+title: 'IDebugApplicationThread110:: issuspendforbreakpoint | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82b8957ae9f2b6674af7addf2239c745115e4e3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b0e70993b95ccffcf6041bb04f37af90667fc4fd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440524"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574458"
 ---
 # <a name="idebugapplicationthread110issuspendedforbreakpoint"></a>IDebugApplicationThread110::IsSuspendedForBreakPoint
-Bestimmt, ob [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) für diesen Thread aufgerufen wurde und noch nicht abgeschlossen.  
+Bestimmt, ob [IDebugApplicationThreadEvents110:: onsuspendforbreakpoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) für diesen Thread aufgerufen wurde und noch nicht abgeschlossen wurde.  
   
 > [!IMPORTANT]
-> [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> Die [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird von PDM v 11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT IsSuspendedForBreakPoint([out, annotation("_Out_")] BOOL * pfIsSuspended
   
 #### <a name="parameters"></a>Parameter  
  `pfIsSuspended`  
- [out] `true` , wenn der Thread für einen Haltepunkt, andernfalls angehalten wird `false`.  
+ [out] `true`, wenn der Thread für einen Haltepunkt angehalten wird, andernfalls `false`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNameSpaceParent | Microsoft-Dokumentation
+title: 'IDispatchEx:: GetNameSpaceParent | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1abe2a880e12d6a4a3c1dfda32d30722525858f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2f47fab9831441e72a4ef3d4332a41c08e6a108
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000823"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574085"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
-Ruft die Schnittstelle für den übergeordneten Namespace eines Objekts ab.  
+Ruft die-Schnittstelle für das übergeordnete Namespace eines Objekts ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,10 +37,10 @@ HRESULT GetNameSpaceParent(
   
 #### <a name="parameters"></a>Parameter  
  `ppunk`  
- Adresse von einem `IUnknown` Schnittstellenzeiger, der den Namespace des übergeordneten Schnittstelle empfängt.  
+ Adresse eines `IUnknown` Schnittstellen Zeigers, der die Schnittstelle des übergeordneten Namespace empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` bei Erfolg oder ein OLE definierter Fehlercode andernfalls.  
+ Gibt `S_OK` zurück, wenn erfolgreich, andernfalls einen OLE-definierten Fehlercode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)

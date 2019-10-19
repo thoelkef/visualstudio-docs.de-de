@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetStackFrame | Microsoft-Dokumentation
+title: 'Iactivescripterrordebug:: getstackframe | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aecda7be418f2a89fb39bc1d754c8e94cf1130bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8542f83f926ba1a993527baecd6d5b667671b041
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954940"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576318"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-Stellt den Stapelrahmen, der für Laufzeitfehler gültig ist.  
+Stellt den Stapel Rahmen bereit, der für Laufzeitfehler wirksam ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>Parameter  
  `ppdsf`  
- [out] Der Stapelrahmen für den Fehler.  
+ vorgenommen Der Stapel Rahmen für den Fehler.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetStackFrame(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode stellt den Stapelrahmen, der für die zu Laufzeitfehlern gültig ist.  
+ Diese Methode stellt den Stapel Rahmen bereit, der für Laufzeitfehler wirksam ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptErrorDebug-Schnittstelle](../../winscript/reference/iactivescripterrordebug-interface.md)

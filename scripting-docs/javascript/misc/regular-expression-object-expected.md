@@ -1,5 +1,5 @@
 ---
-title: Reguläres Ausdrucksobjekt erwartet | Microsoft-Dokumentation
+title: Reguläres Ausdrucks Objekt erwartet | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a42cf4b76f4de6d4170f7ef85dafc00841964cfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf9e2e99c6a539f450afcfe9eef1f5588d5b84f6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006420"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573703"
 ---
 # <a name="regular-expression-object-expected"></a>Reguläres Ausdrucksobjekt erwartet
-Sie haben versucht, rufen Sie die **RegExp.prototype.ToString-Methode** oder **RegExp.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `RegExp`. Das Objekt dieser Art von Aufruf muss vom Typ `RegExp`.  
+Sie haben versucht, die **RegExp. Prototype. ToString** -Methode oder die **RegExp. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `RegExp` aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`RegExp`" sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Rufen Sie nur die **RegExp.prototype.ToString-Methode** oder **RegExp.prototype.valueOf** Methoden für Objekte vom Typ `RegExp`.  
+- Rufen Sie nur die Methoden " **RegExp. Prototype. ToString** " oder " **RegExp. Prototype. valueOf** " für Objekte vom Typ "`RegExp`" auf.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty-Schnittstelle | Microsoft-Dokumentation
+title: Idebugextendecodproperty-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,26 +13,26 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1e042f75cf0ab0d8c4807c0c0db6ce04e8423f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a93cb3bd230e2489b58d78f6d414ba1df006ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945873"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572493"
 ---
 # <a name="idebugextendedproperty-interface"></a>IDebugExtendedProperty-Schnittstelle
-Erweitert `IDebugProperty` Schnittstelle.  
+Erweitert `IDebugProperty`-Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Zusätzlich zu den von geerbten Methoden `IDebugProperty`, diese Schnittstelle legt die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von `IDebugProperty` geerbt werden, stellt diese Schnittstelle die folgenden Methoden zur Verfügung.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Ruft die `ExtendedDebugPropertyInfo` , die zeigt, wie diese `IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Listet die Member einer erweiterten Eigenschaft.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Ruft das `ExtendedDebugPropertyInfo` ab, das diese beschreibt `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Listet die Member einer erweiterten Eigenschaft auf.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: dbgprop.h  
+ Header: dbgprop. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::EnumApplications | Microsoft-Dokumentation
+title: 'Imachinedebugmanagercookie:: umumapplications | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76d8e53d586a812f4a8416a1515d7011dd5a1720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e01af108e2e417976a61038d7ed3952cb33742c6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977616"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573901"
 ---
 # <a name="imachinedebugmanagercookieenumapplications"></a>IMachineDebugManagerCookie::EnumApplications
-Gibt einen Enumerator, der die aktuelle Liste ausgeführter Anwendungen.  
+Gibt einen Enumerator der aktuellen Liste ausgelaufteter Anwendungen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT EnumApplications(
   
 #### <a name="parameters"></a>Parameter  
  `ppeda`  
- [out] Der Enumerator, der die aktuelle Liste ausgeführter Anwendungen enthält.  
+ vorgenommen Enumerator, der die aktuelle Liste der ausgelaufenden Anwendungen enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT EnumApplications(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt einen Enumerator, der die aktuelle Liste ausgeführter Anwendungen. Der Debugger-IDE verwendet diese Methode, um anzuzeigen, und fügen Sie die Anwendungen zu Debugzwecken.  
+ Diese Methode gibt einen Enumerator der aktuellen Liste ausgelaufteter Anwendungen zurück. Die Debugger-IDE verwendet diese Methode, um Anwendungen zu Debuggingzwecken anzuzeigen und anzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)

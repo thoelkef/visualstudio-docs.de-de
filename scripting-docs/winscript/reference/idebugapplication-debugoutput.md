@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::DebugOutput | Microsoft-Dokumentation
+title: Idebugapplication::D ebugoutput | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a67a16e3fd4868726087df6f2596571d14630f80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d52acf0e4b32f0ced63b53a6b37ffe62f1d948e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990965"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575021"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-Bewirkt, dass die angegebene Zeichenfolge von der Debugger-integrierten Entwicklungsumgebung (IDE) angezeigt werden soll.  
+Bewirkt, dass die angegebene Zeichenfolge von der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) von Debugger angezeigt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT DebugOutput(
   
 #### <a name="parameters"></a>Parameter  
  `pstr`  
- [in] Die Zeichenfolge, die im Debugger angezeigt.  
+ in Zeichenfolge, die im Debugger angezeigt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,10 +47,10 @@ HRESULT DebugOutput(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermöglicht eine Sprach-Engine, um sprachspezifische Debugunterstützung Ausgabe implementieren. Die Zeichenfolge wird in der Regel im Ausgabefenster des Debuggers angezeigt.  
+ Diese Methode ermöglicht einer Sprach-Engine, die sprachspezifische debuggabeunterstützung zu implementieren. Die Zeichenfolge wird in der Regel im Ausgabefenster des Debuggers angezeigt.  
   
- Diese Methode bewirkt, dass `IApplicationDebugger::onDebugOutput` aufgerufen werden.  
+ Diese Methode bewirkt, dass `IApplicationDebugger::onDebugOutput` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
  [IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationevents:: onleavebreakpoint | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f10ffdd19abd2aada2a98d6d0ae523686abb2e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f4be875f5b420ff96e22ee06cdbeb2929466381
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571951"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
-Behandelt ein Ereignis für einen Haltepunkt zu verlassen.  
+Behandelt ein Ereignis zum belassen eines Breakpoints.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT OnLeaveBreakPoint(
   
 #### <a name="parameters"></a>Parameter  
  `prdat`  
- [in] Der Thread der Anwendung, die den Haltepunkt zu verlassen.  
+ in Der Anwendungs Thread, der den Breakpoint verlassen hat.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT OnLeaveBreakPoint(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt ein Ereignis für einen Haltepunkt zu verlassen.  
+ Diese Methode behandelt ein Ereignis zum belassen eines halte Punkts.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)

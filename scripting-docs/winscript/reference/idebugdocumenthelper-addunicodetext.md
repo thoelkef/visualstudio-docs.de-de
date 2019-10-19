@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: Addunicodetext | Microsoft-Dokumentation'
+title: 'Idebugdocumenthelper:: addunicodetext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 391095acc1d2f541a3c497abeac5ae7248baa4e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5820c380c92f2c3cd95763b440d5f9755db3e717
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446626"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577053"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
-Fügt eine Unicode-Zeichenfolge am Ende dieses Dokuments.  
+Fügt eine Unicode-Zeichenfolge an das Ende dieses Dokuments an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT AddUnicodeText(
   
 #### <a name="parameters"></a>Parameter  
  `pszText`  
- [in] Zeiger auf eine Null-terminierte Zeichenfolge, die mit dem Text.  
+ in Zeiger auf eine mit NULL endenden Zeichenfolge, die den Text enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,15 +45,15 @@ HRESULT AddUnicodeText(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_FAIL`|Die Methode konnte nicht die Zeichen hinzufügen.|  
+|`E_FAIL`|Die-Methode konnte die Zeichen nicht hinzufügen.|  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Methode generiert `IDebugDocumentTextEvents` Benachrichtigungen.  
   
 > [!NOTE]
-> Wenn diese Methode, nach dem aufgerufen wird `AddDeferredText` aufgerufen wurde, `E_FAIL` zurückgegeben wird.  
+> Wenn diese Methode aufgerufen wird, nachdem `AddDeferredText` aufgerufen wurde, wird `E_FAIL` zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ [Idebugdocumenthelper:: adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)

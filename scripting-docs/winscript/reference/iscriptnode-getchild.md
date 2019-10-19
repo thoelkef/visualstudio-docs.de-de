@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild | Microsoft-Dokumentation
+title: 'Iscriptnode:: GetChild | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78b5c84c6ed9b3de9593f0d6ff02df93a0e9ba77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27ddde527be1ea4148e4166581ab2cb1a71d15f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787129"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573557"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
-Gibt das untergeordnete Element, das am angegebenen Index in der Knoten ist.  
+Gibt das untergeordnete Element zurück, das sich am angegebenen Index im Knoten befindet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,14 +38,14 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>Parameter  
  `isn`  
- [in] Der Index des untergeordneten Elements im übergeordneten Element.  
+ in Der Index des untergeordneten Elements in der übergeordneten.  
   
  `ppsn`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptNode` Schnittstelle die untergeordnete Instanz.  
+ vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptNode`-Schnittstelle der untergeordneten Instanz empfängt.  
   
- Für `IScriptNode` Objekte, die eine Webseite darstellen, gibt dieser Parameter ein Objekt, das einen Skriptblock enthält.  
+ Bei `IScriptNode` Objekten, die eine Webseite darstellen, gibt dieser Parameter ein Objekt zurück, das einen Skriptblock enthält.  
   
- Für `IScriptEntry` Objekte, die einen Skriptblock angeben, gibt dieser Parameter ein Objekt, eine Funktion angibt.  
+ Bei `IScriptEntry` Objekten, die einen Skriptblock angeben, gibt dieser Parameter ein Objekt zurück, das eine Funktion angibt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,7 +55,7 @@ HRESULT GetChild(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Für `IScriptEntry` Objekte, die angeben, ein Funktionsobjekt und `IScriptScriptlet` Objekten, die diese Methode schlägt fehl, da keine untergeordneten Einträge vorhanden sind.  
+ Bei `IScriptEntry` Objekten, die ein Funktions Objekt und für `IScriptScriptlet` Objekte angeben, schlägt diese Methode fehl, da keine untergeordneten Einträge vorhanden sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::RemoveApplication | Microsoft-Dokumentation
+title: 'Imachinedebugmanagercookie:: RemoveApplication | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d920bcc348266d4aa9f0c4a4e297506f008e859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d829262245c8c14b83ce4016f103ecae68895bd9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977757"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576782"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
-Entfernt eine Anwendung aus der ausgeführten Anwendungsliste.  
+Entfernt eine Anwendung aus der Liste der laufenden Anwendungen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parameter  
  `dwDebugAppCookie`  
- [in] Ein Cookie, das die Debuganwendung identifiziert.  
+ in Ein Cookie, das die debugginganwendung identifiziert.  
   
  `dwAppCookie`  
- [in] Das Cookie bereitgestellt, wenn die Liste die Anwendung hinzugefügt wurde.  
+ in Das Cookie, das bereitgestellt wird, als die Anwendung der Anwendungsliste hinzugefügt wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,9 +51,9 @@ HRESULT RemoveApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, indem Sie den prozessbasierten debugmanager immer `IProcessDebugManager::RemoveApplication` aufgerufen wird.  
+ Diese Methode wird vom Process Debug Manager aufgerufen, wenn `IProcessDebugManager::RemoveApplication` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
- [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
+ [Imachinedebugmanagercookie:: addapplikation](../../winscript/reference/imachinedebugmanagercookie-addapplication.md) -   
+ [Imachinedebugmanagercookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)    
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

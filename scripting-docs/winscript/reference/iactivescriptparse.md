@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse | Microsoft-Dokumentation
+title: Iactivescriptanalyse | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,23 +13,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81f64352c15dce233058d49b70e35da7e2238688
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009337"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561642"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
-Wenn das Windows-Skript-Engine Rohtext Code Skriptlets das Skript hinzugefügt werden kann oder Text des Ausdrucks zur Laufzeit ausgewertet werden kann, implementiert die `IActiveScriptParse` Schnittstelle. Für interpretierte Skriptsprachen, die keine unabhängige erstellungsumgebung, z. B. VBScript, stellt dies einen alternativen Mechanismus (außer `IPersist*`) zu Skriptcode in der Skript-Engine abrufen und Skriptfragmente an verschiedenen Objekt anzufügen Ereignisse.  
+Wenn die Windows-Skript-Engine das Hinzufügen von rohtextcode-Skriptlets zum Skript zulässt oder das Auswerten von Ausdrucks Text zur Laufzeit zulässt, wird die `IActiveScriptParse`-Schnittstelle implementiert. Bei interpretierten Skriptsprachen, die keine unabhängige Erstellungs Umgebung haben (z. b. VBScript), stellt dies einen alternativen Mechanismus (außer `IPersist*`) zum erhalten von Skriptcode in der Skript-Engine und zum Anfügen von Skript Fragmenten an verschiedene Objekt Ereignisse bereit. .  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[IActiveScriptParse::InitNew](../../winscript/reference/iactivescriptparse-initnew.md)|Initialisiert die Skript-Engine.|  
-|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|Das Skript wird ein Code-Scriptlet hinzugefügt.|  
-|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|Analysiert den angegebenen Code-Scriptlet, Deklarationen in den Namespace hinzufügen und die Bewertung von Code nach Bedarf.|  
+|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|Fügt dem Skript ein Code-Scriptlet hinzu.|  
+|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|Analysiert das angegebene Code-Scriptlet, fügt dem Namespace Deklarationen hinzu und wertet Code entsprechend aus.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Schnittstellen](../../winscript/reference/active-script-interfaces.md)

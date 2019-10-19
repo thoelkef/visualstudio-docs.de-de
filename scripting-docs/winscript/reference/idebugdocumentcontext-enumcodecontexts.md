@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::EnumCodeContexts | Microsoft-Dokumentation
+title: 'Idebugdocumentcontext:: enumcodekontexte | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ecf8b7d1ea292d0e1464825314cc92e1e903db3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 790fd55493bfb24b32400bc73ae8a1799a279625
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974422"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573477"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-Listet die Codekontexte mit diesem Dokumentenkontext verknüpft ist.  
+Listet die diesem Dokument Kontext zugeordneten Code Kontexte auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT EnumCodeContexts(
   
 #### <a name="parameters"></a>Parameter  
  `ppescc`  
- [out] Die Codekontexte mit diesem Dokumentenkontext verknüpft ist.  
+ vorgenommen Die diesem Dokument Kontext zugeordneten Code Kontexte.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT EnumCodeContexts(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Dokument ist nur ein Codekontext, in der Regel zugeordnet, es sei denn, das Dokument einer Include-Datei oder einer Vorlage ist.  
+ Ein Dokument ist normalerweise nur einem Code Kontext zugeordnet, es sei denn, das Dokument ist eine Includedatei oder eine Vorlage.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentContext-Schnittstelle](../../winscript/reference/idebugdocumentcontext-interface.md)

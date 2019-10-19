@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814331"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535989"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Anzeigen der aufrufsstapel und Verwenden des Fensters "Fenster" im Debugger
 
@@ -54,7 +54,7 @@ Wenn das [Debuggen von Symbolen](#bkmk_symbols) für einen Teil einer Aufruf Sta
 
 - Wählen Sie beim Debuggen im Menü **Debuggen** die Option **Windows->-Aufrufe**
 
-  ![Aufruf Listenfenster](../debugger/media/dbg_basics_callstack_window.png "callstackwindow")
+  ![Fenster "Fenster"](../debugger/media/dbg_basics_callstack_window.png "Callstackwindow")
 
 Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger derzeit befindet. Standardmäßig werden die Informationen dieses Stapels in den Fenstern "Quelle **", "lokal", "** Auto **", "** **Überwachung**" und " **Disassembly** " angezeigt. Wechseln Sie zu [einem anderen Stapel Rahmen](#bkmk_switch), um den debuggerkontext in einen anderen Frame im Stapel zu ändern.
 
@@ -96,11 +96,11 @@ Bei Nichtbenutzer Code handelt es sich um Code, der nicht angezeigt wird, wenn [
 
 In Visual Studio Enterprise (nur) können Sie Code Maps für die aufrufsstapel beim Debuggen anzeigen.
 
-- Öffnen Sie das Kontextmenü im Fenster **Aufrufliste**. Wählen Sie **in der Code Map die Option Show Stack anzeigen** (**STRG** + **Shift** +  **`** ).
+- Öffnen Sie das Kontextmenü im Fenster **Aufrufliste**. Wählen **Sie in der Code Zuordnung die Option Show Stack anzeigen** (**STRG**  + **UMSCHALT**  +  **`** ).
 
     Weitere Informationen finden Sie unter [map-Methoden in der aufrufsstapel beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Aufruf Liste in Code Map Show](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "callstackoncodemap") anzeigen
+![Anzeigen der aufrufsstapel auf der Code Map](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "Showcallstackoncodemap")
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Anzeigen des Disassemblycodes für eine Funktion in der aufrufsstapel (C#, C++, Visual Basic, F#)
 
@@ -108,11 +108,11 @@ In Visual Studio Enterprise (nur) können Sie Code Maps für die aufrufsstapel b
 
 ## <a name="change-the-optional-information-displayed"></a>Ändern der angezeigten optionalen Informationen
 
-- Klicken Sie mit der rechten Maustaste in das Fenster " **aufrufsstapel** ", und legen Sie **\<-** _Informationen_anzeigen **>** fest.
+- Klicken Sie mit der rechten Maustaste in das Fenster " **aufrufsstapel** ", und legen Sie **\<** _die gewünschten Informationen_  **>** anzeigen oder deaktivieren.
 
 ## <a name="bkmk_symbols"></a>Laden von Symbolen für ein ModulC#( C++,, Visual Basic F#,)
 
-Im Fenster **Aufrufliste** können Sie Debugsymbole für Code laden, für den derzeit keine Symbole geladen sind. Bei diesen Symbolen kann es sich um .NET Framework-Symbole oder Systemsymbole handeln, die von den öffentlichen Microsoft-Symbolservern heruntergeladen wurden, oder um Symbole in einem Symbolpfad auf dem Computer, den Sie debuggen.
+Im Fenster **Aufrufliste** können Sie Debugsymbole für Code laden, für den derzeit keine Symbole geladen sind. Diese Symbole können .net-oder System Symbole sein, die von den öffentlichen Microsoft-Symbol Servern heruntergeladen werden, oder Symbole in einem Symbol Pfad auf dem Computer, den Sie Debuggen.
 
 Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 

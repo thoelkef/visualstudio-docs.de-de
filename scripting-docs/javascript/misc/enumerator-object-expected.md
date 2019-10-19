@@ -14,15 +14,15 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90b6b923f631c7785428a1b3879528e97c1bfd6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946341"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572868"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator-Objekt erwartet
-Sie haben versucht, rufen Sie die **Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** oder **Enumerator.prototype.moveNext** Methode für ein Objekt eines anderen Typs als `Enumerator`. Das Objekt dieser Art von Aufruf muss vom Typ `Enumerator`. Hier ist ein Beispiel für Code, der mit dieser Regel wird ein:  
+Sie haben versucht, die **Enumerator. Prototype. atEnd-, Enumerator. Prototype. Item-, Enumerator. Prototype. muvefirst** -Methode oder **Enumerator. Prototype. mavenext** -Methode für ein Objekt eines anderen Typs als `Enumerator` aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`Enumerator`" sein. Im folgenden finden Sie ein Beispiel für Code, der diese Regel unterbricht:  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,11 +32,11 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Rufen Sie nur die **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**, **Enumerator.prototype.moveFirst**, oder  **Enumerator.prototype.moveNext** Methoden für Objekte vom Typ `Enumerator`. Um zu ermitteln, ob das Objekt ist ein `Enumerator` -Objekts:  
+- Rufen Sie nur die **Enumerator. Prototype. atEnd**-, **Enumerator**. Prototype. Item-, **Enumerator. Prototype. muvefirst**-oder **Enumerator. Prototype. Report ext** -Methode für Objekte vom Typ "`Enumerator`" auf. Um herauszufinden, ob es sich bei dem Objekt um ein `Enumerator` Objekt handelt, verwenden Sie Folgendes:  
   
     ```js
     if(x instanceof Enumerator)  
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Enumeratorobjekt](../../javascript/reference/enumerator-object-javascript.md)
+ [Enumerator-Objekt](../../javascript/reference/enumerator-object-javascript.md)

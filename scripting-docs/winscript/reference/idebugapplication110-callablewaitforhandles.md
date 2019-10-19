@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Microsoft-Dokumentation
+title: 'IDebugApplication110:: callablewaitforhandles | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22af0e9dcf548bbd2f0f8c179b4889d5294eb284
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446394"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575075"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Wartet darauf, eines der angegebenen Handles signalisiert wird, während gleichzeitig threadübergreifende Aufrufe, die für diesen Thread bereitgestellt werden. Diese Methode muss aus dem Debuggerthread aufgerufen werden.  
+Wartet darauf, dass alle angegebenen Handles signalisiert werden, während Thread übergreifende Aufrufe an diesen Thread gesendet werden können. Diese Methode muss vom Debuggerthread aufgerufen werden.  
   
 > [!IMPORTANT]
-> [IDebugApplication110-Schnittstelle](../../winscript/reference/idebugapplication110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> Die [IDebugApplication110-Schnittstelle](../../winscript/reference/idebugapplication110-interface.md) wird von PDM v 11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Parameter  
  `handleCount`  
- Die Anzahl der Handles zu warten.  
+ Die Anzahl der Handles, auf die gewartet werden soll.  
   
  `pHandles`  
- Der Satz von Handles zu warten.  
+ Der Satz von Handles, auf den gewartet werden soll.  
   
  `pIndex`  
- Wenn der HRESULT-Wert ist S_OK zurück, der Index `pHandles` für das Handle, das signalisiert wurde.  
+ Wenn der HRESULT-Wert S_OK ist, ist der Index in `pHandles` für das Signal, das signalisiert wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication110-Schnittstelle](../../winscript/reference/idebugapplication110-interface.md)

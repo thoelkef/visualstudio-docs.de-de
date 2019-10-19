@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescriptsite:: GetItemInfo | Microsoft-Dokumentation'
+title: 'Iactivescriptsite:: getiteminfo | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0458f42466a264c30a440b1b14a028a2457f12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992727"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570926"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
-Ermöglicht die Skript-Engine zum Abrufen von Informationen zu einem Element hinzugefügt, mit der [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) Methode.  
+Ermöglicht der Skript-Engine das Abrufen von Informationen zu einem Element, das mit der [IActiveScript:: addnameditem](../../winscript/reference/iactivescript-addnameditem.md) -Methode hinzugefügt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,21 +40,21 @@ HRESULT GetItemInfo(
   
 #### <a name="parameters"></a>Parameter  
  `pstrName`  
- [in] Das Element, wie angegeben in zugeordnete Name der [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) Methode.  
+ in Der Name, der dem Element zugeordnet ist, wie in der [IActiveScript:: addnameditem](../../winscript/reference/iactivescript-addnameditem.md) -Methode angegeben.  
   
  `dwReturnMask`  
- [in] Eine Bitmaske, die angeben, welche Informationen über das Element zurückgegeben werden sollen. Die Skript-Engine sollten die Mindestmenge an Informationen anfordern, da einige der-Parametern (z. B. `ITypeInfo`) dauert sehr viel Zeit zum Laden oder zu generieren. Eine Kombination der folgenden Werte sind möglich:  
+ in Eine Bitmaske, die angibt, welche Informationen über das Element zurückgegeben werden sollen. Die Skript-Engine sollte die minimale Menge an Informationen anfordern, da einige der Rückgabe Parameter (z. b. `ITypeInfo`) viel Zeit zum Laden oder generieren benötigen. Kann eine Kombination der folgenden Werte sein:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|SCRIPTINFO_IUNKNOWN|Gibt die `IUnknown` Schnittstelle für dieses Element.|  
-|SCRIPTINFO_ITYPEINFO|Gibt die `ITypeInfo` Schnittstelle für dieses Element.|  
+|SCRIPTINFO_IUNKNOWN|Gibt die `IUnknown`-Schnittstelle für dieses Element zurück.|  
+|SCRIPTINFO_ITYPEINFO|Gibt die `ITypeInfo`-Schnittstelle für dieses Element zurück.|  
   
  `ppunkItem`  
- [out] Adresse einer Variablen, die einen Zeiger auf empfängt die `IUnknown` Schnittstelle, die dem angegebenen Element zugeordnet. Die Skript-Engine können die `IUnknown::QueryInterface` Methode zum Abrufen der `IDispatch` Schnittstelle für das Element. Dieser Parameter NULL empfängt, wenn `dwReturnMask` umfasst nicht den SCRIPTINFO_IUNKNOWN-Wert. Darüber hinaus empfängt es NULL, wenn kein Objekt, das den Namen des Elements zugeordnet ist; Dieser Mechanismus wird verwendet, um eine einfache Klasse erstellt, wenn Sie der Namen des Elements mit festgelegtem SCRIPTITEM_CODEONLY-Flag hinzugefügt wurde die [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) Methode.  
+ vorgenommen Adresse einer Variablen, die einen Zeiger auf die `IUnknown`-Schnittstelle empfängt, die dem angegebenen Element zugeordnet ist. Die Skript-Engine kann die `IUnknown::QueryInterface`-Methode verwenden, um die `IDispatch`-Schnittstelle für das Element abzurufen. Dieser Parameter empfängt NULL, wenn `dwReturnMask` den SCRIPTINFO_IUNKNOWN-Wert nicht enthält. Außerdem wird NULL empfangen, wenn dem Elementnamen kein Objekt zugeordnet ist. Dieser Mechanismus wird zum Erstellen einer einfachen Klasse verwendet, wenn das benannte Element mit dem SCRIPTITEM_CODEONLY-Flag hinzugefügt wurde, das in der [IActiveScript:: addnameditem](../../winscript/reference/iactivescript-addnameditem.md) -Methode festgelegt wurde.  
   
  `ppTypeInfo`  
- [out] Adresse einer Variablen, die einen Zeiger auf empfängt die `ITypeInfo` Schnittstelle, die dem Element zugeordnet. Dieser Parameter NULL empfängt, wenn `dwReturnMask` schließt nicht den SCRIPTINFO_ITYPEINFO-Wert, oder ob Typinformationen nicht für diesen Artikel verfügbar ist. Wenn Typinformationen nicht verfügbar ist, das Objekt kann nicht Ereignissen der Datenquelle und namensbindung muss realisiert werden, mit der `IDispatch::GetIDsOfNames` Methode. Beachten Sie, dass die `ITypeInfo` Schnittstelle abgerufen wird Co-Klasse des Elements (TKIND_COCLASS) beschrieben, da das Objekt mehrere Schnittstellen und Ereignisschnittstellen unterstützen kann. Wenn das Element unterstützt die `IProvideMultipleTypeInfo` -Schnittstelle, die `ITypeInfo` Schnittstelle abgerufen ist identisch mit dem Index 0 (null) `ITypeInfo` , würden mit abgerufen werden die `IProvideMultipleTypeInfo::GetInfoOfIndex` Methode.  
+ vorgenommen Adresse einer Variablen, die einen Zeiger auf die `ITypeInfo`-Schnittstelle empfängt, die dem Element zugeordnet ist. Dieser Parameter empfängt NULL, wenn `dwReturnMask` den SCRIPTINFO_ITYPEINFO-Wert nicht enthält oder wenn keine Typinformationen für dieses Element verfügbar sind. Wenn keine Typinformationen verfügbar sind, kann das Objekt keine Ereignisse als Quelle aufweisen, und die namens Bindung muss mit der `IDispatch::GetIDsOfNames`-Methode realisiert werden. Beachten Sie, dass die `ITypeInfo`-Schnittstelle die Co-Klasse des Elements (TKIND_COCLASS) beschreibt, da das Objekt möglicherweise mehrere Schnittstellen und Ereignis Schnittstellen unterstützt. Wenn das Element die `IProvideMultipleTypeInfo`-Schnittstelle unterstützt, entspricht die abgerufene `ITypeInfo` Schnittstelle dem Index NULL-`ITypeInfo`, der mithilfe der `IProvideMultipleTypeInfo::GetInfoOfIndex`-Methode abgerufen wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -67,7 +67,7 @@ HRESULT GetItemInfo(
 |`TYPE_E_ELEMENTNOTFOUND`|Ein Element mit dem angegebenen Namen wurde nicht gefunden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft nur die Informationen, die vom angegebenen ab der `dwReturnMask` -Parameter ist; dies verbessert die Leistung. Z. B. wenn ein `ITypeInfo` Schnittstelle ist nicht erforderlich, für ein Element, einfach nicht angegeben ist `dwReturnMask`.  
+ Diese Methode ruft nur die Informationen ab, die vom `dwReturnMask`-Parameter angegeben werden. Dadurch wird die Leistung verbessert. Wenn z. b. eine `ITypeInfo`-Schnittstelle für ein Element nicht benötigt wird, wird Sie in `dwReturnMask` nicht angegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

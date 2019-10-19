@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName | Microsoft-Dokumentation
+title: 'IDispatchEx:: getmembership Name | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 155c8db6e772460ae8ad4e8b5a70ae5e67b49ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000878"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574112"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Ruft den Namen eines Members ab.  
@@ -38,10 +38,10 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- Bezeichnet den Member. Verwendet `GetDispID` oder `GetNextDispID` die Dispatch-ID abgerufen.  
+ Bezeichnet den Member. Verwendet `GetDispID` oder `GetNextDispID`, um den Dispatchbezeichner abzurufen.  
   
  `pbstrName`  
- Adresse von einem `BSTR` , der den Namen des Members empfängt. Die aufrufende Anwendung ist verantwortlich für das Freigeben dieses Werts.  
+ Adresse einer `BSTR`, die den Namen des Members empfängt. Die aufrufenden Anwendung ist für die Freigabe dieses Werts verantwortlich.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -49,7 +49,7 @@ HRESULT GetMemberName(
 |||  
 |-|-|  
 |`S_OK`|Erfolgreich.|  
-|`DISP_E_UNKNOWNNAME`|Der Name wurde nicht bekannt.|  
+|`DISP_E_UNKNOWNNAME`|Der Name war nicht bekannt.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -75,6 +75,6 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)    
+ [IDispatchEx:: GetDispID-](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

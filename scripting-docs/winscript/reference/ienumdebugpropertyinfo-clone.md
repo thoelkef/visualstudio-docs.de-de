@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Clone | Microsoft-Dokumentation
+title: 'Ienumdebugpropertyinfo:: Clone | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78ba4e1fd2a0e735d70109183b08072b03b3a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3e5b355d6302d846a8599b697aa9ad0159662cba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963506"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574228"
 ---
 # <a name="ienumdebugpropertyinfoclone"></a>IEnumDebugPropertyInfo::Clone
 Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
@@ -37,10 +37,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Parameter  
  `ppEnum`  
- [out] Gibt die geklonte `IEnumDebugPropertyInfo` Schnittstelle.  
+ vorgenommen Gibt die geklonte `IEnumDebugPropertyInfo`-Schnittstelle zurück.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugPropertyInfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

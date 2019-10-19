@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetDocumentContext | Microsoft-Dokumentation
+title: 'Iactivescripterrordebug:: getdocumentcontext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 380ee3b993408c21119da1494f4a0e005b994399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e1a6e2502e9329a7a56a7359e11a934f0ae5985
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009715"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576329"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
-Der Dokumentenkontext bereitgestellt für diesen Fehler.  
+Stellt den Dokument Kontext für diesen Fehler bereit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>Parameter  
  `ppssc`  
- [out] Der Dokumentenkontext für diesen Fehler.  
+ vorgenommen Der Dokument Kontext für diesen Fehler.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Position des Zeichens des Dokumentbereichs-Kontext sollte alle Zeichen, die für den Fehler enthalten.  
+ Der Dokument Kontext-Positions Bereich muss alle Zeichen enthalten, die dem Fehler entsprechen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptErrorDebug-Schnittstelle](../../winscript/reference/iactivescripterrordebug-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError | Microsoft-Dokumentation
+title: Iactivescripterror | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,23 +13,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4d3fe5ff90fc0d116814771308fa599052dba9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576899"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Ein Objekt, das diese Schnittstelle implementiert wird, übergeben die [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) -Methode auf, wenn die Skript-Engine einen nicht behandelten Fehler auftritt. Der Host ruft dann die Methoden für dieses Objekt zum Abrufen von Informationen über den Fehler, die aufgetreten sind.  
+Ein Objekt, das diese Schnittstelle implementiert, wird an die [iactivescriptsite:: onscripterror](../../winscript/reference/iactivescriptsite-onscripterror.md) -Methode übergeben, wenn die Skript-Engine einen nicht behandelten Fehler feststellt. Der Host ruft dann Methoden für dieses Objekt auf, um Informationen zum aufgetretenen Fehler zu erhalten.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Ruft Informationen zu einem Fehler ab.|  
-|[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Ruft die Position im Quellcode, in denen ein Fehler aufgetreten ist.|  
-|[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Ruft ab, die Zeile in der Quelldatei, in denen ein Fehler aufgetreten ist.|  
+|[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Ruft den Speicherort im Quellcode ab, an dem ein Fehler aufgetreten ist.|  
+|[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Ruft die Zeile in der Quelldatei ab, in der ein Fehler aufgetreten ist.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Schnittstellen](../../winscript/reference/active-script-interfaces.md)

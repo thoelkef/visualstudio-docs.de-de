@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName | Microsoft-Dokumentation
+title: IDispatchEx::D eletemitgliedbyname | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc7c8db4ab28e0bd0fcb48f352cb07595f72fd17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000891"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576609"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
-Löscht ein Element anhand des Namens an.  
+Löscht einen Member nach dem Namen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,15 +38,15 @@ HRESULT DeleteMemberByName(
   
 #### <a name="parameters"></a>Parameter  
  `bstrName`  
- Name des Elements gelöscht werden soll.  
+ Der Name des zu löschenden Members.  
   
  `grfdex`  
- Bestimmt, ob der Membername Groß-/Kleinschreibung beachtet wird. Dies kann einen der folgenden Werte sein:  
+ Bestimmt, ob der Elementname die Groß-/Kleinschreibung beachtet. Dies kann einer der folgenden Werte sein:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Fordert an, denen die Namenssuche die Groß-und Kleinschreibung ausgeführt werden. Kann vom Objekt ignoriert werden, die Groß-/Kleinschreibung Suche nicht unterstützt.|  
-|fdexNameCaseInsensitive|Fordert an, denen die Namenssuche Groß-und Kleinschreibung ausgeführt werden. Kann vom Objekt ignoriert werden, die Groß-/Kleinschreibung Suche nicht unterstützt.|  
+|fdexnamecasesensitive|Fordert an, dass die Namenssuche nach Groß-/Kleinschreibung durchgeführt wird. Kann von einem Objekt ignoriert werden, das die Suche nach Groß-und Kleinschreibung nicht unterstützt.|  
+|fdexnamecaseinsensitive|Fordert an, dass die Namenssuche ohne Berücksichtigung der Groß-/Kleinschreibung erfolgt. Kann von einem Objekt ignoriert werden, das die Suche ohne Beachtung der Groß-und Kleinschreibung nicht unterstützt.|  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -54,12 +54,12 @@ HRESULT DeleteMemberByName(
 |||  
 |-|-|  
 |`S_OK`|Erfolgreich.|  
-|`S_FALSE`|Element vorhanden ist, aber es kann nicht gelöscht werden.|  
+|`S_FALSE`|Der Member ist vorhanden, kann aber nicht gelöscht werden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn das Element gelöscht wird, muss die DISPID gültig bleiben `GetNextDispID`.  
+ Wenn der Member gelöscht wird, muss die DISPID für `GetNextDispID` gültig bleiben.  
   
- Wenn ein Element mit einem bestimmten Namen gelöscht wird, und später ein Element mit dem gleichen Namen neu erstellt wird, sollte die DISPID identisch sein. (Ist, ob die Elemente, die nur durch Fall unterscheiden, die "gleich" sind Objekt abhängig.)  
+ Wenn ein Element mit einem bestimmten Namen gelöscht und später ein Member mit demselben Namen neu erstellt wird, sollte die DISPID identisch sein. (Unabhängig davon, ob Elemente, die sich nur durch die Groß-/Kleinschreibung unterscheiden, sind Objekt abhängig.)  
   
 ## <a name="example"></a>Beispiel  
   

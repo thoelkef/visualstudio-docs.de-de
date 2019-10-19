@@ -1,5 +1,5 @@
 ---
-title: DOCUMENTNAMETYPE-Enumeration | Microsoft-Dokumentation
+title: Documentnametype-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401eb759523ed1a33d24c3a298db0b3de2b7d5a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955213"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575873"
 ---
 # <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE-Enumeration
 Beschreibt, welche Typen für ein Dokument abzurufen sind.  
@@ -42,11 +42,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |Member|Beschreibung|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|Ruft den Namen an, wie er in der Anwendungsstruktur angezeigt wird.|  
-|DOCUMENTNAMETYPE_TITLE|Ruft den Namen an, wie er in der Titelleiste Viewer angezeigt wird.|  
+|DOCUMENTNAMETYPE_APPNODE|Ruft den Namen ab, wie er in der Anwendungs Struktur angezeigt wird.|  
+|DOCUMENTNAMETYPE_TITLE|Ruft den Namen ab, wie er auf der Viewer-Titelleiste angezeigt wird.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Ruft den Dateinamen ohne Pfad ab.|  
 |DOCUMENTNAMETYPE_URL|Ruft die URL des Dokuments ab.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Ruft den Titel, die Enumeration für die Identifikation angefügtem ab.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Ruft den Titel ab, der mit Enumeration zur Identifizierung angefügt wird.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

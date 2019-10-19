@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StartDebugSession | Microsoft-Dokumentation
+title: 'Idebugapplication:: startdebugsession | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a42fe61d67eedbe6f69350c7b5ec17726f43486e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a7fd27ec86485d39ee9f13997c1a2db7175afcde
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990690"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570985"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Startet die standardmäßigen Debugger integrierten Entwicklungsumgebung (IDE), und fügt eine Debugsitzung dieser Anwendung, wenn noch nicht angefügt ist.  
+Startet die standardmäßige debuggerentwicklungs Umgebung (Integrated Development Environment, IDE) und fügt eine Debugsitzung an diese Anwendung an, sofern noch keine vorhanden ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT StartDebugSession();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,7 +44,7 @@ HRESULT StartDebugSession();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird verwendet, um just-in-Time-Debuggen zu implementieren.  
+ Diese Methode wird zum Implementieren des Just-in-Time-Debuggens verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

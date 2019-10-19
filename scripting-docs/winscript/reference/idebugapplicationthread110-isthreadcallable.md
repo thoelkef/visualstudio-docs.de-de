@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsThreadCallable | Microsoft-Dokumentation
+title: 'IDebugApplicationThread110:: isthreadcallable | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90f0010a513adef67af1285ac15bc35d4573df57
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ff81190247454a4471a4150843d3fb0aaed5999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440509"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574466"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-Bestimmt, ob dieser Thread in einem Zustand befindet, die Aufrufe, die über das PDM Threadwechsel Mechanismen, wie z. B. SynchronousCallInThread verarbeitet werden.  
+Bestimmt, ob sich dieser Thread in einem Zustand befindet, der Aufrufe verarbeitet, die mithilfe der Thread Wechsel Mechanismen von PDM durchgeführt werden, z. b. synchronouscallinthread.  
   
 > [!IMPORTANT]
-> [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> Die [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird von PDM v 11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>Parameter  
  `pfIsCallable`  
- [out] `true` Wenn der Thread aufgerufen wird, andernfalls `false`.  
+ [out] `true`, wenn der Thread aufgerufen werden kann, andernfalls `false`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8794fd94a50f51b7293fee025f2eb1abdf6db5
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349726"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536061"
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
 In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung beschrieben, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger erforderlich ist. Wenn Sie das Programm mithilfe von Projektvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, werden diese Einstellungen in der Debugkonfiguration automatisch korrekt eingestellt.
@@ -44,7 +44,7 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
 
  [64-Bit-Anwendungen debuggen](../debugger/debug-64-bit-applications.md) Beschreibt, wie 64-Bit-Anwendungen debuggt werden.
 
- Vorgehens [Weise: Angeben einer .NET Framework Version für das Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Beschreibt, wie ein Registrierungsschlüssel festgelegt wird, um den Debugger anzugeben, welche Version verwendet werden soll.
+ Gewusst [wie: Angeben einer älteren .NET Framework Version für das Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Beschreibt, wie ein Registrierungsschlüssel festgelegt wird, um den Debugger anzugeben, welche Version verwendet werden soll.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

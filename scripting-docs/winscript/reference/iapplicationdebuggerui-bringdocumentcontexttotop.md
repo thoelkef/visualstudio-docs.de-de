@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft-Dokumentation
+title: 'Iapplicationdebuggerui:: bringdocumentcontextretop | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 596f9357a8553bf6c39140a6948d8ae3085c3210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8648a4377e901908df20cdb5f413ee73ede5c1a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991134"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577808"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-Bringt das Fenster, die den angegebenen Dokument-Kontext oben in der Debugger-Benutzeroberfläche und führt einen Bildlauf durch das Fenster, um den Kontext.  
+Ruft das Fenster mit dem angegebenen Dokument Kontext am oberen Rand der Debugger-Benutzeroberfläche ab und führt einen Bildlauf zum Kontext durch.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parameter  
  `pddc`  
- [in] Dokumentkontext, der in der Debugger-Benutzeroberfläche in den Vordergrund zu bringen.  
+ in Dokument Kontext, der in der Benutzeroberfläche des Debuggers oben angezeigt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,10 +45,10 @@ HRESULT BringDocumentContextToTop(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_INVALIDARG`|Der Kontext anhand des `pddc` ist nicht bekannt.|  
+|`E_INVALIDARG`|Der durch `pddc` angegebene Kontext ist nicht bekannt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bringt das Fenster, die den angegebenen Dokument-Kontext oben in der Debugger-Benutzeroberfläche und führt einen Bildlauf durch das Fenster, um den Kontext.  
+ Diese Methode ruft das Fenster mit dem angegebenen Dokument Kontext am oberen Rand der Debugger-Benutzeroberfläche auf und führt einen Bildlauf zum Kontext durch.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IApplicationDebuggerUI-Schnittstelle](../../winscript/reference/iapplicationdebuggerui-interface.md)

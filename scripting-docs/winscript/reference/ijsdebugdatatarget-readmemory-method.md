@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: ReadMemory-Methode | Microsoft-Dokumentation'
+title: 'Ijsdebugdatatarget:: Read Memory-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 705fff3bf2d4be78897c18c5a4c61bd74a8c2230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84da36433cf3546b34d3e044bb113916c9798117
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582355"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572431"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>IJsDebugDataTarget::ReadMemory-Methode
 Liest den Arbeitsspeicher des Zielprozesses.  
@@ -59,7 +59,7 @@ HRESULT ReadMemory(
  Gibt bei Erfolg S_OK zurück, und Fehlercodes werden für jeden Fehler verwendet. Gibt E_JsDEBUG_INVALID_MEMORY_ADDRESS zurück, wenn die Adresse ungültig ist. Weitere Informationen finden Sie unter "JsDebugAllowPartialRead".  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IJsDebugDataTarget-Schnittstelle](../../winscript/reference/ijsdebugdatatarget-interface.md)

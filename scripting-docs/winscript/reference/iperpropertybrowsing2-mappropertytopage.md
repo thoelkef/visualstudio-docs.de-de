@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::MapPropertyToPage | Microsoft-Dokumentation
+title: 'IPerPropertyBrowsing2:: mappropertytopage | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77270bbe963f281a43a085cb7d15724b7b2ec14e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9e3f821d9e02be567f970d8db1c238ee5cebd29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944834"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577118"
 ---
 # <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
-Gibt die CLSID der Eigenschaftenseite, die verwendet werden kann, zum Bearbeiten dieser Eigenschaft zurück.  
+Gibt die CLSID der Eigenschaften Seite zurück, die zum Bearbeiten dieser Eigenschaft verwendet werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,13 +38,13 @@ HRESULT MapPropertyToPage(
   
 #### <a name="parameters"></a>Parameter  
  `dispid`  
- [in] Dispatchbezeichner von der gewünschten Eigenschaft.  
+ in Dispatchbezeichner der Eigenschaft, die von Interesse ist.  
   
  `pClsidPropPage`  
- [out] Zeiger auf die CLSID, identifizieren die Eigenschaftenseite der Eigenschaft zugeordnet. Wenn diese Methode schlägt fehl, *`pClsidPropPage` auf CLSID_NULL festgelegt ist.  
+ vorgenommen Ein Zeiger auf die CLSID, die die Eigenschaften Seite identifiziert, die der Eigenschaft zugeordnet ist. Wenn diese Methode fehlschlägt, ist * `pClsidPropPage` auf CLSID_NULL festgelegt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IPerPropertyBrowsing2-Schnittstelle 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

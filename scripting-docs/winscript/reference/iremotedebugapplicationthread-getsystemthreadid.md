@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationthread:: getsystemthreadid | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5119db4108ef7fa0783bccc3f747fbd2ed26d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35c281047bd3333f8fdc3945ed97ad3f402c53a4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788208"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575221"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
-Gibt einen Betriebssystem-systemabhängig-Bezeichner, der dem Thread zugeordnet.  
+Gibt einen vom Thread zugeordneten Betriebssystem abhängigen Bezeichner zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetSystemThreadId(
   
 #### <a name="parameters"></a>Parameter  
  `dwThreadId`  
- [out] Ein Betriebssystem-systemabhängig-Bezeichner, die dem Thread zugeordnet.  
+ vorgenommen Ein vom Betriebssystem abhängiger Bezeichner, der dem Thread zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetSystemThreadId(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der Wert des `dwThreadId` muss nicht über Computer hinweg eindeutig sein.  
+ Der Wert von `dwThreadId` muss Computer übergreifend nicht eindeutig sein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -14,20 +14,20 @@ ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06f00cd523d2f42a8602347a77935705bbc25932
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006456"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573674"
 ---
 # <a name="string-expected"></a>Zeichenfolge erwartet
-Sie haben versucht, rufen Sie die **String.prototype.toString** oder **String.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `String`. Das Objekt dieser Art von Aufruf muss vom Typ `String`.  
+Sie haben versucht, die **String. Prototype. ToString** -oder **String. Prototype. valueOf** -Methode für ein Objekt eines anderen Typs als `String` aufzurufen. Das Objekt dieses Aufruf Typs muss vom Typ "`String`" sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Rufen Sie nur die **String.prototype.toString** oder **String.prototype.valueOf** Methoden für Objekte vom Typ `String`.  
+- Rufen Sie nur die **String. Prototype. ToString** -Methode oder die **String. Prototype. valueOf** -Methode für Objekte vom Typ `String` auf.  
   
 ## <a name="see-also"></a>Siehe auch  
- [String-Objekt](../../javascript/reference/string-object-javascript.md)   
+ [String-Objekt](../../javascript/reference/string-object-javascript.md)    
  [toString-Methode (Objekt)](../../javascript/reference/tostring-method-object-javascript.md)

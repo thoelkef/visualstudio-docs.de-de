@@ -13,23 +13,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11987054ed934f4004333f136ea35696ff6c394f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7059868ae65c5093b24f342bd303ec70172171c0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993033"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571535"
 ---
 # <a name="iactivescriptprofilercontrol2-interface"></a>IActiveScriptProfilerControl2-Schnittstelle
-Enthält Methoden, die addieren die Möglichkeit zum Starten oder Beenden der profilerstellung, wenn ein Skript ausgeführt wird.  
+Stellt Methoden bereit, die die Fähigkeit zum Starten oder Beenden der Profilerstellung beim Ausführen eines Skripts hinzufügen.  
   
 ## <a name="methods"></a>Methoden  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Benachrichtigt den Profiler an, Sie begonnen haben, die profilerstellung auf allen anwendbaren Skript-Engines. Dadurch können Sie die vollständige Aufrufliste zu erhalten, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] wird ausgeführt, wenn Sie mit der profilerstellung beginnen.|  
-|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Benachrichtigt den Profiler an, dass Sie beabsichtigen, die profilerstellung für alle anwendbaren Skript-Engines zu beenden. Dadurch können Sie die vollständige Aufrufliste zu erhalten, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie die profilerstellung beenden.|  
+|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Benachrichtigt den Profiler, dass Sie die Profilerstellung für alle anwendbaren Skript-Engines gestartet haben. Auf diese Weise können Sie die gesamte-aufrufsstapel abrufen, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] beim Starten der Profilerstellung ausgeführt wird.|  
+|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Benachrichtigt den Profiler, dass die Profilerstellung für alle anwendbaren Skript-Engines beendet werden soll. Dies ermöglicht es Ihnen, die komplette aufrufsstapel abzurufen, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung beenden.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptProfilerControl-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   
+ [Iactivescriptprofilercontrol-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol-interface.md)    
  [Active Script-Profilerschnittstelle](../../winscript/reference/active-script-profiler-interfaces.md)

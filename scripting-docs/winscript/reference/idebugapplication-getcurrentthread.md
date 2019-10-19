@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetCurrentThread | Microsoft-Dokumentation
+title: 'Idebugapplication:: GetCurrentThread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fc64250732ee36cf12c0fb0203ab22a20991975
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0f95ee5b45e974c1f0fb38ea25edb1175dbbd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990890"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574956"
 ---
 # <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
-Gibt den Thread, der mit dem aktuell ausgeführten Thread verknüpft ist.  
+Gibt den Thread zurück, der dem momentan laufenden Thread zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetCurrentThread(
   
 #### <a name="parameters"></a>Parameter  
  `pat`  
- [out] Der Thread, der mit dem aktuell ausgeführten Thread verknüpft ist.  
+ vorgenommen Der Thread, der dem momentan laufenden Thread zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetCurrentThread(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Thread, der mit dem aktuell ausgeführten Thread verknüpft ist.  
+ Diese Methode gibt den Thread zurück, der dem momentan laufenden Thread zugeordnet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

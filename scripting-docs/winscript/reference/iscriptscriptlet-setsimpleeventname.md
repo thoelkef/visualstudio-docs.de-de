@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSimpleEventName | Microsoft-Dokumentation
+title: 'Iscriptscriptlet:: setsimpleeventname | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e6d05066d59e14a7036fb8f371c9c20b886df7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47039be628e803b5b5c164b765b0cdf6778621bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786627"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571868"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-Legt den einfachen Namen, der dem Scriptlet zugeordnet ist. Dies ist ein Name einem Wort, die keine Leerzeichen enthalten.  
+Legt den einfachen Ereignis Namen fest, der einem Scriptlet zugeordnet ist. Dies ist ein einzelner Wort Name, der keine Leerzeichen enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>Parameter  
  `psz`  
- [in] Ein Puffer, der den einfachen Namen enthält, die zugeordnet ist die `IScriptScriptlet` Objekt.  
+ in Ein Puffer, der den einfachen Ereignis Namen enthält, der dem `IScriptScriptlet` Objekt zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

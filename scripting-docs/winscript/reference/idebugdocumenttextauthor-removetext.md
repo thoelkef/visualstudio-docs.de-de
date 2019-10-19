@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::RemoveText | Microsoft-Dokumentation
+title: 'Idebugdocumenttextauthor:: removetext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 989031a6d4b207c69d1a58b2ff99e5797a629440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 119a55d4ebd20e51890358ef8c5780a2ac8e4509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007763"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572049"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
-Entfernt den Text aus dem Dokument.  
+Entfernt Text aus dem Dokument.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- [in] Die Startposition des Zeichenbereichs folgt zu entfernen.  
+ in Start Position des zu entfernenden Zeichen Bereichs.  
   
  `cNumToRemove`  
- [in] Die Anzahl der zu entfernenden Zeichen.  
+ in Anzahl der zu entfernenden Zeichen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,8 +51,8 @@ HRESULT RemoveText(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird Text aus dem Dokument entfernt.  
+ Diese Methode entfernt Text aus dem Dokument.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentTextAuthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+ [Idebugdocumenttextauthor-Schnittstelle](../../winscript/reference/idebugdocumenttextauthor-interface.md)    
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

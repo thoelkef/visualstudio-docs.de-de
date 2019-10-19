@@ -14,22 +14,22 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 941d49a530b14e2af64ddcb599dd775feb347de0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8cad981e4ba469f67645aca601e6b58c18e1fab6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935398"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573427"
 ---
 # <a name="expected-catch"></a>"catch" erwartet
-Sie verwendet die Ausnahmebehandlung **versuchen** blockieren, aber hat nicht die zugeordnete geschrieben **catch** Anweisung. Der Mechanismus zur Ausnahmebehandlung erfordert, dass der Code, der zusammen mit dem Code fehlschlägt, kann, die nicht ausgeführt werden soll, wenn eine Ausnahme auftritt, umschlossen werden, in eine **versuchen** Block. Ausnahmen werden ausgelöst, innerhalb der **versuchen Sie es** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen Sie es** Block mit einer oder mehreren **catch**Anweisungen.  
+Sie haben den **try** -Block für die Ausnahmebehandlung verwendet, aber die zugehörige **catch** -Anweisung nicht geschrieben. Der Mechanismus für die Ausnahmebehandlung erfordert, dass der Code, der möglicherweise fehlschlägt, zusammen mit dem Code, der nicht ausgeführt werden soll, wenn eine Ausnahme auftritt, in einem **try** -Block umschließt. Ausnahmen werden im **try** -Block mithilfe der **throw** -Anweisung ausgelöst und außerhalb des **try** -Blocks mit einer oder mehreren **catch** -Anweisungen abgefangen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Hinzufügen der zugeordneten **catch** Block.  
+- Fügen Sie den zugehörigen **catch** -Block hinzu.  
   
-- Versuchen Sie es mit einem **schließlich** anstelle von Sperren ein **catch** Block.  
+- Versuchen Sie, anstelle eines **catch** -Blocks einen **abschließend** -Block zu verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [try-try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
+ [try... catch... letzte Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)    
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)

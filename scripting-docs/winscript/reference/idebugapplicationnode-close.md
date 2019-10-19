@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Close | Microsoft-Dokumentation
+title: 'Idebugapplicationnode:: Close | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c634fd154c2470b1a154e5d1c9e97419a2e2e2b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 928dc94a5d700b2cad6a7acfb59a409240be7dc3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990518"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574832"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
-Bewirkt, dass dieser Anwendung alle Verweise freigeben, und geben einen inaktiven Status.  
+Bewirkt, dass diese Anwendung alle Verweise freigibt und in den inaktiven Zustand wechselt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT Close();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,7 +44,7 @@ HRESULT Close();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- In der Regel ruft der Besitzer einer Anwendung diese Methode beim Beenden der Anwendung.  
+ In der Regel ruft der Besitzer einer Anwendung diese Methode auf, wenn die Anwendung beendet wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

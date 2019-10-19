@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnClose | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationevents:: OnClose | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33f394309c50488a08ff6f345e4720d866d5a0ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: add58ebf0caabc8125bad3e30b0f1717c9776e8a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943813"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561525"
 ---
 # <a name="iremotedebugapplicationeventsonclose"></a>IRemoteDebugApplicationEvents::OnClose
-Behandelt ein Anwendungsereignis schließen.  
+Behandelt ein Ereignis zum Schließen einer Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT OnClose();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,7 +44,7 @@ HRESULT OnClose();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode verarbeitet ein Anwendungsereignis schließen.  
+ Diese Methode behandelt ein Ereignis zum Schließen einer Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition | Microsoft-Dokumentation
+title: 'Iactivescripterror:: getsourceposition | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4446235a9584bc45fad84b6f92ecc02592e554f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76ed307f988a3e5bf77ff978c466eda6e5dfee18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009623"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576882"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-Ruft die Position im Quellcode, in denen ist ein Fehler aufgetreten, während die Skript-Engine ein Skript ausgeführt wurde.  
+Ruft den Speicherort im Quellcode ab, an dem ein Fehler aufgetreten ist, während die Skript-Engine ein Skript ausgeführt hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,16 +39,16 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>Parameter  
  `pdwSourceContext`  
- [out] Die Adresse einer Variablen, die einen Cookie empfängt, der den Kontext angibt. Die Interpretation dieses Parameters hängt von der hostanwendung ab.  
+ vorgenommen Adresse einer Variablen, die ein Cookie empfängt, das den Kontext identifiziert. Die Interpretation dieses Parameters hängt von der Host Anwendung ab.  
   
  `pulLineNumber`  
- [out] Die Adresse einer Variablen, die die Nummer der Zeile in der Quelldatei erhält, in dem der Fehler aufgetreten ist.  
+ vorgenommen Adresse einer Variablen, die die Zeilennummer in der Quelldatei empfängt, in der der Fehler aufgetreten ist.  
   
  `pichCharPosition`  
- [out] Die Adresse einer Variablen, die die Zeichenposition in der Zeile empfängt, in dem der Fehler aufgetreten ist.  
+ vorgenommen Adresse einer Variablen, die die Zeichenposition in der Zeile empfängt, in der der Fehler aufgetreten ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` im Erfolgsfall oder `E_FAIL` , wenn der Speicherort nicht abgerufen wurde.  
+ Gibt `S_OK` zurück, wenn erfolgreich, oder `E_FAIL`, wenn der Speicherort nicht abgerufen wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

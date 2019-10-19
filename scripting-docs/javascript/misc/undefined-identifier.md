@@ -14,26 +14,26 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b55b6d695cded9b7effac664dfca6ca9904e9d84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005913"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572540"
 ---
 # <a name="undefined-identifier"></a>Nicht definierter Bezeichner
-Sie haben versucht, einen Bezeichner verwenden, die die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht erkennt. Den nicht definierte Wert wird zurückgegeben, wenn Sie verwenden:  
+Sie haben versucht, einen Bezeichner zu verwenden, der vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht erkannt wird. Der nicht definierte Wert wird zurückgegeben, wenn Sie verwenden:  
   
-- eine Variable, die nicht vorhanden ist,  
+- eine Variable, die nicht vorhanden ist.  
   
-- eine Variable, die deklariert wurde, aber noch nie war ein Wert zugewiesen,  
+- eine Variable, die deklariert wurde, aber nie ein Wert zugewiesen wurde.  
   
-- eine Objekteigenschaft, die nicht vorhanden ist.  
+- eine Objekt Eigenschaft, die nicht vorhanden ist.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Deklarieren Sie die Variable mit einem **Var** Anweisung (wie in `var` X;).  
+- Deklarieren Sie die Variable mit einer **var** -Anweisung (wie in `var` x;).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Variablen](../../javascript/variables-javascript.md)   
+ [Variablen](../../javascript/variables-javascript.md)    
  [Variablenbereich](../../javascript/advanced/variable-scope-javascript.md)

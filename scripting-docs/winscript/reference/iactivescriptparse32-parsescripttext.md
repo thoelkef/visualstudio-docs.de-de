@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::ParseScriptText | Microsoft-Dokumentation
+title: IActiveScriptParse32::P arsescripttext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,14 +10,14 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 782c1d7bd2dd4c0708418ffd3e69c339dd993fde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec4e9539900ee39e99927bb9055a8c107f864653
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954855"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574896"
 ---
-# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
+# <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::P arsescripttext
 Analysiert das angegebene Code-Scriptlet, fügt Deklarationen im Namespace hinzu und wertet, wo angebracht, Code aus.  
   
 ## <a name="syntax"></a>Syntax  
@@ -75,11 +75,11 @@ HRESULT ParseScriptText(
 ## <a name="remarks"></a>Hinweise  
  Wenn die Skript-Engine im initialisierten Zustand ist, wird kein Code tatsächlich während dieses Aufrufs ausgewertet; dieser Code wird vielmehr in die Warteschlange gestellt und ausgeführt, wenn die Skript-Engine in den gestarteten Zustand übergehen soll. Da die Ausführung im initialisierten Zustand nicht zulässig ist, ist es ein Fehler, diese Methode mit dem SCRIPTTEXT_ISEXPRESSIONS-Flag aufzurufen, wenn im initialisierten Zustand.  
   
- Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird beispielsweise bei der Auswertung der HTML-Code verwendet \<Skript >-Tag, wodurch Anweisungen ausgeführt werden, weil die HTML-Seite erstellt wird, anstatt nur in den skriptzustand zu kompilieren,.  
+ Das Scriptlet kann ein Ausdruck, eine Liste mit Anweisungen oder alles sein, das für die verwendete Skriptsprache zulässig ist. Diese Methode wird z. b. bei der Auswertung der HTML-\<SCRIPT >-Tags verwendet, das das Ausführen von-Anweisungen ermöglicht, während die HTML-Seite erstellt wird, anstatt Sie lediglich in den Skript Zustand zu kompilieren.  
   
  Der Code, der an diese Methode übergeben wird, muss ein gültiger, vollständiger Teil des Codes sein. Beispielsweise ist es in VBScript nicht zulässig, diese Methode einmal mit "Sub Function(x)" aufzurufen und dann ein zweites Mal mit `End Sub`. Der Parser darf nicht auf den zweiten Aufruf warten, um die Unterroutine abzuschließen. Er muss stattdessen einen Analysefehler generieren, da eine Unterroutinendeklaration gestartet, aber nicht abgeschlossen wurde.  
   
- Weitere Informationen über skriptzustände finden Sie im Abschnitt "Skriptmodulzustände" der [Windows Script-Engines](../../winscript/windows-script-engines.md).  
+ Weitere Informationen zu Skript Zuständen finden Sie im Abschnitt Skript-Engine-Zustände von [Windows Script Engines](../../winscript/windows-script-engines.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

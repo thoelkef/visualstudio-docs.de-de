@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft-Dokumentation
+title: Iactivescriptauthorprocedure::P arabproceduretext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c513b105a483d0f80510dff9c91fa2c3f09e0523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11a34843f30274ec78f1652c5ed5cd4dbcf2884a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955158"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572814"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Eine Prozedur Code analysiert und fügt den Code der Prozedur Text an das Skript-Engine-Erstellung erstellt eine `IScriptEntry` Objekt, das die Code-Prozedur entspricht.  
+Analysiert eine Code Prozedur, fügt der Skript Erstellungs-Engine den Text der Code Prozedur hinzu und erstellt ein `IScriptEntry`-Objekt, das der Code Prozedur entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,28 +44,28 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parameter  
  `pszCode`  
- [in] Der Skripttext analysiert werden soll.  
+ in Der Skript Text, der analysiert werden soll.  
   
  `pszFormalParams`  
- [in] Die Adresse der formale Parameternamen für die Prozedur. Die Parameternamen müssen durch die entsprechenden Trennzeichen für das Skript-Engine-authoring getrennt werden. Die Namen sollten nicht in Klammern eingeschlossen werden.  
+ in Die Adresse der formalen Parameternamen für die Prozedur. Die Parameternamen müssen durch die entsprechenden Trennzeichen für die Skript Erstellungs-Engine getrennt werden. Die Namen dürfen nicht in die Klammern eingeschlossen werden.  
   
  `pszProcedureName`  
- [in] Die Adresse der den Namen der Prozedur, die analysiert werden.  
+ in Die Adresse des zu erteilenden Prozedur namens.  
   
  `pszItemName`  
- [in] Die Pufferadresse, die den Namen des Elements enthält zugeordneten der `IScriptEntry` Objekt.  
+ in Die Puffer Adresse, die den dem `IScriptEntry` Objekt zugeordneten Elementnamen enthält.  
   
  `pszDelimiter`  
- [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen. Legen Sie diesen Parameter auf NULL, wenn kein Trennzeichen zum Kennzeichnen des Skriptblocks vorhanden ist.  
+ in Die Adresse des Trenn Zeichens für das Ende des Skript Blocks. Wenn `pszCode` aus einem Stream von Text analysiert wird, verwendet der Host normalerweise ein Trennzeichen (z. b. zwei einfache Anführungszeichen), um das Ende des Skript Blocks zu erkennen. Legen Sie diesen Parameter auf NULL fest, wenn es kein Trennzeichen gibt, um das Ende des Skript Blocks zu markieren.  
   
  `dwCookie`  
- [in] Einer der Anwendung definierter Wert, der mit dem neuen verknüpft ist `IScriptEntry` Objekt.  
+ in Ein von der Anwendung definierter Wert, der mit dem neuen `IScriptEntry`-Objekt verknüpft ist.  
   
  `dwFlags`  
- [in] Nicht verwendet.  
+ in Nicht verwendet.  
   
  `pdispFor`  
- [in] Nicht verwendet.  
+ in Nicht verwendet.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -75,7 +75,7 @@ HRESULT ParseProcedureText(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die aktuelle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Engine diese Methode nicht implementiert.  
+ Die aktuelle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Engine implementiert diese Methode nicht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptAuthorProcedure-Schnittstelle](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

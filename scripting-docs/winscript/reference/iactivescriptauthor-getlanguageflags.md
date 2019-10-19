@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetLanguageFlags | Microsoft-Dokumentation
+title: 'Iactivescriptauthor:: getlanguageflags | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68da16513050bd87642be2c96212a330a0916608
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935470"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576200"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
-Gibt die Language-Informationen zurück.  
+Gibt Sprachinformationen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,13 +37,13 @@ HRESULT GetLanguageFlags(
   
 #### <a name="parameters"></a>Parameter  
  `pgrfasa`  
- [out] Die Flags, die Language-Informationen enthalten. Eine Kombination der folgenden Werte sind möglich:  
+ vorgenommen Die Flags, die Sprachinformationen enthalten. Kann eine Kombination der folgenden Werte sein:  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|Die Sprache bevorzugt Skript Event Handler erstellen, von dem Skript-Engine-, anstatt die Anwendung erstellen.|  
-|fasaSupportInternalHandler|0x0002|Die Sprache unterstützt die Skript-Ereignishandler, die vom Skript-Engine-Erstellung erstellt.|  
-|fasaCaseSensitive|0x0004|Die Skriptsprache ist Groß-/Kleinschreibung beachtet.|  
+|fasapreferinternalhandler|0x0001|Die Sprache bevorzugt die Erstellung von Skript Ereignis Handlern durch das Skript Erstellungs Modul anstelle der Anwendung.|  
+|fasasupportinternalhandler|0x0002|Die Sprache unterstützt Skript Ereignishandler, die von der Skript Erstellungs-Engine erstellt wurden.|  
+|fasacasesensitive|0x0004|Bei der Skriptsprache wird Groß-/Kleinschreibung beachtet.|  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -53,9 +53,9 @@ HRESULT GetLanguageFlags(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn das Skript-Engine-erstellen-Ereignishandler verwaltet werden, sollte Ihre Anwendung aufrufen `CreateChildHandler` aus einem `IScriptEntry` Objekt. Dies erstellt eine `IScriptScriptlet` Objekt, das den Ereignishandler entspricht. Die Engine fügt auch einen Ereignishandler auf den Skripteintrag hinzu. Der Ereignishandler ist eine leere Funktion, die Informationen für die angegebene Signatur enthält.  
+ Wenn die Skript Erstellungs-Engine Ereignishandler verwaltet, sollte Ihre Anwendung `CreateChildHandler` von einem `IScriptEntry`-Objekt aus abrufen. Dadurch wird ein `IScriptScriptlet` Objekt erstellt, das dem Ereignishandler entspricht. Die Engine fügt dem Skript Eintrag außerdem einen Ereignishandler hinzu. Der Ereignishandler ist eine leere Funktion, die die angegebenen Signatur Informationen enthält.  
   
- Wenn Ihre Anwendung Ereignishandler verwaltet werden, sollte es aufrufen `CreateChildHandler` aus einem `IScriptNode` Objekt, das ein Ereignis-Handler-Scriptlet darstellt. Dies erstellt eine `IScriptScriptlet` -Objekt, das die Ereignis-Handler-Scriptlet zugeordnet ist. Die Anwendung bietet außerdem eine leere Funktion als ein Ereignis hinzufügen Handler, der eine neue oder vorhandene `IScriptEntry` Objekt.  
+ Wenn Ihre Anwendung Ereignishandler verwaltet, sollte Sie `CreateChildHandler` von einem `IScriptNode` Objekt aus aufgerufen werden, das ein ereignishandlerscriptlet darstellt. Dadurch wird ein `IScriptScriptlet` Objekt erstellt, das dem Ereignishandler-Scriptlet zugeordnet ist. Die Anwendung muss auch einer neuen oder vorhandenen `IScriptEntry` Objekt eine leere Funktion als Ereignishandler hinzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Definescriptblock | Microsoft-Dokumentation
+title: Idebugdocumenthelper::D efinescriptblock | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a320e4e43a983ace4decbaa68de0b1a7df7d457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a2418b18e80ac86b672b3847f24ef9084ed1252
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576978"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Gibt an, das Hilfsprogramm, ein bestimmter Bereich von Zeichen einen Skriptblock, der von der angegebenen Skript-Engine verarbeitet wird.  
+Gibt dem Hilfsprogramm an, dass ein bestimmter Bereich von Zeichen ein Skriptblock ist, der von der angegebenen Skript-Engine verarbeitet wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,19 +41,19 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Parameter  
  `ulCharOffset`  
- [in] Speicherort der Beginn des Skriptblocks.  
+ in Der Speicherort des Skript Blocks.  
   
  `cChars`  
- [in] Anzahl der Zeichen im Skriptblock.  
+ in Anzahl der Zeichen im Skriptblock.  
   
  `pas`  
- [in] Die Skript-Engine für die dieser Skriptblock.  
+ in Die Skript-Engine für diesen Skriptblock.  
   
  `fScriptlet`  
- [in] Flag, die angibt, ob der Skriptblock Scriptlet ist.  
+ in Flag, das angibt, ob der Skriptblock ein Scriptlet ist.  
   
  `pdwSourceContext`  
- [out] Der Quellkontext für den Skriptblock.  
+ vorgenommen Der Quell Kontext für den Skriptblock.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -63,13 +63,13 @@ HRESULT DefineScriptBlock(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Smarthost kann diese Methode verwenden, wenn seine Dokumente eingebetteter Skriptblöcke enthalten. Eine Sprach-Engine kann diese Methode verwenden, wenn der Code eingebettete Skripts für andere Sprachen enthält.  
+ Ein intelligenter Host kann diese Methode verwenden, wenn seine Dokumente eingebettete Skriptblöcke enthalten. Eine Sprach-Engine kann diese Methode verwenden, wenn Ihr Code eingebettete Skripts für andere Sprachen enthält.  
   
- Die Skript-Engine ist verantwortlich für alle Syntax Syntaxfarben und Kontext Suchvorgänge im Skriptblock.  
+ Das Skript Modul ist für alle Syntax Farben und Code Kontext Suchvorgänge im Skriptblock verantwortlich.  
   
- Die `DefineScriptBlock` -Methode aufgerufen werden soll, nachdem der Text hinzugefügt wurde (z. B. die `IDebugDocumentHelper::AddDBCSText` Methode), aber bevor Sie das Skript Block analysiert wurde (z. B. die `IActiveScriptParse ::ParseScriptText` Methode).  
+ Die `DefineScriptBlock`-Methode sollte aufgerufen werden, nachdem der Text hinzugefügt wurde (z. b. mit der `IDebugDocumentHelper::AddDBCSText`-Methode), aber bevor der Skriptblock analysiert wurde (z. b. mit der `IActiveScriptParse ::ParseScriptText`-Methode).  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ [Idebugdocumenthelper:: adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

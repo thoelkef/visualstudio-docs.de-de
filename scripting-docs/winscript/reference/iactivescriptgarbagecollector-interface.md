@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptGarbageCollector-Schnittstelle | Microsoft-Dokumentation
+title: Iactivescriptgarbagecollector-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,21 +11,21 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b53a53c03a7b76050c8d4264048f0549f5142183
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e495f89f97ba645bb6131176fa15f1d2aa55c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009436"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573574"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>IActiveScriptGarbageCollector-Schnittstelle
-Stellt eine Methode, um die Garbagecollection gestartet. Durch die Active Script-Engines, die ihre Ressourcen bereinigen möchten, sollten diese Schnittstelle implementiert werden.  
+Stellt eine Methode zum Starten Garbage Collection bereit. Diese Schnittstelle sollte von Active Script-Engines implementiert werden, die ihre Ressourcen bereinigen möchten.  
   
 ## <a name="methods"></a>Methoden  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Eine Garbagecollection gestartet wird.|  
+|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Startet Garbage Collection.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Schnittstellen](../../winscript/reference/active-script-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::SetDebuggerOptions | Microsoft-Dokumentation
+title: 'IRemoteDebugApplication110:: setdebuggeroptions | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a61eabb307bda39fd871e8f5f4f7198256f0929e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7168a4ef8ec70368c0ff691ba1f721275f9d65d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383354"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577426"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-Wird aufgerufen, um Optionen für den Debugger zu aktualisieren. Diese Methode sollte aufgerufen werden, nachdem [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). Die [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) Methode automatisch zurückgesetzt wird, um die Standardoptionen. Die Optionen standardmäßig auf 0 (SDO_NONE).  
+Wird aufgerufen, um Debuggeroptionen zu aktualisieren. Diese Methode sollte nach [iremotedebugapplication:: connectdebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)aufgerufen werden. Die [iremotedebugapplication::D isconnectdebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) -Methode setzt automatisch auf die Standardoptionen zurück. Die Optionen werden standardmäßig auf 0 (SDO_NONE) eingestellt.  
   
 > [!IMPORTANT]
-> [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> Die [iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird von PDM v 11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,11 +34,11 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>Parameter  
  `mask`  
- Die [SCRIPT_DEBUGGER_OPTIONS-Enumeration](../../winscript/reference/script-debugger-options-enumeration.md) Maske.  
+ Die [SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) -enumerationsmaske.  
   
  `value`  
- Die [SCRIPT_DEBUGGER_OPTIONS-Enumeration](../../winscript/reference/script-debugger-options-enumeration.md) Wert.  
+ Der [SCRIPT_DEBUGGER_OPTIONS](../../winscript/reference/script-debugger-options-enumeration.md) -Enumerationswert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)    
  [IRemoteDebugApplication110-Schnittstelle](../../winscript/reference/iremotedebugapplication110-interface.md)

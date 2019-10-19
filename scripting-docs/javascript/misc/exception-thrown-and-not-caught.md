@@ -1,5 +1,5 @@
 ---
-title: Ausnahme ausgelöst und nicht abgefangen. | Microsoft-Dokumentation
+title: Ausnahme ausgelöst und nicht abgefangen | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,25 +14,25 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a9e4f51d5daf7a9e1b1153acbbe8b76b539b72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946328"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572856"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Ausnahme ausgelöst und nicht abgefangen
-Sie enthalten eine `throw` -Anweisung in Ihrem Code, aber es wurde keine eingefasst eine **versuchen** -Block, oder es wurde keine zugeordnete **catch** Block zum Abfangen des Fehlers. Ausnahmen werden ausgelöst, innerhalb der **versuchen Sie es** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen Sie es** -block mit einer **catch** -Anweisung.  
+Sie haben eine `throw`-Anweisung in Ihren Code eingefügt, aber Sie wurde nicht in einen **try** -Block eingeschlossen, oder es war kein zugeordneter **catch** -Block zum Abfangen des Fehlers vorhanden. Ausnahmen werden im **try** -Block mithilfe der **throw** -Anweisung ausgelöst und außerhalb des **try** -Blocks mit einer **catch** -Anweisung abgefangen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Einschließen von Code, der eine Ausnahme, in auslösen kann eine **versuchen** blockieren, und stellen Sie sicher, es wird eine entsprechende **catch** Block.  
+- Schließen Sie Code ein, der eine Ausnahme in einem **try** -Block auslösen kann, und stellen Sie sicher, dass ein entsprechender **catch** -Block vorhanden ist.  
   
-- Stellen Sie sicher, dass die Catch-Anweisung erwartet, dass die richtige Art der Ausnahme.  
+- Stellen Sie sicher, dass die Catch-Anweisung die richtige Form der Ausnahme erwartet.  
   
-- Wenn die Ausnahme erneut ausgelöst wird, stellen Sie sicher, dass eine andere entsprechende Catch-Anweisung vorhanden ist.  
+- Wenn die Ausnahme erneut ausgelöst wird, stellen Sie sicher, dass eine weitere entsprechende catch-Anweisung vorhanden ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Error-Objekt](../../javascript/reference/error-object-javascript.md)   
- [Throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
+ [Fehler Objekt](../../javascript/reference/error-object-javascript.md)    
+ [throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)    
  [try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

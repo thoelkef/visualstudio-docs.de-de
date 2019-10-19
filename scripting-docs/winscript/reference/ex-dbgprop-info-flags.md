@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086a2b7544a95a302219ddc62c15c5b31dd1d9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0094d49a7e528d312dc8206b02599651f192c6fb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955232"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575843"
 ---
-# <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
-Geben Sie zum `ExtendedDebugPropertyInfo` Felder.  
+# <a name="ex_dbgprop_info_flags"></a>EX_DBGPROP_INFO_FLAGS
+Wird verwendet, um `ExtendedDebugPropertyInfo` Felder anzugeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,20 +41,20 @@ enum {
   
 ## <a name="members"></a>Member  
  EX_DBGPROP_INFO_ID  
- Bezeichner für die Eigenschaft wird initialisiert.  
+ Initialisiert den Bezeichner für die-Eigenschaft.  
   
  EX_DBGPROP_INFO_NTYPE  
  Initialisiert den Typ der Eigenschaft.  
   
  EX_DBGPROP_INFO_NVALUE  
- Der Wert der Eigenschaft initialisiert.  
+ Initialisiert den Wert der-Eigenschaft.  
   
  EX_DBGPROP_INFO_LOCKBYTES  
- Initialisiert die `plb` Feld.  
+ Initialisiert das `plb` Feld.  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- Initialisiert die `pDebugExtProp` Feld mit einem `IDebugExtendedProperty` Schnittstelle.  
+ Initialisiert das `pDebugExtProp` Feld, das eine `IDebugExtendedProperty` Schnittstelle enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
- [ExtendedDebugPropertyInfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
+ [Extendeddebugpropertyinfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)    
  [IDebugExtendedProperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)

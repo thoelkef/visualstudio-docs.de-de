@@ -1,5 +1,5 @@
 ---
-title: Erwartet '}' | Microsoft-Dokumentation
+title: "\"}\" Erwartet | Microsoft-Dokumentation"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02d6772a6bfe8d71c65fb866f097d3f2da97f86a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d19d1cc24928e070ae3569858d6db83a1b59a36d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935010"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577549"
 ---
 # <a name="expected-"></a>"}" erwartet
-Sie nicht die rechte geschweifte Klammer, die das Ende der Funktionsrumpf, Schleife, Codeblock markiert sind oder Objektinitialisierer. Ein Beispiel für diesen Fehler wäre eine **für** -Schleife mit der nur die linke geschweifte Klammer der Hauptteil der Schleife markiert.  
+Sie haben nicht die Rechte geschweifter Klammer eingeschlossen, die das Ende des Funktions Texts, der Schleife, des Code Blocks oder des Objektinitialisierers markiert. Ein Beispiel für diesen Fehler wäre eine **for** -Schleife, bei der nur die linke geschweifter Klammer den Text der Schleife markiert.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Fügen Sie die rechte geschweifte Klammer, die das Ende der Funktion, Schleife, blockieren oder Objektinitialisierer markiert.  
+- Fügen Sie die Rechte geschweifter Klammer hinzu, die das Beenden der Funktion, der Schleife, des Blocks oder des Objektinitialisierers markiert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Function-Objekt](../../javascript/reference/function-object-javascript.md)   
+ [Funktions Objekt](../../javascript/reference/function-object-javascript.md)    
  [Steuern des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)

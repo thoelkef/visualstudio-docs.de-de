@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext | Microsoft-Dokumentation
+title: 'Idebugstackframe:: getcodecontext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadb440017969f3ea4c824c681c726645a5757b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b640238b9c1212f477c6a26a9cc251678758f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934712"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574291"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-Gibt zurück, der aktuelle Codekontext, die dem Stapelrahmen zugeordnet.  
+Gibt den aktuellen Code Kontext zurück, der dem Stapel Rahmen zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetCodeContext(
   
 #### <a name="parameters"></a>Parameter  
  `ppcc`  
- [out] Der Codekontext, die dem Stapelrahmen zugeordnet.  
+ vorgenommen Der dem Stapel Rahmen zugeordnete Code Kontext.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetCodeContext(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt zurück, der aktuelle Codekontext, die dem Stapelrahmen zugeordnet wird.  
+ Diese Methode gibt den aktuellen Code Kontext zurück, der dem Stapel Rahmen zugeordnet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame-Schnittstelle](../../winscript/reference/idebugstackframe-interface.md)

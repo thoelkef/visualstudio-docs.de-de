@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfLine | Microsoft-Dokumentation
+title: 'Idebugdocumenttext:: getpositionofline | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cfcfc771c49abbf837f4db898936e478cda2194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adf4add99ac41440e6f4daa491b72166e97b5ba5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970847"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572101"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
-Gibt die Zeichenposition, für das erste Zeichen einer Zeile zurück.  
+Gibt die Zeichenposition zurück, die dem ersten Zeichen einer Zeile entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetPositionOfLine(
   
 #### <a name="parameters"></a>Parameter  
  `cLineNumber`  
- [in] Die Nummer der Zeile.  
+ in Die Zeilennummer.  
   
  `pcCharacterPosition`  
- [out] Die Zeichenposition innerhalb des Dokuments für den Anfang der Zeile `cLineNumber`.  
+ vorgenommen Die Zeichenposition innerhalb des Dokuments des Zeilen Starts `cLineNumber`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,7 +51,7 @@ HRESULT GetPositionOfLine(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt die Position des Zeichens, auf das erste Zeichen einer Zeile entspricht.  
+ Diese Methode gibt die Zeichenposition zurück, die dem ersten Zeichen einer Zeile entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentText-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)

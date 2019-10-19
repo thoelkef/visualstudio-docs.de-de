@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft-Dokumentation
+title: 'Idebugapplication:: fsaudejitdebugenabled | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf97a4d3985dd3dd32e582c689fde0ecd6f52e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990860"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574987"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Ermittelt, ob ein JIT-Debugger (Just-in-Time) für das automatische Debuggen von Dumb-Hosts registriert ist.  
+Bestimmt, ob ein JIT-Debugger (Just-in-Time) für das automatische Debuggen von stumm Hosts registriert ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,13 +34,13 @@ BOOL FIsAutoJitDebugEnabled();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn die Methode erfolgreich ist und ein JIT-Debugger für das automatische Debuggen von Dumb-Hosts registriert ist, gibt die Methode `TRUE` zurück. Andernfalls wird `FALSE`zurückgegeben.  
+ Wenn die Methode erfolgreich ist und ein JIT-Debugger für die automatische debugausführung von stumm Hosts registriert ist, gibt die Methode `TRUE` zurück. Andernfalls wird `FALSE` zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermittelt, ob ein JIT-Debugger für das automatische Debuggen von Dumb-Hosts registriert ist.  
+ Diese Methode bestimmt, ob ein JIT-Debugger für die automatische Debugkonfiguration von stumm Hosts registriert ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

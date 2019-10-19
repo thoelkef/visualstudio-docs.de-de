@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435706"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569067"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Debugoptionen
 
@@ -95,11 +95,11 @@ Eigenschaften **Auswertung und andere implizite Funktionsaufrufe aktivieren: akt
 
 **Gesamten Text des Ausgabe Fensters an das direkt Fenster umleiten**: sendet alle Debugger-Nachrichten, die normalerweise im **Ausgabe** Fenster angezeigt werden, stattdessen an das **direkt** Fenster.
 
-Unformatierte **Struktur von Objekten in Variablen Fenstern anzeigen**: deaktiviert alle Anpassungen der Objektstruktur Ansicht. Weitere Informationen zu Ansichts Anpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-dot-managed-objects.md).
+Unformatierte **Struktur von Objekten in Variablen Fenstern anzeigen**: deaktiviert alle Anpassungen der Objektstruktur Ansicht. Weitere Informationen zu Ansichts Anpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-managed-objects.md).
 
 **JIT-Optimierung beim Laden von Modulen unterdrücken (nur verwaltet)** : deaktiviert die JIT-Optimierung von verwaltetem Code, wenn ein Modul geladen und JIT kompiliert wird, während der Debugger angefügt wird. Durch das Deaktivieren der Optimierung kann das Debuggen einiger Probleme vereinfacht werden, allerdings auf Kosten der Leistung. Die Verwendung von "Nur mein Code" bei unterdrückter JIT-Optimierung kann dazu führen, dass Nichtbenutzercode als Benutzercode (Nur eigenen Code) angezeigt wird. Weitere Informationen finden Sie unter [JIT-Optimierung und-Debuggen](../debugger/jit-optimization-and-debugging.md).
 
-**JavaScript-Debuggen für ASP.net (Chrome, Edge und IE) aktivieren**: aktiviert den Skript Debugger für ASP.net-apps. Bei der ersten Verwendung in Chrome müssen Sie sich möglicherweise beim Browser anmelden, um Chrome-Erweiterungen zu aktivieren, die Sie installiert haben. Deaktivieren Sie diese Option, um das Legacy Verhalten wiederherzustellen.
+**JavaScript-Debuggen für ASP.net (Chrome, Microsoft Edge und IE) aktivieren**: aktiviert den Skript Debugger für ASP.net-apps. Bei der ersten Verwendung in Chrome müssen Sie sich möglicherweise beim Browser anmelden, um Chrome-Erweiterungen zu aktivieren, die Sie installiert haben. Deaktivieren Sie diese Option, um das Legacy Verhalten wiederherzustellen.
 
 **Edge-Entwicklertools für UWP-JavaScript-Apps aktivieren (experimentell)** : aktiviert Entwickler Tools für UWP-JavaScript-apps in Microsoft Edge.
 
@@ -117,7 +117,7 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 
 **Verwalteten Kompatibilitätsmodus verwenden**: ersetzt das standarddebugmodul durch eine Legacy Version, um die folgenden Szenarien zu ermöglichen:
 
-- Sie verwenden eine andere .NET Framework Sprache als C#, Visual Basic oder F# , die eine eigene Ausdrucks Auswertung bereitstellt (einschließlich C++/CLI).
+- Sie verwenden eine andere .NET-Sprache als C#, Visual Basic oder F# , die eine eigene Ausdrucks Auswertung bereitstellt (einschließlich C++/CLI).
 
 - Sie möchten "Bearbeiten und Fortfahren" C++ für Projekte während des Debuggens im gemischten Modus aktivieren.
 

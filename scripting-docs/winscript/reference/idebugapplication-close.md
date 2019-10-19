@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::Close | Microsoft-Dokumentation
+title: 'Idebugapplication:: Close | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d93262e5875d5b51f7cf306409609671e8157cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0445e9aed990da684efac6675e05183fd939973f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991037"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575575"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-Bewirkt, dass dieser Anwendung alle Verweise freigeben, und geben einen inaktiven Status.  
+Bewirkt, dass diese Anwendung alle Verweise freigibt und in den inaktiven Zustand wechselt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT Close();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,10 +44,10 @@ HRESULT Close();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- In der Regel ruft der Besitzer einer Anwendung diese Methode beim Beenden der Anwendung.  
+ In der Regel ruft der Besitzer einer Anwendung diese Methode auf, wenn die Anwendung beendet wird.  
   
- Diese Methode bewirkt, dass `IApplicationDebugger::onClose` aufgerufen werden.  
+ Diese Methode bewirkt, dass `IApplicationDebugger::onClose` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
  [IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)

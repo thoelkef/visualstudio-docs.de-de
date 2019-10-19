@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCall::ThreadCallHandler | Microsoft-Dokumentation
+title: 'Idebugthreadcall:: threadcallhandler | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1802cdcdabe2ae462960378d0e869838cdaa6e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58e7d3facbd5a59bf7b81e3257c6daea7874141a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000921"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576659"
 ---
 # <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
-Verarbeitet die Aufrufe an Code in einem anderen Thread auszuführen.  
+Behandelt Aufrufe zum Ausführen von Code in einem anderen Thread.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT ThreadCallHandler(
   
 #### <a name="parameters"></a>Parameter  
  `dwParam1`  
- [in] Der erste Parameter.  
+ in Der erste Parameter.  
   
  `dwParam2`  
- [in] Der zweite Parameter.  
+ in Der zweite Parameter.  
   
  `dwParam3`  
- [in] Der dritte Parameter.  
+ in Der dritte Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,9 +55,9 @@ HRESULT ThreadCallHandler(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt, Aufrufen von Code im Debuggerthread ausgeführt wird.  
+ Diese Methode verarbeitet Aufrufe zum Ausführen von Code im Debugger-Thread.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugThreadCall-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md)   
- [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
+ [Idebugthreadcallschnittstelle](../../winscript/reference/idebugthreadcall-interface.md)    
+ [Idebugapplication:: synchronouscallindebuggerthread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md) -   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

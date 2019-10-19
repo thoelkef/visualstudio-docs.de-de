@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddScriptlet | Microsoft-Dokumentation
+title: 'Iactivescriptauthor:: addscriptlet | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a349a848f282e6b3a228c7b17009e0261801be5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935457"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577975"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
-Fügt einen Code-Scriptlet als untergeordnetes Element der Stammebene `IScriptNode` Objekt. Auf dem Host ist der vollqualifizierte Name des Scriptlets nur zwei Ebenen zulässig.  
+Fügt ein Code-Scriptlet als untergeordnetes Element der Stamm Ebene `IScriptNode`-Objekts hinzu. Auf dem Host darf der voll qualifizierte Name des Scriptlets nur zwei Ebenen aufweisen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,28 +44,28 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parameter  
  `pszDefaultName`  
- [in] Die Adresse der Standardname des Scriptlets zugeordnet werden soll.  
+ in Die Adresse des Standard namens, der dem Scriptlet zugeordnet werden soll.  
   
  `pszCode`  
- [in] Die Adresse des Scriptlet-Texts.  
+ in Die Adresse des Scriptlet-Texts.  
   
  `pszItemName`  
- [in] Die Pufferadresse des Bezeichners der obersten Ebene mit dem vollständig qualifizierten Scriptlet-Namen auf dem Host.  
+ in Die Puffer Adresse des Bezeichner der obersten Ebene des voll qualifizierten Scriptlet-namens im Host.  
   
  `pszSubItemName`  
- [in] Die Pufferadresse der Bezeichner der zweiten Ebene mit dem vollständig qualifizierten Scriptlet-Namen auf dem Host. Auf NULL festgelegt, wenn der Name nur eine Ebene enthält.  
+ in Die Puffer Adresse des Bezeichners der zweiten Ebene des voll qualifizierten Scriptlet-namens im Host. Auf NULL festgelegt, wenn der Name nur eine Ebene aufweist.  
   
  `pszEventName`  
- [in] Die Adresse eines Puffers, der den Ereignisnamen enthält, für den das Scriptlet ein Ereignishandler ist.  
+ in Die Adresse eines Puffers, der den Ereignis Namen enthält, für den das Scriptlet ein Ereignishandler ist.  
   
  `pszDelimiter`  
- [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen. Legen Sie diesen Parameter auf NULL, wenn ein Trennzeichen nicht das Ende des Skriptblocks markiert.  
+ in Die Adresse des Trenn Zeichens für das Ende des Skript Blocks. Wenn `pszCode` aus einem Stream von Text analysiert wird, verwendet der Host normalerweise ein Trennzeichen (z. b. zwei einfache Anführungszeichen), um das Ende des Skript Blocks zu erkennen. Legen Sie diesen Parameter auf NULL fest, wenn ein Trennzeichen das Ende des Skript Blocks nicht markiert.  
   
  `dwCookie`  
- [in] Eine Anwendung definierte Wert, der verwendet wird, ein Hostobjekt für das Scriptlet zugeordnet werden soll.  
+ in Ein von der Anwendung definierter Wert, der verwendet wird, um das Scriptlet einem Host Objekt zuzuordnen.  
   
  `dwFlags`  
- [in] Nicht verwendet.  
+ in Nicht verwendet.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

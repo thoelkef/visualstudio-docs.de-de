@@ -1,5 +1,5 @@
 ---
-title: BREAKREASON-Enumeration | Microsoft-Dokumentation
+title: Breakreason-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f656bdf4e3bc85a014ff8d3011708799aa44bcd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955407"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572622"
 ---
 # <a name="breakreason-enumeration"></a>BREAKREASON-Enumeration
 Gibt an, was die Unterbrechung verursacht hat.  
@@ -46,14 +46,14 @@ typedef enum tagBREAKREASON {
   
 |Member|Beschreibung|  
 |------------|-----------------|  
-|BREAKREASON_STEP|Die Sprach-Engine befindet sich im schrittweisen Modus.|  
-|BREAKREASON_BREAKPOINT|Die Sprach-Engine hat keinen expliziten Haltepunkt festgestellt.|  
-|BREAKREASON_DEBUGGER_BLOCK|Die Sprach-Engine hat einen Debugger-Block in einem anderen Thread festgestellt.|  
-|BREAKREASON_HOST_INITIATED|Der Host hat eine Unterbrechung angefordert.|  
-|BREAKREASON_LANGUAGE_INITIATED|Die Sprach-Engine hat eine Unterbrechung angefordert.|  
-|BREAKREASON_DEBUGGER_HALT|Der Debugger-IDE hat eine Unterbrechung angefordert.|  
-|BREAKREASON_ERROR|Ein Ausnahmefehler verursacht die Unterbrechung an.|  
-|BREAKREASON_JIT|Es wird darauf zurückzuführen, dass JIT-Debuggen starten.|  
+|BREAKREASON_STEP|Die Sprach-Engine befindet sich im Schritt Modus.|  
+|BREAKREASON_BREAKPOINT|In der Sprach-Engine ist ein expliziter Haltepunkt aufgetreten.|  
+|BREAKREASON_DEBUGGER_BLOCK|Die Sprach-Engine hat einen debuggerblock in einem anderen Thread gefunden.|  
+|BREAKREASON_HOST_INITIATED|Der Host hat eine Pause angefordert.|  
+|BREAKREASON_LANGUAGE_INITIATED|Die Sprach-Engine hat eine Pause angefordert.|  
+|BREAKREASON_DEBUGGER_HALT|Die Debugger-IDE forderte eine Pause an.|  
+|BREAKREASON_ERROR|Ein Ausführungsfehler hat die Unterbrechung verursacht.|  
+|BREAKREASON_JIT|Ursache beim Start des JIT-Debuggens.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

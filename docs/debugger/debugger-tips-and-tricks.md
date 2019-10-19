@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987764"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536078"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr über Produktivitäts Tipps und Tricks für den Debugger in Visual Studio
 
@@ -29,13 +29,13 @@ Lesen Sie dieses Thema, um einige Produktivitäts Tipps und Tricks für den Visu
 
 Wenn Sie während des Debuggens häufig auf Daten Tipps zeigen, sollten Sie den Datentipp für die Variable anheften, um Ihnen einen schnellen Zugriff zu verschaffen. Die Variable bleibt auch nach einem Neustart fixiert. Um den Datentipp anzuheften, klicken Sie auf das anheft Symbol, während Sie darauf zeigen. Sie können mehrere Variablen anheften.
 
-Anheten ![eines Datentyps](../debugger/media/dbg-tips-data-tips-pinned.png "Pinningdatatip")
+![Anheten eines Datentyps](../debugger/media/dbg-tips-data-tips-pinned.png "Pinningdatatip")
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Bearbeiten des Codes und Fortsetzen desC#Debuggens C++(, VB,)
 
 In den meisten Sprachen, die von Visual Studio unterstützt werden, können Sie den Code während einer Debugsitzung bearbeiten und das Debuggen fortsetzen. Wenn Sie dieses Feature verwenden möchten, klicken Sie mit dem Cursor auf den Code, während dieser im Debugger angehalten wurde, und bearbeiten Sie diesen. Drücken Sie **F5**, **F10** oder **F11**, um das Debuggen fortzusetzen.
 
-![Bearbeiten und Debuggen fortsetzen](../debugger/media/dbg-tips-edit-and-continue.gif "Bearbeiten und fortsetzen")
+![Debuggen bearbeiten und fortfahren](../debugger/media/dbg-tips-edit-and-continue.gif "EDITANDCONTINUE")
 
 Weitere Informationen zur Verwendung des Features finden Sie unter [Bearbeiten und Fortsetzen](../debugger/edit-and-continue.md).
 
@@ -84,7 +84,7 @@ Es ist einfach, Variablen mit Debuggerfenstern wie dem Fenster über **Wachen** 
 
 3. Suchen **Sie die Variable im Fenster Lokal** (**Debuggen > Fenster >** lokal), klicken Sie mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID erstellen**aus.
 
-    ![Erstellen einer Objekt-ID] " (../debugger/media/dbg-tips-watch-create-object-id.png "Kreateobjectid") "
+    ![Erstellen einer Objekt-ID](../debugger/media/dbg-tips-watch-create-object-id.png ""Kreateobjectid"")
 
 4. Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
 
@@ -96,33 +96,33 @@ Weitere Informationen finden Sie unter [Erstellen einer Objekt-ID](../debugger/w
 
 Wenn Sie Rückgabewerte für ihre Funktionen anzeigen möchten, sehen Sie sich die Funktionen an **, die im Fenster Auto** angezeigt werden, während Sie den Code schrittweise durchlaufen. Wenn Sie den Rückgabewert für eine Funktion anzeigen möchten, stellen Sie sicher, dass die Funktion, an der Sie interessiert sind, bereits ausgeführt wurde (drücken Sie die **Taste F10** , wenn Sie den Funktionsbefehl gerade beendet haben). Wenn das Fenster geschlossen ist, verwenden Sie **Debuggen > Windows >** Auto, **um das Fenster** Auto zu öffnen.
 
-![Autos Window](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Fenster "Auto"](../debugger/media/dbg-tips-autos-window.png "Autoswindow")
 
 Außerdem können Sie Funktionen im **direkt** Fenster eingeben, um Rückgabewerte anzuzeigen. (Öffnen Sie ihn mit **debug> Fenster > direkt**.)
 
-![Direkt Fenster](../debugger/media/dbg-tips-immediate-window.png "Unmittelfenster")
+![Direktfenster](../debugger/media/dbg-tips-immediate-window.png "Unmittelfenster")
 
-Sie können auch [Pseudo Variablen](../debugger/pseudovariables.md) im Fenster "über **Wachen** " und " **direkt** " verwenden `$ReturnValue`, z. b.
+Sie können auch [Pseudo Variablen](../debugger/pseudovariables.md) im Fenster "über **Wachen** " und " **direkt** " verwenden, z. b. `$ReturnValue`.
 
 ## <a name="string_visualizer"></a>Überprüfen von Zeichen folgen in einer Schnellansicht
 
-Beim Arbeiten mit Zeichen folgen kann es hilfreich sein, die gesamte formatierte Zeichenfolge anzuzeigen. Wenn Sie eine nur-Text-, XML-, HTML-oder JSON-Zeichenfolge anzeigen möchten, klicken Sie auf das Lupensymbol ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Visualizer Icon") , während Sie auf eine Variable mit einem Zeichen folgen Wert zeigen.
+Beim Arbeiten mit Zeichen folgen kann es hilfreich sein, die gesamte formatierte Zeichenfolge anzuzeigen. Um eine nur-Text-, XML-, HTML-oder JSON-Zeichenfolge anzuzeigen, klicken Sie auf das Lupensymbol ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol "Schnellansicht"") , während Sie auf eine Variable mit einem Zeichen folgen Wert zeigen.
 
-![Öffnen einer Zeichen] folgen Schnellansicht (../debugger/media/dbg-tips-string-visualizers.png "Openstringvisualizer")
+![Öffnen einer Zeichen folgen Schnellansicht](../debugger/media/dbg-tips-string-visualizers.png "Openstringvisualizer")
 
 Mithilfe einer Zeichen folgen Schnellansicht können Sie abhängig vom Typ der Zeichenfolge ermitteln, ob eine Zeichenfolge falsch formatiert ist. Ein leeres **Wertfeld** gibt beispielsweise an, dass die Zeichenfolge vom Typ der Schnellansicht nicht erkannt wird. Weitere Informationen finden Sie unter [Dialog Feld "Zeichen](../debugger/string-visualizer-dialog-box.md)folgen Schnellansicht".
 
-![JSON-Zeichen] folgen Schnellansicht (../debugger/media/dbg-tips-string-visualizer-json.png "Jsonstringvisualizer")
+![JSON-Zeichen folgen Schnellansicht](../debugger/media/dbg-tips-string-visualizer-json.png "Jsonstringvisualizer")
 
 Für einige andere Typen, wie z. b. DataSet-und Datentabelle-Objekte, die in den Debuggerfenstern angezeigt werden, können Sie auch eine integrierte Schnellansicht öffnen.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Unterbrechen von Code für behandelte Ausnahmen
 
-Der Debugger unterbricht den Code bei nicht behandelten Ausnahmen. Behandelte Ausnahmen (z. b. Ausnahmen, die innerhalb eines `try/catch` -Blocks auftreten) können jedoch auch eine Fehlerquelle sein, und Sie können untersuchen, wann Sie auftreten. Sie können den Debugger so konfigurieren, dass der Code für behandelte Ausnahmen unterteilt wird, indem Sie Optionen im Dialogfeld **Ausnahme Einstellungen** konfigurieren. Öffnen Sie dieses Dialogfeld, indem Sie **Debuggen > Windows > Ausnahme Einstellungen**auswählen.
+Der Debugger unterbricht den Code bei nicht behandelten Ausnahmen. Behandelte Ausnahmen (z. b. Ausnahmen, die in einem `try/catch`-Block auftreten) können jedoch auch eine Fehlerquelle sein, und Sie können untersuchen, wann Sie auftreten. Sie können den Debugger so konfigurieren, dass der Code für behandelte Ausnahmen unterteilt wird, indem Sie Optionen im Dialogfeld **Ausnahme Einstellungen** konfigurieren. Öffnen Sie dieses Dialogfeld, indem Sie **Debuggen > Windows > Ausnahme Einstellungen**auswählen.
 
-Im Dialogfeld **Ausnahme Einstellungen** können Sie den Debugger anweisen, den Code für bestimmte Ausnahmen zu unterbrechen. In der Abbildung unten unterbricht der Debugger den Code, wenn ein `System.NullReferenceException` auftritt. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen](../debugger/managing-exceptions-with-the-debugger.md).
+Im Dialogfeld **Ausnahme Einstellungen** können Sie den Debugger anweisen, den Code für bestimmte Ausnahmen zu unterbrechen. In der Abbildung unten unterbricht der Debugger den Code, wenn eine `System.NullReferenceException` auftritt. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen](../debugger/managing-exceptions-with-the-debugger.md).
 
-![Dialog Feld "Ausnahme Einstellungen] " (../debugger/media/dbg-tips-exception-settings.png "Exceptionsettingsdialogbox")
+![Dialog Feld "Ausnahme Einstellungen"](../debugger/media/dbg-tips-exception-settings.png "Exceptionsettingsdialogbox")
 
 ## <a name="debug-deadlocks-and-race-conditions"></a>Deadlocks und Racebedingungen Debuggen
 
@@ -130,9 +130,9 @@ Wenn Sie die Arten von Problemen Debuggen müssen, die bei Multithreadanwendunge
 
 #### <a name="to-show-threads-in-your-source-code"></a>So zeigen Sie Threads in Ihrem Quellcode an
 
-1. Klicken Sie beim Debuggen auf die Schaltfläche **Threads in Quelle anzeigen** , und klicken Sie auf der Symbolleiste **Debuggen** ![auf](../debugger/media/dbg-multithreaded-show-threads.png "Thread Marker") anzeigen
+1. Klicken Sie beim Debuggen auf ![die Schaltfläche](../debugger/media/dbg-multithreaded-show-threads.png "Threadmarker") **Threads in Quelle anzeigen** auf der Symbolleiste **Debuggen** .
 
-2. Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen Sie ein *Thread* Marker-Symbol ![Thread]Marker(../debugger/media/dbg-thread-marker.png "Threadmarker") , der zwei tuchthreads ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
+2. Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen *Sie ein Thread Marker-* Symbol ![Thread Marker](../debugger/media/dbg-thread-marker.png "Threadmarker") , der zwei tuchthreads ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
 
     Beachten Sie, dass ein Thread Marker möglicherweise teilweise durch einen Haltepunkt verborgen ist.
 
@@ -142,7 +142,7 @@ Wenn Sie die Arten von Problemen Debuggen müssen, die bei Multithreadanwendunge
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Überprüfen von Nutzlasten für Webdienste und Netzwerkressourcen (UWP)
 
-In UWP-Apps können Sie mithilfe der `Windows.Web.Http` -API ausgeführte Netzwerk Vorgänge analysieren. Sie können dieses Tool verwenden, um Webdienste und Netzwerkressourcen zu debuggen. Wählen Sie **> leistungsprofiler Debuggen**, um das Tool zu verwenden. Wählen Sie **Netzwerk**aus, und klicken Sie dann auf **starten**. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
+In UWP-Apps können Sie mit der `Windows.Web.Http`-API ausgeführte Netzwerk Vorgänge analysieren. Sie können dieses Tool verwenden, um Webdienste und Netzwerkressourcen zu debuggen. Wählen Sie **> leistungsprofiler Debuggen**, um das Tool zu verwenden. Wählen Sie **Netzwerk**aus, und klicken Sie dann auf **starten**. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
 
 ![Tool zur Netzwerk Verwendungs Profilerstellung](../profiling/media/prof-tour-network-usage.png "Networkusageproftool")
 
@@ -156,9 +156,9 @@ Weitere Informationen finden Sie unter [Netzwerkverwendung](../profiling/network
 
 Zum Anfügen an die laufende App lädt der Debugger Symbol Dateien (. pdb), die für genau denselben Build der APP generiert werden, die Sie debuggen möchten. In einigen Szenarien kann es hilfreich sein, Symbol Dateien zu kennen. Sie können untersuchen, wie Visual Studio Symbol Dateien mit dem Fenster **Module** lädt.
 
-Öffnen Sie das Fenster **Module** beim Debuggen, indem Sie **Debuggen > Windows > Module**auswählen Das Fenster " **Module** " kann Aufschluss darüber [*geben, welche*](../debugger/just-my-code.md)Module der Debugger als Benutzercode behandelt, und den Symbol Ladestatus für das Modul. In den meisten Szenarien findet der Debugger automatisch Symbol Dateien für Benutzercode, aber wenn Sie .NET Framework-Code, Systemcode oder Drittanbieter-Bibliotheks Code schrittweise ausführen (oder Debuggen) möchten, sind zusätzliche Schritte erforderlich, um die richtigen Symbol Dateien zu erhalten.
+Öffnen Sie das Fenster **Module** beim Debuggen, indem Sie **Debuggen > Windows > Module**auswählen Das Fenster " **Module** " kann Aufschluss darüber [*geben, welche*](../debugger/just-my-code.md)Module der Debugger als Benutzercode behandelt, und den Symbol Ladestatus für das Modul. In den meisten Szenarien findet der Debugger automatisch Symbol Dateien für Benutzercode, aber wenn Sie .NET-Code, Systemcode oder Drittanbieter-Bibliotheks Code schrittweise durchlaufen (oder Debuggen) möchten, sind zusätzliche Schritte erforderlich, um die richtigen Symbol Dateien zu erhalten.
 
-![Anzeigen von Symbol Informationen im Fenster "Module] " (../debugger/media/dbg-tips-modules-window.png "Viewsymbolinformation")
+![Anzeigen von Symbol Informationen im Fenster "Module"](../debugger/media/dbg-tips-modules-window.png "Viewsymbolinformation")
 
 Sie können Symbol Informationen direkt aus dem Fenster **Module** laden, indem Sie mit der rechten Maustaste klicken und **Symbole laden**auswählen.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetFileName | Microsoft-Dokumentation
+title: 'Idebugdocumenttextexternalauthor:: GetFilename | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb988751b8a0c0e6450e1fa216a474df2e8c59d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c07752d357a261fbc4800c3217a63d3de9489d55
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978913"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575973"
 ---
 # <a name="idebugdocumenttextexternalauthorgetfilename"></a>IDebugDocumentTextExternalAuthor::GetFileName
-Gibt den Namen des Dokuments ohne Pfadinformationen.  
+Gibt den Namen des Dokuments ohne Pfadinformationen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrShortName`  
- [out] Eine Zeichenfolge mit den kurzen Namen des Dokuments.  
+ vorgenommen Zeichenfolge, die den Kurznamen des Dokuments enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetFileName(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Namen des Dokuments ohne Pfadinformationen. Der kurze Name wird in der Regel in Dialogfeldern verwendet werden.  
+ Diese Methode gibt den Namen des Dokuments ohne Pfadinformationen zurück. Der Kurzname wird in der Regel in Dialogfeldern verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentTextExternalAuthor-Schnittstelle](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

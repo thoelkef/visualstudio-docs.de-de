@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetDispID | Microsoft-Dokumentation
+title: 'IDispatchEx:: GetDispID | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95ab1d72e5b2f608c51ac6e56be1986df8945ec2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57f0faf6004e2219600f0dbd63749a7e65ca438c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000862"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576601"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Ordnet einen Namen für die einzelnen Member der entsprechenden DISPID, die dann bei nachfolgenden Aufrufen verwendet werden kann `IDispatchEx::InvokeEx`.  
+Ordnet der entsprechenden DISPID einen einzelnen Elementnamen zu, der dann bei nachfolgenden Aufrufen von `IDispatchEx::InvokeEx` verwendet werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,20 +39,20 @@ HRESULT GetDispID(
   
 #### <a name="parameters"></a>Parameter  
  `bstrName`  
- Übergeben Namen zugeordnet werden soll.  
+ Der Name, der zugeordnet werden soll.  
   
  `grfdex`  
- Bestimmt die Optionen zum Abrufen von der Memberbezeichner. Dies kann eine Kombination der folgenden Werte sein:  
+ Bestimmt die Optionen zum Abrufen des Element Bezeichners. Dies kann eine Kombination der folgenden Werte sein:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Fordert an, denen die Namenssuche die Groß-und Kleinschreibung ausgeführt werden. Kann vom Objekt ignoriert werden, die Groß-/Kleinschreibung Suche nicht unterstützt.|  
-|fdexNameEnsure|Fordert an, dass das Element erstellt werden, wenn es nicht bereits vorhanden ist. Das neue Element erstellt werden soll, mit dem Wert `VT_EMPTY`.|  
-|fdexNameImplicit|Gibt an, dass der Aufrufer Objekte für ein Element mit einem bestimmten Namen suchen, wird das Basisobjekt nicht explizit angegeben ist.|  
-|fdexNameCaseInsensitive|Fordert an, denen die Namenssuche Groß-und Kleinschreibung ausgeführt werden. Kann vom Objekt ignoriert werden, die Groß-/Kleinschreibung Suche nicht unterstützt.|  
+|fdexnamecasesensitive|Fordert an, dass die Namenssuche nach Groß-/Kleinschreibung durchgeführt wird. Kann von einem Objekt ignoriert werden, das die Suche nach Groß-und Kleinschreibung nicht unterstützt.|  
+|f-namesicher|Fordert an, dass der Member erstellt wird, wenn er nicht bereits vorhanden ist. Der neue Member sollte mit dem Wert `VT_EMPTY` erstellt werden.|  
+|"f-nameimplicit"|Gibt an, dass der Aufrufer Objekte nach einem Member eines bestimmten namens durchsucht, wenn das Basisobjekt nicht explizit angegeben wird.|  
+|fdexnamecaseinsensitive|Fordert an, dass die Namenssuche ohne Berücksichtigung der Groß-/Kleinschreibung erfolgt. Kann von einem Objekt ignoriert werden, das die Suche ohne Beachtung der Groß-und Kleinschreibung nicht unterstützt.|  
   
  `pid`  
- Zeiger auf vom Aufrufer reservierten Speicherort um DISPID Ergebnis zu erhalten. Wenn ein Fehler auftritt, `pid` DISPID_UNKNOWN enthält.  
+ Zeiger auf den vom Aufrufer zugewiesenen Speicherort zum Empfangen des DISPID-Ergebnisses. Wenn ein Fehler auftritt, enthält `pid` DISPID_UNKNOWN.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -61,14 +61,14 @@ HRESULT GetDispID(
 |-|-|  
 |`S_OK`|Erfolgreich.|  
 |`E_OUTOFMEMORY`|Nicht genügend Arbeitsspeicher.|  
-|`DISP_E_UNKNOWNNAME`|Der Name wurde nicht bekannt.|  
+|`DISP_E_UNKNOWNNAME`|Der Name war nicht bekannt.|  
   
 ## <a name="remarks"></a>Hinweise  
- `GetDispID` kann verwendet werden, anstelle von `GetIDsOfNames` um die DISPID für ein bestimmtes Element abzurufen.  
+ `GetDispID` können anstelle von `GetIDsOfNames` verwendet werden, um die DISPID für ein bestimmtes Element abzurufen.  
   
- Da `IDispatchEx` ermöglicht das Hinzufügen und Löschen von Elementen, die den Satz von DISPIDs bleibt nicht Konstanten für die Lebensdauer eines Objekts.  
+ Da `IDispatchEx` das Hinzufügen und Löschen von Membern ermöglicht, bleibt der Satz von DISPIDs für die Lebensdauer eines Objekts konstant.  
   
- Der nicht verwendeten `riid` Parameter im `IDispatch::GetIDsOfNames` wurde entfernt.  
+ Der nicht verwendete `riid` Parameter in `IDispatch::GetIDsOfNames` wurde entfernt.  
   
 ## <a name="example"></a>Beispiel  
   

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::DisconnectDebugger | Microsoft-Dokumentation
+title: Iremotedebugapplication::D isconnectdebugger | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ff016752116664ca2c2cf71a7676fcb6a14ab61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89d1f62886aa25fbb130203d36ebd89d6508b393
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944283"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572795"
 ---
 # <a name="iremotedebugapplicationdisconnectdebugger"></a>IRemoteDebugApplication::DisconnectDebugger
-Wird den aktuellen Debugger von der Anwendung getrennt.  
+Trennt den aktuellen Debugger von der Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT DisconnectDebugger();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,7 +44,7 @@ HRESULT DisconnectDebugger();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird den aktuellen Debugger von der Anwendung getrennt.  
+ Diese Methode trennt den aktuellen Debugger von der Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

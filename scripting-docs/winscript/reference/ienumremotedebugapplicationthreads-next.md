@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Next | Microsoft-Dokumentation
+title: 'Ienumremotedebugapplicationthreads:: Next | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bde09e2c8372e0bb7e73fabfbd1ad4d9aa6467e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36d24ffaca05b64c05815124358024d3b88b0d74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807198"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575175"
 ---
 # <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
-Die `Next` Methode ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
+Die `Next`-Methode ruft eine angegebene Anzahl von Segmenten in der enumerationssequenz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl von Segmenten abgerufen werden soll.  
+ in Die Anzahl der abzurufenden Segmente.  
   
  `pprdat`  
- [out] Gibt ein Array von `IRemoteDebugApplicationThread` Schnittstellen, die die Segmente, die abgerufen werden darstellt.  
+ vorgenommen Gibt ein Array von `IRemoteDebugApplicationThread`-Schnittstellen zurück, die die abgerufenen Segmente darstellen.  
   
  `pceltFetched`  
- [out] Die tatsächliche Anzahl von Segmenten, die vom Enumerator abgerufen werden soll.  
+ vorgenommen Die tatsächliche Anzahl der Segmente, die vom Enumerator abgerufen wurden.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
+ Diese Methode ruft eine angegebene Anzahl von Segmenten in der enumerationssequenz ab.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumRemoteDebugApplicationThreads-Schnittstelle](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

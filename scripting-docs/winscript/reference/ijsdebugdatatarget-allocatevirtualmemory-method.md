@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Allocatevirtualmemory-Methode | Microsoft-Dokumentation'
+title: 'Ijsdebugdatatarget:: belegcatevirtualmemory-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04bf21882ec39054c74f060eaa2c6f65ac0b4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ad8a3eb277823271fbfb4c2e10364b8602775c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583066"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577640"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory-Methode
 Reserviert und/oder führt Commit eines Arbeitsspeicherbereich innerhalb des virtuellen Adressraums des Zielprozesses aus.  
@@ -45,7 +45,7 @@ HRESULT AllocateVirtualMemory(
  [in] Die Größe des zuzuordnenden Arbeitsspeicherbereichs in Bytes. Das System rundet automatisch bis zur Grenze der folgenden Seite auf.  
   
  `allocationType`  
- [in] Gibt den Typ der auszuführenden Speicherbelegung an. Dies ist normalerweise MEM_COMMIT &#124; MEM_RESERVE (0 x 3000) das behält sich vor, und führt einen Commit für eine Zuordnung in einem Schritt.  
+ [in] Gibt den Typ der auszuführenden Speicherbelegung an. Dies ist normalerweise &#124; MEM_COMMIT MEM_RESERVE (0x3000), das eine Zuordnung in einem Schritt reserviert und committet.  
   
  `pageProtection`  
  [in] Der Arbeitsspeicherschutz für den Bereich der Seiten, die zugeordnet werden sollen. Wenn ein Commit der Seiten ausgeführt wird, können Sie eine der Speicherschutzkonstanten (beispielsweise, PAGE_READWRITE, PAGE_EXECUTE) angeben.  
@@ -59,7 +59,7 @@ HRESULT AllocateVirtualMemory(
  Die Funktion initialisiert den Speicher, den sie Null zuordnet, es sei denn, MEM_RESET wird verwendet. Weitere Informationen finden Sie in der VirtualAlloc-Win32-API.  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IJsDebugDataTarget-Schnittstelle](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Erwartet ';' | Microsoft-Dokumentation
+title: "\";\" Erwartet | Microsoft-Dokumentation"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d9a36a36c3783048cdb7afb6c06da09bd21456
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433720"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576460"
 ---
 # <a name="expected-"></a>';' erwartet
-Sie haben versucht, mehr als eine Anweisung in einer Zeile platziert, aber nicht durch Semikolons getrennt werden. Semikolons werden verwendet, um Anweisungen zu beenden. Obwohl Sie mehrere Anweisungen in einer einzelnen Zeile platzieren können, muss jedes von der nächsten durch ein Semikolon getrennt werden.  
+Sie haben versucht, mehr als eine Anweisung in einer Zeile zu platzieren, Sie aber nicht durch Semikolons getrennt. Semikolons werden verwendet, um-Anweisungen zu beenden. Obwohl Sie mehrere-Anweisungen in einer einzelnen Zeile platzieren können, muss jede Anweisung mit einem Semikolon von der nächsten getrennt werden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Markiert das Ende jeder Anweisung mit einem Semikolon.  
+- Markieren Sie das Ende jeder Anweisung mit einem Semikolon.  
   
-- Stellen Sie sicher, dass Ihre Funktionsaufrufe ordnungsgemäß mithilfe von Klammern.  
+- Stellen Sie sicher, dass die Funktionsaufrufe Klammern ordnungsgemäß verwenden.  
   
-- Stellen Sie sicher, Sie haben nicht vergessen, die Semikolons der Header einer **für** Schleife.  
+- Stellen Sie sicher, dass Sie die Semikolons innerhalb des Headers einer **for** -Schleife nicht vergessen haben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben von JavaScript-Code](../../javascript/writing-javascript-code.md)

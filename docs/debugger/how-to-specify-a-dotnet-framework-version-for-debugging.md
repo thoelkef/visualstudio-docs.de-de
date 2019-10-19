@@ -1,5 +1,5 @@
 ---
-title: Geben Sie eine .NET Framework-Version für das Debuggen | Microsoft-Dokumentation
+title: Geben Sie eine .NET Framework Version für das Debuggen an. Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747470"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535973"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Vorgehensweise: Geben Sie eine .NET Framework-Version für das Debuggen (C#, Visual Basic F#)
+# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Geben Sie eine ältere .NET Framework Version für dasC#Debuggen F#an (, Visual Basic,).
 
-Visual Studio-Debugger unterstützt das Debuggen von älteren Versionen von Microsoft .NET Framework sowie die aktuelle Version. Wenn Sie eine Anwendung aus Visual Studio starten, erkennt der Debugger immer die richtige Version von .NET Framework für die Anwendung, die Sie debuggen. Allerdings ist die Anwendung bereits ausgeführt wird und Sie Debuggen mit **Anfügen an**, der Debugger sind nicht immer unbedingt eine ältere Version von .NET Framework zu identifizieren. Dann erhalten Sie eine Fehlermeldung, die besagt,
+Der Visual Studio-Debugger unterstützt das Debuggen älterer Versionen des Microsoft .NET Frameworks und der aktuellen Version. Wenn Sie eine Anwendung in Visual Studio starten, kann der Debugger immer die richtige Version des .NET Framework für die Anwendung identifizieren, die Sie Debuggen. Wenn die Anwendung jedoch bereits ausgeführt wird und Sie das Debuggen mithilfe von **Anfügen an**starten, kann der Debugger möglicherweise nicht immer eine ältere Version des .NET Framework identifizieren. Dann erhalten Sie eine Fehlermeldung, die besagt,
 
 ``` cmd
 The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
-In den seltenen Fällen, in denen dieser Fehler tritt auf, können Sie einen Registrierungsschlüssel an, dass zum Debugger, welche Version verwendet festlegen.
+In den seltenen Fällen, in denen dieser Fehler auftritt, können Sie einen Registrierungsschlüssel festlegen, um den Debugger anzugeben, welche Version verwendet werden soll.
 
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>So geben Sie eine .NET Framework-Version für das Debuggen an
 
@@ -46,23 +46,23 @@ In den seltenen Fällen, in denen dieser Fehler tritt auf, können Sie einen Reg
 
 3. Öffnen Sie im **Registrierungs-Editor** den Ordner HKEY_LOCAL_MACHINE.
 
-4. Navigieren Sie zu: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. Navigieren Sie zu HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}.
 
-    Wenn der Schlüssel nicht vorhanden ist, klicken Sie mit der rechten Maustaste auf HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, und klicken Sie auf **Neuer Schlüssel**. Nennen Sie den neuen Schlüssel `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
+    Wenn der Schlüssel nicht vorhanden ist, klicken Sie mit der rechten Maustaste auf HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, und klicken Sie auf **Neuer Schlüssel**. Benennen Sie den neuen Schlüssel `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
 
 5. Suchen Sie unter {449EC4CC-30D2-4032-9256-EE18EB41B62B} in der Spalte **Name** den Schlüssel CLRVersionForDebugging.
 
-   1. Wenn der Schlüssel nicht vorhanden ist, klicken Sie mit der rechten Maustaste auf {449EC4CC-30D2-4032-9256-EE18EB41B62B}, und klicken Sie dann auf **Neuer Zeichenfolgenwert**. Klicken Sie dann den neuen Zeichenfolgenwert, klicken Sie auf **umbenennen**, und geben `CLRVersionForDebugging`.
+   1. Wenn der Schlüssel nicht vorhanden ist, klicken Sie mit der rechten Maustaste auf {449EC4CC-30D2-4032-9256-EE18EB41B62B}, und klicken Sie dann auf **Neuer Zeichenfolgenwert**. Klicken Sie mit der rechten Maustaste auf den neuen Zeichen folgen Wert, klicken Sie auf **Umbenennen**, und geben Sie `CLRVersionForDebugging`
 
 6. Doppelklicken Sie auf **CLRVersionForDebugging**.
 
-7. Geben Sie im Feld **Zeichenfolge bearbeiten** die .NET Framework-Versionsnummer in das Feld **Wert** ein. Zum Beispiel: V1.1.4322
+7. Geben Sie im Feld **Zeichenfolge bearbeiten** die .NET Framework-Versionsnummer in das Feld **Wert** ein. Beispiel: V1.1.4322
 
 8. Klicken Sie auf **OK**.
 
 9. Schließen Sie den **Registrierungs-Editor**.
 
-     Wenn beim Starten des Debuggens weiterhin eine Fehlermeldung angezeigt wird, stellen Sie sicher, dass Sie in der Registrierung die richtige Versionsnummer eingegeben haben. Außerdem stellen Sie sicher, dass Sie eine Version von .NET Framework unterstützt, die von Visual Studio verwenden. Der Debugger ist mit der aktuellen .NET Framework-Version und älteren Versionen kompatibel. Er ist jedoch möglicherweise nicht mit zukünftigen Versionen kompatibel.
+     Wenn beim Starten des Debuggens weiterhin eine Fehlermeldung angezeigt wird, stellen Sie sicher, dass Sie in der Registrierung die richtige Versionsnummer eingegeben haben. Vergewissern Sie sich außerdem, dass Sie eine Version des .NET Framework verwenden, die von Visual Studio unterstützt wird. Der Debugger ist mit der aktuellen .NET Framework-Version und älteren Versionen kompatibel. Er ist jedoch möglicherweise nicht mit zukünftigen Versionen kompatibel.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

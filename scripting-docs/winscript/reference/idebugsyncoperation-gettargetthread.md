@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::GetTargetThread | Microsoft-Dokumentation
+title: 'Idebugsyncoperation:: gettargetthread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e270757ba26d61288a897bee4128317e6f4499cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6675356439d60e5c204760e69640a0f50bf40fc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004901"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576682"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
-Gibt den Zielthread für die Anwendung für diesen synchronen Vorgang zurück.  
+Gibt den Ziel Anwendungs Thread für diesen synchronen Vorgang zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetTargetThread(
   
 #### <a name="parameters"></a>Parameter  
  `ppatTarget`  
- [out] Der Thread der Ziel-Anwendung für diese synchrone Vorgänge.  
+ vorgenommen Der Ziel Anwendungs Thread für diesen synchronen Vorgang.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetTargetThread(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Zielthread für die Anwendung für diese synchrone Vorgänge.  
+ Diese Methode gibt den Ziel Anwendungs Thread für diesen synchronen Vorgang zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSyncOperation-Schnittstelle](../../winscript/reference/idebugsyncoperation-interface.md)

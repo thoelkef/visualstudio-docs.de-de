@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetName | Microsoft-Dokumentation
+title: 'Iscriptentry:: SetName | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6476869a54921cfdac34e9f1ed202adef909ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9dfa27c6c8c58c0ee1599e17e1da5b5f424e416
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787600"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575352"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
-Einträge, die ein einzelnes Objekt (z. B. eine Funktion) darstellen, legt den Namen des Objekts.  
+Für Einträge, die ein einzelnes Objekt darstellen (z. b. eine Funktion), wird der Name des Objekts festgelegt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>Parameter  
  `psz`  
- [in] Der neue Name des der `IScriptEntry` Objekt.  
+ in Der neue Name des `IScriptEntry` Objekts.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,5 +49,5 @@ HRESULT SetName(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)   
+ [Iscriptentry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)    
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

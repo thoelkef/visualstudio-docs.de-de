@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler | Microsoft-Dokumentation
+title: 'Iscriptnode:: kreatechildhandler | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bca8b30021d39638f3755bace2625bb38a44242d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e024bb7d6a81b35994edddfe9e71666b0ee8df0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787143"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573600"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-Fügt eine Scriptlet als untergeordnete Instanz von einem `IScriptNode`.  
+Fügt ein Scriptlet als untergeordnete Instanz eines `IScriptNode` hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,38 +46,38 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>Parameter  
  `pszDefaultName`  
- [in] Die Adresse der Standardname des Scriptlets zugeordnet werden soll.  
+ in Die Adresse des Standard namens, der dem Scriptlet zugeordnet werden soll.  
   
  `prgpszNames`  
- [in, Size_is (`cpszNames`)] eine Liste mit IDs aus dem vollqualifizierten Namen auf dem Host.  
+ [in, size_is (`cpszNames`)] Eine Liste der Bezeichner aus dem voll qualifizierten Namen auf dem Host.  
   
  `cpszNames`  
- [in] Die Anzahl von Bezeichnern in die `prgpszNames` Parameter.  
+ in Die Anzahl der Bezeichner im `prgpszNames`-Parameter.  
   
  `pszEvent`  
- [in] Der Pufferadresse, die den Ereignisnamen, die dem Scriptlet zugeordnet identifiziert.  
+ in Die Puffer Adresse, die den dem Scriptlet zugeordneten Ereignis Namen identifiziert.  
   
  `pszDelimiter`  
- [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Für die Analyse verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen.  
+ in Die Adresse des Trenn Zeichens für das Ende des Skript Blocks. Zum Auswerten verwendet der Host normalerweise ein Trennzeichen (z. b. zwei einfache Anführungszeichen), um das Ende des Skript Blocks zu erkennen.  
   
- Das Trennzeichen ermöglicht vorverarbeitung von dem Skript-Engine-Erstellung. Beispielsweise kann die Engine ein einfaches Anführungszeichen durch zwei einfache Anführungszeichen für die Verwendung als Trennzeichen ersetzen. Die Engine bestimmt, wie das Trennzeichen verwendet wird.  
+ Das Trennzeichen ermöglicht die Vorverarbeitung durch das Skript Erstellungs Modul. Beispielsweise kann die Engine ein einzelnes Anführungszeichen durch zwei einfache Anführungszeichen ersetzen, die als Trennzeichen verwendet werden sollen. Die Engine bestimmt, wie das Trennzeichen verwendet wird.  
   
- Auf NULL festgelegt, wenn kein Trennzeichen verwendet wird, um das Ende der Skriptblock zu identifizieren.  
+ Auf NULL festgelegt, wenn kein Trennzeichen verwendet wird, um das Ende des Skript Blocks zu identifizieren.  
   
  `ptiSignature`  
- [in] Die Typinformationen für ein Funktionsobjekt.  
+ in Die Typinformationen für ein Funktions Objekt.  
   
  `iMethodSignature`  
- [in] Der Index der Funktion in der `ITypeInfo``ptiSignature` Parameter.  
+ in Der Index der Funktion im `ITypeInfo``ptiSignature`-Parameter.  
   
  `isn`  
- [in] Der Index des untergeordneten Elements im übergeordneten Element.  
+ in Der Index des untergeordneten Elements in der übergeordneten.  
   
  `dwCookie`  
- [in] Eine Anwendung definierte Wert, der verwendet wird, das Hostobjekt, das den Eintrag zugeordnet werden soll.  
+ in Ein von der Anwendung definierter Wert, der verwendet wird, um den Eintrag dem Host Objekt zuzuordnen.  
   
  `ppse`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptEntry` Schnittstelle die untergeordnete Instanz.  
+ vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptEntry`-Schnittstelle der untergeordneten Instanz empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -87,8 +87,8 @@ HRESULT CreateChildHandler(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Scriptlet gibt einen Ereignishandler an. Diese Methode erstellt eine Scriptlet aus, wenn sie, indem aufgerufen wird ein `IScriptNode` -Objekt, eine Webseite darstellt. Diese Methode ist nicht erfolgreich, wenn sie über andere Schnittstellen aufgerufen wird.  
+ Ein Scriptlet gibt einen Ereignishandler an. Diese Methode erstellt ein Scriptlet, wenn Sie von einem `IScriptNode`-Objekt aufgerufen wird, das eine Webseite darstellt. Diese Methode ist nicht erfolgreich, wenn Sie von anderen Schnittstellen aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)   
+ [Iscriptnode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)    
  [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

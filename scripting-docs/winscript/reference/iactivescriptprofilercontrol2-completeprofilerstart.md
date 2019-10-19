@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::CompleteProfilerStart | Microsoft-Dokumentation
+title: 'IActiveScriptProfilerControl2:: completeprofilerstart | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36a1f5d6a1401e2860b65a29c8e383627e83c6be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0230ecb480792b5b24b7375f5b95926735d0a61
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571555"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
-Benachrichtigt den Profiler an, Sie begonnen haben, die profilerstellung auf allen anwendbaren Skript-Engines. Mithilfe dieser Methode können Sie die vollständige Aufrufliste abrufen, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] wird ausgeführt, wenn Sie mit der profilerstellung beginnen.  
+Benachrichtigt den Profiler, dass Sie die Profilerstellung für alle anwendbaren Skript-Engines gestartet haben. Wenn Sie diese Methode verwenden, können Sie die gesamte-Abruf Stapel abrufen, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie mit der Profilerstellung beginnen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -30,7 +30,7 @@ HRESULT CompleteProfilerStart();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Die Methode ist keine Parameter annimmt.  
+ Die Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt ein HRESULT zurück. Folgende Werte sind möglich:  
@@ -38,14 +38,14 @@ HRESULT CompleteProfilerStart();
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_FAIL`|Die profilerstellung kann nicht gestartet werden.|  
-|`S_FALSE`|Die profilerstellung wurde gestartet, wenn ein Skript nicht ausgeführt wurde.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Die profilerstellung ist nicht aktiviert. Kein Rückruf es wurde festgelegt.|  
-|`E_OUTOFMEMORY`|Die Aufrufliste kann nicht abgerufen werden, aufgrund einer Out-of-Memory-Bedingung.|  
+|`E_FAIL`|Die Profilerstellung kann nicht gestartet werden.|  
+|`S_FALSE`|Die Profilerstellung wurde gestartet, als das Skript nicht ausgeführt wurde.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Die Profilerstellung ist nicht aktiviert. Es wurde kein Rückruf festgelegt.|  
+|`E_OUTOFMEMORY`|Die-Rückruf Stapel kann nicht abgerufen werden, weil nicht genügend Arbeitsspeicher verfügbar ist.|  
   
 ## <a name="remarks"></a>Hinweise  
- Aufrufen von `IActiveScriptProfilerControl2::CompleteProfilerStart` wird sichergestellt, dass Ereignisse für Funktionen bereits in der Aufrufliste gesendet werden. Diese Methode muss aufgerufen werden, nach der profilerstellung beginnt, auf jedem Skript-Engine, die auf der aktuellen Registerkarte ist. Die Methode kann für alle Skript-Engine aufgerufen werden.  
+ Durch Aufrufen von `IActiveScriptProfilerControl2::CompleteProfilerStart` wird sichergestellt, dass Ereignisse für Funktionen, die bereits in der aufrufenden Stapel vorhanden sind Diese Methode muss aufgerufen werden, nachdem die Profilerstellung für eine beliebige Skript-Engine auf der aktuellen Registerkarte gestartet wurde. Die-Methode kann für jede Skript-Engine aufgerufen werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
+ [IActiveScriptProfilerControl2::P Analyse Profil erhalte](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
  [IActiveScriptProfilerControl2-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

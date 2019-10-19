@@ -1,5 +1,5 @@
 ---
-title: Zirkelverweis in Wertargument nicht unterstützt | Microsoft-Dokumentation
+title: Zirkel Verweis in Wert Argument nicht unterstützt | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 542fca58778a7b85b3044ce984b6ea049db12509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946367"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572336"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Zirkelverweis in Wertargument nicht unterstützt
-Wurde versucht, aufzurufen `JSON.stringify` mit einem Wert, der ungültig ist. Die `value` Argument, ein Array oder Objekt enthält einen Zirkelverweis.  
+Es wurde versucht, `JSON.stringify` mit einem ungültigen Wert aufzurufen. Das `value`-Argument, ein Array oder ein Objekt, enthält einen Zirkel Verweis.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Entfernen Sie den Zirkelverweis aus dem Argument an.  
+- Entfernen Sie den Zirkel Verweis aus dem Argument.  
   
 ## <a name="example"></a>Beispiel  
- Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` enthält einen Verweis auf `mary` und `mary` enthält einen Verweis auf `john`. um den zirkulären Verweis zu entfernen, entfernen Sie entweder oder verworfen Eigenschaft `brother` aus der `mary` Objekt oder die `sister` Eigenschaft aus der `john` Objekt.  
+ Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` einen Verweis auf `mary` und `mary` über einen Verweis auf `john` verfügt. um den Zirkel Verweis zu entfernen, entfernen Sie entweder die Eigenschaft `brother` aus dem `mary` Objekt oder die Eigenschaft `sister` aus dem `john` Objekt, oder entfernen Sie Sie.  
   
 ```JavaScript  
 var john = new Object();  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [JSON-Objekt](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse-Funktion](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON-Objekt](../../javascript/reference/json-object-javascript.md)    
+ [JSON.](../../javascript/reference/json-parse-function-javascript.md) Analyse-Funktion    
  [JavaScript-Laufzeitfehler](../../javascript/reference/javascript-run-time-errors.md)
