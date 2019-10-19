@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871775"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668546"
 ---
 # <a name="navigate-the-uml-model"></a>Navigieren im UML-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,16 +45,16 @@ In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.
 
  Wenn Sie ein Element aus dem Modell löschen, werden alle Beziehungen, in denen es vorkommt, automatisch gelöscht, und die Eigenschaft am anderen Ende wird aktualisiert.
 
- Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. Eine Multiplizität mit einem maximalen Wert größer als 1 bedeutet, dass die .net-Eigenschaft den folgenden Typ hat: `IEnumerable<`Geben`>`Sie ein.
+ Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. Eine Multiplizität mit einem maximalen Wert größer als 1 bedeutet, dass die .net-Eigenschaft den Typ hat: `IEnumerable<`*Type* `>`.
 
  Weitere Informationen zum Durchsuchen von Beziehungen finden Sie unter [Navigieren in Beziehungen mit der UML-API](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Besitzstruktur
  Ein Modell enthält eine Struktur von [IElement](/previous-versions/dd516035(v=vs.140)) -Objekten. Jedes Element verfügt über die `OwnedElements`-Eigenschaft und über die `Owner`-Eigenschaft.
 
- In den meisten Fällen wird auf die Ziele der `Owner`-Eigenschaft und der `OwnedElements`-Eigenschaft auch von anderen Eigenschaften verwiesen, die über spezifischere Namen verfügen. So befindet sich jeder UML-Vorgang beispielsweise im Besitz einer UML-Klasse. Daher verfügt [IOperation](/previous-versions/dd481186(v=vs.140)) über eine Eigenschaft mit dem Namen [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)und in jedem `Class == Owner` [IOperation](/previous-versions/dd481186(v=vs.140)) -Objekt.
+ In den meisten Fällen wird auf die Ziele der `Owner`-Eigenschaft und der `OwnedElements`-Eigenschaft auch von anderen Eigenschaften verwiesen, die über spezifischere Namen verfügen. So befindet sich jeder UML-Vorgang beispielsweise im Besitz einer UML-Klasse. Daher verfügt [IOperation](/previous-versions/dd481186(v=vs.140)) über eine Eigenschaft mit dem Namen [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)und in jedem [IOperation](/previous-versions/dd481186(v=vs.140)) -Objekt `Class == Owner`.
 
- Das oberste Element der Struktur, das keinen Besitzer hat, ist ein `AuxiliaryConstructs.IModel`. Das IModel ist in einer `IModelStore`enthalten, bei der es sich um die [IModelStore. root](/previous-versions/ee789368(v=vs.140))-Datei handelt.
+ Das oberste Element der Struktur, das keinen Besitzer hat, ist eine `AuxiliaryConstructs.IModel`. Das IModel ist in einer `IModelStore` enthalten, bei der es sich um die [IModelStore. root](/previous-versions/ee789368(v=vs.140))-Datei handelt.
 
  Jedes Modellelement wird mit einem Besitzer erstellt. Weitere Informationen finden Sie unter [Erstellen von Elementen und Beziehungen in UML-Modellen](../modeling/create-elements-and-relationships-in-uml-models.md).
 

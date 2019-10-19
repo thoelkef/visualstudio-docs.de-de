@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anpassen von Menüs und Symbolleisten'
+title: 'Gewusst wie: Anpassen von Menüs und Symbolleisten'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416787"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667994"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Gewusst wie: Anpassen von Menüs und Symbolleisten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs in der Menüleiste hinzufügen und entfernen, sondern auch durch Hinzufügen und Entfernen von Befehlen in jeder angegebenen Symbolleiste oder jedem Menü.
@@ -63,7 +63,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     - Um ein Menü hinzuzufügen, klicken Sie auf die Schaltfläche **Neues Menü hinzufügen** und anschließend auf die Schaltfläche **Auswahl ändern**, und benennen Sie das Menü, das Sie hinzufügen möchten.
 
-         ![Dialogfeld „Anpassen“ zum Hinzufügen eines Menüs](../ide/media/addmenu.png "AddMenu")
+         ![Dialogfeld "anpassen" zum Hinzufügen eines Menüs](../ide/media/addmenu.png "AddMenu")
 
     - Um ein Menü zu entfernen, wählen Sie es in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
@@ -79,7 +79,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     - Um eine Symbolleiste hinzufügen, klicken Sie auf die Schaltfläche **Neu**, geben Sie einen Namen für die Symbolleiste ein, die Sie hinzufügen möchten, und klicken Sie dann auf **OK**.
 
-         ![Dialogfeld „Anpassen“ zum Hinzufügen einer Symbolleiste](../ide/media/addtoolbar.png "AddToolbar")
+         ![Dialogfeld "anpassen" zum Hinzufügen einer Symbolleiste](../ide/media/addtoolbar.png "AddToolBar")
 
     - Um eine benutzerdefinierte Symbolleiste zu entfernen, wählen Sie sie in der Liste **Symbolleisten** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
@@ -91,7 +91,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
          Sie können die Symbolleiste auch am linken Rand ziehen, um sie im Hauptandockbereich zu verschieben.
 
         > [!NOTE]
-        > Weitere Informationen zur Verbesserung der Benutzerfreundlichkeit und der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Weitere Informationen über Möglichkeiten zur Verbesserung der Gebrauchstauglichkeit sowie der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Anpassen eines Menüs oder einer Symbolleiste
 
@@ -107,7 +107,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
          Wählen Sie im Dialogfeld **Befehl hinzufügen** ein Element in der Liste **Kategorien** aus, wählen Sie ein Element in der Liste **Befehle** aus, und klicken Sie dann auf **OK**.
 
-         ![Dialogfeld „Befehl hinzufügen“ in Visual Studio](../ide/media/addcommand.png "AddCommand")
+         ![Dialogfeld "Befehl hinzufügen" in Visual Studio](../ide/media/addcommand.png "AddCommand")
 
     - Um einen Befehl zu löschen, wählen Sie ihn in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 

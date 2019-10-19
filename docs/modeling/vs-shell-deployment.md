@@ -2,25 +2,25 @@
 title: VS Shell-Bereitstellung
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f39dd23851a2ebc0a48afd05da54b0d8deb24a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e010d2efd8174f2c61d7c97eb63d585f47812ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934299"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663661"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell-Bereitstellung
 
-Eine isolierte Shell können Sie bestimmen, welche Visual Studio Funktionalität müssen Sie interagieren mit Ihrem Domain-Specific Languge und wie diese Lösung angezeigt werden soll. Weitere Informationen zu Visual Studio isolierte Shell, finden Sie unter [Anpassen der Isolated Shell](https://vspartner.com/pages/vsshells).
+Mithilfe einer isolierten Shell können Sie feststellen, welche Visual Studio-Funktionalität Sie benötigen, um mit ihrer domänenspezifischen Sprache zu interagieren und wie diese Lösung angezeigt werden soll. Weitere Informationen zur isolierten Visual Studio-Shell finden Sie unter [Anpassen der isolierten Shell](https://vspartner.com/pages/vsshells).
 
-So legen Sie eine Visual Studio-Shell als Bereitstellungsziel fest:
+So legen Sie eine Visual Studio-Shell als Bereitstellungs Ziel fest:
 
-1. In der **DslPackage** geöffneten Projekt **source.extension.tt**.
+1. Öffnen Sie im **dslpackage** -Projekt **Source.Extension.tt**.
 
 2. Klicken Sie unter `<SupportedProducts>` einfügen:
 
@@ -28,4 +28,4 @@ So legen Sie eine Visual Studio-Shell als Bereitstellungsziel fest:
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   Ersetzen Sie dies *MyIsolatedShell* mit dem Namen Ihres isolierten Shell-Pakets.
+   Ersetzen Sie *myisolatedshell* durch den Namen des isolierten shellpakets.

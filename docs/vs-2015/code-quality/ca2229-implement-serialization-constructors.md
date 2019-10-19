@@ -12,43 +12,43 @@ helpviewer_keywords:
 - ImplementSerializationConstructors
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56d53717afc8cd966903e75f77e1745de0031745
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201578"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662844"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Serialisierungskonstruktoren implementieren.
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Serialisierungskonstruktoren implementieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
-|Kategorie|Microsoft.Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle, keinen Delegaten oder eine Schnittstelle, und eine der folgenden Bedingungen gilt:
+ Der Typ implementiert die Schnittstelle "<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>", ist kein Delegat oder eine Schnittstelle, und eine der folgenden Bedingungen ist "true":
 
-- Der Typ keinen Konstruktor, akzeptiert eine <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> Objekt und ein <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Objekt (die Signatur des Serialisierungskonstruktors).
+- Der-Typ verfügt über keinen Konstruktor, der ein <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> Objekt und ein <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>-Objekt (die Signatur des Serialisierungskonstruktors) annimmt.
 
-- Der Typ ist nicht versiegelte und der Zugriffsmodifizierer für seinen Serialisierungskonstruktor nicht geschützt (Familie).
+- Der Typ ist nicht versiegelt, und der Zugriffsmodifizierer für den Serialisierungskonstruktor ist nicht geschützt (Family).
 
-- Der Typ ist versiegelt, und der Zugriffsmodifizierer für die Serialisierungskonstruktor ist nicht privat.
+- Der Typ ist versiegelt, und der Zugriffsmodifizierer für den Serialisierungskonstruktor ist nicht privat.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel gilt für Typen, die benutzerdefinierte Serialisierung unterstützen. Ein Typ unterstützt die benutzerdefinierte Serialisierung, wenn er implementiert die <xref:System.Runtime.Serialization.ISerializable> Schnittstelle. Der Serialisierungskonstruktor ist erforderlich, um zu deserialisieren, Objekte oder neu erstellt, die mit serialisiert wurden die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> Methode.
+ Diese Regel ist für Typen relevant, die die benutzerdefinierte Serialisierung unterstützen. Ein Typ unterstützt die benutzerdefinierte Serialisierung, wenn die <xref:System.Runtime.Serialization.ISerializable>-Schnittstelle implementiert wird. Der Serialisierungskonstruktor ist erforderlich, um Objekte zu deserialisieren oder neu zu erstellen, die mit der <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>-Methode serialisiert wurden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie den Serialisierungskonstruktor. Definieren Sie den Konstruktor bei einer versiegelten Klasse als privaten Konstruktor. Definieren Sie ihn andernfalls als geschützten Konstruktor.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keinen Verstoß gegen die Regel. Der Typ wird nicht deserialisierbar und funktionieren nicht in vielen Szenarien.
+ Unterdrücken Sie keinen Verstoß gegen die Regel. Der Typ ist nicht deserialisierbar und funktioniert in vielen Szenarios nicht.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt einen Typ, der die Regel erfüllt.
