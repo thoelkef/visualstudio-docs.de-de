@@ -3,17 +3,17 @@ title: 'Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808009"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604374"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense
 
@@ -45,7 +45,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
     </xsl:stylesheet>
     ```
 
-2. Fügen Sie den Cursor nach `<xsl:template name="msg23" match="msg23">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:call-template`-Element ein:
+2. Fügen Sie den Cursor nach `<xsl:template name="msg23" match="msg23">` ein, und drücken **Sie die Eingabe**Taste Geben Sie dann das folgende `xsl:call-template`-Element ein:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
 
      Während der Eingabe wird die Liste der Vorlagennamen im `name=""`-Attribut des `xsl:call-template`-Elements angezeigt.
 
-3. Fügen Sie den Cursor nach `<xsl:call-template name="localized-message">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:with-param`-Element ein:
+3. Fügen Sie den Cursor nach `<xsl:call-template name="localized-message">` ein, und drücken **Sie die Eingabe**Taste Geben Sie dann das folgende `xsl:with-param`-Element ein:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
     </xsl:stylesheet>
     ```
 
-2. Fügen Sie den Cursor nach `<xsl:apply-templates select="phone" />` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl: apply-templates`-Element ein:
+2. Fügen Sie den Cursor nach `<xsl:apply-templates select="phone" />` ein, und drücken **Sie die Eingabe**Taste Geben Sie dann das folgende `xsl: apply-templates`-Element ein:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
     </xsl:stylesheet>
     ```
 
-2. Fügen Sie den Cursor nach `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:namespace-alias`-Element ein:
+2. Fügen Sie den Cursor nach `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ein, und drücken **Sie die Eingabe**Taste Geben Sie dann das folgende `xsl:namespace-alias`-Element ein:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
@@ -162,4 +162,4 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Editor IntelliSense-Funktionen](../xml-tools/xml-editor-intellisense-features.md)
+- [IntelliSense-Funktionen des XML-Editors](../xml-tools/xml-editor-intellisense-features.md)

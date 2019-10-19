@@ -91,28 +91,28 @@ f1_keywords:
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5198c541deb4680d19e2b15ae0e672b831dbb13e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203673"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665552"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressourcen für die Problembehandlung bei Fehlern der integrierten Entwicklungsumgebung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Es gibt nicht für alle Fehlermeldungen ein zugehöriges Hilfethema. Wenn Sie das Problem anhand der Informationen in der Fehlermeldung nicht lösen können, können Sie andere Ressourcen wie Knowledge Base-Artikel, die Entwicklercommunity oder den Produktsupport konsultieren.  
-  
-## <a name="knowledge-base-articles"></a>Knowledge Base-Artikel  
- Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Auf der [Microsoft-Support](http://go.microsoft.com/fwlink/?linkid=1782)-Website erhalten Sie Zugriff auf KB-Artikel.  
-  
-## <a name="the-developer-community"></a>Die Entwicklercommunity  
- In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Newsgroups nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden.  
-  
- Sie können auf der Website der [Technischen Microsoft-Communitys](https://techcommunity.microsoft.com/) auf Foren, Blogs, Chats und andere Ressourcen zugreifen.  
-  
-## <a name="product-support"></a>Produktsupport  
+Es gibt nicht für alle Fehlermeldungen ein zugehöriges Hilfethema. Wenn Sie das Problem anhand der Informationen in der Fehlermeldung nicht lösen können, können Sie andere Ressourcen wie Knowledge Base-Artikel, die Entwicklercommunity oder den Produktsupport konsultieren.
+
+## <a name="knowledge-base-articles"></a>Knowledge Base-Artikel
+ Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Auf der [Microsoft-Support](http://go.microsoft.com/fwlink/?linkid=1782)-Website erhalten Sie Zugriff auf KB-Artikel.
+
+## <a name="the-developer-community"></a>Die Entwicklercommunity
+ In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Newsgroups nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden.
+
+ Sie können auf der Website der [Technischen Microsoft-Communitys](https://techcommunity.microsoft.com/) auf Foren, Blogs, Chats und andere Ressourcen zugreifen.
+
+## <a name="product-support"></a>Produktsupport
  Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angesehen haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Support](http://go.microsoft.com/fwlink/?linkid=1782). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie unter [Sprechen Sie mit uns](../../ide/talk-to-us.md).

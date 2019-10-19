@@ -1,5 +1,5 @@
 ---
-title: 'CA2145: Transparente Methoden dürfen nicht mit dem SuppressUnmanagedCodeSecurity versehen werden | Microsoft-Dokumentation'
+title: 'CA2145: transparente Methoden dürfen nicht mit dem SuppressUnmanagedCodeSecurityAttribute-Attribut versehen werden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,34 +8,34 @@ f1_keywords:
 - CA2145
 ms.assetid: 81970700-b438-4b3b-9239-16887e16f7b7
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b6a7c1b5684181098ef0bec1cde430f401ba1136
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bffa680fa39014ffa96feec997b5eca63ee08ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142628"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610208"
 ---
-# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145: Transparente Methoden dürfen nicht mit dem SuppressUnmanagedCodeSecurity-Attribut versehen werden.
+# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145: Transparente Methoden dürfen nicht mit dem SuppressUnmanagedCodeSecurity-Attribut versehen werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity|
+|TypeName|Transparentmethodsschulter dnotusesuppressunmanagedcodesecurity|
 |CheckId|CA2145|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine transparente Methode, eine Methode, die mit der <xref:System.Security.SecuritySafeCriticalAttribute> -Methode oder ein Typ, der eine Methode enthält, ist markiert, mit der <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Attribut.
+ Eine transparente Methode, eine Methode, die mit der <xref:System.Security.SecuritySafeCriticalAttribute>-Methode gekennzeichnet ist, oder ein Typ, der eine-Methode enthält, wird mit dem <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>-Attribut gekennzeichnet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Methoden mit ergänzt die <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Attribut haben einen impliziten LinkDemand auf einer beliebigen Methode, die ihn aufruft. Dieser LinkDemand erfordert, dass der aufrufende Code sicherheitskritisch ist. Das Markieren der Methode, die SuppressUnmanagedCodeSecurity mit verwendet die <xref:System.Security.SecurityCriticalAttribute> Attribut macht diese Anforderung für Aufrufer der Methode leichter ersichtlich.
+ Methoden, die mit dem <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>-Attribut ergänzt werden, haben einen impliziten LinkDemand, der auf jede Methode angewendet wird, die Sie aufruft Dieser LinkDemand erfordert, dass der aufrufende Code sicherheitskritisch ist. Das Markieren der Methode, die SuppressUnmanagedCodeSecurity mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut verwendet, macht diese Anforderung für Aufrufer der-Methode deutlicher.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode bzw. kein Entitätstyp mit dem <xref:System.Security.SecurityCriticalAttribute> Attribut.
+ Um einen Verstoß gegen diese Regel zu beheben, markieren Sie die Methode oder den Typ mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
