@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5aeeb8bf9ec70a7288316c8b4c6baa337c232621
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871723"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671233"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ausführen von Komponententests auf UML-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen, dass Sie Komponententests erstellen und diese im Rahmen des normalen Buildprozesses ausführen. Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md). Zum Einrichten von Tests für Visual Studio-Modellierungserweiterungen sind einige wichtige Informationen erforderlich. Zusammenfassung:
+Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen, dass Sie Komponententests erstellen und diese im Rahmen des normalen Buildprozesses ausführen. Weitere Informationen finden Sie unter [Unit Test Your Code](../test/unit-test-your-code.md). Zum Einrichten von Tests für Visual Studio-Modellierungserweiterungen sind einige wichtige Informationen erforderlich. Zusammenfassung:
 
 - [Einrichten eines Komponententests für VSIX-Erweiterungen](#Host)
 
@@ -48,7 +48,7 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
 ## <a name="requirements"></a>Anforderungen
  Siehe [Anforderungen](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="Host"></a>Einrichten eines Komponententests für VSIX-Erweiterungen
  Die Methoden in Ihren Modellierungserweiterungen funktionieren normalerweise mit einem Diagramm, das bereits geöffnet ist. Die Methoden verwenden MEF-Importe wie **IDiagramContext** und **ILinkedUndoContext**. Dieser Kontext muss von Ihrer Testumgebung eingerichtet werden, bevor Sie die Tests ausführen.
@@ -59,7 +59,7 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
 
     1. **Ein UML-Erweiterungsprojekt.** Normalerweise erstellen Sie dies mithilfe der Befehls-, Gesten- oder Validierungsprojektvorlagen. Informationen hierzu finden Sie beispielsweise [unter Definieren eines Menübefehls in einem Modellierungs Diagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **Ein Komponenten Testprojekt.** Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md).
+    2. **Ein Komponenten Testprojekt.** Weitere Informationen finden Sie unter [Unit Test Your Code](../test/unit-test-your-code.md).
 
 2. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Lösung, die ein UML-Modellierungsprojekt enthält. Sie werden diese Lösung als Ausgangszustand für Ihre Tests verwenden. Sie sollte von der Lösung getrennt sein, in der Sie die UML-Erweiterung und ihre Komponententests erstellen. Weitere Informationen finden Sie unter [Erstellen von UML-Modellierungs Projekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
@@ -84,15 +84,15 @@ Damit Ihr Code auch nach nachfolgenden Änderungen stabil bleibt, wird empfohlen
 
     - **"Umvdte. dll"**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. architecturetools. Extensibility. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. componentmodelhost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. Uml. Interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. testhostframework. dll**
 
 6. Stellen Sie jeder Testmethode, einschließlich der Initialisierungsmethoden, das `[HostType("VS IDE")]` -Attribut als Präfix voran.
 
