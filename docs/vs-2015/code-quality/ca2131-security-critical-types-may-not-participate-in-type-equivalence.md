@@ -1,5 +1,5 @@
 ---
-title: 'CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein. | Microsoft-Dokumentation'
+title: 'CA2131: sicherheitskritische Typen dürfen nicht an typäquivalenz beteiligt sein | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,42 +8,42 @@ f1_keywords:
 - CA2131
 ms.assetid: 4170f3b1-6086-430d-8fba-837d5538c573
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6fba07fbfd7f0c36681b7567ad01359df1be88f6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0d32ebc08866a14755ddb8b2c70e2dd0c4ce61f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65700522"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655495"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein.
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Sicherheitskritische Typen dürfen nicht an Typäquivalenz beteiligt sein
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|
+|TypeName|Criticaltypesmustnotparticipateingetypeäquivalenz|
 |CheckId|CA2131|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ, beteiligt von Typäquivalenz und der Typ selbst oder ein Member oder Feld des Typs wird mit markiert die <xref:System.Security.SecurityCriticalAttribute> Attribut.
+ Ein Typ ist an typäquivalenz beteiligt, und der Typ selbst oder ein Member oder Feld des Typs ist mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut gekennzeichnet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel wird für alle wichtigen Typen ausgelöst oder für Typen, die wichtige Methoden oder Felder enthalten, die an der Typäquivalenz beteiligt sind. Wenn die CLR einen derartigen Typ erkennt, ein Fehler auftritt, laden es mit einem <xref:System.TypeLoadException> zur Laufzeit. In der Regel wird diese Regel nur ausgelöst, wenn Benutzer Typäquivalenz manuell implementieren und die Typäquivalenz nicht von tlbimp und den Compilern ausführen lassen.
+ Diese Regel wird für alle wichtigen Typen ausgelöst oder für Typen, die wichtige Methoden oder Felder enthalten, die an der Typäquivalenz beteiligt sind. Wenn die CLR einen solchen Typ erkennt, kann Sie nicht mit einer <xref:System.TypeLoadException> zur Laufzeit geladen werden. In der Regel wird diese Regel nur ausgelöst, wenn Benutzer Typäquivalenz manuell implementieren und die Typäquivalenz nicht von tlbimp und den Compilern ausführen lassen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das SecurityCritical-Attribut.
+ Entfernen Sie das SecurityCritical-Attribut, um einen Verstoß gegen diese Regel zu beheben.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Die folgenden Beispiele veranschaulichen eine Schnittstelle, eine Methode und ein Feld, das diese Regel ausgelöst zu werden.
+ Die folgenden Beispiele veranschaulichen eine Schnittstelle, eine Methode und ein Feld, das dazu führt, dass diese Regel ausgelöst wird.
 
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2131.criticaltypesmustnotparticipateintypeequivalence/cs/ca2131 - criticaltypesmustnotparticipateintypeequivalence.cs#1)]
 
 ## <a name="see-also"></a>Siehe auch
- [Sicherheitstransparenter Code, Ebene 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+ [Sicherheits transparenter Code, Ebene 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

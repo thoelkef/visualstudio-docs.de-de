@@ -10,21 +10,21 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56c49f0d3cef6dbb054c8d7d97b4e875b83cb518
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815634"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648815"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
-In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die von datengebundenen Steuerelementen enthält. Die Steuerelemente sind an Produktdatensätze gebunden, die in einem Dataset gekapselt sind. Sie fügen außerdem Schaltflächen klicken, um Produkte durchsuchen, und speichern Änderungen an Product Records hinzu.
+In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die Daten gebundene Steuerelemente enthält. Die Steuerelemente sind an Produktdatensätze gebunden, die in einem Dataset gekapselt sind. Sie können auch Schaltflächen zum Durchsuchen von Produkten und zum Speichern von Änderungen an Produktdaten Sätzen hinzufügen.
 
 In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
@@ -38,35 +38,35 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - Visual Studio
 
-- Zugriff auf eine ausgeführte Instanz von SQL Server oder SQL Server Express, die der AdventureWorks-Light (AdventureWorksLT)-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-datenbankvon der [CodePlex Archiv](https://archive.codeplex.com/?p=awlt2008dbscript).
+- Zugriff auf eine laufende Instanz von SQL Server oder SQL Server Express, der die AdventureWorks Light (AdventureWorksLT)-Beispieldatenbank angefügt ist. Sie können die AdventureWorksLT-Datenbank aus dem [codeplex-Archiv](https://archive.codeplex.com/?p=awlt2008dbscript)herunterladen.
 
 Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
-- DataSets und TableAdapters. Weitere Informationen finden Sie unter [datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) und [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+- DataSets und TableAdapters. Weitere Informationen finden Sie unter [DataSet-Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) und [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).
+- WPF-Datenbindung. Weitere Informationen finden Sie in der [Übersicht über die Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 
-Erstellen Sie ein neues WPF-Projekt zur Produktdatensätze.
+Erstellen Sie ein neues WPF-Projekt, um Produktdaten Sätze anzuzeigen.
 
 ::: moniker range="vs-2017"
 
 1. Öffnen Sie Visual Studio.
 
-2. Wählen Sie im Menü **Datei** die Option **Neu** > **Projekt** aus.
+2. Wählen Sie im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-3. Erweitern Sie **Visual Basic** oder **Visual C#**, und wählen Sie dann **Windows** aus.
+3. Erweitern Sie **Visual Basic** oder **Visual C#** , und wählen Sie dann **Windows** aus.
 
-4. Wählen Sie die **WPF-App** Projektvorlage.
+4. Wählen Sie die Projektvorlage **WPF-App** aus.
 
-5. In der **Namen** geben **AdventureWorksProductsEditor** und wählen Sie dann **OK**.
+5. Geben Sie im Feld **Name den Namen** **AdventureWorksProductsEditor** ein, und wählen Sie dann **OK**aus.
 
 ::: moniker-end
 
@@ -76,13 +76,13 @@ Erstellen Sie ein neues WPF-Projekt zur Produktdatensätze.
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Suchen Sie nach der C# **WPF-App** -Projektvorlage aus, und führen Sie die Schritte, um das Projekt, und benennen das Projekt erstellen **AdventureWorksProductsEditor**.
+3. Suchen Sie nach C# der Projektvorlage **WPF-App** , und befolgen Sie die Schritte zum Erstellen des Projekts, und benennen Sie das Projekt **AdventureWorksProductsEditor**.
 
 ::: moniker-end
 
    Visual Studio erstellt das Projekt „AdventureWorksProductsEditor“.
 
-## <a name="create-a-dataset-for-the-application"></a>Erstellen Sie ein Dataset für die Anwendung
+## <a name="create-a-dataset-for-the-application"></a>Erstellen eines Datasets für die Anwendung
 
 Ehe Sie datengebundene Steuerelemente erstellen können, müssen Sie ein Datenmodell für die Anwendung definieren und es dem **Datenquellenfenster** hinzufügen. In dieser exemplarischen Vorgehensweise erstellen Sie ein Dataset als Datenmodell.
 
@@ -110,11 +110,11 @@ Ehe Sie datengebundene Steuerelemente erstellen können, müssen Sie ein Datenmo
 
 8. Klicken Sie auf **Fertig stellen**.
 
-   Visual Studio fügt ein neues `AdventureWorksLTDataSet.xsd` Datei dem Projekt, und fügt ein entsprechendes **AdventureWorksLTDataSet** Element für die **Datenquellen** Fenster. Die `AdventureWorksLTDataSet.xsd` -Datei definiert ein typisiertes Dataset namens `AdventureWorksLTDataSet` und einen TableAdapter namens `ProductTableAdapter`. Weiter unten in dieser exemplarischen Vorgehensweise verwenden Sie `ProductTableAdapter` für das Füllen des Datasets mit Daten und speichern die Änderungen zurück in die Datenbank.
+   Visual Studio fügt dem Projekt eine neue `AdventureWorksLTDataSet.xsd` Datei hinzu und fügt dem **Datenquellen** Fenster ein entsprechendes **AdventureWorksLTDataSet** -Element hinzu. Die `AdventureWorksLTDataSet.xsd` Datei definiert ein typisiertes DataSet mit dem Namen `AdventureWorksLTDataSet` und einen TableAdapter mit dem Namen `ProductTableAdapter`. Weiter unten in dieser exemplarischen Vorgehensweise verwenden Sie `ProductTableAdapter` für das Füllen des Datasets mit Daten und speichern die Änderungen zurück in die Datenbank.
 
 9. Erstellen Sie das Projekt.
 
-## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Bearbeiten Sie die Standard-Fill-Methode des TableAdapter
+## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Bearbeiten der Standard Füllmethode des TableAdapter
 
 Verwenden Sie zum Füllen des Datasets die `Fill`-Methode des `ProductTableAdapter`. Standardmäßig füllt die `Fill`-Methode die `ProductDataTable` im `AdventureWorksLTDataSet` mit allen Datenzeilen aus der Product-Tabelle. Sie können diese Methode modifizieren, sodass nur eine Teilmenge von Zeilen zurückgeben wird. Ändern Sie für diese exemplarische Vorgehensweise die `Fill`-Methode, sodass nur Zeilen für Produkte zurückgegeben werden, die Fotos haben.
 
@@ -158,7 +158,7 @@ Fügen Sie dem Fenster eine Reihe von Schaltflächen hinzu, indem Sie XAML im WP
 
 ## <a name="create-data-bound-controls"></a>Erstellen Sie datengebundene Steuerelemente.
 
-Steuerelemente erstellen, die Kundendatensätze, indem Sie ziehen anzeigen die `Product` -Tabelle aus dem **Datenquellen** in den WPF-Designer.
+Erstellen Sie Steuerelemente, die Kundendaten Sätze anzeigen, indem Sie die `Product` Tabelle aus dem **Datenquellen** Fenster in den WPF-Designer ziehen.
 
 1. Klicken Sie im **Datenquellenfenster** das Dropdownmenü für den Knoten **Product**, und klicken Sie auf **Details**.
 
@@ -183,13 +183,13 @@ Steuerelemente erstellen, die Kundendatensätze, indem Sie ziehen anzeigen die `
 
 5. Ziehen Sie aus dem Fenster **Datenquellen** den Knoten **Product** auf das Raster unter der Zeile, in der die Schaltflächen sind.
 
-     Visual Studio erzeugt XAML, der mehrere Steuerelemente definiert, die an Daten in der Tabelle **Products** gebunden sind. Es generiert außerdem Code, der die Daten lädt. Weitere Informationen zu den generierten XAML und Code finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Visual Studio erzeugt XAML, der mehrere Steuerelemente definiert, die an Daten in der Tabelle **Products** gebunden sind. Es generiert außerdem Code, der die Daten lädt. Weitere Informationen über den generierten XAML-Code und Code finden [Sie unterbinden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 6. Klicken Sie im Designer auf das Textfeld neben der Bezeichnung **Product ID**.
 
 7. Aktivieren Sie im Fenster **Eigenschaften** das Kontrollkästchen neben der Eigenschaft **IsReadOnly**.
 
-## <a name="navigate-product-records"></a>Durchsuchen Sie die Produktdatensätze
+## <a name="navigate-product-records"></a>Navigieren in Produktdaten Sätzen
 
 Fügen Sie Code hinzu, mit dessen Hilfe Benutzer durch die Produktdatensätze scrollen können, indem Sie die Schaltflächen **\<** und **>** verwenden.
 
@@ -197,7 +197,7 @@ Fügen Sie Code hinzu, mit dessen Hilfe Benutzer durch die Produktdatensätze sc
 
      Visual Studio öffnet die CodeBehind-Datei und erstellt einen neuen `backButton_Click`-Ereignishandler für das <xref:System.Windows.Controls.Primitives.ButtonBase.Click>-Ereignis.
 
-2. Ändern Sie den `Window_Loaded`-Ereignishandler, sodass `ProductViewSource`, `AdventureWorksLTDataSet` und `AdventureWorksLTDataSetProductTableAdapter` sich außerhalb der Methode befinden und für das gesamte Formular zugänglich sind. Deklarieren Sie nur diese global für das Formular sein, und weisen sie in der `Window_Loaded` Ereignishandler, die etwa wie folgt:
+2. Ändern Sie den `Window_Loaded`-Ereignishandler, sodass `ProductViewSource`, `AdventureWorksLTDataSet` und `AdventureWorksLTDataSetProductTableAdapter` sich außerhalb der Methode befinden und für das gesamte Formular zugänglich sind. Deklarieren Sie nur diese als Global für das Formular, und weisen Sie diese innerhalb des `Window_Loaded` Ereignis Handlers wie folgt zu:
 
      [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
      [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
@@ -207,14 +207,14 @@ Fügen Sie Code hinzu, mit dessen Hilfe Benutzer durch die Produktdatensätze sc
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
 
-4. Kehren Sie zum Designer zurück, und doppelklicken Sie auf die Schaltfläche **>**.
+4. Kehren Sie zum Designer zurück, und doppelklicken Sie auf die Schaltfläche **>** .
 
 5. Fügen Sie dem `nextButton_Click` -Ereignishandler folgenden Code hinzu:
 
      [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]
      [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
 
-## <a name="save-changes-to-product-records"></a>Änderungen an Product Records speichern
+## <a name="save-changes-to-product-records"></a>Änderungen an Produktdaten Sätzen speichern
 
 Fügen Sie Code hinzu, mit dem Benutzer Änderungen an Product Records mithilfe der Taste **Änderungen speichern** speichern können.
 
@@ -252,11 +252,11 @@ Erstellen Sie die Anwendung, und führen Sie sie aus. Stellen Sie sicher, dass S
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nach Abschluss dieser exemplarischen Vorgehensweise können Sie die nachstehenden verwandten Aufgaben versuchen:
+Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie die folgenden Aufgaben durchführen:
 
-- Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Bindung von WPF-Steuerelementen an andere Typen von Datenquellen verwenden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelemente an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+- Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Bindung von WPF-Steuerelementen an andere Typen von Datenquellen verwenden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/display-related-data-in-wpf-applications.md).
+- Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen verwandter Daten in einer WPF-App](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Siehe auch
 

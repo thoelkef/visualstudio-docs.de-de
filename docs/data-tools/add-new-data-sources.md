@@ -8,81 +8,81 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05a07fc3cb72f923d28ff907c9aec69620cbd40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824884"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648900"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 
-Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieht sich auf .NET-Objekte, die eine Verbindung mit einem Datenspeicher herstellen und die Daten an eine .NET-Anwendung zur Verfügung zu stellen. Die Visual Studio-Designer können die Ausgabe von der Datenquelle, um die Codebausteine zu generieren, die die Daten zu Forms gebunden wird, wenn Drag & drop-Datenbankobjekte aus nutzen die **Datenquellen** Fenster. Diese Art von Datenquelle kann sein:
+Im Kontext von .NET Data Tools in Visual Studio bezieht sich der Begriff *Datenquelle* auf .NET-Objekte, die eine Verbindung mit einem Datenspeicher herstellen und die Daten für eine .NET-Anwendung verfügbar machen. Die Visual Studio-Designer können die Ausgabe der Datenquelle nutzen, um den Code Bausteine zu generieren, mit dem die Daten an Formulare gebunden werden, wenn Sie Datenbankobjekte aus dem **Datenquellen** Fenster ziehen und ablegen. Diese Art von Datenquelle kann Folgendes sein:
 
-- Eine Klasse in einem Entity Framework-Datenmodell, das eine Art der Datenbank zugeordnet ist.
+- Eine Klasse in einem Entity Framework Modell, das einer Art von Datenbank zugeordnet ist.
 
-- Ein Dataset, das eine Art der Datenbank zugeordnet ist.
+- Ein DataSet, das einer Art von Datenbank zugeordnet ist.
 
-- Eine Klasse, die einen Netzwerkdienst, wie z. B. ein Windows Communication Foundation (WCF) Data-Dienst oder einen REST-Dienst darstellt.
+- Eine Klasse, die einen Netzwerkdienst (z. b. einen Windows Communication Foundation (WCF)-Datendienst oder einen Rest-Dienst darstellt.
 
-- Eine Klasse, die SharePoint-Dienst darstellt.
+- Eine-Klasse, die einen SharePoint-Dienst darstellt.
 
-- Eine Klasse oder eine Auflistung in der Projektmappe.
+- Eine Klasse oder Auflistung in der Projekt Mappe.
 
 > [!NOTE]
-> Wenn Sie nicht über die Datenbindung Features nutzen, gilt Datasets, die Entity Framework, LINQ to SQL, WCF, oder die SharePoint, das Konzept einer "Datenquelle" nicht. Einfach direkt an die Datenbank mithilfe von die SQLCommand-Objekte eine Verbindung herstellen Sie, und kommunizieren Sie direkt mit der Datenbank.
+> Wenn Sie keine Daten Bindungsfunktionen, Datasets, Entity Framework LINQ to SQL, WCF oder SharePoint verwenden, gilt das Konzept einer "Datenquelle" nicht. Stellen Sie einfach eine direkte Verbindung mit der Datenbank her, indem Sie die SqlCommand-Objekte verwenden und direkt mit der Datenbank kommunizieren.
 
-Sie erstellen und Bearbeiten von Datenquellen mithilfe der **Assistenten zur Datenquellenkonfiguration** in einer Windows Forms oder Windows Presentation Foundation-Anwendung. Erstellen Sie zunächst die Entitätsklassen für Entity Framework, und starten Sie den Assistenten dazu **Projekt** > **neue Datenquelle hinzufügen** (weiter unten in diesem Artikel ausführlicher beschrieben).
+Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigurieren von Daten** Quellen in einer Windows Forms oder Windows Presentation Foundation Anwendung. Erstellen Sie für Entity Framework zuerst die Entitäts Klassen, und starten Sie dann den Assistenten, indem Sie **Project**  > **neue Datenquelle hinzufügen** auswählen (Weitere Informationen finden Sie weiter unten in diesem Artikel).
 
 ![Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png)
 
 ## <a name="data-sources-window"></a>Datenquellenfenster
 
-Nachdem Sie eine Datenquelle erstellen, wird Sie der **Datenquellen** Toolfenster.
+Nachdem Sie eine Datenquelle erstellt haben, wird Sie im Fenster **Datenquellen** Tool angezeigt.
 
 > [!TIP]
-> Zum Öffnen der **Datenquellen** , stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann die **UMSCHALT**+**Alt**+**D**oder **Ansicht** > **Other Windows** > **Datenquellen**.
+> Um das Fenster **Datenquellen** zu öffnen, stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann **UMSCHALT** +**alt** +**D** , oder wählen Sie  > **andere Fenster**  > **Datenquellen** **anzeigen** aus.
 
-Ziehen Sie eine Datenquelle aus der **Datenquellen** Fenster auf eine Formularentwurfsoberfläche oder Steuerelement. Dies bewirkt, dass Codebausteine generiert werden, die die Daten aus dem Datenspeicher wird angezeigt.
+Sie können eine Datenquelle aus dem **Datenquellen** Fenster auf eine Formular Entwurfs Oberfläche oder ein Steuerelement ziehen. Dies bewirkt, dass Code Bausteine generiert werden, in dem die Daten aus dem Datenspeicher angezeigt werden.
 
-Die folgende Abbildung zeigt ein Dataset, das auf ein Windows-Formular gelöscht wurde. Bei Auswahl von **F5** auf die Anwendung die Daten aus der zugrunde liegenden Datenbank wird in den Steuerelementen des Formulars angezeigt.
+Die folgende Abbildung zeigt ein DataSet, das auf einem Windows Form abgelegt wurde. Wenn Sie in der Anwendung **F5** auswählen, werden die Daten aus der zugrunde liegenden Datenbank in den Steuerelementen des Formulars angezeigt.
 
-![Ziehen Sie von Datenquellenvorgang](../data-tools/media/raddata-data-source-drag-operation.png)
+![Datenquellen-Zieh Vorgang](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Datenquelle für eine Datenbank oder Datenbankdatei
 
-Sie können ein Dataset oder ein Entity Framework-Datenmodell als Datenquelle für eine Datenbank oder Datenbankdatei verwenden erstellen.
+Sie können ein DataSet oder ein Entity Framework Modell erstellen, das als Datenquelle für eine Datenbank oder Datenbankdatei verwendet werden soll.
 
 ### <a name="dataset"></a>DataSet
 
-Um ein Dataset als Datenquelle zu erstellen, führen Sie die **Assistenten zur Datenquellenkonfiguration** dazu **Projekt** > **neue Datenquelle hinzufügen**. Wählen Sie die **Datenbank** Datenquelle geben, und führen Sie die aufforderungen, um entweder eine Verbindung mit neuen oder vorhandenen Datenbank oder einer Datenbankdatei angeben.
+Um ein DataSet als Datenquelle zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, indem Sie **Projekt**  > **neue Datenquelle hinzufügen**auswählen. Wählen Sie den Daten Quellentyp **Datenbank** aus, und befolgen Sie die Anweisungen, um entweder eine neue oder eine vorhandene Datenbankverbindung oder eine Datenbankdatei anzugeben.
 
 ### <a name="entity-classes"></a>Entitätsklassen
 
-Um ein Entity Framework-Modell als Datenquelle zu erstellen:
+So erstellen Sie ein Entity Framework Modell als Datenquelle:
 
-1. Führen Sie die **Entity Data Model-Assistenten** um Entitätsklassen zu erstellen. Wählen Sie **Projekt** > **neues Element hinzufügen** > **ADO.NET Entity Data Model**.
+1. Führen Sie den **Entity Data Model Assistenten** aus, um die Entitäts Klassen zu erstellen. Wählen Sie **Projekt**  >  neues Element  > **ADO.NET Entity Data Model** **Hinzufügen** aus.
 
-   ![Neues Projektelement für Entity Framework-Modell](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
+   ![Neues Entity Framework Modell-Projekt Element](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
-1. Wählen Sie die Methode, der Sie das Modell, indem Sie generieren möchten.
+1. Wählen Sie die Methode aus, von der Sie das Modell generieren möchten.
 
    ![Entity Data Model-Assistent](../data-tools/media/raddata-entity-data-model-wizard.png)
 
-1. Fügen Sie das Modell als Datenquelle hinzu. Die generierten Klassen angezeigt, der **Assistenten zur Datenquellenkonfiguration** bei der Auswahl der **Objekte** Kategorie.
+1. Fügen Sie das Modell als Datenquelle hinzu. Die generierten Klassen werden im **Assistenten zum Konfigurieren von Datenquellen** angezeigt, wenn Sie die Kategorie **Objekte** auswählen.
 
-   ![Assistenten zur Datenquellenkonfiguration mit Entitätsklassen](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
+   ![Assistent zum Konfigurieren von Datenquellen mit Entitäts Klassen](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Datenquelle für einen Dienst
 
-Führen Sie zum Erstellen einer Datenquelle von einem Dienst die **Assistenten zur Datenquellenkonfiguration** , und wählen Sie die **Service** Datenquellentyp. Dies ist nur eine Verknüpfung zu der **Hinzufügen eines Dienstverweises** Dialogfeld, das Sie auch zugreifen können, mit der rechten Maustaste in das Projekt im **Projektmappen-Explorer** und auswählen **Hinzufügen eines Dienstverweises**.
+Um eine Datenquelle aus einem Dienst zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, und wählen Sie den Daten Quellentyp **Dienst** aus. Dies ist nur eine Verknüpfung zum Dialogfeld **Dienstverweis hinzufügen** , auf das Sie auch zugreifen können, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und **Dienst Verweis hinzufügen**auswählen.
 
-Wenn Sie eine Datenquelle mit einem Dienst erstellen, fügt Visual Studio einen Dienstverweis auf das Projekt hinzu. Visual Studio erstellt auch Proxyobjekte, die den Objekten entsprechen, die der Dienst zurückgibt. Zum Beispiel wird ein Dienst, der ein Dataset zurückgibt, im Projekt als Dataset dargestellt. Ein Dienst, der einen bestimmten Typ zurückgibt, wird in dem Projekt als der zurückgegebene Typ dargestellt.
+Wenn Sie eine Datenquelle mit einem Dienst erstellen, fügt Visual Studio einen Dienstverweis auf das Projekt hinzu. Visual Studio erstellt auch Proxy Objekte, die den vom Dienst zurückgegebenen Objekten entsprechen. Zum Beispiel wird ein Dienst, der ein Dataset zurückgibt, im Projekt als Dataset dargestellt. Ein Dienst, der einen bestimmten Typ zurückgibt, wird in dem Projekt als der zurückgegebene Typ dargestellt.
 
 Sie können eine Datenquelle mit den folgenden Diensttypen erstellen:
 
@@ -93,25 +93,25 @@ Sie können eine Datenquelle mit den folgenden Diensttypen erstellen:
 - Webdienste
 
     > [!NOTE]
-    > Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt werden der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
+    > Die Elemente, die im **Datenquellen** Fenster angezeigt werden, sind abhängig von den Daten, die vom Dienst zurückgegeben werden. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Wenn der Dienst beispielsweise ein nicht typisiertes DataSet zurückgibt, werden beim Beenden des Assistenten keine Elemente im **Datenquellen** Fenster angezeigt. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
 
 ## <a name="data-source-for-an-object"></a>Datenquelle für ein Objekt
 
-Sie können eine Datenquelle mit jedem Objekt erstellen, das mindestens eine öffentliche Eigenschaft durch Ausführen des **Assistenten zum Konfigurieren von Datenquellen** und anschließendes Auswählen des Datenquellentyps **Objekt** verfügbar macht. Alle öffentlichen Eigenschaften eines Objekts werden im Fenster **Datenquellen** angezeigt. Wenn Sie Entity Framework verwenden und ein Modell generiert haben, ist dies die, in dem Sie die Entitätsklassen finden, die die Datenquellen für Ihre Anwendung sind.
+Sie können eine Datenquelle mit jedem Objekt erstellen, das mindestens eine öffentliche Eigenschaft durch Ausführen des **Assistenten zum Konfigurieren von Datenquellen** und anschließendes Auswählen des Datenquellentyps **Objekt** verfügbar macht. Alle öffentlichen Eigenschaften eines Objekts werden im Fenster **Datenquellen** angezeigt. Wenn Sie Entity Framework verwenden und ein Modell generiert haben, finden Sie hier die Entitäts Klassen, die die Datenquellen für Ihre Anwendung sind.
 
-Auf der **Datenobjekte auswählen** Seite, erweitern Sie die Knoten in der Strukturansicht, um die Objekte zu suchen, die Sie binden möchten. Die Strukturansicht enthält Knoten für Ihr Projekt für Assemblys und andere Projekte, die vom Projekt verwiesen werden.
+Erweitern Sie auf der Seite **Datenobjekte auswählen** die Knoten in der Strukturansicht, um die Objekte zu suchen, an die Sie binden möchten. Die Strukturansicht enthält Knoten für das Projekt und für Assemblys und andere Projekte, auf die von Ihrem Projekt verwiesen wird.
 
-Wenn Sie möchten die Bindung an ein Objekt in eine Assembly oder ein Projekt, das nicht in der Strukturansicht angezeigt wird, klicken Sie auf **Verweis hinzufügen** und verwenden Sie die **Add Reference Dialog Box** einen Verweis auf die Assembly oder ein Projekt hinzufügen. Nachdem Sie den Verweis hinzugefügt haben, wird die Assembly oder das Projekt der Strukturansicht hinzugefügt.
-
-> [!NOTE]
-> Sie müssen das Projekt zu erstellen, das die Objekte enthält, bevor die Objekte in der Strukturansicht angezeigt werden.
+Wenn Sie an ein Objekt in einer Assembly oder einem Projekt binden möchten, das nicht in der Strukturansicht angezeigt wird, klicken Sie auf **Verweis hinzufügen** , und fügen Sie im **Dialog Feldverweis hinzufügen** einen Verweis auf die Assembly oder das Projekt hinzu. Nachdem Sie den Verweis hinzugefügt haben, wird die Assembly oder das Projekt der Strukturansicht hinzugefügt.
 
 > [!NOTE]
-> Um Drag & Drop-Datenbindung, unterstützen Objekte, implementieren die <xref:System.ComponentModel.ITypedList> oder <xref:System.ComponentModel.IListSource> Schnittstelle muss über einen Standardkonstruktor verfügen. Andernfalls, Visual Studio das Datenquellen-Objekt kann nicht instanziiert werden, und es wird ein Fehler angezeigt, wenn Sie das Element auf die Entwurfsoberfläche ziehen.
+> Möglicherweise müssen Sie das Projekt erstellen, das die Objekte enthält, bevor die Objekte in der Strukturansicht angezeigt werden.
+
+> [!NOTE]
+> Um die Datenbindung mittels Drag & Drop zu unterstützen, müssen Objekte, die die <xref:System.ComponentModel.ITypedList> oder <xref:System.ComponentModel.IListSource>-Schnittstelle implementieren, über einen Standardkonstruktor verfügen. Andernfalls kann Visual Studio das Datenquellen Objekt nicht instanziieren und zeigt einen Fehler an, wenn Sie das Element auf die Entwurfs Oberfläche ziehen.
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Datenquelle für eine SharePoint-Liste
 
-Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über WCF Data Services, damit erstellen eine SharePoint-Datenquelle erstellen eine Datenquelle mit einem Dienst identisch ist. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen. Dies erfordert das SharePoint SDK.
+Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über WCF Data Services verfügbar. Daher ist das Erstellen einer SharePoint-Datenquelle mit dem Erstellen einer Datenquelle aus einem Dienst identisch. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen. Hierfür ist das SharePoint SDK erforderlich.
 
 ## <a name="see-also"></a>Siehe auch
 

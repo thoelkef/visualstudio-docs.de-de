@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb6bbde145317d737afdbf819dba8ee53f805f72
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252967"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639173"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Anpassen des Einfüge-, Update- und Löschverhaltens in Entitätsklassen
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Anpassen des Einfüge-, Aktualisierungs-und Lösch Verhaltens von Entitäts Klassen
 
 Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) stellen eine visuelle Entwurfs Oberfläche zum Erstellen und Bearbeiten von LINQ to SQL Klassen (Entitäts Klassen) bereit, die auf Objekten in einer Datenbank basieren. Mithilfe [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)können Sie die LINQ-Technologie verwenden, um auf SQL-Datenbanken zuzugreifen. Weitere Informationen finden Sie unter [LINQ (Language-Integrated Query, sprachintegrierte Abfrage)](/dotnet/csharp/linq/).
 
-Standardmäßig wird die Logik zum Durchführen von Updates durch die LINQ to SQL-Laufzeit bereitgestellt. Die Laufzeit erstellt die `Insert`Standard `Update`-, `Delete` -und-Anweisungen auf der Grundlage des Schemas der Tabelle (Spaltendefinitionen und Primärschlüssel Informationen). Wenn Sie das Standardverhalten nicht verwenden möchten, können Sie das Updateverhalten konfigurieren und für erforderliche Einfüge-, Update- und Löschvorgänge, die für das Arbeiten mit Daten in der Datenbank notwendig sind, spezielle gespeicherte Prozeduren festlegen. Diese Vorgehensweise ist auch dann sinnvoll, wenn kein Standardverhalten erzeugt wird, z. B. wenn die Entitätsklassen Ansichten zugeordnet sind. Das standardmäßige Updateverhalten kann auch dann überschrieben werden, wenn für die Datenbank der Tabellenzugriff über gespeicherte Prozeduren erforderlich ist. Weitere Informationen finden Sie unter [Anpassen von Vorgängen mithilfe von gespeicherten Prozeduren](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Standardmäßig wird die Logik zum Durchführen von Updates durch die LINQ to SQL-Laufzeit bereitgestellt. Die Laufzeit erstellt basierend auf dem Schema der Tabelle (den Spaltendefinitionen und den Primärschlüssel Informationen) Standard Anweisungen für `Insert`, `Update` und `Delete`. Wenn Sie das Standardverhalten nicht verwenden möchten, können Sie das Updateverhalten konfigurieren und für erforderliche Einfüge-, Update- und Löschvorgänge, die für das Arbeiten mit Daten in der Datenbank notwendig sind, spezielle gespeicherte Prozeduren festlegen. Diese Vorgehensweise ist auch dann sinnvoll, wenn kein Standardverhalten erzeugt wird, z. B. wenn die Entitätsklassen Ansichten zugeordnet sind. Das standardmäßige Updateverhalten kann auch dann überschrieben werden, wenn für die Datenbank der Tabellenzugriff über gespeicherte Prozeduren erforderlich ist. Weitere Informationen finden Sie unter [Anpassen von Vorgängen mithilfe von gespeicherten Prozeduren](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Für diese exemplarische Vorgehensweise ist die Verfügbarkeit der gespeicherten Prozeduren **InsertCustomer**, **UpdateCustomer** und **DeleteCustomer** für die Datenbank „Northwind“ erforderlich.
@@ -33,19 +33,19 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
 - Erstellen Sie eine neue Windows Forms Anwendung, und fügen Sie Ihr eine LINQ to SQL-Datei hinzu.
 
-- Erstellen Sie eine Entitäts Klasse, die der Tabelle Northwind `Customers` zugeordnet ist.
+- Erstellen Sie eine Entitäts Klasse, die der Northwind-`Customers` Tabelle zugeordnet ist.
 
-- Erstellen Sie eine Objektdaten Quelle, die auf `Customer` die LINQ to SQL-Klasse verweist.
+- Erstellen Sie eine Objektdaten Quelle, die auf die LINQ to SQL `Customer`-Klasse verweist.
 
-- Erstellen Sie ein Windows Form, das <xref:System.Windows.Forms.DataGridView> eine enthält, die an `Customer` die-Klasse gebunden ist.
+- Erstellen Sie ein Windows Form, das ein <xref:System.Windows.Forms.DataGridView> enthält, das an die `Customer`-Klasse gebunden ist.
 
 - Implementieren der Speicherfunktion für das Formular.
 
-- Erstellen <xref:System.Data.Linq.DataContext> Sie Methoden, indem Sie dem **O/R-Designer**gespeicherte Prozeduren hinzufügen.
+- Erstellen Sie <xref:System.Data.Linq.DataContext> Methoden, indem Sie dem **O/R-Designer**gespeicherte Prozeduren hinzufügen.
 
-- Konfigurieren Sie `Customer` die-Klasse für die Verwendung gespeicherter Prozeduren, um Einfügungen, Aktualisierungen und Löschungen
+- Konfigurieren Sie die `Customer`-Klasse für die Verwendung gespeicherter Prozeduren, um Einfügungen, Aktualisierungen und Löschungen
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
@@ -71,7 +71,7 @@ Da Sie mit LINQ to SQL Klassenarbeiten und die Daten in einem Windows Form anzei
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>So erstellen Sie ein neues Windows Forms-Anwendungsprojekt, das LINQ to SQL Klassen enthält
 
-1. Wählen Sie in Visual Studio im Menü **Datei** die Option **Neues** > **Projekt**aus.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Option **neu**  > **Projekt**aus.
 
 2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
 
@@ -102,7 +102,7 @@ Erstellen Sie LINQ to SQL Klassen, die Datenbanktabellen zugeordnet sind, indem 
      Eine Entitätsklasse mit dem Namen **Customer** wird erstellt. Sie verfügt über Eigenschaften, die den Spalten in der Tabelle Customers entsprechen. Die Entitätsklasse wird **Customer** (nicht **Customers**) genannt, da sie einem einzelnen Kunden aus der Tabelle „Customers“ entspricht.
 
     > [!NOTE]
-    > Dieses Umbenennungsverhalten wird als *Pluralisierung* bezeichnet. Sie kann im [Dialogfeld Optionen](../ide/reference/options-dialog-box-visual-studio.md)aktiviert oder deaktiviert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren/Deaktivieren der Pluralisierung (O/R-Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Dieses Umbenennungsverhalten wird als *Pluralisierung* bezeichnet. Sie kann im [Dialogfeld Optionen](../ide/reference/options-dialog-box-visual-studio.md)aktiviert oder deaktiviert werden. Weitere Informationen finden Sie unter Gewusst [wie: Aktivieren und Deaktivieren der Pluralisierung (O/R-Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
 3. Klicken Sie im Menü **Erstellen** auf **UpdatingwithSProcsWalkthrough erstellen**, um das Projekt zu erstellen.
 
@@ -133,7 +133,7 @@ Erstellen Sie Steuerelemente, die an Entitäts Klassen gebunden sind, indem Sie 
 
 3. Öffnen Sie **Form1** im Code-Editor.
 
-4. Fügen Sie den folgenden Code in das Formular ein, das dem Formular außerhalb einer bestimmten Methode, aber innerhalb der `Form1` -Klasse entspricht:
+4. Fügen Sie den folgenden Code in das Formular ein, das dem Formular außerhalb einer bestimmten Methode, aber innerhalb der `Form1` Klasse entspricht:
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -232,7 +232,7 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 19. Klicken Sie auf **OK**.
 
 > [!NOTE]
-> Obwohl es für diese spezielle Exemplarische Vorgehensweise kein Problem ist, sollten Sie beachten, dass LINQ to SQL von der Datenbank generierte Werte automatisch für die Identitäts-(automatische Inkrement-), ROWGUIDCOL-(Daten Bank generierte GUID) und Zeitstempel-Spalten bei Einfügungen und Zeitstempel-Spalten verarbeitet. Updates. Datenbankgenerierte Werte in anderen Spaltentypen führen unerwartet zu einem NULL-Wert. Um die Daten Bank generierten Werte zurückzugeben, sollten Sie manuell <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> auf `true` und <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> auf einen der folgenden Werte festlegen: " [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)", " [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)" oder " [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)".
+> Obwohl es für diese spezielle Exemplarische Vorgehensweise kein Problem ist, sollten Sie beachten, dass LINQ to SQL von der Datenbank generierte Werte automatisch für die Identitäts-(automatische Inkrement-), ROWGUIDCOL-(Daten Bank generierte GUID) und Zeitstempel-Spalten bei Einfügungen und Zeitstempel-Spalten verarbeitet. Updates. Datenbankgenerierte Werte in anderen Spaltentypen führen unerwartet zu einem NULL-Wert. Um die Daten Bank generierten Werte zurückzugeben, sollten Sie <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> manuell auf `true` festlegen und auf eine der folgenden <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> festlegen: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)oder [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="test-the-application"></a>Testen der Anwendung
 
@@ -273,6 +273,6 @@ Abhängig von den Anforderungen Ihrer Anwendung können Sie nach der Erstellung 
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext-Methoden](../data-tools/datacontext-methods-o-r-designer.md)
-- [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Gewusst wie: Zuweisen von gespeicherten Prozeduren zum Ausführen von Aktualisierungen, Einfügungen und Löschungen](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [LINQ to SQL-Abfragen](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie zum Erstellen von Beziehungen zwischen Datasets DataRelation
+title: Verwenden von "DataRelations" zum Erstellen von Beziehungen zwischen Datasets
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,42 +10,42 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 653a9b589e68c326fc40a94ed0fa3ab7e49acb8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567649"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648255"
 ---
 # <a name="create-relationships-between-datasets"></a>Erstellen von Beziehungen zwischen Datasets
-Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation> Objekte aus, um eine über-/unterordnungsbeziehung zwischen den Tabellen und verknüpften Datensätze von den anderen zurück. Hinzufügen verknüpfte Tabellen zu Datasets mithilfe der **Assistenten zur Datenquellenkonfiguration**, oder die **Dataset-Designer**, erstellt und konfiguriert die <xref:System.Data.DataRelation> -Objekt für Sie.
+Datasets, die Verwandte Datentabellen enthalten, verwenden <xref:System.Data.DataRelation>-Objekte, um eine über-/Unterordnungsbeziehung zwischen den Tabellen darzustellen und verknüpfte Datensätze voneinander zurückzugeben. Durch das Hinzufügen verknüpfter Tabellen zu Datasets mithilfe des **Assistenten zum Konfigurieren von Datenquellen**oder des **DataSet-Designer**wird das <xref:System.Data.DataRelation> Objekt erstellt und konfiguriert.
 
-Die <xref:System.Data.DataRelation> Objekt erfüllt zwei Funktionen:
+Das <xref:System.Data.DataRelation>-Objekt führt zwei Funktionen aus:
 
-- Verfügbar kann gemacht werden die Datensätze, die im Zusammenhang mit einem Datensatz, mit denen, dem Sie arbeiten werden. Wenn Sie sich auf einen übergeordneten Datensatz untergeordnete Datensätze bietet (<xref:System.Data.DataRow.GetChildRows%2A>) und einen übergeordneten Datensatz aus, wenn Sie mit einem untergeordneten Datensatz arbeiten (<xref:System.Data.DataRow.GetParentRow%2A>).
+- Sie kann die Datensätze im Zusammenhang mit einem Datensatz verfügbar machen, mit dem Sie arbeiten. Sie stellt untergeordnete Datensätze bereit, wenn Sie sich in einem übergeordneten Datensatz (<xref:System.Data.DataRow.GetChildRows%2A>) und einem übergeordneten Datensatz befinden, wenn Sie mit einem untergeordneten Datensatz (<xref:System.Data.DataRow.GetParentRow%2A>) arbeiten.
 
-- Sie können erzwingen, dass Einschränkungen für die referenzielle Integrität, z. B. verknüpfte untergeordnete Datensätze löschen, wenn Sie einen übergeordneten Datensatz löschen.
+- Sie kann Einschränkungen für die referenzielle Integrität erzwingen, z. b. das Löschen verwandter untergeordneter Datensätze, wenn Sie einen übergeordneten Datensatz löschen.
 
-Es ist wichtig zu verstehen, den Unterschied zwischen einem echten Join und die Funktion der ein <xref:System.Data.DataRelation> Objekt. Datensätze sind in einem Join "true" stammt aus über- und untergeordneten Tabellen und fügen Sie in einem flachen Recordset. Bei Verwendung einer <xref:System.Data.DataRelation> Objekt ist, wird kein neues Recordset wird erstellt. Stattdessen DataRelation verfolgt die Beziehung zwischen Tabellen und hält über- und untergeordneten Datensätzen synchron.
+Es ist wichtig, den Unterschied zwischen einem echten Join und der Funktion eines <xref:System.Data.DataRelation> Objekts zu verstehen. Bei einem echten Join werden Datensätze aus übergeordneten und untergeordneten Tabellen entnommen und in ein einzelnes, flaches Recordset eingefügt. Wenn Sie ein <xref:System.Data.DataRelation> Objekt verwenden, wird kein neues Recordset erstellt. Stattdessen verfolgt die DataRelations die Beziehung zwischen Tabellen nach und speichert übergeordnete und untergeordnete Datensätze synchron.
 
-## <a name="datarelation-objects-and-constraints"></a>DataRelation-Objekte und -Einschränkungen
-Ein <xref:System.Data.DataRelation> Objekt wird auch zum Erstellen und erzwingen die folgenden Einschränkungen:
+## <a name="datarelation-objects-and-constraints"></a>DataRelations-Objekte und-Einschränkungen
+Ein <xref:System.Data.DataRelation>-Objekt wird auch zum Erstellen und erzwingen der folgenden Einschränkungen verwendet:
 
-- Eine unique-Einschränkung, dadurch wird sichergestellt, dass eine Spalte in der Tabelle keine Duplikate enthält.
+- Eine Unique-Einschränkung, die sicherstellt, dass eine Spalte in der Tabelle keine Duplikate enthält.
 
-- Foreign Key-Einschränkung, die verwendet werden kann, um die Wahrung der referenziellen Integrität zwischen einer über- und untergeordnete Tabelle in einem Dataset.
+- Eine FOREIGN KEY-Einschränkung, die zur Aufrechterhaltung der referenziellen Integrität zwischen einer übergeordneten und untergeordneten Tabelle in einem DataSet verwendet werden kann.
 
-Einschränkungen, die Sie an einer <xref:System.Data.DataRelation> Objekt werden implementiert, indem automatisch die entsprechenden Objekte erstellen oder Festlegen von Eigenschaften. Bei der Erstellung einer foreign Key-Einschränkung mithilfe der <xref:System.Data.DataRelation> -Objekt, das Instanzen von der <xref:System.Data.ForeignKeyConstraint> Klasse hinzugefügt werden, um die <xref:System.Data.DataRelation> des Objekts <xref:System.Data.DataRelation.ChildKeyConstraint%2A> Eigenschaft.
+Einschränkungen, die Sie in einem <xref:System.Data.DataRelation> Objekt angeben, werden implementiert, indem automatisch geeignete Objekte erstellt oder Eigenschaften festgelegt werden. Wenn Sie eine FOREIGN KEY-Einschränkung mit dem <xref:System.Data.DataRelation>-Objekt erstellen, werden Instanzen der <xref:System.Data.ForeignKeyConstraint>-Klasse der <xref:System.Data.DataRelation.ChildKeyConstraint%2A>-Eigenschaft des <xref:System.Data.DataRelation>-Objekts hinzugefügt.
 
-Implementiert eine unique-Einschränkung entweder einfach die <xref:System.Data.DataColumn.Unique%2A> Eigenschaft einer Datenspalte auf `true` oder durch das Hinzufügen einer Instanz von der <xref:System.Data.UniqueConstraint> -Klasse auf die <xref:System.Data.DataRelation> des Objekts <xref:System.Data.DataRelation.ParentKeyConstraint%2A> Eigenschaft. Weitere Informationen zum Anhalten von Einschränkungen in einem Dataset, finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
+Eine Unique-Einschränkung wird entweder durch einfaches Festlegen der <xref:System.Data.DataColumn.Unique%2A>-Eigenschaft einer Datenspalte auf `true` oder durch Hinzufügen einer Instanz der <xref:System.Data.UniqueConstraint>-Klasse zur <xref:System.Data.DataRelation.ParentKeyConstraint%2A>-Eigenschaft des <xref:System.Data.DataRelation> Objekts implementiert. Informationen zum Anhalten von Einschränkungen in einem Dataset finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen eines Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
 
 ### <a name="referential-integrity-rules"></a>Regeln für die referenzielle Integrität
-Im Rahmen der foreign Key-Einschränkung können Sie Regeln für die referenzielle Integrität angeben, die an drei Punkten angewendet werden:
+Als Teil der FOREIGN KEY-Einschränkung können Sie referenzielle Integritäts Regeln angeben, die an drei Punkten angewendet werden:
 
 - Wenn ein übergeordneter Datensatz aktualisiert wird
 
@@ -53,56 +53,56 @@ Im Rahmen der foreign Key-Einschränkung können Sie Regeln für die referenziel
 
 - Wenn eine Änderung akzeptiert oder abgelehnt wird
 
-Die Regeln, die Sie vornehmen können, werden angegeben, der <xref:System.Data.Rule> Enumeration und sind in der folgenden Tabelle aufgeführt.
+Die Regeln, die Sie vornehmen können, werden in der <xref:System.Data.Rule>-Enumeration angegeben und sind in der folgenden Tabelle aufgeführt.
 
-|Regel für Foreign Key-Einschränkung|Aktion|
+|Foreign Key-Einschränkungs Regel|Aktion|
 | - |------------|
-|<xref:System.Data.Rule.Cascade>|Die Änderung (Update- oder Delete) an den übergeordneten Datensatz wird auch in verwandten Datensätze in der untergeordneten Tabelle vorgenommen.|
-|<xref:System.Data.Rule.SetNull>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird festgelegt, um <xref:System.DBNull>. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" bleiben – d. h., sie haben keine Beziehung zur übergeordneten Datensätze. **Hinweis**: Mit dieser Regel kann dazu führen, dass ungültige Daten in der untergeordneten Tabelle.|
-|<xref:System.Data.Rule.SetDefault>|Der Fremdschlüssel in die zugehörigen untergeordneten Datensätze auf den Standardwert festgelegt ist (wie von der Spaltenwerts festgelegt <xref:System.Data.DataColumn.DefaultValue%2A> Eigenschaft).|
-|<xref:System.Data.Rule.None>|Verknüpfte untergeordnete Datensätze wird nicht geändert. Mit dieser Einstellung können untergeordnete Datensätze Verweise auf ungültige übergeordnete Datensätze enthalten.|
+|<xref:System.Data.Rule.Cascade>|Die Änderung (aktualisieren oder löschen), die am übergeordneten Datensatz vorgenommen wurde, erfolgt auch in verknüpften Datensätzen in der untergeordneten Tabelle.|
+|<xref:System.Data.Rule.SetNull>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird auf <xref:System.DBNull> festgelegt. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" verbleiben, d. –., Sie haben keine Beziehung zu übergeordneten Datensätzen. **Hinweis:** Die Verwendung dieser Regel kann zu ungültigen Daten in der untergeordneten Tabelle führen.|
+|<xref:System.Data.Rule.SetDefault>|Der Fremdschlüssel in den zugehörigen untergeordneten Datensätzen wird auf seinen Standardwert festgelegt (wie durch die <xref:System.Data.DataColumn.DefaultValue%2A>-Eigenschaft der Spalte festgelegt).|
+|<xref:System.Data.Rule.None>|An verwandten untergeordneten Datensätzen wird keine Änderung vorgenommen. Mit dieser Einstellung können untergeordnete Datensätze Verweise auf ungültige übergeordnete Datensätze enthalten.|
 
-Weitere Informationen zu Updates in der Dataset-Tabellen finden Sie unter [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md).
+Weitere Informationen zu Updates in Dataset-Tabellen finden [Sie unter Speichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md).
 
-### <a name="constraint-only-relations"></a>Einschränkung nur Beziehungen
-Bei der Erstellung einer <xref:System.Data.DataRelation> Objekt, Sie haben die Möglichkeit, anzugeben, dass die Beziehung werden nur verwendet, um Einschränkungen zu erzwingen – d. h. es nicht auch verwendet werden verknüpfte Datensätze auf. Sie können diese Option verwenden, um ein Dataset zu generieren, das ist etwas effizienter und weniger als eine mit der Zugriffsfunktion-Methoden enthält. Allerdings werden Sie nicht verknüpfte Datensätze zugreifen können. Z. B. eine Einschränkung nur Beziehung verhindert, dass Sie einen übergeordneten Datensatz, der immer untergeordnete Datensätze noch löschen, und kann nicht der Zugriff auf die untergeordneten Datensätze über das übergeordnete Element.
+### <a name="constraint-only-relations"></a>Nur einschränkende Beziehungen
+Wenn Sie ein <xref:System.Data.DataRelation> Objekt erstellen, können Sie angeben, dass die Beziehung nur verwendet werden soll, um Einschränkungen zu erzwingen, d. –., dass Sie nicht auch für den Zugriff auf verwandte Datensätze verwendet wird. Sie können diese Option verwenden, um ein DataSet zu generieren, das etwas effizienter ist und weniger Methoden als eine mit der Funktion für verbundene Datensätze enthält. Allerdings sind Sie nicht in der Lage, auf zugehörige Datensätze zuzugreifen. Beispielsweise verhindert eine Einschränkung nur Einschränkung, dass ein übergeordneter Datensatz gelöscht wird, der noch über untergeordnete Datensätze verfügt, und Sie können nicht über das übergeordnete Element auf die untergeordneten Datensätze zugreifen.
 
-## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Erstellen manuell eine datenbeziehung im Dataset-Designer
-Wenn Sie Tabellen mit den Daten-Entwurfstools in Visual Studio erstellen, werden Beziehungen automatisch erstellt, wenn die Informationen aus der Quelle Ihrer Daten gesammelt werden kann. Wenn Sie manuell hinzufügen, von Datentabellen aus der **DataSet** auf der Registerkarte die **Toolbox**, Sie möglicherweise die Beziehung manuell zu erstellen. Weitere Informationen zum Erstellen <xref:System.Data.DataRelation> Objekte programmgesteuert, finden Sie unter [Hinzufügen von "DataRelations"](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
+## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Manuelles Erstellen einer Daten Beziehung im DataSet-Designer
+Wenn Sie Datentabellen mit den Daten Entwurfs Tools in Visual Studio erstellen, werden die Beziehungen automatisch erstellt, wenn die Informationen aus der Datenquelle erfasst werden können. Wenn Sie Datentabellen manuell von der Registerkarte **DataSet** der **Toolbox**hinzufügen, müssen Sie die Beziehung möglicherweise manuell erstellen. Informationen zum programmgesteuerten Erstellen von <xref:System.Data.DataRelation> Objekten finden Sie unter [Hinzufügen von DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)-Objekten.
 
-Beziehungen zwischen Tabellen angezeigt werden, als Zeilen in der **Dataset-Designer**, durch ein Symbol Schlüssel und unendlich, die mit der 1: n Aspekt der Beziehung. Standardmäßig wird der Name der Beziehung nicht auf der Entwurfsoberfläche angezeigt.
+Beziehungen zwischen Datentabellen werden in der **DataSet-Designer**als Zeilen angezeigt, wobei ein Schlüssel-und Unendlichkeits Symbol den 1: n-Aspekt der Beziehung darstellt. Standardmäßig wird der Name der Beziehung nicht auf der Entwurfs Oberfläche angezeigt.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-a-relationship-between-two-data-tables"></a>Um eine Beziehung zwischen zwei Datentabellen zu erstellen.
+#### <a name="to-create-a-relationship-between-two-data-tables"></a>So erstellen Sie eine Beziehung zwischen zwei Datentabellen
 
-1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Datasets in der DataSet-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2. Ziehen Sie eine **Beziehung** -Objekt aus der **DataSet** Toolbox auf die untergeordnete Datentabelle in der Beziehung.
+2. Ziehen Sie ein **Beziehungs** Objekt aus der **DataSet** -Toolbox auf die untergeordnete Datentabelle in der Beziehung.
 
-     Die **Beziehung** Dialogfeld geöffnet wird, füllen die **untergeordnete Tabelle** Feld mit der Tabelle, die Sie gezogen haben die **Beziehung** -Objekt auf.
+     Das Dialogfeld **Beziehung** wird geöffnet, in dem Sie das untergeordnete **Tabellen** Feld mit der Tabelle auffüllen, auf die Sie das **Beziehungs** Objekt gezogen haben.
 
-3. Wählen Sie die übergeordnete Tabelle aus der **übergeordnete Tabelle** Feld. Die übergeordnete Tabelle enthält die Datensätze auf der Seite "1" einer 1: n Beziehung.
+3. Wählen Sie die übergeordnete Tabelle aus dem Feld über **geordnete Tabelle** aus. Die übergeordnete Tabelle enthält Datensätze auf der 1-Seite einer 1: n-Beziehung.
 
-4. Stellen Sie sicher, dass die richtige untergeordnete Tabelle, in angezeigt wird der **untergeordnete Tabelle** Feld. Die untergeordnete Tabelle enthält die Datensätze auf der Seite "many" einer 1: n Beziehung.
+4. Vergewissern Sie sich, dass im Feld untergeordnete **Tabelle** die richtige untergeordnete Tabelle angezeigt wird. Die untergeordnete Tabelle enthält Datensätze auf der Seite "Many" einer 1: n-Beziehung.
 
-5. Geben Sie einen Namen für die Beziehung in der **Namen** ein, oder übernehmen Sie den Standardnamen, die basierend auf den ausgewählten Tabellen. Dies ist der Name des eigentlichen <xref:System.Data.DataRelation> -Objekt im Code.
+5. Geben Sie im Feld **Name** einen Namen für die Beziehung ein, oder belassen Sie den Standardnamen auf der Grundlage der ausgewählten Tabellen. Dies ist der Name des eigentlichen <xref:System.Data.DataRelation> Objekts im Code.
 
-6. Wählen Sie die Spalten, die Tabellen zu, in verknüpfen, der **Schlüsselspalten** und **Fremdschlüsselspalten** aufgeführt.
+6. Wählen Sie die Spalten aus, die die Tabellen in den Listen **Schlüssel Spalten** und **Fremdschlüssel Spalten** verknüpfen.
 
-7. Wählen Sie, ob Sie eine Beziehung, Einschränkung oder beides zu erstellen.
+7. Wählen Sie aus, ob eine Beziehung, eine Einschränkung oder beides erstellt werden soll.
 
-8. Aktivieren oder deaktivieren Sie die **geschachtelte Beziehung** Feld. Wählen diese Option wird die <xref:System.Data.DataRelation.Nested%2A> Eigenschaft `true`, und die untergeordneten Zeilen der Beziehung, die innerhalb der übergeordneten Spalte geschachtelt werden, wenn diese Zeilen werden als XML-Daten geschrieben oder mit synchronisiert <xref:System.Xml.XmlDataDocument>. Weitere Informationen finden Sie unter [Schachteln von DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
+8. Aktivieren bzw. deaktivieren Sie das Feld für die Feld- **Beziehung** . Wenn Sie diese Option auswählen, wird die <xref:System.Data.DataRelation.Nested%2A>-Eigenschaft auf `true` festgelegt. Dadurch werden die untergeordneten Zeilen der Beziehung innerhalb der übergeordneten Spalte geschachtelt, wenn diese Zeilen als XML-Daten geschrieben oder mit <xref:System.Xml.XmlDataDocument> synchronisiert werden. Weitere Informationen finden Sie unter Schachteln von [DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)-Elementen.
 
-9. Legen Sie die Regeln erzwungen werden, wenn Sie Änderungen an Datensätzen in diesen Tabellen vornehmen. Weitere Informationen finden Sie unter <xref:System.Data.Rule>.
+9. Legen Sie die Regeln fest, die erzwungen werden sollen, wenn Sie Änderungen an Datensätzen in diesen Tabellen vornehmen. Weitere Informationen finden Sie unter <xref:System.Data.Rule>.
 
-10. Klicken Sie auf **OK** zum Erstellen der Beziehung. Eine Beziehungslinie wird auf der zwischen den beiden Tabellen-Designer angezeigt.
+10. Klicken Sie auf **OK** , um die Beziehung zu erstellen. Im Designer wird zwischen den beiden Tabellen eine Beziehungs Linie angezeigt.
 
-#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Um einen Beziehungsnamen im Dataset-Designer anzuzeigen.
+#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>So zeigen Sie einen Beziehungs Namen im DataSet-Designer an
 
-1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Datasets in der DataSet-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2. Von der **Daten** , wählen Sie im Menü der **Beziehungsbezeichnungen anzeigen** Befehl zur Anzeige der Name der Beziehung. Deaktivieren Sie diesen Befehl zum Ausblenden der Name der Beziehung.
+2. Wählen Sie im Menü **Daten** den Befehl **Relation Labels anzeigen** aus, um den Beziehungs Namen anzuzeigen. Löschen Sie diesen Befehl, um den Beziehungs Namen auszublenden.
 
 ## <a name="see-also"></a>Siehe auch
 

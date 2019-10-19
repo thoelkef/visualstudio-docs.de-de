@@ -1,5 +1,5 @@
 ---
-title: 'CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen | Microsoft-Dokumentation'
+title: 'CA1725: Parameter Namen sollten mit der Basis Deklaration identisch sein | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - ParameterNamesShouldMatchBaseDeclaration
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e97431b46640fb8241d6bde80d09d38084650be8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 128069bb24dfc8b1c11963e33c9541701b0eea15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143172"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653738"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen.
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Parameternamen sollten mit der Basisdeklaration übereinstimmen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,13 +33,13 @@ ms.locfileid: "68143172"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Der Name eines Parameters in einer Außerkraftsetzung extern sichtbare Methode entspricht nicht den Namen des Parameters in der Basisdeklaration der Methode oder den Namen des Parameters in der Schnittstellendeklaration der Methode.
+ Der Name eines Parameters in einer extern sichtbaren Methoden Überschreibung stimmt nicht mit dem Namen des Parameters in der Basis Deklaration der Methode oder mit dem Namen des Parameters in der Schnittstellen Deklaration der Methode.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Die konsistente Benennung von Parametern in einer Überschreibungshierarchie erhöht die Verwendbarkeit von Methodenüberschreibungen. Ein Parametername in einer abgeleiteten Methode, der vom Namen in der Basisdeklaration abweicht, kann zu Unklarheiten dahingehend führen, ob es sich bei der Methode um eine Überschreibung der Basismethode oder eine neue Überladung der Methode handelt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, benennen Sie die Parameter, um mit der der Basisdeklaration übereinstimmen. Die Lösung ist eine wichtige Änderung für COM sichtbare Methoden.
+ Um einen Verstoß gegen diese Regel zu beheben, benennen Sie den Parameter so um, dass er der Basis Deklaration entspricht. Die Korrektur ist eine Breaking Change für sichtbare com-Methoden.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel, mit Ausnahme von COM-sichtbare Methoden in Bibliotheken, die zuvor veröffentlicht haben.
+ Unterdrücken Sie keine Warnung dieser Regel, außer für COM-sichtbare Methoden in Bibliotheken, die zuvor ausgeliefert wurden.

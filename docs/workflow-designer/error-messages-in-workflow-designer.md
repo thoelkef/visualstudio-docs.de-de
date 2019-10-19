@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Presentation.ErrorActivity.UI
 - System.Activities.Presentation.View.ErrorView.UI
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 1406802f85c755d4dab25e000843a995be252d0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254798"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650500"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Fehlermeldungen im Workflow-Designer
 
@@ -35,7 +35,7 @@ Fehler in Workflow-Designer in den folgenden Situationen auftreten:
 
 4. Die XAML-Datei enthält Fehler, die bewirken, dass der Workflow nicht geladen werden kann.
 
-Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Das Entwickeln des Workflows ist erfolgreich, <xref:System.Activities.InvalidWorkflowException> aber eine wird zur Laufzeit ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
+Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Der Workflow wird erfolgreich aufgebaut, aber ein <xref:System.Activities.InvalidWorkflowException> wird zur Laufzeit ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
 
 Wenn in Visual Studio ein Workflow geladen wird, werden die Fehler in der **Fehlerliste**angezeigt. Um zu der Aktivität zu navigieren, die die Fehlerquelle ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
 

@@ -1,21 +1,21 @@
 ---
-title: 'Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas'
+title: 'Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918567"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645980"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 
 Die Funktion **Beispiel-XML generieren** generiert eine XML-Beispieldatei, die auf der XML-Schema Datei (XSD) basiert.
 
@@ -41,9 +41,9 @@ Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, w
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>So generieren Sie ein XML-Instanzdokument auf Grundlage der XSD-Datei
 
-1. Befolgen Sie die Schritte [unter Gewusst wie: Erstellen und bearbeiten Sie eine XSD-](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)Schema Datei.
+1. Befolgen Sie die Schritte unter Gewusst [wie: Erstellen und Bearbeiten einer XSD-Schema Datei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Klicken Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)mit der `PurchaseOrder` rechten Maustaste auf das globale Element. Wählen Sie **Beispiel-XML generieren**aus.
+2. Klicken Sie im [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)mit der rechten Maustaste auf das `PurchaseOrder` globale Element. Wählen Sie **Beispiel-XML generieren**aus.
 
      Wenn Sie diese Option auswählen, wird PurchaseOrder angegeben. die *XML* -Datei mit dem folgenden XML-Beispiel Inhalt wird generiert und im XML-Editor geöffnet:
 

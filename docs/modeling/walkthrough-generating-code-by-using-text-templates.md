@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934326"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666932"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 
@@ -28,7 +28,7 @@ Der System.Xml-Namespace stellt umfassende Tools für das Laden eines XML-Dokume
 In diesem Beispielprojekt liest eine Vorlage eine Beispiel-XML-Datei und generiert Klassen, die jedem Knotentyp entsprechen. Bei handgeschriebenem Code können Sie diese Klassen verwenden, um in der XML-Datei zu navigieren. Sie können Ihre Anwendung auch mit anderen Dateien ausführen, die die gleichen Knotentypen verwenden. Die XML-Beispieldatei dient dazu, Beispiele für alle Knotentypen bereitzustellen, für die Ihre Anwendung gedacht ist.
 
 > [!NOTE]
-> Die Anwendung [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), die in Visual Studio enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
+> Die [XSD. exe](http://go.microsoft.com/fwlink/?LinkId=178765)-Anwendung, die in Visual Studio enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.
 
 Hier ist die Beispieldatei:
 
@@ -73,7 +73,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-In der stark typisierten Version führt eine Änderung an das XML-Schema Änderungen auf die Klassen. Der Compiler hebt hervor, die Teile des Anwendungscodes, die geändert werden muss. In der nicht typisierten Version, die allgemeinen XML-Code verwendet, gibt es keine solche Unterstützung.
+In der stark typisierten Version führt eine Änderung des XML-Schemas zu Änderungen an den Klassen. Der Compiler hebt die Teile des Anwendungs Codes hervor, die geändert werden müssen. In der nicht typisierten Version, die allgemeinen XML-Code verwendet, gibt es keine solche Unterstützung.
 
 In diesem Projekt wird eine einzelne Vorlagendatei verwendet, um die Klassen zu generieren, die die typisierte Version ermöglichen.
 
@@ -103,7 +103,7 @@ Die Datei sollte Teil des Projekts sein, damit die Vorlage sie lesen kann, aber 
 
 ### <a name="add-a-test-code-file"></a>Fügen Sie eine Testcodedatei hinzu
 
-Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Zum Beispiel:
+Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Beispiel:
 
 ```csharp
 using System;
@@ -129,7 +129,7 @@ Ein umfassender Test könnte die Ausgabe dieser Testfunktion im Vergleich zu dem
 
 ### <a name="add-a-text-template-file"></a>Fügen Sie eine Textvorlagendatei hinzu
 
-Fügen Sie eine Textvorlagendatei hinzu, und legen Sie die Ausgabe-Erweiterung auf *cs*.
+Fügen Sie eine Textvorlagen Datei hinzu, und legen Sie die Ausgabe Erweiterung auf " *. cs*" fest.
 
 1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.
 
@@ -140,7 +140,7 @@ Fügen Sie eine Textvorlagendatei hinzu, und legen Sie die Ausgabe-Erweiterung a
 
 3. Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.
 
-     Diese Änderung kann den Vorlagencode für den Zugriff auf die Visual Studio-Dienste.
+     Durch diese Änderung kann der Vorlagen Code auf die Visual Studio-Dienste zugreifen.
 
 4. Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.
 
@@ -157,7 +157,7 @@ Während Sie die Vorlagendatei entwickeln, ordnen Sie der Einfachheit halber die
 
 Änderungen, die Sie direkt in der generierten Datei ausführen, gehen verloren, sobald Sie die Vorlagendatei speichern. Sie sollten daher entweder vermeiden, die generierte Datei zu bearbeiten, oder sie nur für kurze Experimente bearbeiten. Manchmal ist es sinnvoll, ein kurzes Codefragment in der generierten Datei zu testen, wo IntelliSense in Betrieb ist, und dann in die Vorlagendatei zu kopieren.
 
-## <a name="develop-the-text-template"></a>Entwickeln der Textvorlage
+## <a name="develop-the-text-template"></a>Entwickeln der Text Vorlage
 
 Nach der Empfehlung zu agiler Entwicklung werden wir die Vorlage in kleinen Schritten entwickeln und in jedem Schritt einige Fehler bereinigen, bis der Testcode korrekt kompiliert und ausgeführt wird.
 
@@ -258,7 +258,7 @@ Wenn Sie Klassennamen bevorzugen, die mit einem Großbuchstaben beginnen, könne
 #>
 ```
 
-In dieser Phase wird die generierte *cs* -Datei enthält die folgenden Deklarationen:
+In dieser Phase enthält die generierte *CS* -Datei die folgenden Deklarationen:
 
 ```csharp
 public partial class Catalog {}
@@ -268,9 +268,9 @@ public partial class Song {}
 
 Weitere Informationen, wie Eigenschaften für die untergeordneten Knoten, Attribute und innerer Text können auf gleiche Weise hinzugefügt werden.
 
-### <a name="access-the-visual-studio-api"></a>Zugriff auf die Visual Studio-API
+### <a name="access-the-visual-studio-api"></a>Zugreifen auf die Visual Studio-API
 
-Festlegen der `hostspecific` Attribut der `<#@template#>` -Direktive ermöglicht die Verwendung der Vorlage, um den Zugriff auf die Visual Studio-API zu erhalten. Die Vorlage kann dies verwenden, um den Speicherort der Projektdateien zu erhalten, um zu vermeiden, dass ein absoluter Dateipfad im Vorlagencode enthalten ist.
+Das Festlegen des `hostspecific`-Attributs der `<#@template#>` Direktive ermöglicht der Vorlage den Zugriff auf die Visual Studio-API. Die Vorlage kann dies verwenden, um den Speicherort der Projektdateien zu erhalten, um zu vermeiden, dass ein absoluter Dateipfad im Vorlagencode enthalten ist.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -284,7 +284,7 @@ XmlDocument doc = new XmlDocument();
 doc.Load(System.IO.Path.Combine(dte.ActiveDocument.Path, "exampleXml.xml"));
 ```
 
-## <a name="complete-the-text-template"></a>Führen Sie die Textvorlage
+## <a name="complete-the-text-template"></a>Text Vorlage vervollständigen
 
 Der folgende Vorlageninhalt generiert Code, mit dem der Testcode kompiliert und ausgeführt werden kann.
 
@@ -380,7 +380,7 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
 #>
 ```
 
-### <a name="run-the-test-program"></a>Führen Sie das Testprogramm
+### <a name="run-the-test-program"></a>Ausführen des Testprogramms
 
 Im Hauptfenster der Konsolenanwendung führen die folgenden Zeilen die Testmethode aus. Drücken Sie F5, um das Programm im Debugmodus auszuführen:
 
@@ -400,15 +400,15 @@ namespace MyProject
 }
 ```
 
-### <a name="write-and-update-the-application"></a>Schreiben Sie und aktualisieren Sie die Anwendung
+### <a name="write-and-update-the-application"></a>Schreiben und Aktualisieren der Anwendung
 
 Die Anwendung kann jetzt im stark typisierten Stil geschrieben werden, mit den generierten Klassen anstelle von generischem XML-Code.
 
 Wenn sich das XML-Schema ändert, können neue Klassen leicht generiert werden. Der Compiler teilt dem Entwickler mit, wo der Anwendungscode aktualisiert werden muss.
 
-Um die Klassen neu generieren, wenn die Beispiel-XML-Datei geändert wird, klicken Sie auf **alle Vorlagen transformieren** in die **Projektmappen-Explorer** Symbolleiste.
+Um die Klassen neu zu generieren, wenn die XML-Beispieldatei geändert wird, klicken Sie auf der Symbolleiste **Projektmappen-Explorer** auf **alle Vorlagen transformieren** .
 
-## <a name="conclusion"></a>Schlussbemerkung
+## <a name="conclusion"></a>Schlussfolgerung
 
 In dieser exemplarischen Vorgehensweise werden verschiedene Techniken und Vorteile der Codegenerierung veranschaulicht:
 
@@ -424,7 +424,7 @@ In dieser exemplarischen Vorgehensweise werden verschiedene Techniken und Vortei
 
 In dieser exemplarischen Vorgehensweise wird der Programmcode eigentlich aus einer Instanz des Modells generiert, einem repräsentativen Beispiel der XML-Dateien, die die Anwendung verarbeitet. In einem formaleren Ansatz würde das XML-Schema in der Form einer XSD-Datei oder einer domänenspezifischen Sprachdefinition als Vorgabe für die Vorlage dienen. Dieser Ansatz würde es für die Vorlage einfacher machen, Merkmale wie die Multiplizität einer Beziehung zu ermitteln.
 
-## <a name="troubleshoot-the-text-template"></a>Die Textvorlage
+## <a name="troubleshoot-the-text-template"></a>Problembehandlung bei der Text Vorlage
 
 Wenn Sie Vorlagentransformations- oder Kompilierungsfehler in der **Fehlerliste** sehen oder die Ausgabedatei nicht korrekt generiert wurde, können Sie die Textvorlage mit den unter [Generieren von Dateien mit dem Hilfsprogramm „TextTransform“](../modeling/generating-files-with-the-texttransform-utility.md) beschriebenen Techniken entsprechend korrigieren.
 

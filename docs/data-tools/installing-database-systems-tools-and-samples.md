@@ -1,5 +1,5 @@
 ---
-title: Datenbank-Kompatibilitätsgrad
+title: Daten Bank Kompatibilität
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,51 +7,51 @@ helpviewer_keywords:
 - database compatibility
 - databases for Visual Studio
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9115e675c43e04496712784371ac2301ef7c2f8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94ce946f7c14706b57618f3d9aeb90cc207fcf04
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566689"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648303"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Kompatible Datenbanksysteme für Visual Studio
 
-Um eine Anwendung verbundenen Daten in Visual Studio zu entwickeln, Sie in der Regel das Datenbanksystem auf Ihrem lokalen Entwicklungscomputer installieren und die Anwendung und Datenbank in einer produktionsumgebung dann bereitstellen, wenn sie bereit sind. Visual Studio installiert SQL Server Express LocalDB auf Ihrem Computer als Teil der **datenspeicherung und-Verarbeitung** arbeitsauslastung. Diese LocalDB-Instanz ist nützlich für die Entwicklung von Daten verbundenen Anwendungen, schnell und einfach.
+Zum Entwickeln einer mit einem Daten verbundenen Anwendung in Visual Studio installieren Sie in der Regel das Datenbanksystem auf dem lokalen Entwicklungs Computer und stellen die Anwendung und die Datenbank anschließend in einer Produktionsumgebung bereit, wenn Sie bereit sind. Visual Studio installiert SQL Server Express localdb auf dem Computer im Rahmen der **Datenspeicher-und Verarbeitungs** Arbeitsauslastung. Diese localdb-Instanz ist nützlich für die schnelle und einfache Entwicklung von Anwendungen, die mit Daten verbunden sind.
 
-Für ein Datenbanksystem von .NET-Anwendungen zugegriffen werden und in Visual Studio Data Tools-Fenster sichtbar ist muss er einen ADO.NET-Anbieter für Daten verfügen. Ein Anbieter muss speziell Entity Framework unterstützen, wenn Sie Datenmodelle in Ihrer .NET-Anwendung verwenden möchten. Viele Anbieter werden über den NuGet-Paket-Manager oder über Visual Studio Marketplace angeboten werden.
+Damit ein Datenbanksystem von .NET-Anwendungen zugänglich ist und in Visual Studio Data Tools-Fenstern sichtbar ist, muss es über einen ADO.NET-Datenanbieter verfügen. Ein Anbieter muss Entity Framework speziell unterstützen, wenn Sie die Verwendung von Entity Data Models in der .NET-Anwendung planen. Viele Anbieter werden über den nuget-Paket-Manager oder über die Visual Studio Marketplace angeboten.
 
-Wenn Sie Azure Storage-APIs verwenden, installieren Sie die Azure-Speicher-Emulatoren auf dem lokalen Computer während der Entwicklung, um Gebühren zu vermeiden, bis Sie bereit sind, für die Produktion bereitstellen. Weitere Informationen finden Sie unter [Verwenden des Azure-Speicheremulators für Entwicklung und Tests](/azure/storage/common/storage-use-emulator).
+Wenn Sie Azure Storage-APIs verwenden, installieren Sie die Azure-Speicher Emulatoren auf dem lokalen Computer während der Entwicklung, um Kosten zu vermeiden, bis Sie bereit für die Bereitstellung in der Produktionsumgebung sind. Weitere Informationen finden Sie unter [Verwenden des Azure Storage Emulators für Entwicklung und Tests](/azure/storage/common/storage-use-emulator).
 
-Die folgende Liste enthält einige der gängigeren Datenbanksystemen, die verwendet werden können, in Visual Studio-Projekten. Die Liste ist nicht vollständig. Eine Liste der Drittanbieter, die Daten ADO.NET-Datenanbieter bieten, die enge Integration in Visual Studio-Tools zu ermöglichen, finden Sie unter [ADO.NET-Datenanbietern](/dotnet/framework/data/adonet/data-providers).
+Die folgende Liste enthält einige der beliebtesten Datenbanksysteme, die in Visual Studio-Projekten verwendet werden können. Die Liste ist nicht vollständig. Eine Liste von Drittanbietern, die ADO.NET-Datenanbieter anbieten, die eine umfassende Integration in Visual Studio-Tools ermöglichen, finden Sie unter [ADO.NET Data Providers](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-SQL Server ist die führende Microsoft-Datenbank bietet. SQL Server 2016 bietet bahnbrechende Leistung, erweiterter Sicherheit und funktionsreiche, integrierte berichterstellung und Analysen. Wird in verschiedenen Editionen, die für unterschiedliche Verwendungszwecke ausgelegt sind: hochgradig skalierbare, leistungsstarke Business Analytics, für die Verwendung auf einem einzelnen Computer. SQL Server Express ist eine voll funktionsfähige Edition von SQL Server, die für die weiterverteilung und Einbetten von zugeschnitten sind.  LocalDB ist eine vereinfachte Edition von SQL Server Express, die erfordert keine Konfiguration und in der Anwendung ausgeführt wird. Sie können eine oder beide Produkte über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Viele der SQL-Beispiele in diesem Abschnitt verwenden Sie SQL Server LocalDB. SQL Server Management Studio (SSMS) ist eine eigenständige Datenbank-verwaltungsanwendung, die über mehr Funktionen als die in Visual Studio SQL Server Objekt-Explorer bereitgestellten verfügt. Sie können SSMS über den vorherigen Link abrufen.
+SQL Server ist das Microsoft-Flaggschiff-Datenbankangebot. SQL Server 2016 bietet bahnbrechende Leistung, erweiterte Sicherheit und umfangreiche, integrierte Berichte und Analysen. Es ist in verschiedenen Editionen enthalten, die für unterschiedliche Zwecke entwickelt wurden: von hochgradig skalierbaren, hochleistungsfähigen Business Analytics-Funktionen für die Verwendung auf einem einzelnen Computer. SQL Server Express ist eine voll ausgestattete Edition von SQL Server, die auf die Verteilung und Einbettung zugeschnitten ist.  Localdb ist eine vereinfachte Edition von SQL Server Express, die keine Konfiguration erfordert und im Prozess ihrer Anwendung ausgeführt wird. Sie können entweder oder beide Produkte von der [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)herunterladen. Viele der SQL-Beispiele in diesem Abschnitt verwenden SQL Server localdb. SQL Server Management Studio (SSMS) ist eine eigenständige Daten Bank Verwaltungs Anwendung mit mehr Funktionalität als in Visual Studio SQL Server-Objekt-Explorer bereitgestellt. Sie können SSMS über den vorherigen Link erhalten.
 
 ## <a name="oracle"></a>Oracle
 
-Sie können eine kostenpflichtige oder kostenlose Edition der Oracle-Datenbank aus der [Oracle Technologienetzwerk](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) Seite. Entwurfszeitunterstützung für Entity Framework und TableAdapter-Steuerelemente, müssen Sie die [Oracle Developer Tools für Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Andere offizielle Oracle-Produkte, einschließlich von den Oracle Instant Client, stehen über den NuGet-Paket-Manager zur Verfügung. Sie können Oracle-Beispielschemas herunterladen, indem Sie die Anweisungen in der [Oracle-Onlinedokumentation](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+Sie können eine kostenpflichtige oder kostenlose Edition der Oracle-Datenbank von der Seite [Oracle Technology Network](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) herunterladen. Zur Entwurfszeit Unterstützung für Entity Framework und TableAdapters benötigen Sie die [Oracle Developer Tools für Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Andere offizielle Oracle-Produkte, einschließlich des Oracle Instant Client, sind über den nuget-Paket-Manager verfügbar. Sie können Oracle-Beispiel Schemas herunterladen, indem Sie die Anweisungen in der [Oracle-Online Dokumentation](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)befolgen.
 
 ## <a name="mysql"></a>MySQL
 
-MySQL ist ein beliebter Open-Source-Datenbank, die häufig in Unternehmen und Websites verwendet wird. Downloads für MySQL MySQL für Visual Studio und verwandte Produkte sind [MySQL unter Windows](http://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständigen verwaltungsanwendungen für MySQL. Sie können die Angebote in den NuGet Package Manager Durchsuchen (**Tools** > **NuGet Package Manager** > **NuGet-Pakete für Projektmappe verwalten**) .
+MySQL ist ein gängiges Open-Source-Datenbanksystem, das in Unternehmen und Websites häufig verwendet wird. Downloads für MySQL, MySQL für Visual Studio und Verwandte Produkte finden Sie unter [MySQL unter Windows](http://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständige Verwaltungs Anwendungen für MySQL. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL ist einem relationalen Datenbanksystem kostenlos, Open-Source-Objekt. Um die Installation auf Windows, Sie können es herunterladen aus dem [PostgreSQL-Downloadseite](http://www.postgresql.org/download/windows/). Sie können auch PostgreSQL aus dem Quellcode erstellen. Das PostgreSQL-Core-System enthält eine Schnittstelle der C-Sprache. Viele Drittanbieter stellen NuGet-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote in den NuGet Package Manager Durchsuchen (**Tools** > **NuGet Package Manager** > **NuGet-Pakete für Projektmappe verwalten**) . Die am häufigsten verwendete Paket vielleicht erfolgt über [npgsql.org](http://www.npgsql.org).
+PostgreSQL ist ein kostenloses Open-Source-Objekt für relationale Datenbanken. Um es unter Windows zu installieren, können Sie es von der [PostgreSQL-Downloadseite](http://www.postgresql.org/download/windows/)herunterladen. Sie können PostgreSQL auch aus dem Quellcode erstellen. Das PostgreSQL-Kernsystem umfasst eine Schnittstelle der Programmiersprache C. Viele Drittanbieter stellen nuget-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten). Möglicherweise wird das beliebteste Paket von [npgsql.org](http://www.npgsql.org)bereitgestellt.
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite ist eine eingebettete SQL-Datenbank-Engine, die im Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](http://www.sqlite.org/download.html). Viele Drittanbieter-NuGet-Pakete für SQLite sind ebenfalls verfügbar. Sie können die Angebote in den NuGet Package Manager Durchsuchen (**Tools** > **NuGet Package Manager** > **NuGet-Pakete für Projektmappe verwalten**) .
+SQLite ist eine eingebettete SQL-Datenbank-Engine, die im eigenen Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](http://www.sqlite.org/download.html)herunterladen. Viele nuget-Pakete von Drittanbietern für SQLite sind ebenfalls verfügbar. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten).
 
 ## <a name="firebird"></a>Firebird
 
-Firebird ist ein Open-Source-SQL-Datenbank. Sie können es von der [Firebird-Downloadseite](http://firebirdsql.org/en/downloads/). Ein ADO.NET-Datenanbieter steht über den NuGet-Paket-Manager zur Verfügung.
+Firebird ist ein Open-Source-SQL-Datenbanksystem. Sie können es von der [Downloadseite von Firebird](http://firebirdsql.org/en/downloads/)herunterladen. Ein ADO.NET-Datenanbieter ist über den nuget-Paket-Manager verfügbar.
 
 ## <a name="see-also"></a>Siehe auch
 

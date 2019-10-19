@@ -8,31 +8,31 @@ helpviewer_keywords:
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 14d30a366c7400b05a713f146e602ae9ccd7e766
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273363"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648659"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Erstellen einer Datenbank und Hinzufügen von Tabellen in Visual Studio
 
 Sie können Visual Studio verwenden, um eine lokale Datenbankdatei in SQL Server Express localdb zu erstellen und zu aktualisieren. Sie können auch eine Datenbank erstellen, indem Sie Transact-SQL-Anweisungen im **SQL Server-Objekt-Explorer** Tool Fenster in Visual Studio ausführen. In diesem Thema erstellen wir eine *MDF* -Datei und fügen Tabellen und Schlüssel hinzu, indem wir die Tabellen-Designer verwenden.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
-Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visual Studio installierten Workloads für die **.net-Desktop Entwicklung** und die **Datenspeicherung und-Verarbeitung** . Um Sie zu installieren, öffnen Sie **Visual Studio-Installer** , und wählen Sie **ändern** (oder **mehr** > **ändern**) neben der Version von Visual Studio aus, die Sie ändern möchten.
+Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visual Studio installierten Workloads für die **.net-Desktop Entwicklung** und die **Datenspeicherung und-Verarbeitung** . Öffnen Sie die **Visual Studio-Installer** , und wählen Sie **ändern** (oder **mehr**  > **ändern**) neben der zu ändernden Visual Studio-Version aus, um Sie zu installieren.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Erstellen eines Projekts und einer lokalen Datenbankdatei
 
 1. Erstellen Sie ein neues **Windows Forms-App** -Projekt, und nennen Sie es **SampleDatabaseWalkthrough**.
 
-2. Wählen Sie in der Menüleiste die Option **Projekt** > **Neues Element hinzufügen**aus.
+2. Wählen Sie in der Menüleiste **Projekt**  > **Neues Element hinzufügen**aus.
 
 3. Scrollen Sie in der Liste der Element Vorlagen nach unten, und wählen Sie **Dienst basierte Datenbank**aus.
 
@@ -42,7 +42,7 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visu
 
 ### <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
 
-1. Wenn das **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es durch Drücken von **UMSCHALT**+**alt**+D, oder wählen Sie**andere Windows** >  **-** **Datenquellen** **anzeigen** > auf aus. die Menüleiste.
+1. Wenn das Fenster **Datenquellen** nicht geöffnet ist, öffnen Sie es, indem Sie **UMSCHALT** +**alt** +**D** drücken, oder wählen Sie in der Menüleiste  > **andere Fenster**  > **Datenquellen** **anzeigen** aus.
 
 1. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen**aus.
 
@@ -64,9 +64,9 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visu
 
 Sie können die Verbindungs Zeichenfolge für die Datei *SampleDatabase. mdf* anzeigen, indem Sie die Eigenschaftenfenster der Datenverbindung öffnen:
 
-- Wählen Sie**SQL Server-Objekt-Explorer** **Ansicht** > aus, um das Fenster **SQL Server-Objekt-Explorer** zu öffnen. Erweitern Sie **(localdb) \mssqllocaldb** > -**Datenbanken**, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf* , und wählen Sie **Eigenschaften**aus.
+- Wählen Sie  > **SQL Server-Objekt-Explorer** **anzeigen** aus, um das **SQL Server-Objekt-Explorer** Fenster zu öffnen. Erweitern Sie **(localdb) \mssqllocaldb**  > **Datenbanken**, klicken Sie dann mit der rechten Maustaste auf *SampleDatabase. mdf* , und wählen Sie **Eigenschaften**aus.
 
-- Sie können auch **View** > **Server-Explorer**auswählen, wenn dieses Fenster nicht bereits geöffnet ist. Öffnen Sie die Eigenschaftenfenster, indem Sie den Knoten **Datenverbindungen** erweitern, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf*, und wählen Sie dann **Eigenschaften**aus.
+- Wenn dieses Fenster nicht bereits geöffnet ist, können Sie alternativ  > **Server-Explorer** **anzeigen** auswählen. Öffnen Sie die Eigenschaftenfenster, indem Sie den Knoten **Datenverbindungen** erweitern, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf*, und wählen Sie dann **Eigenschaften**aus.
 
   > [!TIP]
   > Wenn Sie den Knoten Datenverbindungen nicht erweitern können oder die Verbindung SampleDatabase. mdf nicht aufgeführt ist, wählen Sie auf der Server-Explorer Symbolleiste die Schaltfläche **Verbindung mit Datenbank herstellen** aus. Stellen Sie im Dialogfeld **Verbindung hinzufügen** sicher, dass unter **Datenquelle** **Microsoft SQL Server Datenbankdatei** ausgewählt ist, und wählen Sie dann die Datei SampleDatabase. mdf aus, und wählen Sie Sie aus. Schließen Sie die Verbindung hinzu, indem Sie auf **OK klicken**.
@@ -94,9 +94,9 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
    |`ContactName`|`nvarchar (50)`|True (ausgewählt)|
    |`Phone`|`nvarchar (24)`|True (ausgewählt)|
 
-4. Klicken Sie mit der rechten `CustomerID` Maustaste auf die Zeile, und wählen Sie dann **Primärschlüssel festlegen**aus.
+4. Klicken Sie mit der rechten Maustaste auf die Zeile `CustomerID`, und wählen Sie dann **Primärschlüssel festlegen**aus.
 
-5. Klicken Sie mit der rechten Maustaste auf die`Id`Standardzeile (), und wählen Sie dann **Löschen**aus.
+5. Klicken Sie mit der rechten Maustaste auf die Standardzeile (`Id`), und wählen Sie dann **Löschen**aus.
 
 6. Benennen Sie die Tabelle "Customers", indem Sie die erste Zeile im Skriptbereich entsprechend dem folgenden Beispiel aktualisieren:
 
@@ -180,7 +180,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
     > [!IMPORTANT]
     > Überprüfen Sie, ob alle Bestellnummern und -mengen ganze Zahlen sind und ob jede Kunden-ID mit einem Wert übereinstimmt, den Sie in der Spalte **CustomerID** in der Tabelle „Customers“ angegeben haben.
 
-7. Klicken Sie in der Menüleiste auf **Datei** > **Alle speichern**.
+7. Wählen Sie in der Menüleiste **Datei**  > **Alle speichern**aus.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1812: Nicht instanziierte interne Klassen vermeiden | Microsoft-Dokumentation'
+title: 'CA1812: nicht instanziierte interne Klassen vermeiden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,33 +12,33 @@ helpviewer_keywords:
 - CA1812
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 caps.latest.revision: 28
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5a36ee8cffc221d15243ff72e2e71558e867319
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157981"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645406"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Nicht instanziierte interne Klassen vermeiden.
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Nicht instanziierte interne Klassen vermeiden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
  Eine Instanz eines Typs auf Assemblyebene wird nicht durch Code in der Assembly erstellt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Mit dieser Regel versucht, einen Aufruf eines Konstruktors den Typ zu finden, und gibt einen Verstoß aus, wenn kein Aufruf gefunden wird.
+ Diese Regel versucht, einen aufzurufenden Konstruktoren des Typs zu suchen, und meldet eine Verletzung, wenn kein-Rückruf gefunden wurde.
 
- Die folgenden Typen werden nicht durch diese Regel überprüft:
+ Die folgenden Typen werden von dieser Regel nicht untersucht:
 
 - Werttypen
 
@@ -48,29 +48,29 @@ ms.locfileid: "68157981"
 
 - Delegaten
 
-- Compilerfehler ausgegebenen Arraytypen
+- Vom Compiler ausgegebene Array Typen
 
-- Typen, die nicht instanziiert werden kann, und definieren `static` (`Shared` in Visual Basic) Methoden nur.
+- Typen, die nicht instanziiert werden können und die nur `static` (`Shared` in Visual Basic)-Methoden definieren.
 
-  Wenn Sie anwenden <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> auf die Assembly, die analysiert wird, mit dieser Regel treten nicht für Konstruktoren, die als markiert sind `internal` , da Sie nicht erkennen können, ob ein Feld von einem anderen verwendeten `friend` Assembly.
+  Wenn Sie <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> auf die zu analysierende Assembly anwenden, erfolgt diese Regel nicht für Konstruktoren, die als `internal` gekennzeichnet sind, da Sie nicht erkennen können, ob ein Feld von einer anderen `friend` Assembly verwendet wird.
 
-  Auch wenn Sie diese Einschränkung umgehen, können nicht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Codeanalyse, die externe eigenständige FxCop treten auf interne Konstruktoren, wenn alle `friend` Assembly in der Analyse vorhanden ist.
+  Obwohl Sie diese Einschränkung in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Code Analyse nicht umgehen können, tritt die externe, eigenständige FxCop auf internen Konstruktoren auf, wenn jede `friend` Assembly in der Analyse vorhanden ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie den Code, der verwendet wird. Wenn der Typ nur statische Methoden enthält, fügen Sie eine der folgenden in den Typ aus, um zu verhindern, dass den Compiler einen Standardkonstruktor für die öffentliche Instanz ausgeben:
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie den Code hinzu, der ihn verwendet. Wenn der Typ nur statische Methoden enthält, fügen Sie einen der folgenden Werte zum-Typ hinzu, um zu verhindern, dass der Compiler einen standardmäßigen öffentlichen Instanzkonstruktor ausgibt:
 
-- Ein privater Konstruktor für Typen, die auf [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Versionen 1.0 und 1.1.
+- Ein privater Konstruktor für Typen, die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] die Versionen 1,0 und 1,1 als Ziel haben.
 
-- Die `static` (`Shared` in Visual Basic)-Modifizierer für Typen, die auf [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- Der `static`-Modifizierer (`Shared` in Visual Basic) für Typen, die auf [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] abzielen.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Es wird empfohlen, dass Sie diese Warnung in den folgenden Situationen unterdrücken:
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken. Es wird empfohlen, dass Sie diese Warnung in den folgenden Situationen unterdrücken:
 
-- Die Klasse wird durch für spät gebundene Reflektionsmethoden erstellt, wie z. B. <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Die-Klasse wird durch spät gebundene Reflektionsmethoden erstellt, z. b. <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- Die Klasse wird automatisch erstellt, von der Laufzeit oder [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Z. B. Klassen, in denen <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> oder <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Die-Klasse wird automatisch von der Laufzeit oder [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] erstellt. Beispielsweise Klassen, die <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> oder <xref:System.Web.IHttpHandler?displayProperty=fullName> implementieren.
 
-- Die Klasse wird als ein generischer Typparameter übergeben, die eine neue Einschränkung aufweist. Beispielsweise wird im folgenden Beispiel wird diese Regel ausgelöst.
+- Die Klasse wird als generischer Typparameter übergeben, der über eine neue Einschränkung verfügt. Im folgenden Beispiel wird z. b. diese Regel erhoben.
 
   ```csharp
   internal class MyClass
@@ -91,7 +91,7 @@ ms.locfileid: "68157981"
   mc.Create();
   ```
 
-  In diesen Fällen wird empfohlen, dass Sie diese Warnung unterdrücken.
+  In diesen Fällen wird empfohlen, diese Warnung zu unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Debuggen, indem Sie mit dem Store-Viewer | Microsoft-Dokumentation
+title: Debuggen mit dem Store-Viewer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,48 +9,47 @@ helpviewer_keywords:
 - Domain-Specific Language, store
 ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1a76cd9b726e534271937cb67a8d3f946d4eb477
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a870c66b1c14dc6ddf3e38fb6e5be8c116be3573
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433194"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654888"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debuggen mithilfe der Speicheranzeige
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mit dem Store-Viewer, sehen Sie den Status einer *speichern* ein, die [!INCLUDE[dsl](../includes/dsl-md.md)]. Der Store-Viewer zeigt alle Elemente Modell mit der Domäne, die in einem bestimmten Speicher sowie Elementeigenschaften und Links zwischen Elementen sind.  
-  
-## <a name="opening-store-viewer"></a>Öffnen von Store-Viewer  
- Wenn Sie sind der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentelle "erstellen", Ihren Code an einem Haltepunkt zu beenden, von denen Informationen zum Modell enthält einer Instanz des Speichers. Klicken Sie dann die Store-Viewer öffnen, indem Sie den folgenden Befehl in der **direkt** Fenster:  
-  
-```  
-Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);  
-```  
-  
+Mit dem Store-Viewer können Sie den Status eines von [!INCLUDE[dsl](../includes/dsl-md.md)] verwendeten *Stores* überprüfen. Der Store-Viewer zeigt alle Domänen Modellelemente an, die sich in einem bestimmten Speicher befinden, sowie Element Eigenschaften und Verknüpfungen zwischen Elementen.
+
+## <a name="opening-store-viewer"></a>Store-Viewer wird geöffnet
+ Wenn Sie sich im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentellen Build befinden, beenden Sie den Code an einem Haltepunkt, an dem eine Instanz des Stores Modellinformationen enthält. Öffnen Sie dann den Store-Viewer, indem Sie den folgenden Befehl im **direkt** Fenster eingeben:
+
+```
+Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
+```
+
 > [!NOTE]
-> Ersetzen Sie `mystore` mit dem Namen Ihrer Store-Instanz. Wenn Sie den Namespace an Ihrem Code hinzufügen, können Sie auch den Befehl zum Anzeigen von Store-Viewer ohne den vollqualifizierten Namespace eingeben:  
->   
-> `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
->   
-> `…`  
->   
-> `StoreViewer.Show(mystore);`  
-  
- Die `Show` -Methode weist mehrere Überladungen. Sie können eine Instanz von einem Store oder eine Partition als Parameter angeben.  
-  
- Als Alternative können Sie die Codezeile, die an einer beliebigen Stelle der Store-Viewer in Ihrem Code zeigt einfügen, in dem der Parameter, die Sie zum Übergeben der `Show` -Methode wird in den Bereich. Diese Aktion wird im Store Viewer aus, wenn die Zeile des Codes als eine Momentaufnahme für den Inhalt des Speichers ausgeführt wird.  
-  
-### <a name="using-store-viewer"></a>Verwenden von Store-Viewer  
- Wenn der Store-Viewer geöffnet wird, wird ein nicht modales Fenster des Windows Forms als der folgenden Abbildung dargestellt angezeigt.  
-  
- ![](../modeling/media/storeviewer2.png "storeviewer2")  
-Store-Viewer  
-  
- Der Store-Viewer verfügt über drei Bereiche: den linken Bereich oben rechts im Bereich und unteren rechten Bereich. Der linke Bereich ist eine Strukturansicht der Typen in der `DomainDataDirectory` Member eines Speichers. Wenn Sie erweitern Sie den partitionsknoten, und klicken Sie auf ein Element, werden die Eigenschaften des Elements in der oberen rechten Bereich angezeigt. Wenn das Element an andere Elemente verknüpft ist, werden die zusätzlichen Elemente im Bereich unten rechts angezeigt. Wenn Sie ein Element in der unteren rechten Bereich doppelklicken, wird das Element im linken Bereich hervorgehoben.  
-  
-## <a name="see-also"></a>Siehe auch  
+> Sie müssen `mystore` durch den Namen Ihrer Store-Instanz ersetzen. Wenn Sie dem Code den Namespace hinzufügen, können Sie auch den Befehl zum Anzeigen der Store-Viewer ohne den voll qualifizierten Namespace eingeben:
+>
+> `using Microsoft.VisualStudio.Modeling.Diagnostics;`
+>
+> `…`
+>
+> `StoreViewer.Show(mystore);`
+
+ Die `Show`-Methode verfügt über mehrere über Ladungen. Sie können eine Instanz eines Stores oder einer Partition als Parameter angeben.
+
+ Als Alternative können Sie die Codezeile, in der der Speicher-Viewer angezeigt wird, an beliebiger Stelle im Code platzieren, an der sich der Parameter, den Sie an die `Show` Methode übergeben, im Gültigkeitsbereich befindet. Diese Aktion zeigt die Store-Viewer an, wenn die Codezeile als Momentaufnahme des Inhalts des Stores ausgeführt wird.
+
+### <a name="using-store-viewer"></a>Verwenden der Store-Viewer
+ Wenn die Store-Viewer geöffnet wird, wird ein nicht modalem Windows Forms Fenster angezeigt, wie in der folgenden Abbildung dargestellt.
+
+ ![](../modeling/media/storeviewer2.png "storeviewer2")Store-Viewer
+
+ Der Store-Viewer verfügt über drei Bereiche: den linken Bereich, den oberen rechten Bereich und den unteren rechten Bereich. Der linke Bereich ist eine Strukturansicht der Typen im `DomainDataDirectory` Member eines Stores. Wenn Sie den Partitions Knoten erweitern und auf ein Element klicken, werden die Eigenschaften des Elements im oberen rechten Bereich angezeigt. Wenn das Element mit anderen Elementen verknüpft ist, werden die zusätzlichen Elemente im unteren rechten Bereich angezeigt. Wenn Sie auf ein Element im unteren rechten Bereich doppelklicken, wird das Element im linken Bereich hervorgehoben.
+
+## <a name="see-also"></a>Siehe auch
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
