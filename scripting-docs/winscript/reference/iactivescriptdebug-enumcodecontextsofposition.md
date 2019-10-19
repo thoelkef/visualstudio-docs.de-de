@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::EnumCodeContextsOfPosition | Microsoft-Dokumentation
+title: 'Iactivescriptdebug:: enumcodecontextsofposition | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c364d00941a65272b4d22cc7674a0f0e6178f099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aedfe5d40d8f4086e30f3a62c070b8ccd5ef2388
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009741"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572783"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
-Die ein Smarthost für das Delegieren der `IDebugDocumentContext::EnumCodeContexts` Methode.  
+Wird von einem Smarthost verwendet, um die `IDebugDocumentContext::EnumCodeContexts`-Methode zu delegieren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>Parameter  
  `dwSourceContext`  
- [in] Die Quellkontext Sie `IActiveScriptParse::ParseScriptText` oder `IActiveScriptParse::AddScriptlet`.  
+ in Der Quell Kontext, der für `IActiveScriptParse::ParseScriptText` oder `IActiveScriptParse::AddScriptlet` bereitgestellt wird.  
   
  `uCharacterOffset`  
- [in] Zeichen, die relativ zum Beginn der Skripttext offset.  
+ in Zeichen Offset relativ zum Anfang des Skript Texts.  
   
  `uNumChars`  
- [in] Anzahl der Zeichen in diesem Kontext.  
+ in Anzahl der Zeichen in diesem Kontext.  
   
  `ppescc`  
- [out] Ein Enumerator, der die Codekontexte im angegebenen Bereich.  
+ vorgenommen Ein Enumerator der Code Kontexte im angegebenen Bereich.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -59,8 +59,8 @@ HRESULT EnumCodeContextsOfPosition(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Smart Hosts verwenden Sie diese Methode delegiert die `IDebugDocumentContext::EnumCodeContexts` Methode.  
+ Smart Hosts verwenden diese Methode, um die `IDebugDocumentContext::EnumCodeContexts`-Methode zu delegieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptDebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md)   
+ [Iactivescriptdebug-Schnittstelle](../../winscript/reference/iactivescriptdebug-interface.md)    
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)
