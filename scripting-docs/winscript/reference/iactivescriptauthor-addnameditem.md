@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddNamedItem | Microsoft-Dokumentation
+title: 'Iactivescriptauthor:: addnameditem | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f0d2f08a49fdc768e87152bf486ce48687c79e68
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411389"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577255"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
-Fügt den Namen eines Elements auf der Stammebene an das Skript-Engine-Namespace erstellen. Ein *auf Stammebene Element* ist ein Objekt, das Eigenschaften und Methoden enthalten kann, und eine Ereignisquelle enthalten können.  
+Fügt dem Namespace der Skript Erstellungs-Engine den Namen eines Elements auf Stamm Ebene hinzu. Ein *Element* auf Stamm Ebene ist ein Objekt, das Eigenschaften und Methoden enthalten kann und auch eine Ereignis Quelle enthalten kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,22 +39,22 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>Parameter  
  `pszName`  
- [in] Der Name des Elements, wie aus dem Skript angezeigt werden soll. Der Name muss eindeutig und dauerhaft sein.  
+ in Der Name des Elements, das im Skript angezeigt wird. Der Name muss eindeutig und dauerhaft sein.  
   
  `dwFlags`  
- [in] Die Flags, die den Namen des Elements zugeordnet sind. Eine Kombination der folgenden Werte sind möglich:  
+ in Die Flags, die dem benannten Element zugeordnet sind. Kann eine Kombination der folgenden Werte sein:  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|SCRIPTITEM_ISVISIBLE|0x00000002|Gibt an, dass der Name des Elements im Namespace des Skripts verfügbar ist. Dies ermöglicht den Zugriff auf Eigenschaften, Methoden und Ereignisse des Elements.<br /><br /> Standardmäßig enthalten die Eigenschaften des Elements, die untergeordneten Elemente des Elements. Aus diesem Grund alle untergeordneten Objekt – Eigenschaften und Methoden (und ihre untergeordneten Elemente rekursiv) zugegriffen werden.|  
-|SCRIPTITEM_ISSOURCE|0x00000004|Gibt an, die Quelle der Ereignisse, dass das Skript Skript-Ereignishandler verwenden kann.|  
-|SCRIPTITEM_GLOBALMEMBERS|0x00000008|Gibt an, dass das Element ist eine Auflistung von globalen Eigenschaften und Methoden, die mit dem Skript zugeordnet sind. Member werden als globale Variablen und Methoden erstellt.|  
-|SCRIPTITEM_ISPERSISTENT|0x00000040|Gibt an, dass das Element gespeichert werden soll, wenn das Skript-Engine-Erstellung gespeichert wird.|  
-|SCRIPTITEM_CODEONLY|0x00000200|Gibt an, dass der Namen des Elements, ein Objekt nur mit Code darstellt, und er verfügt nicht über ein Element zu erstellen.|  
-|SCRIPTITEM_NOCODE|0x00000400|Gibt an, dass das benannte Element ist nur ein Name, die hinzugefügt wird, und dies hat nichts zu erstellen.|  
+|SCRIPTITEM_ISVISIBLE|0x00000002|Gibt an, dass der Name des Elements im Namespace des Skripts verfügbar ist. Dadurch wird der Zugriff auf die Eigenschaften, Methoden und Ereignisse des Elements ermöglicht.<br /><br /> Gemäß der Konvention enthalten die Eigenschaften des Elements die untergeordneten Elemente des Elements. Daher können Sie auf alle untergeordneten Objekteigenschaften und-Methoden (und deren untergeordnete Elemente rekursiv) zugreifen.|  
+|SCRIPTITEM_ISSOURCE|0x00000004|Gibt die Ereignisse der Element Quelle an, die das Skript Skript Ereignishandler aufweisen kann.|  
+|SCRIPTITEM_GLOBALMEMBERS|0x00000008|Gibt an, dass das Element eine Auflistung globaler Eigenschaften und Methoden ist, die dem Skript zugeordnet sind. Seine Member werden als globale Variablen und Methoden erstellt.|  
+|SCRIPTITEM_ISPERSISTENT|0x00000040|Gibt an, dass das Element gespeichert werden soll, wenn die Skript Erstellungs-Engine gespeichert wird.|  
+|SCRIPTITEM_CODEONLY|0x00000200|Gibt an, dass das benannte Element ein nur-Code-Objekt darstellt und keinen Member für die Erstellung hat.|  
+|SCRIPTITEM_NOCODE|0x00000400|Gibt an, dass das benannte Element nur ein Name ist, der hinzugefügt wird, und hat nichts zu erstellen.|  
   
  `pdisp`  
- [in] Die `IDispatch` von der `NamedItem` -Objekt, das Sammeln von Methoden, Eigenschaften oder die Ereignisquelle verwendet wird.  
+ in Die `IDispatch` des `NamedItem` Objekts, das zum Erfassen von Methoden, Eigenschaften oder der Ereignis Quelle verwendet wird.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -66,5 +66,5 @@ HRESULT AddNamedItem(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)    
  [IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)
