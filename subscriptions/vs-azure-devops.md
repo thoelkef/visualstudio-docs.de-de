@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
-ms.openlocfilehash: 00a60415af16f31362b359944c8007fb3d21351f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681625"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314156"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in Azure DevOps, die als Vorteil in Ihrem Abonnement enthalten sind. Sie können diese Features in jeder Azure DevOps-Organisation verwenden, bei dem Sie Mitglied sind. Dabei spielt es keine Rolle, ob Sie die Organisation erstellt haben oder von jemandem hinzugefügt wurden.
@@ -24,15 +24,14 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>, FTE  | Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Artifacts<sup>2</sup>, Azure Pipelines (selbstgehosted)       |  Ja          |
-| Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail,                                        | Azure Boards und Repositorys (Basic), Azure Artifacts<sup>2</sup>                                                            |  Ja          |
+| Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>  | Azure Boards und Repositorys (Basic), Azure Test Plans, Azure Pipelines (selbstgehostet)       |  Ja          |
+| Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail,                                        | Azure Boards und Repositorys (Basic)                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic), Azure Test Plans                                              |  Ja          |
 ||
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Umfasst nicht: MCT Software & Services, Imagine.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
 
-<sup>2</sup>  *umfasst 2 GB kostenlos*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 7dbb14a7ea6b3271c7608f3bbb49dd30aa605b66
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095281"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380974"
 ---
 # <a name="features-of-the-code-editor"></a>Funktionen des Code-Editors
 
-Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und die Verwaltung von Code und Text erleichtern. Sie können mithilfe der Gliederung verschiedene Codeblöcke reduzieren und erweitern. Wenn Sie IntelliSense, den **Objektkatalog** und die Aufrufhierarchie verwenden, können Sie mehr über Ihren Code erfahren. Sie können Code finden, indem Sie Funktionen wie **Gehe zu**, **Gehe zu Definition**und **Alle Verweise suchen** verwenden. Mit Codeausschnitten können Sie Codeblöcke einfügen und Code mithilfe von Funktionen wie **Generate From Usage**generieren. Wenn Sie noch nie mit dem Visual Studio-Editor gearbeitet haben, finden Sie eine schnelle Übersicht unter [Codebearbeitung](https://visualstudio.microsoft.com/vs/features/ide/).
+Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und die Verwaltung von Code und Text erleichtern. Sie können mithilfe der Gliederung verschiedene Codeblöcke reduzieren und erweitern. Wenn Sie IntelliSense, den **Objektkatalog** und die Aufrufhierarchie verwenden, können Sie mehr über Ihren Code erfahren. Sie können Code finden, indem Sie Funktionen wie **Gehe zu**, **Gehe zu Definition**und **Alle Verweise suchen** verwenden. Mit Codeausschnitten können Sie Codeblöcke einfügen und Code mithilfe von Funktionen wie **Generate From Usage**generieren. Wenn Sie noch nie mit dem Visual Studio-Editor gearbeitet haben, lesen Sie [Informationen zur Verwendung des Code-Editors](../get-started/tutorial-editor.md).
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Quellcode-Editor (Visual Studio für Mac)](/visualstudio/mac/source-editor).

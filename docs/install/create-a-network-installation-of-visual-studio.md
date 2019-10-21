@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018877"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381074"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -39,7 +39,7 @@ Laden Sie für die gewünschte Edition von Visual Studio eine Bootstrapperdatei 
 
 Informationen zum Herunterladen eines Bootstrappers für Visual Studio 2017 finden Sie auf der Downloadseite für [frühere Versionen von Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).
 
-Ihre ausführbare Setupdatei &mdash; oder genauer gesagt die Bootstrapperdatei &mdash; entspricht einer der folgenden Dateien.
+Ihre ausführbare Setupdatei&mdash;oder genauer gesagt die Bootstrapperdatei&mdash;sollte einer der folgenden Dateien entsprechen.
 
 | Edition | Dateiname |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Weitere unterstützte Bootstrapper sind **vs_feedbackclient.exe**, **vs_teamexpl
 
 ::: moniker range="vs-2019"
 
-Ihre ausführbare Setupdatei &mdash; oder genauer gesagt die Bootstrapperdatei &mdash; entspricht einer der folgenden.
+Ihre ausführbare Setupdatei&mdash;oder genauer gesagt eine Bootstrapperdatei&mdash;sollte einer der folgenden Dateien entsprechen.
 
 |Edition | Herunterladen|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ Ihre ausführbare Setupdatei &mdash; oder genauer gesagt die Bootstrapperdatei &
 Weitere unterstützte Bootstrapper sind [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) und [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
+
+>[!TIP]
+>Wenn Sie zuvor eine Bootstrapperdatei heruntergeladen haben und deren Version überprüfen möchten, gehen Sie wie folgt vor: Öffnen Sie in Windows den Datei-Explorer, klicken Sie mit der rechten Maustaste auf die Bootstrapperdatei, wählen Sie **Eigenschaften** aus, wählen Sie die Registerkarte **Details**  aus, und sehen Sie sich dann die Nummer der **Produktversion** an. Um diese Nummer einem Release von Visual Studio zuzuordnen, nutzen Sie die Informationen auf der Seite [Visual Studio-Buildnummern und -Veröffentlichungstermine ](visual-studio-build-numbers-and-release-dates.md).
 
 ## <a name="create-an-offline-installation-folder"></a>Erstellen eines Offlineinstallationsordners
 
@@ -223,6 +226,13 @@ Administratoren können Visual Studio auf Clientarbeitsstationen als Teil eines 
 > Dies ist hilfreich, wenn ein Unternehmensadministrator weitere Aktionen für vollständige Installation durchführen möchte (z.B. um [einen Product Key auf eine erfolgreiche Installation anzuwenden](automatically-apply-product-keys-when-deploying-visual-studio.md)), aber auf die Beendigung der Installation warten muss, um den Rückgabecode dieser Installation zu verarbeiten.
 >
 > Wenn Sie `--wait` nicht verwenden, wird der Prozess `vs_enterprise.exe` beendet, bevor die Installation abgeschlossen ist, und gibt ungenauen Exitcode zurück, der den Status des Installationsvorgangs nicht darstellt.
+>
+
+::: moniker range="vs-2019"
+
+> Wenn Sie bei Offlineinstallationen die Fehlermeldung „Ein Projekt, das mit den folgenden Parametern übereinstimmt, wurde nicht gefunden“ erhalten, stellen Sie sicher, dass Sie bei Version 16.3.5 oder höher den Schalter „--noweb“ verwenden.
+
+::: moniker-end
 
 Bei der Installation eines Layout werden die installierten Inhalte aus dem Layout abgerufen. Wenn Sie allerdings eine Komponente auswählen, die im Layout fehlt, wird diese aus dem Internet abgerufen.  Falls Sie verhindern möchten, dass das Visual Studio-Setup alle Inhalte, die in Ihrem Layout fehlen, herunterlädt, verwenden Sie die Option `--noWeb`. Wenn `--noWeb` verwendet wird und das Layout nicht über alle Inhalte verfügt, die installiert werden sollen, tritt beim Setup ein Fehler auf.
 

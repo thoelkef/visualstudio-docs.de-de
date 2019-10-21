@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263737"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306253"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualisieren einer vorhandenen Anwendung für MSBuild 15
 
@@ -65,7 +65,7 @@ Wenn Sie NuGet-Pakete nicht verwenden können, können Sie auf MSBuild-Assemblys
 
 #### <a name="binding-redirects"></a>Bindungsumleitungen
 
-Verweisen Sie auf das Paket „Microsoft.Build.Locator“, um sicherzustellen, dass Ihre Anwendung automatisch die erforderlichen Bindungsumleitungen aller Versionen von MSBuild-Assemblys auf Version `15.1.0.0` verwendet.
+Verweisen Sie auf das Paket „Microsoft.Build.Locator“, um sicherzustellen, dass Ihre Anwendung automatisch die erforderlichen Bindungsumleitungen zu Version 15.1.0.0 verwendet. Bindungsumleitungen zu dieser Version unterstützen sowohl MSBuild 15 als auch MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Sicherstellen einer sauberen Ausgabe
 

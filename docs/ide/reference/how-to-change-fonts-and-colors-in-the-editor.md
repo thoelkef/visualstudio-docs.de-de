@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ee1fced0b04ae058f05dc46e4414b76b0f506213
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605405"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381000"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Vorgehensweise: Ändern der im Editor in Visual Studio verwendeten Schriftarten und Farben
 
@@ -33,9 +33,7 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>So ändern Sie die Standardschriftart, -größe und -farben
 
-1. Wählen Sie im Menü **Extras** **Optionen** aus, und wählen Sie im Ordner **Umgebung** **Schriftarten und Farben** aus.
-
-     [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) wird geöffnet.
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus. Wählen Sie unter **Umgebung** die Option [Schriftarten und Farben](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) aus.
 
 2. Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.
 

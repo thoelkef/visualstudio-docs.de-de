@@ -11,60 +11,49 @@ helpviewer_keywords:
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d361e5231d72df81fae164818bbe8341442c9f89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ff5e620d4c53889afe17274364d6f92936025d3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199173"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672741"
 ---
 # <a name="list-disassembly-command"></a>Befehl "Disassemblierung auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-Debug.ListDisassembly [/count:number] [/endaddress:expression]  
-[/codebytes:yes|no] [/source:yes|no] [/symbolnames:yes|no]  
-[/linenumbers:yes|no]  
-```  
-  
-## <a name="switches"></a>Schalter  
- Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufgerufen werden.  
-  
- /count: `number` [oder] /c: `number` [oder] /length: `number` [oder] /l: `number`  
- Optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.  
-  
- /endaddress: `expression` [oder] /e: `expression`  
- Optional. Adresse, an der die Disassemblierung beendet wird.  
-  
- /codebytes:`yes`|`no` [oder] /bytes:`yes`|`no` [oder] /b:`yes`|`no`  
- Optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`sein.  
-  
- /source:`yes`|`no` [oder] /s:`yes`|`no`  
- Optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert ist `no`sein.  
-  
- /symbolnames:`yes`|`no` [oder] /names:`yes`|`no` [oder] /n:`yes`|`no`  
- Optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`sein.  
-  
- [/linenumbers:`yes`|`no`]  
- Optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.  
-  
-## <a name="example"></a>Beispiel  
-  
-```  
->Debug.ListDisassembly  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Befehl „Aufrufliste auflisten“](../../ide/reference/list-call-stack-command.md)   
- [Befehl „Threads auflisten“](../../ide/reference/list-threads-command.md)   
- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.
+
+## <a name="syntax"></a>Syntax
+
+```
+Debug.ListDisassembly [/count:number] [/endaddress:expression]
+[/codebytes:yes|no] [/source:yes|no] [/symbolnames:yes|no]
+[/linenumbers:yes|no]
+```
+
+## <a name="switches"></a>Schalter
+ Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufgerufen werden.
+
+ /count: `number` [oder]/c: `number` [oder]/length: `number` [oder]/l: `number` optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.
+
+ /EndAddress: `expression` [oder]/e: `expression` optional. Adresse, an der die Disassemblierung beendet wird.
+
+ /Codebytes: `yes`&#124; `no` [oder]/bytes: `yes`&#124; `no` [oder]/b: `yes`&#124;`no` ist optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`sein.
+
+ /Source: `yes`&#124; `no` [oder]/s: `yes`&#124; `no` optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert ist `no`sein.
+
+ /SymbolNames: `yes`&#124; `no` [oder]/names: `yes`&#124; `no` [oder]/n: `yes`&#124;`no` ist optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`sein.
+
+ [/linenumbers: `yes`&#124; `no`] Optionale. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.
+
+## <a name="example"></a>Beispiel
+
+```
+>Debug.ListDisassembly
+```
+
+## <a name="see-also"></a>Siehe auch
+ Liste der Befehle zum [Auflisten der Befehls](../../ide/reference/list-call-stack-command.md) [Liste Thread Befehl](../../ide/reference/list-threads-command.md) Befehlsfenster für [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

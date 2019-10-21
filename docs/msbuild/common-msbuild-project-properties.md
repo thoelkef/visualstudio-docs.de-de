@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745885"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381365"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
@@ -32,7 +32,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 
 ## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter
 
-| Eigenschaften- oder Parametername | Beschreibung |
+| Eigenschaften- oder Parametername | BESCHREIBUNG |
 |------------------------------------| - |
 | AdditionalLibPaths | Gibt weitere Ordner an, in denen Compiler nach Verweisassemblys suchen sollen. |
 | AddModules | Bewirkt, dass der Compiler dem Projekt, das Sie kompilieren, sämtliche Typinformationen aus den angegebenen Dateien bereitstellt. Diese Eigenschaft entspricht dem `/addModules`-Compilerschalter. |
@@ -67,7 +67,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | ExcludeDeploymentUrl | Dem Bereitstellungsmanifest wird durch die [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md) ein deploymentProvider-Tag hinzugefügt, wenn die Projektdatei eines der folgenden Elemente enthält:<br /><br /> – UpdateUrl<br />– InstallUrl<br />– PublishUrl<br /><br /> Sie können mithilfe von „ExcludeDeploymentUrl“ jedoch verhindern, dass das „deploymentProvider“-Tag zum Bereitstellungsmanifest hinzugefügt wird, auch wenn eine der vorgenannten URLs angegeben wird. Fügen Sie der Projektdatei zu diesem Zweck die folgende Eigenschaft hinzu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Hinweis**:  „ExcludeDeploymentUrl“ wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE nicht zur Verfügung gestellt und kann nur festgelegt werden, indem die Projektdatei manuell bearbeitet wird. Das Festlegen dieser Eigenschaft hat keine Auswirkung auf die Veröffentlichung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das bedeutet, dass das Tag "deploymentProvider" weiterhin zu der durch "PublishUrl" angegebenen URL hinzugefügt wird. |
 | FileAlignment | Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter. |
 | FrameworkPathOverride | Gibt den Speicherort von *mscorlib.dll* und *microsoft.visualbasic.dll* an. Dieser Parameter entspricht der `/sdkpath`-Option des Compilers *vbc.exe*. |
-| GenerateDocumentation | (Nur Visual Basic ) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer *XML*-Datei gespeichert. |
+| GenerateDocumentation | (C#, Visual Basic) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer *XML*-Datei gespeichert. |
 | GenerateSerializationAssemblies | Gibt an, ob das XML-Serialisierungsassemblys durch *SGen.exe* generiert werden soll. Die Ausführung kann automatisiert, aktiviert oder deaktiviert werden. Diese Eigenschaft wird für Assemblys verwendet, deren Ziel nur das .NET Framework ist. Zum Generieren von XML-Serialisierungsassemblys für .NET Standard oder .NET Core-Assemblys verweisen Sie auf das NuGet-Paket *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: *\obj\debug\\* . |
 | KeyContainerName | Der Name des Containers mit dem Schlüssel für einen starken Namen. |

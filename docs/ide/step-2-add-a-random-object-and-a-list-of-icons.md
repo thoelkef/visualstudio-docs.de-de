@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9d335ba9f85688264882a0cb5fd59946c8c2df7b
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118948"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289704"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen
 In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das Spiel. Jedes Symbol wird zwei zufällig ausgewählten Zellen im TableLayoutPanel auf dem Formular hinzugefügt. Sie verwenden zwei `new`-Anweisungen, um zwei Objekte zu erstellen. Das erste Objekt ist ein <xref:System.Random>-Objekt, wie Sie es auch im Mathematik-Quiz verwendet haben. Es wird in diesem Code verwendet, um Zellen im TableLayoutPanel zufällig auszuwählen. Das zweite Objekt ist möglicherweise neu für Sie – es ist ein <xref:System.Collections.Generic.List%601>-Objekt, das verwendet wird, um die zufällig ausgewählten Symbole zu speichern.
@@ -34,7 +34,10 @@ In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das S
      [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
-     Achten Sie bei der Verwendung von Visual C#-Code darauf, dass Sie den Code nach der öffnenden geschweiften Klammer und direkt nach der Klassendeklaration (`public partial class Form1 : Form`) einfügen. Sofern Sie Visual Basic verwenden, müssen Sie den Code direkt nach der Klassendeklaration (`Public Class Form1`) einfügen.
+      > [!IMPORTANT]
+      > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
+
+      Achten Sie bei der Verwendung von C#-Code darauf, dass Sie den Code nach der öffnenden geschweiften Klammer und direkt nach der Klassendeklaration (`public partial class Form1 : Form`) einfügen. Sofern Sie Visual Basic verwenden, müssen Sie den Code direkt nach der Klassendeklaration (`Public Class Form1`) einfügen.
 
 3. Beim Hinzufügen des Listenobjekts öffnet sich das **IntelliSense**-Fenster. Das folgende Beispiel ist ein Visual C#-Beispiel, aber es wird ein ähnlicher Text angezeigt, wenn Sie eine Liste unter Visual Basic hinzufügen.
 

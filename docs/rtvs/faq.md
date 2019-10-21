@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b67a82a286e3772d87c4cc1ad06a6b8099205c73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4eef8e79023bdd3bde03fec33c16a1c8f6d90446
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550519"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306258"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -107,7 +107,7 @@ A. Informationen dazu finden Sie im Artikel [Execute on remote server (Ausführe
 
 **F. Ich vermisse ein bestimmtes Feature, das in RStudio vorhanden ist!**
 
-A. RStudio ist eine fantastische, ausgereifte IDE für R, die bereits seit vielen Jahren weiterentwickelt wird. Wir versuchen, alle wichtigen Funktionen, die Sie für eine erfolgreiche Entwicklung benötigen, in RTVS bereitzustellen. Unterstützen Sie uns dabei, RTVS weiterzuentwickeln, und machen Sie bei der [RTVS-Umfrage](https://www.surveymonkey.com/r/RTVS1) mit. Außerdem können Sie Probleme auf [GitHub](https://github.com/Microsoft/RTVS/issues/) melden.
+A. RStudio ist eine fantastische, ausgereifte IDE für R, die bereits seit vielen Jahren weiterentwickelt wird. Wir versuchen, alle wichtigen Funktionen, die Sie für eine erfolgreiche Entwicklung benötigen, in RTVS bereitzustellen. Helfen Sie bei der Priorisierung zukünftiger Aufgaben, indem Sie Probleme auf [GitHub](https://github.com/Microsoft/RTVS/issues/) einreichen.
 
 **F. Kann ich zu RTVS beitragen?**
 
