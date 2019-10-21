@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, domain path
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47c2adc2894cc67b337243c30f4a62bc3642ff39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8343f3a417c0c435711fb1df337d47c3a747905
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834170"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653810"
 ---
 # <a name="domain-path-syntax"></a>Domänenpfadsyntax
 In DSL-Definitionen wird eine XPath-artige Syntax für die Suche nach bestimmten Elementen in einem Modell verwendet.
@@ -23,13 +23,13 @@ In DSL-Definitionen wird eine XPath-artige Syntax für die Suche nach bestimmten
 
  Ein Domänenpfad weist die folgende Form auf:
 
- *RelationshipName.PropertyName/!Role*
+ *RelationshipName. PropertyName/! Spielen*
 
  ![CommentReferencesSubjects-Verweisbeziehung](../modeling/media/dsl_reference.png)
 
- Die Syntax durchläuft die Baumstruktur des Modells. Z. B. die domänenbeziehung **"commentreferencessubjects"** in der obigen Abbildung weist eine **Themen** Rolle. Das Pfadsegment **/! Subjectt** gibt an, dass der Pfad auf Elemente, die über Zugriff auf abgeschlossen ist die **Themen** Rolle.
+ Die Syntax durchläuft die Baumstruktur des Modells. Die Domänen Beziehung **commentreferencessubjects** in der obigen Abbildung hat z. b **. eine** betreffrolle. Das Pfad Segment **/! Subjett** gibt an, dass der Pfad für Elemente abgeschlossen ist, auf die über die **Themen** Rolle zugegriffen wird.
 
- Jedes Segment beginnt mit dem Namen einer Domänenbeziehung. Wenn der Durchlauf von einem Element zu einer Beziehung erfolgt, wird das Pfadsegment als *Beziehung.Eigenschaftenname*. Wenn der Hop von einem Link auf ein Element ist, wird das Pfadsegment als *Beziehung /! RoleName*.
+ Jedes Segment beginnt mit dem Namen einer Domänenbeziehung. Wenn der Durchlauf von einem Element zu einer Beziehung erfolgt, wird das Pfad Segment als *Relationship. PropertyName*angezeigt. Wenn der Hop von einem Link zu einem Element erfolgt, wird das Pfad Segment als *Beziehung/! RoleName*.
 
  Die Syntax eines Pfads wird durch Schrägstriche unterteilt. Jedes Pfadsegment ist entweder ein Hop von einem Element zu einem Link (einer Instanz einer Beziehung) oder von einem Link zu einem Element. Pfadsegmente treten häufig paarweise auf. Ein Pfadsegment steht für einen Hop von einem Element zu einem Link, und das nächste Segment steht für einen Hop vom Link zum Element am anderen Ende. (Jeder Link kann auch die Quelle oder das Ziel der Beziehung selbst sein.)
 

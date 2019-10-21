@@ -1,49 +1,49 @@
 ---
-title: 'Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen'
+title: 'Gewusst wie: Verwenden des XML-Schema-Designers mit XML-Literalen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed987a54004004fe8c4fbfba686ae1a35d12bb06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001821"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601849"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Gewusst wie: Verwenden des XML-Schema-Designers mit XML-Literalen
 
 In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Schema in einem Visual Basic-Projekt angezeigt wird.
 
-## <a name="create-a-new-visual-basic-project"></a>Erstellen Sie ein neues Visual Basic-Projekt
+## <a name="create-a-new-visual-basic-project"></a>Erstellen eines neuen Visual Basic Projekts
 
 1. Öffnen Sie Visual Studio.
 
-2. Erstellen Sie ein neues Visual Basic **Konsolen-App** Projekt mit dem Namen **XMLLiterals**.
+2. Erstellen Sie ein neues Visual Basic **Konsolen-App** -Projekt mit dem Namen **XMLLiterals**.
 
-     Das neue Projekt enthält eine Visual Basic-Quelldatei *"Module1.vb"*.
+     Das neue Projekt enthält eine Visual Basic Quelldatei, *Module1. vb*.
 
-## <a name="add-an-existing-xsd-file"></a>Fügen Sie eine vorhandene XSD-Datei hinzu.
+## <a name="add-an-existing-xsd-file"></a>Vorhandene XSD-Datei hinzufügen
 
-1. Öffnen Sie eine neue Textdatei in Editor ein. Kopieren Sie die XML-schemabeispielcode aus [Bestellungsschema](../xml-tools/sample-xsd-file-simple-schema.md) und fügen Sie ihn in die Datei.
+1. Öffnen Sie im Editor eine neue Textdatei. Kopieren Sie den XML-Schema Beispielcode aus dem Bestell [Schema](../xml-tools/sample-xsd-file-simple-schema.md) , und fügen Sie ihn in die Datei ein.
 
-2. Speichern Sie die Datei an einem Ort mit dem Namen *"purchaseorderschema.xsd"*.
+2. Speichern Sie die Datei an einem Speicherort mit dem Namen " *PurchaseOrderSchema. xsd*".
 
-3. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Namen des Projekts, wählen Sie **hinzufügen**, und wählen Sie dann **vorhandenes Element**. Die **vorhandenes Element** Dialogfeld wird angezeigt. Navigieren Sie zu der *"purchaseorderschema.xsd"* , wählen Sie ihn, und klicken Sie dann auf **hinzufügen**.
+3. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektnamen, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Vorhandenes Element**aus. Das Dialogfeld **addebug-Element** wird angezeigt. Navigieren Sie zur Datei " *PurchaseOrderSchema. xsd* ", wählen Sie Sie aus, und klicken Sie dann auf **Hinzufügen**.
 
-     Das Projekt XMLLiterals enthält nun zwei Dateien: *"Module1.vb"* und *"purchaseorderschema.xsd"*.
+     Das Projekt "XMLLiterals" enthält jetzt zwei Dateien: *Module1. vb* und *PurchaseOrderSchema. xsd*.
 
-## <a name="add-code"></a>Fügen Sie Code hinzu
+## <a name="add-code"></a>Code hinzufügen
 
-Hinzufügen von Visual Basic-Code mit einem XML-literal, auf Grundlage der XSD-Datei im Projekt enthalten ist:
+So fügen Sie Visual Basic Code mithilfe eines XML-Literals hinzu, basierend auf der im Projekt enthaltenen XSD-Datei:
 
-1. Ersetzen Sie den Code in *"Module1.vb"* -Datei mit den folgenden Code:
+1. Ersetzen Sie den Code in der Datei *Module1. vb* durch den folgenden Code:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
@@ -72,6 +72,6 @@ Hinzufügen von Visual Basic-Code mit einem XML-literal, auf Grundlage der XSD-D
    End Module
    ```
 
-2. Mit der rechten Maustaste in eines XML-Knotens in einem XML-Literal oder einem XML-Namespaceimport, und wählen Sie **im Schema-Explorer anzeigen**.
+2. Klicken Sie mit der rechten Maustaste auf einen beliebigen XML-Knoten in einem XML-Literaltyp oder auf einen XML-Namespace Import, und wählen Sie **im**
 
-   Die **XML-Schema-Explorer** wird parallel zu Visual Basic-Datei, die mit dem XML-Schemaset verknüpfte XML-Literal angezeigt.
+   Der **XML-Schema-Explorer** wird nebeneinander mit einer Visual Basic-Datei angezeigt, die dem XML-Schema Satz das XML-Literalzeichen zugeordnet ist.
