@@ -155,7 +155,7 @@
         - name: Erstellen von benutzerdefinierten Ansichten von verwalteten Objekten
           items:
             - name: Erstellen von benutzerdefinierten Ansichten von verwalteten Objekten
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: Verwenden des DebuggerTypeProxy-Attributs
               href: using-debuggertypeproxy-attribute.md
             - name: Verwenden des DebuggerDisplay-Attributs
