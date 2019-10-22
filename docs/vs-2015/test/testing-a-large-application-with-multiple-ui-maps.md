@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871585"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672123"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Test einer großen Anwendung mithilfe mehrerer UI-Zuordnungen einsetzen lassen.
 
- **Anforderungen**
+ **Voraussetzungen**
 
 - Visual Studio Enterprise
 
-  Wenn Sie einen neuen Coded UI-Test erstellen, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert das Test Framework standardmäßig Code für den Test in einer [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse. Weitere Informationen zum Aufzeichnen von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) und [Aufbau von Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md).
+  Wenn Sie einen neuen Coded UI-Test erstellen, generiert das [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Test Framework standardmäßig Code für den Test in einer [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse. Weitere Informationen zum Aufzeichnen von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) und [Aufbau von Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md).
 
   Der erzeugte Code für die UI-Zuordnung enthält eine Klasse für jedes Objekt mit der der Test interagiert. Für jede erzeugte Methode wird speziell für diese Methode eine Begleitklasse für Methodenparameter erzeugt. Wenn es eine große Menge an Objekten, Seiten, Formularen und Steuerelementen in der Anwendung gibt, kann die UI-Zuordnung sehr groß werden. Auch wird die Anwendung sehr unhandlich, wenn mehrere Personen an Tests mit einer einzigen, großen UI-Zuordnungsdatei arbeiten.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SetDescription | Microsoft-Dokumentation
+title: 'Idebugapplicationthread:: setDescription | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a81c2062e002d85002b991969c4b8ccd64a82aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 794459f720a24cbcb7fbdda1a006f0825f5ff083
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945694"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574522"
 ---
 # <a name="idebugapplicationthreadsetdescription"></a>IDebugApplicationThread::SetDescription
 Legt die Beschreibung dieses Threads fest.  
@@ -37,7 +37,7 @@ HRESULT SetDescription(
   
 #### <a name="parameters"></a>Parameter  
  `pstrDescription`  
- [in] Die Beschreibung dieses Threads.  
+ in Die Beschreibung dieses Threads.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT SetDescription(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode legt die Beschreibung dieses Threads.  
+ Diese Methode legt die Beschreibung dieses Threads fest.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationThread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)

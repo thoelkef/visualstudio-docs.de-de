@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveGlobalExpressionContextProvider | Microsoft-Dokumentation
+title: 'Idebugapplication:: removeglobalexpressioncontextprovider | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12ac95ee040d3813aa1fcac6358b8328c780a9d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4b948cea02d696b6c176e925adf9c95913be2cd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990788"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571139"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
-Entfernt einen globalen anwendungsausdrücken Kontextanbieter aus dieser Anwendung an.  
+Entfernt einen globalen Ausdrucks Kontext Anbieter aus dieser Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT RemoveGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>Parameter  
  `dwCookie`  
- [in] Die vom zurückgegebene Cookie für die `AddGlobalExpressionContextProvider` Methode, wenn der Anbieter globalen Kontext hinzugefügt wurde.  
+ in Das Cookie, das von der `AddGlobalExpressionContextProvider`-Methode zurückgegeben wurde, als der globale Kontext Anbieter hinzugefügt wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,8 +47,8 @@ HRESULT RemoveGlobalExpressionContextProvider(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `RemoveGlobalExpressionContextProvider` Methode entfernt einen globalen anwendungsausdrücken-Kontext-Anbieter von dieser Anwendung.  
+ Die `RemoveGlobalExpressionContextProvider`-Methode entfernt einen globalen Ausdrucks Kontext Anbieter aus dieser Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
+ [Idebugapplication:: addglobalexpressioncontextprovider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md) -   
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

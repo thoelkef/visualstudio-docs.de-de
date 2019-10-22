@@ -14,39 +14,39 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2070ec6ad01eb62c6be9b6b9acfc91cba7bc863d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005890"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572538"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Unerwarteter Quantifizierer (JavaScript)
-Beim Verfassen Ihrer Musters für reguläre Ausdrücke suchen, haben Sie ein Muster-Element mit einem Faktor unzulässige Wiederholung erstellt. Zum Beispiel das Muster  
+Wenn Sie das Suchmuster für reguläre Ausdrücke erstellen, haben Sie ein pattern-Element mit einem ungültigen Wiederholungs Faktor erstellt. Beispielsweise ist das Muster  
   
 ```js
 /^+/  
 ```  
   
- ist nicht zulässig da das Element ^ (Beginn der Eingabe) sind keine Wiederholung Faktor. Die folgende Tabelle enthält die Elemente, die Wiederholung Faktoren haben können.  
+ ist unzulässig, da das Element ^ (Anfang der Eingabe) keinen Wiederholungs Faktor aufweisen darf. In der folgenden Tabelle werden die Elemente aufgelistet, die keine Wiederholungs Faktoren aufweisen können.  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |^|Beginn der Eingabe|  
 |$|Ende der Eingabe|  
-|\b|Wortgrenze|  
-|\B|Nicht-Wortgrenze|  
+|\b|Wort Grenze|  
+|\B|Nicht-Wort Grenze|  
 |*|NULL oder mehr Wiederholungen|  
-|+|Eine oder mehrere Wiederholungen|  
-|?|NULL oder einem Wiederholungen|  
-|{n}|n Wiederholungen|  
-|{n,}|n oder mehrere Wiederholungen|  
-|{n, m}|Von n bis m Wiederholungen, inklusive|  
+|+|Mindestens eine Wiederholung|  
+|?|Keine oder eine Wiederholung|  
+|Nr|n Wiederholungen|  
+|{n,}|n oder mehr Wiederholungen|  
+|{n, m}|Von n bis m Wiederholungen, einschließlich|  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Stellen Sie sicher, dass Ihre Suche Muster-Element nur zulässige Wiederholung Faktoren enthält.  
+- Stellen Sie sicher, dass das Suchmuster Element nur rechtliche Wiederholungs Faktoren enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

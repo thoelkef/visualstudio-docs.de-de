@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers | Microsoft-Dokumentation
+title: 'Idebugproperty:: EnumMembers | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 527bf9d3c51dad8ffe1645dc42081dc54189ad7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8c5f2cbb107d55e9ffe602cb7d3492701de10c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979161"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562420"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
-Listet die Member einer Eigenschaft.  
+Listet die Member einer Eigenschaft auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,22 +40,22 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parameter  
  `dwFieldSpec`  
- [in] Gibt an, die `DBGPROP_INFO_FLAGS` Konstanten, die bestimmt, welche Felder in den Strukturen der aufgelisteten Debug-Eigenschaft ausgefüllt werden müssen.  
+ in Gibt die `DBGPROP_INFO_FLAGS` Konstanten an, die bestimmen, welche Felder in den aufgelisteten Debug-Eigenschafts Strukturen ausgefüllt werden sollen.  
   
  `nRadix`  
- [in] Die Basis zum Interpretieren von numerische Informationen verwendet werden.  
+ in Radix, das zum Interpretieren numerischer Informationen verwendet werden soll.  
   
  `refiid`  
- [in] Diese IID wird für das Filtern des Enumerators übergeben. Die IID ist eines der `IDebugPropertyEnumType` Schnittstellen, die von erben `IDebugPropertyEnumType_All`.  
+ in Diese IID wird zum Filtern des Enumerators übermittelt. Die IID ist eine der `IDebugPropertyEnumType` Schnittstellen, die von `IDebugPropertyEnumType_All` erben.  
   
  `ppEnum`  
- [out] Gibt die `IEnumDebugPropertyInfo` -Schnittstelle, die die Elementeigenschaften zählt.  
+ vorgenommen Gibt die `IEnumDebugPropertyInfo`-Schnittstelle zurück, die die Element Eigenschaften auflistet.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
- [IDebugPropertyEnumType_All-Schnittstelle](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
+ [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)    
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+ [IDebugPropertyEnumType_All-Schnittstelle](../../winscript/reference/idebugpropertyenumtype-all-interface.md)    
  [IEnumDebugPropertyInfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

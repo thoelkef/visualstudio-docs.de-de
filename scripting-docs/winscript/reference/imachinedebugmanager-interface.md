@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager-Schnittstelle | Microsoft-Dokumentation
+title: Imachinedebugmanager-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,25 +13,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d491b03ba04d346e3a14a08d5e2b6b9d34c7d97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977642"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573920"
 ---
 # <a name="imachinedebugmanager-interface"></a>IMachineDebugManager-Schnittstelle
-Die primäre Schnittstelle für die Debug-Manager werden soll. Diese Schnittstelle ähnelt der `IMachineDebugManagerCookie` Schnittstelle.  
+Die primäre Schnittstelle zum Machine Debug-Manager. Diese Schnittstelle ähnelt der `IMachineDebugManagerCookie`-Schnittstelle.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IMachineDebugManager` Schnittstelle verfügbar macht, die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von `IUnknown` geerbt werden, macht die `IMachineDebugManager`-Schnittstelle die folgenden Methoden verfügbar.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Fügt eine Anwendung in der ausgeführten Anwendungsliste.|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Entfernt eine Anwendung aus der ausgeführten Anwendungsliste.|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Gibt einen Enumerator, der die aktuelle Liste ausgeführter Anwendungen.|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Fügt der Liste der laufenden Anwendungen eine Anwendung hinzu.|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Entfernt eine Anwendung aus der Liste der laufenden Anwendungen.|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Gibt einen Enumerator der aktuellen Liste ausgelaufteter Anwendungen zurück.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)

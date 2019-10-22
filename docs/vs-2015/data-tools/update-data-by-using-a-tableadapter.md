@@ -18,41 +18,41 @@ helpviewer_keywords:
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30d1fd3ee211d6b30f435104a2e2f9b42ed100c0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 312bf75100d2b9b270b45776c5f7ded21ab6ac52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692346"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602331"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualisieren von Daten mit einem TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nachdem die Daten im Dataset geändert und überprüft wurde, können Sie die aktualisierten Daten senden, an einen Databaseby-Aufruf die `Update` -Methode eines TableAdapter. Die `Update` Methode eine einzelnen Datentabelle aktualisiert und führt den richtigen Befehl (INSERT, UPDATE oder DELETE) basierend auf den <xref:System.Data.DataRow.RowState%2A> der einzelnen Datenzeilen in der Tabelle. Wenn Sie ein Dataset verknüpfte Tabellen aufweist, generiert Visual Studio eine TableAdapterManager-Klasse, die Sie verwenden, um die Updates führen. Die TableAdapterManager-Klasse wird sichergestellt, dass Updates vorgenommen werden, in der richtigen Reihenfolge basierend auf den Fremdschlüssel-Einschränkungen, die in der Datenbank definiert sind. Wenn Sie datengebundene Steuerelemente verwenden, erstellt die Databinding-Architektur eine Membervariable der TableAdapterManager namens TableAdapterManager-Klasse. Weitere Informationen finden Sie unter [Übersicht über hierarchische Update](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
-  
+Nachdem die Daten in Ihrem Dataset geändert und überprüft wurden, können Sie die aktualisierten Daten an eine Daten bankdatenbank zurücksenden, indem Sie die `Update`-Methode eines TableAdapter aufrufen. Die `Update`-Methode aktualisiert eine einzelne Datentabelle und führt den korrekten Befehl (INSERT, Update oder DELETE) basierend auf der <xref:System.Data.DataRow.RowState%2A> jeder Daten Zeile in der Tabelle aus. Wenn ein Dataset verknüpfte Tabellen enthält, generiert Visual Studio eine TableAdapterManager-Klasse, die Sie für die Updates verwenden. Die TableAdapterManager-Klasse stellt sicher, dass Aktualisierungen in der richtigen Reihenfolge basierend auf den Foreign Key-Einschränkungen vorgenommen werden, die in der Datenbank definiert sind. Wenn Sie Daten gebundene Steuerelemente verwenden, erstellt die Datenbindung-Architektur eine Member-Variable der TableAdapterManager-Klasse namens TableAdapterManager. Weitere Informationen finden Sie unter [Übersicht über hierarchische Updates](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).
+
 > [!NOTE]
-> Wenn Sie versuchen, eine Datenquelle mit dem Inhalt eines Datasets zu aktualisieren, können Sie Fehler abrufen. Um Fehler zu vermeiden, es wird empfohlen Thatyou platzieren Sie den Code, der Aufrufe des Adapters `Update` Methode innerhalb einer `try` / `catch` Block.  
-  
- Das genaue Verfahren zum Aktualisieren einer Datenquelle kann je nach unternehmensanforderungen variieren, aber es enthält die folgenden Schritte aus:  
-  
-1. Aufrufen des Adapters `Update` -Methode in einer `try` / `catch` Block.  
-  
-2. Lokalisieren der fehlerhaften Datenzeile, falls eine Ausnahme abgefangen wird. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen von Zeilen mit Fehlern](https://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
-  
-3. Beheben Sie das Problem in der Zeile (programmgesteuert oder durch die Bereitstellung der ungültigen Zeile dem Benutzer zur Änderung angezeigt wird), und wiederholen Sie dann das Update (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
-  
-## <a name="savedata-to-a-database"></a>SaveData in einer Datenbank  
- Rufen Sie die `Update` -Methode eines TableAdapter. Übergeben Sie den Namen der Datentabelle, die die Werte enthält, in die Datenbank geschrieben werden sollen.  
-  
-#### <a name="to-update-a-database-by-using-a-tableadapter"></a>Zum Aktualisieren einer Datenbank mit einem TableAdapter  
-  
-- Schließen Sie der TableAdapters`Update` -Methode in einer `try` / `catch` Block. Das folgende Beispiel zeigt, wie Sie den Inhalt des Aktualisieren der `Customers` in Tabelle `NorthwindDataSet` innerhalb einer `try` / `catch` Block.  
-  
+> Wenn Sie versuchen, eine Datenquelle mit dem Inhalt eines Datasets zu aktualisieren, können Sie Fehlermeldungen erhalten. Um Fehler zu vermeiden, wird empfohlen, dass Sie den Code, der die `Update` Methode des Adapters aufruft, in einem `try` / `catch` Blocks ablegen.
+
+ Die genaue Vorgehensweise zum Aktualisieren einer Datenquelle kann je nach Geschäftsanforderungen variieren, umfasst jedoch die folgenden Schritte:
+
+1. Ruft die `Update` Methode des Adapters in einer `try` / `catch` Blocks auf.
+
+2. Lokalisieren der fehlerhaften Datenzeile, falls eine Ausnahme abgefangen wird. Weitere Informationen finden Sie unter Gewusst [wie: Suchen von Zeilen, die Fehler](https://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)enthalten.
+
+3. Beheben Sie das Problem in der Daten Zeile (Programm gesteuert, wenn dies möglich ist, oder indem Sie die ungültige Zeile dem Benutzer zur Änderung präsentieren), und wiederholen Sie dann das Update (<xref:System.Data.DataRow.HasErrors%2A> <xref:System.Data.DataTable.GetErrors%2A>).
+
+## <a name="savedata-to-a-database"></a>SaveData in einer Datenbank
+ Ruft die `Update`-Methode eines TableAdapter auf. Übergeben Sie den Namen der Datentabelle, die die Werte enthält, die in die Datenbank geschrieben werden sollen.
+
+#### <a name="to-update-a-database-by-using-a-tableadapter"></a>So aktualisieren Sie eine Datenbank mit einem TableAdapter
+
+- Schließen Sie die `Update`-Methode des TableAdapter in einem `try` / `catch` Blocks ein. Im folgenden Beispiel wird gezeigt, wie der Inhalt der `Customers` Tabelle in `NorthwindDataSet` innerhalb eines `try` / `catch` Blocks aktualisiert wird.
+
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
-     [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  
-  
-## <a name="see-also"></a>Siehe auch  
+     [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]
+
+## <a name="see-also"></a>Siehe auch
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

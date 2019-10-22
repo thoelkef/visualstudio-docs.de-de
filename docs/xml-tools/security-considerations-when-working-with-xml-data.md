@@ -3,17 +3,17 @@ title: Sicherheitsaspekte beim Arbeiten mit XML-Daten
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926760"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604600"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Sicherheitsüberlegungen beim Arbeiten mit XML-Daten
 
@@ -29,7 +29,7 @@ Der XML-Editor basiert auf dem Visual Studio-Text-Editor. Er beruht auf der <xre
 
 - Schemas, die auf einen externen Speicherort in der Katalog Datei verweisen, werden beim ersten Laden des XML-Editors automatisch heruntergeladen. Mithilfe der <xref:System.Xml.Schema.XmlSchemaSet>-Klasse werden Schemata kompiliert. Die Katalog Datei, die mit dem XML-Editor ausgeliefert wird, enthält keine Links zu externen Schemas. Der Benutzer muss explizit einen Verweis auf das externe Schema hinzufügen, bevor der XML-Editor die Schema Datei herunterlädt. Das Herunterladen von http kann über die **Options Seite verschiedene Tools** für den XML-Editor deaktiviert werden.
 
-- Der XML-Editor verwendet <xref:System.Net> die-Klassen zum Herunterladen von Schemas.
+- Der XML-Editor verwendet die <xref:System.Net> Klassen zum Herunterladen von Schemas.
 
 ## <a name="xslt-debugger"></a>XSLT-Debugger
 

@@ -10,27 +10,27 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 125ddff4bded1a58a7e68e6c8058d24ff16b2be1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12dfad3c0a1197161925ca1f59b865975a42b4d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423093"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666575"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Codegenerierung und T4-Textvorlagen
 
-In Visual Studio eine *T4-Textvorlage* ist eine Mischung von Textblöcken und steuernder Logik, eine Textdatei generiert werden kann. Die steuernde Logik wird als Programmcodefragmente in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]geschrieben. In Visual Studio 2015 Update 2 und höher können Sie Funktionen von C# Version 6.0 in T4-template-Direktiven verwenden. Die generierte Datei kann Text beliebiger Art, z. B. eine Webseite, eine Ressourcendatei oder Programmquellcode in einer beliebigen Sprache sein.
+In Visual Studio ist eine *T4-Textvorlage* eine Mischung aus Textblöcken und Steuerelement Logik, mit der eine Textdatei generiert werden kann. Die steuernde Logik wird als Programmcodefragmente in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]geschrieben. In Visual Studio 2015 Update 2 und höher können Sie Funktionen von C# Version 6.0 in T4-template-Direktiven verwenden. Die generierte Datei kann Text beliebiger Art sein, z. b. eine Webseite, eine Ressourcen Datei oder Programm Quellcode in einer beliebigen Sprache.
 
-Es gibt zwei Arten von T4-Textvorlagen: ausführen und Entwurfszeit.
+Es gibt zwei Arten von T4-Textvorlagen: Laufzeit und Entwurfszeit.
 
-## <a name="run-time-t4-text-templates"></a>Führen Sie die Laufzeit T4-Textvorlagen
+## <a name="run-time-t4-text-templates"></a>T4-Textvorlagen zur Laufzeit
 
-"Vorverarbeitete" Vorlagen, führen Sie die Zeit Vorlagen werden auch in Ihrer Anwendung um Textzeichenfolgen, in der Regel als Teil der Ausgabe ausgeführt. Sie könnten beispielsweise eine Vorlage erstellen, um eine HTML-Seite zu definieren:
+Lauf Zeit Vorlagen werden auch als "vorverarbeitete" Vorlagen bezeichnet und werden in Ihrer Anwendung ausgeführt, um Text Zeichenfolgen zu erstellen, in der Regel als Teil der Ausgabe. Sie könnten beispielsweise eine Vorlage erstellen, um eine HTML-Seite zu definieren:
 
 ```
 <html><body>
@@ -42,23 +42,23 @@ Sie sehen, dass die Vorlage der generierten Ausgabe ähnelt. Die Ähnlichkeit de
 
 Außerdem enthält die Vorlage Programmcodefragmente. Sie können diese Fragmente verwenden, um Abschnitte des Texts zu wiederholen, bedingte Abschnitte zu erstellen und Daten aus Ihrer Anwendung anzuzeigen.
 
-Um die Ausgabe zu generieren, ruft die Anwendung eine Funktion auf, die über die Vorlage generiert wurde. Zum Beispiel:
+Um die Ausgabe zu generieren, ruft die Anwendung eine Funktion auf, die über die Vorlage generiert wurde. Beispiel:
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
 ```
 
-Ihre Anwendung kann auf einem Computer ausführen, die keine Visual Studio installiert.
+Die Anwendung kann auf einem Computer ausgeführt werden, auf dem Visual Studio nicht installiert ist.
 
 Um eine Laufzeitvorlage zu erstellen, fügen Sie Ihrem Projekt eine **Vorverarbeitete Textvorlage** -Datei hinzu. Alternativ können Sie eine Nur-Text-Datei hinzufügen und deren Eigenschaft **Benutzerdefiniertes Tool** auf **TextTemplatingFilePreprocessor**festlegen.
 
-Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md). Weitere Informationen zur Syntax von Vorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
+Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md). Weitere Informationen zur Syntax von Vorlagen finden Sie unter [Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md).
 
-## <a name="design-time-t4-text-templates"></a>Entwerfen der Laufzeit T4-Textvorlagen
+## <a name="design-time-t4-text-templates"></a>Entwurfszeit T4-Textvorlagen
 
-Design-Time-Vorlagen definieren die Teil des Quellcodes sowie andere Ressourcen Ihrer Anwendung. In der Regel auf der Sie verwenden mehrere Vorlagen, die die Daten in einer einzelnen Eingabedatei oder Datenbank gelesen, und Generieren einiger Ihrer *cs*, *vb*, oder in anderen Quelldateien. Aus jeder Vorlage wird eine Datei generiert. Sie werden in Visual Studio oder MSBuild ausgeführt.
+Entwurfszeit Vorlagen definieren einen Teil des Quellcodes und andere Ressourcen Ihrer Anwendung. In der Regel verwenden Sie mehrere Vorlagen, mit denen die Daten in einer einzelnen Eingabedatei oder Datenbank gelesen und einige Ihrer *CS*-, *VB*-oder anderen Quelldateien generiert werden. Aus jeder Vorlage wird eine Datei generiert. Sie werden in Visual Studio oder MSBuild ausgeführt.
 
-Ihre Eingabedaten könnten beispielsweise Konfigurationsdaten in einer XML-Datei sein. Wenn Sie die XML-Datei während der Entwicklung bearbeitet haben, generieren die Textvorlagen Teil des Anwendungscodes neu. Eine der Vorlagen könnte so wie im folgenden Beispiel aussehen:
+Ihre Eingabedaten könnten beispielsweise Konfigurationsdaten in einer XML-Datei sein. Wenn Sie die XML-Datei während der Entwicklung bearbeiten, wird ein Teil des Anwendungs Codes von den Textvorlagen neu generiert. Eine der Vorlagen könnte so wie im folgenden Beispiel aussehen:
 
 ```
 <#@ output extension=".cs" #>
@@ -72,7 +72,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 }
 ```
 
-Abhängig von den Werten in der XML-Datei, die generierte *cs* Datei würde etwa folgendermaßen aussehen:
+Abhängig von den Werten in der XML-Datei würde die generierte *CS* -Datei wie folgt aussehen:
 
 ```
 namespace Fabrikam.FirstJob
@@ -87,7 +87,7 @@ Entwurfszeitvorlagen ermöglichen es, die Konfiguration schneller und zuverläss
 
 Um eine Entwurfszeitvorlage zu erstellen, fügen Sie Ihrem Projekt eine **Textvorlage** -Datei hinzu. Alternativ können Sie eine Nur-Text-Datei hinzufügen und deren Eigenschaft **Benutzerdefiniertes Tool** auf **TextTemplatingFileGenerator**festlegen.
 
-Weitere Informationen finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Weitere Informationen zur Syntax von Vorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
+Weitere Informationen finden Sie unter [Entwurfszeit Code Generierung mithilfe von T4-Text Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Weitere Informationen zur Syntax von Vorlagen finden Sie unter [Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
 > Der Begriff *Modell* wird manchmal verwendet, um Daten zu beschreiben, die von mindestens einer Vorlage gelesen werden. Das Modell kann in einem beliebigen Format in einer beliebigen Art von Datei oder Datenbank vorliegen. Es muss weder ein UML-Modell noch ein domänenspezifisches Sprachmodell sein. Der Begriff „Modell“ gibt lediglich an, dass die Daten hinsichtlich der Geschäftskonzepte definiert werden können, statt so auszusehen wie Code.

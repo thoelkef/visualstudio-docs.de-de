@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetRoot | Microsoft-Dokumentation
+title: 'Iactivescriptauthor:: GetRoot | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cdb3246ccae2eabb34696162f67e82a60374550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca2aab154d56cd98c3c2acede61f86f725ce9c1b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955106"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576186"
 ---
 # <a name="iactivescriptauthorgetroot"></a>IActiveScriptAuthor::GetRoot
-Gibt die `IScriptNode` Stamm des Autors-Skript-Struktur.  
+Gibt den `IScriptNode` Stamm der Skript Struktur des Autors zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetRoot(
   
 #### <a name="parameters"></a>Parameter  
  `ppsp`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptNode` Schnittstelle des Stammknotens.  
+ vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptNode`-Schnittstelle des Stamm Knotens empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,5 +49,5 @@ HRESULT GetRoot(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)    
  [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)

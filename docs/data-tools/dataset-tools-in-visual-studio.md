@@ -42,38 +42,38 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821367"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642122"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 
 > [!NOTE]
-> Datasets und verknüpften Klassen sind ältere Technologien von .NET aus den frühen 2000 s, mit denen Anwendungen arbeiten mit Daten im Arbeitsspeicher, während die Anwendungen aus der Datenbank getrennt werden. Sie sind besonders nützlich für Anwendungen, die Benutzern das Ändern von Daten und speichert die Änderungen in der Datenbank dauerhaft zu ermöglichen. Obwohl Datasets zu einer sehr erfolgreichen Technologie bewährt haben, empfehlen wir, neue Anwendungen für .NET zu Entity Framework verwenden. Entitätsframework bietet eine natürliche Möglichkeit zum Arbeiten mit tabellarischen Daten als Object-Modelle, und es hat es sich um eine einfachere Programmierschnittstelle.
+> Bei Datasets und verknüpften Klassen handelt es sich um Legacy-.NET-Technologien aus den frühen 2000er-Jahren, mit denen Anwendungen mit Daten im Arbeitsspeicher arbeiten können, während die Anwendungen von der Datenbank getrennt werden Sie sind besonders nützlich für Anwendungen, die es Benutzern ermöglichen, Daten zu ändern und die Änderungen wieder in der Datenbank zu speichern. Obwohl es sich bei Datasets um eine sehr erfolgreiche Technologie handelt, empfiehlt es sich, dass neue .NET-Anwendungen Entity Framework verwenden. Entity Framework bietet eine natürlichere Möglichkeit zum Arbeiten mit tabellarischen Daten als Objekt Modelle und verfügt über eine einfachere Programmierschnittstelle.
 
-Ein `DataSet` Objekt ist ein in-Memory-Objekt, das im Wesentlichen eine Mini-Datenbank ist. Es enthält `DataTable`, `DataColumn`, und `DataRow` Objekte in der Sie speichern und Ändern von Daten aus einer oder mehreren Datenbanken ohne eine geöffnete Verbindung verwalten zu müssen. Das Dataset enthält Informationen zu Änderungen an Daten, damit Updates zurück an die Datenbank gesendet werden, wenn Ihre Anwendung die Verbindung wiederhergestellt wird und nachverfolgt werden können.
+Ein `DataSet`-Objekt ist ein in-Memory-Objekt, das im Wesentlichen eine Mini Datenbank ist. Sie enthält `DataTable`-, `DataColumn`-und `DataRow`-Objekte, in denen Sie Daten aus einer oder mehreren Datenbanken speichern und ändern können, ohne dass eine offene Verbindung aufrechterhalten werden muss. Das Dataset verwaltet Informationen zu Änderungen an den Daten, sodass Updates nachverfolgt und zurück an die Datenbank gesendet werden können, wenn die Anwendung wieder verbunden wird.
 
-Datasets und verknüpften Klassen sind in definiert die <xref:System.Data?displayProperty=fullName> Namespace in der .NET-API. Sie können erstellen und ändern die Datasets dynamisch im Code mithilfe von ADO.NET. Die Dokumentation in diesem Abschnitt wird das Arbeiten mit Datasets mithilfe von Visual Studio-Designer veranschaulicht. Datasets, die mithilfe von Designern erstellt werden **TableAdapter** Objekte für die Interaktion mit der Datenbank. Verwenden Sie die Datasets, die programmgesteuert erstellt werden **DataAdapter** Objekte. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter ["DataAdapters" und "DataReaders"](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Datasets und zugehörige Klassen werden im <xref:System.Data?displayProperty=fullName>-Namespace in der .NET-API definiert. Sie können Datasets mithilfe von ADO.NET dynamisch im Code erstellen und ändern. In der Dokumentation in diesem Abschnitt wird gezeigt, wie mit Datasets mithilfe von Visual Studio-Designern gearbeitet wird. Datasets, die über Designer erstellt werden, verwenden **TableAdapter** -Objekte, um mit der Datenbank zu interagieren. Datasets, die Programm gesteuert erstellt werden, verwenden **DataAdapter** -Objekte. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter [DataAdapters und DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-Wenn Ihre Anwendung muss nur das Lesen von Daten aus einer Datenbank und nicht ausgeführt werden, Updates, hinzufügt oder löscht, in der Regel erhalten Sie eine bessere Leistung mit einem `DataReader` Objekt zum Abrufen von Daten in eine generische `List` Objekt oder ein anderes Auflistungsobjekt. Wenn Sie die Daten anzeigen, Sie können die Benutzeroberfläche der Auflistung Datenbindung.
+Wenn Ihre Anwendung nur Daten aus einer Datenbank lesen und keine Updates, Hinzufügungen oder Löschungen ausführen muss, können Sie in der Regel eine bessere Leistung erzielen, indem Sie ein `DataReader` Objekt zum Abrufen von Daten in ein generisches `List` Objekt oder ein anderes Auflistungs Objekt verwenden. Wenn Sie die Daten anzeigen, können Sie die Benutzeroberfläche an die Sammlung binden.
 
-## <a name="dataset-workflow"></a>DataSet-workflow
+## <a name="dataset-workflow"></a>DataSet-Workflow
 
-Visual Studio bietet Tools zum Arbeiten mit Datasets zu vereinfachen. Der grundlegende Workflow für die End-to-End ist:
+Visual Studio stellt Tools bereit, um die Arbeit mit Datasets zu vereinfachen. Der grundlegende End-to-End-Workflow lautet wie folgt:
 
-- Verwenden der [Fenster "Datenquellen"](add-new-data-sources.md#data-sources-window) um ein neues Dataset aus einem oder mehreren Datenquellen zu erstellen. Verwenden der **Dataset-Designer** , konfigurieren das Dataset und seine Eigenschaften festlegen. Beispielsweise müssen Sie angeben, Tabellen, zwischen denen aus der Datenquelle eingeschlossen werden und welche Spalten aus jeder Tabelle. Wählen Sie sorgfältig, um die Menge an Arbeitsspeicher zu sparen, die das Dataset erforderlich sind. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Verwenden Sie das [Fenster Datenquellen](add-new-data-sources.md#data-sources-window) , um ein neues Dataset aus einer oder mehreren Datenquellen zu erstellen. Verwenden Sie die **DataSet-Designer** , um das DataSet zu konfigurieren und seine Eigenschaften festzulegen. Beispielsweise müssen Sie angeben, welche Tabellen aus der Datenquelle eingeschlossen werden sollen und welche Spalten aus jeder Tabelle enthalten sein sollen. Wählen Sie sorgfältig aus, um den Speicherplatz zu sparen, der für das DataSet erforderlich ist. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-- Geben Sie die Beziehungen zwischen den Tabellen, sodass Fremdschlüssel richtig behandelt werden. Weitere Informationen finden Sie unter [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
+- Geben Sie die Beziehungen zwischen den Tabellen an, sodass Fremdschlüssel ordnungsgemäß verarbeitet werden. Weitere Informationen finden Sie unter [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-- Verwenden der **TableAdapter-Konfigurations-Assistenten** an die Abfrage oder gespeicherte Prozedur, die das Dataset füllt und welche Datenbankvorgänge (Update, Delete usw.) zu implementieren. Weitere Informationen finden Sie in den folgenden Themen:
+- Verwenden Sie den **TableAdapter-Konfigurations-Assistenten** , um die Abfrage oder die gespeicherte Prozedur anzugeben, die das DataSet auffüllt, und welche Daten Bank Vorgänge (aktualisieren, löschen usw.) implementiert werden. Weitere Informationen finden Sie in den folgenden Themen:
 
   - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -83,17 +83,17 @@ Visual Studio bietet Tools zum Arbeiten mit Datasets zu vereinfachen. Der grundl
 
   - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
 
-- Fragen Sie ab aus, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] ermöglicht [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) für Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+- Abfragen und Durchsuchen der Daten im DataSet. Weitere Informationen finden Sie unter [Abfragen von Datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] aktiviert [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) über Daten in einem <xref:System.Data.DataSet>-Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 
-- Verwenden der **Datenquellen** Fenster, um Benutzeroberflächen-Steuerelemente an das Dataset oder einzelne Spalten binden und angeben, welche Spalten Benutzer bearbeitet werden. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Verwenden Sie das Fenster **Datenquellen** , um Steuerelemente der Benutzeroberfläche an das DataSet oder die einzelnen Spalten zu binden und um anzugeben, welche Spalten vom Benutzer bearbeitet werden können. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="datasets-and-n-tier-architecture"></a>Datasets und N-schichtige Architektur
+## <a name="datasets-and-n-tier-architecture"></a>Datasets und N-Tier-Architektur
 
-Weitere Informationen zu Datasets in N-Tier-Anwendungen finden Sie unter [arbeiten mit Datasets in n-schichtigen Anwendungen](../data-tools/work-with-datasets-in-n-tier-applications.md).
+Informationen zu Datasets in n-Tier-Anwendungen finden Sie unter [Arbeiten mit Datasets in n-Tier-Anwendungen](../data-tools/work-with-datasets-in-n-tier-applications.md).
 
 ## <a name="datasets-and-xml"></a>Datasets und XML
 
-Informationen zum Konvertieren von Datasets in und aus XML finden Sie unter [liest XML-Daten in ein Dataset](../data-tools/read-xml-data-into-a-dataset.md) und [Speichern eines Datasets als XML](../data-tools/save-a-dataset-as-xml.md).
+Informationen zum Umstellen von Datasets in und aus XML finden [Sie unter Lesen von XML-Daten in ein DataSet](../data-tools/read-xml-data-into-a-dataset.md) und [Speichern eines Datasets als XML](../data-tools/save-a-dataset-as-xml.md).
 
 ## <a name="see-also"></a>Siehe auch
 

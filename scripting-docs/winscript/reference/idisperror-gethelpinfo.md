@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHelpInfo | Microsoft-Dokumentation
+title: 'Idisperror:: gethelpinfo | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84e57e97bb781ad3ea0be1ac6766fd94f6f5c30
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446913"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573136"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Gibt den Pfad der Hilfedatei und des Themas, das den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
+Gibt, sofern möglich, den Pfad der Hilfedatei und die Kontext-ID des Themas zurück, in dem der Fehler erläutert wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrFileName`  
- [out] Eine Zeichenfolge, die den vollqualifizierten Pfad der Hilfedatei enthält. Wenn keine Hilfe-Datei vorhanden ist, oder ein Fehler auftritt, ist der Rückgabewert NULL.  
+ vorgenommen Zeichenfolge, die den voll qualifizierten Pfad der Hilfedatei enthält. Wenn keine Hilfedatei vorhanden ist oder ein Fehler auftritt, ist der Rückgabewert NULL.  
   
  `pdwContext`  
- [out] Die Hilfekontext-ID für den Fehler. Wenn keine Hilfe-Datei vorhanden ist (Wenn `pbstrFileName` NULL ist), dieser Parameter hat keine Bedeutung.  
+ vorgenommen Die Hilfe Kontext-ID für den Fehler. Wenn keine Hilfedatei vorhanden ist (wenn `pbstrFileName` NULL ist), hat dieser Parameter keine Bedeutung.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,12 +49,12 @@ HRESULT GetHelpInfo(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_FAIL`|Ein anbieterspezifischer Fehler ist aufgetreten.|  
+|`E_FAIL`|Ein Anbieter spezifischer Fehler ist aufgetreten.|  
 |`E_INVALIDARG`|`pbstrFileName` oder `pdwContext` war NULL.|  
-|`E_OUTOFMEMORY`|Der Anbieter konnte nicht genügend Speicher in den Pfad der Hilfe zurückgegeben.|  
+|`E_OUTOFMEMORY`|Der Anbieter konnte nicht genügend Arbeitsspeicher zuordnen, um den Hilfe Dateipfad zurückzugeben.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Pfad der Hilfedatei und des Themas, das den Fehler, wenn möglich wird erläutert, die Kontext-ID zurück.  
+ Diese Methode gibt, sofern möglich, den Pfad der Hilfedatei und die Kontext-ID des Themas zurück, das den Fehler erläutert.  
   
 > [!NOTE]
 > Diese Methode ist nicht implementiert.  

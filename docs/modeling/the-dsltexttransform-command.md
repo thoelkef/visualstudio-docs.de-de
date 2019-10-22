@@ -4,31 +4,31 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, commands
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d83da450014ebf29e2882438d27f9284c9bbbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a303fc3ddb880402e3f998b2360122f6f056b757
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001424"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605929"
 ---
 # <a name="the-dsltexttransform-command"></a>Der DslTextTransform-Befehl
-DslTextTransform.cmd ist es sich um ein Skript, das Aufrufe TextTransform.exe mit allgemeinen Optionen ausführt. Können Sie DslTextTransformation.cmd einen nächtlichen Buildvorgang von Automatisieren Ihrer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Projekte. Weitere Informationen finden Sie unter [Generieren von Dateien mit dem TextTransform-Hilfsprogramm](../modeling/generating-files-with-the-texttransform-utility.md).
+Dsltexttransform. cmd ist ein Skript, das "textTransform. exe" aufruft und mit allgemeinen Optionen ausführt. Sie können dsltexttransformation. cmd verwenden, um einen nächtlichen Build ihrer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Projekte zu automatisieren. Weitere Informationen finden Sie unter [Erstellen von Dateien mit dem textTransform-Hilfsprogramm](../modeling/generating-files-with-the-texttransform-utility.md).
 
- DslTextTransform.cmd befindet sich im folgenden Verzeichnis:
+ Die Datei "dsltexttransform. cmd" befindet sich im folgenden Verzeichnis:
 
- **\<Visual Studio SDK-Installationspfad > \VisualStudioIntegration\Tools\Bin**
+ **\<Visual Studio SDK-Installationspfad > \visualstudiointegration\tools\bin**
 
- Sie können die folgenden Argumente als Eingabe für DslTextTransform.cmd angeben:
+ Sie können die folgenden Argumente als Eingabe für "dsltexttransform. cmd" angeben:
 
-- Das Ausgabeverzeichnis des modellprojekts Domäne.
+- Das Ausgabeverzeichnis des Domänen Modellprojekts.
 
-- Das Ausgabeverzeichnis des Projekts Designer Definition.
+- Das Ausgabeverzeichnis des Designer Definitions Projekts.
 
-- Der Speicherort der Textvorlagendatei.
+- Der Speicherort der Textvorlagen Datei.
 
-  DslTextTransform.cmd verarbeitet die angegebene Vorlage Textdatei mit dem Standard-anweisungsprozessoren und Assemblys. Wenn Sie benutzerdefinierte anweisungsprozessoren erstellen, können Sie Ihre eigenen Batch-Datei erstellen, die TextTransform.exe aufruft. In dieser Batchdatei können Sie Ihre Assemblys und die zugeordnete benutzerdefinierten anweisungsprozessoren angeben.
+  Dsltexttransform. cmd verarbeitet die angegebene Textvorlagen Datei mithilfe der Standard direktivenprozessoren und-Assemblys. Wenn Sie benutzerdefinierte direktivenprozessoren erstellen, können Sie eine eigene Batchdatei erstellen, die "textTransform. exe" aufruft. In dieser Batchdatei können Sie die Assemblys und die zugeordneten benutzerdefinierten direktivenprozessoren angeben.

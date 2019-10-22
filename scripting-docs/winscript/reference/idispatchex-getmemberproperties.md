@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Microsoft-Dokumentation
+title: 'IDispatchEx:: getmembership Properties | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000797"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574096"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
-Ruft ein Element der Eigenschaften ab.  
+Ruft die Eigenschaften eines Members ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,37 +39,37 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Parameter  
  `id`  
- Bezeichnet den Member. Verwendet `GetDispID` oder `GetNextDispID` die Dispatch-ID abgerufen.  
+ Bezeichnet den Member. Verwendet `GetDispID` oder `GetNextDispID`, um den Dispatchbezeichner abzurufen.  
   
  `grfdexFetch`  
- Bestimmt, welche Eigenschaften abgerufen. Dies liegt möglicherweise eine Kombination der Werte unter `pgrfdex` bzw. eine Kombination der folgenden Werte:  
+ Bestimmt, welche Eigenschaften abgerufen werden sollen. Dabei kann es sich um eine Kombination der unter `pgrfdex` und/oder einer Kombination der folgenden Werte aufgeführten Werte handeln:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|grfdexPropCanAll|Kombiniert FdexPropCanGet, FdexPropCanPut, FdexPropCanPutRef, FdexPropCanCall, FdexPropCanConstruct und FdexPropCanSourceEvents.|  
-|grfdexPropCannotAll|Kombiniert FdexPropCannotGet, FdexPropCannotPut, FdexPropCannotPutRef, FdexPropCannotCall, FdexPropCannotConstruct und FdexPropCannotSourceEvents.|  
-|grfdexPropExtraAll|FdexPropNoSideEffects kombiniert FdexPropDynamicType.|  
-|grfdexPropAll|Kombiniert GrfdexPropCanAll, GrfdexPropCannotAll und GrfdexPropExtraAll.|  
+|GRF-proppropcanall|Kombiniert fdexpropcanget, fdexpropcanput, fdexpropcanputref, fdexpropcancall, fdexpropcanconstruct und fdexpropcansourceevents.|  
+|GRF-propcannotall|Kombiniert fdexpropcannotget, fdexpropcannotput, fdexpropcannotputref, fdexpropcannotcall, fdexpropcannotconstruct und fdexpropcannotsourceevents.|  
+|GRF-propextraall|Kombiniert ' f ' propnosideeffects ' und ' ' ' ' '.|  
+|GRF-proppropall|Kombiniert "GRF" propcanall, "GRF" propcannotall und "GRF dexpropextraall".|  
   
  `pgrfdex`  
- Adresse von einem `DWORD` , empfängt die angeforderten Eigenschaften. Dies kann eine Kombination der folgenden Werte sein:  
+ Adresse einer `DWORD`, die die angeforderten Eigenschaften empfängt. Dies kann eine Kombination der folgenden Werte sein:  
   
 |Wert|Bedeutung|  
 |-----------|-------------|  
-|fdexPropCanGet|Das Element kann mit DISPATCH_PROPERTYGET abgerufen werden.|  
-|fdexPropCannotGet|Das Element kann nicht mithilfe von DISPATCH_PROPERTYGET abgerufen werden.|  
-|fdexPropCanPut|Das Element kann mit DISPATCH_PROPERTYPUT festgelegt werden.|  
-|fdexPropCannotPut|Das Element kann nicht mithilfe von DISPATCH_PROPERTYPUT festgelegt werden.|  
-|fdexPropCanPutRef|Das Element kann mit DISPATCH_PROPERTYPUTREF festgelegt werden.|  
-|fdexPropCannotPutRef|Das Element kann nicht mithilfe von DISPATCH_PROPERTYPUTREF festgelegt werden.|  
-|fdexPropNoSideEffects|Das Element ist nicht keine Nebeneffekte haben. Ein Debugger kann z. B. sicher Get/Set/Aufruf dieses Members ohne Ändern des Status des Skripts, die gedebuggt wird.|  
-|fdexPropDynamicType|Das Element ist dynamisch und kann während der Lebensdauer des Objekts ändern.|  
-|fdexPropCanCall|Das Element kann als eine Methode mithilfe von DISPATCH_METHOD aufgerufen werden.|  
-|fdexPropCannotCall|Das Element kann nicht als eine Methode mithilfe von DISPATCH_METHOD aufgerufen werden.|  
-|fdexPropCanConstruct|Das Element kann als mit DISPATCH_CONSTRUCT Konstruktor aufgerufen werden.|  
-|fdexPropCannotConstruct|Das Element kann nicht als einen Konstruktor mit DISPATCH_CONSTRUCT aufgerufen werden.|  
-|fdexPropCanSourceEvents|Das Element kann Ereignisse ausgelöst werden.|  
-|fdexPropCannotSourceEvents|Das Element kann keine Ereignisse auslösen.|  
+|' f ' propcanget|Der Member kann mithilfe von DISPATCH_PROPERTYGET abgerufen werden.|  
+|' f ' propcannotget|Der Member kann nicht mithilfe von DISPATCH_PROPERTYGET abgerufen werden.|  
+|' f ' propcanput|Der Member kann mithilfe von DISPATCH_PROPERTYPUT festgelegt werden.|  
+|' f ' propcannotput|Der Member kann nicht mithilfe von DISPATCH_PROPERTYPUT festgelegt werden.|  
+|' f ' propcanputref|Der Member kann mithilfe von DISPATCH_PROPERTYPUTREF festgelegt werden.|  
+|' f ' propcannotputref|Der Member kann nicht mithilfe von DISPATCH_PROPERTYPUTREF festgelegt werden.|  
+|"f" propnosideeffects|Der Member hat keine Nebeneffekte. Ein Debugger kann diesen Member z. b. sicher abrufen, festlegen/abrufen, ohne den Status des Skripts zu ändern, das gedebuggt wird.|  
+|' f ' propdynamictype|Der-Member ist dynamisch und kann sich während der Lebensdauer des-Objekts ändern.|  
+|fdexpropcancall|Der Member kann mithilfe von DISPATCH_METHOD als Methode aufgerufen werden.|  
+|fdexpropcannotcall|Der Member kann nicht als Methode mithilfe von DISPATCH_METHOD aufgerufen werden.|  
+|' f ' propcanconstruct|Der Member kann mithilfe von DISPATCH_CONSTRUCT als Konstruktor aufgerufen werden.|  
+|' f ' propcannotconstruct|Der Member kann nicht als Konstruktor mit DISPATCH_CONSTRUCT aufgerufen werden.|  
+|' f ' propcansourceevents|Der Member kann Ereignisse auslösen.|  
+|' f ' propcannotsourceevents|Der Member kann keine Ereignisse auslösen.|  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -77,7 +77,7 @@ HRESULT GetMemberProperties(
 |||  
 |-|-|  
 |`S_OK`|Erfolgreich.|  
-|`DISP_E_UNKNOWNNAME`|Der Name wurde nicht bekannt.|  
+|`DISP_E_UNKNOWNNAME`|Der Name war nicht bekannt.|  
   
 ## <a name="example"></a>Beispiel  
   
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx-Schnittstelle](../../winscript/reference/idispatchex-interface.md)    
+ [IDispatchEx:: GetDispID-](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

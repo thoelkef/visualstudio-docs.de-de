@@ -10,48 +10,45 @@ helpviewer_keywords:
 - upgrade Devenv switch
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24bb6160f9895f129c4d7d36c2b0aa8a56ca282a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68176926"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657901"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Aktualisiert die Projektmappendatei und alle zugehörigen Projektdateien bzw. die angegebene Projektdatei mit den aktuellen , für diese Dateien gültigen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Formaten.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-devenv SolutionFile | ProjectFile /upgrade  
-```  
-  
-## <a name="arguments"></a>Argumente  
- `SolutionFile`  
- Dies ist erforderlich, sofern Sie eine vollständige Projektmappe und deren Projekte aktualisieren. Der Pfad und Name einer Projektmappendatei. Es reicht aus, nur den Namen der Projektmappendatei oder einen vollständigen Pfad und den Namen der Projektmappendatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.  
-  
- `ProjectFile`  
- Dies ist erforderlich, sofern Sie ein einzelnes Projekt aktualisieren. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Es reicht aus, nur den Namen der Projektdatei oder einen vollständigen Pfad und den Namen der Projektdatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.  
-  
-## <a name="remarks"></a>Anmerkungen  
- Es werden automatisch Sicherungen und in ein Verzeichnis mit der Bezeichnung "Backup" kopiert, das im aktuellen Verzeichnis erstellt wurde.  
-  
- Der Quellcodeverwaltung unterliegende Projektmappen oder Projekte müssen ausgecheckt werden, bevor sie aktualisiert werden können.  
-  
- Bei Verwendung des Schalters `/upgrade` wird [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nicht gestartet. Die Ergebnisse des Upgrades sind im Upgradebericht für die Entwicklungssprache der Projektmappe oder des Projekts aufgeführt. Informationen zu Fehlern oder zur Verwendung werden nicht zurückgegeben. Weitere Informationen zum Upgraden von Projekten in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] finden Sie unter [Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
-  
-## <a name="example"></a>Beispiel  
- In diesem Beispiel wird eine Projektmappendatei mit dem Namen "MyProject.sln" im Standardordner für [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projektmappen aktualisiert.  
-  
-```  
-devenv "MyProject.sln" /upgrade  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
- [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
+Aktualisiert die Projektmappendatei und alle zugehörigen Projektdateien bzw. die angegebene Projektdatei mit den aktuellen , für diese Dateien gültigen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Formaten.
+
+## <a name="syntax"></a>Syntax
+
+```
+devenv SolutionFile | ProjectFile /upgrade
+```
+
+## <a name="arguments"></a>Argumente
+ `SolutionFile` Dies ist erforderlich, sofern Sie eine vollständige Projektmappe und deren Projekte aktualisieren. Der Pfad und Name einer Projektmappendatei. Es reicht aus, nur den Namen der Projektmappendatei oder einen vollständigen Pfad und den Namen der Projektmappendatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.
+
+ `ProjectFile` Dies ist erforderlich, sofern Sie ein einzelnes Projekt aktualisieren. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Es reicht aus, nur den Namen der Projektdatei oder einen vollständigen Pfad und den Namen der Projektdatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.
+
+## <a name="remarks"></a>Anmerkungen
+ Es werden automatisch Sicherungen und in ein Verzeichnis mit der Bezeichnung "Backup" kopiert, das im aktuellen Verzeichnis erstellt wurde.
+
+ Der Quellcodeverwaltung unterliegende Projektmappen oder Projekte müssen ausgecheckt werden, bevor sie aktualisiert werden können.
+
+ Bei Verwendung des Schalters `/upgrade` wird [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nicht gestartet. Die Ergebnisse des Upgrades sind im Upgradebericht für die Entwicklungssprache der Projektmappe oder des Projekts aufgeführt. Informationen zu Fehlern oder zur Verwendung werden nicht zurückgegeben. Weitere Informationen zum Upgraden von Projekten in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] finden Sie unter [Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).
+
+## <a name="example"></a>Beispiel
+ In diesem Beispiel wird eine Projektmappendatei mit dem Namen "MyProject.sln" im Standardordner für [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projektmappen aktualisiert.
+
+```
+devenv "MyProject.sln" /upgrade
+```
+
+## <a name="see-also"></a>Siehe auch
+ Gewusst wie: Problembehandlung bei nicht erfolgreichen [Visual Studio-Projekt Upgrades](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [devenv-Befehls Zeilenschalter](../../ide/reference/devenv-command-line-switches.md)

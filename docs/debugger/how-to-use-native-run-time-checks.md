@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Systemeigene Laufzeitüberprüfungen verwenden | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden von nativen Laufzeitüberprüfungen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211023"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430553"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen
-In Visual C++ können Sie mit systemeigenen [runtime_checks](/cpp/preprocessor/runtime-checks) häufige Laufzeitfehler abfangen. Beispiele:
+# <a name="how-to-use-native-run-time-checks"></a>Gewusst wie: Verwenden von systemeigenen Laufzeitprüfungen
+In einem Visual Studio C++ -Projekt können Sie Native [runtime_checks](/cpp/preprocessor/runtime-checks) verwenden, um häufige Laufzeitfehler wie die folgenden zu erfassen:
 
 - Beschädigung des Stapelzeigers
 
@@ -57,7 +57,7 @@ In Visual C++ können Sie mit systemeigenen [runtime_checks](/cpp/preprocessor/r
 
 - Datenverlust nach einer Zuordnung zu einer kürzeren Variablen
 
-  Wenn Sie **/RTC** mit einem optimierten (**/O**) Build verwenden, wird ein Compilerfehler ausgelöst. Wenn Sie in einem optimierten Build ein `runtime_checks` -Pragma verwenden, hat das Pragma keine Auswirkungen.
+  Wenn Sie **/RTC** mit einem optimierten ( **/O**) Build verwenden, wird ein Compilerfehler ausgelöst. Wenn Sie in einem optimierten Build ein `runtime_checks` -Pragma verwenden, hat das Pragma keine Auswirkungen.
 
   Wenn Sie ein Programm mit aktivierten Laufzeitüberprüfungen debuggen, wird das Programm beim Auftreten eines Laufzeitfehlers standardmäßig unterbrochen und wechselt in den Debugger. Sie können dieses Standardverhalten für jede Laufzeitüberprüfung ändern. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md).
 

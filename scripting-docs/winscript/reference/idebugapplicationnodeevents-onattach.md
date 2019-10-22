@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Microsoft-Dokumentation
+title: 'Idebugapplicationnodeevents:: onattach | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d606292eda60fbb367802dbd5df973b933f3fe14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e45af6b931dad28a41f8f4453db9fab96405df3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821958"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574690"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten an einem übergeordneten Knoten angefügt wurde.  
+Behandelt ein Ereignis, das signalisiert, dass das debuganwendungsobjekt an einen übergeordneten Knoten angefügt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parameter  
  `prddpParent`  
- [in] Der Knoten der Debug-Anwendung, der das übergeordnete Element dieses Knotens ist.  
+ in Der debuganwendungsknoten, der diesem Knoten übergeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,11 +47,11 @@ HRESULT onAttach(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten an einem übergeordneten Knoten angefügt wurde.  
+ Diese Methode behandelt ein Ereignis, das Kenn spricht, dass das Objekt zum debuggingknoten an einen übergeordneten Knoten angefügt wurde.  
   
- Implementierungen der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
+ Implementierer der `IDebugApplicationNode`-Schnittstelle gibt dieses Ereignis aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
+ [Idebugapplicationnodeevents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)    
+ [Idebugapplicationnodeevents:: ondetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md) -   
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

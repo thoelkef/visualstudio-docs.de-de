@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: Setdebugdocumenthost | Microsoft-Dokumentation'
+title: 'Idebugdocumenthelper:: setdebug | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b32d14f3a7d65bee7bdb587a35dfe05bb06f5e1e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574654"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-Legt die `IDebugDocumentHost` für dieses Dokument.  
+Legt die `IDebugDocumentHost` für dieses Dokument fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>Parameter  
  `pddh`  
- [in] Das Hostelement des Dokuments Debuggen.  
+ in Der debugdokumenthost.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,8 +47,8 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `IDebugDocumentHost` Schnittstelle wird verwendet, für die Smarthost-Syntaxfarben, verzögerte Text abrufen und Zurückgeben von Steuern Objekte für eine neu erstellte Kontexte zu dokumentieren.  
+ Die `IDebugDocumentHost`-Schnittstelle wird für die Farbgebung von intelligenten Hosts, das Abrufen von verzögertem Text und das Zurückgeben von steuerungsobjekten für neu erstellte Dokument Kontexte verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
  [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)

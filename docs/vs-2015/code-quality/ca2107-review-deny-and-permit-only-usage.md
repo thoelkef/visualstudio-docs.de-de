@@ -1,5 +1,5 @@
 ---
-title: 'CA2107: Deny und PermitOnly überprüfen | Microsoft-Dokumentation'
+title: 'CA2107: Überprüfen Sie Deny und nur die Verwendung zulassen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2107
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 32339852d67d4f3f28fedd204a056440ad49e075
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687389"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665968"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Verwendung von Deny und PermitOnly überprüfen.
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Verwendung von Deny und PermitOnly überprüfen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,51 +33,51 @@ ms.locfileid: "65687389"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Eine Methode enthält eine sicherheitsüberprüfung, die angibt, die Sicherheitsaktion PermitOnly "oder" ablehnen.
+ Eine Methode enthält eine Sicherheitsüberprüfung, die die PermitOnly-oder Deny-Sicherheitsaktion angibt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die [verwenden der PermitOnly-Methode](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) und <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Sicherheitsaktionen verwendet werden sollte, nur von Kenntnissen der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Sicherheit. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.
+ Der, der [die PermitOnly-Methode](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) und die <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Sicherheitsaktionen verwendet, sollte nur von denjenigen verwendet werden, die über erweiterte Kenntnisse der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Sicherheit verfügen. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.
 
- Verweigern ändert das Standardverhalten des Stackwalks, die als Reaktion auf eine sicherheitsforderung auftritt. Sie können Berechtigungen angeben, die für die Dauer der Deny-Methode, unabhängig von den tatsächlichen Berechtigungen der Aufrufer in der Aufrufliste nicht gewährt werden müssen. Wenn der Stackwalk erkennt eine Methode, die durch das Verweigern gesichert ist, und der Stackwalk schlägt, wenn die geforderte Berechtigung in der verweigerten Berechtigungen enthalten ist fehl. PermitOnly ändert auch das Standardverhalten des Stackwalks. Sie können Code nur die Berechtigungen an, die gewährt werden können, unabhängig von den Berechtigungen des Aufrufers. Wenn der Stackwalk erkennt eine Methode, die durch PermitOnly gesichert ist, und der Stackwalk schlägt, wenn die angeforderte Berechtigung nicht mit den Berechtigungen enthalten ist, die durch die PermitOnly angegeben werden fehl.
+ Deny ändert das Standardverhalten des Stackwalk, der als Reaktion auf eine Sicherheitsanforderung auftritt. Sie können Berechtigungen angeben, die für die Dauer der verweigerten Methode nicht erteilt werden dürfen, unabhängig von den tatsächlichen Berechtigungen der Aufrufer in der Aufruf Listen. Wenn der Stackwalk eine Methode erkennt, die durch Deny geschützt ist, und wenn die angeforderte Berechtigung in den verweigerten Berechtigungen enthalten ist, schlägt der Stapel Durchlauf fehl. PermitOnly ändert auch das Standardverhalten des Stackwalk. Es ermöglicht es Code, nur die Berechtigungen anzugeben, die unabhängig von den Berechtigungen der Aufrufer erteilt werden können. Wenn der Stackwalk eine Methode erkennt, die von PermitOnly geschützt ist, und wenn die angeforderte Berechtigung nicht in den Berechtigungen enthalten ist, die von PermitOnly angegeben werden, schlägt der Stapel Durchlauf fehl.
 
- Sicherheitsrisiken aufgrund ihrer begrenzten nutzen und ein leicht unterschiedliches Verhalten sollte der Code, der für diese Aktionen beruht sorgfältig bewertet werden. Nehmen wir einmal die folgende Situation:
+ Code, der sich auf diese Aktionen stützt, sollte aufgrund der eingeschränkten Nützlichkeit und des feinen Verhaltens sorgfältig auf Sicherheitsrisiken geprüft werden. Nehmen wir einmal die folgende Situation:
 
-- [Linkaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) durch Deny oder PermitOnly nicht betroffen sind.
+- [Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) Aufrufe werden von Deny oder PermitOnly nicht beeinträchtigt.
 
-- Im Falle Deny oder PermitOnly im gleichen Stapelrahmen wie die Anforderung, bei dem der Stapeldurchlauf, haben die Sicherheitsaktionen keine Auswirkungen.
+- Wenn Deny oder PermitOnly im gleichen Stapel Rahmen wie die Anforderung auftritt, die den Stapel Durchlauf verursacht, haben die Sicherheitsaktionen keine Auswirkung.
 
-- Werte, die zum Erstellen der pfadbasierten Berechtigungen verwendet werden, können in der Regel auf unterschiedliche Weise angegeben werden. Verweigern des Zugriffs auf eine Form des Pfads wird Zugriff auf alle Formulare nicht verweigert werden. Wenn eine Dateifreigabe beispielsweise \\\Server\Share zugeordnet ist, auf einem Netzlaufwerk X:, zum Verweigern von Zugriff auf eine Datei auf der Freigabe, Sie müssen verweigert \\\Server\Share\File, X:\File und alle anderen Pfade, die auf die Datei zugreift.
+- Werte, die zum Erstellen von Pfad basierten Berechtigungen verwendet werden, können in der Regel auf verschiedene Weise angegeben werden. Durch das Verweigern des Zugriffs auf eine Form des Pfads wird nicht der Zugriff auf alle Formulare verweigert. Wenn z. b. eine Dateifreigabe \\ \server\freigabe einem Netzlaufwerk X: zugeordnet ist, müssen Sie \\ \server\share\file, x:\file und alle anderen Pfade ablehnen, die auf die Datei zugreifen, um den Zugriff auf eine Datei auf der Freigabe zu verweigern.
 
-- Ein <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> kann einen Stackwalk beendet, bevor Deny oder PermitOnly erreicht wird.
+- Eine <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> kann einen Stapel Durchlauf beenden, bevor Deny oder PermitOnly erreicht wird.
 
-- Wenn Deny keine Auswirkung hat, beispielsweise kann Wenn ein Aufrufer eine Berechtigung verfügt, die durch das verweigern, blockiert ist der Aufrufer direkt auf die geschützte Ressource zugreifen unter Umgehung der. Wenn der Aufrufer nicht über die verweigerte Berechtigung verfügt, würde der Stackwalk ohne Deny fehlschlagen.
+- Wenn ein Deny einen Effekt hat, d. h., wenn ein Aufrufer über eine Berechtigung verfügt, die durch den Deny blockiert ist, kann der Aufrufer direkt auf die geschützte Ressource zugreifen und dabei den Deny umgehen. Wenn der Aufrufer nicht über die verweigerte Berechtigung verfügt, würde der Stapel Durchlauf auch ohne Deny fehlschlagen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Jede Verwendung dieser Aktionen Sicherheit bewirkt eine Verletzung. Um einen Verstoß zu beheben, verwenden Sie nicht diese Sicherheitsaktionen.
+ Jede Verwendung dieser Sicherheitsaktionen führt zu einer Verletzung. Verwenden Sie diese Sicherheitsaktionen nicht, um einen Verstoß zu beheben.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, nur nach dem Durchführen einer sicherheitsüberprüfung.
+ Unterdrücken Sie eine Warnung aus dieser Regel erst, nachdem Sie eine Sicherheitsüberprüfung durchgeführt haben.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einige Einschränkungen der verweigern.
+ Im folgenden Beispiel werden einige Einschränkungen von Deny veranschaulicht.
 
- Die folgende Bibliothek enthält eine Klasse mit zwei Methoden, die mit Ausnahme von sicherheitsanforderungen identisch sind, die sie schützen.
+ Die folgende Bibliothek enthält eine-Klasse mit zwei Methoden, die mit Ausnahme der Sicherheitsanforderungen, die Sie schützen, identisch sind.
 
  [!code-csharp[FxCop.Security.PermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PermitAndDeny/cs/FxCop.Security.PermitAndDeny.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Die folgende Anwendung zeigt die Auswirkungen von Deny auf die geschützten Methoden aus der Bibliothek.
+ Die folgende Anwendung veranschaulicht die Auswirkungen von Deny auf gesicherte Methoden aus der Bibliothek.
 
  [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestPermitAndDeny/cs/FxCop.Security.TestPermitAndDeny.cs#1)]
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Anforderung: Verweigern des Aufrufers wirkt sich nicht bei Bedarf mit der bestätigten Berechtigung. ** 
- **LinkDemand: Verweigern des Aufrufers wirkt sich nicht auf LinkDemand mit der bestätigten Berechtigung. ** 
- **LinkDemand: Verweigern des Aufrufers wirkt sich nicht durch LinkDemand geschützten Code aus. ** 
- **LinkDemand: Dieser verweigern wirkt sich nicht durch LinkDemand geschützten Code aus.**
+ **Demand: die DENY-Anweisung des Aufrufers hat keine Auswirkung auf den Bedarf mit der bestätigten Berechtigung.** 
+**LinkDemand: die DENY-Anweisung hat keine Auswirkung auf LinkDemand mit der bestätigten Berechtigung.** 
+**LinkDemand: die DENY-Anweisung hat keine Auswirkung auf LinkDemand-geschützten Code.** 
+**LinkDemand: This Deny hat keine Auswirkung auf LinkDemand-geschützter Code.**
 ## <a name="see-also"></a>Siehe auch
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Sichern Sie die Richtlinien für das Codieren](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Überschreiben von Sicherheitsüberprüfungen](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [verwenden der PermitOnly-Methode](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Sichere Codierungs Richtlinien](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) Überschreiben von [Sicherheitsüberprüfungen](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [mithilfe der PermitOnly-Methode](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

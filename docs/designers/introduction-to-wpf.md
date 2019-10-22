@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924448"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962961"
 ---
 # <a name="wpf-overview"></a>WPF-Übersicht
 
@@ -428,7 +428,7 @@ Weitere Informationen zu den Inhaltstypen, die von den verschiedenen Steuereleme
 
 ### <a name="triggers"></a>Trigger
 
-Obwohl der Hauptzweck von XAML-Markup in der Implementierung der Darstellung einer Anwendung besteht, lassen sich mit XAML auch einige Aspekte des Verhaltens einer Anwendung implementieren. Ein Beispiel ist die Verwendung von Triggern, um die Darstellung einer Anwendung anhand von Benutzeraktionen zu ändern. Weitere Informationen finden Sie unter [Erstellen von Formaten und Vorlagen](/dotnet/framework/wpf/controls/styling-and-templating).
+Obwohl der Hauptzweck von XAML-Markup in der Implementierung der Darstellung einer Anwendung besteht, lassen sich mit XAML auch einige Aspekte des Verhaltens einer Anwendung implementieren. Ein Beispiel ist die Verwendung von Triggern, um die Darstellung einer Anwendung anhand von Benutzeraktionen zu ändern. Weitere Informationen finden Sie unter [Stile und Vorlagen](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="control-templates"></a>Steuerelementvorlagen
 
@@ -545,7 +545,7 @@ Da sich dieser Stil auf alle <xref:System.Windows.Controls.Button>-Steuerelement
 
 ![Zwei orangefarbene Schaltflächen](../designers/media/wpfintrofigure20.png)
 
-Weitere Informationen finden Sie unter [Erstellen von Formaten und Vorlagen](/dotnet/framework/wpf/controls/styling-and-templating).
+Weitere Informationen finden Sie unter [Stile und Vorlagen](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="resources"></a>Ressourcen
 

@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebugOutput | Microsoft-Dokumentation
+title: 'Iapplicationdebugger:: ondebugoutput | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbb7fb9f69af2f0977434a29015d79e8cf9178
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991072"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577850"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
-Behandelt ein Ereignis der Debug-Ausgabe.  
+Behandelt ein Debug-Ausgabe Ereignis.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>Parameter  
  `pstr`  
- [in] Die Zeichenfolge, die im Debugger angezeigt.  
+ in Zeichenfolge, die im Debugger angezeigt werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,10 +47,10 @@ HRESULT onDebugOutput(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- In der Regel zeigt der Debugger `pstr` in einem Fenster "Ausgabe".  
+ Der Debugger zeigt in der Regel `pstr` in einem Ausgabefenster an.  
   
  Diese Methode wird aufgerufen, wenn `IDebugApplication::DebugOutput` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IApplicationDebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)   
+ [Iapplicationdebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)    
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

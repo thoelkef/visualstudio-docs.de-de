@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::GetMainThread | Microsoft-Dokumentation
+title: 'IRemoteDebugApplication110:: getmainthread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a4b51d87f89d77bebf065ce5f52a297ada333d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ff99c43f633da8454eb5fa32463886877e06ed72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383503"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574122"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Gibt den Hauptthread für Hosts, die aufgerufen werden [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), andernfalls wird E_FAIL zurückgegeben.  
+Gibt den Haupt Thread für Hosts zurück, die [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)aufrufen; andernfalls wird E_FAIL zurückgegeben.  
   
 > [!IMPORTANT]
-> [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> Die [iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird von PDM v 11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,8 +34,8 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
   
 #### <a name="parameters"></a>Parameter  
  `ppThread`  
- [out] Die Main [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
+ vorgenommen Die Haupt- [iremotedebugapplicationthread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)    
  [IRemoteDebugApplication110-Schnittstelle](../../winscript/reference/iremotedebugapplication110-interface.md)

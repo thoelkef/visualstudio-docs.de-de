@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8764ccc5a662a40559b6b7ab4f19cdff0e2d555e
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547679"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381328"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Vorgehensweise: Navigieren in der Visual Studio-IDE
 
@@ -43,9 +43,9 @@ Die Optionen „Rückwärts navigieren“ und „Vorwärts navigieren“ ermögl
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>So navigieren Sie in der Verwendungsreihenfolge durch geöffnete Dateien
 
-- Drücken Sie **STRG**+**-**, um geöffnete Dokumente in der Reihenfolge zu aktivieren, in der sie zuletzt verwendet wurden.
+- Drücken Sie **STRG**+ **-** (Bindestrich), um geöffnete Dokumente in der Reihenfolge zu aktivieren, in der sie zuletzt verwendet wurden.
 
-- Drücken Sie **STRG**+**UMSCHALT**+**-**, um geöffnete Dokumente in umgekehrter Reihenfolge zu aktivieren.
+- Drücken Sie **STRG**+**UMSCHALT**+ **-** (Bindestrich), um geöffnete Dokumente in umgekehrter Reihenfolge zu aktivieren.
 
     > [!NOTE]
     > Die Optionen **Rückwärts navigieren** und **Vorwärts navigieren** befinden sich auch im Menü **Ansicht**.

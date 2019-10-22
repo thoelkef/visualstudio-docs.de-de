@@ -1,5 +1,5 @@
 ---
-title: Visual C# /C++ benutzerdefinierte Schnellansicht-Kompatibilität
+title: Kompatibilität von VisualC++ C/benutzerdefinierten Visualisierungen
 ms.date: 01/28/2019
 ms.prod: visual-studio-dev16
 ms.topic: reference
@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 32e38dd3bba8a1127d8756972b73e8b47a514f1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fdd44be89fde2fbc26038c8b88fff405876264f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901165"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430618"
 ---
-# <a name="visual-cc-custom-visualizer-compatibility"></a>Visual C# /C++ benutzerdefinierte Schnellansicht-Kompatibilität
+# <a name="visual-cc-custom-visualizer-compatibility"></a>Kompatibilität von VisualC++ C/benutzerdefinierten Visualisierungen
 
-Ab Visual Studio-2019, Visual C++ umfasst einen verbesserten Debugger, die einen externen 64-Bit-Prozess zum Hosten seiner speicherintensive-Komponenten verwendet. Im Rahmen des Updates, bestimmte Erweiterungen für den Visual C /C++ ausdrucksauswertung muss aktualisiert werden, damit sie mit der neuen Debugger kompatibel sind.
+Ab Visual Studio 2019 C++ enthält einen verbesserten Debugger, der einen externen 64-Bit-Prozess zum Hosting seiner speicherintensiven Komponenten verwendet. Im Rahmen dieses Updates müssen bestimmte Erweiterungen für die C/ExpressionC++ -Auswertung aktualisiert werden, damit Sie mit dem neuen Debugger kompatibel sind.
 
-Wenn Sie derzeit eine ältere C verwenden /C++ EE-Add-in oder C /C++ benutzerdefinierte Schnellansicht können Sie die Nutzung dieser externe Prozess aktivieren, indem Sie zu **Tools** > **Optionen**  >  **Debuggen**, und anschließend wieder deaktivieren **Load-Debug-Symbole in externen Prozess (nur systemeigen)**. Wenn Sie diese Option deaktivieren, wird eine starke Zunahme der speicherauslastung in der IDE (devenv.exe) Prozess auftreten. Also wenn Sie erwarten, um große Projekte zu debuggen, wird empfohlen, dass die Arbeit mit dem Besitzer der Erweiterung, die sie mit dieser Option für das Debuggen kompatibel zu machen.
+Wenn Sie zurzeit ein Legacy-c/C++ EE-Add-inC++ oder eine c/Custom-Schnellansicht verwenden, können Sie die Nutzung dieses externen Prozesses **deaktivieren, indem** Sie zu Extras  > **Optionen**  >  Debugging wechseln und dann **Debuggen Laden auswählen. Symbole in externem Prozess (nur nativ)** . Wenn Sie diese Option deaktivieren, wird eine beträchtliche Zunahme der Speicherauslastung innerhalb des IDE-Prozesses (devenv. exe) ausgeführt. Wenn Sie also große Projekte debuggen möchten, wird empfohlen, dass Sie mit dem Besitzer der Erweiterung arbeiten, damit er mit dieser Debugoption kompatibel ist.
 
-Wenn Sie der Besitzer von einer älteren C /C++ EE-Add-in oder C /C++ benutzerdefinierte Schnellansicht, finden Sie weitere Informationen zur Entscheidung für die Erweiterung in einem Arbeitsprozess zu laden, auf die [Concord Erweiterbarkeit Beispiele Wiki](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Worker-Process-Remoting). Sie erhalten auch eine [C /C++ benutzerdefinierte Schnellansicht Beispiel](https://github.com/Microsoft/ConcordExtensibilitySamples/tree/master/CppCustomVisualizer).
+Wenn Sie Besitzer eines älteren c/EE-AddC++ -ins oder einer cC++ /Custom-Schnellansicht sind, finden Sie weitere Informationen zum Abonnieren der Erweiterung in einem Workerprozess im [wiki-Erweiterungs Beispielen-wiki](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Worker-Process-Remoting). Sie finden auch ein [Beispiel für eineC++ C/Custom-](https://github.com/Microsoft/ConcordExtensibilitySamples/tree/master/CppCustomVisualizer)Schnellansicht.

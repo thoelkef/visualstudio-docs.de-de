@@ -21,45 +21,45 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493637"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446297"
 ---
 # <a name="annotating-structs-and-classes"></a>Hinzufügen einer Anmerkung zu Strukturen und Klassen
 
-Sie können Struktur- und Elemente mit Anmerkungen versehen, verwenden von Anmerkungen, die wie invarianten fungiert – sie werden als "true" bei einem beliebigen Funktionsaufruf oder eine Funktion Einstiegs-/ausstiegsspunkt, die die einschließende Struktur als Parameter oder einen Ergebniswert umfasst.
+Sie können Struktur-und Klassenmember mit Anmerkungen versehen, die wie invarianten funktionieren – Sie werden als true an jedem Funktions-oder Funktions Eintrag bzw. in einem Funktionswert, der die einschließende Struktur als Parameter oder Ergebniswert einschließt, angenommen.
 
 ## <a name="struct-and-class-annotations"></a>Struktur- und Klassen-Anmerkungen
 
 - `_Field_range_(low, high)`
 
-     Das Feld befindet sich im Bereich (inklusiv) von `low` zu `high`.  Äquivalent zu `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` auf das mit Anmerkungen versehene Objekt angewendet werden, mithilfe der entsprechenden Pre oder Post-Bedingungen.
+     Das Feld befindet sich im Bereich (einschließlich) von `low` bis `high`.  Äquivalent zu `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`, die auf das mit Anmerkungen versehene Objekt angewendet werden, indem die entsprechenden Pre-oder Post-Bedingungen verwendet werden.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     Ein Feld mit einem schreibbare Größe in Elemente (oder Bytes) als gemäß `size`.
+     Ein Feld mit einer beschreibbaren Größe in Elementen (oder Bytes), wie in `size` angegeben.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)` `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     Ein Feld mit einem schreibbare Größe in Elemente (oder Bytes) als gemäß `size`, und die `count` dieser Elemente (Bytes), die gelesen werden.
+     Ein Feld mit einer beschreibbaren Größe in Elementen (oder Bytes), wie durch `size` angegeben, und die `count` dieser Elemente (Bytes), die lesbar sind.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     Ein Feld mit lesbare und schreibbare Größe in Elemente (oder Bytes) als gemäß `size`.
+     Ein Feld, das sowohl lesbare als auch beschreibbare Größe in Elementen (oder Bytes) aufweist, wie durch `size` angegeben.
 
 - `_Field_z_`
 
-     Ein Feld, eine Null-terminierte Zeichenfolge enthält.
+     Ein Feld, das eine NULL-terminierte Zeichenfolge aufweist.
 
 - `_Struct_size_bytes_(size)`
 
-     Gilt für die Struktur oder Klasse Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ, mit der Anzahl von Bytes, die angegeben wird `size`.  Zum Beispiel:
+     Gilt für die Struktur-oder Klassen Deklaration.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ und die Anzahl der Bytes ist, die durch `size` angegeben werden.  Beispiel:
 
     ```cpp
 
@@ -71,7 +71,7 @@ Sie können Struktur- und Elemente mit Anmerkungen versehen, verwenden von Anmer
 
     ```
 
-     Die Puffergröße in Bytes für einen Parameter `pM` des Typs `MyStruct *` wird, werden ausgeführt:
+     Die Puffergröße eines Parameter `pM` vom Typ `MyStruct *` wird dann wie folgt angenommen:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -104,11 +104,11 @@ struct MyBuffer
 };
 ```
 
-Anmerkungen zu dieser Version für dieses Beispiel:
+Hinweise für dieses Beispiel:
 
-- `_Field_z_` entspricht `_Null_terminated_`.  `_Field_z_` Gibt an ein Feld, Feld "Name" einen Null-terminierte Zeichenfolge ist.
-- `_Field_range_` für `bufferSize` gibt an, dass der Wert des `bufferSize` muss innerhalb von 1 und `MaxBufferSize` (jeweils einschließlich).
-- Die Ergebnisse von der `_Struct_size_bytes_` und `_Field_size_` Anmerkungen sind äquivalent. Für Strukturen oder Klassen, die ein Layout ähnlich wie `_Field_size_` ist einfacher zu lesen und zu verwalten, da weniger Verweise und Berechnungen als die entsprechende `_Struct_size_bytes_` Anmerkung. `_Field_size_` Sie erfordert keine Konvertierung in die Bytegröße. Wenn Bytegröße die einzige Option für ein void-Zeiger-Feld, z. B. ist `_Field_size_bytes_` kann verwendet werden. Wenn beide `_Struct_size_bytes_` und `_Field_size_` vorhanden ist, werden beide Tools zur Verfügung. Es ist Aufgabe des Tools erläutert, wie bei die zwei Anmerkungen nicht einverstanden sind.
+- `_Field_z_` entspricht `_Null_terminated_`.  `_Field_z_` für das Feld Name gibt an, dass das Feld Name eine NULL-terminierte Zeichenfolge ist.
+- `_Field_range_` für `bufferSize` gibt an, dass der Wert von `bufferSize` innerhalb von 1 und `MaxBufferSize` (beide inklusiv) liegen muss.
+- Die Endergebnisse der `_Struct_size_bytes_` und `_Field_size_` Anmerkungen sind gleichwertig. Für Strukturen oder Klassen, die über ein ähnliches Layout verfügen, ist `_Field_size_` leichter zu lesen und zu verwalten, da es weniger Verweise und Berechnungen als die entsprechende `_Struct_size_bytes_` Anmerkung aufweist. `_Field_size_` müssen nicht in die Bytegröße konvertiert werden. Wenn die Byte Größe die einzige Option ist, z. b. für ein void-Zeiger Feld, können `_Field_size_bytes_` verwendet werden. Wenn sowohl `_Struct_size_bytes_` als auch `_Field_size_` vorhanden sind, sind beide für Tools verfügbar. Es liegt an dem Tool, was zu tun ist, wenn die zwei Anmerkungen nicht übereinstimmen.
 
 ## <a name="see-also"></a>Siehe auch
 

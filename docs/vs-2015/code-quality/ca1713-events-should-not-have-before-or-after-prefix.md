@@ -1,5 +1,5 @@
 ---
-title: 'CA1713: Ereignisse sollten kein aufweisen, vor oder nach Präfix | Microsoft-Dokumentation'
+title: 'CA1713: Ereignisse sollten kein Before-oder After-Präfix aufweisen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - EventsShouldNotHaveBeforeOrAfterPrefix
 ms.assetid: 855772a4-aa9e-410b-88c1-c5fba1ca63da
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6a36f9c8ce788b30f14d8ca0ce9d565ab45975a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7286272e121cf5054013576c4278f787c8423d79
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535203"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669151"
 ---
-# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Ereignisse sollten kein Before- oder After-Präfix aufweisen.
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Ereignisse sollten kein Before- oder After-Präfix aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,15 +33,15 @@ ms.locfileid: "62535203"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Der Name eines Ereignisses beginnt mit 'Before' oder 'After'.
+ Der Name eines Ereignisses beginnt mit ' before ' oder ' After '.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ereignisnamen sollte die Aktion beschreiben, die das Ereignis auslöst. Um verwandte Ereignisse zu benennen, die in einer bestimmten Reihenfolge ausgelöst werden, verwenden Sie die Gegenwarts- oder Vergangenheitsform, um ihre relative Position in der Aktionsfolge anzugeben. Z. B. bei der Benennung von ein Paar von Ereignissen, die ausgelöst wird, wenn eine Ressource zu schließen, können Sie es "Closing" und "Closed" anstelle von "BeforeClose" und "AfterClose" nennen.
+ Ereignis Namen sollten die Aktion beschreiben, durch die das Ereignis ausgelöst wird. Um verwandte Ereignisse zu benennen, die in einer bestimmten Reihenfolge ausgelöst werden, verwenden Sie die Gegenwarts- oder Vergangenheitsform, um ihre relative Position in der Aktionsfolge anzugeben. Wenn Sie z. b. ein Ereignispaar benennen, das beim Schließen einer Ressource ausgelöst wird, können Sie es als "Closing" und "Closed" anstelle von "BeforeClose" und "AfterClose" benennen.
 
  Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie das Präfix aus der Ereignisname, und ändern Sie den Namen, die die Gegenwarts- oder Vergangenheitsform, ein Verb zu verwenden.
+ Entfernen Sie das Präfix aus dem Ereignis Namen, und ändern Sie ggf. den Namen so, dass er das vorhanden sein oder den letzten verstrichen eines Verbs verwendet
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.

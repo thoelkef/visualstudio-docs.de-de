@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Next | Microsoft-Dokumentation
+title: 'Ienumdebugextendedpropertyinfo:: Next | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65e734d1cf57fe9387407a80c9d3e76d7f53ada8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23ebc3e3fd1f7802f4630be42a594d73f8657e43
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963482"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574256"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-Ruft eine angegebene Anzahl von`ExtendedDebugPropertyInfo` Strukturen in einer Enumerationsfolge.  
+Ruft eine angegebene Anzahl von `ExtendedDebugPropertyInfo` Strukturen in einer Enumerationsfolge ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,17 +39,17 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der `ExtendedDebugPropertyInfo`Strukturen abgerufen werden sollen.  
+ in Die Anzahl der abzurufenden `ExtendedDebugPropertyInfo`structures.  
   
  `rgelt`  
- [out] Ein Array von `ExtendedDebugPropertyInfo` Strukturen abgerufen.  
+ vorgenommen Ein Array von `ExtendedDebugPropertyInfo`-Strukturen, die abgerufen wurden.  
   
  `pceltFetched`  
- [out] Die Anzahl der `ExtendedDebugPropertyInfo` Strukturen, die tatsächlich abgerufen.  
+ vorgenommen Die Anzahl der tatsächlich abgerufenen `ExtendedDebugPropertyInfo` Strukturen.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IEnumDebugExtendedPropertyInfo-Schnittstelle](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+ [Ienumdebugextendedpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)    
  [ExtendedDebugPropertyInfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

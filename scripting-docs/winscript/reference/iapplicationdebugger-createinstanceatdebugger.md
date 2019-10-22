@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft-Dokumentation
+title: 'Iapplicationdebugger:: kreateingestanceatdebugger | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c15dc5d9b36a718ed41813bac46bc4b9415eb853
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425829"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577887"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Ermöglicht die Erstellung von Objekten im Debuggerprozess von Code, Out-of-Process an den Debugger.  
+Ermöglicht das Erstellen von Objekten im Debuggerprozess durch Code, der außerhalb des Prozesses für den Debugger verarbeitet wird.  
   
 > [!IMPORTANT]
-> Diese Methode sollte nicht implementiert werden, da es sich um nicht vertrauenswürdigem Code zum Erstellen von beliebiger Objekten in einen vertrauenswürdigen debugthread ermöglicht.  
+> Diese Methode sollte nicht implementiert werden, da Sie nicht vertrauenswürdigem Code ermöglicht, beliebige Objekte in einem vertrauenswürdigen Debugger-Thread zu erstellen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,19 +44,19 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parameter  
  `rclsid`  
- [in] Klassen Sie-ID (CLSID) des zu erstellenden Objekts.  
+ in Klassen Bezeichner (CLSID) des zu erstellenden Objekts.  
   
  `pUnkOuter`  
- [in] Wenn `NULL`, das Objekt ist nicht als Teil eines Aggregats erstellt wird. Andernfalls `pUnkOuter` ist ein Zeiger auf des aggregatobjekts `IUnknown` Schnittstelle (das steuernde `IUnknown`).  
+ in Wenn `NULL`, wird das Objekt nicht als Teil eines Aggregats erstellt. Andernfalls ist `pUnkOuter` ein Zeiger auf die `IUnknown`-Schnittstelle des aggregierten Objekts (das steuernde `IUnknown`).  
   
  `dwClsContext`  
- [in] Kontext für die Ausführung von ausführbarem Code. Die Werte stammen aus der Enumeration `CLSCTX`.  
+ in Kontext zum Ausführen von ausführbarem Code. Die Werte stammen aus der-Enumeration `CLSCTX`.  
   
  `riid`  
- [in] Der Schnittstellenbezeichner verwendet, um die Kommunikation mit dem Objekt.  
+ in Der Schnittstellen Bezeichner, der zur Kommunikation mit dem-Objekt verwendet wird.  
   
  `ppvObject`  
- [out] Adresse der Zeigervariable, die im angeforderten Schnittstellenzeiger empfängt `riid`. Nach der erfolgreichen Rückgabe *`ppvObject` enthält den angeforderten Schnittstellenzeiger. Bei einem Fehler \* `ppvObject` enthält `NULL`.  
+ vorgenommen Die Adresse der Zeiger Variablen, die den in `riid` angeforderten Schnittstellen Zeiger empfängt. Bei erfolgreicher Rückgabe enthält * `ppvObject` den angeforderten Schnittstellen Zeiger. Bei einem Fehler enthält \* `ppvObject` `NULL`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -66,9 +66,9 @@ HRESULT CreateInstanceAtDebugger(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode delegiert zur `CoCreateInstance`.  
+ Diese Methode delegiert an `CoCreateInstance`.  
   
- Die Methode wird derzeit nicht implementiert.  
+ Die-Methode ist zurzeit nicht implementiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IApplicationDebugger-Schnittstelle](../../winscript/reference/iapplicationdebugger-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Ausführen von Komponententests für Store-Apps
+title: Erstellen und Ausführen von Komponententests für eine Store-App
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: 28
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a7efb5fe4484fdd0ce7d2fcb0a1988e9b089509e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442807"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660621"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Erstellen und Ausführen von Komponententests für Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Die Komponententesttools von Visual Studio 2012 Express für Windows 8 sind dara
 >   - In VS Ultimate können Sie Ihre Tests nach jedem Build ausführen. Sie können zudem Microsoft Fakes verwenden, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.
 >   - **JavaScript**. JavaScript-Komponententests sind über die IDE von Visual Studio Express für Windows 8 nicht verfügbar. In Visual Studio Professional, Premium und Ultimate sind JavaScript-Komponententest-Frameworks als Erweiterungen in der Visual Studio Gallery verfügbar. Sie können JavaScript-Code außerdem testen, indem Sie eins der eigenständigen Drittanbieter- oder Open-Source-JavaScript-Komponententest-Frameworks verwenden.
 >
->   Weitere Informationen finden Sie unter [Komponententests für Codes](../test/unit-test-your-code.md) in der MSDN-Bibliothek.
+>   Weitere Informationen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md) in der MSDN Library.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Komponententest von C#-Code](../test/unit-testing-visual-csharp-code-in-a-store-app.md)

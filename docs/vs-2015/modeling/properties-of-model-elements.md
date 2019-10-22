@@ -6,26 +6,26 @@ ms.technology: vs-ide-modeling
 ms.topic: reference
 ms.assetid: 884d66aa-cb2d-4be0-ae45-8360a01f1c7d
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34e9c1cb4457210f95ede0d574530d2fb5ebcdeb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22f7da98d349da2d80019750b18c0ed5a1bbb3bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154850"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671372"
 ---
 # <a name="properties-of-model-elements"></a>Eigenschaften von Modellelementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieser Abschnitt enthält die Eigenschaften, die Sie im Eigenschaftenfenster angezeigt, wenn Sie ein Element in der DSL-Definitionsdiagramm oder im DSL-Explorer auswählen.  
-  
- In einigen Fällen können zusätzliche Eigenschaften der DSL-Details finden Sie im Fenster.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)  
-  
- [Überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md)  
-  
+In diesem Abschnitt werden die Eigenschaften aufgelistet, die im Eigenschaftenfenster angezeigt werden, wenn Sie ein Element im DSL-Definitions Diagramm oder im DSL-Explorer auswählen.
+
+ In einigen Fällen können im Fenster "DSL-Details" Weitere Eigenschaften gefunden werden.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)
+
+ [Überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md)
+
  [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)

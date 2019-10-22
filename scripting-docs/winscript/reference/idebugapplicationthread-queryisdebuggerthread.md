@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsDebuggerThread | Microsoft-Dokumentation
+title: 'Idebugapplicationthread:: queryisdebuggerthread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5594973f64446c0c6818522ad2ce2b174ab02610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: febce73e2c40d0df02acc42f6219eca30afb3f29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822158"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574530"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
-Bestimmt, ob dieser Thread Debugger ist.  
+Bestimmt, ob dieser Thread der Debuggerthread ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,18 +34,18 @@ HRESULT QueryIsDebuggerThread();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|`S_OK`|Die Methode erfolgreich war, und dies ist der Debuggerthread.|  
-|`S_FALSE`|Dies ist nicht die debugthread.|  
+|`S_OK`|Die Methode war erfolgreich, und dies ist der Debuggerthread.|  
+|`S_FALSE`|Dies ist nicht der Debugger-Thread.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird bestimmt, ob dieser Thread Debugger ist.  
+ Diese Methode bestimmt, ob es sich bei diesem Thread um den Debuggerthread handelt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplicationThread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)

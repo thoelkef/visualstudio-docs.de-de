@@ -1,5 +1,5 @@
 ---
-title: Data Access-Foren
+title: Datenzugriffs Foren
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -219,25 +219,25 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92699d9d7c77c771ea1cc4aa28b918f318eca8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818077"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648864"
 ---
-# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Beheben von Datenzugriffsfehlern in den Foren
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Problembehandlung bei Datenzugriffs Fehlern in den Foren
 
-Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Hier sind einige datenbezogenen Foren auf MSDN verfügbar sind:
+Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Im folgenden finden Sie einige datenbezogene Foren, die auf MSDN verfügbar sind:
 
 - [Windows Forms-Datensteuerelemente und -Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
-- [ADO.NET DataSet-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
+- [ADO.NET DataSet-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
 - [ADO.NET Entity Framework und LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
@@ -247,9 +247,9 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
 - [LINQ to SQL-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
-- [ADO.NET-Forum für Data-Anbieter](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
+- [ADO.NET-Datenanbieter Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-Weitere Informationen zur Behandlung von Verbindungen mit SQL Server finden Sie unter [Problembehandlung beim Verbinden mit der SQL Server-Datenbank-Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter Problembehandlung [beim Herstellen einer Verbindung mit der SQL Server Datenbank-Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Siehe auch
 

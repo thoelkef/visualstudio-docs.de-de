@@ -1,5 +1,5 @@
 ---
-title: SCRIPTLANGUAGEVERSION-Enumeration | Microsoft-Dokumentation
+title: Scriptlanguageversion-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aab63989d1ae02f7c75fc9c20a14d59e8a05078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802a9f31cc7e3497c5e5fc54395d988552f75e84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840210"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574364"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>SCRIPTLANGUAGEVERSION-Enumeration
-Gibt die möglichen Versionen Skripterstellung.  
+Gibt die möglichen Skript Versionen an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,8 +32,8 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
 |||  
 |-|-|  
 |SCRIPTLANGUAGEVERSION_DEFAULT|Die Standardversion. Der ganzzahlige Wert ist 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting Version 5.7. Der ganzzahlige Wert ist 1.|  
-|SCRIPTLANGUAGEVERSION_5_8|Windows-Version 5.8 Skripterstellung. Der ganzzahlige Wert ist 2.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting Version 5,7. Der ganzzahlige Wert ist 1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows Scripting Version 5,8. Der ganzzahlige Wert ist 2.|  
 |SCRIPTLANGUAGEVERSION_MAX|Die maximale Version. Der ganzzahlige Wert ist 255.|  
   
 ## <a name="see-also"></a>Siehe auch  

@@ -1,5 +1,5 @@
 ---
-title: 'CA1900: Werttypfelder sollten portabel sein | Microsoft-Dokumentation'
+title: 'CA1900: Werttyp Felder sollten portabel sein | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,36 +12,36 @@ helpviewer_keywords:
 - CA1900
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203091"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661107"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Werttypfelder sollten portabel sein.
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Werttypfelder sollten portabel sein
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1900: Werttypfelder sollten portabel sein](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
-  
-|||  
-|-|-|  
-|TypeName|ValueTypeFieldsShouldBePortable|  
-|CheckId|CA1900|  
-|Kategorie|Microsoft.Portability|  
-|Unterbrechende Änderung|Unterbrechend – Wenn das Feld außerhalb der Assembly angezeigt werden.<br /><br /> Nicht unterbrechend – Wenn das Feld nicht außerhalb der Assembly sichtbar ist.|  
-  
-## <a name="cause"></a>Ursache  
- Diese Regel überprüft, dass mit explizitem Layout deklarierten Strukturen korrekt, beim Marshallen an nicht verwalteten Code auf 64-Bit-Betriebssystemen ausgerichtet werden. IA-64 lässt nicht korrekt ausgerichteten Speicher zugreift und der Prozess stürzt ab, wenn diese Verletzung nicht behoben wurde.  
-  
-## <a name="rule-description"></a>Regelbeschreibung  
- Strukturen mit explizitem Layout, das falsch ausgerichtete Felder verursachen auf 64-Bit-Betriebssystemen Systemabstürze enthält.  
-  
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
- Müssen alle Felder, die kleiner als 8 Bytes, Offsets, die ein Vielfaches von ihrer Größe und Felder, die 8 Bytes sind, oder benötigen mehr Offsets, die ein Vielfaches von 8 sind. Eine andere Lösung ist die Verwendung `LayoutKind.Sequential` anstelle von `LayoutKind.Explicit`, bei Bedarf.  
-  
-## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Nur, wenn Fehler auftreten, sollte diese Warnung unterdrückt werden.
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1900: Werttyp Felder sollten portabel sein](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
+
+|||
+|-|-|
+|TypeName|ValueTypeFieldsShouldBePortable|
+|CheckId|CA1900|
+|Kategorie|Microsoft. Portabilität|
+|Unterbrechende Änderung|Unterbrechung: Wenn das Feld außerhalb der Assembly sichtbar ist.<br /><br /> Nicht unterbrechend: Wenn das Feld außerhalb der Assembly nicht sichtbar ist.|
+
+## <a name="cause"></a>Ursache
+ Mit dieser Regel wird überprüft, ob Strukturen, die mit expliziten Layouts deklariert werden, beim Marshalling an nicht verwalteten Code auf 64-Bit-Betriebssystemen korrekt ausgerichtet werden. IA-64 lässt keine nicht ausgerichteten Speicherzugriffe zu, und der Prozess stürzt ab, wenn diese Verletzung nicht korrigiert wird.
+
+## <a name="rule-description"></a>Regelbeschreibung
+ Strukturen mit expliziten Layouts, die falsch ausgerichtete Felder enthalten, verursachen Abstürze bei 64-Bit-Betriebssystemen.
+
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
+ Alle Felder, die kleiner als 8 Bytes sind, müssen Offsets aufweisen, die ein Vielfaches ihrer Größe aufweisen, und Felder, die 8 Bytes oder mehr umfassen, müssen Offsets aufweisen, die ein Vielfaches von 8 sind. Eine andere Lösung besteht in der Verwendung von `LayoutKind.Sequential` anstelle `LayoutKind.Explicit`, wenn dies angemessen ist.
+
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
+ Diese Warnung sollte nur unterdrückt werden, wenn Sie fehlerhaft auftritt.

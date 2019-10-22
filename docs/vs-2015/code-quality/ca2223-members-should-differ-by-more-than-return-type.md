@@ -1,5 +1,5 @@
 ---
-title: 'CA2223: Member sollten sich durch mehr als den Rückgabetyp unterscheiden | Microsoft-Dokumentation'
+title: 'CA2223: Member sollten sich durch mehr als den Rückgabetyp unterscheiden. Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201606"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658897"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|Kategorie|Microsoft.Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Zwei öffentliche oder geschützte Member verfügen Signaturen, die mit Ausnahme der Rückgabetyp identisch sind.
+ Zwei öffentliche oder geschützte Member haben Signaturen, die mit Ausnahme des Rückgabe Typs identisch sind.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Die common Language Runtime lässt die Verwendung von Rückgabetypen zwischen anderweitig identischen Membern unterschieden werden kann, wird dieses Feature befindet sich nicht in der Common Language Specification, noch ist es eine allgemeine Funktion von .NET-Programmiersprachen. Wenn Member nur durch den Rückgabetyp unterscheiden zu können, können Entwickler und nicht ordnungsgemäß zwischen ihnen unterscheiden.
+ Obwohl das Common Language Runtime die Verwendung von Rückgabe Typen ermöglicht, um zwischen ansonsten identischen Membern zu unterscheiden, befindet sich dieses Feature nicht im Common Language Specification, und es ist auch kein gängiges Feature von .NET-Programmiersprachen. Wenn sich Elemente nur nach Rückgabetyp unterscheiden, unterscheiden Entwickler und Entwicklungs Tools möglicherweise nicht ordnungsgemäß zwischen Ihnen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf der Elemente, damit sie eindeutig nur auf ihren Namen und die Parametertypen basieren sind, oder Sie die Elemente nicht machen.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf der Member so, dass Sie nur anhand ihrer Namen und Parametertypen eindeutig sind, oder machen Sie die Member nicht verfügbar.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt in Microsoft intermediate Language (MSIL), einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass diese Regel kann nicht verletzt werden, mithilfe von c# oder Visual Basic .NET.
+ Das folgende Beispiel zeigt in der Microsoft Intermediate Language (MSIL) einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass diese Regel nicht mithilfe C# von oder Visual Basic .net verletzt werden kann.
 
 ```
 

@@ -3,46 +3,46 @@ title: Bearbeiten von XSLT-Stylesheets
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fc987f8362d5daf435b7e9de860cc13f16a1aaf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996994"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646059"
 ---
 # <a name="edit-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
 
-Der XML-Editor kann auch verwendet werden, zum Bearbeiten von XSLT-Stylesheets. Sie können die Vorteile der Standardfunktionen des Editors nutzen, z. B. IntelliSense, Gliedern, XML-Ausschnitte usw. Außerdem gibt es auch neue Funktionen, die die Entwicklung in XSLT erleichtern.
+Der XML-Editor kann auch zum Bearbeiten von XSLT-Stylesheets verwendet werden. Sie können die Vorteile der Standardfunktionen des Editors nutzen, z. B. IntelliSense, Gliedern, XML-Ausschnitte usw. Außerdem gibt es auch neue Funktionen, die die Entwicklung in XSLT erleichtern.
 
 ## <a name="xslt-features"></a>XSLT-Funktionen
 
 In der folgenden Tabelle werden die für die Arbeit mit XSLT-Stylesheets spezifischen Features beschrieben.
 
-**Farben für Syntax**
+**Syntax Farbgebung**
 
-XSLT-Schlüsselwörter, wie z. B. `template` und `match`, werden angezeigt, in der XSLT-Schlüsselwort Farbe, die gemäß der **Schriftarten und Farben** Einstellungen.
+XSLT-Schlüsselwörter wie `template` und `match` werden in der XSLT-Schlüsselwort Farbe angezeigt, die in den Einstellungen für **Schriftarten und Farben** angegeben ist.
 
-**Wellenförmige unterstreichungen**
+**Wellenförmige Unterstreichungen**
 
-Der XML-Editor verwendet die installierte *xslt.xsd* Datei zum Überprüfen der XSLT-Stylesheets. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Der XML-Editor kompiliert auch das Stylesheet im Hintergrund und meldet Compilerfehler oder Warnungen mit entsprechenden wellenförmigen unterstreichungen.
+Der XML-Editor verwendet die installierte *XSLT. xsd* -Datei, um XSLT-Stylesheets zu validieren. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Der XML-Editor kompiliert auch das Stylesheet im Hintergrund und meldet Compilerfehler oder Warnungen mit entsprechenden wellenförmigen unterstrichen.
 
-**Unterstützung von Skriptblöcken**
+**Unterstützung für Skriptblöcke**
 
 Code in Skriptblöcken wird vom XSLT-Debugger unterstützt. Daher können Sie Haltepunkte festlegen und den Skriptblockcode schrittweise ausführen.
 
-**Anzeigen der XSLT-Ausgabe**
+**XSLT-Ausgabe anzeigen**
 
-Sie können eine XSL-Transformation ausführen und zeigen Sie die Ausgabe der XML-Editor. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen eine XSLT-Transformation im XML-Editor](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+Sie können eine XSL-Transformation ausführen und die Ausgabe im XML-Editor anzeigen. Weitere Informationen finden Sie unter Gewusst [wie: Ausführen einer XSLT-Transformation im XML-Editor](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
-**Debug XSLT**
+**XSLT Debuggen**
 
-Sie können die XSLT-Debugger aus einer XSLT-Datei in der XML-Editor starten. Der Debugger unterstützt das Festlegen von Haltepunkten in der XSLT-Datei, das Anzeigen des Ausführungszustands und weitere Vorgänge. Wenn auf eine XSLT-Variable gezeigt wird, wird eine QuickInfo mit dem Variablenwert angezeigt. Mit dem Debugger kann ein Stylesheet oder eine aus einer anderen Anwendung aufgerufene, kompilierte XSL-Transformation debuggt werden. Weitere Informationen finden Sie unter [XSLT Debuggen](../xml-tools/debugging-xslt.md).
+Sie können den XSLT-Debugger über eine XSLT-Datei im XML-Editor starten. Der Debugger unterstützt das Festlegen von Haltepunkten in der XSLT-Datei, das Anzeigen des Ausführungszustands und weitere Vorgänge. Wenn auf eine XSLT-Variable gezeigt wird, wird eine QuickInfo mit dem Variablenwert angezeigt. Mit dem Debugger kann ein Stylesheet oder eine aus einer anderen Anwendung aufgerufene, kompilierte XSL-Transformation debuggt werden. Weitere Informationen finden Sie unter [Debuggen von XSLT](../xml-tools/debugging-xslt.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-editor](../xml-tools/xml-editor.md)
+- [XML-Editor](../xml-tools/xml-editor.md)

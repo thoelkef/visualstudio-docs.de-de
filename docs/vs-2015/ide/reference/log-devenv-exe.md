@@ -10,35 +10,35 @@ helpviewer_keywords:
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 18b455d3da5693e5a82dbf45e52d04b18edaef5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f427edfe294605b7b2adcbb0889e48c4f37b6ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199092"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666846"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Protokolliert sämtliche Aktivitäten zur Problembehandlung in der Protokolldatei. Diese Datei wird angezeigt, nachdem Sie `devenv /log` mindestens einmal aufgerufen haben. Standardmäßig wird folgende Protokolldatei verwendet:  
-  
- *%APPDATA%* \Microsoft\VisualStudio\\*Version*\ActivityLog.xml  
-  
- wobei *Version* für die Visual Studio-Version steht. Sie können jedoch einen anderen Pfad und Dateinamen angeben.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-Devenv /log Path\NameOfLogFile  
-```  
-  
-## <a name="remarks"></a>Anmerkungen  
- Dieser Schalter muss am Ende der Befehlszeile nach allen anderen Schaltern angezeigt werden.  
-  
- Das Protokoll wird für alle Instanzen von Visual Studio geschrieben, die Sie mit dem /log-Schalter aufgerufen haben. Es werden keine Instanzen von Visual Studio protokolliert, die Sie ohne den Schalter aufgerufen haben.  
-  
-## <a name="see-also"></a>Siehe auch  
+Protokolliert sämtliche Aktivitäten zur Problembehandlung in der Protokolldatei. Diese Datei wird angezeigt, nachdem Sie `devenv /log` mindestens einmal aufgerufen haben. Standardmäßig wird folgende Protokolldatei verwendet:
+
+ *%APPDATA%* \Microsoft\VisualStudio\\*Version*\ActivityLog.xml
+
+ wobei *Version* für die Visual Studio-Version steht. Sie können jedoch einen anderen Pfad und Dateinamen angeben.
+
+## <a name="syntax"></a>Syntax
+
+```
+Devenv /log Path\NameOfLogFile
+```
+
+## <a name="remarks"></a>Anmerkungen
+ Dieser Schalter muss am Ende der Befehlszeile nach allen anderen Schaltern angezeigt werden.
+
+ Das Protokoll wird für alle Instanzen von Visual Studio geschrieben, die Sie mit dem /log-Schalter aufgerufen haben. Es werden keine Instanzen von Visual Studio protokolliert, die Sie ohne den Schalter aufgerufen haben.
+
+## <a name="see-also"></a>Siehe auch
  [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)

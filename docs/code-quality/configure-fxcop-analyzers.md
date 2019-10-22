@@ -4,30 +4,30 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7619b040343720198e190f551741f565e62fa145
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186399"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649698"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurieren von FxCop-Analyzern
 
 Das [Paket FxCop](install-fxcop-analyzers.md) Analyzer besteht aus den wichtigsten "FxCop"-Regeln aus der Legacy-Analyse, die in .NET Compiler Platform-basierte Code Analysen konvertiert wurden. Bei bestimmten FxCop-Regeln können Sie durch [konfigurierbare Optionen](fxcop-analyzer-options.md)verfeinern, auf welche Teile Ihrer Codebasis Sie angewendet werden sollen. Jede Option wird durch Hinzufügen eines Schlüssel-Wert-Paars zu einer [Editor config](https://editorconfig.org) -Datei angegeben. Eine Konfigurationsdatei kann [für ein projektspezifisch](#per-project-configuration) sein oder von zwei oder mehr Projekten [gemeinsam genutzt](#shared-configuration) werden.
 
 > [!TIP]
-> Sie können dem Projekt eine Editor config-Datei hinzufügen, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und**Neues Element** **Hinzufügen** > auswählen. Geben Sie im Fenster **Neues Element hinzufügen** im Suchfeld den Text **Editor config** ein. Wählen Sie die Vorlage **Editor config file (Standard)** aus, und wählen Sie **Hinzufügen**aus.
+> Fügen Sie dem Projekt eine Editor config-Datei hinzu, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und  > **Neues Element** **Hinzufügen** auswählen. Geben Sie im Fenster **Neues Element hinzufügen** im Suchfeld den Text **Editor config** ein. Wählen Sie die Vorlage **Editor config file (Standard)** aus, und wählen Sie **Hinzufügen**aus.
 >
 > ![Editor config-Datei dem Projekt in Visual Studio hinzufügen](media/add-editorconfig-file.png)
 
 ::: moniker range=">=vs-2019"
 
-Informationen zum Konfigurieren des schwere Grads einer Regel (z. b. ob es sich um einen Fehler oder eine Warnung handelt) finden Sie unter [Festlegen des Regel schwere Grads in einer Editor config-Datei](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Sie können auch einen der integrierten [Regelsätze](analyzer-rule-sets.md) auswählen, um eine Kategorie von Regeln schnell zu aktivieren oder zu deaktivieren.
+Informationen zum Konfigurieren des schwere Grads einer Regel (z. b. ob es sich um einen Fehler oder eine Warnung handelt) finden Sie unter [Festlegen des Regel schwere Grads in einer Editor config-Datei](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Oder Sie können eine der integrierten [Editor config-Dateien oder Regelsätze](analyzer-rule-sets.md) auswählen, um eine Kategorie von Regeln schnell zu aktivieren oder zu deaktivieren.
 
 ::: moniker-end
 

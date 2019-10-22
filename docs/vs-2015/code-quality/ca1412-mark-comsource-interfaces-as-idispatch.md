@@ -12,40 +12,40 @@ helpviewer_keywords:
 - MarkComSourceInterfacesAsIDispatch
 ms.assetid: 131a7563-0410-443c-a8f5-52104250cfb4
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d72dd7e143720ce4ef2fce364a7e5ed3529ff9f3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 86dc7042a48faa200ef9c360829b1756bc261ab0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691994"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652731"
 ---
-# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: ComSource-Schnittstellen als IDispatch markieren.
+# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: ComSource-Schnittstellen als IDispatch markieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
-|Kategorie|Microsoft.Interoperability|
+|Kategorie|Microsoft. Interoperabilität|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ist ein Typ mit markiert die <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> -Attribut und mindestens eine angegebene Schnittstelle ist nicht mit markiert die <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> -Attributsatz auf die `InterfaceIsDispatch` Wert.
+ Ein Typ ist mit dem <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>-Attribut markiert, und mindestens eine angegebene Schnittstelle ist nicht mit dem Attribut "<xref:System.Runtime.InteropServices.InterfaceTypeAttribute>" gekennzeichnet, das auf den `InterfaceIsDispatch` Wert festgelegt ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> wird verwendet, die Ereignisschnittstellen zu identifizieren, die eine Klasse, die den Component Object Model (COM)-Clients verfügbar macht. Diese Schnittstellen müssen verfügbar gemacht werden, als `InterfaceIsIDispatch` Visual Basic 6-COM-Clients, ereignisbenachrichtigungen empfangen werden können. Standardmäßig, wenn eine Schnittstelle nicht gekennzeichnet ist die <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> -Attribut, es wird als eine duale Schnittstelle verfügbar gemacht.
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> wird verwendet, um die Ereignis Schnittstellen zu identifizieren, die eine Klasse für Component Object Model (com)-Clients verfügbar macht. Diese Schnittstellen müssen als `InterfaceIsIDispatch` verfügbar gemacht werden, damit Visual Basic 6 com-Clients Ereignis Benachrichtigungen empfangen können. Wenn eine Schnittstelle nicht mit dem <xref:System.Runtime.InteropServices.InterfaceTypeAttribute>-Attribut markiert ist, wird Sie standardmäßig als duale Schnittstelle verfügbar gemacht.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, hinzufügen oder Ändern der <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> Attribut, damit der Wert auf InterfaceIsIDispatch für alle Schnittstellen festgelegt ist, die mit angegeben sind die <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> Attribut.
+ Um einen Verstoß gegen diese Regel zu beheben, müssen Sie das <xref:System.Runtime.InteropServices.InterfaceTypeAttribute>-Attribut hinzufügen oder ändern, sodass der Wert für alle Schnittstellen, die mit dem <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>-Attribut angegeben werden, auf interfakeisidispatch festgelegt ist.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einer Klasse, in denen eine der Schnittstellen gegen die Regel verstößt.
+ Das folgende Beispiel zeigt eine Klasse, in der eine der Schnittstellen gegen die Regel verstößt.
 
  [!code-csharp[FxCop.Interoperability.MarkIDispatch#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.MarkIDispatch/cs/FxCop.Interoperability.MarkIDispatch.cs#1)]
  [!code-vb[FxCop.Interoperability.MarkIDispatch#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.MarkIDispatch/vb/FxCop.Interoperability.MarkIDispatch.vb#1)]
@@ -54,4 +54,4 @@ ms.locfileid: "65691994"
  [CA1408: AutoDual ClassInterfaceType nicht verwenden](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Auslösen von Ereignissen von einem COM-Empfänger behandelt](https://msdn.microsoft.com/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd) [Interoperation mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ Gewusst [wie: Ausführen von Ereignissen, die von einer com-Senke behandelt werden](https://msdn.microsoft.com/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd) , Interoperabilität [mit nicht verwaltetem Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

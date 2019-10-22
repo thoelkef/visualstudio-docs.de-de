@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateApplicationNode | Microsoft-Dokumentation
+title: 'Idebugapplication:: kreateapplicationnode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02a15a67d8f8b6171e9f5893c7f8cd15f79776b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e94a561ca78781167843124a86febb3ef13da2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573167"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
-Erstellt einen neuen Anwendungsknoten, der mit einem bestimmten Dokument Anbieter zugeordnet ist.  
+Erstellt einen neuen Anwendungs Knoten, der einem bestimmten Dokument Anbieter zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT CreateApplicationNode(
   
 #### <a name="parameters"></a>Parameter  
  `ppdanNew`  
- [out] Der Anwendungsknoten Anbieter Dokument zugeordnet.  
+ vorgenommen Der diesem Dokument Anbieter zugeordnete Anwendungs Knoten.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT CreateApplicationNode(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der neue Anwendungsknoten ist nicht sichtbar, bis sie an einem übergeordneten Knoten angefügt ist.  
+ Der neue Anwendungs Knoten ist erst sichtbar, wenn er an einen übergeordneten Knoten angefügt ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

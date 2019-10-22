@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd3bb1537d0e985e91f93ea094ec546ed9a6092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f55d4d3c4470d32d9779f7adf06934f10ac618e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994434"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657483"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern
 
@@ -32,15 +32,15 @@ Führen Sie Analyzer auf Code Maps aus, die Ihnen beim Auffinden sehr komplexer 
 
 ## <a name="analyze-code-maps"></a>Analysieren von Code Maps
 
-Wählen Sie auf der Symbolleiste der Map **Layout** > **Analysen**, und klicken Sie dann den Analyzer, die Sie ausführen möchten:
+Wählen Sie auf der Zuordnungs Symbolleiste **Layout**  >  Analyzer und dann das Analysetool**aus, das**Sie ausführen möchten:
 
 |**Analyse**|**Zur Identifizierung der Knoten, die...**|
 |-|-|
-|**Zirkelverweis-Analyzer**|...Ringabhängigkeiten untereinander aufweisen. **Hinweis**:  Zirkuläre Abhängigkeiten, die in der **Generika** Gruppe werden nicht auf der Karte angezeigt, wenn Sie die Gruppe erweitern.|
-|**Hubs Analyzer suchen**|...zu den obersten 25 % der Knoten mit den meisten Verbindungen gehören<br /><br /> **So blenden Sie alle anderen Knoten auf der Map aus**<br /><br /> – Öffnen Sie das Kontextmenü für die Karte, und wählen **erweitert**, **wählen**, **nicht markierte ausblenden**.<br />     Nicht markierte Knoten werden auf der Map ausgeblendet und neue Knoten werden vom Analyzer als Hubs identifiziert.|
-|**Analyzer für Knoten, auf die nicht verwiesen wird**|...keine Verweise aus anderen Knoten haben. **Vorsicht**:  Überprüfen Sie jeden dieser Fälle, bevor Sie davon ausgehen, dass der Code nicht verwendet wird. Bestimmte Abhängigkeiten wie XAML- und Laufzeitabhängigkeiten können im Code nicht statisch gefunden werden.|
+|**Zirkelverweis-Analyzer**|...Ringabhängigkeiten untereinander aufweisen. **Hinweis:**  Zirkuläre Abhängigkeiten in der **Generika** Gruppe werden nicht in der Zuordnung angezeigt, wenn Sie die Gruppe erweitern.|
+|**Hubs Analyzer suchen**|...zu den obersten 25 % der Knoten mit den meisten Verbindungen gehören<br /><br /> **So blenden Sie alle anderen Knoten auf der Map aus**<br /><br /> -Öffnen Sie das Kontextmenü für die Karte, wählen Sie **erweitert**, **auswählen**, **nicht ausgewählt ausblenden**aus.<br />     Nicht markierte Knoten werden auf der Map ausgeblendet und neue Knoten werden vom Analyzer als Hubs identifiziert.|
+|**Analyzer für Knoten, auf die nicht verwiesen wird**|...keine Verweise aus anderen Knoten haben. **Vorsicht:**  Überprüfen Sie jeden dieser Fälle, bevor Sie davon ausgehen, dass der Code nicht verwendet wird. Bestimmte Abhängigkeiten wie XAML- und Laufzeitabhängigkeiten können im Code nicht statisch gefunden werden.|
 
-Code Map Analyzer werden weiterhin ausgeführt, nachdem Sie sie anwenden. Wenn Sie die Map ändern, verarbeiten alle angewendeten Analyzer automatisch die aktualisierte Map erneut. Wählen Sie zum Beenden eines Analyzers auf der Symbolleiste der Map, **Layout** > **Analysen**. Deaktivieren Sie den ausgewählten Analyzer.
+Code Map Analyzer werden weiterhin ausgeführt, nachdem Sie sie anwenden. Wenn Sie die Map ändern, verarbeiten alle angewendeten Analyzer automatisch die aktualisierte Map erneut. Um die Ausführung eines**Analyzers**zu beenden, wählen Sie auf der Kartensymbol Leiste **Layout**  >  Analyzer aus. Deaktivieren Sie den ausgewählten Analyzer.
 
 > [!TIP]
 > Bei einer sehr großen Map tritt bei der Ausführung eines Analyzers,möglicherweise eine Ausnahme aufgrund unzureichenden Arbeitsspeichers auf. Bearbeiten Sie in diesem Fall die Map, um den Umfang zu verringern oder eine kleinere Map zu generieren, und führen Sie dann den Analyzer aus.

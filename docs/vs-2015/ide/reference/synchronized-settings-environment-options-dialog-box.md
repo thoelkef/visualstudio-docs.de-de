@@ -8,20 +8,20 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41362b237892b59b505313cbc9fafa10326a9ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2bb2f163855196a0580cd1d5a8ddc33b16cbd8f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163259"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651023"
 ---
 # <a name="synchronized-settings-environment-options-dialog-box"></a>Synchronisierte Einstellungen, Umgebung, Dialogfeld „Optionen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Auf dieser Seite können Sie angeben, ob Ihre Einstellungen mit mehreren Computern synchronisiert (Roaming) werden sollen. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen](../../ide/synchronized-settings-in-visual-studio.md).  
-  
-## <a name="see-also"></a>Siehe auch  
+Auf dieser Seite können Sie angeben, ob Ihre Einstellungen mit mehreren Computern synchronisiert (Roaming) werden sollen. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen](../../ide/synchronized-settings-in-visual-studio.md).
+
+## <a name="see-also"></a>Siehe auch
  [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)

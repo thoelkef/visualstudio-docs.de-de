@@ -8,51 +8,50 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 ms.assetid: fc2e9ac5-7a84-44ed-9945-94e45f89c227
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9838e934421e619c85f348052fbe589288391c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b216e89e6a04fb38537f9c45336d07cf6df4abdc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158845"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671268"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagieren auf und Propagieren von Änderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code schreiben, die die Änderung auf andere Teile des Modells oder auf externe Ressourcen wie Dateien, Datenbanken oder andere Komponenten weitergibt.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- Betrachten Sie als Richtwert diese Techniken in der folgenden Reihenfolge aus:  
-  
-|Verfahren|Szenarien|Weitere Informationen|  
-|---------------|---------------|--------------------------|  
-|Definieren Sie eine Eigenschaft "Domain" berechnet.|Eine Eigenschaft "Domain", dessen Wert aus anderen Eigenschaften im Modell berechnet wird. Z. B. ein Preis, der die Summe der Preise verwandter Elemente ist.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|  
-|Definieren einer benutzerdefinierten Domäne Speichereigenschaft an.|Eine Domäneneigenschaft in anderen Teilen des Modells oder extern gespeichert. Beispielsweise könnte eine Ausdruckszeichenfolge in einer Struktur im Modell analysiert werden.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|  
-|Überschreiben Sie Handler für wertänderungen von z. B. "onvaluechanging" und "OnDeleting"|Halten Sie verschiedene Elemente synchron zu, und bewahren Sie externe Werte synchron mit dem Modell.<br /><br /> Schränken Sie die Werte für den definierten Bereichen.<br /><br /> Wird aufgerufen, unmittelbar vor und nach dem Eigenschaftswert und andere Änderungen. Sie können die Änderung durch Auslösen einer Ausnahme beendet.|[Handler für Wertänderungen von Domäneneigenschaften](../modeling/domain-property-value-change-handlers.md)|  
-|Regeln|Sie können Regeln definieren, die für die Ausführung unmittelbar vor dem Ende einer Transaktion in der Warteschlange befinden in denen eine Änderung geschehen ist. Sie werden nicht auf Rückgängig- oder Wiederholen ausgeführt. Verwenden Sie sie an, um einen Teil des Speichers mit einem anderen synchron bleiben.|[Regeln propagieren Änderungen im Modell](../modeling/rules-propagate-changes-within-the-model.md)|  
-|Store-Ereignisse|Die Modellierung Store bietet die Benachrichtigungen von Ereignissen, z. B. hinzufügen oder Löschen eines Elements oder der Link den Wert einer Eigenschaft ändern. Das Ereignis wird auch für rückgängig und wiederholen ausgeführt. Verwenden Sie Speicherereignisse, um Werte zu aktualisieren, die nicht im Speicher vorhanden sind.|[Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
-|Ereignisse für .NET|Formen besitzen, Ereignishandler, die auf Mausklicks und anderen Bewegungen zu reagieren. Sie müssen für diese Ereignisse für jedes Objekt zu registrieren. Registrierung erfolgt in der Regel in einer Außerkraftsetzung der InitializeInstanceResources und muss für jedes Element ausgeführt werden.<br /><br /> Diese Ereignisse treten in der Regel außerhalb einer Transaktion.|[Vorgehensweise: Abfangen eines Klicks auf eine Form oder auf ein Decorator-Element](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
-|Regeln für Grenzen|Eine begrenzungsregel wird verwendet, insbesondere, um die Grenzen einer Form zu beschränken.|[BoundsRules schränken Position und Größe von Formen ein](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
-|Regeln für die Adressenauswahl|Auswahlregeln beschränken insbesondere an, was der Benutzer auswählen kann.|[Vorgehensweise: Zugreifen auf die aktuelle Auswahl und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
-|OnAssocatedPropertyChanged|Geben Sie die Modellelemente-Zustände, die mithilfe der Features von Formen und Konnektoren, z. B. Schatten, Pfeilspitzen, Farbe, und die Linienstärke und Stil an.|[Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
-  
-## <a name="comparing-rules-and-store-events"></a>**Vergleichen von Regeln und Store-Ereignisse**  
- Änderung Notifier, Regeln und Ereignisse werden ausgeführt, wenn in einem Modell Änderungen.  
-  
- Regeln werden in der Regel angewendet, mit der Endtransaktion, in der die Änderung aufgetreten ist, und Ereignisse werden angewendet, nachdem die Änderungen in einer Transaktion ein Commit ausgeführt werden.  
-  
- Verwenden Sie Speicherereignisse, um das Modell mit Objekten außerhalb der Store, und Regeln, die Konsistenz in den Store zu synchronisieren.  
-  
-- **Erstellen benutzerdefinierter Regeln** als abgeleitete Klasse von einer abstrakten-Regel, erstellen Sie eine benutzerdefinierte Regel. Sie müssen auch das Framework über die benutzerdefinierte Regel benachrichtigen. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).  
-  
-- **Abonnieren von Ereignissen** , bevor Sie ein Ereignis abonnieren können, erstellen Sie einen Ereignishandler und Delegaten. Verwenden Sie dann die <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>Eigenschaft, um das Ereignis abonnieren. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
-  
-- **Änderungen werden rückgängig gemacht** Wenn Sie eine Transaktion rückgängig zu machen, werden Ereignisse ausgelöst, aber Regeln werden nicht angewendet. Wenn eine Regel wird ein Wert geändert, und Sie diese Änderung rückgängig zu machen, wird der Wert auf den ursprünglichen Wert zurückgesetzt, während die Rückgängig-Aktion. Wenn ein Ereignis ausgelöst wird, müssen Sie den Wert manuell wieder auf den ursprünglichen Wert ändern. Weitere Informationen zu Transactons und rückgängig machen, finden Sie unter [Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).  
-  
-- **Ereignisargumente, Regeln und Ereignisse übergeben** beide Ereignisse und Regeln werden übergeben, eine `EventArgs` Parameter, die Informationen dazu, wie das Modell geändert.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Abfangen eines Klicks auf einer Form oder eines Decorator-Element](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
- [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code schreiben, der die Änderung an andere Teile des Modells oder an externe Ressourcen wie z. b. Dateien, Datenbanken oder andere Komponenten weitergibt.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ Beachten Sie als Richtlinie diese Verfahren in der folgenden Reihenfolge:
+
+|Fahr|Szenarien|Weitere Informationen|
+|---------------|---------------|--------------------------|
+|Definieren Sie eine berechnete Domänen Eigenschaft.|Eine Domänen Eigenschaft, deren Wert aus anderen Eigenschaften im Modell berechnet wird. Beispielsweise ein Preis, der die Summe der Preise für verwandte Elemente ist.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|
+|Definieren Sie eine benutzerdefinierte Speicher Domänen Eigenschaft.|Eine Domänen Eigenschaft, die in anderen Teilen des Modells oder extern gespeichert ist. Beispielsweise können Sie eine Ausdrucks Zeichenfolge in eine Struktur im Modell analysieren.|[Berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md)|
+|Überschreiben von Änderungs Handlern, z. b. onvaluechanging und onlösch|Behalten Sie die Synchronisierung verschiedener Elemente bei, und behalten Sie die Synchronisierung externer Werte mit dem Modell bei.<br /><br /> Schränkt Werte auf definierte Bereiche ein.<br /><br /> Wird unmittelbar vor und nach dem-Eigenschafts Wert und anderen Änderungen aufgerufen. Sie können die Änderung beenden, indem Sie eine Ausnahme auslösen.|[Handler für Wertänderungen von Domäneneigenschaften](../modeling/domain-property-value-change-handlers.md)|
+|Regeln|Sie können Regeln definieren, die unmittelbar vor dem Ende einer Transaktion, in der eine Änderung vorgenommen wurde, zur Ausführung in die Warteschlange eingereiht werden. Sie werden bei Rückgängigmachen oder wiederholen nicht ausgeführt. Verwenden Sie diese, um einen Teil des Stores synchron mit einem anderen zu verwenden.|[Regeln propagieren Änderungen im Modell](../modeling/rules-propagate-changes-within-the-model.md)|
+|Speichern von Ereignissen|Der Modellierungs Speicher bietet Benachrichtigungen zu Ereignissen, z. b. zum Hinzufügen oder Löschen eines Elements oder Links oder zum Ändern des Werts einer Eigenschaft. Das Ereignis wird auch bei Rückgängigmachen und wiederholen ausgeführt. Verwenden Sie Store-Ereignisse, um Werte zu aktualisieren, die sich nicht im Speicher befinden.|[Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
+|.Net-Ereignisse|Formen verfügen über Ereignishandler, die auf Mausklicks und andere Gesten reagieren. Sie müssen für jedes Objekt eine Registrierung für diese Ereignisse durchsuchen. Die Registrierung erfolgt in der Regel in einer außer Kraft Setzung von initializeingestanceresources und muss für jedes Element ausgeführt werden.<br /><br /> Diese Ereignisse treten in der Regel außerhalb einer Transaktion auf.|[Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
+|Begrenzungs Regeln|Eine Begrenzungs Regel wird speziell verwendet, um die Grenzen einer Form einzuschränken.|[BoundsRules schränken Position und Größe von Formen ein](../modeling/boundsrules-constrain-shape-location-and-size.md)|
+|Auswahlregeln|Auswahlregeln beschränken speziell das, was der Benutzer auswählen kann.|[Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)|
+|Onassoalisiedpropertychanged|Geben Sie die Zustände der Modellelemente mithilfe von Merkmalen von Formen und Connectors wie Schatten, Pfeilspitzen, Farbe, Linienbreite und Stil an.|[Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
+
+## <a name="comparing-rules-and-store-events"></a>**Vergleichen von Regeln und Speichern von Ereignissen**
+ Änderungs Benachrichtigungen, Regeln und Ereignisse werden ausgeführt, wenn Änderungen in einem Modell auftreten.
+
+ Regeln werden normalerweise bei der End-Transaktion angewendet, in der die Änderung aufgetreten ist, und Ereignisse werden angewendet, nachdem die Änderungen in einer Transaktion übernommen wurden.
+
+ Verwenden Sie Store-Ereignisse, um das Modell mit Objekten außerhalb des Stores zu synchronisieren, und Regeln, um die Konsistenz innerhalb des Stores aufrechtzuerhalten.
+
+- **Erstellen von benutzerdefinierten Regeln** Sie erstellen eine benutzerdefinierte Regel als abgeleitete Klasse aus einer abstrakten Regel. Außerdem müssen Sie das Framework über die benutzerdefinierte Regel informieren. Weitere Informationen finden Sie unter [Regeln verbreiten Änderungen innerhalb des Modells](../modeling/rules-propagate-changes-within-the-model.md).
+
+- **Abonnieren von Ereignissen** Bevor Sie ein Ereignis abonnieren können, erstellen Sie einen Ereignishandler und einen Delegaten. Verwenden Sie dann die <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property, um das Ereignis zu abonnieren. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+
+- **Änderungen werden nicht mehr** ausgeführt Wenn Sie eine Transaktion rückgängig machen, werden Ereignisse ausgelöst, aber Regeln werden nicht angewendet. Wenn eine Regel einen Wert ändert und Sie diese Änderung rückgängig machen, wird der Wert während der Rückgängig-Aktion auf den ursprünglichen Wert zurückgesetzt. Wenn ein Ereignis ausgelöst wird, müssen Sie den Wert manuell auf seinen ursprünglichen Wert zurücksetzen. Weitere Informationen zu transactons und zum Rückgängigmachen finden Sie unter Gewusst [wie: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).
+
+- **Übergeben von Ereignis Argumenten an Regeln und Ereignisse** An Ereignisse und Regeln wird ein `EventArgs` Parameter übergeben, der Informationen über die Änderung des Modells enthält.
+
+## <a name="see-also"></a>Siehe auch
+ Gewusst [wie: Abfangen eines Klick auf eine Form oder einen Decorator, der](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) [Code zum Anpassen einer domänenspezifischen Sprache schreibt](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA2207: Statische Felder Werttyp Inline initialisieren | Microsoft-Dokumentation'
+title: 'CA2207: statische Felder für Werttyp Inline initialisieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - InitializeValueTypeStaticFieldsInline
 ms.assetid: d1ea9d8b-ecc2-46ca-86e2-c41dd0e76658
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4f8bc843dc20df03ddf38a7506342addb6477297
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2b3c1faf4ecf3ecf79a3c78d0ded106b88345ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142520"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609369"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Statische Felder für Werttyp inline initialisieren.
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Statische Felder für Werttyp inline initialisieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
-|Kategorie|Microsoft.Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
  Ein Werttyp deklariert einen expliziten statischen Konstruktor.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn ein Werttyp deklariert wird, durchläuft er standardmäßig initialisiert, wenn alle Felder für Werttyp auf 0 (null) festgelegt werden, und alle Verweistypfelder festgelegt sind `null` (`Nothing` in Visual Basic). Ein expliziter statischer Konstruktor ist nur garantiert vor einem Instanzenkonstruktor ausgeführt werden, oder statische Member des Typs aufgerufen wird. Aus diesem Grund, wenn der Typ erstellt wird, ohne einen Instanzkonstruktor aufrufen, wird der statische Konstruktor Ausführung nicht garantiert.
+ Wenn ein Werttyp deklariert wird, wird eine Standard Initialisierung durchgeführt, bei der alle Werttyp Felder auf 0 (null) festgelegt sind und alle Verweistyp Felder auf `null` (`Nothing` in Visual Basic) festgelegt sind. Es ist nur garantiert, dass ein expliziter statischer Konstruktor ausgeführt wird, bevor ein Instanzkonstruktor oder ein statischer Member des Typs aufgerufen wird. Wenn der Typ ohne Aufruf eines Instanzkonstruktors erstellt wird, wird der statische Konstruktor daher nicht garantiert ausgeführt.
 
- Wenn alle statische Daten Inline initialisiert und keine expliziter statischer Konstruktor deklariert ist, fügen die C#- und Visual Basic-Compiler die `beforefieldinit` Flag, um die Definition der MSIL-Klasse. Der Compiler fügen auch einen privaten, statischen Konstruktor mit dem statischen Initialisierungscode hinzu. Diese private statische Konstruktor ist garantiert ausgeführt werden, bevor ein statisches Feld des Typs zugegriffen werden.
+ Wenn alle statischen Daten inline initialisiert werden und kein expliziter statischer Konstruktor deklariert C# wird, fügen die Compiler und Visual Basic der MSIL-Klassendefinition das `beforefieldinit`-Flag hinzu. Die Compiler fügen außerdem einen privaten statischen Konstruktor hinzu, der den statischen Initialisierungs Code enthält. Dieser private statische Konstruktor wird garantiert ausgeführt, bevor auf statische Felder des Typs zugegriffen wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Zur Behebung wird ein Verstoß gegen diese Regel alle statische Daten initialisieren, wenn sie deklariert ist, und entfernen den statischen Konstruktor.
+ Um einen Verstoß gegen diese Regel zu beheben, initialisieren Sie alle statischen Daten, wenn Sie deklariert werden, und entfernen Sie den statischen Konstruktor.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1810: Statische Felder von Verweistypen Inline initialisieren](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+ [CA1810: Statische Felder von Verweistypen inline initialisieren](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

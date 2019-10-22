@@ -1,5 +1,5 @@
 ---
-title: Debugfehler und Warnmeldungen | Microsoft-Dokumentation
+title: Fehler-und Warnungs Dialogfelder Debuggen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852222"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431677"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Debugfehler und Warnmeldungen
 Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen einer Anwendung auftreten können.
@@ -38,7 +38,7 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
 
  [Debugger kann keinen Quellcode oder Disassembly anzeigen](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Debugger-Dienste, die nicht genügend Arbeitsspeicher ausgeführt werden.](../debugger/error-debugger-services-no-memory.md)
+ [Debugger-Dienste mit nicht genügend Arbeitsspeicher](../debugger/error-debugger-services-no-memory.md)
 
  [Ausführbare Datei für die Debugsitzung (Dialogfeld)](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -59,7 +59,7 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
  [Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debuggen von Skript- und Web: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugging Script and Web: Errors and Troubleshooting (Debuggen von Skript und Web: Fehler und Problembehandlung)](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Fehler beim Remotedebuggen](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
 
  [Problembehandlung beim Einrichten des SQL-Debuggens](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Häufig gestellte Fragen zum Debuggen von Visual C++](../debugger/debugging-native-code-faqs.md)
+ [Häufig gestellte Fragen zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)
 
  [Debuggersicherheit](../debugger/debugger-security.md)

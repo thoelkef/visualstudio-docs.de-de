@@ -1,5 +1,5 @@
 ---
-title: 'CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen | Microsoft-Dokumentation'
+title: 'CA1717: Nur FlagsAttribute-Enumerationen sollten Plural Namen aufweisen. Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA1717
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: aa0c51eaa10503a92c21960dc3dd074aa7541f5c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0c378d419be0d964c27cfcbe523fbe3a33da97b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694959"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669080"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen.
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Nur FlagsAttribute-Enumerationen sollten Pluralnamen aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,27 +33,27 @@ ms.locfileid: "65694959"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Der Name einer extern sichtbare Enumeration in Pluralform endet und die Enumeration ist nicht mit markiert die <xref:System.FlagsAttribute?displayProperty=fullName> Attribut.
+ Der Name einer extern sichtbaren Enumeration endet in einem Plural Wort, und die Enumeration ist nicht mit dem <xref:System.FlagsAttribute?displayProperty=fullName>-Attribut gekennzeichnet.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Benennungskonventionen für vorgeben, dass ein Pluralname für eine Enumeration gibt an, dass mehr als einen Wert der Enumeration gleichzeitig angegeben werden kann. Die <xref:System.FlagsAttribute> werden Compiler angewiesen, die Enumeration als Bitfeld behandelt werden soll, der bitweise Vorgänge in der Enumeration ermöglicht.
+ Benennungs Konventionen legen fest, dass ein Plural Name für eine Enumeration angibt, dass mehr als ein Wert der Enumeration gleichzeitig angegeben werden kann. Der <xref:System.FlagsAttribute> weist Compiler an, dass die Enumeration als Bitfeld behandelt werden soll, das bitweise Operationen für die Enumeration ermöglicht.
 
- Wenn nur ein Wert einer Enumeration zu einem Zeitpunkt angegeben werden kann, sollte der Name der Enumeration Singularform sein. Beispielsweise könnte eine Enumeration, die Tage der Woche definiert, gedacht ist für die Verwendung in einer Anwendung in dem Sie mehrere Tage angeben können. Diese Enumeration müssen den <xref:System.FlagsAttribute> 'Days' aufgerufen werden kann. Eine ähnliche-Enumeration, die nur einen einzelnen Tag angegeben werden kann. das Attribut keine, und möglicherweise 'Day' aufgerufen.
+ Wenn nur ein Wert einer Enumeration gleichzeitig angegeben werden kann, sollte der Name der Enumeration ein einzelnes Wort sein. Beispielsweise kann eine Enumeration, die die Wochentage definiert, für die Verwendung in einer Anwendung bestimmt werden, in der Sie mehrere Tage angeben können. Diese Enumeration sollte den <xref:System.FlagsAttribute> aufweisen und als "Days" bezeichnet werden. Eine ähnliche Enumeration, die zulässt, dass nur ein einzelner Tag angegeben wird, verfügt nicht über das-Attribut und könnte als "Day" bezeichnet werden.
 
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dies reduziert die Zeit, die ist erforderlich, um eine neue Softwarebibliothek erfahren, und zudem wird das Kundenvertrauen, dass die Bibliothek von einer Person entwickelt wurde, die Erfahrung in der Entwicklung von verwaltetem Code hat.
+ Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dies reduziert die Zeit, die erforderlich ist, um eine neue Software Bibliothek kennenzulernen, und steigert das Kunden Vertrauen, dass die Bibliothek von einem Benutzer entwickelt wurde, der über Kenntnisse in der Entwicklung von verwaltetem Code verfügt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Ändern Sie dem Namen der Enumeration Singularform oder Hinzufügen der <xref:System.FlagsAttribute>.
+ Geben Sie den Namen der Enumeration als Singular Wort an, oder fügen Sie den <xref:System.FlagsAttribute> hinzu.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher eine Warnung von der Regel zu unterdrücken, wenn der Name in die Singularform endet.
+ Es ist sicher, eine Warnung aus der Regel zu unterdrücken, wenn der Name auf ein einzelnes Wort endet.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen.](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+ [CA1714: Flags-Enumerationen sollten Pluralnamen aufweisen](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
 
  [CA1027: Enumerationen mit FlagsAttribute markieren](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: Nicht Enumerationen mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Enumerationen nicht mit FlagsAttribute markieren](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.FlagsAttribute?displayProperty=fullName> [Enum-Entwurf](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
+ <xref:System.FlagsAttribute?displayProperty=fullName>-Aufzählungs [Entwurf](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

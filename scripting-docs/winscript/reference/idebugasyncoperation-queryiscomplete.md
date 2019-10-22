@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::QueryIsComplete | Microsoft-Dokumentation
+title: 'Idebugasyncoperation:: queryiscomplete | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de686f146fded1e4b53914a1de706025f6680ab6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51bbfa6a19a247f378a0408e250651c94219fcb5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822005"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573263"
 ---
 # <a name="idebugasyncoperationqueryiscomplete"></a>IDebugAsyncOperation::QueryIsComplete
 Bestimmt, ob der Debugvorgang abgeschlossen wurde.  
@@ -34,18 +34,18 @@ HRESULT QueryIsComplete();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|`S_OK`|Der Vorgang ist abgeschlossen.|  
-|`S_FALSE`|Der Vorgang ist nicht abgeschlossen.|  
+|`S_OK`|Der Vorgang ist fertiggestellt.|  
+|`S_FALSE`|Der Vorgang ist nicht fertiggestellt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird bestimmt, ob der Debugvorgang abgeschlossen wurde.  
+ Diese Methode bestimmt, ob der Debugvorgang abgeschlossen wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d503f8d1fd18817a30f49c64307d9fc14c74b3ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567610"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642718"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Erstellen eines Windows Forms zum Suchen von Daten
 
@@ -27,49 +27,49 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
 
 Durch die Verwendung parametrisierter Abfragen wird die Effizienz der Anwendung erhöht, weil die Datenbank die Arbeit ausführt, für die sie optimiert ist, nämlich die schnelle Filterung von Datensätzen. Wenn Sie dagegen eine ganze Datenbanktabelle anfordern, sie über das Netzwerk übertragen und dann mit der Anwendungslogik die gewünschten Datensätze suchen, wird die Anwendung langsam und ineffizient.
 
-Sie können alle TableAdapter (und Steuerelemente Parameterwerte annehmen und Ausführen der Abfrage), mit parametrisierte Abfragen hinzufügen der **Suchkriterien-Generator** Dialogfeld. Öffnen Sie das Dialogfeld, indem Sie im Menü **Daten** (bzw. in einem TableAdapter-Smarttag) den Befehl **Abfrage hinzufügen** auswählen.
+Mit dem Dialogfeld **Suchkriterien** -Generator können Sie einem beliebigen TableAdapter (und Steuerelementen, die Parameterwerte akzeptieren und die Abfrage ausführen) parametrisierte Abfragen hinzufügen. Öffnen Sie das Dialogfeld, indem Sie im Menü **Daten** (bzw. in einem TableAdapter-Smarttag) den Befehl **Abfrage hinzufügen** auswählen.
 
 In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:
 
-- Erstellen und konfigurieren die Datenquelle in Ihrer Anwendung mit der **Datenquellenkonfiguration** Assistenten.
+- Erstellen und Konfigurieren der Datenquelle in der Anwendung mit dem Assistenten zum Konfigurieren von **Datenquellen** .
 
-- Festlegen des Ablagetyps der Elemente in der **Datenquellen** Fenster.
+- Legen Sie den Ablagetyp für die Elemente im **Datenquellen** Fenster fest.
 
 - Erstellen von Steuerelementen, mit denen Daten angezeigt werden, indem Elemente aus dem **Datenquellenfenster** auf ein Formular gezogen werden.
 
 - Hinzufügen von Steuerelementen zum Anzeigen der Daten auf dem Formular.
 
-- Abschließen der **Suchkriterien-Generator** Dialogfeld.
+- Das Dialogfeld **Suchkriterien** -Generator wird abgeschlossen.
 
 - Eingeben von Parametern in das Formular und Ausführen der parametrisierten Abfrage.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
-In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
+In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **datenspeicherung und-Verarbeitung** Workload oder als eine einzelne Komponente.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
 
-2. Installieren der Northwind-Beispieldatenbank mit folgenden Schritten:
+2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
-    1. Öffnen Sie in Visual Studio die **Objekt-Explorer von SQL Server** Fenster. (Objekt-Explorer von SQL Server installiert ist, als Teil der **datenspeicherung und-Verarbeitung** arbeitsauslastung in der **Visual Studio-Installer**.) Erweitern Sie die **SQL Server** Knoten. Mit der rechten Maustaste auf der LocalDB-Instanz, und wählen Sie **neue Abfrage**.
+    1. Öffnen Sie in Visual Studio das Fenster **SQL Server-Objekt-Explorer** . (SQL Server-Objekt-Explorer wird als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** im **Visual Studio-Installer**installiert.) Erweitern Sie den Knoten **SQL Server** . Klicken Sie mit der rechten Maustaste auf die localdb-Instanz, und wählen Sie **neue Abfrage**.
 
        Ein Abfrage-Editor-Fenster wird geöffnet.
 
-    2. Kopieren der [Northwind Transact-SQL-Skript](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) in die Zwischenablage. Dieses T-SQL-Skript wird die Northwind-Datenbank von Grund auf neu erstellt und mit Daten aufgefüllt.
+    2. Kopieren Sie das [Northwind-Transact-SQL-Skript](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) in die Zwischenablage. Mit diesem T-SQL-Skript wird die Northwind-Datenbank von Grund auf neu erstellt und mit Daten aufgefüllt.
 
-    3. Fügen Sie das T-SQL-Skript im Abfrage-Editor, und wählen Sie dann die **Execute** Schaltfläche.
+    3. Fügen Sie das T-SQL-Skript in den Abfrage-Editor ein, und klicken Sie dann auf die Schaltfläche **Ausführen** .
 
-       Klicken Sie nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Northwind-Datenbank wird erstellt.
+       Nach kurzer Zeit wird die Ausführung der Abfrage abgeschlossen und die Datenbank Northwind erstellt.
 
-## <a name="create-the-windows-forms-application"></a>Erstellen Sie die Windows Forms-Anwendung
+## <a name="create-the-windows-forms-application"></a>Erstellen der Windows Forms Anwendung
 
-Erstellen Sie ein neues **Windows Forms-App** Projekt entweder C# oder Visual Basic. Weisen Sie dem Projekt den Namen **WindowsSearchForm** zu.
+Erstellen Sie ein neues **Windows Forms-App** - C# Projekt für oder Visual Basic. Weisen Sie dem Projekt den Namen **WindowsSearchForm** zu.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
 
 Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei wird der **Assistent zum Konfigurieren von Datenquellen** verwendet:
 
-1. Zum Öffnen der **Datenquellen** Fenster auf die **Daten** Menü klicken Sie auf **Datenquellen anzeigen**.
+1. Um das Fenster **Datenquellen** zu öffnen, klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
 2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
@@ -91,7 +91,7 @@ Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei w
 
      **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers**-Tabelle wird im **Datenquellenfenster** angezeigt.
 
-## <a name="create-the-form"></a>Erstellen Sie das Formular
+## <a name="create-the-form"></a>Formular erstellen
 
 Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** auf das Formular ziehen:
 
@@ -101,13 +101,13 @@ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus
 
      Auf dem Formular werden <xref:System.Windows.Forms.DataGridView> und ein ToolStrip-Element (<xref:System.Windows.Forms.BindingNavigator>) angezeigt, mit denen Sie durch die Datensätze auf dem Formular navigieren können. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden auf der Komponentenleiste angezeigt.
 
-## <a name="add-parameterization-search-functionality-to-the-query"></a>Hinzufügen von Parametrisierung (Suchfunktionen) zur Abfrage
+## <a name="add-parameterization-search-functionality-to-the-query"></a>Hinzufügen der Parametrisierung (Suchfunktion) zur Abfrage
 
-Sie können eine WHERE-Klausel hinzufügen, um die ursprüngliche Abfrage mithilfe der **Suchkriterien-Generator** Dialogfeld:
+Mit dem Dialogfeld **Suchkriterien** -Generator können Sie der ursprünglichen Abfrage eine WHERE-Klausel hinzufügen:
 
 1. Wählen Sie das Steuerelement <xref:System.Windows.Forms.DataGridView> aus. Wählen Sie anschließend im Menü **Daten** die Option **Abfrage hinzufügen** aus.
 
-2. Typ **FillByCity** in die **Neuer Abfragename** Bereich auf die **Suchkriterien-Generator** Dialogfeld.
+2. Geben Sie im Dialogfeld **Suchkriterien** -Generator im Bereich **neuer Abfrage Name den Namen** **FillByCity** ein.
 
 3. Fügen Sie der Abfrage im Bereich **Abfragetext** die Zeichenfolge `WHERE City = @City` hinzu.
 
@@ -121,7 +121,7 @@ Sie können eine WHERE-Klausel hinzufügen, um die ursprüngliche Abfrage mithil
      ```
 
     > [!NOTE]
-    > Zugriff und OLE DB-Datenquellen verwenden das Fragezeichen ("?") zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussehen würde: `WHERE City = ?`.
+    > Zugriffs-und OLE DB Datenquellen verwenden das Fragezeichen ('? ') zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussieht: `WHERE City = ?`.
 
 4. Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien-Generator** zu schließen.
 
@@ -129,13 +129,13 @@ Sie können eine WHERE-Klausel hinzufügen, um die ursprüngliche Abfrage mithil
 
 ## <a name="test-the-application"></a>Testen der Anwendung
 
-Ausführen der Anwendung wird das Formular geöffnet, und erleichtert die bereit für den Parameter als Eingabe sind:
+Wenn Sie die Anwendung ausführen, wird das Formular geöffnet, und der Parameter wird als Eingabe bereit genommen:
 
 1. Drücken Sie **F5**, um die Anwendung auszuführen.
 
 2. Geben Sie **London** in das Textfeld **City** ein, und klicken Sie dann auf **FillByCity**.
 
-     Das Datenraster wird mit den Kunden gefüllt, die die Kriterien erfüllen. In diesem Beispiel zeigt das Datenraster nur Kunden an, die den Wert **London** in der Spalte **City** aufweisen.
+     Das Datenraster wird mit Kunden aufgefüllt, die die Kriterien erfüllen. In diesem Beispiel zeigt das Datenraster nur Kunden an, die den Wert **London** in der Spalte **City** aufweisen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget-Schnittstelle | Microsoft-Dokumentation
+title: Ijsdebugdatatarget-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cbb4b0b54fb9a3821d3033ef0e65fd0bafbc246
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85c77209230abfe261c9ec0b884ad0a677cfbf07
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582497"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572450"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget-Schnittstelle
 Implementiert durch den Debugger zur Bereitstellung von Funktionen, um auf den Zustand des Zieldebuggerprozesses zuzugreifen und diesen zu ändern.  
@@ -31,7 +31,7 @@ IJsDebugDataTarget : public IUnknown;
   
 ### <a name="public-methods"></a>Öffentliche Methoden  
   
-|Name|Beschreibung|  
+|-Name|Beschreibung|  
 |----------|-----------------|  
 |[IJsDebugDataTarget::AllocateVirtualMemory-Methode](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Reserviert und/oder führt Commit eines Arbeitsspeicherbereich innerhalb des virtuellen Adressraums des Zielprozesses aus.|  
 |[IJsDebugDataTarget::CreateStackFrameEnumerator-Methode](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Erstellt einen Enumerator für Stapelrahmen.|  
@@ -44,7 +44,7 @@ IJsDebugDataTarget : public IUnknown;
 |[IJsDebugDataTarget::WriteMemory-Methode](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Liest den Arbeitsspeicher des Zielprozesses.|  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)

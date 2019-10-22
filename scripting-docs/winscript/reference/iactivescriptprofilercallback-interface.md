@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback-Schnittstelle | Microsoft-Dokumentation
+title: Iactivescriptprofilercallback-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,35 +11,35 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e8f64f187638af7f9ab4bf6b80e88fe6992c78e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ae520dcb36e00dfaba8702db6294a5a47484b0a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386087"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571716"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>IActiveScriptProfilerCallback-Schnittstelle
-Bietet Methoden, die von der Skript-Engine verwendet werden, um eine Profilerobjekt zu benachrichtigen, wenn Ereignisse auftreten. Diese Schnittstelle wird von der Profilerobjekt implementiert.  
+Stellt Methoden bereit, die von der Skript-Engine zum Benachrichtigen eines Profiler-Objekts beim Auftreten von Ereignissen verwendet werden. Diese Schnittstelle wird vom Profiler-Objekt implementiert.  
   
 ## <a name="methods"></a>Methoden  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|Wird aufgerufen, um das Profilerobjekt zu initialisieren, wenn die profilerstellung einer Skript-Engine gestartet wurde.|  
-|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|Wird aufgerufen, um kostenlose und das Profilerobjekt frei, wenn auf eine Skript-Engine die profilerstellung beendet wird.|  
-|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|Benachrichtigt den Profiler an, dass Objekt, das die Skript-Engine-das Skript kompiliert.|  
-|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|Benachrichtigt dem Profiler-Objekt, das die Skript-Engine-eine Funktion auftreten, wenn Sie ein Skript zu kompilieren.|  
-|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|Benachrichtigt den Profilerobjekt, das die Skript-Engine einen Funktionsaufruf, der keinem Aufruf in das Document Objekt Model (DOM) ist, ausgeführt wird.|  
-|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|Benachrichtigt den Profiler, dass das Objekt, dass die Skript-Engine beendet die Ausführung einer Funktion aufrufen, keinen Aufruf in das DOM ist|  
+|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|Wird aufgerufen, um das profilerobjekt zu initialisieren, wenn die Profilerstellung für eine Skript-Engine gestartet wird.|  
+|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|Wird aufgerufen, um das profilerobjekt freizugeben und freizugeben, wenn die Profilerstellung für eine Skript-Engine beendet wurde|  
+|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|Benachrichtigt das Profiler-Objekt, dass die Skript-Engine das Skript kompiliert hat.|  
+|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|Benachrichtigt das Profiler-Objekt, dass die Skript-Engine beim Kompilieren eines Skripts eine Funktion gefunden hat.|  
+|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|Benachrichtigt das Profiler-Objekt, dass die Skript-Engine im Begriff ist, einen Funktions aufrut auszuführen, der kein Dokumentobjektmodell (DOM) aufruft.|  
+|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|Benachrichtigt das Profiler-Objekt, dass die Skript-Engine das Ausführen eines Funktions Aufrufes beendet hat, der kein Dom-Aufrufvorgang ist.|  
   
 ## <a name="remarks"></a>Hinweise  
- Benachrichtigung über Funktionsaufrufe in das Document Objekt Model (DOM) erfolgt über die [IActiveScriptProfilerCallback2-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback2-interface.md).  
+ Die Benachrichtigung von Funktionsaufrufen in der Dokumentobjektmodell (DOM) wird von der [IActiveScriptProfilerCallback2-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback2-interface.md)bereitgestellt.  
   
 > [!NOTE]
-> Rufen Sie die folgenden Methoden zum Hinzufügen der Möglichkeit zum Starten und Beenden der profilerstellung, wenn ein Skript ausgeführt wird. Sie können mit diesen Methoden, die vollständige Aufrufliste abrufen, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] beim Starten oder Beenden der profilerstellung ausgeführt wird.  
+> Um die Möglichkeit zum Starten und Beenden der Profilerstellung beim Ausführen eines Skripts hinzuzufügen, müssen Sie die folgenden Methoden abrufen. Wenn Sie diese Methoden verwenden, können Sie die gesamte-Abruf Stapel abrufen, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung starten oder beenden.  
 > 
-> - Rufen Sie [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) dem Profiler benachrichtigt, dass Sie die profilerstellung gestartet wurde.  
->   - Rufen Sie [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) dem Profiler benachrichtigt, dass Sie bald profilerstellung beendet werden.  
+> - Nennen Sie [IActiveScriptProfilerControl2:: completeprofilerstart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) , um den Profiler zu benachrichtigen, dass Sie mit der Profilerstellung begonnen haben.  
+>   - Wenden Sie sich an [IActiveScriptProfilerControl2::P eneprofilerstoppt](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) , um den Profiler zu benachrichtigen, dass Sie die Profilerstellung bald abbrechen werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Profilerschnittstelle](../../winscript/reference/active-script-profiler-interfaces.md)

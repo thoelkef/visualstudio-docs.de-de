@@ -1,5 +1,5 @@
 ---
-title: IJsDebugBreakPoint-Schnittstelle | Microsoft-Dokumentation
+title: Ijsdebugbreakpoint-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14823baeb999ad24aabef9b2b55b59a7b5d08c71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6bb4e12f0e08baf1842d251347f35265425b999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583105"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577679"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>IJsDebugBreakPoint-Schnittstelle
 Stellt einen Haltepunkt dar.  
@@ -31,7 +31,7 @@ IJsDebugBreakPoint : public IUnknown;
   
 ### <a name="public-methods"></a>Öffentliche Methoden  
   
-|Name|Beschreibung|  
+|-Name|Beschreibung|  
 |----------|-----------------|  
 |[IJsDebugBreakPoint::Delete-Methode](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Löscht den Haltepunkt.|  
 |[IJsDebugBreakPoint::Disable-Methode](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Deaktiviert den Haltepunkt.|  
@@ -40,7 +40,7 @@ IJsDebugBreakPoint : public IUnknown;
 |[IJsDebugBreakPoint::IsEnabled-Methode](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Bestimmt, ob der Haltepunkt aktiviert ist.|  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)

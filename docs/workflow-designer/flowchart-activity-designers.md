@@ -1,23 +1,23 @@
 ---
-title: Workflow-Designer - Flussdiagramm-Aktivitätsdesigner
+title: Workflow-Designer-Flussdiagramm-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f3b816c0e486eeaad49bac0b0054d7d3c2bff9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949642"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650437"
 ---
 # <a name="flowchart-activity-designers"></a>Flussdiagramm-Aktivitätsdesigner
 
-Workflow-Designer enthält eine Reihe von vom System bereitgestellten Aktivitäten, die Sie beim Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zum Verwalten von Flussdiagrammen innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.
+Workflow-Designer umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie beim Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zum Verwalten von Flussdiagrammen innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.
 
 ## <a name="reference"></a>Referenz
  <xref:System.Activities.Activity>

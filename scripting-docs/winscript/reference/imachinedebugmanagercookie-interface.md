@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie-Schnittstelle | Microsoft-Dokumentation
+title: Imachinedebugmanagercookie-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,30 +13,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b39c286f389c99187b0f3250fc68af92ff5dcc8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977682"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573887"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie-Schnittstelle
-Ähnlich wie die `IMachineDebugManager` -Schnittstelle, die `IMachineDebugManagerCookie` Schnittstelle unterstützt die Debug-Cookies.  
+Ähnlich wie bei der `IMachineDebugManager`-Schnittstelle unterstützt die `IMachineDebugManagerCookie`-Schnittstelle Debug-Cookies.  
   
- Diese Schnittstelle (zusammen mit den `IDebugCookie` Schnittstelle)-Skripts in einem Skript-Debugger-Prozess ausgeführt wird, ohne dass der Debugger diese Skripts mitverfolgen können.  
+ Mit dieser Schnittstelle (zusammen mit der `IDebugCookie`-Schnittstelle) können Skripts in einem Skript Debugger-Prozess ausgeführt werden, ohne dass der Debugger diese Skripts nachverfolgen muss.  
   
- Ruft ein Script-Debugger den `IDebugCookie::SetDebugCookie` Methode für den Prozess Debug-Manager (PDM). Klicken Sie dann das PDM sendet dieses Cookie wird zusammen mit jeder Anforderung zum Hinzufügen oder entfernen eine skriptanwendung in oder aus der Computer Debug-Manager (MDM) mit den Methoden der der `IMachineDebugManagerCookie` Schnittstelle. Anschließend benachrichtigt der MDM alle Debugger der Änderung an, mit Ausnahme der, die das Cookie.  
+ Ein Skript Debugger ruft die `IDebugCookie::SetDebugCookie`-Methode für den Process Debug Manager (PDM) auf. Anschließend sendet das PDM dieses Cookie zusammen mit allen Anforderungen zum Hinzufügen oder Entfernen einer Skript Anwendung zum bzw. aus dem Machine Debug Manager (MDM) mithilfe der Methoden der `IMachineDebugManagerCookie`-Schnittstelle. Die MDM benachrichtigt dann jeden Debugger über die Änderung, mit Ausnahme derjenigen, die über dieses Cookie verfügt.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IMachineDebugManagerCookie` Schnittstelle verfügbar macht, die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von `IUnknown` geerbt werden, macht die `IMachineDebugManagerCookie`-Schnittstelle die folgenden Methoden verfügbar.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Fügt eine Anwendung in der ausgeführten Anwendungsliste.|  
-|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Gibt einen Enumerator, der die aktuelle Liste ausgeführter Anwendungen.|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Entfernt eine Anwendung aus der ausgeführten Anwendungsliste.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Fügt der Liste der laufenden Anwendungen eine Anwendung hinzu.|  
+|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Gibt einen Enumerator der aktuellen Liste ausgelaufteter Anwendungen zurück.|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Entfernt eine Anwendung aus der Liste der laufenden Anwendungen.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [IMachineDebugManager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)    
  [IDebugCookie-Schnittstelle](../../winscript/reference/idebugcookie-interface.md)

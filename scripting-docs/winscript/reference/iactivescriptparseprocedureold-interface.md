@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedureOld-Schnittstelle | Microsoft-Dokumentation
+title: Iactivescriptparameanprocedureold-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,25 +17,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4558a0cab2aea9b56db2759bb80b1287cd33ce87
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386169"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571425"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld-Schnittstelle
-Können den Code-Quelltext Verfahren für das Skript hinzugefügt werden. Für interpretierte Skriptsprachen, die nicht über eine unabhängige erstellungsumgebung, z. B. VBScript, verfügen, die Dies bietet eine alternative Methode (außer `IActiveScriptParse` oder `IPersist*`) Skript Verfahren auf den Namespace hinzufügen.  
+Ermöglicht das Hinzufügen des Quell Code Texts für Prozeduren zum Skript. Bei interpretierten Skriptsprachen, die keine unabhängige Erstellungs Umgebung haben (z. b. VBScript), stellt dies einen alternativen Mechanismus (außer `IActiveScriptParse` oder `IPersist*`) bereit, um dem Namespace Skript Prozeduren hinzuzufügen.  
   
 > [!NOTE]
-> Diese Schnittstelle ist veraltet, zugunsten des der `IActiveScriptParseProcedure` Schnittstelle.  
+> Diese Schnittstelle ist zugunsten der `IActiveScriptParseProcedure`-Schnittstelle veraltet.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IActiveScriptParseProcedureOld` Schnittstelle verfügbar macht, die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von `IUnknown` geerbt werden, macht die `IActiveScriptParseProcedureOld`-Schnittstelle die folgenden Methoden verfügbar.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Die Prozedur angegebenen Code analysiert und fügt die Prozedur auf den Namespace.|  
+|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analysiert die angegebene Code Prozedur und fügt die Prozedur zum Namespace hinzu.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

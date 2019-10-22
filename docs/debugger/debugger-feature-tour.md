@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987788"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349757"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -201,6 +201,14 @@ Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zu
 > Der Ausnahmenassistent wurde in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] durch die Ausnahmenhilfe ersetzt.
 
 Erweitern Sie den Knoten **Ausnahmeeinstellungen**, um weitere Optionen zu diesem Ausnahmetyp anzuzeigen. Für dieses Tutorial müssen Sie dort jedoch keine Änderungen vornehmen.
+
+## <a name="configure-debugging"></a>Konfigurieren des Debuggens
+
+Sie können Ihr Projekt so konfigurieren, dass es als [Debug- oder Releasekonfiguration](../debugger/how-to-set-debug-and-release-configurations.md) erstellt wird, Projekteigenschaften für das Debuggen oder [allgemeine Einstellungen ](../debugger/how-to-specify-debugger-settings.md) für das Debuggen konfigurieren. Außerdem können Sie den Debugger so konfigurieren, dass benutzerdefinierte Informationen mithilfe von Features wie dem [DebuggerDisplay](using-the-debuggerdisplay-attribute.md)-Attribut oder, für C/C++, dem [NatVis-Framework](create-custom-views-of-native-objects.md) angezeigt werden.
+
+Debuggingeigenschaften sind für jeden Projekttyp spezifisch. Beispielsweise können Sie ein Argument angeben, das beim Start an die Anwendung übergeben werden soll. Auf diese Konfigurationseinstellungen können Sie zugreifen, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt klicken und **Eigenschaften** auswählen. Debuggingeigenschaften werden in der Regel abhängig vom jeweiligen Projekttyp auf der Registerkarte **Erstellen** oder **Debuggen** angezeigt.
+
+![Projekteigenschaften ](../debugger/media/dbg-tour-project-properties.png "Projekteigenschaften")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Debuggen von ASP.NET-Live-Apps in Azure App Service
 

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID | Microsoft-Dokumentation
+title: 'IActiveScript:: getcurrentscriptthreadid | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e1b6e7bae7d78c18e11cd1aac8d0844fb9e90a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dedb16e0c007ed05370fb54835f84f00784c1ae4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935655"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575769"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-Ruft eine scripting-Engine-definierten Bezeichner für den aktuell ausgeführten Thread ab. Der Bezeichner kann z. B. bei nachfolgenden Aufrufen von Skripts Thread ausführungssteuerung Methoden verwendet werden die [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) Methode.  
+Ruft einen von der Skript-Engine definierten Bezeichner für den aktuell ausgeführten Thread ab. Der Bezeichner kann in nachfolgenden Aufrufen von Skript Ausführungs Steuerungsmethoden wie z. b. der [IActiveScript:: interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) -Methode verwendet werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,13 +37,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>Parameter  
  `pstidThread`  
- [out] Die Adresse einer Variablen, die die dem aktuellen Thread zugeordneten Skript Threadbezeichner empfängt. Die Interpretation dieser Bezeichner ist die Skript-Engine überlassen, aber es kann nur eine Kopie der Windows-Thread-Bezeichner sein. Wenn der Win32-Thread beendet wird, wird dieser Bezeichner wird nicht zugewiesen und kann anschließend an einen anderen Thread zugewiesen werden.  
+ vorgenommen Adresse einer Variablen, die den mit dem aktuellen Thread verknüpften Skript Thread Bezeichner empfängt. Die Interpretation dieses Bezeichners wird der Skript-Engine überlassen, aber es kann sich lediglich um eine Kopie der Windows-Thread Kennung handeln. Wenn der Win32-Thread beendet wird, wird dieser Bezeichner nicht zugewiesen und kann anschließend einem anderen Thread zugewiesen werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` im Erfolgsfall oder `E_POINTER` Wenn ein ungültiger Zeiger angegeben wurde.  
+ Gibt `S_OK` zurück, wenn erfolgreich, oder `E_POINTER`, wenn ein ungültiger Zeiger angegeben wurde.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode kann von nicht-Base Threads aufgerufen werden, ohne dass eine nicht-Base-Legende Hostobjekte oder in der [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Schnittstelle.  
+ Diese Methode kann von nicht basisthreads aus aufgerufen werden, ohne dass ein Aufruf von Objekten oder die [iactivescriptsite](../../winscript/reference/iactivescriptsite.md) -Schnittstelle durchgeführt werden soll.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1704: Bezeichner sollten korrekt geschrieben werden kann | Microsoft-Dokumentation'
+title: 'CA1704: Bezeichner sollten korrekt geschrieben werden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - IdentifiersShouldBeSpelledCorrectly
 ms.assetid: f2c7a44d-1690-44ca-9cd0-681b04b12b2a
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d77e5ffcb7cc6688ea07cd99760e79e8f92aeb43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189232"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669241"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden.
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Bezeichner sollten korrekt geschrieben werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,35 +33,35 @@ ms.locfileid: "68189232"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Der Name eines Bezeichners enthält eine oder mehrere Wörter, die von der Rechtschreibprüfung aus der Microsoft-Bibliothek nicht erkannt werden. Diese Regel nicht überprüfen, Konstruktoren oder speziellen Namen Elemente wie z. B. Get und set-Eigenschaftenaccessoren.
+ Der Name eines Bezeichners enthält mindestens ein Wort, das von der Bibliothek der Microsoft-Rechtschreibprüfung nicht erkannt wird. Diese Regel überprüft keine Konstruktoren oder Member mit besonderem Namen, wie z. b. Get-und Set-Eigenschaftenaccessoren.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel analysiert die Bezeichner in Tokens und überprüft die Rechtschreibung jedes Token. Der Analysealgorithmus führt die folgenden Transformationen:
+ Diese Regel analysiert den Bezeichner in Token und überprüft die Schreibweise der einzelnen Token. Der-Algorithmus für die Verarbeitung führt die folgenden Transformationen aus:
 
-- Großbuchstaben beginnen, ein neues Token. Zum Beispiel: MyNameIsJoe wird "My", "Name", "Is", "Joe".
+- Großbuchstaben starten ein neues Token. MyNameIsJoe wird z. b. in "My", "Name", "is", "Joe", angezeigt.
 
-- Für mehrere Großbuchstaben startet der letzten Großbuchstabe ein neues Token. Zum Beispiel: GUIEditor wird "GUI", "Editor".
+- Bei mehreren Großbuchstaben startet der letzte Großbuchstabe ein neues Token. Beispielsweise wird "GUIEditor" in "GUI", "Editor", getottert.
 
-- Führende und nachfolgende Apostrophe werden entfernt. Z. B. der zu indizierende "Sender", "Sender".
+- Führende und nachfolgende Apostrophe werden entfernt. Beispielsweise wird "Sender" zu "Absender".
 
-- Unterstriche bezeichnen das Ende eines Tokens, und es werden entfernt. Beispiel: die "hello_world" mit "Hello", "World".
+- Unterstriche bezeichnen das Ende eines Tokens und werden entfernt. Beispielsweise Hello_world tokenisiert "Hello", "World".
 
-- Eingebettete kaufmännische und-Zeichen werden entfernt. Beispielsweise & Mat wird zum "format" Token.
+- Eingebettete kaufmännische werden entfernt. Beispielsweise wird für &-Matte das Format "Format" angezeigt.
 
-  Standardmäßig wird die Englisch (En) Version der Rechtschreibprüfung verwendet. Keine andere Sprachwörterbücher sind derzeit verfügbar.
+  Standardmäßig wird die englische Version (en) der Rechtschreibprüfung verwendet. Zurzeit sind keine anderen sprach Wörterbücher verfügbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort, um ein benutzerdefiniertes Wörterbuch mit dem Namen CustomDictionary.xml. Legen Sie das Wörterbuch, in das Installationsverzeichnis des Tools zum Projektverzeichnis ein, oder in das Verzeichnis, das das Tool unter dem Profil des Benutzers zugeordnet ist (%USERPROFILE%\Application Daten\\...). Erfahren, wie ein Projekt in das benutzerdefinierte Wörterbuch hinzuzufügende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], finden Sie unter [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Schreibweise des Worts, oder fügen Sie das Wort einem benutzerdefinierten Wörterbuch mit dem Namen "CustomDictionary. xml" hinzu. Platzieren Sie das Wörterbuch im Installationsverzeichnis des Tools, im Projektverzeichnis oder in dem Verzeichnis, das mit dem Tool unter dem Profil des Benutzers verknüpft ist (%UserProfile%\Application Data \\...). Informationen zum Hinzufügen des benutzerdefinierten Wörterbuchs zu einem Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finden Sie unter Gewusst [wie: Anpassen des Code Analyse Wörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md) .
 
-- Hinzufügen von Wörtern, die nicht zu einer Verletzung unter dem Pfad Dictionary/Wörter/Recognized führt sollte.
+- Fügen Sie Wörter hinzu, die unter dem Wörterbuch/Wörter/erkannten Pfad keine Verletzung verursachen sollten.
 
-- Fügen Sie ein Wort, die auftreten eine Verletzung unter dem Pfad Wörterbuch/Wörter/nicht erkannt werden soll.
+- Fügen Sie Wörter hinzu, die eine Verletzung im Wörterbuch/Wörter/nicht erkannten Pfad verursachen sollten.
 
-- Fügen Sie Wörter, die gekennzeichnet werden soll als veraltet, unter dem Wörterbuch/Wörter/veraltet-Pfad hinzu. Finden Sie im Thema zugehörige Regel [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)für Weitere Informationen.
+- Fügen Sie Wörter, die als veraltet gekennzeichnet werden sollen, unter dem Pfad Dictionary/Words/deprecated hinzu. Weitere Informationen finden Sie im Thema Verwandte Regel [CA1726: bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md).
 
-- Ausnahmen, die Regeln der Groß-und Kleinschreibung Abkürzung zum Wörterbuch/Akronyme/CasingExceptions Pfad hinzufügen.
+- Fügen Sie dem Wörterbuch/Akronyme/CasingExceptions-Pfad Ausnahmen zu den Regeln für die Akronym-Schreibweise hinzu.
 
-  Folgendes ist ein Beispiel für die Struktur einer Datei des benutzerdefinierten Wörterbuchs.
+  Im folgenden finden Sie ein Beispiel für die Struktur einer benutzerdefinierten Wörterbuchdatei.
 
 ```
 <Dictionary>
@@ -87,20 +87,20 @@ ms.locfileid: "68189232"
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel nur, wenn das Wort absichtlich falsch geschrieben ist und das Wort, die auf eine begrenzte Anzahl von der Bibliothek angewendet wird. Geschriebene Wörter reduzieren ordnungsgemäß die Lernkurve, die für neue Softwarebibliotheken erforderlich ist.
+ Unterdrückt eine Warnung aus dieser Regel nur, wenn das Wort absichtlich falsch geschrieben ist und das Wort für eine begrenzte Menge der Bibliothek gilt. Korrekt geschriebene Wörter reduzieren die Lernkurve, die für neue Software Bibliotheken erforderlich ist.
 
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA2204: Literale sollten eine korrekte Rechtschreibung aufweisen](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
  [CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: Bezeichner sollten keine Unterstriche enthalten.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Bezeichner sollten keine Unterstriche enthalten](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
  [CA1726: Bevorzugte Begriffe verwenden](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ [Gewusst wie: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

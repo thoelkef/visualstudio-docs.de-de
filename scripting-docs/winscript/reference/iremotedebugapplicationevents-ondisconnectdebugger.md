@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnDisconnectDebugger | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationevents:: ondisconnectdebugger | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d99ef6b4bcbafc78fd3e6ebcdc2c4129c3653a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53e26da46fcdca0db0c8a652a091e95cd83789cd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934575"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575587"
 ---
 # <a name="iremotedebugapplicationeventsondisconnectdebugger"></a>IRemoteDebugApplicationEvents::OnDisconnectDebugger
-Behandelt ein Debugger trennen Ereignis.  
+Behandelt ein Debugger-Disconnect-Ereignis.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT OnDisconnectDebugger();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,7 +44,7 @@ HRESULT OnDisconnectDebugger();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode verarbeitet den Debugger trennen-Ereignis.  
+ Diese Methode behandelt das Debugger Disconnect-Ereignis.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)

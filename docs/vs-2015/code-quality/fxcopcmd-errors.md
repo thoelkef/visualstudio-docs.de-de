@@ -6,52 +6,52 @@ ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d723065e224058b7e269299aad2900f97a1425d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85441e90bfecc89688ce0ba6ec0ae10082562f0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936646"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667597"
 ---
-# <a name="fxcopcmd-tool-errors"></a>FxCopCmd-Tool-Fehler
+# <a name="fxcopcmd-tool-errors"></a>Fehler des FxCopCmd-Tools
 
-FxCopCmd werden alle schwerwiegenden Fehler nicht berücksichtigt. Wenn FxCopCmd genügend Informationen zum Ausführen einer partiellen Analysis hat, führt es die Analyse- und Berichten aufgetretenen. Der Fehlercode, der eine 32-Bit-Ganzzahl ist, enthält eine bitweise Kombination von numerischen Werten, die Fehlern entsprechen.
+"FxCopCmd" berücksichtigt nicht alle Fehler als schwerwiegend. Wenn FxCopCmd über ausreichende Informationen zum Ausführen einer partiellen Analyse verfügt, führt es die Analyse durch und meldet Fehler, die aufgetreten sind. Der Fehlercode, bei dem es sich um eine 32-Bit-Ganzzahl handelt, enthält eine bitweise Kombination numerischer Werte, die Fehlern entsprechen.
 
-Die folgende Tabelle beschreibt die Fehlercodes von FxCopCmd zurückgegeben:
+In der folgenden Tabelle werden die von FxCopCmd zurückgegebenen Fehlercodes beschrieben:
 
 |Fehler|Numerischer Wert|
 |-----------|-------------------|
 |Keine Fehler|0x0|
-|Analysefehler.|0x1|
-|Ausnahmen von Netzwerkregeln|0x2|
+|Analysefehler|0x1|
+|Regel Ausnahmen|0x2|
 |Fehler beim Laden des Projekts|0x4|
 |Fehler beim Laden der Assembly|0x8|
-|Fehler beim Laden von Regel-Bibliothek|0x10|
-|Fehler beim Laden von Import-Bericht|0x20|
+|Fehler beim Laden der Regel Bibliothek.|0x10|
+|Fehler beim Laden des Berichts|0x20|
 |Ausgabefehler|0x40|
-|Befehlszeilenfehler switch|0x80|
+|Fehler beim Wechseln der Befehlszeile.|0x80|
 |Initialisierungsfehler|0x100|
-|Assembly-Verweise-Fehler|0x200|
-|BuildBreakingMessage|0x400|
-|Unbekannter Fehler|0x1000000|
+|Assemblyverweifehler|0x200|
+|Buildbreakingmessage|0x400|
+|Unbekannter Fehler.|0x1000000|
 
-**Analysefehler** für schwerwiegende Fehler zurückgegeben wird. Er gibt an, dass die Analyse nicht abgeschlossen werden konnte. Der Fehlercode enthält ggf. auch die zugrunde liegende Ursache des schwerwiegenden Fehlers. Die folgenden Bedingungen schwerwiegende Fehler zu generieren:
+Bei schwerwiegenden Fehlern wird ein **Analysefehler** zurückgegeben. Gibt an, dass die Analyse nicht abgeschlossen werden konnte. Der Fehlercode enthält ggf. auch die zugrunde liegende Ursache des schwerwiegenden Fehlers. Die folgenden Bedingungen generieren schwerwiegende Fehler:
 
-- Die Analyse konnte aufgrund unzureichender Eingabe nicht ausgeführt werden.
+- Die Analyse konnte aufgrund unzureichender Eingaben nicht durchgeführt werden.
 
-- Die Analyse ausgelöst hat, eine Ausnahme, die nicht von FxCopCmd behandelt wird.
+- Die Analyse hat eine Ausnahme ausgelöst, die von FxCopCmd nicht behandelt wird.
 
 - Die angegebene Projektdatei wurde nicht gefunden oder ist beschädigt.
 
-- Die Output-Option wurde nicht angegeben oder die Datei konnte nicht geschrieben werden.
+- Die Output-Option wurde nicht angegeben, oder die Datei konnte nicht geschrieben werden.
 
 > [!NOTE]
-> Die FxCopCmd Rückgabecode **Assemblyverweise Fehler** 0 x 200 allein ist eher eine Warnung als Fehler. Dieser Rückgabecode gibt an, dass, die es indirekte Verweise fehlen jedoch, dass FxCopCmd sie verarbeiten können. Die Warnung bedeutet, dass es besteht die Möglichkeit, dass einige Analyseergebnisse gefährdet sein könnte. Behandeln **Assemblyverweise Fehler** als einen Fehler, wenn es mit einem anderen Rückgabecode kombiniert wird.
+> Der FxCopCmd-Rückgabetyp verweist darauf, dass der **Fehler** 0x200 allein eine Warnung und kein Fehler ist. Dieser Rückgabecode gibt an, dass indirekte Verweise fehlen, aber von FxCopCmd verarbeitet werden konnte. Die Warnung bedeutet, dass es möglich ist, dass einige Analyseergebnisse kompromittiert wurden. **Fehler** beim Behandeln von Assemblyverweisen als Fehler, wenn er mit einem anderen Rückgabecode kombiniert wird.
 
 ## <a name="see-also"></a>Siehe auch
 

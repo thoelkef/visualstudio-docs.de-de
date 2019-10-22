@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1af269201649f9372d9c0b2d5b273ddd358fe1e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871710"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660697"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomy of a Coded UI Test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
  Der <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>-Namespace bezieht sich auf eine Windows-Benutzeroberfläche (UI). Für eine Webseiten-Benutzeroberfläche wird der <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>-Namespace verwendet und für eine Windows Presentation Foundation-Benutzeroberfläche der <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>-Namespace.
 
 #### <a name="UIMapClass"></a> UIMap-Klasse
- Der nächste Abschnitt der Datei ist die [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse.
+ Der nächste Abschnitt der Datei ist die [UIMap](/previous-versions/dd580454(v=vs.140))-Klasse.
 
 ```
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]
@@ -79,7 +79,7 @@ public void VerifyTotal()
 public void CleanUp()
 ```
 
- Dieser Teil der [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse enthält auch den generierten Code für jede Eigenschaft, die für die Methoden erforderlich ist.
+ Dieser Teil der [UIMap](/previous-versions/dd580454(v=vs.140))-Klasse enthält auch den generierten Code für die einzelnen Eigenschaften, die für die Methoden erforderlich sind.
 
 ```
 public virtual LaunchCalculatorParams LaunchCalculatorParams
@@ -190,9 +190,9 @@ public class AddItemsParams
  Standardmäßig enthält diese Datei eine partielle `UIMap`-Klasse ohne Methoden oder Eigenschaften.
 
 #### <a name="uimap-class"></a>UIMap-Klasse
- Hier können Sie benutzerdefinierten Code erstellen, um die Funktionalität der [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse zu erweitern. Der in dieser Datei erstellte Code wird nicht bei jeder Änderung eines Tests vom **Test-Generator der programmierten UI** erneut generiert.
+ In dieser Klasse können Sie benutzerdefinierten Code erstellen, um die Funktion der [UIMap](/previous-versions/dd580454(v=vs.140))-Klasse zu erweitern. Der in dieser Datei erstellte Code wird nicht bei jeder Änderung eines Tests vom **Test-Generator der programmierten UI** erneut generiert.
 
- Alle Teile der [UIMap](/previous-versions/dd580454(v=vs.140)) können die Methoden und Eigenschaften aus einem beliebigen anderen Teil der [UIMap](/previous-versions/dd580454(v=vs.140)) -Klasse verwenden.
+ In allen Teilen der [UIMap](/previous-versions/dd580454(v=vs.140)) können die Methoden und Eigenschaften aus einem beliebigen anderen Teil der [UIMap](/previous-versions/dd580454(v=vs.140))-Klasse verwendet werden.
 
 ### <a name="CodedUITestCS"></a> CodedUITest1.cs
  Diese Datei wird vom **Test-Generator der programmierten UI** generiert, aber nicht bei jeder Änderung des Tests neu erstellt. Der Code in dieser Datei kann daher geändert werden. Der Name der Datei wird auf Grundlage des Namens generiert, den Sie beim Erstellen für den Test angegeben haben.
@@ -205,7 +205,7 @@ public class AddItemsParams
 public class CodedUITest1
 ```
 
- Das [codeduitestatutribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) wird automatisch auf die-Klasse angewendet, sodass das Test Framework es als Test Erweiterung erkennen kann. Dies ist keine partielle Klasse. Der gesamte Klassencode ist in dieser Datei enthalten.
+ [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) wird automatisch auf die Klasse angewendet, sodass sie vom Testframework als Testerweiterung erkannt werden kann. Dies ist keine partielle Klasse. Der gesamte Klassencode ist in dieser Datei enthalten.
 
 ##### <a name="CodedUITestProperties"></a> CodedUITest1-Eigenschaften
  Die Klasse enthält zwei Standardeigenschaften, die sich am Ende der Datei befinden. Sie dürfen nicht geändert werden.

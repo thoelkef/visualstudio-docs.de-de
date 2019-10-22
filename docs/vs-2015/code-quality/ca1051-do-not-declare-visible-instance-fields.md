@@ -1,5 +1,5 @@
 ---
-title: 'CA1051: Sichtbare Instanzfelder nicht deklarieren | Microsoft-Dokumentation'
+title: 'CA1051: sichtbare Instanzfelder nicht deklarieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,47 +12,47 @@ helpviewer_keywords:
 - DoNotDeclareVisibleInstanceFields
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 96e518977e12f2ae061d5ab73803d51dad733149
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 41332ab7d729f7b2187ccace6b05fe2d17763a0d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686824"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672517"
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Sichtbare Instanzfelder nicht deklarieren.
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Sichtbare Instanzfelder nicht deklarieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein extern sichtbarer Typ verfügt über eine extern sichtbare Instanzfeld.
+ Ein extern sichtbarer Typ verfügt über ein extern sichtbares Instanzfeld.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Ein Feld sollte primär als Implementierungsdetail verwendet werden. Felder sollten sein `private` oder `internal` und mithilfe von Eigenschaften verfügbar gemacht werden. Es ist einfach, eine Eigenschaft zuzugreifen, wie es ist, Zugriff auf ein Feld aus, und der Code in die Zugriffsmethoden einer Eigenschaft ändern kann, wie die Funktionen des Typs erweitern, ohne wichtige Änderungen. Führen Sie mit Zugriff auf ein Feld sind Eigenschaften, die nur den Wert des einem privaten oder internen Feld zurückgeben optimiert; nur sehr wenig Leistungsgewinn bezieht sich auf die Verwendung von extern sichtbaren Feldern Eigenschaften zur Verfügung.
+ Ein Feld sollte primär als Implementierungsdetail verwendet werden. Felder sollten `private` oder `internal` sein und mithilfe von Eigenschaften verfügbar gemacht werden. Es ist so einfach, auf eine Eigenschaft zuzugreifen, da Sie auf ein Feld zugreifen kann. der Code in den Accessoren einer Eigenschaft kann sich ändern, wenn die Funktionen des Typs erweitert werden, ohne dass wichtige Änderungen eingeführt werden. Eigenschaften, die nur den Wert eines privaten oder internen Felds zurückgeben, werden für die Ausführung mit dem Zugriff auf ein Feld optimiert. sehr wenig Leistungsgewinn ist mit der Verwendung extern sichtbarer Felder für Eigenschaften verknüpft.
 
- Bezieht sich auf die extern sichtbaren `public`, `protected`, und `protected internal` (`Public`, `Protected`, und `Protected Friend` in Visual Basic) Zugriffsebenen.
+ Extern sichtbar bezieht sich auf die Barrierefreiheits Stufen `public`, `protected` und `protected internal` (`Public`, `Protected` und `Protected Friend` Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, stellen Sie das Feld `private` oder `internal` und machen ihn mit einer extern sichtbaren Eigenschaft verfügbar.
+ Um einen Verstoß gegen diese Regel zu beheben, machen Sie das Feld `private` oder `internal`, und machen Sie es mithilfe einer extern sichtbaren Eigenschaft verfügbar.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Extern sichtbare Feldern bieten keine Vorteile, die für die Eigenschaften nicht verfügbar sind. Darüber hinaus können nicht öffentlichen Felder geschützt werden, indem [Verknüpfungsaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Finden Sie unter [CA2112: Gesicherte Typen sollten keine Felder verfügbar](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Unterdrücken Sie keine Warnung dieser Regel. Extern sichtbare Felder bieten keine Vorteile, die für Eigenschaften nicht verfügbar sind. Darüber hinaus können öffentliche Felder nicht durch [Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)Aufrufe geschützt werden. Weitere Informationen finden Sie unter [CA2112: gesicherte Typen sollten keine Felder](../code-quality/ca2112-secured-types-should-not-expose-fields.md)verfügbar machen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ (`BadPublicInstanceFields`), die gegen diese Regel verstößt. `GoodPublicInstanceFields` Zeigt den korrigierten Code.
+ Das folgende Beispiel zeigt einen Typ (`BadPublicInstanceFields`), der gegen diese Regel verstößt. `GoodPublicInstanceFields` den korrigierten Code anzeigt.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2112: Gesicherte Typen sollten keine Felder verfügbar machen.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: Gesicherte Typen sollten keine Felder verfügbar machen](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Verknüpfungsaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ [Link Aufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

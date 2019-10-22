@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetApplication | Microsoft-Dokumentation
+title: 'Iactivescriptsitedebug:: getapplikation | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75560ead40809c77e4768f8318d754a512e5d7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2ad81e3b6b1707f5a23271cf0abe3832266c07f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570124"
 ---
 # <a name="iactivescriptsitedebuggetapplication"></a>IActiveScriptSiteDebug::GetApplication
-Gibt zurück, das Debug-Application-Objekt mit diesem Skript Standort verbunden ist.  
+Gibt das Debug-Anwendungs Objekt zurück, das dieser Skript Site zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parameter  
  `ppda`  
- [out] Zeiger auf das Debug-Anwendungsobjekt der skriptwebsite zugeordnet.  
+ vorgenommen Zeiger auf das debuganwendungsobjekt, das der Skript Website zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,11 +45,11 @@ HRESULT GetApplication(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_NOTIMPL`|Der Host unterstützt nicht direkt debuggen.|  
+|`E_NOTIMPL`|Der Host unterstützt das Debugging nicht direkt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `GetApplication` -Methode bietet eine Möglichkeit für einen Smarthost auf das Anwendungsobjekt zu definieren, zu der jedes Skript gehört. Skript-Engines sollten versuchen, rufen diese Methode, um ihre Anwendung zu erhalten und auf die zurückgegriffen `IProcessDebugManager::GetDefaultApplication` schlägt dies fehl.  
+ Die `GetApplication`-Methode bietet einem Smarthost die Möglichkeit, das Anwendungs Objekt zu definieren, zu dem die einzelnen Skripts gehören. Skript-Engines sollten versuchen, diese Methode aufzurufen, um Ihre enthaltende Anwendung abzurufen und auf `IProcessDebugManager::GetDefaultApplication` zurückzugreifen, wenn dies fehlschlägt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptSiteDebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)   
+ [Iactivescriptsitedebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)    
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

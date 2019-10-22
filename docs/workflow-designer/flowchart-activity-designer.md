@@ -1,5 +1,5 @@
 ---
-title: Workflow-Designer - Flussdiagramm-Aktivitätsdesigner
+title: Workflow-Designer-Flussdiagramm-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,21 +7,21 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad02dea2dcab30d65aaefecc5a5e54804c9baaff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949655"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650459"
 ---
 # <a name="flowchart-activity-designer"></a>Flussdiagramm-Aktivitätsdesigner
 
-Die <xref:System.Activities.Statements.Flowchart>-Aktivität wird verwendet, um Workflows zu erstellen, die komplexe Flusssteuerungen definieren und verwalten. Ein <xref:System.Activities.Statements.Flowchart> entweder im Code oder mithilfe von Workflow-Designer erstellt werden kann. In diesem Thema werden die Workflow-Designer-Oberfläche. Der Workflow-Designer-Workflow-Aktivitätsdesigner ermöglicht Entwicklern das Erstellen von Workflows auf natürliche Weise.
+Die <xref:System.Activities.Statements.Flowchart>-Aktivität wird verwendet, um Workflows zu erstellen, die komplexe Flusssteuerungen definieren und verwalten. Eine <xref:System.Activities.Statements.Flowchart> kann entweder im Code oder mithilfe Workflow-Designer erstellt werden. In diesem Thema wird die Workflow-Designer-Darstellung dokumentiert. Der Workflow-Designer Workflow-Aktivitäts Designer ermöglicht es Entwicklern, Workflows auf natürliche Weise zu verfassen.
 
 ## <a name="the-flowchart-activity"></a>Die Flowchart-Aktivität
 
@@ -29,11 +29,11 @@ Die <xref:System.Activities.Statements.Flowchart>-Aktivität gibt einen eindeuti
 
 ### <a name="using-the-flowchart-activity-designer"></a>Verwenden des Flussdiagramm-Aktivitätsdesigners
 
-Die **Flussdiagramm** Aktivitäts-Designer finden Sie in der **Flussdiagramm** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**Registerkarte im Workflow-Designer. Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menü, oder drücken Sie **STRG**+**Alt** + **X**.
+Der **Flussdiagramm** -Aktivitäts Designer befindet sich in der Kategorie **Flussdiagramm** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** +**alt** +**X**drücken.
 
-Die **Flussdiagramm** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und an der Oberfläche des Workflow-Designer gelöscht werden, wo Aktivitätsdesigner normalerweise, als eine Stammaktivität oder als befinden die untergeordnetes Element von einer anderen ablaufsteuerungsaktivität. Wenn die **Flussdiagramm** Aktivitäts-Designer wird auf einen leeren Workflow-Designer-Oberfläche gelöscht wird, erstellt eine <xref:System.Activities.Statements.Flowchart> -Aktivität, die standardmäßig selbst in einer erweiterten Ansicht präsentiert, in dem der Startknoten, die Ausführung startet ist, als grüner Ball dargestellt. Wenn die **Flussdiagramm** Aktivitäts-Designer in einer anderen ablaufsteuerungsaktivität abgelegt wurde, präsentiert er sich in einer minimierten Ansicht, die durch Doppelklicken auf erweitert werden kann, die **Flussdiagramm** Aktivitäts-Designer. Alle Aktivitäten in der **Toolbox** gezogen werden können, direkt auf die **Flussdiagramm** Aktivitäts-Designer, einschließlich Weitere Aktivitäten der ablaufsteuerung.
+Der **Flussdiagramm** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, entweder als Stamm Aktivität oder als untergeordnetes Element einer anderen Ablauf Steuerungs Aktivität. Wenn der **Flussdiagramm** -Aktivitäts Designer auf einer leeren Workflow-Designer Oberfläche abgelegt wird, erstellt er eine <xref:System.Activities.Statements.Flowchart>-Aktivität, die sich standardmäßig in einer erweiterten Ansicht präsentiert, in der der Startknoten, der die Ausführung initiiert, als grüne Kugel dargestellt wird. Wenn der **Flussdiagramm** -Aktivitäts Designer in einer anderen Ablauf Steuerungs Aktivität abgelegt wird, stellt er sich in einer minimierten Ansicht vor, die durch Doppelklicken auf den **Flussdiagramm** -Aktivitäts Designer erweitert werden kann. Alle Aktivitäten in der **Toolbox** können direkt auf den **Flussdiagramm** -Aktivitäts Designer, einschließlich anderer Ablauf Steuerungsaktivitäten, gezogen werden.
 
-Nach der verschiedenen Aktivitätsdesigner auf die Workflow-Designer-Canvas ziehen die <xref:System.Activities.Activity> Objekte, die sie darstellen können verknüpft werden, zusammen, um die Reihenfolge der Ausführung anzugeben. Sie erstellen einen Link zwischen einer Quellaktivität und einer Zielaktivität, indem Sie die Maus über den Designer der Quellaktivität bewegen, an dessen beiden Seiten dann quadratische Ziehpunkte angezeigt werden. Klicken Sie auf einen der quadratischen Ziehpunkte, und ziehen Sie ihn bei gedrückter Maustaste auf einen der Ziehpunkte, die um die Zielaktivität angezeigt werden, sobald Sie die Maus über diese Aktivität bewegen. Lassen Sie die Maustaste los, und zwischen beiden Aktivitäten wird ein Link erstellt, der als vom Quelldesigner zum Zieldesigner zeigender Pfeil dargestellt wird.
+Nachdem verschiedene Aktivitäts Designer auf die Workflow-Designer Canvas gezogen wurden, können die <xref:System.Activities.Activity> Objekte, die Sie darstellen, miteinander verknüpft werden, um die Ausführungsreihenfolge anzugeben. Sie erstellen einen Link zwischen einer Quellaktivität und einer Zielaktivität, indem Sie die Maus über den Designer der Quellaktivität bewegen, an dessen beiden Seiten dann quadratische Ziehpunkte angezeigt werden. Klicken Sie auf einen der quadratischen Ziehpunkte, und ziehen Sie ihn bei gedrückter Maustaste auf einen der Ziehpunkte, die um die Zielaktivität angezeigt werden, sobald Sie die Maus über diese Aktivität bewegen. Lassen Sie die Maustaste los, und zwischen beiden Aktivitäten wird ein Link erstellt, der als vom Quelldesigner zum Zieldesigner zeigender Pfeil dargestellt wird.
 
 ### <a name="flowchart-activity-properties"></a>Flussdiagrammaktivitätseigenschaften
 
@@ -41,7 +41,7 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Flowchart
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert lautet Flussdiagramm. Der Wert kann bearbeitet werden, der **Eigenschaften** Fenster oder direkt im Header Aktivitätsdesigners.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert lautet Flussdiagramm. Der Wert kann im **Eigenschaften** Fenster oder direkt im Header des Aktivitäts Designers bearbeitet werden.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|Die Auflistung der innerhalb dieses <xref:System.Activities.Statements.Flowchart> gültigen Variablen, mittels derer der Zustand gemeinsam mit seinen untergeordneten Aktivitäten verwendet wird.|
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|Der <xref:System.Activities.Statements.FlowNode>, der ausgeführt wird, wenn <xref:System.Activities.Statements.Flowchart> startet.|
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Enthält die Auflistung der <xref:System.Activities.Statements.FlowNode>-Objekte im <xref:System.Activities.Statements.Flowchart>.|

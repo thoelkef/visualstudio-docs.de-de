@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Shutdown | Microsoft-Dokumentation
+title: 'Iactivescriptprofilercallback:: Shutdown | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: deecfe4134a4b0e18591823f194ceaf6d1eb0a14
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993422"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571643"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-Wird aufgerufen, um das Profilerobjekt zu informieren, wenn auf eine Skript-Engine die profilerstellung beendet wird. Auf diese Weise kann das Profilerobjekt seine Bereinigungsroutinen aufrufen, wenn erforderlich. Diese Methode wird auch von der Skript-Engine aufgerufen, wenn die Skript-Engine heruntergefahren wird oder wenn ein Aufruf von [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) ein Fehler auftritt.  
+Wird aufgerufen, um das profilerobjekt zu informieren, wenn die Profilerstellung für eine Skript-Engine beendet wurde. Auf diese Weise kann das Profiler-Objekt seine cleanuproutinen bei Bedarf aufzurufen. Diese Methode wird auch von der Skript-Engine aufgerufen, wenn die Skript-Engine heruntergefahren wird, oder wenn ein Aufruf von [iactivescriptprofilercallback:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) fehlschlägt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT Shutdown(
   
 #### <a name="parameters"></a>Parameter  
  `hrReason`  
- [in] Der Grund für das Herunterfahren. Wenn die Skript-Engine heruntergefahren wird, `S_OK` übergeben wird. Wenn der Aufruf von [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) einen HRESULT-Fehler zurückgibt, der HRESULT-Wert übergeben wird. Andernfalls wird dieser Wert abgerufen, von [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
+ in Der Grund für das Herunterfahren. Wenn die Skript-Engine heruntergefahren wird, wird `S_OK` übermittelt. Wenn der Aufrufe von [iactivescriptprofilercallback:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) einen HRESULT-Fehler zurückgibt, wird das HRESULT-Ergebnis übermittelt. Andernfalls wird dieser Wert von [iactivescriptprofilercontrol:: stopprofiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)abgerufen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Der Rückgabewert dieser Methode wird von der Skript-Engine ignoriert.  

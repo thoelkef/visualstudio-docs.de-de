@@ -170,8 +170,8 @@
   items:
     - name: Entwicklung
       items:
-        - name: 'Index: Verwenden der IDE zum Schreiben von Code'
-          href: ide/index-writing-code.md
+        - name: Erste Schritte
+          href: ide/index-writing-code.yml
         - name: Navigieren in der IDE
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: Projektmappen und Projekte
@@ -250,7 +250,7 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Entwickeln ohne Projekte oder Projektmappen
           items:
-            - name: 'Gewusst wie: Entwickeln ohne ein Projekt'
+            - name: 'Vorgehensweise: Entwickeln ohne ein Projekt'
               displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Anpassen von Build- und Debugtasks
@@ -563,6 +563,97 @@
               href: ide/class-designer/additional-information-about-errors.md
         - name: Verbessern Ihres Codes
           href: ide/find-and-fix-code-errors.md
+        - name: Windows Forms-Entwicklung
+          items:
+            - name: Übersicht über Windows Forms-Designer
+              href: designers/windows-forms-designer-overview.md
+            - name: Erste Schritte mit dem Windows Forms-Designer
+              href: designers/walkthrough-windows-forms-designer.md
+            - name: Anordnen von Steuerelementen >>
+              href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
+            - name: Erstellen eines datengebundenen Steuerelements >>
+              href: /dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form
+            - name: Erstellen von benutzerdefinierten Steuerelementen >>
+              href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
+            - name: Deaktivieren der DPI-Berücksichtigung für den Windows Forms-Designer
+              href: designers/disable-dpi-awareness.md
+            - name: Referenz
+              items:
+                - name: System.Windows.Forms-API >>
+                  href: /dotnet/api/system.windows.forms
+            - name: Tutorials
+              items:
+                - name: 'Tutorial 1: Erstellen einer Bildanzeige (C#)'
+                  items:
+                    - name: Übersicht
+                      displayName: Tutorial 1 Picture viewer
+                      href: ide/tutorial-1-create-a-picture-viewer.md
+                    - name: 'Schritt 1: Erstellen eines Windows Forms-App-Projekts'
+                      href: ide/step-1-create-a-windows-forms-application-project.md
+                    - name: 'Schritt 2: Ausführen der App'
+                      href: ide/step-2-run-your-program.md
+                    - name: 'Schritt 3: Festlegen der Formulareigenschaften'
+                      href: ide/step-3-set-your-form-properties.md
+                    - name: 'Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
+                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                    - name: 'Schritt 5: Hinzufügen von Steuerelementen zum Formular'
+                      href: ide/step-5-add-controls-to-your-form.md
+                    - name: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
+                      href: ide/step-6-name-your-button-controls.md
+                    - name: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular'
+                      href: ide/step-7-add-dialog-components-to-your-form.md
+                    - name: 'Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“'
+                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                    - name: 'Schritt 9: Überprüfen, Kommentieren und Testen des Codes'
+                      href: ide/step-9-review-comment-and-test-your-code.md
+                    - name: 'Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen'
+                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+                    - name: 'Schritt 11: Ausführen der App und Ausprobieren weiterer Features'
+                      href: ide/step-11-run-your-program-and-try-other-features.md
+                - name: 'Tutorial 2: Erstellen eines Mathetests mit Zeitmessung (C#)'
+                  items:
+                    - name: Übersicht
+                      displayName: Tutorial 2 Timed math quiz
+                      href: ide/tutorial-2-create-a-timed-math-quiz.md
+                    - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
+                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
+                    - name: 'Schritt 2: Erstellen einer zufälligen Additionsaufgabe'
+                      href: ide/step-2-create-a-random-addition-problem.md
+                    - name: 'Schritt 3: Hinzufügen eines Countdowntimers'
+                      href: ide/step-3-add-a-countdown-timer.md
+                    - name: 'Schritt 4: Hinzufügen der CheckTheAnswer()-Methode'
+                      href: ide/step-4-add-the-checktheanswer-parens-method.md
+                    - name: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente'
+                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                    - name: 'Schritt 6: Hinzufügen einer Subtraktionsaufgabe'
+                      href: ide/step-6-add-a-subtraction-problem.md
+                    - name: 'Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben'
+                      href: ide/step-7-add-multiplication-and-division-problems.md
+                    - name: 'Schritt 8: Anpassen des Quiz'
+                      href: ide/step-8-customize-the-quiz.md
+                - name: 'Tutorial 3: Erstellen eines Vergleichsspiels (C#)'
+                  items:
+                    - name: Übersicht
+                      displayName: Tutorial 3 Matching game
+                      href: ide/tutorial-3-create-a-matching-game.md
+                    - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular'
+                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+                    - name: 'Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen'
+                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
+                    - name: 'Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung'
+                      href: ide/step-3-assign-a-random-icon-to-each-label.md
+                    - name: 'Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung'
+                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
+                    - name: 'Schritt 5: Hinzufügen von Bezeichnungsverweisen'
+                      href: ide/step-5-add-label-references.md
+                    - name: 'Schritt 6: Hinzufügen von Timern'
+                      href: ide/step-6-add-a-timer.md
+                    - name: 'Schritt 7: Beibehalten der Sichtbarkeit von Paaren'
+                      href: ide/step-7-keep-pairs-visible.md
+                    - name: 'Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat'
+                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+                    - name: 'Schritt 9: Ausprobieren weiterer Features'
+                      href: ide/step-9-try-other-features.md
         - name: Plattformübergreifende mobile Entwicklung
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
         - name: 'F# in Visual Studio'
@@ -584,12 +675,11 @@
             - name: Entwerfen internationaler Apps
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
+    - name: Verwenden von XAML-Tools >>
+      href: xaml-tools/index.yml
     - name: Zugriff auf Daten >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: Entwerfen von Benutzeroberflächen >>
-      displayName: XAML designer
-      href: designers/designing-user-interfaces.md
     - name: Entwickeln von Apps mit dem Workflow-Designer >>
       href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: Kompilieren und Erstellen
@@ -663,7 +753,7 @@
       href: profiling/index.yml
     - name: Analysieren der Codequalität >>
       displayName: Code analysis FxCop Analyzers
-      href: code-quality/index.md
+      href: code-quality/index.yml
     - name: Bereitstellen >>
       href: deployment/index.yml
     - name: Erweitern von Visual Studio >>
@@ -671,6 +761,90 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analysieren und Modellieren der Architektur >>
       href: modeling/analyze-and-model-your-architecture.md
+    - name: 3D-Objekte
+      items:
+        - name: Arbeiten mit 3D-Objekten für Spiele und Apps
+          href: designers/working-with-3-d-assets-for-games-and-apps.md
+        - name: 'Vorgehensweise: Verwenden von 3D-Objekten in Spielen oder Apps'
+          href: designers/using-3-d-assets-in-your-game-or-app.md
+        - name: Texturen und Bilder
+          items:
+            - name: Arbeiten mit Texturen und Bildern
+              href: designers/working-with-textures-and-images.md
+            - name: Grafik-Editor
+              href: designers/image-editor.md
+            - name: Beispiele für die Bildbearbeitung
+              items:
+                - name: Erstellen einer Basistextur
+                  href: designers/how-to-create-a-basic-texture.md
+                - name: Erstellen und Ändern von MIP-Ebenen
+                  href: designers/how-to-create-and-modify-mip-levels.md
+        - name: 3D-Modelle
+          items:
+            - name: Arbeiten mit 3D-Modellen
+              href: designers/working-with-3-d-models.md
+            - name: Modell-Editor
+              href: designers/model-editor.md
+            - name: Beispiele für den Modell-Editor
+              items:
+                - name: Erstellen eines einfachen 3D-Modells
+                  href: designers/how-to-create-a-basic-3-d-model.md
+                - name: Ändern des Pivotpunkts eines 3D-Modells
+                  href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
+                - name: Modellieren eines 3D-Geländes
+                  href: designers/how-to-model-3-d-terrain.md
+                - name: Anwenden eines Shaders auf ein 3D-Modell
+                  href: designers/how-to-apply-a-shader-to-a-3-d-model.md
+        - name: Shader
+          items:
+            - name: Arbeiten mit Shadern
+              href: designers/working-with-shaders.md
+            - name: Shader-Designer
+              href: designers/shader-designer.md
+            - name: Shader-Designer-Knoten
+              items:
+                - name: Übersicht
+                  displayName: Shader designer nodes
+                  href: designers/shader-designer-nodes.md
+                - name: Konstante Knoten
+                  href: designers/constant-nodes.md
+                - name: Parameterknoten
+                  href: designers/parameter-nodes.md
+                - name: Texturknoten
+                  href: designers/texture-nodes.md
+                - name: Berechnungsknoten
+                  href: designers/math-nodes.md
+                - name: Hilfsprogrammknoten
+                  href: designers/utility-nodes.md
+                - name: Filterknoten
+                  href: designers/filter-nodes.md
+            - name: Beispiele für den Shader-Designer
+              items:
+                - name: Erstellen eines einfachen Farbshaders
+                  displayName: Shader designer example
+                  href: designers/how-to-create-a-basic-color-shader.md
+                - name: Erstellen eines einfachen Lambert-Shaders
+                  href: designers/how-to-create-a-basic-lambert-shader.md
+                - name: Erstellen eines Standard-Phong-Shaders
+                  href: designers/how-to-create-a-basic-phong-shader.md
+                - name: Erstellen eines Basistexturshaders
+                  href: designers/how-to-create-a-basic-texture-shader.md
+                - name: Erstellen eines Graustufentextur-Shaders
+                  href: designers/how-to-create-a-grayscale-texture-shader.md
+                - name: Erstellen eines geometriebasierten Farbverlauf-Shaders
+                  href: designers/how-to-create-a-geometry-based-gradient-shader.md
+                - name: 'Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel'
+                  href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
+                - name: Exportieren eines Shaders
+                  href: designers/how-to-export-a-shader.md
+        - name: Exportieren von Texturen
+          items:
+            - name: 'Exportieren einer Textur, die Mipmaps enthält'
+              href: designers/how-to-export-a-texture-that-contains-mipmaps.md
+            - name: 'Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden'
+              href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
+            - name: Exportieren einer Textur für die Verwendung mit Direct2D- oder JavaScript-Apps
+              href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
     - name: Tipps und Tricks
       items:
         - name: Features zur Steigerung der Produktivität
@@ -1173,6 +1347,8 @@
           href: help-viewer/accessibility-features.md
         - name: Tastenkombinationen
           href: help-viewer/shortcut-keys.md
+    - name: Visual Studio-Bildbibliothek
+      href: designers/the-visual-studio-image-library.md
     - name: Dotfuscator Community
       items:
         - name: Übersicht

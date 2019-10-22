@@ -1,21 +1,21 @@
 ---
-title: 'Vorgehensweise: Bearbeiten von XML-Dateien'
+title: 'Gewusst wie: Bearbeiten von XML-Dateien'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483411"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645925"
 ---
-# <a name="how-to-edit-xml-files"></a>Vorgehensweise: Bearbeiten von XML-Dateien
+# <a name="how-to-edit-xml-files"></a>Gewusst wie: Bearbeiten von XML-Dateien
 
 Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenständige XML-Datei oder für eine einem Visual Studio-Projekt zugeordnete Datei verwendet werden. Der XML-Editor ist den folgenden Dateierweiterungen zugeordnet: *. config*, *. DTD*, *. XML*, *. xsd*, *. XDR*, *. xsl*, *. XSLT*und *. vssettings*. Der XML-Editor ist auch mit einem beliebigen anderen Dateityp verknüpft, für den kein bestimmter Editor registriert ist und der XML-oder DTD-Inhalt enthält.
 
@@ -56,7 +56,7 @@ Zum Bearbeiten einer XML-Datei doppelklicken Sie auf die Datei, die Sie bearbeit
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie im Menü **Datei** die Option **Neues** > **Projekt**aus.
+1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -68,7 +68,7 @@ Zum Bearbeiten einer XML-Datei doppelklicken Sie auf die Datei, die Sie bearbeit
 
 ::: moniker range=">=vs-2019"
 
-1. Wählen Sie im Menü **Datei** die Option **Neues** > **Projekt**aus.
+1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
 
 2. Geben Sie im Feld für die Vorlagen Suche ein **leeres Projekt** ein, wählen Sie die Vorlage **leeres Projekt (.NET Framework)** aus, und klicken Sie dann auf **weiter**.
 
@@ -84,4 +84,4 @@ Zum Bearbeiten einer XML-Datei doppelklicken Sie auf die Datei, die Sie bearbeit
 
 - [XML-Editor](../xml-tools/xml-editor.md)
 - [XML-Dokumenteigenschaften, Eigenschaften Fenster](../xml-tools/xml-document-properties-properties-window.md)
-- [Vorgehensweise: Erstellen eines XML-Schemas aus einem XML-Dokument](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Gewusst wie: Erstellen eines XML-Schemas aus einem XML-Dokument](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

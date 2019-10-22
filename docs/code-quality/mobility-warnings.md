@@ -9,24 +9,24 @@ helpviewer_keywords:
 - mobility warnings
 - warnings, mobility
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 170caf52999fb687c040c2e9212d1a1ed2e154a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8dedf24f2f6615ec8d24faa0c1e6bc5a48dc2f05
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820673"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649208"
 ---
 # <a name="mobility-warnings"></a>Mobilitätswarnungen
-Mobilitätswarnungen zu effizienten Stromverbrauch unterstützen.
+Mobilitäts Warnungen unterstützen den effizienten Energieverbrauch.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 |Regel|Beschreibung|
 |----------|-----------------|
-|[CA1600: Verwenden Sie nicht im Leerlauf Prozesse mit der Priorität](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse mit System.Diagnostics.ProcessPriorityClass.Idle beanspruchen die CPU, wenn diese sich eigentlich im Leerlauf befindet, und blockieren daher den Standbymodus.|
-|[CA1601: Verwenden Sie keine Timer, die Änderungen am Betriebszustand zu verhindern.](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Regelmäßige Aktivitäten mit einer höheren Frequenz belasten die CPU und beeinflussen energiesparende Leerlauftimer, mit denen die Anzeige sowie die Festplatten ausgeschaltet werden.|
+|[CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle"](../code-quality/ca1600.md)|Legen Sie für Prozesse nicht die Priorität Idle fest. Prozesse mit System.Diagnostics.ProcessPriorityClass.Idle beanspruchen die CPU, wenn diese sich eigentlich im Leerlauf befindet, und blockieren daher den Standbymodus.|
+|[CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern](../code-quality/ca1601.md)|Regelmäßige Aktivitäten mit einer höheren Frequenz belasten die CPU und beeinflussen energiesparende Leerlauftimer, mit denen die Anzeige sowie die Festplatten ausgeschaltet werden.|

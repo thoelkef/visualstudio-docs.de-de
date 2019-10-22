@@ -1,5 +1,5 @@
 ---
-title: Befehl Aliase | Microsoft-Dokumentation
+title: Befehls Aliase | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160890"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657850"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Aliasse bieten eine Möglichkeit, den zur Ausführung eines Befehls erforderlich
 |[Befehl "Start"](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Befehl "Gehe zu"](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Gehe zu Klammer|GotoBrace|Edit.GotoBrace|
-|F1Help|Help|Help.F1Help|
+|F1Help|Hilfe|Help.F1Help|
 |Unmittelbarer Modus|immed|Tools.ImmediateMode|
 |Einfügen einer Datei als Text|InsertFile|Edit.InsertFileAsText|
 |[Befehl "Aufrufliste auflisten"](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -128,4 +128,4 @@ Aliasse bieten eine Möglichkeit, den zur Ausführung eines Befehls erforderlich
 |[Befehl "Threads auflisten"](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Siehe auch
- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Befehlsfenster](../../ide/reference/command-window.md) [Such-/Befehlsfeld](../../ide/find-command-box.md)
+ [Befehlsfenster für Befehlsfenster](../../ide/reference/command-window.md) für [Visual Studio](../../ide/reference/visual-studio-commands.md) [-](../../ide/find-command-box.md) Befehle

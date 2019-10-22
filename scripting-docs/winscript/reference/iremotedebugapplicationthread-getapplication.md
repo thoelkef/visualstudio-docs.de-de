@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetApplication | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationthread:: getapplikation | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abe33d75f7e03944eb0a6f533f2955871ddee342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b21715345d698e6bd42c1946e06002da2b97d5b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788231"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575274"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
-Gibt zurück, die Application-Objekt, das diesem Thread zugeordnet.  
+Gibt das Anwendungs Objekt zurück, das diesem Thread zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parameter  
  `pprda`  
- [out] Die Application-Objekt, das diesem Thread zugeordnet ist.  
+ vorgenommen Das Anwendungs Objekt, das diesem Thread zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt das Anwendungsobjekt, das diesem Thread zugeordnet.  
+ Diese Methode gibt das Anwendungs Objekt zurück, das diesem Thread zugeordnet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

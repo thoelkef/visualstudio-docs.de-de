@@ -1,23 +1,23 @@
 ---
-title: 'Workflow-Designer – Vorgehensweise: Verwenden der Brotkrümelnavigation'
+title: 'Workflow-Designer: Gewusst wie: Verwenden der Breadcrumb-Navigation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de1004dd7a62fe4163147db4928783dd9a0dca98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7a851ea074a78349c9e52ef127bf2814d203bf5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949499"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650315"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Vorgehensweise: Verwenden der Brotkrümelnavigation
 
-Es gibt drei Hauptmethoden, um den Satz von Aktivitäten zu ändern, die im Workflow-Designer angezeigt werden:
+Es gibt drei Hauptmöglichkeiten, den Satz von Aktivitäten zu ändern, die in Workflow-Designer angezeigt werden:
 
 1. Doppelklicken Sie, um in zu einer untergeordneten Aktivität zu wechseln.
 
@@ -27,7 +27,7 @@ Es gibt drei Hauptmethoden, um den Satz von Aktivitäten zu ändern, die im Work
 
 ## <a name="using-breadcrumb-navigation"></a>Verwenden der Brotkrümelnavigation
 
-1. Doppelklicken Sie auf eine Aktivität von Workflow-Designer, um die Stammaktivität in die betreffende Aktivität zu ändern. Die betreffende Aktivität ist dann am Stamm vollständig erweitert und dessen Vorgänger in der Breadcrumb-Leiste angezeigt werden. Gelegentlich wird dies auch Durchführen von Drillout bzw. Drillinto bei einer Aktivität genannt.
+1. Doppelklicken Sie auf eine Aktivität Workflow-Designer, um die Stamm Aktivität in die Aktivität zu ändern, auf die geklickt wurde. Die angeklickte Aktivität wird dann im Stamm vollständig erweitert, und die zugehörigen Vorgänger werden in der Breadcrumb-Leiste angezeigt. Gelegentlich wird dies auch Durchführen von Drillout bzw. Drillinto bei einer Aktivität genannt.
 
 2. Um zu einem Vorgänger der aktuellen Stammaktivität zu navigieren, klicken Sie auf die Aktivität in der Breadcrumb-Leiste.
 
@@ -38,16 +38,16 @@ Es gibt drei Hauptmethoden, um den Satz von Aktivitäten zu ändern, die im Work
 2. Wenn der Erweiterungszustand durch Klicken auf die Schaltfläche geändert wird, dann wird der neue Erweiterungszustand in XAML gespeichert.
 
     > [!WARNING]
-    > Nicht alle Aktivitäten können an Ort und Stelle erweitert werden. Es gibt zwei Fälle, in denen eine Aktivität nicht an Ort und Stelle erweitert werden kann: wenn das übergeordnete Element der Aktivität es nicht zulässt, dass seine untergeordneten Elementen an Ort und Stelle erweitert werden, (Aktivitäten in einem Flussdiagramm können z. B. nicht an Ort und Stelle erweitert werden), und wenn der Aktivitätsdesigner nicht an Ort und Stelle erweitert werden kann. Auch wenn keine der im Workflow-Designer enthalten die Aktivitäts-Designer das zuletzt genannte Verhalten aufweisen, können einige benutzerdefinierten Aktivitäten dieses Verhalten zeigen.
+    > Nicht alle Aktivitäten können an Ort und Stelle erweitert werden. Es gibt zwei Fälle, in denen eine Aktivität nicht an Ort und Stelle erweitert werden kann: wenn das übergeordnete Element der Aktivität es nicht zulässt, dass seine untergeordneten Elementen an Ort und Stelle erweitert werden, (Aktivitäten in einem Flussdiagramm können z. B. nicht an Ort und Stelle erweitert werden), und wenn der Aktivitätsdesigner nicht an Ort und Stelle erweitert werden kann. Obwohl keiner der Aktivitäts Designer, der in Workflow-Designer enthalten ist, das letztere Verhalten hat, können einige benutzerdefinierte Aktivitäten dieses Verhalten aufweisen.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Erweitern oder Reduzieren aller Aktivitäten
 
-1. Verwenden der **alle erweitern** und **alle reduzieren** Schaltflächen auf der Benutzeroberfläche zum Erweitern oder Reduzieren aller Aktivitäten unter der aktuellen Breadcrumb-Stamms. Beachten Sie, dass es sich bei "Alle erweitern" und "Alle reduzieren" um globale Zustände handelt. Dies bedeutet, dass beim Ändern der Stammaktivität mithilfe der Breadcrumb-Navigation, die alle erweitern oder reduzieren alle Zustände erhalten bleibt, bis Sie auf **wiederherstellen**.
+1. Verwenden Sie die Schaltflächen **Alle erweitern** und **alle** reduzieren der Benutzeroberfläche, um alle Aktivitäten unter dem aktuellen Breadcrumb-Stamm zu erweitern oder zu reduzieren. Beachten Sie, dass es sich bei "Alle erweitern" und "Alle reduzieren" um globale Zustände handelt. Dies bedeutet Folgendes: Wenn Sie die Stamm Aktivität mithilfe der Breadcrumb-Navigation ändern, bleibt der Zustand "Alle erweitern" oder "Alle reduzieren" erhalten, bis Sie auf **Wiederherstellen**klicken
 
-2. Nachdem Sie alle eine erweitern angewendet haben oder reduzieren alle Zustände, können Sie klicken die **wiederherstellen** Schaltfläche, um zurück zu wechseln, um anhand des Status für jede Aktivität zuvor angewendeten angezeigt wird.
-
-    > [!WARNING]
-    > Wenn eine Aktivität, z. B. <xref:System.Activities.Statements.Flowchart>, hat an Stelle von zu erweitern, die Funktionen zugeordnet sind die **alle erweitern** und **alle reduzieren** Schaltflächen deaktiviert ist, auf die **Flussdiagramm**  Designer. Weitere Informationen zu den **Flussdiagramm** -Designer finden Sie die [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) Thema.
+2. Nachdem Sie den Zustand "Alle erweitern" oder "Alle reduzieren" angewendet haben, können Sie auf die Schaltfläche **Wiederherstellen** klicken, um den zuvor auf die jeweilige Aktivität angewendeten Zustand zurückzusehen.
 
     > [!WARNING]
-    > Alle erweitern Außerdem wird einen spezieller Effekt in **Switch** und **TryCatch** Aktivitäts-Designer. Beim Klicken auf **alle erweitern**, werden alle Switch-Fälle und alle Try/Catch/finally-Blöcke angezeigt. Auf **wiederherstellen** oder **alle reduzieren** werden diese Designer auf ihren Standardzustand zurückgesetzt, in dem Sie klicken können einen einzelnen Fall bzw. Block, um seinen Inhalt anzuzeigen.
+    > Wenn eine Aktivität, z. b. <xref:System.Activities.Statements.Flowchart>, nicht mehr direkt erweitert ist, wird die der Schaltfläche **Alle erweitern** und **alle** reduzieren zugeordnete Funktionalität im **Flussdiagramm** -Designer deaktiviert. Weitere Informationen zum **Flussdiagramm** -Designer finden Sie im Abschnitt [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) .
+
+    > [!WARNING]
+    > "Alle erweitern" wirkt sich auch auf die **Switch** -und **trycatch** -Aktivitäts Designer aus. Wenn Sie auf **Alle erweitern**klicken, werden alle switchfälle und alle try/catch/schließlich-Blöcke angezeigt. Wenn Sie auf " **Wiederherstellen** **" oder "** reduzieren" klicken, werden diese Designer auf ihren Standardzustand zurückversetzt, in dem Sie auf einen einzelnen Fall/Block klicken können, um den Inhalt

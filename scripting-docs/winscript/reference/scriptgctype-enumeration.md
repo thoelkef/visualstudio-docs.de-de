@@ -1,5 +1,5 @@
 ---
-title: SCRIPTGCTYPE-Enumeration | Microsoft-Dokumentation
+title: Scriptgctype-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840238"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574394"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE-Enumeration
-Der Typ der Garbagecollection ausführen. Verwendet die [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) Methode.  
+Der Typ der auszuführenden Garbage Collection. Wird in der [iactivescriptgarbagecollector:: CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) -Methode verwendet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|Führen Sie die normale Garbagecollection. Der ganzzahlige Wert ist 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Führen Sie die vollständige Garbagecollection. Der ganzzahlige Wert ist 1.|  
+|SCRIPTGCTYPE_NORMAL|Normale Garbage Collection. Der ganzzahlige Wert ist 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Führen Sie umfassende Garbage Collection aus. Der ganzzahlige Wert ist 1.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Fehlercodes für Active Script](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

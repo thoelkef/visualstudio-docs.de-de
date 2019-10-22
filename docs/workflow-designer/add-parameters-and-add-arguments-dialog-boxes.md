@@ -1,37 +1,37 @@
 ---
-title: 'Workflow-Designer: Hinzufügen der Dialogfelder für Parameter und Argumente hinzufügen'
+title: 'Workflow-Designer: Parameter hinzufügen & Dialogfelder "Argumente hinzufügen"'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 7acb273430ac2dea8bc1f95a5c9a6e5c1d45c6f5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+author: jillre
+ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177731"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650755"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dialogfelder Parameter hinzufügen und Argumente hinzufügen
 
-Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Hinzufügen von Parametern** Dialogfeld ein, die die <xref:System.Activities.Statements.InvokeMethod> Designer:
+In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Parameter hinzufügen** beschrieben, das vom <xref:System.Activities.Statements.InvokeMethod>-Designer verwendet wird:
 
 |||
 |-|-|
-|**Richtung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|
+|**Orientierung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|
 |**Type**|Der Typname des neuen Parameters.|
-|**Wert**|Eine Visual Basic-Ausdruck, mit dem der neue Parameter einen Standardwert zuweisen|
+|**Wert**|Ein Visual Basic Ausdruck, der verwendet wird, um dem neuen Parameter einen Standardwert zuzuweisen.|
 
-Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Argumente hinzufügen** Dialogfeld ein, die die <xref:System.Activities.Statements.InvokeDelegate> Designer:
+In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Argumente hinzufügen** beschrieben, das vom <xref:System.Activities.Statements.InvokeDelegate>-Designer verwendet wird:
 
 |||
 |-|-|
 |**Name**|Der Name des Arguments.|
-|**Richtung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|
+|**Orientierung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|
 |**Type**|Der Typname des neuen Arguments.|
 |**Wert**|Der für diese Instanz des Delegatarguments zu verwendende Wert.|

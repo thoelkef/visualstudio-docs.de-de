@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9ff51d8193ebc8c1ca264a334cdd3f1fb7401b
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 075c56a5d5bcb02ee443035ac26d7730f145a445
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118925"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314079"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Schritt 4: Hinzufügen der CheckTheAnswer()-Methode
 
@@ -41,8 +41,7 @@ Im vierten Teil dieses Lernprogramms schreiben Sie eine Methode, `CheckTheAnswer
      [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
      [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]
 
-     > [!IMPORTANT]
-     > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Nun überprüfen Sie die Antwort, indem Sie die Code in der Methode aktualisieren, damit der <xref:System.Windows.Forms.Timer.Tick>-Ereignishandler des Zeitgebers die neue `CheckTheAnswer()`-Methode aufruft.
 

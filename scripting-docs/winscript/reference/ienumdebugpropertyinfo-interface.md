@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo-Schnittstelle | Microsoft-Dokumentation
+title: Ienumdebugpropertyinfo-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,29 +13,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 736bea847908e3c70d6caf2f8e41af38608f4f23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ce4f5a114629a473df99b583c77ae7747bcd339
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963428"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574186"
 ---
 # <a name="ienumdebugpropertyinfo-interface"></a>IEnumDebugPropertyInfo-Schnittstelle
-Listet die `DebugPropertyInfo` Strukturen.  
+Listet `DebugPropertyInfo` Strukturen auf.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IEnumDebugPropertyInfo`.  
+ In der folgenden Tabelle sind die Methoden von `IEnumDebugPropertyInfo` aufgeführt.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|Ruft eine angegebene Anzahl von `DebugPropertyInfo` Strukturen in einer Enumerationsfolge.|  
-|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|Überspringt eine angegebene Anzahl von `DebugPropertyInfo` Strukturen in einer Enumerationsfolge.|  
+|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|Ruft eine angegebene Anzahl von `DebugPropertyInfo` Strukturen in einer Enumerationsfolge ab.|  
+|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|Überspringt eine angegebene Anzahl von `DebugPropertyInfo` Strukturen in einer enumerationssequenz.|  
 |[IEnumDebugPropertyInfo::Reset](../../winscript/reference/ienumdebugpropertyinfo-reset.md)|Setzt die Enumerationsfolge auf den Anfang zurück.|  
 |[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|  
-|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|Ruft die Anzahl der `DebugPropertyInfo` Strukturen in einem Enumerator.|  
+|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|Ruft die Anzahl der `DebugPropertyInfo` Strukturen in einem Enumerator ab.|  
   
 ## <a name="requirements"></a>Anforderungen  
- Header: dbgprop.h  
+ Header: dbgprop. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [DebugPropertyInfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)

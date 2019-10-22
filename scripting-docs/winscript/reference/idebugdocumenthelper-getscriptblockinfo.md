@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft-Dokumentation
+title: 'Idebugdocumenthelper:: getscriptblockinfo | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1984cdc19beb883dd7ee82f58497b11a8d781b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a92aa00d7997ceccc583c88a070f6fbc7d4359d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549714"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576098"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
-Ruft den Bereich von Zeichen und der Skript-Engine, die für einen Skriptblock ab.  
+Ruft den Bereich von Zeichen und das Skript Modul ab, das einem Skriptblock entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>Parameter  
  `dwSourceContext`  
- [in] Der Quellkontext für den Skriptblock.  
+ in Der Quell Kontext für den Skriptblock.  
   
  `ppasd`  
- [out] Die Skript-Engine für die dieser Skriptblock.  
+ vorgenommen Die Skript-Engine für diesen Skriptblock.  
   
  `piCharPos`  
- [out] Speicherort der Beginn des Skriptblocks.  
+ vorgenommen Der Speicherort des Skript Blocks.  
   
  `cChars`  
- [out] Anzahl der Zeichen im Skriptblock.  
+ vorgenommen Anzahl der Zeichen im Skriptblock.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -59,7 +59,7 @@ HRESULT GetScriptBlockInfo(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft den Bereich von Zeichen und der Skript-Engine, die für einen Skriptblock ab.  
+ Diese Methode ruft den Bereich von Zeichen und das Skript Modul ab, das einem Skriptblock entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -11,39 +11,39 @@ helpviewer_keywords:
 - CA1821
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5a6175871e74bf3cb99610dce0926f0982f331d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d340d69ee32de20142abf740f7fedc871c9733a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201671"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657472"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Leere Finalizer entfernen.
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Leere Finalizer entfernen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|RemoveEmptyFinalizers|
+|TypeName|Removeemptyfinalizers|
 |CheckId|CA1821|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein Typ implementiert einen Finalizer, der leer ist, nur den Basistypfinalizer aufruft, oder ruft nur bedingt ausgegebene Methoden.
+ Ein Typ implementiert einen Finalizer, der leer ist, nur den Basistyp Finalizer aufruft oder nur bedingt ausgegebene Methoden aufruft.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Finalizer sollten möglichst vermieden werden, da durch Verfolgung der Objektlebensdauer zusätzliche Leistung beansprucht wird. Der Garbage Collector wird den Finalizer ausgeführt werden, bevor das Objekt freigegeben. Dies bedeutet, dass zwei Sammlungen erforderlich, um das Objekt gesammelt werden. Ein leerer Finalizer verursacht dies zusätzlichen Mehraufwand ohne nutzen.
+ Finalizer sollten möglichst vermieden werden, da durch Verfolgung der Objektlebensdauer zusätzliche Leistung beansprucht wird. Der Garbage Collector führt den Finalizer aus, bevor das Objekt erfasst wird. Dies bedeutet, dass zwei Auflistungen erforderlich sind, um das Objekt zu erfassen. Ein leerer Finalizer verursacht diesen zusätzlichen Aufwand ohne jeglichen Vorteil.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie die leeren Finalizer. Wenn ein Finalizer für das Debuggen erforderlich ist, schließen Sie den gesamten Finalizer in `#if DEBUG / #endif` Anweisungen.
+ Entfernen Sie den leeren Finalizer. Wenn ein Finalizer für das Debuggen erforderlich ist, schließen Sie den gesamten Finalizer in `#if DEBUG / #endif` Anweisungen ein.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Meldung von dieser Regel. Abschluss nicht unterdrückt wird die Leistung verringert, und bietet keine Vorteile.
+ Unterdrücken Sie keine Meldung von dieser Regel. Wenn die Finalisierung nicht unterdrückt wird, verringert sich die Leistung und bietet keine Vorteile.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt ein leerer Finalizer, der entfernt werden soll, einen Finalizer, der in eingeschlossen werden soll `#if DEBUG / #endif` -Direktiven und einen Finalizer, der verwendet die `#if DEBUG / #endif` Direktiven ordnungsgemäß.
+ Das folgende Beispiel zeigt einen leeren Finalizer, der entfernt werden soll, einen Finalizer, der in `#if DEBUG / #endif` Direktiven eingeschlossen werden soll, und einen Finalizer, der die `#if DEBUG / #endif` Direktiven ordnungsgemäß verwendet.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]

@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft-Dokumentation
+title: 'Iapplicationdebuggerui:: bringdocumenttoptop | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a88b44f609113670259492eb82491b16004d29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b51e7b588750fc72e61840c4748c006eea732c22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991122"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577792"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Bringt das Fenster mit dem angegebenen Debug-Dokument oben im Debugger-Benutzeroberfläche.  
+Führt das Fenster, das das angegebene debugdokument enthält, am oberen Rand der Debugger-Benutzeroberfläche.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parameter  
  `pddt`  
- [in] Debuggen von Dokument, in der Debugger-Benutzeroberfläche in den Vordergrund zu bringen.  
+ in Debuggen Sie das Dokument, um es in die Benutzeroberfläche des Debuggers zu verschieben.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,7 +48,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|Das Dokument ist nicht bekannt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bringt das Fenster, die mit dem angegebenen Debug-Dokument oben im Debugger-Benutzeroberfläche.  
+ Mit dieser Methode wird das Fenster, das das angegebene debugdokument enthält, am oberen Rand der Debugger-Benutzeroberfläche angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IApplicationDebuggerUI-Schnittstelle](../../winscript/reference/iapplicationdebuggerui-interface.md)

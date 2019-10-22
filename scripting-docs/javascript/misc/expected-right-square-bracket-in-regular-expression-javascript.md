@@ -1,5 +1,5 @@
 ---
-title: Erwartet ']' im regulären Ausdruck (JavaScript) | Microsoft-Dokumentation
+title: "\"]\" In regulärem Ausdruck erwartet (JavaScript) | Microsoft-Dokumentation"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66fa8ba2396185bd402e4bc31a3da6b1f8bf95ab
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9af38a5fa754a811416f1a998b90946345f3e4a2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446500"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576484"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Im regulären Ausdruck wurde ']' erwartet (JavaScript)
-Sie haben versucht, eine Zeichenklasse für die Übereinstimmung eines regulären Ausdrucks zu erstellen, aber Sie hat keine die schließenden Klammer. Einzelne Literalzeichen Kombinationen können zu Zeichenklassen in regulären Ausdrücken zusammengefügt werden, Ausschnitte in Klammern aufgerufen wird. Eine Zeichenklasse entspricht einem beliebigen Zeichen, die, das Sie enthält. Z. B. / [Abc] / entspricht einem beliebigen Buchstaben "a", "b" oder "c".  
+Sie haben versucht, eine Zeichenklasse für eine Abgleich mit einem regulären Ausdruck zu erstellen, aber nicht die rechte eckige Klammer. Einzelne literalzeichenkombinationen können in Zeichenklassen zusammengefasst werden, indem Sie in eckige Klammern platziert werden. Eine Zeichenklasse entspricht einem beliebigen Zeichen, das Sie enthält. Beispielsweise entspricht/[abc]/einem beliebigen Buchstaben "a", "b" oder "c".  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Fügen Sie der schließenden Klammer des regulären Ausdrucks ein.  
+- Fügen Sie dem regulären Ausdruck die rechte eckige Klammer hinzu.  
   
     > [!NOTE]
-    > Sie können eine einzelne Klammer entsprechend mit Escapezeichen versehen sie mit einem umgekehrten Schrägstrich - \\[–, damit es nicht als Sonderzeichen von interpretiert wird [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Wenn Sie eine einzelne eckige Klammer abgleichen möchten, versehen Sie Sie mit einem umgekehrten Schrägstrich \\ [-damit Sie nicht als Sonderzeichen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] interpretiert wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Objekt für reguläre Ausdrücke](../../javascript/reference/regular-expression-object-javascript.md)    
  [Syntax für reguläre Ausdrücke (JavaScript)](https://msdn.microsoft.com/library/1400241x)

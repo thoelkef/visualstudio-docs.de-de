@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Microsoft-Dokumentation
+title: 'Iactivescriptauthor:: GetChars | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ce2b46d65c2ce92111bc4b6f44f66ce9dc4ce5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935372"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576249"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-Gibt den Satz der Abschluss Zeichen für einen Kontext für die angeforderte Abschluss.  
+Gibt den Satz von Abschluss Zeichen für einen angeforderten Vervollständigungs Kontext zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,19 +38,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Parameter  
  `fRequestedList`  
- [in] Der angeforderte Abschluss-Kontext.  
+ in Der angeforderte Vervollständigungs Kontext.  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Fordert die Links-Enumeration.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Fordert den Element-Abschluss-Kontext.|  
-|SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Fordert die Parameterliste.|  
-|SCRIPT_CMPL_COMMIT|0x0004|Anforderungen bei Durchführung der Parameterliste.|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Fordert die Enumeration auf der linken Seite an.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Fordert den Element Vervollständigungs Kontext an.|  
+|SCRIPT_CMPL_PARAM_TRIGGER|0x0003 erfordert|Fordert die Parameterliste an.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Fordert den Abschluss der Parameterliste an.|  
   
  `pbstrChars`  
- [out] Die Zeichen, die den Kontext für die angeforderte Abschluss entsprechen.  
+ vorgenommen Die Zeichen, die dem angeforderten Vervollständigungs Kontext entsprechen.  
   
-|`fRequestedList` Parameter|Zurückgegebene Zeichen|  
+|`fRequestedList`-Parameter|Zurückgegebene Zeichen|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  

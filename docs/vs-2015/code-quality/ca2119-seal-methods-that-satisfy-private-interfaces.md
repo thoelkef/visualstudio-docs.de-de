@@ -1,5 +1,5 @@
 ---
-title: 'CA2119: Methoden versiegeln, private Schnittstellen erfüllen | Microsoft-Dokumentation'
+title: 'CA2119: Versiegeln von Methoden, die private Schnittstellen erfüllen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56b08d1b842e65e1c1c29a7409813c314cbf014d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: af41fc5576cbcd56589680d99c0cd5c0dfd6e6f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687275"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664771"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen.
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,40 +33,40 @@ ms.locfileid: "65687275"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein vererbbarer öffentlicher Typ stellt eine überschreibbare methodenimplementierung einer `internal` (`Friend` in Visual Basic) Schnittstelle.
+ Ein vererbbarer öffentlicher Typ stellt eine über schreibbare Methoden Implementierung einer `internal`-Schnittstelle (`Friend` in Visual Basic) bereit.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Schnittstellenmethoden müssen Öffentliche zugreifbarkeit, durch den implementierenden Typ kann nicht geändert werden. Eine interne Schnittstelle erstellt einen Vertrag, der nicht vorgesehen ist, außerhalb der Assembly implementiert werden, die die Schnittstelle definiert. Ein öffentlicher Typ, der implementiert eine Methode von einer internen Schnittstelle mithilfe der `virtual` (`Overridable` in Visual Basic)-Modifizierers können die Methode, die von einem abgeleiteten Typ überschrieben werden, die außerhalb der Assembly ist. Wenn Sie ein zweiter Typ in der definierenden Assembly, die Methode aufruft und erwartet, dass einen Vertrag nur intern, möglicherweise Verhalten beeinträchtigt, wenn stattdessen die überschriebene Methode in der externen Assembly ausgeführt wird. Dadurch wird ein Sicherheitsrisiko erstellt.
+ Schnittstellen Methoden haben öffentliche Barrierefreiheit, die nicht durch den implementierenden Typ geändert werden kann. Eine interne Schnittstelle erstellt einen Vertrag, der nicht für die Implementierung außerhalb der Assembly vorgesehen ist, die die Schnittstelle definiert. Ein öffentlicher Typ, der eine Methode einer internen Schnittstelle mithilfe des `virtual`-Modifizierers (`Overridable` in Visual Basic) implementiert, ermöglicht das Überschreiben der Methode durch einen abgeleiteten Typ außerhalb der Assembly. Wenn ein zweiter Typ in der definierenden Assembly die-Methode aufruft und einen internen Vertrag erwartet, kann das Verhalten gefährdet werden, wenn stattdessen die überschriebene Methode in der externen Assembly ausgeführt wird. Dadurch entsteht ein Sicherheitsrisiko.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, verhindern Sie, dass die Methode außerhalb der Assembly überschrieben wird, indem Sie eine der folgenden:
+ Um einen Verstoß gegen diese Regel zu beheben, verhindern Sie, dass die Methode außerhalb der Assembly überschrieben wird, indem Sie eine der folgenden Methoden verwenden:
 
-- Ändern Sie den deklarierenden Typ `sealed` (`NotInheritable` in Visual Basic).
+- Legen Sie den deklarierenden Typ `sealed` (`NotInheritable` in Visual Basic).
 
-- Ändern Sie den Zugriff des deklarierenden Typs `internal` (`Friend` in Visual Basic).
+- Ändern Sie den Zugriff auf den deklarierenden Typ in `internal` (`Friend` in Visual Basic).
 
-- Entfernen Sie alle öffentliche Konstruktoren, von dem deklarierenden Typ.
+- Entfernen Sie alle öffentlichen Konstruktoren aus dem deklarierenden Typ.
 
-- Implementieren Sie die Methode ohne Verwendung der `virtual` Modifizierer.
+- Implementieren Sie die-Methode, ohne den `virtual` Modifizierer zu verwenden.
 
-- Implementieren Sie explizit die Methode.
+- Implementieren Sie die-Methode explizit.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicherer, unterdrücken Sie eine Warnung von dieser Regel, wenn Sie nach sorgfältiger Prüfung keine Sicherheitsprobleme, die vorhanden sein kann ausgenutzt werden, wenn die Methode außerhalb der Assembly überschrieben wird.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn nach der sorgfältigen Überprüfung keine Sicherheitsprobleme vorhanden sind, die möglicherweise ausgenutzt werden, wenn die Methode außerhalb der Assembly überschrieben wird.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen Typ, `BaseImplementation`, die gegen diese Regel verstößt.
+ Das folgende Beispiel zeigt einen Typ, `BaseImplementation`, der gegen diese Regel verstößt.
 
  [!code-cpp[FxCop.Security.SealMethods1#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cpp/FxCop.Security.SealMethods1.cpp#1)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cs/FxCop.Security.SealMethods1.cs#1)]
  [!code-vb[FxCop.Security.SealMethods1#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/vb/FxCop.Security.SealMethods1.vb#1)]
 
 ## <a name="example"></a>Beispiel
- Im folgende Beispiel nutzt die virtuelle Methode-Implementierung des vorherigen Beispiels.
+ Im folgenden Beispiel wird die Implementierung der virtuellen Methode des vorherigen Beispiels ausgenutzt.
 
  [!code-cpp[FxCop.Security.SealMethods2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/cpp/FxCop.Security.SealMethods2.cpp#1)]
  [!code-csharp[FxCop.Security.SealMethods2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/cs/FxCop.Security.SealMethods2.cs#1)]
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## <a name="see-also"></a>Siehe auch
- [Schnittstellen](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Schnittstellen](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
+ [Schnitt](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [stellen Schnittstellen](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

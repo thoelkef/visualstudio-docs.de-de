@@ -1,5 +1,5 @@
 ---
-title: Getscriptdispatch | Microsoft-Dokumentation
+title: 'IActiveScript:: getscriptdispatch | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c329a4dbf42461369441b86f6d9ba18992916366
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba53f2eccde18bd5b2d9c609ea680b50cb7261c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935597"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575758"
 ---
 # <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
-Ruft die `IDispatch` Schnittstelle für die Methoden und Eigenschaften, die dem derzeit ausgeführten Skript zugeordnet.  
+Ruft die `IDispatch`-Schnittstelle für die Methoden und Eigenschaften ab, die dem aktuell laufenden Skript zugeordnet sind.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetScriptDispatch(
   
 #### <a name="parameters"></a>Parameter  
  `pstrItemName`  
- [in] Die Adresse eines Puffers, der den Namen des Elements enthält, für den benötigt der Aufrufer auf den zugeordneten DispatchRuntime-Objekt. Wenn dieser Parameter ist `NULL`, das DispatchRuntime-Objekt enthält, deren Mitglieder alle globalen Methoden und Eigenschaften durch das Skript definiert. Durch die `IDispatch` -Schnittstelle und den zugehörigen `ITypeInfo` -Schnittstelle, der Host Skriptmethoden oder Ansicht aufrufen kann, und Ändern von Skriptvariablen.  
+ in Die Adresse eines Puffers, der den Namen des Elements enthält, für das der Aufrufer das zugeordnete dispatchobjekt benötigt. Wenn dieser Parameter `NULL` ist, enthält das dispatchobjekt alle globalen Methoden und Eigenschaften, die vom Skript definiert werden, als Member. Durch die `IDispatch`-Schnittstelle und die zugeordnete `ITypeInfo` Schnittstelle kann der Host Skript Methoden aufrufen oder Skript Variablen anzeigen und ändern.  
   
  `ppdisp`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf das globale Methoden und Eigenschaften des Skripts zugeordnete Objekt empfängt. Wenn ein Objekt, von die Skript-Engine nicht unterstützt wird `NULL` zurückgegeben wird.  
+ vorgenommen Adresse einer Variablen, die einen Zeiger auf das-Objekt empfängt, das den globalen Methoden und Eigenschaften des Skripts zugeordnet ist. Wenn ein solches Objekt von der Skript-Engine nicht unterstützt wird, wird `NULL` zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -51,11 +51,11 @@ HRESULT GetScriptDispatch(
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert).|  
-|`S_FALSE`|Die Skript-Engine unterstützt nicht die Dispatch-Objekt. die `ppdisp` Parameter auf NULL festgelegt ist.|  
+|`E_UNEXPECTED`|Der-Befehl wurde nicht erwartet (z. b. wurde die Skript-Engine noch nicht geladen oder initialisiert).|  
+|`S_FALSE`|Die Skript-Engine unterstützt kein dispatchobjekt. der `ppdisp`-Parameter ist auf NULL festgelegt.|  
   
 ## <a name="remarks"></a>Hinweise  
- Da durch Aufrufen von Methoden und Eigenschaften hinzugefügt werden können die [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) -Schnittstelle, die `IDispatch` Schnittstelle, die von dieser Methode zurückgegebene kann dynamisch neue Methoden und Eigenschaften zu unterstützen. Auf ähnliche Weise die `IDispatch::GetTypeInfo` -Methode gibt einen neuen, eindeutigen `ITypeInfo` -Schnittstelle auf, wenn die Methoden und Eigenschaften hinzugefügt werden. Beachten Sie jedoch, dass Sprach-Engines nicht geändert werden darf die `IDispatch` -Schnittstelle in einer Weise inkompatibel mit allen vorherigen `ITypeInfo` -Schnittstelle zurückgegeben wird. Dies bedeutet beispielsweise, dass die DISPIDs nie wiederverwendet werden.  
+ Da Methoden und Eigenschaften durch Aufrufen der [iactivescriptparamese](../../winscript/reference/iactivescriptparse.md) -Schnittstelle hinzugefügt werden können, kann die von dieser Methode zurückgegebene `IDispatch`-Schnittstelle neue Methoden und Eigenschaften dynamisch unterstützen. Ebenso sollte die `IDispatch::GetTypeInfo` Methode eine neue, eindeutige `ITypeInfo` Schnittstelle zurückgeben, wenn Methoden und Eigenschaften hinzugefügt werden. Beachten Sie jedoch, dass die Sprachmodule die `IDispatch` Schnittstelle nicht so ändern dürfen, dass Sie nicht mit einer früheren `ITypeInfo` zurückgegebenen Schnittstelle kompatibel ist. Dies impliziert beispielsweise, dass DispIds nie wieder verwendet werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

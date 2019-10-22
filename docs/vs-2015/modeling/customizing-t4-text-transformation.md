@@ -1,5 +1,5 @@
 ---
-title: Anpassen der T4-TextTransformation | Microsoft-Dokumentation
+title: Anpassen der T4-Text Transformation | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,37 +9,33 @@ helpviewer_keywords:
 - text templates, custom hosts
 ms.assetid: 62cd9a3c-a6e1-4b29-93f5-f2a0cf47dc92
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ea2881cfebaf10d7a72e8651214cf3a6f64debae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71cec79acfcc934f9ddd910006f32f5207b26c84
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68164673"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654969"
 ---
 # <a name="customizing-t4-text-transformation"></a>Anpassen der T4-Texttransformation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Textvorlagen sind ein Feature von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , mit denen Sie Programmcode oder anderen Textdateien über ein Transformationsprozess zu generieren. Mithilfe von [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], Sie können die Standard-Transformationsprozess erweitern, indem Anpassen der Textvorlagen-Direktivenprozessor oder die Textvorlagenhosts.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md)  
- Beschreibt die Funktionsweise der TextTransformation und erläutert die Rolle des Vorlagenhosts und anweisungsprozessoren.  
-  
- [Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen](../modeling/creating-custom-t4-text-template-directive-processors.md)  
- Der anweisungsprozessor befasst sich mit den Anweisungen in der Vorlage aus, wie z. B. `<#@template#>.` es ausgeführt wird, während der Kompilierung der Vorlage und Assemblys und andere Ressourcen laden können. Sie können auch Code einfügen, die Ressourcen zur Laufzeit geladen werden. Definieren Sie eigene anweisungsprozessor, können Sie die Komplexität Ihrer Vorlagen reduzieren.  
-  
- [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
- Wenn Sie schreiben eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterungstypen, z. B. ein Menü-Befehl oder Ereignis-Handler, die Erweiterung kann mithilfe des Textvorlagendiensts beliebiger Textvorlagen transformieren. Sie können Parameterdaten in die Vorlage übergeben, durch die Verwendung des Sitzungsobjekts und rufen Sie die Werte aus, in der Vorlage mit der `<#@parameter#>` Richtlinie.  
-  
- [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md)  
- Wenn der Code der Textvorlage ausgeführt wird, stellt der Host Zugriff auf externe Dateien und der Status der Anwendung bereit. Z. B. auf dem Host, der Texttransformationen ausgeführt, in wird [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können ermöglichen den Zugriff auf den Projektmappen-Explorer. Außerdem werden Fehler im Fenster mit Fehlermeldungen angezeigt. Wenn Sie Texttransformationen in einem anderen Kontext ausführen möchten, können Sie einen eigenen Host definieren, der Zugriff auf die Dienste verfügbar sind, in diesem Kontext bereitstellt.  
-  
- Wenn Sie schreiben eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, erwägen Sie die vorhandene Transformation Textdienst, anstatt einen eigenen Host. Weitere Informationen finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
-  
-## <a name="reference"></a>Referenz  
- [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)  
-  
- Enthält die Syntax der textvorlagenanweisungen und Kontrollblöcken.
+Text Vorlagen sind eine Funktion von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], die es Ihnen ermöglicht, Programmcode oder andere Textdateien durch einen Transformationsprozess zu generieren. Mithilfe [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)] können Sie den Standardvorlagen-Transformationsprozess erweitern, indem Sie den Text Template-Direktivenprozessor oder den Textvorlagen Host anpassen.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Der Text Vorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md) Beschreibt die Funktionsweise der Text Transformation und erläutert die Rolle des Vorlagen Hosts und der direktivenprozessoren.
+
+ [Erstellen von benutzerdefinierten T4](../modeling/creating-custom-t4-text-template-directive-processors.md) -Anweisungs Prozessoren für Text Vorlagen Der Direktivenprozessor behandelt Direktiven in ihrer Vorlage, wie z. b. `<#@template#>.` er während der Kompilierung der Vorlage ausgeführt wird, und kann Assemblys und andere Ressourcen laden. Außerdem kann Code eingefügt werden, der zur Laufzeit Ressourcen lädt. Wenn Sie Ihren eigenen Direktivenprozessor definieren, können Sie die Komplexität Ihrer Vorlagen reduzieren.
+
+ [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md) Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung, z. b. einen Menübefehl oder einen Ereignishandler, schreiben, kann die Erweiterung den Textvorlagen Dienst zum Transformieren beliebiger Textvorlagen verwenden. Sie können Parameterdaten mithilfe des Session-Objekts an die Vorlage übergeben und die Werte in der Vorlage mithilfe der `<#@parameter#>`-Direktive erhalten.
+
+ [Verarbeiten von Text Vorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md) Wenn der Code der Textvorlage ausgeführt wird, bietet der Host Zugriff auf externe Dateien und den Status der Anwendung. Beispielsweise kann der Host, der Text Transformationen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ausführt, Zugriff auf den Projektmappen-Explorer bereitstellen. Außerdem werden Fehler im Fenster "Fehlermeldung" angezeigt. Wenn Sie Text Transformationen in einem anderen Kontext ausführen möchten, können Sie einen eigenen Host definieren, der den Zugriff auf die in diesem Kontext verfügbaren Dienste ermöglicht.
+
+ Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung schreiben, sollten Sie den vorhandenen Text Transformations Dienst verwenden, anstatt einen eigenen Host zu schreiben. Weitere Informationen finden Sie unter [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+
+## <a name="reference"></a>Referenz
+ [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
+
+ Stellt die Syntax von Textvorlagen Direktiven und-Kontroll Blöcken bereit.

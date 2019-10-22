@@ -10,47 +10,45 @@ helpviewer_keywords:
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3cf430e5cf9c378d3397b374e51887206e5c6a6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 06da9e1a8db332f12a08c1182291c5fcfb4555de
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682197"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602268"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Gewusst wie: Anzeigen von URLs als Links im Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ihrem Code als aktive Links behandelt. Wenn Sie diese Funktion verwenden, zeigen URLs das folgende Verhalten:  
-  
-- Sie werden unterstrichen angezeigt.  
-  
-- Sie zeigen eine **QuickInfo** an, wenn Sie mit der Maus darauf zeigen.  
-  
-- Sie versuchen, die angegebene Website zu öffnen, wenn Sie auf dem Link **STRG** drücken und mit der linken Maustaste klicken. Standardmäßig wird die Website im internen Webbrowser angezeigt.  
-  
+Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ihrem Code als aktive Links behandelt. Wenn Sie diese Funktion verwenden, zeigen URLs das folgende Verhalten:
+
+- Sie werden unterstrichen angezeigt.
+
+- Sie zeigen eine **QuickInfo** an, wenn Sie mit der Maus darauf zeigen.
+
+- Sie versuchen, die angegebene Website zu öffnen, wenn Sie auf dem Link **STRG** drücken und mit der linken Maustaste klicken. Standardmäßig wird die Website im internen Webbrowser angezeigt.
+
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="procedure"></a>Prozedur  
-  
-#### <a name="to-display-urls-as-links"></a>So zeigen Sie URLs als Links an  
-  
-1. Klicken Sie im Menü **Extras** auf **Optionen**.  
-  
-2. Klicken Sie auf den **Text-Editor**.  
-  
-3. Erweitern Sie zum Ändern der Option für nur eine Sprache den Ordner für diese Sprache, und wählen Sie **Allgemein** aus.  
-  
-     – oder –  
-  
-     Erweitern Sie zum Ändern der Option für alle Sprachen den Ordner **Alle Sprachen**, und wählen Sie **Allgemein** aus.  
-  
-4. Wählen Sie unter **Anzeige** **Einfaches Klicken für URLs aktivieren** aus.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Anpassen des Editors](../../ide/customizing-the-editor.md)   
- [Text-Editor-Optionen (Dialogfeld)](../../ide/reference/text-editor-options-dialog-box.md)   
- [Schreiben von Code](../../ide/writing-code-in-the-code-and-text-editor.md)
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="procedure"></a>Prozedur
+
+#### <a name="to-display-urls-as-links"></a>So zeigen Sie URLs als Links an
+
+1. Klicken Sie im Menü **Extras** auf **Optionen**.
+
+2. Klicken Sie auf den **Text-Editor**.
+
+3. Erweitern Sie zum Ändern der Option für nur eine Sprache den Ordner für diese Sprache, und wählen Sie **Allgemein** aus.
+
+     – oder –
+
+     Erweitern Sie zum Ändern der Option für alle Sprachen den Ordner **Alle Sprachen**, und wählen Sie **Allgemein** aus.
+
+4. Wählen Sie unter **Anzeige** **Einfaches Klicken für URLs aktivieren** aus.
+
+## <a name="see-also"></a>Siehe auch
+ [Anpassen des Editor](../../ide/customizing-the-editor.md) -Dialog Felds " [Text-Editor-Optionen](../../ide/reference/text-editor-options-dialog-box.md) " Schreiben von [Code](../../ide/writing-code-in-the-code-and-text-editor.md)

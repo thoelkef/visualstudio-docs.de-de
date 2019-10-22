@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::AddApplication | Microsoft-Dokumentation
+title: 'Imachinedebugmanager:: addapplikation | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96c1b865c722a3cceab331b81b1204ee682b911f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54ff617ac96c0eb3498b796d4f7fe49f95e1cc96
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977847"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573968"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
-Fügt eine Anwendung in der ausgeführten Anwendungsliste.  
+Fügt der Liste der laufenden Anwendungen eine Anwendung hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parameter  
  `pda`  
- [in] Anwendung in der ausgeführten Anwendungsliste.  
+ in Anwendung in der Liste der laufenden Anwendungen.  
   
  `pdwAppCookie`  
- [out] Ein Cookie, das verwendet wird, um die Anwendung von computerbasierten Debug-Manager zu entfernen.  
+ vorgenommen Ein Cookie, das verwendet wird, um die Anwendung aus dem Machine Debug-Manager zu entfernen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,9 +51,9 @@ HRESULT AddApplication(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird aufgerufen, indem Sie den prozessbasierten debugmanager immer `IProcessDebugManager::AddApplication` aufgerufen wird.  
+ Diese Methode wird vom Process Debug Manager aufgerufen, wenn `IProcessDebugManager::AddApplication` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IMachineDebugManager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)   
- [IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
+ [Imachinedebugmanager-Schnittstelle](../../winscript/reference/imachinedebugmanager-interface.md)    
+ [Imachinedebugmanager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md) -   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

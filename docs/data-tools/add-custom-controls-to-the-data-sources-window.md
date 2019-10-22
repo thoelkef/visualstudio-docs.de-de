@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b81bd3237f3eb2aa9a4c096ddfeae2c7bcd08c09
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980551"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648918"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 
@@ -39,7 +39,7 @@ Zum Hinzufügen oder Entfernen von Steuerelementen aus der Liste der verfügbare
 2. Klicken Sie im Fenster **Datenquellen** auf ein Element, das Teil einer Datenquelle ist, die Sie dem-Fenster hinzugefügt haben, und klicken Sie dann auf das Dropdown Menü für das Element.
 
    > [!TIP]
-   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es, indem Sie**andere Windows** > -**Datenquellen** **anzeigen** > auswählen.
+   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es, indem Sie  > **anderen Windows**  > **Datenquellen** **anzeigen** auswählen.
 
 3. Klicken Sie im Dropdown Menü auf **Anpassen**. Eines der folgenden Dialogfelder wird geöffnet:
 
@@ -58,7 +58,7 @@ Zum Hinzufügen oder Entfernen von Steuerelementen aus der Liste der verfügbare
 5. Wählen Sie im Feld zugeordnete Steuer **Elemente** die einzelnen Steuerelemente aus, die für den ausgewählten Datentyp verfügbar sein sollen, oder deaktivieren Sie die Auswahl aller Steuerelemente, die Sie aus der Liste entfernen möchten.
 
     > [!NOTE]
-    > Wenn das Steuerelement, das Sie auswählen möchten, nicht im Feld zugeordnete Steuer **Elemente** angezeigt wird, müssen Sie das Steuerelement der Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen](#add-associated-controls)von zugeordneten Steuerelementen.
+    > Wenn das Steuerelement, das Sie auswählen möchten, nicht im Feld zugeordnete Steuer **Elemente** angezeigt wird, müssen Sie das Steuerelement der Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von zugeordneten Steuerelementen](#add-associated-controls).
 
 6. Klicken Sie auf **OK**.
 
@@ -78,9 +78,9 @@ So fügen Sie der Liste der zugeordneten Steuerelemente Steuerelemente hinzu:
 
     |Attribut|Beschreibung|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) von Daten anzeigen, <xref:System.Windows.Forms.TextBox>z. b.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, <xref:System.Windows.Forms.DataGridView>z. b.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, aber auch eine einzelne Spalte oder Eigenschaft, z. b <xref:System.Windows.Forms.ComboBox>. eine, darstellen müssen.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, die eine einzelne Spalte (oder Eigenschaft) von Daten anzeigen, z. b. eine <xref:System.Windows.Forms.TextBox>.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, z. b. eine <xref:System.Windows.Forms.DataGridView>.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, die Listen (oder Tabellen) von Daten anzeigen, aber auch eine einzelne Spalte oder Eigenschaft, z. b. eine <xref:System.Windows.Forms.ComboBox>, darstellen müssen.|
 
 2. Öffnen Sie für Windows Forms im Dialogfeld **Optionen** die Seite **Anpassung der Daten Benutzeroberfläche** . Oder öffnen Sie für WPF das Dialogfeld **Steuerelement Bindung anpassen** . Weitere Informationen finden Sie unter [Anpassen der Liste der bindbaren Steuerelemente für einen-Datentyp](#customize-the-bindable-controls-list).
 

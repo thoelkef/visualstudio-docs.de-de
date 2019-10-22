@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::QueryAlive | Microsoft-Dokumentation
+title: 'Iremotedebuapplication:: queryalive | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db17bd017b2fc1e1ca52ba8801eb1d197c4b3de7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3edc4fc007a2372c429b0bbece394cb1c30a2770
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944196"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577473"
 ---
 # <a name="iremotedebugapplicationqueryalive"></a>IRemoteDebugApplication::QueryAlive
-Gibt an, wenn die Anwendung reaktionsfähig ist.  
+Gibt an, ob die Anwendung reaktionsfähig ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT QueryAlive();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,9 +44,9 @@ HRESULT QueryAlive();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt an, ob die Anwendung reaktionsfähig ist. Implementierungen dieser Methode sollte immer zurückgeben `S_OK`.  
+ Diese Methode gibt an, ob die Anwendung reaktionsfähig ist. Implementierungen dieser Methode sollten immer `S_OK` zurückgeben.  
   
- Wenn der Anwendungsprozess unerwartet beendet wird, wird ein Fehler COM aus dem marshalling Proxy für die Aufrufe dieser Methode zurückgegeben.  
+ Wenn der Anwendungsprozess unerwartet beendet wird, gibt com einen Fehler vom Marshalling-Proxy für Aufrufe dieser Methode zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

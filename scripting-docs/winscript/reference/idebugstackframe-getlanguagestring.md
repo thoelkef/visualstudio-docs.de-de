@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString | Microsoft-Dokumentation
+title: 'Idebugstackframe:: getlanguagestring | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab0c0ab317754305ca2440748dd680e31750d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83abb038cd8bc018d84cd0c5ddd2a413f8a02248
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934668"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576758"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Gibt eine kurze oder lange Text Beschreibung der Sprache zurück.  
+Gibt eine kurze oder lange Textbeschreibung der Sprache zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>Parameter  
  `fLong`  
- [in] Flag, in denen `TRUE` gibt eine lange Beschreibung und `FALSE` gibt eine kurze Beschreibung zurück.  
+ in Flag, bei dem `TRUE` eine lange Beschreibung zurückgibt und `FALSE` eine kurze Beschreibung zurückgibt.  
   
  `pbstrLanguage`  
- [out] Die Beschreibung der Sprache.  
+ vorgenommen Die Beschreibung der Sprache.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,7 +51,7 @@ HRESULT GetLanguageString(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- In der Regel, wenn `fLong` ist `FALSE`, diese Methode bietet nur den Namen der Sprache, die dem Stapelrahmen zugeordnet. Wenn `fLong` ist `TRUE`, diese Methode kann eine vollständige produktbeschreibung bereit.  
+ Wenn `fLong` `FALSE` ist, stellt diese Methode in der Regel nur den Namen der Sprache bereit, die dem Stapel Rahmen zugeordnet ist. Wenn `fLong` `TRUE` ist, kann diese Methode eine vollständige Produktbeschreibung bereitstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame-Schnittstelle](../../winscript/reference/idebugstackframe-interface.md)

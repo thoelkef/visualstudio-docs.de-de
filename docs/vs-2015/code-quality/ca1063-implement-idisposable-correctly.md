@@ -1,5 +1,5 @@
 ---
-title: 'CA1063: IDisposable korrekt implementieren | Microsoft-Dokumentation'
+title: 'CA1063: iverwerfkorrekt implementieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,76 +12,76 @@ helpviewer_keywords:
 - ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820879"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663636"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- `IDisposable` ist nicht ordnungsgemäß implementiert werden. Einige Ursachen dieses Problems sind hier aufgeführt:
+ `IDisposable` ist nicht ordnungsgemäß implementiert. Einige Gründe für dieses Problem sind hier aufgeführt:
 
-- "IDisposable" ist neu in der Klasse implementiert.
+- Iverwerfist in der-Klasse neu implementiert.
 
-- Finalize-erneut überschrieben wird.
+- Finalize wird erneut überschrieben.
 
-- Dispose wird überschrieben.
+- Verwerfen wird überschrieben.
 
-- Dispose() ist nicht öffentlich, versiegelt oder mit dem Namen Dispose.
+- Verwerfen () ist nicht öffentlich, versiegelt oder benannt.
 
-- Dispose(bool) ist nicht geschützten, virtuellen oder unversiegelte.
+- Verwerfen (bool) ist nicht geschützt, virtuell oder nicht versiegelt.
 
-- Nicht versiegelte Typen muss Dispose(true) Dispose() aufrufen.
+- Bei nicht versiegelten Typen muss verwerfen () "verwerfen (true)" aufgerufen werden.
 
-- Für nicht versiegelte Typen aufrufen die Finalize-Implementierung nicht eine oder beide Dispose(bool) oder den Basisklassen-Finalizer.
+- Bei nicht versiegelten Typen Ruft die Finalize-Implementierung weder den Löschvorgang (bool) noch den Case-Klassen-Finalizer auf.
 
-  Verstoß gegen eine der folgenden Muster wird diese Warnung ausgelöst.
+  Eine Verletzung eines dieser Muster löst diese Warnung aus.
 
-  Jeder unversiegelte "IDisposable"-Typ muss es sich um eine eigene geschützte virtuelle "void" Dispose(bool)"-Methode bereitstellen. Dispose() sollten Dispose(true) aufrufen und Finalize Dispose(false) sollten aufrufen kann. Wenn Sie einen unversiegelte "IDisposable"-Typ erstellen, müssen Sie Dispose(bool) definieren und aufrufen. Weitere Informationen finden Sie unter [Bereinigen von nicht verwalteten Ressourcen](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) in die [Framework-Entwurfsrichtlinien](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) Abschnitt der .NET Framework-Dokumentation.
+  Alle nicht versiegelten root-iverwerf-Typen müssen eine eigene geschützte Methode für die virtuelle void-Freigabe (bool) bereitstellen. Verwerfen () sollte "verwerfen (true)" und "Finalize" den Befehl "verwerfen (false)" aufzurufen. Wenn Sie einen nicht versiegelten Stamm-iverwerf-Typ erstellen, müssen Sie verwerfen (bool) definieren und ihn anrufen. Weitere Informationen finden Sie im Abschnitt zum [Bereinigen nicht verwalteter Ressourcen](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) im Abschnitt [Framework-Entwurfs Richtlinien](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) in der .NET Framework-Dokumentation.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Alle IDisposable-Typen müssen das Dispose-Muster korrekt implementieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Überprüfen Sie den Code, und bestimmen Sie, welche der folgenden Lösungen diese Verletzung behoben werden.
+ Überprüfen Sie den Code, und legen Sie fest, welche der folgenden Auflösungen diese Verletzung beheben soll.
 
-- Entfernen Sie IDisposable aus der Liste der Schnittstellen, die von implementiert werden {0} und überschreiben Sie stattdessen die Dispose-Implementierung der Basisklasse.
+- Entfernen Sie iverwerfaus der Liste der Schnittstellen, die von {0} implementiert werden, und überschreiben Sie stattdessen die b-Implementierung der Basisklasse.
 
-- Entfernen Sie den Finalizer von Typ {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Finalize-Logik in dem Codepfad, in dem "disposing" "false".
+- Entfernen Sie den Finalizer aus dem Typ {0}, überschreiben Sie verwerfen (bool disposing), und platzieren Sie die finalisierungslogik in den Codepfad, in dem "disposing" "false" ist.
 
-- Entfernen Sie {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Dispose-Logik in dem Codepfad, in dem "disposing" "true".
+- Entfernen Sie {0}, überschreiben Sie verwerfen (bool disposing), und platzieren Sie die Lösch Logik in den Codepfad, in dem "disposing" "true" ist.
 
-- Sicherstellen, dass {0} als öffentlich deklariert und versiegelt.
+- Stellen Sie sicher, dass {0} als öffentlich und versiegelt deklariert ist.
 
-- Benennen Sie {0} in "Dispose", und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
+- Benennen Sie {0} in "verwerfen" um, und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
 
-- Stellen Sie sicher, dass {0} deklariert, wie Sie geschützt haben, virtuelle und nicht versiegelt ist.
+- Stellen Sie sicher, dass {0} als "Protected", "Virtual" und "unsealed" deklariert ist.
 
-- Ändern Sie {0} , damit es Dispose(true) aufruft, ruft dann die GC. SuppressFinalize in der aktuellen Objektinstanz aufgerufen ("this" oder "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), und gibt dann zurück.
+- Ändern Sie {0} so, dass verwerfen (true) aufgerufen und dann GC aufgerufen wird. SuppressFinalize auf der aktuellen Objektinstanz ("This" oder "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) und gibt dann zurück.
 
-- Ändern Sie {0} so, dass Dispose(false) aufgerufen und gibt dann zurück.
+- Ändern Sie {0}, sodass Sie verwerfen (false) aufruft und dann zurückgibt.
 
-- Wenn Sie eine unversiegelte "IDisposable"-Klasse schreiben, stellen Sie sicher, dass die Implementierung der "IDisposable" dem Muster folgt, das weiter oben in diesem Abschnitt beschrieben wird.
+- Wenn Sie eine nicht versiegelte iverwerf-Stamm Klasse schreiben, stellen Sie sicher, dass die Implementierung von iverwerfdas Muster befolgt, das weiter oben in diesem Abschnitt beschrieben wird.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="pseudo-code-example"></a>Pseudocodebeispiel
- Der folgende Pseudocode stellt ein allgemeines Beispiel wie Dispose(bool) implementiert werden sollte, in eine Klasse, die verwendet die verwaltete und systemeigene Ressourcen bereit.
+ Der folgende Pseudo Code bietet ein allgemeines Beispiel dafür, wie "verwerfen (bool)" in einer Klasse implementiert werden sollte, die verwaltete und Native Ressourcen verwendet.
 
 ```
 public class Resource : IDisposable

@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::EnumExtendedMembers | Microsoft-Dokumentation
+title: 'Idebugextendecodproperty:: enumextenenddmembers | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7e14d1bc8937221960d938f1bbfae8e307830f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6fd225be9504254965eab77b912f50fb5c777e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946144"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576392"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
-Listet die Member einer erweiterten Eigenschaft.  
+Listet die Member einer erweiterten Eigenschaft auf.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,18 +39,18 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Parameter  
  `dwFieldSpec`  
- [in] Gibt an, dass die EX_DBGPROP_INFO_FLAGS-Konstanten, die bestimmen, dass die Felder in den aufgelisteten Strukturen der Debug-Eigenschaft, die erweitert werden, gefüllt werden soll.  
+ in Gibt die EX_DBGPROP_INFO_FLAGS Konstanten an, die die Felder in den aufgelisteten erweiterten Debug-Eigenschafts Strukturen bestimmen, die ausgefüllt werden sollen.  
   
  `nRadix`  
- [in] Die Basis zum Interpretieren von numerische Informationen verwendet werden.  
+ in Radix, das zum Interpretieren numerischer Informationen verwendet werden soll.  
   
  `ppeepi`  
- [out] Gibt die `IEnumDebugExtendedPropertyInfo` -Schnittstelle, die die Elementeigenschaften zählt.  
+ vorgenommen Gibt die `IEnumDebugExtendedPropertyInfo`-Schnittstelle zurück, die die Element Eigenschaften auflistet.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugExtendedProperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+ [Idebugextendecodproperty-Schnittstelle](../../winscript/reference/idebugextendedproperty-interface.md)    
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [ExtendedDebugPropertyInfo-Struktur](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

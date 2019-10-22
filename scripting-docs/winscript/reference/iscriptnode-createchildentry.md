@@ -1,5 +1,5 @@
 ---
-title: 'IScriptNode:: CreateChildEntry | Microsoft-Dokumentation'
+title: 'Iscriptnode:: kreatechildentry | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75369df719b0cd140ce621e916215eb18cf30a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c58ff83c43a1418e6fb7bd8945afa181af60c68a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787618"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573616"
 ---
-# <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-Fügt eine untergeordnete Instanz `IScriptEntry`.  
+# <a name="iscriptnode-createchildentry"></a>IScriptNode::CreateChildEntry
+Fügt eine untergeordnete Instanz von `IScriptEntry` hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,28 +40,28 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>Parameter  
  `isn`  
- [in] Der Index des untergeordneten Elements im übergeordneten Element.  
+ in Der Index des untergeordneten Elements in der übergeordneten.  
   
  `dwCookie`  
- [in] Einer der Anwendung definierter Wert verwendet, das Hostobjekt, das die untergeordneten Eintrag zugeordnet werden soll.  
+ in Ein von der Anwendung definierter Wert, der verwendet wird, um den untergeordneten Eintrag dem Host Objekt zuzuordnen.  
   
  `pszDelimiter`  
- [in] Die Adresse des Trennzeichens Ende-des-Skript-Block. Für die Analyse verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Skriptblocks zu erkennen.  
+ in Die Adresse des Trenn Zeichens für das Ende des Skript Blocks. Zum Auswerten verwendet der Host normalerweise ein Trennzeichen (z. b. zwei einfache Anführungszeichen), um das Ende des Skript Blocks zu erkennen.  
   
- Das Trennzeichen kann das Skript-Engine zum Bereitstellen der vorverarbeitung zu erstellen. Beispielsweise kann die Engine ein einfaches Anführungszeichen durch zwei einfache Anführungszeichen für die Verwendung als Trennzeichen ersetzen. Die Engine bestimmt, wie das Trennzeichen verwendet wird.  
+ Das Trennzeichen ermöglicht der Skript Erstellungs-Engine, eine Vorverarbeitung bereitzustellen. Beispielsweise kann die Engine ein einzelnes Anführungszeichen durch zwei einfache Anführungszeichen ersetzen, die als Trennzeichen verwendet werden sollen. Die Engine bestimmt, wie das Trennzeichen verwendet wird.  
   
- Auf NULL festgelegt, wenn ein Trennzeichen nicht das Ende des Skriptblocks markiert.  
+ Auf NULL festgelegt, wenn ein Trennzeichen das Ende des Skript Blocks nicht markiert.  
   
  `ppse`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptEntry` Schnittstelle die untergeordnete Instanz.  
+ vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptEntry`-Schnittstelle der untergeordneten Instanz empfängt.  
   
- Für `IScriptNode` Objekte, die eine Webseite darstellen, gibt dieser Parameter ein `IScriptEntry` Instanz, die einen Skriptblock angibt.  
+ Bei `IScriptNode` Objekten, die eine Webseite darstellen, gibt dieser Parameter eine `IScriptEntry` Instanz zurück, die einen Skriptblock angibt.  
   
- Für `IScriptEntry` darstellende – Objekte einen Skriptblock, gibt dieser Parameter ein `IScriptEntry` -Instanz, ein Funktionsobjekt angibt.  
+ Bei `IScriptEntry` Objekten, die einen Skriptblock darstellen, gibt dieser Parameter eine `IScriptEntry` Instanz zurück, die ein Funktions Objekt angibt.  
   
- Für `IScriptEntry` eine Funktion darstellende – Objekte Objekt, das diese Methode schlägt fehl.  
+ Bei `IScriptEntry` Objekten, die ein Funktions Objekt darstellen, schlägt diese Methode fehl.  
   
- Für `IScriptScriptlet` Objekten, die diese Methode schlägt fehl.  
+ Bei `IScriptScriptlet`-Objekten schlägt diese Methode fehl.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -71,8 +71,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `IScriptNode` Schnittstelle darstellt, einer Webseite oder seiner Elemente. Die `IScriptEntry` Schnittstelle (abgeleitet von `IScriptNode`) stellt entweder ein Skriptblock oder ein Funktionsobjekt. Die `IScriptScriptlet` Schnittstelle (abgeleitet von `IScriptEntry`) stellt einen Ereignishandler dar.  
+ Die `IScriptNode`-Schnittstelle stellt eine Webseite oder deren Elemente dar. Die `IScriptEntry`-Schnittstelle (die von `IScriptNode` abgeleitet ist) stellt entweder einen Skriptblock oder ein Funktions Objekt dar. Die `IScriptScriptlet`-Schnittstelle (die von `IScriptEntry` abgeleitet ist) stellt einen Ereignishandler dar.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)   
+ [Iscriptnode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)    
  [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

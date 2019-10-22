@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierte Ansichten von Daten im Debugger | Microsoft-Dokumentation
+title: Erstellen benutzerdefinierter Ansichten von Daten im Debugger | Microsoft-Dokumentation
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,24 +19,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929993"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569001"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Erstellen benutzerdefinierte Ansichten von Daten in Visual Studio-Debugger (C#, Visual Basic C++)
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Erstellen benutzerdefinierter Ansichten von Daten im Visual Studio-DebuggerC#(, Visual Basic C++,)
 
-Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger bietet viele Tools zum Überprüfen und ändern den Zustand des Programms. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.
+Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger stellt viele Tools zum Überprüfen und Ändern des Programmstatus bereit. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.
 
-## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Erstellen Sie benutzerdefinierter Ansichten von Daten im Variablenfenster und DataTips
+## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Erstellen benutzerdefinierter Ansichten von Daten in Variablen Fenstern und DataTips
 
- Viele der [Debuggerfenster](../debugger/debugger-windows.md), z. B. die **"Auto"** und **Überwachen** Windows ermöglichen es Ihnen, Variablen untersuchen. Sie können anpassen, wie C++ Typen, verwaltete Objekte und Ihre eigenen Typen werden angezeigt, in den Variablenfenstern des Debuggers und im [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Weitere Informationen finden Sie unter [Erstellen benutzerdefinierter Ansichten von C++ Objekte](../debugger/create-custom-views-of-native-objects.md) und [erstellen benutzerdefinierte Ansichten von Objekten](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Viele der [Debuggerfenster](../debugger/debugger-windows.md), wie z. b. die Fenster **Auto und** **Watch** , ermöglichen es Ihnen, Variablen zu überprüfen. Sie können anpassen, C++ wie Typen, verwaltete Objekte und eigene Typen in den Variablen Fenstern des Debuggers und in [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)angezeigt werden. Weitere Informationen finden Sie unter [Erstellen benutzerdefinierter Ansichten C++ von Objekten](../debugger/create-custom-views-of-native-objects.md) und [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Erstellen benutzerdefinierter Schnellansichten
 
- Schnellansichten können Sie den Inhalt eines Objekts oder der Variable auf sinnvolle Weise anzeigen. In der Visual Studio-Debugger von eine Schnellansicht, bezieht sich auf die anderen Fenster, die Sie öffnen können, verwenden das Lupensymbol ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Schnellansicht Symbol") Symbol. Beispielsweise zeigt der HTML-Schnellansicht, wie eine HTML-Zeichenfolge interpretiert und in einem Browser angezeigt werden sollen. Sie können Schnellansichten sind über DataTips, die **Watch** Fenster der **"Auto"** Fenster und die **"lokal"** Fenster. Die **Schnellüberwachung** Dialogfeld enthält außerdem eine Schnellansicht. Weitere Informationen finden Sie unter [Create Custom Visualizers (Erstellen benutzerdefinierter Schnellansichten)](../debugger/create-custom-visualizers-of-data.md).
+ Visualisierungen ermöglichen es Ihnen, den Inhalt eines Objekts oder einer Variablen auf sinnvolle Weise anzuzeigen. Im Visual Studio-Debugger bezieht sich eine Schnellansicht auf die unterschiedlichen Fenster, die Sie mit dem Symbol "Lupe" ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol "Schnellansicht"") öffnen können. Die HTML-Schnellansicht zeigt z. b., wie eine HTML-Zeichenfolge interpretiert und in einem Browser angezeigt wird. Sie können auf Visualisierungen über DataTips, das Fenster über **Wachen** **, das Fenster** Auto **und das Fenster** lokal zugreifen. Das Dialogfeld **schnell Überwachung** bietet auch eine Schnellansicht. Weitere Informationen finden Sie unter [Create Custom Visualizers (Erstellen benutzerdefinierter Schnellansichten)](../debugger/create-custom-visualizers-of-data.md).
 
 ## <a name="see-also"></a>Siehe auch
 

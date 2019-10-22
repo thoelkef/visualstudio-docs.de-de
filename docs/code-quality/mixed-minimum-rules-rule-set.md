@@ -3,17 +3,17 @@ title: Regelsatz für gemischte Mindestregeln
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a83a9619084feb3346f5fe421530227a2cca7f9
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 37c72b9526e667216a6791470353ce78132c2a0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585295"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649235"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 
@@ -71,7 +71,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|
 |[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|
 |[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|
-|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die Eigenschaft "NeedsRelease" darf nicht für Werte des void-Typs verwendet werden.|
+|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|
 |[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|
 |[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|
 |[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|
@@ -86,13 +86,13 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C28182](../code-quality/c28182.md)|Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.|
 |[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
 |[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|
-|[C28205](../code-quality/c28205.md)|\_Erfolg\_ oder \_bei\_fehlgeschlagenerVerwendunginunzulässigemKontext\_|
+|[C28205](../code-quality/c28205.md)|\_Success \_ oder \_On \_failure \_ in unzulässigem Kontext verwendet|
 |[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|
 |[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|
 |[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|
 |[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|
 |[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|
-|[C28213](../code-quality/c28213.md)|Die \_Anmerkung\_use decl\_Anmerkungen\_ muss verwendet werden, um eine vorherige Deklaration ohne Änderung zu verweisen.|
+|[C28213](../code-quality/c28213.md)|Die \_Use \_decl \_annotations \_ Anmerkung muss verwendet werden, um eine vorherige Deklaration ohne Änderung zu verweisen.|
 |[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
@@ -134,7 +134,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|
 |[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|
 |[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|
-|[C28275](../code-quality/c28275.md)|Der Parameter für \_den\_Makro\_ Wert ist NULL.|
+|[C28275](../code-quality/c28275.md)|Der Parameter zum \_Macro \_value \_ NULL ist.|
 |[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|
 |[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|
 |[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|
@@ -142,7 +142,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
 |[C28287](../code-quality/c28287.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)|
 |[C28288](../code-quality/c28288.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)|
-|[C28289](../code-quality/c28289.md)|For-Funktion: "Read ableto" oder "Write tableto" enthielt keine Limit-Spezifikation als Parameter.|
+|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|
 |[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
 |[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
 |[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|
@@ -153,7 +153,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, C++ den 
 |[C28305](../code-quality/c28305.md)|Fehler beim Analysieren eines Token.|
 |[C28350](../code-quality/c28350.md)|Die Anmerkung beschreibt eine Situation, die nicht bedingt anwendbar ist.|
 |[C28351](../code-quality/c28351.md)|Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Leere Finalizer entfernen.|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Verwerfbare Felder verwerfen.|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|
+|[CA1001](../code-quality/ca1001.md)|Typen, die löschbare Felder besitzen, müssen gelöscht werden können.|
+|[CA1821](../code-quality/ca1821.md)|Leere Finalizer entfernen.|
+|[CA2213](../code-quality/ca2213.md)|Verwerfbare Felder verwerfen.|
+|[CA2231](../code-quality/ca2231.md)|Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.|

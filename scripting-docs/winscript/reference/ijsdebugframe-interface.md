@@ -1,5 +1,5 @@
 ---
-title: IJsDebugFrame-Schnittstelle | Microsoft-Dokumentation
+title: Ijsdebugframe-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f5a848967148705a2b8dcd3f6b75dcb3a5db26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91fe8cdf91b0c2121f4a1a7f111794b0fbe36669
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558002"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575105"
 ---
 # <a name="ijsdebugframe-interface"></a>IJsDebugFrame-Schnittstelle
 Stellt einen Stapelrahmen dar.  
@@ -31,7 +31,7 @@ IJsDebugFrame : public IUnknown;
   
 ### <a name="public-methods"></a>Öffentliche Methoden  
   
-|Name|Beschreibung|  
+|-Name|Beschreibung|  
 |----------|-----------------|  
 |[IJsDebugFrame::Evaluate-Methode](../../winscript/reference/ijsdebugframe-evaluate-method.md)|Werten Sie einen Ausdruck im Kontext dieses Stapelrahmens aus.|  
 |[IJsDebugFrame::GetDebugProperty-Methode](../../winscript/reference/ijsdebugframe-getdebugproperty-method.md)|Gibt einen Eigenschaftenbrowser für diesen Stapelrahmen zurück.|  
@@ -42,7 +42,7 @@ IJsDebugFrame : public IUnknown;
 |[IJsDebugFrame::GetStackRange-Methode](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Gibt den Bereich der absoluten Adresse des logischen JavaScript-Stapelrahmens zurück.|  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)

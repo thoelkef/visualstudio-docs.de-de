@@ -1,5 +1,5 @@
 ---
-title: Windows Forms-Steuerelementen an Daten binden | Microsoft-Dokumentation
+title: Binden von Windows Forms-Steuerelementen an Daten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -16,51 +16,51 @@ helpviewer_keywords:
 - data [Windows Forms], displaying
 ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3cf93d96594b65b06670567e8c23cd83ccb7f1ab
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439470"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672978"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Binden von Windows Forms-Steuerelementen an Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Datenquellen an Steuerelemente binden, durch Ziehen von Objekten aus der **Datenquellen** Fenster auf ein Windows-Formular oder auf ein vorhandenes Steuerelement in einem Formular. Bevor Sie Elemente ziehen, können Sie den Typ des Steuerelements festlegen, die, denen Sie binden möchten. Je nachdem, ob Sie in der Tabelle selbst oder eine einzelne Spalte auswählen, werden unterschiedliche Werte angezeigt.  Sie können auch benutzerdefinierte Werte festlegen. Für eine Tabelle bedeutet "Details" an, dass jede Spalte an einem separaten Steuerelement gebunden ist.  
-  
- ![Binden Sie die Datenquelle an DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "Raddata Bind-DataSource zu DataGridView")  
-  
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
-  
-## <a name="bind-to--data-in-a-datagridview-control"></a>Binden Sie an Daten in einem DataGridView-Steuerelement  
- Für DataGridView wird die gesamte Tabelle auf dieses einzelne Steuerelement gebunden. Wenn Sie ein DataGridView-Steuerelement auf das Formular ziehen, wird ein Tool für die Navigation in Datensätzen entfernen (<xref:System.Windows.Forms.BindingNavigator>) wird ebenfalls angezeigt. Ein [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt. In der folgenden Abbildung wird ein TableAdapterManager ebenfalls hinzugefügt, da die Customers-Tabelle eine Beziehung zu der Orders-Tabelle hat. Diese Variablen werden in den automatisch generierten Code als Private Member in der Form-Klasse deklariert. Die automatisch generierten Code für das Ausfüllen der DataGridView befindet sich in den Form_load-Ereignishandler. Der Code zum Speichern der Daten zum Aktualisieren der Datenbank befindet sich in der Save-Ereignishandler für das BindingNavigator. Sie können verschieben oder diesen Code nach Bedarf ändern.  
-  
- ![GridView mit BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "Raddata GridView mit BindingNavigator")  
-  
- Sie können das Verhalten der DataGridView-Steuerelement und der BindingNavigator anpassen, indem Sie durch Klicken auf das Smarttag, in der oberen rechten Ecke der einzelnen:  
-  
- ![DataGridView-Steuerelement und Bindung Navigator Smarttags](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "Raddata DataGridView und Bindung Navigator-Smarttags")  
-  
- Wenn die Steuerelemente die Anwendung muss nicht in verfügbar sind die **Datenquellen** Fenster können Sie Steuerelemente hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
-  
- Sie können Elemente auch ziehen die **Datenquellen** auf Steuerelemente, die bereits in einem Formular das Steuerelement an Daten gebunden. Ein Steuerelement, das bereits an Daten gebunden ist, hat seine Daten, die Bindungen auf das Element zuletzt gezogen zurückgesetzt. Um gültige Ablageziele sein, müssen der Steuerelemente zum Anzeigen von der zugrunde liegenden Datentyp des Element gezogene auf ihn von der Lage sein den **Datenquellen** Fenster. Es ist z. B. nicht zulässig, ein Element zu ziehen, die den Datentyp <xref:System.DateTime> auf eine <xref:System.Windows.Forms.CheckBox>, da die <xref:System.Windows.Forms.CheckBox> kann keine Datum anzeigen.  
-  
-## <a name="bind-to--data-in-individual-controls"></a>Binden Sie an Daten in einzelnen Steuerelementen  
- Wenn Sie auf "Details" eine Datenquelle binden, ist jede Spalte im Dataset an einem separaten Steuerelement gebunden.  
-  
- ![Binden Sie die Datenquelle zu Details](../data-tools/media/raddata-bind-data-source-to-details.png "Raddata Bind-DataSource zu Details")  
-  
+Sie können Datenquellen an Steuerelemente binden, indem Sie Objekte aus dem **Datenquellen** Fenster auf ein Windows Form oder auf ein vorhandenes Steuerelement in einem Formular ziehen. Vor dem Ziehen von Elementen können Sie den Steuer Elementtyp festlegen, an den die Bindung erfolgen soll. Abhängig davon, ob Sie die Tabelle selbst oder eine einzelne Spalte auswählen, werden unterschiedliche Werte angezeigt.  Sie können auch benutzerdefinierte Werte festlegen. Für eine Tabelle bedeutet "Details", dass jede Spalte an ein separates Steuerelement gebunden ist.
+
+ ![Datenquelle an DataGridView binden](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata-Datenquelle an DataGridView binden")
+
+ [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
+
+## <a name="bind-to--data-in-a-datagridview-control"></a>Binden an Daten in einem DataGridView-Steuerelement
+ Für DataGridView ist die gesamte Tabelle an dieses einzelne Steuerelement gebunden. Wenn Sie ein DataGridView-Steuerelemente auf das Formular ziehen, wird auch eine Tool Leiste zum Navigieren in Datensätzen (<xref:System.Windows.Forms.BindingNavigator>) angezeigt. Ein [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponenten Leiste angezeigt. In der folgenden Abbildung wird auch ein TableAdapterManager hinzugefügt, da die Customers-Tabelle eine Beziehung zur Orders-Tabelle aufweist. Diese Variablen werden alle im automatisch generierten Code als private Member in der Formular Klasse deklariert. Der automatisch generierte Code zum Auffüllen der DataGridView befindet sich im Form_Load-Ereignishandler. Der Code zum Speichern der Daten zum Aktualisieren der Datenbank befindet sich im Speicher Ereignishandler für BindingNavigator. Sie können diesen Code nach Bedarf verschieben oder ändern.
+
+ ![GridView mit BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata-GridView mit BindingNavigator")
+
+ Sie können das Verhalten von DataGridView und BindingNavigator anpassen, indem Sie in der rechten oberen Ecke auf das smarttagtag klicken:
+
+ ![Smarttags DataGridView und Binding Navigator](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView und Bindungs Navigator Smarttags")
+
+ Wenn die von der Anwendung benötigten Steuerelemente im **Datenquellen** Fenster nicht verfügbar sind, können Sie Steuerelemente hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellen Fenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+
+ Sie können auch Elemente aus dem **Datenquellen** Fenster auf Steuerelemente ziehen, die sich bereits in einem Formular befinden, um das Steuerelement an Daten zu binden. Ein Steuerelement, das bereits an Daten gebunden ist, setzt die Daten Bindungen auf das Element zurück, das zuletzt auf das Element gezogen wurde. Um gültige Drop-Ziele zu sein, müssen Steuerelemente in der Lage sein, den zugrunde liegenden Datentyp des Elements anzuzeigen, das aus dem **Datenquellen** Fenster auf das Element gezogen wird. Beispielsweise ist es nicht zulässig, ein Element mit dem Datentyp <xref:System.DateTime> auf einen <xref:System.Windows.Forms.CheckBox> zu ziehen, da die <xref:System.Windows.Forms.CheckBox> kein Datum anzeigen kann.
+
+## <a name="bind-to--data-in-individual-controls"></a>Binden an Daten in einzelnen Steuerelementen
+ Wenn Sie eine Datenquelle an "Details" binden, wird jede Spalte im DataSet an ein separates Steuerelement gebunden.
+
+ ![Datenquelle an Details binden](../data-tools/media/raddata-bind-data-source-to-details.png "Datenquelle für raddata an Details binden")
+
 > [!IMPORTANT]
-> Beachten Sie, dass in der vorherigen Abbildung, die Sie aus der Eigenschaft "Orders" in der Customers-Tabelle, nicht aus der Orders-Tabelle ziehen. Durch die Bindung an die Customer.Orders-Eigenschaft, werden vorgenommen, die in der DataGridView Navigationsbefehle sofort in die Detailsteuerelemente. Wenn Sie aus der Tabelle Orders gezogen haben, die Steuerelemente würde weiterhin auf das Dataset gebunden werden, aber nicht würden sie nicht mit dem DataGridView synchronisiert.  
-  
- Die folgende Abbildung zeigt die von datengebundenen Steuerelementen, die dem Formular hinzugefügt werden, nachdem die Order-Eigenschaft in der Tabelle Customers, klicken Sie auf "Details gebunden ist" in der **Datenquellen** Fenster.  
-  
- ![Tabelle "Orders" gebunden werden, um Details](../data-tools/media/raddata-orders-table-bound-to-details.png "Raddata Orders-Tabelle gebunden, um Details")  
-  
- Beachten Sie außerdem, dass für jedes Steuerelement ein Smarttag. Dieses Tag ermöglicht Anpassungen, die auf dieses Steuerelement wird nur angewendet werden.  
-  
-## <a name="see-also"></a>Siehe auch  
+> Beachten Sie, dass Sie in der vorherigen Abbildung aus der Orders-Eigenschaft der Customers-Tabelle und nicht aus der Orders-Tabelle ziehen. Durch Binden an die Customer. Orders-Eigenschaft werden die in der DataGridView vorgenommenen Navigations Befehle sofort in den Details-Steuerelementen angezeigt. Wenn Sie die Tabelle "Orders" aus der Tabelle "Orders" gezogen haben, sind die Steuerelemente weiterhin an das DataSet gebunden, aber nicht mit der DataGridView synchronisiert.
+
+ Die folgende Abbildung zeigt die standardmäßigen Daten gebundenen Steuerelemente, die dem Formular hinzugefügt werden, nachdem die Orders-Eigenschaft in der Customers-Tabelle im **Datenquellen** Fenster an "Details" gebunden ist.
+
+ ![An Details gebundene Tabelle "Orders"](../data-tools/media/raddata-orders-table-bound-to-details.png "Tabelle "raddata Orders" an Details gebunden")
+
+ Beachten Sie auch, dass jedes Steuerelement über ein Smarttag verfügt. Dieses Tag ermöglicht Anpassungen, die nur für dieses Steuerelement gelten.
+
+## <a name="see-also"></a>Siehe auch
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

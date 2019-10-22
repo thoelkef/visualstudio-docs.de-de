@@ -1,5 +1,5 @@
 ---
-title: ':: GetRootNode | Microsoft-Dokumentation'
+title: 'Iactivescriptsitedebug:: getrootapplicationnode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18e603289931115bcaac4d6bb7707b7886f506d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b19ed10178d03be0b96393ad08f1eab88ce40329
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992480"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570064"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-Ruft den Anwendungsknoten in dem Script Dokumente hinzugefügt werden soll.  
+Ruft den Anwendungs Knoten ab, unter dem Skript Dokumente hinzugefügt werden sollen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetRootApplicationNode(
   
 #### <a name="parameters"></a>Parameter  
  `ppdanRoot`  
- [out] Den Knoten der Debug-Anwendung, der Skriptdokumente enthält. Kann `NULL` sein.  
+ vorgenommen Der debuganwendungsknoten, der Skript Dokumente enthält. Kann `NULL` sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetRootApplicationNode(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Knoten der Anwendung unter dem Skriptdokumente hinzugefügt werden soll. Die Methode zurückgeben kann `NULL` für `ppdanRoot` Wenn Skriptdokumente der obersten Ebene werden soll.  
+ Diese Methode gibt den Anwendungs Knoten zurück, unter dem Skript Dokumente hinzugefügt werden sollen. Die-Methode kann `NULL` für `ppdanRoot` zurückgeben, wenn Skript Dokumente die oberste Ebene aufweisen sollen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptSiteDebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461451"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000212"
 ---
 # <a name="build-page-project-designer-c"></a>Seite "Erstellen", Projekt-Designer (C#)
 
@@ -104,17 +104,14 @@ Unterdrückt die Compilerfunktion zum Generieren einer oder mehrerer Warnungen. 
 
 Die folgenden Einstellungen werden verwendet, um anzugeben, welche Warnungen als Fehler behandelt werden. Wählen Sie eine der folgenden Optionen aus, um die Bedingungen anzugeben, unter denen beim Auftreten einer Warnung im Buildvorgang ein Fehler zurückgegeben wird. Weitere Informationen finden Sie unter [/warnaserror (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Keine**
+**Keine:** Warnungen werden nicht als Fehler behandelt.
 
-Warnungen werden nicht als Fehler behandelt.
+**Alle:** Alle Warnungen werden als Fehler behandelt.
 
-**Bestimmte Warnungen**
+**Bestimmte Warnungen:** Die angegebenen Warnungen werden als Fehler behandelt. Trennen Sie mehrere Warnungsnummern jeweils durch ein Komma oder Semikolon voneinander.
 
-Behandelt die angegebenen Warnungen als Fehler. Trennen Sie mehrere Warnungsnummern jeweils durch ein Komma oder Semikolon voneinander.
-
-**All**
-
-Behandelt alle Warnungen als Fehler.
+> [!TIP]
+> Wenn keine Warnungen der Codeanalyse als Fehler behandelt werden sollen, sehen Sie sich die [Häufig gestellten Fragen zur Codeanalyse](../../code-quality/analyzers-faq.md#treat-warnings-as-errors) an.
 
 ## <a name="output"></a>Output
 

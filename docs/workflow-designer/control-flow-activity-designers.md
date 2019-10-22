@@ -1,23 +1,23 @@
 ---
-title: Workflow-Designer - Ablaufsteuerungs-Aktivitätsdesigner
+title: Workflow-Designer-Steuerelement Fluss-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3bcbf5ee70b90a0606c7e4cb3d691d28298c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1e7d7548eef3fd6ca6a21bb8c2fe5cb23e27df1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949868"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650618"
 ---
 # <a name="control-flow-activity-designers"></a>Ablaufsteuerungsaktivitätsdesigner
 
-Workflow-Designer enthält eine Reihe von vom System bereitgestellten Aktivitäten, die Sie beim Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.
+Workflow-Designer umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie beim Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.
 
 ## <a name="reference"></a>Referenz
 
@@ -45,7 +45,7 @@ Workflow-Designer enthält eine Reihe von vom System bereitgestellten Aktivität
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-Für andere Typen von Aktivitätsdesignern finden Sie unter den folgenden Themen:
+Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folgenden Themen:
 
  [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)
 

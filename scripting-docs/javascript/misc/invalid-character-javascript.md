@@ -14,27 +14,27 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007138"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576570"
 ---
 # <a name="invalid-character-javascript"></a>Ungültiges Zeichen (JavaScript)
-Sie erstellt einen Bezeichner mit ein (oder mehrere Zeichen) nicht erkannt als gültig ist, indem die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler. Gültige Zeichen verwenden Sie die folgenden Regeln:  
+Sie haben einen Bezeichner mithilfe eines Zeichens (oder eines Zeichens) verfasst, das vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht als gültig erkannt wurde. Gültige Zeichen verwenden die folgenden Regeln:  
   
-- Das erste Zeichen muss ein ASCII-Buchstabe (Großbuchstabe oder Kleinbuchstabe) oder einem Unterstrich (_) sein.  
+- Das erste Zeichen muss ein ASCII-Buchstabe (entweder groß-oder Kleinbuchstabe) oder ein Unterstrich (_) sein.  
   
-- Nachfolgende Zeichen können es sich um ASCII-Buchstaben, Zahlen oder Unterstriche enthalten sein.  
+- Nachfolgende Zeichen können ASCII-Buchstaben, Ziffern oder Unterstriche sein.  
   
-- Der Bezeichner darf kein reserviertes Wort sein.  
+- Der Bezeichnername darf kein reserviertes Wort sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachdefinition.  
+- Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachdefinition sind.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Variablen](../../javascript/variables-javascript.md)   
- [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)   
+ [Variablen](../../javascript/variables-javascript.md)    
+ [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)    
  [Datentypen](../../javascript/data-types-javascript.md)

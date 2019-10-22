@@ -2,7 +2,7 @@
 title: Installieren von Visual Studio
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren.
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095357"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018856"
 ---
 # <a name="install-visual-studio"></a>Installieren von Visual Studio
 
@@ -82,7 +82,7 @@ Vor der Installation von Visual Studio:
 
 1. Starten Sie den Computer neu. Dadurch wird sichergestellt, dass keine ausstehenden Installationen oder Updates die Installation von Visual Studio behindern.
 
-1. Geben Sie Speicherplatz frei. Entfernen Sie nicht benötigte Dateien und Anwendungen z.B. mit der Datenträgerbereinigung-App von Ihrem %Systemlaufwerk%. 
+1. Geben Sie Speicherplatz frei. Entfernen Sie nicht benötigte Dateien und Anwendungen z.B. mit der Datenträgerbereinigung-App von Ihrem %Systemlaufwerk%.
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ Informationen zur parallelen Ausführung vorheriger Versionen von Visual Studio 
 
 ## <a name="step-2---download-visual-studio"></a>Schritt 2: Herunterladen von Visual Studio
 
-Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu diesem Zweck auf die folgende Schaltfläche, wählen Sie die gewünschte Edition von Visual Studio aus, und klicken Sie dann auf **Speichern** und **Ordner öffnen**.
+Laden Sie danach die Visual Studio-Bootstrapperdatei herunter.
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+Informationen zum Herunterladen eines Bootstrappers für Visual Studio 2017 finden Sie auf der Downloadseite für [frühere Versionen von Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Klicken Sie zu diesem Zweck auf die folgende Schaltfläche, wählen Sie die gewünschte Edition von Visual Studio aus, und klicken Sie dann auf **Speichern** und **Ordner öffnen**.
 
  > [!div class="button"]
  > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/downloads)
@@ -250,7 +251,7 @@ Weitere Informationen finden Sie auf der Seite [Auswählen der Installationspfad
 
 1. Geben Sie den Typ von App im Suchfeld ein, den Sie erstellen möchten, um eine Liste der verfügbaren Vorlagen anzuzeigen. Die Liste der Vorlagen basiert auf den Workloads, die Sie bei der Installation ausgewählt haben. Wählen Sie andere Workloads aus, um andere Vorlagen anzuzeigen.
 
-   Sie können die Suchergebnisse nach bestimmten Programmiersprachen filtern, indem Sie die Dropdownliste **Sprache** verwenden. Sie können außerdem die Listen **Plattform** und **Projekttyp** zum Filtern verwenden. 
+   Sie können die Suchergebnisse nach bestimmten Programmiersprachen filtern, indem Sie die Dropdownliste **Sprache** verwenden. Sie können außerdem die Listen **Plattform** und **Projekttyp** zum Filtern verwenden.
 
 1. Ihr neues Projekt wird dann in Visual Studio geöffnet, und Sie können damit anfangen, Code zu schreiben.
 

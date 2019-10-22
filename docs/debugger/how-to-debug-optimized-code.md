@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Debuggen von optimiertem Code | Microsoft-Dokumentation'
+title: 'Gewusst wie: Debuggen von optimiertem Code | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387748"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430660"
 ---
-# <a name="how-to-debug-optimized-code"></a>Vorgehensweise: Debuggen von optimiertem Code
+# <a name="how-to-debug-optimized-code"></a>Gewusst wie: Debuggen von optimiertem Code
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
@@ -52,7 +52,7 @@ ms.locfileid: "63387748"
 
   Globale und statische Variablen werden immer richtig angezeigt. Dies trifft auch auf das Strukturlayout zu. Wenn ein Zeiger auf eine Struktur vorhanden und der Wert des Zeigers richtig ist, zeigt jede Membervariable der Struktur den richtigen Wert an.
 
-  Aufgrund dieser Einschränkungen müssen Debugoperationen, wenn überhaupt möglich, unter Verwendung einer nicht optimierten Version des Programms erfolgen. In der Debugkonfiguration eines Visual C++-Programms ist die Optimierung standardmäßig deaktiviert, während sie in der Releasekonfiguration aktiviert ist.
+  Aufgrund dieser Einschränkungen müssen Debugoperationen, wenn überhaupt möglich, unter Verwendung einer nicht optimierten Version des Programms erfolgen. Die Optimierung wird in der Debugkonfiguration eines C++ Programms standardmäßig deaktiviert und in der Releasekonfiguration aktiviert.
 
   Ein Fehler ist jedoch nur in einer optimierten Programmversion erkennbar. In diesem Fall muss der optimierte Code gedebuggt werden.
 
@@ -74,7 +74,7 @@ ms.locfileid: "63387748"
 
 8. Wenn Sie für die `Custom` die Option `Optimization` auswählen, können Sie Optionen für alle weiteren Eigenschaften in der Eigenschaftenliste festlegen.
 
-9. Wählen Sie die Konfigurationseigenschaften, C/C++ über die Befehlszeile Knoten der Seite mit den Projekteigenschaften, und fügen `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` auf die **zusätzliche Optionen** Textfeld.
+9. Wählen Sie auf der Seite ProjekteigenschaftenC++den Knoten Konfigurations Eigenschaften, C/, Befehlszeile aus, und fügen Sie `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` dem Textfeld **zusätzliche Optionen** hinzu.
 
     > [!WARNING]
     > Für `/Zo` ist Visual Studio 2013 Update 3 oder höher erforderlich.

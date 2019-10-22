@@ -1,5 +1,5 @@
 ---
-title: "\"return\"-Anweisung ist außerhalb der Funktion | Microsoft-Dokumentation"
+title: Return-Anweisung außerhalb der Funktion | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,34 +14,34 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a90af6de8e2c238e3660111b19d13c1eaf628c9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006405"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573689"
 ---
 # <a name="return-statement-outside-of-function"></a>return-Anweisung ist außerhalb der Funktion
-Sie verwendet eine `return` -Anweisung in den globalen Bereich Ihres Codes. Die `return` Anweisung sollte nur im Text einer Funktion verwendet werden.  
+Sie haben eine `return`-Anweisung im globalen Gültigkeitsbereich Ihres Codes verwendet. Die `return`-Anweisung sollte nur im Hauptteil einer Funktion angezeigt werden.  
   
- Aufrufen einer Funktion mit dem `()` Operator ist ein Ausdruck. Alle Ausdrücke über Werte verfügen; die `return` Anweisung dient zum Angeben des Werts von einer Funktion zurückgegeben. Das allgemeine Format lautet:  
+ Das Aufrufen einer Funktion mit dem `()`-Operator ist ein Ausdruck. Alle Ausdrücke haben Werte. die `return`-Anweisung wird verwendet, um den Wert anzugeben, der von einer Funktion zurückgegeben wird. Die allgemeine Form ist:  
   
 ```js
   
 return [ expression ];  
 ```  
   
- Wenn die `return` -Anweisung wird ausgeführt, *Ausdruck* ausgewertet und als Wert für die Funktion zurückgegeben. Es ist kein Ausdruck **undefiniert** zurückgegeben wird.  
+ Wenn die `return`-Anweisung ausgeführt wird, wird *Expression* ausgewertet und als Wert der Funktion zurückgegeben. Wenn kein Ausdruck vorhanden ist, wird "nicht **definiert** " zurückgegeben.  
   
- Die Ausführung der Funktion angehalten, sobald die `return` -Anweisung ausgeführt wird, auch wenn Sie weitere Anweisungen im Hauptteil Funktion noch vorhanden sind. Die Ausnahme von dieser Regel wird Wenn die **zurückgeben** -Anweisung befindet sich in eine **versuchen Sie es** Block, und gibt es eine entsprechende **schließlich** -block, den Code in die  **zum Schluss** Block wird ausgeführt, bevor die Funktion zurückgibt.  
+ Die Ausführung der Funktion wird beendet, wenn die `return`-Anweisung ausgeführt wird, auch wenn noch andere Anweisungen im Funktions Rumpf verbleiben. Eine Ausnahme von dieser Regel ist, wenn die Return-Anweisung innerhalb eines **try** -Blocks auftritt und ein entsprechender Block "After" vorhanden ist, wird der Code **im Block "** **endlich** " ausgeführt, bevor die Funktion zurück **gegeben** wird.  
   
- Eine Funktion zurück, da das Ende des Funktionstexts ohne Ausführung erreicht eine `return` -Anweisung zurückgegebene Wert ist die **undefiniert** Wert (Dies bedeutet, dass das Ergebnis der Funktion kann nicht als Teil eines umfangreicheren Ausdrucks verwendet werden ).  
+ Wenn eine Funktion zurückgibt, weil Sie das Ende des Funktions Texts erreicht, ohne dass eine `return`-Anweisung ausgeführt wird, ist der zurückgegebene Wert der nicht **definierte** Wert (Dies bedeutet, dass das Funktionsergebnis nicht als Teil eines größeren Ausdrucks verwendet werden kann).  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Entfernen Sie die `return` Anweisung vom Hauptteil des Codes (Globaler Gültigkeitsbereich).  
+- Entfernen Sie die `return`-Anweisung aus dem Hauptteil des Codes (dem globalen Gültigkeitsbereich).  
   
 ## <a name="see-also"></a>Siehe auch  
  [return Statement („return“-Anweisung)](../../javascript/reference/return-statement-javascript.md)   
- [Function-Objekt](../../javascript/reference/function-object-javascript.md)   
+ [Funktions Objekt](../../javascript/reference/function-object-javascript.md)    
  [caller-Eigenschaft (Funktion)](../../javascript/reference/caller-property-function-javascript.md)

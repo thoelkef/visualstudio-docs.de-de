@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetParent | Microsoft-Dokumentation
+title: 'Iscriptnode:: GetParent | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c990b5ba5c3d03d319e0eeced282c92cfbb5281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58ef5f88f4404d57a7edad3590fba1d2614faec6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786855"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572555"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
-Gibt die `IScriptNode` -Objekt, das das übergeordnete Element eines Objekts ist.  
+Gibt das `IScriptNode` Objekt zurück, das dem-Objekt übergeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,11 +37,11 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Parameter  
  `ppsnParent`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptNode` Schnittstelle der übergeordneten Instanz.  
+ vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptNode`-Schnittstelle der übergeordneten Instanz empfängt.  
   
- Wenn die Klasse implementiert `IScriptEntry` oder `IScriptScriptlet`, `IScriptNode` Objekt zurückgegeben.  
+ Wenn die-Klasse `IScriptEntry` oder `IScriptScriptlet` implementiert, wird ein `IScriptNode`-Objekt zurückgegeben.  
   
- Wenn die Klasse implementiert `IScriptNode` (für eine Webseite), wird NULL zurückgegeben.  
+ Wenn die Klasse `IScriptNode` implementiert (die eine Webseite darstellt), wird NULL zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  

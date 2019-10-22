@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Visual Studio-Versionen für das Visualisierungs- und Modellierungs-SDK | Microsoft-Dokumentation
+title: Unterstützte Visual Studio-Editionen für Visualisierungs-und Modellierungs-SDK | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 ms.assetid: 7c313ba0-031d-45b8-8220-eead61754747
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8104eb9aa2d340545fb4cbfbd2e46286d953375
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89d65aab64ba82f152e2fe888ab10b88b73a7c42
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696863"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672376"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio-Editionen unterstützt, für die Datenvisualisierung &amp; Modellierungs-SDK
+# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Unterstützte Visual Studio-Editionen für die Visualisierung &amp; Modellierungs-SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Im folgenden sind Listen von Visual Studio-Editionen, die mit unterstützt werden [!INCLUDE[dsl](../includes/dsl-md.md)] in der Erstellung und Bereitstellung. Weitere Informationen zu diesen Editionen finden Sie im Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).
+Im folgenden finden Sie Listen der Visual Studio-Editionen, die mit [!INCLUDE[dsl](../includes/dsl-md.md)] in den Erstellungs-und Bereitstellungs Umgebungen unterstützt werden. Weitere Informationen zu diesen Editionen finden Sie im Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Erstellungsedition
  Zur Definition einer DSL müssen folgende Komponenten installiert sein:
@@ -39,12 +39,12 @@ Im folgenden sind Listen von Visual Studio-Editionen, die mit unterstützt werde
 
 - Visual Studio Professional
 
-- Visual Studio Shell (integrierter Modus) verteilbares Paket
+- Visual Studio Shell (integrierter Modus) verteilbares Paket Redistributable Package
 
 - Visual Studio Shell (isolierter Modus), verteilbares Paket
 
 > [!NOTE]
-> Damit wird eine DSL, die auf einem Shell-Produkt ausführen können, müssen Sie festlegen der **Visual Studio-Edition unterstützt** im Erweiterungsmanifest Feld. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
+> Damit eine DSL in einem shellprodukt ausgeführt werden kann, müssen Sie das **unterstützte vs Edition** -Feld im Erweiterungs Manifest festlegen. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Siehe auch
  [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

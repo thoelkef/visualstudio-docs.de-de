@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975793"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572271"
 ---
 # <a name="active-script-debugging-overview"></a>Debuggen mit Active Script - Übersicht
 Die Schnittstellen zum Debuggen mit Active Script ermöglichen ein sprachneutrales, hostneutrales Debuggen und unterstützen eine Vielzahl von Entwicklungsumgebungen.  
   
- ![Script Host-Prozess](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Skript Host Prozess](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Abbildung 1  
   
  Eine sprachneutrale Debugumgebung kann alle Programmiersprachen oder eine Kombination aus Programmiersprachen unterstützen, ohne dass bestimmte Kenntnisse einer dieser Sprachen erforderlich sind. Zudem unterstützt die Debugumgebung sprachübergreifendes Stepping sowie sprachübergreifende Haltepunkte. (Hauptschwerpunkt dieser Übersicht ist die Unterstützung von Skriptsprachen, wie z.B. VBScript und [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  

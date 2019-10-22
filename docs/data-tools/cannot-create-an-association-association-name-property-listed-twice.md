@@ -3,17 +3,17 @@ title: Eine Zuordnung kann nicht erstellt werden – Eigenschaft ist zweimal auf
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fcc2a7322397537c9585d0aaa2674e1d3ab3c656
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: acc2a34f8980d748df45ad8437e308c889170aba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460696"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648745"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – Eigenschaft ist zweimal aufgelistet
 
@@ -36,4 +36,4 @@ Die Eigenschaft in der Meldung wird in den **Zuordnungseigenschaften** der über
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Vorgehensweise: Erstellen Sie eine Zuordnung zwischen LINQ to SQL-Klassen (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Gewusst wie: Erstellen einer Zuordnung zwischen LINQ to SQL Klassen (O/R-Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft-Dokumentation
+title: 'Iremotedebuapplication:: resumefrombreakpoint | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5844381188cb03c99ab0a44ed9b9e0fdbab67e6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fead9c14efbe73bd006a5ff3e1cfb10ad40404b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944169"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577457"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-Wird eine Anwendung, die derzeit an einem Haltepunkt wird fortgesetzt.  
+Setzt eine Anwendung fort, die sich zurzeit in einem Breakpoint befindet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Parameter  
  `prptFocus`  
- [in] Für die schrittweise Ausführung Modi, dem Thread handelt es sich im schrittweisen Modus betroffen sind.  
+ in Für schrittweise den Thread, der durch den Schritt Modus beeinflusst werden soll.  
   
  `bra`  
- [in] Die auszuführende Aktion, durch das Fortsetzen der Anwendungs.  
+ in Die Aktion, die bei der Wiederaufnahme der Anwendung ausgeführt werden soll.  
   
  `era`  
- [in] Die Aktion, die in die Groß-/Kleinschreibung zu nutzen, die die Anwendung aufgrund eines Fehlers beendet.  
+ in Die Aktion, die ausgeführt werden soll, wenn die Anwendung aufgrund eines Fehlers beendet wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,9 +55,9 @@ HRESULT ResumeFromBreakPoint(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird eine Anwendung, die derzeit an einem Haltepunkt wird fortgesetzt.  
+ Diese Methode setzt eine Anwendung fort, die sich derzeit in einem Breakpoint befindet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)   
- [BREAKRESUMEACTION-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [Iremotedebuapplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)    
+ [Breakresumeaction-Enumeration](../../winscript/reference/breakresumeaction-enumeration.md)    
  [ERRORRESUMEACTION-Enumeration](../../winscript/reference/errorresumeaction-enumeration.md)

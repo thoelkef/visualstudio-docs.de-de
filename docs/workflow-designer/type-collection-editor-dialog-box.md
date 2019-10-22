@@ -1,29 +1,29 @@
 ---
-title: Workflow-Designer - Typauflistungs-Editor (Dialogfeld)
+title: Dialog Feld "Auflistungs-Editor für Workflow-Designer"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0a9bf604749524d76b8046d60de75d4b5844cc4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433928"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649792"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Typauflistungs-Editor (Dialogfeld)
 
-Die **Typauflistungs-Editor** Dialogfeld wird verwendet, um bekannte Typen hinzugefügt der **senden** und **Receive** Aktivitäten. Dieses Dialogfeld wird auch verwendet, um generische Typargumente hinzuzufügen der **InvokeMethod** Aktivität. Bei Verwendung für die **senden** und **Receive** Aktivitäten, die bekannte Typen hinzufügen der **Typauflistungs-Editor** Dialogfeld erfordert die typhinzufügungen hier eindeutig sein. Wenn ein doppelter Typ hinzugefügt wird, und die Änderung wird ein Commit ausgeführt, indem Sie auf **OK**, wird eine Fehlermeldung zurückgegeben. Bei Verwendung für die **InvokeMethod** Aktivität zum Hinzufügen von generischen Typargumenten, die **Typauflistungs-Editor** Dialogfeld ermöglicht das Hinzufügen doppelter Typen.
+Das Dialogfeld typauflistungs- **Editor** wird verwendet, um den **Sende** -und **Empfangs** Aktivitäten bekannte Typen hinzuzufügen. Dieses Dialogfeld wird auch verwendet, um der **InvokeMethod** -Aktivität generische Typargumente hinzuzufügen. Wenn für die **Sende** -und **Empfangs** Aktivitäten verwendet wird, um bekannte Typen hinzuzufügen, muss im Dialogfeld typauflistungs- **Editor** die typergänzungen eindeutig sein. Wenn ein doppelter Typ hinzugefügt und für die Änderung ein Commit ausgeführt wird, indem Sie auf **OK**klicken, wird eine Fehlermeldung zurückgegeben. Bei Verwendung für die **InvokeMethod** -Aktivität zum Hinzufügen von generischen Typargumenten ermöglicht das Dialogfeld typauflistungs- **Editor** das Hinzufügen doppelter Typen.
 
-Weitere Informationen finden Sie unter [bekannte Typen in Datenverträgen](/dotnet/framework/wcf/feature-details/data-contract-known-types).
+Weitere Informationen finden Sie unter [Data Contract Known Types](/dotnet/framework/wcf/feature-details/data-contract-known-types).
 
-Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Typauflistung** Dialogfeld.
+In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Typsammlung** beschrieben.
 
 |Benutzeroberflächenelement|Beschreibung|
 |-|-----------------|
@@ -31,16 +31,16 @@ Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von de
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>So öffnen Sie den Typauflistungs-Editor für die Send- und die Receive-Aktivität
 
-1. Wählen Sie die **senden** oder **Receive** Aktivität in der Entwurfsansicht.
+1. Wählen Sie die **Sende** -oder **Empfangs** Aktivität in der Entwurfs Ansicht aus.
 
-2. Drücken Sie **F4** um die **Eigenschaften** Fenster.
+2. Drücken Sie **F4** , um das **Eigenschaften** Fenster zu aktivieren.
 
-3. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Eigenschaft.
+3. Klicken Sie im **Eigenschaften** Fenster neben der **KnownTypes** -Eigenschaft auf die Schaltfläche mit den Auslassungs Punkten.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>So öffnen Sie den Typauflistungs-Editor für die InvokeMethod-Aktivität
 
-1. Wählen Sie die **InvokeMethod** Aktivität in der Entwurfsansicht.
+1. Wählen Sie die **InvokeMethod** -Aktivität in der Entwurfs Ansicht aus.
 
-2. Drücken Sie **F4** um die **Eigenschaften** Fenster.
+2. Drücken Sie **F4** , um das **Eigenschaften** Fenster zu aktivieren.
 
-3. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **GenericTypeArguments** Eigenschaft.
+3. Klicken Sie im **Eigenschaften** Fenster auf die Schaltfläche mit den Auslassungs Punkten neben der Eigenschaft **genericTypeArguments** .

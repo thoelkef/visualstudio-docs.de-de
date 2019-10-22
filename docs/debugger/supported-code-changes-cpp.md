@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Codeänderungen (C++) | Microsoft-Dokumentation
+title: Unterstützte Code ÄnderungenC++() | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901960"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430567"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
-Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Codeänderungen behandelt werden. Einige Änderungen können während der Programmausführung jedoch nicht übernommen werden. Um diese Änderungen zu übernehmen, müssen Sie die Ausführung anhalten und eine neue Version des Codes erstellen.
+"Bearbeiten und fort C++ fahren" für Projekte behandelt die meisten Arten von Codeänderungen. Einige Änderungen können während der Programmausführung jedoch nicht übernommen werden. Um diese Änderungen zu übernehmen, müssen Sie die Ausführung anhalten und eine neue Version des Codes erstellen.
 
- Weitere Informationen zum Arbeiten mit „Bearbeiten und Fortfahren“ für C++ in Visual Studio finden Sie unter [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .
+ Weitere Informationen zum Arbeiten mit "Bearbeiten und Fortfahren" C++ in Visual Studio finden Sie unter " [Bearbeiten und Fortfahren" (C++)](../debugger/edit-and-continue-visual-cpp.md) .
 
 ## <a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen
  Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:
@@ -66,7 +66,7 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
 
 - Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](/cpp/build/reference/zo-enhance-optimized-debugging)kompiliert sind
 
-- In Versionen von Visual Studio vor Visual Studio 2015 Update 1 Debuggen UWP-apps oder Komponenten. Ab Visual Studio 2015 Update 1 können Sie bearbeiten und Fortfahren in UWP C++ und DirectX-apps, da jetzt unterstützt das `/ZI` Compilerschalter mit der `/bigobj` wechseln. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.
+- In Versionen von Visual Studio vor Visual Studio 2015 Update 1, Debuggen von UWP-Apps oder-Komponenten. Ab Visual Studio 2015 Update 1 können Sie "Bearbeiten und Fortfahren" in UWP C++ -apps und DirectX-Apps verwenden, da jetzt der `/ZI`-Compilerschalter mit dem `/bigobj`-Schalter unterstützt wird. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.
 
 - Debuggen unter Windows 98.
 
@@ -137,4 +137,4 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
  "Bearbeiten und Fortfahren" unterstützt nicht das Neugenerieren von IDL-Dateien (Interface Definiton Language). Aus diesem Grund werden Änderungen an IDL-Attributen während des Debuggens nicht widergespiegelt. Wenn Sie die Ergebnisse von Änderungen an IDL-Attributen anzeigen möchten, müssen Sie das Debuggen beenden und die App neu erstellen. "Bearbeiten und Fortfahren" erzeugt keinen Fehler bzw. keine Fehlermeldung, wenn IDL-Attribute geändert wurden. Weitere Informationen finden Sie unter [IDL-Attribute](/cpp/windows/idl-attributes).
 
 ## <a name="see-also"></a>Siehe auch
-- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+- [Bearbeiten und FortfahrenC++()](../debugger/edit-and-continue-visual-cpp.md)

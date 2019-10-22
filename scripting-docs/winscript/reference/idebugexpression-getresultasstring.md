@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsString | Microsoft-Dokumentation
+title: 'Idebugexpression:: getresultasstring | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84255e364630245564a0cbab5d38c6dff38df0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b8f637744227763f55b7c024745d7ae4448b40
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978470"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573524"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-Gibt das Ergebnis der Auswertung des Ausdrucks als eine Zeichenfolge und der Rückgabewert des Vorgangs zurück.  
+Gibt das Ergebnis der Ausdrucks Auswertung als Zeichenfolge und den Rückgabewert des Vorgangs zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetResultAsString(
   
 #### <a name="parameters"></a>Parameter  
  `phrResult`  
- [out] Der Rückgabewert des Vorgangs.  
+ vorgenommen Der Rückgabewert des Vorgangs.  
   
  `pbstrResult`  
- [out] Das Ergebnis der ausdrucksauswertung.  
+ vorgenommen Das Ergebnis der Ausdrucks Auswertung.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,12 +49,12 @@ HRESULT GetResultAsString(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_PENDING`|Der Vorgang ist noch ausstehend.|  
+|`E_PENDING`|Der Vorgang steht noch aus.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt das Ergebnis der Auswertung des Ausdrucks als eine Zeichenfolge und des Vorgangs zurück `HRESULT`.  
+ Diese Methode gibt das Ergebnis der Ausdrucks Auswertung als Zeichenfolge und den `HRESULT` des Vorgangs zurück.  
   
- Diese Methode gibt `S_OK` und `phrResult` gibt `E_ABORT` Wenn `Abort` bricht den Vorgang ab.  
+ Diese Methode gibt `S_OK` zurück, und `phrResult` gibt `E_ABORT` zurück, wenn `Abort` den Vorgang abbricht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugExpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)

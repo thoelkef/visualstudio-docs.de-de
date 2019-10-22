@@ -11,53 +11,53 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567818"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648598"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 
-Der Begriff *Nachschlagetabelle* (bezeichnet ein *nachschlagebindung*) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle, die anhand des Werts eines Fremdschlüsselfelds in einer anderen Tabelle anzeigt. Sie können eine Nachschlagetabelle erstellen, indem Sie den Hauptknoten einer übergeordneten Tabelle ziehen oder-Objekts in die **Datenquellen** auf ein Steuerelement, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.
+Der Begriff Nachschlage *Tabelle* (manchmal als *Such Bindung*bezeichnet) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle basierend auf dem Wert eines Fremdschlüssel Felds in einer anderen Tabelle anzeigt. Sie können eine Nachschlage Tabelle erstellen, indem Sie den Haupt Knoten einer übergeordneten Tabelle oder eines Objekts im **Datenquellen** Fenster auf ein Steuerelement ziehen, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.
 
-Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in die `Orders` Tabelle enthält eine `CustomerID` , der angibt, welcher Kunde den Auftrag erteilt hat. Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in zeigt die `Customers` Tabelle. Wenn Sie eine Liste der Bestellungen Anzeigen der `Orders` Tabelle, Sie können anstelle von den tatsächlichen Kundennamen anzeigen möchten die `CustomerID`. Da der Kundenname wird die `Customers` Tabelle müssen Sie eine Nachschlagetabelle, um die Namen der Kunden zu erstellen. Die Lookup-Tabelle verwendet den `CustomerID` Wert in der `Orders` aufzeichnen, um die Beziehung zu navigieren, und geben Sie den Namen des Kunden zurück.
+Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der `Orders` Tabelle enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag aufgegeben hat. Der `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendaten Satz in der `Customers` Tabelle zeigt. Wenn Sie eine Liste der Bestellungen aus der `Orders` Tabelle anzeigen, möchten Sie möglicherweise den tatsächlichen Kundennamen anstelle des `CustomerID` anzeigen. Da der Kunden Name in der `Customers` Tabelle enthalten ist, müssen Sie eine Nachschlage Tabelle erstellen, um den Kundennamen anzuzeigen. In der Nachschlage Tabelle wird der `CustomerID` Wert im `Orders` Datensatz verwendet, um in der Beziehung zu navigieren und den Kundennamen zurückzugeben.
 
 ## <a name="to-create-a-lookup-table"></a>So erstellen Sie eine Suchtabelle
 
-1. Fügen Sie eine der folgenden Typen von Datenquellen mit zugehörigen Daten zu Ihrem Projekt hinzu:
+1. Fügen Sie einem Projekt einen der folgenden Typen von Datenquellen mit verknüpften Daten hinzu:
 
-    - DataSet oder ein Entity Data Model.
+    - DataSet oder Entity Data Model.
 
-    - WCF Data Service, WCF-Dienst oder einen Webdienst. Weitere Informationen finden Sie unter [Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).
+    - WCF-Datendienst, WCF-Dienst oder Webdienst. Weitere Informationen finden Sie unter Gewusst [wie: Herstellen einer Verbindung mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    - Objekte. Weitere Informationen finden Sie unter [Binden an Objekte in Visual Studio](bind-objects-in-visual-studio.md).
+    - Objekte. Weitere Informationen finden Sie unter [binden an Objekte in Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    > Bevor Sie eine Nachschlagetabelle erstellen können, müssen zwei zusammengehörige Tabellen oder Objekte als Datenquelle für das Projekt vorhanden.
+    > Bevor Sie eine Nachschlage Tabelle erstellen können, müssen zwei verknüpfte Tabellen oder Objekte als Datenquelle für das Projekt vorhanden sein.
 
-2. Öffnen der **WPF-Designer**, und stellen Sie sicher, dass der Designer ein Container enthält, die für Elemente in ein gültiges Ablageziel ist die **Datenquellen** Fenster.
+2. Öffnen Sie den **WPF-Designer**, und stellen Sie sicher, dass der Designer einen Container enthält, bei dem es sich um ein gültiges Ablage Ziel für Elemente im **Datenquellen** Fenster handelt.
 
-     Weitere Informationen über gültige Ablageziele finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Weitere Informationen zu gültigen Drop-Zielen finden [Sie unterbinden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 3. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.
 
-4. Erweitern Sie die Knoten in der **Datenquellen** Fenster, bis die übergeordnete Tabelle oder Objekt und die zugehörige untergeordnete Tabelle oder das Objekt angezeigt werden.
+4. Erweitern Sie die Knoten im **Datenquellen** Fenster, bis die übergeordnete Tabelle oder das übergeordnete Objekt und die zugehörige untergeordnete Tabelle oder das zugehörige Objekt angezeigt werden.
 
     > [!NOTE]
-    > Zugehörige untergeordnete Tabelle oder des Objekts ist der Knoten, der als ein erweiterbarer untergeordneter Knoten unter der übergeordneten Tabelle oder ein Objekt angezeigt wird.
+    > Die zugehörige untergeordnete Tabelle oder das verbundene Objekt ist der Knoten, der als erweiterbarer untergeordneter Knoten unter der übergeordneten Tabelle oder dem übergeordneten Objekt angezeigt wird
 
-5. Klicken Sie auf das Dropdownmenü für den untergeordneten Knoten, und wählen **Details**.
+5. Klicken Sie auf das Dropdown Menü für den untergeordneten Knoten, und wählen Sie **Details**aus.
 
 6. Erweitern Sie den untergeordneten Knoten.
 
-7. Klicken Sie unter den untergeordneten Knoten auf das Dropdownmenü für das Element, das die untergeordneten und übergeordneten Daten beziehen. (Im obigen Beispiel ist dies die **"CustomerID"** Knoten.) Wählen Sie eine der folgenden Typen von Steuerelementen, die nachschlagebindung unterstützt:
+7. Klicken Sie unter dem untergeordneten Knoten auf das Dropdown Menü für das Element, das die untergeordneten und übergeordneten Daten verknüpft. (Im vorherigen Beispiel ist dies der **CustomerID-** Knoten.) Wählen Sie einen der folgenden Typen von Steuerelementen aus, die die Such Bindung unterstützen:
 
     - **ComboBox**
 
@@ -66,30 +66,30 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
     - **ListView**
 
         > [!NOTE]
-        > Wenn die **ListBox** oder **ListView** Steuerelement erscheint nicht in der Liste, Sie können diese Steuerelemente hinzufügen, um die Liste. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Wenn das **ListBox** -Steuerelement oder das **ListView** -Steuerelement nicht in der Liste angezeigt wird, können Sie diese Steuerelemente der Liste hinzufügen. Weitere Informationen finden [Sie unter Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    - Jedes benutzerdefinierten Steuerelements, die von abgeleitet <xref:System.Windows.Controls.Primitives.Selector>.
+    - Alle benutzerdefinierten Steuerelemente, die von <xref:System.Windows.Controls.Primitives.Selector> abgeleitet werden.
 
         > [!NOTE]
-        > Für Informationen zur Vorgehensweise beim Hinzufügen der benutzerdefinierten Steuerelemente auf die Liste der Steuerelemente Sie, für Elemente in auswählen kann der **Datenquellen** Fenster finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Weitere Informationen zum Hinzufügen von benutzerdefinierten Steuerelementen zur Liste der Steuerelemente, die Sie für Elemente im **Datenquellen** Fenster auswählen können, finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellen Fenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-8. Ziehen Sie den untergeordneten Knoten aus der **Datenquellen** auf einen Container im WPF-Designer. (Im vorherigen Beispiel ist der untergeordnete Knoten ist der **Bestellungen** Knoten.)
+8. Ziehen Sie den untergeordneten Knoten aus dem **Datenquellen** Fenster auf einen Container im WPF-Designer. (Im vorherigen Beispiel ist der untergeordnete Knoten der Knoten **Orders** .)
 
-     Visual Studio generiert XAML, das neue datengebundene Steuerelemente für jedes der Elemente erstellt, die Sie ziehen. Das XAML fügt auch ein neues <xref:System.Windows.Data.CollectionViewSource> für die untergeordnete Tabelle oder ein Objekt, das die Ressourcen des Ablageziels. Für einige Datenquellen generiert Visual Studio auch Code zum Laden von Daten in der Tabelle oder ein Objekt. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Visual Studio generiert XAML, das neue Daten gebundene Steuerelemente für jedes der Elemente erstellt, die Sie ziehen. Die XAML fügt den Ressourcen des Ablage Ziels außerdem eine neue <xref:System.Windows.Data.CollectionViewSource> für die untergeordnete Tabelle oder das untergeordnete Objekt hinzu. Für einige Datenquellen generiert Visual Studio auch Code zum Laden von Daten in die Tabelle oder das Objekt. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-9. Ziehen Sie den übergeordneten Knoten aus der **Datenquellen** Fenster auf das Nachschlagesteuerelement für die Bindung, die Sie zuvor erstellt haben. (Im vorherigen Beispiel ist der übergeordnete Knoten ist der **Kunden** Knoten).
+9. Ziehen Sie den übergeordneten Knoten aus dem **Datenquellen** Fenster auf das Nachschlage Steuerelement für die Suche, das Sie zuvor erstellt haben. (Im vorherigen Beispiel ist der übergeordnete Knoten der Knoten **Customers** ).
 
-     Visual Studio legt einige Eigenschaften des Steuerelements zum Konfigurieren der Bindung für die Suche an. Die folgende Tabelle enthält die Eigenschaften, die Visual Studio ändert. Wenn erforderlich, Sie diese Eigenschaften in der XAML oder in ändern, können die **Eigenschaften** Fenster.
+     Visual Studio legt einige Eigenschaften für das Steuerelement fest, um die Such Bindung zu konfigurieren. In der folgenden Tabelle werden die Eigenschaften aufgelistet, die von Visual Studio geändert werden. Bei Bedarf können Sie diese Eigenschaften im XAML-oder im **Eigenschaften** Fenster ändern.
 
-    |Eigenschaft|Erklärung der Einstellung|
+    |property|Erklärung der Einstellung|
     |--------------| - |
-    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Diese Eigenschaft gibt die Auflistung oder die Bindung, die verwendet wird, um die Daten abzurufen, die im Steuerelement angezeigt wird. Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Data.CollectionViewSource> für die übergeordneten Daten, die Sie auf das Steuerelement gezogen haben.|
-    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Diese Eigenschaft gibt den Pfad des Datenelements, das im Steuerelement angezeigt wird. Visual Studio legt diese Eigenschaft auf die erste Spalte oder Eigenschaft in der übergeordneten Daten, nach den primären Schlüssel, der einen String-Datentyp aufweist.<br /><br /> Wenn Sie eine andere Spalte oder Eigenschaft in den übergeordneten Daten anzeigen möchten, können ändern Sie diese Eigenschaft auf den Pfad zu einer anderen Eigenschaft.|
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio wird diese Eigenschaft gebunden, auf die Spalte oder Eigenschaft der untergeordneten Daten, die Sie in den Designer gezogen wird. Dies ist der Fremdschlüssel für die übergeordneten Daten.|
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio legt diese Eigenschaft auf den Pfad der Spalte oder eine Eigenschaft der untergeordneten Daten, die die foreign Key für die übergeordneten Daten ist.|
+    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Diese Eigenschaft gibt die Auflistung oder Bindung an, die verwendet wird, um die im Steuerelement angezeigten Daten zu erhalten. Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Data.CollectionViewSource> für die übergeordneten Daten fest, die Sie in das Steuerelement gezogen haben.|
+    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Diese Eigenschaft gibt den Pfad des Datenelements an, das im-Steuerelement angezeigt wird. Visual Studio legt diese Eigenschaft auf die erste Spalte oder Eigenschaft in den übergeordneten Daten fest, und zwar nach dem Primärschlüssel, der einen Zeichen folgen-Datentyp aufweist.<br /><br /> Wenn Sie eine andere Spalte oder Eigenschaft in den übergeordneten Daten anzeigen möchten, ändern Sie diese Eigenschaft in den Pfad einer anderen Eigenschaft.|
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio bindet diese Eigenschaft an die Spalte oder Eigenschaft der untergeordneten Daten, die Sie in den Designer gezogen haben. Dies ist der Fremdschlüssel für die übergeordneten Daten.|
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Diese Eigenschaft wird von Visual Studio auf den Pfad der Spalte oder Eigenschaft der untergeordneten Daten festgelegt, die den Fremdschlüssel zu den übergeordneten Daten ist.|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)
-- [Exemplarische Vorgehensweise: Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)
+- [Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/display-related-data-in-wpf-applications.md)

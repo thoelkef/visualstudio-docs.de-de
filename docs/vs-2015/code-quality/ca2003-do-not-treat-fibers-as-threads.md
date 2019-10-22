@@ -12,17 +12,17 @@ helpviewer_keywords:
 - DoNotTreatFibersAsThreads
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a1683c8cb9b9c6dc856f40ddbc7864d773f2101
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 943b52f9703e60f14756bde97ce6f27c0c6f5296
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189057"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672500"
 ---
-# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Fibers nicht als Threads behandeln.
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Fibers nicht als Threads behandeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,13 +33,13 @@ ms.locfileid: "68189057"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ein verwalteter Thread wird als ein Win32-Thread behandelt wird.
+ Ein verwalteter Thread wird als Win32-Thread behandelt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Führen Sie Sie nicht davon gehen Sie aus, dass ein verwalteter Thread ein Win32-Thread ist. Es ist eine Fiber. Die common Language Runtime (CLR) führt verwaltete Threads als Fibers im Kontext der realen Threads, die von der SQL gehören. Diese Threads können mehrere Anwendungsdomänen und sogar Datenbanken in SQL Server-Prozesses freigegeben werden. Mit den verwalteten Thread, die lokaler Speicher verwendet werden, aber möglicherweise nicht verwenden, nicht verwalteten threadlokalen Speicher oder davon ausgehen, dass der Code erneut auf dem aktuellen Betriebssystemthread ausgeführt wird. Ändern Sie Einstellungen wie z. B. das Gebietsschema des Threads nicht. Rufen Sie nicht CreateCriticalSection oder CreateMutex über P/Invoke, da sie erfordern, dass der Thread, der gesperrte Betriebssystemthread wieder entsperrt auch die Sperre beendet wird muss. Da dies bei der Verwendung von Fibern nicht der Fall sein wird, werden kritische Abschnitte von Win32 und Mutex-Verfahren in SQL nutzlos. Sie können die meisten der Status sicher auf ein verwaltetes System.Thread-Objekt verwenden. Dies schließt verwalteten threadlokalen Speicher und der aktuellen Kultur des Benutzers-Benutzeroberfläche (UI) des Threads. Allerdings werden Programmiermodells, es nicht möglich, die die aktuelle Kultur eines Threads zu ändern, bei der Verwendung von SQL; Dies wird durch eine neue Berechtigung erzwungen.
+ Nehmen Sie nicht an, dass ein verwalteter Thread ein Win32-Thread ist. Dabei handelt es sich um eine Fiber. Der Common Language Runtime (CLR) führt verwaltete Threads im Zusammenhang mit echten Threads im Besitz von SQL als Fibers aus. Diese Threads können über Anwendungs Domänen und sogar Datenbanken im SQL Server Prozess gemeinsam genutzt werden. Die Verwendung des verwalteten lokalen Thread Speichers funktioniert, aber Sie dürfen nicht verwalteten lokalen Thread Speicher verwenden oder davon ausgehen, dass der Code auf dem aktuellen Betriebssystem Thread erneut ausgeführt wird. Ändern Sie nicht die Einstellungen, wie z. b. das Gebiets Schema des Threads. Rufen Sie "foratecriticalsection" oder "foratemutex" nicht über "P/aufrufen" auf, da Sie erfordern, dass der Thread, der eine Sperre eingibt, die Sperre ebenfalls beenden muss Da dies nicht der Fall ist, wenn Sie Fibers verwenden, sind die kritischen Win32-Abschnitte und Mutexe in SQL nutzlos. Möglicherweise verwenden Sie den größten Teil des Zustands für ein verwaltetes System. Thread-Objekt. Hierzu gehören der verwaltete Thread lokale Speicher und die aktuelle Benutzeroberflächen Kultur des Threads. Aus Gründen des Programmiermodells können Sie die aktuelle Kultur eines Threads jedoch nicht ändern, wenn Sie SQL verwenden. Dies wird durch eine neue Berechtigung erzwungen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Untersuchen Sie die Verwendung von Threads aus, und ändern Sie Ihren Code entsprechend.
+ Überprüfen Sie die Verwendung von Threads, und ändern Sie den Code entsprechend.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Diese Regel sollte nicht unterdrückt werden.
+ Sie sollten diese Regel nicht unterdrücken.

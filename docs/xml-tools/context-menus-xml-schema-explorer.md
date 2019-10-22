@@ -3,17 +3,17 @@ title: Kontextmenüs im XML-Schema-Explorer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e74bf2cdf2da8007af11875c018eebc86bd41cab
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a9310102177e19d2129dd620285d6c45df63ec78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926359"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651201"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
 
@@ -36,18 +36,18 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für Namespaceknot
 |Option|Beschreibung|
 |-|-----------------|
 |**Alle eingehenden Verweise anzeigen**|Sucht nach Dateien, die den ausgewählten Namespace importieren, und hebt sie hervor.|
-|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt für jede Datei im ausgewählten Namespace Folgendes hervor:<br /><br /> -Alle Namespaces, auf die in Import- `schemaLocation` Anweisungen ohne ein-Attribut verwiesen wird.<br />-Alle Dateien in anderen Namespaces als der ausgewählte, die im `schemaLocation` -Attribut in Import-und include-Anweisungen angegeben sind.|
+|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt für jede Datei im ausgewählten Namespace Folgendes hervor:<br /><br /> -Alle Namespaces, auf die in Import-Anweisungen ohne ein `schemaLocation`-Attribut verwiesen wird.<br />-Alle Dateien in anderen Namespaces als der ausgewählte, die im `schemaLocation`-Attribut in Import-und include-Anweisungen angegeben sind.|
 |**Globale Typen anzeigen**|Sucht nach allen globalen Typen im ausgewählten Namespace und hebt sie hervor.|
 |**Globale Elemente anzeigen**|Sucht nach allen globalen Elementen im ausgewählten Namespace und hebt sie hervor.|
 |**Eigenschaftenfenster**|Öffnet das **Eigenschaften** Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
-## <a name="node-type-file"></a>Knotentyp: Datei
+## <a name="node-type-file"></a>Knotentyp: File
 In der folgenden Tabelle werden die Optionen beschrieben, die für Dateiknoten verfügbar sind.
 
 |Option|Beschreibung|
 |-|-----------------|
 |**Alle eingehenden Verweise anzeigen**|Sucht nach allen Dateien, in denen die ausgewählte Datei in den `schemaLocation`-Attributen der include- und import-Anweisungen angegeben ist, und hebt sie hervor.|
-|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt Folgendes hervor:<br /><br /> -Alle Namespaces, die in den Namespace Attributen aller Import-Anweisungen angegeben sind, die `schemaLocation` nicht über das-Attribut verfügen.<br />-Alle Dateien, die in `schemaLocation` den Attributen aller Import-und include-Anweisungen angegeben sind.|
+|**Alle ausgehenden Verweise anzeigen**|Sucht und hebt Folgendes hervor:<br /><br /> -Alle Namespaces, die in den Namespace Attributen aller Import-Anweisungen angegeben sind, die nicht über das `schemaLocation`-Attribut verfügen.<br />-Alle Dateien, die in den `schemaLocation` Attributen aller Import-und include-Anweisungen angegeben sind.|
 |**Globale Typen anzeigen**|Sucht nach allen globalen Typen in dieser Datei und hebt sie hervor.|
 |**Globale Elemente anzeigen**|Sucht nach allen globalen Elementen in dieser Datei und hebt sie hervor.|
 |**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten im XML-Editor enthält. Das Element, das im XML-Schema-Explorer ausgewählt wird, wird im XML-Editor ebenfalls ausgewählt.|
@@ -75,7 +75,7 @@ Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextme
 |**Ersetzungs Gruppenköpfe anzeigen**|Bei globalen Elementen, die Member einer Ersetzungsgruppe sind, werden alle direkten und indirekten Köpfe für ein Element wie das folgende gesucht und hervorgehoben:<br /><br /> : Ein Ersetzungs Gruppenkopf, der für das ausgewählte Element angegeben ist.<br />: Ein Ersetzungs Gruppenkopf, der auf seinem Head-Element angegeben ist.|
 |**Generieren von Beispiel-XML**|Ist nur für globale Elemente verfügbar. Generiert eine Beispiel-XML-Datei für das globale Element.|
 
-## <a name="node-type-global-types"></a>Knotentyp: Globale Typen
+## <a name="node-type-global-types"></a>Knotentyp: globale Typen
 Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextmenü für globale Typknoten die folgenden Optionen:
 
 |Option|Beschreibung|
@@ -103,7 +103,7 @@ Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextme
 |**Alle Elemente anzeigen**|Sucht nach allen Mitgliedern der Attributgruppe und hebt sie hervor.|
 |**Alle Verweise anzeigen**|Sucht nach allen Verweisen auf die ausgewählte Attributgruppe (Attributgruppen mit `ref="selectedAttributeGroup"`) und hebt sie hervor.|
 
-## <a name="node-type-named-group"></a>Knotentyp: Benannte Gruppe
+## <a name="node-type-named-group"></a>Knotentyp: benannte Gruppe
 Neben den oben beschriebenen Optionen für globale Knoten enthält das Kontextmenü für benannte Gruppenknoten die folgenden Optionen:
 
 |Option|Beschreibung|

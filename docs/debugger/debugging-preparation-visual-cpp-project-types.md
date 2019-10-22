@@ -10,7 +10,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - project templates, debugging
-- Visual C++ projects, debugging
+- C++ projects, debugging
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc3a8339fffab762c2b6d7a649d3bae8efa76c8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925488"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431411"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Vorbereitung des Debugvorgangs: Visual C++-Projekttypen
+# <a name="debugging-preparation-c-project-types"></a>Vorbereitung zum Debuggen: C++ Projekttypen
 In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die mithilfe von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektvorlagen erstellt wurden.
 
  Beachten Sie, dass die Projekttypen, die DLLs als Ausgabe erstellen, aufgrund der gemeinsamen Funktionen, die Sie freigeben, in [debuggingprojekte](../debugger/debugging-dll-projects.md) gruppiert wurden.
@@ -72,7 +72,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
 
 2. Wählen Sie im Menü **Debuggen** den Befehl **Starten** aus.
 
-3. Debuggen Sie mithilfe der Techniken, die in [erster Ansicht des](../debugger/debugger-feature-tour.md)Debuggers erläutert werden.
+3. Debuggen Sie mithilfe der Techniken, die in [erster Ansicht des Debuggers](../debugger/debugger-feature-tour.md)erläutert werden.
 
 ### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Manuelles Festlegen einer Debugkonfiguration
 
@@ -82,7 +82,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
 
 3. Wählen Sie **Allgemein** aus, und legen Sie den Wert der Zeile **Ausgabe** auf **Debuggen** fest.
 
-4. Öffnen Sie den Knoten **C/C++** , und wählen Sie **Allgemein** aus.
+4. Öffnen Sie den Knoten **C/C++**, und wählen Sie **Allgemein** aus.
 
     Geben Sie in der Zeile **Debuggen** den Typ der Debuginformationen an, die vom Compiler generiert werden sollen. Als Werte können Sie u. a. **Programmdatenbank (/Zi)** oder **Programmdatenbank zum Bearbeiten und Fortfahren (/ZI)** auswählen.
 
@@ -97,7 +97,7 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
    [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms-Anwendungen (.NET)
- Die Vorlage der **Windows Forms-Anwendung (.NET)** erstellt eine [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Windows Forms-Anwendung. Weitere Informationen finden Sie unter [Vorgehensweise: Create a New Windows Forms Application Project (Vorgehensweise: Erstellen Sie ein Windows-Anwendungsprojekt)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ Die Vorlage der **Windows Forms-Anwendung (.NET)** erstellt eine [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Windows Forms-Anwendung. Weitere Informationen finden Sie unter [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist mit dem Debuggen in verwalteten Windows Forms-Anwendungen vergleichbar.
 
@@ -114,4 +114,4 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
 - [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attach to running processes with the Visual Studio debugger (Anfügen an laufende Prozesse mit dem Visual Studio Debugger)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Set debug and release configurations in Visual Studio (Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Vorgehensweise: Create a New Windows Forms Application Project (Vorgehensweise: Erstellen Sie ein Windows-Anwendungsprojekt)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [How to: Create a Windows Application Project (Vorgehensweise: Erstellen eines Projekts für eine Windows-Anwendung)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

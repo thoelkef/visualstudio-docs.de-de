@@ -26,28 +26,26 @@ helpviewer_keywords:
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66a895b48051ed8797644b36d6f6663e1e35a8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68145672"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620387"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Zusätzliche Informationen zu Klassen-Designer-Fehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Klassen-Designer verfolgt nicht den Speicherort der Quelldateien, so dass die Änderung der Projektstruktur oder verschobenen Quelldateien im Projekt dazu führen kann, dass der Klassen-Designer den Typ, insbesondere den Quelltyp eines TypeDef-, Basisklassen oder Zuordnungstypen verliert. Es wird möglicherweise ein Fehler angezeigt, z.B. **Dieser Typ kann im Klassen-Designer nicht angezeigt werden**. In diesem Fall ziehen Sie den geänderten oder verschobenen Quellcode in das Klassendiagramm, um ihn erneut anzuzeigen.  
-  
- Hilfe zu anderen Fehlern und Warnungen finden Sie in den folgenden Ressourcen:  
-  
- [Arbeiten mit Visual C++-Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md)  
- Enthält Informationen zur Problembehandlung in Bezug auf das Anzeigen von C++ in einem Klassendiagramm.  
-  
- [Forum von Visual Studio-Klassen-Designer](http://go.microsoft.com/fwlink/?LinkId=160754)  
- Bietet ein Forum für Fragen zum Klassen-Designer.  
-  
-## <a name="see-also"></a>Siehe auch  
+Klassen-Designer verfolgt nicht den Speicherort der Quelldateien, so dass die Änderung der Projektstruktur oder verschobenen Quelldateien im Projekt dazu führen kann, dass der Klassen-Designer den Typ, insbesondere den Quelltyp eines TypeDef-, Basisklassen oder Zuordnungstypen verliert. Es wird möglicherweise ein Fehler angezeigt, z.B. **Dieser Typ kann im Klassen-Designer nicht angezeigt werden**. In diesem Fall ziehen Sie den geänderten oder verschobenen Quellcode in das Klassendiagramm, um ihn erneut anzuzeigen.
+
+ Hilfe zu anderen Fehlern und Warnungen finden Sie in den folgenden Ressourcen:
+
+ [Das Arbeiten mit C++ Visual Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md) umfasst Informationen zur Problem C++ Behandlung bei der Anzeige in einem Klassendiagramm.
+
+ [Forum des Visual Studio-Klassen-Designers:](http://go.microsoft.com/fwlink/?LinkId=160754) Ein Forum für Fragen zum Klassen-Designer.
+
+## <a name="see-also"></a>Siehe auch
  [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md)

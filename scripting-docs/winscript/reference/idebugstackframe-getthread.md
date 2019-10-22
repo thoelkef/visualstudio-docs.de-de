@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetThread | Microsoft-Dokumentation
+title: 'Idebugstackframe:: GetThread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6926347c67895b3860964a559898691dd3e61e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51cb000ef20877f4f3f6536cc9a01ae44c2810c8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935059"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576735"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
-Gibt die Threads mit Stapelrahmen zurück.  
+Gibt den Thread zurück, der diesem Stapel Rahmen zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Parameter  
  `ppat`  
- [out] Der Thread, die diesen Stapelrahmen zugeordnet wird.  
+ vorgenommen Der Thread, der diesem Stapel Rahmen zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetThread(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den Thread, die diesen Stapelrahmen zugeordnet.  
+ Diese Methode gibt den Thread zurück, der diesem Stapel Rahmen zugeordnet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame-Schnittstelle](../../winscript/reference/idebugstackframe-interface.md)

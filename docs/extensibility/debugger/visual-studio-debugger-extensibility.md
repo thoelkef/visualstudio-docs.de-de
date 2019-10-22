@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Debugger-Erweiterbarkeit | Microsoft-Dokumentation
+title: Erweiterbarkeit von Visual Studio-Debugger | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4184ae40a91e05b1110aed8d3e9b9c9edc64a06d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f8a1c2148f25a1e97cfd1369770e056d1cb907d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321479"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568967"
 ---
-# <a name="visual-studio-debugger-extensibility"></a>Visual Studio-Debugger-Erweiterbarkeit
-Visual Studio enthält einen vollständig interaktive Source Code-Debugger, ein leistungsfähiges und einfach zu verwendendes Tool für das Aufspüren von Fehlern in Ihrem Programm bereitstellen. Der Debugger hat die vollständige Unterstützung von Visual Basic, c#, C/C++- und JavaScript. Allerdings können mit der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], d. h. verfügbar der [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), anderen Programmiersprachen können in den Debugger mit den gleichen umfassenden Features unterstützt werden.
+# <a name="visual-studio-debugger-extensibility"></a>Erweiterbarkeit von Visual Studio-Debugger
+Visual Studio enthält einen vollständig interaktiven Quellcode-Debugger, der ein leistungsfähiges und einfach zu verwendende Tool zum Nachverfolgen von Fehlern in Ihrem Programm bereitstellt. Der Debugger verfügt über eine umfassende Unterstützung C#für Visual Basic,C++, C/und JavaScript. Mit dem [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], das im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)verfügbar ist, können jedoch andere Programmiersprachen im Debugger mit denselben umfangreichen Features unterstützt werden.
 
- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger ist es die debugging-Komponenten, die, für die Sprache, die gedebuggt wird wiederum sind, das allgemeine Front-End (d. h. der Benutzeroberfläche). Für neue Sprachen, unterstützen alles, was erforderlich ist, indem die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger ist es die erforderlichen Back-End-Komponenten, z. B. einer Debug-Engine (DE) zu erstellen. Dieser Punkt ist, wo die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ins Spiel.
+ Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger ist das allgemeine Front-End (d. h. die Benutzeroberfläche) für die debuggingkomponenten, die wiederum spezifisch für die zu debuggende Sprache sind. Bei neuen Sprachen ist für die Unterstützung durch den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger lediglich die Erstellung der erforderlichen Back-End-Komponenten, z. b. Debug-Engine (de), erforderlich. An dieser Stelle kommt der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ins Spiel.
 
- Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] enthält eine vollständige Referenz zu allen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Elemente, die zum Erstellen einer neuen DE erforderlich sind. Darüber hinaus stehen Beispiele und Lernprogramme, die Ihnen beim Einstieg helfen.
+ Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] enthält einen vollständigen Verweis auf alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Elemente, die zum Erstellen einer neuen de erforderlich sind. Außerdem finden Sie Beispiele und Lernprogramme, die Ihnen beim Einstieg helfen.
 
- Ein vollständiges Beispiel eines Sprache-Projektsystems mit debugging-Unterstützung finden Sie unter den [IronPython-Beispiel](https://www.microsoft.com/download/details.aspx?id=55984).
+ Ein umfassendes Beispiel eines Sprachprojekt Systems mit Debugunterstützung finden Sie im [IronPython-Beispiel](https://www.microsoft.com/download/details.aspx?id=55984).
 
- In den folgenden Abschnitten wird beschrieben, wie den Debugger mit Erweitern der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+ In den folgenden Abschnitten wird beschrieben, wie der Debugger mithilfe der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] erweitert wird.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Erste Schritte](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) wird beschrieben, was [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen bietet und wie Sie das SDK zu installieren.
+ [Einstieg](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) Beschreibt, was [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugging bietet und wie das SDK installiert wird.
 
- [Erstellen eine benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md) dokumentiert die benutzerdefinierten DE-Prozess, von der Vorbereitung von Ihrem Programms für ein DE zum Trennen der DE.
+ [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md) Dokumentiert den benutzerdefinierten de-Prozess, von der Vorbereitung des Programms bis zum Trennen der de.
 
- [Schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) wird erläutert, ob Sie eine ausdrucksauswertung schreiben müssen.
+ [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) Erläutert, ob Sie eine Ausdrucks Auswertung schreiben müssen.
 
- [Auswählen einer Implementierungsstrategie für die Debug-Engine](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md) wird erläutert, wie Sie Ihre DE implementieren.
+ [Auswählen einer Strategie](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md) für die Debug-Engine-Implementierung Erläutert, wie Sie Ihre de implementieren.
 
- [Verweis](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md) Dokumente der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debug-API.
+ [Verweis](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md) Dokumentiert die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debug-API.
 
- [Beispiele für](../../extensibility/debugger/visual-studio-debugging-samples.md) enthält Links zu einem ausdrucksauswertung (Beispiel) common Language Runtime und ein Beispiel für die Debug-Engine.
+ [Beispiele](../../extensibility/debugger/visual-studio-debugging-samples.md) Enthält Links zu einem Beispiel für Common Language Runtime Ausdrucks Auswertung und eine Debug-Engine.

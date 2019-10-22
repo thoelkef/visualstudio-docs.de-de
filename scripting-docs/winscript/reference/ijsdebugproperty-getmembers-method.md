@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be31a0f02869ea740809fb68dbddf48843b2f3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3e700e51dea6723238437bf1fed741698097ae2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793668"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574050"
 ---
 # <a name="ijsdebugpropertygetmembers-method"></a>IJsDebugProperty::GetMembers-Methode
 Ruft die Member dieses Objekts ab.  
@@ -44,7 +44,7 @@ HRESULT GetMembers(
 ## <a name="return-value"></a>Rückgabewert  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IJsDebugProperty-Schnittstelle](../../winscript/reference/ijsdebugproperty-interface.md)

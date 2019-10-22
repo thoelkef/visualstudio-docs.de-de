@@ -10,38 +10,38 @@ helpviewer_keywords:
 - Devenv, /setup switch
 ms.assetid: 87608b7f-a156-400c-80f5-fc823f843e61
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e5bbbf3a1a9601a46aa9d3080f0d20583b43d22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a923d1f3532548ebc6ed651a0739e0e5792f7967
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163307"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663537"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zwingt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dazu, die Ressourcenmetadaten zur Beschreibung von Menüs, Symbolleisten und Befehlsgruppen aus allen verfügbaren VSPackages zusammenzuführen.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-devenv /setup  
-```  
-  
-## <a name="remarks"></a>Anmerkungen  
- Der Schalter verwendet keine Argumente. Der Befehl `devenv /setup` wird in der Regel als letzter Schritt der Installation angegeben. Bei Verwendung des Schalters `/setup` wird [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]nicht gestartet.  
-  
- Sie müssen `devenv` als Administrator ausführen, um die Schalter [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) und [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) verwenden zu können.  
-  
-## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt den letzten Schritt der Installation einer Version von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , die VSPackages enthält.  
-  
-```  
-devenv /setup  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
+Zwingt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dazu, die Ressourcenmetadaten zur Beschreibung von Menüs, Symbolleisten und Befehlsgruppen aus allen verfügbaren VSPackages zusammenzuführen.
+
+## <a name="syntax"></a>Syntax
+
+```
+devenv /setup
+```
+
+## <a name="remarks"></a>Anmerkungen
+ Der Schalter verwendet keine Argumente. Der Befehl `devenv /setup` wird in der Regel als letzter Schritt der Installation angegeben. Bei Verwendung des Schalters `/setup` wird [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]nicht gestartet.
+
+ Sie müssen `devenv` als Administrator ausführen, um die Schalter [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) und [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) verwenden zu können.
+
+## <a name="example"></a>Beispiel
+ Dieses Beispiel zeigt den letzten Schritt der Installation einer Version von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , die VSPackages enthält.
+
+```
+devenv /setup
+```
+
+## <a name="see-also"></a>Siehe auch
  [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)

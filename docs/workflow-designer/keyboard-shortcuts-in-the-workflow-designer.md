@@ -5,29 +5,29 @@ ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36e8b6d67d2405fbc74c0b1bf854b3a3baaf4da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825507"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650158"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 
-Alle die Kernfunktionen des Workflow-Designers kann über die Tastatur zugegriffen werden.
+Auf die gesamte Kernfunktionalität des Workflow-Designer kann über die Tastatur zugegriffen werden.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Bedienen des Workflow-Designers mithilfe der Tastatur
 
-In Visual Studio gelten die globalen Tastenkombinationen und debugging-Tastenkombinationen für die Workflow-Designer ein. Darüber hinaus wurden eine Anzahl von bestimmten Workflow-Designer-Tastenkombinationen erstellt. In Visual Studio können alle Tastenkombinationen neu, zugeordnet werden. In einer neu gehosteten Anwendung sind diese Tastenkombinationen jedoch hartcodiert.
+In Visual Studio gelten die globalen Verknüpfungen und debugkombinationen für das Workflow-Designer. Außerdem wurde eine Reihe Workflow-Designer spezifischer Tastenkombinationen erstellt. In Visual Studio können alle Tastenkombinationen neu zugeordnet werden. In einer neu gehosteten Anwendung sind diese Tastenkombinationen jedoch hartcodiert.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Tastenkombinationen des Workflow-Designers
 
-Die folgende Tabelle enthält die Standardtastenkombinationen für Workflow-Designer Befehle zugewiesen.
+In der folgenden Tabelle werden die Standard Tastenkombinationen zusammengefasst, die Workflow-Designer Befehlen zugewiesen sind.
 
 |Verknüpfung|Zweck|
 |-|-------------|
@@ -43,17 +43,17 @@ Die folgende Tabelle enthält die Standardtastenkombinationen für Workflow-Desi
 |STRG+E, S|Das Element der aktuellen Auswahl mit dem Tastaturfokus hinzufügen.|
 |STRG+E, V|Variablen-Designer anzeigen oder ausblenden.|
 |STRG+E, X|Alle Aktivitäten im Workflow erweitern.|
-|STRG+ALT+F6|Den Tastaturfokus im aktuellen Benutzeroberflächenbereich auf den nächsten Bereich der Folge verschieben. Die Reihenfolge ist wie folgt definiert:<br /><br /> 1.  Brotkrümelnavigationsleiste.<br />2.  Designeroberfläche<br />3.  Argumente/Variablen/Import-Designer, sofern geöffnet<br />4.  Shell|
+|STRG+ALT+F6|Den Tastaturfokus im aktuellen Benutzeroberflächenbereich auf den nächsten Bereich der Folge verschieben. Die Reihenfolge ist wie folgt definiert:<br /><br /> 1. Breadcrumb-Navigationsleiste<br />2. Designer Oberfläche<br />3. Argumente/Variablen/Import-Designer, wenn Sie geöffnet sind<br />4. Shell|
 
 ### <a name="flowchart"></a>Flussdiagramm
 
-In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm mithilfe der Tastatur erstellt wurde. Aktivitäten werden wie in den Rest des Workflow-Designers die Oberfläche des Designers mit der globalen Toolbox-Tastenkombinationen, die die in Visual Studio hinzugefügt.
+In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm mithilfe der Tastatur erstellt wurde. Wie im restlichen Workflow-Designer werden Aktivitäten mithilfe der globalen Toolbox Verknüpfungen, die mit Visual Studio bereitgestellt werden, der Designer Oberfläche hinzugefügt.
 
 - Um eine Aktivität zu verschieben, markieren Sie die Aktivität, und ordnen Sie sie mithilfe der PFEILTASTEN neu an.
 
 - Um die Größe eines Flussdiagramms zu ändern, schieben Sie eine Aktivität mit den PFEILTASTEN über den aktuellen Rahmen des Flussdiagramms hinaus. Die Größe des Flussdiagramms wird automatisch geändert.
 
-- Um eine Aktivität als Startknoten festzulegen, verwenden die **als Startknoten festlegen** im Kontextmenü den Befehl.
+- Um eine Aktivität als Startknoten festzulegen, verwenden Sie den Befehl **als startNode festlegen** im Kontextmenü.
 
 - So verbinden Sie Aktivitäten:
 
@@ -71,11 +71,11 @@ Hinweise zum Verbinden von Aktivitäten mithilfe der Tastatur:
 
 - Selbst wenn ein Aktivitätenpaar nicht verbunden werden kann, z. B. wenn die Quellaktivität bereits über eine ausgehende Verbindung verfügt, werden die anderen Verbindungen zwischen Aktivitäten in der Auswahl noch hergestellt, sofern dies möglich ist.
 
-- Wenn eine **FlowDecision** befindet sich in der Auswahl und die **FlowDecision** keine ausgehenden Connectors besitzt, der Connector befindet sich auf die **"true"** Branch.
+- Wenn eine **FlowDecision** in der Auswahl enthalten ist und die **FlowDecision** keine ausgehenden Connectors aufweist, wird der Connector in der **true** -Verzweigung platziert.
 
 ### <a name="expression-editing"></a>Ausdrucksbearbeitung
 
-Standardmäßig gelten die Standardtastenkombinationen zum Bearbeiten von Text in Visual Basic in der Ausdrucks-Editor im Workflow-Designer, mit folgenden Einschränkungen:
+Standardmäßig gelten die Standard Tastenkombinationen für die Visual Basic Textbearbeitung innerhalb des Ausdrucks-Editors in Workflow-Designer, wobei die folgenden Einschränkungen gelten:
 
 - Eine Neuzuordnung der Tastenkombinationen für die folgenden Befehle ist wirkungslos. Beim Bearbeiten eines Ausdrucks können Sie nur über die Standardtastenkombinationen auf diese Befehle zugreifen.
 
@@ -86,4 +86,4 @@ Standardmäßig gelten die Standardtastenkombinationen zum Bearbeiten von Text i
   - undo
   - Wiederholen
 
-- Um die Tastenkombinationen für Befehle zum Ausdruck bearbeiten im Workflow-Designer in Visual Studio neu zuordnen, bearbeiten Sie die Tastenkombinationen im Workflow-Designer-Bereich. In den Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.
+- Um die Tastenkombinationen für Befehle zur Ausdrucks Bearbeitung innerhalb Workflow-Designer in Visual Studio neu zuzuordnen, bearbeiten Sie die Verknüpfungen im Workflow-Designer Bereich. Im Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.

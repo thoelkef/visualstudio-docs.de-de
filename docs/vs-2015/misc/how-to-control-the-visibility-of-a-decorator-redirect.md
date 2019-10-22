@@ -1,20 +1,20 @@
 ---
-title: 'Vorgehensweise: Die Sichtbarkeit eines Decorator-Elements steuern-Umleitung | Microsoft-Dokumentation'
+title: 'Gewusst wie: Steuern der Sichtbarkeit eines Decorator-Redirect | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
 ms.topic: conceptual
 ms.assetid: 0aa7b4f2-9f1f-4c8a-80c4-03fa888ca9ed
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6abc8b0bf2af5b22910bc4ad90fa16a21ecdb386
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4d748f0efde08640728ea47954043a3397481f6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822411"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656455"
 ---
-# <a name="how-to-control-the-visibility-of-a-decorator--redirect"></a>Vorgehensweise: Steuern der Sichtbarkeit eines Decorator-Elements-umleiten
-In diesem Thema wurde mit einer anderen zusammengeführt. Informieren Sie sich [Anpassen der Darstellung im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).
+# <a name="how-to-control-the-visibility-of-a-decorator--redirect"></a>Gewusst wie: Steuern der Sichtbarkeit eines Decorator-Elements -umleiten
+Dieses Thema wurde mit einem anderen zusammengeführt. Weitere Informationen finden Sie unter [Anpassen der Präsentation im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).

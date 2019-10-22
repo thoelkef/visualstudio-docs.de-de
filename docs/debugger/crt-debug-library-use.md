@@ -1,6 +1,6 @@
 ---
-title: Verwenden der CRT-Debugbibliothek | Microsoft-Dokumentation
-ms.date: 11/04/2016
+title: Verwendung der CRT-Debugbibliothek | Microsoft-Dokumentation
+ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
@@ -28,22 +28,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9434be46f357a97ad01f10ceec184ebe6c52eb43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e58f65f174c549f6992e9218d7ad692634e20d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565546"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435886"
 ---
 # <a name="crt-debug-library-use"></a>Verwenden der CRT-Debugbibliothek
-Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Um eine der CRT-Debugbibliotheken verwenden zu können, müssen Sie eine Verknüpfung mit [/DEBUG](/cpp/build/reference/debug-generate-debug-info) und kompilieren Sie mit **/MDd**, **/MTd**, oder **"/ LDD"**.
+Die C-Laufzeitbibliothek bietet umfassende Debugunterstützung. Wenn Sie eine der CRT-Debugbibliotheken verwenden möchten, müssen Sie eine Verknüpfung mit [/Debug](/cpp/build/reference/debug-generate-debug-info) herstellen und die Kompilierung mit **/MDD**, **/MTD**oder **/ldd**durchführen.
 
 ## <a name="remarks"></a>Hinweise
  Die Hauptdefinitionen und Makros für CRT-Debugverfahren befinden sich in der Headerdatei Crtdbg.h.
 
  Die Funktionen in den CRT-Debugbibliotheken werden mit Debuginformationen ([/Z7, /Zd, /Zi, /ZI (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format)) und ohne Optimierung kompiliert. Einige der Funktionen enthalten Assertionen, um die an sie übergebenen Parameter zu überprüfen. Außerdem ist Quellcode enthalten. Mit diesem Quellcode können Sie in die CRT-Funktionen springen, um sicherzustellen, dass sie erwartungsgemäß funktionieren, und fehlerhafte Parameter oder Speicherzustände suchen. (Einige CRT-Laufzeittechnologien sind jedoch proprietär und beinhalten daher keinen Quellcode für Ausnahmebehandlung, Gleitkomma- und einige andere Routinen.)
-
- Sie haben beim Installieren von Visual C++ die Möglichkeit, den Quellcode der C-Laufzeitbibliothek auf der Festplatte zu installieren. Wenn Sie den Quellcode nicht installieren, benötigen Sie die CD-ROM, um in die einzelnen CRT-Funktionen zu springen.
 
  Weitere Informationen zum Verwenden der verschiedenen Laufzeitbibliotheken finden Sie unter [C-Laufzeitbibliotheken](/cpp/c-runtime-library/crt-library-features).
 

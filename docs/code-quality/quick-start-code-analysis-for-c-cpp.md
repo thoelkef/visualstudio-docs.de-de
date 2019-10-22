@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis,C/C++
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3132db62de6f2775a739adb82b24c759e4767dc
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974899"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445635"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
 
@@ -26,24 +26,11 @@ Sie können die Qualität Ihrer Anwendung verbessern, indem Codeanalysen für C 
 
 1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektnamen, und wählen Sie dann **Eigenschaften**aus.
 
-2. Die folgenden Schritte sind optional:
+2. Wählen Sie optional in den Listen **Konfiguration** und **Plattform** die Buildkonfiguration und die Zielplattform aus.
 
-    1. Wählen Sie in den Listen **Konfiguration** und **Plattform** die Buildkonfiguration und die Zielplattform aus.
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, aktivieren Sie das Kontrollkästchen **Code Analyse bei Build aktivieren** . Sie können die Code Analyse auch manuell ausführen, indem Sie das Menü **analysieren** öffnen und dann **Code Analyse für** *ProjectName* ausführen oder **Code Analyse für Datei ausführen**auswählen.
 
-    2. Standardmäßig meldet die Codeanalyse keine Warnungen zu Code, der automatisch von Tools von Drittanbietern generiert wird. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
-
-        > [!NOTE]
-        > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Der Quellcode für ein Formular oder eine Vorlage kann sowohl angezeigt als auch verwaltet werden.
-
-3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, aktivieren Sie das Kontrollkästchen **CodeC++ Analyse für C/on-Build aktivieren** . Sie können die Code Analyse auch manuell ausführen, indem Sie das Menü **analysieren** öffnen und dann **Code Analyse für** *ProjectName*ausführen auswählen.
-
-4. In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:
-
-    - Wählen Sie den Regelsatz, den Sie verwenden möchten.
-
-    - Wählen Sie **\<browse >** aus, um einen vorhandenen benutzerdefinierten Regelsatz anzugeben, der nicht in der Liste enthalten ist.
-
-    - Definieren einer [benutzerdefinierten Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md).
+4. Wählen Sie den [Regelsatz](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) aus, den Sie verwenden möchten, oder erstellen Sie einen [benutzerdefinierten Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md). Wenn Sie llvm/clang-cl verwenden, finden Sie weitere Informationen unter [Verwenden von clang-tidy in Visual Studio](../code-quality/clang-tidy.md) , um clang-saubere Analyseoptionen zu konfigurieren.
 
 ### <a name="standard-cc-rule-sets"></a>Standard-C/C++-Regelsätze
 
@@ -56,17 +43,23 @@ Visual Studio enthält zwei Standardregelsätze für systemeigenen Code:
 
 ## <a name="run-code-analysis"></a>Codeanalyse ausführen
 
-Auf der Codeanalyseseite von den Eigenschaftenseiten des Projekts können Sie die Codeanalyse so konfigurieren, dass Sie bei jedem Erstellen des Projekts ausgeführt wird. Sie können die Codeanalyse auch manuell ausführen.
+Auf der Seite "Code Analyse" der Seite "Projekteigenschaften" können Sie die Code Analyse so konfigurieren, dass Sie jedes Mal ausgeführt wird, wenn Sie das Projekt erstellen. Sie können die Codeanalyse auch manuell ausführen.
 
 Zum Ausführen der Codeanalyse in einer Projektmappe:
 
-- Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.
+- Wählen Sie im Menü **Erstellen** die Option **Code Analyse für Projekt Mappe ausführen aus**.
 
 Zum Ausführen der Codeanalyse in einem Projekt:
 
-1. Wählen Sie im Projektmappen-Explorer den Namen des Projektes aus.
+1. Wählen Sie im Projektmappen-Explorer den Namen des Projekts aus.
 
 2. Wählen Sie im Menü **Erstellen** die Option **Code Analyse für** *Projekt Name*ausführen aus.
+
+So führen Sie die Code Analyse für eine Datei aus:
+
+1. Wählen Sie im Projektmappen-Explorer den Namen der Datei aus.
+
+2. Wählen Sie im Menü **Erstellen** die Option **Code Analyse für Datei ausführen aus** , oder drücken Sie **STRG + UMSCHALT + ALT + F7**.
 
    Das Projekt oder die Projektmappe wird kompiliert und Codeanalyse wird ausgeführt. Die Ergebnisse werden in der Fehlerliste angezeigt.
 
@@ -90,7 +83,7 @@ So unterdrücken Sie eine Warnung
 
 3. Wählen Sie **Meldung unterdrücken** und dann **in Quelle aus**.
 
-   Wenn Sie eine Meldung unterdrücken, wird `#pragma warning (disable:[warning ID])` eingefügt, die die Warnung für die Codezeile unterdrückt.
+   Wenn Sie eine Meldung unterdrücken, werden `#pragma warning (disable:[warning ID])` eingefügt, die die Warnung für die Codezeile unterdrückt.
 
 ## <a name="create-work-items-for-code-analysis-warnings"></a>Erstellen von Arbeitsaufgaben für Code Analyse Warnungen
 
@@ -116,4 +109,4 @@ Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektm
 
 ## <a name="see-also"></a>Siehe auch
 
-[Code Analyse für C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [Code Analyse für C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

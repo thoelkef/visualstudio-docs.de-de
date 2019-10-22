@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourceLineText | Microsoft-Dokumentation
+title: 'Iactivescripterror:: getsourcelinetext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 702f1655b244116e1bb7dca3d5fc90de3d1f5bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ded57f97ec40167bac34bf0f288c2e3d15a5c4b7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955005"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576916"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
-Ruft ab, die Zeile in der Quelldatei, in denen ein Fehler aufgetreten ist, während eine Skript-Engine ein Skript ausgeführt wurde.  
+Ruft die Zeile in der Quelldatei ab, in der ein Fehler aufgetreten ist, während eine Skript-Engine ein Skript ausgeführt hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,10 +37,10 @@ HRESULT GetSourceLineText(
   
 ## <a name="parameter"></a>Parameter  
  `pbstrSourceLine`  
- [out] Die Adresse eines Puffers, der die Zeile des Quellcodes empfängt, in dem der Fehler aufgetreten ist.  
+ vorgenommen Adresse eines Puffers, der die Zeile des Quellcodes empfängt, in der der Fehler aufgetreten ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK` im Erfolgsfall oder `E_FAIL` , wenn die Zeile in der Quelldatei nicht abgerufen wurde.  
+ Gibt `S_OK` zurück, wenn erfolgreich, oder `E_FAIL`, wenn die Zeile in der Quelldatei nicht abgerufen wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

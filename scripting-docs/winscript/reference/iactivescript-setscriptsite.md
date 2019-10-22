@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Microsoft-Dokumentation
+title: 'IActiveScript:: setscriptsite | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 063dcc7b580334bff9780e9c209b621ef7e25656
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935553"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575328"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Informiert die Skript-Engine, der die [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Schnittstelle-Website, die vom Host bereitgestellt wird. Rufen Sie diese Methode vor allen anderen [IActiveScript](../../winscript/reference/iactivescript.md) Schnittstellenmethoden verwendet wird.  
+Informiert die Skript-Engine über die [iactivescriptsite](../../winscript/reference/iactivescriptsite.md) Interface-Website, die vom Host bereitgestellt wird. Diese Methode muss aufgerufen werden, bevor andere [IActiveScript](../../winscript/reference/iactivescript.md) -Schnittstellen Methoden verwendet werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parameter  
  `pScriptSite`  
- [in] Die Adresse der skriptwebsite-Host bereitgestellte mit dieser Instanz des verwendeten Skriptmoduls zugeordnet werden soll. Dieses Skript-Engine-Instanz muss eindeutig der Standort zugewiesen werden; Es kann nicht auf die Skript-Engines freigegeben werden.  
+ in Adresse der vom Host bereitgestellten Skript Site, die dieser Instanz der Skript-Engine zugeordnet werden soll. Die Website muss dieser Skript-Engine-Instanz eindeutig zugewiesen werden. Sie kann nicht für andere Skript-Engines freigegeben werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -45,10 +45,10 @@ HRESULT SetScriptSite(
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
-|`E_FAIL`|Ein Unbekannter Fehler aufgetreten. die Skript-Engine konnte nicht abgeschlossen wird, initialisieren den Standort.|  
+|`E_FAIL`|Ein nicht angegebener Fehler ist aufgetreten. die Skript-Engine konnte die Initialisierung der Site nicht abschließen.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. eine Site wurde bereits festgelegt).|  
+|`E_UNEXPECTED`|Der-Befehl wurde nicht erwartet (z. b. wurde eine Website bereits festgelegt).|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3de39beb28a68ec3b8e0d76b17a7e914a464ecfe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583593"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577744"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess-Methode
 Factorymethode, die zum Erstellen eines neuen virtuellen Prozessobjekts verwendet wird.  
@@ -55,7 +55,7 @@ HRESULT OpenVirtualProcess(
  Gibt "E_JsDEBUG_MISMATCHED_RUNTIME" zurück, wenn "Jscript9diag" und "Jscript9" nicht übereinstimmen.  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IJsDebug-Schnittstelle](../../winscript/reference/ijsdebug-interface.md)

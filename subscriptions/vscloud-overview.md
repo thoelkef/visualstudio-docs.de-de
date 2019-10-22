@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
-ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490694"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962946"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .
@@ -25,7 +25,7 @@ Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnement
 Sie benötigen ein [Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/), damit Ihnen Ihre Käufe in Rechnung gestellt werden können. Sie können sich vor dem ersten Kauf oder während des ersten Kaufs in Visual Studio Marketplace [registrieren](https://portal.azure.com).
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Wer kann Visual Studio-Cloudabonnements erwerben?
-Jeder Benutzer mit Zugriffsrechten als [Besitzer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [Dienstadministrator oder Co-Admin](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) für das Azure-Abonnement kann Cloudabonnements erwerben.
+Jeder Benutzer mit Zugriffsrechten als [Besitzer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [Dienstadministrator oder Co-Admin](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) für das Azure-Abonnement kann Cloudabonnements erwerben.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Erwerben von Cloudabonnements
 
@@ -113,7 +113,7 @@ Antwort:  Ihr Administrator kann die Anzahl der Abonnements weiterhin reduzieren
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Frage: Können meine Kunden in Zukunft weitere jährliche Cloudabonnements erwerben, wenn sie ihr Abonnement kündigen?
 Antwort:  Sie können zwar kein weiteres jährliches Cloudabonnement erwerben, aber es gibt viele andere Optionen für den Erwerb von Visual Studio-Abonnements.  Weitere Informationen finden Sie unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-## <a name="related-resources"></a>Weitere Informationen
+## <a name="related-resources"></a>Verwandte Ressourcen
 - [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com/)
 - [Support für Visual Studio-Abonnements](https://visualstudio.microsoft.com/vs/support/)
 - [Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements](vscloud-billing-faq.md)

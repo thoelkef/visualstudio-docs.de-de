@@ -1,5 +1,5 @@
 ---
-title: 'CA2236: Aufrufen von Basisklassenmethoden auf ISerializable-Typen | Microsoft-Dokumentation'
+title: 'CA2236: Basisklassen Methoden für iserialisierbare Typen abrufen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - CallBaseClassMethodsOnISerializableTypes
 ms.assetid: 5a15b20d-769c-4640-b31a-36e07077daae
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4ec8c14da5c691f6f9740c6df86cb38aeb9fac5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d06d4acff24b724388e36de66038f563b1f5dc6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142394"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666707"
 ---
-# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen.
+# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
 |CheckId|CA2236|
-|Kategorie|Microsoft.Usage|
+|Kategorie|Microsoft. Usage|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
- Ein Typ abgeleitet wird, von einem Typ, der implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle und eine der folgenden Bedingungen zutrifft:
+ Ein Typ wird von einem Typ abgeleitet, der die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>-Schnittstelle implementiert, und eine der folgenden Bedingungen ist erfüllt:
 
-- Der Typ implementiert den Serialisierungskonstruktor, d. h. einen Konstruktor mit der <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Parametersignatur, aber nicht den Serialisierungskonstruktor des Basistyps aufgerufen wird.
+- Der-Typ implementiert den Serialisierungskonstruktor, d. h. einen Konstruktor mit der <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>-Parameter Signatur, ruft jedoch nicht den Serialisierungskonstruktor des Basistyps auf.
 
-- Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> Methode jedoch nicht auf die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode des Basistyps.
+- Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> Methode, ruft jedoch nicht die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>-Methode des Basistyps auf.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- In einem Prozess benutzerdefinierte Serialisierung, ein Typ implementiert die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode, um die Felder und den Serialisierungskonstruktor deserialisiert die Felder serialisiert werden sollen. Wenn der Typ von einem Typ abgeleitet wird, implementiert die <xref:System.Runtime.Serialization.ISerializable> Schnittstelle, die den Basistyp <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> -Methode und der Serialisierungskonstruktor aufgerufen werden soll, zu serialisieren/Deserialisieren die Felder des Basistyps. Andernfalls, der Typ wird nicht werden serialisiert und deserialisiert ordnungsgemäß. Beachten Sie, dass wenn der abgeleitete Typ keine neuen Felder hinzugefügt wird, der Typ nicht zum Implementieren notwendigerweise der <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode noch den Serialisierungskonstruktor oder rufen Sie die Entsprechungen für Basistyp.
+ Bei einem benutzerdefinierten Serialisierungsprozess implementiert ein Typ die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>-Methode, um seine Felder zu serialisieren, und den Serialisierungskonstruktor, um die Felder zu deserialisieren. Wenn der Typ von einem Typ abgeleitet wird, der die <xref:System.Runtime.Serialization.ISerializable>-Schnittstelle implementiert, sollte der Basistyp <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode und der Serialisierungskonstruktor aufgerufen werden, um die Felder des Basistyps zu serialisieren/deserialisieren. Andernfalls wird der Typ nicht serialisiert und deserialisiert. Beachten Sie Folgendes: Wenn der abgeleitete Typ keine neuen Felder hinzufügt, muss der Typ weder die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>-Methode noch den Serialisierungskonstruktor implementieren oder die Basistyp Entsprechungen aufzurufen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, rufen Sie den Basistyp <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode oder den Serialisierungskonstruktor Konstruktor aus der entsprechenden abgeleiteten Typmethode oder -Konstruktor.
+ Um einen Verstoß gegen diese Regel zu beheben, müssen Sie den Basistyp <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode oder den Serialisierungskonstruktor aus der entsprechenden abgeleiteten Typmethode oder dem entsprechenden Konstruktor aufzurufen.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt einen abgeleiteten Typ, der die Regel entspricht, durch Aufrufen des Serialisierungskonstruktors und <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode der Basisklasse.
+ Im folgenden Beispiel wird ein abgeleiteter Typ gezeigt, der die Regel erfüllt, indem der Serialisierungskonstruktor und <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>-Methode der Basisklasse aufgerufen werden.
 
  [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CallBaseISerializable/cs/FxCop.Usage.CallBaseISerializable.cs#1)]
  [!code-vb[FxCop.Usage.CallBaseISerializable#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CallBaseISerializable/vb/FxCop.Usage.CallBaseISerializable.vb#1)]

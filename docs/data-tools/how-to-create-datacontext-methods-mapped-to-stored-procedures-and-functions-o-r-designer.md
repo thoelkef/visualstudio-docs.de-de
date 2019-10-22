@@ -3,31 +3,31 @@ title: Zuordnen von DataContext-Methoden zu Sprocs und Functions (O-R-Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c3769634bfbeb98fcc31e5c074177d950248292
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4fa392467024a38dc447e6a5077f855d3464103b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648372"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Vorgehensweise: Erstellen von DataContext-Methoden, die gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Vorgehensweise: Erstellen von DataContext-Methoden, die zu gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)
 
-Sie können dem **O/R-Designer** gespeicherte Prozeduren und Funktionen <xref:System.Data.Linq.DataContext> als Methoden hinzufügen. Durch Aufrufen der Methode und Übergeben der erforderlichen Parameter wird die gespeicherte Prozedur oder Funktion in der Datenbank ausgeführt und gibt die Daten im Rückgabetyp der <xref:System.Data.Linq.DataContext>-Methode zurück. Ausführliche Informationen zu <xref:System.Data.Linq.DataContext> -Methoden finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+Sie können dem **O/R-Designer** gespeicherte Prozeduren und Funktionen als <xref:System.Data.Linq.DataContext> Methoden hinzufügen. Durch Aufrufen der Methode und Übergeben der erforderlichen Parameter wird die gespeicherte Prozedur oder Funktion in der Datenbank ausgeführt und gibt die Daten im Rückgabetyp der <xref:System.Data.Linq.DataContext>-Methode zurück. Ausführliche Informationen zu <xref:System.Data.Linq.DataContext> Methoden finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
-> Sie können auch gespeicherte Prozeduren verwenden, um [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] das standardmäßige Laufzeitverhalten zu überschreiben, das Einfügungen, Updates und Löschungen durchführt, wenn Änderungen aus Entitäts Klassen in einer Datenbank gespeichert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> Sie können auch gespeicherte Prozeduren verwenden, um das standardmäßige [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Laufzeitverhalten zu überschreiben, das Einfügungen, Updates und Löschungen durchführt, wenn Änderungen aus Entitäts Klassen in einer Datenbank gespeichert werden. Weitere Informationen finden Sie unter Gewusst [wie: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktualisierungen, Einfügungen und Löschungen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="create-datacontext-methods"></a>Erstellen von DataContext-Methoden
 
-Sie können Methoden <xref:System.Data.Linq.DataContext> erstellen, indem Sie gespeicherte Prozeduren oder Funktionen von <strong>Server-Explorer oder * * Datenbank-Explorer</strong> auf den **O/R-Designer**ziehen.
+Sie können <xref:System.Data.Linq.DataContext> Methoden erstellen, indem Sie gespeicherte Prozeduren oder Funktionen von <strong>Server-Explorer oder * * Datenbank-Explorer</strong> auf den **O/R-Designer**ziehen.
 
 > [!NOTE]
-> Der Rückgabetyp der <xref:System.Data.Linq.DataContext> generierten Methode unterscheidet sich abhängig davon, wo Sie die gespeicherte Prozedur oder Funktion im **O/R-Designer**ablegen. Wenn Sie Elemente direkt auf einer existierenden Entitätsklasse ablegen, wird eine <xref:System.Data.Linq.DataContext>-Methode mit dem Rückgabetyp dieser Entitätsklasse erstellt. Wenn Sie Elemente in einem leeren Bereich des **O/R-Designers** ablegen <xref:System.Data.Linq.DataContext> , wird eine Methode erstellt, die einen automatisch generierten Typ zurückgibt. Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ändern, nachdem Sie diese dem Bereich **Methoden** hinzugefügt haben. Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode zu überprüfen oder zu ändern, markieren Sie sie, und überprüfen Sie die Eigenschaft **Rückgabetyp** im Fenster **Eigenschaften**. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Rückgabetyps für eine DataContext-Methode (O/R-Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Der Rückgabetyp der generierten <xref:System.Data.Linq.DataContext> Methode unterscheidet sich abhängig davon, wo Sie die gespeicherte Prozedur oder Funktion im **O/R-Designer**ablegen. Wenn Sie Elemente direkt auf einer existierenden Entitätsklasse ablegen, wird eine <xref:System.Data.Linq.DataContext>-Methode mit dem Rückgabetyp dieser Entitätsklasse erstellt. Wenn Sie Elemente in einem leeren Bereich des **O/R-Designers** ablegen, wird eine <xref:System.Data.Linq.DataContext> Methode erstellt, die einen automatisch generierten Typ zurückgibt. Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ändern, nachdem Sie diese dem Bereich **Methoden** hinzugefügt haben. Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode zu überprüfen oder zu ändern, markieren Sie sie, und überprüfen Sie die Eigenschaft **Rückgabetyp** im Fenster **Eigenschaften**. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Rückgabe Typs einer DataContext-Methode (O/R-Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +48,7 @@ Sie können Methoden <xref:System.Data.Linq.DataContext> erstellen, indem Sie ge
      Die <xref:System.Data.Linq.DataContext>-Methode wird mit dem Rückgabetyp der ausgewählten Entitätsklasse erstellt und im Bereich **Methoden** angezeigt.
 
 > [!NOTE]
-> Informationen zum Ändern des Rückgabe Typs vorhandener <xref:System.Data.Linq.DataContext> Methoden finden [Sie unter Gewusst wie: Ändern des Rückgabetyps für eine DataContext-Methode (O/R-Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Weitere Informationen zum Ändern des Rückgabe Typs vorhandener <xref:System.Data.Linq.DataContext> Methoden finden Sie unter Gewusst [wie: Ändern des Rückgabe Typs einer DataContext-Methode (O/R-Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 ## <a name="see-also"></a>Siehe auch
 

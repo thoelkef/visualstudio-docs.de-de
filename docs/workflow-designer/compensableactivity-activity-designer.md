@@ -1,45 +1,45 @@
 ---
-title: Workflow-Designer - CompensableActivity-Aktivitätsdesigner
+title: Workflow-Designer-CompensableActivity-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe5a207136b44e61beff77bec8c8c7b869568b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f498c6d025e7527b9767284a77c953e538cef377
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949896"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650664"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity-Aktivitätsdesigner
 
-Die **CompensableActivity** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.CompensableActivity> Aktivität.
+Der **CompensableActivity** -Aktivitäts Designer wird verwendet, um eine <xref:System.Activities.Statements.CompensableActivity>-Aktivität zu erstellen und zu konfigurieren.
 
 ## <a name="the-compensableactivity-activity"></a>Die CompensableActivity-Aktivität
  Die <xref:System.Activities.Statements.CompensableActivity> definiert eine Arbeitseinheit, die nach erfolgreichem Abschluss bestätigt oder kompensiert werden kann.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Verwenden des CompensableActivity-Aktivitätsdesigners
- Die **CompensableActivity** Aktivitäts-Designer finden Sie in der **Transaktion** Kategorie **Toolbox**. Zum Öffnen **Toolbox**, wählen die **Toolbox** Registerkarte auf der linken Seite des Workflow-Designers. Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menü, oder drücken Sie **STRG**+**Alt** + **X**.
+ Der **CompensableActivity** -Aktivitäts Designer befindet sich in der Kategorie **Transaktion** der **Toolbox**. Um die **Toolbox**zu öffnen, wählen Sie die Registerkarte **Toolbox** auf der linken Seite des Workflow-Designer aus. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** +**alt** +**X**drücken.
 
- Die **CompensableActivity** Aktivitäts-Designer gezogen werden kann, von **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht. Sie konnte innerhalb der Aktivitäts-Designer Ablegen einer <xref:System.Activities.Statements.Sequence>. Löschen die Aktivitäts-Designer erstellt eine <xref:System.Activities.Statements.CompensableActivity> -Aktivität mit dem standardmäßigen <xref:System.Activities.Activity.DisplayName%2A> compensableactivity. Bearbeiten der <xref:System.Activities.Activity.DisplayName%2A> Wert im Header der **CompensableActivity** Aktivitäts-Designer. Sie können auch im bearbeitet werden die **"DisplayName"** Feld des Eigenschaftenrasters.
+ Der **CompensableActivity** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer Oberfläche abgelegt werden. Sie können den Aktivitäts Designer in einem <xref:System.Activities.Statements.Sequence> ablegen. Beim Löschen des Aktivitäts Designers wird eine <xref:System.Activities.Statements.CompensableActivity>-Aktivität mit einem Standard <xref:System.Activities.Activity.DisplayName%2A> von CompensableActivity erstellt. Bearbeiten Sie den <xref:System.Activities.Activity.DisplayName%2A> Wert im Header des **CompensableActivity** -Aktivitäts Designers. Sie kann auch im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
 ### <a name="the-compensableactivity-properties"></a>Die CompensableActivity-Eigenschaften
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.CompensableActivity>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die <xref:System.Activities.Activity.DisplayName%2A> und <xref:System.Activities.Activity%601.Result%2A> Eigenschaft kann im Eigenschaftenraster bearbeitet werden, aber die anderen Eigenschaften müssen auf der Oberfläche des Workflow-Designer bearbeitet werden.
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.CompensableActivity>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die Eigenschaften "<xref:System.Activities.Activity.DisplayName%2A>" und "<xref:System.Activities.Activity%601.Result%2A>" können im Eigenschaften Raster bearbeitet werden, die anderen Eigenschaften müssen jedoch auf der Workflow-Designer-Oberfläche bearbeitet werden.
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Der optionale Anzeigename der <xref:System.Activities.Statements.CompensableActivity>-Aktivität. Der Standardwert lautet CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Gibt den Rückgabewert der <xref:System.Activities.Statements.CompensableActivity> an. Diese Eigenschaft muss im Eigenschaftenraster bearbeitet werden.|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Gibt die Aktivität an, für die Kompensations-, Abbruch- und Bestätigungslogik bereitgestellt wurde. Hinzufügen der <xref:System.Activities.Statements.CompensableActivity.Body%2A> -Aktivität, indem Sie eine Aktivität aus **Toolbox** in die **Text** Feld der **CompensableActivity** Aktivitäts-Designer. Fügen Sie den Hinweistext "Aktivität hier ablegen" hinzu.|
-|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|Gibt die Aktivität, die ausgeführt wird, wenn ein Abbruch vorhanden ist. Fügen Sie die Aktivität hinzu, legen Sie ihren Designer aus **Toolbox** in die **CancellationHandler** Feld der **CompensableActivity** Aktivitäts-Designer. Fügen Sie Hinweistext "Aktivität hier ablegen" hinzu.|
-|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Gibt die Aktivität an, die beim Kompensieren der <xref:System.Activities.Statements.CompensableActivity.Body%2A>-Aktivität ausgeführt werden soll. Dieser Handler kann explizit mithilfe der <xref:System.Activities.Statements.Compensate>-Aktivität aufgerufen werden.<br /><br /> Fügen Sie die Aktivität hinzu, legen Sie ihren Aktivitätsdesigner aus **Toolbox** in die **CompensationHandler** Feld der **CompensableActivity** Aktivitäts-Designer. Fügen Sie Hinweistext "Aktivität hier ablegen" hinzu.|
-|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Gibt die Aktivität an, die beim Bestätigen der <xref:System.Activities.Statements.CompensableActivity.Body%2A>-Aktivität ausgeführt werden soll. Dieser Handler kann explizit mithilfe der <xref:System.Activities.Statements.Confirm>-Aktivität aufgerufen werden.<br /><br /> Fügen Sie die Aktivität hinzu, legen Sie ihren Aktivitätsdesigner aus **Toolbox** in die **ConfirmationHandler** Feld der **CompensableActivity** Aktivitäts-Designer. Fügen Sie Hinweistext "Aktivität hier ablegen" hinzu.|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Gibt die Aktivität an, für die Kompensations-, Abbruch- und Bestätigungslogik bereitgestellt wurde. Wenn Sie die <xref:System.Activities.Statements.CompensableActivity.Body%2A>-Aktivität hinzufügen möchten, legen Sie eine Aktivität aus der **Toolbox** im Feld **Body** des **CompensableActivity** -Aktivitäts Designers ab. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
+|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|Gibt die Aktivität an, die ausgeführt wird, wenn ein Abbruch vorliegt. Um die-Aktivität hinzuzufügen, löschen Sie Ihren Designer aus der **Toolbox** im Feld **cancellationhandler** im **CompensableActivity** -Aktivitäts Designer. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
+|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Gibt die Aktivität an, die beim Kompensieren der <xref:System.Activities.Statements.CompensableActivity.Body%2A>-Aktivität ausgeführt werden soll. Dieser Handler kann explizit mithilfe der <xref:System.Activities.Statements.Compensate>-Aktivität aufgerufen werden.<br /><br /> Um die-Aktivität hinzuzufügen, löschen Sie Ihren Aktivitäts Designer aus der **Toolbox** in das Feld **compensationhandler** im **CompensableActivity** -Aktivitäts Designer. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
+|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Gibt die Aktivität an, die beim Bestätigen der <xref:System.Activities.Statements.CompensableActivity.Body%2A>-Aktivität ausgeführt werden soll. Dieser Handler kann explizit mithilfe der <xref:System.Activities.Statements.Confirm>-Aktivität aufgerufen werden.<br /><br /> Um die-Aktivität hinzuzufügen, löschen Sie Ihren Aktivitäts Designer aus der **Toolbox** in das Feld **confirmationhandler** im **CompensableActivity** -Aktivitäts Designer. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
 
 ## <a name="see-also"></a>Siehe auch
 

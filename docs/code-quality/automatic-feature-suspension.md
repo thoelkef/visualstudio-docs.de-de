@@ -7,63 +7,63 @@ helpviewer_keywords:
 - performance
 - low-memory
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe86e085e50dc0e72c00b7bbe7a313e689e0ee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd399d78ac43085d89958ba358954f9e6cefe521
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571529"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606539"
 ---
 # <a name="automatic-feature-suspension"></a>Automatisches Anhalten von Features
 
-Wenn Ihre verfügbaren Arbeitsspeicher des Systems auf 200 MB oder weniger fällt, zeigt Visual Studio die folgende Meldung im Code-Editor:
+Wenn Ihr verfügbarer System Arbeitsspeicher auf 200 MB oder weniger fällt, zeigt Visual Studio im Code-Editor die folgende Meldung an:
 
-![Text der Warnung das Anhalten der vollständigen projektmappenanalyse](../code-quality/media/fsa_alert.png)
+![Warnungs Text zum Anhalten der vollständigen Lösungs Analyse](../code-quality/media/fsa_alert.png)
 
-Wenn Visual Studio eine Bedingung nicht genügenden Arbeitsspeichers erkannt wird, hält es automatisch bestimmte erweiterte Features, damit er stabil bleiben können. Visual Studio wie vorher funktionieren auch weiterhin, aber die Leistung beeinträchtigt wird.
+Wenn Visual Studio eine nicht genügend Arbeitsspeicher Bedingung erkennt, werden bestimmte erweiterte Funktionen automatisch angehalten, damit Sie stabil bleiben. Visual Studio funktioniert weiterhin wie zuvor, aber seine Leistung ist beeinträchtigt.
 
-In einem wenig Arbeitsspeicher verfügbar werden die folgenden Aktionen ausgeführt:
+Bei einem Mangel an Arbeitsspeicher erfolgen die folgenden Aktionen:
 
-- Vollständige projektmappenanalyse für Visual C# und Visual Basic ist deaktiviert.
+- Die vollständige projektmappenanalyse für Visual C# und Visual Basic ist deaktiviert.
 
-- [Die automatische Speicherbereinigung](/dotnet/standard/garbage-collection/index) (GC) mit niedriger Latenz im Modus für visuelle C# und Visual Basic ist deaktiviert.
+- Der Modus für die [Garbage Collection](/dotnet/standard/garbage-collection/index) (GC) mit niedriger C# Latenz für Visual und Visual Basic ist deaktiviert.
 
 - Visual Studio-Caches werden geleert.
 
 ## <a name="improve-visual-studio-performance"></a>Verbessern der Leistung von Visual Studio
 
-Tipps und Tricks zur Verbesserung von Visual Studio-Leistung beim Umgang mit großen Projektmappen oder niedriger Arbeitsspeicherstatus, finden Sie unter [Überlegungen zur Leistung bei großen Projektmappen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Tipps und Tricks zum Verbessern der Leistung von Visual Studio beim Umgang mit großen Lösungen oder Bedingungen mit geringem Arbeitsspeicher finden Sie unter [Überlegungen zur Leistung für große Lösungen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="full-solution-analysis-suspended"></a>Vollständige projektmappenanalyse angehalten
+## <a name="full-solution-analysis-suspended"></a>Vollständige Lösungs Analyse angehalten
 
-Standardmäßig ist die vollständige projektmappenanalyse für Visual Basic aktiviert und deaktiviert für Visual C#. Allerdings wird in ein wenig Arbeitsspeicher verfügbar, vollständige projektmappenanalyse automatisch für Visual Basic und Visual C#-, unabhängig von den Einstellungen im Dialogfeld "Optionen" deaktiviert. Allerdings können Sie vollständige projektmappenanalyse erneut aktivieren, indem Sie die Auswahl der **erneut aktivieren** Schaltfläche in der Info Balken-, wenn sie dazu angezeigt wird der **vollständige projektmappenanalyse aktivieren** Kontrollkästchen im Dialogfeld "Optionen" oder durch Visual Studio neu starten. Das Dialogfeld "Optionen" zeigt der aktuellen vollständige Projektmappe immer analyseeinstellungen. Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der vollständigen Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Standardmäßig ist die vollständige projektmappenanalyse für Visual Basic aktiviert und C#für das visuelle Element deaktiviert. Bei einem Mangel an Arbeitsspeicher wird die vollständige projektmappenanalyse für Visual Basic und Visual C#automatisch deaktiviert, unabhängig von den Einstellungen im Dialogfeld Optionen. Sie können jedoch die vollständige projektmappenanalyse erneut aktivieren, indem Sie die Schaltfläche **erneut aktivieren** auf der Info Leiste auswählen, wenn Sie angezeigt wird, indem Sie das Kontrollkästchen **vollständige projektmappenanalyse aktivieren** im Dialogfeld Optionen aktivieren oder Visual Studio neu starten. Im Dialogfeld Optionen werden immer die aktuellen vollständigen projektmappenanalyse-Einstellungen angezeigt. Weitere Informationen finden Sie unter Gewusst [wie: Aktivieren und Deaktivieren der vollständigen projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
-## <a name="gc-low-latency-disabled"></a>GC mit geringer Latenz deaktiviert
+## <a name="gc-low-latency-disabled"></a>GC mit geringer Latenzzeit deaktiviert
 
-Starten Sie Visual Studio neu, um im Modus mit niedriger Latenz der GC wieder zu aktivieren. Standardmäßig kann Visual Studio mit geringer Latenz GC-Modus, wenn Sie eine Eingabe vornehmen, stellen Sie sicher, dass die Schreibweise keine GC-Vorgänge blockiert. Eine Bedingung nicht genügenden Arbeitsspeichers führt dazu, dass Visual Studio die automatische Unterbrechung Warnung anzeigen, ist jedoch GC mit niedriger Latenz im Modus für diese Sitzung deaktiviert. Das Standardverhalten für die GC Neustart von Visual Studio erneut aktiviert werden. Weitere Informationen finden Sie unter <xref:System.Runtime.GCLatencyMode>.
+Starten Sie Visual Studio neu, um den GC-Modus mit niedriger Latenz wieder zu aktivieren. Standardmäßig ermöglicht Visual Studio den GC-Modus mit niedriger Latenz, wenn Sie eingeben, um sicherzustellen, dass Ihre Typisierung keine GC-Vorgänge blockiert. Wenn in Visual Studio jedoch aufgrund von geringem Arbeitsspeicher die automatische anhaltewarnung angezeigt wird, ist der GC-Modus mit niedriger Latenzzeit für diese Sitzung deaktiviert. Wenn Sie Visual Studio neu starten, wird das standardmäßige GC-Verhalten erneut aktiviert. Weitere Informationen finden Sie unter <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Visual Studio-Caches geleert
+## <a name="visual-studio-caches-flushed"></a>In Visual Studio geleerte Caches
 
-Wenn Sie die aktuelle Sitzung für die Entwicklung weiterhin oder Visual Studio neu starten, werden sofort alle Visual Studio-Caches geleert, aber später allmählich neu auffüllen. Die Caches geleert umfassen Caches für die folgenden Features:
+Wenn Sie die aktuelle Entwicklungs Sitzung fortsetzen oder Visual Studio neu starten, werden alle Visual Studio-Caches sofort geleert, aber mit dem erneuten Auffüllen begonnen. Die geleerten Caches enthalten Caches für die folgenden Features:
 
 - Alle Verweise suchen
 
 - Navigieren zu
 
-- Fügen mit hinzu
+- Hinzufügen mithilfe von
 
-Darüber hinaus sind für interne Visual Studio-Vorgänge verwendeten Caches ebenfalls gelöscht.
+Außerdem werden Caches, die für interne Visual Studio-Vorgänge verwendet werden, ebenfalls gelöscht.
 
 > [!NOTE]
-> Die Funktion zum automatischen Unterbrechung Warnung tritt nur einmal auf einer Basis pro Lösung nicht auf einer Basis pro Sitzung. Dies bedeutet, wenn Sie von Visual Basic, Visual C# (oder umgekehrt) wechseln, und führen Sie in einem anderen nicht genügend Arbeitsspeicher verfügbar, Sie möglicherweise eine andere Funktion zum automatischen Warnung zu gesperrter abrufen können.
+> Die automatische Merkmals Unterbrechungs Warnung tritt nur einmal pro Lösung auf, nicht pro Sitzung. Dies bedeutet Folgendes: Wenn Sie von Visual Basic zu Visual C# wechseln (oder umgekehrt) und auf einen anderen Arbeitsspeicher Mangel stoßen, können Sie möglicherweise eine weitere Warnung zur automatischen Funktions Unterbrechung erhalten.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Aktivieren und Deaktivieren der vollständigen Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Grundlagen der Garbage Collection](/dotnet/standard/garbage-collection/fundamentals)
-- [Überlegungen zur Leistung bei großen Projektmappen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Überlegungen zur Leistung für große Lösungen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435095"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670592"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Entsperren von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
 ### <a name="updating-stale-licenses"></a>Aktualisieren veralteter Lizenzen
  Möglicherweise wurde die folgende Meldung angezeigt, dass Ihre Lizenz in Visual Studio abgelaufen ist.
 
- ![Visual Studio-Dialogfeld „Benutzerinformationen“](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Visual Studio-Dialogfeld „Benutzerinformationen“](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  Diese Meldung gibt an, dass Ihr Abonnement zwar ggf. gültig ist, jedoch das von Visual Studio für Ihr Abonnement verwendete Lizenztoken nicht aktualisiert wurde und aus einem der folgenden Gründe abgelaufen ist:
 

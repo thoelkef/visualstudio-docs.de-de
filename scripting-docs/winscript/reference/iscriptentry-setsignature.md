@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetSignature | Microsoft-Dokumentation
+title: 'Iscriptentry:: SetSignature | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42740a0e6261317443b8c9cc23559a2f92f66540
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e381e642462fe56e661de9da0d8974dc7bf18b18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787188"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575339"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
-Legt die Typinformationen für ein `IScriptEntry` Function-Objekt.  
+Legt Typinformationen für ein `IScriptEntry` Funktions Objekt fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT SetSignature(
   
 #### <a name="parameters"></a>Parameter  
  `pti`  
- [in] Die Typinformationen.  
+ in Die Typinformationen.  
   
  `iMethod`  
- [in] Der Index der Methode in der `ITypeInfo` Objekt.  
+ in Der Methoden Index im `ITypeInfo`-Objekt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,7 +51,7 @@ HRESULT SetSignature(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Legen Sie Typinformationen mit `IScriptEntry::SetSignature` oder [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Typinformationen kann auch durch den Eintrag, der basierend auf Ihrer Darstellung in der internen Funktion generiert werden.  
+ Sie legen Typinformationen mithilfe von `IScriptEntry::SetSignature` oder [iscriptnode:: kreatechildhandler](../../winscript/reference/iscriptnode-createchildhandler.md)fest. Typinformationen können auch durch den Eintrag basierend auf der internen Funktions Darstellung generiert werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

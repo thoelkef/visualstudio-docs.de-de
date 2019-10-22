@@ -4,30 +4,30 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65960b2ad7f0eb31a9c969fb4671f883dc477c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001463"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606008"
 ---
 # <a name="text-template-utility-methods"></a>Hilfsprogrammmethoden für Textvorlagen
 
-Es gibt mehrere Methoden, die immer verfügbar, Sie beim Schreiben von Code in einer Textvorlage Visual Studio sind. Diese Methoden werden in definiert <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Wenn Sie Code in einer Visual Studio-Textvorlage schreiben, stehen Ihnen mehrere Methoden zur Verfügung. Diese Methoden werden in <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> definiert.
 
 > [!TIP]
-> Sie können auch andere Methoden und Diensten, die von der hostumgebung in einem regulären (nicht vorverarbeiteten Textvorlage) bereitgestellt. Z. B. Sie Dateipfade zu beheben, Fehler protokollieren und Abrufen von Visual Studio und alle bereitgestellten Dienste können geladenen Pakete. Weitere Informationen finden Sie unter [den Zugriff auf Visual Studio von einer Textvorlage](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
+> Sie können auch andere Methoden und Dienste, die von der Host Umgebung bereitgestellt werden, in einer regulären (nicht vorverarbeiteten) Textvorlage verwenden. Beispielsweise können Sie Dateipfade auflösen, Fehler protokollieren und Dienste, die von Visual Studio bereitgestellt werden, sowie alle geladenen Pakete erhalten. Weitere Informationen finden Sie unter [zugreifen auf Visual Studio von einer Text Vorlage aus](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ## <a name="write-methods"></a>Write-Methoden
 
-Sie können die `Write()` und `WriteLine()` Methoden zum Anfügen von Text in einem standard-Codeblock, anstatt einen Codeblock Ausdruck. Die folgenden beiden Codeblöcke sind funktional äquivalent.
+Sie können die Methoden `Write()` und `WriteLine()` verwenden, um Text in einem standardmäßigen Codeblock anzufügen, anstatt einen Ausdrucks Code Block zu verwenden. Die folgenden beiden Code Blöcke sind funktional äquivalent.
 
-### <a name="code-block-with-an-expression-block"></a>Der Codeblock mit einem Ausdrucksblock
+### <a name="code-block-with-an-expression-block"></a>Codeblock mit einem Ausdrucks Block
 
 ```
 <#
@@ -39,7 +39,7 @@ while (i-- > 0)
 #>
 ```
 
-### <a name="code-block-using-writeline"></a>Mithilfe von WriteLine()"Codeblock
+### <a name="code-block-using-writeline"></a>Codeblock mit "Write teline ()"
 
 ```
 <#
@@ -51,9 +51,9 @@ while (i-- > 0)
 #>
 ```
 
-Möglicherweise finden Sie es hilfreich, um eine der folgenden Hilfsprogrammmethoden statt einem Ausdrucksblock in einem langen Codeblock mit geschachtelten Steuerungsstrukturen.
+Möglicherweise ist es hilfreich, eine dieser Hilfsmethoden anstelle eines Ausdrucks Blocks innerhalb eines langen Codeblocks mit geschachtelten Steuerungsstrukturen zu verwenden.
 
-Die `Write()` und `WriteLine()` Methoden verfügen über zwei Überladungen, die eine, die einen einzelnen Zeichenfolgenparameter und eine, die akzeptiert übernimmt, eine kombinierte Formatzeichenfolge sowie ein Array von Objekten, die in der Zeichenfolge enthalten (z. B. die `Console.WriteLine()` Methode). Die folgenden beiden Verwendungen von `WriteLine()` sind funktional äquivalent:
+Die Methoden `Write()` und `WriteLine()` haben zwei über Ladungen, die einen einzelnen Zeichen folgen Parameter und einen, der eine kombinierte Format Zeichenfolge annimmt, sowie ein Array von-Objekten, die in die Zeichenfolge eingeschlossen werden sollen (wie die `Console.WriteLine()`-Methode). Die folgenden beiden Verwendungsmöglichkeiten von `WriteLine()` sind funktional äquivalent:
 
 ```
 <#
@@ -67,9 +67,9 @@ Die `Write()` und `WriteLine()` Methoden verfügen über zwei Überladungen, die
 #>
 ```
 
-## <a name="indentation-methods"></a>Einzugsmethoden
+## <a name="indentation-methods"></a>Einzug Methoden
 
-Sie können den Einzugsmethoden verwenden, zum Formatieren der Ausgabe von der Textvorlage. Die <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> -Klasse verfügt über eine `CurrentIndent` Zeichenfolgeneigenschaft, die den aktuellen Einzug in der Textvorlage anzeigt und ein `indentLengths` Feld, das eine Liste der die Einzüge, die hinzugefügt wurden. Sie können einen Einzug mit Hinzufügen der `PushIndent()` Methode und subtrahieren ein Einzugs mit der `PopIndent()` Methode. Wenn Sie alle Einzüge entfernen möchten, verwenden Sie die `ClearIndent()` Methode. Der folgende Codeblock zeigt die Verwendung der folgenden Methoden:
+Sie können Einzugs Methoden verwenden, um die Ausgabe der Textvorlage zu formatieren. Die <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>-Klasse verfügt über eine `CurrentIndent` String-Eigenschaft, die den aktuellen Einzug in der Textvorlage und ein `indentLengths` Feld anzeigt, das eine Liste der hinzugefügten Einzug ist. Sie können einen Einzug mit der `PushIndent()`-Methode hinzufügen und einen Einzug mit der `PopIndent()`-Methode subtrahieren. Wenn Sie alle Einzüge entfernen möchten, verwenden Sie die `ClearIndent()`-Methode. Der folgende Codeblock zeigt die Verwendung dieser Methoden:
 
 ```
 <#
@@ -95,9 +95,9 @@ Hello
         Hello
 ```
 
-## <a name="error-and-warning-methods"></a>Fehler und Warning-Methoden
+## <a name="error-and-warning-methods"></a>Fehler-und Warnungs Methoden
 
-Sie können die Fehler- und Warnung Utility-Methoden verwenden, zum Hinzufügen von Nachrichten auf der Visual Studio-Fehlerliste. Beispielsweise wird der folgende Code eine Fehlermeldung der Fehlerliste hinzugefügt werden.
+Sie können Fehler-und Warnungs Hilfsprogrammmethoden zum Hinzufügen von Nachrichten zu Visual Studio-Fehlerliste verwenden. Der folgende Code fügt z. b. eine Fehlermeldung zum Fehlerliste hinzu.
 
 ```
 <#
@@ -113,25 +113,25 @@ Sie können die Fehler- und Warnung Utility-Methoden verwenden, zum Hinzufügen 
 #>
 ```
 
-## <a name="access-to-host-and-service-provider"></a>Zugriff auf den Host und Dienstanbieter
+## <a name="access-to-host-and-service-provider"></a>Zugriff auf Host und Dienstanbieter
 
-Die Eigenschaft `this.Host` bieten Zugriff auf Eigenschaften verfügbar gemacht werden, durch den Host, der die Vorlage ausgeführt wird. Verwendung von `this.Host`, müssen Sie festlegen, `hostspecific` -Attribut in der `<@template#>` Richtlinie:
+Die-Eigenschaft `this.Host` kann den Zugriff auf Eigenschaften bereitstellen, die vom Host verfügbar gemacht werden, der die Vorlage ausführt. Um `this.Host` verwenden zu können, müssen Sie `hostspecific` Attribut in der `<@template#>`-Direktive festlegen:
 
 `<#@template ... hostspecific="true" #>`
 
-Der Typ des `this.Host` hängt vom Typ des Hosts, die in der die Vorlage ausgeführt wird. In einer Vorlage, die in Visual Studio ausgeführt wird, können Sie umwandeln `this.Host` zu `IServiceProvider` für den Zugriff auf Dienste wie der IDE. Zum Beispiel:
+Der Typ der `this.Host` hängt vom Hosttyp ab, in dem die Vorlage ausgeführt wird. In einer Vorlage, die in Visual Studio ausgeführt wird, können Sie `this.Host` in `IServiceProvider` umwandeln, um Zugriff auf Dienste wie z. b. die IDE zu erhalten. Beispiel:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
                        .GetService(typeof(EnvDTE.DTE));
 ```
 
-## <a name="using-a-different-set-of-utility-methods"></a>Verwenden einen anderen Satz von Hilfsmethoden
+## <a name="using-a-different-set-of-utility-methods"></a>Verwenden eines anderen Satzes von Hilfsprogrammmethoden
 
-Als Teil des Generierungsprozesses der Text, in eine Klasse, die immer den Namen die Vorlagendatei transformiert `GeneratedTextTransformation`und erbt von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Sollten Sie einen anderen können Satz von Methoden stattdessen Sie eine eigene Klasse schreiben und es in der Template-Direktive angeben. Die Klasse muss von erben <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Im Rahmen des Text Generierungs Prozesses wird die Vorlagen Datei in eine Klasse transformiert, die immer benannt ist, `GeneratedTextTransformation`and von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> erbt. Wenn Sie stattdessen einen anderen Satz von Methoden verwenden möchten, können Sie eine eigene Klasse schreiben und in der Template-Direktive angeben. Die Klasse muss von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> erben.
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
-Verwenden der `assembly` Richtlinie auf die Assembly verweisen, in denen die kompilierte Klasse gefunden werden kann.
+Verwenden Sie die `assembly` Direktive, um auf die Assembly zu verweisen, in der sich die kompilierte Klasse befindet.

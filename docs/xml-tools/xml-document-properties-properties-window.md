@@ -3,53 +3,53 @@ title: XML-Dokumenteigenschaften, Eigenschaftenfenster
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 679ac529708a49d18025672ce8f880c4f7710471
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808131"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604159"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML-Dokumenteigenschaften, Eigenschaftenfenster
 
-Die **Eigenschaften** Eigenschaftenfenster liefert grundlegende Informationen über das Dokument, das in der XML-Editor aktiv ist. Die verfügbaren Eigenschaften sind vom Typ des gerade aktiven XML-Dokuments abhängig.
+Das Fenster **Eigenschaften** enthält grundlegende Informationen über das Dokument, das im XML-Editor aktiv ist. Die verfügbaren Eigenschaften sind vom Typ des gerade aktiven XML-Dokuments abhängig.
 
 > [!NOTE]
 > Alle XML-Dokumenteigenschaften werden in der Projektmappe gespeichert. Dadurch müssen Sie diese Werte nicht erneut eingeben, wenn Sie die Projektmappe das nächste Mal öffnen.
 
-**Encoding**
+**Kodierung**
 
 Die Zeichencodierung für die Datei. Wenn diese Eigenschaft geändert wird, wird auch das Codierungsattribut für die XML-Deklaration geändert und umgekehrt. Die neue Codierung wird verwendet, um die Datei zu codieren, wenn Sie die Datei speichern.
 
 **Eingabe**
 
-Das dem XSLT-Stylesheet zugeordnete Eingabedokument. Es dient der **XSLT starten** Befehle, z. B. **XML** > **XSLT ohne Debugging starten**. Ein Dokument mit der Schaltfläche ausgewählt werden kann (**...** ) Schaltfläche.
+Das dem XSLT-Stylesheet zugeordnete Eingabedokument. Sie wird von den **Start-XSLT** -Befehlen verwendet, z. b. **XML**  > **XSLT ohne Debugging starten**. Ein Dokument kann mithilfe der Schaltfläche zum Durchsuchen ( **...** ) ausgewählt werden.
 
-Diese Eigenschaft wird angezeigt, nur, wenn eine XSLT-Datei im Editor geöffnet ist.
+Diese Eigenschaft ist nur sichtbar, wenn eine XSLT-Datei im Editor geöffnet ist.
 
 **Ausgabe**
 
 Die bei der Transformation eines XML-Dokuments generierte Datei.
 
-Wenn eine Datei nicht angegeben ist, ein Standarddateiname wird generiert basierend auf den `method` -Attribut für die `xsl:output` -Element, das die Dateierweiterung bestimmt. Die Standarddatei befindet sich im temporären Verzeichnis des aktuellen Benutzers.
+Wenn keine Datei angegeben wird, wird ein Standard Dateiname basierend auf dem `method`-Attribut im `xsl:output`-Element generiert, das die Dateierweiterung bestimmt. Die Standarddatei befindet sich im temporären Verzeichnis des aktuellen Benutzers.
 
 **Schemas**
 
-Die für die Validierung verwendeten Schemata. Die Schaltfläche öffnet die **XSD-Schemas** das Dialogfeld zum Auswählen der zu verwendenden Schemas verwendet werden kann.
+Die für die Validierung verwendeten Schemata. Mit der Schaltfläche wird das Dialogfeld **XSD-Schemas** geöffnet, in dem die zu verwendenden Schemas ausgewählt werden können.
 
 Sie können den Pfad zu den Schemata auch eingeben. Wenn mehrere Schemata angegeben sind, muss jeder Schemapfad in doppelte Anführungszeichen eingeschlossen werden.
 
 **Stylesheet**
 
-Die XSLT-Datei, die verwendet wird, um das Dokument zu transformieren. wenn die **XSLT Debuggen starten** und **XSLT ohne Debugging starten** -Befehle verwendet werden. Wenn dieses Feld leer ist, wird der Editor verwendet den Wert der `xml-stylesheet` -verarbeitungsanweisung des Dokuments oder es fordert Sie zur Eingabe eines Dateinamens.
+Die XSLT-Datei, die verwendet wird, um das Dokument zu transformieren, wenn die Befehle **XSLT-Debugging starten** und **XSLT ohne Debugging** starten verwendet werden. Wenn dieses Feld leer ist, verwendet der Editor den Wert, der in der `xml-stylesheet` Verarbeitungsanweisung des Dokuments enthalten ist, oder Sie werden aufgefordert, einen Dateinamen einzugeben.
 
-Beim Bearbeiten einer XSLT-Datei kann diese Eigenschaft verwendet werden, um anzugeben, dass ein anderes Stylesheet sollte verwendet werden, wenn die **XSLT Debuggen starten** oder **XSLT ohne Debugging starten** Befehl aktiviert ist. Beispielsweise empfiehlt es sich um dies zu tun, wenn Sie ein Stylesheet bearbeiten, die in einem übergeordneten Stylesheet enthalten ist.
+Wenn Sie eine XSLT-Datei bearbeiten, kann diese Eigenschaft verwendet werden, um anzugeben, dass ein anderes Stylesheet verwendet werden soll, wenn der Befehl **XSLT-Debugging starten** oder **XSLT ohne Debugging** starten ausgewählt ist. Dies kann z. b. der Fall sein, wenn Sie ein Stylesheet bearbeiten, das in einem übergeordneten Stylesheet enthalten ist.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-editor](../xml-tools/xml-editor.md)
+- [XML-Editor](../xml-tools/xml-editor.md)

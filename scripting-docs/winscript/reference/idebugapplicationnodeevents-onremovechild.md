@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft-Dokumentation
+title: 'Idebugapplicationnodeevents:: onremovechild | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e59624e5ec6659e0fea3d55fdaddf7949eac18f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ff7b28f14c26029d64197ba919cc97c90a856c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822157"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574668"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-Behandelt das Ereignis, wenn ein untergeordneter Knoten aus einer Debug-Anwendungsobjekt Knoten entfernt wird.  
+Behandelt das-Ereignis, wenn ein untergeordneter Knoten aus einem Debug-Anwendungs Knoten Objekt entfernt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Parameter  
  `prddpChild`  
- [in] Der Knoten der untergeordneten-Anwendung, der entfernt wurde.  
+ in Der untergeordnete Anwendungs Knoten, der entfernt wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,11 +47,11 @@ HRESULT onRemoveChild(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt das Ereignis, wenn ein untergeordneter Knoten aus einer Debug-Anwendungsobjekt Knoten entfernt wird.  
+ Diese Methode behandelt das-Ereignis, wenn ein untergeordneter Knoten aus einem Debug-Anwendungs Knoten Objekt entfernt wird.  
   
- Implementierungen der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
+ Implementierer der `IDebugApplicationNode`-Schnittstelle gibt dieses Ereignis aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
+ [Idebugapplicationnodeevents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)    
+ [Idebugapplicationnodeevents:: onaddchild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)    
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

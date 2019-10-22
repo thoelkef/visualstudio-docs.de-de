@@ -17,21 +17,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6a9c6d2c2159ca21f227beb2f8bd1a98b9420328
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3289fd82f8a3b99bf49ee796e49a285ffb93793c
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894338"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536011"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Vorgehensweise: Debuggen von ASP.NET-Ausnahmen
+# <a name="how-to-debug-aspnet-exceptions"></a>Gewusst wie: Debuggen von ASP.NET-Ausnahmen
 Das Debuggen von Ausnahmen ist ein wichtiger Teil bei der Entwicklung einer robusten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung. Allgemeine Informationen zum Debuggen von Ausnahmen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md).
 
- Zum Debuggen von nicht behandelten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Ausnahmen muss sichergestellt sein, dass der Debugger dort anhält. Die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Laufzeit verfügt über einen Ausnahmehandler der obersten Ebene. Daher wird der Debugger bei Ausnahmefehlern standardmäßig nie unterbrochen. Um den Debugger anhalten, wenn eine Ausnahme ausgelöst wird, müssen Sie auswählen **Unterbrechen bei folgendem Ausnahmezustand: Wird ausgelöst,** für die jeweilige Ausnahme im Festlegen der **Ausnahmen** Dialogfeld.
+ Zum Debuggen von nicht behandelten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Ausnahmen muss sichergestellt sein, dass der Debugger dort anhält. Die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Laufzeit verfügt über einen Ausnahmehandler der obersten Ebene. Daher wird der Debugger bei Ausnahmefehlern standardmäßig nie unterbrochen. Um den Debugger beim Auslösen einer Ausnahme zu unterbrechen, müssen Sie die Einstellung **Break when an exception is: Thrown** (Unterbrechen bei folgendem Ausnahmezustand: Ausgelöst) für die jeweilige Ausnahme im Dialogfeld **Ausnahmen** auswählen.
 
- Wenn Sie nur mein Code aktiviert haben **Unterbrechen bei folgendem Ausnahmezustand: Wird ausgelöst,** bewirkt nicht, dass den Debugger sofort unterbrochen wird, wenn eine Ausnahme in einer .NET Framework-Methode oder anderem Systemcode ausgelöst wird. Stattdessen wird die Ausführung fortgesetzt, bis der Debugger auf Nicht-Systemcode trifft, und dann unterbrochen. Folglich müssen Sie den Systemcode nicht schrittweise durchlaufen, wenn eine Ausnahme auftritt.
+ Wenn Sie nur eigenen Code aktiviert haben, unterbrechen Sie das Auftreten **einer Ausnahme:** wenn eine Ausnahme ausgelöst wird, wird der Debugger nicht sofort beendet, wenn eine Ausnahme in einer .NET-Methode oder einem anderen System Code ausgelöst wird. Stattdessen wird die Ausführung fortgesetzt, bis der Debugger auf Nicht-Systemcode trifft, und dann unterbrochen. Folglich müssen Sie den Systemcode nicht schrittweise durchlaufen, wenn eine Ausnahme auftritt.
 
- Nur mein Code bietet Ihnen eine weitere Möglichkeit, die sogar noch nützlicher sein können: **Unterbrechen Sie bei folgendem Ausnahmezustand: Vom Benutzercode unbehandelt**. Bei dieser Einstellung für eine Ausnahme unterbricht der Debugger die Ausführung im Benutzercode nur, wenn die Ausnahme nicht durch den Benutzercode abgefangen und behandelt wird. Diese Einstellung neutralisiert die Wirkung des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Ausnahmehandlers der obersten Ebene, da dieser kein benutzerdefinierter Code ist.
+ Die Einstellung „Nur eigenen Code“ stellt Ihnen eine weitere Option zur Verfügung, die sogar noch nützlicher sein kann: **Break when an exception is: User-unhandled** (Unterbrechen bei folgendem Ausnahmezustand: Vom Benutzercode unbehandelt). Bei dieser Einstellung für eine Ausnahme unterbricht der Debugger die Ausführung im Benutzercode nur, wenn die Ausnahme nicht durch den Benutzercode abgefangen und behandelt wird. Diese Einstellung neutralisiert die Wirkung des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Ausnahmehandlers der obersten Ebene, da dieser kein benutzerdefinierter Code ist.
 
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>So aktivieren Sie Debuggen der ASP.NET-Ausnahmen mit Nur mein Code
 

@@ -6,67 +6,67 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816356"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649479"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 
-Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Azure DevOps-Projekt ausgeführt werden, mit der Eincheckrichtlinie für die Analyse. Codeanalyse erfordert, kann die Qualität des Codes verbessern, die in die CodeBase überprüft wird.
+Mithilfe der Eincheck Richtlinie für die Code Analyse können Sie festlegen, dass die Code Analyse für alle Code Projekte in einem Azure devops-Projekt ausgeführt werden soll. Wenn Sie die Code Analyse benötigen, können Sie die Qualität des Codes verbessern, der in die Codebasis eingecheckt wird.
 
 > [!NOTE]
-> Dieses Feature ist nur verfügbar, wenn Sie Team Foundation Server verwenden.
+> Diese Funktion ist nur verfügbar, wenn Sie Team Foundation Server verwenden.
 
-Eincheckrichtlinien für die Analyse in den projekteinstellungen festgelegt werden und gelten für jedes Codeprojekt. Codeanalysen werden bei Projekten mit Code in der Projektdatei (XXPROJ) für das Codeprojekt konfiguriert. Codeanalysen werden auf dem lokalen Computer ausgeführt. Wenn Sie eine Eincheckrichtlinie für die Analyse ermöglichen, Dateien in einem Codeprojekt, die eingecheckt werden, nach ihrer letzten Bearbeitung kompiliert werden müssen und eine Codeanalyse ausgeführt werden, mindestens enthält müssen die Regeln in den projekteinstellungen auf dem Computer ausgeführt werden, in dem die Änderung s vorgenommen wurden.
+Eincheck Richtlinien für die Code Analyse werden in den Projekteinstellungen festgelegt und gelten für jedes Code Projekt. Code Analyse Ausführungen werden für Code Projekte in der Projektdatei (. XXPROJ) für das Code Projekt konfiguriert. Code Analyse Ausführungen werden auf dem lokalen Computer ausgeführt. Wenn Sie eine Eincheck Richtlinie für die Code Analyse aktivieren, müssen die Dateien in einem Code Projekt, das eingecheckt werden soll, nach der letzten Bearbeitung kompiliert werden, und es muss eine Code Analyse ausgeführt werden, die mindestens die Regeln in den Projekteinstellungen auf dem Computer, auf dem die Änderung vorgenommen wurde, ausführen muss. e wurden erstellt.
 
-- Für verwalteten Code, Festlegen der Check-in-Richtlinie durch Angabe einer *Regelsatz* , enthält eine Teilmenge der Regeln für die Codeanalyse.
+- Bei verwaltetem Code legen Sie die Eincheck Richtlinie durch Angabe eines *Regelsatzes* fest, der eine Teilmenge der Code Analyse Regeln enthält.
 
-- Für C/C++-Code in Visual Studio 2017 Version 15.6 und früher erfordert die Check-in-Richtlinie an, dass alle Regeln für die Codeanalyse ausgeführt werden. Sie können die präprozessoranweisungen deaktivieren bestimmte Regeln für die einzelne Codeprojekte in Ihrem Azure DevOps-Projekt hinzufügen. In 15.7 und höher können Sie **/ analyze: Ruleset** an welche Regeln ausgeführt. Weitere Informationen finden Sie unter [Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- Bei C/C++ Code in Visual Studio 2017 Version 15,6 und früher erfordert die Eincheck Richtlinie, dass alle Code Analyse Regeln ausgeführt werden. Sie können Präprozessordirektiven hinzufügen, um bestimmte Regeln für die einzelnen Code Projekte in Ihrem Azure devops-Projekt zu deaktivieren. In 15,7 und höher können Sie **/analyze: RuleSet** verwenden, um anzugeben, welche Regeln ausgeführt werden sollen. Weitere Informationen finden Sie unter [Verwenden von Regelsätzen zum angeben C++ der zu testenden Regeln](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-Nachdem Sie eine Eincheckrichtlinie für verwalteten Code angegeben haben, können Teammitglieder ihre codeanalyseeinstellungen für Codeprojekte an den Richtlinieneinstellungen für Azure DevOps-Projekt synchronisieren.
+Nachdem Sie eine Eincheck Richtlinie für verwalteten Code angegeben haben, können die Teammitglieder ihre Code Analyse Einstellungen für Code Projekte mit den Azure devops-Projektrichtlinien Einstellungen synchronisieren.
 
-## <a name="to-open-the-check-in-policy-editor"></a>Die Check-in Gruppenrichtlinienverwaltungs-Editor öffnen
+## <a name="to-open-the-check-in-policy-editor"></a>So öffnen Sie den Editor für Check-in-Richtlinien
 
-1. In Team Explorer mit der Maustaste des Projektnamens, zeigen Sie auf **Projekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.
+1. Klicken Sie in Team Explorer mit der rechten Maustaste auf den Projektnamen, zeigen Sie auf **Projekteinstellungen**, und klicken Sie dann auf **Quell**Code Verwaltung.
 
-1. In der **Quellcodeverwaltung** wählen Sie im Dialogfeld die **Eincheckrichtlinie** Registerkarte.
+1. Wählen Sie im Dialogfeld **Quell** Code Verwaltung die Registerkarte **Check-in-Richtlinie** aus.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-    - Klicken Sie auf **hinzufügen** zum Erstellen einer neuen Check-in-Richtlinie.
+    - Klicken Sie auf **Hinzufügen** , um eine neue Eincheck Richtlinie zu erstellen.
 
-    - Doppelklicken Sie auf die vorhandene **Codeanalyse** Element in der **Richtlinientyp** Liste, um die Richtlinie zu ändern.
+    - Doppelklicken Sie in der Liste **Richtlinientyp** auf das vorhandene **Code Analyse** Element, um die Richtlinie zu ändern.
 
-## <a name="to-set-policy-options"></a>Festlegen von Optionen
+## <a name="to-set-policy-options"></a>So legen Sie Richtlinien Optionen fest
 
-Aktivieren Sie oder deaktivieren Sie die folgenden Optionen:
+Aktivieren oder deaktivieren Sie die folgenden Optionen:
 
 |Option|Beschreibung|
 |------------|-----------------|
-|**Erzwingen Sie, um nur die Dateien enthalten, die Teil der aktuellen Projektmappe eingecheckt.**|Codeanalyse kann nur auf Dateien in Projektmappen und Projektdateien Konfigurationsdateien angegeben ausgeführt. Diese Richtlinie wird sichergestellt, dass sämtlicher Code, der Teil einer Projektmappe wird analysiert wird.|
-|**C/C++-Codeanalyse erzwingen (/ analyze)**|Erfordert, dass alle C- oder C++-Projekte erstellt werden, mit dem / analyze-Compileroption, um die Codeanalyse ausgeführt wird, bevor sie eingecheckt werden können.|
-|**Codeanalyse für verwalteten Code erzwingen**|Erfordert, dass alle verwalteten Projekte odeanalyse ausführen und zu erstellen, bevor sie eingecheckt werden können.|
+|**Erzwingen Sie den Eincheck Vorgang, sodass nur Dateien enthalten sind, die Teil der aktuellen Projekt Mappe sind.**|Die Code Analyse kann nur für Dateien ausgeführt werden, die in den Projektmappen-und Projekt Konfigurationsdateien Diese Richtlinie stellt sicher, dass der gesamte Code, der Teil einer Lösung ist, analysiert wird.|
+|**C/CodeC++ -Analyse erzwingen (/analyze)**|Erfordert, dass alle C C++ -oder-Projekte mit der/analyze-Compileroption erstellt werden, um die Code Analyse auszuführen, bevor Sie eingeglichen werden können.|
+|**Code Analyse für verwalteten Code erzwingen**|Erfordert, dass alle verwalteten Projekte eine Code Analyse ausführen und erstellt werden, bevor Sie eingeglichen werden können.|
 
-## <a name="to-specify-a-managed-rule-set"></a>Um einen verwalteten Regelsatz anzugeben.
+## <a name="to-specify-a-managed-rule-set"></a>So geben Sie einen verwalteten Regelsatz an
 
-Von der **diesen Regelsatz ausführen** aufzulisten, verwenden Sie eine der folgenden Methoden:
+Verwenden Sie in der Liste **diesen Regelsatz ausführen** eine der folgenden Methoden:
 
-- Wählen Sie einen Microsoft-standard-Regelsatz.
+- Wählen Sie einen Microsoft Standard-Regelsatz aus.
 
-- Wählen Sie eine benutzerdefinierte Regel festlegen, indem Sie auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >** . Geben Sie dann den Versionskontrollpfad des Regelsatzes im Browser-Steuerelement Quelle. Die Syntax der einen Pfad für die Versionskontrolle ist:
+- Wählen Sie einen benutzerdefinierten Regelsatz aus, indem Sie auf **\<Select Regelsatz aus Quell Code Verwaltung klicken... >** . Geben Sie dann den Versions Kontroll Pfad des Regelsatzes im Quellcodeverwaltungs-Browser ein. Die Syntax eines Versions Kontroll Pfads lautet wie folgt:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
-Weitere Informationen zum Erstellen und Implementieren einer benutzerdefinierte Eincheckrichtlinie Regel festlegen, finden Sie unter [Implementieren von benutzerdefinierten Eincheckrichtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Weitere Informationen zum Erstellen und Implementieren eines benutzerdefinierten Eincheck Richtlinien-Regelsatzes finden Sie unter [Implementieren von benutzerdefinierten Eincheck Richtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen und Verwenden von Eincheckrichtlinien für die Analyse](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Eincheck Richtlinien für die Code Analyse erstellen und verwenden](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

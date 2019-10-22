@@ -2,21 +2,21 @@
 title: T4-Vorlagendirektive
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870499"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606210"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 
-Eine Visual Studio T4-Textvorlage beginnt normalerweise `template` mit einer-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
+Eine Visual Studio T4-Textvorlage beginnt normalerweise mit einer `template`-Direktive, die angibt, wie die Vorlage verarbeitet werden soll. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
 
 Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
@@ -68,7 +68,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standard)
+`false` (Standardwert)
 
 Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
@@ -88,7 +88,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standard)
+`false` (Standardwert)
 
 `trueFromBase`
 
@@ -96,7 +96,7 @@ Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvo
 
 Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Wenn `hostspecific` `this.Host` ist `true` und Sie Visual Studio verwenden, können Sie in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Zum Beispiel:
+Wenn `hostspecific` `true` ist und Sie Visual Studio verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -128,13 +128,13 @@ Beispiel:
 
 Gültige Werte:
 
-`C#` (Standard)
+`C#` (Standardwert)
 
 `VB`
 
-Das `language` -Attribut gibt die Sprache[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ( [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]oder) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
+Das `language`-Attribut gibt die Sprache ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
-Zum Beispiel:
+Beispiel:
 
 ```vb
 <#@ template language="VB" #>
@@ -245,7 +245,7 @@ Beispiel:
 
 Gültige Werte:
 
-`true` (Standard)
+`true` (Standardwert)
 
 `false`
 
@@ -261,7 +261,7 @@ Beispiel:
 
 Gültige Werte:
 
-`public` (Standard)
+`public` (Standardwert)
 
 `internal`
 

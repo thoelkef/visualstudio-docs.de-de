@@ -1,22 +1,22 @@
 ---
-title: Workflow-Designer - StateMachine-Aktivitätsdesigner
+title: Workflow-Designer-StateMachine-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - StateMachine Designer
 - System.Activities.Statements.StateMachine.UI
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 59b1a194f4f301bd3080820b56c89044315c66e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 2e79e1db2cc6c46361afa7412cdeb493418c0365
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809392"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649910"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine-Aktivitäts-Designer
 
@@ -24,7 +24,7 @@ Die <xref:System.Activities.Statements.StateMachine>-Aktivität enthält eine Au
 
 ## <a name="using-the-statemachine-activity-designer"></a>Verwenden des StateMachine-Aktivitäts-Designers
 
-Hinzufügen einer <xref:System.Activities.Statements.StateMachine> -Aktivität ziehen Sie die **StateMachine** Aktivitäts-Designer aus der **State Machine** Teil der **Toolbox** und legen Sie es sich bei der Workflow-Designer Oberfläche. Um einen untergeordneten Zustand hinzufügen <xref:System.Activities.Statements.StateMachine> -Aktivität ziehen Sie eine <xref:System.Activities.Statements.State> oder <xref:System.Activities.Core.Presentation.FinalState> aus der **Toolbox** und legen ihn auf die **StateMachine**.
+Zum Hinzufügen einer <xref:System.Activities.Statements.StateMachine> Aktivität ziehen Sie den **StateMachine** -Aktivitäts-Designer aus dem Abschnitt **Zustands Automat** der **Toolbox** , und legen Sie ihn auf der Workflow-Designer Oberfläche ab. Um dieser <xref:System.Activities.Statements.StateMachine> Aktivität einen untergeordneten Zustand hinzuzufügen, ziehen Sie eine <xref:System.Activities.Statements.State> oder <xref:System.Activities.Core.Presentation.FinalState> aus der **Toolbox** , und legen Sie Sie auf dem **StateMachine**-Element ab.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Eigenschaften der StateMachine-Aktivität im Workflow-Designer
 

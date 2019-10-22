@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919883"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163062"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Übersicht über die Codeanalyse für C/C++
 
@@ -46,11 +46,11 @@ Sie können das Analysetool auch über die Befehlszeile verwenden, wie im folgen
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 Version 15,7 und** höher Sie können das Tool in der Befehlszeile mit jedem Buildsystem ausführen, einschließlich cmake.
+**Visual Studio 2017, Version 15.7 und höher**: Sie können das Tool in der Befehlszeile mit jedem Buildsystem ausführen, einschließlich cmake.
 
 ## <a name="pragma-support"></a>#pragma Unterstützung
 
-Sie können die- `#pragma` Direktive verwenden, um Warnungen als Fehler zu behandeln, Warnungen zu aktivieren oder zu deaktivieren und Warnungen für einzelne Codezeilen zu unterdrücken. Weitere Informationen finden Sie unter [Pragma-Direktiven und das __Pragma-Schlüsselwort](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Sie können die `#pragma`-Direktive verwenden, um Warnungen als Fehler zu behandeln. Aktivieren oder deaktivieren Sie Warnungen, und unterdrücken Sie Warnungen für einzelne Codezeilen. Weitere Informationen finden Sie unter [Pragma-Direktiven und das __Pragma-Schlüsselwort](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Unterstützung der Anmerkung
 
@@ -67,7 +67,7 @@ Sie können die in das Buildsystem integrierten Funktionen verwenden, um das Cod
 ## <a name="see-also"></a>Siehe auch
 
 - [Schnellstart: Code Analyse für C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Exemplarische Vorgehensweise: Analysieren von CC++ /Code auf Fehler](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Exemplarische Vorgehensweise: Analysieren von CC++ /Code auf Fehler @ no__t-1
 - [Codeanalyse für C/C++-Warnungen](code-analysis-for-c-cpp-warnings.md)
 - [Verwenden der Überprüfungen für C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [C++Referenz zu Kern Richtlinien Prüfung](code-analysis-for-cpp-corecheck.md)

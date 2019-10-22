@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Next | Microsoft-Dokumentation
+title: 'Ienumdebugapplicationnodes:: Next | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f826ce91ba99c5bb697a346b40a6b7f97b6f5914
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4ad47c0119eb46c05368fa40ba3a5965fecce0b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951618"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573052"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
-Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
+Ruft eine angegebene Anzahl von Segmenten in der enumerationssequenz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl von Segmenten abgerufen werden soll.  
+ in Die Anzahl der abzurufenden Segmente.  
   
  `pprddp`  
- [out] Gibt ein Array von `IDebugApplicationNode` Schnittstellen, die die Segmente, die abgerufen werden darstellt.  
+ vorgenommen Gibt ein Array von `IDebugApplicationNode`-Schnittstellen zurück, die die abgerufenen Segmente darstellen.  
   
  `pceltFetched`  
- [out] Die tatsächliche Anzahl von Segmenten, die vom Enumerator abgerufen werden soll.  
+ vorgenommen Die tatsächliche Anzahl der Segmente, die vom Enumerator abgerufen wurden.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
+ Diese Methode ruft eine angegebene Anzahl von Segmenten in der enumerationssequenz ab.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugApplicationNodes-Schnittstelle](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ac0b253d5193fc507e2d74a2d9dbcdd893e9fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a3e5115d4adc3fc3dfa93f10c90cb0d2b36f0e4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990761"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571106"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
-Legt den Namen der Anwendung.  
+Legt den Namen der Anwendung fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>Parameter  
  `pstrName`  
- [in] Der Name der Anwendung.  
+ in Der Name der Anwendung.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,10 +47,10 @@ HRESULT SetName(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die Namen für diese Methode wird zurückgegeben, bei nachfolgenden Aufrufen der `IRemoteDebugApplication::GetName` Methode.  
+ Der für diese Methode angegebene Name wird in nachfolgenden Aufrufen der `IRemoteDebugApplication::GetName`-Methode zurückgegeben.  
   
- Diese Methode sollte aufgerufen werden, bevor die `IProcessDebugManager::AddApplication` Methode.  
+ Diese Methode sollte aufgerufen werden, bevor die `IProcessDebugManager::AddApplication`-Methode aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

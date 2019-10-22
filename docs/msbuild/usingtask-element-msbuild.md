@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411010"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962914"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
 Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzierten Task der Assembly zu, die die Taskimplementierung enthält.
@@ -38,6 +38,9 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
     TaskFactory = "ClassName"
     Condition="'String A'=='String B'" />
 ```
+
+> [!NOTE]
+> Im Gegensatz zu Eigenschaften und Elementen wird das *erste* `UsingTask`-Element verwendet, das auf ein `TaskName` angewendet wird. Sie müssen ein neues `UsingTask`-Element *vor* dem vorhandenen definieren.
 
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
@@ -54,14 +57,14 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Der Satz an Parametern, die in der Aufgabe angezeigt werden, welche durch die angegebene `TaskFactory` generiert wurde.|
 |[Aufgabe](../msbuild/task-element-msbuild.md)|Die `TaskFactory` weitergegebenen Daten zum Generieren einer Instanz der Aufgabe.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-| Element | Beschreibung |
+| Element | BESCHREIBUNG |
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei. |
 

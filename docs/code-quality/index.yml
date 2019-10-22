@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Codeanalyse in Visual Studio
+summary: Visual Studio bietet verschiedene Tools zur Analyse und Verbesserung der Codequalität.
+metadata:
+  title: Codeanalysetools
+  description: Erfahren Sie, wie Sie mit Visual Studio die Codequalität analysieren können.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450587"
+landingContent:
+- title: Analysieren von C- und C++-Code
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analysieren von C- und C++-Code
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: C++-Codeanalysewarnungen
+      url: code-analysis-for-c-cpp-warnings.md
+- title: Analysieren der Qualität von verwaltetem Code
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Quellanalyse
+      url: roslyn-analyzers-overview.md
+    - text: Legacyanalyse
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: FAQ
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Installieren von FxCop-Analysetools
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Analysen für verwalteten Code (Warnungen)
+      url: code-analysis-for-managed-code-warnings.md
+- title: Analysieren des Stils von verwaltetem Code
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Analysieren des Codestils
+      url: ../ide/create-portable-custom-editor-options.md
+- title: Messen der Komplexität von Code
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Codemetrik
+      url: code-metrics-values.md

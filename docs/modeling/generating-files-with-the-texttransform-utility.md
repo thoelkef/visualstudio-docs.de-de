@@ -5,27 +5,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: f1a12da7c7cae7e862d670b3f62fb801920f34e1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606094"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666724"
 ---
-# <a name="generate-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
+# <a name="generate-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "textTransform"
 
-TextTransform.exe ist ein Befehlszeilentool, das Sie zum Transformieren einer Textvorlage verwenden können. Wenn Sie TextTransform.exe aufrufen, geben Sie den Namen einer Textvorlagendatei als Argument. TextTransform.exe Ruft die Transformations-Engine auf und verarbeitet die Textvorlage. TextTransform.exe wird in der Regel von Skripts aufgerufen. Allerdings ist es nicht in der Regel erforderlich, da Sie Texttransformation in Visual Studio oder im Buildprozess ausführen können.
+TextTransform. exe ist ein Befehlszeilen Tool, mit dem Sie eine Textvorlage transformieren können. Wenn Sie "textTransform. exe" aufzurufen, geben Sie den Namen einer Textvorlagen Datei als Argument an. TextTransform. exe ruft die Text Transformations-Engine auf und verarbeitet die Textvorlage. "TextTransform. exe" wird in der Regel aus Skripts aufgerufen. Dies ist jedoch in der Regel nicht erforderlich, da Sie die Text Transformation entweder in Visual Studio oder im Buildprozess durchführen können.
 
 > [!NOTE]
-> Wenn Sie TextTransformation als Teil des Buildvorgangs ausführen möchten, sollten erwägen Sie, die MSBuild-Text-transformationsaufgabe zu verwenden. Weitere Informationen finden Sie unter [Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md). Auf einem Computer, auf dem Visual Studio installiert ist, können Sie auch schreiben eine Anwendung oder ein Visual Studio-Erweiterung, die Textvorlagen transformiert werden können. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
+> Wenn Sie die Text Transformation als Teil eines Buildprozesses durchführen möchten, sollten Sie die MSBuild-Text Transformations Aufgabe verwenden. Weitere Informationen finden Sie unter [Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md). Auf einem Computer, auf dem Visual Studio installiert ist, können Sie auch eine Anwendung oder eine Visual Studio-Erweiterung schreiben, mit der Textvorlagen transformiert werden können. Weitere Informationen finden Sie unter [Verarbeiten von Text Vorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
-TextTransform.exe befindet sich im folgenden Verzeichnis:
- 
+TextTransform. exe befindet sich im folgenden Verzeichnis:
+
 ::: moniker range=">=vs-2019"
 
 **\Programme (x86) \Microsoft Visual studio\2019\professional\common7\ide**
@@ -37,22 +37,22 @@ für Professional Edition oder
 für Enterprise Edition.
 
 ::: moniker-end
- 
+
 ::: moniker range="vs-2017"
 
-**\Programme Dateien (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**
+**\Programme (x86) \Microsoft Visual studio\2017\professional\common7\ide**
 
 für Professional Edition oder
 
-**\Programme Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+**\Programme (x86) \Microsoft Visual studio\2017\enterprise\common7\ide**
 
 für Enterprise Edition.
 
-In früheren Versionen von Visual Studio wird die Datei am folgenden Speicherort gefunden:
+In früheren Versionen von Visual Studio befindet sich die Datei unter folgendem Speicherort:
 
-**\Programme Dateien (x86) \Common Shared\TextTemplating\{Version}**
+**\Programme (x86) \Gemeinsame Dateien\Microsoft shared\texttemplating \{version}**
 
-wobei {Version}, hängt davon ab, die frühere Version installiert ist.
+Dabei ist {Version} davon abhängig, welche frühere Version installiert ist.
 
 ::: moniker-end
 
@@ -66,23 +66,23 @@ TextTransform [<options>] <templateName>
 
 |**Argument**|**Beschreibung**|
 |-|-|
-|`templateName`|Identifiziert den Namen der Vorlagendatei, die Sie transformieren möchten.|
+|`templateName`|Gibt den Namen der Vorlagen Datei an, die Sie transformieren möchten.|
 
 |**Option**|**Beschreibung**|
 |-|-|
-|**-out** \<Dateiname >|Die Datei, die in der die Ausgabe der Transformation geschrieben wird.|
-|**-R** \<Assembly >|Eine Assembly, die zum Kompilieren und Ausführen der Textvorlage verwendet wird.|
-|**-u** \<Namespace >|Ein Namespace, der zum Kompilieren von der Vorlage verwendet wird.|
-|**-I** \<includedirectory>|Ein Verzeichnis mit den Textvorlagen, die in der Vorlage angegebenen Text enthalten.|
-|**-P** \<referencepath>|Ein Verzeichnis an, suchen Sie in die Textvorlage angegebenen Assemblys oder zur Verwendung der **- R** Option.<br /><br /> Beispielsweise wenn Assemblys, die für die Visual Studio-API einschließen möchten, verwenden<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
-|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|Der Name, die vollständigen Typnamen und die Assembly mit einem anweisungsprozessor, der zum Verarbeiten von benutzerdefinierter Anweisungen innerhalb der Textvorlage verwendet werden kann.|
-|**– ein** [ProcessorName]. [ DirectiveName]! \<ParameterName >! \<ParameterValue >|Geben Sie einen Parameterwert für einen anweisungsprozessor. Wenn Sie nur den Parameternamen und-Wert angeben, wird der Parameter für alle anweisungsprozessoren verfügbar sein. Wenn Sie einen anweisungsprozessor angeben, ist der Parameter nur für den angegebenen Prozessor zur Verfügung. Wenn Sie einen Namen der Standarddirektive angeben, ist der Parameter verfügbar sind, nur, wenn die angegebene Richtlinie verarbeitet wird.<br /><br /> Verwenden Sie den Zugriff auf die Parameterwerte von einem Direktivenprozessor oder der Textvorlage [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)). Enthalten in einer Textvorlage `hostspecific` in der Template-Anweisung, und rufen Sie die Nachricht auf `this.Host`. Zum Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Geben Sie immer die "!" kennzeichnet, auch wenn Sie den optionalen Prozessor und Direktivennamen weglassen. Zum Beispiel:<br /><br /> `-a !!param!value`|
-|**-h**|Enthält die Hilfe.|
+|**-out** \<filename >|Die Datei, in die die Ausgabe der Transformation geschrieben wird.|
+|**-r** \<assembly >|Eine Assembly, die zum Kompilieren und Ausführen der Textvorlage verwendet wird.|
+|**-u** \<namespace >|Ein Namespace, der zum Kompilieren der Vorlage verwendet wird.|
+|**-I** \<includedirectory >|Ein Verzeichnis, das die in der angegebenen Textvorlage enthaltenen Textvorlagen enthält.|
+|**-P** \<referencepath >|Ein Verzeichnis, in dem nach Assemblys gesucht werden soll, die in der Textvorlage oder der Option **-r** angegeben sind.<br /><br /> Um z. b. für die Visual Studio-API verwendete Assemblys einzuschließen, verwenden Sie<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
+|**-DP** \<processorName >! \<className >! \<assemblyName&#124;-CodeBase >|Der Name, der vollständige Typname und die Assembly eines direktivenprozessors, der zum Verarbeiten von benutzerdefinierten Direktiven in der Textvorlage verwendet werden kann.|
+|**-a** [processorname]! [directivename]! \<parameterName >! \<parameterValue >|Geben Sie einen Parameterwert für einen Direktivenprozessor an. Wenn Sie nur den Parameternamen und den Wert angeben, ist der Parameter für alle direktivenprozessoren verfügbar. Wenn Sie einen Direktivenprozessor angeben, ist der-Parameter nur für den angegebenen Prozessor verfügbar. Wenn Sie einen Direktivennamen angeben, ist der-Parameter nur verfügbar, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie [itexttemplatingenginehost. resolveparametervalue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)), um auf die Parameterwerte von einem Direktivenprozessor oder einer Textvorlage zuzugreifen. Fügen Sie in einer Textvorlage `hostspecific` in die Template-Direktive ein, und rufen Sie die Meldung auf `this.Host` auf. Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`<br /><br /> Geben Sie immer die Zeichen "!" ein, auch wenn Sie die optionalen Prozessor-und Direktivennamen weglassen. Beispiel:<br /><br /> `-a !!param!value`|
+|**-h**|Stellt Hilfe bereit.|
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Aufgabe|Thema|
+|Aufgabe|Topic|
 |-|-|
-|Generieren von Dateien in Visual Studio-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|Schreiben Sie Anweisungsprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
-|Schreiben Sie einen Textvorlagenhost, der Sie Textvorlagen aus Ihrer eigenen Anwendung aufrufen kann.|[Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md)|
+|Generieren von Dateien in einer Visual Studio-Projekt Mappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
+|Schreiben Sie einen Textvorlagen Host, mit dem Sie Textvorlagen aus ihrer eigenen Anwendung aufrufen können.|[Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md)|

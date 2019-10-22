@@ -1,31 +1,31 @@
 ---
-title: 'XML-Schema: Ausdrucken von Diagrammen in Diagrammansicht anzeigen & in Inhaltsmodellansicht anzeigen'
+title: 'XML-Schema: Drucken von Diagrammen in der Diagramm Ansicht & Inhalts Modell Ansicht'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c04b35d0b90de888ad11af0920ddb0cf123638ad
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c4d25ef33e22055ff6e6aa17797fcd0c4dbcb0e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820548"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668787"
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Vorgehensweise: Ausdrucken von Diagrammen in der Diagrammansicht und der Inhaltsmodellansicht
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Gewusst wie: Drucken von Diagrammen aus der Diagramm Ansicht und der Inhalts Modell Ansicht
 
-In diesem Thema wird beschrieben, wie ein Diagramm in der Diagramm- oder Inhalt Modell Ansicht von XML-Schema-Designer gedruckt wird.
+In diesem Thema wird beschrieben, wie Sie ein Diagramm aus der Diagramm Ansicht oder der Inhalts Modell Ansicht des XML-Schema-Designers drucken.
 
 ## <a name="to-print-diagrams-from-the-xml-schema-designer"></a>So drucken Sie Diagramme im XML-Schema-Designer aus
 
-1. Öffnen Sie eine XSD-Datei in Visual Studio und einigen Knoten zum Hinzufügen der [XML-Schema-Designer-Arbeitsbereich](../xml-tools/xml-schema-designer-workspace.md).
+1. Öffnen Sie eine XSD-Datei in Visual Studio, und fügen Sie dem [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md)einige Knoten hinzu.
 
-2. Exportieren Sie das Diagramm in ein XPS-Datei mithilfe der **Diagramm als Bild exportieren** Kontextmenü (Rechtsklick) Menüelement auf der Entwurfsoberfläche der Diagramm- oder Inhaltsmodellansicht.
+2. Exportieren Sie das Diagramm in eine XPS-Datei, indem Sie in der Entwurfs Oberfläche der Diagramm Ansicht oder der Inhalts Modell Ansicht das Menü Element **Diagramm als Bildkontext exportieren** (Rechtsklick) verwenden.
 
-     Wenn Sie ein Diagramm aus der Diagrammansicht exportieren, wird die gesamte Entwurfsoberfläche in die XPS-Datei exportiert. Wenn Sie ein Diagramm aus der Inhaltsmodellansicht exportieren, und mehr als einen Knoten, die auf der Entwurfsoberfläche der Inhaltsmodellansicht angezeigt wird, wird nur der erste Knoten in die XPS-Datei exportiert.
+     Wenn Sie ein Diagramm aus der Diagramm Ansicht exportieren, wird die gesamte Entwurfs Oberfläche in die XPS-Datei exportiert. Wenn Sie ein Diagramm aus der Inhalts Modell Ansicht exportieren und mehrere Knoten auf der Entwurfs Oberfläche der Inhalts Modell Ansicht angezeigt werden, wird nur der erste Knoten in die XPS-Datei exportiert.
 
 3. Drucken Sie das gespeicherte Bild in der XPS-Datei mit einem XPS-Viewer aus.
 
@@ -33,4 +33,4 @@ In diesem Thema wird beschrieben, wie ein Diagramm in der Diagramm- oder Inhalt 
 
 - [Diagrammansicht](../xml-tools/graph-view.md)
 - [Inhaltsmodellansicht](../xml-tools/content-model-view.md)
-- [XML-Schema-Designer-Arbeitsbereich](../xml-tools/xml-schema-designer-workspace.md)
+- [XML-Schema-Designer](../xml-tools/xml-schema-designer-workspace.md)

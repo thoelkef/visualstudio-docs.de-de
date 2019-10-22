@@ -1,5 +1,5 @@
 ---
-title: Abrufen von Projekteigenschaften | Microsoft-Dokumentation
+title: Projekteigenschaften werden erhalten | Microsoft-Dokumentation
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f766be25015081338b887a5b08413e77f5f17f9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cac5c55dd8fdeb1ba231d144d94c8be9b680cc6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342525"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633167"
 ---
-# <a name="get-project-properties"></a>Abrufen von Projekteigenschaften
+# <a name="get-project-properties"></a>Projekteigenschaften erhalten
 
-In dieser exemplarischen Vorgehensweise zeigt Projekteigenschaften in einem Toolfenster.
+In dieser exemplarischen Vorgehensweise wird gezeigt, wie Projekteigenschaften in einem Tool Fenster angezeigt werden.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
-Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [installieren Sie Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Erstellen Sie ein VSIX-Projekt, und fügen ein Toolfenster
+### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>So erstellen Sie ein VSIX-Projekt und fügen ein Tool Fenster hinzu
 
-1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Projekt-Bereitstellung, die die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt namens `ProjectPropertiesExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld, indem Sie nach "Vsix" suchen.
+1. Jede Visual Studio-Erweiterung beginnt mit einem VSIX-Bereitstellungs Projekt, das die Erweiterungs Ressourcen enthält. Erstellen Sie ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt mit dem Namen `ProjectPropertiesExtension`. Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Fügen Sie ein Toolfenster durch Hinzufügen eines benutzerdefinierten Toolfensters Elements einer Vorlage mit dem Namen `ProjectPropertiesToolWindow`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **Dialogfeld "Neues Element hinzufügen"** , wechseln Sie zu **Visual c#-Elemente** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Toolfensters**. In der **Namen** Feld am unteren Rand des Dialogfelds, ändern Sie den Dateinamen an `ProjectPropertiesToolWindow.cs`. Weitere Informationen zum Erstellen eines benutzerdefinierten Toolfensters finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Fügen Sie ein Tool Fenster hinzu, indem Sie eine benutzerdefinierte Tool Fenster-Element Vorlage namens `ProjectPropertiesToolWindow` hinzufügen. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie  > **Neues Element** **Hinzufügen** aus. Wechseln Sie im **Dialogfeld Neues Element hinzufügen**zu **visuelle C# Elemente**  > **Erweiterbarkeit** , und wählen Sie **benutzerdefiniertes Tool Fenster**aus. Ändern Sie im Feld **Name** am unteren Rand des Dialog Felds den Dateinamen in `ProjectPropertiesToolWindow.cs`. Weitere Informationen zum Erstellen eines benutzerdefinierten Tool Fensters finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Erstellen Sie die Projektmappe, und stellen Sie sicher, dass sie fehlerfrei kompiliert wird.
 
-### <a name="to-display-project-properties-in-a-tool-window"></a>Zum Anzeigen von Projekteigenschaften in einem Toolfenster
+### <a name="to-display-project-properties-in-a-tool-window"></a>So zeigen Sie Projekteigenschaften in einem Tool Fenster an
 
-1. Fügen Sie in der Datei ProjectPropertiesToolWindowCommand.cs die folgenden using-Anweisungen.
+1. Fügen Sie in der Datei ProjectPropertiesToolWindowCommand.cs die folgenden using-Direktiven hinzu.
 
     ```csharp
     using EnvDTE;
@@ -44,9 +44,9 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
 
     ```
 
-2. In *ProjectPropertiesToolWindowControl.xaml*der vorhandene Schaltfläche "entfernen", und fügen Sie einem TreeView-Steuerelement aus der Toolbox hinzu. Sie können auch entfernen, den Click-Ereignishandler aus der *ProjectPropertiesToolWindowControl.xaml.cs* Datei.
+2. Entfernen Sie in *projectpropertiestoolwindowcontrol. XAML*die vorhandene Schaltfläche, und fügen Sie eine TreeView aus der Toolbox hinzu. Sie können auch den Click-Ereignishandler aus der *ProjectPropertiesToolWindowControl.XAML.cs* -Datei entfernen.
 
-3. In *ProjectPropertiesToolWindowCommand.cs*, verwenden Sie die `ShowToolWindow()` Methode, um das Projekt öffnen und Lesen seine Eigenschaften, dann fügen Sie die Eigenschaften in der Baumansicht. Der Code für ShowToolWindow sollte wie folgt aussehen:
+3. Verwenden Sie in *ProjectPropertiesToolWindowCommand.cs*die `ShowToolWindow()`-Methode, um das Projekt zu öffnen und dessen Eigenschaften zu lesen, und fügen Sie dann die Eigenschaften der TreeView hinzu. Der Code für ShowToolWindow sollte wie folgt aussehen:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -93,10 +93,10 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     }
     ```
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden.
 
 5. Öffnen Sie in der experimentellen Instanz ein Projekt.
 
-6. In der **Ansicht** > **Other Windows** klicken Sie auf **ProjectPropertiesToolWindow**.
+6. Klicken Sie in der **Ansicht**  > **andere Fenster** auf **projectpropertiestoolwindow**.
 
-  Daraufhin sollte das Strukturansicht-Steuerelement im Toolfenster, zusammen mit dem Namen des ersten Projekts und alle zugehörigen Projekteigenschaften.
+  Das Struktur Steuerelement sollte im Tool Fenster mit dem Namen des ersten Projekts und aller zugehörigen Projekteigenschaften angezeigt werden.

@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:StartDebugSession | Microsoft-Dokumentation
+title: 'Idebugsessionproviderex: startdebugsession | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb120a9acca91014d7b8213a3ed0bd1ab575e118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfe26265d56b2179feeac2a9802940258074b1c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934684"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574297"
 ---
 # <a name="idebugsessionproviderexstartdebugsession"></a>IDebugSessionProviderEx:StartDebugSession
-Startet eine Debugsitzung mit der angegebenen Anwendung.  
+Initiiert eine Debugsitzung mit der angegebenen Anwendung.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,10 +36,10 @@ HRESULT StartDebugSession(
   
 #### <a name="parameters"></a>Parameter  
  `pda`  
- [in] Gibt die Anwendung debuggen.  
+ in Gibt die Debuganwendung an.  
   
  `fQuery`  
- [in] "True" gibt eine Abfrage an.  
+ in True gibt eine Abfrage an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,8 +49,8 @@ HRESULT StartDebugSession(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode initiiert eine Debugsitzung mit der angegebenen Anwendung. Der Debugger sollte Aufrufen `IRemoteDebugApplication::ConnectDebugger` vor der Rückgabe von diesem Aufruf.  
+ Diese Methode initiiert eine Debugsitzung mit der angegebenen Anwendung. Der Debugger sollte `IRemoteDebugApplication::ConnectDebugger` vor der Rückgabe von diesem-Befehl abrufen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugSessionProviderEx-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)   
+ [Idebugsessionproviderex-Schnittstelle](../../winscript/reference/idebugsessionproviderex-interface.md)    
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

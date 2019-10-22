@@ -1,5 +1,5 @@
 ---
-title: DebugStackFrameDescriptor-Struktur | Microsoft-Dokumentation
+title: Enbugstackframedescriptor-Struktur | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fddae48178ec6c56ce647f5c4f3a1bff3d81a980
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 910e08ec6d9982354eb71b50d5e916917808f140
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955193"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576550"
 ---
 # <a name="debugstackframedescriptor-structure"></a>DebugStackFrameDescriptor-Struktur
 Listet Stapelrahmen auf und fügt die Ausgabe mehrerer Enumeratoren in demselben Thread zusammen.  
@@ -41,22 +41,22 @@ typedef struct tagDebugStackFrameDescriptor {
   
 ## <a name="members"></a>Member  
  `pdsf`  
- Das Stack-Frame-Objekt.  
+ Das Stapel Rahmen Objekt.  
   
  `dwMin`  
- Eine abhängig vom Computer-Darstellung, der den unteren Bereich der physischen Adressen, die diesen Stapelrahmen zugeordnet werden soll.  
+ Eine Computer abhängige Darstellung des unteren Bereichs physischer Adressen, die diesem Stapel Rahmen zugeordnet ist.  
   
  `dwLim`  
- Eine abhängig vom Computer-Darstellung der obere Bereich von physischen Adressen, die diesen Stapelrahmen zugeordnet werden soll.  
+ Eine Computer abhängige Darstellung des oberen Bereichs physischer Adressen, die diesem Stapel Rahmen zugeordnet ist.  
   
  `fFinal`  
- Flag, das zeigt an, dass der Rahmen verarbeitet wird.  
+ Flag, das angibt, dass der Frame verarbeitet wird.  
   
  `punkFinal`  
- Wenn dieser Parameter nicht `NULL`, wird der aktuelle Enumerator Zusammenführen beendet werden soll, und eine neue gestartet werden soll. Das Objekt gibt an, wie die neue Enumeration zu starten.  
+ Wenn dieser Parameter nicht `NULL` ist, sollte die aktuelle Zusammenführung des Enumerators angehalten und ein neuer Vorgang gestartet werden. Das-Objekt gibt an, wie die neue-Enumeration gestartet wird.  
   
 ## <a name="remarks"></a>Hinweise  
- Prozessbasierter Debug-Manager verwendet diese Struktur, um die Stapelrahmen von mehreren Skript-Engines zu sortieren. Wachsen gemäß der Konvention Stapel nach unten. Daher sollte auf Architekturen, in dem Stapel sich vergrößert, die Adressen 2er-ergänzt sein.  
+ Der Process Debug Manager verwendet diese Struktur zum Sortieren der Stapel Rahmen aus mehreren Skript-Engines. Gemäß der Konvention werden Stapel nach unten vergrößert. Folglich sollten bei Architekturen, in denen Stapel vergrößert werden, die Adressen durch Twos ergänzt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

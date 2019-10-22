@@ -15,26 +15,26 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9aca29de7e9c5a01e0c2caad2c42015cd31b3f75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8ab7bb827c478360a64d65f44af6770c77ebf77
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565185"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648136"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Deaktivieren von Einschränkungen beim Auffüllen von Datasets
 
-Wenn Sie ein Dataset Einschränkungen (z. B. fremdschlüsseleinschränkungen) enthält, können sie Fehler im Zusammenhang Sequenznummern für das Dataset ausgeführten Vorgänge für das auslösen. Beispielsweise im Zusammenhang mit untergeordnete Datensätze vor dem Laden übergeordneten Datensätzen eine Einschränkung verletzt und einen Fehler verursachen können. Sobald Sie einen untergeordneten Datensatz laden, überprüft die Einschränkung das Vorhandensein des übergeordneten Datensatzes und löst einen Fehler aus.
+Wenn ein DataSet Einschränkungen enthält (z. b. Foreign Key-Einschränkungen), können Sie Fehler im Zusammenhang mit der Reihenfolge der Vorgänge, die für das DataSet ausgeführt werden, hervorrufen. Beispielsweise kann das Laden von untergeordneten Datensätzen vor dem Laden verknüpfter übergeordneter Datensätze gegen eine Einschränkung verstoßen und einen Fehler verursachen. Sobald Sie einen untergeordneten Datensatz laden, überprüft die Einschränkung das Vorhandensein des übergeordneten Datensatzes und löst einen Fehler aus.
 
 Ohne einen Mechanismus, der die vorübergehende Aufhebung der Einschränkung zulässt, würde der Fehler bei jedem Versuch ausgelöst, einen Datensatz in die untergeordnete Tabelle zu laden. Es besteht außerdem die Möglichkeit, alle Einschränkungen in einem Dataset mit der <xref:System.Data.DataRow.BeginEdit%2A>-Eigenschaft und der <xref:System.Data.DataRow.EndEdit%2A>-Eigenschaft aufzuheben.
 
 > [!NOTE]
-> Validierungsereignisse (z. B. <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging>) wird nicht ausgelöst, wenn Einschränkungen deaktiviert sind.
+> Validierungs Ereignisse (z. b. <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.RowChanging>) werden nicht ausgelöst, wenn Einschränkungen deaktiviert werden.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>So heben Sie Aktualisierungseinschränkungen programmgesteuert auf
 
@@ -45,7 +45,7 @@ Ohne einen Mechanismus, der die vorübergehende Aufhebung der Einschränkung zul
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>So heben Sie Aktualisierungseinschränkungen mit dem Dataset-Designer auf
 
-1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Datasets in der DataSet-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Legen Sie im Fenster **Eigenschaften** die Eigenschaft <xref:System.Data.DataSet.EnforceConstraints%2A> auf `false`fest.
 

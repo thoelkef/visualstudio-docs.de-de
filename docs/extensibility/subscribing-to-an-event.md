@@ -11,30 +11,30 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c0466d5b8644ddeae60df24b8b980ee9da0f820
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd2933ee3e0e162740f0c7eb3f3c2307e17ec46d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331684"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647929"
 ---
 # <a name="subscribing-to-an-event"></a>Abonnieren eines Ereignisses
-In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster erstellen, die auf Ereignisse in eine aktive Dokumenttabelle (RDT) reagiert wird. Ein Toolfenster hostet, ein Benutzersteuerelement, das implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Methode verbindet die Schnittstelle für die Ereignisse.
+In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Tool Fenster erstellt wird, das auf Ereignisse in einer laufenden dokumententabelle (RDT) antwortet. Ein Tool Fenster hostet ein Benutzer Steuerelement, das <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> implementiert. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>-Methode verbindet die-Schnittstelle mit den Ereignissen.
 
-## <a name="prerequisites"></a>Vorraussetzungen
- Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="subscribing-to-rdt-events"></a>Abonnieren von RDT-Ereignissen
 
-#### <a name="to-create-an-extension-with-a-tool-window"></a>Zum Erstellen einer Erweiterung mit einem Toolfenster
+#### <a name="to-create-an-extension-with-a-tool-window"></a>So erstellen Sie eine Erweiterung mit einem Tool Fenster
 
-1. Erstellen Sie ein Projekt mit dem Namen **RDTExplorer** mithilfe der VSIX-Projektvorlage aus, und fügen Sie der Elementvorlage ein benutzerdefiniertes Tool-Fenster, der mit dem Namen **RDTExplorerWindow**.
+1. Erstellen Sie ein Projekt mit dem Namen **rdtexplorer** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage mit dem Namen **rdtexplorerwindow**hinzu.
 
-     Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+     Weitere Informationen zum Erstellen einer Erweiterung mit einem Tool Fenster finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-#### <a name="to-subscribe-to-rdt-events"></a>Abonnieren von RDT-Ereignissen
+#### <a name="to-subscribe-to-rdt-events"></a>So abonnieren Sie RDT-Ereignisse
 
-1. Öffnen Sie die Datei RDTExplorerWindowControl.xaml und die Schaltfläche mit dem Namen "löschen" `button1`. Hinzufügen einer <xref:System.Windows.Forms.ListBox> steuern und den Standardnamen übernehmen. Das Grid-Element sollte folgendermaßen aussehen:
+1. Öffnen Sie die Datei rdtexplorerwindowcontrol. XAML, und löschen Sie die Schaltfläche mit dem Namen `button1`. Fügen Sie ein <xref:System.Windows.Forms.ListBox> Steuerelement hinzu, und akzeptieren Sie den Standardnamen. Das Raster Element sollte wie folgt aussehen:
 
     ```xml
     <Grid>
@@ -45,7 +45,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster ers
     </Grid>
     ```
 
-2. Öffnen Sie die RDTExplorerWindow.cs-Datei, in der Codeansicht. Fügen Sie die folgenden using-Anweisungen am Anfang der Datei.
+2. Öffnen Sie die Datei RDTExplorerWindow.cs in der Code Ansicht. Fügen Sie am Anfang der Datei die folgenden using-Direktiven hinzu.
 
     ```csharp
     using Microsoft.VisualStudio;
@@ -53,7 +53,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster ers
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3. Ändern der `RDTExplorerWindow` -Klasse daher, dass zusätzlich zum Ableiten von der <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> -Klasse implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> Schnittstelle.
+3. Ändern Sie die `RDTExplorerWindow`-Klasse so, dass Sie zusätzlich zur Ableitung von der <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>-Klasse die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>-Schnittstelle implementiert.
 
     ```csharp
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents
@@ -62,23 +62,23 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster ers
 
 4. Implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
 
-    - Implementieren der Schnittstelle. Setzen Sie den Cursor auf den Namen des IVsRunningDocTableEvents. Eine Glühbirne am linken Rand sollte angezeigt werden. Klicken Sie auf den Pfeil rechts neben die Glühbirne verlagert, und wählen Sie **Schnittstelle implementieren**.
+    - Implementieren Sie die-Schnittstelle. Platzieren Sie den Cursor auf dem IVsRunningDocTableEvents-Namen. Am linken Rand sollte eine Glühbirne angezeigt werden. Klicken Sie rechts neben der Glühbirne auf den Pfeil nach unten, und wählen Sie **Schnittstelle implementieren**aus.
 
-5. Ersetzen Sie die Zeile in jeder Methode in der Schnittstelle `throw new NotImplementedException();` dabei:
+5. Ersetzen Sie in jeder Methode in der Schnittstelle die Zeile `throw new NotImplementedException();` durch:
 
     ```csharp
     return VSConstants.S_OK;
     ```
 
-6. Fügen Sie ein Cookiefeld der RDTExplorerWindow-Klasse.
+6. Fügen Sie ein Cookie-Feld zur rdtexplorerwindow-Klasse hinzu.
 
     ```csharp
     private uint rdtCookie;
     ```
 
-     Dies gilt, dass das Cookie, das von zurückgegebene der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Methode.
+     Dies enthält das Cookie, das von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>-Methode zurückgegeben wird.
 
-7. Überschreiben Sie die RDTExplorerWindows Initialize()-Methode für RDT-Ereignissen registriert. Sie sollten immer die ToolWindowPanes Initialize()-Methode, nicht im Konstruktor Dienste abrufen.
+7. Überschreiben Sie die Initialize ()-Methode von rdtexplorerwindow, um für RDT-Ereignisse zu registrieren. Sie sollten Dienste immer in der Initialize ()-Methode des ToolWindowPane erhalten, nicht im Konstruktor.
 
     ```csharp
     protected override void Initialize()
@@ -89,9 +89,9 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster ers
     }
     ```
 
-     Die <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> Diensts wird aufgerufen, um das Abrufen einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> Schnittstelle. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Methode verbindet RDT-Ereignissen auf ein Objekt, das implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, in diesem Fall ein RDTExplorer-Objekt.
+     Der <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>-Dienst wird aufgerufen, um eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>-Schnittstelle zu erhalten. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>-Methode verbindet RDT-Ereignisse mit einem Objekt, das <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> implementiert, in diesem Fall ein rdtexplorer-Objekt.
 
-8. Aktualisieren Sie die RDTExplorerWindows Dispose()-Methode.
+8. Aktualisieren Sie die Methode "verwerfen ()" von rdtexplorerwindow.
 
     ```csharp
     protected override void Dispose(bool disposing)
@@ -105,9 +105,9 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster ers
     }
     ```
 
-     Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A> -Methode löscht die Verbindung zwischen `RDTExplorer` und RDT-ereignisbenachrichtigung.
+     Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A>-Methode löscht die Verbindung zwischen `RDTExplorer` und RDT-Ereignis Benachrichtigung.
 
-9. Fügen Sie die folgende Zeile in den Hauptteil der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A> Handler auf, kurz vor dem Ausführen der `return` Anweisung.
+9. Fügen Sie die folgende Zeile in den Text des <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A> Handlers ein, direkt vor der `return`-Anweisung.
 
     ```csharp
     public int OnBeforeLastDocumentUnlock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)
@@ -117,7 +117,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster ers
     }
     ```
 
-10. Fügen Sie eine ähnliche Zeile in den Hauptteil der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A> Handler und mit anderen Ereignissen, die Sie im Listenfeld angezeigt werden sollen.
+10. Fügen Sie dem Text des <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A> Handlers und anderen Ereignissen, die im Listenfeld angezeigt werden sollen, eine ähnliche Zeile hinzu.
 
     ```csharp
     public int OnAfterFirstDocumentLock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)
@@ -129,10 +129,10 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Toolfenster ers
 
 11. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio wird angezeigt.
 
-12. Öffnen der **RDTExplorerWindow** (**anzeigen / andere Windows / RDTExplorerWindow**).
+12. Öffnen Sie **rdtexplorerwindow** (**View/other Windows/rdtexplorerwindow**).
 
-     Die **RDTExplorerWindow** Fenster wird geöffnet, mit einer leeren Ereignisses aus.
+     Das Fenster **rdtexplorerwindow** wird mit einer leeren Ereignisliste geöffnet.
 
-13. Öffnen Sie oder erstellen Sie eine Lösung.
+13. Öffnen oder erstellen Sie eine Projekt Mappe.
 
-     Als `OnBeforeLastDocument` und `OnAfterFirstDocument` Ereignisse werden ausgelöst, Benachrichtigung über jedes Ereignis wird in dieser Liste angezeigt.
+     Wenn `OnBeforeLastDocument` und `OnAfterFirstDocument` Ereignisse ausgelöst werden, wird die Benachrichtigung jedes Ereignisses in der Ereignisliste angezeigt.

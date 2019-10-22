@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253838"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831844"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio
 
@@ -100,7 +100,7 @@ Wenn der Product Key im Hilfsprogramm `StorePID.exe` erfolgreich angewendet wurd
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Wenn Sie eine virtuelle Instanz von Visual Studio ausführen, stellen Sie sicher, dass Sie auch den lokalen AppData-Ordner und die Registrierung virtualisieren. Führen Sie für die Problembehandlung bei virtuellen Instanzen *C:\Programme (x86)\Microsoft Visual Studio\ <Version\> \Common7\IDE\DDConfigCA.exe*.  
+> Wenn Sie eine virtuelle Instanz von Visual Studio ausführen, stellen Sie sicher, dass Sie auch den lokalen AppData-Ordner und die Registrierung virtualisieren. Führen Sie `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe` aus, um Probleme bei virtuellen Instanzen zu beheben.  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

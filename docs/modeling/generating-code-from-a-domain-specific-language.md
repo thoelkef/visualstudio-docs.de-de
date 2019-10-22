@@ -2,23 +2,23 @@
 title: Generieren von Code für eine domänenspezifische Sprache
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c60ed42e7d4a7604dc3d99f7e0311c7000b99c
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 5000b8b6150fe630959f4cc4bbc58617e98d4a3a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476506"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662020"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generieren von Code für eine domänenspezifische Sprache
 
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bietet eine leistungsstarke Möglichkeit zum Generieren von Code, Dokumenten, Konfigurationsdateien und andere Artefakte aus Daten, die in Modellen dargestellt. Mithilfe von [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], können Sie einen Satz von Klassen, die Ihre Daten darstellen, erstellen und Sie können den Textvorlagen in schreiben Klassen, deren Namen und Eigenschaften stellen die Daten.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bietet eine leistungsstarke Möglichkeit, Code, Dokumente, Konfigurationsdateien und andere Artefakte aus Daten zu generieren, die in Modellen dargestellt werden. Mithilfe [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] können Sie einen Satz von Klassen erstellen, die Ihre Daten darstellen, und Sie können Ihre Textvorlagen in Klassen schreiben, deren Namen und Eigenschaften diese Daten widerspiegeln.
 
-Fabrikam hat beispielsweise eine XML-Datei mit Kundennamen und e-Mail-Adressen. Ihre Entwickler erstellen Sie ein Modell, in denen Kunden eine Klasse mit Eigenschaften und die e-Mail-ist. Mehrere Textvorlagen zum Verarbeiten von Daten, einschließlich dieses Fragment der erzeugt eine Tabelle mit allen Kunden als Teil einer HTML-Seite geschrieben:
+Fabrikam hat z. b. eine XML-Datei mit Kundennamen und e-Mail-Adressen. Ihre Entwickler erstellen ein Modell, in dem Customer eine Klasse mit den Eigenschaften Name und e-Mail-Adresse ist. Sie schreiben mehrere Textvorlagen, um die Daten zu verarbeiten, einschließlich dieses Fragments, das eine Tabelle aller Kunden als Teil einer HTML-Seite erzeugt:
 
 ```
 <table>
@@ -28,35 +28,35 @@ Fabrikam hat beispielsweise eine XML-Datei mit Kundennamen und e-Mail-Adressen. 
 <# } #>  </table>
 ```
 
-Wenn die Kundendatenbank verarbeitet wird, wird die XML-Datei in den Modellspeicher gelesen. Ein *anweisungsprozessor*, der mithilfe von [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], stellt Sie die Customer-Klasse auf den Code zur Verfügung, in der Textvorlage. Viele Textvorlagen können für den gleichen Speicher ausgeführt werden.
+Wenn die Kundendatenbank verarbeitet wird, wird die XML-Datei in den Modell Speicher gelesen. Ein *Direktivenprozessor*, der mit [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] erstellt wurde, macht die Customer-Klasse für den Code in der Textvorlage verfügbar. Viele Textvorlagen können für denselben Speicher ausgeführt werden.
 
-Textvorlagen sind ein wesentlicher [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Sie werden zum Generieren von Quellcode für die Elemente des Domänenmodells sowie für das VSPackage und die Steuerelemente, die verwendet werden, um die Tools in Visual Studio integriert.
+Text Vorlagen sind für die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] von entscheidender Bedeutung. Sie werden zum Generieren des Quellcodes für die Elemente des Domänen Modells sowie für das VSPackage und die Steuerelemente verwendet, die zur Integration der Tools in Visual Studio verwendet werden.
 
-Dieser Abschnitt beschreibt einige der Möglichkeiten zum Erstellen, ändern und Debuggen von Textvorlagen in verwendet [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+In diesem Abschnitt werden einige Methoden zum Erstellen, ändern und Debuggen von Textvorlagen erläutert, die in [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] verwendet werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-[Zugreifen auf Modelle aus Textvorlagen](../modeling/accessing-models-from-text-templates.md)\
-Enthält grundlegende Informationen zu einer domänenspezifischen Sprache in Textvorlagen auf.
+[Zugreifen auf Modelle aus Text Vorlagen](../modeling/accessing-models-from-text-templates.md) \
+Stellt grundlegende Informationen über das verweisen auf die domänenspezifische Sprache in Textvorlagen bereit.
 
-[Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
-Beschreibt, wie Sie Problembehandlung und Debuggen in einer Textvorlage, die auf einer domänenspezifischen Sprache verweist.
+Exemplarische Vorgehensweise [: Debuggen einer Text Vorlage, die auf ein Modell zugreifen](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md) \
+Beschreibt, wie Sie die Problembehandlung und das Debuggen für eine Textvorlage durchführen, die auf eine domänenspezifische Sprache verweist.
 
-[Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)\
-Beschreibt, wie die Verbindung mit einem generierten Direktivenprozessor einen benutzerdefinierten Host.
+Exemplarische Vorgehensweise [: Verbinden eines Hosts mit einem generierten Direktivenprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md) \
+Beschreibt, wie ein benutzerdefinierter Host mit einem generierten Direktivenprozessor verbunden wird.
 
-[Der DslTextTransform-Befehl](../modeling/the-dsltexttransform-command.md)\
-Beschreibt die Befehlsdatei, die die TextTransform ausführbare Datei in der Befehlszeile für Textvorlagen ausgeführt wird, die auf einer domänenspezifischen Sprachen zu verweisen.
+[Der dsltexttransform-Befehl](../modeling/the-dsltexttransform-command.md) \
+Beschreibt die Befehlsdatei, die für Textvorlagen, die auf domänenspezifische Sprachen verweisen, die ausführbare textTransform-Datei in der Befehlszeile ausführt.
 
 ## <a name="reference"></a>Referenz
 
-[Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)\
-Enthält die Syntax der textvorlagenanweisungen und Kontrollblöcken.
+[Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md) \
+Stellt die Syntax von Textvorlagen Direktiven und-Kontroll Blöcken bereit.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
 [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
-Erläutert das Textvorlagen-Transformationsprozess ab.
+Erläutert den Textvorlagen-Transformationsprozess.
 
-[Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md)\
-Lesen Sie dieses Thema, wenn Sie aus einer DSL auf einem Buildserver-Dateien generieren.
+[Code Generierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md) \
+Lesen Sie dieses Thema, wenn Sie Dateien aus einer DSL auf einem Buildserver erstellen.

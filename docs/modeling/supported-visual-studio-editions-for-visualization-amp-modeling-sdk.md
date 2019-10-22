@@ -1,25 +1,25 @@
 ---
-title: Unterstützte Visual Studio-Versionen für das Visualisierungs- und Modellierungs-SDK
+title: Unterstützte Visual Studio-Editionen für Visualisierungs-und Modellierungs-SDK
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fdfe698096da53abf28aa583c816d9238810333
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003415"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609341"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Unterstützte Visual Studio-Versionen für das Visualisierungs- und Modellierungs-SDK
 
-Im folgenden sind Listen von Visual Studio-Editionen, die mit unterstützt werden [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] in der Erstellung und Bereitstellung. Weitere Informationen zu diesen Editionen finden Sie unter Microsoft Visual Studio [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).
+Im folgenden finden Sie Listen der Visual Studio-Editionen, die mit [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] in den Erstellungs-und Bereitstellungs Umgebungen unterstützt werden. Weitere Informationen zu diesen Editionen finden Sie im Microsoft Visual Studio [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Erstellungsedition
 
@@ -41,13 +41,13 @@ Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 - Visual Studio Professional
 
-- Visual Studio Shell (integrierter Modus) verteilbares Paket
+- Visual Studio Shell (integrierter Modus) verteilbares Paket Redistributable Package
 
 - Visual Studio Shell (isolierter Modus), verteilbares Paket
 
 > [!NOTE]
-> Damit wird eine DSL, die auf einem Shell-Produkt ausführen können, müssen Sie festlegen der **Visual Studio-Edition unterstützt** im Erweiterungsmanifest Feld. Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).
+> Damit eine DSL in einem shellprodukt ausgeführt werden kann, müssen Sie das **unterstützte vs Edition** -Feld im Erweiterungs Manifest festlegen. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [DSL-Tools – Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

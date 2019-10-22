@@ -1,5 +1,5 @@
 ---
-title: 'CA1306: Set-Gebietsschema für Datentypen | Microsoft-Dokumentation'
+title: 'CA1306: Gebiets Schema für Datentypen festlegen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - SetLocaleForDataTypes
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 75e67cdd058939837441bd969ac8629a6fc65dcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03344f0b19552aa00270c8a6fa760c6ba6ee75f4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200360"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661413"
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Gebietsschema für Datentypen festlegen.
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Gebietsschema für Datentypen festlegen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
-|Kategorie|Microsoft.Globalization|
+|Kategorie|Microsoft. Globalization|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Methode oder einen Konstruktor erstellt eine oder mehrere <xref:System.Data.DataTable?displayProperty=fullName> oder <xref:System.Data.DataSet?displayProperty=fullName> Instanzen und die Gebietsschemaeigenschaft wurde nicht explizit festgelegt (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> oder <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+ Eine Methode oder ein Konstruktor hat mindestens eine <xref:System.Data.DataTable?displayProperty=fullName> oder <xref:System.Data.DataSet?displayProperty=fullName> Instanzen erstellt und die Gebiets Schema Eigenschaft (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> oder <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>) nicht explizit festgelegt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Das Gebietsschema bestimmt kulturspezifische Darstellungselemente für Daten, z. B. für Zahlenwerte, Währungssymbole und Sortierreihenfolge verwendete Formatierung. Bei der Erstellung einer <xref:System.Data.DataTable> oder <xref:System.Data.DataSet>, sollten Sie das Gebietsschema explizit festlegen. Standardmäßig ist das Gebietsschema für diese Art der aktuellen Kultur. Für Daten, die in einer Datenbank oder Datei gespeichert und global freigegeben ist, sollte das Gebietsschema normalerweise auf die invariante Kultur festgelegt werden (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Wenn Daten über Kulturen hinweg freigegeben werden, verwenden das Standardgebietsschema kann dazu führen, dass der Inhalt des der <xref:System.Data.DataTable> oder <xref:System.Data.DataSet> angezeigt oder nicht ordnungsgemäß interpretiert werden soll.
+ Das Gebiets Schema bestimmt kulturspezifische Präsentationselemente für Daten, z. b. für numerische Werte, Währungssymbole und die Sortierreihenfolge verwendete Formatierung. Wenn Sie eine <xref:System.Data.DataTable> oder <xref:System.Data.DataSet> erstellen, sollten Sie das Gebiets Schema explizit festlegen. Standardmäßig ist das Gebiets Schema für diese Typen die aktuelle Kultur. Für Daten, die in einer Datenbank oder Datei gespeichert sind und Global gemeinsam genutzt werden, sollte das Gebiets Schema normalerweise auf die invariante Kultur (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>) festgelegt werden. Wenn Daten über Kulturen hinweg freigegeben werden, kann die Verwendung des Standard Gebiets Schemas bewirken, dass die Inhalte der <xref:System.Data.DataTable> oder <xref:System.Data.DataSet> falsch dargestellt oder interpretiert werden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, legen Sie explizit das Gebietsschema für die <xref:System.Data.DataTable> oder <xref:System.Data.DataSet>.
+ Um einen Verstoß gegen diese Regel zu beheben, legen Sie das Gebiets Schema für die <xref:System.Data.DataTable> oder <xref:System.Data.DataSet> explizit fest.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher ist, eine Warnung dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe ist, die Daten nicht freigegeben werden, oder die Standardeinstellung das gewünschte Verhalten in allen unterstützten Szenarien ergibt.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe verwendet wird, die Daten nicht freigegeben werden oder wenn die Standardeinstellung das gewünschte Verhalten in allen unterstützten Szenarios ergibt.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel erstellt zwei <xref:System.Data.DataTable> Instanzen.
+ Im folgenden Beispiel werden zwei <xref:System.Data.DataTable>-Instanzen erstellt.
 
  [!code-csharp[FxCop.Globalization.DataTable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DataTable/cs/FxCop.Globalization.DataTable.cs#1)]
 

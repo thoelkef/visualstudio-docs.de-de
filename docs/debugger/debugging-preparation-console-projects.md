@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533321"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431466"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Vorbereitung des Debugvorgangs: Konsolen Projekte (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Vorbereitung zum Debuggen:C#Konsolen C++Projekte (, F#, Visual Basic,)
 
-Die Vorbereitung zum Debuggen eines Konsolen Projekts ähnelt dem Vorbereiten des Debuggens eines Windows-Projekts, mit einigen zusätzlichen Überlegungen wie dem Festlegen von Befehlszeilen Argumenten und dem Anhalten der APP zum Debuggen. Weitere Informationen finden Sie unter [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md)und [Vorbereitung des Debuggens: Windows Forms Anwendungen (.net)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
+Die Vorbereitung zum Debuggen eines Konsolen Projekts ähnelt dem Vorbereiten des Debuggens eines Windows-Projekts, mit einigen zusätzlichen Überlegungen wie dem Festlegen von Befehlszeilen Argumenten und dem Anhalten der APP zum Debuggen. Weitere Informationen finden Sie unter [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md), und [Vorbereitung zum Debuggen: Windows Forms-Anwendungen (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
 
 - C#, Visual Basic und F# Konsolenanwendung
 
@@ -49,7 +49,7 @@ Wie alle Projekteigenschaften bleiben diese Argumente über die Debug- und Visua
 
 - Legen Sie einen Haltepunkt im Code fest, und starten Sie die Anwendung.
 
-- Starten Sie die Anwendung **mit F10** (**Debug** > **Step over**) **oder F11** (**Debug** > **step into**), und navigieren Sie dann durch den Code, indem Sie andere Optionen wie z. b. **Ausführen zum Klicken**verwenden.
+- Starten Sie die Anwendung **mit F10** (**Debug**  > **Step over**) oder **F11** (**Debug**  > **step into**), und navigieren Sie dann durch den Code, indem Sie andere Optionen wie z. b. **Ausführen zum Klicken**verwenden.
 
 - Klicken Sie im Code-Editor mit der rechten Maustaste auf eine Zeile, und wählen Sie **Ausführen bis Cursor**aus.
 
@@ -60,7 +60,7 @@ Wie alle Projekteigenschaften bleiben diese Argumente über die Debug- und Visua
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
 - [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
-- [Visual C++-Projekttypen](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Vorbereiten des Debuggens C++ von Projekten](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Debuggersicherheit](../debugger/debugger-security.md)

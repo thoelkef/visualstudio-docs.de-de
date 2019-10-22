@@ -2,7 +2,7 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 titleSuffix: ''
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
-ms.date: 09/11/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 0b1388aa7ac993ba4b98837ec8ac46d516b567da
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913247"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381025"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 
@@ -32,23 +32,33 @@ Wenn Sie Visual Studio von einer Befehlszeile aus installieren, können Sie die 
 - Den Installationsprozess automatisieren
 - Einen Cache (Layout) der Installationsdateien für den späteren Gebrauch erstellen
 
-Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die kleine Datei (1 MB), die den Downloadprozess initiiert, verwendet. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen. Verwenden Sie die folgenden Links, um einen direkten Link zum neuesten Release-Bootstrapper für die Produktversion zu erhalten, die Sie installieren:
+Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die kleine Datei (1 MB), die den Downloadprozess initiiert, verwendet. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Informationen zum Herunterladen eines Bootstrappers für Visual Studio 2017 finden Sie auf der Downloadseite für [**frühere Versionen von Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Verwenden Sie die folgenden Links, um einen direkten Link zum neuesten Release-Bootstrapper für die Produktversion zu erhalten, die Sie installieren:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+Ihre Bootstrapperdatei entspricht oder ähnelt einer der folgenden Dateien:
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
+
+>[!TIP]
+>Wenn Sie zuvor eine Bootstrapperdatei heruntergeladen haben und deren Version überprüfen möchten, gehen Sie wie folgt vor: Öffnen Sie in Windows den Datei-Explorer, klicken Sie mit der rechten Maustaste auf die Bootstrapperdatei, wählen Sie **Eigenschaften** aus, wählen Sie die Registerkarte **Details**  aus, und sehen Sie sich dann die Nummer der **Produktversion** an. Um diese Nummer einem Release von Visual Studio zuzuordnen, nutzen Sie die Informationen auf der Seite [Visual Studio-Buildnummern und -Veröffentlichungstermine ](visual-studio-build-numbers-and-release-dates.md).
 
 ## <a name="command-line-parameters"></a>Befehlszeilenparameter
 
@@ -121,7 +131,7 @@ Ersetzen Sie `vs_enterprise.exe` nach Bedarf durch die Produktedition, die Sie i
 | `--cache` | **Neu in Version 15.2 (optional):** Falls vorhanden, werden Pakete nach ihrer Installation für nachfolgende Reparaturen gespeichert. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--nocache` | **Neu in Version 15.2 (optional):** Falls vorhanden, werden Pakete nach ihrer Installation oder Reparatur gelöscht. Sie werden nur bei Bedarf erneut heruntergeladen und nach ihrer Verwendung wieder gelöscht. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--noUpdateInstaller` | **Neu in Version 15.2 (optional):** Falls vorhanden, hindert den Installer daran, sich selbst zu aktualisieren, wenn „quiet“ angegeben ist. Der Befehl wird für den Installer einen Fehler auslösen, und der Installer gibt einen Exitcode ungleich 0 (null) zurück, falls „noUpdateInstaller“ mit „quiet“ angegeben wird, wenn ein Installerupdate erforderlich ist. |
-| `--noWeb` | **Neu in Version 15.3 (optional):** Falls vorhanden, verwendet das Visual Studio-Setup die Dateien in Ihrem Layoutverzeichnis zum Installieren von Visual Studio. Wenn ein Benutzer versucht, Komponenten zu installieren, die nicht im Layout enthalten sind, wird das Setup nicht abgeschlossen.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). <br/><br/> **Wichtig:** Dieser Schalter verhindert nicht, dass das Visual Studio-Setup nach Updates sucht. Weitere Informationen finden Sie unter [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).|
+| `--noWeb` | **Neu in Version 15.3 (optional):** Falls vorhanden, verwendet das Visual Studio-Setup die Dateien in Ihrem Layoutverzeichnis zum Installieren von Visual Studio. Wenn ein Benutzer versucht, Komponenten zu installieren, die nicht im Layout enthalten sind, wird das Setup nicht abgeschlossen.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). <br/><br/> **Wichtig:** Dieser Schalter verhindert nicht, dass das Visual Studio-Setup nach Updates sucht. Weitere Informationen finden Sie unter [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md). **Neu in 16.3.5**: Dieser Schalter verhindert Fehler und verbessert die Leistung bei Offlineinstallationen und -Updates.|
 | `--path <name>=<path>` | **Neu in Version 15.7 (optional):** Zur Angabe der benutzerdefinierten Installationspfade für die Installation. Unterstützte Pfadnamen lauten: „shared“, „cache“ und „install“. |
 | `--path cache=<path>` | **Neu in Version 15.7 (optional):** Verwendet den Speicherort, den Sie beim Herunterladen der Installationsdateien angeben. Dieser Speicherort kann nur bei der ersten Installation von Visual Studio festgelegt werden. Ein Beispiel: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Neu in Version 15.7 (optional):** Enthält freigegebene Dateien für parallele Visual Studio-Installationen. Einige Tools und SDKs werden an einen Speicherort auf diesem Datenträger installiert. Andere überschreiben möglicherweise diese Einstellung und werden auf einen anderen Datenträger installiert. Ein Beispiel: `--path shared="C:\VS\shared"` <br><br>Wichtig: Dies kann nur einmal festgelegt werden, und zwar bei der ersten Installation von Visual Studio. |

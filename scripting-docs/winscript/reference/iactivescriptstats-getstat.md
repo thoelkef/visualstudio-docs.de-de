@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Microsoft-Dokumentation
+title: 'Iactivescriptstats:: getstat | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 096f1cf5b9bf8b5533bd5c36d33f014c747ff9aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992011"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574335"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
-Gibt einen von der standard-Skripterstellung für Statistiken.  
+Gibt eine der Standardskript Statistiken zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,28 +39,28 @@ HRESULT GetStat(
   
 #### <a name="parameters"></a>Parameter  
  `stid`  
- [in] Gibt an, welche Statistik zurückgeben. Der Wert muss sein:  
+ in Gibt an, welche Statistik zurückgegeben werden soll. Muss der Wert sein:  
   
 |Konstante|Wert|Beschreibung|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|Zurückgeben der Anzahl der Anweisungen, die ausgeführt werden, da das Skript gestartet oder die Statistik zurückgesetzt wurden.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Gibt die Anzahl der Anweisungen zurück, die seit dem Start des Skripts oder der zurück setzung der Statistiken ausgeführt wurden.|  
   
  `pluHi`  
- [out] Die oberen 32 Bits einer 64-Bit-Ganzzahl ohne Vorzeichen, die die Statistik darstellt.  
+ vorgenommen Die hohen 32 Bits einer 64-Bit-Ganzzahl ohne Vorzeichen, die die Statistik darstellt.  
   
  `pluLo`  
- [out] Die unteren 32 Bits einer 64-Bit-Ganzzahl ohne Vorzeichen, die die Statistik darstellt.  
+ vorgenommen Die unteren 32 Bits einer 64-Bit-Ganzzahl ohne Vorzeichen, die die Statistik darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück. Mögliche Werte enthalten, aber Sie sind nicht auf die Werte in der folgenden Tabelle beschränkt.  
+ Die Methode gibt ein `HRESULT` zurück. Mögliche Werte sind, sind jedoch nicht auf die Werte in der folgenden Tabelle beschränkt.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt einen von der standard-Skripterstellung für Statistiken.  
+ Diese Methode gibt eine der Standardskript Statistiken zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
+ [Iactivescriptstats:: getstatex](../../winscript/reference/iactivescriptstats-getstatex.md)    
  [IActiveScriptStats-Schnittstelle](../../winscript/reference/iactivescriptstats-interface.md)

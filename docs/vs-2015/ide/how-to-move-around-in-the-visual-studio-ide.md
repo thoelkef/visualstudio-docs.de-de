@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89c4447eb6bbc4b2ae9f7667672626d5119c61d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685597"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651799"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Vorgehensweise: Navigieren in der Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
 
   Die Funktionsweise des **IDE-Navigators** ist weitestgehend mit der des Windows-Anwendungsschalters vergleichbar. Er ist nicht über die Menüs verfügbar, sondern kann lediglich mithilfe von Tastenkombinationen aufgerufen werden. Je nachdem, in welcher Reihenfolge Sie durch die Dateien navigieren möchten, können Sie den **IDE-Navigator** über einen von zwei (unten gezeigten) Befehlen aufrufen.
 
-  ![Visual Studio IDE-Navigator](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
+  ![Visual Studio-IDE-Navigator](../ide/media/vs2015-ide-navigator.png "|::ref1::|")
 
   Der Befehl `Window.PreviousDocumentWindowNav` ermöglicht es Ihnen, zu der zuletzt verwendeten Datei zu navigieren, und der Befehl `Window.NextDocumentWindowNav` ermöglicht Ihnen die Navigation in umgekehrter Reihenfolge. In den allgemeinen Entwicklungseinstellungen ist dem Befehl `Window.PreviousDocumentWindowNav` die Tastenkombination STRG+UMSCHALT+TAB zugewiesen und dem Befehl `Window.NextDocumentWindowNav` die Tastenkombination STRG+TAB.
 

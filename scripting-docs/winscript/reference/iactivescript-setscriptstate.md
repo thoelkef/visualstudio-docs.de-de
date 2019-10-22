@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScript:: Setscriptstate | Microsoft-Dokumentation'
+title: 'IActiveScript:: setscriptstate | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16a13b545ddd482f8aa143d289d46447370e23ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea947e00ffd5a3498261f4a3a8acd4791e8ace60
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935530"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577991"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-Setzt das Skriptmodul in den angegebenen Zustand. Diese Methode kann von nicht-Base Threads aufgerufen werden, ohne dass eine nicht-Base-Legende Hostobjekte oder in der [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Schnittstelle.  
+Versetzt die Skript-Engine in den angegebenen Zustand. Diese Methode kann von nicht basisthreads aus aufgerufen werden, ohne dass ein Aufruf von Objekten oder die [iactivescriptsite](../../winscript/reference/iactivescriptsite.md) -Schnittstelle durchgeführt werden soll.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetScriptState(
   
 #### <a name="parameters"></a>Parameter  
  `ss`  
- [in] Legt die Skript-Engine auf den angegebenen Zustand fest. Kann eine der in definierten Werte der [SCRIPTSTATE-Enumeration](../../winscript/reference/scriptstate-enumeration.md) Enumeration.  
+ in Legt die Skript-Engine auf den angegebenen Zustand fest. Kann einer der Werte sein, die in der [ScriptState](../../winscript/reference/scriptstate-enumeration.md) -enumerationsenumeration definiert sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -45,17 +45,17 @@ HRESULT SetScriptState(
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
-|`E_FAIL`|Die Skript-Engine unterstützt nicht den Übergang zurück zum initialisierten Zustand. Der Host muss dieses Skript-Engine zu verwerfen und erstellen, initialisieren und Laden eine neue Skript-Engine, um den gleichen Effekt zu erzielen.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert) und aus diesem Grund fehlgeschlagen ist.|  
-|`OLESCRIPT_S_PENDING`|Die Methode wurde in die Warteschlange erfolgreich, jedoch der Zustand noch nicht geändert wurde. Wenn die Änderungen des Ansichtszustands des Standorts erneut aufgerufen über das [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) Methode.|  
-|`S_FALSE`|Die Methode erfolgreich ausgeführt, aber das Skript wurde bereits im angegebenen Zustand.|  
+|`E_FAIL`|Die Skript-Engine unterstützt den Übergang nicht in den initialisierten Zustand. Der Host muss diese Skript-Engine verwerfen und eine neue Skript-Engine erstellen, initialisieren und laden, um denselben Effekt zu erzielen.|  
+|`E_UNEXPECTED`|Der-Befehl wurde nicht erwartet (z. b. wurde die Skript-Engine noch nicht geladen oder initialisiert) und ist daher fehlgeschlagen.|  
+|`OLESCRIPT_S_PENDING`|Die Methode wurde erfolgreich in die Warteschlange eingereiht, aber der Zustand wurde noch nicht geändert. Wenn sich der Status ändert, wird die Website über die [iactivescriptsite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) -Methode zurückgerufen.|  
+|`S_FALSE`|Die Methode war erfolgreich, das Skript war jedoch bereits im angegebenen Zustand.|  
   
 ## <a name="remarks"></a>Hinweise  
- Weitere Informationen zur Skripterstellung für Engine-Status finden Sie im Abschnitt "Skriptmodulzustände" der [Windows Script-Engines](../../winscript/windows-script-engines.md) .  
+ Weitere Informationen zu den Status der Skript-Engine finden Sie im Abschnitt Skript-Engine-Zustände von [Windows Script Engines](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
- [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
- [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
- [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
+ [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md) -   
+ [IActiveScript:: getscriptdispatch](../../winscript/reference/iactivescript-getscriptdispatch.md) -   
+ [IActiveScript:: interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) -   
+ [Iactivescriptparamese::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

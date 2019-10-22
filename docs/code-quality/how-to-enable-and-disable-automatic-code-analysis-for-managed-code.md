@@ -2,17 +2,17 @@
 title: Legacy Code Analyse deaktivieren
 ms.date: 10/04/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c00a66a856dccb0ccb488937b935d9150ffc0266
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 41d7a598801567809893bfb80e38fee0a1134595
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975077"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649435"
 ---
-# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Vorgehensweise: Aktivieren und Deaktivieren der binären Code Analyse für verwalteten Code
+# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Gewusst wie: Aktivieren und Deaktivieren der binären Code Analyse für verwalteten Code
 
 Sie können die Legacy-Code Analyse (binäre Analyse) so konfigurieren, dass Sie nach jedem Build eines Projekts mit verwaltetem Code ausgeführt wird. Sie können auch andere Einstellungen für jede Buildkonfiguration haben, z. b. Debug und Release.
 

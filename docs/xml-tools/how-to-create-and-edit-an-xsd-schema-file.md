@@ -3,36 +3,36 @@ title: Erstellen und Bearbeiten einer XSD-Schemadatei
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2df904b4f5351611e4d15775f68d94db4cc876e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948929"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645947"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Gewusst wie: Erstellen und Bearbeiten einer XSD-Schema Datei
 
 In diesem Thema wird beschrieben, wie eine neue XML-Schemadatei (XSD) erstellt und der XSD-Datei anschließend Inhalt hinzugefügt wird.
 
 ## <a name="to-create-a-new-xml-schema-file"></a>So erstellen Sie eine neue XML-Schemadatei
 
-1. Öffnen Sie in Visual Studio die **Datei** Menü **neu** > **Datei**. Oder verwenden Sie die **STRG**+**N** Tastenkombination auswählen.
+1. Öffnen Sie in Visual Studio das Menü **Datei** , und wählen Sie **neu**  > **Datei**aus. Oder verwenden Sie die Tastenkombination **STRG** +**N** .
 
-2. In der **neue Datei** wählen Sie im Dialogfeld **XML-Schema** und wählen Sie dann **öffnen**.
+2. Wählen Sie im Dialogfeld **neue Datei** die Option **XML-Schema** aus, und wählen Sie dann **Öffnen**aus.
 
-   Eine neue Datei wird erstellt. Die Ausgangsansicht und ein leeres **XML-Schema-Explorer** Fenster in Visual Studio angezeigt.
+   Eine neue Datei wird erstellt. Die Start Ansicht und ein leeres **XML-Schema-Explorer** -Fenster werden in Visual Studio angezeigt.
 
 ## <a name="to-edit-a-file"></a>So bearbeiten Sie eine Datei
 
-1. Wählen Sie die **verwenden Sie XML-Editor anzeigen und bearbeiten die zugrunde liegende XML-Schemadatei** Link in der Ausgangsansicht auf.
+1. Wählen Sie den **XML-Editor verwenden aus, um den zugrunde liegenden XML-Schema Datei-** Link in der Start Ansicht anzuzeigen und zu bearbeiten.
 
-   Mit der neuen Datei öffnen, wird der XML-Editor angezeigt.
+   Der XML-Editor wird mit der neuen geöffneten Datei angezeigt.
 
-2. Kopieren Sie die XML-schemabeispielcode aus [Bestellungsschema](../xml-tools/sample-xsd-file-simple-schema.md) und fügen Sie ihn, um den Standardcode zu ersetzen, das die neue XSD-Datei standardmäßig hinzugefügt wurde.
+2. Kopieren Sie den XML-Schema Beispielcode aus dem Bestell [Schema](../xml-tools/sample-xsd-file-simple-schema.md) , und fügen Sie ihn ein, um den Code zu ersetzen, der standardmäßig der neuen XSD-Datei hinzugefügt wurde.
 
-   Die **XML-Schema-Explorer** wird mit dem neuen Schemaset aktualisiert.
+   Der **XML-Schema-Explorer** wird mit dem neuen Schemaset aktualisiert.

@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd491ea0a17bcc0a4fccc0ade205736daae552d5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871869"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646149"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Aufrufen von Texttransformation in einer VS-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,8 +140,8 @@ Sample text.
  Sie können Werte aus einer Textvorlage mit einer Parameterklasse übergeben, die von <xref:System.MarshalByRefObject> abgeleitet wird.
 
 ## <a name="related-topics"></a>Verwandte Themen
- So generieren Sie Text von einer vorverarbeiteten Textvorlage Rufen Sie die `TransformText()`-Methode der generierten Klasse auf. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ So generieren Sie Text aus einer vorverarbeiteten Textvorlage: Rufen Sie die `TransformText()`-Methode der generierten-Klasse auf. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- So generieren Sie außerhalb einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung Text Definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ So generieren Sie Text außerhalb einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung: definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Text Vorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann Rufen Sie die [preprocesstemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) -Methode von [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))auf.
+ So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann: Rufen Sie die [preprocesstemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) -Methode von [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))auf.

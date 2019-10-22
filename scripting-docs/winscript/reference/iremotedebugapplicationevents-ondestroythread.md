@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnDestroyThread | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationevents:: ondestroythread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0db56e8fffb8b8d9626d805261a7257b4871603
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59f2b599978cfaf993981fa66958fd3acabe4b32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817953"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575601"
 ---
 # <a name="iremotedebugapplicationeventsondestroythread"></a>IRemoteDebugApplicationEvents::OnDestroyThread
-Behandelt ein Ereignis Thread zerstört.  
+Behandelt ein Thread zerstörtes Ereignis.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT OnDestroyThread(
   
 #### <a name="parameters"></a>Parameter  
  `prdat`  
- [in] Der Thread, der zerstört wurde.  
+ in Der Thread, der zerstört wurde.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT OnDestroyThread(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt das Ereignis Thread zerstört.  
+ Diese Methode behandelt das Thread zerstörte Ereignis.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)

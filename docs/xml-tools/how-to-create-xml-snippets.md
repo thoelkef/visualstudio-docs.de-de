@@ -3,19 +3,19 @@ title: 'Vorgehensweise: Erstellen von XML-Ausschnitten'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926509"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645941"
 ---
-# <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
+# <a name="how-to-create-xml-snippets"></a>Gewusst wie: Erstellen von XML-Ausschnitten
 
 Der XML-Editor kann zum Erstellen neuer XML-Ausschnitte verwendet werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.
 
@@ -56,7 +56,7 @@ Vom Editor werden zwei Ausschnitttypen unterstützt:
 </SnippetTypes>
 ```
 
-Der `Expansion` -Typ bestimmt, ob der Ausschnitt angezeigt wird, wenn Sie den Befehl **Ausschnitt einfügen** aufrufen. Der `SurroundsWith` -Typ bestimmt, ob der Ausschnitt angezeigt wird, wenn Sie den Befehl "umschließen **mit** " aufrufen.
+Der `Expansion` Typ bestimmt, ob der Ausschnitt angezeigt wird, wenn Sie den Befehl **Ausschnitt einfügen** aufrufen. Der `SurroundsWith`-Typ bestimmt, ob der Ausschnitt angezeigt wird, wenn Sie den Befehl "umschließen **mit** " aufrufen.
 
 ### <a name="code-element"></a>Codeelement
 
@@ -104,7 +104,7 @@ Mithilfe des `Literal`-Elements wird der Ersetzungstext angegeben, der nach dem 
 </Literal
 ```
 
-Literale können auch auf Funktionen verweisen. Der XML-Editor enthält eine Funktion mit dem Namen **LookupPrefix**. Die **LookupPrefix** -Funktion sucht den angegebenen Namespace-URI von dem Speicherort im XML-Dokument, von dem aus dieser Ausschnitt aufgerufen wird, und gibt das Namespace Präfix zurück, das für diesen Namespace definiert ist, sofern vorhanden, und enthält den Doppelpunkt (:) in diesem Namen. Im folgenden finden Sie ein Beispiel für `Literal` ein-Element, das die **LookupPrefix** -Funktion verwendet.
+Literale können auch auf Funktionen verweisen. Der XML-Editor enthält eine Funktion mit dem Namen **LookupPrefix**. Die **LookupPrefix** -Funktion sucht den angegebenen Namespace-URI von dem Speicherort im XML-Dokument, von dem aus dieser Ausschnitt aufgerufen wird, und gibt das Namespace Präfix zurück, das für diesen Namespace definiert ist, sofern vorhanden, und enthält den Doppelpunkt (:) in diesem Namen. Im folgenden finden Sie ein Beispiel für ein `Literal`-Element, das die **LookupPrefix** -Funktion verwendet.
 
 ```xml
 <Literal Editable="false">
@@ -118,5 +118,5 @@ Die $prefix$-Variable kann anschließend an beliebiger Stelle im XML-Ausschnitt 
 ## <a name="see-also"></a>Siehe auch
 
 - [XML-Ausschnitte](../xml-tools/xml-snippets.md)
-- [Vorgehensweise: XML-Ausschnitte verwenden](../xml-tools/how-to-use-xml-snippets.md)
-- [Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Gewusst wie: Verwenden von XML-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md)
+- [Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

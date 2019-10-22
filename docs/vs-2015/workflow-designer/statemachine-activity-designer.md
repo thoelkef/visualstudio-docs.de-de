@@ -1,5 +1,5 @@
 ---
-title: StateMachine-Aktivitäts-Designer | Microsoft-Dokumentation
+title: StateMachine-Aktivitäts Designer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,28 +10,27 @@ f1_keywords:
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 caps.latest.revision: 5
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96965a2b0861e7c4df4a43e4d258afc0a48090bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fc9d34e06ca443b39a1a57aa88fee1155f47a8c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784541"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660117"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine-Aktivitäts-Designer
-Die <xref:System.Activities.Statements.StateMachine>-Aktivität enthält eine Auflistung von Zustands- und Modellworkflows, die das bekannte Zustandsautomatenparadigma verwenden.  
-  
-## <a name="using-the-statemachine-activity-designer"></a>Verwenden des StateMachine-Aktivitäts-Designers  
- Hinzufügen einer <xref:System.Activities.Statements.StateMachine> -Aktivität ziehen Sie die **StateMachine** Aktivitäts-Designer aus der **Zustandsautomat** im Abschnitt der **Toolbox** und legen ihn auf die [!INCLUDE[wfd1](../includes/wfd1-md.md)] Oberfläche. Um einen untergeordneten Zustand hinzufügen <xref:System.Activities.Statements.StateMachine> -Aktivität ziehen Sie eine <xref:System.Activities.Statements.State> oder <xref:System.Activities.Core.Presentation.FinalState> aus der **Toolbox** und legen ihn auf die **StateMachine**.  
-  
-### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Eigenschaften der StateMachine-Aktivität im Workflow-Designer  
- In der folgenden Tabelle sind die <xref:System.Activities.Statements.StateMachine>-Eigenschaften aufgeführt, die mithilfe des Workflow-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster, einige davon auf der Designeroberfläche bearbeitet werden.  
-  
-|Eigenschaftenname|Erforderlich|Verwendung|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Namen der <xref:System.Activities.Statements.StateMachine>Aktivität im Header an. Der Standardwert ist **StateMachine**. Der Wert kann im Eigenschaftenraster oder direkt im Header des Aktivitätsdesigners bearbeitet werden. <xref:System.Activities.Activity.DisplayName%2A> wird in der Breadcrumbnavigation verwendet, die am oberen Rand des Workflow-Designers angezeigt wird.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md)   
- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+Die <xref:System.Activities.Statements.StateMachine>-Aktivität enthält eine Auflistung von Zustands- und Modellworkflows, die das bekannte Zustandsautomatenparadigma verwenden.
+
+## <a name="using-the-statemachine-activity-designer"></a>Verwenden des StateMachine-Aktivitäts-Designers
+ Zum Hinzufügen einer <xref:System.Activities.Statements.StateMachine> Aktivität ziehen Sie den **StateMachine** -Aktivitäts-Designer aus dem Abschnitt **Zustands Automat** der **Toolbox** , und legen Sie ihn auf der [!INCLUDE[wfd1](../includes/wfd1-md.md)] Oberfläche ab. Um dieser <xref:System.Activities.Statements.StateMachine> Aktivität einen untergeordneten Zustand hinzuzufügen, ziehen Sie eine <xref:System.Activities.Statements.State> oder <xref:System.Activities.Core.Presentation.FinalState> aus der **Toolbox** , und legen Sie Sie auf dem **StateMachine**-Element ab.
+
+### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Eigenschaften der StateMachine-Aktivität im Workflow-Designer
+ In der folgenden Tabelle sind die <xref:System.Activities.Statements.StateMachine>-Eigenschaften aufgeführt, die mithilfe des Workflow-Designers festgelegt werden können, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster, einige davon auf der Designeroberfläche bearbeitet werden.
+
+|Eigenschaftenname|Erforderlich|Verwendung|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Namen der <xref:System.Activities.Statements.StateMachine>Aktivität im Header an. Der Standardwert ist **StateMachine**. Der Wert kann im Eigenschaftenraster oder direkt im Header des Aktivitätsdesigners bearbeitet werden. <xref:System.Activities.Activity.DisplayName%2A> wird in der Breadcrumbnavigation verwendet, die am oberen Rand des Workflow-Designers angezeigt wird.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+
+## <a name="see-also"></a>Siehe auch
+ Fluss [Diagramm](../workflow-designer/flowchart-activity-designer.md) - [Ablauf Steuerung](../workflow-designer/control-flow-activity-designers.md)

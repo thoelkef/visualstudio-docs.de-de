@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung von Haltepunkten im Debugger | Microsoft-Dokumentation
+title: Behandeln von Problemen mit Breakpoints im Debugger | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
@@ -8,54 +8,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbcda5eef8ac6ac6aa20c6f487dfc94beb10866c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929664"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535927"
 ---
-# <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Problembehandlung von Haltepunkten in Visual Studio-Debugger
+# <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Behandeln von Problemen mit Breakpoints im Visual Studio-Debugger
 
-## <a name="breakpoint-warnings"></a>Haltepunkt-Warnungen
+## <a name="breakpoint-warnings"></a>Haltepunkt Warnungen
 
-Ein Haltepunkt verfügt über zwei mögliche visuelle Zustände beim Debuggen: einen ausgefüllten roten Kreis und ein leerer (weiß gefüllt) Kreis. Wenn der Debugger erfolgreich einen Haltepunkt im Zielprozess festlegen kann, bleibt sie einen ausgefüllten roten Kreis. Wenn der Breakpoint ein leerer Kreis ist, der Haltepunkt ist deaktiviert oder Warnung trat beim Versuch, die der Haltepunkt gesetzt. Um den Unterschied zu bestimmen, zeigen Sie auf den Haltepunkt, und prüfen Sie, ob eine Warnung aus.
+Beim Debuggen verfügt ein Haltepunkt über zwei mögliche visuelle Zustände: einen ausgefüllten roten Kreis und einen hohlen (weißen gefüllten) Kreis. Wenn der Debugger erfolgreich einen Haltepunkt im Ziel Prozess festlegen kann, bleibt er ein roter roter Kreis. Wenn der Haltepunkt ein leerer Kreis ist, ist entweder der Breakpoint deaktiviert, oder es ist eine Warnung beim Versuch aufgetreten, den Haltepunkt festzulegen. Um den Unterschied zu ermitteln, zeigen Sie auf den Haltepunkt, und prüfen Sie, ob eine Warnung vorliegt.
 
-Die folgenden beiden Abschnitte beschreiben die deutliche Warnungen und zur Behebung dieser Probleme.
+In den folgenden beiden Abschnitten werden wichtige Warnungen und deren Behebung beschrieben.
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>„No Symbols have been loaded for this document“ (Für dieses Dokument wurden keine Symbole geladen)
 
-Wechseln Sie zu der **Module** Fenster (**Debuggen** > **Windows** > **Module**) und überprüft, ob Ihr Modul geladen.
-* Wenn Ihr Modul geladen wird, überprüfen Sie die **Symbolstatus** Spalte, um festzustellen, ob Symbole geladen wurden.
-  * Wenn keine Symbole geladen sind, überprüfen Sie den Symbolstatus, um das Problem zu diagnostizieren. Klicken Sie im Kontextmenü für ein Modul in die **Module** Fenster, klicken Sie auf **Symbolladeinformationen...**  angezeigt, in denen der Debugger gesucht, versuchen Sie es aus, und Laden von Symbolen. Weitere Informationen zum Laden von Symbolen finden Sie unter [angeben von Symbol (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-  * Wenn Symbole geladen sind, enthält die PDB-Datei keine Informationen zu den Quelldateien. Dies sind einige mögliche Ursachen:
-    * Wenn Ihre Quelldateien vor kurzem hinzugefügt wurden, vergewissern Sie sich, dass eine aktuelle Version des Moduls geladen wird.
-    * Es ist möglich, erstellen Sie entfernte PDBs, die mit der **/PDBSTRIPPED** -Linkeroption. Entfernte PDBs enthalten keine Informationen zur Quelldatei. Vergewissern Sie sich, dass Sie mit einem vollständigen PDB-Datei und keine bereinigte PDB-Datei bearbeitet werden.
-    * Die PDB-Datei ist teilweise fehlerhaft. Löschen Sie die Datei, und führen Sie einen bereinigten Build des Moduls, um das Problem zu beheben.
+Wechseln Sie zum Fenster " **Module** " (**Debuggen**  > **Windows**  > **Module**), und überprüfen Sie, ob das Modul geladen ist.
+* Wenn das Modul geladen ist, überprüfen Sie die Spalte **Symbol Status** , um festzustellen, ob Symbole geladen wurden.
+  * Wenn keine Symbole geladen werden, überprüfen Sie den Symbol Status, um das Problem zu diagnostizieren. Klicken Sie im Kontextmenü eines Moduls im Fenster **Module** auf **Symbol ladeinformationen...** , um zu überprüfen, wo der Debugger versucht hat, Symbole zu laden und zu laden. Weitere Informationen zum Laden von Symbolen finden Sie unter [Angeben von Symbol-(PDB-) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+  * Wenn Symbole geladen werden, enthält die PDB keine Informationen zu ihren Quelldateien. Dies sind einige mögliche Ursachen:
+    * Wenn die Quelldateien kürzlich hinzugefügt wurden, vergewissern Sie sich, dass eine aktuelle Version des Moduls geladen wird.
+    * Es ist möglich, gestreifte pdsb mithilfe der **/PDBSTRIPPED** (Linkeroption) zu erstellen. Entfernt-pdsb enthalten keine Quelldatei Informationen. Vergewissern Sie sich, dass Sie mit einer vollständigen PDB-Datei arbeiten und nicht mit einer abgestürzten PDB
+    * Die PDB-Datei ist teilweise beschädigt. Löschen Sie die Datei, und führen Sie einen bereinigen Build des Moduls aus, um das Problem zu beheben.
 
-* Wenn Ihr Modul nicht geladen ist, überprüfen Sie Folgendes ein, um die Ursache zu ermitteln:
-  * Vergewissern Sie sich, dass Sie den richtigen Prozess debuggen.
-  * Überprüfen, ob Sie die richtige Art von Code Debuggen. Sie können herausfinden, welche Art von Code, die der Debugger so konfiguriert ist, dass das Debuggen in der **Prozesse** Fenster (**Debuggen** > **Windows**  >  **Prozesse**). Z. B. Wenn Sie versuchen, C#-Code zu debuggen, vergewissern Sie sich, dass der Debugger für den entsprechenden .NET Framework konfiguriert ist (z. B. verwaltet (v4\*) im Vergleich zu verwalteter (v2\*/v3\*) im Vergleich zu verwalteter (CoreCLR)).
+* Wenn das Modul nicht geladen ist, überprüfen Sie Folgendes, um die Ursache zu ermitteln:
+  * Vergewissern Sie sich, dass Sie den richtigen Prozess Debuggen.
+  * Stellen Sie fest, dass Sie die richtige Art von Code Debuggen. Sie können herausfinden, welche Art von Code der Debugger für das Debuggen im Fenster " **Prozesse** " (**Debuggen**  > **Windows**  > **Prozesse**) konfiguriert ist. Wenn Sie z. b. versuchen, Code C# zu debuggen, vergewissern Sie sich, dass der Debugger für den entsprechenden Typ und die entsprechende Version von .NET konfiguriert ist (z. b. Managed (v4 \*) oder Managed (v2 \*/V3 \*) und Managed (CoreCLR)).
 
-### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… der aktuelle Quellcode unterscheidet sich von der Version, erstellt in..."
+### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… der aktuelle Quellcode unterscheidet sich von der in integrierte Version... "
 
-Wenn eine Quelldatei geändert wurde, und die Quelle nicht mehr mit dem Code übereinstimmt, den Sie Debuggen, wird der Debugger keine Haltepunkte im Code standardmäßig festgelegt. Dieses Problem in der Regel geschieht, wenn eine Quelldatei geändert wird, aber der Quellcode wurde nicht neu erstellt. Um dieses Problem zu beheben, müssen Sie das Projekt neu. Wenn das Buildsystem geht davon aus, dass das Projekt bereits auf dem neuesten Stand ist, obwohl dies nicht der Fall ist, können Sie das Projektsystem neu erstellen, entweder indem Sie die Quelldatei erneut speichern, oder Bereinigen des Projekts erstellen vor dem Erstellen von erzwingen.
+Wenn eine Quelldatei geändert wurde und die Quelle nicht mehr mit dem Code übereinstimmt, den Sie Debuggen, legt der Debugger standardmäßig keine Breakpoints im Code fest. Normalerweise tritt dieses Problem auf, wenn eine Quelldatei geändert wird, der Quellcode jedoch nicht neu erstellt wurde. Um dieses Problem zu beheben, erstellen Sie das Projekt neu. Wenn das Buildsystem davon ausgeht, dass das Projekt bereits auf dem neuesten Stand ist, auch wenn dies nicht der Fall ist, können Sie das erneute Erstellen des Projekt Systems erzwingen, indem Sie die Quelldatei erneut speichern oder die Buildausgabe des Projekts vor dem Erstellen bereinigen.
 
-In seltenen Szenarien empfiehlt es sich um ohne entsprechenden Quellcode zu debuggen. Ohne entsprechendes Quellcode debuggen kann zu einer verwirrenden Debuggingumgebung, also sicherstellen, dass sieht, wie Sie fortfahren möchten.
+In seltenen Szenarien können Sie Debuggen, ohne dass der Quellcode übereinstimmt. Das Debuggen ohne übereinstimmenden Quellcode kann zu einer verwirrenden debuggingdarstellung führen. Stellen Sie daher sicher, dass Sie den Vorgang fortsetzen möchten.
 
-Führen Sie eine der folgenden Schritte aus, um diese sicherheitsüberprüfungen zu deaktivieren:
-* Um einen einzelnen Breakpoint zu ändern, zeigen Sie auf das Symbol "Haltepunkt" im Editor, und klicken Sie auf das einstellungssymbol (Zahnrad). Der Editor wird einem Peek-Fenster hinzugefügt. Am oberen Rand der Peek-Fenster gibt es ein Link, der den Speicherort des Haltepunkts angibt. Klicken Sie auf den Link, um die Änderung der Haltepunktposition zulassen, und überprüfen Sie **können Sie den Quellcode vom Original unterscheiden**.
-* Um diese Einstellung für alle Haltepunkte zu ändern, wechseln Sie zu **Debuggen** > **Optionen und Einstellungen**. Deaktivieren Sie auf der Seite **Debugging/Allgemein** das Kontrollkästchen **Quelldateien müssen exakt mit der Originalversion übereinstimmen** . Stellen Sie sicher, dass diese Option wieder zu aktivieren, wenn Sie fertig sind Debuggen.
+Um diese Sicherheitsüberprüfungen zu deaktivieren, führen Sie einen der folgenden Schritte aus:
+* Um einen einzelnen Haltepunkt zu ändern, bewegen Sie den Mauszeiger über das Haltepunkt Symbol im Editor, und klicken Sie auf das Symbol "Einstellungen" (Zahnrad). Dem Editor wird ein Peek-Fenster hinzugefügt. Am oberen Rand des Peek-Fensters gibt es einen Hyperlink, der den Speicherort des Breakpoints angibt. Klicken Sie auf den Hyperlink, um Änderungen an der Haltepunkt Position zuzulassen, und aktivieren Sie **die Option zulassen, dass der Quellcode vom ursprünglichen**abweicht.
+* Um diese Einstellung für alle Breakpoints zu ändern, wechseln Sie zu **Debug > ** **Optionen und Einstellungen**. Deaktivieren Sie auf der Seite **Debugging/Allgemein** das Kontrollkästchen **Quelldateien müssen exakt mit der Originalversion übereinstimmen** . Stellen Sie sicher, dass Sie diese Option erneut aktivieren, wenn Sie das Debugging abgeschlossen haben.
 
-## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>Der Haltepunkt wurde erfolgreich (keine Warnung) festgelegt, aber nicht erreicht
+## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>Der Breakpoint wurde erfolgreich festgelegt (keine Warnung), aber nicht gefunden.
 
-Dieser Abschnitt enthält Informationen zum Behandeln von Problemen, wenn der Debugger wird keine Warnungen angezeigt: der Haltepunkt einen ausgefüllten roten Kreis, wird während Sie aktiv Debuggen, aber ist nicht der Haltepunkt erreicht wird.
+Dieser Abschnitt enthält Informationen zur Problembehandlung, wenn der Debugger keine Warnungen anzeigt – bei dem Haltepunkt handelt es sich um einen voll Hand roten Kreis, während das aktive Debuggen ausgeführt wird, aber der Breakpoint wird nicht gedrückt.
 
-Hier sind einige Punkte zu überprüfen:
-1. Wenn Ihr Code in mehr als einem Prozess oder mehr als einem Computer ausgeführt wird, stellen Sie sicher, dass Sie den richtigen Prozess oder Computer Debuggen.
-2. Vergewissern Sie sich, dass Ihr Code ausgeführt wird. Um zu testen, dass Ihr Code ausgeführt wird, fügen Sie einen Aufruf von `System.Diagnostics.Debugger.Break` (C#/VB) oder `__debugbreak` (C++) zu der Codezeile, in dem Sie versuchen, legen Sie den Haltepunkt, und erstellen Sie das Projekt dann erneut.
-3. Wenn Sie optimierten Code Debuggen, stellen Sie sicher, dass die Funktion, in der der Haltepunkt festgelegt, ist nicht wird inline in eine andere Funktion. Die `Debugger.Break` Tests beschrieben, die in der vorherigen Überprüfung kann zusammenarbeiten, um dieses Problem und zu testen.
+Folgende Punkte müssen überprüft werden:
+1. Wenn Ihr Code in mehr als einem oder mehreren Computern ausgeführt wird, müssen Sie sicherstellen, dass Sie den richtigen Prozess oder Computer Debuggen.
+2. Vergewissern Sie sich, dass der Code ausgeführt wird. Um zu testen, ob der Code ausgeführt wird, fügen Sie der Codezeile, in der der Breakpoint festgelegt werden soll, einen `System.Diagnostics.Debugger.Break` (C#/VB) oder `__debugbreak` (C++)-Befehl hinzu, und erstellen Sie dann das Projekt neu.
+3. Wenn Sie optimierten Code Debuggen, stellen Sie sicher, dass die Funktion, in der der Breakpoint festgelegt ist, nicht in einer anderen Funktion Inline ist. Der in der vorherigen Überprüfung beschriebene `Debugger.Break` Test kann auch zum Testen dieses Problems funktionieren.
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Ich habe einen Haltepunkt gelöscht, aber erreiche ihn beim erneuten Debuggen weiterhin
 
-Wenn Sie einen Haltepunkt während des Debuggens gelöscht haben, können Sie den nächsten Haltepunkt Debuggen. Zum Beenden des Erreichens dieses Haltepunkt müssen Sie sicherstellen, dass alle Instanzen des Haltepunkts aus dem Fenster **Haltepunkte** entfernt wurden.
+Wenn Sie während des Debuggens einen Haltepunkt gelöscht haben, können Sie beim nächsten Start des Debuggens erneut den Haltepunkt erreichen. Zum Beenden des Erreichens dieses Haltepunkt müssen Sie sicherstellen, dass alle Instanzen des Haltepunkts aus dem Fenster **Haltepunkte** entfernt wurden.

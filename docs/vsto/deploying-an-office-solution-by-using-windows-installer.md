@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "69551714"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Stellen Sie eine Office-Projekt Mappe mithilfe Windows Installer
@@ -59,7 +59,7 @@ Wenn Sie Visual Studio zum Erstellen eines Windows Installers verwenden, können
 
 Weitere Informationen zum Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce finden Sie unter Bereitstellen einer Office-Projekt Mappe [mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-Informationen zum Erstellen einer Windows Installer Datei mithilfe von finden Sie unter [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]bereitstellen [einer Visual Studio 2010-Tools für Office](http://go.microsoft.com/fwlink/?LinkId=201807)-Projekt Mappe mithilfe von Windows Installer.
+Informationen zum Erstellen einer Windows Installer Datei mithilfe [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] finden Sie unter Bereitstellen [einer Visual Studio 2010-Tools für Office](http://go.microsoft.com/fwlink/?LinkId=201807)-Projekt Mappe mit Windows Installer.
 
 ## <a name="Download"></a>Herunterladen von Beispielen
 In diesem Thema werden die folgenden herunterladbaren Beispiele erläutert.
@@ -107,7 +107,7 @@ Sie können eine Windows Installer-Datei erstellen, indem Sie InstallShield Limi
 
    Die Beispiele für VSTO-Add-Ins, die mit diesem Thema verknüpft sind, enthalten ein Projekt namens **ExcelAddIn**. Die Beispiele für die Anpassung auf Dokumentebene enthalten ein Projekt namens **ExcelWorkbook**. In diesem Thema wird auf das Office Project in der Projektmappe verwiesen, indem einer dieser beiden Namen verwendet wird.
 
-2. Wählen Sie in der Menüleiste **Datei** > **Hinzufügen** > **Neues Projekt**aus.
+2. Wählen Sie in der Menüleiste **Datei**  >   > **Neues Projekt** **Hinzufügen** aus.
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
@@ -127,13 +127,13 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , und wählen Sie dann die Datei **Projekt-Assistent** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Projekt-Assistenten-Datei in Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistenten-Datei in Projektmappen-Explorer")
+   ![Projekt-Assistenten-Datei in Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistentdatei im Projektmappen-Explorer")
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Die Schaltfläche Anwendungs Dateien.](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche Anwendungs Dateien.")
+   ![Die Schaltfläche Anwendungs Dateien.](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")
 
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.
 
@@ -151,7 +151,7 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
 
    Die Seite **Anwendungsdateien** enthält jetzt die Projektausgabedatei, das Bereitstellungsmanifest und das Anwendungsmanifest, wie in der folgenden Abbildung veranschaulicht.
 
-   ![Die Ausgabedateien des Setup-Projekts.](../vsto/media/installshield-outputfiles.png "Die Ausgabedateien des Setup-Projekts.")
+   ![Die Ausgabedateien des Setup-Projekts.](../vsto/media/installshield-outputfiles.png "Die Ausgabedateien des Setupprojekts.")
 
 ## <a name="Configure"></a>Konfigurieren der abhängigen Komponenten als erforderliche Komponenten
 
@@ -165,9 +165,9 @@ Sie müssen nicht nur die folgenden Komponenten in die Setupanwendung einschlie�
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , erweitern Sie den Knoten **Anwendungsdaten festlegen** , und wählen Sie dann die Datei **Verteilbare Komponenten** aus, wie in der folgenden Abbildung dargestellt.
 
-   ![Die Redistributables-Datei in Projektmappen-Explorer](../vsto/media/installshield-redistributablesfile.png "Die Redistributables-Datei in Projektmappen-Explorer")
+   ![Die Redistributables-Datei in Projektmappen-Explorer](../vsto/media/installshield-redistributablesfile.png "Verteilbare Datei im Projektmappen-Explorer")
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
    Die Seite **Verteilbare Komponenten** wird geöffnet.
 
@@ -216,7 +216,7 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
    </properties>
    ```
 
-5. Wählen Sie auf der Menüleiste in Editor die Option **Datei** > **Speichern**aus.
+5. Wählen Sie auf der Menüleiste in Editor **Datei**  > **Speichern**aus.
 
 6. Navigieren Sie im Dialogfeld **Speichern unter** zu dem Ordner **Desktop** .
 
@@ -231,13 +231,13 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
 
 10. Kopieren Sie in Ihrem **Desktop** Ordner die Datei *Visual Studio 2010 Tools for Office Runtime. prq* in eines der folgenden Verzeichnisse auf dem Computer.
 
-   Für 32-Bit-Betriebssysteme: *%ProgramFiles%\installshield\2013le\setupvoraussetzungen\\*
+   Für 32-Bit-Betriebssysteme: *%ProgramFiles%\installshield\2013le\setupvoraussetzungen \\*
 
-   Bei 64-Bit-Betriebssystemen: *% Program Files (x86)% \ 2013le \ Setupvoraussetzungen\\*
+   Bei 64-Bit-Betriebssystemen: *% Program Files (x86)% \ 2013le \ Setupvoraussetzungen \\*
 
 11. Wählen Sie auf der Seite **Verteilbare Komponente** des InstallShield-Projekts die Schaltfläche **Aktualisieren** aus, um die Liste der verteilbaren Komponenten zu aktualisieren, wie in der folgenden Abbildung veranschaulicht.
 
-   ![Die Schaltfläche "Aktualisieren".](../vsto/media/installshield-refreshbutton.png "Die Schaltfläche \"Aktualisieren\".")
+   ![Die Schaltfläche "Aktualisieren".](../vsto/media/installshield-refreshbutton.png "Die Schaltfläche "Aktualisieren".")
 
 12. Aktivieren Sie in der Liste der verteilbaren Komponenten das Kontrollkästchen. **Visual Studio 2010-Tools für Office-Laufzeit** .
 
@@ -249,7 +249,7 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Knoten **OfficeAddInSetup** , erweitern Sie den Knoten **Setup organisieren** , und wählen Sie dann die Datei **Allgemeine Informationen** aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
 3. Wählen Sie in der Liste der Eigenschaften die Schaltfläche **Durchsuchen** neben der Eigenschaft **INSTALLDIR** aus.
 
@@ -273,7 +273,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , erweitern Sie den Knoten **Setup organisieren** , und wählen Sie dann die Datei **Allgemeine Informationen** aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
    Die Eigenschaften für das Setupprojekt werden angezeigt.
 
@@ -287,7 +287,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 1. Wählen Sie im **Projektmappen-Explorer**den Knoten **Projekt-Assistenten** aus.
 
-   Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+   Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
 2. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsregistrierung** aus, wie in der folgenden Abbildung veranschaulicht.
 
@@ -309,15 +309,15 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 | Office-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |----------------------------| - |
-| 32-Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
-| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
 
    **Installationsprogramme pro Computer basierend auf der Windows-Version**
 
 | Windows-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |-----------------------------| - |
-| 32-Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
-| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\Software (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
+| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software (32-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\Software (64-Bit) \microsoft\office\excel\addins\samplecompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Für ein Installationsprogramm für 64-Bit-Windows sind zwei Registrierungs Pfade erforderlich, da es Benutzern möglich ist, 32-Bit-und 64-Bit-Versionen von Office auf einem Computer auszuführen, auf dem 64-Bit-Windows ausgeführt wird.
@@ -333,7 +333,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 
 7. Wiederholen Sie diesen Vorgang, um die folgenden Werte zu erstellen.
 
-|Werttyp<br /><br />|name<br /><br />|
+|Werttyp<br /><br />|-Name<br /><br />|
 |--------------|--------|
 |Zeichenfolgenwert<br /><br />|**FriendlyName**<br /><br />|
 |DWORD-Wert<br /><br />|**LoadBehavior**<br /><br />|
@@ -384,7 +384,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 ### <a name="to-create-a-program-that-modifies-document-properties"></a>Erstellen eines Programms, das Dokumenteigenschaften ändert
 
-1. Wählen Sie in der Menüleiste **Datei** > **Hinzufügen** > **Neues Projekt**aus.
+1. Wählen Sie in der Menüleiste **Datei**  >   > **Neues Projekt** **Hinzufügen** aus.
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
@@ -404,7 +404,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 7. Wählen Sie im **Projektmappen-Explorer**die Datei **Program.cs** (für C#-Anwendungen) oder die Datei **Module1.vb** (für Visual Basic-Anwendungen) aus.
 
-8. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+8. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
 9. Ersetzen Sie den Inhalt der gesamten Inhalt durch den folgenden Code.
 
@@ -417,13 +417,13 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Projektknoten **OfficeAddInSetup** , und wählen Sie dann die Datei **Projekt-Assistent** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Projekt-Assistenten-Datei in Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistenten-Datei in Projektmappen-Explorer")
+   ![Projekt-Assistenten-Datei in Projektmappen-Explorer](../vsto/media/installshield-projectassistant.png "Projekt-Assistentdatei im Projektmappen-Explorer")
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.
 
-   ![Die Schaltfläche Anwendungs Dateien.](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche Anwendungs Dateien.")
+   ![Die Schaltfläche Anwendungs Dateien.](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")
 
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.
 
@@ -433,7 +433,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 6. Erweitern Sie im **Projektmappen-Explorer**unter dem Knoten **OfficeAddInSetup** den Knoten **Installationsanforderungen und Aktionen definieren** , und wählen Sie dann den Ordner **Benutzerdefinierte Aktionen** aus.
 
-7. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+7. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
    In einem Bereich an der Seite des Bildschirms wird eine Liste der Ereignisse angezeigt.
 
@@ -463,7 +463,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 13. Öffnen Sie die Projektdatei der Projektmappe in Editor. Für Visual Basic Projekte ist der Name der Datei " *ExcelWorkbook. vbproj*". Für C# -Projekte ist der Name der Datei " *ExcelWorkbook. csproj*".
 
-14. Suchen Sie in der Projektdatei nach dem **&lt;SolutionID&gt;** -Element, kopieren Sie den Wert in die Zwischenablage, und schließen Sie dann Editor.
+14. Suchen Sie in der Projektdatei nach dem **&lt;SolutionID &gt;** Element, kopieren Sie den Wert in die Zwischenablage, und schließen Sie dann Editor.
 
     Übergeben Sie diesen Wert in der Konsolen-App als Parameter.
 
@@ -482,7 +482,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 1. Erweitern Sie im **Projektmappen-Explorer**den Knoten **Vorbereiten der Version** , und wählen Sie dann die Datei **Versionen** aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht** > **geöffnet**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  > **Öffnen**aus.
 
    Der Explorer für **Builds** wird in einem Seitenbereich geöffnet, damit Sie den Typ der zu erstellenden Version auswählen können.
 
@@ -498,9 +498,9 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
 8. Wählen Sie in der Tabelle **Projektkontext** in der Spalte **Konfiguration** des Projekts **OfficeAddInSetup** **SingleImage**aus, und aktivieren Sie anschließend die Schaltfläche **Schließen** .
 
-9. Klicken Sie in der Menüleiste auf **Build** > **Erstellen officeaddinsetup**.
+9. Wählen Sie in der Menüleiste die Option **Erstellen** ,  > **officeaddinsetup erstellen**aus.
 
-   Nachdem der Build abgeschlossen wurde, finden Sie die Datei " *Setup. exe* " des Projekts **officeaddinsetup** am folgenden Speicherort: <em>Officeaddinsetupprojectroot</em> **\Officeaddinsetup\express \singleimage\diskimages\disk1\\**
+   Nachdem der Build abgeschlossen wurde, können Sie die Datei " *Setup. exe* " des Projekts **officeaddinsetup** am folgenden Speicherort suchen: <em>officeaddinsetupprojectroot</em> **\officeaddinsetup\express \singleimage\diskimages\disk1 \\**
 
 ## <a name="see-also"></a>Siehe auch
 

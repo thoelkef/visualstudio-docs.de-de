@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint-Schnittstelle | Microsoft-Dokumentation
+title: Isimpleconnectionpoint-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,28 +13,28 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d18c8f9eef6ddb1a38473eb19984bd9cf7dbd96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 549d7f38b01937f992b240cb6f1d651bc848236c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001507"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571791"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint-Schnittstelle
-Bietet eine einfache Möglichkeit zum Beschreiben und Aufzählen der Ereignisse, die ausgelöst wird, an einem bestimmten Verbindungspunkt. Diese Schnittstelle erleichtert auch zum Einbinden einer `IDispatch` Objekt für diese Ereignisse. Diese Schnittstelle wird durch den Prozess Debug-Manager (PDM) implementiert und von der Skript-Engines genutzt werden.  
+Bietet eine einfache Möglichkeit zum beschreiben und Aufzählen der Ereignisse, die an einem bestimmten Verbindungspunkt ausgelöst werden. Diese Schnittstelle vereinfacht auch das anstecken eines `IDispatch` Objekts für diese Ereignisse. Diese Schnittstelle wird vom Process Debug Manager (PDM) implementiert und von Skript Modulen verwendet.  
   
- Diese Schnittstelle steht `IDebugHelper::CreateSimpleConnectionPoint`.  
+ Diese Schnittstelle ist über `IDebugHelper::CreateSimpleConnectionPoint` verfügbar.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `ISimpleConnectionPoint` Schnittstelle verfügbar macht, die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von `IUnknown` geerbt werden, macht die `ISimpleConnectionPoint`-Schnittstelle die folgenden Methoden verfügbar.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[ISimpleConnectionPoint::Advise](../../winscript/reference/isimpleconnectionpoint-advise.md)|Herstellen einer Verbindung zwischen der einfachen Verbindungspunktobjekt und die Senke des Clients.|  
-|[ISimpleConnectionPoint::DescribeEvents](../../winscript/reference/isimpleconnectionpoint-describeevents.md)|Gibt den DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen zurück.|  
-|[ISimpleConnectionPoint::GetEventCount](../../winscript/reference/isimpleconnectionpoint-geteventcount.md)|Gibt die Anzahl von Ereignissen, die für diese Schnittstelle verfügbar gemacht werden.|  
-|[ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)|Beendet eine Advise-Verbindung, die zuvor über `ISimpleConnectionPoint::Advise`.|  
+|[ISimpleConnectionPoint::Advise](../../winscript/reference/isimpleconnectionpoint-advise.md)|Stellt eine Verbindung zwischen dem einfachen Verbindungspunkt Objekt und der Senke des Clients her.|  
+|[ISimpleConnectionPoint::DescribeEvents](../../winscript/reference/isimpleconnectionpoint-describeevents.md)|Gibt die DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen zurück.|  
+|[ISimpleConnectionPoint::GetEventCount](../../winscript/reference/isimpleconnectionpoint-geteventcount.md)|Gibt die Anzahl der für diese Schnittstelle verfügbar gemachten Ereignisse zurück.|  
+|[ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)|Beendet eine Beratungs Verbindung, die zuvor über `ISimpleConnectionPoint::Advise` hergestellt wurde.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)

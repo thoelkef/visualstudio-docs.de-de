@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 772b80452c20d84b1145a5b8762365f2fe3a8e69
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118835"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950720"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Schritt 2: Ausführen Ihrer Picture Viewer-App
 
@@ -55,7 +55,7 @@ Im Folgenden wird erläutert, wie Sie Ihre App ausführen können.
     - Schließen Sie das **Form1**-Fenster, indem Sie auf die Schaltfläche mit dem **X** in der oberen rechten Ecke des Fensters klicken.
 
     > [!NOTE]
-    > Wenn Sie die App in der IDE ausführen, wird dies als „Debuggen“ bezeichnet, da dies normalerweise geschieht, um Fehler in der Anwendung zu finden und zu beheben. Obwohl diese App klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
+    > Wenn Sie die App in der IDE ausführen, wird dies als „Debuggen“ bezeichnet, da dies normalerweise geschieht, um Fehler in der Anwendung zu finden und zu beheben. Obwohl diese App klein ist und noch nicht viele Funktionen hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

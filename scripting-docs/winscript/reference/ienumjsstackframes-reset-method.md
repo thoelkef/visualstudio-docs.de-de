@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e94331f8b6b9f68c01109ef355a4cba3cc398f4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 751b765e92d1038167d4d8faa20d8790b2093258
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963285"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575503"
 ---
 # <a name="ienumjsstackframesreset-method"></a>IEnumJsStackFrames::Reset-Methode
 Setzt den Stapelrahmen auf die Position vor dem ersten Element zurück.  
@@ -34,7 +34,7 @@ HRESULT Reset(void);
 ## <a name="return-value"></a>Rückgabewert  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumJsStackFrames-Schnittstelle](../../winscript/reference/ienumjsstackframes-interface.md)

@@ -2,17 +2,17 @@
 title: Regelsatz für systemeigene empfohlene Regeln
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5195d42783efc6e9aeb0230b29e801acaeef094a
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: dcc5112262dd36e431a34becd36729ea9a3c186f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585228"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649169"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Regelsatz für systemeigene empfohlene Regeln
 
@@ -127,7 +127,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C6518](../code-quality/c6518.md)|Schreibbare Größe für Puffer, der nicht geschrieben werden kann|
 |[C6522](../code-quality/c6522.md)|Ungültiger Größenzeichenfolgentyp|
 |[C6525](../code-quality/c6525.md)|Ungültiger Größenzeichenfolgenstandort|
-|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die Eigenschaft "NeedsRelease" darf nicht für Werte des void-Typs verwendet werden.|
+|[C6527](../code-quality/c6527.md)|Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.|
 |[C6530](../code-quality/c6530.md)|Unbekannter Formatzeichenfolgenstil|
 |[C6540](../code-quality/c6540.md)|Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig|
 |[C6551](../code-quality/c6551.md)|Ungültige Größenangabe: Ausdruck nicht analysierbar|
@@ -154,7 +154,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C28020](../code-quality/c28020.md)|Der Ausdruck ist bei diesem Befehl nicht "true".|
 |[C28021](../code-quality/c28021.md)|Der Parameter, der mit Anmerkungen versehen ist, muss ein Zeiger sein.|
 |[C28022](../code-quality/c28022.md)|Die Funktionsklassen in dieser Funktion stimmen nicht mit den Funktionsklassen in der typedef, die zum Definieren der Funktion verwendet wird, ab.|
-|[C28023](../code-quality/c28023.md)|Die Funktion, die zugewiesen oder übermittelt wird \_,\_sollte\_ über eine Funktionsklassen Anmerkung für mindestens eine der Klassen (es) verfügen.|
+|[C28023](../code-quality/c28023.md)|Die Funktion, die zugewiesen oder übermittelt wird, muss über eine \_Function \_class \_ Anmerkung für mindestens eine der Klassen verfügen.|
 |[C28024](../code-quality/c28024.md)|Der Funktionszeiger, der zugewiesen wird, wird mit der Funktionsklasse kommentiert, die nicht in der Liste der Funktionsklassen enthalten ist.|
 |[C28039](../code-quality/c28039.md)|Der Typ des tatsächlichen Parameters sollte genau mit dem Typ übereinstimmen.|
 |[C28112](../code-quality/c28112.md)|Auf eine Variable, auf die über eine Interlocked-Funktion zugegriffen wird, muss immer über eine Interlocked-Funktion zugegriffen werden.|
@@ -172,14 +172,14 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C28196](../code-quality/c28196.md)|Die Anforderung wird nicht erfüllt. (Der Ausdruck wird nicht mit "True" ausgewertet.)|
 |[C28202](../code-quality/c28202.md)|Illegaler Verweis auf nicht statischen Member|
 |[C28203](../code-quality/c28203.md)|Mehrdeutiger Verweis auf Klassenmember.|
-|[C28205](../code-quality/c28205.md)|\_Erfolg\_ oder \_bei\_fehlgeschlagenerVerwendunginunzulässigemKontext\_|
+|[C28205](../code-quality/c28205.md)|\_Success \_ oder \_On \_failure \_ in unzulässigem Kontext verwendet|
 |[C28206](../code-quality/c28206.md)|„->“ verwenden, wenn linker Operand auf eine Struktur zeigt|
 |[C28207](../code-quality/c28207.md)|„.“ verwenden, wenn linker Operand eine Struktur ist|
 |[C28209](../code-quality/c28209.md)|Die Deklaration für das Symbol hat eine widersprüchliche Deklaration.|
 |[C28210](../code-quality/c28210.md)|Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.|
 |[C28211](../code-quality/c28211.md)|Statischer Kontextname für SAL_context erwartet|
 |[C28212](../code-quality/c28212.md)|Zeigerausdruck für Anmerkung erwartet|
-|[C28213](../code-quality/c28213.md)|Die \_Anmerkung\_use decl\_Anmerkungen\_ muss verwendet werden, um eine vorherige Deklaration ohne Änderung zu verweisen.|
+|[C28213](../code-quality/c28213.md)|Die \_Use \_decl \_annotations \_ Anmerkung muss verwendet werden, um eine vorherige Deklaration ohne Änderung zu verweisen.|
 |[C28214](../code-quality/c28214.md)|Attributparameternamen müssen p1...p9 sein.|
 |[C28215](../code-quality/c28215.md)|Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.|
 |[C28216](../code-quality/c28216.md)|Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.|
@@ -222,7 +222,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C28267](../code-quality/c28267.md)|Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.|
 |[C28272](../code-quality/c28272.md)|Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.|
 |[C28273](../code-quality/c28273.md)|Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.|
-|[C28275](../code-quality/c28275.md)|Der Parameter für \_den\_Makro\_ Wert ist NULL.|
+|[C28275](../code-quality/c28275.md)|Der Parameter zum \_Macro \_value \_ NULL ist.|
 |[C28279](../code-quality/c28279.md)|Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.|
 |[C28280](../code-quality/c28280.md)|Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.|
 |[C28282](../code-quality/c28282.md)|Formatzeichenfolgen müssen sich in Vorbedingungen befinden|
@@ -230,7 +230,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C28286](../code-quality/c28286.md)|Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.|
 |[C28287](../code-quality/c28287.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)|
 |[C28288](../code-quality/c28288.md)|Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)|
-|[C28289](../code-quality/c28289.md)|For-Funktion: "Read ableto" oder "Write tableto" enthielt keine Limit-Spezifikation als Parameter.|
+|[C28289](../code-quality/c28289.md)|Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.|
 |[C28290](../code-quality/c28290.md)|Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.|
 |[C28291](../code-quality/c28291.md)|Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.|
 |[C28300](../code-quality/c28300.md)|Ausdrucksoperanden von inkompatiblen Typen für Operator|

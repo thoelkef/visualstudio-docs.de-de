@@ -23,23 +23,23 @@ helpviewer_keywords:
 - Call Stack window, show on code map
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180068"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668231"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Zuordnen von Methoden in der Aufrufliste beim Debuggen in Visual Studio
 
 Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell zu verfolgen. Sie können Notizen auf der Zuordnung vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
 
- ![Debuggen mit Aufruflisten in Code Maps](../debugger/media/debuggermap_overview.png)
+ ![Debuggen mit Aufruflisten in Codezuordnungen](../debugger/media/debuggermap_overview.png)
 
  Sie benötigen Folgendes:
 
@@ -55,31 +55,31 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 ::: moniker-end
 
-- Code, den Sie, z. B. Visual C#, Visual Basic, C++, JavaScript oder X++ Debuggen können
+- Code, den Sie Debuggen können ( C#z. b C++. Visual, Visual Basic,, JavaScript oder X + +)
 
   Thema
 
-- [Video: Visuelles Debuggen mit der Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: visuelles Debuggen mit der Code Map Debugger-Integration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
-- [Zuordnen der Aufrufliste](#MapStack)
+- [Zuordnen der aufrufsstapel](#MapStack)
 
-- [Aufzeichnen von Notizen zum code](#MakeNotes)
+- [Notieren Sie sich den Code.](#MakeNotes)
 
-- [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap)
+- [Aktualisieren der Zuordnung mit der nächsten aufrufsstapel](#UpdateMap)
 
-- [Hinzufügen von zugehörigem Code zur Zuordnung](#AddRelatedCode)
+- [Fügen Sie der Karte verknüpften Code hinzu.](#AddRelatedCode)
 
 - [Suchen von Fehlern mithilfe der Zuordnung](#FindBugs)
 
-- [HÄUFIG GESTELLTE FRAGEN](#QA)
+- [Q & A](#QA)
 
-  Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
+  Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten mit Code Maps verwenden können, finden Sie unter [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
 ## <a name="MapStack"></a> Abbilden der Aufrufliste
 
 1. Beginnen Sie mit dem Debuggen. (Tastatur: **F5**)
 
-2. Wählen Sie nach Ihrer app in den Unterbrechungsmodus wechselt oder Sie eine Funktion schrittweise, **Code Map**. (Tastatur: **STRG** + **UMSCHALT**) +  **`**
+2. Nachdem Ihre APP in den Unterbrechungs Modus wechselt oder Sie eine Funktion schrittweise ausführen, wählen Sie **Code Map**aus. (Tastatur: **STRG**  + **UMSCHALT**  +  **`** )
 
      ![Code Map auswählen, um Aufruflistenzuordnung zu starten](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -87,11 +87,11 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
      ![Aufrufliste in Code Maps](../debugger/media/debuggermap_seeundocallstack.png)
 
-     Die Map wird beim Debuggen automatisch aktualisiert. Finden Sie unter [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap).
+     Die Map wird beim Debuggen automatisch aktualisiert. Weitere Informationen finden Sie unter [Aktualisieren der Zuordnung mit der nächsten-Rückruf Stapel](#UpdateMap).
 
 ## <a name="MakeNotes"></a> Erstellen von Notizen zum Code
 
- Fügen Sie Kommentare, um nachzuverfolgen, was im Code geschieht. Um eine neue Zeile in einem Kommentar hinzuzufügen, drücken Sie die **Umschalt + Eingabe**.
+ Fügen Sie Kommentare hinzu, um zu verfolgen, was im Code geschieht. Um eine neue Zeile in einem Kommentar hinzuzufügen, drücken Sie **UMSCHALT + Return**.
 
  ![Kommentar zu Aufrufliste in Code Map hinzufügen](../debugger/media/debuggermap_addcomment.png)
 
@@ -103,20 +103,20 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 ## <a name="AddRelatedCode"></a> Hinzufügen von zugehörigem Code zur Code Map
 
- Jetzt haben Sie einer Karte – was geschieht als Nächstes? Wenn Sie mit C# oder Visual Basic arbeiten, fügen Sie Elemente wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was im Code geschieht.
+ Nun haben Sie eine Karte: wie geht es weiter? Wenn Sie mit C# oder Visual Basic arbeiten, fügen Sie Elemente hinzu, z. b. Felder, Eigenschaften und andere Methoden, um zu verfolgen, was im Code geschieht.
 
- Doppelklicken Sie auf eine Methode, um ihre Codedefinition anzuzeigen, oder verwenden Sie das Kontextmenü für die Methode. (Tastatur: Wählen Sie die Methode auf der Karte aus, und drücken Sie **F12**.
+ Doppelklicken Sie auf eine Methode, um ihre Codedefinition anzuzeigen, oder verwenden Sie das Kontextmenü für die Methode. (Tastatur: Wählen Sie die Methode auf der Karte aus, und drücken Sie **F12**.)
 
- ![Für eine Methode in der Code Map zur Codedefinition wechseln](../debugger/media/debuggermap_gotocodedefinition.png)
+ ![Für eine Methode in der Codezuordnung zur Codedefinition wechseln](../debugger/media/debuggermap_gotocodedefinition.png)
 
  Fügen Sie die Elemente hinzu, die Sie in der Zuordnung nachverfolgen möchten.
 
- ![Felder anzeigen, die mit einer Methode in der Aufruflisten-Code Map verknüpft sind](../debugger/media/debuggermap_showfields.png)
+ ![Felder anzeigen, die mit einer Methode in der Aufruflisten-Codezuordnung verknüpft sind](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
-> Standardmäßig werden beim Hinzufügen von Elementen zur Zuordnung auch die übergeordnete Gruppenknoten, wie Klasse, Namespace und Assembly, hinzugefügt. Dies ist, zwar hilfreich Sie können einfach halten, die Zuordnung durch Deaktivieren dieser Funktion mit dem **übergeordnete Elemente einschließen** Schaltfläche auf der Symbolleiste der Map oder durch Drücken von **STRG** beim Hinzufügen von Elementen.
+> Standardmäßig werden beim Hinzufügen von Elementen zur Zuordnung auch die übergeordnete Gruppenknoten, wie Klasse, Namespace und Assembly, hinzugefügt. Dies ist zwar hilfreich, Sie können die Zuordnung jedoch auch einfach halten, indem Sie diese Funktion mithilfe der Schaltfläche übergeordnete Elemente **einschließen** auf der Kartensymbol Leiste oder durch Drücken von **STRG** beim Hinzufügen von Elementen deaktivieren.
 
- ![Felder, die mit einer Methode in der Aufruflisten-Code Map verknüpft sind](../debugger/media/debuggermap_showedfields.png)
+ ![Felder, die mit einer Methode in der Aufruflisten-Codezuordnung verknüpft sind](../debugger/media/debuggermap_showedfields.png)
 
  Hier können Sie leicht erkennen, welche Methoden die gleichen Felder verwenden. Die zuletzt hinzugefügten Elemente werden grün dargestellt.
 
@@ -128,11 +128,11 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 ## <a name="FindBugs"></a> Suchen von Fehlern mithilfe der Code Map
 
- Durch die Visualisierung des Codes können Sie Fehler schneller finden. Nehmen wir beispielsweise an, dass Sie einen Fehler in einem Zeichenprogramm untersuchen. Wenn Sie eine Linie zeichnen und versuchen, sie rückgängig zu machen, geschieht nichts, bis Sie eine andere Zeile zeichnen.
+ Durch die Visualisierung des Codes können Sie Fehler schneller finden. Nehmen wir beispielsweise an, dass Sie einen Fehler in einem Zeichnungsprogramm untersuchen. Wenn Sie eine Linie zeichnen und versuchen, sie rückgängig zu machen, geschieht nichts, bis Sie eine andere Zeile zeichnen.
 
  Legen Sie die Haltepunkte `clear`, `undo` und `Repaint` fest, starten Sie das Debugging, und erstellen Sie eine Zuordnung wie die folgende:
 
- ![Weitere Aufrufliste zu Code Map hinzufügen](../debugger/media/debuggermap_addpaintobjectcallstack.png)
+ ![Weitere Aufrufliste zu Codezuordnung hinzufügen](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
  Sie stellen fest, dass alle Benutzergesten in der Zuordnung die `Repaint`-Funktion aufrufen, außer `undo`. Dies erklärt möglicherweise, warum `undo` nicht sofort funktioniert.
 
@@ -142,61 +142,61 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 ## <a name="QA"></a> Fragen und Antworten
 
-- **Nicht alle Aufrufe, die auf der Karte angezeigt werden. Warum?**
+- **Nicht alle Aufrufe werden auf der Karte angezeigt. Dafür?**
 
-   Standardmäßig wird nur Ihr eigener Code in der Zuordnung angezeigt. Um externen Code anzuzeigen, aktivieren Sie ihn im der **Aufrufliste** Fenster:
+   Standardmäßig wird nur Ihr eigener Code in der Zuordnung angezeigt. Um externen Code anzuzeigen, aktivieren Sie ihn im Fenster " **aufrufsstapel** ":
 
    ![Anzeige von externem Code über das Fenster "Aufrufliste"](../debugger/media/debuggermap_callstackmenu.png)
 
-   oder deaktivieren Sie **nur meinen Code aktivieren** im Visual Studio-Debugoptionen:
+   oder deaktivieren Sie **nur eigenen Code** in den Visual Studio-Debugoptionen:
 
    ![Anzeige von externem Code über das Dialogfeld "Optionen"](../debugger/media/debuggermap_debugoptions.png)
 
-- **Wirkt Ändern der Zuordnung den Code sich?**
+- **Wirkt sich das Ändern der Zuordnung auf den Code aus?**
 
-   Ändern der Zuordnung wirkt sich nicht auf den Code in keiner Weise aus. Sie können beliebigen Code in der Zuordnung gerne umbenennen, verschieben oder entfernen.
+   Das Ändern der Zuordnung wirkt sich nicht auf den Code aus. Sie können beliebigen Code in der Zuordnung gerne umbenennen, verschieben oder entfernen.
 
-- **Was bedeutet diese Meldung: "Das Diagramm basiert möglicherweise auf einer älteren Version des Codes"?**
+- **Was bedeutet diese Meldung: "das Diagramm basiert möglicherweise auf einer älteren Version des Codes"?**
 
    Der Code wurde möglicherweise geändert, nachdem Sie die Zuordnung zuletzt aktualisiert haben. Zum Beispiel befindet sich möglicherweise ein Aufruf für die Zuordnung nicht mehr im Code. Schließen Sie die Meldung, und versuchen Sie dann, die Projektmappe vor der erneuten Aktualisierung der Zuordnung neu zu erstellen.
 
-- **Wie steuere ich das Layout der Zuordnung?**
+- **Gewusst wie das Layout der Karte Steuern?**
 
-   Öffnen der **Layout** im Menü auf der zuordnungssymbolleiste:
+   Öffnen Sie das **Layoutmenü** auf der Kartensymbol Leiste:
 
   - Ändern Sie das Standardlayout.
 
-  - Deaktivieren Sie zum Beenden an, dass die Zuordnung automatisch neu angeordnet, **Automatisches Layout beim Debugging**.
+  - Wenn Sie das erneute Anordnen der Zuordnung beenden möchten, deaktivieren Sie das **automatische Layout beim Debuggen**.
 
-  - Um die Zuordnung so wenig wie möglich zu ändern, wenn Sie Elemente hinzufügen, deaktivieren Sie **inkrementelles Layout**.
+  - Deaktivieren Sie das **inkrementelle Layout**, um die Zuordnung so wenig wie möglich neu anzuordnen, wenn Sie Elemente hinzufügen.
 
-- **Kann ich die Zuordnung für andere Benutzer freigeben?**
+- **Kann ich die Zuordnung für andere freigeben?**
 
-   Sie können Exportieren der Code Map, die an andere Personen zu senden, wenn Sie Microsoft Outlook oder speichern Sie sie der Projektmappe aus, damit Sie ihn in die quellcodeverwaltung einchecken können.
+   Sie können die Zuordnung exportieren, an andere Benutzer senden, wenn Sie über Microsoft Outlook verfügen, oder Sie können Sie in der Projekt Mappe speichern, damit Sie Sie in die Quell Code Verwaltung einchecken können.
 
    ![Aufruflisten-Code Map für andere Benutzer freigeben](../debugger/media/debuggermap_sharewithothers.png)
 
-- **Wie verhindere ich die Zuordnung neue Aufruflisten automatisch hinzufügt?**
+- **Gewusst wie das Hinzufügen neuer Aufruf Listen durch die Zuordnung nicht mehr automatisch?**
 
-   Wählen Sie ![Schaltfläche &#45; anzeigen Aufrufliste auf Code Map automatisch](../debugger/media/debuggermap_automaticupdateicon.gif) auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Karte hinzufügen möchten, drücken Sie die **STRG** + **UMSCHALT** +  **`** .
+   Wählen Sie &#45; auf der Symbolleiste der Zuordnung ![Button Code Map automatisch ](../debugger/media/debuggermap_automaticupdateicon.gif) anzeigen aus. Wenn Sie die aktuelle aufrufsstapel der Zuordnung manuell hinzufügen möchten, drücken Sie **STRG**  + **UMSCHALT**  +  **`** .
 
-   Die Zuordnung weiterhin vorhandene Aufruflisten in der Karte hervorgehoben, während des Debuggens.
+   Beim Debuggen werden vorhandene Aufruf Listen auf der Karte durch die Zuordnung hervorgehoben.
 
-- **Was bedeuten die Elementsymbole und Pfeile?**
+- **Was bedeuten die Symbol Symbole und Pfeile?**
 
-   Um weitere Informationen zu einem Element zu erhalten, bewegen Sie den Mauszeiger darüber, und sehen Sie sich die QuickInfo des jeweiligen Elements. Sie können außerdem sehen Sie sich die **Legende** um zu erfahren, was bedeutet, dass jedes Symbol.
+   Um weitere Informationen zu einem Element zu erhalten, bewegen Sie den Mauszeiger darüber, und sehen Sie sich die QuickInfo des Elements an. Sie können sich auch die **Legende** ansehen, um zu erfahren, was die einzelnen Symbole bedeuten.
 
-   ![Was bedeuten die Symbole in der Aufruflisten-Code Map?](../debugger/media/debuggermap_showlegend.png)
+   ![Was bedeuten die Symbole in der Aufruflisten-Codezuordnung?](../debugger/media/debuggermap_showlegend.png)
 
   Thema
 
-- [Zuordnen der Aufrufliste](#MapStack)
+- [Zuordnen der aufrufsstapel](#MapStack)
 
-- [Aufzeichnen von Notizen zum code](#MakeNotes)
+- [Notieren Sie sich den Code.](#MakeNotes)
 
-- [Aktualisieren der Zuordnung mit der nächsten Aufrufliste](#UpdateMap)
+- [Aktualisieren der Zuordnung mit der nächsten aufrufsstapel](#UpdateMap)
 
-- [Hinzufügen von zugehörigem Code zur Zuordnung](#AddRelatedCode)
+- [Fügen Sie der Karte verknüpften Code hinzu.](#AddRelatedCode)
 
 - [Suchen von Fehlern mithilfe der Zuordnung](#FindBugs)
 

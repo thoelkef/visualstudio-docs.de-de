@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: Createstackwalker-Methode | Microsoft-Dokumentation'
+title: 'Ijsdebugprocess:: foratestackwalker-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb084b665467ae023bb885ee0de221f0409a0160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70f5d4885abba3d891526723d3ca1f174549c348
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557732"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573827"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker-Methode
 Factorymethode für Stapeldurchlauf.  
@@ -47,7 +47,7 @@ HRESULT CreateStackWalker(
  Gibt E_JsDEBUG_UNKNOWN_THREAD zurück, wenn im Thread nicht JavaScript vorhanden ist. Diese Methode darf nur aufgerufen werden, während der Zielprozess angehalten wird.  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IJsDebugProcess-Schnittstelle](../../winscript/reference/ijsdebugprocess-interface.md)

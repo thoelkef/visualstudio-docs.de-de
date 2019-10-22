@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetContextOfPosition | Microsoft-Dokumentation
+title: 'Idebugdocumenttext:: getcontexwf Position | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df63362c422289652d45ed4bbc80f117e17fb73c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6a35a85a6e4761e1bd0db67caafd0913e7e28a3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008716"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572143"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
-Erstellt ein Dokument Context-Objekt, dem Bereich der angegebenen Position entspricht.  
+Erstellt ein Dokument Kontext Objekt, das dem angegebenen Zeichen Positions Bereich entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT GetContextOfPosition(
   
 #### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- [in] Die Startposition des Zeichenbereichs Position folgt.  
+ in Start Position des Zeichen Positions Bereichs.  
   
  `cNumChars`  
- [in] Anzahl der Zeichen im Bereich.  
+ in Anzahl von Zeichen im Bereich.  
   
  `ppsc`  
- [out] Das Dokument-Kontextobjekt Bereich der angegebenen Position entspricht.  
+ vorgenommen Das Dokument Kontext Objekt, das dem angegebenen Zeichen Positions Bereich entspricht.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,7 +55,7 @@ HRESULT GetContextOfPosition(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode erstellt ein Dokument Context-Objekt, dem Bereich der angegebenen Position entspricht.  
+ Diese Methode erstellt ein Dokument Kontext Objekt, das dem angegebenen Zeichen Positions Bereich entspricht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentText-Schnittstelle](../../winscript/reference/idebugdocumenttext-interface.md)

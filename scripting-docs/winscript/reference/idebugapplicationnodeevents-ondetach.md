@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onDetach | Microsoft-Dokumentation
+title: 'Idebugapplicationnodeevents:: ondetach | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9162175727d439a6370071a5f3c9fa4c7ca88ee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb1a33cbec8ef032c1c4fedba28ad4013e676f0d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945679"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574676"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
-Behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten von einem übergeordneten Knoten getrennt wurde.  
+Behandelt ein Ereignis, das das Debuggen von Anwendungs Knoten Objekten von einem übergeordneten Knoten bezeichnet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT onDetach();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,11 +44,11 @@ HRESULT onDetach();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt ein Ereignis gibt an, dass das Debug-Anwendungsobjekt Knoten von einem übergeordneten Knoten getrennt wurde.  
+ Diese Methode behandelt ein Ereignis, das Kenn spricht, dass das Objekt zum Debuggen von Anwendungs Knoten von einem übergeordneten Knoten getrennt wurde.  
   
- Implementierungen der `IDebugApplicationNode` Schnittstelle dieses Ereignis auslösen.  
+ Implementierer der `IDebugApplicationNode`-Schnittstelle gibt dieses Ereignis aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplicationNodeEvents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
+ [Idebugapplicationnodeevents-Schnittstelle](../../winscript/reference/idebugapplicationnodeevents-interface.md)    
+ [Idebugapplicationnodeevents:: onattach](../../winscript/reference/idebugapplicationnodeevents-onattach.md) -   
  [IDebugApplicationNode-Schnittstelle](../../winscript/reference/idebugapplicationnode-interface.md)

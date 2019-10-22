@@ -1,25 +1,25 @@
 ---
-title: Workflow-Designer - Throw-Aktivitätsdesigners
+title: Workflow-Designer Throw-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7074ee2a11759983f103024033cb2b96322330cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe6a530888c7c28c5c1556114db03a6cd7369fe6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649853"
 ---
 # <a name="throw-activity-designer"></a>Throw-Aktivitätsdesigner
 
-Die **auslösen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Throw> Aktivität.
+Der **throw** -Aktivitäts Designer wird verwendet, um eine <xref:System.Activities.Statements.Throw>-Aktivität zu erstellen und zu konfigurieren.
 
 ## <a name="the-throw-activity"></a>Die Throw-Aktivität
 
@@ -27,9 +27,9 @@ Die <xref:System.Activities.Statements.Throw>-Aktivität löst eine Ausnahme aus
 
 ### <a name="using-the-throw-activity-designer"></a>Verwenden des Throw-Aktivitätsdesigners
 
-Zugriff die **auslösen** Aktivitäts-Designer in der **Fehlerbehandlung** Kategorie der **Toolbox**.
+Greifen Sie in der Kategorie **Fehlerbehandlung** der **Toolbox**auf den **throw** -Aktivitäts Designer zu.
 
-Die **auslösen** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht werden, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Erstellt eine <xref:System.Activities.Statements.Throw> -Aktivität mit dem standardmäßigen **"DisplayName"** -Standardwert Rethrow. Die <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des bearbeitet werden die **auslösen** Aktivitäts-Designer oder in der **"DisplayName"** Feld des Eigenschaftenrasters. Diese <xref:System.Activities.Statements.Throw.Exception%2A>-Eigenschaft muss im Eigenschaftenraster bearbeitet werden.
+Der **throw** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence>. Dadurch wird eine <xref:System.Activities.Statements.Throw>-Aktivität mit dem **Display Name** -Standardwert Throw erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **throw** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden. Diese <xref:System.Activities.Statements.Throw.Exception%2A>-Eigenschaft muss im Eigenschaftenraster bearbeitet werden.
 
 ### <a name="the-throw-properties"></a>Die Throw-Eigenschaften
 

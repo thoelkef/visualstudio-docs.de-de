@@ -1,49 +1,49 @@
 ---
-title: Eigenschaften von Domänenrollen | Microsoft-Dokumentation
+title: Eigenschaften von Domänen Rollen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: reference
 ms.assetid: 5a7bb18c-638e-45e8-9d79-9aa6a9e14b0e
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a0cddfb3d5c95e5636e9dac069106e3010bedff8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444469"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671469"
 ---
 # <a name="properties-of-domain-roles"></a>Eigenschaften von Domänenrollen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Eigenschaften in der folgenden Tabelle sind einer Domäne zugewiesen. Weitere Informationen zu den Funktionen der Domäne, finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
-|Eigenschaft|Beschreibung|Standard|  
-|--------------|-----------------|-------------|  
-|Auflistungstyp|Wenn diese Rolle eine Multiplizität von 0 aufweist. * oder 1... \*, dieser Eigenschaft passt den generische Typ, der verwendet wird, um die Auflistung von Links zu speichern.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> wird verwendet|  
-|Benutzerdefinierte Attribute|Attribute, die Sie hier angeben, werden als Attribute der generierten Codeklasse hinzugefügt werden.|\<none>|  
-|Ist die Eigenschaft durchsucht werden kann|Wenn `True`, und wenn die Multiplizität der Beziehung 0.. 1 "oder" 1..1 ist, kann die Role-Eigenschaft durchsucht werden, vom Benutzer in der **Eigenschaften** Fenster. Die Eigenschaft zeigt den Namen des Elements am anderen Ende des beziehungslinks.|`True`|  
-|Eigenschaft-Generator ist|Wenn `True`, eine Rolleneigenschaft ist für diese Rolle, die Sie, zum Durchlaufen der Beziehung im Programmcode verwenden können generiert. Wenn Sie diese "false" festlegen, können Sie die Beziehung auf eine weniger effiziente Weise durchlaufen, mithilfe der statische Methoden der domänenbeziehung.|`True`|  
-|Eigenschaft Getter-Zugriffsmodifizierer|Der Zugriffsmodifizierer für den Getter für die generierte Eigenschaft (`public`, `internal`, `private`, `protected`, oder `protected internal`).|`public`|  
-|Eigenschaft-Setter-Zugriffsmodifizierer|Der Zugriffsmodifizierer für den Setter für die generierte Eigenschaft (`public`, `internal`, `private`, `protected`, oder `protected internal`).|`public`|  
-|Multiplizität|Die Anzahl der Modellelemente, die die entgegengesetzte Rolle spielen kann (`0..1`, `1..1`, `0..*`, oder `1..*`). Wenn die Multiplizität `0..*` oder `1..*`, klicken Sie dann die generierte Eigenschaft stellt eine Auflistung; andernfalls die generierte Eigenschaft stellt ein einzelnes Modell-Element dar.|Hängt von der Art der Beziehung und ob es sich um die Quelle oder Ziel-Rolle in der Beziehung handelt.|  
-|Name|Der Name der Rolle "Domäne". Diese Eigenschaft kann keine Leerzeichen enthalten.|Der Name der Domänenklasse für den Rolleninhaber für diese Rolle.|  
-|Überträgt die Kopie|`DoNotPropagateCopy` – Die kopierte Rolleninhaber müssen keine Kopie dieses links.<br /><br /> `PropagateCopyToLinkOnly` – Die kopierte Link verweist auf die vorhandene Gegenrolle.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` – Der kopierte Link verweist auf eine Kopie der Gegenrolle.|`PropagateCopyToLinkAndOppositeRolePlayer` für die Quellrollen der einbettungen.<br /><br /> `DoNotPropagateCopy` für andere Rollen.<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Verhaltens beim Kopieren](../modeling/customizing-copy-behavior.md)|  
-|Überträgt löschen|`True` um das Element zu löschen, das dieser Rolle spielt, wenn Sie der entsprechenden Link gelöscht wird.|`True` für das Ziel einer einbettenden Rolle.<br /><br /> `False` für andere Rollen.<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md).|  
-|Eigenschaftenname|Der Name der Eigenschaft in den Code für den Rolleninhaber generiert werden soll. Dieser Name darf keine Leerzeichen enthalten.|Der Name der entgegengesetzten Rolle dieser Rolle besitzt eine 0 (null): 1- oder eine 1: 1-Multiplizität; andernfalls der pluralisierte Name der entgegengesetzten Rolle.|  
-|Rolleninhaber|Die Domänenklasse des Elements, das diese Rolle in der Beziehung einnehmen kann. Diese Eigenschaft ist schreibgeschützt.|Die Domänenklasse der Zielrolleninhaber für diese Rolle.|  
-|Hinweise|Informelle Hinweise, die mit die Rolle zugewiesen sind.|\<none>|  
-|Kategorie|Die Kategorie, unter der die generierte Eigenschaft angezeigt, in wird, der **Eigenschaften** Fenster im generierten Designer. Wenn diese Eigenschaft leer ist, und klicken Sie dann die generierte Eigenschaft angezeigt, unter wird dem **Verschiedenes** Kategorie|\<none>|  
-|Beschreibung|Die Beschreibung, die wird verwendet, um Code zu dokumentieren, die in der Benutzeroberfläche des generierten Designers verwendet wird.<br /><br /> Die Beschreibung wird in der Intellisense-QuickInfo für die der rolleninhaberklasse generierten Eigenschaft.|`Description for` *der vollständige Name der Rolle*|  
-|Anzeigename|Der Name, der im generierten Designer für die Domänenrolle angezeigt wird.|Der angepasste Wert der Name-Eigenschaft.|  
-|Hilfsschlüsselwort|Das optionale Schlüsselwort, das zum Indizieren der F1-Hilfe für die Domänenrolle verwendet wird.|\<none>|  
-|Anzeigename der Eigenschaft|Der Name, der im generierten Designer für die Eigenschaft der generierten Rolle angezeigt wird.|Der angepasste Wert der Eigenschaftenname-Eigenschaft.|  
-  
+Die Eigenschaften in der folgenden Tabelle sind einer Domänen Rolle zugeordnet. Weitere Informationen zu Domänen Rollen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+|property|Beschreibung|Default|
+|--------------|-----------------|-------------|
+|Sammlungstyp|, Wenn diese Rolle eine Multiplizität von 0.. * oder 1 aufweist. \* passt diese Eigenschaft den generischen Typ an, der zum Speichern der Auflistung von Links verwendet wird.|`(none)`  -  <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> verwendet|
+|Benutzerdefinierte Attribute|Attribute, die Sie hier angeben, werden der generierten Code Klasse als Attribute hinzugefügt.|\<none>|
+|Ist Eigenschaften suchbar|Wenn `True` und die Multiplizität der Beziehung 0.. 1 oder 1.. 1 ist, kann die Role-Eigenschaft vom Benutzer im **Eigenschaften** Fenster durchsucht werden. Die-Eigenschaft zeigt den Namen des Elements am anderen Ende des Beziehungslinks an.|`True`|
+|Ist Property Generator|Wenn `True`, wird für diese Rolle eine Rollen Eigenschaft generiert, die Sie verwenden können, um die Beziehung im Programmcode zu durchlaufen. Wenn Sie diese Einstellung auf "false" festlegen, können Sie die Beziehung auf weniger effiziente Weise durchlaufen, indem Sie statische Methoden der Domänen Beziehung verwenden.|`True`|
+|Zugriffs Modifizierer für Eigenschaften Getter|Der Zugriffsmodifizierer für den Getter der generierten Eigenschaft (`public`, `internal`, `private`, `protected` oder `protected internal`).|`public`|
+|Zugriffs Modifizierer für Eigenschaften Setter|Der Zugriffsmodifizierer für den Setter für die generierte Eigenschaft (`public`, `internal`, `private`, `protected` oder `protected internal`).|`public`|
+|Multiplizität|Die Anzahl der Modellelemente, die die entgegengesetzte Rolle wiedergeben können (`0..1`, `1..1`, `0..*` oder `1..*`). Wenn die Multiplizität `0..*` oder `1..*` ist, stellt die generierte Eigenschaft eine Auflistung dar. Andernfalls stellt die generierte Eigenschaft ein einzelnes Modellelement dar.|Hängt vom Beziehungstyp und davon ab, ob dies die Quell-oder Zielrolle in der Beziehung ist.|
+|-Name|Der Name der Domänen Rolle. Diese Eigenschaft darf keine Leerzeichen enthalten.|Der Name der Domänen Klasse des Rollen Players für diese Rolle.|
+|Überträgt Copy|`DoNotPropagateCopy`: der kopierte Rollen Inhaber hat keine Kopie dieses Links.<br /><br /> `PropagateCopyToLinkOnly`: der kopierte Link verweist auf den vorhandenen entgegengesetzten Rollen Inhaber.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer`: der kopierte Link verweist auf eine Kopie des entgegengesetzten Rollen Players.|`PropagateCopyToLinkAndOppositeRolePlayer` für die Quell Rollen von Einbettungen.<br /><br /> `DoNotPropagateCopy` für andere Rollen.<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Kopier Verhaltens](../modeling/customizing-copy-behavior.md) .|
+|Überträgt DELETE|`True`, um das Element zu löschen, das diese Rolle wieder gibt, wenn der zugehörige Link gelöscht wird.|`True` für das Ziel einer Einbettungs Rolle.<br /><br /> `False` für andere Rollen.<br /><br /> Weitere Informationen finden Sie unter [Anpassen des Lösch Verhaltens](../modeling/customizing-deletion-behavior.md).|
+|Eigenschaftenname|Der Name der Eigenschaft, die im Code des Rollen Players generiert wurde. Dieser Name darf keine Leerzeichen enthalten.|Der Name der gegenüberliegenden Rolle, wenn diese Rolle über eine Null-zu-eins-oder eine 1:1-Multiplizität verfügt. andernfalls der pluralisierte Name der entgegengesetzten Rolle.|
+|Rollen Inhaber|Die Domänen Klasse des Elements, das diese Rolle in der Beziehung wiedergeben kann. Diese Eigenschaft ist schreibgeschützt.|Die Domänen Klasse des Rollen Players für diese Rolle.|
+|Notizen|Informelle Hinweise, die der Domänen Rolle zugeordnet sind.|\<none>|
+|Kategorie|Die Kategorie, unter der die generierte Eigenschaft im **Eigenschaften** Fenster des generierten Designers angezeigt wird. Wenn diese Eigenschaft leer ist, wird die generierte Eigenschaft unter **der Kategorie "** Verschiedenes" angezeigt.|\<none>|
+|Beschreibung|Die Beschreibung, die verwendet wird, um Code zu dokumentieren, und wird in der Benutzeroberfläche des generierten Designers verwendet.<br /><br /> Die Beschreibung wird in der IntelliSense-QuickInfo für die generierte Eigenschaft für die Role Player-Klasse angezeigt.|`Description for` *den vollständigen Namen der Rolle*|
+|Anzeigename|Der Name, der im generierten Designer für die Domänen Rolle angezeigt wird.|Der angepasste Wert der Name-Eigenschaft.|
+|Hilfsschlüsselwort|Das optionale Schlüsselwort, das zum Indizieren der F1-Hilfe für die Domänen Rolle verwendet wird.|\<none>|
+|Anzeige Name der Eigenschaft|Der Name, der im generierten Designer für die generierte Role-Eigenschaft angezeigt wird.|Der angepasste Wert der Eigenschaft für den Eigenschaftsnamen.|
+
 > [!NOTE]
-> Der Standardwert, der einen Anzeigenamen basiert auf der zugehörige Eigenschaftswert durch Einfügen von Leerzeichen vor jeder-Großbuchstaben, einen Kleinbuchstaben Zeichen vorangestellt ist und nicht ein anderes Großbuchstaben Zeichen folgt.  
-  
-## <a name="see-also"></a>Siehe auch  
+> Der Standardwert eines anzeigen Amens basiert auf dem zugeordneten Eigenschafts Wert, indem Leerzeichen vor jedem Großbuchstaben eingefügt werden, dem ein Kleinbuchstabe vorangestellt wird und auf das kein anderes Großbuchstabe folgt.
+
+## <a name="see-also"></a>Siehe auch
  [Eigenschaften von Domänenbeziehungen](../modeling/properties-of-domain-relationships.md)

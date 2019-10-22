@@ -1,5 +1,5 @@
 ---
-title: 'CA2147: Transparente Methoden dürfen keine Sicherheitsassertionen verwenden Assert-Vorgänge | Microsoft-Dokumentation'
+title: 'CA2147: transparente Methoden dürfen keine Sicherheits Bestätigungen verwenden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - SecurityTransparentCodeShouldNotAssert
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e8ac2e907e3c13a019e5f534faf86ae425ae30a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2bd0042b6f9a8e46939ab34c86294218fb79f4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142643"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610163"
 ---
-# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Transparente Methoden dürfen keine Sicherheitsassertionen verwenden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -34,34 +34,34 @@ ms.locfileid: "68142643"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Code mit der Kennzeichnung <xref:System.Security.SecurityTransparentAttribute> ist nicht über ausreichende Berechtigungen für Assertions erteilt.
+ Code, der als <xref:System.Security.SecurityTransparentAttribute> gekennzeichnet ist, verfügt nicht über ausreichende Berechtigungen für die Bestätigung.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Diese Regel analysiert alle Methoden und Typen in einer Assembly wird entweder 100 % transparente oder eine gemischte transparent/kritisch ist, und kennzeichnet die Nutzung von deklarativen oder imperativen <xref:System.Security.CodeAccessPermission.Assert%2A>.
+ Mit dieser Regel werden alle Methoden und Typen in einer Assembly analysiert, die entweder 100% transparent oder gemischt transparent/kritisch ist, und alle deklarativen oder imperativen Verwendungsmöglichkeiten von <xref:System.Security.CodeAccessPermission.Assert%2A> werden.
 
- Zur Laufzeit werden alle Aufrufe von <xref:System.Security.CodeAccessPermission.Assert%2A> aus transparentem Code führt dazu, dass eine <xref:System.InvalidOperationException> ausgelöst wird. Dies kann auftreten, in beiden 100 % transparente Assemblys sowie im gemischten transparent/kritisch Assemblys, in denen eine Methode oder der Typ wird transparent deklariert, aber eine deklarative oder imperative Assertion enthält.
+ Zur Laufzeit bewirken alle Aufrufe von <xref:System.Security.CodeAccessPermission.Assert%2A> aus transparentem Code, dass eine <xref:System.InvalidOperationException> ausgelöst wird. Dies kann sowohl in 100% transparenten Assemblys als auch in gemischten transparenten/kritischen Assemblys auftreten, in denen eine Methode oder ein Typ als transparent deklariert ist, aber eine deklarative oder imperative Bestätigung enthält.
 
- Die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 eingeführt, ein Feature namens *Transparenz*. Einzelne Methoden, Felder, Schnittstellen, Klassen und Typen können entweder sicherheitstransparent oder sicherheitsrelevant sein.
+ Der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2,0 hat eine Funktion mit dem Namen " *Transparenz*" eingeführt. Einzelne Methoden, Felder, Schnittstellen, Klassen und Typen können entweder transparent oder kritisch sein.
 
- Transparenter Code ist nicht zulässig, um die Sicherheit für die rechteerweiterung. Aus diesem Grund werden keine Berechtigungen erteilt oder angeforderten automatisch durch den Code an die Anwendungsdomäne Aufrufer oder Host übergeben. Anforderungen für erhöhte Rechte Asserts, LinkDemands, SuppressUnmanagedCode vermerkt, Beispiele und `unsafe` Code.
+ Transparenter Code ist nicht berechtigt, Sicherheits Privilegien zu erhöhen. Aus diesem Grund werden alle gewährten Berechtigungen automatisch an die Aufrufer-oder Host Anwendungsdomäne übermittelt. Beispiele für Erweiterungen sind Assert, LinkDemand, SuppressUnmanagedCode und `unsafe` Code.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um das Problem zu beheben, markieren Sie entweder den Code, den die Assertion aufgerufen, der <xref:System.Security.SecurityCriticalAttribute>, oder entfernen Sie die Assertion.
+ Um das Problem zu beheben, markieren Sie entweder den Code, der den Assert aufruft, mit dem <xref:System.Security.SecurityCriticalAttribute>, oder entfernen Sie den Assert.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Meldung von dieser Regel.
+ Unterdrücken Sie keine Meldung von dieser Regel.
 
 ## <a name="example"></a>Beispiel
- Dieser Code schlägt fehl, wenn `SecurityTestClass` transparent ist, während die `Assert` -Methode löst eine <xref:System.InvalidOperationException>.
+ Dieser Code schlägt fehl, wenn `SecurityTestClass` transparent ist, wenn die `Assert`-Methode eine <xref:System.InvalidOperationException> auslöst.
 
  [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2147.transparentmethodsmustnotusesecurityasserts/cs/ca2147 - transparentmethodsmustnotusesecurityasserts.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Eine Möglichkeit ist, codereviews die SecurityTransparentMethod-Methode im folgenden Beispiel, und wenn die Methode für die Erhöhung der Rechte sicher erachtet wird, markieren Sie SecurityTransparentMethod mit sicherheitskritisch dies erfordert, dass eine ausführliche, vollständig und fehlerfrei-Sicherheit Audit muss für die Methode zusammen mit alle erläuterungen ausgeführt werden, die in der Methode unter die Assertion auftreten:
+ Eine Möglichkeit besteht darin, die SecurityTransparentMethod-Methode im folgenden Beispiel Code Review. wenn die Methode für die Rechte Erweiterung als sicher eingestuft wird, ist Mark SecurityTransparentMethod mit Secure-Critical erforderlich. Dies erfordert eine ausführliche, vollständige und fehlerfreie Sicherheit. Audit muss für die Methode mit allen Aufrufen erfolgen, die innerhalb der Methode unter der Assert-Methode auftreten:
 
  [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SecurityTransparentCode2/cs/FxCop.Security.SecurityTransparentCode2.cs#1)]
 
- Eine weitere Möglichkeit ist die Assertion aus dem Code entfernt, und lassen Sie alle nachfolgenden Datei-e/a-Berechtigung Anforderungen Datenfluss über SecurityTransparentMethod an den Aufrufer. Dadurch können sicherheitsüberprüfungen. Keine sicherheitsüberwachung ist in diesem Fall in der Regel erforderlich, da die berechtigungsanforderungen für den Aufrufer und/oder der Anwendungsdomäne übergeben werden. Berechtigungsanforderungen werden genau durch Sicherheitsrichtlinien, hosting-Umgebung und Code-Source-Berechtigungen gesteuert.
+ Eine andere Möglichkeit besteht darin, die Assert-Berechtigung aus dem Code zu entfernen und allen nachfolgenden Datei-e/a-Berechtigungen das übernehmen von SecurityTransparentMethod an den Aufrufer zu gestatten Dies ermöglicht Sicherheitsüberprüfungen. In diesem Fall wird in der Regel keine Sicherheitsüberprüfung benötigt, da die Berechtigungsanforderungen an den Aufrufer und/oder die Anwendungsdomäne weitergeleitet werden. Berechtigungsanforderungen werden durch die Sicherheitsrichtlinie, die Hostingumgebung und die Berechtigungen zum Gewähren von Code Quellen streng gesteuert.
 
 ## <a name="see-also"></a>Siehe auch
  [Sicherheitswarnungen](../code-quality/security-warnings.md)

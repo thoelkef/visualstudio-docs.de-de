@@ -1,29 +1,29 @@
 ---
-title: Workflow-Designer - Migrations-Aktivitätsdesigner
+title: Workflow-Designer Migrations Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7b284b370f248ed2497ece835036679af2e5a8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: da8459db53a1ecb9a297e2a4a218791281806313
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747016"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650125"
 ---
-# <a name="migration-activity-designers"></a>Migrations-Aktivitätsdesigner
+# <a name="migration-activity-designers"></a>Aktivitäts-Designer für Migrationen
 
-Die migrationsaktivitätsdesigner werden verwendet, um den Workflow 3.0-bzw. 3.5-Aktivitäten aus einem Workflow aufzurufen, die auf .NET Framework 4 abzielt oder höher.
+Die Migrations Aktivitäts Designer werden verwendet, um Workflow 3.0/3.5-Aktivitäten von einem Workflow aufzurufen, der .NET Framework 4 oder höher als Ziel verwendet.
 
-Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivitäts-Designer.
+Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung der Workflow-Designer Aktivitäts Designer.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-Für andere Typen von Aktivitätsdesignern finden Sie unter den folgenden Themen:
+Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folgenden Themen:
 
 - [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 

@@ -8,20 +8,20 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871902"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669935"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definieren eines Linkhandlers für Arbeitselemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können eine Visual Studio Integration Extension erstellen, die auf das Erstellen oder Löschen eines Links zwischen einem UML-Modellelement und einem Arbeitselement durch den Benutzer reagiert. Wenn Benutzer eine neue Arbeitsaufgabe mit einem Modellelement verknüpfen, können beispielsweise im Code die Felder der Arbeitsaufgabe aus Werten im Modell initialisiert werden.
+Sie können eine Visual Studio Integration Extension erstellen, die auf das Erstellen oder Löschen eines Links zwischen einem UML-Modellelement und einer Arbeitsaufgabe durch den Benutzer reagiert. Wenn Benutzer ein neues Arbeitselement mit einem Modellelement verknüpfen, können beispielsweise im Code die Felder des Arbeitselements aus Werten im Modell initialisiert werden.
 
 ## <a name="set-up-a-uml-extension-solution"></a>Einrichten einer UML-Erweiterungsprojektmappe
  Auf diese Weise können Sie Handler entwickeln und dann an andere Benutzer verteilen. Sie müssen zwei Visual Studio-Projekte einrichten:
@@ -66,7 +66,7 @@ Sie können eine Visual Studio Integration Extension erstellen, die auf das Erst
 
          **Projekt** = *Ihr Klassenbibliotheksprojekt*
 
-## <a name="defining-the-work-item-link-handler"></a>Definieren des Arbeitselement-Linkhandlers
+## <a name="defining-the-work-item-link-handler"></a>Definieren des Arbeitsaufgaben-Linkhandlers
  Führen Sie alle folgenden Aufgaben im Klassenbibliotheksprojekt aus.
 
 ### <a name="project-references"></a>Projektverweise
@@ -82,12 +82,12 @@ Sie können eine Visual Studio Integration Extension erstellen, die auf das Erst
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`-verwendet durch den Beispielcode
+ `System.Drawing` vom Beispielcode verwendet
 
- Wenn Sie einen dieser Verweise nicht auf der Registerkarte **.net** des Dialog Felds **Verweis hinzufügen** finden können, verwenden Sie die Registerkarte Durchsuchen, um Sie in \Programme\Microsoft Visual Studio [Version]\\\common7\ide\privateassemblys zu suchen.
+ Wenn Sie einen dieser Verweise nicht auf der Registerkarte **.net** des Dialog Felds **Verweis hinzufügen** finden können, verwenden Sie die Registerkarte Durchsuchen, um Sie in \Programme\Microsoft Visual Studio [Version] \common7\ide\privateassemblys \\ zu suchen.
 
-### <a name="import-the-work-item-namespace"></a>Importieren des Namespaces für Arbeitselemente
- Fügen Sie inden ProjektverweisenVerweiseaufdiefolgendenAssemblys[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hinzu:
+### <a name="import-the-work-item-namespace"></a>Importieren des Namespaces für Arbeitsaufgaben
+ Fügen Sie in den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt **verweisen**Verweise auf die folgenden Assemblys hinzu:
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -170,15 +170,15 @@ namespace WorkItems
 
     - Wenn im Untermenü die Option **Team Foundation Server Verbindung öffnen**angezeigt wird, müssen Sie das Projekt schließen, eine Verbindung mit dem entsprechenden TFS herstellen und dieses Verfahren neu starten.
 
-    - Wenn im Untermenü eine Liste von Arbeitselementtypen angezeigt wird, klicken Sie auf einen Arbeitselementtyp.
+    - Wenn im Untermenü eine Liste von Arbeitsaufgabentypen angezeigt wird, klicken Sie auf einen Arbeitsaufgabentyp.
 
-         Ein neues Arbeitsaufgabenformular wird geöffnet.
+         Ein neues Arbeitselementformular wird geöffnet.
 
 5. Vergewissern Sie sich, dass der Titel der Arbeitsaufgabe dem des Modellelements entspricht, wenn Sie den Beispielcode aus dem vorherigen Abschnitt verwendet haben. Dadurch wird nachgewiesen, dass `OnWorkItemCreated()` erfolgreich ausgeführt wurde.
 
 6. Füllen Sie das Formular aus. Speichern und schließen Sie anschließend die Arbeitsaufgabe.
 
-7. Überprüfen Sie, ob die Arbeitsaufgabe jetzt rot gefärbt ist. Dies wird von `OnWorkItemLinked()` im Beispielcode veranschaulicht.
+7. Überprüfen Sie, ob das Arbeitselement jetzt rot gefärbt ist. Dies wird von `OnWorkItemLinked()` im Beispielcode veranschaulicht.
 
      **Problem**Behandlung: Wenn die Handlermethoden nicht ausgeführt wurden, überprüfen Sie Folgendes:
 
@@ -188,10 +188,10 @@ namespace WorkItems
 
     - Die Parameter aller `Import`-Attribute und `Export`-Attribute sind gültig.
 
-## <a name="about-the-work-item-handler-code"></a>Informationen zum Arbeitsaufgaben-Handlercode
+## <a name="about-the-work-item-handler-code"></a>Informationen zum Arbeitselement-Handlercode
 
 ### <a name="listening-for-new-work-items"></a>Lauschen auf neue Arbeitsaufgaben
- `OnWorkItemCreated` wird aufgerufen, wenn Benutzer eine neue Arbeitsaufgabe erstellen, die mit den Modellelementen verknüpft werden soll. Die Arbeitsaufgabenfelder können im Code initialisiert werden. Anschließend wird die Arbeitsaufgabe angezeigt, und Benutzer können die Felder aktualisieren und die Arbeitsaufgabe speichern. Der Link zu einem Modellelement wird erst erstellt, wenn die Arbeitsaufgabe erfolgreich gespeichert wurde.
+ `OnWorkItemCreated` wird aufgerufen, wenn Benutzer eine neue Arbeitsaufgabe erstellen, die mit den Modellelementen verknüpft werden soll. Die Arbeitselementfelder können im Code initialisiert werden. Anschließend wird das Arbeitselement angezeigt, und Benutzer können die Felder aktualisieren und das Arbeitselement speichern. Der Link zu einem Modellelement wird erst erstellt, wenn das Arbeitselement erfolgreich gespeichert wurde.
 
 ```
 public void OnWorkItemCreated(
@@ -206,7 +206,7 @@ public void OnWorkItemCreated(
 ```
 
 ### <a name="listening-for-link-creation"></a>Lauschen auf Linkerstellung
- `OnWorkItemLinked` wird unmittelbar nach dem Erstellen eines Links aufgerufen. Dabei spielt es keine Rolle, ob die Verknüpfung mit einer neuen oder einer bestehenden Arbeitsaufgabe hergestellt wurde. Der Aufruf erfolgt einmal für jede Arbeitsaufgabe.
+ `OnWorkItemLinked` wird unmittelbar nach dem Erstellen eines Links aufgerufen. Dabei spielt es keine Rolle, ob die Verknüpfung mit einer neuen oder einer bestehenden Arbeitsaufgabe hergestellt wurde. Der Aufruf erfolgt einmal für jedes Arbeitselement.
 
 ```
 public void OnWorkItemLinked
@@ -262,7 +262,7 @@ public void OnWorkItemLinked
 } 
 ```
 
-## <a name="accessing-the-work-item-reference-links"></a>Zugreifen auf die Verweislinks für Arbeitsaufgaben
+## <a name="accessing-the-work-item-reference-links"></a>Zugreifen auf die Verweislinks für Arbeitselemente
  Sie können wie folgt auf die Links zugreifen:
 
 ```
@@ -293,7 +293,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   ```
 
-  Weitere Informationen zu verweisen finden Sie unter Anfügen von Verweis Zeichenfolgen [an UML-Modellelemente](../modeling/attach-reference-strings-to-uml-model-elements.md).
+  Weitere Informationen zu verweisen finden Sie unter [Anfügen von Verweis Zeichenfolgen an UML-Modellelemente](../modeling/attach-reference-strings-to-uml-model-elements.md).
 
 ## <a name="see-also"></a>Siehe auch
 

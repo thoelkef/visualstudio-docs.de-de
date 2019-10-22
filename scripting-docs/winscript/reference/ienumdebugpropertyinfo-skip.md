@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Skip | Microsoft-Dokumentation
+title: 'Ienumdebugpropertyinfo:: Skip | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e7544b8ea54fabc53e6c8476648e339c53da94d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba634409fb051c37534c824efb20e33eda245e8a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963389"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574152"
 ---
 # <a name="ienumdebugpropertyinfoskip"></a>IEnumDebugPropertyInfo::Skip
-Überspringt eine angegebene Anzahl von `DebugPropertyInfo` Strukturen in einer Enumerationsfolge.  
+Überspringt eine angegebene Anzahl von `DebugPropertyInfo` Strukturen in einer enumerationssequenz.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,11 +37,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parameter  
  `celt`  
- [in] Die Anzahl der `DebugPropertyInfo` Strukturen in der Enumerationsfolge übersprungen.  
+ in Die Anzahl der zu über springenden `DebugPropertyInfo` Strukturen in der enumerationssequenz.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`. Gibt `S_FALSE` und Elementzeiger für den aktuellen am Ende der Enumeration festgelegt wird, wenn `celt` ist größer als die Anzahl der Elemente nach links im Enumerator.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`. Gibt `S_FALSE` zurück und legt den aktuellen Element Zeiger auf das Ende der Enumeration fest, wenn `celt` größer als die Anzahl der im Enumerator verbleibenden Elemente ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IEnumDebugPropertyInfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
+ [Ienumdebugpropertyinfo-Schnittstelle](../../winscript/reference/ienumdebugpropertyinfo-interface.md)    
  [DebugPropertyInfo-Struktur](../../winscript/reference/debugpropertyinfo-structure.md)

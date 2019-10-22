@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDescriptionString | Microsoft-Dokumentation
+title: 'Idebugstackframe:: getdescriptionstring | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f870c6dbc654f8465d201c53443228153ce4a68b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb29574d240a02073721046cec65bdf483b3eb0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934613"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576745"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-Gibt eine kurze oder lange Text Beschreibung des Stapelrahmens zurück.  
+Gibt eine kurze oder lange Textbeschreibung des Stapel Rahmens zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>Parameter  
  `fLong`  
- [in] Flag, in denen `TRUE` gibt eine lange Beschreibung und `FALSE` gibt eine kurze Beschreibung zurück.  
+ in Flag, bei dem `TRUE` eine lange Beschreibung zurückgibt und `FALSE` eine kurze Beschreibung zurückgibt.  
   
  `pbstrDescription`  
- [out] Die Beschreibung des Stapelrahmens.  
+ vorgenommen Die Beschreibung des Stapel Rahmens.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,7 +51,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- In der Regel, wenn `fLong` ist `FALSE`, diese Methode bietet nur den Namen der Funktion, die dem Stapelrahmen zugeordnet. Wenn `fLong` ist `TRUE`, diese Methode kann auch bereitstellen, die Funktionsparameter und weitere relevante Informationen ein.  
+ Wenn `fLong` `FALSE` ist, stellt diese Methode in der Regel nur den Namen der Funktion bereit, die dem Stapel Rahmen zugeordnet ist. Wenn `fLong` `TRUE` ist, kann diese Methode auch die Funktionsparameter und andere relevante Informationen bereitstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame-Schnittstelle](../../winscript/reference/idebugstackframe-interface.md)
