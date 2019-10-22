@@ -45,61 +45,47 @@ helpviewer_keywords:
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 423c79bc2fc6640180b0dfa9f6e9d59ef1d37dcc
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695863"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662259"
 ---
 # <a name="options-text-editor-general"></a>Optionen, Text-Editor, Allgemein
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Mit diesem Dialogfeld können Sie Einstellungen für den [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Code- und -Text-Editor global ändern. Klicken Sie zum Anzeigen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, und klicken Sie dann auf **Allgemein**.  
-  
+Mit diesem Dialogfeld können Sie Einstellungen für den [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Code- und -Text-Editor global ändern. Klicken Sie zum Anzeigen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, und klicken Sie dann auf **Allgemein**.
+
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="settings"></a>Einstellungen  
- Textbearbeitung mit Drag & Drop  
- Bei Auswahl dieser Option können Sie Text verschieben, indem Sie ihn auswählen und mit der Maus auf eine andere Position innerhalb des aktuellen Dokuments oder eines beliebigen anderen geöffneten Dokument ziehen.  
-  
- Trennzeichen automatisch hervorheben  
- Wenn diese Option aktiviert ist, werden die Trennzeichen, die Parameter oder Element-Wert-Paare trennen, sowie übereinstimmende Klammern hervorgehoben.  
-  
- Änderungen nachverfolgen  
- Wenn der Code-Editor ausgewählt ist, erscheint eine vertikale gelbe Linie im Auswahlrand. Diese markiert Code, der seit der letzten Speicherung der Datei geändert wurde. Wenn Sie die Änderungen speichern, wird die vertikale Linie grün.  
-  
- UTF-8-Codierung ohne Signatur automatisch erkennen  
- Standardmäßig erkennt der Editor Codierung durch Suchen nach Bytereihenfolge-Marken oder Charset-Tags. Wenn keines von beidem im aktuellen Dokument gefunden wird, versucht der Code-Editor, UTF-8-Codierung automatisch durch Scannen von Bytefolgen zu erkennen. Deaktivieren Sie diese Option, um die automatische Erkennung der Codierung zu deaktivieren.  
-  
-## <a name="display"></a>Anzeige  
- Auswahlrahmen  
- Wenn diese Option aktiviert ist, wird ein vertikaler Rand am linken Rand des Textbereichs des Editors angezeigt. Sie können auf diesen Rand klicken, um eine ganze Textzeile auszuwählen, oder darauf klicken und ziehen, um aufeinander folgende Textzeilen auszuwählen.  
-  
-|Auswahlrahmen aktiviert|Auswahlrahmen deaktiviert|  
-|-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn-Bildschirmabbildung](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff-Bildschirmabbildung](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
-  
- Indikatorrand  
- Wenn diese Option aktiviert ist, wird ein vertikaler Rand außerhalb des linken Randes des Textbereichs des Editors angezeigt. Wenn Sie in diesen Rand klicken, erscheint ein Symbol und eine QuickInfo, die sich auf den angezeigten Text beziehen. Beispielsweise werden im Indikatorrand Verknüpfungen zu Haltepunkt- oder Aufgabenlisten angezeigt. Informationen im Indikatorrand werden nicht gedruckt.  
-  
- Vertikale Scrollleiste  
- Wenn diese Option aktiviert ist, wird eine vertikale Scrollleiste angezeigt, mit der Sie hoch und runter scrollen können, um Elemente anzuzeigen, die außerhalb des Anzeigebereichs des Editors liegen. Wenn keine vertikalen Scrollleisten verfügbar sind, können Sie die BILD-AUF- oder BILD-AB-Taste oder Cursortasten verwenden.  
-  
- Horizontale Scrollleiste  
- Wenn diese Option aktiviert ist, wird eine horizontale Scrollleiste angezeigt, mit der Sie von Seite zu Seite scrollen können, um Elemente anzuzeigen, die außerhalb des Anzeigebereichs des Editors liegen. Wenn keine horizontalen Scrollleisten verfügbar sind, können Sie die Cursortasten verwenden.  
-  
- Aktuelle Zeile markieren  
- Wenn diese Option aktiviert ist, wird ein grauer Rahmen um die Codezeile angezeigt, in der sich der Cursor befindet.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Optionen, Text-Editor, Alle Sprachen](../../ide/reference/options-text-editor-all-languages.md)   
- [Optionen, Text-Editor, Alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)   
- [Optionen, Text-Editor, Dateierweiterung](../../ide/reference/options-text-editor-file-extension.md)   
- [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
- [Anpassen des Editors](../../ide/customizing-the-editor.md)   
- [Verwenden von IntelliSense](../../ide/using-intellisense.md)
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="settings"></a>Einstellungen
+ Textbearbeitung per Drag & Drop, wenn diese Option aktiviert ist, ermöglicht es Ihnen, Text zu verschieben, indem Sie ihn auswählen und mit der Maus an eine andere Position innerhalb des aktuellen Dokuments oder eines beliebigen anderen geöffneten Dokuments ziehen.
+
+ Automatisches Markieren von Trennzeichen, wenn diese Option ausgewählt ist, werden Trennzeichen, die Parameter oder Element-Wert-Paare trennen, sowie übereinstimmende geschweifte Klammern hervorgehoben.
+
+ Änderungen nachverfolgen wenn der Code-Editor ausgewählt ist, wird eine vertikale gelbe Linie im Auswahl Rand angezeigt, um Code zu markieren, der sich seit der letzten Speicherung der Datei geändert hat. Wenn Sie die Änderungen speichern, wird die vertikale Linie grün.
+
+ Automatisches Erkennen von UTF-8-Codierung ohne Signatur standardmäßig erkennt der Editor die Codierung, indem er nach Byte Reihenfolge Markierungen oder charset-Tags sucht. Wenn keines von beidem im aktuellen Dokument gefunden wird, versucht der Code-Editor, UTF-8-Codierung automatisch durch Scannen von Bytefolgen zu erkennen. Deaktivieren Sie diese Option, um die automatische Erkennung der Codierung zu deaktivieren.
+
+## <a name="display"></a>Anzeige
+ Auswahl Rand wenn diese Option ausgewählt ist, wird ein vertikaler Rand am linken Rand des Text Bereichs des Editors angezeigt. Sie können auf diesen Rand klicken, um eine ganze Textzeile auszuwählen, oder darauf klicken und ziehen, um aufeinander folgende Textzeilen auszuwählen.
+
+|Auswahlrahmen aktiviert|Auswahlrahmen deaktiviert|
+|-------------------------|--------------------------|
+|![HTMLpageSelectionMarginOn – Screenshot](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![HTMLpageSelectionMarginOff – Screenshot](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+
+ Indikator Rand wenn diese Option ausgewählt ist, wird ein vertikaler Rand außerhalb des linken Rands des Text Bereichs des Editors angezeigt. Wenn Sie in diesen Rand klicken, erscheint ein Symbol und eine QuickInfo, die sich auf den angezeigten Text beziehen. Beispielsweise werden im Indikatorrand Verknüpfungen zu Haltepunkt- oder Aufgabenlisten angezeigt. Informationen im Indikatorrand werden nicht gedruckt.
+
+ Vertikale Schiebe Leiste wenn diese Option ausgewählt ist, wird eine vertikale Scrollleiste angezeigt, mit der Sie nach oben und unten navigieren können, um Elemente anzuzeigen, die außerhalb des Anzeige Bereichs des Editors liegen. Wenn keine vertikalen Scrollleisten verfügbar sind, können Sie die BILD-AUF- oder BILD-AB-Taste oder Cursortasten verwenden.
+
+ Horizontale Schiebe Leiste wenn diese Option ausgewählt ist, wird eine horizontale Scrollleiste angezeigt, mit der Sie einen Bildlauf von der Seite zu Seite durchführen können, um Elemente anzuzeigen, die außerhalb des Anzeige Bereichs des Editors liegen. Wenn keine horizontalen Scrollleisten verfügbar sind, können Sie die Cursortasten verwenden.
+
+ Aktuelle Zeile markieren, wenn Sie ausgewählt ist, zeigt ein graues Feld um die Codezeile an, in der sich der Cursor befindet.
+
+## <a name="see-also"></a>Siehe auch
+ [Optionen, Text-Editor, Optionen für alle Sprachen](../../ide/reference/options-text-editor-all-languages.md) [, Text-Editor, alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md) [Optionen, Text-Editor, Dateierweiterung](../../ide/reference/options-text-editor-file-extension.md) [identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) anpassen [des Editors](../../ide/customizing-the-editor.md) [mithilfe von IntelliSense](../../ide/using-intellisense.md)

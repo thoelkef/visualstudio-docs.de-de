@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698610"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667142"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 ## <a name="ide-basics"></a>IDE-Grundlagen
  Das folgende Bild zeigt die Visual Studio-IDE mit einem geöffneten Projekt, das Fenster "Projektmappen-Explorer" für die Navigation in den Projektdateien und das Fenster "Team Explorer" für die Navigation in der Quellcodeverwaltung und die Arbeitselementnachverfolgung. Die in der Titelleiste hervorgehobenen Funktionen werden im Folgenden ausführlicher erläutert.
 
- ![Visual Studio-IDE](../ide/media/visualstudioide.png "VisualStudioIDE")
+ ![Visual Studio-IDE](../ide/media/visualstudioide.png "|::ref1::|")
 
 ### <a name="signing-in"></a>Anmelden
  Wenn Sie Visual Studio zum ersten Mal starten, können Sie sich mit Ihrem Microsoft-Konto oder Ihrem Arbeits- oder Schulkonto anmelden. Durch die Anmeldung können Sie Ihre Einstellungen, wie z. B. Fensterlayouts, auf mehreren Geräten synchronisieren und automatisch eine Verbindung mit den benötigten Diensten herstellen, z. B. Azure-Abonnements und Visual Studio Team Services. Bei einer abonnementbasierten Lizenz müssen Sie sich regelmäßig bei Visual Studio anmelden, um den Lizenztoken aktuell zu halten. Wenn Sie über eine Product Key-Lizenz verfügen, müssen Sie sich nicht anmelden; eine Anmeldung vereinfacht jedoch das Herstellen einer Verbindung mit Visual Studio Team Services und Ihren Konten bei Azure, Office 365 und Salesforce.com. Weitere Informationen finden Sie unter [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md).
@@ -57,7 +57,7 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 ### <a name="finding-things-and-getting-help"></a>Suchen von Informationen und Nutzen der Hilfe
  Das im Folgenden gezeigte Fenster [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) bietet eine schnelle Möglichkeit, um Befehle, Tools, Funktionen usw. von Visual Studio zu suchen, wenn Sie die Tastenkombination oder die Menüposition nicht kennen. Geben Sie einfach ein, wonach Sie suchen, damit „Schnellstart“ Ihnen einen Link zur gewünschten Option bereitstellen kann.
 
- ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+ ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity-quicklaunch.png "|::ref2::|")
 
  MSDN ist die Microsoft-Website für die technische Dokumentation – die Seite, die Sie gerade lesen, befindet sich auf MSDN. Drücken Sie in Visual Studio die Taste **F1** , um die MSDN-Hilfeseite für das aktive Fenster aufzurufen. Sie können auch im Code-Editor **F1** drücken, um die MSDN-Hilfeseite für die API oder das Schlüsselwort an der aktuellen Position der Einfügemarke aufzurufen. Platzieren Sie zum Beispiel in einer C#-Datei die Einfügemarke an einer beliebigen Stelle in oder am Ende einer `System.String`-Deklaration, und drücken Sie **F1**, um die MSDN-Hilfeseite für <xref:System.String> zu öffnen.
 
@@ -78,21 +78,21 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 
  Die folgende Abbildung zeigt den Team Explorer-Bereich für eine Projektmappe, die in VSTS gehostet wird:
 
- ![Visual Studio Team Explorer](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
+ ![Visual Studio Team Explorer](../ide/media/vs2015-teamexplorer.png "|::ref3::|")
 
 ## <a name="creating-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
  Auch wenn Sie Visual Studio zum Durchsuchen einzelner Codedateien verwenden können, so arbeiten Sie jedoch meist in einem *Projekt*. Ein Visual Studio-Projekt ist eine Sammlung von Dateien und Ressourcen, die zu einer einzelnen ausführbaren Binärdatei für Anwendungen (z. B. eine EXE-, DLL- oder APPX-Datei) kompiliert werden. Bei Nicht-ASP.NET-Websites wird keine ausführbare Datei erstellt und das Projekt enthält nur die HTML- und JavaScript-Dateien sowie Bilder. Da Sie gelegentlich mehrere Binärdateien oder Websites erstellen möchten, die eng miteinander verknüpft sind, gibt es in Visual Studio das Konzept der Projektmappe, die mehrere Projekte oder Websites enthalten kann. Wenn Sie ein Projekt erstellen, erstellen Sie im Grunde ein Projekt in einer Projektmappe, der Sie später bei Bedarf weitere Projekte hinzufügen können. Wenn Sie beispielsweise über ein DLL-Projekt verfügen, können Sie der Projektmappe ein EXE-Projekt hinzufügen, das diese DLL lädt und nutzt.
 
  Eine *Projektvorlage* ist eine Sammlung von vorgegebenen Codedateien und Konfigurationseinstellungen, die Sie schnell einrichten können, um eine bestimmte Art von Anwendung zu erstellen. Visual Studio enthält viele Projektvorlagen. Wenn keine der Standardvorlagen für Sie geeignet ist, können Sie eine eigene erstellen. Nachdem Sie ein Projekt mit einer Vorlage erstellt haben, können Sie darin Ihren eigenen Code schreiben, sprich entweder in den bereitgestellten Dateien oder in neuen, von Ihnen hinzugefügten Dateien. Weitere Informationen finden Sie unter [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md). Die folgende Abbildung zeigt das Dialogfeld "Neues Projekt" mit den Projektvorlagen, die für ASP.NET-Anwendungen verfügbar sind.
 
- ![Visual Studio: Dialogfeld „Neues Projekt“](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
+ ![Visual Studio, Dialogfeld „Neues Projekt“](../ide/media/vs2015-newprojectdialog.png "|::ref4::|")
 
 ## <a name="designing-the-user-interface"></a>Entwerfen der Benutzeroberfläche
  Ein Designer ist ein intuitives Tool, das es Ihnen ermöglicht, eine Benutzeroberfläche zu erstellen, ohne Code schreiben zu müssen. Sie können Steuerelemente der Benutzeroberfläche, z. B. Listenfelder, Kalender und Schaltflächen aus dem Fenster [Toolbox](../ide/reference/toolbox.md) auf eine Entwurfsoberfläche ziehen, die das Fenster oder Dialogfeld darstellt. Sie können die Größe der Elemente ändern oder sie neu anordnen, ohne Code zu schreiben. Es gibt Designer für jeden Projekttyp, der eine Benutzeroberfläche umfasst.
 
  Wenn das Projekt eine XAML-basierte Benutzeroberfläche hat, ist Blend der Standard-Designer für Visual Studio – ein anspruchsvolles Grafiktool, das nahtlos mit Visual Studio zusammenarbeitet.
 
- ![Zeichenfläche](../ide/media/b5-artboard.png "b5_artboard")
+ ![Zeichenfläche](../ide/media/b5-artboard.png "|::ref5::|")
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 
  Sie können einzelne Dateien im Text-Editor bearbeiten, indem Sie auf **Datei > Öffnen > Datei** klicken. klicken. Klicken Sie zum Bearbeiten von Dateien in einem geöffneten Projekt im Projektmappen-Explorer auf den Dateinamen. Der Code wird eingefärbt, und Sie können das Farbschema durch Eingabe von „Farben“ in der Schnellstartleiste personalisieren. Sie können im Text-Editor viele Fenster im Registerkartenformat gleichzeitig geöffnet haben. Sie können jedes Fenster unabhängig teilen. Sie können den Text-Editor auch im Vollbildmodus ausführen.
 
- ![GreetingsConsoleApp.cpp im Code-Editor](../ide/media/c-ide-editorlinenumberswordwrapon.png "C++IDE_EditorLineNumbersWordWrapOn")
+ ![GreetingsConsoleApp.cpp im Code-Editor](../ide/media/c-ide-editorlinenumberswordwrapon.png "|::ref11::|")
 
  Der Text-Editor ist hochgradig interaktiv (falls Sie dies wünschen) und bietet viele Produktivitätsfeatures, mit denen Sie schneller besseren Code schreiben können. Die Features sind je nach Sprache unterschiedlich, und Sie müssen keine davon verwenden (geben Sie in der Schnellstartleiste "Editor" ein), um Funktionen zu aktivieren oder zu deaktivieren. Im Folgenden finden Sie einige der allgemeinen Produktivitätsfeatures:
 
@@ -117,11 +117,11 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 
 2. *IntelliSense* ist der Oberbegriff für einen Satz von beliebten Features, mit denen Typinformationen über den Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr in einem separaten Hilfefenster nachschauen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). Die folgende Abbildung zeigt einige IntelliSense-Features:
 
-    ![Visual Studio-Memberliste](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Visual Studio, Member-Liste](../ide/media/vs2015-intellisense.png "|::ref12::|")
 
 3. Mit**Wellenlinien** werden Sie in Echtzeit auf Fehler oder mögliche Probleme in Ihrem Code hingewiesen, sodass Sie diese unmittelbar und noch vor der Kompilierung oder der Laufzeit beheben können. Wenn Sie auf die Wellenlinie zeigen, werden zusätzliche Informationen zum Fehler angezeigt. Am linken Rand wird u. U. auch eine Glühbirne mit Vorschlägen zum Beheben des Fehlers angezeigt. Weitere Informationen finden Sie unter [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).
 
-    ![Glühbirne mit Anzeige beim Daraufzeigen mit der Maus](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Glühbirne mit Mauszeigerbewegung](../ide/media/vs2015-lightbulb-hover.png "|::ref13::|")
 
 4. [Textmarken](../ide/setting-bookmarks-in-code.md) ermöglichen es Ihnen, schnell zu bestimmten Zeilen in Dateien zu navigieren, an denen Sie aktiv arbeiten.
 
@@ -135,7 +135,7 @@ Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unt
 
 9. Ein verwandtes Tool, der [Objektkatalog](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), ermöglicht es Ihnen, .NET- oder Windows-Runtime-Assemblys auf Ihrem System zu überprüfen, um zu ermitteln, welche Typen sie enthalten und welche Methoden und Eigenschaften diese Typen enthalten.
 
-     ![„System.Timer“ im Objekt-Browser](../ide/media/objectbrowser.png "ObjectBrowser")
+     ![„System.Timer“ im Objekt-Browser](../ide/media/objectbrowser.png "|::ref14::|")
 
    Die meisten Elemente im Menü "Bearbeiten" und im Menü "Ansicht" beziehen sich in irgendeiner Form auf den Code-Editor. Weitere Informationen zum Editor finden Sie unter [Codeerstellung](../ide/writing-code-in-the-code-and-text-editor.md) und [Codebearbeitung](https://www.visualstudio.com/features/ide-vs).
 
@@ -148,7 +148,7 @@ Die Ausgabe des Builds, einschließlich der Fehler- oder Erfolgsbenachrichtigung
 ## <a name="debugging-your-code"></a>Debuggen von Code
  Der neuartige Debugger von Visual Studio ermöglicht es Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder in einem Emulator wie dem für Android oder Windows Phone zu debuggen. Sie können die Anweisungen schrittweise durchlaufen und jeweils die Variablen überprüfen, Sie können Anwendungen mit mehreren Threads durchlaufen und Sie können Haltepunkte festlegen, die nur erreicht werden, wenn eine angegebene Bedingung "true" ist. All dies kann im Code-Editor selbst konfiguriert werden, damit Sie den Codekontext nicht verlassen müssen.
 
- ![Peek-Fenster für Haltepunkteinstellungen](../ide/media/dbg-breakpoints-peekwindow.png "DBG_Breakpoints_PeekWindow")
+ ![Peek-Fenster für Haltepunkteinstellungen](../ide/media/dbg-breakpoints-peekwindow.png "|::ref15::|")
 
  Der Debugger selbst verfügt über verschiedene Fenster, mit denen Sie lokale Variablen, die Aufrufliste und andere Aspekte der Laufzeitumgebung anzeigen und bearbeiten können. Sie können diese Fenster über das Menü **Debuggen** aufrufen.
 
@@ -161,7 +161,7 @@ Die Ausgabe des Builds, einschließlich der Fehler- oder Erfolgsbenachrichtigung
 ## <a name="testing-your-code"></a>Testen von Code
  Visual Studio enthält ein Komponententest-Framework für verwalteten Code (.NET) und eins für systemeigenes C++. Zum Erstellen von Komponententests fügen Sie der Projektmappe einfach ein Testprojekt hinzu, schreiben die Tests und führen sie im Fenster "Test-Explorer" aus. Weitere Informationen finden Sie unter [Komponententests des Codes](../test/unit-test-your-code.md).
 
- ![Komponententest-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Komponententest-Explorer](../ide/media/ute-failedpassednotrunsummary.png "|::ref16::|")
 
 ## <a name="analyzing-code-quality-and-performance"></a>Analysieren der Codequalität und Leistung
  Visual Studio umfasst leistungsstarke Tools für die statische Analyse und die Laufzeitanalyse. Die Tools für eine statische Analyse können Ihnen dabei helfen, potenzielle Fehler hinsichtlich des Entwurfs, der Globalisierung, Interoperabilität, Leistung, Sicherheit und anderer Kategorien zu identifizieren. Mithilfe von Leistungstests oder der Profilerstellung können Sie messen, wie Ihr Programm ausgeführt wird. Rufen Sie diese Tools über das Menü **Analysieren** auf. Weitere Informationen finden Sie unter [Qualitätsverbesserung mit Visual Studio-Diagnosetools](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
@@ -169,13 +169,13 @@ Die Ausgabe des Builds, einschließlich der Fehler- oder Erfolgsbenachrichtigung
 ## <a name="connecting-to-cloud-services-and-databases"></a>Herstellen einer Verbindung mit Clouddiensten und Datenbanken
  Das Fenster [Server-Explorer](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) in Visual Studio zeigt die Ressourcen in allen Konten, die unter Ihrem Personalisierungskonto verwaltet werden (d. h. das Konto, mit dem Sie sich angemeldet haben), darunter die SQL Server-Instanzen, Azure, salesforce.com, Office 365 sowie Websites.
 
- ![Server-Explorer](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![Server-Explorer](../ide/media/vs2015-serverexplorer3.png "|::ref17::|")
 
  Visual Studio enthält [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT), die es Ihnen ermöglichen, Datenbanken zu erstellen, zu debuggen, zu verwalten und umzugestalten. Sie können mit einem Datenbankprojekt oder direkt mit einer Instanz einer verbundenen Datenbank lokal oder extern arbeiten.
 
  Der Objekt-Explorer von SQL Server in Visual Studio bietet eine Anzeige der Datenbankobjekte ähnlich der von SQL Server Management Studio. Mit dem Objekt-Explorer von SQL Server können Sie leichte Verwaltungs- und Designarbeiten für Datenbanken durchführen, darunter Bearbeiten von Tabellendaten, Vergleichen von Schemas und Ausführen von Abfragen mithilfe von Kontextmenüs direkt aus dem Objekt-Explorer von SQL Server. SSDT enthalten auch spezielle Projekttypen und Tools zum Entwickeln von SQL Server 2012 Analysis Services-, Reporting Services- und Integration Services Business Intelligence-Lösungen (BI, ehemals Business Intelligence Development Studio).
 
- ![SQL Server-Objekt-Explorer](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
+ ![SQL Server-Objekt-Explorer](../ide/media/vs2015-sqlobjectexplorer.png "|::ref18::|")
 
 ## <a name="deploying-your-finished-application"></a>Bereitstellen der fertigen Anwendung
  Wenn Ihre Anwendung für die Bereitstellung beim Kunden bereit ist, bietet Visual Studio die dazu benötigten Tools, unabhängig davon, ob Sie sie im Windows Store, auf einer Sharepoint-Website oder mit InstallShield- oder Windows Installer-Technologien bereitstellen möchten. Sie können auf alle Tools über die IDE zugreifen. Weitere Informationen finden Sie unter [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).

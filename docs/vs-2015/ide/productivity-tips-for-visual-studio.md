@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696292"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670311"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
      Abbildung 1: Fehler-Smarttags
 
-     ![Fehler-Smarttag-Vorschläge](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![Fehler: Smarttag-Vorschläge](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      In roten Feldern werden Möglichkeiten vorgeschlagen, den Code umzugestalten.
 
      Abbildung 2: Umgestaltungs-Smarttags
 
-     ![Refactoring-Smarttag-Vorschläge](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
+     ![Umgestalten: Smarttag-Vorschläge](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **Anzeigen und Bearbeiten der Definition eines Codeelements**. Sie können das Modul schnell anzeigen und bearbeiten, in dem ein Codeelement, wie ein Member, eine Variable oder eine lokale Variable, definiert ist.
 
@@ -117,7 +117,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
      Abbildung 3: Ergebnisliste für Schnellstart für `new project`
 
-     ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     ![Schnellstartergebnisse für „Neues Projekt“](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      **Schnellstart** zeigt unter anderem Links zum Dialogfeld **Neues Projekt**, zum Dialogfeld **Neues Element hinzufügen** und zur Projekt- und Projektmappenseite im Dialogfeld **Optionen** an. Ergebnisse des Schnellstarts können auch Projektdateien und Toolfenster enthalten.
 
@@ -126,7 +126,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
 
 - **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** zu finden ist, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.
 
-     ![Debuggingoptionen für Webbrowser auswählen](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![Auswählen von Debuggingoptionen für den Webbrowser](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **Legen Sie temporäre Haltepunkte fest**. Sie können einen temporären Haltepunkt in der aktuellen Zeile des Codes erstellen und gleichzeitig den Debugger starten. Wenn Sie diese Codezeile erreicht haben, gibt der Debugger Unterbrechungsmodus ein. Weitere Informationen finden Sie unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 

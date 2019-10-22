@@ -31,29 +31,29 @@
       href: change-log-visual-studio-tools-for-unity-mac.md
     - name: DevOps mit Unity-Apps
       href: application-lifecycle-management-alm-with-unity-apps.md
-- name: Visual C++ für plattformübergreifende Mobile-Entwicklung
+- name: Plattformübergreifende mobile Entwicklung mit C++
   items:
-    - name: Visual C++ für plattformübergreifende Mobile-Entwicklung
+    - name: Plattformübergreifende mobile Entwicklung mit C++
       href: visual-cpp-for-cross-platform-mobile-development.md
-    - name: Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
+    - name: Installieren der plattformübergreifenden mobile Entwicklung mit C++
       items:
-        - name: Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
+        - name: Installieren der plattformübergreifenden mobile Entwicklung mit C++
           href: install-visual-cpp-for-cross-platform-mobile-development.md
-        - name: Install and Configure Tools to Build using iOS
+        - name: Installieren und Konfigurieren von Tools zum Erstellen mit iOS
           href: install-and-configure-tools-to-build-using-ios.md
-    - name: Erstellen einer Android Native Activity-App
+    - name: Erstellen einer Android-App mit nativer Aktivität
       href: create-an-android-native-activity-app.md
     - name: Erstellen einer OpenGL ES-Anwendung für Android und iOS
       href: build-an-opengl-es-application-on-android-and-ios.md
-    - name: Importieren eines XCode-Projekts
+    - name: Importieren eines Xcode-Projekts
       href: import-an-xcode-project.md
-    - name: Synchronisieren von Änderungen zwischen XCode und Visual Studio
+    - name: Synchronisieren von Änderungen zwischen Xcode und Visual Studio
       href: sync-changes-between-xcode-and-visual-studio.md
-    - name: Beispiele für plattformübergreifende mobile Entwicklung
+    - name: Beispiele für die plattformübergreifende mobile Entwicklung
       href: cross-platform-mobile-development-examples.md
-    - name: Plattformübergreifende C++-Projekteigenschaften
+    - name: Referenz zur plattformübergreifenden Eigenschaftenseite für C++
       items:
-        - name: Plattformübergreifende C++-Projekteigenschaften
+        - name: Referenz zur plattformübergreifenden Eigenschaftenseite für C++
           href: cross-platform-prop-pages.md
         - name: Allgemeine Projekteigenschaften (Android C++)
           href: general-android-prop-page.md
