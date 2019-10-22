@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::AsynchronousCallIntoThread | Microsoft-Dokumentation
+title: 'IDebugApplicationThread110:: asynchronouscallintothread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,18 +11,18 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd9fe0b7177c95aec675faaaa85896c52b375084
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 595e73787421b5a5e9ca9407dd174c50451051c2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440556"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577412"
 ---
 # <a name="idebugapplicationthread110asynchronouscallintothread"></a>IDebugApplicationThread110::AsynchronousCallIntoThread
-Führt einen asynchronen Aufruf im Hauptthread verarbeitet.  
+Führt einen asynchronen-Rückruf für den Haupt Thread aus.  
   
 > [!IMPORTANT]
-> [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> Die [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird von PDM v 11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,19 +32,19 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
   
 #### <a name="parameters"></a>Parameter  
  `pptc`  
- Die [IDebugThreadCall-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md) aufzurufenden Objekts.  
+ Das aufzurufende [idebugthreadcallcenter-Schnittstellen](../../winscript/reference/idebugthreadcall-interface.md) Objekt.  
   
  `dwParam1`  
- Der erste Parameter des Aufrufs.  
+ Der erste Parameter des Aufrufes.  
   
  `dwParam1`  
- Der erste Parameter des Aufrufs.  
+ Der erste Parameter des Aufrufes.  
   
  `dwParam2`  
- Der zweite Parameter des Aufrufs.  
+ Der zweite Parameter des Aufrufes.  
   
  `dwParam3`  
- Der dritte Parameter des Aufrufs.  
+ Der dritte Parameter des Aufrufes.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication110-Schnittstelle](../../winscript/reference/idebugapplication110-interface.md)

@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 136ee925f1ee7505e7058eb643d7bac3a9222c06
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7901cf19b112b1a9d87dcae5bce594f5cc431d78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252360"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633355"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamisches Hinzufügen von Menü Elementen
-Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart` das Befehlsflag in einer Platzhalter-Schaltflächen Definition in der Visual Studio-Befehls Tabellen Datei (*vsct*-Datei) angeben und dann (im Code) die Anzahl der Menü Elemente definieren, die angezeigt und mit den Befehlen verarbeitet werden sollen. Wenn das VSPackage geladen wird, wird der Platzhalter durch die dynamischen Menü Elemente ersetzt.
+Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie in der Visual Studio-Befehls Tabellen Datei (*vsct*-Datei) das `DynamicItemStart` Befehlsflag für eine Platzhalter-Schaltflächen Definition angeben und dann (im Code) die Anzahl der Menü Elemente definieren, die angezeigt und mit den Befehlen verarbeitet werden sollen. Wenn das VSPackage geladen wird, wird der Platzhalter durch die dynamischen Menü Elemente ersetzt.
 
- Visual Studio verwendet dynamische Listen in der Liste der zuletzt **verwendeten** (MRU), in der die Namen von Dokumenten angezeigt werden, die vor kurzem geöffnet wurden, und die **Windows** -Liste, in der die Namen von Fenstern angezeigt werden, die derzeit geöffnet sind.   Das `DynamicItemStart` Flag für eine Befehls Definition gibt an, dass der Befehl ein Platzhalter ist, bis das VSPackage geöffnet ist. Wenn das VSPackage geöffnet ist, wird der Platzhalter durch 0 oder mehr Befehle ersetzt, die zur Laufzeit erstellt und der dynamischen Liste hinzugefügt werden. Möglicherweise ist es nicht möglich, die Position im Menü anzuzeigen, in der die dynamische Liste angezeigt wird, bis das VSPackage geöffnet ist.  Um die dynamische Liste aufzufüllen, fordert Visual Studio das VSPackage auf, einen Befehl mit einer ID zu suchen, deren erste Zeichen mit der ID des Platzhalters übereinstimmen. Wenn Visual Studio einen übereinstimmenden Befehl findet, wird der dynamische Liste der Name des Befehls hinzugefügt. Anschließend wird die ID erhöht und nach einem weiteren übereinstimmenden Befehl gesucht, der der dynamischen Liste hinzugefügt werden kann, bis keine dynamischen Befehle mehr vorhanden sind.
+ Visual Studio verwendet dynamische Listen in der Liste der zuletzt **verwendeten** (MRU), in der die Namen von Dokumenten angezeigt werden, die vor kurzem geöffnet wurden, und die **Windows** -Liste, in der die Namen von Fenstern angezeigt werden, die derzeit geöffnet sind.   Das `DynamicItemStart`-Flag in einer Befehls Definition gibt an, dass der Befehl ein Platzhalter ist, bis das VSPackage geöffnet ist. Wenn das VSPackage geöffnet ist, wird der Platzhalter durch 0 oder mehr Befehle ersetzt, die zur Laufzeit erstellt und der dynamischen Liste hinzugefügt werden. Möglicherweise ist es nicht möglich, die Position im Menü anzuzeigen, in der die dynamische Liste angezeigt wird, bis das VSPackage geöffnet ist.  Um die dynamische Liste aufzufüllen, fordert Visual Studio das VSPackage auf, einen Befehl mit einer ID zu suchen, deren erste Zeichen mit der ID des Platzhalters übereinstimmen. Wenn Visual Studio einen übereinstimmenden Befehl findet, wird der dynamische Liste der Name des Befehls hinzugefügt. Anschließend wird die ID erhöht und nach einem weiteren übereinstimmenden Befehl gesucht, der der dynamischen Liste hinzugefügt werden kann, bis keine dynamischen Befehle mehr vorhanden sind.
 
  In dieser exemplarischen Vorgehensweise wird gezeigt, wie das Startprojekt in einer Visual Studio-Projekt Mappe mit einem Befehl auf der **Projektmappen-Explorer** Symbolleiste festgelegt wird. Er verwendet einen Menü Controller, der über eine dynamische Dropdown Liste der Projekte in der aktiven Projekt Mappe verfügt. Um zu verhindern, dass dieser Befehl angezeigt wird, wenn keine Projekt Mappe geöffnet ist oder wenn die geöffnete Projekt Mappe nur ein Projekt enthält, wird das VSPackage nur geladen, wenn eine Projekt Mappe mehrere Projekte enthält.
 
@@ -30,7 +30,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl
 
-1. Erstellen Sie ein VSIX- `DynamicMenuItems`Projekt mit dem Namen.
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `DynamicMenuItems`.
 
 2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage hinzu, und nennen Sie Sie **dynamicmenu**. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
@@ -39,7 +39,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
 
 - Zwei Befehls Gruppen, eine mit dem Menü Controller und eine weitere, die die Menü Elemente in der Dropdown Liste enthält.
 
-- Ein Menü Element vom Typ`MenuController`
+- Ein Menü Element vom Typ `MenuController`
 
 - Zwei Schaltflächen, eine, die als Platzhalter für die Menü Elemente fungiert, und eine andere Schaltfläche, die das Symbol und die QuickInfo auf der Symbolleiste bereitstellt.
 
@@ -140,9 +140,9 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
     ```
 
 ## <a name="implement-the-dynamic-menu-command"></a>Implementieren des dynamischen Menübefehls
- Sie erstellen eine dynamische Menübefehls Klasse, die von <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>erbt. In dieser Implementierung gibt der Konstruktor ein Prädikat an, das für übereinstimmende Befehle verwendet werden soll. Sie müssen die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> -Methode überschreiben, um dieses Prädikat zum <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> Festlegen der-Eigenschaft zu verwenden, die den aufzurufenden Befehl identifiziert.
+ Sie erstellen eine dynamische Menübefehls Klasse, die von <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> erbt. In dieser Implementierung gibt der Konstruktor ein Prädikat an, das für übereinstimmende Befehle verwendet werden soll. Sie müssen die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>-Methode überschreiben, um mit diesem Prädikat die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>-Eigenschaft festzulegen, die den aufzurufenden Befehl identifiziert.
 
-1. Erstellen Sie eine C# neue Klassendatei mit dem Namen *DynamicItemMenuCommand.cs*, und fügen Sie eine Klasse mit dem Namen **dynamicitemmenucommand** hinzu, die von <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>erbt:
+1. Erstellen Sie eine C# neue Klassendatei mit dem Namen *DynamicItemMenuCommand.cs*, und fügen Sie eine Klasse mit dem Namen **dynamicitemmenucommand** hinzu, die von <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> erbt:
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -152,7 +152,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
 
     ```
 
-2. Fügen Sie die folgenden using-Anweisungen hinzu:
+2. Fügen Sie die folgenden using-Direktiven hinzu:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -167,7 +167,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
 
     ```
 
-4. Fügen Sie einen Konstruktor hinzu, der <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> vom-Konstruktor erbt und einen Befehls Handler und einen <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Handler angibt. Fügen Sie ein Prädikat für die Übereinstimmung mit dem Befehl hinzu:
+4. Fügen Sie einen Konstruktor hinzu, der vom <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>-Konstruktor erbt und einen Befehls Handler und einen <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Handler angibt. Fügen Sie ein Prädikat für die Übereinstimmung mit dem Befehl hinzu:
 
     ```csharp
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)
@@ -182,7 +182,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
     }
     ```
 
-5. Überschreiben <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> Sie die-Methode, sodass Sie das Matches-Prädikat <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> aufruft, und legt die-Eigenschaft fest:
+5. Überschreiben Sie die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>-Methode, sodass Sie das Match-Prädikat aufruft, und legt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A>-Eigenschaft fest:
 
     ```csharp
     public override bool DynamicItemMatch(int cmdId)
@@ -212,7 +212,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. Fügen Sie in der Datei *DynamicMenu.cs* die folgenden using-Anweisungen hinzu:
+2. Fügen Sie in der Datei *DynamicMenu.cs* die folgenden using-Direktiven hinzu:
 
     ```csharp
     using EnvDTE;
@@ -220,7 +220,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
     using System.ComponentModel.Design;
     ```
 
-3. Fügen Sie `DynamicMenu` in der-Klasse ein privates Feld **DTE2**hinzu.
+3. Fügen Sie in der `DynamicMenu`-Klasse ein privates Feld **DTE2**hinzu.
 
     ```csharp
     private DTE2 dte2;
@@ -232,7 +232,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
     private int rootItemId = 0;
     ```
 
-5. Fügen Sie im dynamicmenu-Konstruktor den Menübefehl hinzu. Im nächsten Abschnitt definieren wir den Befehls Handler, den `BeforeQueryStatus` Ereignishandler und das Match-Prädikat.
+5. Fügen Sie im dynamicmenu-Konstruktor den Menübefehl hinzu. Im nächsten Abschnitt definieren wir den Befehls Handler, den `BeforeQueryStatus`-Ereignishandler und das Match-Prädikat.
 
     ```csharp
     private DynamicMenu(Package package)
@@ -261,9 +261,9 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
     ```
 
 ## <a name="implement-the-handlers"></a>Implementieren von Handlern
- Wenn Sie dynamische Menü Elemente in einem Menü Controller implementieren möchten, müssen Sie den Befehl behandeln, wenn auf ein dynamisches Element geklickt wird. Außerdem müssen Sie die Logik implementieren, mit der der Zustand des Menü Elements festgelegt wird. Fügen Sie die Handler `DynamicMenu` der-Klasse hinzu.
+ Wenn Sie dynamische Menü Elemente in einem Menü Controller implementieren möchten, müssen Sie den Befehl behandeln, wenn auf ein dynamisches Element geklickt wird. Außerdem müssen Sie die Logik implementieren, mit der der Zustand des Menü Elements festgelegt wird. Fügen Sie die Handler der `DynamicMenu`-Klasse hinzu.
 
-1. Um den Befehl **Set Startup Project** zu implementieren, fügen Sie den **oninvokeddynamicitem** -Ereignishandler hinzu. Er sucht nach dem Projekt, dessen Name mit dem Text des aufgerufenen Befehls identisch ist, und legt ihn als Startprojekt fest, indem der absolute Pfad in der <xref:EnvDTE.SolutionBuild.StartupProjects%2A> -Eigenschaft festgelegt wird.
+1. Um den Befehl **Set Startup Project** zu implementieren, fügen Sie den **oninvokeddynamicitem** -Ereignishandler hinzu. Er sucht nach dem Projekt, dessen Name mit dem Text des aufgerufenen Befehls identisch ist, und legt ihn als Startprojekt fest, indem der absolute Pfad in der <xref:EnvDTE.SolutionBuild.StartupProjects%2A>-Eigenschaft festgelegt wird.
 
     ```csharp
     private void OnInvokedDynamicItem(object sender, EventArgs args)
@@ -286,7 +286,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie `DynamicItemStart
     }
     ```
 
-2. Fügen Sie `OnBeforeQueryStatusDynamicItem` den Ereignishandler hinzu. Dies ist der Handler, der vor `QueryStatus` einem-Ereignis aufgerufen wird. Es bestimmt, ob das Menü Element ein "echtes" Element ist, d. h. nicht das Platzhalter Element und ob das Element bereits aktiviert ist (was bedeutet, dass das Projekt bereits als Startprojekt festgelegt ist).
+2. Fügen Sie den `OnBeforeQueryStatusDynamicItem`-Ereignishandler hinzu. Dies ist der Handler, der vor einem `QueryStatus`-Ereignis aufgerufen wird. Es bestimmt, ob das Menü Element ein "echtes" Element ist, d. h. nicht das Platzhalter Element und ob das Element bereits aktiviert ist (was bedeutet, dass das Projekt bereits als Startprojekt festgelegt ist).
 
     ```csharp
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)
@@ -331,7 +331,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Legen Sie fest, dass das VSPackage nur geladen wird, wenn eine Projekt Mappe mehrere Projekte enthält.
- Da der Befehl **Set Startup Project** nur dann sinnvoll ist, wenn die aktive Projekt Mappe mehr als ein Projekt enthält, können Sie für Ihr VSPackage nur in diesem Fall die automatische Auslastung festlegen. Sie verwenden <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> zusammen mit dem UI- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>Kontext. Fügen Sie in der Datei *DynamicMenuPackage.cs* die folgenden Attribute der dynamicmenupackage-Klasse hinzu:
+ Da der Befehl **Set Startup Project** nur dann sinnvoll ist, wenn die aktive Projekt Mappe mehr als ein Projekt enthält, können Sie für Ihr VSPackage nur in diesem Fall die automatische Auslastung festlegen. Sie verwenden <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> zusammen mit dem UI-Kontext <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. Fügen Sie in der Datei *DynamicMenuPackage.cs* die folgenden Attribute der dynamicmenupackage-Klasse hinzu:
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]

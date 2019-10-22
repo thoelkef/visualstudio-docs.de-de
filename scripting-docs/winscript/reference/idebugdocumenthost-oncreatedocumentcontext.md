@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthost:: Oncreatedocumentcontext | Microsoft-Dokumentation'
+title: 'Idebugdocumerthost:: onkreatedocumentcontext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdfa64f66288cba47dec7c498db15238e55f954
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971094"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569113"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Benachrichtigt den Host, ein neuen Dokumentkontext erstellt wird und der Host kann optional einen unbekannten für den neuen Kontext steuernden zurückgeben.  
+Benachrichtigt den Host, dass ein neuer Dokument Kontext erstellt wird, und ermöglicht es dem Host, optional ein kontrollierendes unbekanntes für den neuen Kontext zurückzugeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT OnCreateDocumentContext(
   
 #### <a name="parameters"></a>Parameter  
  `ppunkOuter`  
- [out] Ein Objekt, das den neuen Kontext steuert.  
+ vorgenommen Ein-Objekt, das den neuen Kontext steuert.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,10 +45,10 @@ HRESULT OnCreateDocumentContext(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_NOTIMPL`|Der Host ist ein steuerndes Objekt nicht bereit.|  
+|`E_NOTIMPL`|Der Host stellt kein steuerndes Objekt bereit.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode ermöglicht den Host, den bereitgestellten Helper dokumentenkontexte neue Funktionalität hinzufügen. Diese Methode zurückgeben kann **E_NOTIMPL** oder ein null-äußeren Objekt, in dem Fall der Aufrufer dafür verantwortlich ist, den Kontext zu erstellen.  
+ Diese Methode ermöglicht es dem Host, den von Hilfsprogrammen bereitgestellten Dokument Kontexten neue Funktionen hinzuzufügen. Diese Methode gibt möglicherweise **E_NOTIMPL** oder ein äußeres NULL-Objekt zurück. in diesem Fall ist der Aufrufer für die Erstellung des Kontexts verantwortlich.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)

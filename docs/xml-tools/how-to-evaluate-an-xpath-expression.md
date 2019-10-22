@@ -1,56 +1,56 @@
 ---
-title: Auswerten eines XPath-Ausdrucks während des Debuggens
+title: Auswerten eines XPath-Ausdrucks beim Debuggen
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002098"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654271"
 ---
-# <a name="evaluate-xpath-expressions"></a>Auswerten von XPath-Ausdrücken
+# <a name="evaluate-xpath-expressions"></a>XPath-Ausdrücke auswerten
 
-Sie können die XPath-Ausdrücke auswerten, indem Sie mit der **Schnellüberwachung** Fenster während des Debuggens. Der XPath-Ausdruck muss gemäß der W3C-Empfehlung für XPath 1.0 gültig sein. Der aktuelle XSLT-Kontext (d. h. die `self::node()` Knoten in der **"lokal"** Fenster) stellt den Auswertungskontext für den XPath-Ausdruck.
+Sie können XPath-Ausdrücke auswerten, indem Sie das Fenster **schnell Überwachung** während des Debuggens verwenden. Der XPath-Ausdruck muss gemäß der W3C-Empfehlung für XPath 1.0 gültig sein. Der aktuelle XSLT-Kontext (d. h. der `self::node()` Knoten **im Fenster Lokal** ) stellt den Auswertungs Kontext für den XPath-Ausdruck bereit.
 
-Wenn einen XPath-Ausdruck ausgewertet werden:
+Beim Auswerten eines XPath-Ausdrucks:
 
 - Integrierte XPath-Funktionen werden unterstützt.
 
 - Integrierte XSLT-Funktionen und benutzerdefinierte Funktionen werden nicht unterstützt.
 
 > [!NOTE]
-> XSLT-Debuggen ist nur verfügbar, in der Enterprise Edition von Visual Studio.
+> Das XSLT-Debuggen ist nur in der Enterprise Edition von Visual Studio verfügbar.
 
 ## <a name="evaluate-an-xpath-expression"></a>Auswerten eines XPath-Ausdrucks
 
-Im folgenden Verfahren wird die *unten average.xsl* und *books.xml* Dateien aus dem [Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) Seite.
+Im folgenden Verfahren werden die Dateien *below-average. xsl* und *Books. XML* aus der Seite Exemplarische Vorgehens [Weise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) verwendet.
 
 1. Fügen Sie einen Haltepunkt am `xsl:if`-Starttag ein.
 
-2. Wählen Sie zum Starten des Debuggens **XML** > **XSLT Debuggen starten** in der Menüleiste (oder drücken Sie **Alt**+**F5** ).
+2. Um das Debuggen zu starten, wählen Sie in der Menüleiste die Optionen **XML**  > **XSLT-Debugging starten** aus (oder drücken Sie **alt** +**F5**).
 
    Der Debugger wird gestartet und am `xsl:if`-Tag unterbrochen.
 
-3. Mit der rechten Maustaste, und wählen Sie **Schnellüberwachung**.
+3. Klicken Sie mit der rechten Maustaste auf **schnell Überwachung**.
 
-   Die **Schnellüberwachung** Fenster wird geöffnet.
+   Das Fenster **schnell Überwachung** wird geöffnet.
 
-4. Geben Sie `./price/text()` in die **Ausdruck** Feld der **Schnellüberwachung** Dialogfeld ein, und wählen Sie dann **neu auswerten**.
+4. Geben Sie im Dialogfeld **schnell Überwachung** `./price/text()` in das Feld **Ausdruck** ein, und wählen Sie dann **neu auswerten**aus.
 
-   Der Preis für den aktuellen Buchknoten angezeigt wird, der **Wert** Feld.
+   Der Preis für den aktuellen Buch Knoten wird im Feld **Wert** angezeigt.
 
-   ![Auswerten eines XPath-Ausdrucks, in dem Fenster Schnellüberwachung](media/quickwatch-price.png)
+   ![Auswerten eines XPath-Ausdrucks im Fenster "schnell Überwachung"](media/quickwatch-price.png)
 
-5. Ändern Sie die XPath-Ausdruck zur `./price/text() < $bookAverage` , und klicken Sie auf **neu auswerten**.
+5. Ändern Sie den XPath-Ausdruck in `./price/text() < $bookAverage` und klicken Sie dann auf **neu auswerten**.
 
-   Die **Wert** Feld zeigt, dass der XPath-Ausdruck ergibt `true`.
+   Im Feld **Wert** wird angezeigt, dass der XPath-Ausdruck zu `true` ausgewertet wird.
 
 ## <a name="see-also"></a>Siehe auch
 

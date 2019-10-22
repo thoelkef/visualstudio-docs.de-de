@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925480"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450402"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Vorgehensweise beim Debuggen von UWP-apps in Visual Studio
 
@@ -75,13 +75,13 @@ Weitere Informationen zur Prozess Lebensdauer-Verwaltung und Hintergrundaufgaben
 
      Erweitern C++ Sie für Projekte die Option **Konfigurations Eigenschaften** , und wählen Sie dann **Debugging**aus.
 
-3. Führen Sie eines der folgenden Verfahren aus:
+3. Führen Sie einen der folgenden Schritte aus:
 
     - Wählen Sie für Visual C#- und Visual Basic-Projekte **Eigenen Code zunächst nicht starten sondern debuggen**aus.
 
-         ![&#35;C&#47;VB-Debug-Start Anwendungs Eigenschaft](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![C&#35;&#47;VB-Debug-Start Anwendungs Eigenschaft](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Wählen Sie C++ für visuelle Projekte in der Liste **Anwendung starten** die Option **Nein** aus.
+    - Wählen C++ Sie für Projekte in der Liste **Anwendung starten** die Option **Nein** aus.
 
          ![Debug&#43;&#43;&#47;-Eigenschaft der C-VB-Start Anwendung](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

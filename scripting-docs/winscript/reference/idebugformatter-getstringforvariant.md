@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVariant | Microsoft-Dokumentation
+title: 'Idebugformatter:: getstringforvariant | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 901bf9648d4d16faf7386b528cc3fd877070a5b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f703396190f1fb7791306ee9e389b676e749f8f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996846"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576370"
 ---
 # <a name="idebugformattergetstringforvariant"></a>IDebugFormatter::GetStringForVariant
-Gibt eine Zeichenfolge, die den angegebenen VARIANT-Wert darstellt.  
+Gibt eine Zeichenfolge zurück, die den angegebenen Variant-Wert darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,13 +39,13 @@ HRESULT GetStringForVariant(
   
 #### <a name="parameters"></a>Parameter  
  `pvar`  
- [in] Variant-Wert als Zeichenfolge dargestellt.  
+ in Variant, die als Zeichenfolge dargestellt werden soll.  
   
  `nRadix`  
- [in] Basis für numerische Werte verwendet.  
+ in Für numerische Werte zu verwendende Radix-Werte.  
   
  `pbstrValue`  
- [out] Zeichenfolgendarstellung `pvar`.  
+ vorgenommen Zeichenfolge, die `pvar` darstellt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -55,7 +55,7 @@ HRESULT GetStringForVariant(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt eine Zeichenfolge, die den angegebenen variant-Wert darstellt.  
+ Diese Methode gibt eine Zeichenfolge zurück, die den angegebenen Variant-Wert darstellt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugFormatter-Schnittstelle](../../winscript/reference/idebugformatter-interface.md)

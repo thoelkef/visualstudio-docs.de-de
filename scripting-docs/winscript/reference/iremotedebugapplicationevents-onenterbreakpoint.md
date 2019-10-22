@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnEnterBreakPoint | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationevents:: onenterbreakpoint | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 123476100076811534343763f0e9675a90fdea16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad7b0dc3e4b6cd7e8779208121d7464e83e7bb3f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934647"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571986"
 ---
 # <a name="iremotedebugapplicationeventsonenterbreakpoint"></a>IRemoteDebugApplicationEvents::OnEnterBreakPoint
-Behandelt ein Ereignis für die Eingabe eines Haltepunkts.  
+Behandelt ein Ereignis für die Eingabe eines Breakpoints.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT OnEnterBreakPoint(
   
 #### <a name="parameters"></a>Parameter  
  `prdat`  
- [in] Der Thread der Anwendung, der den Haltepunkt eingegeben haben.  
+ in Der Anwendungs Thread, der in den Breakpoint eingetreten ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT OnEnterBreakPoint(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode behandelt ein Ereignis für die Eingabe eines Haltepunkts.  
+ Diese Methode behandelt ein Ereignis für die Eingabe eines Breakpoints.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)

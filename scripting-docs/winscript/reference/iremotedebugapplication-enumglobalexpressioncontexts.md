@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Microsoft Docs
+title: 'Iremotedebuapplication:: enumglobalexpressionkontexte | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92ab12dc9944c328e744c7f39252facb8e91a3f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 594dc2c09a76cd6027a9abcb38b5951768cceef9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944268"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576826"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
-Listet die globale ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausführen.  
+Listet die globalen Ausdrucks Kontexte für alle Sprachen auf, die in dieser Anwendung ausgeführt werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Parameter  
  `ppedec`  
- [out] Ein Enumerator, der enthält die globalen ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausführen.  
+ vorgenommen Enumerator, der die globalen Ausdrucks Kontexte für alle Sprachen auflistet, die in dieser Anwendung ausgeführt werden.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT EnumGlobalExpressionContexts(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode listet die globalen anwendungsausdrücken Kontexten für alle Sprachen, die in dieser Anwendung ausführen.  
+ Diese Methode listet die globalen Ausdrucks Kontexte für alle Sprachen auf, die in dieser Anwendung ausgeführt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e968879e10456137033f53d57f7351de5522fe46
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5b7d17b90ab195e41a5b3dacb3b2ab4985dce245
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923779"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448747"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 SAL ist die Sprache der Microsoft-Quell Code Anmerkung. Mithilfe von Quell Code Anmerkungen können Sie die Absicht hinter dem Code explizit machen. Diese Anmerkungen ermöglichen auch automatisierte statische Analysetools, um Ihren Code genauer zu analysieren, mit deutlich weniger falsch positiven und falschen negativen Werten.

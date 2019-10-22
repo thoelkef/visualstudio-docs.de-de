@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870764"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681628"
 ---
 # <a name="assembly-information-dialog-box"></a>Assemblyinformationen (Dialogfeld)
 
@@ -61,6 +61,9 @@ Gibt an, welche Kultur die Assembly unterstützt. Entspricht <xref:System.Resour
 
 **Assembly COM-sichtbar machen**\
 Gibt an, ob Typen in der Assembly für COM verfügbar sind. Entspricht <xref:System.Runtime.InteropServices.ComVisibleAttribute>
+
+> [!NOTE]
+> Weitere Informationen zum Festlegen dieser Eigenschaften beim Generieren eines NuGet-Pakets in einer .NET Framework-Klassenbibliothek finden Sie unter [Konfigurieren der Projekteigenschaften für das Paket](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
 ## <a name="see-also"></a>Siehe auch
 

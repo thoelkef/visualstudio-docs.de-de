@@ -12,39 +12,39 @@ f1_keywords:
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a5272d74e1987cd7838932182e7e59c9c53f21
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923950"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445703"
 ---
 # <a name="intrinsic-functions"></a>Systeminterne Funktionen
-Ein Ausdruck in SAL kann ein C/C++ Ausdruck sein, vorausgesetzt, dass es sich um einen Ausdruck handelt, der keine Nebeneffekte hat – z. b. + +,--, und Funktionsaufrufe haben alle Nebeneffekte in diesem Kontext.  SAL bietet jedoch einige Funktions ähnliche Objekte und einige reservierte Symbole, die in SAL-Ausdrücken verwendet werden können. Diese werden als intrinsische *Funktionen*bezeichnet.
+Ein Ausdruck in SAL kann ein C/C++ Ausdruck sein, vorausgesetzt, dass es sich um einen Ausdruck handelt, der keine Nebeneffekte hat – z. b. + +,--, und Funktionsaufrufe haben alle Nebeneffekte in diesem Kontext.  SAL bietet jedoch einige Funktions ähnliche Objekte und einige reservierte Symbole, die in SAL-Ausdrücken verwendet werden können. Diese werden als *intrinsische Funktionen*bezeichnet.
 
 ## <a name="general-purpose"></a>Allgemeine Verwendung
 Die folgenden Anmerkungen in der instraninsic-Funktion bieten Allgemeines Hilfsprogramm für SAL.
 
 |Anmerkung|Beschreibung|
 |----------------|-----------------|
-|`_Curr_`|Ein Synonym für das Objekt, das gerade mit Anmerkungen versehen wird.  Wenn die `_At_` -Anmerkung verwendet wird, `_Curr_` ist der gleiche wie der erste Parameter für `_At_`.  Andernfalls ist es der-Parameter oder die gesamte Funktion/der gesamte Rückgabewert, mit der die Anmerkung lexikalisch verknüpft ist.|
+|`_Curr_`|Ein Synonym für das Objekt, das gerade mit Anmerkungen versehen wird.  Wenn die `_At_` Anmerkung verwendet wird, ist `_Curr_` identisch mit dem ersten Parameter für `_At_`.  Andernfalls ist es der-Parameter oder die gesamte Funktion/der gesamte Rückgabewert, mit der die Anmerkung lexikalisch verknüpft ist.|
 |`_Inexpressible_(expr)`|Drückt eine Situation aus, bei der die Größe eines Puffers zu komplex ist, indem ein Anmerkung-Ausdruck verwendet wird, z. –. wenn er durch Scannen eines Eingabe Datasets und anschließendes zählen ausgewählter Elemente berechnet wird.|
-|`_Nullterm_length_(param)`|`param`die Anzahl der Elemente im Puffer bis zu einem NULL-Terminator. Sie kann auf einen beliebigen Puffer eines nicht aggregierten, nicht-void-Typs angewendet werden.|
-|`_Old_(expr)`|Wenn Sie in Vorbedingung ausgewertet wird `_Old_` , wird der Eingabe `expr`Wert von zurückgegeben.  Wenn Sie in der nach Bedingung ausgewertet wird, wird der Wert `expr` zurückgegeben, da er in Vorbedingung ausgewertet worden wäre.|
-|`_Param_(n)`|Der `n`Th-Parameter für eine Funktion, der von 1 `n`bis, `n` und eine ganzzahlige ganzzahlige Konstante ist. Wenn der-Parameter den Namen hat, ist diese Anmerkung identisch mit dem Zugriff auf den Parameter über den Namen. **Hinweis:** `n` kann auf die Positions Parameter verweisen, die durch Auslassungs Zeichen definiert werden, oder Sie kann in Funktionsprototypen verwendet werden, in denen keine Namen verwendet werden.|
-|`return`|Das C/C++ reserved- `return` Schlüsselwort kann in einem SAL-Ausdruck verwendet werden, um den Rückgabewert einer Funktion anzugeben.  Der Wert ist nur im Post-Zustand verfügbar. Es handelt sich hierbei um einen Syntax Fehler, der im vorab Zustand verwendet werden kann.|
+|`_Nullterm_length_(param)`|`param` ist die Anzahl der Elemente im Puffer bis einschließlich eines NULL-Terminator. Sie kann auf einen beliebigen Puffer eines nicht aggregierten, nicht-void-Typs angewendet werden.|
+|`_Old_(expr)`|Wenn Sie in Vorbedingung ausgewertet wird, gibt `_Old_` den Eingabe Wert `expr` zurück.  Wenn Sie in der nach Bedingung ausgewertet wird, wird der Wert `expr` zurückgegeben, da dieser in Vorbedingung ausgewertet worden wäre.|
+|`_Param_(n)`|Der `n`th-Parameter für eine Funktion, der von 1 bis `n` und `n` eine ganzzahlige ganzzahlige Konstante ist. Wenn der-Parameter den Namen hat, ist diese Anmerkung identisch mit dem Zugriff auf den Parameter über den Namen. **Hinweis:** `n` können auf die Positions Parameter verweisen, die durch Auslassungs Zeichen definiert werden, oder Sie können in Funktionsprototypen verwendet werden, bei denen keine Namen verwendet werden.|
+|`return`|Das C/C++ reserved-Schlüsselwort `return` kann in einem SAL-Ausdruck verwendet werden, um den Rückgabewert einer Funktion anzugeben.  Der Wert ist nur im Post-Zustand verfügbar. Es handelt sich hierbei um einen Syntax Fehler, der im vorab Zustand verwendet werden kann.|
 
 ## <a name="string-specific"></a>Spezifisches für Zeichenfolgen
-Die folgenden intrinsischen Funktions Anmerkungen ermöglichen die Bearbeitung von Zeichen folgen. Alle vier dieser Funktionen dienen dem gleichen Zweck: zum Zurückgeben der Anzahl von Elementen des Typs, der vor einem NULL-Terminator gefunden wurde. Die Unterschiede sind die Arten von Daten in den Elementen, auf die verwiesen wird. Beachten Sie, dass Sie die `_Nullterm_length_(param)` -Anmerkung aus dem vorherigen Abschnitt verwenden können, wenn Sie die Länge eines null-terminierten Puffers angeben möchten, der nicht aus Zeichen besteht.
+Die folgenden intrinsischen Funktions Anmerkungen ermöglichen die Bearbeitung von Zeichen folgen. Alle vier dieser Funktionen dienen dem gleichen Zweck: zum Zurückgeben der Anzahl von Elementen des Typs, der vor einem NULL-Terminator gefunden wurde. Die Unterschiede sind die Arten von Daten in den Elementen, auf die verwiesen wird. Beachten Sie Folgendes: Wenn Sie die Länge eines null-terminierten Puffers angeben möchten, der nicht aus Zeichen besteht, verwenden Sie die `_Nullterm_length_(param)` Anmerkung aus dem vorherigen Abschnitt.
 
 |Anmerkung|Beschreibung|
 |----------------|-----------------|
-|`_String_length_(param)`|`param`die Anzahl der Elemente in der Zeichenfolge bis zu einem NULL-Terminator. Diese Anmerkung ist für Zeichen folgen Typen reserviert.|
-|`strlen(param)`|`param`die Anzahl der Elemente in der Zeichenfolge bis zu einem NULL-Terminator. Diese Anmerkung ist für die Verwendung in Zeichen Arrays reserviert und ähnelt der C-Lauf Zeitfunktion " [strinlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)".|
-|`wcslen(param)`|`param`die Anzahl der Elemente in der Zeichenfolge bis zu einem NULL-Terminator (ohne Angabe). Diese Anmerkung ist für die Verwendung von breit Zeichen Arrays reserviert und ähnelt der C-Lauf Zeitfunktion [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`_String_length_(param)`|`param` ist die Anzahl der Elemente in der Zeichenfolge bis zu einem NULL-Terminator. Diese Anmerkung ist für Zeichen folgen Typen reserviert.|
+|`strlen(param)`|`param` ist die Anzahl der Elemente in der Zeichenfolge bis zu einem NULL-Terminator. Diese Anmerkung ist für die Verwendung in Zeichen Arrays reserviert und ähnelt der C-Lauf Zeitfunktion " [strinlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)".|
+|`wcslen(param)`|`param` ist die Anzahl der Elemente in der Zeichenfolge bis zu einem NULL-Terminator (ohne Angabe). Diese Anmerkung ist für die Verwendung von breit Zeichen Arrays reserviert und ähnelt der C-Lauf Zeitfunktion [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,32 +12,30 @@ helpviewer_keywords:
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe77e8cb0f21789c7311d9c337b3b973c4dd44f9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584438"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645505"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Gewusst wie: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Kommentarformen zum Hinzufügen von Anmerkungen für Klassendiagramme verwenden. Eine Kommentarform verfügt über eine Eigenschaft, **Text**, in die Sie Text eingeben können. Kommentarformen existieren nur auf der Diagrammoberfläche und nicht im Code.  
-  
- Ein Kommentar befindet sich in der Diagrammansicht der Klasse im **Klassen-Designer**; wenn Sie ein zweites Klassendiagramm im selben Projekt öffnen, sind Kommentare, die Sie in der ersten Ansicht erstellt haben, nicht sichtbar. Wenn Sie ein Diagramm löschen, werden auch alle in diesem Diagramm enthaltenen Kommentare gelöscht.  
-  
- Sie können die Größe einer Kommentarform ändern, jedoch nicht andere Aspekte der Darstellung wie Hintergrundfarbe, Schriftart und -größe.  
-  
-### <a name="to-add-a-comment"></a>So fügen Sie ein Kommentar hinzu  
-  
-1. Ziehen Sie ein Kommentar aus der **Klassen-Designer-Toolbox** in das Klassendiagramm.  
-  
-2. Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)   
- [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md)   
- [Vorgehensweise: Anpassen von Klassendiagrammen](../ide/how-to-customize-class-diagrams-class-designer.md)
+Sie können Kommentarformen zum Hinzufügen von Anmerkungen für Klassendiagramme verwenden. Eine Kommentarform verfügt über eine Eigenschaft, **Text**, in die Sie Text eingeben können. Kommentarformen existieren nur auf der Diagrammoberfläche und nicht im Code.
+
+ Ein Kommentar befindet sich in der Diagrammansicht der Klasse im **Klassen-Designer**; wenn Sie ein zweites Klassendiagramm im selben Projekt öffnen, sind Kommentare, die Sie in der ersten Ansicht erstellt haben, nicht sichtbar. Wenn Sie ein Diagramm löschen, werden auch alle in diesem Diagramm enthaltenen Kommentare gelöscht.
+
+ Sie können die Größe einer Kommentarform ändern, jedoch nicht andere Aspekte der Darstellung wie Hintergrundfarbe, Schriftart und -größe.
+
+### <a name="to-add-a-comment"></a>So fügen Sie ein Kommentar hinzu
+
+1. Ziehen Sie ein Kommentar aus der **Klassen-Designer-Toolbox** in das Klassendiagramm.
+
+2. Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.
+
+## <a name="see-also"></a>Siehe auch
+ [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) Gewusst [wie: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)

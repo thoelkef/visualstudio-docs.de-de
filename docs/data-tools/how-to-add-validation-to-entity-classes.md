@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 139833cc427349cb0fd820877c8cad101a647c81
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925610"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648411"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen
 Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass die in Datenobjekte eingegebenen Werte den Einschränkungen eines Objektschemas oder den bestehenden Regeln für die Anwendung entsprechen. Es dient der Fehlervermeidung, Daten vor dem Senden von Aktualisierungen an zugrunde liegende Datenbanken auf Gültigkeit zu überprüfen. Dadurch wird auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank verringert.
@@ -106,7 +106,7 @@ Neben der Überprüfung von Werten während Änderungen können Sie auch Daten a
 
     Für C#-Projekte:
 
-    Da C# -Projekte Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partielle `UpdateCLASSNAME` -Methode zu erstellen. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Update-Methode für die Klasse, der Sie die Validierung hinzufügen möchten. Der folgende Code ähnelt dem Code, der generiert wird, wenn Sie `UpdateCLASSNAME` eine partielle Methode auswählen:
+    Da C# -Projekte Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partielle `UpdateCLASSNAME`-Methode zu erstellen. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Update-Methode für die Klasse, der Sie die Validierung hinzufügen möchten. Der folgende Code ähnelt dem Code, der generiert wird, wenn Sie eine `UpdateCLASSNAME` partielle Methode auswählen:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

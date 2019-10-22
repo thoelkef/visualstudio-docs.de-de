@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnStateChange | Microsoft-Dokumentation
+title: 'Iactivescriptsite:: OnStateChange | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad5719a93aec2940f1180a6ff45a028b937b0dfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba8441d36f193f287dfec7406d5f136280c5a42e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992536"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570152"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
-Informiert den Host, dass die Skript-Engine Status geändert hat.  
+Benachrichtigt den Host, dass die Skript-Engine den Status geändert hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>Parameter  
  `ssScriptState`  
- [in] Wert, der neue Status des Skripts angibt. Finden Sie unter den [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) -Methode für eine Beschreibung der Zustände.  
+ in Der-Wert, der den neuen Skript Zustand angibt. Eine Beschreibung der Zustände finden Sie unter der [IActiveScript:: getscriptstate](../../winscript/reference/iactivescript-getscriptstate.md) -Methode.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt bei Erfolg `S_OK` zurück.  

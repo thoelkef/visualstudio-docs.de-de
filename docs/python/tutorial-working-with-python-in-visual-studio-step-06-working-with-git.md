@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810482"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289720"
 ---
 # <a name="step-6-work-with-git"></a>Schritt 6: Arbeiten mit Git
 
@@ -56,7 +56,7 @@ In diesem Artikel erhalten Sie einen allgemeinen Überblick über das Erstellen 
 
 Eine kurze exemplarische Vorgehensweise für das Erstellen eines Projekts über ein Git-Remoterepository finden Sie unter [Schnellstart: Klonen eines Repositorys in Python-Code in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Ein ausführlicheres Tutorial finden Sie unter [Get started with Git and Azure Repos (Einstieg in Git und Azure Repos)](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio). Dort lernen Sie das Behandeln von Mergekonflikten, das Prüfen von Code mit Pull Requests, das Ausführen von Rebases und das Cherrypicking von Änderungen zwischen Branches kennen.
+Ein ausführlicheres Tutorial finden Sie unter [Get started with Git and Azure Repos (Einstieg in Git und Azure Repos)](/azure/devops/repos/git/gitquickstart). Dort lernen Sie das Behandeln von Mergekonflikten, das Prüfen von Code mit Pull Requests, das Ausführen von Rebases und das Cherrypicking von Änderungen zwischen Branches kennen.
 
 ## <a name="tutorial-review"></a>Review des Tutorials
 

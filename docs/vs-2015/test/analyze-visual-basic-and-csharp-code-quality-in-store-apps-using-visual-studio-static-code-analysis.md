@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416640"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660735"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität von Visual Basic- und C#-Code in Store-Apps mit der statischen Codeanalyse von Visual Studio
 
@@ -55,16 +55,16 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    Die Projektmappe wird kompiliert und die Codeanalyse ausgeführt. Die Ergebnisse werden im Codeanalysefenster angezeigt.
 
-   ![Codeanalysefenster](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![Fenster "Code Analyse"](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
  Um eine bestimmte Warnung zu analysieren, klicken Sie im Codeanalysefenster auf den Titel der Warnung. Die Warnung wird erweitert, um ausführliche Informationen zum Problem anzuzeigen.
 
- ![Erweiterte Codeanalysewarnung](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
+ ![Erweiterte Code Analyse Warnung](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
  Wenn Sie eine Warnung erweitern, wird die Codezeile, die die Warnung verursacht hat im Code-Editor von Visual Studio hervorgehoben.
 
- ![Textmarkierung für Codeanalyse](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
+ ![Code Analyse, Hervorhebung von Text](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
  Nachdem Sie die Ursache des Problems verstanden haben, können Sie es im Code beheben. Wiederholen Sie die Codeanalyse, um sicherzustellen, dass die Warnung nicht mehr im Codeanalysefenster angezeigt wird und dass die Lösung des Problems keine neuen Warnungen ausgelöst hat.
 
@@ -91,7 +91,7 @@ Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ## <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
  Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.
 
- ![Fenster zum Suchen und Filtern der Codeanalyse](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Suchen und Filtern des Code Analyse Fensters](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  In [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] haben alle Codeanalysewarnungen den Schweregrad der Warnung.
 

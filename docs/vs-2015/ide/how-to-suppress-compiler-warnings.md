@@ -1,28 +1,28 @@
 ---
-title: 'Vorgehensweise: Unterdrücken von Compilerwarnungen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Unterdrücken von Compilerwarnungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695381"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670641"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Vorgehensweise: Unterdrücken von Compilerwarnungen
+# <a name="how-to-suppress-compiler-warnings"></a>Gewusst wie: Unterdrücken von Compiler-Warnungen
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können ein Buildprotokoll von Clutter befreien, indem Sie angeben, dass eine oder mehrere Arten von Compilerwarnungen nicht enthalten sein sollen. Beispielsweise können Sie diese Technik verwenden, um einige, aber nicht alle Informationen zu überprüfen, die automatisch erzeugt werden, wenn Sie die Ausführlichkeit des Buildprotokolls auf „Normal“, „Detailliert“ oder „Diagnose“ festlegen. Weitere Informationen zur Ausführlichkeit erhalten Sie im Artikel [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
+Sie können ein Buildprotokoll von Clutter befreien, indem Sie angeben, dass eine oder mehrere Arten von Compilerwarnungen nicht enthalten sein sollen. Beispielsweise können Sie diese Technik verwenden, um einige, aber nicht alle Informationen zu überprüfen, die automatisch erzeugt werden, wenn Sie die Ausführlichkeit des Buildprotokolls auf „Normal“, „Detailliert“ oder „Diagnose“ festlegen. Weitere Informationen zur Ausführlichkeit finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>So unterdrücken Sie bestimmte Warnungen für Visual C# oder F\#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>So unterdrücken Sie bestimmte Warnungen C# für Visual oder F \#
 
 1. Wählen Sie im **Projektmappen-Explorer** das Projekt aus, in dem Sie Warnungen unterdrücken möchten.
 
@@ -58,7 +58,7 @@ Sie können bestimmte Compilerwarnungen für Visual Basic unterdrücken, indem S
 
 2. Wählen Sie in der Menüleiste **Projekt**, **Projekt entladen** aus.
 
-3. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten**_Projektname_**.vbproj** aus.
+3. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten**_Projektname_ **.vbproj** aus.
 
     Die Projektdatei wird im Code-Editor geöffnet.
 
@@ -111,5 +111,5 @@ Sie können bestimmte Compilerwarnungen für Visual Basic unterdrücken, indem S
 ## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)
-- [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)

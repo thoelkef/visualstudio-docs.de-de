@@ -1,5 +1,5 @@
 ---
-title: SCRIPTTHREADSTATE-Enumeration | Microsoft-Dokumentation
+title: Scriptthreadstate-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc4ef840310c27ccbadce2ed4f632514b555ef98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840186"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575655"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE-Enumeration
-Gibt den Zustand eines Threads in einer Skript-Engine an. Diese Enumeration wird verwendet, durch die [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) Methode.  
+Gibt den Status eines Threads in einer Skript-Engine an. Diese Enumeration wird von der [IActiveScript:: getscriptthreadstate](../../winscript/reference/iactivescript-getscriptthreadstate.md) -Methode verwendet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,8 +40,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Angegebenen Thread ist derzeit nicht zum Warten einer skriptgesteuerten Ereignis Skripttext Verarbeitung, die sofort ausgeführt, oder ein Skript-Makro wurde ausgeführt.|  
-|SCRIPTTHREADSTATE_RUNNING|Angegebenen Thread ist aktiv zum Warten einer skriptgesteuerten Ereignis Skripttext Verarbeitung, die sofort ausgeführt, oder ein Skript-Makro wurde ausgeführt.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Der angegebene Thread verarbeitet zurzeit kein Skript Ereignis, verarbeitet sofort ausgeführten Skript Text oder führt ein Skript Makro aus.|  
+|SCRIPTTHREADSTATE_RUNNING|Der angegebene Thread verarbeitet aktiv ein Skript Ereignis, verarbeitet sofort ausgeführten Skript Text und führt ein Skript Makro aus.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Fehlercodes für Active Script](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

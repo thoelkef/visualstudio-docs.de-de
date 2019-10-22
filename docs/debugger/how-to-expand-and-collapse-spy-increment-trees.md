@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erweitern und Reduzieren von Spy++-Strukturen | Microsoft-Dokumentation'
+title: 'Gewusst wie: erweitern und reduzieren von Spy + +-Bäumen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ebfcc4b95b50988673e5ce229d27c5c12d0783
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388374"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450362"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Vorgehensweise: Auf- und Zuklappen von Spy++-Strukturen
-Sie erweitern und reduzieren Sie die Windows-Prozesse und Threads Ansichten, die über zwei Methoden: durch Klicken auf die Symbole in das Fenster oder mithilfe der **Struktur** Menü. Die + und - Symbole in der Struktur zu reagieren, wie in der Visualisierung C++ Fenster "Projekt".
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Gewusst wie: Erweitern und Reduzieren von Spy++-Strukturen
+Die Fenster-, Prozess-und Thread Ansichten können mithilfe von zwei Methoden erweitert und reduziert werden: durch Klicken auf die Symbole im Fenster oder über das **Menü "** Struktur". Die Symbole "+" und "-" in der Struktur agieren wie C++ im Projektfenster.
 
- Die **Struktur** Menü enthält vier Befehle:
+ Das **Menü** "Struktur" enthält vier Befehle:
 
 |Menübefehl|Beschreibung|
 |------------------|-----------------|
-|**Eine Ebene aufklappen**|Erweitert das aktuell ausgewählte Element auf die nächste Stufe.|
-|**Branch aufklappen**|Vollständig erweitert das aktuell ausgewählte Element.|
-|**Alle aufklappen**|Vollständig erweitert alle Elemente im Fenster ein.|
-|**Zuklappen**|Vollständig reduziert das aktuell ausgewählte Element.|
+|**Eine Ebene aufklappen**|Erweitert das aktuell ausgewählte Element auf die nächste Ebene.|
+|**Verzweigung erweitern**|Erweitert das aktuell ausgewählte Element vollständig.|
+|**Alle aufklappen**|Erweitert alle Elemente im Fenster vollständig.|
+|**Zuklappen**|Reduziert das aktuell ausgewählte Element vollständig.|
 
 > [!TIP]
-> Wenn Sie einen Prozess erweitern, sehen Sie alle Threads, die Besitzer des Prozesses ist. Wenn Sie einen Thread erweitern, sehen Sie eine Liste aller Fenster, die er besitzt.
+> Wenn Sie einen Prozess erweitern, werden alle Threads angezeigt, die der Prozess besitzt. Wenn Sie einen Thread erweitern, wird eine Liste aller Windows-Besitzer angezeigt.
 
-### <a name="to-expand-or-collapse-spy-trees"></a>So erweitern oder Reduzieren von Spy++-Strukturen
+### <a name="to-expand-or-collapse-spy-trees"></a>So erweitern oder reduzieren Sie Spy + +-Strukturen
 
-1. Markieren Sie eines der Elemente in der Windows-Prozesse oder Threads-Ansicht.
+1. Markieren Sie eines der Elemente in der Ansicht Fenster, Prozesse oder Threads.
 
-2. Von der **Struktur** Menü Wählen Sie erweitern oder reduzieren Sie die Befehle.
+2. Wählen Sie **im Menüstruktur** einen der Befehle zum Erweitern oder reduzieren aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwenden von Spy++](../debugger/using-spy-increment.md)

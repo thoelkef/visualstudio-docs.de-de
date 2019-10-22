@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913187"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342428"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -46,11 +46,11 @@ Das Code Coverage-Feature ist nur in der Visual Studio Enterprise-Edition verfü
 
 ::: moniker range=">=vs-2019"
 
-1. Wählen Sie im **Test-Explorer** im Menü **Ausführen** die Option **Code Coverage für alle Tests analysieren** aus.
+1. Wählen Sie im Menü **Test** die Option **Code Coverage für alle Tests analysieren** aus.
 
    ![Menüoption „Code Coverage analysieren“ in VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
-   Wenn der **Test-Explorer** nicht geöffnet ist, öffnen Sie ihn, indem Sie auf **Testen**>**Windows**>**Test-Explorer** klicken oder **STRG**+**E**,**T** drücken.
+   Sie können Code Coverage auch aus dem Test-Explorer-Toolfenster ausführen.
 
 ::: moniker-end
 

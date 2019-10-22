@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9670182432b1c6bc1e763e014b04b193c399330
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1d3a86d9ef5823b5935ad99facd6a82bf3af9789
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461219"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018928"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Vorgehensweise: Generieren von Unittests mithilfe von IntelliTest
 
@@ -142,10 +142,7 @@ Wenn Sie eine Assertion hinzufügen und IntelliTest erneut ausführen, wird gepr
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Frage: Kann ich andere Komponententestframeworks mit IntelliTest verwenden?
 
 **Antwort:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md).
-Testframeworkerweiterungen sind auch in Visual Studio Marketplace verfügbar:
-
-* [NUnit-Erweiterung für die Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
-* [xUnit.net-Erweiterung für die Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+Testframeworkerweiterungen, beispielsweise [NUnit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371), sind auch im Visual Studio Marketplace verfügbar.
 
 Wenn Sie Visual Studio neu gestartet und Ihre Projektmappe geöffnet haben, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen**aus. Wählen Sie hier das installierte Framework aus:
 

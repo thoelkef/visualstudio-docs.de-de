@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetBody | Microsoft-Dokumentation
+title: 'Iscriptentry:: GetBody | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aba6019f4729f1b4a31933a4ca93c0eddf6159a2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787878"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575484"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-Gibt den Text zurück, der entspricht dem Textkörper der ein `IScriptEntry` Skriptblock, Funktionsblock oder Scriptlet.  
+Gibt den Text zurück, der dem Text eines `IScriptEntry` Skript Blocks, eines Funktions Blocks oder eines Scriptlets entspricht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,11 +37,11 @@ HRESULT GetBody(
   
 #### <a name="parameters"></a>Parameter  
  `pbstr`  
- [out] Der Text, der im Text der eines der folgenden ist:  
+ vorgenommen Der Text, der im Text eines der folgenden ist:  
   
 - Ein `IScriptEntry` Skriptblock  
   
-- Ein `IScriptEntry` Funktion im Block einer Funktion  
+- Eine `IScriptEntry`-Funktion in einem Funktionsblock  
   
 - Ein `IScriptEntry` Scriptlet-Ereignishandler  
   

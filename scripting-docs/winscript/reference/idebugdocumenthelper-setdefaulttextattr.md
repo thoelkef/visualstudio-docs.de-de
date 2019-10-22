@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr | Microsoft-Dokumentation
+title: 'Idebugdocumenthelper:: setdefaulttextattr | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea63f028497f1eb90803f59423f608d0a42960cf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948953"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574633"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
-Legt fest, die Standardattribute für Text verwendet wird, die nicht in einem Skriptblock enthalten ist.  
+Legt die Standard Attribute fest, die für Text verwendet werden sollen, der nicht in einem Skriptblock ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetDefaultTextAttr(
   
 #### <a name="parameters"></a>Parameter  
  `staTextAttr`  
- Die standardmäßige Quelle Text-Attribute.  
+ Die standardmäßigen Quell Text Attribute.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,8 +47,8 @@ HRESULT SetDefaultTextAttr(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Es sei denn, die Standardattribute, die von dieser Methode geändert werden, ist die Standardattribute für Text außerhalb eines Skriptblocks SOURCETEXT_ATTR_NONSOURCE. Die Benutzeroberfläche kann diese Informationen verwenden, um Text außerhalb der Skriptblöcke als schreibgeschützt zu markieren.  
+ Die Standard Attribute für Text außerhalb eines Skript Blocks sind SOURCETEXT_ATTR_NONSOURCE, es sei denn, die Standard Attribute werden von dieser Methode geändert. Die Benutzeroberfläche kann diese Informationen verwenden, um Text außerhalb von Skript Blöcken als schreibgeschützt zu markieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
  [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

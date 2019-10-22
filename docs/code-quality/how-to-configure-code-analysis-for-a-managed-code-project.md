@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der Codeanalyse
+title: Konfigurieren der Code Analyse
 ms.date: 04/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -8,73 +8,90 @@ f1_keywords:
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: f0008f443139d968664d2cc4b4e3e3bef6ecb9ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551052"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649516"
 ---
-# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Vorgehensweise: Legacy Analyse für verwalteten Code konfigurieren
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Vorgehensweise: Konfigurieren der Legacy Analyse für verwalteten Code
 
-In Visual Studio können Sie aus einer Liste von Code Analyse- [Regelsätzen](../code-quality/rule-set-reference.md) auswählen, die auf ein Projekt mit verwaltetem Code angewendet werden sollen. In der Standardeinstellung die **Microsoft-Mindestregeln** Regelsatz ausgewählt ist, aber Sie können bei Bedarf einen anderen Regelsatz anwenden. Regelsätze können auf eine oder mehrere Projekte in einer Projektmappe angewendet werden.
-
-Informationen zum Konfigurieren eines Regelsatzes für ASP.NET-Webanwendungen finden [Sie unter Gewusst wie: Konfigurieren Sie die Code Analyse für eine ASP.net](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)-Webanwendung.
+In Visual Studio können Sie aus einer Liste von Code Analyse- [Regelsätzen](../code-quality/rule-set-reference.md) auswählen, die auf ein Projekt mit verwaltetem Code angewendet werden sollen. Standardmäßig ist der Regelsatz **Microsoft-Mindestregeln empfohlen** ausgewählt. Sie können jedoch bei Bedarf einen anderen Regelsatz anwenden. Regelsätze können auf ein oder mehrere Projekte in einer Projekt Mappe angewendet werden.
 
 > [!NOTE]
-> Dieser Artikel bezieht sich auf die Legacy Analyse und nicht auf [.NET Compiler Platform basierte Code](use-roslyn-analyzers.md)Analysetools, die nach dem erstellen keine Code Analyse ausführen.
+> Dieser Artikel bezieht sich auf die Legacy Analyse und nicht auf [.NET Compiler Platform basierte Code Analysen](use-roslyn-analyzers.md).
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Konfigurieren eines Regelsatzes für ein .NET Framework Projekt
 
-1. Öffnen der **Codeanalyse** Registerkarte auf den Eigenschaftenseiten des Projekts. Dies ist in einem der folgenden Arten möglich:
+1. Öffnen Sie die Registerkarte **Code Analyse** auf den Eigenschaften Seiten des Projekts. Dies kann auf eine der folgenden Arten erfolgen:
 
-   - In **Projektmappen-Explorer**, wählen Sie das Projekt. Wählen Sie auf der Menüleiste **analysieren** > **Codeanalyse konfigurieren** > **für \<Projektname >** .
+   - Wählen Sie in **Projektmappen-Explorer**das Projekt aus. Wählen Sie in der Menüleiste **analysieren** aus,  >  die**Code Analyse**  > **für \<projectname >** konfigurieren.
 
-   - Mit der rechten Maustaste in des Projekts im **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**, und wählen Sie dann die **Codeanalyse** Registerkarte.
+   - Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**und dann die Registerkarte **Code Analyse** aus.
 
-1. In der **Konfiguration** und **Plattform** Listen, wählen Sie die Buildplattform und die Zielplattform.
+2. Wählen Sie in den Listen **Konfiguration** und **Plattform** die Buildkonfiguration und die Zielplattform aus.
 
-1. Codeanalyse ausführen jedes Mal, wenn das Projekt mit der ausgewählten Konfiguration erstellt wird, wählen die **Codeanalyse für Build aktivieren** Kontrollkästchen. Sie können die Codeanalyse auch manuell ausführen, indem Sie auswählen **analysieren** > **Codeanalyse ausführen** > **Ausführen der Codeanalyse für \<Projektname >** .
+::: moniker range="vs-2017"
 
-1. Standardmäßig meldet die Codeanalyse keine Warnungen zu Code, der automatisch von Tools von Drittanbietern generiert wird. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, wählen Sie **Code Analyse beim Build aktivieren aus**. Sie können die Code Analyse auch manuell ausführen, indem Sie **analysieren**  > **Code Analyse ausführen**  > **Code Analyse auf \<projectname >** ausführen auswählen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, wählen Sie im Abschnitt **binäre Analyse** Module die Option **im Build ausführen** aus. Sie können die Code Analyse auch manuell ausführen, indem Sie **analysieren**  > **Code Analyse ausführen**  > **Code Analyse auf \<projectname >** ausführen auswählen.
+
+::: moniker-end
+
+4. Um Warnungen aus generiertem Code anzuzeigen, deaktivieren Sie das Kontrollkästchen **Ergebnisse aus generiertem Code unterdrücken** .
 
     > [!NOTE]
-    > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Sie können sowohl anzeigen und verwalten den Quellcode für ein Formular oder einer Vorlage, ohne es überschrieben.
+    > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Sie können den Quellcode für ein Formular oder eine Vorlage anzeigen und verwalten und werden nicht überschrieben.
 
-1. In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:
+::: moniker range="vs-2017"
 
-    - Wählen Sie den Regelsatz, den Sie verwenden möchten.
+5. Führen Sie in der Liste **diesen Regelsatz ausführen** einen der folgenden Schritte aus:
 
-    - Wählen Sie  **\<durchsuchen... >** finden Sie eine vorhandene benutzerdefinierte Regel festlegen, ist nicht in der Liste.
+::: moniker-end
 
-    - Definieren einer [benutzerdefinierten Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md).
+::: moniker range=">=vs-2019"
 
-## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Angeben von Regelsätzen für mehrere Projekte in einer Projektmappe
+5. Führen Sie in der Liste **aktive Regeln** einen der folgenden Schritte aus:
 
-Standardmäßig werden alle verwalteten Projekten einer Projektmappe zugewiesen der *Microsoft-Mindestregeln* code Codeanalyse-Regelsatz. Sie können ändern, dass die Regelsätze, die den Projekten einer Projektmappe im zugewiesen sind, die **Eigenschaften** im Dialogfeld für die Lösung.
+::: moniker-end
+
+    - Wählen Sie den Regelsatz aus, den Sie verwenden möchten.
+
+    - Wählen Sie **\<Browse >** aus, um einen vorhandenen benutzerdefinierten Regelsatz zu suchen, der nicht in der Liste enthalten ist.
+
+    - Definieren Sie einen [benutzerdefinierten Regelsatz](../code-quality/how-to-create-a-custom-rule-set.md).
+
+## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Angeben von Regelsätzen für mehrere Projekte in einer Projekt Mappe
+
+Standardmäßig wird allen verwalteten Projekten einer Projekt Mappe der Code Analyse-Regelsatz der *empfohlenen Microsoft-Regeln* zugewiesen. Sie können die Regelsätze ändern, die den Projekten einer Projekt Mappe im Dialogfeld **Eigenschaften** für die Lösung zugewiesen sind.
 
 1. Öffnen Sie die Lösung in Visual Studio.
 
-2. Auf der **analysieren** , wählen Sie im Menü **Codeanalyse für Projektmappe konfigurieren**.
+2. Wählen Sie im Menü **analysieren** die Option **Code Analyse für Projekt Mappe konfigurieren aus**.
 
-3. Erweitern Sie ggf. **allgemeine Eigenschaften**, und wählen Sie dann **Codeanalyseeinstellungen**.
+3. Erweitern Sie ggf. **Allgemeine Eigenschaften**, und wählen Sie dann **Code Analyse Einstellungen**aus.
 
 4. Sie können einen Regelsatz für ein oder mehrere Projekte angeben:
 
-    - Um einen Regelsatz für ein einzelnes Projekt anzugeben, wählen Sie den Namen des Projekts.
+    - Um einen Regelsatz für ein einzelnes Projekt anzugeben, wählen Sie den Projektnamen aus.
 
-    - Um einen Regelsatz für mehrere Projekte angeben möchten, halten Sie die **STRG** , und wählen Sie den Projektnamen.
+    - Halten Sie die **STRG** -Taste gedrückt, und wählen Sie die Projektnamen aus, um einen Regelsatz für mehrere Projekte anzugeben.
 
-    - Um alle Projekte in der Projektmappe angeben möchten, halten Sie die **UMSCHALT** , und klicken Sie in der Projektliste.
+    - Wenn Sie alle Projekte in der Projekt Mappe angeben möchten, halten Sie die **UMSCHALT** Taste gedrückt, und klicken Sie in die Projektliste.
 
-5. Wählen Sie die **Regelsatz** Feld eines Projekts, und wählen Sie dann der Namen der Regel festlegen, dass Sie anwenden möchten.
+5. Wählen Sie das Feld **Regelsatz** eines Projekts aus, und wählen Sie dann den Namen des Regelsatzes aus, den Sie anwenden möchten.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Codeanalyse-Regelsatzreferenz](../code-quality/rule-set-reference.md)
-- [Vorgehensweise: Konfigurieren der Code Analyse für eine ASP.NET-Webanwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

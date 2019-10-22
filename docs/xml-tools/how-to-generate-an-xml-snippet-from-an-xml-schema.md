@@ -1,21 +1,21 @@
 ---
-title: 'Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-Schema'
+title: 'Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926817"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645379"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-Schema
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema
 
 Der XML-Editor bietet die Möglichkeit, XML-Ausschnitte aus einem XSD-Schema (XML Schema Definition Language) zu generieren. Wenn Sie z. b. eine XML-Datei erstellen, während Sie neben dem Elementnamen positioniert ist, können Sie die **Tab** -Taste drücken, um das Element mit den XML-Daten aufzufüllen, die aus den Schema Informationen für dieses Element generiert werden.
 
@@ -88,7 +88,7 @@ Die Schritte in diesem Abschnitt veranschaulichen die Verwendung des Schema gene
 
      Der Editor fügt das Starttag `<Contact` hinzu und platziert den Cursor nach dem Elementnamen.
 
-4. Drücken Sie die **Tab** -Taste, um `Contact` XML-Daten für das-Element anhand seiner Schema Informationen zu generieren.
+4. Drücken Sie die **Tab** -Taste, um basierend auf Ihren Schema Informationen XML-Daten für das `Contact` Element zu generieren.
 
 ## <a name="input"></a>Eingabe
 
@@ -139,9 +139,9 @@ Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.
 </xs:schema>
 ```
 
-### <a name="output"></a>Ausgabe
+### <a name="output"></a>Output
 
-Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Elemente, die `bold` als gekennzeichnet sind, sind bearbeitbare Felder im XML-Ausschnitt.
+Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Schemainformationen generiert werden. Elemente, die als `bold` gekennzeichnet sind, legen bearbeitbare Felder im XML-Ausschnitt fest.
 
 ```xml
 <Contact>
@@ -157,4 +157,4 @@ Es folgen die XML-Daten, die aufgrund der dem `Contact`-Element zugeordneten Sch
 ## <a name="see-also"></a>Siehe auch
 
 - [XML-Ausschnitte](../xml-tools/xml-snippets.md)
-- [Vorgehensweise: XML-Ausschnitte verwenden](../xml-tools/how-to-use-xml-snippets.md)
+- [Gewusst wie: Verwenden von XML-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md)

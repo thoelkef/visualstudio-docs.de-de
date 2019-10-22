@@ -1,25 +1,25 @@
 ---
-title: Workflow-Designer - Messaging-Aktivitätsdesigner
+title: Workflow-Designer-Messaging-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9868b5eb52edde8e12d6a3b4f5edab1a4a9e499
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747101"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650146"
 ---
-# <a name="messaging-activity-designers"></a>Messaging-Aktivitätsdesigner
+# <a name="messaging-activity-designers"></a>Aktivitäts-Designer für Messaging
 
-Messaging-Aktivitätsdesigner werden verwendet, zum Erstellen und Konfigurieren von messaging-Aktivitäten, die senden und Empfangen von Nachrichten aus einer Windows Workflow Foundation (WF)-Anwendung Windows Communication Foundation (WCF). Fünf messaging-Aktivitäten wurden in .NET Framework 4 eingeführt. Der Workflow-Designer stellt zwei Vorlagen-Designer, die Sie zum Verwalten von messaging innerhalb eines Workflows aktivieren.
+Messaging-Aktivitäts Designer werden verwendet, um Messaging Aktivitäten zu erstellen und zu konfigurieren, die Windows Communication Foundation (WCF)-Nachrichten aus einer Windows Workflow Foundation (WF)-Anwendung senden und empfangen. In .NET Framework 4 wurden fünf Messaging Aktivitäten eingeführt. Der Workflow-Designer bietet zwei Vorlagen-Designer, mit denen Sie das Messaging in einem Workflow verwalten können.
 
-Die Themen, die in diesem Abschnitt enthaltenen und in der folgenden Tabelle aufgeführten enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivität und den Vorlagen-Designer.
+Die Themen in diesem Abschnitt und die in der folgenden Tabelle aufgeführten Themen enthalten Anleitungen zur Verwendung der Workflow-Designer Aktivitäts-und Vorlagen-Designer.
 
 - <xref:System.Activities.Activity>
 
@@ -37,7 +37,7 @@ Die Themen, die in diesem Abschnitt enthaltenen und in der folgenden Tabelle auf
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-Für andere Typen von Aktivitätsdesignern finden Sie unter den folgenden Themen:
+Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folgenden Themen:
 
 - [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 

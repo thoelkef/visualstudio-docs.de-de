@@ -16,15 +16,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 ms.assetid: d2774be2-60a4-4d6f-95f1-79d0d9e55b56
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432308"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670490"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
-     ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "|::ref1::|")
 
 3. Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
 
@@ -70,7 +70,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 5. Wenn dem Befehl eine Tastenkombination zugeordnet ist, wird sie in der Liste **Shortcut(s) for selected command** (Tastenkombination für ausgewählten Befehl) aufgeführt.
 
-     ![Tastenkombination für einen bestimmten Befehl anzeigen](../ide/media/viewshortcut.png "TastenkombinationAnzeigen")
+     ![Tastenkombination für einen bestimmten Befehl anzeigen](../ide/media/viewshortcut.png "|::ref2::|")
 
 ## <a name="bkmk_assign"></a> Anpassen einer Tastenkombination
 
@@ -78,7 +78,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 2. Erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
-     ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "|::ref3::|")
 
 3. Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
 
@@ -100,7 +100,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
      Wenn eine Tastenkombination bereits einem anderen Befehl zugeordnet ist, wird sie im Feld **Tastenkombination wird momentan verwendet von** angezeigt. In diesem Fall löschen Sie die Tastenkombination mit der RÜCKTASTE und versuchen es mit einer anderen Tastenkombination.
 
-     ![Eine andere Tastenkombination für einen Befehl angeben](../ide/media/reassignshortcut.png "TastenkombinationNeuZuweisen")
+     ![Eine andere Tastenkombination für einen Befehl angeben](../ide/media/reassignshortcut.png "|::ref4::|")
 
 7. Klicken Sie auf **Zuweisen**.
 
@@ -120,7 +120,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 4. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Weiter**.
 
-     ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png "TastenkombinationenExportieren")
+     ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png "|::ref5::|")
 
 5. Übernehmen Sie in den Feldern **Geben Sie den Namen der Einstellungsdatei ein.** und **Einstellungsdatei in folgendem Verzeichnis speichern** entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf **Fertigstellen**.
 
@@ -142,7 +142,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
 7. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertigstellen**.
 
-     ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png "TastenkombinationenImportieren")
+     ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png "|::ref6::|")
 
 ## <a name="see-also"></a>Siehe auch
  [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

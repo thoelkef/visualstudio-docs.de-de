@@ -1,5 +1,5 @@
 ---
-title: 'CA1058: Typen sollten bestimmte Basistypen nicht erweitern | Microsoft-Dokumentation'
+title: 'CA1058: Typen sollten bestimmte Basis Typen nicht erweitern | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200449"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603065"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typen sollten bestimmte Basistypen nicht erweitern.
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typen sollten bestimmte Basistypen nicht erweitern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Diese Regel meldet derzeit Typen, die von der folgenden Typen abgeleitet werden:
+ Ein extern sichtbarer Typ erweitert bestimmte Basistypen. Zurzeit meldet diese Regel Typen, die von den folgenden Typen abgeleitet sind:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 
@@ -52,14 +52,14 @@ ms.locfileid: "68200449"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Für [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Version 1 wurde empfohlen, neue Ausnahmen von abzuleiten <xref:System.ApplicationException>. Die Empfehlung wurde geändert und neue Ausnahmen sollten abgeleitet <xref:System.Exception?displayProperty=fullName> oder eine ihrer Unterklassen in die <xref:System> Namespace.
+ Für [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Version 1 wurde empfohlen, dass Sie neue Ausnahmen von <xref:System.ApplicationException> ableiten. Die Empfehlung wurde geändert, und neue Ausnahmen sollten von <xref:System.Exception?displayProperty=fullName> oder einer ihrer Unterklassen im <xref:System>-Namespace abgeleitet werden.
 
- Erstellen Sie eine Unterklasse von nicht <xref:System.Xml.XmlDocument> sollten Sie eine XML-Ansicht der zugrunde liegenden Modell oder die Datenquelle zu erstellen.
+ Erstellen Sie keine Unterklasse von <xref:System.Xml.XmlDocument>, wenn Sie eine XML-Sicht eines zugrunde liegenden Objektmodells oder einer zugrunde liegenden Datenquelle erstellen möchten.
 
 ### <a name="non-generic-collections"></a>Nicht generische Auflistungen
- Verwenden Sie und/oder Erweitern von generischen Auflistungen, wann immer möglich. Nicht generische Auflistungen in Ihrem Code können nicht erweitert werden, es sei denn, die Sie bereits geliefert haben.
+ Verwenden Sie nach Möglichkeit und/oder erweitern Sie generische Auflistungen. Erweitern Sie keine nicht generischen Auflistungen in Ihrem Code, es sei denn, Sie haben Sie zuvor versendet.
 
- **Beispiele für die falsche Verwendung**
+ **Beispiele für falsche Verwendung**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -71,7 +71,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **Beispiele für die richtige Verwendung**
+ **Beispiele für die korrekte Verwendung**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -84,7 +84,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem unterschiedlichen Basistyp oder einer generischen Auflistung ein.
+ Um einen Verstoß gegen diese Regel zu beheben, leiten Sie den Typ von einem anderen Basistyp oder einer generischen Auflistung ab.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel für Verstöße zu <xref:System.ApplicationException>. Es ist sicherer, unterdrücken Sie eine Warnung dieser Regel Verstöße zu <xref:System.Xml.XmlDocument>. Es ist sicher, um eine Warnung über eine nicht generische Auflistung zu unterdrücken, wenn der Code zuvor veröffentlicht wurden.
+ Unterdrücken Sie keine Warnung dieser Regel auf Verstöße gegen <xref:System.ApplicationException>. Es ist sicher, bei Verstößen gegen <xref:System.Xml.XmlDocument> eine Warnung aus dieser Regel zu unterdrücken. Es ist sicher, eine Warnung zu einer nicht generischen Auflistung zu unterdrücken, wenn der Code zuvor freigegeben wurde.

@@ -6,45 +6,45 @@ f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
 helpviewer_keywords:
 - Domain-Specific Language, diagram
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c348edfa4665b138ac0f6069b0afaf6735da7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73be8223d661617451d548898164b78a1a1563f0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658226"
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
-Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten Designer angezeigt werden. Beispielsweise können Sie eine Standardfarbe für Text in das Diagramm angeben.
+Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten Designer angezeigt werden. Beispielsweise können Sie im Diagramm eine Standardfarbe für Text angeben.
 
- Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und erweitern eine domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Weitere Informationen finden Sie unter [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Die folgende Tabelle enthält die Eigenschaften von Diagrammen.
+ In der folgenden Tabelle sind die Eigenschaften von Diagrammen aufgeführt.
 
-|Eigenschaft|Beschreibung|Standard|
+|property|Beschreibung|Default|
 |-|-|-|
 |Füllfarbe|Die Füllfarbe für das Diagramm.|Weiß|
 |Textfarbe|Die Farbe des Texts, der im Diagramm angezeigt wird.|Schwarz|
-|Zugriffsmodifizierer|Der Zugriffsmodifizierer der-Klasse (öffentlich oder intern).|Public|
-|Benutzerdefinierte Attribute|Verwendet, um die Attribute der generierten Codeklasse hinzuzufügen.|\<none>|
-|Double-Wert generiert abgeleitet|Wenn `True`, sowohl eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung über überschreibungen) generiert werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract`, oder `sealed`).|Keiner|
-|Basisdiagramm|Die Basisklasse des Diagramms.|(keine)|
-|Name|Der Name des Diagramms.|Aktuelle name|
-|Namespace|Der Namespace, der in diesem Diagramm zugeordnet ist.|Aktuellen namespace|
-|Dargestellte Klasse|Die Stamm-Domänenklasse, die in diesem Diagramm darstellt.|Aktuelle Stammklasse ggf.|
-|Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind.|\<none>|
-|Macht die Füllfarbe als Eigenschaft|Wenn `True`, der Benutzer kann die Füllfarbe des Diagramms des generierten Designers festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste der Diagrammform, und klicken Sie auf **verfügbare hinzufügen**.|False|
-|Textfarbe als Eigenschaft zur Verfügung gestellt|Wenn `True`, der Benutzer kann die Textfarbe des Diagramms im generierten Designer festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste der Diagrammform, und klicken Sie auf **verfügbare hinzufügen**.|False|
+|Zugriffsmodifizierer|Der Zugriffsmodifizierer der-Klasse (Public oder Internal).|Öffentlich|
+|Benutzerdefinierte Attribute|Wird verwendet, um der generierten Code Klasse Attribute hinzuzufügen.|\<none>|
+|Generiert doppelte abgeleitete|Wenn `True`, werden sowohl eine Basisklasse als auch eine partielle Klasse (zur Unterstützung der Anpassung durch über schreibungen) generiert. Weitere Informationen finden Sie unter über [schreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Hat benutzerdefinierten Konstruktor|Wenn `True`, wird ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt. Weitere Informationen finden Sie unter über [schreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Vererbungs Modifizierer|Beschreibt die Art der Vererbung der Quell Code Klasse, die aus dem Diagramm generiert wird (`none`, `abstract` oder `sealed`).|Keiner|
+|Basis Diagramm|Die Basisklasse dieses Diagramms.|(keine)|
+|-Name|Der Name dieses Diagramms.|Aktueller Name|
+|Namespace|Der Namespace, der mit diesem Diagramm verbunden ist.|Aktueller Namespace|
+|Dargestellte Klasse|Die Stamm Domänen Klasse, die dieses Diagramm darstellt.|Aktuelle Stamm Klasse, falls zutreffend|
+|Notizen|Informelle Notizen, die diesem Element zugeordnet sind.|\<none>|
+|Macht die Füllfarbe als Eigenschaft verfügbar.|Wenn `True`, kann der Benutzer die Füllfarbe des Diagramms des generierten Designers festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste auf die Form Diagramm, und klicken **Sie auf verfügbar machen.**|False|
+|Macht Textfarbe als Eigenschaft verfügbar.|Wenn `True`, kann der Benutzer die Textfarbe des Diagramms im generierten Designer festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste auf die Form Diagramm, und klicken **Sie auf verfügbar machen.**|False|
 |Beschreibung|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<none>|
-|Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt werden soll.|\<none>|
+|Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt wird.|\<none>|
 |Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Diagramm verwendet wird.|\<none>|
 
 ## <a name="see-also"></a>Siehe auch
 
-[DSL-Tools – Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glossar für domänenspezifische Sprach Tools](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

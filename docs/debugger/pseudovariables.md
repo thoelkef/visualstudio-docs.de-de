@@ -1,5 +1,5 @@
 ---
-title: Pseudovariablen | Microsoft-Dokumentation
+title: Pseudovariables | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b6856517a680809ccc802c02dc880b6349eadc5
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903645"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535958"
 ---
-# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariablen in Visual Studio-debugger
+# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo Variablen im Visual Studio-Debugger
 Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variablenfenster oder im Dialogfeld **Schnellüberwachung** angezeigt werden. Eine Pseudovariable können Sie genauso wie eine normale Variable eingeben. Pseudovariablen sind jedoch keine Variablen und es gibt keine entsprechenden Variablennamen im Programm.
 
 ## <a name="example"></a>Beispiel
@@ -32,7 +32,7 @@ Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variab
 
 `$handles`
 
- In nativem Code können Sie in der folgenden Tabelle angezeigten Pseudovariablen verwenden:
+ In nativem Code können Sie die in der folgenden Tabelle gezeigten Pseudo Variablen verwenden:
 
 |Pseudovariable|Funktion|
 |--------------------|--------------|
@@ -46,26 +46,26 @@ Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variab
 |`$` *Registername*<br /><br /> oder<br /><br /> `@` *Registername*|Zeigt den Inhalt des Registers *Registername* an.<br /><br /> Normalerweise geben Sie zum Anzeigen des Registerinhalts einfach den Registernamen ein. Nur beim Überladen eines Variablennamens durch einen Registernamen müssen Sie diese Syntax verwenden. Wenn der Registername im aktuellen Gültigkeitsbereich dem Variablennamen entspricht, interpretiert der Debugger den Namen als Variablenname. In diesem Fall sind `$`*Registername* bzw. `@`*Registername* praktisch.|
 |`$clk`|Zeigt die Zeit in Taktzyklen an.|
 |`$user`|Zeigt eine Struktur mit Kontoinformationen für das die Anwendung ausführende Konto an. Aus Sicherheitsgründen werden die Kennwortinformationen nicht angezeigt.|
-|`$exceptionstack`|Zeigt die Stapelüberwachung der aktuellen Windows-Runtime-Ausnahme an. `$ exceptionstack` kann nur in UWP-apps. `$ exceptionstack` für C++- und SEH-Ausnahmen wird nicht unterstützt werden.|
-|`$returnvalue`|Zeigt den Rückgabewert einer .NET Framework-Methode an.|
+|`$exceptionstack`|Zeigt die Stapelüberwachung der aktuellen Windows-Runtime-Ausnahme an. `$ exceptionstack` funktioniert nur in UWP-apps. `$ exceptionstack` wird für C++ -und SEH-Ausnahmen nicht unterstützt.|
+|`$returnvalue`|Zeigt den Rückgabewert einer .NET-Methode an.|
 
- In C# können Sie in der folgenden Tabelle angezeigten Pseudovariablen verwenden:
+ In C# können Sie die in der folgenden Tabelle aufgeführten Pseudo Variablen verwenden:
 
 |Pseudovariable|Funktion|
 |--------------------|--------------|
-|`$exception`|Zeigt Informationen über die letzte Ausnahme an. Wenn keine Ausnahme aufgetreten ist, wird beim Auswerten von `$exception` eine Fehlermeldung angezeigt.<br /><br /> Wenn der Ausnahmen-Assistent deaktiviert ist, `$exception` wird automatisch hinzugefügt, die **"lokal"** Fenster, wenn eine Ausnahme auftritt.|
+|`$exception`|Zeigt Informationen über die letzte Ausnahme an. Wenn keine Ausnahme aufgetreten ist, wird beim Auswerten von `$exception` eine Fehlermeldung angezeigt.<br /><br /> Wenn der Ausnahmen-Assistent deaktiviert ist, wird `$exception` automatisch dem lokal **Fenster hinzu** gefügt, wenn eine Ausnahme auftritt.|
 |`$user`|Zeigt eine Struktur mit Kontoinformationen für das die Anwendung ausführende Konto an. Aus Sicherheitsgründen werden die Kennwortinformationen nicht angezeigt.|
-|`$returnvalue`|Zeigt den Rückgabewert einer .NET Framework-Methode an.|
+|`$returnvalue`|Zeigt den Rückgabewert einer .NET-Methode an.|
 
  Die in dieser Tabelle angezeigten Pseudovariablen können Sie in Visual Basic verwenden:
 
 |Pseudovariable|Funktion|
 |--------------------|--------------|
 |`$exception`|Zeigt Informationen über die letzte Ausnahme an. Wenn keine Ausnahme aufgetreten ist, wird beim Auswerten von `$exception` eine Fehlermeldung angezeigt.|
-|`$delete` oder `$$delete`|Löscht eine implizite Variable, die im Fenster **Direkt** erstellt wurde. Die Syntax ist `$delete,` *Variable* oder`$delete,` *Variable*`.`|
-|`$objectids` oder `$listobjectids`|Zeigt alle aktiven Objekt-IDs als untergeordnete Elemente des angegebenen Ausdrucks an. Die Syntax ist `$objectid,` *Ausdruck* oder`$listobjectids,` *Ausdruck*`.`|
+|`$delete` oder `$$delete`|Löscht eine implizite Variable, die im Fenster **Direkt** erstellt wurde. Die Syntax ist `$delete,` *Variable* oder `$delete,` *Variable* `.`|
+|`$objectids` oder `$listobjectids`|Zeigt alle aktiven Objekt-IDs als untergeordnete Elemente des angegebenen Ausdrucks an. Die Syntax ist `$objectid,` *Ausdruck* oder `$listobjectids,` *Ausdruck* `.`|
 |`$` *N* `#`|Zeigt das Objekt mit der Objekt-ID *N* an.|
-|`$dynamic`|Zeigt den besonderen Knoten **Dynamische Ansicht** für ein Objekt an, das `IDynamicMetaObjectProvider` implementiert. Schnittstelle Die Syntax lautet `$dynamic,` *Objekt*. Diese Funktion gilt nur für Code, der .NET Framework Version 4 verwendet.|
+|`$dynamic`|Zeigt den besonderen Knoten **Dynamische Ansicht** für ein Objekt an, das `IDynamicMetaObjectProvider` implementiert. Schnittstelle Die Syntax lautet `$dynamic,` *Objekt*. Diese Funktion gilt nur für Code, der .NET Framework Version 4 oder höher verwendet.|
 
 ## <a name="see-also"></a>Siehe auch
 - [Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)

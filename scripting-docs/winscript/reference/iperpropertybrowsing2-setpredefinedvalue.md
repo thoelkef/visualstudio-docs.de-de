@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::SetPredefinedValue | Microsoft-Dokumentation
+title: 'IPerPropertyBrowsing2:: setpredefinedvalue | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d35e087cc057608666e104681d65fa8009f8167
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a823a04082b7e19b2c1bc475c1070cc501789e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944824"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576236"
 ---
 # <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
-Legt den Wert der durch die angegebene Eigenschaft `dispID`. Der vordefinierte Wert wird durch das Token identifiziert. `dwCookie.`  
+Legt den Wert der durch `dispID` angegebenen Eigenschaft fest. Der vordefinierte Wert wird durch das Token identifiziert `dwCookie.`  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,13 +38,13 @@ HRESULT SetPredefinedValue(
   
 #### <a name="parameters"></a>Parameter  
  `dispid`  
- [in] Dispatch-ID der Eigenschaft für die ein vordefinierter Wert festgelegt wird.  
+ in Dispatchbezeichner der Eigenschaft, für die ein vordefinierter Wert festgelegt wird.  
   
  `dwCookie`  
- [in] Token, das den festzulegenden Wert identifiziert.  
+ in Token, das den festzulegenden Wert identifiziert.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IPerPropertyBrowsing2-Schnittstelle 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

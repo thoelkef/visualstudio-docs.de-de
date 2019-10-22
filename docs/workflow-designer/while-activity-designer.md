@@ -1,25 +1,25 @@
 ---
-title: Workflow-Designer - beim Aktivitäts-Designer
+title: Workflow-Designer-while-Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9ea1f6bd42526eb0ea38c23cbf0f28c4346515
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6570a80de5be17b2893fc4105f057e655e841881
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433890"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649764"
 ---
 # <a name="while-activity-designer"></a>While-Aktivitätsdesigner
 
-Die <xref:System.Activities.Statements.While> Aktivität ausgeführt wird, die im enthaltene Aktivität die <xref:System.Activities.Statements.While.Body%2A> die angegebene <xref:System.Activities.Statements.While.Condition%2A> ergibt **"true"**. Die enthaltene Aktivität wird möglicherweise nie ausgeführt. Wenn die enthaltene Aktivität wenigstens einmal ausgeführt werden soll, verwenden Sie stattdessen die <xref:System.Activities.Statements.DoWhile>-Aktivität.
+Die <xref:System.Activities.Statements.While>-Aktivität führt die in der <xref:System.Activities.Statements.While.Body%2A> enthaltene Aktivität aus, während die angegebene <xref:System.Activities.Statements.While.Condition%2A> als **true**ausgewertet wird. Die enthaltene Aktivität wird möglicherweise nie ausgeführt. Wenn die enthaltene Aktivität wenigstens einmal ausgeführt werden soll, verwenden Sie stattdessen die <xref:System.Activities.Statements.DoWhile>-Aktivität.
 
 ## <a name="while-properties-in-workflow-designer"></a>While-Eigenschaften im Workflow-Designer
 
@@ -27,9 +27,9 @@ In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Namen der <xref:System.Activities.Statements.While>Aktivität im Header an. Der Standardwert lautet While. Der Wert kann bearbeitet werden, der **Eigenschaften** Fenster oder direkt im Header Aktivitätsdesigners.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.While.Body%2A>|False|Enthält die auszuführende Aktivität während der <xref:System.Activities.Statements.While.Condition%2A> ergibt **"true"**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|True|Enthält den Visual Basic-Ausdruck, der ausgewertet wird, um zu bestimmen, ob die Aktivität in der <xref:System.Activities.Statements.While.Body%2A> ausgeführt werden soll.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Namen der <xref:System.Activities.Statements.While>Aktivität im Header an. Der Standardwert lautet While. Der Wert kann im **Eigenschaften** Fenster oder direkt im Header des Aktivitäts Designers bearbeitet werden.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.While.Body%2A>|False|Enthält die Aktivität, die ausgeführt werden soll, während die <xref:System.Activities.Statements.While.Condition%2A> als **true**ausgewertet wird.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Enthält den Visual Basic Ausdruck, der ausgewertet wird, um zu bestimmen, ob die Aktivität in der <xref:System.Activities.Statements.While.Body%2A> ausgeführt werden soll.|
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -2,23 +2,23 @@
 title: Erstellen einer WPF-basierten domänenspezifischen Sprache
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0492ec90bd9ef1ca576aad9e8b708783a3ef8ad9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7420faa110ea7243459d4bfc54881b9708d923a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002737"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654085"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>Erstellen einer WPF-basierten domänenspezifischen Sprache
 
-Sie können eine domänenspezifische Sprache erstellen, die einen WPF-Designer statt einem grafischen Designer verfügt.
+Sie können eine domänenspezifische Sprache erstellen, die über einen WPF-Designer anstelle eines grafischen Designers verfügt.
 
-Informationen und Beispiele zu diesem Feature können auf dem Visual Studio-Visualisierungs und Modellierungstools-Website unter gefunden werden [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
+Informationen und Beispiele zu diesem Feature finden Sie auf der Visual Studio-Website zu Visualisierungs-und Modellierungs Tools unter [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
 
 ## <a name="see-also"></a>Siehe auch
 

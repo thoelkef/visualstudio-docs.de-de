@@ -44,8 +44,6 @@
       items:
         - name: Verwenden von Haltepunkten
           href: using-breakpoints.md
-        - name: Verwenden von Ablaufverfolgungspunkten
-          href: using-tracepoints.md
         - name: Problembehandlung von Haltepunkten
           href: troubleshooting-breakpoints.md
     - name: Datenüberprüfung
@@ -93,7 +91,7 @@
         - name: Anzeigen von Arbeitsspeicher für Variablen
           href: memory-windows.md
         - name: Überprüfen von XAML-Eigenschaften beim Debuggen
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: Aufrufliste
       items:
         - name: Anzeigen der Aufrufliste
@@ -110,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Anhalten von Codeänderungen
           href: how-to-stop-code-changes.md
-        - name: "Bearbeiten und Fortfahren (Visual\_C++)"
+        - name: Bearbeiten und Fortfahren (C++)
           items:
-            - name: "Bearbeiten und Fortfahren in Visual\_C++"
+            - name: Bearbeiten und Fortfahren in C++
               href: edit-and-continue-visual-cpp.md
             - name: Unterstützte Codeänderungen (C++)
               href: supported-code-changes-cpp.md
@@ -133,11 +131,13 @@
         - name: Neuladen von XAML im laufenden Betrieb
           items:
             - name: Schreiben und Debuggen von ausgeführtem XAML-Code
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Problembehandlung beim Neuladen von XAML im laufenden Betrieb
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'Bearbeiten und Fortfahren wird für F# nicht unterstützt'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: In Ausgabefenster protokollieren
+      href: using-tracepoints.md
     - name: Anzeigen der Debuggerdaten
       items:
         - name: Module
@@ -202,7 +202,7 @@
                   items:
                     - name: Projekteinstellungen für eine C++-Debugkonfiguration
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: Aktivieren von Debugfunktionen in Visual C++ (-D_DEBUG)
+                    - name: Aktivieren von Debugfeatures in C++ (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Einstellungen von Eigenschaftenseiten für Webprojekte
                   href: property-pages-settings-for-web-projects.md
@@ -234,12 +234,12 @@
               items:
                 - name: Erstellen benutzerdefinierter Ansichten von C++-Objekten
                   href: create-custom-views-of-native-objects.md
-                - name: Kompatibilität mit der benutzerdefinierten Visual C++-Schnellansicht
+                - name: Kompatibilität mit der benutzerdefinierten C++-Schnellansicht
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Benutzerdefinierte Ansichten (verwaltet)
               items:
-                - name: Erstellen benutzerdefinierter Ansichten von Objekten
-                  href: create-custom-views-of-dot-managed-objects.md
+                - name: Erstellen benutzerdefinierter Ansichten von verwalteten Objekten
+                  href: create-custom-views-of-managed-objects.md
                 - name: 'Den Debugger anweisen, was er anzeigen soll'
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 'Den Debugger anweisen, welchen Typ er anzeigen soll'
@@ -435,7 +435,7 @@
             - name: Debuggen eines installierten App-Pakets
               href: debug-installed-app-package.md
             - name: Debuggen von XAML in Blend
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML und CSS
               items:
                 - name: Debuggen von HTML und CSS
@@ -500,7 +500,7 @@
           items:
             - name: Debuggen von nativem Code
               href: debugging-native-code.md
-            - name: 'Vorbereitung zum Debuggen: Visual C++-Projekttypen'
+            - name: 'Vorbereitung zum Debuggen: C++-Projekttypen'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: Debuggen von optimiertem Code
               href: how-to-debug-optimized-code.md

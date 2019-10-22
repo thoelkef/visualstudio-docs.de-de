@@ -1,52 +1,77 @@
 ---
-title: FxCop-Analyse Regelsätze
-ms.date: 09/23/2019
+title: FxCop Analyzer-Regelsätze und Editor config-Dateien
+ms.date: 10/08/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185956"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606547"
 ---
-# <a name="rule-sets-for-analyzer-packages"></a>Regelsätze für Analysepakete
+# <a name="enable-a-category-of-rules"></a>Aktivieren der Regelkategorie
 
-Vordefinierte Regelsätze sind in einigen nuget Analyzer-Paketen enthalten. Beispielsweise aktivieren oder deaktivieren die Regelsätze, die im nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthalten sind (beginnend mit Version 2.6.2), Regeln basierend auf ihrer Kategorie, z. b. Sicherheit, Benennung oder Leistung. Durch die Verwendung von Regelsätzen können Sie auf einfache Weise nur die Regel Verletzungen erkennen, die eine bestimmte Regel Kategorie betreffen.
+Analysepakete können vordefinierte [Editor config](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) -und [Regel Satz](using-rule-sets-to-group-code-analysis-rules.md) Dateien enthalten, die es Ihnen ermöglichen, eine Kategorie von Regeln, wie z. b. Sicherheits-oder Entwurfs Regeln, schnell und einfach zu aktivieren. Das nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthält sowohl Regelsätze (beginnend mit Version 2.6.2) als auch Editor config-Dateien (beginnend mit Version 2.9.5). Indem Sie eine bestimmte Kategorie von Regeln aktivieren, können Sie gezielte Probleme und bestimmte Bedingungen ermitteln.
 
-Bei einem Regelsatz handelt es sich um eine Gruppierung von Code Analyse Regeln, mit denen gezielte Probleme und bestimmte Bedingungen identifiziert werden. Regelsätze ermöglichen das Aktivieren oder Deaktivieren von Regeln und Festlegen des schwere Grads einzelner Regel Verletzungen. Das nuget-Paket FxCop Analyzer enthält vordefinierte Regelsätze für die folgenden Regel Kategorien:
+> [!NOTE]
+> Das Aktivieren von Analyse Regeln und das Festlegen Ihres schwere Grads mithilfe einer Editor config-Datei wird ab Visual Studio 2019 Version 16,3 unterstützt.
 
+Das nuget-Paket FxCop Analyzer enthält vordefinierte Regelsätze und Editor config-Dateien für die folgenden Regel Kategorien:
+
+- Alle Regeln
+- Datenfluss
 - Entwurf
 - Dokumentation
+- Globalisierung
+- Interoperabilität
 - Verwaltbarkeit
-- Benennen
+- Ernannte
 - Leistung
+- Portiert von FxCop
 - Zuverlässigkeit
 - Sicherheit
 - Verwendung
 
-Wenn Sie von der veralteten "FxCop"-Analyse zur .NET Compiler Platform basierten Code Analyse migrieren, können Sie mit diesen Regelsätzen ähnliche Regel Konfigurationen verwenden, [die Sie zuvor verwendet](rule-set-reference.md)haben.
+Jede dieser Kategorien von Regeln verfügt über eine Editor config-oder Regel Satz Datei für Folgendes:
 
-## <a name="use-analyzer-package-rule-sets"></a>Verwenden von analysepaketregelsätzen
+- alle Regeln in der Kategorie aktivieren (und alle anderen Regeln deaktivieren)
+- Standardeinstellung für Schweregrad und Einstellung jeder Regel verwenden (und alle anderen Regeln deaktivieren)
 
-Nachdem Sie [ein nuget Analyzer-Paket installiert](install-roslyn-analyzers.md)haben, suchen Sie den vordefinierten Regelsatz im *RuleSets* -Verzeichnis. Wenn Sie z. b. auf `Microsoft.CodeAnalysis.FxCopAnalyzers` das Analysepaket verwiesen haben, finden Sie das *zugehörige RuleSets* -Verzeichnis unter *% User\\profile%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\<Version. \>\rulesets*. Kopieren Sie von dort eine oder mehrere der RuleSets, und fügen Sie Sie in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
+> [!TIP]
+> Die Kategorie "alle Regeln" verfügt über eine zusätzliche Editor config-oder Regel Satz Datei, um alle Regeln zu deaktivieren. Verwenden Sie diese Datei, um alle Analyse Warnungen oder-Fehler in einem Projekt schnell zu entfernen.
+
+> [!TIP]
+> Wenn Sie von der veralteten "FxCop"-Analyse zur .NET Compiler Platform basierten Code Analyse migrieren, können Sie mit den Editor config-und Regel Satz Dateien ähnliche Regel Konfigurationen verwenden, die [Sie zuvor verwendet](rule-set-reference.md)haben.
+
+## <a name="predefined-editorconfig-files"></a>Vordefinierte Editor config-Dateien
+
+Die vordefinierten Editor config-Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich in " *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \editor config".* Verzeichnis. Beispielsweise befindet sich die Datei "Editor config", um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \editor config\securityrulesenabled \\. Editor config*.
+
+Kopieren Sie die ausgewählte Editor config-Datei in das Stammverzeichnis Ihres Projekts.
+
+## <a name="predefined-rule-sets"></a>Vordefinierter Regelsatz
+
+Die vordefinierten Regel Satz Dateien für das Microsoft. Code Analysis. fxcopanalyzers Analyzer-Paket befinden sich im *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \rulesets* befinden. Beispielsweise befindet sich die Regel Satz Datei, um alle Sicherheitsregeln zu aktivieren, unter *% User Profile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version \> \ruleseung\securityrulesenabled.RuleSet*.
+
+Kopieren Sie mindestens einen Regelsatz, und fügen Sie ihn in das Verzeichnis ein, das das Visual Studio-Projekt enthält, oder direkt in **Projektmappen-Explorer**.
 
 Sie können auch [einen vordefinierten Regelsatz anpassen](how-to-create-a-custom-rule-set.md) . Beispielsweise können Sie den Schweregrad einer oder mehrerer Regeln ändern, sodass Verstöße im **Fehlerliste**als Fehler oder Warnungen angezeigt werden.
 
-## <a name="set-the-active-rule-set"></a>Festlegen des aktiven Regelsatzes
+### <a name="set-the-active-rule-set"></a>Festlegen des aktiven Regelsatzes
 
 Der Vorgang zum Festlegen des aktiven Regelsatzes ist ein wenig anders, je nachdem, ob Sie über ein .net Core/. NET Standard-Projekt oder ein .NET Framework Projekt verfügen.
 
-### <a name="net-core"></a>.NET Core
+#### <a name="net-core"></a>.NET Core
 
-Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Core-oder .NET Standard-Projekten festlegen möchten, fügen Sie die Eigenschaft " **codeanalysisruleset** " manuell zu Ihrer Projektdatei hinzu. Der folgende Code Ausschnitt legt `HelloWorld.ruleset` z. b. den aktiven Regelsatz fest.
+Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Core-oder .NET Standard-Projekten festlegen möchten, fügen Sie die Eigenschaft " **codeanalysisruleset** " manuell zu Ihrer Projektdatei hinzu. Der folgende Code Ausschnitt legt z. b. `HelloWorld.ruleset` als aktiven Regelsatz fest.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -55,30 +80,27 @@ Wenn Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .net Cor
 </PropertyGroup>
 ```
 
-### <a name="net-framework"></a>.NET Framework
+#### <a name="net-framework"></a>.NET Framework
 
-Um einen Regelsatz für den aktiven Regelsatz für die Analyse in .NET Framework Projekten festzulegen, klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus. Wählen Sie auf den Eigenschaften Seiten des Projekts die Registerkarte **Code Analyse** aus. Wählen Sie unter **diesen Regelsatz ausführen**die Option **Durchsuchen**aus, und wählen Sie dann den gewünschten Regelsatz aus, den Sie in das Projektverzeichnis kopiert haben. Nun sehen Sie nur Regel Verletzungen für die Regeln, die im ausgewählten Regelsatz aktiviert sind.
+So erstellen Sie einen Regelsatz für den aktiven Regelsatz für die Analyse in .NET Framework Projekten:
 
-## <a name="available-rule-sets"></a>Verfügbare Regelsätze
+- Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**aus.
 
-Die vordefinierten analyseregelsätze enthalten drei RuleSets, die sich auf alle Regeln im&mdash;Paket auswirken, das Sie alle aktiviert, eine, die alle deaktiviert, und eine, die die Standardeinstellungen für den Schweregrad und die Aktivierung jeder Regel berücksichtigt:
+- Wählen Sie auf den Eigenschaften Seiten des Projekts die Registerkarte **Code Analyse** aus.
 
-- AllRulesEnabled.ruleset
-- AllRulesDisabled.ruleset
-- AllRulesDefault.ruleset
+::: moniker range="vs-2017"
 
-Außerdem gibt es zwei Regelsätze für jede Kategorie von Regeln im Paket, z. b. Leistung oder Sicherheit. Mit einem Regelsatz werden alle Regeln für die Kategorie aktiviert, und ein Regelsatz berücksichtigt die Standardeinstellungen für Schweregrad und Aktivierung für jede Regel in der Kategorie.
+- Wählen Sie unter **diesen Regelsatz ausführen**die Option **Durchsuchen**aus, und wählen Sie dann den gewünschten Regelsatz aus, den Sie in das Projektverzeichnis kopiert haben.
 
-Das nuget Analyzer-Paket [Microsoft. Code Analysis. fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) enthält Regelsätze für die folgenden Kategorien:
+::: moniker-end
 
-- Entwurf
-- Dokumentation
-- Verwaltbarkeit
-- Benennen
-- Leistung
-- Zuverlässigkeit
-- Sicherheit
-- Verwendung
+::: moniker range=">=vs-2019"
+
+- Wählen Sie unter **aktive Regeln**die Option **Durchsuchen**aus, und wählen Sie dann den gewünschten Regelsatz aus, den Sie in das Projektverzeichnis kopiert haben.
+
+::: moniker-end
+
+   Nun sehen Sie nur Regel Verletzungen für die Regeln, die im ausgewählten Regelsatz aktiviert sind.
 
 ## <a name="see-also"></a>Siehe auch
 

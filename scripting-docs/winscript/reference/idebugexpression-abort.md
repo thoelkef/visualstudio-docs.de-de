@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Abort | Microsoft-Dokumentation
+title: 'Idebugexpression:: Abort | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfaee56fffc7b28d04979f39b840d0b07cde2e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 508939b23be53acbff269744ae4035853f977ada
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978457"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575938"
 ---
 # <a name="idebugexpressionabort"></a>IDebugExpression::Abort
-Den Ausdruck wird beendet.  
+Beendet den Ausdruck.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT Abort();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,8 +44,8 @@ HRESULT Abort();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird die Auswertung eines Ausdrucks bei nächstmöglicher Gelegenheit beendet.  
+ Diese Methode beendet eine Ausdrucks Auswertung an der frühesten Gelegenheit.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugExpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)   
+ [Idebugexpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)    
  [IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)

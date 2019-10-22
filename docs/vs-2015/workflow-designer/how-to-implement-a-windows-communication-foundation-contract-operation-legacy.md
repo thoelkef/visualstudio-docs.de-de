@@ -1,55 +1,53 @@
 ---
-title: 'Vorgehensweise: Implementieren ein Windows Communication Foundation-Vertragsvorgangs (Legacy) | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Implementieren eines Windows Communication Foundation Vertrags Vorgangs (Legacy) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931183"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603862"
 ---
-# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Vorgehensweise: Implementieren eines Windows Communication Foundation-Vertragsvorgangs (Vorgängerversion)
-In diesem Thema wird die Implementierung eines [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Vertragsvorgangs mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben, die auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.  
-  
- Nach dem Ziehen einer **ReceiveActivity** Aktivität aus der Toolbox auf die Workflow-Entwurfsoberfläche, erstellen Sie entweder eine neue [!INCLUDE[indigo2](../includes/indigo2-md.md)] Vertrag oder einen vorhandenen Vertrag importieren und die Vorgänge zu implementieren. Sie wählen bzw. erstellen Sie den Vertrag und seine Vorgänge über die [Choose Vorgang Dialog Box (Legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
-  
-### <a name="to-implement-a-wcf-contract-operation"></a>So implementieren Sie einen WCF-Vertragsvorgang  
-  
-1. Doppelklicken Sie auf die **ReceiveActivity** Aktivität im Designer oder klicken Sie auf die Auslassungspunkte neben dem **ServiceOperationInfo** -Eigenschaft in der **Eigenschaften** Bereich.  
-  
-2. Führen Sie einen der folgenden Schritte aus:  
-  
-   - Klicken Sie auf **Vertrag hinzufügen** in der oberen rechten Ecke des Dialogfelds. Dadurch wird für Sie ein neuer [!INCLUDE[indigo2](../includes/indigo2-md.md)]-Vertrag und -Vorgang erstellt.  
-  
-      - oder -   
-  
-   - Klicken Sie auf **Import** in der oberen rechten Ecke des Dialogfelds. Die [navigieren, und wählen Sie eine .NET (Dialogfeld) (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) wird geöffnet. Suchen Sie eine Assembly oder ein Projekt, das den gewünschten Vertrag enthält. Wählen Sie den Vertrag, und klicken Sie auf **OK**.  
-  
-     Nachdem ein Vertrag erstellt bzw. importiert wurde, können Sie diesem Vertrag neue Vorgänge hinzufügen. Um einen neuen Vorgang hinzuzufügen, wählen Sie den Vertrag aus, und klicken Sie auf **Vorgang hinzufügen** in der oberen rechten Ecke des Dialogfelds. Fahren Sie nach dem Hinzufügen von Vorgängen mit Schritt&amp;#160;3 fort.  
-  
-3. Wählen Sie den Vorgang, die Sie zuordnen möchten die **ReceiveActivity** Aktivität. Sie können die Definition des Vorgangs ändern, indem Sie seinen Namen, die Parameter, Eigenschaften und Berechtigungseinstellungen ändern.  
-  
-    Um den Namen ändern möchten, geben Sie den neuen Namen in der **Vorgangsname** Textfeld.  
-  
-    Klicken Sie auf die **Parameter** Tab, um die Parameter des Vorgangs zuzugreifen. Sie können den Namen, den Typ oder die Richtung eines Parameters ändern sowie Parameter hinzufügen oder löschen.  
-  
-    Klicken Sie auf die **Eigenschaften** Tab, um den Vorgang Schutz und unterstützte Nachrichtenaustauschfunktionen des Vorgangs zuzugreifen.  
-  
-    Klicken Sie auf die **Berechtigungen** um anzugeben, welchen Gruppen zulässig sind, um den Vorgang zu implementieren.  
-  
-4. Klicken Sie auf **OK** und **ReceiveActivity** Aktivität zeigt auf den Namen des Vorgangs, der implementiert wird.  
-  
-5. Platzieren Sie die Workflowaktivitäten, die Sie dabei sind, verwenden Sie für die Implementierung des Vorgangs innerhalb der **ReceiveActivity** Aktivität.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Dialogfeld "Vorgang" (Vorgängerversion) auswählen](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Vorgehensweise: Aufrufen eines WCF-Vertragsvorgangs (Vorgängerversion)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Legacyworkflowaktivitäten](../workflow-designer/legacy-workflow-activities.md)
+# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Vorgehensweise: Implementieren eines Windows Communication Foundation-Vertragsvorgangs (Legacy)
+In diesem Thema wird die Implementierung eines [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Vertragsvorgangs mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben, die auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.
+
+ Nachdem Sie eine **ReceiveActivity** -Aktivität aus der Toolbox auf die Workflow Entwurfs Oberfläche gezogen haben, erstellen Sie entweder einen neuen [!INCLUDE[indigo2](../includes/indigo2-md.md)] Vertrag, oder importieren Sie einen vorhandenen Vertrag, und implementieren Sie die Vorgänge. Sie können den Vertrag und seine Vorgänge im [Dialog Feld "Vorgang auswählen" (](../workflow-designer/choose-operation-dialog-box-legacy.md)Vorgängerversion) auswählen und/oder erstellen.
+
+### <a name="to-implement-a-wcf-contract-operation"></a>So implementieren Sie einen WCF-Vertragsvorgang
+
+1. Doppelklicken Sie im Designer auf die **ReceiveActivity** -Aktivität, oder klicken Sie auf die Auslassungs Punkte neben der **ServiceOperationInfo** -Eigenschaft im Bereich **Eigenschaften** .
+
+2. Führen Sie einen der folgenden Schritte aus:
+
+   - Klicken Sie in der rechten oberen Ecke des Dialog Felds auf **Vertrag hinzufügen** . Dadurch wird für Sie ein neuer [!INCLUDE[indigo2](../includes/indigo2-md.md)]-Vertrag und -Vorgang erstellt.
+
+      - oder -
+
+   - Klicken Sie rechts oben im Dialogfeld auf **importieren** . Das [Dialog Feld .NET-Typ suchen und auswählen (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) wird geöffnet. Suchen Sie eine Assembly oder ein Projekt, das den gewünschten Vertrag enthält. Wählen Sie den Vertrag aus, und klicken Sie auf **OK**.
+
+     Nachdem ein Vertrag erstellt bzw. importiert wurde, können Sie diesem Vertrag neue Vorgänge hinzufügen. Wenn Sie einen neuen Vorgang hinzufügen möchten, wählen Sie den Vertrag aus, und klicken Sie in der rechten oberen Ecke des Dialog Felds auf **Vorgang hinzufügen** . Fahren Sie nach dem Hinzufügen von Vorgängen mit Schritt&#160;3 fort.
+
+3. Wählen Sie den Vorgang aus, den Sie der **ReceiveActivity** -Aktivität zuordnen möchten. Sie können die Definition des Vorgangs ändern, indem Sie seinen Namen, die Parameter, Eigenschaften und Berechtigungseinstellungen ändern.
+
+    Um den Namen zu ändern, geben Sie im Textfeld **Vorgangs Name** den neuen Namen ein.
+
+    Klicken Sie auf die Registerkarte **Parameter** , um auf die Parameter des Vorgangs zuzugreifen. Sie können den Namen, den Typ oder die Richtung eines Parameters ändern sowie Parameter hinzufügen oder löschen.
+
+    Klicken Sie auf die Registerkarte **Eigenschaften** , um auf die Vorgangs Schutz Ebene und die unterstützte Nachrichtenaustausch Funktion des Vorgangs zuzugreifen.
+
+    Klicken Sie auf die Registerkarte **Berechtigungen** , um anzugeben, welche Gruppe (n) den Vorgang implementieren darf.
+
+4. Klicken Sie auf **OK** , und die **ReceiveActivity** -Aktivität zeigt den Vorgangs Namen für den Vorgang an, der implementiert wird.
+
+5. Platzieren Sie die Workflow Aktivitäten, die für die Implementierung dieses Vorgangs verwendet werden, innerhalb der **ReceiveActivity** -Aktivität.
+
+## <a name="see-also"></a>Siehe auch
+ [Dialog Feld "Vorgang auswählen" (Legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md) Gewusst [wie: Aufrufen einer WCF-Vertrags Operation (Legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md)

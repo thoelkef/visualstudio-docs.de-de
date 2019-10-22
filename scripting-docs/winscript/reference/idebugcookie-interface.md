@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie-Schnittstelle | Microsoft-Dokumentation
+title: Idebugcookie-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,22 +13,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ee129526113a1c8af8f918de81c1f286d5cb703
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b48b917ee3376c417beffd9972d76a444513ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974513"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573194"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie-Schnittstelle
-Ermöglicht die Debug-Cookies festgelegt werden, für die Verwendung mit der `IMachineDebugManagerCookie` Schnittstelle. Weitere Informationen finden Sie unter [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md). Diese Schnittstelle wird durch den Prozess Debug-Manager (PDM) implementiert und von der Skriptdebugger genutzt werden.  
+Ermöglicht das Festlegen des debugcookies für die Verwendung mit der `IMachineDebugManagerCookie`-Schnittstelle. Weitere Informationen finden Sie unter [imachinedebugmanagercookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md). Diese Schnittstelle wird vom Process Debug Manager (PDM) implementiert und von Skript Debugger verwendet.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugCookie` Schnittstelle verfügbar macht, die folgenden Methoden.  
+ Zusätzlich zu den Methoden, die von `IUnknown` geerbt werden, macht die `IDebugCookie`-Schnittstelle die folgenden Methoden verfügbar.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Legt fest, der Debug-Cookies-Anwendung.|  
+|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Legt das debuganwendungscookie fest.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)

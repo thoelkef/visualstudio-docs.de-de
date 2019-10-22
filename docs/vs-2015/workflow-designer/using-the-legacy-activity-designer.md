@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Aktivitätsdesigners der Vorgängerversion | Microsoft-Dokumentation
+title: Verwenden des Legacy-Aktivitäts Designers | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,53 +13,48 @@ helpviewer_keywords:
 - activities, creating custom
 ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 534af8da414cb3b9cc0dd786f7b79abe00e2ed66
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855770"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606886"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Verwenden des Aktivitätsdesigners der Vorgängerversion
-In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet wird. Verwenden Sie den Designer der Vorgängerversion, wenn Sie auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
-  
- Mit dem Aktivitätsdesigner können Sie benutzerdefinierte Aktivitäten erstellen.  
-  
-## <a name="creating-a-custom-activity"></a>Erstellen einer benutzerdefinierten Aktivität  
- Führen Sie die nachstehenden Schritte aus, um mit dem Aktivitätsdesigner eine benutzerdefinierte Aktivität zu erstellen:  
-  
-1. Auf der **Projekt** Menü klicken Sie auf **Aktivität hinzufügen**.  
-  
-2. Wählen Sie die **Aktivität** oder **Aktivität (mit getrenntem Code)** Vorlage.  
-  
-   1. Verwenden der **Aktivität** Vorlage zum Erstellen einer Aktivität mit der Aktivitätsdefinition und dem Benutzercode in derselben Codedatei.  
-  
-   2. Verwenden der **Aktivität (mit getrenntem Code)** Vorlage zum Erstellen einer Aktivität mit der als Workflowmarkup und dem Benutzercode in einer eigenen Codedatei ausgedrückte Aktivitätsdefinition.  
-  
-3. Geben Sie einen Aktivitätsnamen oder behalten Sie den Standardnamen, und klicken Sie dann auf **hinzufügen**.  
-  
-   Sie können auch einen Satz von benutzerdefinierten Aktivitäten erstellen, durch das Erstellen eines neuen Projekts vom Typ **Workflowaktivitätsbibliothek**. Weitere Informationen zu diesem Projekttyp finden Sie unter [Vorgehensweise: Erstellen eine Workflowaktivitätsbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
-  
-## <a name="configuring-an-activity"></a>Konfigurieren einer Aktivität  
- Wenn der Aktivitätsdesigner aktiv ist, können Sie mit dem Eigenschaftenbrowser die in der folgenden Tabelle aufgeführten Eigenschaften konfigurieren.  
-  
-|Eigenschaft|Kommentare|  
-|--------------|--------------|  
-|**Name**|Der Name der Aktivität.|  
-|**Basisklasse**|Die Basisklasse, von der die Aktivität abgeleitet wird. Die Standardbasisklasse ist [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). In der **Eigenschaften** Fenster, klicken Sie auf die **Basisklasse** Ellipsen **[...]**  eine andere Basisklasse im Auswählen der [navigieren, und wählen Sie eine .NET (Dialogfeld) (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  
-|**Beschreibung**|Die benutzerdefinierte Beschreibung der Aktivität.|  
-|**Aktiviert**|Legen Sie auf **"true"** standardmäßig auf die aktivitätsausführung und die Validierung zu aktivieren. Legen Sie auf **"false"** aktivitätsausführung und die Validierung zu deaktivieren. Informationen über die aktivitätsausführung und die Validierung finden Sie unter [Developing Workflow Activities](http://go.microsoft.com/fwlink?LinkID=65024).|  
-  
-## <a name="adding-child-activities"></a>Hinzufügen von untergeordneten Aktivitäten  
- Sie können untergeordnete Aktivitäten von der Toolbox zu der Aktivität ziehen, die Sie entwerfen. Sie können anschließend jede untergeordnete Aktivität mit dem Eigenschaftenbrowser konfigurieren.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Entwickeln von Workflowaktivitäten](http://go.microsoft.com/fwlink?LinkID=65024)   
- [Erstellen von benutzerdefinierten Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65021)   
- [Legacyworkflowaktivitäten](../workflow-designer/legacy-workflow-activities.md)   
- [Beispiele für benutzerdefinierte Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Vorgehensweise: Erstellen einer Workflowaktivitätsbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
- [Verwenden des Legacyworkflow-Designers](../workflow-designer/using-the-legacy-workflow-designer.md)
+In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet wird. Verwenden Sie den Designer der Vorgängerversion, wenn Sie auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+
+ Mit dem Aktivitätsdesigner können Sie benutzerdefinierte Aktivitäten erstellen.
+
+## <a name="creating-a-custom-activity"></a>Erstellen einer benutzerdefinierten Aktivität
+ Führen Sie die nachstehenden Schritte aus, um mit dem Aktivitätsdesigner eine benutzerdefinierte Aktivität zu erstellen:
+
+1. Klicken Sie im Menü **Projekt** auf **Aktivität hinzufügen**.
+
+2. Wählen Sie die Vorlage **Aktivität** oder **Aktivität (mit Code Trennung)** aus.
+
+   1. Verwenden Sie die **Aktivitäts** Vorlage, um eine Aktivität mit der Aktivitäts Definition und dem Benutzercode in derselben Codedatei zu erstellen.
+
+   2. Verwenden Sie die Vorlage " **Aktivität (mit Code Trennung)** ", um eine Aktivität mit der Aktivitäts Definition zu erstellen, die als Workflow Markup ausgedrückt wird, und den Benutzercode in einer separaten Codedatei.
+
+3. Geben Sie einen Aktivitäts Namen ein, oder behalten Sie den Standardnamen bei, und klicken Sie auf **Hinzufügen**.
+
+   Sie können auch eine Reihe von benutzerdefinierten Aktivitäten erstellen, indem Sie ein neues Projekt des Typs **Workflow Aktivitäts Bibliothek**erstellen. Weitere Informationen zu diesem Projekttyp finden [Sie unter Vorgehensweise: Erstellen einer Workflow Aktivitäts Bibliothek (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+
+## <a name="configuring-an-activity"></a>Konfigurieren einer Aktivität
+ Wenn der Aktivitätsdesigner aktiv ist, können Sie mit dem Eigenschaftenbrowser die in der folgenden Tabelle aufgeführten Eigenschaften konfigurieren.
+
+|property|Kommentare|
+|--------------|--------------|
+|**Name**|Der Name der Aktivität.|
+|**Basisklasse**|Die Basisklasse, von der die Aktivität abgeleitet wird. Die Standardbasis Klasse ist [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). Klicken Sie im **Eigenschaften** Fenster auf die Auslassungs Punkte **[...]** der **Basisklasse** , um eine andere Basisklasse im [Dialog Feld .NET-Typ suchen und auswählen (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)auszuwählen.|
+|**Beschreibung**|Die benutzerdefinierte Beschreibung der Aktivität.|
+|**Aktiviert**|Standardmäßig auf **true** festgelegt, um die Aktivitäts Ausführung und die Validierung zu aktivieren. Legen Sie diese Einstellung auf **false** fest, um die Aktivitäts Ausführung und die Validierung Weitere Informationen zur Aktivitäts Ausführung und-Validierung finden Sie unter [entwickeln von Workflow Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65024).|
+
+## <a name="adding-child-activities"></a>Hinzufügen von untergeordneten Aktivitäten
+ Sie können untergeordnete Aktivitäten von der Toolbox zu der Aktivität ziehen, die Sie entwerfen. Sie können anschließend jede untergeordnete Aktivität mit dem Eigenschaftenbrowser konfigurieren.
+
+## <a name="see-also"></a>Siehe auch
+ [Entwickeln von Workflow Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65024) [Erstellen von benutzerdefinierten Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65021) [Legacy Workflow Aktivitäten](../workflow-designer/legacy-workflow-activities.md) [benutzerdefinierte Aktivitäten Beispiele](http://go.microsoft.com/fwlink?LinkID=65022) Gewusst [wie: Erstellen einer Workflow Aktivitäts Bibliothek (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [mit dem Legacy-Workflow-Designer ](../workflow-designer/using-the-legacy-workflow-designer.md)

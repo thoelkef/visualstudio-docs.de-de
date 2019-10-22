@@ -1,5 +1,5 @@
 ---
-title: Binden von WPF-Steuerelementen an Daten per Push – Teil 1
+title: Binden von WPF-Steuerelementen an Daten-Teil 1
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0d1769440ea72ff477ac78230f2c7c1bb71b5ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc954fe372ccd571151ab6ea09e9c1e3db96206a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816273"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648774"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 
-Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Steuerelemente binden. Um diese datengebundene Steuerelemente zu erstellen, können Sie Elemente aus ziehen die **Datenquellen** Fenster auf die [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] in Visual Studio. In diesem Thema werden einige der häufigsten Aufgaben, Tools und Klassen beschrieben, mit denen Sie datengebundene [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Anwendungen erstellen können.
+Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Steuerelemente binden. Zum Erstellen dieser Daten gebundenen Steuerelemente können Sie Elemente aus dem Fenster **Datenquellen** auf die [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] in Visual Studio ziehen. In diesem Thema werden einige der häufigsten Aufgaben, Tools und Klassen beschrieben, mit denen Sie datengebundene [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Anwendungen erstellen können.
 
-Allgemeine Informationen über das Erstellen von datengebundenen Steuerelementen in Visual Studio finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Weitere Informationen zur [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Datenbindung finden Sie in der [Übersicht über die Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).
+Allgemeine Informationen zum Erstellen von Daten gebundenen Steuerelementen in Visual Studio finden Sie unterbinden von Steuer [Elementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Weitere Informationen zur [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Datenbindung finden Sie in der [Übersicht über die Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Aufgaben beim Binden von WPF-Steuerelementen an Daten
 
@@ -46,65 +46,65 @@ Sie können Elemente im **Datenquellenfenster** nur auf gültige Ablageziele im 
 
 ## <a name="generated-xaml-and-code"></a>Generierte XAML und generierter Code
 
-Beim Ziehen eines Elements aus der **Datenquellen** Fenster aus, um die [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die ein neues datengebundenen Steuerelement definiert (oder ein vorhandenes Steuerelement an die Datenquelle bindet). Für einige Datenquellen generiert Visual Studio Code auch in der CodeBehind-Datei, die die Datenquelle mit Daten füllt.
+Wenn Sie ein Element aus dem **Datenquellen** Fenster in den [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], das ein neues Daten gebundenes Steuerelement definiert (oder ein vorhandenes Steuerelement an die Datenquelle bindet). Für einige Datenquellen generiert Visual Studio auch Code in der Code Behind-Datei, die die Datenquelle mit Daten füllt.
 
-Die folgende Tabelle enthält die [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] und Code, der für jeden Typ von Datenquelle in Visual Studio generiert die **Datenquellen** Fenster.
+In der folgenden Tabelle sind die [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] und der Code aufgelistet, die von Visual Studio für die einzelnen Daten **Quellentypen im Datenquellen** Fenster generiert werden.
 
 | Datenquelle | Generieren von XAML, das ein Steuerelement an die Datenquelle bindet | Generieren von Code, der die Datenquelle mit Daten füllt |
 | - | - | - |
 | DataSet | Ja | Ja |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Ja | Ja |
 | Dienst | Ja | Nein |
-| Object | Ja | Nein |
+| Objekt | Ja | Nein |
 
 ### <a name="datasets"></a>Datasets
 
-Beim Ziehen einer Tabelle oder Spalte aus der **Datenquellen** in den Designer, Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:
+Wenn Sie eine Tabelle oder eine Spalte aus dem **Datenquellen** Fenster in den Designer ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], die Folgendes bewirkt:
 
 - Den Ressourcen des Containers, in den Sie das Element gezogen haben, werden das Dataset und eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Datasets zu navigieren und diese anzuzeigen.
 
-- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, die XAML erstellt, das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
+- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das XAML das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
 Visual Studio nimmt außerdem die folgenden Änderungen an der Code-Behind-Datei vor:
 
-- Es wird ein <xref:System.Windows.FrameworkElement.Loaded>-Ereignishandler für das [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)]-Element erstellt, das das Steuerelement enthält. Der Ereignishandler füllt die Tabelle mit Daten, ruft die <xref:System.Windows.Data.CollectionViewSource> aus den Ressourcen des Containers ab, und legt dann das erste Datenelement als aktuelles Element fest. Wenn eine <xref:System.Windows.FrameworkElement.Loaded> Ereignishandler bereits vorhanden ist, wird Visual Studio fügt dem vorhandenen Ereignishandler diesen Code hinzu.
+- Es wird ein <xref:System.Windows.FrameworkElement.Loaded>-Ereignishandler für das [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)]-Element erstellt, das das Steuerelement enthält. Der Ereignishandler füllt die Tabelle mit Daten, ruft die <xref:System.Windows.Data.CollectionViewSource> aus den Ressourcen des Containers ab, und legt dann das erste Datenelement als aktuelles Element fest. Wenn bereits ein <xref:System.Windows.FrameworkElement.Loaded> Ereignishandler vorhanden ist, fügt Visual Studio dem vorhandenen Ereignishandler diesen Code hinzu.
 
 ### <a name="entity-data-models"></a>Entity Data Models
 
-Sie ziehen, wenn eine Entität oder eine Entitätseigenschaft aus dem **Datenquellen** in den Designer, Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:
+Wenn Sie eine Entität oder eine Entitäts Eigenschaft aus dem **Datenquellen** Fenster in den Designer ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], die Folgendes bewirkt:
 
 - Den Ressourcen des Containers, in den Sie das Element gezogen haben, wird eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten der Entität zu navigieren und diese anzuzeigen.
 
-- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement an das Element. Wenn Sie das Element in einen Container, ziehen die [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wird das Steuerelement erstellt, die für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
+- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
 Visual Studio nimmt außerdem die folgenden Änderungen an der Code-Behind-Datei vor:
 
-- Es wird eine neue Methode hinzugefügt, die eine Abfrage für die Entität zurückgibt, die Sie in den Designer gezogen haben (oder für die Entität, die die Eigenschaft enthält, die Sie in den Designer gezogen haben). Die neue Methode hat den Namen `Get<EntityName>Query`, wobei `\<EntityName>` ist der Name der Entität.
+- Es wird eine neue Methode hinzugefügt, die eine Abfrage für die Entität zurückgibt, die Sie in den Designer gezogen haben (oder für die Entität, die die Eigenschaft enthält, die Sie in den Designer gezogen haben). Die neue Methode hat den Namen `Get<EntityName>Query`, wobei `\<EntityName>` der Name der Entität ist.
 
-- Es wird ein <xref:System.Windows.FrameworkElement.Loaded>-Ereignishandler für das [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)]-Element erstellt, das das Steuerelement enthält. Der Ereignishandler ruft die `Get<EntityName>Query` Methode zum Auffüllen der Entitäts mit Daten, ruft der <xref:System.Windows.Data.CollectionViewSource> aus des Containers Ressourcen und legt dann das erste Datenelement als aktuellen Elements. Wenn eine <xref:System.Windows.FrameworkElement.Loaded> Ereignishandler bereits vorhanden ist, wird Visual Studio fügt dem vorhandenen Ereignishandler diesen Code hinzu.
+- Es wird ein <xref:System.Windows.FrameworkElement.Loaded>-Ereignishandler für das [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)]-Element erstellt, das das Steuerelement enthält. Der Ereignishandler ruft die `Get<EntityName>Query`-Methode auf, um die Entität mit Daten zu füllen, ruft die <xref:System.Windows.Data.CollectionViewSource> aus den Ressourcen des Containers ab und legt dann das erste Datenelement als Aktuelles Element ab. Wenn bereits ein <xref:System.Windows.FrameworkElement.Loaded> Ereignishandler vorhanden ist, fügt Visual Studio dem vorhandenen Ereignishandler diesen Code hinzu.
 
 ### <a name="services"></a>Dienste
 
-Sie ziehen, wenn ein Dienstobjekt oder eine Eigenschaft aus der **Datenquellen** in den Designer, Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die ein vom datengebundenen Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). Visual Studio generiert jedoch keinen Code, der das Proxydienstobjekt mit Daten füllt. Sie müssen diesen Code selbst schreiben. Ein Beispiel zur Veranschaulichung der Vorgehensweise hierfür finden Sie unter [Binden von WPF-Steuerelemente an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+Wenn Sie ein Dienst Objekt oder eine Eigenschaft aus dem **Datenquellen** Fenster in den Designer ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], die ein Daten gebundenes Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). Visual Studio generiert jedoch keinen Code, der das Proxy Dienst Objekt mit Daten füllt. Sie müssen diesen Code selbst schreiben. Ein Beispiel, das die Vorgehensweise veranschaulicht, finden Sie unter [Binden von WPF-Steuerelementen an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
 Visual Studio generiert XAML, das folgende Aktionen ausführt:
 
 - Den Ressourcen des Containers, in den Sie das Element gezogen haben, wird eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des von dem Dienst zurückgegebenen Objekts zu navigieren und diese anzuzeigen.
 
-- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement an das Element. Wenn Sie das Element in einen Container, ziehen die [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wird das Steuerelement erstellt, die für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
+- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
 ### <a name="objects"></a>erzwingen
 
-Beim Ziehen eines Objekts oder einer Eigenschaft aus der **Datenquellen** in den Designer, Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die ein vom datengebundenen Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). Visual Studio erzeugt Code, um das Objekt mit Daten füllen jedoch nicht. Sie müssen diesen Code selbst schreiben.
+Wenn Sie ein Objekt oder eine Eigenschaft aus dem **Datenquellen** Fenster in den Designer ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], die ein Daten gebundenes Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). Visual Studio generiert jedoch keinen Code, um das Objekt mit Daten zu füllen. Sie müssen diesen Code selbst schreiben.
 
 > [!NOTE]
-> Benutzerdefinierte Klassen müssen öffentlich sein und in der Standardeinstellung haben einen Konstruktor ohne Parameter. Geschachtelte Klassen nicht möglich, die einen "Punkt" in der Syntax definiert. Weitere Informationen finden Sie unter [XAML und benutzerdefinierte Klassen für WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Benutzerdefinierte Klassen müssen öffentlich sein und verfügen standardmäßig über einen Konstruktor ohne Parameter. Sie können keine Klassen mit einem "Punkt" in ihrer Syntax enthalten. Weitere Informationen finden Sie unter [XAML und benutzerdefinierte Klassen für WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
-Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:
+Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], die folgende Aktionen durchführt:
 
 - Den Ressourcen des Containers, in den Sie das Element gezogen haben, wird eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Objekt zu navigieren und diese anzuzeigen.
 
-- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, die XAML erstellt, das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
+- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das XAML das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 

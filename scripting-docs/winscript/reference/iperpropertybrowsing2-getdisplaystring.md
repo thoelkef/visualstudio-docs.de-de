@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetDisplayString | Microsoft-Dokumentation
+title: 'IPerPropertyBrowsing2:: GetDisplayString | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6f63db8d9c032b8e880f05d4d21e50fd56c74e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc702ad15d1aba04bf991c04b585728afde4fb41
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944876"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571448"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
-Ruft eine Zeichenfolge zum Anzeigen von Typen, die nicht grundsätzlich angezeigt werden. des zurückgegebenen Texts ist ein Name, Beschreibung der Eigenschaft und kann in der Benutzeroberfläche des Aufrufers angezeigt werden.  
+Ruft eine Zeichenfolge zum Anzeigen von Typen ab, die nicht grundsätzlich sichtbar sind. der zurückgegebene Text ist ein Name, der die Eigenschaft beschreibt und in der Benutzeroberfläche des Aufrufers angezeigt werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,16 +38,16 @@ HRESULT GetDisplayString(
   
 #### <a name="parameters"></a>Parameter  
  `dispid`  
- [in] Der Dispatchbezeichner der Eigenschaft, deren Anzeigename angefordert wird.  
+ in Dispatchbezeichner der Eigenschaft, deren Anzeige Name angefordert wird.  
   
  `pBstr`  
- [out] Zeiger auf die `BSTR` mit dem Anzeigenamen für die identifizierte Eigenschaft `dispID`.  
+ vorgenommen Ein Zeiger auf die `BSTR`, die den anzeigen Amen für die durch `dispID` identifizierte Eigenschaft enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Gibt einen gültigen `HRESULT`, in der Regel `S_OK`.  
+ Gibt eine gültige `HRESULT` zurück, die in der Regel `S_OK`.  
   
 ## <a name="remarks"></a>Hinweise  
- Die zurückgegebene Zeichenfolge ist kein zulässiger Wert der Eigenschaft. Es ist nur eine Zeichenfolgenanzeige der Eigenschaft.  
+ Die zurückgegebene Zeichenfolge ist kein gültiger Wert der-Eigenschaft. Es handelt sich lediglich um eine Zeichen folgen Anzeige der-Eigenschaft.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IPerPropertyBrowsing2-Schnittstelle 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

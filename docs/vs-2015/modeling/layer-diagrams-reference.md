@@ -1,5 +1,5 @@
 ---
-title: 'Ebenendiagramme: Verweis | Microsoft-Dokumentation'
+title: 'Ebenendiagramme: Referenz | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,80 +19,80 @@ helpviewer_keywords:
 - constraints, architectural
 ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8a0654936ac102891981ecbee43430172487628
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440986"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646121"
 ---
 # <a name="layer-diagrams-reference"></a>Ebenendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie eine *Ebenendiagramm* um die hochrangige, logische Architektur des Systems zu visualisieren. Ein Ebenendiagramm organisiert die physischen Artefakte in Ihrem System in logischen, abstrakten Gruppen, die sog. *Ebenen*. Diese Ebenen beschreiben die Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder die Hauptkomponenten des Systems. Jede Ebene kann außerdem geschachtelte Ebenen enthalten, die ausführlichere Aufgaben beschreiben.  
-  
- Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Sie können die vorgesehenen oder vorhandenen Abhängigkeiten zwischen Ebenen angeben. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Indem es das System in Ebenen organisiert, die eindeutige Rollen und Funktionen beschreiben, kann ein Ebenendiagramm das Verstehen, Wiederverwenden und Verwalten von Code vereinfachen.  
-  
- Verwenden Sie ein Ebenendiagramm als Unterstützung bei folgenden Aufgaben:  
-  
-- Kommunizieren der vorhandenen oder vorgesehenen logischen Architektur des Systems  
-  
-- Ermitteln von Konflikten zwischen dem vorhandenen Code und der vorgesehenen Architektur  
-  
-- Visualisieren der Auswirkungen von Änderungen auf die vorgesehene Architektur beim Umgestalten, Aktualisieren oder Entwickeln des Systems  
-  
-- Untermauern der vorgesehenen Architektur während der Entwicklung und Wartung des Codes durch Einschließen von Validierung in Eincheck- und Buildvorgänge  
-  
-  In diesem Thema werden die Elemente beschrieben, die Sie in Ebenendiagrammen verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von Ebenendiagrammen finden Sie unter [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu Ebenenmuster finden Sie auf die [Patterns & Practices-Website](http://go.microsoft.com/fwlink/?LinkId=145794).  
-  
-## <a name="reading-layer-diagrams"></a>Lesen von Ebenendiagrammen  
- ![Elemente in Ebenendiagrammen](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
-  
- In der folgenden Tabelle werden die Elemente beschrieben, die in einem Ebenendiagramm verwendet werden können.  
-  
-|**Form "**|**Element**|**Beschreibung**|  
-|---------------|-----------------|---------------------|  
-|1|**Layer**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die Artefakte anzuzeigen, die auf eine Ebene verknüpft sind, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen** öffnen **Ebenen-Explorer**.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -   **Namespace-Abhängigkeiten verboten** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen.<br />-   **Forbidden Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören müssen.<br />-   **Erforderliche Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen.|  
-|2|**Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** -gibt die Richtung der Abhängigkeit.|  
-|3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Richtung** -gibt die Richtung der Abhängigkeit.|  
-|4|**Kommentar**|Verwenden Sie einen Kommentar, um dem Diagramm oder Elementen im Diagramm allgemeine Hinweise hinzuzufügen.|  
-|5|**Kommentarverknüpfung**|Verwenden Sie dieses Feature, um Kommentare mit Elementen im Diagramm zu verknüpfen.|  
-  
-## <a name="Explorer"></a> Ebenen-Explorer  
- Sie können jede Ebene mit Artefakten in der Projektmappe verknüpfen, z. B. Projekte, Klassen, Namespaces, Projektdateien und andere Teile der Software. Die Zahl auf einer Ebene zeigt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch beim Lesen der Anzahl der Artefakte in einer Ebene Folgendes:  
-  
-- Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.  
-  
-   Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.  
-  
-- Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.  
-  
-  Weitere Informationen zum Verknüpfen von Ebenen und Artefakten finden Sie unter:  
-  
-- [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)  
-  
-- [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)  
-  
-#### <a name="to-examine-the-linked-artifacts"></a>So untersuchen Sie die verknüpften Artefakte  
-  
-- Im Ebenendiagramm das Kontextmenü für eine oder mehrere Ebenen öffnen, und wählen Sie dann **Links anzeigen**.  
-  
-     **Ebenen-Explorer** wird geöffnet und zeigt die Elemente, die mit den ausgewählten Ebenen verknüpft sind. **Ebenen-Explorer** verfügt über eine Spalte, die die Eigenschaften der Artefaktlinks anzeigt.  
-  
+In Visual Studio können Sie ein *ebenendiagramm* verwenden, um die logische Architektur des Systems auf hoher Ebene visuell darzustellen. Ein ebenendiagramm organisiert die physischen Artefakte in Ihrem System in logische, abstrakte Gruppen, die als *Ebenen*bezeichnet werden. Diese Ebenen beschreiben die Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder die Hauptkomponenten des Systems. Jede Ebene kann außerdem geschachtelte Ebenen enthalten, die ausführlichere Aufgaben beschreiben.
+
+ Welche Versionen von Visual Studio dieses Features unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+ Sie können die vorgesehenen oder vorhandenen Abhängigkeiten zwischen Ebenen angeben. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Indem es das System in Ebenen organisiert, die eindeutige Rollen und Funktionen beschreiben, kann ein Ebenendiagramm das Verstehen, Wiederverwenden und Verwalten von Code vereinfachen.
+
+ Verwenden Sie ein Ebenendiagramm als Unterstützung bei folgenden Aufgaben:
+
+- Kommunizieren der vorhandenen oder vorgesehenen logischen Architektur des Systems
+
+- Ermitteln von Konflikten zwischen dem vorhandenen Code und der vorgesehenen Architektur
+
+- Visualisieren der Auswirkungen von Änderungen auf die vorgesehene Architektur beim Umgestalten, Aktualisieren oder Entwickeln des Systems
+
+- Untermauern der vorgesehenen Architektur während der Entwicklung und Wartung des Codes durch Einschließen von Validierung in Eincheck- und Buildvorgänge
+
+  In diesem Thema werden die Elemente beschrieben, die Sie in Ebenendiagrammen verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von ebenendiagrammen finden Sie unter [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu ebenenmustern finden Sie auf der [Seite Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+
+## <a name="reading-layer-diagrams"></a>Lesen von Ebenendiagrammen
+ ![Elemente in ebenendiagrammen](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
+
+ In der folgenden Tabelle werden die Elemente beschrieben, die in einem Ebenendiagramm verwendet werden können.
+
+|**Gebildet**|**Element**|**Beschreibung**|
+|---------------|-----------------|---------------------|
+|1|**Deck**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die mit einer Ebene verknüpften Artefakte anzuzeigen, öffnen Sie das Kontextmenü für die Ebene, und klicken Sie dann auf **Links anzeigen** , um den **Ebenen-Explorer**zu öffnen.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -    unzulässige**Namespace Abhängigkeiten** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht von den angegebenen Namespaces abhängen können.<br />-    unzulässige**Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte nicht zu den angegebenen Namespaces gehören dürfen.<br />-   **erforderliche Namespaces** : gibt an, dass die dieser Ebene zugeordneten Artefakte zu einem der angegebenen Namespaces gehören müssen.|
+|2|**Gkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
+|3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Richtung** : gibt die Richtung der Abhängigkeit an.|
+|4|**Kommentar**|Verwenden Sie einen Kommentar, um dem Diagramm oder Elementen im Diagramm allgemeine Hinweise hinzuzufügen.|
+|5|**Kommentar Verknüpfung**|Verwenden Sie dieses Feature, um Kommentare mit Elementen im Diagramm zu verknüpfen.|
+
+## <a name="Explorer"></a>Ebenenexplorer
+ Sie können jede Ebene mit Artefakten in der Projektmappe verknüpfen, z. B. Projekte, Klassen, Namespaces, Projektdateien und andere Teile der Software. Die Zahl auf einer Ebene zeigt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch beim Lesen der Anzahl der Artefakte in einer Ebene Folgendes:
+
+- Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.
+
+   Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.
+
+- Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
+
+  Weitere Informationen zum Verknüpfen von Ebenen und Artefakten finden Sie unter:
+
+- [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)
+
+- [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)
+
+#### <a name="to-examine-the-linked-artifacts"></a>So untersuchen Sie die verknüpften Artefakte
+
+- Öffnen Sie im ebenendiagramm das Kontextmenü für eine oder mehrere Ebenen, und wählen Sie dann **Verknüpfungen anzeigen**aus.
+
+     Der **Ebenen-Explorer** wird geöffnet und zeigt die Artefakte an, die mit den ausgewählten Ebenen verknüpft sind. Der **ebenenexplorer** verfügt über eine Spalte, in der die einzelnen Eigenschaften der artefaktlinks angezeigt werden.
+
     > [!NOTE]
-    > Wenn Sie alle diese Eigenschaften können nicht angezeigt wird, erweitern Sie die **Ebenen-Explorer** Fenster.  
-  
-    |**Die Spalte im Ebenen-Explorer**|**Beschreibung**|  
-    |----------------------------------|---------------------|  
-    |**Kategorien**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|  
-    |**Layer**|Die Ebene, die mit dem Artefakt verknüpft ist.|  
-    |**Unterstützt die Validierung**|Wenn **"true"**, und klicken Sie dann die ebenenvalidierung überprüfen kann, dass das Projekt mit Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn **"false"**, und klicken Sie dann der Link nicht an der ebenenvalidierung beteiligt ist.<br /><br /> Weitere Informationen finden Sie unter [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).|  
-    |**Bezeichner**|Der Verweis auf das verknüpfte Artefakt|  
-  
-## <a name="see-also"></a>Siehe auch  
+    > Wenn nicht alle diese Eigenschaften angezeigt werden, erweitern Sie das Fenster **Ebenen-Explorer** .
+
+    |**Spalte im ebenenexplorer**|**Beschreibung**|
+    |----------------------------------|---------------------|
+    |**Klassen**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|
+    |**Deck**|Die Ebene, die mit dem Artefakt verknüpft ist.|
+    |**Unterstützt Validierung**|Wenn **true**, kann der ebenenvalidierungsprozess überprüfen, ob das Projekt Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn der Wert **false**ist, wird der Link nicht an dem ebenenvalidierungsprozess beteiligt.<br /><br /> Weitere Informationen finden Sie unter [ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).|
+    |**Bezeichner**|Der Verweis auf das verknüpfte Artefakt|
+
+## <a name="see-also"></a>Siehe auch
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)

@@ -9,22 +9,22 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b3ce1dcfd91c906ed050eed770dab7a8dc0e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871702"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659284"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein *Textvorlagen*<em>Host</em> stellt eine Umgebung bereit, mit der die *Textvorlagen-Transformations-Engine* ausgeführt werden kann. Der Host ist für die Verwaltung der Interaktion der Engine mit dem Dateisystem zuständig. Die Engine oder der Direktivenprozessor, die eine Datei oder eine Assembly benötigt, kann eine Ressource vom Host anfordern. Der Host kann dann Verzeichnisse und den globalen Assemblycache nach der angeforderten Ressource durchsuchen. Weitere Informationen finden Sie [unter Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).
+Ein *Textvorlagen*<em>Host</em> stellt eine Umgebung bereit, mit der die *Textvorlagen-Transformations-Engine* ausgeführt werden kann. Der Host ist für die Verwaltung der Interaktion der Engine mit dem Dateisystem zuständig. Die Engine oder der *Direktivenprozessor* , die eine Datei oder eine Assembly benötigt, kann eine Ressource vom Host anfordern. Der Host kann dann Verzeichnisse und den globalen Assemblycache nach der angeforderten Ressource durchsuchen. Weitere Informationen finden Sie [unter Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).
 
- Sie können einen benutzerdefinierten Host schreiben, wenn Sie die *Textvorlagen-Transformations* Funktionalität von außerhalb [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] von verwenden möchten oder wenn Sie diese Funktionalität in benutzerdefinierte Tools integrieren möchten. Um einen benutzerdefinierten Host zu erstellen, müssen Sie eine Klasse erstellen, die von [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))erbt. Die Dokumentation der einzelnen Methoden finden Sie unter [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
+ Sie können einen benutzerdefinierten Host schreiben, wenn Sie die *Textvorlagen-Transformations* Funktionalität von außerhalb [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden möchten oder wenn Sie diese Funktionalität in benutzerdefinierte Tools integrieren möchten. Um einen benutzerdefinierten Host zu erstellen, müssen Sie eine Klasse erstellen, die von [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))erbt. Die Dokumentation der einzelnen Methoden finden Sie unter [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
 > [!WARNING]
 > Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung oder ein -Paket schreiben, verwenden Sie ggf. den Textvorlagendienst, anstatt einen eigenen Host zu erstellen. Weitere Informationen finden Sie unter [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
@@ -35,7 +35,7 @@ Ein *Textvorlagen*<em>Host</em> stellt eine Umgebung bereit, mit der die *Textvo
 
 - Testen des benutzerdefinierten Hosts
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
 - Visual Studio 2010 oder höher
@@ -51,9 +51,9 @@ Ein *Textvorlagen*<em>Host</em> stellt eine Umgebung bereit, mit der die *Textvo
 
 2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \*.0**
 
-    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**
+    - **Microsoft. VisualStudio. TextTemplating. Interfaces. 10.0 und spätere Versionen**
 
 3. Ersetzen Sie den Code in der Datei "Program.cs" oder "Module1.vb" durch folgenden Code:
 
@@ -714,7 +714,7 @@ Ein *Textvorlagen*<em>Host</em> stellt eine Umgebung bereit, mit der die *Textvo
     End Namespace
     ```
 
-4. Öffnen [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Sie nur für das Menü **Projekt** , und klicken Sie auf **customhost-Eigenschaften**. Klicken Sie in der Liste **Start Objekt** auf **customhost. Program**.
+4. Öffnen Sie nur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] das Menü **Projekt** , und klicken Sie auf **customhost-Eigenschaften**. Klicken Sie in der Liste **Start Objekt** auf **customhost. Program**.
 
 5. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
@@ -725,7 +725,7 @@ Ein *Textvorlagen*<em>Host</em> stellt eine Umgebung bereit, mit der die *Textvo
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>So erstellen Sie eine Textvorlage zum Testen des benutzerdefinierten Hosts
 
-1. Erstellen Sie eine Textdatei, und benennen `TestTemplate.tt`Sie Sie.
+1. Erstellen Sie eine Textdatei, und benennen Sie Sie `TestTemplate.tt`.
 
      Sie können einen beliebigen Text-Editor (z. B. Editor) zum Erstellen der Datei verwenden.
 
@@ -817,7 +817,7 @@ Ein *Textvorlagen*<em>Host</em> stellt eine Umgebung bereit, mit der die *Textvo
     ```
 
 ## <a name="next-steps"></a>Nächste Schritte
- In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Direktivenprozessoren aufrufen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+ In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Direktivenprozessoren aufrufen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Verbinden eines Hosts mit einem generierten Direktivenprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Siehe auch
 

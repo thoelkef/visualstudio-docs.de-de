@@ -1,5 +1,5 @@
 ---
-title: Neudefinition einer Bezeichnung | Microsoft-Dokumentation
+title: Bezeichnung neu definiert | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,22 +14,22 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8a22768367963f283f32a5d898cb3db3d1c7f9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006991"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573773"
 ---
 # <a name="label-redefined"></a>Die Bezeichnung wurde neu definiert
-Sie erstellt eine neue Bezeichnung, aber den Namen einer vorhandenen Bezeichnung zugewiesen. Bezeichnungen können verwendet werden, um Blöcke von Code zu markieren, aber innerhalb eines angegebenen Bereichs ist, sie muss eindeutig sein.  
+Sie haben eine neue Bezeichnung erstellt, aber den Namen einer vorhandenen Bezeichnung erteilt. Bezeichnungen können zum Markieren von Code Blöcken verwendet werden, aber innerhalb eines angegebenen Bereichs müssen Sie eindeutig sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Stellen Sie sicher, dass alle Bezeichnungen, die Sie in Ihren Programmen verwenden in ihren jeweiligen Gültigkeitsbereichen eindeutig sind.  
+- Stellen Sie sicher, dass alle Bezeichnungen, die Sie in ihren Programmen verwenden, innerhalb der jeweiligen Bereiche eindeutig sind.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Anweisung mit Bezeichnung](../../javascript/reference/labeled-statement-javascript.md)   
- [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)   
+ [Bezeichnete Anweisung](../../javascript/reference/labeled-statement-javascript.md)    
+ [Switch-Anweisung](../../javascript/reference/switch-statement-javascript.md)    
  [break-Anweisung](../../javascript/reference/break-statement-javascript.md)   
  [continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)

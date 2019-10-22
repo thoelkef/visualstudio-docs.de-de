@@ -7,19 +7,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918370"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301707"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Übersicht von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
 Visual Studio kann eine simulierte Auslastung für Ihre App mithilfe von physischen oder virtuellen Computern generieren. Diese Computer müssen als einzelne Testcontroller und Test-Agents eingerichtet werden. Mithilfe des Testcontrollers und der Test-Agents können Sie eine größere Auslastung generieren als mit nur einem Computer.
 
 > [!NOTE]
-> Sie können ebenfalls cloudbasierte Auslastungstests verwenden, um virtuelle Computer bereitzustellen, die die Auslastung vieler Benutzer generieren, die gleichzeitig auf Ihre Website zugreifen. Weitere Informationen zu cloudbasierten Auslastungstests finden Sie unter [Run load tests using Azure Test Plans (Ausführen von Auslastungstests mithilfe von Azure Test Plans)](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> Sie können ebenfalls cloudbasierte Auslastungstests verwenden, um virtuelle Computer bereitzustellen, die die Auslastung vieler Benutzer generieren, die gleichzeitig auf Ihre Website zugreifen. Die Verwendung des Setups mit Testcontroller/Test-Agent auf in der Cloud gehosteten virtuellen Computern wird jedoch nicht unterstützt. Weitere Informationen zu cloudbasierten Auslastungstests finden Sie unter [Run load tests using Azure Test Plans (Ausführen von Auslastungstests mithilfe von Azure Test Plans)](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

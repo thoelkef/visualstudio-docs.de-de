@@ -1,5 +1,5 @@
 ---
-title: 'CA1047: Geschützte Member in versiegelten Typen nicht deklarieren | Microsoft-Dokumentation'
+title: 'CA1047: geschützte Member in versiegelten Typen nicht deklarieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - DoNotDeclareProtectedMembersInSealedTypes
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6d949a756dfe3ff22ba43d172078d35bfe706e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536090"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668181"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Geschützte Member in versiegelten Typen nicht deklarieren.
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Geschützte Member in versiegelten Typen nicht deklarieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Ist ein öffentlicher Typ `sealed` (`NotInheritable` in Visual Basic), und deklarieren Sie einen geschützten Member oder einen geschützten geschachtelten Typ. Diese Regel meldet keine Verstöße für <xref:System.Object.Finalize%2A> -Methoden, die diesem Muster folgen müssen.
+ Ein öffentlicher Typ ist `sealed` (`NotInheritable` in Visual Basic) und deklariert einen geschützten Member oder einen geschützten Typ. Diese Regel meldet keine Verstöße gegen <xref:System.Object.Finalize%2A> Methoden, die diesem Muster folgen müssen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Typen deklarieren geschützte Member, damit erbende Typen auf den Member zugreifen oder diesen überschreiben können. Per Definition können nicht Sie aus einem versiegelten Typ erben, d. h., die geschützten Methoden in versiegelten Typen nicht aufgerufen werden kann.
+ Typen deklarieren geschützte Member, damit erbende Typen auf den Member zugreifen oder diesen überschreiben können. Definitionsgemäß können Sie nicht von einem versiegelten Typ erben, was bedeutet, dass geschützte Methoden für versiegelte Typen nicht aufgerufen werden können.
 
- Der c#-Compiler gibt eine Warnung für diesen Fehler.
+ Der C# Compiler gibt eine Warnung für diesen Fehler aus.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zugriffsebene des Members in privat, oder ändern Sie den Typ geerbt.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zugriffsebene des Members in privat, oder machen Sie den Typ vererbbar.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnung dieser Regel. Verlassen den Typ im aktuellen Zustand kann dazu führen, dass Wartungsprobleme und bietet keine Vorteile.
+ Unterdrücken Sie keine Warnung dieser Regel. Wenn Sie den Typ im aktuellen Zustand belassen, kann dies zu Wartungsproblemen führen und bietet keine Vorteile.
 
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt.

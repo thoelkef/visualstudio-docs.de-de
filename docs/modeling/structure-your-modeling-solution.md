@@ -2,17 +2,17 @@
 title: Strukturieren der Modellierungslösung
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b602afa2b6611f5201515f492f7b3c7bb7afa08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bc88e4d5d292d38874f23c9d37b3e553433de01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003365"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660059"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturieren der Modellierungslösung
 
@@ -22,7 +22,7 @@ Um schnell mit einem Projekt oder Unterprojekt beginnen zu können, ist es hilfr
 
 In diesem Thema wird davon ausgegangen, dass Sie an einem Projekt arbeiten, das so groß ist, dass mehrere Teammitglieder erforderlich sind, und an dem möglicherweise mehrere Teams beteiligt sind. Der Code und die Modelle des Projekts sind in einem Quellcodeverwaltungssystem wie z. B. [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] gespeichert. Zumindest einige Teammitglieder verwenden Visual Studio zum Entwickeln von Modellen, und andere Teammitglieder können die Modelle mit anderen Versionen von Visual Studio anzeigen.
 
-Welche Versionen von Visual Studio die einzelnen Tools und Modellierungsfunktionen-Funktionen unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Welche Versionen von Visual Studio die einzelnen Tools und Modellierungsfunktionen unterstützen, erfahren Sie unter [Versions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Projektmappenstruktur
 
@@ -30,35 +30,35 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
 ### <a name="to-divide-an-application-into-layers"></a>So unterteilen Sie eine Anwendung in Ebenen
 
-1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. Eine verschiedene allgemeine Architekturen erläutert [Anwendungsarchetypen in der Microsoft-Anwendungsarchitekturanleitung](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. Eine Reihe von gängigen Architekturen finden Sie im [Leitfaden zur Microsoft-Anwendungsarchitektur unter Anwendungs-archetypes](http://go.microsoft.com/fwlink/?LinkId=196681).
 
-2. Visual Studio-Projektmappe, die wir den Namen die Architektur-Projektmappe zu erstellen. Diese Projektmappe wird zur Erstellung des allgemeinen Entwurfs des Systems verwendet. Es enthält Modelle, jedoch keinen Code.
+2. Erstellen Sie eine Visual Studio-Projekt Mappe, die wir als Architektur Lösung bezeichnen. Diese Projektmappe wird zur Erstellung des allgemeinen Entwurfs des Systems verwendet. Es enthält Modelle, jedoch keinen Code.
 
-   Fügen Sie ein Abhängigkeitsdiagramm mit dieser Lösung hinzu. Zeichnen Sie auf das Abhängigkeitsdiagramm die Architektur, die Sie für Ihre Anwendung ausgewählt haben. Das Diagramm kann beispielsweise diese Ebenen und die Abhängigkeiten zwischen ihnen anzeigen: Präsentation; Geschäftslogik; und die Daten.
+   Fügen Sie dieser Projekt Mappe ein Abhängigkeits Diagramm hinzu. Zeichnen Sie im Abhängigkeits Diagramm die Architektur, die Sie für Ihre Anwendung ausgewählt haben. Das Diagramm kann beispielsweise die folgenden Ebenen und die Abhängigkeiten zwischen ihnen zeigen: Präsentation, Geschäftslogik und Daten.
 
-4. Erstellen Sie ein separates Visual Studio-Projektmappe für jede Ebene im Architekturdiagramm Abhängigkeit an.
+4. Erstellen Sie eine separate Visual Studio-Projekt Mappe für jede Ebene im Architektur Abhängigkeits Diagramm.
 
    Diese Projektmappen werden verwendet, um den Code für die Ebenen zu entwickeln.
 
-5. Erstellen Sie Modelle, die darstellen, die die Entwürfe der Ebenen und Konzepte, die für alle Ebenen gelten. Ordnen Sie die Modelle so an, dass alle Modelle in der Architektur-Projektmappe und die relevanten Modelle in den einzelnen Ebenen angezeigt werden können.
+5. Erstellen Sie Modelle, die die Entwürfe der Ebenen und die Konzepte darstellen, die allen Ebenen gemeinsam sind. Ordnen Sie die Modelle so an, dass alle Modelle in der Architektur-Projektmappe und die relevanten Modelle in den einzelnen Ebenen angezeigt werden können.
 
    Sie können dies mit einem der folgenden Verfahren erreichen. Bei der ersten Alternative wird für jede Ebene ein separates Modellierungsprojekt erstellt, und bei der zweiten wird ein einzelnes Modellierungsprojekt erstellt, das von den Ebenen gemeinsam genutzt wird.
 
-#### <a name="use-a-separate-modeling-project-for-each-layer"></a>Verwenden Sie ein separates Modellierungsprojekt für jede Ebene
+#### <a name="use-a-separate-modeling-project-for-each-layer"></a>Verwenden Sie für jede Ebene ein separates Modellierungsprojekt.
 
 1. Erstellen Sie in jeder Ebenenprojektmappe ein Modellierungsprojekt.
 
-   Dieses Modell enthält Diagramme, die die Anforderungen und den Entwurf der jeweiligen Ebene beschrieben werden. Sie können auch Abhängigkeitsdiagramme enthalten, die geschachtelte Ebenen zeigen.
+   Dieses Modell enthält Diagramme, in denen die Anforderungen und der Entwurf dieser Ebene beschrieben werden. Sie kann auch Abhängigkeits Diagramme enthalten, die für die Anzeige von Ebenen stehen.
 
    Sie verfügen jetzt über ein Modell für jede Ebene sowie über ein Modell für die Anwendungsarchitektur. Jedes Modell ist in einer eigenen Projektmappe enthalten. Dies ermöglicht es Teammitgliedern, gleichzeitig an den Ebenen zu arbeiten.
 
-2. Fügen Sie der Architektur-Projektmappe das Modellierungsprojekt jeder Ebenenprojektmappe hinzu. Öffnen Sie hierzu die Architektur-Projektmappe. In **Projektmappen-Explorer**, mit der rechten Maustaste des Knotens Projektmappe, zeigen Sie auf Hinzufügen, und klicken Sie dann auf **vorhandenes Projekt**. Navigieren Sie zum Modellierungsprojekt (.modelproj) in einer Ebenenprojektmappe.
+2. Fügen Sie der Architektur-Projektmappe das Modellierungsprojekt jeder Ebenenprojektmappe hinzu. Öffnen Sie hierzu die Architektur-Projektmappe. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Lösungs Knoten, zeigen Sie auf Hinzufügen, und klicken Sie dann auf **vorhandenes Projekt**. Navigieren Sie zum Modellierungsprojekt (.modelproj) in einer Ebenenprojektmappe.
 
    Jedes Modell wird jetzt in zwei Projektmappen angezeigt: der Start-Projektmappe und der Architektur-Projektmappe.
 
-3. Fügen Sie dem Modellierungsprojekt jeder Ebene ein Abhängigkeitsdiagramm aus. Beginnen Sie mit der eine Kopie des Architekturdiagramms Abhängigkeit. Sie können Teile löschen, die keine Abhängigkeiten des Diagramms abhängig sind.
+3. Fügen Sie dem Modellierungsprojekt jeder Ebene ein Abhängigkeits Diagramm hinzu. Beginnen Sie mit einer Kopie des Architektur Abhängigkeits Diagramms. Sie können Teile löschen, die keine Abhängigkeiten vom Abhängigkeits Diagramm sind.
 
-   Sie können auch Abhängigkeitsdiagramme hinzufügen, die die ausführliche Struktur dieser Ebene darstellen.
+   Sie können auch Abhängigkeits Diagramme hinzufügen, die die detaillierte Struktur dieser Ebene darstellen.
 
    Diese Diagramme werden verwendet, um den Code zu überprüfen, der in dieser Ebene entwickelt wird.
 
@@ -68,37 +68,37 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
    Diese Methode stellt sicher, dass keine Störungen von Entwicklern verursacht werden, die die Ebenenmodelle zur gleichen Zeit bearbeiten.
 
-   Da die Modelle getrennt sind, ist es jedoch schwierig, auf allgemeine Konzepte zu verweisen. Jedes Modell muss eine eigene Kopie der Elemente aufweisen, von denen es über andere Ebenen und die Architektur abhängig ist. Das Abhängigkeitsdiagramm in jeder Ebene muss mit der Abhängigkeit Architekturdiagramm synchron gehalten werden. Es ist schwierig, die Synchronisierung beizubehalten, wenn sich diese Elemente ändern, obwohl Sie zu diesem Zweck Tools entwickeln könnten.
+   Da die Modelle getrennt sind, ist es jedoch schwierig, auf allgemeine Konzepte zu verweisen. Jedes Modell muss eine eigene Kopie der Elemente aufweisen, von denen es über andere Ebenen und die Architektur abhängig ist. Das Abhängigkeits Diagramm in jeder Ebene muss mit dem Architektur Abhängigkeits Diagramm synchron gehalten werden. Es ist schwierig, die Synchronisierung beizubehalten, wenn sich diese Elemente ändern, obwohl Sie zu diesem Zweck Tools entwickeln könnten.
 
-#### <a name="use-a-separate-package-for-each-layer"></a>Verwenden Sie ein separates Paket für jede Ebene
+#### <a name="use-a-separate-package-for-each-layer"></a>Verwenden Sie für jede Ebene ein separates Paket.
 
-1. Fügen Sie in der Projektmappe für jede Ebene das Architektur-Modellierungsprojekt hinzu. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**. Das einzelne Modellierungsprojekt kann nun aus allen Projektmappen aufgerufen werden: das Projekt für die Architektur und das Entwicklungsprojekt für jede Ebene.
+1. Fügen Sie in der Projektmappe für jede Ebene das Architektur-Modellierungsprojekt hinzu. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Lösungs Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**. Das einzelne Modellierungsprojekt kann nun aus allen Projektmappen aufgerufen werden: das Projekt für die Architektur und das Entwicklungsprojekt für jede Ebene.
 
-2. Erstellen Sie ein Paket für jede Ebene im shared-Modell: In **Projektmappen-Explorer**, wählen Sie das Modellierungsprojekt. In **UML-Modell-Explorer**mit der rechten Maustaste auf den Modellstammknoten, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Paket**.
+2. Erstellen Sie im freigegebenen Modell ein Paket für jede Ebene: Wählen Sie in **Projektmappen-Explorer**das Modellierungsprojekt aus. Klicken Sie im **UML-Modell-Explorer**mit der rechten Maustaste auf den Modell Stamm Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Paket**
 
-   Jedes Paket enthält Diagramme, die die Anforderungen und den Entwurf der jeweiligen Ebene beschrieben werden.
+   Jedes Paket enthält Diagramme, in denen die Anforderungen und der Entwurf der entsprechenden Ebene beschrieben werden.
 
-3. Fügen Sie falls erforderlich, lokale Abhängigkeitsdiagramme für die interne Struktur der einzelnen Ebenen hinzu.
+3. Fügen Sie bei Bedarf lokale Abhängigkeits Diagramme für die interne Struktur jeder Ebene hinzu.
 
    Diese Methode ermöglicht es, dass die Entwurfselemente der einzelnen Ebenen direkt auf die der Ebenen und gemeinsame Architektur verweisen, von denen sie abhängen.
 
    Obwohl das gleichzeitige Arbeiten an verschiedenen Paketen Konflikte verursachen kann, sind sie relativ einfach zu lösen, da die Pakete in separaten Dateien gespeichert werden.
 
-## <a name="create-architecture-templates"></a>Erstellen von Architekturvorlagen
+## <a name="create-architecture-templates"></a>Erstellen von Architektur Vorlagen
 
-In der Praxis nicht alle Visual Studio-Projektmappen zur gleichen Zeit zu erstellen, aber während des Projekts hinzufügen. Sie müssen wahrscheinlich auch die dieselbe Projektmappenstruktur für zukünftige Projekte verwenden. Um schnell neue Projektmappen erstellen zu können, können Sie eine Projektmappen- oder Projektvorlage erstellen. Sie können die Vorlage in einer Visual Studio Integration Extension (VSIX) erfassen, damit Sie sie einfach verteilen und auf anderen Computern installieren können.
+In der Praxis erstellen Sie nicht all Ihre Visual Studio-Projektmappen gleichzeitig, sondern fügen Sie hinzu, wenn das Projekt fortschreitet. Sie verwenden wahrscheinlich auch die gleiche Lösungs Struktur in zukünftigen Projekten. Um schnell neue Projektmappen erstellen zu können, können Sie eine Projektmappen- oder Projektvorlage erstellen. Sie können die Vorlage in einer Visual Studio Integration Extension (VSIX) erfassen, damit Sie sie einfach verteilen und auf anderen Computern installieren können.
 
 Wenn Sie beispielsweise häufig Projektmappen mit Präsentations-, Geschäfts- und Datenebenen verwenden, können Sie eine Vorlage konfigurieren, die neue Projektmappen mit dieser Struktur erstellt.
 
 ### <a name="to-create-a-solution-template"></a>So erstellen Sie ein Projektmappenvorlage
 
-1. [Herunterladen und installieren Sie den Assistenten zum Exportieren von Vorlagen](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Herunterladen und Installieren des Assistenten zum Exportieren von Vorlagen](http://go.microsoft.com/fwlink/?LinkId=196686)
 
 2. Erstellen Sie die Projektmappenstruktur, die Sie als Ausgangspunkt für zukünftige Projekte verwenden möchten.
 
 3. Klicken Sie im Menü **Datei** auf **Vorlage als VSIX exportieren**.
 
-   Die **Exportieren der Vorlage als VSIX-Assistenten** wird geöffnet.
+   Der **Assistent "Vorlage als VSIX exportieren** " wird geöffnet.
 
 4. Folgen Sie den Anweisungen im Assistenten und wählen Sie die Projekte aus, die in die Vorlage aufgenommen werden sollen, geben Sie einen Namen und eine Beschreibung für die Vorlage an, und geben Sie einen Ausgabespeicherort an.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddStackFrameSniffer | Microsoft-Dokumentation
+title: 'Idebugapplication:: addstackframesniffer | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16fb941a91482c548284dc3d4317a472fd9be641
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a461c24b6f62f1e0ece88915e097faf0c59f15e7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991052"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575030"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-Diese Anwendung hinzugefügt einen Stack-Frame-Enumerator-Anbieter.  
+Fügt dieser Anwendung einen Stapel Rahmen-enumeratoranbieter hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT AddStackFrameSniffer(
   
 #### <a name="parameters"></a>Parameter  
  `pdsfs`  
- [in] Der Stapel Frame Enumerator Anbieter, um diese Anwendung hinzuzufügen.  
+ in Der Stapel Rahmen-enumeratoranbieter, der dieser Anwendung hinzugefügt werden soll.  
   
  `pdwCookie`  
- [out] Ein Cookie, das zum Entfernen dieser Stack-Frame-Enumerator-Anbieter aus der Anwendung verwendet wird.  
+ vorgenommen Ein Cookie, das verwendet wird, um diesen Stapel Rahmen-enumeratoranbieter aus der Anwendung zu entfernen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,9 +51,9 @@ HRESULT AddStackFrameSniffer(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Obwohl die Sprach-Engines rufen in der Regel diese Methode, um ihre Stapelrahmen an den Debugger verfügbar zu machen, ist es möglich, für andere Entitäten, Stapelrahmen verfügbar zu machen.  
+ Obwohl Sprachmodule diese Methode in der Regel zum verfügbar machen ihrer Stapel Rahmen für den Debugger aufruft, ist es möglich, dass andere Entitäten Stapel Rahmen verfügbar machen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
- [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
+ [Idebugapplication:: removestackframesniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
  [IDebugStackFrameSniffer-Schnittstelle](../../winscript/reference/idebugstackframesniffer-interface.md)

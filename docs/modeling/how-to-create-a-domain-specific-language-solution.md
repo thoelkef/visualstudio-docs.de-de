@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung'
+title: 'Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,37 +8,37 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445209"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609393"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung
-Eine domänenspezifische Sprache (DSL) wird mit speziellen Visual Studio-Projektmappe erstellt.
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
+Eine domänenspezifische Sprache (DSL) wird mithilfe einer spezialisierten Visual Studio-Projekt Mappe erstellt.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
-Bevor Sie dieses Verfahren starten können, werden installieren Sie diese Komponenten:
+Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Komponenten:
 
 - Visual Studio
-- Visual Studio SDK (als Teil der **Visual Studio-extensionentwicklung** arbeitsauslastung)
-- Modellierungs-SDK (als Visual Studio-Komponente installiert)
+- Visual Studio SDK (installiert als Teil der **Visual Studio-Erweiterungs Entwicklung** )
+- Modellierungs-SDK (installiert als Visual Studio-Komponente)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer Lösung einer domänenspezifischen Sprache
+## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer domänenspezifischen Sprachlösung
 
-1. Die DSL-Assistenten starten, indem Sie beim Erstellen eines neuen **domänenspezifischen Sprachdesigner** Projekt.
+1. Starten Sie den DSL-Assistenten, indem Sie ein neues **Domänen spezifisches sprach-Designer** -Projekt erstellen.
 
    > [!NOTE]
-   > Idealerweise sollte der Name, den Sie für das Projekt auswählen ein gültiger Visual C# Bezeichner, weil sie zum Generieren von Code verwendet werden kann.
+   > Vorzugsweise sollte der Name, den Sie für das Projekt auswählen, ein gültiger C# visueller Bezeichner sein, da er zum Generieren von Code verwendet werden kann.
 
    ::: moniker range="vs-2017"
 
@@ -46,75 +46,75 @@ Bevor Sie dieses Verfahren starten können, werden installieren Sie diese Kompon
 
    ::: moniker-end
 
-2. Wählen Sie eine DSL-Vorlage.
+2. Wählen Sie eine DSL-Vorlage aus.
 
-    Auf der **domänenspezifische Sprachoptionen auswählen** Seite, wählen Sie eine der Lösungsvorlagen wie z. B. **minimale Sprache**. Wählen Sie eine Vorlage, die die DSL ähnelt, die Sie erstellen möchten.
+    Wählen Sie auf der Seite **Optionen für domänenspezifische Sprache auswählen** eine der Lösungs Vorlagen aus, z. b. **minimale Sprache**. Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt.
 
-    Weitere Informationen zu Vorlagen finden Sie unter [Auswählen einer Lösungsvorlage für Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Lösungs Vorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3. Geben Sie eine Dateinamenerweiterung auf die **Dateierweiterung** Seite. Es muss auf dem Computer eindeutig sein und in jeder Computer, auf denen Sie die DSL installieren möchten. Daraufhin sollte die Nachricht **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**.
+3. Geben Sie auf der Seite **Dateierweiterung** eine Dateierweiterung ein. Sie muss auf Ihrem Computer und auf allen Computern, auf denen Sie die DSL installieren möchten, eindeutig sein. Die Meldung " **keine Anwendungen oder Visual Studio-Editoren" sollte diese Erweiterung verwenden**.
 
-   - Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können diese out durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das in das Menü "Visual Studio SDK" gefunden werden kann.
+   - Wenn Sie die Dateinamenerweiterung in früheren experimentellen DSLs verwendet haben, die noch nicht vollständig installiert wurden, können Sie Sie mit dem Tool " **experimentelle Instanz zurücksetzen** " löschen, das sich im Visual Studio SDK-Menü befindet.
 
-   - Wenn eine andere Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+   - Wenn eine andere Visual Studio-Erweiterung, die diese Dateierweiterung verwendet, vollständig auf dem Computer installiert wurde, sollten Sie diese deinstallieren. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**.
 
-4. Überprüfen Sie und bei Bedarf passen Sie an, die Felder in den verbleibenden Seiten des Assistenten. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig stellen**. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistentenseiten](#settings).
+4. Überprüfen Sie die Felder auf den verbleibenden Seiten des Assistenten, und passen Sie Sie ggf. an. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig**stellen. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistenten Seiten](#settings).
 
-    Der Assistent erstellt eine Projektmappe mit zwei Projekten, die benannt werden **Dsl** und **DslPackage**.
+    Der Assistent erstellt eine Projekt Mappe mit zwei Projekten namens **DSL** und **dslpackage**.
 
    > [!NOTE]
-   > Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.
+   > Wenn eine Meldung angezeigt wird, dass keine Textvorlagen aus nicht vertrauenswürdigen Quellen ausgeführt werden sollen, klicken Sie auf **OK**. Diese Meldung kann so festgelegt werden, dass Sie nicht erneut angezeigt wird.
 
-## <a name="settings"></a> Die DSL-Designer-Assistent-Seiten
- Sie können einige Felder die Standardwerte unverändert lassen. Allerdings stellen Sie sicher, dass Sie das Feld für die Erweiterung festlegen.
+## <a name="settings"></a>Die Seiten des DSL-Designer-Assistenten
+ Sie können einige der Felder unverändert lassen, um die Standardwerte zu ändern. Stellen Sie jedoch sicher, dass Sie das Feld Dateierweiterung festgelegt haben.
 
-### <a name="solution-settings-page"></a>Seite "Lösung-Einstellungen"
- **Welcher Vorlage soll auf Ihrer domänenspezifischen Sprache basieren?**
-Wählen Sie eine Vorlage, die die DSL ähnelt, die Sie erstellen möchten. Die anderen Vorlagen bieten praktische Ausgangspunkte. Wenn Sie eine Vorlage auswählen, zeigt der Assistent eine Beschreibung an. Weitere Informationen zu Vorlagen finden Sie unter [Auswählen einer Lösungsvorlage für Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
+### <a name="solution-settings-page"></a>Seite "Lösungs Einstellungen"
+ **Auf welcher Vorlage möchten Sie Ihre domänenspezifische Sprache aufbauen?**
+Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt. Die verschiedenen Vorlagen bieten praktische Ausgangspunkte. Wenn Sie eine Projektmappenvorlage auswählen, zeigt der Assistent eine Beschreibung an. Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Lösungs Vorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- **Was möchten Sie zum Benennen Ihrer domänenspezifischen Sprache?**
-Der Standardwert ist der Projektmappenname. Von diesem Wert wird Code generiert. Es muss als C#-Klassenname gültig sein.
+ **Wie möchten Sie Ihre domänenspezifische Sprache benennen?**
+Der Standardwert ist der Projektmappenname. Der Code wird aus diesem Wert generiert. Er muss als C# Klassenname gültig sein.
 
-### <a name="file-extension-page"></a>Seite "Dateierweiterung"-Datei
+### <a name="file-extension-page"></a>Datei Erweiterungs Seite
  **Welche Erweiterung sollen Modelldateien verwenden?**
 Geben Sie eine neue Dateierweiterung ein.
 
- Stellen Sie sicher, dass diese Erweiterung nicht bereits für die Verwendung in diesem Computer wie folgt registriert wurde:
+ Vergewissern Sie sich, dass diese Dateierweiterung nicht bereits für die Verwendung auf diesem Computer registriert wurde. gehen Sie hierzu wie folgt vor:
 
- Suchen Sie unter **anderen Tools und Anwendungen registriert werden, um diese Erweiterung behandeln**. Wenn die Meldung **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**, können Sie diese Erweiterung verwenden.
+ Sehen **Sie sich die anderen Tools und Anwendungen an, die für diese Erweiterung registriert**sind. Wenn die Meldung " **keine Anwendungen oder Visual Studio-Editoren verwenden diese Erweiterung**" angezeigt wird, können Sie diese Dateierweiterung verwenden.
 
- Wenn Sie eine Liste der Tools oder Pakete angezeigt wird, sollten Sie eine der folgenden tun:
+ Wenn eine Liste der Tools oder Pakete angezeigt wird, sollten Sie eine der folgenden Aktionen ausführen:
 
-- Geben Sie eine andere Dateinamenerweiterung.
+- Geben Sie eine andere Dateierweiterung ein.
 
-     \- oder –
+     \- oder -
 
-- Zurücksetzen der experimentellen Instanz von Visual Studio. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.
+- Setzen Sie die experimentelle Instanz von Visual Studio zurück. Dadurch wird die Registrierung aller zuvor erstellten DSLs aufgehoben. Klicken Sie im **Startmenü** auf **Alle Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und setzen Sie dann **die experimentelle Microsoft Visual Studio 2010-Instanz zurück**. Sie können alle anderen DSLs neu erstellen, die Sie wieder verwenden möchten.
 
-     \- oder –
+     \- oder -
 
-- Wenn Sie eine Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, deinstallieren Sie es aus. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+- Wenn eine Visual Studio-Erweiterung, die diese Dateierweiterung verwendet, vollständig auf dem Computer installiert wurde, deinstallieren Sie Sie. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**.
 
-### <a name="product-settings-page"></a>Settings-Produktseite
- **Was ist der Name des Produkts, das die neue domänenspezifische Sprache gehört?**
-Der Standardwert ist der Name der DSL.
+### <a name="product-settings-page"></a>Seite "Produkt Einstellungen"
+ **Wie lautet der Name des Produkts, zu dem die neue domänenspezifische Sprache gehört?**
+Der Standardwert ist der DSL-Name.
 
- Dieser Wert wird verwendet, in Windows Explorer (oder Datei-Explorer), um Dateien zu beschreiben, die dieser Dateierweiterung.
+ Dieser Wert wird im Windows-Explorer (oder Datei-Explorer) verwendet, um Dateien zu beschreiben, die diese Dateierweiterung aufweisen.
 
- **Was ist der Name des Unternehmens, das das Produkt gehört?**
-Den Namen Ihres Unternehmens.
+ **Wie lautet der Name des Unternehmens, zu dem das Produkt gehört?**
+Der Name Ihres Unternehmens.
 
- Dieser Wert wird in die AssemblyInfo-Eigenschaften der Ihr DSL-Paket integriert.
+ Dieser Wert ist in die AssemblyInfo-Eigenschaften Ihres DSL-Pakets integriert.
 
- **Was ist der Stammnamespace für Projekte in dieser Lösung?**
-Dies ist standardmäßig auf einen Namen, die von Ihrem Unternehmen besteht und aus Produktnamen besteht.
+ **Was ist der Stamm Namespace für Projekte in dieser Projekt Mappe?**
+Standardmäßig wird ein Name verwendet, der aus Ihrem Unternehmen und ihren Produktnamen besteht.
 
-### <a name="signing-page"></a>Seite "Signierung"
- **Erstellen Sie eine Schlüsseldatei mit starkem Namen** die Standardoption ist, um einen neuen Schlüssel zum Signieren Ihrer DSL-Assembly zu erstellen.
+### <a name="signing-page"></a>Signierungs Seite
+ **Erstellen einer Schlüsseldatei mit starkem Namen** Die Standardoption besteht darin, einen neuen Schlüssel zum Signieren Ihrer DSL-Assembly zu erstellen.
 
- **Verwenden Sie die vorhandenen Schlüssel mit starkem Namen** verwenden Sie diese Option aus, wenn Sie Ihre DSL in einer anderen Assembly integrieren möchten.
+ **Vorhandenen Schlüssel mit starkem Namen verwenden** Verwenden Sie diese Option, wenn Sie Ihre DSL in eine andere Assembly integrieren möchten.
 
- Weitere Informationen zu starken Namen finden Sie unter [erstellen und Assemblys mit starkem Namen](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Weitere Informationen zu starken Namen finden Sie unter [Erstellen und verwenden](http://go.microsoft.com/fwlink/?LinkId=186073)von Assemblys mit starkem Namen.
 
 ## <a name="see-also"></a>Siehe auch
 

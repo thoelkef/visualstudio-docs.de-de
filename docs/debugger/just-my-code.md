@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Benutzercode mit nur mein Code | Microsoft-Dokumentation
+title: Debuggen von Benutzercode mit nur eigenen Code | Microsoft-Dokumentation
 ms.date: 02/13/2019
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,116 +8,116 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905774"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535996"
 ---
-# <a name="debug-only-user-code-with-just-my-code"></a>Nur Benutzercode mit nur mein Code Debuggen
+# <a name="debug-only-user-code-with-just-my-code"></a>Nur Benutzercode mit nur eigenen Code Debuggen
 
-*Nur mein Code* übersteigt eine Debugfunktion von Visual Studio, die automatisch Schritte Aufrufe System-, Framework- und andere nicht-benutzerseitigen Code. In der **Aufrufliste** Fenster nur mein Code reduziert diese Aufrufe in **[externer Code]** Frames.
+*Nur eigenen Code* ist ein Visual Studio-Debugfeature, das automatisch Aufrufe von System-, Framework-und anderen Nichtbenutzer Code überschreitet. Im Fenster **Aufruf Stapel** reduziert nur eigenen Code diese Aufrufe in **[externer Code]** -Frames.
 
-Nur mein Code funktioniert anders als in .NET Framework, C++ und JavaScript-Projekten.
+Nur eigenen Code funktioniert in .net-, C++-und JavaScript-Projekten anders.
 
 ## <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Aktivieren oder Deaktivieren von „Nur eigenen Code“
 
-Für die meisten Programmiersprachen wird nur mein Code standardmäßig aktiviert.
+Für die meisten Programmiersprachen ist nur eigenen Code standardmäßig aktiviert.
 
-- So aktivieren oder deaktivieren nur mein Code in Visual Studio unter **Tools** > **Optionen** (oder **Debuggen** > **Optionen**) > **Debuggen** > **allgemeine**aktivieren oder deaktivieren **nur meinen Code aktivieren**.
+- Wenn Sie nur eigenen Code in Visual Studio aktivieren oder deaktivieren möchten, klicken **Sie unter Extras**  > **Optionen** (oder **Debuggen**  > **Optionen**) > **Debuggen**  > **Allgemein**auf **nur eigenen Code aktivieren**.
 
-![Aktivieren Sie im Dialogfeld "Optionen" nur mein Code](../debugger/media/dbg_justmycode_options.png "nur meinen Code aktivieren")
+![Aktivieren von nur eigenen Code im Dialogfeld "Optionen"](../debugger/media/dbg_justmycode_options.png "Nur meinen Code aktivieren")
 
 > [!NOTE]
-> **Nur eigenen Code aktivieren** ist eine globale Einstellung, die für alle Visual Studio-Projekte in allen Sprachen angewendet wird.
+> **Aktivieren von nur eigenen Code** ist eine globale Einstellung, die für alle Visual Studio-Projekte in allen Sprachen gilt.
 
 ## <a name="just-my-code-debugging"></a>Nur mein Code (Debugoption)
 
-Während einer Debugsitzung die **Module** Fenster gibt an, welche die Codemodule der Debugger ist zum behandeln, als mein Code (Benutzercode), zusammen mit ihren Symbol Status wird geladen. Weitere Informationen finden Sie unter [mit, wie der Debugger an Ihre app angefügt vertrauter machen](../debugger/debugger-tips-and-tricks.md#modules_window).
+Während einer Debugsitzung zeigt das Fenster **Module** an, welche Code Module der Debugger als eigenen Code (Benutzercode) behandelt, zusammen mit dem Symbol Ladestatus. Weitere Informationen finden Sie unter Weitere Informationen zur Art und [Weise, wie der Debugger an Ihre APP angefügt](../debugger/debugger-tips-and-tricks.md#modules_window)wird.
 
-![Benutzercode in das Fenster "Module"](../debugger/media/dbg_justmycode_module.png "Benutzercode in das Fenster \"Module\"")
+![Benutzercode im Fenster "Module"](../debugger/media/dbg_justmycode_module.png "Benutzercode im Fenster "Module"")
 
-In der **Aufrufliste** oder **Aufgaben** nur mein Code-Fenster wird nicht benutzerseitiger Code in einer kommentierten Code grau Frame mit der Bezeichnung reduziert `[External Code]`.
+Im Fenster " **aufrufsstapel** " oder " **Aufgaben** " reduziert nur eigenen Code Nichtbenutzer Code in einen mit Anmerkungen versehenen Code Rahmen mit der Bezeichnung `[External Code]`.
 
-![Externer Code Frame in das Fenster "Aufrufliste"](../debugger/media/dbg_justmycode_externalcode.png "externen Code Frame")
+![Externer codeframe im Fenster "aufrufsstapel"](../debugger/media/dbg_justmycode_externalcode.png "Externer codeframe")
 
 >[!TIP]
->Zum Öffnen der **Module**, **Aufrufliste**, **Aufgaben**, oder die meisten anderen debugging-Fenster, müssen Sie in einer Debugsitzung sein. Während des Debuggens unter **Debuggen** > **Windows**, aktivieren Sie das Fenster, das Sie öffnen möchten.
+>Um die **Module**, die **aufrufsstapel**, **Tasks**oder die meisten anderen Debuggingfenster zu öffnen, müssen Sie sich in einer Debugsitzung befinden. Wählen Sie beim Debuggen unter **Debuggen**  > **Fenster**die Fenster aus, die Sie öffnen möchten.
 
-<a name="BKMK_Override_call_stack_filtering"></a> Zum Anzeigen des Codes in einer reduzierten **[externer Code]** frame, mit der rechten Maustaste den **Aufrufliste** oder **Aufgabe** , und wählen **externen Code anzeigen**aus dem Kontextmenü. Ersetzen Sie die erweiterten externe Codezeilen die **[externer Code**] Frame.
+<a name="BKMK_Override_call_stack_filtering"></a>Um den Code in einem reduzierten Frame **[externer Code]** anzuzeigen, klicken Sie mit der rechten Maustaste in das Fenster " **Aufrufe** " oder " **Aufgabe** ", und wählen Sie im Kontextmenü **externen Code anzeigen** aus. Die erweiterten externen Codezeilen ersetzen den Frame **[externer Code**].
 
-![Externen Code anzeigen, in dem Fenster "Aufrufliste"](../debugger/media/dbg_justmycode_showexternalcode.png "externen Code anzeigen")
+![Externen Code im Fenster "aufrufsstapel" anzeigen](../debugger/media/dbg_justmycode_showexternalcode.png "Externen Code anzeigen")
 
 > [!NOTE]
-> **Externen Code anzeigen** ein aktuellen Benutzer Profiler festlegen, gilt für alle Projekte in allen Sprachen, die vom Benutzer geöffnet werden.
+> **Externer Code anzeigen** ist eine aktuelle benutzerprofiler-Einstellung, die für alle Projekte in allen Sprachen gilt, die vom Benutzer geöffnet werden.
 
-Durch Doppelklicken auf eine erweiterte externen Code-Zeile in der **Aufrufliste** Fenster werden die aufrufende Codezeile im Quellcode grün hervorgehoben. Für DLLs oder andere Module wurde nicht gefunden oder geladen eine Symbol- oder Quelldateien wurde nicht gefunden Seite öffnen kann.
+Durch Doppelklicken auf eine erweiterte externe Codezeile im Fenster **Aufruf Stapel** wird die aufrufende Codezeile in grün im Quellcode hervorgehoben. Wenn DLLs oder andere Module nicht gefunden oder geladen wurden, wird möglicherweise eine Seite Symbol oder Quelle nicht gefunden geöffnet.
 
-## <a name="BKMK__NET_Framework_Just_My_Code"></a> „Nur eigenen Code“ in .NET Framework
+## <a name="BKMK__NET_Framework_Just_My_Code"></a>.Net-nur eigenen Code
 
-In .NET Framework-Projekten verwendet nur mein Code Symbol (*PDB*) Dateien und programmoptimierungen, um Benutzer-und Nichtbenutzercode zu klassifizieren. Der .NET Framework-Debugger berücksichtigt werden, optimiert der Binärdateien und nicht geladenen *PDB* Dateien nicht benutzerseitiger Code sein.
+In .NET-Projekten verwendet nur eigenen Code Symbol Dateien (*PDB*-Dateien) und Programm Optimierungen, um Benutzer-und Nichtbenutzer Code zu klassifizieren. Der .NET-Debugger berücksichtigt optimierte Binärdateien und nicht geladene *PDB* -Dateien als Nichtbenutzer Code.
 
-Drei Compilerattribute wirken sich auch der Debugger .NET Benutzercode erachtet:
+Drei Compilerattribute wirken sich auch darauf aus, wie sich der .NET-Debugger als Benutzercode ansieht:
 
-- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> teilt dem Debugger mit, dass der Code, dem es angewendet wird, vom Benutzercode nicht.
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> weist den Debugger an, dass der Code, auf den er angewendet wird, kein Benutzercode ist.
 - <xref:System.Diagnostics.DebuggerHiddenAttribute> blendet den Code für den Debugger aus, auch wenn Nur mein Code deaktiviert wird.
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute> teilt dem Debugger den Code schrittweise durchlaufen, die sie auf, anstatt den Code schrittweise angewendet wird.
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> weist den Debugger an, den Code, auf den er angewendet wird, schrittweise zu durchlaufen, anstatt in den Code zu gehen.
 
-Der .NET Framework-Debugger werden alle anderen Code Benutzercode berücksichtigt.
+Der .NET-Debugger betrachtet den gesamten anderen Code als Benutzercode.
 
-Während der .NET Framework-Debuggen:
+Beim .NET-Debuggen:
 
-- **Debuggen von** > **Einzelschritt** (oder **F11**) auf Nichtbenutzercode überspringt den Code in die nächste Zeile des Benutzercodes.
-- **Debuggen von** > **Ausführen bis Rücksprung** (oder **UMSCHALT**+**F11**) für nicht-benutzerseitiger Code, die in die nächste Zeile des Benutzercodes ausgeführt wird.
+- **Debuggen** Sie  > **Schritt** Weise (oder **F11**) in Nichtbenutzer Code Schritten über den Code zur nächsten Zeile des Benutzercodes.
+- **Debuggen**  >  Rücksprung (oder **UMSCHALT** +**F11**) bei Nichtbenutzer Code wird in die nächste Zeile des Benutzercodes**ausgeführt** .
 
-Wenn kein Benutzercode für weitere vorhanden ist, Debuggen wird fortgesetzt, bis es beendet, einen weiteren Haltepunkt erreicht oder löst einen Fehler aus.
+Wenn kein Benutzercode mehr vorhanden ist, wird das Debuggen bis zum Ende fortgesetzt, es wird ein weiterer Haltepunkt erreicht oder ein Fehler ausgelöst.
 
-<a name="BKMK_NET_Breakpoint_behavior"></a> Wenn der Debugger im Nichtbenutzercode unterbricht (Sie verwenden, z. B. **Debuggen** > **alle unterbrechen** "und" Pause in nicht-benutzerseitigen Code), wird die **keine Quelle** Fenster wird angezeigt. Anschließend können Sie eine **Debuggen** > **Schritt** Befehl, um die nächste Zeile des Benutzercodes aufzurufen.
+<a name="BKMK_NET_Breakpoint_behavior"></a>Wenn der Debugger in Nichtbenutzer Code unterbricht (z. b. Wenn Sie **Debuggen**  > **Alle unterbrechen** und in Nichtbenutzer Code anhalten), wird das Fenster **keine Quelle** angezeigt. Sie können dann einen **Debug**  > **Step** -Befehl verwenden, um zur nächsten Zeile des Benutzercodes zu wechseln.
 
-Wenn ein Ausnahmefehler im Nichtbenutzercode auftritt, unterbricht der Debugger, an die Benutzer-Codezeile, in dem die Ausnahme generiert wurde.
+Wenn eine nicht behandelte Ausnahme in Nichtbenutzer Code auftritt, unterbricht der Debugger an der Benutzer Codezeile, in der die Ausnahme generiert wurde.
 
-Wenn Ausnahmen der ersten Chance für die Ausnahme aktiviert sind, wird der aufrufende benutzercodezeile Grün im Quellcode hervorgehoben. Die **Aufrufliste** Fenster wird angezeigt, den mit Anmerkungen versehenen Frame mit der Bezeichnung **[externer Code]**.
+Wenn Ausnahmen der ersten Chance für die Ausnahme aktiviert sind, wird die aufrufenden Benutzercode Zeile im Quellcode grün hervorgehoben. Das Fenster " **aufrufsstapel** " zeigt den mit Anmerkungen versehene Frame mit der Bezeichnung **[externer Code]** .
 
 ## <a name="BKMK_C___Just_My_Code"></a> „Nur eigenen Code“ in C++
 
-Ab Visual Studio 2017 Version 15.8 "," nur eigenen Code für den Code schrittweise ausführen, wird ebenfalls unterstützt. Dieses Feature erfordert auch die Verwendung der [/JMC (nur mein Codedebuggen)](/cpp/build/reference/jmc) Compilerschalter. Der Schalter ist standardmäßig aktiviert, in C++ Projekte. Für **Aufrufliste** Fenster, und rufen stack-Unterstützung in Just My Code, der /JMC Switch ist nicht erforderlich.
+Ab Visual Studio 2017, Version 15,8, werden auch nur eigenen Code für die Code Ausführung unterstützt. Diese Funktion erfordert auch die Verwendung des Compilerschalters [/JMC (nur eigenen Code Debuggen)](/cpp/build/reference/jmc) . Der Schalter ist in C++ -Projekten standardmäßig aktiviert. Für das Fenster " **aufrufsstapel** " und die Unterstützung von aufrufstapeln in nur eigenen Code ist der Schalter/JMC nicht erforderlich
 
-<a name="BKMK_CPP_User_and_non_user_code"></a> Um als Benutzercode klassifiziert werden, muss die PDB-Datei für die Binärdatei mit dem Benutzercode vom Debugger geladen werden (verwenden Sie die **Module** Fenster aus, um dies zu überprüfen).
+<a name="BKMK_CPP_User_and_non_user_code"></a>Um als Benutzercode klassifiziert zu werden, muss die PDB für die Binärdatei, die den Benutzercode enthält, vom Debugger geladen werden (verwenden Sie das Fenster " **Module** ", um dies zu überprüfen).
 
-Für aufruflistenverhaltens, wie die **Aufrufliste** nur mein Code im Fenster C++ berücksichtigt nur diese Funktionen werden *nicht benutzerseitiger Code*:
+Für das Verhalten von aufrufstapeln, wie z. b. im Fenster C++ " **aufrufsstapel** ", berücksichtigt nur eigenen Code in nur diese Funktionen als *Nichtbenutzer Code*:
 
 - Funktionen mit entfernten Quellinformationen in ihrer Symboldatei.
 - Funktionen, bei denen die Symboldateien angeben, dass keine Quelldatei vorhanden ist, die dem Stapelrahmen entspricht.
-- Funktionen, die im angegebenen  *\*natjmc* Dateien in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.
+- Funktionen, die in *\* natjmc* -Dateien im Ordner *%vsinstalldirectory%\common7\packages\debugger\visualizers* angegeben sind.
 
-Für Code Schrittverhalten, nur mein Code in C++ berücksichtigt nur diese Funktionen werden *nicht benutzerseitiger Code*:
+Für Code-Schritt Verhalten berücksichtigt nur eigenen Code C++ in nur diese Funktionen als *Nichtbenutzer Code*:
 
-- Funktionen, die für die die die entsprechenden PDB-Datei nicht im Debugger geladen wurde.
-- Funktionen, die im angegebenen  *\*natjmc* Dateien in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.
+- Funktionen für den, die die entsprechende PDB-Datei nicht in den Debugger geladen haben.
+- Funktionen, die in *\* natjmc* -Dateien im Ordner *%vsinstalldirectory%\common7\packages\debugger\visualizers* angegeben sind.
 
 > [!NOTE]
-> Für die Code zum schrittweisen Unterstützung in Just My Code C++ Code muss mit dem MSVC-Compiler in Visual Studio 15.8 Vorschau 3 oder höher kompiliert werden, und der Compilerschalter /JMC muss aktiviert sein (es ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [anpassen C++ Aufrufliste und code Schrittverhalten](#BKMK_CPP_Customize_call_stack_behavior)) und [Blogbeitrag](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Für Code mit einer älteren Version des Compilers, kompiliert *natstepfilter* Dateien sind die einzige Möglichkeit zum Anpassen von Code in Einzelschritten, die unabhängig vom nur mein Code ist. Finden Sie unter [anpassen C++ Schrittverhalten](#BKMK_CPP_Customize_stepping_behavior).
+> Zur Unterstützung von Code Stepping in C++ nur eigenen Code muss Code mithilfe der MSVC-Compiler in Visual Studio 15,8 Preview 3 oder höher kompiliert werden, und der/JMC-Compilerschalter muss aktiviert sein (standardmäßig aktiviert). Weitere Informationen finden Sie unter [anpassen C++ der aufrufsstapel-und Code Schritt Verhalten](#BKMK_CPP_Customize_call_stack_behavior)) und dieses [Blogbeitrags](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Bei Code, der mit einem älteren Compiler kompiliert wurde, sind *natstepfilter* -Dateien die einzige Möglichkeit zum Anpassen von Code-Stepping, der unabhängig von nur eigenen Code ist. Siehe [anpassen C++ des schrittweisen Verhaltens](#BKMK_CPP_Customize_stepping_behavior).
 
-<a name="BKMK_CPP_Stepping_behavior"></a> Beim C++ Debuggen:
+<a name="BKMK_CPP_Stepping_behavior"></a>Beim C++ Debuggen:
 
-- **Debuggen von** > **Einzelschritt** (oder **F11**) auf Nichtbenutzercode überspringt den Code in die nächste Zeile des Benutzercodes.
-- **Debuggen von** > **Ausführen bis Rücksprung** (oder **UMSCHALT**+**F11**) für nicht-benutzerseitiger Code, die in die nächste Zeile des Benutzercodes ausgeführt wird.
+- **Debuggen** Sie  > **Schritt** Weise (oder **F11**) in Nichtbenutzer Code Schritten über den Code zur nächsten Zeile des Benutzercodes.
+- **Debuggen**  >  Rücksprung (oder **UMSCHALT** +**F11**) bei Nichtbenutzer Code wird in die nächste Zeile des Benutzercodes**ausgeführt** .
 
-Wenn kein Benutzercode für weitere vorhanden ist, Debuggen wird fortgesetzt, bis es beendet, einen weiteren Haltepunkt erreicht oder löst einen Fehler aus.
+Wenn kein Benutzercode mehr vorhanden ist, wird das Debuggen bis zum Ende fortgesetzt, es wird ein weiterer Haltepunkt erreicht oder ein Fehler ausgelöst.
 
-Wenn der Debugger im Nichtbenutzercode unterbricht (Sie verwenden, z. B. **Debuggen** > **alle unterbrechen** und im nicht-benutzerseitiger Code anhalten), wird nicht benutzerseitiger Code weiter schrittweise durchlaufen.
+Wenn der Debugger in Nichtbenutzer Code unterbricht (z. b. Wenn Sie **Debuggen**  > **Alle unterbrechen** und in Nichtbenutzer Code anhalten), wird die schrittweise Verarbeitung im Nichtbenutzer Code fortgesetzt.
 
-Wenn der Debugger eine Ausnahme trifft, wird es, ob es im Benutzer- oder nicht-benutzerseitiger Code ist auf die Ausnahme, beendet. **Vom Benutzercode unbehandelt** "Optionen" der **Ausnahmeeinstellungen** im Dialogfeld werden ignoriert.
+Wenn der Debugger auf eine Ausnahme trifft, wird er bei der Ausnahme angehalten, unabhängig davon, ob er sich im Benutzer-oder Nichtbenutzer Code befindet. Vom **Benutzer nicht behandelte** Optionen im Dialogfeld **Ausnahme Einstellungen** werden ignoriert.
 
-### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Anpassen von C++ Aufrufliste und code Schrittverhalten
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a>Anpassen C++ der Verhalten von aufrufsstapel und Code schrittweisen
 
-Bei C++-Projekten können Sie angeben, die Module, Quelldateien und Funktionen der **Aufrufliste** Fenster als Nichtbenutzercode behandelt, durch Angabe im  *\*natjmc* Dateien. Diese Anpassung gilt auch für Code in Einzelschritten, wenn Sie den aktuellen Compiler verwenden (siehe [ C++ nur mein Code](#BKMK_CPP_User_and_non_user_code)).
+Für C++ -Projekte können Sie die Module, Quelldateien und Funktionen angeben, die das Fenster der **aufrufsstapel** als Nichtbenutzer Code behandelt, indem Sie Sie in *\* natjmc* -Dateien angeben. Diese Anpassung gilt auch für Code-Stepping, wenn Sie den neuesten Compiler verwenden (siehe [ C++ nur eigenen Code](#BKMK_CPP_User_and_non_user_code)).
 
 - Fügen Sie dem Ordner *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* die *NATJMC*-Datei hinzu, um Nichtbenutzercode aller Benutzer des Visual Studio-Computers anzugeben.
-- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natjmc* -Datei in die *%USERPROFILE%\My Dokumente\\< Visual Studio-Version\>\Visualizers* Ordner.
+- Um Nichtbenutzer Code für einen einzelnen Benutzer anzugeben, fügen Sie die *natjmc* -Datei dem Ordner *%UserProfile%\My Documents \\ < Visual Studio Version \> \visualizers* hinzu.
 
-Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:
+Eine *natjmc* -Datei ist eine XML-Datei mit der folgenden Syntax:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,7 +143,7 @@ Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
-|`Name`|Erforderlich. Der vollständige Pfad des Moduls oder der Module. Sie können die Windows-Platzhalterzeichen `?` (kein oder ein Zeichen) und `*` (null oder mehr Zeichen). Ein auf ein Objekt angewendeter<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> weist den Debugger an, alle Module in *\3rdParty\UtilLibs* auf einem Laufwerk als externen Code zu behandeln.|
+|`Name`|Erforderlich. Der vollständige Pfad des Moduls oder der Module. Sie können die Windows-Platzhalter Zeichen `?` (null oder ein Zeichen) und `*` (null oder mehr Zeichen) verwenden. Ein auf ein Objekt angewendeter<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> weist den Debugger an, alle Module in *\3rdParty\UtilLibs* auf einem Laufwerk als externen Code zu behandeln.|
 |`Company`|Dies ist optional. Der Name des Unternehmens, das das Modul veröffentlicht, das in die ausführbare Datei eingebettet ist. Sie können dieses Attribut verwenden, um die Module zu unterscheiden.|
 
  **Dateielementattribute**
@@ -160,14 +160,14 @@ Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:
 |`Module`|Dies ist optional. Der Name oder der vollständige Pfad zu dem Modul, das die Funktion enthält. Sie können dieses Attribut verwenden, um Funktionen mit demselben Namen zu unterscheiden.|
 |`ExceptionImplementation`|Bei Festlegung auf `true` zeigt die Aufrufliste die Funktion an, die die Ausnahme und nicht diese Funktion ausgelöst hat.|
 
-### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Anpassen von C++ Schrittverhalten unabhängig von Einstellungen für nur mein Code
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a>Anpassen C++ des schrittweisen Verhaltens unabhängig von nur eigenen Code Einstellungen
 
-In C++-Projekten können Sie angeben, Funktionen überspringen sind, indem sie als Nichtbenutzercode in auflisten  *\*natstepfilter* Dateien. In der aufgeführten Funktionen  *\*natstepfilter* Dateien sind nicht nur mein Code Einstellungen abhängig.
+In C++ -Projekten können Sie Funktionen angeben, die überschritten werden sollen, indem Sie Sie als Nichtbenutzer Code in *\*. natstepfilter* -Dateien auflisten. Die in *\*. natstepfilter* -Dateien aufgeführten Funktionen sind nicht von nur eigenen Code Einstellungen abhängig.
 
-- Um Nichtbenutzercode für alle lokalen Visual Studio-Benutzer anzugeben, fügen die *natstepfilter* -Datei in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.
-- Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natstepfilter* -Datei in die *%USERPROFILE%\My Dokumente\\< Visual Studio-Version\>\Visualizers* Ordner.
+- Fügen Sie dem Ordner *%vsinstalldirectory%\common7\packages\debugger\visualizers* die *natstepfilter* -Datei hinzu, um Nichtbenutzer Code für alle lokalen Benutzer von Visual Studio anzugeben.
+- Um Nichtbenutzer Code für einen einzelnen Benutzer anzugeben, fügen Sie die *natstepfilter* -Datei dem Ordner *%UserProfile%\My Documents \\ < Visual Studio Version \> \visualizers* hinzu.
 
-Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
+Eine *natstepfilter* -Datei ist eine XML-Datei mit der folgenden Syntax:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -188,9 +188,9 @@ Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
 |Element|Beschreibung|
 |-------------|-----------------|
 |`Function`|Erforderlich. Gibt eine oder mehreren Funktionen als Nichtbenutzerfunktionen an.|
-|`Name`|Erforderlich. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Funktionsnamen angibt, der übereinstimmen muss. Zum Beispiel:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> teilt dem Debugger mit, dass alle Methoden in `MyNS::MyClass` als Nichtbenutzercode behandelt werden sollen. Bei der Übereinstimmung muss die Groß-/Kleinschreibung beachtet werden.|
+|`Name`|Erforderlich. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Funktionsnamen angibt, der übereinstimmen muss. Beispiel:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> teilt dem Debugger mit, dass alle Methoden in `MyNS::MyClass` als Nichtbenutzercode behandelt werden sollen. Bei der Übereinstimmung muss die Groß-/Kleinschreibung beachtet werden.|
 |`Module`|Dies ist optional. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Pfad zu dem Modul angibt, das die Funktion enthält. Die Groß- und Kleinschreibung wird bei der Übereinstimmung nicht berücksichtigt.|
-|`Action`|Erforderlich. Einer dieser Werte, bei denen die Groß-/Kleinschreibung beachtet werden muss.<br /><br /> `NoStepInto`  – weist den Debugger an die Funktion zu überspringen.<br /> `StepInto`  – weist den Debugger an die Funktion in Einzelschritten, überschreiben Sie alle anderen `NoStepInto` für die übereinstimmende Funktion.|
+|`Action`|Erforderlich. Einer dieser Werte, bei denen die Groß-/Kleinschreibung beachtet werden muss.<br /><br /> `NoStepInto`: weist den Debugger an, die Funktion zu überspringen.<br /> `StepInto`: weist den Debugger an, die Funktion schrittweise zu durchlaufen, wobei alle anderen `NoStepInto` für die passende Funktion überschrieben werden.|
 
 ## <a name="BKMK_JavaScript_Just_My_Code"></a> „Nur eigenen Code“ in JavaScript
 
@@ -199,57 +199,57 @@ Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
 |||
 |-|-|
 |**MyCode**|Benutzercode, den Sie besitzen und steuern.|
-|**LibraryCode**|Nichtbenutzercode aus Bibliotheken, die Sie regelmäßig verwenden und Ihre app verwendet (z. B. WinJS oder jQuery) ordnungsgemäß funktionieren.|
-|**UnrelatedCode**|Nichtbenutzercode in Ihrer app, die Sie nicht besitzen und Ihre app verwenden nicht ordnungsgemäß. Beispielsweise könnte eine Advertising SDK, das Anzeigen anzeigt UnrelatedCode sein. In UWP-Projekten wird jeglicher Code, der in Ihrer app von einem HTTP- oder HTTPS-URI geladen wird, als UnrelatedCode.|
+|**LibraryCode**|Nichtbenutzer Code aus Bibliotheken, die Sie regelmäßig verwenden, und Ihre APP ist zur ordnungsgemäßen Funktionsweise (z. b. winjs oder jQuery) angewiesen.|
+|**UnrelatedCode**|Nichtbenutzer Code in Ihrer APP, den Sie nicht besitzen, und Ihre APP ist nicht darauf angewiesen, ordnungsgemäß zu funktionieren. Ein Werbe-SDK, das ADS anzeigt, könnte z. b. unrelatedcode lauten. In UWP-Projekten wird jeglicher Code, der von einem http-oder HTTPS-URI in Ihre APP geladen wird, auch als unrelatedcode betrachtet.|
 
-Der JavaScript-Debugger klassifiziert Code als Benutzer oder Benutzer in dieser Reihenfolge:
+Der JavaScript-Debugger klassifiziert Code als Benutzer oder Nichtbenutzer in dieser Reihenfolge:
 
-1. Die Standard-Klassifikationen.
-   - Durch die Übergabe einer Zeichenfolge an der vom Host bereitgestellten ausgeführten Skripts `eval` Funktion **MyCode**.
-   - Skript ausgeführt, indem eine Zeichenfolge übergeben, die `Function` Konstruktor ist **LibraryCode**.
-   - Skript in einem frameworkverweis, wie z. B. WinJS oder das Azure SDK ist **LibraryCode**.
-   - Skript ausgeführt, indem eine Zeichenfolge übergeben, die `setTimeout`, `setImmediate`, oder `setInterval` Functions **UnrelatedCode**.
+1. Die Standard Klassifizierungen.
+   - Skript wird ausgeführt, indem eine Zeichenfolge an die vom Host bereitgestellte `eval` Funktion **übergeben wird.**
+   - Skript wird ausgeführt, indem eine Zeichenfolge an den `Function`-Konstruktor übergeben wird, ist **librarycode**.
+   - Skripts in einem frameworkverweis, wie z. b. winjs oder dem Azure SDK, sind **librarycode**.
+   - Skript, das ausgeführt wird, indem eine Zeichenfolge an die Funktionen `setTimeout`, `setImmediate` oder `setInterval` übergeben wird, ist **unrelatedcode**.
 
-2. Klassifizierungen angegeben, die für alle Visual Studio-JavaScript-Projekte in der *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* Datei.
+2. Klassifizierungen, die für alle Visual Studio JavaScript-Projekte in der *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.WWA.JSON* -Datei angegeben werden.
 
-3. Klassifizierungen in der *mycode.json* -Datei des aktuellen Projekts.
+3. Klassifizierungen in der Datei " *MyCode. JSON* " des aktuellen Projekts.
 
 Jeder Klassifizierungsschritt überschreibt die vorherigen Schritte.
 
 Der restliche Code wird als **MyCode** klassifiziert.
 
-Sie können die standardklassifizierungen ändern und Klassifizieren von Dateien und URLs für als Benutzer oder eine nicht-benutzerseitiger Code durch Hinzufügen einer *JSON* Datei mit dem Namen *mycode.json* in den Stammordner, der ein JavaScript-Projekt. Finden Sie unter [JavaScript nur mein Code anpassen](#BKMK_JS_Customize_Just_My_Code).
+Sie können die Standard Klassifizierungen ändern und bestimmte Dateien und URLs als Benutzer-oder Nichtbenutzer Code klassifizieren, indem Sie eine *JSON* -Datei mit dem Namen " *MyCode. JSON* " zum Stamm Ordner eines JavaScript-Projekts hinzufügen. Siehe [Anpassen von JavaScript-nur eigenen Code](#BKMK_JS_Customize_Just_My_Code).
 
-<a name="BKMK_JS_Stepping_behavior"></a> Bei der JavaScript-debugging:
+<a name="BKMK_JS_Stepping_behavior"></a>Beim JavaScript-Debuggen:
 
-- Wenn eine Funktion nicht benutzerseitiger Code ist **Debuggen** > **Einzelschritt** (oder **F11**) verhält sich wie **Debuggen**  >  **Prozedurschritt** (oder **F10**).
-- Wenn ein Schritt im Nichtbenutzercode beginnt (**LibraryCode** oder **UnrelatedCode**) Code, schrittweise Ausführung kurzfristig verhält, als wenn nur mein Code nicht aktiviert ist. Wenn Sie wechseln zurück zum Benutzercode, nur mein Code schrittweise wieder aktiviert ist.
-- Wenn ein Benutzer Code Schritts Verlassen des aktuellen Ausführungskontexts, hält der Debugger, bei der nächsten Zeile des ausgeführten Benutzer-Code. Wenn beispielsweise ein Rückruf in **LibraryCode**-Code ausgeführt wird, fährt der Debugger fort, bis die nächste Zeile des Benutzercodes ausgeführt wird.
-- **Ausführen bis Rücksprung** (oder **UMSCHALT**+**F11**) in der nächsten Zeile des Benutzercodes beendet.
+- Wenn eine Funktion Nichtbenutzer Code ist, verhält sich das **Debuggen** von  >  Einzel**Schritt** (oder **F11**) genauso wie **Debug**  >  Prozedur**Schritt** (oder **F10**).
+- Wenn ein Schritt im Nichtbenutzer Code (**librarycode** oder **unrelatedcode**) beginnt, verhält sich die schrittweise Vorgehensweise temporär, als ob nur eigenen Code nicht aktiviert ist. Wenn Sie einen Einzelschritt auf den Benutzercode durchlaufen, wird nur eigenen Code schrittweise wieder aktiviert.
+- Wenn ein Benutzercode Schritt dazu führt, dass der aktuelle Ausführungs Kontext verlässt, hält der Debugger bei der nächsten ausgeführten Benutzer Codezeile an. Wenn beispielsweise ein Rückruf in **LibraryCode**-Code ausgeführt wird, fährt der Debugger fort, bis die nächste Zeile des Benutzercodes ausgeführt wird.
+- " **Step out** " (oder **UMSCHALT** +**F11**) wird in der nächsten Zeile des Benutzercodes angehalten.
 
-Wenn kein Benutzercode für weitere vorhanden ist, Debuggen wird fortgesetzt, bis es beendet, einen weiteren Haltepunkt erreicht oder löst einen Fehler aus.
+Wenn kein Benutzercode mehr vorhanden ist, wird das Debuggen bis zum Ende fortgesetzt, es wird ein weiterer Haltepunkt erreicht oder ein Fehler ausgelöst.
 
-Legen Sie im Code Haltepunkte werden immer erreicht, aber der Code klassifiziert wird.
+Breakpoints, die im Code festgelegt sind, werden immer getroffen, aber der Code wird klassifiziert.
 
-- Wenn die `debugger` Schlüsselwort tritt in **LibraryCode**, unterbricht der Debugger immer.
-- Wenn die `debugger` Schlüsselwort tritt in **UnrelatedCode**, den Debugger nicht beenden.
+- Wenn das `debugger`-Schlüsselwort in **librarycode**auftritt, unterbricht der Debugger immer.
+- Wenn das `debugger`-Schlüsselwort in **unrelatedcode**auftritt, wird der Debugger nicht angehalten.
 
-<a name="BKMK_JS_Exception_behavior"></a> Im Falle eine nicht behandelte Ausnahme **MyCode** oder **LibraryCode** Code, unterbricht der Debugger immer.
+<a name="BKMK_JS_Exception_behavior"></a>Wenn eine nicht behandelte Ausnahme in **MyCode** -oder **librarycode** -Code auftritt, unterbricht der Debugger immer.
 
-Im Falle eine nicht behandelte Ausnahme **UnrelatedCode**, und **MyCode** oder **LibraryCode** in der Aufrufliste, unterbricht der Debugger ist.
+Wenn in **unrelatedcode**eine nicht behandelte Ausnahme auftritt und **MyCode** oder **librarycode** in der-aufrufsstapel steht, wird der Debugger unterbrochen.
 
-Wenn Ausnahmen für die Ausnahme aktiviert sind, und die Ausnahme tritt auf, **LibraryCode** oder **UnrelatedCode**:
+Wenn Ausnahmen der ersten Chance für die Ausnahme aktiviert sind und die Ausnahme in **librarycode** oder **unrelatedcode**auftritt:
 
 - Wenn die Ausnahme behandelt wird, unterbricht der Debugger nicht.
 - Wenn die Ausnahme nicht behandelt wird, unterbricht der Debugger.
 
-### <a name="BKMK_JS_Customize_Just_My_Code"></a> Anpassen von JavaScript nur mein Code
+### <a name="BKMK_JS_Customize_Just_My_Code"></a>Anpassen von JavaScript-nur eigenen Code
 
-Um Benutzer- und Nichtbenutzercode für einen einzelnen JavaScript-Projekt zu kategorisieren, fügen Sie eine *JSON* Datei mit dem Namen *mycode.json* in den Stammordner des Projekts.
+Um Benutzer-und Nichtbenutzer Code für ein einzelnes JavaScript-Projekt zu kategorisieren, können Sie dem Stamm Ordner des Projekts eine *JSON* -Datei mit dem Namen " *MyCode. JSON* " hinzufügen.
 
-Spezifikationen in dieser Datei überschreiben die standardklassifizierungen und *mycode.default.wwa.json* Datei. Die *mycode.json* Datei muss nicht alle Schlüsselwertpaare auflisten. Die **MyCode**, **Bibliotheken**, und **Unrelated** Werte können leere Arrays sein.
+Spezifikationen in dieser Datei überschreiben die Standard Klassifizierungen und die Datei " *MyCode. default. WWA. JSON* ". Die Datei " *MyCode. JSON* " muss nicht alle Schlüssel-Wert-Paare auflisten. **MyCode**, **Bibliotheken**und verknüpfte **Werte können** leere Arrays sein.
 
-*MyCode.JSON* Dateien mit der folgenden Syntax:
+*MyCode. JSON* -Dateien verwenden diese Syntax:
 
 ```json
 {
@@ -301,4 +301,4 @@ Die Schlüsselwertpaare **MyCode**, **Libraries** und **Unrelated** geben die UR
 |**Libraries**|Ein Array von URLs oder Dateien, die als **LibraryCode** klassifiziert werden.|
 |**Unrelated**|Ein Array von URLs oder Dateien, die als **UnrelatedCode** klassifiziert werden.|
 
-Die URL-Zeichenfolge oder Zeichenfolge möglich, eine oder mehrere `*` Zeichen, die mit NULL oder mehr Zeichen übereinstimmen. `*` ist identisch mit dem regulären Ausdruck `.*`.
+Die URL oder Datei Zeichenfolge kann ein oder mehrere `*` Zeichen enthalten, die mit NULL oder mehr Zeichen identisch sind. `*` ist identisch mit dem regulären Ausdruck `.*`.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b534e46f4cdef87641207ec13419d4c59d04ed3f
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 71bddf0f833bbaf717f7a2dbdf4a734efa295afb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740075"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72619447"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Generieren in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 |Verwenden von Team Foundation Build|– Sie können den Buildprozess automatisieren. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Sie können Projekte auch auf freigegebenen Buildservern anstatt auf dem Entwicklungscomputer erstellen.<br />– Sie können den Code, den Sie erstellen möchten, die auszuführenden Tests und andere allgemeine Optionen schnell festlegen.<br />– Sie können den Buildworkflow ändern und ggf. Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben erstellen.|[Erstellen der Anwendung](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>Erstellen aus der IDE
- Wenn Sie ein Projekt erstellen, werden dafür standardmäßige Buildkonfigurationen definiert, und ihm wird eine Projektmappenbuildkonfiguration zugewiesen, um Kontext für Builds bereitzustellen. Projektmappenkonfigurationen definieren, wie die Projekte im Projektmappen-Explorer erstellt und bereitgestellt werden. Bei Projektkonfigurationen handelt es sich um einen Satz von Projekteigenschaften, die für eine Plattform und einen Buildtyp eindeutig sind (beispielsweise die Win32-Version). Sie können diese Standardkonfigurationen bearbeiten, und Sie können eigene Konfigurationen erstellen. Weitere Informationen finden Sie unter [Einführung in den Projekt](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) -Designer [und NIB Gewusst wie: Ändern Sie die Projekteigenschaften und](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)Konfigurationseinstellungen.
+ Wenn Sie ein Projekt erstellen, werden dafür standardmäßige Buildkonfigurationen definiert, und ihm wird eine Projektmappenbuildkonfiguration zugewiesen, um Kontext für Builds bereitzustellen. Projektmappenkonfigurationen definieren, wie die Projekte im Projektmappen-Explorer erstellt und bereitgestellt werden. Bei Projektkonfigurationen handelt es sich um einen Satz von Projekteigenschaften, die für eine Plattform und einen Buildtyp eindeutig sind (beispielsweise die Win32-Version). Sie können diese Standardkonfigurationen bearbeiten, und Sie können eigene Konfigurationen erstellen. Weitere Informationen finden Sie unter [Einführung in den Projekt-Designer](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) und [NICHT IM BUILD: Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Aus der IDE können Sie die folgenden zusätzlichen Aufgaben ausführen:
 
@@ -53,4 +53,4 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 - Verbessern der Buildleistung mithilfe von parallelen Builds. Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) oder im Blogbeitrag [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Optimieren des parallelen Erstellens für C++).
 
 ## <a name="see-also"></a>Siehe auch
- [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) [Erstellen (Kompilieren) von Websiteprojekten](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) [erstellen (Kompilieren) Websiteprojekte](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [So wird es gemacht: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)

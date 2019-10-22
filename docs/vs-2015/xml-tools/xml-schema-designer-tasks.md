@@ -1,59 +1,48 @@
 ---
-title: Aufgaben der XML-Schema-Designer | Microsoft-Dokumentation
+title: Aufgaben im XML-Schema-Designer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: f413f208-696f-446a-bb78-7fc55cf96d6c
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12c5e65f45200947c57a4d831611faa4443a0d55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf7fe3ef493caa3b77e3e25e8cfa7873fb51eeb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158540"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669404"
 ---
 # <a name="xml-schema-designer-tasks"></a>Aufgaben im XML-Schema-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Abschnitt wird die Ausführung häufiger Aufgaben mit den XML-Schema-Designer-Tools beschrieben.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)  
- In diesem Thema wird beschrieben, wie eine neue XML-Schemadatei (XSD) erstellt und der XSD-Datei anschließend Inhalt hinzugefügt wird.  
-  
- [Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas](../xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema.md)  
- In diesem Thema wird das Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas beschrieben.  
-  
- [Vorgehensweise: Hinzufügen von Knoten aus Schemaset-Suchergebnissen zum Arbeitsbereich](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)  
- In diesem Thema wird erläutert, wie dem Arbeitsbereich Knoten hinzugefügt werden, die im XML-Schema-Explorer als Ergebnis einer Schlüsselwortsuche hervorgehoben sind.  
-  
- [Vorgehensweise: Wechseln zwischen Ansichten und dem XML-Editor](../xml-tools/how-to-switch-between-views-and-the-xml-editor.md)  
- In diesem Thema wird das Wechseln zwischen den Ansichten des XML-Schema-Designers und dem XML-Editor beschrieben.  
-  
- [Vorgehensweise: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)  
- In diesem Thema wird erläutert, wie dem Arbeitsbereich des XML-Schema-Designers Knoten aus dem XML-Schema-Explorer hinzugefügt werden.  
-  
- [Vorgehensweise: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view.md)  
- In diesem Thema wird erläutert, wie dem Arbeitsbereich globale Knoten aus der Ausgangsansicht hinzugefügt werden.  
-  
- [Vorgehensweise: Anzeigen einer Übersicht über ein Schemaset in der Diagrammansicht](../xml-tools/how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md)  
- In diesem Thema wird das Anzeigen einer Übersicht über das Schemaset in der Diagrammansicht beschrieben.  
-  
- [Vorgehensweise: Untersuchen des Inhaltsmodells von Knoten in der Inhaltsmodellansicht](../xml-tools/how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md)  
- In diesem Thema wird das Untersuchen der Knoten in der Inhaltsmodellansicht beschrieben.  
-  
- [Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)  
- In diesem Thema wird das Anzeigen eines mit einem XML-Literal verknüpften Schemas beschrieben.  
-  
- [Vorgehensweise: Ausgeben von Diagrammen in der Diagrammansicht und der Inhaltsmodellansicht](../xml-tools/how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md)  
- In diesem Thema wird das Ausdrucken eines Diagramms in der Diagramm- oder Inhaltsmodellansicht beschrieben.  
-  
- [XSD-Beispieldateien](../xml-tools/sample-xsd-files.md)  
- Dieses Thema enthält Codeauflistungen für die in den Beispielaufgaben verwendeten XSD-Beispieldokumente.  
-  
-## <a name="see-also"></a>Siehe auch  
+In diesem Abschnitt wird die Ausführung häufiger Aufgaben mit den XML-Schema-Designer-Tools beschrieben.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ Gewusst [wie: Erstellen und Bearbeiten einer XSD-Schema Datei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md) Beschreibt, wie eine neue XML-Schema Datei (XSD) erstellt und der XSD-Datei anschließend Inhalt hinzugefügt wird.
+
+ Gewusst [wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas](../xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema.md) Beschreibt, wie ein auf dem XSD-Schema basierendes XML-Dokument erstellt wird.
+
+ Gewusst [wie: Hinzufügen von Schema Knoten-Suchergebnis Knoten zum Arbeitsbereich](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md) Erläutert das Hinzufügen von Knoten, die im XML-Schema-Explorer hervorgehoben sind, als Ergebnis einer Schlüsselwort Suche zum Arbeitsbereich.
+
+ Gewusst [wie: Wechseln zwischen Ansichten und dem XML-Editor](../xml-tools/how-to-switch-between-views-and-the-xml-editor.md) Zeigt, wie zwischen den Ansichten des XML-Schema-Designers und dem XML-Editor gewechselt wird.
+
+ Vorgehens [Weise: Hinzufügen von Knoten zum Arbeitsbereich aus dem XML-Schema-Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md) Erläutert, wie dem Arbeitsbereich des XML-Schema-Designers Knoten aus dem XML-Schema-Explorer hinzugefügt werden.
+
+ Gewusst [wie: Hinzufügen von Knoten zum Arbeitsbereich aus der Start Ansicht](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view.md) Zeigt, wie dem Arbeitsbereich globale Knoten aus der Start Ansicht hinzugefügt werden.
+
+ Gewusst [wie: Anzeigen einer Übersicht über ein Schemaset mithilfe der Diagramm Ansicht](../xml-tools/how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md) Hier wird beschrieben, wie Sie mithilfe der Diagramm Ansicht eine Übersicht über das Schemaset erhalten.
+
+ Gewusst [wie: Untersuchen des Inhalts Modells von Knoten mithilfe der Inhalts Modell Ansicht](../xml-tools/how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md) Hier wird beschrieben, wie Sie Ihre Knoten mithilfe der Inhalts Modell Ansicht untersuchen.
+
+ Gewusst [wie: Verwenden des XML-Schema-Designers mit XML-Literalen](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md) Beschreibt das Anzeigen eines Schemas, das einem XML-Literal zugeordnet ist.
+
+ Gewusst [wie: Drucken von Diagrammen aus der Diagramm Ansicht und der Inhalts Modell Ansicht](../xml-tools/how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md) Beschreibt das Drucken eines Diagramms aus der Diagramm Ansicht oder der Inhalts Modell Ansicht.
+
+ [XSD-Beispieldateien](../xml-tools/sample-xsd-files.md) Stellt Code Auflistungen für die XSD-Beispiel Dokumente bereit, die in den Aufgaben Beispielen verwendet werden.
+
+## <a name="see-also"></a>Siehe auch
  [XML-Schema-Designer](../xml-tools/xml-schema-designer.md)

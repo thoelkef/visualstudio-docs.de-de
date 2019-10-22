@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler | Microsoft-Dokumentation
+title: 'Iactivescriptauthor:: GetEventHandler | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bba60df6485ddaac0363a3416739efd7be69389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c69b32f0040ea6d52e0712b8e1813cc5a0b40c58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576231"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Gibt zurück, das Scriptlet, das die angegebenen Attribute aufweist.  
+Gibt das Scriptlet zurück, das über die angegebenen Attribute verfügt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,19 +41,19 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Parameter  
  `pdisp`  
- [in] Die `IDispatch` Objekt, das entspricht, dem `NamedItem` , dem das Scriptlet zugeordnet ist.  
+ in Das `IDispatch`-Objekt, das dem `NamedItem` entspricht, an das das Scriptlet angefügt ist.  
   
  `pszItem`  
- [in] Die Pufferadresse des Bezeichners der obersten Ebene mit dem vollständig qualifizierten Scriptlet-Namen auf dem Host.  
+ in Die Puffer Adresse des Bezeichner der obersten Ebene des voll qualifizierten Scriptlet-namens im Host.  
   
  `pszSubItem`  
- [in] Die Pufferadresse der Bezeichner der zweiten Ebene mit dem vollständig qualifizierten Scriptlet-Namen auf dem Host. Auf NULL festgelegt, wenn der Name nur eine Ebene enthält.  
+ in Die Puffer Adresse des Bezeichners der zweiten Ebene des voll qualifizierten Scriptlet-namens im Host. Auf NULL festgelegt, wenn der Name nur eine Ebene aufweist.  
   
  `pszEvent`  
- [in] Die Adresse eines Puffers, der den Namen des Ereignisses enthält. Das Scriptlet ist ein Handler für dieses Ereignis.  
+ in Die Adresse eines Puffers, der den Ereignis Namen enthält. Das Scriptlet ist ein Ereignishandler für dieses Ereignis.  
   
  `ppse`  
- [out] Die Adresse einer Variablen, die einen Zeiger auf empfängt die `IScriptEntry` Schnittstelle des Scriptlets, die die angegebenen Attribute aufweist.  
+ vorgenommen Die Adresse einer Variablen, die einen Zeiger auf die `IScriptEntry`-Schnittstelle des Scriptlets empfängt, das über die angegebenen Attribute verfügt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -65,5 +65,5 @@ HRESULT GetEventHandler(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [Iactivescriptauthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)    
  [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents | Microsoft-Dokumentation
+title: Isimpleconnectionpoint::D escribeevents | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b5824f945ad25f177fc169b58157377bf53bcce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5000689d588fe3f63ec5408893187bba8d13d63
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786418"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571820"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-Gibt den DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen zurück.  
+Gibt die DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,19 +41,19 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>Parameter  
  `iEvent`  
- [in] Der Index des ersten Ereignisses abrufen.  
+ in Der Index des ersten Ereignisses, das abgerufen werden soll.  
   
  `cEvents`  
- [in] Anzahl der Ereignisse abgerufen.  
+ in Anzahl der abzurufenden Ereignisse.  
   
  `prgid`  
- [out] Array von DISPID Ereigniswerten.  
+ vorgenommen Array von Ereignis-DISPID-Werten.  
   
  `prgbstr`  
- [out] Array von Namen von Ereignissen.  
+ vorgenommen Array von Ereignis Namen.  
   
  `pcEventsFetched`  
- [out] Die tatsächliche Anzahl der Ereignisse abgerufen werden soll.  
+ vorgenommen Die tatsächliche Anzahl von abgerufenen Ereignissen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -61,11 +61,11 @@ HRESULT DescribeEvents(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`S_FALSE`|Weitere Ereignisse, die angefordert wurden, als verfügbar waren. Nicht verfügbar-Ereignisse werden mit DISPID_NULL und null BSTR dargestellt.|  
-|`E_INVALIDARG`|Es konnte keine Elemente abgerufen werden.|  
+|`S_FALSE`|Es wurden weitere Ereignisse angefordert, als verfügbar waren. Nicht verfügbare Ereignisse werden mit DISPID_NULL und einem NULL BSTR dargestellt.|  
+|`E_INVALIDARG`|Es konnten keine Elemente abgerufen werden.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen an.  
+ Diese Methode gibt die DISPID und den Namen für jedes Ereignis in einem angegebenen Bereich von Ereignissen zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA2118: Verwendung von SuppressUnmanagedCodeSecurityAttribute prüfen | Microsoft-Dokumentation'
+title: 'CA2118: Überprüfen der Verwendung von SuppressUnmanagedCodeSecurityAttribute | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bb7404d9add159f182ae44b22444dded1aafca20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687281"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658638"
 ---
-# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verwendung von SuppressUnmanagedCodeSecurityAttribute prüfen.
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Überprüfen der Verwendung von SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,43 +33,43 @@ ms.locfileid: "65687281"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein öffentlicher oder geschützter Typ oder Member ist der <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> Attribut.
+ Ein öffentlicher oder geschützter Typ oder Member verfügt über das <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>-Attribut.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Ändert das Standardverhalten des Sicherheitssystems für Member, die nicht verwalteten Code mithilfe eines COM-Interop oder Plattformaufrufe ausführen. Im Allgemeinen führt das System eine [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) Berechtigung für nicht verwalteten Code. Diese Anforderung erfolgt zur Laufzeit für jeden Aufruf des Members, und alle Aufrufer in der Aufrufliste für die Berechtigung überprüft. Wenn das Attribut vorhanden ist, führt das System eine [Verknüpfungsaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) für die Berechtigung: die Berechtigungen des unmittelbaren Aufrufers überprüft werden, wenn der Aufrufer JIT-kompiliert wird.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> ändert das Standardverhalten des Sicherheitssystems für Member, die nicht verwalteten Code mit COM-Interop oder Platt Form Aufruf ausführen. Im Allgemeinen erstellt das System eine [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) für nicht verwalteten Code. Diese Anforderung tritt zur Laufzeit für jeden Aufruf des Members auf und überprüft jeden Aufrufer in der Aufruf Listen-Berechtigung. Wenn das-Attribut vorhanden ist, führt das System einen [Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) für die Berechtigung aus: die Berechtigungen des unmittelbaren Aufrufers werden bei der JIT-Kompilierung des Aufrufers geprüft.
 
- Dieses Attribut wird hauptsächlich verwendet, um die Leistung zu erhöhen. Der Leistungszuwachs geht jedoch mit beträchtlichen Sicherheitsrisiken einher. Wenn Sie das-Attribut auf öffentliche Member, die native Methoden aufzurufen platzieren, ist der Aufrufer in der Aufrufliste (mit Ausnahme der direkte Aufrufer) nicht nicht verwalteten Code die Berechtigung zum Ausführen von nicht verwalteten Codes erforderlich. Abhängig von des öffentlichen Members Aktionen und Eingabeverarbeitung erlaubt es möglicherweise nicht vertrauenswürdige Aufrufern Access-Funktionalität, die normalerweise nur für vertrauenswürdigen Code.
+ Dieses Attribut wird hauptsächlich verwendet, um die Leistung zu erhöhen. Der Leistungszuwachs geht jedoch mit beträchtlichen Sicherheitsrisiken einher. Wenn Sie das-Attribut in öffentlichen Membern platzieren, die Native Methoden aufzurufen, benötigen die Aufrufer in der Aufruf Listen-Datei (mit Ausnahme des unmittelbaren Aufrufers) keine Berechtigung für nicht verwalteten Code, um nicht verwalteten Code auszuführen. Abhängig von den Aktionen des öffentlichen Members und der Eingabe Behandlung können nicht vertrauenswürdige Aufrufer auf Funktionen zugreifen, die normalerweise auf vertrauenswürdigen Code beschränkt sind.
 
- Die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sicherheitsüberprüfungen zu verhindern, dass Aufrufer am direkten Zugriff auf den aktuellen Prozess-Adressbereich verwendet. Da dieses Attribut Sicherheit umgangen werden, stellt Ihr Code eine ernsthafte Bedrohung, wenn sie zum Lesen oder Schreiben in den der Speicher des Prozesses verwendet werden kann. Beachten Sie, dass das Risiko nicht auf Methoden beschränkt ist, die absichtlich Zugriff zum Verarbeiten von Arbeitsspeicher bereitstellen. Es ist auch in jedem Szenario, in denen bösartiger Code den Zugriff mit welchen Mitteln, z. B. erreichen kann, indem die Eingabe von überraschend, falsch formatiert oder ungültig, vorhanden.
+ Der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] stützt sich auf Sicherheitsüberprüfungen, um zu verhindern, dass Aufrufer direkt auf den Adressraum des aktuellen Prozesses zugreifen können. Da dieses Attribut die normale Sicherheit umgeht, stellt der Code eine ernsthafte Bedrohung dar, wenn er verwendet werden kann, um den Arbeitsspeicher des Prozesses zu lesen oder zu schreiben. Beachten Sie, dass das Risiko nicht auf Methoden beschränkt ist, die absichtlich Zugriff auf den Prozess Speicher bereitstellen. Es ist auch in jedem Szenario vorhanden, in dem bösartiger Code auf beliebige Weise Zugriff erhalten kann, z. b. durch die Bereitstellung von überraschenden, falsch formatierten oder ungültigen Eingaben.
 
- Die Standardsicherheitsrichtlinie nicht verwaltetem Code auf eine Assembly gewährt Ihnen kein Recht, wenn sie auf dem lokalen Computer ausgeführt wird, oder ein Mitglied einer der folgenden Gruppen ist:
+ Die Standard Sicherheitsrichtlinie gewährt einer Assembly keine Berechtigung für den nicht verwalteten Code, es sei denn, Sie wird auf dem lokalen Computer ausgeführt oder ist Mitglied einer der folgenden Gruppen:
 
-- Meine Computer Internetzonen-Codegruppe
+- Arbeitsplatz Zonen-Code Gruppe
 
-- Codegruppe von Microsoft starker Name
+- Microsoft-Code Gruppe mit starkem Namen
 
-- ECMA Strong Name-Codegruppe
+- ECMA-Code Gruppe mit starkem Namen
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Überprüfen Sie sorgfältig den Code, um sicherzustellen, dass dieses Attribut absolut notwendig ist. Wenn Sie nicht mit verwaltetem Code Security vertraut sind oder die Sicherheitsaspekte bei der Verwendung dieses Attributs nicht verstehen, aus dem Code entfernen. Wenn das Attribut erforderlich ist, müssen Sie sicherstellen, dass der Aufrufer können nicht für Code in böswilliger Absicht verwendet werden. Wenn Ihr Code keine Berechtigung zum nicht verwalteten Code ausführen, wird dieses Attribut hat keine Auswirkungen und sollte entfernt werden.
+ Überprüfen Sie sorgfältig den Code, um sicherzustellen, dass dieses Attribut unbedingt erforderlich ist. Wenn Sie mit der Sicherheit von verwaltetem Code nicht vertraut sind oder die Auswirkungen der Verwendung dieses Attributs auf die Sicherheit nicht verstehen, entfernen Sie Sie aus dem Code. Wenn das Attribut erforderlich ist, müssen Sie sicherstellen, dass der Code von Aufrufern nicht bösartig verwendet werden kann. Wenn der Code nicht über die Berechtigung zum Ausführen von nicht verwaltetem Code verfügt, hat dieses Attribut keine Auswirkung und sollte entfernt werden.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Um problemlos eine Warnung dieser Regel zu unterdrücken, müssen Sie sicherstellen, dass Ihr Code keine Aufrufer den Zugriff auf systemeigene Vorgänge oder Ressourcen, die auf schädigende Weise verwendet werden können.
+ Um eine Warnung aus dieser Regel sicher zu unterdrücken, müssen Sie sicherstellen, dass der Code den Aufrufern keinen Zugriff auf systemeigene Vorgänge oder Ressourcen bereitstellt, die auf zerstörerische Weise verwendet werden können.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel verstößt gegen die Regel.
+ Im folgenden Beispiel wird gegen die Regel verstoßen.
 
  [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypesDoNotSuppress/cs/FxCop.Security.TypesDoNotSuppress.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel die `DoWork` Methode bietet einen öffentlich zugänglichen Codepfad für die Plattform-Methode aufrufen `FormatHardDisk`.
+ Im folgenden Beispiel stellt die `DoWork`-Methode einen öffentlich zugänglichen Codepfad zur Platt Form Aufruf Methode `FormatHardDisk` bereit.
 
  [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PInvokeAndSuppress/cs/FxCop.Security.PInvokeAndSuppress.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel, das die öffentliche Methode `DoDangerousThing` ein Verstoß. Zum Auflösen der Verletzung `DoDangerousThing` private gemacht werden sollen, und den Zugriff darauf muss über eine öffentliche Methode, die durch eine sicherheitsforderung geschützt, wie dargestellt die `DoWork` Methode.
+ Im folgenden Beispiel verursacht die öffentliche Methode `DoDangerousThing` eine Verletzung. Zum Beheben des Verstoßes sollten `DoDangerousThing` als privat festgestellt werden, und der Zugriff darauf sollte über eine öffentliche Methode erfolgen, die durch eine Sicherheitsanforderung gesichert ist, wie in der `DoWork`-Methode veranschaulicht.
 
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Siehe auch
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Sichern Sie die Richtlinien für das Codieren](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Sicherheitsoptimierungen](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [Linkaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [sichere Codierungs Richtlinien](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Sicherheits Optimierungen](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [und Modellierungs](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) Aufrufe

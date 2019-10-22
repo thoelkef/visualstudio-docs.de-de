@@ -1,5 +1,5 @@
 ---
-title: DebugPropertyInfo-Struktur | Microsoft-Dokumentation
+title: Debugpropertyinfo-Struktur | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 793c83b467460f0744abffe3f161f7510f56257a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955262"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575068"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo-Struktur
-Beschreibt ein Objekt von einer hierarchischen Aufbaus, der Name, Typ und Wert verfügt. Es wird verwendet, um die Debugeigenschaften der lokalen Variablen, Parameter, überwachen Sie Variablen und Ausdrücke beschrieben und registriert.  
+Beschreibt ein Objekt der hierarchischen Natur, das den Namen, den Typ und den Wert hat. Es wird verwendet, um die Debugeigenschaften lokaler Variablen, Parameter, Überwachungs Variablen und-Ausdrücke sowie Register zu beschreiben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -42,28 +42,28 @@ typedef struct DebugPropertyInfo{
 ```  
   
 ## <a name="members"></a>Member  
- dwValidFields  
- Ein Aufzählungsdatentyp verwendet, um anzugeben, welche Felder initialisiert werden.  
+ dwvalidfields  
+ Ein enumerierter Datentyp, der verwendet wird, um anzugeben, welche Felder initialisiert werden.  
   
  bstrName  
- Der Eigenschaftenname in einem Kontext.  
+ Der Eigenschaftsname innerhalb eines Kontexts.  
   
- bstrType  
- Der Eigenschaftentyp als formatierte Zeichenfolge.  
+ bstrintype  
+ Der Eigenschaftentyp, als formatierte Zeichenfolge.  
   
- bstrValue  
- Der Eigenschaftswert als formatierte Zeichenfolge.  
+ bstrauvalue  
+ Der Eigenschafts Wert als formatierte Zeichenfolge.  
   
- bstrFullName  
+ bstraufullname  
  Der vollständige Name der Eigenschaft.  
   
- dwAttrib  
- Eine Enumeration, die angibt, die Flags für die Attribute der Debug-Eigenschaft.  
+ dwattenb  
+ Eine Enumeration, die die Flags für die Debug-Eigenschafts Attribute angibt.  
   
- pDebugProp  
- Die `IDebugProperty` beschrieben werden, indem Sie die Informationen in diesem `DebugPropertyInfo` Struktur.  
+ pdebug-Prop  
+ Die `IDebugProperty`, die durch die Informationen in dieser `DebugPropertyInfo` Struktur beschrieben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugProperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ [Idebugproperty-Schnittstelle](../../winscript/reference/idebugproperty-interface.md)    
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SynchronousCallInDebuggerThread | Microsoft-Dokumentation
+title: 'Idebugapplication:: synchronouscallindebuggerthread | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5460efaa3448c7812707e0baa7b2f5afe1d27a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 134717b6ce30c87ccfb4bbb50ffe958717ae757f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990555"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574585"
 ---
 # <a name="idebugapplicationsynchronouscallindebuggerthread"></a>IDebugApplication::SynchronousCallInDebuggerThread
-Stellt einen Mechanismus für den Aufrufer zum Ausführen von Code im Debuggerthread.  
+Stellt einen Mechanismus für den Aufrufer zum Ausführen von Code im Debuggerthread bereit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ HRESULT SynchronousCallInDebuggerThread(
   
 #### <a name="parameters"></a>Parameter  
  `pptc`  
- [in] Das Objekt aufrufen.  
+ in Das aufzurufende-Objekt.  
   
  `dwParam1`  
- [in] Erste Parameter, der zum Übergeben der `IDebugThreadCall::ThreadCallHandler` Methode.  
+ in Der erste Parameter, der an die `IDebugThreadCall::ThreadCallHandler`-Methode übergeben werden soll.  
   
  `dwParam2`  
- [in] Zweite Parameter, der zum Übergeben der `IDebugThreadCall::ThreadCallHandler` Methode.  
+ in Der zweite Parameter, der an die `IDebugThreadCall::ThreadCallHandler` Methode übergeben werden soll.  
   
  `dwParam3`  
- [in] Dritte Parameter, der zum Übergeben der `IDebugThreadCall::ThreadCallHandler` Methode.  
+ in Der dritte Parameter, der an die `IDebugThreadCall::ThreadCallHandler`-Methode übergeben werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -59,8 +59,8 @@ HRESULT SynchronousCallInDebuggerThread(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Sprach-Engines und Hosts in der Regel verwenden diese Methode zum Implementieren von Freethreadobjekten auf ihre Implementierungen der einzelnen Threads.  
+ Sprach-Engines und Hosts verwenden diese Methode in der Regel, um frei Thread Objekte zusätzlich zu ihren Single Thread-Implementierungen zu implementieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
  [IDebugThreadCall-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md)

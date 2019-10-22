@@ -1,5 +1,5 @@
 ---
-title: JsDebugReadMemoryFlags-Enumeration | Microsoft-Dokumentation
+title: Jsdebugreadmemoryflags-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1757678f20a01221ae46e1535d3190cd463d724
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830461"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571695"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>JsDebugReadMemoryFlags-Enumeration
 Flags um Verhalten anzugeben, wenn Arbeitsspeicher gelesen werden.  
@@ -35,13 +35,13 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 ### <a name="values"></a>Werte  
   
-|Name|Beschreibung|  
+|-Name|Beschreibung|  
 |----------|-----------------|  
 |`JsDebugAllowPartialRead`|Gibt an, dass der Aufrufer möchte, dass der Lesevorgang erfolgreich ist, wenn nur ein Teil des Arbeitsspeichers erfolgreich gelesen wird. Wenn dies festgelegt ist, wird ein E_JsDEBUG_INVALID_MEMORY_ADDRESS-Fehler nur ausgelöst, wenn "Adresse" ungültig ist. Wenn dieses Flag klar ist, wird ein E_JsDEBUG_INVALID_MEMORY_ADDRESS-Fehler ausgelöst, wenn irgendein Teil des angeforderten Arbeitsspeichers nicht gelesen werden konnte.|  
 |`None`|Gibt an, dass der Aufrufer das Standardverhalten für ReadMemory wünscht.|  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)

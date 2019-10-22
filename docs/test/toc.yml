@@ -62,13 +62,14 @@
           href: using-the-assert-classes.md
         - name: Microsoft Fakes
           items:
-            - name: Isolieren von getestetem Code mithilfe von Microsoft Fakes
+            - name: Isolieren des zu testenden Codes
+              displayName: 'shim, stub, fakes'
               href: isolating-code-under-test-with-microsoft-fakes.md
-            - name: 'Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen'
+            - name: 'Verwenden von Stubs, um Teile der App zu isolieren'
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
-            - name: Shims zum Isolieren der Anwendung für Komponententests in Visual Studio verwenden
+            - name: Verwenden von Shims zum Isolieren Ihrer App von anderen Assemblys
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
-            - name: 'Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes'
+            - name: 'Codegenerierung, Kompilierung und Benennungskonventionen'
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
         - name: Datengesteuerte Komponententests
           items:
@@ -119,13 +120,13 @@
     - name: Einführung
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Neuerungen in Live Unit Testing
+    - name: Neuigkeiten
       href: live-unit-testing-whats-new.md
-    - name: Erste Schritte mit Live Unit Testing
+    - name: Erste Schritte
       href: live-unit-testing-start.md
-    - name: Verwenden von Live Unit Testing in der Enterprise Edition
+    - name: Konfigurieren und Verwenden
       href: live-unit-testing.md
-    - name: Live Unit Testing – häufig gestellte Fragen
+    - name: FAQ
       href: live-unit-testing-faq.md
 - name: Webleistungstests und Auslastungstests
   items:

@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer Windows Forms-App mit Visual Basic
 description: Erfahren Sie, wie Sie schrittweise eine Windows Forms-App in Visual Studio mit Visual Basic erstellen.
-ms.date: 03/23/2019
+ms.date: 09/27/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,15 +10,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 dev_langs:
-- vb
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c031a047a0331eea0f8397a303d2b5cb0af650e6
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180137"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681581"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic
 
@@ -47,9 +47,9 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie dann auf **Windows-Desktop**. Klicken Sie im mittleren Bereich auf **Windows Forms-App (.NET Framework)** . Nennen Sie die Datei `HelloWorld`.
+1. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie dann auf **Windows-Desktop**. Klicken Sie im mittleren Bereich auf **Windows Forms-App (.NET Framework)** . Nennen Sie die Datei `HelloWorld`.
 
      Wenn Ihnen die Projektvorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, schließen Sie das Dialogfeld **Neues Projekt**, und klicken Sie in der oberen Menüleiste auf **Extras** > **Tools und Features abrufen**. Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
@@ -65,19 +65,19 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
    ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld den Begriff *Windows Forms* ein. Wählen Sie anschließend in der Liste der Sprachen **Visual Basic** und dann aus der Liste der Plattformen **Windows** aus. 
+1. Wählen Sie im Fenster **Neues Projekt erstellen** die Vorlage **Windows Forms-App (.NET Framework)** für Visual Basic aus.
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Windows Forms-App (.NET Framework)** und dann **Weiter** aus.
+   (Sie können die Suche auch verfeinern, um schnell zu der gewünschten Vorlage zu gelangen. Sie können z. B. *Windows Forms-App* im Suchfeld eingeben. Wählen Sie anschließend in der Liste der Sprachen **Visual Basic** und dann in der Liste der Plattformen **Windows** aus.)  
 
    ![Screenshot: Auswählen der Visual Basic-Vorlage für die Windows Forms-App (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Wenn Sie die **Windows Forms-App (.NET Framework)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
    >
-   > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Wählen Sie anschließend im Visual Studio-Installer die Workload **.NET Desktopentwicklung** aus.
-   > 
+   >
    > ![Die Workload „.NET Core“ im Visual Studio-Installer](../ide/media/install-dot-net-desktop-env.png)
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
@@ -92,7 +92,7 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 ## <a name="create-the-application"></a>Erstellen der Anwendung
 
-Sobald Sie eine Visual Basic-Projektvorlage ausgewählt und die Datei benannt haben, öffnet Visual Studio ein Formular für Sie. Ein Formular ist eine Windows-Benutzeroberfläche. Es soll eine „Hallo Welt“-Anwendung erstellt werden, indem dem Formular Steuerelemente hinzugefügt werden. Anschließend soll die Anwendung ausgeführt werden.
+Sobald Sie eine Visual Basic-Projektvorlage ausgewählt und die Datei benannt haben, öffnet Visual Studio ein Formular für Sie. Ein Formular ist eine Windows-Benutzeroberfläche. Wir erstellen eine „Hallo Welt“-Anwendung, indem wir dem Formular Steuerelemente hinzufügen und die App dann ausführen.
 
 ### <a name="add-a-button-to-the-form"></a>Hinzufügen einer Schaltfläche zum Formular
 
@@ -100,25 +100,28 @@ Sobald Sie eine Visual Basic-Projektvorlage ausgewählt und die Datei benannt ha
 
      ![Klicken Sie auf „Toolbox“, um das Toolbox-Fenster zu öffnen.](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Wenn Ihnen die Flyoutoption **Toolbox** nicht angezeigt wird, können Sie sie öffnen, indem Sie **STRG**+**ALT**+**X** drücken.)
+     (Wenn Ihnen die Option **Toolbox** nicht angezeigt wird, können Sie sie über die Menüleiste öffnen. Klicken Sie zu diesem Zweck auf **Ansicht** > **Toolbox**. Drücken Sie alternativ auf **STRG**+**ALT**+**X**.)
 
-2. Klicken Sie auf das **Stecknadelsymbol**, um das **Toolbox-Fenster** anzudocken.
+1. Klicken Sie auf das **Stecknadelsymbol**, um das **Toolbox-Fenster** anzudocken.
 
      ![Klicken Sie auf das Stecknadelsymbol, um das Toolbox-Fenster an die IDE anzuheften.](../ide/media/vb-pin-the-toolbox-window.png)
 
-3. Klicken Sie auf das **Schaltflächen-Steuerelement**, und bewegen Sie dieses dann zum Formular.
+1. Klicken Sie auf das **Schaltflächen-Steuerelement**, und bewegen Sie dieses dann zum Formular.
 
      ![Hinzufügen einer Schaltfläche zum Formular](../ide/media/vb-add-a-button-to-form1.png)
 
-4. Geben Sie im Fenster **Eigenschaften** im Abschnitt **Darstellung** (oder im Abschnitt **Schriftarten**) `Click this` ein, und drücken Sie dann die **EINGABETASTE**.
+1. Geben Sie im Fenster **Eigenschaften** im Abschnitt **Darstellung** (oder im Abschnitt **Schriftarten**) `Click this` ein, und drücken Sie dann die **EINGABETASTE**.
 
      ![Hinzufügen von Text zur Schaltfläche auf dem Formular](../ide/media/vb-button-control-text.png)
 
      (Wenn Ihnen das **Eigenschaftenfenster** nicht angezeigt wird, können Sie es über die Menüleiste öffnen. Klicken Sie dafür auf **Ansicht** > **Eigenschaftenfenster**. Oder drücken Sie **F4**.)
 
-5. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von **Button1** in `btnClickThis`, und drücken Sie dann die **EINGABETASTE**.
+1. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von **Button1** in `btnClickThis`, und drücken Sie dann die **EINGABETASTE**.
 
      ![Hinzufügen einer Funktion zur Schaltfläche auf dem Formular](../ide/media/vb-button-control-function.png)
+
+   > [!NOTE]
+   > Wenn Sie die Liste im Fenster **Eigenschaften** alphabetisch sortiert haben, wird **Button1** stattdessen im Abschnitt **(DataBindings)** angezeigt.
 
 ### <a name="add-a-label-to-the-form"></a>Hinzufügen einer Bezeichnung zum Formular
 
@@ -126,7 +129,7 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 
 1. Wählen Sie im **Toolbox**-Fenster das Steuerelement **Bezeichnung** aus, und ziehen Sie es dann unter die Schaltfläche **Click this** („Hier klicken“).
 
-2. Ändern Sie im Fenster **Eigenschaften** im Abschnitt **Entwurf** den Namen von **Label1** in `lblHelloWorld`, und drücken Sie dann die **EINGABETASTE**.
+1. Ändern Sie im Fenster **Eigenschaften** entweder im Abschnitt **Entwurf** oder im Abschnitt **(DataBindings)** den Namen von **Label1** in `lblHelloWorld`, und drücken Sie dann die **EINGABETASTE**.
 
 ### <a name="add-code-to-the-form"></a>Hinzufügen von Code zum Formular
 
@@ -134,7 +137,7 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 
       (Stattdessen können Sie auch **Form1.vb** im **Projektmappen-Explorer** erweitern und dann auf **Form1** klicken.)
 
-2. Geben Sie im Fenster **Form1.vb** zwischen der Zeile **Private Sub** und der Zeile **End Sub** den folgenden Code ein (oder zwischen der Zeile **Public Class Form1** und der Zeile **End Class**).
+1. Geben Sie im Fenster **Form1.vb** zwischen den Zeilen **Private Sub** und **End Sub** die Zeichenfolge `lblHelloWorld.Text = "Hello World!"` ein, wie im folgenden Screenshot gezeigt:
 
      ![Hinzufügen von Code zum Formular](../ide/media/vb-add-code-to-the-form.png)
 
@@ -146,13 +149,21 @@ Da nun ein Schaltflächen-Steuerelement hinzugefügt wurde, kann jetzt auch ein 
 
    Daraufhin werden einige Vorgänge gleichzeitig ausgeführt. In der Visual Studio-IDE öffnen sich das Fenster **Diagnosetools** und ein **Ausgabefenster**. Außerhalb der IDE wird das **Form1**-Dialogfeld angezeigt. Darin ist die Schaltfläche **Click this** („Hier klicken“) und Text mit dem Inhalt **Label1** enthalten.
 
-2. Klicken Sie auf die Schaltfläche **Click this** („Hier klicken“) im Dialogfeld **Form1**. Beachten Sie, dass der Text **Label1** sich in **Hallo Welt!** ändert.
+1. Klicken Sie auf die Schaltfläche **Click this** („Hier klicken“) im Dialogfeld **Form1**. Beachten Sie, dass der Text **Label1** sich in **Hallo Welt!** ändert.
 
     ![Ein „Form1“-Dialogfeld, das den Text „Label1“ beinhaltet. ](../ide/media/vb-form1-dialog-hello-world.png)
 
-Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über Visual Basic und die Visual Studio-IDE gelernt haben. Wenn Sie mehr über diese Themen erfahren möchten, können Sie gerne mit einem Tutorial fortfahren, das Sie im Inhaltsverzeichnis im Abschnitt **Tutorials** finden.
+1. Schließen Sie das Dialogfeld **Form1**, um die Ausführung der App zu beenden.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Fahren Sie für weitere Informationen mit dem folgenden Tutorial fort:
+
+> [!div class="nextstepaction"]
+> [Tutorial: Erstellen eines Bildanzeigeprogramms](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Schnellstart: Erstellen einer Konsolenanwendung in Visual Studio mit Visual Basic](quickstart-visual-basic-console.md)
-* [Erfahren Sie mehr über Visual Basic IntelliSense](visual-basic-specific-intellisense.md)
+* [Weitere Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [C#-Tutorials](/visualstudio/get-started/csharp/)
+* [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)

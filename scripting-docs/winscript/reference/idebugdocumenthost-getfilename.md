@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetFileName | Microsoft-Dokumentation
+title: 'Idebugdocumumthost:: GetFilename | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 511cdb40a5bb0f885fed8b811a095e7a53a8bb6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ff2ad2e4ab419f1e503da072aaa550f3cb7cf0e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971107"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569403"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
-Gibt den Namen des Dokuments ohne Pfadinformationen.  
+Gibt den Namen des Dokuments ohne Pfadinformationen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrShortName`  
- [out] Eine Zeichenfolge, die den kurzen Namen des Dokuments enthält.  
+ vorgenommen Eine Zeichenfolge, die den Kurznamen des Dokuments enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetFileName(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt den kurzen Namen des Dokuments ohne Pfadinformationen. Der kurze Name wird in der Regel wie z. B. in Situationen verwendet die **speichern unter...**  Dialogfeld.  
+ Diese Methode gibt den Kurznamen des Dokuments ohne Pfadinformationen zurück. Der Kurzname wird in der Regel in Situationen verwendet, z. b. im Dialogfeld **Speichern unter...** .  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)

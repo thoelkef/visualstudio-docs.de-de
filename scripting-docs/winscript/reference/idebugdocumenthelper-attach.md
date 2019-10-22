@@ -1,5 +1,5 @@
 ---
-title: Idebugdocumenthelper | Microsoft-Dokumentation
+title: 'Idebugdocumenthelper:: Attach | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f4fbd1686d27e594b748ca97c82c645de1b93de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3400a5bf6cd3e4a9726fdf4b2f20bbf43b9fc989
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783134"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577030"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-In diesem Dokument und die Dokumentstruktur hinzugefügt.  
+Fügt der Dokumentstruktur dieses Dokument hinzu.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parameter  
  `pddhParent`  
- [in] Die Dokumentstruktur, in dem in diesem Dokument hinzugefügt werden. NULL kann sein.  
+ in Die Dokumentstruktur, in der dieses Dokument hinzugefügt wird. Kann NULL sein.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,8 +47,8 @@ HRESULT Attach(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode fügt dieses Dokuments, auf das Dokument-Struktur, mit der `pddhParent` als übergeordnetes Element. Wenn die `pddhParent` ist `NULL`, in diesem Dokument werden die Dokumente der höchsten Ebene.  
+ Mit dieser Methode wird dieses Dokument der Dokumentstruktur hinzugefügt, wobei `pddhParent` als übergeordnetes Element verwendet wird. Wenn die `pddhParent` `NULL` ist, wird dieses Dokument als Dokument der obersten Ebene verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
+ [Idebugdocumenthelper::D Etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

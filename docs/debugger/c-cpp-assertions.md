@@ -1,5 +1,5 @@
 ---
-title: C/C++-Assertionen | Microsoft-Dokumentation
+title: C/C++ Assertionen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,17 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 154abe3d73fa71ac897f0442697196cd859f32bd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564111"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435892"
 ---
 # <a name="cc-assertions"></a>C/C++-Assertionen
 Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm "true" lauten muss. Wenn diese Bedingung nicht den Wert TRUE aufweist, kann die Assertion nicht durchgeführt werden, die Programmausführung wird unterbrochen, und das Dialogfeld [Assertionsfehler](../debugger/assertion-failed-dialog-box.md) wird geöffnet.
 
-Visual C++ unterstützt Assertionsanweisungen, die auf folgenden Konstrukten basieren:
+Visual Studio unter C++ stützt auf den folgenden Konstrukten basierende Assertionsanweisungen:
 
 - MFC-Assertionen für MFC-Programme
 
@@ -90,7 +90,7 @@ Wenn Sie Assertionen in den Code einfügen, sollten Sie sicherstellen, dass die 
 ASSERT(nM++ > 0); // Don't do this!
 ```
 
-Da der `ASSERT`-Ausdruck in der Releaseversion des Programms nicht ausgewertet wird, verfügt `nM` in der Debug- und Releaseversion über unterschiedliche Werte. Um dieses Problem in MFC zu vermeiden, können Sie die [überprüfen](/cpp/mfc/reference/diagnostic-services#verify) -Makro anstelle von `ASSERT`. `VERIFY` Wertet den Ausdruck in allen Versionen, aber nicht das Ergebnis in der endgültigen Produktversion.
+Da der `ASSERT`-Ausdruck in der Releaseversion des Programms nicht ausgewertet wird, verfügt `nM` in der Debug- und Releaseversion über unterschiedliche Werte. Um dieses Problem in MFC zu vermeiden, können Sie das [Verify](/cpp/mfc/reference/diagnostic-services#verify) -Makro anstelle von `ASSERT` verwenden. `VERIFY` wertet den Ausdruck in allen Versionen aus, überprüft jedoch nicht das Ergebnis in der Releaseversion.
 
 Da die Auswertung einer Funktion unerwartete Nebeneffekte haben kann, sollten Funktionsaufrufe in Assertionsanweisungen mit Vorsicht verwendet werden.
 
@@ -250,7 +250,7 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` verwendet den `AssertValid`-Mechanismus, um die Gültigkeit der im Datenmember gespeicherten Objekte zu testen. Durch das `AssertValid`-Überschreiben von `CMyData` wird das `ASSERT_VALID`-Makro für die eigene m_pDataList-Membervariable aufgerufen.
+`CMyData` verwendet den `AssertValid`-Mechanismus, um die Gültigkeit der in ihrem Datenmember gespeicherten Objekte zu testen. Durch das `AssertValid`-Überschreiben von `CMyData` wird das `ASSERT_VALID`-Makro für die eigene m_pDataList-Membervariable aufgerufen.
 
 Die Gültigkeitsüberprüfung wird auf dieser Ebene nicht beendet, da die `CObList`-Klasse auch von `AssertValid` überschrieben wird. Diese Überschreibung bewirkt weitere Gültigkeitsüberprüfungen des internen Listenzustands. Auf diese Weise führt eine Gültigkeitsüberprüfung für ein `CMyData`-Objekt zu weiteren Gültigkeitsüberprüfungen, mit denen der interne Zustand des gespeicherten `CObList`-Listenobjekts getestet wird.
 
@@ -280,7 +280,7 @@ Sie können auch eine CRT-Assertion wie die folgende einschließen:
 _ASSERT(numMols >= 0);
 ```
 
-Diese Anweisungen bleiben wirkungslos, solange das Programm einwandfrei funktioniert. Wenn ein logischer Fehler bewirkt, dass `numMols` um kleiner als NULL sein, jedoch die Assertion hält die Ausführung des Programms an und zeigt die [Dialogfeld zur Assertion Fehler](../debugger/assertion-failed-dialog-box.md).
+Diese Anweisungen bleiben wirkungslos, solange das Programm einwandfrei funktioniert. Wenn ein logischer Fehler bewirkt, dass `numMols` kleiner als 0 (null) ist, wird die Ausführung des Programms angehalten, und das [Dialog Feld](../debugger/assertion-failed-dialog-box.md)"Fehler bei der Ausführung" wird angezeigt.
 
 [Inhalt](#BKMK_In_this_topic)
 
@@ -320,7 +320,7 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version
 ```
 
-Wenn der Fehlerbehandlungscode einwandfrei funktioniert, sollte der Fehler behandelt und `myErr` vor Erreichen der Assertion auf 0 (null) zurückgesetzt werden. Wenn `myErr` verfügt über einen anderen Wert, schlägt die Assertion fehl, das Programm wird angehalten, und die [Dialogfeld zur Assertion Fehler](../debugger/assertion-failed-dialog-box.md) angezeigt wird.
+Wenn der Fehlerbehandlungscode einwandfrei funktioniert, sollte der Fehler behandelt und `myErr` vor Erreichen der Assertion auf 0 (null) zurückgesetzt werden. Wenn `myErr` einen anderen Wert aufweist, schlägt die-Übersetzung fehl, das Programm wird angehalten, und das [Dialog Feld](../debugger/assertion-failed-dialog-box.md) "Fehler bei der Übersetzung
 
 Assertionsanweisungen sind allerdings kein Ersatz für Fehlerbehandlungscode. So kann die Assertionsanweisung im folgenden Beispiel im Releasecode u. U. Probleme bereiten:
 

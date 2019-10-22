@@ -1,5 +1,5 @@
 ---
-title: Speichern von Themen zur späteren Verwendung | Microsoft-Dokumentation
+title: Themen für spätere Verwendung beibehalten | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,23 +14,23 @@ helpviewer_keywords:
 - Favorites tab [Help Viewer 2.0]
 ms.assetid: f0a4c657-001d-4604-a403-d46f15782724
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8e5c4fb8bde2f8ecbc231540047a8d4cd3398a54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6c32db6dc6fbe151b9eec3cec988443ceb73fec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203527"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669983"
 ---
 # <a name="retain-topics-for-later-use"></a>Speichern von Themen zur späteren Verwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie ein nützliches Thema gefunden haben, können Sie zu einem späteren Zeitpunkt darauf zugreifen, indem Sie es kopieren und in eine Textdatei einfügen und ausdrucken, oder Sie speichern das Thema als Favorit. Sie können beispielsweise Inhalte für die spätere Verwendung beibehalten, indem Sie das Kontextmenü für Themen öffnen und die Option **Kopieren**, **Drucken**, **Druckvorschau** oder **Zu Favoriten hinzufügen** auswählen.  
-  
-## <a name="using-the-favorites-tab"></a>Verwenden der Registerkarte "Favoriten"  
- Auf der Registerkarte **Favoriten** können Sie das Kontextmenü öffnen, um beliebige Einträge umzubenennen, zu löschen oder die Einträge in Ordnern zu organisieren.  
-  
-## <a name="see-also"></a>Siehe auch  
+Wenn Sie ein nützliches Thema gefunden haben, können Sie zu einem späteren Zeitpunkt darauf zugreifen, indem Sie es kopieren und in eine Textdatei einfügen und ausdrucken, oder Sie speichern das Thema als Favorit. Sie können beispielsweise Inhalte für die spätere Verwendung beibehalten, indem Sie das Kontextmenü für Themen öffnen und die Option **Kopieren**, **Drucken**, **Druckvorschau** oder **Zu Favoriten hinzufügen** auswählen.
+
+## <a name="using-the-favorites-tab"></a>Verwenden der Registerkarte "Favoriten"
+ Auf der Registerkarte **Favoriten** können Sie das Kontextmenü öffnen, um beliebige Einträge umzubenennen, zu löschen oder die Einträge in Ordnern zu organisieren.
+
+## <a name="see-also"></a>Siehe auch
  [Tastenkombinationen (Help Viewer)](../ide/shortcut-keys-help-viewer.md)

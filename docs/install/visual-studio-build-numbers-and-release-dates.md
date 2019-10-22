@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/25/2019
+ms.date: 10/15/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 584243fa3bfc8d4c0400c0613351508b5ec4e809
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.openlocfilehash: 9f845c3b743c5f0ea9ccfc5f57026b7ff46268e1
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71301679"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380981"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,12 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.5 | Freigabe | 15. Oktober 2019 | 16.3.29411.108 |
+| 16.4.0 | Vorschau 2 | 15. Oktober 2019 | 16.4.29411.138 |
+| 16.0.9 | Freigabe | 15. Oktober 2019 | 16.0.28803.598 |
+| 16.3.4 | Freigabe | 10. Oktober 2019 | 16.3.29409.12 |
+| 16.3.3 | Freigabe | 8\. Oktober 2019 | 16.3.29403.142 |
+| 16.3.2 | Freigabe | 1\. Oktober 2019 | 16.3.29326.143 |
 | 16.3.1 | Freigabe | 25. September 2019 | 16.3.29324.140 |
 | 16.4.0 | Vorschauversion 1 | 23. September 2019 | 16.4.29319.158 |
 | 16.3.0 | Freigabe | 23. September 2019 | 16.3.29318.209 |
@@ -99,6 +105,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.17 | Freigabe | 15. Oktober 2019 | 15.9.28307.905 |
 | 15.9.16 | Freigabe | 10. September 2019 | 15.9.28307.858 |
 | 15.0.27 | Freigabe | 10. September 2019 | 15.0.26228.98 |
 | 15.9.15 | Freigabe | 13. August 2019 | 15.9.28307.812 |

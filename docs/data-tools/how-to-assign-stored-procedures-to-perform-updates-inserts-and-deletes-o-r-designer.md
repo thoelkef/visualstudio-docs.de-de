@@ -3,27 +3,27 @@ title: Verwenden von gespeicherten Prozeduren in LINQ to SQL zum Aktualisieren v
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3dfb55425934f00de41af7997ed1ed4b5a9bcf42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 019bf6b115fc526e39a3bc65bd9d0607c1a976db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253001"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648392"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)
 
-Gespeicherte Prozeduren können dem **O/R-Designer** hinzugefügt und als typische <xref:System.Data.Linq.DataContext>-Methoden ausgeführt werden. Sie können auch verwendet werden, um das standardmäßige LINQ to SQL Laufzeitverhalten zu überschreiben, das Einfügungen, Updates und Löschungen durchführt, wenn Änderungen von Entitäts Klassen in einer Datenbank <xref:System.Data.Linq.DataContext.SubmitChanges%2A> gespeichert werden (z. b. beim Aufrufen der-Methode).
+Gespeicherte Prozeduren können dem **O/R-Designer** hinzugefügt und als typische <xref:System.Data.Linq.DataContext>-Methoden ausgeführt werden. Sie können auch verwendet werden, um das standardmäßige LINQ to SQL Laufzeitverhalten zu überschreiben, das Einfügungen, Updates und Löschungen durchführt, wenn Änderungen von Entitäts Klassen in einer Datenbank gespeichert werden (z. b. beim Aufrufen der <xref:System.Data.Linq.DataContext.SubmitChanges%2A>-Methode).
 
 > [!NOTE]
 > Wenn Ihre gespeicherte Prozedur Werte zurückgibt, die an den Client zurückgesendet werden müssen (beispielsweise Werte, die in der gespeicherten Prozedur berechnet werden), sollten Sie Ausgabeparameter in Ihrer gespeicherten Prozedur erstellen. Wenn Sie keine Ausgabeparameter verwenden können, sollten Sie eine partielle Methodenimplementierung schreiben und sich nicht auf vom O/R-Designer erzeugte Überschreibungen verlassen. Member, die datenbankgenerierten Werten zugeordnet werden, müssen nach erfolgreicher Beendigung von INSERT- oder UPDATE-Vorgängen auf entsprechende Werte festgelegt werden. Weitere Informationen finden Sie unter [Zuständigkeiten des Entwicklers beim Überschreiben des Standard Verhaltens](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
-> LINQ to SQL behandelt von der Datenbank generierte Werte automatisch für Identitäts-(automatische Inkrement-), ROWGUIDCOL-(Daten Bank generierte GUID) und Zeitstempel-Spalten. Datenbankgenerierte Werte in anderen Spaltentypen führen unerwartet zu einem NULL-Wert. Um die Daten Bank generierten Werte zurückzugeben, sollten Sie manuell <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> auf **true** und <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> auf einen der folgenden Werte festlegen: " [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)", " [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)" oder " [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)".
+> LINQ to SQL behandelt von der Datenbank generierte Werte automatisch für Identitäts-(automatische Inkrement-), ROWGUIDCOL-(Daten Bank generierte GUID) und Zeitstempel-Spalten. Datenbankgenerierte Werte in anderen Spaltentypen führen unerwartet zu einem NULL-Wert. Um die Daten Bank generierten Werte zurückzugeben, legen Sie <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> manuell auf **true** fest, und <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> auf einen der folgenden Werte: " [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)", " [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)" oder " [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)".
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Konfigurieren des Aktualisierungs Verhaltens einer Entitäts Klasse
 
@@ -51,7 +51,7 @@ Standardmäßig wird die Logik zum Aktualisieren einer Datenbank (Einfügungen, 
 
 8. Wählen Sie die gewünschte gespeicherte Prozedur in der Liste **Anpassen** aus.
 
-9. Untersuchen Sie die Listen **Methodenargumente** und **Klasseneigenschaften**, um zu überprüfen, ob die **Methodenargumente** den entsprechenden **Klasseneigenschaften** zugeordnet sind. Ordnen Sie die ursprünglichen Methodenargumente`Original_<ArgumentName>`() den ursprünglichen Eigenschaften (`<PropertyName> (Original)`) für die `Update` Befehle `Delete` und zu.
+9. Untersuchen Sie die Listen **Methodenargumente** und **Klasseneigenschaften**, um zu überprüfen, ob die **Methodenargumente** den entsprechenden **Klasseneigenschaften** zugeordnet sind. Ordnen Sie die ursprünglichen Methodenargumente (`Original_<ArgumentName>`) den ursprünglichen Eigenschaften (`<PropertyName> (Original)`) für die Befehle `Update` und `Delete` zu.
 
     > [!NOTE]
     > Standardmäßig werden Methodenargumente Klasseneigenschaften zugeordnet, wenn die Namen übereinstimmen. Wenn geänderte Eigenschaftennamen von Tabelle und Entitätsklasse nicht mehr übereinstimmen, kann es notwendig sein, die entsprechende Klasseneigenschaft für die Zuordnung auszuwählen, wenn der Designer die korrekte Zuordnung nicht ermitteln kann.

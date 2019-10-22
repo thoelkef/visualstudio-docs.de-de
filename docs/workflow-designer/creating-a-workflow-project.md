@@ -1,75 +1,75 @@
 ---
-title: Erstellen Sie ein Workflow Foundation-Projekt
+title: Erstellen eines Workflow Foundation-Projekts
 ms.date: 06/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f793e6ff468bdec6df499c5e5eb6b8524e9e4d5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747801"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650575"
 ---
 # <a name="workflow-project-templates"></a>Workflow-Projektvorlagen
 
-Sie können die Workflows, Windows Communication Foundation (WCF)-Workflowdienste, benutzerdefinierte Aktivitäten und benutzerdefinierte Aktivitätsdesigner mit Visual Studio-Projektvorlagen erstellen. In diesem Artikel wird beschrieben, wie zum Erstellen von Bibliotheken und Anwendungen mit den Projektvorlagen in Visual Studio verfügbar wird.
+Mithilfe von Visual Studio-Projektvorlagen können Sie Workflows, Windows Communication Foundation (WCF)-Workflow Dienste, benutzerdefinierte Aktivitäten und benutzerdefinierte Aktivitäts Designer erstellen. In diesem Artikel wird beschrieben, wie Sie Bibliotheken und Anwendungen mit den in Visual Studio verfügbaren Projektvorlagen erstellen.
 
 ## <a name="create-a-workflow-project"></a>Erstellen eines Workflowprojekts
 
-Visual Studio bietet vier verschiedene Vorlagen für die Workflow-Projekt:
+Visual Studio bietet vier verschiedene Workflow Projektvorlagen:
 
-- Workflow-Konsolen-app
+- Workflow Konsolen-App
 
-- WCF Workflow Service-app
+- WCF-Workflow Dienst-App
 
-- Aktivitätsbibliothek
+- Aktivitäts Bibliothek
 
-- Aktivitäts-designerbibliothek
+- Aktivitäts Designer Bibliothek
 
-Installieren Sie zuerst diese Vorlagen für den Zugriff auf die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Um auf diese Vorlagen zuzugreifen, installieren Sie zunächst die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Nach der Installation der **Windows Workflow Foundation** Komponente, wählen **Datei** > **neu** > **Projekt**.
+1. Nachdem Sie die **Windows Workflow Foundation** Komponente installiert haben, wählen Sie **Datei**  > **neu**  > **Projekt**aus.
 
-1. Suchen Sie nach, und wählen Sie eine Workflow-Projektvorlage, z. B. die **Konsolenanwendung für Workflows** Vorlage.
+1. Suchen Sie eine Workflow Projektvorlage, und wählen Sie Sie aus, z. b. die Vorlage **Workflow Konsolenanwendung** .
 
-1. Führen Sie zum Erstellen des Projekts.
+1. Fahren Sie mit fort, um das Projekt zu erstellen.
 
    > [!NOTE]
-   > Wenn Sie ein neues Projekt zu einer vorhandenen Projektmappe hinzufügen möchten, öffnen Sie die Projektmappe in Visual Studio, mit der rechten Maustaste in der Lösung in **Projektmappen-Explorer**, und wählen Sie **hinzufügen** > **neu Projekt**.
+   > Wenn Sie einer vorhandenen Projekt Mappe ein neues Projekt hinzufügen möchten, öffnen Sie die Projekt Mappe in Visual Studio, klicken Sie mit der rechten Maustaste auf **Projektmappen-Explorer**, und wählen Sie  > **Neues Projekt** **Hinzufügen** aus.
 
-## <a name="workflow-console-app"></a>Workflow-Konsolen-app
+## <a name="workflow-console-app"></a>Workflow Konsolen-App
 
-Bei Auswahl der **Konsolenanwendung für Workflows** Visual Studio-Vorlage erstellt eine Workflowdefinition in XAML. Der Workflow-Designer wird geöffnet und zeigt den Canvas für den Workflow, die, den Sie erstellt haben. Um einen Workflow zu verfassen, ziehen Sie die Aktivitäten oder andere Workflowelemente von **Toolbox** auf die Entwurfsoberfläche.
+Wenn Sie die Vorlage **Konsolenanwendung für Workflows** auswählen, erstellt Visual Studio eine Workflow Definition in XAML. Der Workflow-Designer wird geöffnet und zeigt den Canvas für den Workflow an, den Sie erstellt haben. Um einen Workflow zu erstellen, ziehen Sie Aktivitäten oder andere Workflow Elemente aus der **Toolbox** in die Entwurfs Oberfläche.
 
-## <a name="wcf-workflow-service-app"></a>WCF Workflow Service-app
+## <a name="wcf-workflow-service-app"></a>WCF-Workflow Dienst-App
 
-Bei Auswahl der **WCF-Workflowdienstanwendung** Visual Studio-Vorlage erstellt eine Dienstdefinition im XAML. Der Workflow-Designer wird geöffnet, in die Entwurfsansicht mit einer <xref:System.Activities.Statements.Sequence> Aktivität, die einen Satz von enthält <xref:System.ServiceModel.Activities.Receive> und <xref:System.ServiceModel.Activities.SendReply> Aktivitäten.
+Wenn Sie die Vorlage **WCF-Workflow Dienst Anwendung** auswählen, erstellt Visual Studio eine Dienst Definition als XAML. Der Workflow-Designer wird in der Entwurfs Ansicht mit einer <xref:System.Activities.Statements.Sequence> Aktivität geöffnet, die eine Reihe von <xref:System.ServiceModel.Activities.Receive>-und <xref:System.ServiceModel.Activities.SendReply> Aktivitäten enthält.
 
-## <a name="activity-library"></a>Aktivitätsbibliothek
+## <a name="activity-library"></a>Aktivitäts Bibliothek
 
-Bei Auswahl der **Aktivitätsbibliothek** Visual Studio-Vorlage erstellt eine Aktivitätsdefinition im XAML. Workflow-Designer wird geöffnet und zeigt den Canvas für die benutzerdefinierte Aktivität. Ziehen Sie eine Aktivität aus **Toolbox** auf die Entwurfsoberfläche, um sie in Ihre benutzerdefinierte Aktivität aufzunehmen.
-
-> [!NOTE]
-> Sie dürfen nur eine untergeordnete Aktivität im Text der benutzerdefinierten Aktivität. Diese untergeordnete Aktivität kann jedoch sein eine zusammengesetzte Aktivität, z. B. eine <xref:System.Activities.Statements.Sequence> Aktivität oder <xref:System.Activities.Statements.Flowchart> Aktivität.
-
-## <a name="activity-designer-library"></a>Aktivitäts-designerbibliothek
-
-Bei Auswahl der **Aktivitäts-Designerbibliothek** Visual Studio-Vorlage erstellt eine aktivitätsdesignerdefinition in XAML und ein Code-Behind-Implementierungsdatei. Der Workflow-Designer wird geöffnet und zeigt den Canvas für den Aktivitätsdesigner. Ziehen Sie Windows Presentation Foundation (WPF)-Steuerelemente aus **Toolbox** auf die Entwurfsoberfläche, um sie in Ihrer benutzerdefinierten Aktivitäts-Designer verwenden.
-
-Ein Beispiel zum Implementieren eines benutzerdefinierten Aktivitätsdesigners finden Sie unter [Vorgehensweise: Erstellen ein benutzerdefinierten Aktivitätsdesigners](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Wenn Sie die Vorlage **Aktivitäts Bibliothek** auswählen, erstellt Visual Studio eine Aktivitäts Definition in XAML. Workflow-Designer öffnet den Canvas für Ihre benutzerdefinierte Aktivität und zeigt ihn an. Ziehen Sie eine Aktivität aus der **Toolbox** auf die Entwurfs Oberfläche, um Sie in die benutzerdefinierte Aktivität einzubeziehen.
 
 > [!NOTE]
-> Benutzerdefinierte Aktivitätsdesigner können für benutzerdefinierte Aktivitäten und für Standardaktivitäten für .NET verwendet werden.
+> Es ist nur eine untergeordnete Aktivität im Textkörper der benutzerdefinierten Aktivität zulässig. Diese untergeordnete Aktivität kann jedoch eine zusammengesetzte Aktivität sein, z. b. eine <xref:System.Activities.Statements.Sequence> Aktivität oder <xref:System.Activities.Statements.Flowchart> Aktivität.
+
+## <a name="activity-designer-library"></a>Aktivitäts Designer Bibliothek
+
+Wenn Sie die Bibliotheks Vorlage für den **Aktivitäts Designer** auswählen, erstellt Visual Studio eine Aktivitäts Designer Definition in XAML und eine Code-Behind-Implementierungs Datei. Der Workflow-Designer wird geöffnet und zeigt den Canvas für den Aktivitäts Designer an. Ziehen Sie Windows Presentation Foundation (WPF)-Steuerelemente aus der **Toolbox** auf die-Entwurfs Oberfläche, um Sie im benutzerdefinierten Aktivitäts Designer zu verwenden.
+
+Ein Beispiel für das Implementieren eines benutzerdefinierten Aktivitäts Designers finden Sie unter Gewusst [wie: Erstellen eines benutzerdefinierten Aktivitäts Designers](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+
+> [!NOTE]
+> Benutzerdefinierte Aktivitäts Designer können für benutzerdefinierte Aktivitäten und für .net-Standardaktivitäten verwendet werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden Sie den Workflowdesigner](developing-applications-with-the-workflow-designer.md)
-- [Entwerfen von Workflows ((.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)
+- [Verwenden Sie die Workflow-Designer](developing-applications-with-the-workflow-designer.md)
+- [Entwerfen von Workflows (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211200"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536045"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuggen vonC#verwaltetem Code F#( C++, Visual Basic,,/CLI)
 
@@ -47,7 +47,7 @@ Dieser Abschnitt enthält Codebeispiele zum Debuggen der `OnStart`-Methode eines
 [Debuggen im gemischten Modus](../debugger/debugging-mixed-mode-applications.md)\
 Erörtert das Debuggen von Anwendungen im gemischten Modus. Dies sind alle Anwendungen, die nativen Code mit verwaltetem Code kombinieren.
 
-[Fehler: Das Debuggen ist nicht möglich, da ein Kernel Debugger auf dem System aktiviert ist.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 In diesem Abschnitt wird eine Fehlermeldung beschrieben, die auftritt, wenn Sie versuchen, verwalteten Code auf einem [!INCLUDE[win7](../debugger/includes/win7_md.md)]-, [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]-, [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]-, [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]- oder Windows NT-System zu debuggen, das im Debugmodus gestartet wurde.
 
 [JIT-Optimierung und -Debuggen](../debugger/jit-optimization-and-debugging.md)\
@@ -74,14 +74,14 @@ Beschreibt eine Linkeroption, die <xref:System.Diagnostics.DebuggableAttribute> 
 Hier finden Sie Hinweise zum Debuggen von Windows-Dienstanwendungen, z. B. zum Einrichten, Anhängen an den Prozess, Debuggen des Codes in der `OnStart`-Methode des Diensts und in der Main-Methode, zum Festlegen von Haltepunkten sowie zum Verwenden des Dienststeuerungs-Managers zum Starten, Beenden, Anhalten und Fortsetzen eines Diensts.
 
 [Debuggen und Profilerstellung](/dotnet/framework/debug-trace-profile/index)\
-Hier werden das Debuggen von .NET Framework-Anwendungen sowie die Konfigurationsanforderungen beschrieben.
+Erläutert das Debuggen von .NET-Anwendungen und die Konfigurations Anforderungen.
 
 [Debuggen von Skript- und Webanwendungen](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und Webanwendungen auftreten können.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms Steuerelementen zur Entwurfszeit](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Exemplarische Vorgehensweise: Debuggen von benutzerdefinierten Windows Forms-Steuerelementen](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Debuggersicherheit](../debugger/debugger-security.md)
 - [Debuggen in Visual Studio](../debugger/index.yml)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

@@ -1,36 +1,36 @@
 ---
-title: Designer hinzugefügten Objekte verwenden eine andere Datenverbindung
+title: Dem Designer hinzugefügte Objekte verwenden eine andere Datenverbindung
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c85e0c17eeb4cfbd786faac338c8b908c5a7f363
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 915860c2559335f37869f5c6009f7a38dde6abcd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260939"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72640841"
 ---
-# <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Die, die Sie dem Designer hinzugefügten Objekte verwenden eine andere Datenverbindung als im designer
+# <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Die dem Designer hinzugefügten Objekte verwenden eine andere Datenverbindung als der Designer.
 
 Die dem Designer hinzugefügten Objekte verwenden eine andere Datenverbindung als die derzeit vom Designer verwendete. Soll die vom Designer verwendete Verbindung ersetzt werden?
 
-Beim Hinzufügen von Elementen, die **Object Relational Designer** (**O/R Designer**), verwenden alle Elemente eine gemeinsame Datenverbindung. (Die Entwurfsoberfläche stellt den <xref:System.Data.Linq.DataContext> dar, von dem für alle Objekte auf der Oberfläche dieselbe Verbindung verwendet wird.) Diese Meldung wird angezeigt, wenn dem Designer ein Objekt hinzugefügt wird, das eine andere Datenverbindung verwendet als die derzeit vom Designer verwendete. Zur Behebung dieses Fehlers können Sie auswählen, dass die vorhandene Verbindung beibehalten werden soll. Wenn Sie diese Auswahl treffen, wird das ausgewählte Objekt nicht hinzugefügt. Sie können auch auswählen, dass das Objekt hinzugefügt und die <xref:System.Data.Linq.DataContext>-Verbindung auf die neue Verbindung festgelegt wird.
+Wenn Sie dem **objektrelationaler Designer** (**O/R-Designer**) Elemente hinzufügen, verwenden alle Elemente eine freigegebene Datenverbindung. (Die Entwurfs Oberfläche stellt die <xref:System.Data.Linq.DataContext> dar, die eine einzelne Verbindung für alle Objekte auf der-Oberfläche verwendet.) Wenn Sie dem Designer ein Objekt hinzufügen, das eine Datenverbindung verwendet, die von der derzeit vom Designer verwendeten Datenverbindung abweicht, wird diese Meldung angezeigt. Zur Behebung dieses Fehlers können Sie auswählen, dass die vorhandene Verbindung beibehalten werden soll. Wenn Sie diese Auswahl treffen, wird das ausgewählte Objekt nicht hinzugefügt. Sie können auch auswählen, dass das Objekt hinzugefügt und die <xref:System.Data.Linq.DataContext>-Verbindung auf die neue Verbindung festgelegt wird.
 
 ## <a name="connection-options"></a>Verbindungsoptionen
 
-- Um die vorhandene Verbindung durch die vom ausgewählten Objekt verwendete Verbindung ersetzen möchten, klicken Sie auf **Ja**.
+- Um die vorhandene Verbindung durch die Verbindung zu ersetzen, die vom ausgewählten Objekt verwendet wird, klicken Sie auf **Ja**.
 
-   Das ausgewählte Objekt wird hinzugefügt, um die **O/R Designer**, und die *DataContext.Connection* festgelegt ist, auf die neue Verbindung.
+   Das ausgewählte Objekt wird dem **O/R-Designer**hinzugefügt, und die *DataContext. Connection* wird auf die neue Verbindung festgelegt.
 
    > [!NOTE]
-   > Wenn Sie auf **Ja**, alle Entitätsklassen der **O/R Designer** zugeordnet sind, auf die neue Verbindung.
+   > Wenn Sie auf **Ja**klicken, werden alle Entitäts Klassen im **O/R-Designer** der neuen Verbindung zugeordnet.
 
-- Um den Vorgang fortzusetzen, verwenden Sie die vorhandene Verbindung und Hinzufügen des ausgewählten Objekts "Abbrechen", klicken Sie auf **keine**.
+- Um die vorhandene Verbindung weiterhin zu verwenden und das Hinzufügen des ausgewählten Objekts abzubrechen, klicken Sie auf **Nein**.
 
    Die Aktion wird abgebrochen. Die *DataContext.Connection* bleibt weiterhin auf die vorhandene Verbindung festgelegt.
 

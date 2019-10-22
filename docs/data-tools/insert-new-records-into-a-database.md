@@ -12,77 +12,77 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64fc4735fd95c611dd1c2d905be6fa5b45c84664
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715018"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648318"
 ---
 # <a name="insert-new-records-into-a-database"></a>Einfügen neuer Datensätze in eine Datenbank
 
-Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter.Update` Methode oder eines der TableAdapter-DBDirect-Methoden (insbesondere die `TableAdapter.Insert` Methode). Weitere Informationen finden Sie unter [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+Wenn Sie neue Datensätze in eine Datenbank einfügen möchten, können Sie die `TableAdapter.Update`-Methode oder eine der DBDirect-Methoden des TableAdapter (insbesondere die `TableAdapter.Insert`-Methode) verwenden. Weitere Informationen finden Sie unter [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Wenn Ihre Anwendung TableAdapters nicht verwendet werden, können Sie Befehlsobjekte verwenden (z. B. <xref:System.Data.SqlClient.SqlCommand>) zum Einfügen neuer Datensätze in der Datenbank.
+Wenn Ihre Anwendung keine TableAdapters verwendet, können Sie Befehls Objekte (z. b. <xref:System.Data.SqlClient.SqlCommand>) verwenden, um neue Datensätze in die Datenbank einzufügen.
 
-Wenn Ihre Anwendung Datasets verwendet, um Daten zu speichern, verwenden Sie die `TableAdapter.Update` Methode. Die `Update` Methode sendet alle Änderungen (Updates, einfügungen und löschungen), mit der Datenbank.
+Wenn Ihre Anwendung Datasets verwendet, um Daten zu speichern, verwenden Sie die `TableAdapter.Update`-Methode. Die `Update`-Methode sendet alle Änderungen (Updates, Einfügungen und Löschungen) an die Datenbank.
 
-Wenn Ihre Anwendung Objekte verwendet, Daten, oder speichern eine genauere Steuerung der Erstellung neuer Datensätze in der Datenbank, verwenden Sie die `TableAdapter.Insert` Methode.
+Wenn Ihre Anwendung Objekte zum Speichern von Daten verwendet, oder wenn Sie eine präzisere Kontrolle über das Erstellen neuer Datensätze in der Datenbank wünschen, verwenden Sie die `TableAdapter.Insert`-Methode.
 
-Wenn keine der TableAdapter eine `Insert` -Methode, es bedeutet, dass entweder der TableAdapter konfiguriert ist, um gespeicherte Prozeduren zu verwenden oder den zugehörigen `GenerateDBDirectMethods` -Eigenschaftensatz auf `false`. Legen Sie der TableAdapters `GenerateDBDirectMethods` Eigenschaft `true` innerhalb der **Dataset-Designer**, und speichern Sie das Dataset. Hierdurch wird den TableAdapter neu generiert. Wenn der TableAdapter immer noch kein `Insert` -Methode in der Tabelle wahrscheinlich bietet keine ausreichende Schemainformationen zur Unterscheidung zwischen den einzelnen Zeilen (z. B. möglicherweise keine primären Schlüsselsatz für die Tabelle).
+Wenn Ihr TableAdapter nicht über eine `Insert`-Methode verfügt, bedeutet dies, dass entweder der TableAdapter für die Verwendung gespeicherter Prozeduren konfiguriert ist oder dessen `GenerateDBDirectMethods`-Eigenschaft auf `false` festgelegt ist. Legen Sie die `GenerateDBDirectMethods`-Eigenschaft des TableAdapter auf `true` innerhalb des **DataSet-Designer**fest, und speichern Sie dann das DataSet. Dadurch wird der TableAdapter neu generiert. Wenn der TableAdapter immer noch keine `Insert` Methode hat, bietet die Tabelle wahrscheinlich nicht genügend Schema Informationen, um zwischen einzelnen Zeilen zu unterscheiden (es kann z. b. kein Primärschlüssel für die Tabelle festgelegt werden).
 
-## <a name="insert-new-records-by-using-tableadapters"></a>Fügen Sie neue Datensätze mit TableAdapters
+## <a name="insert-new-records-by-using-tableadapters"></a>Einfügen neuer Datensätze mithilfe von TableAdapters
 
-TableAdapters bieten verschiedene Möglichkeiten zum Einfügen neuer Datensätze in einer Datenbank, abhängig von den Anforderungen Ihrer Anwendung.
+TableAdapters bieten verschiedene Möglichkeiten zum Einfügen neuer Datensätze in eine Datenbank, abhängig von den Anforderungen Ihrer Anwendung.
 
-Wenn Ihre Anwendung Datasets verwendet, um Daten zu speichern, können Sie einfach neue Datensätze hinzufügen, um die gewünschte <xref:System.Data.DataTable> in das Dataset, und rufen Sie dann die `TableAdapter.Update` Methode. Die `TableAdapter.Update` Methode sendet die Änderungen in der <xref:System.Data.DataTable> in der Datenbank (einschließlich geänderte und gelöschte Datensätze).
+Wenn Ihre Anwendung Datasets verwendet, um Daten zu speichern, können Sie der gewünschten <xref:System.Data.DataTable> im Dataset einfach neue Datensätze hinzufügen und dann die `TableAdapter.Update`-Methode aufzurufen. Die `TableAdapter.Update`-Methode sendet alle Änderungen im <xref:System.Data.DataTable> an die Datenbank (einschließlich der geänderten und gelöschten Datensätze).
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Zum Einfügen neuer Datensätze in einer Datenbank mithilfe der TableAdapter.Update-Methode
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>So fügen Sie mithilfe der TableAdapter. Update-Methode neue Datensätze in eine Datenbank ein
 
-1. Neue Datensätze hinzufügen, um die gewünschte <xref:System.Data.DataTable> durch Erstellen eines neuen <xref:System.Data.DataRow> und zum Hinzufügen der <xref:System.Data.DataTable.Rows%2A> Auflistung.
+1. Fügen Sie der gewünschten <xref:System.Data.DataTable> neue Datensätze hinzu, indem Sie eine neue <xref:System.Data.DataRow> erstellen und Sie der <xref:System.Data.DataTable.Rows%2A> Auflistung hinzufügen.
 
-2. Nachdem die neuen Zeilen hinzugefügt wurden die <xref:System.Data.DataTable>, rufen Sie die `TableAdapter.Update` Methode. Sie können steuern, die Menge der Daten zu aktualisieren, indem Sie entweder eine gesamte übergeben <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ein Array von <xref:System.Data.DataRow>s oder eine einzelne <xref:System.Data.DataRow>.
+2. Nachdem die neuen Zeilen der <xref:System.Data.DataTable> hinzugefügt wurden, können Sie die `TableAdapter.Update`-Methode aufzurufen. Sie können die zu Aktualisier Ende Datenmenge steuern, indem Sie entweder einen vollständigen <xref:System.Data.DataSet>, eine <xref:System.Data.DataTable>, ein Array <xref:System.Data.DataRow>s oder eine einzelne <xref:System.Data.DataRow> übergeben.
 
-   Der folgende Code zeigt, wie Sie einen neuen Eintrag Hinzufügen einer <xref:System.Data.DataTable> und rufen Sie dann die `TableAdapter.Update` Methode, um die neue Zeile in der Datenbank zu speichern. (Dieses Beispiel verwendet die `Region` Tabelle in der Northwind-Datenbank.)
+   Der folgende Code zeigt, wie ein neuer Datensatz zu einem <xref:System.Data.DataTable> hinzugefügt und anschließend die `TableAdapter.Update`-Methode aufgerufen wird, um die neue Zeile in der Datenbank zu speichern. (In diesem Beispiel wird die `Region` Tabelle in der Northwind-Datenbank verwendet.)
 
    [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
    [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
 
-### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Zum Einfügen neuer Datensätze in einer Datenbank mithilfe der TableAdapter.Insert-Methode
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>So fügen Sie mithilfe der TableAdapter. Insert-Methode neue Datensätze in eine Datenbank ein
 
-Wenn Ihre Anwendung Objekte verwendet, um Daten zu speichern, können Sie mithilfe der `TableAdapter.Insert` Methode, um neue Zeilen direkt in der Datenbank zu erstellen. Die `Insert` -Methode akzeptiert die einzelnen Werte für jede Spalte als Parameter. Aufrufen der Methode fügt einen neuen Datensatz in die Datenbank mit der übergebenen Parameterwerte.
+Wenn Ihre Anwendung Objekte zum Speichern von Daten verwendet, können Sie die `TableAdapter.Insert`-Methode verwenden, um neue Zeilen direkt in der Datenbank zu erstellen. Die `Insert`-Methode akzeptiert die einzelnen Werte für jede Spalte als Parameter. Durch Aufrufen der-Methode wird ein neuer Datensatz in die Datenbank eingefügt, wobei die Parameterwerte übergeben werden.
 
-- Rufen Sie die `Insert` -Methode, die Werte für jede Spalte als Parameter übergeben.
+- Nennen Sie die `Insert`-Methode des TableAdapter, und übergeben Sie die Werte für jede Spalte als Parameter.
 
-Das folgende Verfahren veranschaulicht die Verwendung der `TableAdapter.Insert` Methode zum Einfügen von Zeilen. In diesem Beispiel fügt Daten in die `Region` Tabelle in der Northwind-Datenbank.
+Das folgende Verfahren veranschaulicht die Verwendung der `TableAdapter.Insert`-Methode zum Einfügen von Zeilen. In diesem Beispiel werden Daten in die `Region` Tabelle in der Northwind-Datenbank eingefügt.
 
 > [!NOTE]
-> Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.
+> Wenn keine Instanz verfügbar ist, instanziieren Sie den TableAdapter, den Sie verwenden möchten.
 
 [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
 [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]
 
-## <a name="insert-new-records-by-using-command-objects"></a>Fügen Sie neue Datensätze mit Befehlsobjekte
+## <a name="insert-new-records-by-using-command-objects"></a>Einfügen neuer Datensätze mithilfe von Befehls Objekten
 
-Sie können neue Datensätze einfügen, direkt in eine Datenbank mithilfe von Befehlsobjekten.
+Mithilfe von Befehls Objekten können Sie neue Datensätze direkt in eine Datenbank einfügen.
 
-### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Zum Einfügen neuer Datensätze in einer Datenbank mithilfe von Befehlsobjekten
+### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>So fügen Sie mithilfe von Befehls Objekten neue Datensätze in eine Datenbank ein
 
-- Erstellen Sie ein neues Befehlsobjekt aus, und legen Sie dann die `Connection`, `CommandType`, und `CommandText` Eigenschaften.
+- Erstellen Sie ein neues Befehls Objekt, und legen Sie dann die Eigenschaften `Connection`, `CommandType` und `CommandText` fest.
 
-Das folgende Beispiel zeigt Einfügen von Datensätzen in eine Datenbank mithilfe der Command-Objekt. Es fügt Daten in die `Region` Tabelle in der Northwind-Datenbank.
+Im folgenden Beispiel wird veranschaulicht, wie Datensätze mithilfe des Befehls Objekts in eine Datenbank eingefügt werden. Daten werden in die `Region` Tabelle in der Northwind-Datenbank eingefügt.
 
 [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
 [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
-## <a name="net-security"></a>Sicherheit von .NET
+## <a name="net-security"></a>.NET-Sicherheit
 
-Benötigen Sie Zugriff auf die Datenbank, die Sie herstellen möchten, sowie Berechtigung zum Durchführen von einfügungen in die gewünschte Tabelle.
+Sie müssen Zugriff auf die Datenbank haben, mit der Sie eine Verbindung herstellen möchten, sowie die Berechtigung zum Ausführen von Einfügungen in die gewünschte Tabelle.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::CanSetNextStatement | Microsoft-Dokumentation
+title: 'Isetnextstatement:: cansetnextstatement | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56cf0b2e4afd7a86a087b37be4b23758a5b59720
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786614"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571845"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Diese Methode bestimmt, ob es sich bei der Ausführungspunkt an, der bestimmt, die nächste Anweisung des Codes ausgeführt werden, auf der angegebenen Position festgelegt werden kann.  
+Diese Methode bestimmt, ob der Ausführungs Punkt, der die nächste auszuführende Code Anweisung bestimmt, auf den angegebenen Speicherort festgelegt werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -36,18 +36,18 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Parameter  
  `pStackFrame`  
- [in] Zeiger auf ein.  
+ in Zeiger auf ein Stapel Rahmen Objekt.  
   
  `pCodeContext`  
- [in] Zeiger auf ein Code-Context-Objekt.  
+ in Zeiger auf ein Code Kontext Objekt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
-|`S_OK`|Die nächste Anweisung kann auf den angegebenen Kontext aktualisiert werden.|  
-|`S_FALSE`|Die nächste Anweisung kann nicht auf den angegebenen Kontext aktualisiert werden.|  
+|`S_OK`|Die nächste Anweisung kann auf den angegebenen Code Kontext aktualisiert werden.|  
+|`S_FALSE`|Die nächste Anweisung kann nicht in den angegebenen Code Kontext aktualisiert werden.|  
   
 ## <a name="remarks"></a>Hinweise  
   

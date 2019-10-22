@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onRemoveText | Microsoft-Dokumentation
+title: 'Idebugdocumenttextevents:: onremovetext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 506d7c5349cf074ce4a4cbe60e33459a09a91b67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c302a3b1850db42824f35a306e7e94eaa8a6aa41
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946712"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576258"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
-Gibt an, dass Text aus dem Dokument entfernt wurde.  
+Gibt an, dass der Text aus dem Dokument entfernt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT onRemoveText(
   
 #### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- [in] Die Position des ersten Zeichens entfernt.  
+ in Die Zeichenposition des ersten Zeichens, das entfernt wurde.  
   
  `cNumToRemove`  
- [in] Die Anzahl der Zeichen, die entfernt werden soll.  
+ in Die Anzahl der entfernten Zeichen.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,8 +51,8 @@ HRESULT onRemoveText(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt an, dass Text aus dem Dokument entfernt wurde.  
+ Diese Methode gibt an, dass der Text aus dem Dokument entfernt wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+ [Idebugdocumenttextevents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)    
  [IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)

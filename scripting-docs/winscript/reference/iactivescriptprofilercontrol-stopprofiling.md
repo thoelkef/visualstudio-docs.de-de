@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StopProfiling | Microsoft-Dokumentation
+title: 'Iactivescriptprofilercontrol:: stopprofiling | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 750693db9aa809e6b3521f0312cebcf45d8d720d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da5900678093d57b3c995ac3bca8464ccd612fb2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993007"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571549"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
-Beendet die profilerstellung auf die Skript-Engine. Diese Methode ruft [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) für die Profilerobjekt und gibt Sie frei.  
+Beendet die Profilerstellung für die Skript-Engine. Diese Methode ruft [iactivescriptprofilercallback:: Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) für das Profiler-Objekt auf und gibt Sie frei.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT StopProfiling(
   
 #### <a name="parameters"></a>Parameter  
  `hrShutdownReason`  
- [in] Das HRESULT, das als Parameter übergeben werden, die [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) Methode des Profiler-Objekts.  
+ in Das HRESULT, das als Parameter an die [iactivescriptprofilercallback:: Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) -Methode des Profiler-Objekts übergeben werden soll.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt ein HRESULT zurück. Folgende Werte sind möglich:  
@@ -42,7 +42,7 @@ HRESULT StopProfiling(
 |Rückgabewert|Bedeutung|  
 |------------------|-------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Die profilerstellung ist nicht aktiviert.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Die Profilerstellung ist nicht aktiviert.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptProfilerControl-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

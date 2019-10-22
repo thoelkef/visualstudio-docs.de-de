@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891339"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342443"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -369,7 +369,7 @@ Erfahren Sie mehr über [datengesteuerte Komponententests](../test/how-to-create
 
 Das Codeabdeckungstool kann für ausgewählte oder alle Tests in einer Projektmappe ausgeführt werden. Im Fenster **Code Coverage-Ergebnisse** wird der Prozentsatz der durchlaufenen Produktcodeblöcke angezeigt, angeordnet nach Zeile, Funktion, Klasse, Namespace und Modul.
 
-Wählen Sie zum Ausführen der Codeabdeckung für Testmethoden in einer Projektmappe im Visual Studio-Menü die Option **Tests** , und wählen Sie dann **Codeabdeckung analysieren**.
+Um Code Coverage für Testmethoden in einer Projektmappe auszuführen, wählen Sie **Test** > **Code Coverage für alle Tests analysieren** aus.
 
 Die Abdeckungsergebnisse werden im Fenster **Code Coverage-Ergebnisse** angezeigt.
 

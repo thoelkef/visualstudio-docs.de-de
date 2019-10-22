@@ -1,5 +1,5 @@
 ---
-title: 'CA1040: Leere Schnittstellen vermeiden | Microsoft-Dokumentation'
+title: 'CA1040: leere Schnittstellen vermeiden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - CA1040
 ms.assetid: 120a741b-5fd1-4836-8453-7857e0cd0380
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bc785967b4e27599b4a04aeb7740b53b5076938d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50a36281edb144ddb949899fa24e0b5088080220
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559743"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668312"
 ---
-# <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Leere Schnittstellen vermeiden.
+# <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Leere Schnittstellen vermeiden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidEmptyInterfaces|
 |CheckId|CA1040|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Die Schnittstelle keine Member deklarieren oder zwei oder mehr Schnittstellen implementieren.
+ Die-Schnittstelle deklariert keine Member oder implementiert mindestens zwei andere Schnittstellen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Schnittstellen definieren Member, die ein Verhalten oder einen Verwendungsvertrag bereitstellen. Die durch die Schnittstelle beschriebene Funktionalität kann von jedem Typ übernommen werden, unabhängig davon, an welcher Stelle der Typ in der Vererbungshierarchie steht. Ein Typ implementiert eine Schnittstelle, indem er Implementierungen für die Member der Schnittstelle bereitstellt. Eine leere Schnittstelle definiert keine Member. Aus diesem Grund ist es keinen Vertrag zu definieren, der implementiert werden können.
+ Schnittstellen definieren Member, die ein Verhalten oder einen Verwendungsvertrag bereitstellen. Die durch die Schnittstelle beschriebene Funktionalität kann von jedem Typ übernommen werden, unabhängig davon, an welcher Stelle der Typ in der Vererbungshierarchie steht. Ein Typ implementiert eine Schnittstelle, indem er Implementierungen für die Member der Schnittstelle bereitstellt. Eine leere Schnittstelle definiert keine Member. Daher wird kein Vertrag definiert, der implementiert werden kann.
 
- Wenn es sich bei Ihrem Entwurf leerer enthält Schnittstellen, die Typen implementieren sollen, verwenden Sie wahrscheinlich eine Schnittstelle als eine Markierung oder eine Möglichkeit, eine Gruppe von Typen zu identifizieren. Diese Identifikation zur Laufzeit erfolgt, ist die richtige Vorgehensweise zu diesem Zweck ein benutzerdefiniertes Attribut zu verwenden. Verwenden Sie das Vorhandensein oder Abwesenheit des Attributs, oder die Eigenschaften des Attributs, um die Zieltypen zu identifizieren. Wenn die ID zum Zeitpunkt der Kompilierung erfolgen muss, ist es akzeptabel, eine leere Schnittstelle verwenden.
+ Wenn Ihr Entwurf leere Schnittstellen enthält, die von Typen implementiert werden sollen, verwenden Sie wahrscheinlich eine Schnittstelle als Marker oder eine Möglichkeit zum Identifizieren einer Gruppe von Typen. Wenn diese Identifikation zur Laufzeit erfolgt, ist die korrekte Vorgehensweise die Verwendung eines benutzerdefinierten Attributs. Verwenden Sie das vorhanden sein oder Fehlen des-Attributs oder der Eigenschaften des-Attributs, um die Zieltypen zu identifizieren. Wenn die Identifikation zur Kompilierzeit erfolgen muss, ist es akzeptabel, eine leere Schnittstelle zu verwenden.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Entfernen Sie die Schnittstelle, oder fügen Sie Mitglieder hinzu. Wenn die leere Schnittstelle zum Bezeichnen eines Satz von Typen verwendet wird, ersetzen Sie die Schnittstelle mit einem benutzerdefinierten Attribut.
+ Entfernen Sie die-Schnittstelle, oder fügen Sie Ihr Member hinzu. Wenn die leere Schnittstelle verwendet wird, um einen Satz von Typen zu bezeichnen, ersetzen Sie die-Schnittstelle durch ein benutzerdefiniertes Attribut.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, unterdrücken Sie eine Warnung dieser Regel aus, wenn die Schnittstelle verwendet wird, um einen Satz von Typen zum Zeitpunkt der Kompilierung zu identifizieren.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken, wenn die-Schnittstelle verwendet wird, um einen Satz von Typen zur Kompilierzeit zu identifizieren.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine leere Schnittstelle.
+ Das folgende Beispiel zeigt eine leere-Schnittstelle.
 
  [!code-cpp[FxCop.Design.InterfacesNotEmpty#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.InterfacesNotEmpty/cpp/FxCop.Design.InterfacesNotEmpty.cpp#1)]
  [!code-csharp[FxCop.Design.InterfacesNotEmpty#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.InterfacesNotEmpty/cs/FxCop.Design.InterfacesNotEmpty.cs#1)]

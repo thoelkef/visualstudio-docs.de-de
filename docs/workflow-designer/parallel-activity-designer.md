@@ -1,21 +1,21 @@
 ---
-title: Workflow-Designer - Parallel-Aktivitätsdesigner
+title: Workflow-Designer paralleler Aktivitäts Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002773"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650101"
 ---
 # <a name="parallel-activity-designer"></a>Parallel-Aktivitätsdesigner
 
@@ -25,15 +25,15 @@ Die <xref:System.Activities.Statements.Parallel>-Aktivität führt eine Sammlung
 
 Die <xref:System.Activities.Statements.Parallel>-Aktivität speichert ihre untergeordneten Aktivitäten in einer <xref:System.Activities.Statements.Parallel.Branches%2A>-Auflistung. Verwenden Sie die <xref:System.Activities.Statements.Parallel>-Aktivität statt der <xref:System.Activities.Statements.Sequence>-Aktivität, wenn einige der untergeordneten Aktivitäten sich möglicherweise im Leerlauf befinden könnten.
 
-Die <xref:System.Activities.Statements.Parallel> Aktivität verfügt über eine <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> -Eigenschaft, die einen Benutzer enthält Visual Basic-Ausdruck angegeben. Die <xref:System.Activities.Statements.Parallel>-Aktivität wertet diese Eigenschaft aus, nachdem alle Branches abgeschlossen sind. Ergibt die Auswertung **"true"**, und klicken Sie dann die <xref:System.Activities.Statements.Parallel> -Aktivität abgeschlossen, ohne die anderen Branches auszuführen. Wenn die <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> nicht als **"true"**, und klicken Sie dann die <xref:System.Activities.Statements.Parallel> Aktivität abgeschlossen wird, wenn alle ihre untergeordneten Aktivitäten abgeschlossen wurden.
+Die <xref:System.Activities.Statements.Parallel>-Aktivität verfügt über eine <xref:System.Activities.Statements.Parallel.CompletionCondition%2A>-Eigenschaft, die einen vom Benutzer angegebenen Visual Basic Ausdruck enthält. Die <xref:System.Activities.Statements.Parallel>-Aktivität wertet diese Eigenschaft aus, nachdem alle Branches abgeschlossen sind. Wenn **true**ausgewertet wird, wird die <xref:System.Activities.Statements.Parallel> Aktivität abgeschlossen, ohne dass die anderen Verzweigungen ausgeführt werden. Wenn die <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> nicht als **true**ausgewertet wird, wird die <xref:System.Activities.Statements.Parallel> Aktivität abgeschlossen, wenn alle untergeordneten Aktivitäten abgeschlossen sind.
 
 ### <a name="using-the-parallel-activity-designer"></a>Verwenden des Parallel-Aktivitätsdesigners
 
-Zugriff die **parallele** Aktivitäts-Designer in der **Ablaufsteuerung** Kategorie der **Toolbox**.
+Greifen Sie in der Kategorie **Ablauf Steuerung** der **Toolbox**auf den **parallel** -Aktivitäts Designer zu.
 
-Die **parallele** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht werden, wo Aktivitätsdesigner normalerweise, z. B. in einer platziertwerden**Sequenz** Aktivitäts-Designer. Nach dem Workflow-Designer ablegen, erstellt er eine <xref:System.Activities.Statements.Parallel> -Aktivität, die in der Standardeinstellung enthält ein <xref:System.Activities.Activity.DisplayName%2A> von **Parallel**
+Der **parallel** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, z. b. innerhalb eines **Sequence** -Aktivitäts Designers. Nach dem ablegen im Workflow-Designer wird eine <xref:System.Activities.Statements.Parallel>-Aktivität erstellt, die standardmäßig eine <xref:System.Activities.Activity.DisplayName%2A> **parallel** enthält.
 
-Eine Aktivität zum Hinzufügen der <xref:System.Activities.Statements.Parallel.Branches%2A> Auflistung von der parallel-Aktivität, ziehen Sie in beliebigen anderen Aktivitätsdesigner aus der **Toolbox** und legen Sie es auf dem Dreieck innerhalb der **parallele** Aktivitäts-Designer. Die Dreiecke flankieren die in den Verzweigungen enthaltenen Aktivitäten. Zusätzliche Aktivitäten können hinzugefügt werden, indem diese Prozedur wiederholt wird. Die Aktivitäten können neu angeordnet werden, per Drag & Drop in die **parallele** Aktivitäts-Designer.
+Um der <xref:System.Activities.Statements.Parallel.Branches%2A>-Auflistung der Parallel-Aktivität eine Aktivität hinzuzufügen, ziehen Sie einen anderen Aktivitäts Designer aus der **Toolbox** , und legen Sie ihn auf dem Dreieck innerhalb des **parallel** -Aktivitäts Designers ab. Die Dreiecke flankieren die in den Verzweigungen enthaltenen Aktivitäten. Zusätzliche Aktivitäten können hinzugefügt werden, indem diese Prozedur wiederholt wird. Die Aktivitäten können durchziehen und ablegen innerhalb des **parallel** -Aktivitäts Designers neu angeordnet werden.
 
 ### <a name="parallel-activity-properties-in-the-workflow-designer"></a>Eigenschaften der Parallel-Aktivität im Workflow-Designer
 
@@ -41,9 +41,9 @@ In der folgenden Tabelle werden die nützlichsten Eigenschaften der Parallel-Akt
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **parallele**. Der Wert kann optional auch bearbeitet werden, der **Eigenschaften** Raster oder direkt im Header Aktivitätsdesigners.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **parallel**. Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Enthält die Auflistung von untergeordneten Aktivitäten, die ausgeführt werden sollen.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Die Auswertung erfolgt nach Beendigung eines Branches. Ergibt die Auswertung **"true"**, die geplanten ausstehenden Branches abgebrochen. Wenn diese Eigenschaft nicht festgelegt oder ergibt **"false"**, die Aktivität abgeschlossen wird, wenn alle ihre untergeordneten Aktivitäten abgeschlossen wurden. Der Standardwert ist **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Die Auswertung erfolgt nach Beendigung eines Branches. Wenn **true**ausgewertet wird, werden die geplanten ausstehenden branches abgebrochen. Wenn diese Eigenschaft nicht festgelegt oder als **false**ausgewertet wird, wird die-Aktivität abgeschlossen, wenn alle untergeordneten Aktivitäten abgeschlossen sind. Der Standardwert ist **null**.|
 
 ## <a name="see-also"></a>Siehe auch
 

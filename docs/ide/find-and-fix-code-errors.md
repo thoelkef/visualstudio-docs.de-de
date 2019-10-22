@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 331c346e7322543bef0814818a776c705b773846
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211373"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000180"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -74,7 +74,7 @@ Codeanalysetools suchen nach häufig auftretenden Codeproblemen, die Laufzeitfeh
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Codeanalyse in C# und Visual Basic
 
-Visual Studio enthält mehrere integrierte [.NET Compiler Platform-Analysetools](../code-quality/roslyn-analyzers-overview.md), die C#- und Visual Basic-Code während der Eingabe untersuchen. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren. Wenn Verletzungen von Schwellenwertregeln gefunden werden, wird der fehlerhafte Code im Code-Editor mit einer gewellten Linie unterstrichen. Außerdem wird er in der **Fehlerliste** gemeldet.
+Visual Studio enthält mehrere integrierte [.NET Compiler Platform-Analysetools](../code-quality/roslyn-analyzers-overview.md), die C#- und Visual Basic-Code während der Eingabe untersuchen. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren. Wenn Regelverstöße festgestellt werden, werden sie sowohl in der Fehlerliste gemeldet als auch im Code-Editor mit einer gewellten Linie unter dem fehlerhaften Code unterstrichen.
 
 ### <a name="c-code-analysis"></a>C++-Codeanalyse
 

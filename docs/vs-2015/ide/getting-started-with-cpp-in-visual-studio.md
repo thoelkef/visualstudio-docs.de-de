@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 001b394d86e56b172bb1a50c335bd8ba5bcacb15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704448"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645628"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
  Abbildung 1: Visual Studio-IDE
 
- ![IDE mit angewendeten Visual C&#43;&#43;-Einstellungen](../ide/media/c-ide-defaultenvironmentlayout.png "C++IDE_DefaultEnvironmentLayout")
+ ![IDE mit angewendeten Visual C&#43;&#43;-Einstellungen](../ide/media/c-ide-defaultenvironmentlayout.png "|::ref1::|")
 
  Wenn Sie Visual Studio geöffnet haben, können Sie die drei grundlegenden Teile der IDE sehen: Toolsfenster, Menüs und Symbolleisten und den Hauptfensterbereich. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt öffnen, werden Editoren und Designer in diesem Bereich angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
@@ -49,21 +49,21 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
 1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.
 
-    ![Wählen Sie in der Menüleiste „Datei“, „Neu“, „Projekt“ aus](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
+    ![Wählen Sie in der Menüleiste „Datei > Neu > Projekt“ aus.](../ide/media/exploreide-filenewproject.png "|::ref2::|")
 
 2. Wählen Sie in der **Visual C++** Kategorie die Vorlage **Win32-Konsolenanwendung** aus, und nennen Sie das Projekt `GreetingsConsoleApp`.
 
-    ![Vorlage für eine Win32-Konsolenanwendung](../ide/media/c-ide-newprojectdlg.png "C++IDE_DialogNeuesProjekt")
+    ![Vorlage für eine Win32-Konsolenanwendung](../ide/media/c-ide-newprojectdlg.png "|::ref3::|")
 
 3. Wenn der Win32-Anwendungs-Assistent angezeigt wird, wählen Sie die Schaltfläche **Fertig stellen** aus.
 
-    ![Assistent für Win32-Konsolenanwendung](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")
+    ![Assistent für Win32-Konsolenanwendung](../ide/media/c-ide-win32consoleappwizard.png "|::ref4::|")
 
    Das Projekt und die Projektmappe "GreetingsConsoleApp", mit den grundlegenden Dateien für eine Win32-Konsolen-App, werden erstellt und in **Projektmappen-Explorer**automatisch geladen. Die Datei "GreetingsConsoleApp.cpp" wird im Code-Editor geöffnet. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:
 
    Abbildung 4: Projektelemente
 
-   ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
+   ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/c-ide-solutioncontents.png "|::ref5::|")
 
 ## <a name="BKMK_AddCode"></a> Hinzufügen von Code zur Anwendung
  Als Nächstes fügen Sie Code hinzu, um das Wort "Hello" im Konsolenfenster anzuzeigen.
@@ -78,7 +78,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
      Eine rote Wellenlinie wird unter `cout`angezeigt. Wenn Sie darauf zeigen, wird eine Fehlermeldung angezeigt.
 
-     ![Fehlertext für „cout“](../ide/media/c-ide-couterror.png "C++IDE_CoutError")
+     ![Fehlertext für „cout“](../ide/media/c-ide-couterror.png "|::ref6::|")
 
      Die Fehlermeldung wird auch im Fenster **Fehlerliste** angezeigt. Sie können das Fenster auch anzeigen, indem Sie in der Menüleiste **Ansicht**die Option **Fehlerliste**auswählen.
 
@@ -97,7 +97,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
 3. Speichern Sie die Änderungen in der Datei.
 
-     ![Code zum Beheben des cout-Fehlers](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
+     ![Code zum Beheben des cout-Fehlers](../ide/media/c-ide-coutfix.png "|::ref7::|")
 
 ## <a name="BKMK_DebugTest"></a>Debuggen und Testen der Anwendung
  Sie können "GreetingsConsoleApp" debuggen, um festzustellen, ob das Wort "Hello" im Konsolenfenster angezeigt wird.
@@ -106,7 +106,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
 - Starten Sie den Debugger.
 
-     ![Befehl „Debugging starten“ im Menü „Debuggen“](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
+     ![Befehl „Debugging starten“ im Menü „Debuggen“](../ide/media/exploreide-startdebugging.png "|::ref8::|")
 
      Die Debugger wird gestartet und führt den Code aus. Das Konsolenfenster (ein separates Fenster, das wie eine Eingabeaufforderung aussieht) wird ein paar Sekunden lang angezeigt, wird jedoch schnell geschlossen, wenn der Debugger anhält. Um den Text anzuzeigen, müssen Sie einen Haltepunkt festlegen, um die Ausführung des Programms zu beenden.
 
@@ -114,7 +114,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
 1. Fügen Sie über die Menüleiste in der Zeile `return 0;`einen Haltepunkt hinzu. Sie können auch einfach in den linken Rand klicken, um einen Haltepunkt zu setzen.
 
-    ![Befehl „Haltepunkt umschalten“ im Menü „Debuggen“](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-StartDebugging")
+    ![Befehl „Haltepunkt umschalten“ im Menü „Debuggen“](../ide/media/exploreide-togglebreakpoint.png "|::ref9::|")
 
     Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.
 
@@ -122,7 +122,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
     Der Debugger wird gestartet, und ein Konsolenfenster mit dem Wort **Hello**wird angezeigt.
 
-    ![„Hello“-Text im Windows-Befehlseingabeaufforderungsfenster](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")
+    ![„Hello“-Text im Windows-Befehlseingabeaufforderungsfenster](../ide/media/c-ide-hellocommandwindow.png "|::ref10::|")
 
 3. Drücken Sie UMSCHALT + F5, um den Debugvorgang zu beenden.
 
@@ -135,15 +135,15 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 
 1. Löschen Sie in der Menüleiste Zwischendateien und Ausgabedateien, die bei vorherigen Builds erstellt wurden.
 
-    ![Befehl „Projektmappe bereinigen“ im Menü „Erstellen“](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")
+    ![Befehl „Projektmappe bereinigen“ im Menü „Erstellen“](../ide/media/exploreide-cleansolution.png "|::ref11::|")
 
 2. Ändern Sie die Buildkonfiguration für GreetingsConsoleApp von **Debuggen** zu **Version**.
 
-    ![Erstellen einer Releaseversion der Anwendung](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")
+    ![Version der Anwendung erstellen](../ide/media/c-ide-changingbuildtorelease.png "|::ref12::|")
 
 3. Erstellen Sie die Projektmappe.
 
-    ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "|::ref13::|")
 
    Herzlichen Glückwunsch, Sie haben diese exemplarischen Vorgehensweise abgeschlossen! Weitere Beispiele zum Durcharbeiten finden Sie unter [Visual Studio Samples](../ide/visual-studio-samples.md).
 

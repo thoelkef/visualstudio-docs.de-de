@@ -22,53 +22,47 @@ helpviewer_keywords:
 - multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688192"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657817"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Arbeiten mit Datasets in N-Tier-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Daten für N-schichtige Anwendungen * sind datenorientierte Anwendungen, die in mehrere logische Ebenen voneinander getrennt sind (oder *Ebenen*). Anders ausgedrückt: Eine N-Tier-Datenanwendung ist eine Anwendung, die in mehrere Projekte unterteilt ist mit der Datenzugriffsebene, Geschäftslogikebene und der Präsentationsebene jeweils als eigenes Projekt. Weitere Informationen finden Sie unter [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md).  
-  
- Typisierte DataSets wurden weiterentwickelt, damit die TableAdapters-Klasse und die DataSet-Klasse in gesonderten Projekten generiert werden können. Damit ist es möglich, Anwendungsebenen schnell zu trennen und N-Tier-Datenanwendung zu erstellen.  
-  
- N-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entwicklung der Anwendungsarchitektur zu einem n-Tier-Design. Es entfernt auch die Anforderung, den Code manuell in mehr als ein Projekt zu trennen. Beginnen Sie mit dem Design der Datenschicht unter Verwendung der Dataset-Designer. Wenn Sie soweit sind, dass Sie die Anwendungsarchitektur in ein n-schichtiges Design übernehmen können, legen Sie die Eigenschaft **DataSet-Projekt** eines Datasets so fest, dass die Dataset-Klasse in einem separaten Projekt erstellt wird.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: DataSets und TableAdapters in verschiedene Projekte aufteilen](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
- Beschreibt, wie die erstellte Dataset-Klasse aus dem Projekt, das die generierten TableAdapter-Klassen enthält, in ein neues bewegt wird.  
-  
- [Gewusst wie: Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
- Beschreibt, wie eine partielle Klasse generiert wird, in der Code für einen N-Tier-TableAdapter hinzugefügt werden kann.  
-  
- [Gewusst wie: Hinzufügen von Code zu DataSets in N-Tier-Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
- Beschreibt, wie eine partielle Klasse generiert wird, in der Code für ein N-Tier-Dataset hinzugefügt werden kann.  
-  
- [Hinzufügen von Validierungen zu einem N-Tier-Dataset](../data-tools/add-validation-to-an-n-tier-dataset.md)  
- Beschreibt, wo Code für das Durchführen der Validierung bei Datenänderungen hinzugefügt wird.  
-  
- [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
- Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.  
-  
- [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
- Enthält detaillierte Anweisungen zum Hinzufügen von Validierungen für die Anwendung, die in der exemplarischen Vorgehensweise Daten der n-Tier-Anwendung erstellt wurde.  
-  
-## <a name="reference"></a>Referenz  
- <xref:System.Data.DataSet>  
-  
- <xref:System.Data.TypedTableBase%601>  
-  
+N-Tier-Daten Anwendungen * sind datenzentrierte Anwendungen, die in mehrere logische Ebenen (oder *Ebenen*) aufgeteilt sind. Anders ausgedrückt: Eine N-Tier-Datenanwendung ist eine Anwendung, die in mehrere Projekte unterteilt ist mit der Datenzugriffsebene, Geschäftslogikebene und der Präsentationsebene jeweils als eigenes Projekt. Weitere Informationen finden Sie unter [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md).
+
+ Typisierte DataSets wurden weiterentwickelt, damit die TableAdapters-Klasse und die DataSet-Klasse in gesonderten Projekten generiert werden können. Damit ist es möglich, Anwendungsebenen schnell zu trennen und N-Tier-Datenanwendung zu erstellen.
+
+ Die n-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entwicklung der Anwendungsarchitektur zu einem n-Tier-Design. Außerdem entfällt die Anforderung, den Code manuell in mehr als ein Projekt zu trennen. Beginnen Sie mit dem Entwerfen der Datenschicht, indem Sie die DataSet-Designer verwenden. Wenn Sie soweit sind, dass Sie die Anwendungsarchitektur in ein n-schichtiges Design übernehmen können, legen Sie die Eigenschaft **DataSet-Projekt** eines Datasets so fest, dass die Dataset-Klasse in einem separaten Projekt erstellt wird.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Trennen von Datasets und TableAdapters in verschiedene Projekte](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md) Beschreibt, wie die generierte Dataset-Klasse aus dem Projekt, das die generierten TableAdapter-Klassen enthält, und in ein neues Projekt verschoben werden.
+
+ [Hinzufügen von Code zu TableAdapters in n-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md) Beschreibt, wie eine partielle Klasse generiert wird, in der Code für einen n-Tier-TableAdapter hinzugefügt werden kann.
+
+ [Hinzufügen von Code zu Datasets in n-Tier-Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md) Beschreibt, wie eine partielle Klasse generiert wird, in der Code für ein n-Tier-DataSet hinzugefügt werden kann.
+
+ [Hinzufügen von Validierungen zu einem n-Tier-DataSet](../data-tools/add-validation-to-an-n-tier-dataset.md) Beschreibt das Hinzufügen von Code zum Ausführen von Validierungen für das Ändern von Daten.
+
+ Exemplarische Vorgehensweise [: Erstellen einer N-Tier-Daten Anwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md) Enthält Schritt-für-Schritt-Anleitungen zum Erstellen eines typisierten Datasets und zum Trennen des TableAdapter-und datasetcodes in mehrere Projekte.
+
+ Exemplarische Vorgehensweise [: Hinzufügen von Validierungen zu einer N-Tier-Daten Anwendung](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265) Enthält Schritt-für-Schritt-Anleitungen zum Hinzufügen von Validierungen zu der Anwendung, die in der exemplarischen Vorgehensweise der n-Tier-Daten Anwendung erstellt wurde.
+
+## <a name="reference"></a>Referenz
+ <xref:System.Data.DataSet>
+
+ <xref:System.Data.TypedTableBase%601>
+
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-- [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)   
-- [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)   
-- [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
-- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
+- [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
+- [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
+- [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

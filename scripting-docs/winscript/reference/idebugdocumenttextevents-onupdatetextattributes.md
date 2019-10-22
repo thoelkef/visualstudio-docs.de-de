@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes | Microsoft-Dokumentation
+title: 'Idebugdocumenttextevents:: onupdatetextattributes | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 044eec93516bc4e16044c4bf982b48d91269ebaa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989803"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575986"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-Gibt an, dass der Bereich der zugrunde liegenden Position zugeordnete Textattribute geändert haben.  
+Gibt an, dass die dem zugrunde liegenden Zeichen Positions Bereich zugeordneten Text Attribute geändert wurden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Parameter  
  `cCharacterPosition`  
- [in] Die Zeichenposition des ersten Zeichens, die die Attribute geändert wurden.  
+ in Die Zeichenposition des ersten Zeichens, das die Attribute geändert haben.  
   
  `cNumToUpdate`  
- [in] Die Anzahl der Zeichen im Bereich.  
+ in Die Anzahl der Zeichen im Bereich.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,7 +51,7 @@ HRESULT onUpdateTextAttributes(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt an, dass der Bereich der zugrunde liegenden Position zugeordnete Textattribute geändert haben.  
+ Diese Methode gibt an, dass die dem zugrunde liegenden Zeichen Positions Bereich zugeordneten Text Attribute geändert wurden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)

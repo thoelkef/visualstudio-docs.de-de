@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::EnumStackFrames | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationthread:: enumstackframes | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96ca35779ea9f113fc96e485f028f1e74058990a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dc4c6798d006679ac93250175e9ca4d69683f0c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788447"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575292"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-Gibt einen Enumerator für den Stapelrahmen, der diesem Thread zugeordnet.  
+Gibt einen Enumerator für die diesem Thread zugeordneten Stapel Rahmen zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parameter  
  `ppedsf`  
- [out] Ein Enumerator für Stapelrahmen diesem Thread zugeordnet.  
+ vorgenommen Ein Enumerator für die Stapel Rahmen, die diesem Thread zugeordnet sind.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode muss in einen Haltepunkt aus aufgerufen werden. Der Stack-Frame-Enumerator sollte die Frames, die beginnend ab des Anfang des Stapels, zurückgeben, die zuletzt abgelegte Frame ab.  
+ Diese Methode muss innerhalb eines Breakpoints aufgerufen werden. Der Stapel Rahmen-Enumerator sollte die Frames zurückgeben, die am Anfang des Stapels beginnen, beginnend mit dem zuletzt über drückten Frame.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty | Microsoft-Dokumentation
+title: 'Idebugexpression:: getresultasdebug-Eigenschaft | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06d9b513d40450e20bb87f07c460bef7ce2678c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104c42f02d02be386711e687f02d333425834948
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978496"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575928"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-Gibt das Ergebnis der Auswertung des Ausdrucks als eine Debugeigenschaft und der Rückgabewert des Vorgangs zurück.  
+Gibt das Ergebnis der Ausdrucks Auswertung als Debugeigenschaft und den Rückgabewert des Vorgangs zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetResultAsDebugProperty(
   
 #### <a name="parameters"></a>Parameter  
  `phrResult`  
- [out] Der Rückgabewert des Vorgangs.  
+ vorgenommen Der Rückgabewert des Vorgangs.  
   
  `ppdp`  
- [out] Die Debugeigenschaft für den Ausdruck.  
+ vorgenommen Die Debug-Eigenschaft für den Ausdruck.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -49,13 +49,13 @@ HRESULT GetResultAsDebugProperty(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_PENDING`|Der Vorgang ist noch ausstehend.|  
+|`E_PENDING`|Der Vorgang steht noch aus.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt das Ergebnis der Auswertung des Ausdrucks als eine `IDebugProperty` und des Vorgangs `HRESULT`.  
+ Diese Methode gibt das Ergebnis der Ausdrucks Auswertung als `IDebugProperty` und die `HRESULT` des Vorgangs zurück.  
   
- Diese Methode gibt `S_OK` und `phrResult` gibt `E_ABORT` Wenn `Abort` bricht den Vorgang ab.  
+ Diese Methode gibt `S_OK` zurück, und `phrResult` gibt `E_ABORT` zurück, wenn `Abort` den Vorgang abbricht.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugExpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)   
+ [Idebugexpression-Schnittstelle](../../winscript/reference/idebugexpression-interface.md)    
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

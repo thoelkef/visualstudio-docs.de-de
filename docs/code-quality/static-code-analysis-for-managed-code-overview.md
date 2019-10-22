@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e306d19dcf10e929bfb6432e6b6eb585996657f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550851"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974923"
 ---
 # <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Übersicht über die Code Analyse für verwalteten Code in Visual Studio
 
@@ -26,15 +26,15 @@ Die Code Analyse für verwalteten Code analysiert verwaltete Assemblys und melde
 Das Analysetool stellt die während einer Analyse durchgeführten Prüfungen als Warnmeldungen dar. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.
 
 > [!NOTE]
-> Die Legacy Analyse (statische Code Analyse) wird für .net Core-und .NET Standard-Projekte in Visual Studio nicht unterstützt. Wenn Sie die Code Analyse in einem .net Core-oder .NET Standard Projekt als Teil von MSBuild ausführen, wird eine Fehlermeldung ähnlich **der folgenden angezeigt: CA0055 : Die Plattform für \<die DLL->** konnte nicht identifiziert werden. Verwenden Sie stattdessen [Code Analysen](../code-quality/roslyn-analyzers-overview.md) , um Code in .net Core-oder .NET Standard Projekten zu analysieren.
+> Die Legacy Analyse (statische Code Analyse) wird für .net Core-und .NET Standard-Projekte in Visual Studio nicht unterstützt. Wenn Sie die Code Analyse in einem .net Core-oder .NET Standard Projekt als Teil von MSBuild ausführen, wird eine Fehlermeldung ähnlich der **error angezeigt: CA0055 : Die Plattform für @no__t konnte nicht identifiziert werden -0Die dll->** . Verwenden Sie stattdessen [Code Analysen](../code-quality/roslyn-analyzers-overview.md) , um Code in .net Core-oder .NET Standard Projekten zu analysieren.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integration der IDE (integrierte Entwicklungsumgebung)
 
 Sie können die Code Analyse für Ihr Projekt manuell oder automatisch ausführen.
 
-Um die Code Analyse jedes Mal auszuführen, wenn Sie ein Projekt erstellen, wählen Sie auf der Eigenschaften Seite des Projekts die Option **Code Analyse für Build aktivieren aus** . Weitere Informationen finden Sie unter [Vorgehensweise: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Wenn Sie die Code Analyse bei jedem Erstellen eines Projekts ausführen möchten, wählen Sie die Option auf der Eigenschaften Seite **Code Analyse** des Projekts aus. Weitere Informationen finden Sie unter [Vorgehensweise: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Um die Code Analyse für ein Projekt manuell auszuführen, wählen Sie in der Menüleiste **Analyse** > **Ausführen Code Analyse** > ausführen**Code \<Analyse für Projekt >** aus.
+Um die Code Analyse für ein Projekt manuell auszuführen, wählen Sie in der Menüleiste **analysieren** > **Code Analyse ausführen** > **Code Analyse für \<project >** aus.
 
 ## <a name="rule-sets"></a>Regelsätze
 
@@ -56,8 +56,21 @@ Public class MyClass
 
 Weitere Informationen finden Sie unter unter [drücken von Warnungen](../code-quality/in-source-suppression-overview.md).
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2017 oder Visual Studio 2019 migrieren, kann es vorkommen, dass eine große Anzahl von Code Analyse Warnungen angezeigt wird. Wenn Sie nicht bereit sind, die Warnungen zu beheben und sofort produktiv zu arbeiten, können Sie den Analyse Status Ihres Projekts als *Grundlage* festlegen. Wählen Sie im Menü **analysieren** die Option **Code Analyse ausführen und aktive Probleme unterdrücken**.
+> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie **analysieren** > **Code Analyse ausführen und aktive Probleme unterdrücken**.
+>
+> ![Ausführen der Code Analyse und unterdrücken von Problemen in Visual Studio](media/suppress-active-issues.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Wenn Sie ein Projekt zu Visual Studio 2019 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie  > -Build **analysieren**auswählen**und aktive Probleme unterdrücken**.
+
+::: moniker-end
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Ausführen der Codeanalyse im Rahmen der Eincheckrichtlinien
 

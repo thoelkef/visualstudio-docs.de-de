@@ -10,15 +10,15 @@ helpviewer_keywords:
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160880"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667447"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,16 +66,16 @@ Mit Visual Studio-Befehlen können Sie Befehle über das Fenster **Befehl** , da
 |[Print](../../ide/reference/print-command.md)|Wertet den Ausdruck aus und zeigt das Ergebnis oder den angegebenen Text an.|
 |[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|Zeigt den ausgewählten oder angegebenen Text im Feld **Ausdruck** des Dialogfelds **Schnellansicht** an.|
 |[Ersetzen](../../ide/reference/replace-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die auf dem Steuerelement **Suchen und Ersetzen** verfügbar sind.|
-|[In Dateien ersetzen](../../ide/reference/replace-in-files-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md).|
+|[Ersetzen in Dateien](../../ide/reference/replace-in-files-command.md)|Ersetzt Text in Dateien mithilfe einer Teilmenge der Optionen, die unter [In Dateien ersetzen](../../ide/replace-in-files.md).|
 |[Aktuellen Stapelrahmen festlegen](../../ide/reference/set-current-stack-frame-command.md)|Ermöglicht die Anzeige eines bestimmten Stapelrahmens.|
 |[Aktuellen Thread festlegen](../../ide/reference/set-current-thread-command.md)|Ermöglicht die Anzeige eines bestimmten Threads.|
 |[Basis festlegen](../../ide/reference/set-radix-command.md)|Legt die Zahl der anzuzeigenden Bytes fest.|
 |[Shell](../../ide/reference/shell-command.md)|Startet Programme in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , als ob der Befehl in der Befehlszeile ausgeführt würde.|
 |[Befehl "ShowWebBrowser"](../../ide/reference/showwebbrowser-command.md)|Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.|
-|[Starten](../../ide/reference/start-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|
+|[Start](../../ide/reference/start-command.md)|Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.|
 |[Pfad](../../ide/reference/symbol-path-command.md)|Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht.|
 |[Haltepunkt ein/aus](../../ide/reference/toggle-breakpoint-command.md)|Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.|
 |[Befehl "Überwachung"](../../ide/reference/watch-command.md)|Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** .|
 
 ## <a name="see-also"></a>Siehe auch
- [Befehlsfenster](../../ide/reference/command-window.md) [Such-/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

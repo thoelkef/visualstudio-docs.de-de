@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition | Microsoft-Dokumentation
+title: 'IActiveScriptSiteDebug32:: getdocumentcontextfromposition | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992510"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574846"
 ---
-# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-Die Sprach-Engine, die für die Delegieren `IDebugCodeContext::GetSourceContext`.  
+# <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32:: getdocumentcontextfromposition
+Wird von der Sprach-Engine verwendet, um `IDebugCodeContext::GetSourceContext` zu delegieren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -33,16 +33,16 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parameter  
  `dwSourceContext`  
- [in] Der Quellinhalt Sie `ParseScriptText` oder `AddScriptlet`.  
+ in Der Quell Inhalt, der für `ParseScriptText` oder `AddScriptlet` bereitgestellt wird.  
   
  `uCharacterOffset`  
- [in] Offset relativ zum Beginn des Skriptblocks oder Scriptlet-Zeichen.  
+ in Zeichen Offset relativ zum Anfang des Skript Blocks oder Scriptlet.  
   
  `uNumChars`  
- [in] Anzahl der Zeichen in diesem Kontext.  
+ in Anzahl der Zeichen in diesem Kontext.  
   
  `ppsc`  
- [out] Der Dokumentenkontext für diesen Bereich Position des Zeichens.  
+ vorgenommen Der Dokument Kontext, der diesem Zeichen Positions Bereich entspricht.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -52,7 +52,7 @@ HRESULT GetDocumentContextFromPosition(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Sprach-Engines verwenden Sie diese Methode delegiert `IDebugCodeContext::GetSourceContext`.  
+ Sprachmodule verwenden diese Methode, um `IDebugCodeContext::GetSourceContext` zu delegieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptSiteDebug32-Schnittstelle](../../winscript/reference/iactivescriptsitedebug32-interface.md)

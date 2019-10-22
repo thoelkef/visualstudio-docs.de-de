@@ -1,71 +1,71 @@
 ---
-title: 'Vorgehensweise: Öffnen eines Modells aus einer Datei im Programmcode'
+title: 'Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89c62863aadf4e1f8902799b502c07b9dea528d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821910"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661177"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Vorgehensweise: Öffnen eines Modells aus einer Datei im Programmcode
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode
 
-Sie können die DSL-Modelle in einer beliebigen Anwendung öffnen.
+DSL-Modelle können in jeder beliebigen Anwendung geöffnet werden.
 
-Aus einer Visual Studio-Erweiterung können Sie ModelBus zu diesem Zweck verwenden. ModelBus stellt Standardmechanismus zum Verweisen auf ein Modell oder Elemente in einem Modell, und klicken Sie für die Suche nach dem Modell, wenn es verschoben wurde. Weitere Informationen finden Sie unter [Integrieren von Modellen mithilfe von Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+In einer Visual Studio-Erweiterung können Sie ModelBus zu diesem Zweck verwenden. ModelBus bietet Standardverfahren zum Verweisen auf ein Modell oder auf Elemente in einem Modell und zum Auffinden des Modells, wenn es verschoben wurde. Weitere Informationen finden Sie unter [integrieren von Modellen mit Visual Studio-ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Zielframework
 
-Legen Sie die **Zielframework** Ihres Anwendungsprojekts in .NET Framework 4 oder höher.
+Legen Sie das **Ziel Framework** des Anwendungs Projekts auf .NET Framework 4 oder höher fest.
 
-1. Öffnen Sie Visual Studio-Projekt für die Anwendung, in der Sie ein DSL-Modell lesen möchten.
+1. Öffnen Sie das Visual Studio-Projekt für die Anwendung, in der Sie ein DSL-Modell lesen möchten.
 
-2. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.
+2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.
 
-3. Im Fenster für die Projekteigenschaften auf die **Anwendung** Registerkarte die **Zielframework** Feld **.NET Framework 4** (oder höher).
+3. Legen Sie im Fenster Projekteigenschaften auf der Registerkarte **Anwendung** das Feld **Ziel Framework** auf **.NET Framework 4** (oder höher) fest.
 
 > [!NOTE]
-> Das Zielframework sollte nicht **.NET Framework 4 Client Profile**.
+> Das Ziel Framework sollte nicht **.NET Framework 4 Client Profil**sein.
 
 ## <a name="references"></a>Verweise
 
-Fügen Sie diese Verweise zu Ihrem Visual Studio-Webanwendungsprojekt hinzu:
+Fügen Sie dem Visual Studio-Anwendungsprojekt diese Verweise hinzu:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Wenn diese nicht angezeigt wird der **.NET** Registerkarte die **Verweise hinzufügen** im Dialogfeld klicken Sie auf die **Durchsuchen** Registerkarte, und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+  - Wenn dies im Dialogfeld **Verweise hinzufügen** auf der Registerkarte **.net** nicht angezeigt wird, klicken Sie auf die Registerkarte **Durchsuchen** , und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
-- Die DSL-Assembly, die sich unter dem Ordner "Bin" Ihrem DSL-Projekt werden. Der Name hat in der Regel Folgendes Format: *Ihrunternehmen*. *IhrProjekt*`.Dsl.dll`.
+- Ihre DSL-Assembly, die Sie im Ordner "bin" Ihres DSL-Projekts finden. Der Name hat in der Regel folgendes Format: *yourcompany*. *Yourproject* `.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Wichtige Klassen in der DSL
 
-Bevor Sie den Code, der Ihre DSL liest schreiben können, sollten Sie die Namen einiger der von Ihrer DSL generierten Klassen wissen. Öffnen Sie in der DSL-Projektmappe, die **Dsl** Projekt, und suchen Sie in der **GeneratedCode** Ordner. Doppelklicken Sie alternativ auf die DSL-Assembly in Ihrem Projekt **Verweise**, und öffnen Sie in den DSL-Namespace **Objektkatalog**.
+Bevor Sie den Code schreiben können, der die DSL liest, sollten Sie die Namen einiger der von ihrer DSL generierten Klassen kennen. Öffnen Sie in ihrer DSL-Projekt Mappe das **DSL** -Projekt, und suchen Sie im Ordner **generatedcode** nach. Alternativ können Sie auf die DSL-Assembly in den Projekt **verweisen**doppelklicken und den DSL-Namespace in **Objektkatalog**öffnen.
 
-Dies sind die Klassen, die gekennzeichnet werden sollen:
+Dabei handelt es sich um die Klassen, die Sie identifizieren sollten:
 
-- *YourDslRootClass* – Dies ist der Name der Stammklasse in Ihre `DslDefinition.dsl`.
+- *Yourdslrootclass* : Dies ist der Name der Stamm Klasse in ihrer `DslDefinition.dsl`.
 
-- *Ihrdslname* `SerializationHelper` – diese Klasse wird definiert, `SerializationHelper.cs` in Ihrem DSL-Projekt.
+- *Yourdslname* `SerializationHelper`: Diese Klasse wird in `SerializationHelper.cs` in Ihrem DSL-Projekt definiert.
 
-- *Ihrdslname* `DomainModel` – diese Klasse wird definiert, `DomainModel.cs` in Ihrem DSL-Projekt.
+- *Yourdslname* `DomainModel`: Diese Klasse wird in `DomainModel.cs` in Ihrem DSL-Projekt definiert.
 
 ## <a name="read-from-a-file"></a>Lesen aus einer Datei
 
-Im folgende Beispiel wird entworfen, um eine DSL Lesen in der zu die wichtigsten Klassen wie folgt:
+Das folgende Beispiel dient zum Lesen einer DSL, in der die wichtigsten Klassen folgendermaßen aussehen:
 
-- FamilyTreeModel
+- Familytreemodel
 
-- FamilyTreeSerializationHelper
+- Familytreeserializationhelper
 
-- FamilyTreeDomainModel
+- Familytreedomainmodel
 
-Die andere Domänenklasse in diese DSL ist die Person.
+Die andere Domänen Klasse in dieser DSL ist Person.
 
 ```csharp
 using System;
@@ -105,7 +105,7 @@ namespace StandaloneReadDslConsole
 
 ## <a name="save-to-a-file"></a>In einer Datei speichern
 
-Dem folgenden Zusatz zu den vorherigen Code bewirkt eine Änderung des Modells, und klicken Sie dann in eine Datei gespeichert.
+Durch die folgende Ergänzung zum vorherigen Code wird das Modell geändert und dann in einer Datei gespeichert.
 
 ```csharp
 using (Transaction t =

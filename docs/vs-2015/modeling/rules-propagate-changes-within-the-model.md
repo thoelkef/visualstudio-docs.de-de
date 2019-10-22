@@ -1,5 +1,5 @@
 ---
-title: Regeln propagieren Änderungen im Modell | Microsoft-Dokumentation
+title: Regeln verbreiten Änderungen innerhalb des Modells | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,210 +9,209 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 901d809b5f194bb4e66990b0a0e946be2521bbb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442931"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671302"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können eine Store-Regel, um eine Änderung von einem Element zu einem anderen im Visualisierungs- und Modellierungs-SDK (VMSDK) weitergegeben werden erstellen. Wenn eine Änderung auf ein Element in der Store erfolgt, werden Regeln ausgeführt werden, in der Regel, wenn die äußerste Transaktion ein Commit ausgeführt wird, geplant. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. B. ein Element hinzugefügt oder gelöscht wird. Sie können Regeln auf bestimmte Typen von Elementen, Formen und Diagrammen anfügen. Viele integrierte Features durch Regeln definiert werden: z. B. Regeln stellen sicher, dass ein Diagramm aktualisiert wird, wenn das Modell geändert wird. Sie können Ihrer domänenspezifischen Sprache anpassen, indem Sie eigene Regeln hinzufügen.  
+Sie können eine Speicher Regel erstellen, um eine Änderung von einem Element zu einem anderen im Visualisierungs-und Modellierungs-SDK (vmsdk) weiterzugeben. Wenn eine Änderung an einem Element im Speicher vorgenommen wird, werden die Regeln für die Ausführung geplant, in der Regel, wenn für die äußerste Transaktion ein Commit ausgeführt wird. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. b. das Hinzufügen eines Elements oder das Löschen. Sie können Regeln an bestimmte Typen von Elementen, Formen oder Diagrammen anfügen. Viele integrierte Funktionen werden durch Regeln definiert: beispielsweise stellen Regeln sicher, dass ein Diagramm aktualisiert wird, wenn sich das Modell ändert. Sie können Ihre domänenspezifische Sprache anpassen, indem Sie Ihre eigenen Regeln hinzufügen.
 
- Store-Regeln sind besonders nützlich, für die Weitergabe von Änderungen in den Speicher – d. h. an Modellelementen, Beziehungen, Formen oder Konnektoren und ihrer Domäne Eigenschaften. Regeln werden nicht ausgeführt werden, wenn der Benutzer die Befehle zum Rückgängigmachen oder Wiederholen aufruft. Stattdessen stellt der Transaktions-Manager sicher, dass es sich bei den Store-Inhalt auf den richtigen Zustand wiederhergestellt werden. Wenn Sie Änderungen an Ressourcen außerhalb des Speichers weitergeben möchten, verwenden Sie die Store-Ereignisse. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+ Speicher Regeln sind besonders nützlich für das Weitergeben von Änderungen innerhalb des Stores – d. h. Änderungen an Modellelementen, Beziehungen, Formen oder Connectors und deren Domänen Eigenschaften. Regeln werden nicht ausgeführt, wenn der Benutzer die Befehle zum Rückgängigmachen oder wiederholen aufruft. Stattdessen stellt der Transaktions-Manager sicher, dass die Speicherinhalte im richtigen Zustand wieder hergestellt werden. Wenn Sie Änderungen an Ressourcen außerhalb des Stores weitergeben möchten, verwenden Sie Store-Ereignisse. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Nehmen wir beispielsweise an, dass Sie angeben möchten, dass, wenn der Benutzer (oder in Ihrem Code) ein neues Element vom Typ ExampleDomainClass erstellt, ein weiteres Element eines anderen Typs in einen anderen Teil des Modells erstellt wird. Sie können eine AddRule schreiben und ExampleDomainClass zuzuordnen. Sie würden Code schreiben, in der Regel auf das zusätzliche Element zu erstellen.  
+ Nehmen Sie beispielsweise an, dass Sie angeben möchten, dass jedes Mal, wenn der Benutzer (oder Ihr Code) ein neues Element vom Typ "exampledomainclass" erstellt, ein zusätzliches Element eines anderen Typs in einem anderen Teil des Modells erstellt wird. Sie könnten ein AddRule schreiben und es mit exampledomainclass verknüpfen. Sie würden Code in der Regel schreiben, um das zusätzliche Element zu erstellen.
 
-```csharp  
-using System;  
-using System.Collections.Generic;  
-using System.Linq;  
-using Microsoft.VisualStudio.Modeling;  
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.VisualStudio.Modeling;
 
-namespace ExampleNamespace  
-{  
- // Attribute associates the rule with a domain class:  
- [RuleOn(typeof(ExampleDomainClass), FireTime=TimeToFire.TopLevelCommit)]  
- // The rule is a class derived from one of the abstract rules:  
- class MyAddRule : AddRule  
- {  
-  // Override the abstract method:  
-  public override void ElementAdded(ElementAddedEventArgs e)  
-  {  
-    base.ElementAdded(e);  
-    ExampleDomainClass element = e.ModelElement;  
-    Store store = element.Store;  
-    // Ignore this call if we're currently loading a model:  
-    if (store.TransactionManager.CurrentTransaction.IsSerializing)   
-       return;  
+namespace ExampleNamespace
+{
+ // Attribute associates the rule with a domain class:
+ [RuleOn(typeof(ExampleDomainClass), FireTime=TimeToFire.TopLevelCommit)]
+ // The rule is a class derived from one of the abstract rules:
+ class MyAddRule : AddRule
+ {
+  // Override the abstract method:
+  public override void ElementAdded(ElementAddedEventArgs e)
+  {
+    base.ElementAdded(e);
+    ExampleDomainClass element = e.ModelElement;
+    Store store = element.Store;
+    // Ignore this call if we're currently loading a model:
+    if (store.TransactionManager.CurrentTransaction.IsSerializing)
+       return;
 
-    // Code here propagates change as required – for example:  
-      AnotherDomainClass echo = new AnotherDomainClass(element.Partition);  
-      echo.Name = element.Name;  
-      echo.Parent = element.Parent;    
-    }  
-  }  
- // The rule must be registered:  
- public partial class ExampleDomainModel  
- {  
-   protected override Type[] GetCustomDomainModelTypes()  
-   {  
-     List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());  
-     types.Add(typeof(MyAddRule));  
-     // If you add more rules, list them here.   
-     return types.ToArray();  
-   }  
- }  
-}  
+    // Code here propagates change as required – for example:
+      AnotherDomainClass echo = new AnotherDomainClass(element.Partition);
+      echo.Name = element.Name;
+      echo.Parent = element.Parent;
+    }
+  }
+ // The rule must be registered:
+ public partial class ExampleDomainModel
+ {
+   protected override Type[] GetCustomDomainModelTypes()
+   {
+     List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());
+     types.Add(typeof(MyAddRule));
+     // If you add more rules, list them here.
+     return types.ToArray();
+   }
+ }
+}
 
-```  
+```
 
 > [!NOTE]
-> Der Code eine Regel muss den Zustand nur der Elemente in der Store ändern; die Regel sollte, also nur Modellelementen, Beziehungen, Formen, Konnektoren, Diagramme oder deren Eigenschaften ändern. Wenn Sie Änderungen an Ressourcen außerhalb des Speichers weitergeben möchten, definieren Sie Store-Ereignisse. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> Der Code einer Regel sollte nur den Status von Elementen innerhalb des Stores ändern. Das heißt, die Regel sollte nur Modellelemente, Beziehungen, Formen, Connectors, Diagramme oder deren Eigenschaften ändern. Wenn Sie Änderungen an Ressourcen außerhalb des Stores weitergeben möchten, definieren Sie Store-Ereignisse. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md) .
 
-### <a name="to-define-a-rule"></a>Definieren eine Regel  
+### <a name="to-define-a-rule"></a>So definieren Sie eine Regel
 
-1. Die Regel definieren, wie eine Klasse mit dem Präfix die `RuleOn` Attribut. Das Attribut ordnet die Regel mit einem Ihrer Domänenklassen, Beziehungen oder Diagrammelemente. Die Regel wird auf jede Instanz dieser Klasse angewendet werden, der möglicherweise abstrakt.  
+1. Definieren Sie die Regel als eine Klasse, der das `RuleOn`-Attribut vorangestellt ist. Das-Attribut ordnet die Regel einer der Domänen Klassen, Beziehungen oder Diagramm Elemente zu. Die Regel wird auf jede Instanz dieser Klasse angewendet, die möglicherweise abstrakt ist.
 
-2. Registrieren Sie die Regel, indem Sie auf den Satz von zurückgegebenen hinzufügen `GetCustomDomainModelTypes()` in Ihrer Domain-Model-Klasse.  
+2. Registrieren Sie die Regel, indem Sie Sie der von `GetCustomDomainModelTypes()` in der Domänen Modell Klasse zurückgegebenen Menge hinzufügen.
 
-3. Die Regelklasse Ableiten von der abstrakten Klassen für die Regel, und schreiben den Code für die Execution-Methode.  
+3. Leiten Sie die Regelklasse von einer der abstrakten Regelklassen ab, und schreiben Sie den Code der Ausführungs Methode.
 
-   In den folgenden Abschnitten werden diese Schritte ausführlicher beschrieben.  
+   In den folgenden Abschnitten werden diese Schritte ausführlicher beschrieben.
 
-### <a name="to-define-a-rule-on-a-domain-class"></a>Definieren eine Regel für eine Domänenklasse  
+### <a name="to-define-a-rule-on-a-domain-class"></a>So definieren Sie eine Regel für eine Domänen Klasse
 
-- Klicken Sie in einer benutzerdefinierten Codedatei zu verlassen, definieren Sie eine Klasse, und stellen sie mit der <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> Attribut:  
+- Definieren Sie in einer benutzerdefinierten Codedatei eine-Klasse, und stellen Sie Ihr das <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute>-Attribut voran:
 
-    ```  
-    [RuleOn(typeof(ExampleElement),   
-         // Usual value – but required, because it is not the default:  
-         FireTime = TimeToFire.TopLevelCommit)]   
-    class MyRule ...  
+    ```
+    [RuleOn(typeof(ExampleElement),
+         // Usual value – but required, because it is not the default:
+         FireTime = TimeToFire.TopLevelCommit)]
+    class MyRule ...
 
-    ```  
+    ```
 
-- Im ersten Parameter der Betreff-Typ kann es sich um eine Domänenklasse, domänenbeziehung, Form, Connectors, oder ein Diagramm sein. In der Regel können Sie Regeln anwenden, um Domänenklassen und Beziehungen.  
+- Der subjekttyp im ersten Parameter kann eine Domänen Klasse, eine Domänen Beziehung, eine Form, ein Connector oder ein Diagramm sein. Normalerweise wenden Sie Regeln auf Domänen Klassen und Beziehungen an.
 
-     Die `FireTime` ist in der Regel `TopLevelCommit`. Dadurch wird sichergestellt, dass die Regel ausgeführt wird, nur, nachdem die wichtigsten Änderungen der Transaktion vorgenommen wurden. Die alternativen sind Inline, die die Regel ausgeführt, kurz nach der Umstellung wird; und LocalCommit, die die Regel am Ende der aktuellen Transaktion ausgeführt wird (was die äußerste möglicherweise nicht). Sie können auch festlegen, die Priorität einer Regel, um die Reihenfolge, in der Warteschlange zu beeinflussen, aber dies ist eine unzuverlässigen Methode das benötigte Ergebnis zu erreichen.  
+     Der `FireTime` wird in der Regel `TopLevelCommit`. Dadurch wird sichergestellt, dass die Regel erst ausgeführt wird, nachdem alle primären Änderungen der Transaktion vorgenommen wurden. Die Alternativen sind Inline, wodurch die Regel kurz nach der Änderung ausgeführt wird. und localcommit, das die Regel am Ende der aktuellen Transaktion ausführt (was möglicherweise nicht der äußerste Wert ist). Sie können auch die Priorität einer Regel festlegen, um die Reihenfolge in der Warteschlange zu beeinflussen, aber dies ist eine unzuverlässige Methode, um das gewünschte Ergebnis zu erzielen.
 
-- Sie können eine abstrakte Klasse angeben, wie der Antragstellertyp.  
+- Sie können eine abstrakte Klasse als subjekttyp angeben.
 
-- Die Regel gilt für alle Instanzen der Subject-Klasse.  
+- Die Regel gilt für alle Instanzen der Subject-Klasse.
 
-- Der Standardwert für `FireTime` TimeToFire.TopLevelCommit ist. Dies bewirkt, dass die Regel ausgeführt werden, wenn die äußerste Transaktion ein Commit ausgeführt wird. Alternativ kann es sich um TimeToFire.Inline. Dies bewirkt, dass die Regel, die kurz nach dem auslösenden Ereignis ausgeführt werden.  
+- Der Standardwert für `FireTime` ist Timeto Fire. toplevelcommit. Dies bewirkt, dass die Regel ausgeführt wird, wenn für die äußerste Transaktion ein Commit ausgeführt wird. Eine Alternative ist timetofire. Inline. Dies bewirkt, dass die Regel bald nach dem auslösenden Ereignis ausgeführt wird.
 
-### <a name="to-register-the-rule"></a>Um die Regel zu registrieren.  
+### <a name="to-register-the-rule"></a>So registrieren Sie die Regel
 
-- Fügen Sie Ihrer Klasse zur Liste der Typen, die vom `GetCustomDomainModelTypes` in Ihrem Domänenmodell:  
+- Fügen Sie die Regelklasse der Liste der Typen hinzu, die von `GetCustomDomainModelTypes` in Ihrem Domänen Modell zurückgegeben werden:
 
-    ```  
-    public partial class ExampleDomainModel  
-     {  
-       protected override Type[] GetCustomDomainModelTypes()  
-       {  
-         List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());  
-         types.Add(typeof(MyAddRule));  
-         // If you add more rules, list them here.   
-         return types.ToArray();  
-       }  
-     }  
+    ```
+    public partial class ExampleDomainModel
+     {
+       protected override Type[] GetCustomDomainModelTypes()
+       {
+         List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());
+         types.Add(typeof(MyAddRule));
+         // If you add more rules, list them here.
+         return types.ToArray();
+       }
+     }
 
-    ```  
+    ```
 
-- Wenn Sie nicht mit dem Namen Ihrer Domäne Modellklasse sicher sind, suchen Sie in der Datei **Dsl\GeneratedCode\DomainModel.cs**  
+- Wenn Sie sich nicht sicher sind, welchen Namen die Domänen Modell Klasse hat, suchen Sie in der Datei " **dsl\generatedcode\domainmodel.cs** ".
 
-- Schreiben Sie diesen Code in einer benutzerdefinierten Codedatei in das DSL-Projekt.  
+- Schreiben Sie diesen Code in eine benutzerdefinierte Codedatei in Ihrem DSL-Projekt.
 
-### <a name="to-write-the-code-of-the-rule"></a>Den Code der Regel schreiben  
+### <a name="to-write-the-code-of-the-rule"></a>So schreiben Sie den Code der Regel
 
-- Leiten Sie die Regelklasse, von einem der folgenden Basisklassen:  
+- Leiten Sie die Regelklasse von einer der folgenden Basisklassen ab:
 
   |                             Basisklasse                              |                                                                                                                                                                                                                                                                                                                                                                              Trigger                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Ein Element, eine Verknüpfung oder eine Form wird hinzugefügt.<br /><br /> Verwenden Sie diese Option, um neue Beziehungen, zusätzlich zu neuen Elementen zu erkennen.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Ein Domäne-Eigenschaftswert geändert wird. Das Methodenargument enthält die alten und neuen Werte.<br /><br /> Für Formen die, mit dieser Regel wird ausgelöst, wenn die integrierte `AbsoluteBounds` eigenschaftsänderungen, wenn die Form bewegt wird.<br /><br /> In vielen Fällen ist es einfacher, außer Kraft setzen `OnValueChanged` oder `OnValueChanging` in der Handler. Diese Methoden werden unmittelbar vor und nach der Änderung aufgerufen. Im Gegensatz dazu wird die Regel in der Regel am Ende der Transaktion ausgeführt werden. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md). **Hinweis**:  Mit dieser Regel wird nicht ausgelöst, wenn ein Link erstellt oder gelöscht wird. Schreiben Sie stattdessen eine `AddRule` und `DeleteRule` für die domänenbeziehung. |
-  |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Wird ausgelöst, wenn ein Element oder ein Link gelöscht werden soll. Die Eigenschaft ModelElement.IsDeleting gilt bis zum Ende der Transaktion.                                                                                                                                                                                                                                                                                                              |
-  |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Ausgeführt, wenn ein Element oder ein Link gelöscht wurde. Die Regel ausgeführt wird, nachdem alle anderen Regeln einschließlich DeletingRules ausgeführt wurden. ModelElement.IsDeleting ist "false", und ModelElement.IsDeleted ist "true". Um für eine nachfolgende Rollback zu ermöglichen, wird das Element nicht tatsächlich aus dem Arbeitsspeicher entfernt wird er aus Store.ElementDirectory entfernt.                                                                                                                                                                                                       |
-  |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Ein Element wird aus einem Speicher-Partition in eine andere verschoben.<br /><br /> (Beachten Sie, dass dies nicht mit der grafischen Position einer Form verknüpft ist.)                                                                                                                                                                                                                                                                                                            |
-  |     <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>     |                                                                                                                                                                                                                                                                                                                 Diese Regel gilt nur für Beziehungen. Es wird ausgelöst, wenn Sie ein Modellelement an beiden Enden einer Verknüpfung explizit zuweisen.                                                                                                                                                                                                                                                                                                                 |
-  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> |                                                                                                                                                                                                                                                                                                                   Ausgelöst, wenn die Reihenfolge von Links zu oder von einem Element mit den Methoden MoveBefore oder MoveToIndex einen Link geändert wird.                                                                                                                                                                                                                                                                                                                    |
-  |   <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>   |                                                                                                                                                                                                                                                                                                                                                              Ausgeführt, wenn eine Transaktion erstellt wird.                                                                                                                                                                                                                                                                                                                                                              |
-  |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      Ausgeführt, wenn die Transaktion ein Commit ausgeführt wird.                                                                                                                                                                                                                                                                                                                                                      |
-  |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     Ausgeführt, wenn die Transaktion wird ein Rollback ausgeführt werden.                                                                                                                                                                                                                                                                                                                                                     |
+  |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Ein Element, ein Link oder eine Form wird hinzugefügt.<br /><br /> Verwenden Sie diese Informationen, um neue Beziehungen zusätzlich zu neuen Elementen zu erkennen.                                                                                                                                                                                                                                                                                                                        |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Ein Domänen Eigenschafts Wert wurde geändert. Das Method-Argument stellt die alten und neuen Werte bereit.<br /><br /> Bei Formen wird diese Regel ausgelöst, wenn die integrierte `AbsoluteBounds`-Eigenschaft geändert wird, wenn die Form verschoben wird.<br /><br /> In vielen Fällen ist es bequemer, `OnValueChanged` oder `OnValueChanging` im Eigenschaften Handler zu überschreiben. Diese Methoden werden unmittelbar vor und nach der Änderung aufgerufen. Im Gegensatz dazu wird die Regel am Ende der Transaktion ausgeführt. Weitere Informationen finden Sie unter [Domänen Eigenschafts Wert-Änderungs Handler](../modeling/domain-property-value-change-handlers.md). **Hinweis:**  Diese Regel wird nicht ausgelöst, wenn ein Link erstellt oder gelöscht wird. Schreiben Sie stattdessen eine `AddRule` und eine `DeleteRule` für die Domänen Beziehung. |
+  |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Wird ausgelöst, wenn ein Element oder Link im Begriff ist, gelöscht zu werden. Die Eigenschaft "ModelElement. islösch" ist bis zum Ende der Transaktion "true".                                                                                                                                                                                                                                                                                                              |
+  |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Wird ausgeführt, wenn ein Element oder ein Link gelöscht wurde. Die Regel wird ausgeführt, nachdem alle anderen Regeln ausgeführt wurden, einschließlich Delta ingrules. ModelElement. IsDeleted ist false, und ModelElement. IsDeleted ist "true". Damit eine nachfolgende Rückgängig-Aktion zulässig ist, wird das Element nicht tatsächlich aus dem Arbeitsspeicher entfernt, sondern aus "Store. Element Directory" entfernt.                                                                                                                                                                                                       |
+  |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Ein Element wird von einer Speicher Partition in eine andere verschoben.<br /><br /> (Beachten Sie, dass dies nicht mit der grafischen Position einer Form verknüpft ist.)                                                                                                                                                                                                                                                                                                            |
+  |     <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>     |                                                                                                                                                                                                                                                                                                                 Diese Regel gilt nur für Domänen Beziehungen. Sie wird ausgelöst, wenn Sie ein Modellelement explizit an beide Enden eines Links zuweisen.                                                                                                                                                                                                                                                                                                                 |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> |                                                                                                                                                                                                                                                                                                                   Wird ausgelöst, wenn die Reihenfolge von Verknüpfungen zu oder von einem Element mithilfe der Methoden "muvebefore" oder "muvedeindex" in einem Link geändert wird.                                                                                                                                                                                                                                                                                                                    |
+  |   <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>   |                                                                                                                                                                                                                                                                                                                                                              Wird ausgeführt, wenn eine Transaktion erstellt wird.                                                                                                                                                                                                                                                                                                                                                              |
+  |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      Wird ausgeführt, wenn ein Commit für die Transaktion ausgeführt wird.                                                                                                                                                                                                                                                                                                                                                      |
+  |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     Wird ausgeführt, wenn ein Rollback für die Transaktion ausgeführt wird.                                                                                                                                                                                                                                                                                                                                                     |
 
-- Jede Klasse verfügt über eine Methode, die Sie außer Kraft setzen. Typ `override` in der Klasse ermittelt. Die Parameter dieser Methode gibt das Element, das geändert wird.  
+- Jede Klasse verfügt über eine Methode, die Sie überschreiben. Geben Sie `override` in ihrer Klasse ein, um Sie zu ermitteln. Der-Parameter dieser Methode identifiziert das Element, das geändert wird.
 
-  Beachten Sie die folgenden Punkte bezüglich der Regeln aus:  
+  Beachten Sie die folgenden Punkte zu Regeln:
 
-1. Der Satz von Änderungen in einer Transaktion möglicherweise viele Regeln ausgelöst. In der Regel werden die Regeln ausgeführt, wenn die äußerste Transaktion ein Commit ausgeführt wird. Sie werden in einer nicht vorgegebenen Reihenfolge ausgeführt.  
+1. Der Satz von Änderungen in einer Transaktion löst möglicherweise viele Regeln aus. Normalerweise werden die Regeln ausgeführt, wenn für die äußerste Transaktion ein Commit ausgeführt wird. Sie werden in einer nicht angegebenen Reihenfolge ausgeführt.
 
-2. Eine Regel wird immer innerhalb einer Transaktion ausgeführt. Aus diesem Grund müssen Sie keinen, erstellen Sie eine neue Transaktion, um Änderungen vorzunehmen.  
+2. Eine Regel wird immer innerhalb einer Transaktion ausgeführt. Daher ist es nicht erforderlich, eine neue Transaktion zu erstellen, um Änderungen vorzunehmen.
 
-3. Regeln werden nicht ausgeführt werden, wenn eine Transaktion ein Rollback ausgeführt wird, oder die Vorgänge zum Rückgängigmachen oder Wiederholen-Vorgang ausgeführt werden. Diese Vorgänge werden alle Inhalte von den Store den ursprünglichen Zustand zurückgesetzt. Aus diesem Grund, wenn Ihre Regel den Zustand des irgendetwas außerhalb der Store geändert wird, kann nicht an Synchronism mit dem Store Content aufbewahren. Um den Store Zustand zu aktualisieren, ist es besser, Ereignisse zu verwenden. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+3. Regeln werden nicht ausgeführt, wenn für eine Transaktion ein Rollback ausgeführt wird oder wenn die rückgängig-oder Redo-Vorgänge ausgeführt werden. Mit diesen Vorgängen wird der gesamte Inhalt des Stores auf den vorherigen Zustand zurückgesetzt. Wenn die Regel den Zustand von etwas außerhalb des Stores ändert, wird die Synchronisierung mit dem Speicherinhalt daher möglicherweise nicht synchron gehalten. Um den Zustand außerhalb des Stores zu aktualisieren, ist es besser, Ereignisse zu verwenden. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-4. Einige Regeln werden ausgeführt, wenn ein Modell aus der Datei geladen wird. Um zu bestimmen, ob beim Laden oder das Speichern von ausgeführt wird, verwenden Sie `store.TransactionManager.CurrentTransaction.IsSerializing`.  
+4. Einige Regeln werden ausgeführt, wenn ein Modell aus einer Datei geladen wird. Verwenden Sie `store.TransactionManager.CurrentTransaction.IsSerializing`, um zu bestimmen, ob das Laden oder speichern ausgeführt wird.
 
-5. Wenn der Code der Regel Weitere Regel wird erstellt, sie werden am Ende der Liste der Auslösung hinzugefügt werden, und werden ausgeführt werden, bevor die Transaktion abgeschlossen ist. DeletedRules werden nach allen anderen Regeln ausgeführt. Eine Regel kann oft in einer Transaktion, die einmal für jede Änderung ausgeführt werden.  
+5. Wenn der Code Ihrer Regel weitere Regel Trigger erstellt, werden Sie am Ende der auslösenden Liste hinzugefügt und vor Abschluss der Transaktion ausgeführt. Deletedrules werden nach allen anderen Regeln ausgeführt. Eine Regel kann mehrmals für jede Änderung in einer Transaktion ausgeführt werden.
 
-6. Um Informationen zu und von Regeln zu übergeben, können Sie die Informationen im Speichern der `TransactionContext`. Dies ist nur ein Wörterbuch, das während der Transaktion beibehalten wird. Es wird verworfen, wenn am Ende der Transaktion. Die Ereignisargumente, die in jeder Regel geben Sie den Zugriff darauf. Denken Sie daran, dass die Regeln nicht in einer vorhersagbaren Reihenfolge ausgeführt werden.  
+6. Um Informationen an und von Regeln zu übergeben, können Sie Informationen im `TransactionContext` speichern. Dabei handelt es sich nur um ein Wörterbuch, das während der Transaktion beibehalten wird. Sie wird verworfen, wenn die Transaktion endet. Die Ereignis Argumente in jeder Regel ermöglichen den Zugriff darauf. Beachten Sie, dass Regeln nicht in einer vorhersagbaren Reihenfolge ausgeführt werden.
 
-7. Verwenden Sie Regeln nach Berücksichtigung andere Alternativen. Wenn Sie eine Eigenschaft, wenn ein Wert ändert aktualisieren möchten, betrachten Sie beispielsweise eine berechnete Eigenschaft verwenden. Wenn Sie die Größe oder Position einer Form einschränken möchten, verwenden Sie eine `BoundsRule`. Wenn Sie auf eine Änderung eines Eigenschaftswerts zu reagieren möchten, Hinzufügen einer `OnValueChanged` Handler, der die Eigenschaft. Weitere Informationen finden Sie unter [reagieren auf und propagieren Änderungen](../modeling/responding-to-and-propagating-changes.md).  
+7. Verwenden Sie Regeln, nachdem Sie andere Alternativen geprüft haben. Wenn Sie z. b. eine Eigenschaft aktualisieren möchten, wenn sich ein Wert ändert, sollten Sie eine berechnete Eigenschaft verwenden. Wenn Sie die Größe oder Position einer Form einschränken möchten, verwenden Sie eine `BoundsRule`. Wenn Sie auf eine Änderung in einem Eigenschafts Wert reagieren möchten, fügen Sie der-Eigenschaft einen `OnValueChanged`-Handler hinzu. Weitere Informationen finden Sie unter [reagieren auf und](../modeling/responding-to-and-propagating-changes.md)weitergeben von Änderungen.
 
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird eine Eigenschaft aktualisiert, wenn eine domänenbeziehung instanziiert wird, um zwei Elemente zu verknüpfen. Die Regel wird ausgelöst, nicht nur, wenn der Benutzer einen Link in einem Diagramm, sondern auch erstellt, wenn Programmcode eine Verknüpfung erstellt.  
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird eine-Eigenschaft aktualisiert, wenn eine Domänen Beziehung zum Verknüpfen von zwei Elementen instanziiert wird. Die Regel wird nicht nur ausgelöst, wenn der Benutzer einen Link in einem Diagramm erstellt, sondern auch, wenn der Programmcode einen Link erstellt.
 
- Klicken Sie zum Testen dieses Beispiels erstellen Sie eine DSL mithilfe der Lösungsvorlage Aufgabenfluss, und fügen Sie den folgenden Code in einer Datei im Dsl-Projekt. Erstellen Sie und führen Sie die Projektmappe, und öffnen Sie die Beispieldatei im Projekt debuggen. Zeichnen Sie einen Kommentar-Link zwischen einem Kommentar-Form und ein Element für fortlaufenden. Der Text in die Kommentar-Änderungen auf den Bericht auf das letzte Element, dem Sie damit eine Verbindung hergestellt haben.  
+ Um dieses Beispiel zu testen, erstellen Sie eine DSL mithilfe der Lösungs Vorlage für den Task Fluss, und fügen Sie den folgenden Code in eine Datei im DSL-Projekt ein. Erstellen Sie die Projekt Mappe, und führen Sie Sie aus, und öffnen Sie die Beispieldatei im debugprojekt. Zeichnen Sie einen Kommentar Link zwischen einer Kommentar Form und einem Flow-Element. Der Text im Kommentar ändert sich in Bericht über das letzte Element, mit dem Sie eine Verbindung hergestellt haben.
 
- In der Praxis würden Sie in der Regel eine DeleteRule für jede AddRule schreiben.  
+ In der Praxis würden Sie in der Regel eine DeleteRule für jedes AddRule schreiben.
 
-```  
-using System;  
-using System.Collections.Generic;  
-using System.Linq;  
-using System.Text;  
-using Microsoft.VisualStudio.Modeling;  
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.VisualStudio.Modeling;
 
-namespace Company.TaskRuleExample  
-{  
+namespace Company.TaskRuleExample
+{
 
-  [RuleOn(typeof(CommentReferencesSubjects))]  
-  public class RoleRule : AddRule  
-  {  
+  [RuleOn(typeof(CommentReferencesSubjects))]
+  public class RoleRule : AddRule
+  {
 
-    public override void ElementAdded(ElementAddedEventArgs e)  
-    {  
-      base.ElementAdded(e);  
-      CommentReferencesSubjects link = e.ModelElement as CommentReferencesSubjects;  
-      Comment comment = link.Comment;  
-      FlowElement subject = link.Subject;  
-      Transaction current = link.Store.TransactionManager.CurrentTransaction;  
-      // Don't want to run when we're just loading from file:  
-      if (current.IsSerializing) return;  
-      comment.Text = "Flow has " + subject.FlowTo.Count + " outgoing connections";  
-    }  
+    public override void ElementAdded(ElementAddedEventArgs e)
+    {
+      base.ElementAdded(e);
+      CommentReferencesSubjects link = e.ModelElement as CommentReferencesSubjects;
+      Comment comment = link.Comment;
+      FlowElement subject = link.Subject;
+      Transaction current = link.Store.TransactionManager.CurrentTransaction;
+      // Don't want to run when we're just loading from file:
+      if (current.IsSerializing) return;
+      comment.Text = "Flow has " + subject.FlowTo.Count + " outgoing connections";
+    }
 
-  }  
+  }
 
-  public partial class TaskRuleExampleDomainModel  
-  {  
-    protected override Type[] GetCustomDomainModelTypes()  
-    {  
-      List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());  
-      types.Add(typeof(RoleRule));  
-      return types.ToArray();  
-    }  
-  }  
+  public partial class TaskRuleExampleDomainModel
+  {
+    protected override Type[] GetCustomDomainModelTypes()
+    {
+      List<Type> types = new List<Type>(base.GetCustomDomainModelTypes());
+      types.Add(typeof(RoleRule));
+      return types.ToArray();
+    }
+  }
 
-}  
+}
 
-```  
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
- [BoundsRules schränken Position und Größe von Formen ein](../modeling/boundsrules-constrain-shape-location-and-size.md)
+## <a name="see-also"></a>Siehe auch
+ [Ereignishandler verbreiten Änderungen außerhalb des Modells, die die](../modeling/event-handlers-propagate-changes-outside-the-model.md) [Form Position und-Größe einschränken](../modeling/boundsrules-constrain-shape-location-and-size.md)

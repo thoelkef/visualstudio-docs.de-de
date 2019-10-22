@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetSyncDebugOperation | Microsoft-Dokumentation
+title: 'Idebugasyncoperation:: getsyncdebugoperation | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1226187aceba84b2086723f2d2c76c5c76f73d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d732b732681216c0e9eecec7f448bf263376d8c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821836"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573268"
 ---
 # <a name="idebugasyncoperationgetsyncdebugoperation"></a>IDebugAsyncOperation::GetSyncDebugOperation
-Gibt zurück, der diesem Objekt zugeordneten synchronen Debugvorgang.  
+Gibt den synchronen Debugvorgang zurück, der diesem Objekt zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetSyncDebugOperation(
   
 #### <a name="parameters"></a>Parameter  
  `ppsdo`  
- [out] Die synchronen Debugvorgang, das diesem Objekt zugeordnet ist.  
+ vorgenommen Der synchrone Debugvorgang, der diesem-Objekt zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT GetSyncDebugOperation(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt die diesem Objekt zugeordneten synchronen Debugvorgang.  
+ Diese Methode gibt den synchronen Debugvorgang zurück, der diesem-Objekt zugeordnet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)

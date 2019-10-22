@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetShortName | Microsoft-Dokumentation
+title: 'Idebugdocumenthelper:: setshortname | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84cab7872272b08e12c532e6c07b4afb741a53c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40716b65c863106b6964a65efcf47dcdcdd6bfc5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963545"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569951"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
-Legt den kurzen Namen für das Dokument fest.  
+Legt den Kurznamen für das Dokument fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT SetShortName(
   
 #### <a name="parameters"></a>Parameter  
  `pszShortName`  
- [in] Eine mit Null endende Zeichenfolge, die den kurzen Namen des Dokuments enthält.  
+ in Eine NULL-terminierte Zeichenfolge, die den Kurznamen des Dokuments enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT SetShortName(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode legt einen neuen kurzen Namen für das Dokument.  
+ Diese Methode legt einen neuen Kurznamen für das Dokument fest.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)

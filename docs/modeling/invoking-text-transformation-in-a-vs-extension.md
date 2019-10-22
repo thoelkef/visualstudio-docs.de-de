@@ -2,17 +2,17 @@
 title: Aufrufen von Texttransformation in einer VS-Erweiterung
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870518"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667767"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Aufrufen von Text Transformation in einer Visual Studio-Erweiterung
 
@@ -130,7 +130,7 @@ Der Code kann mit einer Vorlagendatei getestet werden, die der folgenden Datei �
 Sample text.
 ```
 
-Die Compilerwarnung wird im Fehler Fenster von `ErrorCallback`Visual Studio angezeigt, und es wird auch ein-Rückruf generiert.
+Die Compilerwarnung wird im Fehler Fenster von Visual Studio angezeigt, und es wird auch ein-`ErrorCallback` generiert.
 
 ## <a name="reference-parameters"></a>Verweisparameter
 
@@ -138,8 +138,8 @@ Sie können Werte aus einer Textvorlage mit einer Parameterklasse übergeben, di
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-So generieren Sie Text von einer vorverarbeiteten Textvorlage Rufen Sie die `TransformText()`-Methode der generierten Klasse auf. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+So generieren Sie Text aus einer vorverarbeiteten Textvorlage: Rufen Sie die `TransformText()`-Methode der generierten-Klasse auf. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-So generieren Sie Text außerhalb einer Visual Studio-Erweiterung: Definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
+So generieren Sie Text außerhalb einer Visual Studio-Erweiterung: definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Text Vorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
-So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann Rufen Sie die [preprocesstemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) -Methode von [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))auf.
+So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann: Rufen Sie die [preprocesstemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) -Methode von [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))auf.

@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start | Microsoft-Dokumentation
+title: 'Idebugasyncoperation:: Start | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3e02869abab65878412f96b77d5782b9717a1b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 485eb34ebe200e7f7898d9338effed37cbf2aa10
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821927"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573247"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
-Bewirkt, dass den asynchronen Vorgang, um zu beginnen.  
+Bewirkt, dass der asynchrone Vorgang beginnt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parameter  
  `padocb`  
- Die Rückrufschnittstelle, die Statusereignisse aus diesem Vorgang empfängt.  
+ Die Rückruf Schnittstelle, die Statusereignisse von diesem Vorgang empfängt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -48,10 +48,10 @@ HRESULT Start(
 |`E_UNEXPECTED`|Ein Vorgang steht bereits aus.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode bewirkt, dass `IDebugSyncOperation::Execute` im abgerufenes Thread asynchron aufgerufen werden `IDebugSyncOperation::GetTargetThread`. Diese Methode sollte nur von innerhalb der Debuggerthread aufgerufen werden. Andernfalls wird es nicht zurückgegeben, bis der Vorgang abgeschlossen ist.  
+ Diese Methode bewirkt, dass `IDebugSyncOperation::Execute` asynchron in dem Thread aufgerufen wird, der von `IDebugSyncOperation::GetTargetThread` abgerufen wird. Diese Methode sollte nur innerhalb des Debugger-Threads aufgerufen werden. Andernfalls wird nicht zurückgegeben, bis der Vorgang beendet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
- [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
+ [Idebugasyncoperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
+ [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)    
+ [Idebugsyncoperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

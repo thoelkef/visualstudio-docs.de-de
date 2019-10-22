@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925674"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642861"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
 
@@ -43,7 +43,7 @@ Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-**Adresse**
+**Address**
 
 Aktualisiert die Webadresse, in der ein Dienst Verweis nach einem Dienst sucht. Während der Entwicklung kann der Dienst z. b. auf einem Entwicklungs Server gehostet und später auf einen Produktionsserver verschoben werden. Dies erfordert eine Adressänderung.
 
@@ -55,7 +55,7 @@ Aktualisiert die Webadresse, in der ein Dienst Verweis nach einem Dienst sucht. 
 Bestimmt die Codezugriffsebene für WCF-Clientklassen.
 
 > [!NOTE]
-> Bei Websiteprojekten ist diese Option immer auf `Public` festgelegt und kann nicht geändert werden. Weitere Informationen finden Sie unter [Troubleshooting service references (Problembehandlung bei Dienstverweisen)](../data-tools/troubleshooting-service-references.md).
+> Bei Websiteprojekten ist diese Option immer auf `Public` festgelegt und kann nicht geändert werden. Weitere Informationen finden Sie unter [Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md).
 
 **Asynchrone Vorgänge generieren**
 
@@ -105,5 +105,5 @@ Zeigt das Dialogfeld **Webverweis hinzufügen** an.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [How to: Add a reference to a web service (Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst)](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

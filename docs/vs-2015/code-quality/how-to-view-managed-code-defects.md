@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Fehlern in verwaltetem Code | Microsoft-Dokumentation'
+title: 'Gewusst wie: Anzeigen von Fehlern in verwaltetem Code | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,27 +10,27 @@ helpviewer_keywords:
 - code, viewing defects
 ms.assetid: 58aa6c23-d0b3-414d-930d-82e676cb7e5f
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5ef9b5f8da2cf38566c6cedbf10eae3fa5921362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fe1c6440f76e358ccde22129cbd413bb229b77e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946745"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646260"
 ---
-# <a name="how-to-view-managed-code-defects"></a>Vorgehensweise: Anzeigen von Fehlern in verwaltetem Code
+# <a name="how-to-view-managed-code-defects"></a>Gewusst wie: Anzeigen von Fehlern in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In der Codeanalyse werden Fehler, Warnungen und Meldungen im Fenster "Codeanalyse" gemeldet. Das Fenster "Codeanalyse" wird automatisch angezeigt, beim Ausführen von Code-Analyse auf ein Projekt oder eine Projektmappe.  
-  
- Im Fenster "Codeanalyse" können Sie folgende Aktionen ausführen:  
-  
--   **Wählen Sie den Titel der Warnung.**  
-  
-     Weitere Informationen zu der Warnung wird im codeanalysefenster angezeigt. Die Zeile in der Quelldatei, die die Warnung ausgelöst wird angezeigt und der Quellcode-Editor hervorgehoben.  
-  
--   **Wählen Sie die Warnungs-Id an.** Warnung-Ids sind vorangestellt **Zertifizierungsstelle** und eine vierstellige Zahl enthalten. Beispiel: CA1234.  
-  
-     Das Hilfethema für MSDN-Bibliothek für die Warnung wird angezeigt. Das Thema enthält detaillierte Informationen zu den Ursachen der Warnung und enthält Beispiele, die veranschaulichen, wie der zertifikatwarnung genannten Problems tritt auf, und wird aufgelöst.
+Bei der Code Analyse werden Fehler, Warnungen und Meldungen im Code Analysefenster angezeigt. Das Fenster "Code Analyse" wird automatisch angezeigt, wenn Sie die Code Analyse für ein Projekt oder eine Projekt Mappe ausführen.
+
+ Im Code Analysefenster können Sie folgende Aktionen ausführen:
+
+- **Wählen Sie den Titel Warnung aus.**
+
+     Weitere Informationen zur Warnung werden im Code Analysefenster angezeigt. Die Zeile in der Quelldatei, die die Warnung ausgelöst hat, wird angezeigt und im Quellcode-Editor hervorgehoben.
+
+- **Wählen Sie die Warn-ID aus.** Warn **-IDs wird die** Zertifizierungsstelle vorangestellt und enthält eine vierstellige Zahl. Beispielsweise CA1234.
+
+     Das MSDN Library-Hilfethema für die Warnung wird angezeigt. Das Hilfethema enthält detaillierte Informationen zur Ursache der Warnung und enthält Beispiele, die veranschaulichen, wie das Warnungs Problem auftritt und behoben wird.

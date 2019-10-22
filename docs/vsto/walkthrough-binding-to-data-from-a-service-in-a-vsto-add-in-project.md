@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254055"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381315"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Binden an Daten aus einem Dienst in einem VSTO-Add-in-Projekt
   Sie können Daten in VSTO-Add-In-Projekten an Hoststeuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Steuerelemente zu einem Microsoft Office Word-Dokument hinzugefügt werden, wie die Steuerelemente an Daten gebunden werden, die aus dem MSDN Content Service abgerufen werden, und wie auf Ereignisse zur Laufzeit reagiert wird.
 
- **Gilt für:** Die Informationen in diesem Thema betreffen Projekte auf Anwendungsebene für Word 2010. Weitere Informationen finden Sie unter [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
+ **Betrifft:** Die Informationen in diesem Thema betreffen Projekte auf Anwendungsebene für Word 2010. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
 - Hinzufügen eines <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Steuerelements zu einem Dokument zur Laufzeit
 
-- Binden des <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Steuer Elements an Daten aus einem Webdienst.
+- Binden des <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Steuer Elements an Daten aus einem Webdienst.
 
 - Reagieren auf das <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> -Ereignis eines <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Steuerelements
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "71254055"
 
 1. Erstellen Sie in Visual Basic oder C# ein Word-VSTO-Add-In-Projekt namens **MTPS Content Service**.
 
-     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio öffnet die Datei `ThisAddIn.vb` oder `ThisAddIn.cs` und fügt das Projekt dem **Projektmappen-Explorer**hinzu.
 
@@ -65,7 +65,7 @@ ms.locfileid: "71254055"
 
 3. Geben Sie die folgende URL in das Feld **Adresse** ein:
 
-     **http:\//Services.msdn.Microsoft.com/ContentServices/ContentService.asmx**
+   `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
 4. Klicken Sie auf **Go**.
 

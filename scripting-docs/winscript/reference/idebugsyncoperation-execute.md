@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::Execute | Microsoft-Dokumentation
+title: 'Idebugsyncoperation:: Execute | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2bc204169ff94a240e363eb8caa35ec8c7de9be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25da02e6736cc2f8ac27c82f922bd515e791bef1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004880"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576692"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
-Synchron den Vorgang ausführt, und gibt.  
+Führt den Vorgang synchron aus und gibt zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT Execute(
   
 #### <a name="parameters"></a>Parameter  
  `ppunkResult`  
- [out] Der Objektparameter, die vom Vorgang zurückgegeben wird.  
+ vorgenommen Der vom Vorgang zurückgegebene Objekt Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -45,10 +45,10 @@ HRESULT Execute(
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_ABORT`|Der Vorgang wurde abgebrochen, durch den Aufruf der `IDebugSyncOperation::InProgressAbort` Methode.|  
+|`E_ABORT`|Der Vorgang wurde durch Aufrufen der `IDebugSyncOperation::InProgressAbort`-Methode abgebrochen.|  
   
 ## <a name="remarks"></a>Hinweise  
- Den prozessbasierten Debugmanager in der Ziel-Thread Ruft die `Execute` Methode synchron.  
+ Der Process Debug Manager im Zielthread Ruft die `Execute`-Methode synchron auf.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugSyncOperation-Schnittstelle](../../winscript/reference/idebugsyncoperation-interface.md)

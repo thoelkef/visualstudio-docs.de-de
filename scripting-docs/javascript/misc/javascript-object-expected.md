@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b9b6b17ac0e0aeeeeae99c39954bfd6b283fe2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007434"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573788"
 ---
 # <a name="javascript-object-expected"></a>JavaScript-Objekt erwartet
-Sie haben versucht, eine nicht - übergeben von[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt, das eine integrierte Funktion, die erwartet eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt. Verschiedene integrierte Funktionen erfordern, Objekte, die im [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (im Gegensatz zu Objekten, die durch den Hostnamen oder eine externe Komponente, wie ein Steuerelement definiert).  
+Sie haben versucht, ein nicht [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt an eine integrierte Funktion zu übergeben, die ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt erwartet. Für verschiedene integrierte Funktionen sind in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definierte Objekte erforderlich (im Gegensatz zu vom Host definierten Objekten oder einer externen Komponente wie einem Steuerelement).  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Stellen Sie sicher, dass das Objekt, dem Sie übergeben, wie ein Parameter mit dem richtigen Typ ist.  
+- Stellen Sie sicher, dass das Objekt, das Sie als Parameter übergeben, den richtigen Typ hat.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Objekte und Arrays](../../javascript/objects-and-arrays-javascript.md)   

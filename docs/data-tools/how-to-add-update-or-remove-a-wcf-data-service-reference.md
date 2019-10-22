@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises'
+title: 'Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925632"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648420"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
-Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]mehrere. Verwenden Sie das Dialogfeld **Dienstverweis hinzufügen** , um [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in der aktuellen Projekt Mappe lokal, in einem lokalen Netzwerk oder im Internet zu suchen.
+Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Verwenden Sie das Dialogfeld **Dienstverweis hinzufügen** , um in der aktuellen Projekt Mappe, lokal, in einem lokalen Netzwerk oder im Internet nach [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] zu suchen.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -34,7 +34,7 @@ Ein *Dienst Verweis* ermöglicht einem Projekt den Zugriff auf eine oder [!INCLU
 
      Das Dialogfeld **Dienstverweis hinzufügen** wird angezeigt.
 
-2. Geben Sie im Feld **Adresse** die URL für den Dienst ein, und klicken Sie dann auf suchen, um nach dem Dienst zu suchen. Wenn der Dienst Benutzernamen-und Kenn Wort Sicherheit implementiert, werden Sie möglicherweise aufgefordert, einen Benutzernamen und ein Kennwort einzugeben.
+2. Geben Sie im Feld **Adresse** die URL für den Dienst ein, und klicken Sie dann auf **suchen, um** nach dem Dienst zu suchen. Wenn der Dienst Benutzernamen-und Kenn Wort Sicherheit implementiert, werden Sie möglicherweise aufgefordert, einen Benutzernamen und ein Kennwort einzugeben.
 
     > [!NOTE]
     > Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.

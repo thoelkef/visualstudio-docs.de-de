@@ -1,5 +1,5 @@
 ---
-title: Throw muss durch einen Ausdruck in derselben Quellzeile folgen | Microsoft-Dokumentation
+title: Auf throw muss ein Ausdruck in derselben Quellzeile folgen. Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8854acb3d1992283899c4ff095f5d754c05f55a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005940"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572752"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Auf 'throw' muss ein Ausdruck in derselben Quellzeile folgen
-Sie verwendet die `throw` -Schlüsselwort, aber nicht es mit einem Ausdruck in derselben Quellzeile folgen. Ein `throw` Anweisung besteht aus zwei Teilen: dem `throw` -Schlüsselwort, gefolgt von dem Ausdruck, der ausgelöst wird. Zum Beispiel:  
+Sie haben das `throw`-Schlüsselwort verwendet, jedoch nicht mit einem Ausdruck in derselben Quellzeile befolgt. Eine `throw`-Anweisung besteht aus zwei Teilen: dem Schlüsselwort `throw`, gefolgt vom Ausdruck, der ausgelöst werden soll. Beispiel:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -30,13 +30,13 @@ if (denominator == 0) {
 }  
 ```  
   
- Sie können nicht diese beiden Komponenten aufgeteilt.  
+ Sie können diese beiden Komponenten nicht nach oben aufteilen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Stellen Sie sicher, dass die `throw` -Schlüsselwort und der Ausdruck, der ausgelöst werden, die in der gleichen Zeile angezeigt wird.  
+- Stellen Sie sicher, dass das `throw`-Schlüsselwort und der auszulösenden Ausdruck in derselben Zeile angezeigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Error-Objekt](../../javascript/reference/error-object-javascript.md)   
- [Throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
+ [Fehler Objekt](../../javascript/reference/error-object-javascript.md)    
+ [throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)    
  [try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

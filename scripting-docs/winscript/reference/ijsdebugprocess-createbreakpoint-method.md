@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: CreateBreakpoint-Methode | Microsoft-Dokumentation'
+title: 'Ijsdebugprocess:: up Breakpoint-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b398b93c2e7b5ad43abd35d385407b39c0c980f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0a4d595a11dc54829c467a0aace9601042fa08
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557971"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575094"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint-Methode
 Legt den Haltepunkt an der angegebenen Dokumentposition fest.  
@@ -56,7 +56,7 @@ HRESULT CreateBreakPoint(
 ## <a name="return-value"></a>Rückgabewert  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IJsDebugProcess-Schnittstelle](../../winscript/reference/ijsdebugprocess-interface.md)

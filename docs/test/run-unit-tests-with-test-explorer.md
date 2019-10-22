@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891333"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342451"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -320,6 +320,7 @@ Mithilfe des Codeabdeckungstools von Visual Studio, das in der Visual Studio Ent
 Ausführen des Codeabdeckungstools für Testmethoden in einer Projektmappe:
 
 ::: moniker range="vs-2017"
+
 1. Wählen Sie in der obersten Menüleiste **Tests** und anschließend **Code Coverage analysieren**aus.
 
 2. Wählen Sie in Untermenü einen der folgenden Befehle aus:
@@ -327,9 +328,13 @@ Ausführen des Codeabdeckungstools für Testmethoden in einer Projektmappe:
     - Mit**Ausgewählte Tests** werden die im Test-Explorer ausgewählten Testmethoden analysiert.
 
     - Mit**Alle Tests** werden alle Testmethoden in der Projektmappe analysiert.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-* Klicken Sie mit der rechten Maustaste in den Test-Explorer, und wählen Sie **Codeabdeckung für ausgewählte Tests analysieren** aus.
+
+* Klicken Sie mit der rechten Maustaste in den Test-Explorer, und wählen Sie **Code Coverage für ausgewählte Tests analysieren** aus.
+
 ::: moniker-end
 
 Im Fenster **Code Coverage-Ergebnisse** wird der Prozentsatz der durchlaufenen Produktcodeblöcke angezeigt, angeordnet nach Zeile, Funktion, Klasse, Namespace und Modul.
@@ -338,7 +343,7 @@ Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden C
 
 ## <a name="test-shortcuts"></a>Tastenkombinationen für Tests
 
-Tests können im **Test-Explorer** ausgeführt werden, indem Sie mit der rechten Maustaste auf einen Test im Code-Editor und dann auf **Test ausführen** klicken, oder indem Sie die [Standardtastenkombinationen vom Test-Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) in Visual Studio verwenden. Manche dieser Tastenkombinationen sind vom Kontext abhängig. Das heißt, dass sie Tests basierend auf der Position Ihres Cursors im Code ausführen oder debuggen. Wenn Ihr Cursor sich in einer Testmethode befindet, wird diese Testmethode ausgeführt. Wenn Ihr Cursor sich auf der Klassenebene befindet, werden alle Tests in dieser Klasse ausgeführt. Dies gilt ebenfalls für die Namespaceebene.
+Sie können Tests im Test-Explorer ausführen, indem Sie mit der rechten Maustaste auf einen Test im Code-Editor klicken und dann **Test ausführen** auswählen oder indem Sie die standardmäßigen [Test-Explorer-Tastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) in Visual Studio verwenden. Manche dieser Tastenkombinationen sind vom Kontext abhängig. Das heißt, dass sie Tests basierend auf der Position Ihres Cursors im Code ausführen oder debuggen. Wenn Ihr Cursor sich in einer Testmethode befindet, wird diese Testmethode ausgeführt. Wenn Ihr Cursor sich auf der Klassenebene befindet, werden alle Tests in dieser Klasse ausgeführt. Dies gilt ebenfalls für die Namespaceebene.
 
 |Häufig verwendete Befehle| Tastenkombinationen|
 |-|------------------------|

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetBreakFlags | Microsoft-Dokumentation
+title: 'Idebugapplication:: getbreakflags | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 389f50cf6883cd59cd540ef278aa1b4f69a6a629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a614429ebb8cc9271a0444536d14c45b69a9588f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990899"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574971"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-Gibt den aktuellen Break-Flags für die Anwendung zurück.  
+Gibt die aktuellen Fehlerflags für die Anwendung zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>Parameter  
  `pabf`  
- [out] Die aktuelle Break-Flags für die Anwendung.  
+ vorgenommen Die aktuellen Fehlerflags für die Anwendung.  
   
  `pprdatSteppingThread`  
- [out] Der aktuell ausgeführten Thread.  
+ vorgenommen Der aktuell laufende Thread.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,8 +51,8 @@ HRESULT GetBreakFlags(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode gibt die aktuellen Break-Flags für die Anwendung.  
+ Diese Methode gibt die aktuellen Fehlerflags für die Anwendung zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+ [Idebugapplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)    
  [APPBREAKFLAGS-Enumeration](../../winscript/reference/appbreakflags-enumeration.md)

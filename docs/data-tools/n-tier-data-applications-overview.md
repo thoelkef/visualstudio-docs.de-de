@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4c10e3a337b44a4b7c9a1cb59165736bb3e7efb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871526"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648278"
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über n-schichtige Datenanwendungen
 *N-Tier-* Daten Anwendungen sind Daten Anwendungen, die in mehrere *Ebenen*aufgeteilt sind. Sie werden auch "verteilte Anwendungen" oder "Anwendungen mit mehreren Ebenen" genannt, da die Verarbeitung auf voneinander unabhängige, auf Client und Server verteilte Ebenen aufgeteilt wird. Beim Entwickeln einer Anwendung, die auf Daten zugreift, sollten die verschiedenen Ebenen, aus denen die Anwendung besteht, klar getrennt sein.
@@ -31,7 +31,7 @@ Visual Studio enthält zahlreiche Features, die Entwicklern das Erstellen von N-
 
 - Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) stellen Einstellungen bereit, mit denen die DataContext-und Daten Klassen in separaten Namespaces generiert werden. Dies ermöglicht eine logische Trennung von Datenzugriffs- und Datenentitätsebenen.
 
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) stellt die <xref:System.Data.Linq.Table%601.Attach%2A> -Methode bereit, mit der Sie den DataContext aus verschiedenen Ebenen in einer Anwendung zusammenführen können. Weitere Informationen finden Sie unter [N-Tier-und Remote Anwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) stellt die <xref:System.Data.Linq.Table%601.Attach%2A>-Methode bereit, mit der Sie den DataContext aus verschiedenen Ebenen in einer Anwendung zusammenführen können. Weitere Informationen finden Sie unter [N-Tier-und Remote Anwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Präsentationsebene
 Die *Präsentationsebene* ist die Ebene, auf der Benutzer mit einer Anwendung interagieren. Sie enthält oft auch zusätzliche Anwendungslogik. Zu den typischen Komponenten einer Präsentationsebene gehören:
@@ -57,7 +57,7 @@ Die *mittlere Ebene* ist die Ebene, über die Präsentationsebene und Datenebene
 
 In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Features und Technologien und deren mögliche Verwendung in der mittleren Ebene einer N-Tier-Anwendung dargestellt.
 
-![Mittlere Ebene Komponenten](../data-tools/media/ntiermid.png) der mittleren Ebene
+Komponenten der ![Middle Ebene ](../data-tools/media/ntiermid.png) mittlere Ebene
 
 Die mittlere Ebene stellt in der Regel mithilfe einer Datenverbindung eine Verbindung mit der Datenschicht her. Diese Datenverbindung wird üblicherweise in der Datenzugriffskomponente gespeichert.
 
@@ -66,7 +66,7 @@ Die *Datenebene* ist im Grunde der Server, auf dem die Daten einer Anwendung ges
 
 In der folgenden Abbildung werden die in Visual Studio zur Verfügung stehenden Funktionen und Technologien und deren mögliche Verwendung in der Datenebene einer N-Tier-Anwendung dargestellt.
 
-![Datenebene der](../data-tools/media/ntierdatatier.png) Datenebenenkomponenten
+Komponenten der ![Data Ebene ](../data-tools/media/ntierdatatier.png) Datenebene
 
 Vom Client in der Präsentationsebene kann nicht direkt auf die Datenschicht zugegriffen werden. Stattdessen fungiert die mittlere Ebene als Datenzugriffskomponente und dient zur Kommunikation zwischen der Präsentations- und der Datenebene.
 
@@ -75,13 +75,13 @@ In den folgenden Themen finden Sie Informationen über die Arbeit mit N-Tier-Anw
 
 [Gewusst wie: DataSets und TableAdapters in verschiedene Projekte aufteilen](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[Walkthrough: Creating an n-tier data application (Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung)](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
 [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Walkthrough: Creating an n-tier data application (Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung)](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

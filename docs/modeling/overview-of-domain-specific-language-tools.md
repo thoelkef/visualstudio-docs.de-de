@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 899fc041df3f7118de6be97309e8ce971235d178
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814123"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658324"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
-Domain-Specific-Sprachtools (DSL-Tools), die in Visual Studio gehostet werden, können Sie eine domänenspezifische Sprache zu entwerfen, und generieren Sie dann alle Elemente, die Benutzer benötigen, um Modelle zu erstellen, die von der Sprache basieren.
+Mit DSL-Tools (DSL-Tools), die in Visual Studio gehostet werden, können Sie eine domänenspezifische Sprache entwerfen und dann alle Elemente generieren, die Benutzer benötigen, um auf der Sprache basierende Modelle zu erstellen.
 
  Die folgenden Tools gehören zu den DSL-Tools:
 
@@ -48,7 +48,7 @@ Domain-Specific-Sprachtools (DSL-Tools), die in Visual Studio gehostet werden, k
 
   Weitere Informationen finden Sie unter [Choosing a Domain-Specific Language Solution Template (Auswählen einer Projektmappenvorlage für eine domänenspezifische Sprache)](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-  Der Assistent erstellt Visual Studio-Projektmappe, die die folgenden Projekte enthält:
+  Der Assistent erstellt eine Visual Studio-Projekt Mappe mit den folgenden Projekten:
 
 - DSL
 
@@ -56,7 +56,7 @@ Domain-Specific-Sprachtools (DSL-Tools), die in Visual Studio gehostet werden, k
 
 - **DslPackage**
 
-   DslPackage-Projekt wird bestimmt, wie die Language-Tools in Visual Studio integriert werden.
+   Das dslpackage-Projekt bestimmt, wie die Sprach Tools in Visual Studio integriert werden.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>Die grafische Benutzeroberfläche der DSL-Tools
  Sie können die grafische Benutzeroberfläche der DSL-Tools verwenden, um Elemente und Beziehungen zu Ihrer domänenspezifischen Sprache hinzuzufügen. Wenn Sie die Elemente hinzugefügt haben, können Sie deren Darstellung definieren, indem Sie ihnen Formen zuordnen, Farben anpassen und Decorator-Elemente hinzufügen. Sie können die Elemente auch der Toolbox hinzufügen.
@@ -64,15 +64,15 @@ Domain-Specific-Sprachtools (DSL-Tools), die in Visual Studio gehostet werden, k
 ## <a name="validation-in-dsl-tools"></a>Validierung in DSL-Tools
  Die DSL-Tools umfassen eine Validierungsebene, die sicherstellt, dass das Domänenmodell die allgemeinen Anforderungen für die Codegenerierung erfüllt. Wenn Sie Ihre eigene domänenspezifische Sprache erstellen, sollten Sie Ihre eigene Validierung hinzufügen, um die Regeln Ihrer Geschäftslogik auszudrücken. Weitere Informationen zur benutzerdefinierten Validierung finden Sie unter [Validation in a Domain-Specific Language (Validierung in einer domänenspezifischen Sprache)](../modeling/validation-in-a-domain-specific-language.md).
 
- Es wird empfohlen, eigene domänenspezifische Sprachen während des Entwurfvorgangs häufig zu überprüfen. Wenn Ihre domänenspezifische Sprache Validierungsfehler aufweist, können Sie keinen Quellcode erstellen. Sie können anhand der Vorlagen Quellcode erstellen, indem Sie in der Symbolleiste des Projektmappen-Explorers auf **Alle Vorlagen transformieren** klicken. Auch wenn Sie die Sprachdefinition ändern, sollten Sie anschließend immer **alle Vorlagen transformieren**. Weitere Informationen finden Sie unter [Vorgehensweise: Create a Domain-Specific Language Solution (Vorgehensweise: Erstellen einer Projektmappe für die domänenspezifische Sprache)](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Es wird empfohlen, eigene domänenspezifische Sprachen während des Entwurfvorgangs häufig zu überprüfen. Wenn Ihre domänenspezifische Sprache Validierungsfehler aufweist, können Sie keinen Quellcode erstellen. Sie können anhand der Vorlagen Quellcode erstellen, indem Sie in der Symbolleiste des Projektmappen-Explorers auf **Alle Vorlagen transformieren** klicken. Auch wenn Sie die Sprachdefinition ändern, sollten Sie anschließend immer **alle Vorlagen transformieren**. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Anpassen von DSL-Tools
  Sie können zusätzlichen Code zur Verfügung stellen, um das Verhalten des Modells zu verfeinern und Einschränkungen für Ihre Sprache zu definieren. Wenn nötig können Sie auch wichtige Änderungen vornehmen, indem Sie die Textvorlagen ändern.
 
 ## <a name="distributing-your-dsl-solution"></a>Verteilen Ihrer DSL-Projektmappe
- DSL-Tools generiert ein Paket, das gehostet wird, in Visual Studio. Das Paket zeigt eine Toolbox, einen DSL-Explorer und andere Benutzeroberflächenelemente an, über die Benutzer mithilfe Ihrer domänenspezifischen Sprache Modelle erstellen können.
+ DSL-Tools generieren ein Paket, das in Visual Studio gehostet wird. Das Paket zeigt eine Toolbox, einen DSL-Explorer und andere Benutzeroberflächenelemente an, über die Benutzer mithilfe Ihrer domänenspezifischen Sprache Modelle erstellen können.
 
- Wenn Sie erstellen und die Lösung für die DSL-Tools in Visual Studio ausführen, ist eine zweite Instanz von Visual Studio Sie für den Benutzer der Sprache Ihrer Domain-Specific Languge dargestellt. Wenn Sie überprüft haben, dass alles einwandfrei funktioniert, können Sie die `.vsix`-Datei verteilen, die um Buildordner des DslPackage-Projekts enthalten ist. Diese Datei kann verwendet werden, um die DSL als Visual Studio-Erweiterung auf anderen Computern zu installieren.  Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
+ Wenn Sie die DSL-Tools-Projekt Mappe in Visual Studio erstellen und ausführen, wird in einer zweiten Instanz von Visual Studio gezeigt, wie die domänenspezifische Sprache dem Benutzer der Sprache entspricht. Wenn Sie überprüft haben, dass alles einwandfrei funktioniert, können Sie die `.vsix`-Datei verteilen, die um Buildordner des DslPackage-Projekts enthalten ist. Diese Datei kann verwendet werden, um die DSL als Visual Studio-Erweiterung auf anderen Computern zu installieren.  Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Siehe auch
 

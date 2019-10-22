@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete | Microsoft-Dokumentation
+title: 'Idebugasyncoperationcallback:: OnComplete | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15ae57d64d2b1e7be867c20e9683e4aaa415974
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821871"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573230"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
-Signalisiert, dass ein Ergebnis eines asynchronen Debugvorgangs verfügbar ist.  
+Signalisiert, dass ein Ergebnis von einem asynchronen Debugvorgang verfügbar ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -34,7 +34,7 @@ HRESULT onComplete();
 ```  
   
 #### <a name="parameters"></a>Parameter  
- Diese Methode akzeptiert keine Parameter.  
+ Diese Methode nimmt keine Parameter an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -44,8 +44,8 @@ HRESULT onComplete();
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode signalisiert, dass ein Ergebnis verfügbar ist ein `IDebugAsyncOperation` Objekt. Das Ereignis wird im Debuggerthread ausgelöst.  
+ Diese Methode signalisiert, dass ein Ergebnis aus einem `IDebugAsyncOperation`-Objekt verfügbar ist. Das Ereignis wird im Debugger-Thread ausgelöst.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugAsyncOperationCallBack-Schnittstelle](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+ [Idebugasyncoperationcallback-Schnittstelle](../../winscript/reference/idebugasyncoperationcallback-interface.md)    
  [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)

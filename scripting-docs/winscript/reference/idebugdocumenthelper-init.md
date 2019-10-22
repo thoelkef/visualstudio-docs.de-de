@@ -1,5 +1,5 @@
 ---
-title: Idebugdocumenthelper | Microsoft-Dokumentation
+title: 'Idebugdocumenthelper:: init | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e6379052707aa44c0fa52f4cb30db2c4c4fa99
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000990"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576861"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-Die `Init` Methode initialisiert, ein Dokument Debughilfe mit einem Namen und die anfängliche Attribute.  
+Die `Init`-Methode initialisiert ein debugdokumenthilfsprogramm mit einem Namen und anfänglichen Attributen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -40,16 +40,16 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Parameter  
  `pda`  
- [in] Die Debuganwendung, die in diesem Dokument zugeordnet.  
+ in Die Debuganwendung, die diesem Dokument zugeordnet ist.  
   
  `pszShortName`  
- [in] Eine mit Null endende Zeichenfolge, die den kurzen Namen des Dokuments enthält.  
+ in Eine NULL-terminierte Zeichenfolge, die den Kurznamen des Dokuments enthält.  
   
  `pszLongName`  
- [in] Eine mit Null endende Zeichenfolge, die den langen Namen des Dokuments enthält.  
+ in Eine NULL-terminierte Zeichenfolge, die den langen Namen des Dokuments enthält.  
   
  `docAttr`  
- [in] Gibt Text Dokumentattribute.  
+ in Gibt Textdokument Attribute an.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -59,11 +59,11 @@ HRESULT Init(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode initialisiert, ein Dokument Debughilfe mit einem Namen und die anfängliche Attribute.  
+ Diese Methode initialisiert ein debugdokumenthilfsprogramm mit einem Namen und anfänglichen Attributen.  
   
- In diesem Dokument wird nicht angezeigt, in der Struktur bis `IDebugDocumentHelper::Attach` aufgerufen wird.  
+ Dieses Dokument wird erst dann in der Struktur angezeigt, wenn `IDebugDocumentHelper::Attach` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
- [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Idebugdocumenthelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ [Idebugdocumenthelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)    
  [TEXT_DOC_ATTR-Konstanten](../../winscript/reference/text-doc-attr-constants.md)

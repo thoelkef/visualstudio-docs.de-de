@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925400"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648060"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL Klassen mithilfe einer Vererbung für eine einzelne Tabelle (O/R-Designer)
-Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützen die Vererbung einer einzelnen Tabelle, da Sie in der Regel in relationalen Systemen implementiert ist. In dieser exemplarischen Vorgehensweise werden die allgemeinen Schritte beschrieben [, die im Abschnitt Gewusst wie: Konfigurieren Sie die Vererbung mithilfe des O/](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) R-Designer Themas, und stellen Sie echte Daten bereit, um die [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]Verwendung der Vererbung in zu veranschaulichen.
+Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützen die Vererbung einer einzelnen Tabelle, da Sie in der Regel in relationalen Systemen implementiert ist. In dieser exemplarischen Vorgehensweise werden die allgemeinen Schritte beschrieben, die im Thema Gewusst [wie: Konfigurieren der Vererbung mit dem O/R-Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) erläutert werden, und es werden echte Daten bereitgestellt, um die Verwendung der Vererbung in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] zu veranschaulichen
 
 In dieser exemplarischen Vorgehensweise führen Sie die folgenden Aufgaben aus:
 
@@ -38,7 +38,7 @@ In dieser exemplarischen Vorgehensweise führen Sie die folgenden Aufgaben aus:
 - Anzeigen der Daten in einem Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Erstellen einer Tabelle, von der geerbt werden soll
-Um zu sehen, wie die Vererbung funktioniert, `Person` erstellen Sie eine kleine Tabelle, verwenden Sie als Basisklasse, und `Employee` erstellen Sie dann ein Objekt, das von ihr erbt.
+Um zu sehen, wie die Vererbung funktioniert, erstellen Sie eine kleine `Person` Tabelle, verwenden Sie Sie als Basisklasse, und erstellen Sie dann ein `Employee` Objekt, das von ihr erbt.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>So erstellen Sie eine Basistabelle zur Veranschaulichung der Vererbung
 
@@ -52,7 +52,7 @@ Um zu sehen, wie die Vererbung funktioniert, `Person` erstellen Sie eine kleine 
     |Spaltenname|Datentyp|NULL zulassen|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**Typ**|**int**|**True**|
+    |**Type**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
@@ -72,7 +72,7 @@ Um sicherstellen zu können, dass die Vererbung ordnungsgemäß konfiguriert ist
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Typ**|**FirstName**|**LastName**|**Manager**|
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -91,7 +91,7 @@ Nachdem Sie die Tabelle erstellt haben, erstellen Sie ein neues Projekt zur Dars
 
 ### <a name="to-create-the-new-windows-forms-application"></a>So erstellen Sie die neue Windows Forms Anwendung
 
-1. Wählen Sie in Visual Studio im Menü **Datei** die Option **Neues** > **Projekt**aus.
+1. Wählen Sie in Visual Studio im Menü **Datei** die Option **neu**  > **Projekt**aus.
 
 2. Erweitern Sie im linken Bereich entweder **Visual C#**  oder **Visual Basic** , und wählen Sie dann **Windows-Desktop**aus.
 
@@ -188,7 +188,7 @@ Führen Sie die Anwendung aus, und überprüfen Sie, ob alle im Listenfeld angez
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL Klassen (O-R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Vorgehensweise: Generieren Sie das Objektmodell in Visual Basic oderC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Vorgehensweise: Generieren des Objektmodells in Visual Basic oder C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

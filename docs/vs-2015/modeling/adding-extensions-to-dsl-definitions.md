@@ -6,36 +6,36 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 07e133be-92ab-4936-a02b-45d2012bd0a6
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd45a2345e6e5b28b74cb27fac226514c3f92a04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 447001a8aefa22fe15bce9158eddeb0cdb26e4e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159076"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654721"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DSL-Definition-Erweiterung können Sie ein Paket von Erweiterungen für eine domänenspezifische Sprache (DSL) zu erstellen. Die DSL-Erweiterung, die in einem Visual Studio Integration Extension (VSIX) enthalten ist, kann auf dem Computer eines Benutzers auf die gleiche Weise wie eine DSL installiert werden. Die zusätzlichen Funktionen können dynamisch aktiviert und zur Laufzeit deaktiviert werden. DSLs müssen nicht explizit für die Erweiterung vorgesehen werden, und die Erweiterungen können entworfen werden weiter unten oder von Drittanbietern ohne Ändern der erweiterten DSL.  
-  
- Die zusätzlichen Funktionen können Folgendes umfassen:  
-  
-- Eigenschaften für das Modell und die Darstellung von Elementen  
-  
-- Decorators für Formen und Konnektoren  
-  
-- Klassen, Beziehungen, Formen und Konnektoren  
-  
-- Validierungseinschränkungen  
-  
-- Registerkarten und Toolboxelemente  
-  
-  Ein Benutzer eine DSL mit der erweiterten erstellen kann, und Speichern eines Modells, das Instanzen der zusätzlichen Features enthält, und diese können gelesen werden, von anderen Benutzern, die die geeignete Erweiterung installiert haben. Benutzer, die nicht die Erweiterung installiert haben, können nicht die zusätzlichen Funktionen verwenden können, aber zu aktualisieren und Speichern eines Modells, ohne dass Sie die zusätzlichen Funktionen verloren gehen.  
-  
-  Beispielcode und Weitere Informationen zu diesem Feature finden Sie in der [Visual Studio-Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128) Website.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Die DSL-Definitions Erweiterung ermöglicht es Ihnen, ein Paket mit Erweiterungen für eine domänenspezifische Sprache (DSL) zu erstellen. Die DSL-Erweiterung, die in einer Visual Studio-Integrations Erweiterung (VSIX) enthalten ist, kann auf dem Computer eines Benutzers auf die gleiche Weise wie eine DSL installiert werden. Die zusätzlichen Features können zur Laufzeit dynamisch aktiviert und deaktiviert werden. DSLs müssen nicht explizit für Erweiterungen entworfen werden, und Erweiterungen können später oder von Drittanbietern entworfen werden, ohne die erweiterte DSL zu ändern.
+
+ Die zusätzlichen Features können Folgendes umfassen:
+
+- Eigenschaften für Modell-und Präsentationselemente
+
+- Decorators für Formen und Connectors
+
+- Klassen, Beziehungen, Formen und Connectors
+
+- Validierungs Einschränkungen
+
+- Toolbox Elemente und Registerkarten
+
+  Ein Benutzer einer erweiterten DSL kann ein Modell erstellen und speichern, das Instanzen der zusätzlichen Funktionen enthält. Diese können von anderen Benutzern gelesen werden, die die entsprechende Erweiterung installiert haben. Benutzer, die die Erweiterung nicht installiert haben, können die zusätzlichen Features nicht verwenden, aber Sie können ein Modell aktualisieren und speichern, ohne die zusätzlichen Features zu verlieren.
+
+  Beispielcode und weitere Informationen zu diesem Feature finden Sie auf der [Visual Studio-Website zum Visualisieren und modellieren von SDK](http://go.microsoft.com/fwlink/?LinkID=186128) .
+
+## <a name="see-also"></a>Siehe auch
+ [Visual Studio-Visualisierungs-und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

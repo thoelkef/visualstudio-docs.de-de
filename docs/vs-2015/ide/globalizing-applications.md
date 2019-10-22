@@ -10,34 +10,29 @@ helpviewer_keywords:
 - Visual C#, international applications
 ms.assetid: 8e1b9920-e1ac-4691-928e-cd95bfc6550b
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704329"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645598"
 ---
 # <a name="globalizing-applications"></a>Globalisieren von Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Unter „Globalisierung“ versteht man das Entwerfen und Entwickeln eines Softwareprodukts, das in mehreren Kulturen funktionsfähig ist. Dieser Abschnitt gilt für Windows Forms- und Web Forms-Seiten.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Kulturspezifische Klassen für globale Windows Forms und Web Forms](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
- Beschreibt Klassen, die Datumsangaben, Zeit, Zahlen, Währung und andere Informationen gemäß der Kultureinstellung formatieren.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Globalisieren von Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
- Enthält Links zu Hilfeseiten über die Globalisierung von Windows Forms.  
-  
- [Globalisierung und Lokalisierung](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
- Enthält Links zu Hilfeseiten über die Globalisierung von Web Forms-Seiten.  
-  
- [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- Bespricht die wichtigen Konzepte zur Softwareentwicklung mithilfe von Visual Basic und Visual C#für einen internationalen Markt.  
-  
- [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
- Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. Entwurfsprobleme und Terminologie.
+Unter „Globalisierung“ versteht man das Entwerfen und Entwickeln eines Softwareprodukts, das in mehreren Kulturen funktionsfähig ist. Dieser Abschnitt gilt für Windows Forms- und Web Forms-Seiten.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Kulturspezifische Klassen für globale Windows Forms und Web Forms](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md) Erläutert Klassen, die Datumsangaben, Uhrzeiten, Zahlen, Währungen und andere Informationen gemäß der Kultur Einstellung formatieren.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Globalisieren von Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) Enthält Links zu Hilfeseiten über die Globalisierung von Windows Forms.
+
+ [Globalisierung und Lokalisierung](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Enthält Links zu Hilfeseiten über die Globalisierung von Web Forms Seiten.
+
+ [Einführung in internationale Anwendungen basierend auf dem .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Erläutert die wesentlichen Konzepte der Softwareentwicklung für einen internationalen Markt mithilfe von Visual Basic oder C#Visual.
+
+ [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. zu Entwurfsproblemen und Terminologie.

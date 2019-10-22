@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreateSimpleConnectionPoint | Microsoft-Dokumentation
+title: 'Idebughelper:: kreatesimpleconnectionpoint | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f909a63f0f7ba70fca3c5e30e32a2d64c0147e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06324b0d10eb6d0d69b6426276d5df7f382d2abe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979174"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562455"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
-Gibt eine Ereignisschnittstelle, die dient als Wrapper für einen bestimmten `IDispatch` Objekt.  
+Gibt eine Ereignis Schnittstelle zurück, die ein angegebenes `IDispatch` Objekt umschließt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT CreateSimpleConnectionPoint(
   
 #### <a name="parameters"></a>Parameter  
  `pdisp`  
- [in] Die `IDispatch` zu umschließende Objekt.  
+ in Das `IDispatch` zu Umbruch Ende-Objekt.  
   
  `ppscp`  
- [out] Die Schnittstelle, die umschließt `pdisp`.  
+ vorgenommen Die Ereignis Schnittstelle, die `pdisp` umschließt.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,8 +51,8 @@ HRESULT CreateSimpleConnectionPoint(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Gibt eine Ereignisschnittstelle, die dient als Wrapper für die angegebene `IDispatch` (finden Sie unter [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+ Gibt eine Ereignis Schnittstelle zurück, die die angegebene `IDispatch` umschließt (siehe [isimpleconnectionpoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugHelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)   
+ [Idebughelper-Schnittstelle](../../winscript/reference/idebughelper-interface.md)    
  [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Syntaxfehler (JavaScript) | Microsoft-Dokumentation
+title: Syntax Fehler (JavaScript) | Microsoft-Dokumentation
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,21 +14,21 @@ ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39a1d803229dd614d0022ca14eb79b39f27f88b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006443"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575634"
 ---
 # <a name="syntax-error-javascript"></a>Syntaxfehler (JavaScript)
-Sie erstellt haben, eine Anweisung, die eine oder mehrere der Grammatikregeln für verletzt [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Sie haben eine-Anweisung erstellt, die gegen eine oder mehrere der grammatischen Regeln von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verstößt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Überprüfen Sie die Syntax des Programms auf der angegebenen Zeilennummer.  
+- Überprüfen Sie die Syntax des Programms auf der angegeben Zeilennummer.  
   
-- Suchen Sie nach fehlgeleitete runden oder geschweiften Klammern.  
+- Suchen Sie nach falsch geleiteten Klammern oder geschweiften Klammern.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)

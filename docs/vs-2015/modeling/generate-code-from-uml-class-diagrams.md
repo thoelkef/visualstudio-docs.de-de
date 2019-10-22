@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML diagrams, generating code
 ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23cefa3d072c2e582237152bff77a2271046053d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 75120b2f09c2eba3254a1b94e78875d8130c5225
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871828"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666132"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generieren von Code aus UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,9 +88,9 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
 |**So erstellen Sie C# diesen Typ**|**Diesen UML-Typ zeichnen**|**Dieses Stereotyp anwenden**|
 |---------------------------------|----------------------------|-------------------------------|
-|Klasse|Klasse|\<keine > oder<br /><br /> C#-Klasse|
-|Interface|Interface|\<keine > oder<br /><br /> C#-Schnittstelle|
-|Enumeration|Enumeration|\<keine > oder<br /><br /> C#-Enumeration|
+|Klasse|Klasse|\<none > oder<br /><br /> C#-Klasse|
+|Interface|Interface|\<none > oder<br /><br /> C#-Schnittstelle|
+|Enumeration|Enumeration|\<none > oder<br /><br /> C#-Enumeration|
 |delegate|Klasse|C#-Delegat|
 |Struktur|Klasse|C#-Struktur|
 
@@ -105,10 +105,10 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
 3. Erweitern Sie die Eigenschaft **Stereotype** , um die zusätzlichen Eigenschaften anzuzeigen, die Sie festlegen können.
 
-   Die **Beschreibungs** Eigenschaften von Typen, Attributen, Vorgängen und Zuordnungen werden `<summary>` in Kommentare im generierten Code geschrieben. Kommentarelemente, die mit Typen verknüpft sind, werden in `<remarks>`-Kommentare geschrieben.
+   Die **Beschreibungs** Eigenschaften von Typen, Attributen, Vorgängen und Zuordnungen werden in `<summary>` Kommentare im generierten Code geschrieben. Kommentarelemente, die mit Typen verknüpft sind, werden in `<remarks>`-Kommentare geschrieben.
 
 ## <a name="varying-the-generated-code"></a>Variieren des generierten Codes
- Der generierte Code unterscheidet sich je nach den Eigenschaften der einzelnen Typen, Attribute oder Vorgänge. Wenn Sie z. b. die **is Abstract** -Eigenschaft einer Klasse auf true festlegen, wird `abstract` das-Schlüsselwort in der generierten-Klasse angezeigt. Wenn Sie die Multiplizität eines Attributs auf **0..\*** festlegen, wird die generierte Eigenschaft über einen `IEnumerable<>` -Typ verfügen.
+ Der generierte Code unterscheidet sich je nach den Eigenschaften der einzelnen Typen, Attribute oder Vorgänge. Wenn Sie z. b. die **is Abstract** -Eigenschaft einer Klasse auf true festlegen, wird das `abstract`-Schlüsselwort in der generierten-Klasse angezeigt. Wenn Sie die Multiplizität eines Attributs auf **0.. \*** festgelegt haben, **hat die generierte** Eigenschaft einen `IEnumerable<>`-Typ.
 
  Außerdem stellt jedes Stereotyp mehrere zusätzliche Eigenschaften bereit, die Sie festlegen können. Diese Werte werden im C#-Code in geeignete Schlüsselwörter übersetzt. Wenn Sie z. B. die `Is Static`-Eigenschaft für eine Klasse festlegen, ist die C#-Klasse `static`.
 
@@ -156,7 +156,7 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
 3. Wählen Sie **Hinzufügen** aus, um eine neue Textvorlagen Bindung zu erstellen.
 
-    \- oder –
+    \- oder -
 
     Klicken Sie auf eine vorhandene Bindung, um sie zu bearbeiten.
 
@@ -166,11 +166,11 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Beschreibung**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        Name        |                                                                                                                                                                                                                                                  Ein Name für diese Bindung. Um eine von einem enthaltenden Paket oder Modell geerbte Bindung zu überschreiben, verwenden Sie den gleichen Namen wie die Bindung, die Sie überschreiben möchten.                                                                                                                                                                                                                                                  |
+   |        -Name        |                                                                                                                                                                                                                                                  Ein Name für diese Bindung. Um eine von einem enthaltenden Paket oder Modell geerbte Bindung zu überschreiben, verwenden Sie den gleichen Namen wie die Bindung, die Sie überschreiben möchten.                                                                                                                                                                                                                                                  |
    |     Overwrite      |                                                                                                                                                                                                                                                                                                      Bei "true" wird jeder vorhandener Code überschrieben.                                                                                                                                                                                                                                                                                                       |
-   |    Target Name     | Der Name der generierten Datei.<br /><br /> Sie können Ausdrücke in diese Zeichenfolge einfügen, `{Name}` z `{Owner.Name}`. b. oder. Sie könnten z. b. Folgendes `{Owner.Name}_{Name}`schreiben:. Der Ausdruck wird für das Modellelement ausgewertet. Eigenschaften von Elementen, jedoch keine Methoden können verwendet werden. Informationen zu den Eigenschaften, die verwendet werden können, finden Sie in den Eigenschaften der Typen in **Microsoft. VisualStudio\*. Uml.** . \*\*Wichtig:\* \* oderkann`{Owner.Name}` nur in der Eigenschaft Zielname verwendet werden. `{Name}` Um den Namen der generierten Klasse zu ändern, müssen Sie die Vorlage ändern. Weitere Informationen finden Sie unter [Schreiben einer Text Vorlage](#writing). |
+   |    Target Name     | Der Name der generierten Datei.<br /><br /> Sie können Ausdrücke in diese Zeichenfolge einfügen, z. b. `{Name}` oder `{Owner.Name}`. Sie könnten z. b. Folgendes schreiben: `{Owner.Name}_{Name}`. Der Ausdruck wird für das Modellelement ausgewertet. Eigenschaften von Elementen, jedoch keine Methoden können verwendet werden. Wenn Sie ermitteln möchten, welche Eigenschaften verwendet werden können, sehen Sie sich die Eigenschaften der Typen in **Microsoft. VisualStudio. Uml. \*** an. \* \*Important: \* \* `{Name}` oder `{Owner.Name}` können nur in der Eigenschaft " **Zielname** " verwendet werden. Um den Namen der generierten Klasse zu ändern, müssen Sie die Vorlage ändern. Weitere Informationen finden Sie unter [Schreiben einer Text Vorlage](#writing). |
    |    Project Path    |                                                                      Gibt den Pfad zum [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt an, das die Ausgabedateien der Transformation enthält. Verwenden Sie typisierte Werte, um ein neues Projekt zu erstellen. Wählen Sie die Schaltfläche mit den Auslassungs Punkten ( **[...]** ), um ein vorhandenes Projekt auszuwählen.<br /><br /> Falls noch nicht vorhanden, wird ein neues Projekt erstellt. Es ist ein C#-Klassenbibliotheksprojekt.<br /><br /> Hierzu müssen Sie das Projekt direkt eingeben. Sie können Umgebungsvariablenmakros wie %ProgramFiles% oder %LocalAppData% einschließen.                                                                       |
-   |  Target Directory  |                                                                                          Der Ordner, in dem die Zieldatei generiert wird. Der Pfad ist relativ zum Projektordner.<br /><br /> Sie können mithilfe des `{PackageStructure}`-Ausdrucks einen Pfad einfügen, der den Namen der enthaltenden Pakete entspricht. Der Standardwert ist `\GeneratedCode\{PackageStructure}`. Sie können auch Umgebungsvariablen wie %TEMP% oder %HomePath% einschließen. **Wichtig:** `{PackageStructure}` kann nur in der **Zielverzeichnis** Eigenschaft verwendet werden.                                                                                          |
+   |  Target Directory  |                                                                                          Der Ordner, in dem die Zieldatei generiert wird. Der Pfad ist relativ zum Projektordner.<br /><br /> Sie können mithilfe des `{PackageStructure}`-Ausdrucks einen Pfad einfügen, der den Namen der enthaltenden Pakete entspricht. Der Standardwert ist `\GeneratedCode\{PackageStructure}`sein. Sie können auch Umgebungsvariablen wie %TEMP% oder %HomePath% einschließen. **Wichtig:** `{PackageStructure}` können nur in der **Zielverzeichnis** Eigenschaft verwendet werden.                                                                                          |
    | Vorlagendatei-Pfad |                                                                                                                                                           Die Vorlage, mit der die Transformation ausgeführt wird.<br /><br /> Sie können entweder die bereitgestellten Vorlagen verwenden oder eigene erstellen. Sie finden die bereitgestellten Vorlagen am folgenden Speicherort:<br /><br /> …\Programme\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
 5. Sie können einem Element beliebig viele Bindungen anfügen.
@@ -188,7 +188,7 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
 - Sie müssen die UML-API verwenden, um im Programmcode im Modell zu navigieren. Weitere Informationen finden Sie unter [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md) und in der [API-Referenz für UML-Modellierungs Erweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
-  Um die Vorlagen mit dem Befehl **Code generieren** verwenden zu können, müssen Sie die Modeling-Direktive einschließen. Zum Beispiel:
+  Um die Vorlagen mit dem Befehl **Code generieren** verwenden zu können, müssen Sie die Modeling-Direktive einschließen. Beispiel:
 
   `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`
 
@@ -196,11 +196,11 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
   In der Vorlage gehört `this` zu einer temporären Klasse, die über die folgenden Eigenschaften verfügt:
 
-- `Element`= das UML- [IElement](/previous-versions/dd516035(v=vs.140)) , auf das die Vorlage angewendet wird.
+- `Element` = das UML- [IElement](/previous-versions/dd516035(v=vs.140)) , auf das die Vorlage angewendet wird.
 
 - `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>
 
-- `Host`: [Itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
+- `Host`: [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 - `ModelBus`: [ModelBus](/previous-versions/ee904639(v=vs.140)). Weitere Informationen finden Sie unter [integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
@@ -210,7 +210,7 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
 - `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.
 
-- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Dies ist der Visualisierungs- und Modellierungs-SDK-Speicher, für den der UML-Modellspeicher implementiert wird. Verwenden`this.Element.GetModelStore()`Sie zum Abrufen des UML- [imodelstores](/previous-versions/ee789385(v=vs.140)).
+- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Dies ist der Visualisierungs- und Modellierungs-SDK-Speicher, für den der UML-Modellspeicher implementiert wird. Verwenden Sie `this.Element.GetModelStore()`, um den UML- [IModelStore](/previous-versions/ee789385(v=vs.140))zu erhalten.
 
   Die folgenden Punkte können beim Schreiben der Textvorlage hilfreich sein. Diese Informationen werden ausführlich unter [Code Generierung und T4-Text Vorlagen](../modeling/code-generation-and-t4-text-templates.md)beschrieben.
 
@@ -218,11 +218,11 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
 - Die Vorlage verweist automatisch auf einige Assemblys. Diese Assemblys schließen z. B. "System.dll" und "Microsoft.VisualStudio.Uml.Interfaces.dll" ein.
 
-   Für die Verwendung anderer Assemblys im generierenden Programmcode müssen Sie eine `Assembly`-Direktive verwenden. Zum Beispiel:
+   Für die Verwendung anderer Assemblys im generierenden Programmcode müssen Sie eine `Assembly`-Direktive verwenden. Beispiel:
 
    `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`
 
-- Einige Namespaces wie `System` werden automatisch in den Programmcode importiert. Für andere Namespaces können Sie die `Import`-Anweisung auf die gleiche Weise verwenden wie eine `using`-Anweisung. Zum Beispiel:
+- Einige Namespaces wie `System` werden automatisch in den Programmcode importiert. Für andere Namespaces können Sie die `Import`-Anweisung auf die gleiche Weise verwenden wie eine `using`-Anweisung. Beispiel:
 
    `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`
 
@@ -230,9 +230,9 @@ Um Visual C# .NET-Code aus UML-Klassendiagrammen in Visual Studio zu generieren,
 
 - Verwenden Sie die `Include`-Direktive, um auf den Text einer anderen Datei zu verweisen.
 
-- Die Teile der in eckige Klammern `<# ... #>` eingeschlossenen Vorlage werden vom Befehl **Code generieren** ausgeführt. Teile der Vorlage außerhalb dieser Klammern werden in die Ergebnisdatei kopiert. Es ist wichtig, zwischen dem generierenden Code und dem generierten Text zu unterscheiden. Der generierte Text kann jeder Sprache aufweisen.
+- Die Teile der in eckige Klammern eingeschlossenen Vorlage `<# ... #>` durch den Befehl **Code generieren** ausgeführt werden. Teile der Vorlage außerhalb dieser Klammern werden in die Ergebnisdatei kopiert. Es ist wichtig, zwischen dem generierenden Code und dem generierten Text zu unterscheiden. Der generierte Text kann jeder Sprache aufweisen.
 
 - `<#= Expressions #>` werden ausgewertet und in Zeichenfolgen konvertiert.
 
 ## <a name="see-also"></a>Siehe auch
- [UML-Klassendiagramme: ](../modeling/uml-class-diagrams-reference.md) Verweis[auf UML-Klassendiagramme: Richt](../modeling/uml-class-diagrams-guidelines.md) Linien [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md)
+ [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md) für [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md) [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md)

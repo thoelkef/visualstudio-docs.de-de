@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetResult | Microsoft-Dokumentation
+title: 'Idebugasyncoperation:: GetResult | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49cf761c85fce3f8fc2f6705d114ab042e0c2ecd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55c51649a5bc3094dd306166e013a892ce67e236
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822044"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573282"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
-Stellt den Rückgabewert und ein Rückgabeobjekt-Parameter aus der synchronen Debugvorgang.  
+Stellt den Rückgabewert und den Rückgabe Objekt Parameter aus dem synchronen Debugvorgang bereit.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>Parameter  
  `phrResult`  
- [out] Wenn der Vorgang abgeschlossen ist, ist `phrResult` ist der Rückgabewert von `IDebugSyncOperation::Execute`.  
+ vorgenommen Wenn der Vorgang beendet ist, ist `phrResult` der Rückgabewert von `IDebugSyncOperation::Execute`.  
   
  `ppunkResult`  
- [out] Wenn der Vorgang abgeschlossen ist, ist `ppunkResult` ist der Objektparameter, die vom Vorgang zurückgegeben wird.  
+ vorgenommen Wenn der Vorgang beendet ist, ist `ppunkResult` der vom Vorgang zurückgegebene Objekt Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -52,8 +52,8 @@ HRESULT GetResult(
 |`E_PENDING`|Der Vorgang wurde nicht abgeschlossen.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn der Vorgang abgeschlossen ist, gibt diese Methode die `HRESULT` und-Objektparameter aus `IDebugSyncOperation::Execute`.  
+ Wenn der Vorgang abgeschlossen wurde, gibt diese Methode den `HRESULT`-und den Object-Parameter von `IDebugSyncOperation::Execute` zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDebugAsyncOperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)   
+ [Idebugasyncoperation-Schnittstelle](../../winscript/reference/idebugasyncoperation-interface.md)    
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

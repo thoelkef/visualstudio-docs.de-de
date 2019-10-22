@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Microsoft-Dokumentation
+title: 'Idebugstackframesnifferex:: enumstackframesex | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8969c279e4eb2c2966e297317a25a60f12be68a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a4062e7c0a9b3a82578daffa2ab7ef7e9ba614d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005718"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576711"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-Gibt einen Enumerator der Stapelrahmen des aktuellen Threads.  
+Gibt einen Enumerator von Stapel Rahmen für den aktuellen Thread zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -38,10 +38,10 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Parameter  
  `dwSpMin`  
- [in] Die untere Grenze von Adresse für die Auflistung von Stapelrahmen.  
+ in Das untere Adress Limit für das Auflisten von Stapel Rahmen.  
   
  `ppedsf`  
- [out] Der Enumerator von Stapelrahmen des aktuellen Threads.  
+ vorgenommen Enumerator von Stapel Rahmen für den aktuellen Thread.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -51,7 +51,7 @@ HRESULT EnumStackFramesEx(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die Stack-Frame-Enumerator gibt die Frames, die beginnend ab des Anfang des Stapels, mit dem zuletzt abgelegte Frame zurück. Der Enumerator enthält nur Stapelrahmen mit Adressen, die größer als oder gleich `dwSpMin`.  
+ Der Stapel Rahmen-Enumerator gibt die Frames beginnend am oberen Rand des Stapels mit dem zuletzt über drückten Rahmen zurück. Der Enumerator enthält nur Stapel Rahmen mit Adressen, die größer oder gleich `dwSpMin` sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrameSnifferEx-Schnittstelle](../../winscript/reference/idebugstackframesnifferex-interface.md)

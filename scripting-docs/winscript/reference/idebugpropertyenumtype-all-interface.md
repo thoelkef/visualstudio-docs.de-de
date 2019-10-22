@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979109"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574317"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>IDebugPropertyEnumType_All-Schnittstelle
-Die `IDebugPropertyEnumType` Schnittstellen definiert wurden, sodass jeder, der die IIDs als Filter, um übergeben werden kann `IDebugProperty::EnumMembers` beim Anfordern des entsprechenden Enumerators.  
+# <a name="idebugpropertyenumtype_all-interface"></a>IDebugPropertyEnumType_All-Schnittstelle
+Die `IDebugPropertyEnumType`-Schnittstellen sind so definiert, dass jede Ihrer IIDs als Filter an `IDebugProperty::EnumMembers` als Filter an übermittelt werden kann, während der entsprechende Enumerator angefordert wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,9 +37,9 @@ IDebugPropertyEnumType_All : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Gibt eine Zeichenfolge, die den Namen beschreibt.|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Gibt eine Text Zeichenfolge zurück, die den Namen beschreibt|  
   
- Die folgenden Schnittstellen erben `IDebugPropertyEnumType_All`, und verfügen über keine zusätzlichen Methoden.  
+ Die folgenden Schnittstellen erben von `IDebugPropertyEnumType_All` und verfügen über keine zusätzlichen Methoden.  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   

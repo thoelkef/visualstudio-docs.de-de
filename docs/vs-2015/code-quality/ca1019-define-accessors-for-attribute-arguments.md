@@ -1,5 +1,5 @@
 ---
-title: 'CA1019: Accessors für Attributargumente definieren | Microsoft-Dokumentation'
+title: 'CA1019: Accessoren für Attribut Argumente definieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,63 +12,63 @@ helpviewer_keywords:
 - DefineAccessorsForAttributeArguments
 ms.assetid: 197f2378-3c43-427e-80de-9ec25006c05c
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 01d4b421f196eec7401f12ca8eeb7a52b2396065
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4e77f3a4eec7495e6b4abe13bec93d341f961463
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704201"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662014"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Accessoren für Attributargumente definieren.
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Accessors für Attributargumente definieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- In seinem Konstruktor definiert ein Attribut Argumente, die nicht über die entsprechende Eigenschaften verfügen.
+ Im Konstruktor definiert ein Attribut Argumente, die keine entsprechenden Eigenschaften haben.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Attribute können obligatorische Argumente definieren, die angegeben werden müssen, wenn das Attribut auf ein Ziel angewendet wird. Diese Argumente werden auch als positionelle Argumente bezeichnet, da sie bei Attributkonstruktoren als positionelle Parameter angegeben werden. Für jedes obligatorische Argument muss das Attribut außerdem eine entsprechende schreibgeschützte Eigenschaft enthalten, damit der Wert des Arguments zur Ausführungszeit abgerufen werden kann. Diese Regel überprüft, dass für jeden Konstruktorparameter, Sie die entsprechende Eigenschaft definiert haben.
+ Attribute können obligatorische Argumente definieren, die angegeben werden müssen, wenn das Attribut auf ein Ziel angewendet wird. Diese Argumente werden auch als positionelle Argumente bezeichnet, da sie bei Attributkonstruktoren als positionelle Parameter angegeben werden. Für jedes obligatorische Argument muss das Attribut außerdem eine entsprechende schreibgeschützte Eigenschaft enthalten, damit der Wert des Arguments zur Ausführungszeit abgerufen werden kann. Diese Regel überprüft, ob Sie die entsprechende Eigenschaft für jeden Konstruktorparameter definiert haben.
 
  Attribute können auch optionale Argumente definieren, die auch als benannte Argumente bezeichnet werden. Diese Argumente werden bei Attributkonstruktoren über ihren Namen angegeben und sollten über eine entsprechende Lese-Schreib-Eigenschaft verfügen.
 
- Der gleiche name jedoch unterschiedlichen Groß-/Kleinschreibung, für obligatorischen und optionalen Argumenten, die entsprechenden Eigenschaften und Konstruktorparameter verwendet werden soll. Verwenden der Pascal-Schreibweise Eigenschaften Groß-/Kleinschreibung und Parameter Kamel-Schreibweise verwendet.
+ Bei obligatorischen und optionalen Argumenten sollten die entsprechenden Eigenschaften und Konstruktorparameter denselben Namen, aber eine unterschiedliche groß-und Kleinschreibung verwenden. Eigenschaften verwenden die Pascal-Schreibweise, und Parameter verwenden Kamel Schreibweise.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie eine nur-Lese Eigenschaft für jeden Konstruktorparameter, die nicht vorhanden ist.
+ Um einen Verstoß gegen diese Regel zu beheben, fügen Sie eine schreibgeschützte Eigenschaft für jeden Konstruktorparameter hinzu, der nicht über einen verfügt.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie eine Warnung dieser Regel, wenn Sie nicht, dass der Wert, der das erforderliche Argument abgerufen werden möchten.
+ Unterdrücken Sie eine Warnung aus dieser Regel, wenn Sie nicht möchten, dass der Wert des obligatorischen Arguments abgerufen werden kann.
 
 ## <a name="custom-attributes-example"></a>Beispiel für benutzerdefinierte Attribute
 
 ### <a name="description"></a>Beschreibung
- Das folgende Beispiel zeigt zwei Attribute, die einen obligatorischen Parameter für die (mit Feldern fester Breite) zu definieren. Die erste Implementierung des Attributs ist nicht ordnungsgemäß definiert. Die zweite Implementierung ist richtig.
+ Das folgende Beispiel zeigt zwei Attribute, die einen obligatorischen (positionellen) Parameter definieren. Die erste Implementierung des-Attributs ist falsch definiert. Die zweite Implementierung ist richtig.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Design.AttributeAccessors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessors/cs/FxCop.Design.AttributeAccessors.cs#1)]
  [!code-vb[FxCop.Design.AttributeAccessors#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessors/vb/FxCop.Design.AttributeAccessors.vb#1)]
 
-## <a name="positional-and-named-arguments"></a>Positionelle und benannte Argumente
+## <a name="positional-and-named-arguments"></a>Positions-und benannte Argumente
 
 ### <a name="description"></a>Beschreibung
- Positionelle und benannte Argumente stellen für Consumer Ihrer Bibliothek gelöscht wird, welche Argumente sind für das Attribut obligatorisch und welche Argumente sind optional.
+ Positions-und benannte Argumente machen es für Consumer Ihrer Bibliothek klar, welche Argumente für das Attribut obligatorisch sind und welche Argumente optional sind.
 
- Das folgende Beispiel zeigt eine Implementierung der ein Attribut mit benannten und Positionsargumenten.
+ Das folgende Beispiel zeigt eine Implementierung eines Attributs, das sowohl positionelle als auch benannte Argumente hat.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamed/cs/FxCop.Design.AttributeAccessorsNamed.cs#1)]
 
 ### <a name="comments"></a>Kommentare
- Das folgende Beispiel zeigt, wie Sie das benutzerdefinierte Attribut auf zwei Eigenschaften anwenden.
+ Im folgenden Beispiel wird gezeigt, wie Sie das benutzerdefinierte Attribut auf zwei Eigenschaften anwenden.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]

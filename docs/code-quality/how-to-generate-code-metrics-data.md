@@ -6,25 +6,25 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe82fc213937b7e494afd27bfd964347c17e2b8
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179978"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649408"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Vorgehensweise: Generieren von Codemetrikdaten
+# <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
 Sie können Codemetrikdaten auf drei Arten generieren:
 
 - Durch Installieren von [FxCop-Analyzern](#fxcop-analyzers-code-metrics-rules) und Aktivieren der vier Code metrikregeln (Wartbarkeit), die Sie enthält.
 
-- Durch Auswählen des [ > Menübefehls**Code Metrik berechnen** ](#calculate-code-metrics-menu-command) in Visual Studio.
+- Indem Sie den Menübefehl [ > **Code Metrik** **analysieren** ](#calculate-code-metrics-menu-command) in Visual Studio auswählen.
 
 - In der [Befehlszeile](#command-line-code-metrics) für C# -und-Visual Basic Projekte.
 
@@ -72,13 +72,13 @@ Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln im 
 
 ## <a name="calculate-code-metrics-menu-command"></a>Menübefehl "Code Metrik berechnen"
 
-Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE, indem Sie das Menü**Code Metrik** **analysieren** > verwenden.
+Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE mithilfe des Menüs **analysieren**  > **Code Metriken** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generieren von Codemetrikergebnissen für eine gesamte Projekt Mappe
 
 Sie können Code Metrikergebnisse für eine gesamte Lösung auf eine der folgenden Arten generieren:
 
-- Wählen Sie in der Menüleiste **Analyse** > **Code Metrik** > **für**Projekt Mappe berechnen aus.
+- Wählen Sie in der Menüleiste **analysieren** aus,  >   > **für die Lösung** **Code Metriken berechnen** .
 
 - Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Lösung, und wählen Sie dann **Codemetriken berechnen**aus.
 
@@ -90,7 +90,7 @@ Die Ergebnisse werden generiert, und das Fenster **Code Metrikergebnisse** wird 
 
 1. Wählen Sie in **Projektmappen-Explorer**mindestens ein Projekt aus.
 
-1.  > Wählen Sie in der Menüleiste die Option**Code Metrik** > **für ausgewählte Projekte**berechnen aus.
+1. Wählen Sie in der Menüleiste **analysieren** aus,  >   > **Metrik Code Metrik** **für ausgewählte Projekte**berechnen.
 
 Die Ergebnisse werden generiert, und das Fenster **Code Metrikergebnisse** wird angezeigt. Um die Ergebnis Details anzuzeigen, erweitern Sie die Struktur in der **Hierarchie**.
 
@@ -111,7 +111,7 @@ Sie können Codemetrikdaten über die Befehlszeile für C# und Visual Basic Proj
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft. Code Analysis. Metrics-nuget-Paket
 
-Die einfachste Möglichkeit zum Generieren von Codemetrikdaten über die Befehlszeile besteht darin, das nuget-Paket [Microsoft. Code Analysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) zu installieren. Nachdem Sie das Paket installiert haben, führen `msbuild /t:Metrics` Sie aus dem Verzeichnis aus, das die Projektdatei enthält. Beispiel:
+Die einfachste Möglichkeit zum Generieren von Codemetrikdaten über die Befehlszeile besteht darin, das nuget-Paket [Microsoft. Code Analysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) zu installieren. Nachdem Sie das Paket installiert haben, führen Sie `msbuild /t:Metrics` aus dem Verzeichnis aus, das die Projektdatei enthält. Beispiel:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Sie können den Namen der Ausgabedatei überschreiben `/p:MetricsOutputFile=<filename>`, indem Sie angeben. Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, `/p:LEGACY_CODE_METRICS_MODE=true`indem Sie angeben. Beispiel:
+Sie können den Namen der Ausgabedatei überschreiben, indem Sie `/p:MetricsOutputFile=<filename>` angeben. Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, indem Sie `/p:LEGACY_CODE_METRICS_MODE=true` angeben. Beispiel:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -219,7 +219,7 @@ Wenn Sie das nuget-Paket nicht installieren möchten, können Sie die ausführba
 
 1. Klonen Sie das Repository [dotnet/Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers) .
 2. Öffnen Sie Developer-Eingabeaufforderung für Visual Studio als Administrator.
-3. Führen Sie im Stamm **Verzeichnis des Roslyn-Analyzers-** Repository den folgenden Befehl aus:`Restore.cmd`
+3. Führen Sie im Stamm **Verzeichnis des Roslyn-Analyzers-** Repository den folgenden Befehl aus: `Restore.cmd`
 4. Wechseln Sie in das Verzeichnis *src\tools*.
 5. Führen Sie den folgenden Befehl aus, um das Projekt " **Metrics. csproj** " zu erstellen:
 
@@ -261,9 +261,9 @@ Das neue befehlszeilencodemetrik-Tool berechnet Metriken, auch wenn Quell Code F
 
 Die `LinesOfCode` Metrik ist im neuen befehlszeilencodemetriktool präziser und zuverlässiger. Es ist unabhängig von CodeGen-unterschieden und ändert sich nicht, wenn sich das Toolset oder die Laufzeit ändert. Das neue Tool zählt tatsächliche Codezeilen, einschließlich leerer Zeilen und Kommentare.
 
-Andere Metriken wie `CyclomaticComplexity` und `MaintainabilityIndex` verwenden dieselben Formeln wie frühere Versionen von *Metrics. exe*, aber das neue Tool zählt die Anzahl der `IOperations` (logischen Quell Anweisungen) anstelle von Intermediate Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig von den Werten, die von der Visual Studio-IDE und früheren Versionen von " *Metrics. exe*" generiert werden.
+Bei anderen Metriken, z. b. `CyclomaticComplexity` und `MaintainabilityIndex`, werden dieselben Formeln wie in früheren Versionen von " *Metrics. exe*" verwendet, aber das neue Tool zählt die Anzahl der `IOperations` (logische Quell Anweisungen) anstelle von Intermediate Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig von den Werten, die von der Visual Studio-IDE und früheren Versionen von " *Metrics. exe*" generiert werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden Sie das Fenster Codemetrikergebnisse](../code-quality/working-with-code-metrics-data.md)
+- [Verwenden des Fensters "Code Metrikergebnisse"](../code-quality/working-with-code-metrics-data.md)
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)

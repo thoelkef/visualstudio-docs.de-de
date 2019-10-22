@@ -1,5 +1,5 @@
 ---
-title: 'CA2136: Member dürfen keine in Konflikt stehenden transparenzanmerkungen aufweisen | Microsoft-Dokumentation'
+title: 'CA2136: Elemente sollten keine Konflikt verursachenden Transparenz Anmerkungen aufweisen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,39 +13,39 @@ helpviewer_keywords:
 - CA2127
 ms.assetid: ff5a1d18-7c52-4da5-8990-60be83a8ea81
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b18ee5c048b0214779cdbe2635f5b7a14db8c28e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2fbb856ff53552ab99dabd4f650e9fd7f62a088
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154310"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602970"
 ---
-# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Member dürfen keine miteinander in Konflikt stehenden Transparenzanmerkungen aufweisen.
+# <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Member dürfen keine miteinander in Konflikt stehenden Transparenzanmerkungen aufweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
-|TypeName|TransparencyAnnotationsShouldNotConflict|
+|TypeName|Transparendcynotationsschuldnotconflict|
 |CheckId|CA2136|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Diese Regel wird ausgelöst, wenn Sie ein Typmember mit markiert ist eine <xref:System.Security> Security-Attribut, das eine andere als das Sicherheitsattribut eines Containers von der Members Transparenz.
+ Diese Regel wird ausgelöst, wenn ein Typmember mit einem <xref:System.Security> Sicherheits Attribut markiert ist, das eine andere Transparenz aufweist als das Sicherheits Attribut eines Containers des Members.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Transparenzattribute werden von größeren Codeelementen bis hin zu kleineren Elementen übernommen. Die Transparenzattribute von Codeelementen mit größerem Umfang haben Vorrang vor Transparenzattributen von Codeelementen, die im ersten Element enthalten sind. Z. B. eine Klasse, die mit der <xref:System.Security.SecurityCriticalAttribute> -Attribut kann keine Methode, die mit markierten enthalten die <xref:System.Security.SecuritySafeCriticalAttribute> Attribut.
+ Transparenzattribute werden von größeren Codeelementen bis hin zu kleineren Elementen übernommen. Die Transparenzattribute von Codeelementen mit größerem Umfang haben Vorrang vor Transparenzattributen von Codeelementen, die im ersten Element enthalten sind. Eine-Klasse, die mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut markiert ist, kann z. b. keine Methode enthalten, die mit dem <xref:System.Security.SecuritySafeCriticalAttribute>-Attribut markiert ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um diese Verletzung zu beheben, entfernen Sie das Sicherheitsattribut aus dem Codeelement, das niedrigeren Bereich aufweist, oder ändern Sie das Attribut, damit das enthaltende Codeelement identisch sein.
+ Um diese Verletzung zu beheben, entfernen Sie das Sicherheits Attribut aus dem Code Element, das einen niedrigeren Gültigkeitsbereich aufweist, oder ändern Sie das zugehörige Attribut, sodass es mit dem enthaltenden Code Element identisch ist.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Unterdrücken Sie keine Warnungen, die von dieser Regel.
+ Warnungen von dieser Regel nicht unterdrücken.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel ist eine Methode mit markiert die <xref:System.Security.SecuritySafeCriticalAttribute> -Attribut, und es ist ein Member einer Klasse, die mit der <xref:System.Security.SecurityCriticalAttribute> Attribut. Das sichere Attribut sollte entfernt werden.
+ Im folgenden Beispiel wird eine Methode mit dem <xref:System.Security.SecuritySafeCriticalAttribute>-Attribut markiert, und Sie ist ein Member einer Klasse, die mit dem <xref:System.Security.SecurityCriticalAttribute>-Attribut markiert ist. Das Sicherheits sichere Attribut sollte entfernt werden.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2136.transparencyannotationsshouldnotconflict/cs/ca2136 - transparencyannotationsshouldnotconflict.cs#1)]

@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetDescription | Microsoft-Dokumentation
+title: 'Idisperror:: GetDescription | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5505113ee650c6618be5a95bc77244daf90cfcb7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8d1bb1c3516c2601707e1a0bcd69f4f8409514fe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446949"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573145"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
-Gibt eine textbeschreibung des Fehlers zurück.  
+Gibt eine Textbeschreibung des Fehlers zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT GetDescription(
   
 #### <a name="parameters"></a>Parameter  
  `pbstrDescription`  
- [out] Eine Zeichenfolge, die eine kurze Beschreibung des Fehlers enthält.  
+ vorgenommen Eine Zeichenfolge, die eine kurze Beschreibung des Fehlers enthält.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,11 +47,11 @@ HRESULT GetDescription(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Der Text wird zurückgegeben, in der Sprache, die gemäß des Gebietsschemabezeichner (LCID), der an übergebene `IDispatchEx::InvokeEx` für die Methode, die den Fehler aufgetreten ist.  
+ Der Text wird in der durch den Gebiets Schema Bezeichner (LCID) angegebenen Sprache zurückgegeben, der für die Methode, die den Fehler gefunden hat, an `IDispatchEx::InvokeEx` übermittelt wurde.  
   
 > [!NOTE]
 > Diese Methode ist nicht implementiert.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IDispError-Schnittstelle](../../winscript/reference/idisperror-interface.md)   
+ [Idisperror-Schnittstelle](../../winscript/reference/idisperror-interface.md)    
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

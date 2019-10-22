@@ -12,48 +12,48 @@ helpviewer_keywords:
 - MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a8b7cea6ea74b336c862cfe44f90e3e1ec54b2c2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 404ef250726d12300e2b72150ff42b4f0b7bfb24
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704227"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662052"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Attribute mit AttributeUsageAttribute markieren.
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Attribute mit AttributeUsageAttribute markieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|Kategorie|Microsoft.Design|
+|Kategorie|Microsoft. Design|
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Die <xref:System.AttributeUsageAttribute?displayProperty=fullName> Attribut ist nicht vorhanden ist, auf das benutzerdefinierte Attribut.
+ Das <xref:System.AttributeUsageAttribute?displayProperty=fullName>-Attribut ist für das benutzerdefinierte Attribut nicht vorhanden.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn Sie ein benutzerdefiniertes Attribut definieren, markieren Sie es mithilfe von <xref:System.AttributeUsageAttribute> , um anzugeben, im Quellcode das benutzerdefinierte Attribut angewendet werden kann. Die Bedeutung und die beabsichtigte Verwendung eines Attributs bestimmen die gültigen Positionen des Attributs im Code. Sie können z. B. ein Attribut definieren, die die Person, die angibt, wer ist verantwortlich für die Wartung und Verbesserung jedes Typs in einer Bibliothek und Verantwortung wird immer auf Typebene zugewiesen. In diesem Fall Compiler sollten das Attribut auf Klassen, Enumerationen und Schnittstellen aktivieren, jedoch sollten sie nicht auf Methoden, Ereignisse oder Eigenschaften aktivieren. Organisatorischen Richtlinien und Verfahren würden Sie bestimmen, ob das Attribut für Assemblys aktiviert werden soll.
+ Wenn Sie ein benutzerdefiniertes Attribut definieren, markieren Sie es, indem Sie <xref:System.AttributeUsageAttribute> verwenden, um anzugeben, an welcher Stelle im Quellcode das benutzerdefinierte Attribut angewendet werden kann. Die Bedeutung und die beabsichtigte Verwendung eines Attributs bestimmen die gültigen Positionen des Attributs im Code. Beispielsweise können Sie ein Attribut definieren, mit dem die Person identifiziert wird, die für die Verwaltung und Erweiterung der einzelnen Typen in einer Bibliothek zuständig ist, und dass die Verantwortlichkeit immer auf der Typebene zugewiesen wird. In diesem Fall sollten Compiler das-Attribut für Klassen, Enumerationen und Schnittstellen aktivieren, diese aber nicht für Methoden, Ereignisse oder Eigenschaften aktivieren. Organisations Richtlinien und-Prozeduren würden vorschreiben, ob das Attribut für Assemblys aktiviert werden soll.
 
- Die <xref:System.AttributeTargets?displayProperty=fullName> -Enumeration definiert die Ziele, die Sie für ein benutzerdefiniertes Attribut angeben können. Wenn Sie weglassen <xref:System.AttributeUsageAttribute>, das benutzerdefinierte Attribut wird für alle Ziele werden, gemäß der `All` Wert <xref:System.AttributeTargets> Enumeration.
+ Die <xref:System.AttributeTargets?displayProperty=fullName>-Enumeration definiert die Ziele, die Sie für ein benutzerdefiniertes Attribut angeben können. Wenn Sie <xref:System.AttributeUsageAttribute> weglassen, ist das benutzerdefinierte Attribut für alle Ziele gültig, wie durch den `All` Wert <xref:System.AttributeTargets> Enumeration definiert.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, geben Sie Ziele für das Attribut mit <xref:System.AttributeUsageAttribute>. Weitere Informationen finden Sie im folgenden Beispiel.
+ Um einen Verstoß gegen diese Regel zu beheben, geben Sie Ziele für das-Attribut an, indem Sie <xref:System.AttributeUsageAttribute> verwenden. Weitere Informationen finden Sie im folgenden Beispiel.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Sie sollten einen Verstoß gegen diese Regel mit Ausnahme der Nachricht beheben. Auch wenn das Attribut erbt <xref:System.AttributeUsageAttribute>, das Attribut muss vorhanden sein, damit Wartung des Programmcodes vereinfachen.
+ Sie sollten einen Verstoß gegen diese Regel beheben, anstatt die Meldung auszuschließen. Auch wenn das Attribut <xref:System.AttributeUsageAttribute> erbt, sollte das Attribut vorhanden sein, um die Code Verwaltung zu vereinfachen.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel definiert zwei Attribute. `BadCodeMaintainerAttribute` falsch lässt die <xref:System.AttributeUsageAttribute> -Anweisung und `GoodCodeMaintainerAttribute` korrekt implementiert das Attribut, das weiter oben in diesem Abschnitt beschrieben wird. Beachten Sie, dass die Eigenschaft `DeveloperName` ist erforderlich, die von der Regel entwerfen [CA1019: Accessors für Attributargumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) und wird aus Gründen der Vollständigkeit.
+ Im folgenden Beispiel werden zwei Attribute definiert. `BadCodeMaintainerAttribute` die <xref:System.AttributeUsageAttribute> Anweisung falsch auslässt, und `GoodCodeMaintainerAttribute` das-Attribut, das weiter oben in diesem Abschnitt beschrieben wird, ordnungsgemäß implementiert. Beachten Sie, dass die-Eigenschaft `DeveloperName` für die Entwurfs Regel [CA1019: Accessoren für Attribut Argumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) muss und aus Gründen der Vollständigkeit eingeschlossen ist.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1019: Accessors für Attributargumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019: Zugriffsmethoden für Attributargumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
  [CA1813: Nicht versiegelte Attribute vermeiden](../code-quality/ca1813-avoid-unsealed-attributes.md)
 

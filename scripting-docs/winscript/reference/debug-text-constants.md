@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2342555c4ee92b403aa01cc0ca15bb805f2b002e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: facbdc1258b3fca72a239d9d5cc41772cf577f13
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955249"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577372"
 ---
-# <a name="debugtext-constants"></a>DEBUG_TEXT-Konstanten
-Während der verwendete [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).  
+# <a name="debug_text-constants"></a>DEBUG_TEXT-Konstanten
+Wird während [idebugexpressioncontext verwendet::P arselanguagetext](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).  
   
 ## <a name="syntax"></a>Syntax  
   

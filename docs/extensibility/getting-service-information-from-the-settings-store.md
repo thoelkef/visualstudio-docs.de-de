@@ -1,5 +1,5 @@
 ---
-title: Abrufen von Dienstinformationen aus dem Store-Einstellungen | Microsoft-Dokumentation
+title: Erhalten von Dienst Informationen aus dem Einstellungs Speicher | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,32 +8,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f65fe81d1b2382df3847c2cfdc0b8ffbfff5662
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51aa0369793fe5dc4b39fe510c069a7ec93d102a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342437"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647980"
 ---
-# <a name="get-service-information-from-the-settings-store"></a>Abrufen von Dienstinformationen aus dem einstellungsspeicher
-Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu finden oder um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.
+# <a name="get-service-information-from-the-settings-store"></a>Dienst Informationen aus dem Einstellungs Speicher
+Mit dem Einstellungs Speicher können Sie alle verfügbaren Dienste suchen oder ermitteln, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.
 
-## <a name="to-list-the-available-services"></a>Die verfügbaren Dienste auflisten
+## <a name="to-list-the-available-services"></a>So Listen Sie die verfügbaren Dienste auf
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FindServicesExtension` und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen `FindServicesCommand`. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FindServicesExtension`, und fügen Sie dann den benutzerdefinierten Befehl `FindServicesCommand` hinzu. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .
 
-2. In *FindServicesCommand.cs*, fügen Sie die folgenden using-Anweisungen:
+2. Fügen Sie in *FindServicesCommand.cs*die folgenden using-Direktiven hinzu:
 
-    ```vb
+    ```csharp
     using System.Collections.Generic;
     using Microsoft.VisualStudio.Settings;
     using Microsoft.VisualStudio.Shell.Settings;
     using System.Windows.Forms;
     ```
 
-3. Der Konfigurationsspeicher für die Einstellungen zu erhalten, suchen Sie dann die untergeordnete Sammlung benannte Dienste. Diese Sammlung enthält alle verfügbaren Dienste an. In der `MenuItemCommand` -Methode, entfernen Sie den vorhandenen Code, und Ersetzen Sie ihn durch Folgendes:
+3. Abrufen des Konfigurations Einstellungs Speicher und suchen der untergeordneten Sammlung mit dem Namen "Dienste". Diese Sammlung enthält alle verfügbaren Dienste. Entfernen Sie in der `MenuItemCommand`-Methode den vorhandenen Code, und ersetzen Sie ihn durch Folgendes:
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -50,20 +50,20 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
     }
     ```
 
-4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird angezeigt.
 
-5. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.
+5. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **findservicescommand aufrufen**.
 
-     Ein Nachrichtenfeld mit allen Diensten sollte angezeigt werden.
+     Es sollte ein Meldungs Feld angezeigt werden, in dem alle Dienste aufgelistet sind.
 
      Um diese Einstellungen zu überprüfen, können Sie den Registrierungs-Editor verwenden.
 
-## <a name="find-a-specific-service"></a>Suchen Sie nach einer bestimmten Dienst
- Sie können auch die <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> Methode, um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.
+## <a name="find-a-specific-service"></a>Suchen eines bestimmten Dienstanbieter
+ Sie können auch die <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A>-Methode verwenden, um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.
 
-1. Suchen Sie in der MenuItemCallback des Projekts, das Sie im vorherigen Verfahren erstellt haben, den Konfigurationsspeicher für die Einstellungen für die `Services` Sammlung, die die untergeordnete Sammlung mit dem Namen, durch die GUID des Diensts enthält. In diesem Fall sucht es nach den Hilfe-Dienst.
+1. Suchen Sie im MenuItemCallBack-Element des Projekts, das Sie in der vorherigen Prozedur erstellt haben, im Konfigurations Einstellungs Speicher nach der `Services`-Sammlung, die die untergeordnete Sammlung mit der GUID des-Dienstanbieter aufweist. In diesem Fall suchen wir nach dem Hilfe Dienst.
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -78,6 +78,6 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
 
 2. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
-3. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.
+3. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **findservicescommand aufrufen**.
 
-     Daraufhin sollte eine Meldung mit dem Text **Hilfe-Dienst verfügbar:** gefolgt von **"true"** oder **"false"** . Um diese Einstellung zu überprüfen, können Sie einen Registrierungs-Editor verwenden, wie in den vorherigen Schritten gezeigt.
+     Es sollte eine Meldung mit dem Text **Help Service** angezeigt werden: gefolgt von **true** oder **false**. Um diese Einstellung zu überprüfen, können Sie wie in den vorherigen Schritten gezeigt einen Registrierungs-Editor verwenden.

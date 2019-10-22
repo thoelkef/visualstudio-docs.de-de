@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Readnullterminatedstring-Methode | Microsoft-Dokumentation'
+title: 'Ijsdebugdatatarget:: Read nullterminatedstring-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 178a2d3705e4904de9253c02319f6ba94e567d76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d6ee6c8dad81865767b0b944ef311fc0de0063
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582365"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572405"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString-Methode
 Liest die angegebene Anzahl von Zeichen aus dem Ziel.  
@@ -44,7 +44,7 @@ HRESULT ReadNullTerminatedString(
  [in] Größe jedes Zeichens in der Zeichenfolge  
   
  `maxCharacters`  
- [in] Die maximale Anzahl der zu lesenden Zeichen. MaxCharacters sollte angemessen sein. Jede Anforderung von mehr als 128 MB Arbeitsspeicher schlägt fehl.  Wenn die Zeichenfolge größer als maxCharacters ist, wird die Ergebniszeichenfolge nach maxCharacters abgeschnitten.  
+ in Die maximale Anzahl der zu lesenden Zeichen. MaxCharacters sollten vernünftig sein. Jede Anforderung von mehr als 128 MB Arbeitsspeicher schlägt fehl.  Wenn die Zeichenfolge größer als maxCharacters ist, wird die Ergebniszeichenfolge nach maxCharacters abgeschnitten.  
   
  `pString`  
  [out] Das BSTR-Lesen vom Ziel.  
@@ -55,7 +55,7 @@ HRESULT ReadNullTerminatedString(
  Gibt S_FALSE zurück, wenn es abgeschnitten wird.  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [IJsDebugDataTarget-Schnittstelle](../../winscript/reference/ijsdebugdatatarget-interface.md)

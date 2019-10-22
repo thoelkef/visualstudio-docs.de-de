@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbaad29cb31af26a0f26a1c679a900192fc77041
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935704"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575796"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
-Klont die aktuelle Skript-Engine (minus alle aktuellen Ausführungsstatus), eine geladene Skript-Engine, die keine Standort in den aktuellen Thread zurückgibt. Die Eigenschaften dieses neue Skriptmodul werden mit den Eigenschaften identisch sein, die, denen die ursprüngliche Skript-Engine in wäre, wenn sie zurück zum initialisierten Zustand umgestellt wurden.  
+Klont die aktuelle Skript-Engine (abzüglich jedes aktuellen Ausführungs Zustands) und gibt eine geladene Skript-Engine zurück, die über keine Site im aktuellen Thread verfügt. Die Eigenschaften dieser neuen Skript-Engine sind identisch mit den Eigenschaften, in denen sich die ursprüngliche Skript-Engine befindet, wenn Sie in den initialisierten Zustand zurückversetzt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parameter  
  `ppscript`  
- [out] Adresse einer Variablen, die einen Zeiger auf empfängt die [IActiveScript](../../winscript/reference/iactivescript.md) Schnittstelle des geklonten Skript-Engine. Der Host muss erstellt werden, ein Standort, und rufen die [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) Methode für das neue Skriptmodul, damit es im initialisierten Zustand ist und daher verwendet werden.  
+ vorgenommen Adresse einer Variablen, die einen Zeiger auf die [IActiveScript](../../winscript/reference/iactivescript.md) -Schnittstelle der geklonten Skript-Engine empfängt. Der Host muss eine Website erstellen und die [IActiveScript:: setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md) -Methode für die neue Skript-Engine aufrufen, bevor Sie sich im initialisierten Zustand befindet und daher verwendbar ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -47,14 +47,14 @@ HRESULT Clone(
 |`S_OK`|Erfolgreich.|  
 |`E_NOTIMPL`|Diese Methode wird nicht unterstützt.|  
 |`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert).|  
+|`E_UNEXPECTED`|Der-Befehl wurde nicht erwartet (z. b. wurde die Skript-Engine noch nicht geladen oder initialisiert).|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `IActiveScript::Clone` Methode ist eine Optimierung der `IPersist*::Save`, `CoCreateInstance`, und `IPersist*::Load`, sodass Sie der Status der neuen Skript-Engine identisch sein sollte, als ob der Zustand der ursprünglichen Skript-Engine gespeichert und in eine neue Skript-Engine geladen wurden. Benannte Elemente in der geklonten Skript-Engine dupliziert werden, aber bestimmte Objektzeiger für jedes Element vergessen werden, und erhalten Sie mit der [iactivescriptsite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) Methode. Dadurch wird ein identische Objektmodell für pro-Thread-Einstiegspunkte (eines Apartmentmodells) verwendet werden.  
+ Die `IActiveScript::Clone`-Methode ist eine Optimierung von `IPersist*::Save`, `CoCreateInstance` und `IPersist*::Load`, sodass der Status der neuen Skript-Engine identisch sein sollte, wenn der Status der ursprünglichen Skript-Engine gespeichert und in eine neue Skript-Engine geladen wurde. Benannte Elemente werden in der geklonten Skript-Engine dupliziert, aber bestimmte Objekt Zeiger für jedes Element werden vergessen und mit der [iactivescriptsite:: getiteminfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) -Methode abgerufen. Dadurch kann ein identisches Objektmodell mit Thread spezifischen Einstiegspunkten (einem Apartment Modell) verwendet werden.  
   
- Diese Methode wird für Multithread-Server-Hosts verwendet, die mehrere Instanzen des gleichen Skripts ausgeführt werden können. Die Skript-Engine kann zurückgeben `E_NOTIMPL`, in diesem Fall der Host das gleiche Ergebnis erzielen kann, durch Duplizieren des persistenten Status, und erstellen eine neue Instanz der Skript-Engine mit einer `IPersist*` Schnittstelle.  
+ Diese Methode wird für Multithread-Server Hosts verwendet, die mehrere Instanzen desselben Skripts ausführen können. Die Skript-Engine gibt möglicherweise `E_NOTIMPL` zurück. in diesem Fall kann der Host dasselbe Ergebnis erzielen, indem der persistente Zustand duplizieren und eine neue Instanz der Skript-Engine mit einer `IPersist*` Schnittstelle erstellt wird.  
   
- Diese Methode kann von nicht-Base Threads aufgerufen werden, ohne dass eine nicht-Base-Legende Hostobjekte oder in der [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Schnittstelle.  
+ Diese Methode kann von nicht basisthreads aus aufgerufen werden, ohne dass ein Aufruf von Objekten oder die [iactivescriptsite](../../winscript/reference/iactivescriptsite.md) -Schnittstelle durchgeführt werden soll.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScript](../../winscript/reference/iactivescript.md)

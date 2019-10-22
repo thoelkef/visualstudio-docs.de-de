@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Microsoft-Dokumentation
+title: 'Iactivescriptstringcompare:: strincomp | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66cccb4281e19aebb25b3b4cde06705b500f53a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 233c427b634306527b0b0d496397e82f889560e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991432"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577940"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-Definiert die Methode zum Zeichenfolgenvergleich für die Skript-Engine.  
+Definiert die Zeichen folgen Vergleichsmethode für die Skript-Engine.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -48,7 +48,7 @@ HRESULT StrComp(
  Die zweite Zeichenfolge.  
   
  `iRet`  
- Das Ergebnis des Vergleichs. 0, wenn `bszStr1` und `bszStr2`identisch sind; 1, wenn `bszStr1`  <  `bszStr2`; 1, wenn `bszStr1`  >  `bszStr2`.  
+ Das Ergebnis des Vergleichs. 0, wenn `bszStr1` und `bszStr2`are identisch sind; -1, wenn `bszStr1`  <  `bszStr2`; 1, wenn `bszStr1`  >  `bszStr2`.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Gibt einen der folgenden Werte zurück:  
@@ -57,13 +57,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument ist ungültig.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. die Skript-Engine wurde noch nicht wurden geladen oder initialisiert).|  
+|`E_UNEXPECTED`|Der-Befehl wurde nicht erwartet (z. b. wurde die Skript-Engine noch nicht geladen oder initialisiert).|  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird jedes Mal aufgerufen, die ein Zeichenfolgenvergleich ausgeführt wird.  
+ Diese Methode wird jedes Mal aufgerufen, wenn ein Zeichen folgen Vergleich ausgeführt wird.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie die Funktion zum Zeichenfolgenvergleich überladen wird. Überladen ist zulässig, bei der Verwendung [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) SCRIPTPROP_STRINGCOMPAREINSTANCE festlegen.  
+ Im folgenden Beispiel wird gezeigt, wie die Zeichen folgen Vergleichsfunktion überladen wird. Überladen ist zulässig, wenn Sie [iactivescriptproperty:: SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) verwenden, um SCRIPTPROP_STRINGCOMPAREINSTANCE festzulegen.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

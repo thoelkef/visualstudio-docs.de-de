@@ -1,39 +1,39 @@
 ---
-title: Unterstützten Roslyn-Paket-Version-Zuordnungen
+title: Unterstützte Roslyn-Paket Versions Zuordnungen
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b2dd97b078923cfa3358d56e6316bfff654c4dd
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 1965b0a2aa4b87dacee6f7cd1e1d2d7bc5c36819
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878242"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647939"
 ---
-# <a name="net-compiler-platform-package-version-reference"></a>.NET Compiler Platform-Version-Paketverweis
+# <a name="net-compiler-platform-package-version-reference"></a>.Net-compilerplattform-Paket Versions Referenz
 
-Die folgende Tabelle zeigt die [.NET Compiler Platform (Roslyn) Paket](https://www.nuget.org/packages/Microsoft.Net.Compilers/) Versionen werden für verschiedene Versionen von Visual Studio unterstützt.
+In der folgenden Tabelle wird gezeigt, welche [.NET Compiler Platform-Paketversionen (Roslyn)](https://www.nuget.org/packages/Microsoft.Net.Compilers/) für verschiedene Versionen von Visual Studio unterstützt werden.
 
-Beispielsweise sollten um sicherzustellen, dass Ihre benutzerdefinierte Analyzer in allen Versionen von Visual Studio 2017 wird Version 2.0 von Microsoft.Net.Compilers abzielen.
+Um z. b. sicherzustellen, dass die benutzerdefinierte Analyse für alle Versionen von Visual Studio 2017 funktioniert, sollte Sie auf Version 2,0 von Microsoft.net. Compilers abzielen.
 
-| Roslyn-Paketversion | Mindestens unterstützte Version von Visual Studio |
+| Roslyn-Paketversion | Mindestens unterstützte Visual Studio-Version |
 | - | - |
-| 3.x | Visual Studio 2019 |
-| 2.10.0 | Visual Studio 2017, Version 15.9 |
+| 3. x | Visual Studio 2019 |
+| 2.10.0 | Visual Studio 2017, Version 15,9 |
 | 2.9.0 | Visual Studio 2017 Version 15.8 |
 | 2.8.2 | Visual Studio 2017-Version 15.7 |
 | 2.7.0 | Visual Studio 2017 Version 15.6 |
 | 2.6.1 | Visual Studio 2017 Version 15.5 |
-| 2.4.0 | Visual Studio 2017 Version 15.4 |
+| 2.4.0 | Visual Studio 2017, Version 15,4 |
 | 2.3.2 | Visual Studio 2017 Version 15.3 |
 | 2.2.0 | Visual Studio 2017 Version 15.2 |
-| 2.1.0 | Visual Studio 2017 Version 15.1 |
+| 2.1.0 | Visual Studio 2017, Version 15,1 |
 | 2.0.0 | Visual Studio 2017 RTM |
 | 1.3.2 | Visual Studio 2015 Update 3 |
 | 1.2.2 | Visual Studio 2015 Update 2 |
@@ -41,9 +41,9 @@ Beispielsweise sollten um sicherzustellen, dass Ihre benutzerdefinierte Analyzer
 | 1.0.1 | Visual Studio 2015 RTM |
 
 > [!TIP]
-> Für Roslyn-Pakete, in dem die mindestens erforderliche Version für Visual Studio eine Visual Studio 2017-Version ist, werden alle Versionen von Visual Studio-2019 ebenfalls unterstützt, da sie später stammen.
+> Bei Roslyn-Paketen, bei denen die mindestens unterstützte Visual Studio-Version eine Visual Studio 2017-Version ist, werden alle Versionen von Visual Studio 2019 auch unterstützt, da Sie später angezeigt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [.NET Compiler Platform-SDK](/dotnet/csharp/roslyn-sdk/)
-- [Erste Schritte mit Roslyn-Analysetools](getting-started-with-roslyn-analyzers.md)
+- [Einstieg in Roslyn-Analysen](getting-started-with-roslyn-analyzers.md)

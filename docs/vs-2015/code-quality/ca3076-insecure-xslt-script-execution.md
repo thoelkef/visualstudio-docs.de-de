@@ -1,21 +1,21 @@
 ---
-title: 'CA3076: Unsichere XSLT-Skriptausführung | Microsoft-Dokumentation'
+title: 'CA3076: unsichere XSLT-Skriptausführung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a6b1efa5b5ee84092531a67421d03583afc3578
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 558e205fa37569bfa12d7b93f989d0f8ebabab43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680719"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669060"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung.
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -31,11 +31,11 @@ ms.locfileid: "65680719"
 ## <a name="rule-description"></a>Regelbeschreibung
  [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) ist ein W3C-Standard (World Wide Web Consortium) zum Transformieren von XML-Daten. XSLT wird in der Regel verwendet, um Stylesheets zum Transformieren von XML-Daten in andere Formate (z. B.in HTML, Text fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML-Format) zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.
 
- Um sicherzustellen, können Sie keine Angriffsfläche, mit dieser Regel wird ausgelöst, wenn die "XslCompiledTransform".<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> Unsichere Kombinationen aus empfängt <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung von bösartigen Skripts.
+ Um sicherzustellen, dass Sie keine Angriffsfläche verfügbar machen, wird diese Regel immer dann ausgelöst, wenn XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> empfängt unsichere Kombinationen von Instanzen von <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver>, wodurch die Verarbeitung bösartiger Skripts ermöglicht wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings an.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer Instanz, die Dokument-Funktion und Skript die Ausführung deaktiviert wurde.
+- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings. <xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer-Instanz, die die Dokument Funktion und Skriptausführung deaktiviert hat.
 
 - Ersetzen Sie das <xref:System.Xml.XmlResolver> -Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver> -Instanz.
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 672c0ea4a4ec3c2d396da7b232ca085181d90b25
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869869"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662180"
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogfeld "Erforderliche Komponenten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installie
 |**Windows Installer 4.5**|Mit diesem Paket wird die verteilbare Version 4.5 von Microsoft Windows Installer für die Installation von Windows Installer-Setupprojekten installiert.|
 
 ## <a name="see-also"></a>Siehe auch
- [Seite "veröffentlichen", Projekt-Designer](../../ide/reference/publish-page-project-designer.md) Erforderliche [Anwendungs Bereitstellungs Voraussetzungen](../../deployment/application-deployment-prerequisites.md) [Neuverteilen der .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) Bereitstellen der erforderlichen Komponenten [für 64-Bit-Anwendungen](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Visual Studio-Übersicht über die Ausrichtung auf mehrere Ziel](../../ide/visual-studio-multi-targeting-overview.md)
+ [Seite "veröffentlichen",](../../ide/reference/publish-page-project-designer.md) [Voraussetzungen für die Bereitstellung](../../deployment/application-deployment-prerequisites.md) der Projekt-Designer-Bereitstellung [Neuverteilen der .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) bereitstellen [von Voraussetzungen für 64-Bit-Anwendungen](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Übersicht](../../ide/visual-studio-multi-targeting-overview.md)

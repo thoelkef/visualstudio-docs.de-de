@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8468f578ee44487acd2575e81e01d65969110437
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840043"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568811"
 ---
 # <a name="windows-script-hosts"></a>Windows Script Hosts
 Wenn Sie einen Microsoft Windows-Skripthost implementieren, können Sie problemlos davon ausgehen, dass eine Skript-Engine nur die [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Schnittstelle im Kontext des Basisthreads aufruft, solange der Host Folgendes macht:  
@@ -37,8 +37,8 @@ Wenn Sie einen Microsoft Windows-Skripthost implementieren, können Sie probleml
   
   Diese Regeln werden automatisch von allen Host mit einem Thread befolgt. Das oben beschriebene eingeschränkte Modell ist absichtlich weit gefasst, damit der Host ein hängendes Skript abbrechen kann, indem er [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) aus einem anderen Thread aufruft (durch einen STRG + UNTRBR-Handler o.ä. initiiert), oder damit er ein Skript in einem neuen Thread mit [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) duplizieren kann.  
   
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Hinweise  
  Keine dieser Einschränkungen gilt für einen Host, der eine [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Freethreadschnittstelle und ein Freethread-Objektmodell implementiert. Ein derartiger Host kann die [IActiveScript](../winscript/reference/iactivescript.md)-Schnittstelle aus jedem Thread verwenden und das ohne Einschränkungen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Windows-Skriptschnittstellen](../winscript/windows-script-interfaces.md)
+ [Windows Script-Schnittstellen](../winscript/windows-script-interfaces.md)

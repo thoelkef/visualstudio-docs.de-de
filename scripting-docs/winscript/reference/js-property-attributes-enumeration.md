@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27aaadfd1d3ff38e9a0382ff1863b73d2bccc325
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94a72228e1ad6ab49568f3291ad9add7209ef3da
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539442"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571734"
 ---
-# <a name="jspropertyattributes-enumeration"></a>JS_PROPERTY_ATTRIBUTES-Enumeration
+# <a name="js_property_attributes-enumeration"></a>JS_PROPERTY_ATTRIBUTES-Enumeration
 Zeigt die Attribute einer Eigenschaft an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -33,17 +33,17 @@ enum JS_PROPERTY_ATTRIBUTES{   JS_PROPERTY_ATTRIBUTE_NONE = 0,   JS_PROPERTY_HAS
   
 ## <a name="members"></a>Member  
   
-|Name|Beschreibung|  
+|-Name|Beschreibung|  
 |----------|-----------------|  
 |`JS_PROPERTY_ATTRIBUTE_NONE`|Die Eigenschaft weist keine Attribute auf.|  
 |`JS_PROPERTY_HAS_CHILDREN`|Die Eigenschaft weist untergeordnete Elemente auf.|  
-|`JS_PROPERTY_FAKE`|Die Eigenschaft stellt einen falschen Knoten, z. B. "[Methoden]".|  
+|`JS_PROPERTY_FAKE`|Die-Eigenschaft stellt einen gefälschten Knoten dar, z. b. "[Methods]".|  
 |`JS_PROPERTY_METHOD`|Die Eigenschaft ist eine Methode.|  
 |`JS_PROPERTY_READONLY`|Die Eigenschaft ist schreibgeschützt.|  
 |`JS_PROPERTY_NATIVE_WINRT_POINTER`|Die Eigenschaft ist ein Zeiger auf ein systemeigenes WinRT-Objekt.|  
   
 ## <a name="requirements"></a>Anforderungen  
- **Header:** "jscript9diag.h"  
+ **Header:** "jscript9diag. h  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)

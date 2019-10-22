@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a068414fb157ab71733d6c726b6ec71532629d4
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648717"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank
 
 Mithilfe von Visual Studio können Sie eine Verbindung mit einer Access-Datenbank (entweder eine *MDB* -Datei oder eine *ACCDB* -Datei) herstellen. Nachdem Sie die Verbindung definiert haben, werden die Daten im Fenster **Datenquellen** angezeigt. Von dort aus können Sie Tabellen oder Sichten auf die Entwurfs Oberfläche ziehen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
 Um diese Prozeduren verwenden zu können, benötigen Sie ein Windows Forms-oder WPF-Projekt und entweder eine Access-Datenbank ( *. accdb* -Datei) oder eine Access 2000-2003-Datenbank (*MDB* -Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
 
@@ -33,7 +33,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken he
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Windows** > -**Datenquellen**aus.
+2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster**  > **Datenquellen**aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit mit Access 200
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Wählen Sie im Menü **Ansicht** die Option **Weitere Windows** > -**Datenquellen**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **Weitere Fenster**  > **Datenquellen**aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
@@ -89,7 +89,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit mit Access 200
 
 6. Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** die Option **Neue Verbindung** aus, um eine neue Datenverbindung zu konfigurieren.
 
-7. Wenn es sich bei der Datenquelle nicht um eine **Microsoft Access-Datenbankdatei (OLE DB)** handelt, wählen Sie **ändern** aus, um das Dialogfeld **Datenquelle ändern** zu öffnen, und wählen Sie **Microsoft Access-Datenbankdatei** **aus.**
+7. Wenn es sich bei der Datenquelle nicht um eine **Microsoft Access-Datenbankdatei (OLE DB)** handelt, wählen Sie **ändern** aus, um das Dialogfeld **Datenquelle ändern** zu öffnen, **und wählen Sie** **Microsoft Access-Datenbankdatei**aus.
 
 8. Geben Sie unter **Name der Datenbankdatei**den Pfad und den Namen der *MDB* -Datei an, mit der Sie eine Verbindung herstellen möchten, und klicken Sie dann auf **OK**.
 
@@ -113,7 +113,7 @@ Das soeben erstellte Dataset ist im **Datenquellen** Fenster verfügbar. Sie kö
 
 - Öffnen Sie die Datenquelle im **DataSet-Designer**, um die Objekte, aus denen das Dataset besteht, zu bearbeiten oder dem Dataset Objekte hinzuzufügen.
 
-- Fügen Sie dem <xref:System.Data.DataTable.ColumnChanging> -Ereignis oder <xref:System.Data.DataTable.RowChanging> dem-Ereignis der Datentabellen im DataSet eine Validierungs Logik hinzu (siehe [Validieren von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
+- Fügen Sie der <xref:System.Data.DataTable.ColumnChanging> oder <xref:System.Data.DataTable.RowChanging>-Ereignis der Datentabellen im DataSet eine Validierungs Logik hinzu (siehe [Validieren von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007313"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573808"
 ---
 # <a name="invalid-replacer-argument"></a>Ungültiges replacer-Argument
-Wurde versucht, aufzurufen `JSON.stringify` mit einem Argument, das ungültig ist. Die `replacer` -Argument muss eine Funktion oder ein Array sein.  
+Es wurde versucht, `JSON.stringify` mit einem ungültigen Argument aufzurufen. Das `replacer`-Argument muss eine Funktion oder ein Array sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Ändern der `replacer` Argument an eine Funktion oder ein Array.  
+- Ändern Sie das `replacer`-Argument in eine Funktion oder ein Array.  
   
 ## <a name="example"></a>Beispiel  
- Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `memberfilter` ist ein Objekt anstelle einer Funktion oder eines Arrays.  
+ Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `memberfilter` ein Objekt anstelle einer Funktion oder eines Arrays ist.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [JSON-Objekt](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse-Funktion](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON-Objekt](../../javascript/reference/json-object-javascript.md)    
+ [JSON.](../../javascript/reference/json-parse-function-javascript.md) Analyse-Funktion    
  [JavaScript-Laufzeitfehler](../../javascript/reference/javascript-run-time-errors.md)

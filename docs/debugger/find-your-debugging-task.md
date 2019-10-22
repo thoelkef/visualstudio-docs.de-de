@@ -1,5 +1,5 @@
 ---
-title: Suchen der debugaufgabe
+title: Finden der Debugaufgabe
 description: Identifizieren Sie das Debugger-Feature, mit dem Sie Ihre APP Debuggen können.
 ms.custom: ''
 ms.date: 10/01/2019
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817509"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349708"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Suchen Ihres debugtasks in Visual Studio
 
@@ -34,7 +34,10 @@ Verwenden Sie einen bedingten Haltepunkt, um zu steuern, wo und wann ein Breakpo
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Code nur anhalten, wenn sich die Eigenschaft oder der Wert eines bestimmten Objekts ändert
 
-Legen C++Sie für einen [Daten Breakpoint](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)fest. Für apps, die .net Core 3 verwenden, können Sie auch einen [Daten Haltepunkt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)festlegen.
+Legen C++Sie für einen [Daten Breakpoint](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)fest. 
+::: moniker range=">= vs-2019"
+Für apps, die .net Core 3 verwenden, können Sie auch einen [Daten Haltepunkt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)festlegen.
+::: moniker-end
 
 Andernfalls können Sie C# für F# und nur [eine Objekt-ID mit einem bedingten Haltepunkt verfolgen](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 
@@ -62,6 +65,12 @@ Wenn Sie den Code anhalten und debuggen möchten, während Sie den Ausführungs-
 
 Dies können Sie erreichen, indem Sie [im Fenster Disassembly einen Haltepunkt festlegen](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
+## <a name="execute-code"></a>Code ausführen
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Erlernen der Befehle zum Durchlaufen des Codes während des Debuggens
+
+Weitere Informationen finden Sie unter [Navigieren im Code mit dem Debugger](navigating-through-code-with-the-debugger.md).
+
 ## <a name="inspect-data"></a>Untersuchen von Daten
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Überprüfen Sie beim Ausführen der APP den Wert der Variablen.
@@ -76,19 +85,7 @@ Legen Sie eine Überwachung für die Variable fest. Weitere Informationen finden
 
 Öffnet die integrierte [Zeichen](view-strings-visualizer.md) folgen Schnellansicht während des Debuggens.
 
-## <a name="additional-tasks"></a>Weitere Aufgaben
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Erlernen der Befehle zum Durchlaufen des Codes während des Debuggens
-
-Weitere Informationen finden Sie unter [Navigieren im Code mit dem Debugger](navigating-through-code-with-the-debugger.md).
-
-### <a name="edit-code-during-a-debugging-session"></a>Bearbeiten von Code während einer Debugsitzung
-
-Verwenden Sie [Bearbeiten und Fortfahren](edit-and-continue.md). Verwenden Sie für XAML das [heiße Laden von XAML](xaml-hot-reload.md).
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Senden von Nachrichten an das Ausgabefenster, ohne Code zu ändern
-
-Legen Sie einen Ablauf Verfolgungs Punkt fest. Weitere Informationen finden Sie unter [verwenden](using-tracepoints.md)von Ablauf Verfolgungs Punkten.
+## <a name="configure-debugging"></a>Konfigurieren des Debuggens
 
 ### <a name="customize-information-shown-in-the-debugger"></a>Im Debugger angezeigte Informationen anpassen
 
@@ -99,6 +96,16 @@ Verwenden Sie C++für Native das [natvis-Framework](create-custom-views-of-nativ
 ### <a name="configure-debugger-settings"></a>Debugger-Einstellungen konfigurieren
 
 Informationen zum Konfigurieren von Debuggeroptionen und debuggerprojekteinstellungen finden Sie unter [Debugger-Einstellungen und-Vorbereitung](debugger-settings-and-preparation.md).
+
+## <a name="additional-tasks"></a>Weitere Aufgaben
+
+### <a name="edit-code-during-a-debugging-session"></a>Bearbeiten von Code während einer Debugsitzung
+
+Verwenden Sie [Bearbeiten und Fortfahren](edit-and-continue.md). Verwenden Sie für XAML das [heiße Laden von XAML](xaml-hot-reload.md).
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Senden von Nachrichten an das Ausgabefenster, ohne Code zu ändern
+
+Legen Sie einen Ablauf Verfolgungs Punkt fest. Weitere Informationen finden Sie unter [verwenden](using-tracepoints.md)von Ablauf Verfolgungs Punkten.
 
 ### <a name="debug-on-remote-machines"></a>Debuggen auf Remote Computern
 

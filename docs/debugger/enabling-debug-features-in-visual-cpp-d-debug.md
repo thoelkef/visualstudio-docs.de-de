@@ -1,5 +1,5 @@
 ---
-title: Aktivieren von Debugfunktionen in Visual C++ (-D_DEBUG) | Microsoft-Dokumentation
+title: Aktivieren von Debuggingfunktionen in C++ Projekten (-D_DEBUG) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295bdc7b220f8977c85dd1b359f99af2f8d5d72a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f772b74a42b9704f1fd77c731022ddb44774c68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850961"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430679"
 ---
-# <a name="enabling-debug-features-in-visual-c-ddebug"></a>Aktivieren von Debugfeatures in Visual C++ (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Aktivieren von Debuggingfunktionen in C++ Projekten (/D_DEBUG)
 Wenn Sie das Programm mit definiertem **_DEBUG**-Symbol kompilieren, aktivieren Sie damit die Debugfunktion in [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], (z.B. Assertionen). Sie können **_DEBUG** auf zwei Arten definieren:
 
 - Geben Sie im Quellcode **#define _DEBUG** an, oder

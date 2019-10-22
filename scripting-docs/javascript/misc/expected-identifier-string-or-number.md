@@ -14,15 +14,15 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3bd991a1d8beb355456e3b8cf7f864975b499cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adc34a0605561852885087151796cceb20aead5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934885"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577593"
 ---
 # <a name="expected-identifier-string-or-number"></a>Es wurde ein Bezeichner, eine Zeichenfolge oder eine Zahl erwartet
-Sie verwendet falsche literalen Syntax zum Deklarieren eines Objekts in Literalen. Die Eigenschaften eines Objekts, das literal müssen es sich um einen Bezeichner, eine Zeichenfolge oder eine Zahl sein. Ein Objektliteral (auch als einen "Objektinitialisierer" bezeichnet) besteht aus einer durch Trennzeichen getrennte Liste von Eigenschaft-Wert-Paaren, die alle in Klammern eingeschlossen. Zum Beispiel:  
+Sie haben falsche Literalsyntax zum Deklarieren eines Objektliterals verwendet. Die Eigenschaften eines Objektliterals müssen ein Bezeichner, eine Zeichenfolge oder eine Zahl sein. Ein Objektliteral (auch als "Objektinitialisierer" bezeichnet) besteht aus einer durch Trennzeichen getrennten Liste von Eigenschaft-Wert-Paaren, die alle in eckige Klammern eingeschlossen sind. Beispiel:  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  
@@ -30,7 +30,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Stellen Sie sicher, dass Sie die richtige Syntax für Literale verwenden.  
+- Stellen Sie sicher, dass Sie die richtige Literalsyntax verwenden  
   
 ## <a name="see-also"></a>Siehe auch  
  [Kommaoperator (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

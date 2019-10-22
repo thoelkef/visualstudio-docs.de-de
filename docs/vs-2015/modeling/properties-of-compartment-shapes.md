@@ -1,5 +1,5 @@
 ---
-title: Eigenschaften von Depotformen | Microsoft-Dokumentation
+title: Eigenschaften von Depot Formen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,54 +10,54 @@ helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 ms.assetid: 9a9e112d-210d-413b-a44f-0e976a4a78bc
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9176fe7bc7f9824610b7a77f1e1ef3b374b69ef3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b3caf9828f678c72bf756063183f7d867c5c0e66
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701716"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652051"
 ---
 # <a name="properties-of-compartment-shapes"></a>Eigenschaften von Depotformen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Depot-Formen sind eine Form, die Sie verwenden können, um eine Domänenklasse in einer domänenspezifischen Sprache anzuzeigen. Sie können die Depots reduzieren und erweitern.  
-  
- Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
- Depot-Formen haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.  
-  
-|Eigenschaft|Beschreibung|Standard|  
-|--------------|-----------------|-------------|  
-|Standardmäßige erweitern reduziert werden kann|Wenn `Expanded`, werden die Depots bei der Erstellung angezeigt. Wenn `Collapsed`, sind sie nicht.|Erweitert|  
-|Füllfarbe|Die Füllfarbe dieser Form.|Weiß|  
-|Der Farbverlaufmodus|Die füllverlaufsmodus dieser Form.|Horizontal|  
-|Geometry|Die Geometrie dieser Form (Rechteck oder abgerundetes Rechteck).|Rechteck|  
-|Verfügt über Standard-Verbindungspunkte|Wenn `True`, verwendet die Form oben, unten, links und rechten Verbindungspunkte im generierten Designer.|False|  
-|Wird der Depot-Header angezeigt|Wenn `False`, und die Form über ein Depot verfügt, des Headers des Depots nicht sichtbar.|True|  
-|Konturfarbe|Die Konturfarbe dieser Form.|Schwarz|  
-|Konturstrichstil|Der konturstrichstil dieser Form (einfarbig, Bindestrich, Punkt, DashDot, Strich, Benutzerdefiniert).|Basis|  
-|Umrissstärke|Die konturlinienstärke dieser Form.|0.03125|  
-|Textfarbe|Die Farbe für Text-Decorator-Elemente, die mit dieser Form verknüpft sind.|Schwarz|  
-|Zugriffsmodifizierer|Die Ebene der Zugriff auf die Depot-Form (`public` oder `internal`).|Public|  
-|Benutzerdefinierte Attribute|Verwendet, um die Attribute der Quellklasse Code hinzufügen, die von dieser depotform generiert wird|\<none>|  
-|Double-Wert generiert abgeleitet|Wenn `True`, sowohl eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung über überschreibungen) generiert werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse in der Code ein, das mit der Depot-Form generiert (`none`, `abstract` oder `sealed`).|Keiner|  
-|Basisdepotform|Die Basisklasse dieser Form.|(keine)|  
-|Name|Der Name dieser Form.|Aktuelle name|  
-|Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|  
-|QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn fest, klicken Sie dann den Wert des der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet, wenn die Variable, klicken Sie dann die QuickInfo wird im benutzerdefinierten Code definiert.|none|  
-|Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<none>|  
-|Die ursprüngliche Höhe|Die ursprüngliche Höhe dieser Form in Zoll. Dies ist die Höhe des Headerabschnitts nur Depot-Formen und kann nicht geändert werden.|1|  
-|Die ursprüngliche Breite|Die ursprüngliche Breite dieser Form in Zoll.|1.5|  
-|Als Eigenschaft verfügbar gemachte Füllfarbe<br /><br /> Verfügbar gemachte Füllverlaufsmodus<br /><br /> Konturfarbe als Eigenschaft verfügbar gemacht.<br /><br /> Konturstrichstil als Eigenschaft verfügbar gemacht.<br /><br /> Umrissstärke als Eigenschaft verfügbar<br /><br /> Stellt Text Color|Wenn `True`, der Benutzer kann die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, mit der rechten Maustaste in der Definition der Form, und klicken Sie auf **verfügbare hinzufügen**.|False|  
-|Beschreibung|Dokumentieren des generierten Designers verwendet.|\<none>|  
-|Anzeigename|Der Name, der im generierten Designer für diese Form angezeigt werden soll.|\<none>|  
-|Feste QuickInfo-Text|Der Text, der für eine feste QuickInfo verwendet wird.|\<none>|  
-|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für diese Form verwendet wird.|\<none>|  
-  
-## <a name="see-also"></a>Siehe auch  
+Depot Formen sind eine der Formen, die Sie verwenden können, um eine Domänen Klasse in einer domänenspezifischen Sprache anzuzeigen. Die Depots können erweitert und reduziert werden.
+
+ Weitere Informationen finden Sie unter [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+ Depot Formen verfügen über die Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
+
+|property|Beschreibung|Default|
+|--------------|-----------------|-------------|
+|Standardmäßiges Erweitern des Reduzierungs Zustands|Wenn `Expanded`, werden die Depots bei der Erstellung angezeigt. Wenn `Collapsed`, ist dies nicht der Fall.|Erweitert|
+|Füllfarbe|Die Füllfarbe dieser Form.|Weiß|
+|Füllverlaufs Modus|Der Füllverlaufs Modus dieser Form.|Horizontal|
+|Et|Die Geometrie dieser Form (Rechteck oder abgerundetes Rechteck).|Rechteck|
+|Hat Standard Verbindungspunkte|Wenn `True`, verwendet die Form die oberen, unteren, linken und rechten Verbindungspunkte im generierten Designer.|False|
+|Ist ein einfach Header sichtbar.|Wenn `False`, und die Form verfügt über ein einzelnes Depot, ist der Header des Depots nicht sichtbar.|True|
+|Umriss Farbe|Die Kontur Farbe dieser Form.|Schwarz|
+|Umriss Strich Stil|Der Umriss Strich Stil dieser Form (Solid, Dash, dot, DashDot, DashDotDot, Custom).|Basis|
+|Kontur Stärke|Die Gliederungs Stärke dieser Form.|0,03125|
+|Textfarbe|Die Farbe, die für Text-Decorator verwendet wird, die dieser Form zugeordnet sind.|Schwarz|
+|Zugriffsmodifizierer|Die Zugriffsebene der Depot Form (`public` oder `internal`).|Öffentlich|
+|Benutzerdefinierte Attribute|Wird verwendet, um der Quell Code Klasse Attribute hinzuzufügen, die aus dieser Depot Form generiert werden.|\<none>|
+|Generiert doppelte abgeleitete|Wenn `True`, werden sowohl eine Basisklasse als auch eine partielle Klasse (zur Unterstützung der Anpassung durch über schreibungen) generiert. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Hat benutzerdefinierten Konstruktor|Wenn `True`, wird ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Vererbungs Modifizierer|Beschreibt die Art der Vererbung der Quell Code Klasse, die aus der Depot Form (`none`, `abstract` oder `sealed`) generiert wird.|Keiner|
+|Basis Depot Form|Die Basisklasse dieser Form.|(keine)|
+|-Name|Der Name dieser Form.|Aktueller Name|
+|Namespace|Der Namespace, der mit dieser Form verbunden ist.|Aktueller Namespace|
+|QuickInfo-Typ|Wie die QuickInfo definiert wird (Fixed, Variable oder None). Wenn ein fester Wert angezeigt wird, wird der Wert der `Fixed Tooltip Text`-Eigenschaft als QuickInfo verwendet. Wenn die Variable ist, wird die QuickInfo in benutzerdefiniertem Code definiert.|Keine|
+|Notizen|Informelle Notizen, die dieser Form zugeordnet sind.|\<none>|
+|Anfängliche Höhe|Die Anfangshöhe dieser Form in Zoll. Bei Depot Formen ist dies die Höhe des Header Abschnitts und kann nicht geändert werden.|1|
+|Anfängliche Breite|Die ursprüngliche Breite dieser Form in Zoll.|1.5|
+|Verfügbar gemachte Füllfarbe als Eigenschaft<br /><br /> Offen gelegter Füllverlaufs Modus<br /><br /> Verfügbar gemachte Umriss Farbe als Eigenschaft<br /><br /> Darstellung des Gliederungs Bindestrich Stils als Eigenschaft<br /><br /> Verfügbar gemachte Gliederungs Stärke als Eigenschaft<br /><br /> Macht Textfarbe verfügbar.|Wenn `True`, kann der Benutzer die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Form Definition, und **Klicken Sie auf**verfügbar machen|False|
+|Beschreibung|Wird verwendet, um den generierten Designer zu dokumentieren.|\<none>|
+|Anzeigename|Der Name, der im generierten Designer für diese Form angezeigt wird.|\<none>|
+|Fester QuickInfo-Text|Der Text, der für eine fixierte QuickInfo verwendet wird.|\<none>|
+|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für diese Form verwendet wird.|\<none>|
+
+## <a name="see-also"></a>Siehe auch
  [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

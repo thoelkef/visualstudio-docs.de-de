@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft-Dokumentation
+title: 'Iactivescriptsitedebug:: onscripterrordebug | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50e8c7baa42d6f2f36dc71b768797dfe2a464bf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 894767b3dae9db54e8bc438a82b27195308a4342
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992427"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572204"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
-Ermöglicht einen Smarthost zu bestimmen, wie zum Behandeln von Laufzeitfehlern führen.  
+Ermöglicht einem Smarthost, zu bestimmen, wie Laufzeitfehler behandelt werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -39,23 +39,23 @@ HRESULT OnScriptErrorDebug(
   
 #### <a name="parameters"></a>Parameter  
  `pErrorDebug`  
- [in] Die Laufzeitfehler, die aufgetreten sind  
+ in Der aufgetretene Laufzeitfehler.  
   
  `pfEnterDebugger`  
- [out] Dieses Flag gibt an, ob der Fehler an dem Debugger an, führen Sie die JIT-Debuggen übergeben.  
+ vorgenommen Flag zum angeben, ob der Fehler an den Debugger übergeben werden soll, um JIT-Debugging durchzuführen.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out] Flag, das angibt, ob aufgerufen `IActiveScriptSite::OnScriptError` Wenn der Benutzer entscheidet, ohne das Debuggen fortzusetzen.  
+ vorgenommen Flag zum angeben, ob `IActiveScriptSite::OnScriptError` aufgerufen werden soll, wenn der Benutzer entscheidet, ohne Debuggen fortzufahren.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück. Mögliche Werte enthalten, aber Sie sind nicht auf den Wert in der folgenden Tabelle beschränkt.  
+ Die Methode gibt ein `HRESULT` zurück. Mögliche Werte sind, sind jedoch nicht auf den Wert in der folgenden Tabelle beschränkt.  
   
 |Wert|Beschreibung|  
 |-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Ein Smarthost kann diese Methode verwenden, um zu bestimmen, wie zur Laufzeit Fehler behandelt.  
+ Ein intelligenter Host kann diese Methode verwenden, um zu bestimmen, wie Laufzeitfehler behandelt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptSiteDebug-Schnittstelle](../../winscript/reference/iactivescriptsitedebug-interface.md)

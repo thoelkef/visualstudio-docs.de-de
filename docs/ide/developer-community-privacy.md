@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864688"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273397"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -70,10 +70,6 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
 - Windows Forms-Protokolle, sofern vorhanden
 
-> [!NOTE]
-> Protokolldateien werden nur an Microsoft gesendet, wenn Sie die Berechtigung erteilen, indem Sie den Fehlerbericht einreichen, in dem sie enthalten sind. Die enthaltenen Dateien können Sie im Schritt „Zusammenfassung“ des Fensters „Problem melden“ sehen (siehe Screenshot). Die gesammelten Protokolle werden im Ordner „%temp%“ gespeichert und regelmäßig nach jedem Upload bereinigt. Wenn Sie kein Protokoll in Ihrem Problembericht einschließen möchten, löschen Sie die Datei aus dem Order „%temp%“, bevor Sie den Bericht einreichen.  
-  > ![Problem melden: Zusammenfassung gesammelter Protokolle](media/report-a-problem-logs-collected.png)
-
 - Ein Screenshot, sofern dieser einbezogen werden soll
   
 - Aufzeichnungsdaten, sofern eine Aufzeichnung einbezogen werden soll. Diese umfassen:
@@ -84,8 +80,10 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
   - Dumpdatei
 
-  > [!NOTE]
-  > Sie können vor dem Senden des Berichts sämtliche Aufzeichnungsdaten löschen, die nicht gesendet werden sollen.
+> [!NOTE]
+> Protokolldateien, Screenshots und Aufzeichnungsdaten werden nur an Microsoft gesendet, wenn Sie die Berechtigung erteilen, indem Sie den Fehlerbericht einreichen, in dem sie enthalten sind. Die enthaltenen Dateien können Sie im Schritt „Zusammenfassung“ des Fensters „Problem melden“ sehen (siehe Screenshot). Die gesammelten Protokolle und Dateien werden im Ordner „%temp%“ gespeichert und regelmäßig sowie nach jedem Upload bereinigt. Wenn Sie kein Protokoll in Ihrem Problembericht einschließen möchten, löschen Sie die Datei aus dem Order „%temp%“, bevor Sie den Bericht einreichen.  
+  > ![Problem melden: Zusammenfassung gesammelter Protokolle](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>Siehe auch
 

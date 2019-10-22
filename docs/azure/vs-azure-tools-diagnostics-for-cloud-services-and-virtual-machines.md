@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: HT
+ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177326"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962977"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -83,7 +83,7 @@ In Visual Studio können Sie Diagnosedaten für Rollen sammeln, die in Azure aus
 5. Klicken Sie auf **Konfigurieren**, um das Dialogfeld **Diagnosekonfiguration** anzuzeigen. Jede Registerkarte (mit Ausnahme von **Allgemein** und **Protokollverzeichnisse**) stellt eine Diagnosedatenquelle dar, die Sie sammeln können. Die Standardregisterkarte **Allgemein** enthält die folgenden Optionen für die Diagnosedatensammlung: **Nur Fehler**, **Alle Informationen** und **Benutzerdefinierter Plan**. Die Standardoption **Nur Fehler** verwendet am wenigsten Speicherplatz, da keine Warnungen oder Ablaufverfolgungsmeldungen übertragen werden. Die Option **Alle Informationen** überträgt die meisten Informationen, verwendet den meisten Speicher und ist daher die teuerste Option.
 
    > [!NOTE]
-   > Die unterstützte Mindestgröße für „Datenträgerkontingent in MB“ beträgt 4 GB. Wenn Sie jedoch Speicherabbilder sammeln, sollte das Datenträgerkontingent auf einen höheren Wert, z.B. 10 GB, heraufgestuft werden.
+   > Die unterstützte Mindestgröße für "Datenträger Kontingent in MB" beträgt 50 MB, und die Standardgröße beträgt 4 GB. Wenn Sie jedoch Speicherabbilder sammeln, sollte das Datenträgerkontingent auf einen höheren Wert, z.B. 10 GB, heraufgestuft werden.
    >
 
     ![Aktivieren der Azure-Diagnose und Konfiguration](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)

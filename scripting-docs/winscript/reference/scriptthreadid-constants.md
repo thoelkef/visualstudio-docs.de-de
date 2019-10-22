@@ -1,5 +1,5 @@
 ---
-title: SCRIPTTHREADID-Konstanten | Microsoft-Dokumentation
+title: Scriptthreadid-Konstanten | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf1b23b191bda29b00bf29f482332301897f9f37
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840200"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575668"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID-Konstanten
-Dient zum Angeben des Typs des Threads.  
+Wird verwendet, um den Typ des Threads anzugeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,15 +37,15 @@ typedef DWORD SCRIPTTHREADID;
   
 |Konstante|Wert|Bedeutung|  
 |--------------|-----------|-------------|  
-|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Der aktuell ausgeführten Thread.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Die Basis-Thread. instanziiert wurde, also die in dem der Skript-Engine-Threads.|  
+|SCRIPTTHREADID_CURRENT|0xfffffffd|Der derzeit ausgeführte Thread.|  
+|SCRIPTTHREADID_BASE|0xfffffffe|Der Basis Thread. Das heißt, der Thread, in dem die Skript-Engine instanziiert wurde.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Alle Threads.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die `SCRIPTTHREADID` Typ wird verwendet, indem `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, und `IActiveScript::InterruptScriptThread`, aber die Konstanten können nur verwendet werden, indem `IActiveScript::GetScriptThreadState` und `IActiveScript::InterruptScriptThread`.  
+ Der `SCRIPTTHREADID` Typ wird von `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` und `IActiveScript::InterruptScriptThread` verwendet, aber die Konstanten können nur von `IActiveScript::GetScriptThreadState` und `IActiveScript::InterruptScriptThread` verwendet werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
- [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
- [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
+ [IActiveScript:: getcurrentscriptthreadid](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
+ [IActiveScript:: getscriptthreadid](../../winscript/reference/iactivescript-getscriptthreadid.md)    
+ [IActiveScript:: getscriptthreadstate](../../winscript/reference/iactivescript-getscriptthreadstate.md) -   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

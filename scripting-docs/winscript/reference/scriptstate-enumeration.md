@@ -1,5 +1,5 @@
 ---
-title: SCRIPTSTATE-Enumeration | Microsoft-Dokumentation
+title: ScriptState-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6a05c5e73d26a8daa9e46c317422d85d1c40be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10dd6366e2d0783ec2e9d6bdadc001e9f999901e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840160"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575681"
 ---
 # <a name="scriptstate-enumeration"></a>SCRIPTSTATE-Enumeration
-Gibt den Zustand einer Skript-Engine. Diese Enumeration wird verwendet, durch die [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) , und [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) Methoden.  
+Gibt den Status einer Skript-Engine an. Diese Enumeration wird von der [IActiveScript:: getscriptstate](../../winscript/reference/iactivescript-getscriptstate.md) -, [IActiveScript:: setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) -Methode und der [iactivescriptsite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) -Methode verwendet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,12 +44,12 @@ typedef enum tagSCRIPTSTATE {
   
 |||  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|Skript wurde erst kürzlich erstellt wurde, aber es wurde noch nicht initialisiert wurde mit einer `IPersist*` Schnittstelle und [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
-|SCRIPTSTATE_INITIALIZED|Skript ist initialisiert wurde, jedoch nicht ausgeführt wird (Herstellen einer Verbindung mit anderen Objekten oder Auffangen von Ereignissen) oder Ausführen von Code. Code für die Ausführung abgefragt werden kann, durch den Aufruf der [IActiveScriptParse:: Parsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md) Methode.|  
-|SCRIPTSTATE_STARTED|Skriptausführung kann Code, aber noch nicht die Ereignisse von Objekten, die hinzugefügt werden, indem Sie Auffangen wird die [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) Methode.|  
-|SCRIPTSTATE_CONNECTED|Skript wird geladen und für senkereignisse verbunden sind.|  
-|SCRIPTSTATE_DISCONNECTED|Skript wird geladen und verfügt über einen Zustand der laufzeitausführung, aber vorübergehend von Auffangen von Ereignissen getrennt wird.|  
-|SCRIPTSTATE_CLOSED|Skript wurde geschlossen. Die Skript-Engine funktioniert nicht mehr und gibt für die meisten Methoden Fehler zurück.|  
+|SCRIPTSTATE_UNINITIALIZED|Das Skript wurde soeben erstellt, aber noch nicht mit einer `IPersist*`-Schnittstelle und [IActiveScript:: setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md) initialisiert.|  
+|SCRIPTSTATE_INITIALIZED|Das Skript wurde initialisiert, wird jedoch nicht ausgeführt (Verbindung mit anderen Objekten oder Sink-Ereignissen) oder Ausführen von Code. Der Code kann durch Aufrufen der [iactivescriptparamese::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md) -Methode zur Ausführung abgefragt werden.|  
+|SCRIPTSTATE_STARTED|Skripts können Code ausführen, aber die Ereignisse von Objekten, die durch die [IActiveScript:: addnameditem](../../winscript/reference/iactivescript-addnameditem.md) -Methode hinzugefügt wurden, noch nicht unter senken.|  
+|SCRIPTSTATE_CONNECTED|Das Skript wird geladen und für Sink-Ereignisse verbunden.|  
+|SCRIPTSTATE_DISCONNECTED|Das Skript wird geladen und weist einen Lauf Zeit Ausführungs Status auf, wird aber vorübergehend von den Sink-Ereignissen getrennt.|  
+|SCRIPTSTATE_CLOSED|Das Skript wurde geschlossen. Die Skript-Engine funktioniert nicht mehr und gibt für die meisten Methoden Fehler zurück.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Fehlercodes für Active Script](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

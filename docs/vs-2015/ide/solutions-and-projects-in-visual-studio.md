@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679874"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661195"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,17 +70,17 @@ Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-in
 
  Das folgende Diagramm zeigt die Beziehung zwischen Projekten und Projektmappen und die Elemente, die sie logisch enthalten.
 
- ![Visual Studio-Projekte und -Projektmappen](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Visual Studio-Projekte und -Projektmappen](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  Sie können auch benutzerdefinierte Projekte und Elementvorlagen erstellen. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Erstellen neuer Projekte
- Die einfachste Möglichkeit zum Erstellen eines neuen Projekts ist eine vordefinierte Projektvorlage, die eine Reihe grundlegender vorab generierten Codedateien, Konfigurationsdateien, Assets und Einstellungen für die ersten Schritte mit einer bestimmten Anwendungsart oder Website in einer bestimmten Programmiersprache enthält. Diese Vorlagen finden Sie im Hauptmenü im **Dialogfeld „Neues Projekt“**, wenn Sie **Datei &#124; Neu &#124; Projekt** oder **Datei &#124; Neu &#124; Website** auswählen und dann navigieren. Weitere Informationen finden Sie unter [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md) und [NIB Erstellen von Projekten aus Vorlagen](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Die einfachste Möglichkeit zum Erstellen eines neuen Projekts ist eine vordefinierte Projektvorlage, die eine Reihe grundlegender vorab generierten Codedateien, Konfigurationsdateien, Assets und Einstellungen für die ersten Schritte mit einer bestimmten Anwendungsart oder Website in einer bestimmten Programmiersprache enthält. Diese Vorlagen finden Sie im Hauptmenü im **Dialogfeld „Neues Projekt“** , wenn Sie **Datei &#124; Neu &#124; Projekt** oder **Datei &#124; Neu &#124; Website** auswählen und dann navigieren. Weitere Informationen finden Sie unter [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md) und [NIB Erstellen von Projekten aus Vorlagen](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Verwalten von Projekten im Projektmappen-Explorer
  Nachdem Sie ein neues Projekt erstellt haben, verwenden Sie den **Projektmappen-Explorer** , um Projekte und Projektmappen sowie zugehörige Elemente anzuzeigen und zu verwalten. Die folgende Abbildung zeigt den Server-Explorer mit einer C#-Projektmappe, die zwei Projekte enthält.
 
- ![Projektmappen-Explorer](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
+ ![Projektmappen-Explorer](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 

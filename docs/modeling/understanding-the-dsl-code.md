@@ -4,89 +4,89 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34ec62310c2c9b9677f682983fc6d87827057151
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386704"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663811"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 
-Eine Lösung einer domänenspezifischen Sprache (DSL) generiert eine API, die Sie zum Lesen und Aktualisieren von Instanzen der DSL in Visual Studio verwenden können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
+Eine DSL-Lösung (Domain-Specific Language) generiert eine API, mit der Sie Instanzen der DSL in Visual Studio lesen und aktualisieren können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
 
-## <a name="the-example-solution-component-diagrams"></a>In der beispiellösung: Komponentendiagramme
+## <a name="the-example-solution-component-diagrams"></a>Beispielprojektmappe: Komponentendiagramme
 
-Zum Erstellen der Projektmappe, die die Quelle für die meisten der Beispiele in diesem Thema ist, erstellen Sie eine DSL aus der **Komponentenmodelle** Projektmappe (Vorlage). Dies ist eine der Standardvorlagen, die angezeigt wird, wenn Sie eine neue DSL-Projektmappe erstellen.
+Um die Lösung zu erstellen, die die meisten der Beispiele in diesem Thema ist, erstellen Sie eine DSL aus der Lösungs Vorlage für **Komponentenmodelle** . Dies ist eine der Standardvorlagen, die angezeigt wird, wenn Sie eine neue DSL-Projektmappe erstellen.
 
 > [!NOTE]
-> Die Komponente Diagramme DSL-Vorlage wird aufgerufen, **domänenspezifischen Sprachdesigner**.
+> Die DSL-Vorlage für Komponenten Diagramme wird als **Domänen spezifischer sprach Designer**bezeichnet.
 
-Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvorlage nicht auskennen. Achten Sie insbesondere darauf, dass Sie Ports erstellen, indem Sie ein Port-Tool auf eine Komponente ziehen, und dass Sie Verbindungen mit Ports herstellen können.
+Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorlage nicht vertraut sind. Achten Sie insbesondere darauf, dass Sie Ports erstellen, indem Sie ein Port-Tool auf eine Komponente ziehen, und dass Sie Verbindungen mit Ports herstellen können.
 
 ![Komponenten und verbundene Ports](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktur der DSL-Projektmappe
- Die **Dsl** -Projekt definiert die API für Ihre DSL. Die **DslPackage** Projekt definiert, wie sie mit Visual Studio integriert. Sie können auch eigene Projekte hinzufügen, die durch das Modell generierten Code enthalten können.
+ Das **DSL** -Projekt definiert die API für Ihre DSL. Das **dslpackage** -Projekt definiert, wie es in Visual Studio integriert wird. Sie können auch eigene Projekte hinzufügen, die durch das Modell generierten Code enthalten können.
 
 ### <a name="the-code-directories"></a>Codeverzeichnisse
- Großteil des Codes in jedes dieser Projekte wird generiert aus **Dsl\DslDefinition.dsl**. Der generierte Code befindet sich in der **generierten Code** Ordner. Klicken Sie zum Anzeigen einer generierten Datei **[+]** neben der **TT** Datei.
+ Der größte Teil des Codes in jedem dieser Projekte wird von **Dsl\DslDefinition.DSL**generiert. Der generierte Code befindet sich im **generierten Code** Ordner. Um eine generierte Datei anzuzeigen, klicken Sie auf **[+]** neben der generierten **TT** -Datei.
 
  Es empfiehlt sich, den generierten Code zu untersuchen, damit Sie die DSL besser verstehen. Erweitern Sie zum Anzeigen der generierten Dateien die TT-Dateien im Projektmappen-Explorer.
 
- Die \*TT-Dateien enthalten sehr wenig Generierungscode. Stattdessen verwenden sie `<#include>`-Direktiven, um freigegebene Vorlagendateien einzubinden. Die freigegebenen Dateien befinden sich **\Programme\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**
+ Die \*. tt-Dateien enthalten sehr wenig Generierungs Code. Stattdessen verwenden sie `<#include>`-Direktiven, um freigegebene Vorlagendateien einzubinden. Die freigegebenen Dateien finden Sie unter **\Programme\Microsoft Visual Studio 10.0 \ Common7\IDE\Extensions\Microsoft\DSL sdk\dsl designer\11.0\texttemplates** .
 
- Wenn Sie der DSL-Projektmappe eigenen Programmcode hinzufügen, nutzen Sie dafür eine separate Datei außerhalb des Ordners für generierten Code. Möglicherweise möchten Sie erstellen eine **benutzerdefinierter Code** Ordner. (Wenn Sie eine neue Codedatei einem benutzerdefinierten Ordner hinzufügen, müssen Sie den Namespace im anfänglichen Codeskelett korrigieren.)
+ Wenn Sie der DSL-Projektmappe eigenen Programmcode hinzufügen, nutzen Sie dafür eine separate Datei außerhalb des Ordners für generierten Code. Möglicherweise möchten Sie einen **benutzerdefinierten Code** Ordner erstellen. (Wenn Sie eine neue Codedatei einem benutzerdefinierten Ordner hinzufügen, müssen Sie den Namespace im anfänglichen Codeskelett korrigieren.)
 
  Wir raten dringend davon ab, den generierten Code direkt zu bearbeiten, da Ihre Änderungen verloren gehen, wenn Sie die Projektmappe neu erstellen. Passen Sie stattdessen Ihre DSL an:
 
 - Passen Sie die vielen Parameter in der DSL-Definition an.
 
-- Schreiben Sie partielle Klassen in separaten Codedateien, um Methoden zu überschreiben, die in den generierten Klassen definiert sind oder von ihnen geerbt werden. In einigen Fällen müssen Sie festlegen der **generiert doppelte Ableitungen** Möglichkeit, eine Klasse in der DSL-Definition, um eine generierte Methode überschreiben zu können.
+- Schreiben Sie partielle Klassen in separaten Codedateien, um Methoden zu überschreiben, die in den generierten Klassen definiert sind oder von ihnen geerbt werden. In einigen Fällen müssen Sie die Option **generiert Double-abgeleitete** einer Klasse in der DSL-Definition festlegen, damit eine generierte Methode überschrieben werden kann.
 
-- Festlegen der Optionen in der DSL-Definition, die dazu führen, dass den generierten Code Ihren eigenen Code "Hooks" bereit.
+- Legen Sie Optionen in der DSL-Definition fest, die bewirken, dass der generierte Code "Hooks" für Ihren eigenen Code bereitstellt.
 
-     Wenn Sie festlegen, z. B. die **hat benutzerdefinierten Konstruktor** Möglichkeit, eine Domänenklasse, erstellen Sie die Projektmappe, und sehen Sie Fehlermeldungen. Wenn Sie auf eine dieser Fehlermeldungen doppelklicken, sehen Sie Kommentare im generierten Code, die erläutern, was der benutzerdefinierte Code enthalten sollte.
+     Wenn Sie z. b. die Option verfügt über einen **benutzerdefinierten Konstruktor** einer Domänen Klasse und dann die Projekt Mappe erstellen, werden Fehlermeldungen angezeigt. Wenn Sie auf eine dieser Fehlermeldungen doppelklicken, sehen Sie Kommentare im generierten Code, die erläutern, was der benutzerdefinierte Code enthalten sollte.
 
-- Schreiben Sie eigene Textvorlagen, um Code speziell für Ihre Anwendung zu erstellen. Sie Includedateien können Teile der Vorlagen freigeben, die in vielen Projekten sind, und Sie können Visual Studio-Projektvorlagen zum Einrichten von Projekten, die mit Ihrer eigenen Dateistruktur initialisiert werden erstellen.
+- Schreiben Sie eigene Textvorlagen, um Code speziell für Ihre Anwendung zu erstellen. Sie können Include-Dateien verwenden, um Teile der Vorlagen freizugeben, die für viele Projekte gelten, und Sie können Visual Studio-Projektvorlagen erstellen, um Projekte einzurichten, die mit ihrer eigenen Dateistruktur initialisiert werden.
 
 ## <a name="generated-files-in-dsl"></a>Generierte Dateien in "Dsl"
- Die folgenden generierten Dateien werden in der **Dsl** Projekt.
+ Die folgenden generierten Dateien werden im **DSL** -Projekt angezeigt.
 
- *Ihredsl* `Schema.xsd`
+ *Yourdsl* -`Schema.xsd`
 
- Das Schema für Dateien, die Instanzen Ihrer DSL enthalten. Diese Datei wird kopiert, auf die Kompilierung (**Bin**) Directory. Wenn Sie Ihre DSL installieren, können Sie diese Datei, um kopieren **\Programme\Microsoft Visual Studio 11.0\Xml\Schemas** sodass Modelldateien überprüft werden können. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
+ Das Schema für Dateien, die Instanzen Ihrer DSL enthalten. Diese Datei wird in das Verzeichnis für die Kompilierung (**bin**) kopiert. Wenn Sie die DSL installieren, können Sie diese Datei in " **\Programme\Microsoft Visual Studio 11.0 \ xml\schemas** " kopieren, damit die Modelldateien überprüft werden können. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
- Wenn Sie die Serialisierung durch Festlegen von Optionen im DSL-Explorer anpassen, ändert sich das Schema entsprechend. Wenn Sie jedoch eigenen Serialisierungscode schreiben, bildet diese Datei das eigentliche Schema möglicherweise nicht mehr ab. Weitere Informationen finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
+ Wenn Sie die Serialisierung durch Festlegen von Optionen im DSL-Explorer anpassen, ändert sich das Schema entsprechend. Wenn Sie jedoch eigenen Serialisierungscode schreiben, bildet diese Datei das eigentliche Schema möglicherweise nicht mehr ab. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
  `ConnectionBuilders.cs`
 
- Ein Verbindungs-Generator ist eine Klasse, die Beziehungen erstellt. Es ist der Code für ein Verbindungstool. Diese Datei enthält ein Paar von Klassen für jedes Verbindungstool. Die Namen der Domäne domänenbeziehung und Tools werden deren Namen abgeleitet: *Beziehung*-Generator und *Konnektortool*ConnectAction.
+ Ein Verbindungs-Generator ist eine Klasse, die Beziehungen erstellt. Es ist der Code für ein Verbindungstool. Diese Datei enthält ein Paar von Klassen für jedes Verbindungstool. Ihre Namen werden von den Namen der Domänen Beziehung und des Verbindungs Tools abgeleitet: *Beziehungs*Generator und *Connector Tool*connectaction.
 
  (Im Beispiel der Komponentenprojektmappe trägt einer der Verbindungs-Generatoren den Namen "ConnectionBuilder". Dies ist ein Zufall, da die Domänenbeziehung "Connection" genannt wurde.)
 
- Die Beziehung wird erstellt, der *Beziehung* `Builder.Connect()` Methode. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Zum Beispiel:
+ Die Beziehung wird in der *Beziehung* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Beispiel:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
- Jede Generator-Klasse wird generiert, von einem Knoten in der **Verbindungs-Generatoren** Abschnitt im DSL-Explorer. Eine `Connect`-Methode kann Beziehungen zwischen einem oder mehreren Paaren von Domänenklassen erstellen. Jedes Paar wird durch eine Direktive für Linkverbindungen definiert, die Sie im DSL-Explorer unter dem Generator-Knoten finden.
+ Jede Generator Klasse wird von einem Knoten im Abschnitt **Verbindungs** -Generatoren im DSL-Explorer generiert. Eine `Connect`-Methode kann Beziehungen zwischen einem oder mehreren Paaren von Domänenklassen erstellen. Jedes Paar wird durch eine Direktive für Linkverbindungen definiert, die Sie im DSL-Explorer unter dem Generator-Knoten finden.
 
  Sie könnten beispielsweise einem Verbindungs-Generator Direktiven für Linkverbindungen für jeden der drei Typen von Beziehungen in der Beispiel-DSL hinzufügen. Auf diese Weise erhält der Benutzer ein einziges Verbindungstool. Der Typ der instanziierten Beziehung hängt von den Typen der Quell- und Zielelemente ab, die vom Benutzer ausgewählt werden.  Klicken Sie zum Hinzufügen von Direktiven für Linkverbindungen mit der rechten Maustaste auf einen Generator im DSL-Explorer.
 
- Wählen Sie zum Schreiben von benutzerdefiniertem Code, der bei der Erstellung eines bestimmten Typs von Domänenbeziehung ausgeführt wird, unter dem Generator-Knoten die entsprechende Direktive für Linkverbindungen aus. Legen Sie im Eigenschaftenfenster **verwendet benutzerdefiniertes verbinden**. Erstellen Sie die Projektmappe, und stellen Sie dann den Code bereit, um die entstandenen Fehler zu korrigieren.
+ Wählen Sie zum Schreiben von benutzerdefiniertem Code, der bei der Erstellung eines bestimmten Typs von Domänenbeziehung ausgeführt wird, unter dem Generator-Knoten die entsprechende Direktive für Linkverbindungen aus. Legen Sie in der Eigenschaftenfenster **benutzerdefinierte Verbindung verwendet**. Erstellen Sie die Projektmappe, und stellen Sie dann den Code bereit, um die entstandenen Fehler zu korrigieren.
 
- Um benutzerdefinierten Code schreiben, die ausgeführt wird, wenn der Benutzer dieses Verbindungstool verwendet, legen Sie die **ist Benutzerdefiniert** Eigenschaft des Verbindungs-Generators. Sie können Code bereitstellen, der bestimmt, ob ein Element zulässig ist, ob eine bestimmte Kombination aus Quelle und Ziel zulässig ist und welche Aktualisierungen am Modell vorgenommen werden sollen, wenn eine Verbindung hergestellt wird. Sie könnten eine Verbindung beispielsweise nur zulassen, wenn damit keine Schleife im Diagramm erstellt wird. Statt eines einzelnen Beziehungslinks könnten Sie eine komplexeres Muster mehrerer miteinander verknüpfter Elemente zwischen Quelle und Ziel instanziieren.
+ Um benutzerdefinierten Code zu schreiben, der immer dann ausgeführt wird, wenn der Benutzer dieses Verbindungs Tool verwendet, legen Sie die Eigenschaft **ist Custom** des Verbindungs-Generators fest. Sie können Code bereitstellen, der bestimmt, ob ein Element zulässig ist, ob eine bestimmte Kombination aus Quelle und Ziel zulässig ist und welche Aktualisierungen am Modell vorgenommen werden sollen, wenn eine Verbindung hergestellt wird. Sie könnten eine Verbindung beispielsweise nur zulassen, wenn damit keine Schleife im Diagramm erstellt wird. Statt eines einzelnen Beziehungslinks könnten Sie eine komplexeres Muster mehrerer miteinander verknüpfter Elemente zwischen Quelle und Ziel instanziieren.
 
  `Connectors.cs`
 
  Enthält die Klassen für die Konnektoren, bei denen es sich um die Diagrammelemente handelt, die üblicherweise Verweisbeziehungen darstellen. Jede Klasse wird aus einem Konnektor in der DSL-Definition generiert. Jede Konnektorklasse wird von <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> abgeleitet.
 
- Um die Farbe und einige andere Stil Features Variable zur Laufzeit zu machen, mit der rechten Maustaste in der Klasse im DSL-Definitionsdiagramm, und zeigen Sie auf **verfügbare hinzufügen**.
+ Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die**Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
 
  Informationen dazu, wie weitere Stilmerkmale zur Laufzeit variabel gemacht werden, finden Sie in den Beispielen <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> und <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
 
@@ -94,7 +94,7 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
  Enthält die Klasse, die das Diagramm definiert. Sie wird von <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> abgeleitet.
 
- Um die Farbe und einige andere Stil Features Variable zur Laufzeit zu machen, mit der rechten Maustaste in der Klasse im DSL-Definitionsdiagramm, und zeigen Sie auf **verfügbare hinzufügen**.
+ Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die**Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
 
  Darüber hinaus enthält die Datei die Regel `FixupDiagram`, die angewendet wird, wenn dem Modell ein neues Element hinzugefügt wird. Die Regel fügt eine neue Form hinzu und verknüpft die Form mit dem Modellelement.
 
@@ -102,7 +102,7 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
  Mit diesem Direktivenprozessor können Ihre Benutzer Textvorlagen schreiben, die eine Instanz Ihrer DSL lesen. Der Direktivenprozessor lädt die Assemblys (DLLs) für Ihre DSL und fügt effektiv `using`-Anweisungen für Ihren Namespace ein. So kann der Code in den Textvorlagen die Klassen und Beziehungen verwenden, die Sie in Ihrer DSL definiert haben.
 
- Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md) und [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).
+ Weitere Informationen finden Sie unter Erstellen [von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md) und [Erstellen von benutzerdefinierten T4-Text Vorlagen-direktivenprozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
@@ -110,7 +110,7 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
  Jede Domänenklasse enthält Folgendes:
 
-- Eine Eigenschaftendefinition und eine geschachtelte Handlerklasse für jede Domäneneigenschaft. Sie können OnValueChanging() und OnValueChanged() überschreiben. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md).
+- Eine Eigenschaftendefinition und eine geschachtelte Handlerklasse für jede Domäneneigenschaft. Sie können OnValueChanging() und OnValueChanged() überschreiben. Weitere Informationen finden Sie unter [Domänen Eigenschafts Wert-Änderungs Handler](../modeling/domain-property-value-change-handlers.md).
 
    In der Beispiel-DSL enthält die `Comment`-Klasse eine `Text`-Eigenschaft und eine `TextPropertyHandler`-Handlerklasse.
 
@@ -118,9 +118,9 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
    In der Beispiel-DSL weist die `Comment`-Klasse Accessoren auf, die über die Einbettungsbeziehung `ComponentModelHasComments` auf das übergeordnete Modell zugreifen.
 
-- Konstruktoren. Wenn Sie diese außer Kraft setzen möchten, legen Sie **hat benutzerdefinierten Konstruktor** in der Domänenklasse.
+- Konstruktoren. Wenn Sie diese überschreiben möchten, legen Sie für die Domänen Klasse **einen benutzerdefinierten Konstruktor** fest.
 
-- EGP-Handlermethoden (Elementgruppenprototyp). Diese sind erforderlich, wenn der Benutzer kann *Merge* (hinzufügen) ein anderes Element in Instanzen dieser Klasse. Üblicherweise führt der Benutzer dazu einen Ziehvorgang von einem Elementtool oder einer anderen Form oder einen Einfügevorgang aus.
+- EGP-Handlermethoden (Elementgruppenprototyp). Diese sind erforderlich, wenn der Benutzer ein anderes Element auf Instanzen dieser Klasse zusammen *führen* (hinzufügen) kann. Üblicherweise führt der Benutzer dazu einen Ziehvorgang von einem Elementtool oder einer anderen Form oder einen Einfügevorgang aus.
 
    In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Die
 
@@ -133,13 +133,13 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 > [!NOTE]
 > Sie ist nicht mit der Stammklasse des Modells identisch.
 
- Mit Kopier- und Löschabschlüssen wird definiert, welche anderen Elemente aufgenommen werden sollen, wenn ein Element kopiert oder gelöscht wird. Sie können dieses Verhalten steuern, durch Festlegen der **überträgt Kopie** und **löschen weitergeben** Eigenschaften der Rollen auf beiden Seiten jeder Beziehung. Wenn die Werte dynamisch ermittelt werden sollen, können Sie Code schreiben, um die Methoden der Abschlussklassen zu überschreiben.
+ Mit Kopier- und Löschabschlüssen wird definiert, welche anderen Elemente aufgenommen werden sollen, wenn ein Element kopiert oder gelöscht wird. Sie können dieses Verhalten steuern, indem Sie die Eigenschaften " **Kopie kopieren** " und "Weitergabe **Löschen** " der Rollen auf jeder Seite jeder Beziehung festlegen. Wenn die Werte dynamisch ermittelt werden sollen, können Sie Code schreiben, um die Methoden der Abschlussklassen zu überschreiben.
 
  `DomainModelResx.resx`
 
  Enthält Zeichenfolgen wie die Beschreibungen von Domänenklassen und -eigenschaften, Eigenschaftennamen, Toolboxbezeichnungen, Standardfehlermeldungen und andere Zeichenfolgen, die dem Benutzer angezeigt werden können. Die Datei könnte auch Toolsymbole und Bilder für Bildformen enthalten.
 
- Diese Datei ist an die erstellte Assembly gebunden und enthält die Standardwerte für diese Ressourcen. Sie können Ihre DSL lokalisieren, indem Sie eine Satellitenassembly erstellen, die eine lokalisierte Version der Ressourcen enthält. Diese Version wird verwendet, wenn die DSL in einer Kultur erstellt wird, die mit den lokalisierten Ressourcen übereinstimmt. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
+ Diese Datei ist an die erstellte Assembly gebunden und enthält die Standardwerte für diese Ressourcen. Sie können Ihre DSL lokalisieren, indem Sie eine Satellitenassembly erstellen, die eine lokalisierte Version der Ressourcen enthält. Diese Version wird verwendet, wenn die DSL in einer Kultur erstellt wird, die mit den lokalisierten Ressourcen übereinstimmt. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
  `DomainRelationships.cs`
 
@@ -153,15 +153,15 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
  In Beziehungsrollen, in denen Sie die Multiplizität 1..1 oder 1..* angegeben haben, sollte der Benutzer informiert werden, dass mindestens eine Instanz der Beziehung erforderlich ist. Diese Datei enthält Validierungseinschränkungen, mit denen diese Warnungen implementiert werden. Der Link 1..1 zu einem übergeordneten Einbettungselement wird nicht überprüft.
 
- Für diese Einschränkungen ausgeführt werden, Sie müssen festgelegt werden eines der **verwendet...**  "Optionen" der **editor\validierung** Knoten im DSL-Explorer. Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
+ Damit diese Einschränkungen ausgeführt werden, müssen Sie im DSL-Explorer im Knoten **Editor \ Validierung** eine der Optionen **Verwendungs** Optionen festgelegt haben. Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
 
  `PropertiesGrid.cs`
 
- Diese Datei enthält nur Code, wenn Sie einer Domäneneigenschaft einen benutzerdefinierten Typdeskriptor angefügt haben. Weitere Informationen finden Sie unter [Anpassen des Eigenschaftenfensters](../modeling/customizing-the-properties-window.md).
+ Diese Datei enthält nur Code, wenn Sie einer Domäneneigenschaft einen benutzerdefinierten Typdeskriptor angefügt haben. Weitere Informationen finden Sie unter [Anpassen des Fensters "Eigenschaften](../modeling/customizing-the-properties-window.md)".
 
  `SerializationHelper.cs`
 
-- Eine Validierungsmethode, mit der sichergestellt wird, dass ein Moniker nicht auf zwei Elemente verweist. Weitere Informationen finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
+- Eine Validierungsmethode, mit der sichergestellt wird, dass ein Moniker nicht auf zwei Elemente verweist. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 - SerializationHelper-Klasse, die Funktionen bereitstellt, die von Serialisierungsklassen gemeinsam verwendet werden.
 
@@ -169,15 +169,15 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
   Eine Serialisierungsklasse für alle Domänenklassen, Beziehungen, Formen, Konnektoren, Diagramme und Modelle.
 
-  Viele der Funktionen dieser Klassen können gesteuert werden, indem Sie die Einstellungen im DSL-Explorer unter **XML-Serialisierungsverhalten**.
+  Viele der Funktionen dieser Klassen können durch die Einstellungen im DSL-Explorer unter dem XML- **Serialisierungsverhalten**gesteuert werden.
 
   `Shapes.cs`
 
-  Eine Klasse für jede Formklasse in der DSL-Definition. Formen werden von <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> abgeleitet. Weitere Informationen finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
+  Eine Klasse für jede Formklasse in der DSL-Definition. Formen werden von <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> abgeleitet. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-  Um die generierten Methoden mit eigenen Methoden in einer partiellen Klasse überschreiben, legen **generiert doppelte Ableitungen** für den Connector in der DSL-Definition. Um einen Konstruktor durch eigenen Code ersetzen, legen Sie **hat benutzerdefinierten Konstruktor**.
+  Wenn Sie die generierten Methoden mit ihren eigenen Methoden in einer partiellen Klasse überschreiben möchten, generiert Set eine **Double-abgeleitete** für den Connector in der DSL-Definition. Um einen Konstruktor durch ihren eigenen Code zu ersetzen, **hat Set einen benutzerdefinierten Konstruktor**.
 
-  Um die Farbe und einige andere Stil Features Variable zur Laufzeit zu machen, mit der rechten Maustaste in der Klasse im DSL-Definitionsdiagramm, und zeigen Sie auf **verfügbare hinzufügen**.
+  Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die**Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
 
   Informationen dazu, wie weitere Stilmerkmale zur Laufzeit variabel gemacht werden, finden Sie in den Beispielen <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> und <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
 
@@ -185,14 +185,14 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
   Richtet die Toolbox ein, indem Elementgruppenprototypen in den Elementtools installiert werden. Kopien dieser Prototypen werden mit den Zielelementen zusammengeführt, wenn der Benutzer das Tool ausführt.
 
-  Sie könnten `CreateElementPrototype()` überschreiben, um ein Toolboxelement zu definieren, mit dem eine Gruppe aus mehreren Objekten erstellt wird. Sie könnten z. B. ein Element definieren, das Objekte mit Unterkomponenten darstellt. Setzen Sie nach den codeänderungen die experimentelle Instanz von Visual Studio, um den Toolboxcache zu leeren zurück.
+  Sie könnten `CreateElementPrototype()` überschreiben, um ein Toolboxelement zu definieren, mit dem eine Gruppe aus mehreren Objekten erstellt wird. Sie könnten z. B. ein Element definieren, das Objekte mit Unterkomponenten darstellt. Nachdem Sie den Code geändert haben, setzen Sie die experimentelle Instanz von Visual Studio zurück, um den Toolbox Cache zu löschen.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Generierte Dateien im DslPackage-Projekt
- "Dslpackage" verbindet das DSL-Modell für die Visual Studio-Shell, das Fenster, Toolbox und Menübefehle verwalten können. Die meisten der Klassen werden doppelt abgeleitet, sodass Sie deren Methoden überschreiben können.
+ Dslpackage verbindet das DSL-Modell mit der Visual Studio-Shell und verwaltet die Fenster-, Toolbox-und Menübefehle. Die meisten der Klassen werden doppelt abgeleitet, sodass Sie deren Methoden überschreiben können.
 
  `CommandSet.cs`
 
- Die Befehle im Menü mit der rechten Maustaste, die im Diagramm sichtbar sind. Sie können diesen Satz anpassen oder erweitern. Diese Datei enthält den Code für die Befehle. Die Position der Befehle in Menüs wird durch die Datei "Commands.vsct" bestimmt. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
+ Die Kontextmenü Befehle, die im Diagramm sichtbar sind. Sie können diesen Satz anpassen oder erweitern. Diese Datei enthält den Code für die Befehle. Die Position der Befehle in Menüs wird durch die Datei "Commands.vsct" bestimmt. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -200,13 +200,13 @@ Drücken Sie **F5** und experimentieren Sie, wenn Sie mit dieser Projektmappenvo
 
  `DocData.cs`
 
- *Ihredsl* `DocData` verwaltet, laden und Speichern eines Modells in der Datei und erstellt die Store-Instanz.
+ *Yourdsl* `DocData` das Laden und Speichern eines Modells in einer Datei und das Erstellen der Speicher Instanz.
 
  Wenn Sie Ihre DSL beispielsweise in einer Datenbank statt in einer Datei speichern möchten, können Sie die Methoden `Load` und `Save` überschreiben.
 
  `DocView.cs`
 
- *Ihredsl* `DocView` verwaltet das Fenster, in dem das Diagramm angezeigt wird. Sie könnten das Diagramm beispielsweise in eine Windows Form einbetten:
+ *Yourdsl* `DocView` verwaltet das Fenster, in dem das Diagramm angezeigt wird. Sie könnten das Diagramm beispielsweise in eine Windows Form einbetten:
 
  Fügen Sie dem DslPackage-Projekt eine Datei mit Benutzersteuerelementen hinzu. Fügen Sie ein Panel hinzu, in dem das Diagramm angezeigt werden kann. Fügen Sie Schaltflächen und andere Steuerelemente hinzu. Fügen Sie in der Codeansicht des Formulars den folgenden Code hinzu; passen Sie dabei die Namen an Ihre DSL an:
 
@@ -278,11 +278,11 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- Instanziiert `DocData` und `DocView`. Es erfüllt eine Standardschnittstelle, die Visual Studio zum Öffnen eines Editors verwendet, wenn Ihr DSL-Paket startet. Auf die Datei wird im `ProvideEditorFactory`-Attribut in "Package.cs" verwiesen.
+ Instanziiert `DocData` und `DocView`. Es erfüllt eine Standardschnittstelle, die Visual Studio verwendet, um einen Editor zu öffnen, wenn das DSL-Paket gestartet wird. Auf die Datei wird im `ProvideEditorFactory`-Attribut in "Package.cs" verwiesen.
 
  `GeneratedVSCT.vsct`
 
- Sucht nach der standardmäßigen Menübefehle in Menüs, beispielsweise im Diagramm (Context) Kontextmenü der **bearbeiten** Menü, und So weiter. Der Code für die Befehle befindet sich in "CommandSet.cs". Sie können die Standardbefehle verschieben oder ändern, und Sie können eigene Befehle hinzufügen. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
+ Gibt die Standardmenü Befehle in Menüs an, z. b. das Diagramm mit der rechten Maustaste (Kontextmenü), das Menü **Bearbeiten** usw. Der Code für die Befehle befindet sich in "CommandSet.cs". Sie können die Standardbefehle verschieben oder ändern, und Sie können eigene Befehle hinzufügen. Weitere Informationen finden Sie unter [Schreiben von Benutzerbefehlen und-Aktionen](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -333,16 +333,16 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- Diese Datei definiert, wie die DSL in Visual Studio integriert ist. Attribute in der Paketklasse registrieren die DSL als Handler für Dateien, die Ihre Dateierweiterung aufweisen, definieren die Toolbox und definieren, wie ein neues Fenster geöffnet wird. Die Initialize()-Methode wird einmal aufgerufen, wenn die erste DSL in eine Instanz von Visual Studio geladen wird.
+ Diese Datei definiert, wie sich die DSL in Visual Studio integriert. Attribute in der Paketklasse registrieren die DSL als Handler für Dateien, die Ihre Dateierweiterung aufweisen, definieren die Toolbox und definieren, wie ein neues Fenster geöffnet wird. Die Initialize ()-Methode wird einmal aufgerufen, wenn die erste DSL in eine Visual Studio-Instanz geladen wird.
 
  `Source.extension.vsixmanifest`
 
  Um diese Datei anzupassen, bearbeiten Sie die `.tt`-Datei.
 
 > [!WARNING]
-> Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Klicken Sie im Projektmappen-Explorer die Datei auszuwählen, und stellen Sie sicher, dass die **Include in VSIX-Datei** Eigenschaft `True`.
+> Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Wählen Sie in Projektmappen-Explorer die Datei aus, und vergewissern Sie sich, dass die Eigenschaft **in VSIX einschließen** `True` ist.
 
- Mit dieser Datei wird gesteuert, wie die DSL in eine Visual Studio-Integrationserweiterung (VSIX) verpackt wird. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
+ Mit dieser Datei wird gesteuert, wie die DSL in eine Visual Studio-Integrationserweiterung (VSIX) verpackt wird. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Siehe auch
 

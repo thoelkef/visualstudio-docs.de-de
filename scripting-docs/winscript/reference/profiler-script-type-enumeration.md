@@ -15,14 +15,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca90a566db422d75fefc44267ffe10504bb872ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e08583f9bb914adfbd144715646991c6070f3f32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816784"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574571"
 ---
-# <a name="profilerscripttype-enumeration"></a>PROFILER_SCRIPT_TYPE-Enumeration
+# <a name="profiler_script_type-enumeration"></a>PROFILER_SCRIPT_TYPE-Enumeration
 Legt den Typ des Skripts fest.  
   
 ## <a name="syntax"></a>Syntax  
@@ -40,13 +40,13 @@ typedef enum {
   
 |Member|Beschreibung|  
 |------------|-----------------|  
-|PROFILER_SCRIPT_TYPE_USER|Gibt die benutzerspezifischen Skriptcode an.|  
-|PROFILER_SCRIPT_TYPE_DYNAMIC|Gibt die Skriptcode, der während der Ausführung dynamisch generiert wird.|  
-|PROFILER_SCRIPT_TYPE_NATIVE|Gibt den Skripttyp für systemeigene Funktionen und Objekte, die von der Skript-Engine definiert sind.|  
-|PROFILER_SCRIPT_TYPE_DOM|Gibt einen Aufruf in die (DOKUMENTOBJEKTMODELL) von Internet Explorer, z. B. einen Aufruf der `document.getElementById` Methode.|  
+|PROFILER_SCRIPT_TYPE_USER|Gibt den Benutzer geschriebenen Skriptcode an.|  
+|PROFILER_SCRIPT_TYPE_DYNAMIC|Gibt Skriptcode an, der während der Ausführung dynamisch generiert wird.|  
+|PROFILER_SCRIPT_TYPE_NATIVE|Gibt den Skripttyp für Native Funktionen und Objekte an, die von der Skript-Engine definiert werden.|  
+|PROFILER_SCRIPT_TYPE_DOM|Gibt einen-Dokumentobjektmodell (DOM) von Internet Explorer an, z. b. einen aufzurufenden `document.getElementById`-Methode.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Active Script Profiler Konstanten, Enumerationen und Strukturen](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+ [Active Script Profiler-Konstanten, Enumerationen und Strukturen](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
+ [Iactivescriptprofilercallback:: scriptkompilierte](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
+ [IActiveScriptProfilerCallback2:: onfunctionenterbyname](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

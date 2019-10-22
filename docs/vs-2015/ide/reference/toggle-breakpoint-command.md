@@ -12,40 +12,36 @@ helpviewer_keywords:
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a57f02a7c1b9845f4248daf2282b6f285f95489
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25c9a22db7ae136068ec374f874453dbd4a7c4b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193377"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658621"
 ---
 # <a name="toggle-breakpoint-command"></a>Befehl "Haltepunkt ein/aus"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-Debug.ToggleBreakpoint [text]  
-```  
-  
-## <a name="arguments"></a>Argumente  
- `text`  
- Optional. Wenn Text angegeben ist, wird die Zeile als benannter Haltepunkt markiert. Andernfalls wird die Zeile als unbenannter Haltepunkt markiert. Ähnliches geschieht, wenn Sie F9 drücken.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird der aktuelle Haltepunkt umgeschaltet.  
-  
-```  
->Debug.ToggleBreakpoint  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.
+
+## <a name="syntax"></a>Syntax
+
+```
+Debug.ToggleBreakpoint [text]
+```
+
+## <a name="arguments"></a>Argumente
+ `text` ist optional. Wenn Text angegeben ist, wird die Zeile als benannter Haltepunkt markiert. Andernfalls wird die Zeile als unbenannter Haltepunkt markiert. Ähnliches geschieht, wenn Sie F9 drücken.
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird der aktuelle Haltepunkt umgeschaltet.
+
+```
+>Debug.ToggleBreakpoint
+```
+
+## <a name="see-also"></a>Siehe auch
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

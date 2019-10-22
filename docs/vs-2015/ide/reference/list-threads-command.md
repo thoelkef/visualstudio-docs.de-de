@@ -12,44 +12,38 @@ helpviewer_keywords:
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199107"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671143"
 ---
 # <a name="list-threads-command"></a>Befehl "Threads auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zeigt eine Liste der Threads im aktuellen Programm an.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-Debug.ListThreads [index]  
-```  
-  
-## <a name="arguments"></a>Argumente  
- `index`  
- Optional. Wählt einen Thread nach seinem Index als aktuellen Thread aus  
-  
-## <a name="remarks"></a>Anmerkungen  
- Wenn angegeben, kennzeichnet das `index`-Argument den angegebenen Thread als aktuellen Thread. Ein Sternchen (*) wird in der Liste neben dem aktuellen Thread angezeigt.  
-  
-## <a name="example"></a>Beispiel  
-  
-```  
->Debug.ListThreads   
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Befehl „Aufrufliste auflisten“](../../ide/reference/list-call-stack-command.md)   
- [Befehl „Disassemblierung auflisten“](../../ide/reference/list-disassembly-command.md)   
- [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such-/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Zeigt eine Liste der Threads im aktuellen Programm an.
+
+## <a name="syntax"></a>Syntax
+
+```
+Debug.ListThreads [index]
+```
+
+## <a name="arguments"></a>Argumente
+ `index` ist optional. Wählt einen Thread nach seinem Index als aktuellen Thread aus
+
+## <a name="remarks"></a>Anmerkungen
+ Wenn angegeben, kennzeichnet das `index`-Argument den angegebenen Thread als aktuellen Thread. Ein Sternchen (*) wird in der Liste neben dem aktuellen Thread angezeigt.
+
+## <a name="example"></a>Beispiel
+
+```
+>Debug.ListThreads
+```
+
+## <a name="see-also"></a>Siehe auch
+ [Auflisten der Befehls](../../ide/reference/list-call-stack-command.md) [Listen-Befehlsliste disassemblierungsbefehl](../../ide/reference/list-disassembly-command.md) [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md) [Befehlsfenster](../../ide/reference/command-window.md) [Suchen/Befehlsfeld](../../ide/find-command-box.md) [Visual Studio-Befehls Aliase](../../ide/reference/visual-studio-command-aliases.md)

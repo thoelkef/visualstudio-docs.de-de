@@ -8,18 +8,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582005"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693012"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
 
 Das Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio (VSCEIP) wurde dafür entwickelt, Microsoft bei der kontinuierlichen Verbesserung von Visual Studio zu unterstützen. Dieses Programm [sammelt Informationen zu Fehlern](../ide/diagnostic-data-collection.md), Computerhardware und der Verwendung von Visual Studio durch die Benutzer, ohne diese bei ihren Aufgaben am Computer zu unterbrechen. Durch die gesammelten Informationen kann Microsoft einfacher ermitteln, welche Features verbessert werden müssen. In diesem Dokument wird erläutert, wie VSCEIP aktiviert oder deaktiviert werden kann.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
+> [!NOTE]
+> Einstellungen für das Aktivieren oder Deaktivieren von VSCEIP-Telemetrie gelten nicht für „Problem melden“ in Visual Studio. Beim Melden eines Problems werden nur dann Protokolle gesammelt und an Microsoft gesendet, wenn Sie durch Klicken auf „Übermitteln“ Ihre Genehmigung dafür erteilen. Wenn Sie Protokolle verwalten möchten, bevor Sie diese per „Problem melden“ übermitteln, finden Sie weitere Informationen unter [Datenschutz in der Developer Community](./developer-community-privacy.md).
 
 ## <a name="opt-in-or-out"></a>Aktivierung oder Deaktivierung
 
@@ -70,7 +72,7 @@ Weitere Informationen zu den durch VSCEIP gesammelten, verarbeiteten oder übert
 ## <a name="see-also"></a>Siehe auch
 
 * [Von Visual Studio gesammelte Diagnoseinformationen](diagnostic-data-collection.md)
-* [Sprechen Sie mit uns](../ide/talk-to-us.md)
+* [Visual Studio-Feedbackoptionen](../ide/feedback-options.md)
 * [Melden eines Problems mit Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
 * [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement)

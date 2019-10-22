@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::Suspend | Microsoft-Dokumentation
+title: 'Iremotedebugapplicationthread:: Suspend | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ba783b1f6f275eafe05872ad3755b425b65407e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cb5d4d8c541016de71ee1aabffe0b211f850cb7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788151"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575474"
 ---
 # <a name="iremotedebugapplicationthreadsuspend"></a>IRemoteDebugApplicationThread::Suspend
-Hält den Thread.  
+Hält den Thread an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,7 +37,7 @@ HRESULT Suspend(
   
 #### <a name="parameters"></a>Parameter  
  `pdwCount`  
- [out] Der Unterbrechungszähler des Threads.  
+ vorgenommen Die Unterbrechungs Anzahl für den Thread.  
   
 ## <a name="return-value"></a>Rückgabewert  
  Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
@@ -47,7 +47,7 @@ HRESULT Suspend(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## <a name="remarks"></a>Hinweise  
- Wenn diese Methode den Thread unterbricht, erhöht er den Unterbrechungszähler.  
+ Wenn diese Methode den Thread anhält, erhöht Sie den anhaltezähler.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)
