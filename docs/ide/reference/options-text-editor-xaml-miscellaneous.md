@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969240"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666625"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Optionen, Text-Editor, XAML, Sonstiges
 
@@ -47,7 +47,7 @@ Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen
 |-|-|
 |**Endtags**|Gibt an, ob das Endtag eines Elements automatisch generiert wird, wenn Sie das Starttag mit dem Größer-als-Zeichen (>) schließen.|
 |**Attributanführungszeichen**|Gibt an, ob einschließende Anführungszeichen generiert werden, wenn ein Attributwert aus der Drop-down-Liste der Anweisungsvervollständigung ausgewählt ist.|
-|**Schließende geschweifte Klammern für MarkupExtensions**|Gibt an, ob die schließende geschweifte Klammer (**}**) einer Markuperweiterung automatisch generiert wird, wenn Sie das öffnende geschweifte Klammerzeichen (**{**) eingeben.|
+|**Schließende geschweifte Klammern für MarkupExtensions**|Gibt an, ob die schließende geschweifte Klammer ( **}** ) einer Markuperweiterung automatisch generiert wird, wenn Sie das öffnende geschweifte Klammerzeichen ( **{** ) eingeben.|
 |**Kommas zum Trennen von MarkupExtension-Parametern**|Gibt an, ob Kommas generiert werden, wenn Sie mehr als einen Parameter in einer Markuperweiterung eingeben.|
 
 ## <a name="errors-and-warnings"></a>Fehler und Warnungen

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918040"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777468"
 ---
 # <a name="installation"></a>Installation
 
@@ -44,7 +44,7 @@ Bevor Sie Deep Learning-Modelle auf Ihrem lokalen Computer einrichten, stellen S
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA-GPU-Treiber
 
-Deep Learning-Frameworks nutzen die NVIDIA-GPU, um Computer schnell und genau lernen zu lassen und auf Künstliche Intelligenz hinzuarbeiten. Wenn Ihr Computer über NVIDIA-GPU-Karten verfügt, lesen Sie [NVIDIA-Treiberdownloads](http://www.nvidia.com/Download/index.aspx), oder versuchen Sie ein Betriebssystemupdate, um den neuesten Treiber zu installieren.
+Deep Learning-Frameworks nutzen die NVIDIA-GPU, um Computer schnell und genau lernen zu lassen und auf Künstliche Intelligenz hinzuarbeiten. Wenn Ihr Computer über NVIDIA-GPU-Karten verfügt, lesen Sie [NVIDIA-Treiberdownloads](https://www.nvidia.com/Download/index.aspx), oder versuchen Sie ein Betriebssystemupdate, um den neuesten Treiber zu installieren.
 
 ### <a name="cuda"></a>CUDA
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-[PyTorch](http://pytorch.org/) ist ein Python-Paket mit zwei allgemeine Funktionen:
+[PyTorch](https://pytorch.org/) ist ein Python-Paket mit zwei allgemeine Funktionen:
 
 - Tensor-Berechnung (wie bei NumPy) mit hoher GPU-Beschleunigung
 - Deep Neural-Netzwerke erstellen Builds auf einem bandbasierten Autograd-System

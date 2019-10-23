@@ -2,8 +2,8 @@
 title: Refactoring des Umbenennens
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186576"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655620"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring des Umbenennens eines Codesymbols
 
@@ -73,7 +73,7 @@ Dieses Refactoring gilt für:
 - Wenn Sie ab Visual Studio 2019 Version 16.3 einen Typ umbenennen, der mit dem Namen der Datei übereinstimmt, in der er sich befindet, wird ein Kontrollkästchen angezeigt, mit dem Sie die Datei zur gleichen Zeit umbenennen können. Diese Option wird angezeigt, wenn Sie eine Klasse, eine Schnittstelle oder eine Enumeration umbenennen. Diese Option wird für partielle Typen mit mehreren Definitionen nicht unterstützt.
 
    ![Umbenennen einer Animation mit Datei: C#](media/rename-with-file-animated-cs.gif)
-   
+
 - Wenn Sie einen bereits vorhandenen Namen verwenden, der zu einem Konflikt führen würde, werden Sie durch das Feld **Umbenennen** darüber informiert.
 
    ![Umbenennungskonflikt](media/rename-conflict-cs.png)

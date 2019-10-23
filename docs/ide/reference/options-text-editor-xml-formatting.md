@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccd5fdee974e7222d1009b508b7ef90758fafcb6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969266"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666601"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Optionen, Text-Editor, XML, Formatierung
 
@@ -49,7 +49,7 @@ Formatiert den aus der Zwischenablage eingefügten XML-Text neu.
 
 Formatiert das Element neu, wenn das Endtag vervollständigt wird.
 
-## <a name="mixed-content"></a>	Gemischter Inhalt
+## <a name="mixed-content"></a>Gemischter Inhalt
 
 **Gemischten Inhalt standardmäßig formatieren**
 

@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), FXC task
-- FXC task (MSBuild (Visual C++))
+- MSBuild (C++), FXC task
+- FXC task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931479"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747321"
 ---
 # <a name="fxc-task"></a>FXC-Aufgabe
 
@@ -32,9 +32,9 @@ Verwenden Sie HLSL-Shader-Compiler im Buildprozess.
 
 In der folgenden Tabelle werden die Parameter der Aufgabe **FXC** beschrieben:
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Optionaler **string[]**-Parameter.<br/><br/>Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind.<br/><br/>Verwenden Sie `/I[path]`.|
+|**AdditionalIncludeDirectories**|Optionaler **string[]** -Parameter.<br/><br/>Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind.<br/><br/>Verwenden Sie `/I[path]`.|
 |**AdditionalOptions**|Optionaler **string**-Parameter.|
 |**AllResourcesBound**|Optionaler **bool**-Parameter.<br/><br/>Der Compiler geht davon aus, dass alle Ressourcen, auf die ein Shader ggf. verweist, gebunden sind und für die Dauer der Shaderausführung einen ordnungsgemäßen Zustand aufweisen. Verfügbar für Shadermodell 5.1 und höher.<br/><br/>Verwenden Sie `/all_resources_bound`.|
 |**AssemblerOutput**|Optionaler **string**-Parameter.<br/><br/>Gibt die Inhalte der Ausgabedatei für die Assemblysprache an.<br/><br/>Verwenden Sie `/Fc, /Fx`.<br/><br/>**NoListing**<br/>**AssemblyCode**: Verwenden Sie `Fc`.<br/>**AssemblyCodeAndHex**: Verwenden Sie `Fx`.|
@@ -49,7 +49,7 @@ In der folgenden Tabelle werden die Parameter der Aufgabe **FXC** beschrieben:
 |**GenerateExportShaderProfile**|Optionaler **string**-Parameter.|
 |**HeaderFileOutput**|Optionaler **string**-Parameter.<br/><br/>Gibt einen Namen für die Headerdatei mit Objektcode an.<br/><br/>Verwenden Sie `/Fh [name]`.|
 |**ObjectFileOutput**|Optionaler **string**-Parameter.<br/><br/>Gibt einen Namen für die Objektdatei an.<br/><br/>Verwenden Sie `/Fo [name]`.|
-|**PreprocessorDefinitions**|Optionaler **string[]**-Parameter.<br/><br/>Definiert Vorverarbeitungssymbole für Ihre Quelldatei.|
+|**PreprocessorDefinitions**|Optionaler **string[]** -Parameter.<br/><br/>Definiert Vorverarbeitungssymbole für Ihre Quelldatei.|
 |**SetRootSignature**|Optionaler **string**-Parameter.<br/><br/>Fügt die Stammsignatur an Shader-Bytecode an. Verfügbar für Shadermodell 5.0 und höher.<br/><br/>Verwenden Sie `/setrootsignature`.|
 |**ShaderModel**|Optionaler **string**-Parameter.<br/><br/>Gibt das Shadermodell an. Einige Shadertypen können nur mit aktuellen Shadermodellen verwendet werden.<br/><br/>Verwenden Sie `/T [type]_[model]`.|
 |**ShaderType**|Optionaler **string**-Parameter.<br/><br/>Gibt die Art des Shaders an.<br/><br/>Verwenden Sie `/T [type]_[model]`.<br/><br/>**Effect**: Verwenden Sie `fx`.<br/>**Vertex**: Verwenden Sie `vs`.<br/>**Pixel**: Verwenden Sie `ps`.<br/>**Geometry**: Verwenden Sie `gs`.<br/>**Hull**: Verwenden Sie `hs`.<br/>**Domain**: Verwenden Sie `ds`.<br/>**Compute**: Verwenden Sie `cs`.<br/>**Library**: Verwenden Sie `lib`.<br/>**RootSignature**: Generiert das Stammsignaturobjekt.|

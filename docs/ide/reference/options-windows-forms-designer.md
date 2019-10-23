@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Windows Forms Designer options
 - Options dialog box, Windows Forms Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6166c2f0fcdd8c99c459559a699f7b8704aff647
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 16dfd7aed9e3a3586d32f3a4456451b96d8b9f09
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981696"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655810"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>Dialogfeld „Optionen“: Windows Forms-Designer
 
@@ -50,7 +50,7 @@ Bestimmt, ob Designer Objekte und Steuerelemente am Raster ausrichten. Mit ander
 **Smarttags automatisch öffnen**\
 Bestimmt, ob Steuerelemente und Komponenten Smarttags anzeigen. Nicht alle Steuerelemente und Komponenten unterstützen Smarttags.
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>Umgestaltung
 
 **Refactoring beim Umbenennen aktivieren**\
 Wenn auf `true` gesetzt, wird eine Refactoringvorgang zur Umbenennung durchgeführt, wenn Sie eine Komponente aus dem Eigenschaftenfenster oder dem Fenster „Dokumentgliederung“ umbenennen.

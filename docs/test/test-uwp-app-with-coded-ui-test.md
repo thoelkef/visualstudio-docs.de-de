@@ -2,20 +2,20 @@
 title: Testen einer UWP-App mit einem Test der programmierten UI
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430197"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659967"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Erstellen eines Tests der programmierten UI zum Testen einer UWP-App
 
@@ -65,7 +65,7 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
 1. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf die Projektmappe und dann auf **Hinzufügen** > **Neues Projekt**, um ein Testprojekt zur Projektmappe hinzuzufügen.
 
-1. Suchen Sie die Vorlage **Testprojekt der programmierten UI (Universelles Windows)**, und wählen Sie sie aus.
+1. Suchen Sie die Vorlage **Testprojekt der programmierten UI (Universelles Windows)** , und wählen Sie sie aus.
 
    ::: moniker range="vs-2017"
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+author: jillre
+ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659851"
 ---
 # <a name="unit-test-your-code"></a>Ausführen von Komponententests für Code
 
@@ -28,7 +28,7 @@ Zu den Komponententest-Tools gehören:
 
 * **Microsoft-Komponententest-Framework für verwalteten Code**&mdash;Das Microsoft-Komponententest-Framework für verwalteten Code wird mit Visual Studio installiert und stellt ein Framework zum Testen von .NET-Code bereit.
 
-* **Microsoft-Komponententest-Framework für C++**&mdash;Das Microsoft-Komponententest-Framework für C++ wird als Teil der Workload **Desktopentwicklung mit C++** installiert. Es stellt ein Framework zum Testen von nativem Code bereit. Google Test-, Boost.Test- und CTest-Frameworks sind ebenfalls integriert, und Adapter von Drittanbietern sind für zusätzliche Testframeworks verfügbar. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ ](../test/writing-unit-tests-for-c-cpp.md).
+* **Microsoft-Komponententest-Framework für C++** &mdash;Das Microsoft-Komponententest-Framework für C++ wird als Teil der Workload **Desktopentwicklung mit C++** installiert. Es stellt ein Framework zum Testen von nativem Code bereit. Google Test-, Boost.Test- und CTest-Frameworks sind ebenfalls integriert, und Adapter von Drittanbietern sind für zusätzliche Testframeworks verfügbar. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ ](../test/writing-unit-tests-for-c-cpp.md).
 
 * **Code Coverage-Tools**&mdash;Sie können die Menge an Produktcode bestimmen, die Ihre Komponententests nach der Eingabe eines Befehls im Test-Explorer prüfen.
 

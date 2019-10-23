@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747696"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644611"
 ---
 # <a name="toolbox-data-tab"></a>Toolbox, Registerkarte „Daten“
 
@@ -30,7 +30,7 @@ Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können
 
 Um direkt zur .NET-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn sich der Fokus in der **Toolbox** auf dem Element oder in der Leiste des Designers auf dem Komponentenelement befindet.
 
-|name|Beschreibung|
+|name|BESCHREIBUNG|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Dem Formular bzw. der Komponente wird eine Instanz eines typisierten oder nicht typisierten DataSets hinzugefügt. Wenn Sie dieses Objekt auf einen Designer ziehen, wird ein Dialogfeld angezeigt, in dem Sie eine vorhandene Klasse für ein typisiertes DataSet auswählen oder angeben können, in der Sie ein neues, leeres, nicht typisiertes DataSet erstellen möchten. **Hinweis**:  Das <xref:System.Data.DataSet>-Objekt in der **Toolbox** wird nicht zum Erstellen eines Schemas und einer Klasse für ein neues typisiertes DataSet verwendet. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Bietet ein leistungsstarkes und flexibles Instrument zum Anzeigen von Daten in Tabellenform.|

@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784419"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665002"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 
@@ -80,7 +80,7 @@ Wenn ein Server beispielsweise nicht verfügbar ist und in Ihrem Webbrowser die 
 
 Die Änderung der Eigenschaften eines Steuerelements erfolgt auf die gleiche Weise wie die der UI-Aktionen. Wählen Sie im Bereich **UI-Steuerelementzuordnung** das zu bearbeitende Steuerelement aus, und bearbeiten Sie seine Eigenschaften im Fenster **Eigenschaften**.
 
-Ein Entwickler kann z.B. die **(ID)**-Eigenschaft auf einem Schaltflächensteuerelement im Quellcode für die getestete Anwendung von „idSubmit“ in „idLogin“ geändert haben. Wenn die **(ID)** -Eigenschaft in der Anwendung geändert wurde, kann der Test der programmierten UI nicht das Schaltflächen-Steuerelement finden, und es wird ein Fehler ausgegeben. In diesem Fall kann der Tester die Auflistung **Sucheigenschaften** öffnen und die **ID** -Eigenschaft auf den neuen Wert festlegen, den der Entwickler in der Anwendung verwendet hat. Der Tester kann auch den Eigenschaftswert von **Anzeigename** von „Submit“ in „Login“ ändern. Durch diese Änderung wird die zugeordnete UI-Aktion im Editor für Tests der programmierten UI von „Schaltfläche ‚Submit‘ auswählen“ in „Schaltfläche ‚Login‘ auswählen“ geändert.
+Ein Entwickler kann z.B. die **(ID)** -Eigenschaft auf einem Schaltflächensteuerelement im Quellcode für die getestete Anwendung von „idSubmit“ in „idLogin“ geändert haben. Wenn die **(ID)** -Eigenschaft in der Anwendung geändert wurde, kann der Test der programmierten UI nicht das Schaltflächen-Steuerelement finden, und es wird ein Fehler ausgegeben. In diesem Fall kann der Tester die Auflistung **Sucheigenschaften** öffnen und die **ID** -Eigenschaft auf den neuen Wert festlegen, den der Entwickler in der Anwendung verwendet hat. Der Tester kann auch den Eigenschaftswert von **Anzeigename** von „Submit“ in „Login“ ändern. Durch diese Änderung wird die zugeordnete UI-Aktion im Editor für Tests der programmierten UI von „Schaltfläche ‚Submit‘ auswählen“ in „Schaltfläche ‚Login‘ auswählen“ geändert.
 
 Nachdem Sie die Änderungen abgeschlossen haben, speichern Sie die Änderungen in der Datei *UIMap.Designer*, indem Sie auf der Symbolleiste von Visual Studio **Speichern** auswählen.
 
@@ -125,7 +125,7 @@ Wenn Sie die Aufteilung der Methode abgeschlossen haben, speichern Sie die Ände
 
 - Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich **UI-Aktionen** aus, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI aus.
 
-   - oder - 
+   Oder
 
    Öffnen Sie das Kontextmenü für die neue Testmethode, und wählen Sie **Umbenennen**.
 

@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+author: jillre
+ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461495"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653171"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Überblick über Microsoft IntelliTest
 
@@ -46,7 +46,7 @@ Wenn Sie Folgendes testen möchten:
 
 ## <a name="the-hello-world-of-intellitest"></a>„Hello World“ von IntelliTest
 
-IntelliTest findet für das getestete Programm relevante Eingaben. Dies bedeutet, dass Sie es verwenden können, um die bekannte **Hello World!**- Zeichenfolge zu generieren. Dabei wird davon ausgegangen, dass Sie ein MSTest-basiertes C#-Projekt erstellt und einen Verweis auf **Microsoft.Pex.Framework** hinzugefügt haben. Wenn Sie ein anderes Testframework verwenden, erstellen Sie eine C#-Klassenbibliothek, und konsultieren Sie die Dokumentation zum Testframework, um zu erfahren, wie Sie ein Projekt einrichten.
+IntelliTest findet für das getestete Programm relevante Eingaben. Dies bedeutet, dass Sie es verwenden können, um die bekannte **Hello World!** - Zeichenfolge zu generieren. Dabei wird davon ausgegangen, dass Sie ein MSTest-basiertes C#-Projekt erstellt und einen Verweis auf **Microsoft.Pex.Framework** hinzugefügt haben. Wenn Sie ein anderes Testframework verwenden, erstellen Sie eine C#-Klassenbibliothek, und konsultieren Sie die Dokumentation zum Testframework, um zu erfahren, wie Sie ein Projekt einrichten.
 
 Im folgenden Beispiel werden zwei Einschränkungen in einem Parameter mit dem Namen **value** erstellt, sodass IntelliTest die erforderliche Zeichenfolge erzeugt:
 
@@ -117,7 +117,7 @@ Zusätzlich wird das Programm als nicht deterministisch angesehen, wenn sich die
 
 Manchmal ist es nicht direkt ersichtlich, wenn dies passiert. Betrachten Sie die folgenden Beispiele:
 
-* Das Ergebnis der **GetHashCode()**-Methode wird von nicht verwaltetem Code bereitgestellt und kann nicht vorausgesagt werden.
+* Das Ergebnis der **GetHashCode()** -Methode wird von nicht verwaltetem Code bereitgestellt und kann nicht vorausgesagt werden.
 * Die **System.Random**-Klasse verwendet die aktuelle Systemzeit, um tatsächlich zufällige Werte zu liefern.
 * Die **System.DateTime**-Klasse stellt die aktuelle Zeit bereit, die nicht von IntelliTest gesteuert werden kann.
 

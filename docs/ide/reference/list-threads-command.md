@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8c89f4e38d21e7dd66f53b8e768019a3e53c7a39
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919077"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747890"
 ---
 # <a name="list-threads-command"></a>Befehl "Threads auflisten"
 Zeigt eine Liste der Threads im aktuellen Programm an.

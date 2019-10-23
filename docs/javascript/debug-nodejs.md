@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263026"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589146"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -90,7 +90,9 @@ Wenn der Debugger von Visual Studio angehängt und Breakpoints im clientseitigen
 
     ![Anhängen an den Prozess](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Der Debugger wurde ordnungsgemäß angehängt, wenn DOM Explorer und die JavaScript-Konsole in Visual Studio geöffnet werden. Diese Debugtools ähneln den Chrome-Entwicklertools und den F12-Tools für Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Wenn der Debugger nicht angefügt wird, und die Meldung „Das Anfügen an den Prozess ist nicht möglich. Ein Vorgang ist für den derzeitigen Zustand unzulässig.“ angezeigt wird, verwenden Sie den Task-Manager, um alle Instanzen von Chrome zu schließen, bevor Sie den Browser im Debugmodus starten. Möglicherweise werden Chrome-Erweiterungen ausgeführt, die den vollständigen Debugmodus verhindern.
@@ -147,7 +149,7 @@ Wenn Sie eine *tsconfig.json*-Datei zu Ihrem Projekt hinzufügen, behandelt Visu
 
 * **inlineSourceMap**: Gibt eine einzelne Datei mit Quellzuordnungen aus, anstatt separate Quellzuordnungen für jede Quelldatei zu erstellen.
 * **inlineSources**: Gibt die Quelle neben den Quellzuordnungen innerhalb einer einzelnen Datei aus. Dafür müssen die Optionen *inlineSourceMap* oder *sourceMap* festgelegt sein.
-* **mapRoot**: Gibt anstelle des Standardspeicherorts den Speicherort an, an dem der Debugger die Quellzuordnungsdateien (*.map*) finden sollte. Verwenden Sie dieses Flag, wenn die *MAP*-Laufzeitdateien an einem anderen Ort als die *JS*-Dateien gespeichert werden müssen. Der angegebene Speicherort ist in die Quellzuordnung eingebettet, damit der Debugger zum Speicherort der *MAP*-Dateien weitergeleitet wird.
+* **mapRoot**: Gibt anstelle des Standardspeicherorts den Speicherort an, an dem der Debugger die Quellzuordnungsdateien ( *.map*) finden sollte. Verwenden Sie dieses Flag, wenn die *MAP*-Laufzeitdateien an einem anderen Ort als die *JS*-Dateien gespeichert werden müssen. Der angegebene Speicherort ist in die Quellzuordnung eingebettet, damit der Debugger zum Speicherort der *MAP*-Dateien weitergeleitet wird.
 * **sourceMap**: Generiert eine entsprechende *MAP*-Datei.
 * **sourceRoot**: Gibt anstelle der Quellspeicherorte den Speicherort an, an dem der Debugger die TypeScript-Dateien finden sollte. Verwenden Sie dieses Flag, wenn die Laufzeitquellen an einem anderen Ort als an dem Speicherort zur Entwurfszeit gespeichert werden müssen. Der angegebene Speicherort wird in die Quellzuordnung eingebettet, um den Debugger an den Ort weiterzuleiten, an dem sich die Quelldateien befinden.
 

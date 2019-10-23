@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778429"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666178"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Optionen, Text-Editor, HTML (Web Forms), Sonstiges
 
-Verwenden Sie die Optionsseite **Sonstiges**, um Einstellungen festzulegen, wie der HTML-Editor mit Elementen umgeht, die in die Seite eingefügt wurden. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Tools** > **Optionen** klicken und anschließend **Text-Editor** > **HTML (Web Forms)** > **Sonstiges** erweitern.
+Verwenden Sie die Optionsseite **Sonstiges**, um Einstellungen festzulegen, wie der HTML-Editor mit Elementen umgeht, die in die Seite eingefügt wurden. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Tools** > **Optionen** klicken und anschließend **Text-Editor** > **HTML (Web Forms)**  > **Sonstiges** erweitern.
 
 ## <a name="miscellaneous-html-options"></a>Verschiedene HTML-Optionen
 
