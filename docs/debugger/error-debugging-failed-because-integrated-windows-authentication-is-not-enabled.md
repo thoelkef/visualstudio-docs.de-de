@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist | Microsoft-Dokumentation'
+title: 'Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist. Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850840"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737803"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist
 Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authentifizierungsfehlers nicht authentifiziert werden. Dies kann beim Versuch, eine Webanwendung oder einen XML-Webdienst in Einzelschritten auszuführen, auftreten. Eine Ursache dieses Fehlers besteht darin, dass die integrierte Windows-Authentifizierung nicht aktiviert ist. Um sie zu aktivieren, führen Sie die Schritte in "So aktivieren Sie die integrierte Windows-Authentifizierung" aus.
@@ -67,7 +67,7 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 
 2. Aktivieren Sie die Windows-Authentifizierung und die IIS6-Verwaltungskompatibilität, wenn diese nicht bereits aktiviert wurden, indem Sie folgende Schritte ausführen:
 
-    1. Klicken Sie auf **starten**, klicken Sie auf **Systemsteuerung** , und klicken Sie dann auf **Programme**.
+    1. Klicken Sie im **Startmenü**auf **Systemsteuerung** , und klicken Sie dann auf **Programme**.
 
     2. Klicken Sie unter **Programme und Funktionen** auf **Windows-Funktionen ein- oder ausschalten**.
 
@@ -116,4 +116,4 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest Authentication (Microsoft Digest-Authentifizierung)](http://go.microsoft.com/fwlink/?LinkId=77938)
-- [Ausführen von Webanwendungen unter Windows Vista mit IIS 7.0- und Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Ausführen von Webanwendungen unter Windows Vista mit IIS 7,0 und Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_checksum | Microsoft-Dokumentation'
+title: 'IDiaSourceFile:: get_checksum | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc866cf392d2464756fc4e5cb19bfd02fcdea58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f4367a7862dabe248dfbe08e64c45598abe3679
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838066"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741844"
 ---
-# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
-Ruft die Bytes der Prüfsumme ab.
+# <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
+Ruft die Prüfsumme Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,25 +35,25 @@ HRESULT get_checksum ( 
 #### <a name="parameters"></a>Parameter
  `cbData`
 
-[in] Größe des Datenpuffers in Byte.
+in Größe des Daten Puffers in Bytes.
 
  `pcbData`
 
-[out] Gibt die Anzahl der Bytes der Prüfsumme zurück. Dieser Parameter darf nicht sein `NULL`.
+vorgenommen Gibt die Anzahl der Prüfsummen Bytes zurück. Dieser Parameter kann nicht `NULL` werden.
 
  `data`
 
-[in, out] Ein Puffer, der mit der Prüfsumme Bytes gefüllt ist. Wenn dieser Parameter ist `NULL`, klicken Sie dann `pcbData` gibt die Anzahl der Bytes, die erforderlich sind.
+[in, out] Ein Puffer, der mit der Prüfsumme Bytes gefüllt ist. Wenn dieser Parameter `NULL` ist, gibt `pcbData` die erforderliche Anzahl von Bytes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Um den Typ des Prüfsummenalgorithmus zu ermitteln, die verwendet wurde, um die Bytes der Prüfsumme zu generieren, rufen die [idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) Methode.
+ Rufen Sie die [IDiaSourceFile:: get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) -Methode auf, um den Typ des Prüfsummen Algorithmus zu ermitteln, der zum Generieren der Prüfsummen Bytes verwendet wurde.
 
- Die Prüfsumme wird in der Regel aus dem Image der Quelldatei generiert, damit die Änderungen in der Quelldatei in die Änderungen in den Bytes der Prüfsumme berücksichtigt werden. Die Bytes der Prüfsumme stimmen nicht überein. wird eine Prüfsumme aus geladenen Bild der Datei generiert wird, und klicken Sie dann die Datei, die berücksichtigt werden sollten beschädigt oder manipuliert.
+ Die Prüfsumme wird in der Regel aus dem Image der Quelldatei generiert, sodass sich Änderungen in der Quelldatei in Änderungen der Prüfsummen Bytes widerspiegeln. Wenn die Prüfsummen Bytes nicht mit einer Prüfsumme identisch sind, die aus dem geladenen Bild der Datei generiert wurde, sollte die Datei als beschädigt oder manipuliert angesehen werden.
 
- Typische Prüfsummen werden nie mehr als 32 Bytes, aber nicht davon ausgehen, dass die maximale Größe einer Prüfsumme ist. Legen Sie die `data` Parameter `NULL` beim Abrufen der Anzahl von Bytes, die zum Abrufen der Prüfsumme erforderlich sind. Klicken Sie dann ein Puffer von geeigneter Größe, und rufen Sie diese Methode einmal mit dem neuen Puffer.
+ Typische Prüfsummen sind nie mehr als 32 Bytes groß, gehen jedoch nicht davon aus, dass es sich um die maximale Größe einer Prüfsumme handelt. Legen Sie den `data`-Parameter auf `NULL` fest, um die Anzahl der Bytes abzurufen, die zum Abrufen der Prüfsumme benötigt werden. Weisen Sie dann einen Puffer mit der entsprechenden Größe zu, und nennen Sie diese Methode mit dem neuen Puffer.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

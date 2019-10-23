@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findchildren | Microsoft-Dokumentation'
+title: 'IDiaSession:: findChildren | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759d810bf9180522508a6be54e5c94ffcfadb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cca6778e5697c5f8821322c19d706d733d7f2b9f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839380"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742299"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
-Ruft alle untergeordneten Elemente einer angegebenen übergeordneten Element-ID, die den Namen und Symbol Datentyp entsprechen.
+Ruft alle untergeordneten Elemente eines angegebenen übergeordneten Bezeichners ab, die dem Namen und dem Symboltyp entsprechen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,29 +37,29 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das übergeordnete Element darstellt. Wenn dieses übergeordneten Symbol ist eine Funktion, Modul oder Block, in die untergeordneten lexikalischen zurückgegeben werden `ppResult`. Wenn das übergeordnete Symbol ein Typ ist, werden der untergeordneten Klasse zurückgegeben. Wenn dieser Parameter ist `NULL`, klicken Sie dann `symtag` muss festgelegt werden, um `SymTagExe` oder `SymTagNull`, die den globalen Bereich (.exe-Datei) zurückgibt.
+in Ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das das übergeordnete Element darstellt. Wenn dieses übergeordnete Symbol eine Funktion, ein Modul oder ein Block ist, werden die lexikalischen untergeordneten Elemente in `ppResult` zurückgegeben. Wenn das übergeordnete Symbol ein Typ ist, werden die untergeordneten Klassen der Klasse zurückgegeben. Wenn dieser Parameter `NULL` ist, muss `symtag` auf `SymTagExe` oder `SymTagNull` festgelegt werden, wodurch der globale Gültigkeitsbereich (exe-Datei) zurückgegeben wird.
 
  `symtag`
 
-[in] Gibt das Symboltag der untergeordneten Elemente abgerufen werden sollen. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration. Legen Sie auf `SymTagNull` auf alle untergeordneten Elemente abzurufen.
+in Gibt das symboltag der untergeordneten Elemente an, die abgerufen werden sollen. Werte werden aus der Enumeration der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) entnommen. Legen Sie `SymTagNull` fest, um alle untergeordneten Elemente abzurufen.
 
  `name`
 
-[in] Gibt den Namen der untergeordneten Elemente abgerufen werden sollen. Legen Sie auf `NULL` für alle untergeordneten Elemente abgerufen werden sollen.
+in Gibt den Namen der untergeordneten Elemente an, die abgerufen werden sollen. Legen Sie auf `NULL` fest, damit alle untergeordneten Elemente abgerufen werden.
 
  `compareFlags`
 
-[in] Gibt die Vergleichsoptionen, die auf Namen angewendet. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) -Enumeration können alleine oder zusammen verwendet werden.
+in Gibt die auf die namens Übereinstimmung angewendeten Vergleichs Optionen an Werte aus der Enumeration-Enumeration von [NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) können allein oder in Kombination verwendet werden.
 
  `ppResult`
 
-[out] Gibt eine [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt, das die Liste der untergeordneten Symbolen enthält abgerufen.
+vorgenommen Gibt ein [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt zurück, das die Liste der abgerufenen untergeordneten Symbole enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt, wie Sie die lokale Variablen der Funktion `pFunc` , namensübereinstimmung `szVarName`.
+ Im folgenden Beispiel wird gezeigt, wie lokale Variablen der Funktions `pFunc` gefunden werden, die mit Name `szVarName` identisch sind.
 
 ```C++
 IDiaEnumSymbols* pEnum;

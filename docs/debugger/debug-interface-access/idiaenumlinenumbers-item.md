@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumlinenumbers:: Item | Microsoft-Dokumentation'
+title: 'IDiaEnumLineNumbers:: Item | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25825d4a0c7e3253e1461a163c8211c3e3bdcda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bba71efce68864b8737011ab7dda5cb8da3267c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829744"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744402"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
-Ruft die Nummer einer Zeile mithilfe eines Indexes ab.
+Ruft eine Zeilennummer mithilfe eines Indexes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parameter
  Index
 
-[in] Der Index der [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekt abgerufen werden sollen. Der Index befindet sich im Bereich von 0 bis `count`-1 und, in dem `count` wird zurückgegeben, durch die [idiaenumlinenumbers:: Get_count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) Methode.
+in Der Index des [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) -Objekts, das abgerufen werden soll. Der Index liegt im Bereich von 0 bis `count`-1, wobei `count` von der [IDiaEnumLineNumbers:: get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) -Methode zurückgegeben wird.
 
  lineNumber
 
-[out] Gibt eine [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekt, das die gewünschte Zeilennummer darstellt.
+vorgenommen Gibt ein [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) -Objekt zurück, das die gewünschte Zeilennummer darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

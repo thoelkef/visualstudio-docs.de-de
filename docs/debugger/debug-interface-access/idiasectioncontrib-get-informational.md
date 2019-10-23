@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_informational | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_informational | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00d07b788fe07fbe2e879f01a98929927743a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e425c8bc4e1e3973dac5becc39f3e6c6e9f8dfe8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839588"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742646"
 ---
-# <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
-Ruft ein Flag, der angibt, ob einen Abschnitt, Kommentare oder ähnliche Informationen enthält ab.
+# <a name="idiasectioncontribget_informational"></a>IDiaSectionContrib::get_informational
+Ruft ein Flag ab, das angibt, ob ein Abschnitt Kommentare oder ähnliche Informationen enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_informational(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn der Abschnitt Kommentare oder andere Informationen; enthält andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der Abschnitt Kommentare oder andere Informationen enthält. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- In der Regel enthält der Abschnitt .directive Informationen.
+ In der Regel enthält der Abschnitt. Directive Informationen.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

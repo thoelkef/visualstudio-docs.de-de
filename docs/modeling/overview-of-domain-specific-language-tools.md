@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899fc041df3f7118de6be97309e8ce971235d178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 82bccbd9558a5dad87e9fe13f9ed7136a5d77d8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747528"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
 Mit DSL-Tools (DSL-Tools), die in Visual Studio gehostet werden, können Sie eine domänenspezifische Sprache entwerfen und dann alle Elemente generieren, die Benutzer benötigen, um auf der Sprache basierende Modelle zu erstellen.

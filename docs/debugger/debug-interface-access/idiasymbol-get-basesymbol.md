@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseSymbol | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_baseSymbol | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd03eaead008c4014b10f9390610c7e103a4a6c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 307358522609659a8a95b94a0adf037026f5b948
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837848"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740939"
 ---
-# <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
-Ruft ab, das Symbol aus dem der Zeiger basiert.
+# <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
+Ruft das Symbol ab, auf dem der Zeiger basiert.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_baseSymbol(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf das Symbol aus dem der Zeiger basiert.
+vorgenommen Ein Zeiger auf das Symbol, auf dem der Zeiger basiert.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

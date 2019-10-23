@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849951"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736212"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>Ausdrücke in Visual Studio-debugger
+# <a name="expressions-in-the-visual-studio-debugger"></a>Ausdrücke im Visual Studio-Debugger
 Der Visual Studio-Debugger beinhaltet eine Ausdrucksauswertung, die aktiv wird, wenn Sie einen Ausdruck in das Dialogfeld **Schnellüberwachung** , in das Fenster **Überwachen** oder in das Fenster **Direkt** eingeben. Die Ausdruckauswertung ist auch im Fenster **Haltepunkte** sowie an vielen anderen Stellen im Debugger aktiv.
 
-In den folgenden Abschnitten werden die Einschränkungen der ausdrucksauswertung von Visual Studio unterstützten Sprachen beschrieben.
+In den folgenden Abschnitten werden die Einschränkungen der Ausdrucks Auswertung für Sprachen beschrieben, die von Visual Studio unterstützt werden.
 
 ## <a name="f-expressions-are-not-supported"></a>F#-Ausdrücke werden nicht unterstützt.
 F#-Ausdrücke werden nicht erkannt. Wenn Sie F#-Code debuggen, müssen Sie die Ausdrücke vor dem Eingeben in ein Debuggerfenster oder ein Dialogfeld in C#-Syntax übersetzen. Wenn Sie Ausdrücke aus F# in C# übersetzen, beachten Sie, dass C# den `==` -Operator für Gleichheitstests verwendet, wohingegen F# ein einfaches Gleichheitszeichen ( `=`) verwendet.
@@ -121,7 +121,7 @@ Systeminterne Debugger-Funktionen:
 ## <a name="c---unsupported-expressions"></a>C# – Nicht unterstützte Ausdrücke
 
 ### <a name="dynamic-objects"></a>Dynamische Objekte
-Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, die implementieren <xref:System.Dynamic.IDynamicMetaObjectProvider> werden ausgewertet, in dem Fenster "überwachen", eine dynamische Ansicht hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.
+Sie können Variablen in Debuggerausdrücken verwenden, die statisch als dynamisch typisiert sind. Wenn Objekte, die <xref:System.Dynamic.IDynamicMetaObjectProvider> implementieren, im Überwachungsfenster ausgewertet werden, wird ein dynamischer Ansichts Knoten hinzugefügt. Der dynamische Ansichtsknoten zeigt Member an, ermöglicht aber keine Bearbeitung der Memberwerte.
 
 Die folgenden Funktionen dynamischer Objekte werden nicht unterstützt:
 

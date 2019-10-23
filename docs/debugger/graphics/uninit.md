@@ -1,5 +1,5 @@
 ---
-title: UnInit | Microsoft-Dokumentation
+title: Uninit | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8165b2e1993a6ea52127536a058f662e1a3d92cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848719"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734816"
 ---
 # <a name="uninit"></a>UnInit
 Schließt die Grafikprotokolldatei ab, schließt sie und gibt Ressourcen frei, die verwendet wurden, während die App aktiv Grafikinformationen aufzeichnete.

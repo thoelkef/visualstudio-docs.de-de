@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Debuggen ist&#39;t möglich, da ein Kerneldebugger, auf dem System aktiviert ist | Microsoft-Dokumentation'
+title: 'Fehler: das Debuggen von isn&#39;t ist möglich, da ein Kernel Debugger auf dem System aktiviert ist. Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850935"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737749"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Debuggen ist&#39;t möglich, da ein Kerndebugger auf dem System aktiviert ist
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Debuggen&#39;von isn t möglich, da ein Kernel Debugger auf dem System aktiviert ist.
 Beim Debuggen von verwaltetem Code kann die folgende Fehlermeldung ausgegeben werden:
 
 ```cmd

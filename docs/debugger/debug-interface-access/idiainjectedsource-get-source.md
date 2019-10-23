@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_source | Microsoft-Dokumentation'
+title: 'Idiainjetedsource:: get_Source | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604160cdaf8c1ff28b306106afe34e047768f3c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b389df8220766ffbdbf865a2b8e70877fe91b3f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828423"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743335"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
-Ruft die Quellbytes-Code ab.
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
+Ruft die Quell Code Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT get_source ( 
 #### <a name="parameters"></a>Parameter
  `cbData`
 
-[in] Die Anzahl der Bytes, die die Größe des Datenpuffers darstellt.
+in Die Anzahl von Bytes, die die Größe des Daten Puffers darstellt.
 
  `pcbData`
 
-[out] Gibt zurückgegeben, die Anzahl der Bytes, die die Bytes darstellt. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` ist die Gesamtzahl der Bytes der Daten verfügbar.
+vorgenommen Gibt die Anzahl der Bytes zurück, die die zurückgegebenen Bytes darstellen. Wenn `data` `NULL` ist, entspricht `pcbData` der Gesamtzahl der verfügbaren Daten bytes.
 
  `data[]`
 
-[out] Ein Puffer, der sich die Quellbytes gefüllt werden soll.
+vorgenommen Ein Puffer, der mit den Quell Bytes aufgefüllt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

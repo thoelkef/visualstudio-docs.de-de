@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 435957fed1d6805adb8e1c982368d9b16ca76885
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b42c735c110208d563f908baef90a3bd0699fbe8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796492"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738875"
 ---
-# <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
-Ruft den Index des Symbols in der virtuellen Basis Verschiebung-Tabelle ab.
+# <a name="idiasymbolget_virtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
+Ruft den Index des Symbols in der virtuellen Basis Verschiebungs Tabelle ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_virtualBaseDispIndex (
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Index in die virtuelle Basisklasse Verschiebung-Tabelle.
+vorgenommen Gibt den Index der virtuellen Basis Verschiebungs Tabelle zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

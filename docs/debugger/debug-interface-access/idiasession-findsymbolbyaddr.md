@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyaddr | Microsoft-Dokumentation'
+title: 'IDiaSession:: findsymbolbyaddr | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcbe9e97eb429fa7427ae0e3da4dce77281b40a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae0bab8ec0561b65c22890c0e0bbfeb461364b5c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839276"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742061"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
-Ruft einen bestimmtes Symbol-Typ, der enthält, oder an eine bestimmte Adresse am nächsten ist.
+Ruft einen angegebenen Symboltyp ab, der eine angegebene Adresse enthält bzw. am nächsten liegt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByAddr ( 
 #### <a name="parameters"></a>Parameter
  `isect`
 
-[in] Gibt die Komponente im Abschnitt der Adresse.
+in Gibt die Abschnitts Komponente der Adresse an.
 
  `offset`
 
-[in] Gibt die Offset-Komponente der Adresse.
+in Gibt die Offset Komponente der Adresse an.
 
  `symtag`
 
-[in] Der Symboltyp gefunden werden. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.
+in Symboltyp, der gefunden werden soll. Werte werden aus der Enumeration der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) entnommen.
 
  `ppSymbol`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das abgerufene Symbol darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

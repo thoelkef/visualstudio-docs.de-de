@@ -1,5 +1,5 @@
 ---
-title: Festlegen eines Überwachungselements für Variablen in parallelen Threads | Microsoft-Dokumentation
+title: Festlegen einer Überwachung für Variablen in parallelen Threads | Microsoft-Dokumentation
 ms.date: 04/25/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388474"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732018"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Festlegen eines Überwachungselements für Variablen in parallelen Threads in Visual Studio (C#, Visual Basic C++)
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Festlegen einer Überwachung für Variablen in parallelen Threads in Visual Studio (C#, Visual Basic, C++)
 Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, die ein Ausdruck auf mehreren Threads enthält. Jede Zeile stellt einen Thread in einer Anwendung ausgeführten dar. Allerdings wird ein Thread möglicherweise in mehreren Zeilen angezeigt werden. Genauer gesagt stellt jede Zeile einen Funktionsaufruf dar, dessen Funktionssignatur der Funktion auf dem aktuellen Stapelrahmen entspricht. Sie können die Elemente in den Spalten sortieren, neu anordnen, entfernen und gruppieren. Sie können Threads kennzeichnen bzw. die Kennzeichnung aufheben, ihn einfrieren (anhalten) und reaktivieren (fortsetzen). Die folgenden Spalten werden im Fenster **Parallele Überwachung** angezeigt:
 
 - Die Kennzeichenspalte, in der Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.
 
-- Der aktuelle Thread-Spalte, in der ein gelber Pfeil den aktuellen Thread gibt (ein grüner Pfeil in Form einer Welle gibt an, dass eine nicht-aktuellen Threads den aktuellen Debuggerkontext hat).
+- Die aktuelle Thread Spalte, in der ein gelber Pfeil den aktuellen Thread angibt (ein grüner Pfeil mit einem geschweiften Ende zeigt an, dass ein nicht aktueller Thread über den aktuellen Debugger-Kontext verfügt).
 
 - Eine konfigurierbare Spalte, in der der Computer, der Prozess, die Kachel, die Aufgabe und der Thread angezeigt werden können.
 
   > [!TIP]
-  > Zum Anzeigen von Aufgabeninformationen in den **parallele Überwachung** Fenster müssen Sie zuerst öffnen die **Aufgabe** Fenster.
+  > Zum Anzeigen von Task Informationen im Fenster **parallele Überwachung** müssen Sie zuerst das **Aufgaben** Fenster öffnen.
 
-- Die leere *Überwachung hinzufügen* Spalten, in dem Sie Ausdrücke zur Überwachung eingeben können.
+- Die leeren Spalten zum *Hinzufügen* von Überwachungen, in denen Sie die zu überwachenden Ausdrücke eingeben können.
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,19 +50,19 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
 
 ### <a name="to-add-a-watch-expression"></a>So fügen Sie einen Überwachungsausdruck hinzu
 
-- Wählen Sie eine vom leer *Überwachung hinzufügen* Spalten und geben Sie einen Überwachungsausdruck.
+- Wählen Sie eine der leeren Spalten für die *Überwachung hinzufügen* aus, und geben Sie dann einen Überwachungs Ausdruck ein.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf
 
-- Wählen Sie die Spalte zur Kennzeichnung für die Zeile (erste Spalte), oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Flag** oder **Flag**.
+- Wählen Sie die Spalte Flag für die Zeile (erste Spalte) aus, oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Flag** oder **Flag**aufheben aus.
 
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an
 
-- Wählen Sie die **nur gekennzeichnete Elemente anzeigen** -Schaltfläche in der oberen linken Ecke des der **parallele Überwachung** Fenster.
+- Wählen Sie in der oberen linken Ecke des Fensters **parallele Überwachung** die Schaltfläche **nur markierte anzeigen** aus.
 
-### <a name="to-switch-to-another-thread"></a>So wechseln Sie zu einem anderen thread
+### <a name="to-switch-to-another-thread"></a>So wechseln Sie zu einem anderen Thread
 
-- Doppelklicken Sie auf die Spalte mit dem aktuellen Thread (zweite Spalte). (Tastatur: Wählen Sie die Zeile, und drücken Sie die EINGABETASTE.)
+- Doppelklicken Sie auf die Spalte aktueller Thread (zweite Spalte). (Tastatur: Wählen Sie die Zeile aus, und drücken Sie EINGABETASTE.)
 
 ### <a name="to-sort-a-column"></a>So sortieren Sie eine Spalte
 
@@ -86,5 +86,5 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Vorgehensweise: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Gewusst wie: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

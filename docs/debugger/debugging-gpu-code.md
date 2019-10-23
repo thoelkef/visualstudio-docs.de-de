@@ -1,5 +1,5 @@
 ---
-title: Debuggen von GPU-Code | Microsoft-Dokumentation
+title: Debugging von GPU-Code | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db053317b3678cfaa7ee0ed6061074b156359d2f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399442"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738229"
 ---
 # <a name="debugging-gpu-code"></a>Debuggen von GPU-Code
 Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit, GPU) ausgeführt wird. Die GPU-Debugunterstützung in Visual Studio umfasst die Raceerkennung, das Starten von Prozessen bzw. Anfügen an Prozesse sowie die Integration in die Debugfenster.
@@ -37,12 +37,12 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 - Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften** aus. Wählen Sie im Dialogfeld **Eigenschaftenseiten** die Option **Debuggen** und dann in der Liste **Debuggertyp** die Option **Nur GPU** aus.
 
 ## <a name="launching-and-attaching-to-applications"></a>Starten von und Anfügen an Anwendungen
- Sie können die Visual Studio-Debuggingbefehle verwenden, um das GPU-Debugging zu starten und zu beenden. Weitere Informationen finden Sie unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md). Sie können den GPU-Debugger auch an einen laufenden Prozess anfügen, jedoch nur, wenn dieser Prozess GPU-Code ausführt. Weitere Informationen finden Sie unter [Anfügen an ausgeführte Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ Sie können die Visual Studio-Debuggingbefehle verwenden, um das GPU-Debugging zu starten und zu beenden. Weitere Informationen finden Sie unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md). Sie können den GPU-Debugger auch an einen laufenden Prozess anfügen, jedoch nur, wenn dieser Prozess GPU-Code ausführt. Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Befehle "Aktuelle Kachel bis zum Cursor ausführen" und "Ausführen bis Cursor"
  Wenn Sie im Grafikprozessor debuggen, stehen Ihnen zwei Möglichkeiten zum Ausführen bis zur Cursorposition zur Verfügung. Die Befehle für beide Optionen sind im Kontextmenü des Code-Editors verfügbar.
 
-1. Mit dem Befehl **Ausführen bis Cursor** wird die App ausgeführt, bis sie die Cursorposition erreicht und dann angehalten wird. Dies bedeutet nicht, dass der aktuelle Thread bis zur Cursorposition ausgeführt wird, sondern vielmehr, dass der erste Thread, der die Cursorposition erreicht, die Unterbrechung auslöst. Finden Sie unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)
+1. Mit dem Befehl **Ausführen bis Cursor** wird die App ausgeführt, bis sie die Cursorposition erreicht und dann angehalten wird. Dies bedeutet nicht, dass der aktuelle Thread bis zur Cursorposition ausgeführt wird, sondern vielmehr, dass der erste Thread, der die Cursorposition erreicht, die Unterbrechung auslöst. Siehe [Navigieren durch Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)
 
 2. Mit dem Befehl **Aktuelle Kachel bis zum Cursor ausführen** wird die App ausgeführt, bis alle Threads in der aktuellen Kachel die Cursorposition erreichen und dann angehalten werden.
 
@@ -53,11 +53,11 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 
 - [Verwenden des Fensters „Aufgaben“](../debugger/using-the-tasks-window.md)
 
-- [Vorgehensweise: Verwenden des Fensters „Parallele Überwachung“](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Gewusst wie: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)
 
-- [Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md) (Symbolleiste "Debugspeicherort")
+- [Threads und Prozesse Debuggen](../debugger/debug-threads-and-processes.md) (Symbolleiste Debugspeicherort)
 
-- [Vorgehensweise: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Gewusst wie: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)
 
 ## <a name="data-synchronization-exceptions"></a>Ausnahmen bei Datensynchronisierung
  Der Debugger kann mehrere Datensynchronisierungsbedingungen während der Ausführung erkennen. Wenn eine Bedingung erkannt wird, wechselt der Debugger in den Unterbrechungszustand. Sie haben zwei Optionen: **Unterbrechen** oder **Weiter**. Im Dialogfeld **Ausnahmen** können Sie konfigurieren, ob der Debugger diese Bedingungen erkennen soll und bei welchen Bedingungen eine Unterbrechung ausgelöst werden soll. Weitere Informationen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md). Sie können im Dialogfeld **Optionen** auch angeben, ob der Debugger Ausnahmen ignorieren soll, wenn geschriebene Daten den Wert der Daten nicht ändern. Weitere Informationen finden Sie unter [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).
@@ -65,18 +65,18 @@ Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit,
 ## <a name="troubleshooting"></a>Problembehandlung
 
 ### <a name="specifying-an-accelerator"></a>Festlegen einer Zugriffstaste
- Haltepunkte im GPU-Code werden nur erreicht, wenn der Code auf der REF-Zugriffstaste [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) ausgeführt wird. Wenn Sie keine Zugriffstaste im Code angeben, wird die REF-Zugriffstaste automatisch als **Debuggingbeschleunigungstyp** in den Projekteigenschaften ausgewählt. Wenn der Code explizit eine Zugriffstaste auswählt, wird die REF-Zugriffstaste nicht beim Debuggen verwendet und die Haltepunkte werden nicht erreicht, es sei denn, die GPU-Hardware verfügt über Debugunterstützung. Um dieses Problem zu beheben, schreiben Sie den Code so, dass die REF-Zugriffstaste beim Debuggen verwendet wird. Weitere Informationen finden Sie unter Projekteigenschaften und [mit Accelerator and Accelerator_view Objects](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) und [Projekteinstellungen für eine C++ Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Haltepunkte im GPU-Code werden nur erreicht, wenn der Code auf der REF-Zugriffstaste [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) ausgeführt wird. Wenn Sie keine Zugriffstaste im Code angeben, wird die REF-Zugriffstaste automatisch als **Debuggingbeschleunigungstyp** in den Projekteigenschaften ausgewählt. Wenn der Code explizit eine Zugriffstaste auswählt, wird die REF-Zugriffstaste nicht beim Debuggen verwendet und die Haltepunkte werden nicht erreicht, es sei denn, die GPU-Hardware verfügt über Debugunterstützung. Um dieses Problem zu beheben, schreiben Sie den Code so, dass die REF-Zugriffstaste beim Debuggen verwendet wird. Weitere Informationen finden Sie Unterprojekt Eigenschaften und [Verwenden von Accelerator-und accelerator_view-Objekten](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) und [Projekt C++ Einstellungen für eine Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Bedingte Haltepunkte
  Bedingte Haltepunkte im GPU-Code werden unterstützt, jedoch kann nicht jeder Ausdruck auf dem Gerät ausgewertet werden. Wenn ein Ausdruck nicht auf dem Gerät ausgewertet werden kann, wird er im Debugger ausgewertet. Der Debugger wird wahrscheinlich langsamer ausgeführt als das Gerät.
 
-### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Fehler: Es gibt ein Konfigurationsproblem mit den ausgewählten Debuggingbeschleunigungstyp.
- Dieser Fehler tritt auf, wenn es zwischen den Projekteinstellungen und der Konfiguration des PCs, auf dem Sie debuggen, eine Inkonsistenz gibt. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Fehler: Bei der Konfiguration des ausgewählten Debuggingbeschleunigungstyps ist ein Problem aufgetreten.
+ Dieser Fehler tritt auf, wenn es zwischen den Projekteinstellungen und der Konfiguration des PCs, auf dem Sie debuggen, eine Inkonsistenz gibt. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++ Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Fehler: Der debugtreiber für den ausgewählten Debuggingbeschleunigungstyp ist nicht auf dem Zielcomputer installiert.
+### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Fehler: Der Debugtreiber für den ausgewählten Debuggingbeschleunigungstyp ist nicht auf dem Zielcomputer installiert.
  Dieser Fehler tritt auf, wenn Sie auf einem Remotecomputer debuggen. Der Debugger kann bis zur Laufzeit nicht bestimmen, ob die Treiber auf dem Remotecomputer installiert sind. Die Treiber sind vom Hersteller der Grafikkarte erhältlich.
 
-### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Fehler: Timeouterkennungs-TDR (and Recovery) müssen auf der Remotewebsite deaktiviert werden.
+### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Fehler: Auf der Remotesite muss TDR (Timeout Detection and Recovery) deaktiviert sein.
  Es ist möglich, dass die C++ AMP-Berechnungen das Standardzeitintervall überschreiten, das durch den Windows-TDR-Prozess (Timeout Detection and Recovery) festgelegt wird. Wenn dies geschieht, wird die Berechnung abgebrochen und die Daten gehen verloren. Weitere Informationen finden Sie unter [Behandlung von TDRs in C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).
 
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_pure | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_pure | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee8b08c724f88c2fcbde7e2001aa89b47442e61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 489a50da8c5af4c7e63f0c8109c2810716d598e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739470"
 ---
-# <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
-Ruft ein Flag, das angibt, ob die Funktion rein virtuellen.
+# <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
+Ruft ein Flag ab, das angibt, ob die Funktion rein virtuell ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_pure ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` ist die Funktion rein virtuellen; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Funktion rein virtuell ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

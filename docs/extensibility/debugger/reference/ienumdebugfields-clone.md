@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Clone | Microsoft-Dokumentation
+title: 'Ienumentbugfields:: Clone | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d614a1d98a1374ed0b04aef5b23ebf91c21610c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5657e5db99bd062fa16aae9f9d8516bdbabc99f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350443"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727700"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Diese Methode gibt eine Kopie der aktuellen Enumeration als separates Objekt zurück.
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>Parameter
 `ppEnum`\
-[out] Gibt eine Kopie dieser Enumeration als ein separates Objekt zurück.
+vorgenommen Gibt eine Kopie dieser Enumeration als separates Objekt zurück.
 
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Die Kopie der Enumeration hat den gleichen Zustand wie die ursprüngliche, zu dem Zeitpunkt, die diese Methode aufgerufen wird. Allerdings wird der Kopiervorgangs des und den ursprünglichen Zustand sind getrennt und einzeln geändert werden können.
+ Die Kopie der-Enumeration hat denselben Zustand wie die ursprüngliche, wenn diese Methode aufgerufen wird. Allerdings sind die Status der Kopier-und ursprünglichen Zustände getrennt und können einzeln geändert werden.
 
 ## <a name="see-also"></a>Siehe auch
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

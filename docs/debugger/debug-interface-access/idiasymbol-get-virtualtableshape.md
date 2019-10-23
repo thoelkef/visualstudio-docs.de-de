@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualtableshape | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_virtualTableShape | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef18d56bb993ee5761bb59dcf5fb0758d44f4d61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bcbbf5463486c0c4bb2417793d3f37bee2d121c2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64822717"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738825"
 ---
-# <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
-Ruft die Symbol-Schnittstelle des Typs von der virtuellen Tabelle für einen benutzerdefinierten Typ ab.
+# <a name="idiasymbolget_virtualtableshape"></a>IDiaSymbol::get_virtualTableShape
+Ruft die Symbol Schnittstelle des Typs der virtuellen Tabelle für einen benutzerdefinierten Typ ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_virtualTableShape ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das die virtuelle Tabelle für einen benutzerdefinierten Typ darstellt.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das die virtuelle Tabelle für einen benutzerdefinierten Typ darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft-Dokumentation
+title: 'IDiaSession:: findsymbolsbyrvaforacceleratorpointertag | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bcf399dcf80cb574b6018dde5ffa44e72a4c988
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb1b24d24de35de30b24937a6cfbf59d12f69482
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839211"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741995"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-Wenn einen entsprechenden Tagwert, gibt diese Methode in einer angegebenen übergeordneten Accelerator-Stub-Funktion an eine angegebene relative virtuelle Adresse eine Enumeration von Symbolen, die enthalten sind.
+Wenn ein entsprechender Tagwert angegeben ist, gibt diese Methode eine Enumeration von Symbolen zurück, die in einer angegebenen relativen virtuellen Adresse enthalten sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,25 +34,25 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein `IDiaSymbol` , entspricht die Accelerator-Stub-Funktion, die gesucht werden soll.
+in Eine `IDiaSymbol`, die der zu durchsuchenden Stub-Zugriffs Funktion entspricht.
 
  `tagValue`
 
-[in] Der Tag-Zeigerwert.
+in Der Zeiger Tagwert.
 
  `rva`
 
-[in] Die relative virtuelle Adresse.
+in Die relative virtuelle Adresse.
 
  `ppResult`
 
-[out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.
+vorgenommen Ein Zeiger auf einen `IDiaEnumSymbols` Schnittstellen Zeiger, der mit dem Ergebnis initialisiert wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Rufen Sie diese Methode nur auf eine `IDiaSymbol` Schnittstelle, die eine Accelerator-Stub-Funktion entspricht.
+ Diese Methode wird nur für eine `IDiaSymbol`-Schnittstelle aufgerufen, die einer Zugriffstasten-Stub-Funktion entspricht.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

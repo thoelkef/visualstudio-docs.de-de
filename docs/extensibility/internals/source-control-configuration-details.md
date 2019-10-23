@@ -1,5 +1,5 @@
 ---
-title: Konfigurationsdetails für die Datenquelle | Microsoft-Dokumentation
+title: Details zur Konfiguration der Quell Code Verwaltung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,45 +10,45 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 917354534ee3dbb2b615ec031f0a41c31bd88235
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a6c51dfe4ad9378af04da61dbd7e9011c4678f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322582"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723793"
 ---
 # <a name="source-control-configuration-details"></a>Konfigurationsdetails für die Quellcodeverwaltung
-Um die Datenquellen-Steuerelement zu implementieren, müssen Sie zum ordnungsgemäßen Konfigurieren von Ihrem Projektsystem oder Editor, um die folgenden Schritte ausführen:
+Um die Quell Code Verwaltung zu implementieren, müssen Sie das Projekt System oder den Editor ordnungsgemäß für folgende Aufgaben konfigurieren:
 
-- Berechtigung zum Übergang in den geänderten Zustand anfordern
+- Anfordern der Berechtigung für den Übergang in den geänderten Zustand
 
-- Berechtigung zum Speichern einer Datei
+- Anfordern der Berechtigung zum Speichern einer Datei
 
-- Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
+- Anfordern der Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
 
-## <a name="request-permission-to-transition-to-changed-state"></a>Berechtigung zum Übergang in den geänderten Zustand anfordern
- Ein Projekt oder eine Editor muss über die Berechtigung zum Übergang in den Zustand der geänderten (geändert) anfordern, indem er <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Jede-Editor, der implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> müssen Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> und Genehmigung zum Wechseln des Dokuments aus der Umgebung vor der Rückgabe `True` für <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Ein Projekt ist im Wesentlichen ein Editor für eine Projektdatei, und daher hat die gleiche Verantwortung für die Implementierung geändert-statusüberwachung für die Projektdatei aus, wie in ein Text-Editor für die Dateien. Die Umgebung verarbeitet den geänderten Zustand der Lösung, jedoch müssen Sie den geänderten Zustand eines Objekts die Projektmappe verweist, jedoch nicht gespeichert, z. B. einer Projektdatei oder seiner Elemente behandeln. Im Allgemeinen, wenn Ihrem Projekt oder den Editor zum Verwalten der Persistenz für ein Element verantwortlich ist, ist dann verantwortlich für die Implementierung geändert-statusüberwachung.
+## <a name="request-permission-to-transition-to-changed-state"></a>Anfordern der Berechtigung für den Übergang in den geänderten Zustand
+ Ein Projekt oder Editor muss die Berechtigung zum Übergang in den geänderten Zustand (geändert) anfordern, indem <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> aufgerufen wird. Jeder Editor, der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> implementiert, muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> anrufen und die Genehmigung erhalten, das Dokument aus der Umgebung zu ändern, bevor `True` für <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> zurückgegeben werden. Bei einem Projekt handelt es sich im Wesentlichen um einen Editor für eine Projektdatei. Daher ist die gleiche Verantwortung für die Implementierung der Änderungs Zustandsüberwachung für die Projektdatei, wie ein Text-Editor für die Dateien. Die Umgebung verarbeitet den geänderten Zustand der Projekt Mappe, aber Sie müssen den geänderten Status aller Objekte, die die Projekt Mappe referenziert, aber nicht speichert, wie z. b. eine Projektdatei oder deren Elemente, verarbeiten. Wenn das Projekt oder der Editor für die Verwaltung der Persistenz eines Elements zuständig ist, ist es im Allgemeinen für die Implementierung der Änderungs Zustandsüberwachung verantwortlich.
 
- Als Reaktion auf die `IVsQueryEditQuerySave2::QueryEditFiles` aufrufen, die Umgebung folgende Möglichkeiten:
+ Als Reaktion auf den `IVsQueryEditQuerySave2::QueryEditFiles`-Befehl kann die Umgebung folgende Aktionen ausführen:
 
-- Ändern Sie den Aufruf zurückweisen, in diesem Fall den Editor oder Projekt (bereinigen) unverändert bleiben muss.
+- Ablehnen Sie den aufzurufenden Änderungs Wechsel. in diesem Fall muss der Editor oder das Projekt im unveränderten Zustand bleiben.
 
-- Geben Sie an, dass die Dokumentendaten erneut geladen werden soll. Für ein Projekt wird in die Umgebung die Daten für das Projekt neu geladen. Ein Editor muss erneut laden, die Daten vom Datenträger über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung. In beiden Fällen kann im Kontext des Projekts oder -Editor ändern, wenn die Daten erneut geladen werden.
+- Geben Sie an, dass die Dokument Daten neu geladen werden sollen. Bei einem Projekt lädt die Umgebung die Daten für das Projekt neu. Ein Editor muss die Daten vom Datenträger über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung neu laden. In beiden Fällen kann sich der Kontext im Projekt oder im Editor ändern, wenn die Daten erneut geladen werden.
 
-  Es ist eine komplex und schwierig Aufgabe geeignete überarbeiten `IVsQueryEditQuerySave2::QueryEditFiles` Anrufe an eine bereits vorhandene Codebasis. Daher sollte diese Aufrufe während der Erstellung des Projekts oder der-Editor integriert werden.
+  Es ist eine komplexe und schwierige Aufgabe, geeignete `IVsQueryEditQuerySave2::QueryEditFiles` Aufrufe an eine vorhandene Codebasis zu über. Daher sollten diese Aufrufe während der Erstellung des Projekts oder Editors integriert werden.
 
-## <a name="request-permission-to-save-a-file"></a>Berechtigung zum Speichern einer Datei
- Bevor ein Projekt oder der Editor eine Datei gespeichert wird, muss er Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Für Projektdateien werden diese Aufrufe automatisch von der Lösung durchgeführt, die weiß, wann eine Projektdatei zu speichern. Editoren sind dafür verantwortlich, dass diese Aufrufe, es sei denn, die Implementierung von `IVsPersistDocData2` verwendet die Hilfsfunktion <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Wenn Ihr Editor implementiert `IVsPersistDocData2` in auf diese Weise, und klicken Sie dann auf den Aufruf von `IVsQueryEditQuerySave2::QuerySaveFile` oder `IVsQueryEditQuerySave2::QuerySaveFiles` für Sie vorgenommen wird.
+## <a name="request-permission-to-save-a-file"></a>Anfordern der Berechtigung zum Speichern einer Datei
+ Bevor ein Projekt oder Editor eine Datei speichert, muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> aufgerufen werden. Bei Projektdateien werden diese Aufrufe automatisch von der Projekt Mappe abgeschlossen, die weiß, wann eine Projektdatei gespeichert werden soll. Editoren sind für diese Aufrufe zuständig, es sei denn, die Editor-Implementierung von `IVsPersistDocData2` verwendet die Hilfsfunktion <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Wenn Ihr Editor `IVsPersistDocData2` auf diese Weise implementiert, wird der `IVsQueryEditQuerySave2::QuerySaveFile` oder `IVsQueryEditQuerySave2::QuerySaveFiles` aufgerufen.
 
 > [!NOTE]
-> Stellen Sie diese Aufrufe immer präemptiv, d. h. zu einem Zeitpunkt, wenn der Editor ist einen Abbruch zu empfangen.
+> Nehmen Sie diese Aufrufe immer vorzeitig an – d. h., wenn der Editor in der Lage ist, einen Abbruch zu empfangen.
 
-## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
- Bevor ein Projekt hinzufügen, umbenennen oder einer Datei oder eines Verzeichnisses entfernen kann, müssen die entsprechenden Aufrufen `IVsTrackProjectDocuments2::OnQuery*` Methode um eine Berechtigung aus der Umgebung. Wenn die Berechtigung erteilt, und klicken Sie dann das Projekt muss der Vorgang abgeschlossen und rufen Sie dann auf die entsprechende `IVsTrackProjectDocuments2::OnAfter*` Methode, um der Umgebung zu benachrichtigen, dass der Vorgang abgeschlossen ist. Das Projekt muss Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Schnittstelle für alle Dateien (z. B. spezielle Dateien) und nicht nur die übergeordneten-Dateien. Datei-Aufrufe sind obligatorisch, aber Directory-Aufrufe sind optional. Wenn Ihr Projekt Verzeichnisinformationen, sollten Sie den entsprechenden Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden, aber wenn keine dieser Informationen, und klicken Sie dann die Umgebung Verzeichnisinformationen folgert.
+## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Anfordern der Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
+ Bevor ein Projekt eine Datei oder ein Verzeichnis hinzufügen, umbenennen oder entfernen kann, muss die entsprechende `IVsTrackProjectDocuments2::OnQuery*` Methode aufgerufen werden, um die Berechtigung aus der Umgebung anzufordern. Wenn die Berechtigung erteilt wird, muss das Projekt den Vorgang beenden und dann die entsprechende `IVsTrackProjectDocuments2::OnAfter*`-Methode aufzurufen, um die Umgebung zu benachrichtigen, dass der Vorgang beendet ist. Das Projekt muss die Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>-Schnittstelle für alle Dateien (z. b. spezielle Dateien) und nicht nur für die übergeordneten Dateien aufzurufen. Datei Aufrufe sind obligatorisch, aber Verzeichnis Aufrufe sind optional. Wenn Ihr Projekt über Verzeichnisinformationen verfügt, sollten Sie die entsprechenden <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden aufzurufen. wenn diese Informationen jedoch nicht vorhanden sind, werden die Verzeichnisinformationen von der Umgebung abgeleitet.
 
- Das Projekt sollte nicht die Methoden der Aufrufen `IVsTrackProjectDocuments2` am Projekt zu öffnen oder schließen. Listener, die diese Informationen beim Starten können, bis die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> Ereignis und durchlaufen Sie die Lösung für die Informationen zu finden, sie benötigen. Beim Herunterfahren wird diese Informationen nicht benötigt. `IVsTrackProjectDocuments2` wird bereitgestellt, aus der <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>.
+ Das Projekt sollte die Methoden von `IVsTrackProjectDocuments2` beim Öffnen oder Schließen des Projekts nicht aufzurufen. Listener, die diese Informationen beim Start wünschen, können auf das <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> Ereignis warten und die Lösung durchlaufen, um die benötigten Informationen zu finden. Beim Herunterfahren sind diese Informationen nicht erforderlich. `IVsTrackProjectDocuments2` wird vom <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> bereitgestellt.
 
- Für jede hinzufügen, umbenennen und eine Aktion zum Entfernen, ist ein `OnQuery*` Methode und eine `OnAfter*` Methode. Rufen Sie die `OnQuery*` Methode, um Fragen über die Berechtigung zum Hinzufügen, umbenennen oder entfernen Sie die Datei oder das Verzeichnis. Rufen Sie die `OnAfter*` -Methode auf, nachdem die Datei oder das Verzeichnis verfügt über wurde hinzugefügt, umbenannt oder entfernt und der Zustand des Projekts den neuen Status zeigt.
+ Für jede Aktion zum Hinzufügen, umbenennen und entfernen gibt es eine `OnQuery*`-Methode und eine `OnAfter*`-Methode. Ruft die `OnQuery*`-Methode auf, um die Berechtigung zum Hinzufügen, umbenennen oder Entfernen der Datei oder des Verzeichnisses anzufordern. Ruft die `OnAfter*`-Methode auf, nachdem die Datei oder das Verzeichnis hinzugefügt, umbenannt oder entfernt wurde und der Projektzustand den neuen Zustand widerspiegelt.
 
 ## <a name="see-also"></a>Siehe auch
 

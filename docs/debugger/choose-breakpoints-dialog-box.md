@@ -1,5 +1,5 @@
 ---
-title: Wählen Sie im Dialogfeld Breakpoints | Microsoft-Dokumentation
+title: Haltepunkte auswählen (Dialog Feld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,21 +21,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fdec8c8d1b53f87e14700f5c14099cf0d2e6e392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564781"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745728"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Dialogfeld "Haltepunkte wählen"
 Das Dialogfeld **Haltepunkte wählen** wird geöffnet, wenn Sie versuchen, mithilfe von mehrdeutigen Eingaben im Dialogfeld **Neuer Haltepunkt** einen Haltepunkt zu setzen. Ein typisches Beispiel für eine mehrdeutige Eingabe ist ein überladener Funktionsname.
 
- **Haltepunkte** Listet die möglichen Haltepunkte, die basierend auf den mehrdeutigen Eingaben festgelegt werden können. Sie können einen oder mehrere Haltepunkte auswählen.
+ **Breakpoints** Listet mögliche Haltepunkte auf, die auf der Grundlage der mehrdeutigen Eingabe festgelegt werden können. Sie können einen oder mehrere Haltepunkte auswählen.
 
- **Alle** wählt alle Breakpoints aufgelistet, die der **Haltepunkte** Feld.
+ **Alle** Wählt alle Breakpoints aus, die im Feld **Breakpoints** aufgelistet sind.
 
- **Keine** löscht alle Breakpoints aufgelistet, die der **Haltepunkte** Feld.
+ **Keine** Löscht alle Breakpoints, die im Feld **Breakpoints** aufgelistet sind.
 
 ## <a name="see-also"></a>Siehe auch
 

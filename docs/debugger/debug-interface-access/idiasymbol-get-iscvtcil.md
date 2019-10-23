@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_iscvtcil | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isCVTCIL | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4a4741c4f3a13b77dd871cefdb7a9d6430250b98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796606"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740272"
 ---
-# <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
-Ruft ein Flag, das angibt, ob das Modul aus einem Modul Common Intermediate Language (CIL) in ein systemeigenes Modul konvertiert wurde.
+# <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
+Ruft ein Flag ab, das angibt, ob das Modul von einem Common Intermediate Language (CIL)-Modul in ein System eigenes Modul konvertiert wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,23 +33,23 @@ HRESULT get_isCVTCIL(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` , wenn das Modul aus der CIL in systemeigenen Code konvertiert wurde, andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn das Modul von cil in systemeigenen Code konvertiert wurde. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Diese Eigenschaft ist verfügbar, aus der `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).
+ Diese Eigenschaft ist über den `SymTagCompilandDetails`-Symboltyp verfügbar (siehe " [compilanddetails](../../debugger/debug-interface-access/compilanddetails.md)".
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

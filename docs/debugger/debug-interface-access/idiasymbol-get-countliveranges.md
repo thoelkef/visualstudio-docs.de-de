@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_countLiveRanges | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_countLiveRanges | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cd86edee72f3d25763fd3d19dd9c789e152ed6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837462"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740744"
 ---
-# <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-Ruft die Anzahl der gültigen-Adressbereiche, die den lokalen Symbolcache zugeordnet.
+# <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
+Ruft die Anzahl der gültigen Adressbereiche ab, die dem lokalen Symbol zugeordnet sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,15 +33,15 @@ HRESULT get_countLiveRanges ( 
 #### <a name="parameters"></a>Parameter
  `count`
 
-[out] Gibt die Anzahl der Adressbereiche zurück.
+vorgenommen Gibt die Anzahl der Adressbereiche zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia100.dll
 

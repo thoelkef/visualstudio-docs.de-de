@@ -1,5 +1,5 @@
 ---
-title: Feststellen, ob Zeiger beschädigt eine Speicheradresse | Microsoft-Dokumentation
+title: Ermitteln, ob meine Zeiger eine Speicheradresse beschädigen | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e61c1433ee05954a85537cd5e30bb9683642f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8313bc8e0419e281dceefbafd6dcdcc2f368580f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894937"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734243"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Wie wird festgestellt, ob Zeiger eine Speicheradresse zerstören?
 ## <a name="problem-description"></a>Problembeschreibung
@@ -36,13 +36,13 @@ ms.locfileid: "62894937"
 
 #### <a name="check-for-heap-corruption"></a>Überprüfen des Heaps auf Beschädigungen
 
-- Ein Speicherschaden ist eigentlich die Folge einer Heapbeschädigung. Verwenden Sie in diesem Fall das Global Flags-Dienstprogramm (gflags.exe) oder "pageheap.exe". Finden Sie unter [ http://support.microsoft.com/default.aspx?scid=kb; En-us; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).
+- Ein Speicherschaden ist eigentlich die Folge einer Heapbeschädigung. Verwenden Sie in diesem Fall das Global Flags-Dienstprogramm (gflags.exe) oder "pageheap.exe". Weitere Informationen finden Sie unter [http://support.microsoft.com/default.aspx?scid=kb; en-US; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>So finden Sie die geänderte Stelle der Speicheradresse
 
 1. Legen Sie einen Datenhaltepunkt bei 0x00408000 fest. Weitere Informationen finden Sie unter [Set a data change breakpoint (native C++ only) (Festlegen eines Haltepunkts für Datenänderungen (nur nativer C++-Code))](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 
-2. Zeigen Sie den Speicherinhalt bei Erreichen eines Haltepunkts im Fenster **Speicher** ab Adresse 0x00408000 an. Weitere Informationen finden Sie unter [Arbeitsspeicher Windows](../debugger/memory-windows.md).
+2. Zeigen Sie den Speicherinhalt bei Erreichen eines Haltepunkts im Fenster **Speicher** ab Adresse 0x00408000 an. Weitere Informationen finden Sie unter Arbeits [Speicherfenster](../debugger/memory-windows.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)

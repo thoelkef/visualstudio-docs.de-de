@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc11269713770bbc1950d8f15626936ddd2174f
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738151"
 ---
 # <a name="debugging-options-dialog-box"></a>Debuggen, Dialogfeld "Optionen"
 Im Ordner **Debuggen** im Dialogfeld **Optionen** des Menüs **Extras** sind die folgenden Seiten zum Festlegen der Debuggeroptionen enthalten.

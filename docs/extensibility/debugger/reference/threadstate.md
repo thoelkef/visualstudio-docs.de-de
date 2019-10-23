@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Microsoft-Dokumentation
+title: Thread State | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50f487b3d44fc1b871b00348ec28693b36c49685
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316145"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727498"
 ---
 # <a name="threadstate"></a>THREADSTATE
-Gibt den Zustand des Threads.
+Gibt den Status des Threads an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,26 +53,26 @@ public enum enum_THREADSTATE { 
  Gibt an, dass der Thread ausgeführt wird.
 
  `THREADSTATE_STOPPED`\
- Gibt an, dass der Thread aufgrund von einem Haltepunkt angehalten wurde.
+ Gibt an, dass der Thread aufgrund eines Breakpoints angehalten wird.
 
  `THREADSTATE_FRESH`\
- Gibt an, dass der Thread erstellt wurde, aber noch nicht Code ausgeführt wird.
+ Gibt an, dass der Thread erstellt, aber noch nicht ausgeführt wird.
 
  `THREADSTATE_DEAD`\
- Gibt an, dass der Thread inaktiv ist.
+ Gibt an, dass der Thread nicht aktiv ist.
 
  `THREADSTATE_FROZEN`\
- Gibt an, dass der Thread gesperrt ist (es kann keine Ausführung ausgeführt werden).
+ Gibt an, dass der Thread eingefroren ist (es kann keine Ausführung ausgeführt werden).
 
 ## <a name="remarks"></a>Hinweise
- Verwendet für die `dwThreadState` Feld der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur.
+ Wird für das `dwThreadState`-Feld der [Thread Properties](../../../extensibility/debugger/reference/threadproperties.md) -Struktur verwendet.
 
 ## <a name="requirements"></a>Anforderungen
- Header: msdbg.h
+ Header: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft. VisualStudio. Debugger. Interop. dll
 
 ## <a name="see-also"></a>Siehe auch
 - [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

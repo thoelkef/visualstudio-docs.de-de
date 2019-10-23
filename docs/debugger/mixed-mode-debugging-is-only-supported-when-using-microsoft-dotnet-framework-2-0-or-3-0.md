@@ -1,5 +1,5 @@
 ---
-title: Debuggen im gemischten Modus wird nur unterstützt, wenn Microsoft .NET Framework 2.0 oder 3.0 | Microsoft-Dokumentation
+title: Debuggen im gemischten Modus wird nur unterstützt, wenn Microsoft .NET Framework 2,0 oder 3,0 verwendet wird | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 827d3c5fcc625601019d6cbf61cdbf7c771b63b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929858"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730919"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Debuggen im gemischten Modus wird nur bei Verwendung von Microsoft .NET Framework, Version 2.0 oder 3.0, unterstützt
 Ältere Versionen von Microsoft .NET Framework 2.0 bieten keine Unterstützung für das Debuggen im gemischten Modus von 64-Bit-Prozessen. Dies bedeutet, dass Sie während des Debuggens nicht von verwaltetem Code zu systemeigenem Code oder von systemeigenem Code zu verwaltetem Code wechseln können.
@@ -51,7 +51,7 @@ ms.locfileid: "62929858"
 
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-- Finden Sie unter [Einrichten von SQL-Debugging](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Siehe [Einrichten des SQL-Debuggens](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)

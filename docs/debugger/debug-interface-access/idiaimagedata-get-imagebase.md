@@ -1,5 +1,5 @@
 ---
-title: 'Idiaimagedata:: Get_imagebase | Microsoft-Dokumentation'
+title: 'IDiaImageData:: get_imageBase | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829061"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743439"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Ruft die Speicheradresse, in dem das Abbild basieren soll.
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
+Ruft den Speicherort ab, an dem das Image basieren soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Basiswert der vorgeschlagenen Image zurück.
+vorgenommen Gibt den vorgeschlagenen Bild Basiswert zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Aufgrund von Image-Basis-Konflikten kann ein Bild automatisch auf einen nicht verwendeten Speicherbereich ein REBASE ausgeführt werden, wenn es geladen wird. Diese Methode gibt den Basis-Hinweis (empfohlene Speicherort), der zum Zeitpunkt der Kompilierung im Modul gespeichert wurden.
+ Aufgrund von Image Basis Konflikten wird ein Abbild möglicherweise automatisch auf einen nicht verwendeten Speicherort zurückgesetzt, wenn es geladen wird. Diese Methode gibt den Basis Hinweis (vorgeschlagene Speicheradresse) zurück, der zum Zeitpunkt der Kompilierung im Modul gespeichert wurde.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

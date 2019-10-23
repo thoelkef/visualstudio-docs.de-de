@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_restrictedType | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_restrictedType | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8929414c0e36983d378ea2a801803321f3aa88c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eac7e512d2fbfb5367725b3878d292444961b6de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835525"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739398"
 ---
-# <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Gibt an, ob die `this` Zeiger markiert wird als beschränkt.
+# <a name="idiasymbolget_restrictedtype"></a>IDiaSymbol::get_restrictedType
+Gibt an, ob der `this` Zeiger als eingeschränkt gekennzeichnet wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_restrictedType(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf eine `BOOL` , der angibt, ob die `this` Zeiger markiert wird als beschränkt.
+vorgenommen Ein Zeiger auf eine `BOOL`, die angibt, ob der `this` Zeiger als eingeschränkt gekennzeichnet ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
