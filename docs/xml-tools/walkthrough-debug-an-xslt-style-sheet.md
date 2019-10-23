@@ -1,106 +1,106 @@
 ---
-title: Debuggen von XSLT-Stylesheets
+title: XSLT-Stylesheets debuggen
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e787ca3d2d29f04d6af27a5f36f1f84c9d0bc9f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808473"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604610"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets
 
-Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung des XSLT-Debuggers veranschaulicht. Zu den Schritten gehören das Anzeigen von Variablen, das Festlegen von Haltepunkten und das schrittweise Ausführen des Codes. Der Debugger können Sie den Code zeilenweise ausführen.
+Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung des XSLT-Debuggers veranschaulicht. Zu den Schritten gehören das Anzeigen von Variablen, das Festlegen von Haltepunkten und das schrittweise Ausführen des Codes. Mit dem Debugger können Sie Codezeilen Weise ausführen.
 
-Um für diese exemplarische Vorgehensweise vorzubereiten, kopieren Sie zunächst die beiden [Beispieldateien](#sample-files) auf dem lokalen Computer. Eine ist das Stylesheet, und eine ist die XML-Datei, die wir als Eingabe für das Stylesheet verwenden werden. In dieser exemplarischen Vorgehensweise ist sucht das Stylesheet, die, das wir verwenden, alle Bücher, deren Kosten unter der durchschnittliche Buchpreis liegt.
+Um diese exemplarische Vorgehensweise vorzubereiten, kopieren Sie zunächst die beiden [Beispieldateien](#sample-files) auf Ihren lokalen Computer. Eine ist das Stylesheet, und eine ist die XML-Datei, die wir als Eingabe für das Stylesheet verwenden. In dieser exemplarischen Vorgehensweise findet das verwendete Stylesheet alle Bücher, deren Kosten unter dem durchschnittlichen Buchpreis liegen.
 
 > [!NOTE]
-> Der XSLT-Debugger ist nur verfügbar, in der Enterprise Edition von Visual Studio.
+> Der XSLT-Debugger ist nur in der Enterprise Edition von Visual Studio verfügbar.
 
 ## <a name="start-debugging"></a>Debugging starten
 
-1. Von der **Datei** Menü wählen **öffnen** > **Datei**.
+1. Wählen Sie im Menü **Datei** die Option  > **Datei** **Öffnen** aus.
 
-2. Suchen Sie die *unten average.xsl* Datei, und wählen **öffnen**.
+2. Suchen Sie die Datei *below-average. xsl* , und wählen Sie **Öffnen**aus.
 
-   Das Stylesheet wird in der XML-Editor geöffnet.
+   Das Stylesheet wird im XML-Editor geöffnet.
 
-3. Klicken Sie auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Eingabe** Eigenschaftenfenster des Dokuments im Feld. (Wenn die **Eigenschaften** Fenster ist nicht sichtbar, mit der rechten Maustaste auf die geöffnete Datei im Editor, und wählen Sie dann **Eigenschaften**.)
+3. Klicken Sie im Dokumenteigenschaften Fenster im Feld **Eingabe** auf die Schaltfläche zum Durchsuchen ( **...** ). (Wenn das **Eigenschaften** Fenster nicht sichtbar ist, klicken Sie mit der rechten Maustaste auf eine beliebige Stelle in der geöffneten Datei im Editor, und wählen Sie dann **Eigenschaften**aus.)
 
-4. Suchen Sie die *books.xml* Datei, und wählen Sie dann **öffnen**.
+4. Suchen Sie die Datei *Books. XML* , und wählen Sie dann **Öffnen**aus.
 
-   Hiermit wird die Quelldatei für das Dokument, die für die XSLT-Transformation verwendet wird.
+   Dadurch wird die Quelldokument Datei festgelegt, die für die XSLT-Transformation verwendet wird.
 
-5. Legen Sie eine [Haltepunkt](../debugger/using-breakpoints.md) in Zeile 12 des *unten average.xsl*. Sie können in vielfältigen Möglichkeiten dazu:
+5. Legen Sie einen [Breakpoint](../debugger/using-breakpoints.md) in Zeile 12 von *below-average. xsl*fest. Hierfür gibt es mehrere Möglichkeiten:
 
-   - Klicken Sie auf den Rand des Editors in Zeile 12.
+   - Klicken Sie in Zeile 12 auf den Rand des Editors.
 
-   - Klicken Sie auf eine beliebige Stelle in Zeile 12, und drücken Sie dann die **F9**.
+   - Klicken Sie in Zeile 12 auf eine beliebige Stelle, und drücken Sie **F9**.
 
-   - Mit der rechten Maustaste die `xsl:if` Starttag, und wählen Sie dann **Haltepunkt** > **Haltepunkt einfügen**.
+   - Klicken Sie mit der rechten Maustaste auf das `xsl:if` Starttag, und wählen Sie dann halte **Punkt**  >  halte**Punkt einfügen**aus.
 
       ![Haltepunkt in XSL-Datei in Visual Studio einfügen](media/insert-breakpoint.PNG)
 
-6. Wählen Sie auf der Menüleiste **XML** > **XSLT Debuggen starten** (oder drücken Sie **Alt**+**F5**).
+6. Wählen Sie in der Menüleiste die Option **XML**  > **XSLT-Debuggen starten** aus (oder drücken Sie **alt** +**F5**).
 
-   Der Debug-Vorgang wird gestartet.
+   Der Debugprozess wird gestartet.
 
-   Im Editor befindet sich der Debugger auf dem `xsl:if` -Element des Stylesheets. Eine andere Datei, die mit dem Namen *unten average.xml* öffnet im Editor; Dies ist die Ausgabedatei, die als einzelnen Knoten in der Eingabedatei aufgefüllt wird *books.xml* verarbeitet wird.
+   Im Editor befindet sich der Debugger auf dem `xsl:if`-Element des Stylesheets. Eine andere Datei mit dem Namen *below-average. XML* wird im Editor geöffnet. Dies ist die Ausgabedatei, die ausgefüllt wird, wenn jeder Knoten in der Eingabedatei *Books. XML* verarbeitet wird.
 
-   Die **"Auto"**, **"lokal"**, und **Überwachen 1** Fenster am unteren Rand des Fensters von Visual Studio angezeigt werden. Die **"lokal"** Fenster zeigt alle lokalen Variablen und ihre aktuellen Werte. Das schließt die im Stylesheet definierten Variablen sowie Variablen ein, anhand derer der Debugger die Knoten verfolgt, die sich derzeit im Kontext befinden.
+   Die Fenster **Auto, lokal und über** **Wachen 1** **werden unten**im Visual Studio-Fenster angezeigt. Im **Fenster Lokal** werden alle lokalen Variablen und ihre aktuellen Werte angezeigt. Das schließt die im Stylesheet definierten Variablen sowie Variablen ein, anhand derer der Debugger die Knoten verfolgt, die sich derzeit im Kontext befinden.
 
 ## <a name="watch-window"></a>Überwachungsfenster
 
-Wir fügen zwei Variablen auf die **Überwachen 1** Fenster, damit wir ihre Werte untersuchen können, wenn die Eingabedatei verarbeitet werden. (Sie können auch die **"lokal"** Fenster aus, um Werte zu überprüfen, wenn die Variablen, die Sie überwachen möchten bereits vorhanden sind.)
+Wir fügen dem Fenster "über **Wachen 1** " zwei Variablen hinzu, damit wir Ihre Werte untersuchen können, wenn die Eingabedatei verarbeitet wird. (Sie können auch das Fenster "lokal" verwenden, um Werte zu überprüfen, **Wenn die zu** überwachenden Variablen bereits vorhanden sind.)
 
-1. Aus der **Debuggen** Menü wählen **Windows** > **Watch** > **Überwachen 1**.
+1. Wählen Sie im Menü **Debuggen** die Option **Windows**  > **Überwachung**  > **ansehen 1**aus.
 
-   Die **Überwachen 1** Fenster wird angezeigt.
+   Das Fenster über **Wachen 1** wird sichtbar.
 
-2. Typ `$bookAverage` in die **Namen** Feld, und drücken Sie dann die **EINGABETASTE**.
+2. Geben Sie `$bookAverage` in das Feld **Name** ein, und drücken Sie dann die **Eingabe**Taste.
 
-   Der Wert des der `$bookAverage` Variablen zeigt, in der **Wert** Feld.
+   Der Wert der `$bookAverage`-Variablen wird im Feld **Wert** angezeigt.
 
-3. Geben Sie auf der nächsten Zeile `self::node()` in die **Namen** Feld, und drücken Sie dann die **EINGABETASTE**.
+3. Geben Sie in der nächsten Zeile `self::node()` in das Feld **Name** ein, und drücken **Sie**dann die EINGABETASTE.
 
-   `self::node()` ist ein XPath-Ausdruck, der den aktuellen Kontextknoten auswertet. Der Wert des `self::node()`-XPath-Ausdrucks ist der erste book-Knoten. Dieser ändert sich im Laufe der Transformation.
+   `self::node()` ist ein XPath-Ausdruck, der den aktuellen Kontext Knoten ergibt. Der Wert des `self::node()`-XPath-Ausdrucks ist der erste book-Knoten. Dieser ändert sich im Laufe der Transformation.
 
-4. Erweitern Sie die `self::node()` Knoten, und klicken Sie dann den Knoten, die hat Wert `price`.
+4. Erweitern Sie den Knoten `self::node()`, und erweitern Sie dann den Knoten, der den Wert `price` hat.
 
-   ![Fenster "überwachen", während der XSLT-Debuggen in Visual Studio](media/xslt-debugging-watch-window.png)
+   ![Überwachungsfenster während des XSLT-Debuggens in Visual Studio](media/xslt-debugging-watch-window.png)
 
-   Sie können finden Sie unter den Wert des Buchpreises für den aktuellen Buchknoten, und vergleichen Sie ihn mit der `$bookAverage` Wert. Da der Buchpreis unterhalb des Durchschnitts, ist die `xsl:if` Bedingung sollte erfolgreich sein, wenn Sie den Debugvorgang fortsetzen.
+   Sie können den Wert des Buchpreises für den aktuellen Buch Knoten anzeigen und ihn mit dem `$bookAverage` Wert vergleichen. Da der Buchpreis unter dem Durchschnitt liegt, sollte die `xsl:if` Bedingung erfolgreich sein, wenn Sie den Debugvorgang fortsetzen.
 
-## <a name="step-through-the-code"></a>Den Code schrittweise durchgehen
+## <a name="step-through-the-code"></a>Schrittweises Durchlaufen des Codes
 
 1. Drücken Sie **F5**, um fortzufahren.
 
-   Da der erste Buchknoten erfüllt die `xsl:if` Bedingung, dem-Knoten hinzugefügt wird die *unten average.xml* Ausgabedatei. Der Debugger setzt die Ausführung fort, bis er sich wieder am `xsl:if`-Element im Stylesheet befindet. Der Debugger befindet sich nun auf dem zweiten Book-Knoten in der *books.xml* Datei.
+   Da der erste Buch Knoten die `xsl:if` Bedingung erfüllt, wird der Buch Knoten der Ausgabedatei " *below-average. XML* " hinzugefügt. Der Debugger setzt die Ausführung fort, bis er sich wieder am `xsl:if`-Element im Stylesheet befindet. Der Debugger befindet sich nun auf dem zweiten book-Knoten in der Datei *Books. XML* .
 
-   In der **Überwachen 1** Fenster die `self::node()` Wert ändert sich in der zweiten Buchknoten. Durch Auswertung des Werts für das Preiselement können Sie feststellen, dass der Preis über dem Durchschnitt liegt und folglich die `xsl:if`-Bedingung fehlschlägt.
+   Im Fenster über **Wachen 1** ändert sich der Wert `self::node()` in den zweiten Buch Knoten. Durch Auswertung des Werts für das Preiselement können Sie feststellen, dass der Preis über dem Durchschnitt liegt und folglich die `xsl:if`-Bedingung fehlschlägt.
 
 2. Drücken Sie **F5**, um fortzufahren.
 
-   Da der zweite Buchknoten nicht erfüllt die `xsl:if` Bedingung der Buchknoten wird nicht hinzugefügt der *unten average.xml* Ausgabedatei. Der Debugger wird weiterhin ausgeführt, bis es wieder auf positioniert ist die `xsl:if` -Element im Stylesheet. Der Debugger befindet sich jetzt am dritten `book` Knoten in der *books.xml* Datei.
+   Da der zweite Buch Knoten die `xsl:if` Bedingung nicht erfüllt, wird der book-Knoten nicht zur *below-average. XML* -Ausgabedatei hinzugefügt. Der Debugger wird weiter ausgeführt, bis er erneut auf dem `xsl:if`-Element im Stylesheet positioniert ist. Der Debugger befindet sich nun auf dem dritten `book` Knoten in der Datei *Books. XML* .
 
-   In der **Überwachen 1** Fenster die `self::node()` Wert ändert sich in der dritten Buchknoten. Durch die Auswertung des Werts für die `price` Element können Sie feststellen, dass der Preis unter dem Durchschnitt ist. Die `xsl:if` -Bedingung erfüllt ist.
+   Im Fenster über **Wachen 1** wird der `self::node()` Wert in den dritten Buch Knoten geändert. Durch Untersuchen des Werts des `price` Elements können Sie feststellen, dass der Preis unter dem Durchschnitt liegt. Die `xsl:if` Bedingung sollte erfolgreich sein.
 
 3. Drücken Sie **F5**, um fortzufahren.
 
-   Da die `xsl:if` -Bedingung erfüllt war, das dritte Buch wird hinzugefügt die *unten average.xml* Ausgabedatei. Alle Bücher im XML-Dokument wurden verarbeitet, und der Debugger wird beendet.
+   Da die `xsl:if` Bedingung erfüllt wurde, wird das dritte Buch der Ausgabedatei " *below-average. XML* " hinzugefügt. Alle Bücher im XML-Dokument wurden verarbeitet, und der Debugger wird beendet.
 
 ## <a name="sample-files"></a>Beispieldateien
 
 Bei der exemplarischen Vorgehensweise werden die folgenden zwei Dateien verwendet.
 
-### <a name="below-averagexsl"></a>below-average.xsl
+### <a name="below-averagexsl"></a>below-average. Xsl
 
 ```xml
 <?xml version='1.0'?>

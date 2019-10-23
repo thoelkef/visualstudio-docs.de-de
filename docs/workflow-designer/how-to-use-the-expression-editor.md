@@ -1,42 +1,42 @@
 ---
-title: 'Workflow-Designer – Vorgehensweise: Verwenden des Ausdrucks Editors'
+title: 'Workflow-Designer: Verwenden des Ausdrucks Editors'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fc76139d6989421b49c8c80ef325b51a6934cb4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949538"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650272"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks Editors
 
-Der Ausdrucks-Editor ist ein Workflow-Designer-Steuerelement, das in vielen Workflowaktivitäten zum eingeben und Auswerten von Ausdrücken verwendet wird. Der Ausdrucks-Editor stellt vollständige IDE-Bearbeitungsfunktionen Oberfläche, einschließlich IntelliSense, Einfärbung, ParamInfo, Fehlerschnörkel, andere Features. Der Compiler überprüft den Ausdruck aus, nachdem er eingegeben wurde. Wenn der Ausdruck ungültig ist, wird ein Fehlersymbol angezeigt. Der Editor kann auch geöffnet werden, als ein **Ausdrucks-Editor** Dialogfeld.
+Der Ausdrucks-Editor ist ein Workflow-Designer Steuerelement, das in vielen Workflow Aktivitäten zum eingeben und Auswerten von Ausdrücken verwendet wird. Der Ausdrucks-Editor bietet eine vollständige IDE-Bearbeitungsumgebung, einschließlich IntelliSense, farbige Farbgebung, paramInfo, Fehler Wellenlinien, zu anderen Features. Der Compiler überprüft den Ausdruck, nachdem er eingegeben wurde. Wenn der Ausdruck ungültig ist, wird ein Fehlersymbol angezeigt. Der Editor kann auch als Dialogfeld **Ausdrucks-Editor** geöffnet werden.
 
-Ausdrücke sind an Argumente oder Eigenschaften gebundene literale Werte oder Visual Basic-Code. Sie enthalten Wertelemente (z. B. Variablen, Konstanten, Literale, Eigenschaften), die mit Vorgängen um einen neuen Wert zu erhalten, kombiniert werden. Ausdrücke werden mit VB.NET-Syntax geschrieben, auch wenn sie in einem in C# geschriebenen Programm verwendet werden. Dies bedeutet, dass Großschreibung spielt keine Rolle, Vergleich wird ausgeführt, die mit einem einzelnen entspricht signieren ("=" anstelle von "==") sind die booleschen Operatoren die Wörter "and" und "or" statt der Symbole "& &" und "||", und **"Nothing"** wird verwendet, anstelle von **null**. Weitere Informationen zu Ausdrücken und Operatoren in Visual Basic und einige Beispiele finden Sie [Operatoren und Ausdrücke in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+Ausdrücke sind an Argumente oder Eigenschaften gebundene literale Werte oder Visual Basic-Code. Sie enthalten Wert Elemente (z. b. Variablen, Konstanten, Literale, Eigenschaften), die mit Vorgängen kombiniert werden, um einen neuen Wert zu erhalten. Ausdrücke werden mit VB.NET-Syntax geschrieben, auch wenn sie in einem in C# geschriebenen Programm verwendet werden. Dies bedeutet, dass die Groß-/Kleinschreibung keine Rolle spielt, dass der Vergleich mit einem einzelnen Gleichheitszeichen ("=" anstelle von "= =") erfolgt, dass die booleschen Operatoren die Wörter "and" und "or" anstelle der Symbole "& &" und "| |" sind und **nichts** anstelle von NULL verwendet wird. Weitere Informationen zu Ausdrücken und Operatoren in Visual Basic und einige Beispiele finden Sie unter [Operatoren und Ausdrücke in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
-Die **Ausdrucks-Editor** verhält sich wie folgt:
+Der **Ausdrucks-Editor** verhält sich wie folgt:
 
 - Wenn der Ausdrucks-Editor nicht im Fokus ist, sieht er wie ein reguläres TextBlock-Steuerelement aus.
 
-- Sobald der Fokus auf dem Ausdrucks-Editor ist, sieht er wie das Ausdrucks-Editor-Steuerelement aus und verhält sich wie dieses. Nachdem sie den Fokus verliert, sieht der Ausdrucks-Editor ein reguläres TextBlock-Steuerelement erneut aus.
+- Sobald der Fokus auf dem Ausdrucks-Editor ist, sieht er wie das Ausdrucks-Editor-Steuerelement aus und verhält sich wie dieses. Nachdem der Fokus verloren ist, sieht der Ausdrucks-Editor wieder wie ein regulärer TextBlock aus.
 
 - Wenn Sie in einem neu gehosteten Workflow-Designer den Fokus auf den Ausdrucks-Editor legen, dann verhält er sich wie ein Textfeld. Wenn der Ausdrucks-Editor im neu gehosteten Workflow-Designer den Fokus verliert, sieht er wieder wie ein regulärer TextBlock aus.
 
 > [!NOTE]
-> IntelliSense für den Ausdrucks-Editor ist nur in Visual Studio verfügbar. In der Visual Studio und den neu gehosteten Szenarien überprüft der Compiler den Ausdruck aus, nachdem eingegeben wird und der Ausdrucks-Editor zeigt ein Fehlersymbol an, wenn der Ausdruck ungültig ist.
+> IntelliSense für den Ausdrucks-Editor ist nur in Visual Studio verfügbar. Sowohl in den Visual Studio-als auch in den neu gehosteten Szenarien überprüft der Compiler den Ausdruck, nachdem er eingegeben wurde, und der Ausdrucks-Editor zeigt ein Fehler Symbol an, wenn der Ausdruck ungültig ist.
 
 ## <a name="use-the-expression-editor"></a>Verwenden des Ausdrucks-Editors
 
-1. Öffnen Sie in Visual Studio ein neues oder vorhandenes Workflowprojekt aus.
+1. Öffnen Sie in Visual Studio ein neues oder vorhandenes Workflow Projekt.
 
 2. Fügen Sie dem Workflow z. B. die <xref:System.Activities.Statements.Assign>-Aktivität hinzu.
 
@@ -45,13 +45,13 @@ Die **Ausdrucks-Editor** verhält sich wie folgt:
 
 3. Klicken Sie im Aktivitätsdesigner für die <xref:System.Activities.Statements.Assign>-Aktivität auf den linken Ausdrucks-Editor.
 
-     Die grauen Wasserzeichen Zeichenfolgen  **\<auf >** und  **\<VB-Ausdruck eingeben >** sind die standardtextzeichenfolgen für Ausdrucks-Editoren in der <xref:System.Activities.Statements.Assign> Aktivität.
+     Die grauen Wasserzeichen Zeichenfolgen **\<To >** und **\<Enter einen VB-Ausdruck, >** die Standardtext Zeichenfolgen für Ausdrucks-Editoren in der <xref:System.Activities.Statements.Assign> Aktivität sind.
 
 4. Geben Sie einen Ausdruck ein. Wenn Sie eine Zeichenfolge eingeben, setzen Sie diese unbedingt in Anführungszeichen. Wenn Sie das Ausdrucksargument an eine Variable zu binden, lassen Sie die Anführungszeichen weg.
 
-     Wenn Sie fertig sind, wählen Sie eine Region oder einen Bereich außerhalb der Ausdrucks-Editor, um den Fokus auf einen anderen Teil des Designers zu verlagern. Verschieben des Fokus bewirkt, dass der Compiler den Ausdruck zu überprüfen, wie zuvor beschrieben.
+     Wenn Sie fertig sind, wählen Sie eine Region oder einen Bereich außerhalb des Ausdrucks-Editors aus, um den Fokus auf einen anderen Teil des Designers zu verschieben. Das Verschieben des Fokus bewirkt, dass der Compiler den Ausdruck wie zuvor beschrieben überprüft.
 
-     Eine alternative Methode zum eingeben oder Bearbeiten eines Ausdrucks ist mit den Auslassungspunkten neben dem Eigenschaftennamen im Eigenschaftenraster auf. Öffnen Sie auf die Auslassungspunkte die **Ausdrucks-Editor** als Dialogfeld.
+     Eine alternative Möglichkeit, einen Ausdruck einzugeben oder zu bearbeiten, ist das Klicken auf die Auslassungs Punkte neben dem Eigenschaftsnamen im Eigenschaften Raster. Durch Auswahl der Auslassungs Punkte wird der **Ausdrucks-Editor** als Dialogfeld geöffnet.
 
 ## <a name="see-also"></a>Siehe auch
 
