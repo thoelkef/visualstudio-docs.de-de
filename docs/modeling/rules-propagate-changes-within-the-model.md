@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 808eecab2b4f468b730b6c58cce32d08ca523d0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 74d64b4fe0c0aa5293e11daad13f632c4a487736
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747420"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 Sie können eine Speicher Regel erstellen, um eine Änderung von einem Element zu einem anderen im Visualisierungs-und Modellierungs-SDK (vmsdk) weiterzugeben. Wenn eine Änderung an einem Element im Speicher vorgenommen wird, werden die Regeln für die Ausführung geplant, in der Regel, wenn für die äußerste Transaktion ein Commit ausgeführt wird. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. b. das Hinzufügen eines Elements oder das Löschen. Sie können Regeln an bestimmte Typen von Elementen, Formen oder Diagrammen anfügen. Viele integrierte Funktionen werden durch Regeln definiert: beispielsweise stellen Regeln sicher, dass ein Diagramm aktualisiert wird, wenn sich das Modell ändert. Sie können Ihre domänenspezifische Sprache anpassen, indem Sie Ihre eigenen Regeln hinzufügen.

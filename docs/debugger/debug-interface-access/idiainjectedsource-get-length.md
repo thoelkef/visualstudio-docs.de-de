@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_length | Microsoft-Dokumentation'
+title: 'Idiainjetedsource:: get_Length | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95c51910ee638338f588b1e81b844cf3f487a50e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828642"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743360"
 ---
-# <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
-Ruft die Anzahl der Bytes des Codes ab.
+# <a name="idiainjectedsourceget_length"></a>IDiaInjectedSource::get_length
+Ruft die Anzahl der Code Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Anzahl der Bytes des Codes zurück.
+vorgenommen Gibt die Anzahl der Bytes des Codes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Der von dieser Methode zurückgegebene Wert die Länge des Quellcodes und ist von der gleiche Wert wie vom die [idiainjectedsource:: Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) Methode.
+ Der von dieser Methode zurückgegebene Wert ist die Länge des Quellcodes und entspricht dem Wert, der von der [idiainjetedsource:: get_Source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) -Methode zurückgegeben wird.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

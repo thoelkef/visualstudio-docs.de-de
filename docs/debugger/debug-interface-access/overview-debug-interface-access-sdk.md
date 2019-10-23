@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e459d4429d712a9ca4c245d581c6be3578711cd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e4269c620247f256d2cfae2e84b76ff60fcf9ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855109"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738605"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Übersicht (Debug Interface Access SDK)
-Verwenden Sie die DIA-SDK, um die Informationen zum Debuggen von Microsoft zuzugreifen. Das DIA SDK bietet eine COM-basierte API-Satz, die entfällt die Notwendigkeit, die der Code neu geschrieben, wenn sich Microsoft das Format der Debuginformationen ändert. Die DIA-SDK können Sie gelesen werden, einen ausgewählten Satz von früheren Versionen von Debuginformationen, befindet sich in der PDB-Datei und .dbg-Dateien generiert werden auch [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Versionen 5.0 und höher.
+Verwenden Sie die Dia SDK, um auf die Microsoft-Debuginformationen zuzugreifen. Der DIA SDK stellt einen com-basierten API-Satz bereit, der die Notwendigkeit zum Umschreiben des Codes überflüssig macht, wenn Microsoft das Format der Debuginformationen ändert. Mit dem Dia SDK können Sie auch aus einem ausgewählten Satz vorheriger Versionen von Debuginformationen lesen, die sich in PDB-und dbg-Dateien befinden, die von [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Versionen 5,0 und höher generiert werden.
 
- Jede Schnittstelle in die DIA-SDK stellt ein anderes COM-Objekt, mit Ausnahme dar, falls nicht anders. Zusätzliche Schnittstellen und daher zusätzliche Objekte werden erstellt, mithilfe von Abfragen im explicit, z. B. [idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) oder [idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md), anstatt durch Aufrufen von `QueryInterface` für vorhandene Schnittstellenzeiger auf.
+ Jede Schnittstelle im Dia SDK stellt ein anderes com-Objekt dar, außer wenn anders angegeben. Zusätzliche Schnittstellen und somit zusätzliche Objekte werden mithilfe von expliziten Abfragen, wie z. b. [IDiaDataSource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) oder [IDiaSession:: findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md), erstellt, anstatt `QueryInterface` für vorhandene Schnittstellen Zeiger Aufrufs.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)

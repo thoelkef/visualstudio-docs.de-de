@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadLONG | Microsoft-Dokumentation
+title: 'Idiapropertystorage:: Read Long | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb277368e23cf51a4d3d3b69226ee6bf093d6c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af9d65c571c5e0a281b968d922c9b5170bd1c561
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839614"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742892"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
-Liest `LONG` Werte in einem Eigenschaftensatz.
+Liest `LONG` Werte in einem Eigenschaften Satz.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT ReadDLONG ( 
 #### <a name="parameters"></a>Parameter
  `id`
 
-[in] Bezeichner für die Eigenschaft gelesen werden (`PROPID` ist in WTypes.h als definiert eine `ULONG`).
+in Der Bezeichner der zu lesenden Eigenschaft (`PROPID` ist in Wtypes. h als `ULONG` definiert).
 
  `pValue`
 
-[out] Gibt den Wert der Eigenschaft zurück.
+vorgenommen Gibt den Eigenschafts Wert zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `LONG`.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_INVALIDARG` zurück, wenn die Eigenschaft nicht vom Typ `LONG` ist.
 
 ## <a name="remarks"></a>Hinweise
  Ein `LONG` wird von Windows als eine 32-Bit-Ganzzahl mit Vorzeichen definiert.

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_lengthprolog | Microsoft-Dokumentation'
+title: 'IDiaFrameData:: get_lengthProlog | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad162a8a29bd9432424ce64d00e820a0bfde1dd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00b85d1db996487d76d396d6e4df9ea557e6aae5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839952"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743562"
 ---
-# <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
-Ruft die Anzahl der Bytes der Prolog-Code im Block.
+# <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
+Ruft die Anzahl der Bytes des prologcodes im-Block ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_lengthProlog ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Anzahl von Bytes des prologcodes.
+vorgenommen Gibt die Anzahl der Bytes des prologcodes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Der Prolog-Code ist eine Sequenz von Anweisungen, die beibehalten von Registern, legt den CPU-Status und den Stapel für die Funktion richtet.
+ Bei dem Prologcode handelt es sich um eine Sequenz von Anweisungen, die Register beibehält, den CPU-Status festlegt und den Stapel für die Funktion festlegt.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

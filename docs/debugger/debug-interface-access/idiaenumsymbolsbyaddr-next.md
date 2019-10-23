@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbolsbyaddr:: Next | Microsoft-Dokumentation'
+title: 'IDiaEnumSymbolsByAddr:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e52567eddcbb6c4f372256e66b7b723bc7aa7394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 424924f3fab62cf862420d58c947bba16343141d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833440"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743881"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
-Ruft die nächste Symbole in der Reihenfolge nach Adresse ab.
+Ruft die nächsten Symbole in der Order by-Adresse ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,21 +35,21 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der Symbole in der Enumerator abgerufen werden sollen.
+in Die Anzahl der Symbole im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Ein Array, das mit gefüllt werden soll die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das die gewünschten Symbole darstellen.
+vorgenommen Ein Array, das mit dem [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt ausgefüllt werden soll, das die gewünschten Symbole darstellt.
 
  pceltFetched
 
-[out] Gibt die Anzahl der Symbole in der abgerufenen Enumerator zurück.
+vorgenommen Gibt die Anzahl der Symbole im abgerufenen Enumerator zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine Symbole mehr vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine weiteren Symbole vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Diese Methode aktualisiert die Position des Enumerators durch die Anzahl der Elemente abgerufen.
+ Diese Methode aktualisiert die enumeratorposition um die Anzahl der abgerufenen Elemente.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

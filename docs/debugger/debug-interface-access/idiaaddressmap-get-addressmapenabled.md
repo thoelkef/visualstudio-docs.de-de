@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Get_addressmapenabled | Microsoft-Dokumentation'
+title: 'IDiaAddressMap:: get_addressMapEnabled | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7391010e409cc25a3151bb2abb806289c81288a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b518cf3728279ea8db267d01867fa66ceae35b21
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554408"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745182"
 ---
-# <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
-Gibt an, ob eine Adresszuordnung für eine bestimmte Sitzung eingerichtet wurde.
+# <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
+Gibt an, ob eine Adress Zuordnung für eine bestimmte Sitzung eingerichtet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,15 +33,15 @@ HRESULT get_addressMapEnabled ( 
 #### <a name="parameters"></a>Parameter
  pRetVal
 
-[out] Gibt `TRUE` , wenn die Adresszuordnung aktiviert ist.
+vorgenommen Gibt `TRUE` zurück, wenn die Adress Zuordnung aktiviert ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Die ausführbare Datei wird von Prozessoren für ausführbare Datei nach der Zeit zu Zeit aktualisiert. DIA enthält einen Mechanismus, um die Übersetzung von Symbolen, für das neue Layout zu unterstützen.
+ Ausführbare Postprozessoren aktualisieren manchmal die ausführbare Datei. Dia enthält einen Mechanismus, mit dem die Übersetzung von Symbolen in das neue Layout unterstützt wird.
 
- Clientanwendungen können die Adresszuordnung für eine bestimmte Sitzung festlegen, durch Abrufen der [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) -Schnittstelle aus der [IDiaSession](../../debugger/debug-interface-access/idiasession.md) -Schnittstelle ab, und rufen die [IDiaAddressMap::set_ AddressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode, gefolgt von einem Aufruf der [idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) Methode. Die `get_addressMapEnabled` Methode gibt die Ergebnisse des Aufrufs der `put_addressMapEnabled` Methode.
+ Client Anwendungen können die Adress Zuordnung für eine bestimmte Sitzung festlegen, indem Sie die [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) -Schnittstelle von der [IDiaSession](../../debugger/debug-interface-access/idiasession.md) -Schnittstelle abrufen und die [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) -Methode aufrufen, gefolgt von einem Aufruf des [ IDiaAddressMap::p ut_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) -Methode. Die `get_addressMapEnabled`-Methode gibt die Ergebnisse zurück, die die `put_addressMapEnabled`-Methode aufrufen.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

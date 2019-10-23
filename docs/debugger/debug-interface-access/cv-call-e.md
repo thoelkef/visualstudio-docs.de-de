@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5deb59d4bbee06e505ba10bf1d4f08b1b06aa62d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555103"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745351"
 ---
-# <a name="cvcalle"></a>CV_call_e
-Gibt die Aufrufkonvention für eine Funktion an.
+# <a name="cv_call_e"></a>CV_call_e
+Gibt die Aufruf Konvention für eine Funktion an.
 
 > [!NOTE]
-> Nur die am häufigsten verwendeten Enumerationswerte sind hier dokumentiert. Die vollständige Enumeration ist in der Headerdatei cvconst.h verfügbar.
+> Nur die am häufigsten aufgelisteten Enumerationswerte werden hier dokumentiert. Die gesamte Enumeration ist in der Header Datei "cvrest. h" verfügbar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,20 +39,20 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Elements
-CV_CALL_NEAR_C gibt an, eine funktionsaufrufkonvention einen Nahen rechts-nach-links-Push verwenden. Die aufrufende Funktion löscht den Stapel.
+CV_CALL_NEAR_C gibt eine Funktionsaufruf Konvention mit einem Push von rechts nach links an. Die Aufruf Funktion löscht den Stapel.
 
-Eine funktionsaufrufkonvention mithilfe einer nahezu links-nach-rechts-push-CV_CALL_NEAR_FAST gibt an, die registriert werden. Die aufgerufene Funktion verwendet die Summe der Parameter-Bytes auf den Stapel gelöscht.
+CV_CALL_NEAR_FAST gibt eine Funktionsaufruf Konvention mit einem Push von links nach rechts mit Registern an. Die aufgerufene Funktion verwendet die Summe der Parameter bytes, um den Stapel zu löschen.
 
-CV_CALL_NEAR_STD gibt an, eine funktionsaufrufkonvention mit nahezu Standardaufruf (rechts-nach-links-Push).
+CV_CALL_NEAR_STD gibt eine Funktionsaufruf Konvention mithilfe eines fast standardmäßigen Aufrufs an (von rechts nach links).
 
-Rufen Sie eine funktionsaufrufkonvention mithilfe eines near vom Systems CV_CALL_NEAR_SYS angibt.
+CV_CALL_NEAR_SYS gibt eine Funktionsaufruf Konvention mithilfe eines near-Systemaufrufs an.
 
-CV_CALL_THISCALL gibt an, eine funktionsaufrufkonvention mit `this` aufrufen (`this` Zeiger im Register übergeben).
+CV_CALL_THISCALL gibt eine Funktionsaufruf Konvention mithilfe `this`-Aufrufs an (`this` Zeiger, der im Register übergebenen wird).
 
-CV_CALL_CLRCALL gibt an, eine funktionsaufrufkonvention verwendet durch die Common Language Runtime (CLR) (auch bekannt als ein verwalteter Code Aufrufkonvention).
+CV_CALL_CLRCALL gibt eine Funktionsaufruf Konvention an, die von der Common Language Runtime (CLR) verwendet wird (auch bekannt als Aufruf Konvention mit verwaltetem Code).
 
 ## <a name="remarks"></a>Hinweise
-Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) Methode.
+Die Werte in dieser Enumeration werden von einem Rückruf der [idiasymmetribol:: get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) -Methode zurückgegeben.
 
 ## <a name="requirements"></a>Anforderungen
 Header: cvconst.h

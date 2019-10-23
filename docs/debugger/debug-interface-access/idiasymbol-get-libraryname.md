@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_libraryname | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_libraryName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638458c1365c015b54ca955e44041b856232f8b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b49c9ad6926b963345bc4c1341ab3c7db03c916
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800455"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739945"
 ---
-# <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-Ruft ab, der Dateiname, der die Bibliothek oder Objektdatei, die aus der das Objekt geladen wurde.
+# <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
+Ruft den Dateinamen der Bibliothek oder der Objektdatei ab, aus der das Objekt geladen wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_libraryName ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Dateinamen, der die Bibliothek oder Objektdatei, die aus der das Objekt geladen wurde.
+vorgenommen Gibt den Dateinamen der Bibliothek oder der Objektdatei zurück, aus der das Objekt geladen wurde.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

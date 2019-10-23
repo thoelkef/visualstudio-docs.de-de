@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_notpaged | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_notPaged | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb132b4cf36eb686424e0f756ffe0387a432eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cae6940ce69bf9cd39c1002cc522af993fc59b6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827635"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742587"
 ---
-# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-Ruft ein Flag, das angibt, ob der Abschnitt nicht genügend Arbeitsspeicher ausgelagert werden kann.
+# <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
+Ruft ein Flag ab, das angibt, ob für den Abschnitt nicht genügend Arbeitsspeicher verfügbar ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,10 +32,10 @@ HRESULT get_notPaged ( 
 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
-- [Out, Retval] Gibt `TRUE` gibt zurück, wenn Sie im Abschnitt ausgelagert werden kann, andernfalls, `FALSE`.
+- [out, retval] Gibt `TRUE` zurück, wenn der Abschnitt nicht ausgelagert werden kann. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

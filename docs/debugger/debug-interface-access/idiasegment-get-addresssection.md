@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_addresssection | Microsoft-Dokumentation'
+title: 'IDiaSegment:: get_addressSection | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e098f1e2367395f201abf6f44554f1699400b12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9114a1d97dc9c25aa9c2bfe84dc96b63051b92d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827800"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742436"
 ---
-# <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
-Ruft die Anzahl von Abschnitt, die dieses Segment zugeordnet ist.
+# <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
+Ruft die Abschnitts Nummer ab, die diesem Segment zugeordnet ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Abschnitt zurück, die dieses Segment zugeordnet ist.
+vorgenommen Gibt die Abschnitts Nummer zurück, die diesem Segment zugeordnet ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_nopad | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_nopad | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51fb2c4ff2f27cee8fcc989139f5ae14c2641394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a81113242379070e56d6d0bd0f916355985eaa42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828099"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742625"
 ---
-# <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
-Ruft ein Flag, der angibt, ob der Abschnitt nicht soll, können Sie auf die nächsten Begrenzung des Arbeitsspeichers aufgefüllt werden ab.
+# <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
+Ruft ein Flag ab, das angibt, ob der Abschnitt nicht an der nächsten Speichergrenze aufgefüllt werden soll.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_nopad(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn der Abschnitt nicht soll, können Sie bis zur nächsten Arbeitsspeicher Begrenzung aufgefüllt werden; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der Abschnitt nicht an der nächsten Speichergrenze aufgefüllt werden soll. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Dies ist eine Eigenschaft, die in der Regel nur für ältere Dateien angezeigt.
+ Dies ist eine Eigenschaft, die in der Regel nur für ältere Dateien sichtbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

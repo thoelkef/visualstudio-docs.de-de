@@ -1,5 +1,5 @@
 ---
-title: Was&#39;Neues in der Quelle steuern-Plug-in-API-Version 1.2 | Microsoft-Dokumentation
+title: '&#39;Neuerungen in der Quellcodeverwaltungs-Plug-in-API, Version 1,2 | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f4696d8f41ce907505443d661065c1cf234bb06
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 55c4175390ec3e6f5a29bc372032ea83253044ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323121"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721578"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Was&#39;Neues in der Quelle steuern-Plug-in-API-Version 1.2
-In diesem Abschnitt werden die erweiterten Code Quellcodeverwaltungsfunktionen in die Source-Plug-in-API Version 1.2 hervorgehoben. Im folgenden werden die neuen Features in Version 1.2 aufgeführt:
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>&#39;Neuerungen in der Quellcodeverwaltungs-Plug-in-API, Version 1,2
+In diesem Abschnitt werden die erweiterten Funktionen der Quell Code Verwaltung in der Quellcodeverwaltungs-Plug-in-API-Version 1,2 hervorgehoben. Im folgenden sind die neuen Features in Version 1,2 aufgeführt:
 
 ## <a name="changes"></a>Änderungen
-- [Beseitigung von ~ SAK-Dateien](../../extensibility/internals/elimination-of-tilde-sak-files.md) wird erläutert, wie die Datenquellen-Steuerelement-Plug-in-API 1.2 mit temporären Dateien interagiert.
+- [Beseitigung von ~ Sak-Dateien](../../extensibility/internals/elimination-of-tilde-sak-files.md) Erläutert, wie das Quellcodeverwaltungs-Plug-in-API 1,2 mit temporären Dateien interagiert.
 
-- [Anwendung von Einstellungen auf mehrere Projektverbindungen](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md) wird veranschaulicht, wie ein Quellcodeverwaltungs-Plug-in einen Batchvorgang zum Ausführen des gleichen Quellcodeverwaltungsvorgang über mehrere Projekte oder mehrere Verbindungs-Kontexte.
+- [Anwendung von Einstellungen über mehrere Projekt Verbindungen hinweg](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md) Veranschaulicht, wie ein Quellcodeverwaltungs-Plug-in mit einem Batch Vorgang denselben Quell Code Verwaltungsvorgang für mehrere Projekte oder mehrere Verbindungs Kontexte ausführen kann.
 
-- [Erstellen von übergeordneten Containerordnern für Projektmappen](../../extensibility/internals/creating-parent-container-folders-for-solutions.md) wird erläutert, wie die Quelle Steuerelement-Plug-in-API-Version 1.2 den Benutzer ein einziger Stammknoten Quelle-Ziel-Steuerelement für alle Webprojekte in der Projektmappe angeben können.
+- [Erstellen von übergeordneten Container Ordnern für Projektmappen](../../extensibility/internals/creating-parent-container-folders-for-solutions.md) Erläutert, wie das Quellcodeverwaltungs-Plug-in-API-Version 1,2 einem Benutzer ermöglicht, ein einzelnes Quell Code Verwaltungs Ziel für alle Webprojekte in der Projekt Mappe anzugeben.
 
-- [Optionaler Vergleich des lokalen Projektordners mit Source Control Store](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md) wird erläutert, wie die Datenquellen-Steuerelement-Plug-in-API 1.2 Dateiversionen vergleicht.
+- [Optionaler Vergleich des lokalen Projekt Ordners mit dem Quell Code Verwaltungs Speicher](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md) Erläutert, wie die Quellcodeverwaltungs-Plug-in-API 1,2 Versionen von Dateien vergleicht.
 
-- [Entfernen von Informationen der Quellcodeverwaltung aus. Proj und. Sln-Dateien](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) wird erläutert, wie die Source-Steuerelement-Plug-in-API-Version 1.2 Informationen zu Projekten und Projektmappen gespeichert.
+- [Entfernen von Quell Code Verwaltungsinformationen aus. Proj und. SLN-Dateien](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) erläutert, wie die Quellcodeverwaltungs-Plug-in-API-Version 1,2 Informationen zu Projekten und Lösungen speichert.
 
 ## <a name="see-also"></a>Siehe auch
 - [Erste Schritte](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
