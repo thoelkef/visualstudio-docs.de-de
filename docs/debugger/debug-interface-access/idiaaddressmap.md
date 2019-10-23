@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b24dac472525a711073eccf41355ddb6f10611
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e06acf045ce1893762d5c898752dd6bc40de50a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554234"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744993"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-Ermöglicht die Steuerung über die wie die DIA-SDK für virtuelle und relative virtuelle Adressen für Debug-Objekte berechnet.
+Bietet die Kontrolle darüber, wie die Dia SDK virtuelle und relative virtuelle Adressen für Debug-Objekte berechnet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,29 +29,29 @@ IDiaAddressMap : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDiaAddressMap`.
+ In der folgenden Tabelle sind die Methoden von `IDiaAddressMap` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Gibt an, ob eine Adresszuordnung für eine bestimmte Sitzung eingerichtet wurde.|
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Gibt an, ob die Adresszuordnung verwendet werden soll, um Symbol Adressen zu übersetzen.|
-|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Gibt an, ob die Berechnung und Verwenden der relativen virtuellen Adressen aktiviert ist.|
-|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Ermöglicht dem Client aktivieren oder deaktivieren die Berechnung der relativen virtuellen Adressen.|
-|[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Ruft die Ausrichtung für das aktuelle ab.|
-|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Legt die Ausrichtung fest.|
-|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Legt image-Header, um die Übersetzung der relativen virtuellen Adressen zu aktivieren.|
-|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Stellt eine Adresszuordnung zum Unterstützen von Bild Layout Übersetzungen bereit.|
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Gibt an, ob eine Adress Zuordnung für eine bestimmte Sitzung eingerichtet wurde.|
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Gibt an, ob die Adress Zuordnung zum Übersetzen von Symbol Adressen verwendet werden soll.|
+|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Gibt an, ob die Berechnung und Verwendung von relativen virtuellen Adressen aktiviert ist.|
+|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Ermöglicht dem Client, die Berechnung relativer virtueller Adressen zu aktivieren oder zu deaktivieren.|
+|[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Ruft die aktuelle Bild Ausrichtung ab.|
+|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Legt die Bild Ausrichtung fest.|
+|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Legt Bild Header fest, um die Übersetzung relativer virtueller Adressen zu ermöglichen.|
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Stellt eine Adress Zuordnung zur Unterstützung von Bild layoutübersetzungen bereit.|
 
 ## <a name="remarks"></a>Hinweise
- Die Kontrolle von dieser Schnittstelle in zwei Sätze von Daten, die Sie angeben, gekapselt: Header Bild aus, und Adressieren von Zuordnungen. Die meisten Clients verwenden die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode, um die richtige Debuginformationen zu ermitteln, für ein Bild und die Methode in der Regel alle notwendigen Header und Zuordnungen Daten selbst ermitteln können. Implementieren einige Clients jedoch spezielle Verarbeitung und die Suche nach Daten. Solche Clients verwenden die Methoden der `IDiaAddressMap` Schnittstelle, um die DIA-SDK mit den Suchergebnissen bereitzustellen.
+ Das Steuerelement, das von dieser Schnittstelle bereitgestellt wird, wird in zwei von Ihnen bereitgestellten Datensätzen gekapselt: Bild Header und Adress Die meisten Clients verwenden die [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) -Methode, um die richtigen Debuginformationen für ein Image zu finden, und die Methode kann normalerweise alle erforderlichen Header ermitteln und Daten selbst zuordnen. Einige Clients implementieren jedoch eine spezielle Verarbeitung und suchen nach Daten. Diese Clients verwenden die Methoden der `IDiaAddressMap` Schnittstelle, um die Dia SDK mit den Suchergebnissen bereitzustellen.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Diese Schnittstelle ist über das DIA-Sitzungsobjekt verfügbar. Der Client Ruft die `QueryInterface` Methode DIA Sitzung-Objekt-Schnittstelle, in der Regel [IDiaSession](../../debugger/debug-interface-access/idiasession.md), zum Abrufen der `IDiaAddressMap` Schnittstelle.
+ Diese Schnittstelle ist über das Dia-Sitzungs Objekt verfügbar. Der Client ruft die `QueryInterface`-Methode auf der Dia Session Object-Schnittstelle (normalerweise [IDiaSession](../../debugger/debug-interface-access/idiasession.md)) auf, um die `IDiaAddressMap`-Schnittstelle abzurufen.
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia80.dll
 

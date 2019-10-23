@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c211f45423ce0f2166bbf8aa189d35ab386a7fee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331984"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720101"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault-Element (Visual Studio-Vorlagen)
-Wenn `false`, gibt an, dass die Vorlage nur angezeigt werden, wird unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
+Wenn `false`, wird angegeben, dass die Vorlage nur unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)angezeigt wird.
 
- \<VSTemplate> \<TemplateData> \<ShowByDefault>
+ \<VSTemplate > \<TemplateData > \<ShowByDefault >
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,7 +53,7 @@ Wenn `false`, gibt an, dass die Vorlage nur angezeigt werden, wird unter der ang
  Der Text muss entweder `true` oder `false` sein. Gibt bei TRUE an, dass die Vorlage für alle Projekttypen angezeigt wird. Bei FALS wird die Vorlage nur unter der angegebenen `TemplateGroupID` angezeigt.
 
 ## <a name="remarks"></a>Hinweise
- `ShowByDefault` ist ein optionales Element. Der Standardwert ist `true`.
+ `ShowByDefault` ist ein optionales Element. Der Standardwert ist `true`sein.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.

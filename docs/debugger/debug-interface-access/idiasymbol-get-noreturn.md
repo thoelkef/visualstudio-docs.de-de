@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_noreturn | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_noReturn | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0857939289091d22aaafb5dc5bb009d4af0e00bb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 68a1be922df32de2100c22a15b1656b451a603ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830294"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739734"
 ---
-# <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
-Ruft ein Flag, das angibt, ob die Funktion markiert ist, als die kein Ergebnis zurückgegeben, mit der [Noreturn](/cpp/cpp/noreturn) Attribut.
+# <a name="idiasymbolget_noreturn"></a>IDiaSymbol::get_noReturn
+Ruft ein Flag ab, das angibt, ob die Funktion so gekennzeichnet wurde, dass Sie niemals mit dem [noreturn](/cpp/cpp/noreturn) -Attribut zurückgegeben wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,22 +31,22 @@ HRESULT get_noReturn(
 ```
 
 #### <a name="parameters"></a>Parameter
- pFlag
+ PFLAG
 
-[out] Gibt `TRUE` , wenn die Funktion deklariert wurde, als nicht zurückgeben, mit der `noreturn` Attribut zurückgegeben; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Funktion so deklariert wurde, dass Sie niemals mit dem `noreturn`-Attribut zurückgegeben wird. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

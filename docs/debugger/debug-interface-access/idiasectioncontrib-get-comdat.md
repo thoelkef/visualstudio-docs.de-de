@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_comdat | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_comdat | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef38d5c4afcb065f7a095501e2bf5d95ee493789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832525"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742725"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Ruft ein Flag, das angibt, ob der Bereich einen COMDAT-Datensatz ist.
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
+Ruft ein Flag ab, das angibt, ob der Abschnitt ein COMDAT-Datensatz ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_comdat ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn der Bereich einer COMDAT-Datensatz; ist andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der Abschnitt ein COMDAT-Datensatz ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Ein COMDAT-Datensatz ist ein Common Object File Format (COFF)-Datensatz, der Paketfunktionen an den Linker sichtbar macht.
+ Ein COMDAT-Datensatz ist ein COFF-Datensatz (Common Object File Format), mit dem Paketfunktionen für den Linker sichtbar werden.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

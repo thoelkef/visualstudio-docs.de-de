@@ -1,5 +1,5 @@
 ---
-title: Debuggen im gemischten Modus-Anwendungen | Microsoft-Dokumentation
+title: Debuggen von Anwendungen im gemischten Modus | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac2a9817ceae660f42cbed0fdbfb364ddc79c45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c245b6c56b7480a9395394d707aa0f02fb22fc9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852065"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738183"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debuggen von Anwendungen im gemischten Modus
 Eine Anwendung im gemischten Modus ist eine Anwendung, in der nativer Code (C++) mit verwaltetem Code (z. B. Visual Basic-Code, Visual C#-Code oder verwaltetes C++, das mit der Common Language Runtime ausgeführt wird) kombiniert wird. Das Debuggen von Anwendungen im gemischten Modus erfolgt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] weitestgehend transparent. Es unterscheidet sich nicht maßgeblich vom Debuggen einer Anwendung im einfachen Modus. Beachten Sie jedoch einige besondere Aspekte.
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Aktivieren von "Bearbeiten und Fortfahren" in C++ beim Debuggen im gemischten Modus
 
-Zum Aktivieren von "Bearbeiten und Fortfahren" für C++ finden Sie unter [aktivieren und Deaktivieren von bearbeiten und Fortfahren](../debugger/how-to-enable-and-disable-edit-and-continue.md).
+Informationen zum Aktivieren von bearbeiten und C++fortfahren für finden Sie unter [aktivieren und Deaktivieren von "Bearbeiten und Fortfahren](../debugger/how-to-enable-and-disable-edit-and-continue.md)".
 
 > [!NOTE]
 > Um "Bearbeiten und Fortfahren" für C++ in Visual Studio 2013 zu verwenden, müssen Sie die Legacyversion der Debug-Engine wiederherstellen. Informationen dazu finden Sie im Microsoft Application Lifecycle Management-Blogbeitrag [Switching to Managed Compatibility Mode in Visual Studio 2013 (Wechseln zum verwalteten Kompatibilitätsmodus in Visual Studio 2013)](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/)

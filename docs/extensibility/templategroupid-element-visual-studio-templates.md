@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4e0ccae38b79cf8efb4b7b426fb65ae909c5d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316592"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718657"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID-Element (Visual Studio-Vorlagen)
-Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses Element ist erheblich, wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) nastaven NA hodnotu `false`. Wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) nastaven NA hodnotu `true`, und klicken Sie dann eine Elementvorlage in allen Projekttypen verfügbar ist.
+Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses Element ist wichtig, wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf `false` festgelegt ist. Wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf `true` festgelegt ist, ist eine Element Vorlage in allen Projekttypen verfügbar.
 
  \<VSTemplate > \<TemplateData > \<TemplateGroupID >
 
@@ -55,7 +55,7 @@ Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses E
 ## <a name="remarks"></a>Hinweise
  `TemplateGroupID` ist ein Element.
 
- Der Wert des der `TemplateGroupID` Element dient zusammen mit der projektsystemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Versionsnummer >* \Projects\\) Filterung von Vorlagen, die in angezeigt werden. die **neues Element hinzufügen** Dialogfeld.
+ Der Wert des `TemplateGroupID`-Elements wird zusammen mit der Projekt Systemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version Number >* \projects \\) zum Filtern von Vorlagen verwendet, die im **neuen Element hinzufügen angezeigt werden.** (Dialogfeld).
 
 |Visual C++-Wert|Bedeutung|
 |------------------------|-------------|

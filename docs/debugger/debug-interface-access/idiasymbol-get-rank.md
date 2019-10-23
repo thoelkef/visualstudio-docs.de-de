@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_rank | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_rank | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38962ab5915a4235201e76e1828f84a56af1333
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c5cff86464a4034ad869cdfe231a88ad128dbf52
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830783"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739487"
 ---
-# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
-Ruft den Rang (Anzahl der Dimensionen) eines mehrdimensionalen Arrays von FORTRAN ab.
+# <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
+Ruft den Rang (Anzahl der Dimensionen) eines mehrdimensionalen Fortran-Arrays ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,16 +33,16 @@ HRESULT get_rank ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Anzahl der Dimensionen in ein mehrdimensionales Array von FORTRAN zurück.
+vorgenommen Gibt die Anzahl der Dimensionen in einem mehrdimensionalen Fortran-Array zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Rang bezieht sich auf die Anzahl der Dimensionen in einem Array, in dem das Array, als deklariert ist `myarray[1,2,3]`. In diesem Beispiel hat den Rang 3 und 3 Dimensionen. Rang gelten nicht für C++ das Konzept eines Arrays von Arrays für die einzelnen Dimensionen verwendet (d. h. `myarray[1][2][3]`).
+ Rank bezieht sich auf die Anzahl der Dimensionen in einem Array, wobei das Array als `myarray[1,2,3]` deklariert wird. Dieses Beispiel weist einen Rang von 3 und 3 Dimensionen auf. Der Rang gilt C++ nicht für, wobei das Konzept eines Arrays von Arrays für jede Dimension verwendet (d. h. `myarray[1][2][3]`).
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832405"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742077"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Ruft die Zeilennummerninformationen für Zeilen in einem Bereich für die angegebene virtuelle Adresse (VA) ab.
+Ruft die Zeilennummern Informationen für Zeilen ab, die in einem angegebenen Bereich virtueller Adressen (VA) enthalten sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Parameter
 `va`
 
-[in] Gibt die Adresse an, wie eine VA.
+in Gibt die Adresse als VA an.
 
 `length`
 
-[in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.
+in Gibt die Anzahl der Bytes für den Adressbereich an, die mit dieser Abfrage abgedeckt werden.
 
 `ppResult`
 
-[out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit allen in der Zeile enthält Zahlen, die u. a. der angegebene Adressbereich.
+vorgenommen Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt zurück, das eine Liste aller Zeilennummern enthält, die den angegebenen Adressbereich abdecken.
 
 ## <a name="example"></a>Beispiel
-Dieses Beispiel zeigt eine Funktion, die alle die zeilennummerierung innerhalb einer Funktion, die mit virtuellen Adresse der Funktion und die Länge abgerufen werden.
+Dieses Beispiel zeigt eine Funktion, die alle in einer Funktion enthaltenen Zeilennummern mithilfe der virtuellen Adresse und Länge der Funktion abruft.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

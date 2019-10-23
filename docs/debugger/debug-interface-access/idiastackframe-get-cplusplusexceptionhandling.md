@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_cplusplusexceptionhandling | Microsoft-Dokumentation'
+title: 'IDiaStackFrame:: get_cplusplusExceptionHandling | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d78a4c73d7954f48c87c1eafec4d0b35fc1292ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839061"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741747"
 ---
-# <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Ruft ein Flag, das angibt, ob C++-Ausnahmebehandlung in Kraft ist.
+# <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
+Ruft ein Flag ab, das angibt C++ , ob die Ausnahmebehandlung wirksam ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,15 +33,15 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` Wenn C++ Behandlung von Ausnahmen aktiviert für diesen Frame ist; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück C++ , wenn die Ausnahmebehandlung für diesen Frame wirksam ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- C++-Ausnahmebehandlung ist nicht identisch mit strukturierten oder System-Ausnahmebehandlung.
+ C++die Ausnahmebehandlung ist nicht identisch mit der strukturierten oder System Ausnahmebehandlung.
 
- Um festzustellen, ob die strukturierte Ausnahmebehandlung in Kraft ist, rufen Sie die [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) Methode.
+ Um zu ermitteln, ob die strukturierte Ausnahmebehandlung wirksam ist, wird die [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) -Methode aufgerufen.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

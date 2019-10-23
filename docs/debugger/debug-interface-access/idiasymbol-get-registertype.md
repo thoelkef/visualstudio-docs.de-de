@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_registerType | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_registerType | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e849bea3bd5480f480001c091e5988fa5e6b5444
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835538"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739437"
 ---
-# <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
-Ruft die Register-Typs ab.
+# <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
+Ruft den registriungstyp ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_registerType(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf eine `DWORD` , die die Register-Typs enthält.
+vorgenommen Ein Zeiger auf eine `DWORD`, die den Registertyp enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

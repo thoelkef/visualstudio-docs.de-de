@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasnestedtypes | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hasNestedTypes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61073f5630e5da7edeb761774e4ba8b4c341a8cd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 315e009e264523b6f64deefa4a1b0367e262d034
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796572"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740480"
 ---
-# <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
-Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp Typdefinitionen geschachtelte ab.
+# <a name="idiasymbolget_hasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
+Ruft ein Flag ab, das angibt, ob der benutzerdefinierte Datentyp über Typdefinitionen verfügt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_hasNestedTypes ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` der Typ des benutzerdefinierten Datentyps geschachtelte Typdefinitionen; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der benutzerdefinierte Datentyp über Typdefinitionen verfügt. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK V7. 0|
+|Version:|Dia SDK v 7.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

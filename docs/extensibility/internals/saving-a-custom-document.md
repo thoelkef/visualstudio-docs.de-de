@@ -12,34 +12,34 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b90938e44b4227f8aad43542fc99136745a8af4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf67335b6a12b966eb148b3f8dcaf16339e2a29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318745"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724075"
 ---
 # <a name="saving-a-custom-document"></a>Speichern eines benutzerdefinierten Dokuments
-Umgebungshandles der **speichern**, **speichern**, und **Alles speichern** Befehle. Wenn ein Benutzer klickt **speichern**, **speichern**, **oder speichern Sie alle** auf die **Datei** Menü oder schließt die Projektmappe, wodurch alle speichern, die folgenden erfolgt.
+Die Umgebung verarbeitet die Befehle " **Speichern**", " **Speichern**unter" und " **Alle speichern** ". Wenn ein Benutzer auf " **Speichern**", " **Speichern**unter" **oder "Alles speichern** " im Menü "Datei" klickt oder die Projekt **Mappe** schließt, was zu "Alles speichern" führt, wird der folgende Vorgang ausgeführt.
 
- ![Speichern im Kunden-Editor](../../extensibility/internals/media/private.gif "Private") speichern, speichern und alle speichern Klassenbehandlung für einen benutzerdefinierten Editor-Befehl
+ ![Speichern des Kunden-Editors](../../extensibility/internals/media/private.gif "Private") Speichern, speichern unter und Speichern der gesamten Befehls Behandlung für einen benutzerdefinierten Editor
 
- Dieser Prozess wird in den folgenden Schritten beschrieben:
+ Dieser Vorgang wird in den folgenden Schritten beschrieben:
 
-1. Für die **speichern** und **speichern** Befehle, die Umgebung verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service, um zu bestimmen, das das aktive Fenster, und somit welche Elemente gespeichert werden soll. Nachdem das aktive Dokumentfenster bekannt ist, sucht die Umgebung für das Dokument in der ausgeführten Dokumententabelle Hierarchie Zeiger und Elementbezeichner (Element-ID). Weitere Informationen finden Sie unter [Running Document Table](../../extensibility/internals/running-document-table.md).
+1. Für die Befehle " **Speichern** " und " **Speichern** unter" verwendet die Umgebung den <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>-Dienst, um das aktive Dokument Fenster zu bestimmen, und damit die Elemente, die gespeichert werden sollen. Sobald das aktive Dokument Fenster bekannt ist, findet die Umgebung den Hierarchie Zeiger und den Element Bezeichner (Itemid) für das Dokument in der aktiven Dokument Tabelle. Weitere Informationen finden Sie unter [Ausführen der Dokument Tabelle](../../extensibility/internals/running-document-table.md).
 
-     Für den Befehl Alle speichern verwendet die Umgebung die Informationen in der ausgeführten Dokumententabelle, kompilieren Sie die Liste der zu speichernden alle Elemente.
+     Für den Befehl Alle speichern verwendet die Umgebung die Informationen in der laufenden dokumententabelle, um die Liste aller zu speichernden Elemente zu kompilieren.
 
-2. Wenn die Lösung empfängt eine <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> aufrufen, wird der Satz von ausgewählten Elementen durchlaufen (, also die Mehrfachauswahl von verfügbar gemacht werden die <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> Service).
+2. Wenn die Lösung einen <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>-Befehl empfängt, durchläuft Sie den Satz ausgewählter Elemente (d. h. die Mehrfachauswahl, die vom <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>-Dienst verfügbar gemacht wird).
 
-3. Die Lösung verwendet für jedes Element in der Auswahl den Hierarchie Zeiger aufrufen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> Methode, um zu bestimmen, ob der Kontextmenübefehl von "Speichern" aktiviert werden soll. Wenn ein oder mehrere Elemente geändert werden, ist der Befehl "Speichern" aktiviert. Wenn die Hierarchie ein standard-Editors verwendet wird, klicken Sie dann die Hierarchie-Delegaten, die für Abfragen dirty-Status in den Editor durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> Methode.
+3. Bei jedem Element in der Auswahl verwendet die Projekt Mappe den Hierarchie Zeiger, um die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>-Methode aufzurufen, um zu bestimmen, ob der Menübefehl speichern aktiviert werden soll. Wenn ein oder mehrere Elemente geändert werden, ist der Befehl speichern aktiviert. Wenn in der Hierarchie ein Standard-Editor verwendet wird, delegiert die Hierarchie die Abfrage des geänderten Status an den Editor, indem die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>-Methode aufgerufen wird.
 
-4. Für jedes ausgewählte Element, das geändert wurde, verwendet die Lösung den Hierarchie Zeiger zum Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> Methode auf die entsprechenden Hierarchien.
+4. Bei jedem ausgewählten Element, das geändert wird, verwendet die Projekt Mappe den Hierarchie Zeiger, um die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>-Methode in den entsprechenden Hierarchien aufzurufen.
 
-     Bei einem benutzerdefinierten Editor ist die Kommunikation zwischen das dokumentendatenobjekt und das Projekt privat. Daher werden speziellen persistenzaspekte zwischen diesen beiden Objekten behandelt.
+     Im Fall eines benutzerdefinierten Editors ist die Kommunikation zwischen dem Dokument Datenobjekt und dem Projekt privat. Daher werden alle besonderen Persistenzprobleme zwischen diesen beiden Objekten behandelt.
 
     > [!NOTE]
-    > Wenn Sie Ihre eigenen Persistenz implementieren, müssen Sie unbedingt Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> Methode, um Zeit zu sparen. Diese Methode überprüft, um sicherzustellen, dass sie zum Speichern der Datei sicher ist (z. B. die Datei ist nicht schreibgeschützt).
+    > Wenn Sie Ihre eigene Persistenz implementieren, achten Sie darauf, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>-Methode aufzurufen, um Zeit zu sparen. Mit dieser Methode wird überprüft, ob die Datei sicher gespeichert werden kann (z. b. wenn die Datei nicht schreibgeschützt ist).
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

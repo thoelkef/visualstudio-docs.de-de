@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isnaked | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isNaked | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45306a831c8767b93e3c1baad0171fcfb60ba6b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 684fd10b7899e0ed82b4b93a6182eea2a2447e0e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790145"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740160"
 ---
-# <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
-Ruft ein Flag, das angibt, ob die Funktion verfügt über die [naked](/cpp/cpp/naked-cpp) Attribut (d. h. für die Funktion hat keinen Prolog oder Epilog Code, der vom Compiler hinzugefügt).
+# <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
+Ruft ein Flag ab, das angibt, ob die Funktion über das [Naked](/cpp/cpp/naked-cpp) -Attribut verfügt (d. h., die Funktion verfügt über keinen Prolog-oder Epilogcode, der vom Compiler hinzugefügt wurde).
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_isNaked(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` , wenn die Funktion verfügt über die `naked` Attribut zurückgegeben; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Funktion über das `naked`-Attribut verfügt. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

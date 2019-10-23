@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_upperboundid | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_upperBoundId | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711073319a5381a205672ae8023699a725b8936
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 640bce657df53bec66ab75575f35fcd68131a82a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803491"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738940"
 ---
-# <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
-Ruft den Symbol-Bezeichner, der die obere Grenze einer FORTRAN Arraydimension ab.
+# <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
+Ruft den Symbol Bezeichner der oberen Grenze einer Fortran-Array Dimension ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,16 +32,16 @@ HRESULT get_upperBoundId ( 
 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
-- [out] Gibt die ID des Symbols, der die obere Grenze einer FORTRAN Array Dimension darstellt.
+- [out,] Gibt die ID des Symbols zurück, das die obere Grenze einer Fortran-Array Dimension darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.
+ Der Bezeichner ist ein eindeutiger Wert, der vom Dia SDK erstellt wird, um alle Symbole als eindeutig zu markieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: 71f725c810261a5e154d0e9d3c05e26cd09ed70d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446315"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747072"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Sie immer eine angemessene Sperr Disziplin, und verwenden Sie SAL-Anmerkungen.

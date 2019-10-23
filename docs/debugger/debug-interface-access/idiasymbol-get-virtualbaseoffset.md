@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbaseoffset | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_virtualBaseOffset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cb4a34f9947d2f5ee50488876d44042b4cb228
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c72c605b47a5f34542b46cae9943b03c7072b1f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830839"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738868"
 ---
-# <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
-Ruft den Offset in der Tabelle virtuelle Funktion, die einer virtuellen Funktion ab.
+# <a name="idiasymbolget_virtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
+Ruft den Offset in der virtuellen Funktions Tabelle einer virtuellen Funktion ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_virtualBaseOffset ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Offset in der Tabelle virtuelle Funktion, die einer virtuellen Funktion zurück.
+vorgenommen Gibt den Offset in der virtuellen Funktions Tabelle einer virtuellen Funktion zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

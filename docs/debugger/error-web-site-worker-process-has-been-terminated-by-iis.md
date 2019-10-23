@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Websiteworkerprozess wurde von IIS beendet | Microsoft-Dokumentation'
+title: 'Fehler: der Website-Workerprozess wurde von IIS beendet | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850000"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736351"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Fehler: Websiteworkerprozess wurde von IIS beendet
 Der Debugger hat die Codeausführung auf der Website beendet. Dadurch gehen die Internetinformationsdienste (IIS) davon aus, dass der Arbeitsprozess nicht mehr reagiert. Folglich wurde der Arbeitsprozess von IIS beendet.

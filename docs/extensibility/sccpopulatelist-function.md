@@ -1,5 +1,5 @@
 ---
-title: SccPopulateList-Funktion | Microsoft-Dokumentation
+title: Sccpopulatelist-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64bcf6d443d1f96d650bde7fb92f69bbb12c5327
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a2cfdf5a617352d7ba0c2db00e7705343f1eb5e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353537"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720871"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList-Funktion
-Diese Funktion eine Liste der Dateien für einen bestimmten Quell-Steuerelement-Befehl aktualisiert und Status der quellcodeverwaltung für alle angegebenen Dateien bereitstellt.
+Mit dieser Funktion wird eine Liste der Dateien für einen bestimmten Quell Code Verwaltungs Befehl aktualisiert und der Quell Code Verwaltungsstatus für alle angegebenen Dateien bereitgestellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,56 +38,56 @@ SCCRTN SccPopulateList (
 ```
 
 #### <a name="parameters"></a>Parameter
- pvContext
+ pvcontext
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.
 
- %nbefehl
+ nausgeführter Befehl
 
-[in] Der Befehl "Quelle-Steuerelement", die für alle Dateien im angewendet werden, die `lpFileNames` Array (finden Sie unter [Befehlscode](../extensibility/command-code-enumerator.md) eine Liste der möglichen Befehle).
+in Der Quell Code Verwaltungs Befehl, der auf alle Dateien im `lpFileNames` Array angewendet wird (Weitere Informationen finden Sie unter [Befehls Code](../extensibility/command-code-enumerator.md) für eine Liste möglicher Befehle).
 
- nFiles
+ nnoch
 
-[in] Anzahl der Dateien in die `lpFileNames` Array.
+in Anzahl der Dateien im `lpFileNames` Array.
 
- lpFileNames
+ lpfile-Namen
 
-[in] Ein Array von Dateinamen, die bekanntermaßen von der IDE.
+in Ein Array von Dateinamen, die der IDE bekannt sind.
 
- pfnPopulate
+ pfnauffüllen
 
-[in] Die IDE-Callback-Funktion aufrufen, zum Hinzufügen und Entfernen von Dateien (finden Sie unter [POPLISTFUNC](../extensibility/poplistfunc.md) Einzelheiten).
+in Die zum Hinzufügen und Entfernen von Dateien aufzurufende IDE-Rückruffunktion (Weitere Informationen finden Sie unter [poplistfunc](../extensibility/poplistfunc.md) ).
 
- pvCallerData
+ pvcallerdata
 
-[in] Wert, der unverändert an die Rückruffunktion übergeben werden soll.
+in Der Wert, der unverändert an die Rückruffunktion übermittelt werden soll.
 
- lpStatus
+ lpstatus
 
-[in, out] Ein Array für das Quellcodeverwaltungs-Plug-in, um die Statusflags für jede Datei zurückzugeben.
+[in, out] Ein Array für das Quellcodeverwaltungs-Plug-in, mit dem die Statusflags für jede Datei zurückgegeben werden.
 
- Bestanden
+ f-Optionen
 
-[in] Befehl Flags (finden Sie im Abschnitt "PopulateList Flag" [Bitflags, die von bestimmten Befehlen verwendete](../extensibility/bitflags-used-by-specific-commands.md) Einzelheiten).
+in Befehlsflags (Weitere Informationen finden Sie im Abschnitt "populatelist-Flag" von [Bitflags, die von bestimmten Befehlen verwendet werden](../extensibility/bitflags-used-by-specific-commands.md) ).
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Erfolgreich.|
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler.|
 
 ## <a name="remarks"></a>Hinweise
- Diese Funktion untersucht die Liste der Dateien für den aktuellen Status. Er verwendet die `pfnPopulate` Rückruffunktion, die den Aufrufer darüber zu benachrichtigen, wenn eine Datei nicht die Kriterien für entspricht der `nCommand`. Wenn der Befehl ist z. B. `SCC_COMMAND_CHECKIN` eine Datei in der Liste ist nicht ausgecheckt, und der Rückruf wird verwendet, um den Aufrufer darüber zu informieren. In einigen Fällen möglicherweise das Quellcodeverwaltungs-Plug-in andere Dateien, die Teil des Befehls werden konnte, und fügen sie hinzu. Dies kann beispielsweise einen Visual Basic-Benutzer eine BMP-Datei auschecken, die wird von seinem eigenen Projekt verwendet, aber nicht in der Visual Basic-Projektdatei angezeigt. Ein Benutzer wählt die **erhalten** Befehl in der IDE. Die IDE zeigt eine Liste aller Dateien, die sie annimmt, der Benutzer erhalten dass, aber bevor die Liste angezeigt wird, die `SccPopulateList` Funktion wird aufgerufen, um sicherzustellen, dass die Liste angezeigt wird, werden auf dem neuesten Stand ist.
+ Diese Funktion untersucht die Liste der Dateien für den aktuellen Status. Er verwendet die `pfnPopulate` Callback-Funktion, um den Aufrufer zu benachrichtigen, wenn eine Datei nicht mit den Kriterien für die `nCommand` übereinstimmt. Wenn der Befehl z. b. `SCC_COMMAND_CHECKIN` ist und eine Datei in der Liste nicht ausgecheckt ist, wird der Rückruf verwendet, um den Aufrufer zu informieren. Gelegentlich findet das Quellcodeverwaltungs-Plug-in möglicherweise andere Dateien, die Teil des Befehls sein können, und fügt Sie hinzu. So kann z. b. ein Visual Basic Benutzer eine BMP-Datei Auschecken, die von seinem Projekt verwendet wird, aber nicht in der Visual Basic-Projektdatei angezeigt wird. Ein Benutzer wählt den **Get** -Befehl in der IDE aus. In der IDE wird eine Liste aller Dateien angezeigt, die der Benutzer erhält, aber bevor die Liste angezeigt wird, wird die `SccPopulateList`-Funktion aufgerufen, um sicherzustellen, dass die anzuzeigende Liste auf dem neuesten Stand ist.
 
 ## <a name="example"></a>Beispiel
- Die IDE erstellt eine Liste der Dateien, die er davon ausgeht, dass der Benutzer abrufen kann. Bevor sie dieser Liste angezeigt wird, ruft es die `SccPopulateList` Funktion, mit dem das Quellcodeverwaltungs-Plug-Ins die Möglichkeit zum Hinzufügen und Löschen von Dateien aus der Liste. Das plug-in ändert die Liste durch Aufrufen der angegebenen Rückruffunktion (finden Sie unter [POPLISTFUNC](../extensibility/poplistfunc.md) Weitere Details).
+ Die IDE erstellt eine Liste von Dateien, die Sie vom Benutzer erhalten kann. Bevor diese Liste angezeigt wird, ruft Sie die `SccPopulateList`-Funktion auf und gibt dem Quellcodeverwaltungs-Plug-in die Möglichkeit, Dateien in der Liste hinzuzufügen und zu löschen. Durch das Plug-in wird die Liste durch Aufrufen der angegebenen Rückruffunktion geändert (Weitere Informationen finden Sie unter [poplistfunc](../extensibility/poplistfunc.md) ).
 
- Rufen Sie das plug-in weiterhin die `pfnPopulate` Funktion, die hinzugefügt und werden die Dateien, gelöscht, bis sie abgeschlossen ist, und gibt dann zurück, aus der `SccPopulateList` Funktion. Die IDE kann dann die Liste angezeigt. Die `lpStatus` Array stellt alle Dateien in der ursprünglichen Liste, die von der IDE übergebenen dar. Die Callback-Funktion verwenden die-Plug-in fügt automatisch den Status aller dieser Dateien zudem zu machen.
+ Das Plug-in ruft weiterhin die `pfnPopulate` Funktion auf, mit der Dateien hinzugefügt und gelöscht werden, bis der Vorgang abgeschlossen ist, und dann von der `SccPopulateList`-Funktion zurückgegeben wird. Die IDE kann dann die Liste anzeigen. Das `lpStatus` Array stellt alle Dateien in der ursprünglichen Liste dar, die von der IDE übermittelt wurde. Das Plug-in füllt den Status aller Dateien zusätzlich zur Verwendung der Rückruffunktion aus.
 
 > [!NOTE]
-> Ein Quellcodeverwaltungs-Plug-in verfügt immer über die Möglichkeit, die umgehend von dieser Funktion, verlassen die Liste unverändert zurückgeben. Wenn ein plug-in diese Funktion implementiert, können sie dies angeben, durch Festlegen der `SCC_CAP_POPULATELIST` Funktion Bitflag in der erste Aufruf der [SccInitialize](../extensibility/sccinitialize-function.md). Standardmäßig sollten das plug-in immer davon ausgehen, dass alle Elemente übergeben werden Dateien sind. Jedoch, wenn die IDE legt die `SCC_PL_DIR` -flag in der `fOptions` -Parameter sind, dass alle Elemente übergeben werden Verzeichnisse berücksichtigt werden. Das plug-in sollten hinzufügen, alle Dateien, die gehören in den Verzeichnissen. Die IDE wird nie eine Mischung von Dateien und Verzeichnissen übergeben.
+> Ein Quellcodeverwaltungs-Plug-in verfügt immer über die Möglichkeit, direkt von dieser Funktion zurückzukehren und die Liste unverändert zu belassen. Wenn diese Funktion von einem Plug-in implementiert wird, kann dies angegeben werden, indem das `SCC_CAP_POPULATELIST` Capability-Bitflag beim ersten aufzurufen von [sccinitialize](../extensibility/sccinitialize-function.md)festgelegt wird. Standardmäßig sollte das Plug-in immer davon ausgehen, dass es sich bei allen übergebenen Elementen um Dateien handelt. Wenn die IDE jedoch das `SCC_PL_DIR`-Flag im `fOptions`-Parameter festlegt, werden alle übergebenen Elemente als Verzeichnisse betrachtet. Das Plug-in sollte alle Dateien hinzufügen, die zu den Verzeichnissen gehören. Die IDE übergibt nie eine Mischung aus Dateien und Verzeichnissen.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: Tabelle-Grafikobjekt | Microsoft-Dokumentation
+title: Grafik Objekttabelle | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848426"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735446"
 ---
 # <a name="graphics-object-table"></a>Grafikobjekttabelle
 Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direct3D-Objekte erkennen, die einen Frame Ihres Spiels oder Ihrer App unterstützen.
 
  Dies ist die Objekttabelle:
 
- ![Direct3D-Objekte, die erstellt wurden, indem eine App](media/gfx_diag_demo_object_table_orientation.png "Gfx_diag_demo_object_table_orientation")
+ ![Direct3D-Objekte, die von einer-App erstellt wurden.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
 
 ## <a name="understanding-the-graphics-object-table"></a>Die Grafikobjekttabelle verstehen
- Mit der Objekttabelle können Sie Direct3D-Objekte analysieren, die das Rendern eines bestimmten Frames unterstützen. Sie können ein Renderingproblem auf ein bestimmtes Objekt zurückführen, indem Sie die Eigenschaften und Daten untersuchen. (Mit anderen Grafikdiagnosetools können Sie früher in der Diagnose die Liste der Objekte einschränken, die möglicherweise nicht Ihren Erwartungen entsprechen.) Wenn Sie das problemauslösende Objekt gefunden haben, können Sie eine typspezifische Visualisierung verwenden, um das Objekt zu untersuchen. So können Sie beispielsweise die Bildbearbeitung einsetzen, um Texturen anzusehen, oder die *Puffer-Schnellansicht* verwenden, um Pufferinhalte anzuzeigen.
+ Mit der Objekttabelle können Sie Direct3D-Objekte analysieren, die das Rendern eines bestimmten Frames unterstützen. Sie können ein Renderingproblem mit einem bestimmten Objekt ermitteln, indem Sie seine Eigenschaften und Daten untersuchen (indem Sie andere Grafikdiagnose Tools verwenden, die Sie zuvor in der Diagnose verwendet haben, können Sie die Liste der Objekte eingrenzen, die möglicherweise nicht Ihren Erwartungen entsprechen.) Wenn Sie das problematische Objekt gefunden haben, können Sie eine Visualisierung verwenden, die für den Typ spezifisch ist, um es zu untersuchen – beispielsweise können Sie mit dem Bild-Editor Texturen anzeigen oder die *Puffer* Schnellansicht verwenden, um den Pufferinhalt anzuzeigen.
 
  Die Objekttabelle unterstützt das Kopieren und Einfügen, sodass Sie ein anderes Tool, wie etwa Microsoft Excel, zum Überprüfen des Inhalts verwenden können.
 
- Darüber hinaus können Sie mithilfe der **Typ** Dropdownliste am oberen linken Ecke zum Umschalten der Anzeige von Objekten des Typs **Puffer**, **Shader** oder **Texturen**, oder alle diese Elemente auf einmal.  Darüber hinaus können Sie das Suchfeld in der oberen rechten Ecke zum Suchen von bestimmter Zeilen über alle Daten, die angezeigt werden.  Sie können z. B. Suchen Sie nach *D32_FLOAT* auf alle Instanzen von Objekten dieses Formats in der Liste zu finden.
+ Darüber hinaus können Sie die Dropdown Liste **Typ** in der oberen linken Ecke verwenden, um die Anzeige von Objekten des Typs **Puffers**, **Shader** oder **Texturen**oder all diesen Elementen gleichzeitig zu ändern.  Sie können auch das Suchfeld in der oberen rechten Ecke verwenden, um bestimmte Zeilen für alle dargestellten Daten zu suchen.  Sie könnten z. b. nach *D32_FLOAT* suchen, um alle Instanzen von Objekten dieses Formats in der Liste zu finden.
 
 ### <a name="graphics-object-table-format"></a>Format der Grafikobjekttabelle
  Die Objekttabelle zeigt die Direct3D-Objekte und die Ressourcen an, die den Frame unterstützen, der mit dem ausgewählten Ereignis verknüpft ist, beispielsweise Zustandsobjekte, Puffer, Shader, Texturen und andere Ressourcen. Nicht in die Objekttabelle aufgenommen werden Objekte, die in einem vorherigen Frame erstellt wurden und während des aufgezeichneten Frames nicht verwendet werden. Objekte, die während des aufgezeichneten Frames durch vorherige Ereignisse zerstört wurden, werden in den folgenden Ereignissen weggelassen. Objekte, die nicht auf D3D10Device oder D3D11DeviceContext festgelegt wurden, werden in grauer Schrift angezeigt. Objekte werden in einem Tabellenformat angezeigt.
@@ -49,14 +49,14 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
 |**Depth**|Die Tiefe eines 3D-Texturobjekts. Wenn eine Textur nicht 3D ist, ist der Wert 0. Gilt nicht für andere Objekttypen.|
 |**Mips**|Die Anzahl von MIP-Ebenen eines Texturobjekts. Gilt nicht für andere Objekttypen.|
 |**ArraySize**|Die Anzahl von Texturen in einem Texturarray. Der Bereich liegt zwischen 1 und einer von der aktuellen Funktionsebene definierten Obergrenze. Für eine Cubemap beträgt dieser Wert 6 mal die Anzahl der Cubemaps im Array.|
-|**Beispiele**|Die Anzahl der Mehrfachabtastungen pro Pixel.|
+|**Proben**|Die Anzahl der Mehrfachabtastungen pro Pixel.|
 
 ## <a name="graphics-object-viewers"></a>Grafikobjekt-Viewer
  Um Informationen zu einem Objekt anzuzeigen, öffnen Sie es, indem Sie seinen Namen in der Objekttabelle auswählen. Details über das Objekt werden in verschiedenen Formaten angezeigt, je nach Typ des Objekts. Texturen werden beispielsweise unter Verwendung des Textur-Viewers und Gerätestatus angezeigt, z. B. wird Gerätekontext D3D11 als formatierte Liste angezeigt. Unterschiedliche Versionen von Direct3D verwenden unterschiedliche Objekte, und es gibt häufig spezifische Schnellansichten für die wichtigsten Objekte der einzelnen Versionen.
 
  Hier ist der Textur-Viewer mit dem Inhalt der Pipelinestufe „Ausgabemerge“.
 
- ![Die texturvorschau mit Anzeige des ausgabemerge](media/gfx_diag_texture_preview.png "Gfx_diag_texture_preview")
+ ![Die Textur Vorschau, die die Ausgabe Fusion anzeigt](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
 
 ### <a name="d3d12-command-list"></a>D3D12-Befehlsliste
  In Direct3D 12 ist eine Befehlsliste ein Objekt, von dem Befehle in einer Befehlszuweisung aufgezeichnet werden, damit sie an die GPU als eine einzelne Anforderung gesendet werden können. Befehlslisten führen in der Regel eine Reihe von Statuseinstellungen aus, zeichnen, deaktivieren und kopieren Befehle. Sie sind besonders wichtig, da sie die bevorzugte Methode für das Rendern in Direct3D 12 sind und zwischen den Frames zur Leistungsoptimierung erneut verwendet werden können. Details zur Befehlsliste werden mit Informationen zu den einzelnen Pipelinestufen auf einer eigenen Registerkarte in einem neuen Dokumentfenster angezeigt.
@@ -71,14 +71,14 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
  In Direct3D-12 sind Ressourcen Catchall-Objekte, die Daten für die Renderingpipeline bereitstellen. Dies steht im Gegensatz zu Direct3D11, wo viele spezifische Objekte für verschiedene Arten und Dimensionen von Ressourcen definiert werden. Eine Direct3D 12-Ressource kann Texturdaten, Scheitelpunktdaten, Shaderdaten und mehr enthalten – sie kann sogar Renderziele, z. B. Tiefenpuffer, darstellen. Einzelheiten über eine Direct3D 12-Ressource werden in einem neuen Dokumentfenster angezeigt. Die Grafikanalyse verwendet den entsprechenden Viewer für den Inhalt des Ressourcenobjekts, wenn dessen Typ bestimmt werden kann. Beispielsweise wird ein Ressourcenobjekt mit Texturdaten mit dem Textur-Viewer angezeigt, wie bei einem D3D11 Texture2D-Objekt.
 
 ### <a name="device-context-object"></a>Gerätekontextobjekt
- In Direct3D 11 und Direct3D 10 ist das Gerätekontextobjekt (**D3D11-Gerätekontext** oder **D3D10-Gerät**) besonders wichtig, da es die wichtigsten Zustandsinformationen enthält und auf andere Zustandsobjekte verweist, die momentan festgelegt sind. Gerätekontextdetails werden in einem neuen Dokumentfenster angezeigt, und jede Kategorie von Informationen wird dort auf einer eigenen Registerkarte angezeigt. Der Gerätekontext ändert sich, wenn ein neues Ereignis ausgewählt wird, um den aktuellen Gerätezustand wiederzugeben.
+ In Direct3D 11 und Direct3D 10 ist das Gerätekontextobjekt (**D3D11-Gerätekontext** oder **D3D10-Gerät**) besonders wichtig, da es die wichtigsten Zustandsinformationen enthält und auf andere Zustandsobjekte verweist, die momentan festgelegt sind. Gerätekontext Details werden in einem neuen Dokument Fenster angezeigt, und jede Kategorie von Informationen wird dort auf der eigenen Registerkarte angezeigt. Der Gerätekontext ändert sich, wenn ein neues Ereignis ausgewählt wird, um den aktuellen Gerätezustand widerzuspiegeln.
 
 ### <a name="buffer-object"></a>Pufferobjekt
  Pufferobjektdetails (D3D11-Puffer oder D3D10-Puffer) werden in einem neuen Dokumentfenster angezeigt, das den Pufferinhalt in einer Tabelle darstellt und eine Schnittstelle bereitstellt, um die Art und Weise, wie Pufferinhalt angezeigt wird, zu ändern. Die Tabelle **Pufferdaten** unterstützt das Kopieren und Einfügen, sodass Sie ein anderes Tool, wie etwa Microsoft Excel, zum Überprüfen des Inhalts verwenden können. Der Inhalt des Puffers wird gemäß dem Wert des Kombinationsfelds **Format** interpretiert, das sich oberhalb der Tabelle **Pufferdaten** befindet. Im Feld können Sie ein zusammengesetztes Datenformat eingeben, das aus den Datentypen besteht, die in der folgenden Tabelle aufgelistet sind. Beispielsweise zeigt "float int" eine Liste von Strukturen an, die einen 32-Bit-Gleitkommawert enthalten, dem ein 32-Bit-Ganzzahlwert mit Vorzeichen folgt. Zusammengesetzte Datenformate, die Sie angegeben haben, werden dem Kombinationsfeld zur späteren Verwendung hinzugefügt.
 
  Sie können auch das Kontrollkästchen **Offsets anzeigen** umschalten, um Offsets der einzelnen Elemente im Puffer ein- oder auszublenden.
 
-|Typ|Beschreibung|
+|Geben Sie Folgendes ein:|Beschreibung|
 |----------|-----------------|
 |**float**|Ein 32-Bit-Gleitkommawert.|
 |**float2**|Ein Vektor, der zwei 32-Bit-Gleitkommawerte enthält.|

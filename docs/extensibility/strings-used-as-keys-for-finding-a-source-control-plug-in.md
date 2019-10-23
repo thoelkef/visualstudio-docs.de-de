@@ -1,5 +1,5 @@
 ---
-title: Zeichenfolgen, die als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-in verwendet werden. | Microsoft-Dokumentation
+title: Zeichen folgen, die als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-ins verwendet werden | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,43 +10,43 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c2b30fb41976cdbbab13fa22d438c63bddbbef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07962ff9e0f9371b1fc308a35600a6819602b4f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331703"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719450"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-Ins verwendete Zeichenfolgen
-Die nachfolgenden Zeichenfolgen sind die Schlüssel für den Zugriff auf die Registrierung, um Informationen über das Quellcodeverwaltungs-Plug-in finden.
+Die folgenden Zeichen folgen sind die Schlüssel für den Zugriff auf die Registrierung, um Informationen über das Quellcodeverwaltungs-Plug-in zu suchen.
 
- `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, und `STR_SCCPROVIDERNAME` sind Registrierungsschlüssel bzw.-Werte verwendet, um eine DLL als ein Quellcodeverwaltungs-Plug-In für Visual Studio zu registrieren.
+ `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH` und `STR_SCCPROVIDERNAME` sind Registrierungsschlüssel oder-Werte, die zum Registrieren einer DLL als Quellcodeverwaltungs-Plug-in für Visual Studio verwendet werden.
 
- `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, und `SCC_STATUS_FILE` verwendet, um das Format der MSSCCPRJ beschreiben. SCC-Datei.
+ `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE` und `SCC_STATUS_FILE` werden verwendet, um das Format von Mssccprj zu beschreiben. SCC-Datei.
 
-## <a name="string-keys-and-values"></a>Zeichenfolgenschlüsseln und Werten
+## <a name="string-keys-and-values"></a>Zeichen folgen Schlüssel und-Werte
 
 |Key|Wert|
 |---------|-----------|
-|`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|
-|`STR_PROVIDERREGKEY`|ProviderRegKey|
-|`STR_SCCPROVIDERPATH`|SCCServerPath|
-|`STR_SCCPROVIDERNAME`|SCCServerName|
-|`STR_SCC_INI_SECTION`|Quellcodeverwaltung|
-|`STR_SCC_INI_KEY`|SourceCodeControlProvider|
+|`STR_SCC_PROVIDER_REG_LOCATION`|Software\sourcecodecontrolprovider|
+|`STR_PROVIDERREGKEY`|Providerregkey|
+|`STR_SCCPROVIDERPATH`|Sccserverpath|
+|`STR_SCCPROVIDERNAME`|Sccservername|
+|`STR_SCC_INI_SECTION`|Quell Code Verwaltung|
+|`STR_SCC_INI_KEY`|Sourcecodecontrolprovider|
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|
-|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|
+|`SCC_STATUS_FILE`|Mssccprj. SCC|
 |`SCC_KEY`|SCC|
-|`SCC_FILE_SIGNATURE`|Eine Quellcodedatei-Steuerelement|
-|`SCC_NSE`|Namespace-Erweiterung|
-|`SCC_NSE_PREFIX`|Protokoll-Präfix|
-|`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|
-|`STR_SCCHELPCOLLECTION`|HelpCollection|
-|`STR_UI_LANGUAGE`|UILanguage|
-|`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|
+|`SCC_FILE_SIGNATURE`|Eine Quell Code Verwaltungs Datei|
+|`SCC_NSE`|Namespace Erweiterung|
+|`SCC_NSE_PREFIX`|Protopräfix|
+|`SCC_NSE_DisableOpenSCC`|Disableopenfromsourcecontrol|
+|`STR_SCCHELPCOLLECTION`|Helpcollection|
+|`STR_UI_LANGUAGE`|Eigenschaft UILanguage|
+|`STR_SRCSAFE_ROOT_KEY`|Software\microsoft\sourcesafe|
 
 ## <a name="see-also"></a>Siehe auch
 - [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
-- [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-Ins](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-Ins](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Datei „MSSCCPRJ.SCC“](../extensibility/mssccprj-scc-file.md)

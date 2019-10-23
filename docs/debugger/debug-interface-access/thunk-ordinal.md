@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854434"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738496"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
-Legt fest, Thunk-Typen.
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
+Legt Thunk-Typen fest.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,22 +39,22 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Elements
-Standard THUNK_ORDINAL_NOTYPE Thunk.
+THUNK_ORDINAL_NOTYPE-Standard Thunk.
 
-THUNK_ORDINAL_ADJUSTOR ein `this` Abwicklung Thunk.
+THUNK_ORDINAL_ADJUSTOR eine `this`-oder-Thunk.
 
-Virtuelle THUNK_ORDINAL_VCALL Thunk für Aufruf.
+THUNK_ORDINAL_VCALL virtueller callthunk.
 
-Thunk für THUNK_ORDINAL_PCODE-P-Code.
+THUNK_ORDINAL_PCODE P-Code Thunk.
 
-THUNK_ORDINAL_LOAD verzögert geladenen Thunk.
+THUNK_ORDINAL_LOAD verzögertes Laden Thunk.
 
-Inkrementelle THUNK_ORDINAL_TRAMP_INCREMENTAL Trampoline Thunk (ein Thunk Trampoline wird verwendet, um die Aufrufe aus einem Speicher in einen anderen zu springen).
+THUNK_ORDINAL_TRAMP_INCREMENTAL inkrementelles Trampolin-THUNK (ein Trampolin-THUNK wird verwendet, um Aufrufe von einem Speicherplatz zu einem anderen zu überspringen).
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND Branch Punkt Trampoline Thunk.
+THUNK_ORDINAL_TRAMP_BRANCHISLAND-Kernstück-Trampolin-Thunk.
 
 ## <a name="remarks"></a>Hinweise
-Die Werte in dieser Enumeration werden zurückgegeben, von einem Aufruf der [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) Methode.
+Die Werte in dieser Enumeration werden von einem Rückruf der [idiasymmetribol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) -Methode zurückgegeben.
 
 ## <a name="requirements"></a>Anforderungen
 Header: cvconst.h

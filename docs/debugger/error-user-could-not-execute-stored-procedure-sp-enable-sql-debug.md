@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Benutzer konnte nicht führen Sie die gespeicherte Prozedur "sp_enable_sql_debug" | Microsoft-Dokumentation'
+title: 'Fehler: der Benutzer konnte die gespeicherte Prozedur sp_enable_sql_debug nicht ausführen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e051cd594ee26a57fdbb7dcdc5bdad81f06cf771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bdc6ecb03572d824f6e3b887090d67be416cdef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850094"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736549"
 ---
-# <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>Fehler: Der Benutzer konnte die gespeicherte Prozedur „sp_enable_sql_debug“ nicht ausführen
+# <a name="error-user-could-not-execute-stored-procedure-sp_enable_sql_debug"></a>Fehler: Der Benutzer konnte die gespeicherte Prozedur "sp_enable_sql_debug" nicht ausführen
 
 Die gespeicherte Prozedur "sp_enable_sql_debug" konnte auf dem Server nicht ausgeführt werden. Mögliche Ursachen:
 
@@ -27,9 +27,9 @@ Die gespeicherte Prozedur "sp_enable_sql_debug" konnte auf dem Server nicht ausg
 
 - Fehlende erforderliche Berechtigungen für den Server. Zum Debuggen auf SQL Server 2005 müssen sowohl das Konto, unter dem Visual Studio ausgeführt wird, als auch das Konto, unter dem die Verbindung mit SQL Server hergestellt wird, Mitglieder der Systemadministratoren-Rolle sein. Das Konto, mit dem die Verbindung mit SQL Server hergestellt wird, ist entweder das Windows-Benutzerkonto (bei Windows-Authentifizierung) oder ein Konto mit Benutzer-ID und Kennwort (bei SQL-Authentifizierung).
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Legen Sie die SQL Server-Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+Weitere Informationen finden Sie unter Gewusst [wie: Festlegen SQL Server Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Legen Sie die SQL Server-Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
-- [Einrichten von SQL-Debugging](/previous-versions/visualstudio/visual-studio-2010/s4sszxst\(v\=vs.100\))
+- [Vorgehensweise: Festlegen von SQL Server Berechtigungen für das Debuggen](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Einrichten des SQL-Debuggens](/previous-versions/visualstudio/visual-studio-2010/s4sszxst\(v\=vs.100\))

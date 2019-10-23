@@ -1,5 +1,5 @@
 ---
-title: Grafikpixelverlauf | Microsoft-Dokumentation
+title: Grafik Pixel Verlauf | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388587"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735486"
 ---
 # <a name="graphics-pixel-history"></a>Grafikpixelverlauf
 Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie sich Direct3D-Ereignisse, die während eines Frames Ihres Spiels oder Ihre App auftreten, auf ein bestimmtes Pixel auswirken.
 
  Im Folgenden finden Sie das Pixelverlaufsfenster:
 
- ![Ein Pixel mit drei Direct3D-Ereignissen im Verlauf. ](media/gfx_diag_demo_pixel_history_orientation.png "Gfx_diag_demo_pixel_history_orientation")
+ ![Ein Pixel mit drei Direct3D-Ereignissen im Verlauf.](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
 
 ## <a name="understanding-the-pixel-history-window"></a>Grundlegendes zum Pixelverlaufsfenster
  Mithilfe des Pixelverlaufs können Sie analysieren, wie sich Direct3D-Ereignisse während eines Frames auf ein bestimmtes Pixel oder Renderziel auswirken. Sie können ein Rendering-Problem auf ein bestimmtes Ereignis für Direct3D zurückführen, selbst wenn die nachfolgenden Ereignisse – oder nachfolgende Primitive im selben Ereignis – weiterhin den endgültigen Farbwert des Pixel verändern. Beispielsweise wird ein Pixel nicht ordnungsgemäß erzeugt und dann unleserlich durch ein anderes, halbtransparenten Pixel, dessen Farben in den Framebuffer-Kontrastwerten auftreten. Diese Art von Problem wäre nur schwer zu diagnostizieren, wenn Sie nur den endgültigen Inhalt des Renderingziels als Unterstützung zur Verfügung hätten.
@@ -31,7 +31,7 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
 
  Der untere Teil des Fensters zeigt die Ereignisse, die sich auf die Farbe des Pixels auswirken konnten, zusammen mit den **ersten** und **endgültigen** Pseudo-Ereignissen an, die die ersten und endgültigen Farbwerte der Pixel im Framepuffer darstellen. Der ursprüngliche Farbwert wird bestimmt durch das erste Ereignis, das die Farbe des Pixels änderte (in der Regel ein `Clear`-Ereignis). Eine Pixel hat immer diese beiden Pseudo-Ereignisse in dessen Verlauf, auch wenn keine weiteren Ereignisse betroffen sind. Wenn andere Ereignisse sich auf die Pixels auswirken konnten, werden sie zwischen den **ersten** und **letzten** Ereignissen angezeigt. Die Ereignisse können erweitert werden, um ihre Details anzuzeigen. Bei einfachen Ereignissen, wie der Deaktivierung eines Renderingziels, wirkt sich das Ereignis nur einen Farbwert aus. Komplexere Ereignisse, wie Zeichnen-Aufrufe, generieren mindestens eine Primitive, die zur Farbe des Pixels beitragen könnten.
 
- Primitive, die vom Ereignis gezeichnet wurden, werden durch ihren Primitivtyp und Index zusammen mit der Gesamtzahl der Primitive für das Objekt angegeben. Z.B. bedeutet ein Bezeichner wie **Dreieck (1456) von (6214)**, dass der Primitiv dem 1456. Dreieck in einem Objekt bestehend aus 6214 Dreiecken entspricht. Auf der linken Seite jeder Primitiv-ID befindet sich ein Symbol, das den Effekt des Primitivs auf das Pixel zusammenfasst. Primitive, die Auswirkungen auf die Pixelfarbe haben, werden durch ein abgerundetes Rechteck dargestellt, die mit der Ergebnisfarbe gefüllt ist. Primitive, die keine Auswirkungen auf die Pixelfarbe haben, werden durch Symbole dargestellt, die den Grund für den Ausschluss des Pixels angeben. Diese Symbole werden im Abschnitt [Ausschluss eines Primitivs](#exclusion) weiter unten in diesem Artikel beschrieben.
+ Primitive, die vom Ereignis gezeichnet wurden, werden durch ihren Primitivtyp und Index zusammen mit der Gesamtzahl der Primitive für das Objekt angegeben. Z.B. bedeutet ein Bezeichner wie **Dreieck (1456) von (6214)** , dass der Primitiv dem 1456. Dreieck in einem Objekt bestehend aus 6214 Dreiecken entspricht. Auf der linken Seite jeder Primitiv-ID befindet sich ein Symbol, das den Effekt des Primitivs auf das Pixel zusammenfasst. Primitive, die Auswirkungen auf die Pixelfarbe haben, werden durch ein abgerundetes Rechteck dargestellt, die mit der Ergebnisfarbe gefüllt ist. Primitive, die keine Auswirkungen auf die Pixelfarbe haben, werden durch Symbole dargestellt, die den Grund für den Ausschluss des Pixels angeben. Diese Symbole werden im Abschnitt [Ausschluss eines Primitivs](#exclusion) weiter unten in diesem Artikel beschrieben.
 
  Sie können jeden Primitiv erweitern, um zu untersuchen, wie die Pixel-Shader-Ausgabe mit der vorhandenen Pixelfarbe zusammengeführt wurde, um die Ergebnisfarbe zu erzeugen. Von hier aus können Sie den Pixel Shader-Code prüfen oder debuggen, der dem Primitiv-Typ zugeordnet ist, und Sie können den Vertex-Shader Knoten zum Überprüfen der Vertex-Shaders-Eingaben erweitern.
 
@@ -40,9 +40,9 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
 
 |Symbol|Grund für den Ausschluss|
 |----------|--------------------------|
-|![Symbol für Tiefe Test Fehler. ](media/vsg_hist_icon_failed_depth.png "Vsg_hist_icon_failed_depth")|Das Pixel wurde ausgeschlossen, weil der Tiefentest fehlgeschlagen ist.|
-|![Fehlerhafter scherentest Test-Symbol ("Fehler". ](media/vsg_hist_icon_failed_scissor.png "Vsg_hist_icon_failed_scissor")|Das Pixel wurde ausgeschlossen, weil der Scherentest fehlgeschlagen ist.|
-|![Schablone Test-Symbol ("Fehler". ](media/vsg_hist_icon_failed_stencil.png "Vsg_hist_icon_failed_stencil")|Das Pixel wurde ausgeschlossen, weil der Schablonentest fehlgeschlagen ist.|
+|![Symbol für tiefen Test Fehler.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Das Pixel wurde ausgeschlossen, weil der Tiefentest fehlgeschlagen ist.|
+|![Symbol für "Scissor-Test Fehler".](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Das Pixel wurde ausgeschlossen, weil der Scherentest fehlgeschlagen ist.|
+|![Symbol "Schablone-Test Fehler".](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Das Pixel wurde ausgeschlossen, weil der Schablonentest fehlgeschlagen ist.|
 
 ### <a name="draw-call-exclusion"></a>Ausschluss des Zeichenaufrufs
  Wenn alle Primitive in einem Zeichnen-Aufruf von der Auswirkung auf das Renderingziel ausgeschlossen werden, da sie einen Test nicht bestehen, kann der Aufruf einer Zeichnung nicht erweitert werden, und ein Symbol, das dem Grund für den Ausschluss entspricht, wird daneben angezeigt. Die Gründe für den Ausschluss des Aufrufs einer Zeichnung ähneln den Gründen für den Ausschluss von Primitiven, und die Symbole sind ähnlich.

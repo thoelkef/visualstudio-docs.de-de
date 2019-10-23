@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b887e21da73acffde6f5ae21adf766e64e55fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838131"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741774"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Stellt eine Quelldatei dar.
@@ -29,23 +29,23 @@ IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
-Die folgende Tabelle zeigt die Methoden der `IDiaSourceFile`.
+In der folgenden Tabelle sind die Methoden von `IDiaSourceFile` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Ruft einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.|
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Ruft einen einfachen ganzzahligen Schlüsselwert ab, der für dieses Bild eindeutig ist.|
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Ruft den Namen der Quelldatei ab.|
-|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Ruft den Typ von Prüfsumme ab.|
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Ruft einen Enumerator, der die Compilands mit Zeilennummern verweisen auf diese Datei ab.|
-|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Ruft die Bytes der Prüfsumme ab.|
+|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Ruft den Prüfsummen Datentyp ab.|
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Ruft einen Enumerator der Kompilierungen mit Zeilennummern ab, die auf diese Datei verweisen.|
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Ruft die Prüfsumme Bytes ab.|
 
 ## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
-Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumsourcefiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) oder [idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) Methoden. Siehe das Beispiel für Details.
+Rufen Sie diese Schnittstelle durch Aufrufen der [IDiaEnumSourceFiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) -Methode oder der [IDiaEnumSourceFiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) -Methode ab. Weitere Informationen finden Sie im Beispiel.
 
 ## <a name="example"></a>Beispiel
-Diese Funktion zeigt die Namen aller Quelldateien, die Mitwirkung an der angegebenen Tabelle.
+Diese Funktion zeigt die Namen aller Quelldateien an, die zur angegebenen Tabelle beitragen.
 
 ```C++
 void ShowSourceFiles(IDiaTable *pTable)
@@ -75,7 +75,7 @@ void ShowSourceFiles(IDiaTable *pTable)
 ## <a name="requirements"></a>Anforderungen
 Header: Dia2.h
 
-Bibliothek: diaguids.lib
+Bibliothek: diaguids. lib
 
 DLL: msdia80.dll
 

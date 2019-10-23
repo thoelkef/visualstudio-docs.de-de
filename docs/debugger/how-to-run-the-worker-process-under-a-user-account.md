@@ -1,5 +1,5 @@
 ---
-title: Ausführen von Arbeitsprozessen unter einem Benutzerkonto | Microsoft-Dokumentation
+title: Ausführen eines Workerprozesses unter einem Benutzerkonto | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847762"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732816"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto
 Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess (aspnet_wp.exe oder w3wp.exe) unter einem Benutzerkonto ausgeführt werden kann, führen Sie folgende Schritte aus:
 
  > [!IMPORTANT]
- > Ab Windows Server 2008 R2, wir empfehlen die Verwendung von der [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungspool.
+ > Ab Windows Server 2008 R2 empfiehlt es sich, die [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungs Pool zu verwenden.
 
 ## <a name="procedure"></a>Prozedur
 
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>So führen Sie "aspnet_wp.exe" unter einem Benutzerkonto aus
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>So führen Sie "aspnet_wp.exe" unter einem Benutzerkonto aus
 
 1. Öffnen Sie die Datei machine.config. Sie befindet sich auf dem Computer im Ordner CONFIG und wurde unter demselben Pfad gespeichert, unter dem die Laufzeit installiert wurde.
 
@@ -61,7 +61,7 @@ Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/
    iisreset
    ```
 
-   - oder -
+   \- oder -
 
    ```cmd
    net stop iisadmin /y
@@ -78,7 +78,7 @@ Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/
 
     Das Dialogfeld **Select User, Computer, or Group** (Benutzer, Computer oder Gruppen auswählen) wird angezeigt.
 
-10. Geben Sie den Benutzernamen in das Feld **Namen des auszuwählenden Objekts eingeben** ein, und klicken Sie auf **OK**. Der Benutzername muss das folgende Format aufweisen: Domänenname\benutzername.
+10. Geben Sie den Benutzernamen in das Feld **Namen des auszuwählenden Objekts eingeben** ein, und klicken Sie auf **OK**. Der Benutzername muss folgendes Format aufweisen: Domänenname\Benutzername.
 
 11. Gewähren Sie dem Benutzer im Dialogfeld **Permission Entry for Temporary ASP.NET Files** (Berechtigungseintrag für temporäre ASP.NET-Dateien) **Full Control** (Vollzugriff), und klicken Sie dann auf **OK**, um das Dialogfeld **Entry for Temporary ASP.NET Files** (Eintrag für temporäre ASP.NET-Dateien) zu schließen.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Skip | Microsoft-Dokumentation'
+title: 'IDiaEnumSymbols:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea2b1ea99eb2801259d58a12c359e9fffd887a64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9252826470decd3cddfabdcc2a00e22037d5de5c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830435"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743911"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-Überspringt eine angegebene Anzahl von Symbolen in einer Enumerationsfolge.
+Überspringt eine angegebene Anzahl von Symbolen in einer enumerationssequenz.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der Symbole in der Enumerationsfolge übersprungen werden soll.
+in Die Anzahl der zu über springenden Symbole in der enumerationssequenz.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` treten keine Symbole mehr, um zu überspringen.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` zurückgegeben, wenn keine weiteren Symbole zum Überspringen vorhanden sind.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

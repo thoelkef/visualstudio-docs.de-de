@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Framebyrva | Microsoft-Dokumentation'
+title: 'IDiaEnumFrameData:: frameByRVA | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdb525034016981c1f9030e6bce1f9590c45591
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0a6636b692a3017adb6d8b9242dca62f397bf40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744670"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-Gibt einen Frame relative virtuelle Adresse (RVA) zurück.
+Gibt einen Frame durch die relative virtuelle Adresse (RVA) zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT frameByRVA( 
 #### <a name="parameters"></a>Parameter
  relativeVirtualAddress
 
-[in] Die RVA des Frames von Interesse sind.
+in RVA des relevanten Frame.
 
  Rahmen
 
-[out] Gibt eine [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den Rahmen, die die angegebene Adresse enthält darstellt.
+vorgenommen Gibt ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) -Objekt zurück, das den Frame darstellt, der die angegebene Adresse enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn keine Framedaten die angegebene Adresse übereinstimmt. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine Frame Daten mit der angegebenen Adresse übereinstimmen. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

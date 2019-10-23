@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyrvaex | Microsoft-Dokumentation'
+title: 'IDiaSession:: findSymbolByRVAEx | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6c8e3523a49bd4fc22a86c9ec86b1e8cd2038e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d9b27cee1c8df3eb26d64f4f860c33e0d4bf45f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839250"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742036"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
-Ruft ein bestimmtes Symbol-Typ, der enthält und am nächsten ist, eine angegebene relative virtuelle Adresse (RVA) und den Offset ab.
+Ruft einen angegebenen Symboltyp ab, der eine angegebene relative virtuelle Adresse (RVA) und einen Offset enthält bzw. am nächsten liegt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByRVAEx ( 
 #### <a name="parameters"></a>Parameter
  `rva`
 
-[in] Gibt an, die RVA.
+in Gibt die RVA an.
 
  `symtag`
 
-[in] Der Symboltyp gefunden werden. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.
+in Symboltyp, der gefunden werden soll. Werte werden aus der Enumeration der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) entnommen.
 
  `ppSymbol`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das abgerufene Symbol darstellt.
 
  `displacement`
 
-[out] Gibt einen Wert angeben eines Offsets von der relativen virtuellen Adresse, die im angegebenen `rva`.
+vorgenommen Gibt einen Wert zurück, der einen Offset von der in `rva` angegebenen relativen virtuellen Adresse angibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,6 +1,6 @@
 ---
 title: C++Warnungen zu Kern Richtlinien
-ms.date: 08/10/2017
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e616b380c223118b42d9cb345f17cb06db78779b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: MT
+ms.openlocfilehash: 02d284f909d601de8eb1361eee4f65304715361e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018478"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745939"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
 
@@ -60,11 +60,11 @@ int main()
 
 In diesem Beispiel werden einige der Warnungen veranschaulicht, die C++ die grundlegenden Prüfregeln finden können:
 
-- C26494 ist vom Regeltyp. 5: Ein Objekt immer initialisiert werden.
+- C26494 ist vom Regeltyp. 5: Initialisieren Sie immer ein Objekt.
 
-- C26485 ist Regel Begrenzungen. 3: Kein Array-zu-Zeiger-Verfall.
+- C26485 ist Regel Begrenzungen. 3: kein Array-zu-Zeiger-Zerfall.
 
-- C26481 ist Regel Begrenzungen. 1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span`.
+- C26481 ist Regel Begrenzungen. 1: Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen `span` .
 
 Wenn die C++ Code Analyse-Regelsätze der Kern Überprüfung installiert und aktiviert sind, wenn Sie diesen Code kompilieren, werden die ersten beiden Warnungen ausgegeben, das dritte wird jedoch unterdrückt. Dies ist die Buildausgabe des Beispielcodes:
 
@@ -78,13 +78,13 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-Die C++ wichtigsten Richtlinien sind vorhanden, die Ihnen helfen, besseren und sichereren Code zu schreiben. Wenn Sie jedoch über eine Instanz verfügen, bei der eine Regel oder ein Profil nicht angewendet werden sollte, ist es einfach, Sie direkt im Code zu unterdrücken. Sie können das Attribut "`gsl::suppress`" verwenden C++ , um zu verhindern, dass die Kern Überprüfung eine Verletzung einer Regel im folgenden Codeblock erkennt und meldet. Sie können einzelne Anweisungen markieren, um bestimmte Regeln zu unterdrücken. Sie können sogar das gesamte Begrenzungen-Profil unterdrücken, indem Sie `[[gsl::suppress(bounds)]]` schreiben, ohne eine bestimmte Regel Nummer zu einschließen.
+Die C++ wichtigsten Richtlinien sind vorhanden, die Ihnen helfen, besseren und sichereren Code zu schreiben. Wenn Sie jedoch über eine Instanz verfügen, bei der eine Regel oder ein Profil nicht angewendet werden sollte, ist es einfach, Sie direkt im Code zu unterdrücken. Sie können das `gsl::suppress`-Attribut verwenden, C++ um zu verhindern, dass die Kern Überprüfung eine Verletzung einer Regel im folgenden Codeblock erkennt und meldet. Sie können einzelne Anweisungen markieren, um bestimmte Regeln zu unterdrücken. Sie können sogar das gesamte Begrenzungen-Profil unterdrücken, indem Sie `[[gsl::suppress(bounds)]]` ohne Angabe einer bestimmten Regel Nummer schreiben.
 
 ## <a name="supported-rule-sets"></a>Unterstützte Regelsätze
 
 Wenn der C++ kernrichtlinienprüfung neue Regeln hinzugefügt werden, kann sich die Anzahl der Warnungen, die für bereits vorhandenen Code erzeugt werden, erhöhen. Sie können vordefinierte Regelsätze verwenden, um zu filtern, welche Arten von Regeln aktiviert werden sollen. Ab Visual Studio 2017 Version 15,3 sind folgende Regelsätze unterstützt:
 
-- **Besitzer Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen in Bezug auf "Owner @ no__t-2T >" C++ aus den grundlegenden Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Besitzer Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen im Zusammenhang mit Besitzer \<T > aus C++ den grundlegenden Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - Mit **Konstanten Regeln** werden über [Prüfungen C++ der Kern Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)durchgeführt.
 
@@ -122,7 +122,7 @@ Diese Makros entsprechen den Regelsätzen und werden in eine durch Leerzeichen g
 
 ## <a name="attributes"></a>Attribute
 
-Der Microsoft Visual C++ Compiler bietet eingeschränkte Unterstützung für das gsl-Unterbrechungs Attribut. Sie kann verwendet werden, um Warnungen für Ausdrucks-und Block Anweisungen innerhalb einer Funktion zu unterdrücken.
+Der Microsoft C++ -Compiler bietet eingeschränkte Unterstützung für das gsl-Unterbrechungs Attribut. Sie kann verwendet werden, um Warnungen für Ausdrucks-und Block Anweisungen innerhalb einer Funktion zu unterdrücken.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -154,7 +154,7 @@ Anstelle #Pragmas können Sie die Befehlszeilenoptionen auf der Eigenschaften Se
 
 3. Fügen Sie im Fenster **zusätzliche Optionen** `/wd26400` hinzu.
 
-Sie können die Befehlszeilenoption verwenden, um die gesamte Code Analyse für eine Datei temporär zu deaktivieren, indem Sie `/analyze-` angeben. Dies führt zu einer Warnung *D9025 Überschreiben von "/Analyze" mit "/Analyze-"*, wodurch Sie daran erinnert werden, die Code Analyse später erneut zu aktivieren.
+Sie können die Befehlszeilenoption verwenden, um die gesamte Code Analyse für eine Datei temporär zu deaktivieren, indem Sie `/analyze-` angeben. Dies führt zu einer Warnung *D9025 Überschreiben von "/Analyze" mit "/Analyze-"* , wodurch Sie daran erinnert werden, die Code Analyse später erneut zu aktivieren.
 
 ## <a name="corecheck_per_file"></a>Aktivieren der C++ grundlegenden Richtlinien Prüfung für bestimmte Projektdateien
 
@@ -165,7 +165,7 @@ Manchmal kann es hilfreich sein, eine fokussierte Code Analyse durchzuführen un
 3. Laden Sie das Projekt, und öffnen Sie seine Eigenschaften.
 4. Aktivieren Sie die Code Analyse, wählen Sie die entsprechenden Regelsätze aus, aktivieren Sie jedoch keine Code Analyse Erweiterungen.
 5. Wechseln Sie zu der Datei, die Sie mit der C++ Kern Leitlinien Prüfung analysieren möchten, und öffnen Sie deren Eigenschaften.
-6. Wählen Sie **CC++/\befehls Zeilen Optionen** aus, und fügen Sie `/analyze:plugin EspXEngine.dll` hinzu.
+6. Wählen Sie **CC++/\befehlszeilenoptionen** und `/analyze:plugin EspXEngine.dll` hinzufügen
 7. Deaktivieren Sie die Verwendung des vorkompilierten Headers (**C/C++\vorkompilierte Header**). Dies ist erforderlich, da das Erweiterungsmodul möglicherweise versucht, seine internen Informationen aus dem vorkompilierten Header zu lesen, und wenn Letzteres mit Standard Projektoptionen kompiliert wurde, ist es nicht kompatibel.
 8. Erstellen Sie das Projekt neu. Die allgemeinen PREfast-Überprüfungen sollten für alle Dateien ausgeführt werden. Da die C++ Basis Richtlinien Prüfung nicht standardmäßig aktiviert ist, sollte Sie nur in der Datei ausgeführt werden, die für deren Verwendung konfiguriert ist.
 
@@ -186,7 +186,7 @@ Der Native Code Analysis Checker (PREfast) ist in die MSBuild-Umgebung durch ben
 
 Stellen Sie sicher, dass Sie diese Eigenschaften vor dem Importieren der Datei "Microsoft. cpp. targets" hinzufügen. Sie können bestimmte Regelsätze auswählen oder einen benutzerdefinierten Regelsatz erstellen oder den Standard Regelsatz verwenden, der andere vorab Überprüfungen enthält.
 
-Sie können die C++ Core-Prüfung nur für angegebene Dateien ausführen, indem Sie den gleichen Ansatz wie [zuvor beschrieben](#corecheck_per_file)verwenden, aber MSBuild-Dateien verwenden. Die Umgebungsvariablen können mit dem `BuildMacro`-Element festgelegt werden:
+Sie können die C++ Core-Prüfung nur für angegebene Dateien ausführen, indem Sie den gleichen Ansatz wie [zuvor beschrieben](#corecheck_per_file)verwenden, aber MSBuild-Dateien verwenden. Die Umgebungsvariablen können mithilfe des `BuildMacro` Elements festgelegt werden:
 
 ```xml
 <ItemGroup>
@@ -213,16 +213,16 @@ Wenn Sie ein Buildsystem verwenden, das nicht auf MSBuild basiert, können Sie d
 Sie müssen einige Umgebungsvariablen festlegen und geeignete Befehlszeilenoptionen für den Compiler verwenden. Es ist besser, in der Umgebung "Native Tools-Eingabeaufforderung" zu arbeiten, sodass Sie nicht nach bestimmten Pfaden für den Compiler suchen müssen, Verzeichnisse einschließen usw.
 
 1. **Umgebungsvariablen**
-   - `set esp.extensions=cppcorecheck.dll` weist die Engine an, das C++ Kern Richtlinien Modul zu laden.
-   - `set esp.annotationbuildlevel=ignore` deaktiviert die Logik, die SAL-Anmerkungen verarbeitet. Anmerkungen wirken sich nicht auf die Code Analyse C++ in der Kern Leitlinien Prüfung aus, ihre Verarbeitung dauert jedoch Zeit (manchmal viel Zeit). Diese Einstellung ist optional, wird jedoch dringend empfohlen.
-   - `set caexcludepath=%include%` wird dringend empfohlen, Warnungen zu deaktivieren, die für Standard Header ausgelöst werden. Hier können Sie weitere Pfade hinzufügen, z. b. den Pfad zu den allgemeinen Headern in Ihrem Projekt.
+   - `set esp.extensions=cppcorecheck.dll` Dies weist die Engine an, das C++ Kern Richtlinien Modul zu laden.
+   - `set esp.annotationbuildlevel=ignore` Hierdurch wird die Logik zum Verarbeiten von Sal-Anmerkungen deaktiviert. Anmerkungen wirken sich nicht auf die Code Analyse C++ in der Kern Leitlinien Prüfung aus, ihre Verarbeitung dauert jedoch Zeit (manchmal viel Zeit). Diese Einstellung ist optional, wird jedoch dringend empfohlen.
+   - `set caexcludepath=%include%` wir dringend die Deaktivierung von Warnungen empfohlen, die für Standard Header ausgelöst werden. Hier können Sie weitere Pfade hinzufügen, z. b. den Pfad zu den allgemeinen Headern in Ihrem Projekt.
 2. **Befehlszeilenoptionen**
    - `/analyze` aktiviert die Code Analyse (Beachten Sie auch/ANALYZE: Only und/ANALYZE: Quiet).
-   - `/analyze:plugin EspXEngine.dll` diese Option lädt die Engine für die Code Analyse Erweiterungen in den PREfast. Diese Engine lädt wiederum die C++ grundlegenden Leitlinien Prüfung.
+   - `/analyze:plugin EspXEngine.dll` mit dieser Option wird die Code Analyse-Erweiterungs-Engine in den PREfast-Wert geladen. Diese Engine lädt wiederum die C++ grundlegenden Leitlinien Prüfung.
 
 ## <a name="use-the-guideline-support-library"></a>Verwenden der Unterstützungs Bibliothek für Richtlinien
 
-Die Unterstützungs Bibliothek für die Richtlinie soll Ihnen helfen, die grundlegenden Richtlinien zu befolgen. Die GSL enthält Definitionen, mit denen Sie fehleranfällige Konstrukte durch sicherere Alternativen ersetzen können. Beispielsweise können Sie ein `T*, length`-Paar von Parametern durch den `span<T>`-Typ ersetzen. Die GSL ist unter [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)verfügbar. Die Bibliothek ist Open Source, sodass Sie die Quellen anzeigen, Kommentare erstellen oder mitwirken können. Das Projekt finden Sie unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Die Unterstützungs Bibliothek für die Richtlinie soll Ihnen helfen, die grundlegenden Richtlinien zu befolgen. Die GSL enthält Definitionen, mit denen Sie fehleranfällige Konstrukte durch sicherere Alternativen ersetzen können. Beispielsweise können Sie ein `T*, length` Parameter paar durch den `span<T>`-Typ ersetzen. Die GSL ist unter [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)verfügbar. Die Bibliothek ist Open Source, sodass Sie die Quellen anzeigen, Kommentare erstellen oder mitwirken können. Das Projekt finden Sie unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Verwenden der C++ grundlegenden Check-Richtlinien in Visual Studio 2015-Projekten
 

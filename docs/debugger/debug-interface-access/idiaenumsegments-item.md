@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Item | Microsoft-Dokumentation'
+title: 'IDiaEnumSegments:: Item | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87751dcca1e2109db53c9d6dd4594bc969ffc684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 101821e3c00d3aeac9b131ee5a11ab9a01e090a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833271"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744181"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Ruft ein Segment mithilfe eines Indexes ab.
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parameter
  Index
 
-[in] Der Index der [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Objekt abgerufen werden sollen. Der Index befindet sich im Bereich von 0 bis `count`-1 und, in dem `count` wird zurückgegeben, durch die [idiaenumsegments:: Get_count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) Methode.
+in Der Index des [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) -Objekts, das abgerufen werden soll. Der Index liegt im Bereich von 0 bis `count`-1, wobei `count` von der [IDiaEnumSegments:: get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) -Methode zurückgegeben wird.
 
  segment
 
-[out] Gibt eine [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Objekt, das das gewünschte Segment darstellt.
+vorgenommen Gibt ein [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) -Objekt zurück, das das gewünschte Segment darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

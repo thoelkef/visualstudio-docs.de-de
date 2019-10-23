@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualtableshapeid | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_virtualTableShapeId | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd390cbd2982033d31ccf8e577196e2c360be655
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3134d504625435706c36e1afc7c9df64611a7516
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784304"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738814"
 ---
-# <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
-Ruft die virtuelle Tabelle Form Symbol-ID des Symbols ab.
+# <a name="idiasymbolget_virtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
+Ruft den Symbol Bezeichner für die virtuelle Tabellenform des Symbols ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,16 +33,16 @@ HRESULT get_virtualTableShapeId ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die virtuellen Tabellen Form Symbol-ID des Symbols zurück.
+vorgenommen Gibt die Form Symbol-ID der virtuellen Tabelle des Symbols zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.
+ Der Bezeichner ist ein eindeutiger Wert, der vom Dia SDK erstellt wird, um alle Symbole als eindeutig zu markieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Grafik-API und Speicherstatistiken | Microsoft-Dokumentation
+title: Grafik-API und Arbeitsspeicher Statistik | Microsoft-Dokumentation
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,36 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896018"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735579"
 ---
-# <a name="graphics-api-and-memory-statistics"></a>Grafik-API und Speicherstatistiken
+# <a name="graphics-api-and-memory-statistics"></a>Grafik-API und Arbeitsspeicher Statistik
 <!-- VERSIONLESS -->
-Visual Studio 2017 und höhere Versionen unterstützen die Grafik-API-Statistiken und Speicherstatistiken-Tools.  Diese beiden Tools können Sie verschiedene Teile der Informationen zur Verwendung der Direct3D-API als auch für GPU-Speicherverbrauch von verschiedenen Ressourcen anzeigen.
+Visual Studio 2017 und höher unterstützen die Tools für Grafik-API-Statistiken und Arbeitsspeicher Statistiken.  Mit diesen beiden Tools können Sie verschiedene Informationen über die Direct3D-API-Verwendung sowie GPU-Speicher Belegung verschiedener Ressourcen anzeigen.
 
-## <a name="graphics-api-statistics"></a>Grafik-API-Statistiken
-Die Grafik-API-Statistiken in Visual Studio-Grafikdiagnose können Sie anzeigen, die alle der Direct3D-Aufrufe, die vorgenommen wurden, und die Anzahl der bei jedem Aufruf.  Wählen Sie zum Anzeigen des Fensters der **Ansicht > API-Statistiken** Menüelement.
+## <a name="graphics-api-statistics"></a>Grafik-API-Statistik
+Mithilfe der Grafik-API-Statistik in Visual Studio Grafikdiagnose können Sie alle vorgenommenen Direct3D-Aufrufe und die Anzahl der einzelnen Aufrufe anzeigen.  Um das Fenster anzuzeigen, wählen Sie das Menü Element **> API-Statistik anzeigen** aus.
 
 ![API-Statistiken](media/gfx_diag_api_statistics.png)
 
-Dieses Tool kann erkennen, dass DirectX-aufrufen, dass Sie nicht wissen vornehmen, oder Aufrufe, die Sie oft machen nützlich sein.
+Dieses Tool kann nützlich sein, um DirectX-Aufrufe zu ermitteln, die Sie möglicherweise nicht bemerken oder die Sie zu oft machen.
 
-Sie können im Fenster auf Kopieren alle Daten als CSV-Datei, mit der rechten Maustaste, die zur weiteren Analyse in etwa wie in Excel eingefügt werden können.
+Sie können mit der rechten Maustaste in das Fenster klicken, um alle Daten als CSV zu kopieren, die zur weiteren Analyse in etwa Excel eingefügt werden können.
 
 ## <a name="memory-statistics"></a>Speicherstatistiken
-Dieses Tool zeigt, wie viel Arbeitsspeicher der Grafiktreiber, für die Ressourcen zugewiesen wird in einem Frame erstellen.  Um dieses Fenster anzuzeigen, wählen die **Ansicht > Speicherstatistiken** Menüelement.
+Mit diesem Tool wird angezeigt, wie viel Arbeitsspeicher der Grafiktreiber für die von Ihnen in einem Frame erstellten Ressourcen zuordnet.  Um dieses Fenster anzuzeigen, wählen Sie das Menü Element **> Arbeitsspeicher Statistiken anzeigen** aus.
 
 ![Speicherstatistiken](media/gfx_diag_memory_statistics.png)
 
-Die **GPU-Zuordnung** angezeigt, die Arbeitsspeichermenge, die verwendet werden, von dem Ereignis angezeigt, der **Ereignis** Spalte.  Sie können auch auswählen, das Symbol "überwachen" ![Symbol "überwachen"](media/gfx_watch.png) zum Anzeigen der [Ressourcenverlauf](graphics-event-list.md#resource-history) für das ausgewählte Ereignis.
+Die **GPU-Zuordnungs** Spalte zeigt den Umfang des Arbeitsspeichers an, der von dem in der **Ereignis** Spalte angezeigten Ereignis verwendet wird.  Sie können auch das Überwachungs Symbol ![watch Symbol ](media/gfx_watch.png) auswählen, um den [Ressourcen Verlauf](graphics-event-list.md#resource-history) für das ausgewählte Ereignis anzuzeigen.
 
-Wie das Tool für API-Statistiken, können Sie im Fenster auf Kopieren alle Daten als CSV-Datei, mit der rechten Maustaste, die zur weiteren Analyse in etwa wie in Excel eingefügt werden können.
+Wie beim API Statistics-Tool können Sie auch mit der rechten Maustaste in das-Fenster klicken, um alle Daten als CSV-Datei zu kopieren, die zur weiteren Analyse in etwa Excel eingefügt werden kann.
 
 ## <a name="see-also"></a>Siehe auch
 - [Grafikdiagnose (Debuggen von DirectX-Grafiken)](visual-studio-graphics-diagnostics.md)
-- [Ressourcenverlauf](graphics-event-list.md#resource-history)
+- [Ressourcen Verlauf](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

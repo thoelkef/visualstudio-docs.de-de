@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: findsymbolsbyrvaforacceleratorpointertag | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838996"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741153"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Wenn einen entsprechenden Tagwert, gibt diese Methode eine Enumeration von Symbolen, die enthalten sind, in dieser Stub-Funktion an eine angegebene relative virtuelle Adresse.
+Wenn ein entsprechender Tagwert angegeben ist, gibt diese Methode eine Enumeration von Symbolen zurück, die in dieser stubfunktion an einer angegebenen relativen virtuellen Adresse enthalten sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,21 +32,21 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 #### <a name="parameters"></a>Parameter
  `tagValue`
 
-[in] Der Wert des Zeigers-Tag, für den die symboldatensätze Pointee gefunden werden.
+in Der zeigertag Wert, für den die pointee-Symbol Datensätze gefunden werden.
 
  `rva`
 
-[in] Die Rva, die verwendet wird, um die Symbole zu filtern, die die Pointee-Variable mit dem angegebenen Tagwert entsprechen.
+in Die RVA, mit der die Symbole gefiltert werden, die der pointee-Variablen mit dem angegebenen Tagwert entsprechen.
 
  `ppResult`
 
-[out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wurde.
+vorgenommen Ein Zeiger auf einen `IDiaEnumSymbols` Schnittstellen Zeiger, der mit dem Ergebnis initialisiert wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Rufen Sie diese Methode nur auf eine `IDiaSymbol` Schnittstelle, die eine Accelerator-Stub-Funktion entspricht.
+ Diese Methode wird nur für eine `IDiaSymbol`-Schnittstelle aufgerufen, die einer Zugriffstasten-Stub-Funktion entspricht.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

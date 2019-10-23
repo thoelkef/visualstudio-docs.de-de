@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_functionstart | Microsoft-Dokumentation'
+title: 'IDiaFrameData:: get_functionStart | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 324cad63a597768dc2c13447c6d2d68756878695
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839978"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743615"
 ---
-# <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-Ruft ein Flag, das angibt, ob der Block den Einstiegspunkt einer Funktion enthält.
+# <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
+Ruft ein Flag ab, das angibt, ob der-Block den Einstiegspunkt einer Funktion enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn der Block den Einstiegspunkt; enthält andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der Block den Einstiegspunkt enthält. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Es ist möglich, dass ein Stapelrahmen entspricht nicht dem Anfang einer Funktion sein, da es sich bei den Frame einer Inlinemethode oder Funktion, die in einer Funktion eingefügt darstellt.
+ Es ist möglich, dass ein Stapel Rahmen nicht der Anfang einer Funktion ist, da der Frame eine Inline Methode oder Funktion darstellt, die in eine Funktion eingefügt wurde.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

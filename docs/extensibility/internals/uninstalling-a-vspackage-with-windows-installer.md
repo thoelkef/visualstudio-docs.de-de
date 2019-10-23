@@ -12,31 +12,31 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ddb09668d3114c055ddac1e4fb677a46754f388
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8e92937e848d124c18dc91b9bdfa0f020f27f20
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344764"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722130"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Deinstallieren eines VSPackage mit Windows Installer
-Zum größten Teil, Windows Installer können deinstallieren, das VSPackage nur durch "rückgängig zu machen, was dabei durchgeführt wurde, um Ihr VSPackage zu installieren. Die benutzerdefinierten Aktionen, die in beschriebenen [Befehle, muss sein ausführen nach der Installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md) muss nach einer Deinstallation ebenfalls ausgeführt werden. Da die Aufrufe von devenv.exe direkt vor die InstallFinalize Standardaktionen für die Installation und Deinstallation ausgeführt werden, dienen die CustomAction und InstallExecuteSequence Tabelleneinträge beiden Fällen.
+Windows Installer können das VSPackage zum größten Teil deinstallieren, indem Sie einfach "rückgängig machen", was für die Installation des VSPackage geschehen ist. Die benutzerdefinierten Aktionen, die in [Befehlen erläutert werden, die nach der Installation ausgeführt werden müssen,](../../extensibility/internals/commands-that-must-be-run-after-installation.md) müssen auch nach der Deinstallation ausgeführt werden. Da die Aufrufe von "devenv. exe" direkt vor der "InstallFinalize Standard"-Aktion für die Installation und Deinstallation auftreten, dienen die Tabelleneinträge "CustomAction" und "InstallExecuteSequence" beiden Fällen.
 
 > [!NOTE]
-> Führen Sie `devenv /setup` nach der Deinstallation eines MSI-Pakets.
+> Führen Sie `devenv /setup` nach der Deinstallation eines MSI-Pakets aus.
 
- Als allgemeine Regel Wenn Sie ein Windows Installer-Paket, benutzerdefinierte Aktionen hinzufügen müssen Sie diese Aktionen während der Deinstallation und Rollback behandeln. Wenn Sie benutzerdefinierte Aktionen zum Registrieren Ihres VSPackages hinzufügen, beispielsweise müssen Sie benutzerdefinierte Aktionen aus, um es zu Aufheben der Registrierung hinzufügen.
-
-> [!NOTE]
-> Es ist möglich, dass ein Benutzer aus, um Ihr VSPackage zu installieren und deinstallieren Sie die Versionen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit der er integriert ist. Sie können, stellen Sie sicher, dass Ihre VSPackage Deinstallation in diesem Szenario funktioniert Gerätetreiberschnittstellen einzufügen, benutzerdefinierte Aktionen, die auf Code mit Abhängigkeiten ausgeführt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
-
-## <a name="handling-launch-conditions-at-uninstall-time"></a>Behandlung von Startbedingungen am Zeitpunkt der Deinstallation
- Die Standardaktionen LaunchConditions liest die Zeilen der Tabelle LaunchCondition, Fehler angezeigt werden soll, wenn die Bedingungen nicht erfüllt sind. Wie Starten von Bedingungen in der Regel verwendet werden, um sicherzustellen, dass die Systemanforderungen erfüllt sind, können Sie in der Regel Startbedingungen bei der Deinstallation durch Hinzufügen der Bedingung, `NOT Installed`, auf die LaunchConditions Zeile der Tabelle LaunchCondition.
-
- Eine Alternative besteht darin hinzufügen `OR Installed` zum Starten von Bedingungen, die bei der Deinstallation nicht wichtig sind. Damit wird sichergestellt, dass die Bedingung ist bei der Deinstallation immer "true", und die Fehlermeldung des Start-Bedingung wird nicht angezeigt.
+ Wenn Sie einem Windows Installer Paket benutzerdefinierte Aktionen hinzufügen, müssen Sie diese Aktionen als allgemeine Regel während der deinstalstallation und des Rollbacks behandeln. Wenn Sie benutzerdefinierte Aktionen hinzufügen, um Ihr VSPackage selbst zu registrieren, müssen Sie z. b. benutzerdefinierte Aktionen hinzufügen, um die Registrierung aufzuheben.
 
 > [!NOTE]
-> `Installed` ist die Eigenschaft, die Windows Installer legt fest, wenn er erkennt, dass das VSPackage auf dem System bereits installiert wurde.
+> Es ist möglich, dass ein Benutzer das VSPackage installiert und dann die Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deinstalliert, mit denen es integriert ist. Sie können sicherstellen, dass die Deinstallation des VSPackages in diesem Szenario funktioniert, indem Sie benutzerdefinierte Aktionen eliminieren, die Code mit Abhängigkeiten auf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ausführen.
+
+## <a name="handling-launch-conditions-at-uninstall-time"></a>Behandeln von Startbedingungen zum Zeitpunkt der Deinstallation
+ Mit der Standardaktion LaunchConditions werden die Zeilen der LaunchCondition-Tabelle gelesen, um Fehlermeldungen anzuzeigen, wenn die Bedingungen nicht erfüllt werden. Wenn im allgemeinen Startbedingungen verwendet werden, um sicherzustellen, dass die Systemanforderungen erfüllt sind, können Sie die Startbedingungen während der deinstalstallation im allgemeinen überspringen, indem Sie die Bedingung (`NOT Installed`) der Zeile LaunchConditions der LaunchCondition-Tabelle hinzufügen.
+
+ Eine Alternative besteht darin, `OR Installed` zum Starten von Bedingungen hinzuzufügen, die während der Installation nicht wichtig sind. Dadurch wird sichergestellt, dass die Bedingung bei der nicht Installation immer true ist, und daher wird die Fehlermeldung der Startbedingung nicht angezeigt.
+
+> [!NOTE]
+> `Installed` ist die Eigenschaft Windows Installer legt fest, wann das VSPackage bereits auf dem System installiert ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)

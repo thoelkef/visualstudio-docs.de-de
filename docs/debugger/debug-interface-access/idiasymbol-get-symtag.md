@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_symtag | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_symTag | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bdd4ed102718a1c81be55c848a2d3c891c0ba99
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 99f24e47ff04c6a7d37633c4f04bbd058b861cd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830616"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739228"
 ---
-# <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
-Ruft die Klassifizierung der Symbol-Typ ab.
+# <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
+Ruft den Symboltyp Klassifizierer ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_symTag ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt einen Wert aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) -Enumeration, die Klassifizierung der Symbol-Typs angibt.
+vorgenommen Gibt einen Wert aus der [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -enumerationsenumeration zurück, der den Symboltyp Klassifizierer angibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="example"></a>Beispiel
 

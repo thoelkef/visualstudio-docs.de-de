@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Findchildren | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: findChildren | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f3c62271f6324e50a68de393cfa668c69ba4a935
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837822"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741299"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Ruft die untergeordneten Elemente des Symbols ab.
@@ -36,25 +36,25 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>Parameter
  `symtag`
 
-[in] Gibt die symboltags an der untergeordneten Elemente abgerufen werden soll, gemäß der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md). Legen Sie auf `SymTagNull` für alle untergeordneten Elemente abgerufen werden sollen.
+in Gibt die Symbol Tags der untergeordneten Elemente an, die abgerufen werden sollen, wie in der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)definiert. Legen Sie auf `SymTagNull` fest, damit alle untergeordneten Elemente abgerufen werden.
 
  `name`
 
-[in] Gibt den Namen der untergeordneten Elemente abgerufen werden sollen. Legen Sie auf `NULL` für alle untergeordneten Elemente abgerufen werden sollen.
+in Gibt den Namen der untergeordneten Elemente an, die abgerufen werden sollen. Legen Sie auf `NULL` fest, damit alle untergeordneten Elemente abgerufen werden.
 
  `compareFlags`
 
-[in] Gibt die Vergleichsoptionen, die auf Namen angewendet. Werte aus der [NameSearchOptions-Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) -Enumeration können alleine oder zusammen verwendet werden.
+in Gibt die auf die namens Übereinstimmung angewendeten Vergleichs Optionen an Werte aus der Enumeration-Enumeration von [NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) können allein oder in Kombination verwendet werden.
 
  `ppResult`
 
-[out] Gibt eine [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt, das eine Liste der untergeordneten Symbole enthält abgerufen.
+vorgenommen Gibt ein [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt zurück, das eine Liste der abgerufenen untergeordneten Symbole enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols wurde gefunden, oder gibt zurück, `S_FALSE` , wenn keine untergeordneten Elemente gefunden wurden; andernfalls einen Fehlercode zurückgegeben.
+ Gibt `S_OK` zurück, wenn mindestens ein untergeordnetes Element des Symbols gefunden wurde, oder gibt `S_FALSE` zurück, wenn keine untergeordneten Elemente gefunden wurden. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Diese Methode entspricht dem Aufrufen der [idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md) -Methode mit diesem Symbol als ersten Parameter.
+ Diese Methode ist identisch mit dem Aufruf der [IDiaSession:: findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md) -Methode mit diesem Symbol als ersten Parameter.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

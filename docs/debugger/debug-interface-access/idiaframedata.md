@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d586cfe3e78a320ffed42e7181463eb79a6b313a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830294"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743469"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
-Stellt die Details zu einem Stapelrahmen.
+Macht die Details eines Stapel Rahmens verfügbar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,37 +29,37 @@ IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
-Die folgende Tabelle zeigt die Methoden der `IDiaFrameData`.
+In der folgenden Tabelle sind die Methoden von `IDiaFrameData` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Ruft den Abschnitt in der Codeadresse für den Frame ab.|
-|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Ruft den Zeitzonenoffset-Teil der Codeadresse für den Frame ab.|
-|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Ruft das Bild relative virtuelle Adresse (RVA) des Codes für den Frame ab.|
+|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Ruft den Abschnitts Teil der Code Adresse für den Frame ab.|
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Ruft den Offset Teil der Code Adresse für den Frame ab.|
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Ruft die Bild relative virtuelle Adresse (RVA) des Codes für den Frame ab.|
 |[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Ruft die virtuelle Adresse (VA) des Codes für den Frame ab.|
-|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Ruft die Länge in Bytes der Codeblock durch den Frame beschrieben ab.|
-|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Ruft die Anzahl der Bytes der lokalen Variablen, die auf dem Stapel abgelegt.|
-|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Ruft die Anzahl der Bytes von Parametern, die auf dem Stapel abgelegt.|
-|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Ruft die maximale Anzahl von Bytes, die auf dem Stapel im Frame abgelegt.|
-|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Ruft die Anzahl der Bytes der Prolog-Code im Block.|
-|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Ruft die Anzahl der Bytes der gespeicherten Register, die auf dem Stapel abgelegt.|
-|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Ruft ab, die Programm-Zeichenfolge, die zum Berechnen der Registrierung festlegen, bevor der Aufruf von der aktuellen Funktion verwendet wird.|
-|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Ruft wird ein Flag, das diese Ausnahmebehandlung System gibt an, in Kraft.|
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Ruft ein Flag, das angibt, C++-Ausnahmebehandlung verwendet wirksam wird.|
-|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Ruft ein Flag, das zeigt an, dass der Block den Einstiegspunkt einer Funktion enthält.|
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Ruft ein Flag, das zeigt an, dass der basiszeiger für Code in dieser Adressbereich zugeordnet ist. Diese Methode ist veraltet.|
-|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Ruft den compilerspezifischen Frametyp ab.|
-|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Ruft frame-Data-Schnittstelle für eine einschließende Funktion.|
-|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Führt die stapelentladung und gibt den aktuellen Status von Registern in einer Stackwalk-Frame-Schnittstelle zurück.|
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Ruft die Länge des Codeblocks, der vom Frame beschrieben wird, in Bytes ab.|
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Ruft die Anzahl der Bytes der lokalen Variablen ab, die auf dem Stapel abgelegt werden.|
+|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Ruft die Anzahl der Bytes von Parametern ab, die auf dem Stapel abgelegt werden.|
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Ruft die maximale Anzahl von Bytes ab, die auf dem Stapel im Frame abgelegt werden.|
+|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Ruft die Anzahl der Bytes des prologcodes im-Block ab.|
+|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Ruft die Anzahl der Bytes gespeicherter Register auf dem Stapel ab.|
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Ruft die Programm Zeichenfolge ab, die verwendet wird, um den Register Satz vor dem aufgerufenen der aktuellen Funktion zu berechnen.|
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Ruft ein Flag ab, das angibt, dass die System Ausnahmebehandlung wirksam ist.|
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Ruft ein Flag ab, das angibt C++ , dass die Ausnahmebehandlung wirksam ist.|
+|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Ruft ein Flag ab, das angibt, dass der-Block den Einstiegspunkt einer Funktion enthält.|
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Ruft ein Flag ab, das angibt, dass der Basis Zeiger für den Code in diesem Adressbereich zugeordnet wird. Diese Methode ist veraltet.|
+|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Ruft den compilerspezifischen Rahmentyp ab.|
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Ruft die Frame-Datenschnittstelle für die einschließende Funktion ab.|
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Führt die Stapel Auflösung aus und gibt den aktuellen Status von Registern in einer Stapel Durchlauf-Frame Schnittstelle zurück.|
 
 ## <a name="remarks"></a>Hinweise
- Die Details für einen Frame verfügbar sind für die der Ausführungspunkte innerhalb des Adressbereichs, der durch die Adresse und Block-Länge angegeben.
+ Die für einen Frame verfügbaren Details gelten für Ausführungs Punkte innerhalb des Adress Bereichs, der durch die Adresse und Blocklänge angegeben wird.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumframedata:: Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) oder [idiaenumframedata:: Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) Methoden. Finden Sie unter den [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) Schnittstelle für Details.
+ Rufen Sie diese Schnittstelle durch Aufrufen der [IDiaEnumFrameData:: Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) -Methode oder der [IDiaEnumFrameData:: Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) -Methode ab. Weitere Informationen finden Sie in der [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) -Schnittstelle.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel gibt die Eigenschaften einer `IDiaFrameData` Objekt. Finden Sie unter den [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) Schnittstelle für ein Beispiel dafür, wie die `IDiaFrameData` Schnittstelle abgerufen wird.
+ In diesem Beispiel werden die Eigenschaften eines `IDiaFrameData`-Objekts ausgegeben. In der [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) -Schnittstelle finden Sie ein Beispiel dafür, wie die `IDiaFrameData`-Schnittstelle abgerufen wird.
 
 ```C++
 void PrintFrameData(IDiaFrameData* pFrameData){
@@ -115,7 +115,7 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ## <a name="requirements"></a>Anforderungen
 Header: Dia2.h
 
-Bibliothek: diaguids.lib
+Bibliothek: diaguids. lib
 
 DLL: msdia80.dll
 

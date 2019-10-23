@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fff76abdecdd8613a462225278053ef4f6d9694
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829731"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745479"
 ---
 # <a name="basictype"></a>BasicType
-Gibt an, die grundlegende Symboltyp.
+Gibt den Basistyp des Symbols an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -50,44 +50,44 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elements
-BtNoType kein Basistyp angegeben ist.
+btnotype: Es wurde kein Basistyp angegeben.
 
-BtVoid Basistyp ist eine `void`.
+der Typ "btvoid Basic" ist eine `void`.
 
-BtChar Basistyp ist eine `char` (C /C++ Typ).
+der Typ "btchar Basic" ist eine `char`C++ (C/Typ).
 
-BtWChar Basistyp ist ein Breitzeichen (Unicode) ist (`WCHAR`).
+der Typ "btwchar Basic" ist ein breit Zeichen (Unicode) (`WCHAR`).
 
-BtInt Basistyp ist `signed int` (C /C++ Typ).
+der Typ "btint Basic" ist `signed int`C++ (C/Typ).
 
-BtUInt Basistyp ist `unsigned int` (C /C++ Typ).
+der Typ "btuint Basic" ist `unsigned int`C++ (C/Typ).
 
-BtFloat Basistyp ist eine Gleitkommazahl (`FLOAT`).
+der btfloat-Basistyp ist eine Gleit Komma Zahl (`FLOAT`).
 
-BtBCD Basistyp ist eine Dezimalzahl Binär codierte (`BCD`).
+der btbcd-Basistyp ist ein Binär codiertes Dezimaltrennzeichen (`BCD`).
 
-BtBool Basistyp ist ein boolescher Wert (`BOOL`).
+der Typ "btbool Basic" ist ein boolescher Wert (`BOOL`).
 
-BtLong Basistyp ist eine `long int` (C /C++ Typ).
+der Basistyp btlong ist ein `long int` (CC++ /Type).
 
-BtULong Basistyp ist ein `unsigned long int` (C /C++ Typ).
+der Typ "btulong Basic" ist ein `unsigned long int`C++ (C/Typ).
 
-BtCurrency Basistyp ist die Währung.
+btcurrency Basic-Typ ist Currency.
 
-BtDate Basistyp ist die Datum/Uhrzeit (`DATE`).
+der btdate-Basistyp ist "Date/Time" (`DATE`).
 
-BtVariant Basistyp ist eine Variable vom Typ-Struktur (`VARIANT`).
+der btvariant-Basistyp ist eine Variablentyp Struktur (`VARIANT`).
 
-BtComplex Basistyp ist die komplexe Zahl.
+der Typ "btcomplex Basic" ist eine komplexe Zahl.
 
-BtBit Basistyp ist ein wenig.
+der Typ "btbit Basic" ist ein Bit.
 
-BtBSTR Basistyp ist eine grundlegende oder binäre Zeichenfolge (`BSTR`).
+der btbstr-Basistyp ist eine einfache oder binäre Zeichenfolge (`BSTR`).
 
-BtHresult Basistyp ist ein `HRESULT`.
+der Basistyp bthresult ist eine `HRESULT`.
 
 ## <a name="remarks"></a>Hinweise
-Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) Methode.
+Die Werte in dieser Enumeration werden von der [idiasymmetribol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) -Methode zurückgegeben.
 
 ## <a name="requirements"></a>Anforderungen
 Header: cvconst.h

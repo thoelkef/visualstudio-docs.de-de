@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_virtualaddress | Microsoft-Dokumentation'
+title: 'IDiaSegment:: get_virtualAddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94958fb51f6742bf07cc5a4cd34da059c05adc23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839406"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742357"
 ---
-# <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-Ruft die virtuelle Adresse (VA), der den Anfang des Abschnitts ab.
+# <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
+Ruft die virtuelle Adresse (VA) am Anfang des Abschnitts ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die VA des Anfangs des Abschnitts zurück.
+vorgenommen Gibt das VA am Anfang des Abschnitts zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

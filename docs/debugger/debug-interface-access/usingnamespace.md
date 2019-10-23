@@ -1,5 +1,5 @@
 ---
-title: UsingNameSpace | Microsoft-Dokumentation
+title: Usingnamespace | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,29 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1524348bf94af681b5761ca42cb4fac911f359f7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9d078e8af5f579556fb865a4d92084220afecc83
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803393"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738439"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
-Einige Symbole möglicherweise vom Namespace bezeichnet werden, und würden anschließend identifiziert werden eine `SymTagUsingNameSpace` Tag.
+Auf einige Symbole kann von Namespace verwiesen werden, und Sie werden anschließend durch ein `SymTagUsingNameSpace`-Tag identifiziert.
 
 > [!NOTE]
-> UsingNamespace-Symboltag wird nur in verwaltetem Code.
+> Das usingnamespace-symboltag wird nur in verwaltetem Code angezeigt.
 
 ## <a name="properties"></a>Eigenschaften
- Die folgende Tabelle zeigt die Eigenschaften, die für diesen Symboltyp gültig sind.
+ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die für diesen Symboltyp gültig sind.
 
-|Eigenschaft|Datentyp|Beschreibung|
+|property|Datentyp|Beschreibung|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol für die einschließende Kompiliereinheit, blockieren oder Funktion.|
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Die ID des lexikalischen übergeordneten Symbols.|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol für das einschließende compilerblock, den Block oder die Funktion.|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID des übergeordneten lexikalischen Symbols.|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Namespacename.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Index-ID des Symbols.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagNameSpace` (eines der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Werte).|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagNameSpace` zurück (einen der [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -Enumerationswerte).|
 
 ## <a name="see-also"></a>Siehe auch
 - [Lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

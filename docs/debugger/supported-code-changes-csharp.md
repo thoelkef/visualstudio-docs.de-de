@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887776"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729090"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte CodeänderungenC# (und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.
@@ -79,7 +79,7 @@ In der folgenden Tabelle sind die Änderungen aufgeführt, die während C# einer
 |Iterators|Ändern eines Iterators in einem Projekt, das auf .NET Framework 4 und niedriger abzielt (siehe [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Unsicherer Code
- Änderungen an unsicherem Code unterliegen denselben Einschränkungen wie Änderungen an sicherem Code, allerdings mit einer zusätzlichen Einschränkung: "Bearbeiten und Fortfahren" unterstützt keine Änderungen an unsicherem Code, der innerhalb `stackalloc` einer Methode beendet wird, die den Operator enthält.
+ Bei Änderungen an unsicherem Code gibt es dieselben Einschränkungen wie bei Änderungen an sicherem Code, es gibt jedoch eine zusätzliche Einschränkung: „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden ist, die den Operator `stackalloc` enthält.
 
 ## <a name="unsupported-app-scenarios"></a>Nicht unterstützte App-Szenarios
 
@@ -95,7 +95,7 @@ Nicht unterstützte apps und Plattformen sind ASP.net 5, Silverlight 5 und Windo
 
 - SQL-Debuggen.
 
-- Debuggen einer Dr. Watson-Sicherungskopie.
+- Debuggen eines Dr. Watson-dumpspeichers.
 
 - Debuggen einer eingebetteten Laufzeitanwendung.
 
@@ -107,4 +107,4 @@ Nicht unterstützte apps und Plattformen sind ASP.net 5, Silverlight 5 und Windo
 
 ## <a name="see-also"></a>Siehe auch
 - [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Vorgehensweise: Verwenden von „Bearbeiten und fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

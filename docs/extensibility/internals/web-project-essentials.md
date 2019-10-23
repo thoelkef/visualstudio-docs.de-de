@@ -1,5 +1,5 @@
 ---
-title: Web-Projekt Essentials | Microsoft-Dokumentation
+title: Essentials-Webprojekt | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,52 +10,52 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f3d3069d8cc539deeda7c9d44f8d1cbf27e8821
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323317"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721672"
 ---
 # <a name="web-project-essentials"></a>Grundlagen von Webprojekten
-Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um eine Webanwendung erstellen, die intelligente Webseiten. Eine intelligente Webseite hat serverseitigem Code, der die Webseite bedarfsgesteuert gerendert wird.
+Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um eine Webanwendung zu erstellen, die über intelligente Webseiten verfügt. Eine intelligente Webseite verfügt über serverseitigen Code, der die Webseite bei Bedarf rendert.
 
- Mit herkömmlichen Programmiersprachen wie [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], können Sie intelligente Webseiten zum Sammeln und Verarbeiten von Informationen von einem Benutzer, in einer Datenbank zu speichern und usw. erstellen.
+ Mithilfe von herkömmlichen Programmiersprachen, wie z. b. [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], können Sie intelligente Webseiten erstellen, um Informationen von einem Benutzer zu erfassen und zu verarbeiten, in einer Datenbank zu speichern usw.
 
-- Der Code-Behind-Modells von Webseiten, die die Datei Erweiterung ASPX ASMX oder abhängige Quellcodedateien zugeordnet. Z. B. möglicherweise hello.aspx die Quelle von abhängiger Code Datei hello.aspx.cs.
+- Das Code Behind-Modell verknüpft abhängige Quell Code Dateien mit Webseiten, die die Dateierweiterung ". aspx" oder ". asmx" aufweisen. Beispielsweise kann "Hello. aspx" die abhängige Quell Code Datei "Hello.aspx.cs" aufweisen.
 
-- Der serverseitige Code eine intelligente Webseite zugeordnet wird in eine ausführbare Datei kompiliert, die in den Ordner der Website "/ bin" befindet.
+- Der serverseitige Code, der einer intelligenten Webseite zugeordnet ist, wird in eine ausführbare Datei kompiliert, die sich im Ordner "Website"/bin "" befindet.
 
-- Zusätzliche Quellcodedateien, z. B. Hilfsklassen, die nicht mit einer bestimmten Webseite verknüpft sind befinden sich in den Ordner der Website kann.
+- Zusätzliche Quell Code Dateien, z. b. Hilfsklassen, die keiner bestimmten Webseite zugeordnet sind, befinden sich im Ordner Website/App_Code.
 
-  - Ein Websiteprojekt (WSP) generiert eine ausführbare Datei für jedes smart-Webseite. Weitere ausführbare Dateien werden von alle Quellcodedateien im Ordner "kann" generiert.
+  - Ein Website Projekt (WSP) generiert eine ausführbare Datei für jede intelligente Webseite. Aus beliebigen Quell Code Dateien im Ordner/App_Code werden zusätzliche ausführbare Dateien generiert.
 
-  - Ein Webanwendungsprojekt (WAP) erzeugt eine einzelne ausführbare Datei, die den Code für alle smart Webseiten als auch alle Quelldateien im Ordner "kann" kombiniert.
+  - Ein Webanwendungs Projekt (WAP) erzeugt eine einzelne ausführbare Datei, die den Code für alle intelligenten Webseiten sowie alle Quelldateien im Ordner "/App_Code" kombiniert.
 
-- Die Projektmappendatei für ein Webprojekt befindet sich unabhängig von der Website selbst. Standardmäßig befinden sich Projektmappendateien unter \Documents and Settings\\*Ihrkonto*\My Dokumente\\ *\<Visual Studio ### >* \Projects\\ *YourWebSite*.
+- Die Projektmappendatei für ein Webprojekt befindet sich separat von der Website selbst. Standardmäßig befinden sich Projektmappendateien unter \Documents und Settings \\*YourAccount*\Eigene Dokumente \\ *\<Visual Studio #* # # > \projects \\*yourwebsite*.
 
   > [!NOTE]
-  > Wenn Sie die Projektmappendatei mit der Website beibehalten möchten, es verschieben und öffnen Sie es erneut.
+  > Wenn Sie die Projektmappendatei auf der Website aufbewahren möchten, verschieben Sie Sie einfach dorthin, und öffnen Sie Sie erneut.
 
-- Wenn Sie eine Website, die keine Projektmappendatei in Visual Studio verfügt öffnen, wird eine neue Projektmappendatei automatisch für sie generiert.
+- Wenn Sie eine Website öffnen, die keine Projektmappendatei in Visual Studio enthält, wird automatisch eine neue Projektmappendatei generiert.
 
-- Webprojekte haben keine Projektdateien. Projektinformationen werden in die Projektmappendatei, die Datei "Web.config" und an anderer Stelle gespeichert.
+- Webprojekte haben keine Projektdateien. Die Projektinformationen werden in der Projektmappendatei, der Datei "Web. config" und an anderer Stelle gespeichert.
 
-- Automatisches Hinzufügen von globalen Eigenschaften mit einem Webprojekt erstellt eine Speicherdatei in den Projektmappenordner der Web-Projekt.
+- Durch das Hinzufügen globaler Eigenschaften zu einem Webprojekt wird automatisch eine Speicherdatei im Projektmappen-Ordner des Webprojekts erstellt.
 
-- Eine intelligente Webseite kann mithilfe der Page-Direktive einer serverseitigen Programmiersprache zugeordnet werden oder die \<Skript Runat = "Server" > Tag.
+- Eine intelligente Webseite kann mit einer serverseitigen Programmiersprache verknüpft werden, indem die Page-Direktive oder der \<script runat = "Server" > Tag verwendet wird.
 
-- Darüber hinaus können Webseiten eine beliebige Anzahl von Client-Side scripting Blöcke in jeder Skriptsprache geschrieben haben.
+- Darüber hinaus können Webseiten über eine beliebige Anzahl von Client seitigen Skript Blöcken verfügen, die in einer beliebigen Skriptsprache geschrieben wurden.
 
-- Ein Website-Projektsystem wird durch Hinzufügen von Projekt- und Elementvorlagen und Registrierung implementiert die [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] Projekt.
+- Ein Website Projekt System wird implementiert, indem Projekt-und Element Vorlagen und die Registrierung für das [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] Projekt hinzugefügt werden.
 
-- Ein WAP-System wird als einem Projektuntertyp, die so genannte ein Projektkonfiguration implementiert. Die [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] Projekt ist flavored, durch den WAP-Untertyp, der WAP-System zu erstellen. Weitere Informationen zu Projektuntertypen, finden Sie unter [Projektuntertypen](../../extensibility/internals/project-subtypes.md).
+- Ein WAP-System wird als Projekt Untertyp implementiert, auch als Projekt Konfiguration bezeichnet. Das [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)]-Projekt wird durch den WAP-Untertyp zum Erstellen des WAP-Systems hinzu. Weitere Informationen zu Projekt Untertypen finden Sie unter [Projekt Untertypen](../../extensibility/internals/project-subtypes.md).
 
-- Eine intelligente Webseite kombiniert HTML mit einer serverseitigen Programmiersprache. Die serverseitigen Sprache wird die enthaltende Sprache bezeichnet. Um einer enthaltenen Sprache zu unterstützen, muss die Web-Projektsystem implementieren die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Familie von Schnittstellen.
+- Eine intelligente Webseite kombiniert HTML mit einer serverseitigen Programmiersprache. Die serverseitige Sprache wird als enthaltene Sprache bezeichnet. Um eine enthaltene Sprache zu unterstützen, muss das Webprojekt System die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Familie von Schnittstellen implementieren.
 
-  - Um die enthaltende Sprache in einem Editor zu unterstützen, muss HTML-Sprachdiensts verzögern enthaltenen Sprachcode an einen Dienst für die enthaltende Sprache angezeigt.
+  - Um die enthaltene Sprache in einem Editor zu unterstützen, muss der HTML-Sprachdienst die Anzeige von enthaltendem Sprachcode in einem enthaltenen Sprachdienst verzögern.
 
-  - Fehlermarker (rote, wellenförmige Unterstreichung) müssen immer im primären Puffer des Code-Editor erstellt werden.
+  - Fehler Marker (rote Wellenlinien) sollten immer im primären Puffer des Code-Editors erstellt werden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Webprojekte](../../extensibility/internals/web-projects.md)

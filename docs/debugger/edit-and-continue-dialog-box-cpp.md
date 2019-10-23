@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren (Dialogfeld) (C++) | Microsoft-Dokumentation
+title: Dialog Feld "Bearbeiten und fortC++fahren" () | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d708b4f74777fb40eccc2fef9b782689f830e092
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851423"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737971"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Bearbeiten und Fortfahren (Dialogfeld) (C++)
 Mit der Funktion „Bearbeiten und Fortfahren“ konnten die von Ihnen vorgenommenen Änderungen am nativen Code nicht übernommen werden. Dies ist möglicherweise ein temporäres Problem. Manchmal können mit "Bearbeiten und Fortfahren" Änderungen an systemeigenem Code nicht sofort übernommen werden. Dies kann aber zu einem späteren Zeitpunkt bei der Debugsitzung erfolgen (z. B. nach Abschluss des aktuellen Aufrufs an die derzeit ausgeführte Prozedur). Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).

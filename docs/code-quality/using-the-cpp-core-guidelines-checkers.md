@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: 875c4767304b1eb0f27b6a6a68a750698f8d7676
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445656"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745846"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
 
@@ -131,7 +131,7 @@ Diese Makros entsprechen den Regelsätzen und werden in eine durch Leerzeichen g
 
 ## <a name="attributes"></a>Attribute
 
-Der Microsoft Visual C++ Compiler bietet eingeschränkte Unterstützung für das gsl-Unterbrechungs Attribut. Sie kann verwendet werden, um Warnungen für Ausdrucks-und Block Anweisungen innerhalb einer Funktion zu unterdrücken.
+Der Microsoft C++ -Compiler bietet eingeschränkte Unterstützung für das gsl-Unterbrechungs Attribut. Sie kann verwendet werden, um Warnungen für Ausdrucks-und Block Anweisungen innerhalb einer Funktion zu unterdrücken.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.

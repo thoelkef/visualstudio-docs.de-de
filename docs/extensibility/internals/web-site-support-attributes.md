@@ -1,5 +1,5 @@
 ---
-title: Attribute der Websiteunterstützung | Microsoft-Dokumentation
+title: Attribute für die Website Unterstützung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,49 +10,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a508acaf174e5e4e4b4b615e5f38c600f0669ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07486ea3a962bcb81f65ad0b61ea2e41b3248678
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323387"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721610"
 ---
 # <a name="web-site-support-attributes"></a>Attribute der Websiteunterstützung
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Websiteprojekt kann erweitert werden, um Unterstützung für Web bietet Programmiersprachen zu vergleichen. Die Sprache muss selbst registrieren, mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit Projektvorlagen angezeigt werden können, in der **neue Website** im Dialogfeld, wenn die Sprache ausgewählt ist.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Website Projekt kann erweitert werden, um Unterstützung für webprogrammier Sprachen bereitzustellen. Die Sprache muss sich selbst bei [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registrieren, damit Projektvorlagen im Dialogfeld **neue Website** angezeigt werden können, wenn die Sprache ausgewählt ist.
 
-Das IronPython Studio-Beispiel enthält der Support-Website. Das Beispiel enthält die folgenden Attributklassen zum Registrieren von IronPython als eine Codebehind-Sprache für die neue Web-Projekte.
+Das IronPython Studio-Beispiel enthält Website Unterstützung. Das Beispiel enthält die folgenden Attribut Klassen, um IronPython als Code Behind-Sprache für neue Webprojekte zu registrieren.
 
-## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute
- Dieses Attribut befindet sich auf das Sprachprojekt. Die Liste der Web-Programmiersprachen, in der Sprache hinzugefügt der **Sprache** Liste der **neue Website** Dialogfeld. Der folgende Code fügt beispielsweise IronPython der Liste an:
+## <a name="websiteprojectattribute"></a>Websiteprojectattribute
+ Dieses Attribut wird in das Sprachprojekt eingefügt. Die Sprache wird der Liste der webprogrammier Sprachen in der Liste **Sprache** im Dialogfeld **neue Website** hinzugefügt. Mit dem folgenden Code wird beispielsweise IronPython zur Liste hinzugefügt:
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- Dieses Attribut legt auch fest, den Vorlagenpfad zum Ordner "Templates" verweisen. Weitere Informationen zu den Speicherort der Ordner "Templates", finden Sie unter [Vorlagen für die Websiteunterstützung](../../extensibility/internals/web-site-support-templates.md).
+ Dieses Attribut legt auch den Vorlagen Pfad so fest, dass er auf den Vorlagen Ordner verweist. Weitere Informationen zum Speicherort des Ordners "Vorlagen" finden Sie [unter Vorlagen für Website Unterstützung](../../extensibility/internals/web-site-support-templates.md).
 
-## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- Dieses Attribut befindet sich auf das Sprachprojekt. Es ermöglicht das Websiteprojekt zu schachteln, einen Dateityp (verknüpft) unter einem anderen Dateityp (primär) in der **Projektmappen-Explorer**.
+## <a name="websiteprojectrelatedfilesattribute"></a>Websiteprojectrelatedfilesattribute
+ Dieses Attribut wird in das Sprachprojekt eingefügt. Dadurch kann das Website Projekt einen Dateityp (Related) unter einem anderen Dateityp (primär) im **Projektmappen-Explorer**Schachteln.
 
- Der folgende Code gibt beispielsweise, dass eine IronPython-Codebehind-Datei mit einer ASPX-Datei verknüpft ist. Wenn eine neue ASPX-Webseite in einer Projektmappe der IronPython-Web-Standort erstellt wird, wird eine neue .py-Quelldatei wird generiert und als untergeordneter Knoten der ASPX-Seite angezeigt wird.
+ Der folgende Code gibt z. b. an, dass eine IronPython-Code Behind-Datei mit einer ASPX-Datei verknüpft ist. Wenn eine neue ASPX-Webseite in einer IronPython-Website Lösung erstellt wird, wird eine neue py-Quelldatei generiert und als untergeordneter Knoten der ASPX-Seite angezeigt.
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
-## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- Dieses Attribut wird auf das Sprachpaket für das Projekt eingefügt. Er wählt den IntelliSense-Anbieter für die Sprache aus.
+## <a name="provideintellisenseproviderattribute"></a>Provideintellisentsproviderattribute
+ Dieses Attribut wird im Sprachprojekt Paket abgelegt. Er wählt den IntelliSense-Anbieter für die Sprache aus.
 
- Der folgende Code gibt beispielsweise an, dass eine Instanz von PythonIntellisenseProvider, die implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, bei Bedarf auf Sprachdienste bieten erstellt werden soll.
+ Der folgende Code gibt z. b. an, dass eine Instanz von pythonintellisenseprovider, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> implementiert, bei Bedarf erstellt werden soll, um Sprachdienste bereitzustellen.
 
 ```
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]
 public class PythonPackage : Package, IOleComponent
 ```
 
- Die IVsIntellisenseProject-Implementierung Verweise verarbeitet und ruft den Compiler auf, wenn eine Webseite mit Code angefordert, aber nicht zwischengespeichert.
+ Die ivsintellisenseproject-Implementierung behandelt Verweise und ruft den sprach Compiler auf, wenn eine Webseite mit Code angefordert, jedoch nicht zwischengespeichert wird.
 
 ## <a name="see-also"></a>Siehe auch
 - [Websiteunterstützung](../../extensibility/internals/web-site-support.md)

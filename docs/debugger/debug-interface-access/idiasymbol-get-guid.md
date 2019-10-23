@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_guid | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_guid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0fe27279c1f973743813cae00827a8ff063af4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e0618c3bf0c06ba0b529004f38985fd5dd90d688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796434"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740610"
 ---
-# <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
-Ruft das Symbol der global eindeutige Bezeichner (GUID) ab.
+# <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
+Ruft die Globally Unique Identifier des Symbols (GUID) ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_guid ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt das Symbol des GUID zurück.
+vorgenommen Gibt die GUID des Symbols zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK V7. 0|
+|Version:|Dia SDK v 7.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

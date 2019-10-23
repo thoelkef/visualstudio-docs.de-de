@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1b69dbd7e502340e7d563523288a095b733c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70265976e5c6e7c2b3f536f2b8648aaba44df528
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830258"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743859"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
-Ruft die vorherige Symbole in der Reihenfolge nach Adresse ab.
+Ruft die vorherigen Symbole in der Order by-Adresse ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,21 +35,21 @@ HRESULT Prev ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der Symbole in der Enumerator abgerufen werden sollen.
+in Die Anzahl der Symbole im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Ein Array, das mit gefüllt werden soll [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekte, die die gewünschten Symbole darstellen.
+vorgenommen Ein Array, das mit [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekten gefüllt werden soll, die die gewünschten Symbole darstellen.
 
  pceltFetched
 
-[out] Gibt die Anzahl der Symbole in der abgerufenen Enumerator zurück.
+vorgenommen Gibt die Anzahl der Symbole im abgerufenen Enumerator zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine vorherigen Symbole. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine vorherigen Symbole vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Diese Methode aktualisiert die Position des Enumerators durch die Anzahl der Elemente abgerufen.
+ Diese Methode aktualisiert die enumeratorposition um die Anzahl der abgerufenen Elemente.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

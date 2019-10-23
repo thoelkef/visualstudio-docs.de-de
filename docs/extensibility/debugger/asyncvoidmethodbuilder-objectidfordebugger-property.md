@@ -1,5 +1,5 @@
 ---
-title: AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft | Microsoft-Dokumentation
+title: Asyncvoidmethodbuilder. objectidfordebugger-Eigenschaft | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f4e7fe2a61d2277884920045e3bfce80dd26be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dc396a40dd90b33d43d5c0857213551bfe8fd242
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350963"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727777"
 ---
-# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft
-Ruft ein Objekt, das zur eindeutigen Identifizierung von diesem Generator für den Debugger verwendet werden kann.
+# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Asyncvoidmethodbuilder. objectidfordebugger-Eigenschaft
+Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.
 
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in "mscorlib.dll")
+ **Assembly:** mscorlib (in "mscorlib. dll")
 
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
+ Da Sie nicht auf dieses interne Element vom .NET Framework aus zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,4 +34,4 @@ private object ObjectIdForDebugger
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [Merkmale von parallelen Erweiterung für .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Parallele Erweiterungs internale für die .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

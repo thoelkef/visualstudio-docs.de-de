@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByAddr | Microsoft-Dokumentation
+title: 'IDiaSession:: findinlineframesbyaddr | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0f35f845642089a8ee2b14c6047e809d525e5bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4839f19979da472c9a5515f0b8535464be8d92db
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827527"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742169"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Ruft eine Enumeration, die einem Client zum iterieren durch alle Inlineframes auf einer bestimmten Adresse ermöglicht.
+Ruft eine Enumeration ab, mit der ein Client alle Inline Rahmen einer bestimmten Adresse durchlaufen kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,22 +33,22 @@ HRESULT findInlineFramesByAddr ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein `IDiaSymbol` Objekt, das das übergeordnete Element darstellt.
+in Ein `IDiaSymbol`-Objekt, das das übergeordnete Element darstellt.
 
  `isect`
 
-[in] Gibt die Komponente im Abschnitt der Adresse.
+in Gibt die Abschnitts Komponente der Adresse an.
 
  `offset`
 
-[in] Gibt die Offset-Komponente der Adresse.
+in Gibt die Offset Komponente der Adresse an.
 
  `ppResult`
 
-[out] Enthält eine `IDiaEnumSymbols` Objekt, das die Liste der Frames enthält, die abgerufen werden.
+vorgenommen Enthält ein `IDiaEnumSymbols` Objekt, das die Liste der abgerufenen Frames enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_numberOfAcceleratorPointerTags | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47c5827348c7b7cb450017a0e6176d71f555c841
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835773"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739701"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Gibt die Anzahl der Tags von Accelerator-Zeiger in einer C++ AMP-Stub-Funktion zurück.
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+Gibt die Anzahl von Zugriffstasten-Zeiger Tags C++ in einer amp-Stub-Funktion zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,13 +30,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Parameter
  `count`
 
-[out] Ein Zeiger auf eine `DWORD` , enthält die Anzahl der Zugriffstaste Zeiger-Tags in einem C++ AMP-Stub-Funktion.
+vorgenommen Ein Zeiger auf eine `DWORD`, die die Anzahl von Zugriffstasten-Zeiger Tags C++ in einer amp-stubfunktion enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Diese Methode wird aufgerufen, auf eine `IDiaSymbol` Schnittstelle, die eine C++-AMP-Beschleuniger Stub-Funktion entspricht.
+ Diese Methode wird für eine `IDiaSymbol`-Schnittstelle aufgerufen, die C++ einer amp-Accelerator-stubfunktion entspricht.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

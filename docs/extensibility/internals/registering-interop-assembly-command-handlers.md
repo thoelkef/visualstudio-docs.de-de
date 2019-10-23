@@ -1,5 +1,5 @@
 ---
-title: Registrieren der Befehlshandler von Interop-Assembly | Microsoft-Dokumentation
+title: Registrieren von Interop-Assembly-Befehls Handlern | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,30 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e90ffc6b065b6d69bbe09bfe1887764ccc9955
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbc0d162a11df034bec4d1f357ef8abd106da401
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724690"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrieren der Befehlshandler von Interop-Assemblys
-Eine VSPackage muss zaregistrovat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit die integrierte Entwicklungsumgebung (IDE) seine Befehle ordnungsgemäß weiterleitet.
+Ein VSPackage muss bei [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registriert werden, damit die integrierte Entwicklungsumgebung (IDE) seine Befehle ordnungsgemäß weiterleitet.
 
- Die Registrierung kann entweder durch die manuelle Bearbeitung oder über eine Registrierungsstelle (.rgs)-Datei aktualisiert werden. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
+ Die Registrierung kann entweder per manueller Bearbeitung oder mithilfe einer Registrierungsstelle (RGS-Datei) aktualisiert werden. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
- Das Managed Package Framework (MPF) stellt diese Funktionalität über die <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> Klasse.
+ Das Managed Package Framework (MPF) stellt diese Funktionalität durch die <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>-Klasse bereit.
 
-- [Tabelle Formatreferenz für Blobüberwachungsprotokolle Befehl](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) Ressourcen befinden sich im nicht verwalteten Satelliten-UI-Dlls.
+- [Referenz Ressourcen des Befehls Tabellen Formats](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) befinden sich in nicht verwalteten Satelliten-UI-DLLs.
 
-## <a name="command-handler-registration-of-a-vspackage"></a>Befehl Registrierung von VSPackages
- Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle erfordert einen Registrierungseintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei an. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version >* \Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 9.0.
+## <a name="command-handler-registration-of-a-vspackage"></a>Befehls Handler-Registrierung eines VSPackages
+ Ein VSPackage, das als Handler für Benutzeroberflächen basierte Befehle fungiert, erfordert einen Registrierungs Eintrag namens nach dem VSPackage-`GUID`. Dieser Registrierungs Eintrag gibt den Speicherort der UI-Ressourcen Datei des VSPackages und die Menü Ressource in dieser Datei an. Der Registrierungs Eintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ *\<Version >* \menüs, wobei *\<Version >* die Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist, z. b. 9,0.
 
 > [!NOTE]
-> Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Shell initialisiert wird. Weitere Informationen zu den Stammpfad, finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Der Stammpfad von HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<Version >* kann mit einem alternativen Stamm überschrieben werden, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell initialisiert wird. Weitere Informationen zum Stammpfad finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
-### <a name="the-ctmenu-resource-registry-entry"></a>Der Registrierungseintrag für CTMENU-Ressource
- Die Struktur des Registrierungseintrags lautet:
+### <a name="the-ctmenu-resource-registry-entry"></a>Der ctmenu-Ressourcen Registrierungs Eintrag
+ Die Struktur des Registrierungs Eintrags lautet:
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
@@ -42,22 +42,22 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>
 ```
 
- \<*GUID*> ist der `GUID` des VSPackage in der Form {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.
+ \<*GUID*> ist die `GUID` des VSPackage in der Form {xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx}.
 
- *\<Informationen zur Ressource >* besteht aus drei Elementen, die durch Kommas getrennt. Diese Elemente sind in der Reihenfolge auf:
+ *\<Resource Informationen >* bestehen aus drei durch Kommas getrennten Elementen. Diese Elemente sind in der angegebenen Reihenfolge:
 
- \<*Pfad zur Ressourcen-DLL*>, \< *Menü-Ressourcen-ID*>, \< *Menü-Version*>
+ \<*Pfad zur Ressourcen-DLL*->, \<*Menü Ressourcen-ID*>, \<*Menü Version* >
 
- Die folgende Tabelle beschreibt die Felder der \< *Ressourceninformationen*>.
+ In der folgenden Tabelle werden die Felder \<*Ressourcen Informationen*> beschrieben.
 
 | Element | Beschreibung |
 |---------------------------| - |
-| \<*Pfad zur Ressourcen-DLL*> | Dies ist der vollständige Pfad zu den Ressourcen-DLL, die die Menüressource enthält oder diese leer gelassen, gibt an, dass die VSPackage Ressource DLL ist, verwendet werden (gemäß des Unterschlüssels "Pakete", in das VSPackage selbst registriert ist).<br /><br /> Es ist üblich, die dieses Feld leer lassen. |
-| \<*Menü-Ressourcen-ID*> | Dies ist die Ressourcen-ID der `CTMENU` Ressource, die alle Elemente der Benutzeroberfläche für das VSPackage enthält, wie vom kompiliert einen [VSCT](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) Datei. |
-| \<*Menu Version*> | Dies ist eine Zahl, die als einer Version für die `CTMENU` Ressource. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet diesen Wert um zu bestimmen, ob er den Inhalt der erneutes zusammenführen muss die `CTMENU` Ressource mit dem Cache aller `CTMENU` Ressourcen. Ein erneutes Zusammenführen wird ausgelöst, durch den Devenv-Setup-Befehl ausführen.<br /><br /> Dieser Wert sollte zunächst auf 1 festgelegt und nach jeder Änderung erhöht die `CTMENU` Ressource und vor der erneutes zusammenführen. |
+| \<*Pfad zur Ressourcen-DLL* > | Dies ist der vollständige Pfad zur Ressourcen-DLL, die die Menü Ressource enthält, oder diese ist leer. Dies gibt an, dass die Ressourcen-DLL des VSPackages verwendet werden soll (wie im Paket Unterschlüssel angegeben, in dem das VSPackage selbst registriert ist).<br /><br /> Es ist üblich, dieses Feld leer zu lassen. |
+| \<*Menü Ressourcen-ID* > | Dies ist die Ressourcen-ID der `CTMENU` Ressource, die alle Benutzeroberflächen Elemente für das VSPackage enthält, wie aus einer [vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) -Datei kompiliert. |
+| \<*Menü Version* > | Dies ist eine Zahl, die als Version für die `CTMENU` Ressource verwendet wird. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet diesen Wert, um zu bestimmen, ob der Inhalt der `CTMENU` Ressource mit dem Cache aller `CTMENU` Ressourcen neu zusammengeführt werden muss. Eine erneute Zusammenführung wird durch Ausführen des Befehls "Debug-Setup" ausgelöst.<br /><br /> Dieser Wert sollte zunächst auf 1 festgelegt und nach jeder Änderung in der `CTMENU` Ressource und vor dem erneuten zusammenführen erhöht werden. |
 
 ### <a name="example"></a>Beispiel
- Hier ist ein Beispiel für eine Reihe von Ressourceneinträgen:
+ Im folgenden finden Sie ein Beispiel für eine Reihe von Ressourcen Einträgen:
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\

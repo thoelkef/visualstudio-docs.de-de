@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Windows-API-Funktionen | Microsoft-Dokumentation
+title: Windows-API-Funktionen Debuggen Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cac0524c0d4421c034ebfd6dfa6f61a0e9b589fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894924"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734347"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Wie können Funktionen der Windows-API gedebuggt werden?
 Wenn Sie eine Windows API-Funktion debuggen möchten, in der NT-Symbole geladen sind, müssen Sie wie im Folgenden beschrieben vorgehen.
@@ -40,7 +40,7 @@ Wenn Sie eine Windows API-Funktion debuggen möchten, in der NT-Symbole geladen
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Zum Abrufen des ergänzten Namens finden Sie unter [Anzeigen von ergänzten Namen](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Informationen zum Abrufen des ergänzten Namens finden Sie unter Anzeigen von ergänzten [Namen](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
 
 ## <a name="see-also"></a>Siehe auch
 - [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)

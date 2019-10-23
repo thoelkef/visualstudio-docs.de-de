@@ -1,5 +1,5 @@
 ---
-title: Abfragen der. PDB-Datei | Microsoft-Dokumentation
+title: Abfragen von. PDB-Datei | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a67dc121790acff1f5e39a82a1711317616fc2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855043"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738581"
 ---
 # <a name="querying-the-pdb-file"></a>Abfragen der PDB-Datei
-Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die Art und symbolische Debuginformationen gesammelt, die im Verlauf des kompilieren und verknüpfen das Projekt enthält. Eine PDB-Datei wird erstellt, beim Kompilieren eines C/C++-Programms mit **"/ Zi"** oder **"/ Zi"** oder [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], oder [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] Programmierung mit der **/debug** -Option. Objektdateien enthalten Verweise in die PDB-Datei für Debuginformationen. Weitere Informationen zu Pdb-Dateien, finden Sie unter [PDB-Dateien](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Eine DIA-Anwendung können die folgenden allgemeinen Schritte zum Abrufen von Details zu den verschiedenen Symbolen, Objekte und Datenelemente innerhalb von ein ausführbares Image.
+Bei einer Programm Datenbankdatei (Erweiterung. pdb) handelt es sich um eine Binärdatei, die Typen-und symbolische Debuginformationen enthält, die im Verlauf der Kompilierung und Verknüpfung des Projekts gesammelt werden. Eine PDB-Datei wird erstellt, wenn Sie ein CC++ /Programm mit **/Zi** oder **/Zi** oder einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-, [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-oder [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]-Programm mit der **/Debug** -Option kompilieren. Objektdateien enthalten Verweise auf die PDB-Datei zum Debuggen von Informationen. Weitere Informationen zu PDB-Dateien finden Sie unter [PDB-Dateien](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Eine Dia-Anwendung kann die folgenden allgemeinen Schritte zum Abrufen von Details über die verschiedenen Symbole, Objekte und Datenelemente innerhalb eines ausführbaren Images verwenden.
 
-### <a name="to-query-the-pdb-file"></a>Zum Abfragen der PDB-Datei
+### <a name="to-query-the-pdb-file"></a>So Fragen Sie die PDB-Datei ab
 
-1. Abrufen eine Datenquelle durch das Erstellen einer [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) Schnittstelle.
+1. Rufen Sie eine Datenquelle ab, indem Sie eine [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) -Schnittstelle erstellen.
 
     ```C++
     CComPtr<IDiaDataSource> pSource;
@@ -41,7 +41,7 @@ Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die 
     }
     ```
 
-2. Rufen Sie [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) oder [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) die Debuginformationen geladen.
+2. Nennen Sie [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) oder [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) , um die Debuginformationen zu laden.
 
     ```C++
     wchar_t wszFilename[ _MAX_PATH ];
@@ -55,7 +55,7 @@ Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die 
     }
     ```
 
-3. Rufen Sie [idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) zum Öffnen einer [IDiaSession](../../debugger/debug-interface-access/idiasession.md) für den Zugriff auf die Debuginformationen.
+3. Aufrufen von [IDiaDataSource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) zum Öffnen einer [IDiaSession](../../debugger/debug-interface-access/idiasession.md) , um Zugriff auf die Debuginformationen zu erhalten.
 
     ```C++
     CComPtr<IDiaSession> psession;
@@ -65,7 +65,7 @@ Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die 
     }
     ```
 
-4. Verwenden Sie die Methoden `IDiaSession` Abfrage für die Symbole in der Datenquelle.
+4. Verwenden Sie die Methoden in `IDiaSession`, um die Symbole in der Datenquelle abzufragen.
 
     ```C++
     CComPtr<IDiaSymbol> pglobal;
@@ -75,7 +75,7 @@ Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die 
     }
     ```
 
-5. Verwenden der `IDiaEnum*` Schnittstellen zum Auflisten und Durchsuchen die Symbole oder andere Elemente Debuginformationen.
+5. Verwenden Sie die `IDiaEnum*`-Schnittstellen, um die Symbole oder andere Elemente der Debuginformationen aufzulisten und zu durchsuchen.
 
     ```C++
     CComPtr<IDiaEnumTables> pTables;

@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12752acf75da70fa30666f9b1780256c94bde859
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731624"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-Optimierung und -Debuggen
-**Funktionsweise von Optimierungen in .NET:** Wenn Sie versuchen, Code zu debuggen, es ist einfacher bei, dass Code **nicht** optimiert. Das liegt bei der Code optimiert, Compiler und Laufzeit Änderungen an der ausgegebene Code für die CPU-vornehmen, damit sie schneller ausgeführt, aber eine weniger direkte Zuordnung zu den ursprünglichen Quellcode hat. Dies bedeutet, dass der Debugger sind häufig nicht teilen Sie den Wert der lokalen Variablen und code durchlaufen und Haltepunkte funktionieren möglicherweise nicht wie erwartet.
+**Funktionsweise von Optimierungen in .net:** Wenn Sie versuchen, Code zu debuggen, ist es einfacher, wenn der Code **nicht** optimiert wird. Dies liegt daran, dass beim Optimieren von Code der Compiler und die Laufzeit Änderungen am ausgegebenen CPU-Code vornehmen, sodass er schneller ausgeführt wird, aber eine geringere direkte Zuordnung zum ursprünglichen Quellcode aufweist. Dies bedeutet, dass Debugger häufig nicht den Wert lokaler Variablen erkennen können, und Code Schritte und Haltepunkte funktionieren möglicherweise nicht wie erwartet.
 
-Normalerweise die Release-Buildkonfiguration erstellt optimierten Code und die Debug-Buildkonfiguration nicht. Die `Optimize` MSBuild-Eigenschaft steuert, ob der Compiler angewiesen wird, um Code zu optimieren.
+Normalerweise erstellt die releasebuildkonfiguration optimierten Code und die Debug-Buildkonfiguration nicht. Die `Optimize` MSBuild-Eigenschaft steuert, ob der Compiler aufgefordert wird, Code zu optimieren.
 
-Im .NET-Ökosystem, Code aus der Quelle um CPU-Anweisungen in einem zweistufigen Prozess aktiviert ist: zuerst die C# Compiler den eingegebene Text in ein vorläufiges binäre Formular wird aufgerufen, MSIL konvertiert und schreibt diese in der DLL-Dateien. Später in .NET Runtime diese MSIL konvertiert, um CPU-Anweisungen. Beide Schritte zu einem gewissen Grad optimieren können, aber der zweite Schritt ausgeführt, die von der .NET-Laufzeit führt die wichtigeren Optimierungen.
+Im .NET-Ökosystem wird Code in einem zweistufigen Prozess von der Quelle in die CPU-Anweisungen umgewandelt: zunächst konvertiert C# der Compiler den Text, den Sie eingeben, in eine binäre Binär Form namens MSIL und schreibt diese in DLL-Dateien. Später konvertiert die .NET-Laufzeit diese MSIL in die CPU-Anweisungen. Beide Schritte können zu einem gewissen Grad optimiert werden, aber der zweite Schritt, der von der .NET-Runtime ausgeführt wird, führt zu den signifikanteren Optimierungen.
 
-**Die Option "Unterdrücken JIT-Optimierung beim Laden von Modulen (nur verwaltet)":** Der Debugger eine Option verfügbar gemacht, die steuert, was geschieht, wenn eine DLL, die mit aktivierten Optimierungen kompiliert wird in den Zielprozess geladen. Wenn diese Option deaktiviert ist (Standardstatus), und klicken Sie dann in CPU-Code den MSIL-Code für die .NET Runtime kompiliert wird, die Optimierungen aktiviert bleiben. Wenn die Option aktiviert ist, fordert dann der Debugger an, dass Optimierungen deaktiviert werden.
+**Die Option "JIT-Optimierung beim Laden von Modulen unterdrücken (nur verwaltet)":** Der Debugger macht eine Option verfügbar, die steuert, was geschieht, wenn eine mit Optimierungen kompilierte DLL innerhalb des Ziel Prozesses geladen wird. Wenn diese Option deaktiviert ist (Standardzustand), werden die Optimierungen beim Kompilieren des MSIL-Codes in den CPU-Code von der .NET-Runtime aktiviert. Wenn die Option aktiviert ist, fordert der Debugger an, dass Optimierungen deaktiviert werden.
 
-Finden der **unterdrücken JIT-Optimierung beim Laden von Modulen (nur verwaltet)** wählen Option **Tools** > **Optionen**, und wählen Sie dann die  **Allgemeine** Seite die **Debuggen** Knoten.
+Wenn Sie die Option **JIT-Optimierung beim Laden von Modulen unterdrücken (nur verwaltet)** suchen möchten, wählen Sie Extras  > **Optionen**aus, und **Wählen Sie dann** unter dem Knoten **Debuggen** die Seite **Allgemein** aus.
 
-**Wann sollten Sie diese Option aktivieren:** Aktivieren Sie diese Option, wenn Sie die DLLs aus einer anderen Quelle, z. B. einem Nuget-Paket heruntergeladen haben, und Sie den Code in dieser DLL debuggen möchten. Damit dies funktioniert müssen Sie auch die Symboldatei (PDB) für diese DLL finden.
+**Wann sollten Sie diese Option aktivieren:** Aktivieren Sie diese Option, wenn Sie die DLLs aus einer anderen Quelle (z. b. einem nuget-Paket) heruntergeladen haben und den Code in dieser DLL debuggen möchten. Damit dies funktioniert, müssen Sie auch die Symbol Datei (PDB-Datei) für diese dll finden.
 
-Wenn Sie nur den Code, den Sie lokal erstellen debuggen möchten, empfiehlt es sich, diese Option deaktiviert, da in einigen Fällen durch Aktivieren dieser Option bedeutend Debuggen verlangsamt wird. Es gibt zwei Grund Verlangsamung:
+Wenn Sie nur den Code debuggen möchten, den Sie lokal aufbauen, empfiehlt es sich, diese Option nicht zu deaktivieren. in manchen Fällen wird das Debuggen durch Aktivieren dieser Option erheblich verlangsamt. Für diese langsame Verlangsamung gibt es zwei Gründe:
 
-* Optimierter Code schneller ausgeführt. Wenn Sie deaktiviert Optimierungen für viel Code eingeschaltet sind, kann die Auswirkungen auf die Leistung summieren.
-* Wenn Sie nur mein Code aktiviert haben, wird der Debugger nicht einmal versuchen Sie es und Laden von Symbolen für DLLs, die optimiert werden. Suchen von Symbolen kann sehr lange dauern.
+* Optimierter Code wird schneller ausgeführt. Wenn Sie Optimierungen für viele Code deaktivieren, kann sich dies auf die Leistung auswirken.
+* Wenn nur eigenen Code aktiviert ist, lädt der Debugger nicht einmal die Symbole für DLLs, die optimiert sind. Das Auffinden von Symbolen kann viel Zeit in Anspruch nehmen.
 
-**Einschränkungen für diese Option:** Es gibt zwei Situationen, in denen bei dieser Option wird **nicht** arbeiten:
+**Einschränkungen für diese Option:** Es gibt zwei Situationen, in denen diese Option **nicht** funktioniert:
 
-1. In Situationen, in dem Sie den Debugger an einem bereits laufenden Prozess anfügen, müssen diese Option keine Auswirkungen auf die Module, die bereits zum Zeitpunkt geladen wurden, die der Debugger angefügt wurde.
-2. Diese Option hat keine Auswirkungen auf DLLs, die wurden vorab in nativen Code kompiliert (bzw. mit NGen verarbeitet). Allerdings können Sie Verwendung von vorab kompilierter Code deaktivieren, durch den Prozess starten, mit der Umgebung, die Variable "COMPlus_ZapDisable' auf '1' festgelegt.
+1. In Situationen, in denen der Debugger an einen bereits laufenden Prozess angefügt wird, hat diese Option keine Auswirkungen auf Module, die zum Zeitpunkt der angefügten Debuggers bereits geladen wurden.
+2. Diese Option hat keine Auswirkung auf DLLs, die in System eigenem Code vorkompiliert wurden (a. k. a ngen ' ed '). Sie können jedoch die Verwendung von vorkompiliertem Code deaktivieren, indem Sie den Prozess mit der Umgebungsvariable "COMPlus_ZapDisable" auf "1" starten.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

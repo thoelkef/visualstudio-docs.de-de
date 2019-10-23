@@ -1,5 +1,5 @@
 ---
-title: SccQueryInfo-Funktion | Microsoft-Dokumentation
+title: Sccqueryinfo-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25a4b9b7d07b74047890c4ba56583cc09a394368
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5807eb6b695e140350696436a8bba351687f4a24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353525"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720829"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo-Funktion
-Diese Funktion ruft die Statusinformationen für einen Satz von ausgewählten Dateien unter quellcodeverwaltung.
+Diese Funktion ruft Statusinformationen für einen Satz ausgewählter Dateien unter Quell Code Verwaltung ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,46 +34,46 @@ SCCRTN SccQueryInfo(
 ```
 
 #### <a name="parameters"></a>Parameter
- pvContext
+ pvcontext
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.
 
- nFiles
+ nnoch
 
-[in] Anzahl der Dateien im angegebenen der `lpFileNames` Array und die Länge der `lpStatus` Array.
+in Die Anzahl der im `lpFileNames` Array angegebenen Dateien und die Länge des `lpStatus` Arrays.
 
- lpFileNames
+ lpfile-Namen
 
-[in] Ein Array der Namen von Dateien, die abgefragt werden.
+in Ein Array von Namen von Dateien, die abgefragt werden sollen.
 
- lpStatus
+ lpstatus
 
-[in, out] Ein Array, in dem das Quellcodeverwaltungs-Plug-in die Statusflags für jede Datei zurückgegeben werden. Weitere Informationen finden Sie unter [Datei Statuscode](../extensibility/file-status-code-enumerator.md).
+[in, out] Ein Array, in dem das Quellcodeverwaltungs-Plug-in die Statusflags für jede Datei zurückgibt. Weitere Informationen finden Sie unter [Datei Status Code](../extensibility/file-status-code-enumerator.md).
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
-|SCC_OK|Abfrage war erfolgreich.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem mit dem Zugriff auf das Quellcodeverwaltungssystem, die wahrscheinlich von Netzwerk-oder Konflikte verursacht. Eine Wiederholung wird empfohlen.|
-|SCC_E_PROJNOTOPEN|Das Projekt ist nicht in der quellcodeverwaltung öffnen.|
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|
+|SCC_OK|Die Abfrage war erfolgreich.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, das wahrscheinlich auf Netzwerk-oder Konfliktprobleme zurückzuführen ist. Es wird empfohlen, eine Wiederholung auszuführen.|
+|SCC_E_PROJNOTOPEN|Das Projekt ist nicht unter Quell Code Verwaltung geöffnet.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler.|
 
 ## <a name="remarks"></a>Hinweise
- Wenn `lpFileName` ist eine leere Zeichenfolge ist, es gibt derzeit keine Informationen zu aktualisieren. Andernfalls ist es der vollständige Pfadname der Datei für die die Statusinformationen geändert haben kann.
+ Wenn `lpFileName` eine leere Zeichenfolge ist, sind zurzeit keine zu Aktualisier Ende Statusinformationen vorhanden. Andernfalls ist dies der vollständige Pfadname der Datei, für die die Statusinformationen geändert werden können.
 
- Die return-Array kann eine Bitmaske der werden `SCC_STATUS_xxxx` Bits. Weitere Informationen finden Sie unter [Datei Statuscode](../extensibility/file-status-code-enumerator.md). Ein Quellcodeverwaltungssystem unterstützen möglicherweise nicht alle Bitdatentypen. Z. B. wenn `SCC_STATUS_OUTOFDATE` nicht angeboten wird, wird das Bit nicht festgelegt ist.
+ Das Rückgabe Array kann eine Bitmaske von `SCC_STATUS_xxxx` Bits sein. Weitere Informationen finden Sie unter [Datei Status Code](../extensibility/file-status-code-enumerator.md). Ein Quell Code Verwaltungssystem unterstützt möglicherweise nicht alle BITTypen. Wenn `SCC_STATUS_OUTOFDATE` z. b. nicht angeboten wird, wird das-Bit nicht festgelegt.
 
- Beachten Sie Folgendes ein, wenn Sie diese Funktion verwenden, checken Sie Dateien, `MSSCCI` Status Anforderungen:
+ Wenn Sie diese Funktion verwenden, um Dateien auszuchecken, beachten Sie die folgenden `MSSCCI` Status Anforderungen:
 
-- `SCC_STATUS_OUTBYUSER` wird festgelegt, wenn der aktuelle Benutzer die Datei ausgecheckt hat.
+- `SCC_STATUS_OUTBYUSER` festgelegt wird, wenn der aktuelle Benutzer die Datei ausgecheckt hat.
 
-- `SCC_STATUS_CHECKEDOUT` kann nicht festgelegt werden, es sei denn, `SCC_STATUS_OUTBYUSER` festgelegt ist.
+- `SCC_STATUS_CHECKEDOUT` kann nur festgelegt werden, wenn `SCC_STATUS_OUTBYUSER` festgelegt ist.
 
-- `SCC_STATUS_CHECKEDOUT` Wenn die Datei in das angegebene Arbeitsverzeichnis ausgecheckt ist, wird nur festgelegt werden.
+- `SCC_STATUS_CHECKEDOUT` wird nur beim Auschecken der Datei in das festgelegte Arbeitsverzeichnis festgelegt.
 
-- Wenn die Datei vom aktuellen Benutzer in einem anderen Verzeichnis als Arbeitsverzeichnis ausgecheckt ist `SCC_STATUS_OUTBYUSER` festgelegt ist, aber `SCC_STATUS_CHECKEDOUT` nicht.
+- Wenn die Datei vom aktuellen Benutzer in einem anderen Verzeichnis als dem Arbeitsverzeichnis ausgecheckt wird, wird `SCC_STATUS_OUTBYUSER` festgelegt, `SCC_STATUS_CHECKEDOUT` aber nicht.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba09df818b95ac96f2092685ce4100873a18a05f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 694b1a53e72ca4e890e11befdc9b90f049e33dd1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647994"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721776"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Exemplarische Vorgehensweise: Erstellen eines Legacysprachdiensts
 Die Verwendung der MPF-Sprachklassen (Managed Package Framework) zum Implementieren eines sprach Dienstanbieter in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ist unkompliziert. Sie benötigen ein VSPackage, um den Sprachdienst, den Sprachdienst und einen Parser für Ihre Sprache zu hosten.

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Get_count | Microsoft-Dokumentation'
+title: 'Idiaenumdebug bugstreamdata:: get_Count | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f57318508f06258aec537de30f00326c3afca7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1379a058cdfceea6762b88784cb7137583e6da74
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838414"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744886"
 ---
-# <a name="idiaenumdebugstreamdatagetcount"></a>IDiaEnumDebugStreamData::get_Count
-Ruft die Datensätze in der Debug-Datenstrom ab.
+# <a name="idiaenumdebugstreamdataget_count"></a>IDiaEnumDebugStreamData::get_Count
+Ruft die Anzahl der Datensätze im Debug-Datenstrom ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,10 +32,10 @@ HRESULT get_Count ( 
 
 #### <a name="parameters"></a>Parameter
  pRetVal
-- [Out, Retval] Gibt die Anzahl der Datensätze zurück.
+- [out, retval] Gibt die Anzahl von Datensätzen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

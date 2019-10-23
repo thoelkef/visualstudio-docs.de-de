@@ -1,5 +1,5 @@
 ---
-title: SccQueryChanges-Funktion | Microsoft-Dokumentation
+title: Sccquerychanges-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e2b1e504bef3ec9507afcddf4f75bc5f697e843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617f07a11f92ab65f079c7d1b41773494e3d0c8b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353505"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720853"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges-Funktion
-Diese Funktion Listet die angegebenen Dateien mit Informationen zu Änderungen des Computernamens für jede Datei über eine Callback-Funktion.
+Diese Funktion Listet eine angegebene Liste von Dateien auf, die Informationen über Namensänderungen für jede Datei über eine Rückruffunktion bereitstellt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,38 +35,38 @@ SCCRTN SccQueryChanges(
 ```
 
 #### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
 
- nFiles
+ nnoch
 
-[in] Anzahl der Dateien im `lpFileNames` Array.
+in Anzahl der Dateien in `lpFileNames` Array.
 
- lpFileNames
+ lpfile-Namen
 
-[in] Array von Dateinamen, zu dem Informationen abgerufen werden soll.
+in Array von Dateinamen, über die Informationen erhalten werden.
 
- pfnCallback
+ pfncallback
 
-[in] Rückruffunktion für jedes Dateinamen in der Liste (finden Sie unter [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) Einzelheiten).
+in Rückruffunktion, die für jeden Dateinamen in der Liste aufgerufen werden soll (Weitere Informationen finden Sie unter [querychangesfunc](../extensibility/querychangesfunc.md) ).
 
- pvCallerData
+ pvcallerdata
 
-[in] Wert, der unverändert an die Rückruffunktion übergeben wird.
+in Der Wert, der unverändert an die Rückruffunktion übermittelt wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
-|SCC_OK|Der Abfragevorgang erfolgreich abgeschlossen wurde.|
-|SCC_E_PROJNOTOPEN|Das Projekt wurde nicht in der quellcodeverwaltung geöffnet.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen.|
-|SCC_E_NONSPECIFICERROR|Ein Unbekannter oder allgemeiner Fehler aufgetreten.|
+|SCC_OK|Der Abfrageprozess wurde erfolgreich abgeschlossen.|
+|SCC_E_PROJNOTOPEN|Das Projekt wurde nicht in der Quell Code Verwaltung geöffnet.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen.|
+|SCC_E_NONSPECIFICERROR|Ein nicht spezifizierter oder allgemeiner Fehler ist aufgetreten.|
 
 ## <a name="remarks"></a>Hinweise
- Änderungen, die abgefragt wird, die auf den Namespace sind: insbesondere umbenennen, hinzufügen und Entfernen einer Datei.
+ Änderungen, die abgefragt werden, sind der Namespace: das Umbenennen, hinzufügen und Entfernen einer Datei.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
