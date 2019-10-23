@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f947d8a4994c8a515a707f34a07065358194e09
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 4704ae4d6a43eb3ac23b928b26515b545164e495
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490675"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653654"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellungsdatei für einen verteilten Auslastungstest
 

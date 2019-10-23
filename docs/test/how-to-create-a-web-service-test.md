@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950136"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653600"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Vorgehensweise: Erstellen eines Webdiensttests
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 2. Klicken Sie im **Webleistungstest-Editor** mit der rechten Maustaste auf den Webleistungstest, und wählen Sie **Webdienstanforderung hinzufügen** aus.
 
-3. Geben Sie als **URL**-Eigenschaft der neuen Anforderung den Namen des Webdiensts ein, z.B. **http://localhost/storecsvs/InstantOrder.asmx**.
+3. Geben Sie als **URL**-Eigenschaft der neuen Anforderung den Namen des Webdiensts ein, z.B. **http://localhost/storecsvs/InstantOrder.asmx** .
 
 4. Öffnen Sie ein neues Browserfenster, und geben Sie in der *Adressensymbolleiste* die URL der **ASMX**-Seite ein. Wählen Sie die zu testende Methode aus, und überprüfen Sie die SOAP-Meldung. Sie enthält eine `SOAPAction`.
 
@@ -60,7 +60,7 @@ Visual Studio Enterprise
      </soap:Envelope>
      ```
 
-9. Kehren Sie zum **Webleistungstest-Editor** zurück. Klicken Sie in der **Zeichenfolgentext-Eigenschaft** auf die Auslassungspunkte **(…)**. Fügen Sie den Inhalt der Zwischenablage in die Eigenschaft ein.
+9. Kehren Sie zum **Webleistungstest-Editor** zurück. Klicken Sie in der **Zeichenfolgentext-Eigenschaft** auf die Auslassungspunkte **(…)** . Fügen Sie den Inhalt der Zwischenablage in die Eigenschaft ein.
 
 10. Sie müssen alle Platzhalterwerte im XML-Code durch gültige Werte ersetzen, damit der Test erfolgreich ausgeführt werden kann. Im vorherigen Beispiel würden Sie die zwei Instanzen von `string` und eine Instanz von `int` ersetzen. Dieser Webdienstvorgang wird nur abgeschlossen, wenn ein registrierter Benutzer den Auftrag dazu erteilt.
 

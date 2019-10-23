@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790862"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654448"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 
@@ -41,7 +41,7 @@ Mit dem Fenster **Fehlerliste** können Sie die folgenden Aufgaben ausführen:
 
 - Suchen nach bestimmten Begriffen und Eingrenzen der Suche auf das aktuelle Projekt oder Dokument.
 
-Zum Anzeigen der **Fehlerliste**, wählen Sie **Ansicht** > **Fehlerliste** aus, oder drücken Sie **STRG**+**\\**+**E**.
+Zum Anzeigen der **Fehlerliste**, wählen Sie **Ansicht** > **Fehlerliste** aus, oder drücken Sie **STRG**+ **\\** +**E**.
 
 Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler** **Warnungen** und **Nachrichten** wählen.
 
@@ -78,13 +78,13 @@ Sie können die Fehlerliste kopieren und in einer Datei speichern. Wählen Sie d
 
 Schweregrad
 
-Zeigt die verschiedenen Typen des Eintrags **Fehlerliste** an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)**, **Warnung (inaktiv)**.
+Zeigt die verschiedenen Typen des Eintrags **Fehlerliste** an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)** , **Warnung (inaktiv)** .
 
 Code
 
 Zeigt den Fehlercode an.
 
-Beschreibung
+BESCHREIBUNG
 
 Zeigt den Text des Eintrags an.
 

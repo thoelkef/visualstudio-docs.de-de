@@ -3,17 +3,17 @@ title: Texturknoten
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f5bfe71866422cd3717c2a29f1eeb48d15cc76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d180c3c42049a097ca6d8df1931bd5fc29d06ce
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844215"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635134"
 ---
 # <a name="texture-nodes"></a>Texturknoten
 
@@ -28,7 +28,7 @@ Im Shader Designer beproben Texturknoten verschiedene Texturtypen und Geometrien
 |**Schwenken-UV**|Schwenkt die angegebenen Texturkoordinaten in Abhängigkeit von der Zeit.<br /><br /> Damit können Sie eine Textur oder die Normalmap auf der Oberfläche eines Objekts verschieben.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Zu schwenkende Koordinaten<br /><br /> `Time`: `float`<br /> Die Zeitdauer in Sekunden des Schwenkvorgangs.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Geschwenkte Koordinaten|**Geschwindigkeit X**<br /> Die Anzahl von Texeln, die pro Sekunde entlang der X-Achse verschoben werden.<br /><br /> **Geschwindigkeit Y**<br /> Die Anzahl von Texeln, die pro Sekunde entlang der Y-Achse verschoben werden.|
 |**Parallaxen-UV**|Verschiebt die angegebenen Texturkoordinaten in Abhängigkeit von Höhe und Anzeigewinkel.<br /><br /> Der Effekt wird als *Parallaxenmapping* oder virtuelles Verschiebungsmapping bezeichnet. Damit können Sie Illusion von Tiefe auf einer flachen Oberfläche erzeugen.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Zu verschiebende Koordinaten<br /><br /> `Height`: `float`<br /> Der den `UV`-Koordinaten zugeordnete Heightmap-Wert.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Verschobene Koordinaten|**Tiefenebene**<br /> Referenztiefe für den Parallaxeneffekt. Der Standardwert ist 0,5. Kleinere Werte heben die Textur an; größere Werte, die senken sie auf die Oberfläche.<br /><br /> **Tiefenskala**<br /> Die Skalierung des Parallaceneffekts. Dadurch wird die optische Tiefe mehr oder weniger ausgeprägt. Die Werte stammen normalerweise auf dem Bereich von 0,02 bis 0,1.|
 |**Drehen-UV**|Dreht die angegebenen Texturkoordinaten in Abhängigkeit von der Zeit um einen Mittelpunkt.<br /><br /> Damit können Sie eine Textur oder die Normalmap auf der Oberfläche eines Objekts drehen.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Zu drehende Koordinaten<br /><br /> `Time`: `float`<br /> Die Zeitdauer in Sekunden des Schwenkvorgangs.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Gedrehte Koordinaten|**X zentrieren**<br /> Die X-Koordinate, die den Mittelpunkt der Drehung definiert.<br /><br /> **Y zentrieren**<br /> Die Y-Koordinate, die den Mittelpunkt der Drehung definiert.<br /><br /> **Geschwindigkeit**<br /> Der Winkel im Bogenmaß, in dem sich die Textur pro Sekunde dreht.|
-|**Texturkoordinate**|Die Texturkoordinaten des aktuellen Pixels.<br /><br /> Die Texturkoordinaten werden durch die Interpolation zwischen den Attributen der Texturkoordinatenattribute von benachbarten Scheitelpunkten bestimmt. Sie können sich dies als die Position des aktuellen Pixels im Texturraum vorstellen.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Texturkoordinaten|Keiner|
+|**Texturkoordinate**|Die Texturkoordinaten des aktuellen Pixels.<br /><br /> Die Texturkoordinaten werden durch die Interpolation zwischen den Attributen der Texturkoordinatenattribute von benachbarten Scheitelpunkten bestimmt. Sie können sich dies als die Position des aktuellen Pixels im Texturraum vorstellen.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Texturkoordinaten|Keine|
 |**Texturdimensionen**|Gibt die Breite und Höhe einer 2D-Texturmap aus.<br /><br /> Sie können die Texturdimensionen verwenden, um die Breite und Höhe der Textur in einem Shader zu berücksichtigen.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Die Breite und Höhe der Textur, ausgedrückt als Vektor. Die Breite wird als das erste Element des Vektors gespeichert. Die Höhe wird in das zweite Element gespeichert.|**Textur**<br /> Das Texturregister, das den Texturdimensionen zugeordnet ist.|
 |**Texeldelta**|Gibt das Delta (Abstand) zwischen den Texeln einer 2D-Texturmap aus.<br /><br /> Sie können mit dem Texeldelta benachbarte Texelwerte in einem Shader sampeln.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float2`<br /> Das Delta (Abstand) von einem zum nächsten Texel (diagonal in positiver Richtung verschieben), ausgedrückt als Vektor im normalisierten Texturraum. Sie können die Positionen aller benachbarten Texel ableiten, indem Sie selektiv entweder die U- oder die V- Koordinate des Deltas ignorieren oder negieren.|**Textur**<br /> Das Texturregister, das dem Texel zugeordnet ist.|
 |**Texturbeispiel**|Entnimmt ein Farbsample aus einer 2D-Texturmap an den angegebenen Koordinaten.<br /><br /> Mit einer Texturmap können Sie Farbdetails auf der Oberfläche eines Objekts bereitstellen.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten, an denen das Sample entnommen wird.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Farbbeispiel.|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist.|

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit tests, load test walkthrough
 - load tests, walkthrough
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a319181348f86ab8f16b2cc2b7e9a6e6f3a16c13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78bce7f8a05032fa8654021d89598ede67fa08c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976266"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659681"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält.
 
@@ -47,7 +47,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
      Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** die Option **Visual C#**, und wählen Sie **Test** aus. Wählen Sie aus der Liste der Vorlagen **Testprojekt für Webleistung und Auslastung** aus, und geben Sie `BankLoadTest` im Feld **Name** ein. Klicken Sie auf **OK**.
+3. Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** die Option **Visual C#** , und wählen Sie **Test** aus. Wählen Sie aus der Liste der Vorlagen **Testprojekt für Webleistung und Auslastung** aus, und geben Sie `BankLoadTest` im Feld **Name** ein. Klicken Sie auf **OK**.
 
      Das BankLoadTest-Testprojekt für Webleistung und Auslastung wird der Projektmappe hinzugefügt.
 

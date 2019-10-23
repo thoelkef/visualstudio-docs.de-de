@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Das MSDN Magazine wird eingestellt
-ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: de9d81369d1a616b2511ec553d41a077b2edb359
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891255"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516834"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>Der MSDN Magazine-Vorteil in Visual Studio-Abonnements wird eingestellt
 
@@ -38,6 +38,7 @@ Antwort: Ein Scheck über den zu erstattenden Betrag wird an die Adresse gesende
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informieren Sie sich über mehr professionelle Entwicklungschancen in Ihrem Abonnement:
+- [CODE Magazine](vs-code-magazine.md)
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 - [DataCamp](vs-datacamp.md)

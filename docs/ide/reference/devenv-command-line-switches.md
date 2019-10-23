@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970225"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661650"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenparameter
 
@@ -62,7 +62,7 @@ Die Syntaxregeln für `devenv`-Schalter ähneln den Regeln für andere DOS-Befeh
 
 Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebene Aufgabe aus.
 
-|Befehlszeilenschalter|Beschreibung|
+|Befehlszeilenschalter|BESCHREIBUNG|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Startet die IDE und führt den angegebenen Befehl aus.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Lädt eine ausführbare C++-Datei unter der Kontrolle des Debuggers. Dieser Schalter ist für ausführbare Visual Basic- oder C#-Dateien nicht verfügbar. Weitere Informationen finden Sie unter [Prozess im Debugger automatisch starten](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
@@ -79,7 +79,7 @@ Die folgenden Befehlszeilenschalter zeigen die IDE an und führen die beschriebe
 
 Durch die folgenden Befehlszeilenschalter wird die IDE nicht angezeigt.
 
-|Befehlszeilenschalter|Beschreibung|
+|Befehlszeilenschalter|BESCHREIBUNG|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|Zeigt Hilfe für `devenv`-Schalter im **Eingabeaufforderungsfenster** an.<br /><br /> Der Schalter verwendet keine Argumente.|
 |[/Build](build-devenv-exe.md)|Erstellt die angegebene Projektmappe oder das angegebene Projekt entsprechend der Konfiguration der angegebenen Projektmappe.<br /><br /> `devenv mysln.sln /build`|

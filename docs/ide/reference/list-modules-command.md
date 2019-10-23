@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListModules command
 - list modules command
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89be89bb3befa6f6ab9e67f6e98ae4d7b1b94e64
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 86e479879051d38df1da3ed2677303a76ea2d289
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926203"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747912"
 ---
 # <a name="list-modules-command"></a>Befehl "Module auflisten"
 Listet die Module für den aktuellen Prozess auf.

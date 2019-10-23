@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549778"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603546"
 ---
 # <a name="view-type-and-member-definitions"></a>Anzeigen von Typ- und Memberdefinitionen
 
@@ -58,7 +58,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten 
 
 Wenn Sie die Definition von C#-Typen oder -Membern anzeigen, deren Quellcode nicht verfügbar ist, werden stattdessen die entsprechenden Metadaten angezeigt. Sie können die Deklarationen der Typen und Member sehen, nicht aber ihre Implementierungen.
 
-Wenn Sie den Befehl **Gehe zu Definition** oder **Definition einsehen** für ein Element ausführen, dessen Quellcode nicht verfügbar ist, wird im Code-Editor ein Dokument mit Registerkarten angezeigt, das eine Ansicht der Metadaten des betreffenden Elements in der Darstellung als Quellcode enthält. Der Name des Typs wird auf der Registerkarte des Dokuments angezeigt, gefolgt von **[aus Metadaten]**.
+Wenn Sie den Befehl **Gehe zu Definition** oder **Definition einsehen** für ein Element ausführen, dessen Quellcode nicht verfügbar ist, wird im Code-Editor ein Dokument mit Registerkarten angezeigt, das eine Ansicht der Metadaten des betreffenden Elements in der Darstellung als Quellcode enthält. Der Name des Typs wird auf der Registerkarte des Dokuments angezeigt, gefolgt von **[aus Metadaten]** .
 
 Wenn Sie beispielsweise den Befehl **Gehe zu Definition** für <xref:System.Console>ausführen, werden Metadaten für <xref:System.Console> im Code-Editor als C#-Quellcode angezeigt. Der Code entspricht seiner Deklaration, zeigt jedoch keine Implementierung an.
 
@@ -69,7 +69,7 @@ Wenn Sie beispielsweise den Befehl **Gehe zu Definition** für <xref:System.Cons
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Anzeigen von dekompilierten Quelldefinitionen anstelle von Metadaten (C#)
 
-Sie können jetzt eine Option festlegen, mit der dekompilierter Quellcode angezeigt wird, wenn Sie die Definition eines C#-Typs oder -Members anzeigen, dessen Quellcode nicht verfügbar ist. Um dieses Feature zu aktivieren, wählen Sie in der Menüleiste **Extras** > **Optionen**. Erweitern Sie dann **Text-Editor** > **C#** > **Erweitert**, und wählen Sie **Navigation zu dekompilierten Quellen aktivieren**.
+Sie können jetzt eine Option festlegen, mit der dekompilierter Quellcode angezeigt wird, wenn Sie die Definition eines C#-Typs oder -Members anzeigen, dessen Quellcode nicht verfügbar ist. Um dieses Feature zu aktivieren, wählen Sie in der Menüleiste **Extras** > **Optionen**. Erweitern Sie dann **Text-Editor** > **C#**  > **Erweitert**, und wählen Sie **Navigation zu dekompilierten Quellen aktivieren**.
 
 ![Anzeigen einer dekompilierten Definition](media/go-to-definition-decompiled-sources.png)
 
