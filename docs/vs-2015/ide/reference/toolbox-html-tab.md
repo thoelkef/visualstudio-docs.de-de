@@ -198,7 +198,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 
  Weitere Informationen finden Sie unter [Deklarative Syntax des HtmlImage-Serversteuerelements](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Übersicht über das Image-Webserversteuerelement](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> und <xref:System.Web.UI.WebControls.Image>.
 
- **** ![Dropdown für HTML-Seiten-Toolbox](../../ide/reference/media/vxdropdown.gif "|::ref14::|") auswählen
+ ![Dropdown für HTML-Seiten-Toolbox](../../ide/reference/media/vxdropdown.gif "|::ref14::|") **auswählen**
 
  Fügt ein Dropdown-`select`-Element ein (ohne `size`-Attribut). In der Standardeinstellung wird `id="select1"` für das erste Listenfeld eingefügt, `id="select2"` für das zweite usw.
 

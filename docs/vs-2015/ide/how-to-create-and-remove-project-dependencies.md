@@ -63,4 +63,4 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
 4. Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
 
 ## <a name="see-also"></a>Siehe auch
- Erstellen [und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Kompilieren und](../ide/compiling-and-building-in-visual-studio.md) Erstellen von Buildkonfigurationen [](../ide/understanding-build-configurations.md) [NIB Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio ](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Compiling und erstellen ](../ide/compiling-and-building-in-visual-studio.md) [Understanding Buildkonfigurationen ](../ide/understanding-build-configurations.md) [NIB Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

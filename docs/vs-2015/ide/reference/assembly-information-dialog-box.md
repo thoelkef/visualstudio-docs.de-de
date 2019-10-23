@@ -51,4 +51,4 @@ Im Dialogfeld **Assemblyinformationen** werden die Werte der globalen [!INCLUDE[
  **Assembly COM-sichtbar machen:** Gibt an, ob Typen in der Assembly für COM verfügbar sind. Entspricht <xref:System.Runtime.InteropServices.ComVisibleAttribute>
 
 ## <a name="see-also"></a>Siehe auch
- [Anwendungsseite, Projekt-Designer-Attribute (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) [](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+ [Anwendungsseite, Projekt-Designer (Visual Basic) ](../../ide/reference/application-page-project-designer-visual-basic.md) [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
