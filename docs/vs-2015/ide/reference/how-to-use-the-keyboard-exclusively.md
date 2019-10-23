@@ -97,4 +97,4 @@ ms.locfileid: "72651305"
      Das Toolfenster springt zur neuen angedockten Stelle.
 
 ## <a name="see-also"></a>Siehe auch
- [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Tipps und Tricks](../../ide/reference/accessibility-tips-and-tricks.md) [](../../ide/default-keyboard-shortcuts-in-visual-studio.md) für Tastenkombinationen
+ [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Tipps und Tricks](../../ide/reference/accessibility-tips-and-tricks.md) für [Tastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

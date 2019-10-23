@@ -44,4 +44,4 @@ Die <xref:System.Resources.SatelliteContractVersionAttribute>-Klasse bietet Unte
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Wie die](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34) Common Language Runtime Assemblys nach Assemblys festlegt, die die Sicherheit von Assemblyattributen [](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e) [und lokalisierte Satellitenassemblys](../ide/security-and-localized-satellite-assemblies.md) [lokalisieren](../ide/localizing-applications.md) [](../ide/globalizing-and-localizing-applications.md)
+ [Wie die Common Language Runtime Assemblys ](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34) [Setting Assemblyattribute ](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e) [Security und lokalisierten Satellitenassemblys ](../ide/security-and-localized-satellite-assemblies.md) [Localizing Anwendungen ](../ide/localizing-applications.md) und [lokalisierte Anwendungen](../ide/globalizing-and-localizing-applications.md)
