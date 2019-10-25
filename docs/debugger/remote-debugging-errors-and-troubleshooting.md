@@ -1,5 +1,5 @@
 ---
-title: Remotedebuggen – Fehler und Problembehandlung | Microsoft-Dokumentation
+title: Remote Debuggen von Fehlern und Problembehandlung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,58 +20,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078551111223f11b38f3192075caa9ddfabaf18c
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f41292c22de1d9c76007ca44cb7accbf82359b3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043350"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730022"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Remotedebuggen – Fehler und Problembehandlung
 
-Möglicherweise stoßen Sie auf die folgenden Fehler beim Versuch, Remote zu debuggen.
+Wenn Sie versuchen, Remote zu debuggen, treten möglicherweise die folgenden Fehler auf.
 
-- [Fehler: Automatischer Einzelschritt auf dem Server nicht möglich](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
 - [Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend auf dem Remotecomputer nicht ausgeführt.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
 
 - [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
-- [Fehler: Remotecomputer wird im Dialogfeld „Remoteverbindungen“ nicht angezeigt](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+- [Fehler: Remotecomputer wird im Dialogfeld „Remoteverbindungen“ nicht angezeigt.](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
-## <a name="run-the-remote-debugger-as-an-administrator"></a>Den Remotedebugger als Administrator ausführen.
+## <a name="run-the-remote-debugger-as-an-administrator"></a>Remote Debugger als Administrator ausführen
 
-Sie können auf Probleme stoßen, wenn Sie nicht den Remotedebugger als Administrator ausführen. Beispielsweise können Sie die folgende Fehlermeldung angezeigt: "Visual Studio Remote Debugger (MSVSMON. EXE-Datei) besitzt keine ausreichenden Berechtigungen, die diesen Prozess zu debuggen." Wenn Sie den Remotedebugger als Anwendung (nicht um einen Dienst) ausführen, können Sie sehen die [anderes Benutzerkonto](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) Fehler.
+Möglicherweise treten Probleme auf, wenn Sie den Remote Debugger nicht als Administrator ausführen. Beispielsweise wird möglicherweise der folgende Fehler angezeigt: "die Visual Studio Remote Debugger (msvsmon). EXE) verfügt nicht über ausreichende Berechtigungen, um diesen Prozess zu debuggen. Wenn Sie den Remote Debugger als Anwendung (nicht als Dienst) ausführen, wird möglicherweise der [andere Benutzerkonto](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) Fehler angezeigt.
 
-### <a name="when-running-the-remote-debugger-as-a-service"></a>Wenn der Remotedebugger als Dienst ausgeführt.
+### <a name="when-running-the-remote-debugger-as-a-service"></a>Beim Ausführen des Remote Debuggers als Dienst
 
-Bei Ausführung des Remotedebuggers als Dienst s empfehlen wir die Ausführung als Administrator für verschiedene Gründe haben:
+Wenn Sie den Remote Debugger als s-Dienst ausführen, empfiehlt es sich, ihn aus verschiedenen Gründen als Administrator zu ausführen:
 
-- Der Remotedebugdienst ermöglicht Verbindungen nur von Administratoren, daher gibt es **keine** neue Sicherheitsrisiken, die eingeführt werden, indem Sie sie als Administrator ausführen.
+- Der Remote Debugger-Dienst lässt nur Verbindungen von Administratoren zu, sodass **keine** neuen Sicherheitsrisiken entstehen, indem er als Administrator ausgeführt wird.
 
-- Es kann Fehler vermeiden, die Ergebnis, wenn der Visual Studio-Benutzer weitere Rechte zum Debuggen eines Prozesses als den Remotedebugger selbst verfügt.
+- Dadurch können Fehler verhindert werden, die auftreten, wenn der Visual Studio-Benutzer mehr Berechtigungen zum Debuggen eines Prozesses hat, als der Remote Debugger selbst tut.
 
-- Um die Einrichtung und Konfiguration des Remotedebuggers zu vereinfachen.
+- Vereinfachen der Einrichtung und Konfiguration des Remote Debuggers.
 
-Es ist, zwar möglich, Debuggen, ohne den Remotedebugger als Administrator ausführen bestehen mehrere Anforderungen an, damit dies funktioniert ordnungsgemäß, und häufig erfordern erweiterte Dienst Konfigurationsschritte.
+Obwohl es möglich ist, einen Debugvorgang auszuführen, ohne den Remote Debugger als Administrator auszuführen, müssen verschiedene Anforderungen erfüllt werden, damit diese Aufgabe ordnungsgemäß funktioniert und häufig erweiterte Dienst Konfigurationsschritte erforderlich sind.
 
-- Das Konto, das Sie, auf dem Remotecomputer verwenden werden müssen die **Anmelden als Dienst** Berechtigungen. Die Schritte unter "Hinzufügen Anmeldung als Dienst" finden Sie der [kann keine Verbindung wieder hergestellt.](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) Artikel.
+- Das Konto, das Sie auf dem Remote Computer verwenden, muss über die Berechtigung " **Anmelden als Dienst** " verfügen. Weitere Informationen finden Sie in den Schritten unter "So fügen Sie LOGON-as-a-Service hinzu" im Artikel " [keine Verbindung zurück](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) "
 
-- Das Konto muss Berechtigungen zum Debuggen des Zielprozess verfügen. Um diese Rechte zu erhalten, müssen Sie den Remotedebugger unter demselben Konto als das zu debuggende Prozess ausführen. (Die einfachere Alternative ist zum Ausführen des Diensts als Administrator.) 
+- Das Konto muss über Rechte zum Debuggen des Ziel Prozesses verfügen. Um diese Rechte zu erhalten, müssen Sie den Remote Debugger unter demselben Konto wie den zu debuggenden Prozess ausführen. (Die einfachere Alternative besteht darin, den Dienst als Administrator auszuführen.) 
 
-- Das Konto muss in der Lage, Herstellen einer Verbindung mit zurück (d. h. mit authentifizieren) Visual Studio-Computer über das Netzwerk. In einer Domäne ist es einfacher, eine Verbindung herstellen, wenn der Remotedebugger unter den integrierten lokalen System oder Network Service-Konten oder einem Domänenkonto ausgeführt wird. Die Standardkonten erhöhten Sicherheitsberechtigungen, die ein Sicherheitsrisiko darstellen können.
+- Das Konto muss in der Lage sein, eine Verbindung mit dem Visual Studio-Computer über das Netzwerk herzustellen (d. h. Authentifizieren mit). In einer Domäne ist es einfacher, eine Verbindung herzustellen, wenn der Remote Debugger unter dem integrierten lokalen System oder den Netzwerkdienst Konten oder einem Domänen Konto ausgeführt wird. Die integrierten Konten verfügen über erhöhte Sicherheits Berechtigungen, die ein Sicherheitsrisiko darstellen können.
 
-### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Wenn der Remotedebugger ausgeführt, wie eine Anwendung (normaler Modus)
+### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Beim Ausführen des Remote Debuggers als Anwendung (normaler Modus)
 
-Wenn Sie versuchen, Verbindung mit Ihrem eigenen Prozess ohne erhöhte Rechte (z. B. eine normale Anwendung), ist es unerheblich, ob Sie den Remotedebugger als Administrator ausführen.
+Wenn Sie versuchen, an Ihren eigenen Prozess ohne erhöhte Rechte (z. b. eine normale Anwendung) anzufügen, ist es unerheblich, ob Sie den Remote Debugger als Administrator ausführen.
 
-Der Remotedebugger als Administrator in verschiedenen Szenarios ausgeführt werden sollen:
+Sie möchten den Remote Debugger in verschiedenen Szenarien als Administrator ausführen:
 
-- Zum Anfügen an Prozesse, die als ein anderer Benutzer ausgeführt werden sollen (z. B. beim Debuggen von IIS), oder
+- Sie möchten an Prozesse anfügen, die als anderer Benutzer ausgeführt werden (z. b. beim Debuggen von IIS).
 
 - Sie versuchen, einen anderen Prozess zu starten, und der Prozess, den Sie starten möchten, ist ein Administrator.
 
-Sie **nicht** möchten Sie sich als Administrator ausführen, wenn Prozesse gestartet werden soll, und der Prozess, die Sie starten möchten, sollten **nicht** Administrator sein.
+Sie möchten **nicht** als Administrator ausgeführt werden, wenn Sie Prozesse starten möchten, und der Prozess, den Sie starten möchten, sollte **kein** Administrator sein.
 
 ## <a name="see-also"></a>Siehe auch
 - [Remote Debugging](../debugger/remote-debugging.md)

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b10ab87f056bc153ec41c125b0e01ddefa139b80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555077"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745397"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Konstanten (Debug Interface Access SDK)
-Diese Zeichenfolgenkonstanten können zum Identifizieren der verschiedenen Abschnitte der ein Programm debuggen Programmdatenbankdatei (PDB) an, über das DIA-SDK verwendet werden.
+Diese Zeichen folgen Konstanten können verwendet werden, um verschiedene Abschnitte einer Programm-Debug-Datenbankdatei (PDB-Datei) über die Dia SDK zu identifizieren.
 
 ## <a name="constants"></a>Konstanten
-Im folgenden werden als C/C++-Makros deklariert.
+Folgendes wird als C/C++ Makros deklariert.
 
 |Makro|Wert|
 |-----------|-----------|
@@ -34,11 +34,11 @@ Im folgenden werden als C/C++-Makros deklariert.
 |`DiaTable_LineNums`|L"LineNumbers"|
 |`DiaTable_SegMap`|L"SegmentMap"|
 |`DiaTable_Dbg`|L"Dbg"|
-|`DiaTable_InjSrc`|L "InjectedSource"|
+|`DiaTable_InjSrc`|L "injetedsource"|
 |`DiaTable_FrameData`|L"FrameData"|
 
 ## <a name="example"></a>Beispiel
-Hier ist ein Beispiel mit einer der folgenden Symbole:
+Im folgenden finden Sie ein Beispiel für die Verwendung eines der folgenden Symbole:
 
 ```C++
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)

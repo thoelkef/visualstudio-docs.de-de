@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_length | Microsoft-Dokumentation'
+title: 'IDiaLineNumber:: get_Length | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 896e26075780c0cbd7bf0b1762da141d5ba7d2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f803fac1439d384133f0819859f2917072a8790
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828468"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743198"
 ---
-# <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
-Ruft die Anzahl der Bytes in einem Block ab.
+# <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
+Ruft die Anzahl der Bytes in einem-Block ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Anzahl der Bytes in einem Block zurück.
+vorgenommen Gibt die Anzahl der Bytes in einem-Block zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Der Block ist die Länge des Quellcodes in der Zeile, dargestellt durch die [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekt.
+ Der-Block ist die Länge des Quellcodes in der Zeile, wie durch das [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) -Objekt dargestellt.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

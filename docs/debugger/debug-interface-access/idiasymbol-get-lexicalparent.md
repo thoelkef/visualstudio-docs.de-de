@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_lexicalparent | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_lexicalParent | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8927785ba6ca0dbe3daf6c402be776e8c9d8288
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 87d44f2c8dfb723f9f2653d6f9d89a2c1c71ef5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813730"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739969"
 ---
-# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
-Ruft einen Verweis auf die übergeordnete lexikalische des Symbols ab.
+# <a name="idiasymbolget_lexicalparent"></a>IDiaSymbol::get_lexicalParent
+Ruft einen Verweis auf das lexikalische übergeordnete Element des Symbols ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,18 +33,18 @@ HRESULT get_lexicalParent ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das übergeordnete lexikalische des Symbols darstellt.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das lexikalische Element des Symbols darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Der übergeordnete lexikalische eines Symbols ist der einschließenden Funktion oder dieses Moduls. Lexikalische übergeordnet Funktionsparameter oder als lokale Variable ist z. B. die Funktion selbst, während das lexikalische übergeordnete Element der Funktion des Moduls ist, die, dem Sie in definiert ist.
+ Das lexikalische Element eines Symbols ist die einschließende Funktion oder das einschließende Modul. Beispielsweise handelt es sich bei dem lexikalischen übergeordneten Element eines Funktions Parameters oder einer lokalen Variablen um die Funktion selbst, während das lexikalische Element der Funktion das Modul ist, in dem es definiert ist.
 
- Die möglichen Symbole, die angezeigt werden können, wie im übergeordneten lexikalischen Elemente dokumentiert werden [lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).
+ Die möglichen Symbole, die als lexikalische übergeordnete Elemente angezeigt werden können, sind in [der lexikalischen Hierarchie von Symbol Typen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)dokumentiert.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

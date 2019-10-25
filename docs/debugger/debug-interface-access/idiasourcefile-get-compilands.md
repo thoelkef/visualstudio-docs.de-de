@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_compilands | Microsoft-Dokumentation'
+title: 'IDiaSourceFile:: get_compilands | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15ebc8296bdf78515b31d38a7543a4f41db84664
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dea4b53daae31c90753ef7afb293e69157f58e41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838245"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741813"
 ---
-# <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-Ruft einen Enumerator der Compilands, die auf diese Datei verweist, Zeilennummern ab.
+# <a name="idiasourcefileget_compilands"></a>IDiaSourceFile::get_compilands
+Ruft einen Enumerator von Kompilierungen ab, die Zeilennummern aufweisen, die auf diese Datei verweisen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_compilands ( 
 #### <a name="parameters"></a>Parameter
  `ppRetVal`
 
-[out] Gibt eine [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) Objekt, das eine Liste mit allen Compilands enthält, die Zeilennummern verweisen auf diese Datei haben.
+vorgenommen Gibt ein [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) -Objekt zurück, das eine Liste aller Kompilierungen enthält, die Zeilennummern aufweisen, die auf diese Datei verweisen.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

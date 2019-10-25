@@ -1,5 +1,5 @@
 ---
-title: SccHistory-Funktion | Microsoft-Dokumentation
+title: Scchistory-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad55b0fce5f4bec27ec707a4f9578c627a07363
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0ce0b38b8e602688875549edbac671e664809482
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353615"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721246"
 ---
 # <a name="scchistory-function"></a>SccHistory-Funktion
-Diese Funktion zeigt den Verlauf der angegebenen Dateien.
+Diese Funktion zeigt den Verlauf der angegebenen Dateien an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,49 +38,49 @@ SCCRTN SccHistory(
 #### <a name="parameters"></a>Parameter
  `pvContext`
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.
 
  `hWnd`
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.
 
  `nFiles`
 
-[in] Anzahl der angegebenen Dateien in die `lpFileName` Array.
+in Anzahl der Dateien, die im `lpFileName` Array angegeben sind.
 
  `lpFileName`
 
-[in] Array von vollqualifizierten Namen von Dateien.
+in Array von voll qualifizierten Namen von Dateien.
 
  `fOptions`
 
-[in] Befehls-Flags (zurzeit nicht verwendet).
+in Befehlsflags (derzeit nicht verwendet).
 
  `pvOptions`
 
-[in] Quellcodeverwaltungs-plug-in spezifischen Optionen.
+in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
-|SCC_OK|Versionsverlauf wurde erfolgreich abgerufen.|
-|SCC_I_RELOADFILE|Das Quellcodeverwaltungssystem tatsächlich Datei auf dem Datenträger geändert, beim Abrufen des Verlaufs (beispielsweise durch Abrufen einer alten Version davon), damit die IDE die Datei neu geladen werden soll.|
-|SCC_E_FILENOTCONTROLLED|Die Datei ist nicht unter quellcodeverwaltung.|
-|SCC_E_OPNOTSUPPORTED|Das Quellcodeverwaltungssystem wird dieser Vorgang nicht unterstützt.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
+|SCC_OK|Der Versionsverlauf wurde erfolgreich abgerufen.|
+|SCC_I_RELOADFILE|Das Quell Code Verwaltungssystem änderte die Datei auf dem Datenträger, während der Verlauf abgerufen wurde (z.b. durch Abrufen einer alten Version), sodass die IDE diese Datei erneut laden sollte.|
+|SCC_E_FILENOTCONTROLLED|Die Datei befindet sich nicht unter Quell Code Verwaltung.|
+|SCC_E_OPNOTSUPPORTED|Das Quell Code Verwaltungssystem unterstützt diesen Vorgang nicht.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diesen Vorgang auszuführen.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen. Es wird empfohlen, eine Wiederholung auszuführen.|
 |SCC_E_PROJNOTOPEN|Das Projekt wurde nicht geöffnet.|
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler. Der Dateiversionsverlauf konnte nicht abgerufen werden.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler. Der Datei Versionsverlauf konnte nicht abgerufen werden.|
 
 ## <a name="remarks"></a>Hinweise
- Das Quellcodeverwaltungs-Plug-in kann ein eigenes Dialogfeld, um den Verlauf jeder Datei anzeigen Anzeigen mit `hWnd` als übergeordnetes Fenster. Alternativ Ausgabe von der optionale Text Rückruf Funktion angegeben wird, um die [SccOpenProject](../extensibility/sccopenproject-function.md) kann verwendet werden, wenn dies unterstützt wird.
+ Das Quellcodeverwaltungs-Plug-in kann ein eigenes Dialogfeld anzeigen, in dem der Verlauf der einzelnen Dateien angezeigt wird, indem `hWnd` als übergeordnetes Fenster verwendet wird. Alternativ kann die optionale, für das [sccopenproject](../extensibility/sccopenproject-function.md) bereitgestellte Textausgabe-Rückruffunktion verwendet werden, sofern diese unterstützt wird.
 
- Beachten Sie, dass unter bestimmten Umständen die untersuchte Datei während der Ausführung dieses Aufrufs ändern kann. Z. B. die [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] History-Befehl gibt dem Benutzer die Möglichkeit, die eine alte Version der Datei zu erhalten. In diesem Fall die Quellcode-Plug-Ins gibt `SCC_I_RELOAD` um der IDE zu warnen, dass die Datei neu geladen werden muss.
+ Beachten Sie, dass sich die Datei, die unter bestimmten Umständen überprüft wird, während der Ausführung dieses Aufrufes ändern kann. Der Befehl "[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] History" gibt dem Benutzer beispielsweise die Möglichkeit, eine alte Version der Datei zu erhalten. In einem solchen Fall gibt das Quellcodeverwaltungs-Plug-in `SCC_I_RELOAD` zurück, um die IDE zu warnen, dass Sie die Datei erneut laden muss.
 
 > [!NOTE]
-> Wenn das Quellcodeverwaltungs-Plug-in diese Funktion nicht für ein Array von Dateien unterstützt, kann nur der Dateiversionsverlauf für die erste Datei angezeigt werden.
+> Wenn das Quellcodeverwaltungs-Plug-in diese Funktion für ein Array von Dateien nicht unterstützt, kann nur der Datei Versionsverlauf für die erste Datei angezeigt werden.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

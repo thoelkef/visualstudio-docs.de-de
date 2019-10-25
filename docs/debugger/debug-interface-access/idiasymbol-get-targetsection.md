@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_targetsection | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_targetSection | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcfd72d7cd4cca527c2318b0c3c412020457e8e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 923c4558429927d95e333ff34ed136fdcf90ba4b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64821023"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739202"
 ---
-# <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
-Ruft den Adressabschnitt eines Thunk-Ziels ab.
+# <a name="idiasymbolget_targetsection"></a>IDiaSymbol::get_targetSection
+Ruft den Adress Abschnitt eines Thunk-Ziels ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_targetSection ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Abschnitt ein Thunk-Zieladresse Teil.
+vorgenommen Abschnitts Teil einer Thunk-Zieladresse.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

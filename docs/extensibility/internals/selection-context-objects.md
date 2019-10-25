@@ -1,5 +1,5 @@
 ---
-title: Auswahlkontextobjekte | Microsoft-Dokumentation
+title: Auswahl Kontext Objekte | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef76f417fe2b4371c73d78bbb90b0bd48470746a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc4f0aad4dd3f28f28259d0ca439a0cda1a520d9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318636"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723912"
 ---
 # <a name="selection-context-objects"></a>Auswahlkontextobjekte
-Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) verwendet ein Kontextobjekt für die globale Auswahl, um zu bestimmen, was in der IDE angezeigt werden soll. Jedes Fenster in der IDE haben eine eigene per Push an den globalen Auswahlkontext Auswahl Context-Objekt. Die IDE aktualisiert den Kontext für die globale Auswahl mit Werten aus einem Fenster, wenn das Fenster den Fokus hat. Weitere Informationen finden Sie unter [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md).
+Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) verwendet ein globales Auswahl Kontext Objekt, um zu bestimmen, was in der IDE angezeigt werden soll. Für jedes Fenster in der IDE kann ein eigenes Auswahl Kontext Objekt in den globalen Auswahl Kontext übermittelt werden. Die IDE aktualisiert den globalen Auswahl Kontext mit Werten aus einem Fenster, wenn dieses Fenster den Fokus besitzt. Weitere Informationen finden Sie unter [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md).
 
- Jeder Fensterrahmen oder der Standort in der IDE verfügt über einen Dienst namens <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. Aufrufen des Objekts, das von einem VSPackage, das im Fensterrahmen positioniert wird erstellt, muss die `QueryService` -Methode zum Abrufen der eines Zeigers auf die <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> Schnittstelle.
+ Jeder Fensterrahmen oder jede Site in der IDE verfügt über einen Dienst mit dem Namen <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. Das Objekt, das von Ihrem VSPackage erstellt wird, das im Fensterrahmen positioniert ist, muss die `QueryService`-Methode aufzurufen, um einen Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>-Schnittstelle zu erhalten.
 
- Rahmenfenster können Teile ihrer Auswahl Kontextinformationen aus an den globalen Auswahlkontext weitergegeben wird, wenn sie gestartet wurden, beibehalten. Diese Möglichkeit eignet sich für die Toolfenster, die mit der eine leere Auswahl beginnen können.
+ Rahmen Fenster können Teile Ihrer Auswahl Kontextinformationen daran halten, beim Start an den globalen Auswahl Kontext weitergegeben zu werden. Diese Fähigkeit ist nützlich für Tool Fenster, die möglicherweise mit einer leeren Auswahl beginnen müssen.
 
- Ändern die globale Auswahl Kontext löst Ereignisse, die VSPackages überwachen können. VSPackages können die folgenden Aufgaben ausführen, durch die Implementierung `IVsTrackSelectionEx` und <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> Schnittstellen:
+ Durch das Ändern des globalen Auswahl Kontexts werden Ereignisse ausgelöst, die von VSPackages überwacht werden können. VSPackages können die folgenden Aufgaben ausführen, indem Sie `IVsTrackSelectionEx` und <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> Schnittstellen implementieren:
 
-- Aktualisieren Sie die aktive Datei in einer Hierarchie.
+- Aktualisieren Sie die derzeit aktive Datei in einer Hierarchie.
 
-- Überwachen von Änderungen an, um bestimmte Arten von Elementen. Wenn das VSPackage einen speziellen verwendet z. B. **Eigenschaften** Fenster können Sie Änderungen an das aktive Überwachen **Eigenschaften** Fenster und Ihnen bei Bedarf neu zu starten.
+- Überwachen von Änderungen an bestimmten Elementtypen. Wenn für Ihr VSPackage beispielsweise ein spezielles **Eigenschaften** Fenster verwendet wird, können Sie Änderungen im aktiven **Eigenschaften** Fenster Überwachen und bei Bedarf ihren Neustart starten.
 
-  Die folgende Sequenz zeigt die typische Vorgehensweise auswahlnachverfolgung.
+  Die folgende Sequenz zeigt den typischen Verlauf der Auswahl Nachverfolgung.
 
-1. Die IDE den Auswahlkontext aus des neu geöffneten Fensters abgerufen und in den globalen Auswahlkontext eingefügt. Wenn die Auswahlkontext HIERARCHY_DONTPROPAGATE oder SELCONTAINER_DONTPROPAGATE verwendet, wird diese Informationen nicht an den globalen Kontext weitergegeben. Weitere Informationen finden Sie unter [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md).
+1. Die IDE Ruft den Auswahl Kontext aus dem neu geöffneten Fenster ab und legt ihn im globalen Auswahl Kontext ab. Wenn der Auswahl Kontext HIERARCHY_DONTPROPAGATE oder SELCONTAINER_DONTPROPAGATE verwendet, werden diese Informationen nicht an den globalen Kontext weitergegeben. Weitere Informationen finden Sie unter [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md).
 
-2. Benachrichtigungsereignisse sind an jedem VSPackage übertragen, die sie angefordert hat.
+2. Benachrichtigungs Ereignisse werden an jedes VSPackage gesendet, das Sie angefordert hat.
 
-3. Das VSPackage fungiert, auf die Ereignisse, die es empfängt, indem Sie Aktivitäten wie das Aktualisieren einer Hierarchie, und reaktivieren ein Tool oder andere ähnlichen Aufgaben ausführen.
+3. Das VSPackage wirkt sich auf die empfangenen Ereignisse aus, indem er Aktivitäten wie das Aktualisieren einer Hierarchie, das erneute Aktivieren eines Tools oder andere ähnliche Aufgaben ausführt.
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>

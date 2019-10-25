@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_allocatesBasePointer | Microsoft-Dokumentation
+title: 'IDiaStackFrame:: get_allocatesBasePointer | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f39b55ffc14d423d4197765ef89784940f137b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6710a20bb5a01d3d342c31b48f1f96e7e2a2062a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832234"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741766"
 ---
-# <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
-Ruft ein Flag, das angibt, ob der basiszeiger für Code in dieser Adressbereich zugeordnet ist.
+# <a name="idiastackframeget_allocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
+Ruft ein Flag ab, das angibt, ob der Basis Zeiger für Code in diesem Adressbereich zugeordnet wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_allocatesBasePointer ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn ein Basis-Zeiger für Code in diesem Frame; zugeordnet ist, andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn für den Code in diesem Frame ein Basis Zeiger zugeordnet ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

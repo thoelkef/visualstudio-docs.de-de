@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54b326116b1e1b677a997b264cf0c168a93febb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554895"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745261"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
-Beschreibt einen Eintrag in einer-Adresszuordnung an.
+Beschreibt einen Eintrag in einer Adress Zuordnung.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,22 +32,22 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elements
-`rva` Eine relative virtuelle Adresse (RVA) in Abbildung A.
+`rva` eine relative virtuelle Adresse (RVA) in Image A.
 
-`rvaTo` Die relative virtuelle Adresse `rva` in Abbildung b zugeordnet ist
+`rvaTo` die relative virtuelle Adresse `rva` die in Image B zugeordnet ist.
 
 ## <a name="remarks"></a>Hinweise
-Eine Adresszuordnung enthält eine Übersetzung aus einem Image-Layout (A) in einem anderen (B). Ein Array von `DiaAddressMapEntry` Strukturen, sortiert nach `rva` definiert eine Adresszuordnung.
+Eine Adress Zuordnung bietet eine Übersetzung von einem Bild Layout (a) zu einem anderen (B). Ein Array von `DiaAddressMapEntry` Strukturen, sortiert nach `rva` definiert eine Adress Zuordnung.
 
-Um eine Adresse zu übersetzen `addrA`, in der Abbildung ein in eine Adresse `addrB`, führen Sie in Abbildung B die folgenden Schritte aus:
+Führen Sie die folgenden Schritte aus, um eine Adresse `addrA` in Image a in eine Adresse `addrB` in Abbildung B zu übersetzen:
 
-1. Suchen Sie die Zuordnung für den Eintrag, `e`, mit dem größten `rva` kleiner als oder gleich `addrA`.
+1. Durchsuchen Sie die Zuordnung für den Eintrag `e`, wobei die größte `rva` kleiner oder gleich `addrA` ist.
 
 2. Legen Sie `delta = addrA - e.rva` fest.
 
 3. Legen Sie `addrB = e.rvaTo + delta` fest.
 
-    Ein Array von `DiaAddressMapEntry` Strukturen übergeben wird, um die [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) Methode.
+    Ein Array von `DiaAddressMapEntry` Strukturen wird an die [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) -Methode übermittelt.
 
 ## <a name="requirements"></a>Anforderungen
 Header: dia2.h

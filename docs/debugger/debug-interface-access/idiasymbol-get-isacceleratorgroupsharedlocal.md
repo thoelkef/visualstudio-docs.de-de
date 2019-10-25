@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_isAcceleratorGroupSharedLocal | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1d6cf755121f851e652cce251ace2105e6773822
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740332"
 ---
-# <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-Ruft ein Flag, das angibt, ob das Symbol auf eine freigegebene lokale Gruppenvariable im Code für eine C++-AMP-Beschleuniger kompiliert entspricht.
+# <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
+Ruft ein Flag ab, das angibt, ob das Symbol einer freigegebenen lokalen Variablen einer Gruppe in Code entspricht C++ , der für einen amp-Accelerator kompiliert wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Ein Zeiger auf eine `BOOL` , der angibt, ob eine freigegebene lokale Gruppenvariable in Code kompiliert wird, für das Symbol entspricht einem C++ Ampaccelerator. Wenn `TRUE`, `get_baseDataSlot` und `get_baseDataOffset` Methoden können verwendet werden, um die Speicherortinformationen für die Variable abzurufen.
+vorgenommen Ein Zeiger auf einen `BOOL` der angibt, ob das Symbol einer lokalen Gruppen Variablen in Code entspricht, der für einen C++ amp-Accelerator kompiliert wurde. Wenn `TRUE`, können die `get_baseDataSlot`-und `get_baseDataOffset`-Methoden verwendet werden, um die Speicherort Informationen für die Variable zu erhalten.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

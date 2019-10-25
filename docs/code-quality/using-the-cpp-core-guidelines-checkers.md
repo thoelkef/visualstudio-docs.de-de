@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445656"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807076"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Verwenden der Überprüfungen für C++ Core Guidelines
 
@@ -80,17 +80,17 @@ Wenn der C++ kernrichtlinienprüfung neue Regeln hinzugefügt werden, kann sich 
 Referenz Themen zu den meisten Regeln finden [Sie unter C++ Referenz zu Visual Studio Core-Überprüfung](code-analysis-for-cpp-corecheck.md).
 
 Ab Visual Studio 2017 Version 15,3 sind folgende Regelsätze unterstützt:
-- **Besitzer Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen im Zusammenhang mit Besitzer \<T > aus C++ den grundlegenden Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Besitzer Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen im Zusammenhang mit Besitzer \<T > aus C++ den grundlegenden Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- Mit **Konstanten Regeln** werden über [Prüfungen C++ der Kern Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)durchgeführt.
+- Mit **Konstanten Regeln** werden über [Prüfungen C++ der Kern Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)durchgeführt.
 
-- **Rohzeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen im Zusammenhang mit unformatierten C++ Zeigern aus den grundlegenden Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Rohzeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen im Zusammenhang mit unformatierten C++ Zeigern aus den grundlegenden Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **Eindeutige Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen in Bezug auf Typen mit eindeutiger Zeiger Semantik aus C++ den grundlegenden Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Eindeutige Zeiger Regeln** erzwingen [Ressourcen Verwaltungs Prüfungen in Bezug auf Typen mit eindeutiger Zeiger Semantik aus C++ den grundlegenden Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **Grenzen Regeln** erzwingen das [Rahmenprofil der C++ grundlegenden Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Grenzen Regeln** erzwingen das [Rahmenprofil der C++ grundlegenden Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-- **Typregeln** erzwingen das [Typprofil der C++ grundlegenden Richtlinien](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Typregeln** erzwingen das [Typprofil der C++ grundlegenden Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 **Visual Studio 2017 Version 15.5**:
 
@@ -131,7 +131,7 @@ Diese Makros entsprechen den Regelsätzen und werden in eine durch Leerzeichen g
 
 ## <a name="attributes"></a>Attribute
 
-Der Microsoft Visual C++ Compiler bietet eingeschränkte Unterstützung für das gsl-Unterbrechungs Attribut. Sie kann verwendet werden, um Warnungen für Ausdrucks-und Block Anweisungen innerhalb einer Funktion zu unterdrücken.
+Der Microsoft C++ -Compiler bietet eingeschränkte Unterstützung für das gsl-Unterbrechungs Attribut. Sie kann verwendet werden, um Warnungen für Ausdrucks-und Block Anweisungen innerhalb einer Funktion zu unterdrücken.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -231,11 +231,11 @@ Sie müssen einige Umgebungsvariablen festlegen und geeignete Befehlszeilenoptio
    - `/analyze:plugin EspXEngine.dll` mit dieser Option wird die Code Analyse-Erweiterungs-Engine in den PREfast-Wert geladen. Diese Engine lädt wiederum die C++ grundlegenden Leitlinien Prüfung.
 
 ## <a name="use-the-guideline-support-library"></a>Verwenden der Unterstützungs Bibliothek für Richtlinien
-Die Unterstützungs Bibliothek für die Richtlinie soll Ihnen helfen, die grundlegenden Richtlinien zu befolgen. Die GSL enthält Definitionen, mit denen Sie fehleranfällige Konstrukte durch sicherere Alternativen ersetzen können. Beispielsweise können Sie ein `T*, length` Parameter paar durch den `span<T>`-Typ ersetzen. Die GSL ist unter [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)verfügbar. Die Bibliothek ist Open Source, sodass Sie die Quellen anzeigen, Kommentare erstellen oder mitwirken können. Das Projekt finden Sie unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Die Unterstützungs Bibliothek für die Richtlinie soll Ihnen helfen, die grundlegenden Richtlinien zu befolgen. Die GSL enthält Definitionen, mit denen Sie fehleranfällige Konstrukte durch sicherere Alternativen ersetzen können. Beispielsweise können Sie ein `T*, length` Parameter paar durch den `span<T>`-Typ ersetzen. Die GSL ist unter [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl)verfügbar. Die Bibliothek ist Open Source, sodass Sie die Quellen anzeigen, Kommentare erstellen oder mitwirken können. Das Projekt finden Sie unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Verwenden der C++ grundlegenden Check-Richtlinien in Visual Studio 2015-Projekten
 
-Wenn Sie Visual Studio 2015 verwenden, werden C++ die Kern Regelsätze für die Code Analyse nicht standardmäßig installiert. Sie müssen einige zusätzliche Schritte ausführen, bevor Sie die Analyse C++ Tools für die Kern Überprüfung in Visual Studio 2015 aktivieren können. Microsoft bietet Unterstützung für Visual Studio 2015-Projekte mithilfe eines nuget-Pakets. Das Paket heißt "Microsoft. cppcorecheck" und ist unter [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)verfügbar. Für dieses Paket ist mindestens Visual Studio 2015 mit installiertem Update 1 erforderlich.
+Wenn Sie Visual Studio 2015 verwenden, werden C++ die Kern Regelsätze für die Code Analyse nicht standardmäßig installiert. Sie müssen einige zusätzliche Schritte ausführen, bevor Sie die Analyse C++ Tools für die Kern Überprüfung in Visual Studio 2015 aktivieren können. Microsoft bietet Unterstützung für Visual Studio 2015-Projekte mithilfe eines nuget-Pakets. Das Paket heißt "Microsoft. cppcorecheck" und ist unter [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck)verfügbar. Für dieses Paket ist mindestens Visual Studio 2015 mit installiertem Update 1 erforderlich.
 
 Das Paket installiert auch ein anderes Paket als Abhängigkeit, eine nur-Header-Richtlinien-Unterstützungs Bibliothek (GSL). Die GSL ist auch auf GitHub unter [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)verfügbar.
 

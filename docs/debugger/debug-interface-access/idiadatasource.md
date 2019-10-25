@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 453be1d77f1d2b1759e3de4433225cf97d026054
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838518"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744908"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
-Initiiert den Zugriff auf eine Quelle für die Debugsymbole.
+Initiiert den Zugriff auf eine Quelle von Debugsymbolen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,22 +29,22 @@ IDiaDataSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
-Die folgende Tabelle zeigt die Methoden der `IDiaDataSource`.
+In der folgenden Tabelle sind die Methoden von `IDiaDataSource` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Ruft den Dateinamen für die letzten Ladefehler ab.|
-|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Wird geöffnet, und bereitet eine Programmdatenbankdatei (.pdb) als Datenquelle Debuggen.|
-|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Wird geöffnet und überprüft, ob die Programmdatenbankdatei (.pdb) der bereitgestellten Signaturinformationen übereinstimmt; Bereitet die PDB-Datei als Datenquelle Debuggen.|
-|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Wird geöffnet, und bereitet die Debug-Daten, die der Datei.exe/.dll zugeordnet.|
-|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Bereitet die Debug-Daten in ein Zugriff erfolgt über einen in-Memory-Datenstrom Programmdatenbankdatei (PDB) gespeichert.|
-|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Wird eine Sitzung für das Abfragen von Symbolen geöffnet.|
+|[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Ruft den Dateinamen für den letzten Ladefehler ab.|
+|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Öffnet eine Programm Datenbankdatei (PDB-Datei) als debugdatenquelle und bereitet Sie vor.|
+|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Öffnet und überprüft, ob die Programm Datenbankdatei (PDB-Datei) mit den bereitgestellten Signatur Informationen übereinstimmt. bereitet die PDB-Datei als debugdatenquelle vor.|
+|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Öffnet und bereitet die der exe-/dll-Datei zugeordneten Debugdaten vor.|
+|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Bereitet die Debugdaten vor, die in einer Programm Datenbankdatei (PDB-Datei) gespeichert sind, auf die über einen Speicher internen Datenstrom zugegriffen wird|
+|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Öffnet eine Sitzung zum Abfragen von Symbolen.|
 
 ## <a name="remarks"></a>Hinweise
-Aufrufen einer der Load-Methoden von der `IDiaDataSource` Schnittstelle öffnet die Symbol-Quelle. Einem erfolgreichen Aufruf der [idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) Methode gibt ein [IDiaSession](../../debugger/debug-interface-access/idiasession.md) -Schnittstelle, die Abfragen der Datenquelle unterstützt. Wenn die Load-Methode einen Datei-bezogener Fehler zurückgibt und dann die [idiadatasource:: Get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) Methodenrückgabewert Wert enthält den Dateinamen, die dem Fehler zugeordnet.
+Wenn Sie eine der Load-Methoden der `IDiaDataSource`-Schnittstelle aufzurufen, wird die Symbol Quelle geöffnet. Ein erfolgreicher Abruf der [IDiaDataSource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) -Methode gibt eine [IDiaSession](../../debugger/debug-interface-access/idiasession.md) -Schnittstelle zurück, die die Abfrage der Datenquelle unterstützt. Wenn die Load-Methode einen Datei bezogenen Fehler zurückgibt, enthält der [IDiaDataSource:: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) -Methodenrückgabewert den Dateinamen, der dem Fehler zugeordnet ist.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
-Diese Schnittstelle wird abrufen durch Aufrufen der `CoCreateInstance` -Funktion mit den Klassenbezeichner `CLSID_DiaSource` und die Schnittstellen-ID des `IID_IDiaDataSource`. Im Beispiel wird gezeigt, wie diese Schnittstelle abgerufen wird.
+Diese Schnittstelle wird durch Aufrufen der `CoCreateInstance`-Funktion mit dem Klassen Bezeichner `CLSID_DiaSource` und der Schnittstellen-ID `IID_IDiaDataSource` abgerufen. Das Beispiel zeigt, wie diese Schnittstelle abgerufen wird.
 
 ## <a name="example"></a>Beispiel
 
@@ -65,7 +65,7 @@ if (FAILED(hr))
 ## <a name="requirements"></a>Anforderungen
 Header: Dia2.h
 
-Bibliothek: diaguids.lib
+Bibliothek: diaguids. lib
 
 DLL: msdia80.dll
 

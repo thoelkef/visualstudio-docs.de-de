@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b62c5efb520e90606d6311b60a839404359720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56dd91e76380bb4f43fae4f26d4124b2f9bc3ebf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832362"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741983"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-Ruft einen bestimmtes Symbol-Typ, der enthält und am nächsten ist, eine angegebene virtuelle Adresse (VA) und Offset.
+Ruft einen angegebenen Symboltyp ab, der eine angegebene virtuelle Adresse (VA) und einen Offset enthält bzw. am nächsten liegt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByVAEx ( 
 #### <a name="parameters"></a>Parameter
  `va`
 
-[in] Gibt an, die Virginia
+in Gibt den VA an.
 
  `symtag`
 
-[in] Der Symboltyp gefunden werden. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.
+in Symboltyp, der gefunden werden soll. Werte werden aus der Enumeration der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) entnommen.
 
  `ppSymbol`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das abgerufene Symbol darstellt.
 
  `displacement`
 
-[out] Gibt einen Wert, der angibt, einen Offset von der virtuellen Adresse, die vom `va`.
+vorgenommen Gibt einen Wert zurück, der einen Offset von der virtuellen Adresse angibt, die von `va` angegeben wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

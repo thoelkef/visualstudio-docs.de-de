@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_write | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_write | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf20c4fe040155e6f2a88312b1fb0eab17e7f7df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ff75cf724d804aca2e197804c5ca223db261ca0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827618"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742483"
 ---
-# <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
-Ruft ein Flag, das angibt, ob der Abschnitt geändert werden kann.
+# <a name="idiasectioncontribget_write"></a>IDiaSectionContrib::get_write
+Ruft ein Flag ab, das angibt, ob der Abschnitt geändert werden kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_write ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn der Abschnitt, andernfalls gibt geschrieben werden kann `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn in den Abschnitt geschrieben werden kann. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

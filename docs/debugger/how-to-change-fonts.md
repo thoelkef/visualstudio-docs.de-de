@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cf933dc7277f0f4c1533ca071a391b78413b029
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848067"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733939"
 ---
-# <a name="how-to-change-fonts"></a>Vorgehensweise: Ändern von Schriftarten
-Sie können die Schriftart, Schriftschnitt und Schriftgröße für Spy++-Fenstern ändern.
+# <a name="how-to-change-fonts"></a>Gewusst wie: Ändern von Schriftarten
+Sie können die Schriftart, den Schrift Schnitt und den Schrift Grad für Spy + +-Fenster ändern.
 
-### <a name="to-change-font-options"></a>So ändern Sie Optionen für Schriftarten
+### <a name="to-change-font-options"></a>So ändern Sie die Schriftart Optionen
 
-1. Von der **Ansicht** Menü wählen **Schriftart**.
+1. Wählen Sie im Menü **Ansicht** die Option **Schriftart**aus.
 
-2. Wählen Sie eine Schriftart, Schriftschnitt und Schriftgröße an.
+2. Wählen Sie eine Schriftart, den Schrift Schnitt und den Schrift Grad aus.
 
 3. Klicken Sie auf **OK**.
 
-   Auswählen von **als Standard speichern** bewirkt, dass alle zukünftigen Spy++ Windows diese Schriftart verwendet.
+   **Wenn Sie Schriftart als Standard speichern** auswählen, wird diese Schriftart in zukünftigen Spy + +-Fenstern verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwenden von Spy++](../debugger/using-spy-increment.md)

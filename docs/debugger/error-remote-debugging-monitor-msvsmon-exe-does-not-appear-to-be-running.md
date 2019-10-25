@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dcd45cb64656b926b9c59efd7b6af14d2ec4c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850651"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737557"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend auf dem Remotecomputer nicht ausgeführt.
-Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine passende Instanz des Visual Studio-Remotedebugmonitors finden konnte. Der Visual Studio-Remotedebugmonitor muss installiert werden, damit das Remotedebuggen funktioniert. Informationen zum Herunterladen und Einrichten des Remotedebuggers finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
+Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine passende Instanz des Visual Studio-Remotedebugmonitors finden konnte. Der Visual Studio-Remotedebugmonitor muss installiert werden, damit das Remotedebuggen funktioniert. Weitere Informationen zum herunterladen und Einrichten des Remote [Debuggers](../debugger/remote-debugging.md)finden Sie unter Remote Debugging.
 
 > [!IMPORTANT]
-> Wenn Sie glauben, Sie haben diese Meldung aufgrund eines Produktfehlers erhalten, wenden Sie [melden Sie das Problem in Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Wenn Sie weitere Hilfe benötigen, erfahren Sie unter [Talk to Us](../ide/talk-to-us.md) , wie Sie Kontakt mit Microsoft aufnehmen.
+> Wenn Sie der Meinung sind, dass Sie diese Meldung aufgrund eines Produktfehlers erhalten haben, [melden Sie dieses Problem in Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Wenn Sie weitere Hilfe benötigen, erfahren Sie unter [Talk to Us](../ide/talk-to-us.md) , wie Sie Kontakt mit Microsoft aufnehmen.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Ich habe diese Meldung beim Debuggen in Visual Studio 2010 oder einer früheren Version erhalten
- Wenn Sie Visual Studio 2010 oder eine frühere Version von Visual Studio verwenden, kann dieser Fehler auch darauf hinweisen, dass die Datei- und Druckerfreigabe nicht aktiviert ist. Weitere Informationen zu diesem Problem finden, finden Sie in der Visual Studio 2010-Version dieser Dokumentation: [Fehler: Die Microsoft Visual Studio-Remotedebugmonitor (MSVSMON. EXE-Datei) wird nicht angezeigt, auf dem Remotecomputer ausgeführt werden. – Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
+ Wenn Sie Visual Studio 2010 oder eine frühere Version von Visual Studio verwenden, kann dieser Fehler auch darauf hinweisen, dass die Datei- und Druckerfreigabe nicht aktiviert ist. Weitere Informationen zu diesem Problem finden Sie in der Visual Studio 2010-Version dieser Dokumentation: [Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer. - Visual Studio 2010 (Fehler: Der Microsoft Visual Studio-Remotedebugmonitor (MSVSMON.EXE) wird anscheinend nicht auf dem Remotecomputer ausgeführt – Visual Studio 2010)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)).
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Ich habe diese Meldung beim lokalen Debuggen erhalten
  Wenn Sie diese Meldung beim lokalen Debuggen erhalten, kann dies an Ihrer Antivirussoftware oder einer Drittanbieter-Firewall liegen. Visual Studio ist eine 32-Bit-Anwendung, die zum Debuggen von 64-Bit-Anwendungen die 64-Bit-Version des Remotedebuggers verwendet. Die beiden Prozesse kommunizieren über das lokale Netzwerk innerhalb des lokalen Computers. Kein Datenverkehr verlässt den Computer, aber es ist möglich, dass Drittanbieter-Sicherheitssoftware die Kommunikation blockiert.
@@ -64,15 +64,15 @@ Diese Fehlermeldung bedeutet, dass Visual Studio auf dem Remotecomputer keine pa
  Die Windows-Antivirussoftware lässt Remotedebuggerverbindungen zu, von mancher Drittanbieter-Antivirussoftware werden sie jedoch blockiert. Informieren Sie sich in der Dokumentation Ihrer Antivirussoftware darüber, wie Sie diese Verbindungen zulassen.
 
 ## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>Die Netzwerksicherheitsrichtlinie blockiert die Kommunikation zwischen dem Remotecomputer und Visual Studio
- Stellen Sie sicher, dass durch die Netzwerksicherheit keine Kommunikation blockiert wird. Weitere Informationen zur Sicherheitsrichtlinie für Windows-Netzwerke finden Sie unter [sicherheitsrichtlinieneinstellungen](/windows/device-security/security-policy-settings/security-policy-settings).
+ Stellen Sie sicher, dass durch die Netzwerksicherheit keine Kommunikation blockiert wird. Weitere Informationen zur Windows-Netzwerk Sicherheitsrichtlinie finden Sie unter [Sicherheitsrichtlinien Einstellungen](/windows/device-security/security-policy-settings/security-policy-settings).
 
 ## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>Das Netzwerk ist überlastet und unterstützt daher zurzeit kein Remotedebuggen
  Möglicherweise müssen Sie das Remotedebuggen zu einem anderen Zeitpunkt ausführen oder die Arbeiten im Netzwerk für einen anderen Zeitpunkt planen.
 
 ## <a name="more-help"></a>Weitere Hilfe
- Zum Abrufen von weiteren remote Debugger-Hilfe, einschließlich Befehlzeilenoptionen, klicken Sie auf **Hilfe > Verwendung** im Remotedebugger-Fenster. Wenn Sie geöffnet haben können Sie der Webseite anzeigen, indem Sie kopieren die folgende Zeile ein **Datei-Explorer** Fenster. (Sie ersetzen müssen \<Visual Studio-Installationsverzeichnis > durch den Speicherort von Visual Studio-Installation.)
+ Um weitere remotedebuggerhilfe, einschließlich Befehls Zeilenschalter, zu erhalten, klicken Sie im Fenster Remote Debugger auf **Hilfe > Verwendung** . Wenn Sie es nicht geöffnet haben, können Sie die Webseite sehen, indem Sie die folgende Zeile in ein **Datei-Explorer** -Fenster kopieren. (Sie müssen \<Visual Studio-Installations > Verzeichnis durch den Speicherort Ihrer Visual Studio-Installation ersetzen.)
 
- Res: / /*\<Visual Studio-Installationsverzeichnis >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ res:// *\<Visual Studio-Installationsverzeichnis >* \ Common7 \ IDE \ Remote %2 0 Debugger \ x64 \ msvsmon. exe/help. htm
 
 ## <a name="see-also"></a>Siehe auch
 - [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)

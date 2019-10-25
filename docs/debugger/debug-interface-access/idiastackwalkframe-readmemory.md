@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837913"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741477"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
-Liest Arbeitsspeicher aus Image an.
+Liest Speicher aus dem Image.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,26 +37,26 @@ HRESULT readMemory ( 
 #### <a name="parameters"></a>Parameter
  `type`
 
-[in] Eines der [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) Enumerationswerte, der angibt, die Art des Arbeitsspeichers auf.
+in Einer der [MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) -Enumerationswerte, der die Art des Arbeitsspeichers angibt, auf den zugegriffen werden soll.
 
  `va`
 
-[in] Speicherort der virtuellen Adresse in Abbildung gelesen werden soll.
+in Der Speicherort der virtuellen Adresse in Image zum beginnen des Lesens.
 
  `cbData`
 
-[in] Größe des Datenpuffers in Byte.
+in Größe des Daten Puffers in Bytes.
 
  `pcbData`
 
-[out] Gibt die Anzahl der zurückgegebenen Bytes. Wenn `data` ist `NULL`, klicken Sie dann `pcbData` enthält die Gesamtzahl der Bytes der Daten zur Verfügung.
+vorgenommen Gibt die Anzahl der zurückgegebenen Bytes zurück. Wenn `data` `NULL` ist, enthält `pcbData` die Gesamtzahl der verfügbaren Daten bytes.
 
  `data`
 
-[out] Ein Puffer, der mit Daten aus der angegebenen Position gefüllt werden soll.
+vorgenommen Ein Puffer, der mit Daten aus der angegebenen Position ausgefüllt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

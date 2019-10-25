@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isdataaligned | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isDataAligned | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a46b84ff8af4163d6341f1cabbbe339379c0de
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 27a03dbc66cd3ba46fc080d856c559eabc7e289e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808845"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740250"
 ---
-# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
-Ruft ein Flag, das angibt, ob es sich bei der benutzerdefinierten Typ (UDT) verfügt über einige bestimmte Speichergrenze ausgerichtet wurde.
+# <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
+Ruft ein Flag ab, das angibt, ob der benutzerdefinierte Typ (User-Defined Type, UDT) an einer bestimmten Speichergrenze ausgerichtet wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,23 +33,23 @@ HRESULT get_isDataAligned(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` , wenn der UDT hat einige Speichergrenze; ausgerichtet wurde, andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der UDT an einer Speichergrenze ausgerichtet wurde. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Diese Eigenschaft wird in der Regel festgelegt, wenn die ausführbare Datei mit nicht standardmäßigen datenausrichtung kompiliert wird. Z. B. Microsoft C++-Compiler kann ändern, die datenausrichtung mit der Befehlszeilenoption/Zp<em>#</em>, wobei *#* ist ein Byte-Wert.
+ Diese Eigenschaft wird im Allgemeinen festgelegt, wenn die ausführbare Datei mit einer nicht standardmäßigen Daten Ausrichtung kompiliert wird. Der Microsoft C++ -Compiler kann z. b. die Daten Ausrichtung mit der Befehlszeilenoption/ZP <em>#</em>ändern, wobei *#* ein Bytewert ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

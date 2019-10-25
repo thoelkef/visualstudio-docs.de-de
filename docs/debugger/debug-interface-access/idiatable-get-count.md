@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Get_count | Microsoft-Dokumentation'
+title: 'Idisierbar:: get_Count | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64fcf47e6d1b315499bc2e43ab32459bf11c091
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ce325c51a9dfcee32093a0a1fafe82ea6a7fdd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834518"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738749"
 ---
-# <a name="idiatablegetcount"></a>IDiaTable::get_Count
+# <a name="idiatableget_count"></a>IDiaTable::get_Count
 Ruft die Anzahl der Elemente in der Tabelle ab.
 
 ## <a name="syntax"></a>Syntax
@@ -33,10 +33,10 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Anzahl der Elemente in der Tabelle zurück.
+vorgenommen Gibt die Anzahl der Elemente in der Tabelle zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

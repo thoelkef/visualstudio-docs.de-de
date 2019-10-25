@@ -16,34 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31eb3427a441b4b79bbd57d9da9871118173b15c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11ad6280ad1213008bbb8ca8f6311ca34231d308
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849404"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732441"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens in Visual Studio (C#, Visual Basic C++)
-Beim Debuggen einer Multithreadanwendung können Sie eine von mehreren Methoden verwenden, um über den Thread zu wechseln, die Sie zu einem anderen Thread gearbeitet haben.
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Gewusst wie: Wechseln zu einem anderen Thread während des DebuggensC#in Visual Studio C++(, Visual Basic,)
+Wenn Sie eine Multithreadanwendung Debuggen, können Sie eine beliebige Methode verwenden, um von dem Thread, mit dem Sie gearbeitet haben, zu einem anderen Thread zu wechseln.
 
 > [!NOTE]
-> Wenn Sie die Reihenfolge steuern, in denen Threads ausführen, möchten, müssen Sie [Einfrieren und Reaktivieren von Threads](../debugger/get-started-debugging-multithreaded-apps.md).
+> Wenn Sie die Reihenfolge steuern möchten, in der die Threads ausgeführt werden, müssen Sie [Threads fixieren und](../debugger/get-started-debugging-multithreaded-apps.md)in den Thread laden.
 
-Wenn Sie Threads im Code-Editor und die verschiedenen Multithread-debugging-Fenster die überprüfen, gibt der gelbe Pfeil des aktuellen Threads an. Ein grüner Pfeil in Form einer Welle gibt an, dass eine nicht-aktuellen Threads den aktuellen Debuggerkontext hat.
+Wenn Sie Threads im Code-Editor und unterschiedlichen multithreaddebuggingfenstern untersuchen, zeigt der gelbe Pfeil den aktuellen Thread an. Ein grüner Pfeil mit einem geschweiften Ende zeigt an, dass ein nicht aktueller Thread über den aktuellen Debugger-Kontext verfügt.
 
-### <a name="to-switch-to-any-thread-that-appears"></a>Wechseln Sie an einen beliebigen Thread, der angezeigt wird
+### <a name="to-switch-to-any-thread-that-appears"></a>So wechseln Sie zu einem beliebigen Thread, der angezeigt wird
 
-- In der **Threads** oder **parallele Überwachung** Fenster, doppelklicken Sie auf den Thread.
+- Doppelklicken Sie im Fenster **Threads** oder **parallele Überwachung** auf den Thread.
 
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>So wechseln Sie zu einem Thread in einem Quellcodefenster
 
-- Im linken Bundsteg, mit der Maustaste ein Thread-Marker-Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker"), zeigen Sie auf **wechseln Sie zur**, und klicken Sie dann auf den Namen des Threads, zu dem Sie wechseln möchten, . Im Kontextmenü werden nur die Threads an dieser bestimmten Position angezeigt.
+- Klicken Sie im linken Bundbereich mit der rechten Maustaste auf ein Thread Marker-Symbol ![Thread Marker](../debugger/media/dbg-thread-marker.png "Threadmarker"), zeigen Sie auf **Wechseln zu**, und klicken Sie dann auf den Namen des Threads, zu dem Sie wechseln möchten. Im Kontextmenü werden nur die Threads an dieser bestimmten Position angezeigt.
 
-     Wenn kein Threadmarker angezeigt werden, mit der Maustaste in den **Threads** Fenster, und überprüfen Sie, ob **Threads in Quelle anzeigen** ausgewählt ist.
+     Wenn keine Thread Markierungen angezeigt werden, klicken Sie mit der rechten Maustaste in das Fenster **Threads** , und vergewissern Sie sich, dass **Threads in Quelle anzeigen** ausgewählt ist.
 
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>So wechseln Sie über die Symbolleiste Debugspeicherort zu einem Thread
 
-1. Auf der **Debugspeicherort** -Symbolleiste klicken Sie auf die **Thread** Liste.
+1. Klicken Sie auf der Symbolleiste **Debugspeicherort** auf die Liste **Thread** .
 
 2. Klicken Sie in der Liste auf den Thread, zu dem Sie wechseln möchten.
 

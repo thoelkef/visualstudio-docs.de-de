@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_machinetype | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_machineType | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef0507ccb7036748f5c9d36c9de521a17860a39
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5ea9f5762e265b2892a906060a430db03f7b7d67
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67032710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739838"
 ---
-# <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
+# <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
 Ruft den Typ der Ziel-CPU ab.
 
 ## <a name="syntax"></a>Syntax
@@ -33,13 +33,13 @@ HRESULT get_machineType ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt einen Wert aus der [IMAGE_FILE_MACHINE_ Konstanten](/windows/desktop/SysInfo/image-file-machine-constants) , die das Ziel-CPU-Typ angibt.
+vorgenommen Gibt einen Wert aus den [IMAGE_FILE_MACHINE_-Konstanten](/windows/desktop/SysInfo/image-file-machine-constants) zurück, der den CPU-Zieltyp angibt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IMAGE_FILE_MACHINE_-Konstanten](/windows/desktop/SysInfo/image-file-machine-constants) 

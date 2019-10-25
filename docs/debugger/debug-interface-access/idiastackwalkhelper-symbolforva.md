@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkhelper:: Symbolforva | Microsoft-Dokumentation'
+title: 'IDiaStackWalkHelper:: symbolForVA | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c457947eb84859f2ce92378688dd03c624c86d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f646616fddc0e7727ef9e8e80d9c29fbcba6ebc0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837887"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741322"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
-Ruft ab, das Symbol, das die angegebene virtuelle Adresse enthält.
+Ruft das Symbol ab, das die angegebene virtuelle Adresse enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT symbolForVA( 
 #### <a name="parameters"></a>Parameter
  `va`
 
-[in] Die virtuelle Adresse, die im angeforderten Symbol enthalten ist. Das Symbol muss eine `SymTagFunctionType` (ein Wert aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration).
+in Die virtuelle Adresse, die im angeforderten Symbol enthalten ist. Das Symbol muss ein `SymTagFunctionType` sein (ein Wert aus der Enumeration " [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ").
 
  `ppSymbol`
 
-[out] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das Symbol an der angegebenen Adresse darstellt.
+vorgenommen Ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das das Symbol bei der angegebenen Adresse darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

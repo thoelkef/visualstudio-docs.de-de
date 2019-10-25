@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854830"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738553"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
-Gibt den Stack-Frame-Typ.
+Gibt den Stapel Rahmentyp an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,20 +36,20 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elements
-`FrameTypeFPO` Frame-Pointer ausgelassen; FPO-Informationen verfügbar.
+`FrameTypeFPO` Frame Zeiger ausgelassen. Die verfügbaren Informationen zur Verfügbarkeit
 
-`FrameTypeTrap` Kernel-Trap-Frame.
+`FrameTypeTrap` Kernel Trap Frame.
 
-`FrameTypeTSS` Kernel-Trap-Frame.
+`FrameTypeTSS` Kernel Trap Frame.
 
-`FrameTypeStandard` Standard EBP-Stapelrahmen.
+`FrameTypeStandard` Standard-EBP-Stapel Rahmen.
 
-`FrameTypeFrameData` Frame-Pointer ausgelassen; Frame-Daten-Informationen verfügbar.
+`FrameTypeFrameData` Frame Zeiger ausgelassen. Informationen zur Frame-Daten sind verfügbar.
 
-`FrameTypeUnknown` Frame aus, der kein Debuginformationen vorhanden wären.
+`FrameTypeUnknown` Frame, der keine Debuginformationen enthält.
 
 ## <a name="remarks"></a>Hinweise
-Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.
+Die Werte in dieser Enumeration werden von einem Rückruf der [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) -Methode zurückgegeben.
 
 ## <a name="requirements"></a>Anforderungen
 Header: cvconst.h

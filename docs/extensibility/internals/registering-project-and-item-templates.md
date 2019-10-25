@@ -1,5 +1,5 @@
 ---
-title: Registrieren von Projekt- und Elementvorlagen | Microsoft-Dokumentation
+title: Registrieren von Projekt-und Element Vorlagen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e35a476ab8fe8d8de3ce11dd117de4c84a3befa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319511"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724626"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
-Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und Projekt Vorlagen befinden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Bestimmt die Registrierungsinformationen Ihrer Projekttypen zugeordnet, was für die anzuzeigenden in die **neues Projekt hinzufügen** und **neues Element hinzufügen** Dialogfelder.
+Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-und Projekt Element Vorlagen befinden. in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] werden die mit den Projekttypen verknüpften Registrierungsinformationen verwendet, um zu bestimmen, was in den Dialogfeldern **Neues Projekt hinzufügen** und **Neues Element hinzufügen** angezeigt werden soll.
 
- Weitere Informationen zu Vorlagen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).
+ Weitere Informationen zu Vorlagen finden Sie unter [Hinzufügen von Projekt-und Projekt Element Vorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Registrierungseinträge für Projekte
- Die folgenden Beispiele zeigen die Registrierungseinträge unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*Version*>. Die zugehörigen Tabellen werden die Elemente, die in den Beispielen verwendete erläutert.
+ In den folgenden Beispielen werden die Registrierungseinträge unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*Version*> gezeigt. In den zugehörigen Tabellen werden die in den Beispielen verwendeten Elemente erläutert.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,15 +37,15 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Name|Typ|Beschreibung|
+|-Name|Geben Sie Folgendes ein:|Beschreibung|
 |----------|----------|-----------------|
-|@|REG_SZ|Der Standardname der Projekte dieser Art.|
-|DisplayName|REG_SZ|Ressourcen-ID mit dem Namen aus der Satelliten-DLL abgerufen werden, die unter Pakete registriert werden.|
-|Package|REG_SZ|Klassen-ID des Pakets unter Pakete registriert.|
-|ProjectTemplatesDir|REG_SZ|Der Standardpfad der Projektvorlage Dateien. Die Projektvorlage-Dateien werden angezeigt, durch die **neues Projekt** Vorlage.|
+|@|REG_SZ|Standardname der Projekte dieser Art.|
+|DisplayName|REG_SZ|Die Ressourcen-ID des Namens, der von der Satelliten-DLL abgerufen werden soll, die unter Packages registriert ist.|
+|Package|REG_SZ|Klassen-ID des Pakets, das unter "Packages" registriert ist.|
+|Projecttemplatesdir|REG_SZ|Standardpfad der Projektvorlagen Dateien. Die Projektvorlagen Dateien werden von der **neuen Projekt** Vorlage angezeigt.|
 
-### <a name="registering-item-templates"></a>Registrieren von Elementvorlagen
- Sie müssen das Verzeichnis registrieren, wo Sie Vorlagen speichern.
+### <a name="registering-item-templates"></a>Registrieren von Element Vorlagen
+ Sie müssen das Verzeichnis registrieren, in dem Sie Element Vorlagen speichern.
 
 ```
 [Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]
@@ -55,21 +55,21 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 "SortPriority"=dword:00000064
 ```
 
-| Name | Typ | Beschreibung |
+| -Name | Geben Sie Folgendes ein: | Beschreibung |
 |--------------------------|-----------| - |
-| @ | REG_SZ | Ressourcen-ID für Element hinzufügen-Vorlagen. |
-| TemplatesDir | REG_SZ | Pfad der Projektelemente angezeigt, in das Dialogfeld für die **neues Element hinzufügen** Assistenten. |
-| TemplatesLocalizedSubDir | REG_SZ | Ressourcen-ID der eine Zeichenfolge, die mit dem Namen das Unterverzeichnis des TemplatesDir enthält lokalisierte Vorlagen. Da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lädt die Zeichenfolgenressource aus Satelliten-DLLs bei Bedarf, jede Satelliten-DLL kann einem anderen lokalisierten Unterverzeichnisnamen enthalten. |
-| SortPriority | REG_DWORD | Legen Sie SortPriority zur Steuerung der Reihenfolge, in der Vorlagen, in angezeigt werden, der **neues Element hinzufügen** Dialogfeld. Größere SortPriority-Werte, die weiter oben in der Vorlagenliste angezeigt werden. |
+| @ | REG_SZ | Ressourcen-ID für Element Vorlagen hinzufügen. |
+| Templatesdir | REG_SZ | Der Pfad der Projekt Elemente, die im Dialogfeld für den Assistenten zum **Hinzufügen eines neuen Elements** angezeigt werden. |
+| Templateslocalizedsubdir | REG_SZ | Die Ressourcen-ID einer Zeichenfolge, die das Unterverzeichnis von templatesdir benennt, das lokalisierte Vorlagen enthält. Da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Zeichen folgen Ressource aus Satelliten-DLLs lädt, kann jede Satelliten-DLL einen anderen lokalisierten Unterverzeichnis Namen enthalten. |
+| SortPriority | REG_DWORD | Legen Sie SortPriority fest, um die Reihenfolge zu steuern, in der Vorlagen im Dialogfeld **Neues Element hinzufügen** angezeigt werden. Größere SortPriority-Werte werden zuvor in der Vorlagenliste angezeigt. |
 
-### <a name="registering-file-filters"></a>Dateifilter registrieren
- Sie können optional Filter registrieren, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet werden, wenn es für Dateinamen aufgefordert werden. Z. B. die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtern Sie nach der **geöffnete Datei** Dialogfeld können Sie:
+### <a name="registering-file-filters"></a>Registrieren von Dateifiltern
+ Optional können Sie Filter registrieren, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet, wenn Sie zur Eingabe von Dateinamen aufgefordert werden. Der [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Filter für das Dialogfeld **Datei öffnen** lautet beispielsweise wie folgt:
 
- **Visual C#-Dateien (\*cs,\*RESX,\*Settings,\*.xsd,\*.wsdl);\*. Cs,\*RESX,\*Settings,\*.xsd,\*.wsdl)**
+ **Visuelle C# Dateien (\*. cs, \*. resx, \*. Settings, \*. xsd, \*. WSDL); \*. cs, \*. resx, \*. Settings, 0. xsd, 1. WSDL)**
 
- Um die Registrierung von mehreren Filtern zu unterstützen, ist jeder Filter in eine eigene Unterschlüssel HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio registriert\\<*Version*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*Unterschlüssel*>. Der Name des Unterschlüssels ist frei wählbar. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoriert der Unterschlüssel des Namen und nur die Werte verwendet.
+ Um die Registrierung mehrerer Filter zu unterstützen, wird jeder Filter unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*Version*> \projects \\ {\<*ProjectGuid*>} \filters in seinem eigenen Unterschlüssel registriert. \\ <*Unterschlüssel*>. Der Name des unter Schlüssels ist willkürlich.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoriert den Namen des unter Schlüssels und verwendet lediglich seine Werte.
 
- Sie können die Kontexte steuern, in denen ein Filter verwendet wird, durch Festlegen von Flags, die in der folgenden Tabelle gezeigt. Wenn ein Filter keine Flags festlegen, wird er nach dem häufig verwendete Filter in der **vorhandenes Element hinzufügen** im Dialogfeld und der **geöffnete Datei** (Dialogfeld), aber es wird nicht in verwendet werden die **in Dateien suchen**  Dialogfeld.
+ Sie können die Kontexte, in denen ein Filter verwendet wird, Steuern, indem Sie Flags festlegen, die in der folgenden Tabelle aufgeführt sind. Wenn für einen Filter keine Flags festgelegt sind, wird er nach den allgemeinen Filtern im Dialogfeld **Vorhandenes Element hinzufügen** und im Dialogfeld **Datei öffnen** aufgelistet. es wird jedoch nicht im Dialogfeld **in Dateien suchen** verwendet.
 
 ```
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]
@@ -82,39 +82,39 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 "SortPriority"=dword:00000064
 ```
 
-|Name|Typ|Beschreibung|
+|-Name|Geben Sie Folgendes ein:|Beschreibung|
 |----------|----------|-----------------|
-|CommonFindFilesFilter|REG_DWORD|Stellt den Filter eine häufig verwendete Filter in der **in Dateien suchen** Dialogfeld. Allgemeine Filter werden in der Filterliste vor Filtern, die nicht so häufig gekennzeichnet aufgeführt.|
-|CommonOpenFilesFilter|REG_DWORD|Stellt den Filter eine häufig verwendete Filter in der **geöffnete Datei** Dialogfeld. Allgemeine Filter werden in der Filterliste vor Filtern, die nicht so häufig gekennzeichnet aufgeführt.|
-|FindInFilesFilter|REG_DWORD|Führt den Filter nach dem häufig verwendete Filter in der **in Dateien suchen** Dialogfeld.|
-|NotOpenFileFilter|REG_DWORD|Gibt an, dass der Filter nicht, in verwendet wird der **geöffnete Datei** Dialogfeld.|
-|NotAddExistingItemFilter|REG_DWORD|Gibt an, dass der Filter nicht, in verwendet wird der **vorhandenes Element hinzufügen** Dialogfeld.|
-|SortPriority|REG_DWORD|Legen Sie SortPriority zur Steuerung der Reihenfolge, in der Filter angezeigt werden. Größere SortPriority-Werte, die weiter oben in der Filterliste angezeigt werden.|
+|Commonfindfilesfilter|REG_DWORD|Macht den Filter zu einem der allgemeinen Filter im Dialogfeld **in Dateien suchen** . Allgemeine Filter sind in der Filterliste aufgeführt, bevor Filter als "Allgemein" gekennzeichnet sind.|
+|Commonopenfilesfilter|REG_DWORD|Macht den Filter zu einem der allgemeinen Filter im Dialogfeld **Datei öffnen** . Allgemeine Filter sind in der Filterliste aufgeführt, bevor Filter als "Allgemein" gekennzeichnet sind.|
+|Findinfilesfilter|REG_DWORD|Listet den Filter nach den allgemeinen Filtern im Dialogfeld **in Dateien suchen auf** .|
+|Notopenfilefilter|REG_DWORD|Gibt an, dass der Filter im Dialogfeld " **Datei öffnen** " nicht verwendet wird.|
+|Notadde xistingitemfilter|REG_DWORD|Gibt an, dass der Filter nicht im Dialogfeld **Vorhandenes Element hinzufügen** verwendet wird.|
+|SortPriority|REG_DWORD|Legen Sie SortPriority fest, um die Reihenfolge zu steuern, in der Filter angezeigt werden. Größere SortPriority-Werte werden zuvor in der Filterliste angezeigt.|
 
 ## <a name="directory-structure"></a>Verzeichnisstruktur
- VSPackages können Vorlagendateien und Ordner an einer beliebigen Stelle auf einem Datenträger lokaler oder remote einfügen als die Position über die integrierte Entwicklungsumgebung (IDE) registriert ist. Für die Organisation zu vereinfachen empfehlen wir jedoch die folgende Verzeichnisstruktur unter Installationspfad Ihres Produkts.
+ VSPackages können Vorlagen Dateien und-Ordner auf einem lokalen oder Remote Datenträger platzieren, sofern der Speicherort über die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) registriert ist. Zur Erleichterung der Organisation wird jedoch die folgende Verzeichnisstruktur unter dem Installationspfad Ihres Produkts empfohlen.
 
- \Templates
+ \Vorlagen
 
  \Projects (enthält die Projektvorlagen)
 
- \Applications
+ \Anwendungen
 
  \Components
 
  \ ...
 
- \ProjectItems (die Projektelemente enthält)
+ \Projectitems (enthält die Projekt Elemente)
 
  \Class
 
  \Form
 
- \Web Page
+ \Webseite
 
- \HelperFiles (enthält die in der Projektelemente mit mehreren Dateien verwendeten Dateien)
+ \Helperfiles (enthält die Dateien, die in Projekt Elementen mit mehreren Dateien verwendet werden)
 
- \WizardFiles
+ \Wizardfiles
 
 ## <a name="see-also"></a>Siehe auch
 

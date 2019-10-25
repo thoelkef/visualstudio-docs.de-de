@@ -1,5 +1,5 @@
 ---
-title: Debugversionen von Heapreservierungsfunktionen | Microsoft-Dokumentation
+title: Debugversionen von Heap Zuordnungs Funktionen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00ea299ae7cebea5d6ad1a09837dc75e10568aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852799"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738373"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Debugversionen von Heapreservierungsfunktionen
 Die C-Laufzeitbibliothek umfasst spezielle Debugversionen der Heapreservierungsfunktionen. Diese Funktionen haben dieselben Namen wie die Releaseversionen, gefolgt vom Suffix _dbg. In diesem Thema werden die Unterschiede zwischen der Releaseversion und der _dbg-Version einer CRT-Funktion beschrieben, wobei `malloc` und `_malloc_dbg` als Beispiele verwendet werden.
 
- Wenn [_DEBUG](/cpp/c-runtime-library/debug) wird definiert, ordnet das CRT alle [Malloc](/cpp/c-runtime-library/reference/malloc) Aufrufe von [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Aus diesem Grund müssen Sie den Code nicht umschreiben, indem Sie `_malloc_dbg` durch `malloc` ersetzen, um die Vorteile beim Debuggen nutzen zu können.
+ Wenn [_DEBUG](/cpp/c-runtime-library/debug) definiert ist, ordnet die CRT alle [malloc](/cpp/c-runtime-library/reference/malloc) -Aufrufe [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)zu. Aus diesem Grund müssen Sie den Code nicht umschreiben, indem Sie `_malloc_dbg` durch `malloc` ersetzen, um die Vorteile beim Debuggen nutzen zu können.
 
  Unter Umständen möchten Sie `_malloc_dbg` jedoch explizit aufrufen. Der explizite Aufruf von `_malloc_dbg` bietet zusätzliche Vorteile:
 
@@ -41,11 +41,11 @@ Die C-Laufzeitbibliothek umfasst spezielle Debugversionen der Heapreservierungsf
 
 - Speichern von Quelldatei und Zeilennummer an der Stelle, an der die Reservierung angefordert wurde.
 
-  Wenn Sie nicht konvertieren möchten Ihre `malloc` Aufrufe von `_malloc_dbg`, Sie können die Informationen zur Quelldatei abrufen, indem Sie definieren [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), der bewirkt, dass der Präprozessor direkt Zuordnung alle Aufrufe von `malloc` zu `_malloc_dbg` statt auf einen Wrapper um `malloc`.
+  Wenn Sie Ihre `malloc` Aufrufe nicht in `_malloc_dbg` konvertieren möchten, können Sie die Quelldatei Informationen abrufen, indem Sie [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)definieren, wodurch der Präprozessor alle Aufrufe von `malloc` direkt den `_malloc_dbg` zuordnet, anstatt sich auf einen Wrapper zu verlassen.  `malloc`.
 
   Um Reservierungstypen in Clientblöcken gesondert nachzuverfolgen, muss `_malloc_dbg` direkt aufgerufen und der `blockType`-Parameter auf `_CLIENT_BLOCK` festgelegt werden.
 
-  Wenn _DEBUG nicht definiert ist, Aufrufe von `malloc` nicht gestört werden, werden Aufrufe von `_malloc_dbg` werden aufgelöst, um `malloc`, die Definition der [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) wird ignoriert, und bezieht sich auf Dateiinformationen Quelle der Anforderung wurde nicht angegeben. Da `malloc` keinen Blocktypparameter hat, werden `_CLIENT_BLOCK`-Anforderungen wie Standardreservierungen behandelt.
+  Wenn _DEBUG nicht definiert ist, werden Aufrufe von `malloc` nicht gestört, Aufrufe `_malloc_dbg` werden zu `malloc` aufgelöst, die Definition von [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) wird ignoriert, und es werden keine Quelldatei Informationen zur Zuordnungs Anforderung bereitgestellt. Da `malloc` keinen Blocktypparameter hat, werden `_CLIENT_BLOCK`-Anforderungen wie Standardreservierungen behandelt.
 
 ## <a name="see-also"></a>Siehe auch
 

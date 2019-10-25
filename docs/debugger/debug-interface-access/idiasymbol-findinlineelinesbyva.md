@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByVA | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: findinlineelinesbyva | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae02877b7e81e0d2240ab2c6eea68f22f0e2d2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de092109282506747606799b45b89059bf41fd8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837861"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741189"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Ruft eine Enumeration, die ermöglicht einem Client die Zeilennummerninformationen aller Funktionen durchlaufen, die inline erweitert wird, direkt oder indirekt in dieses Symbol in der angegebenen virtuellen Adresse (VA) ab.
+Ruft eine Enumeration ab, mit der ein Client die Zeilennummern Informationen aller Funktionen, die direkt oder indirekt Inline sind, in diesem Symbol innerhalb der angegebenen virtuellen Adresse (VA) durchlaufen kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,18 +33,18 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>Parameter
  `va`
 
-[in] Gibt die Adresse an, wie eine VA.
+in Gibt die Adresse als VA an.
 
  `length`
 
-[in] Gibt den Adressbereich in Anzahl von Bytes, die mit dieser Abfrage abzudecken.
+in Gibt den Adressbereich in Byte an, der mit dieser Abfrage abgedeckt werden soll.
 
  `ppResult`
 
-[out] Enthält eine `IDiaEnumLineNumbers` Objekt, das die Liste der Zeilennummern enthält, die abgerufen werden.
+vorgenommen Enthält ein `IDiaEnumLineNumbers` Objekt, das die Liste der abgerufenen Zeilennummern enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,5 +1,5 @@
 ---
-title: DebugBreak und __debugbreak | Microsoft-Dokumentation
+title: Debug-und __debugbreak | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c4b9d780caf7589eecdc709cbede577dd7a6fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce99cd360d75472df6326cfaf6a3f4ddb198b6d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852703"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738352"
 ---
-# <a name="debugbreak-and-debugbreak"></a>DebugBreak und "_debugbreak"
+# <a name="debugbreak-and-__debugbreak"></a>DebugBreak und "_debugbreak"
 Die Win32-Funktion „DebugBreak“ oder die systeminterne Funktion [__debugbreak](/cpp/intrinsics/debugbreak) kann an einer beliebigen Stelle im Code aufgerufen werden. `DebugBreak` und `__debugbreak` haben dieselben Auswirkungen wie das Festlegen eines Haltepunkts an dieser Stelle.
 
  Da durch `DebugBreak` eine Systemfunktion aufgerufen wird, müssen Systemdebugsymbole installiert werden, um sicherzustellen, dass nach dem Abbrechen die richtigen Aufruflisteninformationen angezeigt werden. Andernfalls sind die vom Debugger angezeigten Aufruflisteninformationen möglicherweise um einen Rahmen verschoben sind. Wenn Sie `__debugbreak` verwenden, sind keine Symbole erforderlich.

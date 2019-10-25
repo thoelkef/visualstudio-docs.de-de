@@ -1,5 +1,5 @@
 ---
-title: CompilandEnv | Microsoft-Dokumentation
+title: Compilandenv | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b935c9c79fd618c96f44b2660c274f657f81014e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b7ef4750d22c70f59c3b7736fc26392d96eb702
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555207"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745431"
 ---
 # <a name="compilandenv"></a>CompilandEnv
-Der Compiler kann zusätzliche Umgebungsvariablen mit Symbolen enthalten. Es gibt ein `SymTagCompilandEnv` Symbol für jede dieser Variablen.
+Der Compiler kann zusätzliche Umgebungsvariablen mit Symbolen einschließen. Es gibt ein `SymTagCompilandEnv` Symbol für jede dieser Variablen.
 
 ## <a name="properties"></a>Eigenschaften
- Die folgende Tabelle zeigt die Eigenschaften, die für diesen Symboltyp gültig sind.
+ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die für diesen Symboltyp gültig sind.
 
-|Eigenschaft|Datentyp|Beschreibung|
+|property|Datentyp|Beschreibung|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol für die übergeordnete Kompiliereinheit.|
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Die ID des lexikalischen übergeordneten Symbols.|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol für den übergeordneten kompiand.|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID des übergeordneten lexikalischen Symbols.|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Name der Variablen.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Index-ID des Symbols.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCompilandEnv` (eines der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Werte).|
-|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|Inhalt der Variablen mit Zeichenfolgenwerten (`VT_BSTR`).|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCompilandEnv` zurück (einen der [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) -Enumerationswerte).|
+|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|Zeichen folgen Wert Inhalt der Variablen (`VT_BSTR`).|
 
 ## <a name="see-also"></a>Siehe auch
 - [Compiland](../../debugger/debug-interface-access/compiland.md)

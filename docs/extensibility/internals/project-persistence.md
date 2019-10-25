@@ -1,5 +1,5 @@
 ---
-title: Persistenz Projekt | Microsoft-Dokumentation
+title: Projekt Persistenz | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,36 +11,36 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c0f81d3cb4cc1e3404087f6ad4b8ecac34b9ec0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a95c919de9b87ed1782cbdcb029efbf191958f5a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725464"
 ---
 # <a name="project-persistence"></a>Projektpersistenz
-Persistenz ist eine wichtige Design-Überlegungen für das Projekt. Die meisten Projekte verwenden Projektelemente, die Dateien darstellen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt auch Projekte, deren Daten nicht dateibasierte sind. Alle Dateien im Besitz des Projekts und die Projektdatei müssen beibehalten werden. Die IDE weist das Projekt, um sich selbst oder ein Projektelement speichern.
+Persistenz ist ein wichtiger Entwurfs Aspekt für Ihr Projekt. In den meisten Projekten werden Projekt Elemente verwendet, die Dateien darstellen.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt auch Projekte, deren Daten nicht Datei basiert sind. Die Dateien, die sich im Besitz des Projekts befinden, und die Projektdatei müssen persistent gespeichert werden. Die IDE weist das Projekt an, sich selbst oder ein Projekt Element zu speichern.
 
- Vorlagen für Projekte, die auf die Projektzuordnungsinstanz übergeben werden. Die Vorlagen sollten die Initialisierung von alle Projektelemente gemäß den Anforderungen der bestimmten Projekttyp unterstützen. Diese Vorlagen können später als Projektdateien gespeichert und von der IDE über die Lösung verwaltet werden. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) und [Lösungen](../../extensibility/internals/solutions-overview.md).
+ Vorlagen für Projekte werden an die projektfactory übermittelt. Die Vorlagen sollten die Initialisierung aller Projekt Elemente gemäß den Anforderungen des jeweiligen Projekt Typs unterstützen. Diese Vorlagen können später als Projektdateien gespeichert und über die Lösung von der IDE verwaltet werden. Weitere Informationen finden Sie unter [Erstellen von Projekt Instanzen mithilfe von projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) und- [Lösungen](../../extensibility/internals/solutions-overview.md).
 
- Projektelemente können es sich um einen dateibasierten oder nicht dateibasierte sein:
+ Projekt Elemente können Datei basiert oder nicht Datei basiert sein:
 
-- Dateibasierte Elemente können lokal oder remote sein. In Webprojekten in C# geschrieben beibehalten, z. B. Verbindungen mit Dateien auf einem Remotesystem lokal, während die Dateien selbst auf dem remoten System beibehalten werden.
+- Dateibasierte Elemente können lokal oder Remote sein. In Webprojekten in C#werden z. b. Verbindungen mit Dateien auf einem Remote System lokal gespeichert, während die Dateien selbst auf dem Remote System gespeichert werden.
 
-- Nicht dateibasierte Elemente können Elemente in einer Datenbank oder einem Repository speichern.
+- Nicht dateibasierte Elemente können Elemente in einer Datenbank oder in einem Repository speichern.
 
 ## <a name="commit-models"></a>Commit-Modelle
- Nach der Entscheidung, wo sich die Projektelemente befinden, müssen Sie die entsprechenden Commit-Modell auswählen. Beispielsweise kann in einem dateibasierten Modell mit lokalen Dateien, jedes Projekt autonom gespeichert werden. In einem Repository-Modell können Sie mehrere Elemente in einer Transaktion speichern. Weitere Informationen finden Sie unter [Entwurfsentscheidungen bei Projekttypen](../../extensibility/internals/project-type-design-decisions.md).
+ Nachdem Sie entschieden haben, wo sich die Projekt Elemente befinden, müssen Sie das entsprechende Commit-Modell auswählen. Beispielsweise kann in einem dateibasierten Modell mit lokalen Dateien jedes Projekt autonom gespeichert werden. In einem Repository-Modell können Sie mehrere Elemente in einer Transaktion speichern. Weitere Informationen finden Sie unter [Entwurfsentscheidungen für Projekttyp](../../extensibility/internals/project-type-design-decisions.md).
 
- Um Dateinamenerweiterungen Weitere Erweiterungen zu bestimmen, implementieren Sie Projekte der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> -Schnittstelle, die Informationen den Client zum Implementieren eines Objekts aktivieren die **speichern unter** Dialogfeld –, also Ausfüllen der **speichern als Typ**  Dropdownliste auflisten und verwalten die anfänglichen Erweiterung.
+ Zum Ermitteln von Dateinamen Erweiterungen implementieren Projekte die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>-Schnittstelle, die Informationen bereitstellt, die es dem Client eines Objekts ermöglichen, das Dialogfeld " **Speichern** unter" zu implementieren, d. –., um die Dropdown Liste " **Dateityp** " zu füllen und das anfängliche Dateinamenerweiterung.
 
- Die IDE-Aufrufe der `IPersistFileFormat` Schnittstelle für das Projekt aus, um anzugeben, dass das Projekt ein Projekt beibehalten werden soll, Elemente nach Bedarf. Aus diesem Grund besitzt das Objekt alle Aspekte der zugehörigen Dateien und Format. Dies schließt den Namen des Formats des Objekts.
+ Die IDE Ruft die `IPersistFileFormat`-Schnittstelle für das Projekt auf, um anzugeben, dass das Projekt die Projekt Elemente entsprechend beibehalten soll. Daher besitzt das Objekt alle Aspekte seiner Datei und des Formats. Dies schließt den Namen des-Objekts ein.
 
- Im Fall, in denen Elemente keine Dateien sind, `IPersistFileFormat` ist immer noch wie nicht-dateibasierte Elemente beibehalten werden. Dateien, z. B. .vbp-Dateien für Projekt [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekte oder VCPROJ-Dateien für [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] -Projekten muss auch beibehalten werden.
+ Wenn Elemente keine Dateien sind, ist `IPersistFileFormat` immer noch, wie nicht dateibasierte Elemente beibehalten werden. Projektdateien, z. b. vbp-Dateien für [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekte oder VCPROJ-Dateien für [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte, müssen ebenfalls persistent gespeichert werden.
 
- Für Speichern Aktionen der ausgeführten Dokumententabelle (RDT) die IDE überprüft und die Hierarchie übergibt die Befehle an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Schnittstellen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> Methode wird implementiert, um zu bestimmen, ob das Element geändert wurde. Wenn das Element verfügt, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> Methode wird implementiert, um das geänderte Element zu speichern.
+ Bei Speicher Aktionen prüft die IDE die ausgeführten Dokumenten Tabellen (RDT), und die Hierarchie übergibt die Befehle an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Schnittstellen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A>-Methode wird implementiert, um zu bestimmen, ob das Element geändert wurde. Wenn das Element hat, wird die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A>-Methode implementiert, um das geänderte Element zu speichern.
 
- Die Methoden für die `IVsPersistHierarchyItem2` Schnittstelle werden verwendet, um zu bestimmen, ob ein Element erneut geladen werden kann, und das Element erneut geladen werden kann,. Darüber hinaus die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> -Methode kann implementiert werden, um die dazu führen, dass bei der geänderte Elementen, die verworfen werden, ohne gespeichert zu werden.
+ Mithilfe der Methoden auf der `IVsPersistHierarchyItem2`-Schnittstelle wird festgestellt, ob ein Element erneut geladen werden kann, und ob es das Element sein kann, um es neu zu laden. Außerdem kann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>-Methode implementiert werden, um zu verhindern, dass geänderte Elemente verworfen werden, ohne gespeichert zu werden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_lowerbound | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_lowerBound | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f55f47d8db9ec3723caf9ad5ff05d81d60404dba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ba113964ae316d7f887ccd558b804a4135865004
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791672"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739869"
 ---
-# <a name="idiasymbolgetlowerbound"></a>IDiaSymbol::get_lowerBound
-Ruft die untere Grenze des eine FORTRAN Arraydimension ab.
+# <a name="idiasymbolget_lowerbound"></a>IDiaSymbol::get_lowerBound
+Ruft die untere Grenze einer Fortran-Array Dimension ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_lowerBound ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das die untere Grenze einer FORTRAN Array Dimension darstellt.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das die untere Grenze einer Fortran-Array Dimension darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

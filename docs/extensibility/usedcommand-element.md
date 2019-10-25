@@ -1,5 +1,5 @@
 ---
-title: UsedCommand-Element | Microsoft-Dokumentation
+title: Usedcommand-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36dbfa484b69832c67c7a1dd28f217706e1a91a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 44ea8f27cafb166968f66c53dc68398526e0aa5d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316303"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718775"
 ---
 # <a name="usedcommand-element"></a>UsedCommand-Element
-Aktiviert ein VSPackage einen Befehl auf, der in eine andere VSCT-Datei definiert ist. Wenn das VSPackage der Standard verwendet z. B. **kopieren** -Befehl, der vom definiert wird die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, Sie können den Befehl zu einem Menü oder Symbolleiste ohne hinzufügen erneut zu implementieren.
+Ermöglicht einem VSPackage den Zugriff auf einen Befehl, der in einer anderen vsct-Datei definiert ist. Wenn das VSPackage beispielsweise den standardmäßigen **Kopier** Befehl verwendet, der durch die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell definiert ist, können Sie den Befehl einem Menü oder einer Symbolleiste hinzufügen, ohne ihn erneut zu implementieren.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,9 +34,9 @@ Aktiviert ein VSPackage einen Befehl auf, der in eine andere VSCT-Datei definier
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
-|guid|Erforderlich. Die GUID der GUID-ID-Paar, die den Befehl identifiziert.|
-|id|Erforderlich. Die ID des das GUID-ID-Paar, die den Befehl identifiziert.|
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Erforderlich. Der GUID des GUID-ID-Paars, das den Befehl identifiziert.|
+|ID|Erforderlich. Die ID des GUID-ID-Paars, das den Befehl identifiziert.|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -48,10 +48,10 @@ Aktiviert ein VSPackage einen Befehl auf, der in eine andere VSCT-Datei definier
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[UsedCommands-Element](../extensibility/usedcommands-element.md)|Gruppen UsedCommand-Elementen und anderen UsedCommands Gruppierungen.|
+|[UsedCommands-Element](../extensibility/usedcommands-element.md)|Gruppiert usedcommand-Elemente und andere usedcommands-Gruppierungen.|
 
 ## <a name="remarks"></a>Hinweise
- Durch das Hinzufügen eines Befehls in die `<UsedCommands>` -Element, um eine VSPackage informiert die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umgebung, die das VSPackage der Befehl erfordert. Sie sollten Hinzufügen einer `<UsedCommand>` -Element für jeden Befehl, der das Paket erfordert, kann nicht in allen Versionen und Konfigurationen von Visual Studio eingeschlossen werden. Z. B. Wenn Ihr Paket einen Befehl, die Visual C++-spezifisch ist aufruft, der Befehl wird nicht für Benutzer von Visual Web Developer, sofern Sie keine `<UsedCommand>` -Element für den Befehl.
+ Wenn Sie dem `<UsedCommands>`-Element einen Befehl hinzufügen, wird der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umgebung von einem VSPackage mitgeteilt, dass für das VSPackage der Befehl erforderlich ist. Sie sollten für jeden Befehl, den das Paket erfordert, ein `<UsedCommand>` Element hinzufügen, das möglicherweise nicht in allen Versionen und Konfigurationen von Visual Studio enthalten ist. Wenn das Paket beispielsweise einen für Visual C++spezifischen Befehl aufruft, steht der Befehl Benutzern von Visual Web Developer nur dann zur Verfügung, wenn Sie ein `<UsedCommand>`-Element für den Befehl einschließen.
 
 ## <a name="example"></a>Beispiel
 

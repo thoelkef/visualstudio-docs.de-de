@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211127"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730254"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Remote Debuggen eines C# -oder Visual Basic-Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung, die auf einem anderen Computer bereitgestellt wurde, installieren und führen Sie die Remote Tools auf dem Computer aus, auf dem Sie die APP bereitgestellt haben, konfigurieren Sie das Projekt für die Verbindung mit dem Remote Computer von Visual Studio, und führen Sie die APP aus.
 
-![Remote Debugger-Komponenten] (../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![Remote Debugger-Komponenten](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
 Weitere Informationen zum Remote Debuggen von universellen Windows-Apps (UWP) finden Sie unter [Debuggen eines installierten App-Pakets](debug-installed-app-package.md).
 
@@ -47,7 +47,7 @@ Der Remote Debugger wird unter Windows 7 und höher (nicht telefonisch) und Wind
 > [!TIP]
 > In einigen Szenarien kann es am effizientesten sein, den Remote Debugger von einer Dateifreigabe aus auszuführen. Weitere Informationen finden Sie unter [Ausführen des Remote Debuggers aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
 
-## <a name="BKMK_setup"></a> Einrichten des Remotedebuggers
+## <a name="BKMK_setup"></a>Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -67,7 +67,7 @@ Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf eine
 
 4. Wählen Sie auf der Seite **Eigenschaften** die Registerkarte **Debuggen** aus.
 
-    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")
+    ![Remotedebuggercsharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")
 
 5. Stellen Sie sicher, dass das Textfeld **Arbeitsverzeichnis** leer ist.
 
@@ -96,13 +96,13 @@ Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf eine
 
 11. Stellen Sie sicher, dass der Remote Debugger auf dem Zielcomputer ausgeführt wird (wenn dies nicht der Fall ist, suchen Sie im **Startmenü** nach **Remote Debugger** ). Das Fenster Remote Debugger sieht wie folgt aus.
 
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
+     ![Remotedebuggerwindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
 
 12. Starten Sie das Debuggen in Visual Studio (**Debuggen > Debuggen starten** oder **F5**).
 
 13. Geben Sie bei entsprechender Aufforderung Netzwerk Anmelde Informationen ein, um eine Verbindung mit dem Remote Computer herzustellen.
 
-     Die erforderlichen Anmelde Informationen variieren abhängig von der Sicherheitskonfiguration Ihres Netzwerks. Auf einem Domänen Computer können Sie z. b. den Domänen Namen und das Kennwort eingeben. Auf einem Computer, der nicht der Domäne ist, können Sie den Computernamen und einen gültigen Benutzerkonto Namen <strong>MJO-DL\name@something.com</strong>, wie z. b., zusammen mit dem richtigen Kennwort eingeben.
+     Die erforderlichen Anmelde Informationen variieren abhängig von der Sicherheitskonfiguration Ihres Netzwerks. Auf einem Domänen Computer können Sie z. b. den Domänen Namen und das Kennwort eingeben. Auf einem Computer, der nicht der Domäne ist, können Sie den Computernamen und einen gültigen Benutzerkonto Namen, wie z. b. <strong>MJO-DL\name@something.com</strong>, zusammen mit dem richtigen Kennwort eingeben.
 
      Das Hauptfenster der WPF-Anwendung sollte auf dem Remotecomputer geöffnet sein.
 

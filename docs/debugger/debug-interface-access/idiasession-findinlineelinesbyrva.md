@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByRVA | Microsoft-Dokumentation
+title: 'IDiaSession:: findinlineelinesbyrva | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900680fe58ab5061d3f8cca07fa1906cf34f7e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6cf587d9e369ac32c72df5e1fd7a9005ef417177
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839328"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742208"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
-Ruft eine Enumeration, die ermöglicht es einem Client zu durchlaufen und die Zeilennummerninformationen aller Funktionen, die inline erweitert wird, direkt oder indirekt durch das angegebene übergeordnete-Symbol und befinden sich in die angegebene relative virtuelle Adresse (RVA) ab.
+Ruft eine Enumeration ab, mit der ein Client die Zeilennummerinformationen aller Funktionen durchlaufen kann, die direkt oder indirekt durch das angegebene übergeordnete Symbol Inline sind und in der angegebenen relativen virtuellen Adresse (RVA) enthalten sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,22 +34,22 @@ HRESULT findInlineeLinesByRVA ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein `IDiaSymbol` Objekt, das das übergeordnete Element darstellt.
+in Ein `IDiaSymbol`-Objekt, das das übergeordnete Element darstellt.
 
  `rva`
 
-[in] Gibt die Adresse als eine RVA an.
+in Gibt die Adresse als RVA an.
 
  `length`
 
-[in] Gibt den Adressbereich in Anzahl von Bytes, die mit dieser Abfrage abzudecken.
+in Gibt den Adressbereich in Byte an, der mit dieser Abfrage abgedeckt werden soll.
 
  `ppResult`
 
-[out] Enthält eine `IDiaEnumLineNumbers` Objekt, das die Liste der Zeilennummern enthält, die abgerufen werden.
+vorgenommen Enthält ein `IDiaEnumLineNumbers` Objekt, das die Liste der abgerufenen Zeilennummern enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

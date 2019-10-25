@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlinesbyrva | Microsoft-Dokumentation'
+title: 'IDiaSession:: findLinesByRVA | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4316bfa423392a98946fc0bb86af2f2e9836aba2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6dfe92a5c804c0c81bfff6fa457e1ca797a62f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827685"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742085"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-Ruft ab, die Zeilen in einer angegebenen Kompiliereinheit, die eine angegebene relative virtuelle Adresse (RVA) enthalten.
+Ruft die Zeilen in einer angegebenen Kompilierungen ab, die eine angegebene relative virtuelle Adresse (RVA) enthalten.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,21 +35,21 @@ HRESULT findLinesByRVA ( 
 #### <a name="parameters"></a>Parameter
 `rva`
 
-[in] Gibt die Adresse als eine RVA an.
+in Gibt die Adresse als RVA an.
 
 `length`
 
-[in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.
+in Gibt die Anzahl der Bytes für den Adressbereich an, die mit dieser Abfrage abgedeckt werden.
 
 `ppResult`
 
-[out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit allen in der Zeile enthält Zahlen, die u. a. der angegebene Adressbereich.
+vorgenommen Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt zurück, das eine Liste aller Zeilennummern enthält, die den angegebenen Adressbereich abdecken.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-Dieses Beispiel zeigt eine Funktion, die alle Zeilennummern enthalten sind, in der angegebenen Funktion, die mit der Funktion relative virtuelle Adresse und die Länge abgerufen werden.
+Dieses Beispiel zeigt eine Funktion, die alle in der angegebenen Funktion enthaltenen Zeilennummern mithilfe der relativen virtuellen Adresse und Länge der Funktion abruft.
 
 ```C++
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isReturnValue | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_isReturnValue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ae065f16c2d047311308d63da7680a61fa22ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7bf9d94cd090fdf3993f84147f43a7b2f70dc7e2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836467"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740096"
 ---
-# <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
-Gibt an, ob die Variable einen Wert enthält.
+# <a name="idiasymbolget_isreturnvalue"></a>IDiaSymbol::get_isReturnValue
+Gibt an, ob die Variable einen Rückgabewert enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_isReturnValue(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf eine `BOOL` , der angibt, ob die Variable einen Wert enthält.
+vorgenommen Ein Zeiger auf einen `BOOL`, der angibt, ob die Variable einen Rückgabewert enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

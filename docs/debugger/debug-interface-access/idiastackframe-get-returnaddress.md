@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_returnaddress | Microsoft-Dokumentation'
+title: 'IDiaStackFrame:: get_returnAddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c81f1c8ee49600dacfd5d725188306d5cae2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5312eb455de8ce187bf4ae2acc2fc5b4b57a07bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838271"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741601"
 ---
-# <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
-Ruft die Rückgabeadresse des Rahmens ab.
+# <a name="idiastackframeget_returnaddress"></a>IDiaStackFrame::get_returnAddress
+Ruft die Rückgabeadresse des Frames ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_returnAddress ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Absenderadresse des Rahmens zurück.
+vorgenommen Gibt die Rückgabeadresse des Frames zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

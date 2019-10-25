@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sealed | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_sealed | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c75148fdf8453590be7eb0f9fbde95e4bb4b981
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ece720a42b606640d02729951c11ae03d092aedf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791683"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739363"
 ---
-# <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-Ruft ein Flag, das angibt, ob die Klasse oder Methode versiegelt ist.
+# <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
+Ruft ein Flag ab, das angibt, ob die Klasse oder Methode versiegelt ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,21 +33,21 @@ HRESULT get_sealed( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn die Klasse oder Methode versiegelt ist; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Klasse oder Methode versiegelt ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Eine versiegelte Klasse kann nicht als Basisklasse verwendet werden. Eine versiegelte Methode darf nicht außer Kraft gesetzt sein.
+ Eine versiegelte Klasse kann nicht als Basisklasse verwendet werden. Eine versiegelte Methode kann nicht überschrieben werden.
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia100.dll
 

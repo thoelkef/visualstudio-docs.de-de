@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_maxstack | Microsoft-Dokumentation'
+title: 'IDiaStackFrame:: get_maxStack | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e0d8c37b4016412f6dca8772d22baf65799429
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9640fa8f82c7bb87990c97ef7916e7323943ece
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832798"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741648"
 ---
-# <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
-Ruft die maximale Anzahl von Bytes, die auf dem Stapel im Frame abgelegt.
+# <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
+Ruft die maximale Anzahl von Bytes ab, die auf dem Stapel im Frame abgelegt werden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die maximale Anzahl von Bytes, die auf dem Stapel abgelegt.
+vorgenommen Gibt die maximale Anzahl von Bytes zurück, die auf dem Stapel abgelegt werden.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

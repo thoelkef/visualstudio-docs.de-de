@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_compilandid | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_compilandId | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4a548a5d6e564c2be3148d63ee28913fb1143d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b66740fc4c767dca3539d4a2889d82b485902603
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839523"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742699"
 ---
-# <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
-Ruft den Compiland-Bezeichner für den Abschnitt ab.
+# <a name="idiasectioncontribget_compilandid"></a>IDiaSectionContrib::get_compilandId
+Ruft den Compilerbezeichner für den Abschnitt ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_compilandId ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Compiland-Bezeichner für den Abschnitt.
+vorgenommen Gibt den Compilerbezeichner für den Abschnitt zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,5 +1,5 @@
 ---
-title: SccOpenProject-Funktion | Microsoft-Dokumentation
+title: Sccopenproject-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebb8f4250b4ef4c022c5c21d748e025ca31e35a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6aa4a715f8d1b87aa831f6a315f07a19e5d4f46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353606"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721057"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject-Funktion
-Diese Funktion öffnet ein vorhandenes Projekt des Datenquellen-Steuerelement oder eine neue erstellt.
+Diese Funktion öffnet ein vorhandenes Quell Code Verwaltungsprojekt oder erstellt ein neues Projekt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,80 +39,80 @@ SCCRTN SccOpenProject (
 ```
 
 #### <a name="parameters"></a>Parameter
- pvContext
+ pvcontext
 
-[in] Datenquellen-Steuerelement-Plug-in Context-Struktur.
+in Die Kontext Struktur der Quellcodeverwaltungs-Plug-in.
 
- hWnd
+ HWND
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.
 
- lpUser
+ lpuser
 
-[in, out] Der Name des Benutzers (nicht zu überschreiten SCC_USER_SIZE, einschließlich des NULL-Abschlusszeichens).
+[in, out] Der Name des Benutzers (nicht zu überschreiten SCC_USER_SIZE, einschließlich des NULL-Terminator).
 
- lpProjName
+ lpprojname
 
-[in] Die Zeichenfolge, die den Namen des Projekts identifiziert.
+in Die Zeichenfolge, die den Namen des Projekts identifiziert.
 
- lpLocalProjPath
+ lplocalprojpath
 
-[in] Der Pfad zu den Arbeitsordner für das Projekt.
+in Der Pfad zum Arbeitsordner für das Projekt.
 
- lpAuxProjPath
+ lpauxprojpath
 
-[in, out] Eine optionale zusätzliche Zeichenfolge, die das Projekt (nicht zu überschreiten SCC_AUXPATH_SIZE, einschließlich des NULL-Abschlusszeichens) identifizieren.
+[in, out] Eine optionale zusätzliche Zeichenfolge, die das Projekt identifiziert (nicht zu überschreiten SCC_AUXPATH_SIZE, einschließlich des NULL-Terminator).
 
- lpComment
+ lpcomment
 
-[in] Kommentar zu einem neuen Projekt, das erstellt wird.
+in Kommentieren Sie ein neues Projekt, das erstellt wird.
 
- lpTextOutProc
+ lptextoutproc
 
-[in] Eine optionale Rückruffunktion zum Anzeigen von Text, der das Quellcodeverwaltungs-Plug-in die Ausgabe.
+in Eine optionale Rückruffunktion zum Anzeigen der Textausgabe aus dem Quellcodeverwaltungs-Plug-in.
 
  dwFlags
 
-[in] Signalisiert, ob ein neues Projekt muss erstellt werden, wenn das Projekt die Quelle nicht bekannt ist-Steuerelement-Plug-in. Wert kann eine Kombination von sein `SCC_OP_CREATEIFNEW` und `SCC_OP_SILENTOPEN.`
+in Signalisiert, ob ein neues Projekt erstellt werden muss, wenn das Projekt dem Quellcodeverwaltungs-Plug-in unbekannt ist. Der Wert kann eine Kombination aus `SCC_OP_CREATEIFNEW` und `SCC_OP_SILENTOPEN.`
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
-|SCC_OK|Erfolg des Projekts zu öffnen.|
-|SCC_E_INITIALIZEFAILED|Projekt konnte nicht initialisiert werden.|
-|SCC_E_INVALIDUSER|Der Benutzer konnte nicht vom Quellcodeverwaltungssystem Anmeldung.|
-|SCC_E_COULDNOTCREATEPROJECT|Das Projekt vor dem Aufruf nicht vorhanden.  die `SCC_OPT_CREATEIFNEW` Flag festgelegt wurde, aber das Projekt konnte nicht erstellt werden.|
-|SCC_E_PROJSYNTAXERR|Ungültige Syntax.|
-|SCC_E_UNKNOWNPROJECT|Das Projekt das Quellcodeverwaltungs-Plug-in, nicht bekannt ist und die `SCC_OPT_CREATEIFNEW` Flag nicht festgelegt wurde.|
-|SCC_E_INVALIDFILEPATH|Das Dateipfad ist ungültig oder kann nicht verwendet werden.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|
-|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, möglicherweise aufgrund eines Netzwerk-oder-Konflikte bestehen. Eine Wiederholung wird empfohlen.|
-|SCC_E_NONSPECFICERROR|Einem nicht spezifischen Fehler; der Quellcode-Verwaltungssystems wurde nicht initialisiert.|
+|SCC_OK|Erfolg beim Öffnen des Projekts.|
+|SCC_E_INITIALIZEFAILED|Das Projekt konnte nicht initialisiert werden.|
+|SCC_E_INVALIDUSER|Der Benutzer konnte sich nicht beim Quell Code Verwaltungssystem anmelden.|
+|SCC_E_COULDNOTCREATEPROJECT|Das Projekt war vor dem-Befehl nicht vorhanden.  Das `SCC_OPT_CREATEIFNEW`-Flag wurde festgelegt, aber das Projekt konnte nicht erstellt werden.|
+|SCC_E_PROJSYNTAXERR|Ungültige Projekt Syntax.|
+|SCC_E_UNKNOWNPROJECT|Das Projekt ist dem Quellcodeverwaltungs-Plug-in unbekannt, und das `SCC_OPT_CREATEIFNEW`-Flag wurde nicht festgelegt.|
+|SCC_E_INVALIDFILEPATH|Ungültiger oder nicht verwendbarer Dateipfad.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht berechtigt, diesen Vorgang auszuführen.|
+|SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen. Es wird empfohlen, eine Wiederholung auszuführen.|
+|SCC_E_NONSPECFICERROR|Ein nicht spezifischer Fehler. das Quell Code Verwaltungssystem wurde nicht initialisiert.|
 
 ## <a name="remarks"></a>Hinweise
- Die IDE möglicherweise übergeben Sie einen Benutzernamen (`lpUser`), oder es kann einfach in einen Zeiger auf eine leere Zeichenfolge. Ist ein Benutzername, sollte das Quellcodeverwaltungs-Plug-in als Standard verwenden. Allerdings, wenn kein Name übergeben wurde, oder Fehler bei der Anmeldung mit dem angegebenen Namen, das plug-in muss der Benutzer aufgefordert, melden Sie sich und gibt den gültigen Namen in `lpUser` empfängt eine gültige Anmeldung`.` , da das plug-in die Benutzernamen-Zeichenfolge ändern kann , die IDE wird immer ein Puffer der Größe (`SCC_USER_LEN`+ 1 oder SCC_USER_SIZE, die Speicherplatz für das Nullabschlusszeichen enthält).
+ In der IDE kann ein Benutzername (`lpUser`) übergeben werden, oder es kann einfach ein Zeiger auf eine leere Zeichenfolge übergeben werden. Wenn ein Benutzername vorhanden ist, sollte das Quellcodeverwaltungs-Plug-in als Standard verwendet werden. Wenn jedoch kein Name übergeben wurde, oder wenn die Anmeldung mit dem angegebenen Namen fehlgeschlagen ist, sollte das Plug-in den Benutzer auffordern, sich anzumelden, und den gültigen Namen in `lpUser` zurückgeben, wenn ein gültiger Anmelde Name `.` wird, da das Plug-in die Benutzernamen Zeichenfolge ändern kann. verwendet die IDE immer einen Puffer der Größe (`SCC_USER_LEN` + 1 oder SCC_USER_SIZE, der Platz für das NULL-Terminator umfasst).
 
 > [!NOTE]
-> Die erste Aktion, die die IDE möglicherweise erforderlich, führen Sie möglicherweise einen Aufruf der `SccOpenProject` Funktion oder die [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Aus diesem Grund haben beide eine identische `lpUser` Parameter.
+> Die erste Aktion, die die IDE ausführen kann, ist möglicherweise ein Aufrufen der `SccOpenProject`-Funktion oder des [sccgetprojpath](../extensibility/sccgetprojpath-function.md)-Vorgangs. Aus diesem Grund haben beide einen identischen `lpUser`-Parameter.
 
- `lpAuxProjPath` und`lpProjName` werden aus der Projektmappendatei gelesen oder diese von einem Aufruf zurückgegeben werden die `SccGetProjPath` Funktion. Dieser Parameter enthält die Zeichenfolgen, die das Projekt das Quellcodeverwaltungs-Plug-in zugeordnet und nur für das plug-in von Bedeutung sind. Wenn kein solcher Zeichenfolgen, in der Projektmappendatei sind und der Benutzer nicht aufgefordert wurde, navigieren Sie (die eine Zeichenfolge über zurück der `SccGetProjPath` Funktion), die IDE transferiert leere Zeichenfolgen für beide `lpAuxProjPath` und `lpProjName`, und erwartet, dass diese Werte aktualisiert werden durch die When-Plug-in diese Funktion gibt.
+ `lpAuxProjPath` und `lpProjName` werden aus der Projektmappendatei gelesen, oder Sie werden von einem Rückruf der `SccGetProjPath`-Funktion zurückgegeben. Diese Parameter enthalten die Zeichen folgen, die das Quellcodeverwaltungs-Plug-in dem Projekt zuordnet, und sind nur für das Plug-in sinnvoll. Wenn keine dieser Zeichen folgen in der Projektmappendatei gefunden wird und der Benutzer nicht zum Durchsuchen aufgefordert wurde (was eine Zeichenfolge durch die `SccGetProjPath`-Funktion zurückgeben würde), übergibt die IDE leere Zeichen folgen sowohl für `lpAuxProjPath` als auch für `lpProjName` und erwartet, dass diese Werte durch das Plug-in aktualisiert werden, wenn is-Funktion gibt zurück.
 
- `lpTextOutProc` ist ein Zeiger auf eine Rückruffunktion, die von der IDE auf das Quellcodeverwaltungs-Plug-In für die Anzeige von Ausgabe des Befehls Ergebnis bereitgestellt. Diese Callback-Funktion wird ausführlich beschrieben [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
-
-> [!NOTE]
-> Wenn das Quellcodeverwaltungs-Plug-in dies nutzen soll, es muss festgelegt werden die `SCC_CAP_TEXTOUT` -flag in der [SccInitialize](../extensibility/sccinitialize-function.md). Wenn dieses Flag nicht festgelegt wurde, oder wenn die IDE nicht mit dieser Funktion unterstützt `lpTextOutProc` werden `NULL`.
-
- Die `dwFlags` Parameter steuert das Ergebnis aus, die das Projekt geöffnet wird derzeit nicht vorhanden ist. Es besteht aus zwei Bitflags, `SCC_OP_CREATEIFNEW` und `SCC_OP_SILENTOPEN`. Wenn das Projekt geöffnet wird, bereits vorhanden ist, die Funktion einfach Öffnet das Projekt und gibt `SCC_OK`. Wenn das Projekt nicht vorhanden ist und die `SCC_OP_CREATEIFNEW` Flag ist auf, das Quellcodeverwaltungs-Plug-in Erstellen des Projekts in das Quellcodeverwaltungssystem, öffnen Sie es und zurückgeben kann `SCC_OK`. Wenn das Projekt nicht vorhanden ist und die `SCC_OP_CREATEIFNEW` deaktiviert ist, das plug-in muss und suchen Sie nach der `SCC_OP_SILENTOPEN` Flag. Wenn dieses Flag nicht aktiviert ist, kann das plug-in der Benutzer einen Projektnamen aufgefordert. Ist dieses Flag auf, das plug-in muss einfach zurückgeben `SCC_E_UNKNOWNPROJECT`.
-
-## <a name="calling-order"></a>Aufrufreihenfolge
- Während des normalen von Ereignissen die [SccInitialize](../extensibility/sccinitialize-function.md) wird zuerst aufgerufen werden, um eine Source-Control-Sitzung öffnen. Eine Sitzung möglicherweise bestehen aus einem Aufruf von `SccOpenProject`, gefolgt von anderen Source Control-Plug-in-API-Funktionsaufrufe und endet mit einem Aufruf der [SccCloseProject](../extensibility/scccloseproject-function.md). Diese Sitzungen mehrmals vor dem wiederholt werden die [SccUninitialize](../extensibility/sccuninitialize-function.md) aufgerufen wird.
-
- Wenn die Quelle-Plug-in Gruppen steuern die `SCC_CAP_REENTRANT` bit im `SccInitialize`, und klicken Sie dann die oben angegebene Reihenfolge für die Sitzung parallel mehrmals wiederholt werden kann. Verschiedene `pvContext` Strukturen nachverfolgen, die anderen Sitzungen, in denen die einzelnen `pvContext` jeweils mit einem geöffneten Projekt zugeordnet ist. Auf der Grundlage der`pvContext` -Parameter des Plug-Ins können bestimmen, welches Projekt in einem bestimmten Aufruf verwiesen wird. Wenn die Funktion bit `SCC_CAP_REENTRANT` nicht festgelegt ist, nonreentrant Quellcodeverwaltungs-Plug-ins sind in der Lage, arbeiten mit mehreren Projekten beschränkt.
+ `lpTextOutProc` ist ein Zeiger auf eine Rückruffunktion, die von der IDE zum Quellcodeverwaltungs-Plug-in bereitgestellt wird, um die Befehls Ergebnis Ausgabe anzuzeigen. Diese Rückruffunktion wird in [lptextoutproc](../extensibility/lptextoutproc.md)ausführlich beschrieben.
 
 > [!NOTE]
-> Die `SCC_CAP_REENTRANT` Bit wurde in Version 1.1 von der Quelle-Plug-in-API eingeführt. Es ist nicht festgelegt oder wird in Version 1.0 ignoriert, und alle Version 1.0 Quellcodeverwaltungs-Plug-ins wird angenommen, dass nonreentrant.
+> Wenn das Quellcodeverwaltungs-Plug-in diese Vorteile nutzen soll, muss es das `SCC_CAP_TEXTOUT`-Flag in [sccinitialize](../extensibility/sccinitialize-function.md)festgelegt haben. Wenn dieses Flag nicht festgelegt wurde oder die IDE dieses Feature nicht unterstützt, werden `lpTextOutProc` `NULL`.
+
+ Der `dwFlags`-Parameter steuert das Ergebnis im Fall, dass das geöffnete Projekt derzeit nicht vorhanden ist. Sie besteht aus zwei Bitflags, `SCC_OP_CREATEIFNEW` und `SCC_OP_SILENTOPEN`. Wenn das geöffnete Projekt bereits vorhanden ist, öffnet die Funktion das Projekt einfach und gibt `SCC_OK` zurück. Wenn das Projekt nicht vorhanden ist und das `SCC_OP_CREATEIFNEW`-Flag on on ist, kann das Quellcodeverwaltungs-Plug-in das Projekt im Quell Code Verwaltungssystem erstellen, es öffnen und `SCC_OK` zurückgeben. Wenn das Projekt nicht vorhanden ist, und wenn das `SCC_OP_CREATEIFNEW`-Flag deaktiviert ist, sollte das Plug-in das `SCC_OP_SILENTOPEN`-Flag überprüfen. Wenn dieses Flag nicht on ist, fordert das Plug-in den Benutzer möglicherweise auf, einen Projektnamen einzugeben. Wenn dieses Flag auf ON fest steht, sollte das Plug-in einfach `SCC_E_UNKNOWNPROJECT` zurückgeben.
+
+## <a name="calling-order"></a>Aufruf Reihenfolge
+ Im normalen Verlauf der Ereignisse wird [sccinitialize](../extensibility/sccinitialize-function.md) zuerst aufgerufen, um eine Quell Code Verwaltungssitzung zu öffnen. Eine Sitzung kann aus einem Aufruf von `SccOpenProject` bestehen, gefolgt von anderen API-Funktionsaufrufen des Quell Code Verwaltungs-Plug-ins und endet mit einem Aufruf von [scccloseproject](../extensibility/scccloseproject-function.md). Solche Sitzungen können mehrmals wiederholt werden, bevor [sccuninitialize](../extensibility/sccuninitialize-function.md) aufgerufen wird.
+
+ Wenn das Quellcodeverwaltungs-Plug-in das `SCC_CAP_REENTRANT` Bit in `SccInitialize` festlegt, kann die obige Sitzungs Sequenz mehrmals parallel wiederholt werden. Verschiedene `pvContext` Strukturen verfolgen die verschiedenen Sitzungen nach, in denen jede `pvContext` jeweils einem geöffneten Projekt zugeordnet ist. Basierend auf dem `pvContext`-Parameter kann das Plug-in bestimmen, auf welches Projekt in einem bestimmten-Befehl verwiesen wird. Wenn das funktionsbit `SCC_CAP_REENTRANT` nicht festgelegt ist, sind nicht wieder eintretende Quellcodeverwaltungs-Plug-ins in der Lage, mit mehreren Projekten zu arbeiten.
+
+> [!NOTE]
+> Das `SCC_CAP_REENTRANT` Bit wurde in Version 1,1 der Quellcodeverwaltungs-Plug-in-API eingeführt. Er ist in Version 1,0 nicht festgelegt oder wird ignoriert, und alle Quellcodeverwaltungs-Plug-ins der Version 1,0 werden als nicht wieder eintretig angenommen.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

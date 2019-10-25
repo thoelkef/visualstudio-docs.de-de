@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_notreached | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_notReached | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9882033dd668ef9c907f9b6d466451541225ea
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e6232c9e6284126e4b2f01c5c09cb3088d4c07af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784184"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739711"
 ---
-# <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
-Ruft ein Flag, das angibt, ob die Funktion oder Bezeichnung nie erreicht wird.
+# <a name="idiasymbolget_notreached"></a>IDiaSymbol::get_notReached
+Ruft ein Flag ab, das angibt, ob die Funktion oder Bezeichnung niemals erreicht wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,22 +31,22 @@ HRESULT get_notReached(
 ```
 
 #### <a name="parameters"></a>Parameter
- pFlag
+ PFLAG
 
-[out] Gibt `TRUE` , wenn die Funktion oder Bezeichnung nie erreicht wird; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Funktion oder Bezeichnung niemals erreicht wird. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

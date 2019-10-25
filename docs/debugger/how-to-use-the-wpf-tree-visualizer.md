@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden Sie die WPF-Strukturschnellansicht | Microsoft-Dokumentation'
+title: 'Gewusst wie: Verwenden der WPF-Struktur Schnellansicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e005c1b41d2c563c5b47f358e87912cba64bf7f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821379"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731920"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Vorgehensweise: Verwenden der WPF-Strukturschnellansicht
-Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um die visuelle Struktur eines WPF-Objekts zu untersuchen und die WPF-Abhängigkeitseigenschaften für die Objekte anzuzeigen, die in dieser Struktur enthalten sind. Weitere Informationen zu visuellen Strukturen finden Sie unter [Strukturen in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Weitere Informationen zu Abhängigkeitseigenschaften finden Sie unter [Übersicht über Abhängigkeitseigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview).
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Gewusst wie: Verwenden des WPF Tree Visualizer (WPF-Strukturschnellansicht)
+Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um die visuelle Struktur eines WPF-Objekts zu untersuchen und die WPF-Abhängigkeitseigenschaften für die Objekte anzuzeigen, die in dieser Struktur enthalten sind. Weitere Informationen zu visuellen Bäumen finden Sie Unterstrukturen [in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Weitere Informationen zu Abhängigkeits Eigenschaften finden Sie unter [Übersicht über Abhängigkeits Eigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Wenn Sie die WPF-Strukturschnellansicht öffnen, sehen Sie zwei Bereiche: den **visuelle Struktur** auf der linken Seite und die **Eigenschaften** _Namen_ **:**  _Typ_ im rechten Bereich. Wählen Sie ein Objekt in der **visuelle Struktur** Bereich und die **Eigenschaften** _Namen_ **:** _Typ_ Bereich automatisch aktualisiert, um die Eigenschaften für dieses Objekt anzuzeigen.
+ Wenn Sie die WPF-Struktur Schnellansicht öffnen, werden zwei Bereiche angezeigt: die **visuelle** Struktur auf der linken Seite und die **Eigenschaften von** _Name_ **:** _Typbereich_ auf der rechten Seite. Wählen Sie im **visuellen** Strukturbereich ein beliebiges Objekt aus, und die **Eigenschaften des** _Bereichs Name_ **:** _Typ_ werden automatisch aktualisiert, um die Eigenschaften für dieses Objekt anzuzeigen.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>So öffnen Sie die WPF-Strukturschnellansicht
 
@@ -50,7 +50,7 @@ Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um d
 
 ### <a name="to-search-the-properties-list"></a>So durchsuchen Sie die Eigenschaftenliste
 
-- In der **Eigenschaften** _Namen_ **:** _Typ_ Bereich, geben Sie die Zeichenfolge, die Sie suchen möchten die **Filtern**Feld.
+- Geben Sie im Bereich **Eigenschaften von** _Name_ **:** _Typ_ im Feld **Filter** die Zeichenfolge ein, nach der Sie suchen möchten.
 
   Die WPF-Strukturschnellansicht zeigt sofort die Eigenschaften an, die zur eingegebenen Zeichenfolge passen, und in der Liste werden nur die Eigenschaften angezeigt, die zur eingegebenen Zeichenfolge passen. Geben Sie mehr Zeichen ein, um eine genauere Übereinstimmung zu erzielen.
 

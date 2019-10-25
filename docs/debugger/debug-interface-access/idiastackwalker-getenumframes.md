@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9011f0becd893fa4ca966c40013844b0be47e46d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd6f5219edf9426067a4431936caa2186604e1cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832019"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741539"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
-Ruft einen Stack-Frame-Enumerator für X86 Plattformen.
+Ruft einen Stapel Rahmen Enumerator für x86-Plattformen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,17 +34,17 @@ HRESULT getEnumFrames( 
 #### <a name="parameters"></a>Parameter
  `pHelper`
 
-[in] Das Hilfsprogramm [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt.
+in Das [hilfsidiastackwalkhelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) -Objekt.
 
  `ppEnum`
 
-[out] Gibt eine [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) -Objekt, das eine Liste der enthält [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.
+vorgenommen Gibt ein [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) -Objekt zurück, das eine Liste von [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) -Objekten enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Um eine Liste der Stack-Frame auf eine andere Plattform zu erhalten, rufen die [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) Methode.
+ Um eine Stapel Rahmen Liste auf einer beliebigen anderen Plattform abzurufen, nennen Sie die [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) -Methode.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)

@@ -1,5 +1,5 @@
 ---
-title: UsedCommands-Element | Microsoft-Dokumentation
+title: Usedcommands-Element | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e43834517855f72dd32c024c222089cf42c7c3ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316287"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718623"
 ---
 # <a name="usedcommands-element"></a>UsedCommands-Element
-UsedCommands-Element gruppiert UsedCommand-Elementen und anderen UsedCommands Gruppierungen.
+Das usedcommands-Element gruppiert usedcommand-Elemente und andere usedcommands-Gruppierungen.
 
- UsedCommands-Element ist optional. Wenn Sie Befehle, die außerhalb des Pakets definiert nicht aufrufen, müssen Sie nicht in diesem Abschnitt in der VSCT-Datei enthalten.
+ Das usedcommands-Element ist optional. Wenn Sie keine Befehle anrufen, die außerhalb des Pakets definiert sind, müssen Sie diesen Abschnitt nicht in die vsct-Datei einschließen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,19 +40,19 @@ UsedCommands-Element gruppiert UsedCommand-Elementen und anderen UsedCommands Gr
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[UsedCommand-Element](../extensibility/usedcommand-element.md)|Der Befehl, der durch anderen Code implementiert wird.|
+|[UsedCommand-Element](../extensibility/usedcommand-element.md)|Der Befehl, der von anderem Code implementiert wird.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle (z. B. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern), die eine VSPackage bietet die integrierte Entwicklungsumgebung (IDE) darstellen.|
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen (z. b. Menü Elemente, Menüs, Symbolleisten und Kombinations Felder), die ein VSPackage für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) bereitstellt.|
 
 ## <a name="example"></a>Beispiel
 

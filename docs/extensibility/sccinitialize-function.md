@@ -1,5 +1,5 @@
 ---
-title: SccInitialize-Funktion | Microsoft-Dokumentation
+title: Sccinitialize-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a855ecbc65211234b29808fc9e4cf256cd6b25f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 552ec06a4eabf55872358fc8e5d731e47c1eb6ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353590"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721182"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize-Funktion
-Diese Funktion initialisiert das Quellcodeverwaltungs-Plug-in und enthält Funktionen und Einschränkungen, die integrierte Entwicklungsumgebung (IDE).
+Diese Funktion initialisiert das Quellcodeverwaltungs-Plug-in und bietet Funktionen und Einschränkungen für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE).
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,56 +40,56 @@ SCCRTN SccInitialize (
 #### <a name="parameters"></a>Parameter
  `ppvContext`
 
-[in] Das Quellcodeverwaltungs-Plug-in kann einen Zeiger auf die Context-Struktur hier platzieren.
+in Das Quellcodeverwaltungs-Plug-in kann hier einen Zeiger auf seine Kontext Struktur platzieren.
 
  `hWnd`
 
-[in] Ein Handle für das IDE-Fenster, das das Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die er bereitstellt.
+in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als übergeordnetes Element für alle bereitgestellten Dialogfelder verwendet werden kann.
 
  `lpCallerName`
 
-[in] Der Name des Programms das Quellcodeverwaltungs-Plug-in aufrufen.
+in Der Name des Programms, das das Quellcodeverwaltungs-Plug-in aufrufen.
 
  `lpSccName`
 
-[in, out] Der Puffer, in dem das Quellcodeverwaltungs-Plug-in einen eigenen Namen setzt (nicht zu überschreiten `SCC_NAME_LEN`).
+[in, out] Der Puffer, in dem das Quellcodeverwaltungs-Plug-in seinen eigenen Namen einfügt (nicht überschreiten `SCC_NAME_LEN`).
 
  `lpSccCaps`
 
-[out] Gibt das Quellcodeverwaltungs-Plug-ins funktionsflags zurück.
+vorgenommen Gibt die funktionsflags für das Quellcodeverwaltungs-Plug-in zurück.
 
  `lpAuxPathLabel`
 
-[in, out] Der Puffer, in dem das Quellcodeverwaltungs-Plug-in Fügt eine Zeichenfolge, die beschreibt, die `lpAuxProjPath` Parameter zurückgegeben werden, indem die [SccOpenProject](../extensibility/sccopenproject-function.md) und [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (, nicht zu überschreiten `SCC_AUXLABEL_LEN`).
+[in, out] Der Puffer, in dem das Quellcodeverwaltungs-Plug-in eine Zeichenfolge einfügt, die den `lpAuxProjPath` Parameter beschreibt, der von [sccopenproject](../extensibility/sccopenproject-function.md) und [sccgetprojpath](../extensibility/sccgetprojpath-function.md) zurückgegeben wird (nicht überschreiten `SCC_AUXLABEL_LEN`).
 
  `pnCheckoutCommentLen`
 
-[out] Gibt die maximale zulässige Länge für eine Auscheckkommentar zurück.
+vorgenommen Gibt die maximal zulässige Länge für einen Auscheck Kommentar zurück.
 
  `pnCommentLen`
 
-[out] Gibt die maximale zulässige Länge für andere Kommentare zurück.
+vorgenommen Gibt die maximal zulässige Länge für andere Kommentare zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
-|SCC_OK|Source-Control-Initialisierung erfolgreich beendet.|
-|SCC_E_INITIALIZEFAILED|System konnte nicht initialisiert werden.|
-|SCC_E_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um den angegebenen Vorgang auszuführen.|
-|SCC_E_NONSPECFICERROR|Unspezifischen Fehlers; Quellcode-Verwaltungssystems wurde nicht initialisiert.|
+|SCC_OK|Die Initialisierung der Quell Code Verwaltung war erfolgreich.|
+|SCC_E_INITIALIZEFAILED|Das System konnte nicht initialisiert werden.|
+|SCC_E_NOTAUTHORIZED|Der Benutzer darf den angegebenen Vorgang nicht ausführen.|
+|SCC_E_NONSPECFICERROR|Nicht spezifischer Fehler. das Quell Code Verwaltungssystem wurde nicht initialisiert.|
 
 ## <a name="remarks"></a>Hinweise
- Die IDE ruft diese Funktion auf, wenn zuerst das Quellcodeverwaltungs-Plug-In geladen. Dadurch wird die IDE, um bestimmte Informationen, z. B. den Namen des Aufrufers an, an das plug-in übergeben. Die IDE zurückerhält auch bestimmte Informationen, z.B. die maximal zulässige Länge für Kommentare und das Plug-in Funktionen.
+ Die IDE ruft diese Funktion auf, wenn das Quellcodeverwaltungs-Plug-in zum ersten Mal geladen wird. Sie ermöglicht der IDE, bestimmte Informationen, wie z. b. den Namen des Aufrufers, an das Plug-in zu übergeben. Die IDE erhält auch bestimmte Informationen, wie z. b. die maximal zulässige Länge für Kommentare und die Funktionen des Plug-ins.
 
- Die `ppvContext` verweist auf eine `NULL` Zeiger. Das Quellcodeverwaltungs-Plug-in eine Struktur zur eigenen Verwendung zuordnen kann, und speichern Sie einen Zeiger auf dieser Struktur in `ppvContext`. Die IDE übergibt this-Zeiger auf jede andere VSSCI-API-Funktion ermöglicht das plug-in, das Kontextinformationen zur Verfügung zu haben, ohne in den globalen Speicher und Unterstützung für mehrere Instanzen des Plug-Ins. Diese Struktur sollte aufgehoben werden, wenn die [SccUninitialize](../extensibility/sccuninitialize-function.md) aufgerufen wird.
+ Der `ppvContext` verweist auf einen `NULL` Zeiger. Das Quellcodeverwaltungs-Plug-in kann eine Struktur für die eigene Verwendung zuordnen und einen Zeiger auf diese Struktur in `ppvContext` speichern. Die IDE übergibt diesen Zeiger an jede andere vssci-API-Funktion und ermöglicht dem Plug-in, Kontextinformationen zur Verfügung zu stellen, ohne auf den globalen Speicher zurückzugreifen und mehrere Instanzen des Plug-ins zu unterstützen. Die Zuordnung dieser Struktur sollte aufgehoben werden, wenn [sccuninitialize](../extensibility/sccuninitialize-function.md) aufgerufen wird.
 
- Die `lpCallerName` und `lpSccName` Parameter ermöglichen die IDE und das Quellcodeverwaltungs-Plug-in zum Austauschen von Namen. Diese Namen können verwendet werden, um zwischen mehreren Instanzen unterscheiden zu können, oder diese in Menüs oder Dialogfelder tatsächlich auftreten.
+ Die Parameter `lpCallerName` und `lpSccName` ermöglichen der IDE und dem Quellcodeverwaltungs-Plug-in das Austauschen von Namen. Diese Namen können einfach zur Unterscheidung zwischen mehreren Instanzen verwendet werden, oder Sie werden möglicherweise in Menüs oder Dialogfeldern angezeigt.
 
- Die `lpAuxPathLabel` Parameter ist eine Zeichenfolge, die als Kommentar verwendet, um den zusätzlichen Projektpfad zu identifizieren, die in der Projektmappendatei gespeichert und an das Quellcodeverwaltungs-Plug-in in einem Aufruf übergeben die [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] verwendet die Zeichenfolge "SourceSafe-Projekt:"; andere Quellcodeverwaltungs-Plug-ins sollte nicht zu dieser Zeichenfolge verwenden.
+ Der `lpAuxPathLabel`-Parameter ist eine Zeichenfolge, die als Kommentar verwendet wird, um den zusätzlichen Projektpfad zu identifizieren, der in der Projektmappendatei gespeichert und in einem Aufrufen von [sccopenproject](../extensibility/sccopenproject-function.md)an das Quellcodeverwaltungs-Plug-in übergeben wird. [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] verwendet die Zeichenfolge "SourceSafe Project:"; andere Quellcodeverwaltungs-Plug-ins sollten diese Zeichenfolge nicht verwenden.
 
- Die `lpSccCaps` Parameter enthält das Quellcodeverwaltungs-Plug-in einen Ort zum Speichern von Bitflags, der angibt, das Plug-in Funktionen. (Eine vollständige Liste der Funktion Bitflags, finden Sie unter [Capability Flags](../extensibility/capability-flags.md)). Beispielsweise, wenn die Plug-in-Pläne, Ergebnisse in eine vom Aufrufer bereitgestellter Callback-Funktion zu schreiben, das plug-in wird die Funktion festgelegt SCC_CAP_TEXTOUT bit. Dies würde die IDE zum Erstellen eines Fensters für Version Steuerelement führt zu signalisieren.
+ Der `lpSccCaps`-Parameter gibt dem Quellcodeverwaltungs-Plug-in einen Speicherort zum Speichern von Bitflags, die die Funktionen des Plug-ins angeben. (Eine vollständige Liste der funktionsbitflags finden Sie unter [funktionsflags](../extensibility/capability-flags.md)). Wenn das Plug-in beispielsweise Ergebnisse in eine vom Aufrufer bereitgestellte Rückruffunktion schreiben soll, legt das Plug-in das Capability Bit SCC_CAP_TEXTOUT fest. Dadurch wird der IDE signalisiert, ein Fenster für Ergebnisse der Versionskontrolle zu erstellen.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

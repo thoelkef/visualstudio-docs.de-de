@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann die Verbindung mit diesem Computer nicht wiederherstellen'
+title: 'Fehler: Der Visual Studio-Remotedebugdienst auf dem Zielcomputer kann keine Rückverbindung mit diesem Computer herstellen'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043438"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737407"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann die Verbindung mit diesem Computer nicht wiederherstellen
-Dieser Fehler weist darauf hin, dass der Remotedebugger-Dienst unter einem Benutzerkonto ausgeführt wird, die sich authentifizieren können, wenn er versucht, eine Verbindung mit dem Computer, von dem Sie debuggen. Dieser Fehler kann auftreten, wenn remote-Debuggen mit der älteren Debug-Engine, und der Remotedebugger als Dienst ausgeführt wird.
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Fehler: Der Visual Studio-Remotedebugdienst auf dem Zielcomputer kann keine Rückverbindung mit diesem Computer herstellen
+Dieser Fehler bedeutet, dass der Remotedebugdienst unter einem Benutzerkonto ausgeführt wird, das sich nicht authentifizieren kann, wenn es versucht, eine Verbindung mit dem Computer herzustellen, von dem aus Sie Debuggen. Dieser Fehler kann auftreten, wenn das Remote Debuggen mit der Legacy-debuggingengine und der Remote Debugger als Dienst ausgeführt wird.
 
  Die folgende Tabelle zeigt, welche Konten auf den Computer zugreifen können:
 
@@ -46,7 +46,7 @@ Dieser Fehler weist darauf hin, dass der Remotedebugger-Dienst unter einem Benut
 
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-1. Stellen Sie sicher, dass der Visual Studio-Remotedebugdienst ordnungsgemäß auf dem Remotecomputer eingerichtet ist. Weitere Informationen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
+1. Stellen Sie sicher, dass der Visual Studio-Remotedebugdienst ordnungsgemäß auf dem Remotecomputer eingerichtet ist. Weitere Informationen finden Sie unter [Remote Debuggen](../debugger/remote-debugging.md).
 
 2. Führen Sie den Remotedebugdienst unter einem Konto aus, über das auf den Hostcomputer des Debuggers zugegriffen werden kann (siehe obige Tabelle).
 

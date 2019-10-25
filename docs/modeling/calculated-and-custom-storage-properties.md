@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc7d4ef8e281cd56b7a585d516cd5d48028a00f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653709"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748539"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können dem Benutzer im Diagramm und im sprach-Explorer angezeigt werden, und Sie können über Programmcode darauf zugreifen. Eigenschaften unterscheiden sich jedoch in der Art und Weise, in der ihre Werte gespeichert werden.

@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadMultiple | Microsoft-Dokumentation
+title: 'Idiapropertystorage:: Read Multiple | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cd1e419e1d08120274fc627a672eb52331ca50f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839536"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742882"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
-Liest die angegebenen Eigenschaften aus der aktuellen Gruppe der Eigenschaft.
+Liest angegebene Eigenschaften aus dem aktuellen Eigenschaften Satz.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,21 +35,21 @@ HRESULT ReadMultiple( 
 #### <a name="parameters"></a>Parameter
  `cpspec`
 
-[in] Die Anzahl der in der angegebenen Eigenschaften der `rgpspec` Array. Falls der Wert NULL ist, wird die Methode gibt keine Eigenschaften zurück, aber gibt zurück, `S_OK` als einen Erfolgscode.
+in Anzahl der Eigenschaften, die im `rgpspec` Array angegeben sind. Wenn 0 (null), gibt die Methode keine Eigenschaften zurück, sondern gibt `S_OK` als Erfolgs Code zurück.
 
  `rgpspec`
 
-[in] Ein Array von Eigenschaften, die gelesen werden. Eigenschaften können entweder durch eine Eigenschafts-ID oder durch eine optionale Zeichenfolgenname angegeben werden. Es ist nicht erforderlich, um Eigenschaften in einer bestimmten Reihenfolge im Array anzugeben. Das Array kann doppelte Eigenschaften, was zu doppelten Eigenschaftswerten bei der Rückgabe für einfache Eigenschaften enthalten. Nicht-Simple-Eigenschaften sollten Zurückgeben der Zugriff verweigert beim Versuch, die sie ein zweites Mal zu öffnen. Das Array kann eine Mischung von Eigenschaft-IDs und Zeichenfolgen-IDs enthalten. Dieses Array benötigen mindestens `cpspec` Anzahl von Eigenschaftswerten.
+in Ein Array von zu lesenden Eigenschaften. Eigenschaften können entweder durch eine eigen schafts-ID oder durch einen optionalen Zeichen folgen Namen angegeben werden. Es ist nicht erforderlich, Eigenschaften in einer bestimmten Reihenfolge im Array anzugeben. Das Array kann doppelte Eigenschaften enthalten, sodass bei der Rückgabe für einfache Eigenschaften doppelte Eigenschaftswerte entstehen. Nicht einfache Eigenschaften sollten beim Versuch, Sie ein zweites Mal zu öffnen, den Zugriff verweigert zurückgeben. Das Array kann eine Mischung aus Eigenschaften-IDs und Zeichen folgen-IDs enthalten. Dieses Array muss mindestens `cpspec` Anzahl von Eigenschafts Werten aufweisen.
 
  `rgvar`
 
-[in, out] Ein Array von `PROPVARIANT` Strukturen (im Namespace Microsoft.VisualStudio.OLE.Interop) mit Werten für jede Eigenschaft gefüllt werden soll. Das Array muss mindestens `cpspec` Elemente in der Größe. Der Aufrufer muss es sich nicht um die Werte im Array zu initialisieren.
+[in, out] Ein Array von `PROPVARIANT` Strukturen (im Microsoft. VisualStudio. OLE. Interop-Namespace), das mit Werten für jede Eigenschaft ausgefüllt werden soll. Das Array muss mindestens `cpspec` Elemente in der Größe aufweisen. Der Aufrufer muss die Werte im Array nicht initialisieren.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn mindestens eine der Eigenschaften wurde nicht gefunden. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn eine oder mehrere Eigenschaften nicht gefunden wurden. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Wenn eine Eigenschaft wurde nicht gefunden, den zugehörigen Eintrag in der `rgvar` Array enthält einen `VARIANT` mit dem Typ des `VT_EMPTY`.
+ Wenn eine Eigenschaft nicht gefunden wurde, enthält der entsprechende Eintrag im `rgvar` Array eine `VARIANT` mit dem Typ `VT_EMPTY`.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

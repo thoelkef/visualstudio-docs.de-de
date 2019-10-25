@@ -25,7 +25,7 @@
 ### [Kontaktieren des Abonnementadministrators](contact-my-admin.md)
 ### Vorteile
 #### Tools
-##### [Azure-Guthaben](vs-azure.md)
+##### [Einzelguthaben für Azure DevTest](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Azure Pay-As-You-Go](vs-azure-payg.md)
 ##### [CAST Highlight](vs-cast.md)

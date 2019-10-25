@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_base | Microsoft-Dokumentation'
+title: 'IDiaStackFrame:: get_base | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72c39e7cbfe9589d2fdf6ed8d1b8f25dee99936
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6802737a69467fb823fb2df8df8160f459e739f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838157"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741732"
 ---
-# <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
-Ruft die Basisadresse des Rahmens ab.
+# <a name="idiastackframeget_base"></a>IDiaStackFrame::get_base
+Ruft die Basisadresse des Frames ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_base ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Basisadresse zurück.
+vorgenommen Gibt die Basisadresse zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

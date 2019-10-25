@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Get_globalscope | Microsoft-Dokumentation'
+title: 'IDiaSession:: get_globalScope | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68a2a7105fba7bfb6f1240c6eec8c6ae497bed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e3dd8d8cb4569857705de1dfebcffe9ee8caed2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839198"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741961"
 ---
-# <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
-Ruft einen Verweis auf den globalen Bereich ab.
+# <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
+Ruft einen Verweis auf den globalen Gültigkeitsbereich ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_globalScope ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das den globalen Bereich darstellt.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das den globalen Gültigkeitsbereich darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [Exe](../../debugger/debug-interface-access/exe.md)

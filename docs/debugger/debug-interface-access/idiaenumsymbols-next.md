@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Next | Microsoft-Dokumentation'
+title: 'IDiaEnumSymbols:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef151b369c18863b8a87944cdbf69fed9aeb0840
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2d754c144ad876890b89ea217bf0ac55ad60b24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833388"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743937"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
-Ruft eine angegebene Anzahl von Symbolen in der Enumerationsfolge ab.
+Ruft eine angegebene Anzahl von Symbolen in der enumerationssequenz ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der Symbole in der Enumerator abgerufen werden sollen.
+in Die Anzahl der Symbole im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Ein Array, das mit gefüllt werden soll die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekte, die die gewünschten Symbole darstellen.
+vorgenommen Ein Array, das mit den [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekten ausgefüllt werden soll, die die gewünschten Symbole darstellen.
 
  pceltFetched
 
-[out] Gibt die Anzahl der Symbole in der abgerufenen Enumerator zurück.
+vorgenommen Gibt die Anzahl der Symbole im abgerufenen Enumerator zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine Symbole mehr vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine weiteren Symbole vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

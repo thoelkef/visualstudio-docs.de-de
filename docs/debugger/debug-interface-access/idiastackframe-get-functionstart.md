@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_functionStart | Microsoft-Dokumentation
+title: 'IDiaStackFrame:: get_functionStart | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a1c700b2a98b51f846e5f1136ef45c67fd5f99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9900b6301388479fc71f1b257113974056aeb3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832075"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741726"
 ---
-# <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
-Ruft ein Flag, das angibt, ob der Block den Einstiegspunkt einer Funktion enthält.
+# <a name="idiastackframeget_functionstart"></a>IDiaStackFrame::get_functionStart
+Ruft ein Flag ab, das angibt, ob der-Block den Einstiegspunkt einer Funktion enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` Wenn den Stapelrahmen den Einstiegspunkt einer Funktion; enthält andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der Stapel Rahmen den Einstiegspunkt einer Funktion enthält. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

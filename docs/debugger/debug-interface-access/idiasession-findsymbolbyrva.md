@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyrva | Microsoft-Dokumentation'
+title: 'IDiaSession:: findSymbolByRVA | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6a32284588163aae57d03ec67c69a9f64663b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3af9915498182338a1b0ffa463f19d9867e76402
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839224"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742051"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
-Ruft einen bestimmtes Symbol-Typ, der enthält, oder um eine angegebene relative virtuelle Adresse (RVA) am nächsten ist.
+Ruft einen angegebenen Symboltyp ab, der eine angegebene relative virtuelle Adresse (RVA) enthält oder der am nächsten liegt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT findSymbolByRVA ( 
 #### <a name="parameters"></a>Parameter
  `rva`
 
-[in] Gibt an, die RVA.
+in Gibt die RVA an.
 
  `symtag`
 
-[in] Der Symboltyp gefunden werden. Werte stammen aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration.
+in Symboltyp, der gefunden werden soll. Werte werden aus der Enumeration der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) entnommen.
 
  `ppSymbol`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das Symbol darstellt, abgerufen.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das abgerufene Symbol darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_nested | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_nested | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864a57b7adb8c77c342367ad5652fb2d839861de
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 16bbc876f3fcafea0c542daec02dbc8a108f203a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796090"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739769"
 ---
-# <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
-Ruft ein Flag, das angibt, ob der benutzerdefinierte Typ geschachtelt ist.
+# <a name="idiasymbolget_nested"></a>IDiaSymbol::get_nested
+Ruft ein Flag ab, das angibt, ob der benutzerdefinierte Datentyp eingebettet ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_nested ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn der benutzerdefinierte Datentyp geschachtelt ist; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der benutzerdefinierte Datentyp eingebettet ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

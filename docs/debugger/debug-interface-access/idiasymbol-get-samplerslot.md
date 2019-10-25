@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_samplerSlot | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_samplerSlot | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe41982faadeec8ac44a0f178045b3c4dfa69b24
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3a311b7139ba9b6d93eac1d50308db2e951c5c4d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835440"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739385"
 ---
-# <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
-Ruft den Sampler-Slot ab.
+# <a name="idiasymbolget_samplerslot"></a>IDiaSymbol::get_samplerSlot
+Ruft den samplingslot ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_samplerSlot(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf eine `DWORD` , die den Sampler-Slot enthält.
+vorgenommen Ein Zeiger auf eine `DWORD`, die den samplingslot enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

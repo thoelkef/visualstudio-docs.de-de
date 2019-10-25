@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_addressoffset | Microsoft-Dokumentation'
+title: 'IDiaFrameData:: get_addressOffset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4460f5102fbb5fd62f332f41a2901d1759731e7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 651ff39eed19a22c1ace24453a44b38ef512b9b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829103"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743674"
 ---
-# <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
-Ruft den Zeitzonenoffset-Teil der Codeadresse für den Frame ab.
+# <a name="idiaframedataget_addressoffset"></a>IDiaFrameData::get_addressOffset
+Ruft den Offset Teil der Code Adresse für den Frame ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_addressOffset ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Zeitzonenoffset-Teil der Codeadresse für den Frame zurück.
+vorgenommen Gibt den Offset Teil der Code Adresse für den Frame zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

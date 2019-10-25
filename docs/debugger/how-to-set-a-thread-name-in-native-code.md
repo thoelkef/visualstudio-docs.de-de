@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a89dce28f33bef0ffdb13d6254b2ac6b86ac25db
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589036"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732755"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Gewusst wie: Festlegen eines Threadnamens in systemeigenem Code
 Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Die Thread Benennung eignet sich für die Identifizierung von relevanten Threads im **Thread** Fenster beim Debuggen eines laufenden Prozesses. Erkennungs-und Erkennungs Threads können auch hilfreich sein, wenn Sie das Debuggen von Postmortem per Absturz Abbild Überprüfung durchführen und die Leistungs Erfassung mithilfe verschiedener Tools analysieren.

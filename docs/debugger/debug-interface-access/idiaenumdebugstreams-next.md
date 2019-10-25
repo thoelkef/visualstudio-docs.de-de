@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Next | Microsoft-Dokumentation'
+title: 'Idiaenumdebug:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b7819c90804933795c220c4d47f288d29abfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b66729192c9c976ecd226ab21aad73b94bf9f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838297"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744726"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
-Ruft eine angegebene Anzahl von Debug-Streams in der Enumerationsfolge ab.
+Ruft eine angegebene Anzahl von debugstreams in der enumerationssequenz ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der Debug-Datenströmen in der Enumerator abgerufen werden sollen.
+in Die Anzahl der debugstreams im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Gibt ein Array von [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Objekte, die das Debuggen stellt streams abgerufen wird.
+vorgenommen Gibt ein Array von [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) -Objekten zurück, das die abgerufenen debugstreams darstellt.
 
  pceltFetched
 
-[out] Gibt die Anzahl der Debug-Streams zurückgegeben.
+vorgenommen Gibt die Anzahl der zurückgegebenen debugstreams zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn sind keine weitere Datenströme. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine weiteren Streams vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

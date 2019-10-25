@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Get_registervalue | Microsoft-Dokumentation'
+title: 'IDiaStackWalkFrame:: get_registerValue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d60fa2ebefb7e1e4eefccce866a1059fdbc78a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5d1010cf9231e4777c8aef8de4a71d23937974e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837978"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741502"
 ---
-# <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
-Ruft den Wert eines Registers.
+# <a name="idiastackwalkframeget_registervalue"></a>IDiaStackWalkFrame::get_registerValue
+Ruft den Wert eines Register ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>Parameter
  `index`
 
-[in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die das Register, um den Wert für angibt.
+in Ein Wert aus der [CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) -enumerationsenumeration, die das Register angibt, für das der Wert zu erhalten ist.
 
  `pRetVal`
 
-[out] Gibt den aktuellen Wert des Registers zurück.
+vorgenommen Gibt den aktuellen Wert des Register zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

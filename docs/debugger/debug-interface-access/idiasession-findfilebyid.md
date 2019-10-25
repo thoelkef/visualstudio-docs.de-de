@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findfilebyid | Microsoft-Dokumentation'
+title: 'IDiaSession:: findFileById | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3454ff5ef087b67dda5d48849d4a6c4eceb7e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aafdd2270606ba6e56713e9166dbae2b8c635b41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839354"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742276"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-Ruft eine Quelldatei von Datei-ID ab.
+Ruft eine Quelldatei nach dem Quelldatei Bezeichner ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,17 +34,17 @@ HRESULT findFileById ( 
 #### <a name="parameters"></a>Parameter
  `uniqueId`
 
-[in] Gibt den Bezeichner der Datei an.
+in Gibt den Quelldatei Bezeichner an.
 
  `ppResult`
 
-[out] Gibt eine [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) abgerufene Objekt, das die Quelldatei darstellt.
+vorgenommen Gibt ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) -Objekt zurück, das die abgerufene Quelldatei darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Bezeichner der Datei ist ein eindeutiger Wert, der intern verwendet, um die DIA-SDK damit alle Quelldateien eindeutig ist. Diese Methode wird in der Regel intern die DIA-SDK verwendet.
+ Der Quelldatei Bezeichner ist ein eindeutiger Wert, der intern für die Dia SDK verwendet wird, um alle Quelldateien eindeutig zu machen. Diese Methode wird in der Regel intern für die Dia SDK verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

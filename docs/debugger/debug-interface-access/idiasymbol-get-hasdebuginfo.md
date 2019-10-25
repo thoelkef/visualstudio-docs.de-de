@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasdebuginfo | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hasDebugInfo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7369437c684b63b1caf3f55d3cc4d852d6eac0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 42ec4efef230a2a12827b92d76eaec5e8e346acd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64801381"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740557"
 ---
-# <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
-Ruft ein Flag, der angibt, wenn die [Kompiliereinheit](../../debugger/debug-interface-access/compiland.md) Debuginformationen enthält.
+# <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
+Ruft ein Flag ab, das angibt, ob die [Kompilierungen](../../debugger/debug-interface-access/compiland.md) Debuginformationen enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_hasDebugInfo(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` , wenn der Kompiliereinheit Debuginformationen; enthält andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Kompilierungen Debuginformationen enthält. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

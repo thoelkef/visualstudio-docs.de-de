@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_name | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_name | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed872bd0cf90bef4433e3430ea8a7557213cbb4c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 754416049197a92344fd238b28ec99e8fb912791
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809009"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739761"
 ---
-# <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
-Ruft den Namen des Symbols.
+# <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
+Ruft den Namen des Symbols ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_name ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Namen des Symbols.
+vorgenommen Gibt den Namen des Symbols zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="example"></a>Beispiel
 

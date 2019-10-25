@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_offsetinudt | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_offsetInUdt | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14832698e186e23b33862ccb1c9f22f3792a6300
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0eeffba743d7fae1d473c45eb350fbfc8bcd0b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793784"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739571"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-Ruft den Offset vom Anfang eines benutzerdefinierten Typs (UDT) eines Elements in der UDT ab.
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
+Ruft den Offset am Anfang eines benutzerdefinierten Typs (User-Defined Type, UDT) eines Members im UDT ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,21 +33,21 @@ HRESULT get_offsetInUdt( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Offset in Bytes, der den Symbolspeicherort zurück.
+vorgenommen Gibt den Offset der Symbol Position in Bytes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Diese Funktion ist nur in lokalen Datensätze in einem optimierten Build verwendet.
+ Diese Funktion wird nur in lokalen Datensätzen in einem optimierten Build verwendet.
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia100.dll
 

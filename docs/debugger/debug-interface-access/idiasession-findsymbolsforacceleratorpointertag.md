@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft-Dokumentation
+title: 'IDiaSession:: findsymbolsforacceleratorpointertag | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72510e9e82c1ec6983075880d4335dee8c0ad23c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da795770ad0f6f57697bc17a4ee8cf936cfc1183
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839237"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741971"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Gibt eine Enumeration von Symbolen für die Variable, die der angegebenen Tagwert entspricht, in der übergeordneten Accelerator-Stub-Funktion zurück.
+Gibt eine Enumeration von Symbolen für die Variable zurück, der der angegebene Tagwert in der übergeordneten Accelerator-stubfunktion entspricht.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,18 +33,18 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein IDiaSymbol, die die Zugriffstaste-Stub-Funktion, die durchsucht werden entspricht.
+in Ein idiasymmetribol, das der zu durchsuchenden Stub-Zugriffs Funktion entspricht.
 
  `tagValue`
 
-[in] Der Tag-Zeigerwert.
+in Der Zeiger Tagwert.
 
  `ppResult`
 
-[out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.
+vorgenommen Ein Zeiger auf einen `IDiaEnumSymbols` Schnittstellen Zeiger, der mit dem Ergebnis initialisiert wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

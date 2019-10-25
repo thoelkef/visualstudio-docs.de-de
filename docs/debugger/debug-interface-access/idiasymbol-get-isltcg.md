@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isltcg | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isLTCG | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5fe47d8575c47756cce8fd1580ced5f3036766
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1d3fa97d5612b61151d9c435b91f500c87af0b23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785721"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740217"
 ---
-# <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
-Ruft ein Flag, das angibt, ob die [Kompiliereinheit](../../debugger/debug-interface-access/compiland.md) verknüpft wurde mit den Linkerschalter [/LTCG (Link-Time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation), unterstützt die Optimierung des ganzen Programms. Diese Option gilt nur für verwalteten Code.
+# <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
+Ruft ein Flag ab, das angibt, ob die [Kompilierungen](../../debugger/debug-interface-access/compiland.md) mit dem [Linkerschalter/LTCG (Link-Time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation)verknüpft wurde, was bei der Optimierung des gesamten Programms hilft. Dieser Switch gilt nur für verwalteten Code.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,22 +31,22 @@ HRESULT get_iSLTCG(
 ```
 
 #### <a name="parameters"></a>Parameter
- pFlag
+ PFLAG
 
-[out] Gibt `TRUE` Wenn die `compiland` mit den Linkerschalter "/ LTCG" verknüpft wurde, andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die `compiland` mit dem/LTCG Linker-Schalter verknüpft war. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

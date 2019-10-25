@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasinlasm | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hasInlAsm | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ebeb1670ed9eb85820a41858c964ef561a8a5c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 336849e6818bd3b8d68558b381b8f0a0f8600028
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830426"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740514"
 ---
-# <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
-Ruft ein Flag, das angibt, ob die Funktion eine Inlineassembly enthält.
+# <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
+Ruft ein Flag ab, das angibt, ob die Funktion eine Inlineassembly enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_hasInlAsm(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` , wenn die Funktion alle Inlineassembly; hat, andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Funktion über eine Inlineassembly verfügt. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

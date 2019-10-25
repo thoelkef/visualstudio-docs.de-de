@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_virtualaddress | Microsoft-Dokumentation'
+title: 'IDiaFrameData:: get_virtualAddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523d7dac2b0501957bcc2cd8ea54695548610a44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb404c8a537870bb300f280022c233ad641ed2df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829002"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743451"
 ---
-# <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
+# <a name="idiaframedataget_virtualaddress"></a>IDiaFrameData::get_virtualAddress
 Ruft die virtuelle Adresse (VA) des Codes für den Frame ab.
 
 ## <a name="syntax"></a>Syntax
@@ -33,10 +33,10 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die virtuelle Adresse des Codes für den Frame zurück.
+vorgenommen Gibt die virtuelle Adresse des Codes für den Frame zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
