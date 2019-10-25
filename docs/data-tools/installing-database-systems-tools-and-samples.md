@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94ce946f7c14706b57618f3d9aeb90cc207fcf04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd469f955a24c6d3c2fb5e438d81e6b8a2db8458
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648303"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807000"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Kompatible Datenbanksysteme für Visual Studio
 
@@ -35,19 +35,19 @@ SQL Server ist das Microsoft-Flaggschiff-Datenbankangebot. SQL Server 2016 biete
 
 ## <a name="oracle"></a>Oracle
 
-Sie können eine kostenpflichtige oder kostenlose Edition der Oracle-Datenbank von der Seite [Oracle Technology Network](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) herunterladen. Zur Entwurfszeit Unterstützung für Entity Framework und TableAdapters benötigen Sie die [Oracle Developer Tools für Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Andere offizielle Oracle-Produkte, einschließlich des Oracle Instant Client, sind über den nuget-Paket-Manager verfügbar. Sie können Oracle-Beispiel Schemas herunterladen, indem Sie die Anweisungen in der [Oracle-Online Dokumentation](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)befolgen.
+Sie können eine kostenpflichtige oder kostenlose Edition der Oracle-Datenbank von der Seite [Oracle Technology Network](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html) herunterladen. Zur Entwurfszeit Unterstützung für Entity Framework und TableAdapters benötigen Sie die [Oracle Developer Tools für Visual Studio](https://www.oracle.com/database/technologies/developer-tools/visual-studio/). Andere offizielle Oracle-Produkte, einschließlich des Oracle Instant Client, sind über den nuget-Paket-Manager verfügbar. Sie können Oracle-Beispiel Schemas herunterladen, indem Sie die Anweisungen in der [Oracle-Online Dokumentation](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)befolgen.
 
 ## <a name="mysql"></a>MySQL
 
-MySQL ist ein gängiges Open-Source-Datenbanksystem, das in Unternehmen und Websites häufig verwendet wird. Downloads für MySQL, MySQL für Visual Studio und Verwandte Produkte finden Sie unter [MySQL unter Windows](http://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständige Verwaltungs Anwendungen für MySQL. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten).
+MySQL ist ein gängiges Open-Source-Datenbanksystem, das in Unternehmen und Websites häufig verwendet wird. Downloads für MySQL, MySQL für Visual Studio und Verwandte Produkte finden Sie unter [MySQL unter Windows](https://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständige Verwaltungs Anwendungen für MySQL. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL ist ein kostenloses Open-Source-Objekt für relationale Datenbanken. Um es unter Windows zu installieren, können Sie es von der [PostgreSQL-Downloadseite](http://www.postgresql.org/download/windows/)herunterladen. Sie können PostgreSQL auch aus dem Quellcode erstellen. Das PostgreSQL-Kernsystem umfasst eine Schnittstelle der Programmiersprache C. Viele Drittanbieter stellen nuget-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten). Möglicherweise wird das beliebteste Paket von [npgsql.org](http://www.npgsql.org)bereitgestellt.
+PostgreSQL ist ein kostenloses Open-Source-Objekt für relationale Datenbanken. Um es unter Windows zu installieren, können Sie es von der [PostgreSQL-Downloadseite](https://www.postgresql.org/download/windows/)herunterladen. Sie können PostgreSQL auch aus dem Quellcode erstellen. Das PostgreSQL-Kernsystem umfasst eine Schnittstelle der Programmiersprache C. Viele Drittanbieter stellen nuget-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten). Möglicherweise wird das beliebteste Paket von [npgsql.org](http://www.npgsql.org)bereitgestellt.
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite ist eine eingebettete SQL-Datenbank-Engine, die im eigenen Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](http://www.sqlite.org/download.html)herunterladen. Viele nuget-Pakete von Drittanbietern für SQLite sind ebenfalls verfügbar. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten).
+SQLite ist eine eingebettete SQL-Datenbank-Engine, die im eigenen Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](https://www.sqlite.org/download.html)herunterladen. Viele nuget-Pakete von Drittanbietern für SQLite sind ebenfalls verfügbar. Sie können die Angebote im nuget-Paket-Manager Durchsuchen (**Tools**  > **nuget-Paket-Manager**  > **nuget-Pakete für**Projekt Mappe verwalten).
 
 ## <a name="firebird"></a>Firebird
 
@@ -56,4 +56,4 @@ Firebird ist ein Open-Source-SQL-Datenbanksystem. Sie können es von der [Downlo
 ## <a name="see-also"></a>Siehe auch
 
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [So ermitteln Sie die Version, Edition und Updateebene von SQL Server und seinen Komponenten](http://support.microsoft.com/kb/321185)
+- [So ermitteln Sie die Version, Edition und Updateebene von SQL Server und seinen Komponenten](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f725c810261a5e154d0e9d3c05e26cd09ed70d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: HT
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747072"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806765"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 Um Parallelitäts Fehler in Ihrem Multithread-Programm zu vermeiden, befolgen Sie immer eine angemessene Sperr Disziplin, und verwenden Sie SAL-Anmerkungen.
@@ -70,7 +70,7 @@ In der folgenden Tabelle sind die Sperr Anmerkungen aufgeführt.
 |`_Acquires_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um einen Schritt um die Sperrenanzahl des Sperr Objekts erhöht wird, das durch `expr` benannt wird.|
 |`_Acquires_nonreentrant_lock_(expr)`|Die von `expr` benannte Sperre wird abgerufen.  Wenn die Sperre bereits besteht, wird ein Fehler gemeldet.|
 |`_Acquires_shared_lock_(expr)`|Kommentiert eine Funktion und gibt an, dass die Funktion im Post-Zustand um eine Anzahl der freigegebenen Sperren des Sperr Objekts, das von `expr` benannt wird, inkreliert wird.|
-|`_Create_lock_level_(name)`|Eine Anweisung, die das Symbol deklariert, `name` eine Sperr Ebene sein kann, damit Sie in den Anmerkungen `_Has_Lock_level_` und `_Lock_level_order_` verwendet werden kann.|
+|`_Create_lock_level_(name)`|Eine Anweisung, die das Symbol deklariert, `name` eine Sperr Ebene sein kann, damit Sie in den Anmerkungen `_Has_Lock_level_` und `_Lock_level_order_`verwendet werden kann.|
 |`_Has_lock_kind_(kind)`|Kommentiert alle-Objekte, um die Typinformationen eines Ressourcen Objekts zu verfeinern. Manchmal wird ein gemeinsamer Typ für verschiedene Arten von Ressourcen verwendet, und der überladene Typ reicht nicht aus, um die semantischen Anforderungen zwischen verschiedenen Ressourcen zu unterscheiden. Im folgenden finden Sie eine Liste vordefinierter `kind` Parameter:<br /><br /> `_Lock_kind_mutex_`<br /> Sperrenkind-ID für Mutexes.<br /><br /> `_Lock_kind_event_`<br /> Sperrenkind-ID für Ereignisse.<br /><br /> `_Lock_kind_semaphore_`<br /> Sperrenkind-ID für Semaphore.<br /><br /> `_Lock_kind_spin_lock_`<br /> Sperrenkind-ID für Spin-sperren.<br /><br /> `_Lock_kind_critical_section_`<br /> Sperrenkind-ID für kritische Abschnitte.|
 |`_Has_lock_level_(name)`|Kommentiert ein Lock-Objekt und übergibt ihm die Sperr Ebene `name`.|
 |`_Lock_level_order_(name1, name2)`|Eine-Anweisung, die die Sperr Anordnung zwischen `name1` und `name2` ermöglicht.|
@@ -113,9 +113,9 @@ Smart Locks wrappen in der Regel Native Sperren und verwalten ihre Lebensdauer. 
 |`_Analysis_assume_smart_lock_acquired_`|Weist den Analyzer an, zu übernehmen, dass eine Smart Lock abgerufen wurde. Diese Anmerkung erwartet einen verweissperrentyp als Parameter.|
 |`_Analysis_assume_smart_lock_released_`|Weist den Analyzer an, zu übernehmen, dass eine Smart Lock freigegeben wurde. Diese Anmerkung erwartet einen verweissperrentyp als Parameter.|
 |`_Moves_lock_(target, source)`|Beschreibt `move constructor` Vorgang, der den Sperr Zustand vom `source`-Objekt an den `target` überträgt. Der `target` wird als neu konstruiertes Objekt betrachtet, sodass jeder Zustand, der zuvor aufgetreten ist, verloren geht und durch den `source` Status ersetzt wird. Die `source` wird auch auf einen sauberen Zustand zurückgesetzt, der keine Sperr Anzahl oder kein Alias Ziel aufweist, aber Aliase, die darauf zeigen, bleiben unverändert.|
-|`_Replaces_lock_(target, source)`|Beschreibt `move assignment operator` Semantik, bei der die Ziel Sperre freigegeben wird, bevor der Status aus der Quelle übertragen wird. Dies kann als eine Kombination von `_Moves_lock_(target, source)` angesehen werden, denen ein `_Releases_lock_(target)` vorangestellt ist.|
+|`_Replaces_lock_(target, source)`|Beschreibt `move assignment operator` Semantik, bei der die Ziel Sperre freigegeben wird, bevor der Status aus der Quelle übertragen wird. Dies kann als eine Kombination von `_Moves_lock_(target, source)` angesehen werden, denen ein `_Releases_lock_(target)`vorangestellt ist.|
 |`_Swaps_locks_(left, right)`|Beschreibt das Standard `swap` Verhalten, bei dem davon ausgegangen wird, dass-Objekte `left` und `right` ihren Zustand austauschen. Der ausgetauschte Status umfasst ggf. Sperr Anzahl und Aliasing-Ziel. Aliase, die auf die `left` und `right` Objekte zeigen, bleiben unverändert.|
-|`_Detaches_lock_(detached, lock)`|Beschreibt ein Szenario, in dem ein Lock Wrapper Type die Trennung der enthaltenen Ressource zulässt. Dies ähnelt der Funktionsweise von `std::unique_ptr` mit dem internen Zeiger: Sie ermöglicht es Programmierern, den Zeiger zu extrahieren und den intelligenten Zeiger Container in einem sauberen Zustand zu belassen. Eine ähnliche Logik wird von `std::unique_lock` unterstützt und kann in benutzerdefinierten sperrwrappern implementiert werden. Die getrennte Sperre behält ihren Zustand (sofern vorhanden) bei, während der Wrapper zurückgesetzt wird, sodass er keine Sperr Anzahl und kein Alias Ziel enthält, während seine eigenen Aliase beibehalten werden. Es gibt keinen Vorgang für Sperr Zählungen (freigeben und erwerben). Diese Anmerkung verhält sich genau wie `_Moves_lock_`, mit der Ausnahme, dass das getrennte Argument `return` und nicht `this` sein sollte.|
+|`_Detaches_lock_(detached, lock)`|Beschreibt ein Szenario, in dem ein Lock Wrapper Type die Trennung der enthaltenen Ressource zulässt. Dies ähnelt der Funktionsweise von `std::unique_ptr` mit dem internen Zeiger: Sie ermöglicht es Programmierern, den Zeiger zu extrahieren und den intelligenten Zeiger Container in einem sauberen Zustand zu belassen. Eine ähnliche Logik wird von `std::unique_lock` unterstützt und kann in benutzerdefinierten sperrwrappern implementiert werden. Die getrennte Sperre behält ihren Zustand (sofern vorhanden) bei, während der Wrapper zurückgesetzt wird, sodass er keine Sperr Anzahl und kein Alias Ziel enthält, während seine eigenen Aliase beibehalten werden. Es gibt keinen Vorgang für Sperr Zählungen (freigeben und erwerben). Diese Anmerkung verhält sich genau wie `_Moves_lock_`, mit der Ausnahme, dass das getrennte Argument `return` und nicht `this`sein sollte.|
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -127,4 +127,4 @@ Smart Locks wrappen in der Regel Native Sperren und verwalten ihre Lebensdauer. 
 - [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)
 - [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)
-- [Blog des Code Analyseteams](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [Blog des Code Analyseteams](https://blogs.msdn.microsoft.com/codeanalysis/)

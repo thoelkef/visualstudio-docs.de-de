@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 5617d24d146bae6c2632d39def6d8736d982ef39
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: HT
+ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747082"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806808"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 In diesem Artikel werden typische Verwendungsmöglichkeiten von Anmerkungen für einfache Funktionsparameter – skalare und Zeiger auf Strukturen und Klassen – und die meisten Puffer Typen beschrieben.  Dieser Artikel zeigt auch gängige Verwendungs Muster für Anmerkungen. Weitere Anmerkungen, die sich auf Funktionen beziehen, finden Sie unter [kommentieren von Funktionsverhalten](../code-quality/annotating-function-behavior.md).
@@ -245,23 +245,23 @@ Wenn für die Anmerkungen in der folgenden Tabelle ein Zeiger Parameter mit Anme
 
 - `_In_reads_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
+     Ein Zeiger auf ein Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
+     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen im Voraus Status gültig sein.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Ein Zeiger auf ein Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
+     Ein Zeiger auf ein Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`) durch den entsprechenden Sprachstandard definiert wird.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
+     Ein Zeiger auf ein mit Null endendes Array, für das der Ausdruck `p` - `_Curr_` (d. h. `p` minus `_Curr_`), wird durch den entsprechenden Sprachstandard definiert.  Die Elemente vor `p` müssen nicht im Voraus State gültig sein und müssen im Post-State gültig sein.
 
 ## <a name="optional-pointer-parameters"></a>Optionale Zeigerparameter
 
-Wenn eine Zeiger Parameter Anmerkung `_opt_` enthält, weist dies darauf hin, dass der Parameter möglicherweise NULL ist. Andernfalls führt die-Anmerkung dieselbe wie die Version aus, die keine `_opt_` enthält. Im folgenden finden Sie eine Liste der `_opt_` Varianten der Zeiger Parameter Anmerkungen:
+Wenn eine Zeiger Parameter Anmerkung `_opt_`enthält, weist dies darauf hin, dass der Parameter möglicherweise NULL ist. Andernfalls führt die-Anmerkung dieselbe wie die Version aus, die keine `_opt_`enthält. Im folgenden finden Sie eine Liste der `_opt_` Varianten der Zeiger Parameter Anmerkungen:
 
 ||||
 |-|-|-|
@@ -288,7 +288,7 @@ Ausgabe Zeiger Parameter erfordern eine besondere Schreibweise, um die NULL-Wert
 
    Der-Parameter kann NULL sein, und im Post-State kann der Punkt-zu-Standort den Wert NULL haben.
 
-  In der folgenden Tabelle werden zusätzliche Teil Zeichenfolgen in den Namen der Anmerkung eingefügt, um die Bedeutung der Anmerkung weiter zu qualifizieren.  Die verschiedenen Teil Zeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_` und `_to_`.
+  In der folgenden Tabelle werden zusätzliche Teil Zeichenfolgen in den Namen der Anmerkung eingefügt, um die Bedeutung der Anmerkung weiter zu qualifizieren.  Die verschiedenen Teil Zeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`und `_to_`.
 
 > [!IMPORTANT]
 > Wenn die Schnittstelle, die Sie kommentieren, com ist, verwenden Sie das com-Formular dieser Anmerkungen. Verwenden Sie die com-Anmerkungen nicht mit anderen typschnittstellen.
@@ -361,7 +361,7 @@ Ausgabe Zeiger Parameter erfordern eine besondere Schreibweise, um die NULL-Wert
 
 ## <a name="output-reference-parameters"></a>Ausgabeverweisparameter
 
-Der Verweis Parameter wird häufig für Ausgabeparameter verwendet.  Für einfache Ausgabe Verweis Parameter – z. b. `int&` – `_Out_` die richtige Semantik bereit.  Wenn der Ausgabewert jedoch ein Zeiger ist – z. b. `int *&` – werden die entsprechenden Zeiger Anmerkungen wie `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Verwenden Sie die folgenden zusammengesetzten Anmerkungen, um die Semantik der Ausgabe Verweis Parameter für Zeiger Typen kurz auszudrücken:
+Der Verweis Parameter wird häufig für Ausgabeparameter verwendet.  Für einfache Ausgabe Verweis Parameter – z. b. `int&`–`_Out_` die richtige Semantik bereit.  Wenn der Ausgabewert jedoch ein Zeiger ist – z. b. `int *&`– werden die entsprechenden Zeiger Anmerkungen wie `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Verwenden Sie die folgenden zusammengesetzten Anmerkungen, um die Semantik der Ausgabe Verweis Parameter für Zeiger Typen kurz auszudrücken:
 
 **Anmerkungen und Beschreibungen**
 
@@ -517,7 +517,7 @@ Der Rückgabewert einer Funktion ähnelt einem `_Out_`-Parameter, befindet sich 
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-[Blog des Code Analyseteams](http://go.microsoft.com/fwlink/?LinkId=251197)
+[Blog des Code Analyseteams](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>Siehe auch
 
