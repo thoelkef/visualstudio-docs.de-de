@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 501a054ddb1d3ab20a10f99bb30a0c3439004eb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40f3c3c22de6b4b0ebdbdf2dfc953f4cb1c9b5e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848681"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736079"
 ---
-# <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
+# <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 Definiert durch das Vorhandensein, ob die Grafikprotokolldatei im Verzeichnis der temporären Dateien des Benutzers gespeichert wird.
 
 ## <a name="syntax"></a>Syntax
@@ -30,7 +30,7 @@ Definiert durch das Vorhandensein, ob die Grafikprotokolldatei im Verzeichnis de
 ## <a name="remarks"></a>Hinweise
  Abhängig von den Berechtigungen des Benutzers kann die Grafikprotokolldatei möglicherweise nicht an einem beliebigen Speicherort gespeichert werden. Es wird empfohlen, Grafikprotokolle vorzugsweise im Verzeichnis der temporären Dateien des Benutzers oder an einem anderen, als funktionierend bekannten Speicherort zu speichern, wenn Sie unsicher sind, ob in den Speicherort, den Sie auswählen würden, vom Benutzer geschrieben werden kann.
 
- Um zu verhindern, dass die grafikprotokolldatei an das Verzeichnis der temporären Dateien gespeichert werden, müssen Sie definiert `DONT_SAVE_VSGLOG_TO_TEMP` bevor Sie einfügen `vsgcapture.h`.
+ Um zu verhindern, dass die Grafik Protokolldatei im Verzeichnis temporäre Dateien gespeichert wird, müssen Sie `DONT_SAVE_VSGLOG_TO_TEMP` definieren, bevor Sie `vsgcapture.h` einschließen.
 
 ## <a name="example"></a>Beispiel
  Dieses Beispiel zeigt, wie Sie die Grafikprotokolldatei in einem absoluten Pfad auf dem Hostcomputer speichern können.

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbasepointeroffset | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_virtualBasePointerOffset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172ac6a2adc5a5d5a66d9302274d7f657e5fdd12
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af45900b142d50a82d6a7365e499686656bbdb41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809028"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738848"
 ---
-# <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
-Ruft den Offset von der virtuellen basiszeiger ab.
+# <a name="idiasymbolget_virtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
+Ruft den Offset des virtuellen Basis Zeigers ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_virtualBasePointerOffset ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Offset der virtuellen basiszeiger zurück.
+vorgenommen Gibt den Offset des virtuellen Basis Zeigers zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

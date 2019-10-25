@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sourcefilename | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_sourceFileName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258abfc908a065f7f1854cb7b52d4c16afbdd314
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eed1fd7b80beeda45664983249e4ef8b5034aa01
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798997"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739308"
 ---
-# <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
-Ruft den Dateinamen der Quelldatei Kompiliereinheit ab.
+# <a name="idiasymbolget_sourcefilename"></a>IDiaSymbol::get_sourceFileName
+Ruft den Dateinamen der Kompilierungen-Quelldatei ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_sourceFileName ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den Dateinamen der Quelldatei Kompiliereinheit zurück.
+vorgenommen Gibt den Dateinamen der Kompilierungen-Quelldatei zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

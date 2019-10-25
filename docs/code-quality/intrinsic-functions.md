@@ -15,12 +15,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4824cba4de67ad199974f5844c7f220a6fd6accc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445703"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745912"
 ---
 # <a name="intrinsic-functions"></a>Systeminterne Funktionen
 Ein Ausdruck in SAL kann ein C/C++ Ausdruck sein, vorausgesetzt, dass es sich um einen Ausdruck handelt, der keine Nebeneffekte hat – z. b. + +,--, und Funktionsaufrufe haben alle Nebeneffekte in diesem Kontext.  SAL bietet jedoch einige Funktions ähnliche Objekte und einige reservierte Symbole, die in SAL-Ausdrücken verwendet werden können. Diese werden als *intrinsische Funktionen*bezeichnet.

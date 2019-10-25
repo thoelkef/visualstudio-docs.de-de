@@ -1,5 +1,5 @@
 ---
-title: SccPopulateDirList-Funktion | Microsoft-Dokumentation
+title: Sccpopulatedirlist-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6508b8cfde2f08eb40201973fec899ee11956b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353553"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720893"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList-Funktion
-Diese Funktion bestimmt, welche Verzeichnisse und (optional) die Dateien, in der quellcodeverwaltung ist eine Liste der Verzeichnisse gespeichert sind, um zu überprüfen.
+Diese Funktion bestimmt, welche Verzeichnisse und (optional) Dateien in der Quell Code Verwaltung gespeichert werden, wenn eine Liste der zu untersuchenden Verzeichnisse angegeben wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,40 +36,40 @@ SCCRTN SccPopulateDirList(
 ```
 
 #### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
 
- nDirs
+ ndirs
 
-[in] Anzahl der Verzeichnispfade, in der `lpDirPaths` Array.
+in Anzahl der Verzeichnispfade im `lpDirPaths` Array.
 
- lpDirPaths
+ lpdirpath
 
-[in] Ein Array von Verzeichnispfaden, um zu überprüfen.
+in Array der Verzeichnispfade, die untersucht werden sollen.
 
- pfnPopulate
+ pfnauffüllen
 
-[in] Rückruffunktion für jedes Verzeichnispfad und (optional) den Dateinamen im `lpDirPaths` (finden Sie unter [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Einzelheiten).
+in Rückruffunktion, die für jeden Verzeichnispfad und (optional) filename in `lpDirPaths` aufgerufen werden soll (Weitere Informationen finden Sie unter [popdirlistfunc](../extensibility/popdirlistfunc.md) ).
 
- pvCallerData
+ pvcallerdata
 
-[in] Wert, der unverändert an die Rückruffunktion übergeben werden soll.
+in Der Wert, der unverändert an die Rückruffunktion übermittelt werden soll.
 
- Bestanden
+ f-Optionen
 
-[in] Eine Kombination von Werten, die steuern, wie die Verzeichnisse verarbeitet werden (finden Sie im Abschnitt "PopulateDirList Flags" [Bitflags, die von bestimmten Befehlen verwendete](../extensibility/bitflags-used-by-specific-commands.md) mögliche Werte).
+in Eine Kombination von Werten, die die Verarbeitung der Verzeichnisse steuern (Weitere Informationen finden Sie im Abschnitt "Auffüllen von Auflistungs Flags" von [Bitflags, die von bestimmten Befehlen](../extensibility/bitflags-used-by-specific-commands.md) für mögliche Werte verwendet werden).
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
-|SCC_OK|Der Vorgang erfolgreich abgeschlossen.|
+|SCC_OK|Der Vorgang wurde erfolgreich abgeschlossen.|
 |SCC_E_UNKNOWNERROR|Es ist ein Fehler aufgetreten.|
 
 ## <a name="remarks"></a>Hinweise
- Nur die Verzeichnisse und (optional) die Namen, die tatsächlich in das Quellcodeverwaltungs-Repository werden an die Rückruffunktion übergeben.
+ Nur die Verzeichnisse und (optional) Dateinamen, die sich tatsächlich im Quellcodeverwaltungs-Repository befinden, werden an die Rückruffunktion übermittelt.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

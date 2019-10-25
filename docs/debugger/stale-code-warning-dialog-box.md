@@ -1,5 +1,5 @@
 ---
-title: Veralteter Code Warndialogfeld | Microsoft-Dokumentation
+title: Warnung bei veraltetem Code (Dialog Feld) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9173563239084b8367d9815b46f28d0626ebe04a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902490"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729544"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Warnung: Veralteter Code (Dialogfeld)
 

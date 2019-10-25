@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 255c55dff0dab0c7b36f5029de9e688db949a1fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eff457d539317d2f8c7d77dfc85eb16063650c14
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833427"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744160"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
-Listet die verschiedenen Segmente, die in der Datenquelle enthalten sind.
+Listet die verschiedenen Segmente auf, die in der Datenquelle enthalten sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,25 +29,25 @@ IDiaEnumSegments : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
-Die folgende Tabelle zeigt die Methoden der `IDiaEnumSegments`.
+In der folgenden Tabelle sind die Methoden von `IDiaEnumSegments` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) Version von diesem Enumerator.|
+|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Ruft die Version der [IEnumVARIANT-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) dieses Enumerators ab.|
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Ruft die Anzahl der Segmente ab.|
 |[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Ruft ein Segment mithilfe eines Indexes ab.|
-|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.|
-|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.|
+|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Ruft eine angegebene Anzahl von Segmenten in der enumerationssequenz ab.|
+|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einer enumerationssequenz.|
 |[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
 |[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
 
 ## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
-Rufen Sie diese Schnittstelle durch Aufrufen der `QueryInterface` Methode für ein [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekt. Siehe das Beispiel für Details.
+Rufen Sie diese Schnittstelle, indem Sie die `QueryInterface`-Methode für ein [idisierbares](../../debugger/debug-interface-access/idiatable.md) Objekt aufrufen. Weitere Informationen finden Sie im Beispiel.
 
 ## <a name="example"></a>Beispiel
-Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumSections` Schnittstelle aus einer Tabelle. Ein vollständigeres Beispiel der Verwendung von Segmenten, finden Sie unter den [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) Schnittstelle.
+Dieses Beispiel zeigt, wie Sie die `IDiaEnumSections`-Schnittstelle aus einer Tabelle abrufen. Ein ausführeres Beispiel für die Verwendung von Segmenten finden Sie in der [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) -Schnittstelle.
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -67,7 +67,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ## <a name="requirements"></a>Anforderungen
 Header: Dia2.h
 
-Bibliothek: diaguids.lib
+Bibliothek: diaguids. lib
 
 DLL: msdia80.dll
 

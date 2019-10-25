@@ -1,5 +1,5 @@
 ---
-title: Assistentenunterstützung für geschachtelte Projekte | Microsoft-Dokumentation
+title: Assistenten Unterstützung für in der Liste eingefügte Projekte | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa1dedebab95e1c1b74e1705f3a8b39a1ebe3616
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5e498f21499f4b07bf77bb79829fc6d92227f1f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312927"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721433"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Assistentenunterstützung für geschachtelte Projekte
-Die IDE ausgeführt wird, zwei Assistenten, die das übergeordnete Projekt für geschachtelte Projekte implementieren können: die **neues Projekt** Assistenten und die **Element hinzufügen** Assistenten.
+Die IDE führt zwei Assistenten aus, die das übergeordnete Projekt für die untergeordneten Projekte implementieren kann: den Assistenten für **neue** Projekte und den Assistenten zum **Hinzufügen** von Elementen.
 
- Wenn ein Benutzer startet die **neues Projekt** Assistenten dazu **Projekt hinzufügen** und auf **neues Projekt** auf das Menü "Datei" oder durch auswählen **hinzufügen** und mit der rechten Maustaste **neues Projekt** im Projektmappen-Explorer führt die IDE die **AddProject** Befehl und die Implementierung des übergeordneten Projekts der **AddProject**Befehl gibt entweder eine Vorlagendatei für das Projekt oder eine Assistentendateien (VSZ)-Datei, die einen Satz von Kontextparametern verfügt.
+ Wenn ein Benutzer den Assistenten für **neue Projekte** startet, klicken Sie im Menü Datei auf **Projekt hinzufügen** und im Menü Datei auf **Neues Projekt** , oder wählen **Sie hinzufügen** aus, und klicken Sie mit der rechten Maustaste auf **Neues Projekt** in Projektmappen-Explorer.der Befehl und die Implementierung des Befehls " **AddProject** " des übergeordneten Projekts gibt entweder eine Vorlagen Projektdatei oder eine Assistenten Datei (. vsz) zurück, die über einen Satz von Kontext Parametern verfügt.
 
- Auf ähnliche Weise des übergeordneten Projekts Implementierung von **AddItem** Assistenten gibt eine VSZ-Datei, die über einen anderen Satz von Kontextparametern verfügt.
+ Entsprechend gibt die Implementierung der **AddItem** -Assistenten eines übergeordneten Projekts eine VSZ-Datei zurück, die über einen anderen Satz von Kontext Parametern verfügt.
 
- Weitere Informationen zu Assistenten finden Sie unter [Assistenten (. VSZ) Datei](../../extensibility/internals/wizard-dot-vsz-file.md), [Kontextparameter](../../extensibility/internals/context-parameters.md) und [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).
+ Weitere Informationen zu Assistenten finden Sie unter [Assistent (. VSZ-Datei](../../extensibility/internals/wizard-dot-vsz-file.md), [Kontext Parameter](../../extensibility/internals/context-parameters.md) und das [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

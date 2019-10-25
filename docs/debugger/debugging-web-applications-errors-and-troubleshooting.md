@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Web-apps – Fehler und Problembehandlung
+title: 'Debuggen von Web-Apps: Fehler und Problembehandlung'
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb84da1c75da968f9f89417cc48deec5310bc270
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851612"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738045"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debuggen von Webanwendungen: Fehler und Problembehandlung
 Beim Debuggen von Webanwendungen können folgende Fehler auftreten.

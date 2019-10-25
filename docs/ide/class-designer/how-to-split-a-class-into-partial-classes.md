@@ -6,20 +6,20 @@ helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 42d2cf5c0fa5c08c51ebfbc94d9a03221df46788
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615408"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647703"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Vorgehensweise: Aufteilen einer Klasse in partielle Klassen im Klassen-Designer
 

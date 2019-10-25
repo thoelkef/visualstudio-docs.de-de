@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_acceleratorPointerTags | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827293"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741116"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Gibt alle Accelerator Zeiger Tag-Werte, die entsprechen einer C++ AMP-Beschleuniger Stub-Funktion zurück.
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Gibt alle Zugriffstasten Zeiger-Tagwerte zurück, C++ die einer amp-Beschleuniger-Stub-Funktion entsprechen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Parameter
  `cnt`
 
-[in] Die Größe des Ausgabearrays `pPointerTags`.
+in Die Größe des Ausgabe Arrays `pPointerTags`.
 
  `pcnt`
 
-[out] Die Anzahl von Accelerator-Zeiger-Tags in der C++ AMP-Beschleuniger Stub-Funktion.
+vorgenommen Die Anzahl von Zugriffstasten-Zeiger Tags C++ in der amp-Accelerator-Stub-Funktion.
 
  `pPointerTags`
 
-[out] Ein `DWORD` Array-Zeiger, der mit der Zugriffstaste Zeiger Tagwerten in gefüllt ist die C++ AMP-Beschleuniger Stub-Funktion.
+vorgenommen Ein `DWORD` Array Zeiger, der mit den Zugriffstasten-Tagwerten in der C++ amp-Beschleuniger-Stub-Funktion gefüllt ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Diese Methode wird aufgerufen, auf eine `IDiaSymbol` Schnittstelle, die eine C++-AMP-Beschleuniger Stub-Funktion entspricht.
+ Diese Methode wird für eine `IDiaSymbol`-Schnittstelle aufgerufen, die C++ einer amp-Accelerator-stubfunktion entspricht.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154858"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647317"
 ---
 # <a name="use-the-task-list"></a>Verwenden der Aufgabenliste
 
@@ -32,7 +32,7 @@ Verwenden Sie die **Aufgabenliste**, um Codekommentare, die Token wie `TODO` und
 
 Wird die **Aufgabenliste** geöffnet, wird sie unten im Anwendungsfenster angezeigt.
 
-Wählen Sie zum Öffnen der **Aufgabenliste** **Ansicht** > **Aufgabenliste** aus, oder drücken Sie auf der Tastatur **STRG**+**\\**,**T**.
+Wählen Sie zum Öffnen der **Aufgabenliste** **Ansicht** > **Aufgabenliste** aus, oder drücken Sie auf der Tastatur **STRG**+ **\\** ,**T**.
 
 ![Aufgabenliste (Fenster)](../ide/media/vs2015_task_list.png)
 
@@ -94,7 +94,7 @@ So erstellen Sie ein benutzerdefiniertes Token:
 
 Standardmäßig werden C++-TODO-Kommentare im Fenster **Aufgabenliste** angezeigt.
 
-Wechseln Sie zum Deaktivieren der C++-TODO-Kommentare im Menü **Extras** zu **Optionen** > **Text-Editor** > **C/C++** > **Ansicht** > **Kommentaraufgaben aufzählen**, und legen Sie den Wert auf **FALSE** fest.
+Wechseln Sie zum Deaktivieren der C++-TODO-Kommentare im Menü **Extras** zu **Optionen** > **Text-Editor** > **C/C++**  > **Ansicht** > **Kommentaraufgaben aufzählen**, und legen Sie den Wert auf **FALSE** fest.
 
 ## <a name="shortcuts"></a>Verknüpfungen
 

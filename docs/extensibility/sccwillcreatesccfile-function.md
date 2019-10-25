@@ -1,5 +1,5 @@
 ---
-title: SccWillCreateSccFile-Funktion | Microsoft-Dokumentation
+title: Sccwillkreatesccfile-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dc7b9f5b298260b2bcca88c75087059bd8f0065
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ac7657258b79b2e53bee8138bc5b2728f618eac
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338453"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720115"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile-Funktion
-Diese Funktion bestimmt, ob das Quellcodeverwaltungs-Plug-in die Erstellung der MSSCCPRJ unterstützt. SCC-Datei für jede der angegebenen Dateien.
+Diese Funktion bestimmt, ob das Quellcodeverwaltungs-Plug-in die Erstellung von Mssccprj unterstützt. SCC-Datei für jede der angegebenen Dateien.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,33 +34,33 @@ SCCRTN SccWillCreateSccFile(
 ```
 
 #### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
 
- nFiles
+ nnoch
 
-[in] Die Anzahl der in enthalten die Namen der `lpFileNames` sowie die Länge des Arrays der `pbSccFiles` Array.
+in Die Anzahl der Dateinamen, die im `lpFileNames` Array enthalten sind, sowie die Länge des `pbSccFiles` Arrays.
 
- lpFileNames
+ lpfile-Namen
 
-[in] Ein Array von vollqualifizierten Dateinamen, um zu überprüfen (Arrays muss vom Aufrufer zugeordnet werden).
+in Ein Array von voll qualifizierten Dateinamen, die überprüft werden sollen (das Array muss vom Aufrufer zugeordnet werden).
 
- pbSccFiles
+ pbsccfiles
 
-[in, out] Array, in dem Sie die Ergebnisse speichern.
+[in, out] Das Array, in dem die Ergebnisse gespeichert werden sollen.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Erfolgreich.|
 |SCC_E_INVALIDFILEPATH|Einer der Pfade im Array ist ungültig.|
-|SCC_E_NONSPECIFICERROR|Nicht spezifischen Fehler.|
+|SCC_E_NONSPECIFICERROR|Nicht spezifischer Fehler.|
 
 ## <a name="remarks"></a>Hinweise
- Diese Funktion wird aufgerufen, mit einer Liste von Dateien, um festzustellen, ob das Quellcodeverwaltungs-Plug-in-Unterstützung in den MSSCCPRJ bietet. SCC-Datei für jede der angegebenen Dateien (für Weitere Informationen zu den MSSCCPRJ. SCC-Datei finden Sie unter [MSSCCPRJ. SCC-Datei](../extensibility/mssccprj-scc-file.md)). Quellcodeverwaltungs-Plug-ins können deklariert werden, ob sie die Möglichkeit zum Erstellen von MSSCCPRJ aufweisen. SCC-Dateien, indem Sie deklarieren `SCC_CAP_SCCFILE` während der Initialisierung. Das plug-in gibt `TRUE` oder `FALSE` pro Datei in die `pbSccFiles` Array, um anzugeben, die der angegebenen Dateien MSSCCPRJ aufweisen. SCC-Unterstützung. Wenn das plug-in einen Erfolgscode aus der Funktion zurückgegeben wird, werden die Werte im zurückgegeben Array berücksichtigt. Das Array wird ignoriert, bei einem Fehler.
+ Diese Funktion wird mit einer Liste von Dateien aufgerufen, um zu bestimmen, ob das Quellcodeverwaltungs-Plug-in Unterstützung in Mssccprj bereitstellt. SCC-Datei für jede der angegebenen Dateien (Weitere Informationen zu Mssccprj. SCC-Datei finden Sie unter [Mssccprj. SCC-Datei](../extensibility/mssccprj-scc-file.md)). Quellcodeverwaltungs-Plug-Ins können deklarieren, ob Sie Mssccprj erstellen können. SCC-Dateien durch Deklarieren von `SCC_CAP_SCCFILE` während der Initialisierung. Das Plug-in gibt `TRUE` oder `FALSE` pro Datei im `pbSccFiles` Array zurück, um anzugeben, welche der angegebenen Dateien über Mssccprj verfügen. SCC-Unterstützung. Wenn das Plug-in einen Erfolgs Code aus der Funktion zurückgibt, werden die Werte im Rückgabe Array berücksichtigt. Bei einem Fehler wird das Array ignoriert.
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

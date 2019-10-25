@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Clone | Microsoft-Dokumentation'
+title: 'Idiaenuminjetedsources:: Clone | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9baba1709e3e89a982c0347cb744950a14cbb0b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554130"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744540"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>Parameter
  `ppenum`
 
-[out] Gibt eine [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Objekt, das ein Duplikat des Enumerators enthält. Die eingefügten Quellen werden nicht dupliziert werden, nur den Enumerator.
+vorgenommen Gibt ein [idiaenuminjetedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) -Objekt zurück, das ein Duplikat des Enumerators enthält. Die injizierten Quellen werden nicht dupliziert, sondern nur der Enumerator.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

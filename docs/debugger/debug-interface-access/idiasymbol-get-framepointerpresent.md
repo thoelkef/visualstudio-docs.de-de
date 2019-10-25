@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_framepointerpresent | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_framePointerPresent | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7914845bccb43ce302665428c824bbf3ebb2c819
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1fce085f134b844d7e53e19d9e2ec057aa8a89ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825339"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740666"
 ---
-# <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-Ruft ein Flag, das angibt, ob der Frame-Pointer vorhanden ist. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) nastaven NA hodnotu `SymTagFunction`.
+# <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
+Ruft ein Flag ab, das angibt, ob der Frame Zeiger vorhanden ist. Verwenden Sie, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) auf `SymTagFunction` festgelegt ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_framePointerPresent( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out]] Gibt `TRUE` gibt zurück, wenn der Frame-Pointer vorhanden, andernfalls ist, `FALSE`.
+[out]] Gibt `TRUE` zurück, wenn der Frame Zeiger vorhanden ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia100.dll
 

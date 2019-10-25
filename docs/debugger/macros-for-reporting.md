@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905554"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731390"
 ---
 # <a name="macros-for-reporting"></a>Makros für die Berichterstellung
-Für das Debuggen, können Sie die **_RPTn** und **_RPTFn** in CRTDBG.H definierten Makros. H, ersetzen Sie die Verwendung von `printf` Anweisungen. Sie müssen nicht in inclose **#ifdef**s, da sie nicht mehr automatisch in Ihrer Version angezeigt erstellen, wenn **_DEBUG** ist nicht definiert.
+Zum Debuggen können Sie die in CRTDBG definierten Makros **_RPTn** und **_RPTFn** verwenden. H, um die Verwendung von `printf`-Anweisungen zu ersetzen. Sie müssen Sie nicht in **#ifdef**s einschließen, da Sie automatisch in Ihrem Releasebuild ausgeblendet werden, wenn **_DEBUG** nicht definiert ist.
 
 |Makro|Beschreibung|
 |-----------|-----------------|
@@ -54,7 +54,7 @@ Für das Debuggen, können Sie die **_RPTn** und **_RPTFn** in CRTDBG.H definier
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-Unter Umständen, dass eine bestimmte Anwendung Debugberichte, die mit der C-Laufzeitbibliothek den Makros keine bereitstellen. In diesen Fällen können Sie ein Makro, das speziell dazu entwickelt, Ihre eigenen Anforderungen anpassen schreiben. Beispielsweise könnten Sie in eine der Headerdateien mit dem folgenden Beispiel vergleichbaren Code einfügen, durch den ein Makro mit dem Namen **ALERT_IF2** definiert wird:
+Sie stellen möglicherweise fest, dass eine bestimmte Anwendung eine Debugmeldung benötigt, die von den mit der C-Lauf Zeit Bibliothek bereitgestellten Makros nicht bereitgestellt wird. In diesen Fällen können Sie ein Makro schreiben, das speziell an Ihre Anforderungen angepasst wurde. Beispielsweise könnten Sie in eine der Headerdateien mit dem folgenden Beispiel vergleichbaren Code einfügen, durch den ein Makro mit dem Namen **ALERT_IF2** definiert wird:
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,14 +70,14 @@ Unter Umständen, dass eine bestimmte Anwendung Debugberichte, die mit der C-Lau
 #endif
 ```
 
- Ein Aufruf von **ALERT_IF2** möglich, dass alle Funktionen von der **Printf** Code:
+ Mit einem **ALERT_IF2** -Befehl können alle Funktionen des **printf** -Codes aufgerufen werden:
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
 someVar=%d, otherVar=%d.\n", someVar, otherVar );
 ```
 
- Sie können ganz einfach ein benutzerdefiniertes Makro, um mehr oder weniger Informationen an verschiedenen Ziele melden ändern. Dieser Ansatz ist besonders nützlich, da es sich bei steigenden Debuganforderungen.
+ Sie können ein benutzerdefiniertes Makro problemlos ändern, um mehr oder weniger Informationen an verschiedene Ziele zu melden. Dieser Ansatz ist besonders nützlich, wenn sich die Debugginganforderungen weiterentwickeln
 
 ## <a name="see-also"></a>Siehe auch
 - [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)

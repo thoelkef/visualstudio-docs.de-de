@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba409c831dd508dae796bca1ea2837674459690d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02c3915be318e7c4b3d82965f6d4640069f7a0c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719383"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage-Element (Visual Studio-Vorlagen)
-Gibt an, ob das die **Masterseite auswählen** Kontrollkästchen ist aktiviert, auf die **neues Element hinzufügen** Dialogfeld.
+Gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
- \<VSTemplate> \<TemplateData> \<SupportsMasterPage>
+ \<VSTemplate > \<TemplateData > \<SupportsMasterPage >
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,20 +45,20 @@ Gibt an, ob das die **Masterseite auswählen** Kontrollkästchen ist aktiviert, 
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gibt an, Daten, die kategorisiert die Vorlage und definiert, wie es in angezeigt. die **neues Projekt** oder **neues Element** Dialogfeld.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gibt Daten an, die die Vorlage kategorisieren, und definiert, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob die **Masterseite auswählen** Kontrollkästchen ist aktiviert, auf die **neues Element hinzufügen** im Dialogfeld.
+ Der Text muss entweder `true` oder `false` sein und angibt, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
 ## <a name="remarks"></a>Hinweise
- `SupportsMasterPage` ist ein optionales Element. Der Standardwert ist `false`.
+ `SupportsMasterPage` ist ein optionales Element. Der Standardwert ist `false`sein.
 
- Die `SupportsMasterPage` -Element ist nur verfügbar für Web-Elementvorlagen.
+ Das `SupportsMasterPage`-Element ist nur für Webelement Vorlagen verfügbar.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt die Metadaten für ein Webprojekt, die Unterstützung für eine Masterseite enthält.
+ Im folgenden Beispiel werden die Metadaten für ein Webprojekt veranschaulicht, das die Unterstützung für eine Master Seite enthält.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

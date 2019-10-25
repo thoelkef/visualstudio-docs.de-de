@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumlinenumbers:: Next | Microsoft-Dokumentation'
+title: 'IDiaEnumLineNumbers:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66abd987e3da4fadaac9d5b2de6664c4ae9e24ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07402ef7028ecfb7bb5b2c6e33ae06bc98ffe709
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829757"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744393"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
-Ruft eine angegebene Anzahl von Zeilennummern, in der Enumerationsfolge ab.
+Ruft eine angegebene Anzahl von Zeilennummern in der enumerationssequenz ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl von Zeilennummern im Enumerator abgerufen werden sollen.
+in Die Anzahl der Zeilennummern im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Gibt ein Array von [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Objekte, die die gewünschten Zeilennummern darstellen.
+vorgenommen Gibt ein Array von [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) -Objekten zurück, die die gewünschten Zeilennummern darstellen.
 
  pceltFetched
 
-[out] Gibt die Anzahl von Zeilennummern im abgerufenen Enumerator zurück.
+vorgenommen Gibt die Anzahl der Zeilennummern im abgerufenen Enumerator zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine weitere Zeilennummern vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine Zeilennummern mehr vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

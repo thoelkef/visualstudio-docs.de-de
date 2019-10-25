@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Next | Microsoft-Dokumentation'
+title: 'IDiaEnumSourceFiles:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 526c857acbe1283e16312355c181c56c67e19883
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829627"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744079"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-Ruft eine angegebene Anzahl von Quelldateien in der Enumerationsfolge ab.
+Ruft eine angegebene Anzahl von Quelldateien in der enumerationssequenz ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der Quelldateien im Enumerator abgerufen werden sollen.
+in Die Anzahl der Quelldateien im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Ein Array, das mit gefüllt werden soll die [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Objekte, die die gewünschten Quelldateien darstellen.
+vorgenommen Ein Array, das mit den [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) -Objekten ausgefüllt werden soll, die die gewünschten Quelldateien darstellen.
 
  pceltFetched
 
-[out] Gibt die Anzahl der Quelldateien in der abgerufenen Enumerator zurück.
+vorgenommen Gibt die Anzahl der Quelldateien im abgerufenen Enumerator zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn keine weitere Quelldateien vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine weiteren Quelldateien vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

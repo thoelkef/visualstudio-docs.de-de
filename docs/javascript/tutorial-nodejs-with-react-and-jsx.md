@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533371"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589148"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -412,7 +412,9 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
 
     ![Anhängen an den Prozess](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Der Debugger wurde ordnungsgemäß angehängt, wenn DOM Explorer und die JavaScript-Konsole in Visual Studio geöffnet werden. Diese Debugtools ähneln den Chrome-Entwicklertools und den F12-Tools für Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Wenn der Debugger nicht angefügt wird, und die Meldung „Das Anfügen an den Prozess ist nicht möglich. Ein Vorgang ist für den derzeitigen Zustand unzulässig.“ angezeigt wird, verwenden Sie den Task-Manager, um alle Instanzen von Chrome zu schließen, bevor Sie Chrome im Debugmodus starten. Möglicherweise werden Chrome-Erweiterungen ausgeführt, die den vollständigen Debugmodus verhindern.

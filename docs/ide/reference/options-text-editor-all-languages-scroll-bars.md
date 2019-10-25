@@ -27,17 +27,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd7be5aea136c901241ca66af485e76a39cd0ee5
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681310"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666385"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 Mit diesem Dialogfeld können Sie das Standardverhalten der Scrollleiste des Code-Editors ändern. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Scrollleisten** aus.

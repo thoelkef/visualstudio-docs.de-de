@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832554"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742813"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
-Ermöglicht eine Clientanwendung Bytes einer ausführbaren Datei gemäß anhand der Dateiposition angeben.
+Ermöglicht es einer Client Anwendung, Bytes einer ausführbaren Datei anzugeben, wie in der Dateiposition angegeben.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,22 +29,22 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDiaReadExeAtOffsetCallback`.
+ In der folgenden Tabelle sind die Methoden von `IDiaReadExeAtOffsetCallback` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Liest die angegebene Anzahl von Bytes beginnend beim angegebenen Offset aus einer ausführbaren Datei an.|
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Liest die angegebene Anzahl von Bytes ab dem angegebenen Offset aus einer ausführbaren Datei.|
 
 ## <a name="remarks"></a>Hinweise
- Die Client-Anwendung implementiert diese Schnittstelle, um die Bytes der ausführbaren Datei mit einem absoluten Offset in der ausführbaren Datei Datei bereitzustellen. Um eine relative virtuelle Adresse zu verwenden, implementieren die [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstelle.
+ Die Client Anwendung implementiert diese Schnittstelle, um die Bytes der ausführbaren Datei mithilfe eines absoluten Offsets in der Datei der ausführbaren Datei bereitzustellen. Um eine relative virtuelle Adresse zu verwenden, implementieren Sie die [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) -Schnittstelle.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Diese Methode implementiert, die von der Clientanwendung und übergeben die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode als eine alternative Methode zum Lesen der Datei.
+ Diese Methode wird von der Client Anwendung implementiert und an die Methode [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) als alternative Methode zum Lesen der Datei übergeben.
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia80.dll
 

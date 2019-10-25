@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::pdataForVA | Microsoft-Dokumentation
+title: IDiaStackWalkHelper::p dataforva | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6315032a36369eff7a5d43241ae4968a64ad42cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d51736a80021847881db164c9e176a010124638
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831894"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741402"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
-Gibt zurück, der PDATA-Datenblock, der der virtuellen Adresse zugeordnet.
+Gibt den pData-Datenblock zurück, der der virtuellen Adresse zugeordnet ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,27 +36,27 @@ HRESULT pdataForVA( 
 #### <a name="parameters"></a>Parameter
  `va`
 
-[in] Gibt an, die virtuelle Adresse der Daten zu erhalten.
+in Gibt die virtuelle Adresse der abzurufenden Daten an.
 
  `cbData`
 
-[in] Die Größe der Daten in Bytes abgerufen.
+in Die Größe der abzurufenden Daten in Bytes.
 
  `pcbData`
 
-[out] Gibt die tatsächliche Größe der Daten in Byte, das abgerufen wurde.
+vorgenommen Gibt die tatsächliche Größe der Daten in Bytes zurück, die abgerufen wurden.
 
  `pbData`
 
-[in, out] Ein Puffer, der mit der angeforderten Daten gefüllt wird. Darf nicht `NULL` sein.
+[in, out] Ein Puffer, der mit den angeforderten Daten gefüllt wird. Darf nicht `NULL` sein.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` liegt keine PDATA für die angegebene Adresse. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine pData für die angegebene Adresse vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Der pdata-Abschnitt (Abschnitt mit dem Namen ".pdata-Datensatz") eine Kompiliereinheit enthält Informationen über Ausnahmebehandlung für Funktionen.
+ PData (der-Abschnitt mit dem Namen ". pdata") eines Kompilierungen enthält Informationen zur Ausnahmebehandlung für Funktionen.
 
- Der Aufrufer weiß, wie viele Daten befinden, zurückgegeben werden, damit der Aufrufer nicht erforderlich verfügt, stellen Sie für wie viele Daten zur Verfügung steht. Daher ist es für eine Implementierung dieser Methode einen Fehler zurückgegeben, wenn die `pbData` Parameter `NULL`.
+ Der Aufrufer weiß, wie viele Daten zurückgegeben werden sollen, sodass der Aufrufer nicht mehr gefragt werden muss, wie viele Daten verfügbar sind. Daher ist es zulässig, dass eine Implementierung dieser Methode einen Fehler zurückgibt, wenn der `pbData` Parameter `NULL` ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

@@ -107,8 +107,8 @@
     - name: Debuggen von WPF-Apps
       items:
         - name: Debuggen von WPF
-          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Verwenden der WPF-Strukturschnellansicht
-          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Anzeigen von WPF-Ablaufverfolgungsinformationen
-          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json

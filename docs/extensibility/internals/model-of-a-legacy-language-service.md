@@ -1,5 +1,5 @@
 ---
-title: Modell eines Legacysprachdiensts | Microsoft-Dokumentation
+title: Modell eines Legacy sprach Dienstanbieter | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,42 +10,42 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6efe97e0a6ca5d2188aee9d44246f1d9fb347cda
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b87106060d3fd66b3659f5d49159ebbb9be9ef6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326770"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726377"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell eines Legacysprachdiensts
-Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprache und wird verwendet, um den Editor Informationen, die speziell für diese Sprache bereitzustellen. Beispielsweise muss der Editor die Elemente und Schlüsselwörter der Sprache kennen, um Farben für Syntax zu unterstützen.
+Ein Sprachdienst definiert die Elemente und Features für eine bestimmte Sprache und wird verwendet, um dem Editor spezifische Informationen für diese Sprache bereitzustellen. Der Editor muss z. b. die Elemente und Schlüsselwörter der Sprache kennen, um die Syntax Farbgebung zu unterstützen.
 
- Der Sprachdienst arbeitet eng mit dem Textpuffer, die von der Editor und die Ansicht, die den Editor enthält verwaltet werden. Die Microsoft IntelliSense **Quick Info** Option ist ein Beispiel für eine Funktion, die von einem Sprachdienst bereitgestellt.
+ Der Sprachdienst arbeitet eng mit dem vom Editor verwalteten Text Puffer und der Ansicht, die den Editor enthält, zusammen. Die Microsoft IntelliSense **Quick Info** -Option ist ein Beispiel für eine Funktion, die von einem Sprachdienst bereitgestellt wird.
 
-## <a name="a-minimal-language-service"></a>Ein Minimal-Sprachdienst
- Die meisten grundlegenden Sprachdiensts enthält die folgenden zwei Objekte:
+## <a name="a-minimal-language-service"></a>Ein minimaler Sprachdienst
+ Der grundlegendste Sprachdienst enthält die folgenden beiden Objekte:
 
-- Die *Sprachdienst* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle. Ein Sprachdienst hat Informationen zu Sprache, einschließlich der Namen, die Dateinamenerweiterungen Weitere Erweiterungen, die Codefenster-Manager und die Farbauswahl.
+- Der *Sprachdienst* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>-Schnittstelle. Ein Sprachdienst enthält Informationen zur Sprache, einschließlich des Namens, der Dateinamen Erweiterungen, des Code Fenster-Managers und der Farbauswahl.
 
-- Die *Farbauswahl* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle.
+- Die *Farbgebung* implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>-Schnittstelle.
 
-  Die folgende schematische Darstellung zeigt ein Modell eines einfachen Sprachdiensts.
+  Die folgende konzeptionelle Zeichnung zeigt ein Modell eines grundlegenden sprach Dienstanbieter.
 
-  ![Sprachdienstmodell](../../extensibility/media/vslanguageservicemodel.gif "VsLanguageServiceModel") grundlegende sprachendienstmodell
+  ![Grafik zum Sprachdienst Modell](../../extensibility/media/vslanguageservicemodel.gif "vslanguageservicemodel") Basic-Sprachdienst Modell
 
-  Die Dokument-Fenster-Hosts die *Dokumentansicht* des Editors in diesem Fall die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Kern-Editor. Die Ansicht des Dokuments und dem Textpuffer gehören durch den Editor. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch einem speziellen Fenster aufgerufen, eine *Codefenster*. Im Code-Fenster befindet sich einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> -Objekt, das erstellt und von der IDE gesteuert.
+  Das Dokument Fenster hostet die *Dokument Ansicht* des Editors, in diesem Fall der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Core-Editor. Die Dokument Ansicht und der Text Puffer befinden sich im Besitz des Editors. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] über ein spezielles Dokument Fenster, das als *Code Fenster*bezeichnet wird. Das Code Fenster ist in einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> Objekt enthalten, das von der IDE erstellt und gesteuert wird.
 
-  Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, wird der Editor sucht den Sprachdienst, der dieser Erweiterung zugeordnet und übergibt, Code-Fenster durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Der Language-Dienst gibt eine *codefenstermanager*, implementiert der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle.
+  Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, sucht der Editor den Sprachdienst, der dieser Erweiterung zugeordnet ist, und übergibt an ihn das Code Fenster, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>-Methode aufgerufen wird. Der Sprachdienst gibt einen *Code Fenster-Manager*zurück, der die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>-Schnittstelle implementiert.
 
-  Die folgende Tabelle enthält eine Übersicht über die Objekte im Modell.
+  In der folgenden Tabelle finden Sie eine Übersicht über die Objekte im Modell.
 
-| Komponente | Object | Funktion |
+| Komponente | Objekt | Funktion |
 |------------------| - | - |
-| Textpuffer | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Ein Stream der Unicode-Lese-/Schreibzugriff-Text. Es ist möglich, für den Text auf andere Codierungen verwenden. |
-| Codefenster | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Ein Dokumentfenster, das eine oder mehrere Textansichten enthält. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird im Modus "Multiple Document Interface (MDI)" wird im Code-Fenster untergeordnetes MDI-Fenster. |
-| Textansicht | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Ein Fenster, in dem der Benutzer navigieren, und zeigen Text mithilfe der Tastatur und Maus. Eine Textansicht, die als Editor für den Benutzer angezeigt werden. Sie können der Textansichten in normalen-Editor-Fenster, das Fenster "Ausgabe" und das "Direktfenster" verwenden. Darüber hinaus können Sie eine oder mehrere Textansichten in einem Codefenster konfigurieren. |
-| Text-manager | Von verwaltet die <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> -Diensts, über die Sie erhalten eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> Zeiger | Eine Komponente, die allgemeine Informationen, die alle Komponenten, die zuvor beschriebenen freigegebenen verwaltet. |
-| Sprachdienst | Hängt von der Implementierung; implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Ein Objekt, das den Editor Sprachspezifische Informationen wie syntaxhervorhebung, Anweisungsvervollständigung und Klammer bietet. |
+| Text Puffer | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Ein Unicode-Lese-/Schreib-Textstream. Es ist möglich, dass Text andere Codierungen verwendet. |
+| Codefenster | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Ein Dokument Fenster, das mindestens eine Textansicht enthält. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im MDI-Modus (Multiple Document Interface) ist, ist das Code Fenster ein untergeordnetes MDI-Element. |
+| Text Ansicht | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Ein Fenster, in dem der Benutzer mithilfe der Tastatur und der Maus navigieren und Text anzeigen kann. Dem Benutzer wird eine Textansicht als Editor angezeigt. Sie können Text Ansichten in normalen Editor Fenstern, im Ausgabefenster und im direkt Fenster verwenden. Darüber hinaus können Sie eine oder mehrere Text Ansichten innerhalb eines Code Fensters konfigurieren. |
+| Text-Manager | Wird vom <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>-Dienst verwaltet, von dem Sie einen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> Zeiger erhalten. | Eine Komponente, die allgemeine Informationen verwaltet, die von allen zuvor beschriebenen Komponenten gemeinsam genutzt werden. |
+| Sprachdienst | Implementierungsabhängig; implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Ein Objekt, das den Editor sprachspezifische Informationen wie Syntax Hervorhebung, Anweisungs Vervollständigung und zugehörige Klammern bereitstellt. |
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../../extensibility/document-data-and-document-view-in-custom-editors.md)

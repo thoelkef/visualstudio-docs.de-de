@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20bd652437f0c1765686afc1d93a81bc9110236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d505219468f802a3eff9df0ad766fd1a353d5166
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829120"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743701"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
-Listet die verschiedenen Tabellen in der Datenquelle an.
+Listet die verschiedenen Tabellen auf, die in der Datenquelle enthalten sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,25 +29,25 @@ IDiaEnumTables : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDiaEnumTables`.
+ In der folgenden Tabelle sind die Methoden von `IDiaEnumTables` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) Version von diesem Enumerator.|
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Ruft die Version der [IEnumVARIANT-Schnittstelle](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) dieses Enumerators ab.|
 |[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Ruft die Anzahl der Tabellen ab.|
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Ruft eine Tabelle über einen Index oder einen Namen ab.|
-|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Ruft eine angegebene Anzahl von Tabellen in der Enumerationsfolge ab.|
-|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Überspringt eine angegebene Anzahl von Tabellen in einer Enumerationsfolge.|
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Ruft eine Tabelle mithilfe eines Indexes oder eines Namens ab.|
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Ruft eine angegebene Anzahl von Tabellen in der enumerationssequenz ab.|
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Überspringt eine angegebene Anzahl von Tabellen in einer enumerationssequenz.|
 |[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
 |[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.|
 
 ## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
-Rufen Sie diese Schnittstelle durch Aufrufen der [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) Methode.
+Rufen Sie diese Schnittstelle ab, indem Sie die [IDiaSession:: getenumschlag Tables](../../debugger/debug-interface-access/idiasession-getenumtables.md) -Methode aufrufen.
 
 ## <a name="example"></a>Beispiel
-Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumTables` Schnittstelle aus einer Sitzung. Ein vollständigeres Beispiel der Verwendung von Tabellen finden Sie unter den [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Schnittstelle.
+Dieses Beispiel zeigt, wie Sie die `IDiaEnumTables`-Schnittstelle aus einer Sitzung abrufen. Ein ausführeres Beispiel für die Verwendung von Tabellen finden Sie in der [idisierbaren](../../debugger/debug-interface-access/idiatable.md) -Schnittstelle.
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -64,7 +64,7 @@ void ShowTableNames(IDiaSession *pSession)
 ## <a name="requirements"></a>Anforderungen
 Header: Dia2.h
 
-Bibliothek: diaguids.lib
+Bibliothek: diaguids. lib
 
 DLL: msdia80.dll
 

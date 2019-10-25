@@ -1,5 +1,5 @@
 ---
-title: Source-Control-Plug-in-Glossar | Microsoft-Dokumentation
+title: Glossar für Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,44 +11,44 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47488621fe3e5167e00442e1ca971ef923d9b25c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 672a96c31137a52f3bd4a8c826cef1b19406790b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331908"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719587"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossar für das Quellcodeverwaltungs-Plug-In
-Die folgende nützliche Begriffe und Definitionen beziehen sich in der Source Control-Plug-in SDK-Dokumentation.
+Die folgenden hilfreichen Begriffe und Definitionen beziehen sich auf die SDK-Dokumentation für das Quellcodeverwaltungs-Plug-in.
 
 ## <a name="definitions"></a>Definitionen
- Einchecken, wenn ein Benutzer eine Arbeitskopie ändert, muss ein Benutzer Änderungen aus der Arbeitskopie in der Mitte Quellcodeverwaltungs-Repository senden. Dies erstellt eine neue Revision der Datei, die von anderen Benutzern zur Verfügung steht. Dieser Vorgang wird ein Eincheckvorgang bezeichnet.
+ Wenn ein Benutzer Änderungen an einer funktionierenden Kopie vornimmt, muss er Änderungen von der Arbeitskopie an das zentrale Quellcodeverwaltungs-Repository senden. Dadurch wird eine neue Revision der Datei erstellt, die anderen Benutzern zur Verfügung steht. Dieser Vorgang wird als Eincheck Vorgang bezeichnet.
 
- Sehen Sie das Act eine Arbeitskopie anfordern, aus dem Repository, informiert das Repository von Ihrer Absicht entspricht, die sie ändern. Eine Arbeitskopie spiegelt wider, den Zustand des Projekts zum Zeitpunkt der, die sie ausgecheckt wird.
+ Informieren Sie sich über das Anfordern einer Arbeitskopie aus dem Repository, und informieren Sie das Repository über ihre Absicht, es zu ändern. Eine Arbeitskopie gibt den Status des Projekts wieder, sobald es ausgecheckt ist.
 
- Ein Clientprogramm, das Quellcodeverwaltungs-System verwendet. In dieser Dokumentation ist es die Visual Studio-IDE.
+ Client ein Programm, das das Quell Code Verwaltungssystem verwendet. Der Zweck dieser Dokumentation ist die Visual Studio-IDE.
 
- Kommentar eine Meldung, die zur Beschreibung der Änderungen, die ein Benutzer zu einer Überarbeitung anfügen können, wenn Sie ein Quellcodeverwaltungsvorgang ausgeführt wird.
+ Kommentieren Sie eine Meldung aus, die die Änderungen beschreibt, die ein Benutzer an eine Revision anfügen kann, wenn ein Quell Code Verwaltungsvorgang ausgeführt wird.
 
- Konflikt ein Fall, wenn zwei Benutzer versuchen, überprüfen Sie die im ändert sich in derselben Region der gleichen Datei. In der Regel muss ein Mergevorgang ausgeführt werden.
+ Ein Konflikt tritt auf, wenn zwei Benutzer versuchen, Änderungen in denselben Bereich derselben Datei einzuchecken. In der Regel muss ein Merge ausgeführt werden.
 
- Eine clientseitige lokale Verzeichnisordner wird als Verzeichnis bezeichnet. Hierbei handelt es sich um die Kopie, in der ein Benutzer tatsächlich Änderungen vornimmt. Es kann viele Arbeitskopien von einem bestimmten Projekt vorhanden sein. Jeder Entwickler hat in der Regel ein eigenes kopieren.
+ Verzeichnis ein Client seitiger lokaler Ordner wird als Verzeichnis bezeichnet. Dies ist die Kopie, in der ein Benutzer tatsächlich Änderungen vornimmt. Es können viele Arbeitskopien eines bestimmten Projekts vorhanden sein. im allgemeinen verfügt jeder Entwickler über seine eigene Kopie.
 
- Get eine Get-Vorgang bringt des Benutzers Arbeitskopie auf dem neuesten Stand mit der Kopie des Repositorys. Im Gegensatz zu einer ausgecheckten Element gehört wird ein Get ausgeführt, wenn der Benutzer einfach die aktuelle Kopie benötigt, aber keine Änderungen vornehmen will.
+ Wenn Sie einen Get-Vorgang abrufen, wird die Arbeitskopie des Benutzers auf dem neuesten Stand mit dem Repository kopiert. Anders als bei einem Auscheck Vorgang wird ein Get-Vorgang ausgeführt, wenn der Benutzer einfach die neueste Kopie benötigt, aber keine Änderungen vornehmen soll.
 
- Verlauf ist es in der Regel einen Überblick über alle Auschecken, Eincheckvorgänge, Updates, Tags und Versionen, die in den Quellcodeverwaltungs-Repository durchgeführt wird.
+ Verlauf: Es handelt sich in der Regel um eine Zusammenfassung aller im Quellcodeverwaltungs-Repository ausgeführten Auscheck-, Eincheck-, Update-, Tags und Releases.
 
- IDE in der Regel verweist auf der Visual Studio integrierten Entwicklungsumgebung. Es kann jedoch auch andere Client-Umgebungen verweisen, die von der Quelle-Plug-in-API erkannt.
+ IDE bezieht sich im Allgemeinen auf die integrierte Entwicklungsumgebung von Visual Studio. Es kann jedoch auch auf andere Client Umgebungen verweisen, die die Quellcodeverwaltungs-Plug-in-API erkennen.
 
- Führen Sie den Prozess, bei der, den Quelle mindestens zwei Codedateien kombiniert werden, um eine neue Datei zu erstellen, die alle Funktionen von vorherigen-Dateien enthält. Dieses Konzept ist wichtig, in der Versionskontrolle arbeiten, in denen zwei oder mehr Entwickler gleichzeitig an Dateien.
+ Mergen Sie den Prozess, in dem zwei oder mehr Quell Code Dateien kombiniert werden, um eine neue Datei zu erstellen, die alle Features aus früheren Dateien enthält. Dieses Konzept ist wichtig bei der Versionskontrolle, bei der zwei oder mehr Entwickler gleichzeitig an Dateien arbeiten.
 
- Projekt ein Quellcode-Verwaltungsordner wird häufig als Projekt bezeichnet. Dies muss keine Beziehung mit der Projekte oder Projektmappen in Visual Studio.
+ Project ein Quell Code Verwaltungs Ordner wird häufig als Projekt bezeichnet. Dies hat keine Beziehung zu Projekten oder Projektmappen in Visual Studio.
 
- -Plug-in eine DLL-Datei, die Quellcodeverwaltungsfunktionen bereitstellt, durch die Implementierung der Source-Plug-in-API.
+ Plug-in eine DLL-Datei, die Quell Code Verwaltungsfunktionen bereitstellt, indem die Quellcodeverwaltungs-Plug-in-API implementiert
 
- Repository die Masterkopie, in denen ein Quellcodeverwaltungssystem vollständige Revisionsverlauf des Projekts gespeichert. Jedes Projekt verfügt über genau ein Repository.
+ Repository die Master Kopie, in der ein Quell Code Verwaltungssystem den vollständigen Revisions Verlauf eines Projekts speichert. Jedes Projekt verfügt über genau ein Repository.
 
- Revision ein Commit Änderung in der Versionsgeschichte einer Datei oder eine Gruppe von Dateien. Eine Revision wird eine Momentaufnahme in einem Projekt auf kontinuierlich ändern.
+ Revision a hat Änderungen im Verlauf einer Datei oder einer Gruppe von Dateien geändert. Eine Revision ist eine Momentaufnahme in einem ständig ändernden Projekt.
 
 ## <a name="see-also"></a>Siehe auch
 - [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)

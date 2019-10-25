@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_ishotpatchable | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isHotpatchable | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac1547228be6312126bb48602e3a77fed0b3c25
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 27218a2814e14e0a1ec30bd7fb4dc4840589251c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64811192"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740228"
 ---
-# <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
-Ruft ein Flag, der angibt, ob das Modul kompiliert wurde, mit der [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](/cpp/build/reference/hotpatch-create-hotpatchable-image) Compilerschalter.
+# <a name="idiasymbolget_ishotpatchable"></a>IDiaSymbol::get_isHotpatchable
+Ruft ein Flag ab, das angibt, ob das Modul mit dem Compilerschalter [/hotpatch (Create Hotpatchable Image)](/cpp/build/reference/hotpatch-create-hotpatchable-image) kompiliert wurde.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,23 +33,23 @@ HRESULT get_isHotpatchable(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` gibt zurück, wenn das Modul, andernfalls "heiß"-patchfähigen ist, `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn das Modul Hot-patchfähig ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Diese Eigenschaft ist verfügbar, aus der `SymTagCompilandDetails` sprachsymboltyps fort (finden Sie unter [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
+ Diese Eigenschaft ist über den `SymTagCompilandDetails`-Symboltyp verfügbar (siehe [compilanddetails](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

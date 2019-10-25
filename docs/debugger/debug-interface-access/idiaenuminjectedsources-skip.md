@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Skip | Microsoft-Dokumentation'
+title: 'Idiaenuminjetedsources:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 807ed82a68089cb656f68c8cc1881dce683bb8a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2c7ca67581916ad0c68d7eb1b49fd1c15cf9eaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829718"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744456"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-Überspringt eine angegebene Anzahl der eingefügten Quellen in einer Enumerationsfolge.
+Überspringt eine angegebene Anzahl von injizierten Quellen in einer enumerationssequenz.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der eingefügten Quellen in der Enumerationsfolge übersprungen werden soll.
+in Die Anzahl der eingefügten Quellen in der zu über springenden enumerationssequenz.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` treten nicht mehr eingefügte Quellen zu überspringen.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` zurückgegeben, wenn keine weiteren injizierten Quellen zum Überspringen vorhanden sind.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

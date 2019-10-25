@@ -18,20 +18,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), MIDL task
-- MIDL task (MSBuild (Visual C++))
+- MSBuild (C++), MIDL task
+- MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817570"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747248"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *midl.exe*. Weitere Informationen finden Sie unter [MIDL-Befehlszeilenreferenz](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -41,7 +41,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **AdditionalIncludeDirectories**
 
-     Optionaler **String[]**-Parameter.
+     Optionaler **String[]** -Parameter.
 
      Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die auf importierte IDL-Dateien durchsucht werden, einschließlich Headerdateien und Anwendungskonfigurationsdateien (ACF).
 
@@ -141,7 +141,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
      Wenn `true`, wird überprüft, ob sich die Enumerationswerte im zulässigen Bereich befinden.
 
-     Weitere Informationen finden Sie unter der Option **/error enum** in der Befehlszeilenhilfe (**/?**) für *midl.exe*.
+     Weitere Informationen finden Sie unter der Option **/error enum** in der Befehlszeilenhilfe ( **/?** ) für *midl.exe*.
 
 - **ErrorCheckRefPointers**
 
@@ -201,7 +201,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
      Optionaler **Boolean**-Parameter.
 
-     Wenn `true`, dann wird keine Typbibliotheksdatei (*.tlb*) generiert.
+     Wenn `true`, dann wird keine Typbibliotheksdatei ( *.tlb*) generiert.
 
      Weitere Informationen finden Sie unter der Option **/notlb** in der [MIDL-Befehlszeilenreferenz](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
@@ -255,9 +255,9 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **PreprocessorDefinitions**
 
-     Optionaler **String[]**-Parameter.
+     Optionaler **String[]** -Parameter.
 
-     Gibt einen oder mehrere *defines* an; d.h., einen Namen oder einen optionalen Wert, der an einen C-Präprozessor wie von einer `#define`-Direktive weitergegeben werden soll. Jedes „define“ ist folgendermaßen aufgebaut: *name[=value]*.
+     Gibt einen oder mehrere *defines* an; d.h., einen Namen oder einen optionalen Wert, der an einen C-Präprozessor wie von einer `#define`-Direktive weitergegeben werden soll. Jedes „define“ ist folgendermaßen aufgebaut: *name[=value]* .
 
      Weitere Informationen finden Sie unter der Option **/D** in der [MIDL-Befehlszeilenreferenz](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Siehe auch die Parameter **UndefinePreprocessorDefinitions** in dieser Tabelle.
 
@@ -373,7 +373,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **UndefinePreprocessorDefinitions**
 
-     Optionaler **String[]**-Parameter.
+     Optionaler **String[]** -Parameter.
 
      Entfernt jede vorherige Definition eines Namens, indem er den Namen wie eine `#undefine`-Direktive an den C-Präprozessor weitergibt. Geben Sie eine oder mehrere vorher definierte Namen ein.
 

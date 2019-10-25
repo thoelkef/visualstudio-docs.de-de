@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_typeid | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_typeId | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 007dd4ad4d7c0c06abf3c235753ec55febf3bcc3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3f0249f4e228327666e03e1a402f7f9cf69ee929
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800045"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739086"
 ---
-# <a name="idiasymbolgettypeid"></a>IDiaSymbol::get_typeId
-Ruft die Typ-ID des Symbols ab.
+# <a name="idiasymbolget_typeid"></a>IDiaSymbol::get_typeId
+Ruft den Typbezeichner des Symbols ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,16 +33,16 @@ HRESULT get_typeId ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Typ-ID des Symbols zurück.
+vorgenommen Gibt die Typ-ID des Symbols zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.
+ Der Bezeichner ist ein eindeutiger Wert, der vom Dia SDK erstellt wird, um alle Symbole als eindeutig zu markieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

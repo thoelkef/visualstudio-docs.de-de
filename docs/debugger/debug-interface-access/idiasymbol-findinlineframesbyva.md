@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc91ad3a2e4e89a154295bf41baa31e59c4d65e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f2ec0280f7eab6d5dd44c4577cfde2cd3846e5fd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831667"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741141"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
-Ruft eine Enumeration, die einem Client zum iterieren durch alle Inlineframes auf eine angegebene virtuelle Adresse (VA) ermöglicht.
+Ruft eine Enumeration ab, mit der ein Client alle Inline Rahmen einer angegebenen virtuellen Adresse (VA) durchlaufen kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,14 +32,14 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>Parameter
  `va`
 
-[in] Gibt die Adresse an, wie eine VA.
+in Gibt die Adresse als VA an.
 
  `ppResult`
 
-[out] Enthält eine `IDiaEnumSymbols` Objekt, das die Liste der Frames enthält, die abgerufen werden.
+vorgenommen Enthält ein `IDiaEnumSymbols` Objekt, das die Liste der abgerufenen Frames enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

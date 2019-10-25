@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Item | Microsoft-Dokumentation'
+title: 'Idiaenumdebug:: Item | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f07ecb151b6bf2cd4a9d48fbe6596bc7a533f97a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a07669e36d397550c28d1cc4a5de2ad300763e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838258"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744746"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
-Ruft eine Debugstream über einen Index oder Name ab.
+Ruft einen debugdatenstrom mithilfe eines Indexes oder Namens ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT Item (
 #### <a name="parameters"></a>Parameter
 Index
 
-[in] Index oder Name der Debug-Stream abgerufen werden sollen. Wenn eine ganze Zahl Variante verwendet wird, muss es im Bereich von 0 bis `count`-1 und, in denen `count` ist von zurückgegeben der [idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) Methode.
+in Der Index oder Name des debugstreams, der abgerufen werden soll. Wenn eine ganzzahlige Variante verwendet wird, muss Sie im Bereich von 0 bis `count`-1 liegen, wobei `count` von der [IDiaEnumDebugStreams:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) -Methode zurückgegeben wird.
 
 Stream
 
-[out] Gibt eine [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Objekt, das den angegebenen Debug-Stream darstellt.
+vorgenommen Gibt ein [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) -Objekt zurück, das den angegebenen debugstream darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

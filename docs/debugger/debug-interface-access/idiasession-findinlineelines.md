@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLines | Microsoft-Dokumentation
+title: 'IDiaSession:: findinlineelines | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeed8047cd04e3cfedb5a3beed8dc42c87b551e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5103a881b1b046479a1a3156f06038e230f5063e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827774"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742242"
 ---
 # <a name="idiasessionfindinlineelines"></a>IDiaSession::findInlineeLines
-Ruft eine Enumeration, die ermöglicht es einem Client zu durchlaufen und die Zeilennummerninformationen aller Funktionen, die inline erweitert wird, direkt oder indirekt durch das Symbol des angegebenen übergeordneten Elements ab.
+Ruft eine Enumeration ab, die es einem Client ermöglicht, die Zeilennummern Informationen aller Funktionen zu durchlaufen, die direkt oder indirekt durch das angegebene übergeordnete Symbol Inline sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,14 +32,14 @@ HRESULT findInlineeLines ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein `IDiaSymbol` Objekt, das das übergeordnete Element darstellt.
+in Ein `IDiaSymbol`-Objekt, das das übergeordnete Element darstellt.
 
  `ppResult`
 
-[out] Enthält eine `IDiaEnumLineNumbers` Objekt, das die Liste der Zeilennummern enthält, die abgerufen werden.
+vorgenommen Enthält ein `IDiaEnumLineNumbers` Objekt, das die Liste der abgerufenen Zeilennummern enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

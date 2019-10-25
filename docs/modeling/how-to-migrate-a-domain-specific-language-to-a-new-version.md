@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9678bf0c98774a504f17e9ea74197f82d9ba7ad
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605373"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747554"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 Sie können Projekte, die domänenspezifische Sprache definieren und verwenden, [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] aus der Version von [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] migrieren, die mit [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] verteilt wurde.

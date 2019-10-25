@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Next | Microsoft-Dokumentation'
+title: 'IDiaEnumFrameData:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55875d4ad964b958bf2fb38d259e7d4d68909cb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6fe478e503ed6e16ee570f309f91434c658ebd27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830104"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744598"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Ruft eine angegebene Anzahl von Frames Datenelemente in der Enumerationsfolge ab.
+Ruft eine angegebene Anzahl von Frame-Datenelementen in der enumerationssequenz ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der Frames-Datenelemente im Enumerator abgerufen werden sollen.
+in Die Anzahl der Frame Datenelemente im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Ein Array von [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekten, die sich mit dem angeforderten Rahmen Datenelemente ausgefüllt werden.
+vorgenommen Ein Array von [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) -Objekten, die mit den angeforderten Frame Datenelementen aufgefüllt werden sollen.
 
  pceltFetched
 
-[out] Gibt die Anzahl der Frames-Datenelemente in der abgerufenen Enumerator zurück.
+vorgenommen Gibt die Anzahl der Frame Datenelemente im abgerufenen Enumerator zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn keine weitere Datensätze vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine weiteren Datensätze vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

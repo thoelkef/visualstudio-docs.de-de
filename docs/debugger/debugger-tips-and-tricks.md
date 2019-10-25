@@ -84,7 +84,7 @@ Es ist einfach, Variablen mit Debuggerfenstern wie dem Fenster über **Wachen** 
 
 3. Suchen **Sie die Variable im Fenster Lokal** (**Debuggen > Fenster >** lokal), klicken Sie mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID erstellen**aus.
 
-    ![Erstellen einer Objekt-ID](../debugger/media/dbg-tips-watch-create-object-id.png ""Kreateobjectid"")
+    ![Erstellen einer Objekt-ID](../debugger/media/dbg-tips-watch-create-object-id.png "Kreateobjectid")
 
 4. Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
 
@@ -106,7 +106,7 @@ Sie können auch [Pseudo Variablen](../debugger/pseudovariables.md) im Fenster "
 
 ## <a name="string_visualizer"></a>Überprüfen von Zeichen folgen in einer Schnellansicht
 
-Beim Arbeiten mit Zeichen folgen kann es hilfreich sein, die gesamte formatierte Zeichenfolge anzuzeigen. Um eine nur-Text-, XML-, HTML-oder JSON-Zeichenfolge anzuzeigen, klicken Sie auf das Lupensymbol ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol "Schnellansicht"") , während Sie auf eine Variable mit einem Zeichen folgen Wert zeigen.
+Beim Arbeiten mit Zeichen folgen kann es hilfreich sein, die gesamte formatierte Zeichenfolge anzuzeigen. Um eine nur-Text-, XML-, HTML-oder JSON-Zeichenfolge anzuzeigen, klicken Sie auf das Lupensymbol ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol Schnellansicht") , während Sie auf eine Variable mit einem Zeichen folgen Wert zeigen.
 
 ![Öffnen einer Zeichen folgen Schnellansicht](../debugger/media/dbg-tips-string-visualizers.png "Openstringvisualizer")
 

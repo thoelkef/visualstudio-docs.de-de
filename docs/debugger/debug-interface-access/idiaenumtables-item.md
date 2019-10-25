@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Item | Microsoft-Dokumentation'
+title: 'IDiaEnumTables:: Item | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03931580f774c29a67771d2251b51825242535c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf2d6b14f17d42a128e59446e27bfc251de40d17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829379"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743755"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
-Ruft eine Tabelle über einen Index oder Name ab.
+Ruft eine Tabelle mithilfe eines Indexes oder Namens ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,17 +34,17 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parameter
  `index`
 
-[in] Index oder Name des der [IDiaTable](../../debugger/debug-interface-access/idiatable.md) abgerufen werden sollen. Wenn eine ganze Zahl Variante verwendet wird, muss es im Bereich von 0 bis `count`-1 und, in denen `count` ist von zurückgegeben der [idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) Methode.
+in Der Index oder Name der zu abzurufenden [idisierbaren](../../debugger/debug-interface-access/idiatable.md) . Wenn eine ganzzahlige Variante verwendet wird, muss Sie im Bereich von 0 bis `count`-1 liegen, wobei `count` von der [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) -Methode zurückgegeben wird.
 
  `table`
 
-[out] Gibt eine [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekt, das die gewünschte Tabelle darstellt.
+vorgenommen Gibt ein [idisierbares](../../debugger/debug-interface-access/idiatable.md) Objekt zurück, das die gewünschte Tabelle darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Wenn eine Variante der Zeichenfolge angegeben ist, benennt die Zeichenfolge eine bestimmte Tabelle. Der Name muss eine der Tabelle gemäß [Konstanten (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
+ Wenn eine Zeichen folgen Variante angegeben wird, benennt die Zeichenfolge eine bestimmte Tabelle. Der Name muss einer der Tabellennamen sein, wie in [Konstanten (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)definiert.
 
 ## <a name="example"></a>Beispiel
 

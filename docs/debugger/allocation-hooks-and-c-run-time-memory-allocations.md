@@ -1,5 +1,5 @@
 ---
-title: Reservierungshooks und Speicherreservierungen von C-Laufzeit | Microsoft-Dokumentation
+title: Zuordnungs Hooks und C-Laufzeitspeicher Belegungen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564973"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745795"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Reservierungshooks und Speicherreservierungen von C-Laufzeitbibliotheken
-Eine äußerst wichtige Einschränkung für Reservierungshookfunktionen ist, dass sie explizit ignoriert werden `_CRT_BLOCK` Blöcke. Diese Blöcke sind, die intern vorgenommenen speicherbelegungen von C-Laufzeitbibliotheksfunktionen, wenn sie alle Aufrufe von Funktionen der C-Laufzeitbibliothek ausmachen, die interner Speicher belegt wird. Sie können ignorieren `_CRT_BLOCK` Blöcke dazu den folgenden Code am Anfang Ihrer Zuweisung die Hookfunktion:
+Eine sehr wichtige Einschränkung bei Zuordnungs-Hook-Funktionen besteht darin, dass Sie `_CRT_BLOCK` Blöcke explizit ignorieren müssen. Diese Blöcke sind die Speicher Belegungen, die intern durch c-Lauf Zeit Bibliotheksfunktionen erstellt werden, wenn Sie Aufrufe an c-Lauf Zeit Bibliotheksfunktionen durchführen, die internen Arbeitsspeicher zuordnen. Sie können `_CRT_BLOCK` Blöcke ignorieren, indem Sie den folgenden Code am Anfang der Zuordnungs-Hook-Funktion einschließen:
 
 ```cpp
 if ( nBlockUse == _CRT_BLOCK )
     return( TRUE );
 ```
 
-Wenn der Reservierungshook ignoriert nicht `_CRT_BLOCK` blockiert wird, und klicken Sie dann alle im Hook aufgerufene C-Laufzeitbibliothek-Funktion, die Anwendung in einer Endlosschleife Auffangen kann. Beispielsweise nimmt `printf` eine interne Reservierung vor. Wenn durch den Hookcode `printf` aufgerufen wird, bewirkt die daraus resultierende Zuweisung, dass der Hook erneut aufgerufen wird, wodurch wiederum **printf** aufgerufen wird usw., bis ein Stapelüberlauf auftritt. Wenn Sie `_CRT_BLOCK`-Reservierungsoperationen in einem Bericht ausgeben möchten, können Sie diese Beschränkung umgehen, indem Sie für die Formatierung und die Ausgabe anstelle der C-Laufzeitfunktionen Windows-API-Funktionen verwenden. Da die Windows-APIs den C-Laufzeitbibliothek Heap nicht verwenden, werden sie nicht der Reservierungshook in einer Endlosschleife überfüllt.
+Wenn der zuordnungshook `_CRT_BLOCK` Blöcke nicht ignoriert, kann jede C-Lauf Zeit Bibliotheksfunktion, die in Ihrem Hook aufgerufen wird, das Programm in einer Endlosschleife abfangen. Beispielsweise nimmt `printf` eine interne Reservierung vor. Wenn durch den Hookcode `printf` aufgerufen wird, bewirkt die daraus resultierende Zuweisung, dass der Hook erneut aufgerufen wird, wodurch wiederum **printf** aufgerufen wird usw., bis ein Stapelüberlauf auftritt. Wenn Sie `_CRT_BLOCK`-Reservierungsoperationen in einem Bericht ausgeben möchten, können Sie diese Beschränkung umgehen, indem Sie für die Formatierung und die Ausgabe anstelle der C-Laufzeitfunktionen Windows-API-Funktionen verwenden. Da der C-Lauf Zeit Bibliotheks Heap von den Windows-APIs nicht verwendet wird, wird der Zuordnungs Hook nicht in einer Endlosschleife abgefangen.
 
 Wenn Sie die Quelldateien der Laufzeitbibliothek untersuchen, werden Sie feststellen, dass sich die standardmäßige Zuweisungshookfunktion **CrtDefaultAllocHook** (die einfach **TRUE** zurückgibt) in einer separaten Datei namens „DBGHOOK.C“ befindet. Wenn der Zuweisungshook auch für die Zuweisungen aufgerufen werden soll, die vom Laufzeitstartcode vorgenommen wurden, der vor der **main**-Funktion der Anwendung ausgeführt wird, können Sie diese Standardfunktion durch eine eigene Funktion ersetzen, anstatt [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) zu verwenden.
 

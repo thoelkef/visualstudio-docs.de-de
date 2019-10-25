@@ -1,5 +1,5 @@
 ---
-title: CaptureCurrentFrame | Microsoft-Dokumentation
+title: Capturecurrentframe | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec67013b41a5ec8876866044355534c42bfe2ee0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9967d776845088e707035c7b1c56855ac80af82
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848706"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736136"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 Erfasst den Rest des aktuellen Frames in der Grafikprotokolldatei.
@@ -27,7 +27,7 @@ void CaptureCurrentFrame();
 ## <a name="remarks"></a>Hinweise
  Wenn derzeit eine andere Erfassung durchgeführt wird – wie etwa eine Erfassung, die durch die `BeginCapture`-Funktion gestartet wurde – dann wird diese Erfassung abgeschlossen und im Grafikprotokoll als gesonderter Frame aufgezeichnet. Direkt im Anschluss beginnt die Grafikdiagnose, den Rest des aktuellen Frames zu erfassen, der ebenfalls als gesonderter Frame aufgezeichnet wird. Das Ende des aktuellen Frames ist durch einen Aufruf von "Present" gekennzeichnet.
 
- Um einen Frame erfassen zu können, müssen Sie Ihrer app erfassen und Aufzeichnen von Grafikinformationen vorbereiten, d. h. Sie aufgerufen hat, [Init](init.md) durch eine Instanz von der `VsgDbg` -Klasse vor dem Aufruf `CaptureCurrentFrame`.
+ Um einen Frame zu erfassen, müssen Sie die APP vorbereiten, um Grafik Informationen zu erfassen und aufzuzeichnen – d. h., Sie müssen [Init](init.md) durch eine Instanz der `VsgDbg` Klasse aufgerufen haben, bevor Sie `CaptureCurrentFrame` aufrufen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Init](init.md)

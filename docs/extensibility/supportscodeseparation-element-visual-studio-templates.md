@@ -1,5 +1,5 @@
 ---
-title: SupportsCodeSeparation-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+title: Supportscode Separation-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4a9e7ba92b9f48cf22999d53ecf6c7b7d832ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e68516a798bcd4d1437ab504c09b4cc529eb889
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316950"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719426"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
-Gibt an, ob die **Code in eigener Datei platzieren** Kontrollkästchen in aktiviert ist die **neues Element hinzufügen** im Dialogfeld.
+Gibt an, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
  \<VSTemplate > \<TemplateData > \<SupportsCodeSeparation >
 
@@ -45,22 +45,22 @@ Gibt an, ob die **Code in eigener Datei platzieren** Kontrollkästchen in aktivi
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie es in einem angezeigt. die **neues Projekt** oder **neues Element** Dialogfeld.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
- Der Text muss entweder `true` oder `false`gibt an, unabhängig davon, ob die **Code in eigener Datei platzieren** Kontrollkästchen in aktiviert ist die **neues Element hinzufügen** im Dialogfeld.
+ Der Text muss entweder `true` oder `false` sein, was angibt, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
 ## <a name="remarks"></a>Hinweise
- `SupportsCodeSeparation` ist ein optionales Element. Der Standardwert ist `false`.
+ `SupportsCodeSeparation` ist ein optionales Element. Der Standardwert ist `false`sein.
 
- Die `SupportsCodeSeparation` -Element ist nur verfügbar für Web-Elementvorlagen.
+ Das `SupportsCodeSeparation`-Element ist nur für Webelement Vorlagen verfügbar.
 
- Codetrennung und das Code-Behind-Seitenmodell, können Sie das Markup in eine Datei und den Programmcode in einer anderen Datei zu speichern. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und anderen verwenden Sie dieses Modell.
+ Durch die Trennung von Code oder das Code Behind-Seiten Modell können Sie das Markup in einer Datei und den Programmiercode in einer anderen Datei speichern. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] und andere .NET-Sprachen verwenden dieses Modell.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird zum Anzeigen der **Code in eigener Datei platzieren** Option.
+ Im folgenden Beispiel wird angegeben, dass die Option **Code in separaten Dateien platzieren** angezeigt werden soll.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

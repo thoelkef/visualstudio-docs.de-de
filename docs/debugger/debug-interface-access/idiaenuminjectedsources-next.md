@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Next | Microsoft-Dokumentation'
+title: 'Idiaenuminjetedsources:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea793f33eb78ee1637d7f22eb46ba34514e0e8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84dd3e1d107b8e55d5e94979627d1c1586534127
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554033"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744498"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-Ruft eine angegebene Anzahl der eingefügten Quellen in der Enumerationsfolge ab.
+Ruft eine angegebene Anzahl von injizierten Quellen in der enumerationssequenz ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der eingefügten Quellen im Enumerator abgerufen werden sollen.
+in Die Anzahl der eingefügten Quellen im Enumerator, der abgerufen werden soll.
 
  rgelt
 
-[out] Gibt ein Array von [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) Objekte, die gewünschten eingefügten Quellen darstellt.
+vorgenommen Gibt ein Array von [idiainjetedsource](../../debugger/debug-interface-access/idiainjectedsource.md) -Objekten zurück, das die gewünschten injizierten Quellen darstellt.
 
  pceltFetched
 
-[out] Gibt die Anzahl der eingefügten Quellen in der abgerufenen Enumerator zurück.
+vorgenommen Gibt die Anzahl der injizierten Quellen im abgerufenen Enumerator zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn keine weiteren eingefügte Quellen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine weiteren injizierten Quellen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

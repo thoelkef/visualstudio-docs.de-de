@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseDataOffset | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_baseDataOffset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33967e2e3fd241bae772e1ec208f42f7c9ac7419
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 298903e4e76c34fe1013b0f26729fb900c7b3fea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837619"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740985"
 ---
-# <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-Ruft den Offset für die Basisdaten ab.
+# <a name="idiasymbolget_basedataoffset"></a>IDiaSymbol::get_baseDataOffset
+Ruft den Basisdaten Offset ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_baseDataOffset(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf eine `DWORD` , die den Offset für die Basisdaten enthält.
+vorgenommen Ein Zeiger auf eine `DWORD`, die den Basisdaten Offset enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

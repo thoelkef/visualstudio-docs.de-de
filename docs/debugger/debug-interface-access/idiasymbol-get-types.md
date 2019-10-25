@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_types | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_types | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642e6875e81220cb20109ce45e8dca40777a63
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6d23ea3c4d885b3f7575c998999814d0808d03bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786563"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739060"
 ---
-# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Ruft ein Array von Compiler-spezifische Typen für dieses Symbol ab.
+# <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
+Ruft ein Array von compilerspezifischen Typen für dieses Symbol ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,21 +35,21 @@ HRESULT get_types ( 
 #### <a name="parameters"></a>Parameter
  `cTypes`
 
-[in] Die Größe des Puffers zum Speichern der Daten.
+in Größe des Puffers, der die Daten enthalten soll.
 
  `pcTypes`
 
-[out] Gibt die Anzahl der Typen, die geschrieben wird, oder, wenn Sie die `types` Parameter `NULL`, klicken Sie dann die Gesamtzahl der verfügbaren Typen.
+vorgenommen Gibt die Anzahl der geschriebenen Typen zurück, oder, wenn der `types` Parameter `NULL` ist, die Gesamtzahl der verfügbaren Typen.
 
  `types[]`
 
-[out] Ein Array, das mit gefüllt werden soll die [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekte, die alle Typen für dieses Symbol darstellen.
+vorgenommen Ein Array, das mit den [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekten ausgefüllt werden soll, die alle Typen für dieses Symbol darstellen.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_noinline | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_noInline | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e5cc592f6be2e3fdd4f791c637e588e10a187ae2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739746"
 ---
-# <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
-Ruft ein Flag, das angibt, ob die Funktion als nicht Inline markiert wurde (mithilfe der [Noinline](/cpp/cpp/noinline) Attribut).
+# <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
+Ruft ein Flag ab, das angibt, ob die Funktion als nicht Inline gekennzeichnet wurde (mit dem [noinline](/cpp/cpp/noinline) -Attribut).
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_noInline(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` , wenn die Funktion verfügt über die `noinline` Attribut zurückgegeben; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Funktion über das `noinline`-Attribut verfügt. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

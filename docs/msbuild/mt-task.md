@@ -16,20 +16,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBUILD (Visual C++), MT task
-- MT task (MSBuild (Visual C++))
+- MSBUILD (C++), MT task
+- MT task (MSBuild (C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 11395230ac3721bbcef13b85aa1f0d244c19c6eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437839"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748056"
 ---
 # <a name="mt-task"></a>MT-Aufgabe
 Umschließt das Microsoft-Manifesttool *mt.exe*. Weitere Informationen finden Sie unter [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,13 +38,13 @@ Umschließt das Microsoft-Manifesttool *mt.exe*. Weitere Informationen finden Si
  In der folgenden Tabelle werden die Parameter der **MT**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 > [!NOTE]
-> In der *mt.exe*-Dokumentation wird als Präfix für Befehlszeilenoptionen ein Bindestrich (**-**) verwendet, in diesem Artikel jedoch ein Schrägstrich (**/**). Beide Präfixe sind zulässig.
+> In der *mt.exe*-Dokumentation wird als Präfix für Befehlszeilenoptionen ein Bindestrich ( **-** ) verwendet, in diesem Artikel jedoch ein Schrägstrich ( **/** ). Beide Präfixe sind zulässig.
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
-|**AdditionalManifestFiles**|Optionaler **String[]**-Parameter.<br /><br /> Gibt den Namen von mindestens einer Manifestdatei an.<br /><br /> Weitere Informationen finden Sie unter der **/manifest**-Option in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
+|**AdditionalManifestFiles**|Optionaler **String[]** -Parameter.<br /><br /> Gibt den Namen von mindestens einer Manifestdatei an.<br /><br /> Weitere Informationen finden Sie unter der **/manifest**-Option in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Eine Liste von Befehlszeilenoptionen. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen **MT**-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie unter [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
-|**AssemblyIdentity**|Optionaler **String**-Parameter.<br /><br /> Gibt die Attributwerte des **assemblyIdentity**-Elements des Manifests an. Definieren Sie eine durch Trennzeichen getrennte Liste, in der zuerst der Wert des `name`-Attributs erscheint und anschließend mindestens ein Name/Wert-Paar des Formats *\<attribute name>=<attribute_value>*.<br /><br /> Weitere Informationen finden Sie unter der **/identity**-Option in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
+|**AssemblyIdentity**|Optionaler **String**-Parameter.<br /><br /> Gibt die Attributwerte des **assemblyIdentity**-Elements des Manifests an. Definieren Sie eine durch Trennzeichen getrennte Liste, in der zuerst der Wert des `name`-Attributs erscheint und anschließend mindestens ein Name/Wert-Paar des Formats *\<attribute name>=<attribute_value>* .<br /><br /> Weitere Informationen finden Sie unter der **/identity**-Option in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
 |**ComponentFileName**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Dynamic Link Library an, die Sie aus den *RGS*- oder *TLB*-Dateien erstellen möchten. Dieser Parameter ist erforderlich, wenn Sie die **RegistrarScriptFile**- oder **TypeLibraryFile**-MT-Aufgabenparameter angeben.<br /><br /> Weitere Informationen finden Sie unter der **/dll**-Option in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
 |**DependencyInformationFile**|Optionaler **String**-Parameter.<br /><br /> Gibt die Abhängigkeitsinformationen-Datei an, die von Visual Studio verwendet wird, um Informationen zur Build-Abhängigkeit für das Manifesttool zu verwalten.|
 |**EmbedManifest**|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird die Manifestdatei in die Assembly eingebettet. Wenn `false`, wird eine eigenständige Manifestdatei erstellt.|

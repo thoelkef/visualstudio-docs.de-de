@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_token | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_token | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0d9fc8a95c3efb0dcafcf20038d47e13deda5e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ffbe9e2d078a27a345fb35083646defb3fe271e4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813300"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739126"
 ---
-# <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
-Ruft das Metadatentoken für eine verwaltete Funktion oder Variable ab.
+# <a name="idiasymbolget_token"></a>IDiaSymbol::get_token
+Ruft das Metadatentoken einer verwalteten Funktion oder Variablen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_token ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt das Metadatentoken für eine verwaltete Funktion oder Variable zurück.
+vorgenommen Gibt das Metadatentoken einer verwalteten Funktion oder Variablen zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

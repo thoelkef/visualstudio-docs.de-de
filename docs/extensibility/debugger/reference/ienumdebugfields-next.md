@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Next | Microsoft-Dokumentation
+title: 'Ienumentbugfields:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee2cc5273b5ec47f99916a308312f6d26c718033
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 216ce9d49ba9de33307ad692787d6e6d36ee15c3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350428"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727651"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
-Diese Methode gibt den nächsten Satz von Elementen aus der Enumeration.
+Diese Methode gibt den nächsten Satz von Elementen aus der-Enumeration zurück.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Parameter
 `celt`\
-[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.
+in Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe des `rgelt` Arrays an.
 
 `rgelt`\
-[in, out] Array von [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Elementen gefüllt werden soll.
+[in, out] Array der [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Elemente, die ausgefüllt werden sollen.
 
 `pceltFetched`\
-[out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.
+vorgenommen Gibt die Anzahl der Elemente zurück, die tatsächlich in `rgelt` zurückgegeben werden.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden könnte. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

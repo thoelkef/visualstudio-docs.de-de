@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Diff Devenv switch
 - Diff Devenv switch
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26d438e9cea35cbf178658d8def78e264804240c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654516"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -41,11 +41,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceDisplayName*
 
-  Dies ist optional. Der Anzeigename der ersten Datei
+  Optional. Der Anzeigename der ersten Datei
 
 - *TargetDisplayName*
 
-  Dies ist optional. Der Anzeigename der zweiten Datei
+  Optional. Der Anzeigename der zweiten Datei
 
 ## <a name="remarks"></a>Anmerkungen
 

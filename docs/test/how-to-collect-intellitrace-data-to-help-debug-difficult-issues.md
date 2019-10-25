@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], difficult issues using IntelliTrace
 - Test Runner, InteliTrace
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c6670f9ff83a16eb793f7e7bd6fb5913a96093c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979314"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664823"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
@@ -73,7 +73,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 5. Wählen Sie die Registerkarte **Allgemein** aus. Wählen Sie **Nur IntelliTrace-Ereignisse** aus, um beim Testen signifikante Diagnoseereignisse mit minimalen Auswirkungen auf die Leistung aufzuzeichnen.
 
-     - oder -
+     Oder
 
      Wählen Sie **IntelliTrace events and call information** (IntelliTrace-Ereignisse und Aufrufinformationen) aus, um Diagnoseereignisse und die Ablaufverfolgung auf Methodenebene unter Anzeige von Aufrufinformationen aufzuzeichnen. Diese Ebene der Ablaufverfolgung kann sich beim Ausführen der Tests auf die Leistung auswirken.
 
@@ -81,7 +81,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 7. Wählen Sie die Registerkarte **Module** aus. Wählen Sie entweder **Collect data from all modules except for the following** (Daten aus allen Modulen mit Ausnahme der folgenden auflisten) aus, und fügen Sie der Liste der Module ein Modul mit der Option **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit der Option **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Module einschließen, mit Ausnahme der von Ihnen angegebenen Module.
 
-     - oder -
+     Oder
 
      Wählen Sie **Collect data from only the following modules** (Daten nur aus den folgenden Modulen auflisten) aus, und fügen Sie der Liste der Module ein Modul mit **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit **Entfernen**. Mit dieser Option können Sie die gewünschten Module genau angeben.
 
@@ -90,7 +90,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 8. Wählen Sie die Registerkarte **Prozesse** aus. Wählen Sie **Collect data from all processes except for the following** (Daten von allen Prozessen mit Ausnahme der folgenden sammeln) aus, und fügen Sie der Liste der Prozesse einen Prozess mit **Hinzufügen** hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Prozesse einschließen, mit Ausnahme der von Ihnen angegebenen Prozesse.
 
-     - oder -
+     Oder
 
      Wählen Sie **Nur Daten von den angegebenen Prozessen sammeln** aus, und fügen Sie der Liste der Prozesse mit **Hinzufügen** einen Prozess hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie die gewünschten Prozesse genau angeben.
 

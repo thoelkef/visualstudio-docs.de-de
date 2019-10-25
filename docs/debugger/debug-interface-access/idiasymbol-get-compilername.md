@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_compilername | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_compilerName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076b2fbcd4a1f65de56e52ffbf8b565ca122ffe1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3fd64d2f1a18df2d41a7d39f4ce474d601e194c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813964"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740815"
 ---
-# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
-Gibt den Namen der der Compiler, die zum Generieren der [Kompiliereinheit](../../debugger/debug-interface-access/compiland.md).
+# <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
+Gibt den Namen des Compilers zurück, der zum Generieren der [kompiund](../../debugger/debug-interface-access/compiland.md)verwendet wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,13 +31,13 @@ HRESULT get_compilerName (
 ```
 
 #### <a name="parameters"></a>Parameter
- `pName` Zeiger auf ein BSTR, das die Unicode-Namen des Compilers enthält.
+ `pName` Zeiger auf einen BSTR-Wert, der den Unicode-Namen des Compilers enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
 
@@ -46,7 +46,7 @@ HRESULT get_compilerName (
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

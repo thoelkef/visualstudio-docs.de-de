@@ -1,5 +1,5 @@
 ---
-title: Debuggen einer C++ zugriffsverletzung | Microsoft-Dokumentation
+title: Debuggen einer C++ Zugriffsverletzung | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 02/05/2019
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be6c13e2a3c83d31540399dd3387addb08e8686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eebbdfd7774018ecf49801c6b01b5867b7bd3408
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895129"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734547"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>Wie kann ich Debuggen einer C++ Zugriffsverletzung?
+# <a name="how-can-i-debug-a-c-access-violation"></a>Wie kann ich eine C++ Zugriffsverletzung Debuggen?
 
 ## <a name="problem-description"></a>Problembeschreibung
 
@@ -75,7 +75,7 @@ int main() {
 
 Wenn Sie diesen Code in Visual Studio 2015 Update 1 ausführen, sollte das folgende Ausnahmedialogfeld angezeigt werden:
 
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+![Accessviolationcplus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
 
 Wenn Sie nicht bestimmen können, warum der Zeiger eine Zugriffsverletzung verursacht hat, überwachen Sie den Code mithilfe der Ablaufverfolgung, um sicherzustellen, dass der Zeiger, der das Problem verursacht, ordnungsgemäß zugewiesen wurde.  Wenn er als Parameter übergeben wird, achten Sie darauf, dass die Übergabe ordnungsgemäß erfolgt und Sie nicht versehentlich eine [flache Kopie](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) erstellen. Vergewissern Sie sich anschließend, dass die Werte nicht unbeabsichtigt im Programm geändert werden. Erstellen Sie zu diesem Zweck einen Datenhaltepunkt für den fraglichen Zeiger. So sorgen Sie dafür, dass er nicht an anderer Stelle im Programm geändert wird. Weitere Informationen zu Datenhaltepunkten finden Sie im Abschnitt über Datenhaltepunkte in [Using Breakpoints](../debugger/using-breakpoints.md).
 

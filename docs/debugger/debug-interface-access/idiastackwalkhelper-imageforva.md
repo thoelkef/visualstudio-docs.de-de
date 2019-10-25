@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkhelper:: Imageforva | Microsoft-Dokumentation'
+title: 'IDiaStackWalkHelper:: imageForVA | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 609a9370181937323f2bc3e8ca0a0765cd1f4a12
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837952"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741385"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-Gibt den Anfang einer ausführbaren Datei des Image im Arbeitsspeicher eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei zurück.
+Gibt den Anfang des Bilds einer ausführbaren Datei im Arbeitsspeicher zurück, wenn eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei vorhanden ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT imageForVA(
 #### <a name="parameters"></a>Parameter
  `vaContext`
 
-[in] Die virtuelle Adresse, die sich an einer beliebigen Stelle in der ausführbaren Datei Leerzeichen.
+in Die virtuelle Adresse, die sich irgendwo im Speicherplatz der ausführbaren Datei befindet.
 
  `pvaImageStart`
 
-[out] Gibt zurück, die virtuelle Startadresse des Images von der ausführbaren Datei.
+vorgenommen Gibt die virtuelle Startadresse des Images der ausführbaren Datei zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

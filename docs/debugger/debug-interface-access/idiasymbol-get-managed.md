@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_managed | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_managed | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1096487cc154e0c6addd87d3e051078bfbc84f16
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 515b8931eff37338aa53ac204c7ef61a27987aba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824877"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739816"
 ---
-# <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
-Ruft ein Flag, das angibt, ob das Symbol für verwalteten Code verweist.
+# <a name="idiasymbolget_managed"></a>IDiaSymbol::get_managed
+Ruft ein Flag ab, das angibt, ob das Symbol auf verwalteten Code verweist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_managed ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` , wenn das Symbol auf verwalteten Code verweist, andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn das Symbol auf verwalteten Code verweist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

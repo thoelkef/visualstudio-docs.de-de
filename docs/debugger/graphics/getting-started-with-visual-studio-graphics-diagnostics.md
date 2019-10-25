@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit der Grafikdiagnose | Microsoft-Dokumentation
+title: Einstieg in die Grafik Diagnose | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 05/26/2017
 ms.topic: conceptual
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388692"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735685"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdiagnose vor. Anschließend erfassen Sie Frames aus einer Direct3D-App und untersuchen diese in der Grafikanalyse.
 
 ## <a name="requirements"></a>Anforderungen
- Um die Grafikdiagnose in Visual Studio verwenden zu können, müssen Sie Visual Studio Enterprise, Visual Studio Professional oder Visual Studio Community verwenden.  Andere Editionen, einschließlich von Visual Studio Code, enthalten diese Funktion nicht.
+ Um Grafikdiagnose in Visual Studio verwenden zu können, müssen Sie Visual Studio Enterprise, Visual Studio Professional oder Visual Studio Community verwenden.  Diese Funktion ist in anderen Editionen, einschließlich Visual Studio Code, nicht enthalten.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -33,9 +33,9 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>So installieren Sie Grafiktools für Windows 10
 
-1. Geben Sie in der Suche **Apps und Features** und öffnen Sie dann die **Apps & Features** Einstellungen.
+1. Geben Sie im Suchfeld **apps und Features** ein, und öffnen Sie dann die Einstellungen für **Apps & Features** .
 
-2. Auf der rechten Seite des der **Apps & Features** Dialogfeld Wählen Sie **optionale Features verwalten** (unter **Apps & Features**).
+2. Wählen Sie auf der rechten Seite des Dialog Felds **Apps & Features** die **Option optionale Features verwalten** (unter **Apps & Features**) aus.
 
    Das Dialogfeld **Optionale Features verwalten** wird angezeigt.
 
@@ -51,26 +51,26 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Erstmaliges Verwenden der Grafikdiagnose
  Nun, da Sie alles haben, was Sie brauchen, können Sie mit der Verwendung der Grafikdiagnose beginnen. Führen Sie folgende Schritte aus:
 
-### <a name="1---create-a-direct3d-app"></a>1. Erstellen einer Direct3D-App
- Wenn Sie bereits Ihre eigene Direct3D-app, die Grafikdiagnose mit hervorragenden untersuchen haben! Andernfalls verwenden Sie eine der folgenden:
+### <a name="1---create-a-direct3d-app"></a>1\. Erstellen einer Direct3D-App
+ Wenn Sie bereits über eine eigene Direct3D-App verfügen, mit der Sie Grafikdiagnose erkunden können, ist das gut! Verwenden Sie andernfalls eine der folgenden Aktionen:
 
-- Die **DirectX 11-App (Universelles Windows)** oder **DirectX 12-App (Universelles Windows)** -Projektvorlagen für Windows 10.
+- Die **DirectX 11-app (universelle Windows)** oder DirectX 12-APP-Projektvorlagen **(universelle Windows** -APP) für Windows 10.
 - [Direct3D 12 UAP-Beispiel](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) für Windows 10.
 
   Stellen Sie sicher, dass Sie die App erstellen können, bevor Sie fortfahren.
 
-### <a name="2---start-a-graphics-diagnostics-session"></a>2. Starten einer Grafikdiagnosesitzung
- Nun können Sie mit Ihrer ersten Grafikdiagnosesitzung beginnen. Wählen Sie in Visual Studio im Hauptmenü **Debuggen, Grafiken, Grafikdebuggen starten**, oder drücken Sie **Alt + F5**. Daraufhin wird Ihre App unter „Grafikdiagnose“ gestartet, und das Fenster für die Diagnosesitzung wird in Visual Studio angezeigt.
+### <a name="2---start-a-graphics-diagnostics-session"></a>2\. Starten einer Grafikdiagnosesitzung
+ Nun können Sie mit Ihrer ersten Grafikdiagnosesitzung beginnen. Wählen Sie in Visual Studio im Hauptmenü **Debuggen, Grafiken, Grafik Debugging starten**aus, oder drücken Sie einfach **ALT + F5**. Daraufhin wird Ihre App unter „Grafikdiagnose“ gestartet, und das Fenster für die Diagnosesitzung wird in Visual Studio angezeigt.
 
 > [!IMPORTANT]
 > Wenn Sie Ihre App in Windows 10 ausführen und die optionale Grafiktools-Funktion noch nicht installiert wurde, werden Sie aufgefordert, dies jetzt nachzuholen. Sie müssen diese installieren, bevor Sie die Grafikdiagnose in Windows 10 verwenden können.
 
-### <a name="3---capture-frames"></a>3. Erfassen von Frames
+### <a name="3---capture-frames"></a>3\. Erfassen von Frames
  Sie können Frames erfassen, sobald die App gestartet wird.
 
 #### <a name="to-capture-single-frames"></a>So erfassen Sie einzelne Frames
 
-- Wählen Sie in Visual Studio in der Grafik-Symbolleiste oder im Fenster für die Diagnosesitzung die Schaltfläche **Frame erfassen** aus. Oder, wenn Ihre app den Fokus besitzt, drücken Sie einfach die **Druck** auf der Tastatur die Taste.
+- Wählen Sie in Visual Studio in der Grafik-Symbolleiste oder im Fenster für die Diagnosesitzung die Schaltfläche **Frame erfassen** aus. Wenn Ihre APP den Fokus hat, drücken Sie einfach die **druckbildschirm** Taste auf der Tastatur.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>So erfassen Sie eine Sequenz von Frames
 
@@ -80,12 +80,12 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 
   Wenn Sie mit dem Erfassen von Frames fertig sind, beenden Sie einfach die App, oder wählen Sie die Schaltfläche **Beenden** in der Grafik-Symbolleiste oder im Fenster für die Diagnosesitzung aus.
 
-### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4. Untersuchen von erfassten Frames in der Grafikanalyse
+### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4\. Untersuchen von erfassten Frames in der Grafikanalyse
  Sie können nun die Frames überprüfen, die Sie gerade erfasst haben. Um die Analyse eines Frames zu starten, wählen Sie im Fenster für die Diagnosesitzung die Framenummer des Frames aus, den Sie untersuchen möchten. Daraufhin wird der Frame in der **Grafikanalyse** geöffnet, wo Sie die Grafikdiagnosetools verwenden können, um zu untersuchen, inwieweit Ihre App Direct3D verwendet, um Renderingprobleme zu erkennen. Sie können auch das Tool **Frame-Analyse** verwenden, um die Leistung nachzuvollziehen.
 
  Wenn Sie im Fenster für die Diagnosesitzung den falschen Frame ausgewählt haben oder Sie einen anderen Frame untersuchen möchten, können Sie einen neuen Frame in der Grafikanalyse auswählen. Erweitern Sie auf der Registerkarte **Renderziel** des Grafikprotokollfensters unter dem Renderzielbild die **Frameliste**, und wählen Sie dann einen anderen zu untersuchenden Frame aus.
 
- Weitere Informationen zur Verwendung der Grafikanalyse-Tools zusammen verwenden, finden Sie unter den [Beispiele](graphics-diagnostics-examples.md).
+ Weitere Informationen zur gemeinsamen Verwendung der grafikanalyse Tools finden Sie in den [Beispielen](graphics-diagnostics-examples.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Direct3D 12-Grafiken](/windows/desktop/direct3d12/direct3d-12-graphics)

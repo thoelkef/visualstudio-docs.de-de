@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_initializeddata | Microsoft-Dokumentation'
+title: 'IDiaSectionContrib:: get_initializedData | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef878dcae9f8d6d29761bcda5f5aa9588f26d66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6386fc6bb460f7e0947680a9776af7646f1bec14
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828170"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742635"
 ---
-# <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
-Ruft ein Flag, das angibt, ob der Abschnitt initialisierte Daten enthält.
+# <a name="idiasectioncontribget_initializeddata"></a>IDiaSectionContrib::get_initializedData
+Ruft ein Flag ab, das angibt, ob der Abschnitt initialisierte Daten enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,10 +33,10 @@ HRESULT get_initializedData ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` enthält der Abschnitt initialisierte Daten; andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der Abschnitt initialisierte Daten enthält. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_parambasepointerregisterid | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_paramBasePointerRegisterId | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6901210e05ef3eb1f8e63b8e6c508d36b2770b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 09bdfb5d276e4dc7414c78529c2a6f1644597cd3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798799"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739516"
 ---
-# <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-Ruft die ID des Registers, die einen grundlegenden Zeiger auf die Parameter enthält. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) nastaven NA hodnotu `SymTagFunction`.
+# <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
+Ruft die ID des Registers ab, das einen Basis Zeiger auf die Parameter enthält. Verwenden Sie, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) auf `SymTagFunction` festgelegt ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_paramBasePointerRegisterId ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die ID des Registers, die einen grundlegenden Zeiger auf die Parameter enthält.
+vorgenommen Gibt die ID des Registers zurück, das einen Basis Zeiger zu den Parametern enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia100.dll
 

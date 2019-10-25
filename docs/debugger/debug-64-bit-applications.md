@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5326ef7aa66de124f3be5db96cf156b57cb339d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563649"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745581"
 ---
 # <a name="debug-64-bit-applications"></a>Debuggen von 64-Bit-Anwendungen
 Sie können eine 64-Bit-Anwendung debuggen, die auf dem lokalen Computer oder einem Remotecomputer ausgeführt wird.
@@ -37,14 +37,14 @@ Sie können eine 64-Bit-Anwendung debuggen, die auf dem lokalen Computer oder ei
 
 1. Erstellen Sie eine Visual Studio-Projektmappe z. B. ein C#-Konsolenanwendungsprojekt.
 
-2. Legen Sie die Konfiguration mit dem Konfigurations-Manager auf 64-Bit fest. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md).
+2. Legen Sie die Konfiguration mit dem Konfigurations-Manager auf 64-Bit fest. Weitere Informationen finden Sie unter [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).
 
 3. Nun wird die 64-Bit-Version des Remotedebuggers (msvsmon.exe) gestartet. Diese wird ausgeführt, solange die Projektmappe mit der 64-Bit-Konfiguration geöffnet ist.
 
 4. Beginnen Sie mit dem Debuggen. Ihnen sollte dieselbe Funktionalität zur Verfügung stehen wie bei einer 32-Bit-Konfiguration. Informationen zur Vorgehensweise bei Fehlern finden Sie nachstehend im Abschnitt „Problembehandlung“.
 
 ## <a name="troubleshooting-64-bit-debugging"></a>Problembehandlung beim 64-Bit-Debuggen
- Sie können ein Fehler angezeigt: "Ein 64-Bit-debuggingvorgang dauert länger als erwartet." In diesem Fall hat Visual Studio eine Anforderung an die 64-Bit-Version von „msvsmon.exe“ gesendet, und es hat sehr lange gedauert , bis das Ergebnis dieser Anforderung eingetroffen ist.
+ Möglicherweise wird folgende Fehlermeldung angezeigt: "A 64-bit debugging operation is taking longer than expected." (Ein 64-Bit-Debuggingvorgang dauert länger als erwartet.) In diesem Fall hat Visual Studio eine Anforderung an die 64-Bit-Version von „msvsmon.exe“ gesendet, und es hat sehr lange gedauert , bis das Ergebnis dieser Anforderung eingetroffen ist.
 
  Für diesen Fehler gibt es zwei Hauptursachen:
 

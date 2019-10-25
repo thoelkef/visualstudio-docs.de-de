@@ -1,5 +1,5 @@
 ---
-title: SccGetUserOption-Funktion | Microsoft-Dokumentation
+title: Sccgetuseroption-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eabf9cfc9d878d4d12096c8d264e8ee332031adf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353652"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721441"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption-Funktion
-Diese Funktion ruft eine Vielzahl von benutzerspezifischen Optionen ab.
+Diese Funktion Ruft eine Vielzahl Benutzer spezifischer Optionen ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,33 +33,33 @@ SCCRTN SccGetUserOption(
 ```
 
 #### <a name="parameters"></a>Parameter
- "pContext"
+ pContext
 
-[in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.
+in Der Kontext Zeiger für das Quellcodeverwaltungs-Plug-in.
 
- nOption
+ noption
 
-[in] Option zum Abrufen (mögliche Optionen finden Sie unter "Hinweise").
+in Die abzurufende Option (siehe Hinweise zu möglichen Optionen).
 
- lpVal
+ lpval
 
-[out] Option zugeordnete Wert.
+vorgenommen Wert, der Option zugeordnet ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Die Source-Steuerelement-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:
+ Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
 |Wert|Beschreibung|
 |-----------|-----------------|
-|SCC_OK|Option wurde erfolgreich abgerufen.|
-|SCC_E_OPNOTSUPPORTED|Option wird nicht unterstützt.|
+|SCC_OK|Die Option wurde erfolgreich abgerufen.|
+|SCC_E_OPNOTSUPPORTED|Die Option wird nicht unterstützt.|
 |SCC_E_NONSPECIFICERROR|Es ist ein unbekannter Fehler aufgetreten.|
 
 ## <a name="remarks"></a>Hinweise
- Die folgenden Optionen werden von dieser Befehl unterstützt:
+ Die folgenden Optionen werden von diesem Befehl unterstützt:
 
-|Benutzeroption|Beschreibung|
+|Benutzer Option|Beschreibung|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer möchte auf die lokale Version von Dateien auszuchecken. `lpVal` erhält `SCC_USEROPT_COLV_YES` (möchte Benutzer lokale Dateien auschecken) oder `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer eine lokale Version der Dateien auschecken möchte. `lpVal` wird `SCC_USEROPT_COLV_YES` zugewiesen (der Benutzer möchte lokale Dateien Auschecken) oder `SCC_USEROPT_COLV_NO`.|
 
 ## <a name="see-also"></a>Siehe auch
 - [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

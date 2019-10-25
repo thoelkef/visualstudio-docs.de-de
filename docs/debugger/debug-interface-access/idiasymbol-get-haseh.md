@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_haseh | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hasEH | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f861d5cf8be8fedec6d32158aa735b8dfd826587
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1f08cd539d3042ff0715a5c84445e4cc40214a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786334"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740537"
 ---
-# <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Ruft ein Flag, das angibt, ob die Funktion nicht verwaltete Ausnahmebehandlung für C++-Stil (z. B. einen Try/Catch-Block) enthält.
+# <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
+Ruft ein Flag ab, das angibt, ob die Funktion eine Ausnahme C++Behandlung im nicht verwalteten Stil (z. b. einen try/catch-Block) enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` sollte die Funktion eine C++-Stil Ausnahme behandeln; Anderenfalls gibt `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn die Funktion C++eine Ausnahmebehandlung im Stil aufweist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

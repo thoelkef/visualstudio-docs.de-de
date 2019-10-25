@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_volatiletype | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_volatileType | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cef843a2e214dbf66107a5ac7462ae6a2672fafe
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5967a13596b5fad99f0f14277ea0e9505e222a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798861"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738803"
 ---
-# <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
-Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp (UDT) "volatile" ist.
+# <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
+Ruft ein Flag ab, das angibt, ob der benutzerdefinierte Datentyp (User-Defined Data Type, UDT) flüchtig ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,16 +33,16 @@ HRESULT get_volatileType ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` gibt zurück, wenn der UDT flüchtig ist; andernfalls ist, `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn der UDT flüchtig ist. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- In C++ kann ein UDT mit gekennzeichnet werden die `volatile` Schlüsselwort Gibt an, dass sein Inhalt wird angenommen, dass darf nicht vor einem Zugriff auf die nächste vorhanden sein.
+ In C++kann ein UDT mit dem `volatile`-Schlüsselwort markiert werden, das angibt, dass der Inhalt von einem Zugriff auf den nächsten nicht angenommen werden kann.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

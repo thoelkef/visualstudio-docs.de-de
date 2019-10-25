@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource | Microsoft-Dokumentation
+title: Idiainjetedsource | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8956fb7da61519ed9d0939da087ce8a4181ac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 994f454372883f2516d1eab03bf1152693969b16
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839874"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743305"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
-Greift auf eingefügt, in der DIA-Datenquelle gespeicherten Quellcodes.
+Greift auf injizierten, in der Dia-Datenquelle gespeicherten Quellcode zu.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,26 +29,26 @@ IDiaInjectedSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
-Die folgende Tabelle zeigt die Methoden der `IDiaInjectedSource`.
+In der folgenden Tabelle sind die Methoden von `IDiaInjectedSource` aufgeführt.
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Ruft ab eine zyklische redundanzprüfung (CRC), der aus die Bytes des Quellcodes berechnet.|
-|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Ruft die Anzahl der Bytes des Codes ab.|
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Ruft eine zyklische Redundanz Überprüfung (CRC) ab, die aus den Bytes des Quellcodes berechnet wird.|
+|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Ruft die Anzahl der Code Bytes ab.|
 |[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Ruft den Dateinamen für die Quelle ab.|
-|[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Ruft ab, der Name der Objektdatei, unter dem die Quelle kompiliert wurde.|
-|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Ruft den Namen keine Datei Quellcode; d. h. Code, der eingefügt wurde.|
-|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Ruft den Indikator verwendeten Komprimierungstyp für die Datenquelle ab.|
-|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Ruft die Quellbytes-Code ab.|
+|[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Ruft den Namen der Objektdatei ab, in die die Quelle kompiliert wurde.|
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Ruft den Namen des angegebenen nicht-Datei Quellcodes ab. Das heißt, Code, der eingefügt wurde.|
+|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Ruft den Indikator der verwendeten Quell Komprimierung ab.|
+|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Ruft die Quell Code Bytes ab.|
 
 ## <a name="remarks"></a>Hinweise
-Eingefügte Quelle ist Text, der während der Kompilierung eingefügt wird. Dies bedeutet jedoch nicht den Präprozessor `#include` in C++ verwendet.
+Eingefügte Quelle ist Text, der während der Kompilierung eingefügt wird. Dies bedeutet nicht, dass die Präprozessor`#include` C++in verwendet werden.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
-Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenuminjectedsources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) oder [idiaenuminjectedsources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) Methoden. Finden Sie unter den [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Schnittstelle für ein Beispiel zum Abrufen von der `IDiaInjectedSource` Schnittstelle.
+Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenuminjetedsources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) -Methode oder der [idiaenuminjetedsources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) -Methode ab. Ein Beispiel für das Abrufen der `IDiaInjectedSource`-Schnittstelle finden Sie unter [idiaenuminjetedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) -Schnittstelle.
 
 ## <a name="example"></a>Beispiel
-Dieses Beispiel zeigt die verfügbaren Daten aus der `IDiaInjectedSource` Schnittstelle. Ein alternativer Ansatz die Verwendung der [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) Benutzeroberfläche, siehe das Beispiel in der [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Schnittstelle.
+In diesem Beispiel werden die Daten in der `IDiaInjectedSource`-Schnittstelle angezeigt. Eine alternative Vorgehensweise bei Verwendung der [idiapropertystorage](../../debugger/debug-interface-access/idiapropertystorage.md) -Schnittstelle finden Sie im Beispiel in der [idiaenuminjetedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) -Schnittstelle.
 
 ```C++
 void PrintInjectedSource(IDiaInjectedSource* pSource)
@@ -115,7 +115,7 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 ## <a name="requirements"></a>Anforderungen
 Header: Dia2.h
 
-Bibliothek: diaguids.lib
+Bibliothek: diaguids. lib
 
 DLL: msdia80.dll
 

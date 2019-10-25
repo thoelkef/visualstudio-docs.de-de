@@ -90,7 +90,7 @@ Bei einem bedingten Ausdruck wird eine Ausgabe Meldung nur angezeigt, wenn besti
 
 Für bedingte Ausdrücke können Sie entweder den Ablauf Verfolgungs Punkt so festlegen, dass eine Meldung ausgegeben wird, wenn eine bestimmte Bedingung erfüllt ist oder sich geändert hat. Wenn Sie z. b. nur den Wert des Zählers während der Iterationen der `for` Schleife anzeigen möchten, können Sie die Option **ist true** auswählen und dann `i%2 == 0` in das Textfeld Nachricht eingeben.
 
-![Bedingter Ausdruck ist "true"](../debugger/media/conditionalexpressionistrue.png "Bedingter Ausdruck ist "true"")
+![Bedingter Ausdruck ist true](../debugger/media/conditionalexpressionistrue.png "Bedingter Ausdruck ist true")
 
 Wenn Sie den Wert des Zählers ausgeben möchten, wenn sich die Iterations `for` Schleife ändert, wählen Sie die Option **bei Änderung** aus, und geben Sie `i` in das Textfeld Nachricht ein.
 

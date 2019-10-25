@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByAddr | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: findinlineelinesbyaddr | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede156a5416ca065a5271ae87abfcfd621f02b26
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1709120dfa8e115f4b14a4ee4e2d1c7ffb293329
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837991"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741223"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
-Ruft eine Enumeration, die ermöglicht einem Client die Zeilennummerninformationen aller Funktionen durchlaufen, die inline erweitert wird, direkt oder indirekt auf dieses Symbol in der angegebene Adressbereich befinden.
+Ruft eine Enumeration ab, mit der ein Client die Zeilennummern Informationen aller Funktionen, die direkt oder indirekt in diesem Symbol innerhalb des angegebenen Adress Bereichs angeordnet sind, durchlaufen kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,22 +34,22 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>Parameter
  `isect`
 
-[in] Gibt die Komponente im Abschnitt der Adresse.
+in Gibt die Abschnitts Komponente der Adresse an.
 
  `offset`
 
-[in] Gibt die Offset-Komponente der Adresse.
+in Gibt die Offset Komponente der Adresse an.
 
  `length`
 
-[in] Gibt den Adressbereich in Anzahl von Bytes, die mit dieser Abfrage abzudecken.
+in Gibt den Adressbereich in Byte an, der mit dieser Abfrage abgedeckt werden soll.
 
  `ppResult`
 
-[out] Enthält eine `IDiaEnumLineNumbers` Objekt, das die Liste der Zeilennummern enthält, die abgerufen werden.
+vorgenommen Enthält ein `IDiaEnumLineNumbers` Objekt, das die Liste der abgerufenen Zeilennummern enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

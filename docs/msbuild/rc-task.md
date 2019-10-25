@@ -14,20 +14,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- RC task (MSBuild (Visual C++))
-- MSBuild (Visual C++), RC task
+- RC task (MSBuild (C++))
+- MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69649a7babacb0fe08b483380214f17f2e582f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d217ba46f7b50851c8fe19f420195dcf9ee698a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974656"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748042"
 ---
 # <a name="rc-task"></a>RC-Aufgabe
 Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-Aufgabe kompiliert Ressourcen in eine *RES*-Datei, z.B. Cursor, Symbole, Bitmaps, Dialogfelder und Schriftarten. Weitere Informationen finden Sie unter [Ressourcencompiler](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
@@ -35,14 +35,14 @@ Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*). Die **RC**-
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der RC-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Optionaler **String[]**-Parameter.<br /><br /> Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die nach Includedateien durchsucht werden.<br /><br /> Weitere Informationen finden Sie unter der **/I**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
+|**AdditionalIncludeDirectories**|Optionaler **String[]** -Parameter.<br /><br /> Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die nach Includedateien durchsucht werden.<br /><br /> Weitere Informationen finden Sie unter der **/I**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
 |**AdditionalOptions**|Optionaler **String**-Parameter.<br /><br /> Liste der Befehlszeilenoptionen, z.B. /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen **RC**-Aufgabenparameter dargestellt werden.<br /><br /> Weitere Informationen finden Sie unter den Optionen im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
 |**Kultur**|Optionaler **String**-Parameter.<br /><br /> Gibt eine lokale ID an, die die in den Ressourcen verwendete Kultur darstellt.<br /><br /> Weitere Informationen finden Sie unter der **/l**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
 |**IgnoreStandardIncludePath**|Optionaler **Boolean**-Parameter.<br /><br /> Wenn dieser `true` ist, wird verhindert, dass der Ressourcencompiler die INCLUDE-Umgebungsvariable überprüft, wenn nach Header- oder Ressourcendateien gesucht wird.<br /><br /> Weitere Informationen finden Sie unter der **/x**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
 |**NullTerminateStrings**|Optionaler **Boolean**-Parameter.<br /><br /> Wenn dieser `true` ist, lässt er alle Zeichenfolgen in der Zeichenfolgentabelle auf NULL enden.<br /><br /> Weitere Informationen finden Sie unter der **/n**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
-|**PreprocessorDefinitions**|Optionaler **String[]**-Parameter.<br /><br /> Definieren Sie ein oder mehrere Präprozessorsymbole für den Ressourcencompiler. Geben Sie eine Liste von Makrosymbolen an.<br /><br /> Weitere Informationen finden Sie unter der **/d**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730). Weitere Informationen finden Sie ebenfalls unter **UndefinePreprocessorDefinitions** in dieser Tabelle.|
+|**PreprocessorDefinitions**|Optionaler **String[]** -Parameter.<br /><br /> Definieren Sie ein oder mehrere Präprozessorsymbole für den Ressourcencompiler. Geben Sie eine Liste von Makrosymbolen an.<br /><br /> Weitere Informationen finden Sie unter der **/d**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730). Weitere Informationen finden Sie ebenfalls unter **UndefinePreprocessorDefinitions** in dieser Tabelle.|
 |**ResourceOutputFileName**|Optionaler **String**-Parameter.<br /><br /> Gibt den Namen der Ressourcendatei an. Geben Sie einen Namen für die Ressourcendatei an.<br /><br /> Weitere Informationen finden Sie unter der **/fo**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
 |**ShowProgress**|Optionaler **Boolean**-Parameter.<br /><br /> Wenn dieser `true` ist, werden Meldungen angezeigt, die über den Fortschritt des Compilers berichten.<br /><br /> Weitere Informationen finden Sie unter der **/v**-Option im Artikel [Verwenden von RC (RC-Befehlszeile)](http://go.microsoft.com/fwlink/?LinkId=155730).|
 |**Quelle**|Erforderlicher `ITaskItem[]` -Parameter.<br /><br /> Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.|

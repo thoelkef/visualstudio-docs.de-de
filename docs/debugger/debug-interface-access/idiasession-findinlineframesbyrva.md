@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByRVA | Microsoft-Dokumentation
+title: 'IDiaSession:: findinlineframesbyrva | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98b441e52d3d24a5ccd738fe1ac65b268a30a2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 329bf9f4fa94171347eeea8fc9f2744b7ce4269f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839315"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742153"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-Ruft eine Enumeration, die einem Client zum iterieren durch alle Inlineframes auf eine angegebene relative virtuelle Adresse (RVA) ermöglicht.
+Ruft eine Enumeration ab, mit der ein Client alle Inline Rahmen einer angegebenen relativen virtuellen Adresse (RVA) durchlaufen kann.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,18 +32,18 @@ HRESULT findInlineFramesByRVA ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein `IDiaSymbol` Objekt, das das übergeordnete Element darstellt.
+in Ein `IDiaSymbol`-Objekt, das das übergeordnete Element darstellt.
 
  `rva`
 
-[in] Gibt die Adresse als eine RVA an.
+in Gibt die Adresse als RVA an.
 
  `ppResult`
 
-[out] Enthält eine `IDiaEnumSymbols` Objekt, das die Liste der Frames enthält, die abgerufen werden.
+vorgenommen Enthält ein `IDiaEnumSymbols` Objekt, das die Liste der abgerufenen Frames enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

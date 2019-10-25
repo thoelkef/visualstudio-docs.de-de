@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549983"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654643"
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen
 
@@ -52,7 +52,7 @@ Standardmäßig wird das angegebene Element in allen Projektmappenelementen gesu
 
 Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie entweder ein Präfix in das Suchfeld eingeben oder eines der fünf Filtersymbole auswählen:
 
-Präfix | Symbol | Verknüpfung | Beschreibung
+Präfix | Symbol | Verknüpfung | BESCHREIBUNG
 :-: | - | - | -
 :| ![Symbol „Zeile“](media/gotoall-line-icon.png) | **STRG**+**G** | Zur angegebenen Zeilennummer wechseln
 f| ![Symbol „Dateien“](media/gotoall-files-icon.png) | **STRG**+**1**, **STRG**+**F** | Zur angegebenen Datei wechseln
@@ -65,7 +65,7 @@ m| ![Symbol „Member“](media/gotoall-members-icon.png) | **STRG**+**1**, **ST
 
 Um die Suche auf bestimmte Speicherorte einzugrenzen, wählen Sie eines der zwei Dokumentsymbole aus:
 
-Symbol | Beschreibung
+Symbol | BESCHREIBUNG
 ---- | ---
 ![Aktuelles Dokument](media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
 ![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten
@@ -80,7 +80,7 @@ Wenn Sie die [Camel-Case-Schreibweise](https://en.wikipedia.org/wiki/Camel_case)
 
 Über das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) können Sie die Funktionsweise dieser Funktion ändern:
 
-Einstellung | Beschreibung
+Einstellung | BESCHREIBUNG
 ------- | ---
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
 Details anzeigen | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an

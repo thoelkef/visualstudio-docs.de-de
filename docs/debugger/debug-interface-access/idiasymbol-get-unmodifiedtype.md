@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_unmodifiedtype | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_unmodifiedType | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47841f5fe4abeafe7c522784db337b1960081439
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806761"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738981"
 ---
-# <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-Ruft den ursprünglichen Typ für dieses Symbol ab. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) auf einen Typ festgelegt ist.
+# <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
+Ruft den ursprünglichen Typ für dieses Symbol ab. Verwenden Sie, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) auf einen Typ festgelegt ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,21 +33,21 @@ HRESULT get_unmodifiedType( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt, das den ursprünglichen Typ, der dieses Symbol darstellt.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das den ursprünglichen Typ dieses Symbols darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Der aktuelle Typ ist eine Änderung des ursprünglichen Typs zurückgegeben. Der ursprüngliche Typ für ein Symbol kann zunächst Abrufen des Typs des Symbols, und klicken Sie dann Abfragen zurückgegebenen Typ für den ursprünglichen Typ ermittelt werden. Beachten Sie, dass einige Symbole möglicherweise nicht über einen geänderten Typ, der den ursprünglichen Typ.
+ Der aktuelle Typ ist eine Änderung des zurückgegebenen ursprünglichen Typs. Der ursprüngliche Typ für ein Symbol kann bestimmt werden, indem zuerst der Typ des Symbols und dann der zurückgegebene Typ für den ursprünglichen Typ abgefragt wird. Beachten Sie, dass einige Symbole möglicherweise nicht über einen geänderten Typ des ursprünglichen Typs verfügen.
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia100.dll
 

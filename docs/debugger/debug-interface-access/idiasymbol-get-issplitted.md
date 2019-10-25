@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_issplitted | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_isSplitted | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee91134997dad5f5361de6b07af1a99dfc420f5e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9511551a2f3530adc14bee0f6eec3cf360b41c03
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64794585"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740049"
 ---
-# <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
-Ruft ein Flag, das angibt, ob das Datensymbol in eine Aggregation oder eine Auflistung von anderen Symbolen aufgeteilt wurde; der Compiler behandelt die Symbole als separate Entitäten, obwohl sie eigentlich Teil eines größeren Symbols sind.
+# <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
+Ruft ein Flag ab, das angibt, ob das Daten Symbol in eine Aggregation oder Auflistung anderer Symbole aufgeteilt wurde. der Compiler behandelt die Symbole als separate Entitäten, auch wenn Sie tatsächlich Teil eines größeren Symbols sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,23 +33,23 @@ HRESULT get_isSplitted(
 #### <a name="parameters"></a>Parameter
  `pFlag`
 
-[out] Gibt `TRUE` , wenn das Symbol in ein Aggregat von Symbolen; aufgeteilt wurde, andernfalls `FALSE`.
+vorgenommen Gibt `TRUE` zurück, wenn das Symbol in ein Aggregat von Symbolen aufgeteilt wurde. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Die [idiasymbol:: Get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) Methodenrückgabe `TRUE` für alle Symbole, die Teil eines Split-Symbols.
+ Die [idiasymmetribol:: get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) -Methode gibt `TRUE` für alle Symbole zurück, die Teil eines Trenn Zeichens sind.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK 8.0|
+|Version:|Dia SDK v 8.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

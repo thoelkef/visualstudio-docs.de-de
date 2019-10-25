@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d08168a83b9bb635fd6a0e22dc22f91a454001f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839458"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742322"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Gibt eine Enumeration von Symbolen für Inlineframes, die entsprechen zum Speicherort angegebenen Quelle zurück.
+Gibt eine Enumeration von Symbolen für Inline Frames zurück, die dem angegebenen Quell Speicherort entsprechen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,26 +35,26 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parameter
  `parent`
 
-[in] Ein `IDiaSymbol` , entspricht die Accelerator-Stub-Funktion, die durchsucht werden soll.
+in Eine `IDiaSymbol`, die der Stub-Zugriffs Funktion entspricht, die durchsucht werden muss.
 
  `file`
 
-[in] Die `IDiaSourceFile` des Quellspeicherorts.
+in Die `IDiaSourceFile` des Quell Speicher Orts.
 
  `linenum`
 
-[in] Die Nummer der Zeile des Quellspeicherorts.
+in Die Zeilennummer des Quell Speicher Orts.
 
  `colnum`
 
-[in] Die Spaltennummer des Quellspeicherorts.
+in Die Spaltennummer des Quell Speicher Orts.
 
  `ppResult`
 
-[out] Ein Zeiger auf ein `IDiaEnumLineNumbers` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wird.
+vorgenommen Ein Zeiger auf einen `IDiaEnumLineNumbers` Schnittstellen Zeiger, der mit dem Ergebnis initialisiert wird.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_datakind | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_dataKind | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a0324046383557c9c32afae2e6f05a41124ba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1291c57425b7250af46b3b02ba8f407fb4959a05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790384"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740704"
 ---
-# <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
-Ruft die Variable Klassifizierung eines Daten-Symbols ab.
+# <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
+Ruft die Variablen Klassifizierung eines Daten Symbols ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_dataKind ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt einen Wert aus der [DataKind-Enumeration](../../debugger/debug-interface-access/datakind.md) Enumeration, die die Art der Daten, wie globale, statische oder Konstante, z. B. angibt.
+vorgenommen Gibt einen Wert aus der [DataKind](../../debugger/debug-interface-access/datakind.md) -enumerationsenumeration zurück, der die Art der Daten (z. b. Global, static oder Constant) angibt, z. b.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK V7. 0|
+|Version:|Dia SDK v 7.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

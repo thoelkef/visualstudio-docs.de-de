@@ -2,17 +2,17 @@
 title: Produktivitätstipps
 ms.date: 2/21/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: c0ac256d9878df45404dc62f1080e12bb6e7f002
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490669"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666779"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_uniqueid | Microsoft-Dokumentation'
+title: 'IDiaSourceFile:: get_uniqueId | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a210c12384cbde55dafe6f3410b8fc840e8507
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832252"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741790"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-Ruft einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
+Ruft einen einfachen ganzzahligen Schlüsselwert ab, der für dieses Bild eindeutig ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,13 +33,13 @@ HRESULT get_uniqueId ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.
+vorgenommen Gibt einen einfachen ganzzahligen Schlüsselwert zurück, der für dieses Bild eindeutig ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Vergleichen von Schlüsseln, anstatt Zeichenfolgen Line Number Verarbeitung beschleunigt werden können.
+ Das Vergleichen von Schlüsseln anstelle von Zeichen folgen kann die Verarbeitung von Zeilennummern beschleunigen.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6de78b5553719def2fd7ef9c6adb55e823aac34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837939"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741532"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
-Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.
+Ruft einen Stapel Rahmen Enumerator für einen bestimmten Plattformtyp ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,21 +36,21 @@ Ruft ein Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.
 #### <a name="parameters"></a>Parameter
  `cpuid`
 
-[in] Ein Wert aus der [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md) Enumeration, der den Plattformtyp aus.
+in Ein Wert aus der [CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) -enumerationsenumeration, der den Plattformtyp angibt.
 
  `pHelper`
 
-[in] Das Hilfsprogramm [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt.
+in Das [hilfsidiastackwalkhelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) -Objekt.
 
  `ppEnum`
 
-[out] Gibt eine [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) Objekt mit einer Liste von [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.
+vorgenommen Gibt ein [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) -Objekt zurück, das eine Liste von [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) -Objekten enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Zum Abrufen einer Stack-Frame-Liste für die nur die X86-Plattform, rufen die [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) Methode.
+ Rufen Sie zum Abrufen einer Stapel Rahmen Liste nur für die x86-Plattform die [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) -Methode auf.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)

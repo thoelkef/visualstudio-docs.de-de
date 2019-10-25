@@ -11,22 +11,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924191"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722004"
 ---
 # <a name="vspackage-registration"></a>VSPackage-Registrierung
-VSPackages müssen darauf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hinweisen, dass Sie installiert sind und geladen werden sollten. Dieser Vorgang wird durch Schreiben von Informationen in die Registrierung durchgeführt. Dies ist ein typischer Auftrag eines Installationsprogramms.
+VSPackages müssen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], dass Sie installiert sind und geladen werden sollten. Dieser Vorgang wird durch Schreiben von Informationen in die Registrierung durchgeführt. Dies ist ein typischer Auftrag eines Installationsprogramms.
 
 > [!NOTE]
-> Bei der VSPackage-Entwicklung ist es ein akzeptiertes Verfahren, die Selbstregistrierung zu verwenden. [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] Partner können Ihre Produkte jedoch nicht mithilfe der Selbstregistrierung im Rahmen des Setups versenden.
+> Bei der VSPackage-Entwicklung ist es ein akzeptiertes Verfahren, die Selbstregistrierung zu verwenden. @No__t_0 Partner können Ihre Produkte jedoch nicht mithilfe der Selbstregistrierung im Rahmen des Setups versenden.
 
  Registrierungseinträge in einem Windows Installer Paket werden im Allgemeinen in der Registrierungs Tabelle vorgenommen. Sie können auch Dateierweiterungen in der Registrierungs Tabelle registrieren. Windows Installer bietet jedoch integrierte Unterstützung durch die Tabellen für programmatische Bezeichner (ProgID), Klasse, Erweiterung und Verb. Weitere Informationen finden Sie unter [Datenbanktabellen](/windows/desktop/Msi/database-tables).
 
- Stellen Sie sicher, dass Ihre Registrierungseinträge der Komponente zugeordnet sind, die für die ausgewählte parallele Strategie geeignet ist. Registrierungseinträge für eine freigegebene Datei sollten z. b. der Windows Installer Komponente der Datei zugeordnet werden. Ebenso müssen Registrierungseinträge für eine versionsspezifische Datei der Komponente dieser Datei zugeordnet werden. Andernfalls könnte das VSPackage in anderen Versionen durch das Installieren oder Deinstallieren des VSPackage für eine Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterbrechen. Weitere Informationen finden Sie [unter unterstützen mehrerer Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Stellen Sie sicher, dass Ihre Registrierungseinträge der Komponente zugeordnet sind, die für die ausgewählte parallele Strategie geeignet ist. Registrierungseinträge für eine freigegebene Datei sollten z. b. der Windows Installer Komponente der Datei zugeordnet werden. Ebenso müssen Registrierungseinträge für eine versionsspezifische Datei der Komponente dieser Datei zugeordnet werden. Andernfalls kann das VSPackage in anderen Versionen durch das Installieren oder Deinstallieren des VSPackage für eine Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterbrechen. Weitere Informationen finden Sie [unter unterstützen mehrerer Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 > [!NOTE]
 > Die einfachste Möglichkeit zum Verwalten der Registrierung besteht darin, dieselben Daten in denselben Dateien sowohl für die Registrierung bei der Registrierung als auch für die Installation der Registrierung zu verwenden. Einige Installer-Entwicklungs Tools können z. b. die Datei im. reg-Format zur Buildzeit nutzen. Wenn Entwickler. reg-Dateien für Ihre eigenen täglichen Entwicklungs-und Debuggingdateien verwalten, können dieselben Dateien automatisch in das Installationsprogramm eingeschlossen werden. Wenn Sie Registrierungsdaten nicht automatisch freigeben können, müssen Sie sicherstellen, dass die Kopie der Registrierungsdaten des Installers aktuell ist.
@@ -47,7 +47,7 @@ VSPackages müssen darauf [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
 
 - Für die ordnungsgemäße Unterstützung der Installation, der Installation, des Rollbacks der Installation und der Deinstallation müssen Sie vier benutzerdefinierte Aktionen für jedes verwaltete VSPackage erstellen, das sich selbst registriert, indem regpkg aufgerufen wird.
 
-- Der Ansatz für die parallele Unterstützung erfordert möglicherweise, dass Sie vier benutzerdefinierte Aktionen erstellen, die regsvr32 oder regpkg für jede unterstützte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Version von aufrufen.
+- Der Ansatz für die parallele Unterstützung erfordert möglicherweise, dass Sie vier benutzerdefinierte Aktionen erstellen, die regsvr32 oder regpkg für jede unterstützte Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aufrufen.
 
 - Für eine Installation mit selbst registrierten Modulen kann kein sicheres Rollback ausgeführt werden, da es nicht möglich ist, zu sagen, ob die selbst registrierten Schlüssel von einem anderen Feature oder einer anderen Anwendung verwendet werden.
 

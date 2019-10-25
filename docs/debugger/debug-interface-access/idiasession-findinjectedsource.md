@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findinjectedsource | Microsoft-Dokumentation'
+title: 'IDiaSession:: findInjectedSource | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bef903304e3892284fc38d9e2b2367ebfe650f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e2145c90c25c448880e51b9b394c7085e0d49b7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839341"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742257"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-Ruft eine Liste der Datenquellen, die in den Symbolspeicher vom Attributanbieter abgelegt wurden, oder andere Komponenten des im Verlauf des Vorgangs ab.
+Ruft eine Liste der Quellen ab, die von Attribut Anbietern oder anderen Komponenten des Kompilierungsprozesses in den Symbol Speicher eingefügt wurden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT findInjectedSource ( 
 #### <a name="parameters"></a>Parameter
  srcFile
 
-[in] Name der Quelldatei nach dem gesucht werden soll.
+in Der Name der Quelldatei, nach der gesucht werden soll.
 
  ppResult
 
-[out] Gibt eine [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Objekt, das eine Liste mit allen eingefügten Quellen enthält.
+vorgenommen Gibt ein [idiaenuminjetedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) -Objekt zurück, das eine Liste aller injizierten Quellen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

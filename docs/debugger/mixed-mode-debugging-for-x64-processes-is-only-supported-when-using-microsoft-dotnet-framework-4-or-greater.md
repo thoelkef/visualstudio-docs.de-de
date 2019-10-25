@@ -1,5 +1,5 @@
 ---
-title: Im gemischten Modus Debuggen für X64 Prozesse wird nur unterstützt, wenn Microsoft.NET Framework 4 oder höher | Microsoft-Dokumentation
+title: Debuggen im gemischten Modus für x64-Prozesse wird nur bei Verwendung von Microsoft.NET Framework 4 oder höher unterstützt | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845704"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731023"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Debuggen im gemischten Modus für x64-Prozess wird nur bei Verwendung von Microsoft .NET Framework, Version 4 oder höher, unterstützt
 .NET Framework-Versionen vor Version 4 bieten keine Unterstützung für das Debuggen im gemischten Modus von x64-Prozessen. Das bedeutet, dass Sie während des Debuggens nicht von verwaltetem Code zu nativem Code oder von nativem Code zu verwaltetem Code wechseln können.
@@ -29,11 +29,11 @@ ms.locfileid: "62845704"
 
 - Aktualisieren Sie das Projekt, um Microsoft .NET Framework 4 oder höher zu verwenden.
 
-     - oder - 
+     - oder -
 
      Debuggen Sie den verwalteten und den systemeigenen Code in separaten Debugsitzungen.
 
-     - oder - 
+     - oder -
 
      Debuggen Sie den gemischten Code als 32-Bit-Prozess, wie in den folgenden Prozeduren beschrieben.
 
@@ -55,7 +55,7 @@ ms.locfileid: "62845704"
 
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-- Finden Sie unter [Einrichten von SQL-Debugging](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Siehe [Einrichten des SQL-Debuggens](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)

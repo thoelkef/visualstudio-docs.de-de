@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hascastoperator | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_hasCastOperator | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8345e722036e90ebedf51ec91e274770887e49
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5a5d030e56a279615dd2f23785993a0386a7380d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808196"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740565"
 ---
-# <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
-Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp alle Umwandlungsoperatoren definiert hat.
+# <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
+Ruft ein Flag ab, das angibt, ob für den benutzerdefinierten Datentyp Umwandlungs Operatoren definiert sind.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_hasCastOperator ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt eine `TRUE` , wenn der benutzerdefinierte Datentyp alle Umwandlungsoperatoren definiert wurde, andernfalls `FALSE`.
+vorgenommen Gibt einen `TRUE` zurück, wenn für den benutzerdefinierten Datentyp Umwandlungs Operatoren definiert sind. Andernfalls wird `FALSE` zurückgegeben.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK V7. 0|
+|Version:|Dia SDK v 7.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

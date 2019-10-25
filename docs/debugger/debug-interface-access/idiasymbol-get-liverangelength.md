@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeLength | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_liveRangeLength | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c85288902d1a8c75b067bec0c77242e9a246561
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b663ef54959544764016fe59e4b0fb41607854b1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808250"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739936"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
-Gibt die Länge des Adressbereichs ein, in dem die lokalen Symbolcache gültig ist.
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
+Gibt die Länge des Adress Bereichs zurück, in dem das lokale Symbol gültig ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,20 +33,20 @@ HRESULT get_liveRangeLength ( 
 #### <a name="parameters"></a>Parameter
  `length`
 
-[out] Die Länge des Adressbereichs zurückgegeben.
+vorgenommen Gibt die Länge des Adress Bereichs zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.
+> Ein zurückgegebener Fehlercode bedeutet, dass das Symbol keine Informationen zum Live Bereich enthält.
 
 ## <a name="remarks"></a>Hinweise
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia100.dll
 

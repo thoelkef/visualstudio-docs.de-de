@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9c678f1ec5cc984bff8e7f77d3ed95c9d579bfb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785840"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644459"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Testmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
 
@@ -63,7 +63,7 @@ Mit dem **Auslastungstest-Editor** können Sie das Testmischungsmodell in einem 
 
      Die Szenariokategorien und -eigenschaften werden angezeigt.
 
-4. Klicken Sie in der Eigenschaft **Testmischungstyp** auf die Schaltfläche mit den Auslassungspunkten (**…**).
+4. Klicken Sie in der Eigenschaft **Testmischungstyp** auf die Schaltfläche mit den Auslassungspunkten ( **…** ).
 
      Das Dialogfeld **Testmischung bearbeiten** wird angezeigt.
 

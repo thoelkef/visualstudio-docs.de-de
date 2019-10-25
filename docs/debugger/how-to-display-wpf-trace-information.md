@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Anzeigen von WPF-Ablauf Verfolgungs Informationen | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848107"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733470"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen
+# <a name="how-to-display-wpf-trace-information"></a>Gewusst wie: Anzeigen von WPF-Ablaufverfolgungsinformationen
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] kann Debugablaufverfolgungs-Informationen in WPF-Anwendungen empfangen und diese Informationen im **Ausgabefenster** anzeigen. Zum Anzeigen von Debugablaufverfolgungs-Informationen muss die WPF-Ablaufverfolgung aktiviert werden.
 
  Sie können WPF-Ablaufverfolgung in der Datei "App.Config" oder programmgesteuert mit der <xref:System.Diagnostics.PresentationTraceSources>-Klasse aktivieren. Eine einfachere Möglichkeit, WPF-Ablaufverfolgung zu aktivieren, besteht in der Verwendung des Fensters **Optionen**. Die WPF-Ablaufverfolgung für Webanwendungen wird nicht unterstützt.
@@ -46,7 +46,7 @@ ms.locfileid: "62848107"
 
      Ein Dropdownlisten-Steuerelement wird in der Spalte „Einstellungen“ neben **Datenbindung** oder der Kategorie, auf die geklickt wurde, angezeigt.
 
-8. Klicken Sie auf die Dropdown-Liste, und wählen Sie den Typ der Ablaufverfolgungsinformationen, die Sie anzeigen möchten: **Alle**, **kritische**, **Fehler**, **Warnung**, **Informationen**, **ausführliche**, oder **ActivityTracing**.
+8. Klicken Sie auf die Dropdownliste, und wählen Sie den Typ der Ablaufverfolgungsinformationen aus, die Sie anzeigen möchten: **Alles**, **Kritisch**, **Fehler**, **Warnung**, **Informationen**, **Ausführlich** oder **ActivityTracing**.
 
      **Kritisch** ermöglich nur die Verfolgung von kritischen Ereignissen.
 

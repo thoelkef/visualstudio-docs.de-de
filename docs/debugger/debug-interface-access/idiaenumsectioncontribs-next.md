@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsectioncontribs:: Next | Microsoft-Dokumentation'
+title: 'Idiaenumsectioncontrisb:: Next | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8fd088ff6be619de56f27f91b198aed18e428c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61d99b0c881abdb8974e94352911ae3234c440c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829783"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744276"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-Ruft eine angegebene Anzahl von Abschnitt Beiträge in der Enumerationsfolge ab.
+Ruft eine angegebene Anzahl von Abschnitts Beiträgen in der enumerationssequenz ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT Next( 
 #### <a name="parameters"></a>Parameter
  celt
 
-[in] Die Anzahl der im Abschnitt Beiträge im Enumerator abgerufen werden sollen.
+in Die Anzahl der Abschnitts Beiträge im Enumerator, die abgerufen werden sollen.
 
  rgelt
 
-[out] Ein Array mit gefüllt werden soll, die [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) Objekte, die die gewünschten Abschnitt Beiträge darstellen.
+vorgenommen Ein Array, das mit den [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) -Objekten gefüllt werden soll, die die gewünschten Abschnitts Beiträge darstellen.
 
  pceltFetched
 
-[out] Gibt die Anzahl der im Abschnitt Beiträge im Enumerator abgerufen.
+vorgenommen Gibt die Anzahl von Abschnitts Beiträgen im Enumerator zurück, die abgerufen wurden.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine weitere Beiträge des Abschnitts. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn keine weiteren Abschnitts Beiträge vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

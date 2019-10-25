@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919119"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747875"
 ---
 # <a name="new-file-command"></a>Befehl "Neue Datei"
 Erstellt eine neue Datei und öffnet sie. Die Datei wird unter „Sonstige Dateien“ (Ordner) angezeigt.

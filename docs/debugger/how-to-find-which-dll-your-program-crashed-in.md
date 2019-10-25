@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Feststellen, welche DLL Absturz des Programms | Microsoft-Dokumentation'
+title: 'Gewusst wie: Ermitteln der dll, in der das Programm abgestürzt ist | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894046"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733270"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Vorgehensweise: Feststellen, welche DLL Absturz des Programms (C#, C++, Visual Basic F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Gewusst wie: Ermitteln der dll, in der das ProgrammC#abgestürzt C++ist (, F#, Visual Basic,)
 
  Wenn die Anwendung während des Aufrufs einer System-DLL oder des Codes eines anderen Benutzers abstürzt, muss herausgefunden werden, welche DLL zur Zeit des Absturzes aktiv war. Wenn Sie feststellen, dass eine DLL außerhalb der eigenen Anwendung abgestürzt ist, kann die Ursache mithilfe des Fensters **Module** ermittelt werden.
 
@@ -37,7 +37,7 @@ ms.locfileid: "62894046"
 
 1. Notieren Sie die Adresse, an der der Absturz stattgefunden hat.
 
-    Wenn die Adresse in der Fehlermeldung nicht angezeigt wird, müssen Sie alternative Methoden zu verwenden, um die DLL zu identifizieren. Wenn Sie eine System-DLL vermuten, können Sie [Laden von Symbolen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) von den Microsoft-Symbolservern beim Debuggen. Andernfalls müssen möglicherweise [Erstellen einer Dumpdatei](../debugger/using-dump-files.md) mit heap Informationen stattdessen. Verschiedene [Tools](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) stehen für die debugdumpdateien erstellt.
+    Wenn die Adresse nicht in der Fehlermeldung angezeigt wird, müssen Sie möglicherweise Alternative Methoden verwenden, um die dll zu identifizieren. Wenn Sie eine System-DLL vermuten, können Sie beim Debuggen Symbole von den Microsoft-Symbol Servern [Laden](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) . Andernfalls müssen Sie möglicherweise stattdessen [eine Dumpdatei](../debugger/using-dump-files.md) mit Heap Informationen erstellen. Zum Erstellen von Dumpdateien stehen verschiedene [Tools](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) zur Verfügung.
 
 2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Module**.
 
@@ -51,4 +51,4 @@ ms.locfileid: "62894046"
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md)
-- [Vorgehensweise: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md)
+- [Gewusst wie: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md)

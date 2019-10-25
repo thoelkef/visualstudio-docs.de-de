@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8620dcf7367914e25411fad7ac54a34a5bac54c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0891cc5eb244b781b69e231d4282b92aa064b91
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743848"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-Positioniert den Enumerator durch eine Suche nach Anzahl der Bild-im Abschnitt "und" Offset an.
+Positioniert den Enumerator, indem eine Suche nach Bild Abschnitts Nummer und Offset durchgeführt wird.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,18 +35,18 @@ HRESULT symbolByAddr ( 
 #### <a name="parameters"></a>Parameter
  isect
 
-[in] Anzahl der Image-Abschnitt.
+in Bild Abschnitts Nummer.
 
  offsect
 
-[in] Der Offset in Abschnitt.
+in Offset im Abschnitt.
 
  ppsymbol
 
-[out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das das Symbol gefunden darstellt.
+vorgenommen Gibt ein [idiasymmetribol](../../debugger/debug-interface-access/idiasymbol.md) -Objekt zurück, das das gefundene Symbol darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn das Symbol nicht gefunden werden konnte. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn das Symbol nicht gefunden wurde. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

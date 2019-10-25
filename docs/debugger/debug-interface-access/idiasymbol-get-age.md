@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_age | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_age | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e35db1186f2547b8d3c859d20e0e4ce2b1f68e9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 28a78094d9779a0da35052808dfb8d5f42972894
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741034"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-Ruft den Age-Wert, der eine PDB-Datei ab.
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
+Ruft den Alters Wert einer PDB-Datei ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,23 +33,23 @@ HRESULT get_age ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Age-Wert, der eine PDB-Datei.
+vorgenommen Gibt den Alters Wert einer PDB-Datei zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE`-oder-Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- Das Alter entspricht nicht unbedingt alle bekannten Zeitwert; Es wird normalerweise verwendet, um festzustellen, ob eine PDB-Datei mit einer entsprechenden .exe-Datei synchron sind.
+ Das Alter entspricht nicht notwendigerweise einem bekannten Uhrzeitwert. Sie wird in der Regel verwendet, um zu bestimmen, ob eine PDB-Datei mit einer entsprechenden exe-Datei nicht synchronisiert ist.
 
 ## <a name="requirements"></a>Anforderungen
 
 |Anforderung|Beschreibung|
 |-----------------|-----------------|
 |Header:|dia2.h|
-|Version:|DIA-SDK V7. 0|
+|Version:|Dia SDK v 7.0|
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

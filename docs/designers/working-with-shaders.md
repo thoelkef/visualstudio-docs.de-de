@@ -3,17 +3,17 @@ title: Arbeiten mit Shaders
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b3d2c6c745f17bbada918128fed852249e3024d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892402"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633780"
 ---
 # <a name="work-with-shaders"></a>Arbeiten mit Shadern
 
@@ -35,8 +35,8 @@ Da DGSL mit DGML kompatibel ist, können Sie Tools verwenden, die für das Analy
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des Shader-Designers von Visual Studio zur Arbeit mit Shadern.|
 |[Shader-Designer-Knoten](../designers/shader-designer-nodes.md)|Beschreibt die Arten von Shader-Designer-Knoten, die Sie verwenden können, um die Grafikeffekte zu erzielen.|
-|[Beispiele für den Shader-Designer](../designers/shader-designer-examples.md)|Enthält Links zu Artikeln, die die Verwendung des Shader-Designers zum Erzielen von allgemeinen Grafikeffekten veranschaulicht.|
+|[Beispiele für den Shader-Designer](../designers/how-to-create-a-basic-color-shader.md)|Enthält Links zu Artikeln, die die Verwendung des Shader-Designers zum Erzielen von allgemeinen Grafikeffekten veranschaulicht.|

@@ -3,8 +3,8 @@ title: Extrahieren einer Methode
 description: Wandeln Sie ein Codefragment in eine eigene Methode um, indem Sie den Code auswählen und STRG+R, STRG+M drücken.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483668"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654393"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring des Extrahierens einer Methode
 

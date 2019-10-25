@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_rawlvarinstancevalue | Microsoft-Dokumentation'
+title: 'IDiaStackFrame:: get_rawLVarInstanceValue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b1118517988f6a790cd4f6732eba3bc8a9fc25a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838118"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741637"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Diese Methode ruft den Wert der angegebenen lokalen Variable als unformatierte Bytes ab.
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+Diese Methode ruft den Wert der angegebenen lokalen Variablen als Rohdaten Bytes ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,22 +36,22 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>Parameter
  `pInstance`
 
-[in] Ein `IDiaLVarInstance` Objekt, das eine Instanz der lokalen Variablen auf den Wert für darstellt.
+in Ein `IDiaLVarInstance` Objekt, das eine Instanz der lokalen Variablen darstellt, für die der Wert zu erhalten ist.
 
  `cbDataMax`
 
-[in] Maximale Anzahl von Bytes im Puffer verweist `pbData`. Dies kann bis zu 8 Bytes sein (`sizeof(ULONGLONG)`).
+in Die maximale Anzahl von Bytes im Puffer, auf die durch `pbData` verwiesen wird. Dies kann ein Maximum von 8 Bytes (`sizeof(ULONGLONG)`) sein.
 
  `pcbData`
 
-[out] Gibt die tatsächliche Anzahl der Bytes im Puffer gespeichert.
+vorgenommen Gibt die tatsächliche Anzahl von Bytes zurück, die im Puffer gespeichert werden.
 
  `pbData`
 
-[out] Ein Puffer mit Daten gefüllt werden soll. Dieser darf nicht `NULL` sein.
+vorgenommen Ein Puffer, der mit Daten aufgefüllt werden soll. Dieser darf nicht `NULL` sein.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

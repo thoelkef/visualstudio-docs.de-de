@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isPointerToDataMember | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_isPointerToDataMember | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d74c2ba8317098212c7263ab049becc52f874e9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2e06a8605b38042773cfa60e4847ed3ace9c5954
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836579"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740129"
 ---
-# <a name="idiasymbolgetispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
-Gibt an, ob dieses Symbol, ein Zeiger auf ein Datenelement ist.
+# <a name="idiasymbolget_ispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
+Gibt an, ob dieses Symbol ein Zeiger auf einen Datenmember ist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_isPointerToDataMember(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf eine `BOOL` , der angibt, ob dieses Symbol, ein Zeiger auf ein Datenelement ist.
+vorgenommen Ein Zeiger auf eine `BOOL`, die angibt, ob dieses Symbol ein Zeiger auf einen Datenmember ist.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

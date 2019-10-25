@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_sourcefile | Microsoft-Dokumentation'
+title: 'IDiaLineNumber:: get_sourceFile | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e026b837205a8bf62f5d33dc2f5449d40cc485e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f0041ef4d83003d1b42e0c95b1412262d08458c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828621"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743157"
 ---
-# <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
+# <a name="idialinenumberget_sourcefile"></a>IDiaLineNumber::get_sourceFile
 Ruft einen Verweis auf die Quelldatei ab.
 
 ## <a name="syntax"></a>Syntax
@@ -33,10 +33,10 @@ HRESULT get_sourceFile ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt eine [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Objekt, das die Quelldatei darstellt.
+vorgenommen Gibt ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) -Objekt zurück, das die Quelldatei darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

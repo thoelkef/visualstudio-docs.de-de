@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163119"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654197"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Aufrufen von Text Transformation im Buildprozess
 
@@ -49,7 +49,7 @@ Wenn der [Buildserver](/azure/devops/pipelines/agents/agents) auf einem Computer
 - % Program Files (x86)% \ Microsoft Visual studio\2019\community\common7\ide\publicassemblies
 
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15,0. dll
-  
+
 > [!TIP]
 > Wenn Sie beim Ausführen von TextTemplating Build-Zielen auf einem Buildserver eine `MissingMethodException` für eine Microsoft. Code Analysis-Methode erhalten, stellen Sie sicher, dass sich die Roslyn-Assemblys in einem Verzeichnis mit dem Namen *Roslyn* befinden, das sich im selben Verzeichnis wie die ausführbare Build-Datei befindet (  *MSBuild. exe*).
 
@@ -116,11 +116,11 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
     ```
 
      Standardmäßig generiert die T4-MSBuild-Aufgabe erneut eine Ausgabedatei, wenn diese älter ist als:
-     
+
      - die Vorlagen Datei
      - alle enthaltenen Dateien
      - alle Dateien, die zuvor von der Vorlage oder von einem von ihr verwendeten Direktivenprozessor gelesen wurden
-     
+
      Dies ist ein leistungsfähiger Abhängigkeits Test als der von dem Befehl **Transform all Templates** in Visual Studio verwendet wird, der nur die Datumsangaben der Vorlage und der Ausgabedatei vergleicht.
 
 Wenn Sie nur die Texttransformationen im Projekt ausführen möchten, rufen Sie die Aufgabe „TransformAll“ auf:

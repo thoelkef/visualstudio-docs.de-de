@@ -25,20 +25,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564098"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745647"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
-Wenn der Debugger die Ausführung aufgrund einer Ausnahme unterbrochen wird, wird Ihnen die **Ausnahmen-Hilfe**, in der Standardeinstellung. Wenn Sie deaktiviert haben die **Ausnahmen-Hilfe** in die **Optionen** im Dialogfeld wird Ihnen die **Ausnahmen-Assistent** (C# oder Visual Basic) oder die  **Ausnahme** (Dialogfeld) (C++).
+Wenn der Debugger die Ausführung aufgrund einer Ausnahme unterbricht, wird standardmäßig das **Exception**-Hilfsprogramm angezeigt. Wenn Sie die **Ausnahme** -Hilfe im Dialogfeld **Optionen** deaktiviert haben, sehen Sie den **Ausnahmen-Assistenten** (C# oder Visual Basic) oder das Dialogfeld **Ausnahme** (C++).
 
- Wenn die **Ausnahmehilfsprogramm** angezeigt wird, können Sie versuchen, das Problem zu beheben, die die Ausnahme verursacht hat.
+ Wenn das Hilfsprogramm für **Ausnahmen** angezeigt wird, können Sie versuchen, das Problem zu beheben, das die Ausnahme verursacht hat.
 
 ## <a name="managed-and-native-code"></a>Verwalteter und nativer Code
- In verwaltetem und nativem Code können Sie Ausführung nach einem Ausnahmefehler im gleichen Thread fortsetzen. Die **Ausnahmehilfsprogramm** entlädt die Aufrufliste zu dem Punkt, in dem die Ausnahme ausgelöst wurde.
+ In verwaltetem und nativem Code können Sie die Ausführung nach einer nicht behandelten Ausnahme im gleichen Thread fortsetzen. Das **Exception** -Hilfsprogramm entlädt die aufrufsstapel an den Punkt, an dem die Ausnahme ausgelöst wurde.
 
 ## <a name="mixed-code"></a>Gemischter Code
  Wenn beim Debuggen gemischten Codes (systemeigener und verwalteter Code) ein Ausnahmefehler auftritt, verhindern Einschränkungen des Betriebssystems das Entladen der Aufrufliste. Sollten Sie versuchen, die Aufrufliste über das Kontextmenü neu zu laden, erhalten Sie die Fehlermeldung, dass der Debugger beim Debuggen von gemischtem Code keine Entladung aus einer unbehandelten Ausnahme vornehmen kann.

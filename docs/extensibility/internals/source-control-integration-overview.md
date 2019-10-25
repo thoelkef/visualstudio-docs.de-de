@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Integration Source | Microsoft-Dokumentation
+title: 'Integration der Quell Code Verwaltung: Übersicht | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,68 +10,68 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dd54872325766b432af7e3104e7ab9f431b79d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6f714bfdfc94cb9481071becf1cdc95f5259e975
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322519"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723533"
 ---
 # <a name="source-control-integration-overview"></a>Übersicht über die Integration der Quellcodeverwaltung
-Dieser Abschnitt vergleicht zwei Möglichkeiten, die in Visual Studio-quellcodeverwaltung integrieren. ein Quellcodeverwaltungs-Plug-in und ein VSPackage, das eine Source-Control-Lösung bietet und die neuen Quellcodeverwaltungsfeatures hervorgehoben. Visual Studio können für manuelle Wechseln zwischen quellcodeverwaltung VSPackages und Quellcodeverwaltungs-Plug-ins als auch automatische informationsreiche lösungsbasierte wechseln.
+In diesem Abschnitt werden die beiden Möglichkeiten zur Integration in die Visual Studio-Quell Code Verwaltung verglichen. ein Quellcodeverwaltungs-Plug-in und ein VSPackage, das eine Quell Code Verwaltungs Lösung bereitstellt und die neuen Funktionen der Quell Code Verwaltung hervorhebt. Visual Studio ermöglicht einen manuellen Wechsel zwischen VSPackages der Quell Code Verwaltung und Quellcodeverwaltungs-Plug-ins sowie automatischen lösungsbasierten wechseln.
 
-## <a name="source-control-integration"></a>Integration der quellcodeverwaltung
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten der Integration von Quellcodeverwaltungsoptionen. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie können immer noch ein plug-in basierend auf der Source-Plug-in-API (zuvor auch bezeichnet als MSSCCI-API), die grundlegende Quellcodeverwaltungsfunktionen bereitstellt, bei der Verwendung von Visual Studio Source Control Benutzer-Schnittstelle (integrieren (UI). Ein Quellcodeverwaltungs-VSPackage, auf der anderen Seite bietet eine neue, umfassende-Integration [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad für die Integration der quellcodeverwaltung, die ein hohes Maß an Komplexität und Autonomie in seine quellcodeverwaltungmodell Anforderungen geeignet ist.
+## <a name="source-control-integration"></a>Integration der Quell Code Verwaltung
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Typen von Integrationsoptionen für die Quell Code Verwaltung. In allen Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können Sie nach wie vor ein Plug-in auf der Grundlage der Quellcodeverwaltungs-Plug-in-API integrieren (zuvor auch als MSSCCI-API bezeichnet), die grundlegende Funktionen der Quell Code Verwaltung bei Verwendung der Benutzeroberfläche der Visual Studio-Quell Code Verwaltung (UI) bereitstellt. Ein Quellcodeverwaltungs-VSPackage hingegen bietet einen neuen Deep-Integration-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Pfad, der für die Integration der Quell Code Verwaltung geeignet ist und ein hohes Maß an Komplexität und Autonomie in seinem Quell Code Verwaltungsmodell erfordert.
 
- ![Übersicht über das Steuerelement Source](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")
+ ![Übersicht der Quell Code Verwaltung](../../extensibility/internals/media/sourcectnrloverview.gif "Sourcectnrloverview")
 
-## <a name="source-control-plug-in"></a>Quellcodeverwaltung-Plug-in
- Alle Versionen von Visual Studio unterstützen die Source-Plug-in-API-Sprachspezifikation Version 1.2 als Integration Pfad. Eine Quelle Steuerelement-Plug-in Implementierer schreibt eine DLL, die Source-Control-Plug-in-API-Funktionen für die Integration der quellcodeverwaltung und Registrierung implementiert, wie in beschrieben [ein Datenquellen-Steuerelement-Plug-in erstellen](../../extensibility/internals/creating-a-source-control-plug-in.md). Bei diesem Ansatz die integrierte Entwicklungsumgebung (IDE) verwendet die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche für Dialogfelder, z. B. Einchecken, Auschecken, Extras/Optionen Eigenschaftenseiten, Symbolleisten und Quellcodeverwaltungssymbole. Strenge Einhaltung der Source-Plug-in-API ist eine einfache Integration in Visual Studio und eine problemlose-Erfahrung für den Benutzer sichergestellt. Dies bedeutet, dass das Quellcodeverwaltungs-Plug-in implementieren muss, die meisten Funktionen und Rückrufe, die in der API beschrieben.
+## <a name="source-control-plug-in"></a>Quellcodeverwaltungs-Plug-in
+ Alle Versionen von Visual Studio unterstützen die API-Spezifikation der Quellcodeverwaltungs-Plug-in, Version 1,2, als Integrations Pfad. Ein Quellcodeverwaltungs-Plug-in implementiert eine DLL, die die Quellcodeverwaltungs-Plug-in-API-Funktionen für die Integration und Registrierung der Quell Code Verwaltung implementiert, wie unter [Erstellen eines Quellcodeverwaltungs-Plug-ins](../../extensibility/internals/creating-a-source-control-plug-in.md)beschrieben. Bei diesem Ansatz verwendet die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Benutzeroberfläche für Dialogfelder, wie z. b. Einchecken, Auschecken, Extras/Optionen-Eigenschaften Seiten, Symbolleisten und Symbole der Quell Code Verwaltung. Strikte Einhaltung der Quellcodeverwaltungs-Plug-in-API sichert eine einfache Integration in Visual Studio und eine problemlose Benutzer Benutzerin. Dies bedeutet, dass das Quellcodeverwaltungs-Plug-in die meisten Funktionen und Rückrufe implementieren muss, die in der API ausführlich beschrieben werden.
 
- Gehen Sie folgendermaßen vor, um ein Quellcodeverwaltungs-Plug-in mit der Source-Plug-in-API zu implementieren:
+ Gehen Sie folgendermaßen vor, um ein Quellcodeverwaltungs-Plug-in mithilfe der Quellcodeverwaltungs-Plug-in-API zu implementieren:
 
-1. Erstellen Sie eine DLL, die die angegebenen Funktionen implementiert [Quellcodeverwaltung-Plug-ins](../../extensibility/source-control-plug-ins.md).
+1. Erstellen Sie eine DLL, die die in [Quellcodeverwaltungs-Plug-ins](../../extensibility/source-control-plug-ins.md)angegebenen Funktionen implementiert.
 
-2. Die DLL registrieren, indem Sie die entsprechenden Registrierungseinträge vornehmen (beschrieben [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).
+2. Registrieren Sie die dll, indem Sie die entsprechenden Registrierungseinträge erstellen (siehe Vorgehens [Weise: Installieren eines Quellcodeverwaltungs-Plug-ins](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).
 
-3. Erstellen Sie eine Hilfsprogramm, Benutzeroberfläche und anzeigen, wenn Sie aufgefordert werden, durch den Adapter Quellcodeverwaltungspaket (der Visual Studio-Komponente, verarbeitet der Quellcodeverwaltungsfunktionen über den Quellcodeverwaltungs-Plug-ins)
+3. Erstellen Sie eine hilfsprogrammbenutzer Oberfläche, und zeigen Sie diese an, wenn Sie vom Quellcodeverwaltungs-Adapter Paket (der Visual Studio-Komponente, die die Quell Code Verwaltung über Quellcodeverwaltungs-Plug
 
-   Als Reaktion auf ein Steuerelement-Befehl "Quelle" Visual Studio-IDE bietet eine standardmäßige Benutzeroberfläche für die grundlegenden Vorgänge und übergibt dann die Informationen an das Quellcodeverwaltungs-Plug-in über die Funktionen, die in der Quelle-Plug-in-API definiert. Um erweiterte Optionen kann das Quellcodeverwaltungs-Plug-in auf aufgerufen werden, um eine eigene Benutzeroberfläche, anzuzeigen, z. B. für ein Projekt der quellcodeverwaltung unterliegende durchsuchen. Dies bedeutet, dass dem Benutzer zwei möglicherweise verschiedene Arten der Benutzeroberfläche kann beim Umgang mit den Datenquellen-Steuerelement angezeigt werden: die Benutzeroberfläche, die Visual Studio stellt und die Benutzeroberfläche, in dem das Quellcodeverwaltungs-Plug-in dargestellt. Dies ist am deutlichsten für erweiterte Quellcodeverwaltungsvorgänge.
+   Als Antwort auf einen Quell Code Verwaltungs Befehl stellt die Visual Studio-IDE eine Standardbenutzer Oberfläche für die grundlegenden Vorgänge dar und übergibt die Informationen dann an das Quellcodeverwaltungs-Plug-in über die Funktionen, die in der Quellcodeverwaltungs-Plug-in-API definiert sind. Für erweiterte Optionen kann das Quellcodeverwaltungs-Plug-in für eine eigene Benutzeroberfläche aufgerufen werden, z. b. Durchsuchen nach einem Projekt mit Quell Code Verwaltung. Dies bedeutet, dass dem Benutzer beim Umgang mit der Quell Code Verwaltung möglicherweise zwei unterschiedliche Arten von Benutzeroberflächen angezeigt werden: die von Visual Studio vorgestellte Benutzeroberfläche und die Benutzeroberfläche, die das Quellcodeverwaltungs-Plug-in darstellt. Dies ist mit erweiterten Quell Code Verwaltungs Vorgängen besonders bemerkbar.
 
-### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Nachteile der Implementierung eines Quellcodeverwaltungs-Plug-in
+### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Nachteile der Implementierung eines Quellcodeverwaltungs-Plug-ins
 
-- Erweiterte Funktionen kann der Benutzer zwei verschiedene Arten der Schnittstellen, finden Sie unter was zu Verwechslungen.
+- Für erweiterte Features werden dem Benutzer möglicherweise zwei verschiedene Schnittstellen angezeigt, was zu Verwechslungen führt.
 
-- Das Quellcodeverwaltungs-Plug-in ist auf das quellcodeverwaltungmodell impliziert durch die Source-Plug-in-API beschränkt.
+- Das Quellcodeverwaltungs-Plug-in ist auf das Quell Code Verwaltungsmodell beschränkt, das von der Quellcodeverwaltungs-Plug-in-API impliziert wird.
 
-- Die Source-Plug-in-API kann für einige Szenarien für Steuerelement zu restriktiv sein.
+- Die Quellcodeverwaltungs-Plug-in-API ist möglicherweise für einige Quell Code Verwaltungs Szenarien zu restriktiv.
 
-### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Vorteile der Implementierung eines Quellcodeverwaltungs-Plug-in
+### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Vorteile der Implementierung eines Quellcodeverwaltungs-Plug-ins
 
-- Visual Studio stellt keine Benutzeroberfläche für alle grundlegenden Quellcodeverwaltungsvorgänge, damit das Quellcodeverwaltungs-Plug-in keine potenziell komplexen Benutzeroberfläche zu implementieren.
+- Visual Studio stellt die gesamte Benutzeroberfläche für alle grundlegenden Quell Code Verwaltungsvorgänge bereit, sodass das Quellcodeverwaltungs-Plug-in keine potenziell komplexe Benutzeroberfläche implementieren muss.
 
-- Aufgrund der strict-API kann das Quellcodeverwaltungs-Plug-in leicht externen Quelle Steuerelement Benutzerinteraktionen mit Programmen, um umfangreichere Funktionalität bereitzustellen; Visual Studio ist es auch viel wie die Quellcodeverwaltungsfunktionen durchgeführt wird, die sie gemäß der Source-Plug-in-API erreicht wird, nicht wichtig.
+- Aufgrund der strikten API kann das Quellcodeverwaltungs-Plug-in problemlos mit externen Quell Code Verwaltungsprogrammen interagieren, um umfangreichere Funktionen bereitzustellen. Visual Studio kümmert sich nicht darum, wie die Funktionen der Quell Code Verwaltung erreicht werden, sondern nur, dass Sie gemäß der Quellcodeverwaltungs-Plug-in-API durchgeführt werden.
 
-- Es ist einfacher, ein Quellcodeverwaltungs-Plug-in als ein Quellcodeverwaltungs-VSPackage implementiert.
+- Es ist einfacher, ein Quellcodeverwaltungs-Plug-in als ein Quellcodeverwaltungs-VSPackage zu implementieren.
 
 ## <a name="source-control-vspackage"></a>Quellcodeverwaltungs-VSPackage
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ermöglicht die umfassende Integration in Visual Studio in die vollständige Kontrolle der quellcodeverwaltung und die vollständige Ersetzung der Benutzeroberfläche der quellcodeverwaltung für Visual Studio bereitgestellten. Ein Datenquellen-Steuerelement VSPackage in Visual Studio registriert ist, und bietet Quellcodeverwaltungsfunktionen. Auch wenn mehrere Datenquellen-Steuerelement VSPackages mit Visual Studio registriert werden kann, kann nur einer von ihnen zu jedem Zeitpunkt aktiv sein. Ein Quellcodeverwaltungs-VSPackage hat vollständige Kontrolle über die quellcodeverwaltung und die Darstellung in Visual Studio, während es aktiv ist. Alle anderen Datenquellen-Steuerelement VSPackages, die möglicherweise im System registriert ist inaktiv sind, und es wird keine Benutzeroberfläche anzeigt überhaupt.
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ermöglicht eine umfassende Integration in Visual Studio mit vollständiger Kontrolle über die Funktionen der Quell Code Verwaltung und vollständigen Austausch der von Visual Studio bereitgestellten Benutzeroberfläche für die Quell Code Verwaltung. Ein Quellcodeverwaltungs-VSPackage ist in Visual Studio registriert und bietet Funktionen für die Quell Code Verwaltung. Obwohl mehrere Quellcodeverwaltungs-VSPackages bei Visual Studio registriert werden können, kann jeweils nur eine von Ihnen gleichzeitig aktiv sein. Ein Quellcodeverwaltungs-VSPackage verfügt über vollständige Kontrolle über die Funktionen und Darstellung der Quell Code Verwaltung in Visual Studio, während es aktiv ist. Alle anderen VSPackages der Quell Code Verwaltung, die möglicherweise im System registriert sind, sind inaktiv und zeigen überhaupt keine Benutzeroberfläche an.
 
- Implementierung eines Quellcodeverwaltungs-VSPackage ist eine Strategie für die "Alles oder nichts" erforderlich. Der Ersteller eines Quellcodeverwaltungs-VSPackage muss eine beträchtliche Menge an Aufwand bei der Implementierung einer Reihe von Steuerelement-Schnittstellen und neue Benutzeroberflächenelemente (Dialogfelder, Menüs und Symbolleisten) aus, um die gesamte Quellcodeverwaltungsfunktionen abzudecken investieren. Finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md) Weitere Details.
+ Zum Implementieren eines VSPackage für die Quell Code Verwaltung ist eine all-oder Nothing-Strategie erforderlich. Der Ersteller eines Quellcodeverwaltungs-VSPackages muss einen beträchtlichen Aufwand bei der Implementierung einer Reihe von Quell Code Verwaltungs Schnittstellen und neuen Benutzeroberflächen Elementen (Dialogfelder, Menüs und Symbolleisten) investieren, um die gesamte Funktionalität der Quell Code Verwaltung abzudecken. Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackages](../../extensibility/internals/creating-a-source-control-vspackage.md) .
 
 ### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Nachteile der Implementierung eines Quellcodeverwaltungs-VSPackages
 
-- Das VSPackage muss es sich um eine Reihe von komplexen Schnittstellen für die erfolgreiche Integration in Visual Studio implementieren.
+- Das VSPackage muss eine Reihe komplexer Schnittstellen implementieren, damit es in Visual Studio erfolgreich integriert werden konnte.
 
-- VSPackages muss die Benutzeroberfläche, die für die erforderlich sind, für die quellcodeverwaltung angeben; Visual Studio bietet keine Unterstützung in diesem Bereich.
+- Das VSPackage muss die gesamte Benutzeroberfläche bereitstellen, die für die Quell Code Verwaltung erforderlich ist. Visual Studio bietet keine Unterstützung in diesem Bereich.
 
-- Ein Datenquellen-Steuerelement das VSPackage in Visual Studio-Desktopplattform gebunden ist, und kann nicht verwendet werden eigenständige Programme, damit Funktionen einfach mit einer externen Version des Quellcode-Verwaltungsprogramm gemeinsam genutzt werden kann.
+- Ein Quellcodeverwaltungs-VSPackage ist eng an Visual Studio gebunden und kann nicht mit eigenständigen Programmen verwendet werden, sodass die Funktionalität nicht so einfach für eine externe Version des Quell Code Verwaltungs Programms freigegeben werden kann.
 
-### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Vorteile für die Implementierung eines Quellcodeverwaltungs-VSPackages
+### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Vorteile der Implementierung eines Quellcodeverwaltungs-VSPackages
 
-- Das VSPackage vollständige Kontrolle über die Benutzeroberfläche der quellcodeverwaltung und Funktionen verfügt, wird der Benutzer eine nahtlose Schnittstelle für die quellcodeverwaltung angezeigt.
+- Da das VSPackage über die vollständige Kontrolle über die Benutzeroberfläche und die Funktionalität der Quell Code Verwaltung verfügt, wird dem Benutzer eine nahtlose Oberfläche für die Quell Code Verwaltung angezeigt.
 
-- Das VSPackage ist nicht auf einen bestimmten quellcodeverwaltungmodell beschränkt.
+- Das VSPackage ist nicht auf ein bestimmtes Quell Code Verwaltungsmodell beschränkt.
 
 ## <a name="see-also"></a>Siehe auch
 - [Quellcodeverwaltung](../../extensibility/internals/source-control.md)

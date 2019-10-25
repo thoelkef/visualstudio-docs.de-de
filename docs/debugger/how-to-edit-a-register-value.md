@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Bearbeiten eines Registerwerts | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Bearbeiten eines Register Werts | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388420"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733420"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Vorgehensweise: Bearbeiten eines Registerwerts (C#, C++, Visual Basic F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Vorgehensweise: Bearbeiten eines Register Werts (C#, C++, Visual Basic, F#)
 
 Das Fenster „Register“ ist nur verfügbar, wenn Debuggen auf Adressebene im Dialogfeld **Optionen** im Knoten **Debuggen** aktiviert ist.
 
@@ -43,4 +43,4 @@ Das Fenster „Register“ ist nur verfügbar, wenn Debuggen auf Adressebene im 
     > Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch eine scheinbar unwesentliche Bearbeitung kann Änderungen in einigen Bits mit dem niedrigsten Wert in einem Gleitkommaregister bewirken.
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)
+- [Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)

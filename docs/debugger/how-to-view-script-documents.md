@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen von Skriptdokumenten | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Anzeigen von Skript Dokumenten | Microsoft-Dokumentation'
 ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906071"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731854"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>Vorgehensweise: Anzeigen von Skriptdokumenten (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>Vorgehensweise: Anzeigen von Skript Dokumenten (JavaScript)
 
-Serverseitige Skriptdateien werden im Projektmappen-Explorer angezeigt. Clientseitige Skriptdateien sind nur sichtbar, wenn Sie sich im Debugmodus oder Unterbrechungsmodus befinden. Client-seitige Skriptdateien werden in der **Skriptdokumente** Knoten.
+Server seitige Skriptdateien sind in Projektmappen-Explorer sichtbar. Clientseitige Skriptdateien sind nur sichtbar, wenn Sie sich im Debugmodus oder Unterbrechungsmodus befinden. Client seitige Skriptdateien werden im Knoten **Skript Dokumente** angezeigt.
 
 > [!NOTE]
-> Berichtsserverversion [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], clientseitige Skriptdateien, die von serverseitigen Skript generiert, die im Skript-Explorer-Fenster angezeigt wurde.
+> Vor der [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] wurden vom serverseitigen Skript generierte Client seitige Skriptdateien im Skript-Explorer angezeigt.
 
 ### <a name="to-view-a-server-side-script-document"></a>So zeigen Sie ein serverseitiges Skriptdokument an
 
-1. Öffnen Sie im **Projektmappen-Explorer** den Knoten **\<Website-Pfadname>**.
+1. Öffnen Sie im **Projektmappen-Explorer** den Knoten **\<Website-Pfadname>** .
 
 2. Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.
 

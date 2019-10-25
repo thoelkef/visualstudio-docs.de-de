@@ -1,5 +1,5 @@
 ---
-title: Neuformatieren von Code in einem Legacysprachdienst | Microsoft-Dokumentation
+title: Neuformatieren von Code in einem Legacy Sprachdienst | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,35 +11,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: ae48e1b97b5c9194cf3081687ab31ea9f857e6c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891123"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724759"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Neuformatieren von Code in einem Legacysprachdienst
 
-In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Quellcode durch die Verwendung von Einzüge und Leerzeichen normalisieren neu formatiert werden kann. Dazu kann gehören, einfügen oder Entfernen von Leerzeichen oder Tabstopps am Anfang jeder Zeile, Hinzufügen neuer Zeilen zwischen den Zeilen oder Leerzeichen durch Tabstopps oder Tabstopps, Leerzeichen ersetzt.
+In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der Quellcode neu formatiert werden kann, indem die Verwendung von Einzügen und Leerzeichen normalisiert wird. Dies kann das Einfügen oder Entfernen von Leerzeichen oder Registerkarten am Anfang jeder Zeile, das Hinzufügen neuer Zeilen zwischen Zeilen oder das Ersetzen von Leerzeichen durch Tabstopps oder Tabstopps durch Leerzeichen umfassen.
 
 > [!NOTE]
-> Einfügen oder Löschen von Zeilenumbruchzeichen Marker, wie z. B. Haltepunkte und Lesezeichen auswirken kann, aber hinzufügen oder Entfernen von Leerzeichen oder Tabstopps wirkt sich nicht Marker.
+> Das Einfügen oder Löschen von Zeilen Zeilenzeichen kann Marker wie Haltepunkte und Lesezeichen beeinflussen, das Hinzufügen oder Entfernen von Leerzeichen oder Registerkarten wirkt sich jedoch nicht auf Marker aus.
 
-Benutzer können einen neuformatierung Vorgang starten, indem Sie die Auswahl **Formatauswahl** oder **Dokument formatieren** aus der **erweitert** Menü auf der **Bearbeiten**Menü. Ein neuformatierung Vorgang kann auch ausgelöst werden, wenn ein Codeausschnitt oder ein bestimmtes Zeichen eingefügt wird. Beispielsweise wenn Sie eine schließende geschweifte Klammer in C# -Code eingeben, ist alles, was zwischen die entsprechende öffnende geschweifte Klammer und der schließenden geschweiften Klammer automatisch auf die richtige Ebene eingezogen.
+Benutzer können einen neuformatierungs Vorgang starten, indem Sie im Menü **Bearbeiten** im Menü " **erweitert** " die Option **Format Auswahl** oder **Dokumentformat** auswählen. Ein neuformatiervorgang kann auch ausgelöst werden, wenn ein Code Ausschnitt oder ein bestimmtes Zeichen eingefügt wird. Wenn Sie z. b. eine schließende geschweifte C#Klammer in eingeben, wird alles zwischen der passenden öffnenden geschweifte Klammer und der schließenden geschweifte Klammer automatisch auf die richtige Ebene eingezogen.
 
-Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sendet die **Formatauswahl** oder **Dokument formatieren** Befehl auf den Sprachdienst, der <xref:Microsoft.VisualStudio.Package.ViewFilter> -Klasse ruft die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> Klasse. Zur Unterstützung der Formatierung, müssen Sie überschreiben, die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> -Methode, und geben Ihre eigenen codeformatierung.
+Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Befehl **Format Auswahl** oder **formatdokument** an den Sprachdienst sendet, ruft die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>-Methode in der <xref:Microsoft.VisualStudio.Package.Source> Klasse auf. Um die Formatierung zu unterstützen, müssen Sie die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>-Methode überschreiben und ihren eigenen Formatierungs Code angeben.
 
-## <a name="enabling-support-for-reformatting"></a>Aktivieren der Unterstützung für neu formatieren
+## <a name="enabling-support-for-reformatting"></a>Aktivieren der Unterstützung für die Neuformatierung
 
-Formatierung, unterstützen die `EnableFormatSelection` Parameter, der die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> muss festgelegt werden, um `true` beim Registrieren Ihres VSPackages. Hiermit wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> Eigenschaft `true`. Die <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> Methode gibt den Wert dieser Eigenschaft zurück. Wenn "true" gibt die <xref:Microsoft.VisualStudio.Package.ViewFilter> -Klasse ruft die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
+Um die Formatierung zu unterstützen, muss der `EnableFormatSelection`-Parameter des <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> auf `true` festgelegt werden, wenn Sie Ihr VSPackage registrieren. Dadurch wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A>-Eigenschaft auf `true` festgelegt. Die <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A>-Methode gibt den Wert dieser Eigenschaft zurück. Wenn true zurückgegeben wird, ruft die <xref:Microsoft.VisualStudio.Package.ViewFilter>-Klasse die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> auf.
 
-## <a name="implementing-reformatting"></a>Implementieren von neu formatieren
+## <a name="implementing-reformatting"></a>Implementierende Neuformatierung
 
-Um neuformatierung zu implementieren, müssen Sie leiten eine Klasse von der <xref:Microsoft.VisualStudio.Package.Source> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> Methode. Die <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> Objekt beschreibt die Spanne, formatieren und die <xref:Microsoft.VisualStudio.Package.EditArray> -Objekt enthält, auf die Spanne vorgenommenen Bearbeitungen aus. Beachten Sie, dass diese Spanne das gesamte Dokument. Aber da es sich wahrscheinlich mehrere Änderungen an der Spanne, sollte alle Änderungen in einer einzigen Aktion rückgängig gemacht werden. Umschließen Sie zu diesem Zweck alle Änderungen in einem <xref:Microsoft.VisualStudio.Package.CompoundAction> Objekt (siehe Abschnitt "Verwenden der CompoundAction-Klasse", in diesem Thema).
+Zum Implementieren von Neuformatierung müssen Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.Source>-Klasse ableiten und die <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>-Methode überschreiben. Das <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> Objekt beschreibt die zu formatierende Spanne, und das <xref:Microsoft.VisualStudio.Package.EditArray> Objekt enthält die Änderungen, die in der Spanne vorgenommen werden. Beachten Sie, dass diese Spanne das gesamte Dokument sein kann. Da jedoch wahrscheinlich mehrere Änderungen an der Spanne vorgenommen werden, sollten alle Änderungen in einer einzigen Aktion rückgängig gemacht werden. Umschließen Sie zu diesem Zweck alle Änderungen in einem <xref:Microsoft.VisualStudio.Package.CompoundAction> Objekt (siehe "Verwenden der CompoundAction-Klasse" in diesem Thema).
 
 ### <a name="example"></a>Beispiel
 
-Im folgende Beispiel wird sichergestellt, dass es ist ein einzelnes Leerzeichen nach jedem Komma in die Auswahl, wenn das Komma von einer Registerkarte gefolgt oder am Ende der Zeile. Leerzeichen nach das letzte Komma in einer Zeile werden gelöscht. Finden Sie im Abschnitt "Verwenden der CompoundAction-Klasse" in diesem Thema finden, wie diese Methode aufgerufen wird, aus der <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> Methode.
+Im folgenden Beispiel wird sichergestellt, dass nach jedem Komma in der Auswahl ein einzelnes Leerzeichen vorhanden ist, es sei denn, auf das Komma folgt eine Registerkarte oder befindet sich am Ende der Zeile. Nachfolgende Leerzeichen nach dem letzten Komma in einer Zeile werden gelöscht. Informationen dazu, wie diese Methode von der <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>-Methode aufgerufen wird, finden Sie im Abschnitt "Verwenden der CompoundAction-Klasse" in diesem Thema.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -155,11 +155,11 @@ namespace MyLanguagePackage
 
 ## <a name="using-the-compoundaction-class"></a>Verwenden der CompoundAction-Klasse
 
-Alle der neuformatierung für einen Codeabschnitt ausgeführt sollte in einer einzigen Aktion rückgängig gemacht werden. Dies geschieht mithilfe einer <xref:Microsoft.VisualStudio.Package.CompoundAction> Klasse. Diese Klasse dient als Wrapper für einen Satz von Bearbeitungsvorgängen für den Textpuffer in einer einzelnen Bearbeitungsvorgang.
+Alle Neuformatierung in einem Code Abschnitt sollte in einer einzigen Aktion rückgängig gemacht werden. Dies kann mit einer <xref:Microsoft.VisualStudio.Package.CompoundAction>-Klasse erreicht werden. Diese Klasse umschließt eine Reihe von Bearbeitungsvorgängen für den Text Puffer in einen einzelnen Bearbeitungsvorgang.
 
 ### <a name="example"></a>Beispiel
 
-Hier ist ein Beispiel zur Verwendung der <xref:Microsoft.VisualStudio.Package.CompoundAction> Klasse. Siehe das Beispiel im Abschnitt "Implementieren von Unterstützung für Formatierung" in diesem Thema ein Beispiel für die `DoFormatting` Methode.
+Im folgenden finden Sie ein Beispiel für die Verwendung der <xref:Microsoft.VisualStudio.Package.CompoundAction>-Klasse. Ein Beispiel für die `DoFormatting`-Methode finden Sie im Abschnitt "Implementieren der Unterstützung für die Formatierung" in diesem Thema.
 
 ```csharp
 using Microsoft.VisualStudio.Package;

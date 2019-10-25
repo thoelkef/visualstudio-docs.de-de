@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_thisadjust | Microsoft-Dokumentation'
+title: 'Idiasymmetribol:: get_thisAdjust | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfdfb07f0ea20cf13a56eed7f380e3ec195fe52
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e92a18ce7b9b7206121d1ad514217f79d2f8628a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800787"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739149"
 ---
-# <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-Ruft den logischen `this` Abwicklung für die Methode.
+# <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
+Ruft das logische `this` für die-Methode ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,16 +33,16 @@ HRESULT get_thisAdjust ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt den logischen `this` Abwicklung für die Methode.
+vorgenommen Gibt die logische `this` für die-Methode zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 > [!NOTE]
-> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft für das Symbol nicht verfügbar ist.
 
 ## <a name="remarks"></a>Hinweise
- In einigen Fällen für mehrere Vererbung muss die Methode selbst ein echtes berechnen `this` Wert durch Hinzufügen eines Offsets zum `this`.
+ In einigen mehrfach Vererbungs Fällen muss die Methode selbst einen true `this` Wert berechnen, indem Sie `this` einen Offset hinzufügt.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

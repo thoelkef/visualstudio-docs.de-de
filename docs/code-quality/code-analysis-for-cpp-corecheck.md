@@ -1,5 +1,5 @@
 ---
-title: C++ Core Guidelines Überprüfungsprogramm Verweis
+title: C++Referenz zu Kern Richtlinien Prüfung
 ms.date: 03/22/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -10,202 +10,202 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc6c7c1dbc5009129e9e793f3b8eea1f7927b2bb
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 9a5fe14c1bcb2b375a104a928513134b1789d437
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018449"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745966"
 ---
-# <a name="c-core-guidelines-checker-reference"></a>C++ Core Guidelines Überprüfungsprogramm Verweis
+# <a name="c-core-guidelines-checker-reference"></a>C++Referenz zu Kern Richtlinien Prüfung
 
-Dieser Abschnitt listet die Warnungen für C++ Core Richtlinien aus. Weitere Informationen zur Code Analyse finden Sie unter [/analyze (Code Analyse)](/cpp/build/reference/analyze-code-analysis) und [schnell Start: Code Analyse für C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+In diesem Abschnitt C++ werden die wichtigsten Richtlinien für die Richtlinien Weitere Informationen zur Code Analyse finden Sie unter [/analyze (Code Analyse)](/cpp/build/reference/analyze-code-analysis) und [Schnellstart: Code Analyse für CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
-> Einige Warnungen zu mehr als eine Gruppe gehören, und nicht alle Warnungen haben eine vollständige Referenz-Thema.
+> Einige Warnungen gehören zu mehr als einer Gruppe, und nicht alle Warnungen enthalten ein vollständiges Referenz Thema.
 
 ## <a name="owner_pointer-group"></a>OWNER_POINTER-Gruppe
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md) ein bereichsbezogenes Objekt anstelle eines vom Heap zugewiesenen Objekts zurückgeben, wenn sie einen bewegungskonstruktor verfügt. Finden Sie unter [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md) Zurückgeben eines Bereichs bezogenen Objekts anstelle eines Heap zugeordneten, wenn es über einen bewegungskonstruktor verfügt. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
-[C26403 RESET_OR_DELETE_OWNER](C26403.md) zurücksetzen oder explizit löschen einen Besitzer\<T > "% Variable%"-Zeiger. Finden Sie unter [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+[C26403 RESET_OR_DELETE_OWNER](C26403.md) Einen Besitzer \<T > Zeiger "% Variable%" zurücksetzen oder explizit löschen. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
-[C26404 DONT_DELETE_INVALID](C26404.md) löschen Sie einen Besitzer nicht\<T >, die möglicherweise in einem ungültigen Zustand. Finden Sie unter [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+[C26404 DONT_DELETE_INVALID](C26404.md) Löschen Sie keinen Besitzer \<T >, der sich möglicherweise in einem ungültigen Zustand befindet. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
-[C26405 DONT_ASSIGN_TO_VALID](C26405.md) weisen Sie einem Besitzer nicht\<T >, die möglicherweise im ungültigen Zustand. Finden Sie unter [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+[C26405 DONT_ASSIGN_TO_VALID](C26405.md) Weisen Sie keinen Besitzer \<T > zu, die sich möglicherweise in einem gültigen Zustand befinden. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
-[C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md) weisen Sie keinen rohzeiger zu Besitzer\<T >. Finden Sie unter [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+[C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md) Weisen Sie einem Besitzer \<T > keinen rohzeiger zu. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
-[C26407 DONT_HEAP_ALLOCATE_UNNECESSARILY](C26407.md) Bereichsbezogene Objekte bevorzugen, nicht unnötig mit Heap zuordnen. Finden Sie unter [C++ Core Guidelines 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
+[C26407 DONT_HEAP_ALLOCATE_UNNECESSARILY](C26407.md) Bevorzugen Sie Bereichs bezogene Objekte, nicht unnötig Heap Zuordnung. Weitere Informationen finden [ C++ Sie unter Core Guidelines R. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
-[C26429 USE_NOTNULL](C26429.md) Symbol "% Symbol %" wird nie auf nullwertigkeit getestet, es kann als Not_null gekennzeichnet werden. Finden Sie unter [C++ Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26429 USE_NOTNULL](C26429.md) Das Symbol "% Symbol%" wird nie auf NULL-Werte getestet und kann als not_null gekennzeichnet werden. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-[C26430 TEST_ON_ALL_PATHS](C26430.md) Symbol "% Symbol %" wurde nicht in allen Pfaden nullwertigkeit getestet. Finden Sie unter [C++ Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26430 TEST_ON_ALL_PATHS](C26430.md) Das Symbol "% Symbol%" wird in allen Pfaden nicht auf NULL-Werte geprüft. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-[C26431 DONT_TEST_NOTNULL](C26431.md) der Typ des Ausdrucks "% Expr %" ist bereits gsl::not_null. Testen sie nicht auf nullwertigkeit. Finden Sie unter [C++ Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26431 DONT_TEST_NOTNULL](C26431.md) Der Typ des Ausdrucks "% expr%" ist bereits "gsl:: NOT_NULL". Testen Sie die NULL-Werte nicht. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
 ## <a name="raw_pointer-group"></a>RAW_POINTER-Gruppe
 
-[C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) weisen nicht das Ergebnis einer Zuteilung oder eines Funktionsaufrufs mit einem Besitzer\<T >-Rückgabewert in ein unformatierter Zeiger; verwenden Sie Besitzer\<T > stattdessen. Finden Sie unter [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
+[C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) Weisen Sie das Ergebnis einer Zuordnung oder eines Funktions Aufrufes nicht einem Besitzer zu, \<T > Rückgabewert einem unformatierten Zeiger zu. Verwenden Sie stattdessen Besitzer \<T >. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
-[C26401 DONT_DELETE_NON_OWNER](c26401.md) löschen Sie einen unformatierten Zeiger, der nicht der Besitzer ist nicht\<T >. Finden Sie unter [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
+[C26401 DONT_DELETE_NON_OWNER](c26401.md) Löschen Sie keinen rohzeiger, der kein Besitzer \<T > ist. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)   ein bereichsbezogenes Objekt anstelle eines vom Heap zugewiesenen Objekts zurückgeben, wenn sie einen bewegungskonstruktor verfügt. Finden Sie unter [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)   ein Bereichs bezogenertes Objekt anstelle eines vom Heap zugewiesenen Objekts zurückgeben, wenn es über einen bewegungskonstruktor verfügt. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
-[C26408 NO_MALLOC_FREE](C26408.md) zu vermeiden, malloc() und free(), bevorzugen Sie die Nothrow-Version des new "mit" löschen. Finden Sie unter [C++ Core Guidelines r. 10](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-mallocfree).
+[C26408 NO_MALLOC_FREE](C26408.md) Vermeiden Sie malloc () und Free (), bevorzugen Sie die nothrow-Version von New with DELETE. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 10](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-mallocfree).
 
-[C26409 NO_NEW_DELETE](C26409.md) vermeiden Sie Aufrufe, die neuen und explizit löschen, verwenden Sie Std:: make_unique\<T > stattdessen. Finden Sie unter [C++ Core Guidelines r. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-newdelete).
+[C26409 NO_NEW_DELETE](C26409.md) Vermeiden Sie das Aufrufen von New und explizites löschen, verwenden Sie stattdessen Std:: make_unique \<T >. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-newdelete).
 
-[C26429 USE_NOTNULL](C26429.md) Symbol "% Symbol %" wird nie auf nullwertigkeit getestet, es kann als Not_null gekennzeichnet werden. Finden Sie unter [C++ Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26429 USE_NOTNULL](C26429.md) Das Symbol "% Symbol%" wird nie auf NULL-Werte getestet und kann als not_null gekennzeichnet werden. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-[C26430 TEST_ON_ALL_PATHS](C26430.md) Symbol "% Symbol %" wurde nicht in allen Pfaden nullwertigkeit getestet. Finden Sie unter [C++ Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26430 TEST_ON_ALL_PATHS](C26430.md) Das Symbol "% Symbol%" wird in allen Pfaden nicht auf NULL-Werte geprüft. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-[C26431 DONT_TEST_NOTNULL](C26431.md) der Typ des Ausdrucks "% Expr %" ist bereits gsl::not_null. Testen sie nicht auf nullwertigkeit. Finden Sie unter [C++ Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+[C26431 DONT_TEST_NOTNULL](C26431.md) Der Typ des Ausdrucks "% expr%" ist bereits "gsl:: NOT_NULL". Testen Sie die NULL-Werte nicht. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-[C26481 NO_POINTER_ARITHMETIC](C26481.md) verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen die Spanne. Finden Sie unter [C++ Core Richtlinien Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+[C26481 NO_POINTER_ARITHMETIC](C26481.md) Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen span. Siehe [ C++ Kern Leitlinien Begrenzungen. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
-Ausdruck "% expr%": Kein Array zu Zeiger Verfall. Finden Sie unter [C++ Core Richtlinien Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+Ausdruck "% expr%": kein Array zu Zeiger Verfall. Weitere Informationen finden [ C++ Sie Untergrund Legende Begrenzungen. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 ## <a name="unique_pointer-group"></a>UNIQUE_POINTER-Gruppe
 
-[C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md) der Parameter "% Parameter %" ist ein Verweis auf `const` eindeutige Zeiger ist, verwenden Sie const T * "oder" const T & stattdessen. Finden Sie unter [C++ Core Guidelines 32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam).
+[C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md) Der Parameter "% Parameter%" ist ein Verweis auf `const` eindeutigen Zeiger, verwenden Sie stattdessen "Konstanten t *" oder "&". Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam).
 
-[C26411 NO_REF_TO_UNIQUE_PTR](C26411.md) der Parameter "% Parameter %" ist ein Verweis auf einen eindeutigen Zeiger und wird nie neu zugeordnet oder zurückgesetzt, verwenden Sie T * "oder" T & stattdessen. Finden Sie unter [C++ Core Guidelines 33](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-reseat).
+[C26411 NO_REF_TO_UNIQUE_PTR](C26411.md) Der Parameter "% Parameter%" ist ein Verweis auf einen eindeutigen Zeiger und wird nie neu zugeordnet oder zurückgesetzt, verwenden Sie stattdessen t * oder t &. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 33](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-reseat).
 
-[C26414 RESET_LOCAL_SMART_PTR](C26414.md) verschieben, kopieren, neu zuweisen oder einen lokalen intelligenten Zeiger "% Symbol %" zurücksetzen. Finden Sie unter [C++ Core Guidelines 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
+[C26414 RESET_LOCAL_SMART_PTR](C26414.md) Verschieben, kopieren, Neuzuweisen oder Zurücksetzen eines lokalen intelligenten Zeigers "% Symbol%". Weitere Informationen finden [ C++ Sie unter Core Guidelines R. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
-[C26415 SMART_PTR_NOT_NEEDED](C26415.md) Parameter für intelligente Zeiger "% Symbol %" wird verwendet, nur um enthaltenen Zeiger zuzugreifen. Verwenden von T * "oder" T & stattdessen. Finden Sie unter [C++ Core Guidelines 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
+[C26415 SMART_PTR_NOT_NEEDED](C26415.md) Der intelligente Zeiger Parameter "% Symbol%" wird nur für den Zugriff auf einen enthaltenen Zeiger verwendet. Verwenden Sie stattdessen t * oder t &. Weitere Informationen finden [ C++ Sie unter Core Guidelines R. 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
 
 ## <a name="shared_pointer-group"></a>SHARED_POINTER-Gruppe
 
-[C26414 RESET_LOCAL_SMART_PTR](C26414.md) verschieben, kopieren, neu zuweisen oder einen lokalen intelligenten Zeiger "% Symbol %" zurücksetzen. Finden Sie unter [C++ Core Guidelines 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
+[C26414 RESET_LOCAL_SMART_PTR](C26414.md) Verschieben, kopieren, Neuzuweisen oder Zurücksetzen eines lokalen intelligenten Zeigers "% Symbol%". Weitere Informationen finden [ C++ Sie unter Core Guidelines R. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
-[C26415 SMART_PTR_NOT_NEEDED](C26415.md) Parameter für intelligente Zeiger "% Symbol %" wird verwendet, nur um enthaltenen Zeiger zuzugreifen. Verwenden von T * "oder" T & stattdessen. Finden Sie unter [C++ Core Guidelines 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
+[C26415 SMART_PTR_NOT_NEEDED](C26415.md) Der intelligente Zeiger Parameter "% Symbol%" wird nur für den Zugriff auf einen enthaltenen Zeiger verwendet. Verwenden Sie stattdessen t * oder t &. Weitere Informationen finden [ C++ Sie unter Core Guidelines R. 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
 
-[C26416 NO_RVALUE_REF_SHARED_PTR](C26416.md) Zeiger Shared-Parameter "% Symbol %" als Rvalue-Verweis übergeben wird. Stattdessen als Wert übergeben. Finden Sie unter [C++ Core Guidelines 34](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-owner).
+[C26416 NO_RVALUE_REF_SHARED_PTR](C26416.md) Der Shared Pointer-Parameter "% Symbol%" wird durch einen rvalue-Verweis übergeben. Übergeben Sie stattdessen den Wert. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 34](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-owner).
 
-[C26417 NO_LVALUE_REF_SHARED_PTR](C26417.md) Zeiger Shared-Parameter "% Symbol %" wird als Verweis übergeben wird und nicht zurückgesetzt oder neu zugewiesen. Verwenden von T * "oder" T & stattdessen. Finden Sie unter [C++ Core Guidelines 35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam).
+[C26417 NO_LVALUE_REF_SHARED_PTR](C26417.md) Der Shared Pointer-Parameter "% Symbol%" wird als Verweis übergeben und nicht zurückgesetzt oder neu zugewiesen. Verwenden Sie stattdessen t * oder t &. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam).
 
-[C26418 NO_VALUE_OR_CONST_REF_SHARED_PTR](C26418.md) Zeiger Shared-Parameter "% Symbol %" nicht kopiert oder verschoben wird. Verwenden von T * "oder" T & stattdessen. Finden Sie unter [C++ Core Guidelines 36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const).
+[C26418 NO_VALUE_OR_CONST_REF_SHARED_PTR](C26418.md) Der Shared Pointer-Parameter "% Symbol%" wird nicht kopiert oder verschoben. Verwenden Sie stattdessen t * oder t &. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien R. 36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const).
 
-## <a name="declaration-group"></a>Gruppe der DEKLARATION
+## <a name="declaration-group"></a>Deklarations Gruppe
 
-[C26426 NO_GLOBAL_INIT_CALLS](C26426.md) der globale Initialisierer Ruft eine nicht-Constexpr-Funktion "% Symbol %". Finden Sie unter [C++ Core Guidelines 22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
+[C26426 NO_GLOBAL_INIT_CALLS](C26426.md) Der globale Initialisierer Ruft eine nicht-constexpr-Funktion '% Symbol% ' auf. Weitere Informationen finden [ C++ Sie unter Core Guidelines I. 22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) globale Initialisierer greift auf "extern" Objekt "% Symbol %". Finden Sie unter [C++ Core Guidelines 22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
+[C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) Der globale Initialisierer greift auf das externe Objekt "% Symbol%" zu. Weitere Informationen finden [ C++ Sie unter Core Guidelines I. 22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) vermeiden Sie unbenannte Objekte mit benutzerdefinierter Konstruktion und Zerstörung. Weitere Informationen finden Sie unter [es. 84: Nicht (versuchen Sie es), eine lokale Variable ohne Namen @ no__t-0 zu deklarieren.
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Vermeiden Sie unbenannte Objekte mit benutzerdefinierter Konstruktion und Zerstörung. Siehe [es. 84: nicht (versuchen Sie es), eine lokale Variable ohne Namen zu deklarieren](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-## <a name="class-group"></a>Gruppe der-Klasse
+## <a name="class-group"></a>Klassengruppe
 
-[C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) , wenn Sie definieren oder Löschen einen Standardvorgang in den Typ "% Symbol %", definieren oder löschen sie alle. Finden Sie unter [C++ Core Guidelines c. 21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
+[C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) Wenn Sie einen Standard Vorgang im Typ "% Symbol%" definieren oder löschen, definieren oder löschen Sie alle. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien C. 21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md) Funktion "% Symbol %" sollte mit "Override" markiert werden. Weitere Informationen finden Sie unter [C. 128: Virtuelle Funktionen sollten genau eine von Virtual, override oder Final @ no__t-0 angeben.
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) Die Funktion "% Symbol%" sollte mit "override" markiert werden. Weitere Informationen finden Sie [unter C. 128: virtuelle Funktionen sollten genau eine von Virtual, override oder Final angeben](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26434 DONT_HIDE_METHODS](C26434.md) die Funktion "% symbol_1 %" Blendet eine nicht virtuelle Funktion "% symbol_2 %". Finden Sie unter [C++ Core Guidelines 128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
+[C26434 DONT_HIDE_METHODS](C26434.md) Die Funktion '% symbol_1% ' blendet eine nicht virtuelle Funktion '% symbol_2% ' aus. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien C. 128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) Funktion "% Symbol %" muss genau eines der "virtual", "override" oder "final" angeben. Weitere Informationen finden Sie unter [C. 128: Virtuelle Funktionen sollten genau eine von Virtual, override oder Final @ no__t-0 angeben.
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) Die Funktion "% Symbol%" sollte genau eine von "Virtual", "override" oder "Final" angeben. Weitere Informationen finden Sie [unter C. 128: virtuelle Funktionen sollten genau eine von Virtual, override oder Final angeben](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-[C26436 NEED_VIRTUAL_DTOR](C26436.md) der Typ "% Symbol %" mit einer virtuellen Funktion benötigt entweder öffentlichen virtuellen oder einen geschützten nicht virtuellen Destruktor. Finden Sie unter [C++ Core Guidelines 35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
+[C26436 NEED_VIRTUAL_DTOR](C26436.md) Der Typ "% Symbol%" mit einer virtuellen Funktion benötigt entweder einen öffentlichen virtuellen oder einen geschützten nicht virtuellen debugtor. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien C. 35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) Außerkraftsetzen Destruktor sollten nicht verwenden, explizite 'Override' oder 'virtual'-Spezifizierer. Weitere Informationen finden Sie unter [C. 128: Virtuelle Funktionen sollten genau eine von Virtual, override oder Final @ no__t-0 angeben.
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) Der über schreibende Dekonstruktor darf keine expliziten Überschreibungs-oder Virtual-Spezifizierer verwenden. Weitere Informationen finden Sie [unter C. 128: virtuelle Funktionen sollten genau eine von Virtual, override oder Final angeben](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-## <a name="type-group"></a>Typ-Gruppe
+## <a name="type-group"></a>Typgruppe
 
-[C26437 DONT_SLICE](C26437.md) segmentieren Sie nicht. Finden Sie unter [C++ Core Guidelines 63](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es63-dont-slice).
+[C26437 DONT_SLICE](C26437.md) Nicht in Slice. Weitere Informationen finden [ C++ Sie unter Core Guidelines es. 63](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es63-dont-slice).
 
-## <a name="style-group"></a>STYLE-Gruppe
+## <a name="style-group"></a>Format Gruppe
 
-[C26438 NO_GOTO](C26438.md) vermeiden `goto`. Finden Sie unter [C++ Core Guidelines 76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
+[C26438 NO_GOTO](C26438.md) Vermeiden Sie `goto`. Weitere Informationen finden [ C++ Sie unter Core Guidelines es. 76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
 
 ## <a name="function-group"></a>Funktionsgruppe
 
-[C26439 SPECIAL_NOEXCEPT](C26439.md) diese Art von Funktion möglicherweise nicht auslösen. Deklarieren sie `noexcept`. Finden Sie unter [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+[C26439 SPECIAL_NOEXCEPT](C26439.md) Diese Art von Funktion löst möglicherweise nicht aus. Deklarieren Sie Sie `noexcept`. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
-[C26440 DECLARE_NOEXCEPT](C26440.md) Funktion "% Symbol %" deklariert werden `noexcept`. Finden Sie unter [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+[C26440 DECLARE_NOEXCEPT](C26440.md) Die Funktion "% Symbol%" kann als `noexcept` deklariert werden. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
-[C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) die Funktion wird deklariert, **"noexcept"** aber Ruft eine Funktion, die Ausnahmen auslösen kann.
-Weitere Informationen finden SieC++ unter [-Kern Richtlinien:  F. 6: Wenn die Funktion möglicherweise keine Ausnahme auslöst, deklarieren Sie Sie mit dem Wert @ no__t-0.
+[C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) Die-Funktion ist als " **noaußer** " deklariert, aber Ruft eine Funktion auf, die Ausnahmen auslösen kann.
+Weitere Informationen finden [ C++ Sie Untergrund Legende Richtlinien: F. 6: Wenn die Funktion nicht auslöst, deklarieren Sie Sie mit Ausnahme](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)von.
 
-## <a name="concurrency-group"></a>CONCURRENCY-Gruppe
+## <a name="concurrency-group"></a>Parallelitäts Gruppe
 
-[C26441 NO_UNNAMED_GUARDS](C26441.md) Guard-Objekte müssen benannt werden. Finden Sie unter [C++ Core Richtlinien cp.44](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#cp44-remember-to-name-your-lock_guards-and-unique_locks).
+[C26441 NO_UNNAMED_GUARDS](C26441.md) Wächter Objekte müssen benannt werden. Weitere Informationen finden [ C++ Sie in den Kern Richtlinien CP. 44](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#cp44-remember-to-name-your-lock_guards-and-unique_locks).
 
-## <a name="const-group"></a>CONST-Gruppe
+## <a name="const-group"></a>Konstante Gruppe
 
-[C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) Verweisargument "% Argument %" für Funktion "% Funktion %" kann markiert werden, als `const`. Finden Sie unter [C++ Core Richtlinien con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) Das Verweis Argument "% Argument%" für die Funktion "% Function%" kann als `const` gekennzeichnet werden. Weitere Informationen finden [ C++ Sie unter Core Guidelines con. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): Das Zeigerargument "% Argument%" für die Funktion "% Function%" kann als Zeiger auf `const` gekennzeichnet werden. Finden Sie unter [C++ Core Richtlinien con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): das Zeigerargument "% Argument%" für die Funktion "% Function%" kann als Zeiger auf `const` gekennzeichnet werden. Weitere Informationen finden [ C++ Sie unter Core Guidelines con. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) der Wert, der auf die von "% Variable%" gezeigt wird nur einmal zugewiesen, markieren Sie sie als Zeiger auf `const`. Finden Sie unter [C++ Core Richtlinien con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
+[C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) Der Wert, auf den von "% Variable%" gezeigt wird, wird nur einmal zugewiesen. Markieren Sie ihn als Zeiger auf `const`. Weitere Informationen finden [ C++ Sie unter Core Guidelines con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
-[C26463 USE_CONST_FOR_ELEMENTS](c26463.md) die Elemente des Arrays "% Array %" werden nur einmal aus, markieren Sie die Elemente zugewiesen `const`. Finden Sie unter [C++ Core Richtlinien con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
+[C26463 USE_CONST_FOR_ELEMENTS](c26463.md) Die Elemente des Arrays "% Array%" werden nur einmal zugewiesen, markieren Elemente `const`. Weitere Informationen finden [ C++ Sie unter Core Guidelines con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
-[C26464 USE_CONST_POINTER_FOR_ELEMENTS](c26464.md) die Werte, die auf Elemente des Arrays "% Array %" zeigt nur einmal aus, markieren Sie die Elemente als Zeiger auf zugewiesen `const`. Finden Sie unter [C++ Core Richtlinien con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
+[C26464 USE_CONST_POINTER_FOR_ELEMENTS](c26464.md) Die Werte, auf die Elemente des Arrays "% Array%" zeigen, werden nur einmal zugewiesen. Markieren Sie Elemente als Zeiger auf `const`. Weitere Informationen finden [ C++ Sie unter Core Guidelines con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
-[C26496 USE_CONST_FOR_VARIABLE](c26496.md) die Variable "% Variable%" wird nur einmal zugewiesen, markieren Sie sie als `const`. Finden Sie unter [C++ Core Richtlinien con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
+[C26496 USE_CONST_FOR_VARIABLE](c26496.md) Die Variable "% Variable%" wird nur einmal zugewiesen, markieren Sie Sie als `const`. Weitere Informationen finden [ C++ Sie unter Core Guidelines con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
-[C26497 USE_CONSTEXPR_FOR_FUNCTION](c26497.md) konnte diese Funktion Funktion % markiert werden `constexpr` kompilierzeitauswertung gewünscht ist. Finden Sie unter [C++ Core Guidelines F.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-constexpr).
+[C26497 USE_CONSTEXPR_FOR_FUNCTION](c26497.md) Diese Funktion% Function% kann `constexpr` gekennzeichnet werden, wenn eine Kompilierzeit Auswertung gewünscht wird. Weitere Informationen finden [ C++ Sie unter Core Guidelines F. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-constexpr).
 
-[C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL](c26498.md) kann von dieser Funktion Aufruf Funktion % `constexpr` kompilierzeitauswertung gewünscht ist. Finden Sie unter [C++ Core Richtlinien con.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-constexpr).
+[C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL](c26498.md) Dieser Funktionsaufruf% Function% kann `constexpr` verwenden, wenn die Auswertung der Kompilierzeit gewünscht wird. Weitere Informationen finden [ C++ Sie unter Core Guidelines con. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-constexpr).
 
-## <a name="type-group"></a>Typ-Gruppe
+## <a name="type-group"></a>Typgruppe
 
-[C26465 NO_CONST_CAST_UNNECESSARY](c26465.md) verwenden Sie keine `const_cast` zum Umwandeln von `const`. `const_cast` ist nicht erforderlich. Constness oder Volatilität wird durch diese Konvertierung nicht entfernt werden. Weitere Informationen finden Sie in den [C++ Core-Richtlinien Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).
+[C26465 NO_CONST_CAST_UNNECESSARY](c26465.md) Verwenden Sie `const_cast` nicht zum Umwandeln `const`. `const_cast` ist nicht erforderlich. constness oder Volatilität wird nicht durch diese Konvertierung entfernt. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).
 
-[C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md) verwenden Sie keine `static_cast` Typumwandlungen. Eine Umwandlung in einen polymorphen Typ sollten Dynamic_cast verwenden. Finden Sie unter [C++ Core Richtlinien Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).
+[C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md) Verwenden Sie keine `static_cast` downcasts. Eine Umwandlung von einem polymorphen Typ sollte dynamic_cast verwenden. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).
 
-[C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR](c26471.md) verwenden Sie keine `reinterpret_cast`. Eine Umwandlung von "void" * können `static_cast`. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
+[C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR](c26471.md) Verwenden Sie `reinterpret_cast` nicht. Eine Umwandlung aus void * kann `static_cast` verwenden. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
-[C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md) verwenden Sie keine `static_cast` für arithmetische Konvertierungen. Verwenden Sie die Initialisierung mit geschweiften Klammern, gsl::narrow_cast oder gsl::narow. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
+[C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md) Verwenden Sie keine `static_cast` für arithmetische Konvertierungen. Verwenden Sie die Initialisierung von Klammern, gsl:: narrow_cast oder gsl:: narow. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
-[C26473 NO_IDENTITY_CAST](C26473.md) keine Umwandlung zwischen Zeigertypen durch, in denen der Quelltyp und des Zieltyps entsprechen. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
+[C26473 NO_IDENTITY_CAST](C26473.md) Konvertieren Sie nicht zwischen Zeiger Typen, bei denen der Quelltyp und der Zieltyp identisch sind. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
-[C26474 NO_IMPLICIT_CAST](C26474.md) keine Umwandlung zwischen Zeigertypen, wenn die Konvertierung implizit sein kann. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
+[C26474 NO_IMPLICIT_CAST](C26474.md) Konvertieren Sie nicht zwischen Zeiger Typen, wenn die Konvertierung implizit sein könnte. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
-[C26475 NO_FUNCTION_STYLE_CASTS](C26475.md) verwenden Sie keine Funktionsstil C#-Umwandlungen. Finden Sie unter [C++ Core Guidelines ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).
+[C26475 NO_FUNCTION_STYLE_CASTS](C26475.md) Verwenden Sie keine C-casts im Funktions Stil. Weitere Informationen finden [ C++ Sie unter Core Guidelines es. 49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).
 
-[C26490 NO_REINTERPRET_CAST](c26490.md) verwenden Sie keine `reinterpret_cast`. Finden Sie unter [C++ Core Richtlinien Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
+[C26490 NO_REINTERPRET_CAST](c26490.md) Verwenden Sie `reinterpret_cast` nicht. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
-[C26491 NO_STATIC_DOWNCAST](c26490.md) verwenden Sie keine `static_cast` Typumwandlungen. Finden Sie unter [C++ Core Richtlinien Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
+[C26491 NO_STATIC_DOWNCAST](c26490.md) Verwenden Sie keine `static_cast` downcasts. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
-[C26492 NO_CONST_CAST](c26492.md) verwenden Sie keine `const_cast` zum Umwandeln von `const`. Weitere Informationen finden Sie in den [C++ Core-Richtlinien Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
+[C26492 NO_CONST_CAST](c26492.md) Verwenden Sie `const_cast` nicht zum Umwandeln `const`. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
-[C26493 NO_CSTYLE_CAST](c26493.md) verwenden Sie keine C-stilartige Umwandlungen. Finden Sie unter [C++ Core Richtlinien Type.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
+[C26493 NO_CSTYLE_CAST](c26493.md) Verwenden Sie keine Umwandlungen im C-Stil. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
-[C26494 VAR_USE_BEFORE_INIT](c26494.md) Variable "% Variable%" ist nicht initialisiert. Ein Objekt immer initialisiert werden. Finden Sie unter [C++ Core Richtlinien Type.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
+[C26494 VAR_USE_BEFORE_INIT](c26494.md) Die Variable "% Variable%" ist nicht initialisiert. Initialisieren Sie immer ein-Objekt. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
-[C26495 MEMBER_UNINIT](c26495.md) Variable "% Variable%" ist nicht initialisiert. Initialisieren Sie eine Membervariable immer. Finden Sie unter [C++ Core Richtlinien Type.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
+[C26495 MEMBER_UNINIT](c26495.md) Die Variable "% Variable%" ist nicht initialisiert. Initialisieren Sie immer eine Member-Variable. Weitere Informationen finden [ C++ Sie unter Core Guidelines Type. 6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
-## <a name="bounds-group"></a>Gruppe von Grenzen
+## <a name="bounds-group"></a>Begrenzungs Gruppe
 
-[C26446 USE_GSL_AT](c26446.md) bevorzugen `gsl::at()` anstelle von ungeprüften subscript-Operator. Weitere Informationen finden SieC++ unter [-Kern Richtlinien:  Bounds. 4: Verwenden Sie keine Standard Bibliotheksfunktionen und-Typen, für die keine Begrenzungen aktiviert sind @ no__t-0.
+[C26446 USE_GSL_AT](c26446.md) Bevorzugen Sie die Verwendung von `gsl::at()` anstelle des nicht überprüften Index Operators. Weitere Informationen finden [ C++ Sie Untergrund Legende Richtlinien: Bounds. 4: Verwenden Sie keine Standard Bibliotheksfunktionen und-Typen, die nicht durch Grenzen geprüft werden](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md).
-Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen die Spanne. Finden Sie unter [Bounds.1 für C++-Core-Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+Verwenden Sie keine Zeigerarithmetik. Verwenden Sie stattdessen span. Siehe [ C++ Kern Leitlinien Begrenzungen. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26482 NO_DYNAMIC_ARRAY_INDEXING](c26482.md) index nur für Arrays mithilfe konstanter Ausdrücke. Finden Sie unter [Bounds.2 für C++-Core-Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26482 NO_DYNAMIC_ARRAY_INDEXING](c26482.md) Indizieren Sie in Arrays nur mithilfe konstanter Ausdrücke. Siehe [ C++ Kern Leitlinien Begrenzungen. 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) Wert Wert %value% ist außerhalb des gültigen Bereichs (0, gebundenen %) der Variablen "% Variable%". Index nur mithilfe konstanter Ausdrücke, die innerhalb der Grenzen des Arrays sind Arrays. Finden Sie unter [Bounds.2 für C++-Core-Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) Der Wert "% Value%" liegt außerhalb der Grenzen (0,% gebunden%). der Variablen "% Variable%". Indizieren Sie in Arrays nur mithilfe konstanter Ausdrücke, die sich innerhalb der Grenzen des Arrays befinden. Siehe [ C++ Kern Leitlinien Begrenzungen. 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Ausdruck "% expr%": Kein Array zu Zeiger Verfall. Finden Sie unter [Bounds.3 für C++-Core-Richtlinien](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Ausdruck "% expr%": kein Array zu Zeiger Verfall. Siehe [ C++ Kern Leitlinien Begrenzungen. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>GSL-Gruppe
 
-[C26445 NO_SPAN_REF](c26445.md) einen Verweis auf `gsl::span` oder `std::string_view` kann darauf hinweisen, dass ein Lebensdauerproblem.
-Weitere Informationen finden SieC++ unter [-Kern Richtlinien GSL. View: Sichten @ no__t-0
+[C26445 NO_SPAN_REF](c26445.md) Ein Verweis auf `gsl::span` oder `std::string_view` ist möglicherweise ein Hinweis auf ein Problem mit der Lebensdauer.
+Siehe [ C++ Kern Richtlinien GSL. View: views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
-[C26446 USE_GSL_AT](c26446.md) bevorzugen `gsl::at()` anstelle von ungeprüften subscript-Operator. Weitere Informationen finden SieC++ unter [-Kern Richtlinien:  Bounds. 4: Verwenden Sie keine Standard Bibliotheksfunktionen und-Typen, für die keine Begrenzungen aktiviert sind @ no__t-0.
+[C26446 USE_GSL_AT](c26446.md) Bevorzugen Sie die Verwendung von `gsl::at()` anstelle des nicht überprüften Index Operators. Weitere Informationen finden [ C++ Sie Untergrund Legende Richtlinien: Bounds. 4: Verwenden Sie keine Standard Bibliotheksfunktionen und-Typen, die nicht durch Grenzen geprüft werden](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY](c26448.md) Verwenden Sie `gsl::finally`, wenn die endgültige Aktion beabsichtigt ist. Weitere Informationen finden SieC++ unter [-Kern Richtlinien:  GSL.util: Hilfsprogramme @ no__t-0.
+[C26448 USE_GSL_FINALLY](c26448.md) Verwenden Sie `gsl::finally`, wenn die endgültige Aktion beabsichtigt ist. Weitere Informationen finden [ C++ Sie Untergrund Legende Richtlinien: gsl. util: Hilfsprogramme](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` oder `std::string_view` erstellt aus einer temporären werden ungültige bei temporären für ungültig erklärt. Weitere Informationen finden SieC++ unter [-Kern Richtlinien: GSL.view: Views @ no__t-0.
+ `gsl::span` oder `std::string_view`, die aus einem temporären erstellt wurden, sind ungültig, wenn die temporäre ungültig erklärt wird. Weitere Informationen finden [ C++ Sie unter Core Guidelines: gsl. View: views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 ## <a name="deprecated-warnings"></a>Veraltete Warnungen
 
-Die folgenden Warnungen in einer frühen experimentelle Regelsatz von Core Richtlinien Checker, vorhanden sind, aber sind jetzt veraltet und können ignoriert werden. Die Warnungen werden von Warnungen aus der Liste oben ersetzt.
+Die folgenden Warnungen sind in einem frühzeitigen experimentellen Regelsatz der kernrichtlinienprüfung vorhanden, sind jetzt jedoch veraltet und können problemlos ignoriert werden. Die Warnungen werden durch Warnungen aus der obigen Liste ersetzt.
 
 - 26412 DEREF_INVALID_POINTER
 - 26413 DEREF_NULLPTR
@@ -218,4 +218,4 @@ Die folgenden Warnungen in einer frühen experimentelle Regelsatz von Core Richt
 - 26499 NO_LIFETIME_TRACKING
 
 ## <a name="see-also"></a>Siehe auch
-[Verwenden der C++-Core-Richtlinienprüfungen](using-the-cpp-core-guidelines-checkers.md)
+[Verwenden der C++ wichtigsten Leitfäden](using-the-cpp-core-guidelines-checkers.md)

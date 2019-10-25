@@ -1,5 +1,5 @@
 ---
-title: Debuggen von UWP-apps | Microsoft-Dokumentation
+title: UWP-apps Debuggen | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 03/28/2019
 ms.topic: conceptual
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 972f52583704b3116066114986948af643069a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe8348b342627cba861a9ceb67e74d0876752cdf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738024"
 ---
-# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Debuggen Sie universeller Windows-Apps (UWP) in Visual Studio
+# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Debuggen von universellen Windows-Apps (UWP) in Visual Studio
 
-Visual Studio-Debugger bietet vollständige Unterstützung für das Debuggen von UWP-apps. Finden Sie unter den folgenden Artikeln für UWP-Debug-Aufgaben.
+Der Visual Studio-Debugger bietet umfassende Unterstützung zum Debuggen von UWP-apps. Weitere Informationen zu UWP-debugtasks finden Sie in den folgenden Artikeln
 
-|Debuggen task|Artikel|
+|Debug-Aufgabe|Artikel|
 |-|-|
-|Ausführen von UWP-apps auf einem lokalen Computer, remote oder verbundenen Gerät oder app-Simulator.|[Starten einer Debugsitzung für eine UWP-App](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
-|Bereitgestellte apps, die sowohl lokale als auch remote zu debuggen.|[Debuggen eines installierten App-Pakets](../debugger/debug-installed-app-package.md)|
-|Die Auswirkung der ContentPrefetcher-Klasse für UWP-apps analysieren.|[Vorabrufen von Inhalt für UWP-apps](../debugger/prefetch-content-for-windows-store-apps.md)|
+|Führen Sie UWP-apps auf einem lokalen Computer, einem Remote Gerät oder einem verbundenen Gerät oder einem App-Simulator aus.|[Starten einer Debugsitzung für eine UWP-App](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
+|Debuggen bereitgestellter apps, sowohl lokal als auch Remote.|[Debuggen eines installierten App-Pakets](../debugger/debug-installed-app-package.md)|
+|Analysieren Sie die Auswirkung der contentprefetcher-Klasse auf UWP-apps.|[Vorab rufen von Inhalten für UWP-apps](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>Siehe auch
 - [Analysieren der Codequalität mit der statischen Codeanalyse](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

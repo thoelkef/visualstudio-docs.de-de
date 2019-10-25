@@ -1,5 +1,5 @@
 ---
-title: 'Warnung: Skriptdebuggen deaktiviert | Microsoft-Dokumentation'
+title: 'Warnung: Skript Debuggen deaktiviert | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901022"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728201"
 ---
 # <a name="warning-script-debugging-disabled"></a>Warnung: Skriptdebuggen deaktiviert
 Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
@@ -35,7 +35,7 @@ Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
 
 3. Zeigen Sie auf der Registerkarte **Erweitert** unter der Kategorie **Browsen** das Feld **Einstellungen** an.
 
-4. Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)**.
+4. Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)** .
 
 5. Klicken Sie auf **OK**.
 
@@ -44,4 +44,4 @@ Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
      Die neuen Einstellungen sind jetzt wirksam.
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Anfügen an ein Skript](../debugger/how-to-attach-to-script.md)
+- [Gewusst wie: Anfügen an ein Skript](../debugger/how-to-attach-to-script.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0710ec5cdfcfcb59407d18b43b885603f017fdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855128"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738636"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-Gibt den Typ des Speichers auf.
+Gibt den Typ des zu zuzurufenden Speichers an.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,16 +34,16 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Parameter
-`MemTypeCode` Nur code greift auf Speicher.
+`MemTypeCode` nur auf Code Arbeitsspeicher zugreift.
 
-`MemTypeData` Greift auf Daten oder Stack-Speicher.
+`MemTypeData` greift auf Daten oder den Stapel Speicher zu.
 
-`MemTypeStack` Greift auf nur Stapelspeicher.
+`MemTypeStack` nur auf den Stapel Speicher zugreift.
 
-`MemTypeAny` Greift auf jede Art von Speicher zu.
+`MemTypeAny` auf eine beliebige Art von Arbeitsspeicher zugreift.
 
 ## <a name="remarks"></a>Hinweise
-Die Werte in dieser Enumeration werden zum Übergeben der [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) Methode, um den Zugriff auf verschiedene Arten von Speicher zu beschränken.
+Die Werte in dieser Enumeration werden an die [IDiaStackWalkHelper:: Read Memory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) -Methode übermittelt, um den Zugriff auf verschiedene Arbeitsspeicher Typen einzuschränken.
 
 ## <a name="requirements"></a>Anforderungen
 Header: cvconst.h

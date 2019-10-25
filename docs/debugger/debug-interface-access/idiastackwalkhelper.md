@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0143945a266b9c76fefa10e1823a7c3ce01f85e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40c2b58778b2a1073b31acc7007388d8e8fe222c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741306"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
-Erleichtert das Durchlaufen des Stapels, mit der Anwendung debuggen Programmdatenbankdatei (.pdb)-Datei.
+Ermöglicht das Durchlaufen des Stapels mithilfe der Programm-Debug-Datenbankdatei (PDB-Datei).
 
 ## <a name="syntax"></a>Syntax
 
@@ -31,30 +31,30 @@ IDiaStackWalkHelper: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Methoden in VTable-Reihenfolge
- Die folgende Tabelle zeigt die Methoden der `IDiaStackWalkHelper`:
+ In der folgenden Tabelle sind die Methoden `IDiaStackWalkHelper` aufgeführt:
 
 |Methode|Beschreibung|
 |------------|-----------------|
-|[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|Ruft den Wert eines Registers.|
-|[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|Legt den Wert eines Registers.|
-|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|Liest einen Block von Daten aus der ausführbaren Datei Image im Arbeitsspeicher.|
-|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Sucht den angegebenen Stapelrahmen für die nächste Funktion Absenderadresse an.|
-|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Sucht den angegebenen Stapelrahmen für eine Absenderadresse an oder in der Nähe der Adresse angegebenen Stapel an.|
-|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Ruft ab den Stapelrahmen, der die angegebene virtuelle Adresse enthält.|
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Ruft ab, das Symbol, das die angegebene virtuelle Adresse enthält. **Hinweis**:  Symbol muss den Typ aufweisen `SymTagFunctionType` (ein Wert aus der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Enumeration).|
-|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Gibt zurück, der PDATA-Datenblock, der der angegebenen virtuellen Adresse zugeordnet.|
-|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Ruft ab, dass die virtuelle Startadresse einer ausführbaren Datei, wenn eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei.|
+|[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|Ruft den Wert eines Register ab.|
+|[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|Legt den Wert eines Register fest.|
+|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|Liest einen Datenblock aus dem Image der ausführbaren Datei im Arbeitsspeicher.|
+|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Durchsucht den angegebenen Stapel Rahmen nach der nächstgelegenen Rückgabeadresse der Funktion.|
+|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Durchsucht den angegebenen Stapel Rahmen nach einer Rückgabeadresse an oder in der Nähe der angegebenen Stapel Adresse.|
+|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Ruft den Stapel Rahmen ab, der die angegebene virtuelle Adresse enthält.|
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Ruft das Symbol ab, das die angegebene virtuelle Adresse enthält. **Hinweis:**  Das Symbol muss den Typ "`SymTagFunctionType`" aufweisen (ein Wert aus der Enumeration " [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ").|
+|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Gibt den pData-Datenblock zurück, der der angegebenen virtuellen Adresse zugeordnet ist.|
+|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Ruft die virtuelle Startadresse einer ausführbaren Datei ab, wenn eine virtuelle Adresse irgendwo im Speicherbereich der ausführbaren Datei angegeben ist.|
 
 ## <a name="remarks"></a>Hinweise
- Diese Schnittstelle wird von der DIA-Code zum Abrufen von Informationen zu der ausführbaren Datei zum Erstellen der Liste der Stapelrahmen während der programmausführung aufgerufen.
+ Diese Schnittstelle wird vom Dia-Code zum Abrufen von Informationen über die ausführbare Datei aufgerufen, um eine Liste von Stapel Rahmen während der Programmausführung zu erstellen.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
- Eine Clientanwendung implementiert diese Schnittstelle, um den Stapel zu durchlaufen, während der Ausführung des Programms zu unterstützen. Eine Instanz dieser Schnittstelle wird zum Übergeben der [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) oder [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) Methoden.
+ Eine Client Anwendung implementiert diese Schnittstelle, um das Durchlaufen des Stapels während der Programmausführung zu unterstützen Eine Instanz dieser Schnittstelle wird an die Methoden [IDiaStackWalker:: getenumschlag](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) oder [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) übermittelt.
 
 ## <a name="requirements"></a>Anforderungen
  Header: Dia2.h
 
- Bibliothek: diaguids.lib
+ Bibliothek: diaguids. lib
 
  DLL: msdia80.dll
 

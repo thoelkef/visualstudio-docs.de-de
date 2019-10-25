@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_checksumtype | Microsoft-Dokumentation'
+title: 'IDiaSourceFile:: get_checksumType | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85c6ce8f03534c3ed810e530dbd12d8c6d115be
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832281"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741831"
 ---
-# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
-Ruft den Typ von Prüfsumme ab.
+# <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
+Ruft den Prüfsummen Datentyp ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,23 +33,23 @@ HRESULT get_checksumType ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt die Prüfsumme-Typ zurück.
+vorgenommen Gibt den Prüfsummen Datentyp zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Der Checksum-Typ ist ein Wert, der eine Prüfsumme der Prüfsummenalgorithmus zugeordnet werden kann. Beispielsweise kann das Standardformat der PDB-Datei in der Regel einen der folgenden Werte aufweisen:
+ Der Prüfsumme-Typ ist ein Wert, der einem Prüfsummen Algorithmus zugeordnet werden kann. Beispielsweise kann das standardmäßige PDB-Dateiformat einen der folgenden Werte aufweisen:
 
-|Typ von Prüfsumme an|CryptoAPI-Bezeichnung|Beschreibung|
+|Prüfsummen-Typ|Kryptoapi-Bezeichnung|Beschreibung|
 |-------------------|---------------------|-----------------|
-|0|\<none>|Keine Prüfsumme vorhanden ist.|
-|1|`CALG_MD5`|Prüfsumme, die mit dem MD5-Hash-Algorithmus generiert.|
-|2|`CALG_SHA1`|Prüfsumme, die mit dem SHA1-Hashalgorithmus generiert werden.|
+|0|\<none>|Keine Prüfsumme vorhanden.|
+|1|`CALG_MD5`|mit dem MD5-Hash Algorithmus generierte Prüfsumme.|
+|2|`CALG_SHA1`|mit dem SHA1-Hash Algorithmus generierte Prüfsumme.|
 
- Die `CryptoAPI` Bezeichnungen sind von der `ALG_ID` Enumeration. Weitere Informationen zu Hashalgorithmen, finden Sie in der `CryptoAPI` der Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].
+ Die `CryptoAPI` Bezeichnungen stammen aus der `ALG_ID`-Enumeration. Weitere Informationen zu Hash Algorithmen finden Sie im Abschnitt `CryptoAPI` von Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].
 
- Rufen Sie zum Abrufen der tatsächlichen Prüfsumme Bytes für die Quelldatei der [idiasourcefile:: Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) Methode.
+ Rufen Sie die [IDiaSourceFile:: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) -Methode auf, um die tatsächlichen Prüfsummen Bytes für die Quelldatei abzurufen.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

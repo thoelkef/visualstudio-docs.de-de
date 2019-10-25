@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785955"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652965"
 ---
 # <a name="load-test-scenario-properties"></a>Eigenschaften von Auslastungstestszenarios
 
@@ -32,10 +32,10 @@ ms.locfileid: "62785955"
 
 |Eigenschaft|Definition|
 |-|----------------|
-|**Browsermix**|Gibt den Webbrowsermix für den Auslastungstest an. Sie können verschiedene Webbrowsertypen und ihre Auslastungsverteilung angeben.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)**, um das Dialogfeld **Browsermischung bearbeiten** zu öffnen, und wählen Sie mithilfe von **Hinzufügen** und **Entfernen** die Webbrowsertypen im Auslastungstest aus.<br /><br />Weitere Informationen finden Sie unter [Angeben von Webbrowsertypen](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
-|**Netzwerkmischung**|Gibt die Netzwerkmischung für den Auslastungstest an. Sie können angeben, welche Netzwerktypen eingeschlossen werden sollen, und ihre Auslastungsverteilung festlegen.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)**, um das Dialogfeld **Netzwerkmischung bearbeiten** zu öffnen, und wählen Sie mithilfe von **Hinzufügen** und **Entfernen** die Netzwerktypen im Auslastungstest aus.<br /><br />Weitere Informationen finden Sie unter [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
-|**Testmischung**|Gibt die Mischung der Webleistungs- und Komponententests für den Auslastungstest an. Sie können angeben, welche Tests eingeschlossen werden sollen, und ihre Auslastungsverteilung festlegen.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)**, um das Dialogfeld **Testmischung bearbeiten** zu öffnen, und wählen Sie mithilfe von **Hinzufügen** und **Entfernen** die Tests im Auslastungstest aus.<br /><br />Weitere Informationen finden Sie unter [Editing the Test Mix for a Load Test Scenario (Bearbeiten der Testmischung für ein Auslastungstestszenario)](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
-|**Testmischungstyp**|Gibt das Testmischungsmodell für den Auslastungstest an.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)**, um das Dialogfeld **Testmischung bearbeiten** zu öffnen, und wählen Sie aus dem Dropdownmenü unter **Testmischungsmodell** das Testmischungsmodell aus, das im Auslastungstest verwendet werden soll.<br /><br />Weitere Informationen finden Sie unter [Editing Test Mix Models (Bearbeiten von Testmischungsmodellen)](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).|
+|**Browsermix**|Gibt den Webbrowsermix für den Auslastungstest an. Sie können verschiedene Webbrowsertypen und ihre Auslastungsverteilung angeben.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)** , um das Dialogfeld **Browsermischung bearbeiten** zu öffnen, und wählen Sie mithilfe von **Hinzufügen** und **Entfernen** die Webbrowsertypen im Auslastungstest aus.<br /><br />Weitere Informationen finden Sie unter [Angeben von Webbrowsertypen](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
+|**Netzwerkmischung**|Gibt die Netzwerkmischung für den Auslastungstest an. Sie können angeben, welche Netzwerktypen eingeschlossen werden sollen, und ihre Auslastungsverteilung festlegen.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)** , um das Dialogfeld **Netzwerkmischung bearbeiten** zu öffnen, und wählen Sie mithilfe von **Hinzufügen** und **Entfernen** die Netzwerktypen im Auslastungstest aus.<br /><br />Weitere Informationen finden Sie unter [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
+|**Testmischung**|Gibt die Mischung der Webleistungs- und Komponententests für den Auslastungstest an. Sie können angeben, welche Tests eingeschlossen werden sollen, und ihre Auslastungsverteilung festlegen.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)** , um das Dialogfeld **Testmischung bearbeiten** zu öffnen, und wählen Sie mithilfe von **Hinzufügen** und **Entfernen** die Tests im Auslastungstest aus.<br /><br />Weitere Informationen finden Sie unter [Editing the Test Mix for a Load Test Scenario (Bearbeiten der Testmischung für ein Auslastungstestszenario)](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
+|**Testmischungstyp**|Gibt das Testmischungsmodell für den Auslastungstest an.<br /><br />Klicken Sie auf die Schaltfläche mit den Auslassungspunkten **(…)** , um das Dialogfeld **Testmischung bearbeiten** zu öffnen, und wählen Sie aus dem Dropdownmenü unter **Testmischungsmodell** das Testmischungsmodell aus, das im Auslastungstest verwendet werden soll.<br /><br />Weitere Informationen finden Sie unter [Editing Test Mix Models (Bearbeiten von Testmischungsmodellen)](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).|
 
 ## <a name="options"></a>Optionen
 

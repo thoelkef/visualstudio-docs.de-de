@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_program | Microsoft-Dokumentation'
+title: 'IDiaFrameData:: get_program | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b893a40172bfd806130bef663da8676b513042
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 135f2b0a042dd74b573a0746831a48fb27e7c2a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832837"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743517"
 ---
-# <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
-Ruft ab, die Programm-Zeichenfolge, die zum Berechnen der Registrierung festlegen, bevor der Aufruf von der aktuellen Funktion verwendet wird.
+# <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
+Ruft die Programm Zeichenfolge ab, die verwendet wird, um den Register Satz vor dem aufgerufenen der aktuellen Funktion zu berechnen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,23 +33,23 @@ HRESULT get_program ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Die Programm-Zeichenfolge zurückgegeben.
+vorgenommen Gibt die Programm Zeichenfolge zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Hinweise
- Die Programm-Zeichenfolge ist eine Sequenz von Makros, die den Prolog gewahrt interpretiert wird. Beispielsweise können ein typisches Stapelrahmen die Programm-Zeichenfolge `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Das Format ist reverse Polnisch-Notation, in dem die Operatoren mit Operanden folgen. `T0` Stellt eine temporäre Variable auf dem Stapel dar. In diesem Beispiel führt die folgenden Schritte aus:
+ Die Programm Zeichenfolge ist eine Sequenz von Makros, die zum Erstellen des Prologs interpretiert wird. Beispielsweise kann ein typischer Stapel Rahmen die Programm Zeichenfolge `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="` verwenden. Das Format ist die umgekehrte polnische Notation, bei der die Operatoren den Operanden folgen. `T0` stellt eine temporäre Variable im Stapel dar. In diesem Beispiel werden die folgenden Schritte ausgeführt:
 
-1. Verschieben von Inhalt des Registers `ebp` zu `T0`.
+1. Verschieben Sie den Inhalt von Register `ebp` in `T0`.
 
-2. Hinzufügen `4` mit dem Wert im `T0` erzeugen eine Adresse, rufen Sie den Wert von dieser Adresse und speichern Sie den Wert im Register `eip`.
+2. Fügen Sie `4` dem Wert in `T0` hinzu, um eine Adresse zu erhalten, den Wert von dieser Adresse zu erhalten und den Wert in Register `eip` zu speichern.
 
-3. Ruft den Wert aus der Adresse im `T0` und speichern Sie diesen Wert im Register `ebp`.
+3. Legen Sie den Wert aus der in `T0` gespeicherten Adresse ab, und speichern Sie diesen Wert in Register `ebp`.
 
-4. Hinzufügen `8` mit dem Wert im `T0` und speichern Sie diesen Wert im Register `esp`.
+4. Fügen Sie `8` dem Wert in `T0` hinzu, und speichern Sie diesen Wert in Register `esp`.
 
-   Beachten Sie, dass die Programm-Zeichenfolge für die CPU und auf die Aufrufkonvention für die Funktion, die durch den aktuellen Stapelrahmen dargestellt eingerichtet ist.
+   Beachten Sie, dass die Programm Zeichenfolge für die CPU und die Aufruf Konvention spezifisch ist, die für die durch den aktuellen Stapel Rahmen dargestellte Funktion eingerichtet ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

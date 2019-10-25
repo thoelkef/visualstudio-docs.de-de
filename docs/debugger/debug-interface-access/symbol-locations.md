@@ -1,5 +1,5 @@
 ---
-title: Speicherorte für Symboldateien | Microsoft-Dokumentation
+title: Symbol Speicherorte | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc8ed99cad2fb0806c7072b1b2f494aa60e967c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f972d0d072aa36cab608c85305588f6bbd5d47d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854765"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738538"
 ---
 # <a name="symbol-locations"></a>Symbolspeicherorte
-Die meisten Symbole haben einen definierten Speicherort in der Abbilddatei an. Ein Symbol für den Speicherort wird angegeben, mit einem Wert aus der [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) Enumeration. Das Symbol unterstützen möglicherweise weitere Eigenschaften abhängig von ihrem Speicherort.
+Die meisten Symbole haben einen definierten Speicherort innerhalb der Bilddatei. Der Speicherort eines Symbols wird mit einem Wert aus der [LocationType](../../debugger/debug-interface-access/locationtype.md) -enumerationsenumeration angegeben. Abhängig von ihrem Speicherort unterstützt das Symbol möglicherweise zusätzliche Eigenschaften.
 
- Die folgende Tabelle zeigt die am häufigsten Typen und deren zusätzlichen Eigenschaften verwendeten.
+ In der folgenden Tabelle werden die am häufigsten verwendeten Speicherort Typen und die zugehörigen zusätzlichen Eigenschaften angezeigt.
 
 |Standorttyp|Zusätzliche Eigenschaften|
 |-------------------|---------------------------|
-|`LocIsNull`|none|
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol:: Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (sofern es sich um eine relative virtuelle Adressen aktiviert sind)<br /><br /> [Idiasymbol:: Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (wenn die Abbildbasis zu ungleich NULL festgelegt wurde)|
+|`LocIsNull`|Keine|
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymmetribol:: get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (wenn relative virtuelle Adressen aktiviert sind)<br /><br /> [Idiasymmetribol:: get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (wenn die Bildbasis auf einen Wert ungleich NULL festgelegt wurde)|
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|

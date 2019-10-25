@@ -10,17 +10,17 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459116"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634532"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Vorgehensweise: Verwenden von 3D-Objekten in Spielen oder Apps
 
@@ -71,9 +71,9 @@ Nachstehend sind die drei Elementtypen für die Inhaltspipeline und ihre zugeord
 
 |Elementtyp|Typen der Quelldatei|Format der Ausgabedatei|
 |---------------| - | - |
-|**Bildinhaltspipeline**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
-|**Meshinhaltspipeline**|AutoDesk FBX-Austauschdatei (*.fbx*)<br /><br /> Collada DAE-Datei (*.dae*)<br /><br /> Wavefront OBJ-Datei (*.obj*)|3D-Mesh-Datei (*.cmo*)|
-|**Shaderinhaltspipeline**|Visual Shader-Diagramm (*.dgsl*)|Compiled Shader Output (*.cso*)|
+|**Bildinhaltspipeline**|Portable Network Graphics ( *.png*)<br /><br /> JPEG ( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface ( *.dds*)<br /><br /> Graphics Interchange Format ( *.gif*)<br /><br /> Bitmap ( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format ( *.tif*, *.tiff*)<br /><br /> Targa ( *.tga*)|DirectDraw Surface ( *.dds*)|
+|**Meshinhaltspipeline**|AutoDesk FBX-Austauschdatei ( *.fbx*)<br /><br /> Collada DAE-Datei ( *.dae*)<br /><br /> Wavefront OBJ-Datei ( *.obj*)|3D-Mesh-Datei ( *.cmo*)|
+|**Shaderinhaltspipeline**|Visual Shader-Diagramm ( *.dgsl*)|Compiled Shader Output ( *.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Konfigurieren der Eigenschaften von Objektinhaltspipelines
 
@@ -95,7 +95,7 @@ Sie können die Eigenschaften der Inhaltspipeline für jede Ressourcendatei fest
 
 Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines verwenden, können Sie die Textur auf verschiedene Arten komprimieren. Und Sie können angeben, ob MIP-Ebenen zum Zeitpunkt der Erstellung generiert werden sollen, und den Namen der Ausgabedatei angeben.
 
-|Eigenschaft|Beschreibung|
+|Eigenschaft|BESCHREIBUNG|
 |--------------|-----------------|
 |**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Die folgenden Optionen sind verfügbar:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja**, um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
@@ -106,7 +106,7 @@ Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines
 
 Wenn Sie das Tool für Mesh-Inhaltspipelines verwenden, um eine Meshressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Eigenschaft|Beschreibung|
+|Eigenschaft|BESCHREIBUNG|
 |--------------|-----------------|
 |**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
@@ -114,7 +114,7 @@ Wenn Sie das Tool für Mesh-Inhaltspipelines verwenden, um eine Meshressource zu
 
 Wenn Sie das Tool für Shader-Inhaltspipelines verwenden, um eine Shader-Ressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Eigenschaft|Beschreibung|
+|Eigenschaft|BESCHREIBUNG|
 |--------------|-----------------|
 |**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
@@ -211,7 +211,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
 |[Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|

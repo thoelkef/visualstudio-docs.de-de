@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Searchforreturnaddress | Microsoft-Dokumentation'
+title: 'IDiaStackWalkFrame:: searchForReturnAddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40437dfe6d7b8d46a3850f55f181ecd0c3745b70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1060d5ffce3abc8596b896ef227f72993219f57
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831953"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741463"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-Sucht den angegebenen Stapelrahmen für die nächste Funktion Absenderadresse an.
+Durchsucht den angegebenen Stapel Rahmen nach der nächstgelegenen Rückgabeadresse der Funktion.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT searchForReturnAddress ( 
 #### <a name="parameters"></a>Parameter
  `frame`
 
-[in] Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den aktuellen Stapelrahmen darstellt.
+in Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) -Objekt, das den aktuellen Stapel Rahmen darstellt.
 
  `returnAddress`
 
-[out] Gibt die nächste Funktion Rücksendeadresse an.
+vorgenommen Gibt die nächste Funktions Rückgabeadresse zurück.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

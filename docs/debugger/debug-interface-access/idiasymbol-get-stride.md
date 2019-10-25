@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_stride | Microsoft-Dokumentation
+title: 'Idiasymmetribol:: get_stride | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c581668668a208a9bcf35a1b39d1b3d384a4f8a3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1ff294e45404d312d445c4b76f05cc3e0d7dd95
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841613"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739291"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
-Ruft ab, der Sprung des der Matrix oder strided Array.
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
+Ruft den Schritt der Matrix oder des stricherten Arrays ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,10 +30,10 @@ HRESULT get_stride(
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Ein Zeiger auf eine `DWORD` , die das Segment enthält.
+vorgenommen Ein Zeiger auf eine `DWORD`, die den Schritt enthält.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird `S_FALSE` oder ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

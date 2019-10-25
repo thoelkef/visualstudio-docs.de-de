@@ -1,5 +1,5 @@
 ---
-title: Vergleichen des Projektordners mit dem Datenquellen-Steuerelement Store | Microsoft-Dokumentation
+title: Projektordner mit Quellcode-Steuerungs Speicher vergleichen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d675868e10a99a192681c52495ad3b37e384d390
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 45bd5b105a2fd24078bc85d8cf5b044351cd78be
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350704"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726126"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Optionaler Vergleich des lokalen Projektordners mit dem Speicher der Quellcodeverwaltung
-Steuern Sie in der Quelle der Vergleich zwischen dem lokalen Projektordner und die Datenquellen-Steuerelements erreicht wird, indem Sie mithilfe der Funktionen-Plug-in-API-1.2 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) und [SccDirDiff](../../extensibility/sccdirdiff-function.md).
+In der Quellcodeverwaltungs-Plug-in-API 1,2 wird der Vergleich zwischen dem lokalen Projektordner und der Quell Code Verwaltung mithilfe der Funktionen [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) und [sccdirdiff](../../extensibility/sccdirdiff-function.md)durchgeführt.
 
- In **Projektmappen-Explorer**, wenn ein Ordner, anstatt eine einzelne Datei ausgewählt ist, die **Versionsvergleich** Kontextmenü Ruft die neue [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) und [ SccDirDiff](../../extensibility/sccdirdiff-function.md) in das Quellcodeverwaltungs-Plug-in.
+ Wenn Sie in **Projektmappen-Explorer**einen Ordner anstelle einer einzelnen Datei auswählen, ruft das Kontextmenü für die **Vergleichs Versionen** das neue [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) -und [sccdirdiff](../../extensibility/sccdirdiff-function.md) -Element im Quellcodeverwaltungs-Plug-in auf.
 
-## <a name="new-capability-flags"></a>Neue Funktionsflags
+## <a name="new-capability-flags"></a>Neue funktionsflags
  `SCC_CAP_DIRECTORYDIFF`
 
  `SCC_CAP_DIRECTORYCHECKOUT`
@@ -33,10 +33,10 @@ Steuern Sie in der Quelle der Vergleich zwischen dem lokalen Projektordner und d
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- Die `SccDirQueryInfo` Funktion wird aufgerufen, bevor `SccDirDiff` zu bestimmen, ob das Arbeitsverzeichnis der quellcodeverwaltung unterliegende ist. Die `SccDirDiff` Funktion zeigt die Unterschiede zwischen der aktuellen lokalen Verzeichnis und den entsprechenden Quellcode-Verwaltungsordner an. Dieser Befehl fordert das Quellcodeverwaltungs-Plug-in die Liste der Änderungen in das Verzeichnis anzuzeigen. Ein Quellcodeverwaltungs-Plug-in bietet eine eigene Benutzeroberfläche zum Anzeigen der Unterschiede.
+ Die `SccDirQueryInfo`-Funktion wird vor `SccDirDiff` aufgerufen, um zu bestimmen, ob das Arbeitsverzeichnis Quell gesteuert ist. Die `SccDirDiff`-Funktion zeigt die Unterschiede zwischen dem aktuellen lokalen Verzeichnis und dem entsprechenden Ordner für die Quell Code Verwaltung an. Dieser Befehl fordert das Quellcodeverwaltungs-Plug-in auf, die Liste der Änderungen im Verzeichnis anzuzeigen. Ein Quellcodeverwaltungs-Plug-in stellt eine eigene Benutzeroberfläche zum Anzeigen der Unterschiede bereit.
 
 > [!NOTE]
-> Diese Funktion verwendet die gleichen Befehlsflags als [SccDiff](../../extensibility/sccdiff-function.md). Als ein Plug-in-Quellcodeverwaltungsanbieter können Sie die "schnelle Diff"-Vorgang für Verzeichnisse wird nicht unterstützt.
+> Diese Funktion verwendet die gleichen [Befehlsflags wie sccdiff](../../extensibility/sccdiff-function.md). Als Anbieter von Quellcodeverwaltungs-Plug-Ins können Sie den Vorgang für die schnelle diff-Ausführung für Verzeichnisse nicht unterstützen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -2,17 +2,17 @@
 title: Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824483"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665325"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 
@@ -27,11 +27,11 @@ Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des P
 - Wenn keine *App.config*-Datei in Ihrem Testprojekt vorhanden ist, gehen Sie folgendermaßen vor:
 
    1. Ermitteln Sie, welcher *QTAgent\*.exe*-Prozess gestartet wird, wenn Sie den Test ausführen. Eine Möglichkeit hierzu ist beispielsweise die Beobachtung der Registerkarte **Details** im Windows-**Task-Manager**.
-   
+
    2. Öffnen Sie die entsprechende *.config*-Datei im Ordner *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<Version>\\\<Edition>\Common7\IDE*. Wenn der ausgeführte Prozess beispielsweise *QTAgent_40.exe* ist, öffnen Sie die Datei *QTAgent_40.exe.config*.
 
    2. Ändern Sie den Wert für **EqtTraceLevel** auf die gewünschte Protokollierungsebene.
-   
+
       ```xml
       <!-- You must use integral values for "value".
            Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->

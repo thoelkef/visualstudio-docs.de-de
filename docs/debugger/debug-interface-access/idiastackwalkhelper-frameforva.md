@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::frameForVA | Microsoft-Dokumentation
+title: 'IDiaStackWalkHelper:: frameForVA | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28d9a7762cac1a63b40fa34118d4076403120763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838027"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741428"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-Ruft ab den Stapelrahmen, der die angegebene virtuelle Adresse enthält.
+Ruft den Stapel Rahmen ab, der die angegebene virtuelle Adresse enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,14 +34,14 @@ HRESULT frameForVA( 
 #### <a name="parameters"></a>Parameter
  `va`
 
-[in] Die virtuelle Adresse für die Framedaten.
+in Die virtuelle Adresse für die Rahmendaten.
 
  `ppFrame`
 
-[out] Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den Stapelrahmen an der angegebenen Adresse darstellt.
+vorgenommen Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) -Objekt, das den Stapel Rahmen bei der angegebenen Adresse darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK` zurückgegeben. Andernfalls wird ein Fehlercode zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
