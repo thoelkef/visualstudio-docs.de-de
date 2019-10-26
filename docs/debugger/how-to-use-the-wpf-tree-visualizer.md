@@ -16,17 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731920"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888403"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Gewusst wie: Verwenden des WPF Tree Visualizer (WPF-Strukturschnellansicht)
 Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um die visuelle Struktur eines WPF-Objekts zu untersuchen und die WPF-Abhängigkeitseigenschaften für die Objekte anzuzeigen, die in dieser Struktur enthalten sind. Weitere Informationen zu visuellen Bäumen finden Sie Unterstrukturen [in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Weitere Informationen zu Abhängigkeits Eigenschaften finden Sie unter [Übersicht über Abhängigkeits Eigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
  Wenn Sie die WPF-Struktur Schnellansicht öffnen, werden zwei Bereiche angezeigt: die **visuelle** Struktur auf der linken Seite und die **Eigenschaften von** _Name_ **:** _Typbereich_ auf der rechten Seite. Wählen Sie im **visuellen** Strukturbereich ein beliebiges Objekt aus, und die **Eigenschaften des** _Bereichs Name_ **:** _Typ_ werden automatisch aktualisiert, um die Eigenschaften für dieses Objekt anzuzeigen.
+
+ > [!NOTE]
+ > Sie können auch den visuellen [livebaum und den Live-Eigenschaften-Explorer](../xaml-tools/inspect-xaml-properties-while-debugging.md) verwenden, um die visuelle Struktur von WPF-Objekten zu untersuchen. Die WPF-Struktur Schnellansicht ist ein Legacy Feature und befindet sich nicht in der aktiven Entwicklung.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>So öffnen Sie die WPF-Strukturschnellansicht
 
