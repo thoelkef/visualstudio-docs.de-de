@@ -9,23 +9,23 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 2f63872d3578a8abe03887bfc8bf188ba83f0b1d
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624078"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911648"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Erstellen von Filterzeichenfolgen für den Tabellen-Designer
 ## <a name="overview"></a>Übersicht
-Wenn Sie Daten in einer Azure-Tabelle filtern möchten, die im **Tabellen-Designer** von Visual Studio angezeigt wird, müssen Sie eine Filterzeichenfolge erstellen und in das Filterfeld eingeben. Die Syntax der Filterzeichenfolge wird von den WCF Data Services definiert und ist mit einer SQL WHERE-Klausel vergleichbar. Sie wird jedoch über eine HTTP-Anforderung an den Tabellenspeicherdienst gesendet. Der **Tabellen-Designer** nimmt die erforderliche Codierung vor, sodass Sie zum Filtern nach einem gewünschten Eigenschaftswert nur den Eigenschaftennamen, den Vergleichsoperator, den Kriterienwert und optional einen booleschen Operator im Filterfeld eingeben müssen. Die $filter-Abfrageoption muss nicht eingeschlossen werden, wie es beim Erstellen einer URL zur Tabellenabfrage über die [Referenz zur REST-API der Speicherdienste](http://go.microsoft.com/fwlink/p/?LinkId=400447) notwendig wäre.
+Wenn Sie Daten in einer Azure-Tabelle filtern möchten, die im **Tabellen-Designer** von Visual Studio angezeigt wird, müssen Sie eine Filterzeichenfolge erstellen und in das Filterfeld eingeben. Die Syntax der Filterzeichenfolge wird von den WCF Data Services definiert und ist mit einer SQL WHERE-Klausel vergleichbar. Sie wird jedoch über eine HTTP-Anforderung an den Tabellenspeicherdienst gesendet. Der **Tabellen-Designer** nimmt die erforderliche Codierung vor, sodass Sie zum Filtern nach einem gewünschten Eigenschaftswert nur den Eigenschaftennamen, den Vergleichsoperator, den Kriterienwert und optional einen booleschen Operator im Filterfeld eingeben müssen. Die $filter-Abfrageoption muss nicht eingeschlossen werden, wie es beim Erstellen einer URL zur Tabellenabfrage über die [Referenz zur REST-API der Speicherdienste](/rest/api/storageservices/) notwendig wäre.
 
-Die WCF Data Services basieren auf dem [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Einzelheiten zur Filtersystemabfrage-Option ( **$filter**) finden Sie in der [Spezifikation zu OData URI Conventions](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+Die WCF Data Services basieren auf dem [Open Data Protocol](https://www.odata.org/) (OData). Einzelheiten zur Filtersystemabfrage-Option ( **$filter**) finden Sie in der [Spezifikation zu OData URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Vergleichsoperatoren
 Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstützt:
 
-| Logischer Operator | BESCHREIBUNG | Filterzeichenfolge (Beispiel) |
+| Logischer Operator | Beschreibung | Filterzeichenfolge (Beispiel) |
 | --- | --- | --- |
 | eq |Gleich |Ort eq 'Redmond' |
 | gt |Größer als |Preis gt 20 |
@@ -33,7 +33,7 @@ Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstü
 | lt |Kleiner als |Preis lt 20 |
 | le |Kleiner oder gleich |Preis le 100 |
 | ne |Ungleich |Ort ne 'London' |
-| und |und |Preis le 200 and Preis gt 3,5 |
+| und |And |Preis le 200 and Preis gt 3,5 |
 | oder |Or |Preis le 3,5 or Preis gt 200 |
 | not |not |not isAvailable |
 
@@ -41,7 +41,7 @@ Wenn Sie eine Filterzeichenfolge erstellen, sind die folgenden Regeln wichtig:
 
 * Verwenden Sie die logischen Operatoren, um eine Eigenschaft mit einem Wert zu vergleichen. Es ist nicht möglich, eine Eigenschaft mit einem dynamischen Wert zu vergleichen; eine Seite des Ausdrucks muss eine Konstante sein.
 * Bei allen Teilen der Filterzeichenfolge ist die Groß-/Kleinschreibung zu beachten.
-* Der konstante Wert muss den gleichen Datentyp besitzen wie die Eigenschaft, damit vom Filter gültige Ergebnisse zurückgegeben werden. Weitere Informationen zu unterstützten Eigenschaftentypen finden Sie unter [Grundlegendes zum Tabellenspeicherdienst-Datenmodell](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Der konstante Wert muss den gleichen Datentyp besitzen wie die Eigenschaft, damit vom Filter gültige Ergebnisse zurückgegeben werden. Weitere Informationen zu unterstützten Eigenschaftentypen finden Sie unter [Grundlegendes zum Tabellenspeicherdienst-Datenmodell](/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
 
 ## <a name="filtering-on-string-properties"></a>Filtern nach Zeichenfolgeneigenschaften
 Wenn Sie nach Zeichenfolgeneigenschaften filtern, schließen Sie die Zeichenfolgenkonstante in einfache Anführungszeichen ein.
@@ -101,7 +101,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtern nach DateTime-Eigenschaften
-Um nach einem DateTime-Wert zu filtern, geben Sie das Schlüsselwort **datetime** an, auf das die Datums-/Uhrzeitkonstante in einfachen Anführungszeichen folgt. Die Datum-/Uhrzeitkonstante muss im kombiniertem UTC-Format vorliegen, wie in [Formatieren von DateTime-Eigenschaftswerten](http://go.microsoft.com/fwlink/p/?LinkId=400449)beschrieben.
+Um nach einem DateTime-Wert zu filtern, geben Sie das Schlüsselwort **datetime** an, auf das die Datums-/Uhrzeitkonstante in einfachen Anführungszeichen folgt. Die Datum-/Uhrzeitkonstante muss im kombiniertem UTC-Format vorliegen, wie in [Formatieren von DateTime-Eigenschaftswerten](/rest/api/storageservices/Formatting-DateTime-Property-Values)beschrieben.
 
 Im folgenden Beispiel werden Entitäten zurückgegeben, bei denen die CustomerSince-Eigenschaft gleich dem 10. Juli 2008 ist:
 

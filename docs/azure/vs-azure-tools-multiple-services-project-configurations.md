@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253433"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911808"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -55,7 +55,7 @@ Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-
 
 ## <a name="settings-page"></a>Seite „Einstellungen“
 
-Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. Code, der in der Rolle ausgeführt wird, kann die Werte der Konfigurationseinstellungen zur Laufzeit mithilfe von Klassen lesen, die von der [verwalteten Azure-Bibliothek](http://go.microsoft.com/fwlink?LinkID=171026)bereitgestellt werden, insbesondere die [getconfigurationsettingvalue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) -Methode.
+Auf der Seite **Einstellungen** Seite können Sie einer Konfiguration Einstellungen als Name/Wert-Paare hinzufügen. Code, der in der Rolle ausgeführt wird, kann die Werte der Konfigurationseinstellungen zur Laufzeit mithilfe von Klassen lesen, die von der [verwalteten Azure-Bibliothek](/previous-versions/azure/dn602775(v=azure.11))bereitgestellt werden, insbesondere die [getconfigurationsettingvalue](/previous-versions/azure/reference/ee772857(v=azure.100)) -Methode.
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurieren einer Verbindungszeichenfolge für ein Speicherkonto
 
@@ -95,7 +95,7 @@ Sie können die Eigenschaftenseite **Lokaler Speicher** verwenden, um mindestens
 
 ## <a name="certificates-page"></a>Seite "Zertifikate"
 
-Auf der Eigenschaftenseite **Zertifikate** werden der Dienstkonfiguration Informationen zu den Zertifikaten hinzugefügt. Die Zertifikate sind im Dienstpaket nicht enthalten, sondern müssen über das [Azure-Portal](http://portal.azure.com) gesondert in Azure hochgeladen werden.
+Auf der Eigenschaftenseite **Zertifikate** werden der Dienstkonfiguration Informationen zu den Zertifikaten hinzugefügt. Die Zertifikate sind im Dienstpaket nicht enthalten, sondern müssen über das [Azure-Portal](https://portal.azure.com) gesondert in Azure hochgeladen werden.
 
 Durch das Hinzufügen eines Zertifikats hier werden der Dienstkonfiguration Informationen zu den Zertifikaten hinzugefügt. Zertifikate sind nicht im Dienst enthalten. Sie müssen Ihre Zertifikate separat über das Azure-Portal hochladen.
 

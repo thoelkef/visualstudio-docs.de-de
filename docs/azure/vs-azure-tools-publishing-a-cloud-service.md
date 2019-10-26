@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 440e5198cf05168cffb43ba8c81453413e7754dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ae6449613d273c6e0f8302b8a0b604fe91ebc847
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572303"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911755"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Veröffentlichen eines Clouddiensts unter Verwendung von Visual Studio
 
@@ -31,9 +31,9 @@ Verwenden Sie die folgenden Verfahren zum Veröffentlichen der Azure-Anwendung u
 
 Wenn Sie Ihre Azure-Anwendung veröffentlichen, können Sie eine der folgenden Aufgaben ausführen:
 
-- Erstellen eines Dienstpakets: Sie können dieses Paket und die Dienstkonfigurationsdatei verwenden, um Ihre Anwendung über das [Azure-Portal](https://portal.azure.com) in einer Bereitstellungsumgebung zu veröffentlichen.
+- Erstellen eines Dienst Pakets: Sie können dieses Paket und die Dienst Konfigurationsdatei verwenden, um die Anwendung aus der [Azure-Portal](https://portal.azure.com)in einer Bereitstellungs Umgebung zu veröffentlichen.
 
-- Veröffentlichen Ihres Azure-Projekts über Visual Studio: Verwenden Sie den Veröffentlichungs-Assistenten, um die Anwendung direkt in Azure zu veröffentlichen. Informationen hierzu finden Sie unter [Assistent zur Veröffentlichung einer Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md).
+- Veröffentlichen des Azure-Projekts in Visual Studio: Verwenden Sie den Webpublishing-Assistenten, um Ihre Anwendung direkt in Azure zu veröffentlichen. Informationen hierzu finden Sie unter [Assistent zur Veröffentlichung einer Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>So erstellen Sie ein Dienstpaket in Visual Studio
 
@@ -67,13 +67,13 @@ Wenn die Back-End-Infrastruktur Ihrer App stabil ist, aber die Webrollen eine h�
 
 ### <a name="requirements-for-using-web-deploy"></a>Anforderungen für die Verwendung von Web Deploy
 
-- **Nur für Entwicklungs- und Testzwecke:** Die Änderungen werden direkt auf dem virtuellen Computer vorgenommen, auf dem die Webrolle ausgeführt wird. Wenn dieser virtuelle Computer recycelt werden muss, gehen die Änderungen verloren, da das von Ihnen veröffentlichte Originalpaket zum Neuerstellen des virtuellen Computers für die Rolle verwendet wird. Veröffentlichen Sie Ihre Anwendung erneut, um die aktuellen Änderungen für die Webrolle zu erhalten.
+- **Nur für Entwicklungs-und Testzwecke**: die Änderungen werden direkt an dem virtuellen Computer vorgenommen, auf dem die webrolle ausgeführt wird. Wenn dieser virtuelle Computer recycelt werden muss, gehen die Änderungen verloren, da das von Ihnen veröffentlichte Originalpaket zum Neuerstellen des virtuellen Computers für die Rolle verwendet wird. Veröffentlichen Sie Ihre Anwendung erneut, um die aktuellen Änderungen für die Webrolle zu erhalten.
 
-- **Nur Webrollen können aktualisiert werden:** Workerrollen können nicht aktualisiert werden. Darüber hinaus kann `RoleEntryPoint` in `web role.cs` nicht aktualisiert werden.
+- **Nur Webrollen können aktualisiert werden**: workerrollen können nicht aktualisiert werden. Darüber hinaus kann `RoleEntryPoint` in `web role.cs` nicht aktualisiert werden.
 
-- **Unterstützt nur eine einzelne Instanz einer Webrolle:** Sie können in Ihrer Bereitstellungsumgebung nicht mehrere Instanzen einer Webrolle nutzen. Mehrere Webrollen jeweils mit einer Instanz werden aber unterstützt.
+- **Unterstützt nur eine einzelne Instanz einer webrolle**: in ihrer Bereitstellungs Umgebung können nicht mehrere Instanzen einer webrolle vorhanden sein. Mehrere Webrollen jeweils mit einer Instanz werden aber unterstützt.
 
-- **Remotedesktopverbindungen aktivieren:** Bei dieser Anforderung können für Web Deploy der Benutzer und das Kennwort verwendet werden, um eine Verbindung mit dem virtuellen Computer herzustellen. Über diese Verbindung werden die Änderungen auf dem Server bereitgestellt, auf dem Internetinformationsdienste (IIS) ausgeführt wird. Außerdem kann es erforderlich sein, eine Verbindung mit dem virtuellen Computer herzustellen, um auf diesem virtuellen Computer ein vertrauenswürdiges Zertifikat für IIS hinzuzufügen. (Mit diesem Zertifikat wird sichergestellt, dass die von Web Deploy verwendete Remoteverbindung für IIS sicher ist.)
+- **Remote Desktop Verbindungen aktivieren**: bei dieser Anforderung können Web deploy den Benutzer und das Kennwort verwenden, um eine Verbindung mit dem virtuellen Computer herzustellen, um die Änderungen auf dem Server bereitzustellen, auf dem Internetinformationsdienste (IIS) ausgeführt wird. Außerdem kann es erforderlich sein, eine Verbindung mit dem virtuellen Computer herzustellen, um auf diesem virtuellen Computer ein vertrauenswürdiges Zertifikat für IIS hinzuzufügen. (Mit diesem Zertifikat wird sichergestellt, dass die von Web Deploy verwendete Remoteverbindung für IIS sicher ist.)
 
 Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azure-Anwendung veröffentlichen** verwenden.
 
@@ -120,7 +120,7 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
    a. Klicken Sie zum Herstellen einer Verbindung mit dem virtuellen Computer, auf dem die Webrolle ausgeführt wird, unter **Cloud-Explorer** oder **Server-Explorer** auf die Instanz der Webrolle. Wählen Sie anschließend den Befehl **Mithilfe von Remotedesktop verbinden**. Ausführliche Schritte zum Herstellen einer Verbindung mit dem virtuellen Computer finden Sie unter [Aktivieren einer Remotedesktopverbindung für eine Rolle in Azure Cloud Services mit Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). Im Browser wird eine Aufforderung zum Herunterladen einer `.rdp`-Datei angezeigt.
 
-   b. Öffnen Sie den Verwaltungsdienst im IIS-Manager, um ein SSL-Zertifikat hinzuzufügen. Aktivieren Sie SSL im IIS-Manager, indem Sie im **Aktionsbereich** den Link **Bindungen** öffnen. Das Dialogfeld **Sitebindung hinzufügen** wird angezeigt. Wählen Sie **Hinzufügen** und in der Dropdownliste **Typ** dann die Option „HTTPS“ aus. Wählen Sie in der Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das von einer Zertifizierungsstelle signiert wurde und das Sie in das Azure-Portal hochgeladen haben. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungseinstellungen für den Verwaltungsdienst](http://go.microsoft.com/fwlink/?LinkId=215824).
+   b. Öffnen Sie den Verwaltungsdienst im IIS-Manager, um ein SSL-Zertifikat hinzuzufügen. Aktivieren Sie SSL im IIS-Manager, indem Sie im **Aktionsbereich** den Link **Bindungen** öffnen. Das Dialogfeld **Sitebindung hinzufügen** wird angezeigt. Wählen Sie **Hinzufügen** und in der Dropdownliste **Typ** dann die Option „HTTPS“ aus. Wählen Sie in der Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das von einer Zertifizierungsstelle signiert wurde und das Sie in das Azure-Portal hochgeladen haben. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungseinstellungen für den Verwaltungsdienst](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Wenn Sie ein vertrauenswürdiges SSL-Zertifikat hinzufügen, wird die Warnung mit dem gelben Dreieck im **Veröffentlichungs-Assistenten**nicht mehr angezeigt.

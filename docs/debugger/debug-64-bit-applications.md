@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745581"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911586"
 ---
 # <a name="debug-64-bit-applications"></a>Debuggen von 64-Bit-Anwendungen
 Sie können eine 64-Bit-Anwendung debuggen, die auf dem lokalen Computer oder einem Remotecomputer ausgeführt wird.
@@ -54,7 +54,7 @@ Sie können eine 64-Bit-Anwendung debuggen, die auf dem lokalen Computer oder ei
 
 ## <a name="see-also"></a>Siehe auch
 
-- [64-Bit-Anwendungen](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
+- [64-Bit-Anwendungen](/dotnet/framework/64-bit-apps)
 - [Configuring Programs for 64-Bit (Konfigurieren von Programmen für 64-Bit)](/cpp/build/configuring-programs-for-64-bit-visual-cpp)
 - [Visual Studio-IDE-64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)
 - [Speichern von Dumpdateien](../debugger/using-dump-files.md)
