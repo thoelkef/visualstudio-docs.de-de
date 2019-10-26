@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925361"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911420"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace-FunktionenC#(, Visual Basic C++,)
 
-Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwendung aufzuzeichnen, mit deren Hilfe Sie den Status (Aufruflisten- und lokale Variablenwerte) zu unterschiedlichen Punkten in der Ausführung ermitteln können. Starten Sie das Debugging wie gewohnt – IntelliTrace ist standardmäßig aktiviert, und im neuen Fenster **Diagnosetools** unter der Registerkarte **Ereignisse** werden Ihnen die von IntelliTrace erfassten Informationen angezeigt. Wählen Sie ein Ereignis aus, und klicken Sie auf **Verlaufsbezogenes Debugging aktivieren**, um die Aufrufliste und lokal erfasste Informationen für dieses Ereignis anzuzeigen.
+Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwendung aufzuzeichnen, mit deren Hilfe Sie den Status (Aufruflisten- und lokale Variablenwerte) zu unterschiedlichen Punkten in der Ausführung ermitteln können. Starten Sie das Debuggen wie gewohnt: IntelliTrace ist standardmäßig aktiviert, und Sie sehen, dass IntelliTrace im neuen **Diagnosetools** Fenster auf der Registerkarte " **Ereignisse** " aufgezeichnet wird. Wählen Sie ein Ereignis aus, und klicken Sie auf Verlaufs bezogenes **Debugging aktivieren.** , um die für dieses Ereignis aufgezeichnete aufrufsstapel und lokalen Variablen anzuzeigen.
 
-Eine Schritt-für-Schritt-Beschreibung finden [Sie unter Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+Eine detaillierte Beschreibung finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace ist verfügbar in Visual Studio Enterprise Edition, jedoch nicht in der Visual Studio Professional oder Community Edition.
 
@@ -123,7 +123,7 @@ Wenn Sie IntelliTrace-Daten in einer Datei speichern, erhalten Sie eine ITRACE-D
 
 ## <a name="forums"></a>Foren
 
-[Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Visual Studio Debugger](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>Videos
 

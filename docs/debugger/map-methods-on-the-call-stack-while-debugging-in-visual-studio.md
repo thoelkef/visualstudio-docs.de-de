@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fb77590a20b0e31648cab10f310851fd65820e
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 135c7c66c9c6602f8c2e32bbdc1ba6e2fd28f548
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179989"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911517"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Erstellen einer visuellen Karte der aufrufsstapel während desC#Debuggens C++(, Visual Basic,, JavaScript)
 
 Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell zu verfolgen. Sie können Notizen auf der Code Map vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
 
-Eine exemplarische Vorgehensweise finden Sie in diesem Video: [Video: Visuelles Debuggen mit der Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Eine exemplarische Vorgehensweise die diesem Video aus: [Video. Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 Ausführliche Informationen zu Befehlen und Aktionen, die Sie mit Code Maps verwenden können, finden Sie unter [Durchsuchen und Neuanordnen von Code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -53,9 +53,9 @@ Es folgt ein kurzer Blick auf eine Code Map:
 
 ## <a name="MapStack"></a> Abbilden der Aufrufliste
 
-1. Starten Sie in C#einem Visual Studio Enterprise- C++, Visual Basic-,-oder JavaScript-Projekt das Debuggen,indem Sie Debuggen > **Debuggen starten** auswählen
+1. Starten Sie in C#einem Visual Studio Enterprise- C++, Visual Basic-,-oder JavaScript-Projekt das Debuggen, indem **Sie Debuggen > ** **Debugging starten** oder **F5**drücken.
 
-1. Nachdem Ihre APP in den Unterbrechungs Modus wechselt oder Sie eine Funktion schrittweise ausführen, wählen Sie**Code Map** **Debuggen** > aus, oder drücken Sie **STRG**+**UMSCHALT**+ **`**
+1. Wenn die app in den Unterbrechungs Modus wechselt oder Sie eine Funktion schrittweise ausführen, wählen Sie > **Code Map** **Debuggen** , oder drücken Sie **STRG**+**UMSCHALT**+ **`** .
 
    Die aktuelle Aufrufliste wird in einer neuen Code Map orange dargestellt:
 
@@ -74,12 +74,12 @@ Um weitere Informationen zu einem Element zu erhalten, bewegen Sie den Mauszeige
 
 Standardmäßig wird nur Ihr eigener Code in der Zuordnung angezeigt. So zeigen Sie externen Code auf der Karte an:
 
-- Klicken Sie mit der rechten Maustaste in das Fenster "Fenster", und wählen Sie **externen Code anzeigen**:
+- Klicken Sie **mit der rechten** Maustaste in das Fenster "Fenster", und wählen Sie **externen Code anzeigen**:
 
   ![Anzeigen von externem Code mithilfe des Fensters "Fenster" aufrufen](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- Wählen Sie alternativ nur eigenen Code in Visual Studio- **Tools** **aktivieren** (oderDebuggen) > **Optionen** > **Debuggen**aus:
+- Deaktivieren Sie alternativ **nur eigenen Code** in Visual Studio- **Tools** aktivieren (oder **Debuggen**) > **Optionen** > **Debuggen**:
 
-  ![Externen Code mithilfe des Dialog] Felds "Optionen" anzeigen (../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
+  ![Externen Code mithilfe des Dialog Felds "Optionen" anzeigen](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>Steuern des Kartenlayouts
 
@@ -97,9 +97,9 @@ Im **Layoutmenü** können Sie folgende Aktionen ausführen:
 
 Sie können Kommentare hinzufügen, um zu verfolgen, was im Code geschieht.
 
-Um einen Kommentar hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Code Map, und wählen Sie**neuen Kommentar** **Bearbeiten** > aus, und geben Sie den Kommentar ein
+Um einen Kommentar hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Code Map, und wählen Sie > **neuen Kommentar** **Bearbeiten** aus, und geben Sie den Kommentar ein.
 
-Drücken**Sie** **UMSCHALT**+Taste, um eine neue Zeile in einem Kommentar hinzuzufügen.
+Um eine neue Zeile in einem Kommentar hinzuzufügen, drücken Sie **UMSCHALT**+**Eingabe**Taste.
 
  ![Kommentar zur aufrufsstapel auf Code Map hinzufügen](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
@@ -109,7 +109,7 @@ Wenn Sie die APP bis zum nächsten Breakpoint ausführen oder in eine Funktion s
 
 ![Code Map mit nächster aufrufsstapel aktualisieren](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-Wenn Sie verhindern möchten, dass die Zuordnung automatisch neue Aufruf Listen hinzufügt, wählen Sie auf der Symbolleiste Code Map die Option Aufruf Stapel ![Anzeigen auf Code Map automatisch](../debugger/media/debuggermap_automaticupdateicon.gif "Aufruf Listen auf Code Map anzeigen") aus. In der Karte werden auch weiterhin vorhandene Aufruf Listen hervorgehoben. Um die aktuelle Aufrufliste manuell zur Karte hinzufügen möchten, drücken Sie die **STRG**+**UMSCHALT**+ **`** .
+Um zu verhindern, dass die Zuordnung automatisch neue Aufruf Listen hinzufügt, wählen Sie auf der Code Map Symbolleiste ![automatisch Aufruf Stapel auf Code Map anzeigen](../debugger/media/debuggermap_automaticupdateicon.gif "Aufrufsstapel auf Code Map automatisch anzeigen") aus. In der Karte werden auch weiterhin vorhandene Aufruf Listen hervorgehoben. Wenn Sie die aktuelle aufrufsstapel der Zuordnung manuell hinzufügen möchten, drücken Sie **STRG**+**UMSCHALT**+ **`** .
 
 ## <a name="AddRelatedCode"></a> Hinzufügen von zugehörigem Code zur Code Map
 
@@ -117,9 +117,9 @@ Nachdem Sie nun über eine Karte verfügen, in C# oder Visual Basic, können Sie
 
 Um zur Definition einer Methode im Code zu wechseln, doppelklicken Sie auf die Methode in der Zuordnung, oder wählen Sie Sie aus, und drücken Sie **F12**, oder klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Gehe zu Definition**aus.
 
-Wechseln ![Sie zur Code Definition für eine Methode auf Code Map](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
+![Wechseln Sie zur Code Definition für eine Methode auf Code Map](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 
-Klicken Sie mit der rechten Maustaste auf eine Methode, und wählen Sie die Elemente aus, die Sie nachverfolgen möchten, um der Zuordnung Elemente hinzuzufügen, die Sie verfolgen möchten. Die zuletzt hinzugefügten Elemente werden grün dargestellt.
+Klicken Sie mit der rechten Maustaste auf eine Methode, und wählen Sie die Elemente aus, die Sie nachverfolgen möchten, um der Zuordnung Elemente hinzuzufügen, die Sie verfolgen möchten. Die zuletzt hinzugefügten Elemente werden grün angezeigt.
 
 ![Felder, die mit einer Methode in der Code Map der](../debugger/media/debuggermap_showedfields.png "DebuggerMap_ShowedFields")
 
@@ -143,7 +143,7 @@ Setzen Sie das Erstellen der Zuordnung fort, um weiteren Code anzuzeigen.
 
  Sie stellen fest, dass alle Benutzergesten in der Zuordnung die `Repaint`-Funktion aufrufen, außer `undo`. Dies erklärt möglicherweise, warum `undo` nicht sofort funktioniert.
 
- Nachdem Sie den Fehler behoben und die Ausführung der APP fortgesetzt haben, fügt die Zuordnung den `undo` neuen `Repaint`-Befehl von zu hinzu:
+ Nachdem Sie den Fehler behoben und die Ausführung der APP fortgesetzt haben, fügt die Karte den neuen `undo` `Repaint`hinzu:
 
  ![Neuen Methodenaufrufe für die aufrufsstapel Code Map hinzufügen](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
@@ -153,7 +153,7 @@ Sie können eine Zuordnung exportieren, an andere Personen mit Microsoft Outlook
 
 Wenn Sie die Zuordnung freigeben oder speichern möchten, verwenden Sie die **Freigabe** auf der Code Map Symbolleiste.
 
-![Aufrufsstapel Code Map für andere freigeben](../debugger/media/debuggermap_sharewithothers.png "Aufrufsstapel Code Map für andere freigeben")
+![Aufrufsstapel Code Map für andere freigeben](../debugger/media/debuggermap_sharewithothers.png "Aufruflisten-Code Map für andere Benutzer freigeben")
 
 ## <a name="see-also"></a>Siehe auch
 [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)

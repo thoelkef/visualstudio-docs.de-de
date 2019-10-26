@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427408"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911779"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testen der Leistung eines Clouddiensts
 ## <a name="overview"></a>Übersicht
 Sie können die Leistung eines Clouddiensts mit folgenden Methoden testen:
 
-* Verwenden Sie die Azure-Diagnose, um Informationen zu Anforderungen und Verbindungen zu erfassen und Websitestatistiken zu überprüfen, welche die Leistung des Diensts aus Kundenperspektive darstellen. Informationen zum Einstieg finden Sie unter [Konfigurieren der Diagnose für Azure Cloud Services und Virtual Machines](http://go.microsoft.com/fwlink/p/?LinkId=623009)
-* Verwenden Sie den Visual Studio-Profiler, um eine detaillierte Analyse der Computingaspekte der Dienstausführung zu erhalten. Wie in diesem Thema beschrieben, können Sie mit dem Profiler die Leistung messen, während ein Dienst in Azure ausgeführt wird. Informationen dazu, wie Sie den Profiler verwenden, um die Leistung eines lokal in einem Compute-Emulator ausgeführten Diensts zu messen, finden Sie unter [Testen der Leistung eines lokalen Azure-Clouddiensts im Compute-Emulator mithilfe des Visual Studio-Profilers](http://go.microsoft.com/fwlink/p/?LinkId=262845).
+* Verwenden Sie die Azure-Diagnose, um Informationen zu Anforderungen und Verbindungen zu erfassen und Websitestatistiken zu überprüfen, welche die Leistung des Diensts aus Kundenperspektive darstellen. Informationen zum Einstieg finden Sie unter [Konfigurieren der Diagnose für Azure Cloud Services und Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+* Verwenden Sie den Visual Studio-Profiler, um eine detaillierte Analyse der Computingaspekte der Dienstausführung zu erhalten. Wie in diesem Thema beschrieben, können Sie mit dem Profiler die Leistung messen, während ein Dienst in Azure ausgeführt wird. Informationen dazu, wie Sie den Profiler verwenden, um die Leistung eines lokal in einem Compute-Emulator ausgeführten Diensts zu messen, finden Sie unter [Testen der Leistung eines lokalen Azure-Clouddiensts im Compute-Emulator mithilfe des Visual Studio-Profilers](/azure/cloud-services/cloud-services-performance-testing-visual-studio-profiler).
 
 ## <a name="choosing-a-performance-testing-method"></a>Auswählen einer Leistungstestmethode
 ### <a name="use-azure-diagnostics-to-collect"></a>Verwenden Sie die Azure-Diagnose, um folgende Daten zu erfassen:
@@ -65,15 +65,15 @@ Weitere Informationen zur Leistungsprofilerstellung in Visual Studio finden Sie 
 Basierend auf den Leistungsproblemen, die Sie untersuchen möchten, können Sie verschiedene Erfassungsmethoden für die Profilerstellung verwenden:
 
 * **CPU-Sampling** : Diese Methode erfasst Anwendungsstatistiken, die für eine erste Analyse von CPU-Auslastungsproblemen hilfreich sind. CPU-Sampling ist die empfohlene Methode für den Anfang der meisten Leistungsuntersuchungen. Die Erfassung von CPU-Samplingdaten wirkt sich nur sehr geringfügig auf die Anwendung aus, für die Sie ein Profil erstellen möchten.
-* **Instrumentation** : Diese Methode erfasst detaillierte Zeitdaten, die für fokussierte Analysen sowie zur Analyse von Leistungsproblemen bei der Eingabe/Ausgabe hilfreich sind. Die Instrumentationsmethode zeichnet jeden Start-, Beendigungs- und Funktionsaufruf der Funktionen in einem Modul während eines Profilerstellungsvorgangs auf. Diese Methode eignet sich, um detaillierte Zeitdaten zu einem Abschnitt des Codes zu erfassen und um die Auswirkungen von Eingabe- und Ausgabevorgängen auf die Anwendungsleistung zu verstehen. Diese Methode ist für Computer mit 32-Bit-Betriebssystemen deaktiviert. Diese Option ist nur verfügbar, wenn Sie den Clouddienst in Azure ausführen, nicht lokal im Compute-Emulator.
+* **Instrumentation** : Diese Methode erfasst detaillierte Zeitdaten, die für fokussierte Analysen sowie zur Analyse von Leistungsproblemen bei der Eingabe/Ausgabe hilfreich sind. Die Instrumentationsmethode zeichnet jeden Start-, Beendigungs- und Funktionsaufruf der Funktionen in einem Modul während eines Profilerstellungsvorgangs auf. Mithilfe dieser Methode können ausführliche Zeitsteuerungsdaten zu einem Abschnitt des Codes erfasst werden. Zudem werden mit dieser Methode die Auswirkungen von Eingabe- und Ausgabeoperationen auf die Leistung der Anwendung besser verständlich. Diese Methode ist für Computer mit 32-Bit-Betriebssystemen deaktiviert. Diese Option ist nur verfügbar, wenn Sie den Clouddienst in Azure ausführen, nicht lokal im Compute-Emulator.
 * **.NET-Speicherbelegung** : Diese Methode nutzt die Sampling-Profilerstellungsmethode, um .NET Framework-Speicherbelegungsdaten zu erfassen. Zu den erfassten Daten gehören Anzahl und Größe der zugeordneten Objekte.
-* **Parallelität:** Diese Methode erfasst Daten zu Ressourcenkonflikten sowie Prozess- und Threadausführungsdaten, die für die Analyse von Anwendungen mit mehreren Threads und Prozessen hilfreich sind. Die Parallelitätsmethode erfasst Daten für jedes Ereignis, das die Ausführung des Codes blockiert, wie z. B. ein Thread, der darauf wartet, dass der gesperrte Zugriff auf eine Anwendungsressource freigegeben wird. Diese Methode eignet sich für die Analyse von Anwendungen mit mehreren Threads.
+* **Parallelität:** Diese Methode erfasst Daten zu Ressourcenkonflikten sowie Prozess- und Threadausführungsdaten, die für die Analyse von Anwendungen mit mehreren Threads und Prozessen hilfreich sind. Die Parallelitätsmethode erfasst Daten für jedes Ereignis, das die Ausführung des Codes blockiert, z. B., wenn ein Thread darauf wartet, dass der gesperrte Zugriff auf eine Anwendungsressource freigegeben wird. Diese Methode ist hilfreich für das Analysieren von Multithreadanwendungen.
 * Sie können auch die **Profilerstellung für Ebeneninteraktion**aktivieren, die zusätzliche Informationen zu den Ausführungszeiten synchroner ADO.NET-Aufrufe in Funktionen von Anwendungen mit mehreren Ebenen bereitstellt, die mit einer oder mehreren Datenbanken kommunizieren. Sie können Ebeneninteraktionsdaten mit einer der folgenden Profilerstellungsmethoden erfassen. Weitere Informationen zur Profilerstellung für Ebeneninteraktionen finden Sie unter [Ansicht "Ebeneninteraktionen"](https://msdn.microsoft.com/library/azure/dd557764.aspx).
 
 ## <a name="configuring-profiling-settings"></a>Konfigurieren von Profilerstellungseinstellungen
 Die folgende Abbildung zeigt, wie Sie die Profilerstellungseinstellungen im Dialogfeld "Azure-Anwendung veröffentlichen" konfigurieren.
 
-![Konfigurieren von Profilerstellungseinstellungen](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
+![Profilerstellungseinstellungen konfigurieren](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
 > Um das Kontrollkästchen **Profilerstellung aktivieren** zu aktivieren, muss der Profiler auf dem lokalen Computer installiert sein, mit dem Sie den Clouddienst veröffentlichen. Der Profiler wird standardmäßig installiert, wenn Sie Visual Studio Ultimate oder Visual Studio Premium installieren.
@@ -81,7 +81,7 @@ Die folgende Abbildung zeigt, wie Sie die Profilerstellungseinstellungen im Dial
 >
 
 ### <a name="to-configure-profiling-settings"></a>So konfigurieren Sie Profilerstellungseinstellungen
-1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und wählen Sie anschließend **Veröffentlichen**aus. Detaillierte Informationen zum Veröffentlichen eines Clouddiensts finden Sie unter [Veröffentlichen eines Clouddiensts mit den Azure-Tools](http://go.microsoft.com/fwlink/p?LinkId=623012).
+1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und wählen Sie anschließend **Veröffentlichen**aus. Detaillierte Informationen zum Veröffentlichen eines Clouddiensts finden Sie unter [Veröffentlichen eines Clouddiensts mit den Azure-Tools](vs-azure-tools-publishing-a-cloud-service.md).
 2. Wählen Sie im Dialogfeld **Azure-Anwendung veröffentlichen** die Registerkarte **Erweiterte Einstellungen** aus.
 3. Aktivieren Sie zum Aktivieren der Profilerstellung das Kontrollkästchen **Profilerstellung aktivieren** .
 4. Zum Konfigurieren der Profilerstellungseinstellungen wählen Sie den Hyperlink **Einstellungen** aus. Das Dialogfeld "Profilerstellungseinstellungen" wird angezeigt.
@@ -101,7 +101,7 @@ Für jede Instanz einer Rolle in Ihrem Clouddienst wird eine Profilerstellungssi
 2. Wählen Sie den Azure-Computeknoten und anschließend den Azure-Bereitstellungsknoten für den Clouddienst aus, den Sie bei der Veröffentlichung aus Visual Studio für die Profilerstellung ausgewählt haben.
 3. Wählen Sie die Rolle im Dienst aus, öffnen Sie dann das Kontextmenü für eine bestimmte Instanz, und wählen Sie **Profilerstellungsbericht anzeigen**aus, um Profilerstellungsberichte für eine Instanz anzuzeigen.
 
-    Der Bericht (eine VSP-Datei) wird nun aus Azure heruntergeladen, und der Status des Downloads wird im Azure-Aktivitätsprotokoll angezeigt. Wenn der Download abgeschlossen ist, wird der Profilerstellungsbericht auf einer Registerkarte im Editor für Visual Studio unter der Bezeichnung „\>*<Instanznummer\>*<Bezeichner\>.vsp“ angezeigt. Es werden Übersichtsdaten für den Bericht angezeigt.
+    Der Bericht (eine VSP-Datei) wird nun aus Azure heruntergeladen, und der Status des Downloads wird im Azure-Aktivitätsprotokoll angezeigt. Wenn der Download abgeschlossen ist, wird der Profilerstellungsbericht auf einer Registerkarte im Editor für Visual Studio unter der Bezeichnung „\> *<Instanznummer\>* <Bezeichner\>.vsp“ angezeigt. Es werden Übersichtsdaten für den Bericht angezeigt.
 4. Um verschiedene Ansichten des Berichts anzuzeigen, wählen Sie in der Liste der aktuellen Ansichten die gewünschte Ansicht aus. Weitere Informationen finden Sie unter [Berichtsansichten für Profilerstellungstools](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Nächste Schritte

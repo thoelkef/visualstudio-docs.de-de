@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211213"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911405"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Häufig gestellte Fragen zum Debuggen von Momentaufnahmen in Visual Studio
 
@@ -31,7 +31,7 @@ Wenn Sie mehrere Instanzen Ihrer App haben, werden die Andockpunkte auf jede ein
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Wie lädt der Momentaufnahmedebugger Symbole?
 
-Der Momentaufnahmedebugger erfordert, dass Sie die entsprechenden Symbole für Ihre Anwendung entweder lokal oder für Ihren Azure App Service bereitgestellt haben. (Eingebettete PDB-Dateien werden derzeit nicht unterstützt.) Der Momentaufnahmedebugger lädt automatisch Symbole von Ihrem Azure App Service. Ab Visual Studio 2017 Version 15.2 werden mit der Bereitstellung für Azure App Service auch die Symbole Ihrer App bereitgestellt.
+Der Momentaufnahmedebugger erfordert, dass Sie die entsprechenden Symbole für Ihre Anwendung entweder lokal oder für Ihren Azure App Service bereitgestellt haben. (Eingebettete pdsb werden zurzeit nicht unterstützt.) Der Momentaufnahmedebugger lädt automatisch Symbole aus Ihrem Azure App Service herunter. Ab Visual Studio 2017 Version 15.2 werden mit der Bereitstellung für Azure App Service auch die Symbole Ihrer App bereitgestellt.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Arbeitet der Momentaufnahmedebugger mit Releasebuilds meiner Anwendung?
 
@@ -125,7 +125,7 @@ Entfernen Sie für virtuelle Computer/VM-Skalierungs Gruppen die remotedebuggere
 
    - Das Server Zertifikat
       - Der entsprechende Fingerabdruck des Serverzertifikats wird als geheimer Schlüssel in Azure Key Vault bereitgestellt. VS versucht, einen keyvault mit dem Präfix "msvsaz *" in der Region zu suchen oder zu erstellen, die der Ressource des virtuellen Computers oder der VM-Skalierungs Gruppen entspricht. Alle in dieser Region bereitgestellten Ressourcen für virtuelle Computer oder VM-Skalierungs Gruppen werden daher denselben Schlüssel Tresor verwenden.
-      - Um den Schlüssel für den Fingerabdruck des Serverzertifikats zu löschen, wechseln Sie zum Azure-Portal, und suchen Sie in der gleichen Region, in der die Ressource gehostet wird, den Schlüssel Tresor msvsaz *. Löschen Sie das Geheimnis, das gekennzeichnet werden soll.`remotedebugcert<<ResourceName>>`
+      - Um den Schlüssel für den Fingerabdruck des Serverzertifikats zu löschen, wechseln Sie zum Azure-Portal, und suchen Sie in der gleichen Region, in der die Ressource gehostet wird, den Schlüssel Tresor msvsaz *. Löschen Sie den geheimen Schlüssel mit der Bezeichnung `remotedebugcert<<ResourceName>>`
       - Sie müssen auch den geheimen Server Schlüssel aus ihrer Ressource über PowerShell löschen.
 
       Für virtuelle Computer:
@@ -181,7 +181,7 @@ Es gibt mehrere Möglichkeiten, die Momentaufnahmedebugger zu deaktivieren:
 
 - Azure-Portal > Sie das Ressourcen Blatt des virtuellen Computers/der VM-Skalierungs Gruppe > Erweiterungen > Deinstallieren Sie die Erweiterung Microsoft. Insights. vmdiagnosticssettings.
 
-- PowerShell-Cmdlets von [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- PowerShell-Cmdlets von [AZ PowerShell](/powershell/azure/overview)
 
    Virtueller Computer:
 
