@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648717"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924516"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank
 
@@ -109,7 +109,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit mit Access 200
 
 Das soeben erstellte Dataset ist im **Datenquellen** Fenster verfügbar. Sie können nun eine der folgenden Aufgaben ausführen:
 
-- Wählen Sie im Fenster **Datenquellen** die Option Elemente aus, und ziehen Sie diese auf das Formular oder die Entwurfs Oberfläche (siehe Übersicht über das [Binden von Windows Forms Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) oder [WPF-Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)).
+- Wählen Sie im Fenster **Datenquellen** die Option Elemente aus, und ziehen Sie diese auf das Formular oder die Entwurfs Oberfläche (siehe Übersicht über das [Binden von Windows Forms Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) oder [WPF-Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview)).
 
 - Öffnen Sie die Datenquelle im **DataSet-Designer**, um die Objekte, aus denen das Dataset besteht, zu bearbeiten oder dem Dataset Objekte hinzuzufügen.
 
