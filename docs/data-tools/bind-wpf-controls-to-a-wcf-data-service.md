@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807015"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924553"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 
@@ -56,7 +56,7 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 - Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Entity Framework Übersicht](/dotnet/framework/data/adonet/ef/overview).
 
-- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Erstellen des Dienst Projekts
 
@@ -301,4 +301,4 @@ Nach Abschluss dieser exemplarischen Vorgehensweise können Sie folgende Aufgabe
 - [WPF-Steuerelemente an einen Datensatz binden](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [Übersicht über WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Übersicht über Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [Übersicht über die Datenbindung (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)
+- [Übersicht über die Datenbindung (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)
