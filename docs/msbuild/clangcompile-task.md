@@ -11,30 +11,30 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ClangCompile task
-- ClangCompile task (MSBuild (Visual C++))
+- MSBuild (C++), ClangCompile task
+- ClangCompile task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569705"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747340"
 ---
 # <a name="clangcompile-task"></a>ClangCompile-Aufgabe
 
-Umschließt das Visual C++-Compilertool „clang.exe“.
+Umschließt das Microsoft C++-Compilertool (clang.exe).
 
 ## <a name="parameters"></a>Parameter
 
 In der folgenden Tabelle werden die Parameter der Aufgabe **ClangCompile** beschrieben:
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Optionaler **string[]**-Parameter.<br/><br/>Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind.<br/><br/>Verwenden Sie `-I[path]`.|
+|**AdditionalIncludeDirectories**|Optionaler **string[]** -Parameter.<br/><br/>Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind.<br/><br/>Verwenden Sie `-I[path]`.|
 |**AdditionalOptions**|Optionaler **string**-Parameter.|
 |**BufferSecurityCheck**|Optionaler **string**-Parameter.<br/><br/>Die Sicherheitsprüfung hilft bei der Erkennung von Überläufen des Stapelpuffers. Hierbei handelt es sich um gängige Versuche, die Sicherheit eines Programms zu gefährden. <br/><br/>Verwenden Sie `fstack-protector`.|
 |**BuildingInIde**|Optionaler **bool**-Parameter.|
@@ -47,11 +47,11 @@ In der folgenden Tabelle werden die Parameter der Aufgabe **ClangCompile** besch
 |**EnableNeonCodegen**|Optionaler **bool**-Parameter.<br/><br/>Aktiviert die Codegenerierung für NEON-Gleitkomma-Hardware. Dies gilt nur für die ARM-Architektur.|
 |**ExceptionHandling**|Optionaler **string**-Parameter.<br/><br/>Gibt das Ausnahmebehandlungsmodell an, das vom Compiler verwendet wird.<br/><br/>**Disabled**: Deaktiviert die Ausnahmebehandlung. (Verwenden Sie `fno-exceptions`.)<br/>**Enabled**: Die Ausnahmebehandlung wird aktiviert. (Verwenden Sie `fexceptions`.)<br/>**UnwindTables**: Generiert alle erforderlichen Statistikdaten, aber ohne Auswirkungen auf den generierten Code. (Verwenden Sie `funwind-tables`.)|
 |**FloatABI**|Optionaler **string**-Parameter.<br/><br/>Wählen Sie eine Option aus, um die Gleitkomma-ABI auszuwählen.<br/><br/>**soft**: Sorgt dafür, dass der Compiler eine Ausgabe mit Bibliotheksaufrufen für Gleitkommavorgänge generiert. (Verwenden Sie `mfloat-abi=soft`.)<br/>**softfp**: Ermöglicht die Generierung von Code unter Verwendung hardwarebasierter Gleitkomma-Anweisungen, verwendet jedoch weiterhin die Konventionen für den soft-float-Aufruf. (Verwenden Sie `mfloat-abi=softfp`.)<br/>**hard**: Ermöglicht die Generierung von Gleitkomma-Anweisungen und verwendet FPU-spezifische Aufrufkonventionen. (Verwenden Sie `mfloat-abi=hard`.)|
-|**ForcedIncludeFiles**|Optionaler **string[]**-Parameter.<br/><br/>Mindestens eine erzwungene Includedatei.<br/><br/>Verwenden Sie `-include [name]`.|
+|**ForcedIncludeFiles**|Optionaler **string[]** -Parameter.<br/><br/>Mindestens eine erzwungene Includedatei.<br/><br/>Verwenden Sie `-include [name]`.|
 |**FunctionLevelLinking**|Optionaler **bool**-Parameter.<br/><br/>Ermöglicht dem Compiler, einzelne Funktionen in Form von kompilierten Funktionen (COMDATs) zu kompilieren. Zur Bearbeitung erforderlich, funktionieren weiterhin.<br/><br/>Verwenden Sie `ffunction-sections`.|
 |**GccToolChain**|Optionaler **string**-Parameter.<br/><br/>Ordnerpfad zur Gcc-Toolkette.|
 |**GNUMode**|Optionaler **bool**-Parameter.<br/><br/>|
-|**MSCompatibility**|Optionaler **bool**-Parameter.<br/><br/>Ermöglicht vollständige Microsoft Visual C++-Kompatibilität.|
+|**MSCompatibility**|Optionaler **bool**-Parameter<br/><br/>Ermöglicht vollständige Microsoft C++-Kompatibilität.|
 |**MSCompatibilityVersion**|Optionaler **string**-Parameter.<br/><br/>Ein durch Punkte getrennter Wert, der die Versionsnummer des Microsoft-Compilers darstellt, die in _MSC_VER gemeldet wird (0 = nicht definieren (Standard)).|
 |**MSExtensions**|Optionaler **bool**-Parameter.<br/><br/>Dient zum Akzeptieren einiger Nicht-Standardkonstrukte, die vom Microsoft-Compiler unterstützt werden.|
 |**MSCompilerVersion**|Optionaler **string**-Parameter.<br/><br/>Die Versionsnummer des Microsoft-Compilers, die in _MSC_VER gemeldet wird (0 = nicht definieren (Standard)).|
@@ -64,18 +64,18 @@ In der folgenden Tabelle werden die Parameter der Aufgabe **ClangCompile** besch
 |**PrecompiledHeaderFile**|Optionaler **string**-Parameter.<br/><br/>Gibt den Namen einer Headerdatei an, die als vorkompilierte Headerdatei verwendet werden soll. Diese Datei wird während des Erstellungsvorgangs auch zu **Erzwungene Includedateien** hinzugefügt.|
 |**PrecompiledHeaderOutputFileDirectory**|Optionaler **string**-Parameter.<br/><br/>Gibt das Verzeichnis für den generierten vorkompilierten Header an. Dieses Verzeichnis wird während des Erstellungsvorgangs auch zu **Zusätzliche Includeverzeichnisse** hinzugefügt.|
 |**PrecompiledHeaderCompileAs**|Optionaler **string**-Parameter.<br/><br/>Dient zum Auswählen der Kompilierungssprachenoption für die vorkompilierte Headerdatei.<br/><br/>Verwenden Sie `-x c-header`, `-x c++-header`.|
-|**PreprocessorDefinitions**|Optionaler **string[]**-Parameter.<br/><br/>Definiert Präprozessorsymbole für Ihre Quelldatei.<br/><br/>Verwenden Sie `-D`.|
+|**PreprocessorDefinitions**|Optionaler **string[]** -Parameter.<br/><br/>Definiert Präprozessorsymbole für Ihre Quelldatei.<br/><br/>Verwenden Sie `-D`.|
 |**RuntimeLibrary**|Optionaler **string**-Parameter.<br/><br/>Dient zum Angeben der zu verknüpfenden Laufzeitbibliothek.<br/><br/>Zu verwendende Schalter: `MSVC /MT`, `/MTd`, `/MD`, `/MDd`.<br/><br/>**MultiThreaded**: Bewirkt, dass die Anwendung die statische Multithread-Version der Laufzeitbibliothek verwendet.<br/>**MultiThreadedDebug**: Definiert „_DEBUG“ und „_MT“. Diese Option führt auch dazu, dass der Compiler den Bibliotheksnamen "LIBCMTD.lib" in der .obj-Datei positioniert, sodass der Linker "LIBCMTD.lib" für das Auflösen externer Symbole verwendet.<br/>**MultiThreadedDLL**: Bewirkt, dass Ihre Anwendung die Multithread- und DLL-spezifische Version der Laufzeitbibliothek verwendet. Definiert „_MT“ und „_DLL“ und bewirkt, dass der Compiler den Bibliotheksnamen "MSVCRT.lib" in der OBJ-Datei platziert.<br/>**MultiThreadedDebugDLL**: Definiert „_DEBUG“, „_MT“ und „_DLL“ und bewirkt, dass Ihre Anwendung die Multithread- und DLL-spezifische Debugversion der Laufzeitbibliothek verwendet. Außerdem wird verursacht, dass der Compiler den Bibliotheksnamen "MSVCRTD.lib" in der .obj-Datei positioniert.|
 |**RuntimeTypeInfo**|Optionaler **bool**-Parameter.<br/><br/>Fügt Code für die Überprüfung der C++-Objekttypen während der Laufzeit hinzu (Laufzeit-Typinformationen).<br/><br/>Verwenden Sie `frtti`, `fno-rtti`.|
 |**ShowIncludes**|Optionaler **bool**-Parameter.<br/><br/>Generiert eine Liste der Includedateien mit Compilerausgabe.<br/><br/>Verwenden Sie `-H`.|
-|**Sources**|Erforderlicher **ITaskItem[]**-Parameter.|
+|**Sources**|Erforderlicher **ITaskItem[]** -Parameter.|
 |**StrictAliasing**|Optionaler **bool**-Parameter.<br/><br/>Annehmen der strengsten Aliasingregeln. Bei einem Objekt eines Typs wird niemals davon ausgegangen, dass es sich an derselben Adresse wie ein Objekt eines anderen Typs befindet.|
 |**Sysroot**|Optionaler **string**-Parameter.<br/><br/>Ordnerpfad zum Stammverzeichnis für Header und Bibliotheken.|
 |**TargetArch**|Optionaler **string**-Parameter.<br/><br/>Zielarchitektur|
 |**ThumbMode**|Optionaler **string**-Parameter.<br/><br/>Generieren Sie Code, der für die Thumb-Mikroarchitektur ausgeführt wird. Dies gilt nur für die ARM-Architektur.<br/><br/>**Thumb**: Generiert Thumb-Code. (Verwenden Sie `mthumb`.)<br/>**ARM**: Generiert ARM-Code. (Verwenden Sie `marm`.)<br/>**Disabled**: Die Option ist für die ausgewählte Plattform nicht gültig.|
 |**TrackerLogDirectory**|Optionaler **string**-Parameter.<br/><br/>Nachverfolgungsprotokollverzeichnis|
 |**TreatWarningAsError**|Optionaler **bool**-Parameter.<br/><br/>Behandelt alle Compilerwarnungen als Fehler.<br/><br/>Bei einem neuen Projekt kann es empfehlenswert sein, `/WX` in allen Kompilierungen zu verwenden. Die Auflösung aller Warnungen stellt sicher, dass möglichst wenig schwer zu findende Codefehler vorhanden sind.|
-|**UndefinePreprocessorDefinitions**|Optionaler **string[]**-Parameter.<br/><br/>Gibt mindestens eine aufgehobene Präprozessordefinition an.<br/><br/>Verwenden Sie `-U [macro]`.|
+|**UndefinePreprocessorDefinitions**|Optionaler **string[]** -Parameter.<br/><br/>Gibt mindestens eine aufgehobene Präprozessordefinition an.<br/><br/>Verwenden Sie `-U [macro]`.|
 |**UndefineAllPreprocessorDefinitions**|Optionaler **bool**-Parameter.<br/><br/>Hebt die Definition aller zuvor definierten Präprozessorwerte auf.<br/><br/>Verwenden Sie `-undef`.|
 |**UseMultiToolTask**|Optionaler **bool**-Parameter.<br/><br/>Kompilierung mit mehreren Prozessoren|
 |**UseShortEnums**|Optionaler **bool**-Parameter.<br/><br/>Dieser Enumerationstyp verwendet nur so viele Bytes, wie das Eingabeset an möglichen Werten erfordert.|

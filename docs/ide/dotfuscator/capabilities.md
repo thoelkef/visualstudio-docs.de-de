@@ -15,14 +15,14 @@ helpviewer_keywords:
 description: Erfahren Sie mehr über die Funktionen der kostenlos in Visual Studio enthaltenen Kopie von Dotfuscator Community.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744779"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747941"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funktionen von Dotfuscator
 
@@ -39,7 +39,7 @@ Dotfuscator Community unterstützt eine Vielfalt von .NET-Assemblys und Anwendun
 Die Bauweise, das Verhalten und die Implementierung Ihrer Anwendung gehören zum geistigen Eigentum (intellectual property, IP).
 Dennoch sind Anwendungen, die für .NET erstellt wurden, im Grunde offene Bücher – denn es ist sehr einfach, .NET-Assemblys rückzuentwickeln, [da sie hochrangige Metadaten und Zwischencode enthalten][assemblies].
 
-Dotfuscator Community enthält eine grundlegende [.NET-Obfuskation ][obfuscation] in Form von [Umbenennung][renaming].
+Dotfuscator Community enthält eine grundlegende [.NET-Obfuskation][obfuscation] in Form von [Umbenennung][renaming].
 Das Verbergen Ihres Codes mit Dotfuscator senkt das Risiko des unautorisierten Zugriffs auf Quellcode durch Reverse Engineering, da wichtige Namensinformationen nicht mehr öffentlich sind.
 Die Obfuskation zeigt außerdem Ihre Bemühungen, Ihren Code vor Durchsuchung zu schützen – ein wichtiger Schritt, um zu bekräftigen, dass Ihre IP rechtlich als Geschäftsgeheimnis geschützt ist.
 

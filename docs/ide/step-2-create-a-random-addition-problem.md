@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314097"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576295"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Schritt 2: Erstellen einer zufälligen Additionsaufgabe
 
@@ -73,7 +73,7 @@ Im zweiten Teil dieses Lernprogramms gestalten Sie das Quiz anspruchsvoll, indem
      Wenn Sie einen Punkt nach einem Objekt eingeben, zeigt IntelliSense eine Liste der Member des Objekts an, wie Eigenschaften, Methoden und Ereignisse.
 
     > [!NOTE]
-    > Wenn Sie die `Next()`-Methode mit dem `Random`-Objekt verwenden, z. B. wenn Sie `randomizer.Next(50)` aufrufen, wird eine Zufallszahl abgerufen, die kleiner als 50 (von 0 bis 49) ist. In diesem Beispiel haben Sie `randomizer.Next(51)` aufgerufen. Sie haben dabei die Zahl 51 und nicht 50 verwendet. Somit werden die beiden Zahlen zu einer Summe zwischen 0 und 100 addiert. Wenn die Zahl 50 an die `Next()`-Methode übergeben wird, wählt sie eine Zahl zwischen 0 bis 49 aus, sodass die höchstmögliche Antwort 98 ist und nicht 100 ist. Nachdem die ersten beiden Anweisungen in der Methode ausgeführt wurden, enthält jede der beiden Ganzzahlvariablen **addend1** und **addend2** eine Zufallszahl zwischen 0 und 50. Diese Bildschirmabbildung zeigt Visual C#-Code, doch IntelliSense funktioniert auf die gleiche Weise für Visual Basic.
+    > Wenn Sie die `Next()`-Methode mit dem `Random`-Objekt verwenden, z. B. wenn Sie `randomizer.Next(50)` aufrufen, wird eine Zufallszahl abgerufen, die kleiner als 50 (von 0 bis 49) ist. In diesem Beispiel haben Sie `randomizer.Next(51)` aufgerufen. Sie haben dabei die Zahl 51 und nicht 50 verwendet. Somit werden die beiden Zahlen zu einer Summe zwischen 0 und 100 addiert. Wenn die Zahl 50 an die `Next()`-Methode übergeben wird, wählt sie eine Zahl zwischen 0 bis 49 aus, sodass die höchstmögliche Antwort 98 ist und nicht 100 ist. Nachdem die ersten beiden Anweisungen in der Methode ausgeführt wurden, enthält jede der beiden Ganzzahlvariablen **addend1** und **addend2** eine Zufallszahl zwischen 0 und 50. Dieser Bildschirmabbildung zeigt C#-Code, doch IntelliSense funktioniert auf die gleiche Weise für Visual Basic.
 
      Sehen Sie sich diese Anweisungen genauer an.
 

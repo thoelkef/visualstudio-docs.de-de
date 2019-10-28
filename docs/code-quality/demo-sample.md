@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018443"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745925"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>C++-Beispielprojekt für die Codeanalyse
 
@@ -34,7 +34,7 @@ Die Prozeduren stellen zudem den Code für den Header und die *.cpp*-Dateien fü
 
 1. Klicken Sie auf das Menü **Datei**, zeigen Sie auf die Option **Neu**, und klicken Sie anschließend auf **Neues Projekt**.
 
-2. Wenn Visual C++ nicht Ihre Standardsprache in VS ist, erweitern Sie in der Baumstruktur **Projekttypen** die Option **Andere Sprachen**.
+2. Wenn C++ nicht Ihre Standardsprache in VS ist, erweitern Sie in der Strukturliste **Projekttypen** die Option **Andere Sprachen**.
 
 3. Erweitern Sie **Visual C++** , und klicken Sie dann auf **Allgemein**.
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b60f9bb1fffb9fb36311ad3fda504c1ff2260ce
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289684"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621425"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung
 
@@ -38,7 +38,7 @@ Das Vergleichsspiel funktioniert wie folgt:
 
 2. Wählen Sie das erste Bezeichnungsfeld-Steuerelement, um es zu markieren. Halten Sie dann **STRG** gedrückt, während Sie nacheinander die anderen Bezeichnungen wählen. Achten Sie darauf, dass jede Bezeichnung ausgewählt wird.
 
-3. Wählen Sie die Schaltfläche **Ereignisse** auf der Symbolleiste im Fenster **Eigenschaften**, um die Seite **Ereignisse** im Fenster **Eigenschaften** anzuzeigen. Führen Sie einen Bildlauf nach unten bis zum **Click**-Ereignis durch, und geben Sie **label_Click** ein, wie in der folgenden Abbildung dargestellt.
+3. Wählen Sie die Schaltfläche **Ereignisse** auf der Symbolleiste im Fenster **Eigenschaften**, um die Seite **Ereignisse** im Fenster **Eigenschaften** anzuzeigen. Scrollen Sie nach unten zum **Click**-Ereignis, und geben Sie in das Feld **label_Click** ein, wie im folgenden Screenshot dargestellt.
 
      ![Anzeige des Click-Ereignisses im Eigenschaftenfenster](../ide/media/express_labelclick.png)
 
@@ -64,6 +64,6 @@ Das Vergleichsspiel funktioniert wie folgt:
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 5: Hinzufügen von Bezeichnungsverweisen](../ide/step-5-add-label-references.md).
+- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 5: Hinzufügen von Bezeichnungsverweisen](../ide/step-5-add-label-references.md)** .
 
-- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung](../ide/step-3-assign-a-random-icon-to-each-label.md).

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af67aa3961b92b55abfdcf7a811daef284ca523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 065b11b689189f5ad833ce642cfcfc94da06f83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970834"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747203"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Verwenden mehrerer Prozessoren für die Erstellung von Projekten
 MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit mehreren Kernen verfügen. Für jeden verfügbaren Prozessor wird ein separater Buildprozess erstellt. Wenn das System zum Beispiel über vier Prozessoren verfügt, werden vier Buildprozesse erstellt. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann diese Builds gleichzeitig verarbeiten und daher die Gesamtbuildzeit verringern. Das gleichzeitige Erstellen von Builds führt jedoch zu einigen Änderungen bei Buildprozessen. In diesem Thema werden diese Änderungen erläutert.
@@ -30,8 +30,8 @@ MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit 
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Fehler und Ausnahmen bei der parallelen Builderstellung
  Bei der parallelen Builderstellung können Fehler und Ausnahmen zu einem anderen Zeitpunkt auftreten als bei der nicht parallelen Builderstellung; außerdem kann die Erstellung eines anderen Builds fortgesetzt werden, wenn ein Build nicht erstellt werden kann. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] beendet gleichzeitig ausgeführte Projektbuilds nicht zusammen mit einem fehlgeschlagenen Build. Der Buildprozess anderer Projekte wird fortgesetzt, bis er erfolgreich abgeschlossen oder fehlgeschlagen ist. Wenn jedoch <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> aktiviert wurde, wird die Erstellung von Builds nicht abgebrochen, auch wenn ein Fehler auftritt.
 
-## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Visual C++-Projektdateien (VCPROJ) und Projektmappendateien (SLN)
- [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekt- und -Projektmappendateien (*VCPROJ* und *SLN*) können beide an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten wird VCWrapperProject aufgerufen, woraufhin das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt wird. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektmappen wird SolutionWrapperProject und anschließend das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt. In beiden Fällen wird das daraus resultierende Projekt auf die gleiche Weise behandelt wie jedes andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.
+## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++-Projektdateien (.vcproj) und Projektmappendateien (.sln)
+ [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekt- und -Projektmappendateien ( *.vcxproj* und *.sln*) können beide an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten wird VCWrapperProject aufgerufen, woraufhin das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt wird. Bei [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektmappen wird SolutionWrapperProject und anschließend das interne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt erstellt. In beiden Fällen wird das daraus resultierende Projekt auf die gleiche Weise behandelt wie jedes andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.
 
 ## <a name="multi-process-execution"></a>Multiprozessausführung
  Bei fast allen buildbezogenen Aktivitäten ist es erforderlich, dass das aktuelle Verzeichnis während des Buildprozesses gleich bleibt, um pfadbezogene Fehler zu vermeiden. Aus diesem Grund können Projekte in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nicht auf verschiedenen Threads ausgeführt werden, da dies zur Erstellung mehrerer Verzeichnisse führen würde.

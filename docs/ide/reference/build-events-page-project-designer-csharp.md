@@ -1,6 +1,6 @@
 ---
 title: Seite "Buildereignisse", Projekt-Designer (C#)
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba429c116d44a5d79d935fe3a1ad07b6d5f36f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461851"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789822"
 ---
 # <a name="build-events-page-project-designer-c"></a>Seite "Buildereignisse", Projekt-Designer (C#)
 
@@ -60,6 +60,33 @@ Gibt die folgenden Bedingungen für das auszuführende Postbuildereignis an, wie
 |**Immer**|Das Postbuildereignis wird ausgeführt, unabhängig davon, ob der Buildvorgang erfolgreich ist.|
 |**Bei erfolgreichem Erstellen**|Das Postbuildereignis wird ausgeführt, wenn der Buildvorgang erfolgreich ist. Deshalb wird das Ereignis sogar für ein aktuelles Projekt ausgeführt, solange der Buildvorgang erfolgreich ist.|
 |**Wenn der Build die Projektausgabe aktualisiert**|Das Postbuildereignis wird nur ausgeführt, wenn sich die Ausgabedatei des Compilers (.exe or .dll) von der vorherigen Ausgabedatei des Compilers unterscheidet. Deshalb wird kein Postbuildereignis ausgeführt, wenn das Projekt aktuell ist.|
+
+## <a name="in-the-project-file"></a>In der Projektdatei
+
+In früheren Versionen von Visual Studio fügt Visual Studio beim Ändern der Einstellung **PreBuildEvent** oder **PostBuildEvent** in der IDE der Projektdatei die Eigenschaft `PreBuildEvent` oder `PostBuildEvent` hinzu. Beispiel: Wenn Ihre Befehlszeileneinstellung **PreBuildEvent** in der IDE wie folgt lautet:
+
+```input
+"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
+```
+
+dann ist die Projektdateieinstellung wie folgt:
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+Visual Studio 2019 (und Visual Studio 2017 mit den neuesten Updates) fügt den Einstellungen **PreBuildEvent** und **PostBuildEvent** ein MSBuild-Ziel namens `PreBuild` oder `PostBuild` hinzu. Beispielsweise generiert Visual Studio für das vorherige Beispiel nun den folgenden Code:
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+> [!NOTE]
+> Diese Änderungen an der Projektdatei wurden vorgenommen, um Projekte im SDK-Format zu unterstützen. Wenn Sie eine Projektdatei manuell vom alten Format zum SDK-Format migrieren, müssen Sie die Eigenschaften `PreBuildEvent` und `PostBuildEvent` löschen und durch die Ziele `PreBuild` und `PostBuild` ersetzen (siehe den vorherigen Code). Informationen, wie Sie feststellen können, ob Ihr Projekt das SDK-Format hat, finden Sie unter [Überprüfen des Projektformats](/nuget/resources/check-project-format).
 
 ## <a name="see-also"></a>Siehe auch
 

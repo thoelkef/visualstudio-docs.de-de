@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445311"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748032"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum Beschreiben und Steuern des Anwendungsbuildprozesses. Wenn Sie in Visual Studio eine MSBuild-Projektdatei erstellen, wird der Datei automatisch das entsprechende XML hinzugefügt. Ein Grundverständnis der Organisation des XML und der Änderungsmöglichkeiten zum Steuern eines Builds ist jedoch empfehlenswert.
 
- Weitere Informationen über das Erstellen einer Projektdatei für ein C++-Projekt finden Sie unter [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
+ Weitere Informationen zum Erstellen einer Projektdatei für ein C++-Projekt finden Sie unter [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
  In dieser exemplarischen Vorgehensweise wird das inkrementelle Erstellen einer einfachen Projektdatei nur mit einem Texteditor veranschaulicht. In der exemplarischen Vorgehensweise werden die nachfolgenden Schritte ausgeführt:
 
@@ -51,7 +51,7 @@ Sie können die exemplarische Vorgehensweise nur ausführen, wenn Sie .NET Frame
 
 #### <a name="to-create-the-minimal-application"></a>So erstellen Sie die minimale Anwendung
 
-1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\\* oder *\Desktop\\*.
+1. Wechseln Sie an der Eingabeaufforderung zu dem Ordner, in dem Sie die Anwendung erstellen möchten, z.B. *\Eigene Dateien\\\* oder *\Desktop\\* .
 
 2. Geben Sie **md HelloWorld** ein, um den Unterordner *\HelloWorld\\* zu erstellen.
 
@@ -161,7 +161,7 @@ Aufgaben im Build-Ziel werden sequenziell ausgeführt. In diesem Fall bildet die
 
 #### <a name="to-add-msbuild-to-your-path"></a>So fügen Sie MSBuild zum Pfad hinzu
 
-- Ab Visual Studio 2013 ist die Datei *MSBuild.exe* im MSBuild-Ordner zu finden (*%ProgramFiles%\MSBuild* in einem 32-Bit-Betriebssystem oder *%ProgramFiles(x86)%\MSBuild* in einem 64-Bit-Betriebssystem).
+- Ab Visual Studio 2013 ist die Datei *MSBuild.exe* im MSBuild-Ordner zu finden ( *%ProgramFiles%\MSBuild* in einem 32-Bit-Betriebssystem oder *%ProgramFiles(x86)%\MSBuild* in einem 64-Bit-Betriebssystem).
 
      Geben Sie an der Befehlszeile **set PATH=%PATH%;%ProgramFiles%\MSBuild** oder **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild** ein.
 
@@ -336,7 +336,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
 1. Geben Sie an der Eingabeaufforderung **msbuild helloworld.csproj -p:AssemblyName=Greetings** ein.
 
-     Da Sie das Ziel nicht explizit mit dem Schalter **-t** festgelegt haben, führt MSBuild das Build-Standardziel aus. Der Schalter **-p** überschreibt die Eigenschaft `AssemblyName` und gibt dieser den neuen Wert `Greetings`. Dies führt zum Erstellen der neuen Anwendung *Greetings.exe* im Ordner *\Bin\\*.
+     Da Sie das Ziel nicht explizit mit dem Schalter **-t** festgelegt haben, führt MSBuild das Build-Standardziel aus. Der Schalter **-p** überschreibt die Eigenschaft `AssemblyName` und gibt dieser den neuen Wert `Greetings`. Dies führt zum Erstellen der neuen Anwendung *Greetings.exe* im Ordner *\Bin\\* .
 
 2. Wenn Sie überprüfen möchten, ob der Ordner *\Bin\\* die Anwendung *MSBuildSample* und die neue Anwendung *Greetings* enthält, geben Sie **dir Bin** ein.
 
@@ -400,7 +400,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.
 
 ### <a name="code"></a>Code
@@ -438,7 +438,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Das folgende Beispiel enthält eine Projektdatei, durch die eine [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Anwendung kompiliert und eine Meldung mit dem Namen der Ausgabedatei protokolliert wird.
 
 ### <a name="code"></a>Code

@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bf80e9df7910b0b581ae956978fb2020542ae96f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823499"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747265"
 ---
 # <a name="msbuild"></a>MSBuild
 Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ist eine Plattform zum Erstellen von Anwendungen. Diese Engine, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, ist aber nicht von Visual Studio abhängig. Wenn Sie *msbuild.exe* im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.
 
  Visual Studio verwendet MSBuild, um verwaltete Projekte zu laden und zu erstellen. Die Projektdateien in Visual Studio (*CSPROJ*-, *VBPROJ*-, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Alle erforderlichen Einstellungen und Buildprozesse werden für die reguläre Entwicklungsarbeit in Visual Studio-Projekte importiert. Sie können diese jedoch in Visual Studio oder mithilfe eine XML-Editors erweitern oder ändern.
 
- Weitere Informationen zu MSBuild für C++ finden Sie unter [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
+ Weitere Informationen zu MSBuild für C++ finden Sie unter [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
  Die folgenden Beispiele veranschaulichen, wann Sie Builds über die MSBuild-Befehlszeile anstelle der Visual Studio-IDE ausführen sollten.
 

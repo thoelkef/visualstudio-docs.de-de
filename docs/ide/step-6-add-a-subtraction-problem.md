@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314241"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562577"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Schritt 6: Hinzufügen einer Subtraktionsaufgabe
 Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu und erfahren, wie die folgenden Aufgaben ausgeführt werden:
@@ -76,7 +76,7 @@ Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     In Visual C# ist `&&` der `logical and`-Operator. In Visual Basic ist `AndAlso` die Entsprechung dieses Operators. Diese Operatoren entsprechen dem Wortlaut "Wenn die Summe aus addend1 und addend2 gleich dem Wert von sum NumericUpDown ist und wenn Minuend minus Subtrahend gleich dem Wert von difference NumericUpDown ist". Die `CheckTheAnswer()`-Methode gibt nur `true` zurück, wenn die Antworten der Additions- und die Subtraktionsaufgaben richtig sind.
+     In C# ist `&&` der `logical and`-Operator. In Visual Basic ist `AndAlso` die Entsprechung dieses Operators. Diese Operatoren entsprechen dem Wortlaut "Wenn die Summe aus addend1 und addend2 gleich dem Wert von sum NumericUpDown ist und wenn Minuend minus Subtrahend gleich dem Wert von difference NumericUpDown ist". Die `CheckTheAnswer()`-Methode gibt nur `true` zurück, wenn die Antworten der Additions- und die Subtraktionsaufgaben richtig sind.
 
 4. Ersetzen Sie den letzten Teil des Tick-Ereignishandlers des Timers durch folgenden Code, damit die richtige Antwort ausgegeben wird, wenn die Zeit abgelaufen ist.
 

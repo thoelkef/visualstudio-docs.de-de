@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial 1: Erstellen eines Bildanzeigeprogramms'
-ms.date: 08/30/2019
+ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,19 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118672"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516624"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
 In diesem Tutorial erstellen Sie eine App, die ein Bild aus einer Datei lädt und in einem Fenster anzeigt. Sie erfahren, wie Sie mithilfe des **Windows Forms-Designers** Steuerelemente, z. B. Schaltflächen und Bildfelder, auf das Formular ziehen, ihre Eigenschaften festlegen und mithilfe von Containern die Größe des Formulars reibungslos ändern können. Sie fangen auch an, Code zu schreiben.
 
 > [!NOTE]
-> In diesem Lernprogramm werden sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
+> In diesem Tutorial werden sowohl C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
 
 In diesem Tutorial werden Sie durch die folgenden Aufgaben geführt:
 
@@ -59,6 +59,8 @@ Anschließend sollte Ihre App in etwa wie in der folgenden Abbildung aussehen:
 |[Schritt 9: Überprüfen, Kommentieren und Testen des Codes](../ide/step-9-review-comment-and-test-your-code.md)|Prüfen und testen Sie den Code. Fügen Sie bei Bedarf Kommentare hinzu.|
 |[Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Schreiben Sie mithilfe von IntelliSense Code, damit andere Schaltflächen und ein Kontrollkästchen funktionieren.|
 |[Schritt 11: Ausführen Ihrer App und Ausprobieren weiterer Features](../ide/step-11-run-your-program-and-try-other-features.md)|Führen Sie Ihre App aus, und legen Sie die Hintergrundfarbe fest. Probieren Sie andere Funktionen aus. Ändern Sie z. B. Farben, Schriftarten und Rahmen.|
+
+Es stehen auch umfangreiche kostenlose Videoschulungen zur Verfügung. Weitere Informationen zum Programmieren in C# finden Sie unter [C#-Grundlagen: Development for absolute beginners (C#-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Weitere Informationen zum Programmieren in Visual Basic finden Sie unter [Visual Basic fundamentals: Development for absolute beginners (C#-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

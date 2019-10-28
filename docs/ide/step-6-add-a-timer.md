@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289638"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647503"
 ---
 # <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen von Timern
 Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.
@@ -28,7 +28,7 @@ Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuere
 1. Wählen Sie **Timer** in der Toolbox des **Windows Forms-Designers** (in der Kategorie **Komponenten**) aus, und drücken Sie anschließend die **EINGABETASTE**, oder doppelklicken Sie auf den Timer, um dem Formular ein Timer-Steuerelement hinzuzufügen. Das Symbol des Timers mit dem Namen **Timer1** wird in einem Bereich unterhalb des Formulars angezeigt, wie in der folgenden Abbildung dargestellt.
 
      ![Zeitgeber](../ide/media/express_timer.png)<br/>
-**Zeitgeber**
+***Zeitgeber***
 
     > [!NOTE]
     > Wenn die Toolbox leer ist, haben Sie zuvor möglicherweise nicht den Formular-Designer aktiviert, sondern den Code für das Formular.
@@ -43,7 +43,7 @@ Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuere
       > [!IMPORTANT]
       > Verwenden Sie das Programmiersprachensteuerelement oben rechts auf dieser Seite, um entweder den C#-Codeausschnitt oder den Visual Basic-Codeausschnitt anzuzeigen.<br><br>![Programmiersprachensteuerelement auf docs.microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     Der Tick-Ereignishandler bewirkt drei Dinge: Zuerst beendet er den Zeitgeber, indem er die <xref:System.Windows.Forms.Timer.Stop>-Methode aufruft. Anschließend verwendet er die beiden Verweisvariablen `firstClicked` und `secondClicked`, um die Symbole für die zwei Bezeichnungsfelder, die der Spieler gewählt hat, wieder unsichtbar zu machen. Zuletzt setzt er die Verweisvariablen `firstClicked` und `secondClicked` in Visual C# auf `null` und in Visual Basic auf `Nothing` zurück. Dieser Schritt ist wichtig, weil sich das Programm auf diese Weise selbst zurücksetzt. In diesem Zustand werden keine <xref:System.Windows.Forms.Label>-Steuerelemente überwacht, und das Programm ist wieder für eine Auswahl des Spielers bereit.
+     Der Tick-Ereignishandler bewirkt drei Dinge: Zuerst beendet er den Zeitgeber, indem er die <xref:System.Windows.Forms.Timer.Stop>-Methode aufruft. Anschließend verwendet er die beiden Verweisvariablen `firstClicked` und `secondClicked`, um die Symbole für die zwei Bezeichnungsfelder, die der Spieler gewählt hat, wieder unsichtbar zu machen. Zuletzt setzt er die Verweisvariablen `firstClicked` und `secondClicked` in C# auf `null` und in Visual Basic auf `Nothing` zurück. Dieser Schritt ist wichtig, weil sich das Programm auf diese Weise selbst zurücksetzt. In diesem Zustand werden keine <xref:System.Windows.Forms.Label>-Steuerelemente überwacht, und das Programm ist wieder für eine Auswahl des Spielers bereit.
 
     > [!NOTE]
     > Ein Timer-Objekt verfügt über eine `Start()`-Methode, die den Timer startet, und eine `Stop()`-Methode, die den Timer stoppt. Wenn Sie die **Enabled**-Eigenschaft des Timers im **Eigenschaftenfenster** auf **TRUE** festlegen,fängt dieser an zu laufen, sobald das Programm beginnt. Wenn Sie die Eigenschaft jedoch auf **FALSE** festgelegt lassen, fängt dieser erst an zu laufen, wenn seine `Start()`-Methode aufgerufen wird. Normalerweise löst ein Timer sein Tick-Ereignis immer wieder aus, wobei in der **Interval**-Eigenschaft festgelegt ist, wie viele Millisekunden zwischen Ticks gewartet wird. Sie haben möglicherweise bemerkt, dass im Tick-Ereignis die `Stop()`-Methode des Zeitgebers aufgerufen wird. Damit wird der Timer in den *Einmalmodus* versetzt, was bedeutet, dass er nach dem Aufruf der `Start()`-Methode das festgelegte Zeitintervall wartet, dann ein Tick-Ereignis auslöst und anschließend stoppt.
@@ -63,6 +63,6 @@ Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuere
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).
+- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md)** .
 
 - Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 5: Hinzufügen von Bezeichnungsverweisen](../ide/step-5-add-label-references.md).

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial 3: Erstellen eines Vergleichsspiels'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,20 +9,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fafd46561b6a3628989b675b14c493b60da6fe
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 5161f81aaf3edf654a5979f6226449bc52604167
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118708"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516580"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Erstellen eines Vergleichsspiels
 
-In diesem Lernprogramm erstellen Sie ein Vergleichsspiel, bei dem Spieler ausgeblendete Symbolpaare finden müssen. Sie lernen Folgendes:
+In diesem Lernprogramm erstellen Sie ein Vergleichsspiel, bei dem Spieler ausgeblendete Symbolpaare finden müssen.
+
+> [!NOTE]
+> In diesem Tutorial werden sowohl C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
+
+In diesem Tutorial werden Sie durch die folgenden Aufgaben geführt:
 
 - Speichern von Objekten (beispielsweise Symbole) in einem <xref:System.Collections.Generic.List%601>-Objekt
 
-- Verwenden einer `foreach`-Schleife in Visual C# und einer `For Each`-Schleife in Visual Basic, um die Elemente einer Liste zu durchlaufen
+- Verwenden einer `foreach`-Schleife in C# und einer `For Each`-Schleife in Visual Basic, um die Elemente einer Liste zu durchlaufen
 
 - Speichern des Formularzustands mithilfe von Verweisvariablen
 
@@ -30,20 +35,11 @@ In diesem Lernprogramm erstellen Sie ein Vergleichsspiel, bei dem Spieler ausgeb
 
 - Erstellen eines Zeitgebers, der nach dem Start und Ablauf einer bestimmten Zeit genau ein Ereignis auslöst
 
-Am Ende dieses Lernprogramms sieht Ihr Code wie in der folgenden Abbildung aus:
+Anschließend sollte Ihre App in etwa wie in der folgenden Abbildung aussehen:
 
 ![Spiel, das Sie in diesem Lernprogramm erstellen](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>Tutoriallinks
-
-Ein vollständige Version des Beispiels können Sie unter [Complete Matching Game tutorial sample (Durchführen des Abgleichspiels)](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) herunterladen.
-
-> [!NOTE]
-> In diesem Lernprogramm wird sowohl Visual C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
-
-Wenn Sie sich festfahren oder Probleme mit der Programmierung haben, versuchen Sie, Ihre Fragen in einem der MSDN-Foren zu stellen. Weitere Informationen finden Sie im Forum zu [Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) und zu [Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Es stehen auch umfangreiche kostenlose Videoschulungen zur Verfügung. Weitere Informationen zum Programmieren in Visual Basic finden Sie unter [Visual Basic fundamentals: Development for absolute beginners (Visual Basic-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Weitere Informationen zum Programmieren in Visual C# finden Sie unter [C# fundamentals: Development for absolute beginners (C#-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
-
-## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|BESCHREIBUNG|
 |-----------|-----------------|
@@ -56,3 +52,15 @@ Wenn Sie sich festfahren oder Probleme mit der Programmierung haben, versuchen S
 |[Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md)|Behalten Sie die Sichtbarkeit von Symbolpaaren bei, falls ein übereinstimmendes Paar ausgewählt wird.|
 |[Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Fügen Sie eine `CheckForWinner()`-Methode hinzu, um zu überprüfen, ob ein Spieler gewonnen hat.|
 |[Schritt 9: Ausprobieren weiterer Funktionen](../ide/step-9-try-other-features.md)|Probieren Sie andere Funktionen aus, z. B. das Ändern von Symbolen und Farben, das Hinzufügen eines Rasters und das Hinzufügen von Sounds. Versuchen Sie, die Spielfläche zu vergrößern und den Timer anzupassen.|
+
+Es stehen auch umfangreiche kostenlose Videoschulungen zur Verfügung. Weitere Informationen zum Programmieren in C# finden Sie unter [C#-Grundlagen: Development for absolute beginners (C#-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Weitere Informationen zum Programmieren in Visual Basic finden Sie unter [Visual Basic fundamentals: Development for absolute beginners (C#-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Beginnen Sie das Tutorial mit **[Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
+
+## <a name="see-also"></a>Siehe auch
+
+* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
+* [Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)

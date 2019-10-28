@@ -1,23 +1,23 @@
 ---
-title: Visual C++-Strukturen im Klassen-Designer
+title: C++-Strukturen im Klassen-Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9b8e81ee25e081a324a8520317fa57a1314ccd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65fb4738b3124daf48b501c6db416d3803da32ec
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975033"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748915"
 ---
-# <a name="visual-c-structures-in-class-designer"></a>Visual C++-Strukturen im Klassen-Designer
+# <a name="c-structures-in-class-designer"></a>C++-Strukturen im Klassen-Designer
 
 Der **Klassen-Designer** unterstützt C++-Strukturen, die mithilfe des Schlüsselworts `struct` deklariert werden. Beachten Sie folgendes Beispiel:
 
@@ -40,6 +40,6 @@ Eine C++-Strukturform in einem Klassendiagramm sieht wie eine Klassenform aus un
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)
+- [Arbeiten mit C++-Code](working-with-visual-cpp-code.md)
 - [Klassen und Strukturen](/cpp/cpp/classes-and-structs-cpp)
 - [struct](/cpp/cpp/struct-cpp)

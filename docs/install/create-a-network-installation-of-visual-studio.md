@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381074"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516325"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -229,9 +229,9 @@ Administratoren können Visual Studio auf Clientarbeitsstationen als Teil eines 
 >
 
 ::: moniker range="vs-2019"
-
-> Wenn Sie bei Offlineinstallationen die Fehlermeldung „Ein Projekt, das mit den folgenden Parametern übereinstimmt, wurde nicht gefunden“ erhalten, stellen Sie sicher, dass Sie bei Version 16.3.5 oder höher den Schalter „--noweb“ verwenden.
-
+> [!IMPORTANT]
+> Wenn Sie bei Offlineinstallationen die Fehlermeldung „Ein Projekt, das mit den folgenden Parametern übereinstimmt, wurde nicht gefunden“ erhalten, stellen Sie sicher, dass Sie bei Version 16.3.5 oder höher den Schalter `--noweb` verwenden.
+>
 ::: moniker-end
 
 Bei der Installation eines Layout werden die installierten Inhalte aus dem Layout abgerufen. Wenn Sie allerdings eine Komponente auswählen, die im Layout fehlt, wird diese aus dem Internet abgerufen.  Falls Sie verhindern möchten, dass das Visual Studio-Setup alle Inhalte, die in Ihrem Layout fehlen, herunterlädt, verwenden Sie die Option `--noWeb`. Wenn `--noWeb` verwendet wird und das Layout nicht über alle Inhalte verfügt, die installiert werden sollen, tritt beim Setup ein Fehler auf.

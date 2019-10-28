@@ -88,17 +88,17 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723a9e382256650ae70982d403c2c768fb1f1e8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655553"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressourcen für die Problembehandlung bei Fehlern der integrierten Entwicklungsumgebung
 
@@ -119,7 +119,7 @@ Sie können auf der Website der [Technischen Microsoft-Communitys](https://techc
 
 ## <a name="product-support"></a>Produktsupport
 
-Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angesehen haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Support](http://go.microsoft.com/fwlink/?linkid=1782). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie unter [Sprechen Sie mit uns](../../ide/talk-to-us.md).
+Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angesehen haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Support](http://go.microsoft.com/fwlink/?linkid=1782). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie auf der Seite [Visual Studio-Feedbackoptionen](../../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Siehe auch
 

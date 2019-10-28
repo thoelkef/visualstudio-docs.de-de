@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747372"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747270"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Tasks
 
-Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Die Aufgaben in der folgenden Liste sind in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten. Wenn [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] installiert wird, sind zusätzliche Aufgaben verfügbar, die für das Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten verwendet werden. Weitere Informationen finden Sie unter [Visual C++-Aufgaben](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Die Aufgaben in der folgenden Liste sind in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten. Wenn [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] installiert wird, sind zusätzliche Aufgaben verfügbar, die für das Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten verwendet werden. Weitere Informationen finden Sie unter [C++-Aufgaben](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt sind, verfügt jeder Task ebenfalls über folgende Parameter:
 
-| Parameter | Beschreibung |
+| Parameter | BESCHREIBUNG |
 |-------------------| - |
 | `Condition` | Optionaler `String` -Parameter.<br /><br /> Ein `Boolean`-Ausdruck, den die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Engine verwendet, um zu bestimmen, ob diese Aufgabe ausgeführt wird. Informationen zu den Bedingungen, die von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] unterstützt werden, finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md). |

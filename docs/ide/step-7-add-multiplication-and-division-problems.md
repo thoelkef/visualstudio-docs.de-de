@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02827ebd5617485f180f4a16652b1cc841c41f4
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314223"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647472"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben
 
@@ -48,7 +48,7 @@ Im siebenten Teil dieses Lernprogramms fügen Sie Multiplikations- und Divisions
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     Da es keine einfache Möglichkeit gibt, das Multiplikationszeichen (×) und das Divisionszeichen (÷) mit der Tastatur einzugeben, wird in Visual C# und Visual Basic ein Sternchen (*) für Multiplikation und ein Schrägstrich (/) für Division akzeptiert.
+     Da es keine einfache Möglichkeit gibt, das Multiplikationszeichen (×) und das Divisionszeichen (÷) mit der Tastatur einzugeben, wird in C# und Visual Basic ein Sternchen (*) für Multiplikation und ein Schrägstrich (/) für Division akzeptiert.
 
 4. Ändern Sie den letzten Teil des <xref:System.Windows.Forms.Timer.Tick>-Ereignishandlers des Timers, damit die richtige Antwort ausgegeben wird, wenn die Zeit abgelaufen ist.
 
@@ -64,6 +64,6 @@ Im siebenten Teil dieses Lernprogramms fügen Sie Multiplikations- und Divisions
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 8: So passen Sie das Quiz an ](../ide/step-8-customize-the-quiz.md)** .
+- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 8: Anpassen des Quiz](../ide/step-8-customize-the-quiz.md)** .
 
 - Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).
