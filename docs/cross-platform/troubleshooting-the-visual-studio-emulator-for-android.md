@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261053"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777813"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Problembehandlung beim Visual Studio-Emulator für Android
 Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen helfen, die bei der Verwendung des Visual Studio-Emulators für Android auftreten können.
@@ -134,7 +134,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
-     Wenn das Setup fehlerhaft ist und Sie Windows 10 verwenden, können Sie versuchen, [Netzwerkgeräte mit dem Befehl netcfg –d erneut zu installieren](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (Abschnitt 6).
+     Wenn das Setup fehlerhaft ist und Sie Windows 10 verwenden, können Sie versuchen, [Netzwerkgeräte mit dem Befehl netcfg –d erneut zu installieren](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (Abschnitt 6).
 
 - Wenn sich das Problem mit diesen Schritten nicht beheben lässt, finden Sie unter [Emulator fails to start (first use)](#NoStart) Informationen zur Software von Drittanbietern, die möglicherweise zu Konflikten mit dem Emulator führen.
 
@@ -209,11 +209,11 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   2. Wählen Sie für den vEthernet-Adapter (Port Windows Phone Emulator – interner Switch) **Eigenschaften** aus dem Kontextmenü.
 
-      ![Von Hyper&#45;V verwendeter virtueller Adapter](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
+      ![Von Hyper-V verwendeter virtueller Adapter](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
       Hier werden die Eigenschaften des Adapters angezeigt.
 
-      ![Eigenschaften des virtuellen Adapters](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")
+      ![Eigenschaften von virtuellem Adapter](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")
 
   3. Für diesen Adapter sollten nur die folgenden Elemente unter **diese Verbindung verwendet folgende Elemente** ausgewählt werden:
 
@@ -241,7 +241,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   - Öffnen Sie Hyper-V und wechseln Sie zum Manager für virtuelle Switches. Erstellen Sie einen virtuellen Switch mit dem Namen „Windows Phone-Emulator, interner Switch“, und setzen Sie den Verbindungstyp auf **internes Netzwerk**.
 
-     ![Manager für virtuelle Switches](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
+     ![Manager für virtuelle Switches](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_V_Switch_Man")
 
     Starten Sie jetzt den Emulator. Es sollte funktionieren.
 
@@ -311,6 +311,6 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 ## <a name="Support"></a> Supportressourcen
  Wenn Ihr Hostcomputer die Systemanforderungen erfüllt und Sie ein Problem feststellen, das in diesem Handbuch zur Problembehandlung nicht erörtert wird, müssen Sie Folgendes vornehmen:
 
-- Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) und "visual-studio".
+- Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) und "visual-studio".
 
 - Melden Sie ein Problem mithilfe des Tools „Lächeln senden“ in Visual Studio oder im Emulator-Manager.

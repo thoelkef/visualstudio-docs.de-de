@@ -13,23 +13,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), CL task
-- CL task (MSBuild (Visual C++))
+- MSBuild (C++), CL task
+- CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ec3be0adf6f262cafbebe2da714f4e74777329c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569692"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747354"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
-Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).
+Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).
 
 ## <a name="parameters"></a>Parameter
  Im Folgenden werden die Parameter der **CL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
@@ -62,7 +62,7 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Optionaler String-Parameter.
 
-   Eine Zeichenfolge, die immer in der Befehlszeile ausgegeben wird. Ihr Standardwert ist „**/c**“.
+   Eine Zeichenfolge, die immer in der Befehlszeile ausgegeben wird. Ihr Standardwert ist „ **/c**“.
 
 - **AssemblerListingLocation**
 
@@ -78,15 +78,15 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **NoListing** - *\<none>*
+  - **NoListing** -  *\<none>*
 
-  - **AssemblyCode** - **/FA**
+  - **AssemblyCode** -  **/FA**
 
-  - **AssemblyAndMachineCode** - **/FAc**
+  - **AssemblyAndMachineCode** -  **/FAc**
 
-  - **AssemblyAndSourceCode** - **/FAs**
+  - **AssemblyAndSourceCode** -  **/FAs**
 
-  - **All** - **/FAcs**
+  - **All** -  **/FAcs**
 
     Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listingdatei)](/cpp/build/reference/fa-fa-listing-file).
 
@@ -98,13 +98,13 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Default** -                          *\<none>*
+  - **Default** -                           *\<none>*
 
-  - **StackFrameRuntimeCheck** - **/RTCs**
+  - **StackFrameRuntimeCheck** -  **/RTCs**
 
-  - **UninitializedLocalUsageCheck** - **/RTCu**
+  - **UninitializedLocalUsageCheck** -  **/RTCu**
 
-  - **EnableFastChecks** -                          **/RTC1**
+  - **EnableFastChecks** -                           **/RTC1**
 
     Weitere Informationen finden Sie unter [/RTC (Laufzeitfehlerüberprüfungen)](/cpp/build/reference/rtc-run-time-error-checks).
 
@@ -146,11 +146,11 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Cdecl** - **/Gd**
+  - **Cdecl** -  **/Gd**
 
-  - **FastCall** -                          **/Gr**
+  - **FastCall** -                           **/Gr**
 
-  - **StdCall** -                          **/Gz**
+  - **StdCall** -                           **/Gz**
 
     Weitere Informationen finden Sie unter [/Gd, /Gr, /Gv, /Gz (Aufrufkonvention)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
 
@@ -162,11 +162,11 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Default** - *\<none>*
+  - **Default** -  *\<none>*
 
-  - **CompileAsC** - **/TC**
+  - **CompileAsC** -  **/TC**
 
-  - **CompileAsCpp** - **/TP**
+  - **CompileAsCpp** -  **/TP**
 
     Weitere Informationen finden Sie unter [/Tc, /Tp, /TC, /TP (Typ der Quelldatei angeben)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
 
@@ -178,15 +178,15 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **false** - *\<none>*
+  - **false** -  *\<none>*
 
-  - **true** - **/clr**
+  - **true** -  **/clr**
 
-  - **Pure** - **/clr:pure**
+  - **Pure** -  **/clr:pure**
 
-  - **Safe** - **/clr:safe**
+  - **Safe** -  **/clr:safe**
 
-  - **OldSyntax** - **/clr:oldSyntax**
+  - **OldSyntax** -  **/clr:oldSyntax**
 
     Weitere Informationen finden Sie unter [/clr (Common Language Runtime-Kompilierung)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
@@ -206,11 +206,11 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **OldStyle** - **/Z7**
+  - **OldStyle** -  **/Z7**
 
-  - **ProgramDatabase** - **/Zi**
+  - **ProgramDatabase** -  **/Zi**
 
-  - **EditAndContinue** - **/ZI**
+  - **EditAndContinue** -  **/ZI**
 
     Weitere Informationen finden Sie unter [/Z7, /Zi, /ZI (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format).
 
@@ -238,9 +238,9 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **StreamingSIMDExtensions** - **/arch:SSE**
+  - **StreamingSIMDExtensions** -  **/arch:SSE**
 
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**
+  - **StreamingSIMDExtensions2** -  **/arch:SSE2**
 
     Weitere Informationen finden Sie unter [/arch (x86)](/cpp/build/reference/arch-x86).
 
@@ -268,13 +268,13 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **None** - **/errorReport:none**
+  - **None** -  **/errorReport:none**
 
-  - **Prompt** - **/errorReport:prompt**
+  - **Prompt** -  **/errorReport:prompt**
 
-  - **Queue** - **/errorReport:queue**
+  - **Queue** -  **/errorReport:queue**
 
-  - **Send** - **/errorReport:send**
+  - **Send** -  **/errorReport:send**
 
     Weitere Informationen finden Sie unter [/errorReport (Interne Compilerfehler melden)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
 
@@ -286,13 +286,13 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **false** - *\<none>*
+  - **false** -  *\<none>*
 
-  - **Async** - **/EHa**
+  - **Async** -  **/EHa**
 
-  - **Sync** - **/EHsc**
+  - **Sync** -  **/EHsc**
 
-  - **SyncCThrow** - **/EHs**
+  - **SyncCThrow** -  **/EHs**
 
     Weitere Informationen finden Sie unter [/EH (Ausnahmebehandlungsmodell)](/cpp/build/reference/eh-exception-handling-model).
 
@@ -312,11 +312,11 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Neither** - *\<none>*
+  - **Neither** -  *\<none>*
 
-  - **Size** - **/Os**
+  - **Size** -  **/Os**
 
-  - **Speed** - **/Ot**
+  - **Speed** -  **/Ot**
 
     Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, schnellen Code bevorzugen)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
 
@@ -336,11 +336,11 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Precise** - **/fp:precise**
+  - **Precise** -  **/fp:precise**
 
-  - **Strict** - **/fp:strict**
+  - **Strict** -  **/fp:strict**
 
-  - **Fast** - **/fp:fast**
+  - **Fast** -  **/fp:fast**
 
     Weitere Informationen finden Sie unter [/fp (Gleitkommaverhalten festlegen)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
@@ -362,7 +362,7 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
 - **ForcedUsingFiles**
 
-   Optionaler **String[]**-Parameter.
+   Optionaler **String[]** -Parameter.
 
    Weist den Präprozessor an, eine oder mehrere angegebene **#using**-Datei zu verarbeiten.
 
@@ -400,13 +400,13 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Default** - *\<none>*
+  - **Default** -  *\<none>*
 
-  - **Disabled** - **/Ob0**
+  - **Disabled** -  **/Ob0**
 
-  - **OnlyExplicitInline** - **/Ob1**
+  - **OnlyExplicitInline** -  **/Ob1**
 
-  - **AnySuitable** - **/Ob2**
+  - **AnySuitable** -  **/Ob2**
 
     Weitere Informationen finden Sie unter [/Ob (Inlinefunktionserweiterung)](/cpp/build/reference/ob-inline-function-expansion).
 
@@ -444,7 +444,7 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
 - **ObjectFiles**
 
-   Optionaler **String[]**-Parameter.
+   Optionaler **String[]** -Parameter.
 
    Eine Liste von Objektdateien.
 
@@ -480,13 +480,13 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Disabled** - **/Od**
+  - **Disabled** -  **/Od**
 
-  - **MinSpace** - **/O1**
+  - **MinSpace** -  **/O1**
 
-  - **MaxSpeed** - **/O2**
+  - **MaxSpeed** -  **/O2**
 
-  - **Full** - **/Ox**
+  - **Full** -  **/Ox**
 
     Weitere Informationen finden Sie unter [/O-Optionen (Code optimieren)](/cpp/build/reference/o-options-optimize-code).
 
@@ -498,11 +498,11 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **NotUsing** - *\<none>*
+  - **NotUsing** -  *\<none>*
 
-  - **Create** - **/Yc**
+  - **Create** -  **/Yc**
 
-  - **Use** - **/Yu**
+  - **Use** -  **/Yu**
 
     Weitere Informationen finden Sie unter [/Yc (Vorkompilierte Headerdatei erstellen)](/cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (vorkompilierte Headerdatei verwenden)](/cpp/build/reference/yu-use-precompiled-header-file). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.
 
@@ -590,13 +590,13 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **MultiThreaded** - **/MT**
+  - **MultiThreaded** -  **/MT**
 
-  - **MultiThreadedDebug** - **/MTd**
+  - **MultiThreadedDebug** -  **/MTd**
 
-  - **MultiThreadedDLL** - **/MD**
+  - **MultiThreadedDLL** -  **/MD**
 
-  - **MultiThreadedDebugDLL** - **/MDd**
+  - **MultiThreadedDebugDLL** -  **/MDd**
 
     Weitere Informationen finden Sie unter [/MD, /MT, /LD (Laufzeitbibliothek verwenden)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
@@ -646,17 +646,17 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **Default** - **/Zp1**
+  - **Default** -  **/Zp1**
 
-  - **1Byte** - **/Zp1**
+  - **1Byte** -  **/Zp1**
 
-  - **2Bytes** - **/Zp2**
+  - **2Bytes** -  **/Zp2**
 
-  - **4Bytes** - **/Zp4**
+  - **4Bytes** -  **/Zp4**
 
-  - **8Bytes** - **/Zp8**
+  - **8Bytes** -  **/Zp8**
 
-  - **16Bytes** - **/Zp16**
+  - **16Bytes** -  **/Zp16**
 
     Weitere Informationen finden Sie unter [/Zp (Ausrichten des Strukturmembers)](/cpp/build/reference/zp-struct-member-alignment).
 
@@ -678,7 +678,7 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
 - **TreatSpecificWarningsAsErrors**
 
-   Optionaler **String[]**-Parameter.
+   Optionaler **String[]** -Parameter.
 
    Behandelt die angegebene Liste von Compilerwarnungen als Fehler.
 
@@ -740,17 +740,17 @@ Umschließt das Visual C++-Compilertool *cl.exe*. Der Compiler generiert ausfüh
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-  - **TurnOffAllWarnings** - **/W0**
+  - **TurnOffAllWarnings** -  **/W0**
 
-  - **Level1** - **/W1**
+  - **Level1** -  **/W1**
 
-  - **Level2** - **/W2**
+  - **Level2** -  **/W2**
 
-  - **Level3** - **/W3**
+  - **Level3** -  **/W3**
 
-  - **Level4** - **/W4**
+  - **Level4** -  **/W4**
 
-  - **EnableAllWarnings** - **/Wall**
+  - **EnableAllWarnings** -  **/Wall**
 
     Weitere Informationen finden Sie unter der Option **/W**_n_ in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).
 

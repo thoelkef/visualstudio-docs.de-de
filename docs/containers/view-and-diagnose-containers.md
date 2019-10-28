@@ -1,31 +1,27 @@
 ---
-title: Containerprotokolle, Umgebungsvariablen und Dateisystemzugriff
+title: Docker-Containerprotokolle, Umgebungsvariablen und Dateisystemzugriff
 description: In diesem Artikel wird beschrieben, wie Sie Ihre Fähigkeiten zum Debuggen und Diagnostizieren Ihrer containerbasierten Apps in Visual Studio mithilfe eines Toolfensters verbessern, um zu erfahren, was innerhalb der Container geschieht, die Ihre App hosten.
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 05/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 3fb9a52f990a2e492c63a6e71a7cc2063110c816
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126094"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535626"
 ---
-# <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Anzeigen und Diagnostizieren von Containern in Visual Studio
+# <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Anzeigen und Diagnostizieren von Containern und Images in Visual Studio
 
 Mithilfe des Fensters **Container** können Sie anzeigen, was in den Containern passiert, die Ihre App hosten. Wenn Sie gewohnt sind, die Eingabeaufforderung zum Ausführen von Docker-Befehlen zu verwenden, um die Vorgänge in Ihren Containern anzuzeigen und zu diagnostizieren, wird sich dieses Fenster als praktischere Möglichkeit zum Überwachen Ihrer Container erweisen, ohne dass Sie die Visual Studio-IDE verlassen müssen.
-
-> [!NOTE]
-> Das Containerfenster steht derzeit als Vorschauerweiterung zur Verfügung, die Sie Visual Studio 2019 [herunterladen](https://aka.ms/vscontainerspreview) können.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- Installation von [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-- Installation der [Containerfenstererweiterung](https://aka.ms/vscontainerspreview)
+- [Visual Studio 2019, Version 16.4, Vorschauversion 2](https://visualstudio.microsoft.com/downloads) oder höher. Wenn Sie eine frühere Version von Visual Studio 2019 verwenden, installieren Sie die Fenstererweiterung [Container](https://aka.ms/vscontainerspreview).
 
 ## <a name="view-information-about-your-containers"></a>Anzeigen von Informationen zu den Containern
 
@@ -42,7 +38,7 @@ Auf der linken Seite wird die Liste der Container auf Ihrem lokalen Computer ang
 
 Auf der Registerkarte **Umgebung** werden die Umgebungsvariablen im Container angezeigt. Sie können diese Variablen auf vielerlei Weisen für den Container Ihrer App festlegen, z. B. in der Dockerfile, in einer ENV-Datei oder mithilfe der Option „-e“, wenn Sie einen Container mithilfe eines Docker-Befehls starten.
 
-![Screenshot: Registerkarte „Umgebung“ im Containerfenster](media/view-and-diagnose-containers/container-environment-vars.png)
+![Screenshot: Registerkarte „Umgebung“ im Containerfenster](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Änderungen an den Umgebungsvariablen werden nicht in Echtzeit wiedergegeben. Außerdem handelt es sich bei den Umgebungsvariablen auf dieser Registerkarte um Systemumgebungsvariablen im Container, die nicht den lokalen Benutzerumgebungsvariablen der App entsprechen.
@@ -51,7 +47,7 @@ Auf der Registerkarte **Umgebung** werden die Umgebungsvariablen im Container an
 
 Auf der Registerkarte **Ports** können Sie die Portzuordnungen überprüfen, die für Ihren Container konfiguriert sind.
 
-![Screenshot: Registerkarte „Ports“ im Containerfenster](media/view-and-diagnose-containers/container-ports.png)
+![Screenshot: Registerkarte „Ports“ im Containerfenster](media/view-and-diagnose-containers/containers-ports.png)
 
 Bekannte Ports sind verknüpft. Wenn also Inhalt für einen Port verfügbar ist, können Sie auf den Link klicken, um den Browser zu öffnen.
 
@@ -59,12 +55,12 @@ Bekannte Ports sind verknüpft. Wenn also Inhalt für einen Port verfügbar ist,
 
 Auf der Registerkarte **Protokolle** werden die Ergebnisse des `docker logs`-Befehls angezeigt. Auf der Registerkarte werden standardmäßig die Datenströme „stdout“ und „stderr“ für einen Container angezeigt, aber Sie können die Ausgabe konfigurieren. Weitere Informationen finden Sie unter [Docker-Protokollierung](https://docs.docker.com/config/containers/logging/).  Auf der Registerkarte **Protokolle** werden die Protokolle standardmäßig in Echtzeit angezeigt. Sie können dies jedoch deaktivieren, indem Sie auf der Registerkarte auf **Stoppen** klicken.
 
-![Screenshot: Registerkarte „Protokolle“ im Containerfenster](media/view-and-diagnose-containers/containers-logs.jpg)
+![Screenshot: Registerkarte „Protokolle“ im Containerfenster](media/view-and-diagnose-containers/containers-logs.png)
 
 Klicken Sie auf der Registerkarte **Protokolle** auf **Löschen**, um die Protokolle zu löschen.  Klicken Sie auf **Aktualisieren**, um alle Protokolle abzurufen.
 
 > [!NOTE]
-> Visual Studio leitet „stdout“ und „stderr“ automatisch an das **Ausgabefenster** weiter, also werden für Container, die über Visual Studio gestartet werden (d. h. die Container im Abschnitt **Lösungscontainer**), keine Protokolle auf dieser Registerkarte angezeigt. Verwenden Sie stattdessen das **Ausgabefenster**.
+> Bei Ausführung mit Windows-Containern ohne Debuggen leitet Visual Studio stdout und stderr automatisch zum Fenster **Ausgabe** um. Daher zeigen Windows-Container, die in Visual Studio mit **STRG**+**F5** gestartet werden, auf dieser Registerkarte keine Protokolle an. Verwenden Sie stattdessen das Fenster **Ausgabe**.
 
 ## <a name="view-the-filesystem"></a>Anzeigen des Dateisystems
 
@@ -81,6 +77,32 @@ Auf der Registerkarte **Dateien** können Sie Anwendungsprotokolle wie IIS-Proto
 ## <a name="start-stop-and-remove-containers"></a>Starten, Stoppen und Entfernen von Containern
 
 Im Fenster **Container** werden standardmäßig alle Container auf dem Computer angezeigt, die von Docker verwaltet werden. Sie können die Symbolleistenschaltflächen zum Starten, Stoppen und Entfernen (Löschen) eines Containers verwenden, den Sie nicht mehr benötigen.  Diese Liste wird dynamisch aktualisiert, wenn Container erstellt oder entfernt werden.
+
+## <a name="open-a-terminal-window-in-a-running-container"></a>Öffnen eines Terminal Fensters in einem ausgeführten Container
+
+Sie können ein Terminalfenster (Eingabeaufforderung oder interaktive Shell) im Container öffnen, indem Sie im Fenster **Container** auf die Schaltfläche **Terminalfenster öffnen** klicken.
+
+![Screenshot von „Terminalfenster öffnen“ im Fenster „Container“](media/view-and-diagnose-containers/containers-open-terminal-window.png)
+
+Für Windows-Container wird die Windows-Befehlseingabeaufforderung geöffnet. Für Linux-Container wird mithilfe der bash-Shell ein Fenster geöffnet.
+
+![Screenshot des bash-Fensters](media/view-and-diagnose-containers/container-bash-window.png)
+
+Normalerweise wird das Terminalfenster außerhalb von Visual Studio als separates Fenster geöffnet. Wenn Sie eine Befehlszeilenumgebung als andockbares Toolfenster in die Visual Studio IDE integrieren möchten, können Sie [Whack Whack Terminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal) installieren.
+
+## <a name="attach-the-debugger-to-a-process"></a>Anhängen des Debuggers an einen Prozess
+
+Sie können den Debugger an einen Prozess anhängen, der im Container ausgeführt wird, indem Sie im Fenster „Container“ auf der Symbolleiste auf die Schaltfläche **An Prozess anhängen** klicken. Wenn Sie auf diese Schaltfläche klicken, wird das Dialogfeld **An Prozess anhängen** angezeigt, das die verfügbaren Prozesse anzeigt, die im Container ausgeführt werden.  
+
+![Screenshot des Dialogfelds „An Prozess anhängen“](media/view-and-diagnose-containers/containers-attach-to-process.jpg)
+
+Im Container ist das Anhängen an verwaltete Prozesse möglich. Um nach einem Prozess in einem anderen Container zu suchen, klicken Sie auf die Schaltfläche **Suchen**, und wählen Sie im Dialogfeld **Docker-Container auswählen** einen anderen Container aus.
+
+## <a name="viewing-images"></a>Anzeigen von Images
+
+Sie können Images auch auf dem lokalen Computer anzeigen, und zwar im Fenster **Container** auf der Registerkarte **Images**. Images, die aus externen Repositorys abgerufen werden, werden in einer Strukturansicht zusammengefasst. Wählen Sie ein Image aus, um dessen Details zu überprüfen.
+
+Um ein Image zu entfernen, klicken Sie in der Strukturansicht mit der rechten Maustaste auf das Image und wählen **Entfernen** aus. Oder wählen Sie das Image aus, und klicken Sie auf der Symbolleiste auf die Schaltfläche **Entfernen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

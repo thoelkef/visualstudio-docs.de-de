@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150179"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652628"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -26,13 +26,13 @@ Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt in Visual Studio hinzufügen, 
 
  - [Codebereinigung](../ide/code-styles-and-code-cleanup.md) (**STRG**+**K**, **STRG**+**E**): wendet die Leerzeicheneinstellungen, z. B. das Einzugsformat, und ausgewählte Codeformatierungseinstellungen an, z. B. die Sortierung von `using`-Anweisungen.
  - **Bearbeiten** > **Erweitert** > **Dokument formatieren** (**STRG**+**K**, **STRG**+**D** im Standardprofil): wendet nur die Leerzeicheneinstellungen an, z. B. das Einzugsformat.
- 
+
  ::: moniker-end
- 
+
 ::: moniker range="=vs-2017"
 
 Wenn Sie eine EditorConfig-Datei zu Ihrem Projekt in Visual Studio hinzufügen, werden neue Codezeilen gemäß der EditorConfig-Einstellungen formatiert. Die Formatierung von vorhandenem Code wird nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Das Formatieren des Dokuments wirkt sich nur auf die Leerzeicheneinstellungen (z. B. auf das Einzugsformat) aus, es sei denn, Sie haben „Dokument formatieren“ zur [Durchführung zusätzlicher Codebereinigung](../ide/code-styles-and-code-cleanup.md#apply-code-styles) konfiguriert.
- 
+
  ::: moniker-end
 
 ::: moniker range="vs-2017"

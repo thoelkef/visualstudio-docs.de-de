@@ -1,7 +1,7 @@
 ---
 title: Beispiele für die plattformübergreifende mobile Entwicklung | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8eb8b53da30f0c0896ac9576407d34f9a2f9bdbc
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819418"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777712"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Beispiele für die plattformübergreifende mobile Entwicklung
-Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entwicklung installiert werden, generieren vollständige Beispiele, die Sie zum Lernen verwenden können. Darüber hinaus finden Sie im Windows Dev Center einige Anwendungsbeispiele, die Sie herunterladen und in Visual Studio ausprobieren können.
+
+Einige der Vorlagen, die von **Mobile Entwicklung mit C++** installiert werden, generieren vollständige Beispiele, die Sie zum Lernen verwenden können. Darüber hinaus finden Sie im Windows Dev Center einige Anwendungsbeispiele, die Sie herunterladen und in Visual Studio ausprobieren können.
 
 - [Beispiel zu Android-Anwendung „hello-jni“](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
 
@@ -36,7 +37,7 @@ Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entw
 
 - [Beispiel zu Android-Bibliothek „TwoLibs“](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
 
-   Dieses Beispiel ist Bestandteil des Android NDK-Beispiels „TwoLibs“. In dem Beispiel werden sowohl eine dynamisch geladene freigegebene Bibliothek als auch eine statische native C++-Android-Bibliothek verwendet, in der eine Methode implementiert ist, die aus einer JNI-Anwendung (Java Native Interface) aufgerufen wird. Dieses Beispiel ist ein guter Ausgangspunkt für Entwickler, zu lernen, wie statische und dynamische freigegebene Bibliotheken verwendet werden können, um eine End-to-End-JNI-Android-Anwendung mit Visual Studio 2015 zu erstellen.
+   Dieses Beispiel ist Bestandteil des Android NDK-Beispiels „TwoLibs“. In dem Beispiel werden sowohl eine dynamisch geladene freigegebene Bibliothek als auch eine statische native C++-Android-Bibliothek verwendet, in der eine Methode implementiert ist, die aus einer JNI-Anwendung (Java Native Interface) aufgerufen wird. Dieses Beispiel ist ein guter Ausgangspunkt für Entwickler, zu lernen, wie statische und dynamische freigegebene Bibliotheken verwendet werden können, um eine komplette JNI-Android-Anwendung mit Visual Studio zu erstellen.
 
 - [Beispiel zu Android-Anwendung „TeaPot“](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
 
@@ -48,7 +49,7 @@ Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entw
 
 - [Android-Bibliotheksbeispiel „test-libstdcpp“](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)
 
-   Dieses Beispiel ist Bestandteil des Android NDK-Beispiels „test-libstdc++“, insbesondere für die Verwendung mit Visual Studio 2015. Dieses Beispiel ist ein guter Ausgangspunkt für Entwickler, zu lernen, wie die Standardbibliothek verwendet wird.
+   Dieses Beispiel ist Bestandteil des Android NDK-Beispiels „test-libstdc++“, insbesondere für die Verwendung mit Visual Studio. Dieses Beispiel ist ein guter Ausgangspunkt für Entwickler, zu lernen, wie die Standardbibliothek verwendet wird.
 
   Um eines der Beispiele in Visual Studio öffnen, laden Sie die ZIP-Datei herunter, und öffnen Sie im Explorer die **Eigenschaften** -Seite der heruntergeladenen Datei. Wählen Sie die Schaltfläche **Zulassen** aus, und wählen Sie dann **OK**aus. Extrahieren Sie den Inhalt der ZIP-Datei in einem geeigneten Speicherort, öffnen Sie den C++-Ordner im extrahierten Beispiel, und öffnen Sie die Projektmappendatei.
 

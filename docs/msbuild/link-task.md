@@ -22,23 +22,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), Link task
-- Link task (MSBuild (Visual C++))
+- MSBuild (C++), Link task
+- Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825410"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747294"
 ---
 # <a name="link-task"></a>Link-Aufgabe
-Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool, das Objektdateien und Bibliotheken im COFF-Format (Common Object File Format) miteinander verbindet, um eine ausführbare Datei ( *.exe*) oder eine DLL (Dynamic Link Library) zu erstellen. Weitere Informationen finden Sie unter [Linkeroptionen](/cpp/build/reference/linker-options).
+Umschließt das Microsoft C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool, das Objektdateien und Bibliotheken im COFF-Format (Common Object File Format) miteinander verbindet, um eine ausführbare Datei ( *.exe*) oder eine DLL (Dynamic Link Library) zu erstellen. Weitere Informationen finden Sie unter [Linkeroptionen](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Parameter
  Im Folgenden werden die Parameter der **Link**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.

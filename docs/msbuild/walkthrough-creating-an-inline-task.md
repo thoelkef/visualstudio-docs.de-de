@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cbeba8418b3364d4e3762643a78465158f80e6fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445328"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655448"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen eines Inlinetasks
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Weitere Informationen hierzu finden Sie unter [Inlineaufgaben](../msbuild/msbuild-inline-tasks.md).
@@ -46,7 +46,7 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
 
 1. Klicken Sie in Visual Studio im Menü **Datei** auf die Option **Neu** und anschließend auf **Projekt**.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp **Visual C#** und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\*. Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** **InlineTasks** lautet.
+2. Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp **Visual C#** und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** **InlineTasks** lautet.
 
 3. Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.
 
@@ -94,7 +94,7 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
 
 1. Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools**, und klicken Sie auf **Visual Studio-Eingabeaufforderung**.
 
-2. Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall *D:\InlineTasks\InlineTasks\\*.
+2. Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall *D:\InlineTasks\InlineTasks\\* .
 
 3. Geben Sie **msbuild** ohne Befehlsoptionen ein, und drücken Sie anschließend die **EINGABETASTE**. Standardmäßig wird so die Datei *InlineTasks.csproj* erstellt und das TestBuild-Standardziel verarbeitet, das die „Hallo“-Aufgabe aufruft.
 

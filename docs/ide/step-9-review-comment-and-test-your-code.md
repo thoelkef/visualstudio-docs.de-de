@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314202"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572480"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Schritt 9: Überprüfen, Kommentieren und Testen des Codes
 
@@ -65,7 +65,7 @@ Sie haben soeben ein funktionierendes Programm erstellt, und obwohl es noch nich
     > [!TIP]
     > Die IDE soll das Schreiben von Code vereinfachen, und *Codeausschnitte* sind eine Möglichkeit, dies zu erreichen. Ein Ausschnitt ist eine Kurzform, die in einen kleinen Codeblock erweitert wird.
     >
-    >  Sie können alle verfügbaren Ausschnitte sehen. Klicken Sie in der Menüleiste auf **Extras** > **Codeausschnitt-Manager**. Bei C# befindet sich der `if`-Ausschnitt unter **Visual C#** . Bei Visual Basic befinden sich die `if`-Ausschnitte unter **Konditionelle Abschnitte und Schleifen** > **Codemuster**. Sie können diesen Manager verwenden, um vorhandene Ausschnitte zu durchsuchen oder eigene Ausschnitte hinzuzufügen.
+    >  Sie können alle verfügbaren Ausschnitte sehen. Klicken Sie in der Menüleiste auf **Extras** > **Codeausschnitt-Manager**. Bei C# befindet sich der `if`-Ausschnitt unter **Visual C#** . Bei Visual Basic befinden sich die `if`-Ausschnitte unter **Codemuster** > **Konditionelle Abschnitte und Schleifen**. Sie können diesen Manager verwenden, um vorhandene Ausschnitte zu durchsuchen oder eigene Ausschnitte hinzuzufügen.
     >
     >  Um einen Codeausschnitt bei der Eingabe von Code zu aktivieren, geben Sie ihn ein, und drücken Sie die **TAB-TASTE**. Im **IntelliSense**-Fenster werden viele Codeausschnitte angezeigt. Drücken Sie daher die **TAB-TASTE** zweimal: das erste Mal, um den Ausschnitt im **IntelliSense**-Fenster auszuwählen, und das zweite Mal, um der IDE mitzuteilen, dass dieser Ausschnitt verwendet werden soll. (IntelliSense unterstützt den `if`-Ausschnitt, aber nicht den `ifelse`-Ausschnitt.)
 

@@ -1,5 +1,5 @@
 ---
-title: Visual C++-Klassen im Klassen-Designer
+title: C++Klassen in Klassen-Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975046"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748928"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
+# <a name="c-classes-in-class-designer"></a>C++Klassen in Klassen-Designer
 
 Der **Klassen-Designer** unterstützt C++-Klassen und visualisiert native C++-Klassen auf die gleiche Weise wie Visual Basic- und C#-Klassenformen, mit Ausnahme, dass C++-Klassen über mehrere Vererbungsbeziehungen verfügen können. Sie können die Klassenform erweitern, um mehr Felder und Methoden in der Klasse anzuzeigen, oder sie aus Platzgründen reduzieren.
 
@@ -174,7 +174,7 @@ Die folgende Tabelle zeigt einige Beispiele der kanonischen spezialisierten Klas
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)
+- [Arbeiten mit C++-Code](working-with-visual-cpp-code.md)
 - [Klassen und Strukturen](/cpp/cpp/classes-and-structs-cpp)
 - [Anonyme Klassentypen](/cpp/cpp/anonymous-class-types)
 - [Mehrfachvererbung](https://msdn.microsoft.com/library/6td5yws2.aspx)

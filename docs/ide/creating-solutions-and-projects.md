@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746870"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747965"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -53,7 +53,7 @@ Auflistungen von Quellcodedateien können Sie dem Projekt bei Bedarf hinzufügen
 1. Wechseln Sie im Assistenten zum Speicherort der Dateien, und geben Sie dann einen Namen für das neue Projekt in das Feld **Name** ein. Wenn Sie diesen Vorgang abschlossen haben, klicken Sie auf die Schaltfläche **Fertig stellen**.
 
 > [!NOTE]
-> Diese Option funktioniert am besten für relativ einfache Sammlungen von Dateien. Derzeit werden nur die Projekttypen Visual C++, Apache Cordova, Visual Basic und C# unterstützt.
+> Diese Option funktioniert am besten für relativ einfache Sammlungen von Dateien. Derzeit werden nur die Projekttypen C++, Apache Cordova, Visual Basic und C# unterstützt.
 
 ## <a name="add-files-to-a-solution"></a>Hinzufügen von Dateien zu einer Projektmappe
 

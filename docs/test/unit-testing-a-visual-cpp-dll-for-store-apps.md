@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Testen einer Visual C++-DLL für UWP-Apps'
+title: 'Vorgehensweise: Testen einer C++-DLL für UWP-Apps'
 ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
@@ -7,14 +7,14 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925790"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748080"
 ---
-# <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
+# <a name="how-to-test-a-c-dll"></a>Testen einer C++-DLL
 
 In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für eine C++-DLL für UWP-Apps (Universelle Windows-Plattform) mit dem Microsoft-Testframework für C++ dargestellt. Die RooterLib-DLL implementiert eine Funktion zum annähernden Berechnen der Quadratwurzel einer vorgegebenen Zahl, und zwar in einer Weise, die entfernt an Grenzwertberechnungen in der Analysis erinnert. Die DLL kann dann in eine UWP-App eingeschlossen werden, die Benutzern Spaß an der Mathematik vermittelt.
 

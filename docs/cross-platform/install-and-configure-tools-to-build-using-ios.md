@@ -1,7 +1,7 @@
 ---
-title: Installieren und Konfigurieren von Tools zum Erstellen mit iOS | Microsoft-Dokumentation
+title: Installieren und Konfigurieren von Tools zum Entwickeln mit iOS | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/13/2019
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,21 +12,21 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586821"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588873"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installieren und Konfigurieren von Tools zum Erstellen mit iOS
 
-Sie können Visual C++ für plattformübergreifende Mobile-Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Macintosh-Computer erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.
+Sie können Visual Studio mit den Tools für die plattformübergreifende **mobile Entwicklung mit C++** verwenden, um iOS-Code im iOS-Simulator oder auf einem iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzierungseinschränkungen muss der Code jedoch remote auf einem Mac erstellt und ausgeführt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent ( [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)) auf Ihrem Macintosh-Computer einrichten und konfigurieren. Der Remote-Agent verarbeitet Buildanforderungen von Visual Studio und führt die App auf einem iOS-Gerät, das mit dem Macintosh-Computer verbunden ist, oder im iOS-Simulator auf dem Macintosh-Computer aus.
 
 > [!NOTE]
-> Informationen zur Verwendung von in der Cloud gehosteten Mac-Diensten anstelle eines Macs finden Sie unter [Konfigurieren von Visual Studio zum Herstellen der Verbindung zu Ihrem in der Cloud gehosteten Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Die Anweisungen gelten für das Erstellen mit Visual Studio Tools for Apache Cordova. Um die Anweisungen für den Build mit C++ zu verwenden, müssen Sie „vcremote“ statt „remotebuild“ angeben.
+> Informationen zur Verwendung von in der Cloud gehosteten Mac-Diensten anstelle eines Macs finden Sie unter [Konfigurieren von Visual Studio zum Herstellen der Verbindung zu Ihrem in der Cloud gehosteten Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Die Anweisungen gelten für das Erstellen mit Visual Studio Tools for Apache Cordova. Um die Anweisungen für den Build mit C++ zu verwenden, müssen Sie `vcremote` durch `remotebuild` ersetzen.
 
-Lesen Sie nach der Installation der Tools zum Erstellen mit iOS in diesem Thema nach, wie Sie den Remote-Agent schnell für die iOS-Entwicklung in Visual Studio und auf Ihrem Macintosh-Computer konfigurieren und aktualisieren können.
+Lesen Sie nach der Installation der Tools zum Entwickeln mit iOS in diesem Artikel nach, wie Sie den Remote-Agent schnell für die iOS-Entwicklung in Visual Studio und auf Ihrem Mac konfigurieren und aktualisieren können.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -64,13 +64,13 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
 - [Node.js](https://nodejs.org/), Version 8.11.3, und npm, Version 5.6.0
 
-   Installieren Sie Node.js-Version 8.11.3 auf Ihrem Mac. Wenn Sie das Node.js-Paket installieren, sollte es die npm-Version 5.6.0 aufweisen. Beachten Sie, dass andere Versionen von Node.js und npm möglicherweise einige im Remote-Agent vcremote verwendete Module nicht unterstützen, was zu einem Fehler bei der vcremote-Installation führen kann.
+   Installieren Sie Node.js-Version 8.11.3 auf Ihrem Mac. Wenn Sie das Node.js-Paket installieren, sollte es die npm-Version 5.6.0 aufweisen. Andere Versionen von Node.js und npm unterstützen möglicherweise einige im Remote-Agent `vcremote` verwendete Module nicht, was zu einem Fehler bei der `vcremote`-Installation führen kann.
 
 ## <a name="Install"></a> Installieren des Remote-Agents für iOS
 
-Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.
+Wenn Sie die Workload „Mobile Entwicklung mit C++“ installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.
 
-Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderlichen Komponenten](#prerequisites) vorhanden sind und [Visual C++ für die plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) installiert ist.
+Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderlichen Komponenten](#prerequisites) vorhanden sind und Sie die Schritte unter [Installieren der plattformübergreifenden mobilen Entwicklung mit C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) ausgeführt haben.
 
 ### <a name="DownloadInstall"></a> Herunterladen und Installieren des Remote-Agenten
 
@@ -80,10 +80,10 @@ Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderli
 
    Der Schalter für die globale Installation ( **-g**) wird empfohlen, ist jedoch nicht zwingend erforderlich.
 
-   Während der Installation wird "vcremote" installiert, und der Entwicklermodus wird auf Ihrem Mac aktiviert. [Homebrew](https://brew.sh/) und zwei npm-Pakete, "vcremote-lib" und "vcremote-utils", werden ebenfalls installiert. Nach Abschluss der Installation ist es sicher, alle Warnungen über übersprungene optionale Abhängigkeiten zu ignorieren.
+   Während der Installation werden `vcremote` installiert und der Entwicklermodus auf Ihrem Mac aktiviert. [Homebrew](https://brew.sh/) und zwei npm-Pakete, `vcremote-lib` und `vcremote-utils`, werden ebenfalls installiert. Nach Abschluss der Installation ist es sicher, alle Warnungen über übersprungene optionale Abhängigkeiten zu ignorieren.
 
    > [!NOTE]
-   > Zum Installieren von Homebrew benötigen Sie sudo-Zugriff (Administrator). Wenn Sie "vcremote" ohne sudo installieren müssen, können Sie Homebrew manuell unter einem "usr/local"-Speicherort installieren und den Ordner "bin" zu Ihrem Pfad hinzufügen. Weitere Informationen finden Sie in der [Homebrew-Dokumentation](https://github.com/Homebrew/homebrew/wiki/Installation). Um den Entwicklermodus manuell zu aktivieren, geben Sie folgenden Befehl in die Terminal-App ein: `DevToolsSecurity -enable`
+   > Zum Installieren von Homebrew benötigen Sie sudo-Zugriff (Administrator). Wenn Sie `vcremote` ohne sudo installieren müssen, können Sie Homebrew manuell am Speicherort „usr/local“ installieren und den Ordner „bin“ Ihrem Pfad hinzufügen. Weitere Informationen finden Sie in der [Homebrew-Dokumentation](https://github.com/Homebrew/homebrew/wiki/Installation). Um den Entwicklermodus manuell zu aktivieren, geben Sie folgenden Befehl in die Terminal-App ein: `DevToolsSecurity -enable`
 
 Wenn Sie auf eine neue Version von Visual Studio aktualisiert haben, müssen Sie diese Aktualisierung auch auf dem Remote-Agent vornehmen. Wiederholen Sie die Schritte zum Herunterladen und Installieren des Remote-Agents, um diesen zu aktualisieren.
 
@@ -97,9 +97,9 @@ Der Remote-Agent muss ausgeführt werden, damit Visual Studio den iOS-Code erste
 
    `vcremote`
 
-   Dadurch wird der Remote-Agent mit einem standardmäßigen Buildverzeichnis von "~/vcremote" gestartet. Zusätzliche Konfigurationsoptionen finden Sie unter [Configure the remote agent on the Mac](#ConfigureMac).
+   Durch diesen Befehl wird der Remote-Agent mit dem standardmäßigen Buildverzeichnis `~/vcremote` gestartet. Zusätzliche Konfigurationsoptionen finden Sie unter [Configure the remote agent on the Mac](#ConfigureMac).
 
-Beim ersten Start des Remote-Agents sowie jederzeit beim Erstellen eines neuen Clientzertifikats erhalten Sie die Informationen, die zum Konfigurieren des Agents in Visual Studio erforderlich sind, einschließlich des Hostnamens, des Ports und der PIN.
+Beim ersten Start des Remote-Agents sowie jedes Mal beim Erstellen eines neuen Clientzertifikats erhalten Sie die Informationen, die zum Konfigurieren des Agents in Visual Studio erforderlich sind, einschließlich des Hostnamens, des Ports und der PIN.
 
 ![Verwenden von vcremote zum Generieren einer sicheren PIN](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")
 
@@ -111,7 +111,7 @@ Sie können den Remote-Agent im ungesicherten Modus verwenden. Im ungesicherten 
 
 #### <a name="to-disable-secured-connection-mode"></a>So deaktivieren Sie den Modus für sichere Verbindung
 
-- Um den Modus für sichere Verbindung in "vcremote" zu deaktivieren, geben Sie diesen Befehl in der Terminal-App auf Ihrem Mac ein:
+- Um den Modus für sichere Verbindung in `vcremote` zu deaktivieren, geben Sie diesen Befehl in der Terminal-App auf Ihrem Mac ein:
 
    `vcremote --secure false`
 
@@ -125,7 +125,7 @@ Sobald Sie den Remote-Agenten gestartet haben, können Sie ihn von Visual Studio
 
 #### <a name="to-stop-the-remote-agent"></a>So beenden Sie den Remote-Agenten
 
-- Drücken Sie im Terminalfenster, in dem „vcremote“ ausgeführt wird, **UMSCHALT**+**C**.
+- Drücken Sie im Terminalfenster, in dem `vcremote` ausgeführt wird, **UMSCHALT**+**C**.
 
 ## <a name="ConfigureVS"></a> Konfigurieren des Remote-Agents in Visual Studio
 
@@ -133,7 +133,7 @@ Um von Visual Studio aus eine Verbindung mit dem Remote-Agent herzustellen, müs
 
 ### <a name="to-configure-the-remote-agent-from-visual-studio"></a>So konfigurieren Sie den Remote-Agenten in Visual Studio
 
-1. Wenn der Agent nicht bereits auf Ihrem Mac ausgeführt wird, führen Sie die Schritte unter [Starten des Remote-Agents](#Start)aus. Auf Ihrem Mac muss "vcremote" ausgeführt werden, damit Visual Studio erfolgreich gekoppelt und verbunden und das Projekt erstellt werden kann erstellen.
+1. Wenn der Agent nicht bereits auf Ihrem Mac ausgeführt wird, führen Sie die Schritte unter [Starten des Remote-Agents](#Start)aus. Auf Ihrem Mac muss `vcremote` ausgeführt werden, damit Visual Studio erfolgreich gekoppelt und verbunden und das Projekt erstellt werden kann erstellen.
 
 1. Rufen Sie den Hostnamen auf Ihrem Mac oder Ihres IP-Adresse Ihres Macs ab.
 
@@ -158,7 +158,7 @@ Um von Visual Studio aus eine Verbindung mit dem Remote-Agent herzustellen, müs
 
    Wenn die Kopplung nicht erfolgreich ist, stellen Sie sicher, dass der Remote-Agent ausgeführt wird. Führen Sie dazu die unter [Start the remote agent](#Start)beschriebenen Schritte aus. Wenn zu viel Zeit verstrichen ist, seit die Remote-Agent-PIN generiert wurde, führen Sie die Schritte unter [Generate a new security PIN](#GeneratePIN) auf dem Mac aus, und versuchen Sie es dann erneut. Versuchen Sie bei Verwendung der Hostname Ihres Macs stattdessen mit der IP-Adresse im Feld **Hostname** .
 
-1. Aktualisieren Sie den Namen des Ordners im Feld **Remotestamm**, um den Ordner in Ihrem Stammverzeichnis ( *~* ) auf dem Mac anzugeben, der von dem Remote-Agent verwendet wird. Standardmäßig verwendet der Remote-Agent "/Users/`username`/vcremote" als Remotestamm.
+1. Aktualisieren Sie den Namen des Ordners im Feld **Remotestamm**, um den Ordner in Ihrem Stammverzeichnis ( *~* ) auf dem Mac anzugeben, der von dem Remote-Agent verwendet wird. Standardmäßig verwendet der Remote-Agent `/Users/<username>/vcremote` als Remotestamm.
 
 1. Wählen Sie **OK** aus, um die Verbindungseinstellungen für die Remotekopplung zu speichern.
 
@@ -184,7 +184,7 @@ Aus Sicherheitsgründen sind die Serverzertifikate, die Visual Studio mit dem Re
 
 ### <a name="to-generate-a-new-server-certificate"></a>So generieren Sie ein neues Serverzertifikat
 
-1. So beenden Sie den vcremote-Agent
+1. Beenden Sie den `vcremote`-Agent.
 
 1. Geben Sie diesen Befehl in der Terminal-App ein:
 
@@ -196,13 +196,13 @@ Aus Sicherheitsgründen sind die Serverzertifikate, die Visual Studio mit dem Re
 
    `vcremote generateClientCert`
 
-   Dadurch wird eine neue temporäre PIN generiert.
+   Durch diesen Befehl wird eine neue temporäre PIN generiert.
 
 1. Wiederholen Sie die Schritte unter [Konfigurieren des Remote-Agents in Visual Studio](#ConfigureVS), um Visual Studio mithilfe der neuen PIN zu koppeln.
 
 ## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
-Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfigurieren. Beispielsweise können Sie den Port zum Überwachen der Build-Anforderungen und die maximale Anzahl an Builds angeben, die auf dem Dateisystem verwaltet werden sollen. Die Standardgrenze ist 10 Builds. Der Remote-Agent entfernt beim Herunterfahren die überzähligen Builds.
+Sie können den Remote-Agent mit verschiedenen Befehlszeilenoptionen konfigurieren. Beispielsweise können Sie den Port zum Überwachen der Build-Anforderungen und die maximale Anzahl an Builds angeben, die auf dem Dateisystem verwaltet werden sollen. Die Standardgrenze ist 10 Builds. Der Remote-Agent entfernt beim Herunterfahren die überzähligen Builds.
 
 ### <a name="to-configure-the-remote-agent"></a>So konfigurieren Sie den Remote-Agenten
 
@@ -220,7 +220,7 @@ Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfiguriere
 
    `vcremote --serverDir directory_path`
 
-   *&lt;directory_path&gt;* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig handelt es sich hierbei um */Users/\<username>/vcremote*. Builds werden an diesem Speicherort nach Build-Nummer angeordnet.
+   *&lt;directory_path&gt;* ist hierbei der Speicherort auf Ihrem Mac, in welchem Protokolldateien, Builds und Serverzertifikate abgelegt werden. Standardmäßig ist der Speicherort `/Users/<username>/vcremote`. Builds werden an diesem Speicherort nach Build-Nummer angeordnet.
 
 - Um mithilfe eines Hintergrundprozesses `stdout` und `stderr` in einer Datei namens "server.log" zu erfassen, geben Sie Folgendes ein:
 
@@ -238,21 +238,21 @@ Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfiguriere
 
 ### <a name="debugging-on-an-ios-device"></a>Debuggen auf einem iOS-Gerät
 
-Wenn das Debuggen auf einem iOS-Gerät nicht funktioniert, könnten Probleme mit dem Tool [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) vorliegen, das für die Kommunikation mit einem iOS-Gerät verwendet wird. Dieses Tool wird normalerweise von Homebrew während der Installation von vcremote installiert. Führen Sie zur Problemumgehung die unten aufgelisteten Schritte aus.
+Wenn das Debuggen auf einem iOS-Gerät nicht funktioniert, könnten Probleme mit dem Tool [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) vorliegen, das für die Kommunikation mit einem iOS-Gerät verwendet wird. Dieses Tool wird normalerweise von Homebrew während der Installation von `vcremote` installiert. Führen Sie zur Problemumgehung die unten aufgelisteten Schritte aus.
 
-Öffnen Sie die Terminal-App, und aktualisieren Sie ideviceinstaller und seine Abhängigkeiten, indem Sie die folgenden Schritte in der angegebenen Reihenfolge ausführen:
+Öffnen Sie die Terminal-App, und aktualisieren Sie `ideviceinstaller` und samt Abhängigkeiten, indem Sie die folgenden Befehle in der angegebenen Reihenfolge ausführen:
 
 1. Stellen Sie sicher, dass Homebrew aktualisiert ist
 
    `brew update`
 
-1. Deinstallieren Sie libimobiledevice und usbmuxd
+1. Deinstallieren Sie `libimobiledevice` und `usbmuxd`.
 
    `brew uninstall --ignore-dependencies libimobiledevice`
 
    `brew uninstall --ignore-dependencies usbmuxd`
 
-1. Installieren Sie die neueste Version von libimobiledevice und usbmuxd
+1. Installieren Sie die aktuelle Version von `libimobiledevice` und `usbmuxd`.
 
    `brew install --HEAD usbmuxd`
 
@@ -262,22 +262,22 @@ Wenn das Debuggen auf einem iOS-Gerät nicht funktioniert, könnten Probleme mit
 
    `brew install --HEAD libimobiledevice`
 
-1. Deinstallieren Sie ideviceinstaller, und installieren Sie es erneut
+1. Deinstallieren Sie `ideviceinstaller`, und installieren Sie das Element neu.
 
    `brew uninstall ideviceinstaller`
 
    `brew install ideviceinstaller`
 
-Überprüfen Sie, ob ideviceinstaller Daten mit dem Gerät austauschen kann, indem Sie versuchen, die auf dem Gerät installierten Apps aufzulisten:
+Überprüfen Sie, ob `ideviceinstaller` Daten mit dem Gerät austauschen kann, indem Sie versuchen, die auf dem Gerät installierten Apps aufzulisten:
 
 `ideviceinstaller -l`
 
-Wenn ideviceinstaller einen Fehler ausgibt, dass es nicht auf den Ordner `/var/db/lockdown` zugreifen kann, ändern Sie die Berechtigungen für den Ordner in folgender Weise:
+Wenn `ideviceinstaller` den Fehler meldet, dass kein Zugriff auf den Ordner `/var/db/lockdown` möglich ist, ändern Sie die Berechtigungen für den Ordner mit:
 
 `sudo chmod 777 /var/db/lockdown`
     
-Überprüfen Sie anschließend erneut, ob ideviceinstaller mit dem Gerät kommunizieren kann.
+Überprüfen Sie anschließend erneut, ob `ideviceinstaller` mit dem Gerät kommunizieren kann.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Installieren der plattformübergreifenden Mobile-Entwicklung mit Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Installieren der plattformübergreifenden mobilen Entwicklung mit C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

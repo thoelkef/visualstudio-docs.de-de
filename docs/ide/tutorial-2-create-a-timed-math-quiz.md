@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,16 +9,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e092e11474aa872903977e1b07c699b160bef8a2
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118865"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516602"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung
 
-In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier zufällige Mathematikaufgaben innerhalb einer angegebenen Zeit lösen muss. Sie lernen Folgendes:
+In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier zufällige Mathematikaufgaben innerhalb einer angegebenen Zeit lösen muss.
+
+> [!NOTE]
+> In diesem Tutorial werden sowohl C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
+
+In diesem Tutorial werden Sie durch die folgenden Aufgaben geführt:
 
 - Generieren von Zufallszahlen mithilfe der <xref:System.Random>-Klasse.
 
@@ -34,13 +39,6 @@ Nach Abschluss der Übung sieht das Quiz in etwa wie im folgenden Screenshot aus
 
 ## <a name="tutorial-links"></a>Tutoriallinks
 
-Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie unter [Complete math quiz tutorial sample (Tutorialbeispiel des vollständigen Mathequiz)](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
-
-> [!NOTE]
-> In diesem Tutorial werden sowohl C# als auch Visual Basic behandelt. Achten Sie also auf die entsprechenden Informationen zu der Programmiersprache, die Sie verwenden.
-
-## <a name="related-topics"></a>Verwandte Themen
-
 |Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Beginnen Sie, indem Sie das Projekt erstellen, Eigenschaften ändern und `Label`-Steuerelemente hinzufügen.|
@@ -51,3 +49,15 @@ Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie
 |[Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md)|Fügen Sie eine Subtraktionsaufgabe hinzu, in der Zufallszahlen generiert werden, der Timer verwendet wird, sowie überprüft wird, ob richtige Antworten eingegeben wurden.|
 |[Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md)|Fügen Sie Multiplikations- und Divisionsaufgaben hinzu, die Zufallszahlen generieren, den Timer verwenden und in Hinsicht auf richtige Antworten überprüfen.|
 |[Schritt 8: Anpassen des Quiz](../ide/step-8-customize-the-quiz.md)|Probieren Sie andere Funktionen aus. Ändern Sie z. B. Farben, und fügen Sie einen Hinweis hinzu.|
+
+Es stehen auch umfangreiche kostenlose Videoschulungen zur Verfügung. Weitere Informationen zum Programmieren in C# finden Sie unter [C#-Grundlagen: Development for absolute beginners (C#-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Weitere Informationen zum Programmieren in Visual Basic finden Sie unter [Visual Basic fundamentals: Development for absolute beginners (C#-Grundlagen: Entwicklung für Anfänger)](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Beginnen Sie das Tutorial mit **[Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** .
+
+## <a name="see-also"></a>Siehe auch
+
+* [Weitere C#-Tutorials](/visualstudio/get-started/csharp/)
+* [Visual Basic-Tutorials](/visualstudio/get-started/visual-basic/)
+* [C++-Tutorials](/cpp/get-started/tutorial-console-cpp)

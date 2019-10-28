@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f51489b888a0b85b53856e413eb4704d24161b6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925724"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777722"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio-Emulator für Android
 
@@ -100,7 +100,7 @@ Der Visual Studio-Emulator für Android ist eine Desktopanwendung, die ein Andro
 ## <a name="Support"></a> Supportressourcen
  Wenn Ihr Hostcomputer die Systemanforderungen erfüllt und Sie ein Problem feststellen, das in diesem Handbuch zur Problembehandlung nicht erörtert wird, müssen Sie Folgendes vornehmen:
 
-- Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) und „visual-studio“.
+- Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) und „visual-studio“.
 
 - Melden Sie ein Problem mithilfe des Tools „Lächeln senden“ in Visual Studio oder im Emulator-Manager.
 

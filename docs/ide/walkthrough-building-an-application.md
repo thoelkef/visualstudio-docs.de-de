@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416891"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647177"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -65,7 +65,7 @@ Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfigura
 
 ### <a name="build-the-solution"></a>Erstellen der Projektmappe
 
-- Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
+- Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen**, oder drücken Sie **STRG**+**UMSCHALT**+**B**.
 
     Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Buildvorgang war erfolgreich.
 

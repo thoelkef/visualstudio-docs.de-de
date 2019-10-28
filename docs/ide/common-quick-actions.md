@@ -3,20 +3,20 @@ title: Häufige schnelle Aktionen
 description: Die beliebtesten Schnellaktionen für C# und Visual Basic sind unter anderem das Bearbeiten falsch geschriebener Schlüsselwörter oder falscher Symbole, das Lösen von Mergekonflikten, das Entfernen nötiger Importe, das Generieren von Typen, die Einführung lokaler Variablen usw.
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000143"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652246"
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Nicht benötigte Using- und Import-Anweisungen entfernen
 
-Die schnelle Aktion **Remove Unnecessary Usings/Imports** (Nicht benötigtes Usings/Imports entfernen) entfernt jede nicht benötigte `using`- und `Import`-Anweisung aus der aktuellen Datei. Wenn Sie dieses Element auswählen, werden nicht benötigte import-Anweisungen des Namespaces entfernt.
+Die schnelle Aktion **Nicht benötigte Using-/Import-Anweisungen entfernen** entfernt jede nicht benötigte `using`- und `Import`-Anweisung aus der aktuellen Datei. Wenn Sie dieses Element auswählen, werden nicht benötigte import-Anweisungen des Namespaces entfernt.
 
 | Anzuwendende Sprachen | Unterstützte Version |
 | - | - |
@@ -184,7 +184,7 @@ Using-Typen in anderen Projekten in Ihrer Projektmappe zeigen die schnelle Aktio
 - Usings/Imports für Typen in Verweisassemblys vorschlagen
 - Usings/Imports für Typen in NuGet-Paketen vorschlagen
 
-Wenn dies aktiviert ist, wird die using/import-Anweisung erstellt, wenn Sie einen Typ in einem Namespace verwenden, der zu diesem Zeitpunkt nicht importiert ist, aber in einer Verweisassembly oder einem NuGet-Paket vorhanden ist.
+Wenn dies aktiviert ist, wird die using- oder import-Anweisung erstellt, wenn Sie einen Typ in einem Namespace verwenden, der zu diesem Zeitpunkt nicht importiert ist, aber in einer Verweisassembly oder einem NuGet-Paket vorhanden ist.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

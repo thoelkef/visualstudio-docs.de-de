@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483709"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656585"
 ---
 # <a name="how-to-specify-build-events-c"></a>Vorgehensweise: Angeben von Buildereignissen (C#)
 
@@ -72,7 +72,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 1. Erstellen Sie ein neues **Konsolen-App**-Projekt für den Befehl. Nennen Sie das Projekt **ChangeOSVersionCS**.
 
-2. Fügen Sie in *program.cs* die folgende Zeile in die andere `using`-Anweisung am Anfang der Datei ein:
+2. Fügen Sie in *Program.cs* die folgende Zeile in die anderen `using`-Anweisungen am Anfang der Datei ein:
 
    ```csharp
    using System.Xml;

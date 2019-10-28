@@ -1,17 +1,17 @@
 ---
-title: Visual Studio-Containertools mit ASP.NET Core
+title: Visual Studio-Containertools mit ASP.NET Core und React.js
 author: ghogen
 description: Erfahren Sie mehr über die Verwendung von Visual Studio-Containertools und Docker für Windows
 ms.author: ghogen
-ms.date: 06/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: bcc30ec13096b37d7540c187d11c846d6c575093
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179888"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516440"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Schnellstart: Verwenden von Docker mit einer React-App mit einer einzigen Seite in Visual Studio
 
@@ -23,12 +23,16 @@ Mit Visual Studio können Sie ASP.NET Core-Container-Apps mühelos erstellen, de
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) mit den Workloads für **Webentwicklung**, **Azure-Tools** und bzw. oder **plattformübergreifende .NET Core-Entwicklung**
 * Zum Veröffentlichen in Azure Container Registry ist ein Azure-Abonnement erforderlich. [Registrieren Sie sich für eine kostenlose Testversion.](https://azure.microsoft.com/offers/ms-azr-0044p/)
+* [Node.js](https://nodejs.org/en/download/)
+* Für Windows-Container, Windows 10, Version 1903 oder höher, um die Docker-Images zu verwenden, auf die in diesem Artikel verwiesen wird.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit installierten Workloads für **Webentwicklung**, **Azure-Tools** und/oder **plattformübergreifende .NET Core-Entwicklung**
 * [.NET Core 2.2-Entwicklungstools](https://dotnet.microsoft.com/download/dotnet-core/2.2) zur Entwicklung mit .NET Core 2.2
 * Zum Veröffentlichen in Azure Container Registry ist ein Azure-Abonnement erforderlich. [Registrieren Sie sich für eine kostenlose Testversion.](https://azure.microsoft.com/offers/ms-azr-0044p/)
+* [Node.js](https://nodejs.org/en/download/)
+* Für Windows-Container, Windows 10, Version 1903 oder höher, um die Docker-Images zu verwenden, auf die in diesem Artikel verwiesen wird.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>Installation und Einrichtung
@@ -47,7 +51,7 @@ Lesen Sie vor der Installation von Docker zunächst [Docker Desktop for Windows:
 
    ![Hinzufügen der Docker-Unterstützung](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Wählen Sie den Linux-Containertyp aus, und klicken Sie auf **OK**.
+1. Wählen Sie den Containertyp aus, und klicken Sie auf **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Erstellen Sie ein neues Projekt über die Vorlage **ASP.NET Core-Webanwendung**.
@@ -59,10 +63,12 @@ Lesen Sie vor der Installation von Docker zunächst [Docker Desktop for Windows:
 
    ![Hinzufügen der Docker-Unterstützung](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Wählen Sie Linux als Containertyp aus.
+1. Wählen Sie den Containertyp aus.
 ::: moniker-end
 
-## <a name="dockerfile-overview"></a>Übersicht über die Dockerfile-Datei
+Der nächste Schritt ist je nachdem, ob Sie Linux-oder Windows-Container verwenden, unterschiedlich.
+
+## <a name="modify-the-dockerfile-linux-containers"></a>Ändern der Dockerfile (Linux-Container)
 
 Eine *Dockerfile*-Datei, der wichtigste Bestandteil beim Erstellen eines endgültigen Docker-Images, wird im Projekt erstellt. Verweisen Sie auf einen [Dockerfile-Verweis](https://docs.docker.com/engine/reference/builder/), damit Sie einen Überblick über die darin enthaltenen Befehle erlangen.
 
@@ -104,9 +110,74 @@ Das obige *Dockerfile* basiert auf dem Image [microsoft/aspnetcore](https://hub.
 
 Wenn im neuen Projektdialogfeld das Kontrollkästchen **Configure for HTTPS** (Für HTTPS konfigurieren) aktiviert ist, werden durch die *Dockerfile*-Datei zwei Ports verfügbar gemacht. Ein Port wird für den HTTP-Datenverkehr, der andere für HTTPS verwendet. Wenn dieses Kontrollkästchen nicht aktiviert ist, wird nur der Port 80 für den HTTP-Datenverkehr verfügbar gemacht.
 
+## <a name="modify-the-dockerfile-windows-containers"></a>Ändern der Dockerfile (Windows-Container)
+
+Öffnen Sie die Projektdatei durch Doppelklicken auf den Projektknoten. Aktualisieren Sie die Projektdatei (*.csproj), indem Sie die folgende Eigenschaft als untergeordnetes Element des Elements `<PropertyGroup>` hinzufügen:
+
+   ```xml
+    <DockerfileFastModeStage>base</DockerfileFastModeStage>
+   ```
+
+Aktualisieren Sie die Dockerfile durch Hinzufügen der folgenden Zeilen. Hierdurch werden „node“ und „npm“ in den Container kopiert.
+
+   1. Fügen Sie der ersten Zeile der Dockerfile ``# escape=` `` hinzu.
+   1. Fügen Sie vor `FROM … base` die folgenden Zeilen hinzu.
+
+      ```
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      ```
+
+   1. Fügen Sie vor und hinter `FROM … build` die folgenden Zeilen hinzu.
+
+      ```
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      ```
+
+   1. Die vollständige Dockerfile sollte in etwa wie folgt aussehen:
+
+      ```
+      # escape=`
+      #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+      #For more information, please see https://aka.ms/containercompat
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
+      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+
+      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      WORKDIR /app
+      EXPOSE 80
+      EXPOSE 443
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+
+      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      WORKDIR /src
+      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
+      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY . .
+      WORKDIR "/src/WebApplication37"
+      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+
+      FROM build AS publish
+      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+
+      FROM base AS final
+      WORKDIR /app
+      COPY --from=publish /app/publish .
+      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ```
+
+1. Aktualisieren Sie die. DOCKERIGNORE-Datei, indem Sie `**/bin`entfernen.
+
 ## <a name="debug"></a>Debug
 
-Wählen Sie in der Symbolleiste im Dropdownmenü „Debuggen“ die Option **Docker** aus, und starten Sie das Debuggen der Anwendung. Möglicherweise wird eine Meldung mit einer Eingabeaufforderung zum Vertrauen eines Zertifikats angezeigt. Vertrauen Sie dem Zertifikat, um fortzufahren.
+Wählen Sie in der Symbolleiste im Dropdownmenü „Debuggen“ die Option **Docker** aus, und starten Sie das Debuggen der Anwendung. Möglicherweise wird eine Meldung mit einer Eingabeaufforderung zum Vertrauen eines Zertifikats angezeigt. Vertrauen Sie dem Zertifikat, um fortzufahren.  Beim ersten Build lädt Docker die Basisimages herunter, weshalb der Vorgang etwas länger dauern kann.
 
 Die Option **Containertools** im Fenster **Ausgabe** zeigt, welche Aktionen ausgeführt werden. Die mit *npm.exe* verknüpften Installationsschritte werden angezeigt.
 
