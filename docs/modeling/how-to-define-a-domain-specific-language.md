@@ -16,17 +16,17 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748435"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985158"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projekt Mappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
-Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualisierung und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128) .
+Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualisierung und Modellierungs-SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) .
 
 ## <a name="templates"></a>Auswählen einer Vorlagen Lösung
 
@@ -607,7 +607,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
  Siehe auch Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a>Problem
- In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Erweiterbarkeits Forum für Visualisierungs Tools](http://go.microsoft.com/fwlink/?LinkId=186074).
+ In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Erweiterbarkeits Forum für Visualisierungs Tools](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problem | Vorschlag |
 |-|-|
@@ -618,7 +618,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 | Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt. | Wählen Sie in der DSL-Definition eine Domänen Eigenschaft der-Klasse aus, und legen Sie in der Eigenschaftenfenster den Wert **Element Name** auf true fest. |
 | Meine DSL wird immer im XML-Editor geöffnet. | Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Klicken Sie mit der rechten Maustaste auf das Projekt Element, klicken Sie auf **Öffnen mit** , und wählen Sie * YourLanguage ***Designer (Standard)** . |
 | Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe. | Weitere Informationen finden Sie unter " **dslpackage\generatedcode\package.tt** ". Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1. Klicken Sie im Windows-Startmenü unter **Alle Programme**auf [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] und dann auf **Extras, und klicken Sie dann auf** **Microsoft Visual Studio experimentelle Instanz zurücksetzen**.<br />2. Klicken Sie im Menü **Erstellen** auf Projekt Mappe **neu erstellen**. |
+| Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1. Klicken Sie im Windows-Startmenü unter **Alle Programme**auf [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]und dann auf **Extras, und klicken Sie dann auf** **Microsoft Visual Studio experimentelle Instanz zurücksetzen**.<br />2. Klicken Sie im Menü **Erstellen** auf Projekt Mappe **neu erstellen**. |
 
 ## <a name="see-also"></a>Siehe auch
 

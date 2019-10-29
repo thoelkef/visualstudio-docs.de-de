@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d7371880c739e242bcdd70fb2bb9ac0cd92677b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551586"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986094"
 ---
 # <a name="excel-object-model-overview"></a>Übersicht über das Excel-Objektmodell
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:
@@ -47,8 +47,6 @@ ms.locfileid: "69551586"
 
   Dieses Thema enthält eine kurze Übersicht über das Excel-Objektmodell. Weitere Informationen über das gesamte Excel-Objektmodell finden Sie unter [Verwenden der Dokumentation zum Excel-Objektmodell](#ExcelOMDocumentation).
 
-  ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden [Sie unter Gewusst wie: Verwenden von Ereignis Handlern in einem Excel 2007-Add-in ](http://go.microsoft.com/fwlink/?LinkID=130291) und[Gewusst wie: Verwenden von Formen zum Erstellen eines Blasen Diagramms in Excel ](http://go.microsoft.com/fwlink/?LinkID=130313).
-
 ## <a name="access-objects-in-an-excel-project"></a>Zugreifen auf Objekte in einem Excel-Projekt
  Wenn Sie ein neues VSTO-Add-in-Projekt für Excel erstellen, erstellt Visual Studio automatisch eine *ThisAddIn. vb* -oder *ThisAddIn.cs* -Codedatei. Sie können mithilfe von `Me.Application` oder `this.Application` auf das Anwendungsobjekt zugreifen.
 
@@ -61,14 +59,14 @@ ms.locfileid: "69551586"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- Mit der `Globals`-Klasse im Projekt können Sie auf `ThisWorkbook`, `Sheet1`, `Sheet2` oder `Sheet3` von außerhalb der jeweiligen Klasse zugreifen. Weitere Informationen finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md). Im folgenden Beispiel wird die <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> -Methode `Sheet1` von aufgerufen, unabhängig davon, ob der Code in einer `Sheet`der *n* -Klassen `ThisWorkbook` oder in der-Klasse platziert wird.
+ Mit der `Globals`-Klasse im Projekt können Sie auf `ThisWorkbook`, `Sheet1`, `Sheet2` oder `Sheet3` von außerhalb der jeweiligen Klasse zugreifen. Weitere Informationen finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md). Im folgenden Beispiel wird die <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>-Methode von `Sheet1` aufgerufen, unabhängig davon, ob der Code in einer der `Sheet`*n* -Klassen oder in der `ThisWorkbook`-Klasse platziert wird.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
 
  Da die Daten in einem Excel-Dokument sehr strukturiert sind, ist das Objektmodell hierarchisch und unkompliziert. Excel stellt Hunderte von Objekten bereit, mit denen Sie interagieren können. Sie können jedoch einen guten Einstieg in das Objektmodell erzielen, indem Sie sich auf eine kleine Teilmenge der verfügbaren Objekte konzentrieren. Dazu gehören die folgenden vier Objekte:
 
-- Application
+- Anwendung
 
 - Arbeitsmappe
 
@@ -105,14 +103,14 @@ ms.locfileid: "69551586"
  Ausführliche Informationen zum Excel-Objektmodell finden Sie in der Referenz für die primäre Interopassembly (PIA) für Excel und der VBA-Objektmodellreferenz.
 
 ### <a name="primary-interop-assembly-reference"></a>Referenz zur primären Interopassembly
- In der Referenzdokumentation für die Excel-PIA werden die Typen in der primären Interopassembly für Excel beschrieben. Diese Dokumentation ist unter folgendem Speicherort verfügbar: [Excel 2010 primärer](http://go.microsoft.com/fwlink/?LinkId=189585)interopassemblyverweis.
+ In der Referenzdokumentation für die Excel-PIA werden die Typen in der primären Interopassembly für Excel beschrieben. Diese Dokumentation ist unter folgendem Speicherort verfügbar: [Excel 2010 primärer interopassemblyverweis](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
 
- Weitere Informationen zum Entwurf der Excel-Pia, z. b. zu den Unterschieden zwischen Klassen und Schnittstellen in der Pia und zur Implementierung von Ereignissen in der Pia, finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop](http://go.microsoft.com/fwlink/?LinkId=189592)-Assemblys von Office.
+ Weitere Informationen zum Entwurf der Excel-Pia, z. b. zu den Unterschieden zwischen Klassen und Schnittstellen in der Pia und zur Implementierung von Ereignissen in der Pia, finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop](/previous-versions/office/office-12/ms247299(v=office.12))-Assemblys von Office.
 
 ### <a name="vba-object-model-reference"></a>VBA-Objektmodell Referenz
- Die VBA-Objektmodellreferenz dokumentiert das Excel-Objektmodell, das für VBA (Visual Basic for Applications) verfügbar gemacht wird. Weitere Informationen finden Sie unter [Excel 2010-Objektmodell Referenz](http://go.microsoft.com/fwlink/?LinkId=199768).
+ Die VBA-Objektmodellreferenz dokumentiert das Excel-Objektmodell, das für VBA (Visual Basic for Applications) verfügbar gemacht wird. Weitere Informationen finden Sie unter [Excel 2010-Objektmodell Referenz](/office/vba/api/overview/Excel/object-model).
 
- Alle Objekte und Member in der VBA-Objektmodellreferenz entsprechen Typen und Membern in der Excel-PIA. Das Arbeitsblatt Objekt in der VBA-Objektmodell Referenz entspricht z. b. <xref:Microsoft.Office.Interop.Excel.Worksheet> dem-Objekt in der Excel-Pia. Obwohl die VBA-Objektmodellreferenz Codebeispiele für die meisten Eigenschaften, Methoden und Ereignisse enthält, müssen Sie den VBA-Code in dieser Referenz in Visual Basic oder Visual C# übersetzen, wenn Sie ihn in einem mit Visual Studio erstellten Excel-Projekt verwenden möchten.
+ Alle Objekte und Member in der VBA-Objektmodellreferenz entsprechen Typen und Membern in der Excel-PIA. Das Arbeitsblatt Objekt in der VBA-Objektmodell Referenz entspricht z. b. dem <xref:Microsoft.Office.Interop.Excel.Worksheet> Objekt in der Excel-Pia. Obwohl die VBA-Objektmodellreferenz Codebeispiele für die meisten Eigenschaften, Methoden und Ereignisse enthält, müssen Sie den VBA-Code in dieser Referenz in Visual Basic oder Visual C# übersetzen, wenn Sie ihn in einem mit Visual Studio erstellten Excel-Projekt verwenden möchten.
 
 ### <a name="related-topics"></a>Verwandte Themen
 

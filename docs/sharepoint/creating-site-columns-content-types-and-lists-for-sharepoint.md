@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint | Microsoft-Dokumentation
+title: Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,35 +18,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cecb3e78cea90b927dc6b67b5b4a2cb50bfa87c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581095"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984514"
 ---
-# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint
-  Visual Studio bietet die Projektelementvorlagen für viele verschiedene grundlegende SharePoint-Elemente, einschließlich *listet* und *Inhaltstypen*, beide können Websitespalten integrieren (oder  *Felder*). Die neuen Designer für die Inhaltstypen und Listen stellen diese Elemente einfacher als je zuvor zu erstellen.
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint
+  Visual Studio stellt Projekt Element Vorlagen für viele verschiedene grundlegende SharePoint-Elemente bereit, einschließlich *Listen* und *Inhaltstypen*, die beide Website Spalten (oder *Felder*) enthalten können. Mithilfe der neuen Designer für Inhaltstypen und Listen können Sie diese Elemente einfacher als je zuvor erstellen.
 
 ## <a name="site-columns"></a>Websitespalten
- Websitespalten sind eine der grundlegendsten Elemente, die Sie ein SharePoint-Projekt hinzufügen können. Eine Websitespalte stellt einen Typ von Daten, z. B. eine Telefonnummer, eines Kommentars oder den Namen der Stadt eines Kontakts in einer Kontaktliste dar.
+ Website Spalten sind eines der grundlegendsten Elemente, die Sie einem SharePoint-Projekt hinzufügen können. Eine Website Spalte stellt einen Datentyp dar, z. b. eine Telefonnummer, einen Kommentar oder den Ortsnamen eines Kontakts in einer Kontaktliste.
 
- Der neue Standort Spalte Projektelementvorlage erleichtert Websitespalten erstellen als in der früheren Version von Visual Studio. Nach dem Erstellen einer neuen Spalteninhalts für den Standort an, Sie können ändern, die XML-Code in der Websitespalte *"Elements.xml"* hinzu, um die Informationen einzubeziehen, die Sie möchten z. B. des Anzeigenamens, den Datentyp und die Gruppe, die in der die Websitespalte im angezeigt werden sollen, SharePoint. Weitere Informationen zu Websitespalten, finden Sie unter [Einführung in die Spalten](http://go.microsoft.com/fwlink/?LinkId=224996).
+ Die neue Site Column-Projekt Element Vorlage macht das Erstellen von Site Spalten einfacher als in der früheren Version von Visual Studio. Nachdem Sie eine neue Website Spalte erstellt haben, können Sie die XML-Datei in der Datei " *Elements. XML* " der Website Spalte so ändern, dass Sie die gewünschten Informationen enthält, z. b. den anzeigen Amen, den Datentyp und die Gruppe, in der die Spalte "Site" in SharePoint angezeigt werden soll. Weitere Informationen zu Site Spalten finden Sie unter [Introduction to Columns (Einführung in Spalten](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14))).
 
 ## <a name="content-types-and-lists"></a>Inhaltstypen und Listen
- Inhaltstypen und Listen sind für die am häufigsten verwendeten Elemente in SharePoint.
+ Inhaltstypen und Listen gehören zu den am häufigsten verwendeten Elementen in SharePoint.
 
- Ein Inhaltstyp definiert die Metadaten, Workflows und Verhalten für eine Kategorie von Elementen in einer SharePoint-Liste oder Dokumentbibliothek. Beispielsweise können Sie einen Inhaltstyp für die Informationen in einer Kontaktliste oder eine Aufgabenliste erstellen. Ein Kontakt Inhaltstyp kann auf Spalten z. B. Name, e-Mail-Adresse, Telefonnummer und Adresse enthalten. Ein Inhaltstyp, den Sie auf der Websiteebene zu definieren ist unabhängig von jeder Liste oder Dokumentbibliothek auf der Website. Sie können den gleichen Inhaltstyp mit anderen Listen oder Dokumentbibliotheken auf SharePoint-Website verwenden. Sie können auch mehrere Inhaltstypen für die gleiche Liste oder Dokumentbibliothek.
+ Ein Inhaltstyp definiert die Metadaten, den Workflow und das Verhalten für eine Kategorie von Elementen in einer SharePoint-Liste oder einer Dokumentbibliothek. Beispielsweise können Sie einen Inhaltstyp für Informationen in einer Kontaktliste oder einer Aufgabenliste erstellen. Ein Kontakt Inhaltstyp kann Spalten wie Name, e-Mail-Adresse, Telefonnummer und Adresse enthalten. Ein Inhaltstyp, den Sie auf Website Ebene definieren, ist unabhängig von einer Liste oder Dokumentbibliothek in der Website. Sie können den gleichen Inhaltstyp mit unterschiedlichen Listen oder Dokument Bibliotheken auf der SharePoint-Website verwenden. Sie können auch mehrere Inhaltstypen für dieselbe Liste oder Dokumentbibliothek verwenden.
 
- Eine Liste ist eine Auflistung von Informationen in SharePoint, die Sie für andere Benutzer freigeben können. Listen bestehen aus Zeilen und Spalten, die Daten enthalten. Hier einige Beispiele für Listen: eine Aufgabenliste, eine Kontaktliste und eine Ankündigungsliste.
+ Eine Liste ist eine Sammlung von Informationen in SharePoint, die Sie für andere Personen freigeben können. Listen bestehen aus Zeilen von Spalten, die Daten enthalten. Einige Beispiele für Listen sind: eine Aufgabenliste, eine Liste mit Kontakten und eine Ankündigungsliste.
 
- Der neue Inhaltstyp und die Liste der Designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ist das Erstellen von Standort-Inhaltstypen und Listen wesentlich einfacher und intuitiver als in der früheren Version von Visual Studio. Die Benutzeroberfläche ermöglicht es Ihnen, Inhaltstypen und Listen auf vertraute Weise visuell zu erstellen, und ermöglicht Ihnen das Sortieren und Gruppieren von Daten in Listen und Gruppenüberschriften verwenden. Weitere Informationen zu Inhaltstypen finden Sie unter [Inhaltstypen](http://go.microsoft.com/fwlink/?LinkId=224997). Weitere Informationen zu Listen finden Sie unter [Listenformulare](http://go.microsoft.com/fwlink/?LinkId=224998) und [Listenansichten](http://go.microsoft.com/fwlink/?LinkId=224999).
+ Die neuen Inhaltstyp-und Listen-Designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] das Erstellen von Website Inhaltstypen und Listen wesentlich einfacher und intuitiver als in der früheren Version von Visual Studio. Die Benutzeroberfläche ermöglicht Ihnen, Inhaltstypen und Listen auf vertraute Weise visuell zu erstellen und ermöglicht das Sortieren und Gruppieren von Daten in Listen und das Verwenden von Gruppen Überschriften. Weitere Informationen zu Inhaltstypen finden Sie unter [Inhaltstypen](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14)). Weitere Informationen zu Listen finden Sie unter [Auflisten von Formularen](/previous-versions/office/developer/sharepoint-2010/aa543232(v=office.14)) und Listen [Ansichten](/previous-versions/office/developer/sharepoint-2010/ff604021(v=office.14)).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Veranschaulicht das Erstellen von Websitespalten, die verwendet werden, in einen benutzerdefinierten Inhaltstyp. Der Inhaltstyp wird dann in einer benutzerdefinierten Liste verwendet.|
+|[Exemplarische Vorgehensweise: Erstellen einer Websites palte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Veranschaulicht, wie Sie in einem benutzerdefinierten Inhaltstyp verwendete Site Spalten erstellen. Der Inhaltstyp wird dann in einer benutzerdefinierten Liste verwendet.|
 
 ## <a name="see-also"></a>Siehe auch
-- [Erste Schritte bei der Entwicklung für SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)
+- [Einstieg in die Entwicklung in SharePoint 2010](/sharepoint/dev/)

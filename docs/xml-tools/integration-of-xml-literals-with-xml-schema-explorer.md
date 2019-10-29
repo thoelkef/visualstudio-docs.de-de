@@ -8,16 +8,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81f5db0477713ff99e9b7894bcbe86b3cf33018
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf073145b0deb21a2ec29ac1fff16be08fb24593
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601762"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986299"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integration von XML-Literalen in den XML-Schema-Explorer
 
-Visual Basic unterstützt XML-Literale. Dies bedeutet, dass Sie XML-Fragmente direkt in ihren Visual Basic Code integrieren können. Weitere Informationen finden Sie unter [Übersicht über XML-Literale](http://go.microsoft.com/fwlink/?LinkId=140325).
+Visual Basic unterstützt XML-Literale. Dies bedeutet, dass Sie XML-Fragmente direkt in ihren Visual Basic Code integrieren können. Weitere Informationen finden Sie unter [Übersicht über XML-Literale](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview).
 
 ## <a name="how-to"></a>Gewusst wie
 

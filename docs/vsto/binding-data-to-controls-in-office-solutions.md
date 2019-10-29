@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aca6c91724e26059011c1044c9a2d501c7995bc5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255832"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986169"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Binden von Daten an Steuerelemente in Office-Projektmappen
   Sie können Windows Forms-Steuerelemente und *Hoststeuerelemente* auf einem Microsoft Office Word-Dokument oder einem Microsoft Office Excel-Arbeitsblatt an eine Datenquelle binden, sodass die Steuerelemente die Daten automatisch anzeigen. Sie können Daten sowohl in Projekten auf Anwendungsebene als auch in Projekten auf Dokumentebene an Steuerelemente binden.
@@ -33,8 +33,6 @@ ms.locfileid: "71255832"
  Hoststeuerelemente erweitern Objekte in den Word- und Excel-Objektmodellen, beispielsweise Inhaltssteuerelemente in Word und benannte Bereiche in Excel. Weitere Informationen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
 
  Sowohl in Windows Forms- als auch in Hoststeuerelementen wird das Windows Forms-Datenbindungsmodell verwendet, das sowohl *einfache Datenbindung* als auch *komplexe Datenbindung* an Datenquellen wie Datasets und Datentabellen unterstützt. Ausführliche Informationen zum Daten Bindungs Modell in Windows Forms finden Sie unter [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
-
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden [Sie unter Gewusst wie: Datenbankdaten in Excel verwenden? ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="simple-data-binding"></a>Einfache Datenbindung
  Eine einfache Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an ein einzelnes Datenelement (z. B. einen Wert in einer Datentabelle) gebunden ist. Zum Beispiel hat das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement die <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> -Eigenschaft, die an ein Feld in einem Dataset gebunden werden kann. Wenn sich das Feld im Dataset ändert, ändert sich auch der Wert im benannten Bereich. Alle Hoststeuerelemente, mit Ausnahme des <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelements, unterstützen einfache Datenbindung. Das <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement ist eine Auflistung und unterstützt daher keine Datenbindung.
@@ -46,7 +44,7 @@ ms.locfileid: "71255832"
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
 
- Exemplarische Vorgehensweisen für die einfache Datenbindung finden [Sie unter Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) auf Dokument Ebene für ein Projekt auf Dokument Ebene und [Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) in-Projekt für ein VSTO-Add-in-Projekt.
+ Exemplarische Vorgehensweisen, die die einfache Datenbindung veranschaulichen, finden Sie unter Exemplarische Vorgehensweise [: einfache Datenbindung in einem Projekt](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) auf Dokument Ebene für ein Projekt auf Dokument Ebene und Exemplarische Vorgehensweise [: einfache Datenbindung im VSTO-Add-in-Projekt](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) für ein VSTO-Add-in-Projekt.
 
 ## <a name="complex-data-binding"></a>Komplexe Datenbindung
  Eine komplexe Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an mindestens zwei Datenelemente (z. B. mehrere Spalten einer Datentabelle) gebunden ist. Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement für Excel ist das einzige Hoststeuerelement, das komplexe Datenbindung unterstützt. Zudem unterstützen viele Windows Forms-Steuerelemente komplexe Datenbindung, etwa das <xref:System.Windows.Forms.DataGridView> -Steuerelement.
@@ -58,7 +56,7 @@ ms.locfileid: "71255832"
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
 
- Exemplarische Vorgehensweisen für die komplexe Datenbindung finden [Sie unter Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) auf Dokument Ebene für ein Projekt auf Dokument Ebene und [Exemplarische Vorgehensweise: Komplexe Datenbindung im VSTO-Add-in](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) -Projekt für ein VSTO-Add-in-Projekt.
+ Exemplarische Vorgehensweisen für die komplexe Datenbindung finden Sie unter Exemplarische Vorgehensweise [: komplexe Datenbindung in einem Projekt](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) auf Dokument Ebene für ein Projekt auf Dokument Ebene und Exemplarische Vorgehensweise [: komplexe Datenbindung im VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) für ein VSTO-Add-in-Projekt.
 
 ## <a name="display-data-in-documents-and-workbooks"></a>Anzeigen von Daten in Dokumenten und Arbeitsmappen
  In Projekten auf Dokumentebene können Sie mithilfe des Fensters **Datenquellen** Dokumenten oder Arbeitsmappen datengebundene Steuerelemente auf die gleiche einfache Weise wie für Windows Forms hinzufügen. Weitere Informationen zum Verwenden des **Datenquellen** Fensters finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) und [Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md).
@@ -73,22 +71,22 @@ ms.locfileid: "71255832"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Binden von Daten in Projekten auf Dokument Ebene zur Entwurfszeit
  In den folgenden Themen werden Beispiele für das Binden von Daten zur Entwurfszeit erläutert:
 
-- [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
 
-- [Vorgehensweise: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Gewusst wie: Scrollen durch Datenbankdaten Sätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Binden von Daten in VSTO-Add-in-Projekten
  In VSTO-Add-in-Projekten können Sie Steuerelemente nur zur Laufzeit hinzufügen. In den folgenden Themen werden Beispiele für das Binden von Daten zur Laufzeit erläutert:
 
-- [Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-in-Projekt](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Exemplarische Vorgehensweise: einfache Datenbindung in einem VSTO-Add-in-Projekt](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
-- [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Exemplarische Vorgehensweise: komplexe Datenbindung in einem VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Aktualisieren von Daten, die an Host Steuerelemente gebunden sind
  Eine Datenbindung zwischen einer Datenquelle und einem Hoststeuerelement bedingt eine bidirektionale Datenaktualisierung. Bei einer einfachen Datenbindung werden Änderungen in der Datenquelle automatisch für das Hoststeuerelement übernommen, aber Änderungen im Hoststeuerelement erfordern einen expliziten Aufruf, damit die Datenquelle aktualisiert wird. Dies ist darauf zurückzuführen, dass in einigen Fällen Änderungen in einem datengebundenen Feld nur dann akzeptiert werden, wenn gleichzeitig auch Änderungen in einem anderen datengebundenen Feld vorgenommen werden. Es könnten z. B. zwei Felder vorhanden sein: eines für das Alter und eines für die Jahre an Berufserfahrung. Die Berufserfahrung kann das Alter nicht übersteigen Ein Benutzer kann nur dann das Alter von 50 in 25 und die Berufserfahrung von 30 in 10 ändern, wenn er die Änderungen gleichzeitig vornimmt. Um dieses Problem zu beheben, werden Felder mit einfacher Datenbindung erst aktualisiert, wenn die Aktualisierungen explizit durch Code gesendet wurden.
@@ -97,11 +95,11 @@ ms.locfileid: "71255832"
 
  Sie müssen die In-Memory-Datenquelle nicht explizit aktualisieren, wenn Sie eine komplexe Datenbindung mit dem <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ausführen. In diesem Fall werden Änderungen automatisch ohne zusätzlichen Code an die In-Memory-Datenquelle gesendet.
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)Elements.
+ Weitere Informationen finden Sie unter Gewusst [wie: Aktualisieren einer Datenquelle mit Daten eines Host Steuer](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)Elements.
 
 ## <a name="see-also"></a>Siehe auch
 - [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
-- [Vorgehensweise: Erstellen eines einfach gebundenen Steuer Elements in einem Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
+- [Gewusst wie: Erstellen eines einfach gebundenen Steuer Elements in einem Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
 - [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8a1c2148f25a1e97cfd1369770e056d1cb907d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 58bfec6fa09f6450afb8170d60acad39edacd590
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568967"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982460"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Erweiterbarkeit von Visual Studio-Debugger
-Visual Studio enthält einen vollständig interaktiven Quellcode-Debugger, der ein leistungsfähiges und einfach zu verwendende Tool zum Nachverfolgen von Fehlern in Ihrem Programm bereitstellt. Der Debugger verfügt über eine umfassende Unterstützung C#für Visual Basic,C++, C/und JavaScript. Mit dem [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], das im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)verfügbar ist, können jedoch andere Programmiersprachen im Debugger mit denselben umfangreichen Features unterstützt werden.
+Visual Studio enthält einen vollständig interaktiven Quellcode-Debugger, der ein leistungsfähiges und einfach zu verwendende Tool zum Nachverfolgen von Fehlern in Ihrem Programm bereitstellt. Der Debugger verfügt über eine umfassende Unterstützung C#für Visual Basic,C++, C/und JavaScript. Mit dem [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], das im [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=21835)verfügbar ist, können jedoch andere Programmiersprachen im Debugger mit denselben umfangreichen Features unterstützt werden.
 
  Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger ist das allgemeine Front-End (d. h. die Benutzeroberfläche) für die debuggingkomponenten, die wiederum spezifisch für die zu debuggende Sprache sind. Bei neuen Sprachen ist für die Unterstützung durch den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger lediglich die Erstellung der erforderlichen Back-End-Komponenten, z. b. Debug-Engine (de), erforderlich. An dieser Stelle kommt der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ins Spiel.
 
@@ -27,7 +27,7 @@ Visual Studio enthält einen vollständig interaktiven Quellcode-Debugger, der e
 
  Ein umfassendes Beispiel eines Sprachprojekt Systems mit Debugunterstützung finden Sie im [IronPython-Beispiel](https://www.microsoft.com/download/details.aspx?id=55984).
 
- In den folgenden Abschnitten wird beschrieben, wie der Debugger mithilfe der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] erweitert wird.
+ In den folgenden Abschnitten wird beschrieben, wie der Debugger mithilfe der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]erweitert wird.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Einstieg](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) Beschreibt, was [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugging bietet und wie das SDK installiert wird.

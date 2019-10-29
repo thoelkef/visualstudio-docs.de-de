@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Assoziation zwischen Entitäten | Microsoft-Dokumentation
+title: Erstellen einer Zuordnung zwischen Entitäten | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,61 +21,61 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c285b699487bd761447e5fbdf6ccd77987a8c0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952892"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981089"
 ---
-# <a name="create-an-association-between-entities"></a>Erstellen einer Assoziation zwischen Entitäten
-  Sie können Beziehungen zwischen Entitäten in Ihrem Modell Business Data Connectivity (BDC) durch das Erstellen von Zuordnungen definieren. Visual Studio generiert die Methoden, die Consumern des Modells mit Informationen über jede Zuordnung bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen zum Anzeigen von datenbeziehungen in einer Benutzeroberfläche (UI) verwendet werden.
+# <a name="create-an-association-between-entities"></a>Erstellen einer Zuordnung zwischen Entitäten
+  Sie können Beziehungen zwischen Entitäten in Ihrem Business Data Connectivity (BDC)-Modell definieren, indem Sie Zuordnungen erstellen. Visual Studio generiert Methoden, die Consumer des Modells mit Informationen zu den einzelnen Zuordnungen bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen genutzt werden, um Daten Beziehungen in einer Benutzeroberfläche (UI) anzuzeigen.
 
 ## <a name="create-an-association"></a>Erstellen einer Zuordnung
- Erstellen Sie eine Zuordnung, indem Sie auswählen der **Zuordnung** -Steuerelement in Visual Studio **Toolbox**, wählen Sie die erste Entität (die Quellentität genannt), und wählen Sie dann die zweite Entität (wird aufgerufen, die Zielentität). Sie können die Details der Zuordnung im Definieren der **Zuordnungs-Editor**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer Assoziation zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md).
+ Erstellen Sie eine Zuordnung, indem Sie das Zuordnungs Steuerelement in der Visual Studio- **Toolbox**auswählen. Wählen Sie **dabei die erste** Entität (Quell Entität) aus, und wählen Sie dann die zweite Entität (als Ziel Entität bezeichnet) Sie können die Details der Zuordnung im **Association-Editor**definieren. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md).
 
-## <a name="association-methods"></a>Zuordnungsmethoden
- Anwendungen wie SharePoint Geschäftsdaten-Webparts nutzen Zuordnungen durch Aufrufen der Methoden in der Dienstklasse, die einer Entität. Sie können die Methoden auf die Dienstklasse einer Entität hinzufügen, wählen sie in der **Zuordnungs-Editor**.
+## <a name="association-methods"></a>Zuordnungs Methoden
+ Anwendungen wie SharePoint Business Data-Webparts nutzen Zuordnungen, indem Sie Methoden in der Dienstklasse einer Entität aufrufen. Sie können der Dienstklasse einer Entität Methoden hinzufügen, indem Sie Sie im **Association-Editor**auswählen.
 
- In der Standardeinstellung die **Zuordnungs-Editor** Fügt eine Zuordnung Navigation-Methode für die Quell- und Entitäten hinzu. Eine Zuordnung Navigation-Methode in der Quellentität kann Kunden zum Abrufen einer Liste von Zielentitäten. Eine Zuordnung Navigation-Methode in der Zielentität ermöglicht es Consumern, die Quellentität abzurufen, die mit einer Zielentität verknüpft.
+ Standardmäßig fügt der **Association Editor** der Quell-und Ziel Entität eine Association-Navigations Methode hinzu. Eine Association-Navigations Methode in der Quell Entität ermöglicht es Consumern, eine Liste von Ziel Entitäten abzurufen. Eine Association-Navigations Methode in der Ziel Entität ermöglicht es Consumern, die Quell Entität abzurufen, die sich auf eine Ziel Entität bezieht.
 
- Sie müssen jede dieser Methoden, um die entsprechenden Informationen zurückzugeben. den Code hinzufügen. Sie können auch andere Arten von Methoden zum unterstützen komplexere Szenarien hinzufügen. Weitere Informationen über jede dieser Methoden finden Sie unter [unterstützte Vorgänge](http://go.microsoft.com/fwlink/?LinkId=169286).
+ Sie müssen den Code den einzelnen Methoden hinzufügen, um die entsprechenden Informationen zurückzugeben. Sie können auch andere Arten von Methoden hinzufügen, um erweiterte Szenarios zu unterstützen. Weitere Informationen zu den einzelnen Methoden finden Sie [unter Unterstützte Vorgänge](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14)).
 
 ## <a name="types-of-associations"></a>Typen von Zuordnungen
- Sie können zwei Arten von Zuordnungen im BDC-Designer erstellen: foreign Key-basierte Zuordnungen und Fremdschlüssel ohne Schlüssel Zuordnungen.
+ Sie können zwei Typen von Zuordnungen im BDC-Designer erstellen: Fremdschlüssel basierte Zuordnungen und Fremdschlüssel lose Zuordnungen.
 
-### <a name="foreign-key-based-association"></a>Foreign Key-basierte Zuordnung
- Sie können eine foreign Key-basierten Zuordnung erstellen, indem Sie einen Bezeichner in der Quellentität Deskriptoren in der Zielentität definierte Typ. Diese Beziehung ermöglicht es Consumern des Modells, um eine verbesserte Benutzeroberfläche für ihre Benutzer bereitzustellen. Beispielsweise ein Formular in Outlook, die Benutzer einen Auftrag erstellen, der Kunden in einer Dropdown-Liste angezeigt werden können. oder eine Liste der Aufträge in SharePoint, die Benutzern ermöglicht, eine Profilseite für einen Kunden zu öffnen.
+### <a name="foreign-key-based-association"></a>Fremdschlüssel basierte Zuordnung
+ Sie können eine Fremdschlüssel basierte Zuordnung erstellen, indem Sie einen Bezeichner in der Quell Entität mit Typdeskriptoren verknüpfen, die in der Ziel Entität definiert sind. Diese Beziehung ermöglicht Consumer des Modells, eine erweiterte Benutzeroberfläche für Ihre Benutzer bereitzustellen. Beispielsweise ein Formular in Outlook, das es einem Benutzer ermöglicht, einen Verkaufsauftrag zu erstellen, der Kunden in einer Dropdown Liste anzeigen kann. oder eine Liste mit Verkaufsaufträgen in SharePoint, mit der Benutzer eine Profilseite für einen Kunden öffnen können.
 
- Um eine foreign Key-basierten Zuordnung zu erstellen, verknüpfen Sie Bezeichner, und Typdeskriptoren Sie, die den gleichen Namen und Typ aufweisen. Beispielsweise können Sie eine foreign Key-basierten Zuordnung zwischen erstellen eine `Contact` Entität und eine `SalesOrder` Entität. Die `SalesOrder` Entität gibt eine `ContactID` Typdeskriptor als Teil der Rückgabeparameter der Finder oder spezifische Finder-Methode. Beide Typdeskriptoren angezeigt, der **Zuordnungs-Editor**. Erstellen Sie eine foreign Key-basierte Beziehung zwischen der `Contact` Entität und `SalesOrder` Entität, wählen Sie die `ContactID` Bezeichner neben jedem dieser Felder.
+ Um eine Fremdschlüssel basierte Zuordnung zu erstellen, verknüpfen Sie Bezeichner und Typdeskriptoren mit dem gleichen Namen und Typ. Beispielsweise können Sie eine Fremdschlüssel basierte Zuordnung zwischen einer `Contact`-Entität und einer `SalesOrder`-Entität erstellen. Die `SalesOrder`-Entität gibt einen `ContactID` Typdeskriptor als Teil des Rückgabe Parameters der Finder-Methode oder einer bestimmten Finder-Methode zurück. Beide Typdeskriptoren werden im **Association-Editor**angezeigt. Um eine Fremdschlüssel basierte Beziehung zwischen der `Contact` Entität und `SalesOrder` Entität zu erstellen, wählen Sie den `ContactID` Bezeichner neben jedem dieser Felder aus.
 
- Fügen Sie Code, der Zuordnung Navigator-Methode der Quellentität, die eine Auflistung von Zielentitäten zurückgibt. Im folgende Beispiel werden die Aufträge für einen Kontakt zurückgegeben.
+ Fügen Sie der Association Navigator-Methode der Quell Entität, die eine Auflistung von Ziel Entitäten zurückgibt, Code hinzu. Im folgenden Beispiel werden die Verkaufsaufträge für einen Kontakt zurückgegeben.
 
  [!code-csharp[SP_BDC#7](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#7)]
  [!code-vb[SP_BDC#7](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#7)]
 
- Fügen Sie Code, der Zuordnung Navigator-Methode der Zielentität, die eine Quellentität zurückgibt. Das folgende Beispiel gibt die wenden Sie sich an, die sich auf die Bestellung beziehen.
+ Fügen Sie der Association Navigator-Methode der Ziel Entität, die eine Quell Entität zurückgibt, Code hinzu. Im folgenden Beispiel wird der Kontakt zurückgegeben, der mit dem Verkaufsauftrag verknüpft ist.
 
  [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)]
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
-### <a name="foreign-keyless-association"></a>Zuordnung ohne Fremdschlüssel
- Sie können eine Zuordnung erstellen, ohne das Zuordnen von Bezeichnern zum Feld Typdeskriptoren. Erstellen Sie diese Art von Zuordnung aus, wenn die Quellentität keine direkte Beziehung mit der Zielentität. Z. B. eine `SalesOrderDetail` Tabelle besitzt keinen Fremdschlüssel, der einen Primärschlüssel in zugeordnet ist eine `Contact` Tabelle.
+### <a name="foreign-keyless-association"></a>Fremdschlüssel Zuordnung
+ Sie können eine Zuordnung erstellen, ohne den Feldtyp Deskriptoren Bezeichner zuordnen zu müssen. Erstellen Sie diese Art von Zuordnung, wenn die Quell Entität über keine direkte Beziehung mit der Ziel Entität verfügt. Beispielsweise verfügt eine `SalesOrderDetail` Tabelle nicht über einen Fremdschlüssel, der einem Primärschlüssel in einer `Contact` Tabelle zugeordnet ist.
 
- Wenn Sie Informationen anzeigen möchten die `SalesOrderDetail` Tabelle, die Beziehung zu einer `Contact`, können Sie eine Zuordnung ohne Fremdschlüssel zwischen Erstellen der `Contact` Entität und `SalesOrderDetail` Entität.
+ Wenn Sie Informationen in der `SalesOrderDetail` Tabelle anzeigen möchten, die sich auf einen `Contact`bezieht, können Sie eine Fremdschlüssel lose Zuordnung zwischen der `Contact` Entität und `SalesOrderDetail` Entität erstellen.
 
- In der Zuordnung Navigation-Methode, der die `Contact` Entität Zurückgeben der `SalesOrderDetail` Entitäten durch Verknüpfen von Tabellen oder durch Aufrufen einer gespeicherten Prozedur.
+ Geben Sie in der Association-Navigations Methode der `Contact`-Entität die `SalesOrderDetail` Entitäten zurück, indem Sie Tabellen miteinander verbinden oder eine gespeicherte Prozedur aufrufen.
 
- Das folgende Beispiel gibt die Details aller Bestellungen durch Verknüpfen von Tabellen zurück.
+ Im folgenden Beispiel werden die Details aller Verkaufsaufträge durch das Verbinden von Tabellen zurückgegeben.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- In der Zuordnung Navigation-Methode, der die `SalesOrderDetail` Entität zurückgeben, die zugehörigen `Contact`. Dies wird im folgenden Beispiel veranschaulicht:
+ Geben Sie in der Association-Navigations Methode der `SalesOrderDetail`-Entität den zugehörigen `Contact`zurück. Dies wird im folgenden Beispiel veranschaulicht:
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
 ## <a name="see-also"></a>Siehe auch
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Vorgehensweise: Erstellen einer Assoziation zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)
+- [Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)

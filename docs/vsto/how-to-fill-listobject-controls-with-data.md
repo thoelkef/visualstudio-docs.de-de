@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: ListObject-Steuerelemente mit Daten füllen'
+title: 'Gewusst wie: Auffüllen von ListObject-Steuerelementen mit Daten'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255890"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985922"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Vorgehensweise: ListObject-Steuerelemente mit Daten füllen
+# <a name="how-to-fill-listobject-controls-with-data"></a>Gewusst wie: Auffüllen von ListObject-Steuerelementen mit Daten
   Sie können die Datenbindung als Möglichkeit zum schnellen Hinzufügen von Daten zu Ihrem Dokument verwenden. Nach dem Binden der Daten an ein Listenobjekt können Sie das Listenobjekt trennen, damit es die Daten anzeigt, aber nicht länger an die Datenquelle gebunden ist.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
-
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden [Sie unter Gewusst wie: Erstellen Sie eine Liste in Excel, die mit einer SharePoint-Liste verbunden ist? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>So binden Sie Daten an ein ListObject-Steuerelement
 
@@ -62,9 +60,9 @@ ms.locfileid: "71255890"
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Vorgehensweise: Zuordnen von ListObject-Spalten zu Daten](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Gewusst wie: Zuordnen von ListObject-Spalten zu Daten](../vsto/how-to-map-listobject-columns-to-data.md)
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject-Steuerelement](../vsto/listobject-control.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a346686ee89862abef046c066614eddce1cf3a3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255759"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985469"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs
   Benutzerdefinierte Formularbereiche erweitern Standard- oder benutzerdefinierte Microsoft Office Outlook-Formulare. In dieser exemplarischen Vorgehensweise entwerfen Sie einen benutzerdefinierten Formularbereich, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird. Dieser Formularbereich zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist, indem die Adressinformationen an die Windows Live Local Search-Website gesendet werden. Weitere Informationen zu Formular Bereichen finden Sie unter [Erstellen von Outlook-Formular](../vsto/creating-outlook-form-regions.md)Bereichen.
@@ -37,29 +37,29 @@ ms.locfileid: "71255759"
 - Testen des Outlook-Formularbereichs.
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]oder neuer.
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] oder neuer.
 
-  ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine videoversion dieses Themas finden [Sie unter Video How to: Entwerfen eines Outlook-Formular](http://go.microsoft.com/fwlink/?LinkID=140824)Bereichs.
+  ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine videoversion dieses Themas finden [Sie unter Video Gewusst wie: Entwerfen eines Outlook-Formular Bereichs](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90)).
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Erstellen eines neuen Outlook VSTO-Add-in-Projekts
  Erstellen Sie zunächst ein Outlook VSTO-Add-In-Basisprojekt.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>So erstellen Sie ein neues Outlook VSTO-Add-In-Projekt
 
-1. Erstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Sie in ein Outlook VSTO-Add-in-Projekt mit dem Namen " **MapItAddIn**".
+1. Erstellen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ein Outlook-VSTO-Add-in-Projekt mit dem Namen " **MapItAddIn**".
 
 2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen**aus.
 
 3. Speichern Sie das Projekt in einem beliebigen Verzeichnis.
 
-     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Hinzufügen eines Formular Bereichs zum Outlook-VSTO-Add-in-Projekt
  Eine Outlook-VSTO-Add-In-Projektmappe enthält mindestens ein Outlook-Formularbereichelement. Fügen Sie dem Projekt ein Formular Bereichs Element hinzu, indem Sie den Assistenten für **neue Outlook-Formular** Bereiche verwenden.
@@ -122,7 +122,7 @@ ms.locfileid: "71255759"
 
     Die Formularbereichsfactory-Klasse namens `MapItFactory` wird bereitgestellt.
 
-3. Fügen Sie dem `MapItFactory_FormRegionInitializing`-Ereignishandler den folgenden Code hinzu. Dieser Ereignishandler wird aufgerufen, wenn der Benutzer ein Kontaktelement öffnet. Der folgende Code ermittelt, ob das Kontaktelement eine Adresse enthält. Wenn das Kontakt Element keine Adresse enthält, legt dieser Code die <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> -Eigenschaft <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> der-Klasse auf " **true** " fest, und der Formular Bereich wird nicht angezeigt. Andernfalls löst das VSTO-Add-In das Ereignis <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> aus und zeigt den Formularbereich an.
+3. Fügen Sie dem `MapItFactory_FormRegionInitializing`-Ereignishandler den folgenden Code hinzu. Dieser Ereignishandler wird aufgerufen, wenn der Benutzer ein Kontaktelement öffnet. Der folgende Code ermittelt, ob das Kontaktelement eine Adresse enthält. Wenn das Kontakt Element keine Adresse enthält, legt dieser Code die <xref:System.ComponentModel.CancelEventArgs.Cancel%2A>-Eigenschaft der <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>-Klasse auf " **true** " fest, und der Formular Bereich wird nicht angezeigt. Andernfalls löst das VSTO-Add-In das Ereignis <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> aus und zeigt den Formularbereich an.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
@@ -177,7 +177,7 @@ ms.locfileid: "71255759"
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
 - [Richtlinien zum Erstellen von Outlook-Formular Bereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formular Bereichs](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Vorgehensweise: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Gewusst wie: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Benutzerdefinierte Aktionen in Outlook-Formular Bereichen](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Vorgehensweise: Verhindern, dass Outlook einen Formular Bereich anzeigt](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Gewusst wie: verhindern der Anzeige eines Formular Bereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

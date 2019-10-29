@@ -8,19 +8,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 28cf2f0542cc76e5045dbf0780e9899983084760
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315118"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982392"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
 Befolgen Sie die Richtlinien für die Visual Studio-Benutzer Leistung, wenn Sie neue Features für Visual Studio entwerfen. Diese Richtlinien enthalten Informationen zu gängigen Benutzer Modellen und Interaktionsmustern, damit Entwickler von neuen Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die in der Entwicklungsumgebung nahtlos und konsistent sind.
 
 Wenn Sie Software für Microsoft-Produkte entwickeln, erfahren Sie, wie Sie die folgenden Ressourcen verwenden:
 
-- Die [Interaktions Richtlinien für Windows-Benutzer](https://docs.microsoft.com/windows/win32/uxguide/guidelines) Funktionen sind die Grundlagen für das Verhalten und die Darstellung von Windows-Desktops.
+- Die [Interaktions Richtlinien für Windows-Benutzer](/windows/win32/uxguide/guidelines) Funktionen sind die Grundlagen für das Verhalten und die Darstellung von Windows-Desktops.
 
 - Diese Visual Studio-Richtlinien sind plattformspezifische Richtlinien, die die allgemeinen Windows-Richtlinien ersetzen, wenn dies für unsere Umgebung geeignet ist.
 

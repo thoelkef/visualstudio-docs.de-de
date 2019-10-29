@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 801486e7c0abfa2cb91f7fb7237cf3a48e8bc916
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551836"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985907"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Vorgehensweise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit
-  Die Visual Studio 2010-Tools für Office-Laufzeit muss auf jedem Computer installiert sein, auf dem Projektmappen ausgeführt werden, die mithilfe [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]der Microsoft Office Developer Tools in erstellt wurden. Die Laufzeit wird automatisch installiert, wenn Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Microsoft Office installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools for Office Runtime Installation Szenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+  Die Visual Studio 2010-Tools für Office-Laufzeit muss auf jedem Computer installiert sein, auf dem Projektmappen ausgeführt werden, die mithilfe der Microsoft Office Entwickler Tools in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellt werden. Die Laufzeit wird automatisch installiert, wenn Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Microsoft Office installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools for Office Runtime Installation Szenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -40,22 +40,22 @@ ms.locfileid: "69551836"
 
 1. Installieren Sie [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher.
 
-    - Informationen zum herunter [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]Laden von finden Sie unter [Microsoft .NET Framework 4 (Webinstaller)](http://go.microsoft.com/fwlink/?LinkId=178957).
+    - Informationen zum Herunterladen der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]finden Sie unter [Microsoft .NET Framework 4 (Webinstaller)](https://www.microsoft.com/download/details.aspx?id=17851).
 
-    - Informationen zum herunter [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]Laden von finden Sie unter [Microsoft .NET Framework 4 Client Profile (Webinstaller)](http://go.microsoft.com/fwlink/?LinkId=178958).
+    - Informationen zum Herunterladen der [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]finden Sie unter [Microsoft .NET Framework 4 Client Profile (Webinstaller)](https://www.microsoft.com/download/details.aspx?id=17113).
 
-    - Informationen zum herunter [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]Laden von finden Sie unter [Microsoft .NET Framework 4,5](http://www.microsoft.com/download/details.aspx?id=30653).
+    - Informationen zum Herunterladen der [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]finden Sie unter [Microsoft .NET Framework 4,5](https://www.microsoft.com/download/details.aspx?id=30653).
 
-2. Führen Sie *vstor_redist. exe* aus, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]um den zu installieren.
+2. Führen Sie *vstor_redist. exe* aus, um die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]zu installieren.
 
-     Sie können diese Setup Dateien von [Visual Studio 2010 Tools for Office Runtime](http://go.microsoft.com/fwlink/?LinkId=140384)herunterladen. Die erforderlichen Komponenten für [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stimmen mit denen für .NET Framework überein.
+     Sie können diese Setup Dateien von [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/download/details.aspx?id=56961)herunterladen. Die erforderlichen Komponenten für [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stimmen mit denen für .NET Framework überein.
 
-     Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] enthält Language Packs. Wenn Sie für Windows andere Spracheinstellungen als Englisch festgelegt haben, können Sie Laufzeitmeldungen in der Sprache anzeigen, die Sie für Windows verwenden. Wenn Endbenutzer [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installieren und dann die Projektmappen auf Windows-Installationen ausführen, die andere Spracheinstellungen als Englisch verwenden, werden Laufzeitmeldungen entsprechend in derselben Sprache wie Windows angezeigt. In einigen Fällen benötigen Sie möglicherweise zusätzliche Language Packs. Beispielsweise können Sie weitere Sprachpakete benötigen, wenn in Ihrer Windows-Version mehr als eine Spracheinstellung verwendet wird, oder wenn Sie auf eine andere Sprache umstellen, nachdem [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Sie bereits installiert haben. Sprachpakete finden Sie unter [Microsoft Visual Studio 2010 Tools für das Microsoft Office System (Version 4,0 Runtime) Language Pack](http://go.microsoft.com/fwlink/?LinkId=140386).
+     Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] enthält Language Packs. Wenn Sie für Windows andere Spracheinstellungen als Englisch festgelegt haben, können Sie Laufzeitmeldungen in der Sprache anzeigen, die Sie für Windows verwenden. Wenn Endbenutzer [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installieren und dann die Projektmappen auf Windows-Installationen ausführen, die andere Spracheinstellungen als Englisch verwenden, werden Laufzeitmeldungen entsprechend in derselben Sprache wie Windows angezeigt. In einigen Fällen benötigen Sie möglicherweise zusätzliche Language Packs. Beispielsweise benötigen Sie möglicherweise weitere Sprachpakete, wenn in Ihrer Windows-Version mehr als eine Spracheinstellung verwendet wird, oder Sie wechseln zu einer anderen Sprache, nachdem Sie die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]bereits installiert haben. Sprachpakete finden Sie unter [Microsoft Visual Studio 2010 Tools für das Microsoft Office System (Version 4,0 Runtime) Language Pack](https://www.microsoft.com/download/details.aspx?id=54246).
 
 ## <a name="see-also"></a>Siehe auch
 - [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Gewusst wie: Installieren von primären Interop-Assemblys in Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
 - [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666723"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985129"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -28,8 +28,6 @@ Zusammenfassend werden die Schritte im dslpackage-Projekt wie folgt ausgeführt:
 2. [Aktualisieren Sie die Paket Versionsnummer in Package.tt](#version). Dies müssen Sie nach jeder Änderung von Commands.vsct tun.
 
 3. [Schreiben Sie Methoden in der CommandSet-Klasse](#CommandSet) , um den Befehl sichtbar zu machen und zu definieren, was der Befehl tun soll.
-
-   Beispiele finden Sie auf der [Website zum Visualisieren und modellieren des SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > Sie können auch das Verhalten einiger vorhandener Befehle wie Ausschneiden, Einfügen, Alle auswählen und Drucken ändern, indem Sie die entsprechenden Methoden in "CommandSet.cs" überschreiben. Weitere Informationen finden Sie unter Gewusst [wie: Ändern eines Standard Menübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -362,7 +360,7 @@ Die **OnStatus-Methode wird nicht aufgerufen**:
 ## <a name="see-also"></a>Siehe auch
 
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Vorgehensweise: Ändern eines Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Gewusst wie: Ändern eines Standardmenü Befehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Bereitstellen von domänenspezifischen Sprachlösungen](msi-and-vsix-deployment-of-a-dsl.md)
 - [Beispielcode: Leitungs Diagramme](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 

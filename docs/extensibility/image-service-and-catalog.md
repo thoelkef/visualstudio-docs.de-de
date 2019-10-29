@@ -1,5 +1,5 @@
 ---
-title: Image-Dienst und -Katalog | Microsoft-Dokumentation
+title: Image-Dienst und-Katalog | Microsoft-Dokumentation
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,69 +8,69 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50da4e8367b6649f4224da93f079ab4868b6ae2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d2647c09718f17235a3024f5787a0b85a7633ee1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826011"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982248"
 ---
-# <a name="image-service-and-catalog"></a>Bilddienst und-Katalog
-Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg auf den Dienst für Visual Studio-Images und Image-Katalog, die in Visual Studio 2015 eingeführt.
+# <a name="image-service-and-catalog"></a>Image-Dienst und-Katalog
+Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung von Visual Studio Image Service und Image Catalog, die in Visual Studio 2015 eingeführt wurden.
 
- Der Image-Dienst, eingeführt in Visual Studio 2015 ermöglicht Entwicklern die besten Bilder für das Gerät und das ausgewählte Design des Benutzers, zum Anzeigen des Bilds an, einschließlich des richtigen Designs für den Kontext, in dem sie angezeigt werden. Einführung des Diensts für Images können wichtige Problembereiche im Zusammenhang mit Asset-Wartung, HDPI Skalierung und Designs zu vermeiden.
+ Der in Visual Studio 2015 eingeführte Image Dienst ermöglicht Entwicklern das erzielen der besten Images für das Gerät und das ausgewählte Design des Benutzers, um das Bild anzuzeigen, einschließlich der korrekten Themen für den Kontext, in dem Sie angezeigt werden. Durch die Einführung des Image Service werden wichtige Probleme im Zusammenhang mit der Bestandsverwaltung, der hdpi-Skalierung und der Design Beseitigung vermieden.
 
 |||
 |-|-|
-|**Probleme noch heute**|**Projektmappen**|
-|Hintergrund Kombination von Farbe|Integrierte Alphablending|
-|Design (einige)-images|Design-Metadaten|
-|Modus für hohe Kontraste|Alternative Ressourcen von hohem Kontrast|
-|Benötigen Sie mehrere Ressourcen für unterschiedliche DPI-Modi|Auswählbar-Ressourcen mit vektorbasierte fallback|
-|Doppelten Bildern|Ein Bezeichner pro Image-Konzept|
+|**Probleme heute**|**Projektmappen**|
+|Kombination von Hintergrundfarben|Integrierte Alpha Mischung|
+|Design (einige) Bilder|Design Metadaten|
+|hoher Kontrast Modus|Alternative hoher Kontrast Ressourcen|
+|Benötigen Sie mehrere Ressourcen für verschiedene DPI-Modi.|Auswählbare Ressourcen mit Vektor basiertem Fall Back|
+|Doppelte Bilder|Ein Bezeichner pro Bildkonzept|
 
- Warum einführen den Image-Dienst?
+ Gründe für die Übernahme des Image Service
 
-- Erhalten Sie immer das neueste "pixelgenauen" Image aus Visual Studio
+- Immer das neueste "Pixel-perfekte" Image aus Visual Studio erhalten
 
-- Sie senden können, und verwenden Sie Ihre eigenen images
+- Sie können Ihre eigenen Images übermitteln und verwenden.
 
-- Nicht erforderlich, Testen Ihre Images, wenn Windows neue DPI-Skalierung fügt
+- Es ist nicht erforderlich, Ihre Images zu testen, wenn Windows eine neue DPI-Skalierung hinzufügt
 
-- Alte Architektur Hürden in Ihrer Implementierung zu beheben
+- Behandeln von alten Architektur Hürden in ihren Implementierungen
 
-  Der Visual Studio Shell-Symbolleiste, vor und nach der Verwendung des Image-Diensts:
+  Die Visual Studio Shell-Symbolleiste vor und nach der Verwendung des Image Service:
 
-  ![Bilddienst vorher – nachher](../extensibility/media/image-service-before-and-after.png "Bilddienst vorher – nachher")
+  ![Image Dienst vor und nach](../extensibility/media/image-service-before-and-after.png "Bilddienst vorher und nachher")
 
-## <a name="how-it-works"></a>So funktioniert es
- Der Image-Dienst kann auf ein Bitmapbild geeignet für alle unterstützten UI-Frameworks angeben:
+## <a name="how-it-works"></a>Funktionsweise
+ Der Image-Dienst kann ein für alle unterstützte Benutzeroberflächen Framework geeignetes Bitmapbild bereitstellen:
 
 - WPF: BitmapSource
 
-- WinForms: System.Drawing.Bitmap
+- WinForms: System. Drawing. Bitmap
 
 - Win32: HBITMAP
 
   Bilddienst-Flussdiagramm
 
-  ![Image-Flussdiagramm](../extensibility/media/image-service-flow-diagram.png "Image-Flussdiagramm")
+  ![Bilddienst-Flussdiagramm](../extensibility/media/image-service-flow-diagram.png "Bilddienst-Flussdiagramm")
 
-  **Image-Moniker**
+  **Bilmoniker**
 
-  Ein Bild Moniker (oder der Moniker für die kurze) ist ein GUID-ID-Paar, das ein Standardimage-Medienobjekt oder die Liste bildanlage aus der Abbildbibliothek eindeutig identifiziert.
+  Ein bilmoniker (oder ein Moniker für Short) ist ein GUID-/ID-Paar, das ein Image-oder Image Listen Medienobjekt in der Bildbibliothek eindeutig identifiziert.
 
   **Bekannte Moniker**
 
-  Der Satz von Image-Moniker, die in der Visual Studio-Image-Katalog und öffentlich verwendet werden können von Visual Studio-Komponente oder Erweiterung enthalten.
+  Der Satz von bilmonikern, die im Visual Studio-Image Katalog enthalten sind und von jeder Visual Studio-Komponente oder-Erweiterung öffentlich genutzt werden.
 
-  **Image-Manifestdateien**
+  **Bild Manifest-Dateien**
 
-  Bildmanifest ( *.imagemanifest*)-Dateien sind XML-Dateien, die einen Satz von Bildressourcen, die Moniker zu, die darstellen definieren, die Ressourcen, und die echten Bild oder Bilder, jedes Objekt darstellen. Bildmanifesten können eigenständige Bilder oder bilderlisten für ältere Benutzeroberflächenautomatisierungs-Unterstützung. Es gibt außerdem Attribute, die auf das Objekt oder auf die einzelnen Bilder hinter jedem Medienobjekt festgelegt werden können, zu ändern, wann und wie diese Objekte angezeigt werden.
+  Bild Manifest-Dateien ( *. imagemanifest*) sind XML-Dateien, die eine Gruppe von Image-Assets definieren, die Moniker, die diese Assets darstellen, und das echte Bild bzw. die einzelnen Bilder, die die einzelnen Assets darstellen. Bilmanifeste können eigenständige Images oder Bildlisten für die Legacy-Benutzeroberflächen Unterstützung definieren. Außerdem gibt es Attribute, die entweder für das Medienobjekt oder für die einzelnen Images hinter den einzelnen Assets festgelegt werden können, um zu ändern, wann und wie diese Objekte angezeigt werden.
 
-  **Image-manifest-schema**
+  **Schema des Image Manifests**
 
-  Ein Abschließen des Images Manifest sieht folgendermaßen aus:
+  Ein umfassendes Bild Manifest sieht wie folgt aus:
 
 ```xml
 <ImageManifest>
@@ -89,9 +89,9 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 </ImageManifest>
 ```
 
- **Symbols**
+ **MB**
 
- Wie einer besseren Lesbarkeit und die Wartung zu unterstützen, können die bildmanifest Symbole für Attributwerte. Symbole sind wie folgt definiert:
+ Zur Unterstützung der Lesbarkeit und Wartung kann das Bild Manifest Symbole für Attributwerte verwenden. Symbole werden wie folgt definiert:
 
 ```xml
 <Symbols>
@@ -104,13 +104,13 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 
 |||
 |-|-|
-|**Subelement**|**Definition**|
-|Importieren|Importiert die Symbole der angegebenen Manifestdatei zur Verwendung in das aktuelle manifest|
-|GUID|Das Symbol eine GUID darstellt, und Formatieren der GUID übereinstimmen|
-|ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|
-|Zeichenfolge|Das Symbol für eines beliebigen Zeichenfolgenwert|
+|**Unterelement**|**Definition**|
+|Importieren|Importiert die Symbole der angegebenen Manifest-Datei zur Verwendung im aktuellen Manifest.|
+|GUID|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
+|Id|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|
+|Zeichenfolge|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|
 
- Symbole sind Groß-/Kleinschreibung beachtet und die referenzierten $(symbol-name)-Syntax verwenden:
+ Bei Symbolen wird die Groß-/Kleinschreibung beachtet und mithilfe der Syntax $ (Symbol Name) auf Sie verwiesen:
 
 ```xml
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >
@@ -118,24 +118,24 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 </Image>
 ```
 
- Einige Symbole sind für alle Manifeste vordefiniert. Diese können verwendet werden, in der das Uri-Attribut der \<Quelle > oder \<Import >-Element zu Verweispfaden auf dem lokalen Computer.
+ Einige Symbole sind für alle Manifeste vordefiniert. Diese können im URI-Attribut des \<Quell > oder \<importieren > Elements verwendet werden, um auf Pfade auf dem lokalen Computer zu verweisen.
 
 |||
 |-|-|
-|**Symbol**|**Beschreibung**|
-|CommonProgramFiles|Der Wert, der die Variable %CommonProgramFiles%-Umgebung|
-|LocalAppData|Der Wert der Umgebungsvariablen % LocalAppData% %|
-|ManifestFolder|Dem Ordner mit der Manifestdatei|
-|MyDocuments|Der vollständige Pfad des Ordners "Eigene Dateien" des aktuellen Benutzers|
-|ProgramFiles|Der Wert der Umgebungsvariablen % ProgramFiles %|
-|System|Die *"Windows\System32"* Ordner|
-|WinDir|Der Wert der Umgebungsvariable "WinDir"|
+|**Tick**|**Beschreibung**|
+|CommonProgramFiles|Der Wert der Umgebungsvariablen "% COMMONPROGRAM Files%"|
+|LocalAppData|Der Wert der Umgebungsvariablen "% LocalAppData%"|
+|ManifestFolder|Der Ordner, der die Manifest-Datei enthält.|
+|Ordner MyDocuments|Der vollständige Pfad des Ordners "eigene Dateien" des aktuellen Benutzers.|
+|ProgramFiles|Der Wert der Umgebungsvariablen "% Program Files%"|
+|System|Der Ordner " *Windows\System32* "|
+|WinDir|Der Wert der Umgebungsvariablen "% windir%".|
 
  **Image**
 
- Die \<Image >-Element definiert ein Bild, das einen Moniker verwiesen werden kann. Die GUID und ID, die zusammen bilden die Image-Moniker. Der Moniker für das Image muss innerhalb der gesamten Abbildbibliothek eindeutig sein. Wenn mehr als ein Bild ein angegebenes Monikers verfügt, wird die erste Bedingung, die beim Erstellen der Bibliotheks gefunden, die beibehalten werden.
+ Mit dem \<-Image >-Element wird ein Bild definiert, auf das von einem Moniker verwiesen werden kann. Die GUID und die ID, die zusammen aus dem bilmoniker entnommen wurden. Der Moniker für das Bild muss in der gesamten Bildbibliothek eindeutig sein. Wenn mehr als ein Bild über einen angegebenen Moniker verfügt, ist der erste, der beim Aufbau der Bibliothek aufgetreten ist, der einzige, der beibehalten wird.
 
- Es muss mindestens eine Quelle enthalten. Größe neutrale Quellen erhalten die besten Ergebnisse für eine Vielzahl von Größen, aber sie sind nicht erforderlich. Wenn der Dienst für ein Bild mit einer Größe, die nicht in definierte aufgefordert wird die \<Image >-Element und es ist keine Größe Neutral Quelle ist, wird der Dienst, wählen Sie die beste Quelle für spezifische Größe und skalieren Sie sie auf die angeforderte Größe.
+ Sie muss mindestens eine Quelle enthalten. Größen neutrale Quellen liefern die besten Ergebnisse für eine breite Palette von Größen, sind jedoch nicht erforderlich. Wenn der Dienst aufgefordert wird, ein Image einer Größe zu erhalten, die nicht im \<Image > Element definiert ist, und es keine Größen neutrale Quelle gibt, wählt der Dienst die beste Größen spezifische Quelle aus und skaliert Sie auf die angeforderte Größe.
 
 ```xml
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">
@@ -147,13 +147,13 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |||
 |-|-|
 |**Attribut**|**Definition**|
-|GUID|[Erforderlich] Der GUID-Teil der Image-moniker|
-|ID|[Erforderlich] Die ID-Teil der Image-moniker|
-|AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild seine Farben umgekehrt programmgesteuert, wenn auf einen dunklen Hintergrund verwendet werden kann.|
+|GUID|Benötigten Der GUID-Teil des bilmonikers.|
+|Id|Benötigten Der ID-Teil des bilmonikers.|
+|Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|
 
- **Quelle**
+ **Source**
 
- Die \<Source >-Element definiert ein einzelnes Abbild quellmedienobjekt (XAML und PNG).
+ Das \<Quell > Element definiert ein einzelnes Bild Quell Medienobjekt (XAML und PNG).
 
 ```xml
 <Source Uri="uri" Background="background">
@@ -164,20 +164,20 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |||
 |-|-|
 |**Attribut**|**Definition**|
-|URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden können. Sie können eine der folgenden sein:<br /><br /> -Ein [Paket-URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mithilfe der Anwendung: / / / der Autorität<br />– Ein Ressourcenverweis absolute-Komponente<br />– Ein Pfad zu einer Datei enthält eine systemeigene Ressource|
-|Hintergrund|[Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> *Licht:* Die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:* Die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastLight:* Die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastDark:* Die Quelle kann auf einen dunklen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn der Hintergrund ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn Hintergrund ausgelassen oder legen Sie auf *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut.|
+|URI|Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Dabei kann es sich um einen der folgenden handeln:<br /><br /> -Ein [Paket-URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält.|
+|Hintergrund|Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Dabei kann es sich um einen der folgenden handeln:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:* Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert.|
 
-Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeordneten Elemente aufweisen:
+Ein \<Quell > Element kann genau eines der folgenden optionalen unter Elemente aufweisen:
 
 ||||
 |-|-|-|
 |**Element**|**Attribute (alle erforderlich)**|**Definition**|
-|\<Size>|Wert|Die Quelle wird für Bilder mit der angegebenen Größe (in Geräteeinheiten) verwendet werden. Das Bild wird quadratisch sein.|
-|\<SizeRange>|MinSize, MaxSize|Die Quelle wird für Bilder aus "MinSize" auf MaxSize-Wert (in Geräteeinheiten) einschließlich verwendet werden. Das Bild wird quadratisch sein.|
-|\<Dimensionen >|Breite, Höhe|Die Quelle wird für Bilder mit der angegebenen Breite und Höhe (in Geräteeinheiten) verwendet werden.|
-|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird einschließlich bei Abbildern für die minimale Breite/Höhe, die maximale Breite/Höhe (in Geräteeinheiten) verwendet werden.|
+|\<Größe >|Wert|Die Quelle wird für Images der angegebenen Größe (in Geräte Einheiten) verwendet. Das Bild wird quadratisch.|
+|\<sizerange >|MinSize, MaxSize|Die Quelle wird für Images von MinSize bis MaxSize (in Geräte Einheiten) inklusive verwendet. Das Bild wird quadratisch.|
+|\<Dimensionen >|Breite, Höhe|Die Quelle wird für Bilder mit der angegebenen Breite und Höhe (in Geräte Einheiten) verwendet.|
+|\<dimensionrange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird für Bilder von der minimalen Breite/Höhe bis zur maximalen Breite bzw. Höhe (in Geräte Einheiten) einschließlich der maximalen Breite/Höhe verwendet.|
 
- Ein \<Source >-Element kann auch einen optionalen aufweisen \<NativeResource > Unterelement, das definiert eine \<Quelle >, die aus einer nativen Assembly anstatt einer verwalteten Assembly geladen wird.
+ Ein \<Quell > Element kann auch über ein optionales \<nativeresource > Subelement verfügen, das eine \<Quell > definiert, die aus einer nativen Assembly und nicht aus einer verwalteten Assembly geladen wird.
 
 ```xml
 <NativeResource Type="type" ID="int" />
@@ -186,12 +186,12 @@ Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeor
 |||
 |-|-|
 |**Attribut**|**Definition**|
-|Typ|[Erforderlich] Der Typ der systemeigene Ressource entweder XAML oder PNG-Datei|
-|ID|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|
+|Geben Sie Folgendes ein:|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
+|Id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
 
  **ImageList**
 
- Die \<ImageList >-Element definiert eine Auflistung von Abbildern, die auf einem einzelnen Streifen zurückgegeben werden können. Das Entfernen wird bei Bedarf erstellt, je nach Bedarf.
+ Das \<ImageList-> Element definiert eine Auflistung von Bildern, die in einem einzelnen Strip zurückgegeben werden können. Der Strip baut bei Bedarf Bedarfs gesteuert auf.
 
 ```xml
 <ImageList>
@@ -203,99 +203,99 @@ Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeor
 |||
 |-|-|
 |**Attribut**|**Definition**|
-|GUID|[Erforderlich] Der GUID-Teil der Image-moniker|
-|ID|[Erforderlich] Die ID-Teil der Image-moniker|
-|Extern|[Optional, standardmäßig "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|
+|GUID|Benötigten Der GUID-Teil des bilmonikers.|
+|Id|Benötigten Der ID-Teil des bilmonikers.|
+|Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|
 
- Der Moniker für das enthaltene Image keine auf ein Bild in das aktuelle Manifest definiert. Wenn das eigenständige Image aus der Abbildbibliothek gefunden werden kann, wird ein leeres Platzhalterbild an seiner Stelle verwendet werden.
+ Der Moniker für das enthaltene Bild muss nicht auf ein Bild verweisen, das im aktuellen Manifest definiert ist. Wenn das enthaltene Bild in der Bildbibliothek nicht gefunden werden kann, wird an seiner Stelle ein leeres Platzhalter Bild verwendet.
 
-## <a name="using-the-image-service"></a>Verwenden des Image-Diensts
+## <a name="using-the-image-service"></a>Verwenden des Image Service
 
 ### <a name="first-steps-managed"></a>Erste Schritte (verwaltet)
- Um den Dienst Images verwenden zu können, müssen Sie Ihrem Projekt Verweise auf einige oder alle der folgenden Assemblys hinzufügen:
+ Um den Image Dienst zu verwenden, müssen Sie Ihrem Projekt Verweise auf einige oder alle der folgenden Assemblys hinzufügen:
 
-- *Microsoft.VisualStudio.ImageCatalog.dll*
+- *Microsoft. VisualStudio. imagecatalog. dll*
 
-  - Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**.
+  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmonikers**verwenden.
 
-- *Microsoft.VisualStudio.Imaging.dll*
+- *Microsoft. VisualStudio. Imaging. dll*
 
-  - Erforderlich, wenn Sie **CrispImage** und **ImageThemingUtilities** in Ihrer WPF-UI.
+  - Erforderlich, wenn Sie " **crispimage** " und " **imagethemingutilities** " in der WPF-Benutzeroberfläche verwenden.
 
-- *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
+- *Microsoft. VisualStudio. Imaging. Interop. 14,0. designtime. dll*
 
-  - Erforderlich, wenn Sie die **ImageMoniker** und **"ImageAttributes"** Typen.
+  - Erforderlich, wenn Sie die Typen **imagemoniker** und **imageattribute** verwenden.
 
-  - **EmbedInteropTypes** sollte festgelegt werden, auf "true".
+  - **Embedinteroptypes** sollte auf true festgelegt werden.
 
-- *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
+- *Microsoft. VisualStudio. Shell. Interop. 14,0. designtime*
 
-  - Erforderlich, wenn Sie die **IVsImageService2** Typ.
+  - Erforderlich, wenn Sie den **IVsImageService2** -Typ verwenden.
 
-  - **EmbedInteropTypes** sollte festgelegt werden, auf "true".
+  - **Embedinteroptypes** sollte auf true festgelegt werden.
 
-- *Microsoft.VisualStudio.Utilities.dll*
+- *Microsoft. VisualStudio. Utilities. dll*
 
-  - Erforderlich, wenn Sie die **BrushToColorConverter** für die **ImageThemingUtilities.ImageBackgroundColor** in Ihrer WPF-UI.
+  - Erforderlich, wenn Sie in der WPF-Benutzeroberfläche für " **imagethemingutilities. imagebackgroundcolor** " den Wert " **brushumcolorconverter** " verwenden.
 
-- *Microsoft.VisualStudio.Shell.\<VSVersion>.0*
+- *Microsoft. VisualStudio. Shell.\<vsversion >. 0*
 
-  - Erforderlich, wenn Sie die **IVsUIObject** Typ.
+  - Erforderlich, wenn Sie den **ivsuiobject** -Typ verwenden.
 
-- *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
+- *Microsoft. VisualStudio. Shell. Interop. 10.0. dll*
 
-  - Erforderlich, wenn Sie die Windows Forms-bezogene UI-Hilfsprogramme verwenden.
+  - Erforderlich, wenn Sie die mit WinForms verknüpften UI-Hilfsprogramme verwenden.
 
-  - **EmbedInteropTypes** sollte festgelegt werden, auf "true"
+  - **Embedinteroptypes** muss auf "true" festgelegt werden.
 
-### <a name="first-steps-native"></a>Erste Schritte (systemeigen)
- Um den Dienst Images verwenden zu können, müssen Sie einige oder alle der folgenden Header zu Ihrem Projekt hinzufügen:
+### <a name="first-steps-native"></a>Erste Schritte (nativ)
+ Um den Image-Dienst zu verwenden, müssen Sie einige oder alle der folgenden Header in Ihr Projekt einschließen:
 
-- **KnownImageIds.h**
+- **Knownimageids. h**
 
-  - Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**, jedoch nicht verwenden die **ImageMoniker** Typ, z. B. wenn die Rückgabe von Werten **IVsHierarchy GetGuidProperty**oder **GetProperty** aufrufen.
+  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmoniker**verwenden, aber den **imagemoniker** -Typ nicht verwenden können, z. b. beim Zurückgeben von Werten von **ivshierarchie getguidproperty** -oder **GetProperty** -aufrufen.
 
-- **KnownMonikers.h**
+- **Knownmoniker. h**
 
-  - Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**.
+  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmonikers**verwenden.
 
-- **ImageParameters140.h**
+- **ImageParameters140. h**
 
-  - Erforderlich, wenn Sie die **ImageMoniker** und **"ImageAttributes"** Typen.
+  - Erforderlich, wenn Sie die Typen **imagemoniker** und **imageattribute** verwenden.
 
-- **VSShell140.h**
+- **VSShell140. h**
 
-  - Erforderlich, wenn Sie die **IVsImageService2** Typ.
+  - Erforderlich, wenn Sie den **IVsImageService2** -Typ verwenden.
 
-- **ImageThemingUtilities.h**
+- **Imagethemingutilities. h**
 
-  - Erforderlich, wenn Sie nicht den Image-Dienst verarbeiten Designs für Sie lassen können.
+  - Erforderlich, wenn Sie den Image-Dienst nicht für Sie behandeln können.
 
-  - Verwenden Sie diesen Header nicht, wenn der Bilddienst Ihr Image-Design verarbeiten kann.
+  - Verwenden Sie diesen Header nicht, wenn der bilddienst Ihre Bildbearbeitung verarbeiten kann.
 
 ::: moniker range="vs-2017"
-- **VSUIDPIHelper.h**
+- **Vsuidpihelper. h**
 
-  - Erforderlich, wenn Sie die DPI-Hilfsprogramme verwenden, um den aktuellen DPI-Wert zu erhalten.
+  - Erforderlich, wenn Sie die dpi-Hilfsprogramme zum erhalten des aktuellen dpi verwenden.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- **VsDpiAwareness.h**
+- **Vsdpiawareness. h**
 
-  - Erforderlich, wenn Sie die DPI-Awareness-Hilfsprogramme verwenden, um den aktuellen DPI-Wert zu erhalten.
+  - Erforderlich, wenn Sie die dpi-Informations Hilfen zum erhalten des aktuellen dpi verwenden.
 
 ::: moniker-end
 
-## <a name="how-do-i-write-new-wpf-ui"></a>Wie schreibe ich die neuen WPF-UI?
+## <a name="how-do-i-write-new-wpf-ui"></a>Gewusst wie neue WPF-Benutzeroberfläche schreiben?
 
-1. Beginnen Sie mit der in der obigen erforderlichen Assemblyverweise hinzufügen zunächst die Schritte im Abschnitt zu Ihrem Projekt aus. Sie müssen nicht alle davon hinzufügen, fügen Sie also nur die Verweise, die Sie benötigen. (Hinweis: Wenn Sie verwenden, oder haben Zugriff auf **Farben** anstelle von **Pinsel**, können Sie den Verweis auf überspringen **Dienstprogramme**, da Sie den Konverter nicht benötigen.)
+1. Beginnen Sie mit dem Hinzufügen der Assemblyverweise, die im Abschnitt Erste Schritte zum Projekt erforderlich sind. Sie müssen nicht alle Elemente hinzufügen. Fügen Sie also nur die benötigten Verweise hinzu. (Hinweis: Wenn Sie verwenden oder Zugriff auf **Farben** anstelle von **Pinsel**haben, können Sie den Verweis auf **Hilfsprogramme**überspringen, da Sie den Konverter nicht benötigen.)
 
-2. Wählen Sie das gewünschte Abbild aus, und rufen Sie den Moniker. Verwenden Sie eine **KnownMoniker**, oder verwenden Sie Ihre eigenen, wenn Sie Ihre eigenen benutzerdefinierten Images und Moniker verfügen.
+2. Wählen Sie das gewünschte Bild aus, und erhalten Sie seinen Moniker. Verwenden Sie einen **knownmoniker**, oder verwenden Sie einen eigenen, wenn Sie über eigene benutzerdefinierte Images und Moniker verfügen.
 
-3. Hinzufügen **CrispImages** zu Ihrem XAML. (Siehe Beispiel unten).
+3. Fügen Sie dem XAML-Code **knusprig Bilder** hinzu. (Siehe das folgende Beispiel.)
 
-4. Legen Sie die **ImageThemingUtilities.ImageBackgroundColor** Eigenschaft in Ihrer Hierarchie der Benutzeroberfläche. (Dies sollte festgelegt werden, an dem Speicherort, in dem die Hintergrundfarbe ist bekannt, nicht unbedingt auf, die **CrispImage**.) (Siehe Beispiel unten).
+4. Legen Sie die **imagethemingutilities. imagebackgroundcolor** -Eigenschaft in der UI-Hierarchie fest. (Dieser Wert sollte an dem Speicherort festgelegt werden, an dem die Hintergrundfarbe bekannt ist, nicht notwendigerweise im **crispbild**.) (Siehe das folgende Beispiel.)
 
 ```xaml
 <Window
@@ -317,35 +317,35 @@ Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeor
 </Window>
 ```
 
- **Wie aktualisiere ich die vorhandenen WPF-UI?**
+ **Gewusst wie vorhandene WPF-Benutzeroberfläche aktualisieren?**
 
- Aktualisieren von vorhandenen WPF-UI ist ein relativ einfacher Prozess, der aus drei grundlegenden Schritten besteht:
+ Das Aktualisieren vorhandener WPF-Benutzeroberflächen ist ein relativ einfacher Prozess, der aus drei grundlegenden Schritten besteht:
 
-1. Ersetzen Sie den gesamten \<Image >-Elemente in der Benutzeroberfläche mit \<CrispImage > Elemente.
+1. Ersetzen Sie alle \<Bild > Elemente in der Benutzeroberfläche durch \<Elemente des > Elements "crispimage".
 
-2. Ändern Sie die quellattributen Moniker-Attributen.
+2. Alle Quell Attribute werden in monikerattribute geändert.
 
-    - Wenn das Image sich nie ändert, und Sie **KnownMonikers**, klicken Sie dann statisch zu binden, ist diese Eigenschaft die **KnownMoniker**. (Siehe Beispiel oben).
+    - Wenn sich das Image nie ändert und Sie **knownmoniker**verwenden, binden Sie diese Eigenschaft statisch an den **knownmoniker**. (Siehe das obige Beispiel.)
 
-    - Wenn das Image sich nie ändert, und Sie Ihr eigenes benutzerdefinierte Image verwenden, klicken Sie dann statisch binden Sie an Ihre eigenen Moniker.
+    - Wenn sich das Image nie ändert und Sie Ihr eigenes benutzerdefiniertes Image verwenden, binden Sie statisch an Ihren eigenen Moniker.
 
-    - Wenn das Bild ändern kann, binden Sie die Moniker-Attribut auf eine Code-Eigenschaft, die auf eigenschaftsänderungen benachrichtigt.
+    - Wenn das Image geändert werden kann, binden Sie das monikerattribut an eine Code Eigenschaft, die über Eigenschafts Änderungen benachrichtigt.
 
-3. Legen Sie an einer beliebigen Stelle in der Hierarchie der Benutzeroberfläche, **ImageThemingUtilities.ImageBackgroundColor** , stellen Sie sicher, dass farbumkehrung ordnungsgemäß funktioniert.
+3. Legen Sie in der UI-Hierarchie den Wert **imagethemingutilities. imagebackgroundcolor** fest, um sicherzustellen, dass Color Inversion ordnungsgemäß funktioniert.
 
-    - Dies erfordert möglicherweise die Verwendung der **BrushToColorConverter** Klasse. (Siehe Beispiel oben).
+    - Hierfür ist möglicherweise die Verwendung der Klasse " **brushumcolorconverter** " erforderlich. (Siehe das obige Beispiel.)
 
-## <a name="how-do-i-update-win32-ui"></a>Wie aktualisiere ich die Win32-Benutzeroberfläche?
- Fügen Sie Folgendes an Ihrem Code immer angezeigt, das Rohdaten laden von Bildern zu ersetzen. Wechseln Sie Werte für die Rückgabe von HBITMAPs nicht im Vergleich zu HICONs im Vergleich zu HIMAGELIST je nach Bedarf.
+## <a name="how-do-i-update-win32-ui"></a>Gewusst wie die Win32-Benutzeroberfläche aktualisieren?
+ Fügen Sie dem Code nach Bedarf Folgendes hinzu, um das rohladen von Bildern zu ersetzen. Wechseln Sie bei Bedarf zum Zurückgeben von HBITMAPs im Vergleich zu hicons und HIMAGELIST.
 
- **Abrufen des Image-Diensts**
+ **Abbild Dienst**
 
 ```cpp
 CComPtr<IVsImageService2> spImgSvc;
 CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);
 ```
 
- **Das Image angefordert**
+ **Anfordern des Abbilds**
 
 ::: moniker range="vs-2017"
 
@@ -395,16 +395,16 @@ spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
 
 ::: moniker-end
 
-## <a name="how-do-i-update-winforms-ui"></a>Wie aktualisiere ich WinForms UI?
- Fügen Sie Folgendes an Ihrem Code immer angezeigt, das Rohdaten laden von Bildern zu ersetzen. Wechseln Sie Werte für die Rückgabe von Bitmaps und Symbole, je nach Bedarf.
+## <a name="how-do-i-update-winforms-ui"></a>Gewusst wie Aktualisieren der WinForms-Benutzeroberfläche
+ Fügen Sie dem Code nach Bedarf Folgendes hinzu, um das rohladen von Bildern zu ersetzen. Wechseln Sie nach Bedarf zum Zurückgeben von Bitmaps und Symbolen.
 
- **Hilfreich, die using-Anweisung**
+ **Hilfreiche using-Anweisung**
 
 ```csharp
 using GelUtilities = Microsoft.Internal.VisualStudio.PlatformUI.Utilities;
 ```
 
- **Abrufen des Image-Diensts**
+ **Abbild Dienst**
 
 ```csharp
 // This or your preferred way of querying for Visual Studio services
@@ -412,7 +412,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
 
 ```
 
- **Fordern Sie das image**
+ **Anfordern des Abbilds**
 
 ::: moniker range="vs-2017"
 
@@ -468,23 +468,23 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 ::: moniker-end
 
-## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Wie verwende ich die Image-Moniker in ein neues Toolfenster?
- Die VSIX-Paket-Projektvorlage wurde für Visual Studio 2015 aktualisiert. Um ein neues Toolfenster zu erstellen, mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **hinzufügen** > **neues Element** (**STRG**+**UMSCHALT** + **Ein**). Wählen Sie unter dem Knoten "Erweiterbarkeit" für die Projektsprache **benutzerdefinierten Toolfensters**, benennen Sie dem Toolfenster, und drücken Sie die **hinzufügen** Schaltfläche.
+## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Gewusst wie bilmoniker in einem neuen Tool Fenster verwenden?
+ Die VSIX-Paket Projektvorlage wurde für Visual Studio 2015 aktualisiert. Um ein neues Tool Fenster zu erstellen, klicken Sie mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie > **Neues Element** **Hinzufügen** (**STRG**+**UMSCHALT**+**a**). Wählen Sie unter dem Knoten Erweiterbarkeit für die Projektsprache die Option **benutzerdefiniertes Tool Fenster**aus, geben Sie dem Tool Fenster einen Namen, und klicken Sie auf die Schaltfläche **Hinzufügen** .
 
- Hierbei handelt es sich um den Schlüssel stellen Moniker in einem Toolfenster verwenden. Befolgen Sie die Anweisungen für die einzelnen:
+ Dies sind die wichtigsten Orte für die Verwendung von Monikern in einem Tool Fenster. Befolgen Sie die folgenden Anweisungen:
 
-1. Der Toolfenster-Registerkarte bei die Registerkarten klein (auch in verwendet die **STRG**+**Registerkarte** Fenster Switcher).
+1. Die Registerkarte "Tool Fenster", wenn die Registerkarten klein genug werden (auch im Fenster " **STRG**+**Register** Kartenfenster" verwendet).
 
-    Fügen Sie diese Zeile an den Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:
+    Fügen Sie diese Zeile zum Konstruktor für die Klasse hinzu, die vom **ToolWindowPane** -Typ abgeleitet wird:
 
    ```csharp
    // Replace this KnownMoniker with your desired ImageMoniker
    this.BitmapImageMoniker = KnownMonikers.Blank;
    ```
 
-2. Der Befehl, um das Fenster zu öffnen.
+2. Der Befehl zum Öffnen des Tool Fensters.
 
-    In der *VSCT* -Datei für das Paket, das Toolfenster Befehlsschaltfläche "Bearbeiten":
+    Bearbeiten Sie in der *vsct* -Datei für das Paket die Befehls Schaltfläche des Tool Fensters:
 
    ```xml
    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">
@@ -499,29 +499,29 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
    </Button>
    ```
 
-   **Wie verwende ich die Image-Moniker in ein vorhandenes Toolfenster?**
+   **Gewusst wie in einem vorhandenen Tool Fenster bilmoniker verwenden?**
 
-   Aktualisiert ein vorhandenes Toolfenster zum Image-Moniker verwenden, entspricht die Schritte zum Erstellen eines neuen Toolfensters.
+   Das Aktualisieren eines vorhandenen Tool Fensters zur Verwendung von bilmonikern ähnelt den Schritten zum Erstellen eines neuen Tool Fensters.
 
-   Hierbei handelt es sich um den Schlüssel stellen Moniker in einem Toolfenster verwenden. Befolgen Sie die Anweisungen für die einzelnen:
+   Dies sind die wichtigsten Orte für die Verwendung von Monikern in einem Tool Fenster. Befolgen Sie die folgenden Anweisungen:
 
-3. Der Toolfenster-Registerkarte bei die Registerkarten klein (auch in verwendet die **STRG**+**Registerkarte** Fenster Switcher).
+3. Die Registerkarte "Tool Fenster", wenn die Registerkarten klein genug werden (auch im Fenster " **STRG**+**Register** Kartenfenster" verwendet).
 
-   1. Entfernen Sie diese Zeilen (sofern vorhanden) im Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:
+   1. Entfernen Sie diese Zeilen (sofern vorhanden) im Konstruktor für die Klasse, die vom **ToolWindowPane** -Typ abgeleitet wird:
 
        ```csharp
        this.BitmapResourceID = <Value>;
        this.BitmapIndex = <Value>;
        ```
 
-   2. Finden Sie in Schritt #1, der die "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.
+   2. Weitere Informationen finden Sie unterschritt #1 des "Gewusst wie verwenden Sie bildmoniker in einem neuen Tool Fenster". der obige Abschnitt.
 
-4. Der Befehl, um das Fenster zu öffnen.
+4. Der Befehl zum Öffnen des Tool Fensters.
 
-   - Finden Sie in Schritt #2 von der "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.
+   - Weitere Informationen finden Sie unterschritt #2 des "Gewusst wie verwenden Sie bildmoniker in einem neuen Tool Fenster". der obige Abschnitt.
 
-## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Wie verwende ich die Image-Moniker in einer VSCT-Datei?
- Aktualisieren Ihrer *VSCT* Datei wie in den kommentierten Zeilen, die unten angegeben:
+## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Gewusst wie verwenden Sie bildmoniker in einer vsct-Datei?
+ Aktualisieren Sie die *vsct* -Datei, wie in den nachfolgenden nachfolgenden Zeilen angegeben:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -561,11 +561,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 </CommandTable>
 ```
 
- **Was geschieht, wenn meine VSCT-Datei muss auch von älteren Versionen von Visual Studio gelesen werden?**
+ **Was geschieht, wenn meine vsct-Datei auch von älteren Versionen von Visual Studio gelesen werden muss?**
 
- Ältere Versionen von Visual Studio nicht erkennen die **IconIsMoniker** Befehl Flag. Sie können Images aus dem Image-Dienst auf Versionen von Visual Studio verwenden, die unterstützt wird, aber weiterhin alten Images auf älteren Versionen von Visual Studio verwenden. Zu diesem Zweck sollen Sie lassen die *VSCT* Datei unverändert (und daher mit älteren Versionen von Visual Studio kompatibel), und erstellen Sie CSV (durch Trennzeichen getrennte Werte)-Datei, die zugeordnet wird, von GUID-ID-Paaren, die definiert, die einer *VSCT* dateimodell \<Bitmaps >-Element Image Moniker-GUID-ID-Paaren.
+ Ältere Versionen von Visual Studio erkennen das **iconismoniker** -Befehlsflag nicht. Sie können Images aus dem Image-Dienst in Versionen von Visual Studio verwenden, die es unterstützen, aber weiterhin alte Bilder in älteren Versionen von Visual Studio verwenden. Zu diesem Zweck können Sie die *vsct* -Datei unverändert lassen (und daher mit älteren Versionen von Visual Studio kompatibel sind) und eine CSV-Datei (durch Trennzeichen getrennte Werte) erstellen, die aus GUID-/ID-Paaren zuordnet, die in den \<Bitmaps einer *vsct* -Datei definiert sind > GUID/ID-Paare für Element-zu-Bild-Moniker.
 
- Das Format der CSV-Zuordnungsdatei ist:
+ Das Format der CSV-Datei für die Zuordnung lautet:
 
 ```
 Icon guid, Icon id, Moniker guid, Moniker id
@@ -573,49 +573,49 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,1,fda30684-682d-421c-8be4-650a2967058e,100
 b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ```
 
- Die CSV-Datei mit dem Paket bereitgestellt wird und der Speicherort wird angegeben, indem die **IconMappingFilename** Eigenschaft der **ProvideMenuResource** Paketattributs:
+ Die CSV-Datei wird mit dem Paket bereitgestellt, und der Speicherort wird durch die **iconmappingfilename** -Eigenschaft des **providemenuresource** -Paket Attributs angegeben:
 
 ```csharp
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]
 ```
 
- Die **IconMappingFilename** entweder ein relativer Pfad implizit wurden die nutzungsbeschränkungen entfernt $PackageFolder $ (wie im obigen Beispiel) oder ein absoluter Pfad Ausnahmestruktur explizit ein Verzeichnis, das von einer Umgebungsvariable definiert, wie z. B. *@"% UserProfile%\dir1\dir2\MyMappingFile.csv"* .
+ **Iconmappingfilename** ist entweder ein relativer Pfad, der implizit auf $PackageFolder $ (wie im obigen Beispiel) basiert, oder ein absoluter Pfad, der explizit in einem Verzeichnis liegt, das durch eine Umgebungsvariable definiert ist, wie z. b. *@ "%USERPROFILE%\dir1\dir2\ Mymappingfile. csv "* .
 
-## <a name="how-do-i-port-a-project-system"></a>Wie wird die Portieren ein Projektsystem
- **Gewusst wie: Angeben von ImageMonikers für ein Projekt**
+## <a name="how-do-i-port-a-project-system"></a>Gewusst wie portieren Sie ein Projekt System?
+ **Bereitstellen von imagemonikern für ein Projekt**
 
-1. Implementieren **VSHPROPID_SupportsIconMonikers** auf des Projekts **IVsHierarchy**, und geben Sie "true" zurück.
+1. Implementieren Sie **VSHPROPID_SupportsIconMonikers** für das **ivshierarchie**des Projekts, und geben Sie "true" zurück.
 
-2. Implementieren entweder **VSHPROPID_IconMonikerImageList** (wenn das ursprüngliche Projekt verwendet **VSHPROPID_IconImgList**) oder **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (wenn das ursprüngliche Projekt verwendet  **VSHPROPID_IconHandle** und **VSHPROPID_OpenFolderIconHandle**).
+2. Implementieren Sie entweder **VSHPROPID_IconMonikerImageList** (wenn das ursprüngliche Projekt **VSHPROPID_IconImgList**verwendet hat) oder **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (wenn das ursprüngliche Projekt **VSHPROPID_IconHandle** und **VSHPROPID_OpenFolderIconHandle**verwendet hat).
 
-3. Ändern Sie die Implementierung von der ursprünglichen VSHPROPIDs für Symbole, "legacy" Versionen der Symbole zu erstellen, wenn Erweiterungspunkte, die sie anfordern. **IVsImageService2** bietet Funktionen zum Abrufen der entsprechenden Symbole
+3. Ändern Sie die Implementierung der ursprünglichen vshpropids für Symbole, um "Legacy"-Versionen der Symbole zu erstellen, wenn Sie von Erweiterungs Punkten angefordert werden. **IVsImageService2** bietet Funktionen, die zum erhalten dieser Symbole erforderlich sind.
 
-   **Zusätzliche Anforderungen für VB / c#-Projekt Sorten**
+   **Zusätzliche Anforderungen für VB/C# Project-Varianten**
 
-   Nur implementieren **VSHPROPID_SupportsIconMonikers** , wenn Sie feststellen, dass Ihr Projekt ist das **äußersten Flavor**. Andernfalls die tatsächliche Konfiguration des äußerste unterstützen möglicherweise keine Image Moniker in der Praxis, und Ihre Basis Flavor kann effektiv "ausblenden" benutzerdefinierte Images.
+   Implementieren Sie nur **VSHPROPID_SupportsIconMonikers** , wenn Sie feststellen, dass Ihr Projekt die **äußerste**Art ist. Andernfalls unterstützt der tatsächliche äußerste Typ möglicherweise keine bilmoniker in Wirklichkeit, und ihre Basiskonfiguration kann die benutzerdefinierten Images effektiv ausblenden.
 
-   **Wie verwende ich die Image-Moniker in CPS?**
+   **Gewusst wie verwenden Sie bildmoniker in CPS?**
 
-   Festlegen von benutzerdefinierten Images in CPS (Common Project System) kann durchgeführt werden, manuell oder über eine Item-Vorlage, die mit der Projekt-System-Erweiterbarkeit SDK geliefert wird.
+   Das Festlegen von benutzerdefinierten Images in CPS (Common Project System) kann manuell oder über eine Element Vorlage erfolgen, die das Project System Extensibility SDK enthält.
 
-   **Verwenden die System-Projekterweiterbarkeit SDK**
+   **Verwenden des Project System Extensibility SDK**
 
-   Befolgen Sie die Anweisungen unter [Geben Sie benutzerdefinierte Symbole für den Typ der Projekt-/Elementvorlagen](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) Ihre Images CPS anpassen. Weitere Informationen zu CPS finden Sie unter [Dokumentation zur Erweiterbarkeit von Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem)
+   Befolgen Sie die Anweisungen unter [Bereitstellen von benutzerdefinierten Symbolen für den Projekttyp/Elementtyp](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) , um die CPS-Images anzupassen. Weitere Informationen zu CPS finden Sie in der [Dokumentation zum Visual Studio Project System Erweiterbarkeit](https://github.com/Microsoft/VSProjectSystem) .
 
-   **Verwenden Sie ImageMonikers manuell**
+   **Manuelles Verwenden von imagemonikers**
 
-4. Implementieren und exportieren Sie die **IProjectTreeModifier** Schnittstelle in Ihrem Projektsystem.
+4. Implementieren und exportieren Sie die **iprojecttreemodifier** -Schnittstelle in Ihrem Projekt System.
 
-5. Bestimmen, welche **KnownMoniker** oder benutzerdefiniertes Image-Moniker, die Sie verwenden möchten.
+5. Bestimmen Sie, welcher **knownmoniker** oder benutzerdefinierte bilmoniker Sie verwenden möchten.
 
-6. In der **ApplyModifications** -Methode, gehen Sie folgendermaßen vor an einer beliebigen Stelle in der Methode vor der Rückgabe der neuen Struktur ähnelt dem folgenden Beispiel:
+6. Führen Sie in der **applymodifizierungsmethode** in der-Methode vor dem Zurückgeben der neuen Struktur die folgenden Schritte aus, ähnlich wie im folgenden Beispiel:
 
    ```csharp
    // Replace this KnownMoniker with your desired ImageMoniker
    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());
    ```
 
-7. Wenn Sie eine neue Struktur erstellen, können Sie benutzerdefinierte Images festlegen, übergeben die gewünschten Moniker an die Methode "NewTree", die ähnlich wie das folgende Beispiel:
+7. Wenn Sie eine neue Struktur erstellen, können Sie die benutzerdefinierten Images festlegen, indem Sie die gewünschten Moniker in die NewTree-Methode übergeben, ähnlich wie im folgenden Beispiel:
 
    ```csharp
    // Replace this KnownMoniker with your desired ImageMoniker
@@ -629,38 +629,38 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
                                                 expandedIcon);
    ```
 
-## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Wie konvertiere ich von einem echten Bildstreifen auf einen Moniker-basiertes Image entfernen?
- **Ich möchte HIMAGELISTs unterstützen.**
+## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Gewusst wie von einem realen Bildstreifen in einen monikerbasierten Bildstreifen konvertieren?
+ **Ich muss himagelists unterstützen.**
 
- Ist ein bereits vorhandene Bildstreifen für Ihren Code, den Sie zur Verwendung des Diensts Image aktualisieren möchten, jedoch begrenzt durch die APIs, die Weitergabe von Bildlisten erfordern, können Sie weiterhin die Vorteile der Image-Dienst abrufen. Um ein Streifen Moniker-basiertes Image zu erstellen, die unten angegebenen Schritte zum Erstellen eines Manifests aus vorhandenen Moniker.
+ Wenn ein bereits vorhandener Bildstreifen für den Code vorhanden ist, den Sie für die Verwendung des Image-dienplatzes aktualisieren möchten, Sie aber durch APIs eingeschränkt sind, die Bildlisten weiterleiten müssen, können Sie dennoch die Vorteile des Image Service nutzen. Um einen monikerbasierten Bildstreifen zu erstellen, führen Sie die folgenden Schritte aus, um ein Manifest aus vorhandenen Monikern zu erstellen.
 
-1. Führen Sie die **ManifestFromResources** -Tool, und übergeben sie den Bildstreifen. Dadurch wird ein Manifest für den Bereichsstreifen.
+1. Führen Sie das **ManifestFromResources** -Tool aus, und übergeben Sie dabei den Bildstreifen. Dadurch wird ein Manifest für den Strip generiert.
 
-   - Empfohlen: Geben Sie einen nicht standardmäßigen-Namen für das Manifest an deren Verwendung anpassen.
+   - Empfohlen: Geben Sie einen nicht standardmäßigen Namen für das Manifest an, um seine Verwendung zu erfüllen.
 
-2. Wenn Sie nur verwenden **KnownMonikers**, führen Sie Folgendes:
+2. Wenn Sie nur **knownmoniker**verwenden, gehen Sie folgendermaßen vor:
 
-   - Ersetzen Sie die \<Images >-Abschnitt des Manifests mit \<Bilder / >.
+   - Ersetzen Sie die \<Bilder > Abschnitt des Manifests durch \<Bilder/>.
 
-   - Entfernen Sie alle Teilbild-IDs (alles, was \<Imagestrip-Name > _ ##).
+   - Entfernen Sie alle subimage-IDs (alles mit \<imagestrip-Namen > _ # #).
 
-   - Empfohlen: Benennen Sie die AssetsGuid und Image Strip-Symbol an die Verwendung anpassen.
+   - Empfohlen: benennen Sie das assetzguid-Symbol und das Image Strip-Symbol entsprechend der Verwendung um.
 
-   - Ersetzen Sie jeden **ContainedImage**GUID mit $(ImageCatalogGuid), ersetzen Sie jeden **ContainedImage**ID mit der $(\<Moniker >), und fügen Sie das externe = "true"-Attribut, um jede **ContainedImage**
+   - Ersetzen Sie jede **containedimage**-GUID durch $ (imagecatalogguid), ersetzen Sie jede **containedimage**-ID durch $ (\<Moniker >), und fügen Sie jedem **containedimage** das Attribut extern = "true" hinzu.
 
-       - \<der Moniker > ersetzt werden soll, mit der **KnownMoniker** , entspricht das Bild jedoch mit der "KnownMonikers". Entfernt aus dem Namen.
+       - \<Moniker > muss durch den **knownmoniker** ersetzt werden, der mit dem Bild übereinstimmt, jedoch mit "knownmonikers". aus dem Namen entfernt.
 
-   - Hinzufügen < Import Manifest="$(ManifestFolder)\\< Relative Installationspfad Dir, *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> am Anfang der \<Symbole > Abschnitt.
+   - Fügen Sie < Import Manifest = "$ (ManifestFolder)\\< relativen Installationsverzeichnis Pfad zu *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\*> am oberen Rand des \<Abschnitts > Symbole hinzu.
 
-       - Der relative Pfad wird durch den Speicherort für die Bereitstellung während der Einrichtung für das Manifest erstellen definierten bestimmt.
+       - Der relative Pfad wird von dem Bereitstellungsort bestimmt, der in der Setup Erstellung für das Manifest definiert ist.
 
-3. Führen Sie die **ManifestToCode** Wrapper generieren, damit der vorhandene Code einen Moniker verfügt, können mit den Image-Dienst für den Bildstreifen abzufragen.
+3. Führen Sie das **ManifestToCode** -Tool aus, um Wrapper zu generieren, damit der vorhandene Code über einen Moniker verfügt, den er verwenden kann, um den Image-Dienst für den Bildstreifen abzufragen.
 
-   - Empfohlen: Geben Sie nicht standardmäßige Namen für den Wrapper und Namespaces zu ihrer Verwendung entsprechen.
+   - Empfohlen: Geben Sie nicht standardmäßige Namen für die Wrapper und Namespaces an, die für ihre Verwendung geeignet sind.
 
-4. Alle der hinzufügt, Erstellung, Setup und Bereitstellung und anderen Änderungen am Code, mit der Image-Dienst und die neuen Dateien arbeiten.
+4. Nehmen Sie alle Hinzufügungen, Setup Erstellung/Bereitstellung und andere Codeänderungen vor, um mit dem Image-Dienst und den neuen Dateien zu arbeiten.
 
-   Das beispielmanifest einschließlich internen und externen Images, um anzuzeigen, wie es aussehen sollte:
+   Beispiel Manifest, das sowohl interne als auch externe Bilder enthält, um zu sehen, wie es aussehen sollte:
 
 ```xml
 <?xml version="1.0"?>
@@ -711,352 +711,352 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 </ImageManifest>
 ```
 
- **Ich möchte nicht HIMAGELISTs zu unterstützen**
+ **Ich muss himagelists nicht unterstützen.**
 
-1. Ermitteln, welche **KnownMonikers** , die Bilder in Ihrem Bildstreifen entsprechen, oder erstellen Sie eigene Moniker für die Bilder in Ihrem Bildstreifen.
+1. Bestimmen Sie den Satz der **knownmoniker** , die den Bildern in Ihrem Bildstreifen entsprechen, oder erstellen Sie eigene Moniker für die Bilder in Ihrem Bildstreifen.
 
-2. Aktualisieren Sie alle Zuordnung, die Sie verwendet, um das Abbild auf dem erforderlichen Index in den Bildstreifen zu verwenden. die Moniker zu erhalten.
+2. Aktualisieren Sie jede Zuordnung, die Sie verwendet haben, um das Image am erforderlichen Index im Bildstreifen zu erhalten, um die Moniker zu verwenden.
 
-3. Aktualisieren Sie Ihren Code, um den Dienst Images zu verwenden, um Moniker über die aktualisierte Zuordnung anzufordern. (Dies kann bedeuten, Aktualisieren auf **CrispImages** für verwalteten Code oder Anfordern von HBITMAPs nicht oder HICONs aus der Image-Dienst und sie für systemeigenen Code übergeben.)
+3. Aktualisieren Sie Ihren Code, um den Image-Dienst zum Anfordern von Monikern über die aktualisierte Zuordnung zu verwenden. (Dies kann bedeuten, dass Sie für verwalteten Code auf " **crispimages** " aktualisieren, HBITMAPs oder hicons aus dem Image-Dienst anfordern und Sie für nativen Code übergeben.)
 
-## <a name="testing-your-images"></a>Testen Ihre images
- Sie können das Bildbibliotheks-Viewer-Tool verwenden, testen Sie Ihr Image-Manifeste, um sicherzustellen, dass alles richtig erstellt wurde. Sie finden das Tool in der [Visual Studio 2015 SDK](visual-studio-sdk.md). Dokumentation zu diesem und anderen Tools finden Sie [hier](https://aka.ms/VSImageThemeTools).
+## <a name="testing-your-images"></a>Testen von Images
+ Mit dem Bildbibliothek-Viewer-Tool können Sie die bildmanifeste testen, um sicherzustellen, dass alles ordnungsgemäß erstellt wurde. Sie finden das Tool im [Visual Studio 2015 SDK](visual-studio-sdk.md). Dokumentation für dieses Tool und weitere Informationen finden Sie [hier](https://aka.ms/VSImageThemeTools).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="samples"></a>Proben
- Einige der Visual Studio-Beispiele auf GitHub wurden aktualisiert, um zeigen, wie den Image-Dienst als Teil von verschiedenen Punkten der Visual Studio-Erweiterbarkeit verwendet.
+ Einige der Visual Studio-Beispiele auf GitHub wurden aktualisiert, um zu veranschaulichen, wie Sie den Image Service als Teil verschiedener Visual Studio-Erweiterbarkeits Punkte verwenden können.
 
- Überprüfen Sie [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) für die neuesten Beispiele.
+ Überprüfen Sie [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) auf die neuesten Beispiele.
 
 ### <a name="tooling"></a>Tools
- Eine Reihe von Tools von Unterstützung für den Image-Dienst wurde erstellt, um bei der Benutzeroberfläche, die mit der Image-Dienst erstellt/aktualisiert. Weitere Informationen zu den einzelnen Tools überprüfen Sie die Dokumentation, die mit den Tools geliefert wird. Die Tools sind Bestandteil der [Visual Studio 2015 SDK](visual-studio-sdk.md).
+ Eine Reihe von Support Tools für den Image-Dienst wurde erstellt, um die Erstellung/Aktualisierung der Benutzeroberfläche zu unterstützen, die mit dem Image-Dienst funktioniert. Weitere Informationen zu den einzelnen Tools finden Sie in der Dokumentation, die in den Tools verfügbar ist. Die Tools sind als Teil des [Visual Studio 2015 SDK](visual-studio-sdk.md)enthalten.
 
  **ManifestFromResources**
 
- Das Manifest aus Ressourcen Tool akzeptiert eine Liste von Bildressourcen (PNG oder XAML) und generiert eine Image-Manifestdatei für die Verwendung dieser Images mit der Image-Dienst.
+ Das Manifest from Resources Tool verwendet eine Liste mit Bild Ressourcen (PNG oder XAML) und generiert eine Bild Manifest-Datei für die Verwendung dieser Images mit dem Image-Dienst.
 
  **ManifestToCode**
 
- Das Manifest für Code Tool nimmt eine Image-manifest-Datei und generiert eine Wrapperdatei für den Verweis auf die modulmanifest-Werte im Code (C++, c# und VB) oder *VSCT* Dateien.
+ Das Manifest to Code Tool nimmt eine bildmanifest-Datei an und generiert eine Wrapper Datei zum Verweisen auf die Manifestressourcen in Code (C++, C#, oder VB) oder *vsct* -Dateien.
 
- **ImageLibraryViewer**
+ **Imagelibraryviewer**
 
- Bildbibliotheks-Viewer-Tool kann laden bildmanifesten und ermöglicht dem Benutzer, die sie auf die gleiche Weise zu bearbeiten, die Visual Studio würden, um sicherzustellen, dass das Manifest richtig erstellt wurde. Der Benutzer kann es sich um Hintergrund, Größen, DPI-Einstellung, hoher Kontrast und andere Einstellungen ändern. Außerdem zeigt beim Laden der Informationen zum Suchen von Fehlern in den Manifesten und zeigt Sie Quellinformationen für jedes Bild im Manifest an.
+ Das Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und es dem Benutzer ermöglichen, diese auf die gleiche Weise zu manipulieren wie Visual Studio, um sicherzustellen, dass das Manifest ordnungsgemäß erstellt wurde. Der Benutzer kann Hintergrund, Größe, dpi-Einstellung, hoher Kontrast und andere Einstellungen ändern. Außerdem werden ladeinformationen angezeigt, um Fehler in den Manifesten zu finden, und die Quell Informationen für jedes Bild im Manifest werden angezeigt.
 
 ## <a name="faq"></a>FAQ
 
-- Bestehen Abhängigkeiten, die Sie, beim Laden von einschließen muss \<Verweis Include="Microsoft.VisualStudio.*. Interop.14.0.DesignTime"/ >?
+- Gibt es Abhängigkeiten, die Sie beim Laden von \<Reference einschließen müssen: = "Microsoft. VisualStudio. *. Interop. 14,0. designtime "/>?
 
-  - Legen Sie EmbedInteropTypes = "true", auf alle Interop-DLL-Dateien.
+  - Legen Sie embedinteroptypes = "true" für alle Interop-DLLs fest.
 
-- Wie stelle ich einem bildmanifest mit my-Erweiterung bereit?
+- Gewusst wie ein Bild Manifest mit der Erweiterung bereitstellen?
 
-  - Hinzufügen der *.imagemanifest* Datei zum Projekt.
+  - Fügen Sie dem Projekt die *imagemanifest* -Datei hinzu.
 
-  - Legen Sie "Include in VSIX-Datei" auf "true" fest.
+  - Legen Sie "in VSIX einschließen" auf "true" fest.
 
-- Ich habe meine Projektsystem CPS wird aktualisiert. Was ist mit passiert **ImageName** und **StockIconService**?
+- Ich aktualisiere mein CPS-Projekt System. Was ist mit **ImageName** und **stockiconservice**passiert?
 
-  - Diese wurden entfernt, wenn CPS aktualisiert wurde, dass Sie Moniker verwenden. Sie müssen nicht mehr Aufrufen der **StockIconService**, übergeben Sie einfach die gewünschte **KnownMoniker** an die Methode oder Eigenschaft mit der **ToProjectSystemType()** Erweiterungsmethode in Die CPS-Hilfsprogramme. Finden Sie eine Zuordnung von **ImageName** zu **KnownMonikers** unten:
+  - Diese wurden entfernt, als CPS für die Verwendung von Monikern aktualisiert wurde. Sie müssen den **stockiconservice**nicht mehr aufrufen, sondern einfach den gewünschten **knownmoniker** an die Methode oder Eigenschaft übergeben, indem Sie die **toprojectsystemtype ()** -Erweiterungsmethode in den CPS-Hilfsprogramme verwenden. Eine Zuordnung von **ImageName** zu **knownmonikers** finden Sie unten:
 
     |||
     |-|-|
-    |**ImageName**|**KnownMoniker**|
-    |ImageName.OfflineWebApp|KnownImageIds.Web|
-    |ImageName.WebReferencesFolder|KnownImageIds.Web|
-    |ImageName.OpenReferenceFolder|KnownImageIds.FolderOpened|
-    |ImageName.ReferenceFolder|KnownImageIds.Reference|
-    |ImageName.Reference|KnownImageIds.Reference|
-    |ImageName.SdlWebReference|KnownImageIds.WebReferenceFolder|
-    |ImageName.DiscoWebReference|KnownImageIds.DynamicDiscoveryDocument|
-    |ImageName.Folder|KnownImageIds.FolderClosed|
-    |ImageName.OpenFolder|KnownImageIds.FolderOpened|
-    |ImageName.ExcludedFolder|KnownImageIds.HiddenFolderClosed|
-    |ImageName.OpenExcludedFolder|KnownImageIds.HiddenFolderOpened|
-    |ImageName.ExcludedFile|KnownImageIds.HiddenFile|
-    |ImageName.DependentFile|KnownImageIds.GenerateFile|
-    |ImageName.MissingFile|KnownImageIds.DocumentWarning|
-    |ImageName.WindowsForm|KnownImageIds.WindowsForm|
-    |ImageName.WindowsUserControl|KnownImageIds.UserControl|
-    |ImageName.WindowsComponent|KnownImageIds.ComponentFile|
-    |ImageName.XmlSchema|KnownImageIds.XMLSchema|
-    |ImageName.XmlFile|KnownImageIds.XMLFile|
-    |ImageName.WebForm|KnownImageIds.Web|
-    |ImageName.WebService|KnownImageIds.WebService|
-    |ImageName.WebUserControl|KnownImageIds.WebUserControl|
-    |ImageName.WebCustomUserControl|KnownImageIds.WebCustomControl|
-    |ImageName.AspPage|KnownImageIds.ASPFile|
-    |ImageName.GlobalApplicationClass|KnownImageIds.SettingsFile|
-    |ImageName.WebConfig|KnownImageIds.ConfigurationFile|
-    |ImageName.HtmlPage|KnownImageIds.HTMLFile|
-    |ImageName.StyleSheet|KnownImageIds.StyleSheet|
-    |ImageName.ScriptFile|KnownImageIds.JSScript|
-    |ImageName.TextFile|KnownImageIds.Document|
-    |ImageName.SettingsFile|KnownImageIds.Settings|
-    |ImageName.Resources|KnownImageIds.DocumentGroup|
-    |ImageName.Bitmap|KnownImageIds.Image|
-    |ImageName.Icon|KnownImageIds.IconFile|
-    |ImageName.Image|KnownImageIds.Image|
-    |ImageName.ImageMap|KnownImageIds.ImageMapFile|
-    |ImageName.XWorld|KnownImageIds.XWorldFile|
-    |ImageName.Audio|KnownImageIds.Sound|
-    |ImageName.Video|KnownImageIds.Media|
-    |ImageName.Cab|KnownImageIds.CABProject|
-    |ImageName.Jar|KnownImageIds.JARFile|
-    |ImageName.DataEnvironment|KnownImageIds.DataTable|
-    |ImageName.PreviewFile|KnownImageIds.Report|
-    |ImageName.DanglingReference|KnownImageIds.ReferenceWarning|
-    |ImageName.XsltFile|KnownImageIds.XSLTransform|
-    |ImageName.Cursor|KnownImageIds.CursorFile|
-    |ImageName.AppDesignerFolder|KnownImageIds.Property|
-    |ImageName.Data|KnownImageIds.Database|
-    |ImageName.Application|KnownImageIds.Application|
-    |ImageName.DataSet|KnownImageIds.DatabaseGroup|
-    |ImageName.Pfx|KnownImageIds.Certificate|
-    |ImageName.Snk|KnownImageIds.Rule|
-    |ImageName.VisualBasicProject|KnownImageIds.VBProjectNode|
-    |ImageName.CSharpProject|KnownImageIds.CSProjectNode|
-    |ImageName.Empty|KnownImageIds.Blank|
-    |ImageName.MissingFolder|KnownImageIds.FolderOffline|
-    |ImageName.SharedImportReference|KnownImageIds.SharedProject|
-    |ImageName.SharedProjectCs|KnownImageIds.CSSharedProject|
-    |ImageName.SharedProjectVc|KnownImageIds.CPPSharedProject|
-    |ImageName.SharedProjectJs|KnownImageIds.JSSharedProject|
-    |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|
-    |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|
+    |**ImageName**|**Knownmoniker**|
+    |ImageName. offlinewebapp|Knownimageids. Web|
+    |ImageName. WebReferencesFolder|Knownimageids. Web|
+    |ImageName. openreferencefolder|Knownimageids. foldergeöffnet|
+    |ImageName. referencefolder|Knownimageids. Reference|
+    |ImageName. Reference|Knownimageids. Reference|
+    |ImageName. sdlwebreferenzierung|Knownimageids. webreferencefolder|
+    |ImageName. discowebreferenzierung|Knownimageids. DynamicDiscoveryDocument|
+    |ImageName. Folder|Knownimageids. folderclosed|
+    |ImageName. openfolder|Knownimageids. foldergeöffnet|
+    |ImageName. excludfolder|Knownimageids. hiddenfolderclosed|
+    |ImageName. openexcludfolder|Knownimageids. hiddenfoldergeöffnet|
+    |ImageName. excludedfile|Knownimageids. hiddenfile|
+    |ImageName. dependentfile|Knownimageids. generatefile|
+    |ImageName. missingfile|Knownimageids. documentwarning|
+    |ImageName. WindowsForm|Knownimageids. WindowsForm|
+    |ImageName. windowsusercontrol|Knownimageids. UserControl|
+    |ImageName. windowscomponent|Knownimageids. componentfile|
+    |ImageName. XmlSchema|Knownimageids. XmlSchema|
+    |ImageName. xmlfile|"Knownimageids. xmlfile"|
+    |ImageName. Webform|Knownimageids. Web|
+    |ImageName. WebService|Knownimageids. WebService|
+    |ImageName. WebUserControl|Knownimageids. WebUserControl|
+    |ImageName. webcustomusercontrol|Knownimageids. webcustomcontrol|
+    |ImageName. asppage|Knownimageids. aspfile|
+    |ImageName. globalapplicationclass|Knownimageids. SettingsFile|
+    |ImageName. webConfig|Knownimageids. ConfigurationFile|
+    |ImageName. HtmlPage|Knownimageids. HTMLFILE|
+    |ImageName. Stylesheet|Knownimageids. Stylesheet|
+    |ImageName. scriptfile|Knownimageids. jsscript|
+    |ImageName. Textfile|Knownimageids. Document|
+    |ImageName. SettingsFile|Knownimageids. Settings|
+    |ImageName. Resources|Knownimageids. documentgroup|
+    |ImageName. Bitmap|Knownimageids. Image|
+    |ImageName. Icon|Knownimageids. IconFile|
+    |ImageName. Image|Knownimageids. Image|
+    |ImageName. ImageMap|Knownimageids. imagemapfile|
+    |ImageName. XWORLD|"Knownimageids. xworldfile"|
+    |ImageName. Audiodatei|Knownimageids. Sound|
+    |ImageName. Video|Knownimageids. Media|
+    |ImageName. cab|Knownimageids. CABProject|
+    |ImageName. jar|Knownimageids. JarFile|
+    |ImageName. DataEnvironment|Knownimageids. databel|
+    |ImageName. previewfile|Knownimageids. Report|
+    |ImageName. danglingreferenzierung|Knownimageids. referencewarning|
+    |ImageName. XSLTFile|Knownimageids. XslTransform|
+    |ImageName. Cursor|Knownimageids. Cursor Datei|
+    |ImageName. appdesignerfolder|Knownimageids. Property|
+    |ImageName. Data|Knownimageids. Database|
+    |ImageName. Application|Knownimageids. Application|
+    |ImageName. DataSet|Knownimageids. databasegroup|
+    |ImageName. pfx|Knownimageids. Certificate|
+    |ImageName. snk|Knownimageids. Rule|
+    |ImageName. visualbasicproject|Knownimageids. vbprojectnode|
+    |ImageName. csharpproject|Knownimageids. csprojectnode|
+    |ImageName. Empty|Knownimageids. Blank|
+    |ImageName. missingfolder|Knownimageids. folderoffline|
+    |ImageName. sharedimportreferenzierung|Knownimageids. sharedproject|
+    |ImageName. sharedprojectcs|Knownimageids. cssharedproject|
+    |ImageName. sharedprojectvc|Knownimageids. cppsharedproject|
+    |ImageName. sharedprojectjs|Knownimageids. jssharedproject|
+    |ImageName. csharpcodefile|Knownimageids. CSFile Ode|
+    |ImageName. visualbasiccodefile|Knownimageids. VBFile Ode|
 
-  - Ich habe meine Vervollständigungsanbieter für die Liste wird aktualisiert. Was **KnownMonikers** übereinstimmen, auf das alte **StandardGlyphGroup** und **StandardGlyph** Werte?
+  - Ich aktualisiere den Anbieter der Vervollständigungsliste. Welche **knownmoniker** entsprechen den alten Werten für **standardglyphgroup** und **standardglyph** ?
 
     ||||
     |-|-|-|
-    |GlyphGroupClass|GlyphItemPublic|ClassPublic|
-    |GlyphGroupClass|GlyphItemInternal|ClassInternal|
-    |GlyphGroupClass|GlyphItemFriend|ClassInternal|
-    |GlyphGroupClass|GlyphItemProtected|ClassProtected|
-    |GlyphGroupClass|GlyphItemPrivate|ClassPrivate|
-    |GlyphGroupClass|GlyphItemShortcut|ClassShortcut|
-    |GlyphGroupConstant|GlyphItemPublic|ConstantPublic|
-    |GlyphGroupConstant|GlyphItemInternal|ConstantInternal|
-    |GlyphGroupConstant|GlyphItemFriend|ConstantInternal|
-    |GlyphGroupConstant|GlyphItemProtected|ConstantProtected|
-    |GlyphGroupConstant|GlyphItemPrivate|ConstantPrivate|
-    |GlyphGroupConstant|GlyphItemShortcut|ConstantShortcut|
-    |GlyphGroupDelegate|GlyphItemPublic|DelegatePublic|
-    |GlyphGroupDelegate|GlyphItemInternal|DelegateInternal|
-    |GlyphGroupDelegate|GlyphItemFriend|DelegateInternal|
-    |GlyphGroupDelegate|GlyphItemProtected|DelegateProtected|
-    |GlyphGroupDelegate|GlyphItemPrivate|DelegatePrivate|
-    |GlyphGroupDelegate|GlyphItemShortcut|DelegateShortcut|
-    |GlyphGroupEnum|GlyphItemPublic|EnumerationPublic|
-    |GlyphGroupEnum|GlyphItemInternal|EnumerationInternal|
-    |GlyphGroupEnum|GlyphItemFriend|EnumerationInternal|
-    |GlyphGroupEnum|GlyphItemProtected|EnumerationProtected|
-    |GlyphGroupEnum|GlyphItemPrivate|EnumerationPrivate|
-    |GlyphGroupEnum|GlyphItemShortcut|EnumerationShortcut|
-    |GlyphGroupEnumMember|GlyphItemPublic|EnumerationItemPublic|
-    |GlyphGroupEnumMember|GlyphItemInternal|EnumerationItemInternal|
-    |GlyphGroupEnumMember|GlyphItemFriend|EnumerationItemInternal|
-    |GlyphGroupEnumMember|GlyphItemProtected|EnumerationItemProtected|
-    |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationItemPrivate|
-    |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationItemShortcut|
-    |GlyphGroupEvent|GlyphItemPublic|EventPublic|
-    |GlyphGroupEvent|GlyphItemInternal|EventInternal|
-    |GlyphGroupEvent|GlyphItemFriend|EventInternal|
-    |GlyphGroupEvent|GlyphItemProtected|EventProtected|
-    |GlyphGroupEvent|GlyphItemPrivate|EventPrivate|
-    |GlyphGroupEvent|GlyphItemShortcut|EventShortcut|
-    |GlyphGroupException|GlyphItemPublic|ExceptionPublic|
-    |GlyphGroupException|GlyphItemInternal|ExceptionInternal|
-    |GlyphGroupException|GlyphItemFriend|ExceptionInternal|
-    |GlyphGroupException|GlyphItemProtected|ExceptionProtected|
-    |GlyphGroupException|GlyphItemPrivate|ExceptionPrivate|
-    |GlyphGroupException|GlyphItemShortcut|ExceptionShortcut|
-    |GlyphGroupField|GlyphItemPublic|FieldPublic|
-    |GlyphGroupField|GlyphItemInternal|FieldInternal|
-    |GlyphGroupField|GlyphItemFriend|FieldInternal|
-    |GlyphGroupField|GlyphItemProtected|FieldProtected|
-    |GlyphGroupField|GlyphItemPrivate|FieldPrivate|
-    |GlyphGroupField|GlyphItemShortcut|FieldShortcut|
-    |GlyphGroupInterface|GlyphItemPublic|InterfacePublic|
-    |GlyphGroupInterface|GlyphItemInternal|InterfaceInternal|
-    |GlyphGroupInterface|GlyphItemFriend|InterfaceInternal|
-    |GlyphGroupInterface|GlyphItemProtected|InterfaceProtected|
-    |GlyphGroupInterface|GlyphItemPrivate|InterfacePrivate|
-    |GlyphGroupInterface|GlyphItemShortcut|InterfaceShortcut|
-    |GlyphGroupMacro|GlyphItemPublic|MacroPublic|
-    |GlyphGroupMacro|GlyphItemInternal|MacroInternal|
-    |GlyphGroupMacro|GlyphItemFriend|MacroInternal|
-    |GlyphGroupMacro|GlyphItemProtected|MacroProtected|
-    |GlyphGroupMacro|GlyphItemPrivate|MacroPrivate|
-    |GlyphGroupMacro|GlyphItemShortcut|MacroShortcut|
-    |GlyphGroupMap|GlyphItemPublic|MapPublic|
-    |GlyphGroupMap|GlyphItemInternal|MapInternal|
-    |GlyphGroupMap|GlyphItemFriend|MapInternal|
-    |GlyphGroupMap|GlyphItemProtected|MapProtected|
-    |GlyphGroupMap|GlyphItemPrivate|MapPrivate|
-    |GlyphGroupMap|GlyphItemShortcut|MapShortcut|
-    |GlyphGroupMapItem|GlyphItemPublic|MapItemPublic|
-    |GlyphGroupMapItem|GlyphItemInternal|MapItemInternal|
-    |GlyphGroupMapItem|GlyphItemFriend|MapItemInternal|
-    |GlyphGroupMapItem|GlyphItemProtected|MapItemProtected|
-    |GlyphGroupMapItem|GlyphItemPrivate|MapItemPrivate|
-    |GlyphGroupMapItem|GlyphItemShortcut|MapItemShortcut|
-    |GlyphGroupMethod|GlyphItemPublic|MethodPublic|
-    |GlyphGroupMethod|GlyphItemInternal|MethodInternal|
-    |GlyphGroupMethod|GlyphItemFriend|MethodInternal|
-    |GlyphGroupMethod|GlyphItemProtected|MethodProtected|
-    |GlyphGroupMethod|GlyphItemPrivate|MethodPrivate|
-    |GlyphGroupMethod|GlyphItemShortcut|MethodShortcut|
-    |GlyphGroupOverload|GlyphItemPublic|MethodPublic|
-    |GlyphGroupOverload|GlyphItemInternal|MethodInternal|
-    |GlyphGroupOverload|GlyphItemFriend|MethodInternal|
-    |GlyphGroupOverload|GlyphItemProtected|MethodProtected|
-    |GlyphGroupOverload|GlyphItemPrivate|MethodPrivate|
-    |GlyphGroupOverload|GlyphItemShortcut|MethodShortcut|
-    |GlyphGroupModule|GlyphItemPublic|ModulePublic|
-    |GlyphGroupModule|GlyphItemInternal|ModuleInternal|
-    |GlyphGroupModule|GlyphItemFriend|ModuleInternal|
-    |GlyphGroupModule|GlyphItemProtected|ModuleProtected|
-    |GlyphGroupModule|GlyphItemPrivate|ModulePrivate|
-    |GlyphGroupModule|GlyphItemShortcut|ModuleShortcut|
-    |GlyphGroupNamespace|GlyphItemPublic|NamespacePublic|
-    |GlyphGroupNamespace|GlyphItemInternal|NamespaceInternal|
-    |GlyphGroupNamespace|GlyphItemFriend|NamespaceInternal|
-    |GlyphGroupNamespace|GlyphItemProtected|NamespaceProtected|
-    |GlyphGroupNamespace|GlyphItemPrivate|NamespacePrivate|
-    |GlyphGroupNamespace|GlyphItemShortcut|NamespaceShortcut|
-    |GlyphGroupOperator|GlyphItemPublic|OperatorPublic|
-    |GlyphGroupOperator|GlyphItemInternal|OperatorInternal|
-    |GlyphGroupOperator|GlyphItemFriend|OperatorInternal|
-    |GlyphGroupOperator|GlyphItemProtected|OperatorProtected|
-    |GlyphGroupOperator|GlyphItemPrivate|OperatorPrivate|
-    |GlyphGroupOperator|GlyphItemShortcut|OperatorShortcut|
-    |GlyphGroupProperty|GlyphItemPublic|PropertyPublic|
-    |GlyphGroupProperty|GlyphItemInternal|PropertyInternal|
-    |GlyphGroupProperty|GlyphItemFriend|PropertyInternal|
-    |GlyphGroupProperty|GlyphItemProtected|PropertyProtected|
-    |GlyphGroupProperty|GlyphItemPrivate|PropertyPrivate|
-    |GlyphGroupProperty|GlyphItemShortcut|PropertyShortcut|
-    |GlyphGroupStruct|GlyphItemPublic|StructurePublic|
-    |GlyphGroupStruct|GlyphItemInternal|StructureInternal|
-    |GlyphGroupStruct|GlyphItemFriend|StructureInternal|
-    |GlyphGroupStruct|GlyphItemProtected|StructureProtected|
-    |GlyphGroupStruct|GlyphItemPrivate|StructurePrivate|
-    |GlyphGroupStruct|GlyphItemShortcut|StructureShortcut|
-    |GlyphGroupTemplate|GlyphItemPublic|TemplatePublic|
-    |GlyphGroupTemplate|GlyphItemInternal|TemplateInternal|
-    |GlyphGroupTemplate|GlyphItemFriend|TemplateInternal|
-    |GlyphGroupTemplate|GlyphItemProtected|TemplateProtected|
-    |GlyphGroupTemplate|GlyphItemPrivate|TemplatePrivate|
-    |GlyphGroupTemplate|GlyphItemShortcut|TemplateShortcut|
-    |GlyphGroupTypedef|GlyphItemPublic|TypeDefinitionPublic|
-    |GlyphGroupTypedef|GlyphItemInternal|TypeDefinitionInternal|
-    |GlyphGroupTypedef|GlyphItemFriend|TypeDefinitionInternal|
-    |GlyphGroupTypedef|GlyphItemProtected|TypeDefinitionProtected|
-    |GlyphGroupTypedef|GlyphItemPrivate|TypeDefinitionPrivate|
-    |GlyphGroupTypedef|GlyphItemShortcut|TypeDefinitionShortcut|
-    |GlyphGroupType|GlyphItemPublic|TypePublic|
-    |GlyphGroupType|GlyphItemInternal|TypeInternal|
-    |GlyphGroupType|GlyphItemFriend|TypeInternal|
-    |GlyphGroupType|GlyphItemProtected|TypeProtected|
-    |GlyphGroupType|GlyphItemPrivate|TypePrivate|
-    |GlyphGroupType|GlyphItemShortcut|TypeShortcut|
-    |GlyphGroupUnion|GlyphItemPublic|UnionPublic|
-    |GlyphGroupUnion|GlyphItemInternal|UnionInternal|
-    |GlyphGroupUnion|GlyphItemFriend|UnionInternal|
-    |GlyphGroupUnion|GlyphItemProtected|UnionProtected|
-    |GlyphGroupUnion|GlyphItemPrivate|UnionPrivate|
-    |GlyphGroupUnion|GlyphItemShortcut|UnionShortcut|
-    |GlyphGroupVariable|GlyphItemPublic|FieldPublic|
-    |GlyphGroupVariable|GlyphItemInternal|FieldInternal|
-    |GlyphGroupVariable|GlyphItemFriend|FieldInternal|
-    |GlyphGroupVariable|GlyphItemProtected|FieldProtected|
-    |GlyphGroupVariable|GlyphItemPrivate|FieldPrivate|
-    |GlyphGroupVariable|GlyphItemShortcut|FieldShortcut|
-    |GlyphGroupValueType|GlyphItemPublic|ValueTypePublic|
-    |GlyphGroupValueType|GlyphItemInternal|ValueTypeInternal|
-    |GlyphGroupValueType|GlyphItemFriend|ValueTypeInternal|
-    |GlyphGroupValueType|GlyphItemProtected|ValueTypeProtected|
-    |GlyphGroupValueType|GlyphItemPrivate|ValueTypePrivate|
-    |GlyphGroupValueType|GlyphItemShortcut|ValueTypeShortcut|
-    |GlyphGroupIntrinsic|GlyphItemPublic|ObjectPublic|
-    |GlyphGroupIntrinsic|GlyphItemInternal|ObjectInternal|
-    |GlyphGroupIntrinsic|GlyphItemFriend|ObjectInternal|
-    |GlyphGroupIntrinsic|GlyphItemProtected|ObjectProtected|
-    |GlyphGroupIntrinsic|GlyphItemPrivate|ObjectPrivate|
-    |GlyphGroupIntrinsic|GlyphItemShortcut|ObjectShortcut|
-    |GlyphGroupJSharpMethod|GlyphItemPublic|MethodPublic|
-    |GlyphGroupJSharpMethod|GlyphItemInternal|MethodInternal|
-    |GlyphGroupJSharpMethod|GlyphItemFriend|MethodInternal|
-    |GlyphGroupJSharpMethod|GlyphItemProtected|MethodProtected|
-    |GlyphGroupJSharpMethod|GlyphItemPrivate|MethodPrivate|
-    |GlyphGroupJSharpMethod|GlyphItemShortcut|MethodShortcut|
-    |GlyphGroupJSharpField|GlyphItemPublic|FieldPublic|
-    |GlyphGroupJSharpField|GlyphItemInternal|FieldInternal|
-    |GlyphGroupJSharpField|GlyphItemFriend|FieldInternal|
-    |GlyphGroupJSharpField|GlyphItemProtected|FieldProtected|
-    |GlyphGroupJSharpField|GlyphItemPrivate|FieldPrivate|
-    |GlyphGroupJSharpField|GlyphItemShortcut|FieldShortcut|
-    |GlyphGroupJSharpClass|GlyphItemPublic|ClassPublic|
-    |GlyphGroupJSharpClass|GlyphItemInternal|ClassInternal|
-    |GlyphGroupJSharpClass|GlyphItemFriend|ClassInternal|
-    |GlyphGroupJSharpClass|GlyphItemProtected|ClassProtected|
-    |GlyphGroupJSharpClass|GlyphItemPrivate|ClassPrivate|
-    |GlyphGroupJSharpClass|GlyphItemShortcut|ClassShortcut|
-    |GlyphGroupJSharpNamespace|GlyphItemPublic|NamespacePublic|
-    |GlyphGroupJSharpNamespace|GlyphItemInternal|NamespaceInternal|
-    |GlyphGroupJSharpNamespace|GlyphItemFriend|NamespaceInternal|
-    |GlyphGroupJSharpNamespace|GlyphItemProtected|NamespaceProtected|
-    |GlyphGroupJSharpNamespace|GlyphItemPrivate|NamespacePrivate|
-    |GlyphGroupJSharpNamespace|GlyphItemShortcut|NamespaceShortcut|
-    |GlyphGroupJSharpInterface|GlyphItemPublic|InterfacePublic|
-    |GlyphGroupJSharpInterface|GlyphItemInternal|InterfaceInternal|
-    |GlyphGroupJSharpInterface|GlyphItemFriend|InterfaceInternal|
-    |GlyphGroupJSharpInterface|GlyphItemProtected|InterfaceProtected|
-    |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|
-    |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
-    |GlyphGroupError||StatusError|
-    |GlyphBscFile||ClassFile|
-    |GlyphAssembly||Referenz|
-    |GlyphLibrary||Bibliothek|
-    |GlyphVBProject||VBProjectNode|
-    |GlyphCoolProject||CSProjectNode|
-    |GlyphCppProject||CPPProjectNode|
-    |GlyphDialogId||Dialogfeld|
-    |GlyphOpenFolder||FolderOpened|
-    |GlyphClosedFolder||FolderClosed|
-    |GlyphArrow||GoToNext|
-    |GlyphCSharpFile||CSFileNode|
-    |GlyphCSharpExpansion||Codeausschnitt|
-    |GlyphKeyword||IntellisenseKeyword|
-    |GlyphInformation||StatusInformation|
-    |GlyphReference||ClassMethodReference|
-    |GlyphRecursion||Rekursion|
-    |GlyphXmlItem||Tag|
-    |GlyphJSharpProject||DocumentCollection|
-    |GlyphJSharpDocument||Dokument|
-    |GlyphForwardType||GoToNext|
-    |GlyphCallersGraph||CallTo|
-    |GlyphCallGraph||CallFrom|
-    |GlyphWarning||StatusWarning|
-    |GlyphMaybeReference||QuestionMark|
-    |GlyphMaybeCaller||CallTo|
-    |GlyphMaybeCall||CallFrom|
-    |GlyphExtensionMethod||ExtensionMethod|
-    |GlyphExtensionMethodInternal||ExtensionMethod|
-    |GlyphExtensionMethodFriend||ExtensionMethod|
-    |GlyphExtensionMethodProtected||ExtensionMethod|
-    |GlyphExtensionMethodPrivate||ExtensionMethod|
-    |GlyphExtensionMethodShortcut||ExtensionMethod|
-    |GlyphXmlAttribute||XmlAttribute|
-    |GlyphXmlChild||XmlElement|
-    |GlyphXmlDescendant||XmlDescendant|
-    |GlyphXmlNamespace||XmlNamespace|
-    |GlyphXmlAttributeQuestion||XmlAttributeLowConfidence|
-    |GlyphXmlAttributeCheck||XmlAttributeHighConfidence|
-    |GlyphXmlChildQuestion||XmlElementLowConfidence|
-    |GlyphXmlChildCheck||XmlElementHighConfidence|
-    |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|
-    |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|
-    |GlyphCompletionWarning||IntellisenseWarning|
+    |Glyphgroupclass|Glyphitempublic|Classpublic|
+    |Glyphgroupclass|Glyphiteminternal|Classinternal|
+    |Glyphgroupclass|Glyphitemfriend|Classinternal|
+    |Glyphgroupclass|Glyphitemprotected|Classprotehiert|
+    |Glyphgroupclass|Glyphitemprivate|Classprivate|
+    |Glyphgroupclass|Glyphitemshortcut|Classshortcut|
+    |Glyphgroupconstant|Glyphitempublic|Constantpublic|
+    |Glyphgroupconstant|Glyphiteminternal|Constantinternal|
+    |Glyphgroupconstant|Glyphitemfriend|Constantinternal|
+    |Glyphgroupconstant|Glyphitemprotected|Constantprotected|
+    |Glyphgroupconstant|Glyphitemprivate|Constantprivate|
+    |Glyphgroupconstant|Glyphitemshortcut|Constantshortcut|
+    |Glyphgroupdelegat|Glyphitempublic|Delegatepublic|
+    |Glyphgroupdelegat|Glyphiteminternal|Delegatein ternal|
+    |Glyphgroupdelegat|Glyphitemfriend|Delegatein ternal|
+    |Glyphgroupdelegat|Glyphitemprotected|Delegateprotected|
+    |Glyphgroupdelegat|Glyphitemprivate|Delegateprivate|
+    |Glyphgroupdelegat|Glyphitemshortcut|Delegateshortcut|
+    |Glyphgroupum|Glyphitempublic|Enumerationpublic|
+    |Glyphgroupum|Glyphiteminternal|Enumerationinternal|
+    |Glyphgroupum|Glyphitemfriend|Enumerationinternal|
+    |Glyphgroupum|Glyphitemprotected|Enumerationprotected|
+    |Glyphgroupum|Glyphitemprivate|Enumerationprivate|
+    |Glyphgroupum|Glyphitemshortcut|Enumerationshortcut|
+    |Glyphgroupenummember|Glyphitempublic|Enumerationitempublic|
+    |Glyphgroupenummember|Glyphiteminternal|Enumerationiteminternal|
+    |Glyphgroupenummember|Glyphitemfriend|Enumerationiteminternal|
+    |Glyphgroupenummember|Glyphitemprotected|Enumerationitemprotected|
+    |Glyphgroupenummember|Glyphitemprivate|Enumerationitemprivate|
+    |Glyphgroupenummember|Glyphitemshortcut|Enumerationitemshortcut|
+    |Glyphgrouetvent|Glyphitempublic|Eventpublic|
+    |Glyphgrouetvent|Glyphiteminternal|Eventinternal|
+    |Glyphgrouetvent|Glyphitemfriend|Eventinternal|
+    |Glyphgrouetvent|Glyphitemprotected|Eventprotected|
+    |Glyphgrouetvent|Glyphitemprivate|Eventprivate|
+    |Glyphgrouetvent|Glyphitemshortcut|Eventshortcut|
+    |Glyphgroupexception|Glyphitempublic|Exceptionpublic|
+    |Glyphgroupexception|Glyphiteminternal|Exceptioninternal|
+    |Glyphgroupexception|Glyphitemfriend|Exceptioninternal|
+    |Glyphgroupexception|Glyphitemprotected|Exceptionprotected|
+    |Glyphgroupexception|Glyphitemprivate|Exceptionprivate|
+    |Glyphgroupexception|Glyphitemshortcut|Exceptionshortcut|
+    |Glyphgroupfield|Glyphitempublic|Fieldpublic|
+    |Glyphgroupfield|Glyphiteminternal|Fieldinternal|
+    |Glyphgroupfield|Glyphitemfriend|Fieldinternal|
+    |Glyphgroupfield|Glyphitemprotected|Fieldprotected|
+    |Glyphgroupfield|Glyphitemprivate|Fieldprivate|
+    |Glyphgroupfield|Glyphitemshortcut|Fieldshortcut|
+    |Glyphgroupinterface|Glyphitempublic|Interfacepublic|
+    |Glyphgroupinterface|Glyphiteminternal|Interfakeiternal|
+    |Glyphgroupinterface|Glyphitemfriend|Interfakeiternal|
+    |Glyphgroupinterface|Glyphitemprotected|Interfaceprotected|
+    |Glyphgroupinterface|Glyphitemprivate|Interfaceprivate|
+    |Glyphgroupinterface|Glyphitemshortcut|Interfakeshortcut|
+    |Glyphgroupmacro|Glyphitempublic|Makropublic|
+    |Glyphgroupmacro|Glyphiteminternal|Makrointernal|
+    |Glyphgroupmacro|Glyphitemfriend|Makrointernal|
+    |Glyphgroupmacro|Glyphitemprotected|Makroprotected|
+    |Glyphgroupmacro|Glyphitemprivate|Makroprivate|
+    |Glyphgroupmacro|Glyphitemshortcut|Makroshortcut|
+    |Glyphgroupmap|Glyphitempublic|Mappublic|
+    |Glyphgroupmap|Glyphiteminternal|Mapinternal|
+    |Glyphgroupmap|Glyphitemfriend|Mapinternal|
+    |Glyphgroupmap|Glyphitemprotected|Mapprotected|
+    |Glyphgroupmap|Glyphitemprivate|Mapprivate|
+    |Glyphgroupmap|Glyphitemshortcut|Mapshortcut|
+    |Glyphgroupmapitem|Glyphitempublic|Mapitempublic|
+    |Glyphgroupmapitem|Glyphiteminternal|Mapiteminternal|
+    |Glyphgroupmapitem|Glyphitemfriend|Mapiteminternal|
+    |Glyphgroupmapitem|Glyphitemprotected|Mapitemprotected|
+    |Glyphgroupmapitem|Glyphitemprivate|Mapitemprivate|
+    |Glyphgroupmapitem|Glyphitemshortcut|Mapitemshortcut|
+    |Glyphgroupmethod|Glyphitempublic|Methodpublic|
+    |Glyphgroupmethod|Glyphiteminternal|Methodinternal|
+    |Glyphgroupmethod|Glyphitemfriend|Methodinternal|
+    |Glyphgroupmethod|Glyphitemprotected|MethodProtected|
+    |Glyphgroupmethod|Glyphitemprivate|Methodprivate|
+    |Glyphgroupmethod|Glyphitemshortcut|Methodshortcut|
+    |Glyphgroupoverload|Glyphitempublic|Methodpublic|
+    |Glyphgroupoverload|Glyphiteminternal|Methodinternal|
+    |Glyphgroupoverload|Glyphitemfriend|Methodinternal|
+    |Glyphgroupoverload|Glyphitemprotected|MethodProtected|
+    |Glyphgroupoverload|Glyphitemprivate|Methodprivate|
+    |Glyphgroupoverload|Glyphitemshortcut|Methodshortcut|
+    |Glyphgroupmodule|Glyphitempublic|Modulepublic|
+    |Glyphgroupmodule|Glyphiteminternal|Moduleinternal|
+    |Glyphgroupmodule|Glyphitemfriend|Moduleinternal|
+    |Glyphgroupmodule|Glyphitemprotected|Moduleprotected|
+    |Glyphgroupmodule|Glyphitemprivate|Moduleprivate|
+    |Glyphgroupmodule|Glyphitemshortcut|Moduleshortcut|
+    |Glyphgroupnamespace|Glyphitempublic|Namespacepublic|
+    |Glyphgroupnamespace|Glyphiteminternal|Namespacinternal|
+    |Glyphgroupnamespace|Glyphitemfriend|Namespacinternal|
+    |Glyphgroupnamespace|Glyphitemprotected|Namespaceprotected|
+    |Glyphgroupnamespace|Glyphitemprivate|Namespaceprivate|
+    |Glyphgroupnamespace|Glyphitemshortcut|Namespaceshortcut|
+    |Glyphgroupoperator|Glyphitempublic|Operatorpublic|
+    |Glyphgroupoperator|Glyphiteminternal|Operatorinternal|
+    |Glyphgroupoperator|Glyphitemfriend|Operatorinternal|
+    |Glyphgroupoperator|Glyphitemprotected|Operatorprotected|
+    |Glyphgroupoperator|Glyphitemprivate|Operatorprivate|
+    |Glyphgroupoperator|Glyphitemshortcut|Operatorshortcut|
+    |Glyphgroupproperty|Glyphitempublic|Propertypublic|
+    |Glyphgroupproperty|Glyphiteminternal|Propertyinternal|
+    |Glyphgroupproperty|Glyphitemfriend|Propertyinternal|
+    |Glyphgroupproperty|Glyphitemprotected|Propertyprotected|
+    |Glyphgroupproperty|Glyphitemprivate|Propertyprivate|
+    |Glyphgroupproperty|Glyphitemshortcut|Propertyshortcut|
+    |Glyphgroupstruct|Glyphitempublic|Structurepublic|
+    |Glyphgroupstruct|Glyphiteminternal|Structureinternal|
+    |Glyphgroupstruct|Glyphitemfriend|Structureinternal|
+    |Glyphgroupstruct|Glyphitemprotected|Structureprotected|
+    |Glyphgroupstruct|Glyphitemprivate|Structureprivate|
+    |Glyphgroupstruct|Glyphitemshortcut|Structureshortcut|
+    |Glyphgrouptemplate|Glyphitempublic|Templatepublic|
+    |Glyphgrouptemplate|Glyphiteminternal|Templateingeternal|
+    |Glyphgrouptemplate|Glyphitemfriend|Templateingeternal|
+    |Glyphgrouptemplate|Glyphitemprotected|Templateprotected|
+    |Glyphgrouptemplate|Glyphitemprivate|Templateprivate|
+    |Glyphgrouptemplate|Glyphitemshortcut|Templateshortcut|
+    |Glyphgrouptypedef|Glyphitempublic|TypeDefinitionPublic|
+    |Glyphgrouptypedef|Glyphiteminternal|TypeDefinitionInternal|
+    |Glyphgrouptypedef|Glyphitemfriend|TypeDefinitionInternal|
+    |Glyphgrouptypedef|Glyphitemprotected|TypeDefinitionProtected|
+    |Glyphgrouptypedef|Glyphitemprivate|TypeDefinitionPrivate|
+    |Glyphgrouptypedef|Glyphitemshortcut|TypeDefinitionShortcut|
+    |Glyphgrouptype|Glyphitempublic|TypePublic|
+    |Glyphgrouptype|Glyphiteminternal|Typeingabe|
+    |Glyphgrouptype|Glyphitemfriend|Typeingabe|
+    |Glyphgrouptype|Glyphitemprotected|Typeprotected|
+    |Glyphgrouptype|Glyphitemprivate|Typeprivate|
+    |Glyphgrouptype|Glyphitemshortcut|Typeshortcut|
+    |Glyphgroupunion|Glyphitempublic|Unionpublic|
+    |Glyphgroupunion|Glyphiteminternal|Unions intern|
+    |Glyphgroupunion|Glyphitemfriend|Unions intern|
+    |Glyphgroupunion|Glyphitemprotected|Unionprotected|
+    |Glyphgroupunion|Glyphitemprivate|Unionprivate|
+    |Glyphgroupunion|Glyphitemshortcut|Unionshortcut|
+    |Glyphgroupvariable|Glyphitempublic|Fieldpublic|
+    |Glyphgroupvariable|Glyphiteminternal|Fieldinternal|
+    |Glyphgroupvariable|Glyphitemfriend|Fieldinternal|
+    |Glyphgroupvariable|Glyphitemprotected|Fieldprotected|
+    |Glyphgroupvariable|Glyphitemprivate|Fieldprivate|
+    |Glyphgroupvariable|Glyphitemshortcut|Fieldshortcut|
+    |Glyphgroupvaluetype|Glyphitempublic|Valuetypeer Public|
+    |Glyphgroupvaluetype|Glyphiteminternal|Valuetypeingeternal|
+    |Glyphgroupvaluetype|Glyphitemfriend|Valuetypeingeternal|
+    |Glyphgroupvaluetype|Glyphitemprotected|Valuetypeer Protected|
+    |Glyphgroupvaluetype|Glyphitemprivate|Valuetypeer private|
+    |Glyphgroupvaluetype|Glyphitemshortcut|Valuetypeshortcut|
+    |Glyphgroupintrinsisch|Glyphitempublic|Objectpublic|
+    |Glyphgroupintrinsisch|Glyphiteminternal|Objectinternal|
+    |Glyphgroupintrinsisch|Glyphitemfriend|Objectinternal|
+    |Glyphgroupintrinsisch|Glyphitemprotected|Objectprotected|
+    |Glyphgroupintrinsisch|Glyphitemprivate|Objectprivate|
+    |Glyphgroupintrinsisch|Glyphitemshortcut|Objectshortcut|
+    |Glyphgroupjsharpmethod|Glyphitempublic|Methodpublic|
+    |Glyphgroupjsharpmethod|Glyphiteminternal|Methodinternal|
+    |Glyphgroupjsharpmethod|Glyphitemfriend|Methodinternal|
+    |Glyphgroupjsharpmethod|Glyphitemprotected|MethodProtected|
+    |Glyphgroupjsharpmethod|Glyphitemprivate|Methodprivate|
+    |Glyphgroupjsharpmethod|Glyphitemshortcut|Methodshortcut|
+    |Glyphgroupjsharpfield|Glyphitempublic|Fieldpublic|
+    |Glyphgroupjsharpfield|Glyphiteminternal|Fieldinternal|
+    |Glyphgroupjsharpfield|Glyphitemfriend|Fieldinternal|
+    |Glyphgroupjsharpfield|Glyphitemprotected|Fieldprotected|
+    |Glyphgroupjsharpfield|Glyphitemprivate|Fieldprivate|
+    |Glyphgroupjsharpfield|Glyphitemshortcut|Fieldshortcut|
+    |Glyphgroupjsharpclass|Glyphitempublic|Classpublic|
+    |Glyphgroupjsharpclass|Glyphiteminternal|Classinternal|
+    |Glyphgroupjsharpclass|Glyphitemfriend|Classinternal|
+    |Glyphgroupjsharpclass|Glyphitemprotected|Classprotehiert|
+    |Glyphgroupjsharpclass|Glyphitemprivate|Classprivate|
+    |Glyphgroupjsharpclass|Glyphitemshortcut|Classshortcut|
+    |Glyphgroupjsharpnamespace|Glyphitempublic|Namespacepublic|
+    |Glyphgroupjsharpnamespace|Glyphiteminternal|Namespacinternal|
+    |Glyphgroupjsharpnamespace|Glyphitemfriend|Namespacinternal|
+    |Glyphgroupjsharpnamespace|Glyphitemprotected|Namespaceprotected|
+    |Glyphgroupjsharpnamespace|Glyphitemprivate|Namespaceprivate|
+    |Glyphgroupjsharpnamespace|Glyphitemshortcut|Namespaceshortcut|
+    |Glyphgroupjsharpinterface|Glyphitempublic|Interfacepublic|
+    |Glyphgroupjsharpinterface|Glyphiteminternal|Interfakeiternal|
+    |Glyphgroupjsharpinterface|Glyphitemfriend|Interfakeiternal|
+    |Glyphgroupjsharpinterface|Glyphitemprotected|Interfaceprotected|
+    |Glyphgroupjsharpinterface|Glyphitemprivate|Interfaceprivate|
+    |Glyphgroupjsharpinterface|Glyphitemshortcut|Interfakeshortcut|
+    |Glyphgrouperror||Status Error|
+    |Glyphbscfile||Classfile|
+    |Glyphassembly||Referenz|
+    |Glyphlibrary||Bibliothek|
+    |Glyphvbproject||Vbprojectnode|
+    |Glyphcoolproject||Csprojectnode|
+    |Glyphcppproject||Cppprojectnode|
+    |Glyphdialogid||Dialog|
+    |Glyphopenfolder||Foldergeöffnet|
+    |Glyphclosedfolder||Folderclosed|
+    |Glypharrow||GoToNext|
+    |Glyphcsharpfile||CSFile Ode|
+    |Glyphcsharp-Erweiterung||Ausschnitt|
+    |Glyphkeyword||Intellisenabschlüsselwort|
+    |Glyphinformation||Statusinformation|
+    |Glyphreference||Classmethodreferenzierung|
+    |Glyphrecursion||Rekursion|
+    |Glyphxmlitem||Tag|
+    |Glyphjsharpproject||DocumentCollection|
+    |Glyphjsharpdocument||Dokument|
+    |Glyphforwardtype||GoToNext|
+    |Glyphcallersgraph||Callto|
+    |Glyphcallgraph||Callfrom|
+    |Glyphwarning||Status Warnung|
+    |Glyphmaybereferenzierung||Fragezeichen|
+    |Glyphmaybecaller||Callto|
+    |Glyphmaybecall||Callfrom|
+    |Glyphextensionmethod||Extensionmethod|
+    |Glyphextensionmethodinternal||Extensionmethod|
+    |Glyphextensionmethodfriend||Extensionmethod|
+    |Glyphextensionmethodprotected||Extensionmethod|
+    |Glyphextensionmethodprivate||Extensionmethod|
+    |Glyphextensionmethodshortcut||Extensionmethod|
+    |Glyphxmlattribute||XmlAttribute|
+    |Glyphxmlchild||XmlElement|
+    |Glyphxmlnachfolger||Xmlnachfolger|
+    |Glyphxmlnamespace||XmlNamespace|
+    |Glyphxmlattributequestion||Xmlattributelowconfidence|
+    |Glyphxmlattributecheck||Xmlattributehighconfidence|
+    |Glyphxmlchildquestion||Xmlelementlowconfidence|
+    |Glyphxmlchildcheck||XmlElementHighConfidence|
+    |Glyphxmldescendantquestion||Xmldescendantlowconfidence|
+    |Glyphxmldescendantcheck||Xmldescendanthighconfidence|
+    |Glyphcompletionwarning||Intellisenabwarning|

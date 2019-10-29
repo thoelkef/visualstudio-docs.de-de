@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e42b5156ced1c01995882e3250c7243c18d24d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658374"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984450"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
 Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. Visual Studio muss bereits auf dem Zielcomputer installiert sein.
@@ -68,7 +68,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
  Weitere Informationen zu MSI-Dateien und anderen Bereitstellungs Optionen finden Sie unter bereit [Stellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).
 
- Zum Erstellen einer MSI fügen Sie der Visual Studio-Projekt Mappe ein Setup-Projekt hinzu. Die einfachste Methode zum Erstellen eines Setup-Projekts ist die Verwendung der Vorlage CreateMsiSetupProject.tt, die Sie von der [vmsdk-Website](http://go.microsoft.com/fwlink/?LinkID=186128)herunterladen können.
+ Zum Erstellen einer MSI fügen Sie der Visual Studio-Projekt Mappe ein Setup-Projekt hinzu. Die einfachste Methode zum Erstellen eines Setup-Projekts ist die Verwendung der Vorlage CreateMsiSetupProject.tt, die Sie von der [vmsdk-Website](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)herunterladen können.
 
 ### <a name="to-deploy-a-dsl-in-an-msi"></a>So stellen Sie eine DSL in einer MSI bereit
 
@@ -96,7 +96,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
    - Öffnen Sie im Menü **Erstellen** die **Configuration Manager**, und wählen Sie die Konfiguration aus, die Sie erstellen möchten, z. b. **Release** oder **Debug**.
 
-4. Wechseln Sie zur [Startseite des Visualisierungs-und Modellierungs-](http://go.microsoft.com/fwlink/?LinkID=186128)SDKs, und laden Sie auf der Registerkarte **Downloads** **CreateMsiSetupProject.tt**herunter
+4. Wechseln Sie zur [Startseite des Visualisierungs-und Modellierungs-](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)SDKs, und laden Sie auf der Registerkarte **Downloads** **CreateMsiSetupProject.tt**herunter
 
 5. Fügen Sie **CreateMsiSetupProject.tt** Ihrem DSL-Projekt hinzu.
 
@@ -126,7 +126,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
     - Wenn Sie auf die Datei doppelklicken, wird Visual Studio gestartet, und die DSL-Datei wird in Ihrem DSL-Editor geöffnet.
 
-    Wenn Sie möchten, können Sie das Setup-Projekt manuell erstellen, anstatt die Textvorlage zu verwenden. Eine exemplarische Vorgehensweise, die diese Vorgehensweise umfasst, finden Sie in Kapitel 5 der SDK-Übungseinheit für [Visualisierung und Modellierung](http://go.microsoft.com/fwlink/?LinkId=208878).
+    Wenn Sie möchten, können Sie das Setup-Projekt manuell erstellen, anstatt die Textvorlage zu verwenden. Eine exemplarische Vorgehensweise, die diese Vorgehensweise umfasst, finden Sie in Kapitel 5 der SDK-Übungseinheit für [Visualisierung und Modellierung](https://code.msdn.microsoft.com/DSLToolsLab/Release/ProjectReleases.aspx?ReleaseId=4207).
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>So deinstallieren Sie eine von einer MSI installierte DSL
 

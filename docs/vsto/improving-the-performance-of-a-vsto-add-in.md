@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255640"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985776"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Verbessern der Leistung eines VSTO-Add-ins
   Sie können die Benutzererfahrung verbessern, indem Sie VSTO-Add-Ins optimieren, die Sie für Office-Anwendungen erstellen, sodass diese schnell gestartet und heruntergefahren, Elemente schnell geöffnet und andere Aufgaben rasch ausgeführt werden können. Wenn das VSTO-Add-In für Outlook bestimmt ist, können Sie das Risiko senken, dass das VSTO-Add-In aufgrund schwacher Leistung deaktiviert wird. Sie können die Leistung des VSTO-Add-Ins mithilfe der folgenden Strategien steigern:
@@ -28,7 +28,7 @@ ms.locfileid: "71255640"
 
 - [Kostenintensive Vorgänge in einem separaten Ausführungsthread ausführen](#Perform).
 
-  Weitere Informationen zur Optimierung eines Outlook-VSTO-Add-Ins finden Sie unter [Leistungskriterien, um VSTO-Add-Ins zu aktivieren](http://go.microsoft.com/fwlink/?LinkID=266503).
+  Weitere Informationen zur Optimierung eines Outlook-VSTO-Add-Ins finden Sie unter [Leistungskriterien, um VSTO-Add-Ins zu aktivieren](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
 
 ## <a name="Load"></a> Bedarfsgesteuertes Laden von VSTO-Add-Ins
  Sie können ein VSTO-Add-In so konfigurieren, dass es nur unter folgenden Umständen geladen wird:
@@ -51,13 +51,13 @@ ms.locfileid: "71255640"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>So konfigurieren Sie eine Windows Installer-Projektmappe, um VSTO-Add-Ins bedarfsgesteuert zu laden
 
-1. Legen Sie in der Registrierung den `LoadBehavior` Eintrag für den Schlüssel " **_root_\\\software\microsoft\office_ApplicationName_\Addins\\_Add-in ID_** " auf " **0x10**" fest.
+1. Legen Sie in der Registrierung den `LoadBehavior` Eintrag des **Stamms \software\microsoft\office\\_ApplicationName_\Addins\\_Add-in-ID-_**  Schlüssel auf **0x10**fest.
 
      Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>So konfigurieren Sie eine Projektmappe so, dass VSTO-Add-Ins beim Debuggen der Projektmappe bedarfsgesteuert geladen werden
 
-1. Erstellen Sie ein Skript, mit `LoadBehavior` dem der Eintrag für den Stamm Ordner **\\\software\microsoft\office_ApplicationName_\Addins\\_Add-in ID_**  auf **0x10**festgelegt wird.
+1. Erstellen Sie ein Skript, mit dem der `LoadBehavior` Eintrag des **Stamms \software\microsoft\office\\_ApplicationName_\Addins\\_Add-in-ID_**  -Schlüssel auf **0x10**festgelegt wird.
 
      Der folgende Code ist ein Beispiel für ein solches Skript.
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255640"
 
     ```
 
-     Weitere Informationen zum Erstellen eines Postbuildereignisses in einem C# Projekt finden [Sie unter Gewusst wie: Geben Sie Buildereignisse &#40;C&#35;&#41;](../ide/how-to-specify-build-events-csharp.md)an.
+     Weitere Informationen zum Erstellen eines Postbuildereignisses in einem C# Projekt finden Sie unter Gewusst [wie: Angeben von &#40;Buildereignissen C&#35;](../ide/how-to-specify-build-events-csharp.md).
 
-     Weitere Informationen zum Erstellen eines Postbuildereignisses in einem Visual Basic Projekt finden [Sie unter Gewusst wie: Angeben von Buildereignissen&#41;](../ide/how-to-specify-build-events-visual-basic.md) &#40;Visual Basic.
+     Weitere Informationen zum Erstellen eines Postbuildereignisses in einem Visual Basic Projekt finden Sie unter Gewusst [wie: Angeben von Buildereignissen &#40;Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="Publish"></a>Office-Projektmappen mithilfe von Windows Installer veröffentlichen
  Wenn Sie die Projekt Mappe mithilfe von Windows Installer veröffentlichen, umgeht Visual Studio 2010 Tools for Office Runtime die folgenden Schritte, wenn das VSTO-Add-in geladen wird.
@@ -98,9 +98,9 @@ ms.locfileid: "71255640"
   Weitere Informationen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution-by-using-windows-installer.md)-Projekt Mappe mit Windows Installer.
 
 ## <a name="Bypass"></a>Menü Band Reflektion umgehen
- Wenn Sie eine Projekt Mappe mithilfe [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]von erstellen, stellen Sie sicher, dass die Benutzer die neueste Version der Visual Studio 2010-Tools für Office-Laufzeit installiert haben, wenn Sie die Lösung bereitstellen. Ältere Versionen der VSTO-Laufzeit wurden in Projektmappenassemblys reflektiert, um Menü Band Anpassungen zu suchen. Dieser Prozess kann zur Folge haben, dass das VSTO-Add-In langsamer geladen wird.
+ Wenn Sie mit [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]eine Projekt Mappe erstellen, müssen Sie sicherstellen, dass die Benutzer die neueste Version der Visual Studio 2010-Tools für Office-Laufzeit installiert haben, wenn Sie die Lösung bereitstellen. Ältere Versionen der VSTO-Laufzeit wurden in Projektmappenassemblys reflektiert, um Menü Band Anpassungen zu suchen. Dieser Prozess kann zur Folge haben, dass das VSTO-Add-In langsamer geladen wird.
 
- Als Alternative können Sie verhindern, dass eine beliebige Version der Visual Studio 2010-Tools für Office-Laufzeit Reflektion zum Identifizieren von Menü Band Anpassungen verwendet. Um dieser Strategie zu folgen, über `CreateRibbonExtensibility` schreiben Sie die-Methode, und geben Sie explizit Ribbon-Objekte zurück. Wenn das VSTO-Add-in keine Menü Band Anpassungen enthält, geben `null` Sie innerhalb der-Methode zurück.
+ Als Alternative können Sie verhindern, dass eine beliebige Version der Visual Studio 2010-Tools für Office-Laufzeit Reflektion zum Identifizieren von Menü Band Anpassungen verwendet. Um dieser Strategie zu folgen, überschreiben Sie die `CreateRibbonExtensibility`-Methode, und geben Sie explizit Menü Band Objekte zurück. Wenn das VSTO-Add-in keine Menü Band Anpassungen enthält, geben Sie `null` innerhalb der-Methode zurück.
 
  Im folgenden Beispiel wird ein Menüband-Objekt basierend auf dem Wert eines Felds zurückgegeben.
 

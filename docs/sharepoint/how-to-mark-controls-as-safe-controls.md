@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente | Microsoft-Dokumentation'
+title: 'Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente | Microsoft-Dokumentation'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,104 +14,104 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443074"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982732"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente
-  Aus Sicherheitsgründen unterscheidet SharePoint zwischen Web-Steuerelemente, die vor der Script-Injection zu schützen und Web-Steuerelemente, die nicht aus. Steuerelemente, geschützt oder *sichere Steuerelemente*, über nicht vertrauenswürdige Benutzer zugegriffen werden kann. Sie können Steuerelemente wie in der Einträge für sicheres Steuerelement-Eigenschaft des SharePoint-Projektelements oder im abgesicherten markieren die **-Paket-Designer** beim Hinzufügen einer Assemblys für das Paket. Weitere Informationen finden Sie unter
+# <a name="how-to-mark-controls-as-safe-controls"></a>Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente
+  Aus Sicherheitsgründen unterscheidet SharePoint zwischen websteuer Elementen, die vor Skript Injektion und websteuer Elementen geschützt sind. Auf geschützte Steuerelemente oder *sichere Steuerelemente*kann von nicht vertrauenswürdigen Benutzern zugegriffen werden. Sie können Steuerelemente als sicher in der Eigenschaft Safe Control Entries eines SharePoint-Projekt Elements oder im **Paket-Designer** markieren, wenn Sie dem Paket eine Assembly hinzufügen. Weitere Informationen finden Sie unter
 
-- [Datei "Web.config" Ändern der Einstellungen](http://go.microsoft.com/fwlink/?LinkId=178965) und [Registrieren einer Web Part-Assembly als sicheres Steuerelement](http://go.microsoft.com/fwlink/?LinkId=171013).
+- die [Web. config-Datei Einstellungen ändern](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) und [registrieren eine Webpartassembly als sicheres Steuer](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))Element.
 
 > [!IMPORTANT]
-> Diese Prozeduren sind zur Veranschaulichung. Markieren von Steuerelementen sicher sind, nur, wenn Sie sicher sind, dass sie geschützt sind.
+> Diese Prozeduren dienen der Veranschaulichung. Markieren Sie Steuerelemente nur dann, wenn Sie sicher sind, dass Sie sicher sind.
 
-## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Sichere Steuerelemente in der Eigenschaft für sicheres Steuerelement Einträge markieren
+## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Markieren von sicheren Steuerelementen in der Eigenschaft "sichere Steuerelement Einträge"
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>So markieren Sie Steuerelemente wie sicher oder unsicher in der Eigenschaft für sicheres Steuerelement Einträge
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>So markieren Sie Steuerelemente als sicher oder unsicher in der Eigenschaft "sichere Steuerelement Einträge"
 
-1. Erstellen Sie eine SharePoint-Lösung mit einem Visual Web Part-Projekt.
+1. Erstellen Sie eine SharePoint-Projekt Mappe mit einem Visual Web Part-Projekt.
 
-2. Zwei Steuerelemente zum Webpart hinzufügen: ein Textfeld und eine Schaltfläche. Lassen Sie die Namen bzw. auf die Standardwerte, TextBox1 "und" Button1 ".
+2. Fügen Sie zwei-Steuerelemente zum Webpart hinzu: ein Textfeld und eine Schaltfläche. Belassen Sie die Namen der Standardwerte textBox1 bzw. Button1.
 
-3. Fügen Sie zwei Einträge, um des Webparts **Einträge für sicheres Steuerelement** Eigenschaft. Zu diesem Zweck wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) neben dem **Einträge für sicheres Steuerelement** -Eigenschaft in der  **Eigenschaften** Fenster.
+3. Fügen Sie der Eigenschaft " **Safe Control Entries** " des Webparts zwei Einträge hinzu. Wählen Sie hierzu die Schaltfläche mit den Auslassungs Zeichen (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) neben der Eigenschaft " **sichere Steuerelement Einträge** " im Fenster " **Eigenschaften** " aus.
 
-     Die **Einträge für sicheres Steuerelement** Dialogfeld wird angezeigt.
+     Das Dialogfeld **Einträge für sicheres Steuer** Element wird angezeigt.
 
-4. In der **Einträge für sicheres Steuerelement** Dialogfeld wählen die **hinzufügen** Schaltfläche zweimal, um zwei Einträge für sicheres Steuerelement zum Hinzufügen der **Mitglieder** Bereich: eine für die Schaltfläche und eine für das Textfeld.
+4. Wählen Sie im Dialogfeld **Einträge für sicheres Steuer** **Element die Schalt** Fläche **Hinzufügen** zweimal aus, um dem Bereich Elemente zwei Einträge für sicheres Steuerelement hinzuzufügen: eine für die Schaltfläche und eine für das Textfeld.
 
-5. Wählen Sie den ersten Eintrag für sicheres Steuerelement aus, und ändern Sie den Wert des der **sicher** Eigenschaft **"false"** , dessen **Typnamen** Eigenschaft **"Button1"** , und die zugehörige **sicher für Skript** Eigenschaft **"false"** .
+5. Wählen Sie den ersten Eintrag für den sicheren Eintrag aus, und ändern Sie dann den Wert der **Safe** -Eigenschaft in **false**, seine **Typname** -Eigenschaft in **Button1**und die zugehörige Sicherheit für die **Script** -Eigenschaft in **false**.
 
-     Dieser Schritt identifiziert das Schaltflächen-Steuerelement als ein nicht sicheres Steuerelement.
+     In diesem Schritt wird das Schaltflächen-Steuerelement als unsicherer Steuerelement identifiziert.
 
-6. Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Lassen Sie den Wert des der **sicher** Eigenschaft als **"true"** und legen Sie seine **Typnamen** Eigenschaft, um **TextBox1** und dessen **sicher Vor Skripteinschleusung** Eigenschaft **"true"** .
+6. Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Belassen Sie den Wert der **sicheren** Eigenschaft auf **true** , und legen Sie die Eigenschaft **Typname** auf **TextBox1** und die Eigenschaft für die Eigenschaft für den **sicheren** Zustand auf **true**fest.
 
-     Das Textfeld-Steuerelement ist nun als Steuerelement markiert, die sicher vor skripteinschleusung ist.
+     Das Textfeld-Steuerelement ist nun als Steuerelement gekennzeichnet, das gegen Skript Injektion sicher ist.
 
 7. Wählen Sie die Schaltfläche **OK** aus, um das Dialogfeld zu schließen.
 
-## <a name="marking-safe-controls-in-the-package-designer"></a>Markieren sichere Steuerelemente in der Paket-Designer
+## <a name="marking-safe-controls-in-the-package-designer"></a>Markieren sicherer Steuerelemente im Paket-Designer
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>So markieren Sie Steuerelemente wie sicher oder unsicher im Paket-Designer
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>So markieren Sie Steuerelemente im Paket-Designer als sicher oder unsicher
 
-1. Erstellen Sie eine SharePoint-Lösung mit einem Visual Web Part-Projekt.
+1. Erstellen Sie eine SharePoint-Projekt Mappe mit einem Visual Web Part-Projekt.
 
-2. Zwei Steuerelemente zum Webpart hinzufügen: ein Textfeld und eine Schaltfläche. Lassen Sie die Namen bzw. auf die Standardwerte, TextBox1 "und" Button1 ".
+2. Fügen Sie zwei-Steuerelemente zum Webpart hinzu: ein Textfeld und eine Schaltfläche. Belassen Sie die Namen der Standardwerte textBox1 bzw. Button1.
 
-     Notieren Sie sich den Namespace des Steuerelements aus, da sie später verwendet wird.
+     Notieren Sie sich den Namespace des Steuer Elements, da er später verwendet wird.
 
-3. Wählen Sie auf der Menüleiste **erstellen** > **Projektmappe** zum Erstellen des Projekts.
+3. Wählen Sie in der Menüleiste **Erstellen** > Projekt Mappe **Erstellen** aus, um das Projekt zu erstellen.
 
-4. Erstellen Sie eine andere SharePoint-Lösung.
+4. Erstellen Sie eine weitere SharePoint-Lösung.
 
-5. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die *"Package.Package"* Datei, und wählen Sie dann **öffnen** zum Öffnen der **-Paket-Designer**.
+5. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die *Package. Package* -Datei, und wählen Sie dann **Öffnen** aus, um den **Paket-Designer**zu öffnen.
 
-6. In der **-Paket-Designer**, wählen Sie die **erweitert** Registerkarte.
+6. Wählen Sie im **Paket-Designer**die Registerkarte **erweitert** aus.
 
-7. Klicken Sie unter **zusätzliche Assemblys**, wählen Sie die **hinzufügen** Schaltfläche, und wählen Sie dann **vorhandene Assembly hinzufügen** aus der Liste.
+7. Wählen Sie unter **zusätzliche**Assemblys die Schaltfläche **Hinzufügen** aus, und wählen Sie dann vorhandene Assembly aus der Liste **Hinzufügen** aus.
 
-8. In der **vorhandene Assembly hinzufügen** Dialogfeld auf die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) neben  **Quellpfad**.
+8. Wählen Sie im Dialogfeld **vorhandene Assembly hinzufügen** die Schaltfläche mit den Auslassungs Zeichen (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) neben **Quellpfad**aus.
 
-9. Wählen Sie die Assembly aus der SharePoint-Lösung, die Sie in Schritt 1 erstellt haben, und wählen Sie dann die **öffnen** Schaltfläche.
+9. Wählen Sie die Assembly aus der SharePoint-Lösung aus, die Sie in Schritt 1 erstellt haben, und wählen Sie dann die Schaltfläche **Öffnen** aus.
 
-10. In diesem Beispiel lassen den **Bereitstellungsziel** Option GlobalAssemblyCache.
+10. Belassen Sie für dieses Beispiel die Option **Bereitstellungs Ziel** als GlobalAssemblyCache.
 
-     Dieser Schritt bewirkt, dass die Assembly dem globalen Assemblycache (GAC)-System bereitstellen. Wenn Sie die Assembly, auf den Ordner der Web-Anwendung (. Bin) bereitstellen möchten, wählen Sie stattdessen die Option. Weitere Informationen finden Sie unter [Bereitstellen von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+     Dieser Schritt bewirkt, dass die Assembly im globalen Assemblycache (GAC) des Systems bereitgestellt wird. Wenn Sie möchten, dass die Assembly im Ordner Webanwendung (bin) bereitgestellt wird, wählen Sie stattdessen diese Option aus. Weitere Informationen finden Sie unter Bereitstellen von [Webparts in SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
-11. In der **sichere Steuerelemente** wählen die **klicken Sie hier, um ein neues Element hinzufügen** Schaltfläche.
+11. Wählen Sie im Feld **sichere Steuerelemente** die Schaltfläche **Klicken Sie hier, um ein neues Element hinzuzufügen** aus.
 
-12. Geben Sie die Werte für die Eigenschaften aus der folgenden Tabelle.
+12. Geben Sie die Werte für die Eigenschaften in der folgenden Tabelle ein.
 
     |Eigenschaftenname|Wert|
     |-------------------|-----------|
-    |Namespace|Der vollqualifizierte Namespace für das Steuerelement, z. B. **BdcModelProject1.VisualWebPart1**.|
+    |Namespace|Der voll qualifizierte Namespace für das Steuerelement, z. b **. BdcModelProject1. VisualWebPart1**.|
     |Typname|Schaltfläche1|
-    |Assemblyname|Eine Assembly mit starke Namen, z. B.: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|
-    |Safe|Deaktivieren der **sicher** Kontrollkästchen.|
-    |Sicher vor Skripteinschleusung|Lassen Sie die **sicher für Skript** Kontrollkästchen deaktivieren.|
+    |Assemblyname|Einen starken Assemblynamen, z. b.: Microsoft. Office. SharePoint. clientextensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
+    |Sauberem|Deaktivieren Sie das Kontrollkästchen **sicher** .|
+    |Gegen Skript sichern|Deaktivieren Sie das Kontrollkästchen für das **sichere gegen Skript** .|
 
     > [!NOTE]
-    > Die **Assemblyname** Wert für Assemblys, die über eine hinzugefügt wurden die **erweitert** Registerkarte die **-Paket-Designer** kann kein Token zu sein, es muss eine Assembly mit starkem Namen. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Assemblys mit starkem Namen](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > Der **assemblynamenswert** für Assemblys, die über die Registerkarte **erweitert** des **Paket-Designers** hinzugefügt wurden, kann kein Token sein, sondern muss eine Assembly mit starkem Namen sein. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Assemblys mit starkem Namen](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100)).
 
-13. Wählen Sie die **Registerkarte** Taste, um einen anderen Eintrag für sicheres Steuerelement zu erstellen.
+13. Wählen Sie die **Tab** -Taste, um einen weiteren sicheren Steuerungs Eintrag zu erstellen.
 
-14. Wählen Sie die **klicken Sie hier, um ein neues Element hinzufügen** erneut.
+14. Klicken Sie erneut auf die Schaltfläche **Klicken Sie hier, um ein neues Element hinzuzufügen** .
 
-15. Geben Sie die Werte für die Eigenschaften aus der folgenden Tabelle.
+15. Geben Sie die Werte für die Eigenschaften in der folgenden Tabelle ein.
 
     |Eigenschaftenname|Wert|
     |-------------------|-----------|
-    |Namespace|Der vollqualifizierte Namespace für das Steuerelement, z. B. **BdcModelProject1.VisualWebPart1**.|
+    |Namespace|Der voll qualifizierte Namespace für das Steuerelement, z. b **. BdcModelProject1. VisualWebPart1**.|
     |Typname|TextBox1|
-    |Assemblyname|Eine Assembly mit starke Namen, z. B.: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|
-    |Safe|Wählen Sie die **sicher** Kontrollkästchen.|
-    |Sicher vor Skripteinschleusung|Wählen Sie die **sicher für Skript** Kontrollkästchen.|
+    |Assemblyname|Einen starken Assemblynamen, z. b.: Microsoft. Office. SharePoint. clientextensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
+    |Sauberem|Aktivieren Sie das Kontrollkästchen **sicher** .|
+    |Gegen Skript sichern|Aktivieren Sie das Kontrollkästchen für **Skript sichern** .|
 
-16. Wählen Sie die **Registerkarte** Taste, und wählen Sie dann die **OK** , um das Dialogfeld zu schließen.
+16. Wählen Sie die **Tab** -Taste, und klicken Sie dann auf die Schaltfläche **OK** , um das Dialogfeld zu schließen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Angaben Sie zu packen und-Bereitstellen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
-- [Paket und Bereitstellung von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

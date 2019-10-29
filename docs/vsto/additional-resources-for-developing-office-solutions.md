@@ -1,5 +1,5 @@
 ---
-title: Zusätzliche Ressourcen für die Entwicklung von Office-Projektmappen
+title: Zusätzliche Ressourcen zum Entwickeln von Office-Projektmappen
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,37 +12,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953179"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986279"
 ---
-# <a name="additional-resources-to-develop-office-solutions"></a>Zusätzliche Ressourcen für die Entwicklung von Office-Projektmappen
+# <a name="additional-resources-to-develop-office-solutions"></a>Zusätzliche Ressourcen zum Entwickeln von Office-Projektmappen
   Die Microsoft Office-Entwicklertools in Visual Studio stellen nur eine von vielen Methoden zum Erweitern von Office-Anwendungen dar. Office-Anwendungen verfügen auch über einige integrierte Features, z. B. Open XML-Formate, die nicht von den Office-Entwicklertools in Visual Studio oder in dieser Dokumentation behandelt werden.
 
  Wenn Sie mehr über die Möglichkeiten von Microsoft Office und den Office-Entwicklertools in Visual Studio erfahren möchten, stellen diese Ressourcen die ersten Schritte dar.
 
-[Office-Entwicklung mit Visual Studio-Entwicklercenter](http://go.microsoft.com/fwlink/?LinkId=149752)
-
-Das zentrale Portal für die neuesten Artikel, Videos, Foren, Blogs und anderen Ressourcen für die Office-Entwicklertools in Visual Studio.
-
-[Office-Entwicklercenter](http://go.microsoft.com/fwlink/?LinkId=83467)
+[Office Developer Center](https://developer.microsoft.com/office/docs)
 
 Das zentrale Portal mit den aktuellsten Ressourcen für Office-Entwickler (nicht spezifisch für Office-Entwicklung mit Visual Studio).
 
-[Microsoft Office-Entwicklung im Abschnitt der MSDN Library](http://go.microsoft.com/fwlink/?LinkId=149870)
+[Abschnitt zur Microsoft Office Entwicklung der MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12))
 
 Der Bereich der MSDN Library, in dem Sie Artikel und Referenzdokumentation zum Entwickeln von Lösungen für mehrere Versionen von Office finden (nicht spezifisch für Office-Entwicklung mit Visual Studio).
-
-[Entwicklerportal für Office Business-Anwendungen](http://go.microsoft.com/fwlink/?LinkId=99125)
-
-Das zentrale Portal für Informationen zu Office-Geschäftsanwendungen. Office-Geschäftsanwendungen verbinden LOB-Systeme (Line-of-Business) mit den Personen, die sie über Microsoft Office-Anwendungen verwenden, damit vorhandene IT-Investitionen durch die innovative Kombination von Ressourcen erweitert werden können.
-
-[Office-Entwicklung mit Visual Studio-blog](http://go.microsoft.com/fwlink/?LinkId=149748)
-
-Der vom Microsoft-Team verwaltete Blog, das die Office-Entwicklertools für Visual Studio erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 - [Zusätzliche Unterstützung für Fehler in Office-Projektmappen](../vsto/additional-support-for-errors-in-office-solutions.md)

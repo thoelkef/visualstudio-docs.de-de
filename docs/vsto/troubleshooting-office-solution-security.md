@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung bei Office-projektmappensicherheit
+title: Behandeln von Problemen mit der Sicherheit von Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,41 +12,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 921bef3514b802672296dda6d680b665f1f42482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 289ffc3b5260260c9da8d0ec61e5c79890394802
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978314"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985564"
 ---
-# <a name="troubleshoot-office-solution-security"></a>Problembehandlung bei Office-projektmappensicherheit
-  Dieses Thema enthält Tipps zum Beheben von gängigen Problemen, die beim Sichern von Office-Projektmappen auftreten können.
+# <a name="troubleshoot-office-solution-security"></a>Behandeln von Problemen mit der Sicherheit von Office
+  Dieses Thema enthält Tipps zum Lösen allgemeiner Probleme, die bei der Arbeit mit dem Sichern von Office-Lösungen auftreten können.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Vertrauenswürdige Lösungen können nicht von eingeschränkten Sites installiert werden
- Benutzer können nicht vom Web aus eine Lösung installieren, wenn die Website in Internet Explorer-Zone eingeschränkter Sites aufgeführt ist. Dies gilt auch, wenn die Projektmappe mit einem vertrauenswürdigen Zertifikat signiert ist.
+## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Vertrauenswürdige Lösungen können nicht von eingeschränkten Sites installiert werden.
+ Benutzer können eine Lösung nicht von einem Webspeicherort installieren, wenn die Website in der Zone Eingeschränkte Sites von Internet Explorer aufgeführt ist. Dies gilt auch, wenn die Lösung mit einem vertrauenswürdigen Zertifikat signiert ist.
 
- Die URL des Bereitstellungsmanifests kann in einer der fünf Zonen eingeteilt werden:
+ Die URL des Bereitstellungs Manifests kann in eine von fünf Zonen kategorisiert werden:
 
 - Arbeitsplatz
 
 - Internet
 
-- Lokales intranet
+- Lokales Intranet
 
-- Vertrauenswürdige sites
+- Vertrauenswürdige Sites
 
-- Eingeschränkte sites
+- Eingeschränkte Websites
 
-  Wenn der Speicherort des Bereitstellungsmanifests zur Zone eingeschränkter Sites zugewiesen wurde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] die Projektmappe nicht installiert. Wenn der Speicherort bekannt ist und kann kann als vertrauenswürdig eingestuft, und der Benutzer entfernen den Speicherort aus der Zone eingeschränkter Sites installieren die Lösung. Weitere Informationen zum Verwalten von Zonen, finden Sie unter [Configuring ClickOnce Trusted Publishers](http://go.microsoft.com/fwlink/?LinkId=94774).
+  Wenn der Speicherort des Bereitstellungs Manifests der Zone der eingeschränkten Sites zugewiesen wurde, wird die Lösung von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nicht installiert. Wenn der Speicherort bekannt ist und als vertrauenswürdig eingestuft werden kann, kann der Benutzer den Speicherort aus der Zone der eingeschränkten Sites entfernen und die Lösung installieren. Informationen zum Verwalten von Zonen finden Sie unter [Konfigurieren von ClickOnce-vertrauenswürdigen Verlegern](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Lösungen können nicht von Netzwerkdateifreigaben oder Websites installiert werden, wenn die verstärkte Sicherheitskonfiguration für Internet Explorer oder Internet Explorer 7 installiert ist
- Internet Explorer Enhanced Security Configuration (IEESC) in Windows Server 2003 und höher und InternetExplorer 7 und höher, schränkt die Möglichkeit von Benutzern zum Durchsuchen des Internets erheblich. Wenn Benutzer versuchen, installieren Sie Office-Projektmappen aus einer Netzwerkdatei freigeben oder Webspeicherort, sie erhalten möglicherweise die folgende Fehlermeldung angezeigt: "Benutzerdefinierte Funktionen können in dieser Anwendung funktioniert nicht, da das Zertifikat zum Signieren des Bereitstellungsmanifests für verwendet *SolutionName* ist nicht vertrauenswürdig. Wenden Sie sich an Ihren Administrator um Hilfe zu erhalten."
+## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Lösungen können nicht von Netzwerkdatei Freigaben oder webstandorten aus installiert werden, wenn die verstärkte Sicherheitskonfiguration für Internet Explorer oder Internet Explorer 7 installiert ist.
+ Durch die verstärkte Sicherheitskonfiguration für Internet Explorer (IEESC) in Windows Server 2003 und höher sowie Internet Explorer 7 und höher wird die Möglichkeit der Benutzer das Durchsuchen des Internets erheblich eingeschränkt. Wenn Benutzer versuchen, Office-Projektmappen über eine Netzwerkdatei Freigabe oder einen Webspeicherort zu installieren, erhalten Sie möglicherweise die folgende Fehlermeldung: "die angepasste Funktionalität in dieser Anwendung funktioniert nicht, da das Zertifikat zum Signieren des Bereitstellungs Manifests für *verwendet wird. SolutionName* ist nicht vertrauenswürdig. Wenden Sie sich für weitere Unterstützung an Ihren Administrator. "
 
- Mit IEESC und InternetExplorer 7 und höher Wenn die URL des Bereitstellungsmanifests in der Internetzone kategorisiert werden, muss das Manifest ein Zertifikat von einem vertrauenswürdigen Herausgeber oder die Projektmappe kann nicht installiert werden. Standardmäßig werden ohne IEESC stellen eine Entscheidung über die Vertrauenswürdigkeit der Endbenutzer aufgefordert.
+ Wenn bei IEESC und Internet Explorer 7 und höher die URL des Bereitstellungs Manifests in der Zone "Internet" kategorisiert wird, muss das Manifest über ein Zertifikat von einem vertrauenswürdigen Herausgeber verfügen, oder die Lösung kann nicht installiert werden. Ohne IEESC ist das Standardverhalten, den Endbenutzer aufzufordern, eine Vertrauens Entscheidung zu treffen.
 
- Verwalten der Auswirkungen von IEESC und Internet Explorer 7 und höher zu identifizieren, Websites und Universal naming Convention (UNC)-Pfade, die Sie vertrauen und Hinzufügen eines vertrauenswürdigen Sicherheitszonen (lokales Intranet oder vertrauenswürdige Sites). Weitere Informationen zum Verwalten von Zonen, finden Sie unter [ClickOnce konfigurieren vertrauenswürdiger Herausgeber](http://go.microsoft.com/fwlink/?LinkId=94774).
+ Um die Auswirkungen von IEESC und Internet Explorer 7 und höher zu verwalten, identifizieren Sie Websites und UNC-Pfade (Universal Naming Convention), denen Sie Vertrauen, und fügen Sie Sie einer vertrauenswürdigen Sicherheitszone (Lokales Intranet oder Vertrauenswürdige Sites) hinzu. Weitere Informationen zum Verwalten von Zonen finden Sie unter [Konfigurieren von ClickOnce-vertrauenswürdigen Verlegern](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
 ## <a name="see-also"></a>Siehe auch
-- [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)
+- [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
