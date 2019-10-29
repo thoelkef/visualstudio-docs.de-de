@@ -15,73 +15,73 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009799"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984187"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicherheit für SharePoint-Lösungen
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst die folgenden Funktionen zur Erhöhung die Sicherheit von SharePoint-Anwendungen.
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst die folgenden Funktionen, um die Sicherheit von SharePoint-Anwendungen zu verbessern.
 
 ## <a name="safe-control-entries"></a>Einträge für sicheres Steuerelement
- Jede SharePoint-Projektelement in erstellt [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügt über eine **Einträge für sicheres Steuerelement** Eigenschaft, die eine sichere darstellt controls-Auflistung. Die **sicher** Untereigenschaften können Sie die Steuerelemente angeben, die Sie sicheren berücksichtigen. Weitere Informationen finden Sie unter [Geben Sie Paket und die Bereitstellung in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [angeben sicherer Webparts](http://go.microsoft.com/fwlink/?LinkId=177521).
+ Jedes SharePoint-Projekt Element, das in [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt wurde, verfügt über eine Eigenschaft für **sicheres Steuerelement Einträge** , die eine Auflistung sicherer Steuerelemente Mit Ihrer **sicheren** untergeordneten Eigenschaft können Sie die Steuerelemente angeben, die Sie als sicher betrachtet haben. Weitere Informationen finden Sie unter [Bereitstellen von Paket-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [Angeben von sicherem Webparts](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
 
-## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers-Attribut
- Standardmäßig können nur Anwendungen, die von das Laufzeitsystem Code Access Security (CAS) vertraut sind, eine freigegebene verwaltete Codeassembly zugreifen. Markieren einer voll vertrauenswürdigen Assembly mit dem AllowPartiallyTrustedCallers-Attribut kann teilweise vertrauenswürdige Assemblys, darauf zuzugreifen.
+## <a name="allowpartiallytrustedcallers-attribute"></a>Allowpartiallytrust dcaller-Attribut
+ Standardmäßig können nur Anwendungen, denen das System zur Laufzeit-Code Zugriffssicherheit (CAS) voll vertrauenswürdig ist, auf eine freigegebene verwaltete Codeassembly zugreifen. Durch das Markieren einer voll vertrauenswürdigen Assembly mit dem allowpartiallytrust dcaller-Attribut können teilweise vertrauenswürdige Assemblys darauf zugreifen.
 
- Das AllowPartiallyTrustedCallers-Attribut wird jede SharePoint-Lösung, die nicht in den globalen Assemblycache des Systems bereitgestellt wurde hinzugefügt ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Dies schließt die Sandbox-Lösungen oder Lösungen, die für die Bin-Verzeichnis der SharePoint-Anwendung bereitgestellt. Weitere Informationen finden Sie unter [Version 1 Sicherheitsänderungen für das Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) und [Bereitstellen von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ Das allowpartiallytrust dcaller-Attribut wird einer SharePoint-Lösung hinzugefügt, die nicht im globalen Assemblycache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]) bereitgestellt wird. Dies schließt Sandkasten Lösungen oder Lösungen ein, die im SharePoint-Anwendungsverzeichnis "bin" bereitgestellt werden. Weitere Informationen finden Sie unter [Sicherheitsänderungen der Version 1 für das Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) und Bereitstellen von [Webparts in SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
-## <a name="safe-against-script-property"></a>Sicher vor Skript (Eigenschaft)
- *Script-Injection* ist das Einfügen von potenziell bösartigem Code in Steuerelementen oder Webseiten. Um SharePoint 2010-Websites für Script-Injection zu schützen, können nicht die Contributors anzeigen oder Bearbeiten von Webparts oder ihre Eigenschaften standardmäßig. Dieses Verhalten wird durch eine SafeControl-Attribut, die mit der Bezeichnung "SafeAgainstScript" gesteuert. In [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], legen Sie dieses Attribut in einem Projektelement **Einträge für sicheres Steuerelement** Untereigenschaften **sicher für Skript**. Weitere Informationen finden Sie unter [Geben Sie Paket und die Bereitstellung in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md).
+## <a name="safe-against-script-property"></a>Sicherheit für Skript Eigenschaft
+ *Skript Injektion* ist das Einfügen von potenziell bösartigem Code in Steuerelemente oder Webseiten. Zur Unterstützung des Schutzes von SharePoint 2010-Websites vor der Skript Injektion können Mitwirkende keine Webparts oder deren Eigenschaften standardmäßig anzeigen und bearbeiten. Dieses Verhalten wird von einem SafeControl-Attribut mit dem Namen "safeagainstscript" gesteuert. Legen Sie dieses Attribut in [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]in der untergeordnete Eigenschaft der untergeordneten **Steuerelement Einträge** eines Projekt Elements **vor dem Skript**fest. Weitere Informationen finden Sie unter [Bereitstellen von Paket-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und Gewusst [wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md).
 
-## <a name="vista-and-windows-7-user-account-control"></a>Vista und Windows 7 Benutzerkontensteuerung
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] enthalten eine Sicherheitsfunktion, die als Benutzerkontensteuerung (UAC) bezeichnet. Zum Entwickeln von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unter [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] muss [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aufgrund der Benutzerkontensteuerung als Systemadministrator ausgeführt werden. Von der **starten** Menü öffnen Sie das Kontextmenü für [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], und wählen Sie dann **als Administrator ausführen**.
+## <a name="vista-and-windows-7-user-account-control"></a>Benutzerkontensteuerung für Vista und Windows 7
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] enthalten ein Sicherheits Feature, das als Benutzerkontensteuerung (User Account Control, UAC) bezeichnet wird. Zum Entwickeln von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unter [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] muss [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aufgrund der Benutzerkontensteuerung als Systemadministrator ausgeführt werden. Öffnen Sie im **Startmenü** das Kontextmenü für [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], und wählen Sie dann **als Administrator ausführen**aus.
 
- So konfigurieren Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Verknüpfung immer als Administrator ausführen, öffnen Sie das Kontextmenü, wählen Sie **Eigenschaften**, wählen Sie die **erweitert** Schaltfläche der **Eigenschaften**(Dialogfeld), und wählen Sie dann die **als Administrator ausführen** Kontrollkästchen.
+ Öffnen Sie das Kontextmenü, wählen Sie **Eigenschaften**aus, klicken Sie im Dialogfeld **Eigenschaften** auf die Schaltfläche **erweitert** , und aktivieren Sie dann das Kontrollkästchen **als Administrator ausführen** , um die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Verknüpfung so zu konfigurieren, dass Sie immer als Administrator ausgeführt wird.
 
- Weitere Informationen finden Sie unter [verstehen und Konfigurieren der Benutzerkontensteuerung in Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476). und [Windows 7-Benutzerkontensteuerung](http://go.microsoft.com/fwlink/?LinkId=177523).
+ Weitere Informationen finden Sie unter [verstehen und Konfigurieren der Benutzerkontensteuerung in Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10)). und [Windows 7-Benutzerkontensteuerung](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
 
-## <a name="sharepoint-permissions-considerations"></a>Überlegungen zur SharePoint-Berechtigungen
+## <a name="sharepoint-permissions-considerations"></a>Überlegungen zu SharePoint-Berechtigungen
  Bei der Entwicklung von SharePoint-Lösungen benötigen Sie ausreichende Berechtigungen, um SharePoint-Lösungen auszuführen und zu debuggen. Bevor Sie eine SharePoint-Lösung testen können, führen Sie die folgenden Schritte aus, um sicherzustellen, dass Sie über die erforderlichen Berechtigungen verfügen:
 
 1. Fügen Sie Ihr Benutzerkonto als Administrator für das System hinzu.
 
 2. Fügen Sie Ihr Benutzerkonto als Farmadministrator für den SharePoint-Server hinzu.
 
-    1. Wählen Sie in SharePoint 2010-Zentraladministration die **verwalten Sie die Gruppe "Farmadministratoren"** Link.
+    1. Wählen Sie in der SharePoint 2010-zentral Administration den Link **Farm Administrator Gruppe verwalten** aus.
 
-    2. Auf der **Farmadministratoren** Seite die **neu** Menüoption
+    2. Wählen Sie auf der Seite **Farm Administratoren** die Option **Neues** Menü aus.
 
 3. Fügen Sie das Benutzerkonto zur Gruppe "WSS_ADMIN_WPG" hinzu.
 
 ## <a name="additional-security-resources"></a>Zusätzliche Sicherheitsressourcen
- Weitere Informationen zu Sicherheitsproblemen finden Sie hier.
+ Weitere Informationen zu Sicherheitsproblemen finden Sie in den folgenden Themen.
 
 ### <a name="visual-studio-security"></a>Visual Studio-Sicherheit
 
-- [Sicherheit und Benutzerberechtigungen](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Sicherheit und Benutzerberechtigungen](/previous-versions/visualstudio/visual-studio-2010/ms165099(v=vs.100))
 
-- [Sicherheit in systemeigenem Code und .NET Framework-Code](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Sicherheit in nativem und .NET Framework Code](/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
 
-- [Sicherheit in .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Sicherheit in .NET Framework](/previous-versions/dotnet/netframework-4.0/fkytk30f(v=vs.100))
 
 ### <a name="sharepoint-security"></a>SharePoint-Sicherheit
 
-- [SharePoint Foundation-Verwaltung und Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Verwaltung und Sicherheit von SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee537811(v=office.14))
 
-- [Ressourcencenter für SharePoint-Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [SharePoint-Sicherheitsressourcen Center](/sharepoint/dev/)
 
-- [Sichern von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Sichern von Webparts in SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768613(v=office.14))
 
-- [Erhöhen der Sicherheit von Webanwendungen: Bedrohungen und Gegenmaßnahmen](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Verbessern der Webanwendungs Sicherheit: Bedrohungen und Gegenmaßnahmen](/previous-versions/msp-n-p/ff649874(v=pandp.10))
 
 ### <a name="general-security"></a>Allgemeine Sicherheit
 
-- [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [Lebenszyklus der MSDN-Sicherheitsentwicklung](https://www.microsoft.com/msrc?rtc=1)
 
-- [Erstellen von Secure ASP.NET-Anwendungen: Authentifizierung, Autorisierung und sichere Kommunikation](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Aufbauen von sicheren ASP.NET-Anwendungen: Authentifizierung, Autorisierung und sichere Kommunikation](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 
 ## <a name="see-also"></a>Siehe auch
 

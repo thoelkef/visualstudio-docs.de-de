@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650721"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985351"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
@@ -31,7 +31,7 @@ Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem ei
 - Beim Hinzufügen einer catch-Anweisung für die <xref:System.Activities.Statements.TryCatch>-Aktivität.
 
 > [!NOTE]
-> Der Typbrowser kann verzweigte Visual Basic-Arraytypen, aber keine mehrdimensionalen Arraytypen anzeigen. Weitere Informationen finden Sie unter verzweigte [Arrays](http://go.microsoft.com/fwlink/?LinkId=195226) und mehr [dimensionale Arrays](http://go.microsoft.com/fwlink/?LinkId=195227) .
+> Der Typbrowser kann verzweigte Visual Basic-Arraytypen, aber keine mehrdimensionalen Arraytypen anzeigen. Weitere Informationen finden Sie unter verzweigte [Arrays](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90)) und mehr [dimensionale Arrays](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90)) .
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Auswählen eines Werts oder eines Verweistyps im Typbrowser
 

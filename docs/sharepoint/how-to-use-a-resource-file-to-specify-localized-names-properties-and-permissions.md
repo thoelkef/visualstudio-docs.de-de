@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen | Microsoft-Dokumentation'
+title: 'Gewusst wie: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcen Datei | Microsoft-Dokumentation'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,37 +19,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813048"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982553"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen
-  Verwenden Sie eine Ressourcendatei, können Sie lokalisierte Namen, Eigenschaften zu definieren und Anwenden von Berechtigungen Tor-Objekte, die in einem Business Data Connectivity (BDC)-Modell definiert sind. Um diese Informationen anzugeben, fügen Sie eine **Business Data Connectivity-Ressource** Element, das ein Projekt mit einem **Business Data Connectivity-Modells** Element. Dann geben Sie Namen, Eigenschaften und Berechtigungen durch Bearbeiten den XML-Code für die Ressourcendatei.
+# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Gewusst wie: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcen Datei
+  Mithilfe einer Ressourcen Datei können Sie lokalisierte Namen bereitstellen, Eigenschaften definieren und Berechtigungs-Tor-Objekte anwenden, die in einem Business Data Connectivity (BDC)-Modell definiert sind. Zum Angeben dieser Informationen fügen Sie ein **Business Data Connectivity-Ressourcen** Element zu einem Projekt hinzu, das ein **Business Data Connectivity-Modell** Element enthält. Anschließend geben Sie Namen, Eigenschaften und Berechtigungen an, indem Sie den XML-Code für die Ressourcen Datei bearbeiten.
 
-### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Eine BDC-Ressourcendatei einem SharePoint-Projekt hinzu
+### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>So fügen Sie einem SharePoint-Projekt eine BDC-Ressourcen Datei hinzu
 
-1. In **Projektmappen-Explorer**, erweitern Sie den Ordner für die SharePoint-Projekt, und wählen Sie dann den Ordner mit dem BDC-Modell.
+1. Erweitern Sie in **Projektmappen-Explorer**den Ordner für das SharePoint-Projekt, und wählen Sie dann den Ordner aus, der das BDC-Modell enthält.
 
 2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
-3. Erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
+3. Erweitern Sie den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
-4. In der **neues Element hinzufügen** Dialogfeld wählen **Business Data Connectivity-Ressourcenelement**.
+4. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die **Option Business Data Connectivity-Ressourcen Element**aus.
 
-5. In der **Namen** Feld Geben Sie den Namen der Ressourcendatei, und wählen Sie dann die **hinzufügen** Schaltfläche.
+5. Geben Sie im Feld **Name** den Namen der Ressourcen Datei an, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
-     Eine Ressourcendatei, die der Erweiterung .bdcr wird dem Projekt hinzugefügt und für die Bearbeitung geöffnet.
+     Eine Ressourcen Datei mit der Erweiterung. bdcr wird dem Projekt hinzugefügt und zum Bearbeiten geöffnet.
 
-6. Fügen Sie XML-Code, um definieren den lokalisierten Namen, Eigenschaften und Berechtigungen, die auf das BDC-Modell angewendet werden soll.
+6. Fügen Sie XML hinzu, um die lokalisierten Namen, Eigenschaften und Berechtigungen zu definieren, die Sie für das BDC-Modell verwenden möchten.
 
-     Weitere Informationen zum Definieren dieser Elemente finden Sie unter [Modell und Ressourcendateien](http://go.microsoft.com/fwlink/?LinkID=169283).
+     Weitere Informationen zum Definieren dieser Elemente finden Sie unter [Modell-und Ressourcen Dateien](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14)).
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)
-- [Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
+- [Vorgehensweise: Einschließen einer benutzerdefinierten Assembly in eine BDC-Funktion](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

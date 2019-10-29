@@ -13,28 +13,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1f87b9548aceab58e1a8e1c6178a1dca759c312
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb29dc4151bc457eb60ce836986817bc1b0137c9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825988"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985964"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
   Um einen Entwicklungscomputer so zu konfigurieren, dass Sie die Microsoft Office Developer Tools in Visual Studio verwenden können, befolgen Sie die Anweisungen in diesem Thema. Sie müssen Administratorrechte auf dem Entwicklungscomputer besitzen, um diese Schritte auszuführen.
 
 ### <a name="to-configure-the-development-computer"></a>So konfigurieren Sie den Entwicklungscomputer
 
-1. Installieren Sie eine Version von Visual Studio, in der die Office Developer Tools enthalten sind. Die Office Developer-Tools werden standardmäßig installiert. Wenn Sie Visual Studio-Installation anpassen, indem Sie die zu installierenden Funktionen auswählen, stellen sicher, dass **Microsoft Office Developer Tools** während des Setups ausgewählt ist. Weitere Informationen zu den Versionen von Visual Studio, die die Office Developer Tools einschließen, finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+1. Installieren Sie eine Version von Visual Studio, in der die Office Developer Tools enthalten sind. Die Office Developer-Tools werden standardmäßig installiert. Wenn Sie die Visual Studio-Installation anpassen, indem Sie die zu installierenden Funktionen auswählen, stellen Sie sicher, dass **Microsoft Office Entwicklertools** während des Setups ausgewählt wird. Weitere Informationen zu den Versionen von Visual Studio, die die Office-Entwicklertools enthalten, finden [Sie unter Konfigurieren eines Computers zum Entwickeln von Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)-Projektmappen.
 
-2. Installieren Sie eine Version von Office, die von den Office Developer Tools in Visual Studio unterstützt wird. Weitere Informationen finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+2. Installieren Sie eine Version von Office, die von den Office Developer Tools in Visual Studio unterstützt wird. Weitere Informationen finden Sie unter [Konfigurieren eines Computers zum Entwickeln von Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)-Projektmappen.
 
-     Stellen Sie sicher, dass Sie auch die PIAs für die installierte Office-Version installieren. Die PIAs werden standardmäßig mit Office installiert. Wenn Sie Office-Setup ändern, stellen sicher, dass die **.NET-Programmierunterstützung für** Feature für die gewünschten Anwendungen ausgewählt ist.
+     Stellen Sie sicher, dass Sie auch die PIAs für die installierte Office-Version installieren. Die PIAs werden standardmäßig mit Office installiert. Wenn Sie Office-Setup ändern, stellen Sie sicher, dass die Funktion **.net-Programmier Unterstützung** für die Anwendungen ausgewählt ist, auf die Sie abzielen möchten.
 
-3. Wenn Sie eine englische Version von Visual Studio verfügen, aber nicht englische Einstellungen für Windows verwenden, können Sie installieren die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Pack, finden Sie unter [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Nachrichten in derselben Sprache wie Windows. Bei nicht englischen Versionen von Visual Studio wird automatisch das Sprachpaket installiert. Das Language Pack steht in der [Microsoft-Downloadcenter](http://go.microsoft.com/fwlink/?LinkId=140386).
+3. Wenn Sie über eine englische Version von Visual Studio verfügen, aber nicht englische Einstellungen für Windows verwenden, können Sie das [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Pack installieren, um [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Meldungen in derselben Sprache wie Windows anzuzeigen. Bei nicht englischen Versionen von Visual Studio wird automatisch das Sprachpaket installiert. Das Language Pack ist im [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54246)verfügbar.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
-- [Vorgehensweise: Installieren von primären Interopassemblys für Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Vorgehensweise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Gewusst wie: Installieren von primären Interop-Assemblys in Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551494"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986065"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Einstieg (Office-Entwicklung in Visual Studio)
   Dieser Abschnitt enthält Themen, anhand derer Sie die ersten Schritte mit Microsoft Office Developer Tools in Visual Studio ausführen können.
@@ -88,4 +88,4 @@ ms.locfileid: "69551494"
 
  Enthält Informationen zum Bereitstellen von Office-Projektmappen für Benutzer und beschreibt wichtige Aspekte, die beim Auswählen der Bereitstellungsmethode und beim Festlegen der Sicherheitseinstellungen zu berücksichtigen sind.
 
-- [Visual Studio-Tools für technische Artikel zu Office und Visual-](http://go.microsoft.com/fwlink/?LinkID=106640) Anleitungen Enthält Links zu Videos und technischen Artikeln zu Office-Projektmappen, die mit Visual Studio erstellt wurden.
+- [Visual Studio-Tools für technische Artikel zu Office und Visual-](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Anleitungen Enthält Links zu Videos und technischen Artikeln zu Office-Projektmappen, die mit Visual Studio erstellt wurden.

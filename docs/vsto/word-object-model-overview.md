@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b8ae7c56cf6f7cb20dd237c9106498a752e267
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254964"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985391"
 ---
 # <a name="word-object-model-overview"></a>Übersicht über das Word-Objektmodell
   Wenn Sie Word-Lösungen in Visual Studio entwickeln, interagieren Sie mit dem Word-Objektmodell. Dieses Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Word bereitgestellt und im Namespace <xref:Microsoft.Office.Interop.Word> definiert werden.
@@ -119,14 +119,14 @@ ms.locfileid: "71254964"
  Ausführliche Informationen zum Word-Objektmodell finden Sie in der Referenz für die primäre Interopassembly (PIA) und der VBA-Objektmodellreferenz (Visual Basic for Applications).
 
 ### <a name="primary-interop-assembly-reference"></a>Referenz zur primären Interopassembly
- In der Referenzdokumentation für die Word-PIA werden die Typen in der primären Interopassembly für Word beschrieben. Diese Dokumentation ist unter folgendem Speicherort verfügbar: [Word 2010 primärer interopassemblyverweis](http://go.microsoft.com/fwlink/?LinkId=189588).
+ In der Referenzdokumentation für die Word-PIA werden die Typen in der primären Interopassembly für Word beschrieben. Diese Dokumentation ist unter folgendem Speicherort verfügbar: [Word 2010 primärer interopassemblyverweis](../vsto/office-primary-interop-assemblies.md).
 
- Weitere Informationen zum Entwurf der Word-Pia, z. b. zu den Unterschieden zwischen Klassen und Schnittstellen in der Pia und zur Implementierung von Ereignissen in der Pia, finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop](http://go.microsoft.com/fwlink/?LinkId=189592)-Assemblys von Office.
+ Weitere Informationen zum Entwurf der Word-Pia, z. b. zu den Unterschieden zwischen Klassen und Schnittstellen in der Pia und zur Implementierung von Ereignissen in der Pia, finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop](/previous-versions/office/office-12/ms247299(v=office.12))-Assemblys von Office.
 
 ### <a name="vba-object-model-reference"></a>VBA-Objektmodell Referenz
- Die VBA-Objektmodellreferenz dokumentiert das Word-Objektmodell, das für VBA-Code (Visual Basic for Applications) zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Word 2010-Objektmodell Referenz](http://go.microsoft.com/fwlink/?LinkId=199772).
+ Die VBA-Objektmodellreferenz dokumentiert das Word-Objektmodell, das für VBA-Code (Visual Basic for Applications) zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Word 2010-Objektmodell Referenz](/office/vba/api/overview/Word/object-model).
 
- Alle Objekte und Elemente in der VBA-Objektmodellreferenz entsprechen Typen und Elementen in der Word-PIA. Das Document-Objekt in der VBA-Objektmodell Referenz entspricht z. b <xref:Microsoft.Office.Interop.Word.Document> . dem-Objekt in der Word-Pia. Obwohl die VBA-Objektmodellreferenz Codebeispiele für die meisten Eigenschaften, Methoden und Ereignisse enthält, müssen Sie den VBA-Code in dieser Referenz in Visual Basic oder Visual C# übersetzen, wenn Sie ihn in einem mit Visual Studio erstellten Word-Projekt verwenden möchten.
+ Alle Objekte und Elemente in der VBA-Objektmodellreferenz entsprechen Typen und Elementen in der Word-PIA. Das Document-Objekt in der VBA-Objektmodell Referenz entspricht z. b. dem <xref:Microsoft.Office.Interop.Word.Document>-Objekt in der Word-Pia. Obwohl die VBA-Objektmodellreferenz Codebeispiele für die meisten Eigenschaften, Methoden und Ereignisse enthält, müssen Sie den VBA-Code in dieser Referenz in Visual Basic oder Visual C# übersetzen, wenn Sie ihn in einem mit Visual Studio erstellten Word-Projekt verwenden möchten.
 
 ## <a name="see-also"></a>Siehe auch
 - [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)

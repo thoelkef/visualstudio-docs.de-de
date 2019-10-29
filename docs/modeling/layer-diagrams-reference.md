@@ -20,12 +20,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661492"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984075"
 ---
 # <a name="dependency-diagrams-reference"></a>Abhängigkeits Diagramme: Referenz
 
@@ -48,7 +48,7 @@ Verwenden Sie ein Abhängigkeits Diagramm, um die folgenden Aufgaben auszuführe
 
 - Untermauern der vorgesehenen Architektur während der Entwicklung und Wartung des Codes durch Einschließen von Validierung in Eincheck- und Buildvorgänge
 
-In diesem Thema werden die Elemente beschrieben, die Sie in einem Abhängigkeits Diagramm verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von Abhängigkeits Diagrammen finden Sie unter [Abhängigkeits Diagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu ebenenmustern finden Sie auf der [Seite Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+In diesem Thema werden die Elemente beschrieben, die Sie in einem Abhängigkeits Diagramm verwenden können. Ausführlichere Informationen zum Erstellen und Zeichnen von Abhängigkeits Diagrammen finden Sie unter [Abhängigkeits Diagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu ebenenmustern finden Sie auf der [Seite Patterns & Practices](https://archive.codeplex.com/?p=apparch).
 
 ## <a name="reading-dependency-diagrams"></a>Lesen von Abhängigkeits Diagrammen
 

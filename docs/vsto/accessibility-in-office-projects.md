@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6159cd2afc5788e12a836c138ddcc1ea967a5381
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255779"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986338"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
 
-Microsoft Visual Studio und Microsoft Office enthalten viele Barrierefreiheits Features, die es Ihnen ermöglichen, benutzerdefinierte Lösungen zu erstellen, die die Standardanforderungen für Barrierefreiheit erfüllen. Microsoft veröffentlicht Richtlinien für Barrierefreiheit im Web. Weitere Informationen finden Sie auf der [Website zur Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio und Microsoft Office enthalten viele Barrierefreiheits Features, die es Ihnen ermöglichen, benutzerdefinierte Lösungen zu erstellen, die die Standardanforderungen für Barrierefreiheit erfüllen. Microsoft veröffentlicht Richtlinien für Barrierefreiheit im Web. Weitere Informationen finden Sie auf der [Website zur Barrierefreiheit](https://www.microsoft.com/accessibility/).
 
 In den meisten Fällen erfüllen Office-Projekte in Visual Studio Barrierefreiheits Standards oder machen Eigenschaften verfügbar, die Sie festlegen können, um Ihre Lösungen zugänglich zu machen. Allerdings gibt es einige Features mit eingeschränkter Barrierefreiheit.
 

@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup-Schnittstelle | Microsoft-Dokumentation
+title: Iwebappdiagnosticssetup-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,23 +13,23 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71d4501fff04b62abe392c6684a4a0551dea9ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9bb3905da6227b978bc27b96493500f8d6d2ff
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443662"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984543"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>IWebAppDiagnosticsSetup-Schnittstelle
-Diese Schnittstelle wird von einer PDM-Debug-Anwendung zum Erstellen von COM-Objekte in den Prozess, der debuggt wird, und Aktivieren der Diagnose für Web implementiert. Wenn das PDM Anwendung Objekt implementiert Debuggen [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), Internet Explorer ruft [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) auf, nachdem es erstellt wurde, und übergibt einen Verweis auf [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Ruft eine WWA-Anwendung [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) und übergibt die WWA Schnittstelle IWebApplicationHost. Wenn [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) mit einem Wert ungleich NULL aufgerufen wurde [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) "Wahr" zurückgegeben. Wenn nicht der Fall, gibt "false" zurück und Aufrufe von [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) fehl.  
+Diese Schnittstelle wird von einer PDM-Debuganwendung implementiert, um COM-Objekte in dem Prozess zu erstellen, der debuggt wird, und um die webdiagnose zu aktivieren. Wenn das PDM-debuganwendungsobjekt [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite)implementiert, ruft Internet Explorer [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) darauf auf, nachdem es erstellt wurde, und übergibt einen Verweis auf [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)). Eine WWA-Anwendung ruft [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) auf und übergibt stattdessen die WWA-Schnittstelle iwebapplicationhost. Wenn [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) mit einem nicht-NULL-Wert aufgerufen wurde, gibt [iwebappdiagnosticssetup::D iagnosticssupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) "true" zurück. Wenn dies nicht der Fall ist, wird false zurückgegeben, und Aufrufe von [iwebappdiagnosticssetup:: deateobjectwithsiteatwebapp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) schlagen fehl.  
   
 > [!IMPORTANT]
-> `IWebAppDiagnosticsSetup` wird von PDM V11. 0 und höher implementiert. Gefunden in activdbg100.h.  
+> `IWebAppDiagnosticsSetup` wird von PDM v 11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="methods"></a>Methoden  
- Diese Schnittstelle legt die folgenden Methoden.  
+ Diese Schnittstelle stellt die folgenden Methoden zur Verfügung.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Ruft ab, der Textdokumente, die vom angegebenen Filter ausgeblendet sind.|  
+|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Ruft die Textdokumente ab, die durch den angegebenen Filter ausgeblendet sind.|  
 |[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)|Bestimmt, ob das angegebene Dokument zu einem der untergeordneten Knoten dieses Knotens gehört.|

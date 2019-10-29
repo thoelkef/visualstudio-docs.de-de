@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: da10833f8340d5308321038bb0500ca8408b40bb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551768"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985765"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Verwaltete Referenz (Office-Entwicklung in Visual Studio)
-  Dieser Abschnitt enthält eine API-Referenzdokumentation zu Namespaces und Typen, die in Office-Projekten für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]verwendet werden. Eine API-Referenz Dokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die auf .NET Framework 3,5 abzielen, finden Sie im folgenden Referenz Abschnitt in [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)der Visual Studio-Dokumentation:.
+  Dieser Abschnitt enthält eine API-Referenzdokumentation zu Namespaces und Typen, die in Office-Projekten für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](includes/net-v45-md.md)]verwendet werden. Eine API-Referenz Dokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die auf .NET Framework 3,5 abzielen, finden Sie im folgenden Referenz Abschnitt in der Visual Studio-Dokumentation: [verwaltete Referenz (Office-Entwicklung in Visual Studio). )](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -64,14 +64,14 @@ ms.locfileid: "69551768"
 
  <xref:Microsoft.VisualStudio.Tools.Applications.Runtime>
 
- Enthält die meisten Ausnahmen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ausgelöst werden können, mehrere Klassen, mit denen Daten in Anpassungen auf Dokumentebene zwischengespeichert werden können, und andere APIs, die Teil der Visual Studio-Infrastruktur sind.
+ Enthält die meisten Ausnahmen, die von [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)]ausgelöst werden können, mehrere Klassen, mit denen Daten in Anpassungen auf Dokumentebene zwischengespeichert werden können, und andere APIs, die Teil der Visual Studio-Infrastruktur sind.
 
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>
 
  Enthält MSBuild-Aufgabenklassen, die zum Erstellen von Office-Projekten verwendet werden.
 
 ## <a name="see-also"></a>Siehe auch
-- [Übersicht über Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
-- [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
+- [Übersicht über Visual Studio-Tools für Office-Laufzeit](visual-studio-tools-for-office-runtime-overview.md)
+- [Einstieg in &#40;die Office-Entwicklung in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](office-development-samples-and-walkthroughs.md)
+- [Entwerfen und Erstellen von Office-Lösungen](designing-and-creating-office-solutions.md)

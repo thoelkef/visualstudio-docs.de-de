@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 18d2364794eef2177c4cfc607ecc6da38143ba54
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a353ac12f7477bf40393f83de5fe41ede4d9aa95
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911873"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024584"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio
 
@@ -49,7 +49,7 @@ Um einen Clouddienst über einen Remotecomputer zu debuggen, müssen Sie diese F
 Wenn Sie das Remotedebuggen für einen Clouddienst aktivieren, führt dies nicht zu einer Leistungsverschlechterung oder zu zusätzlichen Gebühren. Verwenden Sie das Remotedebuggen nicht für einen Produktionsdienst, da sich dies negativ auf Clients auswirken kann, die den Dienst nutzen.
 
 > [!NOTE]
-> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace**können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) und [Visual Studio und Verwenden von IntelliTrace](/debugger/intellitrace).
+> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace**können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) und [Visual Studio und Verwenden von IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>So aktivieren Sie das Remotedebuggen für einen Clouddienst
 

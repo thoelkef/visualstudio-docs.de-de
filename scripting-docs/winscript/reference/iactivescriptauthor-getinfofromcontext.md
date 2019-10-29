@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b8b9ad4677d580d495c72866be57712476d6a9c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576210"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985326"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 Gibt Typinformationen und Anker Positionen für ein bestimmtes Zeichen in einem Codeblock zurück. Dies stellt Informationen für Member-IntelliSense, globale Listen und Parameter Tipps bereit.  
@@ -103,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Iprovidemultipleclassinfo-Schnittstelle](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
+ [Iprovidemultipleclassinfo-Schnittstelle](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
  [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)

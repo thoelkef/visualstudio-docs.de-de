@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748213"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985226"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturieren der Modellierungslösung
 
@@ -30,7 +30,7 @@ In einem mittleren oder großen Projekt basiert die Struktur des Teams auf der S
 
 ### <a name="to-divide-an-application-into-layers"></a>So unterteilen Sie eine Anwendung in Ebenen
 
-1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. Eine Reihe von gängigen Architekturen finden Sie im [Leitfaden zur Microsoft-Anwendungsarchitektur unter Anwendungs-archetypes](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Lassen Sie die Struktur Ihrer Projektmappen auf der Struktur der Anwendung basieren, etwa einer Webanwendung, Dienstanwendung oder Desktopanwendung. Eine Reihe von gängigen Architekturen finden Sie im [Leitfaden zur Microsoft-Anwendungsarchitektur unter Anwendungs-archetypes](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Erstellen Sie eine Visual Studio-Projekt Mappe, die wir als Architektur Lösung bezeichnen. Diese Projektmappe wird zur Erstellung des allgemeinen Entwurfs des Systems verwendet. Es enthält Modelle, jedoch keinen Code.
 
@@ -92,7 +92,7 @@ Wenn Sie beispielsweise häufig Projektmappen mit Präsentations-, Geschäfts- u
 
 ### <a name="to-create-a-solution-template"></a>So erstellen Sie ein Projektmappenvorlage
 
-1. [Herunterladen und Installieren des Assistenten zum Exportieren von Vorlagen](http://go.microsoft.com/fwlink/?LinkId=196686)
+1. [Herunterladen und Installieren des Assistenten zum Exportieren von Vorlagen](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)
 
 2. Erstellen Sie die Projektmappenstruktur, die Sie als Ausgangspunkt für zukünftige Projekte verwenden möchten.
 

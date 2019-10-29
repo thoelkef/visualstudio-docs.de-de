@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank'
+title: 'Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,52 +14,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967760"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985859"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank
 
-Sie können Daten in Office-Projekten auf Dokumentebene auf die gleiche Weise zugreifen, dass Sie Daten in Windows Forms-Projekte zugreifen. Sie verwenden dieselben Tools und denselben Code, um die Daten in die Projektmappe einzufügen, und können außerdem Windows Forms-Steuerelemente zum Anzeigen der Daten verwenden. Darüber hinaus können Sie die so genannten Hoststeuerelemente sind systemeigene Objekte in Microsoft Office Excel, die mit Ereignissen und Datenbindung Funktion erweitert wurden nutzen. Weitere Informationen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
+Sie können auf Daten in Office-Projekten auf Dokument Ebene auf die gleiche Weise zugreifen, wie Sie auf Daten in Windows Forms Projekten zugreifen. Sie verwenden dieselben Tools und denselben Code, um die Daten in die Projektmappe einzufügen, und können außerdem Windows Forms-Steuerelemente zum Anzeigen der Daten verwenden. Außerdem können Sie die Steuerelemente, die als Host Steuerelemente bezeichnet werden, als systemeigene Objekte in Microsoft Office Excel nutzen, die mit Ereignissen und Daten Bindungsfunktionen erweitert wurden. Weitere Informationen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-Das folgende Beispiel zeigt, wie Sie datengebundene Steuerelemente in Projekten auf Dokumentebene mithilfe eines Designers hinzufügen. Ein Beispiel für datengebundene Steuerelemente in Projekten auf Anwendungsebene zur Laufzeit hinzufügen, finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
+Das folgende Beispiel zeigt, wie Sie datengebundene Steuerelemente in Projekten auf Dokumentebene mithilfe eines Designers hinzufügen. Ein Beispiel zum Hinzufügen von Daten gebundenen Steuerelementen in Projekten auf Anwendungsebene zur Laufzeit finden Sie unter Exemplarische Vorgehensweise [: komplexe Datenbindung in einem VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
 
-![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Übertragen von Daten in ein Excel-Arbeitsblatt? ](http://go.microsoft.com/fwlink/?LinkID=130277), und [Gewusst wie: Verwenden von Datenbankdaten in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
+## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Hinzufügen eines Daten gebundenen Steuer Elements zu einem Arbeitsblatt zur Entwurfszeit
 
-## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Hinzufügen eines datengebundenen Steuerelements zu einem Arbeitsblatt zur Entwurfszeit
+### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>So füllen Sie ein Arbeitsblatt mit Daten aus einer Datenbank auf
 
-### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Um ein Arbeitsblatt mit Daten aus einer Datenbank aufzufüllen.
+1. Öffnen Sie ein Excel-Projekt auf Dokument Ebene in Visual Studio, auf dem das Arbeitsblatt im Designer geöffnet ist.
 
-1. Öffnen Sie ein Excel-Projekt auf Dokumentebene in Visual Studio, mit dem Arbeitsblatt im Designer geöffnet.
+2. Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Datenquelle. Weitere Informationen finden Sie unter [Hinzufügen neuer Verbindungen](../data-tools/add-new-connections.md).
 
-2. Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Datenquelle. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).
-
-3. Ziehen Sie das Feld oder die Tabelle aus der **Datenquellen** in das Arbeitsblatt.
+3. Ziehen Sie das gewünschte Feld oder die gewünschte Tabelle aus dem Fenster **Datenquellen** in das Arbeitsblatt.
 
 Eines der folgenden Steuerelemente wird auf dem Arbeitsblatt erstellt:
 
-- Wenn Sie ein Feld, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement auf dem Arbeitsblatt erstellt wird. Weitere Informationen finden Sie unter [NamedRange-Steuerelement](../vsto/namedrange-control.md).
+- Wenn Sie ein Feld ziehen, wird ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement auf dem Arbeitsblatt erstellt. Weitere Informationen finden Sie unter [Name Drange Control](../vsto/namedrange-control.md).
 
-- Wenn Sie eine Tabelle, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement auf dem Arbeitsblatt erstellt wird. Weitere Informationen finden Sie unter [ListObject-Steuerelement](../vsto/listobject-control.md).
+- Wenn Sie eine Tabelle ziehen, wird ein <xref:Microsoft.Office.Tools.Excel.ListObject>-Steuerelement auf dem Arbeitsblatt erstellt. Weitere Informationen finden Sie unter [ListObject Control](../vsto/listobject-control.md).
 
-Sie können das Feld oder ein anderes Steuerelement hinzufügen, indem Sie die Tabelle auswählen der **Datenquellen** Fenster, und klicken Sie dann ein anderes Steuerelement auswählen, aus der Dropdown-Liste.
+Sie können ein anderes Steuerelement hinzufügen, indem Sie die Tabelle oder das Feld im **Datenquellen** Fenster auswählen und dann in der Dropdown Liste ein anderes Steuerelement auswählen.
 
 ## <a name="objects-in-the-project"></a>Objekte im Projekt
 
 Neben dem Steuerelement werden die folgenden datenbezogenen Objekte dem Projekt automatisch hinzugefügt:
 
-- Ein typisiertes Dataset, das die Datentabellen kapselt, mit denen Sie in der Datenbank eine Verbindung hergestellt haben. Weitere Informationen finden Sie unter [datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Ein typisiertes Dataset, das die Datentabellen kapselt, mit denen Sie in der Datenbank eine Verbindung hergestellt haben. Weitere Informationen finden Sie unter [DataSet-Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 - Eine <xref:System.Windows.Forms.BindingSource>, durch die das Steuerelement mit dem typisierten Dataset verbunden wird. Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
-- Einen TableAdapter, der das typisierte Dataset mit der Datenbank verbunden. Weitere Informationen finden Sie unter [Übersicht über TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- Ein TableAdapter, der das typisierte DataSet mit der Datenbank verbindet. Weitere Informationen finden Sie unter [Übersicht über TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-- Einen TableAdapterManager, dient zum Koordinieren von Tabellenadaptern im Dataset um hierarchische Updates zu aktivieren. Weitere Informationen finden Sie unter [hierarchische Aktualisierung](../data-tools/hierarchical-update.md) und [TableAdapterManager-Verweis](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Ein TableAdapterManager, der zum Koordinieren von Tabellen Adaptern im DataSet verwendet wird, um hierarchische Updates zu ermöglichen. Weitere Informationen finden Sie unter [hierarchische Update](../data-tools/hierarchical-update.md) -und [TableAdapterManager-Referenz](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Beim Ausführen des Projekts zeigt das Steuerelement den ersten Datensatz in der Datenquelle an. Sie können die <xref:System.Windows.Forms.BindingSource> verwenden, um Benutzern einen Bildlauf in den Datensätzen zu ermöglichen.
 
@@ -67,16 +65,14 @@ Beim Ausführen des Projekts zeigt das Steuerelement den ersten Datensatz in der
 
 - Verwenden Sie <xref:System.Windows.Forms.BindingSource>-Methoden wie <xref:System.Windows.Forms.BindingSource.MoveNext%2A> und <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Informationen dazu, wie Sie Updates für das typisierte Dataset und die Datenbank zu senden, finden Sie unter [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Informationen zum Senden von Updates an das typisierte DataSet und die Datenbank finden Sie unter Gewusst [wie: Aktualisieren einer Datenquelle mit Daten aus einem Host Steuer](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)Element.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Gewusst wie: Übertragen von Daten in ein Excel-Arbeitsblatt](http://go.microsoft.com/fwlink/?LinkID=130277)
-- [Gewusst wie: Verwenden von Datenbankdaten in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

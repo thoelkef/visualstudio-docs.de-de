@@ -38,27 +38,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4cecbaf834185e66d7d584d58d2abb4dbdf46f9e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445597"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986178"
 ---
 # <a name="content-controls"></a>ContentControl-Elemente
   Inhaltssteuerelemente bieten Ihnen eine Möglichkeit, Dokumente und Vorlagen zu entwerfen, die die folgenden Features aufweisen:
 
 - Eine Benutzeroberfläche (UI), die über verwaltete Eingaben wie ein Formular verfügt.
 
-- Einschränkungen, die verhindern, dass Benutzer geschützte Abschnitte des Dokuments oder der Vorlage bearbeiten können. Weitere Informationen finden Sie unter [Teilen von Dokumenten mithilfe von Inhaltssteuerelementen schützen](#Protection).
+- Einschränkungen, die verhindern, dass Benutzer geschützte Abschnitte des Dokuments oder der Vorlage bearbeiten können. Weitere Informationen finden Sie unter [Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen](#Protection).
 
-- Datenbindung an eine Datenquelle. Weitere Informationen finden Sie unter [Binden von Daten an Inhaltssteuerelemente](#DataBinding).
+- Datenbindung an eine Datenquelle. Weitere Informationen finden Sie unter [Binden von Daten an Inhalts Steuerelemente](#DataBinding).
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Binden von Daten an Word 2007-Inhaltssteuerelemente mit Visual Studio Tools for Office System (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).
+  ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden Sie unter [Binden von Daten an Word 2007-Inhalts Steuerelemente mithilfe von Visual Studio-Tools für das Office-System (3,0)](/previous-versions/office/developer/office-2007/bb967663(v=office.12)).
 
-## <a name="overview-of-content-controls"></a>Übersicht über Inhaltssteuerelemente
+## <a name="overview-of-content-controls"></a>Übersicht über Inhalts Steuerelemente
  Inhaltssteuerelemente stellen eine Benutzeroberfläche bereit, die für Benutzereingaben und Druck optimiert ist. Wenn Sie einem Dokument ein Inhaltssteuerelement hinzufügen, wird das Steuerelement durch einen Rahmen, einen Titel und temporären Text identifiziert, der Anweisungen für den Benutzer bereitstellen kann. Der Rahmen und der Titel des Steuerelements werden nicht in gedruckten Versionen des Dokuments angezeigt.
 
  Wenn Sie z. B. möchten, dass der Benutzer ein Datum in einem Abschnitt Ihres Dokuments eingibt, können Sie dem Dokument ein Datumsauswahl-Inhaltssteuerelement hinzufügen. Wenn Benutzer auf das Steuerelement klicken, wird die Datumsauswahl-Standardbenutzeroberfläche angezeigt. Sie können die Eigenschaften des Steuerelements auch so festlegen, dass der regionale Kalender festgelegt wird, der angezeigt wird, und Sie können das Datumsformat angeben. Nachdem der Benutzer ein Datum ausgewählt hat, wird die Benutzeroberfläche des Steuerelements ausgeblendet, und nur das Datum wird angezeigt, wenn der Benutzer das Dokument druckt.
@@ -69,21 +69,21 @@ ms.locfileid: "63445597"
 
 - Binden von Teilen eines Dokuments oder einer Vorlage an Daten. Sie können Inhaltssteuerelementen an Datenbankfelder, verwaltete Objekte in [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], XML-Elemente, die im Dokument gespeichert sind, und andere Datenquellen binden.
 
-  In Projekten auf Dokumentebene können Sie dem Dokument Inhaltssteuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit Inhaltssteuerelemente hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
+  In Projekten auf Dokumentebene können Sie dem Dokument Inhaltssteuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit Inhaltssteuerelemente hinzufügen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 > [!NOTE]
-> Sie können Inhaltssteuerelemente nur in Dokumenten verwenden, die im Open XML-Format gespeichert werden. Können keine ContentControl-Elemente in Dokumenten, die in das Word 97-2003-Dokument gespeichert werden (*.doc*) Format.
+> Inhalts Steuerelemente können nur in Dokumenten verwendet werden, die im Open XML-Format gespeichert werden. Inhalts Steuerelemente können nicht in Dokumenten verwendet werden, die im Word 97-2003-Dokumentformat (*doc*) gespeichert sind.
 
-## <a name="types-of-content-controls"></a>Typen von Inhaltssteuerelementen
- Es gibt neun verschiedene Typen von Inhaltssteuerelementen, die Sie Dokumenten hinzufügen können. Die meisten der Inhaltssteuerelemente besitzen einen entsprechenden Typ im Namespace <xref:Microsoft.Office.Tools.Word>. Sie können auch einen generischen Namespace <xref:Microsoft.Office.Tools.Word.ContentControl> verwenden, der eines der verfügbaren Inhaltssteuerelemente darstellen kann. Eine exemplarische Vorgehensweise, die zeigt, wie die einzelnen verfügbaren Inhaltssteuerelemente verwendet werden, finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie eine Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
+## <a name="types-of-content-controls"></a>Typen von Inhalts Steuerelementen
+ Es gibt neun verschiedene Typen von Inhaltssteuerelementen, die Sie Dokumenten hinzufügen können. Die meisten der Inhaltssteuerelemente besitzen einen entsprechenden Typ im Namespace <xref:Microsoft.Office.Tools.Word>. Sie können auch einen generischen Namespace <xref:Microsoft.Office.Tools.Word.ContentControl> verwenden, der eines der verfügbaren Inhaltssteuerelemente darstellen kann. Eine exemplarische Vorgehensweise, die die Verwendung der einzelnen verfügbaren Inhalts Steuerelemente veranschaulicht, finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
 
-### <a name="build-block-gallery"></a>Erstellen Sie die Block-Katalog
- Ein Bausteinkatalog ermöglicht Benutzern die Auswahl aus einer Liste von *Dokumentbausteinen* in ein Dokument eingefügt. Ein Dokumentbaustein ist ein Inhaltselement, das erstellt wurde, um mehrere Male verwendet zu werden, z. B. eine allgemeine Titelseite, eine formatierte Tabelle oder ein Header . Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>-Typ. Weitere Informationen zu Bausteinen finden Sie unter [Neuigkeiten für Entwickler in Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).
+### <a name="build-block-gallery"></a>Build Block Gallery
+ Mithilfe einer Baustein Galerie können Benutzer aus einer Liste von *Dokument Bausteinen* auswählen, die in ein Dokument eingefügt werden sollen. Ein Dokumentbaustein ist ein Inhaltselement, das erstellt wurde, um mehrere Male verwendet zu werden, z. B. eine allgemeine Titelseite, eine formatierte Tabelle oder ein Header . Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>-Typ. Weitere Informationen zu Bausteine finden Sie unter [What es New for Developers in Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).
 
 ### <a name="check-box"></a>Kontrollkästchen
  Ein Kontrollkästchen stellt eine Benutzeroberfläche zur Verfügung, die einen binären Zustand darstellt: aktiviert oder deaktiviert.
 
- Im Gegensatz zu anderen Typen von Inhaltssteuerelementen stellt die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] keinen bestimmten Typ bereit, der ein Kontrollkästchen-Inhaltssteuerelement darstellt. Es gibt also keinen `CheckBoxContentControl`-Typ. Sie können jedoch trotzdem ein Kontrollkästchen-Inhaltssteuerelement erstellen, indem Sie ein generisches <xref:Microsoft.Office.Tools.Word.ContentControl> einem Dokument programmgesteuert hinzufügen. Weitere Informationen finden Sie unter [Kontrollkästchen-Inhaltssteuerelemente in Word-Projekten](#checkbox).
+ Im Gegensatz zu anderen Typen von Inhaltssteuerelementen stellt die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] keinen bestimmten Typ bereit, der ein Kontrollkästchen-Inhaltssteuerelement darstellt. Es gibt also keinen `CheckBoxContentControl`-Typ. Sie können jedoch trotzdem ein Kontrollkästchen-Inhaltssteuerelement erstellen, indem Sie ein generisches <xref:Microsoft.Office.Tools.Word.ContentControl> einem Dokument programmgesteuert hinzufügen. Weitere Informationen finden Sie unter [Kontrollkästchen-Inhalts Steuerelemente in Word-Projekten](#checkbox).
 
 ### <a name="combo-box"></a>Kombinationsfeld
  Ein Kombinationsfeld zeigt eine Liste von Elementen an, die Benutzer auswählen können. Im Gegensatz zu einer Dropdownliste ermöglicht das Kombinationsfeld das Hinzufügen eigener Elemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>-Typ.
@@ -100,64 +100,64 @@ ms.locfileid: "63445597"
 ### <a name="picture"></a>Picture
  Ein Bildsteuerelement zeigt ein Bild an. Sie können das Bild zur Entwurfszeit oder zur Laufzeit angeben, oder Benutzer können auf dieses Steuerelement klicken, um ein Bild auszuwählen, das in das Dokument eingefügt werden soll. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.PictureContentControl>-Typ.
 
-### <a name="rich-text"></a>Rich-text
+### <a name="rich-text"></a>Rich-Text
  Ein Rich-Text-Steuerelement enthält Text oder andere Elemente, z. B. Tabellen, Bilder oder andere Inhaltssteuerelemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Typ.
 
 ### <a name="plain-text"></a>Nur-Text
  Ein Nur-Text-Steuerelement enthält Text. Ein Nur-Text-Steuerelement kann keine anderen Elemente (z. B. Tabellen, Bilder oder andere Inhaltssteuerelemente) enthalten. Darüber hinaus weist der gesamte Text in einem Nur-Text-Steuerelement die gleiche Formatierung auf. Wenn Sie z. B. ein Wort in einem Satz kursiv formatieren, das sich in einem Nur-Text-Steuerelement befindet, wird der gesamte Text im Steuerelement kursiv formatiert. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>-Typ.
 
-### <a name="generic-content-control"></a>Generisches Inhaltssteuerelement
+### <a name="generic-content-control"></a>Allgemeines Inhalts Steuerelement
  Ein generisches Inhaltssteuerelement ist ein <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekt, das jeden der verfügbaren Typen von Steuerelementen darstellen kann. Sie können ein <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekt so ändern, dass es sich wie ein anderer Typ von Inhaltssteuerelement verhält, indem Sie die Eigenschaft <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A> verwenden. Wenn Sie z. B. ein <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekt erstellen, das ein Nur-Text-Steuerelement darstellt, können Sie dieses zur Laufzeit so ändern, dass es sich wie ein Kombinationsfeld verhält.
 
- Sie können <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekte nur zur Laufzeit erstellen, nicht zur Entwurfszeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
+ Sie können <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekte nur zur Laufzeit erstellen, nicht zur Entwurfszeit. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
 
-## <a name="common-features-of-content-controls"></a>Allgemeine Funktionen von Inhaltssteuerelementen
+## <a name="common-features-of-content-controls"></a>Allgemeine Features von Inhalts Steuerelementen
  Die meisten Inhaltssteuerelemente verwenden eine Sammlung von Elementen gemeinsam, die Sie verwenden können, um allgemeine Aufgaben auszuführen. In der folgenden Tabelle werden einige der Aufgaben beschrieben, die Sie mithilfe dieser Elemente ausführen können.
 
 |Aufgabe:|Vorgehensweise:|
 |--------------------|--------------|
-|Abrufen oder Festlegen des Texts, der im Steuerelement angezeigt wird.|Verwenden der **Text** Eigenschaft. **Hinweis**:  Die Typen <xref:Microsoft.Office.Tools.Word.PictureContentControl> und <xref:Microsoft.Office.Tools.Word.ContentControl> verfügen nicht über diese Eigenschaft.|
-|Abrufen oder Festlegen des temporären Texts, der im Steuerelement angezeigt wird, bis ein Benutzer das Steuerelement bearbeitet, das Steuerelement mit Daten aus einer Datenquelle aufgefüllt wird oder der Inhalt des Steuerelements gelöscht wird.|Verwenden der **PlaceholderText** Eigenschaft. **Hinweis**:  Der <xref:Microsoft.Office.Tools.Word.PictureContentControl>-Typ verfügt nicht über diese Eigenschaft.|
-|Abrufen oder Festlegen des Titels, der im Rahmen des Inhaltssteuerelements angezeigt wird, wenn der Benutzer darauf klickt.|Verwenden der **Titel** Eigenschaft.|
-|Automatisches Entfernen des Steuerelement aus dem Dokument, nachdem der Benutzer das Steuerelement bearbeitet hat. (Der Text im Steuerelement verbleibt im Dokument.)|Verwenden der **temporäre** Eigenschaft.|
+|Abrufen oder Festlegen des Texts, der im Steuerelement angezeigt wird.|Verwenden Sie die **Text** -Eigenschaft. **Hinweis:**  Die <xref:Microsoft.Office.Tools.Word.PictureContentControl>-und <xref:Microsoft.Office.Tools.Word.ContentControl> Typen haben diese Eigenschaft nicht.|
+|Abrufen oder Festlegen des temporären Texts, der im Steuerelement angezeigt wird, bis ein Benutzer das Steuerelement bearbeitet, das Steuerelement mit Daten aus einer Datenquelle aufgefüllt wird oder der Inhalt des Steuerelements gelöscht wird.|Verwenden Sie die **PlaceholderText** -Eigenschaft. **Hinweis:**  Der <xref:Microsoft.Office.Tools.Word.PictureContentControl> Typ verfügt nicht über diese Eigenschaft.|
+|Abrufen oder Festlegen des Titels, der im Rahmen des Inhaltssteuerelements angezeigt wird, wenn der Benutzer darauf klickt.|Verwenden Sie die **Title** -Eigenschaft.|
+|Automatisches Entfernen des Steuerelement aus dem Dokument, nachdem der Benutzer das Steuerelement bearbeitet hat. (Der Text im Steuerelement verbleibt im Dokument.)|Verwenden Sie die **temporäre** -Eigenschaft.|
 |Ausführen von Code, wenn der Benutzer im Inhaltssteuerelement klickt oder wenn der Cursor programmgesteuert in das Inhaltssteuerelement verschoben wird.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering>-Ereignisses des Steuerelements.|
 |Ausführen von Code, wenn der Benutzer außerhalb des Inhaltssteuerelements klickt oder der Cursor programmgesteuert aus dem Inhaltssteuerelement verschoben wird.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting>-Ereignisses des Steuerelements.|
 |Ausführen von Code, nachdem das Inhaltssteuerelement als Ergebnis eines Vorgangs "Wiederholen" oder "Rückgängig" dem Dokument hinzugefügt wurde.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>-Ereignisses des Steuerelements.|
 |Ausführen von Code, kurz bevor das Inhaltssteuerelement aus dem Dokument gelöscht wird.|Behandeln des <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting>-Ereignisses des Steuerelements.|
 
-## <a name="Protection"></a> Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen
+## <a name="Protection"></a>Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen
  Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie dass Benutzer den Inhalt in diesem Teil des Dokuments ändern oder löschen können. Es gibt mehrere Möglichkeiten, wie Sie Teile eines Dokuments mithilfe von Inhaltssteuerelementen schützen können.
 
  Wenn sich der Bereich, den Sie schützen möchten, innerhalb eines Inhaltssteuerelements befindet, können Sie Eigenschaften des Inhaltssteuerelements verwenden, um zu verhindern, dass Benutzer das Steuerelement bearbeiten oder löschen können:
 
-- Die **LockContents** Eigenschaft verhindert, dass Benutzer den Inhalt bearbeiten.
+- Mit der **lockcontent** -Eigenschaft wird verhindert, dass Benutzer den Inhalt bearbeiten.
 
-- Die **LockContentControl** Eigenschaft verhindert, dass Benutzer das Steuerelement löschen.
+- Die **LockContentControl** -Eigenschaft verhindert, dass Benutzer das Steuerelement löschen.
 
   Wenn sich der Bereich, den Sie schützen möchten, nicht innerhalb eines Inhaltssteuerelements befindet, oder wenn Sie einen Bereich schützen möchten, der Inhaltssteuerelemente und andere Inhaltstypen enthält, können Sie den gesamten Bereich in einem <xref:Microsoft.Office.Tools.Word.GroupContentControl> positionieren. Im Gegensatz zu anderen Inhaltssteuerelementen stellt ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> keine Benutzeroberfläche zur Verfügung, die für den Benutzer sichtbar ist. Sein einziger Zweck besteht darin, einen Bereich zu definieren, den Benutzern nicht bearbeiten können.
 
 > [!NOTE]
-> Wenn Sie ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> erstellen, das eingebettete Inhaltssteuerelemente enthält, sind die eingebetteten Inhaltssteuerelemente nicht automatisch geschützt. Verwenden Sie die **LockContents** -Eigenschaft jedes eingebetteten Steuerelements verwenden, um zu verhindern, dass Benutzer ihren Inhalt zu bearbeiten.
+> Wenn Sie ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> erstellen, das eingebettete Inhaltssteuerelemente enthält, sind die eingebetteten Inhaltssteuerelemente nicht automatisch geschützt. Sie müssen die **lockcontent** -Eigenschaft jedes eingebetteten Steuer Elements verwenden, um zu verhindern, dass Benutzer ihren Inhalt bearbeiten.
 
- Weitere Informationen zur Verwendung von Inhaltssteuerelementen zum Schützen von Teilen von Dokumenten finden Sie unter [Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
+ Weitere Informationen zur Verwendung von Inhalts Steuerelementen zum Schützen von Teilen von Dokumenten finden Sie unter Gewusst [wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-## <a name="DataBinding"></a> Binden von Daten an Inhaltssteuerelemente
+## <a name="DataBinding"></a>Binden von Daten an Inhalts Steuerelemente
  Sie können Daten in Dokumenten anzeigen, indem Sie ein Inhaltssteuerelement an eine Datenquelle binden. Wenn die Datenquelle aktualisiert wird, spiegelt das Inhaltssteuerelement die Änderungen. Sie können Änderungen auch in der Datenquelle speichern.
 
  Inhaltssteuerelemente stellen die folgenden Datenbindungsoptionen zur Verfügung:
 
 - Sie können Inhaltssteuerelemente an Datenbankfelder oder verwaltete Objekte binden, indem Sie das gleiche Datenbindungsmodell wie Windows Forms verwenden.
 
-- Sie können Inhaltssteuerelemente an Elemente im XML-Elemente binden (auch als *benutzerdefinierte XML-Elemente*), die im Dokument eingebettet sind.
+- Sie können Inhalts Steuerelemente an Elemente in XML-Elementen (auch als *benutzerdefinierte XML-Teile*bezeichnet) binden, die im Dokument eingebettet sind.
 
-  Einen Überblick über das Binden von Hoststeuerelementen in Office-Projektmappen mit Daten finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).
+  Eine Übersicht über das Binden von Host Steuerelementen in Office-Projektmappen an Daten finden Sie unter [Binden von Daten an Steuerelemente in Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
-### <a name="use-the-windows-forms-data-binding-model"></a>Verwenden Sie das Windows Forms-Datenbindungsmodell verwendet
+### <a name="use-the-windows-forms-data-binding-model"></a>Verwenden des Windows Forms Daten Bindungs Modells
  Die meisten Inhaltssteuerelemente unterstützen das einfache Datenbindungsmodell, das Windows Forms verwendet. Einfache Datenbindung bedeutet, dass ein Steuerelement an ein einzelnes Datenelement gebunden ist, z. B. an einen Wert in einer Spalte einer Datentabelle. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
- In Projekten auf Dokumentebene können Sie Daten an Inhaltssteuerelemente binden, indem Sie mit der **Datenquellen** -Fensters im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen zur Vorgehensweise beim Hinzufügen von datengebundenen Inhaltssteuerelementen für Dokumente finden Sie unter [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md) und [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ In Projekten auf Dokument Ebene können Sie Daten an Inhalts Steuerelemente binden, indem Sie das Fenster **Datenquellen** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verwenden. Weitere Informationen zum Hinzufügen von Daten gebundenen Inhalts Steuerelementen zu Dokumenten finden Sie unter Gewusst [wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md) und Gewusst [wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
- Die folgende Tabelle listet die Inhaltssteuerelemente, die Sie für jeden Datentyp in binden können die **Datenquellen** Fenster.
+ In der folgenden Tabelle werden die Inhalts Steuerelemente aufgelistet, die Sie an jeden Datentyp im **Datenquellen** Fenster binden können.
 
 |Datentyp|Standard-Inhaltssteuerelement|Andere Inhaltssteuerelemente, die an diesen Datentyp gebunden werden können|
 |---------------|-----------------------------|----------------------------------------------------------------|
@@ -165,17 +165,17 @@ ms.locfileid: "63445597"
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.Drawing.Image><br /><br /> <xref:System.Byte>-Array|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Keiner|
 
- In Projekten auf Dokumentebene und VSTO-Add-In-Projekten können Sie ein Inhaltssteuerelement programmgesteuert an eine Datenquelle mithilfe der Methode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> der Eigenschaft <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> des Steuerelements binden. Wenn Sie dies tun, übergeben Sie in der Zeichenfolge **Text** auf die *PropertyName* Parameter der <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> Methode. Die **Text** -Eigenschaft ist die Standard-Datenbindungseigenschaft von Inhaltssteuerelementen.
+ In Projekten auf Dokumentebene und VSTO-Add-In-Projekten können Sie ein Inhaltssteuerelement programmgesteuert an eine Datenquelle mithilfe der Methode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> der Eigenschaft <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> des Steuerelements binden. Wenn Sie dies tun, übergeben Sie den Zeichen folgen **Text** an den *propertyName* -Parameter der <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>-Methode. Die **Text** -Eigenschaft ist die Standard Eigenschaft für die Datenbindung von Inhalts Steuerelementen.
 
- Inhaltssteuerelemente unterstützen auch bidirektionale Datenbindung, bei der Änderungen im Steuerelement in der Datenquelle aktualisiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+ Inhaltssteuerelemente unterstützen auch bidirektionale Datenbindung, bei der Änderungen im Steuerelement in der Datenquelle aktualisiert werden. Weitere Informationen finden Sie unter Gewusst [wie: Aktualisieren einer Datenquelle mit Daten eines Host Steuer](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)Elements.
 
 > [!NOTE]
 > Inhaltssteuerelemente unterstützen keine komplexe Datenbindung. Wenn Sie ein <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> oder <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> mithilfe des Windows Forms-Datenmodells an eine Datenquelle binden, wird Benutzern beim Klicken auf das Steuerelement nur ein einziger Wert angezeigt. Wenn Sie diese Steuerelemente an einen Satz von Datenwerten binden möchten, aus denen Benutzer auswählen können, können Sie diese Steuerelemente an Elemente in einem benutzerdefinierten XML-Abschnitt binden.
 
-### <a name="bind-content-controls-to-custom-xml-parts"></a>Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte
- Sie können einige Inhaltssteuerelemente an Elemente in benutzerdefinierten XML-Abschnitten binden, die im Dokument eingebettet sind. Weitere Informationen zu benutzerdefinierten XML-Elementen, finden Sie unter [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).
+### <a name="bind-content-controls-to-custom-xml-parts"></a>Binden von Inhalts Steuerelementen an benutzerdefinierte XML-Elemente
+ Sie können einige Inhaltssteuerelemente an Elemente in benutzerdefinierten XML-Abschnitten binden, die im Dokument eingebettet sind. Weitere Informationen zu benutzerdefinierten XML-Elementen finden Sie unter [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).
 
- Um ein Inhaltssteuerelement an ein Element in einem benutzerdefinierten XML-Abschnitt binden möchten, verwenden die **XMLMapping** -Eigenschaft des Steuerelements. Im folgenden Codebeispiel wird veranschaulicht, wie ein <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> an das Element `Price` unter dem Knoten `Product` in einem benutzerdefinierten XML-Abschnitt gebunden wird, der dem Dokument bereits hinzugefügt wurde.
+ Wenn Sie ein Inhalts Steuerelement an ein Element in einem benutzerdefinierten XML-Abschnitt binden möchten, verwenden Sie die **XmlMapping** -Eigenschaft des Steuer Elements. Im folgenden Codebeispiel wird veranschaulicht, wie ein <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> an das Element `Price` unter dem Knoten `Product` in einem benutzerdefinierten XML-Abschnitt gebunden wird, der dem Dokument bereits hinzugefügt wurde.
 
 ```vb
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
@@ -185,7 +185,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);
 ```
 
- Eine exemplarische Vorgehensweise, die zum Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Elemente im Detail veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+ Eine exemplarische Vorgehensweise, die das Binden von Inhalts Steuerelementen an benutzerdefinierte XML-Abschnitte veranschaulicht, finden Sie unter Exemplarische Vorgehensweise [: Binden von Inhalts Steuerelementen an benutzerdefinierte XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)-Elemente.
 
  Wenn Sie ein Inhaltssteuerelement an einen benutzerdefinierten XML-Abschnitt binden, wird die bidirektionale Datenbindung automatisch aktiviert. Wenn ein Benutzer Text im Steuerelement bearbeitet, werden die entsprechenden XML-Elemente automatisch aktualisiert. Wenn Elementwerte in den benutzerdefinierten XML-Abschnitten geändert werden, zeigen die Inhaltssteuerelemente, die an die XML-Elemente gebunden sind, auf ähnliche Weise die neuen Daten an.
 
@@ -201,7 +201,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
 - <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
 
-### <a name="data-bind-events-for-content-controls"></a>Ereignisse für Inhaltssteuerelemente Binden von Daten
+### <a name="data-bind-events-for-content-controls"></a>Daten Bindungs Ereignisse für Inhalts Steuerelemente
  Alle Inhaltssteuerelemente stellen einen Satz von Ereignissen bereit, die Sie behandeln können, um datenbezogene Aufgaben auszuführen. Sie können z. B. überprüfen, ob der Text in einem Steuerelement bestimmte Kriterien erfüllt, bevor die Datenquelle aktualisiert wird. Die folgende Tabelle listet die Inhaltssteuerelement-Ereignisse auf, die mit der Datenbindung zusammenhängen.
 
 |Aufgabe|event|
@@ -211,33 +211,33 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 |Ausführen Ihres eigenen Codes, um den Inhalt des Steuerelements gemäß benutzerdefinierten Kriterien zu überprüfen.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validating>|
 |Ausführen von Code, nachdem der Inhalt des Steuerelements erfolgreich überprüft wurde.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validated>|
 
-## <a name="limitations-of-content-controls"></a>Einschränkungen von Inhaltssteuerelementen
+## <a name="limitations-of-content-controls"></a>Einschränkungen von Inhalts Steuerelementen
  Wenn Sie Inhaltssteuerelemente in Office-Projekten verwenden, beachten Sie auf die folgenden Einschränkungen.
 
-### <a name="behavior-differences-between-design-time-and-runtime"></a>Unterschiede im Verhalten zwischen Entwurfs- und Laufzeit
+### <a name="behavior-differences-between-design-time-and-runtime"></a>Verhaltensunterschiede zwischen Entwurfszeit und Laufzeit
  Viele der Einschränkungen, die Microsoft Office Word-Inhaltssteuerelementen zur Laufzeit auferlegt, werden zur Entwurfszeit nicht erzwungen. Beim Entwerfen der Benutzeroberfläche einer Projektmappe auf Dokumentebene in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sollten Sie Inhaltssteuerelemente nur auf eine Weise ändern, die zur Laufzeit unterstützt wird.
 
  Wenn Sie ein Inhaltssteuerelement zur Entwurfszeit auf eine Weise ändern, die das Steuerelement zur Laufzeit nicht unterstützt, warnt Sie der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Designer nicht vor den nicht unterstützten Änderungen. Allerdings wird beim Debuggen oder Ausführen des Projekts oder beim Speichern und erneuten Öffnen des Projekts von Word eine Fehlermeldung angezeigt und die Berechtigung zum Reparieren des Dokuments angefordert. Wenn Sie das Dokument reparieren, entfernt Word alle nicht unterstützten Inhalte und Formatierungen aus dem Steuerelement.
 
  Word verhindert z. B. nicht, dass Sie einem <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> zur Entwurfszeit eine Tabelle hinzufügen. Da <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>-Objekte jedoch zur Laufzeit keine Tabellen enthalten dürfen, zeigt Word eine Fehlermeldung an, wenn das Dokument geöffnet wird.
 
- Beachten Sie außerdem, dass viele Eigenschaften, die das Verhalten von Inhaltssteuerelementen definieren, zur Entwurfszeit keine Auswirkungen besitzen. Wenn Sie festlegen, z. B. die **LockContents** Eigenschaft eines Inhaltssteuerelements, **"true"** zur Entwurfszeit können Sie weiterhin Text im Steuerelement im Bearbeiten der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Designer. Diese Eigenschaft verhindert nur, dass Benutzer das Steuerelement zur Laufzeit bearbeiten können.
+ Beachten Sie außerdem, dass viele Eigenschaften, die das Verhalten von Inhaltssteuerelementen definieren, zur Entwurfszeit keine Auswirkungen besitzen. Wenn Sie z. b. die **lockcontent** -Eigenschaft eines Content-Steuer Elements zur Entwurfszeit auf **true** festlegen, können Sie den Text im-Steuerelement im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Designer weiter bearbeiten. Diese Eigenschaft verhindert nur, dass Benutzer das Steuerelement zur Laufzeit bearbeiten können.
 
-### <a name="event-limitations"></a>Ereigniseinschränkungen
+### <a name="event-limitations"></a>Ereignis Einschränkungen
  Inhaltssteuerelemente stellen kein Ereignis zur Verfügung, das ausgelöst wird, wenn der Benutzer Text oder andere Elemente im Steuerelement ändert. Es ist z. B. kein Ereignis vorhanden, das ausgelöst wird, wenn ein Benutzer ein anderes Element in einem <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> oder <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> auswählt.
 
- Wenn Sie ermitteln möchten, wenn ein Benutzer den Inhalt eines Inhaltssteuerelements bearbeitet, können Sie das Steuerelement an einen benutzerdefinierten XML-Abschnitt binden und dann das Ereignis <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> behandeln. Dieses Ereignis wird ausgelöst, wenn der Benutzer den Inhalt eines Steuerelements ändert, das an einen benutzerdefinierten XML-Abschnitt gebunden ist. Eine exemplarische Vorgehensweise, die zeigt, wie Sie ein Inhaltssteuerelement an einen benutzerdefinierten XML-Abschnitt binden, finden Sie unter [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+ Wenn Sie ermitteln möchten, wenn ein Benutzer den Inhalt eines Inhaltssteuerelements bearbeitet, können Sie das Steuerelement an einen benutzerdefinierten XML-Abschnitt binden und dann das Ereignis <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> behandeln. Dieses Ereignis wird ausgelöst, wenn der Benutzer den Inhalt eines Steuerelements ändert, das an einen benutzerdefinierten XML-Abschnitt gebunden ist. Eine exemplarische Vorgehensweise, die veranschaulicht, wie ein Inhalts Steuerelement an einen benutzerdefinierten XML-Abschnitt gebunden wird, finden Sie unter Exemplarische Vorgehensweise [: Binden von Inhalts Steuerelementen an benutzerdefinierte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
 
-### <a name="checkbox"></a> Aktivieren Sie das Kontrollkästchen-Inhaltssteuerelemente in Word-Projekten
- Mit Word 2010 wurde eine neue Art von Steuerelement eingeführt, das ein Kontrollkästchen darstellt. Allerdings die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bietet keinen entsprechenden CheckBoxContentControl-Typ für die Sie in Office-Projekten verwenden. Verwenden Sie zum Erstellen eines Kontrollkästchen-Inhaltssteuerelements in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]- oder Word 2010-Projekt die Methode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> zum Erstellen eines <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekts, und übergeben Sie den Wert <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> an die Methode, um ein Kontrollkästchen-Inhaltssteuerelement anzugeben. Das folgende Codebeispiel veranschaulicht, wie Sie dabei vorgehen:
+### <a name="checkbox"></a>Kontrollkästchen-Inhalts Steuerelemente in Word-Projekten
+ Mit Word 2010 wurde eine neue Art von Steuerelement eingeführt, das ein Kontrollkästchen darstellt. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bietet jedoch keinen entsprechenden checkboxcontentcontrol-Typ, den Sie in Office-Projekten verwenden können. Verwenden Sie zum Erstellen eines Kontrollkästchen-Inhaltssteuerelements in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]- oder Word 2010-Projekt die Methode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> zum Erstellen eines <xref:Microsoft.Office.Tools.Word.ContentControl>-Objekts, und übergeben Sie den Wert <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> an die Methode, um ein Kontrollkästchen-Inhaltssteuerelement anzugeben. Das folgende Codebeispiel veranschaulicht, wie Sie dabei vorgehen:
 
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
 
 ## <a name="see-also"></a>Siehe auch
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
-- [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Exemplarische Vorgehensweise: Erstellen Sie eine Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
+- [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
 - [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Einschränkungen für programmgesteuerte Aufgaben von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

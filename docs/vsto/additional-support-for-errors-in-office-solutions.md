@@ -56,44 +56,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953189"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984627"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Zusätzliche Unterstützung für Fehler in Office-Projektmappen
 
-Sie können die folgenden Ressourcen verwenden, mit denen Sie Antworten auf Probleme, die auftreten, wie Sie Office-Projektmappen in Visual Studio erstellen.
+Mithilfe der folgenden Ressourcen können Sie Antworten auf Probleme finden, die beim Erstellen von Office-Projektmappen in Visual Studio auftreten.
 
-## <a name="troubleshoot-specific-errors"></a>Problembehandlung bei bestimmten Fehlern
+## <a name="troubleshoot-specific-errors"></a>Beheben von spezifischen Fehlern
 
-Unterstützung für einige häufige Fehler in Office-Projektmappen finden Sie unter den folgenden Themen:
+Unterstützung bei einigen häufigen Fehlern bei Office-Projektmappen finden Sie unter den folgenden Themen:
 
-- [Behandeln von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Beheben von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
 
-- [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)
+- [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
 
-- [Problembehandlung bei Office-projektmappenbereitstellung](../vsto/troubleshooting-office-solution-deployment.md)
+- [Problembehandlung bei der Bereitstellung von Office](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>Weitere Ressourcen
 
-[Visual Studio-Tools für Office-forum](http://go.microsoft.com/fwlink/?LinkId=149744)
+[Forum zu Visual Studio-Tools für Office](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
-Bietet ein Forum für Fragen zu den Office Developer Tools in Visual Studio.
+Bietet ein Forum für Fragen zu den Office-Entwicklertools in Visual Studio.
 
-[Microsoft Hilfe und support](http://go.microsoft.com/fwlink/?LinkID=108287)
+[Hilfe und Support von Microsoft](https://support.microsoft.com)
 
 Bietet Zugriff auf Knowledge Base-Artikel, Downloads und Updates, Support-WebCasts und andere Dienste.
 
-[Zusätzliche Ressourcen für die Entwicklung von Office-Projektmappen](../vsto/additional-resources-for-developing-office-solutions.md)
+[Zusätzliche Ressourcen zum Entwickeln von Office-Projektmappen](../vsto/additional-resources-for-developing-office-solutions.md)
 
-Enthält Links zu weiteren Ressourcen für Weitere Informationen zum Entwickeln von Office-Projektmappen und Office-Entwicklung mit Visual Studio.
+Enthält Links zu weiteren Ressourcen, um mehr über die Entwicklung von Office-Projektmappen und Office-Entwicklung mit Visual Studio zu erfahren.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Behandeln von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
-- [Problembehandlung bei Office-projektmappensicherheit](../vsto/troubleshooting-office-solution-security.md)
-- [Problembehandlung bei Office-projektmappenbereitstellung](../vsto/troubleshooting-office-solution-deployment.md)
-- [Zusätzliche Ressourcen für die Entwicklung von Office-Projektmappen](../vsto/additional-resources-for-developing-office-solutions.md)
+- [Beheben von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
+- [Problembehandlung bei der Bereitstellung von Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Zusätzliche Ressourcen zum Entwickeln von Office-Projektmappen](../vsto/additional-resources-for-developing-office-solutions.md)
