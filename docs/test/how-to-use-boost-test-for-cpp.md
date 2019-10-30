@@ -8,12 +8,12 @@ ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 966983fa15b60db33f11645b25561a74ad5fadbe
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226099"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983444"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Verwenden von Boost.Test für C++ in Visual Studio
 
@@ -25,7 +25,7 @@ Wenn die Workload **Desktopentwicklung mit C++** nicht installiert ist, öffnen 
 
 ## <a name="install-boost"></a>Installieren von Boost
 
-Boost.Test erfordert [Boost](http://www.boost.org/). Wenn Sie Boost noch nicht installiert haben, sollten Sie den vcpkg-Paket-Manager verwenden.
+Boost.Test erfordert [Boost](https://www.boost.org/). Wenn Sie Boost noch nicht installiert haben, sollten Sie den vcpkg-Paket-Manager verwenden.
 
 1. Falls Sie diesen noch nicht installiert haben, holen Sie dies nach, indem Sie die unter [Vcpkg: Ein C++-Paket-Manager für Windows](/cpp/vcpkg) beschriebenen Schritte ausführen.
 
@@ -55,7 +55,7 @@ Visual Studio 2017 Version 15.5 enthält keine vorkonfigurierten Testprojekte od
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten „Projektmappe“ und dann auf **Hinzufügen** > **Neues Projekt**.
 
-1. Wählen Sie im linken Bereich **Visual C++** > **Windows-Desktop** aus, und klicken Sie dann auf die Vorlage **Windows-Konsolenanwendung**.
+1. Wählen Sie im linken Bereich **Visual C++**  > **Windows-Desktop** aus, und klicken Sie dann auf die Vorlage **Windows-Konsolenanwendung**.
 
 1. Benennen Sie das Projekt, und klicken Sie auf **OK**.
 
@@ -79,7 +79,7 @@ Visual Studio 2017 Version 15.5 enthält keine vorkonfigurierten Testprojekte od
 
    d. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus, um **Eigenschaftenseiten** zu öffnen.
 
-   d. Erweitern Sie **C/C++** > **Codegenerierung**, und wählen Sie anschließend **Laufzeitbibliothek** aus. Wählen Sie **/MTd** aus, um die statische Laufzeitbibliothek zu debuggen, oder **/MT**, um die statische Laufzeitbibliothek freizugeben.
+   d. Erweitern Sie **C/C++**  > **Codegenerierung**, und wählen Sie anschließend **Laufzeitbibliothek** aus. Wählen Sie **/MTd** aus, um die statische Laufzeitbibliothek zu debuggen, oder **/MT**, um die statische Laufzeitbibliothek freizugeben.
 
    f. Erweitern Sie **Linker** > **System**. Überprüfen Sie, ob **SubSystem** auf **Konsole** festgelegt ist.
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 
 ## <a name="write-and-run-tests"></a>Schreiben und Ausführen von Tests
 
-Nun können Sie Tests für Boost.Test schreiben und ausführen. Weitere Informationen zu den Test-Makros finden Sie in der [Dokumentation zur Boost.Test-Bibliothek](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html). Weitere Informationen zum Ermitteln, Ausführen und Gruppieren Ihrer Tests mithilfe des **Test-Explorers** finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md).
+Nun können Sie Tests für Boost.Test schreiben und ausführen. Weitere Informationen zu den Test-Makros finden Sie in der [Dokumentation zur Boost.Test-Bibliothek](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html). Weitere Informationen zum Ermitteln, Ausführen und Gruppieren Ihrer Tests mithilfe des **Test-Explorers** finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>Siehe auch
 

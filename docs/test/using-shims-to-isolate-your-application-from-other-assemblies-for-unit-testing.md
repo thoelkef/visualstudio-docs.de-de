@@ -8,12 +8,12 @@ author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659749"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982802"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Verwenden von Shims zum Isolieren der Anwendung für Unittests
 
@@ -525,4 +525,4 @@ Shims können nicht für alle Typen in der .NET-Basisklassenbibliothek **mscorli
 
 - [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Peter Provost's blog: Visual Studio 2012 shims (Blog von Peter Provost: Shims in Visual Studio 2012)](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012 (Testen von nicht-testbarem Code mithilfe von Fakes in Visual Studio 2012)](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012 (Testen von nicht-testbarem Code mithilfe von Fakes in Visual Studio 2012)](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

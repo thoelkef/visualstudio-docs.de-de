@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0507e75a84f18350817a33abe25d3e59fa9aa2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926329"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911222"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht)
 Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschnellansicht können Sie steuern, wie Ablaufverfolgungen erfasst werden.  Das Dialogfeld enthält Registerkarten für Symbole, „Nur eigenen Code“, Pufferung, Filterung, CLR-Ereignisse, Marker, Anbieter und Dateien.
@@ -29,7 +29,7 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
  Die Pfade der *EXE*- und *DLL*-Dateien werden in der Ablaufverfolgungsdatei gespeichert, wenn die Ablaufverfolgung erfasst wird.  Das Ändern dieser Einstellung wirkt sich nicht auf zuvor erfasste Ablaufverfolgungen aus.
 
 ## <a name="buffering"></a>Pufferung
- Die Parallelitätsschnellansicht verwendet die Ereignisablaufverfolgung für Windows (Event Tracing for Windows, ETW), wenn sie eine Ablaufverfolgung erfasst.  ETW verwendet beim Speichern von Ereignissen verschiedene Puffer.  Die Standardeinstellungen für ETW-Puffer sind möglicherweise nicht in allen Fällen optimal und könnten in einigen Fällen Probleme wie z.B. den Verlust von Ereignissen verursachen.  Auf der Registerkarte Pufferung können Sie die ETW-Puffereinstellungen konfigurieren. Weitere Informationen finden Sie unter [Event Tracing](http://go.microsoft.com/fwlink/?LinkId=234579) (Ereignisablaufverfolgung) und [EVENT_TRACE_PROPERTIES structure](http://go.microsoft.com/fwlink/?LinkId=234580) (EVENT_TRACE_PROPERTIES-Struktur).
+ Die Parallelitätsschnellansicht verwendet die Ereignisablaufverfolgung für Windows (Event Tracing for Windows, ETW), wenn sie eine Ablaufverfolgung erfasst.  ETW verwendet beim Speichern von Ereignissen verschiedene Puffer.  Die Standardeinstellungen für ETW-Puffer sind möglicherweise nicht in allen Fällen optimal und könnten in einigen Fällen Probleme wie z.B. den Verlust von Ereignissen verursachen.  Auf der Registerkarte Pufferung können Sie die ETW-Puffereinstellungen konfigurieren. Weitere Informationen finden Sie unter [Event Tracing](/windows/win32/etw/event-tracing-portal) (Ereignisablaufverfolgung) und [EVENT_TRACE_PROPERTIES structure](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) (EVENT_TRACE_PROPERTIES-Struktur).
 
 ## <a name="filter"></a>Filter
  Auf der Registerkarte „Filter“ können Sie den Satz der Ereignisse auswählen, die die Parallelitätsschnellansicht erfasst. Die Auswahl einer Teilmenge von Ereignissen schränkt die Typen der Daten ein, die in den Berichten angezeigt werden, reduziert die Größe der einzelnen Ablaufverfolgungen und die Zeit, die erforderlich ist, um Ablaufverfolgungen zu verarbeiten.

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4d5013aea15bec9b2d7c308836ef5e9d212a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747858"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919201"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Dialogfeld "Optionen", Projekte und Projektmappen, Webprojekte
 
@@ -27,7 +27,7 @@ Beim Ausführen eines Webprojekts in Visual Studio wird standardmäßig der Visu
 
 **64-Bit-Version von IIS Express für Websites und Projekte verwenden**
 
-Wählen Sie diese Option aus, um IIS Express anstelle von Visual Studio Development Server zu verwenden. Weitere Informationen finden Sie unter [Introducing IIS Express (Einführung in IIS Express)](http://go.microsoft.com/?linkid=9747914) und [IIS Express Overview (Übersicht über IIS Express)](http://go.microsoft.com/?linkid=9747915).
+Wählen Sie diese Option aus, um IIS Express anstelle von Visual Studio Development Server zu verwenden. Weitere Informationen finden Sie unter [Introducing IIS Express (Einführung in IIS Express)](https://weblogs.asp.net/scottgu/introducing-iis-express) und [IIS Express Overview (Übersicht über IIS Express)](/iis/extensions/introduction-to-iis-express/iis-express-overview).
 
 **Vor der Ausführung von Webanwendungen warnen, wenn die Fehlerliste Fehler enthält**
 

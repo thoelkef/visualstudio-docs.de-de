@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957184"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985187"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
@@ -44,7 +44,7 @@ Um eine Vorlage zu verwenden, wählen Sie die gewünschte Vorlage aus, geben Sie
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Frage: Woher weiß Visual Studio, welche Elementvorlagen angeboten werden sollen?
 
-Antwort: Die Visual Studio-Projektdatei (*.pyproj*) enthält einen Projekttypbezeichner, der sie als Python-Projekt markiert. Visual Studio verwendet diese Typbezeichner, um nur die Elementvorlagen anzuzeigen, die für den Projekttyp geeignet sind. Auf diese Weise kann Visual Studio mehrere Elementvorlagen für viele Projekttypen anbieten, ohne Sie dazu aufzufordern, sie jedes Mal alle zu sortieren.
+Antwort: Die Visual Studio-Projektdatei ( *.pyproj*) enthält einen Projekttypbezeichner, der sie als Python-Projekt markiert. Visual Studio verwendet diese Typbezeichner, um nur die Elementvorlagen anzuzeigen, die für den Projekttyp geeignet sind. Auf diese Weise kann Visual Studio mehrere Elementvorlagen für viele Projekttypen anbieten, ohne Sie dazu aufzufordern, sie jedes Mal alle zu sortieren.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Schritt 3.2: Bereitstellen statischer Dateien aus Ihrer App
 
@@ -286,6 +286,6 @@ Die folgenden Schritte veranschaulichen die Vererbung:
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 
 - [Bereitstellen der App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Weitere Informationen zu den Funktionen der Jinja-Vorlagen (z.B. Ablaufsteuerung) finden Sie in der [Dokumentation zum Jinja-Vorlagen-Designer](http://jinja.pocoo.org/docs/2.10/templates) unter jinja.pocoo.org.
-- Weitere Informationen zur Verwendung von `url_for` finden Sie in der Dokumentation zu Flask-Anwendungsobjekten (flask.pocoo.org) unter [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for).
+- Weitere Informationen zu den Funktionen der Jinja-Vorlagen (z.B. Ablaufsteuerung) finden Sie in der [Dokumentation zum Jinja-Vorlagen-Designer](http://jinja.palletsprojects.com/en/2.10.x/templates/) unter jinja.pocoo.org.
+- Weitere Informationen zur Verwendung von `url_for` finden Sie in der Dokumentation zu Flask-Anwendungsobjekten (flask.pocoo.org) unter [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for).
 - Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

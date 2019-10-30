@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961742"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985191"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
@@ -220,5 +220,5 @@ Antwort: Ja, Sie können Unterordner verwenden und dann auf den relativen Pfad u
 
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 
-- [Flask Quickstart - Rendering Templates (Flask-Schnellstart: Rendern von Vorlagen)](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
+- [Flask Quickstart - Rendering Templates (Flask-Schnellstart: Rendern von Vorlagen)](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates) (flask.pocoo.org)
 - Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

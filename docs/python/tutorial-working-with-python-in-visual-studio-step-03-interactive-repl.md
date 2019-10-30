@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450447"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986215"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 
@@ -25,7 +25,7 @@ ms.locfileid: "72450447"
 In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable „Lesen-Auswerten-Ausgeben“-Schleife (REPL), die den üblichen „Bearbeiten-Erstellen-Debuggen“-Zyklus erheblich verkürzt. Das **interaktive** Fenster bietet alle Funktionen, die auch die REPL für die Python-Befehlszeile bietet. Es erleichtert auch das Austauschen von Code durch Quelldateien im Visual Studio-Editor, was über die Befehlszeile aufwändig wäre.
 
 > [!NOTE]
-> Bei Problemen mit REPL stellen Sie sicher, dass die Pakete `ipython` und `ipykernel` installiert sind, und Hilfe bei der Installation von Paketen finden Sie auf der Registerkarte [Python-Umgebungspakete](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Bei Problemen mit REPL stellen Sie sicher, dass die Pakete `ipython` und `ipykernel` installiert sind, und Hilfe bei der Installation von Paketen finden Sie auf der Registerkarte [Python-Umgebungspakete](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
 1. Öffnen Sie das **interaktive** Fenster, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Python-Umgebung des Projekts klicken (z.B. **Python 3.6 (32-Bit)** , wie zuvor in einer Grafik gezeigt) und **Interaktives Fenster öffnen** auswählen. Alternativ können Sie im Hauptmenü von Visual Studio **Ansicht** > **Weitere Fenster** > **Interaktive Python-Fenster** auswählen.
 

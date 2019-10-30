@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572465"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919141"
 ---
 # <a name="step-9-try-other-features"></a>Schritt 9: Ausprobieren weiterer Features
 Um den Lerneffekt zu erhöhen, können Sie das Ändern von Symbolen und Farben, das Hinzufügen eines Spieltimers und das Hinzufügen von Sounds ausprobieren. Versuchen Sie, die Spielfläche zu vergrößern und den Timer anzupassen, um das Spiel anspruchsvoller zu machen.
@@ -37,7 +37,7 @@ Ein vollständige Version des Beispiels können Sie unter [Complete Matching Gam
 - Fügen Sie einen Sound hinzu, der wiedergegeben wird, wenn der Spieler eine Übereinstimmung findet. Fügen Sie einen anderen Sound hinzu, der wiedergegeben wird, wenn der Spieler zwei nicht übereinstimmende Symbole aufdeckt, und einen dritten Sound für das Ausblenden der Symbole durch das Programm.
 
     > [!TIP]
-    > Um Sounds wiederzugeben, können Sie den <xref:System.Media>-Namespace verwenden. Weitere Informationen finden Sie in den Videos [Play sounds in Windows Forms app (C#) (Wiedergeben von Sound in der Windows Forms-App (C#))](http://youtu.be/qOh4ooHg1UU) oder [How to play audio in Visual Basic (Audiowiedergabe in Visual Basic)](http://youtu.be/-4oPDeQrtMs).
+    > Um Sounds wiederzugeben, können Sie den <xref:System.Media>-Namespace verwenden. Weitere Informationen finden Sie in den Videos [Play sounds in Windows Forms app (C#) (Wiedergeben von Sound in der Windows Forms-App (C#))](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) oder [How to play audio in Visual Basic (Audiowiedergabe in Visual Basic)](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be).
 
 - Machen Sie das Spiel schwieriger, indem Sie die Spielfläche vergrößern.
 

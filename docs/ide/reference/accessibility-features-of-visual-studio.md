@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060375"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919189"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Barrierefreiheitsfeatures in Visual Studio
 
@@ -51,7 +51,7 @@ Weitere Informationen finden Sie unter den folgenden Themen:
 - [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
-> Die Informationen auf dieser Seite gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen lassen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der auf dieser Seite beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über die Barrierefreiheit sind auch in anderen Sprachen verfügbar.
+> Die Informationen auf dieser Seite gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/accessibility/) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen lassen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der auf dieser Seite beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über die Barrierefreiheit sind auch in anderen Sprachen verfügbar.
 
 ::: moniker range="vs-2017"
 
