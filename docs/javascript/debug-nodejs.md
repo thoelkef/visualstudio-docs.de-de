@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589146"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888701"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -64,7 +64,7 @@ Wenn der Debugger von Visual Studio angehängt und Breakpoints im clientseitigen
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie in der **Debuggen**-Symbolleiste die Option **Browserauswahl…** und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie in der **Debuggen**-Symbolleiste die Option **Browserauswahl…** und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

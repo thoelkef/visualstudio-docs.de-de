@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589148"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888671"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -390,7 +390,7 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie **Browserauswahl** in der **Debuggen**-Symbolleiste und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie **Browserauswahl** in der **Debuggen**-Symbolleiste und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

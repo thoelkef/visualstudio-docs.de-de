@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959515"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024723"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
@@ -31,7 +31,7 @@ Sie können darüber hinaus den Visual Studio-**Objektkatalog** (**Ansicht** > *
 
 IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Visual Studio 2017 Version 15.7 und höher unterstützt auch [Typhinweise](#type-hints).
 
-Zur Verbesserung der Leistung nutzt IntelliSense in Visual Studio 2017 Version 15.5 und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem **Projektmappen-Explorer** gleichgeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
+Zur Verbesserung der Leistung nutzt IntelliSense in Visual Studio 2017 Version 15.5 und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem **Projektmappen-Explorer** gleichgeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)).
 
 Visual Studio 2017 Version 15.6 und höher ermöglicht auf andere Weise IntelliSense-Vervollständigungen, die nicht von der Datenbank abhängig sind.
 
@@ -111,13 +111,13 @@ Mithilfe des Befehls **Mypy ausführen** für diesen Code wird der folgende Fehl
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* ( *.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
 >
 > Derzeit unterstützt Visual Studio keine Typhinweise in Kommentaren.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* ( *.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
 >
 > Visual Studio enthält gebündelte Typeshed-Dateien für Python 2 und 3. So werden keine zusätzlichen Downloads benötigt. Wenn Sie andere Dateien verwenden möchten, können Sie den Pfad unter **Tools** > **Optionen** > **Python** > **Sprache** angeben. Siehe [Optionen – Sprachserver](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
@@ -213,7 +213,7 @@ Mit **Gehe zu Definition** wechseln Sie schnell von einem Bezeichner (z.B. einem
 
 ### <a name="navigate-to"></a>Navigieren zu
 
-Der Befehl **Bearbeiten** > **Navigieren zu** (**STRG**+**,**) zeigt ein Suchfeld im Editor an, in das Sie eine beliebige Zeichenfolge eingeben und mögliche Übereinstimmungen in Ihrem Code anzeigen können, der eine Funktion, eine Klasse oder eine Variable definiert, die diese Zeichenfolge enthält. Diese Funktion bietet eine ähnliche Funktionalität wie **Gehe zu Definition**, ohne jedoch die Verwendung eines Bezeichners suchen zu müssen.
+Der Befehl **Bearbeiten** > **Navigieren zu** (**STRG**+ **,** ) zeigt ein Suchfeld im Editor an, in das Sie eine beliebige Zeichenfolge eingeben und mögliche Übereinstimmungen in Ihrem Code anzeigen können, der eine Funktion, eine Klasse oder eine Variable definiert, die diese Zeichenfolge enthält. Diese Funktion bietet eine ähnliche Funktionalität wie **Gehe zu Definition**, ohne jedoch die Verwendung eines Bezeichners suchen zu müssen.
 
 Indem Sie auf einen beliebigen Namen doppelklicken oder einen Namen mit den Pfeiltasten auswählen und die **EINGABETASTE** drücken, gelangen Sie zur Definition dieses Bezeichners.
 

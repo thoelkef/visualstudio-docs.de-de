@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263048"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888663"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -34,7 +34,7 @@ Visual Studio unterstützt nun die Syntax für ECMAScript-Updates wie ECMAScript
 ### <a name="what-is-ecmascript-2015"></a>Was ist ECMAScript 2015?
 
 JavaScript wird als Programmiersprache ständig weiterentwickelt. Für Updates ist die Arbeitsgruppe [TC39](https://www.ecma-international.org/memento/tc39-m.htm) verantwortlich.
-ECMAScript 2015 ist ein Update für JavaScript, das hilfreiche neue Syntaxelemente und Funktionen einführt. Ausführliche Informationen zu ES6-Funktionen finden Sie auf der entsprechenden [Referenzseite](http://es6-features.org).
+ECMAScript 2015 ist ein Update für JavaScript, das hilfreiche neue Syntaxelemente und Funktionen einführt. Ausführliche Informationen zu ES6-Funktionen finden Sie auf der entsprechenden [Referenzseite](http://es6-features.org/#Constants).
 
 Visual Studio unterstützt neben ECMAScript 2015 auch ECMAScript 2016 und wird auch zukünftige ECMAScript-Versionen bei deren Release unterstützen. Die neuesten Änderungen der Arbeitsgruppe TC39 an ECMAScript können Sie mit [GitHub](https://github.com/tc39) im Blick behalten.
 
@@ -238,7 +238,7 @@ Fügen Sie weitere Verzeichnisse nach Bedarf hinzu. Einige weitere Beispiele sin
 Da [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] über einen völlig neuen Sprachdienst verfügt, fehlen oder unterscheiden sich einige Verhalten im Gegensatz zur bisherigen Version von Visual Studio.
 Zu den wichtigsten Änderungen zählen das Ersetzen von VSDoc mit JSDoc, das Entfernen von benutzerdefinierten `.intellisense.js`-Erweiterungen sowie Einschränkungen bei IntelliSense im Fall von bestimmten Codemustern.
 
-### <a name="no-more-references-or-referencesjs"></a>`///<references/>` und `_references.js` nicht mehr verfügbar
+### <a name="no-more-references-or-_referencesjs"></a>`///<references/>` und `_references.js` nicht mehr verfügbar
 
 Bisher war es schwierig nachzuvollziehen, welche Dateien zu einem bestimmten Zeitpunkt im IntelliSense-Bereich waren. In einigen Fällen war es wünschenswert, dass sich alle Dateien im Bereich befinden; in anderen Fällen hingegen nicht. Hierdurch waren komplexe Konfigurationen wie die manuelle Verweisverwaltung erforderlich. In der neuen Version von Visual Studio müssen Sie sich keine Gedanken mehr um die Verweisverwaltung machen. Sie benötigen nun nicht mehr Kommentare mit drei Schrägstrichen oder `_references.js`-Dateien.
 

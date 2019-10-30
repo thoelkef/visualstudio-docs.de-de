@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998639"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888568"
 ---
 # <a name="create-r-markdown-documents"></a>Erstellen von R Markdown-Dokumenten
 
@@ -24,7 +24,7 @@ R Tools für Visual Studio (RTVS) bietet eine R Markdown-Elementvorlage, Editor-
 ## <a name="using-r-markdown"></a>Verwenden von R Markdown
 
 1. Schließen Sie Visual Studio.
-1. (Nur einmal) Installieren Sie `pandoc` aus [pandoc.org](http://pandoc.org/installing.html).
+1. (Nur einmal) Installieren Sie `pandoc` aus [pandoc.org](https://pandoc.org/installing.html).
 1. Starten Sie Visual Studio neu, wodurch die Installation von Pandoc weitergeführt werden sollte.
 1. Installieren Sie die Pakete `knitr` und `rmarkdown` ggf. über das [interaktive Fenster](interactive-repl-for-r-in-visual-studio.md):
 

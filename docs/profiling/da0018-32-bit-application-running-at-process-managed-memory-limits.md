@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: da437b974eff9beb671f5fe889bec427f9f85f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cadf5f605b78dd82ddf205ecfb5b0beded92a59f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989749"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910517"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgeführt
 
@@ -54,7 +54,7 @@ ms.locfileid: "62989749"
 
 - Optimieren Sie die Verwendung verwalteter Speicherressourcen durch die Anwendung.
 
-   - oder - 
+   Oder
 
 - Umgehen Sie die architektonischen Einschränkungen für die maximale Größe von virtuellem Arbeitsspeicher für 32-Bit-Prozesse.
 
@@ -64,7 +64,7 @@ ms.locfileid: "62989749"
 
   Ermitteln Sie mithilfe der [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md) den Ausführungspfad, der zu diesen Speicherbelegungen geführt hat.
 
-  Weitere Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie im technischen Artikel [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=177946) zu .NET Framework auf der MSDN-Website.
+  Weitere Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie im technischen Artikel [Garbage Collector-Grundlagen und Tipps zur Leistung](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) zu .NET Framework auf der MSDN-Website.
 
   Wenn Sie den architektonischen Einschränkungen für virtuellen Arbeitsspeicher hinsichtlich der Größe des privaten Teils eines Prozessadressbereichs entgehen möchten, führen Sie diesen 32-Bit-Prozess auf einem 64-Bit-Computer aus.  Einem 32-Bit-Prozess stehen auf einem 64-Bit-Computer bis zu 4 GB an privatem, virtuellem Arbeitsspeicher zur Verfügung.
 
