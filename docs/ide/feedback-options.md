@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 79b369fdc4bed2489b997e59215264ebaca03c74
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64556761"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919086"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio-Feedbackoptionen
 
@@ -75,7 +75,7 @@ Vorabversionen von Visual Studio verfügen über ein Menüelement **Dieses Produ
 Es gibt zwei Möglichkeiten, wie Sie uns bei der Verbesserung der Dokumentation helfen können:
 
 * Wählen Sie die Schaltfläche **War diese Seite hilfreich?** unten auf der Seite aus. Sie finden diese Schaltfläche auf allen unseren Dokumentationsseiten.
-* Verwenden Sie Ihr GitHub-Konto, um Feedback zu einer beliebigen Visual Studio-Seite auf [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) zu geben. Wählen Sie dazu die Schaltfläche **Feedback senden über** > **Diese Seite**, ebenfalls unten auf der Seite.
+* Verwenden Sie Ihr GitHub-Konto, um Feedback zu einer beliebigen Visual Studio-Seite auf [docs.microsoft.com](/visualstudio/) zu geben. Wählen Sie dazu die Schaltfläche **Feedback senden über** > **Diese Seite**, ebenfalls unten auf der Seite.
 
 ## <a name="contact-microsoft-support"></a>Kontakt zum Microsoft Support
 

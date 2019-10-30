@@ -93,12 +93,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655553"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919077"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressourcen für die Problembehandlung bei Fehlern der integrierten Entwicklungsumgebung
 
@@ -119,7 +119,7 @@ Sie können auf der Website der [Technischen Microsoft-Communitys](https://techc
 
 ## <a name="product-support"></a>Produktsupport
 
-Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angesehen haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Support](http://go.microsoft.com/fwlink/?linkid=1782). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie auf der Seite [Visual Studio-Feedbackoptionen](../../ide/feedback-options.md).
+Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angesehen haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Support](https://support.microsoft.com/en-us). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie auf der Seite [Visual Studio-Feedbackoptionen](../../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Siehe auch
 

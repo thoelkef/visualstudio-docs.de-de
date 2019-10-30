@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631913"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919061"
 ---
 # <a name="class-designer-errors"></a>Fehler im Klassen-Designer
 
@@ -44,7 +44,7 @@ Der **Klassen-Designer** verfolgt den Speicherort der Quelldateien nicht, sodass
 Hilfe zu anderen Fehlern und Warnungen finden Sie in den folgenden Ressourcen:
 
 - [Arbeiten mit Visual C++-Code:](working-with-visual-cpp-code.md) Enthält Informationen zur Problembehandlung in Bezug auf das Anzeigen von C++ in einem Klassendiagramm.
-- [Forum des Visual Studio-Klassen-Designers:](http://go.microsoft.com/fwlink/?LinkId=160754) Ein Forum für Fragen zum **Klassen-Designer**.
+- [Forum des Visual Studio-Klassen-Designers:](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) Ein Forum für Fragen zum **Klassen-Designer**.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958750"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985212"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Flask-Webframework in Visual Studio
 
-[Flask](http://flask.pocoo.org/) ist ein einfaches Python-Framework für Webanwendungen, das die Grundlagen für URL-Routing und das Rendern von Seiten bereitstellt.
+[Flask](https://palletsprojects.com/p/flask/) ist ein einfaches Python-Framework für Webanwendungen, das die Grundlagen für URL-Routing und das Rendern von Seiten bereitstellt.
 
 Flask wird als Mikroframework bezeichnet, da es Features wie die Überprüfung von Formularen, die Datenbankabstraktion, Authentifizierung usw. nicht direkt bereitstellt. Solche Features werden stattdessen von speziellen Python-Paketen bereitgestellt, die als Flask-*Erweiterungen* bezeichnet werden. Die Erweiterungen werden nahtlos in Flask integriert, sodass es so aussieht, als wären sie selbst Teil von Flask. Flask selbst stellt z.B. keine Seitenvorlagen-Engine bereit. Die Vorlagen werden von Erweiterungen wie Jinja und Jade bereitgestellt, so wie hier in diesem Tutorial erklärt wird.
 
@@ -126,7 +126,7 @@ Nachdem Sie die Quellcodeverwaltung für das Projekt konfiguriert haben, können
 
 1. Klicken Sie auf **Erstellen**, um die Standardeinstellungen zu übernehmen. (Sie können den Namen der virtuellen Umgebung ändern. Dadurch wird jedoch nur der Name des Unterordners geändert, `env` ist dagegen eine Standardkonvention.)
 
-1. Stimmen Sie den Administratorrechten zu, wenn Sie dazu aufgefordert werden. Der anschließende Download- und Installationsvorgang der Pakete durch Visual Studio kann einige Minuten dauern, da für Flask und zugehörige Abhängigkeiten mehrere tausend Dateien in über 100 Unterordnern heruntergeladen und installiert werden müssen. Der Fortschritt wird im **Ausgabe**-Fenster in Visual Studio angezeigt. Während des Vorgangs können Sie die Fragen und Antworten in den folgenden Abschnitten lesen. Eine Beschreibung der Abhängigkeiten von Flask finden Sie ebenfalls auf der [Installationsseite von Flask](http://flask.pocoo.org/docs/1.0/installation/#installation) (flask.pcocoo.org).
+1. Stimmen Sie den Administratorrechten zu, wenn Sie dazu aufgefordert werden. Der anschließende Download- und Installationsvorgang der Pakete durch Visual Studio kann einige Minuten dauern, da für Flask und zugehörige Abhängigkeiten mehrere tausend Dateien in über 100 Unterordnern heruntergeladen und installiert werden müssen. Der Fortschritt wird im **Ausgabe**-Fenster in Visual Studio angezeigt. Während des Vorgangs können Sie die Fragen und Antworten in den folgenden Abschnitten lesen. Eine Beschreibung der Abhängigkeiten von Flask finden Sie ebenfalls auf der [Installationsseite von Flask](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
 
 1. Klicken Sie bei den Git-Steuerelementen in Visual Studio (auf der Statusleiste) auf den Änderungsindikator (der **99&#42;** anzeigt), um die Seite **Änderungen** im **Team Explorer** zu öffnen.
 
@@ -190,9 +190,9 @@ Antwort: Bearbeiten Sie zuerst die *GITIGNORE*-Datei, um den Ordner auszuschlie�
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Frage: Welchem Zweck dient das Argument __name__ für die Flask-Klasse?
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>Frage: Welchem Zweck dient das Argument __name__ für die Flask-Klasse?
 
-Antwort: Das Argument ist der Name des Moduls oder Pakets der App und gibt an, wo Flask nach Vorlagen, statischen Dateien und anderen Ressourcen suchen soll, die zur App gehören. Für Apps, die in einem einzelnen Modul enthalten sind, ist `__name__` immer der richtige Wert. Dieser ist auch für Erweiterungen wichtig, die Debuginformationen benötigen. Weitere Informationen und zusätzliche Argumente finden Sie in der [Flask-Klassendokumentation](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
+Antwort: Das Argument ist der Name des Moduls oder Pakets der App und gibt an, wo Flask nach Vorlagen, statischen Dateien und anderen Ressourcen suchen soll, die zur App gehören. Für Apps, die in einem einzelnen Modul enthalten sind, ist `__name__` immer der richtige Wert. Dieser ist auch für Erweiterungen wichtig, die Debuginformationen benötigen. Weitere Informationen und zusätzliche Argumente finden Sie in der [Flask-Klassendokumentation](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) (flask.pocoo.org).
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Frage: Kann eine Funktion über mehr als einen Route-Decorator verfügen?
 
@@ -218,9 +218,9 @@ def hello(name, msg):
     return "Hello " + name + "! Message is " + msg + "."
 ```
 
-Um den Typ zu ändern, stellen Sie der Variable die Präfixe `int`, `float`, `path` (akzeptiert Schrägstriche zur Abgrenzung von Ordnernamen) und `uuid` voran. Weitere Informationen finden Sie in der Flask-Dokumentation unter [Variable rules (Regeln für Variablen)](http://flask.pocoo.org/docs/1.0/quickstart/#variable-rules).
+Um den Typ zu ändern, stellen Sie der Variable die Präfixe `int`, `float`, `path` (akzeptiert Schrägstriche zur Abgrenzung von Ordnernamen) und `uuid` voran. Weitere Informationen finden Sie in der Flask-Dokumentation unter [Variable rules (Regeln für Variablen)](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules).
 
-Abfrageparameter sind ebenso über die Eigenschaft `request.args`, genauer gesagt über die Methode `request.args.get`, verfügbar. Weitere Informationen finden Sie im Abschnitt [The Request object (Das request-Objekt)](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) in der Flask-Dokumentation.
+Abfrageparameter sind ebenso über die Eigenschaft `request.args`, genauer gesagt über die Methode `request.args.get`, verfügbar. Weitere Informationen finden Sie im Abschnitt [The Request object (Das request-Objekt)](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) in der Flask-Dokumentation.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Frage: Kann Visual Studio eine „requirements.txt“-Datei aus einer virtuellen Umgebung generieren, nachdem ich andere Pakete installiert habe?
 
@@ -253,5 +253,5 @@ Zu diesem Zeitpunkt enthält das einfache Flask-Projekt den Startcode sowie den 
 
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 
-- [Flask Quickstart (Flask-Schnellstart)](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
+- [Flask Quickstart (Flask-Schnellstart)](https://flask.palletsprojects.com/en/1.0.x/quickstart/) (flask.pocoo.org)
 - Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
