@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911629"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061085"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Erstellen benutzerdefinierter Ansichten C++ von Objekten im Debugger mit dem natvis-Framework
 
@@ -319,6 +319,10 @@ Im folgenden Beispiel gilt die Visualisierung nur für den `DirectUI::Border`-Ty
   </Expand>
 </Type>
 ```
+
+Sie benötigen nicht sowohl `Min` als auch `Max`. Dabei handelt es sich um optionale Attribute. Es werden keine Platzhalter Zeichen unterstützt.
+
+Das `Name`-Attribut hat das Format *Dateiname. ext*, z. b *. "Hello. exe* " oder " *some. dll*". Es sind keine Pfadnamen zulässig.
 
 ### <a name="BKMK_DisplayString"></a>Display String-Element
 Das `DisplayString`-Element gibt eine Zeichenfolge an, die als Wert einer Variablen angezeigt werden soll. Beliebige Zeichenfolgen können mit Ausdrücken gemischt werden. Sämtliche Inhalte innerhalb von geschweiften Klammern werden als ein Ausdruck interpretiert. Der folgende `DisplayString`-Eintrag ist beispielsweise:
