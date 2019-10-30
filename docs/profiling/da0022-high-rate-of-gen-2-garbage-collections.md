@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0c156cc4b47bc4ebedd169b099a538941f56d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba70e303c3164417890be51e834d86d8983526cf
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936397"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910534"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Hohes Maß an Garbage Collections der Generation 2
 
@@ -50,4 +50,4 @@ ms.locfileid: "62936397"
 
  Wiederholen Sie die Profilerstellung für die Anwendung mithilfe eines .NET-Speicherbelegungsprofils, und wählen Sie die Profilerstellungsoption „Objektlebensdauer“ aus, damit Sie das Muster für die verwaltete Speicherauslastung der Anwendung nachvollziehen können.
 
- Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie unter [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=148226) auf der Microsoft-Website. Informationen zum Mehraufwand der automatischen Garbage Collection finden Sie unter [Large Object Heap Uncovered (Informationen zum Heap für große Objekte)](http://go.microsoft.com/fwlink/?LinkId=177836).
+ Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie unter [Garbage Collector-Grundlagen und Tipps zur Leistung](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) auf der Microsoft-Website. Informationen zum Mehraufwand der automatischen Garbage Collection finden Sie unter [Large Object Heap Uncovered (Informationen zum Heap für große Objekte)](https://msdn.microsoft.com/magazine/cc534993.aspx).

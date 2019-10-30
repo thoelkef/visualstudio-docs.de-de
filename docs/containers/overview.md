@@ -6,30 +6,30 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: badb06b8c3eea5158054ba4c32f72e51dae0d60d
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65084039"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816357"
 ---
 # <a name="container-tools-in-visual-studio"></a>Containertools in Visual Studio
 
 Die in Visual Studio enthaltenen Tools für die Entwicklung mit Containern sind einfach zu verwenden und können das Erstellen, Debuggen und Bereitstellen von Containeranwendungen erheblich vereinfachen. Sie können mit einem Container für ein einzelnes Projekt arbeiten oder die Containerorchestrierung mit Docker Compose, Service Fabric oder Kubernetes zum Arbeiten mit mehreren Diensten in Containern verwenden.
 
-> [!NOTE]
-> Dieser Artikel bezieht sich auf Visual Studio unter Windows und nicht auf Visual Studio für Mac.
+::: moniker range="vs-2017"
 
-> [!TIP]
-> Weitere Informationen zum Installieren von Docker für Windows finden Sie unter [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/).
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) mit den Workloads für **Webentwicklung**, **Azure-Tools** und bzw. oder **plattformübergreifende .NET Core-Entwicklung**
+* Zum Veröffentlichen in Azure Container Registry ist ein Azure-Abonnement erforderlich. [Registrieren Sie sich für eine kostenlose Testversion.](https://azure.microsoft.com/offers/ms-azr-0044p/)
 
 ## <a name="docker-support-in-visual-studio"></a>Docker-Unterstützung in Visual Studio
 
 Docker-Unterstützung ist für ASP.NET-Projekte, ASP.NET Core-Projekte sowie .NET Core- und .NET Framework-Konsolenprojekte verfügbar.
 
 Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.  
-
-::: moniker range="vs-2017"
 
 Bei Visual Studio 2017 können Sie Docker Compose und Service Fabric als Containerorchestrierungsdienste verwenden.  Sie können auch Kubernetes verwenden, wenn Sie die [Visual Studio-Tools für Kubernetes](https://aka.ms/get-vsk8stools) installieren.
 
@@ -39,6 +39,20 @@ Bei Visual Studio 2017 können Sie Docker Compose und Service Fabric als Contain
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) mit installierten Workloads für **Webentwicklung**, **Azure-Tools** und/oder **plattformübergreifende .NET Core-Entwicklung**
+* [.NET Core 2.2-Entwicklungstools](https://dotnet.microsoft.com/download/dotnet-core/2.2) zur Entwicklung mit .NET Core 2.2
+* Zum Veröffentlichen in Azure Container Registry ist ein Azure-Abonnement erforderlich. [Registrieren Sie sich für eine kostenlose Testversion.](https://azure.microsoft.com/offers/ms-azr-0044p/)
+
+## <a name="docker-support-in-visual-studio"></a>Docker-Unterstützung in Visual Studio
+
+Docker-Unterstützung ist für ASP.NET-Projekte, ASP.NET Core-Projekte sowie .NET Core- und .NET Framework-Konsolenprojekte verfügbar.
+
+Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.  
+
 
 Bei Visual Studio 2019 können Sie Docker Compose, Kubernetes und Service Fabric als Containerorchestrierungsdienste verwenden.
 

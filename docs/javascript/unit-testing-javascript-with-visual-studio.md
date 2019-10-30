@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787974"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888633"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Komponententests für JavaScript und TypeScript in Visual Studio
 
 Mithilfe der Node.js-Tools für Visual Studio können Sie Komponententests mit gängigen JavaScript-Frameworks schreiben und ausführen, ohne zu einer Eingabeaufforderung wechseln zu müssen.
 
 Folgende Frameworks werden unterstützt:
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
