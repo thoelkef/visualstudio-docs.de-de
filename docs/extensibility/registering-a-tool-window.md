@@ -1,5 +1,5 @@
 ---
-title: Registrieren eines Toolfensters | Microsoft-Dokumentation
+title: Registrieren eines Tool Fensters | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ae53481b773cfdad5d4ac70f90202fcfd9d1ad4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334326"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186261"
 ---
-# <a name="register-a-tool-window"></a>Registrieren eines Toolfensters
-Sie können die Toolfenster mit einer registrieren <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
+# <a name="register-a-tool-window"></a>Tool Fenster registrieren
+Sie können Ihre Tool Fenster mit <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>registrieren.
 
 ## <a name="example"></a>Beispiel
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- Im obigen Code die <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registriert die `PersistedWindowPane` und `DynamicWindowPane` Toolfenster in Visual Studio. Das persistente Toolfenster ist angedockt und im Registerkartenformat mit **Projektmappen-Explorer**, und das dynamische Fenster erhält ein Standardthema zum Starten von Position und Größe. Fenster Dynamische vorübergehend erfolgt, was bedeutet, dass er beim Starten nicht erstellt wird. Schreibt eine `DontForceCreate` Wert in der `ToolWindows` Schlüssel in der systemregistrierung. Weitere Informationen finden Sie unter [Tool-Fenster-Anzeigekonfiguration](../extensibility/tool-window-display-configuration.md).
+ Im obigen Code registriert der <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> die `PersistedWindowPane` und `DynamicWindowPane` Tool Fenster in Visual Studio. Das persistente Tool Fenster wird angedockt und mit **Projektmappen-Explorer**im Registerkarten Format angezeigt, und im dynamischen Fenster wird eine Standard Anfangsposition und-Größe angegeben. Das dynamische Fenster wird vorübergehend gemacht, was darauf hinweist, dass es beim Start nicht erstellt wird. Dadurch wird ein `DontForceCreate` Wert in den `ToolWindows` Schlüssel in der Systemregistrierung geschrieben. Weitere Informationen finden Sie unter [Konfiguration der Tool Fenster Anzeige](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

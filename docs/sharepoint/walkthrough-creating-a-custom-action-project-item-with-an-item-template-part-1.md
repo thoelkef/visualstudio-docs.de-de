@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a9370fbbd5c806bd3978e3c642da8a6dbd79fd1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a114345363deb9c5ddd0f5a4141cd7d99f0ac1c
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984987"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189180"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1
   Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene Projektelementtypen erstellen. In dieser exemplarischen Vorgehensweise erstellen Sie ein Projekt Element, das einem SharePoint-Projekt hinzugefügt werden kann, um eine benutzerdefinierte Aktion auf einer SharePoint-Website zu erstellen. Durch die benutzerdefinierte Aktion wird dem Menü **Website Aktionen** der SharePoint-Website ein Menü Element hinzugefügt.
@@ -218,7 +218,7 @@ ms.locfileid: "72984987"
     </VSTemplate>
     ```
 
-     Diese Datei definiert den Inhalt und das Verhalten der Elementvorlage. Weitere Informationen zum Inhalt dieser Datei finden Sie unter [Schema Referenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Diese Datei definiert den Inhalt und das Verhalten der Elementvorlage. Weitere Informationen zum Inhalt dieser Datei finden Sie unter [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
 
 4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ItemTemplate** , wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element**aus.
 
@@ -455,6 +455,6 @@ ms.locfileid: "72984987"
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)
-- [Schemareferenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)
 - [Erstellen eines Symbols oder eines anderen &#40;Bild-Bild-Editors für Symbole&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

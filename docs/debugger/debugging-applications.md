@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018783"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188370"
 ---
 # <a name="debugging-applications"></a>Debuggen von Anwendungen
 Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von Anwendungen. Verschiedene Anwendungstypen und Sprachen erfordern unterschiedliche Einstellungen und Techniken verursachen verschiedene Probleme, die debuggt werden müssen.
@@ -31,7 +31,7 @@ Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von
 |[Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)|Beschreibt das Debuggen von verwaltetem C#Code (Visual F#, Visual Basic C++, und/CLI).|
 |[Debuggen von nativem Code](../debugger/debugging-native-code.md)|Beschreibt das Debuggen von verschiedenen Arten systemeigener C++-Anwendungen.|
 |[Debuggen von GPU-Code](../debugger/debugging-gpu-code.md)|Beschreibt das Debuggen von C++-Code, der im Grafikprozessor (Graphics Processing Unit, GPU) ausgeführt wird.|
-|[Grafikdiagnose (Debuggen von DirectX-Grafiken)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Beschreibt das Debuggen von DirectX-Grafiken.|
+|[Grafikdiagnose (Debuggen von DirectX-Grafiken)](graphics/visual-studio-graphics-diagnostics.md)|Beschreibt das Debuggen von DirectX-Grafiken.|
 |[Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Beschreibt, wie ASP.NET-Anwendungen debuggt werden.|
 |[Debugging von Python-Code](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Beschreibt das Debuggen von Python-Code|
 |[Debuggen von JavaScript-und typescript-Anwendungen](../javascript/debug-nodejs.md)|Beschreibt, wie JavaScript-, typescript-und Node. js-Anwendungen debuggt werden.|

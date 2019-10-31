@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536045"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188410"
 ---
-# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuggen von verwaltetem Code (C#, Visual Basic, F#, C++/CLI)
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuggen vonC#verwaltetem Code F#( C++, Visual Basic,,/CLI)
 
 In diesem Abschnitt werden häufige Debugprobleme und-Techniken für verwaltete Anwendungen oder Anwendungen behandelt, die in Sprachen geschrieben wurden, die auf C#die Common Language Runtime C++abzielen, z. b. Visual Basic, und/CLI. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
@@ -76,7 +76,7 @@ Hier finden Sie Hinweise zum Debuggen von Windows-Dienstanwendungen, z. B. zum 
 [Debuggen und Profilerstellung](/dotnet/framework/debug-trace-profile/index)\
 Erläutert das Debuggen von .NET-Anwendungen und die Konfigurations Anforderungen.
 
-[Debuggen von Skript- und Webanwendungen](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+[Debuggen von Skript- und Webanwendungen](how-to-enable-debugging-for-aspnet-applications.md)\
 Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und Webanwendungen auftreten können.
 
 ## <a name="see-also"></a>Siehe auch

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536078"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188614"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr über Produktivitäts Tipps und Tricks für den Debugger in Visual Studio
 
@@ -41,7 +41,7 @@ Weitere Informationen zur Verwendung des Features finden Sie unter [Bearbeiten u
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>XAML-Code bearbeiten und Debuggen fortsetzen
 
-Weitere Informationen zum Ändern von XAML-Code während einer Debugsitzung finden Sie unter [Schreiben und Debuggen von ausgeführtem XAML-Code durch Neuladen von XAML im laufenden Betrieb](xaml-hot-reload.md).
+Weitere Informationen zum Ändern von XAML-Code während einer Debugsitzung finden Sie unter [Schreiben und Debuggen von ausgeführtem XAML-Code durch Neuladen von XAML im laufenden Betrieb](../xaml-tools/xaml-hot-reload.md).
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Debuggingprobleme, die schwer zu reproduzieren sind
 
@@ -84,7 +84,7 @@ Es ist einfach, Variablen mit Debuggerfenstern wie dem Fenster über **Wachen** 
 
 3. Suchen **Sie die Variable im Fenster Lokal** (**Debuggen > Fenster >** lokal), klicken Sie mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID erstellen**aus.
 
-    ![Erstellen einer Objekt-ID](../debugger/media/dbg-tips-watch-create-object-id.png "Kreateobjectid")
+    ![Erstellen einer Objekt-ID](../debugger/media/dbg-tips-watch-create-object-id.png ""Kreateobjectid"")
 
 4. Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
 
@@ -106,7 +106,7 @@ Sie können auch [Pseudo Variablen](../debugger/pseudovariables.md) im Fenster "
 
 ## <a name="string_visualizer"></a>Überprüfen von Zeichen folgen in einer Schnellansicht
 
-Beim Arbeiten mit Zeichen folgen kann es hilfreich sein, die gesamte formatierte Zeichenfolge anzuzeigen. Um eine nur-Text-, XML-, HTML-oder JSON-Zeichenfolge anzuzeigen, klicken Sie auf das Lupensymbol ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol Schnellansicht") , während Sie auf eine Variable mit einem Zeichen folgen Wert zeigen.
+Beim Arbeiten mit Zeichen folgen kann es hilfreich sein, die gesamte formatierte Zeichenfolge anzuzeigen. Um eine nur-Text-, XML-, HTML-oder JSON-Zeichenfolge anzuzeigen, klicken Sie auf das Lupensymbol ![visualizericon](../debugger/media/dbg-tips-visualizer-icon.png "Symbol "Schnellansicht"") , während Sie auf eine Variable mit einem Zeichen folgen Wert zeigen.
 
 ![Öffnen einer Zeichen folgen Schnellansicht](../debugger/media/dbg-tips-string-visualizers.png "Openstringvisualizer")
 
@@ -140,6 +140,7 @@ Wenn Sie die Arten von Problemen Debuggen müssen, die bei Multithreadanwendunge
 
     Sie können auch den Speicherort der Threads im [Fenster parallele Stapel](../debugger/get-started-debugging-multithreaded-apps.md)anzeigen.
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Überprüfen von Nutzlasten für Webdienste und Netzwerkressourcen (UWP)
 
 In UWP-Apps können Sie mit der `Windows.Web.Http`-API ausgeführte Netzwerk Vorgänge analysieren. Sie können dieses Tool verwenden, um Webdienste und Netzwerkressourcen zu debuggen. Wählen Sie **> leistungsprofiler Debuggen**, um das Tool zu verwenden. Wählen Sie **Netzwerk**aus, und klicken Sie dann auf **starten**. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
@@ -151,6 +152,7 @@ Wählen Sie einen Vorgang in der Ansicht „Zusammenfassung“ aus, um mehr Deta
 ![Ausführliche Informationen im Netzwerk Verwendungs Tool](../profiling/media/prof-tour-network-usage-details.png "Detailedviewnetworkusage")
 
 Weitere Informationen finden Sie unter [Netzwerkverwendung](../profiling/network-usage.md).
+::: moniker-end
 
 ## <a name="modules_window"></a>Informieren Sie sich darüber, wie der Debugger an Ihre APP angefügt wird (C#, F# C++, Visual Basic,)
 

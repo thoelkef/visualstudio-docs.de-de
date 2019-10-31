@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806165"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188839"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Code Analyse Warnungen für verwalteten Code nach CheckId
 
@@ -276,7 +276,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 
 | CheckId | Warnung | Beschreibung |
 |---------| - | - |
-| CA2007 | [CA2007: nicht direkt auf eine Aufgabe warten](ca2007-do-not-directly-await-task.md) | Eine asynchrone Methode [erwartet](/dotnet/csharp/language-reference/keywords/await) eine <xref:System.Threading.Tasks.Task> direkt. Wenn eine asynchrone Methode eine <xref:System.Threading.Tasks.Task> direkt erwartet, erfolgt die Fortsetzung in demselben Thread, der die Aufgabe erstellt hat. Dieses Verhalten kann sich in Bezug auf die Leistung als kostspielig erweisen und kann zu einem Deadlock im UI-Thread führen. Sie können <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> aufrufen, um der Absicht der Fortsetzung zu signalisieren. |
+| CA2007 | [CA2007: nicht direkt auf eine Aufgabe warten](ca2007.md) | Eine asynchrone Methode [erwartet](/dotnet/csharp/language-reference/keywords/await) eine <xref:System.Threading.Tasks.Task> direkt. Wenn eine asynchrone Methode eine <xref:System.Threading.Tasks.Task> direkt erwartet, erfolgt die Fortsetzung in demselben Thread, der die Aufgabe erstellt hat. Dieses Verhalten kann sich in Bezug auf die Leistung als kostspielig erweisen und kann zu einem Deadlock im UI-Thread führen. Sie können <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> aufrufen, um der Absicht der Fortsetzung zu signalisieren. |
 | CA1000 | [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000.md) | Wenn ein statischer Member eines generischen Typs aufgerufen wird, muss das Typargument für den Typ angegeben werden. Wenn ein generischer Instanzmember, der keine Unterstützung für Rückschlüsse bietet, aufgerufen wird, muss das Typargument für den Member angegeben werden. In diesen beiden Fällen ist die Syntax zum Angeben des Typarguments unterschiedlich und leicht zu verwechseln. |
 | CA1001 | [CA1001: Typen, die löschbare Felder besitzen, müssen gelöscht werden können](../code-quality/ca1001.md) | Eine Klasse deklariert und implementiert ein Instanzenfeld, das den System.IDisposable-Typ aufweist, IDisposable jedoch nicht implementiert. Eine Klasse, die ein IDisposable-Feld deklariert, besitzt indirekt eine nicht verwaltete Ressource und sollte die IDisposable-Schnittstelle implementieren. |
 | CA1002 | [CA1002: Generische Listen nicht verfügbar machen](../code-quality/ca1002.md) | System. Collections. Generic. List < (of \< (t >) >) ist eine generische Auflistung, die für Leistung und nicht Vererbung konzipiert ist. Daher enthält List keine virtuellen Member. Stattdessen sollten die generischen Auflistungen, die im Hinblick auf die Vererbung entworfen wurden, verfügbar gemacht werden. |

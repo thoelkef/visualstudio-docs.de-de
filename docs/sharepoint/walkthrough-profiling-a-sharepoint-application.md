@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981160"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189127"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Mit dem Visual Studio-Profiler können Sie den teuersten (langsamsten) Teil des Projekts suchen und eliminieren, auch bekannt als Langsamster *Pfad*.
@@ -197,7 +197,7 @@ ms.locfileid: "72981160"
 
 2. Belassen Sie auf der Seite 1 des **Leistungs-Assistenten**die Profil Erstellungs Methode als **CPU-Sampling** , und klicken Sie auf die Schaltfläche **weiter** .
 
-     Die anderen Profilerstellungsmethoden können in komplexeren Profilerstellungssituationen verwendet werden. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](/visualstudio/profiling/understanding-performance-collection-methods).
+     Die anderen Profilerstellungsmethoden können in komplexeren Profilerstellungssituationen verwendet werden. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md).
 
 3. Belassen Sie auf der Seite 2 des **Leistungs-Assistenten**das Profil Ziel als **profiletest** , und klicken Sie auf die Schaltfläche **weiter** .
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981160"
      Die Funktion sollte nun weitaus schneller aktiviert werden, da der Aufruf der Leerlaufschleife beseitigt wurde. Im Beispiel-Profilerstellungsbericht wird dies berücksichtigt.
 
 ## <a name="see-also"></a>Siehe auch
-- [Performance Explorer (Leistungs-Explorer)](/visualstudio/profiling/performance-explorer)
-- [Übersicht über Leistungssitzungen](/visualstudio/profiling/performance-session-overview)
-- [Einführung in die Leistungsprofilerstellung](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+- [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
+- [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)
 - [Auffinden von Anwendungs Engpässen mit Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

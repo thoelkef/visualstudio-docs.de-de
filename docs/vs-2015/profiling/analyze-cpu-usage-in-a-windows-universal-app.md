@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8d296c8803127cdbc2e6c72f86dcfba968e2b940
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704575"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144787"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analysieren der CPU-Auslastung in einer universellen Windows-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
+Gilt für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit damit verbringt, Code auszuführen. Für eine Fokussierung auf bestimmte Szenarios kann das CPU-Auslastungstool mit dem Tool [XAML-UI-Reaktionsfähigkeit](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), dem Tool [Energieverbrauch](../profiling/analyze-energy-use-in-store-apps.md) oder beiden in einer einzigen Diagnosesitzung verwendet werden.  
+ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit damit verbringt, Code auszuführen. Um sich auf bestimmte Szenarien zu konzentrieren, kann die CPU-Auslastung mit dem Tool [XAML-UI-Reaktionsfähigkeit](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) , dem Tool CPU-Auslastungs [Tool](../profiling/cpu-usage.md) oder beiden Tools in einer einzigen Diagnose Sitzung ausgeführt werden.  
   
 > [!NOTE]
 > Das Tool **CPU-Auslastung** kann nicht mit Windows Phone Silverlight 8.1-Apps verwendet werden.  
@@ -39,16 +39,16 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 1. Erstellen Sie ein neues Projekt für eine universelle C# Windows-App mit dem Namen **CpuUseDemo** über die Vorlage **Leere App**.  
   
-     ![Erstellen des CpuUseDemo-Projekts](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
+     ![Erstellen des cpuusedemoproject-Objekts](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
   
 2. Ersetzen Sie „MainPage.xaml“ durch [folgenden Code](#BKMK_MainPage_xaml).  
   
 3. Ersetzen Sie „MainPage.xaml.cs“ durch [folgenden Code](#BKMK_MainPage_xaml_cs).  
   
-4. Erstellen Sie die App, und probieren Sie es aus. Die App ist so einfach, dass Sie Ihnen einige häufige Fälle von Datenanalysen von CPU-Auslastung anzeigen kann.  
+4. Erstellen Sie die APP, und probieren Sie Sie aus. Die APP ist einfach genug, um Ihnen einige häufige Fälle der Analyse der CPU-Auslastung zu zeigen.  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> Erfassen von CPU-Auslastungsdaten  
- ![Releasebuild der App im Simulator ausführen](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
+ ![Ausführen eines Releasebuilds der APP im Simulator](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Stellen Sie das Bereitstellungsziel in Visual Studio auf **Simulator** und die Projektmappenkonfigurierung auf **Release** ein.  
   
@@ -56,39 +56,39 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
    - Die Ausführung dieser App im **Release**-Modus gibt Ihnen eine bessere Ansicht der tatsächlichen Leistung Ihrer App.  
   
-2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
+2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…** .  
   
 3. Wählen Sie im Leistungs- und Diagnosehub **CPU-Auslastung** und dann **Starten** aus.  
   
-    ![Diagnosesitzung der CPU-Auslastung starten](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![Starten der cpuusage-Diagnose Sitzung](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
 4. Klicken Sie nach dem Start der App auf **Maximale Anzahl abrufen**. Warten Sie nach Anzeige der Ausgabe etwa eine Minute, und klicken Sie dann auf **Maximale Anzahl asynchron abrufen**. Das Warten zwischen Schaltflächenklicks vereinfacht das Isolieren der Schaltflächenklickroutinen im Diagnosebericht.  
   
 5. Nachdem die zweite Ausgabezeile angezeigt wird, wählen Sie im Leistungs- und Diagnosehub **Auflistung beenden** aus.  
   
-   ![Datenerfassung der CPU-Auslastung beenden](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Cpuusage-Datensammlung Abbrechen](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
    Das CPU-Auslastungstool analysiert die Daten und zeigt den Bericht an.  
   
-   ![CPU-Auslastungsbericht](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Cpuusage-Bericht](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analysieren des CPU-Auslastungsberichts  
   
 ### <a name="BKMK_CPU_utilization_timeline_graph"></a> Diagramm der CPU-Auslastungszeitachse  
- ![CPU-Auslastung &#40;%&#41; Zeitachsendiagramm](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
+ ![Cpuausnutzung &#40;%&#41; Zeitachse (Diagramm)](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  Im CPU-Auslastungsdiagramm wird die CPU-Aktivität der App als Prozentsatz der gesamten CPU-Zeit von allen Prozessorkernen auf dem Gerät angezeigt. Die Daten dieses Berichts wurden auf einem Computer mit zwei Kernen erfasst. Die zwei großen Spitzen stellen die CPU-Aktivität der zwei Schaltflächenklicks dar. `GetMaxNumberButton_Click` wird synchron auf einem einzigen Kern ausgeführt, sodass es Sinn macht, dass die Diagrammhöhe der Methode nie über 50 % hinausgeht. `GetMaxNumberAsycButton_Click` wird asynchron über beide Kerne ausgeführt, deshalb sieht es auch hier richtig aus, dass die Spitze näher an die Nutzung aller CPU-Ressourcen auf beiden Kernen herankommt.  
   
 #### <a name="BKMK_Select_timeline_segments_to_view_details"></a> Für Detailansicht Zeitachsensegmente auswählen  
  Verwenden Sie die Auswahlleisten auf der Zeitachse **Diagnosesitzung**, um sich auf GetMaxNumberButton_Click-Daten zu konzentrieren:  
   
- ![GetMaxNumberButton&#95;Click ausgewählt](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
+ ![Getmaxnumschtaste&#95;klicken Sie auf ausgewählt.](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
   
  In der Zeitachse **Diagnosesitzung** wird jetzt die Zeit angezeigt, die in dem ausgewählten Segment verbracht wurde (etwas mehr als 2 Sekunden in diesem Bericht). Außerdem wird die Aufrufstruktur nach den Methoden gefiltert, die in der Auswahl ausgeführt wurden.  
   
  Wählen Sie jetzt das Segment `GetMaxNumberAsyncButton_Click` aus.  
   
- ![GetMaxNumberAsyncButton&#95;Click Auswahl Bericht](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Getmaxnumasyncbutton&#95;, klicken Sie auf Berichts Auswahl](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  Diese Methode wird rund eine Sekunde schneller abgeschlossen als `GetMaxNumberButton_Click`, aber die Bedeutung der Aufrufstruktureinträge ist weniger offensichtlich.  
   
@@ -96,7 +96,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Um sich mit den Informationen in der Aufrufstruktur vertraut zu machen, wählen Sie zunächst `GetMaxNumberButton_Click` erneut aus, und sehen Sie sich dann die Aufrufstrukturdetails an.  
   
 #### <a name="BKMK_Call_tree_structure"></a> Struktur der Aufrufstruktur  
- ![GetMaxNumberButton&#95;Click call tree](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![Getmaxnumschtaste&#95;klicken Sie auf Aufrufstruktur.](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
@@ -110,22 +110,22 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
  Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Ansicht filtern** die Option **Externen Code anzeigen** und dann **Übernehmen**aus.  
   
- ![Filteransicht auswählen, dann „Externen Code anzeigen“](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
+ ![Wählen Sie Filter Ansicht und dann externen Code anzeigen aus.](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
   
  Achten Sie darauf, dass viele externe Codeaufrufketten tief verschachtelt sind, sodass die Breite der Spalte mit dem Funktionsnamen die Anzeigebreite aller außer sehr großer Computerbildschirme überschreiten kann. In diesem Fall werden Funktionsnamen als **[…]** angezeigt:  
   
- ![Geschachtelter externer Code in der Aufrufstruktur](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
+ ![Ausgefügter externer Code in der Aufrufstruktur](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
  Verwenden Sie das Suchfeld, um nach einem gewünschten Knoten zu suchen, und verwenden Sie dann die horizontale Bildlaufleiste, um die Daten sichtbar zu machen:  
   
- ![Suche nach geschachteltem externen Code](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
+ ![Nach Ntem externen Code suchen](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
 ### <a name="BKMK_Call_tree_data_columns"></a> Spalten mit Aufrufstrukturdaten  
   
 |||  
 |-|-|  
 |**Gesamt-CPU (%)**|![Gesamt % Datengleichung](../profiling/media/cpu-use-wt-totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Der Prozentsatz der CPU-Aktivität der App im ausgewählten Zeitraum durch Aufrufe der Funktion und die von der Funktion aufgerufenen Funktionen. Beachten Sie, dass sich dieser Wert vom Zeitachsendiagramm **CPU-Auslastung** unterscheidet, das die Gesamtaktivität der App in einem Zeitraum mit der insgesamt verfügbaren CPU-Kapazität vergleicht.|  
-|**Eigen-CPU (%)**|![Eigen % Gleichung](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Der Prozentsatz der CPU-Aktivität der App im ausgewählten Zeitraum durch Aufrufe der Funktion ohne die Aktivität der von der Funktion aufgerufenen Funktionen.|  
+|**Eigen-CPU (%)**|![Selbst % Gleichung](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Der Prozentsatz der CPU-Aktivität der App im ausgewählten Zeitraum durch Aufrufe der Funktion ohne die Aktivität der von der Funktion aufgerufenen Funktionen.|  
 |**Gesamt-CPU (ms)**|Die Anzahl der Millisekunden für Aufrufe an die Funktion im ausgewählten Zeitraum und die von der Funktion aufgerufenen Funktionen.|  
 |**Eigen-CPU (ms)**|Die Anzahl der Millisekunden für Aufrufe an die Funktion im ausgewählten Zeitraum und die von der Funktion aufgerufenen Funktionen.|  
 |**Modul**|Der Name des Moduls mit der Funktion oder die Anzahl der Module, die die Funktionen in einem Knoten vom Typ [Externer Code] enthalten.|  
@@ -135,11 +135,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
  Um dies in unserem Beispiel zu sehen, wählen Sie erneut das Segment `GetMaxNumberAsyncButton_Click` in der Zeitachse aus.  
   
- ![GetMaxNumberAsyncButton&#95;Click Auswahl Bericht](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Getmaxnumasyncbutton&#95;, klicken Sie auf Berichts Auswahl](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  Die ersten zwei Knoten unter **[External Code]** sind die vom Compiler generierten Methoden der Zustandsautomatklasse. Der dritte ist der Aufruf der ursprünglichen Methode. Wenn Sie die generierte Methoden erweitern, sehen Sie, was passiert.  
   
- ![Erweitert GetMaxNumberAsyncButton&#95;Aufrufstruktur anklicken](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![Erweiterte getmaxnumasyncbutton&#95;-Click-Aufrufstruktur](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
 - `MainPage::GetMaxNumberAsyncButton_Click` macht sehr wenig, nämlich Verwalten einer Liste von Aufgabenwerten, Berechnen des Maximums der Ergebnisse und Anzeigen der Ausgabe.  
   

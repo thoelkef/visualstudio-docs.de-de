@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984976"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189151"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ von SharePoint-Projekt Element definiert und einer Element Vorlage in Visual Studio zugeordnet haben, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitstellen. Sie können den Assistenten verwenden, um Informationen von Benutzern zu sammeln, wenn Sie die Vorlage verwenden, um einem Projekt eine neue Instanz des Projekt Elements hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
@@ -79,7 +79,7 @@ ms.locfileid: "72984976"
 
 2. Vergewissern Sie sich, dass das Ziel Framework im **Projekt-Designer**auf .NET Framework 4,5 festgelegt ist.
 
-     Für visuelle C# Projekte können Sie diesen Wert auf der Registerkarte **Anwendung** festlegen. Für Visual Basic Projekte können Sie diesen Wert auf der Registerkarte **Kompilieren** festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     Für visuelle C# Projekte können Sie diesen Wert auf der Registerkarte **Anwendung** festlegen. Für Visual Basic Projekte können Sie diesen Wert auf der Registerkarte **Kompilieren** festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 3. Fügen Sie im Projekt **itemtemplatewizard** dem Projekt ein **Fenster (WPF)** -Element hinzu, und benennen Sie das Element **wizardwindow**.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72984976"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > Das Fenster, das in diesem XAML-Code erstellt wird, wird von der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Basisklasse abgeleitet. Wenn Sie Visual Studio ein benutzerdefiniertes WPF-Dialogfeld hinzufügen, wird empfohlen, dass Sie das Dialogfeld von dieser Klasse ableiten, um das konsistente formatieren mit anderen Dialogfeldern in Visual Studio zu erhalten und Probleme zu vermeiden, die andernfalls bei modalen Dialogfeldern auftreten können. Weitere Informationen finden Sie unter [Erstellen und Verwalten von modalen Dialog Feldern](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Das Fenster, das in diesem XAML-Code erstellt wird, wird von der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Basisklasse abgeleitet. Wenn Sie Visual Studio ein benutzerdefiniertes WPF-Dialogfeld hinzufügen, wird empfohlen, dass Sie das Dialogfeld von dieser Klasse ableiten, um das konsistente formatieren mit anderen Dialogfeldern in Visual Studio zu erhalten und Probleme zu vermeiden, die andernfalls bei modalen Dialogfeldern auftreten können. Weitere Informationen finden Sie unter [Erstellen und Verwalten von modalen Dialog Feldern](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 3. Wenn Sie ein Visual Basic Projekt entwickeln, entfernen Sie den `ItemTemplateWizard`-Namespace aus dem `WizardWindow` Klassennamen im `x:Class`-Attribut des `Window` Elements. Dieses Element befindet sich in der ersten XAML-Zeile. Wenn Sie fertig sind, sollte die erste Zeile dem folgenden Code ähneln:
 
@@ -206,7 +206,7 @@ ms.locfileid: "72984976"
     </WizardExtension>
     ```
 
-     Weitere Informationen zum `WizardExtension`-Element finden Sie unter [Visual Studio-Vorlagen &#40;&#41;für das WizardExtension-Element](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
+     Weitere Informationen zum `WizardExtension`-Element finden Sie unter [Visual Studio-Vorlagen &#40;&#41;für das WizardExtension-Element](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Speichern und schließen Sie die Datei.
 
@@ -345,6 +345,6 @@ ms.locfileid: "72984976"
 - [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Schemareferenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Standardmäßige benutzerdefinierte Aktions Orte und IDs](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))
