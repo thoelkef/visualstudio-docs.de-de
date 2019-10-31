@@ -5,16 +5,16 @@ ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
-description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
+ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681667"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816452"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
-Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrer [monatlichen Azure-Gutschrift](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
+Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
@@ -78,9 +78,9 @@ Antwort:  Sie erhalten diese E-Mail, weil Sie den mit Ihrem Visual Studio-Abonne
 
 **Empfohlene Aktion:**
 
-Führen Sie einen der folgenden Schritte aus, um Ihre Visual Studio Azure-Gutschrift und -Rabatte weiter zu verwenden:
+Führen Sie einen der folgenden Schritte aus, um Ihre Visual Studio Einzelguthaben und -Rabatte für Azure DevTest weiter zu verwenden:
 
-Wenn jemand in Ihrem Team oder Ihrer Organisation Abonnements in Ihrem Namen erwirbt, wenden Sie sich an den Visual Studio-Administrator Ihrer Organisation, und fordern Sie ein Visual Studio-Abonnement an, das Sie zu der von Ihnen benötigten monatlichen Azure-Gutschrift berechtigt.   Fordern Sie den Administrator auf, das neue Abonnement derselben Benutzer-ID zuzuweisen, der Ihr vorheriges Abonnement zugewiesen wurde, damit Sie sich nicht um die Übertragung Ihres Azure-Abonnements kümmern müssen.
+Wenn jemand in Ihrem Team oder Ihrer Organisation Abonnements in Ihrem Namen erwirbt, wenden Sie sich an den Visual Studio-Administrator Ihrer Organisation, und fordern Sie ein Visual Studio-Abonnement an, das Sie zu dem von Ihnen benötigten Einzelguthaben für Azure DevTest berechtigt.   Fordern Sie den Administrator auf, das neue Abonnement derselben Benutzer-ID zuzuweisen, der Ihr vorheriges Abonnement zugewiesen wurde, damit Sie sich nicht um die Übertragung Ihres Azure-Abonnements kümmern müssen.
 
 Wenn Sie ein Abonnement direkt erwerben können, gehen Sie wie folgt vor:
 1. Erwerben Sie ein jährliches Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)- oder [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)-Cloudabonnement über den Visual Studio Marketplace.

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über das Windows-Entwicklerkonto, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 506edeb75a2dba2831c57698a4259a09834633de
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787790"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816427"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows-Entwicklerkonto in Visual Studio-Abonnements
 Mit Ihrem Windows-Entwicklerkonto, das in ausgewählten Visual Studio-Abonnements enthalten ist, können Sie kostenlose und kostenpflichtige Windows-Apps an den Windows Store übermitteln.
@@ -63,4 +63,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
-Azure ist Ihre persönliche Sandbox zum Entwickeln/Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen. Stellen Sie sicher, dass Sie Ihren [Azure-Vorteil](vs-azure.md) aktivieren, um Azure mit monatlichen Gutschriften verwenden zu können.
+Azure ist Ihre persönliche Sandbox zum Entwickeln/Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen. Stellen Sie sicher, dass Sie Ihren [Azure-Vorteil](vs-azure.md) aktivieren, um Ihr Einzelguthaben für Azure DevTest verwenden zu können.

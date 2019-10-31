@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128154"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806926"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -50,7 +50,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
 - **ASP.NET**, **ASP.NET Core**, **Python** und **Node.js:** Mithilfe einer der folgenden Methoden können Sie Apps in Azure App Service oder Azure App Service Linux (mit Containern) veröffentlichen.
 
-  - Verwenden Sie Azure DevOps mit [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops) für die kontinuierliche (oder automatisierte) Bereitstellung von Apps.
+  - Verwenden Sie Azure DevOps mit [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops) für die kontinuierliche (oder automatisierte) Bereitstellung von Apps.
 
   - Verwenden Sie das Tool zum **Veröffentlichen** in Visual Studio für die einmalige (oder manuelle) Bereitstellung von Apps.
 
@@ -58,7 +58,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
   Klicken Sie zur Verwendung des Tools zum **Veröffentlichen** mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer, und wählen Sie **Veröffentlichen** aus. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie im Dialogfeld „Veröffentlichen“ entweder **App Service** oder **Azure Virtual Machines** aus, und führen Sie dann die Konfigurationsschritte aus.
 
-  ![Auswahl von Azure App Service](../deployment/media/quickstart-publish-azure.png "Choose Azure App Service")
+  ![Azure App Service auswählen](../deployment/media/quickstart-publish-azure.png "Azure App Service auswählen")
 
   Ab Visual Studio 2017, Version 15.7 können Sie ASP.NET Core-Apps in **App Service für Linux** bereitstellen.
 
@@ -81,7 +81,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
     Weitere Informationen zum Importieren eines Veröffentlichungsprofils in Visual Studio, finden Sie unter [Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Es gibt noch viele weitere Möglichkeiten, ASP.NET-Anwendungen und -Dienste bereitzustellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und -Diensten](http://www.asp.net/aspnet/overview/deployment).
+    Es gibt noch viele weitere Möglichkeiten, ASP.NET-Anwendungen und -Dienste bereitzustellen. Weitere Informationen finden Sie unter [Bereitstellen von ASP.NET-Webanwendungen und -Diensten](/aspnet/mvc/overview/deployment/).
 
 - **Windows Desktop**: Mit der ClickOnce-Bereitstellung können Sie eine Windows-Desktopanwendung auf einem Webserver oder in einer Netzwerk-Dateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren. Weitere Informationen finden Sie unter [Bereitstellen einer Desktop-App mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# und Visual Basic). Informationen zu C++/CLI finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
@@ -118,7 +118,7 @@ Wenn Sie eine komplexere Installation einer Desktop-Anwendung benötigen als [Cl
    Laden Sie sich für Visual Studio 2019 die [WiX-Toolseterweiterung für Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension) herunter.
    ::: moniker-end
 
-- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 und höheren Versionen verwendet werden (Community Edition wird nicht unterstützt). Beachten Sie, dass InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist und in Visual Studio 2017 und höheren Versionen nicht unterstützt wird. Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
+- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 und höheren Versionen verwendet werden (Community Edition wird nicht unterstützt). Beachten Sie, dass InstallShield Limited Edition nicht mehr in Visual Studio enthalten ist und in Visual Studio 2017 und höheren Versionen nicht unterstützt wird. Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 
 - MSI- oder EXE-Installer-Pakete können mithilfe eines Setupprojekts (vdproj) erstellt werden. Installieren Sie die [Projekterweiterung für Visual Studio-Installer](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview), um diese Option zu verwenden.
 
