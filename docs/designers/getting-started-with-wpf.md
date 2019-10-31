@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f921ce292e34147d54af977567373634610becfd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b7794b4dd300cf66ea894227f9346e80ee68085
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637291"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924506"
 ---
 # <a name="get-started-with-wpf"></a>Erste Schritte mit WPF
 
@@ -27,12 +27,13 @@ Dieser Abschnitt enthält Themen, die Sie mit WPF bekannt machen und Ihnen den E
 |-|-|
 |Ich möchte direkt beginnen…|[Exemplarische Vorgehensweise: Walkthrough: My first WPF desktop application (Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung)](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Ich möchte XAML-Designtools vergleichen...|[Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md)|
-|Neu bei .NET?|[Übersicht über .NET](/dotnet/framework/get-started/overview)<br /><br /> [Grundlagen der Anwendung](/dotnet/standard/application-essentials)<br /><br /> [Erste Schritte mit Visual C# und Visual Basic](../ide/quickstart-visual-basic-console.md)|
-|Weitere Informationen über WPF...|[WPF-Übersicht](../designers/introduction-to-wpf.md)<br /><br /> [Übersicht über XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Steuerelemente](/dotnet/framework/wpf/controls/)<br /><br /> [Übersicht über Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
-|Sind Sie ein Windows Forms-Entwickler?|[Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Unterstützte Szenarios bei der Zusammenarbeit von WPF und Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
+|Neu bei .NET?|[Leitfaden für .NET](/dotnet/standard/)<br /><br />[Grundlagen der Anwendung](/dotnet/standard/application-essentials)<br /><br />[Erste Schritte mit Visual C#](../ide/quickstart-csharp-console.md)|
+|Weitere Informationen über WPF...|[WPF-Übersicht](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Übersicht über XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Steuerelemente](/dotnet/framework/wpf/controls/)<br /><br />[Übersicht über Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[WPF-Datenbindung mit LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
+|Sind Sie ein Windows Forms-Entwickler?|[Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Unterstützte Szenarios bei der Zusammenarbeit von WPF und Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Desktopleitfaden für WPF](/dotnet/desktop-wpf/overview/index)
 - [Klassenbibliothek (WPF)](/dotnet/framework/wpf/class-library-wpf)
 - [Ressourcen für die WPF-Community](/dotnet/framework/wpf/getting-started/community-feedback)
 - [Anwendungsentwicklung](/dotnet/framework/wpf/app-development/index)

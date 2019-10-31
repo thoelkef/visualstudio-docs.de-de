@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154951"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061163"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -40,7 +40,7 @@ Einführung:
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio unterstützt die Python-Version 2.7 und Versionen ab 3.5. Es ist zwar möglich, Code mit Visual Studio zu bearbeiten, der in anderen Versionen von Python geschrieben wurde, aber diese Versionen werden offiziell nicht unterstützt, und Funktionen wie IntelliSense und Debuggen funktionieren möglicherweise nicht.
+> Visual Studio unterstützt die Python-Version 2.7 und Version 3.5 bis 3.7. Es ist zwar möglich, Code mit Visual Studio zu bearbeiten, der in anderen Versionen von Python geschrieben wurde, aber diese Versionen werden offiziell nicht unterstützt, und Funktionen wie IntelliSense und Debuggen funktionieren möglicherweise nicht. Die Python-Version 3.8 befindet sich immer noch in der Entwicklung. Ausführliche Informationen zum Support finden Sie in diesem [Issue auf GitHub](https://github.com/microsoft/PTVS/issues/5822).
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Unterstützung mehrerer Interpreter

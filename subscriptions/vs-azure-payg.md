@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
-ms.openlocfilehash: 6a2d4eab9ecc0adb6a89d87ceccb45b1472142b9
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 851ebd4a3218cada7af5ac139a7297094abde0c6
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681142"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816401"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure Dev/Test-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
@@ -21,7 +21,7 @@ Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Te
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG-Kachel](_img/vs-azure-payg/vs-azure-payg-tile.png)
 
-2. Wenn Sie bereits ein Azure-Konto als Teil Ihrer Abonnementvorteile aktiviert haben (wenn Sie z.B. ein Enterprise-Abonnement besitzen und Ihr monatliches Azure-Guthaben von 150 USD aktiviert haben), fahren Sie mit Schritt 5 fort.
+2. Wenn Sie bereits ein Azure-Konto als Teil Ihrer Abonnementvorteile aktiviert haben (wenn Sie z. B. ein Enterprise-Abonnement besitzen und Ihr monatliches Einzelguthaben für Azure DevTest von 150 USD aktiviert haben), fahren Sie mit Schritt 5 fort.
 
 3. Auf der Anmeldeseite von Microsoft Azure können Sie entweder das Dev/Test Pay-As-You-Go-Angebot (PAYG) einrichten oder ein Upgrade auf das Visual Studio Enterprise-Angebot durchführen.  Klicken Sie auf **Mit dem aktuellen Angebot (Dev/Test Pay-As-You-Go) fortfahren**, wenn Sie kein Upgrade durchführen möchten.
 
@@ -44,7 +44,7 @@ Antwort: So nehmen Sie Änderungen an Ihren Azure-Abonnements vor:
 4. Sie haben nun die Möglichkeit, das Abonnement zu verwalten oder zu kündigen, es umzubenennen, das Verzeichnis zu wechseln oder den Abrechnungsbesitz zu übertragen.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Viele Abonnements enthalten zusätzliche Azure-bezogene Vorteile wie Azure DevOps und Azure-Gutschriften.  Weitere Informationen zu diesen Vorteilen finden Sie unter:
+Viele Abonnements enthalten zusätzliche Azure-bezogene Vorteile wie Azure DevOps und Einzelguthaben für Azure DevTest.  Weitere Informationen zu diesen Vorteilen finden Sie unter:
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure-Gutschriften](vs-azure.md)
+- [Einzelguthaben für Azure DevTest](vs-azure.md)
 
