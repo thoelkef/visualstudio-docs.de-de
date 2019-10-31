@@ -12,16 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0540ac17ca64f24ead19b8b3655175d12fa42e41
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253974"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189750"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Verwenden von WPF-Steuerelementen in Office-Lösungen
 
-Mit den Office-Entwicklungstools in Visual Studio erstellte Projektmappen sind zwar für das direkte Arbeiten mit Windows Forms-Steuerelementen ausgelegt, Sie können jedoch auch WPF-Steuerelemente in den Projektmappen verwenden. Windows Presentation Foundation (WPF) bietet eine Alternative zu Windows Forms für das Entwerfen von Benutzeroberflächen. WPF bietet mithilfe einer Markupsprache namens XAML (Extensible Application Markup Language) neue Techniken zum Integrieren von Benutzeroberflächen, Medien und Dokumenten. Weitere Informationen finden Sie unter [Übersicht über WPF](../designers/introduction-to-wpf.md).
+Mit den Office-Entwicklungstools in Visual Studio erstellte Projektmappen sind zwar für das direkte Arbeiten mit Windows Forms-Steuerelementen ausgelegt, Sie können jedoch auch WPF-Steuerelemente in den Projektmappen verwenden. Windows Presentation Foundation (WPF) bietet eine Alternative zu Windows Forms für das Entwerfen von Benutzeroberflächen. WPF bietet mithilfe einer Markupsprache namens XAML (Extensible Application Markup Language) neue Techniken zum Integrieren von Benutzeroberflächen, Medien und Dokumenten. Weitere Informationen finden Sie unter [Übersicht über WPF](/dotnet/framework/wpf/introduction-to-wpf).
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -53,11 +53,11 @@ Sie können Benutzeroberflächenelementen in Office-Projektmappen WPF-Steuerelem
 
 5. Fügen Sie dem Projekt einen Aktionsbereich, einen Formularbereich oder einen benutzerdefinierten Aufgabenbereich hinzu:
 
-    - Fügen Sie für Formular Bereiche dem Projekt ein **Outlook-Formular Bereichs** Element hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)in-Projekt.
+    - Fügen Sie für Formular Bereiche dem Projekt ein **Outlook-Formular Bereichs** Element hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Fügen Sie dem Projekt für Aktionsbereiche ein Aktionsbereich- **Steuer** Element oder ein **Benutzer Steuer** Element hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie Word-Dokumenten oder Excel-Arbeits](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)Mappen einen Aktionsbereich hinzu.
+    - Fügen Sie dem Projekt für Aktionsbereiche ein Aktionsbereich- **Steuer** Element oder ein **Benutzer Steuer** Element hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeits](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)Mappen.
 
-    - Fügen Sie für benutzerdefinierte Aufgabenbereiche dem Projekt ein **Benutzer Steuer** Element-Element hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)einer Anwendung.
+    - Fügen Sie für benutzerdefinierte Aufgabenbereiche dem Projekt ein **Benutzer Steuer** Element-Element hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6. Ziehen Sie aus der Registerkarte *ProjectName* **WPF-Benutzer Steuerelemente** der **Toolbox**das WPF-Benutzer Steuerelement in den Designer für den Aktionsbereich, den Formular Bereich oder den benutzerdefinierten Aufgabenbereich.
 
@@ -114,7 +114,7 @@ Weitere Informationen über das Hinzufügen von WPF-Steuerelementen zu Windows F
 
 - [Exemplarische Vorgehensweise: Anordnen von WPF-Inhalt auf Windows Forms zur Entwurfszeit](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
-- [Exemplarische Vorgehensweise: Stil von WPF-Inhalt](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+- [Exemplarische Vorgehensweise: Formatieren von WPF-Inhalten](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -123,6 +123,6 @@ Weitere Informationen über das Hinzufügen von WPF-Steuerelementen zu Windows F
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)
 - [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
-- [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Vorgehensweise: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Gewusst wie: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

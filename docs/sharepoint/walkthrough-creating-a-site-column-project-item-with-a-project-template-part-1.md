@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ede811cf2e9d900a0c78aca2214b43bd8438fe
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984702"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189173"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.
@@ -433,7 +433,7 @@ ms.locfileid: "72984702"
 
    - Verwendet den Namespace "<http://schemas.microsoft.com/developer/vstemplate/2005>". Andere Projektdateien in dieser Projekt Mappe verwenden den Namespace "<http://schemas.microsoft.com/developer/msbuild/2003>". Daher werden XML-Schema-Warnmeldungen generiert, die Sie aber bei dieser exemplarischen Vorgehensweise ignorieren können.
 
-     Weitere Informationen zum Inhalt von *VSTEMPLATE* -Dateien finden Sie unter [Schema Referenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Weitere Informationen zum Inhalt von *VSTEMPLATE* -Dateien finden Sie unter [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
 
 2. Speichern und schließen Sie die Datei.
 

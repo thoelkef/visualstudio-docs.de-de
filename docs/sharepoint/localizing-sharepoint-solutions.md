@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981718"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189222"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalisieren von SharePoint-Lösungen
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981718"
 |Sprachunabhängig|Eine Ressourcendatei mit lokalisierten Zeichenfolgen für eine Sprache, aber nicht für eine bestimmte Kultur. Beispiel: "fr" für Französisch.|
 |Sprachspezifisch|Eine Ressourcendatei mit lokalisierten Zeichenfolgen für eine Sprache und eine Kultur. Beispiel: "fr-CA" für Französisch (Kanada).|
 
- Weitere Informationen finden Sie unter [hierarchische Organisation der Ressourcen für die Lokalisierung](../ide/hierarchical-organization-of-resources-for-localization.md).
+ Weitere Informationen finden Sie unter [hierarchische Organisation der Ressourcen für die Lokalisierung](../ide/globalizing-and-localizing-applications.md).
 
  Um Standard Ressourcen Dateien in SharePoint-Projekten anzugeben, die Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]entwickeln, wählen Sie in der Liste Kultur des Dialog Felds **Ressource hinzufügen** die Option **invariante Sprache (invarianter Land)** aus, wenn Sie eine Ressourcen Datei hinzufügen.
 

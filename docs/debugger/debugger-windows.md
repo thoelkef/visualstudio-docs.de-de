@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91df84c92761ae75ce9f26bddefad57c6dc8bc2c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738310"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188538"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Überprüfen von Daten mit Debuggerfenstern in Visual Studio
 
@@ -39,7 +39,7 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Aufgaben|STRG+UMSCHALT+D, K|[Verwenden des Fensters „Aufgaben“](../debugger/using-the-tasks-window.md)|
 |Python Debug Interactive|UMSCHALT+ALT+I|[Interaktive Python-REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript-Konsole|STRG+ALT+V, C|[Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM-Explorer|STRG+ALT+V, D|[Debuggen von Layout mithilfe von DOM Explorer](/visualstudio/debugger/quickstart-debug-html-and-css)|
+|DOM-Explorer|STRG+ALT+V, D|[Debuggen von Layout mithilfe von DOM Explorer](quickstart-debug-html-and-css.md)|
 |Visuelle Echtzeitstruktur|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Echtzeit-Eigenschaften-Explorer|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Prozesse|STRG+ALT+Z|[Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)|

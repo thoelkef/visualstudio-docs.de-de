@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erstellen Sie ein SharePoint-Befehl | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Erstellen eines SharePoint-Befehls | Microsoft-Dokumentation'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,28 +12,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c07d541dc4f68f33d48e7cb41b6bc3923b2ea52
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435452"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189228"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Vorgehensweise: Erstellen eines SharePoint-Befehls
-  Wenn Sie das Serverobjektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie erstellen eine benutzerdefinierte *SharePoint-Befehls* zum Aufrufen der API. Sie definieren den SharePoint-Befehl in einer Assembly, die direkt in das Serverobjektmodell aufrufen können.
+  Wenn Sie das Server Objektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie einen benutzerdefinierten *SharePoint-Befehl* erstellen, um die API aufzurufen. Sie definieren den SharePoint-Befehl in einer Assembly, die das Server Objektmodell direkt abrufen kann.
 
- Weitere Informationen zum Zweck der SharePoint-Befehle finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).
+ Weitere Informationen zum Zweck von SharePoint-Befehlen finden Sie unter " [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)".
 
 ### <a name="to-create-a-sharepoint-command"></a>So erstellen Sie einen SharePoint-Befehl
 
-1. Erstellen Sie ein Klassenbibliotheksprojekt, das die folgende Konfiguration aufweist:
+1. Erstellen Sie ein Klassen Bibliotheksprojekt mit der folgenden Konfiguration:
 
-    - Ist .NET Framework 3.5 ausgerichtet. Weitere Informationen zur Auswahl des Zielframeworks finden Sie unter [Vorgehensweise: Erstellen von Projekten für eine bestimmte .NET Framework-Version](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    - Zielt auf den .NET Framework 3,5 ab. Weitere Informationen zum Auswählen des Ziel-Frameworks finden [Sie unter Gewusst wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-    - Das Ziel ist die "anycpu" oder X64 Plattform. Standardmäßig ist die Zielplattform für Klassenbibliotheksprojekte "anycpu". Weitere Informationen zum Auswählen der Zielplattform finden Sie unter [Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md).
+    - Zielt auf die anycpu-oder x64-Plattform ab. Standardmäßig ist die Zielplattform für Klassen Bibliotheks Projekte anycpu. Weitere Informationen zum Auswählen der Zielplattform finden Sie unter Gewusst [wie: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    > Einen SharePoint-Befehl kann nicht im selben Projekt, das eine SharePoint-Tools-Erweiterung definiert implementiert werden, da SharePoint-Befehle das Ziel .NET Framework 3.5 und SharePoint-Tools-Erweiterungen als Ziel der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Sie müssen alle SharePoint-Befehle definieren, die durch die Erweiterung in einem separaten Projekt verwendet werden. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Ein SharePoint-Befehl kann nicht im selben Projekt implementiert werden, das eine Erweiterung der SharePoint-Tools definiert, da für SharePoint-Befehle die .NET Framework 3,5-und SharePoint-Tools-Erweiterungen auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]abzielen. Sie müssen alle SharePoint-Befehle definieren, die von der Erweiterung in einem separaten Projekt verwendet werden. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
@@ -41,31 +41,31 @@ ms.locfileid: "63435452"
 
     - Microsoft.SharePoint
 
-3. Erstellen Sie eine Methode, die Ihre SharePoint-Befehl definiert, in einer Klasse im Projekt. Die Methode muss die folgenden Richtlinien entsprechen:
+3. Erstellen Sie in einer Klasse im Projekt eine Methode, die den SharePoint-Befehl definiert. Die-Methode muss den folgenden Richtlinien entsprechen:
 
-    - Sie können einen oder zwei Parameter haben.
+    - Sie kann über einen oder zwei Parameter verfügen.
 
-         Der erste Parameter muss ein <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> Objekt. Dieses Objekt stellt die Microsoft.SharePoint.SPSite oder Microsoft.SharePoint.SPWeb, in dem der Befehl ausgeführt wird. Außerdem wird ein <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> -Objekt, das zum Schreiben von Nachrichten verwendet werden kann die **Ausgabe** Fenster oder **Fehlerliste** Fenster in Visual Studio.
+         Der erste Parameter muss ein <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> Objekt sein. Dieses Objekt stellt das Microsoft. SharePoint. SPSite-oder Microsoft. SharePoint. SPWeb-Objekt bereit, in dem der Befehl ausgeführt wird. Außerdem wird ein <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> Objekt bereitgestellt, das zum Schreiben von Nachrichten in das **Ausgabe** Fenster oder **Fehlerliste** Fenster in Visual Studio verwendet werden kann.
 
-         Der zweite Parameter kann ein Typ Ihrer Wahl sein, aber dieser Parameter ist optional. Sie können diesen Parameter auf der SharePoint-Befehl hinzufügen, Daten aus der SharePoint-Tools-Erweiterung an den Befehl übergeben werden sollen.
+         Der zweite Parameter kann ein Typ Ihrer Wahl sein, aber dieser Parameter ist optional. Sie können diesen Parameter zum SharePoint-Befehl hinzufügen, wenn Sie Daten aus der Erweiterung der SharePoint-Tools an den Befehl übergeben müssen.
 
-    - Sie können einen Rückgabewert haben, aber dies ist optional.
+    - Sie kann einen Rückgabewert haben, aber dies ist optional.
 
-    - Der zweite Parameter und Rückgabetypen-Wert muss ein Typ sein, der von der Windows Communication Foundation (WCF) serialisiert werden können. Weitere Informationen finden Sie unter [Types Supported by the Data Contract Serializer](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) und [mithilfe der XmlSerializer-Klasse](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
+    - Der zweite Parameter und der Rückgabewert müssen ein Typ sein, der vom Windows Communication Foundation (WCF) serialisiert werden kann. Weitere Informationen finden Sie [unter vom Datenvertragsserialisierer unterstützte Typen](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) und [Verwenden der XmlSerializer-Klasse](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - Die Methode kann eine beliebige Sichtbarkeit aufweisen (**öffentliche**, **interne**, oder **private**), und es kann statisch oder nicht statisch sein.
+    - Die-Methode kann über eine beliebige Sichtbarkeit (**öffentlich**, **intern**oder **Privat**) verfügen, und Sie kann statisch oder nicht statisch sein.
 
-4. Anwenden der <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> an die Methode. Dieses Attribut gibt einen eindeutigen Bezeichner für den Befehl an; Diese ID muss nicht dem Methodennamen entsprechen.
+4. Wenden Sie den <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> auf die-Methode an. Dieses Attribut gibt einen eindeutigen Bezeichner für den Befehl an. Dieser Bezeichner muss nicht mit dem Methodennamen identisch sein.
 
-     Sie müssen den gleichen Bezeichner angeben, wenn Sie den Befehl aufrufen, die sich von der SharePoint-Tools-Erweiterung. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen einer SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md).
+     Sie müssen denselben eindeutigen Bezeichner angeben, wenn Sie den Befehl von der SharePoint-Tools-Erweiterung aus aufgerufen haben. Weitere Informationen finden Sie unter Gewusst [wie: Ausführen eines SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md).
 
 ## <a name="example"></a>Beispiel
- Im folgenden Codebeispiel wird veranschaulicht, einen SharePoint-Befehl mit dem Bezeichner `Contoso.Commands.UpgradeSolution`. Dieser Befehl verwendet die APIs in das Serverobjektmodell auf einer bereitgestellten Lösung aktualisieren.
+ Im folgenden Codebeispiel wird ein SharePoint-Befehl veranschaulicht, der den Bezeichner `Contoso.Commands.UpgradeSolution`hat. Dieser Befehl verwendet APIs im Server-Objektmodell, um ein Upgrade auf eine bereitgestellte Lösung auszuführen.
 
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
 
- Zusätzlich zu den impliziten ersten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> -Parameter mit diesem Befehl verfügt auch über eine benutzerdefinierte Zeichenfolge-Parameter, der den vollständigen Pfad der WSP-Datei enthält, die zur SharePoint-Website aktualisiert wird. Dieser Code im Rahmen eines größeren Beispiels, finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+ Zusätzlich zum impliziten ersten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>-Parameter verfügt dieser Befehl auch über einen benutzerdefinierten Zeichen folgen Parameter, der den vollständigen Pfad der wsp-Datei enthält, die auf die SharePoint-Website aktualisiert wird. Um diesen Code im Kontext eines größeren Beispiels anzuzeigen, finden Sie weitere Informationen unter Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Bereitstellungs Schritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="compiling-the-code"></a>Kompilieren des Codes
  Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:
@@ -75,9 +75,9 @@ ms.locfileid: "63435452"
 - Microsoft.SharePoint
 
 ## <a name="deploying-the-command"></a>Bereitstellen des Befehls
- Zum Bereitstellen des Befehls, schließen Sie die Befehlsassembly in der gleichen [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterung (*Vsix*) Paket mit der Erweiterungsassembly, die der Befehl verwendet. Sie müssen auch einen Eintrag für die Befehlsassembly "in der Datei" extension.vsixmanifest "hinzufügen. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Zum Bereitstellen des Befehls schließen Sie die befehlsassembly in das gleiche [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (*VSIX*)-Paket ein, das die Erweiterungsassembly verwendet, die den Befehl verwendet. Außerdem müssen Sie in der Datei Extension. vsixmanifest einen Eintrag für die befehlsassembly hinzufügen. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Vorgehensweise: Führen Sie einen SharePoint-Befehl](../sharepoint/how-to-execute-a-sharepoint-command.md)
-- [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [Vorgehensweise: Ausführen eines SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md)
+- [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

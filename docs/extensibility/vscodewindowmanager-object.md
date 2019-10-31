@@ -1,5 +1,5 @@
 ---
-title: VSCodeWindowManager-Objekt | Microsoft-Dokumentation
+title: Vscoabwindowmanager-Objekt | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1da94495019d30a8ba3df8bdaa7df0ccf2ae4d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322933"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189032"
 ---
-# <a name="vscodewindowmanager-object"></a>VSCodeWindowManager object
-Der Sprachdienst den Codefenster-Manager implementiert und ist verantwortlich für die Verwaltung von Zusatzelemente (z. B. die Dropdownleiste). Weitere Informationen finden Sie unter [Anpassen von Code Windows mit der Legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
+# <a name="vscodewindowmanager-object"></a>Vscoabwindowmanager-Objekt
 
- Die folgende Tabelle zeigt die Schnittstellen der `VSCodeWindowManager` Objekt.
+Der Sprachdienst implementiert den Code Fenster-Manager und ist für die Verwaltung von Zusatzelementen zuständig (z. b. die Dropdown Leiste). Weitere Informationen finden Sie unter [Anpassen von Code Fenstern mit der Legacy-API](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+
+In der folgenden Tabelle werden die Schnittstellen im `VSCodeWindowManager` Objekt angezeigt.
 
 |Interface|Beschreibung|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht Zusatzelementen (z. B. dropdownleisten) hinzugefügt oder aus einem Codefenster entfernt werden.|
-
-## <a name="see-also"></a>Siehe auch
-- [Anpassen von Fenstern des Code mit der legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht das Hinzufügen oder Entfernen von Zusatzelemente (z. b. Dropdown leisten) zu einem Code Fenster.|

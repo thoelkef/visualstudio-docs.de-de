@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745697"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188698"
 ---
 # <a name="client-side-script-debugging"></a>Debuggen von clientseitigen Skripts
 Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und Beheben von Fehlern in clientseitigen Skripts auf ASP.NET-Seiten bereit.
@@ -61,7 +61,7 @@ Im **Projektmappen-Explorer** können Sie Listen serverseitiger und clientseitig
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debuggen von ASP.NET- und AJAX-Anwendungen](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Debuggen von ASP.NET- und AJAX-Anwendungen](how-to-enable-debugging-for-aspnet-applications.md)
 - [Einschränkungen beim Skriptdebugging](../debugger/limitations-on-script-debugging.md)
 - [Variablenfenster](../debugger/debugger-windows.md)
 - [Direktfenster](../ide/reference/immediate-window.md)

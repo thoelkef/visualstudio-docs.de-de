@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ee2d7470a14836d7369fb916c06f2a8172c4e6b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551638"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189717"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Lösungen
 
@@ -31,7 +31,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="create-office-projects"></a>Erstellen von Office-Projekten
- Bevor Sie beginnen, sollten Sie die Anforderungen bestimmen und den am besten geeigneten Lösungstyp festlegen. Wenn die Office-Projektmappe z. B. bei jeder Verwendung der Anwendung ausgeführt werden muss, ist ein VSTO-Add-In die beste Lösung für Ihre Anforderungen. Wenn der Code fest in ein einzelnes Dokument integriert ist, erstellen Sie eine Anpassung auf Dokumentebene. Diese Projekttypen sind als Visual Studio-Projektvorlagen verfügbar. Weitere Informationen zu den Office-Projektvorlagen, die in Visual Studio enthalten sind, finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md). Weitere Informationen zum Erstellen von Office-Projekten finden [Sie unter Gewusst wie: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+ Bevor Sie beginnen, sollten Sie die Anforderungen bestimmen und den am besten geeigneten Lösungstyp festlegen. Wenn die Office-Projektmappe z. B. bei jeder Verwendung der Anwendung ausgeführt werden muss, ist ein VSTO-Add-In die beste Lösung für Ihre Anforderungen. Wenn der Code fest in ein einzelnes Dokument integriert ist, erstellen Sie eine Anpassung auf Dokumentebene. Diese Projekttypen sind als Visual Studio-Projektvorlagen verfügbar. Weitere Informationen zu den Office-Projektvorlagen, die in Visual Studio enthalten sind, finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md). Weitere Informationen zum Erstellen von Office-Projekten finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
  Office-Projekte enthalten Funktionen und Projektelemente, die sich von anderen Projekttypen in Visual Studio unterscheiden. Wenn Sie z. B. ein Projekt auf Dokumentebene erstellen, kann das Dokument oder die Arbeitsmappe im Projekt in Visual Studio geöffnet und bearbeitet werden. Weitere Informationen finden Sie unter [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -44,13 +44,13 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  Die .NET Framework Version, die Sie für Ihr Projekt auswählen, ist auf Endbenutzer Computern erforderlich, damit die Projekt Mappe ausgeführt werden kann. Wenn das Projekt z. b. auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]abzielt [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , ist auf Endbenutzer Computern erforderlich. In diesem Beispiel wird die Projekt Mappe nicht ausgeführt, wenn nur der .NET Framework 3,5 auf Endbenutzer Computern installiert ist.
+  Die .NET Framework Version, die Sie für Ihr Projekt auswählen, ist auf Endbenutzer Computern erforderlich, damit die Projekt Mappe ausgeführt werden kann. Wenn Ihr Projekt beispielsweise auf den [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]abzielt, ist die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] auf Endbenutzer Computern erforderlich. In diesem Beispiel wird die Projekt Mappe nicht ausgeführt, wenn nur der .NET Framework 3,5 auf Endbenutzer Computern installiert ist.
 
   Wenn Sie ein VSTO-Add-In-Projekt migrieren, das .NET Framework 3.5 als Ziel verwendet, ändert Visual Studio das Zielframework des Projekts in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher, je nach installierter Office-Version.
 
-  Nachdem das Zielframework von Visual Studio geändert wurde, müssen Sie jedoch möglicherweise einen Teil des Codes im Projekt ändern, wenn es bestimmte Funktionen verwendet. Weitere Informationen zum Ändern des Ziel Frameworks finden [Sie unter Gewusst wie: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Weitere Informationen zu Änderungen, die Sie möglicherweise in Ihrem Projekt vornehmen müssen, finden Sie unter Migrieren von Office-Projektmappen [zum .NET Framework 4 oder](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)höher.
+  Nachdem das Zielframework von Visual Studio geändert wurde, müssen Sie jedoch möglicherweise einen Teil des Codes im Projekt ändern, wenn es bestimmte Funktionen verwendet. Weitere Informationen zum Ändern des Ziel Frameworks finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Weitere Informationen zu Änderungen, die Sie möglicherweise in Ihrem Projekt vornehmen müssen, finden Sie unter Migrieren von Office-Projektmappen [zum .NET Framework 4 oder](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)höher.
 
-  Wenn Visual Studio die Ziel .NET Framework für Ihr Projekt ändert und Sie ClickOnce verwenden, um die Projekt Mappe bereitzustellen, müssen Sie auch die entsprechende Version des .NET Framework im Dialogfeld erforderliche Komponenten auswählen. Diese Auswahl wird nicht automatisch geändert, wenn Sie das Zielframework für das Projekt ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren Sie die erforderlichen Komponenten auf Endbenutzer Computern zum Ausführen](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)von Office-Projektmappen.
+  Wenn Visual Studio die Ziel .NET Framework für Ihr Projekt ändert und Sie ClickOnce verwenden, um die Projekt Mappe bereitzustellen, müssen Sie auch die entsprechende Version des .NET Framework **im Dialogfeld** erforderliche Komponenten auswählen. Diese Auswahl wird nicht automatisch geändert, wenn Sie das Zielframework für das Projekt ändern. Weitere Informationen finden Sie unter Gewusst [wie: Installieren von erforderlichen Komponenten auf Endbenutzer Computern zum Ausführen von Office-](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)Projektmappen.
 
 > [!NOTE]
 > Sie können .NET Framework 3.5 oder frühere Versionen in Office-Projekten, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, nicht als Ziel verwenden. Office-Projekte, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, erfordern Funktionen, die anfänglich in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] eingeführt wurden.
@@ -63,7 +63,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 ### <a name="understand-the-client-profile"></a>Grundlegendes zum Client Profil
  .NET Framework Client Profile ist eine Teilmenge der Vollversion von .NET Framework. Sie können .NET Framework Client Profile verwenden, wenn nur die Clientfunktionen in .NET Framework verwendet werden müssen und die schnellstmögliche Bereitstellung für die Office-Lösung angegeben werden soll. Weitere Informationen finden Sie unter [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).
 
- Wenn Sie ein Office-Projekt erstellen, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] abzielt, wird [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] standardmäßig als Ziel verwendet. Wenn Sie ein Projekt für das vollständige [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] entwickeln möchten, müssen Sie diese Option festlegen, nachdem das Projekt erstellt wurde. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Wenn Sie ein Office-Projekt erstellen, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] abzielt, wird [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] standardmäßig als Ziel verwendet. Wenn Sie ein Projekt für das vollständige [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] entwickeln möchten, müssen Sie diese Option festlegen, nachdem das Projekt erstellt wurde. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Erstellen Sie Lösungen für die 64-Bit-Edition von Microsoft Office
  Microsoft Office ist in 64-Bit- und 32-Bit-Editionen verfügbar. Zum Erstellen von Office-Projektmappen, die in einer der Editionen ausgeführt werden können, muss die Zielplattform für das Projekt auf **eine beliebige CPU**festgelegt sein. Dies ist der Standardwert für Office-Projekte. Weitere Informationen finden Sie unter [Erstellen von Office](../vsto/building-office-solutions.md)-Projektmappen.
@@ -93,11 +93,11 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)
-- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)
 - [Eigenschaften in Office-Projekten](../vsto/properties-in-office-projects.md)
 - [Ausführen von Lösungen in unterschiedlichen Versionen von Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)
-- [Vorgehensweise: Abzielen von Office-Anwendungen über primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Anwendungs-und Bereitstellungs Manifeste in Office-Lösungen](../vsto/application-and-deployment-manifests-in-office-solutions.md)
 - [Vorgehensweise: Einrichten von Konfigurationsinformationen für eine Office-Projekt Mappe](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)
 - [Verwenden von Office-Funktionen in Visual Studio](../vsto/using-office-functionality-inside-of-visual-studio.md)

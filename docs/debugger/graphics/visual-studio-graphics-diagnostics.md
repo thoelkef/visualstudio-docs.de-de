@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911362"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187738"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio-Grafikdiagnose
 Visual Studio*Grafikdiagnose* ist eine Reihe von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering-und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.
@@ -38,7 +38,7 @@ Visual Studio*Grafikdiagnose* ist eine Reihe von Tools zum Aufzeichnen und ansch
 
  [Erfassen von Grafik Informationen](capturing-graphics-information.md) Wenn Sie Grafikdiagnose zum Überprüfen eines renderingproblems in Ihrer APP verwenden möchten, zeichnen Sie zuerst Informationen darüber auf, wie DirectX von der APP verwendet wird. In der Aufzeichnungssitzung, während der Ihre App normal ausgeführt wird, können Sie die gewünschten Frames *aufzeichnen*, d. h. auswählen. Die Aufzeichnungen enthalten ausführliche Informationen darüber, wie die Frames gerendert werden. Sie können die aufgezeichneten Informationen als Grafikprotokolldokument speichern, um sie später zu untersuchen oder für andere Teammitglieder freizugeben.
 
- [GPU-Nutzung](gpu-usage.md) Verwenden Sie das GPU-Nutzungs Tool, um Grafikdiagnose für die Profilerstellung für Ihre APP zu verwenden. Die GPU-Auslastung kann zusammen mit anderen Tools zur Profilerstellung, z. B. CPU-Nutzung, verwendet werden, um einen Zusammenhang zwischen CPU- und GPU-Aktivität und daraus resultierenden Leistungsproblemen in Ihrer App herzustellen.
+ [GPU-Nutzung](../../profiling/gpu-usage.md) Verwenden Sie das GPU-Nutzungs Tool, um Grafikdiagnose für die Profilerstellung für Ihre APP zu verwenden. Die GPU-Auslastung kann zusammen mit anderen Tools zur Profilerstellung, z. B. CPU-Nutzung, verwendet werden, um einen Zusammenhang zwischen CPU- und GPU-Aktivität und daraus resultierenden Leistungsproblemen in Ihrer App herzustellen.
 
  [Grafik Protokoll Dokument](graphics-log-document.md) Zum Starten der Untersuchung eines aufgezeichneten Grafik Protokolls verwenden Sie das Dokument Fenster des Grafik Protokolls, um einen aufgezeichneten Frame auszuwählen – oder sogar ein bestimmtes Pixel – damit Sie die *Ereignisse* (d. h. die DirectX-API-Aufrufe), die sich darauf auswirken, ausführlich untersuchen können.
 
@@ -66,5 +66,5 @@ Visual Studio*Grafikdiagnose* ist eine Reihe von Tools zum Aufzeichnen und ansch
 
 | Titel | Beschreibung |
 | - | - |
-| [Debugger – Featuretour](/visualstudio/debugger/debugger-feature-tour) | Stellt die Debuggingfunktionen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vor. |
+| [Debugger – Featuretour](../debugger-feature-tour.md) | Stellt die Debuggingfunktionen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vor. |
 | [DirectX-Grafiken und -Spiele](/windows/win32/directx) | Enthält Artikel, in denen die DirectX-Grafiktechnologien erläutert werden. |

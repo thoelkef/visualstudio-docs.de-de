@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b008dd22b99e0024fcba479564c02cfad148f14a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888462"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188266"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Debuggen von universellen Windows-Apps (UWP) in Visual Studio
 
@@ -33,4 +33,4 @@ Der Visual Studio-Debugger bietet umfassende Unterstützung zum Debuggen von UWP
 |Analysieren Sie die Auswirkung der contentprefetcher-Klasse auf UWP-apps.|[Vorab rufen von Inhalten für UWP-apps](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>Siehe auch
-- [Analysieren der Codequalität mit der statischen Codeanalyse](/visualstudio/code-quality/code-analysis-for-managed-code-overview)
+- [Analysieren der Codequalität mit der statischen Codeanalyse](../code-quality/code-analysis-for-managed-code-overview.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728381"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187148"
 ---
 # <a name="visualizer-security-considerations"></a>Sicherheitsüberlegungen zu Schnellansichten
 Das Schreiben einer Schnellansicht kann potenzielle Sicherheitsrisiken nach sich ziehen. Bisher sind keine bekannten Angriffe auf diese potenziellen Sicherheitslücken bekannt. Trotzdem sollten Entwickler sich der Sicherheitsrisiken bewusst sein und angemessene Vorsichtsmaßnahmen treffen, wie im Folgenden beschrieben, um sich vor zukünftigen Angriffen zu schützen.
@@ -39,6 +39,6 @@ Das Schreiben einer Schnellansicht kann potenzielle Sicherheitsrisiken nach sich
 
 ## <a name="see-also"></a>Siehe auch
 - [Schnellansichtarchitektur](../debugger/visualizer-architecture.md)
-- [Gewusst wie: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Gewusst wie: Schreiben einer Schnellansicht](create-custom-visualizers-of-data.md)
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)
 - [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)

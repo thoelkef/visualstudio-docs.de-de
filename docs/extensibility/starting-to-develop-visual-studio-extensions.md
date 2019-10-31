@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a22e867fe043437e76ebbf61220dd2adda89c12
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822327"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188863"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Beginnen mit der Entwicklung von Visual Studio-Erweiterungen
 
@@ -51,7 +51,7 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die die meisten Benut
 
 - [Erweitern und Anpassen von Tool Fenstern](../extensibility/extending-and-customizing-tool-windows.md): Erweitern Sie vorhandene Tool Fenster, oder erstellen Sie eigene Tool Fenster. Beispielsweise können Sie den **Eigenschaften**neue Eigenschaften hinzufügen, oder Sie können ein neues Tool Fenster erstellen, um zusätzliche Funktionen hinzuzufügen.
 
-- [Editor-und Sprachdienst Erweiterungen](../extensibility/editor-and-language-service-extensions.md): Fügen Sie eigene Anpassungen hinzu, die IntelliSense für Visual Studio-Sprachen bereitgestellt hat, oder erstellen Sie Unterstützung für neue Programmiersprachen. Sie können neue-Anweisungs Vervollständigungen, Vorschläge und neue Quick Infos erstellen. Mit Glühbirnen können Sie refactoringvorschläge und Code Korrekturen hinzufügen, um neue Programmiersprachen zu unterstützen.
+- [Editor-und Sprachdienst Erweiterungen](../extensibility/editor-and-language-service-extensions.md): Fügen Sie Ihren eigenen Anpassungen zu IntelliSense für Visual Studio-Sprachen hinzu, oder erstellen Sie Unterstützung für neue Programmiersprachen. Sie können neue-Anweisungs Vervollständigungen, Vorschläge und neue Quick Infos erstellen. Mit Glühbirnen können Sie refactoringvorschläge und Code Korrekturen hinzufügen, um neue Programmiersprachen zu unterstützen.
 
 - [Erweitern von Projekten](../extensibility/extending-projects.md)
 
@@ -74,13 +74,13 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die die meisten Benut
 
 - Menübefehle: [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-- Tool Fenster: [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Tool Fenster: [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md)
 
-- Editor-Erweiterungen: [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Editor-Erweiterungen: [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
 - Grundlegende VSPackages: [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-- VSIX-Projektvorlage: [Erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)
+- VSIX-Projektvorlage: [Einstieg in die VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Gewusst wie meine Erweiterung wie in Visual Studio aussehen?
  Hier erhalten Sie gute Tipps zum Entwerfen der Benutzeroberfläche für Ihre Erweiterung in den [Richtlinien zur Benutzeroberfläche von Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -91,7 +91,7 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die die meisten Benut
 ## <a name="how-can-i-distribute-my-extension"></a>Wie kann ich meine Erweiterung verteilen?
  Sie können Ihre Erweiterung auf einem anderen Computer installieren oder Sie als vsix-Datei an Ihre Freunde senden, indem Sie darauf doppelklicken. Weitere Informationen zu VSIX-Paketen finden Sie unter " [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)".
 
- Sie können Ihre Erweiterung auch auf dem Visual Studio Marketplace veröffentlichen, wodurch Sie für eine große Anzahl von Visual Studio-Kunden sichtbar wird. Ein Beispiel für das Packen einer Erweiterung in den Marketplace finden [Sie unter Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)Erweiterung. Weitere Informationen zu den Voraussetzungen für die Veröffentlichung im Marketplace finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Sie können Ihre Erweiterung auch auf dem Visual Studio Marketplace veröffentlichen, wodurch Sie für eine große Anzahl von Visual Studio-Kunden sichtbar wird. Ein Beispiel für das Packen einer Erweiterung in den Marketplace finden Sie unter Exemplarische Vorgehensweise [: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen zu den Voraussetzungen für die Veröffentlichung im Marketplace finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Siehe auch
 

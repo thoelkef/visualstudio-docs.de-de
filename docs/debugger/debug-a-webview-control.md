@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ce889f83c4d21a8b2464cab108fa165e1144791
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 15c9a2b489aeb091224536bfb87398197f6e4f62
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745576"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188657"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debuggen eines WebView-Steuer Elements in einer UWP-App
 
@@ -60,7 +60,7 @@ ms.locfileid: "72745576"
 
      Der mit dem `WebView` verknüpfte DOM Explorer erscheint als neue Registerkarte in Visual Studio.
 
-5. Zeigen Sie Live-DOM-Elemente und CSS-Stile an, wie in [Debuggen von CSS-Stilen mit Dom Explorer](/visualstudio/debugger/quickstart-debug-html-and-css)beschrieben
+5. Zeigen Sie Live-DOM-Elemente und CSS-Stile an, wie in [Debuggen von CSS-Stilen mit Dom Explorer](quickstart-debug-html-and-css.md)beschrieben
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Verwenden des JavaScript-Konsolenfensters, um ein WebView-Steuerelement zu untersuchen und zu debuggen
 

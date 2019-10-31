@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc337b1ac753c214ad2484c26c9149e9a1a6ca04
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981198"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189204"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilerstellung für die Leistung von SharePoint-Anwendungen
 
@@ -55,7 +55,7 @@ Webleistungstests simulieren die mögliche Interaktion eines Endbenutzers mit ei
 
 ## <a name="test-user-interfaces"></a>Testen von Benutzeroberflächen
 
-Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über die Benutzeroberfläche (UI). Diese Tests decken UI-Steuerelemente, wie Schaltflächen und Menüs, ab, um zu überprüfen, ob sie ordnungsgemäß funktionieren. Diese Art von Tests sind besonders bei der Validierung oder einer anderen Logik der Benutzeroberfläche hilfreich, beispielsweise einer Webseite. Sie können auch Tests der codierten UI verwenden, um manuelle Tests zu automatisieren. Sie erstellen Tests der programmierten UI für die SharePoint-Anwendungen auf die gleiche Weise wie Sie Tests für andere Anwendungstypen erstellen. Weitere Informationen finden Sie unter [Testen von SharePoint 2010-Anwendungen mit Tests](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)der programmierten UI.
+Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über die Benutzeroberfläche (UI). Diese Tests decken UI-Steuerelemente, wie Schaltflächen und Menüs, ab, um zu überprüfen, ob sie ordnungsgemäß funktionieren. Diese Art von Tests sind besonders bei der Validierung oder einer anderen Logik der Benutzeroberfläche hilfreich, beispielsweise einer Webseite. Sie können auch Tests der codierten UI verwenden, um manuelle Tests zu automatisieren. Sie erstellen Tests der programmierten UI für die SharePoint-Anwendungen auf die gleiche Weise wie Sie Tests für andere Anwendungstypen erstellen. Weitere Informationen finden Sie unter [Testen von SharePoint 2010-Anwendungen mit Tests](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)der programmierten UI.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
@@ -64,7 +64,7 @@ Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über d
 |[Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Veranschaulicht, wie eine Samplingsprofilanalyse für eine SharePoint-Anwendung ausgeführt wird.|
 |[Testen der Leistung Ihrer App vor der Freigabe](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Beschreibt, wie Auslastungstests erstellt werden, mit deren Hilfe Sie Belastungstests für SharePoint-Anwendungen durchführen.|
 |[Komponententest für Code](../test/unit-test-your-code.md)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|
-|[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|
+|[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|
 
 ## <a name="see-also"></a>Siehe auch
 

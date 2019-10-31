@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad037a0e71bc2156fe1c604d183a5e02ae914688
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730430"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187548"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debuggen von JavaScript mithilfe der Konsole in Visual Studio
 
@@ -44,7 +44,7 @@ Im JavaScript-Konsolenfenster können Sie:
 > [!TIP]
 > Wenn das JavaScript-Konsolenfenster geschlossen ist, wählen Sie **Debuggen**> **Windows** > **JavaScript-Konsole** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.
 
-Mit dem JavaScript-Konsolenfenster können Sie mit dem App-Code interagieren, ohne den Debugger zu beenden und neu zu starten. Weitere Informationen finden Sie unter [Aktualisieren einer APP (JavaScript)](../debugger/refresh-an-app-javascript.md). Informationen zu anderen JavaScript-Debuggingfunktionen, z. b. zum Verwenden des DOM Explorer und Festlegen von Haltepunkten, finden Sie unter [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von apps](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+Mit dem JavaScript-Konsolenfenster können Sie mit dem App-Code interagieren, ohne den Debugger zu beenden und neu zu starten. Weitere Informationen finden Sie unter [Aktualisieren einer APP (JavaScript)](../debugger/refresh-an-app-javascript.md). Informationen zu anderen JavaScript-Debuggingfunktionen, z. b. zum Verwenden des DOM Explorer und Festlegen von Haltepunkten, finden Sie unter [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von apps](debugging-windows-store-and-windows-universal-apps.md)
 
 ## <a name="InteractiveConsole"></a> Debuggen mithilfe des JavaScript-Konsolenfensters
 Mit den folgenden Schritten wird eine `FlipView` -App erstellt und gezeigt, wie Sie einen JavaScript-Codefehler interaktiv debuggen.
@@ -250,7 +250,7 @@ In der folgenden Abbildung wird die Zielliste des JavaScript-Konsolenfensters ge
 Sie können den Ausführungskontext auch mithilfe des Befehls `cd` wechseln, dazu müssen Sie jedoch den Namen des anderen Ausführungskontexts kennen, und die verwendete Referenz muss im Bereich liegen. Die Liste **Ziel** bietet besseren Zugriff auf andere Ausführungskontexte.
 
 ## <a name="see-also"></a>Siehe auch
-- [Debuggen von Apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Debuggen von Apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

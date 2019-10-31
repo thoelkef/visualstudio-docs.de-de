@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649408"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188807"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
@@ -33,7 +33,7 @@ Sie können Codemetrikdaten auf drei Arten generieren:
 Das [nuget-Paket "fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) " umfasst mehrere Code Metrik- [Analyse](roslyn-analyzers-overview.md) Regeln:
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
-- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
 - [CA1506](ca1506-avoid-excessive-class-coupling.md)
 
@@ -60,7 +60,7 @@ Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln im 
    CA1502: 10
    ```
 
-   In diesem Beispiel ist die Regel [CA1502](ca1502-avoid-excessive-complexity.md) so konfiguriert, dass Sie ausgelöst wird, wenn die zyklomatische Komplexität einer Methode größer als 10 ist.
+   In diesem Beispiel ist die Regel [CA1502](ca1502.md) so konfiguriert, dass Sie ausgelöst wird, wenn die zyklomatische Komplexität einer Methode größer als 10 ist.
 
 3. Markieren Sie im **Eigenschaften** Fenster von Visual Studio oder in der Projektdatei die Buildaktion der Konfigurationsdatei als [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Beispiel:
 
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Sie können den Namen der Ausgabedatei überschreiben, indem Sie `/p:MetricsOutputFile=<filename>` angeben. Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, indem Sie `/p:LEGACY_CODE_METRICS_MODE=true` angeben. Beispiel:
+Sie können den Namen der Ausgabedatei überschreiben, indem Sie `/p:MetricsOutputFile=<filename>` angeben. Sie können auch Code Metrikdaten im [Legacy Stil](#previous-versions) erhalten, indem Sie `/p:LEGACY_CODE_METRICS_MODE=true`angeben. Beispiel:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"

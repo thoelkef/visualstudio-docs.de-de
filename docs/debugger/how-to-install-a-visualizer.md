@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 494287c6691d27eb636f92eff324eecf49daf5fa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733104"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187575"
 ---
 # <a name="how-to-install-a-visualizer"></a>Gewusst wie: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.
@@ -46,4 +46,4 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)
-- [Gewusst wie: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Gewusst wie: Schreiben einer Schnellansicht](create-custom-visualizers-of-data.md)

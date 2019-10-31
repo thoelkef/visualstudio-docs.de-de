@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2a3f4429341ecdba26dab2f95415332f9cb2eca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728830"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187268"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
 Diese Meldung kann auftreten, wenn der Remotedebugmonitor auf dem Remote Computer nicht ordnungsgemäß eingerichtet ist oder der Remote Computer aufgrund von Netzwerkproblemen oder dem vorhanden sein einer Firewall nicht zugänglich ist.
 
 > [!IMPORTANT]
-> Wenn Sie der Meinung sind, dass Sie diese Meldung aufgrund eines Produktfehlers erhalten haben, [melden Sie dieses Problem](../ide/how-to-report-a-problem-with-visual-studio.md) in Visual Studio. Wenn Sie weitere Hilfe benötigen, erfahren Sie unter [Talk to Us](../ide/talk-to-us.md) , wie Sie Kontakt mit Microsoft aufnehmen.
+> Wenn Sie der Meinung sind, dass Sie diese Meldung aufgrund eines Produktfehlers erhalten haben, [melden Sie dieses Problem](../ide/how-to-report-a-problem-with-visual-studio.md) in Visual Studio. Wenn Sie weitere Hilfe benötigen, erfahren Sie unter [Talk to Us](../ide/feedback-options.md) , wie Sie Kontakt mit Microsoft aufnehmen.
 
 ## <a name="specificerrors"></a>Was ist die ausführliche Fehlermeldung?
 
