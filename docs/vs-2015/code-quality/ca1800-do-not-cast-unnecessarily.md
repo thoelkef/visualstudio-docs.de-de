@@ -1,5 +1,5 @@
 ---
-title: 'CA1800: Keine unnötigen Umwandlungen | Microsoft-Dokumentation'
+title: 'CA1800: Nicht unnötig umwandeln | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1800
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49ffc66b1b7047c7b88664ac0c5198fbd51c51c6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 466309cef8905faa9b659e2d3652975d815767fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682078"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663103"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Keine unnötigen Umwandlungen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ ms.locfileid: "65682078"
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Methode führt die doppelte Umwandlungen für eines der Argumente oder lokale Variablen. Für die vollständige Analyse durch diese Regel muss der getestete Assembly mit Debuginformationen erstellt werden, und die zugehörigen Programmdatenbankdatei (.pdb) muss verfügbar sein.
+ Eine Methode führt doppelte Umwandlungen für eines ihrer Argumente oder lokale Variablen aus. Für eine vollständige Analyse dieser Regel muss die getestete Assembly mithilfe von Debuginformationen erstellt werden, und die zugehörige Programm Datenbankdatei (. pdb) muss verfügbar sein.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. Für explizite doppelte Umwandlungsvorgänge speichern Sie das Ergebnis der Umwandlung in eine lokale Variable, und verwenden Sie die lokale Variable anstelle der doppelten Umwandlungsvorgänge.
+ Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. Speichern Sie bei expliziten doppelten Umwandlungs Vorgängen das Ergebnis der Umwandlung in einer lokalen Variablen, und verwenden Sie die lokale Variable anstelle der doppelten Umwandlungs Vorgänge.
 
- Wenn der C#- `is` Operator wird verwendet, um zu testen, ob die Umwandlung erfolgreich ist, bevor die eigentliche Umwandlung ausgeführt wird, sollten Sie erwägen, das Ergebnis der `as` Operator stattdessen. Dies bietet dieselbe Funktionalität ohne die implizite Umwandlung von ausgeführten Vorgang die `is` Operator.
+ Wenn der C# `is`-Operator verwendet wird, um zu testen, ob die Umwandlung erfolgreich ist, bevor die tatsächliche Umwandlung ausgeführt wird, sollten Sie stattdessen das Ergebnis des `as`-Operators testen. Dadurch wird die gleiche Funktionalität ohne den impliziten Umwandlungs Vorgang bereitstellt, der vom `is`-Operator ausgeführt wird.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung der Methode um die Anzahl der Cast-Vorgänge zu minimieren.
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung der-Methode, um die Anzahl der Umwandlungs Vorgänge zu minimieren.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
- Es ist sicher, unterdrücken Sie eine Warnung dieser Regel, oder die Regel vollständig zu ignorieren, wenn Leistung nicht relevant ist.
+ Es ist sicher, eine Warnung aus dieser Regel zu unterdrücken oder die Regel vollständig zu ignorieren, wenn die Leistung nicht relevant ist.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, die die Regel verletzen, mit der C#- `is` Operator. Eine zweite Methode entspricht die Regel durch Ersetzen der `is` Operator in einem Test für das Ergebnis der `as` -Operator, der verringert die Anzahl der Cast-Vorgänge pro Iteration von zwei auf einen.
+ Das folgende Beispiel zeigt eine Methode, die die Regel mit dem C# `is`-Operator verletzt. Eine zweite Methode erfüllt die Regel, indem der `is`-Operator durch einen Test für das Ergebnis des `as`-Operators ersetzt wird, der die Anzahl von Umwandlungs Vorgängen pro Iterationen von zwei auf 1 verringert.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCastsAsIs/cs/FxCop.Performance.UnnecessaryCastsAsIs.cs#1)]
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, `start_Click`, besitzt mehrere doppelte explizite Umwandlungen, die gegen die Regel, und eine Methode, `reset_Click`, die der Regel entspricht, durch die Umwandlung in eine lokale Variable zu speichern.
+ Das folgende Beispiel zeigt eine Methode (`start_Click`) mit mehreren doppelten expliziten Umwandlungen, die gegen die Regel verstoßen, und eine Methode, `reset_Click`, die die Regel erfüllt, indem die Umwandlung in einer lokalen Variablen gespeichert wird.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/cs/FxCop.Performance.UnnecessaryCasts.cs#1)]
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
