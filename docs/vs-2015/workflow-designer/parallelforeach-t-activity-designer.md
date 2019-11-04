@@ -1,5 +1,5 @@
 ---
-title: ParallelForEach&lt;T&gt; Aktivitäts-Designer | Microsoft-Dokumentation
+title: ParallelForEach-&lt;T &gt; Aktivitäts Designer | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,47 +8,45 @@ f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 825906f3de1b2d40d96dc19ed45d2a368d889994
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c659e941a8503a0d5ff601fea23fcec69b2bbcf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002309"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672611"
 ---
-# <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; Aktivitäts-Designer
-Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität listet die Elemente einer Auflistung auf und führt gleichzeitig, asynchron im gleichen Thread, eine eingebettete Anweisung für jedes Element der Auflistung aus. Verwenden Sie diese Flusssteuerungsaktivität statt der <xref:System.Activities.Statements.Sequence>-Aktivität, wenn von den untergeordneten Aktivitäten dieser Aktivität erwartet werden kann, dass sie in den Leerlauf übergehen.  
-  
- Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität verfügt über die <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>-Eigenschaft, die einen benutzerdefinierten [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Ausdruck enthält. Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität wertet diese Eigenschaft aus, nachdem alle Branches abgeschlossen sind. Ergibt die Auswertung **"true"**, und klicken Sie dann die <xref:System.Activities.Statements.ParallelForEach%601> -Aktivität abgeschlossen, ohne die anderen Branches auszuführen. Wenn die <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> nicht als **"true"**, und klicken Sie dann die <xref:System.Activities.Statements.ParallelForEach%601> Aktivität abgeschlossen wird, wenn alle ihre untergeordneten Aktivitäten abgeschlossen wurden.  
-  
-## <a name="the-parallelforeacht-activity"></a>Die ParallelForEach\<T >-Aktivität  
- <xref:System.Activities.Statements.ParallelForEach%601> listet seine Werte auf und plant die <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>-Ausführung für jeden aufgelisteten Wert. Es wird nur der <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> geplant. Wie der Textkörper ausgeführt wird, hängt davon ab, ob der <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> in den Leerlauf übergeht.  
-  
- Geht der <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> nicht in den Leerlauf über, erfolgt die Ausführung in umgekehrter Reihenfolge, da die geplanten Aktivitäten als Stapel behandelt werden, also die letzte geplante Aktivität als erste ausgeführt wird. Für, wenn Sie z. B. eine Auflistung von {1,2,3,4}in <xref:System.Activities.Statements.ParallelForEach%601> und Verwenden einer **WriteLine** als Textkörper, um den Wert auszugeben. Dann werden die Werte 4, 3, 2, 1 auf der Konsole ausgegeben. Grund hierfür ist, **WriteLine** geht nicht so nach 4 im Leerlauf **WriteLine** Aktivitäten geplant haben, wird sie ausgeführt, mit einem Stapel-Verhalten (first zuletzt).  
-  
- Wenn aber Aktivitäten im <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> in den Leerlauf übergehen können, etwa eine <xref:System.ServiceModel.Activities.Receive>-Aktivität oder eine <xref:System.Activities.Statements.Delay>-Aktivität, ergibt sich Folgendes. Dann ist es nicht notwendig, auf den Abschluss zu warten. <xref:System.Activities.Statements.ParallelForEach%601> versucht dann, die nächste geplante Textkörperaktivität auszuführen. Wenn auch diese in den Leerlauf übergeht, bewegt sich <xref:System.Activities.Statements.ParallelForEach%601> zum Textkörper der nächsten Aktivität.  
-  
-### <a name="using-the-parallelforeacht-activity-designer"></a>Verwenden des ParallelForEach\<T >-Aktivitätsdesigner  
- Die **ParallelForEach\<T >** Aktivitäts-Designer finden Sie in der **Ablaufsteuerung** Kategorie der **Toolbox**, die erfolgt durch Klicken auf die  **Toolbox** auf der linken Seite der Registerkarte die [!INCLUDE[wfd2](../includes/wfd2-md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menü oder STRG + ALT + X.)  
-  
- Die **ParallelForEach\<T >** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und auf die [!INCLUDE[wfd2](../includes/wfd2-md.md)] Oberfläche, wo Aktivitätsdesigner normalerweise platziert werden, für die Beispiel, innerhalb eines eine **Sequenz** Aktivitäts-Designer. Nach dem löschen ihn in das [!INCLUDE[wfd2](../includes/wfd2-md.md)], erstellt eine <xref:System.Activities.Statements.ParallelForEach%601> -Aktivität, die in der Standardeinstellung enthält ein <xref:System.Activities.Activity.DisplayName%2A> von **ParallelForEach\<Int32 >.**  
-  
-### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>ParallelForEach\<T > Eigenschaften im Workflow-Designer  
- In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.  
-  
-|Eigenschaftenname|Erforderlich|Verwendung|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **ParallelForEach\<Int32 >**. Der Wert kann optional auch bearbeitet werden, der **Eigenschaften** Raster oder direkt im Header Aktivitätsdesigners.|  
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Die Aktivität, die für jedes Element in der Auflistung ausgeführt werden soll. Hinzufügen der <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> -Aktivität, indem Sie eine Aktivität aus der Toolbox in die **Text** Feld der **ParallelForEach\<T >** Aktivitäts-Designer, mit dem Hinweistext "Aktivität hier ablegen".|  
-|**TypeArgument**|True|Der Typ der Elemente in der <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> durch den generischen Parameter angegebene Sammlung *T*. In der Standardeinstellung **TypeArgument** nastaven NA hodnotu **Int32**. So ändern Sie den Typ "T" in der **ParallelForEach\<T >** Aktivitäts-Designer, ändern Sie den Wert von der **TypeArgument** Kombinationsfeld im Eigenschaftenraster.|  
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Die Auflistung, deren Elemente durchlaufen werden. Festlegen der <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, geben Sie einen [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Ausdruck in der **Werte** Feld der **ForEach\<T >** -Aktivitätsdesigners im Feld mit dem Hinweistext "VB-Ausdruck eingeben" oder auf **Werte** Feld der **Eigenschaften** Fenster.|  
-|<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Die Auswertung erfolgt nach Abschluss der einzelnen Iterationen. Ergibt die Auswertung True, werden die geplanten ausstehenden Iterationen abgebrochen. Wenn diese Eigenschaft nicht festgelegt ist, werden alle geplanten Anweisungen bis zur Beendigung ausgeführt.|  
-  
- Standardmäßig hat der Schleifeniterator die Bezeichnung "item". Sie können den Namen der Iteratorvariablen im Ändern der **ForEach** Feld **ParallelForEach\<T >** Aktivitäts-Designer. Der Schleifeniterator kann in den untergeordneten Elementen der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität in Ausdrücken verwendet werden.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Sequenz](../workflow-designer/sequence-activity-designer.md)   
- [Parallel](../workflow-designer/parallel-activity-designer.md)   
- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+# <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach-&lt;T &gt; Aktivitäts Designer
+Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität listet die Elemente einer Auflistung auf und führt gleichzeitig, asynchron im gleichen Thread, eine eingebettete Anweisung für jedes Element der Auflistung aus. Verwenden Sie diese Flusssteuerungsaktivität statt der <xref:System.Activities.Statements.Sequence>-Aktivität, wenn von den untergeordneten Aktivitäten dieser Aktivität erwartet werden kann, dass sie in den Leerlauf übergehen.
+
+ Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität verfügt über die <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>-Eigenschaft, die einen benutzerdefinierten [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Ausdruck enthält. Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität wertet diese Eigenschaft aus, nachdem alle Branches abgeschlossen sind. Wenn **true**ausgewertet wird, wird die <xref:System.Activities.Statements.ParallelForEach%601> Aktivität abgeschlossen, ohne dass die anderen Verzweigungen ausgeführt werden. Wenn die <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> nicht als **true**ausgewertet wird, wird die <xref:System.Activities.Statements.ParallelForEach%601> Aktivität abgeschlossen, wenn alle untergeordneten Aktivitäten abgeschlossen sind.
+
+## <a name="the-parallelforeacht-activity"></a>Die ParallelForEach-\<T >-Aktivität
+ <xref:System.Activities.Statements.ParallelForEach%601> listet seine Werte auf und plant die <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> für jeden Wert, den er auflistet. Es wird nur der <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> geplant. Wie der Textkörper ausgeführt wird, hängt davon ab, ob der <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> in den Leerlauf übergeht.
+
+ Geht der <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> nicht in den Leerlauf über, erfolgt die Ausführung in umgekehrter Reihenfolge, da die geplanten Aktivitäten als Stapel behandelt werden, also die letzte geplante Aktivität als erste ausgeführt wird. Angenommen, Sie verfügen über eine Auflistung von {1,2,3,4}in <xref:System.Activities.Statements.ParallelForEach%601> und verwenden eine Write- **ine** als Text, um den Wert zu schreiben. Dann werden die Werte 4, 3, 2, 1 auf der Konsole ausgegeben. Dies liegt daran, dass die Schreibweise nicht **in** den Leerlauf wechselt, sodass nach der Planung von vier **Schreib** Voraktivitäten die Ausführung mit einem Stapel Verhalten (zuerst in der letzten Ausgabe) erfolgt ist.
+
+ Wenn aber Aktivitäten im <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> in den Leerlauf übergehen können, etwa eine <xref:System.ServiceModel.Activities.Receive>-Aktivität oder eine <xref:System.Activities.Statements.Delay>-Aktivität, ergibt sich Folgendes. Dann ist es nicht notwendig, auf den Abschluss zu warten. <xref:System.Activities.Statements.ParallelForEach%601> versucht dann, die nächste geplante Textkörperaktivität auszuführen. Wenn auch diese in den Leerlauf übergeht, bewegt sich <xref:System.Activities.Statements.ParallelForEach%601> zum Textkörper der nächsten Aktivität.
+
+### <a name="using-the-parallelforeacht-activity-designer"></a>Verwenden des ParallelForEach-\<T >-Aktivitäts Designers
+ Der **ParallelForEach-\<T >** -Aktivitäts Designer befindet sich in der Kategorie **Ablauf Steuerung** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf der linken Seite des [!INCLUDE[wfd2](../includes/wfd2-md.md)] auf die Registerkarte **Toolbox** klicken. (Sie **können auch Symbolleiste** im Menü **Ansicht** oder STRG + ALT + X.)
+
+ Der **ParallelForEach-\<T >** Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, z. b. innerhalb eines **Sequence** -Aktivitäts Designers. Nach dem ablegen im [!INCLUDE[wfd2](../includes/wfd2-md.md)] wird eine <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität erstellt, die standardmäßig einen <xref:System.Activities.Activity.DisplayName%2A> von **ParallelForEach-\<Int32 > enthält.**
+
+### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>ParallelForEach \<T > Eigenschaften im Workflow-Designer
+ In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
+
+|Eigenschaftenname|Erforderlich|Verwendung|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **ParallelForEach \<Int32 >** . Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Die Aktivität, die für jedes Element in der Auflistung ausgeführt werden soll. Wenn Sie die <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>-Aktivität hinzufügen möchten, legen Sie eine Aktivität aus der Toolbox in das Feld **Body** mit dem Hinweis Text "Aktivität hier ablegen" des **ParallelForEach-\<T >** -Aktivitäts Designers ab.|
+|**TypeArgument**|True|Der Typ der Elemente in der <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> Auflistung, der durch den generischen Parameter *t*angegeben wird. Standardmäßig ist **TypeArgument** auf **Int32**festgelegt. Um den Typ T im **ParallelForEach-\<T >** Aktivitäts Designer zu ändern, ändern Sie den Wert des Kombinations Felds **TypeArgument** im Eigenschaften Raster.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Die Auflistung, deren Elemente durchlaufen werden. Um die <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> festzulegen, geben Sie im Feld **Werte** des **foreach-\<T >** -Aktivitäts Designers im Feld mit dem Hinweis Text "VB-Ausdruck eingeben" oder im Feld " **Werte** " im Fenster " **Eigenschaften** " einen [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Ausdruck ein.|
+|<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Die Auswertung erfolgt nach Abschluss der einzelnen Iterationen. Ergibt die Auswertung True, werden die geplanten ausstehenden Iterationen abgebrochen. Wenn diese Eigenschaft nicht festgelegt ist, werden alle geplanten Anweisungen bis zur Beendigung ausgeführt.|
+
+ Standardmäßig hat der Schleifeniterator die Bezeichnung "item". Sie können den Namen der Iteratorvariablen im Feld **foreach** in der **ParallelForEach-\<T >** Aktivitäts Designers ändern. Der Schleifeniterator kann in den untergeordneten Elementen der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität in Ausdrücken verwendet werden.
+
+## <a name="see-also"></a>Siehe auch
+ [Parallele](../workflow-designer/parallel-activity-designer.md) [Ablauf](../workflow-designer/sequence-activity-designer.md) [Steuerung der Sequenz](../workflow-designer/control-flow-activity-designers.md)

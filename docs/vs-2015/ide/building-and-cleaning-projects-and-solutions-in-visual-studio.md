@@ -1,5 +1,5 @@
 ---
-title: Bereinigen von Projekten Lösungen erstellen
+title: Lösungen für Clean projects erstellen
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -20,15 +20,15 @@ helpviewer_keywords:
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685717"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620554"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
     Wenn dieses Kontrollkästchen aktiviert ist, werden nur das aktuelle Startprojekt und seine Abhängigkeiten erstellt, wenn Sie einen der folgenden Schritte ausführen:
 
-   - Wählen Sie auf der Menüleiste **Debuggen** > **Debuggen starten** (F5).
+   - Wählen Sie in der Menüleiste **Debuggen**  > **Debugging starten** (F5) aus.
 
-   - Wählen Sie auf der Menüleiste **erstellen** > **Projektmappe** (STRG + UMSCHALT + B).
+   - Wählen Sie in der Menüleiste **Erstellen**  >  Projekt Mappe**Erstellen** (STRG + UMSCHALT + B) aus.
 
      Wenn dieses Kontrollkästchen deaktiviert ist, werden alle Projekte, ihre Abhängigkeiten und die Projektmappendateien erstellt, wenn Sie einen der vorstehenden Befehle ausführen. Dieses Kontrollkästchen ist standardmäßig deaktiviert.
 
@@ -110,4 +110,4 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
     - Verwenden Sie die Tasten STRG+UNTBR.
 
 ## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) [Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Debug und Release-Projektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ Referenz zur Erstellung](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md) [Projektmappen und Projekten](../ide/solutions-and-projects-in-visual-studio.md)
+ [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) [Abrufen von buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md) [Buildkonfigurationen](../ide/understanding-build-configurations.md) [Debuggen und releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ buildverweis](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [in den Befehlszeilen wechseln](../ide/reference/devenv-command-line-switches.md) [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
