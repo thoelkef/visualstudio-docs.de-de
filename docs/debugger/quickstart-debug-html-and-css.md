@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187565"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568921"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in UWP-apps in Visual Studio
 
@@ -182,7 +182,7 @@ In der folgenden Prozedur wird eine App mithilfe vom DOM Explorer interaktiv deb
 14. Doppelklicken Sie im Hauptfenster auf `width: 100px;height: 100px;`, drücken **Sie die** ENTF-Taste, und drücken Sie dann die **Eingabe**Taste. Nachdem Sie die EINGABETASTE gedrückt haben, werden die neuen Werte sofort in der APP reflektiert, obwohl Sie die Debugsitzung nicht beendet haben.
 
     > [!IMPORTANT]
-    > Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet**und **Layout** angezeigt werden. Weitere Informationen finden Sie unter [Debuggen von CSS-Stilen mithilfe von Dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md) und [Debuggen mithilfe Dom Explorer](quickstart-debug-html-and-css.md).
+    > Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet**und **Layout** angezeigt werden.
 
 15. Wechseln Sie zur APP, indem Sie Sie auswählen, oder verwenden Sie Alt + Tab.
 
@@ -255,6 +255,7 @@ Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:
 > Im Windows Phone-Emulator wird das Hervorheben von Elementen durch Zeigen mit dem Mauszeiger nur teilweise unterstützt.
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Debuggen von Apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)

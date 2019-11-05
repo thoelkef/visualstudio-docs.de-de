@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188882"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568968"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -340,7 +340,7 @@ Manchmal empfiehlt es sich, den Endbenutzern das Anpassen Ihrer Benutzeroberflä
 
 Ein VSPackage kann die Schriftarten und Farben mithilfe von benutzerdefinierten Kategorien steuern und Elemente auf der Eigenschaften Seite Schriftarten und Farben anzeigen. Bei Verwendung dieses Mechanismus müssen VSPackages die [ivsfontandcolordefaultsprovider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) -Schnittstelle und die zugehörigen Schnittstellen implementieren.
 
-Im Prinzip kann dieser Mechanismus verwendet werden, um alle vorhandenen Anzeigeelemente und die Kategorien zu ändern, in denen Sie enthalten sind. Es sollte jedoch nicht zum Ändern der Kategorie Text-Editor oder seiner Anzeigeelemente verwendet werden. Weitere Informationen zur Kategorie Text-Editor finden Sie unter [Übersicht über Schriftart und Farben](../font-and-color-overview.md).
+Im Prinzip kann dieser Mechanismus verwendet werden, um alle vorhandenen Anzeigeelemente und die Kategorien zu ändern, in denen Sie enthalten sind. Es sollte jedoch nicht zum Ändern der Kategorie Text-Editor oder seiner Anzeigeelemente verwendet werden. Weitere Informationen zur Kategorie Text-Editor finden Sie unter [Übersicht über Schriftart und Farben](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
 
 Ein VSPackage muss Folgendes durchführen, um benutzerdefinierte Kategorien oder Elemente anzuzeigen:
 

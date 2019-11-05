@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d9ee33d49985fed8e8c0180fa652aed39b25d9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186809"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568882"
 ---
 # <a name="create-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
 
@@ -59,7 +59,7 @@ Weitere Informationen zum Visual Studio-Kern-Editor finden Sie unter [Erweitern 
 
 - Muss der Editor ActiveX-Steuerelemente hosten?
 
-   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](../extensibility/in-place-activation.md)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard-Editor an.
+   Wenn Ihr Editor ActiveX-Steuerelemente hostet, implementieren Sie einen direkten Aktivierungs-Editor, wie unter direkte [Aktivierung](/visualstudio/misc/in-place-activation?view=vs-2015)beschrieben. Wenn keine ActiveX-Steuerelemente gehostet werden, verwenden Sie entweder einen vereinfachten Einbettungs-Editor, oder passen Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Standard-Editor an.
 
 - Unterstützt der Editor mehrere Ansichten? Sie müssen mehrere Sichten unterstützen, wenn Sie möchten, dass Ansichten des Editors zur gleichen Zeit wie der Standard-Editor sichtbar sind.
 
