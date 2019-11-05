@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94c30279683a6d367ede31c00133e6fbf8c293e5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2aa8779a069f4b001743326470f69f3cb35a8c10
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186761"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568879"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren
 Ein benutzerdefinierter Editor besteht aus zwei Teilen: einem Dokument Datenobjekt und einem Dokument Ansichts Objekt. Wie der Name bereits vermuten lässt, stellt das Dokument Datenobjekt die anzuzeigenden Textdaten dar. Ebenso stellt das Dokument Ansichts Objekt (oder "View") ein oder mehrere Fenster dar, in denen das Dokument Datenobjekt angezeigt werden soll.
@@ -34,7 +34,7 @@ Ein benutzerdefinierter Editor besteht aus zwei Teilen: einem Dokument Datenobje
 
  Die IDE benachrichtigt Sichten über Ereignisse (z. b., wenn eine Projekt Mappe, die ein Dokument enthält, geschlossen wird), indem ein Element Bezeichner (Itemid) für jeden Eintrag in der laufenden Dokument Tabelle abgeglichen wird. Weitere Informationen hierzu finden Sie unter [Ausführen der Dokument Tabelle](../extensibility/internals/running-document-table.md).
 
- Es gibt zwei Optionen zum Erstellen einer Ansicht für einen benutzerdefinierten Editor. Eine ist das direkte Aktivierungs Modell, bei dem die Ansicht in einem Fenster mit einem ActiveX-Steuerelement oder einem Dokument Datenobjekt gehostet wird. Das zweite ist das vereinfachte Einbettungs Modell, bei dem die Ansicht von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gehostet wird und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> implementiert ist, um Fenster Befehle zu verarbeiten. Weitere Informationen zum direkten Aktivierungs Modell finden Sie unter direkte [Aktivierung](../extensibility/in-place-activation.md). Weitere Informationen über das vereinfachte Einbettungs Modell finden Sie unter [vereinfachte Einbettung](../extensibility/simplified-embedding.md).
+ Es gibt zwei Optionen zum Erstellen einer Ansicht für einen benutzerdefinierten Editor. Eine ist das direkte Aktivierungs Modell, bei dem die Ansicht in einem Fenster mit einem ActiveX-Steuerelement oder einem Dokument Datenobjekt gehostet wird. Das zweite ist das vereinfachte Einbettungs Modell, bei dem die Ansicht von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gehostet wird und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> implementiert ist, um Fenster Befehle zu verarbeiten. Weitere Informationen zum direkten Aktivierungs Modell finden Sie unter direkte [Aktivierung](/visualstudio/misc/in-place-activation?view=vs-2015). Weitere Informationen über das vereinfachte Einbettungs Modell finden Sie unter [vereinfachte Einbettung](../extensibility/simplified-embedding.md).
 
 ## <a name="see-also"></a>Siehe auch
 
