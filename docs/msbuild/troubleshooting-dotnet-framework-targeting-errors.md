@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 465952fa41eab7d112ca839be2940cded3d69b33
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 36401e2ac002a74cdab6e9c19373354f4eb6fb1e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744623"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189423"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Problembehandlung bei .NET Framework-Zielversionsfehlern
 Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftreten könnten, und wie Sie diese Fehler auflösen können.
@@ -55,7 +55,7 @@ Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftre
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [Vorgehensweise: .NET Framework-Version als Ziel](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)
 - [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md)
 - [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)

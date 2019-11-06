@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983689"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189311"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
@@ -26,7 +26,7 @@ Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Star
 
 Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und einigen wichtigen Toolfenstern, die Sie wahrscheinlich verwenden:
 
-- Im [**Projektmappen-Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, in ihnen navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](/visualstudio/get-started/tutorial-projects-solutions) gruppiert.
+- Im [**Projektmappen-Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, in ihnen navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](../get-started/tutorial-projects-solutions.md) gruppiert.
   - Neben dem **Projektmappen-Explorer** befindet sich die [**Python-Umgebung**](managing-python-environments-in-visual-studio.md), über die Sie verschiedene Python-Interpreter verwalten können, die auf Ihrem Computer installiert sind.
 
   ::: moniker range=">=vs-2019"

@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647866"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189078"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
@@ -186,7 +186,7 @@ Niemandem gelingt das Codieren schon beim ersten Versuch. Es ist also sehr wahrs
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Erfahren Sie mehr über Projekte und Projektmappen](tutorial-projects-solutions.md)
+> [Erfahren Sie mehr über Projekte und Projektmappen](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Siehe auch
 
