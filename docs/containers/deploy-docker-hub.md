@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 267e0c1ed1ac3911aad2161f186bf4a482f069b6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "71126022"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188751"
 ---
 # <a name="deploy-to-docker-hub"></a>Bereitstellen in Docker Hub
 
@@ -45,7 +45,7 @@ Wenn Sie über kein Docker Hub-Repository verfügen, erstellen Sie ein Konto in 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Führen Sie für die Veröffentlichung in [Azure Container Registry](/azure/container-registry/) die Schritte unter [Bereitstellen in Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md) aus.
+Führen Sie für die Veröffentlichung in [Azure Container Registry](/azure/container-registry/) die Schritte unter [Bereitstellen in Azure Container Registry](hosting-web-apps-in-docker.md) aus.
 
 Richten Sie Continuous Integration und Continuous Delivery (CI/CD) mit [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops) ein.
 

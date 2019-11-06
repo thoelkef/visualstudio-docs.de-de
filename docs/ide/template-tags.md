@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891139"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189550"
 ---
 # <a name="add-tags-to-project-templates"></a>Hinzufügen von Tags zu Projektvorlagen
 
@@ -40,9 +40,9 @@ Sie können Tags hinzufügen, indem Sie die *.vstemplate*-XML-Datei aktualisiere
 
 Möglicherweise möchten Sie Tags zur *.vstemplate*-XML-Datei Ihrer Projektvorlage hinzufügen oder bearbeiten, wenn Sie eine der folgenden Aufgaben ausführen:
 
-* [Erstellen einer neuen Projektvorlage](/visualstudio/ide/how-to-create-project-templates) mithilfe des Assistenten zum Exportieren von Vorlagen
-* [Aktualisieren einer vorhandenen Projektvorlage](/visualstudio/ide/how-to-update-existing-templates)
-* [Erstellen einer neuen VSIX-Projektvorlage](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* [Erstellen einer neuen Projektvorlage](how-to-create-project-templates.md) mithilfe des Assistenten zum Exportieren von Vorlagen
+* [Aktualisieren einer vorhandenen Projektvorlage](how-to-update-existing-templates.md)
+* [Erstellen einer neuen VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="syntax"></a>Syntax
 
@@ -147,7 +147,7 @@ Das folgende Beispiel zeigt die Metadaten für eine Projektvorlage einer Visual 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schemareferenz zu Visual Studio-Vorlagen](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Erstellen von Projekt- und Elementvorlagen](/visualstudio/ide/creating-project-and-item-templates)
-- [Anpassen von Projekt- und Elementvorlagen](/visualstudio/ide/customizing-project-and-item-templates)
-- [Erste Schritte mit der VSIX-Projektvorlage](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](creating-project-and-item-templates.md)
+- [Anpassen von Projekt- und Elementvorlagen](customizing-project-and-item-templates.md)
+- [Erste Schritte mit der VSIX-Projektvorlage](../extensibility/getting-started-with-the-vsix-project-template.md)

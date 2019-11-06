@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253200"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188775"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Konfigurieren von Visual Studio-Containertools
 
@@ -71,4 +71,4 @@ In der folgenden Tabelle werden die Einstellungen unter **Einzelnes Projekt** un
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen zum Arbeiten mit Containern in Visual Studio finden Sie in der [Übersicht](visual-studio-tools-for-docker.md).
+Weitere Informationen zum Arbeiten mit Containern in Visual Studio finden Sie in der [Übersicht](overview.md).

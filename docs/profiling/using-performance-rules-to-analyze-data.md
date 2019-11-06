@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2032100e03ae36e991d724a009e1fdcd485dda54
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: bc0c1b5245817a8946b1ccbd0fb244b3f0608c6e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422144"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189326"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Verwenden von Leistungsregeln zur Analyse von Daten
 Die Leistungswarnungen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools deuten auf Probleme in einer profilierten Anwendung hin, die die Programmausführung verlangsamen können. Warnungen können auch anzeigen, dass Sie möglicherweise die Sammlungsmethoden ändern müssen, um nützlichere Daten zu erfassen. Leistungswarnungen werden automatisch in einer Profilerstellungssitzung generiert. Die Warnungen werden im Fenster **Fehlerliste** angezeigt, wenn eine Datei mit Profilerstellungsdaten in Visual Studio geöffnet wird. Im Fenster **Fehlerliste** können Sie den Quellcode zu dem Problem suchen und ausführliche Informationen zu dem Fehler anzeigen, z.B. Informationen zur Problembehebung. Sie können außerdem Warnungen deaktivieren, die für Sie nicht relevant sind.
 
 > [!NOTE]
-> Leistungswarnungen des Profilers werden mithilfe der dynamischen Analyse bei der Programmausführung generiert; es besteht kein Zusammenhang mit Codeanalysewarnungen. Mit der Codeanalyse können auch Leistungswarnungen für verwalteten Code auf Grundlage der statischen Analyse des Quellcodes generiert werden. Weitere Informationen finden Sie unter [Analyzing Managed Code Quality (Analysieren der Qualität von verwaltetem Code)](/visualstudio/code-quality/code-analysis-for-managed-code-overview) und [Performance Warnings (Leistungswarnungen)](../code-quality/performance-warnings.md).
+> Leistungswarnungen des Profilers werden mithilfe der dynamischen Analyse bei der Programmausführung generiert; es besteht kein Zusammenhang mit Codeanalysewarnungen. Mit der Codeanalyse können auch Leistungswarnungen für verwalteten Code auf Grundlage der statischen Analyse des Quellcodes generiert werden. Weitere Informationen finden Sie unter [Analyzing Managed Code Quality (Analysieren der Qualität von verwaltetem Code)](../code-quality/code-analysis-for-managed-code-overview.md) und [Performance Warnings (Leistungswarnungen)](../code-quality/performance-warnings.md).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Vorgehensweise: Anzeigen von Leistungswarnungen](../profiling/how-to-view-performance-warnings.md)

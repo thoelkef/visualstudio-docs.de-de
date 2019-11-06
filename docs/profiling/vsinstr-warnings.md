@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822905"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189300"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr-Warnungen
 Die folgende Tabelle enthält die vom Tool *VSInstr.exe* ausgegebenen Warnungen. Sie können die NOWARN-Option zusammen mit den Warnungsnummern verwenden, um die Anzeige der Warnung zu unterdrücken.
 
-|Warnnummer|Beschreibung|
+|Warnnummer|BESCHREIBUNG|
 |--------------------|-----------------|
-|**VSP1026**|Die Abdeckung wird für Bibliotheken, die nicht auf MSCorLib verweisen, nicht unterstützt. Dies ist häufig bei portablen Bibliotheken der Fall.<br /><br />Die [/EnableCodeCoverage](/visualstudio/test/vstest-console-options)-Befehlszeilenoption ist für .NET Core erforderlich.|
+|**VSP1026**|Die Abdeckung wird für Bibliotheken, die nicht auf MSCorLib verweisen, nicht unterstützt. Dies ist häufig bei portablen Bibliotheken der Fall.<br /><br />Die [/EnableCodeCoverage](../test/vstest-console-options.md)-Befehlszeilenoption ist für .NET Core erforderlich.|
 |**VSP2000**|Interner Fehler. Der Moduldateiname für diese ausführbare Datei kann nicht abgerufen werden.|
 |**VSP2001**|\<assembly name> ist eine Assembly mit starkem Namen. Sie muss neu signiert werden, bevor sie ausgeführt werden kann.<br /><br /> Diese Warnung tritt auf, wenn eine signierte Assembly instrumentiert wird. Sie können das Tool *sn.exe* verwenden, um die Binärdatei neu zu signieren oder die Anforderung des starken Namens vorübergehend zu deaktivieren. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
 |**VSP2002**|Die Funktion \<Funktionsname> wurde in der Datei \<Dateiname> nicht gefunden.<br /><br /> Diese Warnung tritt auf, wenn eine Funktion in der angegebenen Datei nicht gefunden werden kann.|
