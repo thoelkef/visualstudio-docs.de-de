@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b204d6824f06037341420d27083c120e6e4b2a95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649302"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636538"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installieren von .NET Compiler Platform Code-Analyzern
 
@@ -26,7 +26,7 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Ros
 
 1. Suchen Sie das Analyzer-Paket, das Sie installieren möchten, auf www.nuget.org.
 
-   Beispielsweise können Sie [die Microsoft FxCop-Analysen installieren](install-fxcop-analyzers.md#nuget-package) , um den Code unter anderem auf Sicherheits-und Leistungsprobleme zu überprüfen. Sie können auch [stylecopanalyzers](https://www.nuget.org/packages/stylecop.analyzers/) installieren, um nach Stil Problemen in Ihrer Codebasis zu suchen.
+   Beispielsweise können Sie [die Microsoft FxCop-Analysen installieren](install-fxcop-analyzers.md#nuget-package) , um den Code unter anderem auf Sicherheits-und Leistungsprobleme zu überprüfen. Oder installieren Sie [StyleCop. Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) , um nach Stil Problemen in Ihrer Codebasis zu suchen.
 
 2. Installieren Sie das Paket in Visual Studio, indem Sie entweder die [Paket-Manager-Konsole](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) oder die [Benutzeroberfläche des Paket-Managers](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)verwenden.
 
