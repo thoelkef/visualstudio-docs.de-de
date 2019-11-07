@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981954"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661858"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint-Projekt-und Projekt Element Vorlagen
   In den folgenden Abschnitten werden die in SharePoint verfügbaren Projekte und Projektelementvorlagen sowie deren Verwendung beschrieben.
@@ -132,7 +132,7 @@ ms.locfileid: "72981954"
  Ein *Zustands Automaten Workflow* besteht aus einem Satz von Geschäftslogik Zuständen, Übergängen und Aktionen. Die Schritte in einem Zustandsautomatworkflow werden nicht nacheinander ausgeführt, sondern von Aktionen und Zuständen ausgelöst. Ebenso wie sequenzielle Workflows werden Zustandsautomatworkflows SharePoint-Elementen wie Listen und Dokumenten zugeordnet. Auch in diesem Fall können Sie Workflows auf Websiteebene (global) oder auf Listenebene (lokal) erstellen. Außerdem können Sie auswählen, ob ein Workflow automatisch oder manuell startet. Dieses Projektelement kann nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen von SharePoint-Workflow Lösungen](../sharepoint/creating-sharepoint-workflow-solutions.md), [Workflows in SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))und [Neuerungen: Workflow Verbesserungen](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14)).
 
 ### <a name="user-control-farm-solution-only"></a>Benutzer Steuerelement (nur Farm Lösung)
- Ein *Benutzer Steuer* Element ist ein benutzerdefiniertes, wiederverwendbares Steuerelement, mit dem Sie weitere ASP.NET-Steuerelemente und SharePoint-Steuerelemente Das Benutzersteuerelement kann in SharePoint ausgeführten Anwendungsseiten und Webparts hinzugefügt werden. Dieses Projektelement kann nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019).
+ Ein *Benutzer Steuer* Element ist ein benutzerdefiniertes, wiederverwendbares Steuerelement, mit dem Sie weitere ASP.NET-Steuerelemente und SharePoint-Steuerelemente Das Benutzersteuerelement kann in SharePoint ausgeführten Anwendungsseiten und Webparts hinzugefügt werden. Dieses Projektelement kann nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages).
 
 ### <a name="visual-web-part"></a>Visuelles Webpart
  Ein *visuelles Webpart* -Projekt Element enthält die Definitionsdatei " *Elements. XML* ", ein **Webpartelement** und ein **Benutzer Steuer** Element. Sie können das Erscheinungsbild des visuellen Webparts entwerfen, indem Sie Steuerelemente aus der Visual Studio-Toolbox auf die Oberfläche des Benutzer Steuer Elements ziehen oder kopieren. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines SharePoint-Webparts mithilfe eines Designers und eines](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) [Baustein: Webparts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
