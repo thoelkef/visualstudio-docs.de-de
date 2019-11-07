@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986094"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661851"
 ---
 # <a name="excel-object-model-overview"></a>Übersicht über das Excel-Objektmodell
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:
@@ -103,7 +103,7 @@ ms.locfileid: "72986094"
  Ausführliche Informationen zum Excel-Objektmodell finden Sie in der Referenz für die primäre Interopassembly (PIA) für Excel und der VBA-Objektmodellreferenz.
 
 ### <a name="primary-interop-assembly-reference"></a>Referenz zur primären Interopassembly
- In der Referenzdokumentation für die Excel-PIA werden die Typen in der primären Interopassembly für Excel beschrieben. Diese Dokumentation ist unter folgendem Speicherort verfügbar: [Excel 2010 primärer interopassemblyverweis](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
+ In der Referenzdokumentation für die Excel-PIA werden die Typen in der primären Interopassembly für Excel beschrieben. Diese Dokumentation ist unter folgendem Speicherort verfügbar: [Excel 2010 primärer interopassemblyverweis](/visualstudio/vsto/office-primary-interop-assemblies).
 
  Weitere Informationen zum Entwurf der Excel-Pia, z. b. zu den Unterschieden zwischen Klassen und Schnittstellen in der Pia und zur Implementierung von Ereignissen in der Pia, finden Sie unter [Übersicht über Klassen und Schnittstellen in den primären Interop](/previous-versions/office/office-12/ms247299(v=office.12))-Assemblys von Office.
 

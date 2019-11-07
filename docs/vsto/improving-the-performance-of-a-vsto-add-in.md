@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985776"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661843"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Verbessern der Leistung eines VSTO-Add-ins
   Sie können die Benutzererfahrung verbessern, indem Sie VSTO-Add-Ins optimieren, die Sie für Office-Anwendungen erstellen, sodass diese schnell gestartet und heruntergefahren, Elemente schnell geöffnet und andere Aufgaben rasch ausgeführt werden können. Wenn das VSTO-Add-In für Outlook bestimmt ist, können Sie das Risiko senken, dass das VSTO-Add-In aufgrund schwacher Leistung deaktiviert wird. Sie können die Leistung des VSTO-Add-Ins mithilfe der folgenden Strategien steigern:
@@ -28,7 +28,7 @@ ms.locfileid: "72985776"
 
 - [Kostenintensive Vorgänge in einem separaten Ausführungsthread ausführen](#Perform).
 
-  Weitere Informationen zur Optimierung eines Outlook-VSTO-Add-Ins finden Sie unter [Leistungskriterien, um VSTO-Add-Ins zu aktivieren](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
+  Weitere Informationen zur Optimierung eines Outlook-VSTO-Add-Ins finden Sie unter [Leistungskriterien, um VSTO-Add-Ins zu aktivieren](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
 
 ## <a name="Load"></a> Bedarfsgesteuertes Laden von VSTO-Add-Ins
  Sie können ein VSTO-Add-In so konfigurieren, dass es nur unter folgenden Umständen geladen wird:
