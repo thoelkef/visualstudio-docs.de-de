@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188410"
 ---
-# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuggen vonC#verwaltetem Code F#( C++, Visual Basic,,/CLI)
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debuggen von verwaltetem Code (C#, Visual Basic, F#, C++/CLI)
 
 In diesem Abschnitt werden häufige Debugprobleme und-Techniken für verwaltete Anwendungen oder Anwendungen behandelt, die in Sprachen geschrieben wurden, die auf C#die Common Language Runtime C++abzielen, z. b. Visual Basic, und/CLI. Die in diesem Abschnitt behandelten Verfahren setzen Programmiererfahrung voraus. [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
