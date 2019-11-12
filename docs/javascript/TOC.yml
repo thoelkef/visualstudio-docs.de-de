@@ -44,5 +44,5 @@
   items:
     - name: package.json-Konfiguration
       href: configure-packages-with-package-json.md
-    - name: Wiki-Dokumentation für JavaScript und TypeScript
-      href: 'https://github.com/Microsoft/nodejstools/wiki'
+    - name: Repository für JavaScript- und TypeScript-Dokumentation
+      href: 'https://github.com/Microsoft/JSTSdocs'
