@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431018"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661919"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -44,14 +44,14 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras** > **Optionen** > **Python**.)
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Beim Erstellen virtueller Umgebungen das Ausgabefenster anzeigen**| Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das **Ausgabefenster** angezeigt wird. |
 | **Beim Installieren oder Entfernen von Paketen das Ausgabefenster anzeigen** | Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das **Ausgabefenster** angezeigt wird. |
 | **Benachrichtigungsleiste zum Erstellen von Umgebungen anzeigen** | Ein | *Gilt nur für Visual Studio 2019.* Wenn diese Option festgelegt ist und der Benutzer ein Projekt öffnet, das eine Datei namens *requirements.txt* oder *environment.yml* enthält, zeigt Visual Studio eine Informationsleiste mit Vorschlägen für die Erstellung einer virtuellen Umgebung bzw. einer Conda-Umgebung an, anstatt die globale Standardumgebung zu verwenden. |
 | **Benachrichtigungsleiste zum Erstellen von Paketen anzeigen** | Ein | *Gilt nur für Visual Studio 2019.* Wenn diese Option festgelegt ist und der Benutzer ein Projekt öffnet, das eine Datei namens *requirements.txt* enthält (und nicht die globale Standardumgebung verwendet wird), gleicht Visual Studio diese Anforderungen mit Paketen ab, die in der aktuellen Umgebung installiert sind. Sollten Pakete fehlen, fordert Visual Studio zur Installation dieser Abhängigkeiten auf. |
 | **Paket-Manager immer als Administrator ausführen** | Aus | Führt dazu, dass `pip install` und ähnliche Paket-Manager-Vorgänge für alle Umgebungen immer mit erhöhten Rechten ausgeführt werden. Beim Installieren von Paketen fordert Visual Studio die Eingabe von Administratorberechtigungen, wenn sich die Umgebung in einem geschützten Bereich des Dateisystems wie z.B. *c:\Programme* befindet. In dieser Aufforderung können Sie auswählen, dass der Installationsbefehl für diese eine Umgebung immer mit erhöhten Rechten ausgeführt werden soll. Siehe [Registerkarte „Pakete“](python-environments-window-tab-reference.md#packages-tab). |
-| **Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren** | Ein | *Gilt für Visual Studio 2017 Version 15.5 und früher sowie bei Verwendung einer IntelliSense-Datenbank für höhere Versionen.* Priorisiert die Vervollständigung der Datenbank für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. Weitere Informationen finden Sie unter [Registerkarte „IntelliSense“](python-environments-window-tab-reference.md#intellisense-tab). |
+| **Bei erster Verwendung automatisch Vervollständigungsdatenbank generieren** | Ein | *Gilt für Visual Studio 2017 Version 15.5 und früher sowie bei Verwendung einer IntelliSense-Datenbank für höhere Versionen.* Priorisiert die Vervollständigung der Datenbank für eine Bibliothek, wenn Sie Code schreiben, der diese verwendet. Weitere Informationen finden Sie unter [Registerkarte „IntelliSense“](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab). |
 | **Systemweite PYTHONPATH-Variablen ignorieren** | Ein | PYTHONPATH wird standardmäßig ignoriert, weil Visual Studio eine direktere Möglichkeit bietet, Suchpfade in Umgebungen und Projekten anzugeben. Weitere Informationen finden Sie unter [Suchpfade](search-paths.md). |
 | **Suchpfade beim Hinzufügen verknüpfter Dateien aktualisieren** | Ein | Wenn diese Option festgelegt ist, werden [Suchpfade](search-paths.md) durch das Hinzufügen einer [verknüpften Datei](managing-python-projects-in-visual-studio.md#linked-files) zu einem Projekt aktualisiert, sodass IntelliSense die Inhalte des Ordners der verknüpften Datei in seine Vervollständigungsdatenbank einbeziehen kann. Deaktivieren Sie diese Option, um derartigen Inhalt aus der Vervollständigungsdatenbank auszuschließen. |
 | **Warnen, wenn das importierte Modul nicht gefunden wird** | Ein | Deaktivieren Sie diese Option, um Warnungen zu unterdrücken, wenn Sie wissen, dass ein importiertes Modul aktuell nicht verfügbar ist, den Codevorgang aber ansonsten nicht beeinträchtigt. |
@@ -71,7 +71,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (**Extras** > **Optionen** > **Python** > Registerkarte **Conda**.)
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Pfad der ausführbaren Conda-Datei** | (leer) | Gibt den exakten Pfad zur ausführbaren Datei *conda.exe* an, anstatt sich auf die standardmäßige Miniconda-Installation zu verlassen, die in der Python-Workload enthalten ist. Wenn hier ein anderer Pfad angegeben ist, hat dieser Vorrang vor der Standardinstallation und allen anderen ausführbaren Dateien vom Typ „conda.exe“, die ggf. in der Registrierung angegeben sind. Diese Einstellung kann beispielsweise geändert werden, wenn Sie manuell eine neuere Version von Anaconda oder Miniconda installieren oder anstelle der 64-Bit-Standarddistribution eine 32-Bit-Distribution verwenden möchten. |
 
@@ -83,7 +83,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras** > **Optionen** > **Python** > **Debuggen**.)
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Eingabeaufforderung vor der Ausführung, wenn Fehler vorliegen** | Ein | Wenn diese Option aktiviert ist, werden Sie aufgefordert zu bestätigen, dass Sie Code ausführen möchten, der Fehler enthält. Deaktivieren Sie diese Option, um das Warnen auszuschalten. |
 | **Auf Eingabe warten, wenn der Prozess abnormal beendet wird**<br/><br/>**Auf Eingabe warten, wenn der Prozess normal beendet wird** | Ein (für beide) | Ein aus Visual Studio gestartetes Python-Programm wird in seinem eigenen Konsolenfenster ausgeführt. Standardmäßig wartet das Fenster, bis Sie eine Taste drücken, bevor es schließt, unabhängig davon, wie das Programm beendet wird. Um diese Aufforderung zu deaktivieren und das Fenster automatisch zu schließen, deaktivieren Sie mindestens eine dieser beiden Optionen. |
@@ -104,7 +104,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras** > **Optionen** > **Python** > **Diagnose**.)
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Einbeziehen von Analyseprotokollen** | Ein | Enthält ausführliche Protokolle zur Analyse von installierten Python-Umgebungen beim Speichern von Diagnosen in Dateien oder beim Kopieren dieser in die Zwischenablage mithilfe von Schaltflächen. Die Option kann die Größe der generierten Datei deutlich erhöhen, ist aber häufig für das Diagnostizieren von Problemen bei IntelliSense erforderlich. |
 | **Diagnose in Datei speichern** (Schaltfläche) | n/v | Erfordert einen Dateinamen und speichert das Protokoll anschließend in einer Textdatei |
@@ -116,7 +116,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Extras** > **Optionen** > **Python** > **Interaktive Fenster** tab.)
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Skripts** | n/v | Gibt einen allgemeinen Ordner an, den Startskripts auf **interaktive** Fenster für alle Umgebungen anwenden. Weitere Informationen finden Sie unter [Startskripte](python-environments-window-tab-reference.md#startup-scripts). Beachten Sie, dass diese Funktion im Moment nicht funktioniert. |
 | **NACH-OBEN- und NACH-UNTEN-TASTEN zum Navigieren des Verlaufs** | Ein | Verwenden Sie die Pfeiltasten, um durch den Verlauf im **interaktiven** Fenster zu Navigieren. Deaktivieren Sie diese Einstellung, um die Pfeiltasten stattdessen zum Navigieren der Ausgabe im **interaktiven** Fenster zu verwenden. |
@@ -130,7 +130,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (**Extras** > **Optionen** > **Python** > Registerkarte **Sprachserver**.)
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Vervollständigungen aus Typeshed deaktivieren** | Aus | Visual Studio IntelliSense verwendet normalerweise eine gebündelte Version von Typeshed (eine Gruppe von Dateien mit der Erweiterung *.pyi*), um nach Typhinweisen für die Standardbibliothek sowie für Drittanbieterbibliotheken für Python 2 und Python 3 zu suchen. Wenn Sie diese Option festlegen, wird das gebündelte Typeshed-Verhalten deaktiviert. |
 | **Benutzerdefinierter Typeshed-Pfad** | (leer) | Wird diese Option festgelegt, verwendet Visual Studio anstelle der gebündelten Version die Typeshed-Dateien unter diesem Pfad. Ignorieren Sie diese Option, wenn **Vervollständigungen aus Typeshed deaktivieren** festgelegt ist. |
@@ -145,7 +145,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 ### <a name="completion-results"></a>Vervollständigungsergebnisse
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Membervervollständigung zeigt Schnittmenge der Member an** | Aus | Wenn diese Option aktiviert ist, werden nur die Vervollständigungen angezeigt, die von allen möglichen Typen unterstützt werden. |
 | **Liste basierend auf Suchzeichenfolge filtern** | Ein | Wendet den Filter auf Vervollständigungsvorschläge an, während Sie eine Eingabe machen (Standard ist aktiviert). |
@@ -153,7 +153,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 ### <a name="selection-in-completion-list"></a>Auswahl in Vervollständigungslisten
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Commit bei Eingabe der folgenden Zeichen** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
 | **Bei EINGABE wird die aktuelle Vervollständigung übernommen** | Ein | Wenn diese Option aktiviert ist, wählt die **EINGABETASTE** die aktuell ausgewählte Vervollständigung aus und wendet diese an wie mit den oben stehenden Zeichen (es gibt natürlich kein Zeichen für **EINGABE**, weshalb es nicht direkt in die Liste aufgenommen werden kann). |
@@ -161,7 +161,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 ### <a name="miscellaneous-options"></a>Sonstige Optionen
 
-| Option | Standard | Beschreibung |
+| Option | Standard | BESCHREIBUNG |
 | --- | --- | --- |
 | **Beim Öffnen von Dateien in Gliederungsmodus wechseln** | Ein | Aktivieren Sie die Gliederungsfunktion von Visual Studio automatisch im Editor, wenn Sie eine Python-Codedatei öffnen. |
 | **Entfernte REPL-Aufforderungen einfügen** | Ein | Entfernt **>>>** und **...** aus eingefügtem Text, sodass Code leicht aus dem **interaktiven** Fenster in den Editor übertragen werden kann. Deaktivieren Sie diese Option, wenn Sie diese Zeichen behalten möchten, wenn Sie aus anderen Quellen einfügen. |

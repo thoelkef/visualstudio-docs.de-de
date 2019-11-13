@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211464"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716785"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installieren von Visual Studio 2019 für Mac
 
@@ -76,9 +76,9 @@ Darüber hinaus benötigen Sie zum Erstellen von Xamarin-Apps für iOS oder macO
 
     [![Auswählen der gewünschten Tastenkombinationen](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-Wenn während der Installation in einer Unternehmensumgebung Netzwerkprobleme auftreten, lesen Sie die Anweisungen unter [Installation hinter einer Firewall oder einem Proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
+Wenn während der Installation in einer Unternehmensumgebung Netzwerkprobleme auftreten, lesen Sie die Anweisungen unter [Installation hinter einer Firewall oder einem Proxy](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
-Informationen zu den Änderungen in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
+Informationen zu den Änderungen in den [Versionshinweisen](/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
 > Wenn Sie sich während der ursprünglichen Installation gegen die Installation einer Plattform oder eines Tools entschieden haben (indem Sie die Auswahl in Schritt 6 aufgehoben haben), müssen Sie den Installer erneut ausführen, wenn Sie die Komponenten später hinzufügen möchten.

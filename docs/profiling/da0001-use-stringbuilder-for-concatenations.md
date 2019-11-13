@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e75d003031d591c8ae777c606e6f7a2b6ea8c0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911998"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983705"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder für Verkettungen verwenden
 
@@ -41,4 +41,4 @@ ms.locfileid: "72911998"
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise zur Überprüfung einer Warnung
  Doppelklicken Sie auf die Meldung im Fenster **Fehlerliste**, um zur [Funktionsdetailansicht](../profiling/function-details-view.md) der Samplingprofildaten zu navigieren. Suchen Sie die Abschnitte des Programms, in denen Zeichenfolgenverkettungen am häufigsten verwendet werden. Verwenden Sie die StringBuilder-Klasse für komplexe Zeichenfolgenbearbeitungen, wie häufige Zeichenfolgenverkettungsoperationen.
 
- Weitere Informationen zum Arbeiten mit Zeichenfolgen finden Sie im Abschnitt [String Operations (Zeichenfolgenoperationen)](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic26) in [Chapter 5 – Improving Managed Code Performance (Kapitel 5 – Verbessern der Leistung von verwaltetem Code)](/previous-versions/msp-n-p/ff647790(v=pandp.10)) in der Microsoft-Bibliothek für Muster und Vorgehensweisen.
+ Weitere Informationen zum Arbeiten mit Zeichenfolgen finden Sie im Abschnitt [String Operations (Zeichenfolgenoperationen)](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) in [Chapter 5 – Improving Managed Code Performance (Kapitel 5 – Verbessern der Leistung von verwaltetem Code)](/previous-versions/msp-n-p/ff647790(v=pandp.10)) in der Microsoft-Bibliothek für Muster und Vorgehensweisen.

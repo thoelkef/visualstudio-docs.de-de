@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189311"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661928"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
@@ -94,7 +94,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
     Ab Visual Studio-2019 können Sie einen Ordner mit Python-Code öffnen, um Funktionen wie IntelliSense und Debuggen zu nutzen, ohne ein Visual Studio-Projekt für den Code zu erstellen.
 ::: moniker-end
 
-- [Zusammenarbeiten mithilfe von Visual Studio](/visualstudio/liveshare/use/vs)
+- [Zusammenarbeiten mithilfe von Visual Studio](/visualstudio/liveshare/)
   
     Visual Studio Live Share ermöglicht Ihnen eine Zusammenarbeit in Echtzeit, um gemeinsam mit anderen Benutzern Projekte zu bearbeiten und zu debuggen – unabhängig von den verwendeten Programmiersprachen oder den erstellten App-Typen. 
 

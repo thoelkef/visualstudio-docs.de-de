@@ -6,22 +6,22 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 3578e3e903470f857192643a3da47d62e87da934
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691720"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716964"
 ---
 # <a name="debugging-with-xamarin"></a>Debuggen mit Xamarin
 
 Visual Studio für Mac besitzt einen nativen Debugger, der das Debuggen für Xamarin.iOS-, Xamarin.Mac- und Xamarin.Android-Anwendungen unterstützt.
 
-Visual Studio für Mac verwendet den [*Soft-Debugger von Mono*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), der in die Mono-Laufzeit integriert wird und es Visual Studio für Mac ermöglicht, verwalteten Code für alle Plattformen zu debuggen.
+Visual Studio für Mac verwendet den [*Soft-Debugger von Mono*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), der in die Mono-Laufzeit integriert wird und es Visual Studio für Mac ermöglicht, verwalteten Code für alle Plattformen zu debuggen.
 
 ## <a name="the-debugger"></a>Der Debugger
 
-Visual Studio für Mac verwendet den Soft-Debugger von Mono, um verwalteten Code (C# oder F#) für alle Xamarin-Anwendungen zu debuggen. Der Soft-Debugger von Mono unterscheidet sich insofern von gewöhnlichen Debuggern, dass es sich um einen kooperativen und in die Mono-Laufzeit integrierten Debugger handelt. Der generierte Code und die Mono-Laufzeit kooperieren mit der IDE, um für ein benutzerfreundliches Debuggen zu sorgen. Die Mono-Laufzeit stellt die Debugfunktion über ein Versandprotokoll zur Verfügung. Weitere Informationen dazu finden Sie [in der Mono-Dokumentation](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio für Mac verwendet den Soft-Debugger von Mono, um verwalteten Code (C# oder F#) für alle Xamarin-Anwendungen zu debuggen. Der Soft-Debugger von Mono unterscheidet sich insofern von gewöhnlichen Debuggern, dass es sich um einen kooperativen und in die Mono-Laufzeit integrierten Debugger handelt. Der generierte Code und die Mono-Laufzeit kooperieren mit der IDE, um für ein benutzerfreundliches Debuggen zu sorgen. Die Mono-Laufzeit stellt die Debugfunktion über ein Versandprotokoll zur Verfügung. Weitere Informationen dazu finden Sie [in der Mono-Dokumentation](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Hard-Debugger, zum Beispiel [LLDB]( http://lldb.llvm.org/index.html) oder [GDB]( https://www.gnu.org/software/gdb/), steuern ein Programm ohne das Wissen oder die Kooperation des gedebuggten Programms. Diese können aber dennoch beim Debuggen von Xamarin-Anwendungen hilfreich sein, falls Sie nativen iOS- oder Android-Code debuggen müssen.
 
