@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789822"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714390"
 ---
 # <a name="build-events-page-project-designer-c"></a>Seite "Buildereignisse", Projekt-Designer (C#)
 
@@ -77,11 +77,19 @@ dann ist die Projektdateieinstellung wie folgt:
 </PropertyGroup>
 ```
 
-Visual Studio 2019 (und Visual Studio 2017 mit den neuesten Updates) fügt den Einstellungen **PreBuildEvent** und **PostBuildEvent** ein MSBuild-Ziel namens `PreBuild` oder `PostBuild` hinzu. Beispielsweise generiert Visual Studio für das vorherige Beispiel nun den folgenden Code:
+Für .NET Core-Projekte fügt Visual Studio 2019 (und Visual Studio 2017 mit den neuesten Updates) den Einstellungen **PreBuildEvent** und **PostBuildEvent** ein MSBuild-Ziel namens `PreBuild` oder `PostBuild` hinzu. Diese Ziele verwenden die **BeforeTargets**- und **AfterTargets**-Attribute, die von MSBuild erkannt werden. Beispielsweise generiert Visual Studio für das vorherige Beispiel nun den folgenden Code:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+Verwenden Sie für ein Ereignis nach dem Buildvorgang den Namen `PostBuild`, und legen Sie das Attribut `AfterTargets` auf `PostBuildEvent` fest.
+
+```xml
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
 </Target>
 ```
 
