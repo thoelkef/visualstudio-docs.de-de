@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984187"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983780"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicherheit für SharePoint-Lösungen
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst die folgenden Funktionen, um die Sicherheit von SharePoint-Anwendungen zu verbessern.
 
 ## <a name="safe-control-entries"></a>Einträge für sicheres Steuerelement
- Jedes SharePoint-Projekt Element, das in [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt wurde, verfügt über eine Eigenschaft für **sicheres Steuerelement Einträge** , die eine Auflistung sicherer Steuerelemente Mit Ihrer **sicheren** untergeordneten Eigenschaft können Sie die Steuerelemente angeben, die Sie als sicher betrachtet haben. Weitere Informationen finden Sie unter [Bereitstellen von Paket-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [Angeben von sicherem Webparts](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
+ Jedes SharePoint-Projekt Element, das in [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt wurde, verfügt über eine Eigenschaft für **sicheres Steuerelement Einträge** , die eine Auflistung sicherer Steuerelemente Mit Ihrer **sicheren** untergeordneten Eigenschaft können Sie die Steuerelemente angeben, die Sie als sicher betrachtet haben. Weitere Informationen finden Sie unter [Bereitstellen von Paket-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und [Angeben von sicherem Webparts](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Allowpartiallytrust dcaller-Attribut
  Standardmäßig können nur Anwendungen, denen das System zur Laufzeit-Code Zugriffssicherheit (CAS) voll vertrauenswürdig ist, auf eine freigegebene verwaltete Codeassembly zugreifen. Durch das Markieren einer voll vertrauenswürdigen Assembly mit dem allowpartiallytrust dcaller-Attribut können teilweise vertrauenswürdige Assemblys darauf zugreifen.
