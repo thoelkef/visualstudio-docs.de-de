@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416869"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713940"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Vorgehensweise: Ausschließen von Projekten aus einem Build
 
@@ -53,6 +53,19 @@ Weitere Informationen finden Sie unter [Grundlagen der Buildkonfigurationen](../
 6. Stellen Sie auf der Symbolleiste **Standard** sicher, dass es sich bei der neuen Projektmappenkonfiguration um die aktive Konfiguration im Feld **Projektmappenkonfigurationen** handelt.
 
 7. Wählen Sie in der Menüleiste **Erstellen** > **Projektmappe neu erstellen** aus.
+
+## <a name="skipped-projects"></a>Übersprungene Projekte
+
+Projekte können während des Builds übersprungen werden, weil Sie nicht auf dem neuesten Stand sind oder von der Konfiguration ausgeschlossen sind. Visual Studio verwendet MSBuild, um Ihre Projekte zu erstellen. MSBuild erstellt nur dann ein Ziel, wenn die Ausgabe älter ist als die Eingabe, wie durch die Zeitstempel der Datei festgelegt. Um einen erneuten Buildvorgang zu erzwingen, verwenden Sie den Befehl **Build** > **Projektmappe neu erstellen**.
+
+Im Bereich **Build** des Fensters **Ausgabe** meldet Visual Studio die Anzahl der Projekte, die auf dem neuesten Stand sind, die Anzahl, die erfolgreich erstellt wurde, die Anzahl, die fehlgeschlagen ist, und die Anzahl, die übersprungen wurde. Die Anzahl übersprungener Projekte umfasst keine Projekte, die nicht erstellt wurden, weil sie auf dem neuesten Stand sind. Wenn Projekte von der aktiven Konfiguration ausgeschlossen werden, werden Sie während des Builds übersprungen. In der Buildausgabe wird eine Meldung angezeigt, die besagt, dass das Projekt übersprungen wird:
+
+```output
+2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
+2>Project not selected to build for this solution configuration
+```
+
+Wenn Sie herausfinden möchten, warum ein Projekt übersprungen wurde, notieren Sie sich die aktive Konfiguration (`Debug x86` im vorherigen Beispiel), und wählen Sie **Build** > **Konfigurations-Manager** aus. Sie können anzeigen oder ändern, welche Projekte für jede Konfiguration übersprungen werden, wie in diesem Artikel erläutert wird.
 
 ## <a name="see-also"></a>Siehe auch
 

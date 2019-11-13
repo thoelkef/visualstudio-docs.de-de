@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950640"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713932"
 ---
 # <a name="docker-compose-build-properties"></a>Buildeigenschaften von Docker Compose
 
@@ -35,6 +35,8 @@ In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für 
 
 | Name der Eigenschaft | Speicherort | BESCHREIBUNG | Standardwert  |
 |---------------|----------|-------------|----------------|
+|AdditionalComposeFiles|dcproj|Gibt zusätzliche Compose-Dateien in einer durch Semikolons getrennten Liste an, die an „docker-compose.exe“ für alle Befehle gesendet werden sollen. Relative Pfade aus der docker-compose-Projektdatei (DCPROJ-Datei) sind zulässig.|-|
+|DockerComposeBaseFilePath|dcproj|Gibt den ersten Teil der Dateinamen der docker-compose-Dateien ohne die Erweiterung *.yml* an. Beispiel: <br>1.  DockerComposeBaseFilePath = NULL/nicht definiert: Verwenden Sie den Basisdateipfad *docker-compose*. Dateien werden dann als *docker-compose.yml* und *docker-compose.override.yml* benannt.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: Dateien werden als *mydockercompose.yml* und *mydockercompose.override.yml* benannt.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: Dateien werden eine Ebene nach oben verlagert. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose build` übergeben werden sollen. Beispiel: `--parallel --pull` |
 |DockerComposeDownArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose down` übergeben werden sollen. Beispiel: `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj oder vbproj|Der relative Pfad zur Docker Compose-Projektdatei (mit der DCPROJ-Erweiterung). Legen Sie diese Eigenschaft fest, wenn Sie das Dienstprojekt veröffentlichen, damit die zugeordneten Imagebuildeinstellungen in der Datei „docker-compose.yml“ gefunden werden.|-|
