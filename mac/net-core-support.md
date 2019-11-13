@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 08/20/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 98451c728b15344b116f275ca6a40fd902f33f0f
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: ad23044792d2c21c075e70107b74984d54de2bd3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186797"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714527"
 ---
 # <a name="net-core-support"></a>.NET Core-Unterstützung
 
@@ -33,5 +33,5 @@ Die folgende Tabelle beschreibt die Versionen von .NET Core, die von den Stabil-
 * .NET Core v3.0 wird standardmäßig für 8.3 installiert.
 * .NET Core Version 2.1.701 (Version 2.1.700 für 8.1) wird standardmäßig mit dem Installer installiert.
 * Um eine andere Version von .NET Core herunterzuladen, besuchen Sie die [dotnet-Seite](https://dotnet.microsoft.com/download/dotnet-core).
-* Bei Verwendung von .NET Core 3.0 wird standardmäßig C# Version 8 verwendet. C# 7.3 ist Standard bei der Verwendung von .NET Core 2.x. Weitere Informationen finden Sie unter [Verwaltung der C#-Sprachversion](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version).
-* Informationen zum Installieren einer Vorschauversion von Visual Studio für Mac finden Sie im Handbuch [Installieren einer Vorschauversion](https://docs.microsoft.com/visualstudio/mac/install-preview).
+* Bei Verwendung von .NET Core 3.0 wird standardmäßig C# Version 8 verwendet. C# 7.3 ist Standard bei der Verwendung von .NET Core 2.x. Weitere Informationen finden Sie unter [Verwaltung der C#-Sprachversion](/dotnet/csharp/language-reference/configure-language-version).
+* Informationen zum Installieren einer Vorschauversion von Visual Studio für Mac finden Sie im Handbuch [Installieren einer Vorschauversion](/visualstudio/mac/install-preview).

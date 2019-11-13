@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024716"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661942"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -124,7 +124,7 @@ Aus diesem Grund erstellen Entwickler oft eine *virtuelle Umgebung* für ein Pro
 
 Visual Studio stellt direkte Unterstützung für das Erstellen einer virtuellen Umgebung für ein Projekt bereit. Wenn Sie beispielsweise ein Projekt öffnen, dass eine *requirements.txt*-Datei enthält, oder ein Projekt aus einer Vorlage erstellen, die diese Datei enthält, werden Sie von Visual Studio dazu aufgefordert, eine virtuelle Umgebung automatisch zu erstellen und diese Abhängigkeiten zu installieren.
 
-In einem offenen Projekt können Sie jederzeit eine neue virtuelle Umgebung erstellen. Erweitern Sie im **Projektmappen-Explorer** den Projektknoten, klicken Sie mit der rechten Maustaste auf **Python-Umgebungen**, und klicken Sie dann auf „Virtuelle Umgebung hinzufügen“. Weitere Informationen finden Sie unter [Erstellen einer virtuellen Umgebung](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1).
+In einem offenen Projekt können Sie jederzeit eine neue virtuelle Umgebung erstellen. Erweitern Sie im **Projektmappen-Explorer** den Projektknoten, klicken Sie mit der rechten Maustaste auf **Python-Umgebungen**, und klicken Sie dann auf „Virtuelle Umgebung hinzufügen“. Weitere Informationen finden Sie unter [Erstellen einer virtuellen Umgebung](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1).
 
 Visual Studio enthält auch einen Befehl, um eine *requirements.txt*-Datei aus einer virtuellen Umgebung zu generieren. Dies vereinfacht das erneute Erstellen der Umgebung auf anderen Computern. Weitere Informationen finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 

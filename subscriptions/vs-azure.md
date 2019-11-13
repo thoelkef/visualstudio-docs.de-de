@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil für Einzelguthaben für Azure DevTest, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
-ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816452"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983770"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden.  Mit Ihrem [monatlichen Einzelguthaben für Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ist Azure Ihre persönliche Sandbox zum Entwickeln und Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen.  Die Höhe der Gutschrift hängt von der Abonnementstufe ab.
@@ -41,9 +41,11 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 ## <a name="eligibility"></a>Berechtigung
 |                 Abonnementstufe/Programm                 |           Vorteil           |                         Erneuerbar?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 USD monatliches Guthaben     |                             Ja                             ||
+|              Visual Studio Enterprise Standard               |     150 USD monatliches Guthaben     |                             Ja                             |
+|              Visual Studio Enterprise mit GitHub Enterprise               |     150 USD monatliches Guthaben     |                             Ja                             |
 |               Visual Studio Enterprise – Monatsabonnement               |        Nicht verfügbar        |                                                             |
 |             Visual Studio Professional Standard              |     50 USD monatliches Guthaben      |                             Ja
+|              Visual Studio Professional mit GitHub Enterprise              |     150 USD monatliches Guthaben     |                             Ja                             |
 |              Visual Studio Professional – Monatsabonnement              |        Nicht verfügbar        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD monatliches Guthaben      |                             Ja                             |
 |                        MSDN Platforms                        |     100 USD monatliches Guthaben     |                             Ja                             |
