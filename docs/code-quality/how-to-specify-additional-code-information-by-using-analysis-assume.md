@@ -12,14 +12,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 9933a013ed4f2df0978fb66e3aff87b4cdc024f9
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018719"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925959"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Vorgehensweise: Angeben zusätzlicher Codeinformationen mit „__Analysis_assume“
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Gewusst wie: Angeben zusätzlicher Code Informationen mithilfe von _Analysis_assume
 
 Sie können Hinweise für das Code Analysetool für C/C++ Code bereitstellen, das den Analyseprozess unterstützt und Warnungen reduziert. Verwenden Sie die folgende Funktion, um zusätzliche Informationen bereitzustellen:
 
@@ -30,7 +30,7 @@ Sie können Hinweise für das Code Analysetool für C/C++ Code bereitstellen, da
 Das Code Analysetool geht davon aus, dass die Bedingung, die durch den Ausdruck dargestellt wird, an der Stelle, an der die Funktion angezeigt wird, true ist, bis der Ausdruck geändert wird, z. b. durch Zuweisung zu einer Variablen.
 
 > [!NOTE]
-> `_Analysis_assume` hat keine Auswirkung auf die Codeoptimierung. Außerhalb des Code Analysetools ist `_Analysis_assume` als No-op definiert.
+> `_Analysis_assume` wirkt sich nicht auf die Codeoptimierung aus. Außerhalb des Code Analysetools ist `_Analysis_assume` als No-op definiert.
 
 ## <a name="example"></a>Beispiel
 
@@ -52,7 +52,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    __analysis_assume(pc == NULL);
+    _Analysis_assume(pc == NULL);
     f(pc);
 }
 ```

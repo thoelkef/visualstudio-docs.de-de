@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 87a4fae1bd5430037b34297f803a6d955a052f68
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890635"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716938"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Erweitern von Visual Studio für Mac
 
@@ -135,7 +135,7 @@ Dadurch werden der Befehl und das Befehlselement verknüpft: Das Befehlselement 
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind, finden Sie unter [Extension Tree Reference (Referenz zur Erweiterungsstruktur)](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) und [API Overview (API-Übersicht)](http://monodevelop.com/Developers/Articles/API_Overview). Beim Erstellen von ausgeweiteten Erweiterungspaketen lesen Sie sich auch [Entwicklerartikel](http://monodevelop.com/Developers/Articles) durch. Nachfolgend finden Sie eine partielle Liste von Bereichen für die Anpassung:
+Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind, finden Sie unter [Extension Tree Reference (Referenz zur Erweiterungsstruktur)](https://www.monodevelop.com/developers/articles/extension-tree-reference/) und [API Overview (API-Übersicht)](https://www.monodevelop.com/developers/articles/api-overview/). Beim Erstellen von ausgeweiteten Erweiterungspaketen lesen Sie sich auch [Entwicklerartikel](https://www.monodevelop.com/developers/articles/) durch. Nachfolgend finden Sie eine partielle Liste von Bereichen für die Anpassung:
 
 * Pads
 * Tastenzuordnungsschemas
