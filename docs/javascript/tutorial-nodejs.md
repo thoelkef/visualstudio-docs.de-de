@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180303"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428785"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und Express-App in Visual Studio
 
@@ -183,6 +183,8 @@ IntelliSense ist ein Visual Studio-Tool, das Ihnen beim Schreiben von Code hilft
 1. Platzieren Sie Ihren Cursor hinter der `data`-Zeichenfolge, und geben Sie `: get` ein. IntelliSense zeigt Ihnen daraufhin die `getData`-Funktion an, die zuvor im Code definiert wurde. Klicken Sie auf `getData`.
 
     ![Verwendung von IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
+
+1. Fügen Sie die Klammern hinzu, um daraus einen Funktionsaufruf zu machen: `getData()`.
 
 1. Wenn Sie das Komma (`,`) vor `"data"` entfernen, wird die Syntax im Ausdruck grün unterkringelt. Zeigen Sie auf die Syntaxhervorhebung.
 

@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816461"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144704"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus in Visual Studio-Abonnements
 
 Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 ProPlus ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
+
+> [!NOTE]
+> Ihr Visual Studio-Abonnement berechtigt Sie für die Verwendung von Office 365 in der Produktion.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Erste Schritte mit Office 365 ProPlus
 
@@ -42,10 +45,6 @@ Führen Sie die folgenden Schritte aus, um Office 365 ProPlus herunterzuladen un
    > ![Office 365-Product Key eingeben](_img/vs-office365/vs-office365-enter-key.png)
 0. Klicken Sie erneut auf **Weiter**.
 0. Klicken Sie auf **Installieren**, um die Office-Anwendungen zu installieren.
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](vs-office-dev.md) aktivieren.
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -75,4 +74,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Einzelguthaben für Azure DevTest](vs-azure.md)
+- [Einzelguthaben für Azure DevTest](vs-azure.md), wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](vs-office-dev.md) aktivieren.

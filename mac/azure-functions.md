@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 493e03ecd2a10d7cd9e81467d5886f863cd7229b
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888599"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189661"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -21,7 +21,7 @@ Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – 
 
 Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** und höheren Versionen enthalten.
 
-Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azure-Abonnement, das Sie kostenlos über [https://azure.com/free](https://azure.com/free) erhalten.
+Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azure-Abonnement. Wenn Sie nicht über ein Azure-Konto verfügen, können Sie sich noch heute kostenlos registrieren und 12 Monate lang kostenlos beliebte Dienste nutzen. Außerdem erhalten Sie eine Gutschrift über 200 USD und Zugang zu mehr als 25 Diensten, die immer kostenlos sind: [https://azure.com/free](https://azure.com/free/dotnet).
 
 ## <a name="creating-your-first-azure-functions-project"></a>Erstellen Ihres ersten Azure Functions-Projekts
 

@@ -1,7 +1,7 @@
 ---
 title: Problembehandlung von Netzwerk- oder Proxyfehlern
 description: Finden Sie Lösungen für netzwerk- oder proxybezogene Fehler, die beim Installieren oder Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver auftreten können.
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062789"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189461"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 
@@ -132,6 +132,19 @@ Lassen Sie Verbindungen mit den folgenden URLs zu:
 
   > [!NOTE]
   > URLs von privaten NuGet-Servern sind in dieser Liste möglicherweise nicht enthalten. Sie können in „%APPData%\Nuget\NuGet.Config“ überprüfen, welche NuGet-Server Sie verwenden.
+
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Fehler: „Failed to parse ID from parent process“ (Die Analyse der ID des übergeordneten Prozesses ist fehlgeschlagen.)
+
+Diese Fehlermeldung kann auftreten, wenn Sie einen Visual Studio-Bootstrapper und eine „response.json“-Datei auf einem Netzwerklaufwerk verwenden. Die Benutzerkontensteuerung in Windows ist die Ursache für diesen Fehler.
+
+Der Fehler kann wegen dem folgenden Grund auftreten: Ein zugeordnetes Netzwerklaufwerk oder eine [UNC](/dotnet/standard/io/file-patch-formats#unc-paths)-Freigabe wird mit dem Zugriffstoken eines Benutzers verknüpft. Wenn die Benutzerkontensteuerung aktiviert ist, werden zwei [Benutzerzugriffstoken](/windows/win32/secauthz/access-tokens) erstellt: Eines *mit* Administratorzugriff und eines *ohne* Administratorzugriff. Wenn das Netzwerklaufwerk oder die Freigabe erstellt wird, wird das aktuelle Zugriffstoken des Benutzers mit dieser verknüpft. Da der Bootstrapper mit Administratorrechten ausgeführt werden muss, kann er nicht auf das Netzwerklaufwerk oder die Freigabe zugreifen, wenn keine Verknüpfung mit einem Benutzerzugriffstoken besteht, das über Administratorzugriff verfügt.
+
+### <a name="to-fix-this-error"></a>So beheben Sie diesen Fehler
+
+Sie können den `net use`-Befehl verwenden oder die Gruppenrichtlinieneinstellung der Benutzerkontensteuerung ändern. Weitere Informationen zu diesen Problemumgehungen und zur Implementierung dieser finden Sie in den folgenden Microsoft-Supportartikeln:
+
+* [Zugeordnete Laufwerke sind nicht über eine Eingabeaufforderung mit erhöhten Rechten verfügbar, wenn die Benutzerkontensteuerung zur „Eingabeaufforderung von Anmeldeinformationen“ in Windows konfiguriert ist](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Programme können nach Aktivierung der Benutzerkontensteuerung auf Windows-Betriebssystemen möglicherweise auf einige Netzwerkspeicherorte nicht zugreifen](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

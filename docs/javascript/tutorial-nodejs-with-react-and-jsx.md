@@ -2,7 +2,7 @@
 title: Erstellen von Node.js- und Express-Apps
 description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
 ms.custom: mvc
-ms.date: 11/01/2018
+ms.date: 11/01/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888671"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636553"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -148,6 +148,8 @@ Diese App erfordert mehrere NPM-Module, damit sie ordnungsgemäß ausgeführt wi
 
     Wenn bereits ein `dependencies`-Abschnitt in Ihrer Version der leeren Vorlage vorhanden ist, ersetzen Sie ihn einfach durch den obigen JSON-Code. Weitere Informationen zur Verwendung dieser Datei finden Sie unter [package.json-Konfiguration](../javascript/configure-packages-with-package-json.md).
 
+1. Speichern Sie die Änderungen.
+
 1. Klicken Sie mit der rechten Maustaste auf den **NPM**-Knoten im Projekt, und wählen Sie **NPM-Pakete aktualisieren** aus.
 
     Klicken Sie im unteren Bereich auf das **Ausgabefenster**, um den Fortschritt der Installation der Pakete anzuzeigen. Die Installation kann einige Minuten dauern, und die Ergebnisse werden Ihnen möglicherweise nicht sofort angezeigt. Achten Sie zum Anzeigen der Ausgabe darauf, dass Sie im Fenster **Ausgabe** im Feld **Ausgabe anzeigen von** die Option **npm** ausgewählt haben.
@@ -172,7 +174,7 @@ Fügen Sie für diese einfache App die neuen Projektdateien dem Projektstammverz
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt **NodejsWebAppBlank**, und klicken Sie auf **Hinzufügen** > **Neues Element**.
 
-1. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **TypeScript JSX-Datei**, geben Sie den Namen *app.tsx* ein, und klicken Sie auf **OK**.
+1. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **TypeScript-JSX-Datei** aus, geben Sie den Namen *app.tsx* ein, und klicken Sie dann auf **Hinzufügen** bzw. **OK**.
 
 1. Wiederholen Sie diese Schritte, um die Datei *webpack-config.js* hinzuzufügen. Wählen Sie anstelle einer TypeScript-JSX-Datei eine **JavaScript-Datei** aus.
 
@@ -334,7 +336,7 @@ Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Ers
 
 ## <a name="run-the-app"></a>Ausführen der App
 
-1. Wählen Sie Chrome als aktuelles Debugziel aus.
+1. Wählen Sie entweder Microsoft Edge oder Chrome als aktuelles Debugziel aus.
 
     ::: moniker range=">=vs-2019"
     ![Auswählen von Chrome als Debugziel](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -343,7 +345,12 @@ Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Ers
     ![Auswählen von Chrome als Debugziel](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Wenn Chrome auf Ihrem Computer verfügbar ist, jedoch nicht als Option angezeigt wird, wählen Sie aus der Dropdownliste für das Debugziel **Web Browser (browsername)**  > **Google Chrome** (Webbrowser (Browsername) > Google Chrome) aus, und wählen Sie dann Chrome als das Standardbrowserziel fest.
+    ::: moniker range=">=vs-2019"
+    Wenn Chrome auf Ihrem Computer verfügbar ist, aber nicht als Option angezeigt wird, wählen Sie in der Dropdownliste für Debugziele **Webbrowser (Browsername)** >**Webbrowser auswählen** aus, und wählen Sie dann **Chrome** als Standardbrowserziel aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Wenn Chrome auf Ihrem Computer verfügbar ist, aber nicht als Option angezeigt wird, wählen Sie in der Dropdownliste für Debugziele **Webbrowser (Browsername)** >**Google Chrome** aus, und wählen Sie dann **Chrome** als Standardbrowserziel aus.
+    ::: moniker-end
 
 1. Drücken Sie zum Ausführen der App **F5** (**Debuggen** > **Debuggen starten**), oder klicken Sie auf die Schaltfläche mit dem grünen Pfeil.
 
@@ -371,7 +378,7 @@ Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Ers
 
 1. Drücken Sie **F5**, um die App fortzusetzen.
 
-1. Wenn Sie die Chrome-Entwicklertools verwenden möchten, drücken Sie **F12**. Mit diesen Tools können Sie das DOM untersuchen und mithilfe der JavaScript-Konsole mit der App interagieren.
+1. Wenn Sie die Chrome-Entwicklertools oder F12-Tools für Microsoft Edge verwenden möchten, drücken Sie **F12**. Mit diesen Tools können Sie das DOM untersuchen und mithilfe der JavaScript-Konsole mit der App interagieren.
 
 1. Schließen Sie den Webbrowser und die Konsole.
 
@@ -379,60 +386,137 @@ Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Ers
 
 Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Code angehängt. Wenn der Debugger von Visual Studio angehängt werden und Haltepunkte im clientseitigen React-Code erreichen soll, benötigt er Hilfe beim Identifizieren des richtigen Prozesses. Eine Möglichkeit, dies zu erreichen, ist die folgende:
 
-1. Schließen Sie alle Chrome-Fenster.
+### <a name="prepare-the-browser-for-debugging"></a>Vorbereiten des Browsers auf das Debuggen
 
-2. Öffnen Sie über das Windows-**Startmenü** den Befehl **Ausführen** (klicken Sie mit der rechten Maustaste auf die Schaltfläche, und wählen Sie **Ausführen** aus), und geben Sie den folgenden Befehl ein:
+::: moniker range=">=vs-2019"
+Für dieses Szenario können Sie entweder Microsoft Edge (Chromium), was derzeit in der IDE **Microsoft Edge Beta** genannt wird, oder Chrome verwenden.
+::: moniker-end
+::: moniker range="vs-2017"
+Verwenden Sie Chrome für dieses Szenario.
+::: moniker-end
 
-    `chrome.exe --remote-debugging-port=9222`
+1. Schließen Sie alle Fenster des Zielbrowsers.
 
-    Dadurch wird Chrome mit aktiviertem Debuggen gestartet.
+   Andere Browserinstanzen können das Öffnen des Browsers bei aktiviertem Debuggen verhindern. (Möglicherweise werden Browsererweiterungen ausgeführt, die den vollständigen Debugmodus verhindern. Wenn dies der Fall ist, müssen Sie den Task-Manager öffnen, um unerwartete Chrome-Instanzen zu finden.)
+
+   ::: moniker range=">=vs-2019"
+   Beenden Sie auch alle Instanzen von Chrome, wenn Sie Microsoft Edge (Chromium) verwenden. Da beide Browser die Chromium-Codebase nutzen, führt dies zu den besten Ergebnissen.
+   ::: moniker-end
+
+2. Starten Sie Ihren Browser mit aktiviertem Debuggen.
 
     ::: moniker range=">=vs-2019"
+    Ab Visual Studio 2019 können Sie das `--remote-debugging-port=9222`-Flag beim Start des Browsers festlegen, indem Sie in der Symbolleiste **Debuggen** auf **Browserauswahl...** und dann auf **Hinzufügen** klicken, anschließend legen Sie das Flag im Feld **Argumente** fest. Verwenden Sie einen anderen Anzeigenamen für den Browser, z. B. **Microsoft Edge mit Debuggen** oder **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-v16.2).
 
-    > [!NOTE]
-    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie **Browserauswahl** in der **Debuggen**-Symbolleiste und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes-preview).
+    ![Ihren Browser zum Starten mit aktiviertem Debuggen festlegen](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
+    Öffnen Sie alternativ über das Windows-**Startmenü** den Befehl **Ausführen** (klicken Sie mit der rechten Maustaste auf die Schaltfläche, und wählen Sie **Ausführen** aus), und geben Sie den folgenden Befehl ein:
+
+    `msedge --remote-debugging-port=9222`
+
+    oder
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
-3. Wechseln Sie zu Visual Studio, und legen Sie wie in der folgenden Abbildung dargestellt einen Haltepunkt im *app-bundle.js*-Code in der `render()`-Funktion fest:
+    ::: moniker range="vs-2017"
+    Öffnen Sie über das Windows-**Startmenü** den Befehl **Ausführen** (klicken Sie mit der rechten Maustaste auf die Schaltfläche, und wählen Sie **Ausführen** aus), und geben Sie den folgenden Befehl ein:
+
+    `chrome.exe --remote-debugging-port=9222`
+    ::: moniker-end
+
+    Dadurch wird Ihr Browser mit aktiviertem Debuggen gestartet.
+
+    Die App wird noch nicht ausgeführt, weshalb Ihnen eine leere Browserseite angezeigt wird.
+
+### <a name="attach-the-debugger-to-client-side-script"></a>Anfügen des Debuggers an clientseitiges Skript
+
+1. Wechseln Sie zu Visual Studio, und legen Sie dann einen Breakpoint in Ihrem Quellcode fest, entweder in *app-bundle.js* oder *app.tsx*.
+
+    Legen Sie den Breakpoint für *app-bundle.js* wie in der folgenden Abbildung veranschaulicht in der `render()`-Funktion fest:
 
     ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Drücken Sie **STRG**+**F** (**Bearbeiten** > **Suchen und Ersetzen** > **Schnellsuche**), um die `render()`-Funktion in *app-bundle.js* zu finden.
+    Drücken Sie **STRG**+**F**, um die `render()`-Funktion in der transpilierten Datei *app-bundle.js* zu suchen (oder klicken Sie auf **Bearbeiten** > **Suchen und Ersetzen** > **Schnellsuche**).
 
-4. Wenn Chrome bereits als Debugziel in Visual Studio ausgewählt wurde, drücken Sie **STRG**+**F5** (**Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
+    Legen Sie den Breakpoint für *app.tsx* in der `render()`-Funktion in der `return`-Anweisung fest.
+
+    ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+2. Wenn Sie den Breakpoint in der *TSX*-Datei festlegen (statt in *app-bundle.js*), müssen Sie die Datei *webpack-config.js* aktualisieren. Ersetzen Sie den folgenden Code:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    durch den folgenden:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Dies ist eine reine Entwicklungseinstellung, die das Debuggen in Visual Studio aktiviert. Mit dieser Einstellung können Sie die generierten Verweise in der Quellzuordnungsdatei (*app-bundle.js.map*) beim Erstellen der App überschreiben. Webpack-Verweise in der Quellzuordnungsdatei enthalten standardmäßig das Präfix *webpack:///* , das Visual Studio daran hindert, die Quelldatei *app.tsx* zu finden. Wenn Sie diese spezifische Änderung vornehmen, wird der Verweis auf die Quelldatei *app.tsx* von *webpack:///./app.tsx* in *./app.tsx* geändert, wodurch das Debuggen ermöglicht wird.
+
+3. Wählen Sie Ihren Zielbrowser in Visual Studio als Debugziel aus, und drücken Sie dann **STRG**+**F5** (oder klicken Sie auf **Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
+
+    ::: moniker range=">=vs-2019"
+    Wenn Sie eine Browserkonfiguration mit einem Anzeigenamen erstellt haben, wählen Sie diesen als Debugziel aus.
+    ::: moniker-end
 
     Die App wird daraufhin in einer neuen Registerkarte im Browser geöffnet.
 
-5. Wählen Sie **Debuggen** > **An den Prozess anhängen** aus.
+4. Wählen Sie **Debuggen** > **An den Prozess anhängen** aus.
 
-6. Wählen Sie im Dialogfeld **An den Prozess anhängen** im Feld **Anhängen an** den Eintrag **WebKit-Code** aus. Geben Sie im Filterfeld **Chrome** ein, um die Suchergebnisse zu filtern.
+    > [!TIP]
+    > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie ab Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.
 
-7. Wählen Sie den Chrome-Prozess mit dem richtigen Hostport aus (in diesem Beispiel 1337), und klicken Sie auf **Anhängen**.
+5. Im Dialogfeld **An Prozess anhängen** finden Sie eine gefilterte Liste der Browserinstanzen, an die Sie anfügen können.
 
+    ::: moniker range=">=vs-2019"
+    Wählen Sie in Visual Studio 2019 im Feld **Anfügen an** den entsprechenden Debugger für Ihren Zielbrowser aus, **JavaScript (Chrome)** oder **JavaScript (Microsoft Edge (Chromium))** , und geben Sie **chrome** oder **edge** in das Filterfeld ein, um die Suchergebnisse zu filtern.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Wählen Sie in Visual Studio 2017 im Feld **Anfügen an** die Option **Webkit-Code** aus, und geben Sie **chrome** in das Filterfeld ein, um die Suchergebnisse zu filtern.
+    ::: moniker-end
+
+6. Wählen Sie den Browserprozess mit dem richtigen Hostport aus (in diesem Beispiel „localhost“), und klicken Sie dann auf **Anfügen**.
+
+    Der Port (1337) kann auch im Feld **Titel** angezeigt werden, damit Sie die richtige Browserinstanz einfacher identifizieren können.
+
+    ::: moniker range=">=vs-2019"
+    Im folgenden Beispiel wird veranschaulicht, wie dies bei Verwendung von Microsoft Edge (Chromium) aussieht.
+
+    ![Anhängen an den Prozess](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Anhängen an den Prozess](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     Der Debugger wurde ordnungsgemäß angehängt, wenn DOM Explorer und die JavaScript-Konsole in Visual Studio geöffnet werden. Diese Debugtools ähneln den Chrome-Entwicklertools und den F12-Tools für Microsoft Edge.
     ::: moniker-end
 
-    > [!NOTE]
-    > Wenn der Debugger nicht angefügt wird, und die Meldung „Das Anfügen an den Prozess ist nicht möglich. Ein Vorgang ist für den derzeitigen Zustand unzulässig.“ angezeigt wird, verwenden Sie den Task-Manager, um alle Instanzen von Chrome zu schließen, bevor Sie Chrome im Debugmodus starten. Möglicherweise werden Chrome-Erweiterungen ausgeführt, die den vollständigen Debugmodus verhindern.
+    > [!TIP]
+    > Wenn der Debugger nicht angefügt wird, und die Meldung „Das Anfügen an den Prozess ist nicht möglich. Ein Vorgang ist für den derzeitigen Zustand unzulässig.“ angezeigt wird, verwenden Sie den Task-Manager, um alle Instanzen des Zielbrowsers zu schließen, bevor Sie den Browser im Debugmodus starten. Möglicherweise werden Browsererweiterungen ausgeführt, die den vollständigen Debugmodus verhindern.
 
-8. Da der Code mit dem Haltepunkt bereits ausgeführt wurde, aktualisieren Sie zum Erreichen des Haltepunkts die Browserseite.
+7. Da der Code mit dem Haltepunkt bereits ausgeführt wurde, aktualisieren Sie zum Erreichen des Haltepunkts die Browserseite.
 
-    Während der Unterbrechung im Debugger können Sie den App-Status überprüfen, indem Sie mit dem Mauszeiger auf Variablen zeigen und Debuggerfenster verwenden. Sie können den Debugger durch Navigieren im Code nach vorne verschieben (**F5**, **F10** und **F11**).
+    Während der Unterbrechung im Debugger können Sie den App-Status überprüfen, indem Sie mit dem Mauszeiger auf Variablen zeigen und Debuggerfenster verwenden. Sie können den Debugger durch Navigieren im Code nach vorne verschieben (**F5**, **F10** und **F11**). Weitere Informationen zu grundlegenden Debugfeatures finden Sie unter [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
-    Sie können den Haltepunkt je nach Umgebung und Browserstatus entweder in *app-bundle.js* oder im zugeordneten Speicherort in *app.tsx* erreichen. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen.
+    Abhängig von den zuvor ausgeführten Schritten sowie von Ihrer Umgebung und dem Browserstatus erreichen Sie möglicherweise den Breakpoint entweder in *app-bundle.js* oder am zugeordneten Speicherort in *app.tsx*. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen.
 
-   * Wenn Sie in *app.tsx* Code unterbrechen müssen und dies nicht können, verwenden Sie **An den Prozess anhängen**, wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Öffnen Sie dann im Projektmappen-Explorer die dynamisch generierte *app.tsx*-Datei, indem Sie **Skriptdokumente** > **app.tsx** öffnen, einen Haltepunkt festlegen und die Seite in Ihrem Browser aktualisieren (legen Sie den Haltepunkt in einer Codezeile fest, die Haltepunkte zulässt, z.B die `return`-Anweisung oder eine `var`-Deklaration).
+   * Wenn Sie in *app.tsx* Code unterbrechen müssen und dies nicht können, verwenden Sie **An den Prozess anhängen**, wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Stellen Sie sicher, dass Ihre Umgebung ordnungsgemäß eingerichtet ist:
 
-       Alternativ, wenn Sie Code in einer *app.tsx*-Datei unterbrechen müssen, dies jedoch nicht möglich ist, verwenden Sie die `debugger;`-Anweisung in *app.tsx*, oder legen Sie Haltepunkte in den Chrome-Entwicklertools fest.
+      * Haben Sie alle Browserinstanzen, einschließlich der Chrome-Erweiterungen (mithilfe des Task-Managers) geschlossen, damit Sie den Browser im Debugmodus ausführen können? Stellen Sie sicher, dass Sie den Browser im Debugmodus starten.
+
+      * Stellen Sie sicher, dass Ihre Quellzuordnungsdatei einen Verweis auf *./app.tsx* und nicht auf *webpack:///./app.tsx* enthält, da dies den Visual Studio-Debugger daran hindern würde, *app.tsx* zu finden.
+
+       Wenn Sie den Code in *app.tsx* unterbrechen müssen und nicht in der Lage dazu sind, können Sie alternativ versuchen, die `debugger;`-Anweisung in *app.tsx* zu verwenden oder Breakpoints in den Chrome-Entwicklertools (oder in den F12-Tools für Microsoft Edge) festzulegen.
 
    * Wenn Sie Code in *app bundle.js* unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *app bundle.js.map*.
-
-     > [!TIP]
-     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie in Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
