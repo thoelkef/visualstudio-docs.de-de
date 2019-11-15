@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180057"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636587"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Einführung in die Visual Studio-IDE
 
@@ -90,7 +90,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie anschließend auf **OK**.
 ::: moniker-end
 
-   Das Projekt wird erstellt, und eine Datei namens *server.cs* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an und ist der Ort, an dem Sie den Großteil Ihrer Codierungsaufgaben in Visual Studio erledigen.
+   Das Projekt wird erstellt, und eine Datei namens *server.js* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an und ist der Ort, an dem Sie den Großteil Ihrer Codierungsaufgaben in Visual Studio erledigen.
 
    ![Editor in Visual Studio](media/editor.png)
 

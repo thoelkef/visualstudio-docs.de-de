@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516325"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189488"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
@@ -88,8 +88,9 @@ Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein
 
 ## <a name="modify-the-responsejson-file"></a>Ändern der Datei „response.json“
 
-Sie können die Datei „response.json“ zum Festlegen von Standardwerten ändern, die verwendet werden, wenn Setup ausgeführt wird.  Sie können z. B. die Datei `response.json` so konfigurieren, dass eine bestimmte Gruppe von Workloads automatisch ausgewählt wird.
-Einzelheiten finden Sie unter [Automatisieren der Visual Studio-Installation mit einer Antwortdatei](automated-installation-with-response-file.md).
+Sie können die Datei „response.json“ zum Festlegen von Standardwerten ändern, die verwendet werden, wenn Setup ausgeführt wird.  Sie können z. B. die Datei `response.json` so konfigurieren, dass eine bestimmte Gruppe von Workloads automatisch ausgewählt wird. Einzelheiten finden Sie unter [Automatisieren der Visual Studio-Installation mit einer Antwortdatei](automated-installation-with-response-file.md).
+
+Wenn der Visual Studio-Bootstrapper einen Fehler auslöst, wenn Sie ihn an eine Datei vom Typ „response.json“ koppeln, finden Sie weitere Informationen dazu im Abschnitt „Die Analyse der ID des übergeordneten Prozesses ist fehlgeschlagen“ auf der Seite [Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process).
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Kopieren des Layouts in eine Netzwerkfreigabe
 
@@ -219,7 +220,7 @@ Administratoren können Visual Studio auf Clientarbeitsstationen als Teil eines 
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Ihr vollständiger Layoutpfad weniger als 80 Zeichen enthält, um einen Fehler zu vermeiden.
->
+
 > [!TIP]
 > Bei Ausführung als Teil einer Batchdatei wird mit der Option `--wait` sichergestellt, dass der `vs_enterprise.exe`-Prozess wartet, bis die Installation abgeschlossen ist, ehe ein Exitcode zurückgegeben wird.
 >
@@ -287,6 +288,7 @@ Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer 
 
 - [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 - [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md)
 - [Projektlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md)

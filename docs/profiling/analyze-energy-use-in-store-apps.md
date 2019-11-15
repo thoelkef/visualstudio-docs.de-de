@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128323"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144735"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analysieren des Energieverbrauchs in UWP-Apps
 
@@ -101,7 +102,7 @@ if (performance && performance.mark) {
 
 4. Um die Profilerstellung zu beenden, wechseln Sie zu Visual Studio zurück (ALT+TAB), und wählen Sie **Auflistung beenden** auf der Diagnosehubseite aus.
 
-     ![Sammeln von Daten beenden](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
+     ![Datensammlung beenden](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
      Visual Studio analysiert die gesammelten Daten und zeigt die Ergebnisse an.
 
@@ -129,8 +130,8 @@ if (performance && performance.mark) {
 |![Schritt 2](../profiling/media/procguid_2.png "ProcGuid_2")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|
 |![Schritt 3](../profiling/media/procguid_3.png "ProcGuid_3")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|
 |![Schritt 4](../profiling/media/procguid_4.png "ProcGuid_4")|Das Diagramm **Stromverbrauch** ist ein Liniendiagramm (mit mehreren Linien), in dem die Änderung in der Stromabgabe anzeigt wird, die durch eine Geräteressource während einer Profilerstellungssitzung verursacht wird. Der Energieverbrauchsprofiler verfolgt die von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verwendete Energie.|
-|![Schritt 5](../profiling/media/procguid_6.png "ProcGuid_6")|Das Diagramm **Ressourcen (Ein/Aus)**  stellt Details der Netzwerkenergiekosten dar. Die Leiste **Netzwerk** stellt die Zeit dar, während der die Netzwerkverbindung geöffnet war. Die untergeordnete Leiste **Datenübertragung** stellt die Zeit dar, in der die App Daten über das Netzwerk empfangen oder gesendet hat.|
-|![Schritt 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|In der **Zusammenfassung der Energieverwendung** wird der proportionale Betrag der gesamten Energie dargestellt, die in einem ausgewählten Zeitraum von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verbraucht wurde.|
+|![Schritt 5](../profiling/media/procguid_6.png "ProcGuid_6")|Das Diagramm **Ressourcen (Ein/Aus)**  stellt Details der Netzwerkenergiekosten dar. Die Leiste **Netzwerk** stellt die Zeit dar, während der die Netzwerkverbindung geöffnet war. Die untergeordnete Leiste **Datenübertragung** stellt die Zeit dar, in der die App Daten über das Netzwerk empfangen oder gesendet hat.|
+|![Schritt 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|In der **Zusammenfassung der Energieverwendung** wird der proportionale Betrag der gesamten Energie dargestellt, die in einem ausgewählten Zeitraum von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verbraucht wurde.|
 
  **Analyse der Energieprofildaten**
 

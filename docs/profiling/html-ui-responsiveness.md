@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826112"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189374"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Profilers für die Reaktionsfähigkeit der Benutzeroberflächen beschrieben, einem Leistungstool für universelle Windows-Apps.
@@ -69,7 +69,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 6. Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden**aus.
 
 ## <a name="isolate-an-issue"></a>Isolieren eines Problems
- Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine Schrittanleitung zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](/visualstudio/profiling/html-ui-responsiveness).
+ Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine Schrittanleitung zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](html-ui-responsiveness.md).
 
 ### <a name="Workflow"></a> Isolieren eines Problems mit der Reaktionsfähigkeit der Benutzeroberfläche
  In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie den Benutzeroberflächen-Reaktionsfähigkeits-Profiler effektiver verwenden können:
@@ -167,7 +167,7 @@ if (performance.mark && performance.measure) {
 
  Die Dauermessung wird als **Benutzermaß** -Ereignis in der Zeitachsendetailansicht angezeigt und stellt detaillierte Informationen dar, wenn sie ausgewählt wird.
 
- ![Benutzer-Messgrößenereignis in der Zeitachsendetailansicht](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
+ ![Benutzermaßereignis in der Zeitleistendetailansicht](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
 
 ## <a name="analyze-data"></a>Analysieren von Daten
  In den folgenden Abschnitten sind Informationen enthalten, die Ihnen das Interpretieren der im Profiler angezeigten Daten erleichtern sollen.
@@ -177,7 +177,7 @@ if (performance.mark && performance.measure) {
 
  Die Zeitachse für die Diagnosesitzung sieht wie folgt aus. Außerdem wird eine QuickInfo für mehrere Ereignisse des App-Lebenszyklus anzeigt:
 
- ![Diagnosesitzungslineal](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
+ ![Lineal der Diagnosesitzung](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
  Die Zeitachse wird angezeigt, wenn App-Lebenszyklusereignisse wie das Aktivierungsereignis auftreten. Es werden Benutzermarkierungen (Benutzermarkierungsdreiecke) angezeigt, die Sie dem Code hinzufügen können. Sie können die Ereignisse auswählen, um QuickInfos mit weiteren Informationen anzuzeigen. Weitere Informationen über Benutzermarkierungen finden Sie unter [Markieren von Code zur Analyse](#ProfileMark) in diesem Thema.
 
@@ -274,14 +274,14 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> Filtern der Zeitachsendetails
  Sie können die Ansicht in den Zeitachsendetails für ein bestimmtes Ereignis filtern. Wählen Sie dazu in dessen Kontextmenü **Für Ereignis filtern** aus. Wenn Sie diese Option auswählen, wird die Zeitachsen- und Rasteransicht auf das ausgewählte Ereignis beschränkt. Auch die Auswahl im CPU-Auslastungsdiagramm wird auf das bestimmte Ereignis beschränkt.
 
- ![Filtern der Zeitachse für ein Ereignis](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
+ ![Filtern der Zeitachse nach einem Ereignis](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
 ### <a name="FilterEvents"></a> Filtern von Ereignissen
  Sie können einige Ereignisse aus dem Zeitachsendetaildiagramm herausfiltern, um Störungen in den Daten zu reduzieren oder um Daten zu entfernen, die für Ihr Leistungsszenario irrelevant sind. Sie können nach Ereignisname oder Ereignisdauer filtern oder mit spezifischen, hier beschriebenen Filtern.
 
  Deaktivieren Sie die Option **Hintergrundaktivität** im Filtersymbol im unteren Bereich, um Bilddecodierungs-, spekulative Download- und GC-Ereignisse auszufiltern. Da für diese Ereignisse zumeist keine Aktionen ausgeführt werden, sind sie standardmäßig ausgeblendet.
 
- ![Filtern von Ereignissen in der Zeitachse](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")
+ ![Filtern von Ereignissen in der Zeitleiste](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")
 
  Deaktivieren Sie die Option **Netzwerkdatenverkehr** im Filtersymbol im unteren Bereich, um HTTP-Anforderungsereignisse auszufiltern. Diese Ereignisse werden standardmäßig im Zeitachsendetaildiagramm angezeigt.
 
@@ -295,7 +295,7 @@ if (performance.mark && performance.measure) {
 ### <a name="GroupFrames"></a> Ereignisse nach Frame gruppieren
  Sie können Ereignisse, die in der Zeitachsendetailansicht angezeigt werden, in einzelnen Frames gruppieren. Diese Frameereignisse sind toolgenerierte Ereignisse und stellen Ereigniscontainer der obersten Ebene für alle Aufgaben des UI-Threads dar, die zwischen Paint-Ereignissen auftreten. Um diese Ansicht zu aktivieren, wählen Sie **Ereignisse der obersten Ebene nach Frames gruppieren**aus.
 
- ![Ereignisse der obersten Ebene nach Frames gruppieren](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
+ ![Ereignisse auf der obersten Ebene gruppieren](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
 
  Wenn sie die Ereignisse nach Frame gruppieren, stellen die Ereignisse der obersten Ebene in der Zeitachsendetailansicht jeweilig ein Frame dar.
 
