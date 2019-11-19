@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
+ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636542"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73913001"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -105,13 +105,13 @@ Verwenden Sie Chrome für dieses Szenario.
 
 Der Debugger benötigt Hilfe beim Identifizieren des richtigen Prozesses, um den Debugger von Visual Studio anzufügen und Breakpoints im clientseitigen Code zu erreichen. Eine Möglichkeit, dies zu erreichen, ist die folgende:
 
-1. Wechseln Sie zu Visual Studio, und legen Sie dann einen Breakpoint in Ihrem Quellcode fest, bei dem es sich um eine JavaScript-, TypeScript-, *VUE*-, oder eine JSX-Datei handeln kann. (Legen Sie den Breakpoint in einer Codezeile fest, die Breakpoints zulässt, z. B. eine return-Anweisung oder eine var-Deklaration.)
+1. Wechseln Sie zu Visual Studio, und legen Sie dann einen Breakpoint in Ihrem Quellcode fest, bei dem es sich um eine JavaScript-, TypeScript-, oder eine JSX-Datei handeln kann. (Legen Sie den Breakpoint in einer Codezeile fest, die Breakpoints zulässt, z. B. eine return-Anweisung oder eine var-Deklaration.)
 
     ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Verwenden Sie **STRG**+**F** (oder **Bearbeiten** > **Suchen und Ersetzen** > **Schnellsuche**), um den spezifischen Code in einer transpilierten Datei zu finden.
 
-    Damit clientseitiger Code einen Breakpoint in einer TypeScript-, *VUE*- oder JSX-Datei erreichen kann, ist in der Regel die Verwendung von [Quellzuordnungsdateien](#generate_source_maps) erforderlich. Eine Quellzuordnungsdatei muss für die Unterstützung des Debuggens in Visual Studio ordnungsgemäß konfiguriert sein.
+    Damit clientseitiger Code einen Breakpoint in einer TypeScript-, oder JSX-Datei erreichen kann, ist in der Regel die Verwendung von [Quellzuordnungsdateien](#generate_source_maps) erforderlich. Eine Quellzuordnungsdatei muss für die Unterstützung des Debuggens in Visual Studio ordnungsgemäß konfiguriert sein.
 
 2. Wählen Sie Ihren Zielbrowser in Visual Studio als Debugziel aus, und drücken Sie dann **STRG**+**F5** (oder klicken Sie auf **Debuggen** > **Starten ohne Debuggen**), um die App im Browser auszuführen.
 
@@ -157,7 +157,7 @@ Der Debugger benötigt Hilfe beim Identifizieren des richtigen Prozesses, um den
 
     Während der Unterbrechung im Debugger können Sie den App-Status überprüfen, indem Sie mit dem Mauszeiger auf Variablen zeigen und Debuggerfenster verwenden. Sie können den Debugger durch Navigieren im Code nach vorne verschieben (**F5**, **F10** und **F11**). Weitere Informationen zu grundlegenden Debugfeatures finden Sie unter [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
-    Abhängig von den zuvor ausgeführten Schritten sowie von Ihrer Umgebung und dem Browserstatus erreichen Sie möglicherweise den Breakpoint entweder in der transpilierten *JS*-Datei oder der Quelldatei. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen.
+    Abhängig von Ihrem App-Typ und den zuvor ausgeführten Schritten sowie anderen Faktoren wie Ihrem Browserstatus erreichen Sie möglicherweise den Breakpoint entweder in einer transpilierten *JS*-Datei oder der Quelldatei. In beiden Fällen können Sie durch den Code navigieren und Variablen überprüfen.
 
    * Wenn Sie Code in einer TypeScript-, JSX- oder *VUE*-Quelldatei unterbrechen müssen und nicht dazu in der Lage sind, sollten Sie gemäß der Beschreibung im Abschnitt [Problembehandlung](#troubleshooting_source_maps) sicherstellen, dass Ihre Umgebung ordnungsgemäß eingerichtet ist.
 
@@ -165,13 +165,13 @@ Der Debugger benötigt Hilfe beim Identifizieren des richtigen Prozesses, um den
 
 ### <a name="troubleshooting_source_maps"></a> Problembehandlung für Breakpoints und Quellzuordnungsdateien
 
-Wenn Sie Code in einer TypeScript-, JSX- oder *VUE*-Quelldatei unterbrechen müssen und nicht in der Lage dazu sind, verwenden Sie **An Prozess anhängen** wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Stellen Sie sicher, dass Ihre Umgebung ordnungsgemäß eingerichtet ist:
+Wenn Sie Code in einer TypeScript- oder JSX-Quelldatei unterbrechen müssen und nicht in der Lage dazu sind, verwenden Sie **An Prozess anhängen** wie in den vorherigen Schritten beschrieben, um den Debugger anzuhängen. Stellen Sie sicher, dass Ihre Umgebung ordnungsgemäß eingerichtet ist:
 
 * Haben Sie alle Browserinstanzen, einschließlich der Chrome-Erweiterungen (mithilfe des Task-Managers) geschlossen, damit Sie den Browser im Debugmodus ausführen können?
       
 * Stellen Sie sicher, dass Sie [den Browser im Debugmodus starten](#prepare_the_browser_for_debugging).
 
-* Stellen Sie sicher, dass Ihre Quellzuordnungsdatei den richtigen Verweis auf Ihre Quelldatei enthält und keine nicht unterstützten Präfixe wie *webpack:///* enthält, was den Visual Studio-Debugger daran hindert, eine Quelldatei zu finden. Ein Verweis wie *webpack:///.app.tsx* sollte beispielsweise in *./app.tsx* korrigiert werden. Diese Änderung können Sie manuell in der Quellzuordnungsdatei oder über eine benutzerdefinierte Buildkonfiguration durchführen. Weitere Informationen finden Sie unter [Generieren von Quellzuordnungen zum Debuggen](#generate_source_maps).
+* Stellen Sie sicher, dass Ihre Quellzuordnungsdatei den relativen Pfad auf Ihre Quelldatei enthält und keine nicht unterstützten Präfixe wie *webpack:///* enthält, was den Visual Studio-Debugger daran hindert, eine Quelldatei zu finden. Ein Verweis wie *webpack:///.app.tsx* sollte beispielsweise in *./app.tsx* korrigiert werden. Diese Änderung können Sie manuell in der Quellzuordnungsdatei (was für Tests nützlich ist) oder über eine benutzerdefinierte Buildkonfiguration durchführen. Weitere Informationen finden Sie unter [Generieren von Quellzuordnungen zum Debuggen](#generate_source_maps).
 
 Wenn Sie den Code in einer Quelldatei (z. B. in *app.tsx*) unterbrechen müssen und nicht in der Lage dazu sind, können Sie alternativ versuchen, die `debugger;`-Anweisung in der Quelldatei zu verwenden oder Breakpoints in den Chrome-Entwicklertools (oder in den F12-Tools für Microsoft Edge) festzulegen.
 
