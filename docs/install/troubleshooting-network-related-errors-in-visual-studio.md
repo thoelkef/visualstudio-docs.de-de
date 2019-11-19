@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189461"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713961"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 
@@ -137,7 +137,7 @@ Lassen Sie Verbindungen mit den folgenden URLs zu:
 
 Diese Fehlermeldung kann auftreten, wenn Sie einen Visual Studio-Bootstrapper und eine „response.json“-Datei auf einem Netzwerklaufwerk verwenden. Die Benutzerkontensteuerung in Windows ist die Ursache für diesen Fehler.
 
-Der Fehler kann wegen dem folgenden Grund auftreten: Ein zugeordnetes Netzwerklaufwerk oder eine [UNC](/dotnet/standard/io/file-patch-formats#unc-paths)-Freigabe wird mit dem Zugriffstoken eines Benutzers verknüpft. Wenn die Benutzerkontensteuerung aktiviert ist, werden zwei [Benutzerzugriffstoken](/windows/win32/secauthz/access-tokens) erstellt: Eines *mit* Administratorzugriff und eines *ohne* Administratorzugriff. Wenn das Netzwerklaufwerk oder die Freigabe erstellt wird, wird das aktuelle Zugriffstoken des Benutzers mit dieser verknüpft. Da der Bootstrapper mit Administratorrechten ausgeführt werden muss, kann er nicht auf das Netzwerklaufwerk oder die Freigabe zugreifen, wenn keine Verknüpfung mit einem Benutzerzugriffstoken besteht, das über Administratorzugriff verfügt.
+Der Fehler kann wegen dem folgenden Grund auftreten: Ein zugeordnetes Netzwerklaufwerk oder eine [UNC](/dotnet/standard/io/file-path-formats#unc-paths)-Freigabe wird mit dem Zugriffstoken eines Benutzers verknüpft. Wenn die Benutzerkontensteuerung aktiviert ist, werden zwei [Benutzerzugriffstoken](/windows/win32/secauthz/access-tokens) erstellt: Eines *mit* Administratorzugriff und eines *ohne* Administratorzugriff. Wenn ein Netzwerklaufwerk oder die Freigabe erstellt wird, wird das aktuelle Zugriffstoken des Benutzers mit dieser verknüpft. Da der Bootstrapper mit Administratorrechten ausgeführt werden muss, kann er nicht auf das Netzwerklaufwerk oder die Freigabe zugreifen, wenn keine Verknüpfung mit einem Benutzerzugriffstoken besteht, das über Administratorzugriff verfügt.
 
 ### <a name="to-fix-this-error"></a>So beheben Sie diesen Fehler
 
