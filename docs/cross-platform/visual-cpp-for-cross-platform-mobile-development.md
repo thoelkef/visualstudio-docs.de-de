@@ -1,7 +1,7 @@
 ---
 title: Plattformübergreifende mobile Entwicklung mit C++ | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589041"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098976"
 ---
 # <a name="cross-platform-mobile-development-with-c"></a>Plattformübergreifende mobile Entwicklung mit C++
 
@@ -42,10 +42,6 @@ Die mobile Entwicklung mit C++ ist eine zu Visual Studio gehörende installierba
 Für alle, die bislang in der Android- oder iOS- Entwicklung zu Hause waren, steht hilfreiches Material für die ersten Schritte zur Verfügung. Visual Studio ist eine ausdrucksvolle und leistungsfähige Entwicklungsumgebung. Informationen dazu, wie Sie das Programm nutzen können, finden Sie unter [Get started for Android developers (Erste Schritte für Android-Entwickler)](/previous-versions/windows/apps/dn275875\(v=win.10\)) bzw. [Get started for iOS developers (Erste Schritte für iOS-Entwickler)](/previous-versions/windows/apps/jj657966\(v=win.10\)). In diesen Artikeln werden Sie mit Visual Studio und den Konzepten vertraut gemacht, die Sie benötigen, um plattformübergreifende Apps für Windows und Windows Store zu entwickeln. Informationen zu den ersten Schritten beim Schreiben Ihrer ersten plattformübergreifenden App für iOS und Android finden Sie unter [Erstellen einer OpenGL ES-Anwendung für Android und iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 Die Workload „Mobile-Entwicklung mit C++“ umfasst mehrere Vorlagen, die Ihnen bei den ersten Schritten mit Ihren Apps helfen:
-
-- OpenGLES 2-Anwendung (Android, iOS, Windows Universal)
-
-  Erstellt eine Projektmappe, die Projekte zum Erstellen einer Android Native Activity-, iOS- und Universal Windows-App sowie eine freigegebene C++-Codebibliothek enthält. Diese Apps verwenden plattformspezifische Bibliotheken mit gemeinsamem C++ OpenGL ES-Code zum Zeichnen des gleichen sich drehenden Würfels in jeder App. Um diese Vorlage zu verwenden, fügen Sie bei der Installation von Visual Studio die Workload **Entwicklung auf der universellen Windows-Plattform** hinzu.
 
 - Anwendung mit systemeigener Aktivität (Android)
 

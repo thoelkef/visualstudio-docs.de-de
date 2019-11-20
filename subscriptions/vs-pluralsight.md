@@ -3,15 +3,15 @@ title: Pluralsight-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentatio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342381"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161960"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -57,9 +57,11 @@ In der unten stehenden Tabelle werden die verschiedenen Pluralsight-Abonnementvo
 |                          Abonnementstufe                          |     Channels      |    Vorteil    |   Erneuerbar?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 Monate    | Ja<sup>2</sup> |
+|          Visual Studio Enterprise mit GitHub Enterprise          | VL  |   6 Monate    | Ja<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 Monate    | Ja<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 Monate    | Nein |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 Monate    | Nein |
+|         Visual Studio Professional mit GitHub Enterprise          | VL  |   3 Monate    | Ja<sup>2</sup> |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 Monate    | Ja<sup>2</sup>  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 Monate    | Ja<sup>2</sup>  |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) |       Azure       | Nicht verfügbar |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Program      | Nicht verfügbar |       NA       |
 ||
@@ -97,3 +99,5 @@ Antwort:  Nach Ablauf Ihres kostenlosen Pluralsight-Abonnements können Sie ein 
 
 ## <a name="next-steps"></a>Nächste Schritte
 Sobald Sie Ihr Konto erstellt haben, können Sie mit den Schulungen starten.  Besuchen Sie [https://www.pluralsight.com](http://www.pluralsight.com), und klicken Sie auf **Anmelden** oben rechts auf der Seite, um einen neuen Kurs zu starten oder um zu einem laufenden Kurs zurückzukehren.
+
+Profitieren Sie von ihrer eigenen Entwicklungssandbox, indem Sie Ihr [Einzelguthaben für Azure DevTest](vs-azure.md) aktivieren. 
