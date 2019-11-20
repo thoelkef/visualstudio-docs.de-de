@@ -3,15 +3,15 @@ title: CloudPilot-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den CloudPilot-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 5f8592b15f61dff454b6fe29d4d207dd609ab461
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 253a1b1c3b6996a200a236661d621c43975cb1ed
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816505"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099619"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Der CloudPilot-Vorteil in Visual Studio-Abonnements
 Migrieren Sie Ihre Apps in einigen wenigen Schritten zu Microsoft Azure. Sie können in kürzester Zeit die erforderlichen Codeänderungen zeilengenau bestimmen, um die Migration zu folgenden Bereichen erfolgreich durchführen zu können: Container, VMs, App Services, Azure SQL und bzw. oder SQL MI. Migrieren Sie Ihre Apps anschließend mithilfe von Assistenten mit ASR, DMA und DMS zu Azure.
@@ -59,7 +59,9 @@ Mit CloudPilot von UnifyCloud können Entwickler Anwendungen schnell und unkompl
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 2 Lizenzen, 90 Tage, unbegrenzte Scans       |  Nein.  Nur für neue Abonnenten verfügbar          |
+| Visual Studio Enterprise mit GitHub Enterprise   | VL | 2 Lizenzen, 90 Tage, unbegrenzte Scans       |  Nein.  Nur für neue Abonnenten verfügbar          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 Lizenz, 30 Tage, 1 Scan                                                            |  Nein.  Nur für neue Abonnenten verfügbar           |
+| Visual Studio Professional mit GitHub Enterprise | VL | 1 Lizenz, 30 Tage, 1 Scan                                                            |  Nein.  Nur für neue Abonnenten verfügbar           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
@@ -83,4 +85,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie den Azure-Vorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihr Einzelguthaben für Azure DevTest zu erhalten.
+Wenn Sie den Azure DevTest-Einzelguthabenvorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihr Einzelguthaben für Azure DevTest zu erhalten.

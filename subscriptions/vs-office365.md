@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144704"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099613"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus in Visual Studio-Abonnements
 
@@ -51,8 +51,10 @@ Führen Sie die folgenden Schritte aus, um Office 365 ProPlus herunterzuladen un
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Verfügbar       |  Ja          |
+| Visual Studio Enterprise mit GitHub Enterprise  | VL | Verfügbar       |  Ja          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Nicht verfügbar       |  Nicht zutreffend          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |  Nicht zutreffend          |
+| Visual Studio Professional mit GitHub Enterprise | VL | Nicht verfügbar         |  Nicht zutreffend          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
