@@ -3,15 +3,15 @@ title: Einschließen eines NuGet-Pakets in Ihr Projekt
 description: In diesem Dokument wird erläutert, wie Sie ein NuGet-Paket mithilfe von Visual Studio für Mac in ein Projekt einfügen. Es veranschaulicht das Suchen und Herunterladen von Paketen und bietet eine Einführung in die IDE-Integrationsfunktionen.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/18/2019
+ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213685"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127242"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installieren und Verwalten von NuGet-Paketen in Visual Studio für Mac
 
@@ -27,7 +27,7 @@ Eine Einführung in die Verwendung von NuGet in Visual Studio für Mac finden Si
 
     ![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-packages-menu.png)
 
-2. Daraufhin wird das Fenster **NuGet-Pakete verwalten** geöffnet. Stellen Sie sicher, dass `nuget.org` für das Dropdownfeld für die Quelle in der oberen linken Ecke des Dialogfelds festgelegt ist.
+2. Daraufhin wird das Fenster **NuGet-Pakete verwalten** geöffnet. Stellen Sie sicher, dass das Dropdownmenü „Quelle“ in der oberen linken Ecke des Dialogfelds auf `nuget.org` festgelegt ist, sodass das zentrale Repository des NuGet-Pakets durchsucht wird.
 
     ![Liste von NuGet-Paketen](media/nuget-walkthrough-add-packages1.png)
 
@@ -71,6 +71,7 @@ Klicken Sie mit der rechten Maustaste auf **Abhängigkeiten**, um das Kontextmen
 
 Die Optionen „Aktualisieren“ und „Wiederherstellen“ sind auch auf Projektmappenebene verfügbar und wirken sich auf alle Projekte in der Projektmappe aus.
 
+### <a name="locating-outdated-packages"></a>Suchen veralteter Pakete
 Im Lösungspad wird angezeigt, welche Version eines Pakets derzeit installiert ist, und Sie können per Rechtsklick ein Update für das Paket durchführen.
 
 ![Paketmenü mit den Optionen „Update“, „Entfernen“ und „Aktualisieren“](media/nuget-walkthrough-PackageMenu.png)
@@ -83,6 +84,32 @@ Im angezeigten Menü stehen die folgenden zwei Optionen zur Auswahl:
 
 * **Aktualisieren**: Überprüft den Quellserver und lädt eine neuere Version herunter (falls vorhanden).
 * **Entfernen**: Entfernt das Paket aus diesem Projekt und die relevanten Assemblys aus den Projektverweisen.
+
+## <a name="manage-packages-for-the-solution"></a>Verwalten von Paketen für die Projektmappe
+
+Die Verwaltung von Paketen für eine Projektmappe ist eine praktische Möglichkeit, mit mehreren Projekten gleichzeitig zu arbeiten.
+
+1. Klicken Sie mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete verwalten...** aus.
+
+    ![Verwalten von NuGet-Paketen für die Projektmappe](media/nuget-walkthrough-manage-packages-solution.png)
+
+1. Bei der Verwaltung von Paketen für die Projektmappe können Sie über die Benutzeroberfläche die Projekte auswählen, die von den Vorgängen beeinflusst werden:
+
+    ![Projektselektor beim Verwalten von Paketen für die Projektmappe](media/nuget-walkthrough-add-to-projects.png)
+
+### <a name="consolidate-tab"></a>Registerkarte „Konsolidieren“
+
+Wenn Sie in einer Projektmappe mit mehreren Projekten arbeiten, wird empfohlen, dass Sie in allen Projekten, für die dasselbe NuGet-Paket verwendet wird, auch dieselbe Version dieses Pakets verwenden. In Visual Studio für Mac können Sie dies einfach über die Registerkarte **Konsolidieren** auf der Benutzeroberfläche des Paket-Managers feststellen, wenn Sie die Pakete für eine Projektmappe verwalten. Über diese Registerkarte sehen Sie, wo Pakete mit unterschiedlichen Versionsnummern von unterschiedlichen Projekten in der Projektmappe verwendet werden:
+
+![Registerkarte „Konsolidieren“ in der Benutzeroberfläche des Paket-Managers](media/nuget-walkthrough-consolidate-tab.png)
+
+In diesem Beispiel verwendet das Projekt NuGetDemo das Paket Microsoft.EntityFrameworkCore 2.20, während NuGetDemo.Shared das Paket Microsoft.EntityFrameworkCore 2.2.6 verwendet. Gehen Sie zum Konsolidieren von Paketversionen folgendermaßen vor:
+
+- Wählen Sie die zu aktualisierenden Projekte in der Projektliste aus.
+- Wählen Sie die zu verwendende Version, z. B. Microsoft.EntityFrameworkCore 3.0.0, für diese Projekte über die Liste **Neue Version** aus.
+- Klicken Sie auf **Paket konsolidieren**.
+
+Der Paket-Manager installiert die ausgewählte Paketversion in allen ausgewählten Projekten. Danach erscheint das Paket nicht mehr auf der Registerkarte **Konsolidieren**.
 
 ## <a name="adding-package-sources"></a>Hinzufügen von Paketquellen
 
