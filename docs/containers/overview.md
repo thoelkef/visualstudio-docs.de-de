@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568905"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127194"
 ---
 # <a name="container-tools-in-visual-studio"></a>Containertools in Visual Studio
 
@@ -53,11 +53,13 @@ Docker-Unterstützung ist für ASP.NET-Projekte, ASP.NET Core-Projekte sowie .NE
 
 Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.  
 
-
 Bei Visual Studio 2019 können Sie Docker Compose, Kubernetes und Service Fabric als Containerorchestrierungsdienste verwenden.
 
 > [!NOTE]
 > Wenn Sie die vollständige Projektvorlage der .NET Framework-Konsole verwenden und die Docker-Unterstützung hinzufügen, wird die Unterstützung für die Orchestrierung mithilfe von Docker Compose automatisch hinzugefügt.
+
+In Visual Studio 2019 Version 16.4 und höher ist das Fenster **Container** verfügbar, über das Sie ausgeführte Container, Umgebungsvariablen, Protokolle und Portzuordnungen anzeigen, verfügbare Images durchsuchen, das Dateisystem untersuchen, einen Debugger anfügen oder ein Terminalfenster in der Containerumgebung öffnen können. Weitere Informationen finden Sie unter [Anzeigen und Diagnostizieren von Containern und Images in Visual Studio](view-and-diagnose-containers.md).
+
 ::: moniker-end
 
 ### <a name="adding-docker-support"></a>Hinzufügen der Docker-Unterstützung

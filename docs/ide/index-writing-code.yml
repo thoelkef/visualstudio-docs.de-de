@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Bearbeiten von Code in Visual Studio
-summary: Erfahren Sie mehr über das Bearbeiten von Aufgaben, wie z. B. das Öffnen eines Projekts, das Verwenden von Code-Editor-Funktionen und das Beibehalten eines konsistenten Codeformats.
+title: Organisieren und Bearbeiten von Code in Visual Studio
+summary: Hier erfahren Sie mehr über das Arbeiten mit Codeprojekten, das Verwenden von Code-Editor-Features und das Pflegen eines konsistenten Codeformats.
 metadata:
   title: Neue Funktionen im Code-Editor
   description: Informationen zu den neuen Features zur Codebearbeitung in Visual Studio 2019.
@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
+  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516826"
+  ms.lasthandoff: 11/14/2019
+  ms.locfileid: "74087253"
 landingContent:
 - title: Öffnen oder Erstellen eines Projekts
   linkLists:

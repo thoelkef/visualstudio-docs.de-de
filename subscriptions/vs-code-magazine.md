@@ -3,15 +3,15 @@ title: CODE Magazine-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentat
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 09/17/2019
+ms.date: 10/13/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über den CODE Magazine-Vorteil, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 80efa2c78b8780f319ab5e532d74b689d5998cef
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256630"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099593"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine in Visual Studio-Abonnements
 
@@ -23,25 +23,25 @@ Ein CODE Magazine-Abonnement einzurichten ist einfach.  Führen Sie folgende Sch
 1. Besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Suchen Sie im Abschnitt „Professionelle Entwicklung“ Ihres Portals die Kachel für das CODE Magazine, und klicken Sie auf **Code abrufen**.
    > [!div class="mx-imgBorder"]
-   > ![Kachel für CODE Magazine](_img/vs-code-magazine/vs-code-magazine-tile.png "Kachel für CODE Magazine")
+   > ![CODE Magazine – Kachel](_img/vs-code-magazine/vs-code-magazine-tile.png "CODE Magazine – Kachel")
 3. Es wird eine Meldung angezeigt, dass Ihr Code abgerufen wurde.  Klicken Sie zum Fortfahren auf **Activate** (Aktivieren).  (Wenn Sie noch nicht dazu bereit sind, ist das kein Problem.  Sie können jederzeit zu der Kachel zurückkehren, um den Code zu aktivieren.  Nachdem Sie den Code abgerufen haben, wird anstelle des Links „Code abrufen“ die Schaltfläche „Aktivieren“ angezeigt.)
    > [!div class="mx-imgBorder"]
-   > ![Code für CODE Magazine wurde abgerufen](_img/vs-code-magazine/vs-code-magazine-success.png "Code erfolgreich abgerufen")
+   > ![CODE Magazine – abgerufener Code](_img/vs-code-magazine/vs-code-magazine-success.png "Code erfolgreich abgerufen")
 4. Sie werden auf die Angebotsseite des CODE Magazine umgeleitet. Wählen Sie Ihr Land aus und die Form, in der Sie das Magazin erhalten möchten. 
-> [!NOTE]
-> Visual Studio Dev Essentials-Mitglieder haben nur Zugriff auf das digitale Abonnement. 
+   > [!NOTE]
+   > Visual Studio Dev Essentials-Mitglieder haben nur Zugriff auf das digitale Abonnement. 
 5. Je nach getroffener Auswahl wird ein Hinweis mit dem Preis Ihres Abonnements sowie dem Betrag des angewendeten Gutscheins angezeigt.
-> [!NOTE]
-> Für Abonnenten des gedruckten Abonnements:
-> - Für Abonnenten außerhalb der USA können Versandgebühren anfallen. 
-> - Der Versand der ersten gedruckten Ausgabe kann einige Wochen dauern.
-   > [!div class="mx-imgBorder"]
-   > ![Details zum CODE Magazine-Abonnement](_img/vs-code-magazine/vs-code-magazine-details.png "Abonnementdetails und Preise")
+   > [!NOTE]
+   > Für Abonnenten des gedruckten Abonnements:
+   > - Für Abonnenten außerhalb der USA können Versandgebühren anfallen. 
+   > - Der Versand der ersten gedruckten Ausgabe kann einige Wochen dauern.
+      > [!div class="mx-imgBorder"]
+      > ![CODE Magazine – Abonnementdetails](_img/vs-code-magazine/vs-code-magazine-details.png "Abonnementdetails und Preise")
 6. Geben Sie als Nächstes die Abonnenteninformationen und eine Lieferadresse an.  (Die Lieferadresse ist auch für digitale Abonnements erforderlich, da sie die Auftragserfüllung, Angebotsauswahl und digitale Zugriffsprozesse unterstützt.)
 7. Für ein Abonnement der gedruckten Ausgabe des Magazins müssen Sie bei einer Anschrift außerhalb der USA möglicherweise eine Rechnungsadresse und Zahlungsinformationen angeben, um die Versandkosten zu begleichen. 
 8. Aktivieren Sie das entsprechende Kontrollkästchen, wenn Sie den CODE-Newsletter im HTML-Format erhalten möchten.
    > [!div class="mx-imgBorder"]
-   > ![Abonnenteninformationen für CODE Magazine](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Abonnenteninformationen und Lieferadresse")
+   > ![CODE Magazine – Abonnenteninformationen](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Abonnenteninformationen und Lieferadresse")
 9. Klicken Sie auf **Bestellung aufgeben**, um das Abonnement abzuschließen.  
 Nachdem Sie die Bestellung aufgegeben haben, wird eine Bestätigungsseite mit einem Link angezeigt, über den Sie zu einer Übersicht Ihrer erhaltenen Ausgaben gelangen: https://codemag.com/my/fulfillment. 
 
@@ -49,7 +49,9 @@ Nachdem Sie die Bestellung aufgegeben haben, wird eine Bestätigungsseite mit ei
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Nein          |
-| Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | Verfügbar                                                            |  Nein          |
+| Visual Studio Enterprise mit GitHub Enterprise   | VL| Verfügbar       |  Nein          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Verfügbar                                                            |  Nein          |
+| Visual Studio Professional mit GitHub Enterprise | VL                                      | Verfügbar                                                            |  Nein          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Nein          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Nein          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
@@ -76,3 +78,4 @@ Antwort:  Das CODE Magazine erfasst Ihre Adresse sowohl bei einem gedruckten als
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zu weiteren Vorteilen Ihres Abonnements finden Sie unter: Besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
+Wenn Sie den Azure DevTest-Einzelguthabenvorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihr Einzelguthaben für Azure DevTest zu erhalten.
