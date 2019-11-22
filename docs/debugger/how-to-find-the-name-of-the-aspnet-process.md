@@ -1,5 +1,5 @@
 ---
-title: Suchen Sie den ausgeführten Prozess für ASP.NET | Microsoft-Dokumentation
+title: Suchen des laufenden ASP.NET-Prozesses | Microsoft-Dokumentation
 ms.date: 11/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 27221a4ae47b9fb06130b550ceb6d3cc1f00dce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906803"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187654"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Herausfinden des ASP.NET-Prozessnamens
 
-So debuggen Sie eine laufende [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -app, an dem Visual Studio-Debugger Anfügen muss die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] verarbeiten anhand des Namens.
+Zum Debuggen einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-APP, die ausgeführt wird, muss der Visual Studio-Debugger mithilfe des Namens an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Prozess angehängt werden
 
-**Um herauszufinden, welcher Prozess eine ASP.NET-Anwendung ausgeführt wird:**
+**So ermitteln Sie, welcher Prozess eine ASP.net-app ausgeführt hat:**
 
-1. Wählen Sie die app ausgeführt wird, in Visual Studio **Debuggen** > **an den Prozess anhängen**.
+1. Wenn die app ausgeführt wird, wählen Sie in Visual Studio **Debuggen** > **an den Prozess anhängen**.
 
-1. In der **an den Prozess anhängen** Dialogfelds die erste Buchstaben des Prozesses in der folgenden Liste nennt, oder geben Sie sie in das Suchfeld. Diejenige, die ausgeführt wird wird die ASP.NET-App ausgeführt wird. Fügen Sie für den jeweiligen Prozess Debuggen die app.
+1. Geben Sie im Dialogfeld **an den Prozess anhängen** in der folgenden Liste die ersten Buchstaben der Prozessnamen ein, oder geben Sie Sie in das Suchfeld ein. Der einzige, der ausgeführt wird, ist der, der die ASP.net-app ausgeführt wird. Fügen Sie diesen Prozess an, um die APP zu debuggen.
 
-    - *w3wp.exe* wird von IIS 6.0 und höher.
-    - *aspnet_wp.exe* wird von frühere Versionen von IIS.
-    - *iisexpress.exe* IISExpress ist.
-    - *dotnet.exe* ist ASP.NET Core.
-    - *Inetinfo.exe* ältere ASP-Anwendungen, die in-Process-Ausführung ist.
+    - *w3wp. exe* ist IIS 6,0 und höher.
+    - *Aspnet_wp. exe* ist eine frühere Version von IIS.
+    - *iisexpress. exe* ist iisexpress.
+    - " *dotnet. exe* " ist ASP.net Core.
+    - *inetinfo. exe* ist ältere ASP-Anwendungen, die innerhalb des Prozesses ausgeführt werden.
 
 >[!NOTE]
->Visual Studio 2012 und früher [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Code im Dateisystem werden kann, und führen Sie auf dem Testserver *WebDev.WebServer.exe* oder *WebDev.WebServer40.exe*. In diesem Fall für das lokale Debuggen, Anfügen an *WebDev.WebServer.exe* oder *WebDev.WebServer40.exe* statt der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Prozess.
+>Visual Studio 2012 und frühere [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Code kann sich im Dateisystem befinden und auf dem Testserver " *WebDev. Webserver. exe* " oder " *WebDev. WebServer40. exe*" ausgeführt werden. Fügen Sie in diesem Fall für das lokale Debuggen an *WebDev. Webserver. exe* oder *WebDev. WebServer40. exe* statt an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Prozess an.
 
 **Weitere Informationen finden Sie in den folgenden Artikeln:**
 
 - [Anfügen an einen laufenden Prozess](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Voraussetzungen für das Remotedebuggen von Webanwendungen](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)
+- [Voraussetzungen für das Remote Debugging von Webanwendungen](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md)
 - [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

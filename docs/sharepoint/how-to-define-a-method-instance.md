@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Definieren einer Methodeninstanz | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Definieren einer Methoden Instanz | Microsoft-Dokumentation'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814110"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981801"
 ---
-# <a name="how-to-define-a-method-instance"></a>Vorgehensweise: Definieren einer Methodeninstanz
-  Sie müssen mindestens eine Methodeninstanz für jede Methode in Ihrem Modell definieren.
+# <a name="how-to-define-a-method-instance"></a>Gewusst wie: Definieren einer Methoden Instanz
+  Sie müssen mindestens eine Methoden Instanz für jede Methode im Modell definieren.
 
- Methodeninstanz hinzufügen, mit der **BDC-Methodendetails** Fenster. Wenn Sie die Methodeninstanz hinzufügen, fügt Visual Studio eine `<MethodInstance>` Element auf das XML-Datei des Modells in Ihrem Projekt. Weitere Informationen zu den Attributen von einem `<MethodInstance>` Element finden Sie unter [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+ Fügen Sie mithilfe des Fensters **BDC-Methoden Details** eine Methoden Instanz hinzu. Wenn Sie die-Methoden Instanz hinzufügen, fügt Visual Studio dem XML-Code der Modelldatei in Ihrem Projekt ein `<MethodInstance>`-Element hinzu. Weitere Informationen zu den Attributen eines `<MethodInstance>`-Elements finden Sie unter [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-### <a name="to-define-a-method-instance"></a>Zum Definieren einer Methodeninstanz
+### <a name="to-define-a-method-instance"></a>So definieren Sie eine Methoden Instanz
 
-1. In der **BDC-Methodendetails** , erweitern Sie den Knoten einer Methode, und erweitern Sie dann die **Instanzen** Knoten.
+1. Erweitern Sie im Fenster **BDC-Methoden Details** den Knoten einer Methode, und erweitern Sie dann den Knoten **Instanzen** .
 
-2. In der **Methodeninstanz hinzufügen** wählen **Finder-Instanz erstellen**.
+2. Wählen Sie in der Liste **Methoden Instanz hinzufügen** die Option **Finder-Instanz erstellen**aus.
 
-     Eine neue Methodeninstanz angezeigt wird, unter dem **Instanzen** Knoten.
+     Unterhalb des Knotens **Instanzen** wird eine neue Methoden Instanz angezeigt.
 
-3. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
+3. Wählen Sie in der Menüleiste **Ansicht** > **Eigenschaften Fenster**aus.
 
-4. In der **Eigenschaften** legen die Eigenschaften der Instanz. Weitere Informationen zu den einzelnen Eigenschaften finden Sie unter [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. Legen Sie im **Eigenschaften** Fenster die Eigenschaften der Methoden Instanz fest. Weitere Informationen zu den einzelnen Eigenschaften finden Sie unter [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
 ## <a name="see-also"></a>Siehe auch
-- [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)
-- [Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [Vorgehensweise: Fügen Sie einen Parameter einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Vorgehensweise: Definieren des Typdeskriptors für einen parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)
+- [Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Gewusst wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)

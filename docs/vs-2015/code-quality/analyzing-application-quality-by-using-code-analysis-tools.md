@@ -1,5 +1,5 @@
 ---
-title: Analysieren der Anwendungsqualität mit Code Analyse Tools | Microsoft-Dokumentation
+title: Analyzing Application Quality by Using Code Analysis Tools | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,34 +15,34 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671104"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291202"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analysieren der Anwendungsqualität mit Codeanalysetools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Abschnitt wird die [Qualität der Qualität von verwaltetem Code analysiert](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) : Visual Studio-Code Analyse für verwalteten Code stellt Informationen zu verwalteten Assemblys bereit, z. b. Verstöße gegen die Programmier-und Entwurfs Regeln, die im Microsoft .net Richtlinien. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.
+In This Section [Analyzing Managed Code Quality](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) Visual Studio code analysis for managed code provides information about managed assemblies, such as violations of the programming and design rules set forth in the Microsoft .NET Framework Design Guidelines. In diesen Warnmeldungen werden alle relevanten Probleme im Zusammenhang mit Programmierung und Entwurf benannt. Nach Möglichkeit wird außerdem angegeben, wie das jeweilige Problem gelöst werden kann.
 
- [Analysieren der cC++ /Code-Qualität mithilfe der Code Analyse](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) dasC++ c/Code-Analysetool stellt Entwicklern Informationen zu möglichen Fehlern im cC++ /Quellcode-Code zur Verfügung. Zu den Codierungsfehlern, die das Tool am häufigsten findet, zählen Pufferüberläufe, nicht initialisierter Speicher, Dereferenzierungen von NULL-Zeigern sowie Speicher- und Ressourcenverluste.
+ [Analyzing C/C++ Code Quality by Using Code Analysis](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) The C/C++ Code Analysis tool provides information to developers about possible defects in their C/C++ source code. Zu den Codierungsfehlern, die das Tool am häufigsten findet, zählen Pufferüberläufe, nicht initialisierter Speicher, Dereferenzierungen von NULL-Zeigern sowie Speicher- und Ressourcenverluste.
 
- [Verwenden von Regelsätzen zum Gruppieren von Code Analyse Regeln](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Wählen Sie die *Regelsätze* aus, die auf das Projekt angewendet werden
+ [Using Rule Sets to Group Code Analysis Rules](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Select and create *rule sets* to apply to your project.
 
- [Anwendungsfehler bei der Code Analyse](../code-quality/code-analysis-application-errors.md) Beheben Sie Fehler in der Code Analysefunktion.
+ [Code Analysis Application Errors](../code-quality/code-analysis-application-errors.md) Fix errors in the code analysis functionality.
 
- [Verbessern der Code Qualität mit Eincheck Richtlinien für das Team Projekt](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md) Wenn Sie Team Foundation-Versionskontrolle (tfvc) verwenden, können Sie Eincheck Richtlinien für Team Projekte erstellen, die Methoden erzwingen, die zu besserer Code und effizienterer Gruppenentwicklung führen. Eincheckrichtlinien sind Regeln, die auf Teamprojektebene festgelegt und auf Entwicklercomputern erzwungen werden, bevor Code eingecheckt werden kann.
+ [Enhancing Code Quality with Team Project Check-in Policies](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md) When you use Team Foundation Version Control (TFVC), you can create check-in policies for your team projects that enforce practices that lead to better code and more efficient group development. Eincheckrichtlinien sind Regeln, die auf Teamprojektebene festgelegt und auf Entwicklercomputern erzwungen werden, bevor Code eingecheckt werden kann.
 
 ### <a name="code-analysis-for-drivers"></a>Codeanalyse für Treiber
  Codeanalysetools können die Stabilität und Zuverlässigkeit des Treibers durch die systematische Analyse des Treiberquellcodes verbessern.
 
- [Analysieren der Treiber Qualität mithilfe von Code Analyse Tools](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Die Code Analyse für Treiber ist ein statisches Überprüfungs Tool zur Kompilierzeit, das grundlegende Codierungsfehler in C und C++ Programmen erkennt und ein spezielles Modul umfasst, das zum Erkennen von Fehlern in (hauptsächlich) Kernelmodustreiber-Code konzipiert ist. Der Static Driver Verifier (Statisches Treiber-Prüfmodul, SDV) ist ein statisches Überprüfungstool, das systematisch den Quellcode von Windows-Kernelmodustreibern analysiert. SDV ermittelt, ob der Treiber ordnungsgemäß mit dem Windows-Betriebssystemkernel interagiert.
+ [Analyzing Driver Quality by Using Code Analysis Tools](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Code Analysis for Drivers is a compile-time static verification tool that detects basic coding errors in C and C++ programs and includes a specialized module that is designed to detect errors in (primarily) kernel-mode driver code. Der Static Driver Verifier (Statisches Treiber-Prüfmodul, SDV) ist ein statisches Überprüfungstool, das systematisch den Quellcode von Windows-Kernelmodustreibern analysiert. SDV ermittelt, ob der Treiber ordnungsgemäß mit dem Windows-Betriebssystemkernel interagiert.
 
- [Code Analyse für Treiber Warnungen](http://go.microsoft.com/fwlink/?LinkId=225920) Beschreibt die Warnungen, die die Code Analyse für Treiber meldet, wenn ein möglicher Fehler im Treiber Code erkannt wird.
+ [Code Analysis for Drivers Warnings](https://go.microsoft.com/fwlink/?LinkId=225920) Describes the warnings that the Code Analysis for Drivers reports when it detects a possible error in driver code.
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
- [Messen von Komplexität und Verwaltbarkeit von verwaltetem Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Beschreibung hier einfügen.
+ [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insert description here.
 
- Komponenten [Tests für Ihren Code](../test/unit-test-your-code.md) Beschreibung hier einfügen.
+ [Unit Test Your Code](../test/unit-test-your-code.md) Insert description here.

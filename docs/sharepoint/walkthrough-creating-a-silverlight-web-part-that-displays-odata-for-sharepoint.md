@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 859944c51be0abf2e6a326a06a5e4432a69ee4ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655928"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984823"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das odata für SharePoint anzeigt
-  SharePoint 2010 macht seine Listen Daten mithilfe von odata verfügbar. In SharePoint wird der odata-Dienst vom Rest-Dienst listData. svc implementiert. Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint-Webpart erstellt wird, das eine Silverlight-Anwendung hostet. Die Silverlight-Anwendung zeigt die SharePoint-Ankündigungs Listen Informationen mithilfe von "listData. svc" an. Weitere Informationen finden Sie unter [SharePoint Foundation-Rest-Schnittstelle](http://go.microsoft.com/fwlink/?LinkId=225999) und [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
+  SharePoint 2010 macht seine Listen Daten mithilfe von odata verfügbar. In SharePoint wird der odata-Dienst vom Rest-Dienst listData. svc implementiert. Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint-Webpart erstellt wird, das eine Silverlight-Anwendung hostet. Die Silverlight-Anwendung zeigt die SharePoint-Ankündigungs Listen Informationen mithilfe von "listData. svc" an. Weitere Informationen finden Sie unter [SharePoint Foundation-Rest-Schnittstelle](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) und [Open Data Protocol](https://www.odata.org/).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -228,7 +228,7 @@ ms.locfileid: "72655928"
      Das Silverlight-Webpart sollte nun Ankündigungs Daten von der SharePoint-Website anzeigen. Standardmäßig wird die Seite in der Liste der Website Seiten in SharePoint gespeichert.
 
     > [!NOTE]
-    > Beim Zugriff auf Daten in Silverlight über Domänen hinweg schützt Silverlight gegen Sicherheitsrisiken, die verwendet werden können, um Webanwendungen auszunutzen. Wenn beim Zugriff auf Remote Daten in Silverlight Probleme auftreten, finden Sie weitere Informationen unter [Bereitstellen eines Dienstes über Domänen Grenzen hinweg](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > Beim Zugriff auf Daten in Silverlight über Domänen hinweg schützt Silverlight gegen Sicherheitsrisiken, die verwendet werden können, um Webanwendungen auszunutzen. Wenn beim Zugriff auf Remote Daten in Silverlight Probleme auftreten, finden Sie weitere Informationen unter [Bereitstellen eines Dienstes über Domänen Grenzen hinweg](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

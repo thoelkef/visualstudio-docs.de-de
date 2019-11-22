@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734922"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187918"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
 Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-Apps. Grafikdiagnose können für Apps verwendet werden, die lokal auf Ihrem Windows-Computer oder auf einem Remote-PC oder-Gerät ausgeführt werden.
@@ -52,7 +52,7 @@ Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeich
 ### <a name="gpu-usage"></a>GPU-Nutzung
  Die Grafikdiagnose kann auch ein Profil der Leistung Ihrer Direct3D-App erstellen. Da Profilerstellungsdaten durch das Aufzeichnen von Details zu Grafikereignissen verfälscht würden, unterscheidet sich dies vom Erfassen von Frames, die mit der Grafikanalyse untersucht werden sollen.
 
- Weitere Informationen finden Sie unter [GPU-Nutzung](/visualstudio/profiling/gpu-usage).
+ Weitere Informationen finden Sie unter [GPU-Nutzung](../../profiling/gpu-usage.md).
 
 ### <a name="directx-control-panel"></a>DirectX-Einstellungen
  Die DirectX-Einstellungen sind eine Komponente von DirectX, die Sie verwenden können, um das Verhalten von DirectX zu ändern. Sie können z. B. die Debugversion der DirectX-Laufzeitkomponenten aktivieren, die Art der Debugmeldungen festlegen oder bestimmte Funktionen der Grafikhardware deaktivieren, um weniger leistungsfähige Hardware zu emulieren. Diese Einflussmöglichkeiten auf DirectX können Ihnen helfen, DirectX-Apps zu debuggen und zu testen. Sie können über Visual Studio auf die DirectX-Einstellungen zugreifen.

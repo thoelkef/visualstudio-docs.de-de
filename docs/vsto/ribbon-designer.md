@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f417c077d2280b951f0d101d79876c01cb33789d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256035"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985625"
 ---
 # <a name="ribbon-designer"></a>Multifunktionsleisten-Designer
   Der Menüband-Designer ist ein visueller Entwurfzeichnungsbereich. Verwenden Sie den Menüband-Designer, um dem Menüband einer Microsoft Office Anwendung benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzuzufügen.
@@ -49,10 +49,8 @@ ms.locfileid: "71256035"
 > [!NOTE]
 > Einige Aufgaben können mit dem Menüband-Designer nicht ausgeführt werden. Weitere Informationen zu diesen Aufgaben und deren erreichen finden Sie unter Übersicht über das [Menüband](../vsto/ribbon-overview.md).
 
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden [Sie unter Gewusst wie: Anpassen des Menübands in Outlook mit dem Menüband-Designer ](http://go.microsoft.com/fwlink/?LinkID=130312).
-
 ## <a name="add-a-ribbon-visual-designer-item-to-a-project"></a>Hinzufügen eines Elements "Menüband (visueller Designer)" zu einem Projekt
- Um den Menüband-Designer zu verwenden, fügen Sie dem Projekt ein neues **Menüband-Element (visuelles Designer)** hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Beginnen Sie mit der Anpassung des](../vsto/how-to-get-started-customizing-the-ribbon.md)Menübands.
+ Um den Menüband-Designer zu verwenden, fügen Sie dem Projekt ein neues **Menüband-Element (visuelles Designer)** hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
  Wenn Sie ein neues Element für das **Menüband (visueller Designer)** hinzufügen, fügt Visual Studio dem Projekt automatisch die folgenden Dateien hinzu:
 
@@ -96,7 +94,7 @@ ms.locfileid: "71256035"
 
    Ordnen Sie Steuerelemente durch Ziehen zu den korrekten Positionen an. Sie können die Eigenschaften eines Steuer Elements festlegen, indem Sie das **Eigenschaften** Fenster verwenden.
 
-   Sie können Steuerelemente nicht von einer Registerkarte auf eine andere Registerkarte im Menüband ziehen. Wenn Sie ein-Steuerelement auf eine andere Registerkarte verschieben möchten, müssen Sie den Befehl " **Ausschneiden** " verwenden, um das Steuerelement aus einer Registerkarte zu entfernen, und dann das Steuerelement auf einer anderen Registerkarte Wird das Steuerelement ausgeschnitten und eingefügt, wird der Ereignishandler angehalten. Sie können den Ereignishandler im **Eigenschaften** Fenster wiederherstellen. Weitere Informationen finden Sie unter [Eigenschaftenfenster](../ide/reference/properties-window.md).
+   Sie können Steuerelemente nicht von einer Registerkarte auf eine andere Registerkarte im Menüband ziehen. Wenn Sie ein-Steuerelement auf eine andere Registerkarte verschieben möchten, müssen Sie den Befehl " **Ausschneiden** " verwenden, um das Steuerelement aus einer Registerkarte zu entfernen, und dann das Steuerelement auf einer anderen Registerkarte Wenn Sie das Steuerelement Ausschneiden und einfügen, wird der Ereignishandler nicht mehr funktionieren. Sie können den Ereignishandler im **Eigenschaften** Fenster wiederherstellen. Weitere Informationen finden Sie unter [Eigenschaftenfenster](../ide/reference/properties-window.md).
 
 ### <a name="AddTabToRibbon"></a>Hinzufügen benutzerdefinierter Registerkarten zum Menüband
  Es gibt drei Möglichkeiten, dem Menüband eine benutzerdefinierte Registerkarte hinzuzufügen:
@@ -107,7 +105,7 @@ ms.locfileid: "71256035"
 
 - Öffnen Sie den **Registerkarten Sammlungs-Editor**, und klicken Sie dann auf **Hinzufügen**
 
-   Wählen Sie zum Öffnen des Register **Karten** Auflistungs-Editors im Fenster **Eigenschaften** die Eigenschaft **Tabstopps**aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse").
+   Wählen Sie zum Öffnen des Register **Karten** Auflistungs-Editors im Fenster **Eigenschaften** die Eigenschaft **Tabstopps**aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer").
 
   Nach dem Hinzufügen einer Registerkarte können Gruppen mit Steuerelementen hinzugefügt werden.
 
@@ -121,16 +119,16 @@ ms.locfileid: "71256035"
 - Öffnen Sie den Registerkarten- **Editor**, wählen Sie die Registerkarte aus, und klicken Sie dann auf **Entfernen**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Ändern der Position einer Registerkarte im Menüband
- Sie können die Reihenfolge von benutzerdefinierten Registerkarten auf einem Menüband ändern. Sie können auch benutzerdefinierte Registerkarten vor oder nach einer integrierten Registerkarte im Menüband positionieren. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie die Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
+ Sie können die Reihenfolge von benutzerdefinierten Registerkarten auf einem Menüband ändern. Sie können auch benutzerdefinierte Registerkarten vor oder nach einer integrierten Registerkarte im Menüband positionieren. Weitere Informationen finden Sie unter Gewusst [wie: Ändern der Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
 
 #### <a name="customize-built-in-tabs-on-the-ribbon"></a>Anpassen integrierter Registerkarten auf dem Menüband
  Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem Menüband einer Microsoft Office Anwendung befindet. Beispielsweise ist die Registerkarte " **Daten** " eine integrierte Registerkarte in Excel.
 
- Einer integrierten Registerkarte können Gruppen und Steuerelemente hinzugefügt werden. Standardmäßig wird eine benutzerdefinierte Gruppe als letzte Gruppe auf einer integrierten Registerkarte angezeigt, obwohl sie vor oder hinter eine integrierte Gruppe auf der Registerkarte verschoben werden kann.
+ Sie können einer integrierten Registerkarte Gruppen und Steuerelemente hinzufügen. Standardmäßig wird eine benutzerdefinierte Gruppe auf einer integrierten Registerkarte als letzte Gruppe angezeigt, Sie können Sie jedoch vor oder nach einer beliebigen integrierten Gruppe auf der Registerkarte verschieben.
 
  Integrierte Gruppen können nicht entfernt werden.
 
- Ausführliche Informationen zum Anpassen einer integrierten Registerkarte finden [Sie unter Gewusst wie: Passen Sie eine integrierte Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)an.
+ Ausführliche Informationen zum Anpassen einer integrierten Registerkarte finden Sie unter Gewusst [wie: Anpassen einer integrierten Register](../vsto/how-to-customize-a-built-in-tab.md)Karte.
 
 ### <a name="AddGroupsToTab"></a>Hinzufügen von Gruppen zu einer Registerkarte
  Gruppen organisieren Steuerelemente auf dem Menüband logisch. Fügen Sie Registerkarten Gruppen hinzu. Fügen Sie der Gruppe alle anderen Steuerelemente hinzu.
@@ -140,16 +138,16 @@ ms.locfileid: "71256035"
 
 |Steuerelement|Beschreibung|
 |-------------|-----------------|
-|**Box**|Ein Container, der Steuerelemente in einer Gruppe organisiert. Einem Feld kann mit Ausnahme von Trennzeichen, Gruppen oder Registerkarten jedes beliebige Steuerelement hinzugefügt werden. Ein Feld kann horizontal oder vertikal dargestellt werden.|
+|**Box**|Ein Container, der Steuerelemente in einer Gruppe organisiert. Sie können einem Feld mit Ausnahme eines Trenn Zeichens, einer Gruppe oder einer Registerkarte ein beliebiges Steuerelement hinzufügen. Ein Feld kann horizontal oder vertikal sein.|
 |**Button** (Schaltfläche)|Eine Schaltfläche, durch die eine Aktion gestartet wird. Sie können einer Gruppe, einer Schaltflächengruppe, einer Dropdownliste, einem Katalog, einem Menü oder einer Trennschaltfläche eine Schaltfläche hinzufügen.|
 |**ButtonGroup**|Eine Gruppe, die mindestens eine Schaltfläche, eine Umschaltfläche, ein Menü, eine Trennschaltfläche und einen Katalog beinhaltet. Einer Gruppe oder einem Menü kann eine Schaltflächengruppe oder eine Gruppe hinzugefügt werden.|
 |**CheckBox**|Ein Feld, das zum Aktivieren oder Deaktivieren einer Option aktiviert oder deaktiviert ist.|
-|**ComboBox**|Ein Bearbeitungsfeld mit einem angehängten Listenfeld. Benutzer können ihre Auswahl entweder eingeben oder auswählen. Im Feld wird die aktuelle Auswahl angezeigt. Verwenden Sie <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> die-Eigenschaft, um Elemente zur Laufzeit vor oder nach dem Laden des Menübands in die Office-Anwendung hinzuzufügen und zu entfernen.|
+|**ComboBox**|Ein Bearbeitungsfeld mit einem angehängten Listenfeld. Benutzer können ihre Auswahl entweder eingeben oder auswählen. Im Feld wird die aktuelle Auswahl angezeigt. Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A>-Eigenschaft, um Elemente zur Laufzeit vor oder nach dem Laden des Menübands in die Office-Anwendung hinzuzufügen und zu entfernen.|
 |**DropDown**|Eine Liste der Elemente, die von Benutzern ausgewählt werden können. In eine Dropdownliste kann kein neues Element eingegeben werden.<br /><br /> Fügen Sie der Liste mithilfe der <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A>-Eigenschaft Elemente hinzu. Elemente können während der Laufzeit hinzugefügt und entfernt werden.<br /><br /> Fügen Sie der Liste mithilfe der <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A>-Eigenschaft Schaltflächen hinzu. Sie können jedoch keine Schaltflächen zur Laufzeit hinzufügen und entfernen, nachdem das Menüband in die Office-Anwendung geladen wurde.|
 |**EditBox**|Ein Feld, in das der Benutzer Text eingeben kann.|
 |**Katalog**|Ein Menü mit einem visuellen Auswahlarray oder -raster, in dem Benutzer eine Auswahl treffen können. Das Layout der Auswahl im Menü kann gesteuert werden. Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>-Eigenschaft und die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>-Eigenschaft, um die Anzahl der Zeilen und Spalten anzugeben, in denen die Elemente und Schaltflächen des Katalogs angezeigt werden.|
 |**Bezeichnung**|Text, den Sie verwenden können, um Steuerelemente auf dem Menüband zu identifizieren.|
-|**Menü**|Eine Dropdownliste, die sämtliche der folgenden Steuerelemente beinhalten kann:<br /><br /> -Schaltfläche<br />-Kontrollkästchen<br />-Gallery<br />-Menü<br />-Trenn Schaltfläche<br />-UMSCHALT Fläche<br />-Trennzeichen<br /><br /> Wenn Sie einem Menü im Menüband-Designer ein Steuerelement hinzufügen möchten, klicken Sie im Menü auf den Pfeil nach unten, um die Menüentwurfsoberfläche anzuzeigen. Sie können dann Menüband-Steuerelemente aus der **Toolbox** in das Menü ziehen. Ordnen Sie Steuerelemente durch Ziehen zu den gewünschten Positionen an.<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> Wenn Sie nach dem Laden des Menübands in die Office-Anwendung Steuerelemente hinzufügen möchten, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> müssen Sie die-Eigenschaft auf **true** festlegen, bevor das Menüband geladen wird. Weitere Informationen hierzu finden Sie unter Übersicht über das [Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md).|
+|**Menü**|Eine Dropdownliste, die sämtliche der folgenden Steuerelemente beinhalten kann:<br /><br /> -Schaltfläche<br />-Kontrollkästchen<br />-Gallery<br />-Menü<br />-Trenn Schaltfläche<br />-UMSCHALT Fläche<br />-Trennzeichen<br /><br /> Wenn Sie einem Menü im Menüband-Designer ein Steuerelement hinzufügen möchten, klicken Sie im Menü auf den Pfeil nach unten, um die Menüentwurfsoberfläche anzuzeigen. Sie können dann Menüband-Steuerelemente aus der **Toolbox** in das Menü ziehen. Ordnen Sie Steuerelemente durch Ziehen zu den gewünschten Positionen an.<br /><br /> Wenn Sie dem <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> Steuerelemente hinzufügen möchten, nachdem das Menüband in die Office-Anwendung geladen wurde, müssen Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>-Eigenschaft auf **true** festlegen, bevor das Menüband geladen wird. Weitere Informationen hierzu finden Sie unter Übersicht über das [Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md).|
 |**Trennzeichen**|Eine dünne Leiste zum Trennen von Elementen in einer Liste. Beim Hinzufügen zu einer Gruppe ist die Leiste vertikal. Beim Hinzufügen zu einem Menü ist die Leiste horizontal.|
 |**SplitButton**|Eine Schaltfläche mit einem angehängten Menü. Eine Trennschaltfläche kann jedes der folgenden Steuerelemente beinhalten:<br /><br /> -Schaltfläche<br />-Kontrollkästchen<br />-Gallery<br />-Menü<br />-Trenn Schaltfläche<br />-UMSCHALT Fläche<br />-Trennzeichen<br /><br /> Ebenso wie das Menü verfügt die Trennschaltfläche über eine eigene Entwurfsoberfläche. Im Gegensatz zu einem Menü können Sie jedoch nur die Elemente in einer Trenn Schaltfläche Aktualisieren, bevor das Menüband in die Office-Anwendung geladen wird. Informationen zum Aktualisieren der Elemente in einer unterteilten Schaltfläche finden Sie unter [Übersicht über das Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Eine Schaltfläche, die gedrückt oder nicht gedrückt angezeigt wird.|
@@ -164,13 +162,13 @@ ms.locfileid: "71256035"
  Informationen zum Behandeln von Menü Band Ereignissen und zum Festlegen der Eigenschaften von Menü Band Steuerelementen zur Laufzeit finden Sie unter Übersicht über das [Menüband-Objektmodell](../vsto/ribbon-object-model-overview.md).
 
 ## <a name="CustomizingMicrosoftOfficeButton"></a>Backstage-Ansicht anpassen
- Mit dem Menüband-Designer können Sie dem Menü Steuerelemente hinzufügen, die geöffnet werden, wenn Sie auf die Registerkarte **Datei** klicken. Mit diesem Menü wird die Backstage-Ansicht aufgerufen.
+ Mit dem Menüband-Designer können Sie dem Menü Steuerelemente hinzufügen, die geöffnet werden, wenn Sie auf die Registerkarte **Datei** klicken. Dieses Menü wird als Backstage-Ansicht bezeichnet.
 
- Sie können mit dem Menüband-Designer keine Steuerelemente vor oder nach integrierten Steuerelementen positionieren. Ein integriertes Steuerelement ist ein Steuerelement, das bereits in der Backstage-Ansicht angezeigt wird. Wenn Sie Steuerelemente vor oder nach integrierten Steuerelementen positionieren möchten, müssen Sie ein Menüband-XML verwenden. Weitere Informationen zu **Menüband (XML)** finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md). Weitere Informationen zum Anpassen der Backstage-Ansicht finden Sie unter [Einführung in die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182189) und [Anpassen der Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Sie können mit dem Menüband-Designer keine Steuerelemente vor oder nach integrierten Steuerelementen positionieren. Ein integriertes Steuerelement ist ein Steuerelement, das bereits in der Backstage-Ansicht angezeigt wird. Wenn Sie Steuerelemente vor oder nach integrierten Steuerelementen positionieren möchten, müssen Sie ein Menüband-XML verwenden. Weitere Informationen zu **Menüband (XML)** finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md). Weitere Informationen zum Anpassen der Backstage-Ansicht finden Sie unter [Einführung in die Office 2010-Backstage-Ansicht für Entwickler](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) und [Anpassen der Office 2010-Backstage-Ansicht für Entwickler](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon_2010](../vsto/includes/appliesto-ribbon-2010-md.md)]
 
- Weitere Informationen zum Hinzufügen von Steuerelementen zur Backstage-Ansicht finden [Sie unter Gewusst wie: Fügen Sie der Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)Steuerelemente hinzu.
+ Weitere Informationen zum Hinzufügen von Steuerelementen zur Backstage-Ansicht finden Sie unter Gewusst [wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
 ## <a name="Accessibility"></a>Barrierefreiheit im Menüband-Designer
  Steuerelemente auf dem Menüband-Designer können mithilfe von Tastenkombinationen verschoben werden. Einige Tastenkombinationen gelten für alle Steuerelemente, wohingegen einige Tastenkombinationen nur für Steuerelemente mit Menüs verwendbar sind.
@@ -179,16 +177,16 @@ ms.locfileid: "71256035"
 
 |Aktion|Tastenkombination|
 |------------|-----------------------|
-|Verschieben eines Steuerelements vor das vorherige Steuerelement in der Liste.|STRG+nach**oben**<br /><br /> **STRG**Links+|
-|Verschieben eines Steuerelements hinter das nächste Steuerelement in der Liste.|STRG+**nach unten**<br /><br /> **STRG**rechts+|
-|Verschieben der Auswahl von einem Steuerelement zu einem anderen Steuerelement in derselben Gruppe. Wechseln Sie in einem Dropdownbereich zwischen dem übergeordneten Steuerelement und den Steuerelementen im Dropdownbereich.|**Nach oben**<br /><br /> **Nach unten**|
+|Verschieben eines Steuerelements vor das vorherige Steuerelement in der Liste.|**STRG**+nach **oben**<br /><br /> **STRG**+**Links**|
+|Verschieben eines Steuerelements hinter das nächste Steuerelement in der Liste.|**STRG**+**nach unten**<br /><br /> **STRG**+**Rechts**|
+|Verschieben der Auswahl von einem Steuerelement zu einem anderen Steuerelement in derselben Gruppe. Wechseln Sie in einem Dropdownbereich zwischen dem übergeordneten Steuerelement und den Steuerelementen im Dropdownbereich.|**Gegründet**<br /><br /> **Auf**|
 |Durchlaufen aller Steuerelemente (vorwärts).|**TAB**|
 |Durchlaufen aller Steuerelemente (rückwärts).|**UMSCHALT**+**Tab**|
 |Löschen des ausgewählten Steuerelements oder eines Satzes von Steuerelementen.|**Löschen**|
 |Kopieren der ausgewählten Steuerelemente.|**STRG**+**C**|
 |Ausschneiden der ausgewählten Steuerelemente.|**STRG**+**X**|
 |Einfügen von Steuerelementen aus der Zwischenablage.|**STRG**+**V**|
-|Wählen Sie den **Werkzeugkasten**aus.|**STRG**+**alt** X+|
+|Wählen Sie den **Werkzeugkasten**aus.|**STRG**+**alt**+**X**|
 |Auswählen der übergeordneten Komponente.|**ESC**|
 
  Die Tastenkombinationen gelten nur für das Microsoft Office-Menü; <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> und <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> werden in der folgenden Tabelle angezeigt.
@@ -204,8 +202,8 @@ ms.locfileid: "71256035"
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
+- [Menüband-XML](../vsto/ribbon-xml.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Vorgehensweise: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Vorgehensweise: Beginnen Sie mit der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Gewusst wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)

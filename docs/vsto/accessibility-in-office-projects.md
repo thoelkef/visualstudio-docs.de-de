@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255779"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189618"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
 
-Microsoft Visual Studio und Microsoft Office enthalten viele Barrierefreiheits Features, die es Ihnen ermöglichen, benutzerdefinierte Lösungen zu erstellen, die die Standardanforderungen für Barrierefreiheit erfüllen. Microsoft veröffentlicht Richtlinien für Barrierefreiheit im Web. Weitere Informationen finden Sie auf der [Website zur Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio und Microsoft Office enthalten viele Barrierefreiheits Features, die es Ihnen ermöglichen, benutzerdefinierte Lösungen zu erstellen, die die Standardanforderungen für Barrierefreiheit erfüllen. Microsoft veröffentlicht Richtlinien für Barrierefreiheit im Web. Weitere Informationen finden Sie auf der [Website zur Barrierefreiheit](https://www.microsoft.com/accessibility/).
 
 In den meisten Fällen erfüllen Office-Projekte in Visual Studio Barrierefreiheits Standards oder machen Eigenschaften verfügbar, die Sie festlegen können, um Ihre Lösungen zugänglich zu machen. Allerdings gibt es einige Features mit eingeschränkter Barrierefreiheit.
 
@@ -88,5 +88,5 @@ Sie können die Bildschirmlupe verwenden, um diese Einschränkungen zu überwind
 
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
-- [Barrierefreiheit für Personen mit Behinderungen](../ide/reference/accessibility-for-people-with-disabilities.md)
+- [Barrierefreiheit für Personen mit Behinderungen](../ide/reference/accessibility-features-of-visual-studio.md)
 - [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

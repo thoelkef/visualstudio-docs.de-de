@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950640"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072723"
 ---
 # <a name="docker-compose-build-properties"></a>Buildeigenschaften von Docker Compose
 
@@ -35,6 +35,8 @@ In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für 
 
 | Name der Eigenschaft | Speicherort | BESCHREIBUNG | Standardwert  |
 |---------------|----------|-------------|----------------|
+|AdditionalComposeFiles|dcproj|Gibt zusätzliche Compose-Dateien in einer durch Semikolons getrennten Liste an, die an „docker-compose.exe“ für alle Befehle gesendet werden sollen. Relative Pfade aus der docker-compose-Projektdatei (DCPROJ-Datei) sind zulässig.|-|
+|DockerComposeBaseFilePath|dcproj|Gibt den ersten Teil der Dateinamen der docker-compose-Dateien ohne die Erweiterung *.yml* an. Beispiel: <br>1.  DockerComposeBaseFilePath = NULL/nicht definiert: Verwenden Sie den Basisdateipfad *docker-compose*. Dateien werden dann als *docker-compose.yml* und *docker-compose.override.yml* benannt.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: Dateien werden als *mydockercompose.yml* und *mydockercompose.override.yml* benannt.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: Dateien werden eine Ebene nach oben verlagert. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose build` übergeben werden sollen. Beispiel: `--parallel --pull` |
 |DockerComposeDownArguments|dcproj|Legt die zusätzlichen Parameter fest, die dem Befehl `docker-compose down` übergeben werden sollen. Beispiel: `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj oder vbproj|Der relative Pfad zur Docker Compose-Projektdatei (mit der DCPROJ-Erweiterung). Legen Sie diese Eigenschaft fest, wenn Sie das Dienstprojekt veröffentlichen, damit die zugeordneten Imagebuildeinstellungen in der Datei „docker-compose.yml“ gefunden werden.|-|
@@ -44,6 +46,46 @@ In der folgenden Tabelle werden die MSBuild-Eigenschaften aufgeführt, die für 
 |DockerServiceName| dcproj|Wenn DockerLaunchAction oder DockerLaunchBrowser festgelegt wird, ist DockerServiceName der Name des Diensts, der gestartet werden soll.  Da eine Docker Compose-Datei auf mehrere Projekte verweisen kann, können Sie mit dieser Eigenschaft festlegen, welches Projekt gestartet werden soll.|-|
 |DockerServiceUrl| dcproj | Die URL, die beim Start des Browsers verwendet werden soll.  Gültige Ersetzungstoken sind „{ServiceIPAddress}“, „{ServicePort}“ und „{Scheme}“.  Beispiel: {Scheme}://{ServiceIPAddress}:{ServicePort}.|-|
 |DockerTargetOS| dcproj | Das Zielbetriebssystem, das beim Erstellen des Docker-Images verwendet wird.|-|
+
+## <a name="example"></a>Beispiel
+
+Wenn Sie den Speicherort der Docker Compose-Dateien ändern, indem Sie `DockerComposeBaseFilePath` auf einen relativen Pfad festlegen. Dann müssen Sie noch sicherstellen, dass der Buildkontext so geändert wird, dass er auf den Projektmappenordner verweist. Wenn Ihre Docker Compose-Datei sich in einem Ordner namens *DockerComposeFiles* befindet, sollte der Buildkontext auf „..“ oder „../..“ festgelegt werden, je nachdem, was dem Projektmappenordner entspricht.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>154022c1-8014-4e9d-bd78-6ff46670ffa4</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}</DockerServiceUrl>
+    <DockerServiceName>webapplication1</DockerServiceName>
+    <DockerComposeBaseFilePath>DockerComposeFiles\mydockercompose</DockerComposeBaseFilePath>
+    <AdditionalComposeFilePaths>AdditionalComposeFiles\myadditionalcompose.yml</AdditionalComposeFilePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="DockerComposeFiles\mydockercompose.override.yml">
+      <DependentUpon>DockerComposeFiles\mydockercompose.yml</DependentUpon>
+    </None>
+    <None Include="DockerComposeFiles\mydockercompose.yml" />
+    <None Include=".dockerignore" />
+  </ItemGroup>
+</Project>
+```
+
+Die Datei *mydockercompose.yml* sollte folgendermaßen aussehen, dabei muss der Buildkontext auf den relativen Pfad des Projektmappenordners (in diesem Fall `..`) festgelegt sein.
+
+```yml
+version: '3.4'
+
+services:
+  webapplication1:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: ..
+      dockerfile: WebApplication1\Dockerfile
+```
 
 > [!NOTE]
 > DockerComposeBuildArguments, DockerComposeDownArguments und DockerComposeUpArguments sind neu in Visual Studio 2019 Version 16.3.

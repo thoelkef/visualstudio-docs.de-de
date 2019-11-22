@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Ablauf Verfolgungs Punkten im Debugger | Microsoft-Dokumentation
-ms.date: 9/17/2019
+title: Protokollinformationen mit Ablauf Verfolgungs Punkten | Microsoft-Dokumentation
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516391"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187299"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Verwenden von Ablauf Verfolgungs Punkten im Visual Studio-Debugger
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Protokollieren von Informationen im Ausgabefenster mithilfe von Ablauf Verfolgungs Punkten in Visual Studio
 
-Mit Ablauf Verfolgungs Punkten können Sie Informationen im Ausgabefenster unter konfigurierbare Bedingungen protokollieren, ohne den Code zu ändern oder zu beenden. Diese Funktion wird sowohl für verwalteten als auch für nativen Code sowie für verschiedene Sprachen wie JavaScript und C#unterstützt.
+Mit Ablauf Verfolgungs Punkten können Sie Informationen im Ausgabefenster unter konfigurierbare Bedingungen protokollieren, ohne den Code zu ändern oder zu beenden. Diese Funktion wird sowohl für verwaltete Sprachen (C#, Visual Basic, F#) als auch für nativen Code sowie für Sprachen wie JavaScript und python unterstützt.
 
 ## <a name="let39s-take-an-example"></a>Sehen&#39;Sie sich ein Beispiel an
 
@@ -90,7 +90,7 @@ Bei einem bedingten Ausdruck wird eine Ausgabe Meldung nur angezeigt, wenn besti
 
 Für bedingte Ausdrücke können Sie entweder den Ablauf Verfolgungs Punkt so festlegen, dass eine Meldung ausgegeben wird, wenn eine bestimmte Bedingung erfüllt ist oder sich geändert hat. Wenn Sie z. b. nur den Wert des Zählers während der Iterationen der `for` Schleife anzeigen möchten, können Sie die Option **ist true** auswählen und dann `i%2 == 0` in das Textfeld Nachricht eingeben.
 
-![Bedingter Ausdruck ist true](../debugger/media/conditionalexpressionistrue.png "Bedingter Ausdruck ist true")
+![Bedingter Ausdruck ist "true"](../debugger/media/conditionalexpressionistrue.png "Bedingter Ausdruck ist "true"")
 
 Wenn Sie den Wert des Zählers ausgeben möchten, wenn sich die Iterations `for` Schleife ändert, wählen Sie die Option **bei Änderung** aus, und geben Sie `i` in das Textfeld Nachricht ein.
 
@@ -111,7 +111,7 @@ Bei der Treffer Anzahl können Sie angeben, dass eine Meldung ausgegeben werden 
 ![Treffer Anzahl für bedingten Ausdruck](../debugger/media/conditionalexpressionhitcount.png "Treffer Anzahl für bedingten Ausdruck")
 
 ### <a name="filter"></a>Filter
-Legen Sie für eine Filterbedingung fest, für welche Geräte, Prozesse oder Threads die Ausgabe angezeigt wird.
+Legen Sie für eine Filterbedingung fest, welche Geräte, Prozesse oder Thread Ausgaben für angezeigt werden.
 
 ![Bedingter Ausdrucks Filter](../debugger/media/conditionalexpressionfilter.png "Bedingter Ausdrucks Filter")
 
@@ -129,7 +129,7 @@ Schließen Sie Zeichen folgen (z. b. Namen) in doppelte Anführungszeichen ein. 
 
 Obwohl Ablauf Verfolgungs Punkte dazu gedacht sind, das Debuggen zu bereinigen und zu vereinfachen, sollten Sie sich über einige Aspekte im klaren sein, die Sie bei der Verwendung berücksichtigen sollten.
 
-Manchmal kann sich der Wert ändern, wenn Sie eine Eigenschaft oder ein Attribut eines Objekts überprüfen. Dies ist kein Fehler, der von der Ablauf Verfolgungs Punkt-Funktion selbst verursacht wird. es ist jedoch erwähnenswert, dass durch die Verwendung von Ablauf Verfolgungs Punkten zum Überprüfen von Objekten diese unbeabsichtigten Änderungen nicht vermieden werden.
+Manchmal kann sich der Wert ändern, wenn Sie eine Eigenschaft oder ein Attribut eines Objekts überprüfen. Wenn sich der Wert während der Überprüfung ändert, handelt es sich nicht um einen Fehler, der von der Funktion Ablauf Verfolgungs Punkt selbst verursacht wird Durch die Verwendung von Ablauf Verfolgungs Punkten zum Überprüfen von Objekten werden diese versehentlichen Änderungen jedoch nicht vermieden.
 
 Die Art und Weise, wie Ausdrücke im **Aktions** Meldungs Feld ausgewertet werden, unterscheidet sich möglicherweise von der Sprache, die Sie zurzeit für die Entwicklung verwenden. Wenn Sie z. b. eine Zeichenfolge ausgeben möchten, müssen Sie eine Nachricht nicht in Anführungszeichen einschließen, auch wenn Sie `Debug.WriteLine()` oder `console.log()` normalerweise verwenden. Außerdem kann sich die Syntax der geschweiften Klammer (`{ }`) für Ausgabe Ausdrücke von der Konvention zum Ausgeben von Werten in der Entwicklungssprache unterscheiden. (Der Inhalt innerhalb der geschweiften Klammern (`{ }`) sollte jedoch immer noch mit der Syntax Ihrer Entwicklungssprache geschrieben werden.)
 

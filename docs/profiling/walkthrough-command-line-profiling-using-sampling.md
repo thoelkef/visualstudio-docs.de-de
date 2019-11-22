@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 20804e6ada568828ea1850ae249d9bf0d24855e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433613"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189278"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling
 
@@ -33,7 +33,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Schrit
 
 - Grundlegende Kenntnisse über [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Grundlegende Kenntnisse über die Arbeit mit Befehlszeilentools
-- Eine Kopie von [PeopleTrax-Beispiel](/visualstudio/profiling/performance-explorer)
+- Eine Kopie von [PeopleTrax-Beispiel](performance-explorer.md)
 - Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilerstellung über die Befehlszeile mit der Samplingmethode
@@ -89,7 +89,7 @@ Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Proze
 
     - Öffnen Sie die *VSP*-Datei in der Visual Studio-IDE.
 
-         - oder -
+         \- oder -
 
     - Generieren Sie mithilfe des Befehlszeilentools *VSPerfReport.exe* eine Datei mit durch Trennzeichen getrennten Werten (*CSV-Datei*). Verwenden Sie den folgenden Befehl, um Berichte zu generieren, die außerhalb der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE verwendet werden können:
 

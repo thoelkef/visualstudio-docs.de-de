@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ef59a45bd3dd5b3ab2f3e5219d6674c8e7b095e2
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108077"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189661"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -21,7 +21,7 @@ Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – 
 
 Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** und höheren Versionen enthalten.
 
-Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azure-Abonnement, das Sie kostenlos über [https://azure.com/free](https://azure.com/free) erhalten.
+Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azure-Abonnement. Wenn Sie nicht über ein Azure-Konto verfügen, können Sie sich noch heute kostenlos registrieren und 12 Monate lang kostenlos beliebte Dienste nutzen. Außerdem erhalten Sie eine Gutschrift über 200 USD und Zugang zu mehr als 25 Diensten, die immer kostenlos sind: [https://azure.com/free](https://azure.com/free/dotnet).
 
 ## <a name="creating-your-first-azure-functions-project"></a>Erstellen Ihres ersten Azure Functions-Projekts
 
@@ -158,4 +158,4 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
 
 - **Image Resizer**: eine Funktion, die Images mit geänderter Größe erstellt, wenn einem Container ein Blob hinzugefügt wird. Diese Vorlage beinhaltet einen Pfad und eine Verbindungszeichenfolge für den Trigger, eine kleine Imageausgabe und eine mittelgroße Imageausgabe.
 
-- **SAS Token**: eine Funktion, die ein SAS-Token für einen angegebenen Azure Storage-Container und einen Blobnamen generiert. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Die **Zugriffsrechte** müssen ebenfalls festgelegt werden. Die Autorisierungsstufe kontrolliert, ob die Funktion einen API-Schlüssel verlangt und welcher Schlüssel verwendet werden soll. „Function“ verwendet einen Funktionsschlüssel und „Admin“ verwendet den Masterschlüssel. Weitere Informationen finden Sie in dem Beispiel [C# Azure Function for generating SAS tokens (Azure-Funktion in C# zum Generieren von SAS-Token)](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/).
+- **SAS Token**: eine Funktion, die ein SAS-Token für einen angegebenen Azure Storage-Container und einen Blobnamen generiert. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Die **Zugriffsrechte** müssen ebenfalls festgelegt werden. Die Autorisierungsstufe kontrolliert, ob die Funktion einen API-Schlüssel verlangt und welcher Schlüssel verwendet werden soll. „Function“ verwendet einen Funktionsschlüssel und „Admin“ verwendet den Masterschlüssel. Weitere Informationen finden Sie in dem Beispiel [C# Azure Function for generating SAS tokens (Azure-Funktion in C# zum Generieren von SAS-Token)](https://github.com/Azure-Samples/functions-dotnet-sas-token/).

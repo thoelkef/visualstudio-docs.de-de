@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872891"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73717272"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Erstellen von ASP.NET Core-Anwendungen in Visual Studio für Mac
 
@@ -65,7 +65,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![](media/netcore-image6.png)
 
-5. Diese CSHTML-Datei verwendet die Razor-Syntax, um HTML auf der Grundlage einer Kombination von Standardtags und Inline-C# zu rendern. Weitere Informationen dazu finden Sie in der [Onlinedokumentation](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+5. Diese CSHTML-Datei verwendet die Razor-Syntax, um HTML auf der Grundlage einer Kombination von Standardtags und Inline-C# zu rendern. Weitere Informationen dazu finden Sie in der [Onlinedokumentation](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
     ![](media/netcore-image7.png)
 
@@ -73,7 +73,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![](media/netcore-image8.png)
 
-7. Es gibt auch verschiedene Konfigurationsdateien, mit denen Projekte einschließlich der Pakete und die Anwendung zur Laufzeit verwaltet werden können. Die [Standardkonfiguration](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) der Anwendung befindet sich z.B. in der Datei **appsettings.json**. Sie können jedoch einige bzw. alle diese Einstellungen umgebungsabhängig überschreiben, d.h. beispielsweise die Datei **appSettings.Development.json** für die Umgebung **Entwicklung** bereitstellen.
+7. Es gibt auch verschiedene Konfigurationsdateien, mit denen Projekte einschließlich der Pakete und die Anwendung zur Laufzeit verwaltet werden können. Die [Standardkonfiguration](/aspnet/core/fundamentals/configuration) der Anwendung befindet sich z.B. in der Datei **appsettings.json**. Sie können jedoch einige bzw. alle diese Einstellungen umgebungsabhängig überschreiben, d.h. beispielsweise die Datei **appSettings.Development.json** für die Umgebung **Entwicklung** bereitstellen.
 
     ![](media/netcore-image9.png)
 
@@ -87,7 +87,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![](media/netcore-image11.png)
 
-3. Auch wenn der **WebHostBuilder** für die Erstellung des Hosts verantwortlich ist, der das Bootstrapping des Servers für die App durchführen soll, muss dafür ein Server bereitgestellt werden, der **IServer** implementiert. Standardmäßig wird dafür **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** verwendet, ein plattformübergreifender Webserver für ASP.NET Core, der auf der plattformübergreifenden asynchronen E/A-Bibliothek **libuv** basiert.
+3. Auch wenn der **WebHostBuilder** für die Erstellung des Hosts verantwortlich ist, der das Bootstrapping des Servers für die App durchführen soll, muss dafür ein Server bereitgestellt werden, der **IServer** implementiert. Standardmäßig wird dafür **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** verwendet, ein plattformübergreifender Webserver für ASP.NET Core, der auf der plattformübergreifenden asynchronen E/A-Bibliothek **libuv** basiert.
 
     ![](media/netcore-image12.png)
 
@@ -189,7 +189,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![](media/netcore-image32.png)
 
-5. Danach wird versucht, eine umgebungsspezifische Datei **appsettings.json** zu laden, die bestehende Einstellungen überschreibt. Dies ist beispielsweise eine bereitgestellte Datei **appsettings.Development.json**, die für diese spezifische Umgebung verwendet wird. Weitere Informationen zur Konfiguration in ASP.NET Core finden Sie in der [Dokumentation](https://docs.microsoft.com/aspnet/core/fundamentals/configuration).
+5. Danach wird versucht, eine umgebungsspezifische Datei **appsettings.json** zu laden, die bestehende Einstellungen überschreibt. Dies ist beispielsweise eine bereitgestellte Datei **appsettings.Development.json**, die für diese spezifische Umgebung verwendet wird. Weitere Informationen zur Konfiguration in ASP.NET Core finden Sie in der [Dokumentation](/aspnet/core/fundamentals/configuration).
 
     ![](media/netcore-image34.png)
 
@@ -243,4 +243,4 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
 ## <a name="summary"></a>Zusammenfassung
 
-In diesem Tutorial haben Sie mehr über die ersten Schritte beim Entwickeln von ASP.NET Core-Apps mithilfe von Visual Studio für Mac erfahren. Wenn Sie sich die Entwicklung einer umfassenderen Filmdatenbankanwendung ansehen möchten, schauen Sie sich das Tutorial [Erste Schritte mit ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) an.
+In diesem Tutorial haben Sie mehr über die ersten Schritte beim Entwickeln von ASP.NET Core-Apps mithilfe von Visual Studio für Mac erfahren. Wenn Sie sich die Entwicklung einer umfassenderen Filmdatenbankanwendung ansehen möchten, schauen Sie sich das Tutorial [Erste Schritte mit ASP.NET Core MVC](/aspnet/core/tutorials/first-mvc-app/start-mvc) an.

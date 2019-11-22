@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737934"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188189"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C#)
  Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen. Im Ausführmodus ist der Quellcode-Editor schreibgeschützt.
@@ -41,4 +41,4 @@ ms.locfileid: "72737934"
 ## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Unterstützte Code ÄnderungenC# (und Visual Basic)](../debugger/supported-code-changes-csharp.md)
-- [Schreiben und Debuggen von XAML-Code mit XAML-Hot-Neuladen in Visual Studio](../debugger/xaml-hot-reload.md)
+- [Schreiben und Debuggen von XAML-Code mit XAML-Hot-Neuladen in Visual Studio](../xaml-tools/xaml-hot-reload.md)

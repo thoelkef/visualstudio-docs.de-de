@@ -1,5 +1,5 @@
 ---
-title: Visual Studio-Debug-Beispiele | Microsoft-Dokumentation
+title: Visual Studio-Debugbeispiele | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea408640b47b04041e99b9a4bff2605b6231a92f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348299"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981234"
 ---
-# <a name="visual-studio-debugging-samples"></a>Visual Studio-Debug-Beispiele
-Zwei Beispiele zeigen, wie mithilfe von Visual Studio-Debugger erweitert [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+# <a name="visual-studio-debugging-samples"></a>Visual Studio-Debugbeispiele
+In zwei Beispielen wird gezeigt, wie der Visual Studio-Debugger mithilfe von [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]erweitert wird.
 
-- Debugger Expression Evaluator Beispiel für verwaltete Sprachen befindet sich auf die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. In der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Fenster, klicken Sie auf die **Beispiele** auf **alle** oder **c#** in der Liste der Sprachen, und klicken Sie dann auf **Debugger**.
+- Das Beispiel Debugger Expression Evaluator (für verwaltete Sprachen) ist in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]enthalten. Klicken Sie im [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Fenster auf die Registerkarte **Beispiele** , klicken Sie **C#** auf **alle** oder in der Liste der Sprachen, und klicken Sie dann auf **Debugger**.
 
-- Visual Studio Debug-Engine-Beispiel für systemeigene Sprachen ist in der MSDN Code Gallery verfügbar. Weitere Informationen finden Sie unter [Visual Studio-Debug-Engine-Beispiel](http://go.microsoft.com/fwlink/?LinkId=150236) auf der Microsoft-Website.
+- Das Visual Studio-Debug-Engine-Beispiel für Native Sprachen ist in der MSDN Code Gallery verfügbar. Weitere Informationen finden Sie unter [Visual Studio Debug Engine Sample](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) auf der Microsoft-Website.

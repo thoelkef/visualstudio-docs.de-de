@@ -1,5 +1,5 @@
 ---
-title: Erstellen von SharePoint-Workflow-Projektmappen | Microsoft-Dokumentation
+title: Erstellen von SharePoint-Workflow Lösungen | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,91 +20,91 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4139760995d655dbeb4e1c76d164f21949a9b50
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443525"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984547"
 ---
-# <a name="create-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
+# <a name="create-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow Lösungen
 
-[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet Tools, mit denen Sie benutzerdefinierte Workflows zu erstellen, die den Lebenszyklus der Dokumente und Listenelemente in einer SharePoint-Website zu verwalten. Die bereitgestellten Elemente umfassen einen Designer, einen Satz von Aktivitätssteuerelementen und die erforderlichen Assemblyverweise. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält auch die **SharePoint Customization Wizard**, um das Erstellen und Konfigurieren von Workflows.
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] stellt Tools bereit, die Sie beim Erstellen von benutzerdefinierten Workflows unterstützen, die den Lebenszyklus von Dokumenten und Listenelementen in einer SharePoint-Website verwalten. Zu den bereitgestellten Elementen gehören ein Designer, ein Satz von Aktivitäts Steuerelementen und die erforderlichen Assemblyverweise. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst auch den Assistenten zum Anpassen von **SharePoint**, um die Erstellung und Konfiguration der Workflows zu unterstützen.
 
-Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Produkten und-Technologien](http://go.microsoft.com/fwlink/?LinkId=178470).
+Weitere Informationen zu SharePoint finden Sie unter [Microsoft SharePoint-Produkte und-Technologien](/sharepoint/dev/).
 
 ## <a name="workflows-in-sharepoint"></a>Workflows in SharePoint
- Wenn Sie einen Workflow auf einer SharePoint-Bibliothek oder Liste hinzufügen, erzwingen Sie einen Geschäftsprozess für alle Elemente in der Bibliothek oder Liste aus. Ein Workflow beschreibt die Aktionen, die das System oder Benutzer, auf die einzelnen Elemente ausführen müssen, z. B. das Element, das bearbeitet werden, und klicken Sie dann überprüft senden. Diese Aktionen, die genannte *Aktivitäten*, sind die Bausteine des Workflows.
+ Wenn Sie einem SharePoint-Bibliothek oder einer SharePoint-Liste einen Workflow hinzufügen, erzwingen Sie einen Geschäftsprozess für alle Elemente in der Bibliothek oder Liste. Ein Workflow beschreibt die Aktionen, die das System oder die Benutzer für jedes Element ausführen müssen, z. b. das Senden des zu bearbeitenden und dann zu überprüfenden Elements. Diese Aktionen werden als *Aktivitäten*bezeichnet und sind die Bausteine des Workflows.
 
- Sie können angeben, Erstellen von SharePoint Workflows in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und auf einer SharePoint-Website bereitzustellen. Nachdem ein Workflow in SharePoint bereitgestellt wird, ordnen Sie es mit einer Bibliothek oder Liste. Es kann dann automatisch von einem Prozess oder manuell von einem Benutzer gestartet werden. Weitere Informationen zu Workflowvorgang, finden Sie unter [Entwickeln von SharePoint-Workflows, die mithilfe von Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).
+ Sie können SharePoint-Workflows in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellen und auf einer SharePoint-Website bereitstellen. Nachdem ein Workflow in SharePoint bereitgestellt wurde, ordnen Sie ihn einer Bibliothek oder einer Liste zu. Sie kann dann automatisch, von einem Prozess oder manuell von einem Benutzer gestartet werden. Weitere Informationen zum Workflow Vorgang finden Sie unter [entwickeln von SharePoint-Workflows mithilfe von Visual Studio](/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).
 
-## <a name="create-custom-sharepoint-workflows"></a>Erstellen Sie benutzerdefinierte SharePoint-workflows
- Zwei SharePoint-Workflow-Projekte stehen Ihnen im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **Sequenzieller Workflow** und **Zustand der Zustandsautomatworkflows**.
+## <a name="create-custom-sharepoint-workflows"></a>Erstellen von benutzerdefinierten SharePoint-Workflows
+ In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]stehen zwei SharePoint-Workflow Projekte zur Verfügung: **sequenzieller Workflow** und **Status Computer Workflow**.
 
- Ein *sequenziellen Workflow* stellt eine Reihe von Schritten dar. Die Schritte werden nacheinander ausgeführt, bis die letzte Aktivität abgeschlossen ist. Sequenzielle Workflows sind immer streng sequenziell ausgeführt. Da sie externe Ereignisse empfangen und parallele logische Abläufe enthalten können, variieren die genaue Reihenfolge der Ausführung. Die folgende Abbildung zeigt ein Beispiel für einen sequenziellen Workflow.
+ Ein *sequenzieller Workflow* stellt eine Reihe von Schritten dar. Die Schritte werden nacheinander ausgeführt, bis die letzte Aktivität abgeschlossen ist. Sequenzielle Workflows sind in ihrer Ausführung immer genau sequenziell. Da Sie externe Ereignisse empfangen können und parallele logische Flows einschließen, kann die genaue Ausführungsreihenfolge variieren. Die folgende Abbildung zeigt ein Beispiel für einen sequenziellen Workflow.
 
- ![Sequenzieller Workflow](../sharepoint/media/sp-sequential.png "sequenziellen Workflows")
+ ![Sequenzieller Workflow](../sharepoint/media/sp-sequential.png "Sequenzieller Workflow")
 
- Ein *Zustandsautomatworkflow* stellt einen Satz von Zuständen, Übergängen und Aktionen. Die Schritte in einem Statuscomputer-Workflow asynchron ausgeführt. Dies bedeutet, dass sie nach dem anderen nicht unbedingt ausgeführt werden, aber stattdessen von Aktionen und Zuständen ausgelöst werden. Ein Zustand wird als Startstatus zugewiesen, und klicken Sie dann auf der Grundlage von Ereignissen Übergang in einen anderen Zustand. Das Zustandsautomat kann es sich um einen Endzustand verfügen, der bestimmt, das Ende des Workflows. Das folgende Diagramm zeigt ein Beispiel für einen Statuscomputerworkflow.
+ Ein *Zustands Automaten Workflow* stellt einen Satz von Zuständen, Übergängen und Aktionen dar. Die Schritte in einem Zustands Automaten Workflow werden asynchron ausgeführt. Dies bedeutet, dass Sie nicht notwendigerweise nacheinander ausgeführt werden, sondern stattdessen durch Aktionen und Zustände ausgelöst werden. Ein Status wird als Startstatus zugewiesen, und auf der Grundlage eines Ereignisses wird ein Übergang in einen anderen Zustand vorgenommen. Der Zustands Automat kann einen Endzustand aufweisen, der das Ende des Workflows bestimmt. Das folgende Diagramm zeigt ein Beispiel für einen Status Computer Workflow.
 
- ![Status der Zustandsautomatworkflows](../sharepoint/media/sp-state.png "Zustand der Zustandsautomatworkflows")
+ ![Zustands Automat-Workflow](../sharepoint/media/sp-state.png "Zustandsautomat-Workflow")
 
- Weitere Informationen zu Workflowtypen, finden Sie unter [Workflowtypen](http://go.microsoft.com/fwlink/?LinkId=178995).
+ Weitere Informationen zu Workflow Typen finden Sie unter [Workflow Typen](/previous-versions/office/developer/sharepoint-2010/ms468447(v=office.14)).
 
-### <a name="use-the-wizard"></a>Verwenden Sie den Assistenten
- Beim Erstellen einer SharePoint-Workflowprojekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], geben Sie zunächst die Einstellungen in der **SharePoint Customization Wizard**. Der Assistent verwendet diese Einstellungen zum Erstellen eines Projekts in **Projektmappen-Explorer**. Dieses Projekt enthält eine Codedatei, mehrere Dateien, die verwendet werden, um den Workflow, bereitstellen und Verweise auf Assemblys, die zum Erstellen eines benutzerdefinierten SharePoint-Workflows erforderlich sind.
+### <a name="use-the-wizard"></a>Verwenden des Assistenten
+ Wenn Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ein SharePoint-Workflow Projekt erstellen, geben Sie die Einstellungen zunächst im Assistenten zum Anpassen von **SharePoint**an. Der Assistent verwendet diese Einstellungen zum Erstellen eines Projekts in **Projektmappen-Explorer**. Dieses Projekt enthält eine Codedatei, mehrere Dateien, die zum Bereitstellen des Workflows verwendet werden, sowie Verweise auf Assemblys, die zum Erstellen eines benutzerdefinierten SharePoint-Workflows erforderlich sind.
 
- Nachdem Sie den Workflow erstellt haben, können Sie seine Eigenschaften im Eigenschaftenfenster ändern. Obwohl die meisten Workfloweigenschaften direkt im Eigenschaftenfenster geändert werden können, einige erfordern Sie eine Schaltfläche klicken (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")), Ändern Sie deren Werte an. Diese Schaltfläche, Neustart der **SharePoint Customization Wizard**. Nach dem vornehmen der Eigenschaft-Wert ändert, wählen Sie die **Fertig stellen** Schaltfläche, um sie abzuschließen.
+ Nachdem Sie den Workflow erstellt haben, können Sie seine Eigenschaften im Eigenschaftenfenster ändern. Obwohl die meisten Workflow Eigenschaften direkt in der Eigenschaftenfenster geändert werden können, müssen Sie auf eine Schaltfläche mit den Auslassungs Punkten (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) klicken, um ihre Werte zu ändern. Mit dieser Schaltfläche wird der Assistent zum Anpassen von **SharePoint**neu gestartet. Nachdem Sie die Eigenschafts Wertänderungen vorgenommen haben, klicken Sie auf die Schaltfläche **Fertig** stellen, um Sie abzuschließen.
 
 > [!NOTE]
-> Die **Workflowtyp** -Eigenschaft ist schreibgeschützt und kann nicht geändert werden. Wenn Sie den Workflow ändern möchten, müssen Sie einen anderen Workflow erstellen.
+> Die **Workflowtyp** -Eigenschaft ist schreibgeschützt und kann nicht geändert werden. Wenn Sie den Workflowtyp ändern möchten, müssen Sie einen weiteren Workflow erstellen.
 
 ## <a name="design-a-sharepoint-workflow"></a>Entwerfen eines SharePoint-Workflows
- Nachdem Sie alle Schritte in den Geschäftsprozess definieren, verwenden Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflow-Designer zum Entwerfen des SharePoint-Workflows. Um den Designer zu öffnen, doppelklicken Sie auf Workflow1.cs klicken oder Workflow1.vb in **Projektmappen-Explorer**, oder öffnen Sie das Kontextmenü für eine dieser Dateien, und wählen Sie dann **öffnen**.
+ Nachdem Sie alle Schritte im Geschäftsprozess definiert haben, verwenden Sie den [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflow-Designer, um den SharePoint-Workflow zu entwerfen. Um den Designer zu öffnen, doppelklicken Sie auf Workflow1.cs oder Workflow1. vb in **Projektmappen-Explorer**, oder öffnen Sie das Kontextmenü für eine dieser Dateien, und wählen Sie dann **Öffnen**aus.
 
 ### <a name="activities"></a>Aktivitäten
- Fügen Sie um einen Workflow zu entwerfen, Aktivitäten, die von der **Toolbox** zu einem *Workflowzeitplan* im Designer. Ein Workflowzeitplan enthält die Abfolge von Aktivitäten in der Reihenfolge, in der sie ausgeführt werden soll.
+ Zum Entwerfen eines Workflows fügen Sie Aktivitäten aus der **Toolbox** einem *Workflow Zeitplan* im Designer hinzu. Ein Workflow Zeitplan enthält die Abfolge der Aktivitäten in der Reihenfolge, in der Sie ausgeführt werden sollen.
 
  Es gibt zwei Arten von Aktivitäten:
 
-- *Einfache Aktivitäten* führen Sie eine einzelne Arbeitseinheit, z. B. "1 Tag verzögern" oder "Webdienst starten".
+- *Einfache Aktivitäten* führen eine einzelne Arbeitseinheit aus, z. b. "Verzögerung für einen Tag" oder "Webdienst starten".
 
-- *Zusammengesetzte Aktivitäten* andere Aktivitäten enthalten, die eine bedingte Aktivität kann beispielsweise zwei Verzweigungen enthalten.
+- Zusammen *gesetzte Aktivitäten* enthalten andere Aktivitäten. Beispielsweise kann eine bedingte Aktivität zwei Verzweigungen enthalten.
 
-  Beide Arten von Aktivitäten finden Sie in der **Toolbox**.
+  Beide Arten von Aktivitäten sind in der **Toolbox**verfügbar.
 
-  Aktivitäten können Eigenschaften, Methoden und Ereignisse haben. Verwenden der **Eigenschaften** Fenster zum Festlegen der Eigenschaften einer Aktivität.
+  Aktivitäten können über Eigenschaften, Methoden und Ereignisse verfügen. Verwenden Sie das **Eigenschaften** Fenster, um die Eigenschaften einer Aktivität festzulegen.
 
-  Sie können auch eine benutzerdefinierte Aktivität erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierten Websiteworkflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Sie können auch eine benutzerdefinierte Aktivität erstellen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer benutzerdefinierten Site Workflow Aktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
-  Aktivitäten sind in den folgenden Registerkarten organisiert die **Toolbox**:
+  Aktivitäten werden auf den folgenden Registerkarten der **Toolbox**organisiert:
 
 - **SharePoint-Workflow**
 
-- **Windows Workflow v3.0**
+- **Windows Workflow v 3.0**
 
-- **Windows Workflow v3.5**
+- **Windows Workflow v 3.5**
 
-  Nicht alle Core-Workflow-Aktivitäten werden von SharePoint unterstützt. Weitere Informationen finden Sie unter [Workflow Aktivitäten für Windows SharePoint Services Overview](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Nicht alle Kern Workflow Aktivitäten werden von SharePoint unterstützt. Weitere Informationen finden Sie unter [Workflow Activities for Windows SharePoint Services Overview](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
-#### <a name="sharepoint-workflow-activities"></a>SharePoint-Workflow-Aktivitäten
- Die **SharePoint-Workflow** Registerkarten enthalten spezielle Aktivitäten für die Verwendung in [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Diese Aktivitäten vereinfachen und optimieren die Entwicklung von Workflows des Lebenszyklus. Weitere Informationen zu den aufgeführten Aktivitäten der **SharePoint-Workflow** finden Sie unter [Workflow Aktivitäten für Windows SharePoint Services Overview](http://go.microsoft.com/fwlink/?LinkID=156094).
+#### <a name="sharepoint-workflow-activities"></a>SharePoint-Workflow Aktivitäten
+ Die Registerkarten des **SharePoint-Workflows** enthalten spezialisierte Aktivitäten für die Verwendung in [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Diese Aktivitäten vereinfachen und vereinfachen die Entwicklung von Lebenszyklus Workflows für Dokumente. Weitere Informationen zu den auf der Registerkarte **SharePoint-Workflow** aufgeführten Aktivitäten finden Sie unter [Workflow Activities for Windows SharePoint Services Overview](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
 #### <a name="windows-workflow-activities"></a>Windows Workflow-Aktivitäten
- Die **Windows Workflow** Registerkarten enthalten, die vom bereitgestellten Aktivitäten der [!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)]. Sie können diese Aktivitäten verwenden, um Workflow-Zeitpläne für jede Art von Windows Workflow-Anwendung zu erstellen.
+ Die Registerkarten **Windows Workflow** enthalten Aktivitäten, die vom [!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)]bereitgestellt werden. Sie können diese Aktivitäten verwenden, um Workflow Zeitpläne für jede Art von Windows-Workflow Anwendung zu erstellen.
 
- Weitere Informationen zu den aufgeführten Aktivitäten der **Windows Workflows** finden Sie unter [Windows Workflow Foundation-Aktivitäten](http://go.microsoft.com/fwlink/?LinkID=156096). Weitere Informationen zu der Windows Workflow Foundation, finden Sie unter [Übersicht über die Windows Workflow Foundation](http://go.microsoft.com/fwlink/?LinkID=128632).
+ Weitere Informationen zu den Aktivitäten, die auf der Registerkarte **Windows-Workflows** aufgelistet sind, finden Sie unter [Windows Workflow Foundation Aktivitäten](/previous-versions/dotnet/netframework-3.5/ms733615(v=vs.90)). Weitere Informationen zum Windows Workflow Foundation finden Sie unter [Windows Workflow Foundation Übersicht](/previous-versions/dotnet/netframework-3.5/ms734631(v=vs.90)).
 
-### <a name="work-with-activities-in-the-designer"></a>Arbeiten Sie mit Aktivitäten im designer
- Der Workflowzeitplan kann eine Kombination von Windows Workflow-Aktivitäten und SharePoint-Workflow-Aktivitäten enthalten.
+### <a name="work-with-activities-in-the-designer"></a>Arbeiten mit Aktivitäten im Designer
+ Der Workflow Zeitplan kann eine Kombination aus Windows Workflow-Aktivitäten und SharePoint-Workflow Aktivitäten enthalten.
 
- Der Designer zeigt visuelle Hinweise zum Positionieren und Aktivitäten ordnungsgemäß zu konfigurieren. Wenn Sie ziehen oder kopieren Sie eine Aktivität in den Workflowzeitplan, zeigt der Designer grünes Pluszeichen (+)-Symbole, die Sie gültige Positionen für diese Aktivität im Workflow anzuzeigen. Sie können keine Aktivität an einem Ort positionieren, wo sie ungültig wäre. Sie können keine z. B. eine Send-Aktivität als erste Aktivität in einer Verzweigung der warten-Aktivität positionieren. Weitere Informationen finden Sie unter [Entwicklercenter für SharePoint Designer](http://go.microsoft.com/fwlink/?LinkId=178476).
+ Der Designer zeigt visuelle Hinweise an, die Ihnen helfen, Aktivitäten ordnungsgemäß zu positionieren und zu konfigurieren. Beim ziehen oder Kopieren einer Aktivität auf den Workflow Zeitplan zeigt der Designer grüne Pluszeichen (+)-Symbole an, die Ihnen gültige Positionen für diese Aktivität im Workflow zeigen. Sie können eine Aktivität nicht an einem Speicherort positionieren, an dem Sie nicht gültig ist. Beispielsweise können Sie eine Send-Aktivität nicht als erste Aktivität in einer lausch Aktivitäts Verzweigung positionieren. Weitere Informationen finden Sie im [SharePoint Designer Developer Center](https://developer.microsoft.com/office/docs).
 
 ## <a name="collect-information-during-the-workflow"></a>Sammeln von Informationen während des Workflows
- Möglicherweise möchten Sie Informationen von Benutzern sammeln vordefinierten Zeitpunkten während des Workflows. Sie können Informationen sammeln, indem Sie mithilfe von Formularen oder Eigenschaften des Elements.
+ Möglicherweise möchten Sie Informationen von Benutzern zu vordefinierten Zeitpunkten im Workflow sammeln. Informationen können mithilfe von Formularen oder Element Eigenschaften gesammelt werden.
 
 ### <a name="forms"></a>Formulare
- Formen sind z. B. Dialogfelder, die Fragen enthalten, und bieten Möglichkeiten für Benutzer, um Antworten zu geben.
+ Formulare sind ähnliche Dialogfelder, die Fragen enthalten und Benutzern Möglichkeiten bieten, Antworten zu erhalten.
 
  Es gibt vier Arten von Formularen, die in einem Workflow verwendet werden können:
 
@@ -116,34 +116,34 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
 
 - Aufgabe
 
-  Von diesen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Elementvorlagen für Zuordnungs-und Initiierungsformularen enthält. Ein Beispiel für eine *Zuordnungsformular* ist eine, die den Administrator installiert den Workflow können Geben Sie Parameter, die für den Workflow, z. B. ein Ausgabenlimit für einen Expense-Workflow beziehen. Ein Beispiel für eine *Initiierungsformular* ist ein, der dem der Benutzer einen Expense-Workflow geben in den Workflow der Betrag, der sie ausgegeben. Weitere Informationen zu diesen Arten von Formularen, finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] enthält Element Vorlagen für Zuordnungs-und Initiierungs Formulare. Ein Beispiel für ein Zuordnungs *Formular* besteht darin, dass der Administrator, der den Workflow installiert, die Parameter eingeben kann, die mit dem Workflow in Beziehung stehen, z. b. ein Ausgabenlimit für einen Ausgaben Workflow. Ein Beispiel für ein *Initiierungs Formular* ist eine, mit der der Benutzer eines Ausgaben Workflows den Betrag eingeben kann, den Sie im Workflow aufgewendet haben. Weitere Informationen zu diesen Formular Typen finden Sie unter [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-### <a name="item-properties"></a>Elementeigenschaften
- Sie können Informationen auch mithilfe der Eigenschaften eines Elements in der SharePoint-Bibliothek oder Liste von Benutzern sammeln. Die Hauptcodedatei (Workflow1.cs oder Workflow1.vb) deklariert eine Instanz der Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties-Klasse, die mit dem Namen `workflowProperties`. Verwenden der `workflowProperties` Objekt, das die Eigenschaften der Bibliothek oder Liste im Code zugreifen. Ein Beispiel finden Sie unter [Exemplarische Vorgehensweise: Erstellen und Debuggen eine SharePoint-workflowlösung](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
+### <a name="item-properties"></a>Element Eigenschaften
+ Sie können auch Informationen von Benutzern erfassen, indem Sie die Eigenschaften eines Elements in der SharePoint-Bibliothek oder-Liste verwenden. Die Haupt Codedatei (Workflow1.cs oder Workflow1. vb) deklariert eine Instanz der Klasse Microsoft. SharePoint. Workflow. SPWorkflowActivationProperties. workflowProperties mit dem Namen `workflowProperties`. Verwenden Sie das `workflowProperties`-Objekt, um auf die Eigenschaften der Bibliothek oder Liste im Code zuzugreifen. Ein Beispiel finden Sie unter Exemplarische Vorgehensweise [: Erstellen und Debuggen einer SharePoint-Workflow](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)-Projekt Mappe.
 
-## <a name="debug-a-sharepoint-workflow-template"></a>Debuggen einer SharePoint-Workflowvorlage
- Sie können Debuggen einer SharePoint-Workflowprojekt identisch wie bei anderen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] webbasierten Projekte. Beim Starten der [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwendet die Einstellungen, die Sie, in angeben der **SharePoint Customization Wizard** öffnen Sie die entsprechenden SharePoint-Website und automatisch zuordnen der Workflowvorlage der entsprechende Bibliothek oder Liste. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Außerdem fügt die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger an den [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Prozess mit dem Namen *w3wp.exe*.
+## <a name="debug-a-sharepoint-workflow-template"></a>Debuggen einer SharePoint-Workflow Vorlage
+ Sie können ein SharePoint-Workflow Projekt genauso Debuggen, wie Sie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] webbasierte Projekte Debuggen. Wenn Sie den [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Debugger starten, verwendet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Einstellungen, die Sie im Assistenten zum Anpassen von **SharePoint** angeben, um die entsprechende SharePoint-Website zu öffnen und die Workflow Vorlage der entsprechenden Bibliothek automatisch zuzuordnen. List. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt auch den [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Debugger an den [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]-Prozess mit dem Namen *w3wp. exe*an.
 
- Um den Workflow zu testen, müssen Sie sie manuell starten. Weitere Informationen finden Sie im Abschnitt "Debuggen von Workflows" in [SharePoint-Lösungen Debuggen](../sharepoint/debugging-sharepoint-solutions.md). Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web zu Anwendungsdebuggen, finden Sie unter [Debuggen von Webanwendungen und Skripts](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
+ Um den Workflow zu testen, müssen Sie ihn manuell starten. Weitere Informationen finden Sie im Abschnitt "Debuggen von Workflows" in [Debuggen von SharePoint-Lösungen](../sharepoint/debugging-sharepoint-solutions.md). Weitere Informationen zum Debuggen von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Webanwendungen finden Sie unter [Debug-Webanwendungen und Skript](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
-## <a name="deploy-a-sharepoint-workflow-template"></a>Bereitstellen einer SharePoint-Workflowvorlage
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Bereitstellen von SharePoint-Workflow-Projekte wie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Weitere Informationen finden Sie unter [Pakets und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
+## <a name="deploy-a-sharepoint-workflow-template"></a>Bereitstellen einer SharePoint-Workflow Vorlage
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflow Projekte werden genau wie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte bereitgestellt. Weitere Informationen finden Sie unter [packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
 
-## <a name="import-globally-reusable-workflows"></a>Global wiederverwendbare Workflows importieren
- Zusätzlich zur Erstellung standortspezifischen wiederverwendbaren Workflows, SharePoint Designer ermöglicht Ihnen die Erstellung *Global wiederverwendbare Workflows*, welche sind Workflows, die von jedem SharePoint-Website verwendet werden können. Das Projekt "Wiederverwendbaren Workflow importieren" in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] derzeit nicht global wiederverwendbare Workflows importieren. Allerdings können entweder mit SharePoint Designer können Sie um global wiederverwendbaren Workflow in einer wiederverwendbaren Workflow zu konvertieren oder importieren den Workflow als eine nicht konvertierte deklarativen Workflows. Weitere Informationen finden Sie unter [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).
+## <a name="import-globally-reusable-workflows"></a>Importieren Global wiederverwendbarer Workflows
+ Mit SharePoint Designer können Sie nicht nur Site spezifische, wiederverwendbare Workflows erstellen, sondern auch *Global wiederverwendbare Workflows*erstellen, bei denen es sich um Workflows handelt, die von jeder SharePoint-Website verwendet werden können. Das Projekt "wiederverwendbares Workflow importieren" in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] importiert derzeit keine Global wiederverwendbaren Workflows. Sie können jedoch entweder SharePoint Designer verwenden, um einen Global wiederverwendbaren Workflow in einen wiederverwendbaren Workflow zu konvertieren, oder den Workflow als nicht konvertierten deklarativen Workflow importieren. Weitere Informationen finden Sie unter [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Lösung](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Führt Sie schrittweise durch das Erstellen und Debuggen eines einfachen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflow.|
-|[Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Führt Sie Schritt für Schritt erstellen Sie eine voll funktionsfähige [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflows mit Zuordnungs-und Initiierungsformularen nicht abgeschlossen.|
-|[Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem workflow](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Zu diesem Thema erstellt [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) durch Hinzufügen einer zusätzlichen *aspx* Seite "Anwendung", die in den Workflow eingegebene Daten meldet.|
-|[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Veranschaulicht, wie zwei wesentliche Aufgaben zu erledigen: Erstellen eines Workflows auf, und erstellen Sie eine benutzerdefinierte Workflowaktivität.|
-|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Veranschaulicht das Importieren von wiederverwendbaren deklarativen Workflows, die in SharePoint Designer 2010 in erstellt eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.|
+|[Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow Lösung](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Führt Sie Schritt für Schritt durch das Erstellen und Debuggen eines einfachen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflows.|
+|[Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Führt Sie Schritt für Schritt durch das Erstellen eines voll funktionsfähigen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflows, der mit Zuordnungs-und Initiierungs Formularen vollständig ausgeführt wird.|
+|[Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Baut auf dem Thema Exemplarische Vorgehensweise [: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) durch Hinzufügen einer zusätzlichen *aspx* -Anwendungsseite auf, mit der die in den Workflow eingegebenen Daten berichtet werden.|
+|[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Site Workflow-Aktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Veranschaulicht, wie zwei Hauptaufgaben ausgeführt werden: Erstellen eines Workflows auf Website Ebene und Erstellen einer benutzerdefinierten Workflow Aktivität.|
+|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Veranschaulicht, wie wiederverwendbare deklarative Workflows importiert werden, die in SharePoint Designer 2010 erstellt wurden, in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Erstellen von Anwendungs Seiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)

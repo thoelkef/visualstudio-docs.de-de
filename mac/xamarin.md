@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211473"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714483"
 ---
 # <a name="xamarin-mobile-app-development"></a>Entwicklung mobiler Apps mit Xamarin
 
@@ -22,7 +22,7 @@ XAML Hot Reload für Xamarin.Forms ist ab Version 8.3 in Visual Studio für Mac
 
 Sie können XAML Hot Reload aktivieren, indem Sie das Kontrollkästchen **Neuladen von XAML im laufenden Betrieb aktivieren** unter **Visual Studio > Einstellungen > Projekte > Xamarin Hot Reload** aktivieren.
 
-Weitere Informationen über Hot Reload finden Sie in der Dokumentation zu [XAML Hot Reload für Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload).
+Weitere Informationen über Hot Reload finden Sie in der Dokumentation zu [XAML Hot Reload für Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload).
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ Der iOS Designer ist vollständig in Visual Studio für Mac integriert und ermö
 
 ![iOS Storyboard-Designer](media/intro-image30.png)
 
-Weitere Informationen zur Verwendung des iOS-Designers finden Sie in den Anleitungen zum [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Weitere Informationen zur Verwendung des iOS-Designers finden Sie in den Anleitungen zum [Designer](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 

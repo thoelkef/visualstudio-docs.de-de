@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831868"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986215"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 
@@ -25,7 +25,7 @@ ms.locfileid: "71831868"
 In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable „Lesen-Auswerten-Ausgeben“-Schleife (REPL), die den üblichen „Bearbeiten-Erstellen-Debuggen“-Zyklus erheblich verkürzt. Das **interaktive** Fenster bietet alle Funktionen, die auch die REPL für die Python-Befehlszeile bietet. Es erleichtert auch das Austauschen von Code durch Quelldateien im Visual Studio-Editor, was über die Befehlszeile aufwändig wäre.
 
 > [!NOTE]
-> Bei Problemen mit REPL stellen Sie sicher, dass die Pakete `ipython` und `ipykernel` installiert sind, und Hilfe bei der Installation von Paketen finden Sie auf der Registerkarte [Python-Umgebungspakete](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Bei Problemen mit REPL stellen Sie sicher, dass die Pakete `ipython` und `ipykernel` installiert sind, und Hilfe bei der Installation von Paketen finden Sie auf der Registerkarte [Python-Umgebungspakete](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
 1. Öffnen Sie das **interaktive** Fenster, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Python-Umgebung des Projekts klicken (z.B. **Python 3.6 (32-Bit)** , wie zuvor in einer Grafik gezeigt) und **Interaktives Fenster öffnen** auswählen. Alternativ können Sie im Hauptmenü von Visual Studio **Ansicht** > **Weitere Fenster** > **Interaktive Python-Fenster** auswählen.
 
@@ -54,7 +54,7 @@ In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Wählen Sie in der *.py*-Datei nur die Anweisungen `import`, `from` und `make_dot_string` aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **An Interactive senden** aus (oder drücken Sie **STRG**+**EINGABE**). Das Codefragment wird direkt in das **interaktive** Fenster eingefügt und ausgeführt. Wählen Sie jetzt die `make_dot_string`-Funktion aus, und führen Sie den gleichen Befehl erneut aus, um jenes Codefragment erneut auszuführen. Da der Code eine Funktion definiert, können Sie diese Funktion schnell testen, indem Sie sie mehrmals aufrufen:
+1. Wählen Sie in der *.py*-Datei nur die Anweisungen `import`, `from` und `make_dot_string` aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **An Interactive senden** aus (oder drücken Sie **STRG**+**EINGABE**). Das Codefragment wird direkt in das **interaktive** Fenster eingefügt und ausgeführt. Da der Code eine Funktion definiert hat, können Sie diese Funktion schnell testen, indem Sie sie mehrmals aufrufen:
 
     ![Code an das interaktive Fenster senden und diesen testen](media/vs-getting-started-python-14-interactive4.png)
 

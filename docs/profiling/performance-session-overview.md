@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798400"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189343"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
 In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entwickler, die wenig Erfahrung mit Leistungsarbeit haben, werden lernen, wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools ihnen helfen, schnell produktiv zu werden und die Leistung ihres Codes zu steigern. Entwickler, die bereits Erfahrung mit der Profilerstellung haben, erhalten eine Übersicht über besondere Features und Vorgänge der Profilerstellungstools.
@@ -75,4 +75,4 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersichten](../profiling/overviews-performance-tools.md)
-- [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](beginners-guide-to-cpu-sampling.md)

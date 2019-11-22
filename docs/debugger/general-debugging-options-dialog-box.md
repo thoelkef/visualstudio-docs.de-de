@@ -1,6 +1,6 @@
 ---
 title: Allgemein, Debuggen, Dialog Feld "Optionen" | Microsoft-Dokumentation
-ms.date: 11/09/2018
+ms.date: 11/12/2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 528fa04b081937af69e647b01911ed00c1ec40c9
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72569067"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072716"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Debugoptionen
 
@@ -137,6 +137,12 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 - **Lauf Zeit Tools in Anwendung anzeigen**: zeigt die **visuellen Live** Strukturbefehle auf einer Symbolleiste im Hauptfenster der XAML-Anwendung an, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.
 
 - **XAML-Hot-Neuladen aktivieren**: ermöglicht Ihnen die Verwendung der XAML-Funktion "Hot Reload" mit XAML-Code, wenn Ihre APP ausgeführt wird. (Diese Funktion wurde zuvor als "XAML-Bearbeitung und Fortfahren" bezeichnet.)
+
+::: moniker range=">= vs-2019" 
+- " **Nur mein XAML" aktivieren**: ab Visual Studio 2019 Version 16,4 wird in der **visuellen** echt Zeitstruktur standardmäßig nur XAML angezeigt, das als Benutzercode klassifiziert ist. Wenn Sie diese Option deaktivieren, wird der gesamte generierte XAML-Code im Tool angezeigt.
+
+- **Auswahlmodus deaktivieren, wenn ein Element ausgewählt wird** Ab Visual Studio 2019 Version 16,4 schaltet die in-App-Symbolleisten-Elementauswahl Schaltfläche (**Auswahl aktivieren**) aus, wenn ein Element ausgewählt wird. Wenn Sie diese Option deaktivieren, bleibt die Elementauswahl aktiviert, bis Sie erneut auf die Symbolleisten Schaltfläche in der APP klicken.
+::: moniker-end
 
 **Diagnosetools während des Debuggens aktivieren**: das **Diagnosetools** Fenster wird angezeigt, während Sie Debuggen.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550999"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300582"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Erste Schritte mit PTVS: Erstellen einer Website in Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Beginnen Sie ganz schnell und einfach damit, eine Python-Website in Azure zu ers
   
  Sie können diese Anweisungen in einem sehr kurzen [YouTube-Video](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) ansehen.  
   
- Starten Sie mit dem Dialogfeld „Neues Projekt...“, und wählen Sie aus den Python-Projekten das Bottle Web Project aus.  Diese [Bottle](http://bottlepy.org/docs/dev/index.html)-Vorlage ist eine Startwebsite, die auf dem [Bootstrap-Framework](http://getbootstrap.com/) basiert.  Wenn Sie das Projekt erstellen, fordert Visual Studio Sie auf, Abhängigkeiten (in diesem Fall "Bottle") in einer virtuellen Umgebung installieren.  Da Sie die Bereitstellung für eine Azure-Website durchführen, müssen Sie die Abhängigkeiten in einer virtuellen Umgebung hinzufügen, um den ordnungsgemäßen Betrieb Ihrer Website zu gewährleisten.  Sie müssen Ihre Umgebung auf Python 2.7 oder 3.4 (32 Bit) basieren.  Nachdem Sie das Projekt erstellt haben, drücken Sie auf F5, um die Website lokal auszuführen.  
+ Starten Sie mit dem Dialogfeld „Neues Projekt...“, und wählen Sie aus den Python-Projekten das Bottle Web Project aus.  Diese [Bottle](http://bottlepy.org/docs/dev/index.html)-Vorlage ist eine Startwebsite, die auf dem [Bootstrap-Framework](https://getbootstrap.com/) basiert.  Wenn Sie das Projekt erstellen, fordert Visual Studio Sie auf, Abhängigkeiten (in diesem Fall "Bottle") in einer virtuellen Umgebung installieren.  Da Sie die Bereitstellung für eine Azure-Website durchführen, müssen Sie die Abhängigkeiten in einer virtuellen Umgebung hinzufügen, um den ordnungsgemäßen Betrieb Ihrer Website zu gewährleisten.  Sie müssen Ihre Umgebung auf Python 2.7 oder 3.4 (32 Bit) basieren.  Nachdem Sie das Projekt erstellt haben, drücken Sie auf F5, um die Website lokal auszuführen.  
   
  Es ist ganz einfach, die Website in Azure auszuprobieren.  Wenn Sie kein Azure-Abonnement besitzen, können Sie [try.azurewebsites.net](https://trywebsites.azurewebsites.net/) verwenden.  Diese Website bietet eine einfache Möglichkeit, Azure-Websites eine Stunde lang auszuprobieren. Die Anmeldung kann einfach mit den Anmeldedaten für ein soziales Netzwerk erfolgen.  Sie benötigen keine Kreditkarte.  Wählen Sie in der Dropdownliste "Sprache ändern" die leere Websitevorlage aus, und wählen Sie "Erstellen".  Wählen Sie unter "Arbeiten mit der Webanwendung" die Option "Veröffentlichungsprofil herunterladen", und speichern Sie die Datei zur Verwendung mit Visual Studio.  Sie können die Bereitstellung auch über Git aus einem anderen Betriebssystem durchführen.  
   

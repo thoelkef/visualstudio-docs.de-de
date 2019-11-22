@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745321"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910323"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern (High Performance Computing)
 
@@ -34,7 +34,7 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
 
 Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgendes ausführen:
 
-- Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie Visual Studio. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.
+- Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie Visual Studio. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=4812) installieren.
 
 - Installieren Sie das .NET Framework 4 und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für .NET Framework und den eigenständigen Profiler stehen auf den Visual Studio-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von .NET Framework und vor der Installation der Profilerstellungstools neu starten.
 
@@ -124,7 +124,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften
 
-|Eigenschaft|Beschreibung|
+|Eigenschaft|BESCHREIBUNG|
 |--------------|-----------------|
 |**Hauptknoten**|Gibt den Computer an, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält.|
 |**Anzahl der Prozesse**|Gibt die Anzahl der Instanzen der Anwendung an, die in der Anwendung mit der Profilerstellung ausgeführt werden.|
@@ -135,7 +135,7 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften
 
-| Eigenschaft | Beschreibung |
+| Eigenschaft | BESCHREIBUNG |
 |---------------------------------------| - |
 | **Projektname** | Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung. |
 | **Bereinigen beim Beenden des Profilers** | Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden. |

@@ -16,18 +16,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc954fe372ccd571151ab6ea09e9c1e3db96206a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648774"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924530"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Steuerelemente binden. Zum Erstellen dieser Daten gebundenen Steuerelemente können Sie Elemente aus dem Fenster **Datenquellen** auf die [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] in Visual Studio ziehen. In diesem Thema werden einige der häufigsten Aufgaben, Tools und Klassen beschrieben, mit denen Sie datengebundene [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Anwendungen erstellen können.
 
-Allgemeine Informationen zum Erstellen von Daten gebundenen Steuerelementen in Visual Studio finden Sie unterbinden von Steuer [Elementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Weitere Informationen zur [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Datenbindung finden Sie in der [Übersicht über die Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).
+Allgemeine Informationen zum Erstellen von Daten gebundenen Steuerelementen in Visual Studio finden Sie unterbinden von Steuer [Elementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Weitere Informationen zur [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]-Datenbindung finden Sie in der [Übersicht über die Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Aufgaben beim Binden von WPF-Steuerelementen an Daten
 
@@ -46,7 +46,7 @@ Sie können Elemente im **Datenquellenfenster** nur auf gültige Ablageziele im 
 
 ## <a name="generated-xaml-and-code"></a>Generierte XAML und generierter Code
 
-Wenn Sie ein Element aus dem **Datenquellen** Fenster in den [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], das ein neues Daten gebundenes Steuerelement definiert (oder ein vorhandenes Steuerelement an die Datenquelle bindet). Für einige Datenquellen generiert Visual Studio auch Code in der Code Behind-Datei, die die Datenquelle mit Daten füllt.
+Wenn Sie ein Element aus dem **Datenquellen** Fenster in den [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]ziehen, generiert Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)], das ein neues Daten gebundenes Steuerelement definiert (oder ein vorhandenes Steuerelement an die Datenquelle bindet). Für einige Datenquellen generiert Visual Studio auch Code in der Code Behind-Datei, die die Datenquelle mit Daten füllt.
 
 In der folgenden Tabelle sind die [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] und der Code aufgelistet, die von Visual Studio für die einzelnen Daten **Quellentypen im Datenquellen** Fenster generiert werden.
 

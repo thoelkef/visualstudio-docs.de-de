@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624101"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911715"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
@@ -120,7 +120,7 @@ Standardmäßig wird ein Blob in ein temporäres Verzeichnis heruntergeladen. Um
 
 Klicken Sie zum Hochladen von Blobs auf die Schaltfläche **Blob hochladen**, wenn der Container für die Anzeige in der Blobcontaineransicht geöffnet ist.
 
-Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>So zeigen Sie an Blobs übertragene Protokolle an
 
@@ -155,10 +155,10 @@ Die folgende Abbildung zeigt eine Warteschlange, die zwei Nachrichten enthält:
 
 ![Anzeigen einer Warteschlange](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Weitere Informationen zu Speicherdienstwarteschlangen finden Sie unter [Erste Schritte mit Azure Queue Storage mit .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Weitere Informationen zum Webdienst für Speicherdienstwarteschlangen finden Sie unter [Konzepte des Warteschlangendiensts](http://go.microsoft.com/fwlink/?LinkId=264788). Informationen dazu, wie Nachrichten mithilfe von Visual Studio an eine Speicherdienstwarteschlange gesendet werden, finden Sie unter [Senden von Nachrichten an eine Speicherdienstwarteschlange](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Weitere Informationen zu Speicherdienstwarteschlangen finden Sie unter [Erste Schritte mit Azure Queue Storage mit .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Weitere Informationen zum Webdienst für Speicherdienstwarteschlangen finden Sie unter [Konzepte des Warteschlangendiensts](/rest/api/storageservices/Queue-Service-Concepts). Informationen dazu, wie Nachrichten mithilfe von Visual Studio an eine Speicherdienstwarteschlange gesendet werden, finden Sie unter [Senden von Nachrichten an eine Speicherdienstwarteschlange](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Speicherdienstwarteschlangen unterscheiden sich von Azure Service Bus-Warteschlangen. Weitere Informationen zu Service Bus-Warteschlangen finden Sie unter [Service Bus-Warteschlangen, -Themen und -Abonnements](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Speicherdienstwarteschlangen unterscheiden sich von Azure Service Bus-Warteschlangen. Weitere Informationen zu Service Bus-Warteschlangen finden Sie unter [Service Bus-Warteschlangen, -Themen und -Abonnements](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Arbeiten mit Tabellenressourcen
 
@@ -183,7 +183,7 @@ Die Tabelle ist in Entitäten (Anzeige in Zeilen) und Eigenschaften (Anzeige in 
 
 Öffnen Sie im Tabellen-Designer das Kontextmenü für eine Entität (eine einzelne Zeile) oder eine Eigenschaft (eine einzelne Zelle), und wählen Sie dann **Bearbeiten** aus.
 
-![Hinzufügen oder Bearbeiten einer Tabellenentität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Hinzufügen oder Bearbeiten einer Tabellen Entität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Entitäten in einer einzelnen Tabelle müssen nicht denselben Eigenschaftensatz (Spalten) aufweisen. Beachten Sie beim Anzeigen und Bearbeiten von Tabellendaten folgende Einschränkungen:
 
@@ -225,7 +225,7 @@ Die folgende Abbildung zeigt ein Beispiel für eine gültige Filterzeichenfolge:
 
 ## <a name="refresh-storage-data"></a>Aktualisieren von Speicherdaten
 
-Wenn der Server-Explorer eine Verbindung mit einem Speicherkonto herstellt oder Daten daraus abruft, kann es bis zu einer Minute dauern, bis der Vorgang abgeschlossen ist. Wenn der Server-Explorer keine Verbindung herstellen kann, führt dies möglicherweise zu einer Zeitüberschreitung des Vorgangs. Während Daten abgerufen werden, können Sie weiterhin in anderen Bereichen von Visual Studio arbeiten. Wenn der Vorgang zu lange dauert, klicken Sie zum Abbrechen in der Symbolleiste des Server-Explorers auf die Schaltfläche **Aktualisieren beenden**.
+Wenn der Server-Explorer eine Verbindung mit einem Speicherkonto herstellt oder Daten daraus abruft, kann es bis zu einer Minute dauern, bis der Vorgang abgeschlossen ist. Wenn Server-Explorer keine Verbindung herstellen kann, tritt möglicherweise ein Timeout des Vorgangs auf. Während Daten abgerufen werden, können Sie weiterhin in anderen Bereichen von Visual Studio arbeiten. Wenn der Vorgang zu lange dauert, klicken Sie zum Abbrechen in der Symbolleiste des Server-Explorers auf die Schaltfläche **Aktualisieren beenden**.
 
 ### <a name="to-refresh-blob-container-data"></a>So aktualisieren Sie Blobcontainerdaten
 

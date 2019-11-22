@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302f463d93776d17be0251e6194375c15adc19
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a62fd7a8ab0673d6a6020fb7d73f04488ff23485
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718766"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188857"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Syntaxfarben in benutzerdefinierten Editoren
 Visual Studio-Umgebungs-SDK-Editoren, einschließlich des Kern-Editors, verwenden Sprachdienste, um bestimmte syntaktische Elemente zu identifizieren und diese mit den angegebenen Farben für eine bestimmte Dokument Ansicht anzuzeigen.
@@ -27,7 +27,7 @@ Visual Studio-Umgebungs-SDK-Editoren, einschließlich des Kern-Editors, verwende
 
 2. Rufen Sie eine Schnittstelle zu einem bestimmten Sprachdienst ab, indem Sie den Dienstanbieter des VSPackages mithilfe der identifizierenden GUID des sprach Dienstanbieters Abfragen.
 
-3. Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>-Methode des Objekts auf, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> implementiert. Diese Methode verknüpft den Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>-Implementierung, die das VSPackage verwendet, um den Text zu verwalten, der farbig markiert werden soll.
+3. Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>-Methode des Objekts auf, das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>implementiert. Diese Methode verknüpft den Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>-Implementierung, die das VSPackage verwendet, um den Text zu verwalten, der farbig markiert werden soll.
 
 ## <a name="core-editor-usage-of-a-language-services-colorizer"></a>Basis-Editor-Verwendung der Farbgebung eines sprach Dienstanbieter
  Wenn ein Sprachdienst mit einer Farbauswahl von einer Instanz des Kern-Editors abgerufen wird, werden die Text-und Renderingvorgänge durch die Farbgebung eines sprach Dienstanbieter automatisch durchgeführt, ohne dass ein weiterer Eingriff erforderlich ist.
@@ -52,7 +52,7 @@ Visual Studio-Umgebungs-SDK-Editoren, einschließlich des Kern-Editors, verwende
 3. Verwenden Sie die von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> zurückgegebenen farbliche Informationen, um den Text neu zu zeichnen und anzuzeigen.
 
 > [!NOTE]
-> Zusätzlich zur Verwendung der Farbgebung eines sprach Dienstanbieter kann ein VSPackage auswählen, dass der Text Farb Mechanismus für das allgemeine Visual Studio-Umgebungs-SDK verwendet werden soll. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](../extensibility/using-fonts-and-colors.md).
+> Zusätzlich zur Verwendung der Farbgebung eines sprach Dienstanbieter kann ein VSPackage auswählen, dass der Text Farb Mechanismus für das allgemeine Visual Studio-Umgebungs-SDK verwendet werden soll. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](/visualstudio/extensibility/using-fonts-and-colors?view=vs-2015).
 
 ## <a name="see-also"></a>Siehe auch
 

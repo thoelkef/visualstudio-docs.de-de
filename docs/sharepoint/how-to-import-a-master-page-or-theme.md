@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Importieren einer Masterseite oder eines Designs | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Importieren einer Master Seite oder eines Designs | Microsoft-Dokumentation'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,48 +13,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c5078d31e2dcb7f11e5c19e0f8cb228e2f75d50
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427400"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984200"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>Vorgehensweise: Importieren einer Masterseite oder eines Designs
-  Sie können Seiten auf Ihrer SharePoint-Website ein einheitliches Erscheinungsbild verleihen durch Erstellen und Verwenden von Masterseiten und Designs. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht für diese Elemente stellen Vorlagen bereit, aber Sie können sie in SharePoint Designer erstellen und importieren Sie sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095) auf der Microsoft-Website.
+# <a name="how-to-import-a-master-page-or-theme"></a>Vorgehensweise: Importieren einer Master Seite oder eines Designs
+  Sie können Seiten auf Ihrer SharePoint-Website ein konsistentes Erscheinungsbild bereit halten, indem Sie Masterseiten und Designs erstellen und verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet keine Vorlagen für diese Elemente, Sie können Sie jedoch in SharePoint Designer erstellen und dann in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]importieren. Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) auf der Microsoft-Website.
 
-### <a name="to-import-a-master-page-or-theme"></a>Zum Importieren einer Masterseite oder eines Designs
+### <a name="to-import-a-master-page-or-theme"></a>So importieren Sie eine Master Seite oder ein Design
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellen oder öffnen Sie ein SharePoint-Projekt.
+1. Erstellen oder öffnen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ein SharePoint-Projekt.
 
-     Weitere Informationen zum Erstellen eines SharePoint-Projekts, finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
+     Weitere Informationen zum Erstellen eines SharePoint-Projekts finden Sie unter [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
-3. In der **neues Element hinzufügen** Dialogfeld erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
+3. Erweitern Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
-4. Wählen Sie in der Liste der SharePoint-Vorlagen, die **Modul** Vorlage, und klicken Sie dann einen Namen für das Modul angeben.
+4. Wählen Sie in der Liste der SharePoint-Vorlagen die **Modul** Vorlage aus, und geben Sie dann einen Namen für das Modul an.
 
-     Ein Modul enthält Dateien (z. B. "Masterseite" oder "Dateien") für die Bereitstellung an einem Speicherort, den Sie in SharePoint angeben.
+     Ein Modul enthält Dateien (z. b. Masterseiten-oder Designdateien) für die Bereitstellung an einem Speicherort, den Sie in SharePoint angeben.
 
-5. Löschen Sie die Standard-Datei, mit dem Namen des Moduls *"Sample.txt"*.
+5. Löschen Sie im-Modul die Standarddatei mit dem Namen " *Sample. txt*".
 
-6. Wählen Sie den Knoten "Module" aus.
+6. Wählen Sie den Modul Knoten aus.
 
-7. Wählen Sie auf der Menüleiste **Projekt** > **vorhandenes Element hinzufügen**, und wählen Sie dann auf die Seite oder eines Designs Masterdatei.
+7. Wählen Sie in der Menüleiste **Projekt** > **Vorhandenes Element hinzufügen**aus, und wählen Sie dann die Master Seite oder Designdatei aus.
 
-     Masterseitendateien haben eine Master-Erweiterung und Designdateien haben die Erweiterung thmx.
+     Masterseiten Dateien haben die Erweiterung ". Master", und Designdateien haben die Erweiterung ". THMX".
 
-8. Wenn Sie eine Masterseite hinzugefügt haben, ändern die **Bereitstellungskonfliktlösung** auf **automatische** in die Eigenschaften des Moduls.
+8. Wenn Sie eine Master Seite hinzugefügt haben, ändern Sie die Einstellung für die **Bereitstellungs Konfliktlösung** in den Eigenschaften des Moduls in **automatisch** .
 
     > [!NOTE]
-    > Fehler können auftreten, wenn der Name der Masterseite ist identisch mit den Namen einer vorhandenen master-Seite, die als Standardgestaltungsvorlage oder benutzerdefinierten Gestaltungsvorlage markiert ist. Informationen zum Beheben dieses Problems finden Sie unter [Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Fehler können auftreten, wenn der Name der Master Seite mit dem Namen einer vorhandenen Master Seite identisch ist, die entweder als Standard Master Seite oder als benutzerdefinierte Master Seite gekennzeichnet ist. Informationen dazu, wie Sie dieses Problem beheben können, finden Sie unter Exemplarische Vorgehensweise [: Importieren einer benutzerdefinierten Master Seite und Website Seite mit einem Image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
-9. Öffnen Sie im Modul *"Elements.xml"*.
+9. Öffnen Sie im-Modul die Datei " *Elements. XML*".
 
-     Müssen Sie aktualisieren die *"Elements.xml"* Datei auf der Masterseite oder Design, das Sie hinzugefügt haben.
+     Sie müssen die Datei " *Elements. XML* " aktualisieren, um auf die hinzugefügte Master Seite oder das hinzugefügte Design zu verweisen
 
-10. Ersetzen Sie für eine Masterseite das vorhandene Modulmarkup durch das folgende Markup.
+10. Ersetzen Sie für eine Master Seite das vorhandene Modul Markup durch das folgende Markup.
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/masterpage">
@@ -63,7 +63,7 @@ ms.locfileid: "63427400"
     </Module>
     ```
 
-     Ersetzen Sie ein Design das vorhandene Modulmarkup durch das folgende Markup.
+     Ersetzen Sie für ein Design das vorhandene Modul Markup durch das folgende Markup.
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/theme"
@@ -72,25 +72,25 @@ ms.locfileid: "63427400"
     </Module>
     ```
 
-     Achten Sie darauf, dass Sie die Platzhalterwerte durch die tatsächlichen Namen des Moduls und die Masterseite oder Design zu ersetzen.
+     Stellen Sie sicher, dass Sie die Platzhalter Werte durch die tatsächlichen Namen des Moduls und die Master Seite oder das Design ersetzen.
 
-     Das Attribut `Type="GhostableInLibrary"` gibt an, dass das Element in der Inhaltsdatenbank hinzugefügt wird und die `Url` Attribut des Moduls wird angegeben, wo die Datei in der SharePoint-Inhaltsdatenbank gespeichert.
+     Das-Attribut `Type="GhostableInLibrary"` gibt an, dass das Element der Inhalts Datenbank hinzugefügt wird, und das `Url`-Attribut des Moduls gibt an, wo die Datei in der SharePoint-Inhalts Datenbank gespeichert werden soll.
 
-11. So ändern Sie den Bereitstellungsumfang für eine Masterseite in **Projektmappen-Explorer**, öffnen Sie die Featuredatei in der Funktions-Designer, und wählen Sie dann einen neuen Bereich der Bereitstellung aus dem **Bereich** Liste.
+11. Um den Bereitstellungs Bereich für eine Master Seite zu ändern, öffnen Sie in **Projektmappen-Explorer**die Featuredatei im Funktions-Designer, und wählen Sie dann einen neuen Bereitstellungs Bereich aus der Liste **Bereich** aus.
 
-     Der Wert **Web** bedeutet, die die Masterseite nur für die Website angewendet werden, die derzeit im Projekt angegeben ist. Der Wert **Site** bedeutet, dass die Masterseite auf der aktuellen Websitesammlung anwendet, umfasst alle Unterwebsites und das Stamm-Web. Die anderen Werte gelten nicht.
+     Der Wert **Web** bedeutet, dass die Master Seite nur für die Website gilt, die derzeit im Projekt angegeben ist. Der Wert **Site** bedeutet, dass die Master Seite auf die aktuelle Website Sammlung angewendet wird, die alle untergeordneten Sites und das Stammweb enthält. Die anderen Werte gelten nicht.
 
     > [!NOTE]
-    > Da nur auf Ebene der Websitesammlung Designs angewendet werden, es wird empfohlen, dass Sie nicht im Rahmen eines Designs auf irgendetwas außer festlegen **Site**. Fehler können auftreten, wenn ein Design in einem untergeordneten Standort verwendet wird.
+    > Da Designs nur auf die Website Sammlungs Ebene angewendet werden, wird empfohlen, dass Sie den Bereich eines Designs nicht auf " **Site**" festlegen. Fehler können auftreten, wenn ein Design in einer unter Website verwendet wird.
 
-12. Wählen Sie auf der Menüleiste **erstellen** > **Projektmappe bereitstellen**.
+12. Wählen Sie in der Menüleiste **Erstellen** > **Projekt**Mappe bereitstellen aus.
 
-13. Um zu überprüfen, ob die Dateien richtig bereitgestellt wurden, öffnen Sie die SharePoint-Website, wählen Sie die **Websiteaktionen** im Menü Wählen Sie die **Standorteinstellungen** Befehl aus, und wählen Sie dann entweder die **Masterseiten**  Link oder **Designs** Link.
+13. Um zu überprüfen, ob die Dateien ordnungsgemäß bereitgestellt wurden, öffnen Sie die SharePoint-Website, wählen Sie das Menü **Website Aktionen** aus, wählen Sie den Befehl **Site Einstellungen** aus, und wählen Sie dann entweder den Link **Master Seiten** **oder den Link** Designs.
 
-     Die Liste von Masterseiten oder Designs wird angezeigt und enthält die Masterseite oder das Design, das Sie importiert haben.
+     Die Liste der Masterseiten oder Designs wird angezeigt und enthält entweder die Master Seite oder das Design, das Sie importiert haben.
 
 ## <a name="see-also"></a>Siehe auch
-- [Masterseiten](http://go.microsoft.com/fwlink/?LinkId=184955)
+- [Masterseiten](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Erstellen von Seiten für SharePoint](../sharepoint/creating-pages-for-sharepoint.md)
-- [Verwenden von Modulen zum Einfügen von Dateien in der Projektmappe](../sharepoint/using-modules-to-include-files-in-the-solution.md)
+- [Verwenden von Modulen zum Einschließen von Dateien in die Projekt Mappe](../sharepoint/using-modules-to-include-files-in-the-solution.md)

@@ -1,31 +1,31 @@
 ---
-title: Arbeiten mit Visual C++-Code (Klassen-Designer)
+title: Arbeiten mit C++-Code (Klassen-Designer)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 228785c218b1c55a1af817761821acbe11a51c8d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975007"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188963"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>Arbeiten mit Visual C++-Code im Klassen-Designer
+# <a name="work-with-c-code-in-class-designer"></a>Arbeiten mit C++-Code im Klassen-Designer
 
 Der **Klassen-Designer** enthält eine visuelle Entwurfsoberfläche, ein sogenanntes *Klassendiagramm*, die die Codeelemente in Ihrem Projekt visuell darstellt. Sie können mit Klassendiagrammen Klassen und andere Typen in einem Projekt entwerfen und visualisieren.
 
@@ -46,7 +46,7 @@ Der **Klassen-Designer** unterstützt folgende C++-Codeelemente:
 - TypeDef
 
 > [!NOTE]
-> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML Class Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML Class Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Behandlung von Anzeigeproblemen und Problemen bei der Typauflösung
 
@@ -56,7 +56,7 @@ Der **Klassen-Designer** merkt sich den Speicherort der Quelldateien nicht. Wenn
 
 ### <a name="update-and-performance-issues"></a>Update- und Leistungsprobleme
 
-Bei Visual C++-Projekten kann es zwischen 30 und 60 Sekunden dauern, bis eine Änderung in der Quelldatei im Klassendiagramm angezeigt wird. Diese Verzögerung kann auch dazu führen, dass der **Klassen-Designer** den Fehler **In der Auswahl wurden keine Typen gefunden** auslöst. Wenn Sie einen solchen Fehler erhalten, klicken Sie in der Fehlermeldung auf **Abbrechen**, und warten Sie darauf, dass das Codeelement in der **Klassenansicht** angezeigt wird. Danach sollte der **Klassen-Designer** den Typ anzeigen können.
+Bei C++-Projekten kann es zwischen 30 und 60 Sekunden dauern, bis eine Änderung in der Quelldatei im Klassendiagramm angezeigt wird. Diese Verzögerung kann auch dazu führen, dass der **Klassen-Designer** den Fehler **In der Auswahl wurden keine Typen gefunden** auslöst. Wenn Sie einen solchen Fehler erhalten, klicken Sie in der Fehlermeldung auf **Abbrechen**, und warten Sie darauf, dass das Codeelement in der **Klassenansicht** angezeigt wird. Danach sollte der **Klassen-Designer** den Typ anzeigen können.
 
 Wenn ein Klassendiagramm nicht mit den Änderungen aktualisiert wird, die Sie im Code vorgenommen haben, müssen Sie möglicherweise das Diagramm schließen und erneut öffnen.
 
@@ -84,15 +84,15 @@ Der Fehler, der am ehesten für eine Typauflösung angezeigt wird, ist **Für mi
 
 ### <a name="troubleshoot-other-error-messages"></a>Problembehandlung bei anderen Fehlermeldungen
 
-Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Weitere Informationen finden Sie im [Forum des Visual Studio-Klassen-Designers](http://go.microsoft.com/fwlink/?linkid=160754).
+Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Weitere Informationen finden Sie im [Forum des Visual Studio-Klassen-Designers](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner).
 
 ## <a name="limitations-for-c-code-elements"></a>Einschränkungen für C++-Codeelemente
 
-- Wenn ein Visual C++-Projekt geladen ist, befindet sich der **Klassen-Designer** in einem schreibgeschützten Modus. Sie können das Klassendiagramm ändern, aber keine Änderungen am Klassendiagramm im Quellcode speichern.
+- Wenn ein C++-Projekt geladen ist, befindet sich der **Klassen-Designer** in einem schreibgeschützten Modus. Sie können das Klassendiagramm ändern, aber keine Änderungen am Klassendiagramm im Quellcode speichern.
 
-- Der **Klassen-Designer** unterstützt nur die native C++-Semantik. Bei Visual C++-Projekten, die in verwalteten Code kompiliert werden, visualisiert der **Klassen-Designer** nur Codeelemente, bei denen es sich um native Typen handelt. Daher können Sie zwar ein Klassendiagramm zu einem Projekt hinzufügen, aber der **Klassen-Designer** visualisiert keine Elemente, in denen die `IsManaged`-Eigenschaft auf `true` festgelegt ist (d.h. Werttypen und Referenztypen).
+- Der **Klassen-Designer** unterstützt nur die native C++-Semantik. Bei C++-Projekten, die in verwalteten Code kompiliert werden, visualisiert der **Klassen-Designer** nur Codeelemente, bei denen es sich um native Typen handelt. Daher können Sie zwar ein Klassendiagramm zu einem Projekt hinzufügen, aber der **Klassen-Designer** visualisiert keine Elemente, in denen die `IsManaged`-Eigenschaft auf `true` festgelegt ist (d.h. Werttypen und Referenztypen).
 
-- Bei Visual C++-Projekten liest der **Klassen-Designer** nur die Definition des Typs. Nehmen wir beispielsweise an, dass Sie einen Typ in einer Headerdatei (. h) und dessen Member in einer Implementierungsdatei (.cpp) definieren. Wenn Sie „Klassendiagramm anzeigen“ für die Implementierungsdatei (.cpp) aufrufen, zeigt der **Klassen-Designer** nichts an. Ein weiteres Beispiel: Wenn Sie „Klassendiagramm anzeigen“ für eine CPP-Datei aufrufen, die eine `#include`-Anweisung zum Einschließen anderer Dateien verwendet, aber keine eigentlichen Klassendefinitionen enthält, zeigt der **Klassen-Designer** erneut nichts an.
+- Bei C++-Projekten liest der **Klassen-Designer** nur die Definition des Typs. Nehmen wir beispielsweise an, dass Sie einen Typ in einer Headerdatei (. h) und dessen Member in einer Implementierungsdatei (.cpp) definieren. Wenn Sie „Klassendiagramm anzeigen“ für die Implementierungsdatei (.cpp) aufrufen, zeigt der **Klassen-Designer** nichts an. Ein weiteres Beispiel: Wenn Sie „Klassendiagramm anzeigen“ für eine CPP-Datei aufrufen, die eine `#include`-Anweisung zum Einschließen anderer Dateien verwendet, aber keine eigentlichen Klassendefinitionen enthält, zeigt der **Klassen-Designer** erneut nichts an.
 
 - IDL-Dateien (.idl), die COM-Schnittstellen und Typbibliotheken definieren, werden in Diagrammen nicht angezeigt, sofern sie nicht in systemeigenen C++-Code kompiliert werden.
 
@@ -112,7 +112,7 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
 - [Entwerfen und Anzeigen von Klassen und Typen](designing-and-viewing-classes-and-types.md)
 - [Zusätzliche Informationen zu Klassen-Designer-Fehlern](additional-information-about-errors.md)
-- [Visual C++-Klassen im Klassen-Designer](visual-cpp-classes.md)
-- [Visual C++-Strukturen im Klassen-Designer](visual-cpp-structures.md)
-- [Visual C++-Enumerationen im Klassen-Designer](visual-cpp-enumerations.md)
-- [Visual C++-Typedefs im Klassen-Designer](visual-cpp-typedefs.md)
+- [C++Klassen in Klassen-Designer](visual-cpp-classes.md)
+- [C++-Strukturen im Klassen-Designer](visual-cpp-structures.md)
+- [C++-Enumerationen im Klassen-Designer](visual-cpp-enumerations.md)
+- [C++-TypeDefs im Klassen-Designer](visual-cpp-typedefs.md)

@@ -3,22 +3,25 @@ title: EMS-Vorteil | Microsoft-Dokumentation
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/05/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über den in Ihrem Visual Studio-Abonnement enthaltenen Enterprise Mobility + Security-Vorteil.
-ms.openlocfilehash: 93b613d06c6cd8ebcb3b28437677339084a9b720
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787776"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099547"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) in Visual Studio-Abonnements
 
 Jährliche Cloud- und Standardabonnements von Visual Studio Enterprise enthalten Enterprise Mobility + Security (EMS).  Mit EMS, das die Dienste Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics und Microsoft Cloud App Security umfasst, können Sie Ihre Identitäten, Geräte, Apps und Daten sichern und verwalten. 
 
-> [!IMPORTANT]
-> Der EMS-Vorteil (Enterprise Mobility + Security) ist zurzeit nicht für neue Aktivierungen verfügbar, wenn wir wichtige Änderungen an diesem Vorteil vornehmen.  Wenn Sie ihn bereits aktiviert haben, können Sie ihn weiterhin wie gewohnt verwenden.  
+## <a name="who-should-install-ems"></a>Wer sollte EMS installieren?
+Wenn Sie bereits einen Office 365 Developer-Mandanten (E3) besitzen, sollten Sie EMS installieren.  Andernfalls sollten Sie [Microsoft 365](vs-m365.md) installieren. Dort ist neben EMS und Office 365 Developer (E5) unter anderem Folgendes enthalten:
+- Erweiterte Analytics mit Power BI
+- Office 365 Advanced Threat Protection
+- Azure Active Directory zum Entwickeln erweiterter Identitäts- und Zugriffsverwaltungslösungen
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -44,3 +47,8 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Antworten auf Fragen zum technischen Support für EMS-Komponenten erhalten Sie unter [Häufig gestellte Fragen zum Support für EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq).
 - Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Nächste Schritte
+Wenn Sie den Azure DevTest-Einzelguthabenvorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihr Einzelguthaben für Azure DevTest zu erhalten.
+
+Informationen zu weiteren Vorteilen Ihres Abonnements finden Sie unter: Besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

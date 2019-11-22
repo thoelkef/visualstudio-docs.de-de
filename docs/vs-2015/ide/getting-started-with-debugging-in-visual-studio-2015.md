@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08e317555042bbc63707cc6eccd0177e78b6ddcc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645664"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300199"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Erste Schritte beim Debuggen in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Visual Studio 2015 bietet einen leistungsfähigen integrierten Satz von Projekt
 
  ![Visual Studio 2015, bedingter Haltepunkt](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
 
- Weitere Informationen zum Deklarieren der Ausdrücke für das Auswerten bedingter Haltepunkte finden Sie im Channel9-Video [Breakpoint Configuration Experience in Visual Studio 2015 (Oberfläche zum Konfigurieren von Haltepunkten in Visual Studio 2015)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711).
+ Weitere Informationen zum Deklarieren der Ausdrücke für das Auswerten bedingter Haltepunkte finden Sie im Channel9-Video [Breakpoint Configuration Experience in Visual Studio 2015 (Oberfläche zum Konfigurieren von Haltepunkten in Visual Studio 2015)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711).
 
 ### <a name="inspecting-your-code-at-run-time"></a>Überprüfen von Code zur Laufzeit
  Wenn der ausgeführte Code an einem Haltepunkt anhält, können Sie die Variablen und Aufruflisten untersuchen, um die gerade ausgeführte Aktion zu ermitteln. Liegen die Werte in den erwarteten Bereichen? Werden die Aufrufe in der richtigen Reihenfolge ausgeführt?

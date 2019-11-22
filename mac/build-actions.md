@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128435"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714402"
 ---
 # <a name="build-actions"></a>Buildvorgänge
 
@@ -35,7 +35,7 @@ Zu den gängigen Buildaktionen für Projekte, die Sie in Visual Studio für Mac 
 |--|--|--|
 | **Compile** | any | Die Datei wird als Quelldatei an den C#-Compiler übergeben.|
 | **Inhalt** | .NET, Xamarin | Bei ASP.NET-Projekten werden diese Dateien bei der Bereitstellung als Teil der Website integriert. Bei Xamarin.iOS- und Xamarin.Mac-Projekten sind diese im App-Bundle enthalten.|
-| **Embedded Resource** | .NET | Die Datei wird als Ressource an den C#-Compiler übergeben, die in die Assembly eingebettet wird. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), aus dem Namespace `System.Reflection`, kann anschließend zum Lesen der Datei aus der Assembly verwendet werden.|
+| **Embedded Resource** | .NET | Die Datei wird als Ressource an den C#-Compiler übergeben, die in die Assembly eingebettet wird. [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream), aus dem Namespace `System.Reflection`, kann anschließend zum Lesen der Datei aus der Assembly verwendet werden.|
 | **Keine** | any | Die Datei ist in keiner Weise Teil des Builds. Sie ist für einen leichten Zugriff über die IDE in das Projekt integriert. Dieser Wert kann für Dokumentationsdateien wie Infodateien verwendet werden.|
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erweitern des domänenspezifischen sprach Designers | Microsoft-Dokumentation'
+title: 'How to: Extend the Domain-Specific Language Designer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,52 +9,52 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656020"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300903"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Erweiterungen für den Designer vornehmen, mit dem Sie DSL-Definitionen bearbeiten. Zu den Erweiterungs Typen, die Sie vornehmen können, zählen das Hinzufügen von Menübefehlen, das Hinzufügen von Handlern für Drag-und Doppelklick Gesten und Regeln, die ausgelöst werden, wenn bestimmte Werte oder Beziehungen geändert werden. Die Erweiterungen können als Visual Studio-Integrations Erweiterung (VSIX) verpackt und an andere Benutzer verteilt werden.
+You can make extensions to the designer that you use to edit DSL Definitions. Types of extension that you can make include adding menu commands, adding handlers for drag and double-click gestures, and rules that are triggered when particular types of values or relationships change. The extensions can be packaged as a Visual Studio Integration Extension (VSIX) and distributed to other users.
 
- Beispielcode und weitere Informationen zu diesem Feature finden Sie auf der Visual Studio-Website für das [Visualisierungs-und Modellierungs-SDK (vmsdk)](http://go.microsoft.com/fwlink/?LinkID=186128).
+ For sample code and more information about this feature, see the Visual Studio [Visualization and Modeling SDK (VMSDK) Web site](https://go.microsoft.com/fwlink/?LinkID=186128).
 
-## <a name="setting-up-the-solution"></a>Einrichten der Lösung
- Richten Sie ein Projekt ein, das den Code der Erweiterung enthält, und ein VSIX-Projekt, das das Projekt exportiert. Die Projekt Mappe kann andere Projekte enthalten, die in dieselbe VSIX integriert sind.
+## <a name="setting-up-the-solution"></a>Setting up the Solution
+ Set up a project that contains the code of your extension, and a VSIX project that exports the project. Your solution can contain other projects that are incorporated into the same VSIX.
 
-#### <a name="to-create-a-dsl-designer-extension-solution"></a>So erstellen Sie eine DSL-Designer-Erweiterungs Lösung
+#### <a name="to-create-a-dsl-designer-extension-solution"></a>To create a DSL Designer Extension Solution
 
-1. Erstellen Sie ein neues Projekt mithilfe der-Klassenbibliothek-Projektvorlage. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visualisierung C#**  , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.
+1. Create a new project using the Class Library project template. In the **New Project** dialog box, click **Visual C#** and then in the middle window click **Class Library**.
 
-     Dieses Projekt enthält den Code der Erweiterungen.
+     This project will contain the code of your extensions.
 
-2. Erstellen Sie ein neues Projekt mithilfe der VSIX-Projektvorlage. Erweitern Sie im Dialogfeld **Neues Projekt** die **Option C#Visualisierung** , klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann im mittleren Fenster **VSIX-Projekt**aus.
+2. Create a new project using the VSIX project template. In the **New Project** dialog box, expand **Visual C#** , click **Extensibility**, and then in the middle window select **VSIX Project**.
 
-     Wählen Sie zu Projekt Mappe **Hinzufügen**.
+     Select **Add to Solution**.
 
-     "Source. Extension. vsixmanifest" wird im VSIX-Manifest-Editor geöffnet.
+     Source.extension.vsixmanifest opens in the VSIX manifest editor.
 
-3. Klicken Sie oberhalb des Inhalts Felds auf **Inhalt hinzufügen**.
+3. Above the Content field, click **Add Content**.
 
-4. Legen Sie im Dialogfeld **Inhalt hinzufügen** **einen Inhaltstyp** auf die **MEF-Komponente**auswählen fest, und legen Sie **Projekt** auf das Klassen Bibliotheksprojekt fest.
+4. In the **Add Content** dialog box, set **Select a Content Type** to **MEF Component**, and set **Project** to your class library project.
 
-5. Klicken Sie auf **Editionen auswählen** , und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.
+5. Click **Select Editions** and make sure that **Visual Studio Enterprise** is checked.
 
-6. Stellen Sie sicher, dass es sich bei dem VSIX-Projekt um das Startprojekt der Projekt Mappe handelt.
+6. Make sure that the VSIX project is the Startup project of the solution.
 
-7. Fügen Sie im Klassen Bibliotheksprojekt Verweise auf die folgenden Assemblys hinzu:
+7. In the class library project, add references to the following assemblies:
 
-     Microsoft. VisualStudio. coreutility
+     Microsoft.VisualStudio.CoreUtility
 
-     Microsoft. VisualStudio. Modeling. SDK. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-     Microsoft. VisualStudio. Modeling. SDK. Diagramms. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-     Microsoft. VisualStudio. Modeling. SDK. DslDefinition. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -67,26 +67,26 @@ Sie können Erweiterungen für den Designer vornehmen, mit dem Sie DSL-Definitio
      System.Windows.Forms
 
 ## <a name="testing-and-deployment"></a>Tests und Bereitstellung
- Erstellen Sie die Projekt Mappe, und führen Sie Sie aus, um eine der Erweiterungen in diesem Thema zu testen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet. Öffnen Sie in dieser Instanz eine DSL-Projekt Mappe. Bearbeiten Sie das DslDefinition-Diagramm. Das Erweiterungs Verhalten ist sichtbar.
+ To test any of the extensions in this topic, build and run the solution. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet. In this instance, open a DSL solution. Edit the DslDefinition diagram. The extension behavior can be seen.
 
- Führen Sie die folgenden Schritte aus, um die Erweiterungen für die Haupt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und für andere Computer bereitzustellen:
+ To deploy the extensions to the main [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], and to other computers, follow these steps:
 
-1. Suchen Sie die VSIX-Installationsdatei in Ihrem VSIX-Projekt in bin \\ * \\ \*. VSIX.
+1. Find the VSIX installation file, in your VSIX project in bin\\*\\\*.vsix
 
-2. Kopieren Sie diese Datei auf den Zielcomputer, und doppelklicken Sie dann im Windows-Explorer (oder Datei-Explorer) auf die Datei.
+2. Copy this file to the target computer, and then in Windows Explorer (or File Explorer), double-click it.
 
-    Der Erweiterungs-Manager für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet, um zu bestätigen, dass die Erweiterung installiert wurde.
+    The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension Manager opens to confirm that the extension has been installed.
 
-   Um die Erweiterung zu deinstallieren, führen Sie die folgenden Schritte aus:
+   To uninstall the extension, follow these steps:
 
-3. Klicken Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im **Menü Extras** auf **Erweiterungs-Manager**.
+3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], on the **Tools** menu, click **Extension Manager**.
 
-4. Wählen Sie die Erweiterung aus, und löschen Sie Sie.
+4. Select the extension and delete it.
 
-## <a name="adding-a-shortcut-menu-command"></a>Hinzufügen eines Kontextmenü Befehls
- Damit ein Kontextmenü Befehl auf der DSL-Designer-Oberfläche oder im Fenster DSL-Explorer angezeigt wird, schreiben Sie eine Klasse, die der folgenden ähnelt.
+## <a name="adding-a-shortcut-menu-command"></a>Adding a Shortcut Menu Command
+ To make a shortcut menu command appear on the DSL Designer surface or in the DSL Explorer window, write a class resembling the following.
 
- Die Klasse muss `ICommandExtension` implementieren, und das-Attribut muss `DslDefinitionModelCommandExtension` sein.
+ The class must implement `ICommandExtension` and must have the attribute `DslDefinitionModelCommandExtension`.
 
 ```
 using System.Collections.Generic;
@@ -148,8 +148,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
 }
 ```
 
-## <a name="handling-mouse-gestures"></a>Behandeln von Mausgesten
- Der Code ähnelt dem Code des Menübefehls.
+## <a name="handling-mouse-gestures"></a>Handling Mouse Gestures
+ The code is similar to the code of the menu command.
 
 ```
 [DslDefinitionModelGestureExtension]
@@ -209,8 +209,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
  }
 ```
 
-## <a name="responding-to-value-changes"></a>Reagieren auf Wertänderungen
- Dieser Handler benötigt ein Domänen Modell, um ordnungsgemäß zu funktionieren. Wir stellen ein einfaches Domänen Modell bereit.
+## <a name="responding-to-value-changes"></a>Responding to Value Changes
+ This handler needs a domain model to work correctly. We provide a simple domain model.
 
 ```
 using System.Diagnostics;
@@ -250,7 +250,7 @@ namespace Fabrikam.SimpleDslDesignerExtension
 } }  }  );
 ```
 
- Der folgende Code implementiert ein einfaches Modell. Erstellen Sie eine neue GUID, um den Platzhalter zu ersetzen.
+ The following code implements a simple model. Create a new GUID to replace the placeholder.
 
 ```
 using System;

@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a71de3e425896c5f4394f28ecbf7f90866f383e7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825457"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302772"
 ---
 # <a name="javascript-memory"></a>JavaScript-Memory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
     In der folgenden Abbildung ist ein Beispiel für eine Momentaufnahme eines Baselineheaps dargestellt:  
   
-    ![Momentaufnahme eines Baselineheaps ](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Momentaufnahme der Baseline](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
    > [!TIP]
    > Zur genaueren zeitlichen Steuerung bei Momentaufnahmen verwenden Sie den Befehl [Associate source code with memory usage data](#JSConsoleCommands) im Code.  
@@ -183,7 +183,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
      Die folgende Abbildung zeigt eine Differenzansicht der Objekte, die aus der Momentaufnahme 2 übrig geblieben sind.  
   
-     ![Momentaufnahmenunterschiede mit Anzeige der Typen](../profiling/media/js-mem-snapshot-diff.png "JS_Mem_Snapshot_Diff")  
+     ![Momentaufnahme einer Differenzansicht, einschließlich Typen](../profiling/media/js-mem-snapshot-diff.png "JS_Mem_Snapshot_Diff")  
   
      In der vorhergehenden Abbildung können wir sehen, dass aus der vorherigen Momentaufnahme zwei Objekte übrig geblieben sind. Untersuchen Sie, ob es sich hierbei um ein erwartetes Verhalten dieser speziellen App handelt. Wenn nicht, kann dies auf einen Speicherverlusts hinweisen.  
   
@@ -196,7 +196,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  Das Arbeitsspeicherdiagramm zeigt eine aktive Ansicht des Prozessarbeitsspeichers der App, die private Bytes, systemeigenen Speicher und den JavaScript-Heap umfasst. Das Arbeitsspeicherdiagramm ist eine bildlauffähige Ansicht des Prozessspeichers. Hier sehen Sie, wie es aussieht:  
   
- ![Arbeitsspeicherdiagramm für JavaScript-Arbeitsspeicheranalyse](../profiling/media/js-mem-memory-graph.png "JS_Mem_Memory_Graph")  
+ ![Arbeitsspeicherdiagramm für den JavaScript-Speicheranalyzer](../profiling/media/js-mem-memory-graph.png "JS_Mem_Memory_Graph")  
   
  Wenn Sie Ihrem Code Benutzermarkierungen hinzugefügt haben (siehe [Associate source code with memory usage data](#JSConsoleCommands)), wird ein umgekehrtes Dreieck im Speicherauslastungsdiagramm angezeigt, um anzugeben, wann dieser Codeabschnitt erreicht ist.  
   
@@ -210,7 +210,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  Im Folgenden finden Sie ein Beispiel einer Momentaufnahmenzusammenfassung bei Erstellung mehrerer Momentaufnahmen.  
   
- ![Momentaufnahmenzusammenfassung](../profiling/media/js-mem-snapshot-summary.png "JS_Mem_Snapshot_Summary")  
+ ![Momentaufnahmezusammenfassung](../profiling/media/js-mem-snapshot-summary.png "JS_Mem_Snapshot_Summary")  
   
  Die Momentaufnahmenzusammenfassung enthält:  
   
@@ -235,7 +235,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  Diese Abbildung zeigt die Typenansicht in einem Momentaufnahmedetail, wobei die Speicherauslastungsdaten nach beibehaltener Größe sortiert sind.  
   
- ![Momentaufnahmendetails mit Anzeige potenzieller Probleme](../profiling/media/js-mem-snapshot-details.png "JS_Mem_Snapshot_Details")  
+ ![Momentaufnahmedetails, einschließlich potenzieller Probleme](../profiling/media/js-mem-snapshot-details.png "JS_Mem_Snapshot_Details")  
   
  In der Ansicht der Momentaufnahmedetails können Sie Daten zur Speicherauslastung nach Typ, Stamm oder Dominator überprüfen, indem Sie eine Option aus der Symbolleiste auswählen:  
   
@@ -272,7 +272,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  Diese Abbildung zeigt die Ansicht "Typen" in einem Momentaufnahmevergleich.  
   
- ![Momentaufnahmenunterschiede mit Anzeige der Typen](../profiling/media/js-mem-snapshot-diff.png "JS_Mem_Snapshot_Diff")  
+ ![Momentaufnahme einer Differenzansicht, einschließlich Typen](../profiling/media/js-mem-snapshot-diff.png "JS_Mem_Snapshot_Diff")  
   
  Im Fenster mit der Momentaufnahmendifferenz werden Ansichten von Dominatoren, Typen und Stämme genau so dargestellt wie im Fenster [Anzeigen von Momentaufnahmedetails](#SnapshotDetails) . Die Ansicht "Momentaufnahmevergleich" zeigen die gleichen Informationen wie die Momentaufnahmedetails an, und zusätzlich folgende Werte:  
   
@@ -291,7 +291,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 - **Alle Objekte in Momentaufnahme #\<Zahl>** . Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
   
-  Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
+  Zum Anzeigen von Objektverweisen, die nicht dem aktuellen Filter **Bereich** entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") (Dropdownliste „Einstellungen“ in Speicheranalyse) aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
   
 > [!TIP]
 > Es wird empfohlen, dass Sie die Schritte unter [Isolate a memory leak](#Isolate) befolgen und dann anhand der übrigen Objekte, die mit dem **Bereichsfilter** herausgefiltert wurden, die Objekte ermitteln, die für den Speicherverlust verantwortlich sind.  
@@ -317,7 +317,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 > [!NOTE]
 > Zirkelverweise werden mit einem Sternchen (*) und einer Informations-QuickInfo angezeigt und können nicht erweitert werden. Andernfalls würden sie Sie am Durchlaufen der Verweisstruktur und an der Bestimmung von Objekten hindern, die Arbeitsspeicher einnehmen.  
   
- Wenn Sie zusätzliche Hilfe bei der Identifizierung der entsprechenden Objekte benötigen, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") in der rechten oberen Ecke des oberen Bereichs die Option **Objekt-IDs anzeigen** aus. Durch diese Option werden Objekt-IDs neben den Objektnamen in der Liste **Bezeichner** angezeigt (die IDs werden in allen Ansichten, nicht nur in der Objektverweisliste, angezeigt). Objekte mit der gleichen ID sind freigegebene Verweise.  
+ Wenn Sie zusätzliche Hilfe bei der Identifizierung von gleichwertigen Objekten benötigen, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") (Dropdownliste „Einstellungen“ in Speicheranalyse) in der rechten Ecke des oberen Bereichs die Option **Objekt-IDs anzeigen** aus. Durch diese Option werden Objekt-IDs neben den Objektnamen in der Liste **Bezeichner** angezeigt (die IDs werden in allen Ansichten, nicht nur in der Objektverweisliste, angezeigt). Objekte mit der gleichen ID sind freigegebene Verweise.  
   
  Die folgende Abbildung zeigt die Objektverweisliste für ein ausgewähltes Element mit den angezeigten IDs an.  
   
@@ -326,7 +326,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 ## <a name="BuiltInValues"></a> Anzeigen integrierter Objekte  
  Standardmäßig werden in den Ansichten "Dominatoren" und "Typen" nur die Objekte angezeigt, die in der App erstellt werden. Damit werden nicht benötigte Informationen herausgefiltert und auf die App bezogene Probleme isoliert. Manchmal ist es aber hilfreich, alle Objekte anzuzeigen, die von der JavaScript-Laufzeit für die App generiert werden.  
   
- Zum Anzeigen dieser Objekte wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") in der rechten oberen Ecke des Bereichs die Option **Integrierte anzeigen** aus.  
+ Wenn Sie diese Objekte anzeigen möchten, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") (Dropdownliste „Einstellungen“ in Speicheranalyse) in der rechten oberen Ecke des Bereichs die Option **Integrierte anzeigen** aus.  
   
 ## <a name="Save"></a> Speichern von Diagnosesitzungsdateien  
  Momentaufnahmen-Zusammenfassungen zu Diagnosezwecken sowie die zugeordneten Detailansichten werden als .diagsessions-Dateien gespeichert. Der**Projektmappen-Explorer** zeigt vorherige Diagnosesitzungen im Ordner "Diagnosesitzungen" an. Im **Projektmappen-Explorer**können Sie vorherige Sitzungen öffnen oder Dateien entfernen bzw. umbenennen.  
@@ -388,7 +388,7 @@ if (performance && performance.mark) {
 
   - Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
-- Sehen Sie sich den letzten Teil [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
+- Sehen Sie sich den letzten Teil [dieses Video](https://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
   
 - Lesen Sie [Verwalten des Arbeitsspeichers in Windows Store-Apps](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   

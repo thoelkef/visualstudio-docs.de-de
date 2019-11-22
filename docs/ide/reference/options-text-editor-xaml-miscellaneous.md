@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666625"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189554"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Optionen, Text-Editor, XAML, Sonstiges
 
@@ -52,7 +52,7 @@ Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen
 
 ## <a name="errors-and-warnings"></a>Fehler und Warnungen
 
-Verwenden Sie diese Einstellung, um zu steuern, wann Fehler und Warnungen automatisch generiert werden. Weitere Informationen finden Sie unter [XAML-Fehler und -Warnungen](../../designers/xaml-errors-warnings.md).
+Verwenden Sie diese Einstellung, um zu steuern, wann Fehler und Warnungen automatisch generiert werden. Weitere Informationen finden Sie unter [XAML-Fehler und -Warnungen](../../xaml-tools/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Siehe auch
 

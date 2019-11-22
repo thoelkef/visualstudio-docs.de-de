@@ -1,5 +1,5 @@
 ---
-title: Visual C++-Typedefs im Klassen-Designer
+title: C++-TypeDefs im Klassen-Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ded9e1b6bea0a6f03dd9599b592bba5fba6f91fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975123"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747998"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>Visual C++-TypeDefs im Klassen-Designer
+# <a name="c-typedefs-in-class-designer"></a>C++-TypeDefs im Klassen-Designer
 
 [TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)-Anweisungen erstellen eine oder mehrere Dereferenzierungsebenen zwischen einem Namen und seinem zugrundeliegenden Typ. Der **Klassen-Designer** unterstützt z.B. folgende TypeDef-Typen für C++, die mithilfe des Schlüsselworts `typedef` deklariert werden:
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Arbeiten mit Visual C++-Code](working-with-visual-cpp-code.md)
+- [Arbeiten mit C++-Code](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

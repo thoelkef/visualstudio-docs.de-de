@@ -13,15 +13,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5dd666d825c40155675714f5945209f22198993c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440503"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984395"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110-Schnittstelle
-Weitere Threadereignisse hinzugefügt. Diese Ereignisse sind nur lokal. D. h. Sie abonniert werden können nur in dem Prozess zu debuggen, indem die [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) anmelden und Methoden auf PDM-Application-Thread-Objekte (Objekte, die implementieren [IDebugApplicationThread Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)). Sie werden auf dem Thread aus, von dem sie stammen.  
+Fügt weitere Thread Ereignisse hinzu. Diese Ereignisse sind nur lokal. Das heißt, Sie können Sie nur im debuggten Prozess abonnieren. verwenden Sie dazu die [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) -Methoden "Empfehlung" und "unempfehlung" für PDM-Anwendungs Thread Objekte (Objekte, die die [idebugapplicationthread-Schnittstelle](../../winscript/reference/idebugapplicationthread-interface.md)implementieren). Sie treten auf dem Thread auf, von dem Sie stammen.  
   
 > [!IMPORTANT]
 > Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  
@@ -31,7 +31,7 @@ Weitere Threadereignisse hinzugefügt. Diese Ereignisse sind nur lokal. D. h. Si
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Ein Aufruf in dem Thread, der über das PDM Thread gewechselt wurde gestartet.|  
-|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Der Thread wird von einem Haltepunkt fortgesetzt, und es wird wieder aktiv sein.|  
-|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Der Thread für einen Haltepunkt angehalten wird und Aufrufe, die den Thread vollständig unterbrochen wird, erfordern verarbeiten kann.|  
-|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Ein Aufruf in dem Thread, der über das PDM Thread gewechselt wurde abgeschlossen.|
+|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Ein Rückruf für den Thread, der den PDM-Thread Wechsel verwendet, wurde begonnen.|  
+|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Der Thread wird von einem Breakpoint fortgesetzt und wird wieder aktiviert.|  
+|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Der Thread wird für einen Haltepunkt angehalten und kann Aufrufe verarbeiten, die erfordern, dass der Thread vollständig angehalten wird.|  
+|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Ein Rückruf für den Thread, der den PDM-Thread Wechsel verwendet, wurde abgeschlossen.|

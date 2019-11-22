@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634532"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888503"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Vorgehensweise: Verwenden von 3D-Objekten in Spielen oder Apps
 
@@ -97,7 +97,7 @@ Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines
 
 |Eigenschaft|BESCHREIBUNG|
 |--------------|-----------------|
-|**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Die folgenden Optionen sind verfügbar:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Die folgenden Optionen sind verfügbar:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja**, um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
 |**MIPS generieren**|**Ja**, um eine vollständige MIP-Kette zum Zeitpunkt der Erstellung zu generieren und in die Ausgabedatei einzuschließen; andernfalls **Nein**. Falls Sie **Nein** auswählen und die Quelldatei bereits eine Mipmap-Kette enthält, verfügt die Ausgabedatei über eine MIP-Kette; andernfalls hat die Ausgabedatei keine MIP-Kette.|
 |**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
@@ -122,7 +122,7 @@ Wenn Sie das Tool für Shader-Inhaltspipelines verwenden, um eine Shader-Ressour
 
 ### <a name="use-textures-and-images"></a>Verwenden von Texturen und Bildern
 
-Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](http://go.microsoft.com/fwlink/p/?LinkID=246267). Weitere Informationen darüber, wie Sie die Bibliothek „D3DX11“ verwenden, um eine Texturressource oder Ressourcenansicht aus einer Bilddatei zu erstellen, finden Sie unter [How to: Initialize a Texture From a File (Initialisieren einer Textur aus einer Datei)](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures). Weitere Informationen darüber, wie Sie die Bibliothek „D3DX11“ verwenden, um eine Texturressource oder Ressourcenansicht aus einer Bilddatei zu erstellen, finden Sie unter [How to: Initialize a Texture From a File (Initialisieren einer Textur aus einer Datei)](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to).
 
 ### <a name="use-3d-models"></a>Verwenden von 3D-Modellen
 
@@ -130,7 +130,7 @@ Direct3D 11 bietet keine Funktionen für das Erstellen von Ressourcen aus 3D-Mod
 
 ### <a name="use-shaders"></a>Verwenden von Shadern
 
-Direct3D stellt Funktionen zum Erstellen von Shaderressourcen und deren Anbindung an die programmierbare Grafikpipeline bereit. Weitere Informationen über die Erstellung einer Shaderressource in Direct3D und ihre Anbindung an die Pipeline finden Sie unter [Programmierhandbuch für HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521).
+Direct3D stellt Funktionen zum Erstellen von Shaderressourcen und deren Anbindung an die programmierbare Grafikpipeline bereit. Weitere Informationen über die Erstellung einer Shaderressource in Direct3D und ihre Anbindung an die Pipeline finden Sie unter [Programmierhandbuch für HLSL](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide).
 
 In der programmierbaren Grafikpipeline muss jede Phase der Pipeline der nächsten Phase der Pipeline ein Ergebnis übergeben, das so formatiert ist, das es verstanden wird. Da der Shader-Designer nur Pixel-Shader erstellen kann, bedeutet dies, dass Ihre App sicherstellen muss, dass die Daten, die sie erhält, im erwarteten Format vorliegen. Einige programmierbare Shader-Phasen treten vor dem Pixel-Shader auf und führen geometrische Umwandlungen durch – darunter Vertex-Shader, Hull-Shader, Domain-Shader und Geometrie-Shader. Die nicht programmierbare Mosaikphase tritt ebenfalls vor dem Pixel-Shader auf. Unabhängig davon, welche dieser Phasen direkt vor dem Pixel-Shader stattfindet, muss sie ihr Ergebnis in diesem Format übergeben:
 

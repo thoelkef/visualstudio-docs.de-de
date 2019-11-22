@@ -33,45 +33,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00ad5b41dd0a11661d281f24474b7673ea0a342c
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846586"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911508"
 ---
-# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit der Debugger in Visual Studio
+# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit dem Debugger in Visual Studio
 
-Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein Programm ausgeführt wird. Sie können dem Debugger anweisen, welche Ausnahmen oder Sätze von Ausnahmen auf unterbrochen, und an diesem Punkt des Debuggers zum unterbrechen soll (d. h. im Debugger angehalten). Wenn der Debugger unterbrochen wird, wird es Sie, wo die Ausnahme ausgelöst wurde. Sie können auch hinzufügen oder Löschen von Ausnahmen. Mit einer Lösung in Visual Studio geöffnet ist, verwenden Sie **Debuggen > Windows > Ausnahmeeinstellungen** zum Öffnen der **Ausnahmeeinstellungen** Fenster.
+Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein Programm ausgeführt wird. Sie können dem Debugger mitteilen, welche Ausnahmen oder Sätze von Ausnahmen unterbrechen werden sollen und an welchem Punkt der Debugger unterbrochen werden soll (d. h. anhalten im Debugger). Wenn der Debugger unterbrochen wird, zeigt er an, wo die Ausnahme ausgelöst wurde. Sie können auch Ausnahmen hinzufügen oder löschen. Wenn eine Projekt Mappe in Visual Studio geöffnet ist, verwenden Sie **debug> Windows >-Ausnahme Einstellungen** , um das Fenster **Ausnahme Einstellungen** zu öffnen.
 
-Geben Sie Handler, die auf die wichtigsten Ausnahmen reagieren. Wenn Sie müssen wissen, wie zum Hinzufügen von Ereignishandlern für Ausnahmen finden Sie unter [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md). Darüber hinaus erfahren Sie, wie konfigurieren Sie den Debugger, um die Ausführung für einige Ausnahmen immer dann unterbrochen.
+Bereitstellen von Handlern, die auf die wichtigsten Ausnahmen reagieren. Wenn Sie wissen möchten, wie Handler für Ausnahmen hinzugefügt werden, finden Sie weitere Informationen unter [beheben C# von Fehlern durch Schreiben von besseren Code](../debugger/write-better-code-with-visual-studio.md). Außerdem erfahren Sie, wie Sie den Debugger so konfigurieren, dass die Ausführung für einige Ausnahmen immer unterbricht.
 
-Wenn eine Ausnahme ausgelöst wird, schreibt der Debugger eine Ausnahmemeldung an das Fenster **Ausgabe**. Es kann die Ausführung unterbrechen, in den folgenden Fällen:
+Wenn eine Ausnahme ausgelöst wird, schreibt der Debugger eine Ausnahmemeldung an das Fenster **Ausgabe**. In den folgenden Fällen kann die Ausführung in den folgenden Fällen unterbricht werden:
 
-- Eine Ausnahme wird ausgelöst, die verarbeitet wird.
-- Der Debugger ist konfiguriert, um die Ausführung zu unterbrechen, bevor ein Handler aufgerufen wird.
-- Sie haben festgelegt [nur mein Code](../debugger/just-my-code.md), und der Debugger bei jeder Ausnahme unterbrochen wird, die im Benutzercode behandelt ist nicht konfiguriert ist.
+- Es wird eine Ausnahme ausgelöst, die nicht behandelt wird.
+- Der Debugger wird so konfiguriert, dass die Ausführung abgebrochen wird, bevor ein Handler aufgerufen wird.
+- Sie haben [nur eigenen Code](../debugger/just-my-code.md)festgelegt, und der Debugger ist so konfiguriert, dass bei jeder Ausnahme, die nicht im Benutzer Code behandelt wird, unterbricht.
 
 > [!NOTE]
-> ASP.NET verfügt über einen Ausnahmehandler der obersten Ebene, der Fehlerseiten in einem Browser anzeigt. Es nicht die Ausführung unterbrochen, es sei denn, **nur mein Code** aktiviert ist. Ein Beispiel finden Sie unter [entsprechende Konfiguration des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt](#BKMK_UserUnhandled) unten.
+> ASP.NET verfügt über einen Ausnahmehandler der obersten Ebene, der Fehlerseiten in einem Browser anzeigt. Die Ausführung wird nur unterbricht, wenn **nur eigenen Code** aktiviert ist. Ein Beispiel finden Sie unter anweisen [des Debuggers zum Fortfahren mit vom Benutzer nicht behandelten Ausnahmen weiter](#BKMK_UserUnhandled) unten.
 
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
 > In Visual Basic-Anwendungen werden alle Fehler vom Debugger als Ausnahmen behandelt. Dies ist auch dann der Fall, wenn Sie Fehlerhandler des Typs On Error verwenden.
 
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Teilen Sie den Debugger zu unterbrechen, wenn eine Ausnahme ausgelöst wird
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Den Debugger anweisen, zu unterbrechen, wenn eine Ausnahme ausgelöst wird
 
-Der Debugger kann die Ausführung an dem Punkt, in dem eine Ausnahme ausgelöst wird, unterbrechen, sodass Sie möglicherweise die Ausnahme zu untersuchen, bevor ein Handler aufgerufen wird.
+Der Debugger kann die Ausführung an dem Punkt unterbrechen, an dem eine Ausnahme ausgelöst wird. Sie können daher die Ausnahme untersuchen, bevor ein Handler aufgerufen wird.
 
-In der **Ausnahmeeinstellungen** Fenster (**Debuggen > Windows > Ausnahmeeinstellungen**), erweitern Sie den Knoten für eine Kategorie von Ausnahmen, z. B. **Common Language Runtime-Ausnahmen**. Wählen Sie dann das Kontrollkästchen für eine bestimmte Ausnahme innerhalb dieser Kategorie, z. B. **System.AccessViolationException**. Sie können auch eine ganze Kategorie von Ausnahmen auswählen.
+Erweitern Sie im Fenster **Ausnahme Einstellungen** (**Debuggen > Windows >-Ausnahme Einstellungen**) den Knoten für eine Kategorie von Ausnahmen, z. b. **Common Language Runtime-Ausnahmen**. Aktivieren Sie dann das Kontrollkästchen für eine bestimmte Ausnahme innerhalb dieser Kategorie, z. b. **System. AccessViolationException**. Sie können auch eine ganze Kategorie von Ausnahmen auswählen.
 
-![AccessViolationException aktiviert](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Überprüfte AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "Exceptionsettingscheckaccess")
 
 > [!TIP]
-> Bestimmte Ausnahmen finden Sie unter Verwendung der **Suche** Fenster in der **Ausnahmeeinstellungen** Symbolleiste, oder verwenden Sie suchen, um nach bestimmten Namespaces Filtern (z. B. **System.IO**).
+> Sie können bestimmte Ausnahmen suchen, indem Sie das **Such** Fenster in der Symbolleiste **Ausnahme Einstellungen** verwenden oder suchen verwenden, um nach bestimmten Namespaces zu filtern (z. b. **System.IO**).
 
-Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster Debugger die Ausführung wird unterbrochen, wo die Ausnahme ausgelöst wird, unabhängig davon, ob es behandelt wird,. Die Ausnahme wird jetzt eine erste zufällige Ausnahme aufgerufen. Im Folgenden einige Szenarios:
+Wenn Sie im Fenster " **Ausnahme Einstellungen** " eine Ausnahme auswählen, wird die Ausführung des Debuggers unabhängig davon, ob die Ausnahme behandelt wird, unabhängig davon, ob Sie behandelt wird, unterbricht. Nun wird die Ausnahme als erste Chance bezeichnet. Im Folgenden einige Szenarios:
 
 - In der folgenden C#-Konsolenanwendung löst die Main-Methode eine **AccessViolationException** in einem `try/catch`-Block aus.
 
@@ -91,16 +91,16 @@ Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster
   }
   ```
 
-  Wenn man **AccessViolationException** eingecheckt **Ausnahmeeinstellungen**, Ausführung wird die Ausführung an die `throw` Zeile, wenn Sie diesen Code im Debugger ausführen. Danach können Sie die Ausführung fortsetzen. In der Konsole sollten beide Zeilen angezeigt werden:
+  Wenn Sie **AccessViolationException** in den **Ausnahme Einstellungen**aktiviert haben, wird die Ausführung beim Ausführen dieses Codes im Debugger an der `throw` Zeile unterbrechen. Danach können Sie die Ausführung fortsetzen. In der Konsole sollten beide Zeilen angezeigt werden:
 
   ```cmd
   caught exception
   goodbye
   ```
 
-  Es zeigt jedoch nicht die `here` Zeile.
+  die `here` Zeile wird jedoch nicht angezeigt.
 
-- Eine C#-Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Die Methode löst eine Ausnahme aus, und verarbeitet, während eine zweite Methode, die gleiche Ausnahme auslöst, jedoch nicht behandelt.
+- Eine C# Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Eine Methode löst eine Ausnahme aus und behandelt Sie, während eine zweite Methode die gleiche Ausnahme auslöst, Sie aber nicht verarbeitet.
 
   ```csharp
   public class Class1
@@ -135,56 +135,56 @@ Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster
   }
   ```
 
-  Wenn man **AccessViolationException** eingecheckt **Ausnahmeeinstellungen**, Ausführung wird die Ausführung an die `throw` Zeile in beiden **ThrowHandledException()** und **ThrowUnhandledException()** Wenn Sie diesen Code im Debugger ausführen.
+  Wenn Sie **AccessViolationException** in den **Ausnahme Einstellungen**aktiviert haben, wird die Ausführung in der `throw` Zeile sowohl in **throwhandledexception ()** als auch in **throwunlenker dexception ()** unterbrechen, wenn Sie diesen Code im Debugger ausführen.
 
-Um die ausnahmeeinstellungen auf die Standardwerte zurücksetzen möchten, wählen Sie die **Liste auf die Standardeinstellungen wiederherstellen** Schaltfläche:
+Um die Ausnahme Einstellungen auf die Standardeinstellungen wiederherzustellen, wählen Sie die Schaltfläche **Liste der Standardeinstellungen wiederherstellen** aus:
 
-![Wiederherstellen der Standardwerte in den Ausnahmeeinstellungen](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
+![Standardeinstellungen in Ausnahme Einstellungen wiederherstellen](../debugger/media/restoredefaultexceptions.png "Restoredefaultexceptions")
 
-## <a name="BKMK_UserUnhandled"></a>Entsprechende Konfiguration des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt
+## <a name="BKMK_UserUnhandled"></a>Den Debugger anweisen, bei Ausnahmen, die vom Benutzer nicht behandelt werden, fortzufahren
 
-Wenn Sie .NET oder JavaScript-Code mit Debuggen [nur mein Code](../debugger/just-my-code.md), können Sie feststellen, den Debugger, Abbruch bei Ausnahmen zu verhindern, die sind nicht im Benutzercode behandelt, aber an anderer Stelle behandelt werden.
+Wenn Sie .net-oder JavaScript-Code mit [nur eigenen Code](../debugger/just-my-code.md)Debuggen, können Sie den Debugger anweisen, das Unterbrechen bei Ausnahmen zu verhindern, die nicht im Benutzercode behandelt, sondern an anderer Stelle verarbeitet werden.
 
-1. In der **Ausnahmeeinstellungen** Fenster öffnen Sie das Kontextmenü, indem Sie mit der rechten Maustaste einer spaltenbezeichnung, und wählen Sie dann **Spalten einblenden > zusätzliche Aktionen**. (Wenn Sie deaktiviert haben **nur mein Code**, mit diesem Befehl wird nicht angezeigt.) Eine dritte Spalte mit dem Namen **zusätzliche Aktionen** angezeigt wird.
+1. Öffnen Sie im Fenster **Ausnahme Einstellungen das Kontext** Menü, indem Sie mit der rechten Maustaste auf eine Spalten Bezeichnung klicken, und wählen Sie dann **Spalten > zusätzliche Aktionen anzeigen**aus. (Wenn Sie **nur eigenen Code**deaktiviert haben, wird dieser Befehl nicht angezeigt.) Eine dritte Spalte mit dem Namen **zusätzliche Aktionen** wird angezeigt.
 
-   ![Zusätzliche Aktionsspalte](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
+   ![Weitere Aktionen (Spalte)](../debugger/media/additionalactionscolumn.png "Additionalaktionscolumschlag")
 
-   Für eine Ausnahme, die zeigt, **fortgesetzt, wenn in Benutzercode nicht behandelt** in dieser Spalte, fährt der Debugger, wenn diese Ausnahme wird nicht im Benutzercode behandelt, sondern extern behandelt wird.
+   Für eine Ausnahme, die "Continue" anzeigt, **Wenn in Benutzercode** in dieser Spalte nicht behandelt, wird der Debugger fortgesetzt, wenn diese Ausnahme nicht im Benutzercode behandelt, sondern extern verarbeitet wird.
 
-2. Um diese Einstellung für eine bestimmte Ausnahme ändern möchten, wählen Sie die Ausnahme, mit der rechten Maustaste das Kontextmenü anzuzeigen, und wählen **fortfahren bei nicht behandelten im Benutzercode**. Sie können auch die Einstellung für eine ganze Kategorie von Ausnahmen, z. B. die gesamte Common Language Runtime-Ausnahmen ändern).
+2. Wenn Sie diese Einstellung für eine bestimmte Ausnahme ändern möchten, wählen Sie die Ausnahme aus, klicken Sie mit der rechten Maustaste, um das Kontextmenü anzuzeigen, und wählen Sie **weiter, wenn in Benutzer Code nicht behandelt**. Sie können auch die Einstellung für eine ganze Kategorie von Ausnahmen ändern, z. b. die gesamten Common Language Runtime-Ausnahmen).
 
-   ![** Fortgesetzt, wenn im Code ** benutzereinstellung nicht behandelte](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
+   ![* * Fortsetzen, wenn in Benutzercode nicht behandelt * * Einstellung](../debugger/media/continuewhenunhandledinusercodesetting.png "Continue. unlenker-usercodesetting")
 
-Beispielsweise behandeln ASP.NET-Webanwendungen Ausnahmen durch Konvertierung in einen HTTP 500-Statuscode ([Behandlung von Ausnahmen in ASP.NET Web-API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), die möglicherweise keinen Hinweise auf die Quelle der Ausnahme zu bestimmen. Im folgenden Beispiel wird durch den Benutzercode `String.Format()` aufgerufen, wodurch eine <xref:System.FormatException>ausgelöst wird. Die Ausführung wird folgendermaßen unterbrochen:
+ASP.NET-Webanwendungen behandeln Ausnahmen beispielsweise, indem Sie Sie in einen HTTP 500-Statuscode ([Ausnahmebehandlung in ASP.net-Web-API](/aspnet/web-api/overview/error-handling/exception-handling)) umwandelt, der Ihnen möglicherweise nicht hilft, die Quelle der Ausnahme zu bestimmen. Im folgenden Beispiel wird durch den Benutzercode `String.Format()` aufgerufen, wodurch eine <xref:System.FormatException>ausgelöst wird. Die Ausführung wird folgendermaßen unterbrochen:
 
-![Benutzer Seitenumbrüche&#45;nicht behandelte Ausnahme](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
+![Unterbrechen bei&#45;nicht behandelten Ausnahmen für Benutzer](../debugger/media/exceptionunhandledbyuser.png "Exceptionunhandledbyuser")
 
 ## <a name="add-and-delete-exceptions"></a>Hinzufügen und Löschen von Ausnahmen
 
-Sie können Ausnahmen hinzufügen und löschen. Um einen Ausnahmetyp aus einer Kategorie zu löschen, wählen Sie die Ausnahme, und wählen Sie die **löscht die ausgewählte Ausnahme aus der Liste** Schaltfläche (das Minuszeichen) auf die **Ausnahmeeinstellungen** Symbolleiste. Oder Sie können mit der rechten Maustaste in der Ausnahme, und wählen Sie **löschen** aus dem Kontextmenü. Das Löschen einer Ausnahme hat dieselbe Wirkung wie die Ausnahme, die deaktiviert ist, handelt es sich, dass der Debugger wird nicht unterbrochen, wenn er geworfen wird.
+Sie können Ausnahmen hinzufügen und löschen. Wenn Sie einen Ausnahmetyp aus einer Kategorie löschen möchten, wählen Sie die Ausnahme aus, und wählen Sie auf der Symbolleiste **Ausnahme Einstellungen** die Schaltfläche **ausgewählte Ausnahme aus der Liste löschen** (das Minuszeichen) aus. Sie können auch mit der rechten Maustaste auf die Ausnahme klicken und im Kontextmenü die Option **Löschen** auswählen. Das Löschen einer Ausnahme hat denselben Effekt wie das Deaktivieren der Ausnahme, d. h., der Debugger wird nicht unterbrechen, wenn er ausgelöst wird.
 
-Zum Hinzufügen einer Ausnahme:
+So fügen Sie eine Ausnahme hinzu:
 
-1. In der **Ausnahmeeinstellungen** Fenster, wählen Sie eine der Ausnahmekategorien (z. B. **Common Language Runtime**).
+1. Wählen Sie im Fenster **Ausnahme Einstellungen** eine der Ausnahme Kategorien aus (z. b. **Common Language Runtime**).
 
-2. Wählen Sie die **eine Ausnahme hinzufügen, um die ausgewählte Kategorie** Schaltfläche (Pluszeichen).
+2. Wählen Sie die Schaltfläche **eine Ausnahme zur ausgewählten Kategorie hinzufügen** (das Pluszeichen) aus.
 
-   ![** Eine Ausnahme hinzufügen, auf die Schaltfläche ausgewählten Kategorie **](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
+   ![* * Hinzufügen einer Ausnahme zur ausgewählten Kategorie * *-Schaltfläche](../debugger/media/addanexceptiontotheselectedcategorybutton.png "Addanexceptionontheselectedcategorybutton")
 
-3. Geben Sie den Namen der Ausnahme (z. B. **System.UriTemplateMatchException**).
+3. Geben Sie den Namen der Ausnahme ein (z. b. **System. UriTemplateMatchException**).
 
-   ![Geben Sie den Ausnahmenamen](../debugger/media/typetheexceptionname.png "TypeTheExceptionName")
+   ![Geben Sie den Ausnahme Namen ein.](../debugger/media/typetheexceptionname.png "Typethexceptionname")
 
-   Die Ausnahme ist die Liste (in alphabetischer Reihenfolge) hinzugefügt und automatisch aktiviert.
+   Die Ausnahme wird der Liste hinzugefügt (in alphabetischer Reihenfolge) und automatisch aktiviert.
 
-Um eine Ausnahme, die GPU Arbeitsspeicher Ausnahmen JavaScript-Laufzeitausnahmen oder Win32-Ausnahmekategorien hinzufügen möchten, enthalten Sie den Fehlercode und die Beschreibung.
+Um eine Ausnahme zu den Ausnahmen für den GPU-Speicherzugriff, für JavaScript-Lauf Zeit Ausnahmen oder Win32-Ausnahme Kategorien hinzuzufügen, schließen Sie den Fehlercode und die Beschreibung ein.
 
 > [!TIP]
 > Überprüfen Sie die Rechtschreibung! Das Fenster **Ausnahmeeinstellungen** prüft nicht, ob eine hinzugefügte Ausnahme vorhanden ist. Bei Eingabe von **Sytem.UriTemplateMatchException** erhalten Sie daher einen Eintrag für diese Ausnahme und nicht für **System.UriTemplateMatchException**.
 
-Ausnahmeeinstellungen werden in der SUO-Datei der Projektmappe beibehalten, sie gelten also für eine bestimmte Projektmappe. Sie können spezifische Ausnahmeeinstellungen nicht für andere Projektmappen wiederverwenden. Jetzt werden nur hinzugefügte Ausnahmen beibehalten; Gelöschte Ausnahmen nicht. Sie fügen eine Ausnahme aus, schließen und öffnen Sie die Projektmappe können, und die Ausnahme wird immer noch vorhanden sein. Wenn Sie eine Ausnahme dagegen löschen und die Projektmappe anschließend schließen und wieder öffnen, wird die Ausnahme nicht mehr angezeigt.
+Ausnahmeeinstellungen werden in der SUO-Datei der Projektmappe beibehalten, sie gelten also für eine bestimmte Projektmappe. Sie können spezifische Ausnahmeeinstellungen nicht für andere Projektmappen wiederverwenden. Jetzt werden nur hinzugefügte Ausnahmen beibehalten. gelöschte Ausnahmen sind nicht. Sie können eine Ausnahme hinzufügen, die Projekt Mappe schließen und wieder öffnen, und die Ausnahme ist weiterhin vorhanden. Wenn Sie eine Ausnahme dagegen löschen und die Projektmappe anschließend schließen und wieder öffnen, wird die Ausnahme nicht mehr angezeigt.
 
-Das Fenster **Ausnahmeeinstellungen** unterstützt generische Ausnahmetypen in C#, aber nicht in Visual Basic. Um bei Ausnahmen wie `MyNamespace.GenericException<T>`eine Unterbrechung vorzunehmen, müssen Sie die Ausnahme als **MyNamespace.GenericException`1**hinzufügen. D.h., wenn Sie eine Ausnahme wie im folgenden Code erstellt haben:
+Das Fenster **Ausnahmeeinstellungen** unterstützt generische Ausnahmetypen in C#, aber nicht in Visual Basic. Um bei Ausnahmen wie `MyNamespace.GenericException<T>`eine Unterbrechung vorzunehmen, müssen Sie die Ausnahme als **MyNamespace.GenericException`1**hinzufügen. Das heißt, wenn Sie eine Ausnahme wie diesen Code erstellt haben:
 
 ```csharp
 public class GenericException<T> : Exception
@@ -195,35 +195,35 @@ public class GenericException<T> : Exception
 }
 ```
 
-Sie können die Ausnahme hinzufügen **Ausnahmeeinstellungen** mithilfe der vorherigen Prozedur:
+Sie können die Ausnahme den **Ausnahme Einstellungen** mithilfe der vorherigen Prozedur hinzufügen:
 
-![generische Ausnahme hinzufügen](../debugger/media/addgenericexception.png "AddGenericException")
+![generische Ausnahme wird hinzugefügt](../debugger/media/addgenericexception.png "Addgenericexception")
 
 ## <a name="add-conditions-to-an-exception"></a>Hinzufügen von Bedingungen zu einer Ausnahme
 
-Verwenden der **Ausnahmeeinstellungen** Fenster Bedingungen auf Ausnahmen festzulegen. Derzeit unterstützte Bedingungen umfassen die Namen der Module zum ein- oder ausschließen, für die Ausnahme. Wenn Sie Modulnamen als Bedingungen festlegen, können Sie auswählen, für die Ausnahme nur für bestimmte Codemodule unterbrochen. Sie können auch auswählen, um wichtige auf bestimmte Module zu vermeiden.
+Verwenden Sie das Fenster **Ausnahme Einstellungen** , um Bedingungen für Ausnahmen festzulegen. Zu den derzeit unterstützten Bedingungen gehören die Modulnamen, die für die Ausnahme eingeschlossen oder ausgeschlossen werden sollen. Durch Festlegen von Modulnamen als Bedingungen können Sie die Unterbrechung für die Ausnahme nur für bestimmte Code Module auswählen. Sie können auch eine Unterbrechung an bestimmten Modulen vermeiden.
 
 > [!NOTE]
-> Hinzufügen von Bedingungen zu einer Ausnahme wird ab unterstützt [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Das Hinzufügen von Bedingungen zu einer Ausnahme wird ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]unterstützt.
 
 So fügen Sie bedingte Ausnahmen hinzu:
 
-1. Wählen Sie die **Bedingungen bearbeiten** Schaltfläche im Fenster "Ausnahmeeinstellungen", oder mit der rechten Maustaste in der Ausnahme aus, und wählen Sie **Bedingungen bearbeiten**.
+1. Wählen Sie im Fenster Ausnahme Einstellungen die Schaltfläche **Bedingungen bearbeiten** aus, oder klicken Sie mit der rechten Maustaste auf die Ausnahme, und wählen Sie **Bedingungen bearbeiten**.
 
-   ![Bedingungen für eine Ausnahme](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+   ![Bedingungen für eine Ausnahme](../debugger/media/dbg-conditional-exception.png "Dbgconditionalexception")
 
-2. Wählen Sie zum Hinzufügen zusätzlicher erforderlichen Bedingungen auf die Ausnahme **Bedingung hinzufügen** für jede neue Bedingung. Zusätzliche Bedingung Linien angezeigt werden.
+2. Um der Ausnahme zusätzliche erforderliche Bedingungen hinzuzufügen, wählen Sie **Bedingung hinzufügen** für jede neue Bedingung aus. Weitere Bedingungs Zeilen werden angezeigt.
 
-   ![Zusätzliche Bedingungen für eine Ausnahme](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
+   ![Zusätzliche Bedingungen für eine Ausnahme](../debugger/media/extraconditionsforanexception.png "Extraconditionsforanexception")
 
-3. Geben Sie für jede Zeile Bedingung den Namen des Moduls, und ändern Sie die Liste der Vergleich-Operator, **gleich** oder **Not Equals**. Sie können Platzhalter angeben (**\\\***) im Namen mehr als einem Modul angeben.
+3. Geben Sie für jede Bedingungs Zeile den Namen des Moduls ein, und ändern Sie die Liste der Vergleichs Operatoren in " **gleich** " oder " **nicht gleich**". Sie können Platzhalter ( **\\\*** ) im Namen angeben, um mehr als ein Modul anzugeben.
 
-4. Wenn Sie eine Bedingung zu löschen möchten, wählen Sie die **X** am Ende der Zeile für die Bedingung.
+4. Wenn Sie eine Bedingung löschen müssen, wählen Sie das **X** am Ende der Bedingungs Zeile aus.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Fortfahren mit der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [Vorgehensweise: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [Vorgehensweise: Use native run-time checks (Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen)](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Gewusst wie: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Gewusst wie: Verwenden von nativen Laufzeitprüfungen](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Use run-time checks without the C run-time library (Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek)](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

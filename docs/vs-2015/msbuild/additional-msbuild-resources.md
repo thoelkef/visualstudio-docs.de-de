@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187090"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298222"
 ---
 # <a name="additional-msbuild-resources"></a>Zusätzliche MSBuild-Ressourcen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -612,15 +612,15 @@ ms.locfileid: "68187090"
 Wenn Sie versuchen, ein Problem zu lösen und die benötigten Informationen in der Dokumentation nicht finden können, können Sie andere Ressourcen wie Knowledge Base-Artikel, die Entwicklercommunity oder den Produktsupport konsultieren.  
   
 ## <a name="knowledge-base-articles"></a>Knowledge Base-Artikel  
- Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Sie können die KB-Artikel über die Website [Knowledge Base (MSBuild-Suchergebnisse)](http://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) aufrufen.  
+ Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen durchsuchen. Obwohl nicht zu allen Problemen entsprechende KB-Artikel verfügbar sind, sind die bei einer größeren Anzahl von Kunden aufgetretenen Fehler in der Regel dokumentiert. Sie können die KB-Artikel über die Website [Knowledge Base (MSBuild-Suchergebnisse)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) aufrufen.  
   
 ## <a name="community-forums"></a>Communityforen  
- In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Newsgroups nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden. Sie können über die [MSDN-Foren](http://go.microsoft.com/fwlink/?LinkId=48931) auf das Forum zu Visual Studio und MSBuild zugreifen.  
+ In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Newsgroups nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden. Sie können über die [MSDN-Foren](https://go.microsoft.com/fwlink/?LinkId=48931) auf das Forum zu Visual Studio und MSBuild zugreifen.  
   
- Auf der Website [Channel 9 MSBuild](http://channel9.msdn.com/) können Sie auf [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Communityressourcen zugreifen.  
+ Auf der Website [Channel 9 MSBuild](https://channel9.msdn.com/) können Sie auf [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Communityressourcen zugreifen.  
   
 ## <a name="product-support"></a>Produktsupport  
- Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angeschaut haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Hilfe und -Support](http://go.microsoft.com/fwlink/?linkid=1782). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie unter [Sprechen Sie mit uns](../ide/talk-to-us.md).  
+ Wenn noch Fragen offen sein sollten, nachdem Sie sich die anderen Ressourcen angeschaut haben, können Sie sich an den Supportdienst von Microsoft wenden. Diesen finden Sie unter [Microsoft-Hilfe und -Support](https://go.microsoft.com/fwlink/?linkid=1782). Weitere Informationen zum Produktsupport in Ihrer Nähe finden Sie unter [Sprechen Sie mit uns](../ide/talk-to-us.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung bei .NET Framework-Zielversionsfehlern](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

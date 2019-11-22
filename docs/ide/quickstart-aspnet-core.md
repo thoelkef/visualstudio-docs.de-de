@@ -2,7 +2,7 @@
 title: Erstellen einer ASP.NET Core-Web-App in C#
 description: Dieser Artikel enthält eine exemplarische Vorgehensweise zum Erstellen einer einfachen „Hallo Welt“-Web-App mit C# und ASP.NET Core.
 ms.custom: mvc,seodec18
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
+ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516891"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753962"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -120,6 +120,8 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
 ## <a name="create-and-run-the-app"></a>Erstellen und Ausführen der App
 
+::: moniker range="vs-2017"
+
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **Seiten**, und wählen Sie die **About.cshtml**.
 
    ![Auswählen der About-cshtml-Datei im Projektmappen-Explorer](../ide/media/csharp-aspnet-about-page-html-file.png)
@@ -168,6 +170,41 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
   ![Animierte GIF-Datei, auf der gezeigt wird, wie eine einfache C#-ASP.NET Core-Web-App in Visual Studio erstellt und ausgeführt wird](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie etwas über C#, ASP.NET Core und die Visual Studio-IDE (Integrierte Entwicklungsumgebung) gelernt haben.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **Seiten**, und wählen Sie die Datei **Index.cshtml** aus.
+
+   ![Auswählen der Datei „Index.cshtml“ im Projektmappen-Explorer](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+
+   Diese Datei entspricht der Seite mit der Bezeichnung **Home** in der Web-App, die im Webbrowser ausgeführt wird.
+
+   ![Die Seite „Info“ in der Web-App](../ide/media/vs-2019/csharp-aspnet-index-page.png)
+
+   Im Editor sehen Sie HTML-Code für den Text, der auf der Seite **Home** angezeigt wird.
+
+   ![Der HTML-Code in der Datei „Index.cshtml“ für die Startseite im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+
+1. Ändern Sie den Text „Welcome“ in „**Hello World!** “.
+
+   ![Ändern des HTML-Standardcodes, der „Welcome“ lautet, in „Hello World“ im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+
+1. Klicken Sie auf **IIS Express**, oder drücken Sie **STRG**+**F5**, um die App auszuführen und im Webbrowser zu öffnen.
+
+   ![Die Schaltfläche „IIS Express“ in Visual Studio](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
+
+   > [!NOTE]
+   > Wenn Sie die Fehlermeldung **Verbindung mit Webserver „IIS Express“ nicht möglich** erhalten oder eine Fehlermeldung angezeigt wird, in der ein SSL-Zertifikat erwähnt wird, schließen Sie Visual Studio. Öffnen Sie dann Visual Studio unter Verwendung der Option **Als Administrator ausführen** aus dem Kontextmenü. Führen Sie die Anwendung anschließend erneut aus.
+
+1. Überprüfen Sie im Webbrowser, ob auf der Seite **Home** Ihr aktualisierter Text angezeigt wird.
+
+   ![Anzeigen der aktualisierten Seite „Home“ mit den vorgenommenen Änderungen](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
+
+1. Schließen Sie den Webbrowser.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte
 

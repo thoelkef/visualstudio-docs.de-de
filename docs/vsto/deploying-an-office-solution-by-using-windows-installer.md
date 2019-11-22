@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69551714"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986139"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Stellen Sie eine Office-Projekt Mappe mithilfe Windows Installer
 
@@ -59,15 +59,15 @@ Wenn Sie Visual Studio zum Erstellen eines Windows Installers verwenden, können
 
 Weitere Informationen zum Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce finden Sie unter Bereitstellen einer Office-Projekt Mappe [mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-Informationen zum Erstellen einer Windows Installer Datei mithilfe [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] finden Sie unter Bereitstellen [einer Visual Studio 2010-Tools für Office](http://go.microsoft.com/fwlink/?LinkId=201807)-Projekt Mappe mit Windows Installer.
+Informationen zum Erstellen einer Windows Installer Datei mithilfe [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]finden Sie unter Bereitstellen [einer Visual Studio 2010-Tools für Office](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))-Projekt Mappe mit Windows Installer.
 
 ## <a name="Download"></a>Herunterladen von Beispielen
 In diesem Thema werden die folgenden herunterladbaren Beispiele erläutert.
 
 |Beispiel<br /><br />|Beschreibung<br /><br />|
 |----------|---------------|
-|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Ein Excel VSTO-Add-In, das Sie auf einem Computer installieren können, der eine 32-Bit- oder 64-Bit-Version von Office ausführt.<br /><br />|
-|[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Eine Anpassung auf Dokumentebene in Excel, die Sie auf einem Computer installieren können, der eine 32-Bit- oder 64-Bit-Version von Office ausführt.<br /><br />|
+|[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|Ein Excel VSTO-Add-In, das Sie auf einem Computer installieren können, der eine 32-Bit- oder 64-Bit-Version von Office ausführt.<br /><br />|
+|[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|Eine Anpassung auf Dokumentebene in Excel, die Sie auf einem Computer installieren können, der eine 32-Bit- oder 64-Bit-Version von Office ausführt.<br /><br />|
 
 ## <a name="ApplySecurity"></a>Festlegen, wie der Projektmappe Vertrauenswürdigkeit gewährt werden soll
 Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen Sie Vertraulichkeit auf eine der nachfolgenden Weisen gewähren, oder Benutzer müssen auf eine vertrauenswürdige Eingabeaufforderung antworten, wenn Sie die Projektmappe installieren.
@@ -231,9 +231,9 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
 
 10. Kopieren Sie in Ihrem **Desktop** Ordner die Datei *Visual Studio 2010 Tools for Office Runtime. prq* in eines der folgenden Verzeichnisse auf dem Computer.
 
-   Für 32-Bit-Betriebssysteme: *%ProgramFiles%\installshield\2013le\setupvoraussetzungen \\*
+   Für 32-Bit-Betriebssysteme: *%ProgramFiles%\installshield\2013le\setupvoraussetzungen\\*
 
-   Bei 64-Bit-Betriebssystemen: *% Program Files (x86)% \ 2013le \ Setupvoraussetzungen \\*
+   Bei 64-Bit-Betriebssystemen: *% Program Files (x86)% \ 2013le \ Setupvoraussetzungen\\*
 
 11. Wählen Sie auf der Seite **Verteilbare Komponente** des InstallShield-Projekts die Schaltfläche **Aktualisieren** aus, um die Liste der verteilbaren Komponenten zu aktualisieren, wie in der folgenden Abbildung veranschaulicht.
 
@@ -510,4 +510,4 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 - [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md)
 - [Gewähren von Vertrauenswürdigkeit für Office-Lösungen](../vsto/granting-trust-to-office-solutions.md)
 - [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md)
-- [Bereitstellen einer Visual Studio 2010-Tools für Office-Projekt Mappe mit Windows Installer](http://go.microsoft.com/fwlink/?LinkId=201807)
+- [Bereitstellen einer Visual Studio 2010-Tools für Office-Projekt Mappe mit Windows Installer](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))

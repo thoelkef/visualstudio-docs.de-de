@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer Offlineinstallation
 description: Erfahren Sie, wie Sie Visual Studio offline installieren können, wenn Sie über eine unzuverlässige Internetverbindung oder eine geringe Bandbreite verfügen.
-ms.date: 10/11/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381098"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789984"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 
@@ -164,9 +164,9 @@ Wenn Sie eine andere Sprache als Englisch installieren möchten, ändern Sie `en
 > Wenn eine Installation aus einem lokalen Installationscache erfolgt, werden beim Setup die lokalen Versionen dieser Dateien verwendet. Wenn Sie während der Installation jedoch Komponenten verwenden, die sich nicht im Cache befinden, wird versucht, sie aus dem Internet herunterzuladen.
 
 ::: moniker range="vs-2019"
-
-> Wenn Sie auf Offlinesystemen bei Installationen und Updates mit 16.1 und höher die Fehlermeldung „Ein Produkt, das mit den folgenden Parametern übereinstimmt, wurde nicht gefunden“ erhalten, verwenden Sie mit 16.3.5 oder höher den Schalter „--noweb“.
-
+> [!IMPORTANT]
+> Wenn Sie bei Offlineinstallationen die Fehlermeldung „Ein Projekt, das mit den folgenden Parametern übereinstimmt, wurde nicht gefunden“ erhalten, stellen Sie sicher, dass Sie bei Version 16.3.5 oder höher den Schalter `--noweb` verwenden.
+>
 ::: moniker-end
 
 Um sicherzustellen, dass Sie nur die Dateien installieren, die Sie zuvor heruntergeladen haben, verwenden Sie dieselben Befehlszeilenoptionen, die Sie zum Erstellen des Layoutcaches verwendet haben. Wenn Sie z. B. einen Layoutcache mit dem folgenden Befehl erstellt haben:
@@ -180,6 +180,8 @@ Anschließend führen Sie mit dem folgenden Befehl die Installation aus:
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+Weitere Beispiele für die Verwendung von [Befehlszeilenparametern](use-command-line-parameters-to-install-visual-studio.md) finden Sie auf der Seite [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio](command-line-parameter-examples.md). 
 
 > [!NOTE]
 > Wenn eine Fehlermeldung mit dem Hinweis zurückgegeben wird, dass eine Signatur ungültig ist, müssen Sie die aktualisierten Zertifikate installieren. Öffnen Sie den Ordner „Zertifikate“ in Ihrem Offlinecache. Doppelklicken Sie auf jede der Zertifikatdateien, und schließen Sie dann den Zertifikat-Manager-Assistenten ab. Wenn Sie nach einem Kennwort gefragt werden, lassen Sie es leer.

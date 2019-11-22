@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von Datenbanken und Datenebenenanwendungen
+title: Creating and managing databases and data-tier applications
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -14,30 +14,30 @@ caps.latest.revision: 40
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d6ed13f2e21ea6b9da82eb47afefdd16088e71d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2b1caf45235f9dd745841cb26a2fa10a148a7b5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672463"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299644"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Erstellen und Verwalten von Datenbanken und Datenschichtanwendungen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 WICHTIG]
-> Die Datenbankprojekte, die in früheren Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] enthalten waren, werden jetzt in [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] Tools bereitgestellt. Weitere Informationen finden Sie unter [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> The database projects that were included in earlier versions of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] are now provided in [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] tools. For more information, see [SQL Server Developer Tools](https://go.microsoft.com/fwlink/?LinkId=228126).
 
- Sie können Datenbankprojekte zum Erstellen neuer Datenbanken, neuer Datenebenenanwendungen (DACs) und zum Aktualisieren vorhandener Datenbanken und Datenebenenanwendungen verwenden. Sowohl Datenbankprojekte als auch DAC-Projekte ermöglichen es Ihnen, Versionskontrolle und Projekt Verwaltungsverfahren auf die Datenbankentwicklung anzuwenden, ähnlich wie Sie diese Techniken auf verwalteten oder systemeigenen Code anwenden. Sie können dem Entwicklungsteam dabei helfen, Änderungen an Datenbanken und Datenbankservern zu verwalten, indem Sie ein *DAC-Projekt*, ein *Datenbankprojekt*oder ein *Server Projekt* erstellen und es in die Versionskontrolle versetzen. Mitglieder des Teams können dann Dateien Auschecken, um Änderungen in einer *isolierten Entwicklungsumgebung*oder in einem Sandkasten auszuführen, zu erstellen und zu testen, bevor Sie Sie für das Team freigeben. Um die Codequalität zu gewährleisten, kann Ihr Team alle Änderungen für eine bestimmte Version der Datenbank in einer Stagingumgebung abschließen und testen, bevor Sie die Änderungen in der Produktionsumgebung bereitstellen.
+ You can use database projects to create new databases, new data-tier applications (DACs), and to update existing databases and data-tier applications. Both database projects and DAC projects enable you to apply version control and project management techniques to your database development efforts in much the same way that you apply those techniques to managed or native code. You can help your development team manage changes to databases and database servers by creating a *DAC project*, *database project*, or a *server project* and putting it under version control. Members of your team can then check out files to make, build, and test changes in an *isolated development environment*, or sandbox, before sharing them with the team. To help ensure code quality, your team can finish and test all changes for a particular release of the database in a staging environment before you deploy the changes into production.
 
- Eine Liste der Datenbankfunktionen, die von Datenebenenanwendungen unterstützt werden, finden Sie unter Features, die in Datenebenenanwendungen auf der Microsoft [-Website unterstützt](http://go.microsoft.com/fwlink/?LinkId=164239) werden. Wenn Sie Funktionen in der Datenbank verwenden, die nicht von Datenebenenanwendungen unterstützt werden, sollten Sie stattdessen ein Datenbankprojekt verwenden, um Änderungen an der Datenbank zu verwalten.
+ For a list of the database features that are supported by Data-tier Applications, see [Features Supported in Data-tier Applications](https://go.microsoft.com/fwlink/?LinkId=164239) on the Microsoft web site. If you use features in your database that are not supported by Data-tier Applications, you should instead use a database project to manage changes to your database.
 
-## <a name="common-high-level-tasks"></a>Allgemeine allgemeine Aufgaben
+## <a name="common-high-level-tasks"></a>Common High-Level Tasks
 
-|Allgemeine Aufgabe|Unterstützender Inhalt|
+|High-Level Task|Unterstützender Inhalt|
 |----------------------|------------------------|
-|**Beginnen Sie mit der Entwicklung einer Datenebenenanwendung:** Eine DAC ist ein neues Konzept, das mit [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] eingeführt wurde, das die Definition für eine [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Datenbank und die unterstützenden Instanzobjekte enthält, die von einer Client-oder einer 3-Ebenen-Anwendung verwendet werden. Eine DAC enthält Datenbankobjekte, z. b. Tabellen und Sichten, sowie instanzentitäten, z. b. Anmeldungen. Sie können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwenden, um ein DAC-Projekt zu erstellen, eine DAC-Paketdatei zu erstellen und diese DAC-Paketdatei an einen Datenbankadministrator für die Bereitstellung auf einer Instanz der [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Datenbank-Engine zu senden.|-   [Erstellen und Verwalten von Datenebenenanwendungen](http://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft-Website)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Ausführen einer iterativen Datenbankentwicklung:** Wenn Sie ein Entwickler oder Tester sind, checken Sie Teile des Projekts aus und aktualisieren Sie dann in einer isolierten Entwicklungsumgebung. Mit dieser Art von Umgebung können Sie Ihre Änderungen testen, ohne dass sich dies auf andere Mitglieder des Teams auswirkt. Nachdem die Änderungen vorgenommen wurden, überprüfen Sie die Dateien wieder in die Versionskontrolle, wo andere Teammitglieder ihre Änderungen abrufen und auf einem Testserver bereitstellen können.|-   [Abfrage-und Text-Editoren (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft-Website)<br />-   [Transact-SQL-Debugger](http://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft-Website)|
-|**Prototypen, überprüfen von Testergebnissen und Ändern von Daten Bank Skripts und Objekten:** Sie können den [!INCLUDE[tsql](../includes/tsql-md.md)]-Editor verwenden, um eine dieser allgemeinen Aufgaben auszuführen.|-   [Abfrage-und Text-Editoren (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft-Website)|
+|**Start development of a data-tier application:** A DAC is a new concept introduced with [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] that contains the definition for a [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] database and the supporting instance objects that are used by a client-server or 3-tier application. A DAC includes database objects, such as tables and views, together with instance entities such as logins. You can use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to create a DAC project, build a DAC package file, and send that DAC package file to a database administrator for deployment onto an instance of the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] database engine.|-   [Creating and Managing Data-tier Applications](https://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web site)<br />-   [SQL Server Management Studio](https://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Performing iterative database development:** If you are a developer or a tester, you check out parts of the project and then update them in an isolated development environment. By using this type of environment, you can test  your changes without affecting other members of the team. After the changes are complete, you check the files back into version control, where other team members can obtain your changes and build and deploy them to a test server.|-   [Query and Text Editors (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)<br />-   [Transact-SQL Debugger](https://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web site)|
+|**Prototyping, verifying test results, and modifying database scripts and objects:** You can use the [!INCLUDE[tsql](../includes/tsql-md.md)] editor to perform any one of these common tasks.|-   [Query and Text Editors (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)|
 
 ## <a name="see-also"></a>Siehe auch
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

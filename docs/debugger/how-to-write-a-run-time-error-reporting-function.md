@@ -1,5 +1,5 @@
 ---
-title: Schreiben einer Berichtsfunktion Laufzeitfehler | Microsoft-Dokumentation
+title: Schreiben einer Lauf Zeit Fehler Berichterstattungs Funktion | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b145e34b0dfeafbb7fde436dd561721962a89f3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905901"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731806"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Vorgehensweise: Schreiben einer Berichtsfunktion für Laufzeitfehler (C++)
 Eine benutzerdefinierte Berichtsfunktion für Laufzeitfehler muss die gleiche Deklaration wie `_CrtDbgReportW` aufweisen. Die Funktion muss den Wert 1 an den Debugger zurückgeben.

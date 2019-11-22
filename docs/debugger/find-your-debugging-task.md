@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349708"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599292"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Suchen Ihres debugtasks in Visual Studio
 
@@ -43,11 +43,15 @@ Andernfalls können Sie C# für F# und nur [eine Objekt-ID mit einem bedingten H
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>Anhalten von Code innerhalb einer Schleife bei einer bestimmten Iterationen
 
-Legen Sie einen Breakpoint mithilfe der **Treffer Anzahl** als Bedingung fest. Weitere Informationen finden Sie unter [Treffer Anzahl](using-breakpoints.md#hit-count).
+Legen Sie einen Breakpoint mithilfe der **Treffer Anzahl** als Bedingung fest. Weitere Informationen finden Sie unter [Treffer Anzahl](using-breakpoints.md#set-a-hit-count-condition).
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>Anhalten von Code am Anfang einer Funktion, wenn Sie den Funktionsnamen, aber nicht seinen Speicherort kennen
 
 Hierfür können Sie einen Funktions Haltepunkt verwenden. Weitere Informationen finden Sie unter [Festlegen von Funktions Breakpoints](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>Anhalten von Code am Anfang mehrerer Funktionen mit gleichem Namen
+
+Wenn Sie über mehrere Funktionen mit dem gleichen Namen (überladene Funktionen oder Funktionen in unterschiedlichen Projekten) verfügen, können Sie einen Funktions-halte [Punkt](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)verwenden.
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>Verwalten und Nachverfolgen von Haltepunkten
 
@@ -99,13 +103,21 @@ Informationen zum Konfigurieren von Debuggeroptionen und debuggerprojekteinstell
 
 ## <a name="additional-tasks"></a>Weitere Aufgaben
 
+### <a name="fix-an-exception"></a>Beheben einer Ausnahme
+
+Siehe [beheben einer Ausnahme](write-better-code-with-visual-studio.md#fix-an-exception).
+
 ### <a name="edit-code-during-a-debugging-session"></a>Bearbeiten von Code während einer Debugsitzung
 
-Verwenden Sie [Bearbeiten und Fortfahren](edit-and-continue.md). Verwenden Sie für XAML das [heiße Laden von XAML](xaml-hot-reload.md).
+Verwenden Sie [Bearbeiten und Fortfahren](edit-and-continue.md). Verwenden Sie für XAML das [heiße Laden von XAML](../xaml-tools/xaml-hot-reload.md).
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Senden von Nachrichten an das Ausgabefenster, ohne Code zu ändern
 
 Legen Sie einen Ablauf Verfolgungs Punkt fest. Weitere Informationen finden Sie unter [verwenden](using-tracepoints.md)von Ablauf Verfolgungs Punkten.
+
+## <a name="view-the-order-in-which-functions-are-called"></a>Anzeigen der Reihenfolge, in der Funktionen aufgerufen werden
+
+Siehe [How to View the callstack](how-to-use-the-call-stack-window.md).
 
 ### <a name="debug-on-remote-machines"></a>Debuggen auf Remote Computern
 

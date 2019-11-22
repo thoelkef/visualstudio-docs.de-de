@@ -1,11 +1,10 @@
 ---
 title: 'Schnellstart: Erstellen Ihrer ersten Vue.js-App'
 description: In dieser Schnellstartanleitung erstellen Sie mit den Node.js-Tools für Visual Studio eine Vue.js-App in Visual Studio
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226500"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428770"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
 
@@ -38,7 +37,7 @@ Mithilfe dieser fünf- bis zehnminütigen Einführung in die integrierte Entwick
     Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
     ::: moniker-end
 
-    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
     ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
 
@@ -104,9 +103,13 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 
 1. (Gilt nur für das TypeScript-Projekt) Wählen sie in Visual Studio die Option **Erstellen** > **Projektmappe bereinigen** aus.
 
+    ::: moniker range=">=vs-2019"
+    Überspringen Sie diesen Schritt, wenn Sie die TypeScript-Vorlage verwenden, die in Visual Studio 2019 enthalten ist.
+    ::: moniker-end
+
 1. Wählen Sie als Nächstes **Erstellen** > **Projektmappe erstellen** aus, um das Projekt zu erstellen. Überprüfen Sie die Buildergebnisse im **Ausgabenfenster**, und wählen Sie **Build** in der Liste **Ausgabe anzeigen von** aus.
 
-    Die Vue.js-Projektvorlage verwendet das npm-Skript `build`, indem sie ein Postbuildereignis konfiguriert. Wenn Sie diese Einstellung ändern möchten, öffnen Sie die Projektdatei (*\<Projektname\>.njsproj*) über den Windows-Explorer, und suchen Sie nach der folgenden Codezeile:
+    Die JavaScript-Projektvorlage „Vue.js“ (und ältere Versionen der TypeScript-Vorlage) verwenden das npm-Skript `build`, indem sie ein Postbuildereignis konfigurieren. Wenn Sie diese Einstellung ändern möchten, öffnen Sie die Projektdatei ( *\<Projektname\>.njsproj*) über den Windows-Explorer, und suchen Sie nach der folgenden Codezeile:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
    In der Konsole wird Ihnen die Meldung *Development Server wird gestartet* angezeigt.
 
    Anschließend wird die App in einem Browser geöffnet.
+   
+   Wenn die ausgeführte App nicht angezeigt wird, aktualisieren Sie die Seite.
 
    ![Im Browser ausgeführte Vue.js-App](../javascript/media/vuejs-running-app.png)
 
@@ -128,6 +133,6 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Sehen Sie sich das [Tutorial zu Node.js und Express](../nodejs/tutorial-nodejs.md) an.
-- Sehen Sie sich das [Tutorial zu Node.js und React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx) an.
+- Sehen Sie sich das [Tutorial zu Node.js und Express](tutorial-nodejs.md) an.
+- Sehen Sie sich das [Tutorial zu Node.js und React](tutorial-nodejs-with-react-and-jsx.md) an.
 - [Deploy the app to Linux App Service (Bereitstellen der App für Linux App Service)](../javascript/publish-nodejs-app-azure.md)

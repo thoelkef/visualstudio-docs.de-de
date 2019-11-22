@@ -3,15 +3,15 @@ title: Visual Studio App Center-Vorteil in Visual Studio-Abonnements | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Visual Studio App Center-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787834"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161918"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center in Visual Studio-Abonnements
 
@@ -42,7 +42,9 @@ Der Einstieg in Visual Studio App Center ist ganz einfach.
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR<sup>1</sup> | Included       |  Ja          |
+| Visual Studio Enterprise mit GitHub Enterprise  | VL | Included       |  Ja          |
 | Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail                                       | Included                                                            |Ja |
+| Visual Studio Professional mit GitHub Enterprise | VL                                      | Included                                                            |Ja |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Included                                                            |Ja |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Included                                                            |Ja |
 ||
@@ -72,4 +74,7 @@ Jetzt sollten Sie auf das App Center-Portal zugreifen und Ihr Konto erstellen k�
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
-Azure ist Ihre persönliche Sandbox zum Entwickeln/Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen. Aktivieren Sie Ihren [Azure-Vorteil](vs-azure.md), falls dies noch nicht geschehen ist. 
+Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Einzelguthaben für Azure DevTest](vs-azure.md)

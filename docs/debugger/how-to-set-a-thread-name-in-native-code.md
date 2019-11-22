@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e719563c831c50cc325d70d0de431f4be1bf514
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732755"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911432"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Gewusst wie: Festlegen eines Threadnamens in systemeigenem Code
 Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Die Thread Benennung eignet sich für die Identifizierung von relevanten Threads im **Thread** Fenster beim Debuggen eines laufenden Prozesses. Erkennungs-und Erkennungs Threads können auch hilfreich sein, wenn Sie das Debuggen von Postmortem per Absturz Abbild Überprüfung durchführen und die Leistungs Erfassung mithilfe verschiedener Tools analysieren.
@@ -37,7 +37,7 @@ Beachten Sie, dass _beide_ Ansätze zusammen verwendet werden können, wenn gew�
 Vorteile:
 * Thread Namen sind beim Debuggen in Visual Studio sichtbar, unabhängig davon, ob der Debugger an den Prozess angefügt wurde, während setthreaddescription aufgerufen wird.
 * Thread Namen sind beim Ausführen des Debuggens von Postmortem durch das Laden eines Absturz Abbilds in Visual Studio sichtbar.
-* Thread Namen werden auch angezeigt, wenn Sie andere Tools verwenden, z. b. den [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) -Debugger und [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Performance Analyzer.
+* Thread Namen werden auch angezeigt, wenn Sie andere Tools verwenden, z. b. den [WinDbg](/windows-hardware/drivers/debugger/debugger-download-tools) -Debugger und [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) Performance Analyzer.
 
 Zu beachten:
 * Thread Namen werden nur in Visual Studio 2017, Version 15,6 und höheren Versionen, angezeigt.

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung) | Microsoft-Dokumentation'
+title: 'How to: Manually Package an Extension (VSIX Deployment) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a615aea75ec00e49ee4d2837b8b4e2b1d20d3306
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681684"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293626"
 ---
-# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)
+# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Gewusst wie: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)
 Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung für die Bereitstellung zu verpacken. Es gibt drei Möglichkeiten zum Erstellen des Pakets:  
   
 - Erstellen Sie mithilfe einer der Erweiterungsvorlagen, die im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK enthalten sind, ein VSIX-Paketprojekt. Dies ist die einfachste Möglichkeit für die meisten Szenarien.  
@@ -29,7 +29,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
  Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
   
 > [!NOTE]
-> Die Namen der Dateien in VSIX-Paketen darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> The names of files in VSIX packages must not include spaces, nor characters that are reserved in Uniform Resource Identifiers (URI), as defined under [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>So erstellen Sie manuell ein VSIX-Paket  
   
@@ -41,7 +41,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
   
 4. Erstellen Sie eine zweite XML-Datei, und nennen Sie sie `[Content_Types].xml`.  
   
-5. Geben Sie in der [Content_Types] .xml-Datei gemäß [Struktur der Content_types\]XML-Datei](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Fill in the [Content_Types].xml file as specified in [The Structure of the Content_types\].xml File](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
 6. Fügen Sie beide XML-Dateien zusammen mit der zu bereitstellenden Erweiterung in ein Verzeichnis ein.  
   
@@ -54,6 +54,6 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
 8. Benennen Sie die resultierende ZIP-Datei in *Dateiname*.vsix um, wobei *Dateiname* der Name der verteilbaren Datei ist, mit der das Paket installiert wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)   
- [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest-Element (Stammelement, VSX-Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Shipping Visual Studio Extensions](../extensibility/shipping-visual-studio-extensions.md)   
+ [Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md)   
+ [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

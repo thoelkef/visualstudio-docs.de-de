@@ -1,5 +1,5 @@
 ---
-title: Dokumentdaten und Dokument anzeigen, in benutzerdefinierten Editoren | Microsoft-Dokumentation
+title: Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,39 +10,39 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7574fad343e2966ab9a8782d472a0491bd29767b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2aa8779a069f4b001743326470f69f3cb35a8c10
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348086"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568879"
 ---
-# <a name="document-data-and-document-view-in-custom-editors"></a>Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren
-Ein benutzerdefinierter Editor besteht aus zwei Teilen: ein dokumentdatenobjekt und eine dokumentenansichtsobjekt. Wie die Namen schon sagen, stellt das dokumentendatenobjekt die Textdaten, die angezeigt werden. Auf ähnliche Weise stellt das dokumentenansichtsobjekt (oder "View") ein oder mehrere Fenster, in dem das dokumentendatenobjekt angezeigt.
+# <a name="document-data-and-document-view-in-custom-editors"></a>Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren
+Ein benutzerdefinierter Editor besteht aus zwei Teilen: einem Dokument Datenobjekt und einem Dokument Ansichts Objekt. Wie der Name bereits vermuten lässt, stellt das Dokument Datenobjekt die anzuzeigenden Textdaten dar. Ebenso stellt das Dokument Ansichts Objekt (oder "View") ein oder mehrere Fenster dar, in denen das Dokument Datenobjekt angezeigt werden soll.
 
-## <a name="document-data-object"></a>Dokumentendatenobjekt
- Ein dokumentdatenobjekt ist eine Darstellung des Texts im Textpuffer. Es ist ein COM-Objekt, in dem Dokumenttext und andere Informationen gespeichert. Das dokumentendatenobjekt außerdem Dokument Persistenz behandelt und kann von mehreren Ansichten der Daten. Weitere Informationen finden Sie unter
+## <a name="document-data-object"></a>Dokument Datenobjekt
+ Ein Dokument Datenobjekt ist eine Datendarstellung von Text im Text Puffer. Es handelt sich um ein COM-Objekt, in dem Dokument Text und andere Informationen gespeichert werden. Das Dokument Datenobjekt verarbeitet außerdem die Dokument Persistenz und ermöglicht mehrere Ansichten der Daten. Weitere Informationen finden Sie unter
 
- <xref:EnvDTE80.Window2.DocumentData%2A> und [dokumentieren Windows](../extensibility/internals/document-windows.md).
+ <xref:EnvDTE80.Window2.DocumentData%2A> und [Dokument Fenster](../extensibility/internals/document-windows.md).
 
- Benutzerdefinierter Editoren und Designer können gewünschtenfalls verwenden die <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt oder ihre eigenen benutzerdefinierten Puffer. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> folgt den vereinfachte Modell für worteinbettungen für einen standard-Editor, mehrere Ansichten unterstützt und bietet Event-Schnittstellen, die zum Verwalten von mehreren Ansichten verwendet werden.
+ Benutzerdefinierte Editoren und Designer können sich für die Verwendung des <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekts oder eines eigenen benutzerdefinierten Puffers entscheiden. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> folgt dem vereinfachten Einbettungs Modell für einen Standard Editor, unterstützt mehrere Ansichten und stellt Ereignis Schnittstellen bereit, die zum Verwalten mehrerer Ansichten verwendet werden.
 
-## <a name="document-view-object"></a>Dokumentenansichtsobjekt
- Ein Fenster, Code und anderer Text angezeigt, wird als ein Dokument bezeichnet Ansicht "oder". Wenn Sie einen Editor erstellen, können Sie entweder eine einzelne Ansicht auswählen, in der Text in einem einzelnen Fenster angezeigt wird. Oder Sie können eine Ansicht für mehrere, in der Text in mehr als einem Fenster angezeigt wird. Die Auswahl hängt von Ihrer Anwendung ab. Wenn Sie die Seite-an-Seite bearbeiten benötigen, würden Sie beispielsweise mehrere Ansichten auswählen. Jede Ansicht, die einen Eintrag in der integrierten Entwicklungsumgebung des (IDE) mit der Document-Tabelle (RDT) zugeordnet ist. In den anzeigefenstern gehören zu einem Projekt oder eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt.
+## <a name="document-view-object"></a>Dokument Ansichts Objekt
+ Ein Fenster, in dem Code und anderer Text angezeigt werden, wird als Dokument Ansicht oder-Sicht bezeichnet. Wenn Sie einen Editor erstellen, können Sie entweder eine einzelne Ansicht auswählen, in der Text in einem einzelnen Fenster angezeigt wird. Oder Sie können eine mehrere Ansicht auswählen, in der Text in mehr als einem Fenster angezeigt wird. Ihre Auswahl hängt von Ihrer Anwendung ab. Wenn Sie z. b. eine Seite-an-Seite-Bearbeitung benötigen, wählen Sie mehrere anzeigen aus. Jede Ansicht ist einem Eintrag in der integrierten Entwicklungsumgebung (IDE), in der die Dokument Tabelle (RDT) ausgeführt wird, zugeordnet. Anzeige Fenster gehören zu einem Projekt oder zu einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt.
 
- Wenn Ihr Editor mehrere Ansichten für ein dokumentdatenobjekt unterstützt, müssen Ihre Dokumentdaten und dokumentenansichtsobjekten getrennt werden. Andernfalls können sie gruppiert werden. Weitere Informationen finden Sie unter [unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md).
+ Wenn der Editor mehrere Ansichten eines Dokument Datenobjekts unterstützt, müssen die Dokument Daten und die Dokument Ansichts Objekte getrennt sein. Andernfalls können Sie gruppiert werden. Weitere Informationen finden Sie [unter Unterstützung mehrerer Dokument Ansichten](../extensibility/supporting-multiple-document-views.md).
 
- Die IDE benachrichtigt Ansichten über Ereignisse (z. B., wenn eine Projektmappe mit einem Dokument geschlossen wird) durch entsprechende eine Element-ID (Element-ID) für jeden Eintrag in der aktiven Dokumenttabelle. Weitere Informationen hierzu finden Sie unter [Document-Tabelle mit](../extensibility/internals/running-document-table.md).
+ Die IDE benachrichtigt Sichten über Ereignisse (z. b., wenn eine Projekt Mappe, die ein Dokument enthält, geschlossen wird), indem ein Element Bezeichner (Itemid) für jeden Eintrag in der laufenden Dokument Tabelle abgeglichen wird. Weitere Informationen hierzu finden Sie unter [Ausführen der Dokument Tabelle](../extensibility/internals/running-document-table.md).
 
- Es gibt zwei Optionen zum Erstellen einer Ansicht für einen benutzerdefinierten Editor. Eine ist die direkte Aktivierungsmodell, in dem die Ansicht in einem Fenster mit einem ActiveX-Steuerelement oder ein dokumentdatenobjekt gehostet wird. Die zweite ist die vereinfachte einbetten Modell, in dem die Ansicht von gehostet wird [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> wird implementiert, um die Befehle im Fenster zu behandeln. Weitere Informationen über das Modell für die direkte Aktivierung finden Sie unter [direkte Aktivierung](../extensibility/in-place-activation.md). Weitere Informationen zu den vereinfachten Modell für worteinbettungen, finden Sie unter [zum Vereinfachen des Einbettens](../extensibility/simplified-embedding.md).
+ Es gibt zwei Optionen zum Erstellen einer Ansicht für einen benutzerdefinierten Editor. Eine ist das direkte Aktivierungs Modell, bei dem die Ansicht in einem Fenster mit einem ActiveX-Steuerelement oder einem Dokument Datenobjekt gehostet wird. Das zweite ist das vereinfachte Einbettungs Modell, bei dem die Ansicht von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gehostet wird und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> implementiert ist, um Fenster Befehle zu verarbeiten. Weitere Informationen zum direkten Aktivierungs Modell finden Sie unter direkte [Aktivierung](/visualstudio/misc/in-place-activation?view=vs-2015). Weitere Informationen über das vereinfachte Einbettungs Modell finden Sie unter [vereinfachte Einbettung](../extensibility/simplified-embedding.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Unterstützen Sie mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md)
-- [Zum Vereinfachen des Einbettens](../extensibility/simplified-embedding.md)
-- [Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten](../extensibility/how-to-attach-views-to-document-data.md)
-- [Verwaltung von Dokumentsperren](../extensibility/document-lock-holder-management.md)
-- [Einer und mehreren Registerkarten-Ansichten](../extensibility/single-and-multi-tab-views.md)
-- [Speichern eines Standarddokuments](../extensibility/internals/saving-a-standard-document.md)
-- [Persistenz und der ausgeführten Dokumententabelle](../extensibility/internals/persistence-and-the-running-document-table.md)
-- [Bestimmen Sie, welcher Editor eine Datei in einem Projekt öffnet](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
-- [Editorfactorys](../extensibility/editor-factories.md)
+
+- [Unterstützung mehrerer Dokument Sichten](../extensibility/supporting-multiple-document-views.md)
+- [Vereinfachte Einbettung](../extensibility/simplified-embedding.md)
+- [Gewusst wie: Anfügen von Sichten an Dokument Daten](../extensibility/how-to-attach-views-to-document-data.md)
+- [Dokument Sperr Inhaber-Verwaltung](../extensibility/document-lock-holder-management.md)
+- [Ansichten für einzelne und mehrere Registerkarten](../extensibility/single-and-multi-tab-views.md)
+- [Speichern eines Standard Dokuments](../extensibility/internals/saving-a-standard-document.md)
+- [Persistenz und die laufende Dokument Tabelle](../extensibility/internals/persistence-and-the-running-document-table.md)
+- [Bestimmen, welcher Editor eine Datei in einem Projekt öffnet](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)

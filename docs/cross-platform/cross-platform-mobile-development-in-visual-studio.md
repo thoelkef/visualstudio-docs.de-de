@@ -1,7 +1,7 @@
 ---
 title: Plattformübergreifende, mobile Entwicklung in Visual Studio | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/24/2018
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816130"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777768"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende Mobile-Entwicklung in Visual Studio
 
@@ -33,7 +33,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
 |**Weitere Informationen**|
 |--------------------|
-|[Installieren von Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Installieren von Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Informationen zu Xamarin in Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin mobile app development documentation (Dokumentation zur Entwicklung mobiler Apps mit Xamarin)](/xamarin/) |
 |[DevOps mit Xamarin-Apps](/xamarin/tools/ci/devops/) |
@@ -42,9 +42,9 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
 ### <a name="AndroidHTML"></a> Android-, iOS und Windows-Zielgeräte aus einer einzigen Codebasis
 
- Sie können native Apps für Android, iOS und Windows mit C#- oder F# erstellen (Visual Basic wird derzeit nicht unterstützt).  Installieren Sie zunächst Visual Studio 2017, und wählen Sie im Installer die Workload **Mobile-Entwicklung mit .NET** aus.
+ Sie können mit C#- oder F# native Apps für Android, iOS und Windows erstellen (Visual Basic wird derzeit nicht unterstützt).  Installieren Sie zunächst Visual Studio, und wählen Sie im Installer die Workload **Mobile Entwicklung mit .NET** aus.
 
- Wenn Sie Visual Studio 2017 bereits installiert haben, führen Sie den **Visual Studio-Installer** erneut aus, und wählen Sie ebenfalls die Workload **Mobile-Entwicklung mit .NET** für Xamarin aus.
+ Wenn Sie Visual Studio bereits installiert haben, führen Sie den **Visual Studio-Installer** erneut aus, und wählen Sie (wie weiter oben) die Workload **Mobile Entwicklung mit .NET** für Xamarin aus.
 
  Wenn Sie fertig sind, werden im Dialogfeld **Neues Projekt** Projektvorlagen angezeigt. Suchen Sie einfach auf „Xamarin“, wenn Sie Xamarin-Vorlagen benötigen.
 
@@ -71,7 +71,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
 ### <a name="WindowsHTML"></a>Windows 10-Zielgeräte
 
- ![Windows-Geräte](../cross-platform/media/windowsdevices.png "Windows Devices")
+ ![Windows-Geräte](../cross-platform/media/windowsdevices.png "Windows-Geräte")
 
  Wenn Sie eine App erstellen möchten, die für alle Windows 10-Geräte ausgelegt ist, erstellen Sie eine universelle Windows-App. Sie müssen die App mit einem einzelnen Projekt entwerfen. Ihre Seiten werden dann ordnungsgemäß gerendert, unabhängig davon, welches Gerät für die Anzeige verwendet wird.
 
@@ -84,9 +84,11 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 |[Entwickeln von Apps für die universelle Windows-Plattform (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrieren von Apps auf die universelle Windows-Plattform (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
+::: moniker range="vs-2017"
+
 ## <a name="HTML"></a>Erstellen einer App für Android, iOS und Windows (HTML/JavaScript)
 
- ![Windows-, iOS- und Android-Geräte](../cross-platform/media/homedevices.png "Windows, iOS, and Android devices")
+ ![Windows-, iOS- und Android-Geräte](../cross-platform/media/homedevices.png "Windows-, iOS- und Android-Geräte")
 
  Wenn Sie als Webentwickler mit HTML und JavaScript vertraut sind, können Sie mithilfe von Visual Studio-Tools für Apache Cordova eine Nutzung unter Windows, Android und iOS ermöglichen. Diese Apps können auf allen drei Plattformen ausgeführt werden. Sie erstellen sie mithilfe Ihrer Kenntnisse und der Vorgehensweisen, mit denen Sie vertraut sind.
 
@@ -94,7 +96,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
  Da diese APIs plattformübergreifend sind, können Sie den größten Teil Ihres Code für alle drei Plattformen verwenden. Dies trägt zu geringeren Entwicklungs- und Wartungskosten bei. Darüber hinaus müssen Sie nicht jedes Mal von Grund auf neu anfangen. Wenn Sie andere Arten von Webanwendungen erstellt haben, können Sie diese Dateien für Ihre Cordova-App verwenden, ohne sie ändern oder umgestalten zu müssen.
 
- ![Hybrid-Apps für mehrere Geräte mit JavaScript](../cross-platform/media/multidevicehybridapps.png "Multi-device hybrid apps with Javascript")
+ ![Hybrid-Apps für mehrere Geräte mit JavaScript](../cross-platform/media/multidevicehybridapps.png "Hybrid-Apps für mehrere Geräte mit JavaScript")
 
  Installieren Sie zunächst Visual Studio, und wählen Sie während des Setups die Workload **Mobile-Entwicklung mit JavaScript**. Die Cordova-Tools installieren automatisch sämtliche Drittanbietersoftware, die zum Erstellen der plattformübergreifenden App erforderlich ist.
 
@@ -106,42 +108,44 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
 |**Weitere Informationen**|
 |--------------------|
-|[Installieren von Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Installieren von Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Get started with Visual Studio Tools for Apache Cordova (Erste Schritte mit Visual Studio-Tools für Apache Cordova)](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Informationen zum Visual Studio Emulator für Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Informationen zum Visual Studio Emulator für Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
+
+::: moniker-end
 
 <a name="CPP"></a>
 
-## <a name="build-an-app-for-android-and-windows-c"></a>Erstellen einer App für Android und Windows (C++)
- ![Verwenden von C++ zur Erstellung für Android, iOS und Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+## <a name="build-an-app-for-android-ios-and-windows-c"></a>Erstellen einer App für Android, iOS und Windows (C++)
 
- Installieren Sie zunächst Visual Studio 2017 und die Workload **Mobile-Entwicklung mit C++**. Anschließend können Sie eine native Activity-App für Android oder eine App für Windows-Geräte erstellen. C++-Vorlagen für iOS-Geräte sind noch nicht verfügbar. Sie können für Android- und Windows-Geräte mit der gleichen Projektmappe arbeiten und anschließend den Code mithilfe einer plattformübergreifenden statischen oder dynamischen freigegebenen Bibliothek für beide freigeben.
+![Verwenden von C&#43;&#43; zum Entwickeln von Apps für Android, iOS und Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
- Wenn Sie eine App für Android erstellen müssen, die eine erweiterte Grafikbearbeitung erfordert, z.B. ein Spiel, können Sie C++ dazu verwenden. Beginnen Sie mit dem Projekt **Native-Activity Application (Android)** . Dieses Projekt bietet vollständige Unterstützung für die Clang-Toolkette.
+ Installieren Sie zunächst Visual Studio und die Workload **Mobile Entwicklung mit C++** . Anschließend können Sie eine Anwendung mit nativer Aktivität für Android oder eine App für Windows oder iOS erstellen. Sie können für Android, iOS und Windows mit der gleichen Projektmappe arbeiten und anschließend den Code mithilfe einer plattformübergreifenden statischen oder dynamischen freigegebenen Bibliothek für diese freigeben.
 
- ![Vorlage für Native Activity-Projekt](../cross-platform/media/cross-plat_cpp_native.png "Native activity project template")
+ Wenn Sie eine App für Android erstellen müssen, die eine erweiterte Grafikbearbeitung erfordert, z.B. ein Spiel, können Sie C++ dazu verwenden. Beginnen Sie mit dem Projekt **Anwendung mit nativer Aktivität (Android)** . Dieses Projekt bietet vollständige Unterstützung für die Clang-Toolkette.
+
+ ![Vorlage für Projekt mit nativer Aktivität](../cross-platform/media/cross-plat_cpp_native.png "Vorlage für Projekt mit nativer Aktivität")
 
  Wenn Sie so weit sind, dass Sie die Anwendung ausführen und überprüfen möchten, verwenden Sie den Android-Emulator. Er ist schnell, zuverlässig und leicht zu installieren und konfigurieren.
 
  Sie können auch eine App für sämtliche Typen von Windows 10-Geräten mithilfe von C++ und der Projektvorlage für UWP-Apps (Universelle Windows-Plattform) erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Windows 10-Zielgeräte](#WindowsHTML) weiter oben in diesem Thema.
 
- Sie können C++-Code für Android- und Windows-Geräten freigeben, indem Sie eine statische oder dynamische freigegebene Bibliothek erstellen.
+ Sie können C++-Code für Android, iOS und Windows freigeben, indem Sie eine statische oder dynamische freigegebene Bibliothek erstellen.
 
- ![Statische und dynamische freigegebene Bibliotheken](../cross-platform/media/cross_plat_cpp_libraries.png "Static and dynamic shared libraries")
+ ![Statische und dynamische freigegebene Bibliotheken](../cross-platform/media/cross_plat_cpp_libraries.png "Statische und dynamische freigegebene Bibliotheken")
 
- Sie können diese Bibliothek in einem Windows- oder Android-Projekt nutzen, wie sie weiter oben in diesem Abschnitt beschriebenen sind. Sie können sie auch in einer App verwenden, die Sie mithilfe von Xamarin, Java oder einer anderen Sprache erstellen, mit der Funktionen in einer nicht verwalteten DLL aufgerufen werden können.
+ Sie können diese Bibliothek, wie weiter oben in diesem Abschnitt beschrieben, in einem Windows-, iOS- oder Android-Projekt nutzen. Sie können sie auch in einer App verwenden, die Sie mithilfe von Xamarin, Java oder einer anderen Sprache erstellen, mit der Funktionen in einer nicht verwalteten DLL aufgerufen werden können.
 
  Beim Schreiben von Code in diesen Bibliotheken können Sie IntelliSense verwenden, um die systemeigenen APIs der Android- und Windows-Plattformen zu untersuchen. Diese Bibliotheksprojekte sind vollständig in den Visual Studio-Debugger integriert, sodass Sie mithilfe der erweiterten Funktionen des Debuggers Haltepunkte festlegen, Code durchlaufen und Probleme suchen und beheben können.
 
 |**Weitere Informationen**|
 |--------------------|
-|[Visual Studio herunterladen](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Tools für Visual C++ für die plattformübergreifende Entwicklung installieren](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)|
-|[Visual Studio C++ – Plattformübergreifende mobile Entwicklung](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Installieren der erforderlichen Tools und anschließendes Erstellen einer App mit systemeigener Aktivität für Android](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
+|[Herunterladen von Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
+|[Installieren der plattformübergreifenden mobilen Entwicklung mit C++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Weitere Informationen zum Verwenden von C++ für mehrere Plattformen](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Installieren der erforderlichen Tools und anschließendes Erstellen einer Anwendung mit nativer Aktivität für Android](create-an-android-native-activity-app.md)|
 |[Weitere Informationen zum Freigeben von C++-Code mit Android- und Windows-Apps](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Beispiele für plattformübergreifende mobile Entwicklung](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
-|[Weitere Beispiele für plattformübergreifende mobile Entwicklung für C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
+|[Beispiele für die plattformübergreifende mobile Entwicklung für C++](cross-platform-mobile-development-examples.md)|
 
 <a name="Unity"></a>
 
@@ -149,7 +153,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
  Visual Studio-Tools für Unity ist eine kostenlose Erweiterung für Visual Studio, mit der die leistungsfähigen Codebearbeitungs-, Produktivitäts- und Debugging-Tools von Visual Studio in *Unity* integriert werden. Unity ist die beliebte plattformübergreifende Spiel- und Grafik-Engine und Entwicklungsumgebung für immersive Apps unter Windows, iOS, Android und anderen Plattformen.
 
- ![Entwicklungsumgebung von Visual Studio-Tools für Unity](../cross-platform/media/vstu_overview.png "Übersicht über Visual Studio-Tools für Unity")
+ ![VSTU-Entwicklungsumgebung](../cross-platform/media/vstu_overview.png "Visual Studio-Tools für Unity: Übersicht")
 
  Mithilfe der Visual Studio-Tools für Unity (VSTU) können Sie Visual Studio zum Schreiben von Spiel- und Editorskripts in C# verwenden und dann den leistungsfähigen Debugger zum Suchen und Beheben von Fehlern nutzen. Das neueste Release von VSTU unterstützt Unity 2018.1 und bietet Syntaxfarben für die Shadersprache „ShaderLab“ von Unity, eine optimierte Synchronisierung mit Unity, umfangreichere Debugfunktionen und eine verbesserte Codegenerierung für den MonoBehavior-Assistenten. Mit VSTU werden außerdem die Unity-Projektdateien, Konsolenmeldungen und die Möglichkeit zum Starten des Spiels in Visual Studio eingebunden, sodass beim Schreiben von Code weniger Zeit zum Umschalten in und aus dem Unity-Editor benötigt wird.
 
@@ -159,8 +163,8 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 |[Weitere Informationen zu Visual Studio Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Erste Schritte mit Visual Studio-Tools für Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Informationen zu den neusten Verbesserungen von Visual Studio Tools für Unity 2.0 Preview](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio-Blog)|
-|[Videoeinführung in Visual Studio Tools für Unity 2.0 Preview](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
-|[Informationen zu Unity](http://unity3d.com/) (Unity-Website)|
+|[Videoeinführung in Visual Studio Tools für Unity 2.0 Preview](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
+|[Informationen zu Unity](https://unity.com/) (Unity-Website)|
 
 ## <a name="see-also"></a>Siehe auch
 

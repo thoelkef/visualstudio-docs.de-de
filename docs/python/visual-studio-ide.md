@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826167"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661928"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
@@ -26,7 +26,7 @@ Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Star
 
 Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und einigen wichtigen Toolfenstern, die Sie wahrscheinlich verwenden:
 
-- Im [**Projektmappen-Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, in ihnen navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](/visualstudio/get-started/tutorial-projects-solutions) gruppiert.
+- Im [**Projektmappen-Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, in ihnen navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](../get-started/tutorial-projects-solutions.md) gruppiert.
   - Neben dem **Projektmappen-Explorer** befindet sich die [**Python-Umgebung**](managing-python-environments-in-visual-studio.md), über die Sie verschiedene Python-Interpreter verwalten können, die auf Ihrem Computer installiert sind.
 
   ::: moniker range=">=vs-2019"
@@ -94,7 +94,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
     Ab Visual Studio-2019 können Sie einen Ordner mit Python-Code öffnen, um Funktionen wie IntelliSense und Debuggen zu nutzen, ohne ein Visual Studio-Projekt für den Code zu erstellen.
 ::: moniker-end
 
-- [Zusammenarbeiten mithilfe von Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+- [Zusammenarbeiten mithilfe von Visual Studio](/visualstudio/liveshare/)
   
     Visual Studio Live Share ermöglicht Ihnen eine Zusammenarbeit in Echtzeit, um gemeinsam mit anderen Benutzern Projekte zu bearbeiten und zu debuggen – unabhängig von den verwendeten Programmiersprachen oder den erstellten App-Typen. 
 

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745643"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188648"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Erstellen benutzerdefinierter Ansichten von verwalteten ObjektenC#(Visual Basic, F#, C++/CLI)
 Sie können die Art anpassen, wie Datentypen von Visual Studio in Debuggervariablenfenstern angezeigt werden.
@@ -41,10 +41,10 @@ In .NET Framework 2,0-Code unterstützt Visual Basic das DebuggerBrowsable-Attri
 
 ## <a name="visualizers"></a>Schnellansichten
 
-Sie können eine Schnellansicht schreiben, um einen beliebigen verwalteten Datentyp anzuzeigen. Weitere Informationen finden Sie unter [Gewusst wie: Schreiben einer](/visualstudio/debugger/create-custom-visualizers-of-data)Schnellansicht.
+Sie können eine Schnellansicht schreiben, um einen beliebigen verwalteten Datentyp anzuzeigen. Weitere Informationen finden Sie unter [Gewusst wie: Schreiben einer](create-custom-visualizers-of-data.md)Schnellansicht.
 
 > [!NOTE]
-> Für C++ Code können Sie mit dem natvis-Framework benutzerdefinierte Datentyp Erweiterungen hinzufügen, wie in [Erstellen benutzerdefinierter C++ Ansichten von Objekten im Debugger](/visualstudio/debugger/create-custom-views-of-native-objects)beschrieben.
+> Für C++ Code können Sie mit dem natvis-Framework benutzerdefinierte Datentyp Erweiterungen hinzufügen, wie in [Erstellen benutzerdefinierter C++ Ansichten von Objekten im Debugger](create-custom-views-of-native-objects.md)beschrieben.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a3147a6bafc550383f96134f5a76932413eb8a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697000"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299373"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analysieren des Energieverbrauchs in Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
   
 - *Energie* misst die Gesamtmenge der Leistung, entweder als Kapazität oder Potenzial, wie bei der Stromkapazität eines Akkus, oder als Gesamtsumme an Leistung über einen bestimmten Zeitraum. Die Einheit für Energie ist eine Wattstunde, d. h. die Menge an Strom eines Watts, die ständig eine Stunde lang angewendet wird. In der **Energiezusammenfassung**werden die Einheiten in Milliwattstunden **mW-h**dargestellt.  
   
-  ![Energiekapazität, Energieverbrauch, verbrauchte Energie insgesamt](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Energy capacity, power used, total energy used](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
   Ein vollständig geladener Akku in einem Tablet verfügt z. B. über eine bestimmte Menge an gespeicherte Energie. Während die Energie verwendet wird, um Aufgaben wie die Kommunikation über ein Netzwerk, die Berechnung von Werten oder die Anzeige von Grafiken auszuführen, verbraucht sich der Strom des Akkus in unterschiedlichen Raten. Während jedes beliebigen Zeitraum wird auch die Summe des verbrauchten Stroms von der Energie gemessen.  
   
 ## <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifizieren von Szenarien mit Benutzermarkierungen  
  Sie können den Profilerstellungsdaten *Benutzermarkierungen* hinzufügen, die bei der Identifizierung von Bereichen im Zeitachsenlineal hilfreich sind.  
   
- ![Benutzermarkierungen auf der Zeitachse](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![User marks in the timeline](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  Die Markierung wird bei Ausführung der Methode in der Zeitachse als orangefarbenes Dreieck angezeigt. Die Meldung und Uhrzeit werden als QuickInfo angezeigt, wenn Sie mit der Maus über die Markierung fahren. Wenn mindestens zwei Benutzermarkierungen nahe beieinander liegen, werden die Markierungen zusammengeführt und die QuickInfo-Daten werden kombiniert. Sie können auf der Zeitachse eine Vergrößerung durchführen, um die Markierungen zu trennen.  
   
@@ -62,8 +62,6 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
 > [!NOTE]
 > - Die Windows.Foundation.Diagnostics LoggingChannel-Klasse implementiert die [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)-Schnittstelle (in C# und VB als [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) projiziert). Rufen Sie [LoggingChannel.Close()](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() in C# und VB) auf, wenn Sie mit einem Protokollierungskanal fertig sind, um Verluste von Betriebssystemressourcen zu vermeiden.  
 >   - Jeder offene Protokollierungschannel muss einen eindeutigen Namen haben. Wenn Sie versuchen, einen neuen Protokollierungschannel mit demselben Namen wie ein nicht gelöschter Channel zu erstellen, wird eine Ausnahme verursacht.  
-  
- Beispiele hierzu finden Sie im Windows SDK-Beispiel [LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) .  
   
  **Hinzufügen von Markierungen zu JavaScript-Code**  
   
@@ -89,7 +87,7 @@ if (performance && performance.mark) {
   
 1. Wählen Sie im Menü **Debuggen** die Option **Diagnose ohne Debugging starten**.  
   
-     ![„Energieverbrauch“ im Diagnosehub auswählen](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
+     ![Choose Energy Consumption in the diagnostics hub](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
 2. Wählen Sie **Energieverbrauch** und dann **Starten**aus.  
   
@@ -100,7 +98,7 @@ if (performance && performance.mark) {
   
 4. Um die Profilerstellung zu beenden, wechseln Sie zu Visual Studio zurück (ALT+TAB), und wählen Sie **Auflistung beenden** auf der Diagnosehubseite aus.  
   
-     ![Sammeln von Daten beenden](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
+     ![Stop collecting data](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio analysiert die gesammelten Daten und zeigt die Ergebnisse an.  
   
@@ -120,7 +118,7 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Analyze_energy_profile_data"></a> Analysieren der Energieprofildaten  
  Die Energieprofildaten werden im Dokumentfenster von Visual Studio angezeigt:  
   
- ![Berichtsseite des Energie-Profilers](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
+ ![Energy profiler report page](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
   
 |||  
 |-|-|  
@@ -128,8 +126,8 @@ if (performance && performance.mark) {
 |![Schritt 2](../profiling/media/procguid-2.png "ProcGuid_2")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|  
 |![Schritt 3](../profiling/media/procguid-3.png "ProcGuid_3")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  
 |![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Das Diagramm **Stromverbrauch** ist ein Liniendiagramm (mit mehreren Linien), in dem die Änderung in der Stromabgabe anzeigt wird, die durch eine Geräteressource während einer Profilerstellungssitzung verursacht wird. Der Energieverbrauchsprofiler verfolgt die von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verwendete Energie.|  
-|![Schritt 5](../profiling/media/procguid-6.png "ProcGuid_6")|Das Diagramm **Ressourcen (Ein/Aus)**  stellt Details der Netzwerkenergiekosten dar. Die Leiste **Netzwerk** stellt die Zeit dar, während der die Netzwerkverbindung geöffnet war. Die untergeordnete Leiste **Datenübertragung** stellt die Zeit dar, in der die App Daten über das Netzwerk empfangen oder gesendet hat.|  
-|![Schritt 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|In der **Zusammenfassung der Energieverwendung** wird der proportionale Betrag der gesamten Energie dargestellt, die in einem ausgewählten Zeitraum von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verbraucht wurde.|  
+|![Step 5](../profiling/media/procguid-6.png "ProcGuid_6")|Das Diagramm **Ressourcen (Ein/Aus)**  stellt Details der Netzwerkenergiekosten dar. Die Leiste **Netzwerk** stellt die Zeit dar, während der die Netzwerkverbindung geöffnet war. Die untergeordnete Leiste **Datenübertragung** stellt die Zeit dar, in der die App Daten über das Netzwerk empfangen oder gesendet hat.|  
+|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|In der **Zusammenfassung der Energieverwendung** wird der proportionale Betrag der gesamten Energie dargestellt, die in einem ausgewählten Zeitraum von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verbraucht wurde.|  
   
  **Analyse der Energieprofildaten**  
   
@@ -138,11 +136,11 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Optimize_energy_use"></a> Optimieren des Energieverbrauchs  
  Zusätzlich zur Datenübertragung verursachen Netzwerkverbindungen auch Energiekosten für das Initialisieren, Verwalten und Schließen der Verbindung. Einige Netzwerke halten die Verbindung für einen bestimmten Zeitraum aufrecht, nachdem Daten gesendet bzw. empfangen wurden, damit über eine einzige Verbindung mehr Daten übertragen werden können. Im Bereich **Ressourcen (Ein/Aus)** können Sie die Methode überprüfen, mit der die App auf die Verbindung interagiert.  
   
- ![Bereich „Ressourcen &#40;Ein&#47;Aus&#41;“](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![Resources &#40;On&#47;Off&#41; pane](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  Wenn in den Leisten **Netzwerk** und **Datenübertragung** angezeigt wird, dass die Verbindung langfristig aktiv ist, damit eine Reihe kleiner Datenpakete nacheinander übertragen werden kann, können Sie die Daten im Batch im Rahmen einer Übertragung senden. Damit verringern Sie die Zeit, in der das Netzwerk aktiv ist, und und sparen somit Energiekosten.  
   
- ![Zusammenfassungsbereich für Energieverbrauch](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
+ ![Energy Consumption Summary pane](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
   
  Über die Energiekosten der Anzeige haben Sie weniger Kontrolle. Die meisten Bildschirme benötigen mehr Energie, um helle Farben darzustellen als dunklere Farben. Deshalb ist eine Möglichkeit, Kosten zu reduzieren, einen dunklen Hintergrund zu verwenden.  
   

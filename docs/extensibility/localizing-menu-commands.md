@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252639"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186273"
 ---
 # <a name="localize-menu-commands"></a>Lokalisieren von Menübefehlen
 
@@ -136,9 +136,9 @@ Sie müssen die Datei *AssemblyInfo.cs* und die Projektdatei ändern, um die lok
 
      Dadurch wird US-Englisch als standardmäßige Benutzeroberflächen Kultur für Windows Presentation Foundation (WPF)-Steuerelemente festgelegt.
 
-6. Suchen Sie das `ItemGroup`-Element, das `EmbeddedResource`-Elemente enthält.
+6. Suchen Sie das `ItemGroup` Element, das `EmbeddedResource` Elemente enthält.
 
-7. Ersetzen Sie im `EmbeddedResource`-Element, das *VSPackage. en-US. resx*aufruft, das `ManifestResourceName`-Element durch ein `LogicalName`-Element, das auf `VSPackage.en-US.Resources` festgelegt ist, wie folgt:
+7. Ersetzen Sie im `EmbeddedResource`-Element, das *VSPackage. en-US. resx*aufruft, das `ManifestResourceName`-Element durch ein `LogicalName`-Element, das auf `VSPackage.en-US.Resources`festgelegt ist, wie folgt:
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -149,7 +149,7 @@ Sie müssen die Datei *AssemblyInfo.cs* und die Projektdatei ändern, um die lok
 
 8. Kopieren Sie für jede lokalisierte Sprache das `EmbeddedResource`-Element für `VsPackage.en-US`, und legen Sie das **include** -Attribut und das **LogicalName** -Element der Kopie auf das Ziel Gebiets Schema fest.
 
-9. Fügen Sie für jedes lokalisierte `VSCTCompile`-Element ein `ResourceName`-Element hinzu, das auf `Menus.ctmenu` zeigt, wie im folgenden Beispiel gezeigt:
+9. Fügen Sie für jedes lokalisierte `VSCTCompile` Element ein `ResourceName` Element hinzu, das auf `Menus.ctmenu`zeigt, wie im folgenden Beispiel gezeigt:
 
     ```xml
     <ItemGroup>
@@ -166,6 +166,6 @@ Sie müssen die Datei *AssemblyInfo.cs* und die Projektdatei ändern, um die lok
      Dadurch werden eine Hauptassembly und Ressourcenassemblys für jede Sprache erstellt. Informationen zum Lokalisieren des Bereitstellungs Prozesses finden Sie unter [Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md) .
 
 ## <a name="see-also"></a>Siehe auch
+
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
-- [menucommands im Vergleich zu OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)
 - [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)

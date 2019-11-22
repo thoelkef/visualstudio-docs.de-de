@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573205"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297656"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studi
 3. Generieren Sie neue Projektmappen- und Projektdateien. Wenn Sie sie jetzt generieren möchten, klicken Sie im Unity-Editor im Hauptmenü auf **Visual Studio Tools**, **Generate Project Files**. Andernfalls können Sie diesen Schritt nach Wunsch überspringen. Visual Studio-Tools für Unity generiert die neuen Dateien automatisch, wenn Sie auf **Visual Studio Tools**, **Open in Visual Studio**klicken.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio lädt die Projektmappe nicht, die Visual Studio-Tools für Unity erstellt hat.  
- Weitere Informationen finden Sie unter [der Antwort auf diese Frage auf Stackoverflow](http://stackoverflow.com/a/24035907/36702).  
+ Weitere Informationen finden Sie unter [der Antwort auf diese Frage auf Stackoverflow](https://stackoverflow.com/questions/20086755/unityvs-visual-studio-can-not-open/24035907#24035907).  
   
 ### <a name="on-windows-8-visual-studio-asks-to-download-the-unity-target-framework"></a>Unter Windows 8 fordert Visual Studio das Herunterladen des Unity-Zielframeworks an.  
  UnityVS erfordert .NET Framework 3.5, das nicht standardmäßig unter Windows 8 installiert ist. Um dieses Problem zu beheben, befolgen Sie die Anweisungen zum Herunterladen und Installieren von .NET Framework 3.5.  

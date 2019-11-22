@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300549"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888584"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung
 
@@ -28,7 +28,7 @@ Während des Produktlebenszyklus wird Visual Studio häufig aktualisiert. Es gib
 
 Unternehmensadministratoren können auswählen, ob sie für ihre Clients eine Baseline für die Wartung verwenden. Diese wird für ein Jahr über die Veröffentlichung der nächsten Baseline für die Wartung hinaus mit Wartungsupdates unterstützt.
 
-So erhalten Entwickler und Administratoren mehr Flexibilität bei der Übernahme der neuen Features, Bugfixes oder Komponenten, die in neuen kleineren Updates enthalten sind. Die erste Baseline für die Wartung ist 16.0.x. Weitere Informationen finden Sie unter [Supportoptionen für Enterprise- und Professional-Kunden](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+So erhalten Entwickler und Administratoren mehr Flexibilität bei der Übernahme der neuen Features, Bugfixes oder Komponenten, die in neuen kleineren Updates enthalten sind. Die erste Baseline für die Wartung ist 16.0.x. Weitere Informationen finden Sie unter [Supportoptionen für Enterprise- und Professional-Kunden](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>So gelangen Sie in eine Baseline für die Wartung
 

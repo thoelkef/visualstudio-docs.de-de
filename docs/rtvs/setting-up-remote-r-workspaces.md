@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810167"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888545"
 ---
 # <a name="set-up-remote-workspaces"></a>Einrichten von Remotearbeitsbereichen
 
@@ -145,7 +145,7 @@ Um R-Code auszuführen, muss auf dem Remotecomputer ein R-Interpreter wie folgt 
 
 2. Führen Sie den [R Services-Installer](https://aka.ms/rtvs-services) aus, und starten Sie den Computer neu, wenn Sie dazu aufgefordert werden. Der Installer führt die folgenden Aktionen aus:
 
-    - Erstellen Sie einen Ordner unter *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\*, und kopieren Sie alle erforderlichen Binärdateien dorthin.
+    - Erstellen Sie einen Ordner unter *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* , und kopieren Sie alle erforderlichen Binärdateien dorthin.
     - `RHostBrokerService` und `RUserProfileService` installieren und für den automatischen Start konfigurieren
     - Den `seclogon`-Dienst für automatischen Start konfigurieren
     - Fügen Sie *Microsoft.R.Host.exe* und *Microsoft.R.Host.Broker.exe* zu den eingehenden Firewallregeln auf dem Standardport 5444 hinzu.
@@ -178,7 +178,7 @@ Wenn R Services auf dem Remotecomputer ausgeführt wird, müssen Sie auch Benutz
 
 1. Firewallregeln: `R Host Broker` lauscht standardmäßig an TCP-Port 5444. Daher müssen Sie sicherstellen, dass die Windows-Firewallregeln für eingehenden und ausgehenden Datenverkehr aktiviert sind (der ausgehende Verkehr ist für die Installation von Paketen und ähnliche Szenarios notwendig).  Der R Services-Installer legt diese Regeln automatisch für die integrierte Windows-Firewall fest. Wenn Sie eine Drittanbieter-Firewall verwenden, müssen Sie Port 5444 für den `R Host Broker` jedoch manuell öffnen.
 
-1. Azure-Konfiguration: Wenn der Remotecomputer ein virtueller Azure-Computer ist, müssen Sie Port 5444 für eingehenden Datenverkehr auch innerhalb von Azure-Netzwerken öffnen, die unabhängig von der Windows-Firewall sind. Weitere Informationen finden Sie in der Azure-Dokumentation unter [Filtern des Netzwerkdatenverkehrs mit Netzwerksicherheitsgruppen](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg).
+1. Azure-Konfiguration: Wenn der Remotecomputer ein virtueller Azure-Computer ist, müssen Sie Port 5444 für eingehenden Datenverkehr auch innerhalb von Azure-Netzwerken öffnen, die unabhängig von der Windows-Firewall sind. Weitere Informationen finden Sie in der Azure-Dokumentation unter [Filtern des Netzwerkdatenverkehrs mit Netzwerksicherheitsgruppen](/azure/virtual-network/virtual-networks-nsg).
 
 1. Weisen Sie den R-Hostbroker an, ein bestimmtes SSL-Zertifikat zu laden: Wenn Sie das Zertifikat auf einem Intranetserver installieren, ist der vollqualifizierte Domänenname Ihres Servers wahrscheinlich mit dem NETBIOS-Namen identisch. In diesem Fall müssen Sie nichts tun, da das Standardzertifikat geladen wird.
 

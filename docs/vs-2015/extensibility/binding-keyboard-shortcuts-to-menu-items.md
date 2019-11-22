@@ -1,5 +1,5 @@
 ---
-title: Binden von Tastenkombinationen an Menüelemente | Microsoft-Dokumentation
+title: Binding Keyboard Shortcuts to Menu Items | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405644"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295619"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menüelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, fügen Sie nur einen Eintrag in die VSCT-Datei für das Paket. In diesem Thema wird erläutert, wie eine benutzerdefinierte Schaltfläche, Menüelement oder Befehle der Hilfesymbolleiste eine Tastenkombination zugeordnet, und das Anwenden der Zuordnung von Tastenkombinationen in der Standard-Editor oder nur für einen benutzerdefinierten Editor.  
+To bind a keyboard shortcut to a custom menu command, just add an entry to the .vsct file for the package. This topic explains how to map a keyboard shortcut to a custom button, menu item, or toolbar command, and how to apply the keyboard mapping in the default editor or limit it to a custom editor.  
   
- Um vorhandene Visual Studio-Menüelemente Tastenkombinationen zuweisen möchten, finden Sie unter [identifizieren und Anpassen von Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+ To assign keyboard shortcuts to existing Visual Studio menu items, see [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
-## <a name="choosing-a-key-combination"></a>Wählen eine Tastenkombination  
- Viele Tastenkombinationen sind bereits in Visual Studio verwendet. Sie sollten nicht das gleiche abgekürzte Verfahren für mehr als einen Befehl zuweisen, da doppelte Bindungen schwer sind zu erkennen, und können ebenfalls zu unvorhersehbaren Ergebnissen führen. Aus diesem Grund ist es eine gute Idee, überprüfen die Verfügbarkeit einer Tastenkombination ein, bevor Sie sie zuweisen.  
+## <a name="choosing-a-key-combination"></a>Choosing a Key Combination  
+ Many keyboard shortcuts are already used in Visual Studio. You should not assign the same shortcut to more than one command because duplicate bindings are hard to detect and may also cause unpredictable results. Therefore, it is a good idea to verify the availability of a shortcut before you assign it.  
   
-#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Um zu überprüfen, ob die Verfügbarkeit einer Tastenkombination  
+#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>To verify the availability of a keyboard shortcut  
   
-1. In der **Extras / Optionen / Umgebung** wählen Sie im Fenster **Tastatur**.  
+1. In the **Tools / Options / Environment** window, select **Keyboard**.  
   
-2. Stellen Sie sicher, dass **verwenden neue Verknüpfung in** nastaven NA hodnotu **Global**.  
+2. Make sure that **Use new shortcut in** is set to **Global**.  
   
-3. In der **Tastenkombination drücken** geben die Tastenkombination, die Sie verwenden möchten.  
+3. In the **Press shortcut keys** box, type the keyboard shortcut that you want to use.  
   
-    Wenn die Verknüpfung bereits in Visual Studio verwendet wird die **momentan verwendet von** Feld wird den Befehl, der derzeit, die Verknüpfung aufruft angezeigt.  
+    If the shortcut is already used in Visual Studio, the **Shortcut currently used by** box will show the command that the shortcut currently calls.  
   
-4. Versuchen Sie es für verschiedene Kombinationen von Schlüsseln aus, bis Sie einen finden, die nicht zugeordnet ist.  
+4. Try different combinations of keys until you find one that is not mapped.  
   
    > [!NOTE]
-   > Tastenkombinationen in Visual Studio, die ALT-Taste verwenden möglicherweise ein Menü öffnen und nicht direkt einen Befehl ausführen. Aus diesem Grund die **momentan verwendet von** Feld möglicherweise leer, wenn Sie eine Verknüpfung eingeben, die ALT-Taste enthält. Sie können überprüfen, ob die Verknüpfung ein Menüs nicht durch Schließen geöffnet wird die **Optionen** (Dialogfeld), und drücken die Schlüssel.  
+   > Keyboard shortcuts that use ALT may open a menu and not directly execute a command. Therefore, the **Shortcut currently used by** box may be blank when you type a shortcut that includes ALT. You can verify that the shortcut does not open a menu by closing the **Options** dialog box and then pressing the keys.  
   
-   Das folgende Verfahren wird davon ausgegangen, dass Sie einen vorhandenen VSPackage mit einem Menübefehl verfügen. Wenn Sie hierzu Hilfe benötigen, sehen Sie sich [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+   The following procedure assumes that you have an existing VSPackage with a menu command. If you need help doing that, take a look at [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Ein Befehl eine Tastenkombination zuweisen  
+#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>To assign a keyboard shortcut to a command  
   
-1. Öffnen Sie die VSCT-Datei für Ihr Paket.  
+1. Open the .vsct file for your package.  
   
-2. Erstellen Sie eine leere `<KeyBindings>` -Abschnitt nach dem `<Commands>` ist dies nicht bereits vorhanden.  
+2. Create an empty `<KeyBindings>` section after the `<Commands>` if it is not already present.  
   
    > [!WARNING]
-   > Weitere Informationen zu Tastenkombinationen finden Sie unter [Keybinding](../extensibility/keybinding-element.md).  
+   > For more information about key bindings, see [Keybinding](../extensibility/keybinding-element.md).  
   
-    In der `<KeyBindings>` Abschnitt, erstellen Sie eine `<KeyBinding>` Eintrag.  
+    In the `<KeyBindings>` section, create a `<KeyBinding>` entry.  
   
-    Legen Sie die `guid` und `id` Attribute, mit denen des Befehls, die Sie aufrufen möchten.  
+    Set the `guid`  and  `id` attributes to those of the command you want to invoke.  
   
-    Legen Sie die `mod1` Attribut **Steuerelement**, **Alt**, oder **UMSCHALT**.  
+    Set the `mod1` attribute to **Control**, **Alt**, or **Shift**.  
   
-    Abschnitt KeyBindings sollte etwa wie folgt aussehen:  
+    The KeyBindings section should look something like this:  
   
    ```xml  
    <KeyBindings>  
@@ -73,18 +73,18 @@ Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, fügen 
   
    ```  
   
-   Wenn Ihre Tastenkombination mehr als zwei Schlüssel erforderlich ist, legen Sie die `mod2` und `key2` Attribute.  
+   If your keyboard shortcut requires more than two keys, set the `mod2` and `key2` attributes.  
   
-   In den meisten Fällen **UMSCHALT** sollte nicht ohne einen zweiten Modifizierer verwendet werden, da es bereits drücken führt dazu, dass die meisten alphanumerische Schlüssel keine Großbuchstaben oder ein Symbol, eingeben.  
+   In most situations, **Shift** should not be used without a second modifier because pressing it already causes most alphanumeric keys to type an uppercase letter or a symbol.  
   
-   Virtuelle Tastencodes können Sie die spezielle Schlüssel zugreifen, die nicht mit einem Zeichen zugeordnet sind, z. B. Funktionstasten verfügen und die **RÜCKTASTE** Schlüssel. Weitere Informationen finden Sie unter [virtuelle Tastencodes](http://go.microsoft.com/fwlink/?LinkID=105932).  
+   Virtual-key codes let you access special keys that do not have a character associated with them, for example, function keys and the **BACKSPACE** key. For more information, see [Virtual-Key Codes](https://go.microsoft.com/fwlink/?LinkID=105932).  
   
-   Der Befehl zur Verfügung, in der Visual Studio-Editor-legen fest, um die `editor` Attribut `guidVSStd97`.  
+   To make the command available in the Visual Studio editor, set the `editor` attribute to `guidVSStd97`.  
   
-   Um den Befehl nur in einen benutzerdefinierten Editor verfügbar machen, legen die `editor` -Attribut auf den Namen des benutzerdefinierten Editors, die vom generiert wurde, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Paket-Vorlage, wenn Sie das VSPackage erstellt, enthält den benutzerdefinierten Editor. Um die Name-Wert zu suchen, suchen Sie in der `<Symbols>` im Abschnitt für eine `<GuidSymbol>` Knoten, deren `name` Attribut endet, in "`editorfactory`." Dies ist der Name des benutzerdefinierten Editors.  
+   To make the command available only in a custom editor, set the `editor` attribute to the name of the custom editor that was generated by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package Template when you created the VSPackage that includes the custom editor. To find the name value, look in the `<Symbols>` section for a `<GuidSymbol>` node whose `name` attribute ends in "`editorfactory`." This is the name of the custom editor.  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel bindet die Tastenkombination STRG + ALT + C an einen Befehl mit dem Namen `cmdidMyCommand` in einem Paket mit dem Namen `MyPackage`.  
+ This example binds the keyboard shortcut CTRL+ALT+C to a command named `cmdidMyCommand` in a package named `MyPackage`.  
   
 ```  
 <CommandTable>  
@@ -101,7 +101,7 @@ Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, fügen 
 ```  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel bindet die Tastenkombination STRG + B, um einen Befehl mit dem Namen `cmdidBold` in einem Projekt namens `TestEditor`. Der Befehl ist nur in den benutzerdefinierten Editor und nicht in anderen Editoren verfügbar.  
+ This example binds the keyboard shortcut CTL+B to a command named `cmdidBold` in a project named `TestEditor`. The command is available only in the custom editor and not in other editors.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  

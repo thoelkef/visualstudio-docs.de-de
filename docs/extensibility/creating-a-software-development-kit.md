@@ -58,13 +58,13 @@ Platform sdgs verfügen über das folgende Layout:
 | *Architektur* Ordner | Alle unterstützten *Architektur* Ordner können vorhanden sein. Visual Studio unterstützt die folgenden Architekturen: x86, x64, Arm und neutral. Hinweis: Win32 ist x86 zugeordnet, und AnyCPU ist neutral zugeordnet.<br /><br /> MSBuild wird nur unter *\commonconfiguration\neutral* für Platform sdgs untersucht. |
 | *SDKManifest.xml* | Diese Datei beschreibt, wie Visual Studio das SDK nutzen soll. Sehen Sie sich das SDK- [!INCLUDE[win81](../debugger/includes/win81_md.md)]Manifest für Folgendes an:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Der Wert, der vom Objektkatalog in der Liste durchsuchen angezeigt wird.<br /><br /> **Platformidentity:** Das vorhanden sein dieses Attributs weist Visual Studio und MSBuild an, dass es sich bei dem SDK um ein Platform SDK handelt und dass die von ihm hinzugefügten Verweise nicht lokal kopiert werden sollten.<br /><br /> **TargetFramework:** Dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, dass nur Projekte, die auf dieselben Frameworks abzielen, wie im Wert dieses Attributs angegeben, das SDK nutzen können.<br /><br /> **MinVSVersion:** Dieses Attribut wird von Visual Studio verwendet, um nur die sdche zu verwenden, die für das Attribut gelten.<br /><br /> **Angabe** Dieses Attribut muss nur für die Verweise angegeben werden, die Steuerelemente enthalten. Informationen dazu, wie Sie angeben, ob ein Verweis Steuerelemente enthält, finden Sie unten. |
 
-## <a name="extension-sdks"></a>Erweiterungs-sdche
+## <a name="extension-sdks"></a>Erweiterungs-SDKs
 
 In den folgenden Abschnitten wird beschrieben, was Sie tun müssen, um ein Erweiterungs-SDK bereitzustellen.
 
 ### <a name="installation"></a>Installation
 
-Erweiterungs-sdche können für einen bestimmten Benutzer oder für alle Benutzer installiert werden, ohne einen Registrierungsschlüssel anzugeben. Verwenden Sie zum Installieren eines SDK für alle Benutzer den folgenden Pfad:
+Erweiterungs-SDKs können für einen bestimmten Benutzer oder für alle Benutzer installiert werden, ohne einen Registrierungsschlüssel anzugeben. Verwenden Sie zum Installieren eines SDK für alle Benutzer den folgenden Pfad:
 
 *%Programme%\Microsoft sdgs\<Target Platform\>\v < Platform Versionsnummer\>\extensionsdgs*
 
@@ -80,7 +80,7 @@ Wenn Sie einen anderen Speicherort verwenden möchten, müssen Sie einen der bei
 
      und fügen einen (Standard-) Unterschlüssel mit `<path to SDK><SDKName><SDKVersion>`dem Wert hinzu.
 
-2. Fügen Sie die MSBuild `SDKReferenceDirectoryRoot` -Eigenschaft zu Ihrer Projektdatei hinzu. Der Wert dieser Eigenschaft ist eine durch Semikolons getrennte Liste von Verzeichnissen, in denen sich die Erweiterungs-sdches befinden, auf die verwiesen werden soll.
+2. Fügen Sie die MSBuild `SDKReferenceDirectoryRoot` -Eigenschaft zu Ihrer Projektdatei hinzu. Der Wert dieser Eigenschaft ist eine durch Semikolons getrennte Liste von Verzeichnissen, in denen sich die Erweiterungs-SDKs befinden, auf die verwiesen werden soll.
 
 ### <a name="installation-layout"></a>Installations Layout
 

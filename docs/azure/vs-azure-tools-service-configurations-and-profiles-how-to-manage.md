@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b91e2df31ae0e188d0d1e0e3076ab410bf8c2296
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919833"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911683"
 ---
-# <a name="how-to-manage-service-configurations-and-profiles"></a>Verwalten von Dienstkonfigurationen und Profilen
+# <a name="how-to-manage-service-configurations-and-profiles"></a>Verwalten von Dienstkonfigurationen und -profilen
 ## <a name="overview"></a>Übersicht
 Wenn Sie einen Clouddienst veröffentlichen, speichert Visual Studio Konfigurationsinformationen in zwei Arten von Konfigurationsdateien: Dienstkonfigurationen und Profile. In Dienstkonfigurationen (CSCFG-Dateien) werden Einstellungen für die Bereitstellungsumgebungen für einen Azure-Clouddienst gespeichert. Azure verwendet diese Konfigurationsdateien für die Verwaltung der Clouddienste. Auf der anderen Seite werden in Profilen (AZUREPUBXML-Dateien) Veröffentlichungseinstellungen für Clouddienste gespeichert. Diese Einstellungen werden bei der Verwendung des Veröffentlichungs-Assistenten gespeichert und lokal von Visual Studio verwendet. In diesem Thema wird die Arbeit mit den beiden Konfigurationsdateitypen erläutert.
 
@@ -56,7 +56,7 @@ Sie können das Dialogfeld **Konfigurationen verwalten** auch über die Eigensch
     Der Name der Dienstkonfigurationsdatei wird im Azure-Projekt im Projektmappen-Explorer geändert.
 
 ### <a name="to-change-a-service-configuration"></a>So ändern Sie eine Dienstkonfiguration
-* Wenn Sie eine Dienstkonfiguration ändern möchten, öffnen Sie das Kontextmenü für die jeweilige Rolle, die Sie im Azure-Projekt ändern möchten. Klicken Sie dann auf **Eigenschaften**. Weitere Informationen finden Sie unter [How to: Configure the Roles for an Azure Cloud Service with Visual Studio (Vorgehensweise: Konfigurieren der Rollen für einen Azure-Clouddienst mit Visual Studio)](vs-azure-tools-configure-roles-for-cloud-service.md).
+* Wenn Sie eine Dienstkonfiguration ändern möchten, öffnen Sie das Kontextmenü für die jeweilige Rolle, die Sie im Azure-Projekt ändern möchten. Klicken Sie dann auf **Eigenschaften**. Weitere Informationen finden Sie unter Gewusst [wie: Konfigurieren der Rollen für einen Azure-clouddienst mit Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) .
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Erstellen verschiedener Einstellungskombinationen mithilfe von Profilen
 Mithilfe eines Profils können Sie den **Veröffentlichungs-Assistenten** mit verschiedenen Kombinationen von Einstellungen für unterschiedliche Verwendungszwecke automatisch auffüllen. Beispielsweise können Sie ein Profil für Debugging und ein weiteres für Releasebuilds verwenden. In diesem Fall ist im **Debug**-Profil **IntelliTrace** aktiviert und die **Debug**-Konfiguration ausgewählt, und im **Release**-Profil wäre **IntelliTrace** deaktiviert und die **Release**-Konfiguration ausgewählt. Sie können auch verschiedene Profile verwenden, um einen Dienst mithilfe eines anderen Speicherkontos bereitzustellen.
@@ -78,7 +78,7 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
 
     Das neue Profil wird in der Liste "Zielprofil" angezeigt.
 6. Klicken Sie in der Liste **Zielprofil** auf das soeben erstellte Profil. Die Einstellungen des Veröffentlichungs-Assistenten werden mit den Optionen aus dem ausgewählten Profil aufgefüllt.
-7. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und passen Sie dann die Einstellungen für dieses Profil an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+7. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und passen Sie dann die Einstellungen für dieses Profil an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md) .
 8. Klicken Sie nach dem Anpassen der Einstellungen auf **Weiter** , um zur Seite „Einstellungen“ zurückzukehren. Das Profil wird gespeichert, wenn Sie den Dienst mit diesen Einstellungen veröffentlichen oder auf die Schaltfläche **Speichern** neben der Liste mit den Profilen klicken.
 
 ### <a name="to-rename-or-delete-a-profile"></a>So benennen Sie ein Profil um oder löschen es
@@ -91,9 +91,9 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
 ### <a name="to-change-a-profile"></a>So ändern Sie ein Profil
 1. Öffnen Sie das Kontextmenü des Azure-Projekts, und klicken Sie auf **Veröffentlichen**.
 2. Klicken Sie in der Liste **Zielprofil** auf das Profil, das Sie ändern möchten.
-3. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und ändern Sie dann die gewünschten Einstellungen an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+3. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und ändern Sie dann die gewünschten Einstellungen an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](vs-azure-tools-publish-azure-application-wizard.md) .
 4. Klicken Sie nach dem Ändern der Einstellungen auf **Weiter**, um zur Seite **Einstellungen** zurückzukehren.
 5. (Optional) Klicken Sie auf **Veröffentlichen** , um den Clouddienst mit den neuen Einstellungen zu veröffentlichen. Wenn Sie den Clouddienst nicht unmittelbar veröffentlichen möchten und den Veröffentlichungs-Assistenten schließen, werden Sie von Visual Studio gefragt, ob Sie die Änderungen am Profil speichern möchten.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Informationen zum Konfigurieren anderer Teile des Azure-Projekts in Visual Studio finden Sie unter [Konfigurieren eines Azure-Projekts](http://go.microsoft.com/fwlink/p/?LinkID=623075).
+Informationen zum Konfigurieren anderer Teile des Azure-Projekts in Visual Studio finden Sie unter [Konfigurieren eines Azure-Projekts](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).

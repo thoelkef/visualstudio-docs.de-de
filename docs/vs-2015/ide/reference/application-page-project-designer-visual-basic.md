@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 80811c63ff0b4fa764c95976bf2f69a30123b235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651677"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299388"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 
  Für ein Webanwendungsprojekt müssen Sie **-Klassenbibliothek** angeben.
 
- Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können die Option **WinMD-Datei** für Projektmappen verwenden, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).
+ Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können die Option **WinMD-Datei** für Projektmappen verwenden, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](https://go.microsoft.com/fwlink/?LinkId=231895).
 
 > [!NOTE]
 > Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.
@@ -118,7 +118,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 
  Begrüßungs **Bildschirm** Wählen Sie das Formular aus, das Sie als Begrüßungsbildschirm verwenden möchten. Sie müssen zuvor mithilfe eines Formulars oder einer Vorlage einen Begrüßungsbildschirm erstellt haben. Der Standardwert lautet **(Keine)** .
 
- **Anwendungs Ereignisse anzeigen** Klicken Sie auf diese Schaltfläche, um eine Ereignis Codedatei anzuzeigen, in der Sie Ereignisse für die Anwendungs Framework-Ereignisse `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` und `NetworkAvailabilityChanged` schreiben können. Sie können auch bestimmte Anwendungsframeworkmethoden überschreiben. Beispielsweise können Sie das Anzeigeverhalten des Begrüßungsbildschirms ändern, indem Sie `OnInitialize` überschreiben.
+ **Anwendungs Ereignisse anzeigen** Klicken Sie auf diese Schaltfläche, um eine Ereignis Codedatei anzuzeigen, in der Sie Ereignisse für die Anwendungs Framework-Ereignisse `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` und `NetworkAvailabilityChanged`schreiben können. Sie können auch bestimmte Anwendungsframeworkmethoden überschreiben. Beispielsweise können Sie das Anzeigeverhalten des Begrüßungsbildschirms ändern, indem Sie `OnInitialize` überschreiben.
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Eigenschaften des Windows-Anwendungsframeworks für Windows Presentation Foundation (WPF)-Anwendungen
  Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar, wenn das Projekt eine Windows Presentation Foundation-Anwendung ist. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Die in dieser Tabelle aufgeführten Optionen sind nur für WPF-Anwendung oder WPF-Browseranwendungen verfügbar. Sie sind nicht für WPF-Benutzersteuerelement- oder benutzerdefinierte Steuerelementbibliotheken verfügbar.

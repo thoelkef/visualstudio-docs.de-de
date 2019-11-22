@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb4e57d1186b42ac1ed4807faf150d1af9090c69
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255577"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985438"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formular Bereichs
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Formularbereich in Microsoft Office Outlook entworfen und anschließend mithilfe des Assistenten **Neuer Formularbereich** in ein Outlook VSTO-Add-In-Projekt importiert wird. Durch das Entwerfen des Formularbereichs in Outlook ist es möglich, dass systemeigene Outlook-Steuerelemente zum Formularbereich hinzugefügt werden können, die Outlook-Daten binden. Nachdem Sie den Formularbereich importiert haben, können Sie die Ereignisse der einzelnen Steuerelemente behandeln.
@@ -35,7 +35,7 @@ ms.locfileid: "71255577"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -43,9 +43,8 @@ ms.locfileid: "71255577"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] oder [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden [Sie unter Gewusst wie: Erstellen von Outlook-Formular Bereichen mit Visual Studio 2008 ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Entwerfen eines Formular Bereichs mithilfe des Formular Bereich-Designers in Outlook
  In diesem Schritt entwerfen Sie einen Formularbereich in Outlook. Anschließend speichern Sie den Formularbereich an einem leicht zugänglichen Speicherort, damit dieser in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]importiert werden kann.
 
@@ -55,7 +54,7 @@ ms.locfileid: "71255577"
 
 1. Starten Sie Microsoft Office Outlook.
 
-2. Klicken Sie in Outlook auf der Registerkarte **Entwickler** auf **Ein Formular entwerfen**. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler"](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)im Menüband.
+2. Klicken Sie in Outlook auf der Registerkarte **Entwickler** auf **Ein Formular entwerfen**. Weitere Informationen finden Sie unter Gewusst [wie: Anzeigen der Registerkarte "Entwickler" im Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Klicken Sie im Feld **Formular entwerfen** auf **Aufgabe**, und klicken Sie dann auf **Öffnen**.
 
@@ -124,7 +123,7 @@ ms.locfileid: "71255577"
 
 3. Speichern Sie das Projekt im Standardprojektverzeichnis.
 
-     Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie Office-Projekte in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="import-the-form-region"></a>Importieren des Formular Bereichs
  Sie können den in Outlook entworfenen Formularbereich mithilfe des Assistenten **Neuer Outlook-Formularbereich** in das Outlook VSTO-Add-In-Projekt importieren.
@@ -187,7 +186,7 @@ ms.locfileid: "71255577"
 
    - Aktualisiert das Listenfeld im Formularbereich mit dem aktuellen Abschlussstatus der einzelnen abhängigen Aufgabe.
 
-   - Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Anschließend wird jede `Microsoft.Office.Interop.Outlook.TaskItem` Datei im Ordner *Tasks* durch Aufrufen der `FindTaskBySubjectName` -Hilfsmethode und durch Übergeben des Subjekts jeder Aufgabe gesucht.
+   - Analysiert das ausgeblendete Textfeld, um den Betreff der einzelnen abhängigen Aufgaben zu erhalten. Anschließend werden die einzelnen `Microsoft.Office.Interop.Outlook.TaskItem` im Ordner *Tasks* durch Aufrufen der `FindTaskBySubjectName` Helper-Methode und durch Übergeben des Subjekts jeder Aufgabe gesucht.
 
    - Fügt die Werte `Microsoft.Office.Interop.Outlook.TaskItem.Subject` und `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` dem Listenfeld für abhängige Aufgaben hinzu.
 
@@ -245,7 +244,7 @@ ms.locfileid: "71255577"
 ## <a name="next-steps"></a>Nächste Schritte
  Weitere Informationen zum Anpassen der Benutzeroberfläche einer Outlook-Anwendung finden Sie in diesen Themen:
 
-- Weitere Informationen zum Entwerfen der Darstellung eines Formular Bereichs durchziehen verwalteter Steuerelemente auf einen visuellen Designer finden [Sie unter Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular](../vsto/walkthrough-designing-an-outlook-form-region.md)Bereichs.
+- Weitere Informationen zum Entwerfen der Darstellung eines Formular Bereichs durchziehen verwalteter Steuerelemente auf einen visuellen Designer finden Sie unter Exemplarische Vorgehensweise [: Entwerfen eines Outlook-Formular Bereichs](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Informationen zum Anpassen des Menübands eines Outlook-Elements finden Sie unter [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
@@ -256,7 +255,7 @@ ms.locfileid: "71255577"
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
 - [Richtlinien zum Erstellen von Outlook-Formular Bereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Vorgehensweise: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Gewusst wie: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Benutzerdefinierte Aktionen in Outlook-Formular Bereichen](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Vorgehensweise: Verhindern, dass Outlook einen Formular Bereich anzeigt](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Gewusst wie: verhindern der Anzeige eines Formular Bereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

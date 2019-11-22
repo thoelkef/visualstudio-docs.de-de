@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119018"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516694"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Schritt 1: Erstellen eines Windows Forms-App-Projekts
 
@@ -50,7 +50,7 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
 
    Nachdem Sie den Filter **Projekttyp** angewendet haben, wählen Sie die Vorlage **Windows Forms-App (.NET Framework)** für C# oder Visual Basic aus, und klicken Sie dann auf **Weiter**.
 
-   ![Auswählen der C#-Vorlage für die Windows Forms-App (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Screenshot: Auswählen der C#- oder Visual Basic-Vorlage für die Windows Forms-App (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Wenn die Vorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, können Sie sie über das Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.

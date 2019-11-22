@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 649f99911726e562f9602fe6697591ec6cfb96eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561012"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911900"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure-Speicher mithilfe von verbundenen Visual Studio-Diensten
 
@@ -67,14 +67,14 @@ Nach Abschluss zeigt das Dialogfeld **Verbundene Dienste hinzufügen** automatis
 
 Wenn Sie die Bearbeitung des Dialogfelds abschließen, fügt Visual Studio Verweise hinzu und ändert bestimmte Konfigurationsdateien. Die genauen Änderungen hängen vom Projekttyp ab:
 
-- ASP.NET-Projekt: [Was ist passiert – ASP.NET-Projekte](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- ASP.NET Core-Projekt: [Was ist passiert – ASP.NET 5-Projekte](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- Clouddienstprojekt (Web- und Workerrollen): [Was ist passiert – Clouddienstprojekte](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- ASP.NET-Projekt: [Was ist passiert – ASP.NET-Projekte](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- ASP.NET Core-Projekt: [Was ist passiert – ASP.NET 5-Projekte](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- Clouddienstprojekt (Web- und Workerrollen): [Was ist passiert – Clouddienstprojekte](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob-Projekt: [Was ist passiert – WebJob-Projekte](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [MSDN-Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
-- [Azure Storage-Dokumentation](https://docs.microsoft.com/azure/storage/)
+- [Microsoft Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure Storage-Dokumentation](/azure/storage/)
 - [Verbundene Dienste (Visual Studio für Mac)](/visualstudio/mac/connected-services)

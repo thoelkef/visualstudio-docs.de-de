@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821711"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888710"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installieren von Build Tools in einem Container
 
@@ -30,9 +30,9 @@ Wenn Sie Ihren Quellcode mithilfe von Visual Studio Build Tools nicht erstellen 
 
 ## <a name="before-you-begin"></a>Vorbereitungen
 
-Für dieses Thema wird davon ausgegangen, dass Sie zu einem gewissen Grad mit [Docker](https://www.docker.com/what-docker) vertraut sind. Wenn Sie noch nicht mit der Ausführung von Docker unter Windows vertraut sind, informieren Sie sich über das [Installieren und Konfigurieren der Docker-Engine unter Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
+Für dieses Thema wird davon ausgegangen, dass Sie zu einem gewissen Grad mit [Docker](https://www.docker.com/what-docker) vertraut sind. Wenn Sie noch nicht mit der Ausführung von Docker unter Windows vertraut sind, informieren Sie sich über das [Installieren und Konfigurieren der Docker-Engine unter Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-Das folgende Basisimage ist ein Beispiel und funktioniert für Ihr System möglicherweise nicht. Lesen Sie den Artikel [Kompatibilität von Windows-Containerversionen](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility), um zu ermitteln, welches Basisimage Sie für Ihre Umgebung verwenden sollten.
+Das folgende Basisimage ist ein Beispiel und funktioniert für Ihr System möglicherweise nicht. Lesen Sie den Artikel [Kompatibilität von Windows-Containerversionen](/virtualization/windowscontainers/deploy-containers/version-compatibility), um zu ermitteln, welches Basisimage Sie für Ihre Umgebung verwenden sollten.
 
 ## <a name="create-and-build-the-dockerfile"></a>Erstellen und Kompilieren der Dockerfile-Datei
 
@@ -93,7 +93,7 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
    >
    > Visual Studio 2017 Version 15.8 und früher (alle Produkte) werden unter „mcr.microsoft.com/windows/servercore:1809“ oder höher nicht ordnungsgemäß installiert. Es wird keine Fehlermeldung angezeigt.
    >
-   > Informationen dazu,welche Containerbetriebssystemversionen auf welchen Hostbetriebssystemversionen unterstützt werden, finden Sie unter [Kompatibilität der Windows-Containerversionen](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility). Informationen zu bekannten Problemen finden Sie unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
+   > Informationen dazu,welche Containerbetriebssystemversionen auf welchen Hostbetriebssystemversionen unterstützt werden, finden Sie unter [Kompatibilität der Windows-Containerversionen](/virtualization/windowscontainers/deploy-containers/version-compatibility). Informationen zu bekannten Problemen finden Sie unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
 
    ::: moniker-end
 
@@ -131,7 +131,7 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
    > [!WARNING]
    > Wenn Sie Ihr Image direkt auf der Grundlage von microsoft/windowsservercore erstellen, wird .NET Framework möglicherweise nicht ordnungsgemäß installiert, ohne dass ein Installationsfehler ausgegeben wird. Es kann sein, dass verwalteter Code nach Abschluss der Installation nicht ausgeführt wird. Erstellen Sie Ihr Image stattdessen auf der Grundlage von [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) oder höher. Beachten Sie außerdem, dass Images der Version 4.8 oder höher möglicherweise PowerShell als Standard-`SHELL` verwenden, wodurch die Anweisungen `RUN` und `ENTRYPOINT` nicht ausgeführt werden können.
    >
-   > Informationen dazu,welche Containerbetriebssystemversionen auf welchen Hostbetriebssystemversionen unterstützt werden, finden Sie unter [Kompatibilität der Windows-Containerversionen](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility). Informationen zu bekannten Problemen finden Sie unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
+   > Informationen dazu,welche Containerbetriebssystemversionen auf welchen Hostbetriebssystemversionen unterstützt werden, finden Sie unter [Kompatibilität der Windows-Containerversionen](/virtualization/windowscontainers/deploy-containers/version-compatibility). Informationen zu bekannten Problemen finden Sie unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
 
    ::: moniker-end
 

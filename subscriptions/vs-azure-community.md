@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Azure-Community-Support-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681245"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983755"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Azure-Community-Support-Forum in Visual Studio-Abonnements
 Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-Team.  Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu verschiedenen Themen rund um Azure.
@@ -50,7 +50,9 @@ Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargeste
 |                                          Abonnementstufe                                           |     Channels      |    Vorteil    | Erneuerbar? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Ein Jahr    |    Ja     |
+|                           Visual Studio Enterprise mit GitHub Enterprise                           | VL, Azure, Retail |   Ein Jahr    |    Ja     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Ein Jahr    |    Ja     |
+|                          Visual Studio Professional mit GitHub Enterprise                          | VL, Azure, Retail |   Ein Jahr    |    Ja     |
 |                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Ein Jahr    |    Ja     |
 |                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Ein Jahr    |    Ja     |
 | Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud), NFR<sup>1</sup> |        Alle        | Nicht verfügbar |     Nein     |
@@ -69,4 +71,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
-Wussten Sie, dass in vielen Visual Studio-Abonnements Azure-Gutschriften enthalten sind?  Erfahren Sie, wie Sie Ihre [aktivieren](vs-azure.md).
+Wussten Sie, dass in vielen Visual Studio-Abonnements Einzelguthaben für Azure DevTest enthalten sind?  Erfahren Sie, wie Sie Ihre [aktivieren](vs-azure.md).

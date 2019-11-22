@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662934"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981132"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -52,7 +52,7 @@ ms.locfileid: "72662934"
 
 Welche Editionen von Visual Studio diese Funktion unterstützen, erfahren Sie unter [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Sie können Code manuell über ein offenes Abhängigkeits Diagramm in Visual Studio oder über eine Eingabeaufforderung validieren. Sie können Code auch automatisch validieren, wenn Sie lokale Builds oder Azure Pipelines Builds ausführen. Siehe [Channel 9-Video: Entwerfen und validieren ihrer Architektur mithilfe von Abhängigkeits Diagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).
+Sie können Code manuell über ein offenes Abhängigkeits Diagramm in Visual Studio oder über eine Eingabeaufforderung validieren. Sie können Code auch automatisch validieren, wenn Sie lokale Builds oder Azure Pipelines Builds ausführen. Siehe [Channel 9-Video: Entwerfen und validieren ihrer Architektur mithilfe von Abhängigkeits Diagrammen](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Wenn Sie die ebenenvalidierung mit Team Foundation Server (TFS) ausführen möchten, müssen Sie auch die gleiche Version von Visual Studio auf dem Buildserver installieren.

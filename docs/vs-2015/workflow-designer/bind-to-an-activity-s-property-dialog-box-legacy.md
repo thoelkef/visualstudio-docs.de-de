@@ -1,5 +1,5 @@
 ---
-title: Dialog Feld "an&#39;eine Aktivität binden" (Legacy) | Microsoft-Dokumentation
+title: Bind to an Activity&#39;s Property Dialog Box (Legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,26 +13,26 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b93f6787ef24a191385c0fd86672aa23ff72e3e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 451544a84237bc6fa4e069df9dd1e17feccf86f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659219"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301019"
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Dialog Feld "an&#39;eine Aktivität binden" (Legacy)
-In diesem Thema wird beschrieben, wie Sie das Dialogfeld **an die Eigenschaft einer Aktivität binden** in der Legacy-[!INCLUDE[wfd1](../includes/wfd1-md.md)] verwenden. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Bind to an Activity&#39;s Property Dialog Box (Legacy)
+This topic describes how use the **Bind to an Activity's Property** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
- Ein Instanztyp der Abhängigkeitseigenschaft kann an die öffentliche Eigenschaft oder das Ereignis einer anderen Aktivität gebunden werden. Weitere Informationen zur Aktivitäts Bindung finden Sie unter [Verwenden von Abhängigkeits Eigenschaften](http://go.microsoft.com/fwlink?LinkID=65007).
+ Ein Instanztyp der Abhängigkeitseigenschaft kann an die öffentliche Eigenschaft oder das Ereignis einer anderen Aktivität gebunden werden. For more information about activity binding, see [Using Dependency Properties](https://go.microsoft.com/fwlink?LinkID=65007).
 
- Sie wählen eine Eigenschaft aus, an die gebunden werden soll, indem Sie das Dialogfeld **an die Eigenschaft einer Aktivität binden** . Öffnen Sie dieses Dialogfeld, indem Sie im Eigenschaften Fenster am Ende des Textfelds der ausgewählten Eigenschaft auf die Auslassungs Punkte **[...]** klicken, oder indem Sie auf das blaue Ausrufezeichen Symbol klicken, das neben dem Eigenschaftsnamen im **Eigenschaften** Browser angezeigt wird.
+ You select a property to bind to using the **Bind to an Activity's Property** dialog box. You open this dialog box by clicking the ellipses **[…]** at the end of the selected property's text box in the **Properties** window, or by clicking the blue exclamation mark icon that appears next to the property name in the property browser.
 
- In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog **Felds binden an die Eigenschaft einer Aktivität** beschrieben.
+ The following table describes the user interface (UI) elements of the **Bind to an Activity's Property** dialog box.
 
 |Benutzeroberflächenelement|Beschreibung|
 |----------------|-----------------|
-|**Binden an einen vorhandenen Member**|Wählen Sie einen Member aus, an den Sie im Strukturansichtsbereich binden möchten. Im Bereich unterhalb der Struktur wird eine Meldung angezeigt, ob es sich bei dem Member um einen gültigen Typ handelt, an den gebunden werden kann, oder nicht. Klicken Sie auf **OK** , um eine Bindung mit dem ausgewählten gültigen Member herzustellen.|
-|**Binden an einen neuen Member**|Erstellen Sie ein neues Memberfeld oder eine Eigenschaft, an das bzw. die gebunden werden kann. Geben Sie einen **neuen Elementnamen**ein. Wählen Sie aus, ob Sie eine Abhängigkeits Eigenschaft oder ein öffentliches Feld erstellen möchten, indem Sie **Create Field** oder **Create Property**auswählen. Klicken Sie auf **OK** , um das neue Mitglied zu erstellen.|
+|**Bind to an existing member**|Wählen Sie einen Member aus, an den Sie im Strukturansichtsbereich binden möchten. Im Bereich unterhalb der Struktur wird eine Meldung angezeigt, ob es sich bei dem Member um einen gültigen Typ handelt, an den gebunden werden kann, oder nicht. Click **OK** to bind to the selected valid member.|
+|**Bind to a new member**|Erstellen Sie ein neues Memberfeld oder eine Eigenschaft, an das bzw. die gebunden werden kann. Enter a **New Member Name**. Choose whether you want to create a dependency property or a public field by selecting **Create Field** or **Create Property**. Click **OK** to create the new member.|
 
 ## <a name="see-also"></a>Siehe auch
- [Verwenden von Aktivitäts Eigenschaften](http://go.microsoft.com/fwlink?LinkID=65013) [mithilfe von Abhängigkeits Eigenschaften](http://go.microsoft.com/fwlink?LinkID=65007) [Legacy-Designer für Windows Workflow Foundation UI-Hilfe](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Using Activity Properties](https://go.microsoft.com/fwlink?LinkID=65013) [Using Dependency Properties](https://go.microsoft.com/fwlink?LinkID=65007) [Legacy Designer for Windows Workflow Foundation UI Help](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

@@ -15,44 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "70222653"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187600"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren durch Code mit dem Visual Studio-Debugger
 
 Mit dem Visual Studio-Debugger können Sie durch den Code navigieren, um den Zustand einer APP zu überprüfen und den Ausführungs Fluss anzuzeigen. Sie können Tastenkombinationen, Debug-Befehle, Breakpoints und andere Features verwenden, um schnell zu dem Code zu gelangen, den Sie untersuchen möchten. Vertrautheit mit Debugger-Navigations Befehlen und-Verknüpfungen ermöglicht es, App-Probleme schneller und leichter zu finden und zu beheben.  Wenn Sie den Code zum ersten Mal debuggen möchten, sollten Sie vor dem Durcharbeiten dieses Artikels das [Debuggen für absolute Einsteiger](../debugger/debugging-absolute-beginners.md) und [Debuggingtechniken und-Tools](../debugger/write-better-code-with-visual-studio.md) lesen.
 
-## <a name="basic-debugging"></a>Debuggen – Grundlagen
+## <a name="get-into-break-mode"></a>Wechseln Sie in den "Break-Modus".
 
-Um die APP mit dem angefügten Debugger zu starten, drücken Sie **F5**, wählen **Debuggen**  > **Debugging starten**aus, oder wählen Sie den grünen Pfeil in der Visual Studio-Symbolleiste aus.
+Im *unterschreibmodus*wird die Ausführung der APP angehalten, während Funktionen, Variablen und Objekte im Arbeitsspeicher verbleiben. Sobald sich der Debugger im Break-Modus befindet, können Sie durch den Code navigieren. Die gängigsten Möglichkeiten, sich schnell in den Unterbrechung zu bewegen, sind folgende:
 
- ![Dbg&#95;-&#95;Grund&#95;lagen Starten des Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
+- Beginnen Sie den Code schrittweise, indem Sie **F10** oder **F11**drücken. Auf diese Weise können Sie schnell den Einstiegspunkt ihrer App finden. Sie können dann mit dem Drücken von Schritt Befehlen fortfahren, um den Code zu navigieren.
 
-Beim Debuggen zeigt eine gelbe Hervorhebung die Codezeile, die als nächstes ausgeführt wird.
+- [Führen Sie an einem bestimmten Speicherort oder einer bestimmten Funktion](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)aus, indem Sie beispielsweise [einen Haltepunkt festlegen](using-breakpoints.md) und die app starten.
 
- ![Dbg&#95;-&#95;Grund&#95;lagen Umbruch Modus](../debugger/media/dbg_basics_break_mode.png "Unterbrechungsmodus")
+   Beispielsweise können Sie im Code-Editor in Visual Studio den Befehl **Ausführen bis Cursor** verwenden, um die APP, den Debugger anzufügen und in den Break-Modus zu starten, und **F11** , um den Code zu navigieren.
 
-Die meisten Debuggerfenster, wie z. b. die **Module** und die **Überwachungs** Fenster, sind nur verfügbar, während der Debugger ausgeführt wird. Einige Debuggerfunktionen, z. b **. das Anzeigen** von Variablen Werten im Fenster "lokal" oder das Auswerten von Ausdrücken im Fenster "über **Wachen** ", sind nur verfügbar, wenn der Debugger an einem Haltepunkt angehalten wird, auch als *break-Modus*bezeichnet
+   ![Ausführen bis Cursor und Ausführen von Code in Einzelschritten](../debugger/media/navigate-code-code-stepping.gif "Ausführen bis Cursor und Ausführen von Code in Einzelschritten")
 
-Im unterschreibmodus wird die Ausführung der APP angehalten, während Funktionen, Variablen und Objekte im Arbeitsspeicher verbleiben. Sie können die Positionen und Zustände der Elemente überprüfen, um nach Verstößen oder Fehlern zu suchen. Bei einigen Projekttypen können Sie auch Anpassungen an der APP vornehmen, während Sie sich im Break-Modus befinden. Ein Video, das diese Features anzeigt, finden Sie unter [Getting Started with the Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+Im Break-Modus können Sie eine Vielzahl von Befehlen verwenden, um durch den Code zu navigieren. Im Break-Modus können Sie die Werte von Variablen überprüfen, um nach Verstößen oder Fehlern zu suchen. Bei einigen Projekttypen können Sie auch Anpassungen an der APP vornehmen, während Sie sich im Break-Modus befinden.
 
-Wenn Sie den Code unterbrechen, der keine Quell-oder Symbol Dateien (*PDB*-Dateien) geladen hat, zeigt der Debugger an, dass die Seite **Quelldateien nicht gefunden** oder **Symbole nicht gefunden** angezeigt wird, die Sie beim Suchen und Laden der Dateien unterstützen können. Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie die Symbol-oder Quelldateien nicht laden können, können Sie dennoch die Assemblyanweisungen im Disassemblyfenster Debuggen.
+Die meisten Debuggerfenster, wie z. b. die **Module** und die **Überwachungs** Fenster, sind nur verfügbar, wenn der Debugger an Ihre APP angefügt ist. Einige Debuggerfunktionen, z. b. das Anzeigen von Variablen Werten **im Fenster "** lokal" oder das Auswerten von Ausdrücken im Fenster "über **Wachen** ", sind nur verfügbar, wenn der Debugger angehalten ist (d. h. im Break-Modus).
 
-Sie müssen nicht immer mit dem Debuggen beginnen, indem Sie eine APP am Anfang starten. Sie können auch **F11** drücken, [um in den Code](#BKMK_Step_into__over__or_out_of_the_code)zu wechseln, **F10** drücken, um den [Code zu über](#BKMK_Step_over_Step_out)springen, oder [bis zu einer bestimmten Position oder Funktion ausführen](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
+> [!NOTE]
+> Wenn Sie in Code unterbrechen, der keine Quell-oder Symbol Dateien (*PDB*-Dateien) geladen hat, zeigt der Debugger die Seite **Quelldateien nicht gefunden** oder Symbol **nicht gefunden** an, mit der Sie die Dateien suchen und laden können. Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie die Symbol-oder Quelldateien nicht laden können, können Sie dennoch die Assemblyanweisungen im Disassemblyfenster Debuggen.
 
 ## <a name="step-through-code"></a>Schritt-für-Schritt-Ausführung des Codes
 
 Mithilfe der Befehle zum Debuggerschritt untersuchen Sie den App-Status, oder erfahren Sie mehr über den Ausführungs Fluss.
 
-Wenn Sie den Einstiegspunkt in Ihrer APP suchen müssen, beginnen Sie mit **F10** oder **F11**.
-
 ### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Schrittweises Ausführen von Code in Einzelschritten
 
-Um beim Debuggen für jede Zeile des Codes oder der Anweisung anzuhalten, verwenden Sie **Debug** - >  Einzel**Schritt**, oder drücken Sie **F11**.
+Um beim Debuggen für jede Anweisung anzuhalten, verwenden Sie **Debug** > Einzel **Schritt**, oder drücken Sie **F11**.
 
 Der Debugger schrittweise durch Code Anweisungen, nicht durch physische Zeilen. Beispielsweise kann eine `if`-Klausel in eine Zeile geschrieben werden:
 
@@ -73,11 +72,11 @@ Wenn Sie jedoch in diese Zeile eintreten, behandelt der Debugger die Bedingung a
 Bei einem geschachtelten Funktionsaufruf führt **Einzelschritt** die am tiefsten geschachtelte Funktion in Einzelschritten aus. Wenn Sie z. b. Einzel **Schritt** für einen-Befehl wie `Func1(Func2())` verwenden, führt der Debugger die Funktion `Func2` aus.
 
 >[!TIP]
->Wenn Sie jede Codezeile ausführen, können Sie mit dem Mauszeiger auf Variablen zeigen, um deren Werte anzuzeigen, oder Sie können mit den Fenstern "lokal [" und "](autos-and-locals-windows.md) über [Wachen](watch-and-quickwatch-windows.md) " die Werte ändern. Sie können die-aufrufsstapel auch während der Schritt-für-Schritt-Funktion in Weitere Informationen finden Sie [unter Map-Methoden in der-aufrufsstapel](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+>Wenn Sie jede Codezeile ausführen, können Sie mit dem Mauszeiger auf Variablen zeigen, um deren Werte anzuzeigen, oder Sie können mit den Fenstern "lokal [" und "](autos-and-locals-windows.md) über [Wachen](watch-and-quickwatch-windows.md) " die Werte ändern. Sie können die- [aufrufsstapel](how-to-use-the-call-stack-window.md) auch während der Schritt-für-Schritt-Funktion in (Informationen zu Visual Studio Enterprise finden Sie unter [map-Methoden in der aufrufsstapel beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
 ### <a name="BKMK_Step_over_Step_out"></a>Schrittweises Durchlaufen von Code und überspringen einiger Funktionen
 
-Beim Debuggen ist es möglicherweise nicht wichtig, dass eine Funktion funktioniert, oder Sie wissen, wie gut getesteter Bibliotheks Code funktioniert. Sie können die folgenden Befehle verwenden, um den Code zu überspringen. Die Funktionen werden weiterhin ausgeführt, aber der Debugger überspringt Sie.
+Beim Debuggen ist es möglicherweise nicht wichtig, dass eine Funktion funktioniert, oder Sie wissen, wie gut getesteter Bibliotheks Code funktioniert. Sie können die folgenden Befehle verwenden, um Code zu überspringen, während die Code überschrittes Die Funktionen werden weiterhin ausgeführt, aber der Debugger überspringt Sie.
 
 |Tastatur Befehl|Menübefehl "Debug"|Beschreibung|
 |----------------------|------------------|-----------------|
@@ -133,7 +132,7 @@ Während Sie im Debugger angehalten wurde, können Sie auf eine-Anweisung im Que
 ![Ausführen bis klicken](../debugger/media/dbg-run-to-click.png "Ausführung bis Klick")
 
 > [!NOTE]
-> Das **Ausführen bis Klick** ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verfügbar.
+> Das **Ausführen bis Klick** ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]verfügbar.
 
 ### <a name="manually-break-into-code"></a>Manuelles Unterbrechen im Code
 

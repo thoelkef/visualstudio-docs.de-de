@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974721"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888690"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 
@@ -44,7 +44,7 @@ Bevor Sie Versionen parallel installieren, sollten Sie sich mit folgenden Beding
 
 * Wenn Sie eine Visual Studio-Version auf einem Computer deinstallieren, auf dem mehrere Versionen installiert sind, werden die Visual Studio-Dateizuordnungen für alle Versionen entfernt.
 
-* Visual Studio aktualisiert die Erweiterungen nicht automatisch, da nicht alle Erweiterungen kompatibel sind. Installieren Sie erneut die Erweiterungen aus dem [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) oder vom Softwareherausgeber.
+* Visual Studio aktualisiert die Erweiterungen nicht automatisch, da nicht alle Erweiterungen kompatibel sind. Installieren Sie erneut die Erweiterungen aus dem [Visual Studio Marketplace](https://marketplace.visualstudio.com/) oder vom Softwareherausgeber.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework-Versionen und parallele Installationen
 

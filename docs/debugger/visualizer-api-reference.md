@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcba8397ce766409715f24e184b3c77aad53eea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728654"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187215"
 ---
 # <a name="visualizer-api-reference"></a>Referenz zur Schnellansicht-API
 
@@ -43,5 +43,5 @@ Die Schnellansicht-APIs werden für Benutzer bereitgestellt, die eine Schnellans
 ## <a name="see-also"></a>Siehe auch
 
 - [Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Gewusst wie: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Gewusst wie: Schreiben einer Schnellansicht](create-custom-visualizers-of-data.md)
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)

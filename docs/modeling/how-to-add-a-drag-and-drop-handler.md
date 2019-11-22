@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d20436eb7efb1d3f4212e8fc3a3ed9a3234c4114
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667231"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985093"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 
@@ -50,7 +50,7 @@ Definieren Sie in einer neuen Datei eine partielle Klasse für die Form- oder Di
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>: Diese Methode wird aufgerufen, wenn der Benutzer die Maustaste loslässt, während sich der Mauszeiger über dieser Form oder diesem Diagramm befindet, wenn `OnDragOver(DiagramDragEventArgs e)` zuvor `e.Effect` auf einen anderen Wert als `None` festgelegt hat.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>: Diese Methode wird aufgerufen, wenn der Benutzer die Maustaste loslässt, während sich der Mauszeiger über dieser Form oder diesem Diagramm befindet, wenn `OnDragOver(DiagramDragEventArgs e)` zuvor `e.Effect` auf einen anderen Wert als `None`festgelegt hat.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -146,7 +146,7 @@ Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen v
     }
     ```
 
-     Bestimmen Sie zum Akzeptieren von UML-Formen die GUIDs der UML-Formklassen auf experimentelle Weise. Denken Sie daran, dass ein Diagramm meist mehr als einen Elementtyp aufweist. Denken Sie außerdem daran, dass ein Objekt, das aus einem DSL- oder UML-Diagramm gezogen wird, die Form und nicht das Modellelement ist.
+     Um UML-Formen zu akzeptieren, bestimmen Sie die GUIDs der UML-Form Klassen nach Experiment. Denken Sie daran, dass ein Diagramm meist mehr als einen Elementtyp aufweist. Denken Sie außerdem daran, dass ein Objekt, das aus einem DSL- oder UML-Diagramm gezogen wird, die Form und nicht das Modellelement ist.
 
 Darüber hinaus weist `DiagramDragEventArgs` Eigenschaften auf, die angeben, wo sich der Mauszeiger gerade befindet und ob der Benutzer die Tasten STRG, ALT oder UMSCHALT drückt.
 
@@ -160,11 +160,9 @@ Die Eigenschaften `Data` und `Prototype` der Ereignisargumente enthalten nur ein
 
 Machen Sie die Quell-DSL für den Visual Studio-modellbus zugänglich:
 
-1. Laden Sie die Visual Studio-Modellbuserweiterung herunter, und installieren Sie sie, sofern noch nicht geschehen. Weitere Informationen finden Sie unter [Visualisierungs-und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche und dann auf **ModelBus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
 
-2. Öffnen Sie die DSL-Definitionsdatei der Quell-DSL im DSL-Designer. Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche und dann auf **ModelBus aktivieren**. Wählen Sie im Dialogfeld eine oder beide Optionen aus.  Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBus-Projekt hinzugefügt.
-
-3. Klicken Sie auf **alle Vorlagen transformieren** , und erstellen Sie die Lösung neu.
+2. Klicken Sie auf **alle Vorlagen transformieren** , und erstellen Sie die Lösung neu.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>So senden Sie ein Objekt aus einer Quell-DSL
 

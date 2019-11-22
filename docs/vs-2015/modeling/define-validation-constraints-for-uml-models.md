@@ -1,5 +1,5 @@
 ---
-title: Definieren von Validierungs Einschränkungen für UML-Modelle | Microsoft-Dokumentation
+title: Define validation constraints for UML models | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,19 +11,19 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f279216d06972578f5173e57375c89542c71e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669889"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295843"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Validierungseinschränkungen definieren, die testen, ob das Modell eine von Ihnen angegebene Bedingung erfüllt. Sie können z. B. eine Einschränkung definieren, um sicherzustellen, dass ein Benutzer keine Schleife mit Vererbungsbeziehungen erstellt. Die Einschränkung wird aufgerufen, wenn der Benutzer versucht, das Modell zu öffnen oder zu speichern. Sie kann auch manuell aufgerufen werden. Wenn die Einschränkung fehlschlägt, wird dem Fehlerfenster eine von Ihnen definierte Fehlermeldung hinzugefügt. Sie können diese Einschränkungen in einer Visual Studio-Integrationserweiterung ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
+Sie können Validierungseinschränkungen definieren, die testen, ob das Modell eine von Ihnen angegebene Bedingung erfüllt. Sie können z. B. eine Einschränkung definieren, um sicherzustellen, dass ein Benutzer keine Schleife mit Vererbungsbeziehungen erstellt. Die Einschränkung wird aufgerufen, wenn der Benutzer versucht, das Modell zu öffnen oder zu speichern. Sie kann auch manuell aufgerufen werden. Wenn die Einschränkung fehlschlägt, wird dem Fehlerfenster eine von Ihnen definierte Fehlermeldung hinzugefügt. Sie können diese Einschränkungen in einer Visual Studio-Integrationserweiterung ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können.
 
- Sie können auch Einschränkungen definieren, mit denen das Modell anhand externer Ressourcen (z. B. Datenbanken) überprüft wird. Wenn Sie Programmcode anhand eines ebenendiagramms überprüfen möchten, lesen Sie [Hinzufügen einer benutzerdefinierten Architektur Überprüfung zu ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+ Sie können auch Einschränkungen definieren, mit denen das Modell anhand externer Ressourcen (z. B. Datenbanken) überprüft wird. If you want to validate program code against a layer diagram, see [Add custom architecture validation to layer diagrams](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
  Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -37,14 +37,14 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 
  Validierungsfehler werden in den Fehlerfenstern von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt. Sie können auf einen Fehler doppelklicken, um die betroffenen Modellelemente auszuwählen.
 
- Weitere Informationen zum Anwenden von Validierungen finden [Sie](../modeling/validate-your-uml-model.md)unter Überprüfen des UML-Modells.
+ For more information about applying validation, see [Validate your UML model](../modeling/validate-your-uml-model.md).
 
 ## <a name="defining-a-validation-extension"></a>Definieren einer Validierungserweiterung
  Um eine Validierungserweiterung für einen UML-Designer zu erstellen, müssen Sie eine Klasse erstellen, welche die Validierungseinschränkungen definiert, und diese Klasse in eine Visual Studio-Integrationserweiterung (VSIX, Visual Studio Integration Extension) einbetten. Die VSIX fungiert als Container zum Installieren der Einschränkung. Es gibt zwei alternative Methoden zur Definition einer Validierungserweiterung:
 
-- **Erstellen Sie eine Validierungs Erweiterung in der eigenen VSIX mithilfe einer Projektvorlage.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Validierungseinschränkungen nicht mit anderen Erweiterungstypen, z. B. Menübefehlen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten. Sie können mehrere Einschränkungen in einer Klasse definieren.
+- **Create a validation extension in its own VSIX using a project template.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Validierungseinschränkungen nicht mit anderen Erweiterungstypen, z. B. Menübefehlen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten. Sie können mehrere Einschränkungen in einer Klasse definieren.
 
-- **Erstellen separater Validierungs Klassen und VSIX-Projekte.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.
+- **Create separate validation class and VSIX projects.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>So erstellen Sie eine Validierungserweiterung in der eigenen VSIX
 
@@ -63,7 +63,7 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 
 4. Testen Sie die Einschränkungen, indem Sie F5 drücken. Weitere Informationen finden Sie unter [Ausführen einer Validierungseinschränkung](#Executing).
 
-5. Installieren Sie den Menübefehl auf einem anderen Computer, indem Sie den Datei- **bin \\ \* \\ \*. vsix** kopieren, die vom Projekt erstellt wurde. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
+5. Install the menu command on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. Weitere Informationen finden Sie unter [Installieren und Deinstallieren einer Erweiterung](#Installing).
 
    Wenn Sie andere **.cs** -Dateien hinzuzufügen, benötigen Sie normalerweise die folgenden `using` -Anweisungen:
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="Executing"></a>Ausführen einer Validierungs Einschränkung
+## <a name="Executing"></a> Executing a Validation Constraint
  Führen Sie die Validierungsmethoden zu Testzwecken im Debugmodus aus.
 
 #### <a name="to-test-the-validation-constraint"></a>So testen Sie die Validierungseinschränkung
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.
 
-    - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **externes Programm starten** der vollständige Pfadname [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist, in der Regel:
+    - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. In the project properties editor, select the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - An die Validierungsmethoden sind das richtige `Export` -Attribut und das richtige `ValidationMethod` -Attribut angefügt.
 
-    - `ValidationCategories.Menu` ist im-Argument für das `ValidationMethod`-Attribut enthalten und wird mit anderen Werten unter Verwendung von Logical or (&#124;) zusammengesetzt.
+    - `ValidationCategories.Menu` is included in the argument for the `ValidationMethod` attribute, and it is composed with other values using Logical OR (&#124;).
 
     - Die Parameter aller `Import` -Attribute und `Export` -Attribute sind gültig.
 
-## <a name="Implementing"></a>Auswerten der Einschränkung
+## <a name="Implementing"></a> Evaluating the Constraint
  Die Validierungsmethode sollte bestimmen, ob die anzuwendende Validierungseinschränkung den Wert true oder false hat. Bei "true" soll keine Aktion erfolgen. Bei "false" sollte ein Fehler gemeldet werden, indem die vom `ValidationContext` -Parameter bereitgestellten Methoden verwendet werden.
 
 > [!NOTE]
@@ -259,7 +259,7 @@ public void ValidateSomething
 |||
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Definiert die Methode per Managed Extensibility Framework (MEF) als Validierungseinschränkung.|
-|`[ValidationMethod (ValidationCategories.Menu)]`|Gibt an, wann die Validierung ausgeführt wird. Verwenden Sie bitweises OR (&#124;), wenn Sie mehr als eine Option kombinieren möchten.<br /><br /> `Menu` = aufgerufen über das Menü "Überprüfen".<br /><br /> `Save` = aufgerufen beim Speichern des Modells.<br /><br /> `Open` = aufgerufen beim Öffnen des Modells. `Load`: Wird beim Speichern des Modells aufgerufen, bei einem Verstoß gegen eine Einschränkung wird der Benutzer jedoch gewarnt, dass das Modell möglicherweise nicht wieder geöffnet werden kann. Wird zudem beim Laden aufgerufen, bevor das Modell analysiert wird.|
+|`[ValidationMethod (ValidationCategories.Menu)]`|Gibt an, wann die Validierung ausgeführt wird. Use bitwise OR (&#124;) if you want to combine more than one option.<br /><br /> `Menu` = aufgerufen über das Menü "Überprüfen".<br /><br /> `Save` = aufgerufen beim Speichern des Modells.<br /><br /> `Open` = aufgerufen beim Öffnen des Modells. `Load`: Wird beim Speichern des Modells aufgerufen, bei einem Verstoß gegen eine Einschränkung wird der Benutzer jedoch gewarnt, dass das Modell möglicherweise nicht wieder geöffnet werden kann. Wird zudem beim Laden aufgerufen, bevor das Modell analysiert wird.|
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Ersetzen Sie den zweiten `IElement` -Parameter durch den Typ von Element, für den die Einschränkung gelten soll. Die Einschränkungsmethode wird für alle Elemente des angegebenen Typs aufgerufen.<br /><br /> Der Name der Methode ist irrelevant.|
 
  Sie können beliebig viele Validierungsmethoden mit unterschiedlichen Typen im zweiten Parameter definieren. Wenn die Validierung aufgerufen wird, wird jede Validierungsmethode für jedes dem Parametertyp entsprechende Modellelement aufgerufen.
@@ -275,14 +275,14 @@ public void ValidateSomething
 
 - `elementsWithError` identifiziert Elemente im Modell. Wenn Benutzer auf den Fehlerbericht doppelklicken, wird die Form ausgewählt, die dieses Element darstellt.
 
-  `LogError(),` `LogWarning()` und `LogMessage()` Nachrichten in verschiedenen Abschnitten der Fehlerliste platzieren.
+  `LogError(),` `LogWarning()` and `LogMessage()` place messages in different sections of the error list.
 
 ## <a name="how-validation-methods-are-applied"></a>Anwenden von Validierungsmethoden
  Die Validierung wird auf jedes Element im Modell angewendet, einschließlich Beziehungen und Teile größerer Elemente, z. B. Attribute einer Klasse und Parameter einer Operation.
 
  Jede Validierungsmethode wird auf jedes Element angewendet, das dem Typ im zweiten Parameter entspricht. Wenn Sie z. B. eine Validierungsmethode mit einem zweiten Parameter `IUseCase` und eine weitere Methode mit dem übergeordneten Typ `IElement`definieren, werden folglich beide Methoden auf jeden Anwendungsfall im Modell angewendet.
 
- Die Hierarchie der Typen wird in den [UML-Modellelement Typen](../modeling/uml-model-element-types.md)zusammengefasst.
+ The hierarchy of types is summarized in [UML model element types](../modeling/uml-model-element-types.md).
 
  Sie können auch über Beziehungen auf Elemente zugreifen. Wenn Sie z. B. eine Validierungsmethode für `IClass`definieren möchten, könnten Sie die im Besitz befindlichen Eigenschaften in einer Schleife durchlaufen:
 
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="ContextCache"></a>Koordinieren mehrerer Validierungen
+### <a name="ContextCache"></a> Coordinating Multiple Validations
  Wenn die Validierung aufgerufen wird (z. B. vom Benutzer über ein Diagrammmenü), wird jede Validierungsmethode auf jedes Modellelement angewendet. Dies bedeutet, dass dieselbe Methode für einen einzelnen Aufruf des Validierungsframeworks viele Male auf verschiedene Elemente angewendet werden kann.
 
  Dies stellt ein Problem für Validierungen dar, die sich mit den Beziehungen zwischen Elementen beschäftigen. Sie können z. B. eine Validierung schreiben, die von einem Anwendungsfall ausgeht und die **include** -Beziehungen durchläuft, um sicherzustellen, dass keine Schleifen vorhanden sind. Wenn die Methode jedoch auf jeden Anwendungsfall in einem Modell angewendet wird, das über viele **include** -Links verfügt, ist es wahrscheinlich, dass immer die gleichen Bereiche des Modells verarbeitet werden.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Abrufen eines Werts.|
 |`Context.GetValue<T>()`|Abrufen eines Werts des angegebenen Typs|
 
-## <a name="Installing"></a>Installieren und Deinstallieren einer Erweiterung
+## <a name="Installing"></a> Installing and uninstalling an extension
  Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.
 
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.
 
-    2. Suchen Sie den Datei- **bin \\ \* \\** _yourproject_ **. VSIX.**
+    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
 
 2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.
 
@@ -392,9 +392,9 @@ context.LogError(... , usecase);
 
 3. Wählen Sie die Erweiterung aus, und wählen Sie anschließend **Deinstallieren**.
 
-   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, indem Sie die Datei von folgendem Speicherort löschen: *% LocalAppData%* ist in der Regel *driveName*: \Users \\*username*\AppData\Local:
+   In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:
 
-   *% LocalAppData%* **\microsoft\visualstudio \\ [Version] \extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="Example"></a> Beispiel
  In diesem Beispiel wird nach Schleifen in der Abhängigkeitsbeziehung zwischen Elementen gesucht.
@@ -474,4 +474,4 @@ private bool NoDependencyLoops(ValidationContext context,
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [Definieren und Installieren einer Modellierungs Erweiterung](../modeling/define-and-install-a-modeling-extension.md) [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

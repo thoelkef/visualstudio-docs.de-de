@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae8d89baf864c73bed42e4f478624bc930e3c143
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253610"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986116"
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.
@@ -45,7 +45,7 @@ ms.locfileid: "71253610"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="document-level-projects"></a>Projekte auf Dokument Ebene
- Visual Studio stellt generierten Code hinter neuen oder vorhandenen Dokumenten oder Arbeitsblättern in Anpassungen auf Dokumentebene bereit. Mit diesem Code werden zwei unterschiedliche Ereignisse ausgelöst: **Starten** und **herunter**fahren.
+ Visual Studio stellt generierten Code hinter neuen oder vorhandenen Dokumenten oder Arbeitsblättern in Anpassungen auf Dokumentebene bereit. Mit diesem Code werden zwei unterschiedliche Ereignisse ausgelöst: **Startup** und **Shutdown**.
 
 ### <a name="startup-event"></a>Startup-Ereignis
  Das **Startup** -Ereignis wird für jedes Hostelement ausgelöst (Dokument, Arbeitsmappe oder Arbeitsblatt), nachdem das Dokument und der gesamte Initialisierungscode in der Assembly ausgeführt wurde. Dies ist das letzte ausgeführte Element im Konstruktor der Klasse, in dem Ihr Code ausgeführt wird. Weitere Informationen zu Host Elementen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
@@ -103,39 +103,39 @@ ms.locfileid: "71253610"
 ### <a name="order-of-events-in-document-level-excel-projects"></a>Reihenfolge der Ereignisse in Excel-Projekten auf Dokument Ebene
  Die **Startup** -Ereignishandler in Excel-Projekten werden in dieser Reihenfolge aufgerufen:
 
-1. `ThisWorkbook_Startup`.
+1. `ThisWorkbook_Startup`
 
 2. `Sheet1_Startup`
 
 3. `Sheet2_Startup`
 
-4. `Sheet3_Startup`.
+4. `Sheet3_Startup`
 
 5. Andere Blätter laut Reihenfolge.
 
    Die **Shutdown** -Ereignishandler in einer Arbeitsmappen-Projektmappe werden in dieser Reihenfolge aufgerufen:
 
-6. `ThisWorkbook_Shutdown`.
+6. `ThisWorkbook_Shutdown`
 
 7. `Sheet1_Shutdown`
 
 8. `Sheet2_Shutdown`
 
-9. `Sheet3_Shutdown`.
+9. `Sheet3_Shutdown`
 
 10. Andere Blätter laut Reihenfolge.
 
     Die Reihenfolge wird festgelegt, wenn das Projekt kompiliert wird. Wenn der Benutzer die Blätter zur Laufzeit anders anordnet, ändert sich dadurch nicht die Reihenfolge, in der die Ereignisse beim nächsten Öffnen oder Schließen der Arbeitsmappe ausgelöst werden.
 
 ## <a name="vsto-add-in-projects"></a>VSTO-Add-In-Projekte
- Visual Studio stellt generierten Code in VSTO-Add-Ins bereit. Mit diesem Code werden zwei unterschiedliche Ereignisse ausgelöst: <xref:Microsoft.Office.Tools.AddInBase.Startup> und <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
+ Visual Studio stellt generierten Code in VSTO-Add-Ins bereit. Dieser Code löst zwei unterschiedliche Ereignisse aus: <xref:Microsoft.Office.Tools.AddInBase.Startup> und <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
 
 ### <a name="startup-event"></a>Startup-Ereignis
  Das <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignis wird ausgelöst, nachdem das VSTO-Add-In geladen und der gesamte Initialisierungscode in der Assembly ausgeführt wurde. Dieses Ereignis wird mit der `ThisAddIn_Startup` -Methode in der generierten Codedatei behandelt.
 
  Code im `ThisAddIn_Startup` -Ereignishandler ist der erste Benutzercode, der ausgeführt wird, es sei denn, Ihr VSTO-Add-In setzt die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode außer Kraft. In diesem Fall wird der `ThisAddIn_Startup` -Ereignishandler nach <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>aufgerufen.
 
- Fügen Sie im `ThisAdd-In_Startup` -Ereignishandler keinen Code hinzu, wenn der Code erfordert, dass ein Dokument geöffnet ist. Fügen Sie stattdessen diesen Code einem Ereignis hinzu, welches durch die Office-Anwendung ausgelöst wird, wenn vom Benutzer ein Dokument erstellt oder geöffnet wird. Weitere Informationen finden Sie unter [zugreifen auf ein Dokument beim Starten der Office-Anwendung](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ Fügen Sie im `ThisAdd-In_Startup` Ereignishandler keinen Code hinzu, wenn der Code erfordert, dass ein Dokument geöffnet ist. Fügen Sie stattdessen diesen Code einem Ereignis hinzu, welches durch die Office-Anwendung ausgelöst wird, wenn vom Benutzer ein Dokument erstellt oder geöffnet wird. Weitere Informationen finden Sie unter [zugreifen auf ein Dokument beim Starten der Office-Anwendung](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
  Weitere Informationen zur Startsequenz von VSTO-Add-Ins finden Sie unter [Architektur von VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
@@ -150,11 +150,11 @@ ms.locfileid: "71253610"
 - Das <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> -Ereignis des <xref:Microsoft.Office.Interop.Outlook.Explorer> -Objekts.
 
 > [!NOTE]
-> Sie können für Outlook erzwingen, dass das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis beim Beenden ausgelöst wird, indem Sie dies in der Registrierung ändern. Aber wenn ein Administrator diese Einstellung zurücksetzt, wird der Code, den Sie der `ThisAddIn_Shutdown` -Methode hinzufügen, beim Beenden von Outlook nicht mehr ausgeführt. Weitere Informationen finden Sie unter [Shutdown-Änderungen für Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Sie können für Outlook erzwingen, dass das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis beim Beenden ausgelöst wird, indem Sie dies in der Registrierung ändern. Aber wenn ein Administrator diese Einstellung zurücksetzt, wird der Code, den Sie der `ThisAddIn_Shutdown` -Methode hinzufügen, beim Beenden von Outlook nicht mehr ausgeführt. Weitere Informationen finden Sie unter [Shutdown-Änderungen für Outlook 2010](/previous-versions/office/developer/office-2010/ee720183(v=office.14)).
 
 ## <a name="see-also"></a>Siehe auch
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
-- [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)

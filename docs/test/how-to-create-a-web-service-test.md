@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 90dae3add4782af18763168643cfa5755d37cc2e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653600"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981277"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Vorgehensweise: Erstellen eines Webdiensttests
 
@@ -23,7 +23,7 @@ Sie können Webleistungstests verwenden, um Webdienste zu testen. Sie können im
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-In den folgenden Prozeduren wird ein Webdienst verwendet, der im Commerce Starter Kit enthalten ist. Sie können ihn mit dem [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469) herunterladen.
+In den folgenden Prozeduren wird ein Webdienst verwendet, der im Commerce Starter Kit enthalten ist. Sie können ihn mit dem [ASP.NET Commerce Starter Kit](https://sourceforge.net/projects/ppcsk/) herunterladen.
 
 **Anforderungen**
 

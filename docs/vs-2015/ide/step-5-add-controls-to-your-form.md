@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8c261d903868df887d99c10182ed134c79c552b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671765"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295725"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Schritt 5: Hinzufügen von Steuerelementen zum Formular
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein `PictureBox`-Steuerelement und ein `CheckBox`-Steuerelement. Danach fügen Sie dem Formular Schaltflächen hinzu.
 
- ![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") Eine videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bild Anzeige Programms in Visual Basic-Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) oder [Tutorial 1: Erstellen eines Bild Anzeige Programms C# in-Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) or [Tutorial 1: Create a Picture Viewer in C# - Video 2](https://go.microsoft.com/fwlink/?LinkId=205200). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.
 
 ### <a name="to-add-controls-to-your-form"></a>So fügen Sie dem Formular ein Steuerelement hinzu
 
@@ -33,7 +33,7 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein `Pict
 
 4. Wählen Sie das neue PictureBox-Steuerelement aus, und wählen Sie dann das schwarze Dreieck auf dem neuen PictureBox-Steuerelement aus, um die dazugehörige Aufgabenliste anzuzeigen, wie im folgenden Bild dargestellt.
 
-     ![PictureBox-Aufgaben](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") PictureBox-Aufgaben
+     ![PictureBox tasks](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") PictureBox tasks
 
     > [!NOTE]
     > Wenn Sie dem TableLayoutPanel unbeabsichtigt den falschen Typ von Steuerelement hinzufügen, können Sie es löschen. Klicken Sie mit der rechten Maustaste auf das Steuerelement, und wählen Sie dann im Kontextmenü **Löschen** aus. Sie können Steuerelemente aus dem Formular auch mithilfe der Menüleiste entfernen. Wählen Sie in der Menüleiste **Bearbeiten**, **Rückgängig** oder **Bearbeiten**, **Löschen** aus.
@@ -47,7 +47,7 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein `Pict
 
 7. Wählen Sie das TableLayoutPanel auf dem Formular aus, und fügen Sie dann dem Formular ein **CheckBox**-Steuerelement hinzu. Doppelklicken Sie in der Toolbox auf das **CheckBox**-Element, um der nächsten freien Zelle in der Tabelle ein neues CheckBox-Steuerelement hinzuzufügen. Da ein PictureBox-Steuerelement die ersten beiden Zellen im TableLayoutPanel einnimmt, wird das CheckBox-Steuerelement der linken unteren Zelle hinzugefügt. Wählen Sie die Eigenschaft **Text** aus, und geben Sie das Wort **Stretch** ein, wie in der folgenden Abbildung dargestellt.
 
-     ![TextBox-Steuerelement mit Stretch-Eigenschaft](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") TextBox-Steuerelement mit Stretch-Eigenschaft
+     ![TextBox control with Stretch property](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") TextBox control with Stretch property
 
 8. Wählen Sie das TableLayoutPanel im Formular aus, und wechseln Sie dann zur Gruppe **Container** in der Toolbox (dort, wo Sie das TableLayoutPanel-Steuerelement abgerufen haben). Doppelklicken Sie auf das **FlowLayoutPanel**-Element, um ein neues Steuerelement zur letzten Zelle im PictureBox-Steuerelement (unten rechts) hinzuzufügen. Docken Sie anschließend das FlowLayoutPanel im TableLayoutPanel an (entweder durch Auswählen von **In übergeordnetem Container andocken** in der Aufgabenliste des schwarzen Dreiecks von FlowLayoutPanel oder durch Festlegen der FlowLayoutPanel-Eigenschaft **Dock** auf **Fill**).
 
@@ -70,9 +70,9 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein `Pict
     > [!NOTE]
     > Wenn die Schaltflächen immer noch in der falschen Reihenfolge angeordnet sind, können Sie die Schaltflächen innerhalb des FlowLayoutPanel ziehen, um sie in gewünschter Reihenfolge neu anzuordnen. Sie können eine Schaltfläche auswählen und sie nach links oder rechts ziehen.
 
-5. Wählen Sie die Schaltfläche **Schließen** aus. Halten Sie die STRG-TASTE gedrückt, und wählen Sie die anderen drei Schaltflächen aus, damit alle ausgewählt werden. Wenn alle Schaltflächen ausgewählt sind, wechseln Sie zum **Eigenschaftenfenster**, und verschieben Sie den Fensterinhalt nach oben bis zur **AutoSize**-Eigenschaft. Diese Eigenschaft teilt der Schaltfläche mit, die Größe automatisch zu ändern, damit der gesamte Text Platz hat. Legen Sie die Eigenschaft auf **true** fest. Die Schaltflächen sollten jetzt die richtige Größe aufweisen und in der richtigen Reihenfolge angezeigt werden. (Solange alle vier Schaltflächen ausgewählt sind, können Sie alle vier **AutoSize** -Eigenschaften gleichzeitig ändern.) Das folgende Bild zeigt die vier Schaltflächen.
+5. Wählen Sie die Schaltfläche **Schließen** aus. Halten Sie die STRG-TASTE gedrückt, und wählen Sie die anderen drei Schaltflächen aus, damit alle ausgewählt werden. Wenn alle Schaltflächen ausgewählt sind, wechseln Sie zum **Eigenschaftenfenster**, und verschieben Sie den Fensterinhalt nach oben bis zur **AutoSize**-Eigenschaft. Diese Eigenschaft teilt der Schaltfläche mit, die Größe automatisch zu ändern, damit der gesamte Text Platz hat. Legen Sie die Eigenschaft auf **true** fest. Die Schaltflächen sollten jetzt die richtige Größe aufweisen und in der richtigen Reihenfolge angezeigt werden. (As long as all four buttons are selected, you can change all four **AutoSize** properties at the same time.) The following picture shows the four buttons.
 
-     ![Bild Anzeige mit vier Schalt](../ide/media/express-autosize.png "Express_AutoSize") Flächen Bild Anzeige mit vier Schaltflächen
+     ![Picture Viewer with four buttons](../ide/media/express-autosize.png "Express_AutoSize") Picture Viewer with four buttons
 
 6. Führen Sie jetzt das Programm aus, um das Formular mit dem neuen Layout anzuzeigen. Noch ruft das Auswählen der Schaltflächen und des Kontrollkästchens keine Reaktion hervor, aber das ändert sich bald.
 

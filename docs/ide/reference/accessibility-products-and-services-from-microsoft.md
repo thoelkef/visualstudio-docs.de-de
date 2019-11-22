@@ -21,44 +21,44 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: 79e9ead07e58a1b359e67289913581a533185a45
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060392"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919103"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Diese Seite enthält Informationen über die Funktionen, Produkte und Dienste, die Personen mit Behinderungen die Verwendung von Microsoft Windows erleichtern.
 
 > [!IMPORTANT]
-> Die Informationen auf dieser Seite gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen lassen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der auf dieser Seite beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen zur Barrierefreiheit sind auch in anderen Sprachen verfügbar.
+> Die Informationen auf dieser Seite gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/accessibility/) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen lassen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der auf dieser Seite beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen zur Barrierefreiheit sind auch in anderen Sprachen verfügbar.
 
 ## <a name="windows"></a> Barrierefreiheitsfeatures in Windows
 
-Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
+Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/accessibility/).
 
 ### <a name="free-step-by-step-tutorials"></a>Kostenlose Lernprogramme mit Schritt-für-Schritt-Beschreibungen
 
 Microsoft bietet eine Reihe von Lernprogrammen mit Schritt-für-Schritt-Beschreibungen zur Anpassung der Barrierefreiheitsoptionen und -einstellungen auf Ihrem Computer. Diese Informationen werden parallel präsentiert, sodass Sie die Verwendung der Maus, der Tastatur oder die kombinierte Verwendung beider Eingabegeräte erlernen können.
 
-Ausführliche Tutorials zu Microsoft-Produkten finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
+Ausführliche Tutorials zu Microsoft-Produkten finden Sie auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/accessibility/).
 
 ### <a name="assistive-technology-products-for-windows"></a>Hilfstechnologieprodukte für Windows
 
-Es ist eine Vielzahl von Hilfstechnologieprodukten verfügbar, um Personen mit Behinderungen die Verwendung von Computern zu erleichtern. Microsoft stellt auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) einen Suchkatalog für Hilfstechnologieprodukte bereit, die unter Windows ausgeführt werden können.
+Es ist eine Vielzahl von Hilfstechnologieprodukten verfügbar, um Personen mit Behinderungen die Verwendung von Computern zu erleichtern. Microsoft stellt auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/accessibility/) einen Suchkatalog für Hilfstechnologieprodukte bereit, die unter Windows ausgeführt werden können.
 
 Wenn Sie Hilfstechnologien verwenden, informieren Sie sich bei Ihrem Hilfstechnologieanbieter über mögliche Kompatibilitätsprobleme, bevor Sie Ihre Software oder Hardware aktualisieren.
 
 ## <a name="altfortmats"></a> Dokumentation in alternativen Formaten
 
-Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](http://go.microsoft.com/fwlink/?LinkId=8431).
+Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](https://www.microsoft.com/accessibility/).
 
 Darüber hinaus erhalten Sie weitere Microsoft-Veröffentlichungen von Learning Ally. Learning Ally verteilt diese Dokumente an registrierte und berechtigte Mitglieder ihres Vertriebsdiensts. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:
 
 > Lernhilfe<br />
-> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Website von Learning Ally: [http://www.learningally.org](http://www.learningally.org/).
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Website von Learning Ally: [http://www.learningally.org](https://learningally.org/).
 
 Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.
 
@@ -74,7 +74,7 @@ Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgem
 
 ## <a name="moreinfo"></a> Weitere Informationen
 
-Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
+Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](https://www.microsoft.com/accessibility/).
 
 ::: moniker range="vs-2017"
 

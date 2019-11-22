@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670125"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296877"
 ---
 # <a name="walkthrough-building-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -24,7 +24,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
 
 Dieses Thema enthält folgende Abschnitte:
 
-[Installieren der Beispielanwendung](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Installieren der Beispielanwendung](../ide/walkthrough-building-an-application.md)
 
 [Erstellen einer benutzerdefinierten Buildkonfiguration](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ Dieses Thema enthält folgende Abschnitte:
 
 [Anzeigen zusätzlicher Builddetails im Ausgabefenster](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Erstellen eines Releasebuilds](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> Installieren der Beispielanwendung
-
-Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) im Beispielkatalog auf der Microsoft-Website zu suchen und zu installieren. Der Beispielkatalog bietet eine Vielzahl von Beispielsprojekten und -code, die bzw. den Sie beim Erstellen und Entwickeln von Anwendungen herunterladen und überprüfen können.
+[Erstellen eines Releasebuilds](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>So Installieren Sie die Beispielanwendung
 
@@ -48,7 +44,7 @@ Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Int
 
 3. Geben Sie zum Suchen des Beispiels `Introduction` in das Suchfeld ein.
 
-    ![Dialogfeld "Erweiterungen und Updates"](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
+    ![Extensions and Updates dialog box](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
 4. Wählen Sie in der Ergebnisliste entweder **Einführung in das Erstellen von WPF-Anwendungen (Visual C#)** oder **Einführung in das Erstellen von WPF-Anwendungen (Visual Basic)** aus.
 
@@ -60,19 +56,19 @@ Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Int
 
 1. Öffnen Sie das Dialogfeld **Neues Projekt**.
 
-     ![Wählen Sie in der Menüleiste „Datei > Neu > Projekt“ aus.](../ide/media/exploreide-filenewproject.png "Exploreide-filenewproject")
+     ![Wählen Sie in der Menüleiste „Datei > Neu > Projekt“ aus.](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
 
 2. Wählen Sie in der Kategorie **Installiert** die Kategorie **Beispiele** aus, um das Beispiel für die Einführung zum Erstellen von WPF-Anwendungen anzuzeigen.
 
 3. Geben Sie der Projektmappe bei Visual C# den Namen `IntroWPFcsharp`.
 
-     ![Dialogfeld "Neues Projekt", installierte Beispiele](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
+     ![New Project dialog box, Installed Samples](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
      ODER
 
      Geben Sie der Projektmappe bei Visual Basic den Namen `IntroWPFvb`.
 
-     ![Dialogfeld "Neues Projekt", Visual Basic Beispiel](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
+     ![New Project dialog box, Visual Basic Sample](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
 4. Klicken Sie auf die Schaltfläche **OK** .
 
@@ -86,29 +82,29 @@ Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds 
 
 1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
-    ![Menü "erstellen", Configuration Manager Befehl](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+    ![Build menu, Configuration Manager command](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
 2. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **Neu** aus.
 
 3. Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen Debugkonfiguration, und wählen Sie dann die Schaltfläche **OK** aus.
 
-    ![Dialog Feld für neue Projektmappenkonfiguration](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+    ![New Solution Configuration Dialog Box](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
 4. Wählen Sie in der Liste **Aktive Projektmappenplattform** den Eintrag **Neu** aus.
 
 5. Wählen Sie im Dialogfeld **Neue Projektmappenplattform** die Option **x64** aus, und kopieren Sie keine der Einstellungen der x86-Plattform.
 
-    ![Dialog Feld "neue Lösungsplattform"](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+    ![New Solution Platform Dialog Box](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
 6. Klicken Sie auf die Schaltfläche **OK** .
 
    Die aktive Projektmappenkonfiguration wurde für einen Test mit der aktiven, auf x64- festgelegten Projektmappenplattform geändert.
 
-   ![Configuration Manager mit Test Konfiguration](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Configuration Manager with Test configuration](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
    Sie können die aktive Projektmappenkonfiguration schnell überprüfen oder ändern, indem Sie die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** verwenden.
 
-   ![Lösungs Konfigurationsoption (Standard Symbolleiste)](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+   ![Solution Configuration option Standard Toolbar](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
 ## <a name="BKMK_building"></a> Erstellen der Anwendung
 
@@ -122,11 +118,11 @@ Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfigura
 
   Abbildung 1: Visual Basic-Warnungen
 
-  ![Ausgabefenster Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+  ![Output Window Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
   Abbildung 2: Visual C#-Warnungen
 
-  ![Ausgabefenster von Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+  ![Output Window Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 ## <a name="BKMK_hidewarning"></a> Ausblenden von Compilerwarnungen
 
@@ -142,7 +138,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 3. Wählen Sie die Seite **Erstellen**, und geben Sie im Feld **Warnungen unterdrücken** die Warnungsnummer `1762` an.
 
-     ![Seite "erstellen", Projekt-Designer](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
+     ![Build page, Project Designer](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
 
      Weitere Informationen finden Sie unter [Seite „Erstellen“, Projekt-Designer (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -150,7 +146,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
      Im Fenster **Ausgabe** werden nur Zusammenfassungsinformationen für den Build angezeigt.
 
-     ![Ausgabefenster, Visual C&#35; -Buildwarnungen](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Output Window, Visual C&#35; Build Warnings](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>So unterdrücken Sie alle Visual Basic-Buildwarnungen
 
@@ -162,7 +158,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
 3. Aktivieren Sie auf der Seite **Kompilieren** das Kontrollkästchen **Alle Warnungen deaktivieren**.
 
-    ![Seite "kompilieren", Projekt-Designer](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
+    ![Compile page, Project Designer](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
 
     Weitere Informationen finden Sie unter [Konfigurieren von Warnungen in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -170,7 +166,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
    Im Fenster **Ausgabe** werden nur Zusammenfassungsinformationen für den Build angezeigt.
 
-   ![Ausgabefenster Visual Basic Buildwarnungen](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+   ![Output Window, Visual Basic Build Warnings](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
 
    Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compiler-Warnungen](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -185,7 +181,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 1. Öffnen Sie das Dialogfeld **Optionen**.
 
-    ![Befehl "Optionen" im Menü "Extras"](../ide/media/exploreide-toolsoptionsmenu.png "Exploreide-toolsoptionsmenu")
+    ![Befehl „Optionen“ im Menü „Tools“](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
 
 2. Wählen Sie die Kategorie **Projekte und Projektmappen**, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
 
@@ -206,7 +202,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
    Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a> Erstellen eines Releasebuilds
+## <a name="create-a-release-build"></a>Erstellen eines Versionsbuilds
 
 Sie können eine Version der Beispielanwendung erstellen, die für das Versenden optimiert wird. Beim Releasebuild geben Sie an, dass die ausführbare Datei auf eine Netzwerkfreigabe kopiert wird, bevor der Build gestartet wird.
 
@@ -216,7 +212,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 1. Öffnen Sie den **Projekt-Designer**.
 
-     ![Menü "Ansicht", Befehl "Eigenschaften Seiten"](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Wählen Sie die Seite **Kompilieren** aus.
 
@@ -233,13 +229,13 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 6. Erstellen Sie die Anwendung.
 
-     ![Befehl "Projekt Mappe erstellen" im Menü "erstellen"](../ide/media/exploreide-buildsolution.png "Exploreide-BUILDSOLUTION")
+     ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>So geben Sie einen Releasebuild für Visual C-\# an
+#### <a name="to-specify-a-release-build-for-visual-c"></a>To specify a release build for Visual C\#
 
 1. Öffnen Sie den **Projekt-Designer**.
 
-    ![Menü "Ansicht", Befehl "Eigenschaften Seiten"](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+    ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Wählen Sie die Seite **Erstellen** aus.
 
@@ -256,7 +252,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 6. Erstellen Sie die Anwendung.
 
-    ![Befehl "Projekt Mappe erstellen" im Menü "erstellen"](../ide/media/exploreide-buildsolution.png "Exploreide-BUILDSOLUTION")
+    ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    Die ausführbare Datei wird auf den von Ihnen angegebenen Netzwerkpfad kopiert. Der Pfad ist \\\myserver\builds\\*Dateiname*.exe.
 

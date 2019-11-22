@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Websitedefinitionen für SharePoint | Microsoft-Dokumentation
+title: Erstellen von Website Definitionen für SharePoint | Microsoft-Dokumentation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,50 +13,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a75b7143412d360a7663e7cf94a1244d66d15a2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580972"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984522"
 ---
-# <a name="create-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
-  Das Projekt für SharePoint-Sitedefinition im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ermöglicht das Erstellen einer *Websitedefinition*, die dient als Grundlage für eine neue SharePoint-Website. Diese Definitionen bestimmen nicht nur das Aussehen und Verhalten der SharePoint-Website, aber auch den Standardinhalt und Funktionalität. In der Definition können Sie die vorkonfigurierten Listen, Inhaltstypen, Ereignisempfänger, Bilder und andere Elemente einfügen. SharePoint bietet einige Websitedefinitionen, z. B. BLOG, z. B. aus. Wenn Sie einen Standort, basierend auf der Definition der BLOG-Website erstellen, enthält den Standort, die Listen, Webparts und andere Elemente, die eine Blogwebsite erfordert.
+# <a name="create-site-definitions-for-sharepoint"></a>Erstellen von Website Definitionen für SharePoint
+  Mit dem SharePoint-Website Definitions Projekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] können Sie eine *Website Definition*erstellen, die als Grundlage für eine neue SharePoint-Website dient. Diese Definitionen bestimmen nicht nur die Darstellung und das Verhalten der SharePoint-Website, sondern auch die Standard Inhalte und-Funktionen. In der Definition können Sie vorkonfigurierte Listen, Inhaltstypen, Ereignis Empfänger, Bilder und andere Elemente platzieren. SharePoint enthält beispielsweise einige Site Definitionen, z. b. Blog. Wenn Sie eine Website basierend auf der Definition der Blog Site erstellen, enthält die Website die Listen, Webparts und andere Elemente, die für eine Blogsite erforderlich sind.
 
- Weitere Informationen zu Websitedefinitionen, finden Sie unter [Websitevorlagen und Definitionen](http://go.microsoft.com/fwlink/?LinkId=179134).
+ Weitere Informationen zu Site Definitionen finden Sie unter [Website Vorlagen und Definitionen](/previous-versions/office/developer/sharepoint-2010/ms434313(v=office.14)).
 
-## <a name="site-definition-projects"></a>Definition von Websiteprojekten
- Definition Websiteprojekte in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nur die grundlegenden Dateien, die eine SharePoint-Website muss, sondern sie bieten keine Standardfunktionen. Dateien und Inhalte zum Bereitstellen der Funktionen, die Sie möchten, müssen Sie hinzufügen. Sie können den Standort manuell erstellen, indem erstellen und Hinzufügen der Dateien, die Sie benötigen.
+## <a name="site-definition-projects"></a>Site Definitions Projekte
+ Site Definitions Projekte in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nur die grundlegenden Dateien bereitstellen, die von einer SharePoint-Website benötigt werden. Sie stellen keine Standardfunktionen bereit. Sie müssen Dateien und Inhalte hinzufügen, um die gewünschte Funktionalität bereitzustellen. Sie können die Website manuell erstellen, indem Sie die benötigten Dateien erstellen und hinzufügen.
 
-## <a name="feature-stapling"></a>Heften Funktion
- Ein Vorteil beim Erstellen von Websitedefinitionen im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] besteht darin, dass sie automatisch verwenden *Feature Heften*. Feature Heftung Fügt eine Funktion an eine Sitedefinition, statt die Funktionalität in die Sitedefinition an. Auf diese Weise können Sie die Funktion auf einem beliebigen Standort mithilfe der Websitedefinition ohne Änderung der ursprünglichen Websitedefinition erstellt hinzufügen. Weitere Informationen finden Sie unter [Feature Heften](http://go.microsoft.com/fwlink/?LinkID=119283).
+## <a name="feature-stapling"></a>Featureheftung
+ Ein Vorteil beim Erstellen von Website Definitionen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] besteht darin, dass Sie die *Featureheftung*automatisch verwenden. Durch die Featureheftung wird eine Funktion an eine Website Definition angefügt, anstatt ihre Funktionalität in die Website Definition einzubetten. Auf diese Weise können Sie die Funktion zu jeder Website hinzufügen, die mithilfe der Website Definition erstellt wurde, ohne die ursprüngliche Site Definition zu ändern. Weitere Informationen finden Sie unter [Featureheftung](/previous-versions/office/developer/sharepoint-2007/bb861862(v=office.12)).
 
-## <a name="site-definition-project-components"></a>Standortkomponenten-Definition-Projekt
- Bei der Erstellung einer Sitedefinition werden die folgenden Standarddateien hinzugefügt, um die **SiteDefinition** Knoten.
+## <a name="site-definition-project-components"></a>Site Definition-Projektkomponenten
+ Beim Erstellen einer Site Definitions Lösung werden dem **Sitedefinition** -Knoten die folgenden Standard Dateien hinzugefügt.
 
 |Dateiname|Beschreibung|
 |---------------|-----------------|
-|*default.aspx*|Die standardmäßige ASPX-Homepage für die neue SharePoint-Website.|
-|*onet.xml*|Gibt an, die Konfiguration des neuen Standorts, die Komponenten der Websitevorlage für die Definition und Standardverhalten. Diese Einstellungen können zählen etwa Attribute wie die Inhaltstypen, die aktiviert sind, den standardmäßigen Listenansichten Dokument Vorlagendateien und Webparts, die mit dem Standort enthalten. In der Standardeinstellung die `Modules` Abschnitt listet die Dateien hinzugefügt werden, die SharePoint-Website und wie sie konfiguriert sind.|
-|*webtemp_\<SiteDefinitionName>.xml*|Gibt an, die Websitedefinitionskonfigurationen, die in angezeigt wird. die **Vorlagenauswahl** Teil der **neue SharePoint-Website** Seite.|
+|*default. aspx*|Die Standard-aspx-Startseite für die neue SharePoint-Website.|
+|*"Onet. xml"*|Gibt die Konfiguration des neuen Standorts, die Komponenten der Site Definitions Vorlage und das Standardverhalten an. Diese Einstellungen können Attribute wie z. b. aktivierte Inhaltstypen, die Standard Listen Sichten, Dokumentvorlagen Dateien und Webparts enthalten, die in der Website enthalten sind. Der `Modules` Abschnitt listet standardmäßig die Dateien auf, die der SharePoint-Website hinzugefügt werden sollen, und wie Sie konfiguriert werden.|
+|*webtemp_\<SiteDefinitionName >. XML*|Gibt die Site Definitions Konfigurationen an, die im Abschnitt **Vorlagen Auswahl** der Seite **neue SharePoint-Website** angezeigt werden.|
 
- Standardmäßig befinden sich alle Website-Definitionen der  *\<Laufwerk: > \Programme\Gemeinsame Dateien\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* Ordner. Jede Sitedefinition verfügt über einen eigenen Unterordner.
+ Standardmäßig werden alle Site Definitionen im Ordner *\<Laufwerk: > \Programme\Gemeinsame Dateien\Microsoft Shared\Web Server extensions\14\template\sitetemplates* gespeichert. Jede Site Definition verfügt über einen eigenen Unterordner.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts Definition](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Führt Sie Schritt für Schritt durch die Erstellung von grundlegenden sitedefinitionsprojekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Vorgehensweise: Erstellen Sie eine benutzerdefinierte Sitedefinition und Konfiguration](http://go.microsoft.com/fwlink/?LinkId=183309)|Beschreibt, wie eine benutzerdefinierte Sitedefinition in SharePoint erstellen, durch Kopieren einer vorhandenen Definition für den Standort aus, und klicken Sie dann die Kopie ändern.|
-|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Beschreibt die ursprüngliche Datei, der angibt, die Websitedefinitionen zur Verfügung, in der **Vorlagenauswahl** im Abschnitt der **neue SharePoint-Website** Seite.|
-|[Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)|Beschreibt, wie die SharePoint-Lösungen für die globale Verwendung vorzubereiten.|
-|[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Beschreibt, wie Sie Teile einer SharePoint-Seite erstellen, die Benutzer ändern können.|
-|[Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Beschreibt, wie Sie wiederverwendbare Steuerelemente erstellen können, die in Anwendungsseiten und Webparts ausgeführt.|
-|[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|Beschreibt, wie den Designer verwendet, der angezeigt wird, wenn Sie in Ihrem Projekt eine Webseite öffnen.|
-|[Übersicht über die ASP.NET Web Pages](http://go.microsoft.com/fwlink/?LinkId=178726)|Bietet allgemeine Informationen zur Struktur von [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Webseiten, wie Seiten verarbeitet werden, indem [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)], und wie [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seiten Markup anzeigen, das mit XHTML-Standards kompatibel ist.|
-|[Syntax von ASP.NET-Seiten Web](http://go.microsoft.com/fwlink/?LinkId=178727)|Beschreibt die Markupelemente, die eine ASP.NET-Seite bilden.|
-|[Programmierung von ASP.NET-Webseiten](http://go.microsoft.com/fwlink/?LinkId=178728)|Enthält Informationen über das Erstellen von Ereignishandlern in [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seiten und Arbeiten mit Clientskript.|
-|[Programmieren in Windows SharePointServices](http://go.microsoft.com/fwlink/?LinkId=178729)|Beschreibt, wie Sie das verwaltete Objektmodell verwenden, die in bereitgestellt wird [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|
+|[Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Websitedefinition](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Führt Sie Schritt für Schritt durch die Erstellung eines einfachen Projekts für eine Website Definition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Vorgehensweise: Erstellen einer benutzerdefinierten Site Definition und Konfiguration](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Beschreibt, wie eine benutzerdefinierte Site Definition in SharePoint erstellt wird, indem eine vorhandene Website Definition kopiert und die Kopie anschließend geändert wird.|
+|[*Webtemp. XML*](/previous-versions/office/developer/sharepoint-2010/ms447717(v=office.14))|Beschreibt die ursprüngliche Datei, in der die Site Definitionen angegeben sind, die im Abschnitt **Vorlagen Auswahl** der Seite **neue SharePoint-Website** verfügbar sind.|
+|[Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)|Beschreibt, wie die SharePoint-Lösungen für die globale Verwendung vorbereitet werden.|
+|[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Beschreibt, wie Sie Teile einer SharePoint-Seite erstellen können, die von Benutzern geändert werden können.|
+|[Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Beschreibt, wie Sie wiederverwendbare Steuerelemente erstellen können, die auf Anwendungs Seiten und Webparts ausgeführt werden.|
+|[Visual Web Developer](/previous-versions/visualstudio/visual-studio-2010/ms178093(v=vs.100))|Beschreibt die Verwendung des Designers, der angezeigt wird, wenn Sie eine Webseite in Ihrem Projekt öffnen.|
+|[Übersicht über ASP.net Web Pages](/previous-versions/aspnet/428509ah(v=vs.100))|Bietet allgemeine Informationen über die Struktur [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Webseiten, die Art und Weise, wie Seiten von [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]verarbeitet werden, und wie [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seiten Markup anzeigen, das den XHTML-Standards entspricht.|
+|[Syntax der ASP.NET-Webseite](/previous-versions/aspnet/k33801s3(v=vs.100))|Beschreibt die Markup Elemente, die eine ASP.NET Seite bilden.|
+|[Programmier ASP.net Web Pages](/previous-versions/aspnet/0yt4zca8(v=vs.100))|Stellt Informationen zum Erstellen von Ereignis Handlern in [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seiten und zum Arbeiten mit Client Skripts bereit.|
+|[Programmieren in Windows SharePoint Services](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|Beschreibt, wie das verwaltete Objektmodell verwendet wird, das in [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]bereitgestellt wird.|
 
 ## <a name="see-also"></a>Siehe auch
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

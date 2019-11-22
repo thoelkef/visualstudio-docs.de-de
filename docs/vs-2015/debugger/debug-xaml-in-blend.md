@@ -1,5 +1,5 @@
 ---
-title: Debuggen von XAML in Blend | Microsoft-Dokumentation
+title: Debug XAML in Blend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434096"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298322"
 ---
 # <a name="debug-xaml-in-blend"></a>Debuggen von XAML in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../includes/blend-first-md.md)
   
 - Ein XAML-Element ist an einer Position vorhanden, an der es nicht zulässig ist.  
   
-  Weitere Informationen über die allgemeine XAML-Syntax finden Sie in der [Anleitung zur grundlegenden XAML-Syntax](http://go.microsoft.com/fwlink/?LinkId=329942).  
+  Weitere Informationen über die allgemeine XAML-Syntax finden Sie in der [Anleitung zur grundlegenden XAML-Syntax](https://go.microsoft.com/fwlink/?LinkId=329942).  
   
   Sie können in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] auch einfache Code-Behind-Syntaxfehler, Kompilierungsfehler und Laufzeitfehler identifizieren und beheben. Für Code-Behind-Fehler können Sie dies allerdings möglicherweise in Visual Studio einfacher durchführen.  
   
@@ -55,15 +55,15 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../includes/blend-first-md.md)
   
     Auf der linken Seite des Dialogfelds **Neues Projekt** wird eine Liste der Projekttypen angezeigt. Wenn Sie auf einen Projekttyp klicken, werden die Projektvorlagen, die diesem Typ zugeordnet sind, auf der rechten Seite angezeigt.  
   
-2. Klicken Sie in der Liste der Projekttypen auf **XAML (Windows Store)**.  
+2. In the list of project types, click **XAML (Windows Store)** .  
   
-3. Klicken Sie in der Liste der Projektvorlagen auf **leere App**.  
+3. In the list of project templates, click **Blank App**.  
   
-4. In der **Namen** Textfeld `DebuggingSample`.  
+4. In the **Name** text box, type `DebuggingSample`.  
   
 5. Überprüfen Sie im Textfeld **Speicherort** den Projektspeicherort.  
   
-6. Klicken Sie im Listenfeld **Sprache** auf **Visual C#**, und klicken Sie dann auf **OK**, um das Projekt zu erstellen.  
+6. Klicken Sie im Listenfeld **Sprache** auf **Visual C#** , und klicken Sie dann auf **OK**, um das Projekt zu erstellen.  
   
 7. Klicken Sie mit der rechten Maustaste auf die Entwurfsoberfläche, und klicken Sie dann auf **Quelle anzeigen**, um zur Ansicht **Geteilt** zu wechseln.  
   
@@ -99,7 +99,7 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../includes/blend-first-md.md)
   
     Eine Fehlermeldung wird angezeigt, dass das Projekt nicht erstellt werden kann. Im unteren Bereich der App wird zudem der Bereich **Ergebnisse** mit der Liste der Fehler angezeigt.  
   
-    ![Debuggen von XAML in Blend für Visual Studio](../debugger/media/blend-debugxaml-xaml.png "Blend_debugXAML_XAML")  
+    ![Debuggen von XAML in Blend für Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
   
 ### <a name="resolving-xaml-errors"></a>Beheben von XAML-Fehlern  
  Wenn XAML-Fehler ermittelt werden, zeigt die Entwurfsoberfläche eine Warnung an, dass das Projekt ungültiges Markup enthält. Während Sie die Fehler beheben, wird die Fehlerliste im Bereich **Ergebnisse** aktualisiert. Wenn Sie alle Fehler behoben haben, wird die Entwurfsoberfläche aktiviert und die App wird darin angezeigt.  
@@ -108,22 +108,22 @@ Verwenden Sie die Tools in [!INCLUDE[blend_first](../includes/blend-first-md.md)
   
 1. Doppelklicken Sie auf den ersten Fehler in der Fehlerliste. Die Beschreibung lautet: "The value '<' is not valid in an attribute." (Der Wert „<“ ist in Attributen ungültig). Wenn Sie auf den Fehler doppelklicken, ermittelt der Zeiger die entsprechende Position im Code. `<` vor `Button` ist gültig und kein Attribut, wie in der Fehlermeldung beschrieben. Wenn Sie die vorhergehende Codezeile prüfen, stellen Sie fest, dass die schließenden Anführungszeichen für das `Top`-Attribut fehlen. Geben Sie die schließenden Anführungszeichen ein. Die Fehlerliste im Bereich **Ergebnisse** wird aktualisiert, um die Änderung zu reflektieren.  
   
-2. Doppelklicken Sie auf die Beschreibung "" 0"ist nicht gültig zu Beginn eines Namens". `Margin="0,149,0,0"` wird angezeigt, um gültig zu sein. Allerdings stimmt der Farbcode für `Margin` nicht mit den anderen Instanzen von `Margin` im Code überein. Da für das vorangehende Name-Wert-Paar die schließenden Anführungszeichen fehlen (`VerticalAlignment="Top`), wird `Margin="` als Teil des Werts des vorangehenden Attributs gelesen, und 0 wird als Anfang von einem Name-Wert-Paar gelesen. Geben Sie die schließenden Anführungszeichen für `Top` ein. Die Fehlerliste im Bereich **Ergebnisse** wird aktualisiert, um die Änderung zu reflektieren.  
+2. Double-click the description "'0' is not valid at the start of a name." `Margin="0,149,0,0"` appears to be well formed. Allerdings stimmt der Farbcode für `Margin` nicht mit den anderen Instanzen von `Margin` im Code überein. Da für das vorangehende Name-Wert-Paar die schließenden Anführungszeichen fehlen (`VerticalAlignment="Top`), wird `Margin="` als Teil des Werts des vorangehenden Attributs gelesen, und 0 wird als Anfang von einem Name-Wert-Paar gelesen. Geben Sie die schließenden Anführungszeichen für `Top` ein. Die Fehlerliste im Bereich **Ergebnisse** wird aktualisiert, um die Änderung zu reflektieren.  
   
 3. Doppelklicken Sie auf den verbleibenden Fehler: "Das schließende XML-Tag 'Button' ist falsch zugeordnet." Der Zeiger befindet sich beim **Grid**-Endtag (`</Grid>`), um anzugeben, dass der Fehler mutmaßlich im `Grid`-Objekt ist. Beachten Sie, dass das Endtag für das `Button`-Objekt fehlt. Nachdem Sie das `/`-Endtag hinzugefügt haben, wird die Liste im Bereich **Ergebnisse** aktualisiert. Nach dem Beheben dieser Anfangsfehler wurden zwei weitere Fehler identifiziert.  
   
 4. Doppelklicken Sie auf: "Das Element 'content' wurde nicht erkannt, oder es kann nicht auf das Element zugegriffen werden." Das `c` in `content` muss groß geschrieben sein. Ersetzen Sie das klein geschriebene "c" durch ein groß geschriebenes "C".  
   
-5. Doppelklicken Sie auf "die Eigenschaft 'Mame' ist nicht in der '<http://schemas.microsoft.com/winfx/2006/xaml>" Namespace. " Das "M" in "Mame" muss ein "N" sein. Ersetzen Sie das "M" durch ein "N". Da der XAML-Code jetzt verarbeitet werden kann, wird die App auf der Entwurfsoberfläche angezeigt.  
+5. Double-click "The property 'Mame' does not exist in the '<https://schemas.microsoft.com/winfx/2006/xaml>' namespace." Das "M" in "Mame" muss ein "N" sein. Ersetzen Sie das "M" durch ein "N". Da der XAML-Code jetzt verarbeitet werden kann, wird die App auf der Entwurfsoberfläche angezeigt.  
   
-    ![Debuggen von XAML in Blend für Visual Studio](../debugger/media/blend-debugartboard-xaml.png "Blend_debugArtboard_XAML")  
+    ![Debugging XAML in Blend for Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
     Drücken Sie STRG+UMSCHALT+B, um das Projekt zu erstellen und zu bestätigen, dass es keine weiteren Fehler enthält.  
   
 ## <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio  
  Sie können [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-Projekte in Visual Studio öffnen, um den App-Code einfacher zu debuggen. Um ein [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-Projekt in Visual Studio zu öffnen, klicken Sie im Bereich **Projekte** mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **In Visual Studio bearbeiten**. Wenn Sie die Debugsitzung in Visual Studio abgeschlossen haben, drücken Sie STRG+UMSCHALT+S, um sämtliche Änderungen zu speichern, und wechseln Sie anschließend zurück zu [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Sie werden aufgefordert, das Projekt erneut zu laden. Klicken Sie auf **Ja, alle**, um in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] weiterzuarbeiten.  
   
- Weitere Informationen zum Debuggen von Apps finden Sie unter [Debug Windows Store-apps in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).  
+ For more information about debugging your app, see [Debug Windows Store apps in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
   
 ## <a name="getting-help"></a>Hilfe zu weiteren Fragen  
- Bei Bedarf weitere Unterstützung zum Debuggen Ihrer [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] -app, die Sie suchen den [Windows Store-app – Foren](http://go.microsoft.com/fwlink/?LinkId=280308) für Beiträge konkreten Problem oder eine Frage.
+ If you need more help debugging your [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] app, you can search the [Windows Store app community forums](https://go.microsoft.com/fwlink/?LinkId=280308) for posts related your issue or post a question.

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000009"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189240"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Arbeiten mit R in Visual Studio
 
@@ -31,7 +31,7 @@ Gehen Sie folgendermaßen vor, um mit R in Visual Studio zu arbeiten:
 
 Folgen Sie anschließend den unten stehenden Links, um mehr über R-Features sowie über die allgemeinen Features von Visual Studio zu erfahren.
 
-| Feature | Beschreibung | Allgemeine Visual Studio-Dokumentation |
+| Feature | BESCHREIBUNG | Allgemeine Visual Studio-Dokumentation |
 | --- | --- | --- |
 | [Visual Studio-Projektsystem](r-projects-in-visual-studio.md) | Organisieren und verwalten Sie verknüpfte Dateien in einer praktischen Struktur, und profitieren Sie von nützlichen Vorlagen für Elemente wie R-Code, R-Dokumentation, R Markdown, SQL-Abfragen und gespeicherte Prozeduren. Nutzen Sie zudem den [Paket-Manager](r-package-manager-in-visual-studio.md) und die [SQL Server-Integration](integrating-sql-server-with-r.md).  | [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Arbeitsbereich](r-workspaces-in-visual-studio.md) | RTVS kann in lokale und Remotearbeitsbereiche eingebunden werden – so können Sie R-Code lokal mit kleineren Datasets entwickeln, den Code dann auf leistungsfähigeren cloudbasierten Computern mit wesentlich größeren Datasets ausführen. | n/v |
@@ -41,13 +41,13 @@ Folgen Sie anschließend den unten stehenden Links, um mehr über R-Features sow
 | [Interaktives Fenster](interactive-repl-for-r-in-visual-studio.md) | Dieses Fenster bietet eine vollständige REPL-Oberfläche für R, mit der Sie Code in einer Quelldatei im interaktiven Fenster ausführen können. | n/v |
 | [Visualisieren von Daten](visualizing-data-with-r-in-visual-studio.md) | Plotting ist ein wesentlicher Bestandteil von R, und RTVS unterstützt mehrere, voneinander unabhängige Plotfenster. Jedes Fenster bietet einen eigenen Verlauf, und Sie können Plots zwischen Fenstern verschieben. Plots können in Bitmap- und PDF-Dateien gespeichert oder als Bitmap- oder Metadatei in die Zwischenablage kopiert werden.  | n/v |
 | [Variablen-Explorer](variable-explorer.md) | Untersuchen Sie Variablen auf globaler oder paketspezifischer Ebene, zeigen Sie sortierbare Tabellen an, und exportieren Sie diese in das CSV-Format. | n/v |
-| [Vollständige Debugfeatures](debugging-r-in-visual-studio.md) | Umfasst die Integration in das interaktive Fenster. | [Debuggen in Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
+| [Vollständige Debugfeatures](debugging-r-in-visual-studio.md) | Umfasst die Integration in das interaktive Fenster. | [Debuggen in Visual Studio](../debugger/debugger-feature-tour.md) |
 
 Weitere Informationen finden Sie auch unter [Häufig gestellte Fragen](faq.md).
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Im Video (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) finden Sie eine Übersicht zu R-Tools für Visual Studio (12 Minuten 36 Sekunden). Informationen finden Sie auch in [weiteren Videos über R-Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
+| ![Symbol für Filmkamera für das Video](../install/media/video-icon.png "Ansehen eines Videos") | [Im Video (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) finden Sie eine Übersicht zu R-Tools für Visual Studio (12 Minuten 36 Sekunden). Informationen finden Sie auch in [weiteren Videos über R-Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
 ## <a name="send-us-your-feedback"></a>Senden Sie uns Ihr Feedback!
 

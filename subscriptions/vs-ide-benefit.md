@@ -3,15 +3,15 @@ title: Visual Studio IDE-Vorteil in Visual Studio-Abonnements | Microsoft-Dokume
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787860"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099632"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Der Visual Studio 2019-Vorteils
 
@@ -62,7 +62,9 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja          |
+| Visual Studio Enterprise mit GitHub Enterprise   | VL | Verfügbar       |  Ja          |
 | Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail                                       | Verfügbar                                                            |  Ja          |
+| Visual Studio Professional mit GitHub Enterprise | VL   | Verfügbar              |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Ja         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 
@@ -82,5 +84,5 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie Visual Studio installiert haben, vergessen Sie nicht, diese anderen wichtigen Vorteile zu aktivieren:
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure-Gutschriften](vs-azure.md)
+- [Einzelguthaben für Azure DevTest](vs-azure.md)
 - [Windows-Entwicklerkonto](vs-windows-dev.md)

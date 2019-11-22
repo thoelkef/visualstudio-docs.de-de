@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: cd19c619eca4505eab4c332783a678bf5e7ba87a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179792"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911734"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
 
@@ -22,15 +22,15 @@ Wenn Sie eine Webanwendung in Visual Studio erstellen, können Sie ein Windows P
 
 Mithilfe dieser Skripts können Sie angepasste Versionen Ihrer Website (auch als Entwicklungs- und Testumgebungen bezeichnet) zur vorübergehenden Verwendung bereitstellen. Sie können z. B. eine bestimmte Version Ihrer Website auf einem virtuellen Azure-Computer oder auf dem Stagingslot einer Website einrichten, um eine Testsuite auszuführen, einen Bug zu reproduzieren, einen Bugfix zu testen, eine vorgeschlagene Änderung zu prüfen oder eine benutzerdefinierte Umgebung für eine Demonstration oder eine Präsentation einzurichten. Nachdem Sie ein Skript zum Veröffentlichen Ihres Projekts erstellt haben, können Sie identische Umgebungen erstellen, indem Sie das Skript bei Bedarf erneut ausführen. Sie können das Skript auch mit Ihrem eigenen Build Ihrer Webanwendung ausführen, um eine benutzerdefinierte Umgebung für Testzwecke zu erstellen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Erforderliche Voraussetzungen
 
 * Visual Studio 2015 oder höher mit installierter **Azure-Workload** oder Visual Studio 2013 und Azure SDK 2.3 oder höher. Siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads). (Sie benötigen das Azure SDK nicht, um die Skripts für Webprojekte zu generieren. Dieses Feature bezieht sich auf Webprojekte, nicht auf Webrollen in Clouddiensten.)
 * Azure PowerShell 0.7.4 oder höher. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) oder höher.
+* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) oder höher.
 
-## <a name="additional-tools"></a>Weitere Tools
+## <a name="additional-tools"></a>Zusätzliche Tools
 
-Für die Arbeit mit PowerShell in Visual Studio für die Azure-Entwicklung stehen weitere Tools und Ressourcen zur Verfügung. Weitere Informationen finden Sie unter [PowerShell-Tools für Visual Studio](http://go.microsoft.com/fwlink/?LinkId=404012).
+Für die Arbeit mit PowerShell in Visual Studio für die Azure-Entwicklung stehen weitere Tools und Ressourcen zur Verfügung. Weitere Informationen finden Sie unter [PowerShell-Tools für Visual Studio](https://marketplace.visualstudio.com/items?itemName=AdamRDriscoll.PowerShellToolsforVisualStudio2015).
 
 ## <a name="generating-the-publish-scripts"></a>Generieren der Veröffentlichungsskripts
 
@@ -154,7 +154,7 @@ Wenn Sie noch nie zuvor ein Windows PowerShell-Skript ausgeführt haben, müssen
 
    ![Web Deploy-Paket erstellen](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Weitere Informationen finden Sie unter [Vorgehensweise: How to: Create a Web Deployment Package in Visual Studio (Vorgehensweise: Erstellen eines Webbereitstellungspakets in Visual Studio)](https://msdn.microsoft.com/library/dd465323.aspx). Sie können die Erstellung Ihres Web Deploy-Pakets wie unter [Customizing and extending the publish scripts (Anpassen und Erweitern des Veröffentlichungsskripts)](#customizing-and-extending-the-publish-scripts) beschrieben automatisieren.
+   Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Webbereitstellungs Pakets in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Sie können die Erstellung Ihres Web Deploy-Pakets wie unter [Customizing and extending the publish scripts (Anpassen und Erweitern des Veröffentlichungsskripts)](#customizing-and-extending-the-publish-scripts) beschrieben automatisieren.
 
 1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Skript, und wählen Sie dann **Mit PowerShell-ISE öffnen** aus.
 1. Wenn Sie Windows PowerShell-Skripts erstmals auf diesem Computer ausführen, öffnen Sie ein Eingabeaufforderungsfenster mit Administratorberechtigungen, und geben Sie den folgenden Befehl ein:
@@ -250,7 +250,7 @@ Wenn Sie den Buildvorgang Ihres Projekts automatisieren möchten, fügen Sie Cod
         #Write a function to build and package your web application
     ```
 
-    Verwenden Sie zum Erstellen Ihrer Webanwendung „MsBuild.exe“. Hilfreiche Informationen finden Sie in der MSBuild-Befehlszeilenreferenz unter: [http://go.microsoft.com/fwlink/?LinkId=391339](http://go.microsoft.com/fwlink/?LinkId=391339)
+    Verwenden Sie zum Erstellen Ihrer Webanwendung „MsBuild.exe“. Hilfreiche Informationen finden Sie in der MSBuild-Befehlszeilenreferenz unter: [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -310,19 +310,19 @@ Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerS
 
 **AzureWebAppPublishModule**
 
-| Funktionsname | BESCHREIBUNG |
+| Funktionsname | Beschreibung |
 | --- | --- |
 | Add-AzureSQLDatabase |Erstellt eine neue Azure SQL-Datenbank. |
 | Add-AzureSQLDatabases |Erstellt Azure SQL-Datenbanken aus Werten in der JSON-Konfigurationsdatei, die von Visual Studio generiert wird |
 | Add-AzureVM |Erstellt einen virtuellen Azure-Computer und gibt die URL des bereitgestellten virtuellen Computers zurück. Die Funktion richtet die Voraussetzungen ein und ruft dann die Funktion **New-AzureVM** (Azure-Modul) auf, um einen neuen virtuellen Computer zu erstellen. |
 | Add-AzureVMEndpoints |Fügt einem virtuellen Computer neue Eingabeendpunkte hinzu und gibt den virtuellen Computer mit dem neuen Endpunkt zurück. |
 | Add-AzureVMStorage |Erstellt ein neues Azure-Speicherkonto im aktuellen Abonnement. Der Name des Kontos beginnt mit "devtest", gefolgt von einer eindeutigen alphanumerischen Zeichenfolge. Die Funktion gibt den Namen des neuen Speicherkontos zurück. Geben Sie einen Speicherort oder eine Affinitätsgruppe für das neue Speicherkonto an. |
-| Add-AzureWebsite |Erstellt eine Website mit dem angegebenen Namen und Speicherort. Diese Funktion ruft die Funktion **New-AzureWebsite** im Azure-Modul auf. Wenn das Abonnement noch keine Website mit dem angegebenen Namen umfasst, erstellt diese Funktion die Website und gibt ein Websiteobjekt zurück. Andernfalls wird `$null`zurückgegeben. |
+| Add-AzureWebsite |Erstellt eine Website mit dem angegebenen Namen und Speicherort. Diese Funktion ruft die Funktion **New-AzureWebsite** im Azure-Modul auf. Wenn das Abonnement noch keine Website mit dem angegebenen Namen umfasst, erstellt diese Funktion die Website und gibt ein Websiteobjekt zurück. Andernfalls wird `$null` zurückgegeben. |
 | Backup-Subscription |Speichert das aktuelle Azure-Abonnement in der Variablen `$Script:originalSubscription` im Skriptbereich. Diese Funktion speichert das aktuelle Azure-Abonnement (wie durch `Get-AzureSubscription -Current` abgerufen) und das zugehörige Speicherkonto sowie das Abonnement, das von diesem Skript geändert wird (in der Variablen `$UserSpecifiedSubscription` gespeichert), und das zugehörige Speicherkonto im Skriptbereich. Da diese Werte gespeichert werden, können Sie eine Funktion (z.B. `Restore-Subscription`) zum Wiederherstellen des ursprünglichen aktuellen Abonnements und Speicherkontos im aktuellen Status verwenden, wenn sich der aktuelle Status geändert hat. |
 | Find-AzureVM |Ruft den angegebenen virtuellen Azure-Computer ab. |
 | Format-DevTestMessageWithTime |Stellt einer Meldung das Datum und die Uhrzeit voran. Diese Funktion bezieht sich auf Meldungen, die in die Datenströme vom Typ "Fehler" und "Ausführlich" geschrieben werden. |
 | Get-AzureSQLDatabaseConnectionString |Stellt eine Verbindungszeichenfolge zum Herstellen einer Verbindung mit einer Azure SQL-Datenbank zusammen. |
-| Get-AzureVMStorage |Gibt den Namen des ersten Speicherkontos am angegebenen Speicherort oder in der Affinitätsgruppe mit dem Namensmuster „devtest *“ zurück (ohne Unterscheidung von Groß-/Kleinschreibung). Wenn das Speicherkonto „devtest*“ nicht mit dem Speicherort oder der Affinitätsgruppe übereinstimmt, wird es von der Funktion ignoriert. Geben Sie einen Speicherort oder eine Affinitätsgruppe an. |
+| Get-AzureVMStorage |Gibt den Namen des ersten Speicher Kontos mit dem Namensmuster "devtest" (ohne Beachtung der*Groß-/Kleinschreibung) am angegebenen Speicherort oder in der affinitätsgruppe zurück. Wenn das Speicherkonto "devtest*" nicht mit dem Speicherort oder der affinitätsgruppe identisch ist, wird es von der Funktion ignoriert. Geben Sie einen Speicherort oder eine Affinitätsgruppe an. |
 | Get-MSDeployCmd |Gibt einen Befehl zum Ausführen des Tools "MsDeploy.exe" zurück. |
 | New-AzureVMEnvironment |Sucht oder erstellt einen virtuellen Computer im Abonnement, das mit den Werten in der JSON-Konfigurationsdatei übereinstimmt. |
 | Publish-WebPackage |Verwendet "MsDeploy.exe" und eine Webveröffentlichungspaket-ZIP-Datei zum Bereitstellen von Ressourcen für eine Website. Diese Funktion generiert keine Ausgabe. Wenn beim Aufruf von "MSDeploy.exe" ein Fehler auftritt, löst die Funktion eine Ausnahme aus. Verwenden Sie die Option **-Verbose** , wenn Sie eine ausführlichere Ausgabe wünschen. |
@@ -332,14 +332,14 @@ Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerS
 | Test-AzureModule |Gibt `$true` zurück, wenn die Version des installierten Azure-Moduls 0.7.4 oder höher ist. Gibt `$false` zurück, wenn das Modul nicht installiert ist oder in einer früheren Version vorliegt. Diese Funktion besitzt keine Parameter. |
 | Test-AzureModuleVersion |Gibt `$true` zurück, wenn die Version des Azure-Moduls 0.7.4 oder höher ist. Gibt `$false` zurück, wenn das Modul nicht installiert ist oder in einer früheren Version vorliegt. Diese Funktion besitzt keine Parameter. |
 | Test-HttpsUrl |Konvertiert die Eingabe-URL in ein System.Uri-Objekt. Gibt `$True` zurück, wenn die URL absolut ist und ein https-Schema verwendet. Gibt `$false` zurück, wenn die URL relativ ist und nicht das HTTPS-Schema verwendet oder die Eingabezeichenfolge nicht in eine URL konvertiert werden kann. |
-| Test-Member |Gibt `$true` zurück, wenn eine Eigenschaft oder Methode ein Element des Objekts ist. Andernfalls wird `$false`zurückgegeben. |
+| Test-Member |Gibt `$true` zurück, wenn eine Eigenschaft oder Methode ein Element des Objekts ist. Andernfalls wird `$false` zurückgegeben. |
 | Write-ErrorWithTime |Schreibt eine Fehlermeldung, der die aktuelle Uhrzeit als Präfix vorangestellt ist. Diese Funktion ruft die Funktion **Format-DevTestMessageWithTime** auf, um die Uhrzeit voranzustellen, bevor die Meldung in den Fehlerdatenstrom geschrieben wird. |
 | Write-HostWithTime |Schreibt eine Fehlermeldung in das Hostprogramm (**Write-Host**), der die aktuelle Uhrzeit als Präfix vorangestellt ist. Die Auswirkungen des Schreibens in das Hostprogramm sind unterschiedlich. Die meisten Programme, die Windows PowerShell hosten, schreiben diese Meldungen in die Standardausgabe. |
 | Write-VerboseWithTime |Schreibt eine ausführliche Fehlermeldung, der die aktuelle Uhrzeit als Präfix vorangestellt ist. Da **Write-Verbose** aufgerufen wird, wird die Meldung nur angezeigt, wenn das Skript mit dem Parameter **Verbose** ausgeführt wird oder die Einstellung **VerbosePreference** auf **Continue** festgelegt ist. |
 
 **Publish-WebApplication**
 
-| Funktionsname | BESCHREIBUNG |
+| Funktionsname | Beschreibung |
 | --- | --- |
 | New-AzureWebApplicationEnvironment |Erstellt Azure-Ressourcen, z. B. eine Website oder einen virtuellen Computer. |
 | New-WebDeployPackage |Diese Funktion ist nicht implementiert. Sie können Befehle in dieser Funktion hinzufügen, um Ihr Projekt zu erstellen. |

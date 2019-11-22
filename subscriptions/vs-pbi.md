@@ -3,15 +3,15 @@ title: Power BI Pro-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentati
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 12/19/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual Studio-Abonnements enthalten ist
-ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787963"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161951"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
@@ -63,7 +63,9 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja|
+| Visual Studio Enterprise mit GitHub Enterprise  | VL | Verfügbar       |  Ja|
 | Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |NA         |
+| Visual Studio Professional mit GitHub Enterprise | VL                                      | Nicht verfügbar                                                            |NA         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                                            |NA         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar       |  Ja|
 | Visual Studio Enterprise (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                  |NA|
@@ -111,4 +113,5 @@ Antwort:  Nein.  Der Power BI Pro-Vorteil kann nicht zu Behördenmandanten hinzu
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
-Navigieren Sie zu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), um Ihren Power BI Pro-Vorteil zu aktivieren.
+- Navigieren Sie zu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), um Ihren Power BI Pro-Vorteil zu aktivieren.
+- Profitieren Sie von ihrer eigenen Entwicklungssandbox, indem Sie Ihr [Einzelguthaben für Azure DevTest](vs-azure.md) aktivieren. 

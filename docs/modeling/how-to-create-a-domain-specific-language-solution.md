@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609393"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985111"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
 Eine domänenspezifische Sprache (DSL) wird mithilfe einer spezialisierten Visual Studio-Projekt Mappe erstellt.
@@ -114,7 +114,7 @@ Standardmäßig wird ein Name verwendet, der aus Ihrem Unternehmen und ihren Pro
 
  **Vorhandenen Schlüssel mit starkem Namen verwenden** Verwenden Sie diese Option, wenn Sie Ihre DSL in eine andere Assembly integrieren möchten.
 
- Weitere Informationen zu starken Namen finden Sie unter [Erstellen und verwenden](http://go.microsoft.com/fwlink/?LinkId=186073)von Assemblys mit starkem Namen.
+ Weitere Informationen zu starken Namen finden Sie unter [Erstellen und verwenden](/dotnet/standard/assembly/create-use-strong-named)von Assemblys mit starkem Namen.
 
 ## <a name="see-also"></a>Siehe auch
 

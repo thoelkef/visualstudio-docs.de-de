@@ -3,15 +3,15 @@ title: Concierge Chat-Vorteil in Visual Studio Subscription | Microsoft-Dokument
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Weitere Informationen zum Concierge Chat-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681184"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099581"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat in Visual Studio-Abonnements
 Der Concierge Chat-Dienst bietet Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten sowie Unterstützung bei der Nutzung Ihrer Visual Studio-Abonnementvorteile.
@@ -38,7 +38,9 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Verfügbar       |  Ja          |
+| Visual Studio Enterprise mit GitHub Enterprise | VL| Verfügbar       |  Ja          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Verfügbar                                                            |  Ja          |
+| Visual Studio Professional mit GitHub Enterprise | VL | Verfügbar                                                            |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Ja          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
@@ -63,3 +65,5 @@ Weitere Informationen zu Microsoft-Tools und -Diensten finden Sie in der Dokumen
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
 - [Visual Studio-IDE](/visualstudio/)
+
+Wenn Sie den Azure DevTest-Einzelguthabenvorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihr Einzelguthaben für Azure DevTest zu erhalten.

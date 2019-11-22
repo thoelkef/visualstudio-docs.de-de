@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980894"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024832"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -23,7 +23,7 @@ Mit CodeLens können Sie sich auf Ihre Arbeit konzentrieren, während Sie ermitt
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Die CodeLens-Indikatoren für die Quellcodeverwaltung sind in der Visual Studio Community Edition nicht verfügbar.
+> CodeLens ist in Visual Studio Community Edition verfügbar. Die Indikatoren für die *Quellcodeverwaltung* sind in der Visual Studio Community Edition jedoch nicht verfügbar.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ Sie können weitere Komponententests für Ihren C#- oder Visual Basic-Code ermit
 
 1. Navigieren Sie zum Anwendungscode, der über zugehörigen [Komponententestcode](../test/unit-test-your-code.md) verfügt.
 
-2. Falls Sie Ihre Anwendung noch nicht erstellt haben, holen Sie dies nach, um die CodeLens-Testindikatoren zu laden. Stellen Sie dabei sicher, dass die [Ermittlung durch erstellte Assemblys](../test/test-explorer-faq.md#assembly-based-discovery) aktiviert ist.
+2. Falls Sie Ihre Anwendung noch nicht erstellt haben, holen Sie dies nach, um die CodeLens-Testindikatoren zu laden. 
 
 3. Überprüfen Sie die Tests für den Code, indem Sie **ALT**+**3** drücken.
 
@@ -275,7 +275,7 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Die Indikatoren für die Quellcodeverwaltung sind in der Visual Studio Community Edition nicht verfügbar.
+> CodeLens ist in Visual Studio Community Edition verfügbar. Die Indikatoren für die *Quellcodeverwaltung* sind in der Visual Studio Community Edition jedoch nicht verfügbar.
 
 ::: moniker-end
 
@@ -352,8 +352,7 @@ So verwenden Sie die Tastatur:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Frage: Meine CodeLens-Testindikatoren werden beim ersten Öffnen der Projektmappe nicht mehr in meiner Datei angezeigt. Wie kann ich sie laden?
 
-**Antwort:** Erstellen Sie Ihr Projekt erneut, damit die CodeLens-Testindikatoren in Ihre Datei geladen werden. Stellen Sie dabei sicher, dass die [Ermittlung durch erstellte Assemblys](../test/test-explorer-faq.md#assembly-based-discovery
-) aktiviert ist. Zur Verbesserung der Leistung ruft Visual Studio beim Laden von Codedateien keine Quellinformationen mehr für Testindikatoren ab. Testindikatoren werden geladen, nachdem ein Build geladen wurde, oder wenn Sie zu einem Test navigieren, indem Sie im **Test-Explorer** darauf doppelklicken.
+**Antwort:** Erstellen Sie Ihr Projekt erneut, damit die CodeLens-Testindikatoren in Ihre Datei geladen werden. Zur Verbesserung der Leistung ruft Visual Studio beim Laden von Codedateien keine Quellinformationen mehr für Testindikatoren ab. Testindikatoren werden geladen, nachdem ein Build geladen wurde, oder wenn Sie zu einem Test navigieren, indem Sie im **Test-Explorer** darauf doppelklicken.
 
 ## <a name="see-also"></a>Siehe auch
 

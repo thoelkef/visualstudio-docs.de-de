@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645485"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300165"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 - Durchsuchen, mit der aktuellen Untergruppe.
 
 ## <a name="assemblies-tab"></a>Assemblyregisterkarte
- Die Registerkarte **Assemblys** führt alle .NET Framework-Assemblys auf, die für Verweise verfügbar sind. Die Registerkarte **Assemblys** führt keine Assemblys aus dem globalen Assemblycache (GAC) auf, da Assemblys im GAC Teil der Laufzeitumgebung sind. Wenn Sie eine Anwendung bereitstellen oder kopieren, die einen Verweis auf eine im GAC registrierte Assembly enthält, wird die Komponente unabhängig von der Einstellung "Lokal kopieren" nicht mit der Anwendung bereitgestellt oder kopiert. Weitere Informationen finden Sie unter [Projektverweise](http://go.microsoft.com/fwlink/?LinkId=238512).
+ Die Registerkarte **Assemblys** führt alle .NET Framework-Assemblys auf, die für Verweise verfügbar sind. Die Registerkarte **Assemblys** führt keine Assemblys aus dem globalen Assemblycache (GAC) auf, da Assemblys im GAC Teil der Laufzeitumgebung sind. Wenn Sie eine Anwendung bereitstellen oder kopieren, die einen Verweis auf eine im GAC registrierte Assembly enthält, wird die Komponente unabhängig von der Einstellung "Lokal kopieren" nicht mit der Anwendung bereitgestellt oder kopiert. Weitere Informationen finden Sie unter [Projektverweise](https://go.microsoft.com/fwlink/?LinkId=238512).
 
  Wenn Sie manuell einen Verweis auf einen der EnvDTE-Namespaces (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a oder EnvDTE100) hinzufügen, legen Sie im Eigenschaftenfenster die Eigenschaft "Interoptypen einbetten" des Verweises auf "False" fest. Wenn diese Eigenschaft auf "True" festgelegt wird, können aufgrund bestimmter EnvDTE-Eigenschaften, die nicht eingebettet werden können, Buildprobleme auftreten.
 
@@ -131,7 +131,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 
     Indem der Registrierungsschlüssel unter dem HKEY_LOCAL_MACHINE-Knoten erstellt wird, können die Assemblys am angegebenen Speicherort von allen Benutzern im Dialogfeld **Verweis hinzufügen** angezeigt werden. Wenn der Registrierungsschlüssel unter dem HKEY_CURRENT_USER-Knoten erstellt wird, hat dies nur Einfluss auf die Einstellung für den aktuellen Benutzer.
 
-    Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. Die Assemblys sollten auf der Registerkarte **.net** angezeigt werden. Wenn dies nicht der Fall ist, stellen Sie sicher, dass sich die *Assemblys im angegebenen Verzeichnis assemblylocation* befinden, starten Sie Visual Studio neu, und wiederholen Sie den Vorgang.
+    Öffnen Sie das Dialogfeld **Verweis hinzufügen** erneut. The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
 
 ## <a name="com-tab"></a>COM-Registerkarte
  Die Registerkarte "COM" listet alle COM-Komponenten auf, die für Verweise verfügbar sind. Wenn Sie einer registrierten COM DLL mit einem internen Manifest eine Referenz hinzufügen möchten, müssen Sie die Registrierung der DLL zunächst aufheben. Andernfalls fügt Visual Studio den Assemblyverweis als ActiveX-Steuerelement und nicht als systemeigene DLL hinzu.
@@ -216,4 +216,4 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
  Die Suchleiste im Dialogfeld **Verweis-Manager** funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.
 
 ## <a name="see-also"></a>Siehe auch
- [NIB: Gewusst wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) " [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)

@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Modellen im Entwicklungsprozess | Microsoft-Dokumentation
+title: Use models in your development process | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,30 +11,30 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3bc95e74c9e80596ea46efa42abce5c4ed48fa8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659436"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298258"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung oder eine Komponente zu verstehen und zu ändern. Mit einem Modell können Sie das Umfeld des Systems visuell darstellen, Anforderungen der Benutzer verdeutlichen, die Architektur des Systems definieren, den Code analysieren und sicherstellen, dass der Code die Anforderungen erfüllt. Siehe [Channel 9-Video: verbessern der Architektur durch Modellierung](http://go.microsoft.com/fwlink/?LinkID=252078).
+In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung oder eine Komponente zu verstehen und zu ändern. Mit einem Modell können Sie das Umfeld des Systems visuell darstellen, Anforderungen der Benutzer verdeutlichen, die Architektur des Systems definieren, den Code analysieren und sicherstellen, dass der Code die Anforderungen erfüllt. See [Channel 9 Video: Improve architecture through modeling](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  Informationen dazu, welche Versionen von Visual Studio die einzelnen Modelltypen unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="how-to-use-models"></a>Verwenden von Modellen
  Modelle können auf verschiedene Weise von Nutzen sein:
 
-- Durch das Zeichnen von Modellierungsdiagrammen können Sie die Konzepte für Anforderungen, Architektur und allgemeinen Entwurf verdeutlichen. Weitere Informationen finden Sie unter [Modell Benutzeranforderungen](../modeling/model-user-requirements.md).
+- Durch das Zeichnen von Modellierungsdiagrammen können Sie die Konzepte für Anforderungen, Architektur und allgemeinen Entwurf verdeutlichen. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
 
 - Durch das Arbeiten mit Modellen können Sie mangelnde Übereinstimmungen in den Anforderungen aufzeigen.
 
-- Mithilfe von Modellen können Sie wichtige Konzepte eindeutiger als mithilfe von natürlicher Sprache mitteilen. Weitere Informationen finden Sie unter [Modellieren der Architektur Ihrer APP](../modeling/model-your-app-s-architecture.md).
+- Mithilfe von Modellen können Sie wichtige Konzepte eindeutiger als mithilfe von natürlicher Sprache mitteilen. For more information, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
 
-- Manchmal können Sie mithilfe von Modellen Code oder andere Artefakte generieren, z. B. Datenbankschemas oder Dokumente. Beispielsweise werden die Modellierungskomponenten von [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] aus einem Modell generiert.  Weitere Informationen finden Sie unter [generieren und Konfigurieren der APP aus Modellen](../modeling/generate-and-configure-your-app-from-models.md).
+- Manchmal können Sie mithilfe von Modellen Code oder andere Artefakte generieren, z. B. Datenbankschemas oder Dokumente. Beispielsweise werden die Modellierungskomponenten von [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] aus einem Modell generiert.  For more information, see [Generate and configure your app from models](../modeling/generate-and-configure-your-app-from-models.md).
 
   Sie können Modelle in einer Vielzahl von Prozessen verwenden: von äußerst agilen bis zu sehr förmlichen Prozessen.
 
@@ -45,7 +45,7 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
 
  Wenn das Projekt umfangreich ist und Teams aus verschiedenen Ländern auf dem Globus umfasst, können Sie mithilfe von Modellen die Anforderungen und Architektur effizienter als mit Klartext vermitteln.
 
- In beiden Fällen lassen sich durch das Erstellen eines Modells mangelnde Übereinstimmungen und Mehrdeutigkeiten fast immer erheblich reduzieren. Unterschiedliche Projektbeteiligte verfügen über unterschiedliche Vorstellungen von dem Geschäftsumfeld, in dem das System eingesetzt wird, und unterschiedliche Entwickler verfügen häufig über unterschiedliche Vorstellungen von der Funktionsweise des Systems. Mit einem Modell als Mittelpunkt eines Gesprächs werden diese Unterschiede in der Regel aufgezeigt. Weitere Informationen zum Verwenden eines Modells zum Reduzieren von Inkonsistenzen finden Sie unter [Modell Benutzeranforderungen](../modeling/model-user-requirements.md).
+ In beiden Fällen lassen sich durch das Erstellen eines Modells mangelnde Übereinstimmungen und Mehrdeutigkeiten fast immer erheblich reduzieren. Unterschiedliche Projektbeteiligte verfügen über unterschiedliche Vorstellungen von dem Geschäftsumfeld, in dem das System eingesetzt wird, und unterschiedliche Entwickler verfügen häufig über unterschiedliche Vorstellungen von der Funktionsweise des Systems. Mit einem Modell als Mittelpunkt eines Gesprächs werden diese Unterschiede in der Regel aufgezeigt. For more information about how to use a model to reduce inconsistencies, see [Model user requirements](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>Verwenden von Modellen mit anderen Artefakten
  Ein Modell allein ist noch keine Anforderungsspezifikation oder Architektur. Es ist ein Werkzeug, um einige Aspekte klarer darzustellen, jedoch können nicht alle während des Softwareentwurfs erforderlichen Aspekte dargestellt werden. Die Modelle sollten daher zusammen mit anderen Kommunikationsmitteln, z. B. OneNote-Seiten oder -Absätzen, Microsoft Office-Dokumenten, Arbeitsaufgaben in [!INCLUDE[esprfound](../includes/esprfound-md.md)] oder Haftnotizen an der Wand des Projektraums, verwendet werden. Außer dem letzten Element können alle diese Objekttypen mit Elementteilen des Modells verknüpft werden.
@@ -93,20 +93,20 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
 - Projektbeteiligte ohne technischen Hintergrund verstehen normalerweise UML-Diagramme ohne Probleme, wenn sie von Ihnen Erläuterungen erhalten.
 
 #### <a name="link-model-to-work-items"></a>Verknüpfen Sie das Modell mit Arbeitsaufgaben
- Bestimmen Sie nach dem Anforderungsworkshop die Details des Anforderungsmodells, und verknüpfen Sie das Modell mit Entwicklungsaufgaben. Sie können zu diesem Zweck Arbeitsaufgaben in [!INCLUDE[esprfound](../includes/esprfound-md.md)] mit Elementen im Modell verknüpfen. Weitere Informationen hierzu finden Sie unter Verknüpfen von [Modellelementen und Arbeits Elementen](../modeling/link-model-elements-and-work-items.md).
+ Bestimmen Sie nach dem Anforderungsworkshop die Details des Anforderungsmodells, und verknüpfen Sie das Modell mit Entwicklungsaufgaben. Sie können zu diesem Zweck Arbeitsaufgaben in [!INCLUDE[esprfound](../includes/esprfound-md.md)] mit Elementen im Modell verknüpfen. To learn how to do this, see [Link model elements and work items](../modeling/link-model-elements-and-work-items.md).
 
  Sie können jedes Element mit Arbeitsaufgaben verknüpfen, die zweckmäßigsten Elemente lauten jedoch wie folgt:
 
 - Anwendungsfälle: Sie können einen Anwendungsfall mit den Entwicklungsaufgaben verknüpfen, durch die er implementiert wird.
 
-- Anwendungsfallerweiterungen: Wenn in einer Iteration nur ein Aspekt eines Anwendungsfalls implementiert wird, können Sie ihn zusammen mit einer oder mehreren Erweiterungen als Basisanwendungsfall abtrennen. Die Erweiterungen sind Anwendungsfälle, die über die Beziehung «extend» mit dem Basisfall verknüpft sind. Weitere Informationen zur Anwendungsfall Erweiterung finden Sie unter [UML-Anwendungsfall Diagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md).
+- Anwendungsfallerweiterungen: Wenn in einer Iteration nur ein Aspekt eines Anwendungsfalls implementiert wird, können Sie ihn zusammen mit einer oder mehreren Erweiterungen als Basisanwendungsfall abtrennen. Die Erweiterungen sind Anwendungsfälle, die über die Beziehung «extend» mit dem Basisfall verknüpft sind. For more information about use case extension, see [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md).
 
-- Kommentare, die Geschäftsregeln oder Servicequalitätsanforderungen beschreiben. Weitere Informationen finden Sie unter [Modell Benutzeranforderungen](../modeling/model-user-requirements.md).
+- Kommentare, die Geschäftsregeln oder Servicequalitätsanforderungen beschreiben. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
 
 #### <a name="link-model-to-tests"></a>Verknüpfen Sie das Modell mit Tests
  Verwenden Sie das Anforderungsmodell als Orientierungshilfe für den Entwurf der Akzeptanztests. Erstellen Sie diese Tests während der Entwicklungsarbeit.
 
- Weitere Informationen zu dieser Technik finden Sie unter [entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md).
+ To learn more about this technique, see [Develop tests from a model](../modeling/develop-tests-from-a-model.md).
 
 #### <a name="estimate-remaining-work"></a>Schätzen Sie den restlichen Arbeitsaufwand
  Mithilfe eines Anforderungsmodells lässt sich der Gesamtumfang des Projekts im Verhältnis zum Umfang der einzelnen Iterationen schätzen. Durch Bestimmen von Anzahl und Komplexität der Anwendungsfälle und Klassen können Sie die erforderliche Entwicklungsarbeit genauer schätzen. Wenn Sie die ersten Iterationen abgeschlossen haben, können Sie durch den Vergleich der erfüllten Anforderungen mit den noch zu erfüllenden Anforderungen den restlichen Aufwand und Umfang des Projekts näherungsweise bestimmen.
@@ -116,26 +116,26 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
 ## <a name="levels-of-abstraction"></a>Abstraktionsebenen
  Modelle abstrahieren die Software in unterschiedlichem Ausmaß. Die konkretesten Modelle stellen direkt den Programmcode dar, und die abstraktesten Modelle stellen Geschäftskonzepte dar, die nicht in jedem Fall im Code dargestellt werden.
 
- Ein Modell kann über mehrere Arten von Diagrammen dargestellt werden. Weitere Informationen zu Modellen und Diagrammen finden [Sie unter Erstellen von Modellen für Ihre APP](../modeling/create-models-for-your-app.md).
+ Ein Modell kann über mehrere Arten von Diagrammen dargestellt werden. For information about models and diagrams, see [Create models for your app](../modeling/create-models-for-your-app.md).
 
  Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sich unterschiedliche Arten von Diagrammen. Viele der Diagrammtypen sind für mehrere Ebenen sinnvoll. In der folgenden Tabelle wird gezeigt, wie jeder Diagrammtyp verwendet werden kann.
 
 |Entwurfsebene|Diagrammtypen|
 |------------------|-------------------|
-|Geschäftsprozess<br /><br /> Wenn Sie den Kontext kennen, in dem das System verwendet wird, erleichtert dies das Verständnis der Anforderungen der Benutzer an das System.|-Aktivitätsdiagramme beschreiben den Arbeitsablauf zwischen Personen und Systemen, um Geschäftsziele zu erreichen.<br />-Konzeptionelle Klassendiagramme beschreiben die Geschäftskonzepte, die innerhalb des Geschäftsprozesses verwendet werden.|
-|Benutzeranforderungen<br /><br /> Die Definition der Anforderungen der Benutzer an das System.|-In Anwendungsfall Diagrammen werden die Interaktionen der Benutzer und anderer externer Systeme mit dem System zusammengefasst, das Sie entwickeln. Sie können an jeden Anwendungsfall weitere Dokumente anfügen, um ihn ausführlich zu beschreiben.<br />-UML-Klassendiagramme beschreiben die Arten von Informationen, über die die Benutzer und das System kommunizieren.<br />-Geschäftsregeln und Service Qualitätsanforderungen können in separaten Dokumenten beschrieben werden.|
-|Allgemeiner Entwurf<br /><br /> Die Gesamtstruktur des Systems: die Hauptkomponenten und wie sie verknüpft sind.|-Ebenendiagramme beschreiben, wie das System in voneinander abhängige Teile strukturiert ist. Sie können Programmcode anhand von Ebenendiagrammen überprüfen, um sicherzustellen, dass er der Architektur entspricht.<br />-In Komponenten Diagrammen werden die Schnittstellen der Teile angezeigt. dabei werden die Nachrichten und Dienste angegeben, die für die jeweilige Komponente bereitgestellt und benötigt werden.<br />-Sequenzdiagramme zeigen, wie die Komponenten kommunizieren, um die einzelnen Anwendungsfälle zu implementieren.<br />-UML-Klassendiagramme beschreiben die Schnittstellen der Komponenten und die Datentypen, die zwischen den Komponenten übermittelt werden.|
-|Entwurfsmuster<br /><br /> Konventionen und Methoden zum Lösen von Entwurfsproblemen, die in allen Teilen des Entwurfs verwendet werden.|-UML-Klassendiagramme beschreiben die Strukturen eines Musters<br />-Sequenz-oder Aktivitätsdiagramme zeigen die Interaktionen und Algorithmen|
-|Codeanalyse<br /><br /> Aus dem Code können mehrere Typen von Diagrammen generiert werden.|-Sequenzdiagramme zeigen die Interaktion zwischen Objekten im Code.<br />-Ebenendiagramme zeigen die Abhängigkeiten zwischen Klassen. Aktualisierter Code kann anhand eines Ebenendiagramms überprüft werden.<br />-Klassendiagramme zeigen die Klassen im Code.|
+|Geschäftsprozess<br /><br /> Wenn Sie den Kontext kennen, in dem das System verwendet wird, erleichtert dies das Verständnis der Anforderungen der Benutzer an das System.|-   Activity diagrams describe the flow of work between people and systems to achieve business goals.<br />-   Conceptual class diagrams describe the business concepts used within the business process.|
+|Benutzeranforderungen<br /><br /> Die Definition der Anforderungen der Benutzer an das System.|-   Use case diagrams summarize the interactions that the users and other external systems have with the system that you are developing. Sie können an jeden Anwendungsfall weitere Dokumente anfügen, um ihn ausführlich zu beschreiben.<br />-   UML class diagrams describe the types of information that the users and system communicate about.<br />-   Business rules and quality of service requirements can be described in separate documents.|
+|Allgemeiner Entwurf<br /><br /> Die Gesamtstruktur des Systems: die Hauptkomponenten und wie sie verknüpft sind.|-   Layer Diagrams describe how the system is structured into interdependent parts. Sie können Programmcode anhand von Ebenendiagrammen überprüfen, um sicherzustellen, dass er der Architektur entspricht.<br />-   Component diagrams show the interfaces of the parts, specifying the messages and services that are provided and required by each component.<br />-   Sequence diagrams show how the components communicate to implement each use case.<br />-   UML class diagrams describe the interfaces of the components and the types of data passed between the components.|
+|Entwurfsmuster<br /><br /> Konventionen und Methoden zum Lösen von Entwurfsproblemen, die in allen Teilen des Entwurfs verwendet werden.|-   UML class diagrams describe the structures of a pattern<br />-   Sequence or activity diagrams show the interactions and algorithms|
+|Codeanalyse<br /><br /> Aus dem Code können mehrere Typen von Diagrammen generiert werden.|-   Sequence diagrams show the interaction between objects in the code.<br />-   Layer diagrams show the dependencies between classes. Aktualisierter Code kann anhand eines Ebenendiagramms überprüft werden.<br />-   Class diagrams show the classes in the code.|
 
 ## <a name="external-resources"></a>Externe Ressourcen
 
 |**Kategorie**|**Links**|
 |------------------|---------------|
-|**Videos**|![Link zu Video](../data-tools/media/playvideo.gif "Wiedergeben") [MSDN How do I Videos: Erstellen und Verwenden von UML-Modellen und-Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "Playvideo ") [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zu Video](../data-tools/media/playvideo.gif "Playvideo ") [MSDN-Gewusst wie-Reihe: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Videos**|![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Videos: How to Create and Use UML Models and Diagrams (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML with Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Technische Artikel und Journale**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Siehe auch
- [Verwenden von Modellen in der Agile-Entwicklung](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Erstellen von Modellen für Ihre](../modeling/create-models-for-your-app.md) APP- [Modell-Benutzer Anforderungen](../modeling/model-user-requirements.md) [Modellieren der Architektur der APP](../modeling/model-your-app-s-architecture.md) [entwickeln von Tests aus einer Modell](../modeling/develop-tests-from-a-model.md) [Struktur Ihrer Modellierungs Lösung](../modeling/structure-your-modeling-solution.md)
+ [Use models in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Create models for your app](../modeling/create-models-for-your-app.md) [Model user requirements](../modeling/model-user-requirements.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [Develop tests from a model](../modeling/develop-tests-from-a-model.md) [Structure your modeling solution](../modeling/structure-your-modeling-solution.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77220ef55871d59bf8c8810547fccae5399869ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665675"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297803"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Schnellstart, Umgebung, Dialogfeld „Optionen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optione
 ## <a name="show-previous-results"></a>Vorherige Ergebnisse anzeigen
  Standardmäßig wird der eingegebene Suchbegriff nicht zwischen Suchsitzungen beibehalten. Die Suchzeichenfolge wird gelöscht, wenn Sie nach einem Begriff suchen. Bewegen Sie den Cursor außerhalb des Bereichs **Schnellstart** und dann wieder zurück. Um die Suchergebnisse beizubehalten, wechseln Sie in das Dialogfeld **Optionen**, wählen Sie **Schnellstart** aus, und aktivieren Sie dann das Kontrollkästchen **Suchergebnisse aus vorherigen Suchen anzeigen, wenn Schnellstart aktiviert ist** . Wenn Sie das nächste Mal eine Suche ausführen, verlassen Sie den Schnellstartbereich, und kehren Sie dahin zurück. Der Schnellstart behält den zuletzt verwendeten Suchbegriff bei und zeigt auch die Suchergebnisse an.
 
- Die neuesten Tipps und Tricks für die Verwendung von **Schnellstart** finden Sie im [Visual Studio-Blog](http://go.microsoft.com/fwlink/?LinkId=236054).
+ Die neuesten Tipps und Tricks für die Verwendung von **Schnellstart** finden Sie im [Visual Studio-Blog](https://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Siehe auch
- [Allgemeine Benutzeroberflächen Elemente (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [Dialog Feld "Umgebungsoptionen](../../ide/reference/environment-options-dialog-box.md) "
+ [General User Interface Elements (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)

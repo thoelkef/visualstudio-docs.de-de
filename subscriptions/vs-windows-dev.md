@@ -3,15 +3,15 @@ title: Vorteil für Windows-Entwicklerkonten in Visual Studio-Abonnements | Micr
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über das Windows-Entwicklerkonto, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 506edeb75a2dba2831c57698a4259a09834633de
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787790"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174119"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows-Entwicklerkonto in Visual Studio-Abonnements
 Mit Ihrem Windows-Entwicklerkonto, das in ausgewählten Visual Studio-Abonnements enthalten ist, können Sie kostenlose und kostenpflichtige Windows-Apps an den Windows Store übermitteln.
@@ -43,7 +43,9 @@ Es wird empfohlen, dass Sie dafür ein privates Browserfenster erstellen.  Erste
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | Included       |  Ja|
+| Visual Studio Enterprise mit GitHub Enterprise   | VL  | Included       |  Ja|
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Included                                                            |Ja|
+| Visual Studio Professional mit GitHub Enterprise | VL                                        | Included                                                            |Ja|
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                            |  NA|
 | MSDN Platforms (Standard)                                          | VL, Retail                                              |  Nicht verfügbar                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
@@ -63,4 +65,7 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
-Azure ist Ihre persönliche Sandbox zum Entwickeln/Testen.  Sie können virtuelle Computer, Clouddienste und andere Azure-Ressourcen bereitstellen. Stellen Sie sicher, dass Sie Ihren [Azure-Vorteil](vs-azure.md) aktivieren, um Azure mit monatlichen Gutschriften verwenden zu können.
+Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Einzelguthaben für Azure DevTest](vs-azure.md)

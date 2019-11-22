@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0a7293672bb0b4e74515b71d2e0c4f961440b8c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255978"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986054"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisierung und Lokalisierung von Excel-Lösungen
   Dieser Abschnitt enthält besondere Überlegungen zu Microsoft Office Excel-Projektmappen, die auf Computern ausgeführt werden, die über nicht englische Einstellungen für Windows verfügen. Die meisten Aspekte bei der Globalisierung und Lokalisierung von Microsoft Office-Projektmappen sind mit denen identisch, die beim Erstellen von anderen Arten von Projektmappen mit Visual Studio auftreten. Allgemeine Informationen finden Sie unter [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md).
@@ -36,7 +36,7 @@ ms.locfileid: "71255978"
 
  Auch wenn Sie das Format „Englisch (USA)“ für Daten verwenden, die von verwaltetem Code übergeben oder geändert werden, interpretiert Excel die Daten gemäß der Gebietsschemaeinstellung des Endbenutzers und zeigt die Daten ordnungsgemäß an. Excel kann die Daten ordnungsgemäß formatieren, da der verwaltete Code die Gebietsschema-ID 1033 zusammen mit den Daten übergibt, wodurch angegeben wird, dass die Daten im Format „Englisch (USA)“ vorliegen und daher neu formatiert werden müssen, um mit der Gebietsschemaeinstellung des Benutzers übereinzustimmen.
 
- Wenn Endbenutzer z. b. ihre regionalen Optionen auf das Gebiets Schema Deutsch (Deutschland) festgelegt haben, erwarten Sie, dass das Datum 29. Juni 2005 wie folgt formatiert ist: 29.06.2005. Wenn Ihre Projekt Mappe das Datum jedoch als Zeichenfolge an Excel übergibt, müssen Sie das Datum gemäß dem Format "Englisch (USA)" formatieren: 6/29/2005. Wenn die Zelle als Datumszelle formatiert ist, zeigt Excel das Datum im Format „Deutsch (Deutschland)“ an.
+ Wenn Endbenutzer z. B. ihre regionalen Optionen auf das Gebietsschema Deutsch (Deutschland) festgelegt haben, erwarten sie, dass das Datum „29. Juni 2005“ folgendermaßen formatiert wird: 29.06.2005. Wenn Ihre Projektmappe das Datum jedoch als Zeichenfolge an Excel übergibt, müssen Sie das Datum gemäß dem Format „Englisch (USA)“ formatieren: 6/29/2005. Wenn die Zelle als Datumszelle formatiert ist, zeigt Excel das Datum im Format „Deutsch (Deutschland)“ an.
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Übergeben anderer Gebiets Schema-IDs an das Excel-Objektmodell
  Die Common Language Runtime (CLR) übergibt die Gebietsschema-ID 1033 automatisch an alle Methoden und Eigenschaften im Excel-Objektmodell, die gebietsschemaabhängige Daten akzeptieren. Es gibt keine Möglichkeit, dieses Verhalten automatisch für alle Aufrufe des Objektmodells zu ändern. Sie können jedoch eine andere Gebietsschema-ID an eine bestimmte Methode übergeben, indem Sie <xref:System.Type.InvokeMember%2A> zum Aufrufen der Methode und Übergeben der Gebietsschema-ID an den *culture* -Parameter der Methode verwenden.
@@ -47,7 +47,7 @@ ms.locfileid: "71255978"
  Sie müssen weiterhin sicherstellen, dass jeder Teil des Codes, der mit dem Dokumenttext interagiert, stets mit der Sprache des Texts übereinstimmt, und dass sich Lesezeichen, benannte Bereiche und andere Anzeigefelder allen neuen Formatierungen des Office-Dokuments anpassen, die hinsichtlich einer anderen Grammatik und Textlänge geändert werden mussten. Für Dokumentvorlagen, die relativ wenig Text enthalten, können Sie erwägen, den Text in Ressourcendateien zu speichern und dann zur Laufzeit zu laden.
 
 ### <a name="text-direction"></a>Text Richtung
- In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Host Steuerelemente oder beliebige Steuerelemente, die `RightToLeft` über eine Eigenschaft verfügen, die im Designer platziert wird, entsprechen diesen Einstellungen zur Laufzeit automatisch. Word verfügt nicht über eine Dokument Einstellung für bidirektionalen Text (Sie ändern einfach die Textausrichtung), sodass die Steuerelemente dieser Einstellung nicht zugeordnet werden können. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.
+ In Excel können Sie eine Eigenschaft des Arbeitsblatts festlegen, um den Text von rechts nach links zu rendern. Host Steuerelemente oder beliebige Steuerelemente, die über eine `RightToLeft`-Eigenschaft verfügen, die im Designer platziert wird, entsprechen diesen Einstellungen zur Laufzeit automatisch. Word verfügt nicht über eine Dokument Einstellung für bidirektionalen Text (Sie ändern einfach die Textausrichtung), sodass die Steuerelemente dieser Einstellung nicht zugeordnet werden können. Stattdessen müssen Sie die Ausrichtung des Texts für jedes Steuerelement festlegen. Es ist möglich, Code zu schreiben, um alle Steuerelemente zu durchlaufen und für diese zu erzwingen, dass sie den Text von rechts nach Links rendern.
 
 ### <a name="change-culture"></a>Kultur ändern
  Ihr Anpassungscode auf Dokumentebene teilt in der Regel den primären UI-Thread von Excel. Daher wirken sich alle Änderungen, die Sie an der Threadkultur vornehmen, auf alles andere aus, das in diesem Thread ausgeführt wird. Die Änderung ist nicht auf Ihre Anpassung beschränkt.
@@ -55,9 +55,9 @@ ms.locfileid: "71255978"
  Windows Forms-Steuerelemente werden initialisiert, bevor VSTO-Add-Ins der Anwendungsebene von der Hostanwendung gestartet werden. In diesen Situationen sollte die Kultur vor dem Festlegen der UI-Steuerelemente geändert werden.
 
 ## <a name="install-the-language-packs"></a>Installieren der Sprachpakete
- Wenn Sie andere Einstellungen als „Englisch“ für Windows verwenden, können Sie die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprachpakete installieren, um [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Meldungen in der unter Windows ausgewählten Sprache anzuzeigen. Wenn Benutzer Ihre Projektmappen mit anderen Einstellungen als „Englisch“ für Windows ausführen, müssen sie über das richtige Sprachpaket verfügen, um Laufzeitmeldungen in derselben Sprache wie Windows anzeigen zu können. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprachpakete sind im [Microsoft Download Center](http://www.microsoft.com/downloads)verfügbar.
+ Wenn Sie andere Einstellungen als „Englisch“ für Windows verwenden, können Sie die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Sprachpakete installieren, um [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Meldungen in der unter Windows ausgewählten Sprache anzuzeigen. Wenn Benutzer Ihre Projektmappen mit anderen Einstellungen als „Englisch“ für Windows ausführen, müssen sie über das richtige Sprachpaket verfügen, um Laufzeitmeldungen in derselben Sprache wie Windows anzeigen zu können. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Packs sind im [Microsoft Download Center](https://www.microsoft.com/download)verfügbar.
 
- Darüber hinaus sind die verteilbaren .NET Framework Language Packs für ClickOnce-Meldungen erforderlich. Die .NET Framework Language Packs sind im [Microsoft Download Center](http://www.microsoft.com/downloads)verfügbar.
+ Darüber hinaus sind die verteilbaren .NET Framework Language Packs für ClickOnce-Meldungen erforderlich. Die .NET Framework Language Packs sind im [Microsoft Download Center](https://www.microsoft.com/download)verfügbar.
 
 ## <a name="regional-settings-and-excel-com-calls"></a>Regionale Einstellungen und com-Aufrufe von Excel
  Sobald ein verwalteter Client eine Methode für ein COM-Objekt aufruft und dabei kulturspezifische Informationen übergeben muss, erfolgt dies über <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (Gebietsschema), das mit dem aktuellen Threadgebietsschema übereinstimmt. Das aktuelle Threadgebietsschema wird standardmäßig von den regionalen Einstellungen des Benutzers geerbt. Wenn Sie jedoch aus einer Excel-Projektmappe, die mithilfe von Office-Entwicklungstools in Visual Studio erstellt wurde, einen Aufruf an das Excel-Objektmodell senden, wird das Datenformat „Englisch (USA)“ (Gebietsschema-ID 1033) automatisch an das Excel-Objektmodell übergeben. Sie müssen sämtliche Daten, die gebietsschemaabhängige Formatierungen aufweisen, z. B. Datumsangaben und Währungen, mit dem Datenformat „Englisch (USA)“ formatieren, bevor Sie sie an Microsoft Office Excel übergeben oder die Daten aus Ihrem Projektcode lesen.
@@ -97,6 +97,6 @@ Application.ActiveCell.Value2 = "05/12/04"
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Als Ziel für die mehrsprachige Office-Benutzeroberfläche](../vsto/how-to-target-the-office-multilingual-user-interface.md)
+- [Gewusst wie: Ausrichten der mehrsprachigen Office-Benutzeroberfläche](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

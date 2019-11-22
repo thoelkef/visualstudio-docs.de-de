@@ -12,16 +12,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39da24dd0d8b7372c63609124ee0b9427fccb03d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8613633289189bec5e403ec76b78731d5e3ecc4f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661508"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983741"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeits Diagramme: Richtlinien
 
-Beschreiben Sie die Architektur Ihrer APP auf hoher Ebene, indem Sie *Abhängigkeits Diagramme* in Visual Studio erstellen. Stellen Sie sicher, dass Ihr Code mit diesem Entwurf konsistent bleibt, indem Sie den Code mit einem Abhängigkeits Diagramm validieren. Sie können auch eine Ebenenvalidierung im Buildprozess einschließen. Siehe [Channel 9-Video: Entwerfen und validieren ihrer Architektur mithilfe von Abhängigkeits Diagrammen](http://go.microsoft.com/fwlink/?LinkID=252073).
+Beschreiben Sie die Architektur Ihrer APP auf hoher Ebene, indem Sie *Abhängigkeits Diagramme* in Visual Studio erstellen. Stellen Sie sicher, dass Ihr Code mit diesem Entwurf konsistent bleibt, indem Sie den Code mit einem Abhängigkeits Diagramm validieren. Sie können auch eine Ebenenvalidierung im Buildprozess einschließen. Siehe [Channel 9-Video: Entwerfen und validieren ihrer Architektur mithilfe von Abhängigkeits Diagrammen](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 Welche Editionen von Visual Studio diese Funktion unterstützen, erfahren Sie unter [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -70,7 +70,7 @@ Siehe [Erstellen von Abhängigkeits Diagrammen aus Ihrem Code](../modeling/creat
 
 Ebenen stellen logische Gruppen von *Artefakten*dar, z. b. Projekte, Code Dateien, Namespaces, Klassen und Methoden. Sie können Ebenen aus Artefakten aus Visual C# -und Visual Basic Projekten erstellen, oder Sie können Spezifikationen oder Pläne an eine Ebene anfügen, indem Sie Dokumente verknüpfen, wie z. b. Word-Dateien oder PowerPoint-Präsentationen. Jede Ebene wird im Diagramm als Rechteck angezeigt und gibt Aufschluss über die Anzahl der mit ihr verknüpften Artefakte. Eine Ebene kann geschachtelte Ebenen enthalten, um spezielle Aufgaben zu beschreiben.
 
-Benennen Sie als allgemeine Richtlinie Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Fügen Sie Artefakte in der gleichen Ebene ein, wenn zwischen ihnen eine enge Abhängigkeit besteht. Wenn die Artefakte getrennt voneinander aktualisiert oder in separaten Anwendungen verwendet werden können, sollten sie auf unterschiedlichen Ebenen eingefügt werden. Weitere Informationen zu ebenenmustern finden Sie auf der Seite Patterns & Practices unter [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).
+Benennen Sie als allgemeine Richtlinie Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Fügen Sie Artefakte in der gleichen Ebene ein, wenn zwischen ihnen eine enge Abhängigkeit besteht. Wenn die Artefakte getrennt voneinander aktualisiert oder in separaten Anwendungen verwendet werden können, sollten sie auf unterschiedlichen Ebenen eingefügt werden. Weitere Informationen zu ebenenmustern finden Sie auf der Seite Patterns & Practices unter [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch).
 
 > [!TIP]
 > Es gibt bestimmte Typen von Artefakten, die Sie mit Ebenen verknüpfen können, die die Validierung für das Abhängigkeits Diagramm jedoch nicht unterstützen. Um festzustellen, ob das Element die Validierung unterstützt, öffnen Sie den **ebenenexplorer** , um die **unterstützte Validierungs** Eigenschaft des artefaktlinks zu Weitere Informationen finden [Sie unter ermitteln vorhandener Abhängigkeiten zwischen Ebenen](#Generate).
@@ -123,7 +123,7 @@ Wenn dies nicht der Fall ist, ist es schwieriger, den Code während der gesamten
 
 Wenn Sie mit der Entwicklung eines neuen Projekts oder eines neuen Bereichs in einem neuen Projekt beginnen, können Sie Ebenen und Abhängigkeiten zeichnen, um die Hauptkomponenten zu identifizieren, bevor Sie mit dem Entwickeln des Codes beginnen.
 
-- Zeigen Sie nach Möglichkeit **identifizierbare Architekturmuster** in den Abhängigkeits Diagrammen an. Ein Abhängigkeits Diagramm, das eine Desktop Anwendung beschreibt, kann z. b. Ebenen wie Präsentation, Domänen Logik und Datenspeicher enthalten. Ein Abhängigkeits Diagramm, das eine einzelne Funktion in einer Anwendung abdeckt, kann über Ebenen wie Modell, Ansicht und Controller verfügen. Weitere Informationen zu solchen Mustern finden Sie unter [Muster & Praktiken: Anwendungsarchitektur](http://go.microsoft.com/fwlink/?LinkId=145794).
+- Zeigen Sie nach Möglichkeit **identifizierbare Architekturmuster** in den Abhängigkeits Diagrammen an. Ein Abhängigkeits Diagramm, das eine Desktop Anwendung beschreibt, kann z. b. Ebenen wie Präsentation, Domänen Logik und Datenspeicher enthalten. Ein Abhängigkeits Diagramm, das eine einzelne Funktion in einer Anwendung abdeckt, kann über Ebenen wie Modell, Ansicht und Controller verfügen. Weitere Informationen zu solchen Mustern finden Sie unter [Muster & Praktiken: Anwendungsarchitektur](https://archive.codeplex.com/?p=apparch).
 
 - **Erstellen Sie ein Code Element für jede Ebene** , z. b. einen Namespace, eine Klasse oder eine Komponente. Dies vereinfacht das Verfolgen des Codes und das Verknüpfen der Codeartefakte mit den Ebenen. Verknüpfen Sie jedes Artefakt mit der entsprechenden Ebene, sobald Sie das Artefakt erstellen.
 

@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informationen zum Office 365-Vorteil, der in einigen Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787927"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099613"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus in Visual Studio-Abonnements
 
 Lösen Sie Ihre Aufgaben bestmöglich. Arbeiten Sie überall mit Apps, die immer aktuell Sind. Office 365 ProPlus ist ein Abonnement, das Premium-Apps wie Word, Excel, PowerPoint, OneNote, Outlook, Publisher und Access enthält (Publisher und Access sind nur auf dem PC verfügbar). Die Apps können auf mehreren Geräten installiert werden, darunter PCs, Macs, iPads, iPhones, Android-Tablets und Android-Smartphones. Mit einem Abonnement erhalten Sie die neuesten Versionen der Apps und nutzen automatische Updates, wenn diese anfallen.
+
+> [!NOTE]
+> Ihr Visual Studio-Abonnement berechtigt Sie für die Verwendung von Office 365 in der Produktion.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Erste Schritte mit Office 365 ProPlus
 
@@ -43,17 +46,15 @@ Führen Sie die folgenden Schritte aus, um Office 365 ProPlus herunterzuladen un
 0. Klicken Sie erneut auf **Weiter**.
 0. Klicken Sie auf **Installieren**, um die Office-Anwendungen zu installieren.
 
-## <a name="next-steps"></a>Nächste Schritte
-
-Wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](vs-office-dev.md) aktivieren.
-
 ## <a name="eligibility"></a>Berechtigung
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Verfügbar       |  Ja          |
+| Visual Studio Enterprise mit GitHub Enterprise  | VL | Verfügbar       |  Ja          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Nicht verfügbar       |  Nicht zutreffend          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                            |  Nicht zutreffend          |
+| Visual Studio Professional mit GitHub Enterprise | VL | Nicht verfügbar         |  Nicht zutreffend          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
@@ -75,4 +76,4 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 Stellen Sie sicher, dass Sie diese großartigen Vorteile aktivieren, um Ihr Visual Studio-Abonnement optimal zu nutzen:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure-Gutschriften](vs-azure.md)
+- [Einzelguthaben für Azure DevTest](vs-azure.md), wenn Sie planen, Anwendungen für Office zu entwickeln, sollten Sie Ihr [Office-Entwicklerabonnement](vs-office-dev.md) aktivieren.

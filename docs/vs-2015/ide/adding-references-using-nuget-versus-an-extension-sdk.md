@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81dd772d78b0abec7c2e22093ac6d30a9f6a0465
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63d9e6694fab400b1f29ed5e2706bb788a760357
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620980"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301263"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Referenzen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der NuGet-Erweiterung für Visual Studio oder mit einem Software Development Kit (SDK) bereitstellen. In diesem Thema werden die Ähnlichkeiten und Unterschiede zwischen den beiden Vorgehensweisen beschrieben. So können Sie die für Sie geeignete Methode ermitteln.
 
-- NuGet ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in eine Projektmappe vereinfacht. Weitere Informationen finden Sie im Abschnitt zur [NuGet-Übersicht](http://go.microsoft.com/fwlink/?LinkId=254877).
+- NuGet ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in eine Projektmappe vereinfacht. Weitere Informationen finden Sie im Abschnitt zur [NuGet-Übersicht](https://go.microsoft.com/fwlink/?LinkId=254877).
 
 - Ein SDK ist eine Auflistung von Dateien, die von Visual Studio als einzelnes Referenzelement behandelt werden. Das Dialogfeld **Verweis-Manager** führt alle SDKs auf, die für das Projekt relevant sind, das beim Anzeigen des Dialogfelds geöffnet ist. Wenn Sie einem Projekt ein SDK hinzufügen, können Sie auf den Inhalt dieses SDK über IntelliSense, **Toolbox**, Designer, den **Objektkatalog**, MSBuild, Bereitstellung, Debuggen und Verpacken zugreifen. Weitere Informationen zu SDKs finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md).
 

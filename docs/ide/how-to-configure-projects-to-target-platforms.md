@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634923"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188948"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für Zielplattformen
 
@@ -112,7 +112,7 @@ Möglicherweise verfügen Sie über eine .NET-Assembly oder -DLL mit x86- und x6
 > In Visual Studio 2017 müssen Sie das Projekt entladen, bevor Sie die Projektdatei bearbeiten können. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Projekt entladen** aus. Wenn Sie die Bearbeitung abgeschlossen haben, speichern Sie die Änderungen, und laden Sie das Projekt erneut, indem Sie mit der rechten Maustaste auf den Projektknoten und dann auf **Projekt erneut laden** klicken.
 ::: moniker-end
 
-Weitere Informationen zur Projektdatei finden Sie unter [Referenz zum MSBuild-Projektdateischema](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+Weitere Informationen zur Projektdatei finden Sie unter [Referenz zum MSBuild-Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md).
 
 ## <a name="see-also"></a>Siehe auch
 

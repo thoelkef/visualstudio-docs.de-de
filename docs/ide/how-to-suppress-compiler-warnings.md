@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415785"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747949"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Vorgehensweise: Unterdrücken von Compilerwarnungen
 
@@ -33,7 +33,7 @@ Verwenden Sie die Eigenschaftenseite **Build**, um bestimmte Warnungen für C#- 
 
 1. Generieren Sie die Projektmappe neu.
 
-## <a name="suppress-specific-warnings-for-visual-c"></a>Unterdrücken bestimmter Warnungen für Visual C++
+## <a name="suppress-specific-warnings-for-c"></a>Unterdrücken bestimmter Warnungen für C++
 
 Verwenden Sie die Seite **Konfigurationseigenschaften**, um bestimmte Warnungen für C++-Projekte zu unterdrücken.
 

@@ -1,17 +1,17 @@
 ---
 title: Erweitern von Visual Studio für Mac
 description: Die Funktionen von Visual Studio für Mac können mit Modulen erweitert werden, die Erweiterungspakete genannt werden. Der erste Teil dieser Anleitung erstellt ein einfaches Erweiterungspaket für Visual Studio für Mac, um das Datum und die Uhrzeit in ein Dokument einzufügen. Der zweite Teil dieser Anleitung erläutert die Grundlagen des Erweiterungspaketsystems und einige der wichtigsten APIs, die die Grundlage von Visual Studio für Mac bilden.
-author: alanjclark
-ms.author: alcl
+author: conceptdev
+ms.author: crdun
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691658"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716835"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Erweitern von Visual Studio für Mac
 
@@ -135,7 +135,7 @@ Befehl und Befehlselement sind nun miteinander verknüpft: Das Befehlselement ru
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind, finden Sie unter [Extension Tree Reference (Referenz zur Erweiterungsstruktur)](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) und [API Overview (API-Übersicht)](http://monodevelop.com/Developers/Articles/API_Overview). Beim Erstellen von ausgeweiteten Erweiterungspaketen lesen Sie sich auch [Entwicklerartikel](http://monodevelop.com/Developers/Articles) durch. Nachfolgend finden Sie eine partielle Liste von Bereichen für die Anpassung:
+Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind, finden Sie unter [Extension Tree Reference (Referenz zur Erweiterungsstruktur)](https://www.monodevelop.com/developers/articles/extension-tree-reference/) und [API Overview (API-Übersicht)](https://www.monodevelop.com/developers/articles/api-overview/). Beim Erstellen von ausgeweiteten Erweiterungspaketen lesen Sie sich auch [Entwicklerartikel](https://www.monodevelop.com/developers/articles/) durch. Nachfolgend finden Sie eine partielle Liste von Bereichen für die Anpassung:
 
 * Pads
 * Tastenzuordnungsschemas
@@ -174,13 +174,13 @@ Einer der vielen Vorteile der gemeinsamen Nutzung des Editors zwischen Visual St
 
 Bevor wir auf die für Visual Studio für Mac spezifischen Erweiterungsdetails eingehen, ist es hilfreich, mehr über den gemeinsam genutzten Editor selbst zu erfahren. Nachstehend finden Sie einige Ressourcen, die Ihr Verständnis vertiefen können:
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [MEF im Editor](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
-* [Im Editor](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [Erweiterungspunkte für den Sprachdienst und den Editor](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [MEF im Editor](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Im Editor](/visualstudio/extensibility/inside-the-editor)
+* [Erweiterungspunkte für den Sprachdienst und den Editor](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Eine Videoeinführung in die Architektur des Editors](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Mit diesen Ressourcen zur Hand sind die primären Konzepte, mit denen Sie vertraut sein müssen, [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) und [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+Mit diesen Ressourcen zur Hand sind die primären Konzepte, mit denen Sie vertraut sein müssen, [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) und [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview):
 
 * `ITextBuffer` ist eine InMemory-Darstellung des Texts, die im Laufe der Zeit geändert werden kann. Die `CurrentSnapshot`-Eigenschaft für `ITextBuffer` gibt eine *unveränderliche* Darstellung des aktuellen Inhalts des Puffers zurück, eine Instanz von `ITextSnapshot`. Wenn eine Bearbeitung des Puffers erfolgt, wird die CurrentSnapshot-Eigenschaft auf die neueste Version aktualisiert. Analysetools können die Momentaufnahme des Texts für jeden Thread einsehen, deren Inhalt sich garantiert nicht ändert.
 

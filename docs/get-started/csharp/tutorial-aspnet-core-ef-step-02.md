@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402068"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061129"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Schritt 2: Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -33,9 +33,12 @@ _Sehen Sie sich dieses Video an, und folgen Sie den einzelnen Schritten, um Ihre
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Starten von Visual Studio 2019 und Erstellen eines neuen Projekts
 
-Starten Sie Visual Studio 2019, und klicken Sie auf **Neues Projekt erstellen**. Wählen Sie **ASP.NET Core-Webanwendung** aus. Wählen Sie die Vorlage **Webanwendung** aus, und behalten Sie den Standardprojektnamen sowie den Standardspeicherort bei. Klicken Sie auf **Erstellen**. Ausführlichere Anweisungen finden Sie im [vorherigen Video dieser Tutorialreihe](tutorial-aspnet-core-ef-step-01.md).
+Starten Sie Visual Studio 2019, und klicken Sie auf **Neues Projekt erstellen**. Wählen Sie **ASP.NET Core-Webanwendung** aus. Wählen Sie die Vorlage **Webanwendung** aus, und behalten Sie den Standardprojektnamen sowie den Standardspeicherort bei. Wählen Sie in der Dropdownliste mit der ASP.Net Core Version **ASP.Net Core 2.1** oder **ASP.Net Core 2.2** aus. Klicken Sie auf **Erstellen**. Ausführlichere Anweisungen finden Sie im [vorherigen Video dieser Tutorialreihe](tutorial-aspnet-core-ef-step-01.md).
 
 ![Visual Studio 2019 – Auswählen von ASP.NET Core-Projektoptionen](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+
+> [!WARNING]
+> Stellen Sie sicher, dass Sie ASP.NET Core 2.1 oder ASP.NET Core 2.2 auswählen. Dieses Tutorial ist nicht kompatibel mit ASP.NET Core 3.x.
 
 ## <a name="explore-the-new-project"></a>Untersuchen des neuen Projekts
 

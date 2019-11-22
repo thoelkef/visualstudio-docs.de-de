@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735546"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911489"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.
@@ -88,7 +88,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Benutzerdefinierte Ereignisse in Direct3D 11 und früheren Versionen
  Verwenden Sie zum Erstellen von Gruppen und Markierungen in Direct3D 11 oder in früheren Versionen die in diesem Abschnitt beschriebenen APIs. In der Tabelle unten sind die APIs aufgeführt, die Sie in verschiedenen Versionen von Direct3D 11 und in früheren Versionen von Direct3D verwenden können.
 
-|API-Beschreibung|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API-Familie (Direct3D 11.0 und früher)|
+|API-Beschreibung|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11.1)|D3DPerf_ API-Familie (Direct3D 11.0 und früher)|
 |---------------------| - | - | - |
 |Start einer Ereignisgruppe|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |Ende einer Ereignisgruppe|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Ressourcenverlauf
-Visual Studio 2017 und höher enthalten das Fenster " **Ressourcen Verlauf** ".  Wenn Sie das Symbol überwachen ![watch Symbol ](media/gfx_watch.png) neben einem Eintrag im Fenster **Ereignisliste** , wird das unten gezeigte Fenster **Ressourcen Verlauf** angezeigt:
+Visual Studio 2017 und höher enthalten das Fenster " **Ressourcen Verlauf** ".  Wenn Sie das Überwachungs Symbol ![Überwachungs Symbol](media/gfx_watch.png) neben einem Eintrag im Fenster **Ereignisliste** auswählen, wird das unten gezeigte Fenster **Ressourcen Verlauf** angezeigt:
 
 ![Ressourcenverlauf](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ In diesem Fenster können Sie den Verlauf des ausgewählten Elements in der Erei
 |-----------| - |
 | **Type** | Zeigt den Typ des Eintrags an (in der Regel *Erstellen*, *Lesen* und *Schreiben*). |
 | **Ansicht** | Zeigt eine Miniaturansicht der Ressource zu diesem Zeitpunkt an.  Doppelklicken Sie auf die Miniaturansicht, um zu diesem Zeitpunkt eine Detailansicht der Ressource zu öffnen. |
-| **Event** | Zeigt den Methoden Aufruf, der aufgetreten ist, der das Ereignis generiert hat.  Alle zusätzlichen Verläufe für einzelne Elemente können angezeigt werden, indem Sie das Überwachungs Symbol ![watch Symbol ](media/gfx_watch.png) in der entsprechenden Zeile auswählen.  Außerdem können alle Elemente, die in blauem Text gezeichnet werden (z. b. `m_commandList` im obigen Screenshot) ausgewählt werden, um weitere Informationen zu erhalten. |
+| **Event** | Zeigt den Methoden Aufruf, der aufgetreten ist, der das Ereignis generiert hat.  Alle zusätzlichen Verläufe für einzelne Elemente können angezeigt werden, indem Sie das Überwachungs Symbol ![Überwachungs Symbol](media/gfx_watch.png) in der entsprechenden Zeile auswählen.  Außerdem können alle Elemente, die in blauem Text gezeichnet werden (z. b. `m_commandList` im obigen Screenshot) ausgewählt werden, um weitere Informationen zu erhalten. |
 
 <!-- /VERSIONLESS -->
 

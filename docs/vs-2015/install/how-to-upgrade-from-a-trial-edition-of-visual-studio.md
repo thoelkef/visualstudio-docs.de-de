@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696206"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298064"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Gewusst wie: Aktualisieren von einer Visual Studio-Testversion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,12 +23,12 @@ Sie können das Vorabrelease von Visual Studio 14 Tage lang testen, ohne das Pro
 
  Sie können die Releaseversion der Professional und Enterprise Edition von Visual Studio nach der Installation bis zu 30 Tage lang testen. Durch [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md) wird der Evaluierungszeitraum um 60 Tage auf insgesamt 90 Tage erweitert. Wenn Sie eine Testedition von Visual Studio nicht innerhalb von 30 Tagen registrieren, läuft der Testzeitraum 30 Tage nach der Installation ab.
 
- Wenn Sie beispielsweise [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] herunterladen und 10 Tage lang verwenden und die Anwendung anschließend registrieren, können Sie sie weitere 80 Tage lang nutzen. Um das Produkt nach 90 Tagen weiterhin zu verwenden, müssen Sie entweder einen gültigen Product Key angeben oder sich bei Visual Studio mit einem Microsoft-Konto anmelden oder einem Unternehmenskonto, dem ein MSDN-Abonnement oder ein Visual Studio Online-Abonnement zugeordnet ist. Informationen dazu, wie Sie einen Product Key suchen oder erhalten, finden Sie unter [Gewusst wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) und [Bezugsquellen für Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
+ Wenn Sie beispielsweise [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] herunterladen und 10 Tage lang verwenden und die Anwendung anschließend registrieren, können Sie sie weitere 80 Tage lang nutzen. Um das Produkt nach 90 Tagen weiterhin zu verwenden, müssen Sie entweder einen gültigen Product Key angeben oder sich bei Visual Studio mit einem Microsoft-Konto anmelden oder einem Unternehmenskonto, dem ein MSDN-Abonnement oder ein Visual Studio Online-Abonnement zugeordnet ist. Informationen dazu, wie Sie einen Product Key suchen oder erhalten, finden Sie unter [Gewusst wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) und [Bezugsquellen für Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).
 
 > [!IMPORTANT]
 > Der Testzeitraum für Releaseversionen der Express-Editionen von Visual Studio beträgt ebenfalls 30 Tage. Um den Testzeitraum für Express-Editionen von Visual Studio unbegrenzt zu erweitern, müssen Sie sich bei Visual Studio anmelden oder das Produkt registrieren.
 
- Bevor Sie ein Upgrade durchführen, sollten Sie das [Visual Studio 2015 Licensing White Paper (Whitepaper zur Lizenzierung von Visual Studio 2015)](http://www.microsoft.com/download/details.aspx?id=13350) von der Microsoft-Website herunterladen und lesen. Weitere Hilfe finden Sie unter [Unterstützung für Visual Studio](http://support.microsoft.com/ph/1117/en-us).
+ Bevor Sie ein Upgrade durchführen, sollten Sie das [Visual Studio 2015 Licensing White Paper (Whitepaper zur Lizenzierung von Visual Studio 2015)](https://www.microsoft.com/download/details.aspx?id=13350) von der Microsoft-Website herunterladen und lesen. Weitere Hilfe finden Sie unter [Unterstützung für Visual Studio](https://support.microsoft.com/ph/1117/en-us).
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>So führen Sie ein Upgrade von einer Testedition von Visual Studio Professional oder Enterprise aus
 

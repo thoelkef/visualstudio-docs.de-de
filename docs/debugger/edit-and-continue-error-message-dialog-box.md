@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren Fehlermeldungsdialogfeld | Microsoft-Dokumentation
+title: Dialogfeld "Fehlermeldung bearbeiten und Fortfahren" | Microsoft-Dokumentation
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,34 +18,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0428ecf21da525b8f77334e57547c8f10da7cdf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851637"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188234"
 ---
-# <a name="edit-and-continue-error-message"></a>Bearbeiten Sie und fortfahren Sie-Fehlermeldung
+# <a name="edit-and-continue-error-message"></a>Fehlermeldung "Bearbeiten und Fortfahren"
 
-Die **bearbeiten und Fortfahren** Fehlermeldungsfeld angezeigt wird, wenn Sie in einer Codesprache Debuggen, das Bearbeiten und Fortfahren unterstützt, aber bearbeiten und fortfahren, ist nicht verfügbar für die codeänderungen, die Sie vorgenommen haben. Die Fehlermeldung enthält eine ausführlichere Erläuterung. Wählen Sie zum Dialogfeld für die Antwort **OK** , um das Dialogfeld schließen und die Bearbeitungsversuch Abbrechen.
+Das Feld Fehlermeldung **Bearbeiten und Fortfahren** wird angezeigt, wenn Sie in einer Codesprache Debuggen, die bearbeiten und Fortfahren unterstützt, aber bearbeiten und Fortfahren für die von Ihnen vorgenommenen Codeänderungen nicht verfügbar ist. Eine ausführlichere Erläuterung finden Sie in der Fehlermeldung. Um auf das Dialogfeld zu reagieren, wählen Sie **OK** aus, um das Dialogfeld zu schließen und den Bearbeitungs Versuch abzubrechen.
 
-Mögliche Ursachen für diese Fehlermeldung
+Mögliche Ursachen für diese Fehlermeldung:
 
-- Möchten SQL Server-Code bearbeiten.
-- Versucht, optimierten Code zu bearbeiten. Sie müssen möglicherweise aus einem versionsbuild in einem Debugbuild zu wechseln.
-- Versucht, Code zu bearbeiten, während er ausgeführt wird, anstatt während der Unterbrechung im Debugger. Versuchen Sie es [Festlegen eines Haltepunkts](../debugger/using-breakpoints.md), und Bearbeiten des Codes während angehalten.
-- Möchten verwalteten Code zu bearbeiten, wenn nur nicht verwaltetes debugging aktiviert ist. Bearbeiten und Fortfahren funktioniert nicht mit [Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).
-- Vornehmen der Änderung wird nicht in einer Programmiersprache bearbeiten und Fortfahren unterstützt. Weitere Informationen finden Sie in Artikeln über [unterstützte codeänderungen in C# ](supported-code-changes-csharp.md), [nicht unterstützte Bearbeitungen in Visual Basic zu bearbeiten und Fortfahren](/visualstudio/debugger/supported-code-changes-csharp), und [unterstützt C++-Code-Änderungen](supported-code-changes-cpp.md).
-- Versucht, Code in einer app zu bearbeiten, Sie, angefügt sind, statt von Debuggen, die **Debuggen** Menü.
-- Versucht, Code zu bearbeiten, während des Debuggens einer Notfallwiederherstellung. Watson-Sicherungskopie.
-- Versucht, Code zu bearbeiten, nachdem eine unbehandelte Ausnahme auftritt und die Option **Aufrufliste für Ausnahmefehler entladen** nicht ausgewählt ist.
-- Versucht, Code zu bearbeiten, während des Debuggens einer eingebetteten Laufzeitanwendung.
-- Möchten verwalteten Code verwenden eine Version von .NET Framework 4.5.1 vor mit einer 64-Bit-Anwendung zu bearbeiten. Zum Bearbeiten und Fortfahren für .NET Framework 4.5.1 vor verwenden, legen Sie das Ziel auf **X86** in die  **\<Projektname >**  > **Eigenschaften**  >  **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.
-- Versucht, Code in einer Assembly zu bearbeiten, die während des Debuggens geändert wurde und erneut geladen wurde.
-- Versucht, Code in einer Assembly zu bearbeiten, die nicht geladen wurde.
-- Da die neueste Version Buildfehler enthält zum Debuggen einer alten Version einer app wird gestartet.
+- Es wird versucht, SQL Server Code zu bearbeiten.
+- Es wird versucht, optimierten Code zu bearbeiten. Möglicherweise müssen Sie von einem Releasebuild zu einem Debugbuild wechseln.
+- Es wird versucht, Code zu bearbeiten, während er ausgeführt wird, anstatt im Debugger angehalten zu werden. Versuchen Sie, [einen Haltepunkt festzulegen](../debugger/using-breakpoints.md)und den Code zu bearbeiten, während er angehalten wurde.
+- Es wird versucht, verwalteten Code zu bearbeiten, wenn nur nicht verwaltetes Debugging aktiviert ist. "Bearbeiten und Fortfahren" funktioniert nicht mit [Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).
+- Vornehmen einer Codeänderung, die von "Bearbeiten und Fortfahren" in der Programmiersprache nicht unterstützt wird. Weitere Informationen finden Sie in den Artikeln über [unterstützte Code C#Änderungen in ](supported-code-changes-csharp.md), [nicht unterstützte Bearbeitungen in Visual Basic bearbeiten und Fortfahren](supported-code-changes-csharp.md)sowie [unterstützte C++ Codeänderungen](supported-code-changes-cpp.md).
+- Sie versuchen, Code in einer APP zu bearbeiten, an die Sie angefügt sind, anstatt das Debuggen im Menü **Debuggen** zu starten
+- Versuch, Code zu bearbeiten, während ein Dr. Watson-Dump debuggt wird.
+- Der Versuch, Code zu bearbeiten, nachdem eine nicht behandelte Ausnahme aufgetreten ist, und die Option zum Entladen **der aufrufsstapel bei nicht behandelten Ausnahmen** ist nicht ausgewählt.
+- Beim Debuggen einer eingebetteten Lauf Zeit Anwendung wird versucht, Code zu bearbeiten.
+- Es wird versucht, verwalteten Code mit einer .NET Framework-Version vor 4.5.1 mit einem 64-Bit-App-Ziel zu bearbeiten. Wenn Sie "Bearbeiten und Fortfahren" für .NET Framework vor "4.5.1" verwenden möchten, legen Sie das Ziel auf **x86** auf der Registerkarte **\<ProjectName >**  > **Eigenschaften** > Registerkarte **Kompilieren** , **Erweiterte Compilereinstellung**
+- Es wurde versucht, Code in einer Assembly zu bearbeiten, die während des Debuggens geändert wurde und erneut geladen wurde.
+- Es wird versucht, Code in einer Assembly zu bearbeiten, die noch nicht geladen wurde.
+- Das Debuggen einer alten Version einer APP wird gestartet, da die neueste Version Buildfehler aufweist.
 
 Weitere Informationen finden Sie unter:
-- [C++-bearbeiten und Fortfahren-Blog Posten](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [C++Blogbeitrag "Bearbeiten und Fortfahren"](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)
 - [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Zuordnen von ListObject-Spalten zu Daten'
+title: 'Gewusst wie: Zuordnen von ListObject-Spalten zu Daten'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0056687e8ca28af4dbc9032d7bbee0cf976378
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cffd9f009d193f5ed687560b4f13940273fd82ad
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253672"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985898"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Vorgehensweise: Zuordnen von ListObject-Spalten zu Daten
+# <a name="how-to-map-listobject-columns-to-data"></a>Gewusst wie: Zuordnen von ListObject-Spalten zu Daten
   Beim Binden eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements an <xref:System.Data.DataTable>sollen möglicherweise nicht alle Spalten in einer Liste angezeigt werden, oder Sie verfügen u. U. über bestimmte Spalten, die nicht an Daten gebunden sind. Durch den Aufruf der <xref:Microsoft.Office.Tools.Excel.ListObject> -Methode können Sie die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> angezeigt werden sollen.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
-
- ![Link zu Video](../vsto/media/playvideo.gif "Link zu Video") Eine entsprechende videodemo finden [Sie unter Gewusst wie: Erstellen Sie eine Liste in Excel, die mit einer SharePoint-Liste verbunden ist? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ## <a name="map-columns"></a>Karten Spalten
 
@@ -36,12 +34,12 @@ ms.locfileid: "71253672"
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2. Fügen Sie Beispiel Spalten und Daten im `Startup` -Ereignishandler `Sheet1` der-Klasse (in einem Projekt auf Dokument Ebene) `ThisAddIn` oder in einer-Klasse (in einem VSTO-Add-in-Projekt) hinzu.
+2. Fügen Sie dem `Startup`-Ereignishandler der `Sheet1`-Klasse (in einem Projekt auf Dokument Ebene) oder `ThisAddIn`-Klasse (in einem VSTO-Add-in-Projekt) Beispiel Spalten und-Daten hinzu.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Das Listen Objekt wird an die neu erstellte <xref:System.Data.DataTable>gebunden, aber die Reihenfolge der Spalten im Listen Objekt unterscheidet sich von der Reihenfolge, in der <xref:System.Data.DataTable>Sie angezeigt werden.
+3. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Das Listen Objekt wird an die neu erstellte <xref:System.Data.DataTable>gebunden, aber die Reihenfolge der Spalten im Listen Objekt unterscheidet sich von der Reihenfolge, in der Sie in der <xref:System.Data.DataTable>angezeigt werden.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -63,6 +61,6 @@ ms.locfileid: "71253672"
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Vorgehensweise: ListObject-Steuerelemente mit Daten füllen](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Gewusst wie: Auffüllen von ListObject-Steuerelementen mit Daten](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject-Steuerelement](../vsto/listobject-control.md)

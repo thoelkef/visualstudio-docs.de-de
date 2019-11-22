@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb5442d12899436076f6b60e8fd7e807b19e4f82
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262956"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189336"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 
@@ -37,7 +37,7 @@ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstütz
 
 Weitere Informationen zur Profilerstellung für UWP-Apps finden Sie in den folgenden Artikeln:
 
-- [Run UWP apps on the local machine (Ausführen von UWP-Apps auf einem lokalen Computer)](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
+- [Run UWP apps on the local machine (Ausführen von UWP-Apps auf einem lokalen Computer)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 - [Run UWP apps on a remote machine (Ausführen von UWP-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Einführung in Profilerstellungstools](profiling-feature-tour.md)
 - [JavaScript memory (JavaScript-Arbeitsspeicher)](../profiling/javascript-memory.md)
@@ -63,7 +63,7 @@ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstütz
 
 Sie verwenden zwei Befehlszeilentools, um Profilerstellungsdaten auf Windows 8- und Windows Server 2012-Geräten zu erfassen, einschließlich Geräte, auf denen kein Visual Studio installiert ist:
 
-|Toolname|Beschreibung|
+|Toolname|BESCHREIBUNG|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Erfasst Profilerstellungsdaten von UWP-Apps und Beispielprofilerstellungsdaten von Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Sammelt Instrumentations-, Parallelitäts- und Ebeneninteraktionsprofilerstellungsdaten von Apps, die unter Windows 8-Desktop oder Windows Server 2012 ausgeführt werden. Sammelt alle Arten von Profilerstellungsdaten von früheren Versionen von Windows.|
@@ -72,7 +72,7 @@ Beide Tools werden mit Visual Studio zur Verwendung auf dem lokalen Computer ins
 
 Um Profile für Anwendungen auf Geräten zu erstellen, auf denen Visual Studio nicht installiert ist, führen Sie eines der folgenden Verfahren aus:
 
-- Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](http://go.microsoft.com/fwlink/?LinkID=219549)herunter.
+- Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](https://visualstudio.microsoft.com/#downloads+d-additional-software)herunter.
 
 - Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.
 
