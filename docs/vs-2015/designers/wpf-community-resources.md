@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0c2e58686c1369847fdeb0d83aaac6c65341aa08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d740f1cc6c19e8d3b53dc084d9de01547369337
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663922"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299544"
 ---
 # <a name="wpf-community-resources"></a>Ressourcen für die WPF-Community
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,13 +22,13 @@ ms.locfileid: "72663922"
 Microsoft stellt eine Vielzahl von Communityressourcen für Sie bereit, mit denen Sie sich über Windows Presentation Foundation (WPF) informieren, austauschen und Feedback senden können. Zu diesen Ressourcen gehören die von WPF-Teammitgliedern und Communitysprechern veröffentlichten Blogs, Foren und das Microsoft Connect Feedback Center.
 
 ## <a name="community"></a>Community
- [WPF-Forum](http://go.microsoft.com/fwlink/?LinkId=187440)
+ [WPF-Forum](https://go.microsoft.com/fwlink/?LinkId=187440)
 
- [Stapelüberlauf](http://stackoverflow.com/questions/tagged/wpf)
+ [Stapelüberlauf](https://stackoverflow.com/questions/tagged/wpf)
 
- [WPF-Teamblog](http://blogs.msdn.com/b/wpf/)
+ [WPF-Teamblog](https://devblogs.microsoft.com/wpf/)
 
- [WPF-Toolkit auf CodePlex](http://wpf.codeplex.com/)
+ [WPF-Toolkit auf CodePlex](https://archive.codeplex.com/?p=wpf)
 
  [Windows Presentation Foundation (WPF)-Developer Center](https://www.visualstudio.com/features/wpf-vs)
 

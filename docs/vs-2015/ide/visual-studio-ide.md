@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667142"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296927"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Wenn Sie Visual Studio noch nie verwendet haben, können Sie sich mit den Lernpr
 Weitere Informationen zu den neuen Features in Visual Studio 2015 finden Sie unter [Neuerungen in Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
 ## <a name="visual-studio-setup"></a>Setup von Visual Studio
- Informationen darüber, welche Edition von Visual Studio die für Sie passende ist, finden Sie unter [Visual Studio – Editionen](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
+ Informationen darüber, welche Edition von Visual Studio die für Sie passende ist, finden Sie unter [Visual Studio – Editionen](https://visualstudio.microsoft.com/vs/).
 
- Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Weitere Informationen zum Installationsvorgang finden Sie unter [Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md).
+ Sie können Visual Studio 2015 installieren, indem Sie es von [Visual Studio Downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)herunterladen. Weitere Informationen zum Installationsvorgang finden Sie unter [Installieren von Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>IDE-Grundlagen
  Das folgende Bild zeigt die Visual Studio-IDE mit einem geöffneten Projekt, das Fenster "Projektmappen-Explorer" für die Navigation in den Projektdateien und das Fenster "Team Explorer" für die Navigation in der Quellcodeverwaltung und die Arbeitselementnachverfolgung. Die in der Titelleiste hervorgehobenen Funktionen werden im Folgenden ausführlicher erläutert.

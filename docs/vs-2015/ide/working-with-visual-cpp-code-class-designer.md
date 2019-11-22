@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662605"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296209"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Arbeiten mit Visual C++-Code (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 - Stellen Sie sicher, dass sich der Typ im richtigen Bereich befindet, sodass Klassen-Designer ihn finden kann. Stellen Sie sicher, dass dem Code nicht eine Anweisung `using`, `imports`, oder `#include` fehlt. Stellen Sie außerdem sicher, dass Sie den Typ (oder einen zugehörigen Typ) nicht aus dem Namespace verschoben haben, in dem er sich ursprünglich befand.
 
 ### <a name="troubleshooting-other-error-messages"></a>Problembehandlung bei anderen Fehlermeldungen
- Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Weitere Informationen finden Sie im [Forum des Visual Studio-Klassen-Designers](http://go.microsoft.com/fwlink/?linkid=160754).
+ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Weitere Informationen finden Sie im [Forum des Visual Studio-Klassen-Designers](https://go.microsoft.com/fwlink/?linkid=160754).
 
 ## <a name="limitations"></a> Einschränkungen für C++-Codeelemente
 
@@ -107,4 +107,4 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 - Klassen-Designer kann keine Typen anzeigen, die "void" sind oder von einem void-Typ abgeleitet sind.
 
 ## <a name="see-also"></a>Siehe auch
- [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md) [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md) arbeiten [mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md) [Weitere Informationen zu Klassen-Designer Fehler](../ide/additional-information-about-class-designer-errors.md) [visuelle C++ Klassen in Klassen-Designer](../ide/visual-cpp-classes-in-class-designer.md) [visuellen C++ Strukturen in Klassen-Designer](../ide/visual-cpp-structures-in-class-designer.md) [visuellen C++ Enumerationen in Klassen-Designer](../ide/visual-cpp-enumerations-in-class-designer.md) [Visual C++ Typedefs in Klassen-Designer](../ide/visual-cpp-typedefs-in-class-designer.md)
+ [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md) [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md) [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md) [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md) [Weitere Informationen zu Klassen-Designer Fehlern](../ide/additional-information-about-class-designer-errors.md) [visuelle C++ Klassen in Klassen-Designer](../ide/visual-cpp-classes-in-class-designer.md) visuellen [ C++ Strukturen](../ide/visual-cpp-structures-in-class-designer.md) in Klassen-Designer visuellen [ C++ Enumerationen in Klassen-Designer](../ide/visual-cpp-enumerations-in-class-designer.md) [Visual C++ Typedefs in Klassen-Designer](../ide/visual-cpp-typedefs-in-class-designer.md)

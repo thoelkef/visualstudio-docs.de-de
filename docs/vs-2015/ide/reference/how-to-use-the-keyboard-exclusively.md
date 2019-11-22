@@ -16,17 +16,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37bbdfd00778575755379fc442dfa9be3f90eeb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651305"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297879"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Gewusst wie: Ausschließliches Verwenden der Tastatur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -97,4 +97,4 @@ ms.locfileid: "72651305"
      Das Toolfenster springt zur neuen angedockten Stelle.
 
 ## <a name="see-also"></a>Siehe auch
- [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Tipps und Tricks](../../ide/reference/accessibility-tips-and-tricks.md) für [Tastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+ [Identifizieren und Anpassen von Tastenkombinationen ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Accessibility Tipps und Tricks ](../../ide/reference/accessibility-tips-and-tricks.md) [Default Tastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

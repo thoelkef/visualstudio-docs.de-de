@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824835"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299676"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
   
  Die Dauermessung wird als **Benutzermaß** -Ereignis in der Zeitachsendetailansicht angezeigt und stellt detaillierte Informationen dar, wenn sie ausgewählt wird.  
   
- ![Benutzer-Messgrößenereignis in der Zeitachsendetailansicht](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
+ ![Benutzermaßereignis in der Zeitleistendetailansicht](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
   
 ## <a name="AnalyzeData"></a> Analysieren von Daten  
  In den folgenden Abschnitten sind Informationen enthalten, die Ihnen das Interpretieren der im Profiler angezeigten Daten erleichtern sollen.  
@@ -182,7 +182,7 @@ if (performance.mark && performance.measure) {
   
  Die Zeitachse für die Diagnosesitzung sieht wie folgt aus. Außerdem wird eine QuickInfo für mehrere Ereignisse des App-Lebenszyklus anzeigt:  
   
- ![Diagnosesitzungslineal](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Lineal der Diagnosesitzung](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
   
  Die Zeitachse wird angezeigt, wenn App-Lebenszyklusereignisse wie z. B. das Aktivierungsereignis auftreten. Es werden Benutzermarkierungen (Benutzermarkierungsdreiecke) angezeigt, die Sie dem Code hinzufügen können. Sie können die Ereignisse auswählen, um QuickInfos mit weiteren Informationen anzuzeigen. Weitere Informationen über Benutzermarkierungen finden Sie unter [Markieren von Code zur Analyse](#ProfileMark) in diesem Thema.  
   
@@ -279,14 +279,14 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> Filtern der Zeitachsendetails  
  Sie können die Ansicht in den Zeitachsendetails für ein bestimmtes Ereignis filtern. Wählen Sie dazu in dessen Kontextmenü **Für Ereignis filtern** aus. Wenn Sie diese Option auswählen, wird die Zeitachsen- und Rasteransicht auf das ausgewählte Ereignis beschränkt. Auch die Auswahl im CPU-Auslastungsdiagramm wird auf das bestimmte Ereignis beschränkt.  
   
- ![Filtern der Zeitachse für ein Ereignis](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![Filtern der Zeitachse nach einem Ereignis](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
 ### <a name="FilterEvents"></a> Filtern von Ereignissen  
  Sie können einige Ereignisse aus dem Zeitachsendetaildiagramm herausfiltern, um Störungen in den Daten zu reduzieren oder um Daten zu entfernen, die für Ihr Leistungsszenario irrelevant sind. Sie können nach Ereignisname oder Ereignisdauer filtern oder mit spezifischen, hier beschriebenen Filtern.  
   
  Deaktivieren Sie die Option **Hintergrundaktivität** im Filtersymbol im unteren Bereich, um Bilddecodierungs-, spekulative Download- und GC-Ereignisse auszufiltern. Da für diese Ereignisse zumeist keine Aktionen ausgeführt werden, sind sie standardmäßig ausgeblendet.  
   
- ![Filtern von Ereignissen in der Zeitachse](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![Filtern von Ereignissen in der Zeitleiste](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  Deaktivieren Sie die Option **Netzwerkdatenverkehr** im Filtersymbol im unteren Bereich, um HTTP-Anforderungsereignisse auszufiltern. Diese Ereignisse werden standardmäßig im Zeitachsendetaildiagramm angezeigt.  
   
@@ -300,7 +300,7 @@ if (performance.mark && performance.measure) {
 ### <a name="GroupFrames"></a> Ereignisse nach Frame gruppieren  
  Sie können Ereignisse, die in der Zeitachsendetailansicht angezeigt werden, in einzelnen Frames gruppieren. Diese Frameereignisse sind toolgenerierte Ereignisse und stellen Ereigniscontainer der obersten Ebene für alle Aufgaben des UI-Threads dar, die zwischen Paint-Ereignissen auftreten. Um diese Ansicht zu aktivieren, wählen Sie **Ereignisse der obersten Ebene nach Frames gruppieren**aus.  
   
- ![Ereignisse der obersten Ebene nach Frames gruppieren](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Ereignisse auf der obersten Ebene gruppieren](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Wenn sie die Ereignisse nach Frame gruppieren, stellen die Ereignisse der obersten Ebene in der Zeitachsendetailansicht jeweilig ein Frame dar.  
   
@@ -356,7 +356,7 @@ if (performance.mark && performance.measure) {
   
 ## <a name="Tips"></a> Zusätzliche Informationen  
   
-- Sehen Sie sich [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
+- Sehen Sie sich [dieses Video](https://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
   
 - Lesen Sie die Leistungstipps für die Windows Store-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von Windows Store-Apps mit JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
