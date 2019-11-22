@@ -1,5 +1,5 @@
 ---
-title: Navigieren im UML-Modell | Microsoft-Dokumentation
+title: Navigate the UML model | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668546"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289857"
 ---
 # <a name="navigate-the-uml-model"></a>Navigieren im UML-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,15 +24,15 @@ ms.locfileid: "72668546"
 In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Modellelemente, Modell und Modellspeicher
- Die in der Assembly " **Microsoft. VisualStudio. Uml. Interfaces. dll** " definierten Typen entsprechen den Typen, die in der [UML-Spezifikation, Version 2.1.2, definiert sind](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ The types defined in the assembly **Microsoft.VisualStudio.Uml.Interfaces.dll** correspond to the types defined in the [UML Specification, version 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
- Die Typen in der UML-Spezifikation werden in Visual Studio als Schnittstellen realisiert. Dem Namen jedes Typs wird der Buchstabe "I" vorangestellt. Beispiel: [IElement](/previous-versions/dd516035(v=vs.140)), [iCLASS](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+ Die Typen in der UML-Spezifikation werden in Visual Studio als Schnittstellen realisiert. Dem Namen jedes Typs wird der Buchstabe "I" vorangestellt. For example: [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
  Alle Typen mit Ausnahme von IElement erben Eigenschaften von einem oder mehreren Obertypen (Supertypes).
 
-- Eine Zusammenfassung der Modelltypen finden Sie unter [UML-Modellelement Typen](../modeling/uml-model-element-types.md).
+- For a summary of the model types, see [UML model element types](../modeling/uml-model-element-types.md).
 
-- Ausführliche Informationen zur API finden Sie unter [API-Referenz für UML-Modellierungs Erweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md).
+- For full details of the API, see [API Reference for UML Modeling Extensibility](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
 ### <a name="relationships"></a>Beziehungen
  Eigenschaften und Beziehungen, die in der UML-Spezifikation definiert sind, werden als .NET-Eigenschaften implementiert.
@@ -45,18 +45,18 @@ In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.
 
  Wenn Sie ein Element aus dem Modell löschen, werden alle Beziehungen, in denen es vorkommt, automatisch gelöscht, und die Eigenschaft am anderen Ende wird aktualisiert.
 
- Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. Eine Multiplizität mit einem maximalen Wert größer als 1 bedeutet, dass die .net-Eigenschaft den Typ hat: `IEnumerable<`*Type* `>`.
+ Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. A multiplicity with maximum greater than 1 means that the .NET property has the type: `IEnumerable<`*Type*`>`.
 
- Weitere Informationen zum Durchsuchen von Beziehungen finden Sie unter [Navigieren in Beziehungen mit der UML-API](../modeling/navigate-relationships-with-the-uml-api.md).
+ For more information about traversing relationships, see [Navigate relationships with the UML API](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Besitzstruktur
- Ein Modell enthält eine Struktur von [IElement](/previous-versions/dd516035(v=vs.140)) -Objekten. Jedes Element verfügt über die `OwnedElements`-Eigenschaft und über die `Owner`-Eigenschaft.
+ A model contains a tree of [IElement](/previous-versions/dd516035(v=vs.140)) objects. Jedes Element verfügt über die `OwnedElements`-Eigenschaft und über die `Owner`-Eigenschaft.
 
- In den meisten Fällen wird auf die Ziele der `Owner`-Eigenschaft und der `OwnedElements`-Eigenschaft auch von anderen Eigenschaften verwiesen, die über spezifischere Namen verfügen. So befindet sich jeder UML-Vorgang beispielsweise im Besitz einer UML-Klasse. Daher verfügt [IOperation](/previous-versions/dd481186(v=vs.140)) über eine Eigenschaft mit dem Namen [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)und in jedem [IOperation](/previous-versions/dd481186(v=vs.140)) -Objekt `Class == Owner`.
+ In den meisten Fällen wird auf die Ziele der `Owner`-Eigenschaft und der `OwnedElements`-Eigenschaft auch von anderen Eigenschaften verwiesen, die über spezifischere Namen verfügen. So befindet sich jeder UML-Vorgang beispielsweise im Besitz einer UML-Klasse. Therefore [IOperation](/previous-versions/dd481186(v=vs.140)) has a property named [IOperation.Class](/previous-versions/dd473473%28v%3dvs.140%29), and in every [IOperation](/previous-versions/dd481186(v=vs.140)) object, `Class == Owner`.
 
- Das oberste Element der Struktur, das keinen Besitzer hat, ist eine `AuxiliaryConstructs.IModel`. Das IModel ist in einer `IModelStore` enthalten, bei der es sich um die [IModelStore. root](/previous-versions/ee789368(v=vs.140))-Datei handelt.
+ The topmost element of the tree, which has no Owner, is an `AuxiliaryConstructs.IModel`. The IModel is contained within a `IModelStore`, in which it is the [IModelStore.Root](/previous-versions/ee789368(v=vs.140)).
 
- Jedes Modellelement wird mit einem Besitzer erstellt. Weitere Informationen finden Sie unter [Erstellen von Elementen und Beziehungen in UML-Modellen](../modeling/create-elements-and-relationships-in-uml-models.md).
+ Jedes Modellelement wird mit einem Besitzer erstellt. For more information, see [Create elements and relationships in UML models](../modeling/create-elements-and-relationships-in-uml-models.md).
 
  ![Klassendiagramm: Modell, Diagramm, Form und Element](../modeling/media/uml-mm1.png)
 
@@ -67,7 +67,7 @@ In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.
 
  Formen werden in einer Struktur angeordnet. Die Ränder der Struktur werden durch die ParentShape-Eigenschaft und die ChildShapes-Eigenschaft dargestellt. Diagramme sind die einzigen Formen, die keine übergeordneten Elemente haben. Die Formen auf der Oberfläche eines Diagramms bestehen aus kleineren Teilen. So weist eine Klassenform etwa Depots für Attribute und Operationen auf.
 
- Weitere Informationen zu Formen finden Sie unter [Anzeigen eines UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md).
+ For more information about shapes, see [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
 
 ## <a name="access-to-the-model-in-extensions"></a>Zugreifen auf das Modell in Erweiterungen
  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen, die als MEF-Komponenten definiert werden, können Sie Eigenschaften deklarieren, die Informationen aus dem Kontext importieren, in dem die Erweiterung ausgeführt wird.
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Zugriff auf ein anderes Modell oder Diagramme
  Sie haben folgende Möglichkeiten:
 
-- Erstellen Sie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus Links zwischen Elementen in unterschiedlichen Modellen. Weitere Informationen finden Sie unter [integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+- Erstellen Sie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus Links zwischen Elementen in unterschiedlichen Modellen. For more information, see [Integrate UML models with other models and tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- Laden Sie ein Modellierungsprojekt und Diagramme im schreibgeschützten Modus, ohne sie in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche anzuzeigen. Weitere Informationen finden Sie unter [Lesen eines UML-Modells im Programmcode](../modeling/read-a-uml-model-in-program-code.md).
+- Laden Sie ein Modellierungsprojekt und Diagramme im schreibgeschützten Modus, ohne sie in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche anzuzeigen. For more information, see [Read a UML model in program code](../modeling/read-a-uml-model-in-program-code.md).
 
-- Öffnen Sie ein Modellierungsprojekt und die darin enthaltenen Diagramme in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], und greifen Sie dann auf den Inhalt zu. Weitere Informationen finden Sie unter [Öffnen eines UML-Modells mithilfe der Visual Studio-API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
+- Öffnen Sie ein Modellierungsprojekt und die darin enthaltenen Diagramme in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], und greifen Sie dann auf den Inhalt zu. For more information, see [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
 ## <a name="see-also"></a>Siehe auch
 

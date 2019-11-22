@@ -1,5 +1,5 @@
 ---
-title: Referenz für die Referenz der gerichteten Graph Markup Language (dgml) | Microsoft-Dokumentation
+title: Directed Graph Markup Language (DGML) reference | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,24 +9,24 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 26065ac7d9b92a8d9bc12f8f7843d8a0fb93f7ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16a51c7fc05d51b551884f70dc514e8939962818
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669765"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296029"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenz zur Directed Graph Markup Language (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und die Komplexitätsanalyse verwendeten Informationen und stellt das zum Beibehalten von Code Maps verwendete Format in Visual Studio dar. DGML beschreibt zyklische und azyklische gerichtete Diagramme mithilfe von einfachem XML. Ein gerichtetes Diagramm ist ein Satz von Knoten, die durch Links bzw. Ränder verbunden sind. Mithilfe von Knoten und Links können Netzwerkstrukturen dargestellt werden, z. B. Elemente in einem Softwareprojekt.
 
- Beachten Sie, dass einige Versionen von Visual Studio nur eine Teilmenge der dgml-Funktionen unterstützen. Weitere Informationen finden Sie unter [Versions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Note that some versions of Visual Studio support only a subset of DGML capabilities, see [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Wenn Sie eine DGML-Datei bearbeiten, unterstützt Sie IntelliSense beim Auffinden der für die Elemente verfügbaren Attribute und der zugehörigen Werte. Wenn Sie Farben in Attributen angeben möchten, verwenden Sie Namen für allgemeine Farben (z. B. "Blau") oder ARGB-Hexadezimalwerte (z. B. "#ffa0b1c3"). DGML verwendet eine kleine Teilmenge der WPF (Windows Presentation Foundation)-Farbdefinitionsformate. Weitere Informationen finden Sie unter [Colors-Klasse](http://go.microsoft.com/fwlink/?LinkId=182345).
+> Wenn Sie eine DGML-Datei bearbeiten, unterstützt Sie IntelliSense beim Auffinden der für die Elemente verfügbaren Attribute und der zugehörigen Werte. Wenn Sie Farben in Attributen angeben möchten, verwenden Sie Namen für allgemeine Farben (z. B. "Blau") oder ARGB-Hexadezimalwerte (z. B. "#ffa0b1c3"). DGML verwendet eine kleine Teilmenge der WPF (Windows Presentation Foundation)-Farbdefinitionsformate. For more information, see [Colors Class](https://go.microsoft.com/fwlink/?LinkId=182345).
 
-## <a name="DGML"></a>Dgml-Syntax
+## <a name="DGML"></a> DGML syntax
  In der folgenden Tabelle werden verschiedene in DGML verwendete Elementtypen beschrieben:
 
 - `<DirectedGraph></DirectedGraph>`
@@ -39,11 +39,11 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 
    `BackgroundImage` – Der Speicherort der Bilddatei, die als Code Map-Hintergrund verwendet werden soll.
 
-   `GraphDirection` – Wenn Code Map auf das Strukturlayout festgelegt wird (`Sugiyama`), ordnen Sie die Knoten so an, dass die meisten der Links in die angegebene Richtung fließen: `TopToBottom`, `BottomToTop`, `LeftToRight` oder `RightToLeft`. Weitere Informationen finden Sie [unter Ändern des Kartenlayouts](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection` – Wenn Code Map auf das Strukturlayout festgelegt wird (`Sugiyama`), ordnen Sie die Knoten so an, dass die meisten der Links in die angegebene Richtung fließen: `TopToBottom`, `BottomToTop`, `LeftToRight` oder `RightToLeft`. See [Change the map layout](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `Layout` – Legen Sie Code Map auf die folgenden Layouts fest: `None`, `Sugiyama` (Strukturlayout), `ForceDirected` (schnelle Cluster) oder `DependencyMatrix`. Weitere Informationen finden Sie [unter Ändern des Kartenlayouts](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `Layout` – Legen Sie Code Map auf die folgenden Layouts fest: `None`, `Sugiyama` (Strukturlayout), `ForceDirected` (schnelle Cluster) oder `DependencyMatrix`. See [Change the map layout](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `NeighborhoodDistance` – Wenn Code Map auf das Strukturlayout oder das schnelle Clusterlayout festgelegt ist, werden nur die Knoten angezeigt, die eine bestimmte Anzahl (1-7) von Links von den ausgewählten Knoten entfernt liegen. Weitere Informationen finden Sie [unter Ändern des Kartenlayouts](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `NeighborhoodDistance` – Wenn Code Map auf das Strukturlayout oder das schnelle Clusterlayout festgelegt ist, werden nur die Knoten angezeigt, die eine bestimmte Anzahl (1-7) von Links von den ausgewählten Knoten entfernt liegen. See [Change the map layout](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    Beispiel:
 
@@ -96,7 +96,7 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 
    In der folgenden Liste werden einige optionale Attribute beschrieben, die eingeschlossen werden können:
 
-   `Label`: der Anzeige Name des Knotens.
+   `Label` - The display name of the node.
 
    Formatattribute. Siehe [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
@@ -104,11 +104,11 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 
    `Property` – Der Name einer Eigenschaft, die Elemente angibt, die denselben Eigenschaftswert aufweisen. Weitere Informationen finden Sie unter dem `<Property/>`-Element.
 
-   `Group` – Wenn der Knoten andere Knoten enthält, legen Sie dieses Attribut auf `Expanded` oder `Collapsed` fest, um seinen Inhalt anzuzeigen oder auszublenden. Es muss ein `<Link/>`-Element vorhanden sein, das das `Category="Contains"`-Attribut einschließt und den übergeordneten Knoten als Quellknoten und den untergeordneten Knoten als Zielknoten angibt. Siehe [Gruppieren von Code Elementen](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
+   `Group` – Wenn der Knoten andere Knoten enthält, legen Sie dieses Attribut auf `Expanded` oder `Collapsed` fest, um seinen Inhalt anzuzeigen oder auszublenden. Es muss ein `<Link/>`-Element vorhanden sein, das das `Category="Contains"`-Attribut einschließt und den übergeordneten Knoten als Quellknoten und den untergeordneten Knoten als Zielknoten angibt. See [Group code elements](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` – Legen Sie dieses Attribut auf `Visible`, `Hidden` oder `Collapsed` fest. Verwendet `System.Windows.Visibility`. Siehe [Ausblenden oder Anzeigen von Knoten und Links](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility` – Legen Sie dieses Attribut auf `Visible`, `Hidden` oder `Collapsed` fest. Verwendet `System.Windows.Visibility`. See [Hide or show nodes and links](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
-   `Reference` – Legen Sie dieses Attribut fest, um es mit einem Dokument oder einer URL zu verknüpfen. Weitere [Informationen finden Sie unter Verknüpfen von Dokumenten oder URLs mit Code Elementen und Links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
+   `Reference` – Legen Sie dieses Attribut fest, um es mit einem Dokument oder einer URL zu verknüpfen. See [Link documents or URLs to code elements and links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
    Beispiel:
 
@@ -218,7 +218,7 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 
    `BasedOn` – Die übergeordnete Kategorie, von der die `<Category/>` des aktuellen Elements erbt.
 
-   Im Beispiel für dieses Element erbt die Kategorie `FailedTest` ihr `Stroke`-Attribut aus der Kategorie `PassedTest`. Weitere Informationen finden Sie unter "So erstellen Sie hierarchische Kategorien" in [Anpassen von Code Maps durch Bearbeiten der dgml-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+   Im Beispiel für dieses Element erbt die Kategorie `FailedTest` ihr `Stroke`-Attribut aus der Kategorie `PassedTest`. See "To create hierarchical categories" in [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Kategorien stellen auch ein bestimmtes grundlegendes Vorlagenverhalten bereit, mit dem die Darstellung von Knoten und Links bei der Anzeige in einer Code Map gesteuert wird. Siehe [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
@@ -271,9 +271,9 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 
   - `DataType` – Der Typ der Daten, die von der Eigenschaft gespeichert werden.
 
-    Wenn Sie möchten, dass die Eigenschaft im **Eigenschaften** Fenster angezeigt wird, verwenden Sie die `Label`-Eigenschaft, um den anzeigen amen der Eigenschaft anzugeben.
+    If you want the property to appear in the **Properties** window, use the `Label` property to specify the property's display name.
 
-    Weitere Informationen finden [Sie unter Zuweisen von Kategorien zu Code Elementen und Links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
+    See [Assign categories to code elements and links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
     Beispiel:
 
@@ -302,7 +302,7 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
   </DirectedGraph>
   ```
 
-### <a name="AddAlias"></a>Aliase für häufig verwendete Pfade
+### <a name="AddAlias"></a> Aliases for commonly-used paths
  Das Ersetzen häufig verwendeter Pfade durch Aliase trägt dazu bei, die Größe der DGML-Datei und die erforderliche Zeit zum Laden und Speichern der Datei zu reduzieren. Fügen Sie zum Erstellen eines Alias am Ende der DGML-Datei einen `<Paths></Paths>`-Abschnitt hinzu. Fügen Sie in diesem Abschnitt ein `<Path/>`-Element hinzu, um einen Alias für den Pfad zu definieren:
 
 ```xml
@@ -311,7 +311,7 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 </Paths>
 ```
 
- Um von einem Element in der dgml-Datei auf den Alias zu verweisen, müssen Sie den `Id` des \<Path/>-Elements mit einem Dollarzeichen ($) und Klammern (()) einschließen:
+ To reference the alias from an element in the .dgml file, enclose the `Id` of the \<Path/> element with a dollar sign ($) and parentheses (()):
 
 ```xml
 <Nodes>
@@ -323,4 +323,4 @@ Directed Graph Markup Language (DGML) beschreibt die für die Visualisierung und
 ```
 
 ## <a name="see-also"></a>Siehe auch
- Zuordnen von [Abhängigkeiten in den](../modeling/map-dependencies-across-your-solutions.md) Projektmappen [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md) [Ermitteln potenzieller Probleme mithilfe von Code Map-Analysen](../modeling/find-potential-problems-using-code-map-analyzers.md)
+ [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md) [Use code maps to debug your applications](../modeling/use-code-maps-to-debug-your-applications.md) [Find potential problems using code map analyzers](../modeling/find-potential-problems-using-code-map-analyzers.md)

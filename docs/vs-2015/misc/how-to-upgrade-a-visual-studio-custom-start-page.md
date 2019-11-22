@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Aktualisieren einer benutzerdefinierten Startseite | Microsoft-Dokumentation'
+title: 'How to: Upgrade a Custom Start Page | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: abe1013d37db43114f3970f12b1a0d1f08b07a4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a7854de705a961463b1e8435e7340548cfc23bf3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446451"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293368"
 ---
-# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Vorgehensweise: Aktualisieren einer benutzerdefinierten Startseite Visual Studio
+# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Gewusst wie: Aktualisieren einer benutzerdefinierten Visual Studio-Startseite
 Sie können eine benutzerdefinierte Visual Studio 2010- oder Visual Studio 2012-Startseite auf Visual Studio 2015 aktualisieren. Führen dazu die nachfolgenden Schritte aus.
 
 > [!WARNING]
-> Bei der in dieser Vorgehensweise aktualisierten Startseite handelt es sich um die mit der Vorlage [Benutzerdefinierte Startseite](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) in der Visual Studio Gallery erstellte Startseite. Ihre Startseite weist möglicherweise andere Funktionen auf, die aktualisiert werden müssen.
+> Bei der in dieser Vorgehensweise aktualisierten Startseite handelt es sich um die mit der Vorlage [Benutzerdefinierte Startseite](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.CustomStartPageProjectTemplate) in der Visual Studio Gallery erstellte Startseite. Ihre Startseite weist möglicherweise andere Funktionen auf, die aktualisiert werden müssen.
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>So aktualisieren Sie eine benutzerdefinierte Startseite auf Visual Studio 2015
 
